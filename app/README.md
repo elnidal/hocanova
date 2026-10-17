@@ -34,3 +34,15 @@ select * from analytics.word_stats order by yanlis_yuzde desc, yanlis desc limit
 ```
 
 Öğrenci ilk testten sonra takma ad ve (isteğe bağlı) sınıf kodu girer; gerçek ad zorunlu değildir.
+
+## Yayın (Netlify)
+
+Canlı adres: https://hikayenglish-lgs.netlify.app (Netlify ekibi LGSingilizce, site `hikayenglish-lgs`). Pilot: arama motorlarına kapalı (noindex).
+
+```bash
+cd app
+npm run deploy     # içeriği üretir, derler, canlıya gönderir (netlify login gerekir; Python + pyyaml gerekir)
+```
+
+`.env.local` içindeki Supabase değerleri derleme sırasında pakete gömülür (publishable anahtar herkese açık olacak şekilde tasarlanmıştır).
+Netlify ekip ayarı yeni sitelere varsayılan olarak "yalnız Netlify üyeleri görsün" korumasını koyabiliyor; yeni site açarsan `netlify api updateSite` ile `sso_login:false` yap.
