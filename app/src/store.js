@@ -2,6 +2,7 @@ import { useCallback, useEffect, useReducer, useRef, useState } from 'react'
 import { createProgress, setLevel, recordAnswer, applyUnitCheck } from './engine'
 import { enabled, supabase, ensureSession, fetchRemote, pushRemote } from './supabase.js'
 import { chooseSync } from './sync.js'
+import { getCaptchaToken } from './captcha.js'
 
 const KEY = 'hikayenglish.lgs.app.v1'
 
@@ -85,7 +86,8 @@ export function useStore() {
     },
     // Başka cihazdan mevcut hesaba girer; uzaktaki ilerleme (daha yeniyse) yüklenir.
     async signIn(email, password) {
-      const { error } = await supabase.auth.signInWithPassword({ email, password })
+      const captchaToken = await getCaptchaToken()
+      const { error } = await supabase.auth.signInWithPassword({ email, password, ...(captchaToken && { options: { captchaToken } }) })
       if (error) throw error
       await connect()
     },

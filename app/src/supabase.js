@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import { getCaptchaToken } from './captcha.js'
 
 const url = import.meta.env.VITE_SUPABASE_URL
 const key = import.meta.env.VITE_SUPABASE_ANON_KEY
@@ -9,7 +10,8 @@ export const supabase = enabled ? createClient(url, key) : null
 export async function ensureSession() {
   const { data: { session } } = await supabase.auth.getSession()
   if (session) return session.user
-  const { data, error } = await supabase.auth.signInAnonymously()
+  const captchaToken = await getCaptchaToken()
+  const { data, error } = await supabase.auth.signInAnonymously(captchaToken ? { options: { captchaToken } } : undefined)
   if (error) throw error
   return data.user
 }
