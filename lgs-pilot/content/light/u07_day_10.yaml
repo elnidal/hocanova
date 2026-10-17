@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 10
+status: draft
+title: "Gelenekler ve misafirperverlik"
+est_minutes: 7
+new_items: [U7-045, U7-046, U7-047, U7-048, U7-049]
+steps:
+  - item: U7-045
+    card:
+      example_en: "Turkish people are famous for their hospitality."
+      example_tr: "Türkler misafirperverlikleriyle ünlüdür."
+      note_tr: "hospitality (isim) – hospitable (sıfat): hospitable people = misafirperver insanlar."
+    kullan:
+      id: u7d10-045-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The family gave us tea and food and welcomed us warmly. Their ________ was wonderful.</en>"
+      options: ["hospitality", "accommodation", "transportation", "population"]
+      answer: 0
+      explain: "Misafiri sıcak karşılamak: hospitality (misafirperverlik)."
+    sina:
+      id: u7d10-045-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Tourist: Thank you for everything! You are so kind.\nHost: ________ You are our guest, and guests are always welcome.</en>"
+      options: ["It's our pleasure!", "You are late!", "Be quiet!", "I don't know."]
+      answer: 0
+      explain: "Teşekküre misafirperver bir cevap: It's our pleasure!"
+    tekrar:
+      id: u7d10-045-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>People in small villages are often very ________. They invite strangers to their homes for tea.</en>"
+      options: ["hospitable", "crowded", "ancient", "enormous"]
+      answer: 0
+      explain: "Yabancıları çaya davet eden insanlar misafirperverdir (hospitable)."
+  - item: U7-046
+    card:
+      example_en: "We ate authentic local food at a small restaurant."
+      example_tr: "Küçük bir lokantada otantik yerel yemek yedik."
+      note_tr: "local = yerel, o yerin; authentic = otantik, gerçek ve özgün."
+    kullan:
+      id: u7d10-046-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I want to try ________ food, the kind that people in this town really eat every day.</en>"
+      options: ["local", "frozen", "foreign", "plastic"]
+      answer: 0
+      explain: "O yerin insanının her gün yediği yemek: local food."
+    sina:
+      id: u7d10-046-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the brochure, who makes the products?</en>"
+      stem: "<en>Visit our village market and taste authentic Aegean olives, cheese and honey made by local farmers.</en>"
+      options: ["Local farmers", "Tourists", "Factories abroad", "Tour guides"]
+      answer: 0
+      explain: "Ürünleri yerel çiftçiler yapıyor."
+    tekrar:
+      id: u7d10-046-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"authentic\"?</en>"
+      options: ["real", "expensive", "crowded", "new"]
+      answer: 0
+      explain: "authentic = gerçek, özgün ≈ real."
+  - item: U7-047
+    card:
+      example_en: "The dancers wore colourful clothes and performed a folk dance."
+      example_tr: "Dansçılar rengârenk kıyafetler giyip bir halk oyunu oynadı."
+      note_tr: "folk dance = halk oyunu (zeybek, horon gibi); folk music = halk müziği."
+    kullan:
+      id: u7d10-047-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>In the evening, there was a ________ show with traditional music and colourful costumes.</en>"
+      options: ["folk dance", "football", "volleyball", "karate"]
+      answer: 0
+      explain: "Geleneksel müzik ve renkli kostümler: halk oyunu gösterisi (folk dance show)."
+    sina:
+      id: u7d10-047-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What can guests do on Friday evenings?</en>"
+      stem: "<en>Every Friday evening, our hotel has a folk dance show in the garden. Guests can learn some steps and dance with the dancers.</en>"
+      options: ["Learn a traditional dance", "Go on a cruise", "Visit a museum", "Buy handicrafts"]
+      answer: 0
+      explain: "Konuklar bazı adımları öğrenip dansçılarla oynayabilir."
+    tekrar:
+      id: u7d10-047-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence describes a folk dance show?</en>"
+      options: ["Dancers in traditional clothes are dancing to traditional music.", "Players are running after a ball.", "A man is repairing a car.", "Students are writing an exam."]
+      answer: 0
+      explain: "Geleneksel kıyafetli dansçılar halk oyunu gösterisini anlatır."
+  - item: U7-048
+    card:
+      example_en: "Ramadan Feast is an important religious celebration in Türkiye."
+      example_tr: "Ramazan Bayramı Türkiye'de önemli bir dini kutlamadır."
+      note_tr: "religious (dini) – religion (din); ceremony = tören."
+    kullan:
+      id: u7d10-048-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>People visit mosques and churches for ________ ceremonies.</en>"
+      options: ["religious", "wild", "rural", "tiny"]
+      answer: 0
+      explain: "Cami ve kilise törenleri dinidir (religious)."
+    sina:
+      id: u7d10-048-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is a religious celebration?</en>"
+      options: ["Ramadan Feast", "A football final", "A school concert", "A film festival"]
+      answer: 0
+      explain: "Ramazan Bayramı dini bir kutlamadır."
+    tekrar:
+      id: u7d10-048-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is NOT a religious place?</en>"
+      options: ["A harbour", "A mosque", "A church", "A temple"]
+      answer: 0
+      explain: "Liman dini bir yer değildir; diğerleri ibadet yerleridir."
+  - item: U7-049
+    card:
+      example_en: "The view from the top was incredible!"
+      example_tr: "Tepeden manzara inanılmazdı!"
+      note_tr: "incredible = unbelievable = inanılmaz."
+    kullan:
+      id: u7d10-049-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Wow! The view from the mountain was ________! I couldn't believe my eyes.</en>"
+      options: ["incredible", "ordinary", "boring", "tiny"]
+      answer: 0
+      explain: "\"Wow!\" ve \"gözlerime inanamadım\": inanılmaz (incredible)."
+    sina:
+      id: u7d10-049-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: How was the concert?\nElif: ________ The singer was fantastic!</en>"
+      options: ["It was incredible!", "It was boring.", "It was ordinary.", "It was terrible."]
+      answer: 0
+      explain: "Şarkıcı harikaymış; olumlu bir cevap: It was incredible!"
+    tekrar:
+      id: u7d10-049-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"unbelievable\"?</en>"
+      options: ["incredible", "ordinary", "simple", "boring"]
+      answer: 0
+      explain: "unbelievable ≈ incredible."
+tips:
+  - type: kelime_ailesi
+    refs: [U7-045]
+    text: "hospitality (isim) → hospitable (sıfat). \"Turkish people are hospitable\" ya da \"famous for their hospitality\"."
+  - type: lgs_taktigi
+    refs: [U7-046]
+    text: "Soruda metindeki sözcük çoğu zaman eş anlamlıyla gelir: \"local farmers\" ↔ \"people from the area\". Şıklarda aynı fikri farklı sözcüklerle ara."
+coach:
+  start: "Gün 10: gelenekler, halk oyunları ve misafirperverlik. Sofra kuruldu 🍯"
+  end_good: "Süper! Kültür kelimelerini yerine oturttun 🍯 Yarın yerleri betimliyoruz."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🍯"
+notifications:
+  morning: "Bugün: misafirperverlik, yerel lezzetler, halk oyunu ve inanılmaz! 🍯"
+  evening: "\"Authentic\" kelimesine en yakın anlam hangisi? 🤔"
+  review: "Camide, kilisede, tapınakta: hepsi için hangi sıfat? 🕌"

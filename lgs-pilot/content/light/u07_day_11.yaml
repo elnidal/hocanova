@@ -1,0 +1,218 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 11
+status: draft
+title: "Yerleri betimleyen sıfatlar"
+est_minutes: 8
+new_items: [U7-050, U7-051, U7-052, U7-053, U7-054, U7-055]
+steps:
+  - item: U7-050
+    card:
+      example_en: "We saw an enormous castle on the hill."
+      example_tr: "Tepenin üstünde kocaman bir kale gördük."
+      note_tr: "enormous = huge = devasa, kocaman."
+    kullan:
+      id: u7d11-050-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The elephant is an ________ animal. It is much bigger than a horse.</en>"
+      options: ["enormous", "tiny", "quiet", "narrow"]
+      answer: 0
+      explain: "Attan çok daha büyük hayvan: enormous (devasa)."
+    sina:
+      id: u7d11-050-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>\"The stadium is huge.\" Which word is closest in meaning to \"huge\"?</en>"
+      options: ["enormous", "tiny", "ancient", "rural"]
+      answer: 0
+      explain: "huge ≈ enormous (kocaman)."
+    tekrar:
+      id: u7d11-050-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word is the opposite of \"enormous\"?</en>"
+      options: ["tiny", "huge", "giant", "large"]
+      answer: 0
+      explain: "enormous (devasa) ↔ tiny (minik)."
+  - item: U7-051
+    card:
+      example_en: "Hagia Sophia is a remarkable building."
+      example_tr: "Ayasofya olağanüstü bir yapıdır."
+      note_tr: "remarkable = dikkate değer, olağanüstü (insanların konuşacağı kadar etkileyici)."
+    kullan:
+      id: u7d11-051-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The ancient theatre is a ________ place. Everybody talks about it after the trip.</en>"
+      options: ["remarkable", "boring", "ordinary", "ugly"]
+      answer: 0
+      explain: "Herkesin konuştuğu yer olağanüstüdür (remarkable)."
+    sina:
+      id: u7d11-051-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: What do you think about the old bridge?\nKaan: ________ It is more than 400 years old and still very strong!</en>"
+      options: ["It's remarkable!", "It's boring.", "It's ordinary.", "It's ugly."]
+      answer: 0
+      explain: "400 yıllık ve hâlâ sağlam köprü için övgü uygun: It's remarkable!"
+    tekrar:
+      id: u7d11-051-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"remarkable\"?</en>"
+      options: ["amazing", "normal", "average", "empty"]
+      answer: 0
+      explain: "remarkable ≈ amazing."
+  - item: U7-052
+    card:
+      example_en: "The market is crowded on Saturdays. It is a busy street."
+      example_tr: "Pazar yeri Cumartesi günleri kalabalıktır. Burası işlek bir cadde."
+      note_tr: "busy kişi için \"meşgul\"; yer için \"kalabalık, hareketli\": a busy street."
+    kullan:
+      id: u7d11-052-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Don't go to the city centre on Saturday. It is very ________, and you can't walk easily.</en>"
+      options: ["crowded", "empty", "quiet", "peaceful"]
+      answer: 0
+      explain: "Rahat yürünemiyorsa yer kalabalıktır (crowded)."
+    sina:
+      id: u7d11-052-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Duru: Why don't we walk to the station?\nSelin: ________ It is a very busy street at this time, full of cars and people.</en>"
+      options: ["Let's take a quiet road instead.", "Let's run through the street.", "Let's play football there.", "Let's go there at once."]
+      answer: 0
+      explain: "Caddede çok araba ve insan var; daha sakin bir yol önermek mantıklı."
+    tekrar:
+      id: u7d11-052-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What does \"a busy street\" mean?</en>"
+      options: ["A street with many people and cars", "A street where people work in offices", "A street with no people", "A street with a lot of homework"]
+      answer: 0
+      explain: "Yer için busy = kalabalık, hareketli (meşgul değil)."
+  - item: U7-053
+    card:
+      example_en: "Our trip to Cappadocia was unforgettable. I will always remember the balloons."
+      example_tr: "Kapadokya gezimiz unutulmazdı. Balonları hep hatırlayacağım."
+      note_tr: "forget (unutmak) → unforgettable (unutulmaz); memory = anı, hafıza; good memories = güzel anılar."
+    kullan:
+      id: u7d11-053-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>It was the best holiday of my life. It was ________.</en>"
+      options: ["unforgettable", "ordinary", "boring", "terrible"]
+      answer: 0
+      explain: "Hayatın en iyi tatili unutulmazdır (unforgettable)."
+    sina:
+      id: u7d11-053-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we say about Elif's balloon trip?</en>"
+      stem: "<en>Elif: Last summer, I flew in a balloon over Cappadocia. I took hundreds of photos. I will remember that morning forever.</en>"
+      options: ["It was an unforgettable experience.", "It was a boring trip.", "It was a short walk.", "It was a bad experience."]
+      answer: 0
+      explain: "O sabahı sonsuza kadar hatırlayacak: unutulmaz bir deneyim."
+    tekrar:
+      id: u7d11-053-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>I have so many good ________ of my school trip. I look at the photos every week.</en>"
+      options: ["memories", "accommodations", "populations", "climates"]
+      answer: 0
+      explain: "Fotoğraflara bakarak gezi anılarını hatırlıyor: good memories."
+  - item: U7-054
+    card:
+      example_en: "I will definitely come back to this city. It is truly beautiful."
+      example_tr: "Bu şehre kesinlikle geri döneceğim. Gerçekten çok güzel."
+      note_tr: "definitely = kesinlikle; truly = gerçekten."
+    kullan:
+      id: u7d11-054-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I loved this island. I will ________ come back next summer!</en>"
+      options: ["definitely", "hardly", "never", "rarely"]
+      answer: 0
+      explain: "Adayı çok sevdiği için \"kesinlikle\" geri gelecek: definitely."
+    sina:
+      id: u7d11-054-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: Do you want to visit the museum again?\nBora: ________ It was the best museum in town!</en>"
+      options: ["Yes, definitely!", "No, never!", "I'm not sure at all.", "I don't want to go."]
+      answer: 0
+      explain: "Müzeyi çok beğenmiş; olumlu ve kesin bir cevap uyar."
+    tekrar:
+      id: u7d11-054-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>The weather in Antalya is ________ wonderful in May. You must visit then!</en>"
+      options: ["truly", "hardly", "rarely", "never"]
+      answer: 0
+      explain: "\"truly wonderful\" = gerçekten harika."
+  - item: U7-055
+    card:
+      example_en: "Alaçatı is a charming town with stone houses and flower-covered streets."
+      example_tr: "Alaçatı, taş evleri ve çiçekli sokaklarıyla şirin bir kasabadır."
+      note_tr: "charming = şirin, büyüleyici, hoş (özellikle küçük ve sıcak yerler için)."
+    kullan:
+      id: u7d11-055-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>It is a small, ________ village with colourful houses and friendly people.</en>"
+      options: ["charming", "boring", "ugly", "dangerous"]
+      answer: 0
+      explain: "Renkli evleri ve cana yakın insanları olan küçük köy: charming (şirin)."
+    sina:
+      id: u7d11-055-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What is the hotel like?</en>"
+      stem: "<en>Postcard: We are staying in a charming little hotel. It has only ten rooms, a garden with roses and a warm family atmosphere.</en>"
+      options: ["Small and lovely", "Huge and noisy", "Cold and ugly", "Modern and crowded"]
+      answer: 0
+      explain: "Sadece on oda, güllü bahçe ve sıcak aile ortamı: küçük ve hoş."
+    tekrar:
+      id: u7d11-055-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"charming\"?</en>"
+      options: ["lovely", "enormous", "crowded", "ancient"]
+      answer: 0
+      explain: "charming ≈ lovely."
+tips:
+  - type: tuzak
+    refs: [U7-052]
+    text: "busy kişi için \"meşgul\"dür; yer için \"kalabalık, hareketli\": a busy street."
+  - type: lgs_taktigi
+    refs: [U7-049, U7-051, U7-055]
+    text: "Sıfat sorularında cümlenin tonuna bak: \"Wow!\", \"I loved it\", \"fantastic\" gibi sözler olumlu sıfatı (incredible, remarkable, charming) işaret eder."
+coach:
+  start: "Gün 11: yerleri anlatan sıfatlar. Kartpostalını yazma zamanı ✉️"
+  end_good: "Harika! Artık gezini renkli anlatabilirsin ✉️ Yarın son gün: gezi kalıpları."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. ✉️"
+notifications:
+  morning: "Bugün: devasa, olağanüstü, kalabalık, unutulmaz ve şirin! Kartpostal yaz ✉️"
+  evening: "\"A busy street\" meşgul bir cadde mi, kalabalık bir cadde mi? 🤔"
+  review: "\"Enormous\" ile \"huge\" arasındaki fark ne? 🐘"

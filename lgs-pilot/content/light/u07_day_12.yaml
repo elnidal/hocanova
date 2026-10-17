@@ -1,0 +1,220 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 12
+status: draft
+title: "Gezi konuşması: soru ve kalıplar"
+est_minutes: 8
+new_items: [U7-056, U7-057, U7-058, U7-059, U7-060, U7-061]
+steps:
+  - item: U7-056
+    card:
+      example_en: "Gaziantep is famous for its baklava. What is Gaziantep famous for?"
+      example_tr: "Gaziantep baklavasıyla ünlüdür. Gaziantep neyiyle ünlü?"
+      note_tr: "famous for + isim (famous for its kebab). \"famous with\" yanlış. well-known eş anlamlı."
+    kullan:
+      id: u7d12-056-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Cappadocia is famous ________ its hot air balloons.</en>"
+      options: ["for", "with", "at", "by"]
+      answer: 0
+      explain: "\"be famous for\" kalıbı: … ile ünlü olmak."
+    sina:
+      id: u7d12-056-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Tourist: What is Konya famous for?\nGuide: ________</en>"
+      options: ["It is famous for the Mevlana Museum.", "It is famous with the weather.", "It is famous at the sea.", "It is famous by the sea."]
+      answer: 0
+      explain: "Kalıp \"famous for\" ile kurulur; with, at, by yanlıştır."
+    tekrar:
+      id: u7d12-056-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Bursa is famous for its kebab.", "Bursa is famous with its kebab.", "Bursa is famous at its kebab.", "Bursa is famous by its kebab."]
+      answer: 0
+      explain: "\"famous for + isim\"."
+  - item: U7-057
+    card:
+      example_en: "Have you ever been to Ephesus? – Yes, I have. I went there last year."
+      example_tr: "Hiç Efes'e gittin mi? – Evet, gittim. Geçen yıl oraya gittim."
+      note_tr: "Kalıp olarak öğren: been to = gidip dönmüş; gone to = gitmiş, hâlâ orada. have/has + V3 kuralı bu yılın konusu değil."
+    kullan:
+      id: u7d12-057-k
+      type: dialogue_complete
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A: Have you ever been to Rome?\nB: Yes, I ________. I went there with my family last year.</en>"
+      options: ["have", "did", "was", "do"]
+      answer: 0
+      explain: "\"Have you ever been …?\" sorusunun kısa cevabı: Yes, I have."
+    sina:
+      id: u7d12-057-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Duru: Have you ever been abroad?\nBora: ________ I went to Germany in 2023.</en>"
+      options: ["Yes, I have.", "Yes, I am.", "No, I wasn't.", "No, I don't."]
+      answer: 0
+      explain: "Almanya'ya gitmiş olduğu için cevap: Yes, I have."
+    tekrar:
+      id: u7d12-057-t
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>A: Have you ever been to Antalya?\nB: ________ I've never been there, but I'd love to go.</en>"
+      options: ["No, I haven't.", "Yes, I have.", "Yes, I did.", "No, I didn't."]
+      answer: 0
+      explain: "\"I've never been there\" diyor; bu yüzden cevap: No, I haven't."
+  - item: U7-058
+    card:
+      example_en: "Did you enjoy your trip? – Yes, it was great! How long did you stay? – Three days."
+      example_tr: "Gezinden keyif aldın mı? – Evet, harikaydı! Ne kadar kaldın? – Üç gün."
+      note_tr: "Geçmiş gezi soruları Simple Past ile sorulur: Did you enjoy …? How long did you stay …?"
+    kullan:
+      id: u7d12-058-k
+      type: dialogue_complete
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A: ________ did you stay in Rome?\nB: For five days.</en>"
+      options: ["How long", "How many", "How much", "How far"]
+      answer: 0
+      explain: "\"For five days\" süre bildirir: How long …?"
+    sina:
+      id: u7d12-058-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which of the following is the missing question?</en>"
+      stem: "<en>Elif: ________\nSelin: Yes, I really enjoyed it. The beaches were wonderful.</en>"
+      options: ["Did you enjoy your trip?", "Do you like football?", "Are you going to school?", "Can you swim?"]
+      answer: 0
+      explain: "Cevap \"Evet, çok keyif aldım\" olduğuna göre soru geziyle ilgili olmalı."
+    tekrar:
+      id: u7d12-058-t
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: How long did you stay in Bodrum?\nDuru: ________</en>"
+      options: ["Four days.", "Four euros.", "Four people.", "Four kilometres."]
+      answer: 0
+      explain: "How long = ne kadar süre: dört gün."
+  - item: U7-059
+    card:
+      example_en: "What is Mardin like? – It's a historic and beautiful city."
+      example_tr: "Mardin nasıl bir yer? – Tarihî ve güzel bir şehir."
+      note_tr: "like burada \"sevmek\" değil, \"gibi\": What is Mardin like? = Mardin nasıl bir yer? Cevap bir betimlemedir (sıfat)."
+    kullan:
+      id: u7d12-059-k
+      type: dialogue_complete
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A: What is the weather like in Rize?\nB: ________</en>"
+      options: ["It's rainy and cool.", "Yes, I like it.", "No, I don't like Rize.", "I like rainy days."]
+      answer: 0
+      explain: "\"What is … like?\" betimleme ister: yağmurlu ve serin."
+    sina:
+      id: u7d12-059-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Tourist: What is İzmir like?\nLocal: ________</en>"
+      options: ["It's lively and charming.", "Yes, I like İzmir.", "I am from İzmir.", "I don't go there."]
+      answer: 0
+      explain: "Soru İzmir'in nasıl bir yer olduğunu soruyor; sıfatlarla betimleme gerekir."
+    tekrar:
+      id: u7d12-059-t
+      type: situation
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which question asks for a description of a place?</en>"
+      options: ["What is Antalya like?", "Do you like Antalya?", "Where is Antalya?", "Is Antalya far?"]
+      answer: 0
+      explain: "\"What is … like?\" bir yerin nasıl olduğunu sorar."
+  - item: U7-060
+    card:
+      example_en: "What do you think about the new museum? – To me, it is wonderful."
+      example_tr: "Yeni müze hakkında ne düşünüyorsun? – Bana göre harika."
+      note_tr: "Fikir sorma: What do you think about …? Fikir söyleme: To me, … / In my opinion, …"
+    kullan:
+      id: u7d12-060-k
+      type: dialogue_complete
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A: What do you think ________ the new museum?\nB: To me, it is wonderful.</en>"
+      options: ["about", "with", "at", "by"]
+      answer: 0
+      explain: "\"What do you think about …?\" = … hakkında ne düşünüyorsun?"
+    sina:
+      id: u7d12-060-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which of the following is the missing question?</en>"
+      stem: "<en>Kaan: ________\nBora: To me, it is a great idea. Let's go by train.</en>"
+      options: ["What do you think about travelling by train?", "How old are you?", "Where do you live?", "What time is it?"]
+      answer: 0
+      explain: "\"To me, it is a great idea\" fikir bildirir; soru da fikir sormalıdır."
+    tekrar:
+      id: u7d12-060-t
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: What do you think about the cruise holiday?\nElif: ________ I would love to see the islands.</en>"
+      options: ["To me, it is a great idea.", "To me, it is on Monday.", "To me, it is in Rome.", "To me, it is eleven o'clock."]
+      answer: 0
+      explain: "Fikir sorulduğuna göre cevap da bir fikirdir."
+  - item: U7-061
+    card:
+      example_en: "The Blue Mosque is a must-see in İstanbul. It is worth visiting."
+      example_tr: "Sultanahmet Camii İstanbul'da mutlaka görülmesi gereken bir yerdir. Ziyaret etmeye değer."
+      note_tr: "worth + V-ing: worth seeing, worth visiting."
+    kullan:
+      id: u7d12-061-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The old castle is worth ________. The view from the top is amazing.</en>"
+      options: ["visiting", "visit", "to visit", "visited"]
+      answer: 0
+      explain: "\"worth\" + fiil+ing: worth visiting."
+    sina:
+      id: u7d12-061-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What does the writer say about the balloon ride?</en>"
+      stem: "<en>Travel blog: If you go to Cappadocia, the balloon ride at sunrise is a must-see. It is also worth walking in the valleys, but wear comfortable shoes.</en>"
+      options: ["You must not miss it.", "It is dangerous.", "It is not worth doing.", "It is only for children."]
+      answer: 0
+      explain: "must-see = mutlaka görülmeli: kaçırılmamalı."
+    tekrar:
+      id: u7d12-061-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence means \"You should definitely see it\"?</en>"
+      options: ["It's a must-see.", "It's not worth seeing.", "It's a very small thing.", "It's closed for repair."]
+      answer: 0
+      explain: "must-see = mutlaka görülmesi gereken."
+tips:
+  - type: tuzak
+    refs: [U7-059]
+    text: "\"What is İzmir like?\" \"İzmir'i sever misin?\" değil, \"İzmir nasıl bir yer?\" demektir. Cevap sıfattır: \"It's lively and charming.\""
+  - type: mini_dilbilgisi
+    refs: [U7-056, U7-061]
+    text: "famous for + isim (famous for its handicrafts); worth + V-ing (worth visiting). Türkçe \"ile ünlü\" yüzünden \"famous with\" yazma."
+coach:
+  start: "Gün 12: son gün! Gezini anlatırken kullanacağın soru ve kalıplar 🎒"
+  end_good: "Tebrikler, Tourism ünitesi bitti! 🎒 Artık gezi sorularını rahat çözersin."
+  end_mixed: "Ünite bitti! {weak} biraz karıştı; tekrar kuyruğuna aldım, yakında görüşeceğiz. 🎒"
+notifications:
+  morning: "Son gün! \"What is İzmir like?\" sorusuna ne cevap verirsin? 🎒"
+  evening: "Tourism bitti! Hangi kalıp seni en çok zorladı? 🤔"
+  review: "\"Famous for\" mı, \"famous with\" mi? Tek harf farkı değil, tek edat! 🌍"

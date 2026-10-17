@@ -1,0 +1,187 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 9
+status: draft
+title: "Miras, el sanatları ve kültür"
+est_minutes: 7
+new_items: [U7-040, U7-041, U7-042, U7-043, U7-044]
+steps:
+  - item: U7-040
+    card:
+      example_en: "Ephesus is a part of the world's cultural heritage."
+      example_tr: "Efes dünyanın kültürel mirasının bir parçasıdır."
+      note_tr: "natural heritage = doğal miras; cultural heritage = kültürel miras. İkisini karıştırma."
+    kullan:
+      id: u7d09-040-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The white pools of Pamukkale are part of our natural ________.</en>"
+      options: ["heritage", "accommodation", "brochure", "souvenir"]
+      answer: 0
+      explain: "\"natural heritage\" = doğal miras."
+    sina:
+      id: u7d09-040-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we understand from the text?</en>"
+      stem: "<en>Ephesus was added to the UNESCO World Heritage List in 2015. Today more than a million tourists visit the ancient city every year.</en>"
+      options: ["Ephesus is important for the world's cultural heritage.", "Ephesus is a new city.", "Ephesus is closed to tourists.", "Ephesus is a modern port."]
+      answer: 0
+      explain: "Dünya Miras Listesi'ne alınan antik şehir kültürel miras için önemlidir."
+    tekrar:
+      id: u7d09-040-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which one is a part of cultural heritage?</en>"
+      options: ["An ancient theatre and old traditions", "A new shopping centre", "A modern airport", "A football match"]
+      answer: 0
+      explain: "Antik tiyatro ve eski gelenekler kültürel mirastır."
+  - item: U7-041
+    card:
+      example_en: "The castle dates back to the twelfth century."
+      example_tr: "Kale on ikinci yüzyıla dayanıyor."
+      note_tr: "date = tarih / randevu; date back to = geçmişi …-e uzanmak: It dates back to 3000 BC."
+    kullan:
+      id: u7d09-041-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>This bridge is very old. It ________ to the sixteenth century.</en>"
+      options: ["dates back", "goes out", "comes in", "turns off"]
+      answer: 0
+      explain: "\"dates back to\" = (tarihi) …-e dayanır."
+    sina:
+      id: u7d09-041-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What does the text say about the walls of Troy?</en>"
+      stem: "<en>Troy is one of the oldest cities in the world. Some of its walls date back to 3000 BC.</en>"
+      options: ["Some of them are about 5,000 years old.", "They were built last year.", "They are 500 years old.", "They are made of gold."]
+      answer: 0
+      explain: "MÖ 3000 yaklaşık 5.000 yıl öncesidir."
+    tekrar:
+      id: u7d09-041-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>This mosque ________ to 1550. It is almost 500 years old.</en>"
+      options: ["dates back", "goes down", "looks after", "comes out"]
+      answer: 0
+      explain: "\"dates back to 1550\" = 1550'ye dayanır."
+  - item: U7-042
+    card:
+      example_en: "The museum contains more than five thousand ancient objects."
+      example_tr: "Müze beş binden fazla antik eşya içeriyor."
+      note_tr: "contain = içermek, barındırmak (container = kap)."
+    kullan:
+      id: u7d09-042-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>This box ________ old coins and jewellery from the Roman period.</en>"
+      options: ["contains", "conquers", "abandons", "discovers"]
+      answer: 0
+      explain: "Kutunun içinde eski paralar var: contains."
+    sina:
+      id: u7d09-042-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What does the museum have?</en>"
+      stem: "<en>The Blue Cave Museum contains over 2,000 objects from ancient times, such as coins, pots and jewellery.</en>"
+      options: ["Many ancient objects", "Only modern paintings", "Nothing important", "A swimming pool"]
+      answer: 0
+      explain: "Müze 2.000'den fazla antik eşya barındırıyor."
+    tekrar:
+      id: u7d09-042-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>The tomb ________ many pots and a lot of gold.</en>"
+      options: ["contained", "conquered", "abandoned", "accepted"]
+      answer: 0
+      explain: "Mezarda çok sayıda çömlek ve altın bulunuyordu: contained."
+  - item: U7-043
+    card:
+      example_en: "We bought handmade carpets and pottery at the handicrafts market."
+      example_tr: "El sanatları çarşısından el yapımı halı ve çömlek aldık."
+      note_tr: "doğru yazım handicrafts (kaynaklarda \"handcrafts\" hatası var). pottery = çömlekçilik."
+    kullan:
+      id: u7d09-043-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Carpets, pottery and baskets made by hand are called ________.</en>"
+      options: ["handicrafts", "engines", "machines", "computers"]
+      answer: 0
+      explain: "El yapımı halı, çömlek ve sepetler el sanatlarıdır (handicrafts)."
+    sina:
+      id: u7d09-043-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What can visitors do in Avanos?</en>"
+      stem: "<en>Avanos is famous for its pottery. Visitors can watch the artists make pots by hand and buy handicrafts at the small shops.</en>"
+      options: ["Watch artists and buy handicrafts", "Ride a cruise ship", "Sunbathe at the seaside", "Climb a plateau"]
+      answer: 0
+      explain: "Ziyaretçiler sanatçıları izleyebilir ve el sanatları satın alabilir."
+    tekrar:
+      id: u7d09-043-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is a handicraft?</en>"
+      options: ["A carpet made by hand", "A car made in a factory", "A phone made by a machine", "A plastic bottle"]
+      answer: 0
+      explain: "El yapımı halı bir el sanatıdır."
+  - item: U7-044
+    card:
+      example_en: "İstanbul has great cultural diversity: people from many cultures live there."
+      example_tr: "İstanbul'da büyük bir kültürel çeşitlilik var: birçok kültürden insan yaşıyor."
+      note_tr: "culture (kültür) → cultural (kültürel); diversity = çeşitlilik."
+    kullan:
+      id: u7d09-044-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>In our school, students from many countries study together. This is a good example of cultural ________.</en>"
+      options: ["diversity", "location", "construction", "transportation"]
+      answer: 0
+      explain: "Farklı ülkelerden öğrencilerin birlikte olması kültürel çeşitliliktir."
+    sina:
+      id: u7d09-044-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we say about Duru's class?</en>"
+      stem: "<en>Duru: In my class, there are students from Syria, Germany, Japan and Türkiye. We eat each other's food and learn each other's languages.</en>"
+      options: ["It has cultural diversity.", "It has only one culture.", "It is under construction.", "It is an abandoned class."]
+      answer: 0
+      explain: "Farklı ülkelerden öğrenciler var: kültürel çeşitlilik."
+    tekrar:
+      id: u7d09-044-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does \"cultural diversity\" mean?</en>"
+      options: ["Many different cultures living together", "Only one traditional culture", "A very old building", "A city with no people"]
+      answer: 0
+      explain: "Cultural diversity = farklı kültürlerin bir arada olması."
+tips:
+  - type: tuzak
+    refs: [U7-040]
+    text: "natural heritage = doğal miras (Pamukkale); cultural heritage = kültürel miras (Efes). Efes Antik Kenti 2015'te UNESCO Dünya Mirası Listesi'ne alındı."
+  - type: tuzak
+    refs: [U7-041]
+    text: "date = tarih ya da randevu; ama \"date back to\" = geçmişi …-e uzanmak: \"It dates back to 3000 BC.\""
+coach:
+  start: "Gün 9: miras, el sanatları ve kültür. Çarşıya çıkıyoruz 🏺"
+  end_good: "Harika! Müze gezisi gibi bir gün oldu 🏺 Yarın gelenekler ve misafirperverlik."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🏺"
+notifications:
+  morning: "Bugün: kültürel miras, el sanatları, \"date back to\" ve çeşitlilik 🏺"
+  evening: "Doğal miras mı, kültürel miras mı? Pamukkale hangisi? 🤔"
+  review: "Bir kale 12. yüzyıla dayanıyor: İngilizcede hangi kalıp? 🏰"
