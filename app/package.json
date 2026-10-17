@@ -7,7 +7,8 @@
     "content": "python3 scripts/build_content.py",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test src/engine/*.test.js"
   },
   "dependencies": {
     "react": "^19.3.1",
