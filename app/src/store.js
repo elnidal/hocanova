@@ -10,7 +10,7 @@ export const localAdapter = {
   save(s) { try { localStorage.setItem(KEY, JSON.stringify(s)) } catch { /* özel mod vb. */ } },
 }
 
-const initial = () => ({ progress: createProgress(), placement: null, unit: 1, doneDays: {}, unitChecks: {}, retentions: {}, savedAt: 0 })
+const initial = () => ({ progress: createProgress(), placement: null, unit: 1, doneDays: {}, unitChecks: {}, retentions: {}, profile: null, savedAt: 0 })
 
 function reducer(s, a) {
   if (a.type === 'hydrate') return { ...initial(), ...a.state }
@@ -31,6 +31,7 @@ function apply(s, a) {
       return { ...s, progress: applyUnitCheck(s.progress, p), unitChecks: { ...(s.unitChecks || {}), [unit]: { fakes: p.fakes, claimed: p.claimed.length, verified: known, at: p.now } } }
     }
     case 'skipUnitCheck': return { ...s, unitChecks: { ...(s.unitChecks || {}), [a.unit]: { skipped: true, at: a.now } } }
+    case 'profile': return { ...s, profile: a.profile }
     case 'unit': return { ...s, unit: a.unit }
     case 'reset': return initial()
     default: return s

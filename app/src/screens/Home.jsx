@@ -2,6 +2,7 @@ import { counts, dueCount, canStartLesson, retentionState } from '../engine'
 import Coach from '../components/Coach.jsx'
 import Logo from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
+import ProfileCard from '../components/ProfileCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
@@ -76,6 +77,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <button className="btn ghost" onClick={onReview}>Tekrara başla →</button>
         </section>
       )}
+
+      {placement && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
 
       {retentions.some(r => r.st.status !== 'not-started') && (
         <section className="card">
