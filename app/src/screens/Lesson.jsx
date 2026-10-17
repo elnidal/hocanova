@@ -1,9 +1,10 @@
 import { useMemo, useState } from 'react'
-import { planLesson, pickQuestion, shuffleOptions, statusOf } from '../engine'
+import { planLesson, pickQuestion, statusOf } from '../engine'
 import { speak } from '../tts.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
 import RichText from '../components/RichText.jsx'
+import Run from '../components/Run.jsx'
 
 const TIP = { hafiza_kancasi: 'Hafıza kancası', tuzak: 'Tuzak', lgs_taktigi: 'LGS taktiği', kelime_ailesi: 'Kelime ailesi', ilginc_bilgi: 'İlginç bilgi', mini_dilbilgisi: 'Mini dilbilgisi' }
 const STAGE = ['sezdir', 'kullan', 'sina']
@@ -121,17 +122,4 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       </div>
     </div>
   )
-}
-
-// Soru kuyruğu: sırayla gösterir; onResult bir giriş döndürürse kuyruğun sonuna ekler (yanlışı sonda bir kez yeniden sorma).
-function Run({ list, render, onResult, onEnd }) {
-  const [queue, setQueue] = useState(list)
-  const [i, setI] = useState(0)
-  const entry = queue[i]
-  const shuffled = useMemo(() => entry && shuffleOptions(entry.q), [entry]) // eslint-disable-line react-hooks/exhaustive-deps
-  if (!entry) return null
-  const last = i + 1 === queue.length
-  return render(entry, shuffled, last,
-    picked => { const again = onResult(entry, picked === shuffled.correctIndex, picked, shuffled); if (again) setQueue(q => [...q, again]) },
-    () => (last ? onEnd() : setI(i + 1)))
 }

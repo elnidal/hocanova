@@ -3,7 +3,7 @@ import Coach from '../components/Coach.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -42,6 +42,15 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         </section>
       ) : (
         <section className="card today"><h2>Bu ünitenin dersleri bitti 🎉</h2></section>
+      )}
+
+      {placement && due > 0 && (
+        <section className="card today">
+          <div className="eyebrow">Tekrar</div>
+          <h3>{due} ifade tekrar bekliyor</h3>
+          <p className="muted small">Bugün en fazla 10 tanesi sorulur; geciken ve yanlış yapılanlar önce.</p>
+          <button className="btn ghost" onClick={onReview}>Tekrara başla →</button>
+        </section>
       )}
 
       <div className="chips" role="tablist">
