@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 8
+day: 3
+status: draft
+title: "Temizlik günü"
+est_minutes: 7
+new_items: [U8-011, U8-012, U8-013, U8-014, U8-015]
+steps:
+  - item: U8-011
+    card:
+      example_en: "I make the bed every morning before school."
+      example_tr: "Her sabah okuldan önce yatağımı toplarım."
+      note_tr: "make the bed = yatağı toplamak, düzeltmek (do the bed değil)."
+    kullan:
+      id: u8d03-011-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Every morning, Elif gets up and ________ her bed.</en>"
+      options: ["makes", "does", "plays", "sets"]
+      answer: 0
+      explain: "Yatağı toplamak: make the bed."
+    sina:
+      id: u8d03-011-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What does Selin do every morning?</en>"
+      stem: "<en>Selin: Every morning I wake up at seven, put the pillows in place and pull the sheets straight.</en>"
+      options: ["She makes her bed.", "She buys a new bed.", "She cleans the carpet.", "She cooks breakfast."]
+      answer: 0
+      explain: "Yastıkları yerine koyup çarşafı düzeltmek yatağı toplamaktır."
+    tekrar:
+      id: u8d03-011-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Please make the bed.", "Please do the bed.", "Please cook the bed.", "Please play the bed."]
+      answer: 0
+      explain: "Kalıp make the bed'dir."
+  - item: U8-012
+    card:
+      example_en: "Dad vacuums the carpets with the vacuum cleaner on Sundays."
+      example_tr: "Babam pazar günleri halıları elektrik süpürgesiyle süpürür."
+      note_tr: "vacuum = elektrik süpürgesiyle süpürmek; vacuum cleaner = elektrik süpürgesi. Yazımı: tek c, çift u."
+    kullan:
+      id: u8d03-012-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The carpet is full of dust. Please ________ the carpet with the vacuum cleaner.</en>"
+      options: ["vacuum", "mop", "water", "hang"]
+      answer: 0
+      explain: "Halıyı elektrik süpürgesiyle temizlemek: vacuum."
+    sina:
+      id: u8d03-012-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What did Ece use?</en>"
+      stem: "<en>Ece: Mum asked me to clean the living room. I used a machine to clean the carpet and the sofa.</en>"
+      options: ["A vacuum cleaner", "A washing machine", "A cooker", "A dishwasher"]
+      answer: 0
+      explain: "Halı ve kanepeyi temizleyen makine elektrik süpürgesidir."
+    tekrar:
+      id: u8d03-012-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one is the correct spelling?</en>"
+      options: ["vacuum", "vaccum", "vacum", "vaccuum"]
+      answer: 0
+      explain: "Doğru yazım: vacuum (tek c, çift u)."
+  - item: U8-013
+    card:
+      example_en: "I sweep the floor with a broom after dinner."
+      example_tr: "Akşam yemeğinden sonra süpürgeyle yeri süpürürüm."
+      note_tr: "sweep süpürgeyle, vacuum elektrik süpürgesiyle; düzensiz fiil: sweep – swept."
+    kullan:
+      id: u8d03-013-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>There are leaves in the garden. Take the broom and ________ them.</en>"
+      options: ["sweep", "water", "iron", "fold"]
+      answer: 0
+      explain: "Süpürgeyle yaprakları toplamak: sweep."
+    sina:
+      id: u8d03-013-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Dad: The kitchen floor is covered with crumbs.\nKaan: ________ I'll get the broom.</en>"
+      options: ["I'll sweep it.", "I'll iron it.", "I'll water it.", "I'll cook it."]
+      answer: 0
+      explain: "Süpürgeyi getireceğine göre yeri süpürecek."
+    tekrar:
+      id: u8d03-013-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>What is the past form of \"sweep\"?</en>"
+      options: ["swept", "sweeped", "swepted", "sweeps"]
+      answer: 0
+      explain: "sweep – swept (düzensiz fiil)."
+  - item: U8-014
+    card:
+      example_en: "After sweeping, Bora mops the kitchen floor with water."
+      example_tr: "Süpürdükten sonra Bora mutfak zeminini su ile paspaslar."
+      note_tr: "mop = yeri ıslak paspasla silmek (mop the floor)."
+    kullan:
+      id: u8d03-014-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The floor is dirty because it rained. Please ________ the floor with a wet cloth.</en>"
+      options: ["mop", "dust", "iron", "feed"]
+      answer: 0
+      explain: "Yeri ıslak bezle silmek: mop the floor."
+    sina:
+      id: u8d03-014-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What does Duru do on Tuesday?</en>"
+      stem: "<en>Duru's list: Monday – sweep the living room. Tuesday – mop the kitchen floor. Wednesday – water the plants.</en>"
+      options: ["She cleans the kitchen floor with water.", "She sweeps the living room.", "She waters the plants.", "She washes the dishes."]
+      answer: 0
+      explain: "Salı günü mutfak zeminini paspaslıyor."
+    tekrar:
+      id: u8d03-014-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What is the difference between \"sweep\" and \"mop\"?</en>"
+      options: ["You sweep with a broom and mop with water.", "You sweep with water and mop with a broom.", "They are exactly the same.", "Both are used for cooking."]
+      answer: 0
+      explain: "Süpürgeyle süpürülür (sweep); su ve paspasla silinir (mop)."
+  - item: U8-015
+    card:
+      example_en: "Please dust the shelves. They are full of dust."
+      example_tr: "Lütfen rafların tozunu al. Tozla dolular."
+      note_tr: "dust isim \"toz\", fiil \"tozunu almak\" (toz yapmak değil!)."
+    kullan:
+      id: u8d03-015-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The shelves are covered with dust from the old books. I'll ________ them with a cloth.</en>"
+      options: ["dust", "mop", "water", "sweep"]
+      answer: 0
+      explain: "Rafların tozunu bezle almak: dust."
+    sina:
+      id: u8d03-015-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What did Selin do?</en>"
+      stem: "<en>Selin: I took a cloth and cleaned the TV, the bookcase and the lamps. Now there is no dust on them.</en>"
+      options: ["She dusted the room.", "She cooked a meal.", "She fed the fish.", "She painted the wall."]
+      answer: 0
+      explain: "Eşyaların tozunu aldı: dust."
+    tekrar:
+      id: u8d03-015-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>In which sentence is \"dust\" a verb?</en>"
+      options: ["I dust the shelves every Saturday.", "There is dust on the table.", "The dust is grey.", "Dust is everywhere."]
+      answer: 0
+      explain: "İlk cümlede dust fiildir (tozunu almak); diğerlerinde isimdir."
+tips:
+  - type: tuzak
+    refs: [U8-011]
+    text: "make the bed = sabah yatağı toplamak. \"Yatak yapmak\" diye çevirme; \"do the bed\" da denmez."
+  - type: tuzak
+    refs: [U8-013, U8-012]
+    text: "sweep süpürgeyle süpürmek, vacuum elektrik süpürgesiyle; mop ıslak bezle silmek; dust tozunu almak."
+coach:
+  start: "Gün 3: temizlik günü! Süpürge, paspas, toz bezi 🧹"
+  end_good: "Mükemmel! Temizlik fiilleri tamam 🧹 Yarın çöp ve çamaşır."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🧹"
+notifications:
+  morning: "Bugün: yatağı toplamak, süpürmek, paspaslamak, toz almak 🧹"
+  evening: "Sweep mi, vacuum mu? Hangisi elektrik süpürgesi? 🤔"
+  review: "\"Dust\" bir fiil olabilir mi? Evet! Ne anlama gelir? 🧽"

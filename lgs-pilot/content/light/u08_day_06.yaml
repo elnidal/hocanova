@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 8
+day: 6
+status: draft
+title: "Ev, aile ve harçlık"
+est_minutes: 7
+new_items: [U8-026, U8-027, U8-028, U8-029, U8-030]
+steps:
+  - item: U8-026
+    card:
+      example_en: "I feed the fish every morning."
+      example_tr: "Her sabah balıkları beslerim."
+      note_tr: "feed = beslemek, yem ya da mama vermek. Düzensiz: feed – fed. food ile aynı aileden."
+    kullan:
+      id: u8d06-026-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Don't forget to ________ the dog. He is hungry.</en>"
+      options: ["feed", "fold", "mow", "mop"]
+      answer: 0
+      explain: "Aç köpeğe mama vermek: feed."
+    sina:
+      id: u8d06-026-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What does Duru do for Fıstık?</en>"
+      stem: "<en>Duru: Every day before school I fill Fıstık's bowl with food and give him fresh water.</en>"
+      options: ["She feeds him.", "She walks him in the park.", "She washes him.", "She sells him."]
+      answer: 0
+      explain: "Kasesini mamayla doldurup su veriyor: onu besliyor."
+    tekrar:
+      id: u8d06-026-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>What is the past form of \"feed\"?</en>"
+      options: ["fed", "feeded", "feeds", "feding"]
+      answer: 0
+      explain: "feed – fed (düzensiz fiil)."
+  - item: U8-027
+    card:
+      example_en: "We live in a flat on the third floor."
+      example_tr: "Üçüncü kattaki bir dairede yaşıyoruz."
+      note_tr: "flat sıfat olarak \"düz\"; ev bağlamında \"apartman dairesi\" (İngiliz İngilizcesi; Amerikan: apartment)."
+    kullan:
+      id: u8d06-027-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We don't have a house with a garden. We live in a ________ on the fifth floor.</en>"
+      options: ["flat", "lawn", "cooker", "dish"]
+      answer: 0
+      explain: "Beşinci katta yaşamak: apartman dairesi (flat)."
+    sina:
+      id: u8d06-027-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What kind of home is it?</en>"
+      stem: "<en>Ece: Our new home has two bedrooms, a small kitchen and a balcony. It is on the sixth floor, and there is a lift.</en>"
+      options: ["A flat", "A palace", "A tent", "A mansion"]
+      answer: 0
+      explain: "Altıncı kat, asansör, balkon: apartman dairesi."
+    tekrar:
+      id: u8d06-027-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word means \"apartment\" in British English?</en>"
+      options: ["flat", "square", "port", "resort"]
+      answer: 0
+      explain: "İngiliz İngilizcesinde apartment = flat."
+  - item: U8-028
+    card:
+      example_en: "All my relatives come to our house on holidays."
+      example_tr: "Bayramlarda bütün akrabalarım bize gelir."
+      note_tr: "relative = akraba (\"relatif, göreceli\" değil); relatives = akrabalar."
+    kullan:
+      id: u8d06-028-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My aunts, uncles and cousins are my ________.</en>"
+      options: ["relatives", "neighbours", "classmates", "tourists"]
+      answer: 0
+      explain: "Teyze, amca ve kuzenler akrabadır (relatives)."
+    sina:
+      id: u8d06-028-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who is visiting Kaan?</en>"
+      stem: "<en>Kaan: This weekend, my grandparents, my uncle and his children are visiting us. We are a big family!</en>"
+      options: ["His relatives", "His classmates", "His teachers", "His neighbours"]
+      answer: 0
+      explain: "Büyükanne-büyükbaba, amca ve çocukları: akrabalar."
+    tekrar:
+      id: u8d06-028-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Who is NOT a relative?</en>"
+      options: ["A neighbour", "An aunt", "A cousin", "A grandfather"]
+      answer: 0
+      explain: "Komşu akraba değildir."
+  - item: U8-029
+    card:
+      example_en: "I get an allowance of fifty liras every week."
+      example_tr: "Her hafta elli lira harçlık alırım."
+      note_tr: "allowance burada harçlık (pocket money); allow (izin vermek) ile karıştırma."
+    kullan:
+      id: u8d06-029-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My parents give me some money every week. It is my ________.</en>"
+      options: ["allowance", "permission", "furniture", "laundry"]
+      answer: 0
+      explain: "Haftalık harçlık: allowance."
+    sina:
+      id: u8d06-029-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: How do you pay for your cinema tickets?\nBora: ________ My parents give me a hundred liras every week.</en>"
+      options: ["I use my allowance.", "I use my homework.", "I use my room.", "I use my bed."]
+      answer: 0
+      explain: "Ailesinin verdiği haftalık para harçlıktır."
+    tekrar:
+      id: u8d06-029-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word means \"pocket money\"?</en>"
+      options: ["allowance", "assignment", "furniture", "relative"]
+      answer: 0
+      explain: "pocket money = allowance (harçlık)."
+  - item: U8-030
+    card:
+      example_en: "My parents gave me a reward for tidying my room."
+      example_tr: "Odamı topladığım için ailem bana bir ödül verdi."
+      note_tr: "reward bir davranışın karşılığıdır (ev işi yapana ödül); award yarışmada verilen ödüldür."
+    kullan:
+      id: u8d06-030-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Mum gave Elif a small ________ for helping with the chores: a chocolate.</en>"
+      options: ["reward", "chore", "flat", "relative"]
+      answer: 0
+      explain: "Yardım için verilen küçük hediye ödüldür (reward)."
+    sina:
+      id: u8d06-030-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What is Kaan's reward?</en>"
+      stem: "<en>Kaan did all his chores this week without complaining. His dad said, \"Well done! As a reward, we can go to the cinema on Saturday.\"</en>"
+      options: ["Going to the cinema", "Buying a new bike", "Having an extra chore", "Cleaning the car"]
+      answer: 0
+      explain: "Babası ödül olarak Cumartesi sinemaya gitmeyi öneriyor."
+    tekrar:
+      id: u8d06-030-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is a reward?</en>"
+      options: ["A gift for doing a good job", "A punishment for being late", "A bill for a hotel", "A map of the city"]
+      answer: 0
+      explain: "İyi iş çıkarana verilen hediye ödüldür."
+tips:
+  - type: ilginc_bilgi
+    refs: [U8-016, U8-027]
+    text: "garbage / trash Amerikan, rubbish İngiliz İngilizcesi; flat İngiliz, apartment Amerikan. Sınavda hepsi karşına çıkabilir."
+  - type: tuzak
+    refs: [U8-029]
+    text: "allowance = harçlık. allow (izin vermek) ile karıştırma; kaynak listelerde bu hata var."
+coach:
+  start: "Gün 6: ev, aile ve harçlık. Bu hafta kim ne kazandı? 💰"
+  end_good: "Harika! Ev ve aile kelimeleri tamam 💰 Yarın ödünç, günlük, mobilya ve sorumluluk."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 💰"
+notifications:
+  morning: "Bugün: besleme, daire, akraba, harçlık ve ödül 💰"
+  evening: "Flat sadece \"düz\" mü demek? Evde ne anlama gelir? 🏠"
+  review: "Akraba mı, komşu mu? Hangisi \"relative\"? 👨‍👩‍👧"

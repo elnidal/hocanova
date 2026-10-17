@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 8
+day: 1
+status: draft
+title: "Ev işlerine giriş"
+est_minutes: 7
+new_items: [U8-001, U8-002, U8-003, U8-004, U8-005]
+steps:
+  - item: U8-001
+    card:
+      example_en: "I help my parents with the household chores every weekend."
+      example_tr: "Hafta sonları ailemin ev işlerine yardım ederim."
+      note_tr: "chore genelde çoğuldur (chores) ve \"do\" ile kullanılır: do the chores (make the chores değil)."
+    kullan:
+      id: u8d01-001-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>On Saturdays, my sister and I ________ the chores together.</en>"
+      options: ["do", "make", "play", "take"]
+      answer: 0
+      explain: "Ev işleri \"do the chores\" ile söylenir."
+    sina:
+      id: u8d01-001-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: Are you free on Saturday?\nSelin: ________ I have to do the household chores in the morning.</en>"
+      options: ["Only in the afternoon.", "Yes, all day.", "No, I'm free in the morning.", "Yes, I'm going to the beach in the morning."]
+      answer: 0
+      explain: "Selin sabah ev işi yapacak; bu yüzden yalnızca öğleden sonra müsait."
+    tekrar:
+      id: u8d01-001-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is a household chore?</en>"
+      options: ["Washing the dishes", "Watching a film", "Playing basketball", "Listening to music"]
+      answer: 0
+      explain: "Bulaşık yıkamak bir ev işidir; diğerleri boş zaman etkinliğidir."
+  - item: U8-002
+    card:
+      example_en: "Everyone in our family has a task. My duty is to water the plants."
+      example_tr: "Ailemizde herkesin bir görevi var. Benim görevim bitkileri sulamak."
+      note_tr: "assignment okulda \"ödev, proje görevi\"; duty daha çok vazife (on duty = nöbette)."
+    kullan:
+      id: u8d01-002-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Our teacher gave us a new ________: write a short story about our holiday.</en>"
+      options: ["assignment", "vacuum", "furniture", "janitor"]
+      answer: 0
+      explain: "Öğretmenin verdiği yazma ödevi: assignment."
+    sina:
+      id: u8d01-002-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who has to prepare the meal?</en>"
+      stem: "<en>Mum's note: Everyone has a task today. Ali washes the car, Zeynep cooks the lunch, and Dad does the shopping.</en>"
+      options: ["Zeynep", "Ali", "Dad", "Mum"]
+      answer: 0
+      explain: "Yemeği Zeynep pişiriyor."
+    tekrar:
+      id: u8d01-002-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"task\"?</en>"
+      options: ["job", "gift", "rule", "holiday"]
+      answer: 0
+      explain: "task ≈ job (görev, iş)."
+  - item: U8-003
+    card:
+      example_en: "Dad does the grocery shopping every Friday."
+      example_tr: "Babam her cuma market alışverişini yapar."
+      note_tr: "do the shopping / do the grocery shopping kalıbı: \"make shopping\" denmez."
+    kullan:
+      id: u8d01-003-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We have no milk or bread. I'll ________ the grocery shopping after school.</en>"
+      options: ["do", "make", "give", "cook"]
+      answer: 0
+      explain: "Alışveriş yapmak: do the (grocery) shopping."
+    sina:
+      id: u8d01-003-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Mum: We have no eggs or fruit at home.\nSelin: ________ I'll buy them on my way home.</en>"
+      options: ["I'll do the grocery shopping.", "I'll go to the cinema.", "I'll call the doctor.", "I'll write a letter."]
+      answer: 0
+      explain: "Yumurta ve meyve almak market alışverişidir."
+    tekrar:
+      id: u8d01-003-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>You can buy bread, milk and eggs when you do the ________ shopping.</en>"
+      options: ["grocery", "chore", "cooker", "dust"]
+      answer: 0
+      explain: "Ekmek, süt, yumurta için yapılan alışveriş: grocery shopping."
+  - item: U8-004
+    card:
+      example_en: "My mother is a good cook. She cooks dinner every evening."
+      example_tr: "Annem iyi bir aşçıdır (iyi yemek yapar). Her akşam akşam yemeği pişirir."
+      note_tr: "cook hem fiil hem isimdir (aşçı). cooker = ocak, fırın; aşçı DEĞİL!"
+    kullan:
+      id: u8d01-004-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My father is a very good ________. His soup is delicious.</en>"
+      options: ["cook", "cooker", "cooked", "cooking"]
+      answer: 0
+      explain: "\"a good cook\" = iyi yemek yapan kişi. cooker bir cihazdır."
+    sina:
+      id: u8d01-004-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["The cook is making dinner in the kitchen.", "The cooker is making dinner in the kitchen.", "The cooked is making dinner in the kitchen.", "The cooking is making dinner in the kitchen."]
+      answer: 0
+      explain: "Yemek yapan kişi cook'tur; cooker ocak/fırındır."
+    tekrar:
+      id: u8d01-004-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is a cooker?</en>"
+      options: ["A machine with hot plates used for cooking", "A person who cooks in a restaurant", "A big bowl for soup", "A kind of vegetable"]
+      answer: 0
+      explain: "cooker = pişirme cihazı (ocak/fırın); aşçı cook'tur."
+  - item: U8-005
+    card:
+      example_en: "Please set the table. Dinner is ready."
+      example_tr: "Lütfen sofrayı kur. Yemek hazır."
+      note_tr: "set the table = sofrayı kurmak; clear the table = sofrayı toplamak."
+    kullan:
+      id: u8d01-005-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Before dinner, Elif puts the plates, forks and glasses on the table. She ________ the table.</en>"
+      options: ["sets", "makes", "does", "plays"]
+      answer: 0
+      explain: "Yemekten önce sofrayı kurmak: set the table."
+    sina:
+      id: u8d01-005-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Mum: Dinner is almost ready.\nDuru: ________ I'll put the plates and forks on the table.</en>"
+      options: ["Let me set the table.", "Let me clear the table.", "Let me do the laundry.", "Let me take out the rubbish."]
+      answer: 0
+      explain: "Tabak ve çatalları masaya koymak sofrayı kurmaktır; clear the table yemekten sonra toplamaktır."
+    tekrar:
+      id: u8d01-005-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which expression means \"to put plates and forks on the table before a meal\"?</en>"
+      options: ["set the table", "clear the table", "wash the table", "break the table"]
+      answer: 0
+      explain: "Yemekten önce sofra hazırlamak: set the table."
+tips:
+  - type: tuzak
+    refs: [U8-004]
+    text: "cooker aşçı değil, ocak ya da fırındır. Aşçı = cook: \"My mother is a good cook.\""
+  - type: tuzak
+    refs: [U8-001, U8-003]
+    text: "do the chores, do the shopping, do the laundry, do the washing up; ama make the bed, make a mess. Hangisi do, hangisi make? Kalıp olarak ezberle."
+coach:
+  start: "Yeni ünite: Chores! Bugün ev işlerinin ilk kelimeleri. Eldivenlerini tak 🧤"
+  end_good: "Harika! Ev işleri kelimelerinde ilk adımı attın 🧤 Yarın mutfak başlıyor."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🧤"
+notifications:
+  morning: "Yeni ünite Chores! Bugün: ev işleri, görev, market ve sofra 🧤"
+  evening: "\"Cook\" aşçı mı, ocak mı? \"Cooker\" ise? 🍳"
+  review: "Ev işleri için hangi fiil: do mu, make mi? 🤔"

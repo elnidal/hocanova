@@ -1,0 +1,184 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 8
+day: 4
+status: draft
+title: "Çöp ve çamaşır"
+est_minutes: 7
+new_items: [U8-016, U8-017, U8-018, U8-019, U8-020]
+steps:
+  - item: U8-016
+    card:
+      example_en: "Please take out the rubbish. The bin is full."
+      example_tr: "Lütfen çöpü çıkar. Çöp kutusu dolu."
+      note_tr: "garbage / trash Amerikan, rubbish İngiliz İngilizcesi: üçü de \"çöp\". take out (dışarı çıkarmak) ≠ take off (çıkarmak, giysiyi)."
+    kullan:
+      id: u8d04-016-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The bin is full. Can you ________ the rubbish, please?</en>"
+      options: ["take out", "take off", "take up", "take in"]
+      answer: 0
+      explain: "Çöpü dışarı çıkarmak: take out the rubbish."
+    sina:
+      id: u8d04-016-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Mum: The bin is full and it smells bad.\nKaan: ________</en>"
+      options: ["I'll take out the garbage now.", "I'll take off the garbage now.", "I'll make the garbage now.", "I'll read the garbage now."]
+      answer: 0
+      explain: "Çöp kutusu dolu; çöpü çıkarmak gerekir (take out). take off giysi çıkarmak içindir."
+    tekrar:
+      id: u8d04-016-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word does NOT mean the same as the others?</en>"
+      options: ["sofa", "garbage", "trash", "rubbish"]
+      answer: 0
+      explain: "garbage, trash, rubbish = çöp; sofa kanepedir."
+  - item: U8-017
+    card:
+      example_en: "The school janitor cleans the corridors every morning."
+      example_tr: "Okulun hademesi her sabah koridorları temizler."
+      note_tr: "janitor = okul ya da bina görevlisi, hademe, temizlik görevlisi."
+    kullan:
+      id: u8d04-017-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The ________ opens the school doors every morning and cleans the corridors.</en>"
+      options: ["janitor", "tourist", "spectator", "emperor"]
+      answer: 0
+      explain: "Okulu açıp koridorları temizleyen kişi hademedir (janitor)."
+    sina:
+      id: u8d04-017-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who should students tell about a broken window?</en>"
+      stem: "<en>School notice: Our janitor, Mr Yılmaz, is in the building from 6 a.m. Please tell him if a window is broken or a tap is leaking.</en>"
+      options: ["The janitor", "The tourist", "The cook", "The spectator"]
+      answer: 0
+      explain: "Duyuruya göre kırık pencere ya da akan musluk hademeye söylenir."
+    tekrar:
+      id: u8d04-017-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Who works at a school and keeps the building clean?</en>"
+      options: ["A janitor", "A pilot", "A tour guide", "A dentist"]
+      answer: 0
+      explain: "Okul binasını temiz tutan kişi hademedir."
+  - item: U8-018
+    card:
+      example_en: "I do the laundry on Sundays. The laundry basket is full."
+      example_tr: "Pazar günleri çamaşır yıkarım. Çamaşır sepeti dolu."
+      note_tr: "laundry sayılamaz: \"laundries\" denmez. do the laundry = do the washing."
+    kullan:
+      id: u8d04-018-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My mum does the ________ on Sundays: she washes all our dirty clothes.</en>"
+      options: ["laundry", "laundries", "laundrys", "launder"]
+      answer: 0
+      explain: "\"do the laundry\" = çamaşır yıkamak; laundry sayılamaz."
+    sina:
+      id: u8d04-018-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["There is a lot of laundry to do today.", "There are a lot of laundries to do today.", "There is a lot of laundrys to do today.", "There are many laundry to do today."]
+      answer: 0
+      explain: "laundry sayılamaz isimdir: There is a lot of laundry."
+    tekrar:
+      id: u8d04-018-t
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Dad: Where are my dirty socks?\nMum: ________</en>"
+      options: ["They are in the laundry basket.", "They are in the fridge.", "They are in the cooker.", "They are in the bin."]
+      answer: 0
+      explain: "Kirli çoraplar çamaşır sepetindedir."
+  - item: U8-019
+    card:
+      example_en: "Separate the white clothes from the coloured ones before you wash them."
+      example_tr: "Yıkamadan önce beyaz çamaşırları renklilerden ayır."
+      note_tr: "yazımı separate (ortada a): kaynak listelerde \"seperate\" hatası var."
+    kullan:
+      id: u8d04-019-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Please ________ the dark clothes from the white ones. The colours may run in the washing machine.</en>"
+      options: ["separate", "mix", "join", "fold"]
+      answer: 0
+      explain: "Koyu ve beyaz çamaşırları ayırmak: separate."
+    sina:
+      id: u8d04-019-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one is the correct spelling?</en>"
+      options: ["separate", "seperate", "separete", "sepparate"]
+      answer: 0
+      explain: "Doğru yazım: separate (ortada a)."
+    tekrar:
+      id: u8d04-019-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Why do we separate dark and white clothes before washing?</en>"
+      options: ["Because dark colours can stain white clothes", "Because white clothes are heavier", "Because dark clothes are always dirty", "Because white clothes can't be washed"]
+      answer: 0
+      explain: "Koyu renkler beyaz çamaşırları lekeleyebilir."
+  - item: U8-020
+    card:
+      example_en: "I hang out the laundry in the garden when it is sunny."
+      example_tr: "Hava güneşliyken çamaşırları bahçede sererim."
+      note_tr: "hang out the laundry = çamaşır sermek; hang out (tek başına) = takılmak (U2); hang on = beklemek (U4)."
+    kullan:
+      id: u8d04-020-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>It is sunny today, so I'll ________ the washing in the garden.</en>"
+      options: ["hang out", "hang on", "take off", "set"]
+      answer: 0
+      explain: "Çamaşırı sermek: hang out the washing."
+    sina:
+      id: u8d04-020-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: Where is Mum?\nBora: She is in the garden. ________</en>"
+      options: ["She is hanging out the laundry.", "She is hanging on the laundry.", "She is hanging out with the laundry.", "She is hanging in the laundry."]
+      answer: 0
+      explain: "Bahçedeki anne çamaşır seriyor: hang out the laundry."
+    tekrar:
+      id: u8d04-020-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which expression means \"to put wet clothes outside to dry\"?</en>"
+      options: ["hang out the laundry", "do the laundry", "fold the laundry", "separate the laundry"]
+      answer: 0
+      explain: "Islak çamaşırı kurumaya asmak: hang out the laundry."
+tips:
+  - type: hafiza_kancasi
+    refs: [U8-019, U8-018, U8-020]
+    text: "Çamaşırın yolculuğu: separate → do the laundry → hang out → fold → iron. Sırayı aklında tut, kelimeler yerine oturur."
+  - type: tuzak
+    refs: [U8-020]
+    text: "hang out takılmak, hang out the laundry çamaşır sermek, hang on beklemek. Nesneye bak: \"the laundry / the washing\" varsa çamaşır."
+coach:
+  start: "Gün 4: çöp ve çamaşır. Sepet dolu, hadi başlayalım 🧺"
+  end_good: "Harika! Çamaşırın yolculuğunu öğrendin 🧺 Yarın ütü, katlama ve bahçe."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🧺"
+notifications:
+  morning: "Bugün: çöpü çıkarmak, hademe ve çamaşır. Sepet dolu! 🧺"
+  evening: "Hang out, hang on, hang out the laundry: farkı biliyor musun? 🤔"
+  review: "\"Seperate\" mı, \"separate\" mı? Hangisi doğru yazım? ✍️"

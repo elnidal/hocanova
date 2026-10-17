@@ -1,0 +1,184 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 8
+day: 5
+status: draft
+title: "Ütü, katlama ve bahçe"
+est_minutes: 7
+new_items: [U8-021, U8-022, U8-023, U8-024, U8-025]
+steps:
+  - item: U8-021
+    card:
+      example_en: "I iron my shirt before the school party."
+      example_tr: "Okul partisinden önce gömleğimi ütülerim."
+      note_tr: "iron = ütülemek; ütü. \"demir\" de demektir. Okunuşu /ˈaɪən/ (ayın): r okunmaz."
+    kullan:
+      id: u8d05-021-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My shirt is full of wrinkles. I need to ________ it before school.</en>"
+      options: ["iron", "dust", "mop", "feed"]
+      answer: 0
+      explain: "Buruşuk gömleği ütülemek: iron."
+    sina:
+      id: u8d05-021-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Mum: Your shirt is full of wrinkles.\nKaan: ________</en>"
+      options: ["I'll iron it.", "I'll mop it.", "I'll feed it.", "I'll water it."]
+      answer: 0
+      explain: "Buruşuk gömlek için yapılacak iş ütülemektir."
+    tekrar:
+      id: u8d05-021-t
+      type: odd_one_out
+      prompt: "<en>In which word is there a letter that we don't say?</en>"
+      options: ["iron", "ring", "red", "run"]
+      answer: 0
+      explain: "iron /ˈaɪən/: r okunmaz."
+  - item: U8-022
+    card:
+      example_en: "Fold the clothes and put them in the wardrobe."
+      example_tr: "Kıyafetleri katla ve dolaba koy."
+      note_tr: "fold = katlamak (fold the clothes / the towels)."
+    kullan:
+      id: u8d05-022-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The clean towels are on the bed. Please ________ them and put them in the cupboard.</en>"
+      options: ["fold", "mow", "sweep", "dust"]
+      answer: 0
+      explain: "Havluları dolaba koymadan önce katlarız: fold."
+    sina:
+      id: u8d05-022-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What did Duru do?</en>"
+      stem: "<en>Duru: I took the dry clothes from the line, made small squares of them and put them in the drawer.</en>"
+      options: ["She folded the clothes.", "She ironed the clothes.", "She washed the clothes.", "She sold the clothes."]
+      answer: 0
+      explain: "Kıyafetleri küçük kareler hâline getirip çekmeceye koymak katlamaktır."
+    tekrar:
+      id: u8d05-022-t
+      type: process_order
+      lgs_like: true
+      stem_id: S07
+      prompt: "<en>What does Selin do after she hangs out the clothes?</en>"
+      stem: "<en>Selin's laundry day: First, she separates the clothes. Then she washes them. After that, she hangs them out. Finally, she folds them.</en>"
+      options: ["She folds them.", "She separates them.", "She washes them.", "She irons them."]
+      answer: 0
+      explain: "Metne göre asmadan sonra katlıyor."
+  - item: U8-023
+    card:
+      example_en: "Dad mows the lawn every two weeks."
+      example_tr: "Babam iki haftada bir çimleri biçer."
+      note_tr: "lawn = bahçedeki çimenlik; grass = çim (bitki)."
+    kullan:
+      id: u8d05-023-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The grass in our garden is too long. Dad has to ________ the lawn.</en>"
+      options: ["mow", "vacuum", "iron", "fold"]
+      answer: 0
+      explain: "Uzayan çimi kesmek: mow the lawn."
+    sina:
+      id: u8d05-023-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>When does Elif's dad mow the lawn?</en>"
+      stem: "<en>Elif's dad: On Sundays I get up early and mow the lawn before it gets too hot. Then I water the roses.</en>"
+      options: ["Early on Sunday morning", "On Monday evening", "On Saturday night", "In the afternoon"]
+      answer: 0
+      explain: "Pazar günleri erkenden, hava çok ısınmadan çimleri biçiyor."
+    tekrar:
+      id: u8d05-023-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Where do people mow the lawn?</en>"
+      options: ["In a garden or a park", "In a bedroom", "In a kitchen", "In a classroom"]
+      answer: 0
+      explain: "Çimenlik bahçe ya da parkta bulunur."
+  - item: U8-024
+    card:
+      example_en: "Please water the plants twice a week."
+      example_tr: "Lütfen bitkileri haftada iki kez sula."
+      note_tr: "water burada fiildir: sulamak."
+    kullan:
+      id: u8d05-024-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The flowers are dry. Can you ________ them, please?</en>"
+      options: ["water", "wear", "wait", "weigh"]
+      answer: 0
+      explain: "Kuru çiçeklere su vermek: water."
+    sina:
+      id: u8d05-024-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>How often should the plants be watered?</en>"
+      stem: "<en>Note: I am away until Friday. Please water the plants every Monday and Thursday. They love water!</en>"
+      options: ["Twice a week", "Every day", "Once a month", "Only on Fridays"]
+      answer: 0
+      explain: "Pazartesi ve perşembe: haftada iki kez."
+    tekrar:
+      id: u8d05-024-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>In which sentence does \"water\" mean \"to give water to plants\"?</en>"
+      options: ["I water the flowers every morning.", "I drink a glass of water every morning.", "The water is very cold.", "The sea water is salty."]
+      answer: 0
+      explain: "İlk cümlede water fiildir (sulamak); diğerlerinde isimdir."
+  - item: U8-025
+    card:
+      example_en: "Selin takes care of her little brother after school."
+      example_tr: "Selin okuldan sonra küçük kardeşine bakar."
+      note_tr: "take care of = look after = bakmak. look after ≠ look for (aramak) ≠ look at (bakmak, göz atmak)."
+    kullan:
+      id: u8d05-025-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My grandmother is ill. My mum is going to ________ her this week.</en>"
+      options: ["look after", "look for", "look at", "look up"]
+      answer: 0
+      explain: "Hasta büyükanneye bakmak: look after."
+    sina:
+      id: u8d05-025-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which phrase means \"to take care of a baby\"?</en>"
+      options: ["look after the baby", "look for the baby", "look at the baby", "look like the baby"]
+      answer: 0
+      explain: "Bebeğe bakmak: look after the baby. look for = aramak."
+    tekrar:
+      id: u8d05-025-t
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: Who will stay with your dog while you are on holiday?\nDuru: ________</en>"
+      options: ["My cousin will look after him.", "My cousin will look for him.", "My cousin will look like him.", "My cousin will look up him."]
+      answer: 0
+      explain: "Tatildeyken köpeğe bakacak kişi: look after him."
+tips:
+  - type: tuzak
+    refs: [U8-021]
+    text: "iron \"demir\" diye bilinir; ev işinde ütü ya da ütülemek demektir. Okunuşu /ˈaɪən/ (ayın): r okunmaz."
+  - type: tuzak
+    refs: [U8-025]
+    text: "look after (bakmak, ilgilenmek) ≠ look for (aramak) ≠ look at (göz atmak). Tek edat anlamı değiştirir."
+coach:
+  start: "Gün 5: ütü, katlama ve bahçe işleri 🌿"
+  end_good: "Süper! Ev ve bahçe işlerini tamamladın 🌿 Yarın ev ve aile kelimeleri."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🌿"
+notifications:
+  morning: "Bugün: ütü, katlama, çim biçme, çiçek sulama ve bakım 🌿"
+  evening: "Look after mı, look for mu? Hasta büyükanneye ne yaparsın? 🤔"
+  review: "\"Iron\" kelimesinde hangi harf okunmaz? 👕"
