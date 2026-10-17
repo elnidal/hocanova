@@ -1,0 +1,186 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 9
+day: 7
+status: draft
+title: "Yarışma, katkı ve emek"
+est_minutes: 7
+new_items: [U9-031, U9-032, U9-033, U9-034, U9-035]
+steps:
+  - item: U9-031
+    card:
+      example_en: "I'm going to take part in a science competition."
+      example_tr: "Bir bilim yarışmasına katılacağım."
+      note_tr: "compete = yarışmak; take part in = join = katılmak; science fair = bilim fuarı / şenliği."
+    kullan:
+      id: u9d07-031-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Our school is organising a science ________ for 8th grade students.</en>"
+      options: ["competition", "chore", "furniture", "laundry"]
+      answer: 0
+      explain: "Okulun düzenlediği bilim yarışması: competition."
+    sina:
+      id: u9d07-031-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>What is the prize?</en>"
+      stem: "<en>Poster: Young Scientists 2027. Date: 12 May. Place: School hall. Prize: A telescope.</en>"
+      options: ["A telescope", "A laptop", "A bike", "A book"]
+      answer: 0
+      explain: "Afişte ödül teleskop olarak yazıyor."
+    tekrar:
+      id: u9d07-031-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>She wants to ________ in the competition.</en>"
+      options: ["take part", "take off", "take out", "take after"]
+      answer: 0
+      explain: "Yarışmaya katılmak: take part in."
+  - item: U9-032
+    card:
+      example_en: "Marie Curie made a great contribution to science."
+      example_tr: "Marie Curie bilime büyük katkı yaptı."
+      note_tr: "contribute to + isim / V-ing; make a contribution to."
+    kullan:
+      id: u9d07-032-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Many scientists ________ to the development of medicine.</en>"
+      options: ["contribute", "contributes", "contribution", "contributing"]
+      answer: 0
+      explain: "Many scientists + fiil: contribute (to)."
+    sina:
+      id: u9d07-032-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What was Marie Curie's contribution?</en>"
+      stem: "<en>Marie Curie was the first woman to win a Nobel Prize. Her work on radioactivity helped doctors treat illnesses.</en>"
+      options: ["Her work helped medicine.", "She built the first telephone.", "She discovered America.", "She invented the car."]
+      answer: 0
+      explain: "Çalışmaları doktorların hastalıkları tedavi etmesine yardım etti."
+    tekrar:
+      id: u9d07-032-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Everyone can contribute to a cleaner world.", "Everyone can contribute a cleaner world.", "Everyone can contribute at a cleaner world.", "Everyone can contribute on a cleaner world."]
+      answer: 0
+      explain: "Kalıp: contribute to."
+  - item: U9-033
+    card:
+      example_en: "You worked hard, so you deserve this prize."
+      example_tr: "Çok çalıştın, bu ödülü hak ediyorsun."
+      note_tr: "deserve = hak etmek: You deserve it!"
+    kullan:
+      id: u9d07-033-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>He studies every day, so he ________ a good grade.</en>"
+      options: ["deserves", "deserve", "deserving", "to deserve"]
+      answer: 0
+      explain: "He + fiil+s: deserves."
+    sina:
+      id: u9d07-033-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: I won the science competition!\nSelin: ________ You worked so hard.</en>"
+      options: ["Congratulations! You deserve it.", "I'm sorry to hear that.", "Don't be late!", "What a pity!"]
+      answer: 0
+      explain: "Kazanan arkadaşı tebrik etmek uygun."
+    tekrar:
+      id: u9d07-033-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Who deserves a prize?</en>"
+      options: ["A student who worked hard and did a great project", "A student who copied a project", "A student who never came to class", "A student who broke the lab"]
+      answer: 0
+      explain: "Çok çalışıp harika proje yapan öğrenci ödülü hak eder."
+  - item: U9-034
+    card:
+      example_en: "I really appreciate your help."
+      example_tr: "Yardımına gerçekten minnettarım."
+      note_tr: "appreciate = takdir etmek, değerini bilmek; minnettar olmak."
+    kullan:
+      id: u9d07-034-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Thank you for the gift! I really ________ it.</en>"
+      options: ["appreciate", "dust", "mow", "borrow"]
+      answer: 0
+      explain: "Hediye için minnettarlık: appreciate."
+    sina:
+      id: u9d07-034-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Duru: Here is my science notebook. You can use it.\nElif: Thank you so much! ________</en>"
+      options: ["I really appreciate it.", "I really mow it.", "I really iron it.", "I really dust it."]
+      answer: 0
+      explain: "Defteri verene teşekkür: I really appreciate it."
+    tekrar:
+      id: u9d07-034-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which sentence means \"Thank you very much\"?</en>"
+      options: ["I really appreciate it.", "I can't stand it.", "I don't mind.", "I'm afraid not."]
+      answer: 0
+      explain: "appreciate = takdir etmek, minnettar olmak."
+  - item: U9-035
+    card:
+      example_en: "She struggled with maths, but she never gave up."
+      example_tr: "Matematikle mücadele etti ama hiç vazgeçmedi."
+      note_tr: "struggle with / against …; isim olarak da: mücadele."
+    kullan:
+      id: u9d07-035-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Many scientists ________ for years before they find the answer.</en>"
+      options: ["struggle", "struggles", "struggling", "to struggle"]
+      answer: 0
+      explain: "Many scientists + fiil: struggle."
+    sina:
+      id: u9d07-035-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we say about Edison?</en>"
+      stem: "<en>Thomas Edison tried thousands of materials before he made a working light bulb. He never gave up, even when he failed many times.</en>"
+      options: ["He struggled but kept trying.", "He gave up quickly.", "He didn't like experiments.", "He never failed."]
+      answer: 0
+      explain: "Binlerce deneme yaptı, başarısız olsa da vazgeçmedi."
+    tekrar:
+      id: u9d07-035-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence shows a struggle?</en>"
+      options: ["He studied late every night but still found the lesson very difficult.", "He finished the exam in five minutes.", "He won the prize easily.", "He didn't do anything."]
+      answer: 0
+      explain: "Çok çalışmasına rağmen zorlanmak mücadeleyi anlatır."
+tips:
+  - type: mini_dilbilgisi
+    refs: [U9-032]
+    text: "contribute to + isim / V-ing: \"contribute to science\", \"make a contribution to\". Edat to'dur (contribute for / at değil)."
+  - type: kelime_ailesi
+    refs: [U9-029, U9-033]
+    text: "achieve → achievement; deserve (hak etmek): \"You deserve it!\" Başarı, ödül ve emek birlikte gelir."
+coach:
+  start: "Gün 7: yarışma, katkı ve emek. Birinci olmak için çok çalışmak gerek 🏆"
+  end_good: "Harika! Emeğin ve başarının dilini biliyorsun 🏆 Yarın geçmiş zamanla icat ve keşif."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🏆"
+notifications:
+  morning: "Bugün: yarışma, katkı, hak etmek, takdir ve mücadele 🏆"
+  evening: "\"Contribute\" sonrası hangi edat gelir? 🤔"
+  review: "Birine \"Hak ettin!\" demek için İngilizcede ne dersin? 🏅"

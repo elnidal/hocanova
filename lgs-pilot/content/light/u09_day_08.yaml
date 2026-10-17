@@ -1,0 +1,186 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 9
+day: 8
+status: draft
+title: "Kim neyi icat etti?"
+est_minutes: 8
+new_items: [U9-036, U9-037, U9-038, U9-039, U9-040]
+steps:
+  - item: U9-036
+    card:
+      example_en: "Who invented the telephone? – Alexander Graham Bell invented it in 1876."
+      example_tr: "Telefonu kim icat etti? – Alexander Graham Bell 1876'da icat etti."
+      note_tr: "invent = olmayanı ilk kez yapmak; discover = var olanı bulmak. Who özne ise did kullanılmaz: Who invented …? (Who did invent yanlış)."
+    kullan:
+      id: u9d08-036-k
+      type: dialogue_complete
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A: Who ________ the telephone?\nB: Alexander Graham Bell invented it in 1876.</en>"
+      options: ["invented", "did invent", "invent", "has invent"]
+      answer: 0
+      explain: "Who özne olduğunda yardımcı fiil kullanılmaz: Who invented …?"
+    sina:
+      id: u9d08-036-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Fleming discovered penicillin in 1928.", "Fleming invented penicillin in 1928.", "Fleming discover penicillin in 1928.", "Fleming discovering penicillin in 1928."]
+      answer: 0
+      explain: "Penisilin zaten doğada vardı; bulunmuştur: discovered. Yıl için in 1928."
+    tekrar:
+      id: u9d08-036-t
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which of the following is the missing question?</en>"
+      stem: "<en>A: ________\nB: Bell invented it in 1876.</en>"
+      options: ["Who invented the telephone?", "Who did invent the telephone?", "Who invent the telephone?", "Who inventing the telephone?"]
+      answer: 0
+      explain: "Özne soruluyorsa: Who invented …?"
+  - item: U9-037
+    card:
+      example_en: "The telephone was invented by Bell in 1876."
+      example_tr: "Telefon 1876'da Bell tarafından icat edildi."
+      note_tr: "was / were + V3 (+ by): geçmiş zaman edilgen, tanıma düzeyi. Etkeni: Bell invented the telephone."
+    kullan:
+      id: u9d08-037-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The light bulb ________ in the 19th century.</en>"
+      options: ["was invented", "invented", "was invent", "is inventing"]
+      answer: 0
+      explain: "Geçmişte icat edilmiştir: was invented."
+    sina:
+      id: u9d08-037-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which sentence has the same meaning as \"Bell invented the telephone\"?</en>"
+      options: ["The telephone was invented by Bell.", "The telephone invented Bell.", "Bell was invented by the telephone.", "The telephone is inventing Bell."]
+      answer: 0
+      explain: "Edilgen: The telephone was invented by Bell."
+    tekrar:
+      id: u9d08-037-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Penicillin ________ by Fleming in 1928.</en>"
+      options: ["was discovered", "discovered", "was discover", "discovering"]
+      answer: 0
+      explain: "Penisilin Fleming tarafından keşfedildi: was discovered."
+  - item: U9-038
+    card:
+      example_en: "Marie Curie was born in 1867. She died in 1934 at the age of 66."
+      example_tr: "Marie Curie 1867'de doğdu. 1934'te 66 yaşında öldü."
+      note_tr: "be born hep edilgendir: I was born in 2012 (I born yanlış). pass away = die (kibar söyleyiş); at the age of … = … yaşında."
+    kullan:
+      id: u9d08-038-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I ________ in 2012.</en>"
+      options: ["was born", "born", "am born", "were born"]
+      answer: 0
+      explain: "Kalıp: I was born in 2012."
+    sina:
+      id: u9d08-038-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>When did Newton pass away?</en>"
+      stem: "<en>Isaac Newton was born in 1643 in England. He grew up in a small village and went to university at the age of 18. He passed away in 1727.</en>"
+      options: ["In 1727", "In 1643", "At the age of 18", "In a small village"]
+      answer: 0
+      explain: "Metne göre 1727'de öldü (passed away)."
+    tekrar:
+      id: u9d08-038-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does \"pass away\" mean?</en>"
+      options: ["die", "go home", "walk past", "fall asleep"]
+      answer: 0
+      explain: "pass away = ölmek (kibar söyleyiş)."
+  - item: U9-039
+    card:
+      example_en: "Scientists are working on a new vaccine at the moment."
+      example_tr: "Bilim insanları şu anda yeni bir aşı üzerinde çalışıyor."
+      note_tr: "Boşlukta \"in 1928\" varsa geçmiş (V2); \"now / at the moment / currently / these days\" varsa am / is / are + V-ing."
+    kullan:
+      id: u9d08-039-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Look! The scientists ________ an experiment now.</en>"
+      options: ["are doing", "did", "do", "were doing"]
+      answer: 0
+      explain: "now = şu anda: are doing."
+    sina:
+      id: u9d08-039-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>In 1928, Alexander Fleming ________ penicillin.</en>"
+      options: ["discovered", "is discovering", "has discover", "discovering"]
+      answer: 0
+      explain: "in 1928 = geçmiş: discovered."
+    tekrar:
+      id: u9d08-039-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is about the present?</en>"
+      options: ["She is writing a report at the moment.", "She wrote a report in 1999.", "She was writing a report last night.", "She wrote a report yesterday."]
+      answer: 0
+      explain: "at the moment = şu anda: Present Continuous."
+  - item: U9-040
+    card:
+      example_en: "It rained a lot, so the match was cancelled. Because of the rain, we stayed at home."
+      example_tr: "Çok yağmur yağdı, bu yüzden maç iptal edildi. Yağmur yüzünden evde kaldık."
+      note_tr: "because + cümle; because of + isim; thanks to = sayesinde (olumlu sonuç); as a result = sonuç olarak."
+    kullan:
+      id: u9d08-040-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We stayed at home ________ the rain.</en>"
+      options: ["because of", "because", "so", "as a result"]
+      answer: 0
+      explain: "Arkasından isim (the rain) geldiği için because of."
+    sina:
+      id: u9d08-040-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>________ the new vaccine, fewer children get sick.</en>"
+      options: ["Thanks to", "Because", "So", "Although"]
+      answer: 0
+      explain: "Olumlu sonuç ve isim: Thanks to the new vaccine."
+    tekrar:
+      id: u9d08-040-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>He studied hard, ________ he passed the exam.</en>"
+      options: ["so", "because of", "thanks to", "because"]
+      answer: 0
+      explain: "Sonucu bağlayan: so (bu yüzden)."
+tips:
+  - type: tuzak
+    refs: [U9-036, U9-004, U9-020]
+    text: "invent = olmayan bir şeyi ilk kez yapmak (telephone, light bulb); discover = var olanı bulmak (penicillin, gravity, radium)."
+  - type: lgs_taktigi
+    refs: [U9-039]
+    text: "Boşlukta \"in 1928\" görürsen V2 seç, \"now / at the moment\" görürsen am / is / are + V-ing seç."
+coach:
+  start: "Gün 8: kim neyi icat etti, ne zaman doğdu, ne yapıyor? Biyografi günü 📜"
+  end_good: "Harika! Biyografi ve buluş metinlerini çözebilirsin 📜 Yarın son gün."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 📜"
+notifications:
+  morning: "Bugün: kim icat etti, kim keşfetti, doğdu, şimdi ve neden-sonuç 📜"
+  evening: "\"Who did invent\" mi, \"Who invented\" mi? 🤔"
+  review: "Invent mi, discover mı? Penisilin hangisi? 🔬"

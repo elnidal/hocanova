@@ -1,0 +1,213 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 9
+day: 9
+status: draft
+title: "Anlatmak, azaltmak ve fark etmek"
+est_minutes: 8
+new_items: [U9-041, U9-042, U9-043, U9-044, U9-045, U9-046]
+steps:
+  - item: U9-041
+    card:
+      example_en: "Can you describe the experiment?"
+      example_tr: "Deneyi anlatabilir misin?"
+      note_tr: "describe edatsızdır: describe the experiment (describe about yanlış). Soru kökü: Which of the following best describes …?"
+    kullan:
+      id: u9d09-041-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Please ________ the animal you saw in the forest.</en>"
+      options: ["describe", "describe about", "description about", "describing"]
+      answer: 0
+      explain: "describe doğrudan nesne alır: describe the animal."
+    sina:
+      id: u9d09-041-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Describe the picture in two sentences.", "Describe about the picture in two sentences.", "Describe of the picture in two sentences.", "Describe to the picture in two sentences."]
+      answer: 0
+      explain: "describe'tan sonra edat gelmez."
+    tekrar:
+      id: u9d09-041-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is a description?</en>"
+      options: ["Words that tell us what something is like", "A kind of medicine", "A big prize", "A science fair"]
+      answer: 0
+      explain: "description = bir şeyin nasıl olduğunu anlatan sözler."
+  - item: U9-042
+    card:
+      example_en: "Several students joined the club. We tried various experiments."
+      example_tr: "Birkaç öğrenci kulübe katıldı. Çeşitli deneyler denedik."
+      note_tr: "several = birkaç + çoğul isim; various = çeşitli, farklı farklı."
+    kullan:
+      id: u9d09-042-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I read ________ books about space last month: four or five of them.</en>"
+      options: ["several", "much", "a little", "every"]
+      answer: 0
+      explain: "Dört beş kitap: several + çoğul isim."
+    sina:
+      id: u9d09-042-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["There are several experiments in the book.", "There is several experiments in the book.", "There are several experiment in the book.", "There are several of experiments in the book."]
+      answer: 0
+      explain: "several + çoğul isim + are."
+    tekrar:
+      id: u9d09-042-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"various\"?</en>"
+      options: ["different", "same", "empty", "few"]
+      answer: 0
+      explain: "various ≈ different (çeşitli)."
+  - item: U9-043
+    card:
+      example_en: "Vaccines reduce the number of sick people."
+      example_tr: "Aşılar hasta insan sayısını azaltır."
+      note_tr: "reduce ≠ increase (artırmak)."
+    kullan:
+      id: u9d09-043-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We can ________ the amount of rubbish if we recycle.</en>"
+      options: ["reduce", "increase", "raise", "grow"]
+      answer: 0
+      explain: "Geri dönüşüm çöpü azaltır: reduce."
+    sina:
+      id: u9d09-043-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>What does the poster want us to do?</en>"
+      stem: "<en>Poster: Turn off the lights when you leave a room. You can reduce the energy we use!</en>"
+      options: ["Use less energy", "Use more energy", "Buy more lights", "Leave the lights on"]
+      answer: 0
+      explain: "reduce the energy = enerjiyi azaltmak."
+    tekrar:
+      id: u9d09-043-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word is the opposite of \"reduce\"?</en>"
+      options: ["increase", "decrease", "lower", "cut"]
+      answer: 0
+      explain: "reduce (azaltmak) ↔ increase (artırmak)."
+  - item: U9-044
+    card:
+      example_en: "Every fingerprint is unique."
+      example_tr: "Her parmak izi benzersizdir."
+      note_tr: "unique /juˈniːk/ = benzersiz, eşsiz. Zaten \"tek\" demek olduğu için \"very unique\" denmez."
+    kullan:
+      id: u9d09-044-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>No two snowflakes are the same. Each one is ________.</en>"
+      options: ["unique", "ordinary", "common", "usual"]
+      answer: 0
+      explain: "Hiçbiri diğerine benzemiyorsa benzersizdir (unique)."
+    sina:
+      id: u9d09-044-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is the opposite of \"unique\"?</en>"
+      options: ["common", "special", "only", "rare"]
+      answer: 0
+      explain: "unique (benzersiz) ↔ common (sıradan, yaygın)."
+    tekrar:
+      id: u9d09-044-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is unique?</en>"
+      options: ["Your own fingerprint", "A pencil from a pack of 100", "A bus ticket", "A plastic bag"]
+      answer: 0
+      explain: "Parmak izi kişiye özgüdür: benzersiz."
+  - item: U9-045
+    card:
+      example_en: "Please record the results. He broke the world record."
+      example_tr: "Lütfen sonuçları kaydet. Dünya rekorunu kırdı."
+      note_tr: "isim REcord (kayıt, rekor), fiil reCORD (kaydetmek): vurgu kayar."
+    kullan:
+      id: u9d09-045-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The scientist will ________ the results in a notebook.</en>"
+      options: ["record", "dust", "sweep", "borrow"]
+      answer: 0
+      explain: "Sonuçları deftere kaydetmek: record."
+    sina:
+      id: u9d09-045-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>In which sentence is \"record\" a verb?</en>"
+      options: ["Please record the temperature every hour.", "She broke the world record.", "This record is very old.", "I have a record of all my marks."]
+      answer: 0
+      explain: "İlk cümlede record fiildir (kaydetmek); diğerlerinde isim."
+    tekrar:
+      id: u9d09-045-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does \"break a record\" mean?</en>"
+      options: ["To do better than the best result before", "To damage a music player", "To lose a notebook", "To stop an experiment"]
+      answer: 0
+      explain: "break a record = önceki en iyi sonucu geçmek (rekor kırmak)."
+  - item: U9-046
+    card:
+      example_en: "She realised her mistake and corrected it."
+      example_tr: "Hatasını fark etti ve düzeltti."
+      note_tr: "realise = farkına varmak, anlamak (İngiliz yazımı; Amerikan yazımı: realize). Türkçedeki \"realize etmek (gerçekleştirmek)\" ile karıştırma."
+    kullan:
+      id: u9d09-046-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I ________ I forgot my keys when I reached the door.</en>"
+      options: ["realised", "made", "did", "played"]
+      answer: 0
+      explain: "Anahtarı unuttuğunu fark etmek: realised."
+    sina:
+      id: u9d09-046-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Teacher: What happened, Bora?\nBora: ________ I forgot to do my homework.</en>"
+      options: ["I just realised that", "I just fixed that", "I just mowed that", "I just folded that"]
+      answer: 0
+      explain: "\"Ödevimi unuttuğumu yeni fark ettim\": I just realised that …"
+    tekrar:
+      id: u9d09-046-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does \"realise\" mean?</en>"
+      options: ["To understand or notice something", "To make something real", "To cook something", "To paint something"]
+      answer: 0
+      explain: "realise = farkına varmak, anlamak."
+tips:
+  - type: tuzak
+    refs: [U9-046]
+    text: "realise (Amerikan yazımı realize) = farkına varmak. Türkçedeki \"realize etmek\" (gerçekleştirmek) ile karıştırma: \"She realised her mistake.\" = Hatasını fark etti."
+  - type: tuzak
+    refs: [U9-045]
+    text: "record yalnız \"rekor\" değildir: isim REcord (kayıt, rekor), fiil reCORD (kaydetmek): \"record the results\"."
+coach:
+  start: "Son gün! Anlatmak, azaltmak, benzersiz olmak ve fark etmek 🔭"
+  end_good: "Tebrikler, Science ünitesi bitti! 🔭 Bilim metinlerini artık rahat okursun."
+  end_mixed: "Ünite bitti! {weak} biraz karıştı; tekrar kuyruğuna aldım, yakında görüşeceğiz. 🔭"
+notifications:
+  morning: "Son gün: anlatmak, birkaç, azaltmak, benzersiz, kaydetmek, fark etmek 🔭"
+  evening: "\"Describe about\" doğru mu? Neden? 🤔"
+  review: "\"Realise\" Türkçedeki \"realize etmek\" mi demek? Hayır! 💡"
