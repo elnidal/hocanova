@@ -1,0 +1,188 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 2
+status: draft
+title: "Gezilecek yerler ve turlar"
+est_minutes: 7
+new_items: [U7-001, U7-006, U7-007, U7-008, U7-009]
+steps:
+  - item: U7-001
+    card:
+      example_en: "The Galata Tower is a famous tourist attraction in İstanbul."
+      example_tr: "Galata Kulesi İstanbul'da ünlü bir turistik yerdir."
+      note_tr: "attract (çekmek) → attraction (gezilecek yer) → attractive (çekici): turist çeken yer = tourist attraction."
+    kullan:
+      id: u7d02-001-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Pamukkale is one of the most famous tourist ________ in Türkiye. Millions of people visit it every year.</en>"
+      options: ["attractions", "attractive", "attracts", "attracted"]
+      answer: 0
+      explain: "\"one of the most … tourist attractions\": çoğul isim gerekir. attractive sıfat, attracts ve attracted fiildir."
+    sina:
+      id: u7d02-001-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, why do many people visit Safranbolu?</en>"
+      stem: "<en>Welcome to Safranbolu! This small town is a popular tourist attraction because of its old Ottoman houses. Thousands of visitors come here every year to see them.</en>"
+      options: ["Because it has beautiful old houses", "Because it has a big airport", "Because it has the best beaches", "Because it is a big city"]
+      answer: 0
+      explain: "Metin, kasabanın eski Osmanlı evleri yüzünden popüler bir turistik yer olduğunu söylüyor."
+    tekrar:
+      id: u7d02-001-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>The hotel is next to the beach and the rooms are cheap, so it is very ________ to tourists.</en>"
+      options: ["attractive", "attraction", "attract", "attracting"]
+      answer: 0
+      explain: "\"is very … to tourists\": sıfat gerekir; attractive = çekici."
+  - item: U7-006
+    card:
+      example_en: "We went on a cruise in the Mediterranean last summer."
+      example_tr: "Geçen yaz Akdeniz'de gemi turuna çıktık."
+      note_tr: "cruise gemiyle yapılan tatildir: go on a cruise, a cruise holiday."
+    kullan:
+      id: u7d02-006-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My parents want to go on a ________ holiday. They will visit three islands by ship.</en>"
+      options: ["cruise", "camping", "skiing", "cycling"]
+      answer: 0
+      explain: "Gemiyle adaları gezmek: a cruise holiday."
+    sina:
+      id: u7d02-006-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: How are you going to visit the islands?\nKaan: ________ It's a seven-day holiday on a big ship.</en>"
+      options: ["We are going on a cruise.", "We are going by bike.", "We are staying at home.", "We are visiting a farm."]
+      answer: 0
+      explain: "Yedi günlük büyük bir gemi tatili cruise'dur. Diğer şıklar \"gemi\" bilgisiyle uyuşmuyor."
+    tekrar:
+      id: u7d02-006-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence tells us that Mert is on a cruise?</en>"
+      options: ["Mert is sleeping in a cabin on a ship and watching the sea.", "Mert is sleeping in a tent in the forest.", "Mert is sleeping in a hotel in the city.", "Mert is sleeping on a train."]
+      answer: 0
+      explain: "Gemideki kamarada uyumak ve denizi izlemek gemi tatilini (cruise) anlatır."
+  - item: U7-007
+    card:
+      example_en: "The tour guide showed us the old city and told us interesting stories."
+      example_tr: "Tur rehberi bize eski şehri gezdirdi ve ilginç hikâyeler anlattı."
+      note_tr: "guide hem isim (rehber) hem fiil (rehberlik etmek)tir: The man guided us through the museum."
+    kullan:
+      id: u7d02-007-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The ________ took us around the museum and explained every picture.</en>"
+      options: ["tour guide", "passenger", "receptionist", "waiter"]
+      answer: 0
+      explain: "Müzeyi gezdirip anlatan kişi tur rehberidir."
+    sina:
+      id: u7d02-007-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What is the man's job?</en>"
+      stem: "<en>Tourist: Excuse me, can you tell us about this building?\nMan: Of course! It was built in 1550 and it was a palace. Please follow me, and I'll show you the garden too.</en>"
+      options: ["He is a tour guide.", "He is a pilot.", "He is a doctor.", "He is a farmer."]
+      answer: 0
+      explain: "Binayı anlatıp turistleri gezdiren kişi tur rehberidir."
+    tekrar:
+      id: u7d02-007-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>A good ________ knows a lot about history and speaks more than one language.</en>"
+      options: ["tour guide", "souvenir", "brochure", "cruise"]
+      answer: 0
+      explain: "Tarih bilen ve birkaç dil konuşan kişi tur rehberidir; diğerleri kişi değil, nesne ya da etkinliktir."
+  - item: U7-008
+    card:
+      example_en: "I bought a small boat as a souvenir from Bodrum."
+      example_tr: "Bodrum'dan hatıra olarak küçük bir tekne aldım."
+      note_tr: "souvenir gezide alınan hatıra eşyadır; gift her türlü hediyedir."
+    kullan:
+      id: u7d02-008-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I always buy a small ________ from every city I visit, so I can remember the trip.</en>"
+      options: ["souvenir", "ticket", "passport", "suitcase"]
+      answer: 0
+      explain: "Geziyi hatırlamak için alınan küçük eşya souvenir'dir."
+    sina:
+      id: u7d02-008-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Duru: Did you buy anything in Cappadocia?\nSelin: ________ It's a small clay pot. It will remind me of my trip.</en>"
+      options: ["Yes, I bought a souvenir.", "Yes, I bought a ticket.", "No, I sold my bag.", "No, I lost my passport."]
+      answer: 0
+      explain: "Küçük bir çömlek gezi hatırasıdır (souvenir). Bilet ya da pasaport değildir."
+    tekrar:
+      id: u7d02-008-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>A souvenir is something you buy ________.</en>"
+      options: ["to remember a place", "to cook a meal", "to study for an exam", "to repair a car"]
+      answer: 0
+      explain: "Souvenir bir yeri hatırlamak için alınır."
+  - item: U7-009
+    card:
+      example_en: "We read the travel brochure and chose a hotel near the beach."
+      example_tr: "Gezi broşürünü okuduk ve plaja yakın bir otel seçtik."
+      note_tr: "brochure: resim, fiyat ve bilgi içeren tanıtım kâğıdı; advertisement (ad) reklam/ilan."
+    kullan:
+      id: u7d02-009-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Before our holiday, we read a travel ________. It had pictures, prices and the hotel address.</en>"
+      options: ["brochure", "diary", "dictionary", "report"]
+      answer: 0
+      explain: "Resim, fiyat ve adres içeren tanıtım kâğıdı brochure'dür."
+    sina:
+      id: u7d02-009-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the advertisement?</en>"
+      stem: "<en>Blue Bay Hotel: 5 nights, 400 € per person. Free breakfast every morning. Boat trips and folk dance shows in the evenings.</en>"
+      options: ["How to get to the hotel", "The price of the holiday", "Breakfast at the hotel", "Evening activities"]
+      answer: 0
+      explain: "Fiyat (400 €), kahvaltı ve akşam etkinlikleri yazıyor; otele nasıl gidileceği yazmıyor."
+    tekrar:
+      id: u7d02-009-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is a travel brochure?</en>"
+      options: ["A paper with pictures, prices and information about a holiday place", "A book with words and their meanings", "A list of the students in a class", "A letter from an old friend"]
+      answer: 0
+      explain: "Tatil yeri hakkında resim, fiyat ve bilgi veren kâğıt broşürdür."
+tips:
+  - type: kelime_ailesi
+    refs: [U7-001]
+    text: "attract (çekmek) → attraction (gezilecek yer) → attractive (çekici). Mıknatıs gibi turist çeken yer: tourist attraction."
+  - type: lgs_taktigi
+    refs: [U7-009]
+    text: "Broşür sorusunda \"NOT mentioned\" varsa her şıkkın broşürde karşılığını bul ve işaretle; karşılığı olmayan şık cevaptır."
+coach:
+  start: "Gün 2: gezilecek yerler ve turlar. Rehberin ve hatıran hazır 🗺️"
+  end_good: "Süper! Rehber, hatıra, broşür: hepsi cepte 🗺️ Yarın konaklama kelimeleri geliyor."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🗺️"
+notifications:
+  morning: "Bugün: tur rehberi, hediyelik eşya ve broşür. Gezi başlıyor! 🗺️"
+  evening: "Bir otelin broşüründe \"NOT mentioned\" sorusu çıkarsa ne yaparsın? 🤔"
+  review: "Geziden aldığın küçük hatıra eşyasına İngilizce ne denir? 🎁"

@@ -1,0 +1,186 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 4
+status: draft
+title: "Otel türleri ve yaşadığımız yer"
+est_minutes: 7
+new_items: [U7-015, U7-016, U7-017, U7-018, U7-019]
+steps:
+  - item: U7-015
+    card:
+      example_en: "We stayed at a small bed and breakfast near the lake."
+      example_tr: "Gölün yakınındaki küçük bir pansiyonda kaldık."
+      note_tr: "bed and breakfast (B&B): kelimesi kelimesine \"yatak ve kahvaltı\" değil; oda + kahvaltı veren küçük otel/pansiyon."
+    kullan:
+      id: u7d04-015-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A bed and breakfast gives you a room and ________ in the morning.</en>"
+      options: ["breakfast", "lunch", "dinner", "a suitcase"]
+      answer: 0
+      explain: "Bed and breakfast = oda + sabah kahvaltısı."
+    sina:
+      id: u7d04-015-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the advertisement, which of the following is TRUE?</en>"
+      stem: "<en>Rose Bed and Breakfast: 6 rooms, a big garden and a delicious breakfast every morning. Price: 50 € per night. Lunch and dinner are not included.</en>"
+      options: ["Guests can have breakfast at the place.", "Guests can have dinner at the place.", "It has 50 rooms.", "It costs 6 € per night."]
+      answer: 0
+      explain: "Her sabah kahvaltı var; öğle ve akşam yemeği dahil değil; 6 oda, gecesi 50 €."
+    tekrar:
+      id: u7d04-015-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Kaan wants a small, cheap place with a room and breakfast. Where should he stay?</en>"
+      options: ["At a bed and breakfast", "At a big resort with three pools", "On a cruise ship", "At a huge shopping centre"]
+      answer: 0
+      explain: "Küçük, ucuz ve oda + kahvaltı veren yer bed and breakfast'tır."
+  - item: U7-016
+    card:
+      example_en: "A guesthouse is cheaper than a big hotel, and the owners are very friendly."
+      example_tr: "Pansiyon büyük bir otelden ucuzdur ve sahipleri çok sıcakkanlıdır."
+      note_tr: "guesthouse: aile işletmesi küçük konukevi/pansiyon."
+    kullan:
+      id: u7d04-016-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We didn't stay in a big hotel. We stayed in a small family ________ in the village.</en>"
+      options: ["guesthouse", "airport", "museum", "harbour"]
+      answer: 0
+      explain: "Köyde küçük bir aile işletmesi: guesthouse."
+    sina:
+      id: u7d04-016-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: Did you stay at a big hotel in Mardin?\nSelin: ________ We stayed at a small guesthouse. The owner cooked for us.</en>"
+      options: ["No, we didn't.", "Yes, we did.", "Yes, it was huge.", "No, we stayed at home."]
+      answer: 0
+      explain: "Küçük bir guesthouse'ta kalmışlar; yani büyük otelde kalmadılar: No, we didn't."
+    tekrar:
+      id: u7d04-016-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is NOT a place to stay?</en>"
+      options: ["A souvenir shop", "A guesthouse", "A bed and breakfast", "A resort"]
+      answer: 0
+      explain: "Hediyelik eşya dükkânı kalınacak yer değildir; diğerleri konaklama yerleridir."
+  - item: U7-017
+    card:
+      example_en: "The holiday resort has a big pool, a beach and a spa."
+      example_tr: "Tatil köyünde büyük bir havuz, bir plaj ve bir spa var."
+      note_tr: "resort: tatil için yapılmış, birçok etkinliği olan büyük tesis (holiday resort)."
+    kullan:
+      id: u7d04-017-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The ________ has three swimming pools, a beach, a spa and many restaurants.</en>"
+      options: ["resort", "bakery", "library", "bank"]
+      answer: 0
+      explain: "Havuzlar, plaj, spa ve restoranlar olan büyük tesis resort'tur."
+    sina:
+      id: u7d04-017-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we say about Palm Resort?</en>"
+      stem: "<en>Palm Resort is by the sea. It has two swimming pools, a water park and five restaurants. Families with children love it.</en>"
+      options: ["It is good for a family holiday.", "It is a quiet hotel for old people.", "It has no pools.", "It is in the mountains."]
+      answer: 0
+      explain: "Su parkı, havuzlar ve restoranlar var; çocuklu aileler seviyor: aile tatili için uygun."
+    tekrar:
+      id: u7d04-017-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>We spent our summer holiday at a beautiful ________ on the Aegean coast. There was a lot to do there.</en>"
+      options: ["resort", "office", "factory", "garage"]
+      answer: 0
+      explain: "Tatil için gidilen, yapacak çok şey olan yer resort'tur."
+  - item: U7-018
+    card:
+      example_en: "My grandparents live in the countryside, and the air there is very clean."
+      example_tr: "Büyükannemle büyükbabam kırsalda yaşıyor ve oradaki hava çok temiz."
+      note_tr: "country = ülke; ama the country / the countryside = kırsal kesim: live in the country. rural = kırsal."
+    kullan:
+      id: u7d04-018-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I like the ________. There are green fields, cows and very few cars there.</en>"
+      options: ["countryside", "airport", "shopping centre", "city centre"]
+      answer: 0
+      explain: "Yeşil tarlalar, inekler ve az araba: kırsal kesim (countryside)."
+    sina:
+      id: u7d04-018-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Where does Selin's uncle live?</en>"
+      stem: "<en>Selin: My uncle's house is far from the city. He has a farm, some chickens and a small river near his house. He says the air is clean and the life is quiet.</en>"
+      options: ["In a rural area", "In a big city", "On an island", "In a busy street"]
+      answer: 0
+      explain: "Şehre uzak, çiftlik, tavuklar, nehir, temiz hava, sakin yaşam: kırsal bölge (rural area)."
+    tekrar:
+      id: u7d04-018-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>\"Mert's grandparents live in the country.\" What does this sentence mean?</en>"
+      options: ["They live in a quiet place far from the city.", "They live in a big city.", "They live in another country.", "They live on a ship."]
+      answer: 0
+      explain: "\"live in the country\" kırsalda yaşamak demektir; başka bir ülkede yaşamak için \"live abroad\" denir."
+  - item: U7-019
+    card:
+      example_en: "Urban life is fast, and there are many shops, cars and tall buildings."
+      example_tr: "Kent hayatı hızlıdır; çok mağaza, araba ve yüksek bina vardır."
+      note_tr: "urban = kentsel (urban area); rural = kırsal. İkisi zıt anlamlıdır."
+    kullan:
+      id: u7d04-019-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Ankara is a big city, so most people live in ________ areas.</en>"
+      options: ["urban", "rural", "wild", "empty"]
+      answer: 0
+      explain: "Büyük şehirdeki yerleşim: urban (kentsel). rural kırsaldır."
+    sina:
+      id: u7d04-019-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is TRUE?</en>"
+      stem: "<en>Village A: 300 people, 1 shop, no cinema\nCity B: 2 million people, 500 shops, 20 cinemas</en>"
+      options: ["City B is an urban area, and Village A is a rural area.", "Village A has more shops than City B.", "Village A has 20 cinemas.", "City B has fewer people than Village A."]
+      answer: 0
+      explain: "Büyük nüfuslu, çok mağazalı City B kentsel; küçük Village A kırsaldır."
+    tekrar:
+      id: u7d04-019-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word is the opposite of \"urban\"?</en>"
+      options: ["rural", "ancient", "crowded", "busy"]
+      answer: 0
+      explain: "urban (kentsel) ↔ rural (kırsal)."
+tips:
+  - type: tuzak
+    refs: [U7-018]
+    text: "country = ülke; ama \"the country\" / \"the countryside\" kırsal kesimdir: \"My grandparents live in the country.\""
+  - type: tuzak
+    refs: [U7-015]
+    text: "bed and breakfast kelimesi kelimesine \"yatak ve kahvaltı\" değildir; oda + kahvaltı veren küçük otel ya da pansiyondur."
+coach:
+  start: "Gün 4: nerede kalıyoruz? Pansiyon mu, tatil köyü mü, kırsal mı, şehir mi? 🏡"
+  end_good: "Mükemmel! Kalacak yeri seçmeyi biliyorsun 🏡 Yarın doğa ve yer adları."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🏡"
+notifications:
+  morning: "Bugün: pansiyon, tatil köyü, kırsal ve kentsel. Nerede kalacaksın? 🏡"
+  evening: "\"The country\" her zaman \"ülke\" mi demek? Bir düşün 🤔"
+  review: "urban'ın zıttı hangi kelime? 🏙️"

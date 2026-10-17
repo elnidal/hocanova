@@ -1,6 +1,7 @@
 """Hafif mod günlerinin doğrulayıcısı (hikâyesiz): python3 lgs-pilot/tools/light_validate.py
 Denetler: zorunlu alanlar, birimler items dosyasında var mı, id biçimi, answer: 0, şık sayısı/tekrarı,
-İngiliz yazımı, Present Perfect şüphesi (UYARI), bildirim ≤ 90, Sına'da LGS işaretleri, her birimin kart+kullan+sına'sı."""
+İngiliz yazımı, Present Perfect şüphesi (UYARI), bildirim ≤ 90, Sına'da LGS işaretleri,
+her birimin kart + kullan + sına (+ tekrar: ders günü gösterilmeyen, aralıklı tekrarda kullanılan üçüncü soru)."""
 import glob, os, re, sys, yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -18,8 +19,9 @@ def texts(q):
 
 def check_q(f, q, role, day_prefix):
     qid = q.get("id", "?")
-    if not re.fullmatch(rf"{day_prefix}-\d{{3}}-{'k' if role == 'kullan' else 's'}", qid):
-        E(f, f"{qid}: id biçimi {day_prefix}-NNN-{'k' if role == 'kullan' else 's'} olmalı")
+    suf = {"kullan": "k", "sina": "s", "tekrar": "t"}[role]
+    if not re.fullmatch(rf"{day_prefix}-\d{{3}}-{suf}", qid):
+        E(f, f"{qid}: id biçimi {day_prefix}-NNN-{suf} olmalı")
     if q.get("type") not in TYPES:
         E(f, f"{qid}: bilinmeyen type {q.get('type')}")
     if q.get("answer") != 0:
@@ -72,9 +74,9 @@ def main():
             c = s.get("card") or {}
             if not c.get("example_en") or not c.get("example_tr"):
                 E(f, f"{s['item']}: kartta example_en ve example_tr olmalı")
-            for role in ("kullan", "sina"):
+            for role in ("kullan", "sina", "tekrar"):
                 if role not in s:
-                    E(f, f"{s['item']}: {role} yok")
+                    (W if role == "tekrar" else E)(f, f"{s['item']}: {role} yok")
                     continue
                 check_q(f, s[role], role, prefix)
                 if s[role]["id"] in ids:

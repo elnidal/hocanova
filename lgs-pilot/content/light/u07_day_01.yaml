@@ -32,6 +32,15 @@ steps:
       options: ["Yes, we are going on holiday.", "No, we are staying at school.", "Yes, we are taking an exam.", "No, we are doing homework."]
       answer: 0
       explain: "Çeşme'ye iki hafta gitmek bir tatil planıdır; Elif \"Yes\" demeli ve going on holiday diyebilir. Diğer şıklar anlatılanla çelişiyor."
+    tekrar:
+      id: u7d01-002-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence tells us that Mert is on holiday?</en>"
+      options: ["Mert is swimming in the sea and he has no school this week.", "Mert is writing an exam in the classroom.", "Mert is helping his teacher after school.", "Mert is cleaning his room before the lesson."]
+      answer: 0
+      explain: "Denizde yüzmek ve bu hafta okulun olmaması tatilde olmaya işaret eder."
   - item: U7-003
     card:
       example_en: "We took a day trip to Ephesus. The journey by bus took two hours."
@@ -55,6 +64,15 @@ steps:
       options: ["trip", "travel", "tourist", "souvenir"]
       answer: 0
       explain: "\"took a short trip\" = kısa bir geziye çıktık. \"a travel\" denmez; tourist kişidir, souvenir hediyelik eşyadır."
+    tekrar:
+      id: u7d01-003-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["We had a lovely trip to Konya.", "We had a lovely travel to Konya.", "We had a lovely traveller to Konya.", "We had a lovely tourism to Konya."]
+      answer: 0
+      explain: "Gezi için sayılabilir isim olan trip kullanılır: \"a lovely trip\". \"A travel\" denmez."
   - item: U7-004
     card:
       example_en: "My cousin lives abroad. He works in Germany."
@@ -78,6 +96,15 @@ steps:
       options: ["Ayşe is abroad this week.", "Ayşe is at home with her mother.", "Ayşe is in İzmir.", "Ayşe is on a ship."]
       answer: 0
       explain: "Roma başka bir ülkede; anne kızını Pazar'a kadar göremeyecek. Yani Ayşe bu hafta yurt dışındadır."
+    tekrar:
+      id: u7d01-004-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Elif wants to study abroad.", "Elif wants to study to abroad.", "Elif wants to study in abroad.", "Elif wants to study at abroad."]
+      answer: 0
+      explain: "abroad zarftır; önüne to / in / at almaz: study abroad."
   - item: U7-005
     card:
       example_en: "We went sightseeing in İstanbul and took many photos."
@@ -101,6 +128,16 @@ steps:
       options: ["Visit famous places in the city", "Have dinner by the sea", "Go swimming at the beach", "Relax at the hotel"]
       answer: 0
       explain: "Sabah: city sightseeing tour = şehrin ünlü yerlerini gezmek. Akşam yemeği akşam, boş zaman öğleden sonra."
+    tekrar:
+      id: u7d01-005-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>On the first day of our holiday in Rome, we went ________ and saw the Colosseum.</en>"
+      options: ["sightseeing", "fishing", "skating", "hiking"]
+      answer: 0
+      explain: "Colosseum'u görmek şehri gezip görmektir: go sightseeing."
 tips:
   - type: tuzak
     refs: [U7-003]

@@ -1,0 +1,186 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 3
+status: draft
+title: "Ziyaretçiler, ulaşım ve konaklama"
+est_minutes: 7
+new_items: [U7-010, U7-011, U7-012, U7-013, U7-014]
+steps:
+  - item: U7-010
+    card:
+      example_en: "Thousands of spectators watched the match, and many visitors walked around the old stadium."
+      example_tr: "Binlerce seyirci maçı izledi, birçok ziyaretçi de eski stadyumun çevresini gezdi."
+      note_tr: "visitor bir yeri gezmeye gelen kişi; spectator gösteriyi ya da maçı izleyen kişi (amfitiyatroda spectators)."
+    kullan:
+      id: u7d03-010-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Twenty thousand ________ were in the stadium and they cheered for their team.</en>"
+      options: ["spectators", "guides", "souvenirs", "islands"]
+      answer: 0
+      explain: "Stadyumda maçı izleyenler spectators'tır."
+    sina:
+      id: u7d03-010-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>The museum had 3,000 ________ last week. Most of them came from other countries to see the ancient city.</en>"
+      options: ["visitors", "spectators", "audiences", "players"]
+      answer: 0
+      explain: "Müzeyi gezmeye gelen kişiler visitors'tır. Spectators gösteri ya da maç izleyenlere denir."
+    tekrar:
+      id: u7d03-010-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which person is a spectator?</en>"
+      options: ["A man who is watching a football match in the stadium", "A woman who is walking around a museum", "A boy who is buying a souvenir", "A girl who is reading a brochure"]
+      answer: 0
+      explain: "Spectator, maç ya da gösteri izleyen kişidir."
+  - item: U7-011
+    card:
+      example_en: "Transportation in İstanbul is easy: you can take a bus, a metro or a ferry."
+      example_tr: "İstanbul'da ulaşım kolaydır: otobüse, metroya ya da vapura binebilirsin."
+      note_tr: "transportation sayılamaz isimdir (a transportation denmez); public transportation = toplu taşıma."
+    kullan:
+      id: u7d03-011-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Buses, trains and ferries are types of public ________.</en>"
+      options: ["transportation", "accommodation", "advertisement", "population"]
+      answer: 0
+      explain: "Otobüs, tren, vapur: toplu taşıma (public transportation)."
+    sina:
+      id: u7d03-011-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned about transportation in the town?</en>"
+      stem: "<en>Getting around Sunville is easy. Buses run every ten minutes, and there is a small train to the beach. You can also hire a bike for the day.</en>"
+      options: ["Taxis", "Buses", "A train", "Bikes"]
+      answer: 0
+      explain: "Otobüs, tren ve bisiklet kiralama var; taksiden söz edilmiyor."
+    tekrar:
+      id: u7d03-011-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Selin: How can we go from the airport to the hotel?\nElif: The ________ is easy. There is a bus every fifteen minutes.</en>"
+      options: ["transportation", "souvenir", "climate", "island"]
+      answer: 0
+      explain: "Havalimanından otele gitmeyi anlatan kelime transportation'dır (ulaşım)."
+  - item: U7-012
+    card:
+      example_en: "The hotel has many recreational activities: you can sunbathe, play volleyball or have a rest."
+      example_tr: "Otelde birçok eğlence etkinliği var: güneşlenebilir, voleybol oynayabilir ya da dinlenebilirsin."
+      note_tr: "recreational activities = boş zamanda yapılan eğlence/dinlenme etkinlikleri; sunbathe = güneşlenmek."
+    kullan:
+      id: u7d03-012-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>On holiday, I like to ________ on the beach and read a book under the sun.</en>"
+      options: ["sunbathe", "wash", "clean", "study"]
+      answer: 0
+      explain: "Plajda güneşin altında kitap okumak: sunbathe (güneşlenmek)."
+    sina:
+      id: u7d03-012-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which recreational activity is NOT possible at the resort?</en>"
+      stem: "<en>Palm Resort offers many recreational activities. Guests can play tennis, go windsurfing or have a rest by the pool. In the evenings, there are music shows.</en>"
+      options: ["Horse riding", "Playing tennis", "Windsurfing", "Resting by the pool"]
+      answer: 0
+      explain: "Tenis, rüzgâr sörfü ve havuz kenarında dinlenme var; at binmeden söz edilmiyor."
+    tekrar:
+      id: u7d03-012-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is a recreational activity?</en>"
+      options: ["Playing volleyball on the beach", "Writing a long exam", "Cleaning the kitchen", "Doing the homework"]
+      answer: 0
+      explain: "Plajda voleybol oynamak boş zamanda yapılan bir eğlence etkinliğidir."
+  - item: U7-013
+    card:
+      example_en: "The price of the accommodation is 80 euros per night."
+      example_tr: "Konaklamanın fiyatı gecelik 80 euro."
+      note_tr: "yazımı: acCoMModation (çift c, çift m); sayılamaz isimdir. hafıza: iki oda var, iki c + iki m."
+    kullan:
+      id: u7d03-013-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We need a place to stay for three nights. Can you help us find ________?</en>"
+      options: ["accommodation", "transportation", "recreation", "population"]
+      answer: 0
+      explain: "Kalacak yer arıyoruz: accommodation (konaklama)."
+    sina:
+      id: u7d03-013-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Tourist: We are looking for accommodation near the sea.\nReceptionist: ________ We have rooms with a sea view.</en>"
+      options: ["You are lucky!", "You are late for school!", "You should wash your hands!", "You can't swim here!"]
+      answer: 0
+      explain: "Resepsiyonist deniz manzaralı oda olduğunu söylüyor; bu yüzden şans/iyi haber ifadesi uyar."
+    tekrar:
+      id: u7d03-013-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one is the correct spelling?</en>"
+      options: ["accommodation", "acomodation", "accomodation", "acommodation"]
+      answer: 0
+      explain: "Doğru yazım çift c ve çift m ile: accommodation."
+  - item: U7-014
+    card:
+      example_en: "We stayed at an all-inclusive hotel, so meals and drinks were free."
+      example_tr: "Her şey dahil bir otelde kaldık, yani yemekler ve içecekler ücretsizdi."
+      note_tr: "all-inclusive: yemek, içecek ve çoğu etkinlik fiyata dahil."
+    kullan:
+      id: u7d03-014-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>It is an ________ hotel. You don't pay extra money for food or drinks.</en>"
+      options: ["all-inclusive", "all-around", "all-time", "all-day"]
+      answer: 0
+      explain: "Yemek ve içecek fiyata dahilse otel all-inclusive'dir."
+    sina:
+      id: u7d03-014-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the advertisement, which of the following is TRUE?</en>"
+      stem: "<en>Sunny Resort: all-inclusive holiday, 7 nights. Breakfast, lunch, dinner and all drinks are included in the price. Spa and tennis lessons cost extra.</en>"
+      options: ["Guests don't pay extra money for meals.", "Guests pay extra money for drinks.", "Tennis lessons are free.", "The holiday is for 3 nights."]
+      answer: 0
+      explain: "Yemekler ve içecekler fiyata dahil; spa ve tenis dersi ekstra ücretli; tatil 7 gece."
+    tekrar:
+      id: u7d03-014-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Duru wants a holiday where food and drinks are included in the price. Which hotel should she choose?</en>"
+      options: ["An all-inclusive hotel", "A hotel with free taxis", "A hotel with a big garden", "A hotel near the airport"]
+      answer: 0
+      explain: "Yemek ve içecek dahil olan otel all-inclusive'dir."
+tips:
+  - type: tuzak
+    refs: [U7-010]
+    text: "visitor ve spectator ikisi de \"gelen kişi\"dir ama farklıdır: visitor yeri gezmeye gelir (museum visitors), spectator gösteriyi ya da maçı izler (25.000 spectators)."
+  - type: hafiza_kancasi
+    refs: [U7-013]
+    text: "accommodation çok büyük bir kelimedir, içinde iki oda var: çift c, çift m."
+coach:
+  start: "Gün 3: nerede kalıp nasıl gideceğiz? Ulaşım ve konaklama kelimeleri geliyor 🏨"
+  end_good: "Harika! Rezervasyon tamam, bavul hazır 🏨 Yarın otel türlerini öğreniyoruz."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🏨"
+notifications:
+  morning: "Bugün: ulaşım, konaklama ve her şey dahil otel. Odanı ayırt! 🏨"
+  evening: "Visitor mı, spectator mı? Maçta stadyumda olan kim? ⚽"
+  review: "\"Accommodation\" nasıl yazılır? Kaç tane c ve m var? 🤔"

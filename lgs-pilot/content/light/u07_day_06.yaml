@@ -1,0 +1,187 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 6
+status: draft
+title: "Liman, iklim, nüfus ve doğa"
+est_minutes: 7
+new_items: [U7-025, U7-026, U7-027, U7-028, U7-029]
+steps:
+  - item: U7-025
+    card:
+      example_en: "İzmir is a port city, and big ships come here every day."
+      example_tr: "İzmir bir liman şehridir ve büyük gemiler her gün buraya gelir."
+      note_tr: "port: gemilerin yanaştığı liman; natural port = doğal liman; port city = liman şehri."
+    kullan:
+      id: u7d06-025-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Big ships bring goods to the ________ of Mersin every day.</en>"
+      options: ["port", "plateau", "fountain", "square"]
+      answer: 0
+      explain: "Gemilerin mal getirdiği yer limandır (port)."
+    sina:
+      id: u7d06-025-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we say about the city?</en>"
+      stem: "<en>Duru: My dad works in a city by the sea. Every morning he watches big ships come in with goods from other countries. He says the city has a natural port.</en>"
+      options: ["Ships can easily come to it.", "It is far from the sea.", "It has no sea.", "It is in the highlands."]
+      answer: 0
+      explain: "Büyük gemiler her sabah gelip mal getiriyor ve şehrin doğal limanı var: gemiler kolayca gelebilir."
+    tekrar:
+      id: u7d06-025-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which place is a port?</en>"
+      options: ["A place where ships stop to load and unload goods", "A place where people watch films", "A place where students take exams", "A place where planes take off"]
+      answer: 0
+      explain: "Liman, gemilerin yük aldığı ve boşalttığı yerdir."
+  - item: U7-026
+    card:
+      example_en: "The hotel is located in the city centre. Its location is perfect."
+      example_tr: "Otel şehir merkezinde yer alıyor. Konumu mükemmel."
+      note_tr: "be located in / on / at = … -de bulunmak. Tarih ve coğrafya metinlerinde \"is located\" kalıbını tanı."
+    kullan:
+      id: u7d06-026-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Ephesus is ________ near İzmir.</en>"
+      options: ["located", "locate", "locating", "locations"]
+      answer: 0
+      explain: "\"is located\" = bulunur. Diğer biçimler cümleye uymaz."
+    sina:
+      id: u7d06-026-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What is good about the hotel's location?</en>"
+      stem: "<en>Blue Star Hotel is located in the centre of Bodrum, only five minutes from the beach and the castle.</en>"
+      options: ["It is near the beach and the castle.", "It is on a mountain.", "It is far from the sea.", "It is next to an airport."]
+      answer: 0
+      explain: "Otel Bodrum'un merkezinde; plaja ve kaleye beş dakika uzaklıkta."
+    tekrar:
+      id: u7d06-026-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>The museum's ________ is perfect: it is next to the bus station.</en>"
+      options: ["location", "climate", "population", "accommodation"]
+      answer: 0
+      explain: "Otobüs istasyonunun yanında olması yerin konumunu (location) anlatır."
+  - item: U7-027
+    card:
+      example_en: "The Mediterranean climate is hot and dry in summer. Today the weather is rainy."
+      example_tr: "Akdeniz iklimi yazın sıcak ve kurudur. Bugün hava yağmurlu."
+      note_tr: "climate = bir yerin uzun süreli havası (iklim); weather = bugünkü hava durumu."
+    kullan:
+      id: u7d06-027-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Look at the sky! The ________ is rainy today, so let's take an umbrella.</en>"
+      options: ["weather", "climate", "location", "wildlife"]
+      answer: 0
+      explain: "Bugünkü hava için weather kullanılır; climate yıllar boyunca süren iklimdir."
+    sina:
+      id: u7d06-027-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What is the climate of this country like?</en>"
+      stem: "<en>Egypt has a hot, dry climate. It almost never rains there, and the summers are very hot.</en>"
+      options: ["Hot and dry", "Cold and rainy", "Cool and windy", "Snowy all year"]
+      answer: 0
+      explain: "Metin: sıcak ve kuru iklim."
+    tekrar:
+      id: u7d06-027-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is about the climate of a place?</en>"
+      options: ["Winters in Erzurum are very cold and long.", "It is raining now, so take an umbrella.", "It was sunny this morning.", "I didn't wear a coat today because it was warm."]
+      answer: 0
+      explain: "Kışların her yıl soğuk ve uzun olması iklimi anlatır; diğerleri belli bir günün havasıdır."
+  - item: U7-028
+    card:
+      example_en: "The population of İstanbul is about sixteen million."
+      example_tr: "İstanbul'un nüfusu yaklaşık on altı milyondur."
+      note_tr: "population: nüfus; a large / small population, population of + yer."
+    kullan:
+      id: u7d06-028-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Tokyo has a very large ________. More than thirty million people live there.</en>"
+      options: ["population", "location", "climate", "harbour"]
+      answer: 0
+      explain: "Yaşayan insan sayısı: population (nüfus)."
+    sina:
+      id: u7d06-028-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the table, which city has the smallest population?</en>"
+      stem: "<en>City A: 2 million people\nCity B: 800 thousand people\nCity C: 1.5 million people</en>"
+      options: ["City B", "City A", "City C", "City A and City C"]
+      answer: 0
+      explain: "800 bin, 1,5 milyon ve 2 milyon arasında en küçük nüfus City B'dedir."
+    tekrar:
+      id: u7d06-028-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Many young people move to big cities, so the ________ of the villages is getting smaller.</en>"
+      options: ["population", "climate", "souvenir", "brochure"]
+      answer: 0
+      explain: "Köylerden gençler gidince köydeki insan sayısı, yani nüfus azalır."
+  - item: U7-029
+    card:
+      example_en: "The national park protects the wildlife: bears, deer and many birds live there."
+      example_tr: "Milli park yaban hayatını koruyor: ayılar, geyikler ve birçok kuş orada yaşıyor."
+      note_tr: "wildlife tek kelime yazılır (wild life değil); sayılamaz isimdir."
+    kullan:
+      id: u7d06-029-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>In the national park, tourists can see ________: deer, wolves and rare birds.</en>"
+      options: ["wildlife", "handicrafts", "brochures", "souvenirs"]
+      answer: 0
+      explain: "Geyik, kurt ve nadir kuşlar yaban hayatıdır (wildlife)."
+    sina:
+      id: u7d06-029-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, what can visitors see in the park?</en>"
+      stem: "<en>Green Valley National Park is a perfect place for nature lovers. Visitors can see deer, foxes and many kinds of birds. Please keep the park clean and do not feed the animals.</en>"
+      options: ["Wild animals", "Big ships", "Old palaces", "Tall hotels"]
+      answer: 0
+      explain: "Geyik, tilki ve kuşlar: yabani hayvanlar."
+    tekrar:
+      id: u7d06-029-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is about wildlife?</en>"
+      options: ["Bears and deer live freely in the forest.", "Cars are stopping at the traffic lights.", "Students are doing homework at a desk.", "Tourists are buying souvenirs."]
+      answer: 0
+      explain: "Ormanda özgürce yaşayan ayılar ve geyikler yaban hayatıdır."
+tips:
+  - type: tuzak
+    refs: [U7-027]
+    text: "climate = bir yerin yıllar boyunca havası (Mediterranean climate); weather = bugünkü hava (The weather is rainy today). İkisi de Türkçede \"hava\"."
+  - type: mini_dilbilgisi
+    refs: [U7-026]
+    text: "Coğrafya ve tarih metinlerinde \"is located / was built / was conquered\" kalıplarını tanı: \"bulunur / inşa edildi / fethedildi\". Üretmen gerekmez."
+coach:
+  start: "Gün 6: liman, iklim, nüfus ve doğa. Gezginin raporu hazırlanıyor 🌍"
+  end_good: "Süper! Bir yeri tarif etmeyi öğrendin 🌍 Yarın antik yapılara geçiyoruz."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🌍"
+notifications:
+  morning: "Bugün: liman, konum, iklim, nüfus ve yaban hayatı. Bir yeri tarif et! 🌍"
+  evening: "Climate mı, weather mı? Bugün yağmur yağıyor, hangisi? ☔"
+  review: "Bir şehirde yaşayan insan sayısına İngilizce ne denir? 👥"

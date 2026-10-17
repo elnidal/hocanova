@@ -1,0 +1,186 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 8
+status: draft
+title: "İmparatorluklar, fetih ve keşif"
+est_minutes: 7
+new_items: [U7-035, U7-036, U7-037, U7-038, U7-039]
+steps:
+  - item: U7-035
+    card:
+      example_en: "The Roman emperor ruled a huge empire."
+      example_tr: "Roma imparatoru kocaman bir imparatorluğu yönetti."
+      note_tr: "emperor (imparator) – empire (imparatorluk): kişi ve yönettiği devlet."
+    kullan:
+      id: u7d08-035-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The ________ lived in a big palace and ruled a very large country.</en>"
+      options: ["emperor", "tourist", "guide", "visitor"]
+      answer: 0
+      explain: "Büyük bir devleti yöneten kişi imparatordur (emperor)."
+    sina:
+      id: u7d08-035-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>The Ottoman Empire lasted for more than 600 years. It ruled land in three continents: Asia, Europe and Africa.</en>"
+      options: ["The empire was very large and lasted a long time.", "The empire was a small village.", "The empire lasted only ten years.", "The empire was only in one country."]
+      answer: 0
+      explain: "600 yıldan uzun sürmüş ve üç kıtada toprakları olmuş: büyük ve uzun ömürlü."
+    tekrar:
+      id: u7d08-035-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Who is an emperor?</en>"
+      options: ["A person who rules an empire", "A person who guides tourists", "A person who watches a match", "A person who cooks in a hotel"]
+      answer: 0
+      explain: "Emperor, bir imparatorluğu yöneten kişidir."
+  - item: U7-036
+    card:
+      example_en: "Sultan Mehmet II conquered İstanbul in 1453."
+      example_tr: "Sultan II. Mehmet 1453'te İstanbul'u fethetti."
+      note_tr: "conquer = fethetmek (conquest = fetih; invasion = istila). Tarih metinlerinde \"was conquered\" = fethedildi."
+    kullan:
+      id: u7d08-036-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>In 1453, Sultan Mehmet II ________ İstanbul, and the city became the capital of the Ottoman Empire.</en>"
+      options: ["conquered", "visited", "discovered", "abandoned"]
+      answer: 0
+      explain: "İstanbul'u alıp başkent yapmak: conquer (fethetmek)."
+    sina:
+      id: u7d08-036-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What happened in 1453?</en>"
+      stem: "<en>In 1453, the Ottomans conquered Constantinople after a fifty-three-day siege. Later the city was called İstanbul.</en>"
+      options: ["The Ottomans took the city.", "The city was abandoned.", "A new bridge was built.", "A palace was destroyed by a flood."]
+      answer: 0
+      explain: "Conquered = fethetti: Osmanlılar şehri aldı."
+    tekrar:
+      id: u7d08-036-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Alexander the Great ________ many countries and built a huge empire.</en>"
+      options: ["conquered", "accepted", "visited", "cooked"]
+      answer: 0
+      explain: "Birçok ülkeyi alıp büyük bir imparatorluk kurmak: conquer."
+  - item: U7-037
+    card:
+      example_en: "The Silk Road was a famous trade route between Asia and Europe."
+      example_tr: "İpek Yolu, Asya ile Avrupa arasında ünlü bir ticaret yoluydu."
+      note_tr: "trade route = ticaret yolu; route = güzergâh, rota: the route to the airport."
+    kullan:
+      id: u7d08-037-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Merchants carried silk and spices along the old ________ from China to Europe.</en>"
+      options: ["trade route", "fountain", "souvenir", "brochure"]
+      answer: 0
+      explain: "Tüccarların mal taşıdığı yol ticaret yoludur (trade route)."
+    sina:
+      id: u7d08-037-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the information, which of the following is TRUE?</en>"
+      stem: "<en>The Silk Road: China → Central Asia → Türkiye → Europe. Merchants carried silk, spices and tea along this road for hundreds of years.</en>"
+      options: ["Merchants moved goods from China to Europe.", "Merchants moved goods only inside one village.", "Only ships used the road.", "Merchants carried only fruit."]
+      answer: 0
+      explain: "Yol Çin'den Avrupa'ya uzanıyor ve tüccarlar ipek, baharat, çay taşıyor."
+    tekrar:
+      id: u7d08-037-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is a trade route?</en>"
+      options: ["A road or sea way used to carry goods from one place to another", "A road used only by tourists on foot", "A path for animals in a national park", "A place where kings live"]
+      answer: 0
+      explain: "Mal taşımak için kullanılan kara ya da deniz yolu."
+  - item: U7-038
+    card:
+      example_en: "The villagers abandoned the old city after the earthquake."
+      example_tr: "Köylüler depremden sonra eski şehri terk etti."
+      note_tr: "abandon = terk etmek; abandoned city = terk edilmiş şehir."
+    kullan:
+      id: u7d08-038-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>After the earthquake, all the people left the town, and it became an ________ town.</en>"
+      options: ["abandoned", "crowded", "charming", "famous"]
+      answer: 0
+      explain: "Herkes gidince şehir terk edilmiş (abandoned) olur."
+    sina:
+      id: u7d08-038-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>Why is the village empty?</en>"
+      stem: "<en>Kayaköy is a village near Fethiye. People left it in the 1920s, and today you can see its empty stone houses. Thousands of tourists walk around the old village every year.</en>"
+      options: ["The people left it.", "The people are hiding.", "It is a new village.", "The sea covered it."]
+      answer: 0
+      explain: "İnsanlar 1920'lerde köyü bırakıp gitmiş; bugün evler boş."
+    tekrar:
+      id: u7d08-038-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"abandon\"?</en>"
+      options: ["leave", "join", "build", "visit"]
+      answer: 0
+      explain: "abandon = bırakıp gitmek, terk etmek ≈ leave."
+  - item: U7-039
+    card:
+      example_en: "Archaeologists discovered a 2,000-year-old city under the ground."
+      example_tr: "Arkeologlar yerin altında 2.000 yıllık bir şehir keşfetti."
+      note_tr: "discover (keşfetmek) → discovery (keşif); re- = yeniden: rediscover."
+    kullan:
+      id: u7d08-039-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Scientists ________ a new cave with ancient paintings in the mountains.</en>"
+      options: ["discovered", "conquered", "abandoned", "accepted"]
+      answer: 0
+      explain: "Daha önce bilinmeyen mağarayı bulmak: discover (keşfetmek)."
+    sina:
+      id: u7d08-039-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What did the archaeologists find?</en>"
+      stem: "<en>In 1922, archaeologists discovered the tomb of a young king in Egypt. It was full of gold and beautiful objects.</en>"
+      options: ["A king's tomb", "A new island", "A trade route", "A big port"]
+      answer: 0
+      explain: "Arkeologlar Mısır'da genç bir kralın mezarını keşfetti."
+    tekrar:
+      id: u7d08-039-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word means \"to find something for the first time\"?</en>"
+      options: ["discover", "conquer", "abandon", "construct"]
+      answer: 0
+      explain: "Bir şeyi ilk kez bulmak: discover."
+tips:
+  - type: kelime_ailesi
+    refs: [U7-035]
+    text: "emperor (imparator) → empire (imparatorluk); conquer (fethetmek) → conquest (fetih). Kişi ve devlet çifti hep birlikte gelir."
+  - type: kelime_ailesi
+    refs: [U7-039]
+    text: "discover (keşfetmek) → discovery (keşif); re- öneki \"yeniden\" demektir: rediscover = yeniden keşfetmek."
+coach:
+  start: "Gün 8: imparatorlar, fetihler ve keşifler. Tarih kitabını açıyoruz 📜"
+  end_good: "Mükemmel! Tarih metinlerini rahat okursun 📜 Yarın miras ve kültür."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 📜"
+notifications:
+  morning: "Bugün: imparator, fetih, ticaret yolu, terk edilmiş şehir ve keşif 📜"
+  evening: "İpek Yolu hangi iki kıtayı bağlıyordu? 🐫"
+  review: "\"Discover\" mı, \"conquer\" mı? Bir mağarayı ilk kez bulmak? 🔦"

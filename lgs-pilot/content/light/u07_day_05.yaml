@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 5
+status: draft
+title: "Deniz, yayla, ada ve meydan"
+est_minutes: 7
+new_items: [U7-020, U7-021, U7-022, U7-023, U7-024]
+steps:
+  - item: U7-020
+    card:
+      example_en: "We spent the weekend in a small town by the seaside."
+      example_tr: "Hafta sonunu deniz kenarındaki küçük bir kasabada geçirdik."
+      note_tr: "seaside = deniz kenarı, sahil: go to the seaside, a seaside town."
+    kullan:
+      id: u7d05-020-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>In summer, many families go to the ________ to swim and build sandcastles.</en>"
+      options: ["seaside", "desert", "forest", "mountain top"]
+      answer: 0
+      explain: "Yüzmek ve kumdan kale yapmak için gidilen yer deniz kenarıdır (seaside)."
+    sina:
+      id: u7d05-020-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Where is Deniz?</en>"
+      stem: "<en>Deniz: Dear Ayşe, we are having a great time! We swim every morning and eat fresh fish in the evenings. The sea is warm and the weather is lovely.</en>"
+      options: ["At the seaside", "In the highlands", "In a big office", "At school"]
+      answer: 0
+      explain: "Her sabah yüzüyorlar, taze balık yiyorlar, deniz sıcak: Deniz sahilde (at the seaside)."
+    tekrar:
+      id: u7d05-020-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Let's go to the ________ this weekend and have a picnic near the sea.</en>"
+      options: ["seaside", "bank", "library", "factory"]
+      answer: 0
+      explain: "Deniz kenarında piknik yapılır: seaside."
+  - item: U7-021
+    card:
+      example_en: "Many shepherds take their animals to the highlands in summer."
+      example_tr: "Birçok çoban yazın hayvanlarını yaylaya çıkarır."
+      note_tr: "highland: yüksek, dağlık bölge (genelde çoğul: the highlands); plateau: yüksek düzlük."
+    kullan:
+      id: u7d05-021-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>It is cooler in the ________ in summer, so people go there to escape the heat.</en>"
+      options: ["highlands", "beaches", "islands", "squares"]
+      answer: 0
+      explain: "Yazın serin olan yüksek bölge yayladır (highlands)."
+    sina:
+      id: u7d05-021-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Ece's text: Our village is in the highlands, 1,800 metres above the sea. In summer the weather is cool and the sheep eat grass on the green hills. In winter it snows a lot.</en>"
+      options: ["The village is high above the sea.", "The village is next to the sea.", "The weather is hot in summer.", "There is no snow in winter."]
+      answer: 0
+      explain: "Köy deniz seviyesinden 1.800 metre yüksekte; diğer şıklar metinle çelişiyor."
+    tekrar:
+      id: u7d05-021-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which place is usually high above the sea?</en>"
+      options: ["A plateau", "A harbour", "A beach", "A fountain"]
+      answer: 0
+      explain: "Plato yüksek düzlüktür; liman ve plaj denizin kenarındadır."
+  - item: U7-022
+    card:
+      example_en: "We took a boat to a small island and swam in the clear water."
+      example_tr: "Küçük bir adaya tekneyle gidip berrak suda yüzdük."
+      note_tr: "island okunuşu /ˈaɪlənd/ (ayland): s harfi okunmaz."
+    kullan:
+      id: u7d05-022-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>An ________ is a piece of land with water all around it.</en>"
+      options: ["island", "square", "plateau", "fountain"]
+      answer: 0
+      explain: "Her yanı suyla çevrili kara parçası adadır (island)."
+    sina:
+      id: u7d05-022-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: Did you go to Bozcaada last summer?\nElif: ________ We took a ferry and stayed there for two days.</en>"
+      options: ["Yes, I visited the island.", "Yes, I visited the airport.", "No, I stayed at school.", "No, I visited my cousin's farm."]
+      answer: 0
+      explain: "Vapurla gidilen ve iki gün kalınan yer adadır; Elif \"Yes\" demeli."
+    tekrar:
+      id: u7d05-022-t
+      type: odd_one_out
+      prompt: "<en>In which word is there a letter that we don't say?</en>"
+      options: ["island", "sand", "sea", "sun"]
+      answer: 0
+      explain: "island /ˈaɪlənd/: s okunmaz."
+  - item: U7-023
+    card:
+      example_en: "People meet in the city square on Sundays."
+      example_tr: "İnsanlar pazar günleri şehir meydanında buluşur."
+      note_tr: "square = kare; şehirde meydan: Times Square, Konak Square."
+    kullan:
+      id: u7d05-023-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Let's meet in the main ________ at six o'clock. There is a big fountain in the middle.</en>"
+      options: ["square", "kitchen", "pillow", "passport"]
+      answer: 0
+      explain: "Ortasında büyük bir çeşme olan buluşma yeri şehir meydanıdır (square)."
+    sina:
+      id: u7d05-023-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Tourist: Excuse me, where is the clock tower?\nLocal: It's in Konak ________, next to the big fountain.</en>"
+      options: ["Square", "Climate", "Wildlife", "Population"]
+      answer: 0
+      explain: "\"Konak Square\" = Konak Meydanı. Diğer kelimeler yer adı olamaz."
+    tekrar:
+      id: u7d05-023-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence talks about a place in a city?</en>"
+      options: ["The shops, cafés and a fountain are around the old square.", "The teacher drew a square on the board.", "My room has a square window.", "The box is square and heavy."]
+      answer: 0
+      explain: "İlk cümlede square şehirdeki meydandır; diğerlerinde \"kare\" şeklidir."
+  - item: U7-024
+    card:
+      example_en: "Children were playing near the fountain in the square."
+      example_tr: "Çocuklar meydandaki çeşmenin yanında oynuyordu."
+      note_tr: "fountain: su fışkırtan çeşme / fıskiye."
+    kullan:
+      id: u7d05-024-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Water goes up and comes down in the ________ in the middle of the park.</en>"
+      options: ["fountain", "mosque", "tent", "ship"]
+      answer: 0
+      explain: "Su fışkırtan yapı fountain'dır."
+    sina:
+      id: u7d05-024-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the text?</en>"
+      stem: "<en>Welcome to Old Town Square! In the middle you can see a beautiful fountain. Around it there are cafés and shops. Street musicians play music every evening.</en>"
+      options: ["A swimming pool", "A fountain", "Cafés and shops", "Street musicians"]
+      answer: 0
+      explain: "Çeşme, kafeler, dükkânlar ve sokak müzisyenleri var; yüzme havuzundan söz edilmiyor."
+    tekrar:
+      id: u7d05-024-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>People throw coins into the old ________ and make a wish.</en>"
+      options: ["fountain", "backpack", "sandwich", "ticket"]
+      answer: 0
+      explain: "Madeni para atıp dilek tutulan yer çeşmedir (fountain)."
+tips:
+  - type: tuzak
+    refs: [U7-023]
+    text: "square \"kare\" demektir; ama şehirde meydandır: Times Square, Konak Square."
+  - type: hafiza_kancasi
+    refs: [U7-022]
+    text: "island: s okunmaz, \"ayland\" diye oku. İçinde land (kara) var: etrafı su, ortası kara."
+coach:
+  start: "Gün 5: sahil, yayla, ada ve meydan. Haritayı aç, yola çıkıyoruz 🧭"
+  end_good: "Harika! Haritadaki yerleri tanıyorsun 🧭 Yarın liman, iklim ve nüfus."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🧭"
+notifications:
+  morning: "Bugün: sahil, yayla, ada, meydan ve çeşme. Hangisine gidiyoruz? 🧭"
+  evening: "\"island\" kelimesinde hangi harf okunmaz? 🏝️"
+  review: "Şehirde \"square\" kare mi demek, meydan mı? 🤔"

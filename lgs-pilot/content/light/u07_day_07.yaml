@@ -1,0 +1,186 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 7
+status: draft
+title: "Antik yapılar: saray, cami, mimari"
+est_minutes: 7
+new_items: [U7-030, U7-031, U7-032, U7-033, U7-034]
+steps:
+  - item: U7-030
+    card:
+      example_en: "Ephesus is an ancient city with thousands of years of history."
+      example_tr: "Efes, binlerce yıllık geçmişi olan antik bir şehirdir."
+      note_tr: "ancient ≠ old: ancient binlerce yıllık (ancient city); old günlük eski (old building)."
+    kullan:
+      id: u7d07-030-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We visited an ________ theatre that was built 2,000 years ago.</en>"
+      options: ["ancient", "modern", "new", "tiny"]
+      answer: 0
+      explain: "2.000 yıllık yapı için ancient (antik) kullanılır."
+    sina:
+      id: u7d07-030-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["The Colosseum is an ancient building because it is about 2,000 years old.", "My bicycle is an ancient bicycle because it is three years old.", "This phone is ancient because I bought it yesterday.", "That shop is ancient because it opened last week."]
+      answer: 0
+      explain: "ancient binlerce yıllık şeyler için kullanılır; üç yıllık bisiklet ya da dün alınan telefon ancient olamaz."
+    tekrar:
+      id: u7d07-030-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Troy is an ________ city. People lived there more than 3,000 years ago.</en>"
+      options: ["ancient", "modern", "urban", "crowded"]
+      answer: 0
+      explain: "3.000 yıldan eski şehir: ancient city."
+  - item: U7-031
+    card:
+      example_en: "Ottoman architecture is famous for its domes and tiles."
+      example_tr: "Osmanlı mimarisi kubbeleri ve çinileriyle ünlüdür."
+      note_tr: "architecture (mimari, mimarlık) – architect (mimar). historical architecture = tarihî yapılar."
+    kullan:
+      id: u7d07-031-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Students who want to design buildings study ________ at university.</en>"
+      options: ["architecture", "geography", "music", "cooking"]
+      answer: 0
+      explain: "Bina tasarlamayı öğreten bölüm mimarlıktır (architecture)."
+    sina:
+      id: u7d07-031-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S05
+      prompt: "<en>What is the text mainly about?</en>"
+      stem: "<en>Mimar Sinan was one of the most famous Ottoman architects. He designed mosques, bridges and schools in many cities. People still visit his buildings today because of their beautiful domes.</en>"
+      options: ["Famous buildings of an architect", "A holiday in the mountains", "The population of a city", "A new football stadium"]
+      answer: 0
+      explain: "Metin ünlü bir mimarın yaptığı yapılardan söz ediyor."
+    tekrar:
+      id: u7d07-031-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word means \"the art of designing buildings\"?</en>"
+      options: ["architecture", "tourism", "climate", "transportation"]
+      answer: 0
+      explain: "Bina tasarlama sanatı: architecture."
+  - item: U7-032
+    card:
+      example_en: "The construction of the bridge took five years."
+      example_tr: "Köprünün yapımı beş yıl sürdü."
+      note_tr: "construction: yapım, inşa (build fiilinin ismi). under construction = yapım aşamasında."
+    kullan:
+      id: u7d07-032-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The ________ of the new stadium started last year and will finish next summer.</en>"
+      options: ["construction", "accommodation", "population", "wildlife"]
+      answer: 0
+      explain: "Stadyumun inşasının başlaması: construction."
+    sina:
+      id: u7d07-032-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>How long did the construction of the mosque take?</en>"
+      stem: "<en>The Sultanahmet Mosque, also called the Blue Mosque, was built between 1609 and 1616.</en>"
+      options: ["About seven years", "About seventy years", "About two years", "About twenty years"]
+      answer: 0
+      explain: "1609'dan 1616'ya kadar: yaklaşık yedi yıl."
+    tekrar:
+      id: u7d07-032-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Sorry, the museum is closed. It is under ________.</en>"
+      options: ["construction", "location", "climate", "tourism"]
+      answer: 0
+      explain: "\"under construction\" = yapım aşamasında (kapalı)."
+  - item: U7-033
+    card:
+      example_en: "Topkapı Palace was the home of the sultans. A mansion is a large, beautiful house."
+      example_tr: "Topkapı Sarayı sultanların evi idi. Konak, büyük ve güzel bir evdir."
+      note_tr: "palace = saray; mansion = konak, köşk (büyük, görkemli ev)."
+    kullan:
+      id: u7d07-033-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The king lives in a big ________ with a hundred rooms and a beautiful garden.</en>"
+      options: ["palace", "tent", "bakery", "garage"]
+      answer: 0
+      explain: "Kralın yaşadığı çok odalı büyük yapı saraydır (palace)."
+    sina:
+      id: u7d07-033-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What kind of building is it?</en>"
+      stem: "<en>Selin: We visited a huge house in the old town. It belonged to a rich family. It had twenty rooms, a garden and a big hall.</en>"
+      options: ["A mansion", "A mosque", "A bridge", "A fountain"]
+      answer: 0
+      explain: "Zengin bir ailenin, yirmi odalı büyük evi: mansion (konak)."
+    tekrar:
+      id: u7d07-033-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which building was the home of a king or a sultan?</en>"
+      options: ["A palace", "A harbour", "A guesthouse", "A square"]
+      answer: 0
+      explain: "Kral ya da sultanın evi saraydır."
+  - item: U7-034
+    card:
+      example_en: "We took off our shoes before we entered the mosque."
+      example_tr: "Camiye girmeden önce ayakkabılarımızı çıkardık."
+      note_tr: "mosque okunuşu /mɒsk/ (mosk): sondaki -que yazılır ama okunmaz."
+    kullan:
+      id: u7d07-034-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Tourists must take off their shoes before they enter the ________.</en>"
+      options: ["mosque", "bank", "cinema", "airport"]
+      answer: 0
+      explain: "Ayakkabıların çıkarıldığı yer camidir (mosque)."
+    sina:
+      id: u7d07-034-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>A tour guide is talking to tourists at a mosque. What should the guide say?</en>"
+      options: ["Please take off your shoes and speak quietly.", "Please run and shout in the building.", "Please eat your lunch inside.", "Please play loud music."]
+      answer: 0
+      explain: "Camide ayakkabı çıkarılır ve sessiz konuşulur."
+    tekrar:
+      id: u7d07-034-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>The ________ in the old town is open to visitors, but they must dress modestly and speak quietly.</en>"
+      options: ["mosque", "harbour", "stadium", "factory"]
+      answer: 0
+      explain: "Ziyaretçilerin mütevazı giyinip sessiz konuşması gereken yer camidir."
+tips:
+  - type: tuzak
+    refs: [U7-030]
+    text: "ancient ≠ old: ancient binlerce yıllık (ancient city), old günlük eski (old building). Kaynak listelerde ikisi de \"eski\" yazıyor."
+  - type: mini_dilbilgisi
+    refs: [U7-032]
+    text: "Tarih metinlerinde \"was built / was conquered / is located\" kalıplarını tanı: \"inşa edildi / fethedildi / bulunur\". Üretmen gerekmez."
+coach:
+  start: "Gün 7: binlerce yıllık yapılar! Saray, cami, mimari ve inşa 🏛️"
+  end_good: "Harika! Tarihî bir gezinin dilini konuşuyorsun 🏛️ Yarın imparatorlar ve keşifler."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🏛️"
+notifications:
+  morning: "Bugün: antik şehir, saray, cami ve mimari. Tarihe yolculuk! 🏛️"
+  evening: "Bisikletin üç yaşında. Ona \"ancient\" denir mi? 🚲"
+  review: "\"under construction\" levhasını görünce ne anlarsın? 🚧"
