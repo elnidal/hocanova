@@ -1,0 +1,183 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 10
+day: 5
+status: draft
+title: "Kurtarma, ilk yardım ve başa çıkmak"
+est_minutes: 7
+new_items: [U10-021, U10-022, U10-023, U10-024, U10-025]
+steps:
+  - item: U10-021
+    card:
+      example_en: "Many farmers suffer from drought in summer."
+      example_tr: "Birçok çiftçi yazın kuraklıktan sıkıntı çeker."
+      note_tr: "suffer from + isim = (bir şeyden) sıkıntı çekmek: suffer from drought / hunger / heat."
+    kullan:
+      id: u10d05-021-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>People in the region ________ from water shortage every summer.</en>"
+      options: ["suffer", "suffers", "suffering", "to suffer"]
+      answer: 0
+      explain: "People + fiil: suffer from."
+    sina:
+      id: u10d05-021-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Many people suffer from hunger after a drought.", "Many people suffer of hunger after a drought.", "Many people suffer by hunger after a drought.", "Many people suffer on hunger after a drought."]
+      answer: 0
+      explain: "Kalıp: suffer from."
+    tekrar:
+      id: u10d05-021-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Some animals suffer ________ the heat in summer.</en>"
+      options: ["from", "of", "to", "by"]
+      answer: 0
+      explain: "suffer from the heat."
+  - item: U10-022
+    card:
+      example_en: "The rescue team helped the families leave the flooded houses."
+      example_tr: "Kurtarma ekibi ailelerin sel basan evlerden çıkmasına yardım etti."
+      note_tr: "rescue = tehlikeden kurtarmak; rescue team = kurtarma ekibi. save de \"kurtarmak\" demektir."
+    kullan:
+      id: u10d05-022-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The ________ team arrived quickly and helped the families.</en>"
+      options: ["rescue", "recipe", "reward", "record"]
+      answer: 0
+      explain: "Tehlikedekilere yardım eden ekip: rescue team."
+    sina:
+      id: u10d05-022-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>Why was the notice written?</en>"
+      stem: "<en>Notice: The rescue teams are working in the flooded area. If you need help, call 112.</en>"
+      options: ["To tell people how to get help", "To advertise a hotel", "To sell tickets", "To invite people to a party"]
+      answer: 0
+      explain: "Duyuru, yardım gerekirse 112'yi aramayı söylüyor."
+    tekrar:
+      id: u10d05-022-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does a rescue team do?</en>"
+      options: ["It helps people in danger", "It sells tickets", "It cooks meals in a restaurant", "It repairs computers"]
+      answer: 0
+      explain: "Kurtarma ekibi tehlikedeki insanlara yardım eder."
+  - item: U10-023
+    card:
+      example_en: "She gave first aid to the injured boy until the ambulance came."
+      example_tr: "Ambulans gelene kadar yaralı çocuğa ilk yardım yaptı."
+      note_tr: "first aid = ilk yardım; first aid kit = ilk yardım çantası; aid = yardım."
+    kullan:
+      id: u10d05-023-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A good first ________ kit has bandages and cotton.</en>"
+      options: ["aid", "meal", "lesson", "prize"]
+      answer: 0
+      explain: "first aid kit = ilk yardım çantası."
+    sina:
+      id: u10d05-023-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: I cut my finger!\nDuru: ________ Let me get the first aid kit.</en>"
+      options: ["Don't worry.", "Don't sleep.", "Don't swim.", "Don't sing."]
+      answer: 0
+      explain: "Parmağı kesilen arkadaşı sakinleştirmek ve ilk yardım çantasını getirmek uygun."
+    tekrar:
+      id: u10d05-023-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What can you find in a first aid kit?</en>"
+      options: ["Bandages", "Pizza", "Footballs", "Keys"]
+      answer: 0
+      explain: "İlk yardım çantasında sargı bezi bulunur."
+  - item: U10-024
+    card:
+      example_en: "The animals escaped from the burning forest."
+      example_tr: "Hayvanlar yanan ormandan kaçtı."
+      note_tr: "escape from … = …den kaçmak, kurtulmak; emergency exit = acil çıkış."
+    kullan:
+      id: u10d05-024-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>People ran to the exits to ________ from the fire.</en>"
+      options: ["escape", "dust", "borrow", "fold"]
+      answer: 0
+      explain: "Yangından kaçmak: escape from the fire."
+    sina:
+      id: u10d05-024-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["The family escaped from the flood.", "The family escaped to the flood.", "The family escaped of the flood.", "The family escaped in the flood from."]
+      answer: 0
+      explain: "Kalıp: escape from."
+    tekrar:
+      id: u10d05-024-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which expression is closest in meaning to \"escape\"?</en>"
+      options: ["get away", "come back", "stay inside", "fall down"]
+      answer: 0
+      explain: "escape ≈ get away."
+  - item: U10-025
+    card:
+      example_en: "Governments must deal with natural disasters quickly."
+      example_tr: "Hükümetler doğal afetlerle hızlıca başa çıkmalı."
+      note_tr: "deal with = başa çıkmak, ilgilenmek (cope with eş anlamlı)."
+    kullan:
+      id: u10d05-025-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The city needs a plan to ________ floods.</en>"
+      options: ["deal with", "take off", "put on", "give up"]
+      answer: 0
+      explain: "Sellerle başa çıkmak: deal with."
+    sina:
+      id: u10d05-025-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["How do you deal with stress?", "How do you deal stress?", "How do you deal to stress?", "How do you deal in stress?"]
+      answer: 0
+      explain: "Kalıp: deal with."
+    tekrar:
+      id: u10d05-025-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which expression is closest in meaning to \"deal with\"?</en>"
+      options: ["cope with", "run out of", "get up", "put on"]
+      answer: 0
+      explain: "deal with ≈ cope with."
+tips:
+  - type: mini_dilbilgisi
+    refs: [U10-021]
+    text: "suffer from + isim: suffer from drought / hunger / heat. Edat from'dur (suffer of / by değil)."
+  - type: kelime_ailesi
+    refs: [U10-022, U10-024]
+    text: "rescue (kurtarmak) ≈ save; escape from (…den kaçmak). Tehlikede iki taraf var: kurtaran (rescue) ve kurtulan (escape)."
+coach:
+  start: "Gün 5: kurtarma, ilk yardım ve başa çıkmak. Yardım eden eller 🚑"
+  end_good: "Süper! Acil durum dilinde ilerliyorsun 🚑 Yarın çevre sorunları başlıyor."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🚑"
+notifications:
+  morning: "Bugün: sıkıntı çekmek, kurtarma, ilk yardım, kaçmak ve başa çıkmak 🚑"
+  evening: "\"Suffer of\" mu, \"suffer from\" mu? 🤔"
+  review: "İlk yardım çantasında neler olur? 🩹"

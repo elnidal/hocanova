@@ -1,0 +1,186 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 10
+day: 3
+status: draft
+title: "Yaralanma, tehdit ve yer bilimi"
+est_minutes: 7
+new_items: [U10-011, U10-012, U10-013, U10-014, U10-015]
+steps:
+  - item: U10-011
+    card:
+      example_en: "Two people were injured in the accident. Their injuries were not serious."
+      example_tr: "Kazada iki kişi yaralandı. Yaraları ciddi değildi."
+      note_tr: "be injured = yaralanmak; injury = yaralanma (çoğulu injuries); injure → injury → injured."
+    kullan:
+      id: u10d03-011-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Luckily, nobody was seriously ________ in the storm.</en>"
+      options: ["injured", "injury", "injure", "injuring"]
+      answer: 0
+      explain: "was + V3: was injured (yaralandı)."
+    sina:
+      id: u10d03-011-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we say about the driver?</en>"
+      stem: "<en>A tree fell on a car during the storm. The driver had a small injury on his arm, but he is OK now.</en>"
+      options: ["He was slightly hurt.", "He was not in the car.", "He is in serious danger.", "He broke the tree."]
+      answer: 0
+      explain: "Kolunda küçük bir yara var ama şimdi iyi: hafif yaralanmış."
+    tekrar:
+      id: u10d03-011-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>The football player has a knee ________ and can't play this week.</en>"
+      options: ["injury", "injure", "injured", "injuring"]
+      answer: 0
+      explain: "\"a knee ...\" isim ister: injury."
+  - item: U10-012
+    card:
+      example_en: "Global warming is a serious threat to the Earth."
+      example_tr: "Küresel ısınma Dünya için ciddi bir tehdittir."
+      note_tr: "threat /θret/ = tehdit; threaten = tehdit etmek; threatening = tehdit edici."
+    kullan:
+      id: u10d03-012-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Air pollution is a ________ to our health.</en>"
+      options: ["threat", "chore", "reward", "fact"]
+      answer: 0
+      explain: "Sağlığa zarar verebilecek şey tehdittir (threat)."
+    sina:
+      id: u10d03-012-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Floods threaten many villages.", "Floods threat many villages.", "Floods are threaten many villages.", "Floods threatening many villages."]
+      answer: 0
+      explain: "Fiil threaten: Floods threaten many villages."
+    tekrar:
+      id: u10d03-012-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which expression is closest in meaning to \"a serious threat\"?</en>"
+      options: ["a big danger", "a nice gift", "a small mistake", "a good result"]
+      answer: 0
+      explain: "serious threat ≈ big danger."
+  - item: U10-013
+    card:
+      example_en: "It was a magnitude 6 earthquake on the Richter scale."
+      example_tr: "Richter ölçeğine göre 6 büyüklüğünde bir depremdi."
+      note_tr: "magnitude = (depremin) büyüklüğü; scale = ölçek."
+    kullan:
+      id: u10d03-013-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Scientists measure the ________ of an earthquake on the Richter scale.</en>"
+      options: ["magnitude", "recipe", "allowance", "furniture"]
+      answer: 0
+      explain: "Richter ölçeği depremin büyüklüğünü (magnitude) ölçer."
+    sina:
+      id: u10d03-013-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the table, which earthquake was the strongest?</en>"
+      stem: "<en>Earthquake A: magnitude 4.5\nEarthquake B: magnitude 6.8\nEarthquake C: magnitude 5.2</en>"
+      options: ["Earthquake B", "Earthquake A", "Earthquake C", "They were the same"]
+      answer: 0
+      explain: "En yüksek büyüklük 6.8: Earthquake B."
+    tekrar:
+      id: u10d03-013-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>A magnitude 7 earthquake is much ________ than a magnitude 4 earthquake.</en>"
+      options: ["stronger", "weaker", "smaller", "slower"]
+      answer: 0
+      explain: "Büyüklük 7 olan deprem 4 olandan çok daha güçlüdür."
+  - item: U10-014
+    card:
+      example_en: "Earthquakes happen when the plates in the Earth's crust move."
+      example_tr: "Depremler, Dünya kabuğundaki levhalar hareket edince olur."
+      note_tr: "surface = yüzey; layer = katman; yer biliminde plate = levha (\"tabaka\" değil)."
+    kullan:
+      id: u10d03-014-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The Earth has several ________. The top one is called the crust.</en>"
+      options: ["layers", "chores", "squares", "relatives"]
+      answer: 0
+      explain: "Dünya'nın birkaç katmanı (layers) vardır."
+    sina:
+      id: u10d03-014-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>When do earthquakes happen?</en>"
+      stem: "<en>The Earth's surface is not one piece. It is made of big plates. Earthquakes happen when these plates move.</en>"
+      options: ["When the plates move", "When it rains heavily", "When the sun is very hot", "When the sea is cold"]
+      answer: 0
+      explain: "Metne göre levhalar hareket edince deprem olur."
+    tekrar:
+      id: u10d03-014-t
+      type: synonym
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word means \"the top part of something\"?</en>"
+      options: ["surface", "centre", "bottom", "core"]
+      answer: 0
+      explain: "surface = yüzey, üst kısım."
+  - item: U10-015
+    card:
+      example_en: "After the rain, we saw a beautiful rainbow."
+      example_tr: "Yağmurdan sonra güzel bir gökkuşağı gördük."
+      note_tr: "double rainbow = çift gökkuşağı; reflect = yansıtmak; raindrop = yağmur damlası."
+    kullan:
+      id: u10d03-015-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>When sunlight passes through raindrops, we can see a ________.</en>"
+      options: ["rainbow", "tornado", "drought", "landslide"]
+      answer: 0
+      explain: "Güneş ışığı yağmur damlalarından geçince gökkuşağı oluşur."
+    sina:
+      id: u10d03-015-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>When can you see a rainbow?</en>"
+      stem: "<en>A rainbow appears when sunlight reflects inside raindrops. That's why you often see one when it is raining and the sun is shining at the same time.</en>"
+      options: ["When it rains and the sun shines", "When it snows at night", "When the wind is very strong", "When the ground shakes"]
+      answer: 0
+      explain: "Hem yağmur yağarken hem güneş açarken görülür."
+    tekrar:
+      id: u10d03-015-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word means \"to send light back from a surface\"?</en>"
+      options: ["reflect", "reduce", "record", "repair"]
+      answer: 0
+      explain: "Işığı yüzeyden geri yollamak: reflect (yansıtmak)."
+tips:
+  - type: kelime_ailesi
+    refs: [U10-011]
+    text: "injure → injury → injured; threaten → threat → threatening. Fiil, isim ve sıfat biçimlerini bir arada öğren."
+  - type: tuzak
+    refs: [U10-014]
+    text: "Yer biliminde plate = levha (tectonic plates); layer = katman. \"Plate\" yalnız tabak değildir."
+coach:
+  start: "Gün 3: yaralanma, tehdit, deprem büyüklüğü ve gökkuşağı. Biraz da yer bilimi 🌈"
+  end_good: "Harika! Bilimsel metinleri daha rahat okuyorsun 🌈 Yarın acil durum ve hazırlık."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🌈"
+notifications:
+  morning: "Bugün: yaralanma, tehdit, büyüklük, yüzey ve gökkuşağı 🌈"
+  evening: "Yer biliminde \"plate\" tabak mı demek? 🤔"
+  review: "Richter ölçeği neyi ölçer? 📏"

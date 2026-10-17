@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 10
+day: 6
+status: draft
+title: "Çevre sorunları: ısınma, kirlilik, kıtlık"
+est_minutes: 7
+new_items: [U10-026, U10-027, U10-028, U10-029, U10-030]
+steps:
+  - item: U10-026
+    card:
+      example_en: "Global warming is causing sea levels to rise."
+      example_tr: "Küresel ısınma deniz seviyelerinin yükselmesine neden oluyor."
+      note_tr: "global warming = küresel ısınma; climate change = iklim değişikliği; warm up = ısınmak."
+    kullan:
+      id: u10d06-026-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Because of global warming, the Earth is ________ up.</en>"
+      options: ["warming", "warm", "warmed", "warms"]
+      answer: 0
+      explain: "is + fiil-ing: is warming up."
+    sina:
+      id: u10d06-026-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What is happening because of global warming?</en>"
+      stem: "<en>Scientists say global warming is a serious problem. The Earth is getting warmer, so ice is melting and sea levels are rising.</en>"
+      options: ["Sea levels are rising.", "The Earth is getting colder.", "Deserts are becoming forests.", "Rainfall is stopping everywhere."]
+      answer: 0
+      explain: "Buzlar eriyor ve deniz seviyeleri yükseliyor."
+    tekrar:
+      id: u10d06-026-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"global\"?</en>"
+      options: ["worldwide", "local", "tiny", "private"]
+      answer: 0
+      explain: "global = dünya çapında (worldwide)."
+  - item: U10-027
+    card:
+      example_en: "Greenhouse gases trap heat in the atmosphere."
+      example_tr: "Sera gazları atmosferde ısıyı hapseder."
+      note_tr: "greenhouse = sera (\"yeşil ev\" değil); greenhouse effect = sera etkisi."
+    kullan:
+      id: u10d06-027-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Farmers grow tomatoes in a ________ in winter.</en>"
+      options: ["greenhouse", "fountain", "janitor", "platform"]
+      answer: 0
+      explain: "Kışın domates yetiştirilen cam yapı: sera (greenhouse)."
+    sina:
+      id: u10d06-027-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What do greenhouse gases do?</en>"
+      stem: "<en>Burning coal and oil produces greenhouse gases such as carbon dioxide. These gases trap heat and make the Earth warmer.</en>"
+      options: ["They trap heat.", "They cool the Earth.", "They make rain.", "They clean the air."]
+      answer: 0
+      explain: "Metne göre ısıyı hapsedip Dünya'yı ısıtırlar."
+    tekrar:
+      id: u10d06-027-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is a greenhouse?</en>"
+      options: ["A glass building where plants grow", "A house painted green", "A park with trees", "A shop for green clothes"]
+      answer: 0
+      explain: "greenhouse = bitki yetiştirilen cam yapı (sera)."
+  - item: U10-028
+    card:
+      example_en: "Air pollution is a problem in big cities."
+      example_tr: "Hava kirliliği büyük şehirlerde bir sorundur."
+      note_tr: "pollute (fiil) → pollution (isim) → polluted (kirli); toxic = zehirli."
+    kullan:
+      id: u10d06-028-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Some factories ________ the river with dirty water.</en>"
+      options: ["pollute", "pollution", "polluted", "polluting"]
+      answer: 0
+      explain: "Some factories + fiil: pollute (kirletmek)."
+    sina:
+      id: u10d06-028-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>The ________ river is full of rubbish and dirty water.</en>"
+      options: ["polluted", "pollution", "pollute", "pollutes"]
+      answer: 0
+      explain: "\"river\" isminin önüne sıfat gelir: polluted (kirlenmiş)."
+    tekrar:
+      id: u10d06-028-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is a type of pollution?</en>"
+      options: ["Water pollution", "Water fountain", "Water bottle", "Waterfall"]
+      answer: 0
+      explain: "Su kirliliği bir kirlilik türüdür."
+  - item: U10-029
+    card:
+      example_en: "People cut down trees, and deforestation causes landslides."
+      example_tr: "İnsanlar ağaç keser, ormansızlaşma heyelanlara yol açar."
+      note_tr: "deforestation = ormansızlaşma; cut down trees = ağaç kesmek; destroy forests = ormanları yok etmek."
+    kullan:
+      id: u10d06-029-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Cutting down too many trees causes ________.</en>"
+      options: ["deforestation", "recycling", "vaccination", "competition"]
+      answer: 0
+      explain: "Çok ağaç kesmek ormansızlaşmaya yol açar."
+    sina:
+      id: u10d06-029-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What can deforestation cause?</en>"
+      stem: "<en>In many places, people cut down trees for wood and land. Without trees, the soil slides down the hills during heavy rain.</en>"
+      options: ["Landslides", "Rainbows", "Earthquakes", "Tsunamis"]
+      answer: 0
+      explain: "Ağaçsız toprak yağmurda kayar: heyelan."
+    tekrar:
+      id: u10d06-029-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which action is bad for forests?</en>"
+      options: ["Cutting down trees without planting new ones", "Planting trees", "Protecting wildlife", "Using less paper"]
+      answer: 0
+      explain: "Yeni ağaç dikmeden ağaç kesmek ormanlara zarar verir."
+  - item: U10-030
+    card:
+      example_en: "There is a water shortage in the region. We are running out of water."
+      example_tr: "Bölgede su kıtlığı var. Suyumuz tükeniyor."
+      note_tr: "run out of + isim = tükenmek; lack of = … eksikliği; shortage = kıtlık."
+    kullan:
+      id: u10d06-030-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>In summer, there is a serious water ________ in some villages.</en>"
+      options: ["shortage", "chore", "reward", "square"]
+      answer: 0
+      explain: "Yetersiz su: water shortage."
+    sina:
+      id: u10d06-030-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["We are running out of water.", "We are running out water.", "We are running out to water.", "We are running of out water."]
+      answer: 0
+      explain: "Kalıp: run out of + isim."
+    tekrar:
+      id: u10d06-030-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>The plants died because of the ________ of rain.</en>"
+      options: ["lack", "luck", "lock", "lick"]
+      answer: 0
+      explain: "\"lack of rain\" = yağmur eksikliği. luck şanstır."
+tips:
+  - type: tuzak
+    refs: [U10-027]
+    text: "greenhouse = sera (\"yeşil ev\" değil). greenhouse gases = sera gazları: ısıyı hapseder."
+  - type: kelime_ailesi
+    refs: [U10-028]
+    text: "pollute → pollution → polluted; toxic = zehirli. \"Water pollution\", \"air pollution\" ve \"soil pollution\" üç kirlilik türüdür."
+coach:
+  start: "Gün 6: çevre sorunları. Gezegenimizin sorunlarını anlatıyoruz 🌡️"
+  end_good: "Harika! Çevre haberlerini rahat okursun 🌡️ Yarın çevre ve doğayı koruma."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🌡️"
+notifications:
+  morning: "Bugün: küresel ısınma, sera gazı, kirlilik, ormansızlaşma ve kıtlık 🌡️"
+  evening: "Greenhouse \"yeşil ev\" mi demek? 🤔"
+  review: "Lack mi, luck mı? \"Yağmur eksikliği\" hangisi? ☔"

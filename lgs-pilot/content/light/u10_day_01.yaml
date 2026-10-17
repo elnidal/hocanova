@@ -1,0 +1,181 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 10
+day: 1
+status: draft
+title: "Doğal afetler: tanışma"
+est_minutes: 7
+new_items: [U10-001, U10-002, U10-003, U10-004, U10-005]
+steps:
+  - item: U10-001
+    card:
+      example_en: "Earthquakes and floods are natural disasters."
+      example_tr: "Depremler ve seller doğal afetlerdir."
+      note_tr: "natural disaster = doğal afet; natural phenomenon (çoğulu: phenomena) = doğa olayı. \"natural forces\" doğal güçlerdir (afet değil)."
+    kullan:
+      id: u10d01-001-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>An earthquake, a flood and a volcanic eruption are all natural ________.</en>"
+      options: ["disasters", "chores", "souvenirs", "relatives"]
+      answer: 0
+      explain: "Deprem, sel ve yanardağ patlaması doğal afetlerdir (natural disasters)."
+    sina:
+      id: u10d01-001-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is NOT a natural disaster?</en>"
+      options: ["A traffic jam", "An earthquake", "A flood", "A volcanic eruption"]
+      answer: 0
+      explain: "Trafik sıkışıklığı doğal afet değildir."
+    tekrar:
+      id: u10d01-001-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Rainbows are natural phenomena.", "Rainbows are natural phenomenon.", "A rainbow is natural phenomena.", "A rainbow are natural phenomenon."]
+      answer: 0
+      explain: "phenomenon tekil, phenomena çoğuldur: Rainbows are natural phenomena."
+  - item: U10-002
+    card:
+      example_en: "A strong earthquake hit the city. There were small aftershocks."
+      example_tr: "Güçlü bir deprem şehri vurdu. Küçük artçı sarsıntılar oldu."
+      note_tr: "earthquake = deprem; aftershock = artçı sarsıntı; quake kısa biçimdir."
+    kullan:
+      id: u10d01-002-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The ground shook for ten seconds. It was a strong ________.</en>"
+      options: ["earthquake", "flood", "drought", "tornado"]
+      answer: 0
+      explain: "Yerin sallanması depremdir (earthquake)."
+    sina:
+      id: u10d01-002-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What happened after the earthquake in the morning?</en>"
+      stem: "<en>An earthquake happened at 3 a.m. Most people were asleep. The ground shook for about thirty seconds, and a few small aftershocks followed in the morning.</en>"
+      options: ["Small aftershocks followed.", "A big flood came.", "A storm started.", "A fire started."]
+      answer: 0
+      explain: "Sabah küçük artçı sarsıntılar (aftershocks) oldu."
+    tekrar:
+      id: u10d01-002-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is an aftershock?</en>"
+      options: ["A smaller shake after the main earthquake", "A big wave in the sea", "A kind of storm", "A loud noise from a volcano"]
+      answer: 0
+      explain: "Artçı sarsıntı, ana depremden sonra gelen daha küçük sarsıntıdır."
+  - item: U10-003
+    card:
+      example_en: "A volcanic eruption sends ash into the sky. A tsunami is a giant sea wave."
+      example_tr: "Yanardağ patlaması gökyüzüne kül fırlatır. Tsunami dev bir deniz dalgasıdır."
+      note_tr: "tsunami okunuşu /suːˈnɑːmi/: baştaki t okunmaz. erupt = püskürmek; volcanic eruption = yanardağ patlaması."
+    kullan:
+      id: u10d01-003-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The volcano ________ and sent ash high into the sky.</en>"
+      options: ["erupted", "collapsed", "flooded", "escaped"]
+      answer: 0
+      explain: "Yanardağ püskürür: erupt."
+    sina:
+      id: u10d01-003-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is a tsunami?</en>"
+      options: ["A giant sea wave caused by an earthquake or an eruption", "A strong wind over land", "A long period without rain", "A kind of fire"]
+      answer: 0
+      explain: "Tsunami, deprem ya da patlamayla oluşan dev deniz dalgasıdır."
+    tekrar:
+      id: u10d01-003-t
+      type: odd_one_out
+      prompt: "<en>In \"tsunami\", which letter at the beginning is not said?</en>"
+      options: ["t", "s", "u", "n"]
+      answer: 0
+      explain: "tsunami /suːˈnɑːmi/: baştaki t okunmaz."
+  - item: U10-004
+    card:
+      example_en: "Heavy rain caused a flood. A landslide closed the road."
+      example_tr: "Şiddetli yağmur sele yol açtı. Bir heyelan yolu kapattı."
+      note_tr: "flood /flʌd/ okunur; landslide bitişik yazılır; avalanche = çığ (karda)."
+    kullan:
+      id: u10d01-004-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Heavy rain made the river rise, and the water covered the streets. It was a ________.</en>"
+      options: ["flood", "drought", "earthquake", "rainbow"]
+      answer: 0
+      explain: "Suyun sokakları kaplaması seldir (flood)."
+    sina:
+      id: u10d01-004-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: Why is the mountain road closed?\nKaan: ________ Soil and rocks fell onto the road after the rain.</en>"
+      options: ["There was a landslide.", "There was a drought.", "There was a rainbow.", "There was a festival."]
+      answer: 0
+      explain: "Toprak ve kayaların yola düşmesi heyelandır (landslide)."
+    tekrar:
+      id: u10d01-004-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which one happens in snowy mountains?</en>"
+      options: ["An avalanche", "A drought", "A heat wave", "A tsunami"]
+      answer: 0
+      explain: "Karlı dağlarda çığ (avalanche) düşer."
+  - item: U10-005
+    card:
+      example_en: "A hurricane forms over the ocean. A tornado forms over land."
+      example_tr: "Kasırga okyanus üzerinde oluşur. Hortum karada oluşur."
+      note_tr: "hurricane = okyanusta oluşan büyük kasırga; tornado = karada oluşan hortum; storm = genel olarak fırtına."
+    kullan:
+      id: u10d01-005-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A ________ is a fast, spinning column of air that moves over land.</en>"
+      options: ["tornado", "tsunami", "avalanche", "rainbow"]
+      answer: 0
+      explain: "Karada dönen hava sütunu: tornado (hortum)."
+    sina:
+      id: u10d01-005-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>Where do hurricanes start?</en>"
+      stem: "<en>Hurricanes start over warm oceans. When they come to land, they bring strong winds and heavy rain.</en>"
+      options: ["Over warm oceans", "Over high mountains", "In deserts", "Under the ground"]
+      answer: 0
+      explain: "Metne göre kasırgalar sıcak okyanuslar üzerinde başlar."
+    tekrar:
+      id: u10d01-005-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word is NOT a type of storm?</en>"
+      options: ["drought", "hurricane", "tornado", "thunderstorm"]
+      answer: 0
+      explain: "drought kuraklıktır; diğerleri fırtına türleridir."
+tips:
+  - type: tuzak
+    refs: [U10-005]
+    text: "tornado = hortum (karada), hurricane = kasırga (okyanusta), storm = fırtına. Kaynak listelerde ikisi de \"kasırga\" yazılıyor."
+  - type: tuzak
+    refs: [U10-001]
+    text: "phenomenon tekil, phenomena çoğuldur. Türkçedeki \"fenomen\" (ünlü kişi) anlamı değil: doğa olayı. \"natural forces\" = doğal güçler, doğal afet = natural disaster."
+coach:
+  start: "Yeni ünite: Natural Forces! Doğanın güçlü yanını tanıyoruz; amaç hazırlıklı olmak 🌍"
+  end_good: "Harika! Doğal afetlerin adlarını öğrendin 🌍 Yarın daha fazla olay ve etkileri."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🌍"
+notifications:
+  morning: "Yeni ünite! Bugün: afet, deprem, tsunami, sel, hortum ve kasırga 🌍"
+  evening: "Tornado mu, hurricane mi? Hangisi okyanusta oluşur? 🤔"
+  review: "\"Flood\" kelimesi nasıl okunur? \"Fluud\" mu, \"flad\" mı? 🌊"

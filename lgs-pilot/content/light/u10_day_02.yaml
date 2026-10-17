@@ -1,0 +1,182 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 10
+day: 2
+status: draft
+title: "Yıldırım, kuraklık ve yıkım"
+est_minutes: 7
+new_items: [U10-006, U10-007, U10-008, U10-009, U10-010]
+steps:
+  - item: U10-006
+    card:
+      example_en: "Lightning struck the tree during the thunderstorm."
+      example_tr: "Gök gürültülü fırtına sırasında yıldırım ağaca çarptı."
+      note_tr: "lightning (yıldırım) ≠ lighting (aydınlatma); thunder = gök gürültüsü."
+    kullan:
+      id: u10d02-006-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We saw a bright flash of ________ and then heard loud thunder.</en>"
+      options: ["lightning", "lighting", "lighten", "lightly"]
+      answer: 0
+      explain: "Gökte çakan ışık yıldırımdır: lightning."
+    sina:
+      id: u10d02-006-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word is about the electric lights in a room?</en>"
+      options: ["lighting", "lightning", "thunder", "storm"]
+      answer: 0
+      explain: "Odadaki aydınlatma: lighting. lightning yıldırımdır."
+    tekrar:
+      id: u10d02-006-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>During a ________, you shouldn't stand under a tall tree.</en>"
+      options: ["thunderstorm", "drought", "rainbow", "landslide"]
+      answer: 0
+      explain: "Yıldırım düşebilecek gök gürültülü fırtınada ağacın altında durulmaz."
+  - item: U10-007
+    card:
+      example_en: "There was a long drought, and a forest fire started."
+      example_tr: "Uzun bir kuraklık yaşandı ve bir orman yangını başladı."
+      note_tr: "drought /draʊt/ (gh okunmaz); wildfire = orman/doğa yangını. Hafıza: drought, \"dry\" gibi kuru demek; flood tam tersi."
+    kullan:
+      id: u10d02-007-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>It didn't rain for months. The rivers dried up. It was a long ________.</en>"
+      options: ["drought", "flood", "tsunami", "avalanche"]
+      answer: 0
+      explain: "Aylarca yağmur yağmaması kuraklıktır (drought)."
+    sina:
+      id: u10d02-007-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>This summer was very hot and dry. There was no rain for two months, and a forest fire started near the village.</en>"
+      options: ["It didn't rain for two months.", "It rained every day.", "The village was under water.", "It snowed in July."]
+      answer: 0
+      explain: "Metne göre iki ay boyunca yağmur yağmadı."
+    tekrar:
+      id: u10d02-007-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word is the opposite of \"drought\"?</en>"
+      options: ["flood", "fire", "earthquake", "wind"]
+      answer: 0
+      explain: "drought (çok az su) ↔ flood (çok fazla su)."
+  - item: U10-008
+    card:
+      example_en: "An earthquake struck the region. The storm hit the coast."
+      example_tr: "Bir deprem bölgeyi vurdu. Fırtına kıyıyı vurdu."
+      note_tr: "hit–hit–hit, strike–struck–struck, shake–shook–shaken. strike ayrıca \"grev\" demektir."
+    kullan:
+      id: u10d02-008-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A strong storm ________ the coast last night.</en>"
+      options: ["struck", "striked", "strikes", "striking"]
+      answer: 0
+      explain: "Geçmiş zaman: strike – struck."
+    sina:
+      id: u10d02-008-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>What is the past form of \"shake\"?</en>"
+      options: ["shook", "shaked", "shaken", "shakes"]
+      answer: 0
+      explain: "shake – shook – shaken."
+    tekrar:
+      id: u10d02-008-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["The earthquake shook the buildings.", "The earthquake shaked the buildings.", "The earthquake shaken the buildings.", "The earthquake shakes the buildings yesterday."]
+      answer: 0
+      explain: "Geçmişte sallamak: shook."
+  - item: U10-009
+    card:
+      example_en: "The fire destroyed many houses. The flood wiped out the crops."
+      example_tr: "Yangın birçok evi yok etti. Sel ekinleri silip süpürdü."
+      note_tr: "damage = hasar vermek (onarılabilir, Ünite 8); destroy = tamamen yok etmek; wipe out = silip süpürmek."
+    kullan:
+      id: u10d02-009-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The earthquake was so strong that it ________ the old bridge completely.</en>"
+      options: ["destroyed", "dusted", "folded", "borrowed"]
+      answer: 0
+      explain: "Köprüyü tamamen yok etmek: destroy."
+    sina:
+      id: u10d02-009-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence means the building cannot be used any more?</en>"
+      options: ["The earthquake destroyed the building.", "The earthquake damaged the building a little.", "The earthquake shook the building.", "The earthquake missed the building."]
+      answer: 0
+      explain: "destroy = tamamen yok etmek; damage hasar vermektir."
+    tekrar:
+      id: u10d02-009-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which expression is closest in meaning to \"wipe out\"?</en>"
+      options: ["destroy completely", "build again", "clean slowly", "paint"]
+      answer: 0
+      explain: "wipe out ≈ destroy completely."
+  - item: U10-010
+    card:
+      example_en: "The old building collapsed during the earthquake."
+      example_tr: "Eski bina deprem sırasında çöktü."
+      note_tr: "collapse nesne almaz: The building collapsed (çöktü). Yıkmak = destroy / knock down."
+    kullan:
+      id: u10d02-010-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The roof was very old, and the heavy snow made it ________.</en>"
+      options: ["collapse", "to collapse", "collapsing", "collapses"]
+      answer: 0
+      explain: "make + nesne + yalın fiil: made it collapse."
+    sina:
+      id: u10d02-010-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["The bridge collapsed after the flood.", "The flood collapsed the bridge.", "The bridge was collapsing the flood.", "The bridge collapsed by the flood."]
+      answer: 0
+      explain: "collapse nesne almaz; kendiliğinden çöker: The bridge collapsed."
+    tekrar:
+      id: u10d02-010-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does \"The wall collapsed\" mean?</en>"
+      options: ["The wall fell down", "Someone painted the wall", "Someone built the wall", "The wall became hot"]
+      answer: 0
+      explain: "collapse = çökmek, yıkılmak."
+tips:
+  - type: tuzak
+    refs: [U10-006]
+    text: "lightning (yıldırım) ile lighting (aydınlatma) neredeyse aynı yazılır. Lightning struck the tree = Yıldırım ağaca düştü."
+  - type: tuzak
+    refs: [U10-010, U10-009]
+    text: "collapse nesne almaz: \"The building collapsed\" (çöktü). Yıkmak için destroy kullanılır. destroy tamamen yok etmek, damage ise hasar vermektir."
+coach:
+  start: "Gün 2: yıldırım, kuraklık ve yıkım. Güvenli kalmak için kelimeleri bilmek şart ⚡"
+  end_good: "Süper! Afet haberlerinin dilini çözüyorsun ⚡ Yarın yaralanma, tehdit ve yer bilimi."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. ⚡"
+notifications:
+  morning: "Bugün: yıldırım, kuraklık, vurmak, yok etmek ve çökmek ⚡"
+  evening: "Lightning mi, lighting mi? Hangisi yıldırım? 🤔"
+  review: "\"Collapse\" nesne alır mı? Hayır! Neden? 🏚️"

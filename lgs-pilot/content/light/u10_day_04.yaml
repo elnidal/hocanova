@@ -1,0 +1,182 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 10
+day: 4
+status: draft
+title: "Afete hazırlık: önlem ve talimat"
+est_minutes: 7
+new_items: [U10-016, U10-017, U10-018, U10-019, U10-020]
+steps:
+  - item: U10-016
+    card:
+      example_en: "Keep an emergency kit at home: water, a torch and some food."
+      example_tr: "Evde bir acil durum çantası bulundur: su, fener ve biraz yiyecek."
+      note_tr: "emergency = acil durum; emergency exit = acil çıkış; AFAD = Afet ve Acil Durum Yönetimi Başkanlığı."
+    kullan:
+      id: u10d04-016-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>In an ________, call 112 and stay calm.</en>"
+      options: ["emergency", "exercise", "allowance", "assignment"]
+      answer: 0
+      explain: "\"In an emergency\" = acil durumda."
+    sina:
+      id: u10d04-016-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Teacher: What should we keep in an emergency kit?\nElif: ________</en>"
+      options: ["Water, a torch and some food.", "A football and a guitar.", "A pizza and a TV.", "Toys and sweets only."]
+      answer: 0
+      explain: "Acil durum çantasında su, fener ve yiyecek bulunur."
+    tekrar:
+      id: u10d04-016-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Look for the ________ exit if there is a fire.</en>"
+      options: ["emergency", "expensive", "enormous", "encouraging"]
+      answer: 0
+      explain: "Yangında acil çıkış (emergency exit) aranır."
+  - item: U10-017
+    card:
+      example_en: "We must take precautions before a storm."
+      example_tr: "Fırtınadan önce önlem almalıyız."
+      note_tr: "take precautions / take measures = önlem almak. measure ayrıca \"ölçmek, ölçü\" demektir."
+    kullan:
+      id: u10d04-017-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Before the storm, the town took several ________ to protect the houses.</en>"
+      options: ["precautions", "chores", "relatives", "souvenirs"]
+      answer: 0
+      explain: "Evleri korumak için alınan şey önlemdir (precautions)."
+    sina:
+      id: u10d04-017-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["The government took the necessary measures.", "The government made the necessary measures.", "The government did the necessary measures.", "The government gave the necessary measures."]
+      answer: 0
+      explain: "Kalıp: take measures."
+    tekrar:
+      id: u10d04-017-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is a precaution?</en>"
+      options: ["Keeping a torch and water at home", "Watching the storm from the window", "Ignoring the warning", "Going out in a storm"]
+      answer: 0
+      explain: "Önceden tedbir almak: evde fener ve su bulundurmak."
+  - item: U10-018
+    card:
+      example_en: "Trees can prevent landslides."
+      example_tr: "Ağaçlar heyelanları önleyebilir."
+      note_tr: "prevent = önlemek, engellemek (prevent + isim); protect = korumak. İkisi de pro-/pre- ile başlar."
+    kullan:
+      id: u10d04-018-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Planting trees can ________ landslides.</en>"
+      options: ["prevent", "protect", "prefer", "produce"]
+      answer: 0
+      explain: "Heyelanı engellemek: prevent."
+    sina:
+      id: u10d04-018-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Dams prevent floods.", "Dams prevent from floods.", "Dams protect floods.", "Dams are prevent floods."]
+      answer: 0
+      explain: "prevent doğrudan nesne alır: Dams prevent floods."
+    tekrar:
+      id: u10d04-018-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is the difference between \"protect\" and \"prevent\"?</en>"
+      options: ["protect = keep safe; prevent = stop something from happening", "protect = stop something from happening; prevent = keep safe", "They are exactly the same", "Both mean \"to cook\""]
+      answer: 0
+      explain: "protect korumak, prevent önlemek demektir."
+  - item: U10-019
+    card:
+      example_en: "Drop, cover and hold on! Stay away from windows! Don't use the lift!"
+      example_tr: "Çök, kapan, tutun! Pencerelerden uzak dur! Asansörü kullanma!"
+      note_tr: "güvenlik talimatları emir kipiyle verilir: yalın fiil ya da Don't + fiil. AFAD'ın deprem talimatı: Çök – Kapan – Tutun."
+    kullan:
+      id: u10d04-019-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>In an earthquake drill, the teacher says, \"________! Don't run outside!\"</en>"
+      options: ["Stay calm", "Be late", "Open the windows", "Use the lift"]
+      answer: 0
+      explain: "Tatbikatta sakin kalınır: Stay calm."
+    sina:
+      id: u10d04-019-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is a good safety instruction during an earthquake?</en>"
+      options: ["Stay away from windows.", "Stand next to the window.", "Use the lift.", "Run through the corridor."]
+      answer: 0
+      explain: "Deprem anında camlardan uzak durulur."
+    tekrar:
+      id: u10d04-019-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is a negative instruction?</en>"
+      options: ["Don't use the lift!", "Stay calm!", "Drop, cover and hold on!", "Stay away from windows!"]
+      answer: 0
+      explain: "Olumsuz emir Don't + fiil ile kurulur."
+  - item: U10-020
+    card:
+      example_en: "Breaking news: a storm is coming to the coast."
+      example_tr: "Son dakika: kıyıya bir fırtına geliyor."
+      note_tr: "news sayılamaz ve tekildir: The news is …, a piece of news (a news yanlış)."
+    kullan:
+      id: u10d04-020-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The ________ about the storm is very important. Listen carefully.</en>"
+      options: ["news", "newses", "a news", "new"]
+      answer: 0
+      explain: "news sayılamaz: The news is important."
+    sina:
+      id: u10d04-020-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["The news is on TV now.", "The news are on TV now.", "A news is on TV now.", "The newses are on TV now."]
+      answer: 0
+      explain: "news tekil fiil alır: The news is."
+    tekrar:
+      id: u10d04-020-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is \"breaking news\"?</en>"
+      options: ["Very new and important news that has just arrived", "A very old story", "A story about a broken bone", "News about breakfast"]
+      answer: 0
+      explain: "breaking news = son dakika haberi."
+tips:
+  - type: tuzak
+    refs: [U10-018, U10-038]
+    text: "protect = korumak (protect animals); prevent = önlemek (prevent fires). İkisi de pro-/pre- ile başlar, karışır."
+  - type: ilginc_bilgi
+    refs: [U10-019, U10-016]
+    text: "AFAD'ın deprem anı talimatı \"Çök – Kapan – Tutun\"dur; İngilizcesi: Drop, cover and hold on."
+coach:
+  start: "Gün 4: afete hazırlık. Önlem almak, talimatları bilmek güçlendirir 🧰"
+  end_good: "Harika! Talimatların dilini biliyorsun 🧰 Yarın kurtarma ve ilk yardım."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🧰"
+notifications:
+  morning: "Bugün: acil durum, önlem, önlemek, talimat ve son dakika haberi 🧰"
+  evening: "\"The news is\" mi, \"the news are\" mı? 🤔"
+  review: "Protect mi, prevent mı? Yangını önlemek hangisi? 🔥"
