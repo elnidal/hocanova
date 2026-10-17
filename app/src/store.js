@@ -1,5 +1,5 @@
 import { useEffect, useReducer } from 'react'
-import { createProgress, setLevel, recordAnswer } from './engine'
+import { createProgress, setLevel, recordAnswer, applyUnitCheck } from './engine'
 
 const KEY = 'hikayenglish.lgs.app.v1'
 
@@ -18,6 +18,12 @@ function reducer(s, a) {
     case 'answer': return { ...s, progress: recordAnswer(s.progress, a.payload) }
     case 'dayDone': return { ...s, doneDays: { ...s.doneDays, [a.key]: { first: a.first, total: a.total, at: a.now } } }
     case 'reviewDone': return { ...s, reviews: [...(s.reviews || []), { first: a.first, total: a.total, at: a.now }].slice(-200) }
+    case 'unitCheck': {
+      const { unit, ...p } = a.payload
+      const known = Object.values(p.verified).filter(Boolean).length
+      return { ...s, progress: applyUnitCheck(s.progress, p), unitChecks: { ...(s.unitChecks || {}), [unit]: { fakes: p.fakes, claimed: p.claimed.length, verified: known, at: p.now } } }
+    }
+    case 'skipUnitCheck': return { ...s, unitChecks: { ...(s.unitChecks || {}), [a.unit]: { skipped: true, at: a.now } } }
     case 'unit': return { ...s, unit: a.unit }
     case 'reset': return initial()
     default: return s

@@ -1,9 +1,10 @@
 import { counts, dueCount } from '../engine'
 import Coach from '../components/Coach.jsx'
+import Logo from '../components/Logo.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -12,6 +13,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const doneN = unit.days.filter(d => state.doneDays[doneKey(d)]).length
   const nextDay = unit.days.find(d => !state.doneDays[doneKey(d)])
   const due = dueCount(progress, now)
+  // Giriş kontrolü: veri yalnız bazı ünitelerde var; ünite başlamadan ve bir kez sunulur.
+  const checkAvail = placement && index.unit_check.unit === unit.unit && !state.unitChecks?.[unit.unit] && doneN === 0
   const coachText = placement
     ? index.coach.placement_result[placement.level].replace(' {name}', '')
     : 'Selam! Ben Hoca Nova, koçunum. Önce 4 dakikalık kısa bir testle seni tanıyayım; sonra Ece\'nin partisine gidiyoruz 🎈'
@@ -20,7 +23,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   return (
     <div className="wrap">
       <div className="spread">
-        <div><div className="eyebrow">Hikayenglish · LGS</div><h1>Kelime Koçu</h1></div>
+        <div><div className="eyebrow"><Logo /> · LGS</div><h1>Kelime Koçu</h1></div>
         {placement && <span className="chip">Seviye: {LEVEL[placement.level]}</span>}
       </div>
 
@@ -32,6 +35,16 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <h2>Başlangıç testi</h2>
           <p className="muted">18 soru · 4 dk · seviyeni belirler</p>
           <button className="btn" onClick={onPlacement}>Teste başla →</button>
+        </section>
+      ) : checkAvail ? (
+        <section className="card today">
+          <div className="eyebrow">Önce bir bakalım</div>
+          <h2>Ünite {unit.unit} giriş kontrolü</h2>
+          <p className="muted">2 dk · bildiğin ifadeleri işaretle, bilmediklerini dersler öğretsin</p>
+          <div className="row">
+            <button className="btn" onClick={onUnitCheck}>Kontrole başla →</button>
+            <button className="btn ghost" onClick={() => dispatch({ type: 'skipUnitCheck', unit: unit.unit, now: Date.now() })}>Şimdilik atla</button>
+          </div>
         </section>
       ) : nextDay ? (
         <section className="card today">
