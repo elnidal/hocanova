@@ -9,7 +9,7 @@ import Review from './screens/Review.jsx'
 import UnitCheck from './screens/UnitCheck.jsx'
 
 export default function App() {
-  const [state, dispatch] = useStore()
+  const [state, dispatch, account] = useStore()
   const [index, setIndex] = useState(null)
   const [unit, setUnit] = useState(null)
   const [screen, setScreen] = useState('home')
@@ -50,5 +50,5 @@ export default function App() {
       onFinish={result => dispatch({ type: 'placement', result, now: Date.now() })}
       onExit={() => setScreen('home')} />
   )
-  return <Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} />
+  return <Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} account={account} />
 }

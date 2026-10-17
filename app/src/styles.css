@@ -70,3 +70,4 @@ button.tk{cursor:pointer}
 .seg button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .logo{text-transform:none;letter-spacing:0;font-family:var(--f-d);font-weight:800}
 .logo b{color:var(--hot)}
+.field{border:2px solid var(--line);background:var(--paper);color:var(--ink);border-radius:12px;padding:10px 12px;font:inherit;width:100%}

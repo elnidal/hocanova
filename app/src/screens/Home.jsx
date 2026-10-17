@@ -1,10 +1,11 @@
 import { counts, dueCount } from '../engine'
 import Coach from '../components/Coach.jsx'
 import Logo from '../components/Logo.jsx'
+import AccountCard from '../components/AccountCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -88,6 +89,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <div className="stat"><b>{due}</b><span>bekleyen tekrar</span></div>
         </div>
       </section>
+
+      <AccountCard account={account} />
 
       <button className="linkbtn" onClick={() => { if (confirm('Tüm ilerleme bu cihazdan silinsin mi?')) dispatch({ type: 'reset' }) }}>Verileri sıfırla</button>
     </div>
