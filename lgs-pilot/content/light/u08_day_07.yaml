@@ -1,0 +1,187 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 8
+day: 7
+status: draft
+title: "Ödünç, günlük, mobilya ve sorumluluk"
+est_minutes: 7
+new_items: [U8-031, U8-032, U8-033, U8-034, U8-035]
+steps:
+  - item: U8-031
+    card:
+      example_en: "Can I borrow your pen? – Sure. I can lend you my pen."
+      example_tr: "Kalemini ödünç alabilir miyim? – Tabii. Sana kalemimi ödünç verebilirim."
+      note_tr: "borrow = ödünç ALMAK (from), lend = ödünç VERMEK (to)."
+    kullan:
+      id: u8d07-031-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Selin forgot her calculator. She wants to ________ Ece's calculator.</en>"
+      options: ["borrow", "lend", "borrowing", "borrows"]
+      answer: 0
+      explain: "Ödünç almak: borrow. lend vermektir; diğer biçimler cümleye uymaz."
+    sina:
+      id: u8d07-031-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Duru: I left my pen at home.\nBora: ________</en>"
+      options: ["I can lend you mine.", "I can borrow you mine.", "I can lend from you mine.", "I can borrow to you mine."]
+      answer: 0
+      explain: "Kalemi veren kişi lend kullanır: lend you mine."
+    tekrar:
+      id: u8d07-031-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Can you lend me your bike?", "Can you borrow me your bike?", "Can you lend from me your bike?", "Can you borrow to me your bike?"]
+      answer: 0
+      explain: "Bisikleti verecek kişiden istenir: lend me."
+  - item: U8-032
+    card:
+      example_en: "Elif keeps a diary and writes in it every night."
+      example_tr: "Elif günlük tutar ve her gece içine yazar."
+      note_tr: "diary (günlük defter) ≠ dairy (süt ürünleri); daily = her gün, günlük (sıfat)."
+    kullan:
+      id: u8d07-032-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Every night, Elif writes about her day in her ________.</en>"
+      options: ["diary", "dairy", "daily", "dairies"]
+      answer: 0
+      explain: "Gününü yazdığı defter: diary."
+    sina:
+      id: u8d07-032-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word means \"a book where you write about your day\"?</en>"
+      options: ["diary", "dairy", "daily", "dairs"]
+      answer: 0
+      explain: "diary = günlük defteri. dairy süt ürünleridir."
+    tekrar:
+      id: u8d07-032-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["I keep a diary and write in it every night.", "I keep a dairy and write in it every night.", "I keep a daily and write in it every night.", "I keep a dairies and write in it every night."]
+      answer: 0
+      explain: "Kalıp: keep a diary."
+  - item: U8-033
+    card:
+      example_en: "We bought new furniture for the living room: a sofa and a table."
+      example_tr: "Oturma odası için yeni mobilya aldık: bir kanepe ve bir masa."
+      note_tr: "furniture sayılamaz: \"furnitures\" yanlış. Tek parça için: a piece of furniture."
+    kullan:
+      id: u8d07-033-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>There isn't much ________ in my room: just a bed and a desk.</en>"
+      options: ["furniture", "furnitures", "a furniture", "furnitured"]
+      answer: 0
+      explain: "furniture sayılamaz; \"much furniture\"."
+    sina:
+      id: u8d07-033-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["We need some new furniture.", "We need some new furnitures.", "We need a new furnitures.", "We need many furniture."]
+      answer: 0
+      explain: "Sayılamaz isim: some new furniture."
+    tekrar:
+      id: u8d07-033-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is NOT a piece of furniture?</en>"
+      options: ["a spoon", "a sofa", "a wardrobe", "a desk"]
+      answer: 0
+      explain: "Kaşık mutfak eşyasıdır; kanepe, gardırop ve masa mobilyadır."
+  - item: U8-034
+    card:
+      example_en: "I'm responsible for taking out the garbage. Ece is in charge of the plants."
+      example_tr: "Çöpü çıkarmaktan ben sorumluyum. Bitkilerden Ece sorumlu."
+      note_tr: "be responsible for / be in charge of: sonrasında isim ya da fiil+ing gelir (responsible for taking; to take değil)."
+    kullan:
+      id: u8d07-034-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Bora is responsible ________ feeding the fish.</en>"
+      options: ["for", "to", "with", "at"]
+      answer: 0
+      explain: "\"be responsible for + V-ing\" kalıbı."
+    sina:
+      id: u8d07-034-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who is responsible for washing the dishes?</en>"
+      stem: "<en>Chore chart\nMum: cooking\nDad: shopping\nSelin: washing the dishes\nKaan: taking out the garbage</en>"
+      options: ["Selin", "Kaan", "Dad", "Mum"]
+      answer: 0
+      explain: "Çizelgeye göre bulaşıktan Selin sorumlu."
+    tekrar:
+      id: u8d07-034-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Elif is in charge ________ watering the plants.</en>"
+      options: ["of", "for", "to", "with"]
+      answer: 0
+      explain: "Kalıp: be in charge of."
+  - item: U8-035
+    card:
+      example_en: "I have to tidy my room every day. You must finish your homework."
+      example_tr: "Odamı her gün toplamak zorundayım. Ödevini bitirmelisin."
+      note_tr: "have to = dışarıdan gelen zorunluluk / kural; must = konuşanın kendi gerekli gördüğü. Soru: Do you have to …?"
+    kullan:
+      id: u8d07-035-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My mum says I ________ clean my room every Saturday.</en>"
+      options: ["have to", "has to", "must to", "having to"]
+      answer: 0
+      explain: "I + have to + fiil."
+    sina:
+      id: u8d07-035-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Kaan: Can you come to the cinema?\nSelin: I'm sorry, I can't. ________</en>"
+      options: ["I have to look after my little brother.", "I has to look after my little brother.", "I must to look after my little brother.", "I having to look after my little brother."]
+      answer: 0
+      explain: "I ile have to kullanılır; must'tan sonra to gelmez."
+    tekrar:
+      id: u8d07-035-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["She has to do the washing up.", "She have to do the washing up.", "She has to does the washing up.", "She must to do the washing up."]
+      answer: 0
+      explain: "She + has to + fiilin yalın hâli."
+tips:
+  - type: tuzak
+    refs: [U8-031]
+    text: "borrow = ödünç AL (from), lend = ödünç VER (to). \"Can I borrow your pen?\" / \"Can you lend me your pen?\""
+  - type: tuzak
+    refs: [U8-032]
+    text: "diary = günlük (defter), dairy = süt ürünleri, daily = her gün. Üçü birbirine çok benzer."
+  - type: mini_dilbilgisi
+    refs: [U8-034]
+    text: "be responsible for / be in charge of sonrası fiil -ing alır: \"responsible for feeding the cat\"."
+coach:
+  start: "Gün 7: ödünç, günlük, mobilya ve sorumluluk. Ev kuralları başlıyor 📒"
+  end_good: "Süper! Sorumluluk kalıplarını öğrendin 📒 Yarın zorunluluk ve iş birliği."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 📒"
+notifications:
+  morning: "Bugün: ödünç alma, günlük, mobilya ve sorumluluk 📒"
+  evening: "Borrow mu, lend mi? Kalemi veren hangisini söyler? 🤔"
+  review: "\"Furnitures\" doğru mu? Neden? 🛋️"

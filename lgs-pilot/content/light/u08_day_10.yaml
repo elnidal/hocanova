@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 8
+day: 10
+status: draft
+title: "Zarar, etki, uyarı ve yer değiştirme"
+est_minutes: 7
+new_items: [U8-046, U8-047, U8-048, U8-049, U8-050]
+steps:
+  - item: U8-046
+    card:
+      example_en: "The storm damaged the roof. The damage was serious."
+      example_tr: "Fırtına çatıya zarar verdi. Hasar ciddiydi."
+      note_tr: "damage hem fiil (zarar vermek) hem isim (hasar); isim olarak sayılamaz: a lot of damage."
+    kullan:
+      id: u8d10-046-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Be careful with the vase! You may ________ it.</en>"
+      options: ["damage", "dust", "water", "fold"]
+      answer: 0
+      explain: "Vazoya zarar verebilirsin: damage."
+    sina:
+      id: u8d10-046-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["The storm caused a lot of damage.", "The storm caused a lot of damages.", "The storm caused a lot of damaged.", "The storm caused many damage."]
+      answer: 0
+      explain: "Hasar anlamında damage sayılamaz: a lot of damage."
+    tekrar:
+      id: u8d10-046-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which of these can damage a phone?</en>"
+      options: ["Water", "A soft cloth", "A clean case", "A charger"]
+      answer: 0
+      explain: "Su telefona zarar verebilir."
+  - item: U8-047
+    card:
+      example_en: "Doing the chores together affects the family in a good way."
+      example_tr: "Ev işlerini birlikte yapmak aileyi olumlu etkiler."
+      note_tr: "affect = fiil (etkilemek); effect = isim (etki): It has a good effect."
+    kullan:
+      id: u8d10-047-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The weather can ________ our mood. Rainy days make me sad.</en>"
+      options: ["affect", "effect", "effects", "effected"]
+      answer: 0
+      explain: "can + fiil: affect (etkilemek)."
+    sina:
+      id: u8d10-047-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Too much sugar has a bad ________ on your teeth.</en>"
+      options: ["effect", "affect", "effected", "affecting"]
+      answer: 0
+      explain: "\"a bad ...\" isim ister: effect (etki)."
+    tekrar:
+      id: u8d10-047-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Noise can ________ your sleep.</en>"
+      options: ["affect", "effect", "effects", "effected"]
+      answer: 0
+      explain: "can + fiil: affect."
+  - item: U8-048
+    card:
+      example_en: "Mum warned me not to touch the hot iron."
+      example_tr: "Annem bana sıcak ütüye dokunmamamı söyleyerek uyardı."
+      note_tr: "warn + kişi + (not) to + fiil: warned me not to touch."
+    kullan:
+      id: u8d10-048-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The sign ________ visitors not to touch the paintings.</en>"
+      options: ["warns", "warm", "wears", "waits"]
+      answer: 0
+      explain: "Levha ziyaretçileri uyarır: warns."
+    sina:
+      id: u8d10-048-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Dad: Be careful! The floor is wet.\nElif: Thanks for ________ me.</en>"
+      options: ["warning", "warm", "wearing", "waiting"]
+      answer: 0
+      explain: "Islak zemin konusunda uyardığı için teşekkür ediyor: warning me."
+    tekrar:
+      id: u8d10-048-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Mum warned me not to run.", "Mum warned me to not running.", "Mum warned me don't run.", "Mum warned that me not run."]
+      answer: 0
+      explain: "Kalıp: warn + kişi + not to + fiil."
+  - item: U8-049
+    card:
+      example_en: "Instead of watching TV, I tidied my room."
+      example_tr: "TV izlemek yerine odamı topladım."
+      note_tr: "instead of + isim / fiil+ing."
+    kullan:
+      id: u8d10-049-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I drank water ________ cola today.</en>"
+      options: ["instead of", "instead", "because of", "in front of"]
+      answer: 0
+      explain: "\"cola yerine su\": instead of + isim."
+    sina:
+      id: u8d10-049-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Mum: Do you want some juice?\nDuru: No, thanks. I'd like water ________ juice.</en>"
+      options: ["instead of", "instead", "because", "except"]
+      answer: 0
+      explain: "\"meyve suyu yerine su\": instead of + isim."
+    tekrar:
+      id: u8d10-049-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["He helped his mum instead of playing games.", "He helped his mum instead playing games.", "He helped his mum instead to playing games.", "He helped his mum instead of to play games."]
+      answer: 0
+      explain: "instead of + fiil+ing."
+  - item: U8-050
+    card:
+      example_en: "Call the doctor immediately!"
+      example_tr: "Doktoru hemen ara!"
+      note_tr: "immediately = hemen, derhal; \"aniden\" suddenly'dir (kaynak listesinde yanlış verilmiş)."
+    kullan:
+      id: u8d10-050-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The fire alarm rang, and everyone left the building ________.</en>"
+      options: ["immediately", "slowly", "lazily", "carelessly"]
+      answer: 0
+      explain: "Alarm çalınca hemen çıkılır: immediately."
+    sina:
+      id: u8d10-050-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>What should students do when they hear the alarm?</en>"
+      stem: "<en>Teacher: If you hear the alarm, leave the building immediately and go to the garden.</en>"
+      options: ["Leave at once", "Wait for ten minutes", "Finish their homework", "Go to the library"]
+      answer: 0
+      explain: "immediately = at once: hemen çıkmalılar."
+    tekrar:
+      id: u8d10-050-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"immediately\"?</en>"
+      options: ["at once", "later", "never", "sometimes"]
+      answer: 0
+      explain: "immediately ≈ at once."
+tips:
+  - type: tuzak
+    refs: [U8-047]
+    text: "affect fiildir (etkilemek), effect isimdir (etki). \"Chores affect our lives. / It has a good effect.\""
+  - type: tuzak
+    refs: [U8-050]
+    text: "immediately = hemen, derhal; \"birden, aniden\" suddenly'dir. Kaynak listelerde bu yanlış verilmiş."
+coach:
+  start: "Son gün! Zarar, etki, uyarı ve \"yerine\" kalıbı. Chores ünitesini kapatıyoruz 🏁"
+  end_good: "Tebrikler, Chores ünitesi bitti! 🏁 Artık zorunluluk ve sorumluluk sorularını rahat çözersin."
+  end_mixed: "Ünite bitti! {weak} biraz karıştı; tekrar kuyruğuna aldım, yakında görüşeceğiz. 🏁"
+notifications:
+  morning: "Son gün: zarar, etki, uyarı, \"instead of\" ve hemen! 🏁"
+  evening: "Affect mi, effect mi? Hangisi fiil? 🤔"
+  review: "\"Immediately\" ile \"suddenly\" aynı şey mi? ⏱️"

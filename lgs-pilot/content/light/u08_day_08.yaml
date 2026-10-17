@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 8
+day: 8
+status: draft
+title: "İstemek, sıra, iş birliği ve yasak"
+est_minutes: 7
+new_items: [U8-036, U8-037, U8-038, U8-039, U8-040]
+steps:
+  - item: U8-036
+    card:
+      example_en: "My mum wants me to tidy my room."
+      example_tr: "Annem odamı toplamamı istiyor."
+      note_tr: "want / ask + kişi + to + fiil: \"wants that I tidy\" denmez."
+    kullan:
+      id: u8d08-036-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Dad wants ________ to take out the rubbish.</en>"
+      options: ["me", "I", "my", "mine"]
+      answer: 0
+      explain: "want + kişi (nesne hâli) + to: wants me to."
+    sina:
+      id: u8d08-036-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Duru: Why are you cleaning your room?\nSelin: ________</en>"
+      options: ["Mum wants me to tidy it.", "Mum wants that I tidy it.", "Mum wants I tidy it.", "Mum wants me tidy it."]
+      answer: 0
+      explain: "want + kişi + to + fiil."
+    tekrar:
+      id: u8d08-036-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["My teacher wants us to be quiet.", "My teacher wants that we be quiet.", "My teacher wants we to be quiet.", "My teacher wants us be quiet."]
+      answer: 0
+      explain: "Kalıp: want + us + to be."
+  - item: U8-037
+    card:
+      example_en: "We take turns washing the dishes. It's my turn today."
+      example_tr: "Sırayla bulaşık yıkarız. Bugün sıra bende."
+      note_tr: "Whose turn is it to …? – It's Selin's turn. Burada turn = sıra."
+    kullan:
+      id: u8d08-037-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>There is only one computer, so the children ________ using it.</en>"
+      options: ["take turns", "make turns", "do turns", "give turns"]
+      answer: 0
+      explain: "Sırayla yapmak: take turns."
+    sina:
+      id: u8d08-037-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Whose turn is it to wash the dishes today?</en>"
+      stem: "<en>Washing-up rota: Monday – Ece, Tuesday – Kaan, Wednesday – Bora. Today is Tuesday.</en>"
+      options: ["Kaan's", "Ece's", "Bora's", "Dad's"]
+      answer: 0
+      explain: "Bugün salı; salı günü sıra Kaan'da."
+    tekrar:
+      id: u8d08-037-t
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: Whose turn is it to wash the dishes?\nElif: ________</en>"
+      options: ["It's my turn.", "It's my dishes.", "It's me turn.", "It's turn me."]
+      answer: 0
+      explain: "Kalıp: It's my turn."
+  - item: U8-038
+    card:
+      example_en: "If we cooperate, we can finish the chores quickly."
+      example_tr: "İş birliği yaparsak ev işlerini çabuk bitirebiliriz."
+      note_tr: "cooperate = work together = iş birliği yapmak; cooperation = iş birliği."
+    kullan:
+      id: u8d08-038-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The whole family ________ to clean the house before the guests arrive.</en>"
+      options: ["cooperates", "competes", "argues", "separates"]
+      answer: 0
+      explain: "Evi birlikte temizlemek: iş birliği yapmak (cooperate)."
+    sina:
+      id: u8d08-038-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>What does Mum want?</en>"
+      stem: "<en>Mum: Today let's work together. Dad will cook, I'll set the table and you will tidy the living room. Then we'll all eat at six.</en>"
+      options: ["The family to cooperate", "The family to go out", "The children to sleep", "Dad to do everything"]
+      answer: 0
+      explain: "Herkese görev veriyor: ailenin iş birliği yapmasını istiyor."
+    tekrar:
+      id: u8d08-038-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which expression is closest in meaning to \"cooperate\"?</en>"
+      options: ["work together", "work alone", "stop working", "go away"]
+      answer: 0
+      explain: "cooperate ≈ work together."
+  - item: U8-039
+    card:
+      example_en: "I'll do my best to finish my chores on time."
+      example_tr: "Ev işlerimi zamanında bitirmek için elimden geleni yapacağım."
+      note_tr: "do one's best = elinden geleni yapmak (make my best denmez)."
+    kullan:
+      id: u8d08-039-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Don't worry! I'll ________ my best to help you.</en>"
+      options: ["do", "make", "take", "have"]
+      answer: 0
+      explain: "Kalıp: do my best."
+    sina:
+      id: u8d08-039-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Teacher: Can you finish the project by Friday?\nBora: ________ I'll do my best.</en>"
+      options: ["I'll try hard.", "I'll do nothing.", "I'll never start.", "I'll give up."]
+      answer: 0
+      explain: "\"I'll do my best\" çabalayacağını söyler: I'll try hard."
+    tekrar:
+      id: u8d08-039-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["She did her best.", "She made her best.", "She took her best.", "She played her best."]
+      answer: 0
+      explain: "Kalıp: do one's best."
+  - item: U8-040
+    card:
+      example_en: "You don't have to wear a uniform today. You mustn't run in the corridor."
+      example_tr: "Bugün forma giymek zorunda değilsin. Koridorda koşmamalısın (yasak)."
+      note_tr: "don't have to = gerek yok, zorunda değilsin; mustn't = yasak, yapmamalısın. LGS'nin klasik anlam tuzağı."
+    kullan:
+      id: u8d08-040-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>It's Sunday, so you ________ get up early.</en>"
+      options: ["don't have to", "mustn't", "have to", "must"]
+      answer: 0
+      explain: "Pazar günü erken kalkmak gerekmez: don't have to."
+    sina:
+      id: u8d08-040-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence means \"It is forbidden\"?</en>"
+      options: ["You mustn't touch the paintings.", "You don't have to touch the paintings.", "You have to touch the paintings.", "You can touch the paintings."]
+      answer: 0
+      explain: "mustn't = yasak; don't have to = gerek yok."
+    tekrar:
+      id: u8d08-040-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence means \"It is not necessary\"?</en>"
+      options: ["You don't have to pay.", "You mustn't pay.", "You must pay.", "You have to pay."]
+      answer: 0
+      explain: "don't have to = gerekli değil."
+tips:
+  - type: tuzak
+    refs: [U8-040]
+    text: "don't have to = gerek yok, mustn't = yasak. \"Bugün pazar, erken kalkmana gerek yok\" → You don't have to get up early."
+  - type: mini_dilbilgisi
+    refs: [U8-036]
+    text: "want + kişi + to + fiil: \"My mum wants me to tidy my room.\" \"Wants that I tidy\" denmez."
+coach:
+  start: "Gün 8: istemek, sıra, iş birliği ve yasaklar. LGS'nin sevdiği tuzak bugün 🚦"
+  end_good: "Harika! \"don't have to\" ile \"mustn't\" farkını biliyorsun 🚦 Yarın zaman ve şikâyet kalıpları."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🚦"
+notifications:
+  morning: "Bugün: want me to, sıra, iş birliği ve \"mustn't\" tuzağı 🚦"
+  evening: "\"Don't have to\" ile \"mustn't\" aynı mı? 🤔"
+  review: "\"Do my best\" mi, \"make my best\" mi? 💪"

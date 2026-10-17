@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 8
+day: 9
+status: draft
+title: "Zaman, şikâyet ve cesaret"
+est_minutes: 7
+new_items: [U8-041, U8-042, U8-043, U8-044, U8-045]
+steps:
+  - item: U8-041
+    card:
+      example_en: "The bus left on time. We arrived in time for the film."
+      example_tr: "Otobüs tam vaktinde kalktı. Filme yetişecek kadar erken vardık."
+      note_tr: "on time = belirlenen saatte; in time = geç kalmadan, yetişecek kadar erken (in time for / to + fiil)."
+    kullan:
+      id: u8d09-041-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The train leaves at 9:00 and it always leaves ________.</en>"
+      options: ["on time", "in time", "at time", "by time"]
+      answer: 0
+      explain: "Tam saatinde kalkmak: on time."
+    sina:
+      id: u8d09-041-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Duru ran to the station and arrived just ________ to catch the last train.</en>"
+      options: ["in time", "on time", "at time", "by time"]
+      answer: 0
+      explain: "\"just in time to + fiil\" = tam yetişecek kadar erken."
+    tekrar:
+      id: u8d09-041-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence means \"exactly at the planned time\"?</en>"
+      options: ["The bus arrived on time.", "The bus arrived in time.", "The bus arrived at time.", "The bus arrived by time."]
+      answer: 0
+      explain: "Planlanan saatinde gelmek: on time."
+  - item: U8-042
+    card:
+      example_en: "I have too many chores and too much homework."
+      example_tr: "Çok fazla ev işim ve çok fazla ödevim var."
+      note_tr: "too many + sayılabilen çoğul (chores); too much + sayılamayan (homework). too şikâyet/olumsuzluk taşır; very yalnız \"çok\" der."
+    kullan:
+      id: u8d09-042-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I can't go out. I have ________ homework to do.</en>"
+      options: ["too much", "too many", "much too", "a too"]
+      answer: 0
+      explain: "homework sayılamaz: too much homework."
+    sina:
+      id: u8d09-042-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["There is too much laundry today.", "There are too much laundry today.", "There is too many laundry today.", "There are too many laundry today."]
+      answer: 0
+      explain: "laundry sayılamaz: There is too much laundry."
+    tekrar:
+      id: u8d09-042-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>My mum gave me ________ chores this week. I have no free time!</en>"
+      options: ["too many", "too much", "much too", "a too"]
+      answer: 0
+      explain: "chores sayılabilen çoğuldur: too many chores."
+  - item: U8-043
+    card:
+      example_en: "It's not fair! Why do I always have to do the dishes?"
+      example_tr: "Bu adil değil! Neden hep ben bulaşıkları yıkamak zorundayım?"
+      note_tr: "fair = adil (dürüst değil: honest). It's not fair! = haksızlık, şikâyet kalıbı."
+    kullan:
+      id: u8d09-043-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I do all the chores and my brother does nothing. It's not ________!</en>"
+      options: ["fair", "fast", "far", "fat"]
+      answer: 0
+      explain: "Haksızlık şikâyeti: It's not fair!"
+    sina:
+      id: u8d09-043-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>How does Kaan feel?</en>"
+      stem: "<en>Kaan: I clean the kitchen every day, but Ali never helps! It's not fair! Why do I always have to do it?</en>"
+      options: ["He thinks it is unfair.", "He is very happy.", "He is sleepy.", "He loves chores."]
+      answer: 0
+      explain: "\"It's not fair!\" haksızlık hissini anlatır."
+    tekrar:
+      id: u8d09-043-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is a complaint?</en>"
+      options: ["It's not fair!", "That's wonderful!", "Thank you very much.", "I'd love to."]
+      answer: 0
+      explain: "\"It's not fair!\" bir şikâyettir."
+  - item: U8-044
+    card:
+      example_en: "Don't make a fuss! It's only a small mistake."
+      example_tr: "Yaygara yapma! Sadece küçük bir hata."
+      note_tr: "make a fuss = yaygara koparmak, mesele çıkarmak (make a mess = ortalığı dağıtmak ile karıştırma)."
+    kullan:
+      id: u8d09-044-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>It's just a small spot on the shirt. Please don't ________ a fuss.</en>"
+      options: ["make", "do", "take", "play"]
+      answer: 0
+      explain: "Kalıp: make a fuss."
+    sina:
+      id: u8d09-044-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Dad: It's only five minutes of washing up. Don't make a fuss!\nKaan: ________</en>"
+      options: ["Sorry, Dad. I'll do it now.", "Sorry, Dad. I'll make a bigger fuss.", "Thanks, Dad. I'll shout more.", "Sorry, Dad. I'll cry louder."]
+      answer: 0
+      explain: "Yaygara yapma denince özür dileyip işi yapmak uygun."
+    tekrar:
+      id: u8d09-044-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does \"make a fuss\" mean?</en>"
+      options: ["To complain loudly about something small", "To cook a big meal", "To clean the house quickly", "To fold the clothes"]
+      answer: 0
+      explain: "make a fuss = küçük bir şey için yaygara koparmak."
+  - item: U8-045
+    card:
+      example_en: "My teacher is very encouraging. She says, \"You can do it!\""
+      example_tr: "Öğretmenim çok cesaretlendirici. \"Yapabilirsin!\" diyor."
+      note_tr: "encourage = cesaretlendirmek; encouraging = cesaretlendirici."
+    kullan:
+      id: u8d09-045-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My dad is very ________. When I'm tired, he says, \"Keep going, you can do it!\"</en>"
+      options: ["encouraging", "discouraging", "boring", "angry"]
+      answer: 0
+      explain: "Moral veren, cesaretlendiren: encouraging."
+    sina:
+      id: u8d09-045-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What kind of teacher is she?</en>"
+      stem: "<en>Selin: When I failed the quiz, my teacher said, \"Don't worry. Try again and you will do better.\"</en>"
+      options: ["Encouraging", "Rude", "Careless", "Lazy"]
+      answer: 0
+      explain: "Başarısızlıktan sonra tekrar denemesini söyleyen öğretmen cesaretlendiricidir."
+    tekrar:
+      id: u8d09-045-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is encouraging?</en>"
+      options: ["You can do it! Try again.", "You will never learn.", "Stop trying.", "This is too difficult for you."]
+      answer: 0
+      explain: "Cesaret veren cümle: You can do it! Try again."
+tips:
+  - type: tuzak
+    refs: [U8-041]
+    text: "on time = tam vaktinde (saat belliyse), in time = geç kalmadan, yetişecek kadar erken. İkisi de Türkçede \"zamanında\"."
+  - type: mini_dilbilgisi
+    refs: [U8-042, U8-033]
+    text: "too many + sayılabilen çoğul (too many chores), too much + sayılamayan (too much laundry, too much furniture). too şikâyet taşır."
+coach:
+  start: "Gün 9: zaman, şikâyet ve cesaret. Biraz da dert dinleyelim 🙂"
+  end_good: "Süper! Şikâyet kalıplarını ve zaman farkını yakaladın 🙂 Yarın son gün."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🙂"
+notifications:
+  morning: "Bugün: on time / in time, too much / too many, \"It's not fair!\" 🙂"
+  evening: "\"Too much\" mı, \"too many\" mi? Ev işleri sayılabilir mi? 🤔"
+  review: "\"Make a fuss\" ile \"make a mess\" aynı şey mi? 😄"
