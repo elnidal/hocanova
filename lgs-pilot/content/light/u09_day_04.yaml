@@ -1,0 +1,183 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 9
+day: 4
+status: draft
+title: "Bilgi, hesap ve buluşlar"
+est_minutes: 7
+new_items: [U9-016, U9-017, U9-018, U9-019, U9-020]
+steps:
+  - item: U9-016
+    card:
+      example_en: "Reading books gives us knowledge."
+      example_tr: "Kitap okumak bize bilgi kazandırır."
+      note_tr: "knowledge sayılamaz: \"knowledges\" yanlış. k okunmaz: /ˈnɒlɪdʒ/ (nolic). know ile aynı aile."
+    kullan:
+      id: u9d04-016-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>She has a lot of ________ about space.</en>"
+      options: ["knowledge", "knowledges", "a knowledge", "knowledged"]
+      answer: 0
+      explain: "knowledge sayılamaz: a lot of knowledge."
+    sina:
+      id: u9d04-016-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Knowledge is power.", "Knowledges are power.", "A knowledge is power.", "Knowledge are power."]
+      answer: 0
+      explain: "knowledge sayılamaz ve tekil fiil alır: Knowledge is power."
+    tekrar:
+      id: u9d04-016-t
+      type: odd_one_out
+      prompt: "<en>In which word is the letter \"k\" silent?</en>"
+      options: ["knowledge", "kitchen", "kitten", "kilo"]
+      answer: 0
+      explain: "knowledge /ˈnɒlɪdʒ/: k okunmaz."
+  - item: U9-017
+    card:
+      example_en: "I wonder why the sky is blue."
+      example_tr: "Gökyüzü neden mavi, merak ediyorum."
+      note_tr: "wonder = merak etmek (fiil), harika/mucize (isim). wander = dolaşmak ile karıştırma."
+    kullan:
+      id: u9d04-017-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I ________ why the moon changes shape. Do you know?</en>"
+      options: ["wonder", "wander", "wound", "won"]
+      answer: 0
+      explain: "Merak etmek: wonder."
+    sina:
+      id: u9d04-017-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: Why is the sea salty?\nDuru: ________ Let's look it up.</en>"
+      options: ["I wonder too.", "I wander too.", "I wounded too.", "I wore too."]
+      answer: 0
+      explain: "\"Ben de merak ediyorum\": I wonder too."
+    tekrar:
+      id: u9d04-017-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word means \"to walk without a clear direction\"?</en>"
+      options: ["wander", "wonder", "wonderful", "wall"]
+      answer: 0
+      explain: "Amaçsız dolaşmak: wander; wonder merak etmektir."
+  - item: U9-018
+    card:
+      example_en: "Use a calculator to calculate the total."
+      example_tr: "Toplamı hesaplamak için hesap makinesi kullan."
+      note_tr: "calculate = hesaplamak; calculator = hesap makinesi; calculation = hesap."
+    kullan:
+      id: u9d04-018-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I can't ________ this problem in my head. Please give me a calculator.</en>"
+      options: ["calculate", "calculator", "calculation", "calculated"]
+      answer: 0
+      explain: "can't + fiil: calculate."
+    sina:
+      id: u9d04-018-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What does a calculator do?</en>"
+      stem: "<en>A calculator is a small machine that adds, subtracts, multiplies and divides numbers quickly.</en>"
+      options: ["It does maths quickly.", "It makes tea.", "It cleans the floor.", "It tells the weather."]
+      answer: 0
+      explain: "Metne göre sayıları hızla toplar, çıkarır, çarpar, böler."
+    tekrar:
+      id: u9d04-018-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>She made a small mistake in the ________ and got the wrong answer.</en>"
+      options: ["calculation", "calculator", "calculate", "calculating"]
+      answer: 0
+      explain: "\"in the ...\" isim ister: calculation (hesap)."
+  - item: U9-019
+    card:
+      example_en: "The scientist published her results in a magazine. Gutenberg built the printing press."
+      example_tr: "Bilim insanı sonuçlarını bir dergide yayımladı. Gutenberg matbaayı geliştirdi."
+      note_tr: "publish = yayımlamak (kitap, makale); print = basmak; printing press = matbaa."
+    kullan:
+      id: u9d04-019-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The journalist wants to ________ the story in tomorrow's newspaper.</en>"
+      options: ["publish", "fold", "dust", "mow"]
+      answer: 0
+      explain: "Haberi gazetede yayımlamak: publish."
+    sina:
+      id: u9d04-019-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>Why was the printing press important?</en>"
+      stem: "<en>Johannes Gutenberg built the printing press in the 15th century. It made books cheaper, so more people could read them.</en>"
+      options: ["It made books cheaper.", "It made books rarer.", "It stopped people from reading.", "It made paper expensive."]
+      answer: 0
+      explain: "Metne göre kitapları ucuzlattı ve daha çok kişi okuyabildi."
+    tekrar:
+      id: u9d04-019-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is a printing press?</en>"
+      options: ["A machine that prints many copies of books", "A machine that cooks", "A machine that washes dishes", "A machine that irons clothes"]
+      answer: 0
+      explain: "Matbaa, kitapların çok sayıda kopyasını basan makinedir."
+  - item: U9-020
+    card:
+      example_en: "The light bulb in my room is broken."
+      example_tr: "Odamdaki ampul bozuk."
+      note_tr: "light bulb = ampul. bulb tek başına çiçek soğanı da demektir. Ampul 19. yüzyılda icat edildi."
+    kullan:
+      id: u9d04-020-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>It's dark in the room. We need a new ________.</en>"
+      options: ["light bulb", "laundry", "furniture", "allowance"]
+      answer: 0
+      explain: "Karanlık oda için ampul gerekir."
+    sina:
+      id: u9d04-020-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which invention gives us light at night?</en>"
+      options: ["The light bulb", "The telephone", "The printing press", "The vaccine"]
+      answer: 0
+      explain: "Geceleri ışık veren icat ampuldür."
+    tekrar:
+      id: u9d04-020-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Thomas Edison is famous for his work on the electric ________.</en>"
+      options: ["bulb", "bomb", "bank", "bone"]
+      answer: 0
+      explain: "Edison elektrik ampulüyle (electric bulb) anılır."
+tips:
+  - type: tuzak
+    refs: [U9-016]
+    text: "knowledge sayılamaz: \"knowledges\" yok. Tek parça için: a piece of knowledge / information. Fiili de tekil: Knowledge is power."
+  - type: tuzak
+    refs: [U9-017]
+    text: "wonder (merak etmek) ve wander (dolaşmak) karışır. \"I wonder why …\" = Neden … merak ediyorum."
+coach:
+  start: "Gün 4: bilgi, merak, hesap ve büyük buluşlar 💡"
+  end_good: "Harika! Buluşların dilini öğreniyorsun 💡 Yarın yapay zekâ, kurmak ve tamir."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 💡"
+notifications:
+  morning: "Bugün: bilgi, merak, hesap, matbaa ve ampul 💡"
+  evening: "\"Knowledges\" diye bir kelime var mı? 🤔"
+  review: "Wonder mı, wander mı? Hangisi merak etmek? 🌌"

@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 9
+day: 5
+status: draft
+title: "Yapay, kurmak ve tamir"
+est_minutes: 7
+new_items: [U9-021, U9-022, U9-023, U9-024, U9-025]
+steps:
+  - item: U9-021
+    card:
+      example_en: "Artificial flowers don't need water. Virtual reality games feel real."
+      example_tr: "Yapay çiçekler suya ihtiyaç duymaz. Sanal gerçeklik oyunları gerçek gibi hissettirir."
+      note_tr: "artificial = insan yapımı, doğal olmayan; virtual = bilgisayar ortamında var olan. Yazımı: artificial (kaynakta \"artifical\" hatası var)."
+    kullan:
+      id: u9d05-021-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>These flowers are not real. They are ________ flowers made of plastic.</en>"
+      options: ["artificial", "natural", "fresh", "wild"]
+      answer: 0
+      explain: "Plastikten yapılmış çiçekler yapaydır (artificial)."
+    sina:
+      id: u9d05-021-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Artificial intelligence helps computers learn.", "Natural intelligence helps computers learn.", "Artifical intelligence helps computers learn.", "Artificially intelligence helps computers learn."]
+      answer: 0
+      explain: "Doğru terim ve yazım: artificial intelligence."
+    tekrar:
+      id: u9d05-021-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one exists only on a computer?</en>"
+      options: ["A virtual classroom", "A paper map", "A real garden", "A wooden desk"]
+      answer: 0
+      explain: "Sanal sınıf yalnızca bilgisayar ortamında vardır (virtual)."
+  - item: U9-022
+    card:
+      example_en: "He founded a company in 1990."
+      example_tr: "1990'da bir şirket kurdu."
+      note_tr: "found – founded – founded = kurmak; find – found – found = bulmak. founder = kurucu."
+    kullan:
+      id: u9d05-022-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Atatürk ________ the Republic of Türkiye in 1923.</en>"
+      options: ["founded", "found", "finds", "founding"]
+      answer: 0
+      explain: "Cumhuriyeti kurmak: founded."
+    sina:
+      id: u9d05-022-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence means \"to start a company\"?</en>"
+      options: ["He founded a company.", "He found a company.", "He finds a company.", "He is finding a company."]
+      answer: 0
+      explain: "Şirket kurmak: found (founded). found = find'ın geçmişi (bulmak)."
+    tekrar:
+      id: u9d05-022-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Last week, I ________ a coin in the garden.</en>"
+      options: ["found", "founded", "finded", "founding"]
+      answer: 0
+      explain: "Bir madeni parayı bulmak: find – found."
+  - item: U9-023
+    card:
+      example_en: "The mechanic fixed my bike. Can you repair this radio?"
+      example_tr: "Tamirci bisikletimi tamir etti. Bu radyoyu onarabilir misin?"
+      note_tr: "fix = repair = tamir etmek; fix ayrıca sabitlemek, ayarlamak (fix a date)."
+    kullan:
+      id: u9d05-023-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My phone is broken. I need to ________ it.</en>"
+      options: ["fix", "fold", "dust", "feed"]
+      answer: 0
+      explain: "Bozuk telefonu onarmak: fix."
+    sina:
+      id: u9d05-023-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Dad: The TV isn't working.\nKaan: ________</en>"
+      options: ["Let me see. I can repair it.", "Let me see. I can eat it.", "Let me see. I can drink it.", "Let me see. I can water it."]
+      answer: 0
+      explain: "Çalışmayan TV için tamir etmek uygun."
+    tekrar:
+      id: u9d05-023-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"repair\"?</en>"
+      options: ["fix", "break", "lose", "hide"]
+      answer: 0
+      explain: "repair ≈ fix."
+  - item: U9-024
+    card:
+      example_en: "She translated the book from English into Turkish."
+      example_tr: "Kitabı İngilizceden Türkçeye çevirdi."
+      note_tr: "translate from … into …; translator = çevirmen; translation = çeviri. turn (dönmek) ile karıştırma."
+    kullan:
+      id: u9d05-024-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My aunt is a ________. She translates books from French into Turkish.</en>"
+      options: ["translator", "translation", "translate", "translated"]
+      answer: 0
+      explain: "Çeviri yapan kişi: translator."
+    sina:
+      id: u9d05-024-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Tourist: I don't understand this sign.\nGuide: ________ I'll translate it into English.</en>"
+      options: ["Wait a moment.", "Close the door.", "Sing a song.", "Wash the dishes."]
+      answer: 0
+      explain: "Rehber levhayı çevirecek; önce \"bir dakika bekle\" demesi uygun."
+    tekrar:
+      id: u9d05-024-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Please ________ this sentence into Turkish.</en>"
+      options: ["translate", "translated", "translator", "translation"]
+      answer: 0
+      explain: "Please + fiil: translate."
+  - item: U9-025
+    card:
+      example_en: "The printing press was a revolutionary invention."
+      example_tr: "Matbaa çığır açan bir icattı."
+      note_tr: "revolution = devrim; revolutionary = devrim niteliğinde, çığır açan."
+    kullan:
+      id: u9d05-025-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The internet is a ________ invention. It changed our lives.</en>"
+      options: ["revolutionary", "ordinary", "boring", "tiny"]
+      answer: 0
+      explain: "Hayatı değiştiren icat çığır açıcıdır (revolutionary)."
+    sina:
+      id: u9d05-025-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>Why was the aeroplane revolutionary?</en>"
+      stem: "<en>The Wright brothers flew the first aeroplane in 1903. Many people thought it was a revolutionary idea because it changed the way people travelled.</en>"
+      options: ["It changed the way people travelled.", "It was very cheap.", "It was made of paper.", "It was invented by a chef."]
+      answer: 0
+      explain: "Metne göre insanların seyahat biçimini değiştirdi."
+    tekrar:
+      id: u9d05-025-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does \"a revolutionary invention\" mean?</en>"
+      options: ["A very new and important invention that changes things", "A very old invention", "A very small invention", "A very cheap invention"]
+      answer: 0
+      explain: "revolutionary = her şeyi değiştiren yeni ve önemli."
+tips:
+  - type: tuzak
+    refs: [U9-022]
+    text: "found–founded = kurmak; find–found = bulmak. \"He founded a company\" (kurdu) ≠ \"He found a company\" (bir şirket buldu)."
+  - type: kelime_ailesi
+    refs: [U9-021, U9-025]
+    text: "artificial (yapay) ↔ natural (doğal); revolution (devrim) → revolutionary (çığır açan). Yazım: artificial (kaynakta \"artifical\" hatası var)."
+coach:
+  start: "Gün 5: yapay, sanal, kurmak, tamir ve çeviri 🔧"
+  end_good: "Süper! Teknoloji kelimeleri tamam 🔧 Yarın sağlık ve ödüller."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🔧"
+notifications:
+  morning: "Bugün: yapay, sanal, kurmak, tamir, çeviri ve çığır açan! 🔧"
+  evening: "\"Found\" hem bulmak hem kurmak mı? 🤔"
+  review: "Yapay zekâ İngilizcede nasıl denir? 🤖"

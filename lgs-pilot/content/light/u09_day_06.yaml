@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 9
+day: 6
+status: draft
+title: "Sağlık, başarı ve ödül"
+est_minutes: 7
+new_items: [U9-026, U9-027, U9-028, U9-029, U9-030]
+steps:
+  - item: U9-026
+    card:
+      example_en: "Scientists are looking for a cure for the disease."
+      example_tr: "Bilim insanları hastalığa çare arıyor."
+      note_tr: "cure = tamamen iyileştirmek, çare; treat = tedavi etmek (ayrıca ikram etmek); heal = (yara, kemik) iyileşmek."
+    kullan:
+      id: u9d06-026-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Doctors are trying to find a ________ for this illness.</en>"
+      options: ["cure", "fact", "space", "award"]
+      answer: 0
+      explain: "Hastalığa çare: a cure for …"
+    sina:
+      id: u9d06-026-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What could penicillin do?</en>"
+      stem: "<en>Alexander Fleming discovered penicillin in 1928. It became the first medicine that could cure many infections.</en>"
+      options: ["Cure infections", "Make food", "Clean clothes", "Light a room"]
+      answer: 0
+      explain: "Metne göre penisilin birçok enfeksiyonu tedavi eden ilk ilaçtı."
+    tekrar:
+      id: u9d06-026-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>It takes weeks for a broken bone to ________.</en>"
+      options: ["heal", "hang", "hurt", "hide"]
+      answer: 0
+      explain: "Kırık kemik iyileşir: heal."
+  - item: U9-027
+    card:
+      example_en: "Doctors diagnose the disease and give treatment."
+      example_tr: "Doktorlar hastalığı teşhis eder ve tedavi verir."
+      note_tr: "disease = ciddi (çoğu zaman bulaşıcı) hastalık; illness genel rahatsızlık; diagnose = teşhis etmek."
+    kullan:
+      id: u9d06-027-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Malaria is a serious ________ that spreads by mosquitoes.</en>"
+      options: ["disease", "chore", "fountain", "souvenir"]
+      answer: 0
+      explain: "Sivrisinekle yayılan ciddi hastalık: disease."
+    sina:
+      id: u9d06-027-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which word means \"to find out what illness a person has\"?</en>"
+      options: ["diagnose", "dust", "dry", "diary"]
+      answer: 0
+      explain: "Hangi hastalık olduğunu belirlemek: diagnose."
+    tekrar:
+      id: u9d06-027-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Washing your hands can prevent many ________.</en>"
+      options: ["diseases", "chores", "squares", "islands"]
+      answer: 0
+      explain: "El yıkamak birçok hastalığı önler."
+  - item: U9-028
+    card:
+      example_en: "The vaccine protects children from the disease."
+      example_tr: "Aşı çocukları hastalıktan korur."
+      note_tr: "vaccine = aşı (madde); vaccination = aşılama."
+    kullan:
+      id: u9d06-028-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Children get a ________ to stay safe from some diseases.</en>"
+      options: ["vaccine", "calculator", "bulb", "furniture"]
+      answer: 0
+      explain: "Hastalıklardan korunmak için aşı yapılır."
+    sina:
+      id: u9d06-028-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What do vaccines do?</en>"
+      stem: "<en>Louis Pasteur developed vaccines for rabies and other diseases in the 19th century. Today vaccines save millions of lives.</en>"
+      options: ["They save lives.", "They cause diseases.", "They make food.", "They clean the air."]
+      answer: 0
+      explain: "Metne göre aşılar milyonlarca hayat kurtarıyor."
+    tekrar:
+      id: u9d06-028-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is a vaccine?</en>"
+      options: ["A medicine that protects people from a disease", "A machine that prints books", "A tool for cooking", "A place for sleeping"]
+      answer: 0
+      explain: "Aşı, hastalıktan koruyan bir ilaçtır."
+  - item: U9-029
+    card:
+      example_en: "Winning the science fair was a great achievement."
+      example_tr: "Bilim fuarını kazanmak büyük bir başarıydı."
+      note_tr: "achieve = başarmak; achievement = başarı."
+    kullan:
+      id: u9d06-029-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Landing on the Moon was a great ________ for science.</en>"
+      options: ["achievement", "furniture", "laundry", "allowance"]
+      answer: 0
+      explain: "Aya inmek büyük bir başarıdır."
+    sina:
+      id: u9d06-029-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What was Aziz Sancar's achievement?</en>"
+      stem: "<en>Aziz Sancar, a Turkish scientist, shared the 2015 Nobel Prize in Chemistry for his work on DNA repair.</en>"
+      options: ["He won a Nobel Prize.", "He built a bridge.", "He wrote a novel.", "He flew a plane."]
+      answer: 0
+      explain: "2015 Nobel Kimya Ödülü'nü paylaştı."
+    tekrar:
+      id: u9d06-029-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"achievement\"?</en>"
+      options: ["success", "failure", "mess", "duty"]
+      answer: 0
+      explain: "achievement ≈ success."
+  - item: U9-030
+    card:
+      example_en: "She won a Nobel Prize. The best student got an award."
+      example_tr: "Nobel Ödülü kazandı. En iyi öğrenci bir ödül aldı."
+      note_tr: "award / prize = başarı ya da yarışma ödülü; reward (Ünite 8) bir davranışın karşılığıdır. win a prize."
+    kullan:
+      id: u9d06-030-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Our team won first ________ in the science fair.</en>"
+      options: ["prize", "reward", "chore", "duty"]
+      answer: 0
+      explain: "Yarışmada birincilik ödülü: first prize."
+    sina:
+      id: u9d06-030-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["She won the Nobel Prize in 1903.", "She made the Nobel Prize in 1903.", "She did the Nobel Prize in 1903.", "She played the Nobel Prize in 1903."]
+      answer: 0
+      explain: "Ödül kazanmak: win a prize."
+    tekrar:
+      id: u9d06-030-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is an award?</en>"
+      options: ["The Nobel Prize", "A pocket money", "A bill", "A recipe"]
+      answer: 0
+      explain: "Nobel Ödülü bir başarı ödülüdür."
+tips:
+  - type: tuzak
+    refs: [U9-030]
+    text: "award / prize başarıya verilen ödüldür (Nobel Prize); reward bir davranışın karşılığıdır (ev işi yapana ödül, Ünite 8)."
+  - type: ilginc_bilgi
+    refs: [U9-029, U9-030]
+    text: "Aziz Sancar, 2015 Nobel Kimya Ödülü'nü DNA onarımı araştırmalarıyla Tomas Lindahl ve Paul Modrich ile paylaştı."
+coach:
+  start: "Gün 6: sağlık, aşı ve ödüller. Büyük başarılara doğru 🏅"
+  end_good: "Mükemmel! Tıp ve başarı kelimeleri tamam 🏅 Yarın yarışma, katkı ve emek."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🏅"
+notifications:
+  morning: "Bugün: çare, hastalık, aşı, başarı ve ödül 🏅"
+  evening: "Award ile reward aynı şey mi? 🤔"
+  review: "\"Diagnose\" ne demek? Doktor ne yapar? 🩺"

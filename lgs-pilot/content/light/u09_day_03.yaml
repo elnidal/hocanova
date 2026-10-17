@@ -1,0 +1,182 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 9
+day: 3
+status: draft
+title: "Tartışma ve araştırma"
+est_minutes: 7
+new_items: [U9-011, U9-012, U9-013, U9-014, U9-015]
+steps:
+  - item: U9-011
+    card:
+      example_en: "We discussed the results of the experiment in class."
+      example_tr: "Deneyin sonuçlarını sınıfta tartıştık."
+      note_tr: "discuss edat almaz: discuss the results (discuss about yanlış). debate = resmî tartışma, münazara (kavga değil)."
+    kullan:
+      id: u9d03-011-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Let's ________ the results of the experiment together.</en>"
+      options: ["discuss", "discuss about", "discussing", "discussion"]
+      answer: 0
+      explain: "discuss doğrudan nesne alır: discuss the results."
+    sina:
+      id: u9d03-011-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["We discussed the problem for an hour.", "We discussed about the problem for an hour.", "We discussed on the problem for an hour.", "We discussed of the problem for an hour."]
+      answer: 0
+      explain: "discuss'tan sonra edat gelmez."
+    tekrar:
+      id: u9d03-011-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is a debate?</en>"
+      options: ["A formal discussion where people give different opinions", "A fight with fists", "A kind of experiment", "A science book"]
+      answer: 0
+      explain: "debate = farklı görüşlerin tartışıldığı resmî tartışma (münazara)."
+  - item: U9-012
+    card:
+      example_en: "Scientists observe the stars with a telescope. The doctor examined my throat."
+      example_tr: "Bilim insanları yıldızları teleskopla gözlemler. Doktor boğazımı muayene etti."
+      note_tr: "observe = dikkatle izleyip not etmek; examine = yakından incelemek, (doktor) muayene etmek."
+    kullan:
+      id: u9d03-012-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The students ________ the plants every day and write down any changes.</en>"
+      options: ["observe", "dust", "sweep", "fold"]
+      answer: 0
+      explain: "Bitkileri izleyip not etmek: observe."
+    sina:
+      id: u9d03-012-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is about a doctor?</en>"
+      options: ["The doctor examined the boy's ear.", "The doctor observed the stars.", "The doctor mowed the lawn.", "The doctor translated the book."]
+      answer: 0
+      explain: "Doktor kulağı muayene eder (examine)."
+    tekrar:
+      id: u9d03-012-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does \"observation\" mean?</en>"
+      options: ["Watching something carefully and writing what you see", "Cooking a meal", "Washing clothes", "Buying a ticket"]
+      answer: 0
+      explain: "observation = dikkatle izleyip kaydetme (gözlem)."
+  - item: U9-013
+    card:
+      example_en: "Everything around us is matter: solids, liquids and gases."
+      example_tr: "Etrafımızdaki her şey maddedir: katılar, sıvılar ve gazlar."
+      note_tr: "bilimde matter = madde; What's the matter? = Ne oldu?; It doesn't matter = Önemli değil."
+    kullan:
+      id: u9d03-013-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Water, ice and steam are three forms of the same ________.</en>"
+      options: ["matter", "chore", "reward", "flat"]
+      answer: 0
+      explain: "Su, buz ve buhar aynı maddenin hâlleridir: matter."
+    sina:
+      id: u9d03-013-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>In which sentence does \"matter\" mean a scientific term?</en>"
+      options: ["Solids, liquids and gases are types of matter.", "What's the matter with you?", "It doesn't matter.", "Your health matters to me."]
+      answer: 0
+      explain: "İlk cümlede matter = madde (bilim terimi)."
+    tekrar:
+      id: u9d03-013-t
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Mum: You look sad. What's the matter?\nElif: ________</en>"
+      options: ["I lost my notebook.", "It's a solid.", "It's a liquid.", "It's in the laboratory."]
+      answer: 0
+      explain: "\"What's the matter?\" = Ne oldu? Cevap sorunu anlatır."
+  - item: U9-014
+    card:
+      example_en: "It is a fact that the Earth goes round the Sun. In fact, it takes one year."
+      example_tr: "Dünyanın Güneş'in etrafında döndüğü bir gerçektir. Aslında bir yıl sürer."
+      note_tr: "fact = kanıtlanabilir bilgi ≠ opinion = görüş; in fact = aslında."
+    kullan:
+      id: u9d03-014-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>\"Water boils at 100 °C\" is a ________, not an opinion.</en>"
+      options: ["fact", "wonder", "record", "reward"]
+      answer: 0
+      explain: "Kanıtlanabilir bilgi: fact."
+    sina:
+      id: u9d03-014-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is an opinion, NOT a fact?</en>"
+      options: ["Chemistry is the most interesting lesson.", "The Earth goes round the Sun.", "Ice is cold.", "Water freezes at 0 °C."]
+      answer: 0
+      explain: "\"en ilginç ders\" kişisel görüştür; diğerleri kanıtlanabilir."
+    tekrar:
+      id: u9d03-014-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is a fact?</en>"
+      options: ["Gold is a metal.", "Gold is boring.", "Gold is the best colour.", "Gold is ugly."]
+      answer: 0
+      explain: "Altının metal olması kanıtlanabilir bir bilgidir."
+  - item: U9-015
+    card:
+      example_en: "We did an experiment to find out how plants grow."
+      example_tr: "Bitkilerin nasıl büyüdüğünü öğrenmek için bir deney yaptık."
+      note_tr: "find out = araştırıp öğrenmek; find = kaybolanı bulmak. find – found – found."
+    kullan:
+      id: u9d03-015-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I want to ________ what time the museum opens. I'll call them.</en>"
+      options: ["find out", "find", "found", "finding"]
+      answer: 0
+      explain: "Bilgiyi öğrenmek: find out."
+    sina:
+      id: u9d03-015-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: Why are you reading that book?\nBora: ________ I want to find out how planes fly.</en>"
+      options: ["For my science project.", "For my dinner plate.", "For my gym bag.", "For my winter coat."]
+      answer: 0
+      explain: "Uçakların nasıl uçtuğunu öğrenmek bir bilim projesi için olabilir."
+    tekrar:
+      id: u9d03-015-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["I found my keys under the sofa.", "I found out my keys under the sofa.", "I find out my keys under the sofa yesterday.", "I founded my keys under the sofa."]
+      answer: 0
+      explain: "Kaybolan anahtarı bulmak: found (find'ın geçmişi)."
+tips:
+  - type: tuzak
+    refs: [U9-014]
+    text: "fact = kanıtlanabilir bilgi, opinion = görüş. LGS'de \"fact or opinion\" ayrımı sık sorulur: \"en güzel, en iyi, sıkıcı\" gibi sözler görüştür."
+  - type: tuzak
+    refs: [U9-013]
+    text: "matter bilimde \"madde\"dir (solid, liquid, gas). What's the matter? = Ne oldu? / It doesn't matter = Önemli değil."
+coach:
+  start: "Gün 3: tartışma, gözlem ve araştırma. Gerçek ile görüşü ayıracağız 🔍"
+  end_good: "Harika! Bilim insanı gibi düşünmeyi öğreniyorsun 🔍 Yarın bilgi, hesap ve buluşlar."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🔍"
+notifications:
+  morning: "Bugün: tartışma, gözlem, madde, gerçek ve \"find out\" 🔍"
+  evening: "\"Fact\" mi, \"opinion\" mı? \"En güzel ders\" hangisi? 🤔"
+  review: "\"Find\" ile \"find out\" arasındaki fark ne? 🔎"

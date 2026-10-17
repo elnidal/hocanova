@@ -1,0 +1,182 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 9
+day: 1
+status: draft
+title: "Bilim dünyasına giriş"
+est_minutes: 7
+new_items: [U9-001, U9-002, U9-003, U9-004, U9-005]
+steps:
+  - item: U9-001
+    card:
+      example_en: "Science is my favourite lesson. A scientist works in a laboratory."
+      example_tr: "Fen benim en sevdiğim ders. Bir bilim insanı laboratuvarda çalışır."
+      note_tr: "science (bilim) → scientist (bilim insanı) → scientific (bilimsel). Vurgu kayar: SCIence – SCIentist – scienTIFic."
+    kullan:
+      id: u9d01-001-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Marie Curie was a famous ________ who worked in a laboratory.</en>"
+      options: ["scientist", "science", "scientific", "scientists"]
+      answer: 0
+      explain: "\"a famous ...\" tekil kişi ister: scientist."
+    sina:
+      id: u9d01-001-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Scientists made many ________ developments in the last century.</en>"
+      options: ["scientific", "science", "scientist", "scientifically"]
+      answer: 0
+      explain: "\"developments\" isminin önüne sıfat gelir: scientific."
+    tekrar:
+      id: u9d01-001-t
+      type: odd_one_out
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word is a person?</en>"
+      options: ["scientist", "science", "scientific", "laboratory"]
+      answer: 0
+      explain: "Kişiyi anlatan kelime scientist'tir."
+  - item: U9-002
+    card:
+      example_en: "A chemist studies chemistry. Some chemical products are dangerous."
+      example_tr: "Kimyager kimya çalışır. Bazı kimyasal ürünler tehlikelidir."
+      note_tr: "ch /k/ okunur (kemist). İngiliz İngilizcesinde chemist's = eczane de olabilir."
+    kullan:
+      id: u9d01-002-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>In ________ lessons, we learn about acids and bases.</en>"
+      options: ["chemistry", "chemist", "chemical", "chemicals"]
+      answer: 0
+      explain: "Ders adı: chemistry (kimya)."
+    sina:
+      id: u9d01-002-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: What does your sister do?\nSelin: ________ She works in a laboratory and studies chemical substances.</en>"
+      options: ["She is a chemist.", "She is a chef.", "She is a janitor.", "She is a pilot."]
+      answer: 0
+      explain: "Laboratuvarda kimyasal maddeleri inceleyen kişi kimyagerdir."
+    tekrar:
+      id: u9d01-002-t
+      type: situation
+      prompt: "<en>How do we say the letters \"ch\" in \"chemistry\"?</en>"
+      options: ["like k", "like ch in \"church\"", "like sh", "like j"]
+      answer: 0
+      explain: "chemistry: ch /k/ okunur."
+  - item: U9-003
+    card:
+      example_en: "Physics is difficult for some students. Einstein was a famous physicist."
+      example_tr: "Fizik bazı öğrenciler için zordur. Einstein ünlü bir fizikçiydi."
+      note_tr: "physics -s ile biter ama tekildir (Physics is fun). physician = doktor, fizikçi değil!"
+    kullan:
+      id: u9d01-003-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My brother wants to become a ________. He loves studying forces and energy.</en>"
+      options: ["physicist", "physician", "physics", "physical"]
+      answer: 0
+      explain: "Kuvvet ve enerji çalışan kişi fizikçidir (physicist); physician doktordur."
+    sina:
+      id: u9d01-003-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Physics is my favourite subject.", "Physics are my favourite subject.", "Physic is my favourite subject.", "Physics were my favourite subject."]
+      answer: 0
+      explain: "physics tekil kabul edilir: Physics is."
+    tekrar:
+      id: u9d01-003-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does a physician do?</en>"
+      options: ["He or she is a doctor.", "He or she studies forces and energy.", "He or she cooks meals.", "He or she repairs cars."]
+      answer: 0
+      explain: "physician = doktor; fizikçi physicist'tir."
+  - item: U9-004
+    card:
+      example_en: "Gravity pulls things down to the ground."
+      example_tr: "Yer çekimi nesneleri yere çeker."
+      note_tr: "the law of gravity = yer çekimi yasası; Newton ile anılır."
+    kullan:
+      id: u9d01-004-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>When you drop a ball, it falls to the ground because of ________.</en>"
+      options: ["gravity", "chemistry", "medicine", "grocery"]
+      answer: 0
+      explain: "Nesneleri yere çeken kuvvet yer çekimidir (gravity)."
+    sina:
+      id: u9d01-004-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What is gravity?</en>"
+      stem: "<en>The story says that Isaac Newton watched an apple fall from a tree. This made him think about gravity: the force that pulls things to the Earth.</en>"
+      options: ["A force that pulls things to the Earth", "A kind of fruit", "A scientist", "A machine"]
+      answer: 0
+      explain: "Metin gravity'yi nesneleri Dünya'ya çeken kuvvet olarak tanımlıyor."
+    tekrar:
+      id: u9d01-004-t
+      type: situation
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What would happen without gravity?</en>"
+      options: ["Things would float in the air.", "Things would fall faster.", "Everything would get hot.", "Water would disappear."]
+      answer: 0
+      explain: "Yer çekimi olmasaydı nesneler havada süzülürdü (astronotlar gibi)."
+  - item: U9-005
+    card:
+      example_en: "Astronauts travel to space. There isn't much space in the small room."
+      example_tr: "Astronotlar uzaya gider. Küçük odada fazla yer yok."
+      note_tr: "space = uzay (artikelsiz: travel to space) ve yer, boşluk."
+    kullan:
+      id: u9d01-005-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Astronauts spend months in ________ and see the Earth from far away.</en>"
+      options: ["space", "spaces", "a space", "spaced"]
+      answer: 0
+      explain: "Uzay anlamında artikelsiz: in space."
+    sina:
+      id: u9d01-005-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>In which sentence does \"space\" mean \"free place\"?</en>"
+      options: ["Is there enough space for my bag?", "Rockets fly into space.", "Astronauts travel to space.", "The Earth is a planet in space."]
+      answer: 0
+      explain: "İlk cümlede space = boş yer; diğerlerinde uzay."
+    tekrar:
+      id: u9d01-005-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>There isn't enough ________ for a big table in this kitchen.</en>"
+      options: ["space", "gravity", "science", "medicine"]
+      answer: 0
+      explain: "Mutfakta yer yok: not enough space."
+tips:
+  - type: kelime_ailesi
+    refs: [U9-001, U9-002, U9-003]
+    text: "science → scientist → scientific; chemistry → chemist → chemical; physics → physicist (physician = doktor!)."
+  - type: tuzak
+    refs: [U9-005]
+    text: "space yalnız uzay değildir: \"There is no space\" = yer yok. Uzay anlamında artikelsiz: travel to space."
+coach:
+  start: "Yeni ünite: Science! Önlüğünü giy, laboratuvara giriyoruz 🔬"
+  end_good: "Harika! Bilim dünyasının ilk kapısını açtın 🔬 Yarın tıp, deney ve sonuç."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🔬"
+notifications:
+  morning: "Yeni ünite Science! Bugün: bilim insanı, kimya, fizik, yer çekimi ve uzay 🔬"
+  evening: "Physicist mi, physician mı? Hangisi doktor? 🤔"
+  review: "\"Space\" her zaman uzay mı demek? 🚀"

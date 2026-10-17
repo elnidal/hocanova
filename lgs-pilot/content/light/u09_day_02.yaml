@@ -1,0 +1,187 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 9
+day: 2
+status: draft
+title: "Tıp, deney ve sonuç"
+est_minutes: 7
+new_items: [U9-006, U9-007, U9-008, U9-009, U9-010]
+steps:
+  - item: U9-006
+    card:
+      example_en: "She studies medicine at university. Take your medicine after lunch."
+      example_tr: "Üniversitede tıp okuyor. İlacını öğle yemeğinden sonra al."
+      note_tr: "medicine iki anlamlıdır: study medicine (tıp okumak) / take medicine (ilaç almak)."
+    kullan:
+      id: u9d02-006-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My sister wants to be a doctor, so she studies ________ at university.</en>"
+      options: ["medicine", "furniture", "laundry", "dust"]
+      answer: 0
+      explain: "Doktor olmak için tıp okunur: study medicine."
+    sina:
+      id: u9d02-006-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>In which sentence does \"medicine\" mean the subject of study?</en>"
+      options: ["He studies medicine at university.", "Take your medicine twice a day.", "The medicine is on the table.", "I bought some medicine for my cough."]
+      answer: 0
+      explain: "İlk cümlede medicine = tıp (okunan bölüm); diğerlerinde ilaçtır."
+    tekrar:
+      id: u9d02-006-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>The doctor gave me some ________ for my headache.</en>"
+      options: ["medicine", "science", "gravity", "space"]
+      answer: 0
+      explain: "Doktorun verdiği şey ilaçtır (medicine)."
+  - item: U9-007
+    card:
+      example_en: "Einstein was a genius. She is a brilliant scientist."
+      example_tr: "Einstein bir dahiydi. O parlak (çok zeki) bir bilim insanı."
+      note_tr: "brilliant insan için çok zeki, fikir için harika (a brilliant idea)."
+    kullan:
+      id: u9d02-007-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Albert Einstein is called a ________ because he was extremely intelligent.</en>"
+      options: ["genius", "chemist", "janitor", "relative"]
+      answer: 0
+      explain: "Son derece zeki kişiye dahi (genius) denir."
+    sina:
+      id: u9d02-007-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What do people think about Duru's cousin?</en>"
+      stem: "<en>Duru: My cousin finished university at 17 and speaks five languages. Everybody says she is a genius.</en>"
+      options: ["She is extremely clever.", "She is not interested in school.", "She is afraid of exams.", "She is a bad student."]
+      answer: 0
+      explain: "17 yaşında üniversiteyi bitiren ve beş dil konuşan kişi dahi olarak görülüyor."
+    tekrar:
+      id: u9d02-007-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"brilliant\" in \"a brilliant idea\"?</en>"
+      options: ["wonderful", "terrible", "boring", "ordinary"]
+      answer: 0
+      explain: "a brilliant idea = harika fikir ≈ wonderful."
+  - item: U9-008
+    card:
+      example_en: "The students did an experiment in the laboratory."
+      example_tr: "Öğrenciler laboratuvarda bir deney yaptı."
+      note_tr: "experiment = deney; experience = deneyim; expert = uzman. do / carry out an experiment (make değil)."
+    kullan:
+      id: u9d02-008-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Today we are going to ________ an experiment about plants.</en>"
+      options: ["do", "make", "take", "give"]
+      answer: 0
+      explain: "Kalıp: do an experiment."
+    sina:
+      id: u9d02-008-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word means \"a scientific test\"?</en>"
+      options: ["experiment", "experience", "expert", "expression"]
+      answer: 0
+      explain: "Bilimsel deney: experiment."
+    tekrar:
+      id: u9d02-008-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>She has a lot of ________ in teaching. She has taught for twenty years.</en>"
+      options: ["experience", "experiment", "expert", "exam"]
+      answer: 0
+      explain: "Yirmi yıllık öğretmenlik: deneyim (experience)."
+  - item: U9-009
+    card:
+      example_en: "The result of the experiment was surprising."
+      example_tr: "Deneyin sonucu şaşırtıcıydı."
+      note_tr: "the result(s) of …; as a result = sonuç olarak (neden–sonuç kalıbı)."
+    kullan:
+      id: u9d02-009-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We heated the water for ten minutes. The ________ was steam.</en>"
+      options: ["result", "chore", "flat", "award"]
+      answer: 0
+      explain: "Isıtmanın sonucu buhardır: result."
+    sina:
+      id: u9d02-009-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>What was the result of the experiment?</en>"
+      stem: "<en>We put one plant in the sun and one in a dark room. After two weeks, the plant in the sun was green and tall. The other was small and yellow.</en>"
+      options: ["The plant in the sun grew better.", "Both plants died.", "The plant in the dark grew better.", "Both plants stayed the same."]
+      answer: 0
+      explain: "Güneşteki bitki yeşil ve uzun; karanlıktaki küçük ve sarı."
+    tekrar:
+      id: u9d02-009-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>He didn't study, and ________, he failed the exam.</en>"
+      options: ["as a result", "on time", "at once", "in front of"]
+      answer: 0
+      explain: "Neden–sonuç bağlantısı: as a result (sonuç olarak)."
+  - item: U9-010
+    card:
+      example_en: "Scientists are working on a new vaccine."
+      example_tr: "Bilim insanları yeni bir aşı üzerinde çalışıyor."
+      note_tr: "work on + nesne = üzerinde çalışmak; work for / at = bir yerde ya da biri için çalışmak."
+    kullan:
+      id: u9d02-010-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Elif is ________ a science project about volcanoes.</en>"
+      options: ["working on", "working in", "working by", "working of"]
+      answer: 0
+      explain: "Proje üzerinde çalışmak: work on."
+    sina:
+      id: u9d02-010-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Teacher: What are you doing, Kaan?\nKaan: ________ I'm building a small robot.</en>"
+      options: ["I'm working on a project.", "I'm working for a hospital.", "I'm working at a bank.", "I'm working in the garden."]
+      answer: 0
+      explain: "Küçük robot yapıyor: proje üzerinde çalışıyor."
+    tekrar:
+      id: u9d02-010-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>My dad is a doctor. He works ________ a hospital.</en>"
+      options: ["at", "on", "by", "of"]
+      answer: 0
+      explain: "Çalıştığı yer için work at; üzerinde çalıştığı iş için work on."
+tips:
+  - type: tuzak
+    refs: [U9-008]
+    text: "experiment = deney, experience = deneyim, expert = uzman. Üçü aynı harflerle başlar, anlamları farklı."
+  - type: tuzak
+    refs: [U9-006]
+    text: "medicine yalnız ilaç değildir: study medicine = tıp okumak; take medicine = ilaç almak."
+coach:
+  start: "Gün 2: tıp, dahiler, deney ve sonuç. Laboratuvarda ilk deneyimiz 🧪"
+  end_good: "Süper! Deney yapmayı ve sonucu anlatmayı biliyorsun 🧪 Yarın tartışma ve araştırma."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🧪"
+notifications:
+  morning: "Bugün: tıp, dahi, deney, sonuç ve \"work on\" 🧪"
+  evening: "Experiment, experience, expert: farkı söyleyebilir misin? 🤔"
+  review: "\"Work on\" ile \"work at\" aynı mı? 🏥"
