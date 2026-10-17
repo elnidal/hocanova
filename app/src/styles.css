@@ -72,3 +72,6 @@ button.tk{cursor:pointer}
 .logo b{color:var(--hot)}
 .field{border:2px solid var(--line);background:var(--paper);color:var(--ink);border-radius:12px;padding:10px 12px;font:inherit;width:100%}
 .linkbtn.inline{display:inline;padding:0;font-size:inherit}
+.cardview h2{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.cardview .meaning{font-size:1.15rem;font-weight:800;color:var(--brand)}
+.cardview .example{background:var(--bg);border-radius:12px;padding:10px 14px}.cardview .example p{margin:.2em 0}

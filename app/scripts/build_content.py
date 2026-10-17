@@ -17,6 +17,8 @@ units = []
 for u in range(1, 11):
     it = L(os.path.join(C, f"unit_{u:02d}_items.yaml"))
     days = [L(d) for d in sorted(glob.glob(os.path.join(C, "days", f"u{u:02d}_day_*.yaml")))]
+    days += [L(d) for d in sorted(glob.glob(os.path.join(C, "light", f"u{u:02d}_day_*.yaml")))]  # hafif mod (hikâyesiz)
+    days.sort(key=lambda d: d["day"])
     dump(f"unit_{u:02d}.json", {"unit": u, "title": it["unit_title"], "items": it["items"], "days": days})
     units.append({"unit": u, "title": it["unit_title"], "itemCount": len(it["items"]), "dayCount": len(days)})
 dump("index.json", {

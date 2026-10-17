@@ -18,7 +18,10 @@ export function buildQuestionIndex({ units, retention }) {
   }
   for (const u of units) for (const d of u.days || []) {
     const meta = { unit: u.unit, day: d.day }
-    for (const s of d.steps || []) for (const role of ['sezdir', 'kullan', 'sina']) add(s.item, role, s[role], meta)
+    for (const s of d.steps || []) {
+      for (const role of ['sezdir', 'kullan', 'sina']) add(s.item, role, s[role], meta)
+      add(s.item, 'review', s.tekrar, meta) // hafif mod: ders günü gösterilmeyen, tekrarda kullanılan soru
+    }
     for (const q of d.review || []) add(q.item, 'review', q, meta)
   }
   for (const sec of retention?.sections || []) for (const q of sec.questions) add(q.item, 'retention', q, {})

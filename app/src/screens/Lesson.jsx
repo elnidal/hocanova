@@ -5,17 +5,25 @@ import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
 import RichText from '../components/RichText.jsx'
 import Run from '../components/Run.jsx'
+import CardView from '../components/CardView.jsx'
 
 const TIP = { hafiza_kancasi: 'Hafıza kancası', tuzak: 'Tuzak', lgs_taktigi: 'LGS taktiği', kelime_ailesi: 'Kelime ailesi', ilginc_bilgi: 'İlginç bilgi', mini_dilbilgisi: 'Mini dilbilgisi' }
-const STAGE = ['sezdir', 'kullan', 'sina']
-const PHASES = ['story', 'scene', 'steps', 'review', 'tips']
+const STAGE_LABEL = { card: 'Kart', sezdir: 'Sezdir', kullan: 'Kullan', sina: 'Sına' }
+const PHASES_STORY = ['story', 'scene', 'steps', 'review', 'tips']
+const PHASES_LIGHT = ['steps', 'review', 'tips'] // hafif mod: hikâye ve sahne yok
 
 export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext, hasNextDay }) {
+  const light = day.mode === 'light'
+  const PHASES = light ? PHASES_LIGHT : PHASES_STORY
+  const STAGE = light ? ['card', 'kullan', 'sina'] : ['sezdir', 'kullan', 'sina']
   const [plan] = useState(() => planLesson(day, state.progress, Date.now()))
   const newSet = useMemo(() => new Set(day.new_items), [day])
-  const [phase, setPhase] = useState('story')
+  const [phase, setPhase] = useState(light ? 'steps' : 'story')
   const [stats, setStats] = useState({ first: 0, total: 0, wrong: [] })
-  const stepList = useMemo(() => plan.steps.flatMap(s => s.parts.map(k => ({ itemId: s.item, role: k, q: day.steps.find(x => x.item === s.item)[k] }))), [plan, day])
+  const stepList = useMemo(() => plan.steps.flatMap(s => s.parts.map(k => {
+    const step = day.steps.find(x => x.item === s.item)
+    return k === 'card' ? { itemId: s.item, role: 'card', card: step.card } : { itemId: s.item, role: k, q: step[k] }
+  })), [plan, day])
   const reviewList = useMemo(() => [
     ...plan.review.map(q => ({ itemId: q.item, role: 'review', q })),
     ...plan.extraReview.map(id => ({ itemId: id, role: 'review', q: pickQuestion(qIndex, id, state.progress) })).filter(e => e.q),
@@ -71,14 +79,21 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
 
   if (phase === 'steps') return (
     <Run key="steps" list={stepList} canRetry
-      render={(entry, shuffled, last, onAnswer, onNext) => {
+      render={(entry, shuffled, last, onAnswer, onNext, i) => {
         const it = items[entry.itemId]
+        if (entry.role === 'card') return (
+          <div className="wrap">
+            {head(day.title, 'Bugünün ifadeleri')}
+            {i === 0 && <Coach text={day.coach.start} />}
+            <CardView item={it} card={entry.card} status={statusOf(state.progress, entry.itemId)} last={last} onNext={onNext} />
+          </div>
+        )
         const ctx = entry.role === 'sezdir' && day.story.find(l => l.id === entry.q.context)
         return (
           <div className="wrap">
-            {head('Sezdir · Kullan · Sına', 'Bugünün ifadeleri')}
+            {head(light ? 'Kullan · Sına' : 'Sezdir · Kullan · Sına', 'Bugünün ifadeleri')}
             <div className="spread">
-              <span className="stage">{STAGE.map(s => <i key={s} className={s === entry.role ? 'on' : ''}>{s[0].toUpperCase() + s.slice(1)}</i>)}</span>
+              <span className="stage">{STAGE.map(s => <i key={s} className={s === entry.role ? 'on' : ''}>{STAGE_LABEL[s]}</i>)}</span>
               <span className="row">{entry.retry && <span className="chip unc">tekrar</span>}<span className={`chip ${statusOf(state.progress, entry.itemId)}`}>{it.display}</span></span>
             </div>
             {ctx && <div className="ctx">{rt(ctx.text)}</div>}
@@ -100,7 +115,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       render={(entry, shuffled, last, onAnswer, onNext) => (
         <div className="wrap">
           {head('Tekrar', 'Önceki günlerden')}
-          <Coach text="Türkçe yok: bakalım önceki ifadeler aklında kalmış mı?" />
+          <Coach text={light ? 'Önceki günlerden bazı ifadeleri tekrar edelim.' : 'Türkçe yok: bakalım önceki ifadeler aklında kalmış mı?'} />
           <Question key={entry.q.id} q={shuffled} mode="learn" last={last} items={items} onAnswer={onAnswer} onNext={onNext} />
         </div>
       )}

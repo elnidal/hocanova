@@ -6,7 +6,7 @@ export default function Run({ list, render, onResult, onEnd }) {
   const [queue, setQueue] = useState(list)
   const [i, setI] = useState(0)
   const entry = queue[i]
-  const shuffled = useMemo(() => entry && shuffleOptions(entry.q), [entry]) // eslint-disable-line react-hooks/exhaustive-deps
+  const shuffled = useMemo(() => (entry?.q ? shuffleOptions(entry.q) : null), [entry]) // eslint-disable-line react-hooks/exhaustive-deps
   if (!entry) return null
   const last = i + 1 === queue.length
   return render(entry, shuffled, last,

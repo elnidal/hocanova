@@ -173,7 +173,22 @@ test('gerçek içerik: tüm sorularda answer 0 ve ≥2 şık; her adım kelimesi
   }
   for (const u of units) for (const d of u.days) for (const s of d.steps) {
     const roles = index.get(s.item).filter(q => q.day === d.day && q.unit === u.unit).map(q => q.role)
-    for (const r of ['sezdir', 'kullan', 'sina']) assert.ok(roles.includes(r), `${s.item} ${r}`)
+    const need = d.mode === 'light' ? ['kullan', 'sina', 'review'] : ['sezdir', 'kullan', 'sina'] // hafif modda sezdir yok; tekrar sorusu var
+    for (const r of need) assert.ok(roles.includes(r), `${s.item} ${r}`)
   }
   assert.ok(n > 500)
+})
+
+test('hafif mod: tekrar sorusu indekste "review" rolüyle; ders planında ilk adım kart', () => {
+  const light = { unit: 7, days: [{ day: 1, mode: 'light', steps: [{ item: 'L', card: {}, kullan: { id: 'k', options: ['a', 'b'], answer: 0 }, sina: { id: 's', options: ['a', 'b'], answer: 0 }, tekrar: { id: 't', options: ['a', 'b'], answer: 0 } }] }] }
+  const idx = buildQuestionIndex({ units: [light], retention: null })
+  assert.deepEqual(idx.get('L').map(q => `${q.id}:${q.role}`).sort(), ['k:kullan', 's:sina', 't:review'])
+  const plan = planLesson(light.days[0], createProgress(), T0)
+  assert.deepEqual(plan.steps[0].parts, ['card', 'kullan', 'sina'])
+  const known = applyUnitCheck(createProgress(), { itemIds: ['L'], claimed: ['L'], verified: { L: true }, fakes: 0, now: T0 })
+  assert.deepEqual(planLesson(light.days[0], known, T0).steps[0].parts, ['kullan', 'sina'])
+  // tekrar sorusu, ders günü soruları doğru yapılmışsa tekrarda seçilir
+  let p = ans(createProgress(), 'L', 'k', true, 'lesson', T0)
+  p = ans(p, 'L', 's', true, 'lesson', T0)
+  assert.equal(pickQuestion(idx, 'L', p).id, 't')
 })
