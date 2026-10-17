@@ -1,0 +1,118 @@
+# Hafif mod günü (hikâyesiz): kart → Kullan → Sına. ÖRNEK: Ünite 7'nin ilk 4 birimi, Murat onayı bekliyor.
+schema_version: 1
+program: lgs
+mode: light
+unit: 7
+day: 1
+status: draft
+title: "Tatil ve gezi: ilk adım"
+est_minutes: 6
+new_items: [U7-002, U7-003, U7-004, U7-005]
+steps:
+  - item: U7-002
+    card:
+      example_en: "We are going on holiday to Çeşme in July."
+      example_tr: "Temmuzda Çeşme'ye tatile gidiyoruz."
+      note_tr: "vacation Amerikan, holiday İngiliz İngilizcesi; ikisi de \"on vacation / on holiday\" ile kullanılır."
+    kullan:
+      id: u7d01-002-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Our school closes on 20 June. Then we will be on ________ for three months.</en>"
+      options: ["holiday", "lesson", "homework", "report"]
+      answer: 0
+      explain: "Tatilde olmak: be on holiday. Diğer kelimeler bu kalıba girmez."
+    sina:
+      id: u7d01-002-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: Are you doing anything special this summer?\nElif: ________ We are going to Çeşme for two weeks!</en>"
+      options: ["Yes, we are going on holiday.", "No, we are staying at school.", "Yes, we are taking an exam.", "No, we are doing homework."]
+      answer: 0
+      explain: "Çeşme'ye iki hafta gitmek bir tatil planıdır; Elif \"Yes\" demeli ve going on holiday diyebilir. Diğer şıklar anlatılanla çelişiyor."
+  - item: U7-003
+    card:
+      example_en: "We took a day trip to Ephesus. The journey by bus took two hours."
+      example_tr: "Efes'e günübirlik bir gezi yaptık. Otobüs yolculuğu iki saat sürdü."
+      note_tr: "travel çoğunlukla fiildir: \"a travel\" denmez, \"a trip\" denir. journey uzun yolculuk; trip gidip dönülen gezi."
+    kullan:
+      id: u7d01-003-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My uncle loves to ________. He goes to a new country every year.</en>"
+      options: ["travel", "trip", "traveller", "tourism"]
+      answer: 0
+      explain: "\"loves to\" + fiil gelir; fiil olan travel'dır. trip ve tourism isimdir, traveller kişidir."
+    sina:
+      id: u7d01-003-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Duru: How was your weekend?\nBora: Great! We took a short ________ to Bergama and saw the ancient theatre.</en>"
+      options: ["trip", "travel", "tourist", "souvenir"]
+      answer: 0
+      explain: "\"took a short trip\" = kısa bir geziye çıktık. \"a travel\" denmez; tourist kişidir, souvenir hediyelik eşyadır."
+  - item: U7-004
+    card:
+      example_en: "My cousin lives abroad. He works in Germany."
+      example_tr: "Kuzenim yurt dışında yaşıyor. Almanya'da çalışıyor."
+      note_tr: "abroad zarftır: go abroad / live abroad. \"go to abroad\" yanlıştır."
+    kullan:
+      id: u7d01-004-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My cousin lives ________. He works in a hospital in Germany.</en>"
+      options: ["abroad", "to abroad", "in abroad", "at abroad"]
+      answer: 0
+      explain: "abroad kendi başına \"yurt dışında\" anlamı taşır; önüne to / in / at gelmez."
+    sina:
+      id: u7d01-004-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>Ayşe's mother: My daughter is in Rome this week with her English club. She is studying at a language school there, so I can't see her until Sunday.</en>"
+      options: ["Ayşe is abroad this week.", "Ayşe is at home with her mother.", "Ayşe is in İzmir.", "Ayşe is on a ship."]
+      answer: 0
+      explain: "Roma başka bir ülkede; anne kızını Pazar'a kadar göremeyecek. Yani Ayşe bu hafta yurt dışındadır."
+  - item: U7-005
+    card:
+      example_en: "We went sightseeing in İstanbul and took many photos."
+      example_tr: "İstanbul'da gezip gördük ve çok fotoğraf çektik."
+      note_tr: "go sightseeing, go shopping / go swimming / go camping gibi \"go + -ing\" kalıbıdır."
+    kullan:
+      id: u7d01-005-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We went ________ in İstanbul. We took photos of Hagia Sophia and the Blue Mosque.</en>"
+      options: ["sightseeing", "swimming", "skiing", "camping"]
+      answer: 0
+      explain: "Ayasofya ve Sultanahmet'i gezip fotoğraf çekmek: go sightseeing."
+    sina:
+      id: u7d01-005-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the programme, what will the tourists do on the morning of Day 2?</en>"
+      stem: "<en>Tour programme: Day 2\nMorning: City sightseeing tour (Galata Tower and the Grand Bazaar)\nAfternoon: Free time\nEvening: Dinner on the Bosphorus</en>"
+      options: ["Visit famous places in the city", "Have dinner by the sea", "Go swimming at the beach", "Relax at the hotel"]
+      answer: 0
+      explain: "Sabah: city sightseeing tour = şehrin ünlü yerlerini gezmek. Akşam yemeği akşam, boş zaman öğleden sonra."
+tips:
+  - type: tuzak
+    refs: [U7-003]
+    text: "travel çoğunlukla fiildir: \"I love to travel.\" Bir gezi için \"a trip\" dersin: \"We took a trip to Bergama.\" \"A travel\" denmez."
+  - type: tuzak
+    refs: [U7-004]
+    text: "abroad önüne to / in / at almaz: go abroad, live abroad. \"Go to abroad\" yanlıştır."
+coach:
+  start: "Yeni ünite: Tourism! Bugün tatil ve gezi dünyasından 4 ifade. Bavulunu hazırla 🧳"
+  end_good: "Harika! Bavulun tam 🧳 Yarın yeni yerler seni bekliyor."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🧳"
+notifications:
+  morning: "Bugün tatil kelimeleri: trip mi, travel mı? 🧳"
+  evening: "Kuzeni yurt dışında yaşıyor: \"lives abroad\" mı, \"lives to abroad\" mı? 🌍"
+  review: "İstanbul'u gezip görmek için hangi kalıp? go ____ 📸"
