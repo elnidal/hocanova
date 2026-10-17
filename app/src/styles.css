@@ -2,7 +2,7 @@
   --bg:#F1F0F7;--paper:#fff;--ink:#1B1E3A;--muted:#62668A;--line:#DCDCEB;
   --brand:#3B4BD8;--brand-soft:#E3E6FC;--hot:#F0614A;--mint:#1E9E77;--amber:#C98A10;
   --shadow:0 1px 2px rgba(27,30,58,.06),0 8px 22px rgba(27,30,58,.07);
-  --f-d:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--f-b:"Nunito Sans","Segoe UI",system-ui,sans-serif;--r:16px;
+  --f-d:"Bricolage Grotesque Variable","Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--f-b:"Nunito Sans","Segoe UI",system-ui,sans-serif;--r:16px;
 }
 @media (prefers-color-scheme:dark){:root{--bg:#12142A;--paper:#1B1E3A;--ink:#ECEDF8;--muted:#A3A6C8;--line:#2E3260;--brand:#8E9BFF;--brand-soft:#262B5C;--hot:#FF8A75;--mint:#53D1A6;--amber:#F0BE55;--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.25);color-scheme:dark}}
 *{box-sizing:border-box}

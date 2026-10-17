@@ -1,0 +1,15 @@
+# Pilot yayını: yerelde derle (npm run content && npm run build), sonra `netlify deploy --dir=app/dist --prod`.
+[build]
+  publish = "app/dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
