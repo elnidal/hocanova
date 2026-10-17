@@ -1,5 +1,5 @@
 import { useEffect, useReducer } from 'react'
-import { createProgress, setLevel } from './engine'
+import { createProgress, setLevel, recordAnswer } from './engine'
 
 const KEY = 'hikayenglish.lgs.app.v1'
 
@@ -15,6 +15,8 @@ const initial = () => ({ progress: createProgress(), placement: null, unit: 1, d
 function reducer(s, a) {
   switch (a.type) {
     case 'placement': return { ...s, placement: { ...a.result, at: a.now }, progress: setLevel(s.progress, a.result.level) }
+    case 'answer': return { ...s, progress: recordAnswer(s.progress, a.payload) }
+    case 'dayDone': return { ...s, doneDays: { ...s.doneDays, [a.key]: { first: a.first, total: a.total, at: a.now } } }
     case 'unit': return { ...s, unit: a.unit }
     case 'reset': return initial()
     default: return s

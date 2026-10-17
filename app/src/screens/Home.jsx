@@ -3,7 +3,7 @@ import Coach from '../components/Coach.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -38,7 +38,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement }) {
           <div className="eyebrow">Bugünün dersi · Gün {nextDay.day}</div>
           <h2>{nextDay.title}</h2>
           <p className="muted">{nextDay.est_minutes} dk · {nextDay.new_items.length} yeni ifade{due ? ` · ${due} tekrar bekliyor` : ''}</p>
-          <button className="btn" disabled>Ders ekranı yakında</button>
+          <button className="btn" onClick={() => onLesson(nextDay.day)}>Derse başla →</button>
         </section>
       ) : (
         <section className="card today"><h2>Bu ünitenin dersleri bitti 🎉</h2></section>

@@ -4,3 +4,6 @@ const get = path => fetch(`${base}content/${path}`).then(r => { if (!r.ok) throw
 
 export const loadIndex = () => (cache.index ??= get('index.json'))
 export const loadUnit = n => (cache[`u${n}`] ??= get(`unit_${String(n).padStart(2, '0')}.json`))
+
+// Tekrar sorusu seçimi için günü olan tüm ünitelerin içeriği (ders başlarken yüklenir).
+export const loadAllUnits = index => Promise.all(index.units.filter(u => u.dayCount).map(u => loadUnit(u.unit)))

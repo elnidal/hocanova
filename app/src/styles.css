@@ -42,3 +42,25 @@ p{margin:0}button{font:inherit;color:inherit;cursor:pointer}
 .opt:hover{border-color:var(--brand-soft)}.opt.on{border-color:var(--brand);background:var(--brand-soft)}
 .nav{display:flex;justify-content:flex-end}
 .linkbtn{background:none;border:0;color:var(--muted);text-decoration:underline;font-size:.8rem;align-self:center}
+.hot{color:var(--hot)}.grow{flex:1 1 100%}
+.btn.sm{min-height:36px;padding:6px 12px;font-size:.85rem}
+.story p+p{margin-top:0}.story{gap:14px}
+.tk{font:inherit;font-weight:800;border:0;background:none;padding:0;border-bottom:2px solid var(--line);color:inherit}
+.tk.new{color:var(--hot);border-bottom-color:var(--hot);background:color-mix(in srgb,var(--hot) 12%,transparent);border-radius:4px;padding:0 3px}
+button.tk{cursor:pointer}
+.say{border:0;background:none;padding:0 4px;cursor:pointer;font-size:.9rem}
+.chat{gap:10px}.msg{max-width:85%;align-self:flex-start;background:var(--bg);border-radius:4px 14px 14px 14px;padding:8px 12px}
+.msg b{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.msg.me{align-self:flex-end;background:var(--brand-soft);border-radius:14px 4px 14px 14px}
+.stage{display:inline-flex;gap:4px}.stage i{font-style:normal;font-size:.75rem;font-weight:800;padding:3px 10px;border-radius:999px;background:var(--line);color:var(--muted)}
+.stage i.on{background:var(--ink);color:var(--paper)}
+.ctx{background:var(--paper);border-left:4px solid var(--hot);border-radius:12px;padding:12px 14px;color:var(--muted);font-size:.95rem}
+.chip.new{background:color-mix(in srgb,var(--hot) 15%,transparent);color:var(--hot)}
+.chip.unc{background:color-mix(in srgb,var(--amber) 18%,transparent);color:var(--amber)}
+.chip.known{background:color-mix(in srgb,var(--mint) 18%,transparent);color:var(--mint)}
+.opt.right{border-color:var(--mint);background:color-mix(in srgb,var(--mint) 15%,transparent)}
+.opt.wrong{border-color:#D2433A;background:color-mix(in srgb,#D2433A 14%,transparent);text-decoration:line-through}
+.opt:disabled{cursor:default}
+.fb{font-weight:800}.fb.ok{color:var(--mint)}.fb.no{color:#D2433A}
+.explain{background:var(--brand-soft);border-radius:12px;padding:10px 12px;margin-top:8px;font-size:.95rem}
+.tip{border-left:4px solid var(--brand)}
