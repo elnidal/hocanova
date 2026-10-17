@@ -1,11 +1,11 @@
-import { counts, dueCount } from '../engine'
+import { counts, dueCount, canStartLesson, retentionState } from '../engine'
 import Coach from '../components/Coach.jsx'
 import Logo from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, account }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -15,6 +15,10 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const nextDay = unit.days.find(d => !state.doneDays[doneKey(d)])
   const due = dueCount(progress, now)
   // Giriş kontrolü: veri yalnız bazı ünitelerde var; ünite başlamadan ve bir kez sunulur.
+  const canLesson = canStartLesson(state.doneDays, now)
+  const retentions = index.retention.unit === unit.unit
+    ? index.retention.sections.map(sec => ({ sec, st: retentionState({ section: sec, unit: unit.unit, doneDays: state.doneDays, retentions: state.retentions, progress, now }) }))
+    : []
   const checkAvail = placement && index.unit_check.unit === unit.unit && !state.unitChecks?.[unit.unit] && doneN === 0
   const coachText = placement
     ? index.coach.placement_result[placement.level].replace(' {name}', '')
@@ -47,6 +51,12 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
             <button className="btn ghost" onClick={() => dispatch({ type: 'skipUnitCheck', unit: unit.unit, now: Date.now() })}>Şimdilik atla</button>
           </div>
         </section>
+      ) : nextDay && !canLesson ? (
+        <section className="card today">
+          <div className="eyebrow">Bugünün dersi</div>
+          <h2>Bugünkü dersi tamamladın ✓</h2>
+          <p className="muted">Gün {nextDay.day} yarın açılır. Günler arası bekleme, kelimelerin kalıcı olması için.</p>
+        </section>
       ) : nextDay ? (
         <section className="card today">
           <div className="eyebrow">Bugünün dersi · Gün {nextDay.day}</div>
@@ -64,6 +74,23 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <h3>{due} ifade tekrar bekliyor</h3>
           <p className="muted small">Bugün en fazla 10 tanesi sorulur; geciken ve yanlış yapılanlar önce.</p>
           <button className="btn ghost" onClick={onReview}>Tekrara başla →</button>
+        </section>
+      )}
+
+      {retentions.some(r => r.st.status !== 'not-started') && (
+        <section className="card">
+          <div className="eyebrow">Kalıcılık kontrolleri</div>
+          {retentions.map(({ sec, st }) => (
+            <div className="spread" key={sec.id}>
+              <div><b>{sec.title}</b><div className="muted small">
+                {st.status === 'done' ? `Tamamlandı · ${st.ok}/${st.n} (%${Math.round(100 * st.ok / st.n)})`
+                  : st.status === 'wait' ? `${st.days} gün sonra açılır`
+                  : st.status === 'need-lessons' ? 'Önce biraz daha ders gerekiyor'
+                  : '10 soru · 4 dk'}
+              </div></div>
+              {st.status === 'ready' && <button className="btn sm" onClick={() => onRetention(sec.id)}>Başla →</button>}
+            </div>
+          ))}
         </section>
       )}
 

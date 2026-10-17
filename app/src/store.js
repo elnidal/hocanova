@@ -10,7 +10,7 @@ export const localAdapter = {
   save(s) { try { localStorage.setItem(KEY, JSON.stringify(s)) } catch { /* özel mod vb. */ } },
 }
 
-const initial = () => ({ progress: createProgress(), placement: null, unit: 1, doneDays: {}, unitChecks: {}, savedAt: 0 })
+const initial = () => ({ progress: createProgress(), placement: null, unit: 1, doneDays: {}, unitChecks: {}, retentions: {}, savedAt: 0 })
 
 function reducer(s, a) {
   if (a.type === 'hydrate') return { ...initial(), ...a.state }
@@ -23,6 +23,7 @@ function apply(s, a) {
     case 'placement': return { ...s, placement: { ...a.result, at: a.now }, progress: setLevel(s.progress, a.result.level) }
     case 'answer': return { ...s, progress: recordAnswer(s.progress, a.payload) }
     case 'dayDone': return { ...s, doneDays: { ...s.doneDays, [a.key]: { first: a.first, total: a.total, at: a.now } } }
+    case 'retentionDone': return { ...s, retentions: { ...(s.retentions || {}), [`u${a.unit}:${a.id}`]: { ok: a.ok, n: a.n, at: a.now } } }
     case 'reviewDone': return { ...s, reviews: [...(s.reviews || []), { first: a.first, total: a.total, at: a.now }].slice(-200) }
     case 'unitCheck': {
       const { unit, ...p } = a.payload

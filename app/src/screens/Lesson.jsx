@@ -10,7 +10,7 @@ const TIP = { hafiza_kancasi: 'Hafıza kancası', tuzak: 'Tuzak', lgs_taktigi: '
 const STAGE = ['sezdir', 'kullan', 'sina']
 const PHASES = ['story', 'scene', 'steps', 'review', 'tips']
 
-export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext }) {
+export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext, hasNextDay }) {
   const [plan] = useState(() => planLesson(day, state.progress, Date.now()))
   const newSet = useMemo(() => new Set(day.new_items), [day])
   const [phase, setPhase] = useState('story')
@@ -120,6 +120,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
         <button className="btn ghost" onClick={onExit}>← Ana ekran</button>
         {onNext && <button className="btn" onClick={onNext}>Gün {day.day + 1} →</button>}
       </div>
+      {!onNext && hasNextDay && <p className="muted">Bugünlük bu kadar ✓ Aralıklı tekrar günler arasında işe yarar: Gün {day.day + 1} yarın seni bekliyor.</p>}
     </div>
   )
 }

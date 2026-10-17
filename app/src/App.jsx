@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react'
 import { loadIndex, loadUnit, loadAllUnits } from './content.js'
-import { buildQuestionIndex } from './engine'
+import { buildQuestionIndex, canStartLesson } from './engine'
 import { useStore } from './store.js'
 import Home from './screens/Home.jsx'
 import Placement from './screens/Placement.jsx'
 import Lesson from './screens/Lesson.jsx'
 import Review from './screens/Review.jsx'
 import UnitCheck from './screens/UnitCheck.jsx'
+import Retention from './screens/Retention.jsx'
 
 export default function App() {
   const [state, dispatch, account] = useStore()
@@ -34,21 +35,24 @@ export default function App() {
   }
   const startLesson = async day => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'lesson', day }) }
   const startUnitCheck = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'unitcheck' }) }
+  const startRetention = async id => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'retention', id }) }
   const startReview = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'review' }) }
 
   if (screen.name === 'loading') return <div className="wrap muted">Ders hazırlanıyor…</div>
   if (screen.name === 'lesson') {
     const day = unit.days.find(d => d.day === screen.day)
     const hasNext = unit.days.some(d => d.day === screen.day + 1)
+    const canNext = hasNext && canStartLesson(state.doneDays, Date.now())
     return <Lesson key={day.day} day={day} items={lessonCtx.items} qIndex={lessonCtx.qIndex} state={state} dispatch={dispatch}
-      onExit={() => setScreen('home')} onNext={hasNext ? () => startLesson(screen.day + 1) : null} />
+      onExit={() => setScreen('home')} hasNextDay={hasNext} onNext={canNext ? () => startLesson(screen.day + 1) : null} />
   }
   if (screen.name === 'unitcheck') return <UnitCheck def={index.unit_check} unit={unit} items={lessonCtx.items} qIndex={lessonCtx.qIndex} state={state} dispatch={dispatch} onExit={() => setScreen('home')} />
+  if (screen.name === 'retention') return <Retention section={index.retention.sections.find(x => x.id === screen.id)} unit={unit.unit} items={lessonCtx.items} dispatch={dispatch} onExit={() => setScreen('home')} />
   if (screen.name === 'review') return <Review state={state} dispatch={dispatch} qIndex={lessonCtx.qIndex} items={lessonCtx.items} onExit={() => setScreen('home')} />
   if (screen === 'placement') return (
     <Placement def={index.placement} coach={index.coach}
       onFinish={result => dispatch({ type: 'placement', result, now: Date.now() })}
       onExit={() => setScreen('home')} />
   )
-  return <Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} account={account} />
+  return <Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} account={account} />
 }
