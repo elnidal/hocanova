@@ -1,0 +1,183 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 10
+day: 8
+status: draft
+title: "Koruma, enerji ve gelecek tahmini"
+est_minutes: 8
+new_items: [U10-036, U10-037, U10-038, U10-039, U10-040]
+steps:
+  - item: U10-036
+    card:
+      example_en: "We should save water and energy. Firefighters save lives."
+      example_tr: "Su ve enerjiden tasarruf etmeliyiz. İtfaiyeciler hayat kurtarır."
+      note_tr: "save üç anlamlıdır: save water / energy = tasarruf etmek; save lives = hayat kurtarmak; save money = biriktirmek."
+    kullan:
+      id: u10d08-036-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Turn off the lights when you leave. It will ________ energy.</en>"
+      options: ["save", "waste", "break", "damage"]
+      answer: 0
+      explain: "Işığı kapatmak enerji tasarrufu sağlar: save energy."
+    sina:
+      id: u10d08-036-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>In which sentence does \"save\" mean \"to keep money\"?</en>"
+      options: ["I save ten liras every week.", "The doctor saved his life.", "Save water in summer.", "Rescue teams save people."]
+      answer: 0
+      explain: "İlk cümlede save = para biriktirmek."
+    tekrar:
+      id: u10d08-036-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What does \"save lives\" mean?</en>"
+      options: ["To keep people alive", "To spend money", "To use less energy", "To collect stamps"]
+      answer: 0
+      explain: "save lives = hayat kurtarmak."
+  - item: U10-037
+    card:
+      example_en: "Solar power and wind power are renewable energy. Coal and oil are fossil fuels."
+      example_tr: "Güneş ve rüzgâr enerjisi yenilenebilir enerjidir. Kömür ve petrol fosil yakıtlardır."
+      note_tr: "renewable energy = clean energy; fossil fuels (kömür, petrol) yenilenemez."
+    kullan:
+      id: u10d08-037-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Solar and wind power are ________ energy because they never run out.</en>"
+      options: ["renewable", "fossil", "toxic", "extinct"]
+      answer: 0
+      explain: "Tükenmeyen enerji yenilenebilir (renewable) enerjidir."
+    sina:
+      id: u10d08-037-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>Why is wind energy good?</en>"
+      stem: "<en>Wind turbines produce electricity from the wind. Unlike coal, wind never runs out and does not pollute the air.</en>"
+      options: ["It is clean and never runs out.", "It is cheap but dirty.", "It uses coal.", "It only works at night."]
+      answer: 0
+      explain: "Rüzgâr tükenmez ve havayı kirletmez."
+    tekrar:
+      id: u10d08-037-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is a fossil fuel?</en>"
+      options: ["Coal", "Wind", "The sun", "A river"]
+      answer: 0
+      explain: "Kömür bir fosil yakıttır."
+  - item: U10-038
+    card:
+      example_en: "National parks protect wildlife. We should preserve our forests."
+      example_tr: "Milli parklar yaban hayatını korur. Ormanlarımızı muhafaza etmeliyiz."
+      note_tr: "protect … from … = …den korumak; preserve = korumak, muhafaza etmek; prevent (önlemek) ile karıştırma."
+    kullan:
+      id: u10d08-038-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Sunscreen can ________ your skin from the sun.</en>"
+      options: ["protect", "prevent", "prefer", "produce"]
+      answer: 0
+      explain: "protect … from … = …den korumak."
+    sina:
+      id: u10d08-038-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["We must protect animals from hunters.", "We must prevent animals from hunters.", "We must prefer animals from hunters.", "We must produce animals from hunters."]
+      answer: 0
+      explain: "Hayvanları avcılardan korumak: protect … from …."
+    tekrar:
+      id: u10d08-038-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word means \"to keep something safe from damage\"?</en>"
+      options: ["preserve", "pollute", "waste", "destroy"]
+      answer: 0
+      explain: "preserve = korumak, muhafaza etmek."
+  - item: U10-039
+    card:
+      example_en: "I think there will be more floods in the future. What do you think will happen?"
+      example_tr: "Bence gelecekte daha çok sel olacak. Sence ne olacak?"
+      note_tr: "will + yalın fiil. Gözle görülen kanıt varsa be going to: Look at those clouds! It's going to rain."
+    kullan:
+      id: u10d08-039-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>I believe cities ________ cleaner by 2050.</en>"
+      options: ["will be", "are", "were", "be"]
+      answer: 0
+      explain: "Gelecek tahmini: will + be."
+    sina:
+      id: u10d08-039-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: What do you think will happen to the Earth in the future?\nSelin: ________ I think it will be warmer.</en>"
+      options: ["I'm not sure, but", "I'm sure it was", "Yesterday", "Last year"]
+      answer: 0
+      explain: "Gelecek tahmini yapılıyor; \"I'm not sure, but I think it will be warmer\" uygun."
+    tekrar:
+      id: u10d08-039-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is a prediction?</en>"
+      options: ["I think it will rain tomorrow.", "It rained yesterday.", "It is raining now.", "It rains a lot in autumn."]
+      answer: 0
+      explain: "will ile gelecekle ilgili bir tahmin yapılıyor."
+  - item: U10-040
+    card:
+      example_en: "If we cut down trees, there will be more landslides."
+      example_tr: "Ağaçları kesersek daha çok heyelan olacak."
+      note_tr: "If / When yan cümlesinde will kullanılmaz: If we cut …, there will be …"
+    kullan:
+      id: u10d08-040-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>If we ________ trees, there will be fewer floods.</en>"
+      options: ["plant", "will plant", "planted", "are going plant"]
+      answer: 0
+      explain: "If cümlesinde Simple Present: If we plant …"
+    sina:
+      id: u10d08-040-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>If it ________ heavily, the river will flood.</en>"
+      options: ["rains", "will rain", "rained", "rain"]
+      answer: 0
+      explain: "If cümlesinde will olmaz; it + fiil+s: rains."
+    tekrar:
+      id: u10d08-040-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["When the ground shakes, we will drop and cover.", "When the ground will shake, we will drop and cover.", "When the ground shook, we will drop and cover.", "When the ground is shaking will, we drop."]
+      answer: 0
+      explain: "When cümlesinde Simple Present, ana cümlede will."
+tips:
+  - type: tuzak
+    refs: [U10-036]
+    text: "save üç anlamlıdır: save water = tasarruf etmek, save lives = hayat kurtarmak, save money = biriktirmek."
+  - type: mini_dilbilgisi
+    refs: [U10-040]
+    text: "If cümlesinde will yok: \"If we cut down trees, there will be more landslides.\" Türkçe \"keseceksek\" etkisiyle will koyma."
+coach:
+  start: "Gün 8: korumak, enerji ve geleceği tahmin etmek. Çözümler başlıyor 🔆"
+  end_good: "Harika! Çözüm ve tahmin kalıplarını biliyorsun 🔆 Yarın öneri, neden-sonuç ve görüş."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 🔆"
+notifications:
+  morning: "Bugün: tasarruf, yenilenebilir enerji, koruma ve gelecek tahmini 🔆"
+  evening: "If cümlesinde \"will\" kullanılır mı? Hayır! 🤔"
+  review: "Save kaç anlamlı? Üç! Hatırlıyor musun? 💧"

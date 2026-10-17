@@ -1,0 +1,151 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 10
+day: 10
+status: draft
+title: "Okuma metni kelimeleri: son gün"
+est_minutes: 7
+new_items: [U10-045, U10-046, U10-047, U10-048]
+steps:
+  - item: U10-045
+    card:
+      example_en: "Earthquakes occur when the plates move."
+      example_tr: "Depremler levhalar hareket edince meydana gelir."
+      note_tr: "occur = happen (daha resmî); geçmiş: occurred (rr çift); take place = gerçekleşmek."
+    kullan:
+      id: u10d10-045-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Floods ________ when rivers get too much water.</en>"
+      options: ["occur", "occurs", "occurring", "to occur"]
+      answer: 0
+      explain: "Floods + yalın fiil: occur."
+    sina:
+      id: u10d10-045-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"occur\"?</en>"
+      options: ["happen", "stop", "escape", "borrow"]
+      answer: 0
+      explain: "occur ≈ happen."
+    tekrar:
+      id: u10d10-045-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>What is the past form of \"occur\"?</en>"
+      options: ["occurred", "occured", "occurd", "occurrd"]
+      answer: 0
+      explain: "occur – occurred (r ikilenir)."
+  - item: U10-046
+    card:
+      example_en: "A sudden storm surprised the tourists. Suddenly, the ground shook."
+      example_tr: "Ani bir fırtına turistleri şaşırttı. Birdenbire yer sallandı."
+      note_tr: "sudden = ani (sıfat: a sudden storm); suddenly = aniden (zarf)."
+    kullan:
+      id: u10d10-046-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We were walking on the beach when ________ it started to rain heavily.</en>"
+      options: ["suddenly", "sudden", "suddenness", "more sudden"]
+      answer: 0
+      explain: "Fiili niteleyen zarf: suddenly."
+    sina:
+      id: u10d10-046-s
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>There was a ________ change in the weather.</en>"
+      options: ["sudden", "suddenly", "suddenness", "suddens"]
+      answer: 0
+      explain: "\"change\" isminin önüne sıfat gelir: sudden."
+    tekrar:
+      id: u10d10-046-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which word is an adverb?</en>"
+      options: ["suddenly", "sudden", "storm", "change"]
+      answer: 0
+      explain: "Zarf (adverb): suddenly."
+  - item: U10-047
+    card:
+      example_en: "The Earth consists of layers."
+      example_tr: "Dünya katmanlardan oluşur."
+      note_tr: "consist of … = …den oluşmak (is consisted of yanlış); be made up of ile eş anlamlı."
+    kullan:
+      id: u10d10-047-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Water ________ hydrogen and oxygen.</en>"
+      options: ["consists of", "is consisted of", "consist", "consisting"]
+      answer: 0
+      explain: "Kalıp: consist of (edilgen yapılmaz)."
+    sina:
+      id: u10d10-047-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["The team consists of ten students.", "The team is consisted of ten students.", "The team consist ten students.", "The team consists ten students."]
+      answer: 0
+      explain: "Kalıp: consist of + isim."
+    tekrar:
+      id: u10d10-047-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which expression is closest in meaning to \"consist of\"?</en>"
+      options: ["be made up of", "be afraid of", "be tired of", "be proud of"]
+      answer: 0
+      explain: "consist of ≈ be made up of."
+  - item: U10-048
+    card:
+      example_en: "The earthquake lasted approximately forty seconds."
+      example_tr: "Deprem yaklaşık kırk saniye sürdü."
+      note_tr: "approximately = about = around (sayıdan önce); nearly = neredeyse."
+    kullan:
+      id: u10d10-048-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The flood covered ________ 500 houses. We don't know the exact number.</en>"
+      options: ["approximately", "definitely", "immediately", "suddenly"]
+      answer: 0
+      explain: "Kesin sayı bilinmiyorsa: approximately (yaklaşık)."
+    sina:
+      id: u10d10-048-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>How many people live in the village?</en>"
+      stem: "<en>The village has approximately 800 people. About 200 of them are children.</en>"
+      options: ["About 800", "Exactly 200", "About 80", "Nearly 8,000"]
+      answer: 0
+      explain: "approximately 800 = yaklaşık 800 kişi."
+    tekrar:
+      id: u10d10-048-t
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to \"approximately\"?</en>"
+      options: ["about", "never", "exactly", "hardly"]
+      answer: 0
+      explain: "approximately ≈ about."
+tips:
+  - type: tuzak
+    refs: [U10-047]
+    text: "consist of edilgen yapılmaz: \"The Earth consists of layers\" (is consisted of yanlış)."
+  - type: kelime_ailesi
+    refs: [U10-046]
+    text: "sudden (sıfat: a sudden storm) → suddenly (zarf: Suddenly, the ground shook). Immediately (hemen) ile suddenly (aniden) aynı değildir."
+coach:
+  start: "Son gün! Okuma metinlerinde en sık geçen kelimeler 📖"
+  end_good: "Tebrikler, Natural Forces ünitesi bitti! 📖 Artık afet ve çevre metinlerini rahat okursun."
+  end_mixed: "Ünite bitti! {weak} biraz karıştı; tekrar kuyruğuna aldım, yakında görüşeceğiz. 📖"
+notifications:
+  morning: "Son gün: meydana gelmek, ani, oluşmak ve yaklaşık 📖"
+  evening: "\"Is consisted of\" doğru mu? Neden? 🤔"
+  review: "\"Occur\" kelimesine en yakın anlam hangisi? 📖"

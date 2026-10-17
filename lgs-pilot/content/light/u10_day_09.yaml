@@ -1,0 +1,151 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 10
+day: 9
+status: draft
+title: "Öneri, neden-sonuç ve görüş"
+est_minutes: 7
+new_items: [U10-041, U10-042, U10-043, U10-044]
+steps:
+  - item: U10-041
+    card:
+      example_en: "We should save water. We shouldn't waste energy."
+      example_tr: "Su tasarruf etmeliyiz. Enerjiyi israf etmemeliyiz."
+      note_tr: "should + yalın fiil (should to yanlış); must / have to daha güçlü zorunluluktur; Why don't we …? da öneridir."
+    kullan:
+      id: u10d09-041-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We ________ turn off the lights when we leave a room.</en>"
+      options: ["should", "should to", "shoulds", "are should"]
+      answer: 0
+      explain: "should + yalın fiil: We should turn off …"
+    sina:
+      id: u10d09-041-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Teacher: How can we save energy at school?\nKaan: ________</en>"
+      options: ["We should turn off the lights.", "We should to turn off the lights.", "We shoulds turn off the lights.", "We should turning off the lights."]
+      answer: 0
+      explain: "Doğru kalıp: should + yalın fiil."
+    tekrar:
+      id: u10d09-041-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which sentence gives advice?</en>"
+      options: ["You should drink more water.", "You drank water yesterday.", "You are drinking water.", "You never drink water."]
+      answer: 0
+      explain: "should ile tavsiye verilir."
+  - item: U10-042
+    card:
+      example_en: "Heavy rain causes floods. Pollution leads to health problems."
+      example_tr: "Şiddetli yağmur sellere neden olur. Kirlilik sağlık sorunlarına yol açar."
+      note_tr: "cause + isim; lead to + isim. cause hem fiil (neden olmak) hem isim (the cause of …)."
+    kullan:
+      id: u10d09-042-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Cutting down trees can ________ landslides.</en>"
+      options: ["cause", "because", "so", "result"]
+      answer: 0
+      explain: "cause + isim: cause landslides."
+    sina:
+      id: u10d09-042-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Pollution leads to health problems.", "Pollution leads health problems.", "Pollution leads at health problems.", "Pollution leads in health problems."]
+      answer: 0
+      explain: "Kalıp: lead to + isim."
+    tekrar:
+      id: u10d09-042-t
+      type: situation
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What is the cause of a flood?</en>"
+      options: ["Heavy rain", "A rainbow", "A first aid kit", "A vaccine"]
+      answer: 0
+      explain: "Seli çoğunlukla şiddetli yağmur başlatır."
+  - item: U10-043
+    card:
+      example_en: "Scientists predict that sea levels will rise. A weather forecast is a prediction."
+      example_tr: "Bilim insanları deniz seviyelerinin yükseleceğini tahmin ediyor. Hava tahmini bir tahmindir."
+      note_tr: "predict = bilgiye dayanarak önceden söylemek; guess = bilmeden tahmin etmek; weather forecast = hava tahmini."
+    kullan:
+      id: u10d09-043-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Scientists use computers to ________ the weather for the next week.</en>"
+      options: ["predict", "prevent", "protect", "produce"]
+      answer: 0
+      explain: "Gelecek haftanın havasını önceden söylemek: predict."
+    sina:
+      id: u10d09-043-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>In which sentence is the speaker making a guess, NOT a prediction based on information?</en>"
+      options: ["I don't know the answer, so I'll guess: it's 42.", "The weather forecast says it will rain tomorrow.", "Scientists say the Earth will get warmer.", "Satellites show a storm is coming."]
+      answer: 0
+      explain: "Bilgi olmadan söylenen tahmin guess'tir."
+    tekrar:
+      id: u10d09-043-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which one is a prediction?</en>"
+      options: ["The forecast says it will snow tomorrow.", "It snowed yesterday.", "It is snowing now.", "It never snows here."]
+      answer: 0
+      explain: "Gelecekle ilgili bilgiye dayalı söz: prediction."
+  - item: U10-044
+    card:
+      example_en: "I agree with you. I don't agree with him."
+      example_tr: "Sana katılıyorum. Ona katılmıyorum."
+      note_tr: "\"I am agree\" yanlış → I agree. agree with + kişi / fikir; disagree = katılmamak."
+    kullan:
+      id: u10d09-044-k
+      type: dialogue_complete
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A: I think we should plant more trees.\nB: Yes, I ________ with you.</en>"
+      options: ["agree", "am agree", "agrees", "agreeing"]
+      answer: 0
+      explain: "agree fiildir; am ile kullanılmaz: I agree."
+    sina:
+      id: u10d09-044-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Duru: In my opinion, recycling is very important.\nBora: ________ We should all recycle.</en>"
+      options: ["I agree with you.", "I am agree with you.", "I agrees you.", "I not agree with you."]
+      answer: 0
+      explain: "Katılmak için: I agree with you."
+    tekrar:
+      id: u10d09-044-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["I don't agree with you.", "I am not agree with you.", "I don't agree to you.", "I not agree with you."]
+      answer: 0
+      explain: "Olumsuz: don't agree with."
+tips:
+  - type: tuzak
+    refs: [U10-043]
+    text: "predict bilgiye dayanır (hava tahmini), guess bilmeden tahmin etmektir. İkisi de Türkçede \"tahmin etmek\"."
+  - type: tuzak
+    refs: [U10-044]
+    text: "\"Katılıyorum\" → I agree (I am agree değil). Görüş kalıpları: In my opinion …, I think …, I agree with you."
+coach:
+  start: "Gün 9: öneri vermek, neden-sonuç kurmak ve görüş belirtmek 💬"
+  end_good: "Harika! Görüşünü İngilizce söyleyebiliyorsun 💬 Yarın son gün."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. 💬"
+notifications:
+  morning: "Bugün: should, neden olmak, tahmin etmek ve katılmak 💬"
+  evening: "\"I am agree\" doğru mu? 🤔"
+  review: "Predict mi, guess mi? Hava tahmini hangisi? 🌦️"

@@ -1,0 +1,185 @@
+schema_version: 1
+program: lgs
+mode: light
+unit: 10
+day: 7
+status: draft
+title: "Çevre, türler, atık ve geri dönüşüm"
+est_minutes: 7
+new_items: [U10-031, U10-032, U10-033, U10-034, U10-035]
+steps:
+  - item: U10-031
+    card:
+      example_en: "We must protect the environment. Cars harm the environment."
+      example_tr: "Çevreyi korumalıyız. Arabalar çevreye zarar verir."
+      note_tr: "environment = doğal çevre (sosyal çevre değil); environmental issues = çevre sorunları; harm = zarar vermek."
+    kullan:
+      id: u10d07-031-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Plastic bags harm the ________. They stay in nature for hundreds of years.</en>"
+      options: ["environment", "chore", "allowance", "vaccine"]
+      answer: 0
+      explain: "Doğada yüzlerce yıl kalan çöp çevreye zarar verir (environment)."
+    sina:
+      id: u10d07-031-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S05
+      prompt: "<en>What was the Green Week about?</en>"
+      stem: "<en>Our school started a Green Week. Students collected rubbish from the park, planted trees and made posters about environmental issues.</en>"
+      options: ["Protecting the environment", "Learning to cook", "Playing football", "Visiting museums"]
+      answer: 0
+      explain: "Çöp toplama, ağaç dikme ve çevre sorunları afişleri: çevreyi koruma."
+    tekrar:
+      id: u10d07-031-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["Pollution harms the environment.", "Pollution harm the environment.", "Pollution harms to the environment.", "Pollution harms of the environment."]
+      answer: 0
+      explain: "Pollution tekil: harms the environment (edatsız)."
+  - item: U10-032
+    card:
+      example_en: "Some animals are endangered because their forests are disappearing."
+      example_tr: "Bazı hayvanların nesli tükenme tehlikesinde, çünkü ormanları yok oluyor."
+      note_tr: "extinct = nesli tükenmiş; endangered = nesli tükenme tehlikesinde. species tekil ve çoğul aynıdır (one species, many species)."
+    kullan:
+      id: u10d07-032-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Dinosaurs lived millions of years ago, but now they are ________.</en>"
+      options: ["extinct", "endangered", "common", "crowded"]
+      answer: 0
+      explain: "Artık hiç yaşamayan türler nesli tükenmiştir (extinct)."
+    sina:
+      id: u10d07-032-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>Why are many species endangered?</en>"
+      stem: "<en>Many animal species are endangered because people destroy their homes. If we don't protect them, some of them may become extinct.</en>"
+      options: ["People destroy their homes.", "They don't like food.", "They want to leave the Earth.", "They travel too much."]
+      answer: 0
+      explain: "Metne göre insanlar yaşam alanlarını yok ediyor."
+    tekrar:
+      id: u10d07-032-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which sentence is correct?</en>"
+      options: ["There are many species in the rainforest.", "There are many specieses in the rainforest.", "There are many specie in the rainforest.", "There is many species in the rainforest."]
+      answer: 0
+      explain: "species çoğulda da aynıdır: many species."
+  - item: U10-033
+    card:
+      example_en: "Don't waste water. Toxic waste is dangerous for nature."
+      example_tr: "Suyu israf etme. Zehirli atık doğa için tehlikelidir."
+      note_tr: "fiil: israf etmek (Don't waste water); isim: atık (toxic waste, wastewater = atık su)."
+    kullan:
+      id: u10d07-033-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Please don't ________ water. Turn off the tap while you brush your teeth.</en>"
+      options: ["waste", "wear", "wait", "wake"]
+      answer: 0
+      explain: "Suyu israf etme: waste water."
+    sina:
+      id: u10d07-033-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>In which sentence is \"waste\" a noun?</en>"
+      options: ["Toxic waste can harm rivers.", "Don't waste your time.", "He wastes a lot of paper.", "We waste too much food."]
+      answer: 0
+      explain: "İlk cümlede waste isimdir (atık); diğerlerinde fiildir (israf etmek)."
+    tekrar:
+      id: u10d07-033-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Factories must not pour toxic ________ into the sea.</en>"
+      options: ["waste", "wastes", "wasting", "wasted"]
+      answer: 0
+      explain: "toxic waste = zehirli atık (sayılamaz isim)."
+  - item: U10-034
+    card:
+      example_en: "Farmers grow crops. The harvest was good this year."
+      example_tr: "Çiftçiler ekin yetiştirir. Bu yıl hasat iyiydi."
+      note_tr: "loss of harvest = ürün kaybı. Neden-sonuç zinciri: drought → crops die → food shortage."
+    kullan:
+      id: u10d07-034-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Wheat and corn are important ________ in many countries.</en>"
+      options: ["crops", "chores", "relatives", "squares"]
+      answer: 0
+      explain: "Buğday ve mısır ekinlerdir (crops)."
+    sina:
+      id: u10d07-034-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What happened because of the drought?</en>"
+      stem: "<en>There was no rain for months. The crops dried up, and the farmers lost their harvest. Food became more expensive.</en>"
+      options: ["The harvest was lost.", "The harvest was very good.", "The farmers sold more crops.", "Food became cheaper."]
+      answer: 0
+      explain: "Kuraklık yüzünden ekinler kurudu ve hasat kayboldu."
+    tekrar:
+      id: u10d07-034-t
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which is the correct order of cause and effect?</en>"
+      options: ["drought → crops die → food shortage", "food shortage → drought → crops die", "crops die → food shortage → drought", "drought → food shortage → crops die"]
+      answer: 0
+      explain: "Önce kuraklık, sonra ekinler ölür, sonra yiyecek kıtlığı."
+  - item: U10-035
+    card:
+      example_en: "We recycle paper and glass. You can reuse plastic bottles."
+      example_tr: "Kâğıt ve camı geri dönüştürürüz. Plastik şişeleri yeniden kullanabilirsin."
+      note_tr: "reduce – reuse – recycle (3R); recycling bin = geri dönüşüm kutusu; recyclable = geri dönüştürülebilir."
+    kullan:
+      id: u10d07-035-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Put the paper in the ________ bin.</en>"
+      options: ["recycling", "laundry", "cooking", "sweeping"]
+      answer: 0
+      explain: "Kâğıt geri dönüşüm kutusuna atılır (recycling bin)."
+    sina:
+      id: u10d07-035-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Which one can we recycle?</en>"
+      options: ["A glass bottle", "A used tissue", "Dirty food", "A broken light"]
+      answer: 0
+      explain: "Cam şişe geri dönüştürülebilir."
+    tekrar:
+      id: u10d07-035-t
+      type: gap_fill
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which one completes the sentence?</en>"
+      stem: "<en>Reduce, ________, recycle: these are the three Rs.</en>"
+      options: ["reuse", "remove", "repair", "record"]
+      answer: 0
+      explain: "Üç R: reduce, reuse, recycle."
+tips:
+  - type: tuzak
+    refs: [U10-031]
+    text: "environment = doğal çevre. Türkçedeki \"çevre\" sosyal çevreyi de kapsar; İngilizcede sosyal çevre için \"people around you\" / \"social circle\" denir."
+  - type: lgs_taktigi
+    refs: [U10-034, U10-007]
+    text: "Neden–sonuç sorusunda oku çiz: drought → crops die → food shortage. Soru bu zincirin bir halkasını ister."
+coach:
+  start: "Gün 7: çevre, canlı türleri, atık ve geri dönüşüm ♻️"
+  end_good: "Süper! Çevre haberlerini çözmek artık kolay ♻️ Yarın koruma, tahmin ve çözüm."
+  end_mixed: "Fena değil! {weak} biraz karıştı; yarın tekrarda yeniden karşılaşacağız. ♻️"
+notifications:
+  morning: "Bugün: çevre, nesli tükenmek, atık, ekin ve geri dönüşüm ♻️"
+  evening: "\"Waste\" fiil mi isim mi? İkisi de! 🤔"
+  review: "Üç R nedir? Reduce, reuse, ...? ♻️"
