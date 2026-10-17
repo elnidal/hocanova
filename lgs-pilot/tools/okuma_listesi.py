@@ -2,7 +2,7 @@
 Kullanım (repo kökünden):  python3 lgs-pilot/tools/okuma_listesi.py --unit 1 --days 1 2 3
 Çıktı: docs/okuma_listesi/u01_gun_01-02-03.html  (tek dosya, tarayıcıda açılır, işaretler tarayıcıda saklanır)
 """
-import argparse, html, os, re, yaml
+import argparse, glob, html, os, re, yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 C = os.path.join(ROOT, "lgs-pilot", "content")
@@ -145,6 +145,52 @@ def day_html(d, items, uid):
     return "\n".join(out), bool(notif_bad)
 
 
+LIGHT_Q = [
+    ("kart", "Kart: örnek cümleler doğal İngilizce mi, Türkçe karşılıkları doğru mu, tuzak notları doğru mu?"),
+    ("tek_dogru", "Her soruda tek ve savunulabilir doğru cevap var mı? (ilk şık işaretli)"),
+    ("celdirici", "Çeldiriciler adil mi? (ikinci bir doğru cevap yok, tamamen saçma da değil)"),
+    ("ipucu", "Sına soruları kelimeyi bilmeden çözülemiyor mu? (şıklara bakarak bulunmuyor)"),
+    ("lgs_bicim", "Sına soruları gerçek LGS biçimine (kök, uzunluk, dil) benziyor mu?"),
+    ("tekrar", "Tekrar soruları Kullan/Sına'dan farklı bir bağlamda mı, hâlâ adil mi?"),
+    ("aciklama", "Açıklamalar doğru ve öğretici mi?"),
+    ("yazim", "İngiliz yazımı (colour, favourite, realise…) kullanılmış mı? Present Perfect dilbilgisi yok mu?"),
+]
+
+
+def day_html_light(d, items, uid):
+    D = f'u{uid}d{d["day"]}'
+    out = [f'<details class="day" open><summary><span class="dn">Gün {d["day"]}</span> {esc(d["title"])} <span class="muted">· {d.get("est_minutes", "?")} dk · {len(d["steps"])} birim · hikâyesiz (hafif mod)</span></summary>']
+    out.append('<h3>Bu günün ifadeleri <span class="muted small">(anlam ve seçim doğru mu, LGS için öğretilmeye değer mi?)</span></h3>')
+    rows = []
+    for st in d["steps"]:
+        it = items.get(st["item"], {})
+        rows.append(f'<tr><td><b>{esc(it.get("display", st["item"]))}</b><br><code>{st["item"]}</code></td><td>{esc(it.get("meaning_tr", ""))}<br><span class="muted">{esc(it.get("theme", ""))}</span></td><td>{judge(f"{D}.item.{st["item"]}", f"{it.get("display", st["item"])}: anlam doğru ve öğretilmeye değer mi?")}</td></tr>')
+    out.append('<div class="tw"><table><thead><tr><th>İfade</th><th>Anlam / tema</th><th>Kontrol</th></tr></thead><tbody>' + "".join(rows) + "</tbody></table></div>")
+    out.append("<h3>Koç açılışı</h3>")
+    out.append(f'<p class="coach">{esc(d["coach"]["start"])}</p>')
+    out.append("<h3>Kartlar ve sorular <span class=\"muted small\">(öğrenci önce kartı görür, sonra Kullan ve Sına çözer; Tekrar sorusu günler sonra gelir)</span></h3>")
+    for st in d["steps"]:
+        it = items.get(st["item"], {})
+        c = st.get("card", {})
+        out.append(f'<div class="step"><h4>{esc(it.get("display", st["item"]))} <code>{st["item"]}</code> <span class="muted small">{esc(it.get("meaning_tr", ""))}</span></h4>')
+        out.append(f'<div class="q"><div class="qh"><b>Kart</b></div><p class="stem"><em class="en">{esc(c.get("example_en", ""))}</em></p><p class="muted">{esc(c.get("example_tr", ""))}</p>' + (f'<p class="explain">💡 {esc(c["note_tr"])}</p>' if c.get("note_tr") else "") + flag(f"{D}.card.{st['item']}", f"Kart {it.get('display', st['item'])}") + "</div>")
+        for role, name in (("kullan", "Kullan"), ("sina", "Sına"), ("tekrar", "Tekrar (sonraki günlerde gelir)")):
+            if role in st:
+                q = st[role]
+                out.append(f'<div class="role"><span class="rb {role}">{name}</span>{question_html(q, items, f"{D}.q.{q["id"]}", f"Soru {q["id"]} ({name}, {it.get("display", st["item"])})")}</div>')
+        out.append("</div>")
+    out.append("".join(judge(f"{D}.qs.{k}", f"Sorular · {t}") for k, t in LIGHT_Q))
+    out.append("<h3>Hap bilgiler</h3>")
+    for i, t in enumerate(d["tips"]):
+        out.append(f'<div class="tip"><span class="muted">{esc(t["type"])}</span><p>{esc(t["text"])}</p>{flag(f"{D}.tip.{i}", f"Hap bilgi {i + 1} ({t["type"]})")}</div>')
+    out.append("<h3>Koç kapanışı ve bildirimler</h3>")
+    out.append(f'<p class="coach">İyi: {esc(d["coach"].get("end_good", ""))}</p><p class="coach">Karışık: {esc(d["coach"].get("end_mixed", ""))}</p>')
+    out.append("<ul class=\"notif\">" + "".join(f'<li><b>{k}</b> ({len(v)} kar.{" ⚠ 90 üstü" if len(v) > 90 else ""}): {esc(v)}</li>' for k, v in d["notifications"].items()) + "</ul>")
+    out.append("".join(judge(f"{D}.gen.{k}", f"Genel · {t}") for k, t in GENERAL_Q))
+    out.append("</details>")
+    return "\n".join(out), any(len(v) > 90 for v in d["notifications"].values())
+
+
 CSS = """
 :root{--bg:#f1f0f7;--paper:#fff;--ink:#1b1e3a;--muted:#62668a;--line:#dcdceb;--brand:#3b4bd8;--ok:#1e9e77;--no:#d2433a;--hl:#fff3b0}
 @media (prefers-color-scheme:dark){:root{--bg:#12142a;--paper:#1b1e3a;--ink:#ecedf8;--muted:#a3a6c8;--line:#2e3260;--brand:#8e9bff;--ok:#53d1a6;--no:#ff877e;--hl:#5a4d10}}
@@ -169,7 +215,7 @@ ol{margin:.2em 0 .2em 1.2em;padding:0}li.right{color:var(--ok);font-weight:700}.
 .j.good .ok{background:var(--ok);border-color:var(--ok);color:#fff}.j.bad .no{background:var(--no);border-color:var(--no);color:#fff}.j.flag{margin:2px 0}.j .sm{font-size:.75rem;min-height:26px}.j.flag .no{opacity:.65}.j.flag.bad .no{opacity:1}
 .bar{position:fixed;left:0;right:0;bottom:0;background:var(--paper);border-top:2px solid var(--line);padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;z-index:5}
 .bar button{font:inherit;font-weight:800;background:var(--brand);color:#fff;border:0;border-radius:10px;padding:8px 16px;cursor:pointer}.bar button.g{background:transparent;color:var(--ink);border:2px solid var(--line)}
-@media print{.bar{display:none}details{box-shadow:none}.j textarea{display:block}}
+input.whoin{font:inherit;border:2px solid var(--line);border-radius:10px;padding:6px 10px;background:var(--paper);color:var(--ink);min-width:260px}\n@media print{.bar{display:none}details{box-shadow:none}.j textarea{display:block}}
 """
 
 JS = """
@@ -199,10 +245,13 @@ all.forEach(el => {
   if (ta) ta.addEventListener('input', () => { S[el.dataset.id] = { ...(S[el.dataset.id] || { v: 'no' }), n: ta.value }; save(); });
 });
 stats();
+const whoEl=document.getElementById('who'); if(whoEl){ whoEl.value=S._who||''; whoEl.addEventListener('input',()=>{S._who=whoEl.value;save();}); }
 document.getElementById('cp').onclick = async () => {
   const lines = all.filter(e => (S[e.dataset.id] || {}).v === 'no').map(e => {
     const n = (S[e.dataset.id] || {}).n; return `• [${e.dataset.id}] ${e.dataset.label}${n ? ' — ' + n : ''}`; });
-  const txt = lines.length ? `Okuma listesi sorunları (${lines.length}):\\n` + lines.join('\\n') : 'Sorun işaretlenmedi.';
+  const who = (document.getElementById('who')||{}).value || '';
+  const head = (who ? `Okuyan: ${who}\\n` : '') + document.title + '\\n';
+  const txt = head + (lines.length ? `Sorunlar (${lines.length}):\\n` + lines.join('\\n') : 'Sorun işaretlenmedi.');
   try { await navigator.clipboard.writeText(txt); document.getElementById('st').textContent = `Kopyalandı: ${lines.length} sorun. Claude'a yapıştır.`; }
   catch (e) { prompt('Kopyala (Ctrl/Cmd+C):', txt); }
 };
@@ -213,30 +262,51 @@ document.getElementById('cl').onclick = () => { if (confirm('Tüm işaretler ve 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--unit", type=int, default=1)
-    ap.add_argument("--days", type=int, nargs="+", default=[1, 2, 3])
+    ap.add_argument("--days", type=int, nargs="*", default=None, help="gün numaraları; verilmezse ünitenin tüm günleri")
     a = ap.parse_args()
     items = {i["id"]: i for i in yaml.safe_load(open(os.path.join(C, f"unit_{a.unit:02d}_items.yaml"), encoding="utf-8"))["items"]}
-    parts, warns = [], []
-    for n in a.days:
-        d = yaml.safe_load(open(os.path.join(C, "days", f"u{a.unit:02d}_day_{n:02d}.yaml"), encoding="utf-8"))
-        h, bad = day_html(d, items, a.unit)
+    files = {}
+    for sub in ("days", "light"):
+        for f in sorted(glob.glob(os.path.join(C, sub, f"u{a.unit:02d}_day_*.yaml"))):
+            files[int(re.search(r"_day_(\d+)", f).group(1))] = f
+    days = a.days if a.days else sorted(files)
+    parts, warns, light = [], [], False
+    for n in days:
+        d = yaml.safe_load(open(files[n], encoding="utf-8"))
+        if d.get("mode") == "light":
+            light = True
+            h, bad = day_html_light(d, items, a.unit)
+        else:
+            h, bad = day_html(d, items, a.unit)
         parts.append(h)
         if bad:
             warns.append(n)
-    tag = "-".join(f"{n:02d}" for n in a.days)
-    title = f"Okuma listesi · Ünite {a.unit} · Gün {', '.join(map(str, a.days))}"
+    all_days = not a.days
+    tag = "tum" if all_days else "-".join(f"{n:02d}" for n in days)
+    ut = items[next(iter(items))].get("unit", a.unit)
+    unit_title = yaml.safe_load(open(os.path.join(C, f"unit_{a.unit:02d}_items.yaml"), encoding="utf-8")).get("unit_title", "")
+    title = f"Okuma listesi · Ünite {a.unit} ({unit_title}) · " + ("tüm günler" if all_days else f"Gün {', '.join(map(str, days))}")
+    how = (
+        '<b>Nasıl kullanılır:</b> Her günü sırayla oku. Önce ifadelerin anlamına bak, sonra her kartı ve sorusunu oku. Doğru şık <b style="color:var(--ok)">yeşil ✓</b> ile işaretli (uygulamada şıklar karışık gelir). '
+        'Bir kriter iyiyse <b>✓</b>, sorun varsa <b>✗</b> ve kısa not yaz; tek bir kart/soru/bilgi için <b>⚑</b> kullan. Hepsini işaretlemek zorunda değilsin: yalnız sorun gördüğün yerleri işaretlemen yeterli. '
+        'İşaretlerin bu tarayıcıda saklanır, sonra kaldığın yerden devam edebilirsin. Bitince alttaki <b>Sorunları kopyala</b> düğmesine bas ve çıkan metni Murat\'a gönder.<br>'
+        '<span class="muted">Odak: öğretilen anlam doğru mu, sorular tek doğru cevaplı ve adil mi, İngilizce doğal mı, LGS\'ye benziyor mu? Durum: tüm günler TASLAK (hafif mod: hikâyesiz kart + soru).</span>'
+        if light else
+        '<b>Nasıl kullanılır:</b> Her günü sırayla oku (hikâye → sahne → sorular). Doğru şık <b style="color:var(--ok)">yeşil ✓</b>; uygulamada şıklar karışık gelir. Bir kriter iyiyse <b>✓</b>, sorun varsa <b>✗</b> ve kısa not yaz. Tek bir satır/soru için <b>⚑</b> kullan. İşaretlerin bu tarayıcıda saklanır. Bitince alttaki <b>Sorunları kopyala</b> ile bana yapıştır; düzeltmeleri ben yaparım.<br>'
+        '<span class="muted">Doğrulayıcının zaten denetlediği şeyler (çeviri yasağı, answer: 0, ≥3 satır, bildirim ≤90) burada ikinci planda; sen insan gözü gereken kısma odaklan: doğallık, mizah, adillik, doğruluk. Durum: tüm günler TASLAK.</span>'
+    )
     doc = f"""<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{CSS}</style></head>
 <body data-key="okuma:u{a.unit}:{tag}"><div class="wrap">
 <div class="muted">Hikayenglish LGS · pilot öncesi içerik okuması</div><h1>{title}</h1>
-<div class="how"><b>Nasıl kullanılır:</b> Her günü sırayla oku (hikâye → sahne → sorular). Doğru şık <b style="color:var(--ok)">yeşil ✓</b>; uygulamada şıklar karışık gelir. Bir kriter iyiyse <b>✓</b>, sorun varsa <b>✗</b> ve kısa not yaz. Tek bir satır/soru için <b>⚑</b> kullan. İşaretlerin bu tarayıcıda saklanır. Bitince alttaki <b>Sorunları kopyala</b> ile bana yapıştır; düzeltmeleri ben yaparım.<br>
-<span class="muted">Doğrulayıcının zaten denetlediği şeyler (çeviri yasağı, answer: 0, ≥3 satır, bildirim ≤90) burada ikinci planda; sen insan gözü gereken kısma odaklan: doğallık, mizah, adillik, doğruluk. Durum: tüm günler TASLAK.</span></div>
+<div class="how">{how}</div>
+<p><label>Okuyan kişinin adı: <input id="who" class="whoin" placeholder="Ad Soyad (isteğe bağlı)"></label></p>
 {"".join(parts)}
 </div>
 <div class="bar"><span id="st"></span><button id="cp">Sorunları kopyala</button><button id="cl" class="g">Sıfırla</button></div>
 <script>{JS}</script></body></html>"""
     out_dir = os.path.join(ROOT, "docs", "okuma_listesi")
     os.makedirs(out_dir, exist_ok=True)
-    out = os.path.join(out_dir, f"u{a.unit:02d}_gun_{tag}.html")
+    out = os.path.join(out_dir, f"u{a.unit:02d}_{'tum_gunler' if all_days else 'gun_' + tag}.html")
     open(out, "w", encoding="utf-8").write(doc)
     print("ok", out, f"({len(doc) // 1024} KB)", "| 90 üstü bildirim olan günler:", warns or "yok")
 
