@@ -1,0 +1,303 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 5
+status: draft
+title: "Tavuk dansı yarışması"
+est_minutes: 10
+characters: [Ece, Duru, Kaan, Bora, Selin, Ege (Ece'nin kuzeni), Elif, Ece'nin annesi]
+new_items: [U1-079, U1-084, U1-083, U1-071, U1-097, U1-099]
+
+story:
+  - id: s01
+    text: "Pastadan sonra herkes salona dağıldı."
+  - id: s02
+    text: "Duru yine en sevdiği yeri bulmuştu: köşedeki puf. Dünya yansa umurunda değildi. Kaan'ın deyişiyle: \"<en>Duru is the most {U1-079|laid-back} person in the world.</en>\""
+  - id: s03
+    text: "Sınav haftasında bile Duru'yu telaşlı gören olmamıştı. Selin güldü: \"<en>Exams? Duru doesn't worry. She's so {U1-079|laid-back}!</en>\""
+  - id: s04
+    text: "Kaan ise tam tersiydi: odaya giren herkesle tanıştı, Elif'e okulu anlattı, Ece'nin babasıyla futbol konuştu."
+  - id: s05
+    text: "Ece'nin annesi şaşırdı: \"<en>Kaan talks to everyone! He is very {U1-084|outgoing}.</en>\""
+  - id: s06
+    text: "Elif de Ece'ye fısıldadı: \"<en>Your friend Kaan is so {U1-084|outgoing}. He knows everyone now!</en>\""
+  - id: s07
+    text: "Bora içini çekti: \"<en>He's {U1-084|outgoing}, and I'm… shy.</en>\""
+  - id: s08
+    text: "Partinin tek sorunu Ece'nin kuzeni Ege'ydi."
+  - id: s09
+    text: "Ege kendi cips paketine kimseyi yaklaştırmıyor, bir taneyi bile paylaşmıyordu. Kaan homurdandı: \"<en>Why is he so {U1-083|mean}?</en>\""
+  - id: s10
+    text: "Kaan bir oyun önerdi: \"<en>{U1-008|How about} a dance contest?</en>\" Herkes bağırdı: \"<en>{U1-022|Sounds fun}!</en>\""
+  - id: s11
+    text: "Ege burun kıvırdı: \"<en>No, thanks. Dancing is for babies.</en>\" Selin üsteledi: \"<en>Why do you always {U1-019|refuse}? Come on!</en>\""
+  - id: s12
+    text: "Ege bu kez Bora'nın dansına güldü: \"<en>You dance like a chicken!</en>\" Selin kaşlarını çattı: \"<en>Don't be {U1-083|mean}, Ege. That's not nice.</en>\""
+  - id: s13
+    text: "Yarışmanın hakemi grubun en {U1-079|LAID-BACK} üyesi Duru'ydu; puftan hiç kalkmadan puan veriyordu."
+  - id: s14
+    text: "Ege gizlice puan kâğıdına kendi adını yazdı. Elif gördü: \"<en>Hey! That's not {U1-071|fair}!</en>\""
+  - id: s15
+    text: "Duru gözlerini açtı: \"<en>A judge must be {U1-071|fair}. Ege, you didn't even dance!</en>\""
+  - id: s16
+    text: "Ege kıvırmaya çalıştı: \"<en>{U1-021|Sorry, I can't} dance. My leg hurts.</en>\" Kaan güldü: \"<en>Another {U1-007|excuse}! Bora, he took your job!</en>\""
+  - id: s17
+    text: "Sonunda puanlar {U1-071|FAIR} bir şekilde sayıldı ve birinci… Bora oldu! Tavuk dansı herkesi büyülemişti."
+  - id: s18
+    text: "Pastanın son dilimleri de bitti. Kaan karnını tuttu: \"<en>I'm so {U1-097|full}! I can't eat any more.</en>\""
+  - id: s19
+    text: "Bora üçüncü dilimini bitirmişti: \"<en>I'm not {U1-097|full}. I'm {U1-099|stuffed}!</en>\""
+  - id: s20
+    text: "Duru puftan zor doğruldu: \"<en>Me too. I'm {U1-099|stuffed}. Wake me up next year.</en>\""
+  - id: s21
+    text: "Ece'nin annesi bir tabak meyve getirdi ama kimse dokunamadı: \"<en>Are you all {U1-097|full}?</en>\" Hep bir ağızdan: \"<en>Yes! {U1-099|Stuffed}!</en>\""
+  - id: s22
+    text: "Tam o sırada Ege, elinde cips paketiyle Ece'nin yanına geldi: \"<en>Ece, I want to {U1-002|apologise}. I was {U1-083|mean} today. Do you want some chips?</en>\""
+  - id: s23
+    text: "Ece gülümsedi: \"<en>{U1-025|Why not}?</en>\" Kaan fısıldadı: \"<en>Chips for everyone? Now that's {U1-071|fair}!</en>\""
+  - id: s24
+    text: "Işıklar söndü ve duvarda sürpriz video başladı: bütün arkadaşları Ece'ye tek tek mesaj gönderiyordu."
+  - id: s25
+    text: "Kaan gururla bağırdı: \"<en>See? I {U1-055|kept the secret}!</en>\" Herkes güldü; kimse ona inanmadı."
+  - id: s26
+    text: "Ece gözleri dolarak herkese baktı: puftan kalkmayan Duru, durmadan konuşan Kaan, tavuk dansıyla Bora, her zaman yanında olan Selin… \"Bu yıl en güzel hediyem sizsiniz,\" dedi."
+
+scene:
+  - id: c01
+    speaker: Elif
+    text: "<en>Kaan is so outgoing. He talked to everyone at the party!</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>Yes, and Duru is very laid-back. She never worries.</en>"
+  - id: c03
+    speaker: Elif
+    text: "<en>Ege was mean at first, but he apologised. That was nice of him.</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>I'm stuffed. I ate three pieces of cake!</en>"
+
+steps:
+  - item: U1-079
+    sezdir:
+      id: d05-079-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"laid-back\" ne anlama geliyordu?"
+      options: ["rahat, kafası rahat", "çalışkan", "utangaç", "sinirli"]
+      answer: 0
+    kullan:
+      id: d05-079-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Duru never worries about anything. She is very ________.</en>"
+      options: ["laid-back", "stressed", "angry", "busy"]
+      answer: 0
+    sina:
+      id: d05-079-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Mert best?</en>"
+      stem: "<en>Mert never gets angry or stressed. Even before exams, he is calm and relaxed.</en>"
+      options: ["laid-back", "bad-tempered", "jealous", "nervous"]
+      answer: 0
+  - item: U1-084
+    sezdir:
+      id: d05-084-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"outgoing\" ne anlama geliyordu?"
+      options: ["dışa dönük, sosyal", "utangaç", "yorgun", "sessiz"]
+      answer: 0
+    kullan:
+      id: d05-084-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan loves meeting new people and talking to them. He is ________.</en>"
+      options: ["outgoing", "shy", "quiet", "lazy"]
+      answer: 0
+    sina:
+      id: d05-084-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which word describes Elif?</en>"
+      stem: "<en>Elif: I'm new at this school, but I've already made ten friends. I love talking to people!</en>"
+      options: ["outgoing", "shy", "mean", "unreliable"]
+      answer: 0
+  - item: U1-083
+    sezdir:
+      id: d05-083-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"mean\" ne anlama geliyordu?"
+      options: ["cimri; kaba", "komik", "aç", "korkak"]
+      answer: 0
+    kullan:
+      id: d05-083-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>He never shares his things and he says unkind words. He is ________.</en>"
+      options: ["mean", "generous", "caring", "supportive"]
+      answer: 0
+    sina:
+      id: d05-083-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>In which sentence does \"mean\" have a DIFFERENT meaning?</en>"
+      options: ["What does this word mean?", "Don't be mean to your brother.", "Ege was mean to Bora.", "She is never mean to animals."]
+      answer: 0
+      explain: "Birinci cümlede mean = \"anlamına gelmek\" (fiil). Diğerlerinde \"kaba, cimri\" (kişilik)."
+  - item: U1-071
+    sezdir:
+      id: d05-071-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"fair\" ne anlama geliyordu?"
+      options: ["adil", "komik", "hızlı", "yalancı"]
+      answer: 0
+    kullan:
+      id: d05-071-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Everyone did the same work, so everyone gets the same points. That's ________.</en>"
+      options: ["fair", "mean", "boring", "busy"]
+      answer: 0
+    sina:
+      id: d05-071-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>In which sentence does \"fair\" mean a big event, like a festival or exhibition?</en>"
+      options: ["We went to the book fair last weekend.", "That's not fair!", "Our teacher is fair to everyone.", "A judge must be fair."]
+      answer: 0
+      explain: "book fair = kitap fuarı. Diğerlerinde fair = adil."
+  - item: U1-097
+    sezdir:
+      id: d05-097-z
+      type: meaning
+      context: s18
+      prompt: "Hikâyede \"full\" ne anlama geliyordu?"
+      options: ["tok", "aç", "yorgun", "hasta"]
+      answer: 0
+    kullan:
+      id: d05-097-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>No more cake for me, thanks. I'm ________.</en>"
+      options: ["full", "hungry", "empty", "thirsty"]
+      answer: 0
+    sina:
+      id: d05-097-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Mom: Would you like some more rice?\nKaan: ________</en>"
+      options: ["No, thanks. I'm full.", "Yes, I'm full.", "I'm hungry, no thanks.", "Sorry, I'm late."]
+      answer: 0
+  - item: U1-099
+    sezdir:
+      id: d05-099-z
+      type: meaning
+      context: s19
+      prompt: "Hikâyede \"stuffed\" ne anlama geliyordu?"
+      options: ["tıka basa tok", "peluş oyuncak", "yorgun", "üşümüş"]
+      answer: 0
+    kullan:
+      id: d05-099-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I ate three pieces of cake and two sandwiches. I'm ________!</en>"
+      options: ["stuffed", "hungry", "thirsty", "busy"]
+      answer: 0
+    sina:
+      id: d05-099-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"I'm stuffed.\" Which one is CLOSEST in meaning?</en>"
+      options: ["I'm very full.", "I'm very hungry.", "I'm very tired.", "I'm very happy."]
+      answer: 0
+
+review:
+  - id: d05-r01
+    type: gap_fill
+    item: U1-054
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Selin always does what she says. She always ________.</en>"
+    options: ["keeps her promises", "breaks her promises", "refuses", "tells lies"]
+    answer: 0
+  - id: d05-r02
+    type: trait_match
+    item: U1-050
+    prompt: "<en>What did Kaan do?</en>"
+    stem: "<en>Kaan said, \"I'll bring the music.\" But he forgot it at home.</en>"
+    options: ["He broke his promise.", "He kept his promise.", "He kept a secret.", "He backed up a friend."]
+    answer: 0
+  - id: d05-r03
+    type: dialogue_complete
+    item: U1-055
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Please don't tell anyone about my new song.\nB: ________</en>"
+    options: ["OK, I'll keep it a secret.", "OK, I'll tell everyone.", "Sorry, I'm full.", "Why not? Let's post it!"]
+    answer: 0
+  - id: d05-r04
+    type: synonym
+    item: U1-049
+    prompt: "<en>\"My friends always back me up.\" Which one has the CLOSEST meaning?</en>"
+    options: ["My friends always support me.", "My friends always forget me.", "My friends always invite me.", "My friends are always late."]
+    answer: 0
+  - id: d05-r05
+    type: gap_fill
+    item: U1-092
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Thanks for helping me before the exam. You are so ________!</en>"
+    options: ["supportive", "mean", "laid-back", "full"]
+    answer: 0
+  - id: d05-r06
+    type: trait_match
+    item: U1-070
+    prompt: "<en>Which word describes Ece's grandma?</en>"
+    stem: "<en>Ece's grandma calls every day and asks, \"Are you OK? Do you need anything?\"</en>"
+    options: ["caring", "mean", "unreliable", "outgoing"]
+    answer: 0
+  - id: d05-f01
+    type: dialogue_complete
+    item: U1-026
+    lgs_like: true
+    prompt: "<en>ÜNİTE FİNALİ 1 — Which one completes the dialogue?</en>"
+    stem: "<en>Selin: Hi Bora! We're going to the cinema on Saturday. ________\nBora: Sorry, I can't. I promised to help my grandma.\nSelin: That's OK. Maybe next time!</en>"
+    options: ["Would you like to join us?", "Did you like the film?", "Where is the cinema?", "How much is the ticket?"]
+    answer: 0
+    explain: "Bora \"Sorry, I can't\" diyerek bir daveti reddediyor; boşlukta bir davet olmalı."
+  - id: d05-f02
+    type: message_infer
+    item: U1-050
+    lgs_like: true
+    prompt: "<en>ÜNİTE FİNALİ 2 — Which of the following is NOT true about Selin?</en>"
+    stem: "<en>My best friend is Selin. She always keeps her promises, and I can tell her all my secrets. When I have a problem, she backs me up. She never gets angry. She is calm and laid-back.</en>"
+    options: ["She often breaks her promises.", "She can keep a secret.", "She supports her friend.", "She is a calm person."]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U1-083]
+    text: "mean'in iki anlamı var: \"What does it mean?\" = ne anlama geliyor? ama \"Don't be mean!\" = kaba/cimri olma! LGS bu ikisini karıştırmanı bekler."
+  - type: tuzak
+    refs: [U1-071]
+    text: "fair = adil (\"That's not fair!\") ama book fair = kitap fuarı, science fair = bilim fuarı. Yanında hangi kelime var, ona bak."
+  - type: ilginc_bilgi
+    refs: [U1-079]
+    text: "laid-back kelimesi kelimesine \"arkaya yaslanmış\" demek. Rahat insanı gözünün önüne getir: koltukta geriye yaslanmış, hiçbir şeyi dert etmiyor."
+  - type: mini_dilbilgisi
+    refs: [U1-097, U1-099]
+    text: "full = tok, stuffed = tıka basa tok. Yani stuffed, full'ün abartılı hali. \"I'm full\" kibar, \"I'm stuffed\" daha gündelik."
+
+coach:
+  start: "Pilotun son günü! Parti tüm hızıyla sürüyor ve bir de kuzen Ege var… 😬"
+  end_good: "Tebrikler, Friendship ünitesinin pilotunu bitirdin! 5 günde 30 ifade öğrendin. 3 gün sonra küçük bir kontrol yapacağım."
+  end_mixed: "Bitirdin, helal olsun! {weak} için endişelenme; kontrol gününden önce bir kez daha göreceğiz."
+
+notifications:
+  morning: "Son gün! Dans yarışması, kuzen Ege ve sürpriz video 🎬"
+  evening: "Pilotun son dersi seni bekliyor. 10 dakika, sonra pilot tamam! 🏁"
+  review: "Tek soru: \"What does it mean?\" ile \"Don't be mean!\" aynı mean mi?"
+
+editor:
+  z07: {U1-079: BEKLIYOR, U1-084: BEKLIYOR, U1-083: BEKLIYOR, U1-071: BEKLIYOR, U1-097: BEKLIYOR, U1-099: BEKLIYOR}

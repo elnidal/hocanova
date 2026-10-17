@@ -1,0 +1,315 @@
+schema_version: 1
+program: lgs
+unit: 6
+day: 10
+status: draft
+title: "Sınıfta kamp ateşi"
+est_minutes: 10
+characters: [Kaan, Duru, Selin, Elif, Bora, Ece]
+new_items: [U6-034, U6-045, U6-056, U6-057]
+
+story:
+  - id: s01
+    text: "Salı, İngilizce dersi. Murat Bey perdeleri kapattı ve tahtaya çıtırdayan bir kamp ateşi videosu yansıttı. Sıralar çember oldu; Duru battaniyesini getirmişti bile."
+  - id: s02
+    text: "Murat Bey: \"<en>Campfire round! Only one question: what was {U6-034|the most exciting thing} you did at camp?</en>\""
+  - id: s03
+    text: "Kaan ilk atılan oldu, tabii: \"<en>{U6-010|Canoeing}! When the {U6-054|wind} started, we {U6-018|landed} like pilots. That was {U6-034|the most exciting} moment!</en>\""
+  - id: s04
+    text: "Duru battaniyenin altından: \"<en>I saw the photos. {U6-034|The funniest} moment was you, Kaan, pulling the canoe with me in it.</en>\" Sınıf kahkahalarla çınladı; Kaan da herkesle birlikte güldü."
+  - id: s05
+    text: "Selin: \"<en>For me, the zip-line. I was scared, but I followed the plan.</en>\" Elif: \"<en>Selin, you were {U6-034|the bravest} person at camp!</en>\""
+  - id: s06
+    text: "Bora parmağını kaldırdı: \"<en>Excuse me? I went to the top of the wall! I was {U6-034|the bravest}!</en>\" Selin güldü: \"<en>OK. You were {U6-034|the bravest} on the wall, and I was {U6-034|the bravest} on the zip-line.</en>\""
+  - id: s07
+    text: "Ece: \"<en>And Duru was {U6-034|the calmest} in the dark forest. She found the way!</en>\" Duru: \"<en>I was also {U6-034|the sleepiest}. Every day.</en>\""
+  - id: s08
+    text: "Murat Bey öksürdü: \"<en>For me, {U6-034|the best} moment was my story about {U6-008|scuba diving}. Under the water you feel the {U6-053|freedom}…</en>\" Bütün sınıf bir ağızdan: \"<en>We know! No phones, only fish!</en>\""
+  - id: s09
+    text: "Selin ciddileşti: \"<en>I learned one important rule at the lake: always wear a life jacket. People without one can {U6-017|drown}, even good swimmers.</en>\" Murat Bey başıyla onayladı."
+  - id: s10
+    text: "Tur bittiğinde tahtada uzun bir liste vardı; bu kez Ece'nin değil, bütün sınıfın listesi. Herkes kendinden çok arkadaşlarını anlatmıştı. Murat Bey: \"<en>This is a real team. You {U1-064|support each other}.</en>\""
+  - id: s11
+    text: "Ece defterine baktı: \"<en>Four pages of plans, and my favourite moment wasn't in them.</en>\" Murat Bey: \"<en>Sometimes a surprise is more {U2-092|enjoyable} than a plan.</en>\""
+  - id: s12
+    text: "Sonra Murat Bey videoyu durdurdu ve bir e-posta yansıttı: \"<en>Big news! In April, a partner class from abroad is coming to İzmir. They want to see our {U6-045|historic places}. And you are going to be their guides!</en>\""
+  - id: s13
+    text: "Sınıf bir anda uğuldadı. Kaan: \"<en>Us? Guides? When does it {U6-056|take place}?</en>\""
+  - id: s14
+    text: "Murat Bey: \"<en>The tour {U6-056|takes place} on a Saturday, at ten o'clock.</en>\" Selin hemen Kaan'a döndü: \"<en>Ten, Kaan. Not ten-thirty.</en>\" Kaan: \"<en>Me? Late? Never!</en>\" Kimse inanmadı."
+  - id: s15
+    text: "Ece'nin defteri çoktan açılmıştı: \"<en>Kemeraltı, the Clock Tower, the Agora… Which {U6-045|historic structures} do they want to see first? And is there a {U6-045|temple}?</en>\""
+  - id: s16
+    text: "Murat Bey: \"<en>Good question, Ece. Ephesus is in İzmir too. A very famous {U6-045|temple} was there: the Temple of Artemis.</en>\" Bora: \"<en>Will they eat Turkish food? I can make sütlaç!</en>\""
+  - id: s17
+    text: "Zil çaldı. Selin kimse istemeden sıraları eski yerine taşımaya yardım etti. Murat Bey: \"<en>Thank you, Selin.</en>\" Selin: \"<en>{U6-057|My pleasure}.</en>\""
+  - id: s18
+    text: "Kapıda Kaan, Duru'yu durdurdu: \"<en>Thanks for finding the way in the forest, Duru. Really.</en>\" Duru: \"<en>{U6-057|My pleasure}. Now let me sleep.</en>\""
+  - id: s19
+    text: "Bora da Elif'e döndü: \"<en>Thanks for singing at the campfire every night. It was {U6-034|the best} part of the camp.</en>\" Elif: \"<en>{U6-057|My pleasure}! Next time, you play the drums!</en>\""
+  - id: s20
+    text: "Ece, Kaan'ın omzuna dokundu: \"<en>Don't worry, Kaan. I'm {U1-093|understanding}. I'll call you at nine on Saturday morning. And at nine-fifteen. And at nine-thirty.</en>\""
+  - id: s21
+    text: "O akşam Ece'nin defterinde yepyeni bir sayfa vardı: \"<en>İzmir Tour – it {U6-056|takes place} on Saturday at 10.00 – DON'T BE LATE (Kaan!)</en>\" Altı ise bomboştu: misafirler kimdi, hangi ülkeden geliyorlardı? Murat Bey bunu henüz söylememişti."
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>What was the most exciting thing you did at camp?</en>"
+  - id: c02
+    speaker: Elif
+    text: "<en>Selin, you were the bravest person at camp!</en>"
+  - id: c03
+    speaker: Murat Bey
+    text: "<en>A partner class wants to see our historic places. The tour takes place on a Saturday.</en>"
+  - id: c04
+    speaker: Murat Bey
+    text: "<en>Thank you, Selin.</en>"
+  - id: c05
+    speaker: Selin
+    text: "<en>My pleasure.</en>"
+
+steps:
+  - item: U6-034
+    sezdir:
+      id: u6d10-034-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede Elif \"Selin, you were the bravest person at camp!\" diyor. \"the bravest person at camp\" ne anlama geliyordu?"
+      options: ["kamptaki en cesur kişi", "kamptaki daha cesur kişi", "kamptaki cesur bir kişi", "kamptaki tek kişi"]
+      answer: 0
+    kullan:
+      id: u6d10-034-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Mount Everest is ________ mountain in the world.</en>"
+      options: ["the highest", "higher", "high", "more high"]
+      answer: 0
+      explain: "Dünyadaki bütün dağlar arasında: üstünlük, the + -est. Kısa sıfatlarda more kullanılmaz."
+    sina:
+      id: u6d10-034-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is correct?</en>"
+      stem: "<en>Favourite camp activity – class vote (25 students)\nZip-line: 10\nCanoeing: 8\nClimbing wall: 5\nNight walk: 2</en>"
+      options: ["The zip-line was the most popular activity.", "The night walk was more popular than canoeing.", "The climbing wall was the most popular activity.", "Canoeing was the least popular activity."]
+      answer: 0
+      explain: "En çok oyu zip-line aldı (10). En az oyu alan gece yürüyüşü (2), kano değil."
+  - item: U6-045
+    sezdir:
+      id: u6d10-045-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede Murat Bey \"A very famous temple was there: the Temple of Artemis\" diyor. \"temple\" ne anlama geliyordu?"
+      options: ["tapınak", "otel", "stadyum", "pazar yeri"]
+      answer: 0
+    kullan:
+      id: u6d10-045-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Ephesus is full of ________ structures. Some of them are about 2,000 years old.</en>"
+      options: ["historic", "modern", "new", "plastic"]
+      answer: 0
+      explain: "2.000 yıllık yapılar historic'tir; modern ve new bu yaşla çelişir."
+    sina:
+      id: u6d10-045-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>The Clock Tower is in Konak Square in İzmir. It was built in 1901, and it is one of the city's most famous historic structures. Many tourists take photos there every day.</en>"
+      options: ["The Clock Tower is more than 100 years old.", "The Clock Tower is in Ankara.", "It was built in 2001.", "Tourists can't take photos there."]
+      answer: 0
+      explain: "1901'de yapılmış, yani 100 yaşından büyük. Saat Kulesi İzmir'de ve turistler orada fotoğraf çekiyor."
+  - item: U6-056
+    sezdir:
+      id: u6d10-056-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede Murat Bey \"The tour takes place on a Saturday, at ten o'clock\" diyor. \"takes place\" ne anlama geliyordu?"
+      options: ["yapılıyor, gerçekleşiyor", "iptal ediliyor", "erteleniyor", "yer değiştiriyor"]
+      answer: 0
+    kullan:
+      id: u6d10-056-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The school concert will ________ in the garden next Friday.</en>"
+      options: ["take place", "take part", "take care", "take risks"]
+      answer: 0
+      explain: "Bir etkinliğin yapılması take place'tir. take part (in) birinin bir etkinliğe katılmasıdır."
+    sina:
+      id: u6d10-056-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which question is suitable for the answer?</en>"
+      stem: "<en>A: ________\nB: It takes place in Konak Square, next Sunday.</en>"
+      options: ["Where does the festival take place?", "Who is your favourite singer?", "How much does it cost?", "Why don't you come with us?"]
+      answer: 0
+      explain: "Cevap bir yer ve zaman veriyor (in Konak Square, next Sunday): etkinliğin nerede yapıldığı sorulmuş."
+  - item: U6-057
+    sezdir:
+      id: u6d10-057-z
+      type: meaning
+      context: s17
+      prompt: "Hikâyede Murat Bey \"Thank you, Selin\" deyince Selin \"My pleasure\" diyor. \"My pleasure\" ne anlama geliyordu?"
+      options: ["Rica ederim, ne demek.", "Özür dilerim.", "Görüşürüz.", "Afiyet olsun."]
+      answer: 0
+    kullan:
+      id: u6d10-057-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A: Thanks for helping me with my homework.\nB: My ________.</en>"
+      options: ["pleasure", "welcome", "thanks", "sorry"]
+      answer: 0
+      explain: "Teşekküre cevap My pleasure ya da You're welcome olur; My welcome diye bir kalıp yoktur."
+    sina:
+      id: u6d10-057-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What do you say?</en>"
+      stem: "<en>You carry your old neighbour's shopping bags to her door. She smiles and says, 'Thank you so much, dear.'</en>"
+      options: ["My pleasure.", "Get well soon.", "Sorry, wrong number.", "I'd rather not."]
+      answer: 0
+      explain: "Teşekküre verilen kibar cevap My pleasure'dır."
+
+review:
+  - id: u6d10-r01
+    type: synonym
+    item: U6-030
+    prompt: "<en>Which word is closest in meaning to 'magnificent'?</en>"
+    options: ["amazing", "boring", "dangerous", "cheap"]
+    answer: 0
+  - id: u6d10-r02
+    type: gap_fill
+    item: U6-041
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>The train is late. We will arrive at our ________ two hours late.</en>"
+    options: ["destination", "equipment", "courage", "glacier"]
+    answer: 0
+  - id: u6d10-r03
+    type: gap_fill
+    item: U6-042
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Let's sit by the window. The ________ of the lake is beautiful from here.</en>"
+    options: ["view", "wind", "goal", "accident"]
+    answer: 0
+  - id: u6d10-r04
+    type: situation
+    item: U6-043
+    prompt: "<en>Water falls from a high rock into a river. What is it?</en>"
+    options: ["a waterfall", "a glacier", "a flashlight", "a destination"]
+    answer: 0
+  - id: u6d10-r05
+    type: gap_fill
+    item: U6-044
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>The bus went slowly along the ________. There were many sharp turns between the mountains.</en>"
+    options: ["mountainous road", "waterfall", "glacier", "view"]
+    answer: 0
+  - id: u6d10-r06
+    type: gap_fill
+    item: U6-055
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>On our holiday, we want to ________ the old streets of Mardin.</en>"
+    options: ["explore", "drown", "attack", "land"]
+    answer: 0
+  - id: u6d10-r07
+    type: message_infer
+    item: U6-035
+    lgs_like: true
+    stem_id: S08
+    prompt: "<en>Who likes climbing more than canoeing?</en>"
+    stem: "<en>Ali: I prefer canoeing to climbing.\nSu: I prefer climbing to canoeing.\nEla: I'd rather sleep in the hammock.\nCan: I like canoeing and climbing the same.</en>"
+    options: ["Su", "Ali", "Ela", "Can"]
+    answer: 0
+    explain: "prefer A to B = A'yı B'ye tercih etmek. Su tırmanmayı kanoya tercih ediyor; Ali tam tersini."
+  - id: u6d10-r08
+    type: synonym
+    item: U6-032
+    lgs_like: true
+    stem_id: S12
+    prompt: "<en>What does the underlined word mean?</en>"
+    stem: "<en>The film was <u>disappointing</u>. The story was boring and the ending was bad.</en>"
+    options: ["not as good as we hoped", "very funny", "really exciting", "full of action"]
+    answer: 0
+    explain: "Hikâye sıkıcı, son kötü: film beklenen kadar iyi değil, yani disappointing."
+  - id: u6d10-r09
+    type: situation
+    item: U6-031
+    lgs_like: true
+    stem_id: S14
+    prompt: "<en>How was Bora's story?</en>"
+    stem: "<en>Bora told the class a story about his first chicken dance. Everybody laughed a lot, and even Murat Bey had tears in his eyes.</en>"
+    options: ["amusing", "disappointing", "dangerous", "mysterious"]
+    answer: 0
+    explain: "Herkesi güldüren hikâye amusing'dir."
+  - id: u6d10-r10
+    type: table_graph
+    item: U6-033
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the table, which of the following is correct?</en>"
+    stem: "<en>Camp        Price      Activities   Distance from school\nPine Camp   2,000 TL   5            50 km\nLake Camp   1,500 TL   3            80 km\nRock Camp   2,500 TL   7            120 km</en>"
+    options: ["Rock Camp has the most activities.", "Lake Camp is the most expensive.", "Pine Camp is farther than Lake Camp.", "Lake Camp is closer than Pine Camp."]
+    answer: 0
+    explain: "En çok etkinlik Rock Camp'te (7). En pahalı Rock Camp; Pine Camp (50 km) Lake Camp'ten (80 km) daha yakın."
+  - id: u6d10-r11
+    type: message_infer
+    item: U6-014
+    lgs_like: true
+    stem_id: S02
+    prompt: "<en>Which question is NOT answered in the text?</en>"
+    stem: "<en>Aron is a mountain climber. Last winter he climbed a high mountain with two friends and an experienced guide. On the way down, the weather changed and it started to snow. They stayed in a small mountain hut for two nights. They survived because they had warm clothes and enough food. Then a rescue team took them down safely.</en>"
+    options: ["How old is Aron?", "Who did Aron climb with?", "Where did they stay for two nights?", "Why did they survive?"]
+    answer: 0
+    explain: "Kiminle tırmandığı, nerede kaldıkları ve neden hayatta kaldıkları metinde var; Aron'un yaşı yok."
+  - id: u6d10-r12
+    type: dialogue_complete
+    item: U6-036
+    lgs_like: true
+    stem_id: S09
+    prompt: "<en>What is Ozan doing?</en>"
+    stem: "<en>Ada: Would you like to try bungee jumping with me this summer?\nOzan: Thanks for asking, but I'd rather watch you from the ground.</en>"
+    options: ["refusing an offer politely", "accepting an invitation", "making a complaint", "giving directions"]
+    answer: 0
+    explain: "Thanks for asking, but I'd rather … kibar bir rettir: Ozan atlamak yerine izlemeyi yeğliyor."
+  - id: u6d10-r13
+    type: synonym
+    item: U6-055
+    lgs_like: true
+    stem_id: S12
+    prompt: "<en>Which of the following has the closest meaning to the underlined word?</en>"
+    stem: "<en>This summer, we want to <u>explore</u> the old caves near our village with a guide.</en>"
+    options: ["discover and learn about", "clean", "build", "close"]
+    answer: 0
+    explain: "explore = bir yeri gezip tanımak, keşfetmek: discover and learn about."
+
+tips:
+  - type: tuzak
+    refs: [U6-034]
+    text: "the'yi unutma: ❌ most dangerous sport → ✓ the most dangerous sport. Düzensizler: good → better → the best, bad → worse → the worst. Kısa sıfatta -est (the bravest), uzun sıfatta the most (the most exciting)."
+  - type: tuzak
+    refs: [U6-056]
+    text: "take place kelimesi kelimesine \"yer almak\" değildir: The festival takes place in May = Festival mayısta yapılır. Bir etkinliğe katılmak ise take part in."
+  - type: tuzak
+    refs: [U6-057]
+    text: "pleasure tek başına \"zevk, memnuniyet\" demektir. Teşekküre cevap: My pleasure. ya da You're welcome. ❌ My welcome diye bir kalıp yok."
+  - type: ilginc_bilgi
+    refs: [U6-045]
+    text: "Efes'teki Artemis Tapınağı, Antik Dünyanın Yedi Harikası'ndan biriydi. Bugün yerinde yalnızca tek bir sütun ayakta duruyor."
+
+coach:
+  start: "Ünite finali! Kamp ateşi sınıfa taşındı, Murat Bey'in de büyük bir haberi var. Hazır mısın? 🔥"
+  end_good: "Muhteşem bir final! Kamp ateşi turunda bugünün yıldızı sensin ⭐ Sıradaki durak: İzmir!"
+  end_mixed: "Ünite bitti, emeğin büyük! {weak} biraz daha ateş istiyor. Bir tur tekrar, sonra İzmir 🔥"
+
+notifications:
+  morning: "Sınıfta kamp ateşi turu! Herkes kampın bir anını anlatacak. Seninki ne? 🔥"
+  evening: "Murat Bey'in büyük haberi geldi: misafirler, bir cumartesi ve rehber sizsiniz! 🗺️"
+  review: "Teşekküre Selin ne cevap verdi? 'My …' Hatırla 😊"
+
+editor:
+  z07: {U6-034: BEKLIYOR, U6-045: BEKLIYOR, U6-056: BEKLIYOR, U6-057: BEKLIYOR}

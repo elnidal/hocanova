@@ -1,0 +1,341 @@
+schema_version: 1
+program: lgs
+unit: 3
+day: 8
+status: draft
+title: "Murat Bey'in yeni kuralı"
+est_minutes: 10
+characters: [Murat Bey, Kaan, Bora, Duru, Ece, Selin, Elif, Duru'nun annesi]
+new_items: [U3-005, U3-007, U3-008, U3-017, U3-029, U3-030]
+
+story:
+  - id: s01
+    text: "Pazartesi, İngilizce dersi. Murat Bey tahtaya her zamanki gibi kocaman harflerle yazdı: \"<en>NEW RULE: NO {U3-004|DEEP-FRIED} FOOD!</en>\""
+  - id: s02
+    text: "Murat Bey: \"<en>Chips, {U3-004|fried} chicken, doughnuts… not in Junior Chef. You can {U3-005|grill}, you can {U3-007|roast}, you can {U3-008|steam}. Be creative!</en>\""
+  - id: s03
+    text: "Sınıfta bir uğultu koptu. En yüksek ses Kaan'dan geldi: \"<en>No chips?! Chips are my favourite food in the world!</en>\""
+  - id: s04
+    text: "Murat Bey her zamanki sakinliğiyle açıkladı: \"<en>Too much oil, Kaan. {U3-004|Fried} food is often {U3-030|greasy}. I {U2-079|recommend} {U3-008|steamed} vegetables. They're light and healthy.</en>\""
+  - id: s05
+    text: "Kaan: \"<en>{U3-008|Steamed} vegetables? That sounds so {U1-095|boring}!</en>\" Selin sadece kaşını kaldırdı."
+  - id: s06
+    text: "Okuldan sonra iki takım birlikte mahalle pazarına uğradı. Ece elinde listeyle en öndeydi; Selin her tezgâhta domatesleri tek tek inceliyordu."
+  - id: s07
+    text: "Selin: \"<en>Look at the colour and smell them. We only buy {U3-029|fresh} vegetables. That's the rule.</en>\""
+  - id: s08
+    text: "Pazarcı amca 'Bu sabah köyden geldi!' diyerek herkese birer parça domates uzattı. Ece ısırdı: \"<en>Wow, it's so {U3-035|sweet}! Like a fruit!</en>\""
+  - id: s09
+    text: "Elif bir limonu kokladı ve yüzünü buruşturdu: \"<en>This one is really {U3-033|sour}. {U3-029|Fresh} lemon juice for my salad!</en>\""
+  - id: s10
+    text: "Duru bir yaprak roka çiğnedi: \"<en>Rocket is a bit {U3-027|bitter}. I don't mind it.</en>\""
+  - id: s11
+    text: "Bora ise patates tezgâhının önünden ayrılmıyordu: \"<en>Potatoes! I can {U3-017|mash} them. Soft, warm, perfect.</en>\""
+  - id: s12
+    text: "Kaan birden parmaklarını şıklattı: \"<en>Wait! I have an idea. {U3-005|Grilled} chips! They aren't {U3-004|fried}, so they're OK!</en>\""
+  - id: s13
+    text: "Selin: \"<en>Kaan, {U2-085|be realistic}. Chips on a {U3-005|grill}? They'll fall through!</en>\" Kaan: \"<en>Me? Unrealistic? Never!</en>\""
+  - id: s14
+    text: "Akşam Duru'nun evinde ilk deneme başladı. Duru'nun annesi ocağın başındaydı; onun izni olmadan kimse sıcak bir şeye dokunmuyordu."
+  - id: s15
+    text: "Duru'nun annesi: \"<en>Let's {U3-007|roast} some vegetables in the {U3-040|oven}: {U3-049|peppers}, carrots and onions. Forty minutes.</en>\""
+  - id: s16
+    text: "Kaan zamanlayıcıyı kurdu (artık bu onun yeni alışkanlığıydı) ve kendi icadına geçti: patatesleri kalın kalın kesip çizgili döküm tavaya dizdi. \"<en>Look! {U3-005|Grilled} chips, no oil!</en>\""
+  - id: s17
+    text: "On dakika geçti. Patateslerin dışı simsiyah, içi taş gibiydi. Duru: \"<en>I {U3-036|tasted} one. It's black, hard and very {U3-032|salty}. Did you use the whole salt box?</en>\""
+  - id: s18
+    text: "Bu arada Bora pişmiş patatesleri büyük bir kaba doldurmuş, çatalla işe girişmişti: \"<en>{U3-017|Mash}, {U3-017|mash}, {U3-017|mash}! I'm a machine!</en>\""
+  - id: s19
+    text: "Bir çıtırtı duyuldu. Bora'nın elindeki çatal iki büklüm olmuştu: \"<en>Oops. I {U3-017|mashed} the potatoes… and the fork.</en>\""
+  - id: s20
+    text: "Duru'nun annesi kahkahayı bastı ve dolaptan delikli bir sepet çıkardı: \"<en>Forks are for eating, Bora! And this is for the broccoli. We {U3-008|steam} it for five minutes. No oil, no problem.</en>\""
+  - id: s21
+    text: "Kaan bir parça brokoliyi isteksizce ağzına attı ve durdu: \"<en>Wait… {U3-008|steamed} broccoli isn't {U1-095|boring}. It's green and crunchy!</en>\""
+  - id: s22
+    text: "Zamanlayıcı çaldı. Kaan kırk dakika içinde burnunu camın önüne tam on iki kez dayamıştı. Duru'nun annesi tepsiyi çıkardı: \"<en>Perfect! {U3-007|Roasted} vegetables. And don't worry, Duru: nothing {U3-034|spicy}.</en>\""
+  - id: s23
+    text: "Kaan: \"<en>OK, no {U3-005|grilled} chips. But one day I'll {U3-005|grill} some corn with my dad. Real food on a real {U3-005|grill}!</en>\""
+  - id: s24
+    text: "Duru kanepeye uzandı: \"<en>No {U3-030|oily} chips, no {U3-030|greasy} fingers. I like this rule.</en>\""
+  - id: s25
+    text: "Gece sınıf grubuna Murat Bey yazdı: \"<en>Remember, chefs: nothing {U3-030|fatty} or {U3-004|deep-fried}. Healthy and {U3-029|fresh} only!</en>\""
+  - id: s26
+    text: "Hemen arkasından Selin'in mesajı geldi: \"<en>Ece, Elif: Sunday at my grandma's. She's sharing her secret {U3-050|recipe}! 🤫</en>\" Bora: \"<en>Is it something {U3-035|sweet}? Can I come?</en>\""
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>No deep-fried food in Junior Chef! You can grill it, roast it or steam it.</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>I know chips are greasy. But what about grilled chips? Please?</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>Be realistic, Kaan. Let's buy fresh vegetables at the market.</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>And I'll mash the potatoes. Without breaking the fork this time!</en>"
+
+steps:
+  - item: U3-005
+    sezdir:
+      id: u3d08-005-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede Selin'in \"Chips on a grill? They'll fall through!\" cümlesinde \"grill\" ne anlama geliyordu?"
+      options: ["ızgara; ızgarada pişirmek", "buhar; buharda pişirmek", "kızgın yağ; yağda kızartmak", "dondurucu; dondurmak"]
+      answer: 0
+    kullan:
+      id: u3d08-005-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Let's ________ some fish and corn on the barbecue in the garden.</en>"
+      options: ["grill", "steam", "mash", "knead"]
+      answer: 0
+      explain: "Mangal ya da ızgara üzerinde pişirmek grill'dir."
+    sina:
+      id: u3d08-005-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Customer: I'd like the fish, please. Is it fried?\nWaiter: No, it isn't. ________\nCustomer: Great! I prefer that.</en>"
+      options: ["We grill it with a little lemon.", "We fry it in a lot of oil.", "We mash it with a fork.", "We knead it like bread."]
+      answer: 0
+      explain: "Garson 'No, it isn't (fried)' diyor; balığı yağda değil ızgarada pişiriyorlar."
+  - item: U3-007
+    sezdir:
+      id: u3d08-007-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede \"Let's roast some vegetables in the oven\" cümlesinde \"roast\" ne anlama geliyordu?"
+      options: ["fırında kızartmak (sebze, et)", "çiğ çiğ yemek", "suda haşlamak", "yoğurmak"]
+      answer: 0
+    kullan:
+      id: u3d08-007-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>On Sundays, my grandma always ________ a chicken with potatoes in the oven.</en>"
+      options: ["roasts", "steams", "mashes", "kneads"]
+      answer: 0
+      explain: "Et, tavuk ve sebze fırında roast edilir (kek ve ekmek için bake)."
+    sina:
+      id: u3d08-007-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which one is NOT a way of cooking?</en>"
+      options: ["peel", "roast", "grill", "steam"]
+      answer: 0
+      explain: "roast, grill, steam pişirme yöntemi; peel (soymak) pişirmeden önceki hazırlık işi."
+  - item: U3-008
+    sezdir:
+      id: u3d08-008-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede \"We steam it for five minutes. No oil\" cümlesinde \"steam\" ne anlama geliyordu?"
+      options: ["buharda pişirmek", "yağda kızartmak", "ızgarada pişirmek", "çiğ bırakmak"]
+      answer: 0
+    kullan:
+      id: u3d08-008-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't fry the fish. ________ it over boiling water. It's healthier.</en>"
+      options: ["Steam", "Grate", "Spread", "Mash"]
+      answer: 0
+      explain: "Kaynayan suyun üzerinde, suyun buharıyla pişirmek steam'dir."
+    sina:
+      id: u3d08-008-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Mert's dad doing?</en>"
+      stem: "<en>Mert: My dad has a special pot. There is boiling water at the bottom, and the vegetables sit at the top. The hot air from the water cooks them.</en>"
+      options: ["He is steaming vegetables.", "He is frying vegetables.", "He is grilling vegetables.", "He is mashing vegetables."]
+      answer: 0
+      explain: "Sebzeler suya değmiyor, kaynayan suyun buharıyla pişiyor: steam."
+  - item: U3-017
+    sezdir:
+      id: u3d08-017-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede Bora'nın \"I can mash them. Soft, warm, perfect.\" cümlesinde \"mash\" ne anlama geliyordu?"
+      options: ["ezmek, püre yapmak", "soymak", "kızartmak", "dilimlemek"]
+      answer: 0
+    kullan:
+      id: u3d08-017-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Boil the potatoes, drain them and ________ them with a fork.</en>"
+      options: ["mash", "grill", "spread", "squeeze"]
+      answer: 0
+      explain: "Haşlanmış patatesi çatalla ezip püre yapmak mash'tir."
+    sina:
+      id: u3d08-017-s
+      type: process_order
+      lgs_like: true
+      stem_id: S07
+      prompt: "<en>Read the recipe. Which is the correct order?</en>"
+      stem: "<en>Mashed Potatoes\nBefore you boil the potatoes, peel them. When they are soft, drain the water. After that, mash them with a little butter and milk.</en>"
+      options: ["peel → boil → drain → mash", "boil → peel → mash → drain", "peel → drain → boil → mash", "mash → peel → boil → drain"]
+      answer: 0
+      explain: "'Before you boil…, peel them': önce soy, sonra haşla, suyunu süz ve en son ez."
+  - item: U3-029
+    sezdir:
+      id: u3d08-029-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede Selin'in \"We only buy fresh vegetables\" cümlesinde \"fresh\" ne anlama geliyordu?"
+      options: ["taze", "bayat", "pahalı", "yabancı"]
+      answer: 0
+    kullan:
+      id: u3d08-029-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This bread is from this morning. It's still warm and ________.</en>"
+      options: ["fresh", "greasy", "bitter", "sour"]
+      answer: 0
+      explain: "Yeni yapılmış, yeni toplanmış yiyecek fresh'tir; zıttı stale (bayat)."
+    sina:
+      id: u3d08-029-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: Are these strawberries ________?\nSelin: Yes! We picked them in my grandpa's garden this morning.</en>"
+      options: ["fresh", "greasy", "salty", "spicy"]
+      answer: 0
+      explain: "Bu sabah bahçeden toplanan meyve tazedir."
+  - item: U3-030
+    sezdir:
+      id: u3d08-030-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede Murat Bey'in \"Fried food is often greasy\" cümlesinde \"greasy\" ne anlama geliyordu?"
+      options: ["yağlı", "şekerli", "ekşi", "bayat"]
+      answer: 0
+    kullan:
+      id: u3d08-030-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I don't eat the chips from that café. They cook them in a lot of old oil, so they're very ________.</en>"
+      options: ["greasy", "fresh", "sweet", "bitter"]
+      answer: 0
+      explain: "Çok yağda pişen, yağ içinde kalan yiyecek greasy olur."
+    sina:
+      id: u3d08-030-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is correct?</en>"
+      stem: "<en>Canteen menu – How much oil?\nGrilled chicken: a little oil\nFried chips: a lot of oil\nSteamed rice: no oil\nRoasted potatoes: a little oil</en>"
+      options: ["The chips are the greasiest food on the menu.", "The rice is oily.", "The chicken is fried.", "The potatoes are steamed."]
+      answer: 0
+      explain: "En çok yağ cipste (a lot of oil); pilavda hiç yağ yok, tavuk ızgara, patates fırında."
+
+review:
+  - id: u3d08-r01
+    type: gap_fill
+    item: U3-009
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Take the chocolate out of the sun! It's starting to ________.</en>"
+    options: ["melt", "knead", "combine", "spread"]
+    answer: 0
+  - id: u3d08-r02
+    type: dialogue_complete
+    item: U3-011
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: What do I do with the eggs, the sugar and the flour?\nB: ________ them in a big bowl.</en>"
+    options: ["Combine", "Melt", "Spread", "Peel"]
+    answer: 0
+  - id: u3d08-r03
+    type: situation
+    item: U3-016
+    prompt: "<en>Bora is pushing, folding and turning the bread dough with his hands. What is he doing?</en>"
+    options: ["He is kneading it.", "He is melting it.", "He is slicing it.", "He is pouring it."]
+    answer: 0
+  - id: u3d08-r04
+    type: gap_fill
+    item: U3-023
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Use a knife to ________ the chocolate cream on your bread.</en>"
+    options: ["spread", "pour", "knead", "boil"]
+    answer: 0
+  - id: u3d08-r05
+    type: gap_fill
+    item: U3-037
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Kaan gave his grandma ________ flowers for her birthday.</en>"
+    options: ["a bunch of", "a pinch of", "a cup of", "a teaspoon of"]
+    answer: 0
+  - id: u3d08-r06
+    type: situation
+    item: U3-044
+    prompt: "<en>Which one do you make with flour, water and yeast?</en>"
+    options: ["dough", "sauce", "lemonade", "salad"]
+    answer: 0
+  - id: u3d08-r07
+    type: process_order
+    item: U3-045
+    lgs_like: true
+    stem_id: S07
+    prompt: "<en>According to the recipe, what is the first step?</en>"
+    stem: "<en>Ece's Lemonade\nThen, combine the juice with cold water and sugar in a big jug.\nFinally, drink it with some ice.\nFirst, wash the lemons and squeeze them.</en>"
+    options: ["washing and squeezing the lemons", "combining the juice with water", "drinking the lemonade", "buying some ice"]
+    answer: 0
+    explain: "Satırların yazılış sırası karışık; ilk adımı 'First' sözcüğü gösteriyor."
+  - id: u3d08-r08
+    type: text_infer
+    item: U3-050
+    lgs_like: true
+    stem_id: S02
+    prompt: "<en>Which of the following does NOT have an answer in the text?</en>"
+    stem: "<en>Selin: I found a great recipe for pancakes! You need two eggs, a cup of milk and a cup of flour. It takes 20 minutes. Let's try it at my house on Saturday!</en>"
+    options: ["How much sugar do we need?", "How many eggs do we need?", "How long does it take?", "Where will they try the recipe?"]
+    answer: 0
+    explain: "Yumurta sayısı, süre ve yer yazıyor; şekerden hiç söz edilmiyor."
+  - id: u3d08-r09
+    type: text_infer
+    item: U3-048
+    lgs_like: true
+    stem_id: S03
+    prompt: "<en>Which ingredient is NOT mentioned in the recipe?</en>"
+    stem: "<en>Omelette\nIngredients: 3 eggs, a little milk, salt, black pepper, some cheese\nWhisk the eggs and the milk in a bowl. Pour the mixture into a hot pan and sprinkle the cheese on top.</en>"
+    options: ["tomatoes", "eggs", "milk", "cheese"]
+    answer: 0
+    explain: "Malzeme listesinde yumurta, süt ve peynir var; domates yok."
+  - id: u3d08-r10
+    type: dialogue_complete
+    item: U3-040
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Elif: The cake mixture is ready. Is the oven hot?\nSelin: ________\nElif: Great! Then we can bake it now.</en>"
+    options: ["Yes, I heated it to 180°C ten minutes ago.", "No, I'm not hungry.", "Yes, the bowl is in the cupboard.", "Sorry, I can't find the recipe."]
+    answer: 0
+    explain: "Elif 'Great! … bake it now' diyor; demek ki fırın ısınmış."
+
+tips:
+  - type: tuzak
+    refs: [U3-008]
+    text: "steam isim olarak \"buhar\" (the steam from the kettle), fiil olarak \"buharda pişirmek\"tir. Steamed vegetables = buharda pişmiş sebze. Tarif cümlesinin başındaysa fiildir: Steam the broccoli."
+  - type: tuzak
+    refs: [U3-004, U3-007, U3-005]
+    text: "Türkçedeki \"kızartmak\" İngilizcede ayrılır: yağda → fry, fırında (et, sebze) → roast, ızgarada → grill. Pişirme ortamına bak, fiili ona göre seç."
+  - type: kelime_ailesi
+    refs: [U3-030]
+    text: "greasy / oily / fatty üçü de \"yağlı\" ama farkı var: greasy olumsuz, yağ içinde kalmış (greasy chips); oily sıvı yağ içeren (oily fish); fatty hayvansal yağı çok (fatty meat)."
+  - type: kelime_ailesi
+    refs: [U3-029]
+    text: "fresh ↔ stale: taze ekmek fresh bread, bayat ekmek stale bread. Meyve ve sebze bozulmuşsa rotten (çürük) denir."
+
+coach:
+  start: "Murat Bey bugün tahtaya yeni bir kural yazacak ve Kaan'ın en sevdiği şey tehlikede! Bakalım cips bu işten nasıl kurtulacak? 🍟"
+  end_good: "Harika! Bora çatalı büktü ama sen bugünkü kelimeleri hiç bükmeden öğrendin. 👏"
+  end_mixed: "{weak} biraz zorladı, dert değil. Kaan'ın cipsi gibi bazı şeyler ilk denemede yanar; yarın tam kıvamında olacak! 🔥"
+
+notifications:
+  morning: "Murat Bey'in yeni kuralı geldi. Kaan şokta! 🍟"
+  evening: "Kaan cips için bir icat peşinde. Çalışacak mı? 10 dakikada öğren."
+  review: "Tek soru: Bora çatalla patateslere ne yaptı? İngilizcesi neydi?"
+
+editor:
+  z07: {U3-005: BEKLIYOR, U3-007: BEKLIYOR, U3-008: BEKLIYOR, U3-017: BEKLIYOR, U3-029: BEKLIYOR, U3-030: BEKLIYOR}

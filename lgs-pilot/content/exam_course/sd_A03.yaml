@@ -1,0 +1,141 @@
+# LGS Sınav Dili — A03 Metinde var mı, yok mu? (S02, S03). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-A03
+module: A
+title: "Metinde var mı, yok mu?"
+unlock_after: "Ü1 G14"
+minutes: 5
+stems: [S02, S03]
+units: [1]
+intro_tr: "'Hangisinin cevabı metinde yoktur?' ve 'Hangisinden bahsedilmemiştir?' LGS'nin en sevdiği köklerdendir. Burada puanı İngilizce değil, dikkat kaybettirir: NOT kelimesini kaçırmak."
+cards:
+  - title_tr: "NOT'u daire içine al"
+    body_tr: "Bu köklerde dört şıktan ÜÇÜ metinde vardır; sen metinde OLMAYANI ararsın. NOT, CANNOT gibi kelimeler büyük harfle yazılır. Kökü okurken onları daire içine al ki metni okurken unutmayasın."
+    examples_en:
+      - "Which of the following does NOT have an answer in the text?"
+      - "Which of the following is NOT mentioned in the text?"
+      - "Which of the following is NOT true about Kaan?"
+    signal_words: ["NOT", "mentioned", "answer", "true"]
+  - title_tr: "Ele yöntemi"
+    body_tr: "Şıkları sırayla metinde ara. Bulduğun her şıkkın yanına metindeki satırı işaretle ve onu ele. Geriye kalan tek şık cevabındır. Tahmin yürütme; yalnız metinde YAZANA güven."
+    examples_en:
+      - "Where is the concert? → 'at the school hall' ✓ ele"
+      - "What time? → 'at 6 p.m.' ✓ ele"
+      - "How many people will come? → yazmıyor → CEVAP"
+  - title_tr: "Konusu var, ayrıntısı yok tuzağı"
+    body_tr: "En çekici yanlış şık, metinde KONUSU geçen bir sorudur. Metinde 'parti pazar öğleden sonra' yazıyorsa 'Parti ne zaman bitiyor?' sorusunun cevabı yine de yoktur. Konuya değil, istenen BİLGİYE bak."
+    examples_en:
+      - "Text: The party is on Sunday afternoon.  → 'What time does the party finish?' cevapsız"
+  - title_tr: "Aynı bilgi, farklı kelime"
+    body_tr: "Metin ve şık aynı şeyi farklı kelimelerle söyleyebilir. 'She never lies' = 'telling the truth', 'She never tells your secrets' = 'keeping secrets'. Eşanlamlıyı görmezsen var olanı yok sanırsın."
+    examples_en:
+      - "never lies = tells the truth"
+      - "keeps her promises = is reliable"
+    signal_words: ["never", "always", "keep", "tell"]
+worked_example:
+  id: sd-A03-w
+  type: text_infer
+  stem_id: S02
+  context: |-
+    Ece's note: Hi everyone! Wrong Number's first concert is next Saturday at the school hall. It starts at 6 p.m. Please come early because we need to check the sound. Bora, don't forget your drumsticks!
+  prompt: "Which of the following does NOT have an answer in the text?"
+  options:
+    - "How many people will watch the concert?"
+    - "Where is the concert?"
+    - "What time does the concert start?"
+    - "What should Bora bring?"
+  answer: 0
+  explain_tr: "Yer (school hall), saat (6 p.m.) ve Bora'nın getireceği şey (drumsticks) yazıyor; izleyici sayısı yazmıyor. Konser konusu metinde var ama 'kaç kişi' bilgisi yok."
+practice:
+  - id: sd-A03-p01
+    type: text_infer
+    stem_id: S03
+    context: |-
+      Selin is my best friend. She is honest and reliable; she always keeps her promises. She is also very patient. When I have a problem, she listens to me and gives me advice.
+    prompt: "Which of the following is NOT mentioned about Selin?"
+    options:
+      - "She is outgoing."
+      - "She is honest."
+      - "She keeps her promises."
+      - "She gives advice."
+    answer: 0
+    explain_tr: "Metinde honest, keeps her promises ve gives advice geçiyor; 'outgoing' (dışa dönük) yok. Metinde Selin'in birçok iyi özelliği sayıldığı için outgoing de 'olabilir' gibi gelir ama yazmıyor."
+    items: [U1-077, U1-059, U1-054, U1-085, U1-035, U1-084]
+  - id: sd-A03-p02
+    type: text_infer
+    stem_id: S02
+    context: |-
+      Duru's message: Hi Elif! I'm having a small party at my house on Sunday afternoon. My mum is making a chocolate cake. Fıstık will be there too, of course! Can you come? Please reply by Friday.
+    prompt: "Which question is NOT answered in the text?"
+    options:
+      - "What time does the party finish?"
+      - "Where is the party?"
+      - "Who is making the cake?"
+      - "When should Elif reply?"
+    answer: 0
+    explain_tr: "Yer (Duru'nun evi), pastayı yapan (Duru'nun annesi) ve cevap tarihi (Cuma) yazıyor. 'Sunday afternoon' partinin ne zaman olduğunu söylüyor ama bitiş saatini vermiyor."
+    items: [U1-020]
+  - id: sd-A03-p03
+    type: text_infer
+    stem_id: S03
+    context: |-
+      Kaan is very outgoing. He loves meeting new people and he gets on well with everyone. He plays basketball every day after school. But he isn't very patient. He hates waiting, and he is often late for school.
+    prompt: "Which of the following is NOT true about Kaan?"
+    options:
+      - "He is a very patient person."
+      - "He gets on well with people."
+      - "He plays basketball every day."
+      - "He hates waiting."
+    answer: 0
+    explain_tr: "Metin 'he isn't very patient' diyor; şıktaki 'very patient' bunun tersi. 'patient' kelimesi metinde aynen geçtiği için doğru gibi görünür; olumsuzluğu (isn't) gör."
+    items: [U1-084, U1-034, U1-085]
+  - id: sd-A03-p04
+    type: text_infer
+    stem_id: S02
+    context: |-
+      Bora's message: Sorry, Ece! I can't come to band practice today. My grandmother is ill, and I'm going to visit her with my dad. I promise I'll practise at home. See you on Thursday!
+    prompt: "Which of the following does NOT have an answer in the text?"
+    options:
+      - "What time is the band practice?"
+      - "Why can't Bora come to practice?"
+      - "Who is Bora visiting?"
+      - "When will Bora see Ece?"
+    answer: 0
+    explain_tr: "Sebep (büyükannesi hasta), kimi ziyaret ettiği ve Ece'yi ne zaman göreceği (Thursday) yazıyor. Provadan söz ediliyor ama saati verilmiyor."
+    items: [U1-058, U1-007]
+  - id: sd-A03-p05
+    type: text_infer
+    stem_id: S03
+    context: |-
+      Murat Bey's poster: A true friend is always there for you. He or she never tells your secrets to others and never lies to you. True friends support each other and respect each other's opinions.
+    prompt: "Which of the following is NOT mentioned in the text?"
+    options:
+      - "sharing things"
+      - "keeping secrets"
+      - "telling the truth"
+      - "supporting each other"
+    answer: 0
+    explain_tr: "'never tells your secrets' = keeping secrets, 'never lies' = telling the truth, 'support each other' metinde aynen var. Eşyaları paylaşmaktan söz edilmiyor."
+    items: [U1-047, U1-037, U1-066, U1-056, U1-064, U1-061]
+  - id: sd-A03-p06
+    type: text_infer
+    stem_id: S03
+    context: |-
+      Elif: My friend Duru is very laid-back. She never gets angry, even when we are late. She is also caring; she always helps me when I am sad. And she really loves her dog, Fıstık!
+    prompt: "Which of the following is NOT true according to the text?"
+    options:
+      - "Duru often gets angry with her friends."
+      - "Duru is a calm person."
+      - "Duru helps Elif when she is sad."
+      - "Duru loves her dog."
+    answer: 0
+    explain_tr: "'She never gets angry' diyor; 'often gets angry' bunun tersi. 'laid-back' ve 'never gets angry' Duru'nun sakin (calm) olduğunu gösterir, yani o şık doğru."
+    items: [U1-079, U1-070, U1-069]
+tips:
+  - "Kökü metinden ÖNCE oku ve NOT kelimesini daire içine al."
+  - "Bulduğun her şıkkın yanına metindeki karşılığını işaretle; işaretsiz kalan şık cevaptır."
+  - "Konusu metinde geçen soruya hemen 'var' deme: istenen bilgi (saat, sayı, süre) gerçekten yazıyor mu?"
+coach:
+  start: "Bugün metin avcısıyız! Üç şık metinde saklanıyor, biri hiç yok. O kaçağı birlikte bulalım."
+  end: "Bravo! NOT'u daire içine alan öğrenci bu sorularda puan kaybetmez. Sen artık o öğrencisin."
+status: draft

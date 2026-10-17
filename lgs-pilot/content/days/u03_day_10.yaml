@@ -1,0 +1,345 @@
+schema_version: 1
+program: lgs
+unit: 3
+day: 10
+status: draft
+title: "Son prova"
+est_minutes: 10
+characters: [Murat Bey, Ece, Selin, Elif, Kaan, Bora, Duru, Duru'nun annesi]
+new_items: [U3-054, U3-056, U3-060, U3-061, U3-062, U3-063]
+
+story:
+  - id: s01
+    text: "Perşembe sabahı. Junior Chef finaline yalnızca bir gün kalmıştı. Murat Bey tahtaya kocaman harflerle yazdı: \"<en>{U3-050|RECIPE CARDS}: TODAY!</en>\""
+  - id: s02
+    text: "Murat Bey kuralları bir kez daha hatırlattı: \"<en>Every team needs a {U3-060|main course} and a {U3-055|dessert}. And your {U3-060|main course} must come from Turkish {U3-054|cuisine}!</en>\""
+  - id: s03
+    text: "Ece takımının kartı çoktan bitmişti: limonlu tavuk ve üç katlı pasta. Selin pastanın kartını virgülüne kadar kontrol etti ve yüksek sesle okudu: \"<en>{U3-009|Melt} the butter and {U3-011|combine} it with the sugar. Then, {U3-061|add} the flour {U3-061|to} the bowl, one cup at a time.</en>\""
+  - id: s04
+    text: "Ece parmağını kaldırdı: \"<en>And don't forget: {U3-023|spread} the chocolate cream between the layers. Three perfect layers!</en>\" Elif arkadan mırıldandı: \"<en>Perfect… perfect… la la la.</en>\""
+  - id: s05
+    text: "Kaan takımının kartında ise tek bir satır vardı: \"<en>Our {U3-060|main course}: ???</en>\" Kaan parmaklarını şıklattı: \"<en>Pizza! Everybody loves pizza!</en>\""
+  - id: s06
+    text: "Bora başını iki yana salladı: \"<en>Pizza is Italian {U3-054|cuisine}, buddy. We need a Turkish {U3-056|dish}.</en>\""
+  - id: s07
+    text: "Kaan Bora'ya baktı, Bora Duru'ya. Duru her zamanki gibi omuz silkti: \"<en>{U1-014|It doesn't matter}…</en>\""
+  - id: s08
+    text: "Ama cümlenin gerisi gelmedi. Duru doğruldu ve kimsenin alışık olmadığı kararlı bir sesle konuştu: \"<en>No. It matters. We make my mum's {U3-056|dish}: İzmir köftesi.</en>\""
+  - id: s09
+    text: "Kaan'ın ağzı açık kaldı; Duru müzik dışında hiçbir konuda bu kadar net konuşmamıştı. Duru devam etti: \"<en>It's a {U3-063|well-known}, {U3-063|traditional} {U3-056|dish} from İzmir. My grandma made it, and her mum made it too.</en>\""
+  - id: s10
+    text: "Bora hemen atıldı: \"<en>And for {U3-055|dessert}, my rice pudding. Leave it to me.</en>\" Murat Bey kartı okudu ve gülümsedi: \"<en>A very {U3-063|traditional} menu. Good choice!</en>\""
+  - id: s11
+    text: "Akşam son prova için Duru'nun evinde toplandılar. Duru'nun annesi tezgâhın başındaydı; bıçak ve ocak işi her zamanki gibi onun gözetimindeydi."
+  - id: s12
+    text: "Kartı o okudu: \"<en>This is the {U3-063|traditional} way, kids. {U3-045|First}, {U3-016|knead} the minced meat with an egg, some bread and {U3-037|a bunch of} parsley.</en>\""
+  - id: s13
+    text: "Bora kollarını sıvadı; elleri öyle düzenli çalışıyordu ki Kaan şaşırdı. Bora göz kırptı: \"<en>It's like pizza {U3-044|dough}, buddy. You {U3-016|knead} it slowly.</en>\" Duru kanepeden seslendi: \"<en>And Fıstık is in the garden this time.</en>\""
+  - id: s14
+    text: "Derken Bora sütün başına geçti, kaşığı baget gibi tencerenin kenarına vura vura konuştu: \"<en>{U3-061|Add} the sugar {U3-061|to} the warm milk and stir. Never stop stirring!</en>\""
+  - id: s15
+    text: "Duru'nun annesi tepsiyi gösterdi: \"<en>Now {U3-061|put} the meatballs and the potatoes {U3-061|into} the {U3-040|oven}. 180 degrees for forty minutes.</en>\" Tam o sırada annesinin telefonu çaldı; tezgâhın öbür ucunda, sırtı dönük konuşmaya başladı."
+  - id: s16
+    text: "Kaan saate baktı: \"<en>Forty minutes?! The final is tomorrow, not next year!</en>\" Ve kimse görmeden düğmeyi 180'den 250'ye çevirdi."
+  - id: s17
+    text: "On beş dakika geçmeden {U3-040|oven}'dan gri bir duman yükseldi. Köfteler kömüre dönmüştü. Duru'nun annesi telefonu bırakıp hemen düğmeyi kapattı ve pencereyi açtı."
+  - id: s18
+    text: "Duru, Kaan'a baktı: \"<en>Kaan, you're {U1-075|always in a hurry}. Even meatballs need time.</en>\""
+  - id: s19
+    text: "Tam o anda sınıf grubuna Ece'den bir fotoğraf düştü: pastanın ortası çökmüştü. Altında tek satır: \"<en>Three layers… now one layer. 😭</en>\" Selin hemen yazdı: \"<en>Don't panic. We can {U3-062|prepare} a new one tonight.</en>\""
+  - id: s20
+    text: "Kaan yere çöktü: \"<en>I'm sorry, guys. I ruined our {U3-060|main course}. Maybe you need a new team member.</en>\""
+  - id: s21
+    text: "Eskiden olsa Bora hemen bir bahane bulurdu. Bu kez Kaan'ın yanına oturdu: \"<en>No way. I was in the room too, so it's my mistake too. We'll {U3-062|prepare} it again. Together.</en>\""
+  - id: s22
+    text: "Duru da yanlarına çöktü: \"<en>That's what friends do. We {U1-064|support each other}.</en>\""
+  - id: s23
+    text: "Duru'nun annesi Kaan'a bir önlük uzattı: \"<en>Good. {U3-062|Preparation} starts now. Turkish {U3-054|cuisine} needs time, Kaan. This time the timer decides, not you.</en>\""
+  - id: s24
+    text: "Gece onda ikinci deneme bitti. Kaan kırk dakika boyunca saatin karşısında nöbetçi gibi oturdu; köfteler bu kez tam kıvamındaydı. Bora gerindi: \"<en>Ten o'clock. This is my fourth {U3-056|meal} today!</en>\""
+  - id: s25
+    text: "Duru lavaboda yükselen dağa baktı: \"<en>OK. Who's doing the {U3-056|dishes}?</en>\" Kaan ve Bora aynı anda: \"<en>Not me!</en>\""
+  - id: s26
+    text: "Gece yarısı Ece'den yeni bir fotoğraf geldi: üç kat, dimdik ayakta. \"<en>Cake number two is standing! OK… it looks a bit like a hat. 🎩</en>\""
+  - id: s27
+    text: "Grupta son mesaj Kaan'dan geldi: \"<en>See you tomorrow at nine. Me? Late? Never!</en>\" Duru tek kelime yazdı: \"<en>Timer.</en>\""
+
+scene:
+  - id: c01
+    speaker: Duru
+    text: "<en>No. It matters. We make my mum's dish. It's a well-known traditional dish from İzmir.</en>"
+  - id: c02
+    speaker: Duru'nun annesi
+    text: "<en>Put the meatballs into the oven and add the sugar to the milk.</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>We burnt our main course, but we'll prepare it again. Together.</en>"
+  - id: c04
+    speaker: Ece
+    text: "<en>Main course: ready. Dessert: still standing!</en>"
+
+steps:
+  - item: U3-054
+    sezdir:
+      id: u3d10-054-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede Bora'nın \"Pizza is Italian cuisine\" sözündeki \"cuisine\" ne anlama geliyordu?"
+      options: ["bir ülkenin yemek kültürü, mutfağı", "evdeki mutfak odası", "lokanta", "yemek kitabı"]
+      answer: 0
+    kullan:
+      id: u3d10-054-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Sushi is a famous dish from Japanese ________.</en>"
+      options: ["cuisine", "kitchen", "oven", "recipe"]
+      answer: 0
+      explain: "Bir ülkenin yemek kültürü cuisine'dir (Japanese cuisine); evdeki mutfak odası kitchen'dır."
+    sina:
+      id: u3d10-054-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Tourist: I want to try some local food in Turkey. What do you suggest?\nGuide: ________ You should try mantı and İzmir köftesi.\nTourist: Great, thank you!</en>"
+      options: ["Turkish cuisine has a lot of great dishes.", "My kitchen is very small.", "Sorry, the oven is broken.", "I'm not hungry, thanks."]
+      answer: 0
+      explain: "Rehber hemen ardından yemek öneriyor; Türk yemek kültürünü öven cümle konuşmayı bağlıyor."
+  - item: U3-056
+    sezdir:
+      id: u3d10-056-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"my mum's dish\" sözündeki \"dish\" ne anlama geliyordu?"
+      options: ["yemek (tabakta sunulan)", "bulaşık", "öğün", "kase"]
+      answer: 0
+    kullan:
+      id: u3d10-056-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Breakfast is the most important ________ of the day.</en>"
+      options: ["meal", "dish", "bowl", "recipe"]
+      answer: 0
+      explain: "Kahvaltı, öğle ve akşam yemeği birer meal'dir (öğün); dish tek bir yemektir."
+    sina:
+      id: u3d10-056-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What does Kaan's mum want him to do?</en>"
+      stem: "<en>Mum's message: Kaan, dinner is over and I'm very tired. Can you do the dishes, please? Thanks, darling!</en>"
+      options: ["wash the plates and glasses", "cook a new dish", "buy some new plates", "eat more dinner"]
+      answer: 0
+      explain: "do the dishes = bulaşık yıkamak; burada yeni yemek pişirmekle ilgisi yok."
+  - item: U3-060
+    sezdir:
+      id: u3d10-060-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede Murat Bey'in \"Every team needs a main course and a dessert\" sözündeki \"main course\" ne anlama geliyordu?"
+      options: ["ana yemek", "başlangıç, çorba", "içecek", "tatlı"]
+      answer: 0
+    kullan:
+      id: u3d10-060-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Menu\nStarter: lentil soup\n________: grilled fish with rice\nDessert: baklava</en>"
+      options: ["Main course", "Breakfast", "Ingredients", "Recipe"]
+      answer: 0
+      explain: "Menüde çorbadan sonra, tatlıdan önce gelen asıl yemek main course'tur."
+    sina:
+      id: u3d10-060-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the menu, which of the following is correct?</en>"
+      stem: "<en>Nazmiye's Canteen – Friday Lunch\nStarter: tomato soup\nMain course: roast chicken OR vegetable pasta\nDessert: rice pudding</en>"
+      options: ["You can choose between two main courses.", "There are two desserts on the menu.", "The main course is tomato soup.", "Rice pudding is a starter."]
+      answer: 0
+      explain: "Main course satırında OR var: tavuk ya da makarna seçilebilir. Diğer şıklar menüyle çelişiyor."
+  - item: U3-061
+    sezdir:
+      id: u3d10-061-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede \"put the meatballs into the oven\" sözündeki \"put … into\" ne anlama geliyordu?"
+      options: ["… içine koymak", "… içinden çıkarmak", "… üstüne dökmek", "… yanına bırakmak"]
+      answer: 0
+    kullan:
+      id: u3d10-061-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Add the sugar ________ the milk and stir.</en>"
+      options: ["to", "at", "from", "off"]
+      answer: 0
+      explain: "add … to = -e eklemek; put … into = -in içine koymak. Edatı fiille birlikte öğren."
+    sina:
+      id: u3d10-061-s
+      type: process_order
+      lgs_like: true
+      stem_id: S07
+      prompt: "<en>Put the steps in the correct order.</en>"
+      stem: "<en>Bora's rice pudding\n(1) Pour the mixture into small bowls.\n(2) Boil the rice in the milk.\n(3) Put the bowls into the oven for fifteen minutes.\n(4) Add the sugar to the hot milk and stir.</en>"
+      options: ["2 – 4 – 1 – 3", "4 – 2 – 3 – 1", "1 – 2 – 4 – 3", "2 – 1 – 3 – 4"]
+      answer: 0
+      explain: "Pirinç sütte kaynar, şeker eklenir, karışım kaselere dökülür, kaseler en son fırına girer."
+  - item: U3-062
+    sezdir:
+      id: u3d10-062-z
+      type: meaning
+      context: s21
+      prompt: "Hikâyede \"We'll prepare it again\" sözündeki \"prepare\" ne anlama geliyordu?"
+      options: ["hazırlamak", "satın almak", "yiyip bitirmek", "fotoğrafını çekmek"]
+      answer: 0
+    kullan:
+      id: u3d10-062-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Mum is chopping vegetables in the kitchen. She is ________ dinner for the family.</en>"
+      options: ["preparing", "tasting", "melting", "freezing"]
+      answer: 0
+      explain: "Sebze doğrayan biri yemeği hazırlıyordur: prepare dinner."
+    sina:
+      id: u3d10-062-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Let's get the food ready for the party.\" Which one is CLOSEST in meaning?</en>"
+      options: ["Let's prepare the food for the party.", "Let's eat the food at the party.", "Let's buy the food after the party.", "Let's freeze the food after the party."]
+      answer: 0
+      explain: "get something ready = prepare: bir şeyi hazır hâle getirmek."
+  - item: U3-063
+    sezdir:
+      id: u3d10-063-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"a well-known, traditional dish\" ne anlama geliyordu?"
+      options: ["tanınmış ve geleneksel bir yemek", "yeni icat edilmiş bir yemek", "pahalı ve lüks bir yemek", "çabucak yapılan bir yemek"]
+      answer: 0
+    kullan:
+      id: u3d10-063-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Baklava is a ________ Turkish dessert. People know it all over the world.</en>"
+      options: ["well-known", "bitter", "salty", "spicy"]
+      answer: 0
+      explain: "Herkesin bildiği şey well-known'dur; ipucu \"People know it all over the world\"."
+    sina:
+      id: u3d10-063-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Aşure is a traditional Turkish dessert. Families have made it for hundreds of years. They make a big pot and share it with their neighbours.</en>"
+      options: ["Aşure is a very old dessert.", "Aşure is a new dessert.", "Families never share aşure.", "Only restaurants make aşure."]
+      answer: 0
+      explain: "traditional + for hundreds of years: aşure çok eski bir tatlı. Diğerleri metinle çelişiyor."
+
+review:
+  - id: u3d10-r01
+    type: dialogue_complete
+    item: U3-055
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: What's for ________?\nB: Chocolate ice cream!</en>"
+    options: ["dessert", "desert", "the oven", "a pinch"]
+    answer: 0
+    explain: "Yemek sonrası tatlı dessert (iki s); desert çöldür."
+  - id: u3d10-r02
+    type: trait_match
+    item: U3-058
+    prompt: "<en>Which one describes Bora?</en>"
+    stem: "<en>Bora eats chocolate, cake or ice cream every day. He can't say no to sweets.</en>"
+    options: ["He has a sweet tooth.", "He is always in a hurry.", "He hates desserts.", "He can't stand sugar."]
+    answer: 0
+  - id: u3d10-r03
+    type: gap_fill
+    item: U3-003
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Put the ice cream in the ________ quickly, or it will melt.</en>"
+    options: ["freezer", "oven", "pan", "saucepan"]
+    answer: 0
+  - id: u3d10-r04
+    type: dialogue_complete
+    item: U3-031
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Did you buy this jam at the supermarket?\nB: No, it's ________. My grandma made it.</en>"
+    options: ["homemade", "frozen", "greasy", "bitter"]
+    answer: 0
+  - id: u3d10-r05
+    type: synonym
+    item: U3-028
+    prompt: "<en>\"This soup is really tasty!\" Which one is CLOSEST in meaning?</en>"
+    options: ["It's delicious.", "It's awful.", "It's too salty.", "It's bitter."]
+    answer: 0
+  - id: u3d10-r06
+    type: dialogue_complete
+    item: U3-053
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Let's have pizza tonight.\nB: Hmm, I'm not ________ pizza. Let's have soup.</en>"
+    options: ["in the mood for", "in the mood of", "keen at", "fond for"]
+    answer: 0
+    explain: "Kalıp be in the mood for + isim: in the mood for pizza."
+  - id: u3d10-r07
+    type: process_order
+    item: U3-013
+    lgs_like: true
+    stem_id: S07
+    prompt: "<en>Put the steps in the correct order.</en>"
+    stem: "<en>Bora's omelette\n(a) Finally, pour the eggs into the hot pan.\n(b) First, crack two eggs into a bowl.\n(c) After that, heat some oil in a pan.\n(d) Then, whisk the eggs with a fork.</en>"
+    options: ["b – d – c – a", "d – b – c – a", "b – c – a – d", "c – a – b – d"]
+    answer: 0
+    explain: "First → Then → After that → Finally: kır, çırp, yağı ısıt, tavaya dök."
+  - id: u3d10-r08
+    type: text_infer
+    item: U3-041
+    lgs_like: true
+    stem_id: S03
+    prompt: "<en>Which of the following is NOT mentioned in the recipe?</en>"
+    stem: "<en>Recipe: Crack two eggs into a bowl and whisk them. Heat some butter in a frying pan. Pour the eggs into the pan and cook for two minutes.</en>"
+    options: ["milk", "eggs", "a bowl", "butter"]
+    answer: 0
+    explain: "Yumurta, kase ve tereyağı tarifte geçiyor; süt geçmiyor."
+  - id: u3d10-r09
+    type: dialogue_complete
+    item: U3-004
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Kaan: How do you make chips?\nBora: I cut the potatoes and ________ them in hot oil.\nKaan: But Murat Bey says no oily food!</en>"
+    options: ["fry", "freeze", "whisk", "pour"]
+    answer: 0
+    explain: "Kızgın yağda pişirmek fry'dır; Kaan'ın cevabındaki oily ipucu."
+  - id: u3d10-r10
+    type: situation
+    item: U3-018
+    lgs_like: true
+    prompt: "<en>Which instruction is correct for this situation?</en>"
+    stem: "<en>Ece is making soup. She doesn't want the soup to burn at the bottom of the saucepan.</en>"
+    options: ["Stir it with a spoon.", "Crack it into a bowl.", "Freeze it for an hour.", "Pour it on the floor."]
+    answer: 0
+    explain: "Çorbanın dibi tutmasın diye kaşıkla karıştırılır: stir."
+
+tips:
+  - type: tuzak
+    refs: [U3-056]
+    text: "İkisi de \"yemek\" diye çevrilir ama aynı şey değil: dish = tabakta sunulan yemek (a Turkish dish), meal = öğün (three meals a day). Dikkat: do the dishes = bulaşık yıkamak!"
+  - type: tuzak
+    refs: [U3-061]
+    text: "Sınavda en sık çıkan iki tarif fiili put ve add; sorulan şey çoğu zaman edattır: put it into the oven (içine), add the sugar to the milk (-e). \"put it to the oven\" yanlıştır."
+  - type: ilginc_bilgi
+    refs: [U3-054]
+    text: "cuisine Fransızcadan gelir ve \"kuizin\" (/kwɪˈziːn/) diye okunur. Turkish cuisine = Türk mutfağı (yemek kültürü); evdeki mutfak odası ise kitchen."
+  - type: kelime_ailesi
+    refs: [U3-062, U3-063]
+    text: "prepare (hazırlamak) → preparation (hazırlık): \"Preparation starts now.\" · tradition (gelenek) → traditional (geleneksel): \"a traditional dish\"."
+
+coach:
+  start: "Finale bir gün kaldı! 🍽️ Bugün kartlar yazılıyor, Duru'dan sürpriz bir karar geliyor ve bir şeyler fena kokuyor."
+  end_good: "Kartlar yazıldı, menü kilitlendi, köfteler ikinci denemede oldu. Sen ilk denemede! Yarın büyük final. 🏆"
+  end_mixed: "{weak} biraz yandı ama dert etme: Kaan'ın köftesi de ikinci denemede kusursuz oldu. Yarın finalde yine deneriz!"
+
+notifications:
+  morning: "Junior Chef'e bir gün kaldı! Duru'dan hiç beklenmedik bir karar geliyor. 👀"
+  evening: "Köfteler neden kömür oldu? 10 dakikada öğren. 🔥"
+  review: "Tek soru: put it ___ the oven? into mı, to mu? 🤔"
+
+editor:
+  z07: {U3-054: BEKLIYOR, U3-056: BEKLIYOR, U3-060: BEKLIYOR, U3-061: BEKLIYOR, U3-062: BEKLIYOR, U3-063: BEKLIYOR}

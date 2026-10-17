@@ -1,0 +1,304 @@
+schema_version: 1
+program: lgs
+unit: 3
+day: 7
+status: draft
+title: "Papatyalı pizza"
+est_minutes: 10
+characters: [Duru, Kaan, Bora, Duru'nun annesi, Ece, Ege (Ece'nin kuzeni), Fıstık]
+new_items: [U3-009, U3-011, U3-016, U3-023, U3-037, U3-044]
+
+story:
+  - id: s01
+    text: "Cumartesi öğleden sonra, Duru'nun evi. Gitar bugün köşede; tezgâhta kocaman bir {U3-038|bowl} duruyor. Duru'nun annesinin tek bir kuralı var: \"<en>The {U3-040|oven} is mine. Everything else is yours!</en>\""
+  - id: s02
+    text: "Bugünün görevi pizza. Duru'nun annesi parmaklarıyla saydı: \"<en>{U3-046|Flour}, warm water, yeast, salt and olive oil. We {U3-011|combine} them in the {U3-038|bowl} and make the {U3-044|dough}.</en>\""
+  - id: s03
+    text: "Ama dolaptaki paket boş çıktı. Duru sabah Kaan'a sesli mesaj atmıştı: \"<en>Kaan, on your way, please buy {U3-037|a bunch of} parsley and a big bag of {U3-046|flour}.</en>\""
+  - id: s04
+    text: "Zil çaldı. Kapıda nefes nefese Kaan duruyordu. Elinde ne maydanoz vardı ne un paketi: kâğıda sarılmış, rengârenk papatyalar!"
+  - id: s05
+    text: "Kaan: \"<en>Sorry, sorry! I ran all the way. Here you are: {U3-037|a bunch of} flowers!</en>\" Duru papatyaları aldı ve uzun uzun baktı."
+  - id: s06
+    text: "Duru: \"<en>Kaan. {U3-046|Flour}. F-L-O-U-R. It's white and it's for the {U3-044|dough}. We can't eat daisies.</en>\" Bora: \"<en>Same sound, different shop!</en>\""
+  - id: s07
+    text: "Duru'nun annesi gülerek papatyaları vazoya koydu, üst raftan yedek paketi indirdi: \"<en>Kaan, you're {U1-075|always in a hurry}. Please listen to voice messages twice!</en>\""
+  - id: s08
+    text: "Duru'nun annesi her şeyi tarttı, üç arkadaş da sırayla {U3-038|bowl}'a boşalttı. Bora tahta kaşıkla işe girişti: \"<en>Water, yeast, salt… {U3-011|Combine} them slowly, or the {U3-046|flour} will fly everywhere!</en>\""
+  - id: s09
+    text: "Kaan tabii ki hızlı davrandı. Beyaz bir bulut yükseldi ve Kaan'ın kaşları bembeyaz oldu. Duru: \"<en>Nice. Now you're a snowman.</en>\""
+  - id: s10
+    text: "Sıra en zor işe geldi. Duru'nun annesi kollarını sıvadı: \"<en>Now {U3-016|knead} the {U3-044|dough} for ten minutes. Push, fold, turn. Push, fold, turn.</en>\""
+  - id: s11
+    text: "Kaan otuz saniye dayanabildi: \"<en>Ten minutes? I can't {U3-016|knead} for ten minutes! My arms are dead!</en>\""
+  - id: s12
+    text: "Duru ise her zamanki gibi {U1-079|laid-back}: yavaş ve düzenli çalışıyordu. \"<en>Relax. {U3-016|Kneading} is like playing the guitar. It's all rhythm.</en>\" Bora hemen tencere kapağıyla davul gibi ritim tuttu."
+  - id: s13
+    text: "Tam o sırada zil yine çaldı. Gelen Ece'ydi; elinde annesinin yolladığı bir tepsi börek, yanında da elleri cebinde Ege. Ece: \"<en>Hi! Mum sent this for you. Sorry about my cousin… He's staying with us this weekend.</en>\""
+  - id: s14
+    text: "Ege mutfağa bir jüri üyesi gibi girdi: \"<en>Don't worry, I'm a food critic now. Pizza is easy: you {U3-011|combine} three things and wait.</en>\""
+  - id: s15
+    text: "Duru'nun annesi ocakta küçük bir cezveye tereyağı koymuştu. Ege burnunu kırıştırdı: \"<en>Butter? Why do you {U3-009|melt} butter? Real Italian chefs use only olive oil.</en>\""
+  - id: s16
+    text: "Duru'nun annesi göz kırptı: \"<en>{U3-009|Melted} butter with garlic goes on the edges. It's my secret, Mr Critic.</en>\""
+  - id: s17
+    text: "Sos sırası Bora'daydı. Duru'nun annesi yanından ayrılmadı; Bora bıçağı yavaş ve dikkatli kullandı: \"<en>{U3-019|Peel} the garlic, {U3-010|chop} the onion, {U3-022|slice} the tomatoes. Leave it to me.</en>\""
+  - id: s18
+    text: "Ege hemen yorumunu yapıştırdı: \"<en>Those tomato {U3-022|slices} are too thick. And you need some {U3-049|black pepper}. {U3-021|Season} the sauce more!</en>\""
+  - id: s19
+    text: "Ece kuzenine kaşlarını çattı: \"<en>Ege, don't be such a {U2-069|snob}. You can help, you know.</en>\" Ege omuz silkti ve limonlara uzandı."
+  - id: s20
+    text: "Ege: \"<en>Fine. I'll {U3-025|squeeze} some lemons. Critics make the best lemonade.</en>\""
+  - id: s21
+    text: "Yarım saat sonra {U3-038|bowl}'daki top iki katına çıkmıştı. Duru'nun annesi: \"<en>Perfect! Now roll the {U3-044|dough} and {U3-023|spread} the sauce on it with a spoon. Not too much!</en>\""
+  - id: s22
+    text: "Kaan kaşığı kaptı: \"<en>Can I {U3-023|spread} it? I'm very fast!</en>\" Duru: \"<en>Yes. That's the problem.</en>\""
+  - id: s23
+    text: "Duru'nun annesi son kontrolü yaptı: \"<en>And on top: {U3-037|a pinch of} salt and {U3-037|a handful of} cheese. No more!</en>\""
+  - id: s24
+    text: "Herkes Ege'nin limonatasına bakarken arkadan bir hışırtı geldi. Fıstık ön ayaklarını tezgâha dayamış, ikinci {U3-044|dough} topunu ağzına almıştı!"
+  - id: s25
+    text: "Duru ilk kez yıldırım gibi davrandı: \"<en>Fıstık, drop it! Raw {U3-044|dough} is bad for dogs!</en>\" Topu kurtardı ama yarısı yerdeydi, yarısı da Fıstık'ın tüylerinde."
+  - id: s26
+    text: "Akşam ilk pizza çıktı. Ege bir ısırık aldı: \"<en>Hmm. Not bad… for amateurs. The sauce is {U3-023|spread} nicely and the cheese {U3-009|melts} in your mouth. Can I have another {U3-022|slice}?</en>\""
+  - id: s27
+    text: "Gece sınıf grubuna Murat Bey'den mesaj düştü: \"<en>Chefs, on Monday I have a new rule for Junior Chef. Get ready! 👨‍🍳</en>\" Kaan: \"<en>A new rule? I hope it's 'No flowers'.</en>\""
+
+scene:
+  - id: c01
+    speaker: Duru'nun annesi
+    text: "<en>Combine the flour, water and yeast in a bowl. Then knead the dough for ten minutes.</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>Sorry! You asked for flour, and I bought a bunch of flowers!</en>"
+  - id: c03
+    speaker: Ege
+    text: "<en>Why do you melt butter? I'm a food critic, you know.</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>Just spread the sauce slowly, Kaan. And Fıstık, that dough isn't for you!</en>"
+
+steps:
+  - item: U3-009
+    sezdir:
+      id: u3d07-009-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede Ege'nin sorduğu \"Why do you melt butter?\" cümlesinde \"melt\" ne anlama geliyordu?"
+      options: ["eritmek", "dondurmak", "kesmek", "yıkamak"]
+      answer: 0
+    kullan:
+      id: u3d07-009-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>It's very hot today. Eat your ice cream quickly or it will ________.</en>"
+      options: ["melt", "knead", "combine", "spread"]
+      answer: 0
+      explain: "melt = erimek/eritmek; sıcakta dondurma erir, diğer fiiller birinin yaptığı mutfak işleridir."
+    sina:
+      id: u3d07-009-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Elif puts some chocolate in a bowl over hot water. After two minutes, the chocolate is soft and liquid. What happens to the chocolate?</en>"
+      options: ["It melts.", "It gets cold and hard.", "It becomes salty.", "It breaks into small pieces."]
+      answer: 0
+      explain: "Sıcakla yumuşayıp sıvılaşan şey erir: melt."
+  - item: U3-011
+    sezdir:
+      id: u3d07-011-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"We combine them in the bowl\" cümlesinde \"combine\" ne anlama geliyordu?"
+      options: ["birleştirmek, bir araya getirmek", "birbirinden ayırmak", "pişirmek", "saklamak"]
+      answer: 0
+    kullan:
+      id: u3d07-011-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>________ the flour, sugar and eggs in a large bowl.</en>"
+      options: ["Combine", "Melt", "Peel", "Spread"]
+      answer: 0
+      explain: "Birkaç malzemeyi bir kapta bir araya getirmek combine ile anlatılır."
+    sina:
+      id: u3d07-011-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Combine the water and the flour.\" Which one is CLOSEST in meaning to \"combine\"?</en>"
+      options: ["mix", "melt", "peel", "slice"]
+      answer: 0
+      explain: "Tarifte combine ve mix aynı işi anlatır: malzemeleri bir araya getirip karıştırmak."
+  - item: U3-016
+    sezdir:
+      id: u3d07-016-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"knead the dough for ten minutes. Push, fold, turn.\" cümlesinde \"knead\" ne anlama geliyordu?"
+      options: ["yoğurmak", "doğramak", "kızartmak", "soğutmak"]
+      answer: 0
+    kullan:
+      id: u3d07-016-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>To make bread, you need to ________ the dough with your hands for ten minutes.</en>"
+      options: ["knead", "melt", "pour", "squeeze"]
+      answer: 0
+      explain: "Hamuru elle bastırıp katlayarak çalışmak knead'dir."
+    sina:
+      id: u3d07-016-s
+      type: process_order
+      lgs_like: true
+      stem_id: S07
+      prompt: "<en>According to the recipe, what do we do after combining the ingredients?</en>"
+      stem: "<en>Easy Bread\nFirst, combine the flour, water, salt and yeast in a big bowl. After that, knead the dough for ten minutes. Then, leave it in a warm place for an hour. Finally, bake it for 30 minutes.</en>"
+      options: ["We knead the dough.", "We bake the bread.", "We leave it in a warm place.", "We melt some butter."]
+      answer: 0
+      explain: "Malzemeler birleştikten hemen sonra \"After that, knead…\" geliyor; bekletmek ve pişirmek daha sonra."
+  - item: U3-023
+    sezdir:
+      id: u3d07-023-z
+      type: meaning
+      context: s21
+      prompt: "Hikâyede \"spread the sauce on it with a spoon\" cümlesinde \"spread\" ne anlama geliyordu?"
+      options: ["sürmek, yaymak", "dökmek", "kesmek", "ısıtmak"]
+      answer: 0
+    kullan:
+      id: u3d07-023-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>For breakfast, I ________ some butter and jam on my bread with a knife.</en>"
+      options: ["spread", "pour", "knead", "peel"]
+      answer: 0
+      explain: "Ekmeğe tereyağı ya da reçel bıçakla sürülür: spread. Sıvıyı dökmek ise pour."
+    sina:
+      id: u3d07-023-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: Mum, can I help with breakfast?\nMum: Sure! Take a knife and ________\nElif: OK! Butter first, then honey.</en>"
+      options: ["spread some butter and honey on the bread.", "pour the milk into the glasses.", "knead the dough for ten minutes.", "peel the oranges for the juice."]
+      answer: 0
+      explain: "Elif'in cevabı (Butter first…) ve bıçak, ekmeğe bir şey sürüldüğünü gösteriyor."
+  - item: U3-037
+    sezdir:
+      id: u3d07-037-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede Duru'nun mesajındaki \"a bunch of parsley\" ne anlama geliyordu?"
+      options: ["bir demet maydanoz", "bir tutam maydanoz", "bir kilo maydanoz", "bir dilim maydanoz"]
+      answer: 0
+      explain: "a bunch of = bir demet; a pinch of = bir tutam (tuz gibi), a handful of = bir avuç."
+    kullan:
+      id: u3d07-037-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The soup needs just ________ salt. Don't use too much!</en>"
+      options: ["a pinch of", "a bunch of", "a slice of", "a handful of"]
+      answer: 0
+      explain: "Parmak ucuyla alınan çok az miktar a pinch of'tur; \"just… don't use too much\" ipucu."
+    sina:
+      id: u3d07-037-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the message?</en>"
+      stem: "<en>Mum: Bora, please buy a bunch of grapes, a bunch of parsley and two lemons. We also need a handful of walnuts for the cake.</en>"
+      options: ["a bunch of flowers", "grapes", "parsley", "walnuts"]
+      answer: 0
+      explain: "Üzüm, maydanoz ve ceviz mesajda var; çiçekten söz edilmiyor (Kaan'ın hatasını yapma!)."
+  - item: U3-044
+    sezdir:
+      id: u3d07-044-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"make the dough\" ifadesinde \"dough\" ne anlama geliyordu?"
+      options: ["hamur", "sos", "salata", "çorba"]
+      answer: 0
+    kullan:
+      id: u3d07-044-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Pizza, bread and simit are all made from ________.</en>"
+      options: ["dough", "sauce", "pepper", "lemonade"]
+      answer: 0
+      explain: "Pizza, ekmek ve simit undan yapılan hamurdan olur: dough."
+    sina:
+      id: u3d07-044-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Bora wants to make pizza dough. Which two things does he need most?</en>"
+      options: ["flour and water", "lemon juice and sugar", "tomatoes and onions", "cheese and olives"]
+      answer: 0
+      explain: "Hamurun temeli un ve sudur; domates, peynir, zeytin pizzanın üstüne gelir."
+
+review:
+  - id: u3d07-r01
+    type: gap_fill
+    item: U3-002
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Water ________ at 100°C. You can see big bubbles.</en>"
+    options: ["boils", "melts", "drains", "covers"]
+    answer: 0
+  - id: u3d07-r02
+    type: situation
+    item: U3-012
+    prompt: "<en>Your soup is on the cooker and you don't want it to get cold. What do you do?</en>"
+    options: ["cover the saucepan with a lid", "grate the saucepan", "sprinkle the lid", "drain the soup"]
+    answer: 0
+  - id: u3d07-r03
+    type: dialogue_complete
+    item: U3-014
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: The pasta is ready. What now?\nB: ________ Then grate some cheese on it.</en>"
+    options: ["Drain it in a strainer.", "Grate it on a grater.", "Boil it for another hour.", "Pour it on the floor."]
+    answer: 0
+  - id: u3d07-r04
+    type: gap_fill
+    item: U3-015
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Can you ________ some cheese for the pasta? Use the side with the small holes.</en>"
+    options: ["grate", "boil", "drain", "cover"]
+    answer: 0
+  - id: u3d07-r05
+    type: gap_fill
+    item: U3-024
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>________ a little salt on the potatoes before you eat them.</en>"
+    options: ["Sprinkle", "Drain", "Boil", "Cover"]
+    answer: 0
+  - id: u3d07-r06
+    type: dialogue_complete
+    item: U3-047
+    lgs_like: true
+    stem_id: S13
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Kaan: ________ does the pasta need to boil?\nBora: About ten minutes. Set the timer!</en>"
+    options: ["How long", "How much", "How many", "How often"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U3-023]
+    text: "spread iki işte kullanılır: ekmeğe tereyağı, reçel, sos SÜRMEK (spread butter on bread) ve bir şeyi YAYMAK (spread a map on the table). Sıvıyı dökmek ise pour; ikisini karıştırma."
+  - type: tuzak
+    refs: [U3-037]
+    text: "a bunch of mutfakta bir demet ya da salkım demek: a bunch of parsley, a bunch of grapes. Ama insanlarla gelirse gündelik dilde \"bir sürü\" olur: a bunch of friends."
+  - type: mini_dilbilgisi
+    refs: [U3-037, U3-046]
+    text: "Ölçü sözcüğünden sonra sayılamayan isim tekil kalır: a pinch of salt, a handful of cheese, a bunch of parsley (parsleys değil). flour da sayılamaz: two flours değil, two cups of flour."
+  - type: ilginc_bilgi
+    refs: [U3-016, U3-046]
+    text: "knead'deki k okunmaz: /niːd/, tıpkı need gibi. flour ile flower da aynı okunur; Kaan'ın papatyaları bu yüzden geldi. Tarifte, kek ve ekmek yanında hep flour = un."
+
+coach:
+  start: "Bugün Duru'nun evinde pizza günü! Kaan bir sesli mesajı yanlış duyacak, Fıstık da fırsat kollayacak. 🍕"
+  end_good: "Süper! Kaan'ın papatyaları bile bu kadar güzel açmadı. Bugünkü kelimeler cepte! 🌼"
+  end_mixed: "{weak} biraz uğraştırdı, olsun. Duru'nun dediği gibi: acele yok, ritim var. Yarın bir tur daha!"
+
+notifications:
+  morning: "Kaan bugün markete gidiyor. Ne isteniyor, ne geliyor? 🌼"
+  evening: "Fıstık tezgâha göz dikti! Pizza gününün sonu 10 dakikalık derste. 🍕"
+  review: "Tek soru: Kaan'a \"a bunch of parsley\" dendi. Ne alması gerekiyordu?"
+
+editor:
+  z07: {U3-009: BEKLIYOR, U3-011: BEKLIYOR, U3-016: BEKLIYOR, U3-023: BEKLIYOR, U3-037: BEKLIYOR, U3-044: BEKLIYOR}

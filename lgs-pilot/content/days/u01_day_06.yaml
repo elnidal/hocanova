@@ -1,0 +1,281 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 6
+status: draft
+title: "Parti albümü"
+est_minutes: 10
+characters: [Ece, Selin, Kaan, Bora, Duru, Elif, Ege (Ece'nin kuzeni)]
+new_items: [U1-028, U1-030, U1-033, U1-040, U1-047, U1-048]
+
+story:
+  - id: s01
+    text: "Partiden bir gün sonra, pazar sabahı. Ece sınıf grubuna tam 147 fotoğraf attı ve albümün adını koydu: \"<en>Our {U1-033|Friendship} Album 📸</en>\""
+  - id: s02
+    text: "Altına bir not ekledi: \"<en>Write a caption for every photo, please!</en>\" Kaan saniyesinde yazmaya başladı."
+  - id: s03
+    text: "Fotoğraf 1: Kaan ile Bora, yüzleri krema içinde. Kaan: \"<en>Me and my {U1-028|buddy} Bora. Best cake ever!</en>\""
+  - id: s04
+    text: "Bora: \"<en>Thanks, {U1-040|mate}! But why is there cake in my ear?</en>\""
+  - id: s05
+    text: "Duru uykulu bir emojiyle geldi: \"<en>Kaan calls everyone '{U1-028|buddy}'. Last week he said 'Thanks, {U1-028|buddy}!' to Murat Bey!</en>\""
+  - id: s06
+    text: "Kaan hiç utanmadı: \"<en>And Murat Bey said, 'You're welcome, {U1-040|mate}!' He's cool.</en>\""
+  - id: s07
+    text: "Fotoğraf 2: Ece ile Selin, pastanın başında sarılmış. Elif yorum yaptı: \"<en>You two look like sisters!</en>\""
+  - id: s08
+    text: "Ece: \"<en>Selin is my {U1-030|close friend}. We have known each other since kindergarten.</en>\""
+  - id: s09
+    text: "Selin ekledi: \"<en>And Ece is my {U1-030|closest friend}. She's the only person I {U1-067|trust} with my diary. Well, Ece and my cat.</en>\""
+  - id: s10
+    text: "Fotoğraf 3: Duru, puf üstünde, gözleri kapalı. Bora: \"<en>Our dance judge at work!</en>\""
+  - id: s11
+    text: "Duru: \"<en>I wasn't sleeping, {U1-028|buddy}. I was thinking with my eyes closed.</en>\""
+  - id: s12
+    text: "Elif: \"<en>I hope we can all be {U1-030|close friends} one day!</en>\" Bora: \"<en>Easy. Just bring cake.</en>\""
+  - id: s13
+    text: "Sonra Ece sürpriz videodaki mesajları tek tek yazıya döktü ve gruba attı. Grupta bir anda sessizlik oldu."
+  - id: s14
+    text: "Selin'in mesajı: \"<en>Ece, you are a {U1-047|true friend}. I can always {U1-051|count on} you.</en>\""
+  - id: s15
+    text: "Kaan'ın mesajı: \"<en>Happy birthday, Ece! {U1-048|You're fun to be with}! And your parties have the best food!</en>\""
+  - id: s16
+    text: "Duru'nun mesajı: \"<en>Ece, our {U1-033|friendship} is like my dog Fıstık: {U1-081|loyal}, warm and a little bit lazy.</en>\""
+  - id: s17
+    text: "Bora'nın mesajı: \"<en>Happy birthday, {U1-040|mate}! You always answer my messages. You are so {U1-059|reliable}… unlike me.</en>\""
+  - id: s18
+    text: "Elif'in mesajı: \"<en>I'm new here, but I already know it: {U1-048|you're fun to be with}!</en>\""
+  - id: s19
+    text: "En sonda kuzen Ege'nin mesajı vardı: \"<en>Happy birthday, cousin. These chips are for you. All of them. OK, half of them.</en>\""
+  - id: s20
+    text: "Kaan sormadan duramadı: \"<en>Selin, be {U1-077|honest}. Did you cry at the video?</en>\" Selin: \"<en>No! Maybe a little.</en>\""
+  - id: s21
+    text: "Ece bütün mesajları okuyunca uzun bir mesaj yazdı: \"<en>A {U1-047|true friend} is a gift, and I have six! I can {U1-060|rely on} all of you.</en>\""
+  - id: s22
+    text: "Duru: \"<en>A {U1-047|true friend} also shares the last piece of cake.</en>\" Bora sessizce yazdı: \"<en>Then I'm not a {U1-047|true friend}. I ate it.</en>\""
+  - id: s23
+    text: "Ece son fotoğrafı da gönderdi: herkes kanepede yan yana, Duru yine uyuyor. Altına şunu yazdı: \"<en>To our {U1-033|friendship}! And to the best birthday ever.</en>\""
+  - id: s24
+    text: "Kaan: \"<en>Ece, {U1-048|you're fun to be with}. But next time, please, only 50 photos!</en>\""
+
+scene:
+  - id: c01
+    speaker: Elif
+    text: "<en>Ece, is Selin your close friend?</en>"
+  - id: c02
+    speaker: Ece
+    text: "<en>Yes! She's a true friend. Our friendship started in kindergarten.</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>And Bora is my buddy. Right, mate?</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>Right! You're fun to be with, Kaan… most of the time.</en>"
+
+steps:
+  - item: U1-028
+    sezdir:
+      id: d06-028-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"buddy\" ne anlama geliyordu?"
+      options: ["kanka, dost", "öğretmen", "rakip", "komşu"]
+      answer: 0
+    kullan:
+      id: d06-028-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan and Bora play football, eat lunch and do homework together. Bora is Kaan's best ________.</en>"
+      options: ["buddy", "enemy", "stranger", "boss"]
+      answer: 0
+    sina:
+      id: d06-028-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Bora is my buddy.\" Which one is CLOSEST in meaning?</en>"
+      options: ["Bora is my friend.", "Bora is my brother.", "Bora is my teacher.", "Bora is my neighbour."]
+      answer: 0
+  - item: U1-030
+    sezdir:
+      id: d06-030-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"close friend\" ne anlama geliyordu?"
+      options: ["yakın arkadaş", "yeni komşu", "öğretmen", "rakip"]
+      answer: 0
+    kullan:
+      id: d06-030-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin knows all my secrets, and I know all of hers. She is my ________.</en>"
+      options: ["close friend", "stranger", "enemy", "new teacher"]
+      answer: 0
+    sina:
+      id: d06-030-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which of the following is TRUE?</en>"
+      stem: "<en>Duru: I met Mert last week. He's nice, but I don't know him very well yet.</en>"
+      options: ["Mert isn't Duru's close friend yet.", "Mert is Duru's close friend.", "Duru and Mert are brother and sister.", "Duru knows all of Mert's secrets."]
+      answer: 0
+  - item: U1-033
+    sezdir:
+      id: d06-033-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"friendship\" ne anlama geliyordu?"
+      options: ["arkadaşlık", "ev", "doğum günü", "sınıf"]
+      answer: 0
+    kullan:
+      id: d06-033-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ece and Selin met in kindergarten and they are still together. Their ________ is very strong.</en>"
+      options: ["friendship", "homework", "invitation", "excuse"]
+      answer: 0
+    sina:
+      id: d06-033-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>What is Selin talking about?</en>"
+      stem: "<en>Selin: Ece and I met when we were five. We still walk to school together and help each other every day.</en>"
+      options: ["a long friendship", "a new teacher", "a birthday cake", "a school trip"]
+      answer: 0
+  - item: U1-040
+    sezdir:
+      id: d06-040-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"mate\" ne anlama geliyordu?"
+      options: ["arkadaş, ahbap", "öğretmen", "yabancı", "rakip"]
+      answer: 0
+    kullan:
+      id: d06-040-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Bora: Thanks for helping me with my bike, ________!</en>"
+      options: ["mate", "enemy", "rival"]
+      answer: 0
+    sina:
+      id: d06-040-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Kaan is my best mate.\" Which word is CLOSEST in meaning to \"mate\"?</en>"
+      options: ["friend", "teacher", "cousin", "rival"]
+      answer: 0
+  - item: U1-047
+    sezdir:
+      id: d06-047-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"true friend\" ne anlama geliyordu?"
+      options: ["gerçek arkadaş", "yeni komşu", "kötü örnek", "eski öğretmen"]
+      answer: 0
+    kullan:
+      id: d06-047-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>When I was sick, Bora brought my homework every day. He is a ________.</en>"
+      options: ["true friend", "bad friend", "stranger", "liar"]
+      answer: 0
+    sina:
+      id: d06-047-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Murat Bey: What is a true friend for you, Selin?\nSelin: ________</en>"
+      options: ["Someone who helps me when I have problems.", "Someone who tells my secrets to everyone.", "Someone who forgets my birthday every year.", "Someone who is always late for our meetings."]
+      answer: 0
+  - item: U1-048
+    sezdir:
+      id: d06-048-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede \"You're fun to be with.\" ne anlama geliyordu?"
+      options: ["Seninle vakit geçirmek çok eğlenceli.", "Sen hep geç kalıyorsun.", "Seni hiç anlamıyorum.", "Sen çok sessizsin."]
+      answer: 0
+    kullan:
+      id: d06-048-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I always laugh when I'm with you, Kaan. ________</en>"
+      options: ["You're fun to be with.", "You're always late.", "You're so mean.", "You're very boring."]
+      answer: 0
+    sina:
+      id: d06-048-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>What can Kaan's friends say to him?</en>"
+      stem: "<en>Kaan tells great jokes and always has fun ideas. Everyone loves being with him.</en>"
+      options: ["You're fun to be with.", "You're so boring.", "You never come to our parties.", "You always make us sad."]
+      answer: 0
+
+review:
+  - id: d06-r01
+    type: gap_fill
+    item: U1-079
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>There's a big exam tomorrow, but Duru isn't worried at all. She is so ________.</en>"
+    options: ["laid-back", "stressed", "mean", "full"]
+    answer: 0
+  - id: d06-r02
+    type: trait_match
+    item: U1-084
+    prompt: "<en>Which word describes Kaan?</en>"
+    stem: "<en>At the party, Kaan talked to everyone and made three new friends.</en>"
+    options: ["outgoing", "shy", "mean", "quiet"]
+    answer: 0
+  - id: d06-r03
+    type: gap_fill
+    item: U1-083
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Kaan laughed at Bora's old shoes. Selin said, \"Don't be ________, Kaan! That's not nice.\"</en>"
+    options: ["mean", "fair", "full", "laid-back"]
+    answer: 0
+  - id: d06-r04
+    type: situation
+    item: U1-071
+    prompt: "<en>What do the students say?</en>"
+    stem: "<en>The teacher gives every student the same time and the same questions in the test.</en>"
+    options: ["That's fair.", "That's mean.", "We're stuffed.", "We're outgoing."]
+    answer: 0
+  - id: d06-r05
+    type: dialogue_complete
+    item: U1-097
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece's mom: Would you like some more pasta, Selin?\nSelin: No, thank you. ________</en>"
+    options: ["I'm full.", "I'm hungry.", "I'm outgoing.", "I'm late."]
+    answer: 0
+  - id: d06-r06
+    type: synonym
+    item: U1-099
+    prompt: "<en>\"After three pieces of cake, Bora was stuffed.\" Which one is CLOSEST in meaning?</en>"
+    options: ["He was very full.", "He was very hungry.", "He was very tired.", "He was very angry."]
+    answer: 0
+
+tips:
+  - type: hafiza_kancasi
+    refs: [U1-040]
+    text: "mate kelimesi classmate (sınıf arkadaşı) ve teammate (takım arkadaşı) kelimelerinin içinde saklı. classmate'i biliyorsan mate'i de bilirsin!"
+  - type: tuzak
+    refs: [U1-028, U1-040]
+    text: "buddy ve mate gündelik, samimi kelimeler. Arkadaşına \"Thanks, mate!\" dersin ama resmî bir yazıda friend daha uygun. mate en çok İngiltere ve Avustralya'da, buddy en çok Amerika'da duyulur."
+  - type: kelime_ailesi
+    refs: [U1-033]
+    text: "friend + -ship = friendship (arkadaşlık). Aynı ek başka kelimelerde de var: member → membership (üyelik), leader → leadership (liderlik)."
+  - type: lgs_taktigi
+    refs: [U1-047, U1-030]
+    text: "close friend = çok yakın olduğun, sırlarını bilen kişi. true friend = zor anında yanında olan kişi. Soruda \"helps you when you have problems\" görürsen aklına true friend gelsin."
+
+coach:
+  start: "Parti bitti ama fotoğraflar yeni başlıyor! 📸 Bakalım Ece'nin albümünde neler var."
+  end_good: "Süpersin! Bugünkü altı ifade artık senin. Bir dahaki sefere birine \"Thanks, mate!\" demeyi dene 😄"
+  end_mixed: "Güzel iş! {weak} biraz naz yaptı ama önümüzdeki günlerde yine karşına çıkacak."
+
+notifications:
+  morning: "Ece gruba 147 parti fotoğrafı attı. Kaan'ın yorumları efsane 📸"
+  evening: "Sürpriz videodaki mesajlar ortaya çıktı. Duru ne yazmış? 10 dakika 🎬"
+  review: "Tek soru: Biri sana \"Thanks, mate!\" diyorsa seni ne olarak görüyor?"
+
+editor:
+  z07: {U1-028: BEKLIYOR, U1-030: BEKLIYOR, U1-033: BEKLIYOR, U1-040: BEKLIYOR, U1-047: BEKLIYOR, U1-048: BEKLIYOR}

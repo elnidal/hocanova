@@ -1,0 +1,307 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 13
+status: draft
+title: "İkili proje"
+est_minutes: 10
+characters: [Murat Bey, Kaan, Bora, Bora'nın annesi, Selin, Ece, Duru]
+new_items: [U1-005, U1-052, U1-057, U1-061, U1-088, U1-068]
+
+story:
+  - id: s01
+    text: "Çarşamba, İngilizce dersi. Murat Bey tahtaya kocaman harflerle yazdı: <en>Pair Project: My Hero</en>."
+  - id: s02
+    text: "\"<en>You will work in pairs. You have one week. Choose a partner you can {U1-052|depend on}.</en>\""
+  - id: s03
+    text: "Kaan hemen Bora'ya baktı. Ama arka masadan biri fısıldadı: \"<en>Don't work with Kaan. He's {U1-068|unreliable}. He's always late!</en>\""
+  - id: s04
+    text: "Kaan bunu duydu ve yüzü düştü. Belki de haklıydılar: Daha iki gün önce ödevini unutmuş, üstüne bir de köpek hikâyesi uydurmuştu."
+  - id: s05
+    text: "Bora'ya döndü, sesi alçaktı: \"<en>Everybody thinks I'm {U1-068|unreliable}. Do you still want to work with me?</en>\""
+  - id: s06
+    text: "Bora hiç düşünmedi: \"<en>Yes. I can {U1-052|depend on} you. Remember my bike?</en>\""
+  - id: s07
+    text: "Selin, Ece'ye fısıldadı: \"<en>Last week they {U1-027|argued} about one pass. Now look at them!</en>\""
+  - id: s08
+    text: "Ece gülümsedi: \"<en>That's what a {U1-045|strong bond} looks like.</en>\""
+  - id: s09
+    text: "Bora'nın kahramanı belliydi: annesi. Annesi hemşireydi ve her sabah herkesten önce evden çıkardı."
+  - id: s10
+    text: "Bora teklifini yaptı: \"<en>Can you {U1-005|come over} to my house on Saturday? My mum can tell us about her job.</en>\""
+  - id: s11
+    text: "Kaan elini kaldırdı, yemin eder gibi: \"<en>Sure! I'll {U1-005|come over} at two. And I won't be late. Really!</en>\""
+  - id: s12
+    text: "Duru arka masadan güldü: \"<en>Kaan, on time? I have a strange {U1-032|feeling} about this.</en>\""
+  - id: s13
+    text: "Cumartesi, saat ikiye beş vardı. Bora'nın kapısı çaldı. Kapıda Kaan duruyordu. Erken!"
+  - id: s14
+    text: "Bora telefonunu gösterdi: \"<en>You {U1-046|texted} me 'I'm coming!' ten times. And you're early!</en>\""
+  - id: s15
+    text: "Kaan ayakkabılarını kapıda çıkardı ve Bora'nın annesine elini uzattı: \"<en>Good afternoon. Thank you for having me.</en>\""
+  - id: s16
+    text: "Bora'nın annesi şaşırdı ve gülümsedi: \"<en>What a {U1-088|respectful} young man!</en>\""
+  - id: s17
+    text: "Bora gözlerine inanamadı. Bu, kantinde en yüksek sesle konuşan Kaan mıydı?"
+  - id: s18
+    text: "Röportaj başladı. Bora'nın annesi anlattı: \"<en>In my job, {U1-061|respect} is very important. I listen to my patients, and they listen to me.</en>\""
+  - id: s19
+    text: "Kaan defterine not aldı: \"<en>So, {U1-057|mutual respect}. That's a good title for our project!</en>\""
+  - id: s20
+    text: "Bora güldü: \"<en>Like us. You {U1-061|respect} my dance class now, and I {U1-061|respect} your… football ideas.</en>\""
+  - id: s21
+    text: "Annesi başını salladı: \"<en>That's the key to a good {U1-041|relationship}: {U1-057|mutual respect}.</en>\""
+  - id: s22
+    text: "Röportaj bitince Kaan kalktı: \"<en>Thank you for your time. I really {U1-061|respect} your work.</en>\""
+  - id: s23
+    text: "İki saat sonra proje hazırdı. Kaan kollarını açtı: \"<en>See? I'm not {U1-068|unreliable}!</en>\""
+  - id: s24
+    text: "Giderken bardağını mutfağa götürdü, kapıda bir kez daha teşekkür etti. Bora'nın annesi: \"<en>He's so {U1-088|respectful}. He can {U1-005|come over} any time.</en>\""
+  - id: s25
+    text: "Akşam Bora gruba ikisinin fotoğrafını attı: \"<en>Project finished! Kaan was on time and very {U1-088|respectful}. You can {U1-052|depend on} him now!</en>\""
+  - id: s26
+    text: "Selin: \"<en>Last week Bora said, 'I {U1-031|feel alone}.' Now look at him!</en>\" Ece: \"<en>{U1-057|Mutual respect} and a bag of chips. That's friendship!</en>\""
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>Choose a partner you can depend on.</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>Kaan, can you come over on Saturday?</en>"
+  - id: c03
+    speaker: Bora's mum
+    text: "<en>Your friend is so respectful. He isn't unreliable at all!</en>"
+  - id: c04
+    speaker: Kaan
+    text: "<en>Thanks! I think mutual respect is the key to friendship.</en>"
+
+steps:
+  - item: U1-005
+    sezdir:
+      id: d13-005-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"come over\" ne anlama geliyordu?"
+      options: ["(birinin evine) uğramak", "üstünden atlamak", "geri dönmek", "karşıdan karşıya geçmek"]
+      answer: 0
+    kullan:
+      id: d13-005-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I'm at home all evening. Do you want to ________ and watch a film with me?</en>"
+      options: ["come over", "argue", "miss", "depend on"]
+      answer: 0
+    sina:
+      id: d13-005-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Elif: I'm so bored at home.\nDuru: ________ We can play with Fıstık in the garden.</en>"
+      options: ["Why don't you come over to my house?", "Sorry, I'm not at home today.", "I don't like dogs at all.", "Text me next year."]
+      answer: 0
+  - item: U1-052
+    sezdir:
+      id: d13-052-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"depend on\" ne anlama geliyordu?"
+      options: ["güvenmek, -e bel bağlamak", "korkmak", "kızmak", "unutmak"]
+      answer: 0
+    kullan:
+      id: d13-052-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin always does what she says. You can ________ her.</en>"
+      options: ["depend on", "argue with", "lie to", "feel alone with"]
+      answer: 0
+    sina:
+      id: d13-052-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"You can depend on Selin.\" Which one is CLOSEST in meaning?</en>"
+      options: ["You can rely on Selin.", "You can argue with Selin.", "You can come over to Selin's house.", "You can text Selin."]
+      answer: 0
+  - item: U1-057
+    sezdir:
+      id: d13-057-z
+      type: meaning
+      context: s19
+      prompt: "Hikâyede \"mutual respect\" ne anlama geliyordu?"
+      options: ["karşılıklı saygı", "ortak ödev", "büyük korku", "eski arkadaşlık"]
+      answer: 0
+    kullan:
+      id: d13-057-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan listens to Bora, and Bora listens to Kaan. There is ________ between them.</en>"
+      options: ["mutual respect", "a big argument", "dishonesty", "a bad feeling"]
+      answer: 0
+    sina:
+      id: d13-057-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Murat Bey's message?</en>"
+      stem: "<en>Murat Bey: In this class, I listen to you and you listen to me. Nobody laughs at anybody's ideas.</en>"
+      options: ["There should be mutual respect in the class.", "Students must be quiet all the time.", "Only the teacher can talk.", "Students shouldn't share their ideas."]
+      answer: 0
+  - item: U1-061
+    sezdir:
+      id: d13-061-z
+      type: meaning
+      context: s18
+      prompt: "Hikâyede \"respect\" ne anlama geliyordu?"
+      options: ["saygı (duymak)", "korku", "ödül", "şaka"]
+      answer: 0
+    kullan:
+      id: d13-061-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>We should ________ older people and listen to them.</en>"
+      options: ["respect", "argue with", "lie to", "refuse"]
+      answer: 0
+    sina:
+      id: d13-061-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Which of the following shows respect?</en>"
+      options: ["listening carefully when someone is talking", "laughing at a friend's mistake", "looking at your phone while your teacher is talking", "talking loudly in the library"]
+      answer: 0
+  - item: U1-088
+    sezdir:
+      id: d13-088-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"respectful\" ne anlama geliyordu?"
+      options: ["saygılı", "tembel", "kaba", "utangaç"]
+      answer: 0
+    kullan:
+      id: d13-088-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>He always says \"please\" and \"thank you\" to older people. He is very ________.</en>"
+      options: ["respectful", "unreliable", "mean", "lazy"]
+      answer: 0
+    sina:
+      id: d13-088-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Kaan at Bora's house?</en>"
+      stem: "<en>At Bora's house, Kaan took off his shoes, thanked Bora's mum and carried his glass to the kitchen.</en>"
+      options: ["respectful", "rude", "unreliable", "lazy"]
+      answer: 0
+  - item: U1-068
+    sezdir:
+      id: d13-068-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"unreliable\" ne anlama geliyordu?"
+      options: ["güvenilmez", "çalışkan", "sessiz", "cömert"]
+      answer: 0
+    kullan:
+      id: d13-068-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>He often forgets his promises and he is always late. He's ________.</en>"
+      options: ["unreliable", "reliable", "respectful", "loyal"]
+      answer: 0
+    sina:
+      id: d13-068-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which word is DIFFERENT from the others?</en>"
+      options: ["unreliable", "reliable", "honest", "loyal"]
+      answer: 0
+      explain: "unreliable olumsuz bir özellik; diğer üçü olumlu."
+
+review:
+  - id: d13-r01
+    type: gap_fill
+    item: U1-035
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>I don't know what to do about my problem. Can you give me some ________?</en>"
+    options: ["advice", "lies", "feelings", "texts"]
+    answer: 0
+  - id: d13-r02
+    type: dialogue_complete
+    item: U1-037
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Why is Selin your best friend?\nB: ________</en>"
+    options: ["Because she is always there for me.", "Because she is always late.", "Because she never helps me.", "Because she tells my secrets to others."]
+    answer: 0
+  - id: d13-r03
+    type: gap_fill
+    item: U1-043
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Kaan opened his bag of chips and ________ it with Bora.</en>"
+    options: ["shared", "argued", "depended", "missed"]
+    answer: 0
+  - id: d13-r04
+    type: gap_fill
+    item: U1-044
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>At the weekend, I like to ________ with my family.</en>"
+    options: ["spend time", "argue", "feel alone", "tell lies"]
+    answer: 0
+  - id: d13-r05
+    type: synonym
+    item: U1-063
+    prompt: "<en>\"My parents always support me.\" Which one is CLOSEST in meaning?</en>"
+    options: ["My parents always back me up.", "My parents always argue with me.", "My parents are always busy.", "My parents never listen to me."]
+    answer: 0
+  - id: d13-r06
+    type: situation
+    item: U1-064
+    prompt: "<en>Ece helps Selin with English, and Selin helps Ece with maths. What do they do?</en>"
+    options: ["They support each other.", "They argue with each other.", "They tell lies.", "They feel alone."]
+    answer: 0
+  - id: d13-r07
+    type: synonym
+    item: U1-028
+    lgs_like: true
+    prompt: "<en>\"Bora is my buddy.\" Which one is CLOSEST in meaning?</en>"
+    options: ["Bora is my friend.", "Bora is my teacher.", "Bora is my cousin.", "Bora is my neighbour."]
+    answer: 0
+  - id: d13-r08
+    type: message_infer
+    item: U1-047
+    lgs_like: true
+    prompt: "<en>According to Selin, what is a true friend?</en>"
+    stem: "<en>Selin: A true friend doesn't only stay with you in good times. When you have a problem, a true friend is always there.</en>"
+    options: ["someone who helps you in bad times too", "someone who is only fun at parties", "someone who always agrees with you", "someone who lives next door"]
+    answer: 0
+  - id: d13-r09
+    type: dialogue_complete
+    item: U1-048
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Elif: I really enjoyed the picnic with you today, Duru.\nDuru: Me too! ________</en>"
+    options: ["You're fun to be with.", "You're always late.", "I feel alone with you.", "You're so unreliable."]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U1-052]
+    text: "depend on'un iki anlamı var: \"You can depend on me.\" = Bana güvenebilirsin. \"It depends on the weather.\" = Havaya bağlı. Ünitede ilki hedef; yanında kişi varsa çoğunlukla güvenmek."
+  - type: kelime_ailesi
+    refs: [U1-061, U1-088, U1-057]
+    text: "respect (saygı; saygı duymak) → respectful (saygılı) → disrespectful (saygısız). mutual = karşılıklı: mutual respect, mutual friend (ortak arkadaş)."
+  - type: kelime_ailesi
+    refs: [U1-068]
+    text: "rely (güvenmek) → reliable (güvenilir) → unreliable (güvenilmez). un- eki tersini yapar: happy → unhappy, fair → unfair."
+  - type: mini_dilbilgisi
+    refs: [U1-005]
+    text: "come over = birinin evine uğramak: \"Can you come over to my house?\" Kısaca \"Come over!\" de olur. Yer belirtmek için to kullan."
+
+coach:
+  start: "Murat Bey ikili proje veriyor. Herkes ortağını seçiyor; peki Kaan'la kim çalışmak ister? 🤔"
+  end_good: "Harika! Kaan'ın bile erken geldiği bir günde sen de tam isabet yaptın. ⏰"
+  end_mixed: "Güzel çalıştın. {weak} biraz nazlandı; yarın yine karşına çıkacak, o zaman tanıdık gelecek. 😊"
+
+notifications:
+  morning: "Murat Bey'den sürpriz: ikili proje! Kaan'ın ortağı kim olacak? 📚"
+  evening: "Kaan bir eve davetli ve ilk kez erken geliyor. Bunu görmen lazım! ⏰"
+  review: "Tek soru: \"It depends on the weather.\" ile \"Depend on me!\" aynı anlamda mı?"
+
+editor:
+  z07: {U1-005: BEKLIYOR, U1-052: BEKLIYOR, U1-057: BEKLIYOR, U1-061: BEKLIYOR, U1-088: BEKLIYOR, U1-068: BEKLIYOR}

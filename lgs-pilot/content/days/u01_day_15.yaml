@@ -1,0 +1,331 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 15
+status: draft
+title: "Kuzen Ege geri döndü"
+est_minutes: 10
+characters: [Ece, Selin, Duru, Elif, Kaan, Bora, Ege (Ece'nin kuzeni), Ece'nin annesi, Fıstık]
+new_items: [U1-074, U1-076, U1-078, U1-082, U1-089, U1-091]
+
+story:
+  - id: s01
+    text: "Salı. Teneffüste Elif ile Duru yine yan yanaydı: Duru gitar çalıyor, Elif telefonundan köpek videoları gösteriyordu. İkisi bir müzik grubu kurmayı planlıyordu."
+  - id: s02
+    text: "Ece uzaktan izledi. Üç gündür ikisi hiç ayrılmıyordu: kantinde, otobüste, müzik dersinde. Ece'nin içinde küçük, tuhaf bir sızı vardı."
+  - id: s03
+    text: "Ece, Selin'e döndü: \"<en>They {U1-044|spend time} together every day. Duru doesn't need me anymore.</en>\""
+  - id: s04
+    text: "Selin kaşını kaldırdı: \"<en>Ece… are you {U1-078|jealous}?</en>\""
+  - id: s05
+    text: "\"<en>Me? {U1-078|Jealous}? No! I'm just… watching them. Every minute.</en>\" Selin gülmemek için dudağını ısırdı."
+  - id: s06
+    text: "Selin, Ece'nin koluna girdi: \"<en>Can I {U1-035|give you some advice}? Don't guess. Talk to Duru.</en>\""
+  - id: s07
+    text: "Okul çıkışı hepsi okulun yanındaki parka gitti. Parkın önünde Ece'nin annesinin arabası durdu, arka kapı açıldı ve kim indi dersiniz? Kuzen Ege!"
+  - id: s08
+    text: "Ege daha merhaba demeden telefonunu çıkardı: \"<en>Look at my new phone! And my new shoes! And my new jacket!</en>\" Ece'nin annesi gülümsedi: \"<en>Ege, ask your friends a question too. Don't be so {U1-089|self-centered}!</en>\""
+  - id: s09
+    text: "Kaan, Bora'ya fısıldadı: \"<en>He only talks about himself. So {U1-089|self-centered}!</en>\" Bora iç geçirdi: \"<en>Last time it was his chips. Now it's his phone.</en>\""
+  - id: s10
+    text: "Sonra futbol başladı. Ege'nin şutu direğin yanından dışarı gitti; bunu herkes gördü. Ama Ege kollarını havaya kaldırdı: \"<en>Goal!</en>\""
+  - id: s11
+    text: "Selin: \"<en>Ege, it was out!</en>\" Ege: \"<en>No. It was a goal. I'm not changing my mind.</en>\" Kaan saçlarını tuttu: \"<en>You're so {U1-091|stubborn}!</en>\""
+  - id: s12
+    text: "On dakika sonra Ege hâlâ \"gol\" diyordu. Bora güldü: \"<en>He's more {U1-091|stubborn} than a cat at bath time!</en>\""
+  - id: s13
+    text: "Ege burnunu havaya dikti: \"<en>I'm not {U1-091|stubborn}. I'm just always right.</en>\" Herkes güldü; Ege bile."
+  - id: s14
+    text: "Tam o anda parkın girişinde bir dondurma arabası belirdi. Ege cebine baktı, bir süre düşündü, sonra arabaya yürüdü."
+  - id: s15
+    text: "Beş dakika sonra elinde yedi külahla döndü: \"<en>One for everyone. I want to {U1-043|share}. I wasn't nice at the party.</en>\""
+  - id: s16
+    text: "Ece gözlerine inanamadı: \"<en>Ege, that's so {U1-074|generous}!</en>\" Kaan fısıldadı: \"<en>{U1-074|Generous} Ege? Is this a dream?</en>\""
+  - id: s17
+    text: "Ece, Kaan'a döndü: \"<en>See? He isn't always {U1-089|self-centered}. He can be {U1-074|generous} too. People can change.</en>\""
+  - id: s18
+    text: "Bu arada küçük bir çocuğun uçurtması ağaca takıldı. Çocuk ağlamaya başlamadan Bora ağaca tırmandı ve uçurtmayı indirdi."
+  - id: s19
+    text: "Çocuğun annesi: \"<en>Thank you so much! You're very {U1-076|helpful}.</en>\" Selin gülümsedi: \"<en>That's Bora. Remember the old lady and the cake?</en>\""
+  - id: s20
+    text: "Bora inerken Ege'nin cebinden düşen telefonu da yerden aldı: \"<en>Here's your new phone, Ege.</en>\" Ege şaşırdı: \"<en>Thanks, Bora. You're… really {U1-076|helpful}.</en>\""
+  - id: s21
+    text: "Elif güldü: \"<en>{U1-074|Generous} Ege, {U1-076|helpful} Bora… What a strange day!</en>\""
+  - id: s22
+    text: "Dondurmalar bitince Duru, Ece'nin yanına geldi; Fıstık da peşindeydi. \"<en>Ece, you're very quiet today. What's wrong?</en>\""
+  - id: s23
+    text: "Ece derin bir nefes aldı: \"<en>I'm sorry. I was {U1-078|jealous}. You {U1-044|spend so much time} with Elif now.</en>\""
+  - id: s24
+    text: "Duru gülümsedi: \"<en>Elif is my new friend. But you're my oldest friend. {U1-037|You're always there for me}.</en>\""
+  - id: s25
+    text: "Duru, Fıstık'ın başını okşadı: \"<en>{U1-082|Loyalty} is important to me. Just ask Fıstık!</en>\" Fıstık onaylar bir sesle havladı."
+  - id: s26
+    text: "Elif de koşarak geldi: \"<en>Ece, join our band! You can sing!</en>\" Ece güldü: \"<en>Deal! Friends {U1-064|support each other}. And I {U1-063|support} your band!</en>\""
+  - id: s27
+    text: "Kaan, Fıstık'a eğildi: \"<en>Fıstık, the king of {U1-082|loyalty}!</en>\""
+  - id: s28
+    text: "Selin başını salladı: \"<en>Not only Fıstık. Duru's {U1-082|loyalty} is famous too.</en>\" Ece, Duru'ya sarıldı; içindeki sızı çoktan geçmişti."
+
+scene:
+  - id: c01
+    speaker: Selin
+    text: "<en>Are you jealous, Ece?</en>"
+  - id: c02
+    speaker: Ece
+    text: "<en>A little. Duru spends a lot of time with Elif.</en>"
+  - id: c03
+    speaker: Duru
+    text: "<en>Ece, you're my oldest friend. Loyalty is important to me.</en>"
+  - id: c04
+    speaker: Kaan
+    text: "<en>And look! Ege bought ice cream for everyone. He's so generous today!</en>"
+  - id: c05
+    speaker: Bora
+    text: "<en>Yes, but he's still stubborn. That ball was out!</en>"
+
+steps:
+  - item: U1-074
+    sezdir:
+      id: d15-074-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"generous\" ne anlama geliyordu?"
+      options: ["cömert", "cimri", "utangaç", "aceleci"]
+      answer: 0
+    kullan:
+      id: d15-074-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My uncle gave money to the animal shelter and bought new books for our school library. He is very ________.</en>"
+      options: ["generous", "mean", "stubborn", "jealous"]
+      answer: 0
+    sina:
+      id: d15-074-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which word describes Ali?</en>"
+      stem: "<en>Ali: I have two sandwiches today. Here, take one! And you can have my juice too.</en>"
+      options: ["generous", "self-centered", "stubborn", "jealous"]
+      answer: 0
+  - item: U1-076
+    sezdir:
+      id: d15-076-z
+      type: meaning
+      context: s19
+      prompt: "Hikâyede \"helpful\" ne anlama geliyordu?"
+      options: ["yardımsever", "tembel", "kibirli", "sabırsız"]
+      answer: 0
+    kullan:
+      id: d15-076-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Thanks for carrying my heavy bags, Bora. You're so ________!</en>"
+      options: ["helpful", "stubborn", "jealous", "unreliable"]
+      answer: 0
+    sina:
+      id: d15-076-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Zeynep?</en>"
+      stem: "<en>Zeynep often stays after class. She cleans the board, carries books for the teacher and explains the homework to new students.</en>"
+      options: ["helpful", "self-centered", "lazy", "jealous"]
+      answer: 0
+  - item: U1-078
+    sezdir:
+      id: d15-078-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"jealous\" ne anlama geliyordu?"
+      options: ["kıskanç", "yorgun", "mutlu", "meşgul"]
+      answer: 0
+    kullan:
+      id: d15-078-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ece doesn't like it when Duru spends all her time with Elif. She feels a little ________.</en>"
+      options: ["jealous", "generous", "helpful", "full"]
+      answer: 0
+    sina:
+      id: d15-078-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>How does Mert feel?</en>"
+      stem: "<en>Mert: My best friend has a new friend now. They sit together and laugh all the time. I want my best friend back!</en>"
+      options: ["jealous", "stuffed", "calm", "generous"]
+      answer: 0
+  - item: U1-082
+    sezdir:
+      id: d15-082-z
+      type: meaning
+      context: s25
+      prompt: "Hikâyede \"loyalty\" ne anlama geliyordu?"
+      options: ["sadakat", "sabır", "dürüstlük", "cesaret"]
+      answer: 0
+    kullan:
+      id: d15-082-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A good dog never leaves its owner. Dogs are famous for their ________.</en>"
+      options: ["loyalty", "dishonesty", "excuses", "lies"]
+      answer: 0
+    sina:
+      id: d15-082-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Which sentence is about loyalty?</en>"
+      options: ["Duru never leaves her friends, even in hard times.", "Duru is good at playing the guitar.", "Duru sleeps a lot at weekends.", "Duru has a dog called Fıstık."]
+      answer: 0
+  - item: U1-089
+    sezdir:
+      id: d15-089-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"self-centered\" ne anlama geliyordu?"
+      options: ["bencil", "cömert", "utangaç", "dikkatli"]
+      answer: 0
+    kullan:
+      id: d15-089-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>He only thinks about himself and never asks how other people feel. He is ________.</en>"
+      options: ["self-centered", "generous", "helpful", "understanding"]
+      answer: 0
+    sina:
+      id: d15-089-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Ege in the park?</en>"
+      stem: "<en>In the park, Ege talked only about his new phone. He didn't ask anyone a question and he didn't listen to others.</en>"
+      options: ["self-centered", "generous", "helpful", "loyal"]
+      answer: 0
+  - item: U1-091
+    sezdir:
+      id: d15-091-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"stubborn\" ne anlama geliyordu?"
+      options: ["inatçı", "cömert", "neşeli", "sessiz"]
+      answer: 0
+    kullan:
+      id: d15-091-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My little brother never changes his mind. When he says no, it's no! He's so ________.</en>"
+      options: ["stubborn", "generous", "helpful", "calm"]
+      answer: 0
+    sina:
+      id: d15-091-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Selin: Ege, everyone saw it. The ball was out!\nEge: ________\nSelin: Oh, you're so stubborn!</en>"
+      options: ["No! It was a goal. I'm not changing my mind.", "OK, you're right. Sorry.", "Let's ask the others, then.", "Can I have an ice cream, please?"]
+      answer: 0
+
+review:
+  - id: d15-r01
+    type: gap_fill
+    item: U1-069
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Don't panic! Stay ________ and listen to the teacher.</en>"
+    options: ["calm", "stubborn", "jealous", "full"]
+    answer: 0
+  - id: d15-r02
+    type: dialogue_complete
+    item: U1-080
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: What is your new neighbour like?\nB: ________</en>"
+    options: ["She's very patient and kind.", "She likes pizza.", "She lives next door.", "She's at home now."]
+    answer: 0
+    explain: "\"What is she like?\" kişiliği sorar; cevap bir kişilik özelliği olmalı."
+  - id: d15-r03
+    type: trait_match
+    item: U1-085
+    prompt: "<en>Which word describes Grandpa?</en>"
+    stem: "<en>Grandpa spent two hours teaching me chess. I made the same mistake ten times, but he never got angry.</en>"
+    options: ["patient", "self-centered", "stubborn", "jealous"]
+    answer: 0
+  - id: d15-r04
+    type: odd_one_out
+    item: U1-086
+    prompt: "<en>Which one is NOT a personal trait?</en>"
+    options: ["chocolate", "honest", "calm", "loyal"]
+    answer: 0
+  - id: d15-r05
+    type: gap_fill
+    item: U1-087
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Bora is shy, but his brother is very outgoing. They have very different ________.</en>"
+    options: ["personalities", "invitations", "excuses", "promises"]
+    answer: 0
+  - id: d15-r06
+    type: trait_match
+    item: U1-093
+    prompt: "<en>Which word describes Ms Kaya?</en>"
+    stem: "<en>I was ill and missed the exam. Ms Kaya said, \"Don't worry. You can take it next week.\"</en>"
+    options: ["understanding", "unreliable", "stubborn", "mean"]
+    answer: 0
+  - id: d15-r07
+    type: message_infer
+    item: U1-018
+    lgs_like: true
+    prompt: "<en>Which is TRUE about Bora?</en>"
+    stem: "<en>Bora: Cinema or picnic? I prefer the picnic. I want to be outside in the sun.</en>"
+    options: ["He would rather have a picnic.", "He wants to go to the cinema.", "He doesn't want to go out.", "He doesn't have an opinion."]
+    answer: 0
+  - id: d15-r08
+    type: dialogue_complete
+    item: U1-014
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece: Duru, pizza or burgers?\nDuru: ________ I'm happy with both.</en>"
+    options: ["It doesn't matter.", "I'd prefer pasta.", "Sorry, I can't.", "I don't like them."]
+    answer: 0
+  - id: d15-r09
+    type: dialogue_complete
+    item: U1-023
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Selin: I can bring my speaker to the picnic.\nElif: ________ We can listen to music all day.</en>"
+    options: ["That would be great!", "That's not fair!", "I have nothing to do.", "Sorry, I'm busy."]
+    answer: 0
+  - id: d15-r10
+    type: message_infer
+    item: U1-012
+    lgs_like: true
+    prompt: "<en>What is this message?</en>"
+    stem: "<en>Hi everyone! My birthday party is on Saturday at 3 pm at my house. Please come! — Ece</en>"
+    options: ["an invitation", "an apology", "an excuse", "a secret"]
+    answer: 0
+  - id: d15-r11
+    type: dialogue_complete
+    item: U1-011
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Bora: Would you like to come to my football match on Sunday?\nKaan: ________ What time does it start?</en>"
+    options: ["I'd love to!", "Sorry, I can't.", "No, I refuse.", "That's not fair."]
+    answer: 0
+
+tips:
+  - type: kelime_ailesi
+    refs: [U1-082, U1-078, U1-074, U1-076]
+    text: "loyal (sadık) → loyalty (sadakat) · jealous → jealousy (kıskançlık) · generous → generosity (cömertlik) · help → helpful (yardımsever)."
+  - type: mini_dilbilgisi
+    refs: [U1-078]
+    text: "jealous'tan sonra kişi gelirse \"of\" kullan: \"Ece was jealous of Elif.\" (Ece, Elif'i kıskandı.)"
+  - type: ilginc_bilgi
+    refs: [U1-089]
+    text: "self-centered Amerikan yazımı; İngiliz İngilizcesinde self-centred yazılır. İkisi de doğru. self (kendi) + centre (merkez): kendini dünyanın merkezi sanan kişi!"
+
+coach:
+  start: "Bugün parkta tuhaf şeyler oluyor: Ece suskun, kuzen Ege geri döndü ve bir de dondurma arabası var! 🍦"
+  end_good: "Harika iş! Ege'nin iki yüzünü de tanıdın: stubborn ama bugün generous. Sen de bugün çok helpful bir öğrenciydin! 🍦"
+  end_mixed: "Güzel gidiyorsun! {weak} için üzülme; yarın yine karşına çıkacak ve o zaman çok daha tanıdık gelecek."
+
+notifications:
+  morning: "Kuzen Ege geri döndü! 😬 Ama bugün bir sürprizi var: dondurma 🍦"
+  evening: "Ece neden bu kadar suskun? Cevap bugünkü derste, 10 dakika."
+  review: "Tek soru: Herkese dondurma alan Ege generous mı, self-centered mı?"
+
+editor:
+  z07: {U1-074: BEKLIYOR, U1-076: BEKLIYOR, U1-078: BEKLIYOR, U1-082: BEKLIYOR, U1-089: BEKLIYOR, U1-091: BEKLIYOR}

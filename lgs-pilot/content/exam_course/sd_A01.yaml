@@ -1,0 +1,150 @@
+# LGS Sınav Dili — A01 Diyaloğu tamamla (S01). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-A01
+module: A
+title: "Diyaloğu tamamla"
+unlock_after: "Ü1 G3"
+minutes: 5
+stems: [S01]
+units: [1]
+intro_tr: "LGS'de diyalog tamamlama soruları neredeyse her yıl çıkar. Boşluğun hem öncesini hem sonrasını okursan en hızlı toplanan puanlardan biridir."
+cards:
+  - title_tr: "Boşluğun iki komşusu var"
+    body_tr: "Boşluğa gelen cümle hem bir önceki satıra cevap vermeli hem de bir sonraki satırı mümkün kılmalı. Yalnız önceki satıra bakarsan iki şık da uyar gibi görünür; sonraki satır seçimi tek şıkka indirir."
+    examples_en:
+      - "Ece: Would you like to come to the park? / Kaan: ____ / Ece: Great, see you at 4!  → kabul (Sure, I'd love to!)"
+      - "Ece: Would you like to come to the park? / Kaan: ____ / Ece: Oh, that's a pity.  → ret (Sorry, I can't.)"
+    signal_words: ["question", "answer", "next line"]
+  - title_tr: "Sonraki satırın ele verdikleri"
+    body_tr: "Sonraki satır 'Great! / What time?' ise boşlukta kabul vardır. 'That's a pity / Maybe next time' ise ret vardır. Sonraki satır 'Yes / No' ya da bir bilgi (saat, yer) ise boşluk bir soru cümlesidir."
+    examples_en:
+      - "What time? / Where? / Great!  → kabul"
+      - "That's a pity. / Maybe next time. / No problem.  → ret"
+      - "At 7 p.m. / At my house.  → boşlukta soru var"
+    signal_words: ["Great!", "What time?", "That's a pity.", "Maybe next time."]
+  - title_tr: "Soru kelimesi = cevap türü"
+    body_tr: "Boşluk bir soruysa, cevaptaki bilginin türüne bak: saat → What time / When, yer → Where, kişi → Who, sebep → Why (because …), sıklık → How often."
+    examples_en:
+      - "____ / At 7 p.m.  → What time does it start?"
+      - "____ / At the school hall.  → Where is it?"
+    signal_words: ["What time", "Where", "Who", "Why", "How often"]
+worked_example:
+  id: sd-A01-w
+  type: dialogue_complete
+  stem_id: S01
+  context: |-
+    Kaan: Hey Duru, how about going to the park after school?
+    Duru: ________
+    Kaan: Oh, that's a pity. Maybe next weekend, then.
+  prompt: "Which of the following completes the dialogue?"
+  options:
+    - "Sorry, I can't. I have a guitar lesson."
+    - "Sure, that sounds fun!"
+    - "I'd love to. What time?"
+    - "Would you like to come with me?"
+  answer: 0
+  explain_tr: "Kaan 'That's a pity. Maybe next weekend' diyor; demek ki Duru reddetmiş. 'I'd love to. What time?' konuyla uyumlu ama kabul ettiği için sonraki satırla çelişir."
+  items: [U1-008, U1-021]
+practice:
+  - id: sd-A01-p01
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Selin: ________
+      Bora: Sure, I'd love to! Where is the party?
+      Selin: At my house. It starts at 4 p.m.
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "Would you like to come to my birthday party on Saturday?"
+      - "Did you enjoy the party last week?"
+      - "Can you help me with my homework?"
+      - "Why don't you like parties?"
+    answer: 0
+    explain_tr: "'I'd love to!' bir davete verilen kabuldür ve Bora partinin yerini soruyor. 'Did you enjoy the party last week?' de partiden söz ediyor ama geçmişi soruyor; 'I'd love to' ile cevaplanmaz."
+    items: [U1-026, U1-011]
+  - id: sd-A01-p02
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Elif: Are you free on Sunday? We're going to the cinema.
+      Duru: ________ I'm visiting my grandparents.
+      Elif: No problem. Maybe next time!
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "Sorry, I can't."
+      - "Yes, that sounds great!"
+      - "Thanks, I'll be there."
+      - "Sure, why not?"
+    answer: 0
+    explain_tr: "Duru büyükanne ve büyükbabasını ziyaret edecek, Elif de 'Maybe next time' diyor: bu bir ret. Diğer üç şık kabul anlamı taşıyor."
+    items: [U1-021]
+  - id: sd-A01-p03
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Bora: ________
+      Kaan: At 7 p.m. Don't be late!
+    prompt: "Which of the following can be the missing part?"
+    options:
+      - "What time does the concert start?"
+      - "Where is the concert?"
+      - "Who is singing at the concert?"
+      - "How often do you go to concerts?"
+    answer: 0
+    explain_tr: "Cevap bir saat (At 7 p.m.); saati soran tek şık 'What time …?'. 'Where …?' de 'at' ile cevaplanabilir ama yer ister, saat istemez."
+  - id: sd-A01-p04
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Murat Bey: Bora, where is your homework?
+      Bora: ________ I left it on my desk at home.
+      Murat Bey: OK, but please bring it tomorrow.
+    prompt: "Which of the following completes the conversation?"
+    options:
+      - "I'm really sorry."
+      - "Yes, here you are."
+      - "Thank you, that's very kind."
+      - "I'd love to!"
+    answer: 0
+    explain_tr: "Bora ödevini evde unutmuş ve bunun bahanesini veriyor; önce özür diler. 'Yes, here you are' ödevi verdiğini söyler, 'I left it at home' ile çelişir."
+    items: [U1-002, U1-007]
+  - id: sd-A01-p05
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Ece: Bora, we need a drummer for the school concert. Can we count on you?
+      Bora: ________
+      Ece: Great! Our first practice is on Friday at 5.
+    prompt: "Which of the following best completes the conversation?"
+    options:
+      - "Of course! You can rely on me."
+      - "Sorry, I can't play the drums."
+      - "I'm not sure. Let me think about it."
+      - "Why do you need a drummer?"
+    answer: 0
+    explain_tr: "Ece 'Great!' deyip prova saatini veriyor; Bora kesin olarak kabul etmiş olmalı. 'I'm not sure' kararsızlık bildirir, ardından 'Great!' ve prova planı gelmez."
+    items: [U1-051, U1-060]
+  - id: sd-A01-p06
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Selin: Kaan, ________
+      Kaan: Why not? I'll bring the ball.
+      Selin: Great! See you at the park.
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "how about playing basketball this afternoon?"
+      - "do you like reading books?"
+      - "can you lend me your pen?"
+      - "why are you always in a hurry?"
+    answer: 0
+    explain_tr: "'Why not?' bir öneriyi kabul eder; top ve park da basketbol önerisine uyar. 'Can you lend me your pen?' de 'Why not?' ile cevaplanabilir ama top ve parkla ilgisi yok."
+    items: [U1-008, U1-025]
+tips:
+  - "Boşluktan SONRAKİ satırı ilk önce oku: cevabın yarısı oradadır."
+  - "Şıkları boşluğa tek tek yerleştirip diyaloğu baştan sona sessizce oku; akmayan şıkkı ele."
+  - "Konuyla ilgili olmak yetmez: doğru şık konuşmanın İŞLEVİNE (davet, kabul, ret, soru) uymalı."
+coach:
+  start: "Merhaba, ben Hoca Nova! Bugün dedektifiz: boşluğun sırrı çoğu zaman bir alt satırda saklı."
+  end: "Harika iş! Artık bir boşluk gördüğünde gözün önce alt satıra kayacak. İşte sınav refleksi bu!"
+status: draft

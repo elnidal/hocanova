@@ -1,0 +1,152 @@
+# LGS Sınav Dili — A02 Kim katılıyor, kim reddediyor? (S08, S09). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-A02
+module: A
+title: "Kim katılıyor, kim reddediyor?"
+unlock_after: "Ü1 G8"
+minutes: 5
+stems: [S08, S09]
+units: [1]
+intro_tr: "LGS'de birkaç kişinin davete verdiği cevaplar verilir ve 'Kim geliyor?' ya da 'Hangisi bir ret?' diye sorulur. Kabul ve ret sinyallerini tanıyan, bu soruyu saniyeler içinde çözer."
+cards:
+  - title_tr: "Kabul sinyalleri"
+    body_tr: "Bu kalıplardan biri varsa kişi davete EVET diyor. Ardından genellikle bir soru (What time?) ya da bir teklif (I'll bring …) gelir."
+    examples_en:
+      - "Sure, I'd love to!"
+      - "Why not? I'll bring the drinks."
+      - "That would be great!"
+      - "Sounds fun! What time?"
+    signal_words: ["Sure", "I'd love to!", "Why not?", "That would be great.", "Sounds …!"]
+  - title_tr: "Ret sinyalleri ve 'but' kuralı"
+    body_tr: "'I'd love to' tek başına kabul, ama arkasından 'but' geliyorsa RET'tir; 'but'tan sonrası bahanedir. Kararsız cevaplar (Maybe, I'm not sure) da kabul sayılmaz."
+    examples_en:
+      - "I'd love to, but I have a basketball match.  → RET"
+      - "Sorry, I can't. I'm visiting my aunt.  → RET"
+      - "Maybe. I'm not sure yet.  → kabul değil"
+    signal_words: ["but", "Sorry, I can't …", "Maybe", "I'm not sure"]
+  - title_tr: "Cümlenin işi ne? (S09)"
+    body_tr: "Bazı sorular kişiyi değil cümlenin İŞLEVİNİ sorar: davet (Would you like …?), kabul (Sure!), ret (Sorry, I can't), özür (I'm sorry), bahane (because …), öneri (How about …?). Bir cümle birden çok işlev taşıyabilir; kök tam olarak neyi istiyor, ona bak."
+    examples_en:
+      - "Would you like to join us?  → invitation"
+      - "I can't come because I have to study.  → refusal + excuse"
+      - "How about Sunday instead?  → suggestion"
+    signal_words: ["invitation", "refusal", "apology", "excuse", "suggestion"]
+worked_example:
+  id: sd-A02-w
+  type: text_infer
+  stem_id: S08
+  context: |-
+    Ece: Band picnic on Saturday! Who can come?
+    Kaan: Sounds fun, but I have a match on Saturday.
+    Selin: That would be great! I'll be there.
+    Duru: Sure! I'll bring Fıstık too.
+    Bora: Sorry, I can't. I have to visit my aunt.
+  prompt: "Who will NOT join the picnic?"
+  options:
+    - "Kaan and Bora"
+    - "Selin and Duru"
+    - "Kaan and Duru"
+    - "Only Bora"
+  answer: 0
+  explain_tr: "Kaan 'Sounds fun' diye başlıyor ama 'but' ile maçını bahane ediyor; Bora da 'Sorry, I can't' diyor. 'Only Bora' çekici, çünkü Kaan'ın olumlu başlangıcı insanı yanıltıyor."
+  items: [U1-022, U1-023, U1-021]
+practice:
+  - id: sd-A02-p01
+    type: situation
+    stem_id: S09
+    context: "Which of the following is an invitation?"
+    prompt: "Choose the correct option."
+    options:
+      - "Would you like to have dinner with us tonight?"
+      - "Sorry, I can't come tonight."
+      - "Thank you for the lovely dinner."
+      - "I'm sorry I'm late."
+    answer: 0
+    explain_tr: "'Would you like to …?' davet kalıbıdır. 'Sorry, I can't come tonight' de akşam yemeğiyle ilgili ama bir daveti reddediyor."
+    items: [U1-026, U1-012]
+  - id: sd-A02-p02
+    type: situation
+    stem_id: S09
+    context: "In which of the following does the speaker refuse an invitation?"
+    prompt: "Choose the correct option."
+    options:
+      - "I'd love to, but I have a guitar lesson."
+      - "Sure, what time should I come?"
+      - "Would you like to join us?"
+      - "Why not? It sounds great."
+    answer: 0
+    explain_tr: "'I'd love to, but …' bir RET: 'but'tan sonra bahane geliyor. 'Sure, what time …?' ve 'Why not?' kabul, 'Would you like …?' ise davetin kendisi."
+    items: [U1-011, U1-019]
+  - id: sd-A02-p03
+    type: text_infer
+    stem_id: S08
+    context: |-
+      Murat Bey: Our English Club meets on Wednesdays after school. Would you like to join?
+      Elif: I'd love to, but I have choir practice on Wednesdays.
+      Bora: Why not? It sounds fun.
+      Duru: Maybe. I'm not sure yet.
+      Selin: That would be great, thanks!
+    prompt: "Who accepts the invitation?"
+    options:
+      - "Bora and Selin"
+      - "Elif and Bora"
+      - "Duru and Selin"
+      - "Elif, Bora and Selin"
+    answer: 0
+    explain_tr: "Bora (Why not?) ve Selin (That would be great) kabul ediyor. Elif 'I'd love to, but …' ile reddediyor, Duru ise henüz karar vermemiş."
+    items: [U1-025, U1-023, U1-015]
+  - id: sd-A02-p04
+    type: situation
+    stem_id: S09
+    context: "Which of the following is an excuse?"
+    prompt: "Choose the correct option."
+    options:
+      - "I can't come because I have to study for my exam."
+      - "Would you like to come with us?"
+      - "Sure, I'd love to come."
+      - "Thanks for inviting me."
+    answer: 0
+    explain_tr: "Bahane, gelememenin SEBEBİDİR: 'because I have to study'. 'Thanks for inviting me' kibar bir cümle ama sebep bildirmiyor."
+    items: [U1-007]
+  - id: sd-A02-p05
+    type: situation
+    stem_id: S09
+    context: |-
+      Kaan: Duru, do you want to go to the cinema tonight?
+      Duru: I'd love to, but I have to walk Fıstık. What about tomorrow?
+      Kaan: Tomorrow is fine! See you at 6.
+    prompt: "What does Duru do in the conversation?"
+    options:
+      - "She refuses and suggests another day."
+      - "She accepts the invitation for tonight."
+      - "She invites Kaan to walk Fıstık with her."
+      - "She apologises for being late."
+    answer: 0
+    explain_tr: "Duru bu akşamı 'I'd love to, but …' ile reddediyor ve 'What about tomorrow?' ile yeni gün öneriyor. 'She accepts … for tonight' tuzak: 'I'd love to' ile başlıyor ama 'but' var."
+    items: [U1-006, U1-024]
+  - id: sd-A02-p06
+    type: text_infer
+    stem_id: S08
+    context: |-
+      Elif: I'm making pizza at my house on Friday. Do you want to come?
+      Kaan: Of course! What time?
+      Ece: Thanks for asking, but I'm going to my cousin's wedding.
+      Bora: I'd love to! Can I bring my brother?
+      Selin: Sorry, I can't. I have a piano lesson.
+    prompt: "Which of the following people will go to Elif's house?"
+    options:
+      - "Kaan and Bora"
+      - "Ece and Selin"
+      - "Kaan, Ece and Bora"
+      - "Only Kaan"
+    answer: 0
+    explain_tr: "Kaan (Of course!) ve Bora (I'd love to!) kabul ediyor. Ece 'Thanks for asking' diye kibarca başlıyor ama 'but' ile reddediyor; bu yüzden üçlü şık yanlış."
+    items: [U1-006, U1-011, U1-021]
+tips:
+  - "Her kişinin yanına + ya da − koy; sonra şıkları bu listeyle karşılaştır."
+  - "'but' kelimesini gördüğün an dur: öncesi ne kadar olumlu olursa olsun, cevap çoğunlukla RET'tir."
+  - "Kökte NOT varsa (Who will NOT join?) daire içine al; aradığın − işaretliler."
+coach:
+  start: "Bugün parti listesi tutuyoruz! Kim geliyor, kim 'ama' diyor? 'but' kelimesi en büyük ipucumuz."
+  end: "Süper! 'I'd love to, but…' artık seni kandıramaz. Kibar retleri gözünden kaçırmıyorsun!"
+status: draft

@@ -1,0 +1,1354 @@
+schema_version: 1
+unit: 9
+title: Science
+status: taslak
+summary_tr: Ünite, bilimsel buluşları, bilim insanlarını ve deneyleri konuşmayı öğretir. Programın işlevi geçmiş olayları anlatmaktır (Archimedes invented the water screw.); kazanımlar şu an ve geçmişte
+  olan eylemleri birlikte anlatan metinleri de kapsar (Newton discovered gravity, and now scientists are exploring the solar system.). Çatı kelimelerin çoğu (invent U4, discover U7, explore U6, research
+  U5, improve / develop U6) önceki ünitelerde öğretildi; bu ünite onları biyografi ve buluş metinlerinde tekrar eder, yeni olarak deney ve tıp dilini (experiment, observe, result, cure, disease), ödül ve
+  başarı dilini (achievement, award / Nobel Prize) ve Simple Past – Present Continuous karşıtlığını, edilgen yapıyı (was invented by) tanıma düzeyinde ekler. LGS'de ünite en çok bilim insanı biyografisi
+  / buluş metni okuma, "Who invented …?" bilgi eşleştirme, tablo (bilim insanı – buluş – yıl) ve neden–sonuç çıkarımı olarak gelir.
+curriculum:
+  outcomes:
+  - code: E8.9.SP (kod doğrulanamadı)
+    text_tr: 'Sözlü anlatım: Bilimsel başarılar hakkında basit biçimde bilgi sunar.'
+  - code: E8.9.R (kod doğrulanamadı)
+    text_tr: 'Okuma: Şu anda ve geçmişte olan eylemleri anlatan kısa ve basit metinleri anlar. (LGS''de doğrudan ölçülen kazanım türü)'
+  - code: E8.9.R (kod doğrulanamadı)
+    text_tr: 'Okuma: Bilimle ilgili kısa metinlerde ana fikri ve destekleyici ayrıntıları belirler.'
+  - code: E8.9.W (kod doğrulanamadı)
+    text_tr: 'Yazma: Bilimsel başarıları kısa bir paragrafta basitçe anlatır.'
+  functions:
+  - id: F1
+    name_tr: 'Geçmiş olayları anlatmak: buluşlar ve keşifler (Talking about past events)'
+    exponents:
+    - Archimedes invented the water screw.
+    - Who invented the telephone?
+    - Alexander Graham Bell invented the telephone in 1876.
+    - What did Marie Curie discover?
+    - Fleming discovered penicillin in 1928.
+    responses:
+    - Graham Bell did.
+    - She discovered radium.
+    - He is the inventor of the light bulb.
+    items:
+    - U9-036
+    - U9-020
+    - U9-004
+    - U9-019
+    - U9-026
+    lgs_weight: yüksek
+    note_tr: Programın doğrulanan işlevi (ingilizcepedia 32. hafta planı). invent (U4-047) ve discover (U7-039) önceki ünitelerde; bu ünitede kalıp olarak tekrar edilir.
+  - id: F2
+    name_tr: Şu an olanla geçmişte olanı karşılaştırmak (actions happening now and in the past)
+    exponents:
+    - Researchers found some new fossils, and now they are working on them in the labs.
+    - Newton discovered gravity, and now scientists are exploring the solar system.
+    - What are scientists working on at the moment?
+    - These days, engineers are developing artificial intelligence.
+    responses:
+    - They're working on a new vaccine.
+    - They're doing experiments on Mars rocks.
+    items:
+    - U9-039
+    - U9-010
+    - U9-008
+    - U9-021
+    - U9-028
+    lgs_weight: yüksek
+    note_tr: Kazanım metninde açıkça var ("actions happening currently and in the past"); Simple Past ile Present Continuous aynı metinde.
+  - id: F3
+    name_tr: Bilim insanı biyografisi anlatmak (describing scientists' lives)
+    exponents:
+    - Where was he born?
+    - When did she die?
+    - He died in 1955, at the age of 76.
+    - Aziz Sancar won the Nobel Prize in Chemistry in 2015.
+    - Why did Aziz Sancar get the Nobel Prize?
+    responses:
+    - He was born in Germany in 1879.
+    - She passed away in 1934.
+    - Because he did important research on DNA repair.
+    items:
+    - U9-038
+    - U9-030
+    - U9-029
+    - U9-002
+    - U9-035
+    - U9-032
+    lgs_weight: yüksek
+    note_tr: Soru kalıpları sayfasındaki biyografi soruları (R). Okuma sorularının çoğu bir biyografi paragrafından tarih / yer / buluş bilgisi ister.
+  - id: F4
+    name_tr: Süreç ve neden–sonuç anlatmak (cause and effect; passive recognition)
+    exponents:
+    - The printing press was invented by Gutenberg.
+    - Thanks to vaccines, many diseases disappeared.
+    - The experiment failed. As a result, they tried again.
+    - Penicillin cures infections. That's why it is important.
+    responses:
+    - So, it changed the world.
+    - Because of this invention, people could read more books.
+    items:
+    - U9-037
+    - U9-040
+    - U9-009
+    - U9-026
+    - U9-027
+    lgs_weight: orta
+    note_tr: Ders kitabı işlev listesinde ayrı başlık olarak doğrulanamadı; edilgen yapı ve "cause and effect" çıkmış tablosunda ve okuma metinlerinde geçiyor (bkz. open_questions).
+sources:
+- code: A
+  name: ingilizcele.com — 8. Sınıf 9. Ünite Science Ünite Kelimeleri (PDF)
+  rows: 45
+- code: B
+  name: ingilizceciyiz.com — 8. Sınıf 9. Ünite Kelimeleri Science (PDF)
+  rows: 164
+- code: W
+  name: 'ingilizcedilbilgisi.net 9. ünite kelime listesi: ERİŞİLEMEDİ (yalnız 8 örnek satır) + kullanıcının yapıştırdığı "Sınavlarda çıkmış 9. ünite kelimeleri" tablosu (50 satır, 2013–2020 TEOG/LGS)'
+  rows: 58
+- code: R
+  name: 'Kısa web araştırması: ingilizcepedia.com 8. sınıf 32. hafta günlük planı (Ünite 9 işlevi, kazanımlar, Useful Language); ingilizcedilbilgisi.net 8. sınıf 9. ünite soru kalıpları'
+  rows: 10
+tasnif:
+  teaching_units: 46
+  counts:
+    birim_CEKIRDEK: 22
+    birim_KALIP_ISLEV: 6
+    birim_TUZAK: 18
+    oncelik_1: 18
+    oncelik_2: 28
+    havuz_CEKIRDEK: 34
+    havuz_KALIP_ISLEV: 12
+    havuz_TUZAK: 34
+    havuz_BILINEN: 45
+    havuz_TANIMA: 49
+    havuz_ONCEKI_UNITE: 60
+    havuz_toplam: 234
+  items_file: lgs-pilot/content/unit_09_items.yaml
+  rules_tr:
+  - 'Satır değil öğretim birimi sayılır: aileler (science / scientist / scientific; chemist / chemistry / chemical; publish / print / printing press) ve eş anlamlı kümeler (cure / treat / heal; award /
+    prize; observe / examine; several / various) tek birim.'
+  - Öncelik 1 = en az iki bağımsız kaynak (A, B, W, R) ya da KALIP / İŞLEV.
+  - Ünitenin çatı kelimeleri önceki ünitelerde öğretildiği için (invent U4-047, discover U7-039, explore U6-055, research U5-038, improve / develop U6-050) birim sayısı 46; inventor, discoverer, explorer,
+    researcher bu ailelere bağlandı (ÖNCEKİ ÜNİTE, yoğun tekrar).
+  - A listesinin uzmanlık terimleri (alchemy, cosmology, quantum theory, theory of relativity, black hole, stem cells, equation, hybrid car) ve B listesinin eski buluş / biyografi sahneleri (goldsmith,
+    servant, moveable, typewriter, telegram, compass) TANIMA.
+  - Türkçeyle aynı olanlar (lab, astronomy, prototype, paradox, design, documentary) ve A1–A2 genel kelimeler BİLİNEN.
+  excluded_examples:
+    BILINEN:
+    - astronomy
+    - become famous
+    - begin
+    - bring
+    - carry
+    - change
+    - change the world
+    - create
+    - design
+    - difficult
+    - disadvantage
+    - documentary
+    - earth
+    - education
+    - engineering
+    - famous
+    - forever
+    - forget
+    - happen
+    - healthy
+    - human
+    - idea
+    - important
+    - information
+    - lab
+    - leave
+    - lift
+    - live
+    - look for
+    - nearly
+    - need to
+    - other
+    - paint
+    - paradox
+    - place
+    - prototype
+    - send
+    - smartphone
+    - soon
+    - strange
+    TANIMA:
+    - alchemy
+    - allow
+    - belong to
+    - black hole
+    - claim
+    - company
+    - compass
+    - cosmology
+    - dine
+    - durable
+    - endeavor
+    - equation
+    - generate
+    - goldsmith
+    - healthcare cost
+    - heat test tube
+    - hybrid car
+    - insist on
+    - journalist
+    - layer
+    - masterpiece
+    - medieval
+    - milestone
+    - missing
+    - mold
+    - moveable
+    - novel
+    - operate machine
+    - orbit the sun
+    - philosophy
+    - poem
+    - poetry
+    - quantum theory
+    - radio waves
+    - range
+    - reach
+    - reject
+    - related with
+    - servant
+    - skin
+    - spin on its axis
+    - stem cells
+    - store information
+    - telegram
+    - theoretical physics
+    - theory of relativity
+    - transform
+    - typewriter
+    - widen people's horizon
+    ONCEKI_UNITE:
+    - accept (U1-001)
+    - apologize (U1-002)
+    - busy (U1-004)
+    - common (U1-036)
+    - interested (U1-038)
+    - share information (U1-043)
+    - patience (U1-085)
+    - teenager (U2-001)
+    - admire (U2-017)
+    - loud (U2-028)
+    - adult (U2-072)
+    - science fiction (U2-073)
+    - unbearable (U2-088)
+    - heat (U3-006)
+    - melt (U3-009)
+    - cover (U3-012)
+    - spread (U3-023)
+    - process (U3-052)
+    - add (U3-061)
+    - prepare (U3-062)
+    - well-known (U3-063)
+    - product, replace (U4-041)
+    - communication (U4-044)
+    - invent, invention, inventor (U4-047)
+    - decide (U4-049)
+    - search (U5-022)
+    - type (U5-024)
+    - do research, research, researcher (U5-038)
+    - explain, mean (U5-058)
+    - adventure (U6-001)
+    - dangerous (U6-011)
+    - survive (U6-014)
+    - die (U6-021)
+    - amazing (U6-030)
+    - reason (U6-037)
+    - structure, structure of dna (U6-045)
+    - successful (U6-049)
+    - develop, improve, improvement (U6-050)
+    - explore, explorer (U6-055)
+    - transportation (U7-011)
+    - entertainment (U7-012)
+    - ancient (U7-030)
+    - discover, discoverer, discovery (U7-039)
+    - incredible (U7-049)
+    - definitely (U7-054)
+    - borrow, lend (U8-031)
+    - instead of (U8-049)
+  exam_record:
+    kaynak: 'W: "Sınavlarda çıkmış 9. ünite kelimeleri" (kullanıcının yapıştırdığı tablo, 2013–2020 TEOG + LGS); sayı = toplam/LGS'
+    ogretim_birimlerinde:
+    - science / scientist / scientific (scientific developments) (4/2 LGS)
+    - chemist / chemistry / chemical (2/0 LGS)
+    - space / universe (space travel) (1/1 LGS)
+    - experiment (do / conduct an experiment) (1/0 LGS)
+    - result (3/2 LGS)
+    - discuss / discussion / debate (2/1 LGS)
+    - publish / print (printing press) (2/0 LGS)
+    - found (founder) (1/0 LGS)
+    - fix / repair (3/0 LGS)
+    - translate (translator / translation) (2/0 LGS)
+    - cure / treat / heal (treatment / get better) (1/0 LGS)
+    - achievement / accomplishment (achieve) (1/1 LGS)
+    - award / prize (win the Nobel Prize) (4/0 LGS)
+    - competition (take part in a competition) (2/0 LGS)
+    - 'cause and effect: so / that''s why / because of / thanks to / as a result (of) (2/0 LGS)'
+    - several / various (variety) (5/0 LGS)
+    onceki_unitelerde:
+    - prepare (6/0) → U3-062
+    - successful (5/0) → U6-049
+    - decide (4/2 LGS) → U4-049
+    - product (4/0) → U4-041
+    - search (4/0) → U5-022
+    - adult (3/2 LGS) → U2-072
+    - communication (3/0) → U4-044
+    - type (3/2 LGS) → U5-024 / U6-038
+    - well-known (3/1 LGS) → U3-063
+    - teenager (2/2 LGS) → U2-001
+    - heat (1/1 LGS) → U3-006
+    - invent (1/1 LGS) → U4-047
+    - transportation (1/1 LGS) → U7-011
+    - common (1/0) → U1-036
+    - definitely (1/0) → U7-054
+    - develop (1/0) → U6-050
+    - explain (1/0) → U5-058
+    - explore (1/0) → U6-055
+    - improve (1/0) → U6-050
+    - research (1/0) → U5-038
+    - structure (1/0) → U6-045
+    bilinen_tanima:
+    - important (6/0) BİLİNEN
+    - healthy (3/0) BİLİNEN
+    - nearly (1/1 LGS) BİLİNEN
+    - skin (3/0) TANIMA
+    - company (1/0) TANIMA
+    - missing (1/0) TANIMA
+    - belong to (1/0) TANIMA
+themes:
+- name: Bilim ve bilim insanları
+  items:
+  - U9-001
+  - U9-002
+  - U9-003
+  - U9-004
+  - U9-005
+  - U9-006
+  - U9-007
+  note_tr: 'Çatı kelimeler ve bilim dalları: science / scientist / scientific, chemist, physicist, medicine (tıp / ilaç), genius / brilliant, gravity, space / universe.'
+- name: Deney ve araştırma
+  items:
+  - U9-008
+  - U9-009
+  - U9-010
+  - U9-011
+  - U9-012
+  - U9-013
+  - U9-014
+  - U9-015
+  - U9-016
+  - U9-017
+  - U9-018
+  note_tr: 'Bilimsel sürecin dili: experiment, observe / examine, matter, result, fact, find out, knowledge, work on, discuss, wonder, calculate. research (U5-038) ve discover (U7-039) tekrar edilir.'
+- name: Buluşlar ve teknoloji
+  items:
+  - U9-019
+  - U9-020
+  - U9-021
+  - U9-022
+  - U9-023
+  - U9-024
+  - U9-025
+  note_tr: 'Buluş metinlerinin kelimeleri: light bulb, publish / print (printing press), artificial / virtual, found, fix, translate, revolutionary. invent (U4-047) tekrar edilir.'
+- name: Sağlık ve tıp
+  items:
+  - U9-026
+  - U9-027
+  - U9-028
+  note_tr: 'Tıp buluşları (Fleming, Pasteur, Aziz Sancar): cure / treat / heal, disease, vaccine.'
+- name: Başarı ve ödül
+  items:
+  - U9-029
+  - U9-030
+  - U9-031
+  - U9-032
+  - U9-033
+  - U9-034
+  - U9-035
+  note_tr: 'Bilim insanı biyografilerinin değerlendirme dili: achievement, award / prize (Nobel Prize), competition, contribution, deserve, appreciate, struggle.'
+- name: Geçmiş, şimdi ve neden–sonuç kalıpları
+  items:
+  - U9-036
+  - U9-037
+  - U9-038
+  - U9-039
+  - U9-040
+  note_tr: 'Programın işlevini taşıyan kalıplar: Who invented …? (Simple Past), was invented by (edilgen, tanıma), biyografi (was born / passed away), now / at the moment (Present Continuous), neden–sonuç
+    bağlaçları.'
+- name: Okuma metinlerinin fiil ve sıfatları
+  items:
+  - U9-041
+  - U9-042
+  - U9-043
+  - U9-044
+  - U9-045
+  - U9-046
+  note_tr: 'Okuma ve soru köklerinde sık geçen genel kelimeler: describe, several / various, reduce, unique, record, realize.'
+grammar:
+- id: G1
+  name_tr: 'Simple Past: buluş ve keşif anlatımı'
+  form: Özne + V2 (+ nesne) + in + yıl · Who + V2 …? · What / When did + özne + V1 …?
+  examples:
+  - Edison invented the light bulb in 1879.
+  - Who discovered penicillin? – Alexander Fleming did.
+  - When did Gutenberg invent the printing press?
+  explain_tr: Geçmişte bitmiş buluş ve keşifler Simple Past ile anlatılır. Who özne olduğunda did kullanılmaz (Who invented …?); diğer soru kelimelerinde did + V1 gelir.
+  common_errors:
+  - wrong: Who did invent the telephone?
+    right: Who invented the telephone?
+    why_tr: Who özne ise yardımcı fiil yok.
+  - wrong: When did Bell invented the telephone?
+    right: When did Bell invent the telephone?
+    why_tr: did varsa fiil yalın.
+  - wrong: Edison invented the light bulb at 1879.
+    right: Edison invented the light bulb in 1879.
+    why_tr: Yıl için in.
+  lgs_note: Bilim insanı – buluş – yıl tablosu sorularında "Which of the following is TRUE?"; çeldiriciler buluş ile kişiyi ya da yılı değiştirir.
+  items:
+  - U9-036
+  - U9-020
+  - U9-019
+  - U9-004
+- id: G2
+  name_tr: Simple Past ile Present Continuous karşıtlığı
+  form: 'Geçmiş: V2 (in 1928, years ago, last century) · Şimdi: am / is / are + V-ing (now, at the moment, currently, these days)'
+  examples:
+  - Fleming discovered penicillin in 1928, and now scientists are developing new medicines.
+  - Researchers found some fossils last year; now they are working on them in the labs.
+  - People used typewriters in the past, but today we are typing on smartphones.
+  explain_tr: 'Kazanımın merkezi: aynı metinde geçmişte olan (bitmiş) ile şu an süren eylem. Zaman ifadesi hangi zamanın seçileceğini gösterir.'
+  common_errors:
+  - wrong: Now scientists work on a new vaccine.
+    right: Now scientists are working on a new vaccine.
+    why_tr: 'Şu an süren eylem: am / is / are + V-ing.'
+  - wrong: In 1876 Bell is inventing the telephone.
+    right: In 1876 Bell invented the telephone.
+    why_tr: 'Geçmiş yıl: Simple Past.'
+  lgs_note: Boşluk doldurma ve metin çıkarımında zaman ifadesi (in 1928 / now) doğru şıkkı belirler.
+  items:
+  - U9-039
+  - U9-010
+  - U9-008
+- id: G3
+  name_tr: Geçmiş zaman edilgen yapı (tanıma düzeyi)
+  form: was / were + V3 (+ by + kişi) · The telephone was invented by Bell.
+  examples:
+  - The light bulb was invented by Edison.
+  - Penicillin was discovered by Fleming in 1928.
+  - The first books were printed on the printing press.
+  explain_tr: Buluş öne çıkarılırken edilgen kullanılır; yapanı by ile verilir. Ü3'teki Simple Present Passive (is / are + V3) ile aynı mantık. LGS düzeyinde tanımak yeterli.
+  common_errors:
+  - wrong: The telephone invented by Bell.
+    right: The telephone was invented by Bell.
+    why_tr: was / were unutulmaz.
+  - wrong: Penicillin was discover by Fleming.
+    right: Penicillin was discovered by Fleming.
+    why_tr: Edilgende V3.
+  lgs_note: Okuma metninde edilgen cümle soruda etken olarak sorulur (Who invented …?); by'dan sonraki kişi cevaptır.
+  items:
+  - U9-037
+  - U9-036
+  - U9-019
+- id: G4
+  name_tr: 'Biyografi kalıpları: be born, pass away, at the age of'
+  form: was / were born in + yer / yıl · grew up in … · studied … at … · died / passed away in … at the age of …
+  examples:
+  - Marie Curie was born in Warsaw in 1867.
+  - She studied physics and chemistry in Paris.
+  - Einstein passed away in 1955, at the age of 76.
+  explain_tr: be born her zaman edilgendir ("doğdum" = I was born). pass away, die'ın kibar karşılığıdır. Yaş için at the age of.
+  common_errors:
+  - wrong: I born in 2012.
+    right: I was born in 2012.
+    why_tr: be born.
+  - wrong: He died in the age of 76.
+    right: He died at the age of 76.
+    why_tr: at the age of.
+  lgs_note: Biyografi paragrafından "Which of the following is NOT mentioned?" ya da kronoloji sorusu.
+  items:
+  - U9-038
+  - U9-030
+  - U9-029
+- id: G5
+  name_tr: Neden–sonuç bağlaçları
+  form: because + cümle · because of / thanks to + isim · so / that's why / as a result + sonuç cümlesi
+  examples:
+  - Thanks to the printing press, books became cheaper.
+  - The experiment failed because of a small mistake.
+  - Vaccines protect us from diseases. That's why they are important.
+  - He worked hard. As a result, he won the Nobel Prize.
+  explain_tr: 'because ve because of farkı: cümle mi isim mi geliyor. thanks to olumlu sonuç (sayesinde) için. so / that''s why / as a result sonucu verir.'
+  common_errors:
+  - wrong: because of it was dangerous
+    right: because it was dangerous
+    why_tr: Cümleden önce because.
+  - wrong: Thanks to the virus, many people got ill.
+    right: Because of the virus, many people got ill.
+    why_tr: thanks to olumlu sonuç için.
+  lgs_note: Metin çıkarımında "Why …?" sorusunun cevabı bu bağlaçlardan sonra gelir; çeldirici sonucu neden gibi verir.
+  items:
+  - U9-040
+  - U9-009
+- id: G6
+  name_tr: 'Sayılamayan isimler: knowledge, information, research, equipment'
+  form: knowledge / information / research + tekil fiil · a piece of information
+  examples:
+  - Scientists share their knowledge.
+  - This information is very useful.
+  - They did a lot of research on DNA.
+  explain_tr: Türkçede "bilgiler, araştırmalar" çoğul olabilir ama İngilizcede bu isimler sayılamaz; -s almaz, a / an almaz.
+  common_errors:
+  - wrong: He gained many knowledges.
+    right: He gained a lot of knowledge.
+    why_tr: knowledge sayılamaz.
+  - wrong: She did a research.
+    right: She did some research. / She did a study.
+    why_tr: research sayılamaz.
+  lgs_note: Doğrudan sorulmaz; ama şıklarda "informations" gibi biçimler yanlış seçenek olarak görülebilir.
+  items:
+  - U9-016
+expressions:
+- en: Who invented …?
+  tr: … kim icat etti?
+  use: buluşun sahibini sorarken
+  reply:
+  - Edison did.
+  - It was invented by Edison.
+  item: U9-036
+  register: nötr
+- en: X is the inventor / discoverer of …
+  tr: X …nin mucidi / kâşifidir.
+  use: kişiyi buluşuyla tanıtırken
+  item: U9-036
+  register: nötr
+- en: It was invented / discovered by …
+  tr: … tarafından icat edildi / keşfedildi.
+  use: buluşu öne çıkararak
+  item: U9-037
+  register: nötr
+- en: What are you working on?
+  tr: Ne üzerinde çalışıyorsun?
+  use: proje ya da deney hakkında sorarken
+  reply:
+  - I'm working on a robot.
+  - We're doing an experiment.
+  item: U9-010
+  register: gündelik
+- en: I wonder how / why …
+  tr: Merak ediyorum, nasıl / neden …
+  use: merak bildirirken
+  reply:
+  - Let's find out!
+  item: U9-017
+  register: nötr
+- en: Let's find out!
+  tr: Hadi öğrenelim / bulalım!
+  use: araştırmaya davet
+  item: U9-015
+  register: gündelik
+- en: In fact, …
+  tr: Aslında, …
+  use: bir bilgiyi düzeltirken ya da güçlendirirken
+  item: U9-014
+  register: nötr
+- en: Thanks to …
+  tr: … sayesinde
+  use: olumlu bir sonucun nedenini söylerken
+  item: U9-040
+  register: nötr
+- en: That's why …
+  tr: Bu yüzden …
+  use: sonucu bağlarken
+  item: U9-040
+  register: gündelik
+- en: He / She was born in …
+  tr: … doğdu.
+  use: biyografi anlatırken
+  item: U9-038
+  register: nötr
+- en: She won the Nobel Prize in …
+  tr: … Nobel Ödülü'nü kazandı.
+  use: başarıyı anlatırken
+  item: U9-030
+  register: nötr
+- en: You deserve it!
+  tr: Bunu hak ettin!
+  use: birini tebrik ederken
+  item: U9-033
+  register: gündelik
+- en: I really appreciate your help.
+  tr: Yardımın için çok minnettarım.
+  use: teşekkürü güçlendirirken
+  item: U9-034
+  register: nötr
+- en: What's the result?
+  tr: Sonuç ne?
+  use: deney sonrası
+  reply:
+  - It worked!
+  - It didn't work. Let's try again.
+  item: U9-009
+  register: gündelik
+collocations:
+- item: U9-008
+  pairs:
+  - do an experiment
+  - conduct / carry out an experiment
+  - the results of the experiment
+  - a science experiment
+- item: U9-026
+  pairs:
+  - a cure for cancer
+  - develop a cure
+  - treat a patient
+  - get treated
+  - heal an infection
+  - get better
+- item: U9-030
+  pairs:
+  - win the Nobel Prize
+  - win an award
+  - the Nobel Prize in Chemistry
+  - get a prize
+- item: U9-016
+  pairs:
+  - gain knowledge
+  - share knowledge
+  - scientific knowledge
+- item: U9-019
+  pairs:
+  - publish a book / an article
+  - print a document
+  - the printing press
+- item: U9-021
+  pairs:
+  - artificial intelligence
+  - virtual reality
+  - artificial heart
+- item: U9-027
+  pairs:
+  - diagnose a disease
+  - cure a disease
+  - heart disease
+  - spread a disease
+- item: U9-031
+  pairs:
+  - take part in a competition
+  - win a competition
+  - science competition
+  - science fair
+word_families:
+- root: science
+  forms:
+  - form: science
+    pos: n
+    tr: bilim
+    item: U9-001
+  - form: scientist
+    pos: n
+    tr: bilim insanı
+    item: U9-001
+  - form: scientific
+    pos: adj
+    tr: bilimsel
+    item: U9-001
+  - form: science fiction
+    pos: n
+    tr: bilim kurgu
+    item: U2-073
+- root: invent
+  forms:
+  - form: invent
+    pos: v
+    tr: icat etmek
+    item: U4-047
+  - form: invention
+    pos: n
+    tr: icat, buluş
+    item: U4-047
+  - form: inventor
+    pos: n
+    tr: mucit
+    item: U4-047
+- root: discover
+  forms:
+  - form: discover
+    pos: v
+    tr: keşfetmek
+    item: U7-039
+  - form: discovery
+    pos: n
+    tr: keşif
+    item: U7-039
+  - form: discoverer
+    pos: n
+    tr: keşfeden, kâşif
+    item: U7-039
+- root: chemistry
+  forms:
+  - form: chemistry
+    pos: n
+    tr: kimya
+    item: U9-002
+  - form: chemist
+    pos: n
+    tr: kimyager
+    item: U9-002
+  - form: chemical
+    pos: adj / n
+    tr: kimyasal; kimyasal madde
+    item: U9-002
+- root: physics
+  forms:
+  - form: physics
+    pos: n
+    tr: fizik
+    item: U9-003
+  - form: physicist
+    pos: n
+    tr: fizikçi
+    item: U9-003
+  - form: physical
+    pos: adj
+    tr: fiziksel
+- root: achieve
+  forms:
+  - form: achieve
+    pos: v
+    tr: başarmak
+    item: U9-029
+  - form: achievement
+    pos: n
+    tr: başarı
+    item: U9-029
+- root: translate
+  forms:
+  - form: translate
+    pos: v
+    tr: çevirmek
+    item: U9-024
+  - form: translator
+    pos: n
+    tr: çevirmen
+    item: U9-024
+  - form: translation
+    pos: n
+    tr: çeviri
+    item: U9-024
+- root: observe
+  forms:
+  - form: observe
+    pos: v
+    tr: gözlemlemek
+    item: U9-012
+  - form: observation
+    pos: n
+    tr: gözlem
+    item: U9-012
+  - form: observatory
+    pos: n
+    tr: gözlemevi
+synonym_sets:
+- words:
+  - cure
+  - treat
+  - heal
+  difference_tr: treat tedavi etmek (süreç), cure tamamen iyileştirmek / çare, heal yara ya da hastalığın iyileşmesi.
+  items:
+  - U9-026
+- words:
+  - award
+  - prize
+  - reward
+  difference_tr: award / prize yarışma ve başarı ödülü; reward (U8) bir davranışın karşılığı.
+  items:
+  - U9-030
+- words:
+  - observe
+  - examine
+  difference_tr: observe izleyip not etmek; examine yakından, ayrıntılı incelemek.
+  items:
+  - U9-012
+- words:
+  - achievement
+  - accomplishment
+  - success
+  difference_tr: Üçü de başarı; achievement emekle elde edilen başarı, success genel başarı (U6-049).
+  items:
+  - U9-029
+- words:
+  - fix
+  - repair
+  difference_tr: İkisi de tamir etmek; fix daha gündelik.
+  items:
+  - U9-023
+- words:
+  - take part in
+  - join
+  difference_tr: İkisi de katılmak; take part in etkinlik / yarışmaya aktif katılım.
+  items:
+  - U9-031
+- words:
+  - pass away
+  - die
+  difference_tr: Aynı anlam; pass away kibar.
+  items:
+  - U9-038
+opposites:
+- a: artificial
+  b: natural
+- a: reduce
+  b: increase
+  note_tr: increase U5-041
+- a: fact
+  b: opinion
+  note_tr: opinion U2-005
+- a: accept
+  b: reject
+  note_tr: accept U1-001; reject TANIMA
+- a: virtual
+  b: real
+- a: success
+  b: failure
+traps:
+- about: experiment / experience / expert
+  item: U9-008
+  kind: benzer_yazilis
+  trap_tr: Üçü karıştırılır.
+  tip_tr: experiment = deney, experience = deneyim (U6-027), expert = uzman (U5-039).
+- about: matter
+  item: U9-013
+  kind: cok_anlamli
+  trap_tr: What's the matter? (Ne oldu?) ve It doesn't matter (Önemli değil) bilinir; bilimde madde.
+  tip_tr: Bilim metninde matter = madde (solid, liquid, gas).
+- about: medicine
+  item: U9-006
+  kind: cok_anlamli
+  trap_tr: Yalnız "ilaç" bilinir.
+  tip_tr: study medicine = tıp okumak; take medicine = ilaç almak.
+- about: chemist
+  item: U9-002
+  kind: cok_anlamli
+  trap_tr: İngiliz İngilizcesinde chemist's = eczane.
+  tip_tr: Bilim metninde kimyager.
+- about: physics / physician
+  item: U9-003
+  kind: sahte_dost
+  trap_tr: physician fizikçi sanılır; aslında doktordur.
+  tip_tr: fizikçi = physicist.
+- about: found / find
+  item: U9-022
+  kind: benzer_yazilis
+  trap_tr: found yalnız find'ın geçmişi sanılır.
+  tip_tr: found–founded–founded = kurmak; find–found–found = bulmak.
+- about: realize
+  item: U9-046
+  kind: turkce_etkisi
+  trap_tr: Türkçedeki "realize etmek" (gerçekleştirmek) ile karışır.
+  tip_tr: realize = farkına varmak.
+- about: fact / opinion
+  item: U9-014
+  kind: cok_anlamli
+  trap_tr: fact "gerçek" diye çevrilince real / true ile karışır.
+  tip_tr: fact = kanıtlanabilir bilgi; opinion = görüş.
+- about: space
+  item: U9-005
+  kind: cok_anlamli
+  trap_tr: space yalnız uzay sanılır.
+  tip_tr: There is no space = yer yok; travel to space = uzaya gitmek.
+- about: brilliant
+  item: U9-007
+  kind: cok_anlamli
+  trap_tr: Kaynaklarda yalnız "parlak".
+  tip_tr: a brilliant scientist = çok zeki; a brilliant idea = harika.
+- about: wonder / wander
+  item: U9-017
+  kind: benzer_yazilis
+  trap_tr: wonder (merak etmek) ve wander (dolaşmak) karışır.
+  tip_tr: I wonder why … = Merak ediyorum, neden …
+- about: discuss about
+  item: U9-011
+  kind: dilbilgisi
+  trap_tr: Türkçe "hakkında tartışmak" etkisiyle discuss about yazılır.
+  tip_tr: discuss the results (edatsız).
+- about: be born
+  item: U9-038
+  kind: dilbilgisi
+  trap_tr: I born in … yazılır.
+  tip_tr: I was born in …
+- about: thanks to / because of
+  item: U9-040
+  kind: dilbilgisi
+  trap_tr: thanks to olumsuz sonuçta da kullanılır.
+  tip_tr: 'Olumlu sonuç: thanks to; nötr / olumsuz: because of.'
+- about: award / reward
+  item: U9-030
+  kind: benzer_yazilis
+  trap_tr: İkisi de "ödül" çevrilir.
+  tip_tr: Nobel = award / prize; ev işi karşılığı = reward (U8).
+- about: record
+  item: U9-045
+  kind: cok_anlamli
+  trap_tr: record yalnız "rekor" sanılır.
+  tip_tr: record the results = sonuçları kaydetmek.
+- about: artifical (A)
+  item: U9-021
+  kind: kaynak_hatasi
+  trap_tr: A "Artifical" yazmış.
+  tip_tr: Doğrusu artificial.
+- about: transform (A)
+  kind: kaynak_hatasi
+  trap_tr: A "transform = dönüşüm" yazmış.
+  tip_tr: transform = dönüştürmek; dönüşüm = transformation.
+- about: range (A)
+  kind: kaynak_hatasi
+  trap_tr: A "range = sıra" yazmış.
+  tip_tr: range = aralık, yelpaze, çeşit (a wide range of …).
+- about: physic (B)
+  item: U9-003
+  kind: kaynak_hatasi
+  trap_tr: 'B "physic: fizik" yazmış.'
+  tip_tr: fizik = physics.
+- about: loud (B)
+  kind: kaynak_hatasi
+  trap_tr: B "loud = yüksek sesle" yazmış.
+  tip_tr: loud = yüksek sesli (U2-028); yüksek sesle = loudly.
+- about: interested (B)
+  kind: kaynak_hatasi
+  trap_tr: B "interested = ilgili" yazmış.
+  tip_tr: interested (in) = ilgilenen, meraklı (U1-038); ilgili = related.
+- about: related with (B)
+  kind: kaynak_hatasi
+  trap_tr: B "related with" yazmış.
+  tip_tr: Doğrusu related to.
+- about: make experiment (B)
+  item: U9-008
+  kind: kaynak_hatasi
+  trap_tr: B "make experiment" yazmış.
+  tip_tr: do / conduct / carry out an experiment.
+- about: discoverer = kâşif (A, B)
+  kind: kaynak_hatasi
+  trap_tr: A ve B discoverer'a "kâşif / kaşif" demiş.
+  tip_tr: discoverer = keşfeden; kâşif çoğunlukla explorer (U6-055).
+lgs_focus:
+  what_is_tested:
+  - 'Bilim insanı biyografisi / buluş metni: kim, ne zaman, ne icat etti / keşfetti'
+  - Bilim insanı – buluş – yıl tablosu okuma
+  - Geçmiş (Simple Past) ile şimdi (Present Continuous) karşıtlığı içeren metin çıkarımı
+  - 'Neden–sonuç: Why …? sorusu (thanks to, because of, as a result)'
+  - 'Kelime anlamı: experiment, result, achievement, award, cure, discover / invent ayrımı'
+  question_patterns:
+  - type: table_graph
+    description_tr: Bilim insanı – buluş – yıl tablosu; doğru bilgi seçilir.
+    sample_stem: 'According to the table, which of the following is TRUE? (Tablo: Edison – light bulb – 1879; Bell – telephone – 1876; Fleming – penicillin – 1928)'
+    sample_options:
+    - The telephone was invented before the light bulb.
+    - Fleming invented the telephone.
+    - Penicillin was discovered in 1879.
+    - Edison discovered penicillin.
+    distractor_logic_tr: Kişi–buluş–yıl eşlemesi kaydırılır; invent / discover karıştırılır.
+    items:
+    - U9-036
+    - U9-037
+    - U9-020
+    - U9-026
+  - type: text_infer
+    description_tr: Kısa biyografi paragrafı; belirtilmeyen bilgi bulunur.
+    sample_stem: 'Read the text: ''Aziz Sancar was born in Mardin in 1946. He studied medicine in Istanbul. Later, he did research on DNA repair in the USA and won the Nobel Prize in Chemistry in 2015.''
+      Which question is NOT answered in the text?'
+    sample_options:
+    - How many children does he have?
+    - Where was he born?
+    - What did he study?
+    - When did he win the Nobel Prize?
+    distractor_logic_tr: Metinde açıkça cevaplanan biyografi soruları.
+    items:
+    - U9-038
+    - U9-006
+    - U9-030
+    - U9-002
+  - type: gap_fill
+    description_tr: Geçmiş ve şimdi karşıtlığı; zaman ifadesine göre fiil.
+    sample_stem: Fleming ---- penicillin in 1928, and today scientists ---- on new medicines.
+    sample_options:
+    - discovered / are working
+    - discovers / worked
+    - is discovering / work
+    - discovered / worked
+    distractor_logic_tr: Zaman ifadesini (in 1928 / today) göz ardı eden zaman eşleşmeleri.
+    items:
+    - U9-039
+    - U9-010
+    - U9-026
+  - type: dialogue_complete
+    description_tr: Bilim şenliği diyaloğunda boşluk.
+    sample_stem: 'A: What are you working on? B: ---- A: Wow! I wonder if it works. B: Let''s find out!'
+    sample_options:
+    - We're doing an experiment with magnets.
+    - I invented it last year.
+    - I'm sorry to hear that.
+    - It was discovered by Newton.
+    distractor_logic_tr: Zamanı ya da işlevi uymayan tanıdık cümleler.
+    items:
+    - U9-010
+    - U9-008
+    - U9-017
+    - U9-015
+  - type: situation
+    description_tr: 'Neden–sonuç: olumlu sonucun nedeni.'
+    sample_stem: Many diseases disappeared ---- vaccines.
+    sample_options:
+    - thanks to
+    - because
+    - so
+    - as a result
+    distractor_logic_tr: because (cümle ister), so / as a result (sonuç bildirir).
+    items:
+    - U9-040
+    - U9-028
+    - U9-027
+  - type: synonym
+    description_tr: Altı çizili kelimenin anlamı.
+    sample_stem: '''Marie Curie''s achievements changed science.'' The underlined word is closest in meaning to ----.'
+    sample_options:
+    - successes
+    - experiments
+    - mistakes
+    - awards
+    distractor_logic_tr: Aynı temanın kelimeleri (experiment, award) anlamca yakın görünür.
+    items:
+    - U9-029
+    - U9-008
+    - U9-030
+  priority_items:
+  - U9-001
+  - U9-008
+  - U9-009
+  - U9-029
+  - U9-030
+  - U9-026
+  - U9-027
+  - U9-036
+  - U9-037
+  - U9-038
+  - U9-039
+  - U9-040
+  - U9-010
+  - U9-019
+  - U9-011
+  - U9-005
+  - U9-002
+  - U9-006
+  - U9-022
+  - U9-042
+  tactics:
+  - Biyografi metninde tarihleri ve yerleri önceden işaretle; soru çoğunlukla bunlardan gelir.
+  - 'Boşlukta zaman ifadesine bak: in 1928 / last century → V2; now / at the moment / today → am / is / are + V-ing.'
+  - 'invent (olmayanı yapmak) ile discover (var olanı bulmak) farkı: penicillin, gravity, America discover; telephone, light bulb invent.'
+  - Edilgen cümlede by'dan sonraki kişi buluşun sahibidir.
+  - Why …? sorusunda because, thanks to, that's why kelimelerinin çevresini oku.
+  exam_vocabulary:
+  - en: Which question is NOT answered in the text?
+    tr: Metinde hangi sorunun cevabı yoktur?
+  - en: according to the table
+    tr: tabloya göre
+  - en: best describes
+    tr: en iyi tanımlar
+  - en: closest in meaning
+    tr: anlamca en yakın
+  - en: in chronological order
+    tr: kronolojik sırayla
+cross_unit:
+- item: invent / invention / inventor
+  links_to: U4-047
+  note_tr: Ü4 telefonun icadı; Ü9'da buluş metinlerinin ana fiili.
+- item: discover / discovery / discoverer
+  links_to: U7-039
+  note_tr: Ü7 (yer keşfetmek); Ü9 bilimsel keşif.
+- item: explore / explorer
+  links_to: U6-055
+  note_tr: Ü6 macera; Ü9 uzay keşfi.
+- item: research / researcher
+  links_to: U5-038
+  note_tr: do research Ü5.
+- item: improve / develop
+  links_to: U6-050
+  note_tr: scientific developments.
+- item: U9-008
+  links_to: U6-027
+  note_tr: experiment ↔ experience tuzağı; expert U5-039.
+- item: U9-013
+  links_to: U4-030
+  note_tr: What's the matter? ↔ matter (madde); It doesn't matter U1-014.
+- item: U9-030
+  links_to: U8-030
+  note_tr: reward (U8) ↔ award / prize.
+- item: U9-029
+  links_to: U6-049
+  note_tr: succeed / successful ile eş anlam.
+- item: U9-037
+  links_to: U3
+  note_tr: Ü3 Simple Present Passive (is made, is mixed) → Ü9 Simple Past Passive (was invented).
+- item: U9-040
+  links_to: U6-037
+  note_tr: Why …? – Because … (reason) Ü6.
+story_hooks:
+- situation_tr: 'Murat Bey ikinci bilim şenliğini duyurur ve ekipleri karıştırır (Ece–Bora, Kaan–Selin, Duru–Elif): bu kez konu bir buluş projesi.'
+  items:
+  - U9-031
+  - U9-001
+  - U9-010
+  - U9-030
+  comedy_tr: Ü1 volkanının lekesi hâlâ Murat Bey'in ayakkabısında.
+- situation_tr: Kaan ve Selin "geç kalmayan alarm"ı tasarlar; Selin her adımın sonucunu deftere kaydeder, Kaan merak ettiği her şeyi dener.
+  items:
+  - U9-008
+  - U9-009
+  - U9-045
+  - U9-017
+  - U9-015
+- situation_tr: Duru ile Elif "köpek havlaması çevirmeni" üzerinde çalışır; Fıstık ve Pamuk deneklerdir, gözlem notları komiktir.
+  items:
+  - U9-024
+  - U9-012
+  - U9-021
+  - U9-010
+  comedy_tr: Çevirmen her havlamayı "I want food" diye çevirir.
+- situation_tr: Ece, Bora'nın dağınık ama parlak fikrini takdir etmeyi öğrenir; ikisi tartışarak plan yapar.
+  items:
+  - U9-007
+  - U9-011
+  - U9-034
+  - U9-046
+- situation_tr: 'Kütüphane araştırması: ekipler poster için ünlü bilim insanlarını okur (Edison, Marie Curie, Aziz Sancar); kim nerede doğdu, ne icat etti.'
+  items:
+  - U9-038
+  - U9-036
+  - U9-037
+  - U9-020
+  - U9-002
+  - U9-029
+- situation_tr: Şenlikten önceki gece deney çalışmaz; ekipler sorunu bulup tamir etmeye uğraşır.
+  items:
+  - U9-023
+  - U9-040
+  - U9-035
+  - U9-009
+  comedy_tr: 'Sorun: fiş takılı değilmiş.'
+- situation_tr: 'Şenlik günü: Bora sunumu yapar, jüri ödülü açıklar; herkes kendi katkısını fark eder.'
+  items:
+  - U9-030
+  - U9-033
+  - U9-032
+  - U9-039
+  - U9-044
+mini_lessons:
+- type: tuzak
+  text_tr: invent = olmayan bir şeyi ilk kez yapmak (telephone, light bulb); discover = var olanı bulmak (penicillin, gravity, radium).
+  refs:
+  - U9-036
+  - U9-004
+  - U9-020
+- type: mini_dilbilgisi
+  text_tr: 'Who özne ise did yok: Who invented the telephone? Ama: When did Bell invent it?'
+  refs:
+  - U9-036
+- type: mini_dilbilgisi
+  text_tr: 'Edilgen geçmiş: was / were + V3 + by. The light bulb was invented by Edison.'
+  refs:
+  - U9-037
+- type: tuzak
+  text_tr: experiment = deney, experience = deneyim, expert = uzman. Üçü aynı harflerle başlar, anlamları farklı.
+  refs:
+  - U9-008
+- type: mini_dilbilgisi
+  text_tr: Doğdum = I was born (I born değil). Öldü (kibar) = passed away. Yaşında = at the age of.
+  refs:
+  - U9-038
+- type: lgs_taktigi
+  text_tr: Boşlukta "in 1928" görürsen V2, "now / at the moment" görürsen am / is / are + V-ing seç.
+  refs:
+  - U9-039
+- type: mini_dilbilgisi
+  text_tr: because + cümle, because of + isim; thanks to = sayesinde (olumlu sonuç).
+  refs:
+  - U9-040
+- type: tuzak
+  text_tr: matter bilimde "madde"; What's the matter? = Ne oldu?; It doesn't matter = Önemli değil.
+  refs:
+  - U9-013
+- type: kelime_ailesi
+  text_tr: science → scientist → scientific; chemistry → chemist → chemical; physics → physicist (physician = doktor!).
+  refs:
+  - U9-001
+  - U9-002
+  - U9-003
+- type: tuzak
+  text_tr: found–founded = kurmak; find–found = bulmak. He founded a company ≠ He found a company.
+  refs:
+  - U9-022
+  - U9-015
+- type: ilginc_bilgi
+  text_tr: Aziz Sancar, 2015 Nobel Kimya Ödülü'nü DNA onarımı araştırmalarıyla Tomas Lindahl ve Paul Modrich ile paylaştı.
+  refs:
+  - U9-030
+  - U9-002
+- type: tuzak
+  text_tr: realize = farkına varmak; Türkçedeki "realize etmek" (gerçekleştirmek) ile karıştırma.
+  refs:
+  - U9-046
+open_questions:
+- W (ingilizcedilbilgisi.net 9. ünite kelime listesi, ~330 satır) erişilemedi; havuz A + B + çıkmış tablosu + R ile kuruldu. Liste yapıştırılırsa eksik ÇEKİRDEK adayı kontrol edilmeli.
+- E8.9 kazanım kodları doğrulanamadı; kazanım metinleri ingilizcepedia 32. hafta günlük planından (kodsuz) alındı.
+- Edilgen yapı (was invented by) ve neden–sonuç bağlaçları programda ayrı işlev olarak doğrulanamadı; okuma metinleri ve çıkmış tablosuna (cause and effect, as a result of) dayanıyor.
+- Ünitenin çatı kelimeleri (invent, discover, explore, research, improve) önceki ünitelerde olduğu için birim sayısı 46. invent / discover ailelerini Ü9'da ayrı "tekrar birimi" yapmak ister misiniz?
+- Sınırda kalan tek kaynaklılar TANIMA bırakıldı (transform, generate, durable, milestone, store information, compass, typewriter); istenirse birime çevrilebilir.
+phrase_bank:
+- en: Scientific achievements of the past century changed the world.
+  tr: Geçen yüzyılın bilimsel başarıları dünyayı değiştirdi.
+  function: geçmiş olay
+  items:
+  - U9-029
+  source: MEB Useful Language (ingilizcepedia 32. hafta planı)
+- en: Archimedes invented the water screw.
+  tr: Arşimet su vidasını icat etti.
+  function: geçmiş olay
+  items:
+  - U9-036
+  source: MEB Useful Language (ingilizcepedia 32. hafta planı)
+- en: Who invented the car?
+  tr: Arabayı kim icat etti?
+  function: geçmiş olay
+  items:
+  - U9-036
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: Graham Bell invented the telephone.
+  tr: Graham Bell telefonu icat etti.
+  function: geçmiş olay
+  items:
+  - U9-036
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: Marie Curie is the discoverer of radium.
+  tr: Marie Curie radyumun kâşifidir.
+  function: geçmiş olay
+  items:
+  - U9-036
+  - U9-002
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: The printing press was invented by Gutenberg.
+  tr: Matbaa Gutenberg tarafından icat edildi.
+  function: geçmiş olay
+  items:
+  - U9-037
+  - U9-019
+  source: kalıp örneği (R araştırmasına dayalı, özgün)
+- en: Researchers found some new fossils, and now they are working on them in the labs.
+  tr: Araştırmacılar yeni fosiller buldu ve şimdi laboratuvarda onlar üzerinde çalışıyorlar.
+  function: şimdi ve geçmiş
+  items:
+  - U9-010
+  - U9-039
+  source: MEB Useful Language (ingilizcepedia 32. hafta planı)
+- en: Newton discovered gravity, and now scientists are exploring the solar system.
+  tr: Newton yer çekimini keşfetti; şimdi bilim insanları güneş sistemini keşfediyor.
+  function: şimdi ve geçmiş
+  items:
+  - U9-004
+  - U9-039
+  source: MEB Useful Language (ingilizcepedia 32. hafta planı)
+- en: What is she doing now?
+  tr: Şu anda ne yapıyor?
+  function: şimdi ve geçmiş
+  items:
+  - U9-039
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: What are scientists working on today?
+  tr: Bilim insanları bugün ne üzerinde çalışıyor?
+  function: şimdi ve geçmiş
+  items:
+  - U9-010
+  - U9-039
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: Where was he born?
+  tr: Nerede doğdu?
+  function: biyografi
+  items:
+  - U9-038
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: When did he die? – He died in 1955, at the age of 76.
+  tr: Ne zaman öldü? – 1955'te, 76 yaşında öldü.
+  function: biyografi
+  items:
+  - U9-038
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: Did he give up his research?
+  tr: Araştırmasından vazgeçti mi?
+  function: biyografi
+  items:
+  - U9-038
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: Why did Aziz Sancar get the Nobel Prize?
+  tr: Aziz Sancar neden Nobel Ödülü aldı?
+  function: biyografi
+  items:
+  - U9-030
+  - U9-040
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: What's the most important scientific development in your opinion?
+  tr: Sence en önemli bilimsel gelişme hangisi?
+  function: görüş
+  items:
+  - U9-001
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: I think the discovery of water on Mars is the most important one.
+  tr: Bence Mars'ta suyun keşfi en önemlisi.
+  function: görüş
+  items:
+  - U9-001
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: What do they have in common? / What is their common feature?
+  tr: Ortak noktaları ne?
+  function: ortak özellik
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: What does "inventor" mean?
+  tr: '"Inventor" ne demek?'
+  function: tanım
+  items:
+  - U9-036
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: Have you ever been to a science exhibition?
+  tr: Hiç bir bilim sergisine gittin mi?
+  function: deneyim
+  items:
+  - U9-031
+  source: ingilizcedilbilgisi.net 9. ünite soru kalıpları (R)
+- en: Thanks to vaccines, many diseases disappeared.
+  tr: Aşılar sayesinde birçok hastalık ortadan kalktı.
+  function: neden–sonuç
+  items:
+  - U9-040
+  - U9-028
+  - U9-027
+  source: kalıp örneği (R araştırmasına dayalı, özgün)
+- en: The experiment failed. As a result, they tried again.
+  tr: Deney başarısız oldu. Sonuç olarak yeniden denediler.
+  function: neden–sonuç
+  items:
+  - U9-040
+  - U9-008
+  source: kalıp örneği (R araştırmasına dayalı, özgün)
+- en: We're doing an experiment. Let's find out the result.
+  tr: Bir deney yapıyoruz. Hadi sonucu öğrenelim.
+  function: deney
+  items:
+  - U9-008
+  - U9-015
+  - U9-009
+  source: kalıp örneği (R araştırmasına dayalı, özgün)

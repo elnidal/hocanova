@@ -1,0 +1,133 @@
+schema_version: 1
+id: SD-B08
+module: B
+title: "Karşılaştırma ve üstünlük"
+unlock_after: "Ü7 sonu"
+minutes: 6
+stems: [S01, S03, S04, S06, S12, S13]
+functions: ["Karşılaştırma yapmak", "Tercih bildirmek ve gerekçe sunmak", "Yerleri betimlemek"]
+units: [6, 7]
+intro_tr: "Tablo, broşür ve tercih diyaloglarında hep karşılaştırma vardır: daha ucuz, en kalabalık, daha az tehlikeli. LGS'nin en sevdiği çeldirici de more ile less'in ya da iki ismin yer değiştirmesidir."
+cards:
+  - title_tr: "Daha …: -er than / more … than / less … than"
+    body_tr: "Kısa sıfat: -er than (cheap → cheaper, safe → safer, big → bigger). Uzun sıfat: more … than (more dangerous, more crowded). Ters yön: less … than (daha az). Düzensiz: good → better, bad → worse."
+    examples_en:
+      - "Canoeing is safer than rafting."
+      - "Bungee jumping is more dangerous than canoeing."
+      - "Paragliding is less dangerous than base jumping."
+    signal_words: ["-er than", "more … than", "less … than", "better", "worse"]
+  - title_tr: "En …: the -est / the most …"
+    body_tr: "Üç ya da daha fazla şey karşılaştırılırken: the cheapest, the biggest, the most crowded, the most exciting; düzensiz: the best, the worst. Tablo sorusunda 'the most / the -est' görürsen TÜM satırları kontrol et."
+    examples_en:
+      - "Istanbul is the most crowded city in Turkey."
+      - "Skydiving is the most exciting sport for me."
+      - "This is the cheapest guesthouse in the town."
+    signal_words: ["the -est", "the most …", "the least …", "the best", "the worst"]
+  - title_tr: "Tercih ve gerekçe"
+    body_tr: "I prefer X to Y. / I'd rather + fiil (than …). / Would you rather X or Y? Gerekçe 'Because …' ile ve çoğunlukla bir karşılaştırmayla gelir: Because it's cheaper. Gerekçenin hangi seçeneği desteklediğine bak."
+    examples_en:
+      - "I prefer rafting to canoeing."
+      - "I'd rather stay in a guesthouse than a hotel."
+      - "Why? – Because it's safer and cheaper than flying."
+    signal_words: ["prefer … to …", "would rather … than …", "Why …?", "Because …"]
+worked_example:
+  id: sd-B08-w
+  type: table_graph
+  stem_id: S06
+  context: "Holiday options (one night)\nMardin guesthouse: 900 TL, quiet · Antalya resort: 3,000 TL, very crowded · Bodrum B&B: 1,500 TL, crowded"
+  prompt: "According to the table, which of the following is correct?"
+  options:
+    - "The Antalya resort is the most expensive option."
+    - "The Bodrum B&B is cheaper than the Mardin guesthouse."
+    - "The Mardin guesthouse is more crowded than the Antalya resort."
+    - "The Bodrum B&B is the quietest option."
+  answer: 0
+  explain_tr: "En yüksek fiyat Antalya'da (3,000 TL). 'Bodrum … cheaper than Mardin' çekici çünkü iki isim doğru ama karşılaştırma ters: 1,500 TL, 900 TL'den pahalı."
+  items: [U7-017, U7-016, U7-015, U7-052, U6-033, U6-034]
+practice:
+  - id: sd-B08-p01
+    type: gap_fill
+    stem_id: S12
+    context: "Kaan: Rafting is fun, but skydiving is ________ sport I've ever tried!"
+    prompt: "Which of the following best fills the blank?"
+    options:
+      - "the most exciting"
+      - "more exciting"
+      - "the more exciting"
+      - "as exciting"
+    answer: 0
+    explain_tr: "'… I've ever tried' tüm denediği sporlarla karşılaştırıyor: en üstünlük (the most). 'more exciting' ve 'the more exciting' yalnız iki şeyi karşılaştırır; '… I've ever tried' ile kullanılamaz."
+    items: [U6-034, U6-006, U6-004]
+  - id: sd-B08-p02
+    type: text_infer
+    stem_id: S04
+    context: "Duru: I prefer canoeing to rafting because it is more relaxing. But caving is the most frightening activity for me. I'll never try it!"
+    prompt: "According to the text, which of the following is TRUE?"
+    options:
+      - "Duru thinks rafting is less relaxing than canoeing."
+      - "Duru prefers rafting to canoeing."
+      - "Duru would like to try caving."
+      - "Duru thinks canoeing is the most frightening activity."
+    answer: 0
+    explain_tr: "Kano daha rahatlatıcıysa rafting daha az rahatlatıcıdır: aynı bilgi 'less' ile söylenmiş. 'Duru prefers rafting to canoeing' iki ismin yerini değiştiren tuzak."
+    items: [U6-035, U6-010, U6-004]
+  - id: sd-B08-p03
+    type: dialogue_complete
+    stem_id: S01
+    context: "Elif: Would you rather stay in a hotel or a guesthouse in Cappadocia?\nSelin: ________ Guesthouses are cheaper and more charming."
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "I'd rather stay in a guesthouse."
+      - "I'd rather stay in a hotel."
+      - "I've never been to a hotel."
+      - "Yes, I would."
+    answer: 0
+    explain_tr: "Selin'in gerekçesi pansiyonları (guesthouses) övüyor, yani pansiyonu seçiyor. 'Yes, I would' 'X or Y?' sorusuna cevap olamaz; seçim yapmak gerekir."
+    items: [U6-036, U7-016, U7-055]
+  - id: sd-B08-p04
+    type: dialogue_complete
+    stem_id: S13
+    context: "Bora: ________\nEce: Because it's safer and cheaper than flying."
+    prompt: "Which question can be the missing question?"
+    options:
+      - "Why do you prefer travelling by train?"
+      - "How long did you stay there?"
+      - "Which city is the most crowded?"
+      - "Have you ever been abroad?"
+    answer: 0
+    explain_tr: "Cevap 'Because …' ile başlıyor; soru 'Why …?' olmalı ve uçakla karşılaştırılan bir ulaşım tercihi sorulmalı. 'How long …?' bir süre ister."
+    items: [U6-037, U6-035, U7-011]
+  - id: sd-B08-p05
+    type: table_graph
+    stem_id: S06
+    context: "Class survey: Which place would you like to visit?\nCappadocia: 12 students · Mardin: 9 students · Antalya: 6 students · Rize: 3 students"
+    prompt: "Which of the following CANNOT be said according to the survey?"
+    options:
+      - "Antalya is more popular than Mardin."
+      - "Cappadocia is the most popular place."
+      - "Rize is the least popular place."
+      - "More students chose Mardin than Antalya."
+    answer: 0
+    explain_tr: "Ters soru: Antalya'yı 6, Mardin'i 9 öğrenci seçmiş; Antalya daha AZ popüler. Diğer üçü doğru: Kapadokya 12 ile en çok, Rize 3 ile en az, Mardin (9) Antalya'dan (6) fazla. İlk şık bu son bilginin isimleri yer değiştirmiş hâli."
+    items: [U2-090, U7-001]
+  - id: sd-B08-p06
+    type: text_infer
+    stem_id: S03
+    context: "Visit Amasra! This charming port town is smaller and quieter than Bodrum, but for many visitors, it is one of the most beautiful places on the Black Sea coast. The best time to visit is summer because the weather is warm and sunny then."
+    prompt: "Which of the following is NOT true according to the text?"
+    options:
+      - "Amasra is more crowded than Bodrum."
+      - "Amasra is a port town."
+      - "Amasra is on the Black Sea coast."
+      - "Summer is the best time to visit Amasra."
+    answer: 0
+    explain_tr: "Metin Amasra'nın Bodrum'dan daha sakin (quieter) olduğunu söylüyor; 'more crowded' bunun tersi. Diğer üçü metinde açıkça yazıyor."
+    items: [U7-025, U7-055, U7-052]
+tips:
+  - "more ↔ less ve X ↔ Y yer değiştirmesi en çekici çeldiricidir: şıktaki iki ismi ve yönü metinle ayrı ayrı kontrol et."
+  - "the most / the -est görürsen tablodaki TÜM satırlara bak; yalnız iki satırı karşılaştırmak yetmez."
+  - "Tercih diyaloğunda gerekçe cümlesi (Because … / It's cheaper …) hangi seçeneği övüyorsa cevap odur."
+coach:
+  start: "Hangisi daha heyecanlı, hangisi en ucuz? Bugün karşılaştırma dilini sınav gözüyle inceliyoruz."
+  end: "Sen bu dersin the best öğrencisisin! Kaan bile senden daha hızlı değil."
+status: draft

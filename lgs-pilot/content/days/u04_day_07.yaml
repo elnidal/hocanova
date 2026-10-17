@@ -1,0 +1,324 @@
+schema_version: 1
+program: lgs
+unit: 4
+day: 7
+status: draft
+title: "Bekleme müziği"
+est_minutes: 10
+characters: [Duru, Elif, Fıstık, Pamuk, Can (ZipZap görevlisi), Ece, Kaan, Murat Bey]
+new_items: [U4-036, U4-038, U4-039, U4-040, U4-041, U4-055]
+
+story:
+  - id: s01
+    text: "Tatilin ikinci haftası, pazartesi sabahı. Duru'nun kapısında kargocu vardı; elinde küçük bir kutu."
+  - id: s02
+    text: "Duru'nun hayatında ilk kez tek başına seçip internetten aldığı şeydi bu: konser için küçük, kırmızı bir hoparlör. Kutunun üstünde kocaman harflerle yazıyordu: \"<en>ZipZap – free and fast {U4-039|delivery}!</en>\""
+  - id: s03
+    text: "Elif ve Pamuk prova için erkenden gelmişti. Elif kutunun etrafında zıplıyordu: \"<en>Open it! Open it! Red, like Fıstık's new collar!</en>\""
+  - id: s04
+    text: "Kutu açıldı. Hoparlör kırmızı değil, fosforlu yeşildi. Duru fişe taktı; Luna Ray yerine kulak tırmalayan bir cızırtı yükseldi."
+  - id: s05
+    text: "Fıstık kanepenin altına kaçtı. Elif ellerini kulaklarına bastırdı: \"<en>That noise is so {U2-030|annoying}! And it's green! Green!</en>\""
+  - id: s06
+    text: "Duru kutunun dibindeki kartı okudu: \"<en>A problem with your order? Call our {U4-036|call center} at 0850 555 47 47. Our {U4-038|customer service} team is happy to help.</en>\""
+  - id: s07
+    text: "Elif telefonunu uzattı: \"<en>I'll call them for you. You never {U4-011|pick up} the phone, you never call anyone…</en>\" Duru telefonu yavaşça geri itti: \"<en>No. It's my speaker. I'll {U4-040|make a complaint}.</en>\""
+  - id: s08
+    text: "Elif'in ağzı açık kaldı. Duru rakamları tek tek okudu: \"<en>OK. I'm {U4-005|dialling} now. Zero, eight, five, zero… five, five, five… four, seven, seven, four.</en>\""
+  - id: s09
+    text: "Bir adam neşeyle açtı: \"<en>Pizza Palace, good morning!</en>\" Duru bir an durdu: \"<en>Oh. {U4-032|Sorry, wrong number}.</en>\" Elif karta baktı: son rakamlar yetmiş dört değil, kırk yedi kırk yediydi."
+  - id: s10
+    text: "Duru hiç bozulmadı: \"<en>No problem. I'll {U4-005|dial} it again. Slowly.</en>\""
+  - id: s11
+    text: "Bu kez robot gibi bir ses karşıladı onları: \"<en>Welcome to the ZipZap {U4-036|call center}. For orders, press 1. To {U4-041|return or change a product}, press 2.</en>\" Duru 2'ye bastı."
+  - id: s12
+    text: "Sonunda gerçek bir insan: \"<en>Good morning, ZipZap {U4-038|customer service}, this is Can. {U4-020|How can I help you}?</en>\" Ama arkada yeşil hoparlör hâlâ cızırdıyordu ve Can'ın sesi kesik kesik geliyordu."
+  - id: s13
+    text: "Can: \"<en>Hello? Sorry, it's a {U4-015|bad line}. I can only hear noise.</en>\" Duru hoparlörün fişini çekti."
+  - id: s14
+    text: "Duru: \"<en>Is that better? I'd like to {U4-040|report a problem} with my order. The speaker was {U4-039|delivered} this morning, but it's the wrong colour and it doesn't work.</en>\""
+  - id: s15
+    text: "Tam o sırada Fıstık kanepenin altından ulumaya başladı. Can: \"<en>{U4-019|Pardon}? {U4-019|Can you repeat that}, please?</en>\" Duru, hiç acele etmeden her şeyi baştan anlattı."
+  - id: s16
+    text: "Can: \"<en>Oh, I'm sorry about that. Don't worry, we can {U4-055|solve} this. Would you like to {U4-041|return} it and get your money back, or {U4-041|change} it for a new one?</en>\""
+  - id: s17
+    text: "Duru: \"<en>I'd like to {U4-041|change} it, please. A red one. Our band has a concert on Saturday.</en>\" Can: \"<en>Great. {U4-007|Hold on}, please. I'll check.</en>\""
+  - id: s18
+    text: "Telefondan bir melodi yükseldi. Elif yerinden fırladı: bu, Luna Ray'in yeni şarkısıydı!"
+  - id: s19
+    text: "Elif: \"<en>Don't {U4-006|hang up}, Duru! It's the chorus!</en>\" Ve telefona eğilip avazı çıktığı kadar şarkıya katıldı."
+  - id: s20
+    text: "Müzik birden kesildi. Can: \"<en>Hello? Er… is someone singing?</en>\" Elif'in yanakları domates gibi kızardı: \"<en>Oh no. I'm so {U4-050|embarrassed}!</en>\""
+  - id: s21
+    text: "Can güldü: \"<en>Don't worry, it's my favourite song too! Good news: a new red speaker will be {U4-039|delivered} on Wednesday. You were a very {U1-085|patient} {U4-038|customer}. Have a nice day!</en>\""
+  - id: s22
+    text: "Görüşme bitince Elif, Duru'ya onu yeni tanıyormuş gibi baktı: \"<en>Duru! You called a stranger, you waited, you said 'please' five times… Who are you?</en>\""
+  - id: s23
+    text: "Duru kanepeye geri gömüldü: \"<en>I usually {U2-011|don't mind} anything. But this speaker matters to me.</en>\""
+  - id: s24
+    text: "Akşam sınıf grubuna Duru'dan ömründe yazdığı en uzun mesaj düştü: \"<en>Speaker problem {U4-055|solved}. New one on Wednesday. Red. 🔴</en>\""
+  - id: s25
+    text: "Ece: \"<en>Wait… Duru called a {U4-036|call center} and {U4-055|solved} a problem? By herself? I'm saving this message forever!</en>\""
+  - id: s26
+    text: "Kaan: \"<en>Great! Now can I {U4-040|make a complaint} about Duru? She never answers MY calls! 😤</en>\" Duru'nun cevabı tek kelimeydi: \"<en>Wednesday.</en>\""
+  - id: s27
+    text: "Gece yarısına doğru Murat Bey de yazdı: \"<en>Tomorrow: a new part of your holiday homework. Get ready to visit your grandparents!</en>\""
+
+scene:
+  - id: c01
+    speaker: Duru
+    text: "<en>Hello. I'd like to make a complaint. My speaker was delivered today, but it doesn't work.</en>"
+  - id: c02
+    speaker: Can
+    text: "<en>I'm sorry about that. Would you like to return it or change it?</en>"
+  - id: c03
+    speaker: Duru
+    text: "<en>I'd like to change it for a red one, please.</en>"
+  - id: c04
+    speaker: Can
+    text: "<en>No problem. We can solve this. A new one will be delivered on Wednesday.</en>"
+
+steps:
+  - item: U4-036
+    sezdir:
+      id: u4d07-036-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede kutudaki kartta yazan \"Call our call center at 0850 555 47 47\" cümlesinde \"call center\" ne anlama geliyordu?"
+      options: ["çağrı merkezi", "alışveriş merkezi", "kargo şubesi", "konser salonu"]
+      answer: 0
+    kullan:
+      id: u4d07-036-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>My new phone isn't working, so I'm going to phone the company's ________ .</en>"
+      options: ["call center", "bus stop", "gym", "recipe"]
+      answer: 0
+      explain: "Bir şirketin telefonla sorun ve soruları karşılayan bölümü call center'dır."
+    sina:
+      id: u4d07-036-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Who is Mert most probably talking to?</en>"
+      stem: "<en>Ayla: Good morning, this is Ayla. How can I help you?\nMert: Hi. I bought a tablet from your website, but the screen is broken.\nAyla: Oh, I'm sorry about that. Can I have your order number, please?</en>"
+      options: ["someone at a call center", "his best friend", "his English teacher", "a doctor"]
+      answer: 0
+      explain: "Ayla 'How can I help you?' diye açıyor ve sipariş numarası istiyor; Mert bir şirketin çağrı merkeziyle konuşuyor."
+  - item: U4-038
+    sezdir:
+      id: u4d07-038-z
+      type: meaning
+      context: s21
+      prompt: "Hikâyede Can'ın \"You were a very patient customer\" cümlesinde \"customer\" ne anlama geliyordu?"
+      options: ["müşteri", "satıcı", "kargocu", "müdür"]
+      answer: 0
+    kullan:
+      id: u4d07-038-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>The new café gives a free cookie to every ________ on its first day.</en>"
+      options: ["customer", "secretary", "extension", "appointment"]
+      answer: 0
+      explain: "Bir dükkândan ya da kafeden alışveriş yapan kişi customer'dır."
+    sina:
+      id: u4d07-038-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the dialogue, which of the following is TRUE?</en>"
+      stem: "<en>Ms Aksoy: Good afternoon, Sunny Shoes customer service. How can I help you?\nTarık: Hello. I bought a pair of trainers from your shop last week, and one of them is a different size.\nMs Aksoy: Oh, I'm sorry. Let me check your order.</en>"
+      options: ["Tarık is a customer of Sunny Shoes.", "Ms Aksoy bought trainers last week.", "Tarık works in customer service.", "Ms Aksoy is calling Tarık."]
+      answer: 0
+      explain: "Tarık mağazadan ayakkabı almış ve müşteri hizmetlerini arıyor; Ms Aksoy telefonu açan görevli."
+  - item: U4-039
+    sezdir:
+      id: u4d07-039-z
+      type: meaning
+      context: s21
+      prompt: "Hikâyede Can'ın \"A new red speaker will be delivered on Wednesday\" cümlesinde \"deliver\" ne anlama geliyordu?"
+      options: ["teslim etmek, (kargoyu) getirmek", "geri almak", "tamir etmek", "satın almak"]
+      answer: 0
+    kullan:
+      id: u4d07-039-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>Order now! Our pizza restaurant ________ hot food to your door in 30 minutes.</en>"
+      options: ["delivers", "complains", "solves", "returns"]
+      answer: 0
+      explain: "Siparişi kapına kadar getirmek deliver'dır; isim hâli delivery."
+    sina:
+      id: u4d07-039-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S02
+      prompt: "<en>Which of the following does NOT have an answer in the text?</en>"
+      stem: "<en>ZipZap: Hello Duru! Your new red speaker will be delivered on Wednesday between 10 a.m. and 2 p.m. The delivery is free. Please be at home.</en>"
+      options: ["How much is the speaker?", "When will the speaker arrive?", "How much is the delivery?", "What colour is the speaker?"]
+      answer: 0
+      explain: "Gün, saat, renk ve kargonun ücretsiz olduğu yazıyor; hoparlörün fiyatı yazmıyor."
+  - item: U4-040
+    sezdir:
+      id: u4d07-040-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede Duru'nun \"It's my speaker. I'll make a complaint.\" cümlesinde \"make a complaint\" ne anlama geliyordu?"
+      options: ["şikâyette bulunmak", "özür dilemek", "sipariş vermek", "teşekkür etmek"]
+      answer: 0
+    kullan:
+      id: u4d07-040-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>The soup was cold and the waiter was rude, so my dad wanted to ________ .</en>"
+      options: ["make a complaint", "book a table", "keep in touch", "take a selfie"]
+      answer: 0
+      explain: "Kötü bir hizmetten memnun olmadığını resmî olarak söylemek make a complaint'tir."
+    sina:
+      id: u4d07-040-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is a complaint?</en>"
+      options: ["My order came two days late, and the box was broken.", "Thank you for the fast delivery!", "Could I book a table for two, please?", "Would you like to come to our concert?"]
+      answer: 0
+      explain: "Geç gelen sipariş ve kırık kutu memnuniyetsizlik bildiriyor; diğerleri teşekkür, rezervasyon ve davet."
+  - item: U4-041
+    sezdir:
+      id: u4d07-041-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede Can'ın \"Would you like to return it and get your money back, or change it for a new one?\" cümlesinde \"return\" ne anlama geliyordu?"
+      options: ["(ürünü) iade etmek", "tamir ettirmek", "hediye etmek", "sipariş vermek"]
+      answer: 0
+    kullan:
+      id: u4d07-041-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>These shoes are too small for me. Can I ________ them for a bigger size?</en>"
+      options: ["change", "deliver", "solve", "dial"]
+      answer: 0
+      explain: "Ürünü başka bir beden ya da renkle değiştirmek change a product'tır."
+    sina:
+      id: u4d07-041-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Customer: Hello. I bought this T-shirt yesterday, but it's too big for me.\nShop assistant: ________\nCustomer: I'd like my money back, please.</en>"
+      options: ["Would you like to change it or return it?", "Would you like to leave a message?", "How about meeting up at five?", "Can you repeat your phone number?"]
+      answer: 0
+      explain: "Müşteri 'paramı geri istiyorum' diyor; bu, değişim mi iade mi sorusunun cevabı."
+  - item: U4-055
+    sezdir:
+      id: u4d07-055-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede Can'ın \"Don't worry, we can solve this.\" cümlesinde \"solve\" ne anlama geliyordu?"
+      options: ["çözmek, halletmek", "bozmak", "ertelemek", "unutmak"]
+      answer: 0
+    kullan:
+      id: u4d07-055-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>This maths question is really difficult. Can you help me ________ it?</en>"
+      options: ["solve", "deliver", "disturb", "dial"]
+      answer: 0
+      explain: "Bir soruyu ya da sorunu çözmek solve'dur."
+    sina:
+      id: u4d07-055-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we say about the man at customer service?</en>"
+      stem: "<en>Kaan: My laptop wasn't working, so I called customer service. The man was really helpful. He explained everything step by step, and now my laptop works perfectly!</en>"
+      options: ["He solved Kaan's problem.", "He made a complaint about Kaan.", "He delivered a new laptop.", "He didn't answer Kaan's call."]
+      answer: 0
+      explain: "Görevli her şeyi anlatmış ve bilgisayar artık çalışıyor; demek ki sorunu çözmüş."
+
+review:
+  - id: u4d07-r01
+    type: gap_fill
+    item: U4-003
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>I can't send the email. My laptop won't ________ to the internet.</en>"
+    options: ["connect", "confirm", "disturb", "book"]
+    answer: 0
+  - id: u4d07-r02
+    type: situation
+    item: U4-033
+    prompt: "<en>Ece's tooth hurts. She wants to see the dentist on Friday at 3 p.m. What does she need?</en>"
+    options: ["an appointment", "an extension", "a wrong number", "a memo"]
+    answer: 0
+  - id: u4d07-r03
+    type: dialogue_complete
+    item: U4-035
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Sevim's Café, good morning.\nB: Hello. I'd like to ________ a table for six on Saturday evening, please.</en>"
+    options: ["book", "disturb", "connect", "repeat"]
+    answer: 0
+  - id: u4d07-r04
+    type: gap_fill
+    item: U4-037
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>Hello, this is Selin. We booked the stage last week. I'm calling to ________ our reservation for Saturday at seven.</en>"
+    options: ["confirm", "disturb", "dial", "connect"]
+    answer: 0
+  - id: u4d07-r05
+    type: trait_match
+    item: U4-052
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>Selin always says \"please\", \"thank you\" and \"Sorry to disturb you\" on the phone. She is very ________ .</en>"
+    options: ["polite", "stubborn", "jealous", "mean"]
+    answer: 0
+  - id: u4d07-r06
+    type: situation
+    item: U4-053
+    prompt: "<en>It's late in the evening. You need to call your neighbour, but she is probably resting. What do you say first?</en>"
+    options: ["Sorry to disturb you, but…", "Thanks for calling!", "Sorry, wrong number.", "Take care!"]
+    answer: 0
+  - id: u4d07-r07
+    type: message_infer
+    item: U4-024
+    lgs_like: true
+    stem_id: S11
+    prompt: "<en>Why is Elif calling?</en>"
+    stem: "<en>Secretary: Good morning, City Music School. How can I help you?\nElif: Hi, this is Elif. I'm calling to ask about the guitar lessons. When do they start?\nSecretary: Hold on, please. I'll put you through to Mr Ateş.</en>"
+    options: ["to get information about guitar lessons", "to make a complaint about a teacher", "to book a table at a café", "to say sorry for being late"]
+    answer: 0
+    explain: "'I'm calling to ask about the guitar lessons' arama amacını doğrudan veriyor."
+  - id: u4d07-r08
+    type: situation
+    item: U4-032
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>Bora wants to call Gül Hanım, but a man he doesn't know answers the phone. Bora understands that he called the wrong person. What does he say?</en>"
+    options: ["Sorry, wrong number.", "Speaking.", "I'll put you through.", "Hold on, I'll get her."]
+    answer: 0
+    explain: "Yanlış kişiyi aradığını anlayan kişi özür diler: 'Sorry, wrong number.'"
+
+tips:
+  - type: tuzak
+    refs: [U4-041]
+    text: "return tek başına \"geri dönmek\"tir (return home). Nesnesi bir ürünse \"iade etmek\" olur: return a product. Bilet söz konusuysa return ticket \"gidiş-dönüş bileti\" demektir, tek yön değil."
+  - type: kelime_ailesi
+    refs: [U4-039, U4-038]
+    text: "deliver (fiil) → delivery (isim): Free delivery! = Ücretsiz teslimat! Kargo yolda: The parcel will be delivered tomorrow. customer → customer service: müşteri → müşteri hizmetleri."
+  - type: lgs_taktigi
+    refs: [U4-040, U4-055]
+    text: "\"Which one is a complaint?\" sorusunda sorun bildiren işaretleri ara: broken, late, doesn't work, wrong colour. Thank you ve Could I book… cümleleri şikâyet değildir. Görüşmenin sonunda Now it works! deniyorsa sorun solved demektir."
+  - type: mini_dilbilgisi
+    refs: [U4-022, U4-040]
+    text: "Konuşma anında verilen karar will ile söylenir: Elif \"I'll call them for you.\" Duru \"No. I'll make a complaint.\" Önceden kurulmuş plan için ise going to: \"I'm going to phone the company tomorrow.\""
+
+coach:
+  start: "Telefonu hiç açmayan Duru bugün kocaman bir şirketi arıyor, hem de sabırla! Bakalım bekleme müziğine en çok kim dayanamayacak? 🎵"
+  end_good: "Süper! Duru'nun yeşil hoparlörü cızırdadı ama senin cevapların tertemiz çıktı. 🔴"
+  end_mixed: "{weak} biraz cızırdadı, dert değil. Duru bile ilk denemede pizzacıya ulaştı; yarın bir tur daha deneriz!"
+
+notifications:
+  morning: "Duru'nun kapısında bir kutu var. İçinden çıkan şey hiç beklenmedik! 📦"
+  evening: "Elif telefonda şarkıya katıldı. Peki kim duydu? 10 dakikada öğren."
+  review: "Tek soru: Bozuk hoparlör için Duru ne yapmak istedi? İngilizcesi neydi?"
+
+editor:
+  z07: {U4-036: BEKLIYOR, U4-038: BEKLIYOR, U4-039: BEKLIYOR, U4-040: BEKLIYOR, U4-041: BEKLIYOR, U4-055: BEKLIYOR}

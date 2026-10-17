@@ -1,0 +1,26 @@
+# Koç mesaj havuzu — günlük dosyalardaki coach/notifications dışında kalan genel durumlar.
+# Değişkenler: {name} {streak} {days_left} {learned} {weak} {unit}
+# Kurallar: utandıran/korkutan dil yok · seri kaybı baskı aracı değil · ≤ 140 karakter (bildirimler ≤ 90)
+schema_version: 1
+program: lgs
+coach_name: "Hoca Nova"
+placement_result:
+  baslangic: "Hoş geldin {name}! Sakin sakin, her gün biraz ilerleyeceğiz. Kısa dersler, bol tekrar."
+  orta: "Güzel bir başlangıç! Temelin var; şimdi LGS'ye özel kelimeleri ekleyeceğiz."
+  ileri: "Vay! Kelimelerin çok iyi. Senin için tempoyu artırıyorum, bol LGS sorusu geliyor."
+streak:
+  - {at: 3, text: "3 gün üst üste! Alışkanlık böyle başlar 🔥"}
+  - {at: 5, text: "5 gün! Friendship ünitesinin pilotu bitti, sen de bitirdin."}
+  - {at: 7, text: "Bir haftalık seri! Bu tempoyla sınava çok rahat yetişirsin."}
+missed_day:
+  - "Dün olmadı, sorun değil. Bugün 3 dakikalık kısa bir tekrarla başlayalım."
+  - "Seni özledik! Kaldığın yerden devam: Ece'nin partisi seni bekliyor."
+weekly_report: "Bu hafta {learned} ifade öğrendin. En çok zorlandıkların: {weak}. Önümüzdeki hafta onlara biraz daha bakacağız."
+unit_end: "{unit} tamam! 🏅 LGS'deki olası arkadaşlık sorularına artık hazırsın."
+countdown: "Sınava {days_left} gün var. Bu tempoyla tüm üniteler zamanında bitiyor; kalan süre tekrar ve deneme için."
+exam_period:
+  - "Bugün dersten sonra 10 dakika yürüyüş yap; beyin hareketle daha iyi hatırlar."
+  - "İyi uyku da çalışmanın parçası. Bu akşam erken yatmaya ne dersin?"
+retention_invite:
+  day08: "3 gün oldu! 4 dakikalık mini kontrol: Ece'nin partisinden aklında ne kaldı?"
+  day15: "Son kontrol! 10 soru, 4 dakika. Ne kadar kalıcı öğrendiğini birlikte görelim."

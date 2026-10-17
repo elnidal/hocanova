@@ -1,0 +1,155 @@
+# LGS Sınav Dili — C04 Çeldirici avı (karışık kökler). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-C04
+module: C
+title: "Çeldirici avı"
+unlock_after: "Ü7 sonu"
+minutes: 7
+stems: [S01, S02, S04, S05, S06, S10, S14]
+units: [6, 7]
+intro_tr: "LGS'de yanlış şıklar rastgele yazılmaz; her biri belirli bir tuzak türüdür. Tuzakların adını koyabilen öğrenci doğru şıkkı aramaz, yanlışları eler. Bugün turizm metinlerinde çeldirici avına çıkıyoruz."
+cards:
+  - title_tr: "Tuzak 1: Kelime tekrarı"
+    body_tr: "Şık, metindeki kelimeleri AYNEN taşır ama başka bir bilgiye bağlar. Göze tanıdık geldiği için en çok seçilen yanlış budur. Tanıdık kelime görünce 'bu kelime metinde neyle ilgiliydi?' diye sor."
+    examples_en:
+      - "Text: Visitors buy silver jewellery as souvenirs. It is famous for its stone houses."
+      - "Trap: Visitors buy stone houses as souvenirs. ✗"
+  - title_tr: "Tuzak 2: Yarı doğru"
+    body_tr: "Şıkkın bir parçası doğru, diğer parçası yanlış. 'both', 'and', 'all', 'with …' gibi bağlantılar iki bilgiyi birleştirir; ikisini de kontrol et. Yarısı yanlış olan şık tamamen yanlıştır."
+    examples_en:
+      - "Ece and Selin both like seaside holidays.  → biri sevmiyorsa ✗"
+      - "Duru went to Mardin with Elif last year.  → yıl doğru, kişi yanlış ✗"
+    signal_words: ["both", "and", "all", "with"]
+  - title_tr: "Tuzak 3: Ters anlam"
+    body_tr: "Şık metindeki bilginin tam tersini söyler: crowded ↔ quiet, ancient ↔ modern, has been ↔ has never been. Olumsuz yapılar (not, never, neither) da anlamı ters çevirir."
+    examples_en:
+      - "Text: The streets were crowded.  Trap: The streets were quiet. ✗"
+    signal_words: ["not", "never", "crowded / quiet", "ancient / modern"]
+  - title_tr: "Tuzak 4: Konu dışı / dayanaksız"
+    body_tr: "Şık kulağa mantıklı gelir ama metinde HİÇ dayanağı yoktur. Genel kültürünle doğru olabilir; LGS'de yalnız metne göre karar verilir. Başlık sorularında 'çok geniş' ve 'çok dar' şıklar da bu ailedendir."
+    examples_en:
+      - "Text about Mardin  → 'Mardin is a popular ski resort.' ✗ (metinde yok)"
+worked_example:
+  id: sd-C04-w
+  type: text_infer
+  stem_id: S04
+  context: |-
+    Mardin is an ancient city in the south-east of Türkiye. It is famous for its stone houses and historic mosques. Visitors also buy handmade silver jewellery as souvenirs. The best time to visit is spring because summers are very hot.
+  prompt: "According to the text, which of the following is TRUE?"
+  options:
+    - "Summer is not the best season to visit Mardin."
+    - "Visitors buy stone houses as souvenirs."
+    - "Mardin is famous for its modern buildings."
+    - "Mardin is a popular ski resort."
+  answer: 0
+  explain_tr: "Metin en iyi zamanın ilkbahar olduğunu, yazların çok sıcak olduğunu söylüyor. Çeldiriciler sırayla kelime tekrarı (stone houses + souvenirs), ters anlam (ancient ↔ modern) ve konu dışı (kayak) tuzakları."
+  items: [U7-030, U7-056, U7-034, U7-008, U7-043, U7-017]
+practice:
+  - id: sd-C04-p01
+    type: text_infer
+    stem_id: S04
+    context: |-
+      Ece's travel blog: We stayed at a guesthouse in Safranbolu for three days. The owner was very hospitable and made us a traditional breakfast every morning. The old mansions were charming, but the streets were really crowded at weekends.
+    prompt: "According to the text, which of the following is TRUE?"
+    options:
+      - "The owner of the guesthouse was friendly and welcoming."
+      - "The owner made them dinner every evening."
+      - "The streets were quiet at weekends."
+      - "They stayed at an all-inclusive hotel."
+    answer: 0
+    explain_tr: "hospitable = misafirperver, yani friendly and welcoming. 'made them dinner every evening' kelime tekrarı (made, every) ama kahvaltıyı akşam yemeğine çeviriyor; 'quiet' ise ters anlam."
+    items: [U7-016, U7-045, U7-033, U7-055, U7-052, U7-014]
+  - id: sd-C04-p02
+    type: table_graph
+    stem_id: S06
+    context: |-
+      Holiday types they enjoy (Ece / Kaan / Selin)
+      seaside: yes / yes / no · countryside: no / yes / yes · city tour: yes / no / yes
+    prompt: "According to the table, which of the following is correct?"
+    options:
+      - "Kaan enjoys seaside and countryside holidays."
+      - "Ece and Selin both enjoy seaside holidays."
+      - "None of them enjoy city tours."
+      - "Kaan enjoys going abroad more than the others."
+    answer: 0
+    explain_tr: "Kaan'ın deniz ve kırsal sütunlarında 'yes' var. 'Ece and Selin both …' yarı doğru (Selin sevmiyor), 'None … city tours' ters anlam, 'abroad' ise tabloda hiç yok (dayanaksız)."
+    items: [U7-020, U7-018, U7-004]
+  - id: sd-C04-p03
+    type: text_infer
+    stem_id: S05
+    context: |-
+      Every morning, hundreds of hot air balloons fly over Cappadocia. Tourists get up before sunrise to watch the magnificent view from the sky. A balloon tour is not cheap, but most visitors say it is an unforgettable experience. The tours are cancelled when the wind is too strong, so it is a good idea to book an extra day.
+    prompt: "What is the best title for the text?"
+    options:
+      - "Balloon Tours in Cappadocia"
+      - "The Strongest Winds in Türkiye"
+      - "Holidays Around the World"
+      - "How to Book a Cheap Hotel"
+    answer: 0
+    explain_tr: "Metnin her cümlesi Kapadokya'daki balon turlarıyla ilgili. 'Strongest Winds' metindeki 'wind' ve 'strong' kelimelerini taşıyan dar bir tuzak; 'Around the World' çok geniş; ucuz otel konu dışı."
+    items: [U6-030, U7-053, U6-054, U4-035]
+  - id: sd-C04-p04
+    type: text_infer
+    stem_id: S02
+    context: |-
+      Travel brochure: Visit Ephesus! Ephesus is an ancient city near İzmir. It dates back to the 10th century BC. You can see the Library of Celsus and the Great Theatre. Guided tours start at 9 a.m. every day. Tickets are cheaper for students.
+    prompt: "Which of the following does NOT have an answer in the brochure?"
+    options:
+      - "How much is a student ticket?"
+      - "Where is Ephesus?"
+      - "What can visitors see there?"
+      - "What time do the guided tours start?"
+    answer: 0
+    explain_tr: "Broşürde yer (near İzmir), görülecek yerler ve tur saati var. Öğrenci biletinden söz ediliyor (cheaper) ama FİYATI yazmıyor: 'konusu var, ayrıntısı yok' tuzağı."
+    items: [U7-009, U7-030, U7-041, U7-007]
+  - id: sd-C04-p05
+    type: situation
+    stem_id: S10
+    context: "Kaan is on a trip to Gaziantep. He wants to learn about the city's well-known food and places, so he talks to the tour guide."
+    prompt: "What does Kaan probably ask?"
+    options:
+      - "What is Gaziantep famous for?"
+      - "How long did you stay in Gaziantep?"
+      - "Have you ever been to Gaziantep?"
+      - "Did you enjoy your trip to Gaziantep?"
+    answer: 0
+    explain_tr: "Şehrin tanınan yemeği ve yerleri 'famous for' ile sorulur. Diğer üç şık da Gaziantep'i anıyor (kelime tekrarı) ama rehbere değil, bir gezgine sorulacak sorular."
+    items: [U7-056, U7-057, U7-058, U7-007]
+  - id: sd-C04-p06
+    type: text_infer
+    stem_id: S14
+    context: |-
+      Elif: Have you ever been to Mardin?
+      Duru: Yes, twice! The first time I went with my family, and last year I went on a school trip. I'm going again this summer because I really love it.
+    prompt: "Which of the following can we infer from the conversation?"
+    options:
+      - "Duru has visited Mardin more than once."
+      - "Duru has never been to Mardin."
+      - "Duru went to Mardin with Elif last year."
+      - "Duru lives in Mardin."
+    answer: 0
+    explain_tr: "'Yes, twice!' → birden fazla gitmiş. 'never been' ters anlam; 'with Elif last year' yarı doğru (geçen yıl gitmiş ama okulla); 'lives in Mardin' dayanaksız."
+    items: [U7-057]
+  - id: sd-C04-p07
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Tourist: ________
+      Guide: About two hours. We'll be back at the port at 5 p.m.
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "How long does the boat tour take?"
+      - "How much does the boat tour cost?"
+      - "Where does the boat tour start?"
+      - "Is the boat tour crowded?"
+    answer: 0
+    explain_tr: "Cevap bir süre (two hours); süreyi 'How long …?' sorar. 'How much …?' aynı kelimeleri (boat tour) taşıyan kelime tekrarı tuzağı ama fiyat sorar."
+    items: [U7-025, U6-046]
+tips:
+  - "Bir şıkkı elerken tuzağın ADINI söyle: kelime tekrarı mı, yarı doğru mu, ters anlam mı, konu dışı mı?"
+  - "Metindeki kelimelerle dolu şık seni hemen çekiyorsa iki kez kontrol et; doğru şık çoğu zaman başka kelimelerle konuşur."
+  - "İki bilgiyi birleştiren şıkta (and, both, with) iki parçayı da ayrı ayrı doğrula."
+coach:
+  start: "Bugün avcıyız! Doğruyu değil, tuzakları arıyoruz. Dört tuzağın adını öğren, onlar senden kaçsın."
+  end: "Harika av! Kelime tekrarı, yarı doğru, ters anlam, konu dışı: hepsini tanıyorsun. Çeldiriciler korksun!"
+status: draft

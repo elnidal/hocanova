@@ -1,0 +1,277 @@
+schema_version: 1
+program: lgs
+unit: 4
+day: 10
+status: draft
+title: "İlk konser"
+est_minutes: 10
+characters: [Ece, Elif, Duru, Bora, Kaan, Selin, Sevim Hanım, Nermin Teyze, Arda, Ahmet Amca, Murat Bey]
+new_items: [U4-034, U4-054]
+
+story:
+  - id: s01
+    text: "Tatilin son cumartesi akşamı. Pastanenin camında Ece'nin el yazısıyla bir afiş vardı: \"<en>LIVE MUSIC TONIGHT – 7 P.M.</en>\""
+  - id: s02
+    text: "Saat tam altıda Ece'nin telefonu titredi. Ekranda Kaan'ın adı vardı. Ece saate baktı, bir daha baktı: 18.00. Ne bir saniye önce, ne bir saniye geç."
+  - id: s03
+    text: "Kaan: \"<en>Hi Ece! I said I'd call you back at six, and here I am. I always {U1-054|keep my promises}… well, today I do!</en>\""
+  - id: s04
+    text: "Ece telefonu kulağından uzaklaştırıp ekrana baktı. Gerçekten Kaan'dı. \"<en>Kaan, I'm really {U4-054|surprised}. You're on time!</en>\""
+  - id: s05
+    text: "Asıl telaş kurabiyelerdeydi: Sevim Hanım'ın konser için ısmarladığı iki yüz kurabiye hâlâ gelmemişti. Tam o sırada kapıda kargocu belirdi: \"<en>{U4-039|Delivery} for Sevim Hanım! Two hundred cookies!</en>\""
+  - id: s06
+    text: "Duru kırmızı hoparlörü sahneye koyup kabloyu taktı. Ne cızırtı vardı ne fosforlu yeşil: \"<en>Red and quiet. The {U4-036|call center} really {U4-055|solved} the problem.</en>\""
+  - id: s07
+    text: "Sevim Hanım vitrindeki pastaları diziyordu: \"<en>Good! My {U4-038|customers} are already here, and they all want music.</en>\""
+  - id: s08
+    text: "Ece defterini kapattı: \"<en>Perfect. Cookies, a red speaker, no {U4-040|complaints}, no {U4-041|returns}. Not tonight!</en>\""
+  - id: s09
+    text: "Bora, Ahmet Amca'nın eski davul setini sahneye kurmuştu. Ahmet Amca en önde oturuyor, arada bir davula bakıp gençliğini hatırlıyordu."
+  - id: s10
+    text: "Elif ise mutfak kapısının arkasında, mikrofonu iki eliyle tutmuş, kıpırdamadan duruyordu. Boğazı iyileşmişti ama elleri titriyordu."
+  - id: s11
+    text: "Elif: \"<en>Duru, I'm {U4-054|scared}. What if my voice goes? What if nobody comes?</en>\" Duru omuz silkti: \"<en>Everybody's {U2-059|nervous} before the first concert. Look at Bora.</en>\""
+  - id: s12
+    text: "Bora üçüncü dilim pastasını bitiriyordu: \"<en>I'm not {U4-054|scared}. I'm hungry. It's different.</en>\" Elif istemeden güldü."
+  - id: s13
+    text: "Saat yedide Elif perdenin arasından baktı ve gözleri kocaman açıldı. Bütün masalar doluydu: Murat Bey, Selin ve babası, Bora'nın dedesi, Nazmiye Teyze, bir de genel merkezin deposundan Hasan Bey: Ece ilk davetiyeyi ona söz vermişti…"
+  - id: s14
+    text: "Elif: \"<en>So many people! I'm so {U4-054|surprised}!</en>\" Ece göz kırptı: \"<en>Of course. I'm your manager, remember?</en>\""
+  - id: s15
+    text: "İlk şarkıyla birlikte Bora'nın davulu pastaneyi doldurdu. Duru gözleri kapalı çaldı (uyumuyordu, gerçekten!), Elif'in sesi ilk nakaratta yükseldi."
+  - id: s16
+    text: "Murat Bey alkışlarken Selin'in babasına eğildi: \"<en>Nobody's {U4-054|bored} tonight. Look, even Sevim Hanım is dancing behind the counter!</en>\""
+  - id: s17
+    text: "Derken gecenin en sakin şarkısı başladı. Elif fısıltı gibi söylüyordu; pastanede çıt çıkmıyordu."
+  - id: s18
+    text: "Tam o anda Kaan'ın cebinden bütün salonu inleten bir zil sesi yükseldi. Kaan kıpkırmızı oldu ve fısıldadı: \"<en>Sorry, sorry! Hello? This is Kaan.</en>\""
+  - id: s19
+    text: "Hattın öbür ucunda tanıdık bir ses vardı: \"<en>Hello, dear! It's Nermin. Bora gave me your number for emergencies. This is an emergency: I'm at the door with Arda, but there are no chairs!</en>\""
+  - id: s20
+    text: "Kaan iki sandalyeyle kapıya koştu. Bora davulun başından el salladı: kapıdaki, onun meşhur hatalı aramasının kahramanı Nermin Teyze'ydi."
+  - id: s21
+    text: "Şarkı bitince Nermin Teyze ayağa kalktı: \"<en>Lovely! What's the name of your {U2-019|band}, children?</en>\""
+  - id: s22
+    text: "Dördü birbirine baktı. Bir adları yoktu! Bora mikrofona eğildi: \"<en>We're… {U4-032|Wrong Number}! Because a wrong number brought us our first fan!</en>\""
+  - id: s23
+    text: "Arda en yüksek sesle alkışladı; Nermin Teyze eliyle kalbini gösterdi. Duru, Elif'e döndü: \"<en>I don't mind the name. It's perfect.</en>\""
+  - id: s24
+    text: "Konser bitince Nermin Teyze çantasını açtı: \"<en>Can I have the {U4-034|bill}, please? Two lemonades and a cake.</en>\""
+  - id: s25
+    text: "Sevim Hanım başını salladı: \"<en>No {U4-034|bill} for you tonight. You're the band's first fan! And of course, no {U4-034|bill} for the band!</en>\""
+  - id: s26
+    text: "Kaan rahat bir nefes aldı: \"<en>Great! Because my phone {U4-034|bill} is already huge. Three-minute voice messages, you know.</en>\""
+  - id: s27
+    text: "Gece yarısı biri konser videosunu internete koydu. Sabah Duru telefonuna baktı, gözlerini ovuşturdu ve herkese tek satır yazdı: \"<en>Guys. 50,000 views. I'm not sleeping. I'm {U4-054|surprised}.</en>\""
+
+scene:
+  - id: c01
+    speaker: Kaan
+    text: "<en>Hi Ece! I said I'd call you back at six, and here I am!</en>"
+  - id: c02
+    speaker: Elif
+    text: "<en>I'm scared. What if nobody comes?</en>"
+  - id: c03
+    speaker: Elif
+    text: "<en>Wow, so many people! I'm really surprised!</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>We're Wrong Number! Nobody's bored tonight!</en>"
+  - id: c05
+    speaker: Sevim Hanım
+    text: "<en>No bill for the band tonight!</en>"
+
+steps:
+  - item: U4-034
+    sezdir:
+      id: u4d10-034-z
+      type: meaning
+      context: s24
+      prompt: "Hikâyede Nermin Teyze konserden sonra \"Can I have the bill, please?\" diye soruyor. \"bill\" ne anlama geliyordu?"
+      options: ["hesap (ödenecek tutar)", "menü", "masa", "bahşiş"]
+      answer: 0
+    kullan:
+      id: u4d10-034-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Mum is not happy. Our phone ________ is very high this month because my brother calls his friends for hours.</en>"
+      options: ["bill", "receiver", "appointment", "extension"]
+      answer: 0
+      explain: "Konuşma ücretinin yazdığı kâğıt phone bill'dir; evde fatura, restoranda hesap anlamına gelir."
+    sina:
+      id: u4d10-034-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>Why is Mr Kaya calling?</en>"
+      stem: "<en>Customer service: Good morning. How can I help you?\nMr Kaya: Hello. I'm calling about my electricity bill. It's 3,000 lira this month, but we were on holiday for two weeks! I think there's a mistake.</en>"
+      options: ["to complain about a wrong bill", "to book a holiday", "to pay for a concert ticket", "to invite someone to dinner"]
+      answer: 0
+      explain: "\"I'm calling about my electricity bill … I think there's a mistake\": Bay Kaya faturadaki hatayı bildirmek (şikâyet) için arıyor."
+  - item: U4-054
+    sezdir:
+      id: u4d10-054-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede Elif sahneye çıkmadan önce \"I'm scared\" diyor. Bu ne anlama geliyordu?"
+      options: ["Korkuyorum.", "Yoruldum.", "Acıktım.", "Çok mutluyum."]
+      answer: 0
+    kullan:
+      id: u4d10-054-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The film was very long and slow. I was really ________, so I fell asleep.</en>"
+      options: ["bored", "boring", "exciting", "bore"]
+      answer: 0
+      explain: "Kişinin hissi -ed ile anlatılır (I was bored); boring filmin özelliğidir, \"I was boring\" \"Ben sıkıcıydım\" demek olur."
+    sina:
+      id: u4d10-054-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE about Elif?</en>"
+      stem: "<en>Elif's message to her cousin in Ankara: Before the concert, my hands were shaking and I didn't want to go on stage. Then I looked at the café and saw sixty people! I couldn't believe it!</en>"
+      options: ["She was scared at first, and then she was surprised.", "She was bored during the concert.", "She was surprised at first, and then she was bored.", "She wasn't scared at all."]
+      answer: 0
+      explain: "Titreyen eller = korku (scared), \"I couldn't believe it\" = şaşkınlık (surprised); sıkıldığına dair bir ipucu yok."
+
+review:
+  - id: u4d10-r01
+    type: gap_fill
+    item: U4-004
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Duru: I'll ________ Sevim Hanım and ask about the chairs.\nEce: Great! Here's her number.</en>"
+    options: ["contact", "hang up", "deliver", "invent"]
+    answer: 0
+    explain: "Birine telefonla ya da mesajla ulaşmak: contact someone."
+  - id: u4d10-r02
+    type: situation
+    item: U4-018
+    prompt: "<en>Bora sent a message to Kaan. Who is the receiver of the message?</en>"
+    options: ["Kaan", "Bora", "both of them", "neither of them"]
+    answer: 0
+    explain: "Mesajı gönderen (sender) Bora, alan (receiver) Kaan."
+  - id: u4d10-r03
+    type: dialogue_complete
+    item: U4-025
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Mert: Sorry, I can't come to the party tomorrow. I've got the flu.\nAyşe: Oh no! ________\nMert: Thanks, Ayşe.</en>"
+    options: ["Get well soon!", "Enjoy your meal!", "Congratulations!", "Sorry, wrong number."]
+    answer: 0
+    explain: "Grip olan arkadaşa \"Geçmiş olsun\" denir: Get well soon!"
+  - id: u4d10-r04
+    type: situation
+    item: U4-030
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>What do you say first in this situation?</en>"
+    stem: "<en>Your friend calls you. She is crying and her voice is shaking.</en>"
+    options: ["What's the matter?", "Thanks for calling!", "Can I take a message?", "I'll put you through."]
+    answer: 0
+    explain: "Ağlayan bir arkadaşa önce sorunun ne olduğu sorulur: What's the matter?"
+  - id: u4d10-r05
+    type: gap_fill
+    item: U4-051
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>I said, \"Meet me at two,\" but Kaan heard \"at ten\". It was a ________.</en>"
+    options: ["misunderstanding", "conversation", "delivery", "reservation"]
+    answer: 0
+  - id: u4d10-r06
+    type: dialogue_complete
+    item: U4-012
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Secretary: Good morning, head office. How can I help you?\nEce: Hello. Could I speak to Mr Aydın, please?\nSecretary: Sure. Hold on, ________\nEce: Thank you.</en>"
+    options: ["I'll put you through.", "I'll hang up now.", "it's a wrong number.", "I'm calling about the concert."]
+    answer: 0
+    explain: "Sekreter \"Sure. Hold on\" diyerek isteği kabul ediyor; ardından arayanı istenen kişiye bağlar: I'll put you through."
+  - id: u4d10-r07
+    type: message_infer
+    item: U4-024
+    lgs_like: true
+    stem_id: S11
+    prompt: "<en>Why is Mrs Demir calling the café?</en>"
+    stem: "<en>Sevim Hanım: Good afternoon. How can I help you?\nMrs Demir: Hello. This is Mrs Demir. I'm calling about my order. I ordered a chocolate cake for Sunday, but I need it on Saturday.</en>"
+    options: ["to change the day of her order", "to complain about the taste of a cake", "to book a table for dinner", "to invite Sevim Hanım to a party"]
+    answer: 0
+    explain: "\"I'm calling about my order … I need it on Saturday\": siparişin gününü değiştirmek istiyor."
+  - id: u4d10-r08
+    type: text_infer
+    item: U4-017
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to the memo, which of the following is TRUE?</en>"
+    stem: "<en>Phone memo\nTo: Sevim Hanım\nCaller: Mr Aydın (head office)\nMessage: He can't come on Saturday. Please call him on extension 214 before Friday.</en>"
+    options: ["Sevim Hanım should call extension 214.", "Mr Aydın will come on Saturday.", "Sevim Hanım called Mr Aydın.", "Mr Aydın wants a call after Friday."]
+    answer: 0
+    explain: "Notta arayan Bay Aydın; Sevim Hanım'dan Cuma'dan önce 214 numaralı dahiliyi aramasını istiyor."
+  - id: u4d10-r09
+    type: dialogue_complete
+    item: U4-031
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the phone conversation?</en>"
+    stem: "<en>Nermin Teyze: Hello. Can I speak to Bora, please?\nBora's grandpa: ________\nNermin Teyze: It's Nermin. I'm calling about Saturday's concert.\nBora's grandpa: Oh, hang on a minute. I'll get him.</en>"
+    options: ["Who's calling, please?", "Speaking.", "Thanks for calling. Bye!", "Get well soon!"]
+    answer: 0
+    explain: "Ardından Nermin Teyze adını söylüyor; demek ki kim aradığı sorulmuş. Dede Bora'yı çağırdığına göre \"Speaking\" (Benim) olamaz."
+  - id: u4d10-r10
+    type: text_infer
+    item: U4-010
+    lgs_like: true
+    stem_id: S02
+    prompt: "<en>Which of the following does NOT have an answer in the memo?</en>"
+    stem: "<en>Phone memo\nTo: Duru\nFrom: Mum\nTime: 5.15 p.m.\nSevim Hanım from the café called. The extra chairs for the concert are at the café now. The delivery man brought them at five. Please call her back before seven.</en>"
+    options: ["How many chairs are there?", "Who called Duru?", "Where are the chairs now?", "When should Duru call back?"]
+    answer: 0
+    explain: "Arayan (Sevim Hanım), sandalyelerin yeri (the café) ve geri arama saati (before seven) yazıyor; kaç sandalye olduğu yazmıyor."
+  - id: u4d10-r11
+    type: message_infer
+    item: U4-040
+    lgs_like: true
+    stem_id: S11
+    prompt: "<en>Why is Duru calling?</en>"
+    stem: "<en>Call center: Good morning, customer service. How can I help you?\nDuru: Hello. I bought a speaker from a website last week, but it came in the wrong colour and it makes a strange noise. I'd like to change it for a red one.</en>"
+    options: ["to report a problem with a product", "to book a table at a café", "to thank the delivery man", "to buy a second speaker"]
+    answer: 0
+    explain: "Yanlış renk, garip ses ve değişim isteği: Duru bir ürünle ilgili sorun bildiriyor."
+  - id: u4d10-r12
+    type: text_infer
+    item: U4-014
+    lgs_like: true
+    stem_id: S08
+    prompt: "<en>Who can help with the chairs at five?</en>"
+    stem: "<en>Ece: Can anyone help with the chairs at the café on Saturday at five?\nSelin: Sure, I'm available all afternoon.\nKaan: I'd love to, but I've got basketball practice until half past five.\nBora: I'm afraid I can't. My grandpa is visiting us until six.\nDuru: I guess I can come. Fıstık can come too.</en>"
+    options: ["Selin and Duru", "Kaan and Bora", "Selin and Kaan", "only Duru"]
+    answer: 0
+    explain: "Selin (available all afternoon) ve Duru (I guess I can come) geliyor; Kaan \"I'd love to, but …\" ve Bora \"I'm afraid I can't\" ile reddediyor."
+
+tips:
+  - type: tuzak
+    refs: [U4-034]
+    text: "Bill bir erkek adı da olabilir; ama the / my / phone ile gelirse fatura (phone bill, electricity bill), restoranda ise hesap: \"Can I have the bill, please?\" = Hesabı alabilir miyim?"
+  - type: tuzak
+    refs: [U4-054, U1-095]
+    text: "-ed kişinin hissi, -ing şeyin etkisi: I'm bored (sıkıldım) ↔ The film is boring (film sıkıcı). \"I'm boring\" dersen \"Ben sıkıcı biriyim\" demiş olursun! bored sınavda en az dört kez çıktı."
+  - type: mini_dilbilgisi
+    refs: [U4-054]
+    text: "Edatlarıyla ezberle: scared of (dogs) · surprised at / by (the news) · bored with (the game). Örnek: Elif was surprised at the big crowd."
+  - type: lgs_taktigi
+    refs: [U4-031, U4-024, U4-012]
+    text: "Telefon sorusunda önce üç kişiyi işaretle: arayan (This is …), aranan (Can I speak to …?) ve aracı (sekreter, anne). Amaç sorusunda cevap çoğunlukla \"I'm calling about / to …\" cümlesindedir."
+
+coach:
+  start: "Final gecesi! 🎤 Pastane dolu, davul hazır, Elif perdenin arkasında. Bu akşam bir isim doğuyor; senin tahminin ne?"
+  end_good: "Ünite 4 bitti! 📞 Konser de bitti, sen de bütün üniteyi kaptın. Sırada internet var; video çoktan yayılıyor bile!"
+  end_mixed: "Ünite 4 tamam! {weak} biraz cızırtılı kaldı; tekrarla hattı netleştireceğiz. Wrong Number bile ilk şarkıda titredi! 🎸"
+
+notifications:
+  morning: "Bu akşam ilk konser ve büyük bir isim! Küçük ipucu: Bora. 🥁"
+  evening: "Ünite 4'ün son dersi! 10 dakika, bir konser ve kocaman bir isim. 🎶"
+  review: "Film çok uzundu: I was bored mu, I was boring mi? 🍿"
+
+editor:
+  z07: {U4-034: BEKLIYOR, U4-054: BEKLIYOR}

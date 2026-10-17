@@ -1,0 +1,163 @@
+# LGS Sınav Dili — C03 Metin atölyesi: NOT / TRUE / başlık (S02–S05, S14). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-C03
+module: C
+title: "Metin atölyesi: NOT / TRUE / başlık"
+unlock_after: "Ü6 sonu"
+minutes: 8
+stems: [S02, S03, S04, S05, S14]
+units: [1, 2, 6]
+intro_tr: "LGS'de aynı metne bazen birden çok soru bağlanır: biri 'hangisi yok?', biri 'hangisi doğru?', biri 'en iyi başlık?'. Bu atölyede macera metinleri üzerinde metin köklerini karışık çalışıyoruz."
+cards:
+  - title_tr: "Kök hangi okuma türünü istiyor?"
+    body_tr: "NOT / NOT mentioned → ele yöntemi: bulduğunu işaretle, kalan cevap. TRUE → doğru şık başka kelimelerle söyler. Başlık → metnin tamamı. Çıkarım → metinde bir dayanak cümlesi olmalı. Kökü metinden önce oku ki metni doğru gözle okuyasın."
+    signal_words: ["NOT", "TRUE", "title", "mainly about", "infer"]
+  - title_tr: "Karşılaştırma ve tercih cümlelerine dikkat"
+    body_tr: "Macera metinlerinde çok sık karşılaştırma ve tercih cümlesi olur. Kimin neyi neye tercih ettiğini ters çeviren şıklar en çekici tuzaktır."
+    examples_en:
+      - "I'd rather go caving than skydiving.  → caving > skydiving"
+      - "She prefers canoeing to rafting.  → canoeing > rafting"
+      - "Rafting is more exciting than any other sport."
+    signal_words: ["would rather … than", "prefer … to", "more … than", "the most"]
+  - title_tr: "Olumsuz yapıyı kaçırma"
+    body_tr: "'I'm not very brave', 'He wasn't scared', 'Neither!' gibi olumsuz ifadeler anlamı tamamen değiştirir. Şıkta metindeki kelime (brave, scared) olumlu kullanılmışsa iki kez kontrol et."
+    examples_en:
+      - "Text: I'm not very brave.  Option: Bora is very brave. ✗"
+    signal_words: ["not", "never", "neither", "wasn't"]
+worked_example:
+  id: sd-C03-w
+  type: text_infer
+  stem_id: S04
+  context: |-
+    Elif: I'd rather go caving than skydiving. Caves are mysterious and exciting, and I'm scared of heights!
+  prompt: "According to the text, which of the following is TRUE?"
+  options:
+    - "Elif prefers caving to skydiving."
+    - "Elif would rather go skydiving."
+    - "Elif thinks skydiving is mysterious."
+    - "Elif loves high places."
+  answer: 0
+  explain_tr: "'I'd rather go caving than skydiving' = mağarayı paraşüte tercih ediyor; doğru şık bunu 'prefer … to' ile söylüyor. 'mysterious' metinde var ama mağaralar için, paraşüt için değil."
+  items: [U6-036, U6-035, U6-004, U6-006, U6-029]
+practice:
+  - id: sd-C03-p01
+    type: text_infer
+    stem_id: S02
+    context: |-
+      Last summer, Kaan went rafting with his cousin in Antalya. Before they started, the instructor gave them helmets and life jackets and explained the safety rules. The river was fast and challenging, and Kaan fell into the water once! But he wasn't scared. He says rafting is more exciting than any other sport. Next year, he wants to try canoeing.
+    prompt: "Which of the following does NOT have an answer in the text?"
+    options:
+      - "How long did the rafting trip take?"
+      - "Who did Kaan go rafting with?"
+      - "What equipment did the instructor give them?"
+      - "What does Kaan want to try next year?"
+    answer: 0
+    explain_tr: "Kuzeniyle gittiği, kask ve can yeleği verildiği, seneye kano denemek istediği yazıyor. Geziden çok söz ediliyor ama ne kadar sürdüğü yazmıyor."
+    items: [U6-004, U6-048, U6-023, U6-026, U6-028, U6-015, U6-010]
+  - id: sd-C03-p02
+    type: text_infer
+    stem_id: S04
+    context: |-
+      Last summer, Kaan went rafting with his cousin in Antalya. Before they started, the instructor gave them helmets and life jackets and explained the safety rules. The river was fast and challenging, and Kaan fell into the water once! But he wasn't scared. He says rafting is more exciting than any other sport. Next year, he wants to try canoeing.
+    prompt: "According to the text, which of the following is TRUE?"
+    options:
+      - "Kaan thinks rafting is more exciting than other sports."
+      - "Kaan was scared when he fell into the water."
+      - "Kaan went canoeing last summer."
+      - "The river was slow and easy."
+    answer: 0
+    explain_tr: "'rafting is more exciting than any other sport' doğrudan destekliyor. 'was scared' şıkkı metindeki kelimeyi alıyor ama 'he wasn't scared' olumsuzluğunu yok sayıyor."
+    items: [U6-033, U6-015, U6-028]
+  - id: sd-C03-p03
+    type: text_infer
+    stem_id: S05
+    context: |-
+      Last summer, Kaan went rafting with his cousin in Antalya. Before they started, the instructor gave them helmets and life jackets and explained the safety rules. The river was fast and challenging, and Kaan fell into the water once! But he wasn't scared. He says rafting is more exciting than any other sport. Next year, he wants to try canoeing.
+    prompt: "What is the best title for the text?"
+    options:
+      - "Kaan's Rafting Adventure"
+      - "How to Choose a Life Jacket"
+      - "Canoeing in Antalya"
+      - "The Most Dangerous Rivers in the World"
+    answer: 0
+    explain_tr: "Metnin tamamı Kaan'ın rafting deneyimi. 'Canoeing in Antalya' metindeki iki kelimeyi birleştiriyor ama kano yalnız gelecek planı."
+    items: [U6-001, U6-004]
+  - id: sd-C03-p04
+    type: text_infer
+    stem_id: S03
+    context: |-
+      Duru's aunt, Zeynep, is a scuba diving instructor in Kaş. She started diving at the age of 15, and now she has more than 20 years of experience. She says diving isn't dangerous if you have the right equipment and follow the rules. Every summer she teaches beginners, and she also takes photos of sea animals. Her biggest aim is to dive in the Red Sea one day.
+    prompt: "Which of the following is NOT mentioned about Zeynep?"
+    options:
+      - "her favourite sea animal"
+      - "her age when she started diving"
+      - "her job"
+      - "her biggest aim"
+    answer: 0
+    explain_tr: "İşi (instructor), başladığı yaş (15) ve hedefi (Red Sea) yazıyor. Deniz hayvanlarının fotoğrafını çektiği yazıyor ama en sevdiği hayvan yazmıyor."
+    items: [U6-008, U6-048, U6-027, U6-022, U6-051]
+  - id: sd-C03-p05
+    type: text_infer
+    stem_id: S14
+    context: |-
+      Duru's aunt, Zeynep, is a scuba diving instructor in Kaş. She started diving at the age of 15, and now she has more than 20 years of experience. She says diving isn't dangerous if you have the right equipment and follow the rules. Every summer she teaches beginners, and she also takes photos of sea animals. Her biggest aim is to dive in the Red Sea one day.
+    prompt: "Which of the following can we infer about Zeynep?"
+    options:
+      - "She is an experienced diver."
+      - "She has dived in the Red Sea many times."
+      - "She thinks diving is always dangerous."
+      - "She only teaches experienced divers."
+    answer: 0
+    explain_tr: "20 yılı aşkın tecrübe → deneyimli bir dalgıç. 'dived in the Red Sea' tuzak: Kızıldeniz onun HEDEFİ, yani henüz dalmamış."
+    items: [U6-027, U6-011]
+  - id: sd-C03-p06
+    type: text_infer
+    stem_id: S05
+    context: |-
+      Bora: Many people think extreme sports are only for adrenaline seekers. I don't agree. I'm not very brave, but last month I tried rock climbing with a good instructor, and it was amazing. You don't need to take big risks. With the right safety equipment, anyone can enjoy a challenging activity. In my opinion, the most important thing is to start slowly.
+    prompt: "What is the main idea of the text?"
+    options:
+      - "Anyone can try extreme sports safely."
+      - "Rock climbing is the most dangerous sport."
+      - "Only brave people should do extreme sports."
+      - "Bora wants to be a climbing instructor."
+    answer: 0
+    explain_tr: "Bora, doğru ekipman ve yavaş başlangıçla herkesin ekstrem spor yapabileceğini savunuyor. 'Only brave people …' Bora'nın karşı çıktığı görüş; metinde geçtiği için çekici."
+    items: [U6-002, U6-003, U6-009, U6-012, U6-022, U6-028]
+  - id: sd-C03-p07
+    type: text_infer
+    stem_id: S03
+    context: |-
+      Bora: Many people think extreme sports are only for adrenaline seekers. I don't agree. I'm not very brave, but last month I tried rock climbing with a good instructor, and it was amazing. You don't need to take big risks. With the right safety equipment, anyone can enjoy a challenging activity. In my opinion, the most important thing is to start slowly.
+    prompt: "Which of the following is NOT true according to the text?"
+    options:
+      - "Bora is a very brave person."
+      - "Bora tried rock climbing last month."
+      - "Bora thinks safety equipment is important."
+      - "Bora enjoyed rock climbing."
+    answer: 0
+    explain_tr: "Bora 'I'm not very brave' diyor; şık bunun tersini söylüyor. 'it was amazing' tırmanışı sevdiğini, 'With the right safety equipment' ekipmanı önemsediğini gösteriyor."
+    items: [U6-016, U6-009, U6-030]
+  - id: sd-C03-p08
+    type: text_infer
+    stem_id: S14
+    context: |-
+      Selin: Would you rather go paragliding or bungee jumping this summer?
+      Ece: Neither! I prefer staying on the ground. But I'd love to go hiking in the mountains.
+    prompt: "We can understand from the conversation that Ece …"
+    options:
+      - "doesn't want to do dangerous air sports."
+      - "has tried paragliding before."
+      - "prefers bungee jumping to paragliding."
+      - "doesn't enjoy nature."
+    answer: 0
+    explain_tr: "'Neither! I prefer staying on the ground' → havadaki sporların hiçbirini istemiyor. 'prefers bungee jumping' tuzak: 'Neither' ikisini de reddediyor."
+    items: [U6-036, U6-007, U6-005, U6-035]
+tips:
+  - "Aynı metne birden çok soru bağlıysa önce bütün kökleri oku, metni bir kez ama hepsini düşünerek oku."
+  - "Gelecek planı (wants to try, her aim is) ile geçmiş deneyimi (went, tried) karıştıran şıklara dikkat."
+  - "Metinde birinin KARŞI ÇIKTIĞI görüş (I don't agree) ana fikir değildir; tam tersidir."
+coach:
+  start: "Kask tamam, can yeleği tamam! Bugün macera metinlerinde NOT, TRUE ve başlık sorularını karışık çözüyoruz."
+  end: "Muhteşem! Aynı metinden üç farklı soru, üçünde de doğru yöntem. Metin soruları artık macera değil!"
+status: draft

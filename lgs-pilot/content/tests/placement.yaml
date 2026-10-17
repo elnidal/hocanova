@@ -1,0 +1,73 @@
+# Başlangıç testi — 18 soru, ~4 dakika. Kelime bilgisini değil BOYUT PROFİLİNİ ölçer.
+# A: kelime tanıma · B: bağlamı anlama · C: sınavda kullanma (diyalog, soru kökü, çeldirici)
+schema_version: 1
+program: lgs
+test: placement
+est_minutes: 4
+scoring:
+  per_section_max: 6
+  levels:
+    - {level: baslangic, rule: "A+B+C toplamı 0–8", effect: "günlük yeni birim az · hikâyede Türkçe taşıyıcı ağırlıklı · tekrar aralıkları kısa"}
+    - {level: orta, rule: "A+B+C toplamı 9–14", effect: "standart tempo · dengeli dil oranı"}
+    - {level: ileri, rule: "A+B+C toplamı 15–18", effect: "günlük yeni birim fazla · hikâyede İngilizce ağırlıklı · tekrar aralıkları uzun"}
+  coach_focus:   # en düşük bölüme göre koçun ilk vurgusu
+    A: "Kelime hazineni büyüteceğiz; her gün birkaç yeni kelime, bol tekrar."
+    B: "Kelimeleri biliyorsun; şimdi cümlenin içinde ne anlattıklarını yakalamaya çalışacağız."
+    C: "Kelimelerin iyi! Şimdi LGS sorularının diline (soru kökleri, çeldiriciler) birlikte çalışalım."
+sections:
+  - id: A
+    title: "Kelime tanıma"
+    questions:
+      - {id: pl-a1, type: meaning, prompt: "\"busy\" ne demek?", options: ["meşgul", "sıkıcı", "kolay", "geç"], answer: 0}
+      - {id: pl-a2, type: meaning, prompt: "\"invitation\" ne demek?", options: ["davet", "hediye", "bilgi", "tatil"], answer: 0}
+      - {id: pl-a3, type: meaning, prompt: "\"honest\" ne demek?", options: ["dürüst", "komik", "cesur", "yorgun"], answer: 0}
+      - {id: pl-a4, type: meaning, prompt: "\"apologise\" ne demek?", options: ["özür dilemek", "kabul etmek", "açıklamak", "şikâyet etmek"], answer: 0}
+      - {id: pl-a5, type: meaning, prompt: "\"reliable\" ne demek?", options: ["güvenilir", "rahatlamış", "tekrar edilebilir", "ilişkili"], answer: 0, explain: "Çeldiriciler bilerek benzer sesli: relaxed, repeat, related."}
+      - {id: pl-a6, type: meaning, prompt: "\"laid-back\" ne demek?", options: ["rahat, kafası rahat", "geri kalmış", "yorgun", "kızgın"], answer: 0}
+  - id: B
+    title: "Bağlamı anlama"
+    questions:
+      - {id: pl-b1, type: situation, prompt: "<en>\"I can always count on Ece. She never breaks her promises.\" What kind of friend is Ece?</en>", options: ["reliable", "funny", "lazy", "shy"], answer: 0}
+      - {id: pl-b2, type: situation, prompt: "<en>\"No more pizza, please. I'm full.\" What does the person mean?</en>", options: ["He/She doesn't want to eat more.", "The box is full.", "He/She is hungry.", "He/She wants a bigger pizza."], answer: 0}
+      - {id: pl-b3, type: situation, prompt: "<en>\"Ege never shares his chips and he laughs at people.\" Which word describes Ege?</en>", options: ["mean", "generous", "caring", "honest"], answer: 0}
+      - {id: pl-b4, type: situation, prompt: "<en>\"Elif talks to everyone and makes new friends easily.\" Elif is ______.</en>", options: ["outgoing", "shy", "quiet", "unreliable"], answer: 0}
+      - {id: pl-b5, type: situation, prompt: "<en>\"Kaan said he would come, but he didn't.\" What did Kaan do?</en>", options: ["He broke his promise.", "He kept his promise.", "He apologised.", "He accepted the invitation."], answer: 0}
+      - {id: pl-b6, type: situation, prompt: "<en>\"Thanks, but I'm afraid I'm busy on Saturday.\" What is the person doing?</en>", options: ["refusing an invitation", "accepting an invitation", "inviting a friend", "giving advice"], answer: 0}
+  - id: C
+    title: "Sınavda kullanma"
+    questions:
+      - id: pl-c1
+        type: dialogue_complete
+        prompt: "<en>Which one completes the dialogue?</en>"
+        stem: "<en>Selin: Would you like to come to my house this evening?\nDuru: ________ I have a piano lesson.</en>"
+        options: ["Sorry, I can't.", "I'd love to!", "Sounds great!", "Why not?"]
+        answer: 0
+      - id: pl-c2
+        type: dialogue_complete
+        prompt: "<en>Which one completes the dialogue?</en>"
+        stem: "<en>Kaan: How about playing basketball after school?\nBora: ________ I'll bring my ball.</en>"
+        options: ["Sounds fun!", "Sorry, I'm busy.", "I don't like it.", "Maybe next week."]
+        answer: 0
+      - id: pl-c3
+        type: message_infer
+        prompt: "<en>Which of the following is NOT true according to the message?</en>"
+        stem: "<en>Hi Ece! Thanks for the invitation. I'd love to come to your party on Saturday, but I can't stay long because I have a match at 6. – Selin</en>"
+        options: ["Selin refuses the invitation.", "Selin will go to the party.", "The party is on Saturday.", "Selin has a match on Saturday."]
+        answer: 0
+      - id: pl-c4
+        type: synonym
+        prompt: "<en>\"You can rely on me.\" Which one has the CLOSEST meaning?</en>"
+        options: ["You can trust me.", "You can call me.", "You can wait for me.", "You can follow me."]
+        answer: 0
+      - id: pl-c5
+        type: message_infer
+        prompt: "<en>What is the main idea of the text?</en>"
+        stem: "<en>A true friend is honest with you. He or she keeps your secrets and supports you in difficult times. True friends are not always the most fun people, but they are always there for you.</en>"
+        options: ["What a true friend is like", "How to have fun with friends", "Why friends tell lies", "Where to meet new friends"]
+        answer: 0
+      - id: pl-c6
+        type: trait_match
+        prompt: "<en>Which word does NOT describe Bora?</en>"
+        stem: "<en>Bora helps his neighbours, shares his food with everyone and never gets angry.</en>"
+        options: ["selfish", "helpful", "generous", "calm"]
+        answer: 0

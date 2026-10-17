@@ -1,0 +1,298 @@
+schema_version: 1
+program: lgs
+unit: 3
+day: 1
+status: draft
+title: "Junior Chef"
+est_minutes: 10
+characters: [Murat Bey, Ece, Selin, Elif, Kaan, Bora, Duru]
+new_items: [U3-038, U3-040, U3-045, U3-048, U3-050, U3-052]
+
+story:
+  - id: s01
+    text: "Aralık ortası, pazartesi sabahı. Zilin çalmasına bir dakika kala sınıfın kapısı açıldı ve Kaan nefes nefese içeri daldı. Ama bu kez yüzünde kocaman bir gülümseme vardı."
+  - id: s02
+    text: "Kaan telefonunu havaya kaldırdı: \"<en>Guys! The basketball results are here! I'm a {U2-020|member} of the school team!</en>\" Bütün sınıf alkışladı."
+  - id: s03
+    text: "Kaan biraz kızardı: \"<en>Well… I'm on the bench for now. But it's a start!</en>\" Yani yedek oyuncuydu. Bora arkadaşının sırtına vurdu: \"<en>Buddy, that's great news!</en>\""
+  - id: s04
+    text: "Murat Bey içeri girdi ve her zamanki gibi tahtaya kocaman harflerle yazdı: \"<en>JUNIOR CHEF CONTEST</en>\". \"<en>In three weeks, our school is having a cooking contest. Each team will cook a menu for the judges.</en>\""
+  - id: s05
+    text: "Murat Bey: \"<en>The judges are Nazmiye Teyze from the canteen, a surprise guest and me.</en>\" Kaan fısıldadı: \"<en>Nazmiye Teyze? She's very serious about her toast!</en>\""
+  - id: s06
+    text: "Murat Bey devam etti: \"<en>And there's one more rule. You'll write your {U3-050|recipe} in English, on a card. Then everyone can cook it at home.</en>\""
+  - id: s07
+    text: "Tahtaya örnek bir kart astı: \"<en>Fruit salad for four people. {U3-048|Ingredients}: two apples, two bananas, some grapes and a little honey.</en>\""
+  - id: s08
+    text: "Ece kartın fotoğrafını çekti. Defteri çoktan açıktı bile; sayfanın başına \"Junior Chef\" yazıp altını iki kez çizdi."
+  - id: s09
+    text: "Murat Bey kartın boş kalan alt kısmını gösterdi: \"<en>A good card has two parts: the {U3-048|ingredients} and the {U3-052|steps}. Use words like {U3-045|first}, {U3-045|then}, {U3-045|after that} and {U3-045|finally}.</en>\""
+  - id: s10
+    text: "Teneffüste Murat Bey iki takımı okulun mutfağını görmeye götürdü. Takımlar geçen ayki gibiydi: Ece, Selin ve Elif bir yanda; Kaan, Bora ve Duru öbür yanda."
+  - id: s11
+    text: "Selin raftan büyük, derin bir {U3-038|bowl} indirdi. Elif şaşkınlıkla baktı: \"<en>Wow, this {U3-038|bowl} is huge! We can make fruit salad for the whole school!</en>\""
+  - id: s12
+    text: "Bora başka bir {U3-038|bowl} kapıp kafasına geçirdi: \"<en>Look! A chef's helmet!</en>\" Elif hemen telefonunu çıkardı; bu fotoğraf kesin sınıf grubuna gidecekti."
+  - id: s13
+    text: "Köşede camlı kapaklı, kocaman, beyaz bir {U3-040|oven} duruyordu. Kaan hemen düğmelerine koştu: \"<en>Cool! An old radio! Let's listen to some music!</en>\""
+  - id: s14
+    text: "Kaan düğmeyi sonuna kadar çevirdi. Müzik yerine içeride turuncu bir ışık yandı. Murat Bey yetişip düğmeyi geri çevirdi: \"<en>Kaan, that's not a radio. It's the {U3-040|oven}! It gets very hot inside.</en>\""
+  - id: s15
+    text: "Duru hiç istifini bozmadı: \"<en>The {U3-040|oven} has only one radio station, Kaan. Hot FM.</en>\" Kaan da dahil herkes güldü."
+  - id: s16
+    text: "Murat Bey ciddileşti: \"<en>Rule number one in this kitchen: never use the {U3-040|oven} without an adult. Is that clear?</en>\" Hepsi başını salladı."
+  - id: s17
+    text: "Sınıfa dönünce Murat Bey sordu: \"<en>Every {U3-050|recipe} is a {U3-052|process}. Kaan, can you tell us your {U2-043|daily routine} like a {U3-050|recipe}?</en>\""
+  - id: s18
+    text: "Kaan ayağa kalktı, parmaklarıyla saydı: \"<en>Easy! {U3-045|First}, I wake up late. {U3-045|Then}, I run. {U3-045|Finally}, I'm late!</en>\" Sınıf kahkahaya boğuldu."
+  - id: s19
+    text: "Selin kaşını kaldırdı: \"<en>You missed a {U3-052|step}, Kaan. {U3-045|After that}, you always say: 'Me? Late? Never!'</en>\""
+  - id: s20
+    text: "Bora da katıldı: \"<en>And the {U3-048|ingredients}: one sleepy boy, two different socks and zero minutes!</en>\" Kaan çorabına baktı: biri mavi, biri yeşildi. \"<en>Hey! It's a real {U3-050|recipe}!</en>\""
+  - id: s21
+    text: "Ece hemen işe koyuldu: \"<en>OK, team. Meeting at my house on Saturday. I'm making a plan for every {U3-052|step}.</en>\" Bu kez hiçbir şey şapkaya benzemeyecekti."
+  - id: s22
+    text: "Kaan kendi takımına döndü: \"<en>We need a plan too. Bora, can you cook?</en>\" Bora omuz silkti: \"<en>Me? I can make toast. Sometimes.</en>\""
+  - id: s23
+    text: "Duru esnedi: \"<en>I can hold the {U3-038|bowl}. That's my job.</en>\" Kaan iç çekti; takımının şefi daha belli değildi."
+  - id: s24
+    text: "Gece yarısı Ece sınıf grubuna on iki sayfalık bir plan attı. Başlık: \"<en>Operation: No Hat Cake</en>\". Altına Kaan yazdı: \"<en>Ece, I'm {U1-075|always in a hurry}. Can I read only page one?</en>\""
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>Write your recipe in English. Don't forget the ingredients and the steps!</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>First, I wake up late. Then, I run. Finally, I'm late!</en>"
+  - id: c03
+    speaker: Murat Bey
+    text: "<en>That's not a radio, Kaan. It's the oven. Never use it without an adult.</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>I don't need a recipe. I can hold the bowl.</en>"
+
+steps:
+  - item: U3-038
+    sezdir:
+      id: u3d01-038-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"bowl\" ne anlama geliyordu?"
+      options: ["kase", "tepsi", "bardak", "kepçe"]
+      answer: 0
+    kullan:
+      id: u3d01-038-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Every morning I eat my cereal with milk in a big ________.</en>"
+      options: ["bowl", "oven", "recipe", "step"]
+      answer: 0
+    sina:
+      id: u3d01-038-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: I want to make a big fruit salad for the party. ________\nEce: Yes, there's a large one on the top shelf.</en>"
+      options: ["Do we have a big bowl?", "Is the oven very old?", "Where is the recipe card?", "What does the teacher want?"]
+      answer: 0
+      explain: "Cevap \"a large one on the top shelf\" diyor: rafta duran büyük bir eşya soruluyor. Yes ile cevaplanan tek uygun soru bu."
+  - item: U3-040
+    sezdir:
+      id: u3d01-040-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"oven\" ne anlama geliyordu?"
+      options: ["fırın", "radyo", "buzdolabı", "bulaşık makinesi"]
+      answer: 0
+    kullan:
+      id: u3d01-040-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Be careful! Don't touch the ________ door. It's very hot inside.</en>"
+      options: ["oven", "fridge", "bowl", "recipe"]
+      answer: 0
+    sina:
+      id: u3d01-040-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>Murat Bey: Students, the oven in the school kitchen gets very hot. Please never use it without an adult.</en>"
+      options: ["Students must use the oven with an adult.", "Students can use the oven alone.", "The oven never gets hot.", "There isn't an oven in the school kitchen."]
+      answer: 0
+  - item: U3-045
+    sezdir:
+      id: u3d01-045-z
+      type: meaning
+      context: s18
+      prompt: "Kaan'ın cümlesinde \"First… Then… Finally…\" ne işe yarıyordu?"
+      options: ["sırayı göstermek (önce… sonra… en sonunda)", "sebep bildirmek (çünkü…)", "sıklık bildirmek (her zaman… bazen…)", "karşılaştırma yapmak (daha…)"]
+      answer: 0
+    kullan:
+      id: u3d01-045-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>________, wash your hands. Then, cut the apples. Finally, eat your fruit salad.</en>"
+      options: ["First", "Finally", "After", "At last"]
+      answer: 0
+      explain: "Sıranın başı First ile açılır. Tek başına After cümle başında kullanılmaz; At last ise uzun bir beklemenin sonunda \"nihayet\" demektir."
+    sina:
+      id: u3d01-045-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Selin's morning: First, I wake up at 6.30. Then, I have breakfast. After that, I read the news on my phone. Finally, I walk to school with Ece.</en>"
+      options: ["Selin reads the news after breakfast.", "Selin walks to school before breakfast.", "Selin reads the news before she wakes up.", "Selin walks to school alone."]
+      answer: 0
+  - item: U3-048
+    sezdir:
+      id: u3d01-048-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"ingredients\" ne anlama geliyordu?"
+      options: ["malzemeler", "kurallar", "fiyatlar", "konuklar"]
+      answer: 0
+    kullan:
+      id: u3d01-048-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Before you start cooking, check the ________: do you have eggs, milk and sugar?</en>"
+      options: ["ingredients", "steps", "ovens", "bowls"]
+      answer: 0
+    sina:
+      id: u3d01-048-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Kaan is writing the ingredients for a cake. Which of the following is NOT an ingredient?</en>"
+      options: ["a spoon", "eggs", "sugar", "milk"]
+      answer: 0
+      explain: "Kaşık bir mutfak aracıdır; yumurta, şeker ve süt kekin içine giren malzemelerdir."
+  - item: U3-050
+    sezdir:
+      id: u3d01-050-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"recipe\" ne anlama geliyordu?"
+      options: ["yemek tarifi", "alışveriş listesi", "davetiye", "fiş, makbuz"]
+      answer: 0
+    kullan:
+      id: u3d01-050-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This soup is amazing! Can I have the ________? I want to make it at home.</en>"
+      options: ["recipe", "receipt", "oven", "bowl"]
+      answer: 0
+      explain: "Evde yapmak için gereken şey tariftir; receipt kasada aldığın fiştir."
+    sina:
+      id: u3d01-050-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: Your grandma's soup is amazing! ________\nEce: Sorry, it's a family secret!</en>"
+      options: ["Can I have the recipe?", "Where is the bathroom?", "Is the oven very old?", "Do you want to watch a film?"]
+      answer: 0
+  - item: U3-052
+    sezdir:
+      id: u3d01-052-z
+      type: meaning
+      context: s17
+      prompt: "Murat Bey'in cümlesinde \"process\" ne anlama geliyordu?"
+      options: ["süreç (adım adım ilerleyen iş)", "malzeme", "ödül", "mutfak aracı"]
+      answer: 0
+    kullan:
+      id: u3d01-052-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Making bread at home is a long ________. It takes the whole morning.</en>"
+      options: ["process", "ingredient", "bowl", "oven"]
+      answer: 0
+    sina:
+      id: u3d01-052-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>Murat Bey: Your recipe card must be clear. Write each step on a new line and give every step a number.</en>"
+      options: ["Each step must be on a different line.", "The steps don't need numbers.", "All the steps must be on one line.", "A recipe card doesn't need any steps."]
+      answer: 0
+
+review:
+  - id: u3d01-r01
+    type: table_graph
+    item: U2-089
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the table, which of the following is correct?</en>"
+    stem: "<en>Do you like cooking?\nEce: ✓ · Selin: ✓ · Elif: ✓ · Kaan: ✗ · Bora: ✓ · Duru: ✗</en>"
+    options: ["Most of the students like cooking.", "Half of the students like cooking.", "None of the students like cooking.", "All of the students like cooking."]
+    answer: 0
+    explain: "Altı öğrenciden dördü ✓ işaretlemiş: yarısından fazlası, yani çoğu (most). Yarısı (half) üç kişi olurdu."
+  - id: u3d01-r02
+    type: text_infer
+    item: U2-013
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to the text, which of the following is TRUE?</en>"
+    stem: "<en>Duru: I can't stand noisy places, so I never eat in the canteen at lunchtime. I have my sandwich in the school garden.</en>"
+    options: ["Duru hates noisy places.", "Duru loves the canteen at lunchtime.", "Duru often eats in the canteen.", "Duru never eats sandwiches."]
+    answer: 0
+    explain: "can't stand ≈ hate. Doğru şık metni aynen tekrar etmiyor, eş anlamlıyla söylüyor."
+  - id: u3d01-r03
+    type: dialogue_complete
+    item: U2-052
+    lgs_like: true
+    stem_id: S13
+    prompt: "<en>Which question can be the missing question?</en>"
+    stem: "<en>Ece: ________\nKaan: Three times a week: on Mondays, Wednesdays and Fridays.</en>"
+    options: ["How often do you go to the gym?", "When did you join the gym?", "Who is your coach at the gym?", "Where is your gym?"]
+    answer: 0
+    explain: "\"Three times a week\" bir sıklık bildirir; sıklık How often ile sorulur."
+  - id: u3d01-r04
+    type: dialogue_complete
+    item: U2-041
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Gül Hanım: Bora, you're looking out of the window again. Rule number one in my class: ________\nBora: Sorry! I'm listening now.</en>"
+    options: ["Pay attention!", "Take a selfie!", "Hang out with your friends!", "Surf the internet!"]
+    answer: 0
+  - id: u3d01-r05
+    type: text_infer
+    item: U2-091
+    lgs_like: true
+    stem_id: S08
+    prompt: "<en>Who wants a relaxing evening?</en>"
+    stem: "<en>Ece: I want to go to the cinema and then to a concert!\nDuru: I just want to lie on my sofa with a blanket and some soft music.\nKaan: A football match and the gym!</en>"
+    options: ["Duru", "Ece", "Kaan", "Ece and Kaan"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U3-050]
+    text: "recipe (tarif) ile receipt (fiş, makbuz) birbirine çok benzer. recipe üç hecelidir: \"RE-si-pi\". Recipe mutfakta, receipt kasada!"
+  - type: tuzak
+    refs: [U3-040]
+    text: "Türkçede \"fırın\" iki şey demek: mutfaktaki fırın ve ekmek aldığımız dükkân. İngilizcede ikisi ayrı: oven mutfakta, bakery sokakta (ekmekçi dükkânı)."
+  - type: mini_dilbilgisi
+    refs: [U3-045, U3-052]
+    text: "Sıralama sözcükleri cümle başına gelir ve virgül alır: First, … Then, … After that, … Finally, … Tek başına \"After,\" denmez; \"After that,\" denir. Son adım Finally ile verilir, At last ile değil."
+  - type: lgs_taktigi
+    refs: [U3-048, U3-050]
+    text: "LGS'de tarif metni genelde iki bölümdür: Ingredients (malzeme listesi) ve adımlar. Soruyu okumadan önce bu iki bölümü gözünle ayır; malzeme sorusunun cevabı listede, sıra sorusunun cevabı adımlardadır."
+
+coach:
+  start: "Ünite 3 başlıyor! Okulda Junior Chef heyecanı var, Kaan da okulun mutfağında garip bir 'radyo' buldu. Önlüğünü kap! 👩‍🍳"
+  end_good: "Harika başlangıç! Kaan'ın sabahı bile artık bir recipe. Yarın Ece'nin evinde ilk deneme var. 🎉"
+  end_mixed: "İyi iş! {weak} biraz karıştı, dert değil. Hiçbir recipe ilk denemede kusursuz olmaz; yarın tekrar bakacağız."
+
+notifications:
+  morning: "Kaan'dan büyük haber var, Murat Bey de tahtaya kocaman bir şey yazdı! 🏀"
+  evening: "Kaan okulun mutfağında bir düğme çevirdi ama müzik çalmadı. Neden? 10 dakikada öğren."
+  review: "Tek soru: Kaan sabahını hangi üç İngilizce kelimeyle sıraladı?"
+
+editor:
+  z07: {U3-038: BEKLIYOR, U3-040: BEKLIYOR, U3-045: BEKLIYOR, U3-048: BEKLIYOR, U3-050: BEKLIYOR, U3-052: BEKLIYOR}

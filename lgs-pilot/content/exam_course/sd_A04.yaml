@@ -1,0 +1,139 @@
+# LGS Sınav Dili — A04 Metne göre doğru olan / çıkarım (S04, S14). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-A04
+module: A
+title: "Metne göre doğru olan / çıkarım"
+unlock_after: "Ü2 G5"
+minutes: 6
+stems: [S04, S14]
+units: [1, 2]
+intro_tr: "'According to the text, which is TRUE?' ve 'What can we infer?' sorularında doğru şık metni nadiren aynen tekrar eder. Metindeki bilgiyi başka kelimelerle tanıyabilmek bu soruların anahtarıdır."
+cards:
+  - title_tr: "Doğru şık kılık değiştirir"
+    body_tr: "Doğru şık genellikle metindeki cümleyi eşanlamlı ya da olumsuz bir yapıyla yeniden söyler. Metinde 'can't stand' varsa şıkta 'doesn't like' ya da 'hates' görürsün."
+    examples_en:
+      - "can't stand rock = doesn't like rock"
+      - "don't mind homework = has no problem with homework"
+      - "be into pop = like pop"
+    signal_words: ["can't stand", "don't mind", "be into", "be fond of"]
+  - title_tr: "Aynı kelime, ters anlam tuzağı"
+    body_tr: "Metindeki kelimeleri aynen taşıyan şık en tehlikelisidir: kelimeler aynı ama anlam ters çevrilmiş olabilir. Özellikle like ↔ hate, every day ↔ only at weekends, kişi değişimi (Elif ↔ her brother) değişikliklerine bak."
+    examples_en:
+      - "Text: Elif's brother is fond of rock.  Option: Elif's brother hates rock. ✗"
+  - title_tr: "Çıkarım: dayanağı göster"
+    body_tr: "Çıkarım şıkkı metinde açıkça yazmaz ama bir cümleye DAYANIR. 'again', 'this time', 'still', 'the only one' gibi kelimeler çıkarımın ipucudur. Kulağa mantıklı gelen ama metinde dayanağı olmayan şık yanlıştır."
+    examples_en:
+      - "I left it at home again.  → She often forgets it."
+      - "You're the only one I can count on.  → He trusts her."
+    signal_words: ["again", "this time", "still", "the only one"]
+worked_example:
+  id: sd-A04-w
+  type: text_infer
+  stem_id: S04
+  context: |-
+    Elif: I'm really into pop music and I listen to it every day. My brother is fond of rock, but I can't stand it because it's too loud for me.
+  prompt: "According to the text, which of the following is TRUE?"
+  options:
+    - "Elif doesn't like rock music."
+    - "Elif's brother hates rock music."
+    - "Elif listens to pop music only at weekends."
+    - "Elif thinks rock music is quiet."
+  answer: 0
+  explain_tr: "'I can't stand it' = sevmiyorum; doğru şık bunu başka kelimelerle söylüyor. 'Elif's brother hates rock' metindeki kelimeleri taşıyor ama ters: kardeşi rock'ı seviyor (fond of)."
+  items: [U2-016, U2-009, U2-013, U2-022, U2-023, U2-028]
+practice:
+  - id: sd-A04-p01
+    type: text_infer
+    stem_id: S04
+    context: |-
+      Kaan: In my free time, I hang out with my friends at the park. I don't mind doing my homework, but I hate cleaning my room.
+    prompt: "According to the text, which of the following is TRUE?"
+    options:
+      - "Kaan doesn't have a problem with doing homework."
+      - "Kaan enjoys cleaning his room."
+      - "Kaan hangs out with his friends at school."
+      - "Kaan hates doing his homework."
+    answer: 0
+    explain_tr: "'I don't mind' = sorun etmiyorum. 'Kaan hates doing his homework' metindeki 'hate' kelimesini alıp yanlış etkinliğe bağlıyor: Kaan odasını toplamaktan nefret ediyor."
+    items: [U2-002, U2-004, U2-011, U2-014]
+  - id: sd-A04-p02
+    type: text_infer
+    stem_id: S14
+    context: |-
+      Selin: Did you bring your guitar, Duru?
+      Duru: Oh no! I left it at home again.
+      Selin: Don't worry. You can use mine.
+    prompt: "We can infer from the conversation that …"
+    options:
+      - "Duru often forgets her guitar."
+      - "Selin doesn't have a guitar."
+      - "Duru doesn't like playing the guitar."
+      - "Selin is angry with Duru."
+    answer: 0
+    explain_tr: "'again' kelimesi Duru'nun gitarı daha önce de unuttuğunu gösterir. 'Selin is angry' çekici olabilir ama Selin 'Don't worry' diyor; 'You can use mine' da Selin'in gitarı olduğunu gösteriyor."
+  - id: sd-A04-p03
+    type: text_infer
+    stem_id: S14
+    context: |-
+      Murat Bey: Elif, you sing beautifully. You should join the school choir.
+      Elif: Thank you! To be honest, I'm a bit shy, but I'll try.
+    prompt: "Which of the following can we infer from the conversation?"
+    options:
+      - "Elif is good at singing."
+      - "Elif is already a member of the choir."
+      - "Murat Bey is a music teacher."
+      - "Elif doesn't want to sing at all."
+    answer: 0
+    explain_tr: "Murat Bey 'you sing beautifully' diyor; Elif iyi şarkı söylüyor. 'already a member' yanlış, çünkü 'You should join' henüz üye olmadığını gösterir. Murat Bey'in müzik öğretmeni olduğuna dair dayanak yok."
+    items: [U2-018, U2-020]
+  - id: sd-A04-p04
+    type: text_infer
+    stem_id: S04
+    context: |-
+      Ece's blog: Elif is our singer, Duru plays the guitar and Bora plays the drums. I'm not a musician; I'm the band's manager. We usually play pop and rock songs, but sometimes we try jazz.
+    prompt: "According to the text, which of the following is correct?"
+    options:
+      - "Ece doesn't play an instrument in the band."
+      - "Bora is the singer of the band."
+      - "The band usually plays jazz."
+      - "Duru plays the drums."
+    answer: 0
+    explain_tr: "'I'm not a musician; I'm the manager' → Ece enstrüman çalmıyor. 'The band usually plays jazz' metindeki 'usually' ve 'jazz' kelimelerini karıştırıyor: genellikle pop ve rock, bazen caz çalıyorlar."
+    items: [U2-019, U2-022, U2-023, U2-024]
+  - id: sd-A04-p05
+    type: text_infer
+    stem_id: S14
+    context: |-
+      Bora: Selin, can you help me with my maths homework? You're the only one I can count on.
+      Selin: Of course. Come over after dinner.
+    prompt: "We can say that …"
+    options:
+      - "Bora trusts Selin."
+      - "Selin isn't good at maths."
+      - "Bora is helping Selin with her homework."
+      - "Selin doesn't want to help Bora."
+    answer: 0
+    explain_tr: "'You're the only one I can count on' Bora'nın Selin'e güvendiğini gösterir. 'Bora is helping Selin' kişileri ters çeviriyor: yardım isteyen Bora."
+    items: [U1-051, U1-067, U1-005]
+  - id: sd-A04-p06
+    type: text_infer
+    stem_id: S04
+    context: |-
+      Duru: I'm keen on classical music, so I listen to it while I'm studying. My dad admires jazz musicians, but jazz is a bit boring for me. And rap? I hate it! It's too noisy.
+    prompt: "According to the text, which of the following is TRUE?"
+    options:
+      - "Duru listens to classical music when she studies."
+      - "Duru admires jazz musicians."
+      - "Duru's dad thinks jazz is boring."
+      - "Duru is crazy about rap."
+    answer: 0
+    explain_tr: "'I listen to it while I'm studying' = ders çalışırken dinliyor. 'Duru admires jazz musicians' en çekici çeldirici: caz müzisyenlerine hayran olan babası, Duru'ya caz sıkıcı geliyor."
+    items: [U2-010, U2-025, U2-017, U2-024, U2-027, U2-014, U2-029]
+tips:
+  - "Doğru şık metni aynen tekrar etmez; aynı kelimeleri taşıyan şıkkı iki kez kontrol et."
+  - "Her şıkta KİM ve NE değişmiş mi bak: kişi (Duru ↔ dad) ve fiil (like ↔ hate) en sık değiştirilen yerlerdir."
+  - "Çıkarım şıkkını seçmeden önce metinde dayandığı cümlenin altını çiz; çizemiyorsan seçme."
+coach:
+  start: "Bugün kılık değiştirmiş cümleleri yakalıyoruz! Doğru şık metni aynen söylemez, onu tanımak sende."
+  end: "Harika! Artık 'can't stand' ile 'doesn't like' aynı kişi, sen de onu tanıyorsun. Gözün keskinleşti!"
+status: draft

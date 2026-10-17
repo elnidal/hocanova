@@ -1,0 +1,319 @@
+schema_version: 1
+program: lgs
+unit: 3
+day: 4
+status: draft
+title: "Salata istasyonu"
+est_minutes: 10
+characters: [Ece, Selin, Elif, Kaan, Ece'nin annesi, Murat Bey]
+new_items: [U3-010, U3-019, U3-021, U3-022, U3-025, U3-049]
+
+story:
+  - id: s01
+    text: "Çarşamba akşamüstü, Ece'nin evi. Kek volkanından beri Ece kararlıydı: bu hafta hiçbir şey kabarmayacak, hiçbir şey taşmayacaktı."
+  - id: s02
+    text: "Ece: \"<en>Today's plan: Gavurdağı salad. No {U3-040|oven}, no fire, no volcano. Just a big {U3-038|bowl} and a lot of vegetables.</en>\""
+  - id: s03
+    text: "Selin {U3-050|recipe} kartını tezgâha yapıştırdı ve okudu: \"<en>{U3-048|Ingredients}: tomatoes, cucumbers, an onion, parsley, walnuts, a lemon, salt and black {U3-049|pepper}.</en>\""
+  - id: s04
+    text: "Elif buzdolabından iki uzun, yeşil şey çıkardı: \"<en>And green {U3-049|peppers}! Every good salad needs a little green {U3-049|pepper}.</en>\""
+  - id: s05
+    text: "Selin kaşını kaldırdı: \"<en>Green {U3-049|peppers} aren't on the card!</en>\" Elif: \"<en>Now they are!</en>\" Ece'nin annesi gülümseyerek bıçakları dağıttı."
+  - id: s06
+    text: "Ece'nin annesi: \"<en>Knives only when I'm here, OK? Slowly, please. This isn't a race.</en>\""
+  - id: s07
+    text: "Selin: \"<en>{U3-052|Step} one. {U3-045|First}, {U3-019|peel} the onion and the cucumbers.</en>\" Ece soğanı eline aldı; iki saniye içinde gözlerinden yaşlar akıyordu."
+  - id: s08
+    text: "Ece: \"<en>Why is {U3-019|peeling} an onion so emotional?!</en>\" Elif: \"<en>Sing while you work! It helps!</en>\""
+  - id: s09
+    text: "Selin: \"<en>{U3-045|Then}, {U3-022|slice} the cucumbers. Thin {U3-022|slices}, please, not thick ones.</en>\" Elif salatalıkları kâğıt inceliğinde kesti, bir yandan da şarkı söylüyordu."
+  - id: s10
+    text: "Tam o sırada kapı çaldı. Gelen Kaan'dı, nefes nefese: \"<en>Hi! I'm not a spy! I just need some salt for my team. Bye! Actually… what are you making? Can I have a {U3-022|slice} of cucumber?</en>\""
+  - id: s11
+    text: "Ece: \"<en>Kaan, you're {U1-075|always in a hurry}. Sit down and watch. Maybe you'll learn something.</en>\""
+  - id: s12
+    text: "Selin: \"<en>{U3-045|Next}, {U3-010|chop} the tomatoes and {U3-010|dice} the onion. Very small pieces.</en>\""
+  - id: s13
+    text: "Kaan: \"<en>{U3-010|Dice}? Like in a board game?</en>\" Elif: \"<en>Yes! Little cubes, like {U3-010|dice}!</en>\""
+  - id: s14
+    text: "Ece'nin annesi maydanozu aldı: \"<en>I'll {U3-010|chop} the parsley. This knife is very sharp.</en>\" Ece ise minicik küpleri tek tek kontrol ediyordu."
+  - id: s15
+    text: "Ece: \"<en>Mum, are all the cubes the same size? They must be perfect.</en>\" Annesi: \"<en>Ece, it's a salad, not a maths exam.</en>\""
+  - id: s16
+    text: "Selin: \"<en>{U3-045|After that}, {U3-025|squeeze} the lemon over the vegetables. Exactly one lemon. I {U2-084|follow the rules}, you know.</en>\""
+  - id: s17
+    text: "Elif limonu iki avucunun arasına aldı ve bütün gücüyle bastırdı. Fışşş! Limon suyu dosdoğru Kaan'ın gözüne gitti."
+  - id: s18
+    text: "Kaan: \"<en>My eye! My eye! Who {U3-025|squeezes} a lemon like that?!</en>\" Elif: \"<en>Sorry, sorry! I {U3-025|squeezed} it with love!</en>\""
+  - id: s19
+    text: "Ece'nin annesi Kaan'ı hemen lavaboya götürdü, gözünü bol suyla yıkadı. Kaan tek gözü kapalı geri geldi: \"<en>I'm OK. I can see… half of the salad.</en>\""
+  - id: s20
+    text: "Selin: \"<en>{U3-045|Finally}, {U3-021|season} the salad with salt and {U3-049|pepper}.</en>\""
+  - id: s21
+    text: "Kaan'ın açık kalan tek gözü kocaman oldu: \"<en>{U3-021|Season}? Which season? Is it a winter salad? It's December!</en>\""
+  - id: s22
+    text: "Selin sadece kaşını kaldırdı. Ece'nin annesi gülerek açıkladı: \"<en>Here it's a verb, Kaan. You {U3-021|season} food with salt and {U3-049|pepper}.</en>\""
+  - id: s23
+    text: "Derken Kaan'a son salatalığı uzattı: \"<en>Now you. {U3-019|Peel} this cucumber. Slowly. Be {U1-085|patient}.</en>\" Kaan, belki de ilk kez, bir işi acele etmeden bitirdi."
+  - id: s24
+    text: "Salata hazırdı. Ece üstüne ince limon {U3-022|slice}'ları dizdi ve tam kırk fotoğraf çekti."
+  - id: s25
+    text: "Elif: \"<en>Next time I'll {U3-025|squeeze} the lemon into the {U3-038|bowl}. Not into people's eyes.</en>\" Kaan tuzunu kaptı ve kapıdan tek gözle el salladı."
+  - id: s26
+    text: "O gece sınıf grubuna Murat Bey'den bir mesaj düştü: \"<en>Tomorrow we play a game in class. Bring a scarf. Don't ask why. 😄</en>\""
+
+scene:
+  - id: c01
+    speaker: Kaan
+    text: "<en>Spy report! Ece's team made a salad. First, they peeled the onion and the cucumbers.</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>And then?</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>They sliced, chopped and diced everything. Then Elif squeezed a lemon… into my eye!</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>Did they season it with salt and pepper?</en>"
+  - id: c05
+    speaker: Kaan
+    text: "<en>Yes. With salt and pepper, not with winter. I asked.</en>"
+
+steps:
+  - item: U3-019
+    sezdir:
+      id: u3d04-019-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"peel\" ne anlama geliyordu?"
+      options: ["(kabuğunu) soymak", "dilimlemek", "yıkamak", "kızartmak"]
+      answer: 0
+    kullan:
+      id: u3d04-019-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Before you eat a banana, you ________ it. Nobody eats the yellow skin!</en>"
+      options: ["peel", "pour", "season", "squeeze"]
+      answer: 0
+      explain: "Kabuğu ya da dış kabuğu ayırmak peel ile söylenir: peel a banana, peel an onion."
+    sina:
+      id: u3d04-019-s
+      type: process_order
+      lgs_like: true
+      stem_id: S07
+      prompt: "<en>According to the recipe, what is the correct order?</en>"
+      stem: "<en>Cucumber salad\nWash the cucumbers. Before you slice them, peel them. After that, squeeze half a lemon over them. Finally, season with salt.</en>"
+      options: ["wash → peel → slice → squeeze lemon → season", "wash → slice → peel → squeeze lemon → season", "peel → wash → slice → season → squeeze lemon", "wash → peel → squeeze lemon → slice → season"]
+      answer: 0
+      explain: "\"Before you slice them, peel them\" cümlesinde yazılış sırası ters: önce soyulur, sonra dilimlenir; Finally en son adımı verir."
+  - item: U3-022
+    sezdir:
+      id: u3d04-022-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"slice\" ne anlama geliyordu?"
+      options: ["dilimlemek; dilim", "soymak", "rendelemek", "ezmek"]
+      answer: 0
+    kullan:
+      id: u3d04-022-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Can I have a ________ of pizza, please? I'm really hungry.</en>"
+      options: ["slice", "bowl", "recipe", "step"]
+      answer: 0
+      explain: "slice isim olarak da kullanılır: a slice of pizza / bread / cake = bir dilim."
+    sina:
+      id: u3d04-022-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: How do you want the bread for the sandwiches?\nBora: ________\nEce: OK, thin slices. Here you are.</en>"
+      options: ["Can you slice it thinly, please?", "Can you peel it, please?", "Can you squeeze it, please?", "Can you season it, please?"]
+      answer: 0
+      explain: "Boşluktan sonraki satır \"thin slices\" diyor; ekmeği ince ince dilimlemek slice ile olur."
+  - item: U3-010
+    sezdir:
+      id: u3d04-010-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"chop / dice\" ne anlama geliyordu?"
+      options: ["doğramak / küp küp doğramak", "soymak", "sıkmak", "karıştırmak"]
+      answer: 0
+    kullan:
+      id: u3d04-010-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>________ the carrots into small cubes and cook them in the soup.</en>"
+      options: ["Dice", "Peel", "Squeeze", "Pour"]
+      answer: 0
+      explain: "\"into small cubes\" küp küp doğramayı anlatır: dice; zar (dice) da küp şeklindedir."
+    sina:
+      id: u3d04-010-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>What is Ece's mum doing?</en>"
+      stem: "<en>Ece's mum has a sharp knife and a board. She is cutting the onion into very small pieces, like little cubes.</en>"
+      options: ["She is dicing the onion.", "She is peeling the onion.", "She is squeezing the onion.", "She is seasoning the onion."]
+      answer: 0
+      explain: "Küçük küpler hâlinde kesmek dice; peel kabuğu soymak, squeeze sıkmak, season tuz ve baharatla tatlandırmaktır."
+  - item: U3-025
+    sezdir:
+      id: u3d04-025-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"squeeze\" ne anlama geliyordu?"
+      options: ["sıkmak (limon)", "kesmek", "soymak", "tuzlamak"]
+      answer: 0
+    kullan:
+      id: u3d04-025-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>For lemonade, ________ the juice out of four lemons.</en>"
+      options: ["squeeze", "peel", "season", "dice"]
+      answer: 0
+      explain: "Meyvenin suyunu bastırarak çıkarmak squeeze ile söylenir: squeeze the juice out of a lemon."
+    sina:
+      id: u3d04-025-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>Kaan: I can't open my right eye! Elif was making the salad. She pressed the lemon very hard and the juice flew everywhere! 😭</en>"
+      options: ["Elif squeezed a lemon and the juice went into Kaan's eye.", "Elif peeled an onion and Kaan cried.", "Kaan ate all the salad.", "Kaan seasoned the salad with a lot of salt."]
+      answer: 0
+      explain: "Metindeki \"pressed the lemon very hard\" ifadesi doğru şıkta squeezed ile, başka kelimelerle söyleniyor."
+  - item: U3-021
+    sezdir:
+      id: u3d04-021-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede \"season\" ne anlama geliyordu?"
+      options: ["(tuz, baharatla) tatlandırmak", "mevsim", "yıkamak", "doğramak"]
+      answer: 0
+    kullan:
+      id: u3d04-021-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The soup is ready. Now ________ it with a little salt and black pepper.</en>"
+      options: ["season", "peel", "slice", "squeeze"]
+      answer: 0
+      explain: "Tuz ve karabiberle tatlandırmak season (with) ile söylenir: season it with salt."
+    sina:
+      id: u3d04-021-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>In which sentence is \"season\" a cooking verb?</en>"
+      options: ["Season the chicken with salt and pepper.", "Summer is my favourite season.", "The football season starts in August.", "Winter is a cold season in Ankara."]
+      answer: 0
+      explain: "Cümle başında emir olarak ve with ile gelen season fiildir (tatlandır); diğerlerinde isim (mevsim, sezon)."
+  - item: U3-049
+    sezdir:
+      id: u3d04-049-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"pepper\" ne anlama geliyordu?"
+      options: ["biber; karabiber", "limon", "maydanoz", "salatalık"]
+      answer: 0
+    kullan:
+      id: u3d04-049-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This soup needs a little salt and black ________.</en>"
+      options: ["pepper", "bowl", "slice", "oven"]
+      answer: 0
+      explain: "salt and black pepper = tuz ve karabiber; pepper tek başına hem biber hem karabiber olabilir."
+    sina:
+      id: u3d04-049-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the recipe card?</en>"
+      stem: "<en>Ingredients: 2 tomatoes, 1 green pepper, 1 onion, a lemon, salt and black pepper.\nFirst, peel the onion. Then, dice the tomatoes, the green pepper and the onion. After that, squeeze the lemon over them. Finally, season with salt and black pepper.</en>"
+      options: ["walnuts", "a lemon", "an onion", "a green pepper"]
+      answer: 0
+      explain: "Malzeme listesini şıklarla tek tek eşle: limon, soğan ve yeşil biber var; ceviz (walnuts) yok."
+
+review:
+  - id: u3d04-r01
+    type: gap_fill
+    item: U3-013
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Bora ________ two eggs into the bowl with one hand. Kaan tried too, but his egg landed on his forehead.</en>"
+    options: ["cracked", "sliced", "seasoned", "squeezed"]
+    answer: 0
+  - id: u3d04-r02
+    type: gap_fill
+    item: U3-026
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>________ the eggs and the milk quickly with a fork until they are light and full of air.</en>"
+    options: ["Whisk", "Fry", "Peel", "Slice"]
+    answer: 0
+  - id: u3d04-r03
+    type: dialogue_complete
+    item: U3-018
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Selin: The chocolate powder is still at the bottom of my milk.\nElif: ________\nSelin: You're right. Now it's perfect!</en>"
+    options: ["Stir it with a spoon.", "Fry it in a pan.", "Crack it into a bowl.", "Peel it first."]
+    answer: 0
+    explain: "Dipte kalan tozu sütle birleştirmek için kaşıkla karıştırılır: stir."
+  - id: u3d04-r04
+    type: gap_fill
+    item: U3-020
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Don't ________ all the milk into the bowl at once. Do it slowly.</en>"
+    options: ["pour", "crack", "fry", "peel"]
+    answer: 0
+  - id: u3d04-r05
+    type: gap_fill
+    item: U3-041
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Heat a little oil in a frying ________, then fry the eggs for three minutes.</en>"
+    options: ["pan", "bowl", "cup", "oven"]
+    answer: 0
+  - id: u3d04-r06
+    type: gap_fill
+    item: U3-004
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Every morning Bora ________ two eggs in a little butter. Breakfast is ready in three minutes.</en>"
+    options: ["fries", "whisks", "pours", "peels"]
+    answer: 0
+  - id: u3d04-r07
+    type: process_order
+    item: U3-045
+    lgs_like: true
+    stem_id: S07
+    prompt: "<en>Kaan wrote his omelette plan in the wrong order. What is the correct order?</en>"
+    stem: "<en>a) Finally, eat it with some bread.\nb) First, crack two eggs into a bowl.\nc) After that, fry the mixture in a hot pan.\nd) Then, whisk the eggs with a fork.</en>"
+    options: ["b → d → c → a", "b → c → d → a", "d → b → c → a", "a → b → d → c"]
+    answer: 0
+    explain: "First → Then → After that → Finally sırası; yumurta kırılmadan çırpılmaz, çırpılmadan pişirilmez."
+
+tips:
+  - type: tuzak
+    refs: [U3-021]
+    text: "season herkesin bildiği \"mevsim\"; ama tarifte fiildir: \"Season with salt and pepper.\" = Tuz ve karabiberle tatlandır. Cümle başında emir olarak ve with ile geliyorsa takvimde değil, mutfaktasın!"
+  - type: tuzak
+    refs: [U3-049]
+    text: "pepper hem biber hem karabiber: green / red pepper = biber (sebze), black pepper ya da salt and pepper = karabiber. Pul biber ise chilli flakes."
+  - type: tuzak
+    refs: [U3-010]
+    text: "dice isim olarak oyun zarı; tarifte fiil: küp küp doğramak. Zar küp şeklindedir: \"Dice the onion\" = Soğanı zar gibi küçük küpler hâlinde doğra. chop ise genel doğramak."
+  - type: lgs_taktigi
+    refs: [U3-019, U3-022, U3-045]
+    text: "Tarif sırası sorusunda (S07) sıralama sözcüğü yoksa mantığa bak: soymadan dilimlenmez. \"Before you slice it, peel it.\" cümlesinde yazılış sırası ile yapılış sırası terstir: önce peel, sonra slice!"
+
+coach:
+  start: "Ece'nin evinde bıçaklar hazır, salata sırada. Ama Kaan neden kapıda ve neden tek gözü kapalı? 🍋"
+  end_good: "Harika! Bugün mutfakta hiçbir şey taşmadı, kimse ağlamadı. Soğan hariç 🧅"
+  end_mixed: "İyi iş! {weak} biraz göz yaşarttı ama soğan da öyle yapar. Yarın bir tur daha! 🍋"
+
+notifications:
+  morning: "Bugün salata günü. Kaan casusluğa çıkıyor; limondan uzak dursa iyi olur 🍋"
+  evening: "Kaan 'season' kelimesini duyunca 'Kış mı?' dedi. Neden mi? Derste 😄"
+  review: "Tek soru: 'dice the onion' soğanla zar atmak mı, küp küp doğramak mı? 🎲"
+
+editor:
+  z07: {U3-010: BEKLIYOR, U3-019: BEKLIYOR, U3-021: BEKLIYOR, U3-022: BEKLIYOR, U3-025: BEKLIYOR, U3-049: BEKLIYOR}

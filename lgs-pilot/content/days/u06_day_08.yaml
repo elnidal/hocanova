@@ -1,0 +1,305 @@
+schema_version: 1
+program: lgs
+unit: 6
+day: 8
+status: draft
+title: "Sol mu, sağ mı?"
+est_minutes: 10
+characters: [Duru, Bora, Selin, Kaan, Elif, Ece]
+new_items: [U6-019, U6-020, U6-029, U6-039, U6-040]
+
+story:
+  - id: s01
+    text: "Kampın son gecesi, saat dokuz. Deniz Hoca herkesi çadırların önünde topladı. Herkesin elinde bir {U6-025|flashlight} vardı; Ece'nin elinde iki tane."
+  - id: s02
+    text: "Deniz Hoca kuralları saydı: \"<en>Stay on the path, stay together and follow my light. Watch your feet. I don't want anybody to {U6-015|fall}.</en>\""
+  - id: s03
+    text: "Sonra ekledi: \"<en>The path on the right goes to a {U6-039|cliff}. We never go there at night. At every corner, we turn left.</en>\""
+  - id: s04
+    text: "Orman simsiyahtı. Bora her yaprak hışırtısında zıplıyordu: \"<en>What was that? A bear? A wolf? Is it going to {U6-019|attack} us?</en>\""
+  - id: s05
+    text: "Selin: \"<en>It's a leaf, Bora. Leaves don't {U6-019|attack} people.</en>\""
+  - id: s06
+    text: "Grup bir an bir baykuşu dinlemek için durdu ve o sırada Deniz Hoca'nın ışığı virajın arkasında gözden kayboldu. Murat Bey de yanlarındaydı ama o da haritaya bakıp başını kaşıyordu: \"<en>Hmm. Left or right?</en>\""
+  - id: s07
+    text: "Kaan hemen sağa koşmak istedi. Bora, Kaan'ın arkasına saklandı. Ve Duru… Duru hiç telaşlanmadı. Her zamanki {U1-079|laid-back} haliyle durdu, gözlerini kapattı ve dinledi."
+  - id: s08
+    text: "Duru: \"<en>Stop. Listen. Water. Deniz Hoca said the stream is on the left. The right goes to the {U6-039|cliff}.</en>\""
+  - id: s09
+    text: "Duru {U6-025|flashlight}'ını soldaki ağaca tuttu: gövdede küçük, parlayan bir ok vardı. Kaan: \"<en>Duru, you're a genius!</en>\" Duru: \"<en>No. I just read signs. Lying down is my other {U6-047|skill}.</en>\""
+  - id: s10
+    text: "Elli adım sonra ağaçların arasından tanıdık bir ışık göründü. Deniz Hoca geri dönmüştü: \"<en>There you are! Well done, Duru. Good {U6-047|skills}. Every {U6-048|instructor} needs eyes and ears like yours.</en>\""
+  - id: s11
+    text: "Kaan, Duru'nun omzuna vurdu: \"<en>We can {U1-051|count on} Duru. Always. Even in the dark.</en>\" Duru esnedi: \"<en>Especially in the dark. It's like sleeping.</en>\""
+  - id: s12
+    text: "Kamp ateşi çıtırdıyordu. Elif şarkısını söyledi; o şarkı artık her akşamın açılışıydı. Sonra Deniz Hoca ateşin ışığında sesini alçalttı: \"<en>Now, some {U6-029|mysterious} stories.</en>\""
+  - id: s13
+    text: "Deniz Hoca: \"<en>Far in the north, there is a huge {U6-040|glacier}. It's white and blue, and very, very cold.</en>\""
+  - id: s14
+    text: "\"<en>Many years ago, two climbers were lost on that {U6-040|glacier} for three days. It was minus thirty degrees. Their fingers {U6-020|got frostbite}, but they didn't give up.</en>\""
+  - id: s15
+    text: "Bora: \"<en>Did they {U6-014|survive}?</en>\" Deniz Hoca: \"<en>Yes, they {U6-014|survived}. They had warm clothes, the right {U6-047|qualifications} and a plan. In the mountains, cold can cause {U6-021|death}, so experts never go without good equipment.</en>\""
+  - id: s16
+    text: "Ece uyku tulumunu çenesine kadar çekti: \"<en>{U6-020|Frozen} fingers? I'm never leaving my sleeping bag.</en>\""
+  - id: s17
+    text: "Kaan: \"<en>Can you {U6-020|get frostbite} here, at our camp?</en>\" Deniz Hoca güldü: \"<en>Not in April, Kaan. Only in {U6-002|extreme} cold.</en>\""
+  - id: s18
+    text: "\"<en>Some climbers even sleep on a {U6-039|cliff}, in a small bed that hangs on ropes, with an expert team.</en>\" Duru'nun gözleri parladı: \"<en>A hammock on a {U6-039|cliff}…</en>\" Selin: \"<en>No.</en>\""
+  - id: s19
+    text: "Deniz Hoca: \"<en>And now a legend. Old fishermen say a giant shark lives in a faraway sea. It {U6-019|attacks} boats on full-moon nights.</en>\" Selin: \"<en>Is that true, or just a {U6-029|mysterious} story?</en>\" Deniz Hoca: \"<en>Only a legend. Real sharks rarely {U6-019|attack} people.</en>\""
+  - id: s20
+    text: "Elif: \"<en>That's so {U2-077|fascinating}! I want to see a {U6-040|glacier} one day… from a warm café!</en>\""
+  - id: s21
+    text: "Tam o sırada Bora'nın koluna bir şey kondu. Bora yerinden fırladı: \"<en>{U6-019|Attack}! Help!</en>\" Herkes ışıklarını koluna tuttu: orada minicik, kırmızı, benekli bir uğur böceği duruyordu."
+  - id: s22
+    text: "Duru: \"<en>A {U6-029|mysterious} monster. Very small. Very red. Very {U6-011|dangerous}.</en>\" Bora uğur böceğini dikkatle bir yaprağa bıraktı: \"<en>Sorry, little friend. I was {U2-059|nervous}.</en>\""
+  - id: s23
+    text: "Murat Bey ateşe bir odun daha attı: \"<en>Tonight there was no {U6-013|accident}, no lost student and no shark. Good work, team.</en>\""
+  - id: s24
+    text: "Çadıra dönerken Elif, Mia'ya kısa bir mesaj yazdı: \"<en>Tonight: a night walk, a campfire and a red monster!</en>\" Mia'nın cevabı hemen geldi: bir fotoğraf ve altında tek kelime, \"<en>Look!</en>\" Ama ormanda internet o fotoğrafı açmaya yetmedi. Elif yarına kadar bekleyecekti."
+
+scene:
+  - id: c01
+    speaker: Deniz Hoca
+    text: "<en>The path on the right goes to a cliff. We never go there at night.</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>What was that? Is it going to attack us?</en>"
+  - id: c03
+    speaker: Deniz Hoca
+    text: "<en>Two climbers were lost on a glacier. Their fingers got frostbite.</en>"
+  - id: c04
+    speaker: Selin
+    text: "<en>Is that true, or just a mysterious story?</en>"
+
+steps:
+  - item: U6-019
+    sezdir:
+      id: u6d08-019-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede Selin \"It's a leaf, Bora. Leaves don't attack people\" diyor. \"attack\" ne anlama geliyordu?"
+      options: ["saldırmak", "sevmek", "tanımak", "beklemek"]
+      answer: 0
+    kullan:
+      id: u6d08-019-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Most dogs are friendly, but some dogs ________ when they are scared.</en>"
+      options: ["attack", "drown", "land", "improve"]
+      answer: 0
+      explain: "Korkan bir hayvan saldırabilir: attack. attack hem fiil (saldırmak) hem isim (saldırı) olur."
+    sina:
+      id: u6d08-019-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Sharks in the News\nMany people are afraid of sharks, but shark attacks are very rare. Most sharks don't attack people. They usually eat fish. Scientists say that people are more dangerous for sharks than sharks are for people.</en>"
+      options: ["Sharks don't attack people very often.", "Most sharks eat people.", "Scientists are afraid of sharks.", "Shark attacks happen every day."]
+      answer: 0
+      explain: "Metinde köpekbalığı saldırılarının çok nadir olduğu (very rare) yazıyor; köpekbalıkları çoğunlukla balık yer."
+  - item: U6-020
+    sezdir:
+      id: u6d08-020-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede eksi otuz derecede \"Their fingers got frostbite\" deniyor. \"got frostbite\" ne anlama geliyordu?"
+      options: ["soğuktan dondu", "yandı", "kırıldı", "kesildi"]
+      answer: 0
+    kullan:
+      id: u6d08-020-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>It's minus twenty degrees outside. Wear your gloves, or your fingers can get ________.</en>"
+      options: ["frostbite", "freedom", "courage", "experience"]
+      answer: 0
+      explain: "Çok soğukta eldivensiz parmaklar donabilir: get frostbite. frozen = donmuş."
+    sina:
+      id: u6d08-020-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What advice can their instructor give?</en>"
+      stem: "<en>A group of climbers is going to walk on a snowy mountain in January. It will be very cold.</en>"
+      options: ["Wear warm gloves and boots, or you can get frostbite.", "Take your swimsuit and sunglasses only.", "Don't take any equipment with you.", "Go alone and leave your phone at home."]
+      answer: 0
+      explain: "Çok soğukta doğru tavsiye sıcak eldiven ve bot giymektir; diğerleri tehlikeli ya da yersiz."
+  - item: U6-029
+    sezdir:
+      id: u6d08-029-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede Deniz Hoca ateşin ışığında sesini alçaltıp \"Now, some mysterious stories\" diyor. \"mysterious\" ne anlama geliyordu?"
+      options: ["gizemli, esrarengiz", "gizli, saklı", "neşeli, komik"]
+      answer: 0
+    kullan:
+      id: u6d08-029-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Nobody knows who wrote this letter or why. It's a ________ letter.</en>"
+      options: ["mysterious", "dangerous", "disappointing", "experienced"]
+      answer: 0
+      explain: "Kimin, neden yazdığı bilinmiyorsa mektup mysterious'tır. Gizli (bir sır olarak saklanan) ise secret."
+    sina:
+      id: u6d08-029-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S05
+      prompt: "<en>Which title is suitable for the text?</en>"
+      stem: "<en>Every night, a strange light appears in the old lighthouse. Nobody lives there, and the door is always locked. The villagers don't know where the light comes from.</en>"
+      options: ["A Mysterious Light", "A Funny Village", "The New Lighthouse Keeper", "A Trip to the Beach"]
+      answer: 0
+      explain: "Işığın nereden geldiğini kimse bilmiyor: konu gizemli bir ışık. Deniz feneri boş, yani yeni bir bekçi de yok."
+  - item: U6-039
+    sezdir:
+      id: u6d08-039-z
+      type: meaning
+      context: s18
+      prompt: "Hikâyede \"Some climbers even sleep on a cliff, in a small bed that hangs on ropes\" deniyor. \"cliff\" ne anlama geliyordu?"
+      options: ["uçurum, sarp kayalık", "göl", "orman", "çadır"]
+      answer: 0
+    kullan:
+      id: u6d08-039-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Don't stand near the edge of the ________. It's a long way down to the sea.</en>"
+      options: ["cliff", "flashlight", "life jacket", "helmet"]
+      answer: 0
+      explain: "Kenarından denize uzun bir düşüş olan yer cliff'tir."
+    sina:
+      id: u6d08-039-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who watched the sunset from a high place?</en>"
+      stem: "<en>Ece: I took photos of the sunset from the top of a cliff. There was a safe fence.\nKaan: I swam in the lake with my cousin.\nSelin: I walked in the forest with my dad.\nDuru: I slept in the hammock all afternoon.</en>"
+      options: ["Ece", "Kaan", "Selin", "Duru"]
+      answer: 0
+      explain: "Ece gün batımını bir uçurumun tepesinden, güvenlik çitinin arkasından izledi."
+  - item: U6-040
+    sezdir:
+      id: u6d08-040-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede Deniz Hoca \"Far in the north, there is a huge glacier. It's white and blue, and very, very cold\" diyor. \"glacier\" ne anlama geliyordu?"
+      options: ["buzul", "çöl", "volkan", "yağmur ormanı"]
+      answer: 0
+    kullan:
+      id: u6d08-040-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>A ________ is a very large river of ice. It moves very slowly down a mountain.</en>"
+      options: ["glacier", "cliff", "lake", "forest"]
+      answer: 0
+      explain: "Dağdan çok yavaş akan dev buz kütlesi glacier'dır. Denizde yüzen buz dağı ise iceberg."
+    sina:
+      id: u6d08-040-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>We can understand from the text that ________.</en>"
+      stem: "<en>Lisa's blog: Last summer I visited Switzerland. We walked on a glacier with a guide. We wore special boots and warm clothes because it was very cold. The ice was blue and white.</en>"
+      options: ["Lisa walked on the ice with a guide.", "Lisa went to Switzerland alone in winter.", "The glacier was green.", "Lisa didn't need warm clothes."]
+      answer: 0
+      explain: "Lisa yazın bir rehberle buzulda yürüdü ve kalın giyindi; buz mavi ve beyazdı."
+
+review:
+  - id: u6d08-r01
+    type: gap_fill
+    item: U6-008
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>My uncle loves ________. He swims with the fish 20 metres under the sea.</en>"
+    options: ["scuba diving", "paragliding", "skydiving", "rock climbing"]
+    answer: 0
+  - id: u6d08-r02
+    type: situation
+    item: U6-010
+    prompt: "<en>You are on a lake in a small, narrow boat. You move it with a paddle. What are you doing?</en>"
+    options: ["canoeing", "skydiving", "caving", "climbing"]
+    answer: 0
+  - id: u6d08-r03
+    type: gap_fill
+    item: U6-017
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Life jackets help people not to ________ in the water.</en>"
+    options: ["drown", "land", "gain", "climb"]
+    answer: 0
+  - id: u6d08-r04
+    type: dialogue_complete
+    item: U6-018
+    prompt: "<en>Complete the dialogue.</en>"
+    stem: "<en>A: What time does your plane ________ in Ankara?\nB: At 10.15. Can you pick me up?</en>"
+    options: ["land", "drown", "fall", "climb"]
+    answer: 0
+  - id: u6d08-r05
+    type: gap_fill
+    item: U6-053
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>I love my bike. When I ride it by the sea, I feel the ________.</en>"
+    options: ["freedom", "accident", "death", "equipment"]
+    answer: 0
+  - id: u6d08-r06
+    type: gap_fill
+    item: U6-054
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>The ________ is very strong today. My umbrella broke!</en>"
+    options: ["wind", "freedom", "courage", "goal"]
+    answer: 0
+  - id: u6d08-r07
+    type: situation
+    item: U6-011
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>What does Selin probably say?</en>"
+    stem: "<en>Kaan wants to ride his bike down a steep hill without a helmet.</en>"
+    options: ["Don't do that! It's dangerous.", "Great idea! It's very safe.", "I'd rather go skydiving.", "How much does it cost?"]
+    answer: 0
+    explain: "Kasksız, dik yokuştan inmek tehlikelidir; Selin onu uyarır."
+  - id: u6d08-r08
+    type: trait_match
+    item: U6-003
+    lgs_like: true
+    stem_id: S08
+    prompt: "<en>Who is an adrenaline seeker?</en>"
+    stem: "<en>Ali: I love skydiving and bungee jumping.\nZeynep: I prefer reading at home.\nCan: I like quiet walks in the park.\nEla: I hate fast rides.</en>"
+    options: ["Ali", "Zeynep", "Can", "Ela"]
+    answer: 0
+    explain: "Skydiving ve bungee jumping seven Ali heyecan peşinde koşan biridir."
+  - id: u6d08-r09
+    type: dialogue_complete
+    item: U6-038
+    lgs_like: true
+    stem_id: S13
+    prompt: "<en>Which question is suitable for the answer?</en>"
+    stem: "<en>A: ________\nB: I like thrilling ones, like rafting and caving.</en>"
+    options: ["What kind of adventures do you like?", "How much does it cost?", "Where do you live?", "Why were you late?"]
+    answer: 0
+    explain: "Cevap bir tür bildiriyor (thrilling ones): soru What kind of …? olmalı."
+
+tips:
+  - type: tuzak
+    refs: [U6-029]
+    text: "mysterious = gizemli, esrarengiz (açıklaması bilinmeyen). Bazı kaynaklar \"gizli\" der ama gizli, saklı = secret: a secret plan ≠ a mysterious light."
+  - type: tuzak
+    refs: [U6-040]
+    text: "glacier karada, dağdan çok yavaş akan dev buz kütlesidir (buzul). Denizde yüzen buz dağı ise iceberg'dür; ikisini karıştırma."
+  - type: ilginc_bilgi
+    refs: [U6-019]
+    text: "Köpekbalıkları insanlara çok nadir saldırır; çoğu köpekbalığı balık ve deniz canlılarıyla beslenir. Asıl tehlikede olan, insanların avladığı köpekbalıklarıdır."
+  - type: kelime_ailesi
+    refs: [U6-020]
+    text: "frost (ayaz, kırağı) + bite (ısırık) = frostbite. get frostbite → geçmişte got frostbite. Ünite 3'teki freeze'in üçüncü hâli frozen = donmuş."
+
+coach:
+  start: "Bu gece orman karanlık, kamp ateşi sıcak. Bir yol ayrımı, bir sürü hikâye ve Bora'nın kolunda bir sürpriz 🔦"
+  end_good: "Bravo! Duru gibi dinledin, doğru yolu buldun. Kamp ateşi senin için yanıyor 🔥"
+  end_mixed: "İyi iş! {weak} karanlıkta biraz kayboldu. Işığını yak, yarın birlikte buluruz 🔦"
+
+notifications:
+  morning: "Gece yürüyüşü! Yol ikiye ayrılıyor: sol mu, sağ mı? 🔦"
+  evening: "Bora'nın koluna kırmızı bir canavar kondu. Ne olduğunu tahmin et 🐞"
+  review: "Deniz Hoca'nın kamp ateşi hikâyesinde neydi o dev, mavi, soğuk şey? ❄️"
+
+editor:
+  z07: {U6-019: BEKLIYOR, U6-020: BEKLIYOR, U6-029: BEKLIYOR, U6-039: BEKLIYOR, U6-040: BEKLIYOR}

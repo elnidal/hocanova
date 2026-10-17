@@ -1,0 +1,447 @@
+# Hikayenglish LGS — Hikâye Motoru · DÜNYA
+# Uygulamadan bağımsız, kalıcı hikâye evreni: dünya, karakterler, süreklilik kayıtları.
+# Kaynak kısaltmaları: u01d03 = content/days/u01_day_03.yaml (s/c = hikâye/sahne satırı), SB1/SB2 = story_bible.md / story_bible_u02.md
+# "kanon" = Ü1–Ü2 metinlerinde gerçekten geçti · "öneri" = henüz yazılmadı, season.yaml'daki plan; yazılınca kanona taşınır.
+# Bu dosya yalnız yazılmış (status ≥ draft) günlerden sonra güncellenir; yazarlar buradakiyle çelişen olay yazamaz.
+
+schema_version: 1
+updated: 2026-10-15
+canon_through: "Ü2 Gün 16"
+
+world:
+  city: İzmir
+  city_note: >-
+    Ü1–Ü2'de şehir adı yalnız bir kez geçti (Bora: "the best cake in İzmir", u01d03 s19); SB1 "şehir belirtilmez" diyordu.
+    Motor bundan sonra İzmir'i açıkça kullanır (Ü7 Turizm için doğal zemin). İzmir'e aykırı ayrıntı yazılmaz (kar, kayak vb. şehirde değil).
+  school:
+    type: devlet ortaokulu (adı verilmedi; ad koyma)
+    grade: 8. sınıf, hepsi aynı şube
+    exam: LGS (Haziran) — "aylar var" (Ü1) diye başlayan geri sayım sezon boyunca yaklaşır
+    english_teacher: Murat Bey   # "Nur Hanım" bu evrende yok (SB1)
+    uniform: "Okul forması var; Ü2 G11'de 'No Uniform Day' (serbest kıyafet günü) oldu."
+  class_chat:
+    name: "sınıf WhatsApp grubu (metinde 'sınıf grubu')"
+    rule: "Mesajlar İngilizce yazılabilir: sınıf İngilizce pratik yapıyor (SB1). Murat Bey de bazen yazar/yorum yapar (u02d10 s21, u02d16 s22)."
+    habits:
+      - "Ece toplu fotoğraf atar (147 fotoğraflık albüm, u01d06)."
+      - "Duru en geç ve en kısa cevap verir; Elif'le yazışırken bu kural bozulur (u01d07 s23)."
+      - "Bora bazen hiç cevap vermez (u01d01 s19, u01d09 s10) ya da gece yarısı seri fotoğraf atar (80 ağaç fotoğrafı, u02d07 s27)."
+  season_time:
+    u1: "Sonbahar (Eylül–Ekim): Ece'nin doğum günü partisi → bilim fuarı → kavga/barışma → okul gezisi"
+    u2: "Kasım–Aralık: Teen Life Survey; sunum Aralık'ta (basketbol seçmeleri 2 Aralık, u02d06 s01)"
+  places:
+    - id: okul_sinif
+      name: Sınıf
+      canon: "Murat Bey'in dersleri; tahtaya büyük harfle başlık yazma alışkanlığı (u01d13 s01, u02d01 s01)."
+    - id: kantin
+      name: Kantin
+      canon: "Kuyruk hep uzun; kantinci teyzenin tostu erken biter (u02d09 s13–s21). Barışma cipsi burada paylaşıldı (u01d12)."
+    - id: okul_bahcesi
+      name: Okul bahçesi ve banklar
+      canon: "Bora kavgadan sonra en uzak banka oturdu (u01d10 s13). Kaan bahçede basketbol atışı çalıştı (u02d06 s24)."
+    - id: kutuphane
+      name: Okul kütüphanesi
+      canon: "Ece ve Selin, Bora'ya burada tavsiye verdi (u01d12); 'Blue Planet' belgeseli burada izlendi (u02d14 s20)."
+    - id: spor_sahasi
+      name: Beden eğitimi sahası
+      canon: "Kaan–Bora kavgasını başlatan futbol maçı (u01d10)."
+    - id: pano
+      name: Okul panosu
+      canon: "Basketbol seçme ilanı (u02d06 s01), 'No Uniform Day' ilanı (u02d11 s01)."
+    - id: ece_evi
+      name: Ece'nin evi
+      canon: "Doğum günü partisi (u01d04–05), bilim fuarı volkanı burada yapıldı (u01d09 s14). Elif kapı komşusu."
+    - id: duru_evi
+      name: Duru'nun evi
+      canon: "Puf/kanepe; grubun prova yeri (cumartesi öğleden sonra, u02d05) ve film gecesi (u02d13). Duvar komşusu Ahmet Amca (matkap)."
+    - id: bora_evi
+      name: Bora'nın evi
+      canon: "İkili proje röportajı burada yapıldı (u01d13)."
+    - id: kaan_evi
+      name: Kaan'ın evi
+      canon: "Kayıp gezi formu futbol çantasındaki kaleci eldiveninden çıktı (u01d16 s24)."
+    - id: park
+      name: Okulun yanındaki park / şehir parkı
+      canon: "Barışma sonrası salıncaklar (u01d12 s20–s24), Ege'nin 'gol' inadı ve dondurma (u01d15). Piknik planı: 'the city park', cumartesi 11.00 (u01d08 s26)."
+    - id: pastane
+      name: Parkın karşısındaki küçük pastane
+      canon: "Simit ve çay; Ege ile Kerem'in takım elbiseyle geldiği yer (u02d12)."
+    - id: city_gym
+      name: City Gym
+      canon: "Kaan'ın spor salonu, iki sokak ötede; koç Cem Abi (u02d06 s05)."
+    - id: karate_salonu
+      name: Mahalle karate salonu
+      canon: "Gül Hanım'ın dersleri, cumartesi sabahı; ısınma caz eşliğinde (u02d07 s10–s13)."
+    - id: orman
+      name: Orman yolu
+      canon: "Selin'in ailesiyle pazar doğa yürüyüşü (u02d07 s24; u02d10 s03: on kilometre)."
+    - id: bilim_merkezi_lunapark
+      name: Bilim merkezi ve lunapark
+      canon: "Ü1 okul gezisi: Mars'taki ağırlık, robot kol, hız treni, çarpışan arabalar, dönme dolap (u01d17)."
+    - id: avm
+      name: AVM / dondurmacı
+      canon: "Yalnız anıldı (u02d01 s08)."
+    - id: kordon
+      name: Kordon (deniz kıyısı)
+      canon: "Henüz kullanılmadı. Önerilen kullanım: Ü7 tur rotası, sezon finali gün batımı sahnesi."
+    - id: kemeralti_saat_kulesi
+      name: Kemeraltı, Konak Saat Kulesi, Asansör
+      canon: "Henüz kullanılmadı (Ü7 önerisi)."
+
+# ---------------------------------------------------------------------------
+characters:
+  - id: ece
+    ad: Ece
+    rol: "Grubun düzenleyicisi; Ü2'de Ece–Selin–Elif anket ekibinin lideri"
+    ozellikler: [düzenleyici, sıcak, biraz mükemmeliyetçi, anlayışlı (understanding), moda meraklısı, plan defteri olmadan adım atmaz]
+    voice:
+      - "Listeler ve saatlerle konuşur: \"Cinema at ten, picnic at one, ice cream at four!\" (u01d08 s04)"
+      - "Grubu toparlayan cümleler: \"OK, team.\", \"First question: …\""
+      - "Kızınca bile yumuşak; 'Don't be mean' diyen taraf (u02d12 s08)"
+    running_gags:
+      - "Aşırı plan: kıyafetini bir hafta önceden seçer (u02d11 s03), 147 fotoğraf atar (u01d06)"
+      - "Şapkaya benzeyen pasta (u01d03 s11) — en büyük travması"
+      - "Romantik komedi sever, oylamada hep azınlıkta kalır (u02d13 s04, u02d16 s07)"
+    never:
+      - "Arkadaşını herkesin önünde küçük düşürmez"
+      - "Planı olmadan yola çıkmaz (çıkarsa komedi kaynağıdır, karakter bozulması değil)"
+      - "Kuzeni Ege'yi dışlamaz; kusurlarına rağmen savunur (u02d15 s18)"
+    iliskiler:
+      selin: "Anaokulundan beri yakın arkadaş (u01d06 s08); Selin'in günlüğünü bilen tek kişi (u01d06 s09)"
+      duru: "En eski arkadaşı (Duru: \"you're my oldest friend\", u01d15 s24); Elif yüzünden kıskançlık yaşadı, konuşarak çözdü (u01d15)"
+      elif: "Kapı komşusu; onu sınıfa tanıtan kişi (u01d07)"
+      kaan: "Kaan'ı arayıp yol gösterdiği kavga gecesi (u01d10 s17–s21)"
+      bora: "Partiye gelmesi için ısrar etti; Bora'nın 'anlayışlı' bulduğu kişi (u01d14 s19)"
+      ege: "Kuzeni"
+    aile:
+      - "Annesi (partiyi birlikte hazırladılar, u01d01, u01d04)"
+      - "Babası (partide Kaan'la futbol konuştu, u01d05 s04)"
+      - "Babaannesi (\"caring\", u01d04 s24)"
+      - "Küçük kardeşi — cinsiyeti ve adı verilmedi; Selin ona matematik öğretti (u01d14 s15)"
+      - "Kuzeni Ege"
+    evcil_hayvan: null
+    gelisim:
+      u1: "Doğum günü partisini verdi; deneme pastası 'şapka' çıktı. Elif'in Duru'yla vakit geçirmesini kıskandı, itiraf etti, barıştı (G15). Elif'in grubuna şarkıcı olarak katılmayı kabul etti (G15 s26: \"Deal!\") — Ü2'de bu takip edilmedi (bkz. MOTOR.md süreklilik notları)."
+      u2: "Anket ekibinin düzenleyicisi; serbest kıyafet gününde 'outfit' kraliçesi (G11); 'Blue Planet'ten sonra moda belgeseli istedi (G14); sunumda grafikleri o gösterdi (G16)."
+    yay: "Mükemmeliyetçilik → 'Mükemmel değil ama bizim' diyebilmek (season.yaml)"
+
+  - id: kaan
+    ad: Kaan
+    rol: "Grubun motoru; Kaan–Bora–Duru ekibinin sözcüsü"
+    ozellikler: [hep acelesi var, her yere geç kalır, dışa dönük (outgoing), sır tutamaz, iyi kalpli, sporcu (futbol, basketbol)]
+    voice:
+      - "Kısa, ünlemli, nefes nefese: \"Sorry, sorry!\", \"Me? Late? Never!\" (u01d08 s26, u02d04 s22)"
+      - "Herkese 'buddy/mate' der — Murat Bey dahil (u01d06 s05)"
+      - "Abartma: \"My phone is on fire! 🔥\""
+    running_gags:
+      - "Geç kalma: ilk gün spor salonuna 10 dk geç (u02d06 s05); anketin 'hardly ever on time' cevabı (u02d09)"
+      - "'Me? Late? Never!' — kimse inanmaz"
+      - "Otobüsü kaçırma (u01d09 s17, u01d12 s13)"
+      - "Sır tutamama: sürpriz videoyu beş dakikada ağzından kaçırdı (u01d04 s05)"
+      - "Telaştan uyumsuz çorap / yanlış iliklenmiş gömlek (u01d16 s06)"
+      - "Rap ve üçgen: \"I can play… the triangle.\" (u02d04 s04, u02d05 s10)"
+    never:
+      - "Kötü niyetli değildir; hata yapar ama özür diler (u01d12)"
+      - "Bir arkadaşını yalnız bırakmaz (Bora'nın bisikleti bozulunca bir ay onunla yürüdü, u01d12 s05)"
+      - "Bir daha sır ifşa etmez — Ü1 G11'deki hatası tekrarlanmaz (söz verdi, u01d14 s08)"
+    iliskiler:
+      bora: "En yakın arkadaşı ('buddy'). Futbol maçı + sırrın ifşası yüzünden kavga (G10–11), cipsle barışma (G12), ikili proje (G13)"
+      selin: "Selin onun dakiksizliğinin daimi yorumcusu; belgesel tartışmasında inatlaştılar, sonra uzlaştılar (u02d14 s17–s21)"
+      duru: "Duru onu tiye alır ama sandviçini paylaşır (u02d09 s23)"
+      murat_bey: "Ödev için köpek yalanı söyledi, itiraf etti (u01d11)"
+    aile:
+      - "Annesi (gezi formunu imzaladı, u01d16 s25–s27)"
+      - "Babaannesi/anneannesi: 'calm driver' (u01d17 s17; hangisi olduğu belirtilmedi)"
+      - "Bir kuzeni var (doğum günü, u01d09 s06)"
+    evcil_hayvan: null   # köpeği YOK (u01d11 s04)
+    gelisim:
+      u1: "Ödev yalanı + Bora'nın dans sırrını ifşa → kavga; özür ve barışma; ikili projede 'respectful' ve dakik (G13); gezi otobüsüne herkesten önce bindi (G17)."
+      u2: "Spora sardı: City Gym, Cem Abi, haftada üç antrenman; 2 Aralık basketbol seçmelerine hazırlandı (G6, G9). Hâlâ geç kalıyor; G15'te plan yapıp bir kez zamanında geldi. Seçme sonucu henüz yazılmadı (açık iplik)."
+    yay: "Dakiklik: hep geç → ara sıra zamanında → LGS sabahı herkesten önce (season.yaml)"
+
+  - id: bora
+    ad: Bora
+    rol: "Grubun komedyeni; Kaan–Bora–Duru ekibi"
+    ozellikler: [bahane ustası ama aslında yardımsever, utangaç (u01d05 s07), komik, sabahları kalkamaz, dans dersine gidiyor, karate yapıyor]
+    voice:
+      - "Tek satırlık espri ve abartılı kendine güven: \"I always keep my promises… sometimes.\" (u01d04 s19)"
+      - "Bahane kalıbı: \"Sorry, I can't. My cat is sick.\" (u01d02 s03)"
+      - "Yemekle ilgili her şeye 'yes, please' (u01d16 s25)"
+    running_gags:
+      - "Olmayan kedi: \"My cat says hello.\" (u01d07 s19); karate-kedi filtresiyle 'kedisi sonunda ortaya çıktı' (u02d10 s09)"
+      - "Tavuk dansı: Ü1 dans yarışmasını kazandı (u01d05), sunumda tekrar yaptı ve sınıf ona katıldı (u02d16 s15)"
+      - "Felaket selfie'ler: gözler kapalı, sadece alın, 'Popcorn Man' (u02d10, u02d13)"
+      - "Cevap vermeyen telefon: 'My phone was dead.' (u01d09 s12)"
+      - "Yanlış yere şık giyinmek: serbest kıyafet gününde takım elbise + kırmızı papyon (u02d11), sunumda kravat (u02d16)"
+      - "Ünlü sandviçleri: 'Five for each person!' (u01d08 s18)"
+    never:
+      - "Gerçekten kötü bir şey için yalan söylemez; bahaneleri zararsızdır"
+      - "Dans dersi artık sır değil ama alay konusu da değil (SB2)"
+      - "Yardım isteyen birini görmezden gelmez (yaşlı komşu, uçurtma, telefon: u01d04, u01d15)"
+    iliskiler:
+      kaan: "En yakın arkadaşı; kavga ve barışma (Ü1 G10–12), 'mutual respect' (G13), gezi formunu birlikte aradılar (G16)"
+      duru: "Duru onu partide savundu (u01d04 s12); Bora da Duru hastayken ödevlerini getirmişti (u01d04 s14)"
+      selin: "Kavga günü yanına giden ilk kişi (u01d10 s14); ailesiyle doğa yürüyüşüne götürdü (u02d07)"
+      elif: "Elif onu gruba davulcu olarak çağırdı (u02d07 s04)"
+    aile:
+      - "Annesi hemşire, her sabah herkesten erken çıkar (u01d13 s09); Kaan'ı 'respectful' buldu"
+      - "Dedesi caz dinler (u02d04 s12); soru köklerinde plak koleksiyonu ve saksafon (u02d04, yarı kanon)"
+    evcil_hayvan: null   # kedisi YOK
+    gelisim:
+      u1: "Kedi bahanesiyle partiyi reddetti, özür diledi, geldi; yaşlı komşuya yardım edip geç kaldı ama pastayı getirdi (sözünü tuttu). Tavuk dansıyla yarışmayı kazandı. Gizli dans kursu sırrı Kaan tarafından ifşa edildi → kavga → barışma."
+      u2: "Bireysel spor seçti: cumartesi karate (Gül Hanım), pazar doğa yürüyüşü (G7). Grubun fotoğrafçı üyesi (G4), sonra davulcu olmayı kabul etti (G7). Selfie maceraları ve 500 beğenili 'Popcorn Man' (G13). Günde 20 dakika ders sözü (G15)."
+    yay: "Bahaneci → güvenilir: 'Sorry, I can't' → 'Leave it to me' (season.yaml)"
+
+  - id: duru
+    ad: Duru
+    rol: "Grubun sakin merkezi; Kaan–Bora–Duru ekibi; grubun gitaristi"
+    ozellikler: [kafası rahat (laid-back), sakin (calm), tembel görünür ama sadık, gözlemci ve duyarlı (sensitive), müzik türünde inatçı]
+    voice:
+      - "Kısa ve kuru: \"Thank you.\" (inatçı denince, u02d04 s11), \"Only lying down.\""
+      - "\"It doesn't matter.\" / \"I don't mind…\" + absürt şart: \"If someone else washes the dishes.\" (u02d02 s07)"
+      - "Uyumuyor, 'gözleri kapalı düşünüyor' (u01d06 s11)"
+    running_gags:
+      - "Puf/kanepe/battaniye: 'My sofa is my gym.' (u02d09 s11)"
+      - "Her soruya 'fark etmez' — müzik türü hariç: 'Only rock!' (u02d04 s10)"
+      - "Filmin/sunumun ortasında uyuyakalmak (u02d13 s15)"
+      - "Kitap okuma hızı: 'Page 3. Don't rush me.' (u02d14 s24)"
+    never:
+      - "Arkadaşı haksızlığa uğrarken sessiz kalmaz (Bora'yı savundu u01d04; hakemlikte 'fair' u01d05)"
+      - "Panik yapmaz (ters dönen grafiği iki tıkla düzeltti, u02d16 s10)"
+      - "Fıstık hakkında kötü söz kabul etmez"
+    iliskiler:
+      elif: "Müzik + köpek ortaklığı; birlikte grubu kurdular (Duru gitar, Elif vokal)"
+      ece: "Ece'nin 'en eski arkadaşı'; Ece'nin kıskançlığını sadakatle çözdü (u01d15)"
+      bora: "Birbirlerini savunan ikili (u01d04)"
+      kaan: "Kaan'ın en kuru yorumcusu"
+    aile:
+      - "Annesi her sabah Mozart çalar (u02d05 s03)"
+    evcil_hayvan: "Fıstık — erkek köpek (\"He never leaves me\", u01d03 s14); sadık, kanepede uyur, provada havlar/ulur; yeni kırmızı tasması var (u02d11 s17)"
+    komsu: "Ahmet Amca (duvar komşusu, matkap)"
+    gelisim:
+      u1: "Bora'yı savundu, dans yarışmasında adil hakemlik; Elif'le ortak noktaları (müzik, köpek) çıktı; Ece'ye 'oldest friend' dedi; 'The Calm Friend' (G14)."
+      u2: "Elif'le müzik grubu kurdu; rock konusunda inatçı (G4); evinde ilk prova ve film gecesi; Elif'in üzgün olduğunu ilk o fark etti (G15: sensitive); sunumda grafiği düzeltti."
+    yay: "'Fark etmez' → 'Bu benim için önemli' (kararlılık) (season.yaml)"
+
+  - id: selin
+    ad: Selin
+    rol: "Grubun pusulası; Ece–Selin–Elif ekibi"
+    ozellikler: [güvenilir (reliable), dürüst (honest), hep zamanında, sabırlı (patient), öz disiplinli, haberleri takip eder, kurallara uyar]
+    voice:
+      - "Dolaysız ve nazik: \"To be honest… it looks like a hat. 😅\" (u01d03 s11)"
+      - "Kısa ahlak dersi: \"Dishonesty breaks friendships.\" (u01d11 s16)"
+      - "Kaş kaldırma: metinde sık 'Selin sadece kaşını kaldırdı'"
+    running_gags:
+      - "Saat gibi rutin: 6.30'da kalkar, cumartesi bile (u02d08 s05); babası 3.40'ta kapıda — '3.39 değil, 3.41 değil'"
+      - "Nadiren cips yer: 'Rarely?! Selin, you're living dangerously!' (u02d08 s18)"
+      - "Kaan'ın gecikmesini önceden tahmin eder: 'I believe you'll be late, Kaan.' (u02d04 s22)"
+    never:
+      - "Yalan söylemez, kopya çekmez, sırrı ifşa etmez"
+      - "Geç kalmaz (kalırsa büyük olay olur — bilinçli kullanılmalı)"
+      - "Dürüstlüğünü kırıcılığa çevirmez"
+    iliskiler:
+      ece: "Anaokulundan beri yakın arkadaş; Ece'nin pastasına dürüst yorum (u01d03)"
+      kaan: "Daimi 'geç kalma' yorumcusu; belgesel tartışması (u02d14)"
+      bora: "Bora'nın kavgadaki sırdaşı (u01d11 s09–s13)"
+    aile:
+      - "Annesi (\"People rely on you.\" u01d03 s09)"
+      - "Babası: arabayla alır, klasik müzik çalar (cuma: halk müziği), dakik; 'My daughter is reliable like a clock' (u02d08)"
+      - "Dedesi: her pazar bağlama çalar (u02d05 s06)"
+      - "Ağabeyi Emre: odasında yüksek sesle rap dinler (u02d08 s13–s14)"
+      - "Basketbol oynayan bir kuzeni (u02d06 s13)"
+    evcil_hayvan: "Bir kedisi var — adı verilmedi (\"Well, Ece and my cat.\" u01d06 s09). DİKKAT: Bora'nın kedisi yok, Selin'in var."
+    gelisim:
+      u1: "Ece'nin en güvendiği yardımcı (G3–4); kavgada arabulucu; 'self-disciplined' formu ilk teslim eden (G16)."
+      u2: "Anketin 'daily routine' örneği (G8); her sabah haberleri okur (G9); 'A good teenager follows the rules' (G15); Kaan'la belgesel tartışmasında uzlaştı (G14)."
+    yay: "Kurallar ve rutin → esneklik ve küçük riskler (rutini bilerek bozmak) (season.yaml)"
+
+  - id: elif
+    ad: Elif
+    rol: "Yeni öğrenci → grubun parçası; Ece–Selin–Elif ekibi; grubun vokali"
+    ozellikler: [sosyal, neşeli, müzik ve hayvan sever, her yerde şarkı söyler, Luna Ray hayranı, popçu]
+    voice:
+      - "Coşkulu: \"Wow!\", \"I love it!\", \"Pop-rock!\""
+      - "Gruba yapıcı öneriler: \"Try a filter!\", \"Let's add new questions!\""
+      - "Kurmaca şarkıcı Luna Ray'den hayranlıkla söz eder"
+    running_gags:
+      - "Otobüste, duşta, her yerde şarkı (u02d02 s09–s10)"
+      - "Dergi testleri: 'What kind of friend are you?' (u01d14)"
+      - "Pamuk ve Fıstık fotoğraf karşılaştırmaları (u01d07 s14)"
+    never:
+      - "Grubu ikiye bölmez (Ece'nin kıskançlığında Ece'yi de gruba çağırdı, u01d15 s26)"
+      - "Luna Ray'i alaya alan şakaya gülmez — ama kendine gülebilir"
+    iliskiler:
+      ece: "Kapı komşusu; partiye davetiyesiyle geldi (u01d04 s26)"
+      duru: "Grup ortağı; ortak noktaları müzik ve köpek; 'same opinion' (köpekler kedilerden iyidir)"
+      bora: "Onu davulcu yaptı (u02d07)"
+    aile: []   # ailesi metinde geçmedi (bir review sorusunda 'Elif's grandma is seventy' — kurmaca soru, kanon sayma)
+    evcil_hayvan: "Pamuk — dişi köpek (\"Her name is Pamuk\", u01d07 s11); piknikleri sever (u01d08 s11)"
+    muzik: "Gitar da çalar (u01d07 s11) ama grupta vokal; bir Karadeniz türküsü biliyor (u02d05 s07)"
+    gelisim:
+      u1: "Partiye komşu olarak geldi (G4); Pazartesi sınıfa yeni öğrenci olarak katıldı (G7); Duru'yla hızla kaynaştı; kişilik testini getirdi (G14)."
+      u2: "Duru'yla grubu kurdu, poster ve üye arama (G4); vokal; Luna Ray'in konseri iptal olunca üzüldü, Duru teselli etti (G15); anket ekibinin enerjisi."
+    yay: "Yeni öğrenci → grubun vazgeçilmez parçası; 'bu şehir/bu grup benim de' (season.yaml)"
+
+side_characters:
+  - id: murat_bey
+    ad: Murat Bey
+    rol: "İngilizce öğretmeni; hikâyede yetişkin dengesi"
+    ozellikler: [sakin, esprili, sabırlı ama sınırı var, belgesel ve kitap önerir]
+    voice: "Kısa, sıcak, şakayla karışık disiplin: \"Very funny, Bora. Now, sit down, please.\" (u01d16 s22)"
+    running_gags:
+      - "Volkan köpüğünde ıslanan ayakkabılar (u01d09 s20)"
+      - "\"I have five classes today!\" (u01d14 s23)"
+      - "Ders başlamadan 'This is boring' denmesine katlanamaz (u02d03 s18)"
+      - "Arabanın anahtarını haftada üç kez kaybeder: 'I'm a very ordinary man!' (u02d15 s20)"
+    never: [Öğrenciyi küçük düşürmez, Bağırmaz]
+    gelisim: "Ü1: bilim fuarı, ikili proje, okul gezisi. Ü2: Teen Life Survey ödevi, 'Blue Planet' ve köpekli kitap önerisi."
+  - id: ege
+    ad: Ege
+    rol: "Ece'nin kuzeni; başka okulda; ara sıra gelen 'misafir sorun'"
+    ozellikler: [bencil ve inatçı başlar, gösterişçi, züppe tavırlı (snob), dönüp iyilik yapabilir]
+    voice: "Kendini öven: \"I'm not stubborn. I'm just always right.\" (u01d15 s13)"
+    running_gags: ["Cips paylaşmamak (u01d05)", "'Gol' inadı (u01d15)", "Takım elbise/kravat (u02d12)"]
+    never: ["Kalıcı kötü adam değildir; her görünüşünde küçük bir iyilikle kapanır"]
+    gelisim: "Ü1: partide cimri, kopya çekti, özür diledi (G5); G15'te herkese dondurma aldı (generous). Ü2: G12'de Kerem'le resmi kıyafet ve züppelik, sonra kravatı çıkarıp simidi sevdi; G15'te ankete mesajla katıldı."
+  - id: kerem
+    ad: Kerem
+    rol: "Ege'nin yetişkin kuzeni; bankada çalışır"
+    ozellikler: [nazik, alçakgönüllü, hafta sonu kot giyer, haftada iki spor salonu]
+    canon: "Ü2 G12: 'Nice to meet you' dediğine göre grup (Ece dahil) onu ilk kez gördü → büyük olasılıkla Ege'nin öbür taraftan kuzeni, Ece'nin değil."
+  - id: cem_abi
+    ad: Cem Abi
+    rol: "City Gym'deki koç"
+    ozellikler: [disiplinli, cesaretlendirici]
+    canon: "Kaan'a haftada üç antrenman programı verdi; 'See you on Monday – on time!' (u02d06 s25)"
+  - id: gul_hanim
+    ad: Gül Hanım
+    rol: "Mahalledeki karate hocası"
+    ozellikler: [ciddi görünür, çok sabırlı]
+    canon: "Kural bir: 'Pay attention.' Isınma caz eşliğinde (u02d07)."
+  - id: ahmet_amca
+    ad: Ahmet Amca
+    rol: "Duru'nun duvar komşusu"
+    ozellikler: [cumartesi matkapla raf takar, anlayışlı, gençliğinde halk müziği grubunda çalmış]
+    canon: "u02d05 s15–s22"
+  - id: mert
+    ad: Mert
+    rol: "Bora'nın karate sınıfından bir çocuk"
+    canon: "Su şişesi olayı, sonra barış: 'You're helpful… and dangerous.' (u02d07 s17–s18). DİKKAT: soru köklerinde 'Mert' adı genel örnek olarak da kullanıldı."
+  - id: kantinci_teyze
+    ad: Kantinci teyze
+    rol: "Okul kantini"
+    canon: "Tostlar erken biter (u02d09 s21)."
+  - id: luna_ray
+    ad: Luna Ray
+    rol: "KURMACA pop şarkıcısı (gerçek kişi değil)"
+    canon: "Kendi şarkılarını yazar, hayvan barınaklarına yardım eder (u02d03); konseri iptal oldu (u02d15 s12)."
+  - id: aileler
+    ad: Aileler
+    canon:
+      ece: "annesi, babası, babaannesi, küçük kardeşi"
+      kaan: "annesi, büyükannesi, kuzeni"
+      bora: "annesi (hemşire), dedesi (caz)"
+      duru: "annesi (Mozart)"
+      selin: "annesi, babası (şoför-dakik, klasik müzik), dedesi (bağlama), ağabeyi Emre (rap)"
+      elif: "yazılmadı"
+    rule: "Aile sorunları (boşanma, hastalık, maddi sıkıntı) mizah malzemesi olmaz; aileler destekleyici arka plandır."
+
+coach:
+  id: hoca_nova
+  ad: Hoca Nova
+  tip: "Anlatı dışı koç — hikâye karakteri DEĞİL. Hikâyenin içine girmez, karakterlerle konuşmaz; öğrenciyle konuşur ve hikâyeye seyirci gibi atıf yapar."
+  ses:
+    - "Samimi abi/abla tadı; çocuksu değil, öğretmen gibi değil"
+    - "Kısa, esprili, hikâyeden bir göz kırpma: \"Bora siyah kuşağa çok uzak ama sen bugün kuşak atladın 🥋\" (u02d07)"
+    - "Zorlanılan birimleri adıyla anar ({weak}) ama suçlamaz"
+    - "Emoji ölçülü: mesaj başına 0–2"
+  yapar: [günün hedefini söyler, merak kancası atar, sonucu yorumlar, seriyi kutlar, kaçırılan günde suçlamadan geri çağırır, sınav geri sayımını plana bağlar, uyku ve mola hatırlatır]
+  yapmaz:
+    - "Öğretilecek birimin Türkçe anlamını coach.start ve bildirimlerde söylemez"
+    - "Utandırmaz, korkutmaz; seri kaybını baskı aracı yapmaz ('Bu gidişle kazanamazsın' yok)"
+    - "Karakterlerle alay etmez; hikâyedeki bir kişiyi küçümseyerek espri yapmaz"
+  limits: {mesaj: 140, bildirim: 90}
+  havuz: "lgs-pilot/content/coach.yaml (genel durumlar); günlük mesajlar her gün dosyasında"
+
+# ---------------------------------------------------------------------------
+# Süreklilik kayıtları: değişmez gerçekler. Yazar ve editör her yeni günü bunlara karşı kontrol eder.
+canon_facts:
+  - "Bora'nın kedisi YOK; 'kedim hasta' bir bahaneydi (u01d02 s04). 'My cat says hello' süregiden şakadır."
+  - "Selin'in bir kedisi VAR (adı yok, u01d06 s09)."
+  - "Kaan'ın köpeği YOK; 'My dog ate it' yalanıydı (u01d11 s03–s06)."
+  - "Fıstık Duru'nun köpeği, erkek. Pamuk Elif'in köpeği, dişi."
+  - "Elif, Ece'nin kapı komşusu; partiye komşu olarak geldi, Ü1 G7'de (pazartesi) sınıfa yeni öğrenci olarak katıldı."
+  - "Ege Ece'nin kuzeni ve başka bir okulda okuyor. Kerem Ege'nin yetişkin kuzeni, bankada çalışıyor."
+  - "İngilizce öğretmeni Murat Bey; 'Nur Hanım' bu evrende yok."
+  - "Bora dans edemiyordu; tavuk dansıyla Ü1 dans yarışmasını kazandı. Ardından cumartesileri gizlice dans kursuna gitti; sırrı Kaan ifşa etti (Ü1 G11). Artık sır değil, alay konusu da değil."
+  - "Bora Ü1 G4'te partiye geç kaldı (yaşlı komşunun çantaları) ama pastayı getirdi: sözünü tuttu."
+  - "Kaan–Bora kavgası futbol maçı + sır ifşası yüzünden (Ü1 G10–11); cips ve kulaklık paylaşarak barıştılar (G12)."
+  - "Ece'nin deneme pastası 'şapkaya benziyordu' (Selin, Ü1 G3)."
+  - "Ece ile Selin anaokulundan beri arkadaş; Duru Ece'ye 'en eski arkadaşım' dedi."
+  - "Bora'nın annesi hemşire (Ü1 G13)."
+  - "Bilim fuarında grup volkan yaptı; köpük Murat Bey'in ayakkabılarını ıslattı (Ü1 G9)."
+  - "Ü1 gezisi: bilim merkezi + lunapark; Kaan ilk kez herkesten önce otobüsteydi (Ü1 G17)."
+  - "Ü2 anket ekipleri: Ece–Selin–Elif · Kaan–Bora–Duru."
+  - "Grup: Duru (gitar) + Elif (vokal). Bora Ü2 G4'ten beri grubun fotoğrafçı üyesi, Ü2 G7'de davulcu olmayı kabul etti ('Me? On drums? OK, why not!'); o günden beri grubun davulcusu sayılır. Klavyeci yok."
+  - "Grubun türü: pop-rock uzlaşması; ilk şarkı 'pure rock' (Ü2 G4). Provalar cumartesi öğleden sonra Duru'nun evinde. Grup adı yalnız bir soru kökünde 'The Sleepy Cats' olarak geçti (u02d04, kesinleşmedi)."
+  - "Kaan City Gym'e yazıldı (koç Cem Abi), pazartesi–çarşamba–cuma antrenman; 2 Aralık'ta okul basketbol takımı seçmeleri vardı — SONUCU HENÜZ YAZILMADI."
+  - "Bora cumartesi sabahları karate (Gül Hanım), pazar doğa yürüyüşü sever; bireysel sporcu."
+  - "Selin her gün 6.30'da kalkar; okula Ece'yle yürür; okul çıkışı babası 3.40'ta alır."
+  - "Elif'in hayran olduğu şarkıcı kurmaca Luna Ray; konseri iptal oldu (Ü2 G15)."
+  - "Ü2 G16 sunum: 40 öğrenciye soruldu; en rahatlatıcı etkinlik uyumak, en sevilen bilim kurgu; Kaan–Bora–Duru'nun grafiği ters yansıdı, Duru düzeltti."
+  - "Murat Bey 'Blue Planet' belgeselini ve tek başına Türkiye'yi gezen bir köpeği anlatan kitabı önerdi; Duru o kitabı okuyor."
+  - "Ece romantik komedi sever; Kaan ve çoğunluk bilim kurgu."
+  - "Okul formalı; serbest kıyafet günü bir istisnaydı."
+  # --- Ünite 3 (In the Kitchen) ile eklenenler
+  - "Kaan okul basketbol takımına yedek oyuncu olarak girdi (Ü3 G1; OT1 kapandı)."
+  - "Kantinci teyzenin adı Nazmiye; Junior Chef jürisindeydi. Bora'nın fırın sütlacı Ü3 finalinden sonra kantin menüsünde."
+  - "Bora, annesi (hemşire) erken çıktığı için yıllardır kahvaltısını kendisi yapıyor; omlet ustası. Annesinin gece nöbetlerinde dedesi (caz sever) gelir."
+  - "Junior Chef Contest (Ü3): takımlar Ece–Selin–Elif / Kaan–Bora–Duru; kızartma yasak; Kaan takımı Duru'nun annesinin İzmir köftesi + Bora'nın sütlacı, Ece takımı limonlu tavuk + Ece'nin katlı pastası (Selin'in babaannesinin ev yapımı dondurmasıyla). Ödüller: Best Flavour → Ece takımı, Best Teamwork → Kaan takımı. Sürpriz jüri: okul müdürü."
+  - "Ece'nin pastası yine şapkaya benzedi; 'lucky hat' takımın maskotu oldu. Ece ilk gülen oldu."
+  - "Duru acıya dayanamıyor ('I MIND! It's too spicy!'). Murat Bey her gün çok bitter çikolata yer; kuralı: 'never use the oven without an adult'."
+  - "Kaan Ü3'te zamanlayıcı kurmayı öğrendi ve alışkanlık edindi; finalde fırın kapağını erken açmadı."
+  - "Selin'in babaannesi dedeyle aynı evde yaşar, bahçesinde vişne var, ölçmeden yapar ('The eyes measure, the hands know'). Selin finalde ilk kez doğaçlama yaptı (limon yerine portakal)."
+  - "Ege kendini 'food critic' ilan etti; finalde Bora'nın ev yapımı yemeğini beğendi."
+  - "Ü3 kancası: parkın karşısındaki pastanenin sahibi grubun videosunu gördü, konser için arayacak (Ü4)."
+  # --- Ünite 4 (On the Phone) ile eklenenler
+  - "Ece grubun menajeri (Ü4 G1; OT5 kapandı). Grup: Duru gitar, Elif vokal, Bora davul; adı 'Wrong Number' (Ü4 G10; OT4 kapandı), Bora'nın yanlış numarasının şerefine."
+  - "Bora'nın davulu: Ahmet Amca'nın garajda kırk yıl duran eski seti, ödünç (Ü4 G6; OT6 kapandı)."
+  - "Sevim Hanım parkın karşısındaki pastaneyi işletir; pastane küçük bir zincire bağlı. Genel merkez: müdür Aydın Bey (dahili 214), depo Hasan Bey (dahili 14), rezervasyon dahili 30."
+  - "Nermin Teyze: Bora'nın yanlış numarayla ulaştığı yaşlı teyze, grubun ilk hayranı; torunu Arda. Bora'ya 'karate boy' der."
+  - "İlk konser: yarıyıl tatilinin son cumartesi saat 19.00'da pastanede; gruptan hesap alınmadı. Konser videosu internette çok izlendi (Ü5 kancası)."
+  - "Yarıyıl tatilinin ilk haftası Ece Bursa'daki teyzesinde, Selin Urla'da babaannesiyle dedesindeydi. Elif'in kuzeni Ankara'ya taşındı; pazarları telefonlaşırlar."
+  - "Kaan hâlâ yedek; maçları cumartesi 14.00. Ü4 finalinde söz verdiği saatte geri aradı. Duru Ü4 G9'da ilk kez bir arkadaşını kendisi aradı."
+  - "Duru'nun kırmızı hoparlörü (internetten; yanlış renk ve bozuk gelen değiştirildi)."
+  # --- Ünite 5 (The Internet) ile eklenenler
+  - "Grubun kanalı: ClipTube'da wrongnumber_band; yöneten Ece (şifre yalnız onda). İlk abone Nermin_Teyze, ilk yorum Arda_10, dede JazzGrandpa55 ('Add some jazz!'). Ü5 sonunda 3.400 abone; en çok izlenen video kusurlu canlı prova."
+  - "Kaan'ın hesabı yazım hatasıyla 'Kana' adıyla açıldı. Kaan'ın kuralı: 'first search, then share' (sahte kar haberinden sonra)."
+  - "Bora'nın hesabı bora_drums; sahte DrumKing_Official hesabının 'bedava davul seti' bağlantısıyla ele geçirildi, Bora bahane uydurmadan söyledi ve annesiyle geri aldı. Şifre zinciri mycat123 → mydog123 → isim içermeyen güçlü şifre (Bora'nın kedisi yine YOK)."
+  - "Bora'nın kendi bagetleri var: DrumStar'dan Star Sticks (indirimli, iade edilemez; kartı annesi kullandı). Davul seti hâlâ Ahmet Amca'nın."
+  - "Ü5 G9: Elif'e kırıcı bir yorum geldi; grup cevap vermedi, raporladı, Murat Bey'e ve Elif'in annesine söyledi. Dünyadan destek geldi; Elif Kanadalı blogger/vlogger Mia ile (annesinin onayıyla, kişisel bilgi vermeden) arkadaş oldu."
+  - "Safer Internet Week rehberleri: Kaan takımı 'Five Rules from a Boy Who Clicked', Ece takımı 'Stay safe, stay smart'. Ece ücretli bir reklam teklifini kibarca reddetti."
+  - "Ü5 kancası: Murat Bey baharda iki günlük doğa kampını duyurdu; veliler internetten gidiş-dönüş otobüs bileti alacak."
+  # --- Ünite 6 (Adventures) ile eklenenler
+  - "Bahar kampı (Spring Adventure Camp): cuma–cumartesi, eğitmen Deniz Hoca (ilk yardım ve tırmanma yeterliliği, yamaç paraşütü pilotu). Murat Bey'in onuncu kampı."
+  - "Kampta Bora 12 metrelik tırmanma duvarının tepesine çıkıp zili çaldı ('I'm scared' dedi, yine de denedi); Selin zip-line'a ilk bindi; Duru gece yürüyüşünde yönü buldu; Elif'in kamp ateşi şarkısı grubun ritüeli oldu."
+  - "Adrenalin testi puanları: Kaan 10, Bora 5, Ece 4, Selin 2, Duru 0. Murat Bey üniversitede tüplü dalış yapmış."
+  - "Ü6 kancası: Nisan'da yurt dışından ortak bir sınıf İzmir'e geliyor; grup rehber olacak, tur bir cumartesi 10.00'da (misafirlerin ülkesi henüz söylenmedi)."
+
+open_threads:   # yazılmış ama kapanmamış iplikler — sezon planı bunları kullanır
+  - id: OT1
+    konu: "Kaan'ın basketbol seçme sonucu (2 Aralık)"
+    oneri: "Ü3 G1 açılışında sonuç: yedek oyuncu olarak takımda (season.yaml)"
+  - id: OT2
+    konu: "Bora'nın dans gösterisi ('next Saturday', u01d12 s25) hiç gösterilmedi"
+    oneri: "Ü10 finali / okul yıl sonu gösterisinde nihayet sahnede (season.yaml)"
+  - id: OT3
+    konu: "Ü1 hafta sonu pikniği (şehir parkı) ve Ü2 G16 kutlama pikniği yazılmadı"
+    oneri: "Geçmişte olmuş sayılabilir; ayrıntı uydurmadan anılabilir"
+  - id: OT4
+    konu: "Grubun adı ve ilk sahne deneyimi"
+    oneri: "Ü4'te ilk mini konser; ad o zaman kesinleşir"
+  - id: OT5
+    konu: "Ece Ü1 G15'te gruba şarkıcı olarak katılmayı kabul etti, Ü2'de hiç anılmadı"
+    oneri: "Ü4'te tek satırla çöz: Ece grubun menajeri/organizatörü olur (karakterine uygun)"
+  - id: OT6
+    konu: "Bora'nın davul çalıp çalmadığı/davulu olup olmadığı yazılmadı"
+    oneri: "Ü3–Ü4'te tencere-tava 'davul' esprisi → Ü4 konserinde gerçek davul"

@@ -1,0 +1,310 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 8
+status: draft
+title: "Hafta sonu planı"
+est_minutes: 10
+characters: [Ece, Kaan, Selin, Bora, Duru, Elif]
+new_items: [U1-006, U1-024, U1-018, U1-014, U1-010, U1-023]
+
+story:
+  - id: s01
+    text: "Cuma akşamı. Ece sınıf grubuna bir anket attı: \"<en>Weekend plan! Cinema or picnic? 🎬🧺</en>\""
+  - id: s02
+    text: "İlk mesaj, her zamanki gibi Kaan'dan geldi: \"<en>{U1-006|Do you want to} see the new superhero film? It starts at three!</en>\""
+  - id: s03
+    text: "Selin: \"<en>{U1-024|What about} a picnic? It will be sunny on Saturday.</en>\""
+  - id: s04
+    text: "Plan kraliçesi Ece: \"<en>{U1-024|What about} both? Cinema at ten, picnic at one, ice cream at four!</en>\" Kaan: \"<en>Ece, it's a weekend, not a school day!</en>\""
+  - id: s05
+    text: "Bora: \"<en>I {U1-018|prefer} the picnic. Cinema tickets are expensive, and I can make sandwiches.</en>\""
+  - id: s06
+    text: "Kaan: \"<en>I {U1-018|prefer} the cinema. Popcorn! Big screen! No ants!</en>\""
+  - id: s07
+    text: "Herkes Duru'yu bekledi. Duru'nun mesajı tam dört dakika sonra geldi."
+  - id: s08
+    text: "Duru: \"<en>{U1-014|It doesn't matter}. Blanket or cinema seat, both are soft.</en>\""
+  - id: s09
+    text: "Ece güldü: \"<en>Duru, you are the most {U1-079|laid-back} person in this group!</en>\""
+  - id: s10
+    text: "Elif: \"<en>{U1-010|I would like to} come too! Is that OK?</en>\" Ece: \"<en>Of course! {U1-006|Do you want to} bring Pamuk? Fıstık can come too!</en>\""
+  - id: s11
+    text: "Elif: \"<en>{U1-023|That would be great}! Pamuk loves picnics.</en>\""
+  - id: s12
+    text: "Kaan isyan etti: \"<en>This isn't {U1-071|fair}! Dogs can't watch films, so now everybody wants a picnic!</en>\""
+  - id: s13
+    text: "Selin: \"<en>Let's vote. That's the {U1-071|fair} way.</en>\""
+  - id: s14
+    text: "Sonuç: piknik 5, sinema 1. Tek sinema oyunun kime ait olduğunu bulmak hiç zor değildi."
+  - id: s15
+    text: "Kaan: \"<en>OK… {U1-010|I would like to} see the film with someone. Bora?</en>\" Bora: \"<en>Sorry, {U1-028|buddy}. I {U1-018|prefer} sandwiches.</en>\""
+  - id: s16
+    text: "Ece, Kaan'ı yalnız bırakmadı: \"<en>Kaan, {U1-024|what about} the cinema next weekend? All of us!</en>\" Kaan: \"<en>{U1-023|That would be great}!</en>\""
+  - id: s17
+    text: "Elif: \"<en>Kaan is so {U1-084|outgoing}. At the picnic, he will make friends with the ducks!</en>\" Kaan: \"<en>Challenge accepted! 🦆</en>\""
+  - id: s18
+    text: "Sonra sıra yiyeceklere geldi. Bora: \"<en>{U1-010|I would like to} make my famous sandwiches. Five for each person!</en>\""
+  - id: s19
+    text: "Selin: \"<en>Five? Bora, we will be {U1-099|stuffed}!</en>\" Bora: \"<en>That's the plan.</en>\""
+  - id: s20
+    text: "Duru: \"<en>I'll be {U1-097|full} after one. Then I'll sleep on the blanket.</en>\""
+  - id: s21
+    text: "Ece: \"<en>Should I ask my cousin Ege too?</en>\" Kaan: \"<en>Only if he shares his chips. At your party he was so {U1-083|mean}!</en>\""
+  - id: s22
+    text: "Selin: \"<en>He apologised, Kaan. So, Saturday or Sunday, Duru?</en>\" Duru: \"<en>{U1-014|It doesn't matter}. Every day is a lazy day for me.</en>\""
+  - id: s23
+    text: "Bora: \"<en>Duru's answer to every question: '{U1-014|It doesn't matter}.'</en>\""
+  - id: s24
+    text: "Bora: \"<en>Duru, {U1-006|do you want to} play the guitar at the picnic?</en>\" Duru: \"<en>Only lying down.</en>\""
+  - id: s25
+    text: "Sonunda Selin, babasının herkesi arabayla parka götürebileceğini yazdı. Grup tek ses oldu: \"<en>{U1-023|That would be great}!</en>\""
+  - id: s26
+    text: "Ece planı sabitledi: \"<en>Saturday, 11 o'clock, the city park. Don't be late, Kaan!</en>\" Kaan: \"<en>Me? Late? Never!</en>\" Kimse inanmadı."
+
+scene:
+  - id: c01
+    speaker: Kaan
+    text: "<en>Do you want to go to the cinema on Saturday?</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>I prefer a picnic. What about the city park?</en>"
+  - id: c03
+    speaker: Duru
+    text: "<en>It doesn't matter to me. I would like to sleep on a blanket.</en>"
+  - id: c04
+    speaker: Elif
+    text: "<en>A picnic with our dogs? That would be great!</en>"
+
+steps:
+  - item: U1-006
+    sezdir:
+      id: d08-006-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"Do you want to …?\" ne anlama geliyordu?"
+      options: ["… ister misin?", "… zorunda mısın?", "… yaptın mı?", "… nefret eder misin?"]
+      answer: 0
+    kullan:
+      id: d08-006-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: ________ play basketball with us after school?\nB: Sure, I'd love to!</en>"
+      options: ["Do you want to", "Why did you", "Where did you", "How often do you"]
+      answer: 0
+    sina:
+      id: d08-006-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>What can Ece say to Elif?</en>"
+      stem: "<en>Ece is going to the park with her dog. She wants Elif to come with her.</en>"
+      options: ["Do you want to come to the park with me?", "Did you go to the park yesterday?", "Where is your dog?", "Why are you at the park?"]
+      answer: 0
+  - item: U1-024
+    sezdir:
+      id: d08-024-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"What about …?\" ne anlama geliyordu?"
+      options: ["Peki ya …? / … ne dersin?", "… nerede?", "… ne zaman?", "… kimin?"]
+      answer: 0
+    kullan:
+      id: d08-024-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: I don't want to watch a film today.\nB: OK. ________ a picnic?</en>"
+      options: ["What about", "Who is", "Why was", "How much is"]
+      answer: 0
+    sina:
+      id: d08-024-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Kaan: I'm bored. What can we do?\nSelin: ________\nKaan: Good idea! Let's go.</en>"
+      options: ["What about playing basketball?", "I'm not bored.", "Where were you yesterday?", "I have a lot of homework."]
+      answer: 0
+  - item: U1-018
+    sezdir:
+      id: d08-018-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"prefer\" ne anlama geliyordu?"
+      options: ["tercih etmek", "nefret etmek", "unutmak", "satın almak"]
+      answer: 0
+    kullan:
+      id: d08-018-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Bora likes films, but he ________ picnics. He thinks they're more fun.</en>"
+      options: ["prefers", "hates", "forgets", "breaks"]
+      answer: 0
+    sina:
+      id: d08-018-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which of the following is TRUE about Selin?</en>"
+      stem: "<en>Selin: The cinema is OK, but picnics are better for me. I love being outside in the sun.</en>"
+      options: ["She prefers picnics to the cinema.", "She prefers the cinema to picnics.", "She doesn't like being outside.", "She hates the cinema."]
+      answer: 0
+  - item: U1-014
+    sezdir:
+      id: d08-014-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"It doesn't matter.\" ne anlama geliyordu?"
+      options: ["Fark etmez.", "Kesinlikle hayır.", "Çok yoruldum.", "Hemen geliyorum."]
+      answer: 0
+    kullan:
+      id: d08-014-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Pizza or burger? Which one do you want?\nB: ________ I like both.</en>"
+      options: ["It doesn't matter.", "Sorry, I can't.", "That's not fair.", "I hate both."]
+      answer: 0
+    sina:
+      id: d08-014-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What does Duru mean?</en>"
+      stem: "<en>Duru: Cinema or picnic? I'm happy with both. You choose!</en>"
+      options: ["It doesn't matter to her.", "She prefers the cinema.", "She prefers the picnic.", "She doesn't want to come."]
+      answer: 0
+  - item: U1-010
+    sezdir:
+      id: d08-010-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"I would like to …\" ne anlama geliyordu?"
+      options: ["… isterim.", "… yapamam.", "… yaptım.", "… sevmem."]
+      answer: 0
+    kullan:
+      id: d08-010-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Would you like to join us at the picnic?\nB: Yes, ________ come. Thank you!</en>"
+      options: ["I would like to", "I don't want to", "I can't", "I refuse to"]
+      answer: 0
+    sina:
+      id: d08-010-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"I would like to visit the science museum.\" Which one is CLOSEST in meaning?</en>"
+      options: ["I want to visit the science museum.", "I visited the science museum.", "I don't want to visit the science museum.", "I have to visit the science museum."]
+      answer: 0
+  - item: U1-023
+    sezdir:
+      id: d08-023-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"That would be great.\" ne anlama geliyordu?"
+      options: ["Harika olur.", "Hiç sanmıyorum.", "Çok kötü olur.", "Belki sonra."]
+      answer: 0
+    kullan:
+      id: d08-023-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: I can help you with your English homework.\nB: Really? ________ Thanks!</en>"
+      options: ["That would be great.", "That's not fair.", "It doesn't matter.", "Sorry, I can't."]
+      answer: 0
+    sina:
+      id: d08-023-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Selin: My dad can drive us to the park on Saturday.\nEce: ________</en>"
+      options: ["That would be great! Thanks!", "That's not fair!", "I'm stuffed, thanks.", "Why are you so mean?"]
+      answer: 0
+
+review:
+  - id: d08-r01
+    type: gap_fill
+    item: U1-039
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Hi Mum! Let me ________ my new classmate. This is Elif.</en>"
+    options: ["introduce", "refuse", "apologise", "prefer"]
+    answer: 0
+  - id: d08-r02
+    type: gap_fill
+    item: U1-038
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Elif loves animals and wants to be a vet. She is very ________ animals.</en>"
+    options: ["interested in", "bored with", "afraid of", "angry with"]
+    answer: 0
+  - id: d08-r03
+    type: situation
+    item: U1-036
+    prompt: "<en>What can we say about Duru and Elif?</en>"
+    stem: "<en>Duru: Elif and I both play the guitar, love dogs and hate early mornings.</en>"
+    options: ["They have a lot in common.", "They have nothing in common.", "They argue a lot.", "They are sisters."]
+    answer: 0
+  - id: d08-r04
+    type: synonym
+    item: U1-034
+    prompt: "<en>\"Kaan gets on well with everyone.\" Which one is CLOSEST in meaning?</en>"
+    options: ["Everyone likes Kaan, and he likes everyone.", "Kaan argues with everyone.", "Kaan is always late.", "Kaan doesn't know anyone."]
+    answer: 0
+  - id: d08-r05
+    type: dialogue_complete
+    item: U1-042
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: I think this film is boring.\nB: Me too! We have the ________.</en>"
+    options: ["same opinion", "different opinion", "same excuse", "same invitation"]
+    answer: 0
+  - id: d08-r06
+    type: gap_fill
+    item: U1-029
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>At break time, Duru and Elif sat in the garden and ________ about their dogs.</en>"
+    options: ["chatted", "slept", "cooked", "swam"]
+    answer: 0
+  - id: d08-r07
+    type: dialogue_complete
+    item: U1-026
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece: ________\nElif: I'd love to! What time does it start?\nEce: At three o'clock.</en>"
+    options: ["Would you like to come to my party?", "Did you like my party?", "Where is your house?", "Are you tired?"]
+    answer: 0
+  - id: d08-r08
+    type: message_infer
+    item: U1-012
+    lgs_like: true
+    prompt: "<en>Which information is NOT in the invitation?</en>"
+    stem: "<en>Dear Selin,\nPlease come to our picnic on Saturday at 11 o'clock in the city park. Bring your favourite snack!\nEce</en>"
+    options: ["Ece's home address", "the day of the picnic", "the place of the picnic", "the time of the picnic"]
+    answer: 0
+  - id: d08-r09
+    type: message_infer
+    item: U1-001
+    lgs_like: true
+    prompt: "<en>What did Bora do?</en>"
+    stem: "<en>Bora: Thanks for the invitation, Ece! Of course I'll come to the picnic. I'll bring sandwiches!</en>"
+    options: ["He accepted the invitation.", "He refused the invitation.", "He invited Ece to a party.", "He apologised to Ece."]
+    answer: 0
+
+tips:
+  - type: mini_dilbilgisi
+    refs: [U1-006]
+    text: "Do you want to …? ve Would you like to …? ikisi de davet. Do you want to arkadaşlar arasında daha gündelik; Would you like to daha kibar. İkisinden sonra da fiil yalın gelir: \"Do you want to come?\""
+  - type: mini_dilbilgisi
+    refs: [U1-024]
+    text: "What about + isim ya da -ing: \"What about a picnic?\" · \"What about going to the park?\" How about ile aynı şekilde kullanılır."
+  - type: tuzak
+    refs: [U1-018]
+    text: "prefer A to B: \"I prefer picnics to films.\" Karşılaştırırken than değil, to kullanılır!"
+  - type: lgs_taktigi
+    refs: [U1-023, U1-014, U1-010]
+    text: "Teklife \"That would be great!\" ya da \"I would like to…\" diyen kabul ediyor. \"It doesn't matter.\" diyen ise seçimi size bırakıyor: ne kabul ne red, ikisi de olur."
+
+coach:
+  start: "Hafta sonu geliyor! Sinema mı, piknik mi? Grup ikiye bölünüyor 🍿🧺"
+  end_good: "Süper! Artık hafta sonu planı yapmak için gereken her cümle sende. Sıra patlamış mısırda 🍿"
+  end_mixed: "İyi gidiyorsun! {weak} biraz ters köşe yaptı ama yarın tekrar soracağım."
+
+notifications:
+  morning: "Sinema mı, piknik mi? Kaan'ın tek bir derdi var: karıncalar 🐜"
+  evening: "Duru her soruya aynı şeyi söylüyor. Ne mi? Bugünkü derste, 10 dakika."
+  review: "Tek soru: \"It doesn't matter.\" diyen biri sinemayı mı seçiyor, pikniği mi?"
+
+editor:
+  z07: {U1-006: BEKLIYOR, U1-024: BEKLIYOR, U1-018: BEKLIYOR, U1-014: BEKLIYOR, U1-010: BEKLIYOR, U1-023: BEKLIYOR}

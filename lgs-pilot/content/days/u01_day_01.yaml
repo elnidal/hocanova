@@ -1,0 +1,241 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 1
+status: draft
+title: "Ece'nin partisi: mesaj gönderildi"
+est_minutes: 9
+characters: [Ece, Kaan, Duru, Bora, Selin, Ece'nin annesi]
+new_items: [U1-026, U1-008, U1-013, U1-012, U1-001, U1-011]
+
+story:
+  - id: s01
+    text: "Cumartesi Ece'nin doğum günü ve Ece bu yıl ilk kez evde parti verecek."
+  - id: s02
+    text: "Akşam sınıf grubuna rengârenk bir {U1-012|INVITATION} attı: üstünde balonlar, saat ve adres vardı."
+  - id: s03
+    text: "Altına da yazdı: \"<en>I want to {U1-013|invite} all my friends!</en>\""
+  - id: s04
+    text: "Kaan her zamanki gibi koşarak eve giderken telefonuna baktı; {U1-012|INVITATION}'ı görünce sevinçten az kalsın direğe çarpıyordu."
+  - id: s05
+    text: "Ece ona ayrıca özel mesaj attı: \"<en>{U1-026|Would you like to} come early and help me?</en>\""
+  - id: s06
+    text: "Kaan hiç düşünmeden cevap verdi: \"<en>Yes! {U1-011|I'd love to}!</en>\""
+  - id: s07
+    text: "Duru ise mesajı üç saat sonra gördü; kanepede uzanmış, cips yiyordu."
+  - id: s08
+    text: "Ece ona da yazdı: \"<en>{U1-026|Would you like to} bring your guitar?</en>\""
+  - id: s09
+    text: "Duru esnedi: \"<en>Hmm… my guitar is very heavy.</en>\""
+  - id: s10
+    text: "Ece pes etmedi: \"<en>{U1-008|How about} a small speaker?</en>\" Duru gülen bir surat gönderdi: \"<en>OK, I {U1-001|accept}!</en>\""
+  - id: s11
+    text: "Sonra Kaan grupta yeni bir fikir attı ortaya: \"<en>{U1-026|Would you like to} watch a film after the party?</en>\" Duru bu kez hemen yazdı: \"<en>{U1-011|I'd love to}!</en>\""
+  - id: s12
+    text: "Selin hemen yazdı: \"<en>{U1-011|I'd love to} come! See you on Saturday.</en>\""
+  - id: s13
+    text: "Grupta {U1-012|INVITATION}'ı gören herkes yazmaya başladı; liste uzadıkça Ece'nin gülümsemesi de büyüdü."
+  - id: s14
+    text: "Kaan grubu kahkahaya boğdu: \"<en>Ece, I {U1-001|accept} your {U1-012|invitation}. And I {U1-001|accept} the cake too!</en>\""
+  - id: s15
+    text: "Mutfakta annesi sordu: \"<en>Did your friends {U1-001|accept} the {U1-012|invitation}?</en>\""
+  - id: s16
+    text: "Ece başını salladı ve sordu: \"<en>Can I {U1-013|invite} our neighbour too?</en>\""
+  - id: s17
+    text: "Annesi gülümsedi: \"<en>Of course. {U1-013|Invite} everyone you love.</en>\""
+  - id: s18
+    text: "Bir tek Bora'dan ses yoktu. Ece ona da yazdı: \"<en>Bora, {U1-008|how about} you? Are you coming?</en>\""
+  - id: s19
+    text: "Bora'nın cevabı yalnızca üç noktaydı: \"...\" Kaan güldü: \"<en>{U1-008|How about} a bet? He won't come!</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Hi everyone! It's my birthday on Saturday. Would you like to come to my party?</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>I'd love to! How about a chocolate cake?</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>Thanks for the invitation! I accept. 🎉</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>Great… What time?</en>"
+
+steps:
+  - item: U1-026
+    sezdir:
+      id: d01-026-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"Would you like to …?\" ne anlama geliyordu?"
+      options: ["… ister misin? (davet)", "… yapmak zorunda mısın?", "… yaptın mı?", "… sevmez misin?"]
+      answer: 0
+    kullan:
+      id: d01-026-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ece: ________ come to my party on Saturday?</en>"
+      options: ["Would you like to", "Do you like", "Would you like", "Are you like to"]
+      answer: 0
+      explain: "Would you like to + fiil = davet. \"Do you like…?\" ise \"… sever misin?\" demektir."
+    sina:
+      id: d01-026-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Kaan: ________\nDuru: I'd love to! What time does it start?</en>"
+      options: ["Would you like to watch a film with us tonight?", "What did you watch last night?", "Do you like your new phone?", "Where were you yesterday?"]
+      answer: 0
+      explain: "Duru \"I'd love to\" diyerek bir daveti kabul ediyor; demek ki boşlukta bir davet var."
+  - item: U1-008
+    sezdir:
+      id: d01-008-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"How about …?\" ne anlama geliyordu?"
+      options: ["… ne dersin? / … nasıl olur?", "… ne zaman?", "… kimin?", "… ne kadar?"]
+      answer: 0
+    kullan:
+      id: d01-008-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: I'm so bored!\nB: ________ going to the cinema?</en>"
+      options: ["How about", "How much", "How old", "How many"]
+      answer: 0
+      explain: "How about + -ing (going) ya da isim (pizza): öneri yapar."
+    sina:
+      id: d01-008-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Selin doing in the message?</en>"
+      stem: "<en>Selin: The party is on Saturday. How about bringing some fruit juice?</en>"
+      options: ["giving a suggestion", "asking for homework help", "saying sorry", "talking about the weather"]
+      answer: 0
+      explain: "How about… = öneri (suggestion)."
+  - item: U1-013
+    sezdir:
+      id: d01-013-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"invite\" ne anlama geliyordu?"
+      options: ["davet etmek", "ziyaret etmek", "unutmak", "beklemek"]
+      answer: 0
+    kullan:
+      id: d01-013-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I want to ________ my friends to my birthday party.</en>"
+      options: ["invite", "invitation", "accept", "visit"]
+      answer: 0
+      explain: "invite fiildir (davet etmek); invitation isimdir (davet)."
+    sina:
+      id: d01-013-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which of the following is TRUE?</en>"
+      stem: "<en>Hi Kaan! I'm having a party on Friday. I'm inviting all our classmates. Can you come? – Ece</en>"
+      options: ["Ece is planning a party.", "Kaan is having a party.", "The party is on Saturday.", "Ece doesn't want her classmates at the party."]
+      answer: 0
+  - item: U1-012
+    sezdir:
+      id: d01-012-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"invitation\" ne anlama geliyordu?"
+      options: ["davet, davetiye", "doğum günü", "adres", "fotoğraf"]
+      answer: 0
+    kullan:
+      id: d01-012-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Thanks for the ________! I'll be there at 7.</en>"
+      options: ["invitation", "invited", "inviting", "accept"]
+      answer: 0
+      explain: "\"the\"dan sonra isim gelir: the invitation."
+    sina:
+      id: d01-012-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>According to the invitation, which of the following is NOT correct?</en>"
+      stem: "<en>INVITATION\nWhat: Ece's 14th birthday party\nWhen: Saturday, 3 p.m.\nWhere: Ece's house\nPlease reply by Thursday!</en>"
+      options: ["The party is on Thursday.", "Ece is going to be 14.", "The party is at Ece's house.", "Guests should reply before Friday."]
+      answer: 0
+      explain: "Parti cumartesi; perşembe cevap vermek için son gün."
+  - item: U1-001
+    sezdir:
+      id: d01-001-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"accept\" ne anlama geliyordu?"
+      options: ["kabul etmek", "reddetmek", "özür dilemek", "beklemek"]
+      answer: 0
+    kullan:
+      id: d01-001-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Thank you for the invitation. I'm happy to ________ it!</en>"
+      options: ["accept", "refuse", "invite", "forget"]
+      answer: 0
+    sina:
+      id: d01-001-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Kaan accepts the invitation. Which one completes the dialogue?</en>"
+      stem: "<en>Ece: Would you like to come to my party?\nKaan: ________ What should I bring?</en>"
+      options: ["Sure, I'd love to.", "Sorry, I'm busy.", "No, I can't.", "Maybe next year."]
+      answer: 0
+  - item: U1-011
+    sezdir:
+      id: d01-011-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"I'd love to\" ne anlama geliyordu?"
+      options: ["Çok isterim.", "Hiç istemem.", "Bilmiyorum.", "Unuttum."]
+      answer: 0
+    kullan:
+      id: d01-011-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Would you like to come to the concert with us?\nB: Yes, ________! Thanks for asking.</en>"
+      options: ["I'd love to", "I love", "I'd like", "I don't"]
+      answer: 0
+      explain: "\"I'd love to\" cümlesinin sonundaki to'yu atma: I'd love to (come)."
+    sina:
+      id: d01-011-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Ece: How about going to the park on Sunday?\nDuru: ________ I'll bring some snacks.</en>"
+      options: ["I'd love to!", "I'm sorry, I can't.", "I don't like parks.", "I went there yesterday."]
+      answer: 0
+      explain: "Arkasından \"I'll bring some snacks\" geliyor: Duru geliyor, yani kabul ediyor."
+
+review: []
+
+tips:
+  - type: mini_dilbilgisi
+    refs: [U1-026, U1-008]
+    text: "Would you like TO + fiil: Would you like to come? · How about + -ing ya da isim: How about coming? How about pizza?"
+  - type: kelime_ailesi
+    refs: [U1-013, U1-012]
+    text: "-tion / -sion ekleri fiili isme çevirir: invite → invitation, celebrate → celebration, decide → decision."
+  - type: tuzak
+    refs: [U1-011]
+    text: "\"I'd love to, but…\" ile başlayan cümle aslında kibar bir RED: \"I'd love to, but I have a test tomorrow.\" LGS'de sık çıkar; \"but\"tan sonrasına bak."
+  - type: lgs_taktigi
+    refs: [U1-001, U1-011]
+    text: "Davet diyaloğunda boşluktan SONRAKİ cümleye bak. \"What should I bring?\" geliyorsa kabul, \"Maybe next time\" geliyorsa red var."
+
+coach:
+  start: "Hoş geldin! Bugün 6 ifade var, 9 dakikanı alır. Ece parti veriyor ama Bora'dan ses yok… 👀"
+  end_good: "Harika başladın! Davet etmeyi ve kabul etmeyi artık biliyorsun. Yarın: Bora'nın bahaneleri."
+  end_mixed: "İyi iş! {weak} biraz kafa karıştırdı, merak etme: yarın onu tekrar soracağım."
+
+notifications:
+  morning: "Ece bir parti veriyor ve seni de çağırıyor 🎈 Bugünün 6 ifadesi hazır."
+  evening: "Bugünkü dersin 9 dakika. Ece hâlâ Bora'nın cevabını bekliyor…"
+  review: "Tek soru: \"I'd love to!\" diyen biri daveti kabul mü ediyor, reddediyor mu?"
+
+editor:
+  z07: {U1-026: BEKLIYOR, U1-008: BEKLIYOR, U1-013: BEKLIYOR, U1-012: BEKLIYOR, U1-001: BEKLIYOR, U1-011: BEKLIYOR}

@@ -1,0 +1,322 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 14
+status: draft
+title: "Dergideki test"
+est_minutes: 10
+characters: [Elif, Kaan, Selin, Ece, Bora, Duru, Murat Bey]
+new_items: [U1-069, U1-080, U1-085, U1-086, U1-087, U1-093]
+
+story:
+  - id: s01
+    text: "Pazartesi teneffüsü. Elif çantasından renkli bir dergi çıkardı ve masaya koydu: \"<en>Look! A quiz: What kind of friend are you?</en>\""
+  - id: s02
+    text: "Kaan dergiyi kaptı: \"<en>Is it about {U1-087|personality}? I love these tests!</en>\""
+  - id: s03
+    text: "Elif açıkladı: \"<en>Yes. You answer ten questions, and it tells you your {U1-087|personality} type.</en>\""
+  - id: s04
+    text: "Selin ilk soruyu yüksek sesle okudu: \"<en>Question one: Which {U1-086|personal trait} is the most important in a friend?</en>\""
+  - id: s05
+    text: "Ece hiç düşünmeden cevapladı: \"<en>Easy! A good friend never {U1-065|tells lies}.</en>\" Kaan bir an kızardı; geçen haftaki ödev olayını herkes hatırlıyordu."
+  - id: s06
+    text: "Kaan iki elini havaya kaldırdı: \"<en>OK, OK! I {U1-058|promise}: no more {U1-056|lies}!</en>\""
+  - id: s07
+    text: "Bora kolunu dürttü: \"<en>And no more {U1-066|telling my secrets to others}, please!</en>\""
+  - id: s08
+    text: "Kaan elini kalbine koydu: \"<en>Your {U1-062|secret} is safe with me now. Really!</en>\" Bora gözlerini devirdi ama gülüyordu."
+  - id: s09
+    text: "Selin ciddi bir sesle ekledi: \"<en>{U1-053|Dishonesty} hurts friendships. Good {U1-086|personal traits} make good friends.</en>\""
+  - id: s10
+    text: "Elif sayfayı çevirdi: \"<en>Question two: Choose a friend and answer. What is he or she {U1-080|like}?</en>\" Kaan parmağını hemen Duru'ya doğrulttu: \"<en>What is Duru {U1-080|like}? Easy!</en>\""
+  - id: s11
+    text: "Duru o anda sınıfın köşesinde, başını kollarına koymuş, gözlerini kapatmıştı. Kaan duvara top çarptı, zil çaldı; Duru kılını bile kıpırdatmadı."
+  - id: s12
+    text: "Kaan devam etti: \"<en>Look at her! Nothing worries her. She's always so {U1-069|calm}.</en>\""
+  - id: s13
+    text: "Duru tek gözünü açtı: \"<en>I'm not sleeping. I'm just {U1-069|calm}. There's a difference.</en>\""
+  - id: s14
+    text: "Elif kahkahayı bastı: \"<en>Duru is {U1-080|like} a cat in the sun!</en>\""
+  - id: s15
+    text: "Sonraki isim Selin'di. Ece geçen yılı anlattı: Selin, Ece'nin küçük kardeşine matematik öğretmişti. Çocuk aynı soruyu tam on iki kez yanlış yapmış, Selin on ikisinde de gülümseyerek baştan anlatmıştı."
+  - id: s16
+    text: "Ece: \"<en>Selin never gets angry. She waits and explains again. She's very {U1-085|patient}.</en>\""
+  - id: s17
+    text: "Bora iç çekti: \"<en>I'm not {U1-085|patient} at all. I can't wait two minutes for the microwave!</en>\""
+  - id: s18
+    text: "Kaan sordu: \"<en>And what is Ece {U1-080|like}?</en>\" Bora cevap vermeden önce bir an düşündü. Geçen hafta Kaan'la kavga ettiğinde Ece ikisini de dinlemiş, kimseyi suçlamamıştı."
+  - id: s19
+    text: "Bora: \"<en>Ece listens to everyone. When I was sad, she didn't ask a hundred questions. She was so {U1-093|understanding}.</en>\""
+  - id: s20
+    text: "Kaan başını salladı: \"<en>True! She's {U1-093|understanding}. Even after my {U1-056|lie}, she didn't shout. She gave me a second chance.</en>\""
+  - id: s21
+    text: "Tam o anda Murat Bey içeri girdi ve masadaki dergiyi gördü: \"<en>A {U1-087|personality} test? Can I join?</en>\""
+  - id: s22
+    text: "Elif sevindi: \"<en>Of course! Last question: Which {U1-086|personal trait} do you want to have?</en>\""
+  - id: s23
+    text: "Murat Bey biraz düşündü: \"<en>I want to be more {U1-085|patient}. I have five classes today!</en>\" Bütün sınıf güldü."
+  - id: s24
+    text: "Test sonuçları geldi: Duru \"<en>The {U1-069|Calm} Friend</en>\", Ece \"<en>The {U1-093|Understanding} Friend</en>\" çıktı."
+  - id: s25
+    text: "Kaan merakla sordu: \"<en>And me? What does it say about me?</en>\" Elif okudu: \"<en>Talks a lot, but has a big heart.</en>\""
+  - id: s26
+    text: "Kaan gururla göğsünü kabarttı: \"<en>That's my {U1-087|personality}! And I {U1-058|promise}: I'll talk a little less.</en>\" Kimse ona inanmadı."
+
+scene:
+  - id: c01
+    speaker: Elif
+    text: "<en>Question two: What is Duru like?</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>She's very calm. Nothing worries her.</en>"
+  - id: c03
+    speaker: Ece
+    text: "<en>And Selin is patient. She never gets angry when she explains things.</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>Ece is understanding. She always listens to us.</en>"
+  - id: c05
+    speaker: Selin
+    text: "<en>Good personal traits make good friends!</en>"
+
+steps:
+  - item: U1-069
+    sezdir:
+      id: d14-069-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"calm\" ne anlama geliyordu?"
+      options: ["sakin", "sinirli", "meşgul", "kaba"]
+      answer: 0
+    kullan:
+      id: d14-069-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't shout, please. Take a deep breath and stay ________.</en>"
+      options: ["calm", "angry", "noisy", "busy"]
+      answer: 0
+    sina:
+      id: d14-069-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Defne best?</en>"
+      stem: "<en>The fire alarm rang during the exam. Everyone ran and screamed, but Defne walked out slowly and quietly. She wasn't afraid at all.</en>"
+      options: ["calm", "nervous", "lazy", "mean"]
+      answer: 0
+  - item: U1-080
+    sezdir:
+      id: d14-080-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"What is Duru like?\" ne anlama geliyordu?"
+      options: ["Duru nasıl biri?", "Duru neyi sever?", "Duru nerede?", "Duru'yu sever misin?"]
+      answer: 0
+    kullan:
+      id: d14-080-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: What is your new teacher ________?\nB: She's calm and patient. We all love her.</en>"
+      options: ["like", "likes", "look", "love"]
+      answer: 0
+    sina:
+      id: d14-080-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>A: ________\nB: He's outgoing and very understanding. Everyone loves him.</en>"
+      options: ["What is your brother like?", "What does your brother like?", "Where is your brother?", "How old is your brother?"]
+      answer: 0
+      explain: "Cevap kişiliği anlatıyor; bunu \"What is he like?\" sorar. \"What does he like?\" neyi sevdiğini sorar."
+  - item: U1-085
+    sezdir:
+      id: d14-085-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"patient\" ne anlama geliyordu?"
+      options: ["sabırlı", "hasta", "aceleci", "kızgın"]
+      answer: 0
+      explain: "patient sıfat olarak \"sabırlı\"; isim olarak \"hasta\" (doktorun hastası) demektir. Hikâyede Selin'i anlatıyor."
+    kullan:
+      id: d14-085-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Learning to play the guitar takes a long time. You must be ________.</en>"
+      options: ["patient", "lazy", "mean", "full"]
+      answer: 0
+    sina:
+      id: d14-085-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which word describes Ms Aydın?</en>"
+      stem: "<en>Our teacher, Ms Aydın, never gets angry. When we don't understand a topic, she waits and explains it again and again.</en>"
+      options: ["patient", "unreliable", "mean", "outgoing"]
+      answer: 0
+  - item: U1-086
+    sezdir:
+      id: d14-086-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"personal trait\" ne anlama geliyordu?"
+      options: ["kişilik özelliği", "kişisel eşya", "kişisel bilgi", "özel ders"]
+      answer: 0
+    kullan:
+      id: d14-086-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Honesty is the most important ________ in a friend for me.</en>"
+      options: ["personal trait", "birthday party", "phone number", "excuse"]
+      answer: 0
+    sina:
+      id: d14-086-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which one is NOT a personal trait?</en>"
+      options: ["birthday", "patient", "calm", "honest"]
+      answer: 0
+  - item: U1-087
+    sezdir:
+      id: d14-087-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"personality\" ne anlama geliyordu?"
+      options: ["kişilik", "kişisel", "parti", "arkadaşlık"]
+      answer: 0
+    kullan:
+      id: d14-087-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My sister and I look the same, but we have very different ________. She is shy, and I am outgoing.</en>"
+      options: ["personalities", "faces", "invitations", "excuses"]
+      answer: 0
+    sina:
+      id: d14-087-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>You want to learn about your new classmate's personality. Which question do you ask?</en>"
+      options: ["What is she like?", "What does she look like?", "How old is she?", "Where does she live?"]
+      answer: 0
+      explain: "\"What does she look like?\" dış görünüşü sorar; kişiliği \"What is she like?\" sorar."
+  - item: U1-093
+    sezdir:
+      id: d14-093-z
+      type: meaning
+      context: s19
+      prompt: "Hikâyede \"understanding\" ne anlama geliyordu?"
+      options: ["anlayışlı", "anlaşılmaz", "inatçı", "neşeli"]
+      answer: 0
+    kullan:
+      id: d14-093-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I forgot my homework, but my teacher was very ________. She said, \"Bring it tomorrow.\"</en>"
+      options: ["understanding", "mean", "unreliable", "outgoing"]
+      answer: 0
+    sina:
+      id: d14-093-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Mert's mum?</en>"
+      stem: "<en>Mert broke a glass in the kitchen. His mum didn't shout. She said, \"It was an accident. These things happen.\"</en>"
+      options: ["understanding", "stubborn", "mean", "unreliable"]
+      answer: 0
+
+review:
+  - id: d14-r01
+    type: gap_fill
+    item: U1-005
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>My parents are out tonight. Do you want to ________ and watch a film with me?</en>"
+    options: ["come over", "depend on", "refuse", "apologise"]
+    answer: 0
+  - id: d14-r02
+    type: synonym
+    item: U1-052
+    prompt: "<en>\"You can depend on Selin.\" Which one has the CLOSEST meaning?</en>"
+    options: ["You can trust Selin.", "You can call Selin.", "You can visit Selin.", "You can forget Selin."]
+    answer: 0
+  - id: d14-r03
+    type: gap_fill
+    item: U1-057
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Kaan listens to Bora's ideas, and Bora listens to Kaan's ideas. There is ________ between them.</en>"
+    options: ["mutual respect", "dishonesty", "a secret", "a lie"]
+    answer: 0
+  - id: d14-r04
+    type: gap_fill
+    item: U1-061
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Be polite and listen to your grandparents. You should ________ older people.</en>"
+    options: ["respect", "refuse", "argue with", "lie to"]
+    answer: 0
+  - id: d14-r05
+    type: trait_match
+    item: U1-088
+    prompt: "<en>Which word describes Kaan?</en>"
+    stem: "<en>At Bora's house, Kaan said \"Good afternoon\" to Bora's mum, took off his shoes and thanked her for the tea.</en>"
+    options: ["respectful", "mean", "unreliable", "lazy"]
+    answer: 0
+  - id: d14-r06
+    type: trait_match
+    item: U1-068
+    prompt: "<en>Which word describes Emre?</en>"
+    stem: "<en>Emre is often late, forgets his homework and never does what he says.</en>"
+    options: ["unreliable", "reliable", "patient", "loyal"]
+    answer: 0
+  - id: d14-r07
+    type: message_infer
+    item: U1-036
+    lgs_like: true
+    prompt: "<en>What can we say about Elif and Duru?</en>"
+    stem: "<en>Elif: Duru and I both love dogs, we both play the guitar and we both hate Mondays!</en>"
+    options: ["They have a lot in common.", "They argue a lot.", "They have nothing to do.", "They don't get on well."]
+    answer: 0
+  - id: d14-r08
+    type: dialogue_complete
+    item: U1-039
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece: Elif, ________ Duru. She's my close friend.\nElif: Hi, Duru! Nice to meet you.</en>"
+    options: ["let me introduce you to", "let me apologise to", "I don't want to meet", "I can't reply to"]
+    answer: 0
+  - id: d14-r09
+    type: situation
+    item: U1-034
+    lgs_like: true
+    prompt: "<en>Which of the following is TRUE?</en>"
+    stem: "<en>Kaan and Bora are friends again. They play football together, laugh at the same jokes and don't argue anymore.</en>"
+    options: ["They get on well.", "They don't speak to each other.", "They are angry with each other.", "They feel alone."]
+    answer: 0
+  - id: d14-r10
+    type: gap_fill
+    item: U1-029
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Ece and Elif ________ on the phone for two hours last night. They talked about everything!</en>"
+    options: ["chatted", "refused", "argued", "apologised"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U1-080]
+    text: "\"What is he like?\" = O nasıl biri? (kişiliğini sorar) → \"He's calm and patient.\" Ama \"What does he like?\" = Neyi sever? → \"He likes football.\" \"What does he look like?\" ise dış görünüşü sorar → \"He's tall.\" Üç soru, üç farklı cevap!"
+  - type: ilginc_bilgi
+    refs: [U1-085]
+    text: "patient sıfat olarak \"sabırlı\", isim olarak \"hasta\" demek: \"The doctor has ten patients today.\" İkisi de Latince \"katlanmak, dayanmak\" anlamındaki pati kökünden gelir."
+  - type: kelime_ailesi
+    refs: [U1-093, U1-085, U1-087]
+    text: "understand → understanding (anlayışlı) · patient → patience (sabır) → impatient (sabırsız) · person → personal → personality."
+  - type: hafiza_kancasi
+    refs: [U1-069]
+    text: "\"Calm down!\" = \"Sakin ol!\" Sınavdan önce kendine fısılda: Calm down, I can do it!"
+
+coach:
+  start: "Bugün Elif bir dergi testi getirdi. 📖 Bakalım Duru uyuyor mu, yoksa…"
+  end_good: "Süper! Artık \"What is he like?\" sorusuna kendinden emin cevap verebilirsin. Hoca Nova'dan sana bir unvan: The Patient Learner! 🏅"
+  end_mixed: "{weak} biraz naz yapıyor, çok normal. Yarın yine karşına çıkacak; ikinci buluşmada daha iyi anlaşırsınız. 😉"
+
+notifications:
+  morning: "Elif'in dergisinde bir test var. Kaan'ın sonucu herkesi güldürecek! 📖"
+  evening: "Duru uyuyor mu, yoksa başka bir şey mi? Cevap bugünkü derste, 10 dakika."
+  review: "Tek soru: \"What is he like?\" ile \"What does he like?\" aynı şeyi mi sorar?"
+
+editor:
+  z07: {U1-069: BEKLIYOR, U1-080: BEKLIYOR, U1-085: BEKLIYOR, U1-086: BEKLIYOR, U1-087: BEKLIYOR, U1-093: BEKLIYOR}

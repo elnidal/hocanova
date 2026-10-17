@@ -1,0 +1,316 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 8
+status: draft
+title: "Selin'in bir günü"
+est_minutes: 10
+characters: [Selin, Ece, Elif, Kaan, Bora, Duru, Murat Bey]
+new_items: [U2-043, U2-044, U2-045, U2-046, U2-047, U2-048]
+
+story:
+  - id: s01
+    text: "Çarşamba, İngilizce dersi. Murat Bey tahtaya anketin yeni bölümünü yazdı: \"<en>Part 2: {U2-043|Daily Routine}</en>\""
+  - id: s02
+    text: "Murat Bey: \"<en>Each group writes about one person's {U2-043|daily routine}. When do you get up? What do you do after school? Any volunteers?</en>\""
+  - id: s03
+    text: "Ece'nin grubunda seçim çok kolay oldu. Ece ve Elif aynı anda Selin'i gösterdi."
+  - id: s04
+    text: "Elif: \"<en>Selin is perfect for this. She's the most {U1-090|self-disciplined} person in our class!</en>\""
+  - id: s05
+    text: "Selin: \"<en>OK. I {U2-044|always} get up at 6.30. Even on Saturdays.</en>\" Bora: \"<en>Even on Saturdays?! That's scary.</en>\""
+  - id: s06
+    text: "Selin: \"<en>I {U2-045|regularly} go running before breakfast – on Mondays, Wednesdays and Fridays.</en>\""
+  - id: s07
+    text: "Selin: \"<en>I {U2-044|usually} walk to school with Ece. We are {U2-044|never} late.</en>\""
+  - id: s08
+    text: "Kaan: \"<en>{U2-047|Most of the time}, I'm late. Is that a routine too?</en>\" Ece: \"<en>Kaan, that's not a routine. That's a talent.</en>\""
+  - id: s09
+    text: "Selin: \"<en>After school, my dad {U2-048|picks me up}. He parks in front of the school gate at 3.40 – not 3.39, not 3.41.</en>\""
+  - id: s10
+    text: "Ece: \"<en>And he plays {U2-025|classical music} in the car. Selin knows every Mozart piece!</en>\""
+  - id: s11
+    text: "Selin: \"<en>Well, he {U2-046|mostly} listens to {U2-025|classical music}, but on Fridays it's {U2-026|folk music}. Grandad's choice!</en>\""
+  - id: s12
+    text: "Elif: \"<en>She also reads {U2-045|regularly}. Twenty pages every night before bed!</en>\""
+  - id: s13
+    text: "Akşamlar ise şöyle geçiyor: ödev, akşam yemeği, kitap. Ama bir sorun var: Selin'in ağabeyi Emre."
+  - id: s14
+    text: "Selin: \"<en>My brother listens to {U2-027|rap} in his room {U2-047|most of the time}. Very {U2-028|loud} rap.</en>\""
+  - id: s15
+    text: "Selin: \"<en>Our walls are thin, so the house gets really {U2-029|noisy}. It's so {U2-030|annoying} when I'm studying!</en>\""
+  - id: s16
+    text: "Bora: \"<en>So what do you do?</en>\" Selin: \"<en>I put on my headphones. {U2-047|Most of the time}, it works.</en>\""
+  - id: s17
+    text: "Kaan'ın merakı bitmiyordu: \"<en>Selin, do you ever break your routine? Pizza at midnight? A film on a school night?</en>\""
+  - id: s18
+    text: "Selin biraz düşündü: \"<en>Hmm… I {U2-044|sometimes} watch a film on Friday nights. And I {U2-044|rarely} eat chips.</en>\" Kaan: \"<en>Rarely?! Selin, you're living dangerously!</en>\""
+  - id: s19
+    text: "Duru: \"<en>My {U2-043|daily routine} is easy: sleep, school, sleep, dinner, sleep.</en>\" Murat Bey güldü: \"<en>Duru, that's a very honest survey answer.</en>\""
+  - id: s20
+    text: "Son ders bitince bardaktan boşanırcasına yağmur başladı. Kaan'ın şemsiyesi yoktu. Bora'nın da."
+  - id: s21
+    text: "Selin: \"<en>Don't worry. My dad is {U2-048|picking me up} in five minutes. He can drive you home too.</en>\""
+  - id: s22
+    text: "Selin'in babası tam 3.40'ta kapıdaydı. Kaan arabaya atladı; Bora ise yerde parlayan bir şey görüp eğildi."
+  - id: s23
+    text: "Bora: \"<en>Wait! Somebody dropped a pen. Let me {U2-048|pick it up}.</en>\" Selin: \"<en>That's Kaan's pen. {U1-075|He's always in a hurry}. He drops everything!</en>\""
+  - id: s24
+    text: "Arabada, tahmin ettiğiniz gibi, Mozart çalıyordu. Kaan beş dakikada uyuyakaldı. Selin'in babası gülümsedi: \"<en>Selin, your friends {U2-046|mostly} sleep in my car.</en>\""
+  - id: s25
+    text: "Selin'in babası: \"<en>My daughter is {U1-059|reliable} like a clock. She {U2-045|regularly} reminds me about my dentist appointments!</en>\""
+  - id: s26
+    text: "O akşam Selin anket kâğıdına son cümleyi yazdı: \"<en>My days are {U2-046|mostly} the same, but I like them that way.</en>\""
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>Selin, can you tell us about your daily routine?</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>Sure. I always get up at 6.30, and I regularly go running before breakfast.</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>Who picks you up after school?</en>"
+  - id: c04
+    speaker: Selin
+    text: "<en>My dad. He is never late, and most of the time he plays classical music in the car.</en>"
+
+steps:
+  - item: U2-043
+    sezdir:
+      id: u2d08-043-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"daily routine\" ne anlama geliyordu?"
+      options: ["günlük rutin", "hafta sonu planı", "okul kuralları", "tatil programı"]
+      answer: 0
+    kullan:
+      id: u2d08-043-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My ________ is simple: I get up at 7, go to school, do my homework and go to bed at 10.</en>"
+      options: ["daily routine", "favourite genre", "survey", "band"]
+      answer: 0
+    sina:
+      id: u2d08-043-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which question is Selin answering?</en>"
+      stem: "<en>Selin: I get up at 6.30, have breakfast at 7, go to school at 7.45, do my homework at 5 and go to bed at 10.</en>"
+      options: ["What's your daily routine?", "What's your favourite genre?", "What sport do you do?", "Who picks you up after school?"]
+      answer: 0
+  - item: U2-044
+    sezdir:
+      id: u2d08-044-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"always\" ne anlama geliyordu?"
+      options: ["her zaman", "bazen", "asla", "nadiren"]
+      answer: 0
+    kullan:
+      id: u2d08-044-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin ________ late for school. She gets up at 6.30 every day.</en>"
+      options: ["is never", "never is", "is late never", "never"]
+      answer: 0
+    sina:
+      id: u2d08-044-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Look at the survey results. Which sentence is TRUE?</en>"
+      stem: "<en>How many nights a week do you read before bed?\nSelin: 7 nights\nDuru: 2 nights\nBora: 0 nights</en>"
+      options: ["Selin always reads before bed.", "Bora usually reads before bed.", "Duru always reads before bed.", "Selin never reads before bed."]
+      answer: 0
+  - item: U2-045
+    sezdir:
+      id: u2d08-045-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"regularly\" ne anlama geliyordu?"
+      options: ["düzenli olarak", "nadiren", "yanlışlıkla", "geç"]
+      answer: 0
+    kullan:
+      id: u2d08-045-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>To stay fit, you should exercise ________ – three times a week, not once a month.</en>"
+      options: ["regularly", "rarely", "never", "hardly"]
+      answer: 0
+    sina:
+      id: u2d08-045-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Ece visits her grandma regularly – every Sunday at 2 p.m.\" Which one is CLOSEST in meaning?</en>"
+      options: ["Ece visits her grandma at the same time every week.", "Ece rarely visits her grandma.", "Ece never visits her grandma.", "Ece visited her grandma only once."]
+      answer: 0
+  - item: U2-046
+    sezdir:
+      id: u2d08-046-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"mostly\" ne anlama geliyordu?"
+      options: ["çoğunlukla", "asla", "yalnızca bir kez", "hemen"]
+      answer: 0
+    kullan:
+      id: u2d08-046-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The songs on Elif's playlist are ________ pop songs, but there are a few rock songs too.</en>"
+      options: ["mostly", "never", "always", "rarely"]
+      answer: 0
+    sina:
+      id: u2d08-046-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Look at the survey results. Which sentence is TRUE?</en>"
+      stem: "<en>Murat Bey's class (25 students): What do you do in your free time?\nchat online: 18 students\nplay sports: 4 students\nread books: 3 students</en>"
+      options: ["The students mostly chat online in their free time.", "The students mostly read books in their free time.", "None of the students play sports.", "Nobody reads books."]
+      answer: 0
+  - item: U2-047
+    sezdir:
+      id: u2d08-047-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"most of the time\" ne anlama geliyordu?"
+      options: ["çoğu zaman", "hiçbir zaman", "yalnızca dün", "ilk kez"]
+      answer: 0
+    kullan:
+      id: u2d08-047-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Is Kaan late every day?\nB: Not every day, but ________. Maybe four days a week.</en>"
+      options: ["most of the time", "never", "once", "rarely"]
+      answer: 0
+    sina:
+      id: u2d08-047-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Most of the time, Duru is calm.\" Which word is CLOSEST in meaning to \"most of the time\"?</en>"
+      options: ["usually", "never", "rarely", "once"]
+      answer: 0
+  - item: U2-048
+    sezdir:
+      id: u2d08-048-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"pick up\" ne anlama geliyordu?"
+      options: ["(arabayla gelip) almak", "bırakmak", "beklemek", "aramak"]
+      answer: 0
+    kullan:
+      id: u2d08-048-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My mum can't ________ me ________ after school today, so I'll take the bus.</en>"
+      options: ["pick / up", "give / up", "get / up", "look / up"]
+      answer: 0
+    sina:
+      id: u2d08-048-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>In which sentence does \"pick up\" mean \"collect someone by car\"?</en>"
+      options: ["Dad will pick us up at 5 outside the cinema.", "Please pick up the paper on the floor.", "Bora picked up a pen from the ground.", "Can you pick up that book for me?"]
+      answer: 0
+
+review:
+  - id: u2d08-r01
+    type: gap_fill
+    item: U2-037
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Bora doesn't like playing in a team, so he chose karate. It's his favourite ________.</en>"
+    options: ["individual sport", "team sport", "music genre", "band"]
+    answer: 0
+  - id: u2d08-r02
+    type: gap_fill
+    item: U2-038
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Bora ________ karate every Saturday morning with Gül Hanım.</en>"
+    options: ["does", "plays", "goes", "makes"]
+    answer: 0
+  - id: u2d08-r03
+    type: situation
+    item: U2-039
+    prompt: "<en>What does Selin's family do on Sundays?</en>"
+    stem: "<en>Every Sunday, Selin's family puts on their backpacks and walks for hours in the mountains and forests.</en>"
+    options: ["They go hiking.", "They do karate.", "They work out at the gym.", "They play a team sport."]
+    answer: 0
+  - id: u2d08-r04
+    type: gap_fill
+    item: U2-040
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>After two hours of karate, Bora was very tired. He lay on the sofa to ________.</en>"
+    options: ["rest", "train", "work out", "pay attention"]
+    answer: 0
+  - id: u2d08-r05
+    type: dialogue_complete
+    item: U2-041
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Murat Bey: Kaan, you're looking at your phone again. ________\nKaan: Sorry, sir.</en>"
+    options: ["Please pay attention.", "Please have a rest.", "You look fit.", "Well done!"]
+    answer: 0
+  - id: u2d08-r06
+    type: gap_fill
+    item: U2-042
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Mert's T-shirt was wet because of Bora's kick. Mert was a bit ________.</en>"
+    options: ["annoyed", "annoying", "energetic", "relaxing"]
+    answer: 0
+  - id: u2d08-r07
+    type: message_infer
+    item: U2-003
+    lgs_like: true
+    prompt: "<en>What does Murat Bey want the students to do?</en>"
+    stem: "<en>Murat Bey: Ask twenty students the same five questions about their free time. Write down their answers and bring the results next week.</en>"
+    options: ["do a survey", "form a band", "go hiking", "do karate"]
+    answer: 0
+  - id: u2d08-r08
+    type: dialogue_complete
+    item: U2-004
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: What do you usually do at the weekend?\nB: ________ We go to the park or the shopping centre together.</en>"
+    options: ["I hang out with my friends.", "I do karate alone.", "I stay in bed all day.", "I hate weekends."]
+    answer: 0
+  - id: u2d08-r09
+    type: dialogue_complete
+    item: U2-006
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Elif: I'm really into pop music. ________\nDuru: Me? I prefer rock music.</en>"
+    options: ["What about you?", "How old are you?", "Where do you live?", "Why are you late?"]
+    answer: 0
+  - id: u2d08-r10
+    type: synonym
+    item: U2-005
+    lgs_like: true
+    prompt: "<en>\"In my opinion, teenagers should sleep more.\" Which one is CLOSEST in meaning?</en>"
+    options: ["I believe teenagers should sleep more.", "Everybody knows teenagers sleep a lot.", "Teenagers never sleep.", "I have no idea about teenagers' sleep."]
+    answer: 0
+
+tips:
+  - type: mini_dilbilgisi
+    refs: [U2-044]
+    text: "Sıklık zarfı ana fiilden önce, be fiilinden (am/is/are) sonra gelir: \"I always get up at 6.30.\" ama \"We are never late.\" Sıra: always (%100) > usually > often > sometimes > rarely > never (%0)."
+  - type: tuzak
+    refs: [U2-048]
+    text: "pick up iki anlamlı: \"Dad picks me up after school.\" (arabayla gelip almak) · \"Bora picked up the pen.\" (yerden almak). Nesne bir zamirse araya girer: \"pick me up\" ✓, \"pick up me\" ✗."
+  - type: lgs_taktigi
+    refs: [U2-046, U2-047, U2-044]
+    text: "Anket tablosu sorularında sayılara bak: 7 günün 7'si = always, 0 = never, çoğunluk = mostly / most of the time. 25 kişiden 18'i bir şeyi seçtiyse \"mostly\" doğru cevaptır."
+  - type: kelime_ailesi
+    refs: [U2-045]
+    text: "regular (düzenli) + -ly = regularly (düzenli olarak). Zıttı: irregular. \"a regular routine\" · \"I regularly go running.\""
+
+coach:
+  start: "Selin'in bir günü dakika dakika planlı. Kaan'ın günü ise… pek değil ⏰"
+  end_good: "Mükemmel! Selin'in babası kadar dakiksin: tam 3.40'ta bitirdin 🚗"
+  end_mixed: "İyi gidiyorsun! {weak} biraz geç kaldı, tıpkı Kaan gibi. Yarın yine soracağım ⏰"
+
+notifications:
+  morning: "Selin cumartesi bile 6.30'da kalkıyor. Evet, cumartesi! ⏰"
+  evening: "Bora yerde bir kalem buldu, Selin'in babası kapıda. Bugünkü ders 10 dakika 🚗"
+  review: "Tek soru: \"She never is late\" mi, \"She is never late\" mı? ⏰"
+
+editor:
+  z07: {U2-043: BEKLIYOR, U2-044: BEKLIYOR, U2-045: BEKLIYOR, U2-046: BEKLIYOR, U2-047: BEKLIYOR, U2-048: BEKLIYOR}

@@ -1,0 +1,310 @@
+schema_version: 1
+program: lgs
+unit: 5
+day: 4
+status: draft
+title: "Fişi kim çekti?"
+est_minutes: 10
+characters: [Ece, Elif, Kaan, Duru, Bora, Selin]
+new_items: [U5-015, U5-020, U5-023, U5-026, U5-057, U5-059]
+
+story:
+  - id: s01
+    text: "Perşembe akşamı, saat yediyi on geçiyordu. Ece plan defterini açmış, kanalın ikinci videosu için on iki maddelik bir liste hazırlamıştı. Liste hazırdı; ekip değil."
+  - id: s02
+    text: "Ece grubun sohbetine yazdı: \"<en>Team, {U5-059|why don't we} {U2-055|chat online} at eight? A video call, fifteen minutes. We need a plan for video number two!</en>\""
+  - id: s03
+    text: "Elif: \"<en>Sure! Pamuk is coming too.</en>\" Kaan: \"<en>Yes! I'm always {U5-020|online} anyway. Only one hour {U5-044|per app}, remember?</en>\""
+  - id: s04
+    text: "Duru'nun cevabı tek kelimeydi: \"<en>Sofa.</en>\" Ece bunu \"evet\" saydı. Sonra Bora'dan, telefonunun son birkaç megabaytıyla gönderilmiş bir mesaj geldi: \"<en>{U1-021|I'm sorry, I can't}. My internet is {U5-015|broken}.</en>\""
+  - id: s05
+    text: "Grupta üç saniyelik bir sessizlik oldu. Herkes Bora'nın meşhur \"kedim hasta\" günlerini hatırladı. Kaan: \"<en>Is this another {U1-007|excuse}? How's your cat? 😏</en>\""
+  - id: s06
+    text: "Bora: \"<en>I don't have a cat! And this isn't an {U1-007|excuse}. The internet is really {U5-015|broken}. Nothing opens!</en>\""
+  - id: s07
+    text: "Ece: \"<en>{U5-057|What do you mean}, Bora? {U5-057|Do you mean} the internet {U4-003|connection}? Or is your laptop {U5-015|broken}?</en>\""
+  - id: s08
+    text: "Bora: \"<en>The laptop is OK, I think. But my drum videos aren't {U5-026|working properly}. They stop, start, stop… and now, nothing.</en>\""
+  - id: s09
+    text: "Tam o sırada Duru gruba iki kelime yazdı: \"<en>Calling Bora.</en>\" Bora'nın telefonu çaldı. Kaan grupta çığlık attı: \"<en>Duru is calling someone? With her voice?!</en>\""
+  - id: s10
+    text: "Duru kanepesinden kalkmadan, her zamanki sakin sesiyle konuştu: \"<en>Don't panic. We'll do it together, step by step. First question: is the modem {U5-023|turned on}? Can you see any lights?</en>\""
+  - id: s11
+    text: "Bora modemin başına koştu: \"<en>Lights? Nothing. It's dead.</en>\" Duru: \"<en>{U5-057|Do you mean} there are no lights at all? Not even a small one?</en>\""
+  - id: s12
+    text: "Duru: \"<en>Maybe it's just {U5-023|off}. Now look at your laptop, bottom right. Is there a {U4-003|connection} sign? Does it say {U5-020|online} or {U5-020|offline}?</en>\""
+  - id: s13
+    text: "Bora: \"<en>It says '{U5-020|Offline}'. In red. Like the end of a sad film.</en>\""
+  - id: s14
+    text: "Grup sohbetindeki ekip de boş durmuyordu. Selin: \"<en>Look on the bright side, Bora. The class {U5-037|average} is three hours {U5-044|a day}. Tonight you're the perfect student.</en>\""
+  - id: s15
+    text: "Kaan: \"<en>A whole evening {U5-020|offline}? I can't do that. I'm not an {U5-036|addict}… I just love notifications.</en>\""
+  - id: s16
+    text: "Ece: \"<en>Checking your phone every five minutes is a {U5-040|habit}, Kaan. A bad one.</en>\" Kaan telefonuna baktı, sonra yine baktı."
+  - id: s17
+    text: "Duru ise Bora'yı oyalıyordu: \"<en>While you look, a survey question. {U5-047|What do you use the Internet for} at night?</en>\" Bora: \"<en>Drum videos. My mum says our internet {U5-045|usage} is all drums.</en>\""
+  - id: s18
+    text: "Duru: \"<en>Modems don't often break. Usually they just don't {U5-026|work properly} for a minute. Follow the cable from the modem to the wall.</en>\""
+  - id: s19
+    text: "Bora kablonun peşinden koltuğun arkasına süründü ve donup kaldı. Prizde modemin fişi yoktu. Onun yerinde Bora'nın kendi telefon şarj aleti duruyordu."
+  - id: s20
+    text: "Bora: \"<en>Er… guys. I found the problem. It's me.</en>\" Kaan: \"<en>{U5-057|What do you mean}, 'me'?</en>\" Bora: \"<en>At six I pulled out the modem's plug to charge my phone. I {U5-023|turned off} the internet myself.</en>\""
+  - id: s21
+    text: "Kaan: \"<en>Maybe your cat did it!</en>\" Duru: \"<en>He doesn't have a cat. And Fıstık is here, asleep on my sofa. So, no.</en>\""
+  - id: s22
+    text: "Bora fişi yerine taktı. Modemin ışıkları teker teker yeşile döndü, laptoptaki kırmızı yazı kayboldu: \"<en>{U5-020|Online}! Everything is {U5-026|working properly} again!</en>\""
+  - id: s23
+    text: "Saat tam sekizde Bora görüntülü görüşmedeydi, saçları koltuk arkasının tozuyla bembeyaz. Ece listesine on üçüncü maddeyi ekledi: \"<en>13. Check the plug first.</en>\""
+  - id: s24
+    text: "Elif: \"<en>Duru, you're amazing! {U5-059|Why don't we} call you 'Doctor Modem'?</en>\""
+  - id: s25
+    text: "Duru esnedi: \"<en>{U5-059|Why don't we} start the meeting? It's eight o'clock. I'm sleepy.</en>\""
+  - id: s26
+    text: "Görüşme bitmek üzereyken Bora'nın telefonunda yeni bir simge parladı: profil fotoğrafında altın bir davul seti, altında \"DrumKing_Official\" adı. Bora'nın gözleri davul seti kadar parladı, ama simgeye dokunmadı. Henüz."
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Why don't we chat online at eight?</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>I'm sorry, I can't. My internet is broken.</en>"
+  - id: c03
+    speaker: Ece
+    text: "<en>What do you mean? Do you mean the Internet connection?</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>Is the modem turned on? Does your laptop say online or offline?</en>"
+  - id: c05
+    speaker: Bora
+    text: "<en>Offline! I turned it off myself… Now it's working properly again.</en>"
+
+steps:
+  - item: U5-015
+    sezdir:
+      id: u5d04-015-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"My internet is broken\" cümlesinde \"broken\" ne anlama geliyordu?"
+      options: ["bozuk, çalışmıyor", "çok hızlı", "yeni alınmış", "ücretsiz"]
+      answer: 0
+    kullan:
+      id: u5d04-015-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My headphones are ________. I can only hear music in one ear.</en>"
+      options: ["broken", "honest", "average", "patient"]
+      answer: 0
+      explain: "Cihaz ya da eşya çalışmıyorsa broken denir; yalnız kırık bardak için değil, internet ve kulaklık için de kullanılır."
+    sina:
+      id: u5d04-015-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which of the following can replace the underlined part?</en>"
+      stem: "<en>Kaan: I can't send you the photos tonight. My phone <u>is broken</u>.</en>"
+      options: ["isn't working", "is very new", "is turned on", "is online"]
+      answer: 0
+      explain: "Fotoğrafları gönderemiyor çünkü telefon bozuk: is broken = isn't working. Açık ya da çevrim içi bir telefon fotoğraf gönderebilirdi."
+  - item: U5-020
+    sezdir:
+      id: u5d04-020-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede laptopta yazan \"Offline\" ne anlama geliyordu?"
+      options: ["çevrim dışı, internete bağlı değil", "şarjı bitmiş", "sesi kısık", "yeni güncellenmiş"]
+      answer: 0
+    kullan:
+      id: u5d04-020-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Elif's status says '________', so she is on the internet right now. Let's send her a message.</en>"
+      options: ["online", "offline", "broken", "average"]
+      answer: 0
+      explain: "Şu anda internete bağlı olan kişinin durumu online, bağlı olmayanınki offline olarak görünür."
+    sina:
+      id: u5d04-020-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the list, which of the following is correct?</en>"
+      stem: "<en>Wrong Number – chat at 9 p.m.\nEce: online\nKaan: online\nBora: offline\nDuru: offline (last seen 8.15)\nElif: offline</en>"
+      options: ["Only two people are online at 9 p.m.", "Bora is online at 9 p.m.", "Most of the people are online.", "Ece and Duru are both offline."]
+      answer: 0
+      explain: "Yalnız Ece ve Kaan online; beş kişiden üçü offline olduğu için çoğunluk değil. Duru offline, Ece online."
+  - item: U5-023
+    sezdir:
+      id: u5d04-023-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede \"I turned off the internet myself\" ne anlama geliyordu?"
+      options: ["İnterneti kendim kapattım.", "İnterneti kendim hızlandırdım.", "İnterneti kendim değiştirdim.", "İnterneti kendim satın aldım."]
+      answer: 0
+    kullan:
+      id: u5d04-023-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>It's very dark in here. Can you ________ the light, please?</en>"
+      options: ["turn on", "turn off", "open", "log out"]
+      answer: 0
+      explain: "Elektrikle çalışan bir şeyi çalıştırmak turn on'dır; ışık ve cihaz için open denmez."
+    sina:
+      id: u5d04-023-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What does Murat Bey probably say?</en>"
+      stem: "<en>The English exam is starting. Murat Bey doesn't want to hear any phones in the classroom.</en>"
+      options: ["Please turn off your phones.", "Please turn on your phones.", "Please open your phones.", "Please log in to your phones."]
+      answer: 0
+      explain: "Telefonların sesini hiç duymamak için kapatılmaları gerekir: turn off. Telefon için open kullanılmaz."
+  - item: U5-026
+    sezdir:
+      id: u5d04-026-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"my drum videos aren't working properly\" ne anlama geliyordu?"
+      options: ["Davul videolarım düzgün çalışmıyor.", "Davul videolarım çok pahalı.", "Davul videolarım çok uzun.", "Davul videolarımı kimse izlemiyor."]
+      answer: 0
+    kullan:
+      id: u5d04-026-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The printer isn't working ________. All the pages come out black.</en>"
+      options: ["properly", "online", "average", "broken"]
+      answer: 0
+      explain: "work properly = olması gerektiği gibi çalışmak; olumsuzu isn't working properly. properly bir zarf olarak fiilden sonra gelir."
+    sina:
+      id: u5d04-026-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>To: SoundBox Online Shop\nHi, I bought a speaker from your website last week. It turns on, but it isn't working properly: the music stops every few seconds. Can you help me, please?\nDeniz</en>"
+      options: ["The speaker has a problem with its sound.", "The speaker doesn't turn on.", "Deniz bought the speaker yesterday.", "Deniz wants a new laptop."]
+      answer: 0
+      explain: "Hoparlör açılıyor (It turns on) ama müzik birkaç saniyede bir kesiliyor; sorun sesle ilgili. Alım geçen hafta yapılmış."
+  - item: U5-057
+    sezdir:
+      id: u5d04-057-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"What do you mean, Bora? Do you mean the internet connection?\" ne anlama geliyordu?"
+      options: ["Ne demek istiyorsun Bora? İnternet bağlantısını mı kastediyorsun?", "Ne zaman geleceksin Bora? İnternetle mi geleceksin?", "Neden üzgünsün Bora? İnternet yüzünden mi?", "Neredesin Bora? İnternet kafede mi?"]
+      answer: 0
+    kullan:
+      id: u5d04-057-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: My phone is acting crazy today.\nB: What do you ________? Is it broken or just slow?</en>"
+      options: ["mean", "tell", "speak", "talk"]
+      answer: 0
+      explain: "Söyleneni tam anlamayınca What do you mean? diye sorulur; do'dan sonra mean yalın kalır."
+    sina:
+      id: u5d04-057-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Kaan: My tablet is sick today.\nSelin: ________\nKaan: Yes! It's really slow, and the games stop all the time.</en>"
+      options: ["What do you mean? Do you mean it isn't working properly?", "Why don't we go to the doctor?", "Sorry, wrong number.", "Thanks for calling."]
+      answer: 0
+      explain: "Kaan 'Yes!' deyip tabletin yavaşladığını anlatıyor; demek ki Selin ne demek istediğini sorup bir tahminde bulunmuş."
+  - item: U5-059
+    sezdir:
+      id: u5d04-059-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"Why don't we chat online at eight?\" ne anlama geliyordu?"
+      options: ["Saat sekizde internetten konuşalım mı?", "Neden saat sekizde konuşmadık?", "Saat sekizde konuşmak zorundayız.", "Saat sekizde konuştuk mu?"]
+      answer: 0
+    kullan:
+      id: u5d04-059-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: I'm bored. ________ watch a film at my house?\nB: Great idea! I'll bring popcorn.</en>"
+      options: ["Why don't we", "Why didn't we", "Why aren't we", "Why do we"]
+      answer: 0
+      explain: "Why don't we + yalın fiil bir öneridir (Let's gibi); cevap 'Great idea!' ya da 'Sorry, I can't' olur."
+    sina:
+      id: u5d04-059-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is a suggestion?</en>"
+      options: ["Why don't we upload the video tonight?", "My internet is broken.", "I'm sorry, I can't.", "What do you mean?"]
+      answer: 0
+      explain: "Why don't we…? öneri kalıbıdır. Diğerleri sırasıyla bahane, ret ve açıklama isteme."
+
+review:
+  - id: u5d04-r01
+    type: gap_fill
+    item: U5-019
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>I love this song! I'm going to ________ it to my phone and listen to it on the bus.</en>"
+    options: ["download", "upload", "comment", "log out"]
+    answer: 0
+  - id: u5d04-r02
+    type: gap_fill
+    item: U5-025
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Ece filmed the rehearsal ten times. In the end, she ________ the best video to the band's channel.</en>"
+    options: ["uploaded", "downloaded", "logged out", "typed"]
+    answer: 0
+  - id: u5d04-r03
+    type: situation
+    item: U5-028
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>What should Bora's grandpa do in this situation?</en>"
+    stem: "<en>Bora's grandpa watched the band's new video. He wants to write 'Add some jazz!' under it, so everybody can read it.</en>"
+    options: ["He should comment on the video.", "He should upload the video.", "He should log out.", "He should download the video."]
+    answer: 0
+    explain: "Bir videonun altına görüş yazmak comment (on) ile anlatılır."
+  - id: u5d04-r04
+    type: gap_fill
+    item: U5-030
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Elif's cousin has a cooking channel with 120 ________. Every time he uploads a video, they get a notification.</en>"
+    options: ["subscribers", "passwords", "usernames", "averages"]
+    answer: 0
+  - id: u5d04-r05
+    type: situation
+    item: U5-033
+    prompt: "<en>Ece's phone makes a 'ding' every time someone likes the video. What is she getting?</en>"
+    options: ["notifications", "passwords", "accounts", "usernames"]
+    answer: 0
+  - id: u5d04-r06
+    type: gap_fill
+    item: U5-034
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Elif ________ a photo of Pamuk on her account and wrote 'My best friend!' under it.</en>"
+    options: ["posted", "downloaded", "logged out", "signed up"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U5-015]
+    text: "broken sadece \"kırık\" (kırık bardak, kırık kol) değildir. İnternet, telefon, kulaklık gibi şeyler için \"bozuk, çalışmıyor\" demektir: My internet is broken = It isn't working properly."
+  - type: tuzak
+    refs: [U5-023]
+    text: "Türkçede hem bilgisayarı hem kapıyı \"açarız\". İngilizcede elektrikle çalışan şeyler turn on / turn off ile açılıp kapanır; kapı ve pencere için open / close kullanılır. \"It's off.\" = Kapalı."
+  - type: tuzak
+    refs: [U5-057, U1-083]
+    text: "Ünite 1'deki mean bir sıfattı: cimri, kaba (Don't be mean!). What do you mean? sorusundaki mean ise fiildir: demek istemek, kastetmek. do/does ile soru kuruluyorsa fiildir."
+  - type: tuzak
+    refs: [U5-059]
+    text: "Why don't we…? olumsuz bir soru gibi görünür ama bir öneridir (Let's… ile aynı). LGS diyaloğunda cevabı 'Because…' olmaz; 'Sure! / Great idea!' ya da 'Sorry, I can't…' olur."
+
+coach:
+  start: "Ece saat sekizde görüntülü toplantı istiyor ama Bora gelemiyor. Kedi mi suçlu, modem mi? Hadi bakalım 🕵️"
+  end_good: "Harika! Duru gibi sakin, adım adım çözdün. Modem yeşil, sen de yeşilsin ✅"
+  end_mixed: "Fena değil! {weak} biraz cızırdadı. Fişi yerine tak, yarın bir tur daha deneriz 🔌"
+
+notifications:
+  morning: "Ece saat sekizde toplantı istiyor, Bora gelemiyor. Neden dersin? 🤔"
+  evening: "Bora'nın modemini kim susturdu? Cevap seni güldürecek 🔌"
+  review: "Why don't we…? soru gibi görünüyordu ama değildi. Neydi? 🤔"
+
+editor:
+  z07: {U5-015: BEKLIYOR, U5-020: BEKLIYOR, U5-023: BEKLIYOR, U5-026: BEKLIYOR, U5-057: BEKLIYOR, U5-059: BEKLIYOR}

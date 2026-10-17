@@ -1,0 +1,786 @@
+schema_version: 1
+program: lgs
+unit: 10
+unit_title: Natural Forces
+source: LGS_Unite10_NaturalForces_Havuz_v1 (HEDEF)
+status: taslak, kullanıcı onayı bekliyor
+note: 'taslak, kullanıcı onayı bekliyor; hikâye/gün dosyası yazılmayacak (yalnız kelime havuzu), pilot_day yok. meaning_ban: çeviri yasağında meaning_tr yerine bu kökler aranır. exam alanı boş: ingilizcedilbilgisi.net
+  10. ünite kelime listesi ve "sınavlarda çıkmış 10. ünite kelimeleri" tablosu erişilemedi (WebFetch hata verdi, başka sitede tablo bulunamadı); tablo yapıştırılırsa doldurulur. Son ünite.'
+items:
+- id: U10-001
+  unit: 10
+  theme: Doğal afetler
+  display: natural disaster / disaster (natural forces / natural phenomena)
+  kind: phrase
+  class: core
+  meaning_tr: doğal afet / afet, felaket (doğal güçler / doğa olayları)
+  priority: 1
+  variants:
+  - disaster
+  - natural disaster
+  - natural forces
+  - natural phenomena
+  - phenomenon
+  trap_note: 'phenomenon tekil, phenomena çoğul (Türkçe "fenomen" ile karıştırma); A natural forces için "doğal afetler" demiş: forces = güçler, afet = disaster'
+  meaning_ban:
+  - afet
+  - felaket
+  - doğa olay
+  - doğal güç
+- id: U10-002
+  unit: 10
+  theme: Doğal afetler
+  display: earthquake (aftershock)
+  kind: phrase
+  class: core
+  meaning_tr: deprem (artçı sarsıntı)
+  priority: 1
+  variants:
+  - aftershock
+  - earthquake
+  - main quake
+  trap_note: quake kısa biçim; main quake = ana deprem; An earthquake hit / struck the city. Kaynak B "after shock" (aftershock)
+  meaning_ban:
+  - deprem
+  - artçı
+  - sarsıntı
+- id: U10-003
+  unit: 10
+  theme: Doğal afetler
+  display: tsunami / volcanic eruption (volcano)
+  kind: phrase
+  class: trap
+  meaning_tr: tsunami (dev dalga) / yanardağ patlaması (yanardağ)
+  priority: 1
+  variants:
+  - tsunami
+  - volcanic eruption
+  trap_note: 'tsunami /suːˈnɑːmi/ (t okunmaz); A "volcano eruption" yazmış: volcanic eruption; erupt = püskürmek; wave (dalga) BİLİNEN'
+  meaning_ban:
+  - tsunami
+  - yanardağ
+  - volkan
+  - patlama
+  - püskür
+  - dalga
+- id: U10-004
+  unit: 10
+  theme: Doğal afetler
+  display: flood / landslide / avalanche (flooding)
+  kind: phrase
+  class: core
+  meaning_tr: sel / heyelan, toprak kayması / çığ (sel baskını)
+  priority: 1
+  variants:
+  - avalanche
+  - flood
+  - flooding
+  - landslide
+  trap_note: flood /flʌd/ okunur; isim ve fiil (The river flooded the village). Kaynak B "land slide" (landslide)
+  meaning_ban:
+  - 'sel '
+  - sel baskın
+  - heyelan
+  - toprak kayma
+  - 'çığ '
+  - 'çığı '
+- id: U10-005
+  unit: 10
+  theme: Doğal afetler
+  display: hurricane / tornado / storm
+  kind: phrase
+  class: trap
+  meaning_tr: kasırga / hortum / fırtına
+  priority: 1
+  variants:
+  - hurricane
+  - storm
+  - tornado
+  trap_note: 'B tornado ve hurricane için "kasırga" diyor: hurricane = okyanusta oluşan büyük kasırga, tornado = karada dönen hortum, storm = fırtına'
+  meaning_ban:
+  - kasırga
+  - hortum
+  - fırtına
+- id: U10-006
+  unit: 10
+  theme: Doğal afetler
+  display: lightning (thunderstorm)
+  kind: phrase
+  class: trap
+  meaning_tr: yıldırım, şimşek (gök gürültülü fırtına)
+  priority: 1
+  variants:
+  - lightning
+  trap_note: lightning (yıldırım) ≠ lighting (aydınlatma); thunder = gök gürültüsü; Lightning struck the tree.
+  meaning_ban:
+  - yıldırım
+  - şimşek
+- id: U10-007
+  unit: 10
+  theme: Doğal afetler
+  display: drought / forest fire (wildfire; dry weather / extreme heat)
+  kind: phrase
+  class: core
+  meaning_tr: kuraklık / orman yangını (kuru hava / aşırı sıcak)
+  priority: 1
+  variants:
+  - drought
+  - dry
+  - dry weather
+  - extreme heat
+  - forest fire
+  - rainfall
+  - wildfire
+  trap_note: 'drought /draʊt/ (gh okunmaz); rainfall = yağış miktarı; ders kitabı broşürü: doğal ve insan kaynaklı kuraklık'
+  meaning_ban:
+  - kuraklık
+  - yangın
+  - kuru hava
+  - aşırı sıcak
+  - yağış
+- id: U10-008
+  unit: 10
+  theme: Doğal afetler
+  display: hit / strike / shake (An earthquake struck the city.)
+  kind: phrase
+  class: trap
+  meaning_tr: (afet) bir yeri vurmak / sallamak, sarsmak
+  priority: 1
+  variants:
+  - hit the city
+  - shake
+  - strike
+  trap_note: 'hit–hit–hit, strike–struck–struck, shake–shook–shaken; strike ayrıca grev; afet bir yeri "vurur": The storm hit the city'
+  meaning_ban:
+  - vur
+  - çarp
+  - salla
+  - sars
+- id: U10-009
+  unit: 10
+  theme: Doğal afetler
+  display: destroy / wipe out (destruction)
+  kind: phrase
+  class: trap
+  meaning_tr: yok etmek, yıkmak (yıkım)
+  priority: 1
+  variants:
+  - destroy
+  - wipe out
+  trap_note: damage (U8-046) = zarar vermek / hasar; destroy = tamamen yok etmek; wipe out = silip süpürmek
+  meaning_ban:
+  - yok et
+  - yık
+  - yıkım
+- id: U10-010
+  unit: 10
+  theme: Doğal afetler
+  display: collapse (be stuck under debris)
+  kind: phrase
+  class: trap
+  meaning_tr: çökmek, yıkılmak (enkaz altında kalmak)
+  priority: 1
+  variants:
+  - collapse
+  - collapse building
+  - stuck under debris
+  trap_note: 'collapse nesnesiz: The building collapsed. B "collapse building = binayı yıkmak" yanlış (yıkmak = destroy / knock down); debris /ˈdebriː/ s okunmaz'
+  meaning_ban:
+  - çök
+  - yıkıl
+  - enkaz
+- id: U10-011
+  unit: 10
+  theme: Doğal afetler
+  display: injure / injury (injured)
+  kind: phrase
+  class: core
+  meaning_tr: yaralamak / yaralanma (yaralı)
+  priority: 1
+  variants:
+  - injure
+  - injury
+  trap_note: be injured = yaralanmak; injury sayılabilir (injuries); death (U6-021) ile haber dilinde
+  meaning_ban:
+  - yaral
+- id: U10-012
+  unit: 10
+  theme: Doğal afetler
+  display: threat / threaten (serious threat)
+  kind: phrase
+  class: core
+  meaning_tr: tehdit / tehdit etmek (ciddi tehdit)
+  priority: 1
+  variants:
+  - serious threat
+  - threaten the earth
+  - threatening
+  trap_note: threat /θret/; threatening = tehdit edici; Global warming threatens the Earth.
+  meaning_ban:
+  - tehdit
+- id: U10-013
+  unit: 10
+  theme: Yer bilimi ve doğa olayları
+  display: magnitude (on the Richter scale)
+  kind: phrase
+  class: core
+  meaning_tr: (depremin) büyüklüğü (Richter ölçeğine göre)
+  priority: 1
+  variants:
+  - magnitude
+  - richter scale
+  - scale
+  trap_note: a magnitude 7 earthquake = 7 büyüklüğünde deprem; scale = ölçek; severity (şiddet) TANIMA
+  meaning_ban:
+  - büyüklü
+  - ölçek
+- id: U10-014
+  unit: 10
+  theme: Yer bilimi ve doğa olayları
+  display: surface / layer (the Earth's crust, plates)
+  kind: phrase
+  class: core
+  meaning_tr: yüzey / katman, tabaka (yer kabuğu, levhalar)
+  priority: 1
+  variants:
+  - earth's crust
+  - layer
+  - outer surface
+  - plate
+  - surface
+  trap_note: Earthquakes happen when the plates of the Earth's crust move. A plate'e "tabaka, katman" demiş (yerbilimde levha)
+  meaning_ban:
+  - yüzey
+  - katman
+  - tabaka
+  - kabu
+  - levha
+- id: U10-015
+  unit: 10
+  theme: Yer bilimi ve doğa olayları
+  display: rainbow (raindrop / sunlight / reflect)
+  kind: phrase
+  class: core
+  meaning_tr: gökkuşağı (yağmur damlası / güneş ışığı / yansıtmak)
+  priority: 1
+  variants:
+  - rainbow
+  - raindrop
+  - reflect
+  - sunlight
+  trap_note: double rainbow = çift gökkuşağı; Sunlight reflects inside the raindrops; ders kitabının doğa olayları metni
+  meaning_ban:
+  - gökkuşağı
+  - damla
+  - yansıt
+- id: U10-016
+  unit: 10
+  theme: Afete hazırlık ve dayanışma
+  display: emergency / emergency kit (AFAD)
+  kind: phrase
+  class: core
+  meaning_tr: acil durum / acil durum çantası
+  priority: 1
+  variants:
+  - afad
+  - emergency kit
+  trap_note: emergency /ɪˈmɜːdʒənsi/; emergency exit = acil çıkış; AFAD = Afet ve Acil Durum Yönetimi Başkanlığı (A "Türkiye Acil Durum Yönetimi Başkanlığı" yazmış)
+  meaning_ban:
+  - acil
+  - çanta
+- id: U10-017
+  unit: 10
+  theme: Afete hazırlık ve dayanışma
+  display: take precautions / take measures (precaution / measure)
+  kind: phrase
+  class: trap
+  meaning_tr: önlem almak / tedbir almak (önlem / tedbir)
+  priority: 1
+  variants:
+  - measure
+  - precaution
+  - take precautions
+  - take the necessary measures
+  trap_note: measure ayrıca ölçmek / ölçü; take the necessary measures = gerekli önlemleri almak; B "take precaution" (take precautions)
+  meaning_ban:
+  - önlem
+  - tedbir
+- id: U10-018
+  unit: 10
+  theme: Afete hazırlık ve dayanışma
+  display: prevent (prevent … from …)
+  kind: word
+  class: core
+  meaning_tr: önlemek, engellemek
+  priority: 1
+  variants:
+  - prevent
+  trap_note: 'prevent + isim / prevent sb from V-ing: Trees prevent landslides. protect (korumak) ile karıştırma'
+  meaning_ban:
+  - önle
+  - engelle
+- id: U10-019
+  unit: 10
+  theme: Afete hazırlık ve dayanışma
+  display: 'earthquake drill: Stay calm! / Drop, cover and hold on! / Stay away from windows! (emir kipi)'
+  kind: pattern
+  class: pattern
+  meaning_tr: 'deprem tatbikatı: Sakin kal! / Çök, kapan, tutun! / Pencerelerden uzak dur!'
+  priority: 1
+  variants:
+  - drop, cover and hold on
+  - stay away
+  - stay calm
+  trap_note: 'güvenlik talimatı emir kipiyle: yalın fiil / Don''t + fiil (Don''t use the lift! Don''t panic!); stay away from + isim; drill ayrıca matkap'
+  meaning_ban:
+  - tatbikat
+  - sakin kal
+  - uzak dur
+  - çök, kapan
+- id: U10-020
+  unit: 10
+  theme: Afete hazırlık ve dayanışma
+  display: breaking news (news report)
+  kind: phrase
+  class: trap
+  meaning_tr: son dakika haberi (haber raporu)
+  priority: 1
+  variants:
+  - breaking news
+  trap_note: 'news sayılamaz ve tekil: The news is …, a piece of news (a news yanlış); break = kırmak ama breaking news = son dakika'
+  meaning_ban:
+  - son dakika
+- id: U10-021
+  unit: 10
+  theme: Afete hazırlık ve dayanışma
+  display: suffer from
+  kind: phrase
+  class: core
+  meaning_tr: (bir şeyden) sıkıntı çekmek, acı çekmek
+  priority: 1
+  variants:
+  - suffer
+  trap_note: suffer from drought / hunger / heat; B "muzdarip olmak" doğru ama ağır
+  meaning_ban:
+  - acı çek
+  - sıkıntı çek
+  - muzdarip
+- id: U10-022
+  unit: 10
+  theme: Afete hazırlık ve dayanışma
+  display: rescue (rescue team)
+  kind: phrase
+  class: core
+  meaning_tr: kurtarmak; kurtarma (kurtarma ekibi)
+  priority: 2
+  variants:
+  - rescue team
+  trap_note: rescue = tehlikeden kurtarmak; survivor survive ailesi (U6-014); save de kurtarmak demek (bkz. save)
+  meaning_ban:
+  - kurtar
+- id: U10-023
+  unit: 10
+  theme: Afete hazırlık ve dayanışma
+  display: first aid (first aid kit)
+  kind: phrase
+  class: core
+  meaning_tr: ilk yardım (ilk yardım çantası)
+  priority: 2
+  variants:
+  - first aid
+  trap_note: aid = yardım; first aid kit acil durum çantasının parçası
+  meaning_ban:
+  - ilk yardım
+- id: U10-024
+  unit: 10
+  theme: Afete hazırlık ve dayanışma
+  display: escape
+  kind: word
+  class: core
+  meaning_tr: kaçmak, kurtulmak
+  priority: 2
+  trap_note: escape from …; emergency exit = acil çıkış
+  meaning_ban:
+  - kaçmak
+  - kaçtı
+  - kaçış
+  - kurtul
+- id: U10-025
+  unit: 10
+  theme: Afete hazırlık ve dayanışma
+  display: deal with
+  kind: phrase
+  class: core
+  meaning_tr: başa çıkmak, ilgilenmek
+  priority: 2
+  trap_note: deal with a problem / a disaster; cope with ile eş anlamlı
+  meaning_ban:
+  - başa çık
+  - ilgilen
+- id: U10-026
+  unit: 10
+  theme: Çevre sorunları ve iklim
+  display: global warming / climate change (warm up)
+  kind: phrase
+  class: core
+  meaning_tr: küresel ısınma / iklim değişikliği (ısınmak)
+  priority: 1
+  variants:
+  - climate change
+  - global warming
+  - rising sea levels
+  - warm up
+  trap_note: climate (U7-027) ailesi; The Earth is warming up. Sea levels are rising. = Deniz seviyesi yükseliyor
+  meaning_ban:
+  - küresel
+  - ısın
+  - iklim değiş
+- id: U10-027
+  unit: 10
+  theme: Çevre sorunları ve iklim
+  display: greenhouse gases / greenhouse effect (emissions)
+  kind: phrase
+  class: core
+  meaning_tr: sera gazları / sera etkisi (salım)
+  priority: 1
+  variants:
+  - greenhouse gases
+  trap_note: greenhouse = sera ("yeşil ev" değil); heat-trapping gases = ısıyı hapseden gazlar; carbon dioxide
+  meaning_ban:
+  - sera
+  - salım
+- id: U10-028
+  unit: 10
+  theme: Çevre sorunları ve iklim
+  display: pollution / pollute (air / water / soil pollution; toxic)
+  kind: phrase
+  class: core
+  meaning_tr: kirlilik / kirletmek (hava / su / toprak kirliliği; zehirli)
+  priority: 1
+  variants:
+  - air pollution
+  - land pollution
+  - non-toxic cleaning materials
+  - pollute
+  - soil contamination
+  - water pollution
+  trap_note: pollute (fiil) – pollution (isim) – polluted (kirli); toxic = zehirli, non-toxic = zehirsiz; soil contamination = toprak kirliliği
+  meaning_ban:
+  - kirli
+  - kirlet
+  - zehir
+- id: U10-029
+  unit: 10
+  theme: Çevre sorunları ve iklim
+  display: deforestation (cut down trees / destroy forests)
+  kind: phrase
+  class: core
+  meaning_tr: ormansızlaşma (ağaçları kesmek / ormanları yok etmek)
+  priority: 1
+  variants:
+  - cut down trees
+  - deforestation
+  - destroy forest
+  trap_note: 'de- = giderme öneki; cut down trees (ağaç kesmek); ders kitabı: People cut down trees, so the soil slides.'
+  meaning_ban:
+  - ormansız
+  - ağaç kes
+- id: U10-030
+  unit: 10
+  theme: Çevre sorunları ve iklim
+  display: shortage / lack (water shortage / run out of)
+  kind: phrase
+  class: core
+  meaning_tr: kıtlık, sıkıntı / eksiklik (su kıtlığı / tükenmek, bitmek)
+  priority: 1
+  variants:
+  - energy shortage
+  - lack
+  - run out of
+  - shortage
+  - water shortage
+  trap_note: 'run out of + isim: We are running out of water. lack of = … eksikliği; energy shortage = enerji sıkıntısı'
+  meaning_ban:
+  - kıtlık
+  - eksiklik
+  - tüken
+- id: U10-031
+  unit: 10
+  theme: Çevre sorunları ve iklim
+  display: environment / environmental issues (harm the environment)
+  kind: phrase
+  class: trap
+  meaning_tr: çevre / çevre sorunları (çevreye zarar vermek)
+  priority: 1
+  variants:
+  - environment
+  - environmental issues
+  - harm environment
+  trap_note: environment = doğal çevre (sosyal çevre değil); harm = zarar (vermek), damage (U8-046) ile; environmentally friendly = çevre dostu
+  meaning_ban:
+  - çevre
+  - zarar
+- id: U10-032
+  unit: 10
+  theme: Çevre sorunları ve iklim
+  display: become extinct / endangered (animal species / ecosystem)
+  kind: phrase
+  class: core
+  meaning_tr: nesli tükenmek / nesli tükenme tehlikesinde (hayvan türleri / ekosistem)
+  priority: 1
+  variants:
+  - animal species
+  - become extinct
+  - ecosystem destruction
+  trap_note: species tekil ve çoğul aynı (one species, many species); wildlife (U7-029) ile; extinct canlılar için kullanılır (forests will disappear)
+  meaning_ban:
+  - nesli
+  - hayvan tür
+  - ekosistem
+- id: U10-033
+  unit: 10
+  theme: Çevre sorunları ve iklim
+  display: waste (waste water / toxic waste)
+  kind: phrase
+  class: trap
+  meaning_tr: israf etmek; atık (suyu israf etmek / zehirli atık)
+  priority: 1
+  variants:
+  - toxic waste
+  - waste
+  - waste water
+  trap_note: fiil israf etmek (Don't waste water.), isim atık (toxic waste); wastewater (bitişik) = atık su; waste time = zaman kaybetmek
+  meaning_ban:
+  - israf
+  - atık
+  - boşa
+- id: U10-034
+  unit: 10
+  theme: Çevre sorunları ve iklim
+  display: crops / harvest (grow crops / agriculture)
+  kind: phrase
+  class: core
+  meaning_tr: mahsul, ekin / hasat (mahsul yetiştirmek / tarım)
+  priority: 2
+  variants:
+  - agriculture
+  - crops
+  - grow crops
+  - loss of harvest
+  trap_note: 'loss of harvest = ürün kaybı; zincir: drought → crops die → food shortage'
+  meaning_ban:
+  - mahsul
+  - ekinler
+  - hasat
+  - tarım
+- id: U10-035
+  unit: 10
+  theme: Çevreyi korumak
+  display: recycle / reuse (recyclable products)
+  kind: phrase
+  class: core
+  meaning_tr: geri dönüştürmek / yeniden kullanmak (geri dönüştürülebilir ürünler)
+  priority: 1
+  variants:
+  - recyclable products
+  - recycle
+  - reuse
+  trap_note: reduce (U9-043) – reuse – recycle = 3R; rubbish (U8-016); recycling bin = geri dönüşüm kutusu
+  meaning_ban:
+  - dönüştür
+  - yeniden kullan
+  - dönüşüm
+- id: U10-036
+  unit: 10
+  theme: Çevreyi korumak
+  display: save (save water / energy; save lives)
+  kind: word
+  class: trap
+  meaning_tr: tasarruf etmek; kurtarmak
+  priority: 1
+  variants:
+  - energy saving light bulbs
+  - save
+  - take short showers
+  - use the water efficiently
+  trap_note: 'üç anlam: save water / energy = tasarruf etmek; save lives = hayat kurtarmak; save money = biriktirmek. energy-saving light bulbs, use water efficiently, take short showers'
+  meaning_ban:
+  - tasarruf
+  - kurtar
+  - birikt
+- id: U10-037
+  unit: 10
+  theme: Çevreyi korumak
+  display: renewable energy / clean energy (solar power / wind power; fossil fuels)
+  kind: phrase
+  class: core
+  meaning_tr: yenilenebilir enerji / temiz enerji (güneş / rüzgâr enerjisi; fosil yakıtlar)
+  priority: 1
+  variants:
+  - fossil fuel depletion
+  - produce
+  - produce clean energy
+  - renewable energy
+  - solar power
+  trap_note: produce clean energy = temiz enerji üretmek; fossil fuels (kömür, petrol) yenilenemez; windmill = rüzgâr türbini, yel değirmeni
+  meaning_ban:
+  - yenilen
+  - temiz enerji
+  - güneş enerji
+  - rüzgâr enerji
+  - fosil
+- id: U10-038
+  unit: 10
+  theme: Çevreyi korumak
+  display: protect / preserve (wildlife conservation)
+  kind: phrase
+  class: core
+  meaning_tr: korumak (vahşi yaşamı koruma)
+  priority: 2
+  variants:
+  - preserve
+  - protect
+  - wildlife conservation
+  trap_note: protect … from …; preserve = korumak, muhafaza etmek; prevent (önlemek) ile karıştırma
+  meaning_ban:
+  - koru
+- id: U10-039
+  unit: 10
+  theme: Tahmin ve neden–sonuç kalıpları
+  display: 'predictions: I think / I believe … will … / What do you think will happen …? (in the future, by 2050)'
+  kind: pattern
+  class: pattern
+  meaning_tr: 'tahmin: Bence … olacak / Sence ne olacak? (gelecekte, 2050''ye kadar)'
+  priority: 1
+  variants:
+  - be going to
+  - what do you think will happen
+  trap_note: 'will + yalın fiil (will happens yanlış), olumsuz won''t; kanıta dayalı tahminde be going to: Look at those clouds! It is going to rain.'
+  meaning_ban:
+  - tahmin
+- id: U10-040
+  unit: 10
+  theme: Tahmin ve neden–sonuç kalıpları
+  display: If / When + Present Simple, … will … (giving results)
+  kind: pattern
+  class: pattern
+  meaning_tr: Eğer … -rsa / …-dığında, … olacak (sonuç bildirmek)
+  priority: 1
+  variants:
+  - if / when … will
+  trap_note: 'If / When yan cümlesinde will yok: If we cut down trees, there will be more landslides. (If we will cut yanlış); when = olduğunda (kesin), if = olursa (olası)'
+  meaning_ban:
+  - olursa
+  - olduğunda
+- id: U10-041
+  unit: 10
+  theme: Tahmin ve neden–sonuç kalıpları
+  display: We should / shouldn't … (suggesting solutions)
+  kind: pattern
+  class: pattern
+  meaning_tr: … -meliyiz / … -memeliyiz (çözüm önermek)
+  priority: 1
+  variants:
+  - we should
+  trap_note: should + yalın fiil (should to yanlış); must / have to (U8-035) daha güçlü zorunluluk; Why don't we …? (U5-059) öneri
+  meaning_ban:
+  - meliyiz
+  - malıyız
+  - memeliyiz
+  - mamalıyız
+- id: U10-042
+  unit: 10
+  theme: Tahmin ve neden–sonuç kalıpları
+  display: cause / lead to (… causes …)
+  kind: phrase
+  class: trap
+  meaning_tr: neden olmak, sebep olmak / yol açmak
+  priority: 1
+  variants:
+  - cause
+  - lead to
+  trap_note: 'cause hem isim (neden: the cause of …) hem fiil (neden olmak); lead to + isim; bağlaçlar so / because of / as a result U9-040, result U9-009'
+  meaning_ban:
+  - neden ol
+  - sebep ol
+  - yol aç
+- id: U10-043
+  unit: 10
+  theme: Tahmin ve neden–sonuç kalıpları
+  display: predict / prediction (guess / forecast)
+  kind: phrase
+  class: trap
+  meaning_tr: tahmin etmek / tahmin (hava tahmini)
+  priority: 1
+  variants:
+  - guess
+  - prediction
+  trap_note: predict = bilgiye dayanarak önceden söylemek; guess = bilmeden tahmin etmek; weather forecast = hava tahmini; I guess (U4-021) = sanırım
+  meaning_ban:
+  - tahmin
+- id: U10-044
+  unit: 10
+  theme: Tahmin ve neden–sonuç kalıpları
+  display: agree / disagree (I agree with you. / I don't agree.)
+  kind: pattern
+  class: pattern
+  meaning_tr: katılmak / katılmamak (Sana katılıyorum. / Katılmıyorum.)
+  priority: 1
+  variants:
+  - agree
+  - disagree
+  trap_note: I am agree yanlış (I agree); agree with + kişi / fikir; görüş kalıpları U2-005 (In my opinion …)
+  meaning_ban:
+  - katıl
+- id: U10-045
+  unit: 10
+  theme: Okuma metinlerinin fiil ve sıfatları
+  display: occur (happen / take place)
+  kind: word
+  class: core
+  meaning_tr: meydana gelmek, olmak
+  priority: 1
+  variants:
+  - occur
+  trap_note: occur = happen (daha resmî); occurred (rr); take place U6-056; Earthquakes occur when the plates move.
+  meaning_ban:
+  - meydana gel
+- id: U10-046
+  unit: 10
+  theme: Okuma metinlerinin fiil ve sıfatları
+  display: sudden / suddenly
+  kind: phrase
+  class: core
+  meaning_tr: ani / aniden, birdenbire
+  priority: 1
+  variants:
+  - sudden
+  trap_note: sudden sıfat (a sudden storm), suddenly zarf (Suddenly the ground shook.)
+  meaning_ban:
+  - aniden
+  - birdenbire
+- id: U10-047
+  unit: 10
+  theme: Okuma metinlerinin fiil ve sıfatları
+  display: consist of
+  kind: phrase
+  class: core
+  meaning_tr: …den oluşmak
+  priority: 2
+  trap_note: The Earth consists of layers. (is consisted of yanlış); A occur ve consist of'a aynı karşılığı ("meydana gelmek") vermiş
+  meaning_ban:
+  - oluş
+  - meydana gel
+- id: U10-048
+  unit: 10
+  theme: Okuma metinlerinin fiil ve sıfatları
+  display: approximately / about
+  kind: phrase
+  class: core
+  meaning_tr: yaklaşık olarak
+  priority: 2
+  variants:
+  - approximately
+  trap_note: approximately = about = around (sayıdan önce); nearly = neredeyse
+  meaning_ban:
+  - yaklaşık

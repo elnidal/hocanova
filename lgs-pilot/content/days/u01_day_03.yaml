@@ -1,0 +1,269 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 3
+status: draft
+title: "Yardım listesi"
+est_minutes: 10
+characters: [Ece, Ece'nin annesi, Selin, Kaan, Duru, Fıstık (köpek), Bora]
+new_items: [U1-067, U1-051, U1-060, U1-059, U1-077, U1-081]
+
+story:
+  - id: s01
+    text: "Cuma akşamı Ece'nin kafasında koca bir liste vardı: balonlar, müzik, masa, pasta."
+  - id: s02
+    text: "\"Bu kadar işi tek başıma yapamam,\" dedi annesine. \"<en>Who can I {U1-051|count on}?</en>\""
+  - id: s03
+    text: "İlk aklına Kaan geldi. Ama Kaan geçen hafta \"beş dakikaya oradayım\" deyip bir saat sonra gelmişti."
+  - id: s04
+    text: "Annesi gülümsedi: \"<en>You can {U1-051|count on} Selin. She is always there for you.</en>\""
+  - id: s05
+    text: "Gerçekten de Selin söz verdiği her şeyi yapardı; ödevini hep zamanında getirir, kimseyi bekletmezdi. Ece ona \"<en>the most {U1-059|reliable} person in our class</en>\" derdi."
+  - id: s06
+    text: "Kaan ise çok iyi bir arkadaştı ama {U1-059|RELIABLE} biri değildi; her şeyi son dakikaya bırakırdı."
+  - id: s07
+    text: "Ece önce Selin'e yazdı: \"<en>Can I {U1-060|rely on} you tomorrow? I need help with the balloons.</en>\""
+  - id: s08
+    text: "Selin hemen cevap verdi: \"<en>Of course! You can {U1-060|rely on} me. I'll be there at 10.</en>\""
+  - id: s09
+    text: "Selin'in annesi ona hep şöyle derdi: \"<en>People {U1-060|rely on} you. That's a good thing.</en>\""
+  - id: s10
+    text: "Sonra Ece kendi yaptığı deneme pastasının fotoğrafını attı: \"<en>Is it good? Be {U1-077|honest}!</en>\""
+  - id: s11
+    text: "Selin bir dakika bekledi. Sonra yazdı: \"<en>To be {U1-077|honest}… it looks like a hat. 😅</en>\""
+  - id: s12
+    text: "Ece önce bozuldu, sonra güldü. Selin'i tam da bu yüzden seviyordu: lafı dolandırmadan doğruyu söylerdi. Kaan'ın deyişiyle: \"<en>Selin is too {U1-077|honest}!</en>\""
+  - id: s13
+    text: "O sırada Duru'nun köpeği Fıstık yine kapının önündeydi; Duru nereye gitse peşinden giderdi."
+  - id: s14
+    text: "Duru gruba bir fotoğraf attı: \"<en>Fıstık is very {U1-081|loyal}. He never leaves me.</en>\""
+  - id: s15
+    text: "Kaan yorum yaptı: \"<en>A {U1-081|loyal} dog! Like me! And I'm {U1-059|reliable} too!</en>\" Bora hemen yazdı: \"<en>No way! You forget everything! 😂</en>\""
+  - id: s16
+    text: "Ece güldü ama içinden düşündü: gerçek bir arkadaş da Fıstık gibi {U1-081|LOYAL} olmalıydı; zor günde yanında kalmalıydı."
+  - id: s17
+    text: "Gece yatmadan annesine sordu: \"<en>Mom, can I {U1-067|trust} Bora with the cake?</en>\""
+  - id: s18
+    text: "Annesi omuz silkti: \"<en>He has an {U1-007|excuse} for everything. Can you really {U1-067|trust} him?</en>\""
+  - id: s19
+    text: "Tam o sırada Bora'dan yeni bir mesaj geldi: \"<en>Ece, {U1-067|trust} me! I will bring the best cake in İzmir!</en>\""
+  - id: s20
+    text: "Ece kendi kendine söylendi: \"<en>Can I really {U1-051|count on} him?</en>\" Sonra ışığı kapattı."
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Selin, can I count on you tomorrow?</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>Of course! You can rely on me. I'm never late.</en>"
+  - id: c03
+    speaker: Ece
+    text: "<en>Thanks! You are so reliable. And honest. The cake really looks like a hat. 😂</en>"
+
+steps:
+  - item: U1-067
+    sezdir:
+      id: d03-067-z
+      type: meaning
+      context: s17
+      prompt: "Hikâyede \"trust\" ne anlama geliyordu?"
+      options: ["güvenmek", "unutmak", "beklemek", "kıskanmak"]
+      answer: 0
+    kullan:
+      id: d03-067-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin never tells lies. I really ________ her.</en>"
+      options: ["trust", "refuse", "forget", "invite"]
+      answer: 0
+    sina:
+      id: d03-067-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>How does Ali feel about Mert now?</en>"
+      stem: "<en>Ali: I told Mert my secret and he told everyone! I can't trust him anymore.</en>"
+      options: ["He is disappointed in Mert.", "He wants to invite Mert to a party.", "He thinks Mert is honest.", "He is proud of Mert."]
+      answer: 0
+  - item: U1-051
+    sezdir:
+      id: d03-051-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"count on\" ne anlama geliyordu?"
+      options: ["güvenmek, bel bağlamak", "saymak", "beklemek", "aramak"]
+      answer: 0
+    kullan:
+      id: d03-051-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't worry. You can always ________ me. I'll help you.</en>"
+      options: ["count on", "count", "look at", "wait"]
+      answer: 0
+      explain: "count = saymak, ama count on = güvenmek. Küçük \"on\" anlamı tamamen değiştiriyor."
+    sina:
+      id: d03-051-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"I can always count on Selin.\" Which one has the CLOSEST meaning to \"count on\"?</en>"
+      options: ["rely on", "look for", "get up", "turn off"]
+      answer: 0
+  - item: U1-060
+    sezdir:
+      id: d03-060-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"rely on\" ne anlama geliyordu?"
+      options: ["güvenmek, -e dayanmak", "bağırmak", "unutmak", "acele etmek"]
+      answer: 0
+    kullan:
+      id: d03-060-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>You can ________ me. I'll be there on time.</en>"
+      options: ["rely on", "refuse", "apologise", "excuse"]
+      answer: 0
+    sina:
+      id: d03-060-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Ece: I need someone to help me with the decorations.\nSelin: ________</en>"
+      options: ["You can rely on me. I'll come early.", "Sorry, I don't like parties.", "I don't know you.", "It was a great party!"]
+      answer: 0
+  - item: U1-059
+    sezdir:
+      id: d03-059-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"reliable\" ne anlama geliyordu?"
+      options: ["güvenilir", "komik", "tembel", "utangaç"]
+      answer: 0
+    kullan:
+      id: d03-059-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin always does what she says. She is very ________.</en>"
+      options: ["reliable", "boring", "lazy", "funny"]
+      answer: 0
+    sina:
+      id: d03-059-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word does NOT describe Kaan?</en>"
+      stem: "<en>Kaan always promises to come at 5, but he usually arrives at 6. Sometimes he forgets to come at all.</en>"
+      options: ["reliable", "late", "forgetful", "unreliable"]
+      answer: 0
+  - item: U1-077
+    sezdir:
+      id: d03-077-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"honest\" ne anlama geliyordu?"
+      options: ["dürüst", "cesur", "hızlı", "sessiz"]
+      answer: 0
+    kullan:
+      id: d03-077-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin always tells the truth. She is ________.</en>"
+      options: ["honest", "lazy", "noisy", "busy"]
+      answer: 0
+    sina:
+      id: d03-077-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What can we say about Duru?</en>"
+      stem: "<en>Duru: Kaan, I didn't like your song very much. But the guitar part was great!</en>"
+      options: ["She is honest.", "She is jealous of Kaan.", "She refuses an invitation.", "She is apologising."]
+      answer: 0
+  - item: U1-081
+    sezdir:
+      id: d03-081-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"loyal\" ne anlama geliyordu?"
+      options: ["sadık", "yorgun", "aç", "kızgın"]
+      answer: 0
+    kullan:
+      id: d03-081-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A ________ friend stays with you in difficult times.</en>"
+      options: ["loyal", "boring", "busy", "new"]
+      answer: 0
+    sina:
+      id: d03-081-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Mert?</en>"
+      stem: "<en>Mert's team lost every match this year, but he still supports them. He never changes his team.</en>"
+      options: ["loyal", "unreliable", "dishonest", "rude"]
+      answer: 0
+
+review:
+  - id: d03-r01
+    type: gap_fill
+    item: U1-019
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Why do you always ________ my invitations? Come to the party this time!</en>"
+    options: ["refuse", "accept", "invite", "trust"]
+    answer: 0
+  - id: d03-r02
+    type: dialogue_complete
+    item: U1-021
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Would you like to come to the cinema tonight?\nB: ________ I have to look after my little brother.</en>"
+    options: ["Sorry, I can't.", "Sounds great!", "Why not?", "I'd love to!"]
+    answer: 0
+  - id: d03-r03
+    type: gap_fill
+    item: U1-007
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Bora always has an ________ when he doesn't come.</en>"
+    options: ["excuse", "umbrella", "orange", "invitation"]
+    answer: 0
+  - id: d03-r04
+    type: situation
+    item: U1-002
+    prompt: "<en>Kaan stepped on Duru's foot. What should he do?</en>"
+    options: ["apologise", "accept", "invite her", "refuse"]
+    answer: 0
+  - id: d03-r05
+    type: dialogue_complete
+    item: U1-025
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Let's have pizza tonight!\nB: ________ I love pizza.</en>"
+    options: ["Why not?", "Sorry, I can't.", "I'm busy.", "That's a bad idea."]
+    answer: 0
+  - id: d03-r06
+    type: gap_fill
+    item: U1-022
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>A: How about a picnic on Sunday?\nB: ________! I'll bring some fruit.</en>"
+    options: ["Sounds great", "Sounds boring", "Sorry", "No, thanks"]
+    answer: 0
+
+tips:
+  - type: hafiza_kancasi
+    refs: [U1-059, U1-060]
+    text: "reliable = rely (güvenmek) + able (-ebilir): \"güvenilebilir\". Kelimeyi ikiye bölünce anlamı ortaya çıkıyor."
+  - type: lgs_taktigi
+    refs: [U1-067, U1-051, U1-060]
+    text: "trust · count on · rely on · depend on: dördü de \"güvenmek\". LGS'de \"Hangisi en yakın anlamdadır?\" sorusunda biri soruda, biri şıkta çıkabilir."
+  - type: tuzak
+    refs: [U1-051]
+    text: "count = saymak (count to ten). count ON = güvenmek. Küçük bir \"on\", bambaşka anlam."
+
+coach:
+  start: "Ece yarın için yardım arıyor. Kim gerçekten gelir, kim son dakikada kaybolur? 🤝"
+  end_good: "Süper! \"Güvenmek\" demenin üç yolunu öğrendin. LGS'nin eş anlam sorularında bu çok işine yarayacak."
+  end_mixed: "İyi gidiyorsun. {weak} biraz karıştı; yarın başka bir hikâyede yine karşına çıkacak."
+
+notifications:
+  morning: "Yarın parti var. Kaan mı, Selin mi, yoksa Bora mı işe yarayacak? 🤔"
+  evening: "Pasta bir şapkaya benziyor ve Selin bunu söylemekten çekinmedi 😅 Dersin 10 dakika."
+  review: "Tek soru: \"count on\" ile aynı anlamdaki ifade hangisi? rely on mı, look for mu?"
+
+editor:
+  z07: {U1-067: BEKLIYOR, U1-051: BEKLIYOR, U1-060: BEKLIYOR, U1-059: BEKLIYOR, U1-077: BEKLIYOR, U1-081: BEKLIYOR}

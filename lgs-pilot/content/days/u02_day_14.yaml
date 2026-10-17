@@ -1,0 +1,290 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 14
+status: draft
+title: "Murat Bey'in listesi"
+est_minutes: 10
+characters: [Murat Bey, Ece, Kaan, Bora, Selin, Duru, Elif]
+new_items: [U2-079, U2-080, U2-081, U2-082, U2-083]
+
+story:
+  - id: s01
+    text: "Pazartesi sabahı. Murat Bey sınıfa girer girmez sordu: \"<en>How is your Teen Life Survey going?</en>\""
+  - id: s02
+    text: "Ece hemen ayağa kalktı: \"<en>Great! Question 5 is: What do you watch at home? Most people said films.</en>\""
+  - id: s03
+    text: "Murat Bey gülümsedi: \"<en>Films are great. But today I want to {U2-079|recommend} something different: a documentary called 'Blue Planet'.</en>\""
+  - id: s04
+    text: "Kaan inledi: \"<en>A documentary? Sir, documentaries are so slow!</en>\" Murat Bey başını salladı: \"<en>Not this one. It's very {U2-082|educational}. You learn about the ocean, and the animals are {U2-077|fascinating}.</en>\""
+  - id: s05
+    text: "Kaan yine de ikna olmadı: \"<en>But I want something {U2-083|entertaining}. Explosions! Spaceships! Car chases!</en>\""
+  - id: s06
+    text: "Bora atıldı: \"<en>Like 'Planet Zero'! That film was {U2-074|awesome}!</en>\" Murat Bey kaşını kaldırdı: \"<en>Hmm. Was it {U2-082|educational} too?</en>\" Bora düşündü: \"<en>Well… I learnt that aliens can't sing.</en>\" Sınıf kahkahalara boğuldu."
+  - id: s07
+    text: "Selin parmak kaldırdı: \"<en>Why not both? Some documentaries are {U2-082|educational} and {U2-083|entertaining} at the same time.</en>\""
+  - id: s08
+    text: "Murat Bey tahtaya bir soru yazdı: \"<en>Good point, Selin. I {U2-080|suggest} adding a new question to your survey: Do you prefer educational or entertaining programmes?</en>\""
+  - id: s09
+    text: "Ece soruyu defterine geçirdi, sonra biraz çekinerek sordu: \"<en>Sir, can you {U2-079|recommend} a documentary about {U2-061|fashion}?</en>\""
+  - id: s10
+    text: "Murat Bey bir an düşündü: \"<en>Yes! 'A Hundred Years of Style'. It shows how {U2-062|trendy} clothes changed from 1920 to today.</en>\""
+  - id: s11
+    text: "Ece'nin gözleri parladı: \"<en>Perfect! I always {U2-063|keep up with the latest fashion}, but I don't know its history.</en>\""
+  - id: s12
+    text: "Kaan, Bora'ya fısıldadı: \"<en>Ece is so {U1-038|interested in} clothes. She has a new {U2-066|outfit} every day!</en>\""
+  - id: s13
+    text: "Ece duydu tabii: \"<en>Not every day! On Mondays I wear {U2-064|casual clothes}. Look: jeans and a hoodie.</en>\""
+  - id: s14
+    text: "Murat Bey güldü: \"<en>In that documentary, people wear {U2-065|smart clothes} even at the beach. Suits and hats in the sea!</en>\" Bora: \"<en>Now that sounds {U2-083|entertaining}!</en>\""
+  - id: s15
+    text: "Duru arka sıradan elini kaldırdı: \"<en>Sir, what about books? Can you {U2-079|recommend} a book? A short one, please.</en>\""
+  - id: s16
+    text: "Murat Bey tahtaya bir kitap adı yazdı: \"<en>This one is about a dog. He travels across Türkiye alone. It's short and very funny.</en>\" Duru ilk kez dik oturdu: \"<en>A dog? OK, I'm listening.</en>\""
+  - id: s17
+    text: "Ama Kaan ile Selin hâlâ geri adım atmıyordu. Kaan kollarını kavuşturdu: \"<en>You're so {U1-091|stubborn}, Selin!</en>\" Selin: \"<en>Me? You're the {U1-091|stubborn} one!</en>\""
+  - id: s18
+    text: "Murat Bey araya girdi: \"<en>Can I {U2-081|advise} you both? Don't talk about it now. Watch the documentary first, then talk again.</en>\""
+  - id: s19
+    text: "Bora parmak kaldırdı: \"<en>Then I {U2-080|suggest} watching it together at school! In the library, with snacks!</en>\" Herkes alkışladı; atıştırmalık kısmı Murat Bey'i pek ikna etmedi."
+  - id: s20
+    text: "Perşembe öğle arası belgesel kütüphanede izlendi. Ekranda karanlıkta ışık saçan bir balık belirince Kaan yerinden fırladı: \"<en>Wow! A fish with lights! That's {U2-077|fascinating}!</en>\""
+  - id: s21
+    text: "Film bitince Selin, Kaan'a döndü: \"<en>So? Was it {U2-083|entertaining} or {U2-082|educational}?</en>\" Kaan sırıttı: \"<en>Both! OK, you win.</en>\" Selin: \"<en>See? We have the {U1-042|same opinion} now!</en>\""
+  - id: s22
+    text: "Kaan, Murat Bey'e döndü: \"<en>Sir, you were right. Next time, please {U2-080|suggest} a film AND a documentary!</en>\""
+  - id: s23
+    text: "Murat Bey gülümsedi: \"<en>Deal. And I {U2-081|advise} you all to write this in your survey report.</en>\""
+  - id: s24
+    text: "Akşam Bora sınıf grubuna yazdı: \"<en>My mum always {U2-081|advises} me to read more. Now I have a list from Murat Bey. She's very happy!</en>\" Duru cevap verdi: \"<en>I'm reading the dog book. Page 3. Don't rush me.</en>\""
+
+scene:
+  - id: c01
+    speaker: Duru
+    text: "<en>Sir, can you recommend a good book?</en>"
+  - id: c02
+    speaker: Murat Bey
+    text: "<en>Sure. I suggest reading this one. It's about a dog, and it's very funny.</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>Is it educational or entertaining?</en>"
+  - id: c04
+    speaker: Murat Bey
+    text: "<en>Both! And I advise you to read a little every night.</en>"
+
+steps:
+  - item: U2-079
+    sezdir:
+      id: u2d14-079-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"recommend\" ne anlama geliyordu?"
+      options: ["tavsiye etmek, önermek", "yasaklamak", "izlemek", "hatırlamak"]
+      answer: 0
+    kullan:
+      id: u2d14-079-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: I want to read a good book this weekend. Can you ________ one?\nB: Sure! Try 'The Little Prince'.</en>"
+      options: ["recommend", "refuse", "hate", "forget"]
+      answer: 0
+    sina:
+      id: u2d14-079-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>A: ________\nB: Yes! Try the pizza place near the park. Their pizzas are terrific.</en>"
+      options: ["Can you recommend a good restaurant?", "Did you cook pizza yesterday?", "Do you hate pizza?", "How far is the park?"]
+      answer: 0
+  - item: U2-080
+    sezdir:
+      id: u2d14-080-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"suggest\" ne anlama geliyordu?"
+      options: ["önermek", "şikâyet etmek", "sormak", "silmek"]
+      answer: 0
+    kullan:
+      id: u2d14-080-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>It's raining. I ________ watching a film at home. We can go to the park tomorrow.</en>"
+      options: ["suggest", "forget", "apologise", "invite"]
+      answer: 0
+    sina:
+      id: u2d14-080-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Selin doing in this message?</en>"
+      stem: "<en>Selin: We have a maths exam on Friday. Why don't we study together at the library after school?</en>"
+      options: ["She is suggesting a plan.", "She is refusing an invitation.", "She is apologising.", "She is complaining about the library."]
+      answer: 0
+  - item: U2-081
+    sezdir:
+      id: u2d14-081-z
+      type: meaning
+      context: s18
+      prompt: "Hikâyede \"advise\" ne anlama geliyordu?"
+      options: ["tavsiye vermek", "emretmek", "yasaklamak", "övmek"]
+      answer: 0
+    kullan:
+      id: u2d14-081-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The doctor ________ me to drink more water and sleep eight hours a night.</en>"
+      options: ["advised", "admired", "annoyed", "refused"]
+      answer: 0
+    sina:
+      id: u2d14-081-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Your friend has a bad cold, but he wants to go to football training. What do you advise him?</en>"
+      options: ["You should stay at home and rest.", "You should train harder today.", "You should eat a lot of ice cream.", "You should swim in the cold sea."]
+      answer: 0
+  - item: U2-082
+    sezdir:
+      id: u2d14-082-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"educational\" ne anlama geliyordu?"
+      options: ["eğitici, öğretici", "eğlendirici", "sıkıcı", "korkutucu"]
+      answer: 0
+    kullan:
+      id: u2d14-082-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This app teaches you twenty new words a day. It's very ________.</en>"
+      options: ["educational", "awful", "ridiculous", "noisy"]
+      answer: 0
+    sina:
+      id: u2d14-082-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"The museum trip was educational.\" Which one is CLOSEST in meaning?</en>"
+      options: ["We learnt a lot on the trip.", "We laughed a lot on the trip.", "The trip was very noisy.", "The trip was too expensive."]
+      answer: 0
+  - item: U2-083
+    sezdir:
+      id: u2d14-083-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"entertaining\" ne anlama geliyordu?"
+      options: ["eğlendirici", "eğitici", "üzücü", "uzun"]
+      answer: 0
+    kullan:
+      id: u2d14-083-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The comedy show was really ________. We laughed for two hours.</en>"
+      options: ["entertaining", "educational", "boring", "formal"]
+      answer: 0
+    sina:
+      id: u2d14-083-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which one is TRUE about the cartoon?</en>"
+      stem: "<en>Mert: Last night I watched a cartoon about a silly cat. I didn't learn anything, but I laughed a lot!</en>"
+      options: ["It was entertaining but not educational.", "It was educational but not entertaining.", "It was both educational and entertaining.", "It was neither educational nor entertaining."]
+      answer: 0
+
+review:
+  - id: u2d14-r01
+    type: gap_fill
+    item: U2-073
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>My brother loves films about robots, aliens and life on Mars. His favourite genre is ________.</en>"
+    options: ["science fiction", "folk music", "jazz", "fashion"]
+    answer: 0
+  - id: u2d14-r02
+    type: dialogue_complete
+    item: U2-074
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: I've got two free tickets for the concert! Do you want to come?\nB: ________ I love that band!</en>"
+    options: ["Wow, that's awesome!", "Oh no, that's awful.", "That's so boring.", "What a ridiculous idea!"]
+    answer: 0
+  - id: u2d14-r03
+    type: synonym
+    item: U2-075
+    prompt: "<en>\"Your English is terrific!\" Which one is CLOSEST in meaning?</en>"
+    options: ["Your English is excellent.", "Your English is terrible.", "Your English is scary.", "Your English is boring."]
+    answer: 0
+  - id: u2d14-r04
+    type: gap_fill
+    item: U2-076
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Bora learnt to play the drums in only two months. That's very ________.</en>"
+    options: ["impressive", "awful", "ordinary", "annoying"]
+    answer: 0
+  - id: u2d14-r05
+    type: situation
+    item: U2-077
+    prompt: "<en>How does Elif find octopuses?</en>"
+    stem: "<en>Elif reads about octopuses for hours. She thinks they are amazing and very interesting animals.</en>"
+    options: ["fascinating", "awful", "boring", "annoying"]
+    answer: 0
+  - id: u2d14-r06
+    type: gap_fill
+    item: U2-078
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>The weather was ________ on our holiday. It rained every day, and it was very cold.</en>"
+    options: ["awful", "terrific", "awesome", "impressive"]
+    answer: 0
+  - id: u2d14-r07
+    type: message_infer
+    item: U2-037
+    lgs_like: true
+    prompt: "<en>What kind of sport is Bora looking for?</en>"
+    stem: "<en>Bora: I don't want to play in a team. I want a sport I can do alone, at my own speed.</en>"
+    options: ["an individual sport", "a team sport", "a ball game with ten players", "a relay race"]
+    answer: 0
+  - id: u2d14-r08
+    type: message_infer
+    item: U2-039
+    lgs_like: true
+    prompt: "<en>What does Selin do on Sundays?</en>"
+    stem: "<en>Selin: Every Sunday my dad and I walk in the mountains for hours. We love nature!</en>"
+    options: ["She goes hiking.", "She does karate.", "She goes to the gym.", "She chats online."]
+    answer: 0
+  - id: u2d14-r09
+    type: dialogue_complete
+    item: U2-041
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Murat Bey: Bora, please ________. This information is important for the exam.\nBora: Sorry, sir. I'm listening now.</en>"
+    options: ["pay attention", "rest", "take a selfie", "hang out"]
+    answer: 0
+  - id: u2d14-r10
+    type: message_infer
+    item: U2-042
+    lgs_like: true
+    prompt: "<en>How does Ece feel?</en>"
+    stem: "<en>Ece: The neighbour's dog barked all night, and I couldn't sleep. I'm really angry now!</en>"
+    options: ["annoyed", "calm", "excited", "fascinated"]
+    answer: 0
+
+tips:
+  - type: mini_dilbilgisi
+    refs: [U2-079, U2-080, U2-081]
+    text: "Üç fiil, üç kalıp: recommend + isim (\"I recommend this book.\") · suggest + -ing (\"I suggest watching it.\") · advise + kişi + to (\"He advised me to rest.\"). Dikkat: \"suggest me to…\" yanlış!"
+  - type: tuzak
+    refs: [U2-081, U1-035]
+    text: "advise (fiil, sonu /z/ sesiyle: \"advayz\") ≠ advice (isim, sonu /s/ sesiyle: \"advays\"). \"She advised me.\" ama \"She gave me advice.\""
+  - type: kelime_ailesi
+    refs: [U2-082, U2-083]
+    text: "educate (eğitmek) → education (eğitim) → educational (eğitici) · entertain (eğlendirmek) → entertainment (eğlence) → entertaining (eğlendirici)."
+  - type: lgs_taktigi
+    refs: [U2-079, U2-080]
+    text: "LGS'de \"Can you recommend…?\" sorusunun cevabı genelde \"Try…\", \"You should…\" ya da \"Why don't you…?\" ile başlar. Diyalog tamamlamada bu ipuçlarını ara."
+
+coach:
+  start: "Murat Bey bugün bir liste getirdi: belgeseller, kitaplar ve… uzaylılar mı? 📚 Hadi bakalım!"
+  end_good: "Harikasın! 🌟 Artık birine kitap, film ya da plan önerirken üç farklı fiil kullanabilirsin. Murat Bey'in listesine senin adını da yazdım!"
+  end_mixed: "{weak} biraz inat etti, Kaan ile Selin kadar inatçı! 😄 Yarın bir kez daha görünce barışacaksınız."
+
+notifications:
+  morning: "Murat Bey'in listesinde ne var? 📚 Bir belgesel, bir kitap ve uzaylılar!"
+  evening: "Kaan ile Selin hâlâ anlaşamadı. Kazananı 10 dakikalık derste öğren! 🐟"
+  review: "Tek soru: \"I suggest to go\" mu, \"I suggest going\" mi? 🤔"
+
+editor:
+  z07: {U2-079: BEKLIYOR, U2-080: BEKLIYOR, U2-081: BEKLIYOR, U2-082: BEKLIYOR, U2-083: BEKLIYOR}

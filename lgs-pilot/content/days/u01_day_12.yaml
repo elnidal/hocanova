@@ -1,0 +1,304 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 12
+status: draft
+title: "Bir paket cips"
+est_minutes: 10
+characters: [Bora, Kaan, Ece, Selin, Duru, Elif]
+new_items: [U1-035, U1-037, U1-043, U1-044, U1-063, U1-064]
+
+story:
+  - id: s01
+    text: "Salı sabahı. Bora okula erkenden geldi ve doğruca kütüphaneye gitti."
+  - id: s02
+    text: "Ece ile Selin onu orada buldu. Ece masaya eğildi: \"<en>Bora, can we {U1-035|give you some advice}?</en>\" Bora: \"<en>Do I have a choice?</en>\""
+  - id: s03
+    text: "Selin karşısına oturdu: \"<en>Kaan made a big mistake. But talk to him. Don't let one {U1-062|secret} end everything.</en>\""
+  - id: s04
+    text: "Ece de ekledi: \"<en>Think about the good days. He was {U1-037|always there for you}.</en>\""
+  - id: s05
+    text: "Bora bir süre sustu. Aklına geçen kış geldi: bisikleti bozulmuştu ve Kaan bir ay boyunca her sabah onunla okula yürümüştü. Hem de Kaan, yani sınıfın en geç kalan çocuğu!"
+  - id: s06
+    text: "Bora sonunda gülümsedi: \"<en>You're right. When my bike broke, he walked with me every morning. He's {U1-037|always there for me}.</en>\""
+  - id: s07
+    text: "Bu arada koridorun öbür ucunda Kaan, Duru ve Elif'e dert yanıyordu: \"<en>Bora doesn't {U1-020|reply} to my messages. What should I do?</en>\""
+  - id: s08
+    text: "Duru esnedi ama bu kez çok ciddiydi: \"<en>My {U1-035|advice}? Don't send another message. Go and say sorry. Face to face.</en>\""
+  - id: s09
+    text: "Elif ekledi: \"<en>And {U1-043|share} something with him. Everybody loves chips!</en>\""
+  - id: s10
+    text: "Kaan'ın gözleri parladı: \"<en>Chips! Of course! Thanks for the {U1-035|advice}, girls!</en>\""
+  - id: s11
+    text: "Öğle arası. Bora kantinde oturuyordu. Kaan elinde kocaman bir cips paketiyle masaya yaklaştı."
+  - id: s12
+    text: "Derin bir nefes aldı: \"<en>Bora, I'm really sorry. I told everyone about your dance class. It was wrong.</en>\""
+  - id: s13
+    text: "Sonra itiraf etti: \"<en>I couldn't sleep for days. I {U1-016|missed} the bus twice!</en>\" Bora kahkahayı zor tuttu."
+  - id: s14
+    text: "Kaan paketi uzattı: \"<en>Do you want to {U1-043|share} my chips? Peace?</en>\" Bora paketi aldı: \"<en>Peace. But I'm taking the big ones.</en>\""
+  - id: s15
+    text: "Kaan kulaklığının bir tekini Bora'ya verdi: \"<en>And let's {U1-043|share} my headphones. Listen to this song!</en>\""
+  - id: s16
+    text: "Bora şarkıyı dinlerken başını salladı: \"<en>You know what? You {U1-063|supported} me so many times. I can't stay angry with you.</en>\""
+  - id: s17
+    text: "Kaan heyecanla ayağa fırladı: \"<en>And I'll {U1-063|support} you at your dance show! I'll be in the front row!</en>\" Bora: \"<en>Wait… you want to {U1-003|attend} my show?</en>\" Kaan: \"<en>Of course! I won't {U1-016|miss} it. I'll even come early!</en>\""
+  - id: s18
+    text: "Selin ile Ece kantinin kapısından izliyordu. Ece fısıldadı: \"<en>Look! They're {U1-064|supporting each other} again.</en>\""
+  - id: s19
+    text: "Selin memnun bir yüzle kollarını kavuşturdu: \"<en>Good friends {U1-064|support each other}. That's what matters.</en>\""
+  - id: s20
+    text: "Okuldan sonra ikisi parka gitti. Bora: \"<en>I'm not {U1-004|busy} today. {U1-009|I have nothing to do}.</en>\" Kaan: \"<en>Me neither! Let's {U1-044|spend time} together.</en>\""
+  - id: s21
+    text: "Duru gruba bir fotoğraf attı: Kaan ve Bora salıncakta, ağızları cips dolu. Altına yazdı: \"<en>Look who's {U1-044|spending time} together again!</en>\""
+  - id: s22
+    text: "Elif hemen yazdı: \"<en>Can we {U1-015|join} you?</en>\" Kaan: \"<en>Sure! We love {U1-044|spending time} with you all.</en>\""
+  - id: s23
+    text: "Ece de bir kalp attı: \"<en>You two {U1-064|support each other} like brothers. Don't forget that!</en>\""
+  - id: s24
+    text: "Akşam herkes parktaydı. Bora hepsine baktı: \"<en>Thanks for {U1-063|supporting} me this week, guys. You're {U1-037|always there for me}.</en>\""
+  - id: s25
+    text: "Kaan göz kırptı: \"<en>Dance show next Saturday, right? I'll be there.</en>\" Bora: \"<en>You'll be late.</en>\" Kaan: \"<en>Probably!</en>\" İkisi de kahkahayı bastı."
+
+scene:
+  - id: c01
+    speaker: Duru
+    text: "<en>Kaan, here's my advice: say sorry face to face.</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>Bora, I'm sorry. Do you want to share my chips?</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>OK, peace! You're always there for me.</en>"
+  - id: c04
+    speaker: Selin
+    text: "<en>Good friends support each other and spend time together.</en>"
+
+steps:
+  - item: U1-035
+    sezdir:
+      id: d12-035-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"advice\" (give advice) ne anlama geliyordu?"
+      options: ["tavsiye (vermek)", "izin (vermek)", "ödev (vermek)", "hediye (vermek)"]
+      answer: 0
+    kullan:
+      id: d12-035-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My sister always listens to my problems and ________. She tells me what to do.</en>"
+      options: ["gives me advice", "tells me lies", "argues with me", "misses the bus"]
+      answer: 0
+    sina:
+      id: d12-035-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Bora: I argued with my best friend. What should I do?\nSelin: ________</en>"
+      options: ["My advice is to talk to him face to face.", "I argued with him yesterday.", "He has a new bike.", "I'm stuffed, thanks."]
+      answer: 0
+  - item: U1-037
+    sezdir:
+      id: d12-037-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"He's always there for me.\" ne anlama geliyordu?"
+      options: ["Her zaman yanımda.", "Hiç yanımda değil.", "Her zaman geç kalır.", "Hep orada yaşar."]
+      answer: 0
+    kullan:
+      id: d12-037-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Whenever I have a problem, my sister helps me. She is always ________ me.</en>"
+      options: ["there for", "angry with", "far from", "bored with"]
+      answer: 0
+    sina:
+      id: d12-037-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What does Ece mean?</en>"
+      stem: "<en>Ece: Selin is always there for me.</en>"
+      options: ["Selin helps and supports her when she needs it.", "Selin always waits for her at the same place.", "Selin lives near her house.", "Selin is never at school."]
+      answer: 0
+  - item: U1-043
+    sezdir:
+      id: d12-043-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"share\" ne anlama geliyordu?"
+      options: ["paylaşmak", "satmak", "saklamak", "atmak"]
+      answer: 0
+    kullan:
+      id: d12-043-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I have two sandwiches. I can ________ them with you.</en>"
+      options: ["share", "argue", "miss", "text"]
+      answer: 0
+    sina:
+      id: d12-043-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Kaan has a big bag of chips. Bora is hungry. What does a good friend do?</en>"
+      options: ["He shares his chips with Bora.", "He eats all the chips himself.", "He hides the chips from Bora.", "He sells the chips to Bora."]
+      answer: 0
+  - item: U1-044
+    sezdir:
+      id: d12-044-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede \"spend time\" ne anlama geliyordu?"
+      options: ["zaman geçirmek", "para harcamak", "saati kurmak", "zamanı unutmak"]
+      answer: 0
+    kullan:
+      id: d12-044-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I love my grandparents. I ________ with them every weekend. We cook and play games together.</en>"
+      options: ["spend time", "argue", "feel alone", "tell lies"]
+      answer: 0
+    sina:
+      id: d12-044-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Duru and Elif spend a lot of time together.\" Which one is CLOSEST in meaning?</en>"
+      options: ["They are often together.", "They spend a lot of money.", "They never see each other.", "They are always busy."]
+      answer: 0
+  - item: U1-063
+    sezdir:
+      id: d12-063-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"support\" ne anlama geliyordu?"
+      options: ["desteklemek", "kızmak", "unutmak", "beklemek"]
+      answer: 0
+    kullan:
+      id: d12-063-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My parents always ________ me. They come to all my basketball games.</en>"
+      options: ["support", "argue with", "lie to", "refuse"]
+      answer: 0
+    sina:
+      id: d12-063-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which sentence does NOT show support?</en>"
+      options: ["You can't do it. Just stop.", "You can do it! Don't give up.", "I'm with you. Let's try again.", "Don't worry. I'll help you."]
+      answer: 0
+  - item: U1-064
+    sezdir:
+      id: d12-064-z
+      type: meaning
+      context: s19
+      prompt: "Hikâyede \"support each other\" ne anlama geliyordu?"
+      options: ["birbirini desteklemek", "birbiriyle yarışmak", "birbirini beklemek", "birbirinden kaçmak"]
+      answer: 0
+    kullan:
+      id: d12-064-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin is good at maths and Ece is good at English. They help with each other's homework. They ________.</en>"
+      options: ["support each other", "argue with each other", "tell lies", "feel alone"]
+      answer: 0
+    sina:
+      id: d12-064-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Elif: What makes a good friendship?\nDuru: ________</en>"
+      options: ["Friends support each other in good and bad times.", "Friends never spend time together.", "Friends tell secrets to others.", "Friends argue all the time."]
+      answer: 0
+
+review:
+  - id: d12-r01
+    type: gap_fill
+    item: U1-053
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Cheating in a game is ________. It isn't fair.</en>"
+    options: ["dishonesty", "friendship", "support", "advice"]
+    answer: 0
+  - id: d12-r02
+    type: situation
+    item: U1-056
+    prompt: "<en>Bora said, \"I have a cat.\" But he doesn't have a cat. What did he say?</en>"
+    options: ["a lie", "a secret", "a promise", "the truth"]
+    answer: 0
+  - id: d12-r03
+    type: gap_fill
+    item: U1-058
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>A: Will you come to my dance show?\nB: Yes, I ________. I'll be there.</en>"
+    options: ["promise", "lie", "argue", "refuse"]
+    answer: 0
+  - id: d12-r04
+    type: gap_fill
+    item: U1-062
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>The surprise party is a ________. Don't tell Ece!</en>"
+    options: ["secret", "lie", "feeling", "promise"]
+    answer: 0
+  - id: d12-r05
+    type: trait_match
+    item: U1-065
+    prompt: "<en>Which word describes a person who often tells lies?</en>"
+    options: ["dishonest", "honest", "reliable", "caring"]
+    answer: 0
+  - id: d12-r06
+    type: situation
+    item: U1-066
+    prompt: "<en>Ece told Kaan a secret: she was writing a song. The next day, the whole class knew about it. What did Kaan do?</en>"
+    options: ["He told her secret to others.", "He kept her secret.", "He kept his promise.", "He gave her advice."]
+    answer: 0
+  - id: d12-r07
+    type: trait_match
+    item: U1-084
+    lgs_like: true
+    prompt: "<en>Which word describes Elif BEST?</en>"
+    stem: "<en>Elif loves meeting new people. On her first day at school, she talked to everyone in the class.</en>"
+    options: ["outgoing", "shy", "mean", "quiet"]
+    answer: 0
+  - id: d12-r08
+    type: dialogue_complete
+    item: U1-097
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece's mum: Would you like another piece of cake, Bora?\nBora: ________ I've already had three!</en>"
+    options: ["No, thanks. I'm full.", "Yes, please. I'm hungry.", "Sorry, I'm busy.", "I have nothing to do."]
+    answer: 0
+  - id: d12-r09
+    type: odd_one_out
+    item: U1-083
+    lgs_like: true
+    prompt: "<en>In which sentence does \"mean\" describe a person's character?</en>"
+    options: ["Don't be mean to your little brother.", "What does this word mean?", "I don't understand what you mean.", "A red light means stop."]
+    answer: 0
+    explain: "Birinci cümlede mean = kaba, cimri (kişilik). Diğerlerinde \"anlamına gelmek, kastetmek\"."
+
+tips:
+  - type: tuzak
+    refs: [U1-035]
+    text: "advice sayılamaz! ❌ an advice, ❌ advices. ✓ some advice, a piece of advice. Fiili ise s ile yazılır: advise (tavsiye etmek)."
+  - type: tuzak
+    refs: [U1-044]
+    text: "spend time = zaman geçirmek, ama spend money = para harcamak. Geçmiş hali düzensiz: spent. \"We spent the day in the park.\""
+  - type: mini_dilbilgisi
+    refs: [U1-043]
+    text: "share something WITH someone: \"Kaan shares his chips with Bora.\" Kiminle paylaştığını with ile söyle."
+  - type: hafiza_kancasi
+    refs: [U1-037]
+    text: "\"He's always there for me\" kelimesi kelimesine \"o hep benim için orada\". İhtiyacın olduğu her an, oradaymış gibi gelen kişi. Adres sormuyoruz, kalpten bahsediyoruz!"
+
+coach:
+  start: "Bugün bir paket cipsin gücünü göreceğiz. 🍟 Önce dünkü kelimelere hızlı bir bakış!"
+  end_good: "Muhteşem! Barışmanın İngilizcesini öğrendin. Yarın Murat Bey'den sürpriz bir proje geliyor. 📚"
+  end_mixed: "Bugün güzel iş çıkardın. {weak} yarın tekrar karşına çıkacak; birlikte halledeceğiz. 🤝"
+
+notifications:
+  morning: "Kaan'ın elinde dev bir cips paketi var. Bora buna hayır diyebilir mi? 🍟"
+  evening: "Kütüphane, koridor, kantin… Bugün herkes Kaan ile Bora için bir şeyler yapıyor. 10 dakika!"
+  review: "Tek soru: \"Can you give me an advice?\" Bu cümledeki hatayı bulabilir misin?"
+
+editor:
+  z07: {U1-035: BEKLIYOR, U1-037: BEKLIYOR, U1-043: BEKLIYOR, U1-044: BEKLIYOR, U1-063: BEKLIYOR, U1-064: BEKLIYOR}

@@ -1,0 +1,308 @@
+schema_version: 1
+program: lgs
+unit: 6
+day: 6
+status: draft
+title: "Zil kimin için çalıyor?"
+est_minutes: 10
+characters: [Ece, Kaan, Selin, Bora, Elif, Duru]
+new_items: [U6-009, U6-016, U6-049, U6-050, U6-051, U6-052]
+
+story:
+  - id: s01
+    text: "Bahar kampının ilk tam günü, sabah dokuz. Çam ağaçlarının arasında on metrelik ahşap bir duvar yükseliyordu. Üstü yüzlerce renkli tutamakla kaplıydı, en üstünde de küçük, parlak bir zil asılıydı."
+  - id: s02
+    text: "Ece dört sayfalık listesinden okudu: \"<en>Nine o'clock: climbing wall. Ten o'clock: zip-line. Twelve o'clock: lunch!</en>\" Kaan çoktan duvarın dibindeydi. Selin iç çekti: \"<en>Kaan is {U1-075|always in a hurry}. Even at camp.</en>\""
+  - id: s03
+    text: "Deniz Hoca herkesin kaskını ve emniyet kemerini tek tek kontrol etti: \"<en>Safety first. {U2-041|Pay attention}, please. I hold the rope, and you {U6-009|climb}. Nobody {U6-009|climbs} without me.</en>\""
+  - id: s04
+    text: "Sonra herkese aynı soruyu sordu: \"<en>Everybody needs a {U6-051|goal} today. It can be big or small. What's your {U6-051|aim}?</en>\""
+  - id: s05
+    text: "Kaan: \"<en>The top! In one minute, {U1-028|buddy}!</en>\" Selin parmağını kaldırdı: \"<en>My {U6-051|aim} is the zip-line. And I'm going first.</en>\""
+  - id: s06
+    text: "Herkes donup kaldı. Dergideki testten 2/10 alan, \"<en>I love plans.</en>\" diyen Selin mi? Selin omuz silkti: \"<en>I always follow the plan. Today the plan is fear.</en>\""
+  - id: s07
+    text: "Bora ise duvarın dibinde başını kaldırmış, zile bakıyordu. Normalde cebinde hazır bir bahane olurdu: karın ağrısı, kayıp ayakkabı, olmayan kedi… Bu sefer hiçbirini kullanmadı: \"<en>I'm {U4-054|scared}. Really {U4-054|scared}.</en>\""
+  - id: s08
+    text: "Deniz Hoca gülümsedi: \"<en>Thank you for telling me, Bora. Saying 'I'm {U4-054|scared}' needs {U6-016|courage} too.</en>\""
+  - id: s09
+    text: "Deniz Hoca: \"<en>Why don't you choose a smaller {U6-051|goal}? Half the wall, maybe?</en>\" Bora yutkundu: \"<en>Half. OK. Half is my {U6-051|aim}.</en>\""
+  - id: s10
+    text: "İlk Kaan çıktı. İki dakikada duvarın yarısındaydı, sonra birden durdu: \"<en>Er… which one is next?</en>\" Deniz Hoca aşağıdan seslendi: \"<en>Slow down, Kaan. Slow is safer than fast. Look first, then move. That's how you {U6-050|improve}.</en>\""
+  - id: s11
+    text: "Ece her tutamağı aşağıdan planladı: \"<en>Blue, then red, then the yellow one…</en>\" Plan işledi; yavaş ama hatasız yukarı çıktı. Kaan da ikinci denemesinde yavaşladı ve zili çaldı."
+  - id: s12
+    text: "Sıra Bora'daydı. Dizleri jöle gibiydi. Elif aşağıdan bağırdı: \"<en>You can do it, Bora! Be {U6-016|brave}!</en>\" Duru hamaktan tek gözünü açtı: \"<en>Go, Bora.</en>\" Duru için bu uzun bir nutuktu."
+  - id: s13
+    text: "Bora tutamak tutamak ilerledi ve duvarın tam ortasına geldi: \"<en>Half! I {U6-049|succeeded}! Can I come down now?</en>\""
+  - id: s14
+    text: "Deniz Hoca ipi sıkıca tutuyordu: \"<en>You can come down. Or you can try one more. You choose.</en>\""
+  - id: s15
+    text: "Bora önce aşağı baktı, sonra yukarı. Uzun bir sessizlik oldu. \"<en>{U6-036|I'd rather} {U6-009|climb} one more than go down now.</en>\""
+  - id: s16
+    text: "Bir tutamak daha. Bir tane daha. Aşağıdaki herkes nefesini tutmuştu. Ve sonra… çın! Bora zile dokundu. Kamp alanı alkıştan inledi."
+  - id: s17
+    text: "Kaan: \"<en>Bora! {U6-037|Why} did you go to the top? Your {U6-051|aim} was half!</en>\" Bora, ipe sıkı sıkı tutunmuş halde: \"<en>{U6-037|Because} going down was scarier than going up!</en>\""
+  - id: s18
+    text: "Deniz Hoca, Bora'yı ipiyle yavaşça aşağı indirdi: \"<en>Well done. You {U6-052|gained} confidence and {U6-050|improved} very fast. That's real {U6-016|bravery}.</en>\""
+  - id: s19
+    text: "Saat onda zip-line'ın başında Selin vardı. Kask, kemer, iki kontrol. Gözlerini kapattı ve kaydı. Ağaçların arasından ince bir çığlık yükseldi, sonra bir kahkaha. Aşağıdan Selin'in sesi geldi: \"<en>Plan complete!</en>\""
+  - id: s20
+    text: "Kaan: \"<en>Selin {U6-049|succeeded} before me? That's not fair! …OK, it's fair.</en>\" Selin: \"<en>I {U6-052|gained} a lot of {U6-027|experience} today. And a new hobby: screaming.</en>\""
+  - id: s21
+    text: "Öğle yemeğinde Elif telefonundaki fotoğrafları gösterdi. Birinde Bora'nın yüzü zil kadar yuvarlak, gözleri kocaman açıktı. Bora fotoğrafa ilk gülen oldu: \"<en>My face is {U6-031|amusing}, but my legs are heroes.</en>\""
+  - id: s22
+    text: "Duru hamağından hiç kalkmamıştı: \"<en>The wall? No, thanks. I {U6-035|prefer} my hammock {U6-035|to} any wall.</en>\" Ece: \"<en>Last year's camp video was {U6-032|disappointing}. This year we have a real story!</en>\""
+  - id: s23
+    text: "Kaan ise şimdiden gelecek yılı planlıyordu: \"<en>Next year I want to {U6-004|go rafting}. Then {U6-004|go caving}! {U6-037|Why}? {U6-037|Because} I love {U6-011|danger}!</en>\" Deniz Hoca: \"<en>With an instructor, Kaan.</en>\""
+  - id: s24
+    text: "Ece listesine yeni bir satır ekledi: \"<en>9.40 – Bora {U6-049|succeeded}: top of the wall. NOT in the plan!</en>\" Listede ilk kez plansız bir satır vardı ve Ece buna hiç kızmadı."
+  - id: s25
+    text: "Akşamüstü Deniz Hoca herkesi topladı: \"<en>Every time you try, you {U6-052|gain} something and you {U6-050|improve}. Tomorrow you can {U6-009|climb} again, or try something new: the lake!</en>\""
+  - id: s26
+    text: "Tam o sırada ağaçların uçları sallanmaya başladı ve Ece'nin listesinin bir sayfası havalandı. Deniz Hoca gökyüzüne baktı, kaşları hafifçe çatıldı. Ece kâğıdın peşinden koştu: \"<en>My plan! Come back!</en>\""
+
+scene:
+  - id: c01
+    speaker: Deniz Hoca
+    text: "<en>What's your aim today? It can be a small goal.</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>I'm scared. Half the wall is my aim.</en>"
+  - id: c03
+    speaker: Elif
+    text: "<en>You can do it, Bora! Be brave!</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>I succeeded! I climbed to the top!</en>"
+  - id: c05
+    speaker: Deniz Hoca
+    text: "<en>Well done. You gained confidence and improved very fast.</en>"
+
+steps:
+  - item: U6-009
+    sezdir:
+      id: u6d06-009-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede \"I'd rather climb one more than go down now\" cümlesinde \"climb\" ne anlama geliyordu?"
+      options: ["tırmanmak", "atlamak", "koşmak", "yüzmek"]
+      answer: 0
+    kullan:
+      id: u6d06-009-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Cats can ________ trees very fast, but sometimes they can't come down!</en>"
+      options: ["climb", "fall", "survive", "cost"]
+      answer: 0
+      explain: "Ağaca çıkmak climb (a tree) ile anlatılır; climb'daki b okunmaz: /klaɪm/."
+    sina:
+      id: u6d06-009-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the notice, which of the following is TRUE?</en>"
+      stem: "<en>Blue Rock Climbing Centre\nOpen: Tuesday–Sunday, 10.00–18.00\n• Children under 12 can climb only with an adult.\n• Everybody must wear a helmet.\n• An instructor holds the rope for all beginners.</en>"
+      options: ["Beginners climb with an instructor.", "The centre is open on Mondays.", "Children under 12 can climb alone.", "Only children wear helmets."]
+      answer: 0
+      explain: "Yeni başlayanlar için ipi bir eğitmen tutuyor. Merkez pazartesi kapalı, 12 yaş altı yalnız tırmanamaz, kask herkes için zorunlu."
+  - item: U6-016
+    sezdir:
+      id: u6d06-016-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"Saying 'I'm scared' needs courage too\" cümlesinde \"courage\" ne anlama geliyordu?"
+      options: ["cesaret", "hız", "şans", "para"]
+      answer: 0
+    kullan:
+      id: u6d06-016-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The firefighter ran into the burning house and saved the little cat. He was very ________.</en>"
+      options: ["brave", "boring", "lazy", "disappointing"]
+      answer: 0
+      explain: "Yanan eve girip kediyi kurtaran biri brave'dir. courage / bravery isim, brave sıfattır."
+    sina:
+      id: u6d06-016-s
+      type: trait_match
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who shows bravery?</en>"
+      stem: "<en>Ali: I never try new things. I usually stay at home.\nMelis: I was scared of the zip-line, but I tried it anyway.\nCan: I watched the others from the hammock all day.\nZeynep: I only do easy things.</en>"
+      options: ["Melis", "Ali", "Can", "Zeynep"]
+      answer: 0
+      explain: "Bravery korkuya rağmen denemektir: Melis korktu ama yine de zip-line'a bindi. Diğerleri hiç denemedi."
+  - item: U6-049
+    sezdir:
+      id: u6d06-049-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede Bora duvarın ortasına gelince \"Half! I succeeded!\" diyor. \"I succeeded\" ne anlama geliyordu?"
+      options: ["Başardım!", "Vazgeçtim!", "Yoruldum!", "Kayboldum!"]
+      answer: 0
+    kullan:
+      id: u6d06-049-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Don't give up! Keep trying and you will ________.</en>"
+      options: ["succeed", "refuse", "apologise", "argue"]
+      answer: 0
+      explain: "Pes etmeyip denemeye devam edersen başarırsın: succeed. Aile: success (isim), successful (sıfat), successfully (zarf)."
+    sina:
+      id: u6d06-049-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which of the following can replace the underlined word?</en>"
+      stem: "<en>Bora: I was scared, but I <u>succeeded</u>. I touched the bell at the top!</en>"
+      options: ["did it", "gave up", "said no", "went home"]
+      answer: 0
+      explain: "Bora zile dokundu, yani hedefini gerçekleştirdi: succeeded = did it. gave up (pes etti) tam tersi."
+  - item: U6-050
+    sezdir:
+      id: u6d06-050-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede Deniz Hoca Kaan'a \"Look first, then move. That's how you improve\" diyor. \"improve\" ne anlama geliyordu?"
+      options: ["gelişmek, daha iyi olmak", "yorulmak", "sıkılmak", "kaybolmak"]
+      answer: 0
+    kullan:
+      id: u6d06-050-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My English is getting better because I read a short story every day. Reading helps me ________.</en>"
+      options: ["improve", "fall", "cost", "refuse"]
+      answer: 0
+      explain: "Daha iyiye gitmek improve'dur: My English is improving = İngilizcem gelişiyor."
+    sina:
+      id: u6d06-050-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>Look at the table. Which of the following is correct?</en>"
+      stem: "<en>Climbing wall – time to the top\n         Day 1   Day 2   Day 3\nEce      5 min   4 min   3 min\nKaan     2 min   2 min   2 min\nSelin    6 min   7 min   6 min</en>"
+      options: ["Ece improved every day.", "Selin improved every day.", "Kaan was slower than Ece on Day 1.", "Selin was faster than Kaan on Day 3."]
+      answer: 0
+      explain: "Ece'nin süresi her gün kısaldı (5 → 4 → 3). Selin'in süresi 2. gün uzadı; Kaan 1. gün Ece'den hızlıydı; 3. gün Selin Kaan'dan yavaştı."
+  - item: U6-051
+    sezdir:
+      id: u6d06-051-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede Deniz Hoca \"Everybody needs a goal today… What's your aim?\" diye soruyor. \"goal / aim\" ne anlama geliyordu?"
+      options: ["hedef, amaç", "kask", "şarkı", "öğle yemeği"]
+      answer: 0
+    kullan:
+      id: u6d06-051-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My ________ this year is to read twenty books. I'm on book number six!</en>"
+      options: ["goal", "accident", "rope", "flashlight"]
+      answer: 0
+      explain: "Ulaşmak istediğin şey goal / aim'dir: My aim is to … = Amacım …"
+    sina:
+      id: u6d06-051-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which question is suitable for Elif's answer?</en>"
+      stem: "<en>Selin: ________\nElif: I want to swim one kilometre without stopping. I practise every Sunday.</en>"
+      options: ["What is your goal this summer?", "How much does it cost?", "Why were you late?", "Who is your instructor?"]
+      answer: 0
+      explain: "Elif ulaşmak istediği şeyi anlatıyor; uygun soru hedefini sorandır. Fiyat, gecikme ya da eğitmen sorusuna bu cevap uymaz."
+  - item: U6-052
+    sezdir:
+      id: u6d06-052-z
+      type: meaning
+      context: s18
+      prompt: "Hikâyede Deniz Hoca \"You gained confidence\" diyor. \"gained\" ne anlama geliyordu?"
+      options: ["kazandın, edindin", "kaybettin", "sakladın", "unuttun"]
+      answer: 0
+    kullan:
+      id: u6d06-052-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>My sister worked at a summer camp for two months and ________ a lot of experience.</en>"
+      options: ["gained", "won", "cost", "fell"]
+      answer: 0
+      explain: "Deneyim ya da güven edinmek gain ile anlatılır. win yarış ve ödül için kullanılır."
+    sina:
+      id: u6d06-052-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Murat Bey: How was your first month at the karate club, Bora?\nBora: ________\nMurat Bey: That's great. Confidence is very important.</en>"
+      options: ["I gained a lot of confidence.", "I lost my phone.", "I'd rather stay at home.", "It cost a lot of money."]
+      answer: 0
+      explain: "Murat Bey 'Confidence is very important' diyor; demek ki Bora özgüven kazandığını söylemiş."
+
+review:
+  - id: u6d06-r01
+    type: gap_fill
+    item: U6-013
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Always wear a helmet on your bike. It protects your head if you have an ________.</en>"
+    options: ["accident", "adventure", "instructor", "experience"]
+    answer: 0
+  - id: u6d06-r02
+    type: gap_fill
+    item: U6-014
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Camels can ________ for a long time in the desert without water.</en>"
+    options: ["survive", "fall", "cost", "prefer"]
+    answer: 0
+  - id: u6d06-r03
+    type: gap_fill
+    item: U6-015
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Be careful on the ice! You can ________ and hurt your leg.</en>"
+    options: ["fall", "survive", "cost", "prefer"]
+    answer: 0
+  - id: u6d06-r04
+    type: gap_fill
+    item: U6-021
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>The book tells the story of a famous singer's life, from her birth to her ________.</en>"
+    options: ["death", "accident", "experience", "instructor"]
+    answer: 0
+  - id: u6d06-r05
+    type: gap_fill
+    item: U6-047
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>To work as a climbing instructor, you need the right ________: a certificate and a first aid course.</en>"
+    options: ["qualifications", "accidents", "flashlights", "ropes"]
+    answer: 0
+  - id: u6d06-r06
+    type: situation
+    item: U6-048
+    prompt: "<en>At the camp, who teaches you how to use the safety equipment?</en>"
+    options: ["the instructor", "the customer", "the secretary", "the caller"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U6-009]
+    text: "climb'daki b okunmaz: /klaɪm/ (\"klaym\"). climbing \"klayming\", climber \"klaymır\" diye okunur."
+  - type: tuzak
+    refs: [U6-052]
+    text: "Türkçede hepsine \"kazanmak\" deriz ama İngilizcede üç ayrı fiil var: gain deneyim, özgüven, kilo (gain confidence); win yarış, ödül (win a race); earn para (earn money)."
+  - type: kelime_ailesi
+    refs: [U6-049]
+    text: "succeed (fiil, başarmak) → success (isim, başarı) → successful (sıfat, başarılı) → successfully (zarf, başarıyla). I succeeded = I was successful."
+  - type: kelime_ailesi
+    refs: [U6-016]
+    text: "courage ve bravery isimdir (cesaret); brave sıfattır (cesur): Be brave! fearless = korkusuz. Bravery korkmamak değil, korkuya rağmen denemektir."
+
+coach:
+  start: "Bugün kampta kocaman bir duvar var, üstünde de bir zil. Bora o zile ulaşabilecek mi? İpi sıkı tut 🔔"
+  end_good: "Süpersin! Bora'nın dizleri jöle gibiydi, seninkiler çelik gibi. Zil bugün senin için çaldı 🔔"
+  end_mixed: "İyi gidiyorsun! {weak} biraz kaydı ama ip sağlam. Yarın bir tutamak daha yukarı 💪"
+
+notifications:
+  morning: "Bora duvarın dibinde ve bu kez bahane yok. Peki ne diyecek? 🤔"
+  evening: "Duvarın en üstünde bir zil var. Kim çaldı, tahmin et 🔔"
+  review: "Bora'nın 'aim'i yarım duvardı. Peki nereye çıktı? Hatırla 😉"
+
+editor:
+  z07: {U6-009: BEKLIYOR, U6-016: BEKLIYOR, U6-049: BEKLIYOR, U6-050: BEKLIYOR, U6-051: BEKLIYOR, U6-052: BEKLIYOR}

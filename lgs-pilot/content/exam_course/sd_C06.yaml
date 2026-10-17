@@ -1,0 +1,164 @@
+# LGS Sınav Dili — C06 Mini deneme 2 (Ü6–10 karışık, 8 soru + süre yönetimi). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-C06
+module: C
+title: "Mini deneme 2"
+unlock_after: "Ü10 sonu"
+minutes: 8
+stems: [S01, S02, S04, S05, S06, S10, S12, S14]
+units: [6, 7, 8, 9, 10]
+intro_tr: "Son mini deneme: altıncı üniteden onuncuya kadar karışık 8 soru. Bu kez yalnız doğru cevabı değil, süreyi de yönetiyoruz; çünkü LGS'de İngilizce, sözel oturumun içinde kısıtlı bir zamanla çözülür."
+cards:
+  - title_tr: "Süre yönetimi: 10 soru, kendi saatin"
+    body_tr: "LGS sözel oturumunda İngilizce diğer derslerle aynı süreyi paylaşır. Kendine bir hedef koy: İngilizce için yaklaşık 10–12 dakika. Kısa diyalog ve kelime sorularında 30–45 saniye, uzun metin ve tablo sorularında 1,5 dakikaya kadar harca. Kazandığın süreyi zor sorulara aktar."
+    examples_en:
+      - "Kısa diyalog / kelime: ~40 sn"
+      - "Tablo / uzun metin: ~1,5 dk"
+      - "Son 1 dk: işaretli soruları kontrol"
+    signal_words: ["süre", "işaretle", "geç", "dön"]
+  - title_tr: "İki tur tekniği"
+    body_tr: "Birinci turda emin olduğun soruları çöz, kararsız kaldıklarını iki şıkka indirip işaretle. İkinci turda yalnız işaretlilere dön. Hiç fikrin olmayan soruyu boş bırakmak, yanlışın netten götürmesinden iyidir."
+  - title_tr: "Ünite 6–10 kök hatırlatıcı"
+    body_tr: "Karşılaştırma (Ü6): kim neyi neye tercih ediyor? Turizm (Ü7): başlık ve 'famous for'. Ev işleri (Ü8): don't have to (gerek yok) ≠ mustn't (yasak). Bilim (Ü9): tarih ve kişi bilgisi metinde mi? Doğa (Ü10): tahmin ve sonuç (will, If …)."
+    signal_words: ["would rather", "famous for", "don't have to", "mustn't", "will", "If"]
+worked_example:
+  id: sd-C06-w
+  type: dialogue_complete
+  stem_id: S01
+  context: |-
+    Mum: Kaan, it's your turn to wash the dishes tonight.
+    Kaan: ________ I washed them yesterday!
+    Mum: Oh, sorry, you're right. It's your sister's turn.
+  prompt: "Which of the following completes the dialogue?"
+  options:
+    - "But it's not my turn!"
+    - "OK, I'll do it right now."
+    - "Thanks for helping me."
+    - "Can I borrow your phone?"
+  answer: 0
+  explain_tr: "Kaan dün yıkadığını söylüyor, annesi de hak veriyor: Kaan itiraz etmiş. 'OK, I'll do it right now' kabul ettiği için 'I washed them yesterday!' itirazıyla çelişir."
+  items: [U8-037, U8-006, U8-043]
+practice:
+  - id: sd-C06-p01
+    type: text_infer
+    stem_id: S04
+    context: |-
+      Selin: I'd rather go kayaking than skydiving. Kayaking is less dangerous, and I love being on the water. But my brother is an adrenaline seeker. For him, skydiving is the most exciting sport in the world.
+    prompt: "According to the text, which of the following is TRUE?"
+    options:
+      - "Selin thinks kayaking is safer than skydiving."
+      - "Selin's brother would rather go kayaking."
+      - "Selin thinks skydiving is the most exciting sport."
+      - "Selin is afraid of water."
+    answer: 0
+    explain_tr: "'less dangerous' = daha güvenli. 'Selin thinks skydiving is the most exciting' yarı doğru bir tuzak: bunu düşünen Selin değil, kardeşi."
+    items: [U6-036, U6-010, U6-006, U6-033, U6-034, U6-003]
+  - id: sd-C06-p02
+    type: text_infer
+    stem_id: S05
+    context: |-
+      Beypazarı is a charming town near Ankara. It is famous for its historic Ottoman houses and delicious local food. Visitors can buy silver handicrafts in the old market. Many people from big cities come here at weekends to enjoy the authentic atmosphere.
+    prompt: "What is the best title for the text?"
+    options:
+      - "Beypazarı: A Charming Town Near Ankara"
+      - "Silver Handicrafts"
+      - "The History of the Ottoman Empire"
+      - "The Best Restaurants in Türkiye"
+    answer: 0
+    explain_tr: "Metin evleri, yemekleri, çarşısı ve ziyaretçileriyle Beypazarı'nı tanıtıyor. 'Silver Handicrafts' tek bir ayrıntı (çok dar); Osmanlı tarihi ve Türkiye'nin restoranları çok geniş."
+    items: [U7-055, U7-056, U7-043, U7-046, U7-035]
+  - id: sd-C06-p03
+    type: table_graph
+    stem_id: S06
+    context: |-
+      Who does which chore? (Ece / Bora / Duru)
+      make the bed: every day / every day / sometimes
+      take out the rubbish: never / every evening / twice a week
+      water the plants: on Sundays / never / every day
+    prompt: "According to the table, which of the following is correct?"
+    options:
+      - "Ece and Bora make their beds every day."
+      - "Bora waters the plants every day."
+      - "Duru never takes out the rubbish."
+      - "Ece takes out the rubbish every evening."
+    answer: 0
+    explain_tr: "Ece de Bora da yatağını her gün topluyor. 'Bora waters the plants every day' kişiyi karıştırıyor: bitkileri her gün sulayan Duru, Bora hiç sulamıyor."
+    items: [U8-011, U8-016, U8-024]
+  - id: sd-C06-p04
+    type: synonym
+    stem_id: S12
+    context: "Mum: It's Saturday, Bora. You <u>don't have to</u> get up early. Sleep a little more!"
+    prompt: "Which of the following can replace the underlined part (in brackets)?"
+    options:
+      - "don't need to"
+      - "mustn't"
+      - "aren't allowed to"
+      - "are responsible for"
+    answer: 0
+    explain_tr: "don't have to = gerek yok (don't need to). 'mustn't' çok benziyor ama YASAK demek; annesi erken kalkmayı yasaklamıyor, sadece gerek olmadığını söylüyor."
+    items: [U8-040, U8-035, U8-034]
+  - id: sd-C06-p05
+    type: text_infer
+    stem_id: S02
+    context: |-
+      Marie Curie was born in Warsaw in 1867. She studied physics and chemistry in Paris. With her husband, Pierre, she discovered two new chemical elements. She won the Nobel Prize twice, in 1903 and in 1911. She passed away in 1934.
+    prompt: "Which of the following does NOT have an answer in the text?"
+    options:
+      - "What were the names of the two elements?"
+      - "Where was she born?"
+      - "What did she study?"
+      - "How many times did she win the Nobel Prize?"
+    answer: 0
+    explain_tr: "Doğum yeri (Warsaw), okuduğu bölümler ve iki Nobel ödülü yazıyor. İki elementten söz ediliyor ama adları verilmiyor: 'konusu var, ayrıntısı yok' tuzağı."
+    items: [U9-038, U9-003, U9-002, U9-030]
+  - id: sd-C06-p06
+    type: text_infer
+    stem_id: S14
+    context: |-
+      Breaking news: A strong earthquake hit a small town at 3 a.m. last night. Rescue teams worked all night, and now nobody is stuck under the buildings. Some people have minor injuries and they are in hospital. Experts warn that aftershocks may occur in the next few days.
+    prompt: "Which of the following can we infer from the news?"
+    options:
+      - "People in the town may feel more shaking soon."
+      - "Many people are still stuck under buildings."
+      - "The earthquake happened in the afternoon."
+      - "Nobody was injured in the earthquake."
+    answer: 0
+    explain_tr: "'aftershocks may occur' → artçı sarsıntılar, yani yeni sallantılar olabilir. 'Nobody was injured' metindeki 'nobody' kelimesini taşıyor ama yaralılar var; 'nobody' enkaz altında kalanlar için."
+    items: [U10-020, U10-002, U10-008, U10-022, U10-011, U10-045]
+  - id: sd-C06-p07
+    type: situation
+    stem_id: S10
+    context: "During an earthquake drill at school, a student starts running towards the window."
+    prompt: "What should the teacher say?"
+    options:
+      - "Stay away from the windows! Drop, cover and hold on!"
+      - "Open the windows and look outside!"
+      - "Run to the lift quickly!"
+      - "Stand next to the bookshelf!"
+    answer: 0
+    explain_tr: "Deprem tatbikatında pencerelerden uzak durulur ve 'çök, kapan, tutun' uygulanır. Diğer üç şık depremde tehlikeli davranışlar."
+    items: [U10-019]
+  - id: sd-C06-p08
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Murat Bey: What do you think will happen if we don't save water?
+      Elif: ________
+      Murat Bey: Exactly. That's why we should turn off the tap when we brush our teeth.
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "I think there will be a water shortage in the future."
+      - "I saved a lot of water yesterday."
+      - "There was a big flood in our town last year."
+      - "I don't agree with you."
+    answer: 0
+    explain_tr: "Soru gelecekle ilgili bir tahmin istiyor (What … will happen if …?); cevap da 'will' ile bir tahmin vermeli. 'I saved water yesterday' su tasarrufu konusunu taşıyor ama geçmişten söz ediyor, tahmin değil."
+    items: [U10-039, U10-040, U10-036, U10-030, U10-041]
+tips:
+  - "Önce kısa soruları (diyalog, kelime) hızlıca çöz; uzun metin ve tablolara kalan süreyi ayır."
+  - "Saatine her 3–4 soruda bir bak; geride kaldıysan takıldığın soruyu işaretleyip geç."
+  - "don't have to ve mustn't gibi yakın anlamlı şıklarda cümleyi Türkçeye çevir: 'gerek yok' mu, 'yasak' mı?"
+coach:
+  start: "Son mini deneme! Bu kez saatle dans ediyoruz: hızlı sorular hızlı, zor sorular sakin. Hazırsan başla!"
+  end: "Tebrikler, kursu bitirdin! Kökleri tanıyor, tuzakları eliyor, süreyi yönetiyorsun. LGS'ye hazırsın!"
+status: draft

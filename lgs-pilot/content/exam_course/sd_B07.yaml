@@ -1,0 +1,133 @@
+schema_version: 1
+id: SD-B07
+module: B
+title: "Açıklama isteme ve öneri"
+unlock_after: "Ü5 sonu"
+minutes: 5
+stems: [S01, S09, S10, S12, S14]
+functions: ["Açıklama istemek ve vermek; anlamadığını söylemek", "Öneride bulunmak (Why don't we …?)"]
+units: [5]
+intro_tr: "Diyalog sorularında biri anlamaz, diğeri açıklar; ya da biri öneri yapar, diğeri cevap verir. 'What do you mean?' ile 'I mean …' ve 'Why don't we …?' ile 'Good idea' çiftlerini tanırsan boşluğu hemen doldurursun."
+cards:
+  - title_tr: "Anlamadım! Açıklama istemek"
+    body_tr: "What do you mean? / Do you mean …? / What do you mean by that? / Sorry, I can't follow you. (Seni takip edemiyorum, anlamadım.) Bir kelime ya da kısaltma için: What does 'X' mean? / What does 'BTW' stand for? / Can you explain …?"
+    examples_en:
+      - "What do you mean? Is your laptop broken?"
+      - "Sorry, I can't follow you."
+      - "What does 'ASAP' stand for?"
+    signal_words: ["What do you mean?", "Do you mean …?", "I can't follow you.", "What does … stand for?", "Can you explain …?"]
+  - title_tr: "Açıklamak"
+    body_tr: "I mean … / What I mean is … / In other words … (başka bir deyişle) / It stands for … Anlayan kişi 'I got it.' (Anladım.) der. Boşluktan sonra 'I mean …' geliyorsa boşlukta büyük ihtimalle 'What do you mean?' vardır."
+    examples_en:
+      - "I mean, there isn't a connection sign on the screen."
+      - "In other words, you can't connect to the Internet."
+      - "It stands for 'as soon as possible'."
+      - "Oh, I got it. Thanks!"
+    signal_words: ["I mean", "What I mean is", "In other words", "It stands for", "I got it."]
+  - title_tr: "Öneri: Why don't we …?"
+    body_tr: "'Why don't we …?' soru gibi görünür ama neden sormaz, öneri yapar: '… yapsak ya?' Diğer öneri kalıpları: How about + -ing? / Let's … / We should … Cevaplar: That's a good idea. / Sounds great! / Sorry, I don't think it's a good idea."
+    examples_en:
+      - "Why don't we chat online at two o'clock?"
+      - "How about doing our research at the library?"
+      - "That's a good idea!"
+    signal_words: ["Why don't we …?", "How about …?", "Let's …", "That's a good idea."]
+worked_example:
+  id: sd-B07-w
+  type: dialogue_complete
+  stem_id: S01
+  context: "Bora: My laptop is offline again.\nKaan: ________\nBora: I mean, there isn't a connection sign on the screen."
+  prompt: "Which of the following completes the dialogue?"
+  options:
+    - "What do you mean?"
+    - "Why don't we play online?"
+    - "I got it. Thanks!"
+    - "Can I take a message?"
+  answer: 0
+  explain_tr: "Bora 'I mean …' diye açıklama yapıyor; demek ki Kaan ne demek istediğini sordu. 'I got it' anladım demektir; anlamış biri açıklama istemez."
+  items: [U5-057, U5-054, U5-020, U5-021]
+practice:
+  - id: sd-B07-p01
+    type: dialogue_complete
+    stem_id: S01
+    context: "Elif: Duru wrote 'CU at 5' in our group chat. What does 'CU' stand for?\nSelin: ________\nElif: Oh, I got it. Thanks!"
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "It stands for 'See you'."
+      - "I mean, she is offline."
+      - "That's a good idea."
+      - "Thanks for asking, but I'm busy."
+    answer: 0
+    explain_tr: "'What does … stand for?' sorusunun cevabı 'It stands for …'. 'I mean, she is offline' bir açıklama kalıbı ama kısaltmanın anlamını vermiyor."
+    items: [U5-058, U5-061, U5-055]
+  - id: sd-B07-p02
+    type: situation
+    stem_id: S09
+    prompt: "Which of the following is a suggestion?"
+    options:
+      - "Why don't we do our research at the library?"
+      - "What do you mean by 'research'?"
+      - "Sorry, I can't follow you."
+      - "I got it, thanks."
+    answer: 0
+    explain_tr: "'Why don't we …?' bir öneri kalıbı. 'What do you mean by …?' da soru biçiminde ama öneri değil, açıklama istiyor."
+    items: [U5-059, U5-038]
+  - id: sd-B07-p03
+    type: synonym
+    stem_id: S12
+    context: "Murat Bey: Never share your password with anyone. In other words, keep it secret."
+    prompt: "Which phrase can replace 'In other words'?"
+    options:
+      - "I mean"
+      - "By the way"
+      - "Why don't we"
+      - "Thanks for asking"
+    answer: 0
+    explain_tr: "In other words = I mean: aynı şeyi başka sözlerle açıklar. 'By the way' (bu arada) yeni bir konu açar; anlamı değiştirir."
+    items: [U5-054, U5-053, U5-009]
+  - id: sd-B07-p04
+    type: text_infer
+    stem_id: S14
+    context: "Kaan: Why don't we watch the match online tonight?\nBora: Sorry, I can't follow you. Which match?\nKaan: The basketball match! Turkey and Spain.\nBora: Oh, I got it. Sure, why not?"
+    prompt: "Which of the following can we infer from the conversation?"
+    options:
+      - "At first, Bora didn't understand Kaan."
+      - "Bora refuses Kaan's suggestion."
+      - "Kaan doesn't like basketball."
+      - "They will watch the match at the stadium."
+    answer: 0
+    explain_tr: "'Sorry, I can't follow you' → Bora başta anlamadı, sonra 'I got it' dedi. 'Sure, why not?' bir kabul olduğu için 'Bora refuses …' yanlış; maçı da internetten (online) izleyecekler."
+    items: [U5-055, U5-059, U5-020]
+  - id: sd-B07-p05
+    type: situation
+    stem_id: S10
+    context: "Duru is showing her grandfather a new app. He doesn't understand the word 'upload'."
+    prompt: "What does Duru's grandfather say?"
+    options:
+      - "What does 'upload' mean?"
+      - "I got it. Thanks, dear!"
+      - "Why don't we upload a photo?"
+      - "By the way, I like your blog."
+    answer: 0
+    explain_tr: "Kelimeyi anlamayan kişi anlamını sorar. 'Why don't we upload a photo?' kelimeyi kullanıyor, yani onu bilen birinin önerisi."
+    items: [U5-058, U5-025]
+  - id: sd-B07-p06
+    type: dialogue_complete
+    stem_id: S01
+    context: "Ece: Why don't we start a vlog for Wrong Number?\nSelin: ________ I'm too shy to talk in front of a camera."
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "Sorry, I don't think it's a good idea."
+      - "That's a great idea!"
+      - "Sure, let's start today."
+      - "I got it. Let's do it now."
+    answer: 0
+    explain_tr: "Selin kamera önünde konuşmaktan utandığını söylüyor, yani öneriye karşı. Diğer üç şık öneriyi kabul ediyor ve sonraki cümleyle çelişiyor."
+    items: [U5-027, U5-059]
+tips:
+  - "Boşluktan sonra 'I mean …' ya da 'In other words …' varsa boşlukta 'What do you mean?' türü bir soru vardır."
+  - "'Why don't we …?' öneridir; cevabı 'Because …' değil, 'Good idea' ya da kibar bir rettir."
+  - "'I got it' = anladım. Bu cümleden ÖNCE mutlaka bir açıklama gelir."
+coach:
+  start: "What do you mean? Bugün anlamadığında ne diyeceğini ve 'Why don't we…?' ile nasıl öneri yapılacağını öğreniyoruz."
+  end: "I got it diyen sensin artık! Why don't we bir sonraki derse de böyle hızlı geçelim?"
+status: draft

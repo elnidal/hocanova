@@ -1,0 +1,925 @@
+schema_version: 1
+program: lgs
+unit: 7
+unit_title: Tourism
+source: LGS_Unite7_Tourism_Havuz_v1 (HEDEF)
+status: taslak, kullanıcı onayı bekliyor
+note: 'taslak, kullanıcı onayı bekliyor; hikâye/gün dosyası yazılmayacak (yalnız kelime havuzu), pilot_day yok. meaning_ban: çeviri yasağında meaning_tr yerine bu kökler aranır. exam: 2013–2019 TEOG + 2018–2019
+  LGS çıkmış kelime tablosu (ingilizcedilbilgisi.net).'
+items:
+- id: U7-001
+  unit: 7
+  theme: Turizm ve seyahat
+  display: tourist attraction (attract / attractive)
+  kind: phrase
+  class: core
+  meaning_tr: turistik yer, gezilecek yer (çekmek / çekici)
+  priority: 1
+  variants:
+  - attract
+  - attraction
+  - attractive
+  - tourist attraction
+  meaning_ban:
+  - turistik
+  - cazibe
+  - çekici
+- id: U7-002
+  unit: 7
+  theme: Turizm ve seyahat
+  display: vacation / holiday
+  kind: phrase
+  class: core
+  meaning_tr: tatil
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - vacation
+  variants:
+  - vacation
+  trap_note: vacation Amerikan, holiday İngiliz İngilizcesi; ikisi de "on vacation / on holiday" ile kullanılır
+  meaning_ban:
+  - tatil
+- id: U7-003
+  unit: 7
+  theme: Turizm ve seyahat
+  display: trip / journey / travel
+  kind: phrase
+  class: trap
+  meaning_tr: gezi / yolculuk / seyahat (etmek)
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 2
+    words:
+    - trip
+  variants:
+  - journey
+  - travel
+  - travel plan
+  - trip
+  trap_note: 'travel çoğunlukla fiildir: "a travel" denmez, "a trip" denir; journey uzun yolculuk; trip gidip dönülen gezi'
+  meaning_ban:
+  - gezi
+  - yolculu
+  - seyahat
+- id: U7-004
+  unit: 7
+  theme: Turizm ve seyahat
+  display: abroad
+  kind: word
+  class: trap
+  meaning_tr: yurt dışı(na / nda)
+  priority: 1
+  trap_note: 'abroad zarftır: "go to abroad" yanlış → go abroad / live abroad; "Have you ever been abroad?"'
+  meaning_ban:
+  - yurt dışı
+  - yurtdışı
+- id: U7-005
+  unit: 7
+  theme: Turizm ve seyahat
+  display: sightseeing (go sightseeing / sightseeing tour)
+  kind: phrase
+  class: core
+  meaning_tr: gezip görme, turistik yerleri gezme
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - sightseeing
+  variants:
+  - city sightseeing
+  - sightseeing
+  - sightseeing tour
+  meaning_ban:
+  - gezip gör
+  - şehir tur
+- id: U7-006
+  unit: 7
+  theme: Turizm ve seyahat
+  display: cruise (cruise holiday)
+  kind: phrase
+  class: core
+  meaning_tr: gemi turu, gemi tatili
+  priority: 1
+  variants:
+  - cruise
+  - cruise holiday
+  meaning_ban:
+  - gemi tur
+  - gemi tatil
+  - gemi gezi
+- id: U7-007
+  unit: 7
+  theme: Turizm ve seyahat
+  display: tour guide (guide)
+  kind: phrase
+  class: core
+  meaning_tr: tur rehberi (rehberlik etmek)
+  priority: 1
+  variants:
+  - guide visitors
+  - tour guide
+  meaning_ban:
+  - rehber
+- id: U7-008
+  unit: 7
+  theme: Turizm ve seyahat
+  display: souvenir
+  kind: word
+  class: core
+  meaning_tr: hediyelik eşya, gezi hatırası
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - souvenir
+  variants:
+  - buy souvenir
+  trap_note: 'souvenir gezide alınan hatıra eşyadır; gift her türlü hediye. Kaynak I "hatırat" diyor: yanlış (hatırat = anılar kitabı)'
+  meaning_ban:
+  - hediyelik
+- id: U7-009
+  unit: 7
+  theme: Turizm ve seyahat
+  display: travel brochure / advertisement
+  kind: phrase
+  class: core
+  meaning_tr: gezi broşürü / reklam, ilan
+  priority: 1
+  variants:
+  - advertisement
+  - brochure
+  - travel brochure
+  meaning_ban:
+  - broşür
+  - reklam
+  - ilan
+- id: U7-010
+  unit: 7
+  theme: Turizm ve seyahat
+  display: visitor / spectator
+  kind: phrase
+  class: core
+  meaning_tr: ziyaretçi / izleyici, seyirci
+  priority: 1
+  variants:
+  - spectator
+  - visitor
+  trap_note: visitor bir yeri gezmeye gelen kişi; spectator gösteri ya da maçı izleyen kişi (amfitiyatroda spectators)
+  meaning_ban:
+  - ziyaretçi
+  - izleyici
+  - seyirci
+- id: U7-011
+  unit: 7
+  theme: Turizm ve seyahat
+  display: transportation
+  kind: word
+  class: core
+  meaning_tr: ulaşım, taşıma
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - transportation
+  meaning_ban:
+  - ulaşım
+- id: U7-012
+  unit: 7
+  theme: Turizm ve seyahat
+  display: recreational activities (entertainment / sunbathe / have a rest)
+  kind: phrase
+  class: core
+  meaning_tr: eğlence etkinlikleri (eğlence / güneşlenmek / dinlenmek)
+  priority: 1
+  variants:
+  - entertain
+  - entertainment
+  - have a rest
+  - lying in the sun
+  - recreational activities
+  - sunbathe
+  meaning_ban:
+  - eğlence
+  - güneşlen
+  - dinlen
+- id: U7-013
+  unit: 7
+  theme: Konaklama
+  display: accommodation (accommodate)
+  kind: word
+  class: core
+  meaning_tr: konaklama, kalacak yer
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - accommodation
+  variants:
+  - accommodation
+  trap_note: yazımı çift c, çift m (kaynak listelerde "accomodation" hatası yaygın); sayılamaz isim
+  meaning_ban:
+  - konakla
+  - kalacak yer
+- id: U7-014
+  unit: 7
+  theme: Konaklama
+  display: all-inclusive (hotel / resort)
+  kind: phrase
+  class: core
+  meaning_tr: her şey dahil (otel)
+  priority: 1
+  variants:
+  - all-inclusive
+  - all-inclusive hotels
+  meaning_ban:
+  - her şey dahil
+- id: U7-015
+  unit: 7
+  theme: Konaklama
+  display: bed and breakfast (B&B)
+  kind: phrase
+  class: core
+  meaning_tr: oda-kahvaltı konaklama, pansiyon
+  priority: 1
+  variants:
+  - bed and breakfast
+  trap_note: 'kelimesi kelimesine "yatak ve kahvaltı" değil: oda + kahvaltı veren küçük otel/pansiyon'
+  meaning_ban:
+  - oda kahvaltı
+  - oda-kahvaltı
+  - pansiyon
+- id: U7-016
+  unit: 7
+  theme: Konaklama
+  display: guesthouse
+  kind: word
+  class: core
+  meaning_tr: konukevi, pansiyon
+  priority: 1
+  variants:
+  - state guesthouses
+  meaning_ban:
+  - konukevi
+  - misafir evi
+  - misafirhane
+- id: U7-017
+  unit: 7
+  theme: Konaklama
+  display: resort (holiday resort)
+  kind: word
+  class: core
+  meaning_tr: tatil köyü, tatil beldesi
+  priority: 1
+  variants:
+  - resort
+  meaning_ban:
+  - tatil köy
+  - tatil belde
+- id: U7-018
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: countryside / rural
+  kind: phrase
+  class: trap
+  meaning_tr: kırsal bölge, taşra / kırsal
+  priority: 1
+  variants:
+  - country
+  - countryside
+  - rural
+  - rural city
+  - rural places
+  trap_note: 'country "ülke" ama the country / the countryside = kırsal kesim, köy yeri (kaynak B: "country: ülke, kırsal bölge")'
+  meaning_ban:
+  - kırsal
+  - taşra
+- id: U7-019
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: urban
+  kind: word
+  class: core
+  meaning_tr: kentsel, şehre ait
+  priority: 1
+  variants:
+  - urban place
+  meaning_ban:
+  - kentsel
+  - şehirsel
+- id: U7-020
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: seaside
+  kind: word
+  class: core
+  meaning_tr: deniz kenarı, sahil
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - seaside
+  meaning_ban:
+  - deniz kenar
+  - sahil
+- id: U7-021
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: highland / plateau
+  kind: phrase
+  class: core
+  meaning_tr: yayla, yüksek dağlık bölge / plato
+  priority: 1
+  variants:
+  - highland
+  - plateau
+  meaning_ban:
+  - yayla
+  - plato
+  - dağlık
+- id: U7-022
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: island
+  kind: word
+  class: core
+  meaning_tr: ada
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - island
+  trap_note: 's okunmaz: /ˈaɪlənd/'
+  meaning_ban:
+  - ada
+- id: U7-023
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: square (city square)
+  kind: word
+  class: trap
+  meaning_tr: meydan
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - square
+  variants:
+  - city square
+  - famous square
+  - square
+  trap_note: square "kare" demektir; şehir bağlamında meydan (Times Square, Konak Meydanı)
+  meaning_ban:
+  - meydan
+- id: U7-024
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: fountain
+  kind: word
+  class: core
+  meaning_tr: çeşme, fıskiye
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - fountain
+  meaning_ban:
+  - çeşme
+  - fıskiye
+- id: U7-025
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: port / natural port (port city)
+  kind: phrase
+  class: core
+  meaning_tr: liman / doğal liman (liman şehri)
+  priority: 1
+  variants:
+  - natural port
+  - port city
+  meaning_ban:
+  - liman
+- id: U7-026
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: location (be located in)
+  kind: phrase
+  class: core
+  meaning_tr: konum, yer (… -de bulunmak)
+  priority: 1
+  variants:
+  - locate
+  - location
+  meaning_ban:
+  - konum
+  - bulunmak
+- id: U7-027
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: climate (temperature)
+  kind: phrase
+  class: core
+  meaning_tr: iklim (sıcaklık)
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - climate
+    - temperature
+  variants:
+  - climate
+  - temperature
+  trap_note: climate bir yerin uzun süreli hava özelliği; weather günlük hava durumu
+  meaning_ban:
+  - iklim
+  - sıcaklık
+- id: U7-028
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: population
+  kind: word
+  class: core
+  meaning_tr: nüfus
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - population
+  meaning_ban:
+  - nüfus
+- id: U7-029
+  unit: 7
+  theme: Yerler ve coğrafya
+  display: wildlife
+  kind: word
+  class: core
+  meaning_tr: yaban hayatı, vahşi yaşam
+  priority: 1
+  trap_note: 'tek kelime yazılır (kaynak B: "wild life")'
+  meaning_ban:
+  - yaban hayat
+  - vahşi yaşam
+- id: U7-030
+  unit: 7
+  theme: Tarih ve mimari
+  display: ancient (ancient city)
+  kind: phrase
+  class: core
+  meaning_tr: antik, çok eski (antik kent)
+  priority: 1
+  variants:
+  - ancient
+  - ancient city
+  trap_note: old günlük "eski"; ancient binlerce yıllık, antik (kaynak A ve I yalnız "eski" diyor)
+  meaning_ban:
+  - antik
+- id: U7-031
+  unit: 7
+  theme: Tarih ve mimari
+  display: architecture (historical architecture)
+  kind: phrase
+  class: core
+  meaning_tr: mimari, mimarlık
+  priority: 1
+  variants:
+  - architecture
+  - historical architecture
+  meaning_ban:
+  - mimar
+- id: U7-032
+  unit: 7
+  theme: Tarih ve mimari
+  display: construction (build)
+  kind: phrase
+  class: core
+  meaning_tr: yapım, inşa; yapı (inşa etmek)
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - construction
+  variants:
+  - build
+  - construction
+  meaning_ban:
+  - inşa
+  - yapım
+- id: U7-033
+  unit: 7
+  theme: Tarih ve mimari
+  display: palace / mansion
+  kind: phrase
+  class: core
+  meaning_tr: saray / konak, köşk
+  priority: 1
+  variants:
+  - mansion
+  - palace
+  meaning_ban:
+  - saray
+  - konak
+  - köşk
+- id: U7-034
+  unit: 7
+  theme: Tarih ve mimari
+  display: mosque
+  kind: word
+  class: core
+  meaning_tr: cami
+  priority: 1
+  meaning_ban:
+  - cami
+- id: U7-035
+  unit: 7
+  theme: Tarih ve mimari
+  display: emperor / empire
+  kind: phrase
+  class: core
+  meaning_tr: imparator / imparatorluk
+  priority: 1
+  variants:
+  - byzantine emperor
+  - emperor
+  - ottoman empire
+  meaning_ban:
+  - imparator
+- id: U7-036
+  unit: 7
+  theme: Tarih ve mimari
+  display: conquer (conquest / invasion)
+  kind: phrase
+  class: core
+  meaning_tr: fethetmek (fetih / istila)
+  priority: 1
+  variants:
+  - conquer
+  - conquest
+  - invasion
+  meaning_ban:
+  - fethet
+  - fetih
+  - istila
+  - işgal
+- id: U7-037
+  unit: 7
+  theme: Tarih ve mimari
+  display: trade route (route)
+  kind: phrase
+  class: core
+  meaning_tr: ticaret yolu (güzergâh)
+  priority: 1
+  variants:
+  - route
+  - trade route
+  meaning_ban:
+  - ticaret yol
+  - güzergâh
+- id: U7-038
+  unit: 7
+  theme: Tarih ve mimari
+  display: abandon (abandoned city)
+  kind: phrase
+  class: core
+  meaning_tr: terk etmek (terk edilmiş şehir)
+  priority: 1
+  variants:
+  - abandon
+  - abandoned city
+  meaning_ban:
+  - terk
+- id: U7-039
+  unit: 7
+  theme: Tarih ve mimari
+  display: discover / rediscover
+  kind: phrase
+  class: core
+  meaning_tr: keşfetmek / yeniden keşfetmek
+  priority: 1
+  variants:
+  - discover
+  - rediscover
+  meaning_ban:
+  - keşf
+  - keşif
+- id: U7-040
+  unit: 7
+  theme: Tarih ve mimari
+  display: heritage (natural / cultural heritage)
+  kind: phrase
+  class: core
+  meaning_tr: miras (doğal / kültürel miras)
+  priority: 1
+  variants:
+  - heritage
+  - natural heritage
+  trap_note: 'kaynak I "the natural heritage = kültürel miras" diyor: yanlış (doğal miras)'
+  meaning_ban:
+  - miras
+- id: U7-041
+  unit: 7
+  theme: Tarih ve mimari
+  display: date back to
+  kind: phrase
+  class: core
+  meaning_tr: (tarihi) …-e dayanmak, … yılından kalmak
+  priority: 1
+  variants:
+  - date
+  trap_note: date "tarih / randevu" demektir; date back to = geçmişi …-e uzanmak
+  meaning_ban:
+  - dayan
+  - uzan
+- id: U7-042
+  unit: 7
+  theme: Tarih ve mimari
+  display: contain
+  kind: word
+  class: core
+  meaning_tr: içermek, barındırmak
+  priority: 1
+  meaning_ban:
+  - içer
+  - barındır
+- id: U7-043
+  unit: 7
+  theme: Kültür ve gelenek
+  display: handicrafts (pottery)
+  kind: phrase
+  class: core
+  meaning_tr: el sanatları (çömlekçilik)
+  priority: 1
+  variants:
+  - handicrafts
+  - pottery
+  trap_note: doğru yazım handicrafts (kaynaklarda "handcrafts")
+  meaning_ban:
+  - el sanat
+  - çömlek
+- id: U7-044
+  unit: 7
+  theme: Kültür ve gelenek
+  display: cultural diversity (culture / cultural)
+  kind: phrase
+  class: core
+  meaning_tr: kültürel çeşitlilik (kültür / kültürel)
+  priority: 1
+  variants:
+  - cultural diversity
+  meaning_ban:
+  - kültür
+  - çeşitlilik
+- id: U7-045
+  unit: 7
+  theme: Kültür ve gelenek
+  display: hospitality (hospitable)
+  kind: phrase
+  class: core
+  meaning_tr: misafirperverlik (misafirperver)
+  priority: 1
+  variants:
+  - hospitable
+  - hospitality
+  meaning_ban:
+  - misafirperver
+- id: U7-046
+  unit: 7
+  theme: Kültür ve gelenek
+  display: local / authentic
+  kind: phrase
+  class: core
+  meaning_tr: yerel / otantik, özgün
+  priority: 1
+  variants:
+  - authentic
+  - local
+  - local dish
+  - taste local dishes
+  meaning_ban:
+  - yerel
+  - otantik
+  - özgün
+- id: U7-047
+  unit: 7
+  theme: Kültür ve gelenek
+  display: folk dance
+  kind: phrase
+  class: core
+  meaning_tr: halk dansı (halk oyunu)
+  priority: 1
+  meaning_ban:
+  - halk dans
+  - halk oyun
+- id: U7-048
+  unit: 7
+  theme: Kültür ve gelenek
+  display: religious (religious celebration / ceremony)
+  kind: phrase
+  class: core
+  meaning_tr: dini (dini kutlama / tören)
+  priority: 1
+  variants:
+  - ceremony
+  - religious
+  - religious celebration
+  meaning_ban:
+  - dini
+  - tören
+- id: U7-049
+  unit: 7
+  theme: Yerleri betimleme
+  display: incredible / unbelievable
+  kind: phrase
+  class: core
+  meaning_tr: inanılmaz
+  priority: 1
+  variants:
+  - incredible
+  - unbelievable
+  meaning_ban:
+  - inanılmaz
+- id: U7-050
+  unit: 7
+  theme: Yerleri betimleme
+  display: enormous / huge
+  kind: phrase
+  class: core
+  meaning_tr: devasa, kocaman
+  priority: 1
+  variants:
+  - enormous
+  - huge
+  meaning_ban:
+  - devasa
+  - kocaman
+- id: U7-051
+  unit: 7
+  theme: Yerleri betimleme
+  display: remarkable
+  kind: word
+  class: core
+  meaning_tr: dikkate değer, olağanüstü
+  priority: 1
+  meaning_ban:
+  - dikkate değer
+  - dikkat çek
+  - olağanüstü
+- id: U7-052
+  unit: 7
+  theme: Yerleri betimleme
+  display: crowded (busy street)
+  kind: phrase
+  class: trap
+  meaning_tr: kalabalık
+  priority: 1
+  variants:
+  - busy street
+  - crowded
+  trap_note: 'busy kişi için "meşgul" (U1-004), yer için "kalabalık, hareketli": a busy street = kalabalık cadde'
+  meaning_ban:
+  - kalabalık
+- id: U7-053
+  unit: 7
+  theme: Yerleri betimleme
+  display: unforgettable (memory)
+  kind: phrase
+  class: core
+  meaning_tr: unutulmaz (anı)
+  priority: 1
+  variants:
+  - memory
+  - unforgettable
+  meaning_ban:
+  - unutulmaz
+  - anı
+- id: U7-054
+  unit: 7
+  theme: Yerleri betimleme
+  display: definitely / truly
+  kind: phrase
+  class: core
+  meaning_tr: kesinlikle / gerçekten
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - definitely
+  variants:
+  - definitely
+  - truly
+  meaning_ban:
+  - kesinlikle
+  - gerçekten
+- id: U7-055
+  unit: 7
+  theme: Yerleri betimleme
+  display: charming
+  kind: word
+  class: core
+  meaning_tr: şirin, büyüleyici, hoş (yer için)
+  priority: 2
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - charming
+  meaning_ban:
+  - şirin
+  - büyüleyici
+- id: U7-056
+  unit: 7
+  theme: Deneyim, görüş ve öneri kalıpları
+  display: be famous for (What is … famous for?)
+  kind: pattern
+  class: pattern
+  meaning_tr: … ile ünlü olmak (… neyiyle ünlü?)
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - famous
+  variants:
+  - famous
+  - what is … famous for?
+  trap_note: famous for + isim (famous for its kebab); famous as + unvan; well-known (U3-063) eş anlamlı
+  meaning_ban:
+  - ünlü
+- id: U7-057
+  unit: 7
+  theme: Deneyim, görüş ve öneri kalıpları
+  display: Have you ever been to …? / I have been to … / I've never been to …
+  kind: pattern
+  class: pattern
+  meaning_tr: … -e hiç gittin mi? / … -e gittim / … -e hiç gitmedim
+  priority: 1
+  variants:
+  - have you ever been to …?
+  trap_note: been to = gidip dönmüş olmak; "gone to" orada, henüz dönmemiş. Kalıp olarak öğretilir, Present Perfect dilbilgisi olarak değil
+- id: U7-058
+  unit: 7
+  theme: Deneyim, görüş ve öneri kalıpları
+  display: Did you enjoy your trip? / How long did you stay? (gezi soruları)
+  kind: pattern
+  class: pattern
+  meaning_tr: Gezinden keyif aldın mı? / Orada ne kadar kaldın? (geçmiş gezi soruları)
+  priority: 1
+  variants:
+  - did you enjoy your trip?
+  - how long did you stay?
+  meaning_ban:
+  - keyif
+  - ne kadar kal
+- id: U7-059
+  unit: 7
+  theme: Deneyim, görüş ve öneri kalıpları
+  display: What is … like? (the weather / the climate / the city)
+  kind: pattern
+  class: pattern
+  meaning_tr: … nasıl? (betimleme sorusu)
+  priority: 1
+  variants:
+  - what is … like?
+  trap_note: 'like burada "sevmek" değil, "gibi": What is Mardin like? = Mardin nasıl bir yer? "Do you like Mardin?" ile karıştırılır'
+- id: U7-060
+  unit: 7
+  theme: Deneyim, görüş ve öneri kalıpları
+  display: What do you think about …? – To me, …
+  kind: pattern
+  class: pattern
+  meaning_tr: … hakkında ne düşünüyorsun? – Bana göre …
+  priority: 1
+  variants:
+  - what do you think about …?
+  meaning_ban:
+  - ne düşün
+  - bana göre
+- id: U7-061
+  unit: 7
+  theme: Deneyim, görüş ve öneri kalıpları
+  display: must-see / worth seeing (worth visiting)
+  kind: pattern
+  class: pattern
+  meaning_tr: mutlaka görülmesi gereken / görmeye değer
+  priority: 1
+  variants:
+  - must-see place
+  - worth seeing
+  trap_note: 'worth + V-ing: worth seeing, worth visiting (U3-059 worth trying ile aynı yapı)'
+  meaning_ban:
+  - görülmesi gereken
+  - görmeye değer

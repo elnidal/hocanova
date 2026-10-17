@@ -1,0 +1,315 @@
+schema_version: 1
+program: lgs
+unit: 4
+day: 2
+status: draft
+title: "Kırk dakika"
+est_minutes: 10
+characters: [Ece, Kaan, Kaan'ın annesi, Selin, Duru, Bora, Sevim Hanım]
+new_items: [U4-001, U4-009, U4-010, U4-014, U4-016, U4-023]
+
+story:
+  - id: s01
+    text: "Tatilin ikinci sabahı, Bursa. Ece plan defterini açtı. Listede tek bir isim kalmıştı, kırmızı kalemle üç kez daire içine alınmış: Kaan."
+  - id: s02
+    text: "Ece, Kaan'ın cep numarasını aradı. Yine o kısa, inatçı ses: düt… düt… düt… Ardından robot bir kadın sesi: \"<en>Sorry. The line is {U4-016|engaged}. Please try again later.</en>\""
+  - id: s03
+    text: "Ece on dakikada bir denedi ve her denemeyi defterine yazdı: \"<en>9.00 – {U4-016|engaged}. 9.10 – {U4-016|engaged}. 9.20 – STILL {U4-016|engaged}! Who is he talking to?!</en>\""
+  - id: s04
+    text: "Aynı saatlerde İzmir'de Kaan odasında bir aşağı bir yukarı yürüyordu. Tam kırk dakikadır okul takımının koçuyla konuşuyor, yine yedek kalmasına itiraz ediyordu: \"<en>But Coach, I {U2-033|train} three times a week! Why am I a substitute again? It isn't {U1-071|fair}!</en>\""
+  - id: s05
+    text: "Ece pes etmedi; bu kez Kaan'ların ev telefonunu aradı. Hattın öbür ucundan Kaan'ın annesinin sesi geldi. Ece: \"<en>Hello, {U4-031|this is} Ece, Kaan's friend. {U4-026|Could I speak to} Kaan, please?</en>\""
+  - id: s06
+    text: "Kaan'ın annesi: \"<en>Oh, hello, Ece! {U4-023|I'm afraid} he isn't {U4-014|available} at the moment. He's on his mobile with his basketball coach. For forty minutes!</en>\""
+  - id: s07
+    text: "Ece: \"<en>So that's why his line is always {U4-016|engaged}!</en>\" Kaan'ın annesi iç çekti: \"<en>Yes. He's very {U1-004|busy}. He says it's 'the most important call of his life'.</en>\""
+  - id: s08
+    text: "Kaan'ın annesi: \"<en>Can I {U4-009|take a message}?</en>\" Ece: \"<en>Yes, please! Could you ask him to {U4-001|call me back}? {U1-094|As soon as possible}, please. It's about a concert!</en>\""
+  - id: s09
+    text: "Kaan'ın annesi telefonu omzuyla kulağının arasına sıkıştırdı; çekmeceden bir kalem, buzdolabının yanından küçük pembe bir kâğıt buldu: \"<en>{U4-007|Hang on}… OK. Let me read it back to you.</en>\""
+  - id: s10
+    text: "Kâğıda yazdığını yüksek sesle okudu: \"<en>'{U4-010|Memo} for Kaan: Ece called. Concert! Please {U4-001|call her back}.' Is that OK?</en>\" Ece: \"<en>Perfect, thank you!</en>\""
+  - id: s11
+    text: "Kaan'ın annesi pembe kâğıdı buzdolabının kapağına, pizza dilimi şeklindeki mıknatısın altına sıkıştırdı. Tam o sırada çaydanlık öttü, kapıya kargo geldi ve kâğıt mıknatısın altında öylece kaldı. Kimse ona bir daha bakmadı."
+  - id: s12
+    text: "Akşam Ece sınıf grubuna yazdı: \"<en>Has anybody talked to Kaan today? I need him for the concert!</en>\""
+  - id: s13
+    text: "Urla'dan Selin, her zamanki gibi ilk yazan oldu: \"<en>His line was {U4-016|engaged} at ten, at one and at four. I checked. Did you {U4-009|leave a message}?</en>\""
+  - id: s14
+    text: "Duru: \"<en>Kaan is never {U4-014|available}. It's a fact, like gravity.</en>\" Bora: \"<en>Says the girl who never {U4-011|picks up}. 😄</en>\""
+  - id: s15
+    text: "Ertesi gün de Kaan'dan ses çıkmadı. Ece bu kez sesli mesaja düştü ve bip sesinden sonra konuştu: \"<en>Kaan, it's Ece. Again. I {U4-009|left a message} with your mum yesterday. Please, please {U4-001|call me back}!</en>\""
+  - id: s16
+    text: "İki gün sonra Kaan sahadan aç kurt gibi döndü ve buzdolabının kapağını hızla çekti. Pizza mıknatısı yere düştü; altından pembe bir kâğıt süzülüp ayaklarının dibine kondu."
+  - id: s17
+    text: "Kaan kâğıdı okudu ve gözleri fal taşı gibi açıldı: \"<en>Mum! What's this {U4-010|memo}? When did Ece call?!</en>\" Annesi salondan seslendi: \"<en>Oh no… two days ago! {U4-023|I'm afraid} I forgot. Sorry, love. It was under the pizza!</en>\""
+  - id: s18
+    text: "Kaan ışık hızıyla Ece'yi aradı. Ece daha 'alo' diyemeden: \"<en>Ece! Sorry, sorry, sorry! I'm {U4-001|calling you back}! I'm two days late, but I'm calling! Blame the pizza {U4-010|memo}!</en>\""
+  - id: s19
+    text: "Ece: \"<en>Kaan! Your line was {U4-016|engaged} for forty minutes! Who were you talking to?</en>\" Kaan: \"<en>My coach. I'm still a substitute… but now I can play ten minutes in the next match! Ten whole minutes!</en>\""
+  - id: s20
+    text: "Ece konseri anlattı: pastane, tatilin son cumartesisi, ilk sahne. Kaan: \"<en>A concert? Great! But wait, I'm not {U4-014|available} on match days. Let me check my match list. {U4-001|I'll get back to you}!</en>\" Ve düt… Hat kesildi."
+  - id: s21
+    text: "Ece telefona bakakaldı, sonra gruba yazdı: \"<en>Kaan {U4-001|called back} after two days. Then he said 'I'll get back to you.' 😐</en>\" Selin: \"<en>So… see you on Friday, Kaan.</en>\""
+  - id: s22
+    text: "Gece yarısına doğru Ece'nin telefonu bir kez daha titredi. Sevim Hanım'dan sesli mesaj: \"<en>Ece dear, {U4-023|I'm afraid} there's a small problem. The shop is {U4-014|available} on Saturday, but my head office must say yes first. Call me in the morning!</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Hello, this is Ece. Could I speak to Kaan, please?</en>"
+  - id: c02
+    speaker: Kaan'ın annesi
+    text: "<en>I'm afraid he isn't available at the moment. He's on the phone with his coach. Can I take a message?</en>"
+  - id: c03
+    speaker: Ece
+    text: "<en>Yes, please. Could you ask him to call me back? It's about a concert.</en>"
+  - id: c04
+    speaker: Kaan'ın annesi
+    text: "<en>Of course. I'm writing a memo for him now.</en>"
+  - id: c05
+    speaker: Kaan
+    text: "<en>Ece, sorry! I found the memo two days later! I'll get back to you!</en>"
+
+steps:
+  - item: U4-016
+    sezdir:
+      id: u4d02-016-z
+      type: meaning
+      context: s02
+      prompt: "Robot sesin \"The line is engaged\" sözünde \"engaged\" ne anlama geliyordu?"
+      options: ["(hat) meşgul", "nişanlı", "bozuk", "çok uzak"]
+      answer: 0
+      explain: "engaged bir kişi için \"nişanlı\" demektir; ama telefon hattı için söylenirse hat meşguldür, karşıdaki başka biriyle konuşuyordur."
+    kullan:
+      id: u4d02-016-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I called Bora three times, but the line was ________. He was talking to his grandpa.</en>"
+      options: ["engaged", "free", "quiet", "ready"]
+      answer: 0
+      explain: "Aranan kişi o sırada başka biriyle konuşuyorsa hat engaged (= busy) olur."
+    sina:
+      id: u4d02-016-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: I've called Kaan five times, but I always hear \"beep, beep, beep\".\nSelin: ________\nEce: Yes, he's probably talking to his coach again.</en>"
+      options: ["Maybe his line is engaged.", "Maybe he's asleep.", "Great! So he answered you.", "Why don't you text Duru?"]
+      answer: 0
+      explain: "Ece \"he's probably talking to his coach\" diyerek onaylıyor: Selin hattın meşgul olduğunu tahmin etmiş olmalı."
+  - item: U4-023
+    sezdir:
+      id: u4d02-023-z
+      type: meaning
+      context: s06
+      prompt: "Kaan'ın annesinin \"I'm afraid he isn't available\" sözünde \"I'm afraid\" ne anlama geliyordu?"
+      options: ["maalesef (kibarca kötü haber verirken)", "korkuyorum", "eminim ki", "umarım"]
+      answer: 0
+      explain: "I'm afraid + olumsuz haber = kibar bir \"maalesef\"; kimse korkmuyor."
+    kullan:
+      id: u4d02-023-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Can I speak to Mr Demir, please?\nB: I'm ________ he isn't here at the moment. Can I take a message?</en>"
+      options: ["afraid", "proud", "fond", "keen"]
+      answer: 0
+      explain: "Telefonda kötü haberi kibarca vermek için \"I'm afraid …\" ile başlanır."
+    sina:
+      id: u4d02-023-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is a refusal?</en>"
+      stem: "<en>Bora: Would you like to come to the rehearsal on Saturday?</en>"
+      options: ["I'm afraid I can't. I'm visiting my grandma.", "Sure, I'd love to!", "Why not? What time?", "That would be great."]
+      answer: 0
+      explain: "\"I'm afraid I can't\" kibar bir ret; diğer üç cevap daveti kabul ediyor."
+  - item: U4-014
+    sezdir:
+      id: u4d02-014-z
+      type: meaning
+      context: s06
+      prompt: "Kaan'ın annesinin \"he isn't available at the moment\" sözünde \"available\" ne anlama geliyordu?"
+      options: ["müsait, (telefona) gelebilecek durumda", "hasta", "kızgın", "uykulu"]
+      answer: 0
+      explain: "Kaan o anda başka bir görüşmede olduğu için telefona gelemiyor: müsait değil."
+    kullan:
+      id: u4d02-014-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Can I speak to Mrs Aksoy, please?\nB: Sorry, she isn't ________ right now. She's in a meeting.</en>"
+      options: ["available", "comfortable", "generous", "loud"]
+      answer: 0
+      explain: "Bir kişi o an konuşamıyor ya da işi varsa \"She isn't available\" denir."
+    sina:
+      id: u4d02-014-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>Selin's message: Sorry, I can't come to the rehearsal on Friday. I'm not available until 6 p.m. because I'm visiting my grandparents. But Saturday morning is fine for me!</en>"
+      options: ["Selin is busy on Friday until 6 p.m.", "Selin can come on Friday at 4 p.m.", "Selin isn't free on Saturday morning.", "Selin's grandparents are coming to the rehearsal."]
+      answer: 0
+      explain: "not available ≈ busy: doğru şık mesajı aynen tekrar etmiyor, eş anlamlısıyla söylüyor."
+  - item: U4-009
+    sezdir:
+      id: u4d02-009-z
+      type: meaning
+      context: s15
+      prompt: "Ece'nin \"I left a message with your mum\" sözünde \"leave a message\" ne anlama geliyordu?"
+      options: ["mesaj bırakmak", "mesajı silmek", "mesajı okumak", "telefonu bırakmak"]
+      answer: 0
+    kullan:
+      id: u4d02-009-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan's mum: Kaan isn't here. Can I ________ a message?\nEce: Yes, please. Tell him to call me back.</en>"
+      options: ["take", "leave", "send", "give"]
+      answer: 0
+      explain: "Mesajı telefonu açan kişi alır (take a message); arayan kişi ise mesaj bırakır (leave a message)."
+    sina:
+      id: u4d02-009-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who leaves a message?</en>"
+      stem: "<en>Woman: Hello?\nBora: Hello, this is Bora. Is Selin there?\nWoman: I'm afraid she's out. Can I take a message?\nBora: Yes, please. Tell her the rehearsal is at five.</en>"
+      options: ["Bora", "Selin", "the woman", "Selin and the woman"]
+      answer: 0
+      explain: "Mesajı bırakan arayan kişidir (Bora); kadın mesajı alıyor, Selin ise evde değil."
+  - item: U4-010
+    sezdir:
+      id: u4d02-010-z
+      type: meaning
+      context: s10
+      prompt: "Kaan'ın annesinin pembe kâğıda yazdığı \"Memo\" ne anlama geliyordu?"
+      options: ["kısa not", "alışveriş listesi", "hatıra, anı", "fatura"]
+      answer: 0
+      explain: "memo kâğıda yazılan kısa nottur; memory (hafıza, anı) ile karıştırma."
+    kullan:
+      id: u4d02-010-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I wasn't at home when Elif called, so my brother wrote a ________ for me: \"Elif called. Call her back.\"</en>"
+      options: ["memo", "memory", "menu", "recipe"]
+      answer: 0
+      explain: "Telefonda bırakılan mesajı kâğıda yazınca ortaya bir memo çıkar."
+    sina:
+      id: u4d02-010-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the memo, which of the following is TRUE?</en>"
+      stem: "<en>PHONE MEMO\nFor: Mr Demir\nCaller: Mrs Arslan\nTime: Monday, 11 a.m.\nMessage: The meeting is on Thursday, not Wednesday. Please call her back before 5 p.m.</en>"
+      options: ["Mr Demir should call Mrs Arslan before 5 p.m.", "Mrs Arslan wrote the memo.", "The meeting is on Wednesday.", "Mr Demir called Mrs Arslan at 11 a.m."]
+      answer: 0
+      explain: "Notta arayan Bayan Arslan; Bay Demir'den onu saat 5'ten önce aramasını istiyor. Notu yazan başka biri, toplantı da perşembe."
+  - item: U4-001
+    sezdir:
+      id: u4d02-001-z
+      type: meaning
+      context: s20
+      prompt: "Kaan'ın \"I'll get back to you!\" sözü ne anlama geliyordu?"
+      options: ["Sana dönüş yaparım (seni sonra ararım).", "Eve dönüyorum.", "Sana geri vereceğim.", "Arkanı dön!"]
+      answer: 0
+      explain: "get back tek başına \"eve dönmek\" olabilir; ama get back to + kişi = birine dönüş yapmak, onu sonra aramak."
+    kullan:
+      id: u4d02-001-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Duru is in the shower now. Can she call you ________ in ten minutes?</en>"
+      options: ["back", "out", "off", "away"]
+      answer: 0
+      explain: "Seni sonra yeniden arayacak kişi için call (you) back kullanılır; zamir iki parçanın arasına girer."
+    sina:
+      id: u4d02-001-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the dialogue, which of the following is TRUE?</en>"
+      stem: "<en>Kaan: Sorry, Ece, I'm at basketball practice. I'll get back to you after six, OK?\nEce: OK, no problem.</en>"
+      options: ["Kaan will call Ece after six.", "Kaan will go back home before six.", "Ece will call Kaan at practice.", "Kaan doesn't want to talk to Ece."]
+      answer: 0
+      explain: "get back to you = seni (geri) ararım; \"go back home\" şıkkı get back'in öbür anlamıyla kurulmuş bir tuzak."
+
+review:
+  - id: u4d02-r01
+    type: gap_fill
+    item: U4-007
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Bora's grandpa: Bora? Yes, he's here. ________ a minute, I'll get him.</en>"
+    options: ["Hang on", "Hang out", "Speak", "Ring"]
+    answer: 0
+  - id: u4d02-r02
+    type: gap_fill
+    item: U4-011
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Duru's phone rang ten times, but she didn't ________. It was on silent.</en>"
+    options: ["pick up", "hang out", "invite", "join"]
+    answer: 0
+  - id: u4d02-r03
+    type: gap_fill
+    item: U4-013
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Listen! Is that your phone? It's ________ in your bag.</en>"
+    options: ["ringing", "speaking", "holding", "picking"]
+    answer: 0
+  - id: u4d02-r04
+    type: dialogue_complete
+    item: U4-022
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>[The phone rings. Mum is cooking.]\nMum: Can somebody answer the phone, please?\nKaan: ________\nMum: Thanks, love!</en>"
+    options: ["Don't worry, Mum. I'll take that!", "Who's calling, please?", "Sorry, I can't hear it.", "Hang on, I'll get her."]
+    answer: 0
+    explain: "Annesi teşekkür ediyor: Kaan telefona bakmayı o anda üstlenmiş olmalı (anlık karar: I'll …)."
+  - id: u4d02-r05
+    type: dialogue_complete
+    item: U4-026
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Woman: Good morning, the cake shop across from the park.\nElif: Hello, this is Elif. ________\nWoman: Speaking! Hello, Elif.</en>"
+    options: ["Could I speak to Sevim Hanım, please?", "Who's calling, please?", "I'll take that!", "Can I give you a ring?"]
+    answer: 0
+    explain: "Cevap \"Speaking!\": telefonu açan kadın, Elif'in görüşmek istediği kişinin kendisi."
+  - id: u4d02-r06
+    type: dialogue_complete
+    item: U4-031
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Woman: Hello? Who's calling, please?\nKaan: ________\nWoman: Oh, hi Kaan! Hang on, I'll get Bora.</en>"
+    options: ["It's Kaan, Bora's friend.", "I'm fine, thanks.", "Speaking.", "Bora isn't here."]
+    answer: 0
+    explain: "\"Who's calling?\" sorusuna arayan kendini tanıtarak cevap verir; \"Speaking.\" ise aranan kişinin cevabıdır."
+
+tips:
+  - type: tuzak
+    refs: [U4-016, U1-004]
+    text: "engaged bir kişi için \"nişanlı\" demektir; ama \"The line is engaged\" = hat meşgul. Bu anlamda busy (Ü1) ile eş anlamlıdır: \"The line is busy.\" Kaan'ın hattı nişanlanmadı, sadece kırk dakika boyunca doluydu! 😄"
+  - type: tuzak
+    refs: [U4-023, U4-014]
+    text: "I'm afraid burada \"korkarım\" değil, kibar bir \"maalesef\": \"I'm afraid he isn't available.\" available kişi için \"müsait\", eşya ya da hizmet için \"mevcut, bulunur\" demektir (The shop is available on Saturday)."
+  - type: tuzak
+    refs: [U4-009, U4-010]
+    text: "leave a message = arayan kişi mesaj bırakır. take a message = telefonu açan kişi mesajı alır, çoğu zaman bir memo'ya yazar. \"Can I take a message?\" sorusunu hep telefonu açan sorar."
+  - type: tuzak
+    refs: [U4-001]
+    text: "get back tek başına \"(eve) dönmek\": \"I get back home at six.\" get back to + kişi ise \"birine dönüş yapmak, onu sonra aramak\": \"I'll get back to you.\" Zamir de call'un ortasına girer: call me back, \"call back me\" değil."
+
+coach:
+  start: "Ece bugün Kaan'ı arıyor, arıyor, arıyor… Ama hattın öbür ucundan hep aynı ses geliyor: düt düt düt. Kaan kiminle konuşuyor? 📞"
+  end_good: "Harika! Kaan iki gün sonra döndü, sen hepsini ilk seferde kaptın. Yarın Ece koca bir binada doğru kapıyı arayacak 🏢"
+  end_mixed: "Güzel çaba! {weak} biraz karıştı. Pizza mıknatısının altında kalmasın; yarın bir kez daha bakarız 🍕"
+
+notifications:
+  morning: "Ece Kaan'ı arıyor, arıyor, arıyor… Hattın öbür ucunda neler oluyor? 📞"
+  evening: "Pizza mıknatısının altında unutulan pembe bir kâğıt. Bugünkü hikâyeyi kaçırma! 🍕"
+  review: "\"I'm afraid he isn't available.\" Burada biri gerçekten korkuyor mu? 🤔"
+
+editor:
+  z07: {U4-001: BEKLIYOR, U4-009: BEKLIYOR, U4-010: BEKLIYOR, U4-014: BEKLIYOR, U4-016: BEKLIYOR, U4-023: BEKLIYOR}

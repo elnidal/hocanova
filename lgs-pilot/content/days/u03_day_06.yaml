@@ -1,0 +1,319 @@
+schema_version: 1
+program: lgs
+unit: 3
+day: 6
+status: draft
+title: "Makarna akşamı"
+est_minutes: 10
+characters: [Bora, Kaan, Duru, Bora'nın dedesi]
+new_items: [U3-002, U3-012, U3-014, U3-015, U3-024, U3-047]
+
+story:
+  - id: s01
+    text: "Cuma akşamı, Bora'nın evi. Annesi gece nöbetine çıkmıştı; dedesi gelmiş, salonda plaktan {U2-024|jazz} dinliyordu."
+  - id: s02
+    text: "Buzdolabının üstünde annesinin notu vardı. Junior Chef'e pratik olsun diye notu İngilizce yazmıştı. Bora yüksek sesle okudu:"
+  - id: s03
+    text: "\"<en>1. {U3-002|Boil} some water in the big {U3-041|saucepan}. 2. Cook the pasta for nine minutes. 3. {U3-014|Drain} it in the {U3-014|strainer}.</en>\""
+  - id: s04
+    text: "\"<en>4. {U3-015|Grate} some cheese and {U3-024|sprinkle} it on top. 5. {U3-012|Cover} the sauce, or it will get cold. Love, Mum ❤️</en>\""
+  - id: s05
+    text: "Kaan: \"<en>Your mum writes {U3-050|recipes} in English? Cool!</en>\" Bora: \"<en>She says I'm a {U1-059|reliable} cook now. Leave it to me.</en>\""
+  - id: s06
+    text: "Dedesi mutfak kapısında belirdi: \"<en>I'm the grown-up here, and I'm staying in the kitchen. The hot water is my job. The rest is yours, chefs.</en>\""
+  - id: s07
+    text: "Kaan: \"<en>{U3-047|How long} do we cook the pasta?</en>\" Bora notu gösterdi: \"<en>Nine minutes. Read the note, chef.</en>\""
+  - id: s08
+    text: "Kaan telefonunu çıkardı ve hayatında ilk kez bir zamanlayıcı kurdu: 09:00. Duru gözlerine inanamadı: \"<en>Kaan… is that a timer? Are you OK?</en>\" Kaan: \"<en>Junior Chef changes people, mate.</en>\""
+  - id: s09
+    text: "Bu arada Bora sosa başlamıştı: \"<en>{U3-045|First}, I {U3-004|fry} the onion in a small {U3-041|pan}. {U3-045|Then}, I {U3-020|pour} in the tomatoes and {U3-018|stir}.</en>\""
+  - id: s10
+    text: "Duru iki yumurta aldı: \"<en>And I'll {U3-026|whisk} some eggs. Plan B: an omelette.</en>\" Bora: \"<en>Plan B? Why?</en>\" Duru: \"<en>In case Kaan happens.</en>\""
+  - id: s11
+    text: "Kaan: \"<en>I can {U3-013|crack} the eggs!</en>\" Üç ses aynı anda: \"<en>NO!</en>\" Kaan alnına dokundu; o sabahı hâlâ hatırlıyordu."
+  - id: s12
+    text: "Dokuzuncu dakikada telefon öttü. Kaan yerinden fırladı: \"<en>Time! Time! The pasta is ready!</en>\""
+  - id: s13
+    text: "Dede ağır kabı iki eliyle lavaboya taşıdı. Kaan da {U3-014|strainer}'ı lavabonun üstünde tutuyordu. Ama ters."
+  - id: s14
+    text: "Makarna, ters {U3-014|strainer}'ın sırtından kayıp lavaboya gitti. Yarısı."
+  - id: s15
+    text: "Bora: \"<en>Kaan! It's upside down! We {U3-014|drain} the pasta, we don't feed the sink!</en>\""
+  - id: s16
+    text: "Duru bir lavaboya, bir kalan makarnaya baktı: \"<en>Important question: {U3-047|how much} pasta is left?</en>\" Bora: \"<en>Half. Maybe less.</en>\""
+  - id: s17
+    text: "Kaan: \"<en>So, {U3-047|how many} plates can I have?</en>\" Duru: \"<en>Zero. The sink ate yours.</en>\" En yüksek kahkaha Kaan'ınkiydi."
+  - id: s18
+    text: "Dede: \"<en>Don't worry, I did the same thing at your age. Twice.</en>\" Bora sakin sakin dolabı açtı: \"<en>No problem. One more packet. We'll {U3-002|boil} some more water.</en>\""
+  - id: s19
+    text: "Kaan bu kez zamanlayıcıyı kimse söylemeden kurdu. Dede: \"<en>The water is {U3-002|boiling}. Go, chef!</en>\""
+  - id: s20
+    text: "Bora: \"<en>Duru, {U3-012|cover} the sauce, please. It's getting cold.</en>\""
+  - id: s21
+    text: "Duru: \"<en>{U3-012|Cover} it with what? My hand?</en>\" Bora: \"<en>With the lid, Duru. The lid.</en>\""
+  - id: s22
+    text: "Kaan özür diler gibi elini kaldırdı: \"<en>Let me {U3-015|grate} the cheese. Give me the {U3-015|grater}!</en>\""
+  - id: s23
+    text: "Dede: \"<en>Slowly, Kaan. Mind your fingers on the {U3-015|grater}. This isn't a race.</en>\""
+  - id: s24
+    text: "Bora: \"<en>Now {U3-024|sprinkle} the cheese on top. Just a little, like snow.</en>\" Kaan makarnanın üstüne bembeyaz bir dağ yaptı."
+  - id: s25
+    text: "Duru: \"<en>That's not {U3-024|sprinkling}, Kaan. That's a mountain.</en>\""
+  - id: s26
+    text: "Gece onda tabaklar bomboştu. Kaan kanepeye yığıldı: \"<en>I'm {U1-099|stuffed}. Best pasta ever. Even the half in the sink.</en>\""
+  - id: s27
+    text: "Duru kapıdan çıkarken döndü: \"<en>Tomorrow: pizza at my house. Kaan, you bring the parsley.</en>\" Kaan: \"<en>Easy!</en>\" Dede plağı yeniden çalmaya başladı."
+
+scene:
+  - id: c01
+    speaker: Kaan
+    text: "<en>How long do we boil the pasta, Bora?</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>Nine minutes. Then we drain it, grate some cheese and sprinkle it on top.</en>"
+  - id: c03
+    speaker: Duru
+    text: "<en>And how much pasta is left after Kaan's strainer show?</en>"
+  - id: c04
+    speaker: Kaan
+    text: "<en>Half! But we cooked more. And Duru covered the sauce with the lid, not with her hand.</en>"
+
+steps:
+  - item: U3-002
+    sezdir:
+      id: u3d06-002-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"boil\" ne anlama geliyordu?"
+      options: ["kaynatmak; haşlamak", "kızartmak", "soğutmak", "dilimlemek"]
+      answer: 0
+    kullan:
+      id: u3d06-002-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>First, ________ the eggs in hot water for ten minutes. Then, peel them.</en>"
+      options: ["boil", "fry", "grate", "sprinkle"]
+      answer: 0
+      explain: "Suyun içinde pişirmek boil ile söylenir: boil eggs, boil pasta; yağda pişirmek fry."
+    sina:
+      id: u3d06-002-s
+      type: process_order
+      lgs_like: true
+      stem_id: S07
+      prompt: "<en>Which of the following is the correct order?</en>"
+      stem: "<en>Pasta for two\na) Drain the pasta.\nb) Boil some water in a saucepan.\nc) Sprinkle cheese on top and eat.\nd) Cook the pasta in the boiling water for nine minutes.</en>"
+      options: ["b → d → a → c", "d → b → a → c", "b → a → d → c", "a → b → d → c"]
+      answer: 0
+      explain: "Su kaynamadan makarna pişmez, pişmeden süzülmez; peynir serpmek ve yemek hep sondadır."
+  - item: U3-014
+    sezdir:
+      id: u3d06-014-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"drain (strainer)\" ne anlama geliyordu?"
+      options: ["suyunu süzmek (süzgeç)", "rendelemek (rende)", "üstünü örtmek", "serpmek"]
+      answer: 0
+    kullan:
+      id: u3d06-014-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The pasta is ready. Now ________ it in the strainer over the sink.</en>"
+      options: ["drain", "grate", "sprinkle", "whisk"]
+      answer: 0
+      explain: "Pişen yiyeceğin suyunu akıtmak drain ile söylenir; bunun için strainer (süzgeç) kullanılır."
+    sina:
+      id: u3d06-014-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Bora's pasta is cooked, but it is still in the hot water. What does he need now?</en>"
+      options: ["a strainer", "a grater", "a teaspoon", "an oven"]
+      answer: 0
+      explain: "Pişmiş makarnayı sudan ayırmak için süzgeç (strainer) gerekir; rende peynir için, fırın pişirmek içindir."
+  - item: U3-015
+    sezdir:
+      id: u3d06-015-z
+      type: meaning
+      context: s22
+      prompt: "Hikâyede \"grate (grater)\" ne anlama geliyordu?"
+      options: ["rendelemek (rende)", "dilimlemek", "eritmek", "soymak"]
+      answer: 0
+    kullan:
+      id: u3d06-015-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Can you ________ some cheese and a carrot for the salad? Use the small holes.</en>"
+      options: ["grate", "drain", "boil", "cover"]
+      answer: 0
+      explain: "Rendenin delikleriyle ufalamak grate ile söylenir; alet grater."
+    sina:
+      id: u3d06-015-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which tool is NOT mentioned in the note?</en>"
+      stem: "<en>Mum's note: Boil the pasta in the big saucepan. Drain it in the strainer. Grate some cheese with the grater and sprinkle it on top.</en>"
+      options: ["an oven", "a saucepan", "a strainer", "a grater"]
+      answer: 0
+      explain: "Notta saucepan, strainer ve grater geçiyor; makarna ocakta pişer, fırından (oven) söz edilmiyor."
+  - item: U3-024
+    sezdir:
+      id: u3d06-024-z
+      type: meaning
+      context: s24
+      prompt: "Hikâyede \"sprinkle\" ne anlama geliyordu?"
+      options: ["serpmek", "sıkmak", "dökmek", "yoğurmak"]
+      answer: 0
+    kullan:
+      id: u3d06-024-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>________ a little sugar on the strawberries before you eat them.</en>"
+      options: ["Sprinkle", "Drain", "Boil", "Crack"]
+      answer: 0
+      explain: "Toz ya da ufak şeyleri azar azar üstüne dağıtmak sprinkle ile söylenir; sıvı için pour."
+    sina:
+      id: u3d06-024-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: The pizza looks a bit plain.\nBora: ________\nElif: Good idea! Cheese makes everything better.</en>"
+      options: ["Let's sprinkle some cheese on it.", "Let's drain it.", "Let's boil it.", "Let's crack it."]
+      answer: 0
+      explain: "Elif'in cevabı peynirden söz ediyor; pizzanın üstüne peynir serpmek sprinkle ile olur."
+  - item: U3-012
+    sezdir:
+      id: u3d06-012-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede \"cover\" ne anlama geliyordu?"
+      options: ["üstünü örtmek, kapatmak", "kitap kapağı", "karıştırmak", "dökmek"]
+      answer: 0
+    kullan:
+      id: u3d06-012-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>________ the saucepan with a lid, so the soup stays hot.</en>"
+      options: ["Cover", "Grate", "Drain", "Sprinkle"]
+      answer: 0
+      explain: "Kabın üstünü kapakla kapatmak cover (with a lid) ile söylenir."
+    sina:
+      id: u3d06-012-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>Mum: Bora, the soup is on the cooker. Please cover it with a lid after you eat. I don't want it to get cold before Grandpa arrives.</en>"
+      options: ["Mum wants the soup to stay warm.", "Mum wants Bora to eat the soup cold.", "Mum wants Bora to grate the soup.", "The soup is in the oven."]
+      answer: 0
+      explain: "\"I don't want it to get cold\" = sıcak kalsın istiyor; doğru şık bunu başka kelimelerle söylüyor."
+  - item: U3-047
+    sezdir:
+      id: u3d06-047-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"How long\" ne anlama geliyordu?"
+      options: ["ne kadar süre", "kaç tane", "ne zaman", "nerede"]
+      answer: 0
+    kullan:
+      id: u3d06-047-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>\"________ eggs do we need for the cake?\" \"Three.\"</en>"
+      options: ["How many", "How much", "How long", "How often"]
+      answer: 0
+      explain: "Sayılabilen şeylerin sayısı How many ile sorulur: How many eggs?"
+    sina:
+      id: u3d06-047-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which question can be the missing question?</en>"
+      stem: "<en>Kaan: ________\nBora: About nine minutes. Then we drain it.</en>"
+      options: ["How long do we boil the pasta?", "How much pasta do we have?", "How many plates do we need?", "How often do you cook pasta?"]
+      answer: 0
+      explain: "Cevap bir süre (nine minutes) veriyor; süre How long ile sorulur."
+
+review:
+  - id: u3d06-r01
+    type: gap_fill
+    item: U3-035
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Baklava has a lot of sugar and honey in it. It's very ________.</en>"
+    options: ["sweet", "sour", "salty", "bitter"]
+    answer: 0
+  - id: u3d06-r02
+    type: gap_fill
+    item: U3-033
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>This lemon juice is too ________ for me. I need some sugar in it.</en>"
+    options: ["sour", "sweet", "salty", "spicy"]
+    answer: 0
+  - id: u3d06-r03
+    type: gap_fill
+    item: U3-027
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>My dad drinks his coffee with no sugar. I tried it once, but it was too ________ for me.</en>"
+    options: ["bitter", "sweet", "salty", "spicy"]
+    answer: 0
+  - id: u3d06-r04
+    type: dialogue_complete
+    item: U3-032
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Bora: Do you like my crisps?\nDuru: ________ Did you use the whole salt box?\nBora: Oops. Maybe half of it.</en>"
+    options: ["They're too salty!", "They're too sweet!", "They're too sour!", "They're too bitter!"]
+    answer: 0
+    explain: "Duru tuz kutusunu soruyor; demek ki cipsler fazla tuzlu."
+  - id: u3d06-r05
+    type: situation
+    item: U3-034
+    prompt: "<en>How was the sauce?</en>"
+    stem: "<en>Mert put some red chilli sauce on his kebab. After the first bite, his face went red and he drank two glasses of milk.</en>"
+    options: ["very spicy", "very sweet", "very salty", "very sour"]
+    answer: 0
+  - id: u3d06-r06
+    type: gap_fill
+    item: U3-036
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Can you ________ the sauce, please? I think it needs more salt.</en>"
+    options: ["taste", "drain", "grate", "crack"]
+    answer: 0
+  - id: u3d06-r07
+    type: process_order
+    item: U3-010
+    lgs_like: true
+    stem_id: S07
+    prompt: "<en>According to the recipe, what do we do after we peel the apples?</en>"
+    stem: "<en>Fruit salad: Before you peel the apples and pears, wash them. After you peel them, dice them into small cubes. Then, squeeze some lemon juice over them. Finally, sprinkle a little sugar on top.</en>"
+    options: ["We dice them.", "We wash them.", "We squeeze lemon juice over them.", "We sprinkle sugar on them."]
+    answer: 0
+    explain: "\"After you peel them, dice them\": soymadan hemen sonra küp küp doğranır; yıkama soymadan önce gelir."
+
+tips:
+  - type: tuzak
+    refs: [U3-012]
+    text: "cover deyince akla kitap kapağı gelir; ama tarifte fiildir: \"Cover the pan.\" = Kabın üstünü ört / kapağını kapat. \"Cover it with a lid.\" kalıbını ezberle."
+  - type: tuzak
+    refs: [U3-047]
+    text: "Türkçedeki tek \"ne kadar\" İngilizcede üçe ayrılır: süre → How long (nine minutes) · sayılamayan miktar ya da fiyat → How much (pasta, water, money) · sayılabilen → How many (plates, eggs). Cevaba bak, soruyu bul!"
+  - type: kelime_ailesi
+    refs: [U3-015, U3-014]
+    text: "-er ile alet: grate (rendelemek) → grater (rende), open → opener (açacak). Ama drain'in aleti farklı bir kelime: strainer (süzgeç)."
+  - type: lgs_taktigi
+    refs: [U3-002, U3-014, U3-024]
+    text: "Tarif sırası (S07) mantığı: önce boil, sonra drain, en son sprinkle. Kaynamadan süzülmez, süzülmeden peynir serpilmez; yemek hep en sondadır."
+
+coach:
+  start: "Bora'nın annesi bir not bıraktı, Kaan'ın elinde bir zamanlayıcı var. Bu akşam her şey yolunda gidecek mi? 🍝"
+  end_good: "Bravo! Notu eksiksiz okudun. Bora'nın annesi gurur duyardı, Kaan'ın zamanlayıcısı da ⏱️"
+  end_mixed: "Güzel gidiyor! {weak} biraz lavaboya kaçtı ama ikinci paket her zaman var. Yarın tekrar! 🍝"
+
+notifications:
+  morning: "Bu akşam Bora'da makarna var. Kaan da gelecek… lavabo dikkatli olsun 🍝"
+  evening: "Kaan hayatında ilk kez bir zamanlayıcı kurdu. Peki makarna kurtuldu mu? ⏱️"
+  review: "How much mı, how many mi? Cevap, sayabilip sayamamanda saklı 🔢"
+
+editor:
+  z07: {U3-002: BEKLIYOR, U3-012: BEKLIYOR, U3-014: BEKLIYOR, U3-015: BEKLIYOR, U3-024: BEKLIYOR, U3-047: BEKLIYOR}

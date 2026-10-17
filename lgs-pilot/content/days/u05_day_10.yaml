@@ -1,0 +1,390 @@
+schema_version: 1
+program: lgs
+unit: 5
+day: 10
+status: draft
+title: "Rehber sunumu"
+est_minutes: 10
+characters: [Bora, Bora'nın annesi, Kaan, Ece, Selin, Elif, Duru, Murat Bey]
+new_items: [U5-041, U5-050, U5-051, U5-052, U5-056, U5-060]
+
+story:
+  - id: s01
+    text: "Pazar akşamı, sunumdan bir gün önce, Bora'nın annesinin nöbeti yoktu. Bora laptopu açtı, biriktirdiği harçlığı masaya koydu: \"<en>Mum, can we buy real drumsticks? My own! Ahmet Amca's drums are great, but his sticks are forty years old.</en>\""
+  - id: s02
+    text: "Annesi gülümsedi: \"<en>OK, but this time we do it together. Open the {U5-016|browser} and {U5-022|search for} a real music shop. No 'free drum set' pages!</en>\""
+  - id: s03
+    text: "Bora, DrumStar adlı bir müzik mağazasının sitesini buldu; adres çubuğunda küçük bir kilit vardı. \"<en>{U5-051|Online shopping} with my mum. Last week's Bora can't believe it.</en>\""
+  - id: s04
+    text: "Sayfada iki çift baget vardı: \"<en>Pro Sticks – 400 TL – {U5-052|refundable} · Star Sticks – 250 TL – 40% off – {U5-052|non-refundable}</en>\""
+  - id: s05
+    text: "Bora: \"<en>{U5-052|Non-refundable}? What does it mean?</en>\" Annesi: \"<en>It means you can't {U4-041|return} them and get your money back. So choose carefully.</en>\""
+  - id: s06
+    text: "Bora bir davul öğretmeninin videosunu açtı: \"<en>This drum {U5-039|expert} says Star Sticks are perfect for beginners. Very {U5-046|useful} video. I'm a beginner. Star Sticks!</en>\""
+  - id: s07
+    text: "Ödeme sayfası açılınca Bora ellerini klavyeden çekti ve sandalyesini geri itti: \"<en>Card details: you, not me. I learned my lesson.</en>\""
+  - id: s08
+    text: "Annesi kartını çıkardı: \"<en>Name of the {U5-050|cardholder}: that's me. Card number… done.</en>\""
+  - id: s09
+    text: "Bora gözlerini kapattı: \"<en>Is the {U5-050|expiry date} OK? Is the card still alive?</en>\" Annesi güldü: \"<en>It's alive until 2029. {U5-051|Online shopping} rule one: only the adult types the card details. Now look away!</en>\""
+  - id: s10
+    text: "Pazartesi sabahı sunum günüydü. Bora yine kravatla gelmişti. Kaan: \"<en>Buddy, are you {U2-059|nervous}?</en>\" Bora: \"<en>Me? No. My tie is {U2-059|nervous}.</en>\""
+  - id: s11
+    text: "Önce Ece–Selin–Elif ekibi rehberini sundu. Selin sahte haber bölümünü anlattı: \"<en>Before you share news, {U5-038|do research}. Check the school website and read what {U5-039|experts} say.</en>\""
+  - id: s12
+    text: "Sonra sıra Bora'ya geldi. Tahtaya tek bir kelime yazdı: \"<en>FREE?</en>\" Ve anlatmaya başladı: \"<en>Not long ago, a {U5-013|stranger} promised me a free drum set. I {U5-017|clicked}, and I typed my personal {U5-042|information}. The next morning, my account wasn't mine.</en>\""
+  - id: s13
+    text: "Bora: \"<en>But I didn't make an excuse. I told my friends and my mum, and we changed my password together.</en>\""
+  - id: s14
+    text: "Bora: \"<en>Yesterday my mum and I did some {U5-051|online shopping}: my first drumsticks! Only the {U5-050|cardholder} typed the card details. And they're {U5-052|non-refundable}, so I have to love them!</en>\" Sınıf kahkahayı bastı."
+  - id: s15
+    text: "Alkışlar dinince Murat Bey: \"<en>This is the best example in the class, Bora. Real stories teach more than rules.</en>\""
+  - id: s16
+    text: "Teneffüste Ece'nin telefonuna iki milyon takipçili bir {U5-031|influencer}'dan mesaj geldi: \"<en>Hi! Love your channel! Post a video with my new energy drink, and I'll pay you 5,000 TL. Deal?</en>\""
+  - id: s17
+    text: "Kaan'ın gözleri büyüdü: \"<en>5,000! We can buy a real drum set for Bora!</en>\" Bora başını iki yana salladı: \"<en>{U5-056|That's very kind of you, but} no. I've got my sticks now.</en>\""
+  - id: s18
+    text: "Ece kısa bir mesaj yazdı: \"<en>{U5-056|Thanks for asking, but} we don't do paid ads. Our channel is only for our music. Have a nice day!</en>\""
+  - id: s19
+    text: "Selin omzunun üstünden okudu: \"<en>Short, clear and {U4-052|polite}. Ten out of ten.</en>\""
+  - id: s20
+    text: "Son derste Murat Bey tahtaya büyük harflerle yazdı: \"<en>SPRING NATURE CAMP – 2 DAYS</en>\" \"<en>Your parents can buy the bus tickets online. {U5-060|Round-trip} tickets, of course. We're all coming back!</en>\""
+  - id: s21
+    text: "Kaan: \"<en>Can I get a {U5-060|one-way} ticket? I want to live in the forest!</en>\" Selin kaşını kaldırdı: \"<en>You'll miss the bus anyway. Buy a {U5-060|round-trip} ticket and a good alarm clock.</en>\""
+  - id: s22
+    text: "Kaan, Duru'ya döndü: \"<en>Duru, live in the forest with me?</en>\" Duru: \"<en>{U5-056|Thanks for asking, but} no. A {U5-060|one-way} ticket to my sofa, please.</en>\""
+  - id: s23
+    text: "O akşam Ece kanalın sayfasına baktı: \"<en>Subscribers: 1,200 → 3,400</en>\" Gruba yazdı: \"<en>Our subscribers {U5-041|increased} after Bora's story!</en>\""
+  - id: s24
+    text: "Ama en çok izlenen video, Ece'nin on kez çektiği videolardan biri değildi. Kesintisiz bir canlı provaydı: Fıstık uluyor, Bora'nın bageti havaya uçuyor, Elif gülmekten nakaratı kaçırıyordu. \"<en>Views: 52,000 and {U5-041|increasing}</en>\""
+  - id: s25
+    text: "Ece önce kaşlarını çattı, sonra kahkahayı bastı: \"<en>Not perfect. But ours. ❤️</en>\" Elif: \"<en>And the kind comments {U5-041|increase} every day!</en>\""
+  - id: s26
+    text: "Gece yarısı gruba son mesaj Kaan'dan geldi: \"<en>Camp! I'm setting three alarms tonight. Me? Late? Never!</en>\" Duru'nun cevabı tek kelimeydi: \"<en>Sure.</en>\""
+
+scene:
+  - id: c01
+    speaker: Bora'nın annesi
+    text: "<en>Only the cardholder types the card details. Look away, Bora!</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>Star Sticks are non-refundable, so I have to love them!</en>"
+  - id: c03
+    speaker: Ece
+    text: "<en>Thanks for asking, but we don't do paid ads.</en>"
+  - id: c04
+    speaker: Murat Bey
+    text: "<en>Your parents can buy round-trip bus tickets online.</en>"
+  - id: c05
+    speaker: Ece
+    text: "<en>Our subscribers increased! Not perfect, but ours.</en>"
+
+steps:
+  - item: U5-041
+    sezdir:
+      id: u5d10-041-z
+      type: meaning
+      context: s23
+      prompt: "Hikâyede kanal sayfasında \"Subscribers: 1,200 → 3,400\" yazıyor ve Ece \"Our subscribers increased!\" diyor. \"increase\" ne anlama geliyordu?"
+      options: ["artmak", "azalmak", "silinmek", "aynı kalmak"]
+      answer: 0
+    kullan:
+      id: u5d10-041-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>In January our channel had 500 followers. In February it had 900. The number of followers ________ by 400.</en>"
+      options: ["increased", "decreased", "deleted", "avoided"]
+      answer: 0
+      explain: "500'den 900'e çıkan bir sayı için increase kullanılır; decrease tam tersidir."
+    sina:
+      id: u5d10-041-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which phrase can replace the underlined part?</en>"
+      stem: "<en>The number of Internet users in the world <u>is increasing</u> every year. More people go online every day.</en>"
+      options: ["is going up", "is going down", "is staying the same", "is ending"]
+      answer: 0
+      explain: "\"More people go online every day\" ipucu: increase = go up."
+  - item: U5-050
+    sezdir:
+      id: u5d10-050-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede Bora \"Is the expiry date OK? Is the card still alive?\" diye soruyor, annesi \"It's alive until 2029\" diyor. \"expiry date\" ne anlama geliyordu?"
+      options: ["(kartın) son geçerlilik / son kullanma tarihi", "doğum tarihi", "teslimat tarihi", "sipariş numarası"]
+      answer: 0
+    kullan:
+      id: u5d10-050-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This yoghurt smells strange. Look at the ________ on the box. It was last week!</en>"
+      options: ["expiry date", "cardholder", "password", "username"]
+      answer: 0
+      explain: "Bir ürünün ya da kartın geçerliliğinin bittiği gün expiry date'tir; cardholder kartın sahibidir."
+    sina:
+      id: u5d10-050-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S02
+      prompt: "<en>Which of the following does NOT have an answer in the form?</en>"
+      stem: "<en>SoundBox – Payment\nCardholder: Mehmet Kaya\nCard number: **** **** **** 4821\nExpiry date: 06/29\nTotal: 320 TL</en>"
+      options: ["What did he buy?", "Who is the cardholder?", "When does the card expire?", "How much does he pay?"]
+      answer: 0
+      explain: "Formda kart sahibi, son geçerlilik tarihi ve tutar var; ne satın alındığı yazmıyor."
+  - item: U5-051
+    sezdir:
+      id: u5d10-051-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede Bora müzik mağazasının sitesini açınca \"Online shopping with my mum\" diyor. \"online shopping\" ne anlama geliyordu?"
+      options: ["internetten alışveriş", "mağazada alışveriş", "internette oyun oynamak", "internetten ders çalışmak"]
+      answer: 0
+    kullan:
+      id: u5d10-051-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My grandma doesn't go to the shops any more. She does ________, and the shop delivers everything to her door.</en>"
+      options: ["online shopping", "research", "karate", "homework"]
+      answer: 0
+      explain: "Ürünü internetten seçip eve getirtmek do online shopping ile anlatılır."
+    sina:
+      id: u5d10-051-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Selin: I like online shopping because it's fast and I can compare prices. But I never buy anything from a website that I don't know. I always ask my dad first.</en>"
+      options: ["Selin talks to her dad before she buys something online.", "Selin thinks online shopping is slow.", "Selin buys things from any website.", "Selin never compares prices."]
+      answer: 0
+      explain: "\"I always ask my dad first\" = alışverişten önce babasıyla konuşur; diğer şıklar metinle çelişiyor."
+  - item: U5-052
+    sezdir:
+      id: u5d10-052-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede Bora \"Non-refundable? What does it mean?\" diye soruyor; annesi \"you can't return them and get your money back\" diyor. \"non-refundable\" ne anlama geliyordu?"
+      options: ["iade edilemez (parası geri verilmez)", "ücretsiz", "indirimsiz", "tükenmiş"]
+      answer: 0
+    kullan:
+      id: u5d10-052-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This concert ticket is ________. If you can't come, you can't get your money back.</en>"
+      options: ["non-refundable", "refundable", "worldwide", "necessary"]
+      answer: 0
+      explain: "Parası geri verilmeyen ürün ya da bilet non-refundable'dır; refundable tam tersidir."
+    sina:
+      id: u5d10-052-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Customer: Hello. I bought these shoes on your website, but they're too small. Can I get my money back?\nShop assistant: ________ But you can change them for a bigger size.\nCustomer: OK, thank you.</en>"
+      options: ["I'm afraid not. They were on sale, so they're non-refundable.", "Of course. They're refundable, so here's your money.", "Sorry, wrong number.", "Thanks for asking, but I'm busy."]
+      answer: 0
+      explain: "Ardından \"But you can change them\" geliyor; demek ki para iadesi yok: non-refundable. İkinci şık parayı geri verdiği için \"But …\" ile uyuşmuyor."
+  - item: U5-056
+    sezdir:
+      id: u5d10-056-z
+      type: meaning
+      context: s18
+      prompt: "Hikâyede Ece reklam teklifine \"Thanks for asking, but we don't do paid ads\" diye yazıyor. Bu cümleyle ne yapıyordu?"
+      options: ["Teşekkür ederek teklifi reddediyordu.", "Teklifi sevinçle kabul ediyordu.", "Geç kaldığı için özür diliyordu.", "Daha fazla para istiyordu."]
+      answer: 0
+    kullan:
+      id: u5d10-056-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ayşe: Would you like to join our online game tonight?\nMert: ________, but I have a lot of homework.</en>"
+      options: ["Thanks for asking", "Here you are", "Why don't we", "Sure, see you then"]
+      answer: 0
+      explain: "but + bahane geliyorsa boşlukta kibar bir ret girişi olur: Thanks for asking, but …"
+    sina:
+      id: u5d10-056-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What should you say in this situation?</en>"
+      stem: "<en>An influencer offers you money for a video with his product. You don't want to do it, but you want to be polite.</en>"
+      options: ["That's very kind of you, but we don't do paid ads.", "Great! Send me the money now.", "Why don't we make the video today?", "Sure, I'd love to."]
+      answer: 0
+      explain: "Teklifi istemiyorsun ama kibar olmalısın: teşekkür + but + gerekçe."
+  - item: U5-060
+    sezdir:
+      id: u5d10-060-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede Murat Bey kamp için \"Round-trip tickets, of course. We're all coming back!\" diyor. \"round-trip\" ne anlama geliyordu?"
+      options: ["gidiş-dönüş (bilet)", "tek yön (bilet)", "indirimli (bilet)", "ücretsiz (bilet)"]
+      answer: 0
+    kullan:
+      id: u5d10-060-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My cousin is moving to Ankara. She isn't coming back to İzmir, so she needs a ________ ticket.</en>"
+      options: ["one-way", "round-trip", "worldwide", "useful"]
+      answer: 0
+      explain: "Geri dönülmeyecekse yalnız gidiş bileti alınır: one-way; round-trip gidiş-dönüştür."
+    sina:
+      id: u5d10-060-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>Look at the table. Which ticket should Ece's mum buy?</en>"
+      stem: "<en>İzmir → Bursa bus tickets\nOne-way: 450 TL\nRound-trip: 800 TL\n\nEce's mum is going to Bursa on Friday and coming back to İzmir on Sunday.</en>"
+      options: ["a round-trip ticket for 800 TL", "a one-way ticket for 450 TL", "two round-trip tickets for 1,600 TL", "a one-way ticket for 800 TL"]
+      answer: 0
+      explain: "Cuma gidip pazar dönecek: gidiş-dönüş (round-trip) bileti, 800 TL."
+
+review:
+  - id: u5d10-r01
+    type: gap_fill
+    item: U5-014
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Murat Bey: Please ________ your homework file to an email and send it to me before Friday.</en>"
+    options: ["attach", "delete", "avoid", "search for"]
+    answer: 0
+    explain: "Dosya e-postaya eklenir: attach a file to an email."
+  - id: u5d10-r02
+    type: situation
+    item: U5-027
+    prompt: "<en>Mia writes about music on her website every week. What is Mia?</en>"
+    options: ["a blogger", "a browser", "a username", "a screen"]
+    answer: 0
+    explain: "Kendi sitesinde düzenli yazı paylaşan kişi blogger'dır."
+  - id: u5d10-r03
+    type: gap_fill
+    item: U5-029
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Our guide says: Think before you share any ________ online – photos, videos or comments.</en>"
+    options: ["content", "expiry date", "browser", "cardholder"]
+    answer: 0
+    explain: "Paylaşılan fotoğraf, video ve yorumların hepsi content'tir."
+  - id: u5d10-r04
+    type: dialogue_complete
+    item: U5-032
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Elif: I joined an online music club last month.\nDuru: Did you ________ there?\nElif: Yes! Three girls from Spain. We chat every Sunday.</en>"
+    options: ["make new friends", "log out", "delete it", "sign in"]
+    answer: 0
+    explain: "Elif üç yeni kişiyle tanıştığını söylüyor: make new friends."
+  - id: u5d10-r05
+    type: situation
+    item: U5-035
+    prompt: "<en>What does SNS stand for?</en>"
+    options: ["social networking sites", "safe new songs", "search for new sites", "send and share"]
+    answer: 0
+    explain: "SNS = social networking sites (sosyal ağ siteleri)."
+  - id: u5d10-r06
+    type: synonym
+    item: U5-048
+    prompt: "<en>Which word is closest in meaning to the underlined word?</en>"
+    stem: "<en>Football is a <u>worldwide</u> sport. People play it in almost every country.</en>"
+    options: ["global", "local", "dangerous", "boring"]
+    answer: 0
+    explain: "\"almost every country\" ipucu: worldwide = global; local (yerel) tam tersi."
+  - id: u5d10-r07
+    type: situation
+    item: U5-019
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>What should Bora do?</en>"
+    stem: "<en>Bora wants to keep the band's new video on his phone. He wants to show it to his grandpa at home, but there is no Internet there.</en>"
+    options: ["download the video", "upload the video", "delete the video", "comment on the video"]
+    answer: 0
+    explain: "İnternetsiz izlemek için videoyu telefona indirmek gerekir: download; upload internete yüklemektir."
+  - id: u5d10-r08
+    type: text_infer
+    item: U5-033
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to the dialogue, which of the following is TRUE?</en>"
+    stem: "<en>Ece: My phone shows a new notification every two minutes. I can't study!\nSelin: Why don't you turn off your notifications until you finish your homework?\nEce: Good idea!</en>"
+    options: ["Selin gives Ece a suggestion.", "Ece is going to delete her account.", "Selin can't study because of her phone.", "Ece gets a notification once a day."]
+    answer: 0
+    explain: "\"Why don't you …?\" bir öneridir; Selin Ece'ye öneride bulunuyor."
+  - id: u5d10-r09
+    type: text_infer
+    item: U5-028
+    lgs_like: true
+    stem_id: S08
+    prompt: "<en>Who wants a different kind of music?</en>"
+    stem: "<en>Comments under the band's video:\nArda_10: Bora is the best drummer in the world!\nJazzGrandpa55 (Bora's grandpa): Lovely song! Add some jazz! A saxophone, maybe?\nNermin Teyze: I'm so proud of you, karate boy!</en>"
+    options: ["Bora's grandpa", "Arda", "Nermin Teyze", "Arda and Nermin Teyze"]
+    answer: 0
+    explain: "\"Add some jazz! A saxophone, maybe?\" yorumunu yazan dede, şarkıya caz eklenmesini istiyor; diğerleri yalnız övüyor."
+  - id: u5d10-r10
+    type: gap_fill
+    item: U5-034
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Ece ________ a new video on the band's channel every Friday, and the followers comment on it.</en>"
+    options: ["posts", "deletes", "avoids", "types"]
+    answer: 0
+    explain: "Sosyal medyada gönderi paylaşmak post ile söylenir."
+  - id: u5d10-r11
+    type: table_graph
+    item: U5-044
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the survey, which of the following is correct?</en>"
+    stem: "<en>Class 8-B survey: What do you use the Internet for?\nDoing research for homework: 80%\nChatting with friends: 65%\nWatching videos: 50%\nOnline shopping: 10%</en>"
+    options: ["Half of the students use the Internet for watching videos.", "Most of the students do online shopping.", "Chatting is the most popular activity.", "None of the students do research for homework."]
+    answer: 0
+    explain: "%50 = half; online alışveriş %10 (a few), en popüler etkinlik %80 ile ödev araştırması."
+  - id: u5d10-r12
+    type: text_infer
+    item: U5-030
+    lgs_like: true
+    stem_id: S02
+    prompt: "<en>Which of the following does NOT have an answer in the post?</en>"
+    stem: "<en>Wrong Number 🎸\nHi everyone! Thank you, 3,400 subscribers! Our next live rehearsal is on Saturday at 5 p.m. Please don't share our videos on other sites without asking us. See you on Saturday!</en>"
+    options: ["What is the name of the band's new song?", "How many subscribers does the band have?", "When is the next live rehearsal?", "What does the band ask the followers?"]
+    answer: 0
+    explain: "Abone sayısı (3,400), prova zamanı (Saturday, 5 p.m.) ve istek (izinsiz paylaşmayın) yazıyor; yeni şarkının adı yok."
+  - id: u5d10-r13
+    type: situation
+    item: U5-059
+    lgs_like: true
+    stem_id: S09
+    prompt: "<en>Which of the following is a suggestion?</en>"
+    options: ["Why don't we post the video tonight?", "Thanks for asking, but I can't.", "Sorry, I can't follow you.", "I got it."]
+    answer: 0
+    explain: "Why don't we …? bir öneridir; diğerleri sırasıyla ret, anlamadığını söyleme ve anladım demek."
+  - id: u5d10-r14
+    type: synonym
+    item: U5-054
+    lgs_like: true
+    stem_id: S12
+    prompt: "<en>Which phrase can replace the underlined part?</en>"
+    stem: "<en>Selin: Don't share news before you check it. <u>In other words</u>, think first, then share.</en>"
+    options: ["I mean", "By the way", "Thanks for asking, but", "What do you mean?"]
+    answer: 0
+    explain: "In other words aynı fikri yeniden söyler, I mean de öyle; By the way yeni bir konu açar."
+
+tips:
+  - type: tuzak
+    refs: [U5-060]
+    text: "round-trip \"yuvarlak gezi\" değil, gidiş-dönüş demek; one-way tek yön. İngiliz İngilizcesinde aynı biletler return ticket (gidiş-dönüş) ve single ticket (tek yön) diye de geçer. Bu ikili Ünite 7 (Tourism) bilet sahnelerinde yine karşına çıkacak."
+  - type: tuzak
+    refs: [U5-050]
+    text: "Yiyecekte expiry date son kullanma tarihidir; kredi kartında ise kartın son geçerlilik ayı/yılıdır (06/29). cardholder = kartın sahibi; kart bilgisini yalnız o yazar."
+  - type: lgs_taktigi
+    refs: [U5-056]
+    text: "\"Thanks for asking, but …\" ve \"That's very kind of you, but …\" teşekkürle başlar ama RET'tir. Kabul mü ret mi sorusunda but'tan sonrasına bak."
+  - type: kelime_ailesi
+    refs: [U5-052]
+    text: "refund (para iadesi) → refundable (iade edilebilir) → non-refundable (iade edilemez). non- ön eki anlamı olumsuz yapar."
+
+coach:
+  start: "Final günü! Bora sahneye çıkıyor, Ece'ye sürpriz bir mesaj geliyor, Murat Bey'in de bir duyurusu var. Hazır mısın? 🎤"
+  end_good: "Ünite 5 bitti! 🎉 İnterneti artık bir rehber gibi konuşuyorsun. Sırada doğa kampı var: çantanı hazırla!"
+  end_mixed: "Ünite 5 tamam! {weak} biraz takıldı; tekrarla yerine oturacak. Ece'nin en sevilen videosu bile kusursuz değildi. 🎸"
+
+notifications:
+  morning: "Final günü: Bora sahneye çıkıyor, Ece'ye ilginç bir teklif geliyor. Hazır mısın?"
+  evening: "Ünite 5'in son dersi! 10 dakika, bir sunum ve bahar için büyük bir haber. 🌲"
+  review: "Gidip dönmeyeceksen hangisi: one-way mi, round-trip mi? 🚌"
+
+editor:
+  z07: {U5-041: BEKLIYOR, U5-050: BEKLIYOR, U5-051: BEKLIYOR, U5-052: BEKLIYOR, U5-056: BEKLIYOR, U5-060: BEKLIYOR}

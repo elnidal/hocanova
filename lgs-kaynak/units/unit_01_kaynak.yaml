@@ -1,0 +1,2479 @@
+schema_version: 1
+unit: 1
+title: Friendship
+status: taslak
+summary_tr: 'Ünite, arkadaşlar arasındaki gündelik iletişimi öğretir: davet etmek, daveti kabul etmek ya da kibarca reddetmek, özür dileyip sebep göstermek, basit sorular sormak (Are you busy …?) ve bir
+  arkadaşın nasıl biri olduğunu anlatmak. Sınavın omurgası iki şeydir: (1) davet–cevap diyaloğunu tamamlamak ve bir cevabın kabul mü red mi olduğunu anlamak; (2) bir arkadaşı anlatan kısa metinden ya da
+  mesajdan kişilik sıfatını (reliable, loyal, honest, supportive, mean …) çıkarmak. Bunlara güven/söz/sır ifadeleri (keep a promise, count on, rely on) ve "What is he like?" sorusu eklenir. Kalıplar sınırlıdır
+  ve her yıl aynı aileden gelir; öğrenci kalıpları ve 25 civarı kişilik sıfatını sağlam bilirse bu ünitenin soruları hızlı çözülür.'
+curriculum:
+  outcomes:
+  - code: E8.1.L1
+    text_tr: Gündelik konulardaki kısa konuşmalarda belirli bilgiyi anlar (teklif/daveti kabul etme ve reddetme, özür dileme, basit sorular sorma gibi). Dinleme LGS'de ölçülmez.
+  - code: E8.1.SI1
+    text_tr: Yapılandırılmış durumlarda ve kısa konuşmalarda makul bir rahatlıkla etkileşim kurar (teklif/daveti kabul etme ve reddetme, özür dileme, basit sorular sorma). LGS'de diyalog tamamlama sorularının
+      dayanağıdır.
+  - code: E8.1.SP1
+    text_tr: Basit sorular sormak, açıklama yapmak ve sebep göstermek için kısa bir konuşma kurgular.
+  - code: E8.1.R1
+    text_tr: Arkadaşlık hakkındaki kısa ve basit metinleri anlar.
+  - code: E8.1.R2
+    text_tr: Kısa ve basit davet mektuplarını, kartlarını ve e-postalarını anlar.
+  - code: E8.1.W1
+    text_tr: Bir davete cevap olarak partiye neden katılamayacağını anlatan, özür dileyen kısa ve basit bir mektup yazar. Yazma LGS'de ölçülmez; ama bu tür bir mektup okuma sorusu olarak gelebilir.
+  functions:
+  - id: F1
+    name_tr: Davet etme ve öneride bulunma
+    exponents:
+    - Would you like to come over tomorrow?
+    - Would you like to come to my birthday party on Saturday?
+    - Do you want to join us at the cinema?
+    - How about a party at my house this Saturday?
+    - How about going to the park after school?
+    - What about watching a film tonight?
+    - Let's meet in front of the school at 6.
+    responses:
+    - Sure, that sounds fun!
+    - I'd love to.
+    - Sorry, I can't. I have to study for my exam.
+    items:
+    - U1-026
+    - U1-006
+    - U1-008
+    - U1-024
+    - U1-013
+    - U1-012
+    - U1-005
+    - U1-015
+    lgs_weight: yüksek
+    note_tr: 'Programın "Functions and Useful Language" bölümündeki örneklerin çoğu bu işlevden. LGS''de en sık biçim: davet cümlesi verilir, boşluğa uygun cevap ya da cevaba uygun davet sorulur.'
+  - id: F2
+    name_tr: Daveti / teklifi kabul etme
+    exponents:
+    - Sure, that sounds fun!
+    - Sure, it sounds good / great / awesome.
+    - Yeah, that would be great.
+    - Yeah, why not?
+    - I'd love to.
+    - Of course! What time?
+    - Thanks for the invitation. I'll be there.
+    responses:
+    - Great! See you at 7, then.
+    - I'll text our friends to come over at 7 o'clock, then.
+    items:
+    - U1-001
+    - U1-011
+    - U1-022
+    - U1-023
+    - U1-025
+    - U1-010
+    - U1-012
+    lgs_weight: yüksek
+    note_tr: 'Kabul cevapları genelde kısa ve olumlu ünlemlerle (Sure, Yeah, Of course) başlar ve ardından bir plan ya da soru gelir (What time? / I''ll bring the cake.). Sounds + sıfat kalıbında sıfat
+      her zaman olumlu: fun, good, great, awesome.'
+  - id: F3
+    name_tr: Daveti / teklifi reddetme, özür dileme ve sebep gösterme
+    exponents:
+    - I'm sorry, but I can't come over because my cousin is coming tomorrow.
+    - Sorry, I can't. I have to study for my maths exam.
+    - I'd love to, but I'm busy on Saturday.
+    - I'm afraid I can't. I'm visiting my grandparents.
+    - Unfortunately, I can't join you because I have a piano lesson.
+    - I apologise for missing your party.
+    responses:
+    - That's OK. Maybe next time.
+    - No problem. Good luck with your exam!
+    - What a pity!
+    items:
+    - U1-021
+    - U1-019
+    - U1-002
+    - U1-007
+    - U1-004
+    - U1-016
+    - U1-003
+    lgs_weight: yüksek
+    note_tr: 'Red cümlesi üç parçalıdır: özür/yumuşatma (Sorry / I''d love to, but) + red (I can''t) + sebep (because …, I have to …, I''m busy). W1 kazanımındaki "partiye katılamama mektubu" bu işlevin
+      yazılı hâlidir; LGS''de böyle bir e-posta okunup "Why can''t she attend the party?" diye sorulabilir.'
+  - id: F4
+    name_tr: Basit sorular sorma (bilgi alma, uygunluk sorma)
+    exponents:
+    - Are you busy tomorrow evening?
+    - Are you free on Saturday?
+    - What time does the party start?
+    - Can you come to my house after school?
+    - What's the matter? Why didn't you reply to my message?
+    responses:
+    - No, not at all. Why?
+    - Yes, I am. I have a lot of homework.
+    - It starts at 7 p.m.
+    items:
+    - U1-004
+    - U1-009
+    - U1-020
+    - U1-005
+    - U1-046
+    lgs_weight: orta
+    note_tr: '"Are you busy …?" sorusu çoğu zaman davetin ön hazırlığıdır; ardından Would you like to …? gelir. "No, not at all." burada "hiç değilim" anlamında olumlu bir cevaptır (meşgul değilim, müsaitim).'
+  - id: F5
+    name_tr: Bir arkadaşı / kişiyi tanımlama (kişilik ve arkadaşlık nitelikleri)
+    exponents:
+    - What is your best friend like?
+    - She's honest and reliable. I can always count on her.
+    - He is always there for me.
+    - You're fun to be with.
+    - We have a lot in common and we get on well with each other.
+    - He is always in a hurry.
+    - A true friend keeps your secrets.
+    responses:
+    - She's very caring and supportive.
+    - He's a bit stubborn, but he's very loyal.
+    items:
+    - U1-080
+    - U1-037
+    - U1-048
+    - U1-036
+    - U1-034
+    - U1-075
+    - U1-059
+    - U1-051
+    - U1-077
+    - U1-081
+    - U1-070
+    - U1-092
+    - U1-047
+    - U1-055
+    lgs_weight: yüksek
+    note_tr: Programda ayrı bir işlev başlığı olarak yazmaz; R1 kazanımının ("arkadaşlık hakkında kısa metinler") içeriğidir. LGS'de kişilik sıfatı + tanım eşleştirme ve "Which of the following is true
+      about …'s friend?" biçimiyle sık gelir; bu yüzden ağırlığı yüksek tutuldu.
+  - id: F6
+    name_tr: Yiyecek-içecek teklif etme ve cevap verme
+    exponents:
+    - Would you like some fruit juice?
+    - Would you like another piece of cake?
+    - Do you want some more pizza?
+    responses:
+    - Yes, I'd love some.
+    - No, thanks. I'm full.
+    - No, thanks. I'm stuffed.
+    items:
+    - U1-026
+    - U1-017
+    - U1-011
+    - U1-097
+    - U1-099
+    lgs_weight: orta
+    note_tr: Programın örnek diyaloğunda geçer (Would you like some fruit juice? — No, thanks. I'm full/stuffed). "Would you like + isim" (some juice) ile "Would you like to + fiil" (to come) ayrımı burada
+      öğretilir.
+  - id: F7
+    name_tr: Tercih ve görüş bildirme (plan yaparken)
+    exponents:
+    - I prefer the cinema to the picnic.
+    - I'd prefer to stay at home.
+    - It doesn't matter to me. You choose.
+    - We have the same opinion about it.
+    responses:
+    - OK, cinema then!
+    - Fine. Let's go to the picnic next week.
+    items:
+    - U1-018
+    - U1-014
+    - U1-042
+    - U1-010
+    lgs_weight: düşük
+    note_tr: Programda bu ünitenin işlevi değil; Ünite 2 ve 3'ün işlevidir (Expressing preferences). Burada davet akışının doğal devamı olarak yer alır; asıl çalışması Ünite 2'de.
+sources:
+- code: A
+  name: ingilizceciyiz.com — 8. Sınıf 1. Ünite Kelimeleri (tam liste, PDF)
+  rows: 149
+- code: A-ÖNEMLİ
+  name: ingilizceciyiz.com — 8. Sınıf 1. Ünite Önemli Kelimeler (PDF; A'nın alt kümesi, iki kopya birebir aynı)
+  rows: 85
+- code: C
+  name: Okul kelime listesi 2019-2020 (1. Ünite Kelime Listesi, PDF; eski ders kitabı bağlamı ağır)
+  rows: 216
+- code: D
+  name: 212.xlsx (başlığı "Unit 2 TEEN LIFE"; çoğu C ile aynı, sonunda Ünite 2 kelimeleri, bir satır kaymış)
+  rows: 237
+- code: E
+  name: Sohbette yapıştırılan liste + örnek cümleler (bazı Türkçe karşılıkları hatalı)
+  rows: 96
+- code: HAVUZ
+  name: LGS_Unite1_Friendship_Havuz_v2.xlsx (5 kaynağın birleşimi, tekil satır)
+  rows: 381
+- code: MEB-PROG
+  name: MEB İngilizce Dersi Öğretim Programı (2-8. sınıflar, 2018) — Ünite 1 kazanımları ve "Functions and Useful Language"; doğrulama ikincil kaynaklardan (il MEM konu-soru dağılım tabloları, okul yıllık
+    planı)
+- code: MEB-DAGILIM
+  name: 8. Sınıf İngilizce Konu-Soru Dağılım Tablosu (Bursa ve Burdur İl MEM, 2023) — E8.1.L1, SI1, SP1, R1, R2, W1 kod ve metinleri
+- code: YILLIK-PLAN
+  name: Merkez Yeşilova Ortaokulu 2017-2018 İngilizce 8. sınıf ünitelendirilmiş yıllık planı — Ünite 1 useful language örnekleri
+tasnif:
+  teaching_units: 100
+  counts:
+    havuz_tekil_satir: 381
+    CEKIRDEK: 103
+    KALIP_ISLEV: 18
+    TUZAK: 17
+    BILINEN: 101
+    TANIMA: 68
+    ESKI_KITAP_BAGLAMI: 51
+    UNITE_DISI: 22
+    KAYNAK_HATASI: 1
+    ogretim_birimi_aday: 134
+    oncelik_1: 100
+    oncelik_2: 34
+    hedef_100: 100
+    hedef_word: 52
+    hedef_phrase: 22
+    hedef_pattern: 16
+    hedef_trap: 10
+    tema_davet_kabul_red: 26
+    tema_arkadaslik_iliski: 22
+    tema_guven_soz_sir: 20
+    tema_kisilik: 25
+    tema_degerlendirme_durum: 7
+  items_file: lgs-pilot/content/unit_01_items.yaml
+  rules_tr:
+  - Öğretim birimi = ÇEKİRDEK + KALIP/İŞLEV + TUZAK satırları; yazım varyantları tek satır (apologise/apologize, laid back/laid-back).
+  - Kalıp varyantları tek birimdir (Sounds fun/good/great/awesome → "Sounds + SIFAT!"); "spend time / spend time together" ve "advice / give advice" de tek birim.
+  - Öncelik 1 = en az 2 bağımsız kaynakta (A · C/D · E) geçen ya da "önemli" listesinde olan ya da kalıp olan birim; tek kaynaktakiler öncelik 2.
+  - HEDEF 100 = öncelik 1'den 18 zayıf/bilinen birim çıkarıldı, öncelik 2'den 13 birim eklendi (kişilik sıfatları, depend on, chat, reply, miss, argue, exciting).
+  - Tuzak birimde yalnız ünitedeki anlam öğretilir; öbür anlam dikkat kartı olur (miss = kaçırmak hedef, özlemek uyarı).
+  - BİLİNEN (5-7. sınıf) ve TANIMA (okuma metninde anlamak yeter) birimleri hikâyede serbestçe geçer, kotaya girmez.
+  - ESKİ KİTAP BAĞLAMI (2019-20 kitabının menü/film/etkinlik sahneleri) ve ÜNİTE DIŞI (Teen Life) satırları silinmedi, havuz dışında tutuldu.
+  excluded_examples:
+    BILINEN:
+    - alone
+    - celebrate
+    - cousin
+    - decide
+    - describe
+    - each other
+    - explain
+    - forget
+    - free time
+    - guest
+    - have fun
+    - hungry
+    - idea
+    - important
+    - letter
+    - meet
+    - memory
+    - neighbour
+    - of course
+    - on time
+    - prepare
+    - same
+    - together
+    - visit
+    - wrong
+    TANIMA:
+    - although
+    - attract attention
+    - care
+    - cheers
+    - discuss
+    - family ties
+    - for life
+    - generation
+    - in advance
+    - in times of trouble
+    - informal conversation
+    - interest
+    - invitation card
+    - involve
+    - mutual
+    - not at all
+    - priceless
+    - relaxed
+    - reunion
+    - take place
+    - telling the truth
+    - that's why
+    - truth
+    - unconditional
+    - walk beside
+    ONCEKI_UNITE: []
+  exam_record:
+    kaynak: Ders kitabı listeleri + çıkmış kelime tablosu (2013–2020 TEOG, 2018–2020 LGS); sayı = toplam/LGS
+    ogretim_birimlerinde:
+    - accept (2/0 LGS)
+    - attend (1/0 LGS)
+    - busy (3/1 LGS)
+    - invitation (5/0 LGS)
+    - invite (1/0 LGS)
+    - join (3/2 LGS)
+    - prefer (7/0 LGS)
+    - refuse (6/0 LGS)
+    - buddy (3/0 LGS)
+    - chat (3/0 LGS)
+    - get on well (with) (5/1 LGS)
+    - share (7/3 LGS)
+    - text (2/0 LGS)
+    - back up (3/1 LGS)
+    - count on (3/1 LGS)
+    - lie (4/0 LGS)
+    - secret (1/1 LGS)
+    - generous (4/0 LGS)
+    - honest (1/1 LGS)
+    - mean (1/0 LGS)
+    - boring (4/0 LGS)
+    bilinen_ama_sinavda_sik:
+    - same (1/0 LGS)
+    not: bilinen_ama_sinavda_sik kelimeler öğretim birimi sayılmaz ama hikâyede ve soru köklerinde bilinçli olarak sık kullanılır.
+themes:
+- name: Davet · kabul · red
+  items:
+  - U1-001
+  - U1-002
+  - U1-003
+  - U1-004
+  - U1-005
+  - U1-006
+  - U1-007
+  - U1-008
+  - U1-009
+  - U1-010
+  - U1-011
+  - U1-012
+  - U1-013
+  - U1-014
+  - U1-015
+  - U1-016
+  - U1-017
+  - U1-018
+  - U1-019
+  - U1-020
+  - U1-021
+  - U1-022
+  - U1-023
+  - U1-024
+  - U1-025
+  - U1-026
+  note_tr: Sınavın en ağır teması. Kalıplar işlev zinciri olarak öğretilmeli (davet → kabul/red → sebep → cevap).
+- name: Arkadaşlık ve ilişki
+  items:
+  - U1-027
+  - U1-028
+  - U1-029
+  - U1-030
+  - U1-031
+  - U1-032
+  - U1-033
+  - U1-034
+  - U1-035
+  - U1-036
+  - U1-037
+  - U1-038
+  - U1-039
+  - U1-040
+  - U1-041
+  - U1-042
+  - U1-043
+  - U1-044
+  - U1-045
+  - U1-046
+  - U1-047
+  - U1-048
+  note_tr: R1 okuma metinlerinin sözcükleri (arkadaşlık blogu, anket, "ideal friend" yazısı). Çoğu kalıp/öbek; tek kelime değil öbek hâlinde öğretilmeli.
+- name: Güven · söz · sır
+  items:
+  - U1-049
+  - U1-050
+  - U1-051
+  - U1-052
+  - U1-053
+  - U1-054
+  - U1-055
+  - U1-056
+  - U1-057
+  - U1-058
+  - U1-059
+  - U1-060
+  - U1-061
+  - U1-062
+  - U1-063
+  - U1-064
+  - U1-065
+  - U1-066
+  - U1-067
+  - U1-068
+  note_tr: Eş anlamlı yoğun küme (count on = rely on = depend on = trust). LGS'de "aynı anlam" sorusu ve kişilik çıkarımı (keeps secrets → reliable) buradan.
+- name: Kişilik
+  items:
+  - U1-069
+  - U1-070
+  - U1-071
+  - U1-072
+  - U1-073
+  - U1-074
+  - U1-075
+  - U1-076
+  - U1-077
+  - U1-078
+  - U1-079
+  - U1-080
+  - U1-081
+  - U1-082
+  - U1-083
+  - U1-084
+  - U1-085
+  - U1-086
+  - U1-087
+  - U1-088
+  - U1-089
+  - U1-090
+  - U1-091
+  - U1-092
+  - U1-093
+  note_tr: Tanım → sıfat eşleştirme sorularının havuzu. Olumlu/olumsuz ayrımı çeldirici mantığının temeli.
+- name: Değerlendirme ve durum
+  items:
+  - U1-094
+  - U1-095
+  - U1-096
+  - U1-097
+  - U1-098
+  - U1-099
+  - U1-100
+  note_tr: Etkinliği değerlendirme sıfatları (boring/exciting/thrilling/fun) ve parti sonrası "tok" durumu; Ünite 2'nin sıfatlarına köprü.
+grammar:
+- id: G1
+  name_tr: Davet ve teklif kalıpları — Would you like to …? / Do you want to …?
+  form: Would you like to + V1 …? · Would you like + (some/a) isim? · Do you want to + V1 …?
+  examples:
+  - Would you like to come to my birthday party?
+  - Would you like some lemonade?
+  - Do you want to play basketball after school?
+  - Would you like to join us for a picnic on Sunday?
+  explain_tr: 'Davet ederken "Would you like to" + fiilin yalın hâli kullanılır; bir şey ikram ederken "Would you like" + isim. "Would you like to" daha kibar; "Do you want to" arkadaşlar arasında daha
+    gündelik. "Would you like …?" ile "Do you like …?" farklıdır: ilki davet/teklif (ister misin?), ikincisi genel zevk sorusu (sever misin?).'
+  common_errors:
+  - wrong: Would you like come to my party?
+    right: Would you like to come to my party?
+    why_tr: Davette fiilden önce "to" gelir.
+  - wrong: Do you like to come to my party on Saturday?
+    right: Would you like to come to my party on Saturday?
+    why_tr: '"Do you like" sevip sevmediğini sorar; belirli bir davet için "Would you like" gerekir.'
+  - wrong: Would you like coming to the cinema?
+    right: Would you like to come to the cinema?
+    why_tr: -ing, How about'tan sonra gelir; Would you like'tan sonra to + V1.
+  - wrong: Would you like to come? — Yes, I would like.
+    right: Would you like to come? — Yes, I'd love to. / Yes, I'd like to.
+    why_tr: Kısa cevapta "to" düşmez (I'd love to.).
+  lgs_note: 'Diyalog tamamlamada boşluk çoğu zaman davet cümlesidir: cevap "I''d love to, but …" ise boşluk "Would you like to …?" ya da "Do you want to …?" ile başlar. Şıklarda "Do you like …?" çeldirici
+    olarak sık konur.'
+  items:
+  - U1-026
+  - U1-006
+  - U1-010
+  - U1-011
+  - U1-013
+- id: G2
+  name_tr: Öneri kalıpları — How about / What about + -ing ya da isim; Let's + V1
+  form: How about / What about + V-ing / isim? · Let's + V1. · Why don't we + V1?
+  examples:
+  - How about going to the cinema tonight?
+  - What about a pizza party on Friday?
+  - Let's meet at the bus stop at 5.
+  - Why don't we invite Elif, too?
+  explain_tr: 'How about ve What about "… ne dersin?" anlamında öneri yapar ve ardından ya -ing''li fiil ya da isim gelir. "What about you?" ise öneri değil, karşı sorudur: "Peki ya sen?". Let''s ve Why
+    don''t we''dan sonra fiil yalın gelir.'
+  common_errors:
+  - wrong: How about go to the park?
+    right: How about going to the park?
+    why_tr: How about'tan sonra fiil -ing alır (Türkçedeki "gitmeye ne dersin" gibi isimleşir).
+  - wrong: Let's to watch a film.
+    right: Let's watch a film.
+    why_tr: Let's'ten sonra "to" gelmez.
+  - wrong: Let's going to the beach.
+    right: Let's go to the beach.
+    why_tr: Let's + yalın fiil.
+  lgs_note: Şıklarda How about'tan sonraki fiil biçimi tek başına bir soru yapmaz; ama "How about + -ing" kalıbını tanımak, diyalogda öneri cümlesini ve onu izleyen kabul/red cevabını bulmayı hızlandırır.
+  items:
+  - U1-008
+  - U1-024
+- id: G3
+  name_tr: Kabul ve red cevapları — Sounds + sıfat, I'd love to, Sorry, I can't …
+  form: 'Kabul: (That) sounds + sıfat! / I''d love to. / That would be great. / Why not? · Red: Sorry, I can''t (+ V1). / I''d love to, but + sebep.'
+  examples:
+  - That sounds great! What time should I come?
+  - I'd love to, but I'm going to the dentist on Saturday.
+  - Sorry, I can't. I have to look after my little brother.
+  - Why not? I have nothing to do this weekend.
+  explain_tr: '"I''d love to" tek başına kabuldür; ardından "but" geliyorsa redde döner. "Sounds" burada "kulağa … geliyor" demektir ve ardından isim değil sıfat gelir (sounds fun, sounds good). "Why not?"
+    bu bağlamda soru değil, "Neden olmasın, olur!" anlamında kabuldür.'
+  common_errors:
+  - wrong: It sounds funny! I'll come.
+    right: It sounds fun! I'll come.
+    why_tr: funny = komik; davet için "eğlenceli" anlamında fun gerekir.
+  - wrong: Sounds greatly!
+    right: Sounds great!
+    why_tr: sound (kulağa gelmek) fiilinden sonra zarf değil sıfat gelir.
+  - wrong: I'd love to. But I can't come. (kabul sanmak)
+    right: I'd love to, but I can't come. (red)
+    why_tr: Cümlenin sonu belirleyicidir; "but" sonrasındaki engel cevabı red yapar.
+  lgs_note: Soru "Which of the following is NOT an acceptance / refusal?" biçiminde gelebilir. "I'd love to, but …" redde, "Why not?" kabulde sayılır; çeldiriciler bu iki tersine okumayı hedefler.
+  items:
+  - U1-022
+  - U1-011
+  - U1-023
+  - U1-025
+  - U1-021
+  - U1-009
+- id: G4
+  name_tr: Sebep ve açıklama — because / but / so; have to ile mazeret
+  form: cümle + because + özne + fiil · cümle + but + karşıt cümle · cümle + so + sonuç · I have to / I need to + V1
+  examples:
+  - I can't come to your party because I have to study for my exam.
+  - I wanted to come, but my mum said no.
+  - I was ill, so I missed the school trip.
+  - She doesn't have to bring anything. We have lots of food.
+  explain_tr: because sebep, so sonuç bildirir; ikisi aynı ilişkiyi ters yönden kurar (I was tired, so I stayed at home = I stayed at home because I was tired). Mazeret söylerken en sık yapı "I have to
+    + V1" (zorundayım). "because of" ardından cümle değil isim gelir (because of the rain); ünitede tanıma düzeyinde.
+  common_errors:
+  - wrong: I can't come because of I am busy.
+    right: I can't come because I am busy.
+    why_tr: because of'tan sonra isim gelir; cümle için yalnız because.
+  - wrong: Because I am busy. I can't come.
+    right: I can't come because I am busy.
+    why_tr: Yazıda because'lu yan cümle tek başına cümle olmaz; ana cümleye bağlanır.
+  - wrong: I must to study.
+    right: I have to study. / I must study.
+    why_tr: must'tan sonra to gelmez; have to'da gelir.
+  - wrong: I was tired, because I went to bed early.
+    right: I was tired, so I went to bed early.
+    why_tr: Sonuç bildirilecekse so; because sebebi gösterir. Türkçedeki "-dığı için / bu yüzden" yönüne dikkat.
+  lgs_note: 'En sık soru: "Why can''t Bora attend the party?" Cevap metinde because''tan ya da "I have to …"tan hemen sonradır. Bağlaç boşluğu sorusunda because/so/but üçlüsü şıklarda birlikte bulunur.'
+  items:
+  - U1-021
+  - U1-007
+  - U1-004
+  - U1-003
+  - U1-002
+- id: G5
+  name_tr: Özür dileme — I'm sorry (for) / I apologise for + V-ing / isim
+  form: I'm sorry (that) + cümle · Sorry for + V-ing / isim · I apologise (to sb) for + V-ing / isim
+  examples:
+  - I'm sorry for being late.
+  - Sorry, I didn't reply to your message. My phone was broken.
+  - I apologise for missing your party.
+  - Ege apologised to Ece for his rude words.
+  explain_tr: apologise daha resmi ve yazı dilindedir (mektup, e-posta), "I'm sorry" günlük konuşmada. apologise fiili kişi için "to", sebep için "for" alır. for'dan sonra fiil gelirse -ing olur. İngiliz
+    yazımı apologise, Amerikan yazımı apologize; sınav metinlerinde ikisi de görülebilir.
+  common_errors:
+  - wrong: I apologise you.
+    right: I apologise to you.
+    why_tr: Türkçedeki "senden özür dilerim" yapısı doğrudan çevrilmez; apologise TO someone.
+  - wrong: I'm sorry for be late.
+    right: I'm sorry for being late.
+    why_tr: Edattan (for) sonra fiil -ing alır.
+  - wrong: I apologise for I missed the party.
+    right: I apologise for missing the party.
+    why_tr: for'dan sonra cümle değil -ing'li fiil gelir.
+  lgs_note: 'W1 kazanımının konusu olan "katılamama mektubu" okuma sorusu olarak gelebilir: mektupta özür + sebep + telafi (I''ll visit you next week) vardır; sorular sebebe ve telafi önerisine odaklanır.'
+  items:
+  - U1-002
+  - U1-007
+  - U1-021
+- id: G6
+  name_tr: Planlı gelecek mazereti — Present Continuous (I'm visiting …)
+  form: özne + am/is/are + V-ing + gelecek zaman ifadesi (tomorrow, on Saturday, this weekend)
+  examples:
+  - Sorry, I can't come. My cousin is coming tomorrow.
+  - I'm visiting my grandparents this weekend.
+  - We're having a barbecue on Sunday. Would you like to come?
+  explain_tr: Önceden kararlaştırılmış, takvimdeki planlar için Present Continuous kullanılır. Programın örnek diyaloğundaki "my cousin is coming tomorrow" bu yapıdır. Cümlede "tomorrow, on Saturday" gibi
+    bir gelecek ifadesi varsa yapı şu an değil gelecek planı anlatır.
+  common_errors:
+  - wrong: My cousin comes tomorrow, so I can't join you.
+    right: My cousin is coming tomorrow, so I can't join you.
+    why_tr: Kişisel, ayarlanmış plan için Present Continuous daha doğal.
+  - wrong: I visiting my aunt on Saturday.
+    right: I'm visiting my aunt on Saturday.
+    why_tr: am/is/are yardımcı fiili düşmez.
+  lgs_note: 'Tanıma düzeyinde yeterli: öğrenci "I''m meeting my cousin on Saturday" cümlesini "meşgulüm, gelemem" sebebi olarak okuyabilmeli. Tablo/takvim sorularında (Who is free on Saturday?) işe yarar.'
+  items:
+  - U1-004
+  - U1-021
+  - U1-009
+- id: G7
+  name_tr: Kişiyi tanımlama — What is he like? / What does he like? / What does he look like?
+  form: What is/are + özne + like? → özne + be + kişilik sıfatı · özne + be + a/an + sıfat + friend
+  examples:
+  - What is your best friend like? — She's patient and understanding.
+  - What is Kaan like? — He's outgoing, but he is always in a hurry.
+  - Duru is a loyal friend. She is always there for me.
+  - What does Bora like? — He likes football.
+  explain_tr: 'Buradaki like "sevmek" değil "gibi" demektir; soru "O nasıl biri?" diye kişiliği sorar. Aynı like, "like a brother" (bir kardeş gibi) yapısında da geçer. Üç soru üç farklı cevap ister: What
+    is he like? → kişilik; What does he like? → sevdiği şeyler; What does he look like? → dış görünüş.'
+  common_errors:
+  - wrong: What is he like? — He likes basketball.
+    right: What is he like? — He's friendly and honest.
+    why_tr: like'ı "sevmek" sanmak en klasik hatadır; "is" varsa kişilik sorulur.
+  - wrong: How is your best friend? (kişiliği sormak için)
+    right: What is your best friend like?
+    why_tr: '"How is he?" sağlığını/hâlini sorar (Nasıl, iyi mi?).'
+  - wrong: She is very loyalty.
+    right: She is very loyal.
+    why_tr: be + very'den sonra sıfat gelir; loyalty isimdir.
+  lgs_note: Diyalogda "What is X like?" sorusunun cevabı kişilik sıfatı olan şıktır; "He likes …" ve "He is tall" şıkları kalıcı çeldiricilerdir. Kişilik sıfatı + tanım eşleştirmesi ünitenin ikinci büyük
+    soru tipidir.
+  items:
+  - U1-080
+  - U1-087
+  - U1-086
+  - U1-075
+  - U1-037
+- id: G8
+  name_tr: Sıklık zarfı always ile tanımlama — He is always …
+  form: özne + be + always + sıfat/edat öbeği · özne + always + fiil
+  examples:
+  - He is always in a hurry.
+  - She is always there for me.
+  - Selin always keeps her promises.
+  explain_tr: always (her zaman) be fiilinden sonra, diğer fiillerden önce gelir. Bu yapı bir kişinin kalıcı alışkanlığını, yani kişiliğini anlatır; bu yüzden kişilik sorularında ipucudur (always keeps
+    her promises → reliable). Sıklık zarflarının tamamı Ünite 2'de işlenir.
+  common_errors:
+  - wrong: He always is in a hurry.
+    right: He is always in a hurry.
+    why_tr: be fiilinden sonra gelir.
+  - wrong: She keeps always her promises.
+    right: She always keeps her promises.
+    why_tr: Ana fiilden önce gelir.
+  lgs_note: Metinde "always / never" ile anlatılan davranış, şıklardaki kişilik sıfatının kanıtıdır (never tells lies → honest; never shares → mean/self-centred).
+  items:
+  - U1-075
+  - U1-037
+- id: G9
+  name_tr: Sabit edatlı fiil ve öbekler — count on, rely on, get on well with, interested in, argue with
+  form: fiil/sıfat + sabit edat + nesne · count/rely/depend ON sb · get on well WITH sb · be interested IN sth · argue WITH sb ABOUT sth · apologise TO sb FOR sth · introduce A TO B
+  examples:
+  - You can count on me. I'll help you.
+  - I get on well with my classmates.
+  - Elif is interested in music.
+  - Kaan argued with Bora about the match.
+  - Ece introduced Elif to her friends.
+  explain_tr: 'Bu öbeklerde edat anlamın parçasıdır ve Türkçedeki hâl ekiyle örtüşmez: "-e güvenmek" → rely ON, "biriyle anlaşmak" → get on well WITH, "-e ilgi duymak" → interested IN. Edatlar öbekle birlikte
+    ezberlenmeli.'
+  common_errors:
+  - wrong: You can trust on me.
+    right: You can trust me. / You can count on me.
+    why_tr: trust edatsız kullanılır; count/rely/depend on alır.
+  - wrong: I'm interested about music.
+    right: I'm interested in music.
+    why_tr: interested her zaman "in" alır.
+  - wrong: I get on well to my sister.
+    right: I get on well with my sister.
+    why_tr: '"ile" anlamında with.'
+  - wrong: I'd like to join to your team.
+    right: I'd like to join your team.
+    why_tr: join edatsız kullanılır (Türkçedeki "-e katılmak" eki yanıltır).
+  - wrong: Did you attend to the party?
+    right: Did you attend the party?
+    why_tr: attend (katılmak) edat almaz.
+  lgs_note: Eş anlam sorusunda "count on = rely on = depend on = trust" dörtlüsü tek grup gibi gelir. Boşluk sorusunda edat bilgisi doğru şıkkı ayırır.
+  items:
+  - U1-051
+  - U1-060
+  - U1-052
+  - U1-067
+  - U1-034
+  - U1-038
+  - U1-027
+  - U1-039
+  - U1-015
+  - U1-003
+- id: G10
+  name_tr: -ing / -ed sıfatlar — boring/bored, exciting/excited, interesting/interested
+  form: şey/olay + is + V-ing sıfat (boring, exciting, thrilling) · kişi + is/feels + V-ed sıfat (bored, excited, interested)
+  examples:
+  - The film was boring, so I felt bored.
+  - The roller coaster was thrilling!
+  - I'm very excited about the school trip.
+  explain_tr: -ing'li sıfat bir şeyin nasıl olduğunu (sebep), -ed'li sıfat kişinin ne hissettiğini (sonuç) anlatır. "I'm boring" "sıkıcı biriyim" demektir, "sıkıldım" değil.
+  common_errors:
+  - wrong: I'm boring. Let's do something.
+    right: I'm bored. Let's do something.
+    why_tr: Sıkılan kişi bored; boring sıkıcı olan şeydir.
+  - wrong: I'm interesting in football.
+    right: I'm interested in football.
+    why_tr: Duygu bildiren kişi -ed sıfatını kullanır.
+  lgs_note: Grafik/tablo sorularında etkinliklerin "boring / exciting / fun" olarak değerlendirildiği anketler gelir; bu sıfatların derecesi (thrilling > exciting) yorum sorusunda belirleyici olabilir.
+  items:
+  - U1-095
+  - U1-096
+  - U1-100
+  - U1-098
+  - U1-038
+- id: G11
+  name_tr: Tercih bildirme — prefer A to B / I'd prefer to …
+  form: prefer + isim/V-ing + to + isim/V-ing · I'd prefer to + V1 · It doesn't matter (to me).
+  examples:
+  - I prefer picnics to cinemas.
+  - I prefer staying at home to going out on rainy days.
+  - I'd prefer to go on Sunday.
+  - Cinema or picnic? — It doesn't matter to me.
+  explain_tr: 'prefer A to B: "A''yı B''ye tercih ederim"; karşılaştırmada "than" değil "to" kullanılır. "I''d prefer to" belirli bir durum için tercihtir. "It doesn''t matter" kayıtsızlık değil, kibar
+    bir esneklik bildirir.'
+  common_errors:
+  - wrong: I prefer tea than coffee.
+    right: I prefer tea to coffee.
+    why_tr: prefer'la "than" değil "to".
+  - wrong: I'd prefer go home.
+    right: I'd prefer to go home.
+    why_tr: I'd prefer'dan sonra to + V1.
+  lgs_note: Bu ünitede düşük ağırlık; Ünite 2 (Teen Life) tercih kalıplarının ön çalışması.
+  items:
+  - U1-018
+  - U1-014
+  - U1-010
+expressions:
+- en: Would you like to come over?
+  tr: Bize/bana uğramak ister misin?
+  use: Arkadaşı eve davet ederken; kibar ama sıcak.
+  reply:
+  - Sure, that sounds fun!
+  - Sorry, I can't. I have to study.
+  item: U1-005
+  register: nötr
+- en: Do you want to join us?
+  tr: Bize katılmak ister misin?
+  use: Arkadaşları bir etkinliğe çağırırken; gündelik.
+  reply:
+  - Yeah, why not?
+  - Thanks, but I'm busy.
+  item: U1-006
+  register: gündelik
+- en: How about going to the park?
+  tr: Parka gitmeye ne dersin?
+  use: Öneride bulunurken; arkadaşlar arası.
+  reply:
+  - Sounds great!
+  - I'd prefer to stay at home.
+  item: U1-008
+  register: gündelik
+- en: What about a film night?
+  tr: Bir film gecesine ne dersin?
+  use: Başka bir seçenek önerirken.
+  reply:
+  - That would be great.
+  - It doesn't matter to me.
+  item: U1-024
+  register: gündelik
+- en: What about you?
+  tr: Peki ya sen?
+  use: Karşı tarafa aynı soruyu geri sorarken; öneri değil.
+  reply:
+  - I'm coming, too.
+  - I can't, sorry.
+  item: U1-024
+  register: gündelik
+- en: I'd love to.
+  tr: Çok isterim.
+  use: Daveti sıcak biçimde kabul ederken; "but" eklenirse kibar red başlangıcı olur.
+  reply:
+  - Great! See you at 7.
+  item: U1-011
+  register: nötr
+- en: That sounds fun! / Sounds great!
+  tr: Kulağa eğlenceli / harika geliyor!
+  use: Bir öneriyi beğendiğini göstermek için; arkadaşlar arası.
+  item: U1-022
+  register: gündelik
+- en: That would be great.
+  tr: Harika olur.
+  use: Bir teklifi ya da öneriyi kabul ederken.
+  item: U1-023
+  register: nötr
+- en: Why not?
+  tr: Neden olmasın? (Olur!)
+  use: Bir öneriyi rahatça kabul ederken; soru değil.
+  item: U1-025
+  register: gündelik
+- en: Sorry, I can't. I have to …
+  tr: Üzgünüm, yapamam. …mam gerekiyor.
+  use: Daveti sebep vererek reddederken.
+  reply:
+  - That's OK. Maybe next time.
+  - What a pity!
+  item: U1-021
+  register: nötr
+- en: I'd love to, but …
+  tr: Çok isterdim ama …
+  use: Kırmadan reddederken; ardından sebep gelir.
+  reply:
+  - No problem. Next time!
+  item: U1-011
+  register: nötr
+- en: I'm afraid I can't.
+  tr: Maalesef gelemem / yapamam.
+  use: Kibar, biraz daha resmi red. "korkmak" anlamı yok.
+  reply:
+  - Never mind.
+  register: nötr
+- en: Maybe next time.
+  tr: Belki bir dahaki sefere.
+  use: Reddedilen davete anlayışla cevap verirken ya da reddi yumuşatırken.
+  register: gündelik
+- en: I apologise for …
+  tr: … için özür dilerim.
+  use: Yazılı/resmi özür; mektup ve e-postada.
+  reply:
+  - Don't worry about it.
+  - That's all right.
+  item: U1-002
+  register: resmi
+- en: It doesn't matter.
+  tr: Fark etmez / Önemli değil.
+  use: Seçenekler arasında tercih yapmayınca ya da birinin özrüne karşılık verirken.
+  item: U1-014
+  register: nötr
+- en: I have nothing to do.
+  tr: Yapacak bir şeyim yok.
+  use: Boş olduğunu söylerken; davete açık olduğunu ima eder.
+  item: U1-009
+  register: gündelik
+- en: Are you busy tomorrow evening?
+  tr: Yarın akşam meşgul müsün?
+  use: Davetten önce uygunluk sorarken.
+  reply:
+  - No, not at all. Why?
+  - Yes, I am. Sorry.
+  item: U1-004
+  register: nötr
+- en: No, not at all.
+  tr: Hayır, hiç değil (müsaitim).
+  use: '"Are you busy?" gibi bir soruya olumsuz yani müsait cevap verirken.'
+  register: gündelik
+- en: No, thanks. I'm full.
+  tr: Hayır, teşekkürler. Doydum.
+  use: Yiyecek teklifini kibarca geri çevirirken. Daha güçlüsü "I'm stuffed."
+  item: U1-097
+  register: nötr
+- en: Yes, I'd love some.
+  tr: Evet, biraz alırım.
+  use: Yiyecek/içecek teklifini kabul ederken (some + sayılamayan).
+  item: U1-011
+  register: nötr
+- en: As soon as possible
+  tr: Bir an önce, mümkün olan en kısa sürede
+  use: Acil bir istek; mesajlarda kısaltması ASAP.
+  item: U1-094
+  register: nötr
+- en: You can count on me.
+  tr: Bana güvenebilirsin.
+  use: Birine destek sözü verirken.
+  item: U1-051
+  register: gündelik
+- en: She is always there for me.
+  tr: O hep yanımda.
+  use: Bir arkadaşın zor zamanlarda yanında olduğunu anlatırken.
+  item: U1-037
+  register: nötr
+- en: You're fun to be with.
+  tr: Seninle vakit geçirmek çok eğlenceli.
+  use: Arkadaşa iltifat ederken; doğum günü kartı, mesaj.
+  item: U1-048
+  register: gündelik
+- en: He is always in a hurry.
+  tr: Hep acelesi var.
+  use: Sürekli koşturan, geç kalan birini anlatırken.
+  item: U1-075
+  register: nötr
+- en: We have a lot in common.
+  tr: Birçok ortak noktamız var.
+  use: Benzer ilgi alanları olan arkadaşları anlatırken.
+  item: U1-036
+  register: nötr
+- en: A friend in need is a friend indeed.
+  tr: Dost kara günde belli olur.
+  use: Arkadaşlık metinlerinde, posterlerde sık geçen atasözü; okuma metninde tanıma düzeyi.
+  register: nötr
+- en: Thanks for the invitation.
+  tr: Davetin için teşekkürler.
+  use: Davete cevap verirken (kabul ya da redden önce).
+  item: U1-012
+  register: nötr
+collocations:
+- item: U1-013
+  pairs:
+  - invite sb to a party
+  - invite sb to dinner
+  - invite sb over
+- item: U1-012
+  pairs:
+  - send an invitation
+  - accept an invitation
+  - refuse an invitation
+  - thanks for the invitation
+  - a party invitation
+- item: U1-001
+  pairs:
+  - accept an invitation
+  - accept an offer
+  - accept an apology
+- item: U1-019
+  pairs:
+  - refuse an invitation
+  - refuse an offer
+  - refuse to help
+- item: U1-017
+  pairs:
+  - offer help
+  - offer to help
+  - offer sb a drink
+  - accept an offer
+- item: U1-002
+  pairs:
+  - apologise to sb
+  - apologise for being late
+  - apologise for missing the party
+- item: U1-007
+  pairs:
+  - make an excuse
+  - a good excuse
+  - a poor excuse
+- item: U1-003
+  pairs:
+  - attend a party
+  - attend a meeting
+  - attend a wedding
+  - attend school
+- item: U1-015
+  pairs:
+  - join a club
+  - join a team
+  - join us
+  - join in
+- item: U1-016
+  pairs:
+  - miss the bus
+  - miss a party
+  - miss a lesson
+  - miss a chance
+- item: U1-020
+  pairs:
+  - reply to a message
+  - reply to an email
+  - reply to an invitation
+- item: U1-046
+  pairs:
+  - text sb
+  - text a friend
+  - send a text
+- item: U1-029
+  pairs:
+  - chat with friends
+  - chat online
+  - have a chat
+- item: U1-035
+  pairs:
+  - give advice
+  - ask for advice
+  - take sb's advice
+  - a piece of advice
+- item: U1-058
+  pairs:
+  - keep a promise
+  - break a promise
+  - make a promise
+- item: U1-062
+  pairs:
+  - keep a secret
+  - tell a secret
+  - share a secret
+- item: U1-056
+  pairs:
+  - tell a lie
+  - lie to sb
+  - a white lie
+- item: U1-044
+  pairs:
+  - spend time with friends
+  - spend time together
+  - spend free time
+- item: U1-043
+  pairs:
+  - share secrets
+  - share a sandwich
+  - share ideas
+  - share with sb
+- item: U1-063
+  pairs:
+  - support a friend
+  - support each other
+  - emotional support
+- item: U1-061
+  pairs:
+  - show respect
+  - respect each other
+  - mutual respect
+- item: U1-045
+  pairs:
+  - a strong bond
+  - a close bond
+  - a bond between friends
+- item: U1-030
+  pairs:
+  - a close friend
+  - close friends
+  - be close to sb
+- item: U1-032
+  pairs:
+  - hurt sb's feelings
+  - share feelings
+  - a strange feeling
+- item: U1-034
+  pairs:
+  - get on well with sb
+  - get on well with each other
+- item: U1-004
+  pairs:
+  - busy with homework
+  - a busy day
+  - a busy week
+word_families:
+- root: invite
+  forms:
+  - form: invite
+    pos: fiil
+    tr: davet etmek
+    item: U1-013
+  - form: invitation
+    pos: isim
+    tr: davet; davetiye
+    item: U1-012
+  - form: inviter
+    pos: isim
+    tr: davet eden (tanıma)
+- root: rely
+  forms:
+  - form: rely on
+    pos: fiil
+    tr: güvenmek
+    item: U1-060
+  - form: reliable
+    pos: sıfat
+    tr: güvenilir
+    item: U1-059
+  - form: unreliable
+    pos: sıfat
+    tr: güvenilmez
+    item: U1-068
+- root: honest
+  forms:
+  - form: honest
+    pos: sıfat
+    tr: dürüst
+    item: U1-077
+  - form: dishonest
+    pos: sıfat
+    tr: dürüst olmayan
+  - form: honesty
+    pos: isim
+    tr: dürüstlük
+  - form: dishonesty
+    pos: isim
+    tr: sahtekârlık, dürüst olmama
+    item: U1-053
+- root: loyal
+  forms:
+  - form: loyal
+    pos: sıfat
+    tr: sadık
+    item: U1-081
+  - form: loyalty
+    pos: isim
+    tr: sadakat
+    item: U1-082
+- root: respect
+  forms:
+  - form: respect
+    pos: fiil/isim
+    tr: saygı duymak; saygı
+    item: U1-061
+  - form: respectful
+    pos: sıfat
+    tr: saygılı
+    item: U1-088
+  - form: disrespectful
+    pos: sıfat
+    tr: saygısız
+  - form: mutual respect
+    pos: isim öbeği
+    tr: karşılıklı saygı
+    item: U1-057
+- root: support
+  forms:
+  - form: support
+    pos: fiil/isim
+    tr: desteklemek; destek
+    item: U1-063
+  - form: supportive
+    pos: sıfat
+    tr: destekleyici
+    item: U1-092
+- root: friend
+  forms:
+  - form: friend
+    pos: isim
+    tr: arkadaş
+  - form: friendly
+    pos: sıfat
+    tr: arkadaş canlısı
+  - form: friendship
+    pos: isim
+    tr: arkadaşlık
+    item: U1-033
+  - form: unfriendly
+    pos: sıfat
+    tr: soğuk, sevimsiz
+- root: person
+  forms:
+  - form: person
+    pos: isim
+    tr: kişi
+  - form: personal
+    pos: sıfat
+    tr: kişisel
+  - form: personality
+    pos: isim
+    tr: kişilik
+    item: U1-087
+  - form: personal trait
+    pos: isim öbeği
+    tr: kişilik özelliği
+    item: U1-086
+- root: care
+  forms:
+  - form: care
+    pos: fiil/isim
+    tr: önemsemek; ilgi, bakım
+  - form: caring
+    pos: sıfat
+    tr: şefkatli, ilgili
+    item: U1-070
+  - form: careful
+    pos: sıfat
+    tr: dikkatli
+- root: help
+  forms:
+  - form: help
+    pos: fiil/isim
+    tr: yardım etmek; yardım
+  - form: helpful
+    pos: sıfat
+    tr: yardımsever
+    item: U1-076
+  - form: unhelpful
+    pos: sıfat
+    tr: yardımsever olmayan
+- root: generous
+  forms:
+  - form: generous
+    pos: sıfat
+    tr: cömert
+    item: U1-074
+  - form: generosity
+    pos: isim
+    tr: cömertlik
+- root: jealous
+  forms:
+  - form: jealous
+    pos: sıfat
+    tr: kıskanç
+    item: U1-078
+  - form: jealousy
+    pos: isim
+    tr: kıskançlık
+- root: patient
+  forms:
+  - form: patient
+    pos: sıfat
+    tr: sabırlı
+    item: U1-085
+  - form: impatient
+    pos: sıfat
+    tr: sabırsız
+  - form: patience
+    pos: isim
+    tr: sabır
+- root: feel
+  forms:
+  - form: feel
+    pos: fiil
+    tr: hissetmek
+  - form: feeling
+    pos: isim
+    tr: duygu, his
+    item: U1-032
+- root: excite
+  forms:
+  - form: exciting
+    pos: sıfat
+    tr: heyecan verici
+    item: U1-096
+  - form: excited
+    pos: sıfat
+    tr: heyecanlı (kişi)
+  - form: excitement
+    pos: isim
+    tr: heyecan
+- root: bore
+  forms:
+  - form: boring
+    pos: sıfat
+    tr: sıkıcı
+    item: U1-095
+  - form: bored
+    pos: sıfat
+    tr: sıkılmış (kişi)
+- root: fun
+  forms:
+  - form: fun
+    pos: isim/sıfat
+    tr: eğlence; eğlenceli
+    item: U1-098
+  - form: funny
+    pos: sıfat
+    tr: komik
+    item: U1-073
+- root: fashion
+  forms:
+  - form: fashion
+    pos: isim
+    tr: moda
+  - form: fashionable
+    pos: sıfat
+    tr: modaya uygun, şık
+    item: U1-072
+- root: understand
+  forms:
+  - form: understand
+    pos: fiil
+    tr: anlamak
+  - form: understanding
+    pos: sıfat
+    tr: anlayışlı
+    item: U1-093
+- root: discipline
+  forms:
+  - form: self-discipline
+    pos: isim
+    tr: öz disiplin
+  - form: self-disciplined
+    pos: sıfat
+    tr: öz disiplinli
+    item: U1-090
+- root: apologise
+  forms:
+  - form: apologise
+    pos: fiil
+    tr: özür dilemek
+    item: U1-002
+  - form: apology
+    pos: isim
+    tr: özür
+synonym_sets:
+- words:
+  - count on
+  - rely on
+  - depend on
+  - trust
+  difference_tr: Dördü de "güvenmek". trust edatsız ve genel (I trust you); count on / rely on "zor anda bel bağlamak" vurgusu taşır; depend on ayrıca "-e bağlı olmak" demektir (It depends on the weather).
+  items:
+  - U1-051
+  - U1-060
+  - U1-052
+  - U1-067
+- words:
+  - buddy
+  - mate
+  - close friend
+  - true friend
+  difference_tr: buddy ve mate gündelik "kanka, ahbap" (mate İngiliz İngilizcesinde çok yaygın); close friend "yakın arkadaş"; true friend "gerçek, sadık dost" ve değer yüklü.
+  items:
+  - U1-028
+  - U1-040
+  - U1-030
+  - U1-047
+- words:
+  - attend
+  - join
+  difference_tr: attend bir etkinliğe/toplantıya/derse "katılmak, gitmek" (daha resmi); join bir gruba ya da kişilere "katılmak, aralarına girmek" (Join us!). İkisi de edatsız.
+  items:
+  - U1-003
+  - U1-015
+- words:
+  - support
+  - back up
+  difference_tr: İkisi de "destek olmak". back up gündelik ve özellikle bir tartışmada "arka çıkmak" (Duru backed Bora up); support daha genel.
+  items:
+  - U1-063
+  - U1-049
+- words:
+  - full
+  - stuffed
+  difference_tr: full "tok, doydum"; stuffed "tıka basa doydum" (daha güçlü, gündelik).
+  items:
+  - U1-097
+  - U1-099
+- words:
+  - exciting
+  - thrilling
+  difference_tr: 'thrilling, exciting''in daha güçlüsü: "nefes kesen, çok heyecanlı" (roller coaster, maç sonu).'
+  items:
+  - U1-096
+  - U1-100
+- words:
+  - calm
+  - laid-back
+  difference_tr: calm "sakin, telaşsız" (anlık ya da kalıcı); laid-back "kafası rahat, hiçbir şeyi dert etmeyen" kişilik tipi; hafif "fazla rahat" çağrışımı olabilir.
+  items:
+  - U1-069
+  - U1-079
+- words:
+  - Would you like to …?
+  - Do you want to …?
+  difference_tr: İkisi de davet. Would you like to daha kibar; Do you want to arkadaşlar arasında daha gündelik.
+  items:
+  - U1-026
+  - U1-006
+- words:
+  - How about …?
+  - What about …?
+  difference_tr: Öneride birbirinin yerine kullanılır (+ -ing / isim). "What about you?" ise yalnız karşı soru olarak yaygındır.
+  items:
+  - U1-008
+  - U1-024
+- words:
+  - I'd love to.
+  - That would be great.
+  - Why not?
+  - Sounds great!
+  difference_tr: Hepsi kabul. I'd love to en sıcak; Why not? en rahat/gündelik; That would be great teklif karşısında minnet içerir.
+  items:
+  - U1-011
+  - U1-023
+  - U1-025
+  - U1-022
+- words:
+  - reply
+  - answer
+  - respond
+  difference_tr: reply ve respond "cevap vermek" (reply to a message); answer edatsız (answer the phone, answer me). respond daha resmi (havuzda öncelik 2).
+  items:
+  - U1-020
+- words:
+  - chat
+  - talk
+  difference_tr: chat "sohbet etmek, laflamak" (rahat, uzun ve keyifli konuşma); talk genel "konuşmak".
+  items:
+  - U1-029
+- words:
+  - mean
+  - self-centred
+  difference_tr: mean "cimri ya da kaba, başkasına iyi davranmayan"; self-centred "bencil, her şeyi kendi etrafında gören". Biri paylaşmaz, öbürü yalnız kendini düşünür.
+  items:
+  - U1-083
+  - U1-089
+opposites:
+- a: accept
+  b: refuse
+- a: reliable
+  b: unreliable
+  note_tr: un- eki tersini yapar.
+- a: honest
+  b: dishonest
+  note_tr: dishonesty isimdir (dürüst olmama).
+- a: keep a promise
+  b: break a promise
+- a: keep a secret
+  b: tell a secret to others
+- a: tell the truth
+  b: tell a lie
+- a: boring
+  b: exciting
+- a: generous
+  b: mean
+  note_tr: mean'in "cimri" anlamının karşıtı.
+- a: patient
+  b: impatient
+- a: respectful
+  b: disrespectful
+- a: calm
+  b: nervous
+- a: outgoing
+  b: shy
+- a: fair
+  b: unfair
+  note_tr: 'Ege kopya çekti: "That''s not fair!"'
+- a: helpful
+  b: unhelpful
+- a: get on well (with)
+  b: argue (with)
+- a: hungry
+  b: full
+- a: busy
+  b: free
+  note_tr: Are you free on Saturday? = müsait misin?
+- a: selfless
+  b: self-centred
+traps:
+- about: excuse
+  item: U1-007
+  kind: cok_anlamli
+  trap_tr: Ünitede isim "bahane, mazeret" (a good excuse); ama "Excuse me" kalıbı "affedersiniz, pardon" demek.
+  tip_tr: Önünde a/an/my varsa ya da "make an excuse" geçiyorsa bahane; "Excuse me" ile başlıyorsa nezaket sözü.
+- about: miss
+  item: U1-016
+  kind: cok_anlamli
+  trap_tr: miss hem "kaçırmak" (miss the bus/party) hem "özlemek" (I miss you).
+  tip_tr: Nesne bir olay ya da taşıt ise (bus, film, party, lesson) kaçırmak; kişi ya da yer ise genelde özlemek.
+- about: text
+  item: U1-046
+  kind: cok_anlamli
+  trap_tr: text fiil olarak "mesaj atmak" (Text me!); isim olarak "metin" (Read the text.).
+  tip_tr: Özneden sonra ya da me/him/her'den önce geliyorsa fiildir. LGS yönergesinde "the text" hep "metin"dir.
+- about: back up
+  item: U1-049
+  kind: cok_anlamli
+  trap_tr: back up (fiil) "destek olmak, arka çıkmak"; backup (isim) "yedek" (a backup plan). E kaynağının örnek cümlesi ikinci anlamı kullanıyor.
+  tip_tr: Kişiyle birlikte (back me up, back Bora up) "destek"; plan/dosyayla birlikte "yedek".
+- about: lie
+  item: U1-056
+  kind: cok_anlamli
+  trap_tr: lie "yalan, yalan söylemek"; lie down "uzanmak". Geçmiş biçimleri farklı (lied / lay).
+  tip_tr: Yanında down ya da on the sofa varsa uzanmak; "to sb" ya da "tell a" varsa yalan.
+- about: fair
+  item: U1-071
+  kind: kaynak_hatasi
+  trap_tr: Kaynak C ve D "fair = dürüst" yazmış; doğrusu "adil". Aynı listelerde "book fair / science fair" (fuar) de var.
+  tip_tr: Kişi için fair = adil (a fair teacher, That's not fair!); "dürüst" honest'tır. Önünde book/science/job varsa fuar.
+- about: funny
+  item: U1-073
+  kind: kaynak_hatasi
+  trap_tr: E kaynağı "funny = eğlenceli" yazmış; funny "komik, güldüren". "Eğlenceli" fun'dır.
+  tip_tr: Bir etkinlik "fun", güldüren kişi/şaka "funny". "The party was funny" denirse parti komikti (garipti) anlamına kayar.
+- about: like
+  item: U1-080
+  kind: cok_anlamli
+  trap_tr: Ünitenin hedefi "gibi" anlamındaki like (What is he like? / like a brother); öğrenci refleksle "sevmek" diye okur.
+  tip_tr: '"What is/are … like?" kalıbında like her zaman "gibi"dir ve kişilik sorar.'
+- about: mean
+  item: U1-083
+  kind: kaynak_hatasi
+  trap_tr: A kaynağı yalnız "anlamına gelmek" (fiil) vermiş; ünitedeki hedef kişilik sıfatı "cimri, kaba".
+  tip_tr: '"be mean / a mean person / Don''t be mean" sıfat; "What does it mean?" fiil.'
+- about: full
+  item: U1-097
+  kind: cok_anlamli
+  trap_tr: full hem "dolu" hem "tok". Ünitede hedef "tok" (No, thanks. I'm full.).
+  tip_tr: Özne kişi ise (I'm full) tok; kap/yer ise (The bus is full) dolu. Türkçedeki "doydum" ile "Ben doluyum" çevirisini karıştırma.
+- about: close friend
+  item: U1-030
+  kind: benzer_yazilis
+  trap_tr: close sıfat "yakın" /kləʊs/; fiil "kapatmak" /kləʊz/. Yazılış aynı, okunuş farklı.
+  tip_tr: Önünde a/very, ardında friend/to varsa sıfat (yakın).
+- about: caring
+  item: U1-070
+  kind: kaynak_hatasi
+  trap_tr: C kaynağı "caring = yardımsever" yazmış; caring "şefkatli, ilgili". Yardımsever helpful.
+  tip_tr: caring duygusal ilgiyi (hasta arkadaşı arayan), helpful somut yardımı (ödevde yardım eden) anlatır.
+- about: supportive
+  item: U1-092
+  kind: kaynak_hatasi
+  trap_tr: C ve D "supportive = yardımcı" yazmış; doğrusu "destekleyici".
+  tip_tr: supportive kişi arkadaşını cesaretlendirir, arkasında durur; "yardımcı/yardımsever" helpful'dır.
+- about: true friend
+  item: U1-047
+  kind: kaynak_hatasi
+  trap_tr: C kaynağı "doğru arkadaş" yazmış; Türkçede doğal karşılık "gerçek arkadaş / gerçek dost".
+  tip_tr: true burada "doğru" değil "gerçek, hakiki" anlamında.
+- about: self-disciplined
+  item: U1-090
+  kind: kaynak_hatasi
+  trap_tr: E kaynağı sıfatın yanına isim biçimini (self-discipline) karşılık gibi yazmış.
+  tip_tr: self-discipline = öz disiplin (isim); self-disciplined = öz disiplinli (sıfat).
+- about: relatable / reliable
+  item: U1-059
+  kind: kaynak_hatasi
+  trap_tr: E kaynağı "relatable = güvenilir" yazmış; relatable "kendini onunla özdeşleştirebileceğin" demek. Kastedilen reliable.
+  tip_tr: reliable = rely (güvenmek) + -able. Benzer yazılışlı relatable'ı sınavda görmezsin.
+- about: desert / dessert
+  kind: kaynak_hatasi
+  trap_tr: C ve D "desert = tatlı" yazmış; desert "çöl", tatlı dessert (çift s). Ünite 3'te dessert öğretiliyor.
+  tip_tr: 'Tatlıyı iki kez istersin: deSSert.'
+- about: take things seriously
+  kind: kaynak_hatasi
+  trap_tr: A kaynağında "take things serious" yazıyor; doğrusu "take things seriously" (fiili niteleyen zarf).
+  tip_tr: take + nesne + seriously = ciddiye almak.
+- about: attach great importance
+  kind: kaynak_hatasi
+  trap_tr: C kaynağı "attach great = çok önemsemek" diye eksik ifade vermiş.
+  tip_tr: Tam kalıp "attach great importance to sth" (bir şeye büyük önem vermek); tanıma düzeyi.
+- about: elicit
+  kind: kaynak_hatasi
+  trap_tr: C kaynağı "elicit = öğrenmek" yazmış; elicit "(bilgi, cevap) ortaya çıkarmak, almak". Ders kitabının yönerge dili.
+  tip_tr: Öğrenciye gerekmez; listelerde görünce öğretme.
+- about: body
+  kind: kaynak_hatasi
+  trap_tr: C kaynağı "body part = ana bölüm" yazmış; mektup/e-postanın "gövde" bölümü kastediliyor. "body part" normalde "vücut parçası".
+  tip_tr: Mektup bölümleri - greeting, body, closing. W1 mektup yazımı bağlamından geliyor.
+- about: sympathetic
+  kind: sahte_dost
+  trap_tr: Kişilik anlatırken Türkçedeki "sempatik" için sympathetic kullanılır sanılır; sympathetic "anlayış gösteren, halden anlayan" demek.
+  tip_tr: '"Sempatik, sevimli" için friendly, nice, likeable.'
+- about: argue / discuss
+  item: U1-027
+  kind: turkce_etkisi
+  trap_tr: Türkçedeki "tartışmak" iki İngilizce fiile karşılık gelir; argue "kavgalı tartışmak, atışmak", discuss "bir konuyu görüşmek".
+  tip_tr: Öfke ve ses yükselmesi varsa argue; plan/konu konuşuluyorsa discuss (discuss edat almaz - discuss about değil).
+- about: join / attend
+  item: U1-015
+  kind: turkce_etkisi
+  trap_tr: '"-e katılmak" eki yüzünden "join to / attend to" denir.'
+  tip_tr: join us, join the club, attend the party - edatsız.
+- about: apologise to
+  item: U1-002
+  kind: turkce_etkisi
+  trap_tr: '"Senden özür dilerim" çevirisiyle "apologise you / apologise from you" denir.'
+  tip_tr: apologise TO sb FOR sth.
+- about: trust / count on
+  item: U1-067
+  kind: dilbilgisi
+  trap_tr: count on / rely on / depend on edat aldığı için "trust on" da sanılır.
+  tip_tr: trust edatsızdır - I trust you.
+- about: Do you like …? / Would you like …?
+  item: U1-026
+  kind: dilbilgisi
+  trap_tr: İki soru tek harf gibi görünür ama anlam farklı - Do you like = sever misin? (genel), Would you like = ister misin? (davet/teklif).
+  tip_tr: Belirli bir zaman (on Saturday, tonight) ya da ikram varsa Would you like.
+- about: I'd love to, but …
+  item: U1-011
+  kind: dilbilgisi
+  trap_tr: '"I''d love to" ile başlayan cümle kabul sanılır; "but" ile devam ediyorsa red.'
+  tip_tr: Cevabı sonuna kadar oku; "but / unfortunately / I have to" görürsen red.
+- about: self-centered / self-centred
+  item: U1-089
+  kind: benzer_yazilis
+  trap_tr: Birim dosyasında Amerikan yazımı (self-centered) var; İngiliz yazımı self-centred. İkisi de doğru.
+  tip_tr: Sınav metninde iki yazımı da görebilirsin; anlam aynı (bencil).
+- about: How is he? / What is he like?
+  item: U1-080
+  kind: turkce_etkisi
+  trap_tr: Türkçedeki "O nasıl biri?" sorusundaki "nasıl" yüzünden How is he? denir; o soru hâl hatır sorar.
+  tip_tr: Kişilik → What is he like? · Hâl/sağlık → How is he?
+lgs_focus:
+  what_is_tested:
+  - Davet–cevap diyaloğunu tamamlama (Would you like to …? / How about …? ve uygun kabul ya da red cevabı).
+  - Bir cevabın kabul mü red mi olduğunu ayırma; "I'd love to, but …" gibi yumuşak redleri tanıma.
+  - Davet kartı, parti ilanı, e-posta ya da grup mesajından bilgi çıkarma (zaman, yer, kim gelemiyor, neden).
+  - Red/özür mesajındaki sebebi bulma (because …, I have to …).
+  - Kısa tanım ya da davranıştan kişilik sıfatını çıkarma (keeps secrets → reliable; never shares → mean).
+  - Arkadaşlık nitelikleri metni/anketi okuma (Which quality is the most important for …?) ve tablo yorumlama.
+  - Güven kümesinde eş anlam (count on = rely on = trust) ve keep/break a promise, keep a secret öbekleri.
+  - '"What is he like?" sorusuna uygun cevap.'
+  question_patterns:
+  - type: dialogue_complete
+    description_tr: Kısa bir davet diyaloğunda boşluğa uygun cümle seçilir. Boşluk çoğu zaman davetin kendisi ya da cevaptır.
+    sample_stem: 'Kaan: Hi Selin! I''m having a pizza party at my house on Friday evening. ________
+
+      Selin: I''d love to! What time should I come?
+
+      Which of the following best completes the dialogue?'
+    sample_options:
+    - Would you like to come?
+    - Do you like pizza?
+    - Where do you live?
+    - Did you enjoy the party?
+    distractor_logic_tr: '"Do you like pizza?" konuyla aynı kelimeyi taşır ama davet değildir; "Did you enjoy …?" zaman uyumsuz (geçmiş); "Where do you live?" cevapla ilgisiz. Doğru şık cevabın (I''d love
+      to!) davet istediğini görmekle bulunur.'
+    items:
+    - U1-026
+    - U1-011
+    - U1-006
+  - type: dialogue_complete
+    description_tr: Cevabın ortasındaki boşluk; sonrasında gelen cümle kabul mü red mi olduğunu ele verir.
+    sample_stem: 'Ece: Do you want to come to the cinema with us on Saturday?
+
+      Bora: ________ I have to visit my grandmother in the hospital.
+
+      Which of the following best completes the dialogue?'
+    sample_options:
+    - I'm sorry, but I can't.
+    - Sure, that sounds fun!
+    - Yeah, why not?
+    - That would be great.
+    distractor_logic_tr: Üç çeldirici de kabul kalıbıdır; boşluktan sonraki "I have to …" engel bildirdiği için yalnız red uyar. Öğrenci boşluktan sonrasını okumazsa kabul şıklarından birini seçer.
+    items:
+    - U1-021
+    - U1-022
+    - U1-025
+    - U1-023
+  - type: message_infer
+    description_tr: Davet kartı, parti ilanı ya da e-posta okunur; zaman/yer/etkinlik/istek hakkında doğru bilgi sorulur.
+    sample_stem: 'Hi everyone,
+
+      It''s my 14th birthday next Sunday! I''m having a picnic in Kültürpark at 2 p.m.
+
+      We''ll play games and have a barbecue. Please bring your own drinks.
+
+      Reply by Thursday, please!
+
+      Duru
+
+      According to the invitation, which of the following is true?'
+    sample_options:
+    - The guests should answer before Friday.
+    - The picnic will start in the morning.
+    - Duru will bring drinks for everybody.
+    - The party is at Duru's house.
+    distractor_logic_tr: Çeldiriciler metindeki kelimeleri (drinks, party, 2 p.m.) yanlış bilgiyle eşler. Doğru şık metindeki "Reply by Thursday" cümlesinin eş anlamlı ifadesidir (answer before Friday);
+      doğru şık metni tekrar etmez, yeniden ifade eder.
+    items:
+    - U1-020
+    - U1-012
+    - U1-013
+  - type: message_infer
+    description_tr: Katılamama mesajı/e-postası okunur, sebep ya da telafi önerisi sorulur (W1 ve R2 kazanımı).
+    sample_stem: 'Dear Ece,
+
+      Thank you very much for the invitation. I''d love to come to your party, but I can''t.
+
+      My cousin is getting married on Saturday and we are going to Ankara. I''m really sorry.
+
+      Can I come over next week with a small present?
+
+      Love, Selin
+
+      Why can''t Selin attend the party?'
+    sample_options:
+    - She is going to a wedding.
+    - She doesn't like parties.
+    - She has to study for an exam.
+    - She is ill at home.
+    distractor_logic_tr: Çeldiriciler tipik mazeretlerdir (sınav, hastalık) ve metinde yoktur; "doesn't like parties" ise "I'd love to come" ile çelişir. Doğru şık "getting married" ifadesini "wedding"
+      ile yeniden söyler.
+    items:
+    - U1-003
+    - U1-002
+    - U1-005
+    - U1-012
+  - type: trait_match
+    description_tr: Kısa bir davranış tarifinden kişilik sıfatı çıkarılır.
+    sample_stem: '"My friend Kaan never tells my secrets to others and always keeps his promises.
+
+      I can always count on him."
+
+      Which word best describes Kaan?'
+    sample_options:
+    - reliable
+    - stubborn
+    - jealous
+    - outgoing
+    distractor_logic_tr: Çeldiriciler gerçek kişilik sıfatlarıdır ama metinde kanıtı yoktur; outgoing olumlu olduğu için en güçlü çeldiricidir. Kanıt öbekleri (keeps promises, count on) doğrudan reliable'a
+      işaret eder.
+    items:
+    - U1-059
+    - U1-055
+    - U1-054
+    - U1-051
+    - U1-091
+    - U1-078
+    - U1-084
+  - type: situation
+    description_tr: Bir durum verilir, o durumda söylenecek en uygun cümle sorulur.
+    sample_stem: 'Your friend invites you to her birthday party, but you have a basketball match at the same time.
+
+      What do you say to her?'
+    sample_options:
+    - I'd love to come, but I have a match that day.
+    - Thanks! I'll be there on time.
+    - How about a birthday party?
+    - Sure, that sounds great!
+    distractor_logic_tr: İki şık kabuldür ve durumla çelişir; "How about a birthday party?" öneri olduğu için yanlış işlevdir. Durumdaki "but you have …" kısmı red + sebep gerektirir.
+    items:
+    - U1-011
+    - U1-021
+    - U1-008
+    - U1-022
+  - type: synonym
+    description_tr: Cümledeki altı çizili ifadeye anlamca en yakın ifade sorulur.
+    sample_stem: '"You can always rely on Selin. She never lets you down."
+
+      Which of the following is closest in meaning to the underlined words "rely on"?'
+    sample_options:
+    - count on
+    - argue with
+    - get bored of
+    - introduce
+    distractor_logic_tr: Çeldiriciler aynı biçimde (fiil + edat) ama anlamca ilgisizdir; argue with zıt yönde bir ilişki bildirir. Öğrenci güven kümesini (count on, rely on, depend on, trust) grup olarak
+      biliyorsa saniyeler sürer.
+    items:
+    - U1-060
+    - U1-051
+    - U1-052
+    - U1-067
+  - type: table_graph
+    description_tr: Bir anket ya da tablo (öğrencilerin arkadaşlıkta önem verdiği özellikler, kim hangi gün müsait) okunur ve yorumlanır.
+    sample_stem: 'Students in 8/A answered the question "What is the most important quality of a good friend?"
+
+      honest: 12 students · loyal: 8 students · funny: 6 students · generous: 4 students
+
+      Which of the following is true according to the results?'
+    sample_options:
+    - The biggest group of students thinks a good friend should tell the truth.
+    - Being funny is more important than being loyal for the students.
+    - Generous is the most popular answer.
+    - Loyal is the least popular answer.
+    distractor_logic_tr: Çeldiriciler karşılaştırmayı ters kurar (more/most/least). Doğru şık "honest" kelimesini değil anlamını (tell the truth) kullanır; öğrenci hem sayı hem anlam bilgisini birleştirmek
+      zorundadır.
+    items:
+    - U1-077
+    - U1-081
+    - U1-073
+    - U1-074
+  - type: odd_one_out
+    description_tr: Şıklardan biri ötekilerden farklı işlevde/anlamdadır (ör. kabul cümleleri arasında bir red).
+    sample_stem: Which of the following is NOT a way of accepting an invitation?
+    sample_options:
+    - Thanks, but I'm busy that day.
+    - Why not?
+    - That would be great.
+    - Sounds awesome!
+    distractor_logic_tr: '"Why not?" soru biçiminde olduğu için öğrenciye yanlış gelebilir; oysa kabuldür. Doğru şık "Thanks" ile olumlu başlar ama "but I''m busy" ile reddeder; ilk kelimeye bakan öğrenci
+      yanılır.'
+    items:
+    - U1-025
+    - U1-023
+    - U1-022
+    - U1-004
+  - type: text_infer
+    description_tr: Bir arkadaşlık blogu/mektubu okunur, yazarın arkadaşı hakkında ne düşündüğü ya da metinde hangi bilginin olmadığı sorulur.
+    sample_stem: '"Elif and I met last month, but we already have a lot in common. We both love music and dogs.
+
+      We get on well and we never argue. When I feel alone, she texts me and we chat for hours."
+
+      Which of the following CANNOT be inferred from the text?'
+    sample_options:
+    - They have known each other for years.
+    - They have similar interests.
+    - Elif is a supportive friend.
+    - They communicate by phone.
+    distractor_logic_tr: CANNOT soruları olumsuz okunmalı; üç şık metinden çıkarılabilir (a lot in common → similar interests, texts me when I feel alone → supportive). Doğru şık "met last month" ile çelişir.
+    items:
+    - U1-036
+    - U1-034
+    - U1-027
+    - U1-031
+    - U1-046
+    - U1-029
+    - U1-092
+  priority_items:
+  - U1-026
+  - U1-006
+  - U1-008
+  - U1-011
+  - U1-021
+  - U1-022
+  - U1-023
+  - U1-025
+  - U1-001
+  - U1-019
+  - U1-002
+  - U1-007
+  - U1-004
+  - U1-080
+  - U1-059
+  - U1-051
+  - U1-067
+  - U1-077
+  - U1-081
+  - U1-055
+  tactics:
+  - Diyalog boşluğunda önce boşluktan SONRAKİ cümleyi oku; engel (I have to, I'm busy, but) varsa red, plan ya da soru (What time?) varsa kabul seç.
+  - Cevap "I'd love to / Sure / Why not" ise boşluk bir davettir; "Do you like …?" ile başlayan şıkkı ele.
+  - Kişilik sorusunda sıfatı değil kanıtı ara - always/never ile anlatılan davranış hangi sıfatın tanımı?
+  - Olumlu davranış anlatılıyorsa olumsuz sıfatları (mean, jealous, stubborn, self-centred) hemen ele; kalan 2 şık arasında kanıtla seç.
+  - Davet kartında zaman/yer/istek (bring …, reply by …) bilgilerini işaretle; doğru şık metni aynen değil eş anlamlıyla tekrar eder.
+  - NOT/CANNOT/EXCEPT kelimesini daire içine al; bu sorularda üç şık doğrudur, yanlış olanı ararsın.
+  - '"Why not?" kabuldür, "No, not at all." (Are you busy? sorusuna) müsait demektir; ikisi de olumsuz görünen olumlu cevaplardır.'
+  - Güven kümesi (count on, rely on, depend on, trust) tek anlam sayılır; eş anlam sorusunda bu dört kelimeden biri varsa öteki çoğunlukla doğru şıktır.
+  exam_vocabulary:
+  - en: Which of the following best completes the dialogue?
+    tr: Aşağıdakilerden hangisi diyaloğu en iyi tamamlar?
+  - en: according to the invitation / text / chart
+    tr: davete / metne / grafiğe göre
+  - en: Which of the following is true / NOT true?
+    tr: Aşağıdakilerden hangisi doğrudur / doğru değildir?
+  - en: Which of the following CANNOT be inferred?
+    tr: Aşağıdakilerden hangisi çıkarılamaz?
+  - en: Which word best describes …?
+    tr: … kişisini en iyi hangi kelime tanımlar?
+  - en: closest in meaning to
+    tr: anlamca en yakın
+  - en: the underlined word(s)
+    tr: altı çizili kelime(ler)
+  - en: What does … say to …?
+    tr: … , …'e ne der?
+  - en: Why can't … attend the party?
+    tr: … neden partiye katılamıyor?
+  - en: refuse / accept the invitation
+    tr: daveti reddetmek / kabul etmek
+  - en: Which of the following is NOT a way of …?
+    tr: Aşağıdakilerden hangisi … yollarından biri değildir?
+  - en: mentioned / not mentioned
+    tr: bahsedilen / bahsedilmeyen
+  - en: respond / response
+    tr: cevap vermek / cevap
+  - en: suitable / appropriate
+    tr: uygun
+  - en: in order
+    tr: sırayla
+cross_unit:
+- item: U1-080
+  links_to: U2-007
+  note_tr: like = "gibi" (Ü1, What is he like?) ↔ like = "sevmek" + -ing (Ü2). İki ünite yan yana gelince karışma riski en yüksek ikili.
+- item: U1-018
+  links_to: U2-005
+  note_tr: Ü1'deki tercih (prefer, It doesn't matter) Ü2'nin "Expressing preferences / stating opinions" işlevine temel olur.
+- item: U1-014
+  links_to: U2-011
+  note_tr: It doesn't matter (fark etmez) ↔ don't mind + -ing (sakıncası yok, fark etmez); ikisi de kayıtsız-esnek cevap.
+- item: U1-035
+  links_to: U2-081
+  note_tr: advice (isim, sayılamaz) ↔ advise (fiil). recommend (U2-079) ve suggest (U2-080) ile öneri kümesi.
+- item: U1-017
+  links_to: U2-080
+  note_tr: offer (bir şeyi sunmak/teklif etmek) ↔ suggest (fikir önermek). Türkçede ikisi de "önermek".
+- item: U1-029
+  links_to: U2-055
+  note_tr: chat (sohbet etmek) Ü2'de chat online olarak internet kullanımı bağlamında döner.
+- item: U1-044
+  links_to: U2-004
+  note_tr: spend time (with friends) ↔ hang out (takılmak, gündelik). Aynı sahnede ikisi de kullanılabilir.
+- item: U1-043
+  links_to: U2-058
+  note_tr: share (paylaşmak) Ü2'de share on social media olarak gelir.
+- item: U1-072
+  links_to: U2-062
+  note_tr: fashionable (Ü1 kişilik) ↔ trendy / fashion (Ü2 moda teması); eş anlamlı.
+- item: U1-022
+  links_to: U2-074
+  note_tr: Sounds awesome! (Ü1 kabul) ↔ awesome (Ü2 değerlendirme sıfatı). terrific (U2-075) de aynı kümede.
+- item: U1-095
+  links_to: U2-030
+  note_tr: boring / exciting / thrilling (Ü1) ↔ annoying, fascinating, impressive, entertaining (Ü2); değerlendirme sıfatları büyür.
+- item: U1-098
+  links_to: U2-092
+  note_tr: fun ↔ enjoyable / entertaining (Ü2). funny ile karışmayı Ü2'de de izle.
+- item: U1-079
+  links_to: U2-091
+  note_tr: laid-back / calm (kişi) ↔ relaxing (etkinlik, Ü2). -ing/-ed sıfat ayrımına bağlanır.
+- item: U1-077
+  links_to: U2-018
+  note_tr: honest (dürüst) ↔ "To be honest" (U2-018, açıkçası) görüş bildirme kalıbı.
+- item: U1-097
+  links_to: U3-057
+  note_tr: '"No, thanks. I''m full." (Ü1 ikram) ↔ "Enjoy your meal" ve yemek değerlendirme (Ü3). Ü3''te sofra diyaloğu sürer.'
+- item: U1-026
+  links_to: U3-053
+  note_tr: Would you like some …? (ikram) ↔ be in the mood for (canı istemek, Ü3); yiyecek teklif ve tercih diyalogları.
+- item: U1-008
+  links_to: U2-008
+  note_tr: How about + -ing ↔ like/love/enjoy + -ing (Ü2). Fiilden/edattan sonra -ing kuralının ilk karşılaşması Ü1'de.
+- item: dessert (kaynak hatası)
+  links_to: U3-055
+  note_tr: Ü1 kaynak listelerinde "desert = tatlı" hatası var; doğru kelime dessert Ü3'te öğretiliyor.
+- item: science fiction / main course (ESKİ KİTAP BAĞLAMI)
+  links_to: U2-073
+  note_tr: Ü1 listelerindeki eski kitap bağlam kelimelerinin bir kısmı sonraki ünitelerde hedef (science fiction U2-073, main course U3-060, dish U3-056).
+story_hooks:
+- situation_tr: Ece sınıf grubuna doğum günü davetiyesi atar; herkes art arda kabul mesajı yazar, Bora ise üç nokta atıp kaybolur.
+  items:
+  - U1-012
+  - U1-013
+  - U1-026
+  - U1-011
+  - U1-001
+  - U1-022
+  - U1-020
+  comedy_tr: Kaan "I accept your invitation. And I accept the cake too!" diye yazıp pastayı da peşinen kabul eder.
+- situation_tr: Bora partiye gitmemek için gittikçe büyüyen bahaneler uydurur ("kedim hasta"), oysa kedisi yoktur; sonunda özür diler.
+  items:
+  - U1-007
+  - U1-019
+  - U1-021
+  - U1-002
+  - U1-056
+  - U1-065
+  comedy_tr: Duru "Senin kedin mi var?" diye sorunca Bora kedinin adını üç kez farklı söyler.
+- situation_tr: Hafta sonu planı - sinema mı piknik mi? Grup oylama yapar; herkes bir şey tercih eder, Duru her şeye "It doesn't matter" der.
+  items:
+  - U1-006
+  - U1-024
+  - U1-008
+  - U1-018
+  - U1-014
+  - U1-010
+  - U1-023
+  comedy_tr: Oylama berabere biter; karar veren oy Duru'nundur ve o yine "It doesn't matter" yazar.
+- situation_tr: Kaan sürpriz videoyu Ece'ye neredeyse söyleyecektir; arkadaşları sırrı tutması için onu gözle-kaşla durdurur.
+  items:
+  - U1-055
+  - U1-062
+  - U1-066
+  - U1-058
+  - U1-054
+  - U1-068
+  comedy_tr: Kaan "Sır falan yok, sadece... video yok!" derken kendini ele verir.
+- situation_tr: Partide ikram turu - Ece'nin annesi durmadan yiyecek teklif eder; herkes önce "I'm full" sonra "I'm stuffed" der ama tatlı gelince yer açılır.
+  items:
+  - U1-017
+  - U1-026
+  - U1-097
+  - U1-099
+  - U1-011
+  comedy_tr: Bora "I'm stuffed" dedikten iki saniye sonra pastanın en büyük dilimini ister.
+- situation_tr: Yeni öğrenci Elif sınıfa gelir; Ece onu herkesle tanıştırır ve Duru ile ortak noktaları çıkar.
+  items:
+  - U1-039
+  - U1-036
+  - U1-034
+  - U1-038
+  - U1-042
+  - U1-029
+  comedy_tr: İkisi de köpek sever ama Fıstık Elif'i Duru'dan daha çok sever.
+- situation_tr: Kaan ile Bora futbol maçı yüzünden tartışır; Bora mesajlara cevap vermez, ikisi de kendini yalnız hisseder.
+  items:
+  - U1-027
+  - U1-031
+  - U1-046
+  - U1-020
+  - U1-041
+  - U1-045
+  - U1-032
+  comedy_tr: Barışmak isteyen Kaan "Sorry" mesajını yanlışlıkla sınıf grubuna atar; 25 kişi "Kabul!" yazar.
+- situation_tr: Selin ve Ece tartışan ikiliye tavsiye verir; Kaan özür diler, kulaklık ve cipslerini paylaşarak barışırlar.
+  items:
+  - U1-035
+  - U1-002
+  - U1-043
+  - U1-044
+  - U1-063
+  - U1-064
+  - U1-037
+  comedy_tr: Barışma töreni cips paylaşımıyla mühürlenir ama paket boş çıkar.
+- situation_tr: Elif dergiden "Nasıl bir arkadaşsın?" testi getirir; herkes birbirini kişilik sıfatlarıyla anlatır ("What is Duru like?").
+  items:
+  - U1-080
+  - U1-087
+  - U1-086
+  - U1-069
+  - U1-085
+  - U1-093
+  - U1-084
+  - U1-079
+  - U1-077
+  - U1-059
+  comedy_tr: Test Kaan'a "calm and patient" sonucunu verir; bütün sınıf kahkahalara boğulur.
+- situation_tr: Murat Bey ikili proje verir; herkes Kaan'ın güvenilmez olduğunu düşünür ama Bora ona güvenir ve Kaan sözünü tutar.
+  items:
+  - U1-051
+  - U1-060
+  - U1-052
+  - U1-067
+  - U1-068
+  - U1-054
+  - U1-057
+  - U1-061
+  - U1-005
+  comedy_tr: Kaan ilk kez bir şeye erken gelir; Murat Bey saatini kontrol eder, bozuk olduğunu sanır.
+- situation_tr: Kuzen Ege ziyarete gelir; normalde bencil ve cimri olan Ege bu kez herkese bir şey ikram eder; Ece de Elif yüzünden biraz kıskançtır.
+  items:
+  - U1-083
+  - U1-089
+  - U1-074
+  - U1-078
+  - U1-091
+  - U1-082
+  - U1-076
+  comedy_tr: Ege cips dağıtır, sonra "Yarısını geri alabilir miyim?" diye sorar.
+- situation_tr: Okul gezisinde lunapark/bilim merkezi - kim neyi sıkıcı, heyecanlı, nefes kesici buluyor; Kaan yine acele içinde.
+  items:
+  - U1-095
+  - U1-096
+  - U1-100
+  - U1-098
+  - U1-073
+  - U1-075
+  - U1-094
+  comedy_tr: Roller coaster'ı "thrilling" diyen Kaan, inince "boring" der ve yüzü yeşildir.
+mini_lessons:
+- type: mini_dilbilgisi
+  text_tr: Would you like TO + fiil (Would you like to come?) · How about + -ing ya da isim (How about coming? / How about pizza?). İkisini karıştırmamak diyalog sorularında bir puandır.
+  refs:
+  - U1-026
+  - U1-008
+- type: lgs_taktigi
+  text_tr: Boşluktan sonra bir ENGEL geliyorsa (I have to…, I'm busy…) cevap reddir; olumlu bir plan ya da soru geliyorsa (What time?, I'll bring…) kabuldür.
+  refs:
+  - U1-021
+  - U1-019
+  - U1-011
+- type: tuzak
+  text_tr: '"I''d love to" kabul gibi başlar ama ardından "but" geliyorsa nazik bir reddir. Cevabın sonunu okumadan şık işaretleme.'
+  refs:
+  - U1-011
+  - U1-021
+- type: tuzak
+  text_tr: '"Why not?" soru işaretine rağmen kabuldür: "Neden olmasın, olur!". "Are you busy?" sorusuna "No, not at all." ise "hiç değilim, müsaitim" demektir.'
+  refs:
+  - U1-025
+  - U1-004
+- type: hafiza_kancasi
+  text_tr: reliable = rely (güvenmek) + able (-ebilir) = güvenilebilir. un- eklersen tersi - unreliable.
+  refs:
+  - U1-059
+  - U1-060
+  - U1-068
+- type: kelime_ailesi
+  text_tr: count on = rely on = depend on = trust. Dördü de güvenmek; yalnız trust edat almaz (I trust you).
+  refs:
+  - U1-051
+  - U1-060
+  - U1-052
+  - U1-067
+- type: tuzak
+  text_tr: '"What is he like?" = O nasıl biri? (kişilik) · "What does he like?" = Neyi sever? · "What does he look like?" = Neye benziyor, görünüşü nasıl? Üç soru, üç cevap.'
+  refs:
+  - U1-080
+- type: tuzak
+  text_tr: miss iki anlamlı - I missed the bus (kaçırdım), I miss you (özledim). Nesne olay ya da taşıtsa kaçırmak.
+  refs:
+  - U1-016
+- type: tuzak
+  text_tr: fun = eğlenceli (The party was fun.) · funny = komik (Bora is funny.). Bazı kelime listeleri funny'ye "eğlenceli" yazmış, yanlış.
+  refs:
+  - U1-098
+  - U1-073
+- type: tuzak
+  text_tr: fair kişi için "adil" (That's not fair!), "dürüst" değil; dürüst honest. book fair, science fair'de ise "fuar".
+  refs:
+  - U1-071
+  - U1-077
+- type: mini_dilbilgisi
+  text_tr: 'keep → kept, break → broke: He kept his promise. / She broke her promise. Sözü ve sırrı tutmak keep ile kurulur - keep a promise, keep a secret; tersi break a promise, tell a secret.'
+  refs:
+  - U1-054
+  - U1-050
+  - U1-055
+- type: tuzak
+  text_tr: advice sayılamaz - an advice ya da advices olmaz; some advice, a piece of advice. Fiil advise (s ile).
+  refs:
+  - U1-035
+- type: mini_dilbilgisi
+  text_tr: 'apologise TO birine, FOR bir şey için: I apologise to you for being late. for''dan sonra fiil -ing alır.'
+  refs:
+  - U1-002
+- type: mini_dilbilgisi
+  text_tr: join ve attend edat almaz - join us, attend the party. Türkçedeki "-e katılmak" ekine aldanıp to ekleme.
+  refs:
+  - U1-015
+  - U1-003
+- type: hafiza_kancasi
+  text_tr: mate kelimesi classmate ve teammate'in içinde saklı; classmate'i biliyorsan mate'i de bilirsin. İngiliz İngilizcesinde "kanka" gibi çok yaygın bir hitap.
+  refs:
+  - U1-040
+  - U1-028
+- type: tuzak
+  text_tr: full kişi için "tok" (I'm full), eşya/yer için "dolu" (The bus is full). stuffed "tıka basa tok".
+  refs:
+  - U1-097
+  - U1-099
+- type: lgs_taktigi
+  text_tr: Kişilik sorusunda sıfatı değil kanıtı ara. "never tells lies" → honest, "keeps secrets" → reliable, "never shares" → mean, "always helps" → helpful.
+  refs:
+  - U1-077
+  - U1-059
+  - U1-083
+  - U1-076
+- type: mini_dilbilgisi
+  text_tr: boring sıkıcı olan şey, bored sıkılan kişi. "I'm boring" dersen "Ben sıkıcı biriyim" demiş olursun!
+  refs:
+  - U1-095
+  - U1-096
+- type: ilginc_bilgi
+  text_tr: '"A friend in need is a friend indeed." İngilizcedeki bu atasözü bizim "Dost kara günde belli olur" sözümüzün karşılığı. Arkadaşlık metinlerinde ve posterlerde sık geçer.'
+  refs:
+  - U1-047
+  - U1-037
+- type: tuzak
+  text_tr: text fiil olarak "mesaj atmak" (Text me!), isim olarak "metin". Soru kökündeki "the text" her zaman okuduğun metindir.
+  refs:
+  - U1-046
+open_questions:
+- 'MEB 2018 programının Ünite 1 kazanımları ve useful language örnekleri resmî program PDF''inden (mufredat.meb.gov.tr) değil, ikincil kaynaklardan doğrulandı: Bursa ve Burdur İl MEM 8. sınıf konu-soru
+  dağılım tabloları (2023) ve bir okulun 2017-18 yıllık planı. Kodlar ve metinler iki bağımsız kaynakta tutarlı; yine de resmî PDF ile bir kez karşılaştırılmalı.'
+- Bazı yıllık planlarda R1 ile R2 birleşik görünüyor (ör. "R1 - invitation letters, cards and e-mails" tek madde); il MEM tablolarında ayrı (R1 arkadaşlık metinleri, R2 davet mektupları). Dosyada ayrı yazıldı.
+- F5 (kişiyi tanımlama), F6 (yiyecek teklifi) ve F7 (tercih) programda ayrı işlev başlığı değil; F6 programın örnek diyaloğundan, F5 R1 kazanımından türetildi, F7 Ü2/Ü3 işlevi. Ağırlıklar (yüksek/orta/düşük)
+  LGS soru biçimlerinden yapılan editoryal tahmindir, istatistik değil.
+- 2027 LGS'de İngilizce sorularının ünitelere dağılımı (Ünite 1'den kaç soru) ve sınav kapsamının hangi üniteleri içereceği doğrulanmadı; MEB'in o yıl yayımlayacağı kapsam duyurusuna bakılmalı.
+- '"2027 LGS hâlâ 2018 programından; 8. sınıf Maarif Modeli''ne 2027-2028''de geçiyor" bilgisi havuz çalışma kitabının bulgusundan alındı; bu dosyada ayrıca doğrulanmadı.'
+- Kaynak D (212.xlsx) Ünite 1 ile Ünite 2'yi karıştırıyor ve bir satırı kaymış (reunion / jealous); jealous'un Türkçe karşılığı bu yüzden yalnız C'ye dayanıyor.
+- ONCEKI_UNITE sınıfı Ünite 1 için boş (önceki ünite yok); 7. sınıftan gelen kelimeler BILINEN altında.
+- U1-089 birim dosyasında Amerikan yazımıyla (self-centered) duruyor; İngiliz yazımı tercihine göre self-centred'e çevrilip çevrilmeyeceği editör kararı.
+phrase_bank:
+- en: I'm interested in swimming.
+  tr: Yüzmeye ilgim var.
+  function: beğeni / tercih
+  items:
+  - U1-038
+  source: ders kitabı kalıp listesi
+- en: Do you have any brothers or sisters?
+  tr: Kardeşin var mı?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: How do you refuse your friends' requests?
+  tr: Arkadaşlarının ricalarını nasıl reddedersin?
+  function: bilgi sorma
+  items:
+  - U1-019
+  source: ders kitabı kalıp listesi
+- en: What are you doing tomorrow afternoon?
+  tr: Yarın öğleden sonra ne yapıyorsun?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What are you interested in?
+  tr: Neye ilgin var?
+  function: bilgi sorma
+  items:
+  - U1-038
+  source: ders kitabı kalıp listesi
+- en: What are your hobbies?
+  tr: Hobilerin neler?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What is your favourite book?
+  tr: En sevdiğin kitap hangisi?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What is your favourite sport?
+  tr: En sevdiğin spor hangisi?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Where is your hometown?
+  tr: Memleketin neresi?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What type of movies do you watch?
+  tr: Ne tür filmler izlersin?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What type of music do you listen to?
+  tr: Ne tür müzik dinlersin?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What would you like to eat?
+  tr: Ne yemek istersin?
+  function: bilgi sorma
+  items:
+  - U1-026
+  - U1-080
+  source: ders kitabı kalıp listesi
+- en: What would you like?
+  tr: Ne istersin?
+  function: bilgi sorma
+  items:
+  - U1-080
+  source: ders kitabı kalıp listesi
+- en: What's her excuse for refusing the invitation?
+  tr: Daveti reddetmek için bahanesi ne?
+  function: bilgi sorma
+  items:
+  - U1-007
+  - U1-012
+  source: ders kitabı kalıp listesi
+- en: What's the event?
+  tr: Etkinlik ne?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: When is your birthday?
+  tr: Doğum günün ne zaman?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Where do you generally invite your buddies?
+  tr: Arkadaşlarını genelde nereye davet edersin?
+  function: bilgi sorma
+  items:
+  - U1-013
+  source: ders kitabı kalıp listesi
+- en: Which one do you prefer?
+  tr: Hangisini tercih edersin?
+  function: bilgi sorma
+  items:
+  - U1-018
+  source: ders kitabı kalıp listesi
+- en: Which subjects do you like at school?
+  tr: Okulda hangi dersleri seversin?
+  function: bilgi sorma
+  items:
+  - U1-080
+  source: ders kitabı kalıp listesi
+- en: Which team do you support?
+  tr: Hangi takımı tutuyorsun?
+  function: bilgi sorma
+  items:
+  - U1-063
+  source: ders kitabı kalıp listesi
+- en: Who is your favourite singer?
+  tr: En sevdiğin şarkıcı kim?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: You know the place, right?
+  tr: Yeri biliyorsun, değil mi?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Are you busy?
+  tr: Meşgul müsün?
+  function: davet / teklif
+  items:
+  - U1-004
+  source: ders kitabı kalıp listesi
+- en: Are you doing anything?
+  tr: Bir şey yapıyor musun? (müsait misin)
+  function: davet / teklif
+  source: ders kitabı kalıp listesi
+- en: Do you want to …?
+  tr: … ister misin?
+  function: davet / teklif
+  items:
+  - U1-006
+  source: ders kitabı kalıp listesi
+- en: How about a slumber party on Sunday?
+  tr: Pazar günü pijama partisine ne dersin?
+  function: davet / teklif
+  items:
+  - U1-008
+  source: ders kitabı kalıp listesi
+- en: Would you like anything to drink?
+  tr: Bir şey içmek ister misin?
+  function: davet / teklif
+  items:
+  - U1-080
+  source: ders kitabı kalıp listesi
+- en: Would you like to come to my birthday party?
+  tr: Doğum günü partime gelmek ister misin?
+  function: davet / teklif
+  items:
+  - U1-026
+  - U1-080
+  source: ders kitabı kalıp listesi
+- en: Would you like to go with me?
+  tr: Benimle gelmek ister misin?
+  function: davet / teklif
+  items:
+  - U1-026
+  - U1-080
+  source: ders kitabı kalıp listesi
+- en: Would you like to come over?
+  tr: Bize uğramak ister misin?
+  function: davet / teklif
+  items:
+  - U1-005
+  - U1-026
+  - U1-080
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: All right!
+  tr: Tamam, olur, peki
+  function: kabul / onay
+  source: ders kitabı kalıp listesi
+- en: It sounds awesome.
+  tr: Kulağa harika geliyor.
+  function: kabul / onay
+  items:
+  - U1-022
+  source: ders kitabı kalıp listesi
+- en: It sounds good.
+  tr: Kulağa iyi geliyor.
+  function: kabul / onay
+  items:
+  - U1-022
+  source: ders kitabı kalıp listesi
+- en: It sounds great.
+  tr: Kulağa harika geliyor.
+  function: kabul / onay
+  items:
+  - U1-022
+  source: ders kitabı kalıp listesi
+- en: Of course.
+  tr: Tabii ki.
+  function: kabul / onay
+  source: ders kitabı kalıp listesi
+- en: Sure, that sounds fun.
+  tr: Tabii, kulağa eğlenceli geliyor.
+  function: kabul / onay
+  items:
+  - U1-022
+  - U1-098
+  source: ders kitabı kalıp listesi
+- en: Sure.
+  tr: Tabii.
+  function: kabul / onay
+  source: ders kitabı kalıp listesi
+- en: That would be great.
+  tr: Harika olur.
+  function: kabul / onay
+  items:
+  - U1-023
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: Yeah, that would be great.
+  tr: Evet, harika olur.
+  function: kabul / onay
+  items:
+  - U1-023
+  source: ders kitabı kalıp listesi
+- en: Yes, I would love some.
+  tr: Evet, biraz alırım.
+  function: kabul / onay
+  source: ders kitabı kalıp listesi
+- en: I can't attend.
+  tr: Katılamam.
+  function: red / mazeret
+  items:
+  - U1-003
+  source: ders kitabı kalıp listesi
+- en: I have a plan with my family.
+  tr: Ailemle bir planım var.
+  function: red / mazeret
+  source: ders kitabı kalıp listesi
+- en: I must finish my homework.
+  tr: Ödevimi bitirmeliyim.
+  function: red / mazeret
+  source: ders kitabı kalıp listesi
+- en: I'd love to, but I feel ill.
+  tr: Çok isterdim ama kendimi hasta hissediyorum.
+  function: red / mazeret
+  items:
+  - U1-011
+  source: ders kitabı kalıp listesi
+- en: I'd love to, but I'm busy.
+  tr: Çok isterdim ama meşgulüm.
+  function: red / mazeret
+  items:
+  - U1-004
+  - U1-011
+  source: ders kitabı kalıp listesi
+- en: I'm so busy, but I can't refuse it.
+  tr: Çok meşgulüm ama hayır diyemem.
+  function: red / mazeret
+  items:
+  - U1-004
+  - U1-019
+  source: ders kitabı kalıp listesi
+- en: I'm sorry, but I can't.
+  tr: Üzgünüm ama yapamam.
+  function: red / mazeret
+  source: ders kitabı kalıp listesi
+- en: I'm sorry, I'm visiting my grandparents.
+  tr: Üzgünüm, büyükannemlere gidiyorum.
+  function: red / mazeret
+  source: ders kitabı kalıp listesi
+- en: No, thanks.
+  tr: Hayır, teşekkürler.
+  function: red / mazeret
+  source: ders kitabı kalıp listesi
+- en: Can you pick me up?
+  tr: Beni (arabayla) alabilir misin?
+  function: rica / yardım
+  source: ders kitabı kalıp listesi
+- en: I'm doing great.
+  tr: Çok iyiyim.
+  function: selamlaşma / hal hatır
+  source: ders kitabı kalıp listesi
+- en: Don't worry.
+  tr: Endişelenme.
+  function: tepki / şaşırma
+  source: ders kitabı kalıp listesi
+- en: Really?
+  tr: Gerçekten mi?
+  function: tepki / şaşırma
+  source: ders kitabı kalıp listesi
+- en: That's awesome.
+  tr: Bu harika.
+  function: tepki / şaşırma
+  items:
+  - U1-022
+  source: ders kitabı kalıp listesi
+- en: What about you?
+  tr: Ya sen?
+  function: tepki / şaşırma
+  items:
+  - U1-024
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: Why not?
+  tr: Neden olmasın?
+  function: tepki / şaşırma
+  items:
+  - U1-025
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: Not at all.
+  tr: Rica ederim. / Hiç de değil.
+  function: teşekkür / karşılık
+  source: ders kitabı kalıp listesi
+- en: Thanks for inviting me.
+  tr: Beni davet ettiğin için teşekkürler.
+  function: teşekkür / karşılık
+  source: ders kitabı kalıp listesi
+- en: Thanks for the invitation.
+  tr: Davetin için teşekkürler.
+  function: teşekkür / karşılık
+  items:
+  - U1-012
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: Thanks a lot.
+  tr: Çok teşekkürler.
+  function: teşekkür / karşılık
+  source: ders kitabı kalıp listesi
+- en: See you later.
+  tr: Sonra görüşürüz.
+  function: vedalaşma / kapanış
+  source: ders kitabı kalıp listesi
+- en: Sincerely,
+  tr: Saygılarımla, (resmî mektup/e-posta kapanışı)
+  function: vedalaşma / kapanış
+  source: ders kitabı kalıp listesi
+- en: I'd like to eat grilled chicken.
+  tr: Izgara tavuk yemek isterim.
+  function: yemek / teklif
+  items:
+  - U1-080
+  source: ders kitabı kalıp listesi
+- en: I'm full.
+  tr: Tokum.
+  function: yemek / teklif
+  items:
+  - U1-097
+  source: ders kitabı kalıp listesi
+- en: I'm stuffed.
+  tr: Tıka basa doydum.
+  function: yemek / teklif
+  items:
+  - U1-099
+  source: ders kitabı kalıp listesi
+- en: May I take your order?
+  tr: Siparişinizi alabilir miyim?
+  function: yemek / teklif
+  source: ders kitabı kalıp listesi
+- en: No, not at all.
+  tr: Hayır, hiç de değil. / Hiç sakıncası yok.
+  function: yemek / teklif
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: I'm sorry.
+  tr: Üzgünüm. / Özür dilerim.
+  function: özür
+  source: ders kitabı kalıp listesi

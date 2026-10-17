@@ -1,0 +1,315 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 13
+status: draft
+title: "Film gecesi"
+est_minutes: 10
+characters: [Selin, Duru, Kaan, Ece, Bora, Elif]
+new_items: [U2-073, U2-074, U2-075, U2-076, U2-077, U2-078]
+
+story:
+  - id: s01
+    text: "Cuma akşamı. Selin sınıf grubuna yazdı: \"<en>Film night at Duru's! Who wants to {U1-005|come over}?</en>\" Bir dakika içinde beş kişi \"<en>Me!</en>\" yazdı."
+  - id: s02
+    text: "Duru'nun salonu hazırdı: puflar, battaniyeler ve kocaman bir kova patlamış mısır. Fıstık kapıda herkesi tek tek kokladı."
+  - id: s03
+    text: "Kaan uzaktan kumandayı kaptı: \"<en>I've got the film! It's called 'Planet Zero'. It's {U2-073|science fiction}: spaceships, robots and aliens!</en>\""
+  - id: s04
+    text: "Ece burnunu kırıştırdı: \"<en>{U2-073|Science fiction} again? I {U1-018|prefer} romantic comedies.</en>\""
+  - id: s05
+    text: "Selin telefonunu gösterdi: \"<en>I {U2-056|surfed the internet} this afternoon. People say this film is {U2-074|awesome}. Five stars!</en>\""
+  - id: s06
+    text: "Bora mısır kovasını havaya kaldırdı: \"<en>Wait! First, let's {U2-057|take a selfie}!</en>\" Fotoğrafta herkes vardı… ama Bora'nın yüzü kovanın arkasında kalmıştı."
+  - id: s07
+    text: "Elif kahkahayı bastı: \"<en>That's {U2-060|ridiculous}, Bora! We can only see your eyebrows!</en>\""
+  - id: s08
+    text: "Bora hiç bozulmadı: \"<en>It's art. I'm going to {U2-058|share it on social media}.</en>\""
+  - id: s09
+    text: "Film başladı. Dev bir uzay gemisi bütün ekranı kapladı. Kaan pufundan fırladı: \"<en>Look at that spaceship! It's {U2-074|awesome}!</en>\""
+  - id: s10
+    text: "Selin gözlüğünü düzeltti: \"<en>The special effects are really {U2-076|impressive}. Everything looks so real.</en>\""
+  - id: s11
+    text: "Ekranda mor okyanuslar ve şarkı söyleyen ağaçlar belirdi. Elif gözünü kırpmayı unuttu: \"<en>This planet is {U2-077|fascinating}. I can't stop watching!</en>\""
+  - id: s12
+    text: "Filmin ortasında kahraman bir yanardağın kenarından kaydı. Bora yastığını sıktı: \"<en>I'm so {U2-059|nervous}! Is he going to fall?</en>\""
+  - id: s13
+    text: "Robot, kahramanı son saniyede yakaladı. Kaan iki kolunu havaya kaldırdı: \"<en>Yes! What a {U2-075|terrific} scene!</en>\""
+  - id: s14
+    text: "Ece kaşlarını kaldırdı: \"<en>{U2-075|Terrific}? Is that good or bad?</en>\" Selin fısıldadı: \"<en>Very, very good! It sounds like 'terrible', but it isn't.</en>\""
+  - id: s15
+    text: "Duru ise filmin yarısında pufunda uyuyakalmıştı. Fıstık da ayağının dibinde horluyordu."
+  - id: s16
+    text: "Sonra uzaylı kral şarkı söylemeye başladı: tiz, cırlak, kulak tırmalayan bir ses. Fıstık uyanıp uludu. Ece kulaklarını kapattı: \"<en>Oh no, that song is {U2-078|awful}!</en>\""
+  - id: s17
+    text: "Bora güldü: \"<en>{U2-078|Awful}? It's worse than Fıstık's singing!</en>\" Fıstık bir kez daha uludu; sanki itiraz ediyordu."
+  - id: s18
+    text: "Film bitti. Kaan ışıkları açtı ve oylama başlattı: \"<en>One word for the film. Go!</en>\""
+  - id: s19
+    text: "Kaan: \"<en>{U2-074|Awesome}!</en>\" Selin: \"<en>{U2-076|Impressive}.</en>\" Elif: \"<en>{U2-077|Fascinating}!</en>\""
+  - id: s20
+    text: "Ece kollarını kavuşturdu: \"<en>The spaceships were OK, but that song was {U2-078|awful}. And the story was a bit {U1-095|boring}.</en>\""
+  - id: s21
+    text: "Tam o anda Duru gözlerini açtı: \"<en>What did I miss? Was it {U2-075|terrific}?</en>\" Herkes bir ağızdan: \"<en>You missed the whole film, Duru!</en>\""
+  - id: s22
+    text: "Gece herkes evine döndü ama grup susmadı. Elif yazdı: \"<en>Is anyone awake? That planet was so {U2-077|fascinating}. Let's {U2-055|chat online} about it!</en>\""
+  - id: s23
+    text: "Bu arada Bora'nın fotoğrafı beş yüz beğeni almıştı. Altında bir yorum vardı: \"<en>The best {U2-073|science fiction} poster ever: Popcorn Man!</en>\""
+  - id: s24
+    text: "Bora telefonu göğsüne bastırdı: \"<en>I'm famous! My eyebrows are famous!</en>\" Selin cevap yazdı: \"<en>Five hundred likes? OK, that's {U2-076|impressive}.</en>\""
+
+scene:
+  - id: c01
+    speaker: Kaan
+    text: "<en>What did you think of 'Planet Zero'? I think it was awesome!</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>The special effects were really impressive.</en>"
+  - id: c03
+    speaker: Elif
+    text: "<en>The purple planet was fascinating. I loved it.</en>"
+  - id: c04
+    speaker: Ece
+    text: "<en>The alien king's song was awful! But the robot scene was terrific.</en>"
+
+steps:
+  - item: U2-073
+    sezdir:
+      id: u2d13-073-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"science fiction\" ne anlama geliyordu?"
+      options: ["bilim kurgu", "belgesel", "korku filmi", "çizgi film"]
+      answer: 0
+    kullan:
+      id: u2d13-073-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I love films about space, robots and the future. ________ is my favourite genre.</en>"
+      options: ["Science fiction", "Folk music", "Fashion", "Hiking"]
+      answer: 0
+    sina:
+      id: u2d13-073-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which genre does Ali like?</en>"
+      stem: "<en>Ali: My favourite films always have spaceships, aliens and robots from the year 3000.</en>"
+      options: ["science fiction", "romantic comedy", "history documentary", "musical"]
+      answer: 0
+  - item: U2-074
+    sezdir:
+      id: u2d13-074-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"awesome\" ne anlama geliyordu?"
+      options: ["harika, müthiş", "korkunç", "sıkıcı", "tuhaf"]
+      answer: 0
+    kullan:
+      id: u2d13-074-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: We won the match 5–0!\nB: Wow, that's ________!</en>"
+      options: ["awesome", "awful", "boring", "annoying"]
+      answer: 0
+    sina:
+      id: u2d13-074-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"The concert was awesome.\" Which one is CLOSEST in meaning?</en>"
+      options: ["It was great.", "It was terrible.", "It was boring.", "It was too short."]
+      answer: 0
+  - item: U2-075
+    sezdir:
+      id: u2d13-075-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede \"terrific\" ne anlama geliyordu?"
+      options: ["müthiş, harika", "korkunç, dehşet verici", "tuhaf", "çok uzun"]
+      answer: 0
+      explain: "terrific, terrible'a benzese de olumlu bir kelimedir: müthiş, harika."
+    kullan:
+      id: u2d13-075-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>You got 100 in the exam? ________ job, Bora! I'm proud of you.</en>"
+      options: ["Terrific", "Awful", "Boring", "Terrible"]
+      answer: 0
+    sina:
+      id: u2d13-075-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>A: How was your holiday in Antalya?\nB: ________ The weather was sunny and the hotel was great.</en>"
+      options: ["It was terrific!", "It was awful.", "It was terrible.", "It was boring."]
+      answer: 0
+      explain: "Güneşli hava ve harika otel olumlu; terrific olumlu, terrible ise korkunç demek."
+  - item: U2-076
+    sezdir:
+      id: u2d13-076-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"impressive\" ne anlama geliyordu?"
+      options: ["etkileyici", "sıkıcı", "korkutucu", "ucuz"]
+      answer: 0
+    kullan:
+      id: u2d13-076-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>She can speak five languages, and she is only fourteen. That's really ________.</en>"
+      options: ["impressive", "awful", "boring", "ordinary"]
+      answer: 0
+    sina:
+      id: u2d13-076-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What does Kaan think about Selin's project?</en>"
+      stem: "<en>Kaan: Did you see Selin's science project? She built a small robot, and it can clean the classroom! Wow!</en>"
+      options: ["He thinks it's impressive.", "He thinks it's awful.", "He thinks it's boring.", "He thinks it's ridiculous."]
+      answer: 0
+  - item: U2-077
+    sezdir:
+      id: u2d13-077-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"fascinating\" ne anlama geliyordu?"
+      options: ["büyüleyici", "korkutucu", "sıkıcı", "sinir bozucu"]
+      answer: 0
+    kullan:
+      id: u2d13-077-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I read a book about the ocean. Some fish can make their own light! It was ________.</en>"
+      options: ["fascinating", "awful", "boring", "annoying"]
+      answer: 0
+    sina:
+      id: u2d13-077-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"I find space fascinating.\" Which one is CLOSEST in meaning?</en>"
+      options: ["I think space is very interesting.", "I think space is very boring.", "I'm afraid of space.", "I don't know anything about space."]
+      answer: 0
+  - item: U2-078
+    sezdir:
+      id: u2d13-078-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"awful\" ne anlama geliyordu?"
+      options: ["berbat, korkunç", "harika", "yavaş", "komik"]
+      answer: 0
+    kullan:
+      id: u2d13-078-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The food at that restaurant was ________. It was cold and very salty. I'm never going there again.</en>"
+      options: ["awful", "terrific", "awesome", "impressive"]
+      answer: 0
+    sina:
+      id: u2d13-078-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>A: Did you like the new horror film?\nB: No, ________ The story was silly and the actors were bad.</en>"
+      options: ["it was awful.", "it was terrific.", "it was impressive.", "it was fascinating."]
+      answer: 0
+
+review:
+  - id: u2d13-r01
+    type: gap_fill
+    item: U2-067
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>My father wears a suit and a tie to work. His office is a very ________ place.</en>"
+    options: ["formal", "casual", "comfortable", "ridiculous"]
+    answer: 0
+  - id: u2d13-r02
+    type: gap_fill
+    item: U2-068
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>These old trainers aren't trendy, but they are very ________. I can walk all day in them.</en>"
+    options: ["comfortable", "formal", "awful", "nervous"]
+    answer: 0
+  - id: u2d13-r03
+    type: trait_match
+    item: U2-069
+    prompt: "<en>Which one describes Can?</en>"
+    stem: "<en>Can thinks he is better than everyone because his clothes are expensive. He doesn't talk to people with cheap shoes.</en>"
+    options: ["He is a snob.", "He is a true friend.", "He is very patient.", "He is very helpful."]
+    answer: 0
+  - id: u2d13-r04
+    type: gap_fill
+    item: U2-070
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Nothing special happened today. It was just an ________ Tuesday: school, homework and dinner.</en>"
+    options: ["ordinary", "impressive", "awesome", "exciting"]
+    answer: 0
+  - id: u2d13-r05
+    type: synonym
+    item: U2-071
+    prompt: "<en>\"The test was pretty easy.\" Which one is CLOSEST in meaning?</en>"
+    options: ["The test was quite easy.", "The test was beautiful.", "The test was very difficult.", "The test wasn't easy at all."]
+    answer: 0
+    explain: "pretty + sıfat = oldukça: pretty easy = oldukça kolay."
+  - id: u2d13-r06
+    type: gap_fill
+    item: U2-072
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Children under twelve must come to the cinema with ________.</en>"
+    options: ["an adult", "a baby", "a snob", "an outfit"]
+    answer: 0
+  - id: u2d13-r07
+    type: situation
+    item: U2-031
+    lgs_like: true
+    prompt: "<en>Where should Kaan go?</en>"
+    stem: "<en>Kaan wants to lift weights and run on a running machine after school.</en>"
+    options: ["to the gym", "to the library", "to the cinema", "to the canteen"]
+    answer: 0
+  - id: u2d13-r08
+    type: message_infer
+    item: U2-032
+    lgs_like: true
+    prompt: "<en>What does Kaan do three times a week?</en>"
+    stem: "<en>Kaan: I go to the gym three times a week. I lift weights, do push-ups and run for an hour.</en>"
+    options: ["He works out.", "He takes selfies.", "He plays the guitar.", "He follows the news."]
+    answer: 0
+  - id: u2d13-r09
+    type: odd_one_out
+    item: U2-036
+    lgs_like: true
+    prompt: "<en>Which one is NOT a team sport?</en>"
+    options: ["karate", "basketball", "volleyball", "football"]
+    answer: 0
+  - id: u2d13-r10
+    type: trait_match
+    item: U2-035
+    lgs_like: true
+    prompt: "<en>Which word describes Elif's grandmother?</en>"
+    stem: "<en>Elif's grandmother is seventy, but she swims every morning, dances at every wedding and walks ten kilometres a day.</en>"
+    options: ["energetic", "lazy", "nervous", "bored"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U2-075, U2-078]
+    text: "terrific ≠ terrible! terrific = müthiş, harika (olumlu) · terrible = korkunç (olumsuz). awful da olumsuzdur: berbat. \"What a terrific day!\" iltifattır, şikâyet değil."
+  - type: ilginc_bilgi
+    refs: [U2-074, U2-078]
+    text: "awesome ve awful aynı kökten gelir: awe (hayranlıkla karışık korku). Zamanla awesome olumlu, awful olumsuz anlam kazandı. İkiz kardeşler ama hiç anlaşamıyorlar!"
+  - type: kelime_ailesi
+    refs: [U2-076, U2-077]
+    text: "impress (etkilemek) → impressive (etkileyici) · fascinate (büyülemek) → fascinating (büyüleyici) → fascinated (büyülenmiş): \"The film was fascinating. I was fascinated.\""
+  - type: lgs_taktigi
+    refs: [U2-074, U2-076, U2-078]
+    text: "LGS'de görüş sorularında önce metnin olumlu mu olumsuz mu olduğuna bak. awesome, terrific, impressive, fascinating (+) · awful, boring (−). Yön belli olunca şıkların yarısı elenir."
+
+coach:
+  start: "Cuma akşamı film gecesi! 🍿 Uzay gemileri, robotlar, uzaylılar ve pufta uyuyan Duru. Hazır mısın?"
+  end_good: "Süpersin! 🎬 Artık bir filmi altı farklı kelimeyle yorumlayabilirsin. Kaan'ın oylamasında benim kelimem senin için: awesome!"
+  end_mixed: "{weak} biraz kafa karıştırdı, çok normal; Duru bütün filmi kaçırdı, sen sadece bir sahneyi! 😄 Yarın tekrar karşılaşacaksınız."
+
+notifications:
+  morning: "Bu akşam Duru'da film gecesi! 🍿 Bora'nın fotoğrafında neden sadece kaşları var?"
+  evening: "Uzaylı kral şarkı söyledi, Fıstık uludu. Film gecesinin sonu 10 dakikalık derste!"
+  review: "Tek soru: terrific iyi bir şey mi, kötü bir şey mi? 🤔"
+
+editor:
+  z07: {U2-073: BEKLIYOR, U2-074: BEKLIYOR, U2-075: BEKLIYOR, U2-076: BEKLIYOR, U2-077: BEKLIYOR, U2-078: BEKLIYOR}

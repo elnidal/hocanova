@@ -1,0 +1,846 @@
+schema_version: 1
+program: lgs
+unit: 8
+unit_title: Chores
+source: LGS_Unite8_Chores_Havuz_v1 (HEDEF)
+status: taslak, kullanıcı onayı bekliyor
+note: 'taslak, kullanıcı onayı bekliyor; hikâye/gün dosyası yazılmayacak (yalnız kelime havuzu), pilot_day yok. meaning_ban: çeviri yasağında meaning_tr yerine bu kökler aranır. exam: 2013–2019 TEOG + 2018–2019
+  LGS çıkmış kelime tablosu (kullanıcının yapıştırdığı ders kitabı listesi, W).'
+items:
+- id: U8-001
+  unit: 8
+  theme: Ev işleri ve görevler
+  display: chores / household chores (do the chores)
+  kind: phrase
+  class: core
+  meaning_tr: ev işleri (ev işlerini yapmak)
+  priority: 1
+  exam:
+    teog_lgs_total: 5
+    lgs: 1
+    words:
+    - chore
+    - household
+  variants:
+  - chore
+  - household
+  - outdoor tasks
+  trap_note: 'chore genelde çoğul (chores) ve "do" ile: do the chores (make the chores değil); household sıfat gibi: household chores / household tasks'
+  meaning_ban:
+  - ev iş
+  - ev ile ilgili
+  - evle ilgili
+- id: U8-002
+  unit: 8
+  theme: Ev işleri ve görevler
+  display: task / duty / assignment
+  kind: phrase
+  class: core
+  meaning_tr: görev, iş / görev, vazife / (verilen) görev, ödev
+  priority: 1
+  exam:
+    teog_lgs_total: 4
+    lgs: 0
+    words:
+    - duty
+    - task
+  variants:
+  - assignment
+  - duty
+  - task
+  trap_note: assignment okulda "ödev, proje görevi"; duty daha çok vazife, yükümlülük (on duty = nöbette)
+  meaning_ban:
+  - görev
+  - vazife
+  - ödev
+- id: U8-003
+  unit: 8
+  theme: Ev işleri ve görevler
+  display: do the grocery shopping (groceries)
+  kind: phrase
+  class: core
+  meaning_tr: market / bakkal alışverişi yapmak
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - grocery shopping
+  variants:
+  - do the grocery shopping
+  trap_note: 'do the shopping kalıbı: "make shopping" denmez'
+  meaning_ban:
+  - market alış
+  - bakkal alış
+  - alışveriş
+- id: U8-004
+  unit: 8
+  theme: Mutfak ve sofra
+  display: cook (cook the meals / cook dinner)
+  kind: phrase
+  class: trap
+  meaning_tr: yemek pişirmek; aşçı
+  priority: 1
+  exam:
+    teog_lgs_total: 7
+    lgs: 0
+    words:
+    - cook
+  variants:
+  - cook
+  - cook dinner
+  - cook the meals
+  trap_note: cook hem fiil (pişirmek) hem isim (aşçı); cooker = ocak, fırın (aşçı değil!). Sınavlarda 7 kez çıktı
+  meaning_ban:
+  - pişir
+  - aşçı
+- id: U8-005
+  unit: 8
+  theme: Mutfak ve sofra
+  display: set the table
+  kind: phrase
+  class: core
+  meaning_tr: sofrayı kurmak
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - set the table
+  trap_note: set the table = sofrayı kurmak; clear the table = sofrayı toplamak (kaynak A "masayı kurmak")
+  meaning_ban:
+  - sofra
+  - masayı kur
+- id: U8-006
+  unit: 8
+  theme: Mutfak ve sofra
+  display: wash the dishes / do the washing up (dishes)
+  kind: phrase
+  class: trap
+  meaning_tr: bulaşıkları yıkamak (bulaşık)
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - wash the dishes
+    - do the washing up
+    - dishes
+  variants:
+  - dishes
+  - do the washing up
+  - wash the dishes
+  trap_note: dish tekil "yemek / tabak" (U3-056); the dishes çoğul "bulaşık". do the washing up İngiliz İngilizcesi, aynı anlam
+  meaning_ban:
+  - bulaşık
+- id: U8-007
+  unit: 8
+  theme: Mutfak ve sofra
+  display: dry the dishes (dry)
+  kind: phrase
+  class: core
+  meaning_tr: bulaşıkları kurulamak (kurutmak; kuru)
+  priority: 1
+  variants:
+  - dry
+  - dry the dishes
+  meaning_ban:
+  - kurula
+  - kurut
+- id: U8-008
+  unit: 8
+  theme: Mutfak ve sofra
+  display: load / empty the dishwasher (dishwasher)
+  kind: phrase
+  class: trap
+  meaning_tr: bulaşık makinesini doldurmak / boşaltmak
+  priority: 1
+  exam:
+    teog_lgs_total: 4
+    lgs: 0
+    words:
+    - dishwasher
+    - load
+    - empty
+  variants:
+  - dishwasher
+  - empty
+  - empty the dishwasher
+  - load
+  - load the dishwasher
+  trap_note: empty sıfat "boş", fiil "boşaltmak"; load = yüklemek, doldurmak (load the washing machine de olur)
+  meaning_ban:
+  - bulaşık makine
+  - doldur
+  - boşalt
+- id: U8-009
+  unit: 8
+  theme: Temizlik ve düzen
+  display: tidy up / clean up (tidy – untidy)
+  kind: phrase
+  class: core
+  meaning_tr: toparlamak, düzenlemek / temizlemek (düzenli – dağınık)
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - tidy up
+  variants:
+  - clean up
+  - clean up the garage
+  - clean up the house
+  - tidy
+  - tidy up
+  - untidy
+  trap_note: tidy sıfat (düzenli) ve fiil (toparlamak); untidy = messy. clean up = iyice temizleyip toplamak
+  meaning_ban:
+  - toparla
+  - topla
+  - düzenle
+  - düzenli
+  - dağınık
+  - temizle
+- id: U8-010
+  unit: 8
+  theme: Temizlik ve düzen
+  display: mess (messy / make a mess)
+  kind: phrase
+  class: core
+  meaning_tr: dağınıklık, karmaşa (dağınık / ortalığı dağıtmak)
+  priority: 1
+  variants:
+  - mess
+  trap_note: What a mess! = Ne dağınıklık! messy sıfat; make a mess (do a mess değil)
+  meaning_ban:
+  - dağınık
+  - karmaşa
+- id: U8-011
+  unit: 8
+  theme: Temizlik ve düzen
+  display: make the bed
+  kind: phrase
+  class: trap
+  meaning_tr: yatağı toplamak / düzeltmek
+  priority: 1
+  exam:
+    teog_lgs_total: 4
+    lgs: 1
+    words:
+    - make the bed
+  trap_note: '"yatak yapmak" değil: kalkınca yatağı düzeltmek; make the bed (do the bed değil). Sınavda 4 kez, LGS 1'
+  meaning_ban:
+  - yatağı
+  - yatak
+- id: U8-012
+  unit: 8
+  theme: Temizlik ve düzen
+  display: vacuum (vacuum the house / vacuum cleaner)
+  kind: phrase
+  class: trap
+  meaning_tr: elektrik süpürgesiyle süpürmek (elektrik süpürgesi)
+  priority: 1
+  variants:
+  - vacuum
+  - vacuum the house
+  trap_note: 'vacuum = vakum değil, elektrikli süpürgeyle süpürmek; isim: vacuum cleaner. Yazımı tek c, çift u'
+  meaning_ban:
+  - süpür
+- id: U8-013
+  unit: 8
+  theme: Temizlik ve düzen
+  display: sweep (sweep the floor / sweep the leaves)
+  kind: phrase
+  class: core
+  meaning_tr: süpürmek (süpürgeyle; yaprakları süpürmek)
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - sweep the leaves
+  variants:
+  - sweep
+  - sweep the leaves
+  trap_note: 'sweep süpürgeyle, vacuum elektrik süpürgesiyle; düzensiz: sweep–swept'
+  meaning_ban:
+  - süpür
+- id: U8-014
+  unit: 8
+  theme: Temizlik ve düzen
+  display: mop (mop the floor)
+  kind: phrase
+  class: core
+  meaning_tr: paspaslamak (yeri paspaslamak)
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - mop the floor
+  variants:
+  - mop
+  - mop the floor
+  meaning_ban:
+  - paspas
+  - yeri sil
+- id: U8-015
+  unit: 8
+  theme: Temizlik ve düzen
+  display: dust (dust the shelves)
+  kind: phrase
+  class: trap
+  meaning_tr: toz almak (rafların tozunu almak); toz
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - dust
+  variants:
+  - dust
+  - dust the shelves
+  trap_note: dust isim "toz", fiil "tozunu almak" (toz yapmak değil!)
+  meaning_ban:
+  - toz
+- id: U8-016
+  unit: 8
+  theme: Temizlik ve düzen
+  display: take out the garbage / trash / rubbish
+  kind: phrase
+  class: core
+  meaning_tr: çöpü çıkarmak (çöp)
+  priority: 1
+  exam:
+    teog_lgs_total: 4
+    lgs: 1
+    words:
+    - take out the garbage/trash/rubbish
+  variants:
+  - garbage
+  - rubbish
+  - take out the garbage
+  - trash
+  trap_note: 'garbage ve trash Amerikan, rubbish İngiliz İngilizcesi: üçü de çöp. take out (dışarı çıkarmak) ≠ take off (çıkarmak, giysi / havalanmak)'
+  meaning_ban:
+  - çöp
+- id: U8-017
+  unit: 8
+  theme: Temizlik ve düzen
+  display: janitor
+  kind: word
+  class: core
+  meaning_tr: okul görevlisi, hademe, temizlik görevlisi
+  priority: 1
+  meaning_ban:
+  - hademe
+  - temizlik görevli
+  - okul görevli
+  - temizlikçi
+- id: U8-018
+  unit: 8
+  theme: Çamaşır
+  display: do the laundry (laundry)
+  kind: phrase
+  class: core
+  meaning_tr: çamaşır yıkamak (çamaşır)
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 1
+    words:
+    - do the laundry
+  variants:
+  - do the laundry
+  trap_note: 'laundry sayılamaz: "laundries" denmez; do the laundry = do the washing'
+  meaning_ban:
+  - çamaşır
+- id: U8-019
+  unit: 8
+  theme: Çamaşır
+  display: separate (separate the laundry)
+  kind: phrase
+  class: core
+  meaning_tr: ayırmak (çamaşırları ayırmak)
+  priority: 1
+  variants:
+  - separate
+  - separate the laundry
+  trap_note: yazımı separate (ortada a); kaynak I "seperate" yazmış
+  meaning_ban:
+  - ayır
+- id: U8-020
+  unit: 8
+  theme: Çamaşır
+  display: hang out the laundry / washing (hang)
+  kind: phrase
+  class: trap
+  meaning_tr: çamaşırları asmak, sermek (asmak)
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - hang out
+  variants:
+  - hang out the laundry
+  trap_note: hang out tek başına "takılmak" (U2-004); hang out the laundry = çamaşır sermek. hang on = beklemek (U4-007)
+  meaning_ban:
+  - çamaşır as
+  - çamaşır ser
+  - asmak
+  - sermek
+- id: U8-021
+  unit: 8
+  theme: Çamaşır
+  display: iron (iron the clothes)
+  kind: phrase
+  class: trap
+  meaning_tr: ütülemek; ütü
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - iron
+  variants:
+  - iron
+  - iron the clothes
+  trap_note: iron "demir" de demek; okunuşu /ˈaɪən/ (r okunmaz)
+  meaning_ban:
+  - ütü
+- id: U8-022
+  unit: 8
+  theme: Çamaşır
+  display: fold (fold the clothes)
+  kind: phrase
+  class: core
+  meaning_tr: katlamak (çamaşırları katlamak)
+  priority: 2
+  variants:
+  - fold the clothes
+  meaning_ban:
+  - katla
+- id: U8-023
+  unit: 8
+  theme: Bahçe, evcil hayvan ve bakım
+  display: mow the lawn (lawn)
+  kind: phrase
+  class: core
+  meaning_tr: çimleri biçmek (çimenlik)
+  priority: 1
+  variants:
+  - lawn
+  - mow
+  - mow the lawn
+  trap_note: lawn = bahçedeki çimenlik; grass = çim (bitki)
+  meaning_ban:
+  - çim
+- id: U8-024
+  unit: 8
+  theme: Bahçe, evcil hayvan ve bakım
+  display: water the plants / flowers
+  kind: phrase
+  class: trap
+  meaning_tr: bitkileri / çiçekleri sulamak
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - water the plants
+    - water the flowers
+  variants:
+  - water the flowers
+  - water the plants
+  trap_note: 'water burada fiil: sulamak'
+  meaning_ban:
+  - sula
+- id: U8-025
+  unit: 8
+  theme: Bahçe, evcil hayvan ve bakım
+  display: take care of / look after
+  kind: phrase
+  class: core
+  meaning_tr: bakmak, ilgilenmek, göz kulak olmak
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - take care of
+  variants:
+  - look after
+  - take care of
+  - take care of the baby
+  - take care of the dog
+  trap_note: look after ≠ look for (aramak) ≠ look at (bakmak, göz atmak)
+  meaning_ban:
+  - bakmak
+  - ilgilen
+  - göz kulak
+  - bakım
+- id: U8-026
+  unit: 8
+  theme: Bahçe, evcil hayvan ve bakım
+  display: feed (feed the dog / the cat)
+  kind: phrase
+  class: core
+  meaning_tr: beslemek, yem / mama vermek
+  priority: 1
+  variants:
+  - feed
+  - feed the dog
+  trap_note: 'düzensiz: feed–fed; food ile aynı aileden'
+  meaning_ban:
+  - besle
+  - mama ver
+  - yem ver
+- id: U8-027
+  unit: 8
+  theme: Ev ve aile hayatı
+  display: flat
+  kind: word
+  class: trap
+  meaning_tr: apartman dairesi
+  priority: 1
+  trap_note: 'flat sıfat olarak "düz"; ev bağlamında daire (İngiliz İng.; Amerikan: apartment)'
+  meaning_ban:
+  - daire
+  - apartman
+- id: U8-028
+  unit: 8
+  theme: Ev ve aile hayatı
+  display: relative
+  kind: word
+  class: trap
+  meaning_tr: akraba
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - relative
+  trap_note: relative ≠ relatif (görece); relatives = akrabalar
+  meaning_ban:
+  - akraba
+- id: U8-029
+  unit: 8
+  theme: Ev ve aile hayatı
+  display: get an allowance (pocket money)
+  kind: phrase
+  class: trap
+  meaning_tr: harçlık almak (cep harçlığı)
+  priority: 1
+  variants:
+  - allowance
+  - get an allowance
+  trap_note: allowance burada harçlık; kaynak I "izin" demiş (yanlış; allow = izin vermek ile karışıyor)
+  meaning_ban:
+  - harçlık
+- id: U8-030
+  unit: 8
+  theme: Ev ve aile hayatı
+  display: reward
+  kind: word
+  class: core
+  meaning_tr: ödül; ödüllendirmek
+  priority: 1
+  trap_note: reward bir davranışın karşılığı (ev işi yapana ödül); award yarışmada verilen ödül
+  meaning_ban:
+  - ödül
+- id: U8-031
+  unit: 8
+  theme: Ev ve aile hayatı
+  display: borrow / lend
+  kind: phrase
+  class: trap
+  meaning_tr: ödünç almak / ödünç vermek
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - borrow
+  variants:
+  - borrow
+  trap_note: 'borrow = ödünç ALMAK (from), lend = ödünç VERMEK (to): "Can I borrow your pen?" / "Can you lend me your pen?"'
+  meaning_ban:
+  - ödünç
+- id: U8-032
+  unit: 8
+  theme: Ev ve aile hayatı
+  display: keep a diary (diary)
+  kind: phrase
+  class: trap
+  meaning_tr: günlük tutmak (günlük, ajanda)
+  priority: 1
+  variants:
+  - diary
+  - keep a diary
+  trap_note: 'diary (günlük) ≠ dairy (süt ürünleri); daily (günlük, her gün) sıfat. Kaynak W "günlük ev işi" demiş: yanlış'
+  meaning_ban:
+  - günlük
+  - ajanda
+- id: U8-033
+  unit: 8
+  theme: Ev ve aile hayatı
+  display: furniture
+  kind: word
+  class: trap
+  meaning_tr: mobilya
+  priority: 2
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - furniture
+  trap_note: 'sayılamaz: "furnitures" yanlış → a piece of furniture'
+  meaning_ban:
+  - mobilya
+- id: U8-034
+  unit: 8
+  theme: Sorumluluk ve zorunluluk kalıpları
+  display: be responsible for / be in charge of (responsibility)
+  kind: pattern
+  class: pattern
+  meaning_tr: -den sorumlu olmak (sorumluluk)
+  priority: 1
+  exam:
+    teog_lgs_total: 6
+    lgs: 0
+    words:
+    - be responsible for
+    - responsibility
+  variants:
+  - in charge of
+  - responsibility
+  - responsible for
+  trap_note: 'ikisinden sonra isim ya da V-ing: I''m responsible for taking out the garbage (to take değil)'
+  meaning_ban:
+  - sorumlu
+  - sorumluluk
+- id: U8-035
+  unit: 8
+  theme: Sorumluluk ve zorunluluk kalıpları
+  display: have to / must (obligation)
+  kind: pattern
+  class: pattern
+  meaning_tr: zorunda olmak, -meli/-malı (zorunluluk)
+  priority: 1
+  variants:
+  - have to / must
+  - obligation
+  trap_note: 'have to dışarıdan gelen zorunluluk / kural; must konuşanın kendi gerekli gördüğü. Soru: Do you have to …? (Must you …? nadir). Geçmiş: had to'
+  meaning_ban:
+  - zorunda
+  - zorunluluk
+  - -meli
+  - mecbur
+- id: U8-036
+  unit: 8
+  theme: Sorumluluk ve zorunluluk kalıpları
+  display: want / ask someone to do something
+  kind: pattern
+  class: pattern
+  meaning_tr: birinin bir şey yapmasını istemek
+  priority: 1
+  variants:
+  - want someone to
+  trap_note: 'want + kişi + to V1: My mum wants me to tidy my room ("wants that I tidy" denmez)'
+  meaning_ban:
+  - yapmasını iste
+- id: U8-037
+  unit: 8
+  theme: Sorumluluk ve zorunluluk kalıpları
+  display: take turns (It's my / your turn)
+  kind: pattern
+  class: pattern
+  meaning_tr: sırayla yapmak, nöbetleşe yapmak (sıra bende / sende)
+  priority: 1
+  variants:
+  - take turns
+  trap_note: Whose turn is it to wash the dishes? – It's Selin's turn. turn burada sıra
+  meaning_ban:
+  - sırayla
+  - sıra
+  - nöbetleş
+- id: U8-038
+  unit: 8
+  theme: Sorumluluk ve zorunluluk kalıpları
+  display: cooperate (cooperation) / work together
+  kind: phrase
+  class: core
+  meaning_tr: iş birliği yapmak, birlikte çalışmak
+  priority: 1
+  variants:
+  - cooperate
+  meaning_ban:
+  - iş birliği
+  - işbirliği
+  - birlikte çalış
+- id: U8-039
+  unit: 8
+  theme: Sorumluluk ve zorunluluk kalıpları
+  display: do my / your best
+  kind: pattern
+  class: pattern
+  meaning_tr: elimden geleni yapmak
+  priority: 1
+  variants:
+  - do my best
+  trap_note: make my best denmez; do one's best
+  meaning_ban:
+  - elimden gel
+  - elinden gel
+- id: U8-040
+  unit: 8
+  theme: Sorumluluk ve zorunluluk kalıpları
+  display: don't have to ≠ mustn't
+  kind: phrase
+  class: trap
+  meaning_tr: gerek yok, zorunda değil ≠ yasak, -memeli
+  priority: 1
+  variants:
+  - don't have to / mustn't
+  trap_note: don't have to = zorunda değilsin (istersen yaparsın); mustn't = yapmamalısın, yasak. LGS'nin klasik anlam tuzağı
+  meaning_ban:
+  - zorunda değil
+  - gerek yok
+  - yasak
+  - -memeli
+- id: U8-041
+  unit: 8
+  theme: Sorumluluk ve zorunluluk kalıpları
+  display: on time / in time
+  kind: phrase
+  class: trap
+  meaning_tr: zamanında, tam vaktinde / vaktinde, geç kalmadan
+  priority: 2
+  variants:
+  - in time
+  - on time
+  trap_note: 'on time = belirlenen saatte (return the books on time); in time = geç kalmadan, yetişecek kadar erken. Kaynak I "in time = zamanla" demiş: yanlış'
+  meaning_ban:
+  - zamanında
+  - vaktinde
+- id: U8-042
+  unit: 8
+  theme: Tutum, duygu ve şikâyet
+  display: too much / too many (I have too many tasks)
+  kind: pattern
+  class: pattern
+  meaning_tr: çok fazla, gereğinden fazla (şikâyet)
+  priority: 1
+  variants:
+  - too many
+  - too many / too much
+  - too much
+  trap_note: too many + sayılan çoğul (too many chores), too much + sayılamayan (too much homework); too olumsuz anlam taşır, very değil
+  meaning_ban:
+  - çok fazla
+  - gereğinden fazla
+  - aşırı
+- id: U8-043
+  unit: 8
+  theme: Tutum, duygu ve şikâyet
+  display: It's not fair! / Why do I always have to …? (şikâyet kalıpları)
+  kind: pattern
+  class: pattern
+  meaning_tr: Hiç adil değil! / Neden hep ben … zorundayım?
+  priority: 1
+  variants:
+  - it's not fair
+  trap_note: fair "adil" (U1-071); şikâyet kalıbında not fair = haksızlık
+  meaning_ban:
+  - adil değil
+  - haksızlık
+- id: U8-044
+  unit: 8
+  theme: Tutum, duygu ve şikâyet
+  display: make a fuss
+  kind: phrase
+  class: core
+  meaning_tr: yaygara koparmak, mesele çıkarmak
+  priority: 1
+  trap_note: 'Don''t make a fuss! = Büyütme, yaygara yapma. Kaynak I "karışıklık çıkarmak" diyor: tam değil'
+  meaning_ban:
+  - yaygara
+  - mesele
+  - sorun çıkar
+- id: U8-045
+  unit: 8
+  theme: Tutum, duygu ve şikâyet
+  display: encouraging (encourage)
+  kind: phrase
+  class: core
+  meaning_tr: cesaretlendirici, yüreklendirici (cesaretlendirmek)
+  priority: 1
+  variants:
+  - encouraging
+  meaning_ban:
+  - cesaret
+  - yüreklendir
+- id: U8-046
+  unit: 8
+  theme: Tutum, duygu ve şikâyet
+  display: damage
+  kind: word
+  class: core
+  meaning_tr: zarar vermek, hasar vermek; hasar
+  priority: 1
+  meaning_ban:
+  - zarar
+  - hasar
+- id: U8-047
+  unit: 8
+  theme: Tutum, duygu ve şikâyet
+  display: affect
+  kind: word
+  class: core
+  meaning_tr: etkilemek
+  priority: 1
+  variants:
+  - effectively
+  trap_note: affect fiil (etkilemek), effect isim (etki); effectively = etkili biçimde
+  meaning_ban:
+  - etkile
+- id: U8-048
+  unit: 8
+  theme: Tutum, duygu ve şikâyet
+  display: warn
+  kind: word
+  class: core
+  meaning_tr: uyarmak
+  priority: 2
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - warn
+  trap_note: 'warn someone (not) to do: Mum warned me not to break the vase'
+  meaning_ban:
+  - uyar
+- id: U8-049
+  unit: 8
+  theme: Tutum, duygu ve şikâyet
+  display: instead of
+  kind: phrase
+  class: core
+  meaning_tr: -in yerine
+  priority: 2
+  trap_note: 'instead of + isim / V-ing: instead of watching TV'
+  meaning_ban:
+  - yerine
+- id: U8-050
+  unit: 8
+  theme: Tutum, duygu ve şikâyet
+  display: immediately
+  kind: word
+  class: core
+  meaning_tr: hemen, derhal
+  priority: 2
+  trap_note: 'kaynak I "birden, aniden" demiş: yanlış (aniden = suddenly)'
+  meaning_ban:
+  - hemen
+  - derhal

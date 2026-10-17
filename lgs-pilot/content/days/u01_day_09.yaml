@@ -1,0 +1,308 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 9
+status: draft
+title: "Bilim fuarı haftası"
+est_minutes: 10
+characters: [Murat Bey, Ece, Selin, Duru, Kaan, Elif, Bora]
+new_items: [U1-003, U1-015, U1-009, U1-004, U1-020, U1-016]
+
+story:
+  - id: s01
+    text: "Pazartesi sabahı Murat Bey büyük haberi verdi: cuma günü okulda bilim fuarı var!"
+  - id: s02
+    text: "Murat Bey: \"<en>All 8th graders will {U1-003|attend} the science fair on Friday. You can make a project in small groups.</en>\""
+  - id: s03
+    text: "Ece'nin gözleri parladı. Akşam sınıf grubuna ilk mesajı o attı: \"<en>Who wants to {U1-015|join} my group? Let's make a volcano!</en>\""
+  - id: s04
+    text: "Selin hemen yazdı: \"<en>I'll {U1-015|join} you! I love volcanoes.</en>\""
+  - id: s05
+    text: "Duru: \"<en>Me too. I {U1-009|have nothing to do} this week.</en>\" Kaan: \"<en>Duru, you {U1-009|have nothing to do} every week!</en>\""
+  - id: s06
+    text: "Kaan ise uzun bir liste attı: \"<en>I'll {U1-015|join} too! But I'm so {U1-004|busy} this week. Football on Monday, swimming on Tuesday, my cousin's birthday on Wednesday…</en>\""
+  - id: s07
+    text: "Ece: \"<en>Kaan, you are always {U1-004|busy}, but you are never on time!</en>\""
+  - id: s08
+    text: "Elif: \"<en>Can I {U1-015|join} too? I love science!</en>\" Duru: \"<en>Welcome to the volcano team, {U1-040|mate}!</en>\""
+  - id: s09
+    text: "Geriye bir kişi kalmıştı. Ece gruba yazdı: \"<en>Bora, {U1-006|do you want to} be in our group?</en>\""
+  - id: s10
+    text: "Bir saat geçti. Sonra iki saat. Bora'dan tek kelime yoktu. Ece: \"<en>Bora, please {U1-020|reply}! It's important!</en>\""
+  - id: s11
+    text: "Kaan: \"<en>Bora never {U1-020|replies} to messages. Maybe his cat is sick again!</en>\" Grup kahkahaya boğuldu."
+  - id: s12
+    text: "Gece Bora'dan nihayet bir mesaj geldi: \"<en>Sorry! My phone was dead. Can I still {U1-015|join}? Please, {U1-028|buddy}!</en>\""
+  - id: s13
+    text: "Ece: \"<en>Of course! But next time, {U1-020|reply} faster!</en>\""
+  - id: s14
+    text: "Bütün hafta Ece'nin evinde volkan yapıldı. Kartondan dağı taşıma görevi Duru'ya verildi: \"<en>Duru, you said you {U1-009|have nothing to do}. So you can carry the volcano!</en>\""
+  - id: s15
+    text: "Kaan çarşamba günü de gelmedi: \"<en>I'm {U1-004|busy} again, sorry! But I'll be there on Friday, I promise!</en>\""
+  - id: s16
+    text: "Cuma sabahı volkan masada hazırdı. Herkes oradaydı… Kaan hariç."
+  - id: s17
+    text: "Kaan'dan mesaj geldi: \"<en>I {U1-016|missed} the bus! 😱 I'm running!</en>\""
+  - id: s18
+    text: "Selin iç çekti: \"<en>Of course he {U1-016|missed} the bus.</en>\" Duru: \"<en>If he runs fast, he won't {U1-016|miss} the volcano.</en>\""
+  - id: s19
+    text: "Murat Bey tam masaya gelmişti ki Kaan kapıdan nefes nefese daldı: \"<en>Wait! I'm here! I didn't {U1-016|miss} it!</en>\""
+  - id: s20
+    text: "Volkan köpürdü, taştı ve Murat Bey'in ayakkabılarına kadar aktı. Murat Bey güldü: \"<en>Thank you for {U1-003|attending}, everyone. Great volcano… and very wet shoes!</en>\""
+  - id: s21
+    text: "Elif etrafına baktı: \"<en>Wow, more than 200 people {U1-003|attended} the fair today!</en>\""
+  - id: s22
+    text: "Kaan nefesini toplayınca: \"<en>Sorry I was late. You waited for me. You are {U1-047|true friends}!</en>\""
+  - id: s23
+    text: "Duru: \"<en>Of course. You're our {U1-030|close friend}. And every volcano needs a clown.</en>\""
+  - id: s24
+    text: "Elif: \"<en>This group is the best. {U1-048|You're fun to be with}!</en>\" Bora: \"<en>To our {U1-033|friendship} and to our volcano! 🌋</en>\""
+  - id: s25
+    text: "O akşam Duru pufuna gömüldü ve gruba son mesajını attı: \"<en>Finally, I {U1-009|have nothing to do}. My favourite hobby.</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Bora, why didn't you reply? We need you!</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>Sorry! My phone was dead. Can I still join your group?</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>I'm so busy this week. And I missed the bus again!</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>Don't worry. I have nothing to do. I can carry the volcano.</en>"
+
+steps:
+  - item: U1-003
+    sezdir:
+      id: d09-003-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"attend\" ne anlama geliyordu?"
+      options: ["katılmak (etkinliğe)", "unutmak", "kazanmak", "satın almak"]
+      answer: 0
+    kullan:
+      id: d09-003-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>More than two hundred students will ________ the concert tonight.</en>"
+      options: ["attend", "reply", "apologise", "chat"]
+      answer: 0
+    sina:
+      id: d09-003-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Many people attended the science fair.\" Which one is CLOSEST in meaning?</en>"
+      options: ["Many people went to the science fair.", "Many people missed the science fair.", "Many people didn't like the science fair.", "Many people forgot the science fair."]
+      answer: 0
+  - item: U1-015
+    sezdir:
+      id: d09-015-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"join\" ne anlama geliyordu?"
+      options: ["katılmak (gruba / birine)", "terk etmek", "boyamak", "saymak"]
+      answer: 0
+    kullan:
+      id: d09-015-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>We're playing football in the garden. Do you want to ________ us?</en>"
+      options: ["join", "attend", "reply", "prefer"]
+      answer: 0
+    sina:
+      id: d09-015-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>What can Elif say?</en>"
+      stem: "<en>Elif sees her classmates. They are playing volleyball. She wants to play with them.</en>"
+      options: ["Can I join you?", "Can you help me with my homework?", "Did you miss the bus?", "Why didn't you reply?"]
+      answer: 0
+  - item: U1-009
+    sezdir:
+      id: d09-009-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"I have nothing to do.\" ne anlama geliyordu?"
+      options: ["Yapacak bir şeyim yok.", "Çok işim var.", "Hiçbir şey bilmiyorum.", "Hiçbir şey yemedim."]
+      answer: 0
+    kullan:
+      id: d09-009-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Are you free on Saturday?\nB: Yes, ________ Let's meet!</en>"
+      options: ["I have nothing to do.", "I'm very busy.", "I have a lot of homework.", "I can't come."]
+      answer: 0
+    sina:
+      id: d09-009-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Selin: Why are you lying on the sofa all day, Duru?\nDuru: ________</en>"
+      options: ["Because I have nothing to do.", "Because I'm very busy.", "Because I missed the bus.", "Because I have three exams today."]
+      answer: 0
+  - item: U1-004
+    sezdir:
+      id: d09-004-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"busy\" ne anlama geliyordu?"
+      options: ["meşgul", "tembel", "aç", "sessiz"]
+      answer: 0
+    kullan:
+      id: d09-004-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Sorry, I can't play today. I'm ________ with my homework.</en>"
+      options: ["busy", "full", "fair", "laid-back"]
+      answer: 0
+    sina:
+      id: d09-004-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which word describes Kaan this week?</en>"
+      stem: "<en>Kaan: Football practice on Monday, swimming on Tuesday, a maths test on Wednesday… I can't meet you this week!</en>"
+      options: ["busy", "bored", "laid-back", "lazy"]
+      answer: 0
+  - item: U1-020
+    sezdir:
+      id: d09-020-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"reply\" ne anlama geliyordu?"
+      options: ["cevap vermek, yanıtlamak", "uyumak", "şarkı söylemek", "pasta yapmak"]
+      answer: 0
+    kullan:
+      id: d09-020-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I sent you three messages yesterday. Why didn't you ________?</en>"
+      options: ["reply", "attend", "join", "prefer"]
+      answer: 0
+    sina:
+      id: d09-020-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Ece's problem?</en>"
+      stem: "<en>Ece (10:00): Bora, are you coming?\nEce (11:30): Bora???\nEce (13:00): Hello?! Are you there?</en>"
+      options: ["Bora isn't replying to her messages.", "Bora is replying too fast.", "Bora is sending her too many messages.", "Bora is at her house."]
+      answer: 0
+  - item: U1-016
+    sezdir:
+      id: d09-016-z
+      type: meaning
+      context: s17
+      prompt: "Hikâyede \"miss\" ne anlama geliyordu?"
+      options: ["kaçırmak", "özlemek", "beklemek", "bulmak"]
+      answer: 0
+    kullan:
+      id: d09-016-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Hurry up! It's 8:05. We will ________ the bus!</en>"
+      options: ["miss", "join", "attend", "reply"]
+      answer: 0
+    sina:
+      id: d09-016-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>In which sentence does \"miss\" have a DIFFERENT meaning?</en>"
+      options: ["I miss my grandma. I haven't seen her for months.", "Hurry up, or you'll miss the bus.", "Kaan missed the start of the film.", "Don't miss the science fair on Friday!"]
+      answer: 0
+      explain: "Birinci cümlede miss = özlemek. Diğerlerinde miss = kaçırmak (otobüsü, filmi, fuarı)."
+
+review:
+  - id: d09-r01
+    type: dialogue_complete
+    item: U1-006
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: ________ play tennis with me on Sunday?\nB: Sure! What time?</en>"
+    options: ["Do you want to", "Why did you", "Where did you", "How often do you"]
+    answer: 0
+  - id: d09-r02
+    type: gap_fill
+    item: U1-010
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>I ________ visit London one day. It's my dream!</en>"
+    options: ["would like to", "refuse to", "don't want to", "apologise to"]
+    answer: 0
+  - id: d09-r03
+    type: dialogue_complete
+    item: U1-014
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Tea or orange juice?\nB: ________ I like both.</en>"
+    options: ["It doesn't matter.", "That's not fair.", "Sorry, I'm late.", "I'm not thirsty."]
+    answer: 0
+  - id: d09-r04
+    type: synonym
+    item: U1-018
+    prompt: "<en>\"I prefer cats to dogs.\" Which one is CLOSEST in meaning?</en>"
+    options: ["I like cats more than dogs.", "I like dogs more than cats.", "I don't like cats or dogs.", "I have a cat and a dog."]
+    answer: 0
+  - id: d09-r05
+    type: dialogue_complete
+    item: U1-023
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: I can lend you my bike for the weekend.\nB: Really? ________</en>"
+    options: ["That would be great!", "That's not fair!", "I'm stuffed.", "You're so mean!"]
+    answer: 0
+  - id: d09-r06
+    type: dialogue_complete
+    item: U1-024
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: I don't like pizza.\nB: OK. ________ pasta?</en>"
+    options: ["What about", "Where is", "How old is", "When was"]
+    answer: 0
+  - id: d09-r07
+    type: message_infer
+    item: U1-002
+    lgs_like: true
+    prompt: "<en>What is Kaan doing in this message?</en>"
+    stem: "<en>Kaan: Ece, I'm really sorry. I was late again and I forgot your book at home. I feel bad about it.</en>"
+    options: ["He is apologising.", "He is inviting Ece.", "He is refusing an invitation.", "He is accepting an offer."]
+    answer: 0
+  - id: d09-r08
+    type: dialogue_complete
+    item: U1-021
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Selin: Would you like to come to the science museum with us on Saturday?\nDuru: ________ I have a guitar lesson on Saturday.</en>"
+    options: ["Sorry, I can't.", "I'd love to!", "Sounds great!", "Why not?"]
+    answer: 0
+  - id: d09-r09
+    type: message_infer
+    item: U1-007
+    lgs_like: true
+    prompt: "<en>Bora doesn't have a cat. So what is his message?</en>"
+    stem: "<en>Bora: Sorry, I can't come to the party. My cat is sick.</en>"
+    options: ["an excuse", "an invitation", "a promise", "a present"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U1-016]
+    text: "miss iki anlamlı: \"I missed the bus.\" = otobüsü kaçırdım. \"I miss you.\" = seni özledim. Cümlede otobüs, film, ders, parti gibi bir şey varsa anlam genelde kaçırmak."
+  - type: tuzak
+    refs: [U1-003, U1-015]
+    text: "attend + etkinlik: attend the fair, attend a class. join + grup ya da kişi: join a club, join us. \"Katılmak\" anlamında attend'den sonra to gelmez: \"attend the fair\" ✓, \"attend to the fair\" ✗."
+  - type: mini_dilbilgisi
+    refs: [U1-020]
+    text: "reply'dan sonra kişi ya da mesaj gelirse araya to girer: \"Please reply to my message.\" · \"Why didn't you reply to me?\""
+  - type: lgs_taktigi
+    refs: [U1-004, U1-009]
+    text: "busy ↔ I have nothing to do zıt anlamlı. Davete \"Sorry, I'm busy.\" diyen reddediyor; \"I have nothing to do.\" diyen büyük ihtimalle gelecek."
+
+coach:
+  start: "Bilim fuarı haftası! Bir volkan, bir otobüs ve sessiz bir telefon… 🌋"
+  end_good: "Volkan gibi patladın! 🌋 Bugünkü 6 ifadenin hepsi cebinde."
+  end_mixed: "Güzel çaba! {weak} biraz köpürdü ama yarın tekrar göreceğiz, merak etme."
+
+notifications:
+  morning: "Bilim fuarı haftası! Volkan hazır mı? Bora'nın telefonu neden sessiz? 🌋"
+  evening: "Kaan'ın cuma sabahı büyük bir sorunu var: otobüs! Ders seni bekliyor, 10 dk."
+  review: "Tek soru: \"I missed the bus\" ile \"I miss you\" aynı miss mi? 🚌"
+
+editor:
+  z07: {U1-003: BEKLIYOR, U1-015: BEKLIYOR, U1-009: BEKLIYOR, U1-004: BEKLIYOR, U1-020: BEKLIYOR, U1-016: BEKLIYOR}

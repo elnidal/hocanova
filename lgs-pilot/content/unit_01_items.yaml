@@ -1,0 +1,928 @@
+schema_version: 1
+program: lgs
+unit: 1
+unit_title: Friendship
+source: LGS_Unite1_Friendship_Havuz_v2 (HEDEF_100, onaylı)
+items:
+- id: U1-001
+  unit: 1
+  theme: Davet · kabul · red
+  display: accept
+  kind: word
+  meaning_tr: kabul etmek
+  cluster: K26 davet akışı
+  pilot_day: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - accept
+- id: U1-002
+  unit: 1
+  theme: Davet · kabul · red
+  display: apologise
+  kind: word
+  meaning_tr: özür dilemek
+  cluster: K26 davet akışı
+  pilot_day: 2
+- id: U1-003
+  unit: 1
+  theme: Davet · kabul · red
+  display: attend
+  kind: word
+  meaning_tr: katılmak (etkinliğe)
+  cluster: K11 katılmak
+  pilot_day: 9
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - attend
+- id: U1-004
+  unit: 1
+  theme: Davet · kabul · red
+  display: busy
+  kind: word
+  meaning_tr: meşgul
+  cluster: K03 meşgul
+  pilot_day: 9
+  exam:
+    teog_lgs_total: 3
+    lgs: 1
+    words:
+    - busy
+- id: U1-005
+  unit: 1
+  theme: Davet · kabul · red
+  display: come over
+  kind: phrase
+  meaning_tr: (birinin evine) uğramak
+  cluster: K16 buluşma/ziyaret
+  pilot_day: 13
+- id: U1-006
+  unit: 1
+  theme: Davet · kabul · red
+  display: Do you want to …?
+  kind: pattern
+  meaning_tr: … ister misin? (gündelik davet)
+  function: davet etme
+  pilot_day: 8
+- id: U1-007
+  unit: 1
+  theme: Davet · kabul · red
+  display: excuse
+  kind: trap
+  meaning_tr: bahane, mazeret
+  cluster: K26 davet akışı
+  trap_note: '"bahane, mazeret" ↔ "Excuse me" (affedersiniz).'
+  pilot_day: 2
+- id: U1-008
+  unit: 1
+  theme: Davet · kabul · red
+  display: How about …?
+  kind: pattern
+  meaning_tr: … ne dersin? (+ -ing)
+  function: davet / öneri
+  pilot_day: 1
+- id: U1-009
+  unit: 1
+  theme: Davet · kabul · red
+  display: I have nothing to do.
+  kind: pattern
+  meaning_tr: Yapacak bir şeyim yok.
+  function: mazeret / boş zaman
+  pilot_day: 9
+- id: U1-010
+  unit: 1
+  theme: Davet · kabul · red
+  display: I would like to …
+  kind: pattern
+  meaning_tr: … isterim.
+  function: kabul / istek
+  pilot_day: 8
+- id: U1-011
+  unit: 1
+  theme: Davet · kabul · red
+  display: I'd love to.
+  kind: pattern
+  meaning_tr: Çok isterim.
+  function: kabul
+  pilot_day: 1
+- id: U1-012
+  unit: 1
+  theme: Davet · kabul · red
+  display: invitation
+  kind: word
+  meaning_tr: davet
+  cluster: K26 davet akışı
+  pilot_day: 1
+  exam:
+    teog_lgs_total: 5
+    lgs: 0
+    words:
+    - invitation
+- id: U1-013
+  unit: 1
+  theme: Davet · kabul · red
+  display: invite
+  kind: word
+  meaning_tr: davet etmek
+  cluster: K26 davet akışı
+  pilot_day: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - invite
+- id: U1-014
+  unit: 1
+  theme: Davet · kabul · red
+  display: It doesn't matter.
+  kind: pattern
+  meaning_tr: Fark etmez.
+  function: fikir bildirme
+  pilot_day: 8
+- id: U1-015
+  unit: 1
+  theme: Davet · kabul · red
+  display: join
+  kind: word
+  meaning_tr: katılmak (gruba / birine)
+  cluster: K11 katılmak
+  pilot_day: 9
+  exam:
+    teog_lgs_total: 3
+    lgs: 2
+    words:
+    - join
+    - join
+- id: U1-016
+  unit: 1
+  theme: Davet · kabul · red
+  display: miss
+  kind: trap
+  meaning_tr: kaçırmak (miss the party)
+  trap_note: '"kaçırmak" (miss the bus) ↔ "özlemek" (I miss you).'
+  pilot_day: 9
+- id: U1-017
+  unit: 1
+  theme: Davet · kabul · red
+  display: offer
+  kind: word
+  meaning_tr: teklif etmek, önermek
+  cluster: K26 davet akışı
+  pilot_day: 16
+- id: U1-018
+  unit: 1
+  theme: Davet · kabul · red
+  display: prefer
+  kind: word
+  meaning_tr: tercih etmek
+  pilot_day: 8
+  exam:
+    teog_lgs_total: 7
+    lgs: 0
+    words:
+    - prefer
+- id: U1-019
+  unit: 1
+  theme: Davet · kabul · red
+  display: refuse
+  kind: word
+  meaning_tr: reddetmek
+  cluster: K26 davet akışı
+  pilot_day: 2
+  exam:
+    teog_lgs_total: 6
+    lgs: 0
+    words:
+    - refuse
+- id: U1-020
+  unit: 1
+  theme: Davet · kabul · red
+  display: reply
+  kind: word
+  meaning_tr: cevap vermek, yanıtlamak
+  cluster: K15 cevap
+  pilot_day: 9
+- id: U1-021
+  unit: 1
+  theme: Davet · kabul · red
+  display: Sorry, I can't …
+  kind: pattern
+  meaning_tr: Üzgünüm, …-amam.
+  function: red
+  pilot_day: 2
+- id: U1-022
+  unit: 1
+  theme: Davet · kabul · red
+  display: Sounds + SIFAT!
+  kind: pattern
+  meaning_tr: Kulağa … geliyor! (Sounds great/fun/good/awesome)
+  function: kabul
+  variants:
+  - sounds fun
+  - sounds good/awesome
+  - sounds great
+  pilot_day: 2
+- id: U1-023
+  unit: 1
+  theme: Davet · kabul · red
+  display: That would be great.
+  kind: pattern
+  meaning_tr: Harika olur.
+  function: kabul
+  pilot_day: 8
+- id: U1-024
+  unit: 1
+  theme: Davet · kabul · red
+  display: What about …?
+  kind: pattern
+  meaning_tr: Peki ya …? / … ne dersin?
+  function: davet / öneri
+  pilot_day: 8
+- id: U1-025
+  unit: 1
+  theme: Davet · kabul · red
+  display: Why not?
+  kind: pattern
+  meaning_tr: Neden olmasın?
+  function: kabul
+  pilot_day: 2
+- id: U1-026
+  unit: 1
+  theme: Davet · kabul · red
+  display: Would you like to …?
+  kind: pattern
+  meaning_tr: … ister misin? (davet)
+  function: davet etme
+  pilot_day: 1
+- id: U1-027
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: argue
+  kind: word
+  meaning_tr: tartışmak, atışmak
+  pilot_day: 10
+- id: U1-028
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: buddy
+  kind: word
+  meaning_tr: kanka, dost
+  cluster: K02 arkadaş
+  pilot_day: 6
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - buddy
+- id: U1-029
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: chat
+  kind: word
+  meaning_tr: sohbet etmek
+  cluster: K14 sohbet
+  pilot_day: 7
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - chat
+- id: U1-030
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: close friend
+  kind: phrase
+  meaning_tr: yakın arkadaş
+  cluster: K02 arkadaş
+  pilot_day: 6
+- id: U1-031
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: feel alone
+  kind: phrase
+  meaning_tr: yalnız hissetmek
+  cluster: K30 yalnızlık
+  pilot_day: 10
+- id: U1-032
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: feeling
+  kind: word
+  meaning_tr: duygu, his
+  pilot_day: 10
+- id: U1-033
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: friendship
+  kind: word
+  meaning_tr: arkadaşlık
+  cluster: K23 bağ/ilişki
+  pilot_day: 6
+- id: U1-034
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: get on well (with)
+  kind: phrase
+  meaning_tr: (biriyle) iyi anlaşmak
+  cluster: K17 benzerlik/uyum
+  pilot_day: 7
+  exam:
+    teog_lgs_total: 5
+    lgs: 1
+    words:
+    - get on well
+- id: U1-035
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: give advice
+  kind: phrase
+  meaning_tr: tavsiye vermek
+  cluster: K29 fikir
+  variants:
+  - advice
+  - give advice
+  pilot_day: 12
+- id: U1-036
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: have a lot in common
+  kind: phrase
+  meaning_tr: birçok ortak noktası olmak
+  cluster: K17 benzerlik/uyum
+  pilot_day: 7
+- id: U1-037
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: He/She is always there for me.
+  kind: pattern
+  meaning_tr: Her zaman yanımda.
+  function: arkadaşı tanımlama
+  pilot_day: 12
+- id: U1-038
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: interested in
+  kind: phrase
+  meaning_tr: … ile ilgilenmek
+  pilot_day: 7
+- id: U1-039
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: introduce
+  kind: word
+  meaning_tr: tanıştırmak, tanıtmak
+  pilot_day: 7
+- id: U1-040
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: mate
+  kind: word
+  meaning_tr: arkadaş, ahbap
+  cluster: K02 arkadaş
+  pilot_day: 6
+- id: U1-041
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: relationship
+  kind: word
+  meaning_tr: ilişki
+  cluster: K23 bağ/ilişki
+  pilot_day: 10
+- id: U1-042
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: same opinion
+  kind: phrase
+  meaning_tr: aynı fikir
+  cluster: K17 benzerlik/uyum
+  pilot_day: 7
+- id: U1-043
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: share
+  kind: word
+  meaning_tr: paylaşmak
+  pilot_day: 12
+  exam:
+    teog_lgs_total: 7
+    lgs: 3
+    words:
+    - share
+    - share
+    - share
+- id: U1-044
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: spend time
+  kind: phrase
+  meaning_tr: zaman geçirmek
+  cluster: K16 buluşma/ziyaret
+  variants:
+  - spend time
+  - spend time together
+  pilot_day: 12
+- id: U1-045
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: strong bond
+  kind: phrase
+  meaning_tr: güçlü bağ
+  cluster: K23 bağ/ilişki
+  pilot_day: 10
+- id: U1-046
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: text
+  kind: trap
+  meaning_tr: mesaj atmak (fiil)
+  trap_note: '"mesaj yazmak" (fiil: Text me!) ↔ "metin" (isim).'
+  pilot_day: 10
+  variants:
+  - text a message
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - text a message
+- id: U1-047
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: true friend
+  kind: phrase
+  meaning_tr: gerçek arkadaş
+  cluster: K02 arkadaş
+  pilot_day: 6
+- id: U1-048
+  unit: 1
+  theme: Arkadaşlık ve ilişki
+  display: You're fun to be with.
+  kind: pattern
+  meaning_tr: Seninle vakit geçirmek çok eğlenceli.
+  function: arkadaşı tanımlama
+  pilot_day: 6
+- id: U1-049
+  unit: 1
+  theme: Güven · söz · sır
+  display: back up
+  kind: trap
+  meaning_tr: destek olmak, arka çıkmak
+  cluster: K04 destek
+  trap_note: '"destek olmak" (fiil) ↔ "backup" (yedek, isim). Bir kaynağın örnek cümlesi "back up plan" ile ikinci anlamı kullanıyor.'
+  pilot_day: 4
+  exam:
+    teog_lgs_total: 3
+    lgs: 1
+    words:
+    - back up
+- id: U1-050
+  unit: 1
+  theme: Güven · söz · sır
+  display: break promise
+  kind: phrase
+  meaning_tr: sözünü tutmamak
+  cluster: K09 söz
+  pilot_day: 4
+- id: U1-051
+  unit: 1
+  theme: Güven · söz · sır
+  display: count on
+  kind: phrase
+  meaning_tr: güvenmek, -e bel bağlamak
+  cluster: K01 güvenmek
+  pilot_day: 3
+  exam:
+    teog_lgs_total: 3
+    lgs: 1
+    words:
+    - count on
+- id: U1-052
+  unit: 1
+  theme: Güven · söz · sır
+  display: depend on
+  kind: phrase
+  meaning_tr: güvenmek, -e bağlı olmak
+  cluster: K01 güvenmek
+  pilot_day: 13
+- id: U1-053
+  unit: 1
+  theme: Güven · söz · sır
+  display: dishonesty
+  kind: word
+  meaning_tr: sahtekârlık, dürüst olmama
+  cluster: K05 dürüstlük
+  pilot_day: 11
+- id: U1-054
+  unit: 1
+  theme: Güven · söz · sır
+  display: keep promise
+  kind: phrase
+  meaning_tr: sözünü tutmak
+  cluster: K09 söz
+  pilot_day: 4
+- id: U1-055
+  unit: 1
+  theme: Güven · söz · sır
+  display: keep secret
+  kind: phrase
+  meaning_tr: sır saklamak
+  cluster: K10 sır
+  pilot_day: 4
+- id: U1-056
+  unit: 1
+  theme: Güven · söz · sır
+  display: lie
+  kind: trap
+  meaning_tr: yalan (isim/fiil)
+  cluster: K08 yalan
+  trap_note: '"yalan / yalan söylemek" ↔ "uzanmak" (lie down). Ünitede yalnız ilki.'
+  pilot_day: 11
+  exam:
+    teog_lgs_total: 4
+    lgs: 0
+    words:
+    - lie
+- id: U1-057
+  unit: 1
+  theme: Güven · söz · sır
+  display: mutual respect
+  kind: phrase
+  meaning_tr: karşılıklı saygı
+  cluster: K22 saygı
+  pilot_day: 13
+- id: U1-058
+  unit: 1
+  theme: Güven · söz · sır
+  display: promise
+  kind: word
+  meaning_tr: söz vermek; söz
+  cluster: K09 söz
+  pilot_day: 11
+- id: U1-059
+  unit: 1
+  theme: Güven · söz · sır
+  display: reliable
+  kind: word
+  meaning_tr: güvenilir
+  cluster: K19 güvenilir
+  pilot_day: 3
+- id: U1-060
+  unit: 1
+  theme: Güven · söz · sır
+  display: rely on
+  kind: phrase
+  meaning_tr: güvenmek, -e dayanmak
+  cluster: K01 güvenmek
+  pilot_day: 3
+- id: U1-061
+  unit: 1
+  theme: Güven · söz · sır
+  display: respect
+  kind: word
+  meaning_tr: saygı (duymak)
+  cluster: K22 saygı
+  pilot_day: 13
+- id: U1-062
+  unit: 1
+  theme: Güven · söz · sır
+  display: secret
+  kind: word
+  meaning_tr: sır
+  cluster: K10 sır
+  pilot_day: 11
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - secret
+- id: U1-063
+  unit: 1
+  theme: Güven · söz · sır
+  display: support
+  kind: word
+  meaning_tr: desteklemek
+  cluster: K04 destek
+  pilot_day: 12
+- id: U1-064
+  unit: 1
+  theme: Güven · söz · sır
+  display: support each other
+  kind: phrase
+  meaning_tr: birbirini desteklemek
+  cluster: K04 destek
+  pilot_day: 12
+- id: U1-065
+  unit: 1
+  theme: Güven · söz · sır
+  display: tell lie
+  kind: phrase
+  meaning_tr: yalan söylemek
+  cluster: K08 yalan
+  pilot_day: 11
+- id: U1-066
+  unit: 1
+  theme: Güven · söz · sır
+  display: tell secret to others
+  kind: phrase
+  meaning_tr: sırrı başkalarına söylemek
+  cluster: K10 sır
+  pilot_day: 11
+- id: U1-067
+  unit: 1
+  theme: Güven · söz · sır
+  display: trust
+  kind: word
+  meaning_tr: güvenmek
+  cluster: K01 güvenmek
+  pilot_day: 3
+- id: U1-068
+  unit: 1
+  theme: Güven · söz · sır
+  display: unreliable
+  kind: word
+  meaning_tr: güvenilmez
+  cluster: K19 güvenilir
+  pilot_day: 13
+- id: U1-069
+  unit: 1
+  theme: Kişilik
+  display: calm
+  kind: word
+  meaning_tr: sakin
+  cluster: K06 rahat/sakin
+  pilot_day: 14
+- id: U1-070
+  unit: 1
+  theme: Kişilik
+  display: caring
+  kind: word
+  meaning_tr: şefkatli, ilgili
+  cluster: K04 destek
+  pilot_day: 4
+- id: U1-071
+  unit: 1
+  theme: Kişilik
+  display: fair
+  kind: trap
+  meaning_tr: adil
+  cluster: K05 dürüstlük
+  trap_note: '"adil" (kişilik) ↔ "fuar" (book fair, science fair aynı listede!). Bazı listeler "dürüst" yazmış: yanlış.'
+  pilot_day: 5
+- id: U1-072
+  unit: 1
+  theme: Kişilik
+  display: fashionable
+  kind: word
+  meaning_tr: modaya uygun, şık
+  cluster: K25 olumlu kişilik
+  pilot_day: 16
+- id: U1-073
+  unit: 1
+  theme: Kişilik
+  display: funny
+  kind: trap
+  meaning_tr: komik
+  cluster: K13 eğlenceli/heyecanlı ↔ sıkıcı
+  trap_note: '"komik" — fun (eğlenceli) ile karışır. Bir kaynak "eğlenceli" yazmış: yanlış.'
+  pilot_day: 16
+- id: U1-074
+  unit: 1
+  theme: Kişilik
+  display: generous
+  kind: word
+  meaning_tr: cömert
+  cluster: K25 olumlu kişilik
+  pilot_day: 15
+  exam:
+    teog_lgs_total: 4
+    lgs: 0
+    words:
+    - generous
+- id: U1-075
+  unit: 1
+  theme: Kişilik
+  display: He/She is always in a hurry.
+  kind: pattern
+  meaning_tr: Hep acelesi var.
+  function: kişiyi tanımlama
+  pilot_day: 16
+- id: U1-076
+  unit: 1
+  theme: Kişilik
+  display: helpful
+  kind: word
+  meaning_tr: yardımsever
+  cluster: K04 destek
+  pilot_day: 15
+- id: U1-077
+  unit: 1
+  theme: Kişilik
+  display: honest
+  kind: word
+  meaning_tr: dürüst
+  cluster: K05 dürüstlük
+  pilot_day: 3
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - honest
+- id: U1-078
+  unit: 1
+  theme: Kişilik
+  display: jealous
+  kind: word
+  meaning_tr: kıskanç
+  cluster: K24 olumsuz kişilik
+  pilot_day: 15
+- id: U1-079
+  unit: 1
+  theme: Kişilik
+  display: laid-back
+  kind: word
+  meaning_tr: rahat, kafası rahat
+  cluster: K06 rahat/sakin
+  pilot_day: 5
+- id: U1-080
+  unit: 1
+  theme: Kişilik
+  display: like
+  kind: trap
+  meaning_tr: gibi (What is he like?)
+  trap_note: '"gibi" (ünite hedefi: What is he like? / like a brother) ↔ "sevmek" (biliniyor).'
+  pilot_day: 14
+- id: U1-081
+  unit: 1
+  theme: Kişilik
+  display: loyal
+  kind: word
+  meaning_tr: sadık
+  cluster: K20 sadakat
+  pilot_day: 3
+- id: U1-082
+  unit: 1
+  theme: Kişilik
+  display: loyalty
+  kind: word
+  meaning_tr: sadakat
+  cluster: K20 sadakat
+  pilot_day: 15
+- id: U1-083
+  unit: 1
+  theme: Kişilik
+  display: mean
+  kind: trap
+  meaning_tr: cimri; kaba (kişilik)
+  cluster: K24 olumsuz kişilik
+  trap_note: 'Kaynaklar çelişiyor: "cimri / kaba" (kişilik — ünite hedefi) ↔ "anlamına gelmek" (fiil, zaten bilinen). İkisi ayrı birim.'
+  pilot_day: 5
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - mean
+- id: U1-084
+  unit: 1
+  theme: Kişilik
+  display: outgoing
+  kind: word
+  meaning_tr: dışa dönük, sosyal
+  cluster: K25 olumlu kişilik
+  pilot_day: 5
+- id: U1-085
+  unit: 1
+  theme: Kişilik
+  display: patient
+  kind: word
+  meaning_tr: sabırlı
+  cluster: K21 sabır
+  pilot_day: 14
+- id: U1-086
+  unit: 1
+  theme: Kişilik
+  display: personal trait
+  kind: phrase
+  meaning_tr: kişilik özelliği
+  cluster: K18 kişilik
+  pilot_day: 14
+- id: U1-087
+  unit: 1
+  theme: Kişilik
+  display: personality
+  kind: word
+  meaning_tr: kişilik
+  cluster: K18 kişilik
+  pilot_day: 14
+- id: U1-088
+  unit: 1
+  theme: Kişilik
+  display: respectful
+  kind: word
+  meaning_tr: saygılı
+  cluster: K22 saygı
+  pilot_day: 13
+- id: U1-089
+  unit: 1
+  theme: Kişilik
+  display: self-centered
+  kind: word
+  meaning_tr: bencil
+  cluster: K24 olumsuz kişilik
+  pilot_day: 15
+- id: U1-090
+  unit: 1
+  theme: Kişilik
+  display: self-disciplined
+  kind: word
+  meaning_tr: öz disiplinli
+  cluster: K25 olumlu kişilik
+  pilot_day: 16
+- id: U1-091
+  unit: 1
+  theme: Kişilik
+  display: stubborn
+  kind: word
+  meaning_tr: inatçı
+  cluster: K24 olumsuz kişilik
+  pilot_day: 15
+- id: U1-092
+  unit: 1
+  theme: Kişilik
+  display: supportive
+  kind: word
+  meaning_tr: destekleyici
+  cluster: K04 destek
+  pilot_day: 4
+- id: U1-093
+  unit: 1
+  theme: Kişilik
+  display: understanding
+  kind: word
+  meaning_tr: anlayışlı
+  cluster: K25 olumlu kişilik
+  pilot_day: 14
+- id: U1-094
+  unit: 1
+  theme: Değerlendirme ve durum
+  display: as soon as possible
+  kind: pattern
+  meaning_tr: bir an önce
+  function: zaman
+  pilot_day: 16
+- id: U1-095
+  unit: 1
+  theme: Değerlendirme ve durum
+  display: boring
+  kind: word
+  meaning_tr: sıkıcı
+  cluster: K13 eğlenceli/heyecanlı ↔ sıkıcı
+  pilot_day: 17
+  exam:
+    teog_lgs_total: 4
+    lgs: 0
+    words:
+    - boring
+- id: U1-096
+  unit: 1
+  theme: Değerlendirme ve durum
+  display: exciting
+  kind: word
+  meaning_tr: heyecan verici
+  cluster: K13 eğlenceli/heyecanlı ↔ sıkıcı
+  pilot_day: 17
+- id: U1-097
+  unit: 1
+  theme: Değerlendirme ve durum
+  display: full
+  kind: trap
+  meaning_tr: tok (I'm full.)
+  cluster: K07 tok
+  trap_note: '"tok" (I''m full) ↔ "dolu". Ünitede hedef "tok"; stuffed ile küme.'
+  pilot_day: 5
+- id: U1-098
+  unit: 1
+  theme: Değerlendirme ve durum
+  display: fun
+  kind: word
+  meaning_tr: eğlence; eğlenceli
+  cluster: K13 eğlenceli/heyecanlı ↔ sıkıcı
+  pilot_day: 17
+- id: U1-099
+  unit: 1
+  theme: Değerlendirme ve durum
+  display: stuffed
+  kind: word
+  meaning_tr: tıka basa tok
+  cluster: K07 tok
+  pilot_day: 5
+- id: U1-100
+  unit: 1
+  theme: Değerlendirme ve durum
+  display: thrilling
+  kind: word
+  meaning_tr: çok heyecan verici, nefes kesen
+  cluster: K13 eğlenceli/heyecanlı ↔ sıkıcı
+  pilot_day: 17
+exam_note: 'exam: kullanıcının paylaştığı ders kitabı listelerindeki "sınavlarda çıkmış kelimeler" tablosu (2013–2020 TEOG + 2018–2020 LGS). 2021 sonrası doğrulanmadı.'

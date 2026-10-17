@@ -1,0 +1,326 @@
+# Hikayenglish LGS — Hikâye Motoru · KURALLAR (makine-okur)
+# Kaynaklar: Hikayenglish_Calisma_Yontemi.md §8–12, LGS_Kelime_Kocu_Plan.md §5–7, lgs-pilot/schema/lgs_day.schema.yaml,
+#            lgs-pilot/tools/lgs_validate.py, Ünite 2 yazar istemi.
+# check alanı:
+#   evet  = lgs_validate.py denetliyor (code = validator'ın kural etiketi; level = ENGEL/UYARI)
+#   kismen = validator bir kısmını denetliyor; kalanı elle
+#   hayir = validator denetlemiyor; yazar + bağımsız okuma (elle)
+#   elle  = doğası gereği insan/editör yargısı
+# Yazar teslim ölçütü: kendi günleri için 0 ENGEL, 0 UYARI + aşağıdaki elle kuralların öz kontrolü.
+
+schema_version: 1
+updated: 2026-10-15
+validator: lgs-pilot/tools/lgs_validate.py
+schema: lgs-pilot/schema/lgs_day.schema.yaml
+
+rules:
+  # ---------------------------------------------------------------- DOSYA
+  - id: R01
+    group: dosya
+    rule: "Günlük ders dosyası şemaya uyar (schema_version 1, program lgs, zorunlu alanlar, additionalProperties yok)."
+    check: evet
+    code: ŞEMA
+    level: ENGEL
+  - id: R02
+    group: dosya
+    rule: "Dosya adı content/days/u{UU}_day_{DD}.yaml (iki hane); içinde unit: U, day: D; status: draft ile başlar."
+    check: kismen
+    note: "Validator u*_day_*.yaml dosyalarını tarar, unit/day'i içerikten okur; ad–içerik uyumunu ve status'ü denetlemez."
+  - id: R03
+    group: dosya
+    rule: "new_items = o ünitenin pilot_day değeri bu güne eşit olan birimlerin tamamı (fazlası/eksiği yok)."
+    check: evet
+    code: BİRİM
+    level: ENGEL
+  - id: R04
+    group: dosya
+    rule: "Her yeni birim için tam bir steps kaydı (sezdir + kullan + sina)."
+    check: evet
+    code: ADIM
+    level: ENGEL
+  - id: R05
+    group: dosya
+    rule: "editor.z07: her yeni birim için BEKLIYOR. characters: o gün sahnede olanlar."
+    check: hayir
+
+  # ---------------------------------------------------------------- BELİRTEÇ
+  - id: R06
+    group: belirtec
+    rule: "Hedef birim hikâyede yalnız belirteçle geçer: {U3-012} ya da biçimli {U3-012|covered}. Biçim kısmı çekim, büyük harf (INVITATION) ve Türkçe ek öncesi kullanım için."
+    check: kismen
+    code: BELİRTEÇ
+    note: "Regex \\{(U\\d{1,2}-\\d{3})(?:\\|([^}]+))?\\}. Türkçe ek belirtecin dışına kesme işaretiyle yazılır: {U1-012|INVITATION}'ı."
+  - id: R07
+    group: belirtec
+    rule: "İngilizce konuşma/mesaj <en>…</en> içinde. Belirteç İngilizce cümle içindeyse <en> içinde kalır."
+    check: kismen
+    note: "Validator <en> aralığını çeviri taramasından çıkarır; eksik <en>'i yakalamaz."
+  - id: R08
+    group: belirtec
+    rule: "Belirteçteki birim var olmalı, öğretim planında (pilot_day) olmalı ve bugüne kadar öğretilmiş olmalı (genel sıra: ünite*1000 + gün)."
+    check: evet
+    code: BELİRTEÇ
+    level: ENGEL
+  - id: R09
+    group: belirtec
+    rule: "Belirteç dışında BÜYÜK HARFLİ İngilizce kelime yok (anlatıda vurgu için büyük harf yalnız belirteç biçiminde)."
+    check: evet
+    code: BELİRTEÇSİZ
+    level: UYARI
+  - id: R10
+    group: belirtec
+    rule: "Her yeni birim hikâyenin en az 3 AYRI satırında belirteç olarak geçer."
+    check: evet
+    code: TEKRAR
+    level: ENGEL
+  - id: R11
+    group: belirtec
+    rule: "Öğretilmemiş İngilizce kelime yalnız BİLİNEN/A2 düzeyindeyse kullanılır; öğretim planındaki ama henüz gelmemiş birim düz metinle de yazılmaz (sezdirmeyi bozar)."
+    check: elle
+
+  # ---------------------------------------------------------------- ÇEVİRİ YASAĞI
+  - id: R12
+    group: ceviri_yasagi
+    rule: "Yeni birimlerin VE hikâyede belirteçle geçen tüm eski birimlerin meaning_tr karşılığı Türkçe metinde geçmez."
+    scope_covered: [story (Türkçe anlatı; <en> ve belirteçler hariç), title, coach.start, notifications.morning, notifications.evening]
+    scope_not_covered: [scene (zaten tamamen İngilizce), steps (sezdir şıkları Türkçe anlamı içerir — bilerek), review, tips, coach.end_good, coach.end_mixed, notifications.review, explain]
+    check: kismen
+    code: ÇEVİRİ
+    level: UYARI
+    validator_logic: >-
+      meaning_tr parantezler silinip , / ; ile bölünür; ≥3 harfli her parça, solunda Türkçe harf olmadan geçerse uyarı.
+      Sağ sınır yok: "tat" parçası "tatlı", "tatil" kelimelerini de yakalar.
+    manual: "Eş anlamlı ve cevabı ele veren açıklamalar elle aranır (ör. 'davet etmek' yazmasan da 'çağırdı' cevabı verir)."
+    unit3_risk:
+      note: "Ü3 karşılıkları çok yaygın Türkçe kelimeler içeriyor; bu birimler belirteçle geçtiği her hikâyede (d-3 dönüşü ve sonraki ünitelerdeki tekrarlar dahil) şu kelimeler anlatıda yasak:"
+      words: ["yemek (U3-056 dish; 'yemek tarifi' U3-050)", "önce / sonra / ardından / en sonunda (U3-045)", "ne kadar / kaç tane (U3-047)", "tat → tatlı, tatil (U3-036)", "tatlı (U3-035, U3-055)", "mutfak (U3-054)", "mevsim (U3-021)", "bir sürü / bir demet (U3-037)", "acı → acıkmak (U3-027)", "lezzet → lezzetli (U3-036, U3-028)", "tabak (U3-056)", "fırın (U3-040)", "adım (U3-052)", "kapatmak (U3-012)"]
+      advice: "Çerçeve adını bu kelimeler olmadan seç ('Küçük Şefler Yarışması'); zaman bağlacı için 'derken, az sonra, o arada, ilk iş' kullan; gerekirse items dosyasında meaning_tr'yi daralt (MOTOR.md açık notlar)."
+  - id: R13
+    group: ceviri_yasagi
+    rule: "Türkçede 'İngilizce kelime + etmek/yapmak/olmak' yok (❌ INVITE etti, ❌ WORK OUT yaptı). Fiiller İngilizce konuşmanın içine konur."
+    check: hayir
+    regex_suggestion: "\\}(\\s|')?(etti|ediyor|edecek|etmek|yaptı|yapıyor|yapmak|oldu)\\b"
+
+  # ---------------------------------------------------------------- DİL
+  - id: R14
+    group: dil
+    rule: "İngilizce doğal, A2 düzeyi, dilbilgisi doğru; İngiliz yazımı tercih (favourite, colour, practise fiil)."
+    check: elle
+  - id: R15
+    group: dil
+    rule: "Kalıplar doğru yapıyla: like/enjoy/don't mind/can't stand + V-ing; Would you like to + V1; How about + V-ing; sıklık zarfları fiilden önce, be'den sonra; sıralama bağlaçları virgülle (First, … Then, …)."
+    check: elle
+  - id: R16
+    group: dil
+    rule: "Türkçe anlatı doğal, 13–14 yaşın konuşma diline yakın; çeviri kokan cümle yok."
+    check: elle
+
+  # ---------------------------------------------------------------- UZUNLUK
+  - id: R17
+    group: uzunluk
+    rule: "Hikâye 18–28 satır (story)."
+    check: hayir
+    note: "Ü1 G4 29 satır — tek istisna."
+  - id: R18
+    group: uzunluk
+    rule: "Sahne (scene) 3–5 satır, tamamen İngilizce, konuşmacılı; hikâyenin kısa özeti/yankısı."
+    check: hayir
+  - id: R19
+    group: uzunluk
+    rule: "est_minutes ≤ 10."
+    check: evet
+    code: ŞEMA
+    level: ENGEL
+  - id: R20
+    group: uzunluk
+    rule: "Bildirimler (morning, evening, review) ≤ 90 karakter."
+    check: evet
+    code: ŞEMA
+    level: ENGEL
+  - id: R21
+    group: uzunluk
+    rule: "Koç mesajları ≤ 140 karakter (coach.yaml kuralı)."
+    check: hayir
+  - id: R22
+    group: uzunluk
+    rule: "Günde 4–6 yeni birim (ünite son günü 4 olabilir); hap bilgi 2–4."
+    check: kismen
+    note: "Birim sayısı pilot_day'den gelir; validator hap bilgi yoksa UYARI verir (≥1), üst sınırı denetlemez."
+
+  # ---------------------------------------------------------------- TEKRAR TAKVİMİ
+  - id: R23
+    group: takvim
+    rule: "d−1: dünün HER birimi için review'da bir hatırlama sorusu; yalnız İngilizce (gap_fill / situation / dialogue_complete / synonym / trait_match)."
+    check: kismen
+    code: TAKVİM
+    level: UYARI
+    note: "Varlık denetlenir; soru türü ve dil elle."
+  - id: R24
+    group: takvim
+    rule: "d−3: üç gün önceki birimler bugünün hikâyesinde belirteçle, YENİ bir bağlamda geçer."
+    check: evet
+    code: TAKVİM
+    level: UYARI
+  - id: R25
+    group: takvim
+    rule: "d−7: o günün birimlerinden ≥3 review sorusu, lgs_like: true."
+    check: evet
+    code: TAKVİM
+    level: UYARI
+  - id: R26
+    group: takvim
+    rule: "d−14: o günün birimlerinden ≥2 review sorusu, lgs_like: true."
+    check: evet
+    code: TAKVİM
+    level: UYARI
+  - id: R27
+    group: takvim
+    rule: "Takvim ünite içinde işler. Ünitenin 1. günü (d−1 yok): önceki ünitenin birimlerinden 5 LGS tarzı review sorusu (lgs_like: true)."
+    check: hayir
+    note: "Validator pilot_day'i aynı ünite içinde arar; ünite geçişini denetlemez."
+  - id: R28
+    group: takvim
+    rule: "Her review sorusunda item: zorunlu ve bu birim bugünden ÖNCE öğretilmiş olmalı."
+    check: evet
+    code: TEKRAR
+    level: ENGEL
+  - id: R29
+    group: takvim
+    rule: "Üniteler arası tekrar: her hikâyede önceki ünite(ler)den 2–4 birim belirteçle, doğal biçimde (zorlama yok)."
+    check: hayir
+    note: "Ü2'de 2–4 aralığı tutturuldu (yalnız G15: 2). Ü3'ten itibaren hem Ü1 hem Ü2 havuzu kullanılır; aynı eski birim art arda günlerde tekrarlanmaz."
+
+  # ---------------------------------------------------------------- SORULAR
+  - id: R30
+    group: soru
+    rule: "Doğru cevap HER ZAMAN options[0] (answer: 0); şıkları uygulama karıştırır, yanlış seçilen şıkkı kaydeder."
+    check: hayir
+    note: "Validator yalnız cevap indeksinin şık sayısı içinde olduğunu denetler. Öneri: answer != 0 → ENGEL eklenmeli."
+  - id: R31
+    group: soru
+    rule: "3–4 şık, hepsi farklı."
+    check: evet
+    code: "ŞEMA + SORU"
+    level: ENGEL
+  - id: R32
+    group: soru
+    rule: "Tek savunulabilir cevap: her çeldirici tek tek denenir; eş anlamlı çakışmaları (like/enjoy/love; awesome/terrific/impressive; delicious/tasty) kök cümleyle kesinleştirilir."
+    check: elle
+  - id: R33
+    group: soru
+    rule: "Soru id biçimi u{U}d{DD}-{nnn}-{z|k|s} (nnn = birim numarası; z sezdir, k kullan, s sına); review: u{U}d{DD}-r{NN}. Tüm içerikte benzersiz."
+    check: kismen
+    code: SORU
+    level: ENGEL
+    note: "Benzersizlik denetlenir, biçim denetlenmez. Ü1 dosyaları eski biçimde (d01-026-z); benzersiz oldukları için çakışma yok, Ü1'e dokunulmaz."
+  - id: R34
+    group: soru
+    rule: "sezdir: type meaning, context = o birimin belirtecini içeren hikâye satırının id'si, Türkçe şıklar."
+    check: kismen
+    code: SEZDİR
+    level: ENGEL
+    note: "Validator type meaning, context varlığı ve bağlam satırında belirteci denetler; şıkların Türkçe olduğunu denetlemez (elle)."
+  - id: R35
+    group: soru
+    rule: "kullan: İngilizce gap_fill. sina: LGS tarzı (dialogue_complete, message_infer, synonym, trait_match, odd_one_out, situation), kök/istem İngilizce, lgs_like: true."
+    check: kismen
+    code: DİL
+    level: UYARI
+    note: "Yalnız stem/prompt'ta <en> varlığı denetlenir."
+  - id: R36
+    group: soru
+    rule: "explain: Türkçe, tek cümle, kuralı söyler (cevabı tekrar etmez)."
+    check: elle
+  - id: R37
+    group: soru
+    rule: "Tablo/grafik/sıralama birimleri (anket sonuçları, tarif adımları, menüler): kökte küçük metin tablosu ya da liste — LGS'nin sevdiği biçim."
+    check: elle
+  - id: R38
+    group: soru
+    rule: "Soru kökleri LGS kök dilini kullanır: Which one completes the dialogue? · Which of the following is TRUE/NOT…? · According to the text… · What is X doing in the message?"
+    check: elle
+
+  # ---------------------------------------------------------------- HAP BİLGİ
+  - id: R39
+    group: hap
+    rule: "tips türleri: hafiza_kancasi, tuzak, lgs_taktigi, kelime_ailesi, ilginc_bilgi, mini_dilbilgisi; refs yalnız öğretilmiş birimler; bilgi doğruluğu kontrol edilmiş."
+    check: kismen
+    code: HAP
+    level: "ENGEL (bilinmeyen ref) / UYARI (öğretilmemiş ref, hap yok)"
+    note: "Doğruluk elle. items dosyasındaki trap_note'lar tuzak hapına dönüştürülür."
+
+  # ---------------------------------------------------------------- KOÇ
+  - id: R40
+    group: koc
+    rule: "coach.start (hedef + merak kancası), end_good, end_mixed ({weak} değişkeni zorunlu); Hoca Nova sesi (world.yaml coach)."
+    check: kismen
+    note: "Alanların varlığı şemada; {weak} ve ton elle."
+  - id: R41
+    group: koc
+    rule: "Koç ve bildirim dili: utandırmaz, korkutmaz, seriyi baskı aracı yapmaz, hedef birimin anlamını söylemez; emoji 0–2."
+    check: elle
+
+  # ---------------------------------------------------------------- TON VE GÜVENLİK
+  - id: R42
+    group: ton_guvenlik
+    rule: "Zorbalık yok: kimse sistematik olarak hedef alınmaz, dışlanmaz. Şakalar karşılıklı ve sevgi dolu; alay edilen kişi de güler."
+    check: elle
+  - id: R43
+    group: ton_guvenlik
+    rule: "Hassas konular şaka malzemesi değil: sağlık/hastalık, aile sorunları, beden/görünüş, para/yoksulluk, din, siyaset, engellilik, afetler (deprem, yangın, sel)."
+    check: elle
+    note: "Ü10 (Natural Forces) için özel: afetin kendisi asla komik değil; mizah yalnız hazırlıktaki karakter davranışından çıkar (ör. acil durum çantasına cips doldurmak)."
+  - id: R44
+    group: ton_guvenlik
+    rule: "Aşağılama yok: kişilik kusurları (geç kalma, bahane, tembellik) komedi kaynağıdır ama aşağılama dili ('aptal', 'salak' vb.) kullanılmaz; çatışmalar gerçekçi ama kırıcı değil ve ünite içinde çözülür."
+    check: elle
+  - id: R45
+    group: ton_guvenlik
+    rule: "Taklit edilebilir tehlikeli davranış yok: macera/spor sahnelerinde güvenlik ekipmanı ve yetişkin gözetimi; mutfakta bıçak/ocak/fırın yetişkin eşliğinde."
+    check: elle
+  - id: R46
+    group: ton_guvenlik
+    rule: "Karakterler arası romantik ilişki yazılmaz (hedef kitle 13–14; durum komedisi arkadaşlık ekseninde kalır)."
+    check: elle
+  - id: R47
+    group: ton_guvenlik
+    rule: "Gerçek marka, ünlü ya da kişi taklit edilmez; şarkıcı/film/uygulama adları kurmaca (Luna Ray, 'Planet Zero'). Gerçek yerler (İzmir, Kordon) kullanılabilir. 'Blue Planet' gibi gerçek eserler yalnız olumlu ve doğru biçimde anılır."
+    check: elle
+  - id: R48
+    group: ton_guvenlik
+    rule: "Mizah hedefi gölgelemez: komik düğüm, yeni birimin geçtiği satırları taşır; birimi taşımayan espri satırı hikâyenin yarısını geçmez."
+    check: elle
+
+  # ---------------------------------------------------------------- SÜREKLİLİK
+  - id: R49
+    group: sureklilik
+    rule: "Her gün world.yaml canon_facts ve ilgili Story Bible ile tutarlı; ünitenin Story Bible gün satırındaki olay ve yeni birimler izlenir."
+    check: elle
+  - id: R50
+    group: sureklilik
+    rule: "Yeni kalıcı gerçek doğuran olay (yeni aile üyesi, evcil hayvan, takım sonucu) yazılırsa ünite sonunda world.yaml'a işlenir."
+    check: elle
+  - id: R51
+    group: sureklilik
+    rule: "Karakter yayları season.yaml'daki ünite satırını izler; bir karakter yayında geri gidebilir (komedi) ama kalıcı olarak geri dönmez."
+    check: elle
+
+  # ---------------------------------------------------------------- SÜREÇ
+  - id: R52
+    group: surec
+    rule: "Yazar yalnız kendi gün dosyalarına dokunur; teslimden önce validator'ı çalıştırır, kendi günleri için 0 ENGEL / 0 UYARI; sonra cevap belirsizliği, yanlış anahtar, doğal olmayan dil ve eş anlamlı sızıntı için bir kez yeniden okur."
+    check: elle
+  - id: R53
+    group: surec
+    rule: "Bağımsız okuma (ikinci göz) ve insan editör Z07 onayı ('anlam bağlamdan çıkarılabiliyor mu?') olmadan status draft'tan ilerlemez."
+    check: elle
+
+validator_gap_suggestions:   # validator'a eklenmesi önerilen denetimler (sıra = fayda)
+  - "R30: answer != 0 → ENGEL"
+  - "R33: soru id biçimi ^u{U}d{DD}-(\\d{3}-[zks]|r\\d{2})$ (Ü1 için eski biçim istisnası)"
+  - "R17/R18: hikâye 18–28, sahne 3–5 satır → UYARI"
+  - "R13: '}+etti/yaptı' regex → UYARI"
+  - "R27: ünite 1. günü önceki ünite birimlerinden ≥5 lgs_like review → UYARI"
+  - "R29: hikâyede önceki ünite belirteci sayısı 2–4 → UYARI"
+  - "R21: coach mesajları ≤ 140 → UYARI; end_mixed içinde {weak} → UYARI"
+  - "R12: ÇEVİRİ için sağ sınır seçeneği ya da items'ta leak_forms alanı (Ü3'teki aşırı yakalamayı azaltmak için)"

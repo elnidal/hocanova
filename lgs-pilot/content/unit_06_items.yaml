@@ -1,0 +1,823 @@
+schema_version: 1
+program: lgs
+unit: 6
+unit_title: Adventures
+source: LGS_Unite6_Adventures_Havuz_v1 (HEDEF)
+note: 'pilot_day = Ünite 6 ders günü (story_bible_u06.md). meaning_ban (düz kök) / ban_tr (regex): çeviri yasağı kökleri.'
+items:
+- id: U6-001
+  unit: 6
+  theme: Macera ve ekstrem sporlar
+  display: adventure (adventurer / adventurous)
+  kind: phrase
+  class: core
+  meaning_tr: macera (maceracı / maceraperest)
+  priority: 1
+  variants:
+  - adventure
+  - adventurer
+  - adventurous
+  meaning_ban:
+  - macera
+  pilot_day: 1
+- id: U6-002
+  unit: 6
+  theme: Macera ve ekstrem sporlar
+  display: extreme sports
+  kind: phrase
+  class: core
+  meaning_tr: ekstrem sporlar, uç sporlar (yüksek risk ve heyecan içeren)
+  priority: 1
+  variants:
+  - extreme
+  meaning_ban:
+  - ekstrem
+  - uç spor
+  pilot_day: 1
+- id: U6-003
+  unit: 6
+  theme: Macera ve ekstrem sporlar
+  display: adrenaline seeker
+  kind: phrase
+  class: core
+  meaning_tr: adrenalin tutkunu, heyecan arayan kişi
+  priority: 1
+  meaning_ban:
+  - adrenalin
+  pilot_day: 1
+- id: U6-004
+  unit: 6
+  theme: Macera ve ekstrem sporlar
+  display: go rafting / go caving / go on a … / join a … (macera etkinlikleri)
+  kind: pattern
+  class: pattern
+  meaning_tr: 'bir macera etkinliği yapmak: go rafting, go caving (mağaraları keşfetmek), go on a jeep safari, join a motorcycle tour, fly in a hot-air balloon'
+  priority: 1
+  variants:
+  - caving
+  - fly in a hot-air balloon
+  - go caving
+  - go on a jeep safari
+  - go rafting
+  - join a motorcycle tour
+  - motor racing
+  trap_note: 'go + V-ing kalıbında "to" yok: ❌ go to rafting → ✓ go rafting; join a tour (katılmak) ↔ attend (Ü1)'
+  meaning_ban:
+  - macera etkinliği
+  pilot_day: 3
+- id: U6-005
+  unit: 6
+  theme: Macera ve ekstrem sporlar
+  display: bungee jumping / base jumping (jump off)
+  kind: phrase
+  class: core
+  meaning_tr: 'bungee: ayağa bağlı esnek iple atlama / base: yüksek bir yapıdan, uçurumdan paraşütle atlama'
+  priority: 1
+  variants:
+  - base jumping
+  - bungee jumping
+  - jump off
+  trap_note: ikisi de "atlama"; bungee = esnek ip, base = paraşüt. Kaynak A base jumping için yalnız "bir yerden atlama" diyor
+  meaning_ban:
+  - ipten atla
+  - iple atla
+  - paraşütle atla
+  pilot_day: 2
+- id: U6-006
+  unit: 6
+  theme: Macera ve ekstrem sporlar
+  display: skydiving / parachuting (free fall)
+  kind: phrase
+  class: core
+  meaning_tr: uçaktan paraşütle atlama (serbest düşüş)
+  priority: 1
+  variants:
+  - freefall
+  - parachuting
+  - parachutist
+  - skydiver
+  - skydiving
+  meaning_ban:
+  - paraşüt
+  - serbest düşüş
+  pilot_day: 2
+- id: U6-007
+  unit: 6
+  theme: Macera ve ekstrem sporlar
+  display: paragliding / hang-gliding
+  kind: phrase
+  class: core
+  meaning_tr: yamaç paraşütü / yelken kanat
+  priority: 1
+  variants:
+  - hang-gliding
+  - paragliding
+  meaning_ban:
+  - yamaç paraşüt
+  - yelken kanat
+  pilot_day: 2
+- id: U6-008
+  unit: 6
+  theme: Macera ve ekstrem sporlar
+  display: scuba diving (dive, wetsuit)
+  kind: phrase
+  class: core
+  meaning_tr: tüplü dalış (dalmak; dalış giysisi)
+  priority: 1
+  variants:
+  - diving club
+  - dry suit
+  - go scuba diving
+  - scuba diving
+  - wetsuit
+  meaning_ban:
+  - tüplü dalış
+  - dalış
+  pilot_day: 7
+- id: U6-009
+  unit: 6
+  theme: Macera ve ekstrem sporlar
+  display: climb (rock / ice climbing)
+  kind: phrase
+  class: core
+  meaning_tr: tırmanmak (kaya / buz tırmanışı)
+  priority: 1
+  variants:
+  - climb a mountain
+  - ice climbing
+  - rock climbing
+  trap_note: 'b sessiz: /klaɪm/'
+  meaning_ban:
+  - tırman
+  pilot_day: 6
+- id: U6-010
+  unit: 6
+  theme: Macera ve ekstrem sporlar
+  display: canoeing / kayaking (paddle)
+  kind: phrase
+  class: core
+  meaning_tr: kano sporu (kürek)
+  priority: 1
+  variants:
+  - canoeing
+  - kayaking
+  - paddle
+  - sea kayaking
+  - spray skirt
+  meaning_ban:
+  - kano
+  - kürek
+  pilot_day: 7
+- id: U6-011
+  unit: 6
+  theme: Tehlike ve risk
+  display: dangerous (danger)
+  kind: word
+  class: core
+  meaning_tr: tehlikeli (tehlike)
+  priority: 1
+  variants:
+  - danger
+  - dangerous
+  meaning_ban:
+  - tehlike
+  pilot_day: 1
+- id: U6-012
+  unit: 6
+  theme: Tehlike ve risk
+  display: take risks (risk)
+  kind: phrase
+  class: core
+  meaning_tr: risk almak (risk)
+  priority: 1
+  variants:
+  - take risks
+  meaning_ban:
+  - risk
+  pilot_day: 2
+- id: U6-013
+  unit: 6
+  theme: Tehlike ve risk
+  display: accident
+  kind: word
+  class: core
+  meaning_tr: kaza
+  priority: 1
+  meaning_ban:
+  - kaza
+  pilot_day: 5
+  ban_tr:
+  - kaza(?!n)
+- id: U6-014
+  unit: 6
+  theme: Tehlike ve risk
+  display: survive
+  kind: word
+  class: core
+  meaning_tr: hayatta kalmak
+  priority: 1
+  meaning_ban:
+  - hayatta kal
+  pilot_day: 5
+- id: U6-015
+  unit: 6
+  theme: Tehlike ve risk
+  display: fall
+  kind: word
+  class: trap
+  meaning_tr: düşmek
+  priority: 1
+  trap_note: fall = düşmek ↔ (AmE) sonbahar; geçmiş zaman fell
+  meaning_ban:
+  - düşmek
+  - düştü
+  - düşer
+  - düşüyor
+  pilot_day: 5
+- id: U6-016
+  unit: 6
+  theme: Tehlike ve risk
+  display: courage / bravery (brave, fearless)
+  kind: phrase
+  class: core
+  meaning_tr: cesaret (cesur, korkusuz)
+  priority: 1
+  variants:
+  - bravery
+  - courage
+  - fearless
+  meaning_ban:
+  - cesaret
+  - cesur
+  - korkusuz
+  pilot_day: 6
+- id: U6-017
+  unit: 6
+  theme: Tehlike ve risk
+  display: drown
+  kind: word
+  class: core
+  meaning_tr: (suda) boğulmak
+  priority: 1
+  meaning_ban:
+  - boğul
+  pilot_day: 7
+- id: U6-018
+  unit: 6
+  theme: Tehlike ve risk
+  display: land (safe landing)
+  kind: phrase
+  class: trap
+  meaning_tr: iniş yapmak, yere inmek (güvenli iniş)
+  priority: 1
+  variants:
+  - land
+  - safe landing
+  trap_note: isim olarak "kara, toprak" ↔ fiil olarak "iniş yapmak"; kaynak I yalnız "kara" veriyor
+  meaning_ban:
+  - iniş
+  - yere in
+  pilot_day: 7
+- id: U6-019
+  unit: 6
+  theme: Tehlike ve risk
+  display: attack
+  kind: word
+  class: core
+  meaning_tr: saldırmak; saldırı
+  priority: 1
+  meaning_ban:
+  - saldır
+  pilot_day: 8
+- id: U6-020
+  unit: 6
+  theme: Tehlike ve risk
+  display: get frostbite (frozen)
+  kind: phrase
+  class: core
+  meaning_tr: soğuktan donmak, soğuk ısırması (donmuş)
+  priority: 1
+  variants:
+  - frostbite
+  - frozen
+  meaning_ban:
+  - donmak
+  - dondu
+  - donmuş
+  - soğuk ısır
+  pilot_day: 8
+- id: U6-021
+  unit: 6
+  theme: Tehlike ve risk
+  display: death / rate of death (die)
+  kind: phrase
+  class: core
+  meaning_tr: ölüm / ölüm oranı (ölmek)
+  priority: 1
+  variants:
+  - death
+  - die
+  - rate of death
+  meaning_ban:
+  - ölüm
+  pilot_day: 5
+- id: U6-022
+  unit: 6
+  theme: Ekipman
+  display: equipment (safety equipment)
+  kind: word
+  class: trap
+  meaning_tr: ekipman, donanım (güvenlik donanımı)
+  priority: 1
+  variants:
+  - equipment
+  - safety equipment
+  trap_note: 'sayılamaz: ❌ equipments → ✓ a piece of equipment'
+  pilot_day: 4
+- id: U6-023
+  unit: 6
+  theme: Ekipman
+  display: helmet / knee & elbow pads (protective gear)
+  kind: word
+  class: core
+  meaning_tr: kask / diz ve dirsek koruyucu, bilek koruyucu (koruyucu donanım)
+  priority: 1
+  variants:
+  - elbow pads
+  - helmet
+  - knee pads
+  - wrist guards
+  meaning_ban:
+  - kask
+  - dizlik
+  - dirseklik
+  pilot_day: 4
+- id: U6-024
+  unit: 6
+  theme: Ekipman
+  display: rope
+  kind: word
+  class: core
+  meaning_tr: ip, halat
+  priority: 1
+  variants:
+  - move on the rope
+  meaning_ban:
+  - halat
+  pilot_day: 4
+- id: U6-025
+  unit: 6
+  theme: Ekipman
+  display: flashlight
+  kind: word
+  class: core
+  meaning_tr: el feneri
+  priority: 1
+  trap_note: kaynak C "flaş" da diyor; fotoğraf flaşı = flash
+  meaning_ban:
+  - fener
+  pilot_day: 4
+- id: U6-026
+  unit: 6
+  theme: Ekipman
+  display: life jacket
+  kind: phrase
+  class: core
+  meaning_tr: can yeleği
+  priority: 2
+  trap_note: kaynak I "can simidi" diyor; can simidi = lifebuoy
+  meaning_ban:
+  - can yeleğ
+  pilot_day: 4
+- id: U6-027
+  unit: 6
+  theme: Macera sıfatları ve deneyim
+  display: experience (experienced / inexperienced)
+  kind: phrase
+  class: core
+  meaning_tr: deneyim; deneyimlemek (deneyimli / deneyimsiz)
+  priority: 1
+  variants:
+  - experience
+  - experienced
+  - inexperienced
+  trap_note: experience = deneyim ↔ experiment = deney
+  meaning_ban:
+  - deneyim
+  pilot_day: 1
+- id: U6-028
+  unit: 6
+  theme: Macera sıfatları ve deneyim
+  display: challenging
+  kind: word
+  class: trap
+  meaning_tr: zorlayıcı, zorlu (ama denemeye değer)
+  priority: 1
+  trap_note: kaynak I "iddialı" diyor; challenging = zorlayıcı. challenge = meydan okuma
+  meaning_ban:
+  - zorlayıcı
+  - zorlu
+  pilot_day: 2
+- id: U6-029
+  unit: 6
+  theme: Macera sıfatları ve deneyim
+  display: mysterious
+  kind: word
+  class: core
+  meaning_tr: gizemli
+  priority: 1
+  trap_note: kaynak I "gizli" diyor; gizli = secret
+  meaning_ban:
+  - gizem
+  pilot_day: 8
+- id: U6-030
+  unit: 6
+  theme: Macera sıfatları ve deneyim
+  display: magnificent (amazing)
+  kind: word
+  class: core
+  meaning_tr: muhteşem, görkemli (şaşırtıcı)
+  priority: 1
+  variants:
+  - amazing
+  - magnificent
+  meaning_ban:
+  - muhteşem
+  - görkemli
+  pilot_day: 9
+- id: U6-031
+  unit: 6
+  theme: Macera sıfatları ve deneyim
+  display: amusing
+  kind: word
+  class: core
+  meaning_tr: eğlenceli, güldüren
+  priority: 1
+  pilot_day: 3
+- id: U6-032
+  unit: 6
+  theme: Macera sıfatları ve deneyim
+  display: disappointing
+  kind: word
+  class: core
+  meaning_tr: hayal kırıklığı yaratan
+  priority: 1
+  trap_note: '-ing / -ed: disappointing (şey) ↔ disappointed (kişi)'
+  meaning_ban:
+  - hayal kırıklığ
+  pilot_day: 3
+- id: U6-033
+  unit: 6
+  theme: Karşılaştırma, tercih ve gerekçe
+  display: -er / more … than (less … than)
+  kind: pattern
+  class: pattern
+  meaning_tr: 'daha … (iki şeyi karşılaştırma): safer than, more exciting than, less dangerous than; good → better, bad → worse'
+  priority: 1
+  variants:
+  - better
+  - less
+  - worse
+  trap_note: 'düzensiz: good–better, bad–worse; ❌ more safer; less + sıfat = daha az … (Ü2 U2-090 sayı dili ↔ burada sıfat)'
+  pilot_day: 2
+  meaning_ban:
+  - karşılaştır
+- id: U6-034
+  unit: 6
+  theme: Karşılaştırma, tercih ve gerekçe
+  display: the -est / the most … (superlatives)
+  kind: pattern
+  class: pattern
+  meaning_tr: 'en … (üstünlük): the craziest, the most dangerous, the best time / way'
+  priority: 1
+  variants:
+  - best time
+  - best way
+  - craziest
+  - the most
+  trap_note: 'the unutulmaz; düzensiz: the best, the worst'
+  pilot_day: 10
+- id: U6-035
+  unit: 6
+  theme: Karşılaştırma, tercih ve gerekçe
+  display: prefer … to … / Which one do you prefer?
+  kind: pattern
+  class: pattern
+  meaning_tr: … -i … -e tercih etmek / Hangisini tercih edersin?
+  priority: 1
+  variants:
+  - preference
+  - which one
+  trap_note: prefer A to B ("than" değil); prefer + V-ing / to V
+  pilot_day: 3
+- id: U6-036
+  unit: 6
+  theme: Karşılaştırma, tercih ve gerekçe
+  display: would rather (… than) / Would you rather … or …?
+  kind: pattern
+  class: pattern
+  meaning_tr: … -i yeğlemek, tercih etmek / … mı yoksa … mı yeğlersin?
+  priority: 1
+  variants:
+  - would rather
+  trap_note: 'would rather + yalın fiil: ❌ I''d rather to go / going → ✓ I''d rather go'
+  pilot_day: 3
+  meaning_ban:
+  - yeğle
+  - tercih
+- id: U6-037
+  unit: 6
+  theme: Karşılaştırma, tercih ve gerekçe
+  display: Why …? – Because … (reason)
+  kind: pattern
+  class: pattern
+  meaning_tr: Neden …? – Çünkü … (sebep, gerekçe)
+  priority: 1
+  variants:
+  - because
+  - explanation
+  - reason
+  meaning_ban:
+  - çünkü
+  - gerekçe
+  pilot_day: 3
+- id: U6-038
+  unit: 6
+  theme: Karşılaştırma, tercih ve gerekçe
+  display: What kind of / What type of …?
+  kind: pattern
+  class: pattern
+  meaning_tr: Ne tür …?
+  priority: 1
+  variants:
+  - what kind of
+  - what type of
+  pilot_day: 1
+  meaning_ban:
+  - ne tür
+- id: U6-039
+  unit: 6
+  theme: Doğa ve yerler
+  display: cliff
+  kind: word
+  class: core
+  meaning_tr: uçurum, sarp kayalık
+  priority: 1
+  meaning_ban:
+  - uçurum
+  pilot_day: 8
+- id: U6-040
+  unit: 6
+  theme: Doğa ve yerler
+  display: glacier
+  kind: word
+  class: core
+  meaning_tr: buzul
+  priority: 1
+  trap_note: kaynak C "buz dağı" da diyor; buz dağı = iceberg
+  meaning_ban:
+  - buzul
+  pilot_day: 8
+- id: U6-041
+  unit: 6
+  theme: Doğa ve yerler
+  display: destination
+  kind: word
+  class: core
+  meaning_tr: gidilecek yer, varış noktası
+  priority: 1
+  meaning_ban:
+  - varış nokta
+  - gidilecek yer
+  pilot_day: 9
+- id: U6-042
+  unit: 6
+  theme: Doğa ve yerler
+  display: scenery / view
+  kind: phrase
+  class: core
+  meaning_tr: manzara
+  priority: 1
+  variants:
+  - scenery
+  - view
+  trap_note: view fiil olarak "görmek, izlemek"
+  meaning_ban:
+  - manzara
+  pilot_day: 9
+- id: U6-043
+  unit: 6
+  theme: Doğa ve yerler
+  display: waterfall
+  kind: word
+  class: core
+  meaning_tr: şelale
+  priority: 1
+  meaning_ban:
+  - şelale
+  pilot_day: 9
+- id: U6-044
+  unit: 6
+  theme: Doğa ve yerler
+  display: mountainous road (hill)
+  kind: phrase
+  class: core
+  meaning_tr: dağlık yol (tepe)
+  priority: 1
+  variants:
+  - hill
+  - mountainous road
+  - overland track
+  meaning_ban:
+  - dağlık
+  pilot_day: 9
+- id: U6-045
+  unit: 6
+  theme: Doğa ve yerler
+  display: historic places / structures (temple)
+  kind: phrase
+  class: core
+  meaning_tr: tarihi yerler / yapılar (tapınak)
+  priority: 1
+  variants:
+  - historic
+  - historic places
+  - historic structures
+  - structure
+  - temple
+  meaning_ban:
+  - tarihi
+  - tapınak
+  pilot_day: 10
+- id: U6-046
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: cost (How much does it cost?)
+  kind: pattern
+  class: pattern
+  meaning_tr: (fiyatı) tutmak, … -e mal olmak; Ne kadar tutuyor?
+  priority: 1
+  variants:
+  - cost
+  - how much does it cost
+  trap_note: 'cost düzensiz: cost–cost–cost'
+  pilot_day: 4
+  meaning_ban:
+  - ne kadar tut
+  - mal ol
+- id: U6-047
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: qualifications / skill
+  kind: phrase
+  class: trap
+  meaning_tr: gereken nitelikler, yeterlik / beceri
+  priority: 1
+  variants:
+  - qualification
+  - skill
+  trap_note: kaynak I "özellik" diyor; nitelik, yeterlik doğru. Özellik = feature
+  meaning_ban:
+  - nitelik
+  - yeterlik
+  - beceri
+  pilot_day: 5
+- id: U6-048
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: instructor
+  kind: word
+  class: core
+  meaning_tr: eğitmen
+  priority: 1
+  meaning_ban:
+  - eğitmen
+  pilot_day: 5
+- id: U6-049
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: succeed (successful / successfully)
+  kind: phrase
+  class: core
+  meaning_tr: başarmak (başarılı / başarıyla)
+  priority: 1
+  variants:
+  - succeed
+  - successful
+  - successfully
+  meaning_ban:
+  - başar
+  pilot_day: 6
+- id: U6-050
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: improve
+  kind: word
+  class: core
+  meaning_tr: geliştirmek; gelişmek
+  priority: 1
+  variants:
+  - develop
+  meaning_ban:
+  - geliştir
+  pilot_day: 6
+- id: U6-051
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: aim / goal
+  kind: phrase
+  class: core
+  meaning_tr: amaç, hedef
+  priority: 1
+  variants:
+  - aim
+  - goal
+  meaning_ban:
+  - amaç
+  - hedef
+  pilot_day: 6
+- id: U6-052
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: gain
+  kind: word
+  class: core
+  meaning_tr: kazanmak, edinmek (deneyim, güven, kilo)
+  priority: 1
+  trap_note: gain = edinmek, kazanmak (deneyim, özgüven) ↔ win = (yarış) kazanmak, earn = (para) kazanmak
+  meaning_ban:
+  - edin
+  pilot_day: 6
+- id: U6-053
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: freedom (feel the freedom)
+  kind: phrase
+  class: core
+  meaning_tr: özgürlük (özgürlüğü hissetmek)
+  priority: 1
+  variants:
+  - feel the freedom
+  - freedom
+  meaning_ban:
+  - özgür
+  pilot_day: 7
+- id: U6-054
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: wind / blow (weather condition)
+  kind: phrase
+  class: core
+  meaning_tr: rüzgâr / esmek (hava koşulu)
+  priority: 1
+  variants:
+  - blow
+  - weather condition
+  - wind
+  - wind speed
+  meaning_ban:
+  - rüzgar
+  - rüzgâr
+  - esiyor
+  - esti
+  - esmek
+  pilot_day: 7
+- id: U6-055
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: explore
+  kind: word
+  class: core
+  meaning_tr: keşfetmek
+  priority: 1
+  meaning_ban:
+  - keşf
+  - keşif
+  pilot_day: 9
+- id: U6-056
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: take place
+  kind: phrase
+  class: trap
+  meaning_tr: gerçekleşmek, yapılmak (etkinlik)
+  priority: 1
+  trap_note: 'kelimesi kelimesine "yer almak" değil: The festival takes place in May = Mayısta yapılır'
+  meaning_ban:
+  - gerçekleş
+  pilot_day: 10
+- id: U6-057
+  unit: 6
+  theme: Hedef, beceri ve gündelik ifadeler
+  display: My pleasure.
+  kind: pattern
+  class: pattern
+  meaning_tr: Rica ederim / Ne demek, memnuniyetle (teşekküre cevap)
+  priority: 1
+  variants:
+  - my pleasure
+  - pleasure
+  trap_note: pleasure tek başına "zevk, memnuniyet"
+  meaning_ban:
+  - rica ederim
+  pilot_day: 10

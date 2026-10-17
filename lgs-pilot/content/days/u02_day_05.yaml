@@ -1,0 +1,305 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 5
+status: draft
+title: "İlk prova"
+est_minutes: 10
+characters: [Duru, Elif, Ece, Selin, Kaan, Bora]
+new_items: [U2-025, U2-026, U2-027, U2-028, U2-029, U2-030]
+
+story:
+  - id: s01
+    text: "Cumartesi öğleden sonra, Duru'nun evi. Bugün grubun ilk provası var! Duru gitarını akort ediyor, Elif mikrofonu deniyor. Ece, Selin, Kaan ve Bora seyirci koltuklarında; Fıstık ise kanepede uyuyor."
+  - id: s02
+    text: "Elif heyecanlı: \"<en>OK, first song! I'm {U2-010|keen on} trying something new today. Ideas?</en>\""
+  - id: s03
+    text: "Duru: \"<en>Rock, of course! But first, a warm-up: a little {U2-025|classical music}. My mum plays Mozart every morning, and Fıstık sleeps like a baby when he hears it.</en>\""
+  - id: s04
+    text: "Duru gitarla yavaş, yumuşak bir Mozart parçası çaldı. Fıstık esnedi. Kaan da esnedi."
+  - id: s05
+    text: "Kaan: \"<en>Nice, but {U2-025|classical music} makes me sleepy too. Something faster, please!</en>\""
+  - id: s06
+    text: "Selin: \"<en>My grandad is {U2-009|fond of} {U2-026|folk music}. He plays the bağlama every Sunday and sings old songs from his village.</en>\""
+  - id: s07
+    text: "Elif: \"<en>{U2-026|Folk music}! I know an old song from the Black Sea. Duru, can you play it?</en>\""
+  - id: s08
+    text: "Duru çalmaya, Elif söylemeye başladı. Bora dayanamadı, kalkıp horon oynamaya çalıştı… ve sehpaya çarptı."
+  - id: s09
+    text: "Bora yerden doğruldu: \"<en>I {U2-008|enjoy} dancing to {U2-026|folk music}! My dance teacher would be proud.</en>\" Ece: \"<en>Your dance teacher would hide the coffee table!</en>\""
+  - id: s10
+    text: "Kaan mikrofonu kaptı: \"<en>My turn! I really {U2-007|like} {U2-027|rap}. Listen: 'My name is Kaan, I'm never on time, but every word I say is a rhyme!'</en>\""
+  - id: s11
+    text: "Kaan avazı çıktığı kadar bağırıyordu. Karşı apartmandaki teyze bile pencereden baktı."
+  - id: s12
+    text: "Selin ellerini kulaklarına bastırdı: \"<en>Kaan, {U2-027|rap} is fine, but you're so {U2-028|loud}! The microphone is right there!</en>\""
+  - id: s13
+    text: "O anda Fıstık uyandı ve şarkıya katıldı: Hav! Hav! Hav! Kaan: \"<en>Fıstık, you're a bit {U2-030|annoying} today!</en>\" Duru: \"<en>He's not barking. He's singing backing vocals.</en>\""
+  - id: s14
+    text: "Ece: \"<en>A dog, a rapper and a guitar… It's really {U2-029|noisy} in here!</en>\""
+  - id: s15
+    text: "Ve tam o sırada duvarın öbür tarafından bir matkap sesi yükseldi: Vıııızzz! Komşu Ahmet Amca yine raf takıyordu."
+  - id: s16
+    text: "Elif: \"<en>Oh no, the drill again! That sound is so {U2-030|annoying}!</en>\""
+  - id: s17
+    text: "Duru: \"<en>Every Saturday: drill, dog, Kaan. This is the {U2-029|noisiest} house in the city.</en>\""
+  - id: s18
+    text: "Bora: \"<en>Wait, a {U2-029|noisy} drill has a good rhythm. Kaan, rap with it!</en>\" Kaan matkabın ritmine uydu ve yeni bir şarkı uydurdu. Fıstık eşlik etti."
+  - id: s19
+    text: "Selin artık pes etti: \"<en>Sorry, guys, but I {U2-012|dislike} {U2-028|loud} songs. My ears hurt!</en>\""
+  - id: s20
+    text: "Duru ise omuz silkti: \"<en>I {U2-011|don't mind} playing with a drill. I'm a {U1-079|laid-back} musician.</en>\""
+  - id: s21
+    text: "Elif kapıya gidip Ahmet Amca'ya kibarca rica etti. Ahmet Amca güldü: \"<en>Sorry, kids! I know, the drill is {U2-030|annoying}. I'll stop. I {U2-007|like} music too, you know.</en>\""
+  - id: s22
+    text: "Ahmet Amca: \"<en>When I was your age, I was in a {U2-019|band}! We played {U2-026|folk music} – with guitars, not with drills!</en>\""
+  - id: s23
+    text: "Elif: \"<en>Thank you for being so {U1-085|patient} with us, Mr Ahmet!</en>\""
+  - id: s24
+    text: "Sonunda ev sessizleşti. Duru ve Elif, Ahmet Amca'nın gençliğinden kalma o eski şarkıyı yavaşça çaldı. Fıstık bile sustu."
+  - id: s25
+    text: "Ece alkışladı: \"<en>{U1-022|Sounds great}! That's our first song!</en>\""
+  - id: s26
+    text: "Kaan: \"<en>And the second song is {U2-027|rap}. But not {U2-028|loud}, I promise!</en>\" Selin: \"<en>Kaan, you can't do quiet!</en>\""
+  - id: s27
+    text: "Duru gitarını kılıfına koydu: \"<en>Next time, a little {U2-025|classical music} at the end. Fıstık needs his sleep.</en>\""
+
+scene:
+  - id: c01
+    speaker: Elif
+    text: "<en>Thanks for coming to our first practice! Which genre should we play next time?</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>Folk music or classical music, please. Something soft!</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>Rap! But OK, not too loud.</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>Fine. But the drill next door is still annoying. Our street is so noisy on Saturdays!</en>"
+
+steps:
+  - item: U2-025
+    sezdir:
+      id: u2d05-025-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"classical music\" ne anlama geliyordu?"
+      options: ["klasik müzik", "halk müziği", "rap müzik", "caz"]
+      answer: 0
+    kullan:
+      id: u2d05-025-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Mozart and Beethoven are two famous composers of ________.</en>"
+      options: ["classical music", "rap", "folk music", "pop music"]
+      answer: 0
+    sina:
+      id: u2d05-025-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Which genre is Elif's mum fond of?</en>"
+      stem: "<en>Elif: My mum often goes to concerts with a big orchestra. She loves violins, pianos and composers like Mozart and Chopin.</en>"
+      options: ["classical music", "rap", "rock music", "folk music"]
+      answer: 0
+  - item: U2-026
+    sezdir:
+      id: u2d05-026-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"folk music\" ne anlama geliyordu?"
+      options: ["halk müziği", "klasik müzik", "rap müzik", "pop müzik"]
+      answer: 0
+    kullan:
+      id: u2d05-026-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My grandad plays the bağlama and sings old songs from his village. He loves ________.</en>"
+      options: ["folk music", "rap", "classical music", "jazz"]
+      answer: 0
+    sina:
+      id: u2d05-026-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Look at the survey answers. Which genre does Selin's grandad listen to?</en>"
+      stem: "<en>Teen Life Survey – Question 4: What music does your family listen to?\nSelin's grandad: traditional songs from Anatolia, with the bağlama\nElif's mum: Mozart and Chopin, with a big orchestra\nKaan's brother: fast words, rhymes and a strong beat</en>"
+      options: ["folk music", "classical music", "rap", "jazz"]
+      answer: 0
+  - item: U2-027
+    sezdir:
+      id: u2d05-027-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"rap\" ne anlama geliyordu?"
+      options: ["rap müzik", "halk müziği", "klasik müzik", "caz"]
+      answer: 0
+    kullan:
+      id: u2d05-027-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>In ________ songs, the singers don't really sing. They say the words very fast, with rhymes and a strong beat.</en>"
+      options: ["rap", "classical music", "folk music", "jazz"]
+      answer: 0
+    sina:
+      id: u2d05-027-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Elif: What kind of music are you into, Kaan?\nKaan: ________\nElif: So you write your own rhymes and say them fast over a beat? Cool!</en>"
+      options: ["I'm into rap.", "I'm into classical music.", "I'm into folk music.", "I can't stand music."]
+      answer: 0
+  - item: U2-028
+    sezdir:
+      id: u2d05-028-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"loud\" ne anlama geliyordu?"
+      options: ["yüksek sesli", "sessiz", "yavaş", "komik"]
+      answer: 0
+    kullan:
+      id: u2d05-028-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Please turn the TV down. It's too ________ and the baby is sleeping.</en>"
+      options: ["loud", "quiet", "slow", "cheap"]
+      answer: 0
+    sina:
+      id: u2d05-028-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Selin's problem?</en>"
+      stem: "<en>Selin: My new neighbour plays music at full volume until midnight. I can hear every word from my bedroom, and I can't sleep!</en>"
+      options: ["The music is too loud.", "The music is too quiet.", "Her neighbour has no music.", "Her neighbour is very patient."]
+      answer: 0
+  - item: U2-029
+    sezdir:
+      id: u2d05-029-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"noisy\" ne anlama geliyordu?"
+      options: ["gürültülü", "sessiz", "karanlık", "soğuk"]
+      answer: 0
+    kullan:
+      id: u2d05-029-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The canteen is very ________ at lunchtime. Hundreds of students talk, shout and laugh at the same time.</en>"
+      options: ["noisy", "quiet", "empty", "boring"]
+      answer: 0
+    sina:
+      id: u2d05-029-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Bora needs a quiet place for his online lesson. Which place is NOT good for him?</en>"
+      stem: "<en>Places at Bora's school at 12.30:\n- the library: no talking\n- the music room: empty\n- the computer room: quiet, only two students\n- the canteen: very noisy</en>"
+      options: ["the canteen", "the library", "the music room", "the computer room"]
+      answer: 0
+  - item: U2-030
+    sezdir:
+      id: u2d05-030-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"annoying\" ne anlama geliyordu?"
+      options: ["sinir bozucu", "rahatlatıcı", "eğlenceli", "heyecan verici"]
+      answer: 0
+    kullan:
+      id: u2d05-030-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My little brother kicks my chair all the time when I'm doing my homework. It's really ________!</en>"
+      options: ["annoying", "relaxing", "patient", "fair"]
+      answer: 0
+    sina:
+      id: u2d05-030-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Which sentence describes the situation?</en>"
+      stem: "<en>Ece is trying to study for an exam. Her phone beeps every ten seconds with new messages from the class group. She can't finish a single page.</en>"
+      options: ["The messages are annoying.", "The messages are relaxing.", "The phone is quiet.", "Ece has nothing to do."]
+      answer: 0
+
+review:
+  - id: u2d05-r01
+    type: gap_fill
+    item: U2-019
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Duru plays the guitar and Elif sings. They want to start a ________ together.</en>"
+    options: ["band", "member", "genre", "survey"]
+    answer: 0
+  - id: u2d05-r02
+    type: gap_fill
+    item: U2-020
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Our band has three ________: a singer, a guitarist and a drummer.</en>"
+    options: ["members", "genres", "songs", "surveys"]
+    answer: 0
+  - id: u2d05-r03
+    type: dialogue_complete
+    item: U2-021
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: What's your favourite music ________?\nB: Jazz. But I like rock music too.</en>"
+    options: ["genre", "member", "band", "survey"]
+    answer: 0
+  - id: u2d05-r04
+    type: situation
+    item: U2-022
+    prompt: "<en>Which genre is Kaan's cousin into?</en>"
+    stem: "<en>Kaan's cousin loves electric guitars, heavy drums and long guitar solos. His favourite band is Queen.</en>"
+    options: ["rock music", "classical music", "folk music", "rap"]
+    answer: 0
+  - id: u2d05-r05
+    type: gap_fill
+    item: U2-023
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>________ is very popular with teenagers. The songs are short and catchy, and you hear them on the radio all day.</en>"
+    options: ["Pop music", "Jazz", "Classical music", "Folk music"]
+    answer: 0
+  - id: u2d05-r06
+    type: gap_fill
+    item: U2-024
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Louis Armstrong was a famous trumpet player from New Orleans. He was a star of ________.</en>"
+    options: ["jazz", "rap", "folk music", "classical music"]
+    answer: 0
+  - id: u2d05-r07
+    type: message_infer
+    item: U2-013
+    lgs_like: true
+    prompt: "<en>Which of the following is TRUE about Bora?</en>"
+    stem: "<en>Bora: My alarm rings at 6.30 every morning. I hate it! Getting up early is the worst thing in the world.</en>"
+    options: ["He can't stand getting up early.", "He is keen on getting up early.", "He doesn't mind getting up early.", "He enjoys his alarm."]
+    answer: 0
+  - id: u2d05-r08
+    type: synonym
+    item: U2-005
+    lgs_like: true
+    prompt: "<en>\"From my point of view, Saturday is the best day for practice.\" Which one is CLOSEST in meaning?</en>"
+    options: ["In my opinion, Saturday is the best day for practice.", "Everybody says Saturday is the worst day for practice.", "I don't know which day is best for practice.", "We never practise on Saturdays."]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U2-028, U2-029]
+    text: "loud ve noisy ikisi de sesle ilgili ama farklı: loud = sesin kendisi yüksek (a loud voice, loud music, \"Turn it down, it's too loud!\"). noisy = bir yer ya da şey sürekli gürültü yapıyor (a noisy street, a noisy classroom, noisy neighbours)."
+  - type: tuzak
+    refs: [U2-030, U1-095]
+    text: "annoying = sinir bozan şey: \"The drill is annoying.\" Sinirlenen kişi için -ed gelir: annoyed. boring (sıkıcı) / bored (sıkılmış) ile aynı mantık. annoyed'ı yakında ayrıca göreceğiz!"
+  - type: lgs_taktigi
+    refs: [U2-025, U2-026, U2-027]
+    text: "LGS'de tür adı çoğu zaman ipuçlarıyla sorulur: orchestra, Mozart, violin → classical music · bağlama, traditional, village songs → folk music · rhymes, beat, fast words → rap."
+  - type: ilginc_bilgi
+    refs: [U2-027]
+    text: "rap, 1970'lerde New York'un Bronx semtinde doğdu. Partilerde DJ'ler müziği çalarken MC'ler ritmin üzerine kafiyeli sözler söylüyordu."
+
+coach:
+  start: "İlk prova günü! Gitar hazır, mikrofon hazır, kanepede bir köpek… Ne ters gidebilir ki? 🎸🐶"
+  end_good: "Bravo! Prova bitti, sen sahneye hazırsın. Fıstık bile alkışlıyor 🐶👏"
+  end_mixed: "Güzel prova! {weak} biraz akordu bozdu ama yarın yeniden çalacağız 🎸"
+
+notifications:
+  morning: "İlk prova bugün! Gitar hazır, mikrofon hazır… peki ya Fıstık? 🐶"
+  evening: "Bir köpek, bir matkap ve Kaan'ın mikrofonu. Bugünkü ders 10 dakika 🎤"
+  review: "Tek soru: Bağlama ve eski köy şarkıları… classical music mi, folk music mi?"
+
+editor:
+  z07: {U2-025: BEKLIYOR, U2-026: BEKLIYOR, U2-027: BEKLIYOR, U2-028: BEKLIYOR, U2-029: BEKLIYOR, U2-030: BEKLIYOR}

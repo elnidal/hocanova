@@ -1,0 +1,284 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 4
+status: draft
+title: "Duru ile Elif'in posteri"
+est_minutes: 10
+characters: [Duru, Elif, Ece, Selin, Kaan, Bora, Murat Bey]
+new_items: [U2-019, U2-020, U2-021, U2-022, U2-023, U2-024]
+
+story:
+  - id: s01
+    text: "Perşembe sabahı Duru ile Elif sınıfa ellerinde rengârenk bir posterle girdi."
+  - id: s02
+    text: "Posterde kocaman harflerle yazıyordu: \"<en>NEW {U2-019|BAND}! We need {U2-020|members}! 🎸🎤</en>\""
+  - id: s03
+    text: "Elif: \"<en>Duru plays the guitar and I sing. Now we need a drummer and a keyboard player.</en>\""
+  - id: s04
+    text: "Kaan posteri okur okumaz atıldı: \"<en>A {U2-019|band}? Cool! Can I {U1-015|join}? I can play… the triangle.</en>\""
+  - id: s05
+    text: "Duru: \"<en>Every {U2-020|member} must come to practice on time, Kaan.</en>\" Kaan sessizce bir adım geri çekildi."
+  - id: s06
+    text: "Selin: \"<en>What {U2-021|genre} of music will you play?</en>\""
+  - id: s07
+    text: "Sorun tam da burada başladı. Duru: \"<en>{U2-022|Rock music}, of course. Loud guitars!</en>\""
+  - id: s08
+    text: "Elif: \"<en>{U2-023|Pop music}! People can dance to it. {U2-006|What about you}, Ece?</en>\""
+  - id: s09
+    text: "Ece: \"<en>{U2-005|In my opinion}, the {U2-021|genre} isn't important. The name is important! And the {U2-019|band} T-shirts!</en>\""
+  - id: s10
+    text: "Her soruya \"<en>{U1-014|It doesn't matter}</en>\" diyen Duru bu kez geri adım atmadı: \"<en>No {U2-023|pop music}. Only {U2-022|rock music}!</en>\""
+  - id: s11
+    text: "Elif: \"<en>Duru, you are so {U1-091|stubborn}!</en>\" Duru: \"<en>Thank you.</en>\""
+  - id: s12
+    text: "Bora araya girdi: \"<en>Why not {U2-024|jazz}? My grandpa listens to {U2-024|jazz} every evening. It's very relaxing.</en>\""
+  - id: s13
+    text: "Duru ile Elif aynı anda döndü: \"<en>{U2-024|Jazz}?!</en>\" İkisinin de yüzü buruşmuştu."
+  - id: s14
+    text: "Kaan: \"<en>Look! You have the {U1-042|same opinion} now: nobody wants {U2-024|jazz}!</en>\" Bora omuz silkti: \"<en>My grandpa will be sad.</en>\""
+  - id: s15
+    text: "Selin ortayı bulan bir öneri getirdi: \"<en>Why don't you mix them? {U2-023|Pop music} with {U2-022|rock} guitars. Lots of {U2-019|bands} do that.</en>\""
+  - id: s16
+    text: "Elif: \"<en>Pop-rock! I love it!</en>\" Duru biraz düşündü: \"<en>OK… but our first song is pure {U2-022|rock}.</en>\""
+  - id: s17
+    text: "Murat Bey kapıdan başını uzattı: \"<en>A {U2-019|band}? That's a good question for your {U2-003|survey} too: ask {U2-001|teenagers} about their favourite {U2-021|genre}.</en>\""
+  - id: s18
+    text: "Ece hemen defterine not aldı: \"<en>New question: What do you listen to in your {U2-002|free time}?</en>\""
+  - id: s19
+    text: "Teneffüste posterin altına isimler yazılmaya başladı. Bora: \"<en>I can't play anything, but I can be your photographer. Am I a {U2-020|member} now?</en>\""
+  - id: s20
+    text: "Duru: \"<en>Photographer {U2-020|member}. OK.</en>\" Elif: \"<en>First practice: Saturday, at Duru's house. Fıstık is our first fan!</en>\""
+  - id: s21
+    text: "Kaan: \"<en>Can I {U2-004|hang out} with you at the practice? I won't bring the triangle.</en>\""
+  - id: s22
+    text: "Selin: \"<en>{U2-005|I believe} you'll be late, Kaan.</en>\" Kaan: \"<en>Me? Late? Never!</en>\" Selin sadece kaşını kaldırdı."
+
+scene:
+  - id: c01
+    speaker: Elif
+    text: "<en>Our band needs new members! Who can play the drums?</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>What genre will you play? Rock music or pop music?</en>"
+  - id: c03
+    speaker: Duru
+    text: "<en>Rock music! Only rock!</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>What about jazz? My grandpa loves it. 🎷</en>"
+
+steps:
+  - item: U2-019
+    sezdir:
+      id: u2d04-019-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"band\" ne anlama geliyordu?"
+      options: ["müzik grubu", "yara bandı", "konser bileti", "şarkı sözü"]
+      answer: 0
+    kullan:
+      id: u2d04-019-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Duru plays the guitar in a ________ with three friends. They practise every Saturday.</en>"
+      options: ["band", "team", "film", "shop"]
+      answer: 0
+      explain: "Müzik yapan grup = band. Spor yapan grup = team."
+    sina:
+      id: u2d04-019-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>According to the poster, which of the following is NOT correct?</en>"
+      stem: "<en>NEW BAND – THE SLEEPY CATS\nWe need: a drummer and a keyboard player\nPractice: Saturdays, 2 p.m., at Duru's house\nInterested? Talk to Elif!</en>"
+      options: ["The band needs a guitar player.", "The band practises on Saturdays.", "You should talk to Elif.", "They practise at Duru's house."]
+      answer: 0
+      explain: "Posterde sadece davulcu ve klavyeci aranıyor; gitarcı (Duru) zaten var."
+  - item: U2-020
+    sezdir:
+      id: u2d04-020-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"member\" ne anlama geliyordu?"
+      options: ["üye", "öğretmen", "hayran", "seyirci"]
+      answer: 0
+    kullan:
+      id: u2d04-020-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin wants to join the school chess club. She wants to become a ________ of the club.</en>"
+      options: ["member", "headmaster", "match", "poster"]
+      answer: 0
+    sina:
+      id: u2d04-020-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Which of the following is TRUE?</en>"
+      stem: "<en>Bora can't play any instruments, but now his name is on the band list. He takes photos at every practice and concert.</en>"
+      options: ["Bora is a member of the band.", "Bora plays the drums in the band.", "Bora is the singer of the band.", "Bora doesn't go to the practices."]
+      answer: 0
+  - item: U2-021
+    sezdir:
+      id: u2d04-021-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"genre\" ne anlama geliyordu?"
+      options: ["tür (müzik, film, kitap)", "klavyede yazmak", "nota", "ses seviyesi"]
+      answer: 0
+    kullan:
+      id: u2d04-021-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Rock, pop and jazz are three different music ________.</en>"
+      options: ["genres", "bands", "members", "singers"]
+      answer: 0
+    sina:
+      id: u2d04-021-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which one is NOT a music genre?</en>"
+      options: ["guitar", "rock", "jazz", "pop"]
+      answer: 0
+      explain: "guitar bir çalgı; diğerleri müzik türü."
+  - item: U2-022
+    sezdir:
+      id: u2d04-022-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"rock music\" ne anlama geliyordu?"
+      options: ["rock müzik", "kaya tırmanışı", "ninni", "marş"]
+      answer: 0
+    kullan:
+      id: u2d04-022-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My brother is into ________. He listens to loud electric guitars and drums all day.</en>"
+      options: ["rock music", "a lullaby", "the news", "silence"]
+      answer: 0
+    sina:
+      id: u2d04-022-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>According to the survey results, which of the following is TRUE?</en>"
+      stem: "<en>SURVEY: What is your favourite music genre? (30 students)\nrock music: 12\npop music: 10\nrap: 5\njazz: 3</en>"
+      options: ["Rock music is the most popular genre.", "Pop music is more popular than rock music.", "Jazz is more popular than rap.", "Nobody likes jazz."]
+      answer: 0
+      explain: "12 öğrenciyle en çok seçilen tür rock music."
+  - item: U2-023
+    sezdir:
+      id: u2d04-023-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"pop music\" ne anlama geliyordu?"
+      options: ["pop müzik", "patlamış mısır", "ninni", "marş"]
+      answer: 0
+    kullan:
+      id: u2d04-023-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Elif loves the catchy hits on the radio and dances to them all the time. She is a big fan of ________.</en>"
+      options: ["pop music", "the news", "silence", "homework"]
+      answer: 0
+    sina:
+      id: u2d04-023-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Kaan: What kind of music do you like, Elif?\nElif: ________ I love dancing to the hits on the radio.</en>"
+      options: ["Pop music.", "Very loudly.", "At home.", "With my friends."]
+      answer: 0
+      explain: "\"What kind of…?\" tür sorar; cevap bir müzik türü olmalı."
+  - item: U2-024
+    sezdir:
+      id: u2d04-024-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"jazz\" ne anlama geliyordu?"
+      options: ["caz", "opera", "marş", "ninni"]
+      answer: 0
+    kullan:
+      id: u2d04-024-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My grandpa listens to ________ every evening. He loves the saxophone and the piano.</en>"
+      options: ["jazz", "jeans", "juice", "jam"]
+      answer: 0
+    sina:
+      id: u2d04-024-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which genre does Bora's grandpa probably like?</en>"
+      stem: "<en>Bora: My grandpa has hundreds of old records. Every evening he listens to Louis Armstrong and plays his saxophone a little.</en>"
+      options: ["jazz", "rap", "pop music", "rock music"]
+      answer: 0
+      explain: "Louis Armstrong ünlü bir caz trompetçisiydi; saksafon da cazın simge çalgılarından biri."
+
+review:
+  - id: u2d04-r01
+    type: gap_fill
+    item: U2-013
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>I ________ the noise of my neighbour's drill. It gives me a headache!</en>"
+    options: ["can't stand", "am crazy about", "admire", "am into"]
+    answer: 0
+  - id: u2d04-r02
+    type: situation
+    item: U2-014
+    prompt: "<en>How does Selin feel about snakes?</en>"
+    stem: "<en>Selin screams and runs away when she sees a snake, even on TV.</en>"
+    options: ["She hates them.", "She admires them.", "She is into them.", "She is crazy about them."]
+    answer: 0
+  - id: u2d04-r03
+    type: synonym
+    item: U2-015
+    prompt: "<en>\"Kaan loves football very, very much.\" Which one has the same meaning?</en>"
+    options: ["Kaan is crazy about football.", "Kaan can't stand football.", "Kaan doesn't mind football.", "Kaan dislikes football."]
+    answer: 0
+  - id: u2d04-r04
+    type: gap_fill
+    item: U2-016
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>A: Are you ________ video games?\nB: Yes, a lot! I play every weekend.</en>"
+    options: ["into", "onto", "off", "out"]
+    answer: 0
+  - id: u2d04-r05
+    type: gap_fill
+    item: U2-017
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Many teenagers ________ famous athletes. They want to be like them one day.</en>"
+    options: ["admire", "hate", "can't stand", "dislike"]
+    answer: 0
+  - id: u2d04-r06
+    type: dialogue_complete
+    item: U2-018
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece: Do you like my cake?\nSelin: ________, it looks a bit like a hat. But it's delicious!</en>"
+    options: ["To be honest", "Nice to meet you", "What about you", "See you later"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U2-019]
+    text: "band ≠ bant! Yara bandı İngilizcede plaster'dır. band = müzik grubu. Spor takımı ise team: \"a rock band\" ama \"a football team\"."
+  - type: tuzak
+    refs: [U2-021]
+    text: "genre yerine type da kullanılır: \"What type of music do you like?\" Ama type fiil olarak \"klavyede yazmak\" demektir: \"Type your name here.\""
+  - type: kelime_ailesi
+    refs: [U2-023]
+    text: "pop, popular (popüler, sevilen) kelimesinin kısaltmasıdır. pop music = en çok sevilen, radyoda sık çalan şarkılar."
+  - type: ilginc_bilgi
+    refs: [U2-024]
+    text: "Cazın 1900'lerin başında ABD'nin New Orleans şehrinde doğduğu kabul edilir. Trompetçi Louis Armstrong en ünlü caz müzisyenlerinden biridir."
+
+coach:
+  start: "Duru ile Elif sınıfa kocaman bir posterle geldi. Tek sorun: ikisi de bambaşka şarkılar dinliyor 🎸🎤"
+  end_good: "Mükemmel! Artık müzik zevkini İngilizce anlatabiliyorsun. Cumartesi ilk prova var, Fıstık hazır 🐶"
+  end_mixed: "Güzel iş! {weak} biraz karıştı, yarın onu tekrar soracağım. Prova günü yaklaşıyor!"
+
+notifications:
+  morning: "Sınıfa gizemli bir poster geldi 🎸 Üstünde ne yazıyor? Bugünkü derste."
+  evening: "Duru gitar diyor, Elif dans diyor, Bora dedesinin plaklarını öneriyor 🎷"
+  review: "Tek soru: \"What genre of music do you like?\" sorusuna \"At home\" cevabı olur mu?"
+
+editor:
+  z07: {U2-019: BEKLIYOR, U2-020: BEKLIYOR, U2-021: BEKLIYOR, U2-022: BEKLIYOR, U2-023: BEKLIYOR, U2-024: BEKLIYOR}

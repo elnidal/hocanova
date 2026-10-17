@@ -1,0 +1,994 @@
+schema_version: 1
+program: lgs
+unit: 3
+unit_title: In the Kitchen
+source: LGS_Unite3_InTheKitchen_Havuz_v1 (HEDEF)
+note: 'pilot_day = Ünite 3 ders günü (story_bible_u03.md). meaning_ban: çeviri yasağında meaning_tr yerine bu kökler aranır (yaygın Türkçe kelimelerde aşırı yakalamayı önlemek ya da çekimli biçimleri yakalamak
+  için).'
+items:
+- id: U3-001
+  unit: 3
+  theme: Pişirme yöntemleri
+  display: bake
+  kind: word
+  class: core
+  meaning_tr: fırında pişirmek (kek, ekmek)
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - bake
+  pilot_day: 2
+  meaning_ban:
+  - fırında pişir
+- id: U3-002
+  unit: 3
+  theme: Pişirme yöntemleri
+  display: boil
+  kind: word
+  class: core
+  meaning_tr: kaynatmak; haşlamak
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - boil
+  pilot_day: 6
+  meaning_ban:
+  - haşla
+  - kaynat
+- id: U3-003
+  unit: 3
+  theme: Pişirme yöntemleri
+  display: freeze (freezer)
+  kind: phrase
+  class: core
+  meaning_tr: dondurmak (dondurucu)
+  priority: 1
+  variants:
+  - freeze
+  - freezer
+  pilot_day: 9
+  meaning_ban:
+  - dondur
+- id: U3-004
+  unit: 3
+  theme: Pişirme yöntemleri
+  display: fry
+  kind: word
+  class: core
+  meaning_tr: kızartmak (yağda)
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - fry
+  pilot_day: 3
+  meaning_ban:
+  - kızart
+- id: U3-005
+  unit: 3
+  theme: Pişirme yöntemleri
+  display: grill
+  kind: word
+  class: core
+  meaning_tr: ızgarada pişirmek
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - grill
+  pilot_day: 8
+  meaning_ban:
+  - ızgara
+- id: U3-006
+  unit: 3
+  theme: Pişirme yöntemleri
+  display: heat / preheat
+  kind: phrase
+  class: core
+  meaning_tr: ısıtmak / (fırını) önceden ısıtmak
+  priority: 1
+  variants:
+  - heat
+  - pre-heat
+  - preheat
+  - preheated
+  exam:
+    teog_lgs_total: 5
+    lgs: 2
+    words:
+    - heat
+    - preheated
+  pilot_day: 2
+- id: U3-007
+  unit: 3
+  theme: Pişirme yöntemleri
+  display: roast
+  kind: word
+  class: core
+  meaning_tr: fırında/ateşte kızartmak (et, sebze)
+  priority: 1
+  pilot_day: 8
+- id: U3-008
+  unit: 3
+  theme: Pişirme yöntemleri
+  display: steam
+  kind: word
+  class: trap
+  meaning_tr: 'buharda pişirmek (isim: buhar)'
+  priority: 1
+  trap_note: '"buhar" ↔ buharda pişirmek'
+  pilot_day: 8
+  meaning_ban:
+  - buhar
+- id: U3-009
+  unit: 3
+  theme: Pişirme yöntemleri
+  display: melt
+  kind: word
+  class: core
+  meaning_tr: eritmek; erimek
+  priority: 2
+  pilot_day: 7
+  meaning_ban:
+  - eritmek
+  - erit
+  - eridi
+  - eriyen
+  - eriyor
+  - erimiş
+- id: U3-010
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: chop / dice
+  kind: phrase
+  class: core
+  meaning_tr: doğramak / küp küp doğramak
+  priority: 1
+  variants:
+  - chop
+  - dice
+  trap_note: dice isim olarak "zar"
+  exam:
+    teog_lgs_total: 2
+    lgs: 1
+    words:
+    - chop
+    - dice
+  pilot_day: 4
+  meaning_ban:
+  - doğra
+- id: U3-011
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: combine
+  kind: word
+  class: core
+  meaning_tr: birleştirmek, bir araya getirmek
+  priority: 1
+  pilot_day: 7
+- id: U3-012
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: cover
+  kind: word
+  class: trap
+  meaning_tr: üstünü örtmek, kapatmak
+  priority: 1
+  trap_note: '"örtmek" ↔ "kapak (kitap)"'
+  pilot_day: 6
+  meaning_ban:
+  - üstünü ört
+  - üzerini ört
+  - kapağını kapat
+- id: U3-013
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: crack
+  kind: word
+  class: trap
+  meaning_tr: (yumurta) kırmak; çatlak
+  priority: 1
+  trap_note: '"kırmak (yumurta)" ↔ "çatlak"'
+  pilot_day: 3
+  meaning_ban:
+  - kırmak
+  - kırdı
+  - kırıp
+  - kırın
+  - kırar
+  - kırıl
+- id: U3-014
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: drain (strainer)
+  kind: phrase
+  class: core
+  meaning_tr: suyunu süzmek (süzgeç)
+  priority: 1
+  variants:
+  - drain
+  - strainer
+  pilot_day: 6
+  meaning_ban:
+  - süz
+- id: U3-015
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: grate (grater)
+  kind: phrase
+  class: core
+  meaning_tr: rendelemek (rende)
+  priority: 1
+  variants:
+  - grate
+  - grater
+  pilot_day: 6
+  meaning_ban:
+  - rende
+- id: U3-016
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: knead
+  kind: word
+  class: core
+  meaning_tr: yoğurmak (hamur)
+  priority: 1
+  pilot_day: 7
+  meaning_ban:
+  - yoğur
+- id: U3-017
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: mash
+  kind: word
+  class: core
+  meaning_tr: ezmek, püre yapmak
+  priority: 1
+  pilot_day: 8
+  meaning_ban:
+  - ezmek
+  - püre
+- id: U3-018
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: mix / stir / blend (mixture)
+  kind: phrase
+  class: core
+  meaning_tr: karıştırmak (karışım)
+  priority: 1
+  variants:
+  - blend
+  - mix
+  - mixture
+  - stir
+  exam:
+    teog_lgs_total: 11
+    lgs: 3
+    words:
+    - mix
+    - mixture
+    - stir
+  pilot_day: 3
+  meaning_ban:
+  - karıştır
+  - karışım
+- id: U3-019
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: peel
+  kind: word
+  class: core
+  meaning_tr: (kabuğunu) soymak
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 1
+    words:
+    - peel
+  pilot_day: 4
+  meaning_ban:
+  - soymak
+  - soydu
+  - soyup
+  - soyun
+  - soyar
+  - kabuğunu
+- id: U3-020
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: pour
+  kind: word
+  class: core
+  meaning_tr: dökmek (sıvı)
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 1
+    words:
+    - pour
+  pilot_day: 3
+  meaning_ban:
+  - dök
+- id: U3-021
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: season
+  kind: word
+  class: trap
+  meaning_tr: (tuz, baharatla) tatlandırmak; mevsim
+  priority: 1
+  trap_note: '"mevsim" ↔ baharat katmak (fiil)'
+  pilot_day: 4
+  meaning_ban:
+  - tatlandır
+  - baharat ek
+- id: U3-022
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: slice
+  kind: word
+  class: core
+  meaning_tr: dilimlemek; dilim
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - slice
+  pilot_day: 4
+  meaning_ban:
+  - dilim
+- id: U3-023
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: spread
+  kind: word
+  class: trap
+  meaning_tr: sürmek (tereyağı); yaymak
+  priority: 1
+  trap_note: '"sürmek" (tereyağı) ↔ "yaymak"'
+  pilot_day: 7
+- id: U3-024
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: sprinkle
+  kind: word
+  class: core
+  meaning_tr: serpmek
+  priority: 1
+  pilot_day: 6
+  meaning_ban:
+  - serp
+- id: U3-025
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: squeeze
+  kind: word
+  class: core
+  meaning_tr: sıkmak (limon)
+  priority: 1
+  pilot_day: 4
+  meaning_ban:
+  - sıkmak
+  - sıktı
+  - sıkıp
+  - sıkın
+  - sıkar
+  - suyunu sık
+- id: U3-026
+  unit: 3
+  theme: Hazırlama fiilleri
+  display: whisk
+  kind: word
+  class: core
+  meaning_tr: çırpmak
+  priority: 1
+  pilot_day: 3
+  meaning_ban:
+  - çırp
+- id: U3-027
+  unit: 3
+  theme: Tat ve lezzet
+  display: bitter
+  kind: word
+  class: trap
+  meaning_tr: acı (kahve, ilaç gibi)
+  priority: 1
+  trap_note: '"acı" (kahve gibi) ↔ spicy/hot (acı biber)'
+  pilot_day: 5
+  meaning_ban:
+  - acı kahve
+  - acı ilaç
+  - acımsı
+  - acıydı
+- id: U3-028
+  unit: 3
+  theme: Tat ve lezzet
+  display: delicious / tasty / yummy
+  kind: phrase
+  class: core
+  meaning_tr: lezzetli, nefis
+  priority: 1
+  variants:
+  - delicious
+  - tasty
+  - yummy
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - tasty
+  pilot_day: 9
+- id: U3-029
+  unit: 3
+  theme: Tat ve lezzet
+  display: fresh
+  kind: word
+  class: core
+  meaning_tr: taze
+  priority: 1
+  pilot_day: 8
+- id: U3-030
+  unit: 3
+  theme: Tat ve lezzet
+  display: greasy / oily / fatty
+  kind: phrase
+  class: core
+  meaning_tr: yağlı
+  priority: 1
+  variants:
+  - fatty
+  - greasy
+  - oily
+  pilot_day: 8
+- id: U3-031
+  unit: 3
+  theme: Tat ve lezzet
+  display: homemade
+  kind: word
+  class: core
+  meaning_tr: ev yapımı
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - homemade
+  pilot_day: 9
+- id: U3-032
+  unit: 3
+  theme: Tat ve lezzet
+  display: salty
+  kind: word
+  class: core
+  meaning_tr: tuzlu
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - salty
+  pilot_day: 5
+- id: U3-033
+  unit: 3
+  theme: Tat ve lezzet
+  display: sour
+  kind: word
+  class: core
+  meaning_tr: ekşi
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - sour
+  pilot_day: 5
+- id: U3-034
+  unit: 3
+  theme: Tat ve lezzet
+  display: spicy
+  kind: word
+  class: core
+  meaning_tr: baharatlı, acılı (biber gibi)
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - spicy
+  pilot_day: 5
+- id: U3-035
+  unit: 3
+  theme: Tat ve lezzet
+  display: sweet
+  kind: word
+  class: trap
+  meaning_tr: tatlı (tat sıfatı)
+  priority: 1
+  trap_note: '"tatlı" (tat) ↔ dessert (tatlı yiyecek)'
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - sweet
+  pilot_day: 5
+  meaning_ban:
+  - tatlı
+- id: U3-036
+  unit: 3
+  theme: Tat ve lezzet
+  display: taste / flavour
+  kind: phrase
+  class: core
+  meaning_tr: tat, lezzet; tadına bakmak
+  priority: 1
+  variants:
+  - flavor
+  - taste
+  trap_note: taste hem isim (tat) hem fiil (tadına bakmak)
+  pilot_day: 5
+  meaning_ban:
+  - lezzet
+  - tadına bak
+- id: U3-037
+  unit: 3
+  theme: Mutfak araçları ve ölçü
+  display: a bunch of / a pinch of / a handful of
+  kind: pattern
+  class: pattern
+  meaning_tr: bir demet / bir tutam / bir avuç (ölçü sözcükleri)
+  priority: 1
+  variants:
+  - bunch
+  - a pinch of
+  - a handful of
+  - handful
+  trap_note: '"bir demet" (çiçek, maydanoz) ↔ "a bunch of friends" = bir sürü'
+  pilot_day: 7
+  meaning_ban:
+  - avuç
+  - buket
+  - demet
+  - tutam
+- id: U3-038
+  unit: 3
+  theme: Mutfak araçları ve ölçü
+  display: bowl
+  kind: word
+  class: core
+  meaning_tr: kase
+  priority: 1
+  variants:
+  - mixing bowl
+  exam:
+    teog_lgs_total: 8
+    lgs: 2
+    words:
+    - bowl
+    - mixing bowl
+  pilot_day: 1
+  meaning_ban:
+  - kase
+  - kâse
+  - kabı
+  - 'kaba '
+  - kapta
+- id: U3-039
+  unit: 3
+  theme: Mutfak araçları ve ölçü
+  display: cup
+  kind: word
+  class: trap
+  meaning_tr: fincan; ölçü bardağı (a cup of flour)
+  priority: 1
+  trap_note: '"fincan" ↔ ölçü (a cup of flour)'
+  pilot_day: 2
+- id: U3-040
+  unit: 3
+  theme: Mutfak araçları ve ölçü
+  display: oven
+  kind: word
+  class: core
+  meaning_tr: fırın
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - oven
+  pilot_day: 1
+- id: U3-041
+  unit: 3
+  theme: Mutfak araçları ve ölçü
+  display: pan / saucepan
+  kind: phrase
+  class: core
+  meaning_tr: tava / sap tencere
+  priority: 1
+  variants:
+  - frying pan
+  - pan
+  - pot
+  - saucepan
+  trap_note: saucepan "sos tavası" değil, saplı tencere
+  exam:
+    teog_lgs_total: 7
+    lgs: 2
+    words:
+    - frying pan
+    - pan
+    - saucepan
+  pilot_day: 3
+  meaning_ban:
+  - tavada
+  - tavaya
+  - tavayı
+  - tavadan
+  - tencere
+- id: U3-042
+  unit: 3
+  theme: Mutfak araçları ve ölçü
+  display: teaspoon / tablespoon
+  kind: pattern
+  class: pattern
+  meaning_tr: çay kaşığı / yemek kaşığı (ölçü)
+  priority: 1
+  variants:
+  - tablespoon
+  - teaspoon
+  pilot_day: 2
+- id: U3-043
+  unit: 3
+  theme: Tarif dili
+  display: baking powder
+  kind: phrase
+  class: core
+  meaning_tr: kabartma tozu
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - baking powder
+  pilot_day: 2
+- id: U3-044
+  unit: 3
+  theme: Tarif dili
+  display: dough
+  kind: word
+  class: core
+  meaning_tr: hamur
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - dough
+  pilot_day: 7
+- id: U3-045
+  unit: 3
+  theme: Tarif dili
+  display: first / then / next / after that / finally
+  kind: pattern
+  class: pattern
+  meaning_tr: önce / sonra / ardından / en sonunda (sıralama)
+  priority: 1
+  variants:
+  - after that
+  - finally
+  - first
+  - last
+  - next
+  - second
+  - then
+  pilot_day: 1
+  meaning_ban:
+  - ardından
+  - en sonunda
+  - ilk olarak
+  - son olarak
+  - sonra
+  - önce
+- id: U3-046
+  unit: 3
+  theme: Tarif dili
+  display: flour
+  kind: word
+  class: core
+  meaning_tr: un
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 1
+    words:
+    - flour
+  pilot_day: 2
+- id: U3-047
+  unit: 3
+  theme: Tarif dili
+  display: How long / How much / How many
+  kind: pattern
+  class: pattern
+  meaning_tr: ne kadar süre / ne kadar / kaç tane
+  priority: 1
+  variants:
+  - how long
+  - how much
+  - how many
+  trap_note: how long = süre, how much = sayılamayan miktar/fiyat, how many = sayılabilen
+  pilot_day: 6
+  meaning_ban:
+  - ne kadar süre
+  - kaç tane
+- id: U3-048
+  unit: 3
+  theme: Tarif dili
+  display: ingredients
+  kind: word
+  class: core
+  meaning_tr: malzemeler
+  priority: 1
+  exam:
+    teog_lgs_total: 4
+    lgs: 0
+    words:
+    - ingredient
+  pilot_day: 1
+  meaning_ban:
+  - malzeme
+- id: U3-049
+  unit: 3
+  theme: Tarif dili
+  display: pepper
+  kind: word
+  class: trap
+  meaning_tr: biber; karabiber
+  priority: 1
+  trap_note: '"biber" ↔ "karabiber" (black pepper)'
+  variants:
+  - black pepper
+  - red pepper flakes
+  exam:
+    teog_lgs_total: 2
+    lgs: 2
+    words:
+    - black pepper
+    - pepper
+  pilot_day: 4
+- id: U3-050
+  unit: 3
+  theme: Tarif dili
+  display: recipe
+  kind: word
+  class: core
+  meaning_tr: yemek tarifi
+  priority: 1
+  exam:
+    teog_lgs_total: 6
+    lgs: 3
+    words:
+    - recipe
+  pilot_day: 1
+  meaning_ban:
+  - tarif
+- id: U3-051
+  unit: 3
+  theme: Tarif dili
+  display: serve
+  kind: word
+  class: core
+  meaning_tr: servis etmek, sunmak
+  priority: 1
+  variants:
+  - serve cold
+  - serve warm
+  exam:
+    teog_lgs_total: 4
+    lgs: 0
+    words:
+    - serve
+  pilot_day: 11
+  meaning_ban:
+  - servis
+  - sunmak
+  - ikram
+- id: U3-052
+  unit: 3
+  theme: Tarif dili
+  display: step / process
+  kind: word
+  class: core
+  meaning_tr: adım, aşama / süreç, işlem
+  priority: 1
+  variants:
+  - steps
+  - process
+  exam:
+    teog_lgs_total: 3
+    lgs: 3
+    words:
+    - process
+    - step
+  pilot_day: 1
+  meaning_ban:
+  - aşama
+  - süreç
+  - adım adım
+- id: U3-053
+  unit: 3
+  theme: Yemek kültürü ve ifadeler
+  display: be in the mood for
+  kind: pattern
+  class: pattern
+  meaning_tr: canı … istemek
+  priority: 1
+  pilot_day: 9
+  meaning_ban:
+  - canı çek
+  - canı ist
+- id: U3-054
+  unit: 3
+  theme: Yemek kültürü ve ifadeler
+  display: cuisine
+  kind: word
+  class: core
+  meaning_tr: mutfak (bir ülkenin yemek kültürü)
+  priority: 1
+  variants:
+  - Turkish cuisine
+  pilot_day: 10
+  meaning_ban:
+  - türk mutfağı
+  - dünya mutfağı
+  - yemek kültürü
+- id: U3-055
+  unit: 3
+  theme: Yemek kültürü ve ifadeler
+  display: dessert
+  kind: word
+  class: core
+  meaning_tr: tatlı (yemek sonrası)
+  priority: 1
+  variants:
+  - desserts
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - dessert
+  pilot_day: 9
+  meaning_ban:
+  - tatlı
+- id: U3-056
+  unit: 3
+  theme: Yemek kültürü ve ifadeler
+  display: dish / meal
+  kind: word
+  class: trap
+  meaning_tr: yemek (tabak yemek) / öğün
+  priority: 1
+  trap_note: dish = tabakta sunulan yemek (Turkish dish), meal = öğün (three meals a day); "do the dishes" = bulaşık yıkamak
+  variants:
+  - meal
+  - traditional dish
+  exam:
+    teog_lgs_total: 6
+    lgs: 1
+    words:
+    - dish
+    - meal
+  pilot_day: 10
+  meaning_ban:
+  - kap kacak
+  - tabak
+  - öğün
+- id: U3-057
+  unit: 3
+  theme: Yemek kültürü ve ifadeler
+  display: enjoy your meal
+  kind: pattern
+  class: pattern
+  meaning_tr: afiyet olsun
+  priority: 1
+  variants:
+  - enjoy it
+  pilot_day: 11
+- id: U3-058
+  unit: 3
+  theme: Yemek kültürü ve ifadeler
+  display: have a sweet tooth
+  kind: pattern
+  class: pattern
+  meaning_tr: tatlıya düşkün olmak
+  priority: 1
+  variants:
+  - sweet tooth
+  pilot_day: 9
+- id: U3-059
+  unit: 3
+  theme: Yemek kültürü ve ifadeler
+  display: worth trying
+  kind: pattern
+  class: pattern
+  meaning_tr: denemeye değer
+  priority: 1
+  pilot_day: 11
+- id: U3-060
+  unit: 3
+  theme: Yemek kültürü ve ifadeler
+  display: main course
+  kind: phrase
+  class: core
+  meaning_tr: ana yemek
+  priority: 2
+  pilot_day: 10
+- id: U3-061
+  unit: 3
+  theme: Tarif dili
+  display: put … in(to) / add … to
+  kind: pattern
+  class: pattern
+  meaning_tr: … içine koymak / …-e eklemek (tarif talimatı)
+  priority: 1
+  variants:
+  - put
+  - add
+  - put in
+  - put into
+  - add to
+  trap_note: 'Sınavda en sık çıkan tarif fiilleri (put 6, add 5 kez); sorulan şey edat: put it into the oven, add the sugar to the mixture'
+  exam:
+    teog_lgs_total: 11
+    lgs: 5
+    words:
+    - add
+    - put
+  pilot_day: 10
+  meaning_ban:
+  - içine koy
+  - ekle
+- id: U3-062
+  unit: 3
+  theme: Tarif dili
+  display: prepare (preparation)
+  kind: word
+  class: core
+  meaning_tr: hazırlamak (hazırlık)
+  priority: 1
+  variants:
+  - preparation
+  - prepared
+  exam:
+    teog_lgs_total: 4
+    lgs: 0
+    words:
+    - prepare
+  pilot_day: 10
+  meaning_ban:
+  - hazırla
+  - hazırlık
+- id: U3-063
+  unit: 3
+  theme: Yemek kültürü ve ifadeler
+  display: well-known / traditional
+  kind: phrase
+  class: core
+  meaning_tr: tanınmış, meşhur / geleneksel (a well-known traditional dish)
+  priority: 1
+  variants:
+  - well-known
+  - traditional
+  - traditional dish
+  exam:
+    teog_lgs_total: 3
+    lgs: 1
+    words:
+    - well-known
+  pilot_day: 10
+exam_note: 'exam: kullanıcının paylaştığı ders kitabı listelerindeki "sınavlarda çıkmış kelimeler" tablosu (2013–2020 TEOG + 2018–2020 LGS). 2021 sonrası doğrulanmadı.'

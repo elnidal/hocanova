@@ -1,0 +1,142 @@
+# LGS Sınav Dili — A07 Adımları sırala (S07). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-A07
+module: A
+title: "Adımları sırala"
+unlock_after: "Ü3 G4"
+minutes: 5
+stems: [S07]
+units: [3]
+intro_tr: "Tarif ve işlem metinlerinde 'İlk adım ne?', 'Bundan sonra ne yapılır?' ya da 'Doğru sıra hangisi?' diye sorulur. Sıra sözcükleri ve biraz mutfak mantığı bu soruları kolaylaştırır."
+cards:
+  - title_tr: "Sıra sözcükleri yol gösterir"
+    body_tr: "Tarifteki adımlar çoğunlukla sıra sözcükleriyle bağlanır. Bu sözcüklerin altını çiz ve adımları numaralandır."
+    examples_en:
+      - "First, crack two eggs into a bowl."
+      - "Then, whisk them."
+      - "After that, heat some oil in a pan."
+      - "Finally, pour the eggs into the pan."
+    signal_words: ["First", "Second", "Then", "Next", "After that", "Finally"]
+  - title_tr: "Before / After tuzağı"
+    body_tr: "Yazılış sırası ile yapılış sırası her zaman aynı değildir. 'Before you fry the onions, chop them.' cümlesinde önce yazılan 'fry' ama önce yapılan 'chop'. 'Before X, Y' = önce Y, sonra X. 'After X, Y' = önce X, sonra Y."
+    examples_en:
+      - "Before you squeeze the lemons, slice them.  → slice → squeeze"
+      - "After you mix the flour and eggs, add the milk.  → mix → add milk"
+    signal_words: ["before", "after", "right after"]
+  - title_tr: "Sözcük yoksa mantık var"
+    body_tr: "Sıra sözcüğü yoksa mutfak mantığına güven: kırmadan çırpılmaz, soymadan dilimlenmez, tavayı ısıtmadan kızartılmaz, fırını önceden ısıtırsın (preheat), pişirme genellikle en sondadır."
+    examples_en:
+      - "crack → whisk → pour → fry"
+      - "peel → slice → fry"
+      - "preheat the oven → mix → bake"
+worked_example:
+  id: sd-A07-w
+  type: process_order
+  stem_id: S07
+  context: |-
+    Pancakes: First, crack two eggs into a bowl. Then, add a cup of flour and some milk and mix them well. After that, heat some oil in a pan. Finally, pour the mixture into the pan and fry it for two minutes.
+  prompt: "According to the recipe, what do we do right after mixing the ingredients?"
+  options:
+    - "heat some oil in a pan"
+    - "crack the eggs"
+    - "pour the mixture into the pan"
+    - "add the flour"
+  answer: 0
+  explain_tr: "Karıştırma 'Then' adımı; hemen ardından 'After that, heat some oil' geliyor. 'pour the mixture' çekici ama o 'Finally' ile gelen son adım."
+  items: [U3-013, U3-038, U3-039, U3-046, U3-018, U3-006, U3-041, U3-020, U3-004, U3-045]
+practice:
+  - id: sd-A07-p01
+    type: process_order
+    stem_id: S07
+    context: |-
+      Ece's lemonade: Before you squeeze the lemons, slice them in half. Pour the juice into a jug. Add some water and two teaspoons of sugar. Then stir well.
+    prompt: "Which of the following is the correct order?"
+    options:
+      - "slice → squeeze → add water and sugar → stir"
+      - "squeeze → slice → add water and sugar → stir"
+      - "slice → stir → squeeze → add water and sugar"
+      - "add water and sugar → slice → squeeze → stir"
+    answer: 0
+    explain_tr: "'Before you squeeze …, slice them' → önce dilimle, sonra sık. İkinci şık metnin yazılış sırasını izliyor; 'before' tuzağına düşüyor."
+    items: [U3-025, U3-022, U3-020, U3-042, U3-018]
+  - id: sd-A07-p02
+    type: process_order
+    stem_id: S07
+    context: |-
+      Kaan wants to make an omelette.
+      a) Pour the eggs into the hot pan.
+      b) Crack the eggs into a bowl.
+      c) Whisk the eggs with some salt and pepper.
+      d) Heat some oil in a pan.
+    prompt: "Which of the following is the correct order?"
+    options:
+      - "b → c → d → a"
+      - "a → b → c → d"
+      - "c → b → a → d"
+      - "b → a → c → d"
+    answer: 0
+    explain_tr: "Önce yumurta kırılır (b), sonra çırpılır (c); tava ısıtılır (d) ve yumurta 'hot pan'e dökülür (a). Son şık kırmakla başlıyor ama yumurtayı çırpmadan ve tava ısınmadan döküyor."
+    items: [U3-013, U3-026, U3-049, U3-006, U3-020, U3-041, U3-038]
+  - id: sd-A07-p03
+    type: process_order
+    stem_id: S07
+    context: |-
+      Murat Bey's chocolate cake: Mix the flour, baking powder and sugar in a bowl. Add the eggs and the milk and whisk. Pour the mixture into a cake tin and bake it for 35 minutes. But remember: preheat the oven to 180°C before you start!
+    prompt: "What is the FIRST step?"
+    options:
+      - "preheat the oven"
+      - "mix the flour, baking powder and sugar"
+      - "whisk the eggs and the milk"
+      - "bake the cake for 35 minutes"
+    answer: 0
+    explain_tr: "Fırın en son cümlede yazıyor ama 'before you start' → her şeyden önce yapılır. 'mix the flour …' yazılışta ilk sırada olduğu için çekici."
+    items: [U3-006, U3-040, U3-046, U3-043, U3-001, U3-026]
+  - id: sd-A07-p04
+    type: process_order
+    stem_id: S07
+    context: |-
+      Fruit salad: First, peel the bananas and the oranges. Then slice the bananas and chop the apples. After that, put all the fruit in a bowl. Finally, squeeze half a lemon over the fruit and mix.
+    prompt: "What do we do before we put the fruit in the bowl?"
+    options:
+      - "slice and chop the fruit"
+      - "squeeze half a lemon"
+      - "mix everything"
+    answer: 0
+    explain_tr: "Meyveler kaseye 'After that' adımında konuyor; ondan önce 'Then slice … and chop'. Limon sıkmak ve karıştırmak kaseye koyduktan SONRA."
+    items: [U3-019, U3-022, U3-010, U3-025, U3-038]
+  - id: sd-A07-p05
+    type: process_order
+    stem_id: S07
+    context: |-
+      Duru's tomato sauce: Before you fry the onions, chop them into small pieces. Fry them in a little oil. After the onions turn brown, add the tomatoes. Season the sauce with salt and pepper at the end.
+    prompt: "Which of the following is the correct order?"
+    options:
+      - "chop the onions → fry the onions → add the tomatoes → season"
+      - "fry the onions → chop the onions → add the tomatoes → season"
+      - "chop the onions → add the tomatoes → fry the onions → season"
+      - "season → chop the onions → fry the onions → add the tomatoes"
+    answer: 0
+    explain_tr: "'Before you fry …, chop them' → önce doğra; 'After the onions turn brown, add the tomatoes' → domates kızartmadan sonra; tuz-biber 'at the end'. İkinci şık yine yazılış sırası tuzağı."
+    items: [U3-010, U3-004, U3-021, U3-049]
+  - id: sd-A07-p06
+    type: process_order
+    stem_id: S07
+    context: |-
+      Selin's cheese toast: First, heat the pan. Next, slice the cheese. Then put the cheese between two slices of bread. After that, put the toast in the pan and wait for two minutes. Finally, turn it over and cook the other side.
+    prompt: "What is the last step?"
+    options:
+      - "cook the other side of the toast"
+      - "heat the pan"
+      - "slice the cheese"
+      - "put the toast in the pan"
+    answer: 0
+    explain_tr: "'Finally' son adımı gösterir: tostu çevirip diğer yüzünü pişirmek. 'put the toast in the pan' sondan bir önceki adım ('After that')."
+    items: [U3-045, U3-006, U3-022, U3-041]
+tips:
+  - "Sıra sözcüklerinin (First, Then, After that, Finally) altını çiz ve adımları numaralandır."
+  - "'before' ve 'after' gördüğünde dur: yazılış sırası ile yapılış sırası farklı olabilir."
+  - "Şıklarda yalnız ilk ve son adımı kontrol etmek çoğu zaman iki şıkkı hemen eler."
+coach:
+  start: "Önlükleri tak, mutfağa giriyoruz! Bugün tarifler bize hangi adımın önce geldiğini fısıldayacak."
+  end: "Afiyet olsun! 'Before' tuzağını yakaladın, adımları sıraya dizdin. Şef olma yolundasın!"
+status: draft

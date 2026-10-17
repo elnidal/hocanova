@@ -1,0 +1,318 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 9
+status: draft
+title: "How often…? Anketin en dürüst bölümü"
+est_minutes: 10
+characters: [Murat Bey, Ece, Selin, Elif, Kaan, Bora, Duru, Kantinci teyze]
+new_items: [U2-049, U2-050, U2-051, U2-052, U2-053, U2-054]
+
+story:
+  - id: s01
+    text: "Pazartesi. Murat Bey tahtaya anketin yeni bölümünü yazdı: \"<en>Part 3: How often…?</en>\" Gruplar teneffüste bu soruları sınıf arkadaşlarına soracaktı."
+  - id: s02
+    text: "Ece elinde dosyasıyla hazırdı: \"<en>Question one: How often do you read books, Bora?</en>\" Bora tavana baktı, parmaklarıyla saydı, sonra yine tavana baktı."
+  - id: s03
+    text: "Bora: \"<en>Hmm… I {U2-049|rarely} read books. Maybe {U2-052|once a year}?</en>\" Elif'in gözleri kocaman oldu: \"<en>Once a year?!</en>\""
+  - id: s04
+    text: "Bora hemen ekledi: \"<en>But comics count, right? I read comics {U2-052|three times a week}!</en>\" Selin cevabı yazarken gülmemek için kendini zor tuttu."
+  - id: s05
+    text: "Ece ikinci soruya geçti: \"<en>Question two: Are you on time for school?</en>\" Ama Kaan ortada yoktu. Zil çalalı on dakika olmuştu."
+  - id: s06
+    text: "Selin kalemini bıraktı: \"<en>Kaan is {U2-051|hardly ever} on time. I can answer this one for him.</en>\""
+  - id: s07
+    text: "Tam o anda kapı açıldı. Kaan nefes nefese içeri daldı, sırtında kocaman bir çanta: \"<en>Sorry, sorry! {U1-075|I'm always in a hurry}, I know!</en>\""
+  - id: s08
+    text: "Kaan çantasını yere bıraktı: \"<en>I was at the {U2-031|gym}. I {U2-032|work out} three times a week now. I'm {U2-033|training} for the basketball team!</en>\""
+  - id: s09
+    text: "Elif kollarını kavuşturdu: \"<en>OK, you {U2-034|look fit}, Kaan. But you're late again!</en>\""
+  - id: s10
+    text: "Ece dosyasına yazdı: \"<en>Kaan: {U2-051|hardly ever} on time. Gym: {U2-052|three times a week}.</en>\""
+  - id: s11
+    text: "Duru esnedi: \"<en>I {U2-050|seldom} go to the gym. Actually, never. My sofa is my gym.</en>\""
+  - id: s12
+    text: "Murat Bey arkadan geçerken durdu: \"<en>'{U2-050|Seldom}'! What a nice word, Duru. It's like 'rarely', but a bit more formal.</en>\""
+  - id: s13
+    text: "Teneffüs zili çaldı ve herkes kantine koştu. Kantinin önü tıklım tıklımdı. Elif durdu: \"<en>Look at this {U2-053|queue}! It's so long!</en>\""
+  - id: s14
+    text: "Kaan karnını tuttu: \"<en>I'm so hungry!</en>\" ve sessizce en öne süzülmeye çalıştı. Selin kolundan yakaladı: \"<en>Kaan! Wait in the {U2-053|queue} like everyone else.</en>\""
+  - id: s15
+    text: "Kaan boynunu büktü, en arkaya geçti. Bora ise ellerini ovuşturdu: \"<en>Good idea! This {U2-053|queue} is perfect for our survey!</en>\""
+  - id: s16
+    text: "Ece öndeki yedinci sınıf öğrencisine sordu: \"<en>How often do you play a {U2-036|team sport}?</en>\" Çocuk gülümsedi: \"<en>{U2-052|Twice a week}. Football!</en>\""
+  - id: s17
+    text: "Selin beklerken telefonundan bir şey okuyordu. Elif merakla eğildi: \"<en>What are you reading?</en>\" Selin: \"<en>The news. I {U2-054|follow the news} every morning.</en>\""
+  - id: s18
+    text: "Bora şaşırdı: \"<en>Every morning? I {U2-049|rarely} {U2-054|follow the news}. I only know the football scores.</en>\""
+  - id: s19
+    text: "Bora: \"<en>Isn't it {U1-095|boring}?</en>\" Selin: \"<en>Not at all! If you don't {U2-054|follow the news}, you {U1-016|miss} important things.</en>\""
+  - id: s20
+    text: "Kaan arkadan seslendi: \"<en>I {U2-049|rarely} miss a basketball match on TV. Does that count?</en>\" Selin gözlerini devirdi."
+  - id: s21
+    text: "Yirmi dakika sonra Kaan nihayet tezgâha ulaştı. Kantinci teyze omuz silkti: \"<en>Sorry, dear. No more toasties!</en>\""
+  - id: s22
+    text: "Kaan dizlerinin üstüne çöktü: \"<en>This is why I {U2-051|hardly ever} get a toastie. I'm always late!</en>\""
+  - id: s23
+    text: "Duru sandviçini ikiye böldü: \"<en>Here, take half. You need it, Mr {U2-035|Energetic}.</en>\" Kaan sandviçe bir hazine gibi baktı."
+  - id: s24
+    text: "Ece dosyasını kapattı: \"<en>Great answers! Bora {U2-049|rarely} reads, Kaan is {U2-051|hardly ever} on time and Duru {U2-050|seldom} goes to the gym.</en>\" Bora: \"<en>Please don't write my name!</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Survey, part 3: How often do you read books?</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>I rarely read books. But I read comics three times a week!</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>And Kaan is hardly ever on time. He was late again today.</en>"
+  - id: c04
+    speaker: Kaan
+    text: "<en>Sorry! And the queue in the canteen was so long. No toasties left!</en>"
+  - id: c05
+    speaker: Selin
+    text: "<en>I follow the news every morning. You should try it, Bora!</en>"
+
+steps:
+  - item: U2-049
+    sezdir:
+      id: u2d09-049-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"rarely\" ne anlama geliyordu?"
+      options: ["nadiren", "sık sık", "her zaman", "her gün"]
+      answer: 0
+    kullan:
+      id: u2d09-049-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Bora doesn't like reading. He ________ reads books, maybe once a year.</en>"
+      options: ["rarely", "always", "usually", "often"]
+      answer: 0
+    sina:
+      id: u2d09-049-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Look at Can's week. Which sentence is TRUE?</en>"
+      stem: "<en>Can's activities\nplay computer games: every day\ngo swimming: twice a week\nread a book: once a month</en>"
+      options: ["Can rarely reads books.", "Can rarely plays computer games.", "Can never goes swimming.", "Can reads a book every day."]
+      answer: 0
+      explain: "Ayda bir kez kitap okuyan biri için \"rarely\" kullanılır."
+  - item: U2-050
+    sezdir:
+      id: u2d09-050-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"seldom\" ne anlama geliyordu?"
+      options: ["nadiren, seyrek", "her gün", "genellikle", "sık sık"]
+      answer: 0
+    kullan:
+      id: u2d09-050-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My grandparents live in another country, so we ________ see them. Only once or twice a year.</en>"
+      options: ["seldom", "always", "usually", "often"]
+      answer: 0
+    sina:
+      id: u2d09-050-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Elif seldom eats fast food. She prefers home-made meals.\" Which one is CLOSEST in meaning to \"seldom\"?</en>"
+      options: ["rarely", "often", "always", "usually"]
+      answer: 0
+  - item: U2-051
+    sezdir:
+      id: u2d09-051-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"hardly ever\" ne anlama geliyordu?"
+      options: ["neredeyse hiç", "her zaman", "bazen", "genellikle"]
+      answer: 0
+    kullan:
+      id: u2d09-051-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan is late almost every day. He is ________ on time.</en>"
+      options: ["hardly ever", "always", "usually", "often"]
+      answer: 0
+    sina:
+      id: u2d09-051-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>A: Do you often eat fast food?\nB: ________ I prefer healthy food. Maybe once a year.</en>"
+      options: ["No, I hardly ever eat it.", "Yes, I eat it every day.", "Yes, I usually have it for lunch.", "Yes, I always eat it at weekends."]
+      answer: 0
+  - item: U2-052
+    sezdir:
+      id: u2d09-052-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"three times a week\" ne anlama geliyordu?"
+      options: ["haftada üç kez", "üç haftada bir", "haftanın üçüncü günü", "üç hafta boyunca"]
+      answer: 0
+    kullan:
+      id: u2d09-052-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I go to the gym on Mondays and Thursdays. I go there ________ a week.</en>"
+      options: ["twice", "once", "three times", "four times"]
+      answer: 0
+    sina:
+      id: u2d09-052-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>How often does Selin go swimming?</en>"
+      stem: "<en>Selin's calendar\nMonday: swimming\nTuesday: piano\nWednesday: swimming\nThursday: —\nFriday: swimming</en>"
+      options: ["three times a week", "once a week", "twice a week", "every day"]
+      answer: 0
+  - item: U2-053
+    sezdir:
+      id: u2d09-053-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede \"queue\" ne anlama geliyordu?"
+      options: ["sıra, kuyruk", "tezgâh", "fiyat listesi", "tost makinesi"]
+      answer: 0
+    kullan:
+      id: u2d09-053-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>There were twenty people at the bus stop, so we waited in the ________ for fifteen minutes.</en>"
+      options: ["queue", "menu", "gym", "band"]
+      answer: 0
+    sina:
+      id: u2d09-053-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>You are at the cinema. Everybody is waiting for tickets, but a boy walks to the front. What do you say to him?</en>"
+      options: ["Excuse me, please wait in the queue.", "I'd love to join you.", "I rarely go to the cinema.", "Can you pick me up at six?"]
+      answer: 0
+  - item: U2-054
+    sezdir:
+      id: u2d09-054-z
+      type: meaning
+      context: s17
+      prompt: "Hikâyede \"follow the news\" ne anlama geliyordu?"
+      options: ["haberleri takip etmek", "haber yazmak", "gazete satmak", "dizileri izlemek"]
+      answer: 0
+    kullan:
+      id: u2d09-054-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My dad reads the newspaper every morning and watches TV news every evening. He likes to ________.</en>"
+      options: ["follow the news", "work out", "hang out", "do karate"]
+      answer: 0
+    sina:
+      id: u2d09-054-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which is TRUE about Selin?</en>"
+      stem: "<en>Selin: I read news websites on the bus and I watch the evening news with my mum. I want to know what's happening in the world.</en>"
+      options: ["She follows the news.", "She rarely reads.", "She hardly ever watches TV.", "She isn't interested in the world."]
+      answer: 0
+
+review:
+  - id: u2d09-r01
+    type: gap_fill
+    item: U2-043
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Selin gets up at 7, has breakfast at 7.30 and leaves home at 8 every day. This is her ________.</en>"
+    options: ["daily routine", "free time", "survey", "band"]
+    answer: 0
+  - id: u2d09-r02
+    type: gap_fill
+    item: U2-044
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Kaan plays basketball six days a week. He ________ plays basketball.</en>"
+    options: ["usually", "rarely", "never", "hardly ever"]
+    answer: 0
+    explain: "Haftada altı gün neredeyse her gün demektir: usually."
+  - id: u2d09-r03
+    type: gap_fill
+    item: U2-045
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>To look fit, you need to work out ________, not only once a month.</en>"
+    options: ["regularly", "rarely", "never", "late"]
+    answer: 0
+  - id: u2d09-r04
+    type: synonym
+    item: U2-046
+    prompt: "<en>\"My friends mostly listen to pop music.\" Which one is CLOSEST in meaning to \"mostly\"?</en>"
+    options: ["generally", "never", "rarely", "quietly"]
+    answer: 0
+  - id: u2d09-r05
+    type: dialogue_complete
+    item: U2-047
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Is your little brother noisy?\nB: Yes, ________. He's quiet only when he's asleep.</en>"
+    options: ["most of the time", "hardly ever", "never", "once a year"]
+    answer: 0
+  - id: u2d09-r06
+    type: message_infer
+    item: U2-048
+    prompt: "<en>What does Selin want?</en>"
+    stem: "<en>Selin: Dad, school finishes at 3.30 today. Can you pick me up at the gate?</en>"
+    options: ["She wants her dad to come and take her home by car.", "She wants to pick some flowers at the gate.", "She wants to walk home with her friends.", "She wants her dad to paint the gate."]
+    answer: 0
+  - id: u2d09-r07
+    type: dialogue_complete
+    item: U2-011
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece: Shall we watch a comedy or an action film?\nDuru: ________ Both are OK for me.</en>"
+    options: ["I don't mind.", "I can't stand films.", "I dislike both of them.", "No, I'm busy."]
+    answer: 0
+  - id: u2d09-r08
+    type: message_infer
+    item: U2-010
+    lgs_like: true
+    prompt: "<en>Which is TRUE about Elif?</en>"
+    stem: "<en>Elif: I'm really keen on singing. I sing in the shower, on the bus and in the band!</en>"
+    options: ["She enjoys singing a lot.", "She dislikes singing.", "She doesn't mind singing, but she prefers dancing.", "She rarely sings."]
+    answer: 0
+  - id: u2d09-r09
+    type: gap_fill
+    item: U2-012
+    lgs_like: true
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Bora ________ getting up early. He wants to sleep until noon every day.</en>"
+    options: ["dislikes", "enjoys", "is fond of", "is keen on"]
+    answer: 0
+  - id: u2d09-r10
+    type: message_infer
+    item: U2-008
+    lgs_like: true
+    prompt: "<en>Look at Selin's survey answers. Which sentence is TRUE?</en>"
+    stem: "<en>Teen Life Survey: Selin\nreading: ★★★★★\ndancing: ★☆☆☆☆</en>"
+    options: ["Selin enjoys reading, but she isn't keen on dancing.", "Selin enjoys dancing more than reading.", "Selin dislikes reading.", "Selin is fond of dancing."]
+    answer: 0
+
+tips:
+  - type: mini_dilbilgisi
+    refs: [U2-049, U2-051, U2-044]
+    text: "rarely, seldom, hardly ever da diğer sıklık zarfları gibi ana fiilden önce, be fiilinden sonra gelir: \"Bora rarely reads.\" · \"Kaan is hardly ever on time.\""
+  - type: tuzak
+    refs: [U2-051]
+    text: "hardly ever zaten olumsuz anlam taşır; yanına not koyma! ❌ \"I don't hardly ever eat it.\" ✅ \"I hardly ever eat it.\""
+  - type: lgs_taktigi
+    refs: [U2-052]
+    text: "1 = once, 2 = twice, 3 ve sonrası = three times, four times… Sonuna zaman ekle: once a week, twice a month, three times a year. Takvim tablolarında günleri say!"
+  - type: tuzak
+    refs: [U2-053]
+    text: "queue /kjuː/ okunur, yani sadece \"kyu\". Sondaki \"ueue\" harfleri ayrıca okunmaz. İngilizler queue der, Amerikalılar line."
+
+coach:
+  start: "Bugün anketin en dürüst bölümü geliyor: \"How often…?\" Bora kitap sorusunda tavana bakıyor, Kaan ise yine yolda! 📋"
+  end_good: "Süpersin! Sen dersleri hardly ever kaçıran, always çalışan birisin. Kaan'a da biraz dakiklik öğretsene! ⏰"
+  end_mixed: "Gayet iyi! {weak} biraz kafa karıştırdı ama sorun değil, yarın tekrar karşına çıkacak. Kaan bile sonunda tezgâha ulaştı! 🥪"
+
+notifications:
+  morning: "Bora en son ne zaman kitap okudu? 📚 Cevabı seni güldürecek."
+  evening: "Kantinde tost kalmadı ve Kaan yine geç! 😅 Bugünkü ders 10 dakika."
+  review: "Tek soru: \"Kaan is hardly ever on time.\" Kaan dakik biri mi?"
+
+editor:
+  z07: {U2-049: BEKLIYOR, U2-050: BEKLIYOR, U2-051: BEKLIYOR, U2-052: BEKLIYOR, U2-053: BEKLIYOR, U2-054: BEKLIYOR}

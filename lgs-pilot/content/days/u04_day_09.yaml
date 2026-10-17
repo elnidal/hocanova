@@ -1,0 +1,315 @@
+schema_version: 1
+program: lgs
+unit: 4
+day: 9
+status: draft
+title: "ON değil GONE"
+est_minutes: 10
+characters: [Ece, Elif, Duru, Selin, Kaan, Bora, Sevim Hanım, Fıstık]
+new_items: [U4-004, U4-018, U4-025, U4-030, U4-051]
+
+story:
+  - id: s01
+    text: "Cuma akşamüstü, konsere tam bir gün kalmıştı. Ece pastanede Sevim Hanım'la son kontrolleri yapıyordu; Ahmet Amca'nın davul seti köşede, sahnenin kenarında da boş bir masa duruyordu."
+  - id: s02
+    text: "Sevim Hanım elindeki listeyi okudu: \"<en>The stage is {U4-035|booked} for tomorrow at seven. Selin {U4-037|confirmed} it last week, and this morning the head office called for a final check. The sound technician's {U4-033|appointment} is at five.</en>\""
+  - id: s03
+    text: "Ece defterine üç tik attı, bir yandan da sandalyeleri saydı. Sevim Hanım güldü: \"<en>Slow down, dear manager! Sit down and {U2-040|rest} for a minute.</en>\""
+  - id: s04
+    text: "Ece tek eliyle gruba yazdı: \"<en>The concert is ON!</en>\" Ama telefonun otomatik düzeltmesi son anda araya girdi ve Ece ekrana bakmadan telefonu çantasına attı."
+  - id: s05
+    text: "Birkaç saniye sonra beş telefonda aynı mesaj belirdi: \"<en>The concert is GONE!</en>\""
+  - id: s06
+    text: "Elif evdeydi; boğazında atkı, elinde bir fincan ıhlamur. Mesajı okudu ve kanepeye yığıldı. Önce Luna Ray'in konseri, şimdi de kendi konseri…"
+  - id: s07
+    text: "Kaan'ın sesli mesajı gecikmedi; tabii üç dakikalık ve nefes nefese: \"<en>Gone? GONE? Why? Who? I'm coming to the café now! No, wait, I'm at basketball practice…</en>\""
+  - id: s08
+    text: "Duru'nun telefonu her zamanki gibi sessizdeydi; mesajı ancak yarım saat sonra gördü. Okudu, bir daha okudu. Ece asla bu kadar kısa mesaj atmazdı; onun mesajlarında hep saat ve madde işareti olurdu."
+  - id: s09
+    text: "Duru kanepede doğruldu: \"<en>Wait. Maybe it's a {U4-051|misunderstanding}.</en>\" Fıstık başını kaldırdı; Duru'dan bu kadar uzun bir cümle duymaya alışık değildi."
+  - id: s10
+    text: "Sonra tarihî bir an yaşandı: arkadaşlarının telefonlarına bile zor dönen Duru, ilk kez bir arkadaşını kendisi aradı. Elif'i."
+  - id: s11
+    text: "Elif'in sesi kısık ve titrekti. Duru hemen fark etti: \"<en>Elif? It's Duru. You sound terrible. {U4-030|What's wrong}?</en>\""
+  - id: s12
+    text: "Elif burnunu çekti: \"<en>Didn't you see Ece's message? The concert is gone. And I've got a sore throat. Mum made a doctor's {U4-033|appointment} for tomorrow morning.</en>\""
+  - id: s13
+    text: "Duru'nun sesi yumuşadı: \"<en>A sore throat? Oh no, {U4-025|I'm sorry to hear that}. Drink some hot tea with honey.</en>\""
+  - id: s14
+    text: "Sonra ekledi: \"<en>And {U4-025|get well soon}. But I don't believe that message. Ece's messages are never this short. Let me {U4-004|get in touch} with her first.</en>\""
+  - id: s15
+    text: "Ece'yi aradı: çaldı, çaldı… Telefon çantanın dibindeydi. Duru pes etmedi ve grubun santrali Selin'i aradı. Selin'de herkesin numarası vardı; pastanenin numarası bile."
+  - id: s16
+    text: "Pastanede tezgâhtaki eski telefon öttü. Duru, Selin'in öğrettiği gibi başladı: \"<en>Good evening. Sorry to {U4-053|disturb} you, but is Ece there? It's important.</en>\" Sevim Hanım gülümsedi: \"<en>What a {U4-052|polite} young lady! Hold on.</en>\""
+  - id: s17
+    text: "Sevim Hanım {U4-018|receiver}'ı Ece'ye uzattı. Ece şaşkın şaşkın kulağına götürdü: \"<en>Duru? You're calling me? On the café phone? {U4-030|What's wrong}?</en>\""
+  - id: s18
+    text: "Duru tek cümleyle özetledi: \"<en>Your message says the concert is GONE. Elif is very sad.</en>\" Ece çantasından telefonunu çıkardı, mesaja baktı ve yüzü bembeyaz oldu: \"<en>Gone?! I wrote ON! It's a {U4-051|misunderstanding}!</en>\""
+  - id: s19
+    text: "Ece herkesi grup aramasına çağırdı, ama pastanenin içinde ses kesik kesik geliyordu. Kapının önüne çıktı: \"<en>Sorry, the {U4-003|connection} is bad in here. Can you hear me now?</en>\""
+  - id: s20
+    text: "Ece derin bir nefes aldı: \"<en>Everyone, I {U1-002|apologise}. Duru {U4-004|got in touch} with me just now. The concert is ON. Tomorrow at seven. I'm really sorry, Elif.</en>\""
+  - id: s21
+    text: "Elif'in sesi bir anda düzeldi, en azından yarı yarıya: \"<en>It's ON? Then my throat is better already!</en>\" Selin güldü: \"<en>Still, drink your tea. {U4-025|Get well soon}, singer!</en>\""
+  - id: s22
+    text: "Kaan'ın kafası hâlâ karışıktı: \"<en>Wait, wait. Who is the {U4-018|sender} here? Ece or her phone?</en>\""
+  - id: s23
+    text: "Bora hemen hükmünü verdi: \"<en>Biggest {U4-051|misunderstanding} of the year! The phone is the {U4-018|sender}, and we're all {U4-018|receivers}. So we're angry at the phone, not at Ece!</en>\""
+  - id: s24
+    text: "Selin: \"<en>And Duru noticed Elif's sad voice first. She's really {U2-086|sensitive}.</en>\" Kaan: \"<en>She {U4-004|contacted} everybody tonight! Duru! {U4-030|What's the matter} with you?</en>\""
+  - id: s25
+    text: "Hatta kısa bir sessizlik oldu. Duru: \"<en>Nothing's the matter. This concert is important to me. That's all.</en>\" Fıstık bile kıpırdamadı."
+  - id: s26
+    text: "Sessizliği Kaan bozdu: \"<en>OK, team! Tomorrow I've got practice until half past five. Ece, I'll call you back at six. Exactly at six!</en>\" Telefonda beş kişi aynı anda güldü. Kaan gülmüyordu."
+
+scene:
+  - id: c01
+    speaker: Ece (mesaj)
+    text: "<en>The concert is GONE!</en>"
+  - id: c02
+    speaker: Duru
+    text: "<en>Elif? It's Duru. You sound terrible. What's wrong?</en>"
+  - id: c03
+    speaker: Elif
+    text: "<en>The concert is gone, and I've got a sore throat.</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>I'm sorry to hear that. Get well soon! But I think it's a misunderstanding. Let me get in touch with Ece.</en>"
+  - id: c05
+    speaker: Ece
+    text: "<en>I'm the sender, but my phone changed the word! The concert is ON!</en>"
+
+steps:
+  - item: U4-004
+    sezdir:
+      id: u4d09-004-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede Duru \"Let me get in touch with her first\" derken ne yapmak istiyordu?"
+      options: ["Ece'yle iletişime geçmek, ona ulaşmak", "Ece'yi bir süre beklemek", "Ece'yle tartışmak", "Ece'yi konsere davet etmek"]
+      answer: 0
+    kullan:
+      id: u4d09-004-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I need some information about the concert. How can I ________ Sevim Hanım? — Here's her number.</en>"
+      options: ["contact", "hang up", "reply", "invent"]
+      answer: 0
+      explain: "contact fiili doğrudan kişiyi alır (contact her); reply ise \"reply to\" ister, hang up nesne almaz."
+    sina:
+      id: u4d09-004-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>What is the purpose of Ece's message?</en>"
+      stem: "<en>Ece's message to the group: Hi everyone! My phone will be off during the sound check tomorrow. If you need me, please get in touch with Selin. She knows where I am.</en>"
+      options: ["to tell her friends how to reach her", "to cancel the sound check", "to invite Selin to the concert", "to complain about her phone"]
+      answer: 0
+      explain: "\"If you need me, please get in touch with Selin\": Ece arkadaşlarına kendisine nasıl ulaşacaklarını söylüyor."
+  - item: U4-018
+    sezdir:
+      id: u4d09-018-z
+      type: meaning
+      context: s22
+      prompt: "Hikâyede Kaan \"Who is the sender here?\" diye sorarken \"sender\" ne anlama geliyordu?"
+      options: ["gönderen", "alıcı", "okuyucu", "yazıcı"]
+      answer: 0
+    kullan:
+      id: u4d09-018-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ece sent the message and Elif got it. Elif is the ________ of the message.</en>"
+      options: ["receiver", "sender", "secretary", "customer"]
+      answer: 0
+      explain: "Mesajı alan kişi receiver, gönderen kişi sender'dır."
+    sina:
+      id: u4d09-018-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>A message on Bora's phone:\nFrom: Kaan\nTo: Bora\nDon't forget your drumsticks tomorrow!</en>"
+      options: ["Kaan is the sender and Bora is the receiver.", "Bora is the sender and Kaan is the receiver.", "Bora sent the message to Kaan.", "Kaan got the message from Bora."]
+      answer: 0
+      explain: "From (kimden) gönderen kişiyi, To (kime) alıcıyı gösterir: Kaan yazdı, Bora aldı."
+  - item: U4-025
+    sezdir:
+      id: u4d09-025-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede Duru, Elif'in boğazı ağrıyınca \"I'm sorry to hear that\" derken ne demek istiyordu?"
+      options: ["Buna üzüldüm.", "Seni iyi duyamıyorum.", "Bunu duyduğuma sevindim.", "Kusura bakma, geç kaldım."]
+      answer: 0
+    kullan:
+      id: u4d09-025-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Bora: I can't come to the practice today. I've got a terrible cold.\nDuru: Oh, ________ Stay in bed and rest.</en>"
+      options: ["get well soon!", "enjoy your meal!", "congratulations!", "nice to meet you!"]
+      answer: 0
+      explain: "Hasta birine söylenen kalıp Get well soon!; congratulations iyi bir haberde söylenir."
+    sina:
+      id: u4d09-025-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: Hi Elif, it's Selin. How are you feeling today?\nElif: Not very good. My throat hurts and I've got a fever.\nSelin: ________ Drink lots of water, OK?\nElif: OK, thanks.</en>"
+      options: ["I'm sorry to hear that.", "That's great news!", "Sorry, wrong number.", "I'll take that."]
+      answer: 0
+      explain: "Kötü bir haber (hastalık) duyulunca \"I'm sorry to hear that\" denir; \"That's great news\" iyi haber içindir."
+  - item: U4-030
+    sezdir:
+      id: u4d09-030-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede Duru, Elif'in titreyen sesini duyunca \"What's wrong?\" diye soruyor. Bu ne anlama geliyordu?"
+      options: ["Ne oldu? Neyin var?", "Neredesin?", "Kim arıyor?", "Saat kaç?"]
+      answer: 0
+    kullan:
+      id: u4d09-030-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Mum: You look sad, Bora. ________\nBora: I can't find my drumsticks!</en>"
+      options: ["What's the matter?", "What's the time?", "Who's calling?", "How much is it?"]
+      answer: 0
+      explain: "Birinin üzgün olduğunu görünce sorunu sormak için What's the matter? / What's wrong? kullanılır."
+    sina:
+      id: u4d09-030-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What should Elif say in this situation?</en>"
+      stem: "<en>Elif calls Duru. Duru's voice is very low and sad. Elif wants to find out the problem.</en>"
+      options: ["What's wrong, Duru?", "Thanks for calling. Take care!", "Could you put me through, please?", "Sorry, wrong number."]
+      answer: 0
+      explain: "Sorunu öğrenmek isteyen kişi \"What's wrong?\" diye sorar; diğerleri vedalaşma, bağlatma ve yanlış numara kalıpları."
+  - item: U4-051
+    sezdir:
+      id: u4d09-051-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede Duru \"Maybe it's a misunderstanding\" derken ne düşünüyordu?"
+      options: ["Bir yanlış anlaşılma olabilir.", "Bu kötü bir haber olabilir.", "Bu yeni bir şarkı olabilir.", "Bu bir sürpriz parti olabilir."]
+      answer: 0
+    kullan:
+      id: u4d09-051-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ece wrote \"ON\", but her friends read \"GONE\". It was a big ________.</en>"
+      options: ["misunderstanding", "appointment", "invention", "extension"]
+      answer: 0
+      explain: "Bir mesajın yanlış anlaşılmasına misunderstanding denir."
+    sina:
+      id: u4d09-051-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we infer from the conversation?</en>"
+      stem: "<en>Kaan: I waited for you at the cinema for an hour!\nBora: The cinema? I was at the café! You said, \"Meet me at the café,\" didn't you?\nKaan: No, I said \"cinema\"!</en>"
+      options: ["There was a misunderstanding about the place.", "Kaan and Bora went to the cinema together.", "Kaan was late for the meeting.", "Bora doesn't like cafés."]
+      answer: 0
+      explain: "İkisi farklı yerlere gitmiş çünkü buluşma yerini farklı anlamışlar; Kaan bir saat beklediğine göre geç kalan o değil."
+
+review:
+  - id: u4d09-r01
+    type: gap_fill
+    item: U4-043
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>I use a weather ________ on my phone. It tells me when it's going to rain.</en>"
+    options: ["application", "receiver", "extension", "memo"]
+    answer: 0
+    explain: "Telefona yüklenen ve bir işe yarayan programa application (app) denir."
+  - id: u4d09-r02
+    type: gap_fill
+    item: U4-044
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Before mobile phones, people often ________ with each other by letter.</en>"
+    options: ["communicated", "invented", "dialled", "hung up"]
+    answer: 0
+  - id: u4d09-r03
+    type: gap_fill
+    item: U4-045
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Kaan talked to his grandpa about old phones for an hour. It was a long and funny ________.</en>"
+    options: ["conversation", "device", "invention", "application"]
+    answer: 0
+  - id: u4d09-r04
+    type: situation
+    item: U4-046
+    prompt: "<en>How did Selin talk to her grandma?</en>"
+    stem: "<en>Selin didn't call her grandma and she didn't send a message. She visited her in Urla, and they talked in the garden for hours.</en>"
+    options: ["face to face", "on the phone", "online", "by letter"]
+    answer: 0
+    explain: "Telefon ya da mesaj yok, aynı bahçedeler: yüz yüze konuşmuşlar."
+  - id: u4d09-r05
+    type: gap_fill
+    item: U4-047
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Who ________ the telephone? — Alexander Graham Bell. He got the first telephone patent in 1876.</en>"
+    options: ["invented", "delivered", "confirmed", "returned"]
+    answer: 0
+  - id: u4d09-r06
+    type: gap_fill
+    item: U4-048
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Grandpa's old phone has no screen, but it still works. It's a fifty-year-old ________!</en>"
+    options: ["device", "customer", "extension", "appointment"]
+    answer: 0
+  - id: u4d09-r07
+    type: dialogue_complete
+    item: U4-023
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Ece: Hello, this is Ece. Can I speak to Kaan, please?\nKaan's mum: ________ He's at basketball practice.\nEce: OK, I'll call back later.</en>"
+    options: ["I'm afraid he isn't available at the moment.", "Speaking.", "Hold on, I'll get him.", "Sure, here he is."]
+    answer: 0
+    explain: "Ece ardından \"I'll call back later\" diyor; demek ki Kaan telefona gelemiyor. Diğer üç şıkta Kaan telefona geliyor."
+  - id: u4d09-r08
+    type: text_infer
+    item: U4-010
+    lgs_like: true
+    stem_id: S02
+    prompt: "<en>Which of the following does NOT have an answer in the memo?</en>"
+    stem: "<en>Phone memo\nTo: Kaan\nFrom: Mum\nEce called at 4 p.m. She wants you to call her back about the concert. Please call her after six.</en>"
+    options: ["Where is Ece now?", "Who called Kaan?", "What time did Ece call?", "Why should Kaan call Ece?"]
+    answer: 0
+    explain: "Arayan (Ece), saat (4 p.m.) ve neden (konser) yazıyor; Ece'nin şu an nerede olduğu yazmıyor."
+  - id: u4d09-r09
+    type: message_infer
+    item: U4-001
+    lgs_like: true
+    stem_id: S11
+    prompt: "<en>Why is Kaan calling Ece?</en>"
+    stem: "<en>Kaan: Hi Ece, it's Kaan. Sorry, I saw Mum's note just now. I'm calling you back about the concert. What time is the rehearsal?</en>"
+    options: ["to return Ece's call and ask about the rehearsal", "to invite Ece to a basketball match", "to leave a message for his mum", "to complain about the concert"]
+    answer: 0
+    explain: "\"I'm calling you back about the concert\": Kaan Ece'nin aramasına dönüyor ve prova saatini soruyor."
+
+tips:
+  - type: tuzak
+    refs: [U4-018]
+    text: "receiver iki anlamlı: mesajın alıcısı (sender ↔ receiver) ve telefonun ahizesi. \"She picked up the receiver\" = Ahizeyi kaldırdı. Fiil pick up / put down ise ahize demektir."
+  - type: tuzak
+    refs: [U4-030, U1-014]
+    text: "matter isim olarak \"madde, konu\" demek. Ama What's the matter? = Ne oldu, neyin var? It doesn't matter (Ü1) ise \"Fark etmez\". Soru mu, cevap mı, ona bak."
+  - type: mini_dilbilgisi
+    refs: [U4-004]
+    text: "contact edat almaz: contact me ✓, contact with me ✗. Edatlı olan get in touch'tır: get in touch with me ✓."
+  - type: lgs_taktigi
+    refs: [U4-025]
+    text: "Durum sorularında önce haberi sınıflandır: hastalık → Get well soon! · kötü haber → I'm sorry to hear that. · iyi haber → Congratulations! / That's great!"
+
+coach:
+  start: "Konsere bir gün kaldı ama tek bir harf her şeyi altüst edebilir. 📱 Bugün Duru'dan hiç beklenmedik bir hamle geliyor!"
+  end_good: "Duru ilk kez kendisi aradı, sen de bugünü tam isabetle kapattın! Yarın büyük gece: ilk konser. 🎤"
+  end_mixed: "{weak} biraz parazitli kaldı, dert değil; yarın hat daha net olacak. Konser hâlâ ON! 🎸"
+
+notifications:
+  morning: "Bir harf, koca bir konser… Ece'nin mesajında ne ters gitti? 📱"
+  evening: "Elif'in sesi titriyor, Duru telefonu eline aldı. 10 dakikan var mı?"
+  review: "Arkadaşın hasta: Get well soon mu, Enjoy your meal mi? 🤒"
+
+editor:
+  z07: {U4-004: BEKLIYOR, U4-018: BEKLIYOR, U4-025: BEKLIYOR, U4-030: BEKLIYOR, U4-051: BEKLIYOR}

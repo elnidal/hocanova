@@ -1,0 +1,1594 @@
+schema_version: 1
+unit: 7
+title: Tourism
+status: taslak
+summary_tr: Ünite, turistik yerleri tanıtma ve gezi deneyimini konuşma üzerine kuruludur. Programın işlevleri yerleri betimleme (What is Mardin like? – It is an ancient and charming city), karşılaştırma,
+  deneyimden söz etme (Have you ever been to Cappadocia? – Yes, I have. / No, I have never been there), tercih bildirme ve gerekçe sunmadır (I'd rather visit historic sites because they are usually more
+  interesting). Kelime gövdesi yer türleri (seaside, countryside, square, port, island), konaklama (accommodation, all-inclusive, bed and breakfast, guesthouse), tarih ve mimari (ancient, architecture,
+  construction, conquer, emperor, heritage) ve betimleme sıfatlarıdır (incredible, enormous, remarkable, charming, crowded). Karşılaştırma ve tercih yapıları Ü6'da öğretildi; bu ünitede yeni yerler ve sıfatlarla
+  tekrar edilir. LGS'de ünite en çok tatil broşürü/ilanı okuma, iki ya da üç şehri karşılaştıran tablo, kartpostal/e-posta çıkarımı ve "Have you ever been …? / What do you think about …?" diyaloğu tamamlama
+  olarak gelir.
+curriculum:
+  outcomes:
+  - code: E8.7.L1
+    text_tr: 'Dinleme: Kısa ve basit sözlü metinlerdeki belirli bilgiyi anlar ve çıkarır.'
+  - code: E8.7.SI1
+    text_tr: 'Karşılıklı konuşma: Turizm hakkında bilgi alışverişinde bulunur.'
+  - code: E8.7.SI2
+    text_tr: 'Karşılıklı konuşma: En sevdiği turistik yerleri ayrıntı vererek anlatır.'
+  - code: E8.7.SP1
+    text_tr: 'Sözlü anlatım: Belirli turistik yerlere ilişkin tercihlerini bildirir ve gerekçesini söyler.'
+  - code: E8.7.R1
+    text_tr: 'Okuma: Turizmle ilgili çeşitli metinlerde belirli bilgiyi bulur. (LGS''de doğrudan ölçülen kazanım; ilçe dağılım tablosunda 3+1 soru)'
+  - code: E8.7.W1
+    text_tr: 'Yazma: En sevdiği turistik yer(ler) için broşür, reklam ya da kartpostal tasarlar.'
+  functions:
+  - id: F1
+    name_tr: Yerleri betimlemek (Describing places)
+    exponents:
+    - What is Mardin like?
+    - What's the weather like in Antalya in summer?
+    - What's the climate like?
+    - What is Şanlıurfa famous for?
+    - What are the tourist attractions?
+    - Where is it located?
+    responses:
+    - It's an ancient city with magnificent architecture.
+    - It is hot and sunny. The climate is Mediterranean.
+    - It's famous for its delicious kebab and historic sites.
+    - There is an enormous square and a beautiful fountain.
+    - It's located in the south-east of Turkey.
+    items:
+    - U7-059
+    - U7-056
+    - U7-027
+    - U7-001
+    - U7-026
+    - U7-030
+    - U7-031
+    - U7-023
+    - U7-024
+    - U7-050
+    - U7-055
+    lgs_weight: yüksek
+    note_tr: Broşür ve şehir tanıtım metinlerinin dili. What is … like? sorusunun cevabı sıfattır (Do you like …? değil).
+  - id: F2
+    name_tr: Deneyimden söz etmek (Talking about experiences)
+    exponents:
+    - Have you ever been to Cappadocia?
+    - Have you ever been abroad?
+    - Did you enjoy your trip?
+    - How long did you stay there?
+    - What did you do while you were there?
+    - What did you like the most about it?
+    responses:
+    - Yes, I have. I went there last summer.
+    - No, I haven't. I've never been abroad.
+    - Yes, it was incredible!
+    - We stayed there for a week.
+    - We went sightseeing and bought souvenirs.
+    - The hospitality of the local people.
+    items:
+    - U7-057
+    - U7-058
+    - U7-004
+    - U7-003
+    - U7-005
+    - U7-008
+    - U7-045
+    - U7-053
+    - U7-049
+    lgs_weight: yüksek
+    note_tr: Programda "Talking about experiences" (Grade 8.7.1) olarak geçer. Have you ever been …? sabit kalıp olarak öğretilir; ayrıntı Simple Past ile verilir (Yes, I have. I went there in 2023).
+  - id: F3
+    name_tr: Tercih bildirmek ve gerekçe sunmak (Expressing preferences / Giving reasons)
+    exponents:
+    - Which one do you prefer, visiting historic sites or going to the seaside?
+    - Do you prefer sightseeing or a beach vacation?
+    - Would you rather stay in a hotel or a guesthouse?
+    - What type of places do you prefer? Why?
+    responses:
+    - I'd rather visit historic sites because they are usually more interesting.
+    - I prefer rural places. I think they are peaceful.
+    - I prefer staying in a guesthouse because it is cheaper.
+    - I'd rather go to the seaside because I love sunbathing.
+    items:
+    - U7-018
+    - U7-020
+    - U7-016
+    - U7-005
+    - U7-002
+    - U7-012
+    lgs_weight: yüksek
+    note_tr: Yapılar Ü6'da öğretildi (U6-035 prefer … to, U6-036 would rather, U6-037 Why – Because). Bu ünitede yer ve konaklama türleriyle tekrar edilir.
+  - id: F4
+    name_tr: Karşılaştırma yapmak (Making comparisons)
+    exponents:
+    - Antalya is more crowded than Mardin in summer.
+    - Istanbul is the most crowded city in Turkey.
+    - Phuket has more accommodation options than Mostar.
+    - Which city is cheaper?
+    responses:
+    - Mardin is quieter and more charming.
+    - I think the seaside is more relaxing than the city.
+    items:
+    - U7-052
+    - U7-055
+    - U7-013
+    - U7-019
+    - U7-018
+    - U7-028
+    lgs_weight: yüksek
+    note_tr: Karşılaştırma ve üstünlük Ü6'da (U6-033, U6-034). LGS'de en sık iki-üç şehri karşılaştıran tablo olarak gelir.
+  - id: F5
+    name_tr: Görüş bildirmek (Stating personal opinions)
+    exponents:
+    - What do you think about Rome?
+    - To me, everybody should definitely go there.
+    - In my opinion, it is a must-see place.
+    - I guess / I suppose / I believe …
+    responses:
+    - To me, it's a fascinating city.
+    - I think it's worth seeing.
+    items:
+    - U7-060
+    - U7-061
+    - U7-054
+    lgs_weight: orta
+    note_tr: 'MEB Useful Language: What do you think about Rome? In my opinion (U2-005) ve I guess (U4-021) önceki ünitelerde.'
+sources:
+- code: A
+  name: ingilizcele.com — 8. Sınıf 7. Ünite Tourism Ünite Kelimeleri (PDF; "For a better life" değerler kutusu dahil)
+  rows: 67
+- code: B
+  name: ingilizceciyiz.com — 8. Sınıf İngilizce 7. Ünite Kelimeleri Tourism (PDF)
+  rows: 139
+- code: I
+  name: Okul listesi "8.SINIF İNGİLİZCE 7.ÜNİTE KELİME LİSTESİ" (camburnufomboo.meb.k12.tr; eski kitap sahneleri içerir)
+  rows: 200
+- code: W
+  name: 'Web araştırması: ingilizcedilbilgisi.net "Sınavlarda çıkmış 7. ünite Tourism kelimeleri" ve "8. sınıf 7. ünite soru kalıpları" (→ phrase_bank); ingilizcepedia.com Unit 7 sayfası ve 25.–26. hafta
+    günlük planları (E8.7.L1, SI1, SI2, SP1, Useful Language); şehit Enes Demir O.O. 2. dönem dağılım tablosu (E8.7.R1, E8.7.W1); EBA Grade 8.7 materyali (işlevler, dinleme metni); egitimsistem.com ders
+    kitabı cevapları s. 84–94'
+  rows: 37
+tasnif:
+  teaching_units: 61
+  counts:
+    birim_CEKIRDEK: 50
+    birim_KALIP_ISLEV: 6
+    birim_TUZAK: 5
+    oncelik_1: 60
+    oncelik_2: 1
+    havuz_CEKIRDEK: 97
+    havuz_KALIP_ISLEV: 9
+    havuz_TUZAK: 15
+    havuz_BILINEN: 69
+    havuz_TANIMA: 73
+    havuz_ONCEKI_UNITE: 55
+    havuz_toplam: 318
+  items_file: lgs-pilot/content/unit_07_items.yaml
+  rules_tr:
+  - 'Satır değil öğretim birimi sayılır: aileler (attraction / attract / attractive; conquer / conquest / invasion; emperor / empire; hospitality / hospitable; discover / rediscover) ve eş anlamlı kümeler
+    (trip / journey / travel; vacation / holiday; incredible / unbelievable; enormous / huge; definitely / truly; local / authentic; highland / plateau; palace / mansion) tek birim.'
+  - Öncelik 1 = en az iki bağımsız kaynak (A, B, I, W) ya da KALIP / İŞLEV. charming yalnız çıkmış kelime tablosunda (W) olduğu için öncelik 2.
+  - 'Sıkılaştırma: ilk aday liste 67 birimdi. tourism ve amphitheatre BİLİNEN (Türkçe ile aynı); province, budget / per person, depart, suppose TANIMA (tek kaynak); sunbathe / have a rest eğlence etkinlikleri
+    birimine bağlandı; weigh TANIMA. Sonuç 61 (Ü5: 61, Ü6: 57).'
+  - 'Have you ever been to …? KALIP birimi yapıldı (Ü6''da TANIMA idi): ders kitabı, EBA dinleme metni ve kalıp listesi bu kalıbı kullanıyor. Present Perfect dilbilgisi olarak öğretilmez (kullanıcı onayı
+    bekliyor).'
+  - Değerler kutusu (justice, equality, cooperation, mercifulness…) ve eski kitap sahneleri (Pompeii, Serengeti, Orhun Yazıtları) TANIMA.
+  excluded_examples:
+    BILINEN:
+    - amphitheatre
+    - area
+    - beautiful
+    - begin
+    - big
+    - both
+    - building
+    - capital
+    - castle
+    - cave
+    - cheap
+    - clean
+    - compare
+    - concert
+    - detail
+    - die
+    - different
+    - different activities
+    - dirty
+    - everybody
+    - excited
+    - exotic
+    - expensive
+    - fantastic beaches
+    - feel
+    - find
+    - gift
+    - happen
+    - history
+    - hope
+    - imagine
+    - interesting things
+    - keep
+    - kind
+    - know
+    - learn
+    - leave
+    - lovely
+    - many others
+    - modern
+    TANIMA:
+    - above sea level
+    - almond
+    - artificial
+    - ash
+    - back to
+    - bed of roses
+    - budget
+    - bullfighting
+    - caravanserai
+    - come through
+    - cooperation
+    - cover
+    - crossroad
+    - depart
+    - determination
+    - dietician
+    - do sentence
+    - dominance
+    - dormitory
+    - dull
+    - earthquake
+    - equality
+    - escape
+    - expedition
+    - flamenco
+    - fragrant
+    - golden beaches
+    - gotten lost
+    - great wall of china
+    - heaven
+    - in fact
+    - inform
+    - inner
+    - inscription
+    - joke
+    - journal entries
+    - justice
+    - liver
+    - magic
+    - make wish
+    - mercifulness
+    - migration
+    - monument
+    - moreover
+    - mustard
+    ONCEKI_UNITE:
+    - attend (U1-003)
+    - busy (U1-004)
+    - invite (U1-013)
+    - join (U1-015)
+    - offer (U1-017)
+    - prefer (U1-018)
+    - respect for others (U1-061)
+    - honesty (U1-077)
+    - patience (U1-085)
+    - being understanding (U1-093)
+    - boring (U1-095)
+    - fun (U1-098)
+    - in my opinion, opinion (U2-005)
+    - enjoy (U2-008)
+    - noisy (U2-029)
+    - mostly (U2-046)
+    - comfortable (U2-068)
+    - fascinating (U2-077)
+    - relaxing (U2-091)
+    - enjoyable (U2-092)
+    - season (U3-021)
+    - delicious, delicious meals (U3-028)
+    - taste (U3-036)
+    - after that, lastly (U3-045)
+    - how long (U3-047)
+    - cuisine (U3-054)
+    - dish (U3-056)
+    - tradition, traditional, traditional dish (U3-063)
+    - guess (U4-021)
+    - book, book a room (U4-035)
+    - average (U5-037)
+    - worldwide (U5-048)
+    - adventurous (U6-001)
+    - experience (U6-027)
+    - mysterious (U6-029)
+    - amazing, gorgeous, magnificent, splendid (U6-030)
+    - would rather (U6-036)
+    - what type of (U6-038)
+    - destination (U6-041)
+    - landscape (U6-042)
+    - historic, historic site, historical, structure, temple (U6-045)
+    - pleasure (U6-057)
+  exam_record:
+    kaynak: ingilizcedilbilgisi.net "Sınavlarda çıkmış 7. ünite Tourism kelimeleri" (2013–2019 TEOG, 2018–2019 LGS); sayı = toplam/LGS
+    ogretim_birimlerinde:
+    - vacation / holiday (3/0 LGS)
+    - trip / journey / travel (2/2 LGS)
+    - sightseeing (go sightseeing / sightseeing tour) (1/0 LGS)
+    - souvenir (1/0 LGS)
+    - transportation (1/1 LGS)
+    - accommodation (accommodate) (1/0 LGS)
+    - seaside (1/0 LGS)
+    - island (1/0 LGS)
+    - square (city square) (1/0 LGS)
+    - fountain (1/0 LGS)
+    - climate (temperature) (3/0 LGS)
+    - population (1/0 LGS)
+    - construction (build) (1/0 LGS)
+    - definitely / truly (1/0 LGS)
+    - charming (2/0 LGS)
+    - be famous for (What is … famous for?) (1/0 LGS)
+    onceki_unitelerde:
+    - dish (5/0 LGS) → U3-056
+    - fascinating (3/2 LGS) → U2-077
+    - historic (2/0 LGS) → U6-045
+    - destination (1/0 LGS) → U6-041
+    - traditional (1/0 LGS) → U3-063
+themes:
+- name: Turizm ve seyahat
+  items:
+  - U7-001
+  - U7-002
+  - U7-003
+  - U7-004
+  - U7-005
+  - U7-006
+  - U7-007
+  - U7-008
+  - U7-009
+  - U7-010
+  - U7-011
+  - U7-012
+  note_tr: Gezi türleri, turist ve rehber, broşür dili. Broşür/ilan okuma sorularının kelime gövdesi.
+- name: Konaklama
+  items:
+  - U7-013
+  - U7-014
+  - U7-015
+  - U7-016
+  - U7-017
+  note_tr: 'Kalacak yer türleri: broşür ve tablo sorularında "Where can you stay?" cevapları.'
+- name: Yerler ve coğrafya
+  items:
+  - U7-018
+  - U7-019
+  - U7-020
+  - U7-021
+  - U7-022
+  - U7-023
+  - U7-024
+  - U7-025
+  - U7-026
+  - U7-027
+  - U7-028
+  - U7-029
+  note_tr: 'Bir şehri ya da bölgeyi tanıtan metnin dili: konum, iklim, nüfus, meydan, liman. square ve countryside tuzaklı.'
+- name: Tarih ve mimari
+  items:
+  - U7-030
+  - U7-031
+  - U7-032
+  - U7-033
+  - U7-034
+  - U7-035
+  - U7-036
+  - U7-037
+  - U7-038
+  - U7-039
+  - U7-040
+  - U7-041
+  - U7-042
+  note_tr: Okuma metinlerinin tarih dili (antik kent, fetih, imparator, inşa). Edilgen yapı (was built / was conquered) tanıma düzeyinde.
+- name: Kültür ve gelenek
+  items:
+  - U7-043
+  - U7-044
+  - U7-045
+  - U7-046
+  - U7-047
+  - U7-048
+  note_tr: Geleneksel el sanatı, halk dansı, misafirperverlik, yerel yemek. Yemek kelimeleri Ü3'te (dish, cuisine, traditional).
+- name: Yerleri betimleme
+  items:
+  - U7-049
+  - U7-050
+  - U7-051
+  - U7-052
+  - U7-053
+  - U7-054
+  - U7-055
+  note_tr: Betimleme sıfatları; fascinating, magnificent, mysterious önceki ünitelerde (tekrar). Karşılaştırma cümlelerinin sıfatları.
+- name: Deneyim, görüş ve öneri kalıpları
+  items:
+  - U7-056
+  - U7-057
+  - U7-058
+  - U7-059
+  - U7-060
+  - U7-061
+  note_tr: 'Programın işlevlerini taşıyan kalıplar: deneyim (Have you ever been to …?), betimleme sorusu (What is … like?), görüş (What do you think about …? – To me, …), geçmiş gezi soruları, öneri (must-see
+    / worth seeing).'
+grammar:
+- id: G1
+  name_tr: 'Deneyim sorma: Have you ever been to …? (kalıp düzeyi)'
+  form: Have you ever been to + yer? – Yes, I have. / No, I haven't. · I have been to … · I have never been to …
+  examples:
+  - Have you ever been to Ephesus? – Yes, I have. I went there last year.
+  - Have you ever been abroad? – No, I haven't. I've never been abroad.
+  - I have been to England twice.
+  explain_tr: Hayatında herhangi bir zaman bir yere gidip gitmediğini sorar; ne zaman olduğu söylenmez. Zaman söylenince Simple Past'a geçilir (I went there in 2024). 8. sınıf programında Present Perfect
+    dilbilgisi konusu yok; bu yüzden kalıp olarak ezberlenir, have/has + V3 kuralı öğretilmez.
+  common_errors:
+  - wrong: Have you ever gone to Rome?
+    right: Have you ever been to Rome?
+    why_tr: been to = gidip dönmüş; gone to = gitti, hâlâ orada.
+  - wrong: Have you ever been to abroad?
+    right: Have you ever been abroad?
+    why_tr: abroad zarftır, to almaz.
+  - wrong: Yes, I have been. I have been there last year.
+    right: Yes, I have. I went there last year.
+    why_tr: last year gibi geçmiş zaman ifadesi Simple Past ister.
+  lgs_note: Diyalog tamamlamada "Have you ever been to …?" sorusuna "Yes, I have / No, I haven't" ve ardından Simple Past ayrıntı gelir; çeldiriciler "Yes, I do / Yes, I did" olur.
+  items:
+  - U7-057
+  - U7-004
+- id: G2
+  name_tr: 'Betimleme sorusu: What is … like?'
+  form: What is/are + yer/şey + like? → It is/They are + sıfat
+  examples:
+  - What's Safranbolu like? – It's a charming town with old mansions.
+  - What's the weather like in Bodrum? – It's hot and sunny.
+  - What's the climate like in Erzurum? – It's cold in winter.
+  explain_tr: 'like burada "sevmek" değil, edat ("gibi"): "… nasıl bir yer/şey?" Cevap sıfatla verilir. "What do you like?" (neyi seversin) ile karıştırılır.'
+  common_errors:
+  - wrong: What is Safranbolu like? – Yes, I like it.
+    right: It's a charming and historic town.
+    why_tr: Soru betimleme ister, beğeni değil.
+  - wrong: How is the climate like?
+    right: What is the climate like? / How is the weather?
+    why_tr: like ile What kullanılır; How ile like birlikte kullanılmaz.
+  lgs_note: Broşür ve kartpostal sorularında "What is the weather like?" ve "What is the climate?" cevabı metinden bulunur.
+  items:
+  - U7-059
+  - U7-027
+- id: G3
+  name_tr: 'Geçmiş geziyi anlatma: Simple Past'
+  form: Did you + V1 …? / How long did you stay? / Where did you stay? · We visited / stayed / tried / bought / took …
+  examples:
+  - Did you enjoy your trip? – Yes, it was unforgettable.
+  - We stayed in a guesthouse for three nights.
+  - We tasted local dishes and bought souvenirs.
+  explain_tr: 'Kartpostal, gezi blogu ve diyaloglarda bitmiş gezi Simple Past ile anlatılır. Sık düzensiz fiiller: go-went, see-saw, buy-bought, take-took, eat-ate, fly-flew, spend-spent, leave-left.'
+  common_errors:
+  - wrong: Did you enjoyed your trip?
+    right: Did you enjoy your trip?
+    why_tr: did varsa fiil yalın kalır.
+  - wrong: We buyed souvenirs.
+    right: We bought souvenirs.
+    why_tr: buy düzensizdir.
+  lgs_note: Gezi metni sorularında "Where did they stay? / What did they taste? / How long did they stay?" bilgisi metinde aranır.
+  items:
+  - U7-058
+  - U7-003
+  - U7-008
+  - U7-046
+- id: G4
+  name_tr: Tarih metinlerinde edilgen yapı (tanıma düzeyi)
+  form: was/were + V3 (by …) · be located in
+  examples:
+  - The Colosseum was built in 80 AD.
+  - Istanbul was conquered by Mehmed II in 1453.
+  - Ephesus is located near Selçuk.
+  - The city was abandoned after an earthquake.
+  explain_tr: Okuma metinleri yapının kim tarafından değil, ne zaman yapıldığını söylerken edilgen kullanır. Öğrencinin yapıyı üretmesi gerekmez; "was built = inşa edildi" diye tanıması yeter.
+  common_errors:
+  - wrong: The Colosseum built in 80 AD.
+    right: The Colosseum was built in 80 AD.
+    why_tr: Yapı kendini inşa etmez; edilgen was + V3.
+  lgs_note: Metin sorularında "When was it built? / Who conquered the city?" bilgisi edilgen cümlede saklıdır.
+  items:
+  - U7-032
+  - U7-036
+  - U7-026
+  - U7-038
+  - U7-041
+- id: G5
+  name_tr: Yerleri karşılaştırma ve tercih (Ü6 tekrarı)
+  form: A is more + sıfat / sıfat-er than B · the most / the -est · prefer + V-ing · would rather + V1 + because …
+  examples:
+  - The countryside is more peaceful than the city.
+  - Istanbul is the most crowded city in Turkey.
+  - I'd rather stay in a bed and breakfast because it's cheaper than a hotel.
+  explain_tr: Yeni sıfatlar (crowded, charming, enormous, remarkable) Ü6 yapılarıyla kullanılır. crowded → more crowded (the most crowded); -ed ile biten sıfat -er almaz.
+  common_errors:
+  - wrong: Antalya is crowdeder than Mardin.
+    right: Antalya is more crowded than Mardin.
+    why_tr: -ed ile biten sıfat more alır.
+  - wrong: I'd rather to visit museums.
+    right: I'd rather visit museums.
+    why_tr: would rather + yalın fiil.
+  lgs_note: Tablo sorusunda iki şehrin nüfus, fiyat, sıcaklık değerleri karşılaştırılır; çeldiriciler karşılaştırmayı ters kurar.
+  items:
+  - U7-052
+  - U7-055
+  - U7-050
+  - U7-028
+  - U7-018
+  - U7-019
+- id: G6
+  name_tr: be famous for · worth + V-ing · birleşik sıfatlar
+  form: be famous for + isim · be worth + V-ing · must-see / all-inclusive (birleşik sıfat, tire ile)
+  examples:
+  - Konya is famous for its whirling dervishes.
+  - Pamukkale is definitely worth visiting.
+  - Ephesus is a must-see place.
+  - We stayed in an all-inclusive hotel.
+  explain_tr: famous for "… ile ünlü" (for + isim); famous as "… olarak ünlü". worth'ten sonra fiil -ing alır (U3-059 worth trying ile aynı). İsimden önce gelen birleşik sıfat tireyle yazılır.
+  common_errors:
+  - wrong: Şanlıurfa is famous with its kebab.
+    right: Şanlıurfa is famous for its kebab.
+    why_tr: Türkçe "ile" with'e çevrilmez.
+  - wrong: It is worth to see.
+    right: It is worth seeing.
+    why_tr: worth + V-ing.
+  lgs_note: '"What is X famous for?" sorusunun cevabı broşürde aranır; worth seeing / must-see öneri cümlelerinin anahtarıdır.'
+  items:
+  - U7-056
+  - U7-061
+  - U7-014
+expressions:
+- en: Have you ever been to …?
+  tr: … -e hiç gittin mi?
+  use: Deneyim sorarken
+  reply:
+  - Yes, I have.
+  - No, I haven't. / No, never.
+  item: U7-057
+  register: nötr
+- en: I've never been there.
+  tr: Oraya hiç gitmedim.
+  use: Deneyimin olmadığını söylerken
+  item: U7-057
+  register: nötr
+- en: Did you enjoy your trip?
+  tr: Gezin güzel geçti mi?
+  use: Dönen birine
+  reply:
+  - Yes, it was incredible!
+  - Not really. It was too crowded.
+  item: U7-058
+  register: gündelik
+- en: How long did you stay?
+  tr: Ne kadar kaldın?
+  use: Gezi süresini sorarken
+  reply:
+  - For a week.
+  - About two months.
+  item: U7-058
+  register: nötr
+- en: What is it like?
+  tr: Nasıl bir yer?
+  use: Bir yeri betimletirken
+  reply:
+  - It's ancient and charming.
+  - It's crowded but lively.
+  item: U7-059
+  register: nötr
+- en: What do you think about …?
+  tr: … hakkında ne düşünüyorsun?
+  use: Görüş sorarken
+  reply:
+  - To me, it is fascinating.
+  - I think it is worth seeing.
+  item: U7-060
+  register: nötr
+- en: To me, …
+  tr: Bana göre …
+  use: Kişisel görüş bildirirken
+  item: U7-060
+  register: gündelik
+- en: What is it famous for?
+  tr: Neyiyle ünlü?
+  use: Bir şehrin özelliğini sorarken
+  reply:
+  - It's famous for its handicrafts.
+  item: U7-056
+  register: nötr
+- en: It's a must-see.
+  tr: Mutlaka görülmeli.
+  use: Öneri yaparken
+  item: U7-061
+  register: gündelik
+- en: It's definitely worth visiting.
+  tr: Kesinlikle gezilmeye değer.
+  use: Güçlü öneri
+  item: U7-061
+  register: nötr
+- en: go sightseeing
+  tr: gezip görmek, gezmeye çıkmak
+  use: Tatil etkinliği
+  item: U7-005
+  register: nötr
+- en: buy souvenirs
+  tr: hediyelik eşya almak
+  use: Tatil etkinliği
+  item: U7-008
+  register: nötr
+- en: taste local dishes
+  tr: yerel yemekleri tatmak
+  use: Tatil etkinliği
+  item: U7-046
+  register: nötr
+- en: go abroad
+  tr: yurt dışına gitmek
+  use: Seyahat
+  item: U7-004
+  register: nötr
+- en: I'm having a great time in …
+  tr: … -de harika vakit geçiriyorum.
+  use: Kartpostal girişi
+  register: gündelik
+- en: Wish you were here!
+  tr: Keşke sen de burada olsaydın!
+  use: Kartpostal kapanışı
+  register: gündelik
+- en: The best time to visit is …
+  tr: Ziyaret için en iyi zaman …
+  use: Broşür dili
+  item: U7-027
+  register: nötr
+- en: It dates back to …
+  tr: … -e dayanır, … yılından kalmadır.
+  use: Tarihi yapı tanıtımı
+  item: U7-041
+  register: nötr
+collocations:
+- item: U7-001
+  pairs:
+  - a popular tourist attraction
+  - attract tourists / visitors
+  - an attractive city
+- item: U7-003
+  pairs:
+  - go on a trip
+  - a school trip
+  - a long journey
+  - travel abroad
+  - a travel plan
+- item: U7-005
+  pairs:
+  - go sightseeing
+  - a sightseeing tour
+  - city sightseeing
+- item: U7-013
+  pairs:
+  - find accommodation
+  - cheap accommodation
+  - accommodation options
+- item: U7-027
+  pairs:
+  - a mild / hot / cold climate
+  - average temperature
+  - the temperature rises
+- item: U7-030
+  pairs:
+  - an ancient city
+  - ancient ruins
+  - ancient history
+- item: U7-040
+  pairs:
+  - natural heritage
+  - cultural heritage
+  - World Heritage Site
+- item: U7-024
+  pairs:
+  - make a wish at the fountain
+  - throw a coin into the fountain
+- item: U7-046
+  pairs:
+  - local people
+  - local dishes
+  - local market
+- item: U7-052
+  pairs:
+  - a crowded beach
+  - a busy street
+  - crowded with tourists
+word_families:
+- root: attract
+  forms:
+  - form: attract
+    pos: fiil
+    tr: çekmek
+    item: U7-001
+  - form: attraction
+    pos: isim
+    tr: cazibe merkezi, gezilecek yer
+    item: U7-001
+  - form: attractive
+    pos: sıfat
+    tr: çekici
+    item: U7-001
+- root: conquer
+  forms:
+  - form: conquer
+    pos: fiil
+    tr: fethetmek
+    item: U7-036
+  - form: conquest
+    pos: isim
+    tr: fetih
+    item: U7-036
+  - form: conqueror
+    pos: isim
+    tr: fatih
+- root: construct / build
+  forms:
+  - form: build
+    pos: fiil
+    tr: inşa etmek
+    item: U7-032
+  - form: construction
+    pos: isim
+    tr: yapım, inşaat
+    item: U7-032
+  - form: building
+    pos: isim
+    tr: bina
+- root: hospitality
+  forms:
+  - form: hospitable
+    pos: sıfat
+    tr: misafirperver
+    item: U7-045
+  - form: hospitality
+    pos: isim
+    tr: misafirperverlik
+    item: U7-045
+- root: culture
+  forms:
+  - form: culture
+    pos: isim
+    tr: kültür
+    item: U7-044
+  - form: cultural
+    pos: sıfat
+    tr: kültürel
+    item: U7-044
+  - form: diversity
+    pos: isim
+    tr: çeşitlilik
+    item: U7-044
+- root: empire
+  forms:
+  - form: emperor
+    pos: isim
+    tr: imparator
+    item: U7-035
+  - form: empire
+    pos: isim
+    tr: imparatorluk
+    item: U7-035
+- root: accommodate
+  forms:
+  - form: accommodate
+    pos: fiil
+    tr: barındırmak, konaklatmak
+    item: U7-013
+  - form: accommodation
+    pos: isim
+    tr: konaklama
+    item: U7-013
+synonym_sets:
+- words:
+  - trip
+  - journey
+  - travel
+  - tour
+  difference_tr: trip gidip dönülen gezi; journey bir yerden bir yere uzun yolculuk; travel genelde fiil; tour rehberli, birkaç yeri gezen tur.
+  items:
+  - U7-003
+  - U7-007
+- words:
+  - vacation
+  - holiday
+  difference_tr: Aynı anlam; vacation Amerikan, holiday İngiliz kullanımı.
+  items:
+  - U7-002
+- words:
+  - incredible
+  - unbelievable
+  - amazing
+  - fascinating
+  difference_tr: Hepsi olumlu "harika, inanılmaz"; amazing (U6-030) ve fascinating (U2-077) önceki ünitelerde.
+  items:
+  - U7-049
+- words:
+  - enormous
+  - huge
+  - gigantic
+  difference_tr: Çok büyük; big'den güçlü. "very enormous" denmez.
+  items:
+  - U7-050
+- words:
+  - countryside
+  - rural
+  - the country
+  difference_tr: countryside isim (kırsal bölge), rural sıfat (kırsal), the country "kırsal kesim" anlamında da kullanılır.
+  items:
+  - U7-018
+- words:
+  - definitely
+  - truly
+  - certainly
+  difference_tr: Kesinlik ve vurgu zarfları.
+  items:
+  - U7-054
+- words:
+  - souvenir
+  - gift
+  - present
+  difference_tr: souvenir gezi hatırası; gift / present herhangi bir hediye.
+  items:
+  - U7-008
+opposites:
+- a: urban
+  b: rural
+  note_tr: kentsel ↔ kırsal
+- a: crowded
+  b: quiet / peaceful
+- a: ancient
+  b: modern
+- a: natural
+  b: artificial
+- a: cheap
+  b: expensive
+- a: unforgettable
+  b: forgettable / ordinary
+traps:
+- about: square
+  item: U7-023
+  kind: cok_anlamli
+  trap_tr: square "kare" diye bilinir.
+  tip_tr: 'Şehir bağlamında meydan: Times Square, Konak Square.'
+- about: busy street
+  item: U7-052
+  kind: cok_anlamli
+  trap_tr: busy = meşgul (U1-004).
+  tip_tr: 'Yer için busy = kalabalık, hareketli: a busy street.'
+- about: country
+  item: U7-018
+  kind: cok_anlamli
+  trap_tr: country = ülke.
+  tip_tr: 'the country / the countryside = kırsal kesim: live in the country.'
+- about: What is … like?
+  item: U7-059
+  kind: dilbilgisi
+  trap_tr: '"like" sevmek sanılır, cevap "Yes, I like it" verilir.'
+  tip_tr: 'Soru betimleme ister: cevap sıfat.'
+- about: been to / gone to
+  item: U7-057
+  kind: dilbilgisi
+  trap_tr: İkisi de "gitti" sanılır.
+  tip_tr: been to = gidip döndü; gone to = gitti, şu an orada.
+- about: abroad
+  item: U7-004
+  kind: dilbilgisi
+  trap_tr: '"go to abroad" (Türkçe "yurt dışına").'
+  tip_tr: 'abroad zarftır: go abroad, live abroad.'
+- about: travel
+  item: U7-003
+  kind: dilbilgisi
+  trap_tr: '"I had a nice travel."'
+  tip_tr: 'Sayılabilir isim olarak trip: I had a nice trip.'
+- about: climate / weather
+  item: U7-027
+  kind: cok_anlamli
+  trap_tr: İkisi de "hava" diye çevrilir.
+  tip_tr: climate = uzun süreli iklim; weather = bugünkü hava.
+- about: historic / historical
+  kind: benzer_yazilis
+  trap_tr: İkisi de "tarihi".
+  tip_tr: historic = tarihte önemli (historic site, U6-045); historical = tarihle ilgili (historical architecture, historical novel).
+- about: ancient / old
+  item: U7-030
+  kind: turkce_etkisi
+  trap_tr: İkisi de "eski".
+  tip_tr: ancient binlerce yıllık (ancient city); old günlük eski (old building).
+- about: date back to
+  item: U7-041
+  kind: cok_anlamli
+  trap_tr: date = tarih / randevu.
+  tip_tr: 'date back to = geçmişi …-e uzanır: It dates back to 3000 BC.'
+- about: famous for / famous with
+  item: U7-056
+  kind: turkce_etkisi
+  trap_tr: '"… ile ünlü" → famous with.'
+  tip_tr: famous for its kebab.
+- about: spectator / visitor
+  item: U7-010
+  kind: cok_anlamli
+  trap_tr: İkisi de "gelen kişi".
+  tip_tr: spectator gösteriyi izler (amfitiyatroda 25.000 spectators); visitor yeri gezer.
+- about: accommodation (yazım)
+  item: U7-013
+  kind: benzer_yazilis
+  trap_tr: '"accomodation" yazımı yaygın.'
+  tip_tr: 'çift c, çift m: acCoMModation; sayılamaz.'
+- about: souvenir (kaynak I)
+  item: U7-008
+  kind: kaynak_hatasi
+  trap_tr: I listesi "hatırat" diyor.
+  tip_tr: souvenir = hediyelik eşya, gezi hatırası.
+- about: natural heritage (kaynak I)
+  item: U7-040
+  kind: kaynak_hatasi
+  trap_tr: I listesi "kültürel miras" diyor.
+  tip_tr: natural heritage = doğal miras; cultural heritage = kültürel miras.
+- about: magnificent / fragrant / truly / locate (kaynak I)
+  kind: kaynak_hatasi
+  trap_tr: magnificent = "büyüleyici", fragrant = "hoş", truly = "doğru biçimde", locate = "yerleşmek".
+  tip_tr: muhteşem; güzel kokulu; gerçekten; konumlanmak / yerini bulmak.
+- about: would rather (kaynak B)
+  kind: kaynak_hatasi
+  trap_tr: B listesi "tercih etmek" diyor.
+  tip_tr: would rather = -meyi yeğlemek; yapısı prefer'den farklı (would rather + V1).
+- about: bed and breakfast
+  item: U7-015
+  kind: turkce_etkisi
+  trap_tr: Kelime kelime "yatak ve kahvaltı".
+  tip_tr: Oda + kahvaltı veren küçük otel, pansiyon.
+lgs_focus:
+  what_is_tested:
+  - 'Tatil broşürü / otel ilanı: fiyat, konaklama türü, etkinlikler, en iyi zaman → doğru bilgi ya da "verilmeyen bilgi" (en sık)'
+  - İki-üç şehri karşılaştıran tablo (nüfus, sıcaklık, turistik yer, konaklama) → doğru karşılaştırma cümlesi
+  - 'Kartpostal / e-posta / gezi blogu: nerede kaldı, ne yaptı, hava nasıl, ne aldı → çıkarım'
+  - 'Diyalog tamamlama: Have you ever been to …? / What is it like? / What do you think about …? / Which one do you prefer? Why?'
+  - 'Kelime anlamı: fascinating, charming, ancient, accommodation, sightseeing, souvenir, climate'
+  - 'Tercih + gerekçe: kişinin söylediği nedene uygun tatil türü'
+  question_patterns:
+  - type: text_infer
+    description_tr: Otel/tur broşürü → hangisi broşürde verilmemiştir / doğrudur.
+    sample_stem: 'Sunny Bay Resort — All-inclusive · 5 nights · 400 € per person · Activities: water sports, boat trips, folk dance shows · Best time to visit: May–September. Which of the following is NOT
+      mentioned in the brochure?'
+    sample_options:
+    - How to get to the resort
+    - The price of the holiday
+    - The type of accommodation
+    - Recreational activities
+    distractor_logic_tr: Üç şık broşürdeki satırların eş anlamlısıdır (price ↔ 400 €, accommodation ↔ all-inclusive, activities); doğru cevap ulaşım (transportation) satırının olmamasıdır.
+    items:
+    - U7-009
+    - U7-014
+    - U7-013
+    - U7-012
+    - U7-011
+    - U7-047
+  - type: table_graph
+    description_tr: Şehirleri karşılaştıran tablo → doğru karşılaştırma.
+    sample_stem: 'Table — Mardin: population 870,000, average summer temperature 34°C, famous for ancient architecture · Bodrum: population 200,000, 30°C, famous for seaside and cruises · Safranbolu: population
+      70,000, 28°C, famous for old mansions. According to the table, which of the following is TRUE?'
+    sample_options:
+    - Bodrum is more crowded than Safranbolu.
+    - Safranbolu is hotter than Mardin in summer.
+    - Mardin is famous for its seaside.
+    - Bodrum has the biggest population.
+    distractor_logic_tr: Çeldiriciler karşılaştırmayı ters kurar (hotter), özelliği yanlış şehre verir (seaside) ya da üstünlüğü yanlış satıra bağlar.
+    items:
+    - U7-028
+    - U7-027
+    - U7-052
+    - U7-056
+    - U7-030
+    - U7-033
+    - U7-020
+  - type: dialogue_complete
+    description_tr: Deneyim sorusu → uygun cevap.
+    sample_stem: 'Selin: Have you ever been to Cappadocia? — Kaan: ______ We stayed in a cave hotel for three nights. — Selin: Wow! Did you enjoy it?'
+    sample_options:
+    - Yes, I have. I went there last spring.
+    - No, I haven't. I've never been there.
+    - Yes, I do. I love it.
+    - I'd rather go to the seaside.
+    distractor_logic_tr: Arkadan gelen "We stayed …" bilgisi olumsuz cevabı eler; "Yes, I do" yardımcı fiil uyumsuz; tercih cümlesi soruyu cevaplamaz.
+    items:
+    - U7-057
+    - U7-058
+  - type: message_infer
+    description_tr: Kartpostal → yazar hakkında hangisi söylenebilir.
+    sample_stem: Hi Duru! Greetings from Mostar! I'm staying in a small guesthouse near the old bridge. The weather is warm and sunny. Yesterday we went sightseeing and I bought some handmade souvenirs.
+      The local people are so hospitable! Wish you were here. – Ece. According to the postcard, Ece ______.
+    sample_options:
+    - thinks the people in Mostar are welcoming
+    - is staying in an all-inclusive hotel
+    - complains about the weather
+    - has been to Mostar before
+    distractor_logic_tr: hospitable ↔ welcoming eşleşmesi doğru cevaptır; guesthouse ↔ all-inclusive konaklama türü karıştırılır; sunny ↔ complain çelişir; "daha önce gitti" bilgisi metinde yok.
+    items:
+    - U7-016
+    - U7-005
+    - U7-008
+    - U7-045
+    - U7-046
+  - type: situation
+    description_tr: Gerekçe → uygun tatil tercihi.
+    sample_stem: Bora hates crowded places and loves nature. He wants a quiet holiday. Which of the following is the best place for him?
+    sample_options:
+    - a guesthouse in the countryside
+    - a hotel near the busiest square in the city
+    - an all-inclusive resort with loud parties
+    - a cruise with 3,000 passengers
+    distractor_logic_tr: Çeldiricilerin hepsi "crowded" kavramının eş anlamlısını taşır (busiest, loud, 3,000 passengers).
+    items:
+    - U7-018
+    - U7-016
+    - U7-052
+    - U7-023
+    - U7-006
+  - type: synonym
+    description_tr: Altı çizili kelimenin anlamı.
+    sample_stem: The Great Wall of China is an enormous structure. It is about 21,000 km long. The underlined word is closest in meaning to ______.
+    sample_options:
+    - huge
+    - ancient
+    - crowded
+    - charming
+    distractor_logic_tr: Diğer şıklar aynı metne uyabilecek sıfatlardır (ancient da doğru olabilir ama anlamca eş değil); uzunluk bilgisi "büyüklük" ipucudur.
+    items:
+    - U7-050
+    - U7-030
+    - U7-055
+  priority_items:
+  - U7-001
+  - U7-002
+  - U7-003
+  - U7-005
+  - U7-008
+  - U7-013
+  - U7-014
+  - U7-018
+  - U7-020
+  - U7-023
+  - U7-027
+  - U7-028
+  - U7-030
+  - U7-032
+  - U7-055
+  - U7-054
+  - U7-011
+  - U7-057
+  - U7-059
+  - U7-056
+  tactics:
+  - Broşür sorusunda önce şıkları oku, sonra broşürde her şıkkın karşılığını işaretle; "NOT mentioned" sorusunda karşılığı olmayan şıkkı ara.
+  - Tablo sorusunda her şıktaki iki şehri ve tek sütunu karşılaştır; more/less ve -er yönünü kontrol et.
+  - 'Kartpostalda zaman ipuçlarına bak: yesterday → Simple Past, now/today → şimdiki durum.'
+  - Have you ever …? sorusunun cevabı have ile başlar (Yes, I have / No, I haven't); do/did ile başlayan şık elenir.
+  - What is it like? sorusunun cevabı sıfat içerir; "I like it" içeren şık tuzaktır.
+  - 'Eş anlamlıyla kodlama: metindeki hospitable şıkta welcoming / friendly, crowded şıkta busy olarak gelir.'
+  exam_vocabulary:
+  - en: brochure / advertisement
+    tr: broşür / reklam, ilan
+  - en: Which of the following is NOT mentioned?
+    tr: Aşağıdakilerden hangisinden söz edilmemiştir?
+  - en: According to the postcard / table
+    tr: Kartpostala / tabloya göre
+  - en: It is clear that …
+    tr: … olduğu açıktır
+  - en: closest in meaning
+    tr: anlamca en yakın
+  - en: per person / per night
+    tr: kişi başı / gecelik
+cross_unit:
+- item: U7-059 What is … like?
+  links_to: Ü1 karakter betimleme (What is he/she like?, Ü1 kaynak dosyası dilbilgisi)
+  note_tr: Aynı soru Ü1'de kişiler için, burada yerler için.
+- item: U7-018 countryside / rural, U7-020 seaside
+  links_to: U6-035 prefer … to, U6-036 would rather
+  note_tr: Tercih yapıları Ü6'da; burada yer türleriyle tekrar.
+- item: U7-052 crowded, U7-055 charming
+  links_to: U6-033 -er / more … than, U6-034 the most
+  note_tr: Yeni sıfatlar Ü6 karşılaştırma yapısıyla kullanılır.
+- item: U7-046 local (taste local dishes)
+  links_to: U3-056 dish / meal, U3-054 cuisine, U3-063 traditional
+  note_tr: Yemek kelimeleri Ü3'te; Ü7 "Turkish cuisine" ile turistik tanıtım.
+- item: U7-013 accommodation
+  links_to: U4-035 book / reserve (book a room)
+  note_tr: Oda ayırtma Ü4'te telefon diliyle öğretildi.
+- item: U7-011 transportation
+  links_to: U5-060 one-way / round-trip (ticket)
+  note_tr: Bilet dili Ü5'te.
+- item: U7-049 incredible
+  links_to: U2-077 fascinating, U6-030 magnificent, U6-029 mysterious
+  note_tr: Betimleme sıfatlarının bir kısmı önceki ünitelerde; LGS'de fascinating Ü7 bağlamında 2 kez çıktı.
+- item: U7-061 must-see / worth seeing
+  links_to: U3-059 worth trying
+  note_tr: worth + V-ing yapısı aynı.
+- item: U7-057 Have you ever been to …?
+  links_to: Ü6 open_questions (Have you ever …? TANIMA kararı)
+  note_tr: Ü7'de KALIP yapıldı; Ü6 kararı da buna göre güncellenebilir.
+story_hooks:
+- situation_tr: 'Murat Bey duyurur: yurt dışından ortak sınıf İzmir''e geliyor; sınıf İngilizce tur broşürü hazırlayacak. Ece hemen "must-see" listesi yapar.'
+  items:
+  - U7-001
+  - U7-009
+  - U7-061
+  - U7-007
+  - U7-010
+  comedy_tr: Ece'nin listesinde 47 yer var; tur bir gün.
+- situation_tr: 'Misafirlerle tanışma: "Have you ever been to Turkey?" – "No, never!" Kaan "Have you ever been abroad?" diye sorar, cevap "Yes, now!"'
+  items:
+  - U7-057
+  - U7-004
+  - U7-003
+  - U7-002
+  comedy_tr: 'Kaan "I have gone to Izmir" der, Selin düzeltir: "You live here, Kaan."'
+- situation_tr: 'Broşür yazımı: Konak Meydanı, Saat Kulesi''nin çeşmesi, Kordon''un deniz kenarı; Selin broşürdeki nüfus ve iklim bilgisini düzeltir.'
+  items:
+  - U7-023
+  - U7-024
+  - U7-020
+  - U7-028
+  - U7-027
+  - U7-026
+  comedy_tr: İlk taslakta "square" çizimi gerçekten bir kare.
+- situation_tr: 'Kemeraltı turu: Bora misafirlere yerel yemekleri ve el sanatlarını anlatır; hediyelik eşya pazarlığı.'
+  items:
+  - U7-046
+  - U7-043
+  - U7-008
+  - U7-052
+  - U7-045
+  - U7-056
+  comedy_tr: Bora üç simit alır, biri bile misafirlere kalmaz.
+- situation_tr: 'Antik kent günü (Efes): rehber anlatır — kent ne zaman inşa edildi, kim fethetti, neden terk edildi; amfitiyatroda seyirci kapasitesi.'
+  items:
+  - U7-030
+  - U7-032
+  - U7-036
+  - U7-035
+  - U7-038
+  - U7-041
+  - U7-040
+  - U7-010
+  - U7-031
+  - U7-050
+  comedy_tr: 'Duru amfitiyatroda fısıldar, en arkadaki Kaan duyar: "Remarkable!"'
+- situation_tr: 'Konaklama tartışması: misafir öğretmen all-inclusive otel ister, öğrenciler pansiyon/konukevi önerir; "Which one do you prefer? Why?"'
+  items:
+  - U7-013
+  - U7-014
+  - U7-015
+  - U7-016
+  - U7-017
+  - U7-018
+  comedy_tr: Kaan her şey dahil oteli "her şey bedava" sanar.
+- situation_tr: Program bozulur, en güzel an plansız Kordon gün batımı olur; misafirler "What do you think about Izmir?" sorusuna "To me, it's charming and unforgettable" der.
+  items:
+  - U7-060
+  - U7-055
+  - U7-053
+  - U7-049
+  - U7-054
+  - U7-058
+  comedy_tr: Ece programda gün batımına "18.42–18.47" yazmıştı.
+- situation_tr: 'Veda: misafirler kartpostal yazar, öğrenciler cevap verir: "Did you enjoy your trip? How long did you stay in Ephesus?"'
+  items:
+  - U7-058
+  - U7-059
+  - U7-011
+  - U7-044
+  - U7-048
+  - U7-047
+  comedy_tr: Bora'nın kartpostalı yalnız simit çizimi.
+mini_lessons:
+- type: mini_dilbilgisi
+  text_tr: been to = gidip dönmüş; gone to = gitmiş, hâlâ orada. "Have you ever been to Paris?" ama "Where is Ali? – He has gone to Paris."
+  refs:
+  - U7-057
+- type: tuzak
+  text_tr: 'What is İzmir like? "İzmir''i sever misin?" değil, "İzmir nasıl bir yer?" demektir. Cevap sıfat: It''s lively and charming.'
+  refs:
+  - U7-059
+- type: tuzak
+  text_tr: 'abroad zarftır: go abroad, live abroad, study abroad. "go to abroad" yanlış.'
+  refs:
+  - U7-004
+- type: kelime_ailesi
+  text_tr: 'attract (çekmek) → attraction (gezilecek yer) → attractive (çekici). Mıknatıs gibi turist çeken yer: tourist attraction.'
+  refs:
+  - U7-001
+- type: hafiza_kancasi
+  text_tr: 'accommodation çok büyük bir kelime, çünkü içinde iki oda var: çift c, çift m.'
+  refs:
+  - U7-013
+- type: tuzak
+  text_tr: 'square = kare; ama şehirde meydan: Times Square, Konak Square. busy = meşgul; ama yer için kalabalık: a busy street.'
+  refs:
+  - U7-023
+  - U7-052
+- type: mini_dilbilgisi
+  text_tr: 'Tarih metinlerinde "was built / was conquered / is located" kalıplarını tanı: "inşa edildi / fethedildi / bulunur". Üretmen gerekmez.'
+  refs:
+  - U7-032
+  - U7-036
+  - U7-026
+- type: tuzak
+  text_tr: climate = bir yerin yıllar boyunca havası (Mediterranean climate); weather = bugünkü hava (The weather is rainy today).
+  refs:
+  - U7-027
+- type: lgs_taktigi
+  text_tr: Broşür sorusunda "NOT mentioned" varsa her şıkkın broşürde karşılığını işaretle; işaretsiz kalan şık cevaptır.
+  refs:
+  - U7-009
+- type: mini_dilbilgisi
+  text_tr: famous for + isim (famous for its handicrafts); worth + V-ing (worth visiting). Türkçe "ile ünlü" yüzünden "famous with" yazma.
+  refs:
+  - U7-056
+  - U7-061
+- type: ilginc_bilgi
+  text_tr: Efes Antik Kenti 2015'te UNESCO Dünya Mirası Listesi'ne alındı; büyük tiyatrosu yaklaşık 25.000 kişiliktir.
+  refs:
+  - U7-040
+  - U7-030
+  - U7-010
+- type: tuzak
+  text_tr: 'ancient ≠ old: ancient binlerce yıllık (ancient city), old günlük eski (old building). Kaynak listelerde ikisi de "eski" yazıyor.'
+  refs:
+  - U7-030
+open_questions:
+- Have you ever been to …? KALIP birimi yapıldı (Ü6'da TANIMA idi). Present Perfect dilbilgisi olarak öğretilmeden sabit kalıp olarak kalsın mı? Kalırsa Ü6 kararı da güncellenmeli.
+- MEB programının resmî PDF'i açılamadı; kazanım kodları (E8.7.L1, SI1, SI2, SP1, R1, W1) öğretmen planları ve ilçe dağılım tablosundan doğrulandı, metinler oradan çevrildi. Tam Useful Language listesi
+  resmî programdan kontrol edilmeli.
+- Çıkmış kelime tablosu 2013–2019 TEOG ve 2018–2019 LGS'yi kapsıyor (ingilizcedilbilgisi.net). 2020–2025 LGS soruları doğrulanmadı.
+- charming ve temperature kaynak listelerde yok; yalnız çıkmış kelime tablosundan eklendi (charming ayrı birim, temperature climate birimine bağlı). Onaylanıyor mu?
+- destination (U6-041) ve historic sites (U6-045) Ü7'nin merkez kelimeleri ama Ü6'da öğretildi; ÖNCEKİ ÜNİTE sayıldı. Ü7'de ayrı birim istenir mi?
+- season.yaml Ü7 çerçevesindeki Saat Kulesi, Kemeraltı (bazaar), Asansör ve ruins kaynaklarda yok; birim yapılmadı.
+- Hikâye/gün dosyası yazılmadı (kullanıcı kararı); story_hooks yalnız durum fikri, gün gruplaması yok.
+phrase_bank:
+- en: Have you ever been abroad?
+  tr: Hiç yurt dışına gittin mi?
+  function: deneyim
+  items:
+  - U7-057
+  - U7-004
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Have you ever visited an island?
+  tr: Hiç bir adayı ziyaret ettin mi?
+  function: deneyim
+  items:
+  - U7-057
+  - U7-022
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Where have you been to in Turkey?
+  tr: Türkiye'de nerelere gittin?
+  function: deneyim
+  items:
+  - U7-057
+  source: ders kitabı (s. 84–94)
+- en: I have been to England.
+  tr: İngiltere'ye gittim (bulundum).
+  function: deneyim
+  items:
+  - U7-057
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I have never seen such a splendid place.
+  tr: Hiç böyle muhteşem bir yer görmedim.
+  function: deneyim
+  items:
+  - U7-057
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Did you enjoy your trip?
+  tr: Gezinden keyif aldın mı?
+  function: geçmiş gezi
+  items:
+  - U7-058
+  - U7-003
+  source: MEB Useful Language
+- en: How long did you stay there?
+  tr: Orada ne kadar kaldın?
+  function: geçmiş gezi
+  items:
+  - U7-058
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I stayed there for about two months.
+  tr: Orada yaklaşık iki ay kaldım.
+  function: geçmiş gezi
+  items:
+  - U7-058
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I stayed in a dormitory.
+  tr: Bir yurtta kaldım.
+  function: geçmiş gezi
+  items:
+  - U7-013
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I went alone.
+  tr: Yalnız gittim.
+  function: geçmiş gezi
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What did you do while you were there?
+  tr: Oradayken ne yaptın?
+  function: geçmiş gezi
+  items:
+  - U7-058
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What did you like the most about it?
+  tr: En çok neyini beğendin?
+  function: geçmiş gezi
+  items:
+  - U7-058
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: It was incredible.
+  tr: İnanılmazdı.
+  function: geçmiş gezi
+  items:
+  - U7-049
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Do you prefer sightseeing or a beach vacation?
+  tr: Gezip görmeyi mi yoksa deniz tatilini mi tercih edersin?
+  function: tercih
+  items:
+  - U7-005
+  - U7-002
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I prefer historic sites.
+  tr: Tarihi yerleri tercih ederim.
+  function: tercih
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I prefer urban places.
+  tr: Şehir yerlerini tercih ederim.
+  function: tercih
+  items:
+  - U7-019
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I prefer rural places. I think they are peaceful.
+  tr: Kırsal yerleri tercih ederim. Bence huzurlular.
+  function: tercih
+  items:
+  - U7-018
+  source: ders kitabı (s. 84–94)
+- en: I'd rather have a cultural holiday than a historic holiday.
+  tr: Tarih tatili yerine kültür tatilini yeğlerim.
+  function: tercih
+  items:
+  - U7-044
+  - U7-002
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I'd rather visit historic sites because they are usually more interesting.
+  tr: Tarihi yerleri gezmeyi yeğlerim çünkü genelde daha ilginçler.
+  function: tercih
+  source: MEB Useful Language
+- en: I'd love to see the historic sites.
+  tr: Tarihi yerleri görmeyi çok isterim.
+  function: tercih
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I'm interested in natural beauties.
+  tr: Doğal güzelliklerle ilgileniyorum.
+  function: tercih
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Which tourist attractions do you prefer visiting?
+  tr: Hangi turistik yerleri gezmeyi tercih edersin?
+  function: tercih
+  items:
+  - U7-001
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Suppose that you are going on a holiday with your family. What type of places do you prefer? Why?
+  tr: Ailenle tatile gittiğini düşün. Ne tür yerleri tercih edersin? Neden?
+  function: tercih
+  items:
+  - U7-002
+  source: ders kitabı (s. 84–94)
+- en: What do you think about Rome?
+  tr: Roma hakkında ne düşünüyorsun?
+  function: görüş
+  items:
+  - U7-060
+  source: MEB Useful Language
+- en: In my opinion, … / To me, …
+  tr: Bence … / Bana göre …
+  function: görüş
+  items:
+  - U7-060
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: To me, everybody should definitely go there.
+  tr: Bana göre herkes kesinlikle oraya gitmeli.
+  function: görüş
+  items:
+  - U7-060
+  - U7-054
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I think they are fascinating.
+  tr: Bence büyüleyiciler.
+  function: görüş
+  items:
+  - U7-060
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: I believe … / I guess … / I suppose …
+  tr: İnanıyorum ki … / Sanırım … / Zannederim …
+  function: görüş
+  items:
+  - U7-060
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Let me think.
+  tr: Bir düşüneyim.
+  function: görüş
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: It's truly an ancient city.
+  tr: Gerçekten antik bir şehir.
+  function: betimleme
+  items:
+  - U7-054
+  - U7-030
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: My favourite tourist attraction is Mostar.
+  tr: En sevdiğim turistik yer Mostar.
+  function: betimleme
+  items:
+  - U7-001
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What are some tourist attractions?
+  tr: Bazı turistik yerler nelerdir?
+  function: betimleme
+  items:
+  - U7-001
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What is Şanlıurfa famous for?
+  tr: Şanlıurfa neyiyle ünlü?
+  function: betimleme
+  items:
+  - U7-056
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Why is Venice popular?
+  tr: Venedik neden popüler?
+  function: betimleme
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What's the population of the city?
+  tr: Şehrin nüfusu ne kadar?
+  function: betimleme
+  items:
+  - U7-028
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What's the name of the folk dance in Trabzon?
+  tr: Trabzon'daki halk dansının adı ne?
+  function: betimleme
+  items:
+  - U7-047
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What's the weather like?
+  tr: Hava nasıl?
+  function: hava ve iklim
+  items:
+  - U7-059
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What's the climate like?
+  tr: İklim nasıl?
+  function: hava ve iklim
+  items:
+  - U7-059
+  - U7-027
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What's the average temperature in the summer in Edirne?
+  tr: Edirne'de yazın ortalama sıcaklık kaç?
+  function: hava ve iklim
+  items:
+  - U7-027
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What's the best time to visit there?
+  tr: Orayı ziyaret etmenin en iyi zamanı ne?
+  function: hava ve iklim
+  items:
+  - U7-027
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What can we do there?
+  tr: Orada ne yapabiliriz?
+  function: etkinlik ve yemek
+  items:
+  - U7-012
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What can you do in Venice?
+  tr: Venedik'te ne yapabilirsin?
+  function: etkinlik ve yemek
+  items:
+  - U7-012
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What are the traditional dishes?
+  tr: Geleneksel yemekler neler?
+  function: etkinlik ve yemek
+  items:
+  - U7-046
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What can you taste in Konya?
+  tr: Konya'da neyin tadına bakabilirsin?
+  function: etkinlik ve yemek
+  items:
+  - U7-046
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Where can you have a delicious meal?
+  tr: Nerede lezzetli bir yemek yiyebilirsin?
+  function: etkinlik ve yemek
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What gifts can we buy?
+  tr: Hangi hediyeleri alabiliriz?
+  function: etkinlik ve yemek
+  items:
+  - U7-008
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Where can you stay in Safranbolu?
+  tr: Safranbolu'da nerede kalabilirsin?
+  function: konaklama ve ulaşım
+  items:
+  - U7-013
+  - U7-016
+  source: ders kitabı (s. 84–94)
+- en: How can I go to Ibiza?
+  tr: İbiza'ya nasıl gidebilirim?
+  function: konaklama ve ulaşım
+  items:
+  - U7-011
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Let's prepare a travel plan.
+  tr: Bir seyahat planı hazırlayalım.
+  function: konaklama ve ulaşım
+  items:
+  - U7-003
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Who conquered Edirne?
+  tr: Edirne'yi kim fethetti?
+  function: tarih
+  items:
+  - U7-036
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: When did he conquer it?
+  tr: Onu ne zaman fethetti?
+  function: tarih
+  items:
+  - U7-036
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: When did the construction of the Colosseum end?
+  tr: Kolezyum'un yapımı ne zaman bitti?
+  function: tarih
+  items:
+  - U7-032
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: What's the capacity of the Colosseum?
+  tr: Kolezyum'un kapasitesi ne?
+  function: tarih
+  items:
+  - U7-010
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Why did the emperors of China build the Great Wall of China?
+  tr: Çin imparatorları Çin Seddi'ni neden inşa etti?
+  function: tarih
+  items:
+  - U7-035
+  - U7-032
+  source: ders kitabı kalıp listesi (ingilizcedilbilgisi.net)
+- en: Firstly, our tour guide informed us about the place.
+  tr: Önce rehberimiz bize yer hakkında bilgi verdi.
+  function: gezi anlatımı
+  items:
+  - U7-007
+  source: ders kitabı (s. 84–94)
+- en: We departed that place with unforgettable memories.
+  tr: Oradan unutulmaz anılarla ayrıldık.
+  function: gezi anlatımı
+  items:
+  - U7-053
+  source: ders kitabı (s. 84–94)
+- en: I'm having a great time in Bodrum.
+  tr: Bodrum'da harika vakit geçiriyorum.
+  function: gezi anlatımı
+  source: kartpostal dili (ingilizcepedia)
+- en: Wish you were here!
+  tr: Keşke sen de burada olsaydın!
+  function: gezi anlatımı
+  source: kartpostal dili (ingilizcepedia)

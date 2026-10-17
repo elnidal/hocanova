@@ -1,0 +1,308 @@
+schema_version: 1
+program: lgs
+unit: 6
+day: 1
+status: draft
+title: "On üzerinden on"
+est_minutes: 10
+characters: [Murat Bey, Kaan, Elif, Selin, Ece, Bora, Duru]
+new_items: [U6-001, U6-002, U6-003, U6-011, U6-027, U6-038]
+
+story:
+  - id: s01
+    text: "Pazartesi sabahı Murat Bey sınıfa elinde rengârenk bir broşür destesiyle girdi. Kapakta bir göl, bir orman ve kocaman harflerle bir kamp adı vardı."
+  - id: s02
+    text: "Murat Bey: \"<en>Spring {U6-001|Adventure} Camp! Two days in the forest, next to a lake. Your parents bought the {U5-060|round-trip} bus tickets online last week.</en>\""
+  - id: s03
+    text: "Kaan broşürü daha masaya değmeden kaptı: \"<en>A climbing wall! A zip-line! A night walk! This is the {U6-001|adventure} of the year!</en>\""
+  - id: s04
+    text: "Elif çantasından en sevdiği gençlik dergisini çıkarıp ortadaki sayfayı açtı: \"<en>Perfect timing! There's a quiz in Teen Wave: 'Are you an {U6-003|adrenaline seeker}?' Ten questions. Let's do it!</en>\""
+  - id: s05
+    text: "Elif ilk soruyu yarışma sunucusu gibi okudu: \"<en>Question one: {U6-038|What kind of} holiday do you like? A: a quiet beach. B: {U6-002|extreme sports} in the mountains.</en>\""
+  - id: s06
+    text: "Kaan soru bitmeden cevapladı: \"<en>B! Always B! I love {U6-011|danger}!</en>\" Selin yalnızca kaşını kaldırdı."
+  - id: s07
+    text: "Elif: \"<en>Question two: you try something new. Is a new {U6-027|experience} fun or scary for you?</en>\" Kaan: \"<en>Fun! Every new {U6-027|experience} is fun!</en>\""
+  - id: s08
+    text: "Selin kalemini düzgünce masaya bıraktı: \"<en>Scary. I like plans. Surprises are not in my plans.</en>\""
+  - id: s09
+    text: "On soru bitti, puanlar toplandı. Elif dergiyi havaya kaldırdı: \"<en>Kaan: ten out of ten! You're a real {U6-003|adrenaline seeker}!</en>\""
+  - id: s10
+    text: "Selin: \"<en>Two out of ten. I love plans.</en>\" Ece: \"<en>Four for me. I'm very {U6-001|adventurous}… on paper.</en>\""
+  - id: s11
+    text: "Bora puanını söylemeden önce biraz bekledi: \"<en>Five. I love {U6-002|extreme sports}… on TV. With snacks.</en>\""
+  - id: s12
+    text: "Herkes Duru'ya döndü. Duru gözlerini açmadan: \"<en>Zero. Is sleeping an {U6-002|extreme sport}?</en>\" Kaan: \"<en>Duru, you're too {U1-079|laid-back} for this quiz!</en>\""
+  - id: s13
+    text: "Murat Bey broşür dağıtmayı bıraktı: \"<en>Wait a minute. Kaan, is your answer a good answer for camp? {U6-011|Dangerous} things are not fun at a school camp.</en>\""
+  - id: s14
+    text: "Murat Bey: \"<en>At our camp, an adult is always with you, and everybody {U2-084|follows the rules}. No exceptions.</en>\""
+  - id: s15
+    text: "Kaan: \"<en>But a little {U6-011|danger} is {U1-096|exciting}!</en>\" Murat Bey: \"<en>The zip-line is {U1-096|exciting}. {U6-011|Danger} is not.</en>\""
+  - id: s16
+    text: "Ece plan defterini çoktan açmıştı bile: \"<en>OK, team. {U6-038|What type of} activity do you want at camp? I'm making a list.</en>\""
+  - id: s17
+    text: "Cevaplar yağmur gibi geldi. Kaan: \"<en>Zip-line!</en>\" Elif: \"<en>Singing by the campfire!</en>\" Bora: \"<en>Anything with no bugs.</en>\""
+  - id: s18
+    text: "Duru tek kelime söyledi: \"<en>Hammock.</en>\" Ece bunu da ciddi ciddi listeye yazdı."
+  - id: s19
+    text: "Murat Bey, Selin'in yüzündeki ifadeyi görünce gülümsedi: \"<en>Don't worry, Selin. I'm {U6-027|experienced} at camps. This is my tenth one. And the camp team is very {U6-027|experienced} too.</en>\""
+  - id: s20
+    text: "Selin: \"<en>Thank you. But I'm totally {U6-027|inexperienced}. I never sleep in a tent.</en>\" Bora: \"<en>Me neither. Tents have bugs.</en>\""
+  - id: s21
+    text: "Kaan hayal kurmaya başlamıştı bile: \"<en>{U6-038|What kind of} music is good for a night walk? Fast music! Like me!</en>\""
+  - id: s22
+    text: "Selin saatine baktı: \"<en>The bus leaves at seven a.m., Kaan. Seven.</en>\" Kaan: \"<en>Me? Late? Never! I'm an {U6-003|adrenaline seeker}!</en>\" Selin: \"<en>Being late isn't an {U6-001|adventure}, Kaan.</en>\""
+  - id: s23
+    text: "O akşam Ece broşürle dergiyi yan yana koydu. Dergideki bir fotoğrafta biri köprüden aşağı atlıyordu. Ece defterine yeni bir sayfa açıp en üste yazdı: \"<en>Fun? Difficulty? {U6-011|Danger}?</en>\" Yarın tahtaya bir tablo çizecekti."
+
+scene:
+  - id: c01
+    speaker: Elif
+    text: "<en>Are you an adrenaline seeker? Question one: what kind of holiday do you like?</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>Extreme sports in the mountains! I love danger!</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>I'm inexperienced. A new experience is scary for me.</en>"
+  - id: c04
+    speaker: Murat Bey
+    text: "<en>Dangerous things are not fun at a school camp.</en>"
+  - id: c05
+    speaker: Ece
+    text: "<en>OK, team. What type of adventure do you want?</en>"
+
+steps:
+  - item: U6-001
+    sezdir:
+      id: u6d01-001-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"This is the adventure of the year!\" cümlesinde \"adventure\" ne anlama geliyordu?"
+      options: ["macera", "sınav", "ödev", "toplantı"]
+      answer: 0
+    kullan:
+      id: u6d01-001-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My grandpa travelled across Africa by bike when he was young. He loves ________ and new places.</en>"
+      options: ["adventure", "traffic", "homework", "queues"]
+      answer: 0
+      explain: "Bisikletle Afrika'yı dolaşan biri maceraya (adventure) bayılır. Maceracı kişi adventurer, maceraperest sıfatı adventurous'tır."
+    sina:
+      id: u6d01-001-s
+      type: trait_match
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Which of the following describes Mia?</en>"
+      stem: "<en>Mia: I love trying new things. Last summer I slept in a tent in the forest and swam in a cold lake. Next year I want to travel to Iceland!</en>"
+      options: ["adventurous", "lazy", "stubborn", "jealous"]
+      answer: 0
+      explain: "Yeni şeyler denemeyi seven, ormanda çadırda uyuyan ve İzlanda'ya gitmek isteyen biri adventurous'tır."
+  - item: U6-002
+    sezdir:
+      id: u6d01-002-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"extreme sports in the mountains\" ifadesindeki \"extreme sports\" ne anlama geliyordu?"
+      options: ["yüksek risk ve heyecan içeren sporlar", "takım sporları", "kış tatili", "yavaş yürüyüşler"]
+      answer: 0
+    kullan:
+      id: u6d01-002-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan watches videos of ________ every night: people jump out of planes and ride bikes down mountains.</en>"
+      options: ["extreme sports", "team sports", "board games", "classical music"]
+      answer: 0
+      explain: "Uçaktan atlamak ve dağdan bisikletle inmek yüksek riskli sporlardır: extreme sports."
+    sina:
+      id: u6d01-002-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who does an extreme sport in his or her free time?</en>"
+      stem: "<en>Teen Wave asked four teens about their free time.\nArda: I play chess with my grandpa.\nLale: I ride a snowboard down high mountains.\nCan: I read comics in my room.\nDefne: I watch films at home.</en>"
+      options: ["Lale", "Arda", "Can", "Defne"]
+      answer: 0
+      explain: "Yüksek dağlardan snowboard ile inmek bir extreme sport'tur; satranç, çizgi roman ve film değildir."
+  - item: U6-003
+    sezdir:
+      id: u6d01-003-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"You're a real adrenaline seeker!\" cümlesindeki \"adrenaline seeker\" ne anlama geliyordu?"
+      options: ["heyecan arayan, adrenalin tutkunu kişi", "çok tembel kişi", "haberleri takip eden kişi", "sınavdan korkan kişi"]
+      answer: 0
+    kullan:
+      id: u6d01-003-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan: I love fast rides, high places and scary films. I'm an ________!</en>"
+      options: ["adrenaline seeker", "indoor person", "honest student", "only child"]
+      answer: 0
+      explain: "Hızlı oyuncakları, yüksek yerleri ve korku filmlerini seven biri heyecan peşindedir: adrenaline seeker."
+    sina:
+      id: u6d01-003-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the quiz results, who is an adrenaline seeker?</en>"
+      stem: "<en>Teen Wave Quiz – results\n8–10 points: You are an adrenaline seeker.\n4–7 points: You like a little excitement.\n0–3 points: You prefer quiet days.\n\nKaan: 10 · Bora: 5 · Selin: 2 · Duru: 0</en>"
+      options: ["Kaan", "Bora", "Selin", "Duru"]
+      answer: 0
+      explain: "8–10 puan adrenaline seeker demek; bu aralıkta yalnız Kaan (10) var."
+  - item: U6-011
+    sezdir:
+      id: u6d01-011-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede \"Dangerous things are not fun at a school camp.\" cümlesindeki \"dangerous\" ne anlama geliyordu?"
+      options: ["tehlikeli", "pahalı", "kolay", "sessiz"]
+      answer: 0
+    kullan:
+      id: u6d01-011-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't swim in this lake at night. It's ________.</en>"
+      options: ["dangerous", "delicious", "polite", "generous"]
+      answer: 0
+      explain: "Gece gölde yüzmek tehlikelidir: dangerous. İsmi danger (tehlike)."
+    sina:
+      id: u6d01-011-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which of the following is closest in meaning to the underlined word?</en>"
+      stem: "<en>The sign says: 'Thin ice! Don't walk on the lake!' Walking on the lake in winter is <u>dangerous</u>.</en>"
+      options: ["not safe", "very boring", "really cheap", "easy"]
+      answer: 0
+      explain: "İnce buzun üstünde yürümek güvenli değildir: dangerous = not safe."
+  - item: U6-027
+    sezdir:
+      id: u6d01-027-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede Selin'in \"I'm totally inexperienced.\" cümlesi ne anlama geliyordu?"
+      options: ["Hiç deneyimim yok.", "Çok heyecanlıyım.", "Hiç acıkmadım.", "Çok yorgunum."]
+      answer: 0
+    kullan:
+      id: u6d01-027-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Camping in the forest was a new ________ for me. I loved it!</en>"
+      options: ["experience", "experiment", "excuse", "recipe"]
+      answer: 0
+      explain: "Yaşanan yeni bir şey experience'tır (deneyim). Experiment laboratuvardaki deneydir."
+    sina:
+      id: u6d01-027-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: Is the camp team good at their job?\nMurat Bey: ________ They work at camps every summer, for twenty years now.</en>"
+      options: ["Yes, they're very experienced.", "No, they're inexperienced.", "Sorry, wrong number.", "I'd love to."]
+      answer: 0
+      explain: "Yirmi yıldır her yaz kampta çalışan bir ekip deneyimlidir: experienced."
+  - item: U6-038
+    sezdir:
+      id: u6d01-038-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede Ece'nin \"What type of activity do you want at camp?\" sorusu ne anlama geliyordu?"
+      options: ["Kampta ne tür bir etkinlik istiyorsunuz?", "Kampta kaç etkinlik var?", "Kampa ne zaman gidiyoruz?", "Kampta kiminle kalacaksınız?"]
+      answer: 0
+    kullan:
+      id: u6d01-038-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: What ________ of music do you like?\nB: Rock. Only rock!</en>"
+      options: ["kind", "time", "many", "often"]
+      answer: 0
+      explain: "What kind of / What type of … ? = Ne tür …? Cevap bir tür olur: rock, pop, jazz."
+    sina:
+      id: u6d01-038-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which question is suitable for Elif's answer?</en>"
+      stem: "<en>Bora: ________\nElif: Pop music and a little jazz.</en>"
+      options: ["What kind of music do you like?", "How often do you sing?", "Who is your favourite singer?", "Where do you listen to music?"]
+      answer: 0
+      explain: "Elif müzik türü söylüyor (pop, jazz); bu yüzden soru What kind of music…? olmalı. Sıklık, kişi ya da yer sorulmamış."
+
+review:
+  - id: u6d01-r01
+    type: situation
+    item: U5-017
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>What should Bora do?</en>"
+    stem: "<en>Bora gets a message from a stranger: 'Click here and win a free drum set!'</en>"
+    options: ["He shouldn't click on the link.", "He should click on the link quickly.", "He should send his password.", "He should share the link with his friends."]
+    answer: 0
+    explain: "Tanımadığı birinden gelen 'bedava' bağlantıya tıklamamalı (click)."
+  - id: u6d01-r02
+    type: table_graph
+    item: U5-060
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>Selin's dad wants ONE ticket to go to the camp and come back. Which ticket does he buy, and what is the price?</en>"
+    stem: "<en>Camp Bus – tickets\nOne-way: 150 TL\nRound-trip: 250 TL</en>"
+    options: ["A round-trip ticket: 250 TL", "A one-way ticket: 150 TL", "A round-trip ticket: 150 TL", "A one-way ticket: 250 TL"]
+    answer: 0
+    explain: "Gidip dönmek için tek bilet round-trip'tir ve 250 TL'dir."
+  - id: u6d01-r03
+    type: situation
+    item: U5-056
+    lgs_like: true
+    stem_id: S09
+    prompt: "<en>What is Duru doing?</en>"
+    stem: "<en>Kaan: Do you want to play basketball with us on Saturday?\nDuru: That's very kind of you, but I can't. I have a rehearsal.</en>"
+    options: ["refusing an invitation", "accepting an invitation", "giving directions", "making a complaint"]
+    answer: 0
+    explain: "That's very kind of you, but … kibar bir ret kalıbıdır."
+  - id: u6d01-r04
+    type: text_infer
+    item: U5-041
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to Ece's report, which of the following is TRUE?</en>"
+    stem: "<en>Ece's report: In January our channel had 1,200 subscribers. After Bora's story, the number increased to 3,400 in February. Most of the comments are kind.</en>"
+    options: ["The number of subscribers went up in February.", "The channel lost subscribers in February.", "The channel had 3,400 subscribers in January.", "Most of the comments are unkind."]
+    answer: 0
+    explain: "increased = arttı: Şubatta abone sayısı 1.200'den 3.400'e çıktı."
+  - id: u6d01-r05
+    type: message_infer
+    item: U5-020
+    lgs_like: true
+    stem_id: S11
+    prompt: "<en>Why is Elif writing to Mia?</en>"
+    stem: "<en>Hi Mia! It's Elif. Our class is going to a nature camp on Friday. There's no internet there, so I can't chat online for two days. Talk to you soon!</en>"
+    options: ["To say that she will be offline for a while.", "To invite Mia to the camp.", "To ask for Mia's password.", "To make a complaint about the internet."]
+    answer: 0
+    explain: "Kampta internet yok; Elif iki gün çevrim dışı (offline) olacağını haber veriyor."
+
+tips:
+  - type: tuzak
+    refs: [U6-027]
+    text: "experience = deneyim, yaşanmış şey (a new experience). experiment = deney (bilim fuarındaki volkan deneyi gibi). Harfleri benzer, anlamları farklı!"
+  - type: kelime_ailesi
+    refs: [U6-001, U6-011]
+    text: "adventure (macera) → adventurer (maceracı kişi) → adventurous (maceraperest). danger (tehlike, isim) → dangerous (tehlikeli, sıfat)."
+  - type: lgs_taktigi
+    refs: [U6-038]
+    text: "What kind of / What type of …? sorusunun cevabı bir türdür: 'Pop music', 'Extreme sports'. Cevapta sayı, saat ya da yer varsa soru başka bir şeydir (How many, When, Where)."
+
+coach:
+  start: "Murat Bey kamp broşürlerini dağıttı, dergide bir test var: Kaan 10 aldı, Selin 2. Sen kaç alırdın? 🏕️"
+  end_good: "Harika! Bugün on üzerinden on aldın; Kaan bile puanını kıskandı 😄"
+  end_mixed: "İyi başlangıç! {weak} biraz kaçtı ama kamp otobüsü daha kalkmadı. Yarın yakalarız 🚌"
+
+notifications:
+  morning: "Kaan testten 10 aldı, Selin 2. Ya sen kaç alırdın? 🏕️"
+  evening: "Duru'ya göre uyumak da bir spor. Katılıyor musun? 😴"
+  review: "What kind of… sorusunun cevabı neydi: bir tür mü, bir sayı mı? 🤔"
+
+editor:
+  z07: {U6-001: BEKLIYOR, U6-002: BEKLIYOR, U6-003: BEKLIYOR, U6-011: BEKLIYOR, U6-027: BEKLIYOR, U6-038: BEKLIYOR}

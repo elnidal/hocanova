@@ -1,0 +1,141 @@
+# LGS Sınav Dili — A08 Amaç, durum, altı çizili kelime (S11, S10, S12). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-A08
+module: A
+title: "Amaç, durum, altı çizili kelime"
+unlock_after: "Ü5 G3"
+minutes: 6
+stems: [S11, S10, S12]
+units: [1, 2, 3, 4, 5]
+intro_tr: "Bu derste üç kısa kök var: 'Neden arıyor/yazıyor?', 'Bu durumda ne söyler?' ve 'Altı çizili kısmın yerine ne gelir?'. Üçü de telefon ve mesaj metinlerinde sık çıkar ve doğru yöntemle hızlı çözülür."
+cards:
+  - title_tr: "Amaç ilk cümlelerde (S11)"
+    body_tr: "Telefon görüşmesi, e-posta ya da mesajın amacı genellikle selamlaşmadan hemen sonra gelir: 'I'm calling to …', 'I'm writing to …', 'I'm calling about …'. Hal hatır kısmını atla, amacı veren cümleyi bul."
+    examples_en:
+      - "I'm calling to book a table for Saturday.  → to make a reservation"
+      - "I'm writing to ask about the project.  → to get information"
+    signal_words: ["I'm calling to", "I'm calling about", "I'm writing to", "purpose", "aim"]
+  - title_tr: "Durumu Türkçe özetle (S10)"
+    body_tr: "Önce durumu tek cümleyle Türkçe söyle (arkadaşı hasta → geçmiş olsun; aradığı kişi evde yok → mesaj bırak). Sonra bu işi gören kalıbı seç. Kökte 'NOT a suitable response' varsa üç şık uygundur, tek uygunsuzu ararsın."
+    examples_en:
+      - "Your friend is ill.  → I'm sorry to hear that. / Get well soon."
+      - "The person isn't at home.  → Can I leave a message?"
+      - "You can't hear well.  → Can you repeat that, please?"
+    signal_words: ["What does X say?", "suitable", "NOT a suitable response"]
+  - title_tr: "Yerine koy testi (S12)"
+    body_tr: "Altı çizili kısmın yerine şıkları tek tek koy ve cümleyi yeniden oku. Anlam aynı kalıyorsa doğru şıktır. Uygulamada altı çizili kısım <u>…</u> ile işaretlidir."
+    examples_en:
+      - "Can I <u>call you back</u> later? = Can I get back to you later?"
+      - "I can't <u>log in</u> to my account. = I can't sign in to my account."
+    signal_words: ["underlined", "replace", "closest in meaning"]
+worked_example:
+  id: sd-A08-w
+  type: message_infer
+  stem_id: S11
+  context: |-
+    Kaan: Hello, is that City Sports Centre?
+    Woman: Yes, how can I help you?
+    Kaan: I'm calling to book a basketball court for Saturday morning.
+    Woman: Just a moment, please. What time would you like?
+    Kaan: At 10 a.m., please.
+  prompt: "Why is Kaan calling the sports centre?"
+  options:
+    - "to make a reservation"
+    - "to complain about the court"
+    - "to ask for a job"
+    - "to cancel his reservation"
+  answer: 0
+  explain_tr: "'I'm calling to book a court' → rezervasyon yapmak (book = reserve). 'to cancel his reservation' de rezervasyonla ilgili ama ters işlem; Kaan iptal etmiyor, yer ayırtıyor."
+  items: [U4-024, U4-035, U4-020]
+practice:
+  - id: sd-A08-p01
+    type: message_infer
+    stem_id: S11
+    context: |-
+      Selin's e-mail: Dear Murat Bey, I'm writing about the English project. I can't log in to the school website because I forgot my password. Could you send me the project file by e-mail, please? Thank you, Selin
+    prompt: "What is the purpose of Selin's e-mail?"
+    options:
+      - "to get the project file from her teacher"
+      - "to invite Murat Bey to a school event"
+      - "to complain about the English project"
+      - "to send her project to Murat Bey"
+    answer: 0
+    explain_tr: "Selin siteye giremediği için dosyayı e-postayla istiyor. 'to send her project' yönü ters çeviriyor: dosyayı gönderen değil, isteyen Selin."
+    items: [U5-006, U5-009]
+  - id: sd-A08-p02
+    type: message_infer
+    stem_id: S11
+    context: |-
+      Elif: Hi Duru, it's Elif. How are you?
+      Duru: I'm fine, thanks. What's up?
+      Elif: I'm calling about tomorrow's practice. Ece says it's at 4, not at 5. Can you tell Bora too?
+      Duru: Sure, no problem.
+    prompt: "Why does Elif call Duru?"
+    options:
+      - "to give information about the practice time"
+      - "to ask how Duru is"
+      - "to invite Duru to a concert"
+      - "to cancel tomorrow's practice"
+    answer: 0
+    explain_tr: "'I'm calling about tomorrow's practice' ve yeni saat (4) amacı gösteriyor. 'How are you?' yalnız selamlaşma; amaç değil."
+    items: [U4-024]
+  - id: sd-A08-p03
+    type: situation
+    stem_id: S10
+    context: "Elif calls Duru's house. Duru's mum answers and says Duru is out."
+    prompt: "What can Elif say?"
+    options:
+      - "Can I leave a message, please?"
+      - "Speaking."
+      - "Hold on, I'll get her."
+      - "Sorry, wrong number."
+    answer: 0
+    explain_tr: "Aranan kişi evde yok → mesaj bırakmak istenir. 'Hold on, I'll get her' telefonu açan kişinin (anne) söyleyeceği bir cümle, arayanın değil."
+    items: [U4-009, U4-022, U4-031]
+  - id: sd-A08-p04
+    type: situation
+    stem_id: S10
+    context: "Bora tells Ece: \"I can't come to practice today. I've got a terrible cold.\""
+    prompt: "Which of the following is NOT a suitable response from Ece?"
+    options:
+      - "Congratulations! Well done!"
+      - "I'm sorry to hear that."
+      - "Get well soon!"
+      - "Oh no! Take care of yourself."
+    answer: 0
+    explain_tr: "Kök NOT diyor: hasta birine 'Tebrikler!' denmez. Diğer üçü hastalık haberine verilen uygun cevaplar."
+    items: [U4-025, U4-028]
+  - id: sd-A08-p05
+    type: synonym
+    stem_id: S12
+    context: "Duru: I can't talk now, Ece. I'm at the vet with Fıstık. Can I <u>call you back</u> in ten minutes?"
+    prompt: "Which of the following can replace the underlined part (in brackets)?"
+    options:
+      - "get back to you"
+      - "hang up on you"
+      - "hold on"
+      - "put you through"
+    answer: 0
+    explain_tr: "call back = get back to = geri aramak. 'hold on' da telefon dili ama 'beklemek' demek; cümleye koyunca anlam değişir."
+    items: [U4-001, U4-006, U4-007, U4-012]
+  - id: sd-A08-p06
+    type: synonym
+    stem_id: S12
+    context: "Kaan: I forgot my password, so I can't <u>log in</u> to my account."
+    prompt: "Which of the following is closest in meaning to the underlined part (in brackets)?"
+    options:
+      - "sign in"
+      - "sign up"
+      - "log out"
+      - "download"
+    answer: 0
+    explain_tr: "log in = sign in = hesaba giriş yapmak. 'sign up' çok benziyor ama 'kaydolmak, yeni hesap açmak' demek; şifresini unutan biri zaten kayıtlı."
+    items: [U5-006, U5-012, U5-007, U5-009, U5-002]
+tips:
+  - "Amaç sorusunda selamlaşmayı atla; 'I'm calling to / I'm writing to' cümlesini bul."
+  - "Durum sorusunda önce kimin konuştuğunu belirle: arayan mı, telefonu açan mı?"
+  - "Altı çizili sorusunda her şıkkı cümleye yerleştir; anlamı değiştiren şıkkı ele."
+coach:
+  start: "Telefon çalıyor! Bugün kim, neden arıyor ve ne demeli, birlikte çözüyoruz. Bir de kelime takası var."
+  end: "Modül A tamam! Bütün soru köklerini tanıyorsun artık. LGS'nin dilini konuşmaya başladın!"
+status: draft

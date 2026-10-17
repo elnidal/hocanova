@@ -1,0 +1,296 @@
+schema_version: 1
+program: lgs
+unit: 3
+day: 2
+status: draft
+title: "Volkan kek"
+est_minutes: 10
+characters: [Ece, Selin, Elif, Ece'nin annesi, Kaan, Bora]
+new_items: [U3-001, U3-006, U3-039, U3-042, U3-043, U3-046]
+
+story:
+  - id: s01
+    text: "Cumartesi, saat iki, Ece'nin evi. Ece mutfak masasına üç önlük, plan defterini ve bir fotoğraf dizmişti: doğum günündeki o ünlü şapka pastanın fotoğrafı."
+  - id: s02
+    text: "Ece fotoğrafı ters çevirdi: \"<en>Never again. Today we {U3-001|bake} a perfect cake. No hats!</en>\" Elif kepçeyi mikrofon gibi tuttu: \"<en>Yes, chef!</en>\""
+  - id: s03
+    text: "Ece'nin annesi de yanlarına geldi: \"<en>I'm right here, girls. I'll help you with the {U3-040|oven}.</en>\""
+  - id: s04
+    text: "Selin telefonundan okudu: \"<en>{U3-045|First}, {U3-006|preheat} the {U3-040|oven} to 180 degrees.</en>\" Ece'nin annesi düğmeyi çevirdi; camın arkasında turuncu bir ışık yandı. Bu kez kimse onu radyo sanmadı."
+  - id: s05
+    text: "Elif şaşırdı: \"<en>Why do we {U3-006|heat} it now? The cake isn't ready!</en>\" Selin parmağını kaldırdı: \"<en>Because the {U3-040|oven} must be hot when the cake goes in. That's the rule.</en>\""
+  - id: s06
+    text: "Selin listeyi yüksek sesle okudu: \"<en>{U3-048|Ingredients}: two {U3-039|cups} of {U3-046|flour}, one {U3-039|cup} of sugar, three eggs, half a {U3-039|cup} of milk and some oil.</en>\""
+  - id: s07
+    text: "Elif paketi biraz fazla hızlı açtı. Mutfakta beyaz bir bulut yükseldi ve üçü de bir anda bembeyaz oldu. Elif öksürdü: \"<en>Oops! The {U3-046|flour} is everywhere! We look like snowmen!</en>\""
+  - id: s08
+    text: "Ece hiç gülmedi. Her {U3-039|cup} için masaya eğilip çizgiye tek gözle baktı: \"<en>Exactly one {U3-039|cup}. Not more, not less.</en>\""
+  - id: s09
+    text: "Sıra son şeye geldi. Selin okudu: \"<en>And the {U3-043|baking powder}: one {U3-042|teaspoon}. It makes the cake rise.</en>\""
+  - id: s10
+    text: "Tam o sırada Elif kepçe mikrofonuyla Luna Ray'in yeni şarkısına başladı. Selin bir an ona baktı, eli çekmecede küçük olanın yanındaki büyüğünü buldu: \"<en>One {U3-042|tablespoon}… done!</en>\""
+  - id: s11
+    text: "Ece kek harcını kalıba aldı, annesi de kalıbı {U3-040|oven}'a yerleştirdi: \"<en>Now we {U3-001|bake} it for forty minutes. Don't open the door, girls!</en>\""
+  - id: s12
+    text: "Üçü de camın önüne dizildi. On dakika… yirmi dakika… Kek kabardı, kabardı, kabarmaya devam etti."
+  - id: s13
+    text: "Otuzuncu dakikada kek kalıptan taştı ve köpüre köpüre aşağı aktı. Elif bağırdı: \"<en>It's a volcano! Like at the science fair!</en>\""
+  - id: s14
+    text: "Ece'nin annesi {U3-040|oven}'ı kapatıp kalıbı dikkatle çıkardı. Elif telefonuyla fotoğraf çekti: \"<en>Well, it's very {U2-076|impressive}… for a volcano.</en>\" Ece ellerini yüzüne kapadı: \"<en>Not again! {U3-045|First} a hat, now a volcano!</en>\""
+  - id: s15
+    text: "Ece'nin annesi kutuya bir göz attı ve gülümsedi: \"<en>Girls, who measured the {U3-043|baking powder}?</en>\""
+  - id: s16
+    text: "Selin hiç duraksamadan elini kaldırdı: \"<en>Me. {U2-018|To be honest}, I used a {U3-042|tablespoon}, not a {U3-042|teaspoon}. It's my mistake.</en>\""
+  - id: s17
+    text: "Ece'nin annesi çekmeceden ikisini çıkarıp yan yana tuttu: \"<en>Look: a {U3-042|teaspoon} is small, a {U3-042|tablespoon} is big. It's three times bigger!</en>\""
+  - id: s18
+    text: "Selin başını eğdi: \"<en>I {U1-002|apologise}, Ece. I always follow the {U3-050|recipe}, and today…</en>\" Ece arkadaşına sarıldı: \"<en>It's OK. You told the truth. That's more important than a cake.</en>\""
+  - id: s19
+    text: "Elif volkanın kenarından bir parça kopardı, ağzına attı ve gözleri parladı: \"<en>Hmm! It looks strange, but it's really good!</en>\""
+  - id: s20
+    text: "Ece derin bir nefes aldı ve defterini açtı: \"<en>OK, team. New plan. Tomorrow we {U3-001|bake} again. We {U3-006|preheat} the {U3-040|oven}, Selin reads, I check every {U3-039|cup}…</en>\""
+  - id: s21
+    text: "\"<en>…and Elif doesn't touch the {U3-046|flour}!</en>\" Elif üstündeki beyaz tozu silkeledi: \"<en>Fair!</en>\""
+  - id: s22
+    text: "Akşam Selin sınıf grubuna volkan kekin fotoğrafını attı. Altına yazdı: \"<en>Today's lesson: one {U3-042|teaspoon} of {U3-043|baking powder}, not one {U3-042|tablespoon}. 🌋</en>\""
+  - id: s23
+    text: "Kaan hemen cevap verdi: \"<en>Can I eat the volcano? Tomorrow our team cooks breakfast at Duru's. Bora, can you cook?</en>\""
+  - id: s24
+    text: "Bora'nın cevabı tam bir saat gecikmeyle geldi: \"<en>Sorry, I can't. My cat is sick.</en>\" Selin tek kelime yazdı: \"<en>Bora. You don't have a cat.</en>\""
+
+scene:
+  - id: c01
+    speaker: Selin
+    text: "<en>First, preheat the oven. Then, we need two cups of flour and one teaspoon of baking powder.</en>"
+  - id: c02
+    speaker: Elif
+    text: "<en>Look! The cake is coming out of the oven! It's a volcano!</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>It's my mistake. I used a tablespoon, not a teaspoon.</en>"
+  - id: c04
+    speaker: Ece
+    text: "<en>It's OK. Tomorrow we bake it again, and I check every cup!</en>"
+
+steps:
+  - item: U3-001
+    sezdir:
+      id: u3d02-001-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"bake\" ne anlama geliyordu?"
+      options: ["fırında pişirmek", "süslemek", "soğutmak", "dilimlemek"]
+      answer: 0
+    kullan:
+      id: u3d02-001-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My grandma loves her oven. She ________ cookies for us every Sunday.</en>"
+      options: ["bakes", "drinks", "washes", "reads"]
+      answer: 0
+    sina:
+      id: u3d02-001-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which of the following do we NOT usually bake?</en>"
+      options: ["a fruit salad", "bread", "a cake", "cookies"]
+      answer: 0
+      explain: "Ekmek, kek ve kurabiye fırında pişer; meyve salatası hiç pişmez."
+  - item: U3-006
+    sezdir:
+      id: u3d02-006-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"preheat the oven\" ne anlama geliyordu?"
+      options: ["fırını önceden ısıtmak", "fırını temizlemek", "fırını kapatmak", "fırının kapağını açmak"]
+      answer: 0
+    kullan:
+      id: u3d02-006-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The soup is cold. Can you ________ it for me, please?</en>"
+      options: ["heat", "bake", "wash", "cut"]
+      answer: 0
+      explain: "Soğuk çorba fırında pişirilmez (bake), ocakta ısıtılır (heat)."
+    sina:
+      id: u3d02-006-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the note, which of the following is TRUE?</en>"
+      stem: "<en>Mum's note: Ece, I'll be home at six. Please preheat the oven at half past five. We can bake the bread together when I arrive.</en>"
+      options: ["The oven should be hot before Mum comes home.", "Mum will be home at half past five.", "Ece should bake the bread alone.", "The oven must be cold at six."]
+      answer: 0
+  - item: U3-039
+    sezdir:
+      id: u3d02-039-z
+      type: meaning
+      context: s06
+      prompt: "Selin'in listesinde \"two cups of flour\" derken \"cup\" ne anlama geliyordu?"
+      options: ["ölçü bardağı (ölçü)", "fincan takımı", "kupa (ödül)", "paket"]
+      answer: 0
+      explain: "Tarifte cup bir ölçüdür: a cup of flour = bir su bardağı (ölçü) un."
+    kullan:
+      id: u3d02-039-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>For this cake, you need two ________ of milk and three eggs.</en>"
+      options: ["cups", "eggs", "ovens", "recipes"]
+      answer: 0
+      explain: "Süt sayılamaz; miktarı cup gibi bir ölçüyle verilir: two cups of milk."
+    sina:
+      id: u3d02-039-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the recipe, which of the following is TRUE?</en>"
+      stem: "<en>Pancakes for two people. Ingredients: one cup of milk, one cup of flour, two eggs and a little butter.</en>"
+      options: ["You need the same amount of milk and flour.", "You need two cups of milk.", "There aren't any eggs in the pancakes.", "You need more flour than milk."]
+      answer: 0
+  - item: U3-042
+    sezdir:
+      id: u3d02-042-z
+      type: meaning
+      context: s17
+      prompt: "Ece'nin annesinin cümlesine göre \"teaspoon\" ve \"tablespoon\" neydi?"
+      options: ["çay kaşığı / yemek kaşığı", "çatal / bıçak", "küçük kase / büyük kase", "fincan / bardak"]
+      answer: 0
+    kullan:
+      id: u3d02-042-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I like my tea with a little sugar. Can I have a ________ of sugar, please? Just a small one.</en>"
+      options: ["teaspoon", "bowl", "oven", "recipe"]
+      answer: 0
+    sina:
+      id: u3d02-042-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Which of the following can we infer about Kaan?</en>"
+      stem: "<en>Kaan: The recipe says one teaspoon of salt, but I used one tablespoon.</en>"
+      options: ["He used too much salt.", "He used less salt than the recipe says.", "He didn't use any salt.", "He followed the recipe perfectly."]
+      answer: 0
+      explain: "Bir yemek kaşığı yaklaşık üç çay kaşığıdır; Kaan tarifin istediğinden fazla tuz koymuş."
+  - item: U3-043
+    sezdir:
+      id: u3d02-043-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"baking powder\" ne anlama geliyordu?"
+      options: ["kabartma tozu", "pudra şekeri", "tuz", "kakao"]
+      answer: 0
+    kullan:
+      id: u3d02-043-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Our cake didn't rise. It's flat! I think we forgot the ________.</en>"
+      options: ["baking powder", "oven gloves", "plates", "napkins"]
+      answer: 0
+    sina:
+      id: u3d02-043-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Which of the following can we infer from the dialogue?</en>"
+      stem: "<en>Elif: My cake didn't rise. It's flat like a pancake!\nSelin: Oh no! Maybe you forgot the baking powder.</en>"
+      options: ["Elif probably didn't use any baking powder.", "Elif's cake is very tall.", "Selin made the cake with Elif.", "Elif's cake rose too much."]
+      answer: 0
+  - item: U3-046
+    sezdir:
+      id: u3d02-046-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"flour\" ne anlama geliyordu?"
+      options: ["un", "çiçek", "şeker", "süt tozu"]
+      answer: 0
+      explain: "flour (un) ile flower (çiçek) aynı okunur; mutfakta ve kek bağlamında hep un."
+    kullan:
+      id: u3d02-046-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>To make bread, you need ________, water and a little salt.</en>"
+      options: ["flour", "flowers", "ice cream", "coffee"]
+      answer: 0
+    sina:
+      id: u3d02-046-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: Mum, we need two cups of flour for the cake. ________\nMum: Yes, there's a big bag in the cupboard.</en>"
+      options: ["Do we have any flour?", "Do we have any flowers?", "Is the cake ready?", "Who is your teacher?"]
+      answer: 0
+
+review:
+  - id: u3d02-r01
+    type: gap_fill
+    item: U3-038
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Can you give me a ________ for my soup, please? A big one.</en>"
+    options: ["bowl", "oven", "recipe", "step"]
+    answer: 0
+  - id: u3d02-r02
+    type: situation
+    item: U3-040
+    prompt: "<en>You want to bake a cake. The cake mixture is ready. Where does it go now?</en>"
+    options: ["into the oven", "into the fridge", "into the bin", "into the washing machine"]
+    answer: 0
+  - id: u3d02-r03
+    type: dialogue_complete
+    item: U3-045
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Elif: Can you tell me the way to the library?\nSelin: Sure. ________, walk to the end of this street. Then, turn left.</en>"
+    options: ["First", "Finally", "At last", "After that"]
+    answer: 0
+    explain: "Yol tarifinin başı First ile açılır; Finally ve After that başlangıç olamaz, At last \"nihayet\" demektir."
+  - id: u3d02-r04
+    type: gap_fill
+    item: U3-048
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>We need four ________ for this salad: tomatoes, cucumbers, onions and lemon juice.</en>"
+    options: ["ingredients", "steps", "ovens", "recipes"]
+    answer: 0
+  - id: u3d02-r05
+    type: dialogue_complete
+    item: U3-050
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Elif: This soup is wonderful! ________\nGrandma: Of course! Write it down: water, red lentils, an onion…</en>"
+    options: ["Can I have the recipe?", "Can I have the receipt?", "Is the soup cold?", "Where is the bathroom?"]
+    answer: 0
+  - id: u3d02-r06
+    type: gap_fill
+    item: U3-052
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>This recipe has five ________. Number one is \"Wash your hands.\"</en>"
+    options: ["steps", "ingredients", "bowls", "ovens"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U3-039]
+    text: "cup sadece \"fincan\" değil! Tarifte bir ölçüdür: two cups of flour = iki su bardağı (ölçü) un. Malzeme listesinde cup görürsen ölçü diye oku."
+  - type: hafiza_kancasi
+    refs: [U3-046]
+    text: "flour (un) ve flower (çiçek) aynı okunur: /flaʊə/. Kekin içine çiçek koymuyoruz; tarifte hep un!"
+  - type: ilginc_bilgi
+    refs: [U3-042]
+    text: "İngilizce tariflerde tsp = teaspoon (yaklaşık 5 ml), tbsp = tablespoon (yaklaşık 15 ml). Yani bir tablespoon yaklaşık üç teaspoon eder. Selin'in keki bu yüzden volkana döndü!"
+  - type: mini_dilbilgisi
+    refs: [U3-046, U3-039, U3-042]
+    text: "flour, sugar, milk sayılamaz: \"two flours\" denmez. Miktar ölçüyle verilir: two cups of flour, a teaspoon of sugar, half a cup of milk."
+
+coach:
+  start: "Ece'nin evinde ilk deneme! Hedef belli: bu kez şapkaya benzemeyen bir kek. Bakalım plan tutacak mı? 🎂"
+  end_good: "Süpersin! Selin'in volkanından sonra artık teaspoon ile tablespoon'u hiç karıştırmazsın. 🌋"
+  end_mixed: "Güzel iş! {weak} biraz kabardı ama taşmadı. Selin bile yanlış ölçtü; yarın bir kez daha deneyeceğiz."
+
+notifications:
+  morning: "Ece'nin rövanş günü! Şapka pastanın intikamı alınacak mı? 🎂"
+  evening: "Kek kabardı, kabardı… ve durmadı! Ece'nin evinde ne oldu? 🌋"
+  review: "Tek soru: teaspoon mı daha büyük, tablespoon mı?"
+
+editor:
+  z07: {U3-001: BEKLIYOR, U3-006: BEKLIYOR, U3-039: BEKLIYOR, U3-042: BEKLIYOR, U3-043: BEKLIYOR, U3-046: BEKLIYOR}

@@ -1,0 +1,25 @@
+# Ünite giriş kontrolü — pilotun 30 birimi, ~2 dakika.
+# 1) Evet/hayır: "Bu ifadeyi biliyor musun?" (4 sahte kelime karışık)
+# 2) "Evet" denen her birim, o birimin Sına sorusuyla doğrulanır (gün dosyasındaki steps[].sina).
+#    Doğru → durum "şimdilik biliyor": Sezdir adımı atlanır, Kullan + Sına yine sorulur, seyrek tekrar.
+#    Yanlış → durum "yeni": tam döngü.
+# 3) Sahte kelimelerden 2 veya daha fazlasına "evet" diyen öğrencide doğrulama sorusu sayısı artırılır
+#    (tüm "evet"ler doğrulanır, tek doğru cevap yetmez; birim "kararsız" başlar).
+schema_version: 1
+program: lgs
+test: unit_check
+unit: 1
+est_minutes: 2
+yes_no:
+  prompt: "Bu ifadeyi biliyor musun? Bilmiyorsan \"hayır\" de; sorun değil, öğreneceğiz."
+  items: [U1-026, U1-008, U1-013, U1-012, U1-001, U1-011,
+          U1-019, U1-021, U1-007, U1-002, U1-025, U1-022,
+          U1-067, U1-051, U1-060, U1-059, U1-077, U1-081,
+          U1-054, U1-050, U1-055, U1-049, U1-092, U1-070,
+          U1-079, U1-084, U1-083, U1-071, U1-097, U1-099]
+  pseudowords: [plonter, gravish, mobbet, trandly]
+  pseudoword_threshold: 2
+verify:
+  source: "content/days/u01_day_XX.yaml → steps[item].sina"
+  known_if: "Sına sorusu ilk denemede doğru"
+sections: []

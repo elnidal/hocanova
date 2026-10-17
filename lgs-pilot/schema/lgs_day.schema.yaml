@@ -1,0 +1,96 @@
+# Hikayenglish LGS — günlük ders dosyası şeması (content/days/u01_day_XX.yaml)
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "hikayenglish/lgs_day.schema.yaml"
+type: object
+additionalProperties: false
+required: [schema_version, program, unit, day, status, title, new_items, story, steps, coach, notifications]
+properties:
+  schema_version: { const: 1 }
+  program: { const: lgs }
+  unit: { type: integer, minimum: 1, maximum: 10 }
+  day: { type: integer, minimum: 1 }
+  status: { enum: [draft, editor_review, approved, locked] }
+  title: { type: string }
+  est_minutes: { type: integer, maximum: 10 }          # ders süresi hedefi ≤ 10 dk
+  characters: { type: array, items: { type: string } }
+  new_items: { type: array, items: { $ref: "#/$defs/itemId" }, uniqueItems: true }
+  story:                                                # 1. adım SEZDİR: Türkçe taşıyıcı + İngilizce hedef
+    type: array
+    minItems: 1
+    items: { $ref: "#/$defs/line" }
+  scene:                                                # 2. adım KULLAN bağlamı: tamamen İngilizce kısa sahne (mesaj, diyalog)
+    type: array
+    items: { $ref: "#/$defs/line" }
+  steps:                                                # her yeni birim için üç soru
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [item, sezdir, kullan, sina]
+      properties:
+        item: { $ref: "#/$defs/itemId" }
+        sezdir: { $ref: "#/$defs/question" }            # anlam tahmini (Türkçe şıklar, hikâye cümlesi bağlam)
+        kullan: { $ref: "#/$defs/question" }            # İngilizce cümlede doğru kullanım
+        sina: { $ref: "#/$defs/question" }              # LGS tarzı soru
+  review:                                               # önceki günlerin tekrarı (takvime göre)
+    type: array
+    items: { $ref: "#/$defs/question" }
+  tips:                                                 # hap bilgiler
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [type, refs, text]
+      properties:
+        type: { enum: [hafiza_kancasi, tuzak, lgs_taktigi, kelime_ailesi, ilginc_bilgi, mini_dilbilgisi] }
+        refs: { type: array, items: { $ref: "#/$defs/itemId" }, minItems: 1 }
+        text: { type: string }
+  coach:
+    type: object
+    additionalProperties: false
+    required: [start, end_good, end_mixed]
+    properties:
+      start: { type: string }        # ders başı
+      end_good: { type: string }     # ilk denemede çoğu doğru
+      end_mixed: { type: string }    # zorlanılan birim(ler) var — {weak} değişkeni
+  notifications:
+    type: object
+    additionalProperties: false
+    required: [morning, evening, review]
+    properties:
+      morning: { $ref: "#/$defs/notif" }
+      evening: { $ref: "#/$defs/notif" }
+      review: { $ref: "#/$defs/notif" }
+  editor:
+    type: object
+    properties:
+      z07: { type: object, additionalProperties: { enum: [EVET, HAYIR, BEKLIYOR] } }
+      comments: { type: string }
+
+$defs:
+  itemId: { type: string, pattern: "^U[0-9]{1,2}-[0-9]{3}$" }
+  notif: { type: string, maxLength: 90 }
+  line:
+    type: object
+    additionalProperties: false
+    required: [id, text]
+    properties:
+      id: { type: string, pattern: "^(s|c)[0-9]{2}$" }
+      speaker: { type: string }
+      text: { type: string }        # {U1-013} belirteç · {U1-013|invited} biçim · <en>…</en> İngilizce
+  question:
+    type: object
+    additionalProperties: false
+    required: [id, type, options, answer]
+    properties:
+      id: { type: string }
+      type: { enum: [meaning, gap_fill, dialogue_complete, message_infer, synonym, trait_match, odd_one_out, situation, process_order, table_graph, text_infer] }
+      context: { type: string, pattern: "^(s|c)[0-9]{2}$" }  # meaning: hikâyedeki ipucu cümlesi
+      prompt: { type: string }      # soru kökü (Türkçe ya da İngilizce)
+      stem: { type: string }        # okunacak metin / diyalog / mesaj
+      options: { type: array, items: { type: string }, minItems: 3, maxItems: 4 }
+      answer: { type: integer, minimum: 0, maximum: 3 }
+      explain: { type: string }     # cevaptan sonra 1 cümlelik açıklama
+      item: { $ref: "#/$defs/itemId" }   # review sorularında hangi birimi yokladığı
+      lgs_like: { type: boolean }   # LGS biçimine yakın soru
+      stem_id: { type: string, pattern: "^S[0-9]{2}$" }   # lgs-kaynak/exam/sinav_dili.yaml soru kökü

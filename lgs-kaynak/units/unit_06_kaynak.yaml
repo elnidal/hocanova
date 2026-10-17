@@ -1,0 +1,1735 @@
+schema_version: 1
+unit: 6
+title: Adventures
+status: taslak
+summary_tr: 'Ünite, macera ve ekstrem sporlar üzerinden üç işlevi öğretir: karşılaştırma (I think bungee jumping is more dangerous and challenging than canoeing), tercih bildirme (Which one do you prefer?
+  / Would you rather go rafting or caving? – I''d rather go caving) ve gerekçe sunma (Why? – Because it is more amusing). Kelime gövdesi spor adları (skydiving, paragliding, scuba diving, caving, rock climbing),
+  tehlike–güvenlik dili (dangerous, take risks, accident, survive, safety equipment, helmet, life jacket) ve macera sıfatlarıdır (challenging, amusing, disappointing, mysterious, magnificent). Dilbilgisi
+  yükü karşılaştırma ve üstünlük sıfatlarıdır (-er/more … than, the -est/the most; good–better–the best), yanında prefer A to B, would rather + yalın fiil ve because. LGS''de bu ünite en çok iki etkinliği
+  karşılaştıran tablo/grafik, tercih diyaloğu tamamlama, bir sporu tanıtan kısa metin (gereken ekipman, yaş, tehlike) ve "hangisi doğru karşılaştırma?" soruları olarak gelir.'
+curriculum:
+  outcomes:
+  - code: E8.6.SP1
+    text_tr: 'Sözlü anlatım: Basit betimleyici dil kullanarak spor ve oyunları karşılaştırır. (doğrulandı: öğretmen günlük planı, ingilizcepedia)'
+  - code: E8.6.R1
+    text_tr: 'Okuma: Maceralarla ilgili kısa ve basit metinlerde ana noktaları bulur. (doğrulandı; LGS''de doğrudan ölçülen kazanım)'
+  - code: E8.6.(L/SI/W)
+    text_tr: Dinleme, karşılıklı konuşma ve yazma kazanımları (maceralarla ilgili tartışmaları izleme, kısa karşılaştırma paragrafı yazma) program özetinde var; kodları ve tam metinleri doğrulanmadı (open_questions).
+  functions:
+  - id: F1
+    name_tr: Karşılaştırma yapmak (Making simple comparisons)
+    lgs_weight: yüksek
+    exponents:
+    - I think bungee jumping is more dangerous and challenging than canoeing.
+    - I think extreme sports are more exciting than indoor sports.
+    - I think underwater hockey is safer than surfing.
+    - Paragliding is less dangerous than base jumping.
+    - Skydiving is the most exciting sport for me.
+    - What's your craziest dream adventure?
+    responses:
+    - I agree. It's also more expensive.
+    - I don't think so. Canoeing is more challenging.
+    - Really? For me, caving is the most frightening one.
+    items:
+    - U6-033
+    - U6-034
+    - U6-011
+    - U6-028
+    - U6-031
+    - U6-032
+    - U6-002
+    note_tr: Programın açıkça verdiği Useful Language bu işlevdir. Sıfatlar ünitenin kendi sıfatlarıdır (dangerous, challenging, amusing) ve Ü1/Ü2'den gelenler (exciting, boring, fascinating). Ü2'deki more
+      than / less than (U2-090) sayı/anket diliydi; burada sıfatla kurulur.
+  - id: F2
+    name_tr: Tercih bildirmek (Expressing preferences)
+    lgs_weight: yüksek
+    exponents:
+    - Which one do you prefer, rafting or canoeing?
+    - Which extreme sports do you prefer?
+    - What do you prefer doing on summer holidays?
+    - Would you rather ride a horse or ride a camel?
+    - Which one would you rather do?
+    responses:
+    - I prefer rafting to canoeing.
+    - I prefer doing water sports.
+    - I'd rather ride a camel.
+    - I'd rather go caving than go skydiving.
+    - Neither. I'd rather stay in the tent!
+    items:
+    - U6-035
+    - U6-036
+    - U6-004
+    note_tr: 'prefer Ü1''de kelime olarak öğretildi (U1-018); yeni olan prefer A to B ve would rather + yalın fiil yapılarıdır. Kalıp listesinde (K) 8 ayrı tercih sorusu var: ünitenin en sık işlevi.'
+  - id: F3
+    name_tr: Gerekçe sunmak, açıklama yapmak (Giving reasons / explanations)
+    lgs_weight: yüksek
+    exponents:
+    - Why do you prefer it?
+    - Why did you like it?
+    - What's the best way to get there? Why?
+    - Why do you think he is an adventurer?
+    responses:
+    - Because it is more amusing.
+    - Because I like taking risks.
+    - Because it's safer and cheaper than flying.
+    - I mean, he always tries new and dangerous things.
+    items:
+    - U6-037
+    - U6-033
+    - U6-012
+    note_tr: Gerekçe neredeyse her zaman karşılaştırma içerir (Because it is more …). Açıklama kalıpları I mean / In other words Ü5'te öğretildi (U5-054), burada tekrar.
+  - id: F4
+    name_tr: Bir macera etkinliği hakkında bilgi sormak ve vermek
+    lgs_weight: orta
+    exponents:
+    - What kind of sport is it?
+    - What do you need for this sport?
+    - What qualifications does a person need to start it?
+    - How old should a person be to attend it?
+    - What are the possible dangers of this sport?
+    - How much does it cost?
+    - What is the aim of it?
+    responses:
+    - It's an extreme water sport.
+    - You need a helmet, a life jacket and a paddle.
+    - You don't need any experience. An instructor helps you.
+    - You should be over 12.
+    - You can fall or drown, so you must follow the instructor.
+    - It costs about 20 dollars.
+    items:
+    - U6-038
+    - U6-022
+    - U6-047
+    - U6-046
+    - U6-051
+    - U6-048
+    - U6-013
+    note_tr: K listesindeki soru bankası; LGS'de "bir sporu tanıtan ilan/broşür → hangi bilgi verilmemiştir?" sorularının iskeleti.
+sources:
+- code: A
+  name: ingilizcele.com — 8. Sınıf 6. Ünite Adventures Ünite Kelimeleri (PDF)
+  rows: 77
+- code: I
+  name: 'Okul listesi 2019-2020 "8. SINIF İNGİLİZCE 6. ÜNİTE KELİME LİSTESİ" (eski kitap sahneleri: riskli meslekler, Türk Yıldızları)'
+  rows: 235
+- code: C
+  name: ingilizcecin.com — 8. Sınıf 6. Ünite Adventures Kelimeleri (PDF)
+  rows: 193
+- code: K
+  name: Kullanıcının yapıştırdığı "8. Sınıf İngilizce 6. Ünite Kalıp İfadeler – Adventures" (ders kitabı kalıp cümleleri) → phrase_bank
+  rows: 54
+- code: W
+  name: 'MEB programı hafif doğrulama: ingilizcepedia.com 8. sınıf 24. hafta günlük planı (E8.6.SP1, E8.6.R1, Making comparisons, Useful Language) ve learner.net Türkiye 8. sınıf program özeti (Express
+    preferences · Provide explanations · Make comparisons)'
+tasnif:
+  teaching_units: 57
+  counts:
+    birim_CEKIRDEK: 42
+    birim_KALIP_ISLEV: 9
+    birim_TUZAK: 6
+    oncelik_1: 56
+    oncelik_2: 1
+    havuz_CEKIRDEK: 90
+    havuz_KALIP_ISLEV: 29
+    havuz_TUZAK: 9
+    havuz_BILINEN: 107
+    havuz_TANIMA: 70
+    havuz_ONCEKI_UNITE: 36
+    havuz_tekil_satir: 341
+  items_file: lgs-pilot/content/unit_06_items.yaml
+  rules_tr:
+  - 'Satır değil öğretim birimi sayılır: aileler (adventure / adventurer / adventurous; dangerous / danger; extreme / extreme sports; experience / experienced / inexperienced; succeed / successful / successfully;
+    death / die / rate of death), eş anlamlı kümeler (courage / bravery; scenery / view; aim / goal; skydiving / parachuting) ve ekipman setleri (helmet + knee / elbow pads + wrist guards) tek birim.'
+  - 'Etkinlik ifadeleri (go rafting, go caving, go on a jeep safari, join a motorcycle tour, fly in a hot-air balloon) tek KALIP biriminde: go + V-ing yapısı öğretilir, etkinlik adları varyanttır.'
+  - Öncelik 1 = en az iki bağımsız kaynak (A, I, C, K) ya da KALIP / İŞLEV. 57 birimin 56'sı öncelik 1; life jacket yalnız I'da (kamp hikâyesi için tutuldu).
+  - 'Sıkılaştırma: önceki oturumun ilk aday listesi 63 birimdi. less … than / as … as karşılaştırma birimine; caving ve hot-air balloon etkinlik birimine; diz/dirsek/bilek koruyucu kask birimine bağlandı;
+    Have you ever …? TANIMA (Present Perfect 8. sınıf programında yok); present / gift BİLİNEN. Sonuç 57 (Ü4: 55, Ü5: 61).'
+  - safe / safety Ü5'te öğretildi (U5-011); prefer (U1-018), exciting / boring (U1-096 / U1-095), expert (U5-039), I mean / In other words (U5-054) ÖNCEKİ ÜNİTE.
+  - 'I listesindeki eski kitap sahneleri (riskli meslekler: stuntman, coal miner, window cleaner; Türk Yıldızları: fighter pilot, squadron commander, manoeuvre, supersonic) TANIMA.'
+  - Bu ünitenin kaynaklarında "sınavlarda çıkmış kelimeler" tablosu yok; items dosyasında exam alanı boş.
+  excluded_examples:
+    BILINEN:
+    - interesting
+    - easy
+    - hard
+    - expensive
+    - travel
+    - take a photo
+    - skiing
+    - surfing
+    - swimming
+    - horse riding
+    - ride an elephant
+    - skateboarding
+    - sailing
+    - mountain biking
+    - ocean
+    - desert
+    - forest
+    - nature
+    - bridge
+    - tower
+    - shark
+    - whale
+    - visitor
+    - favourite
+    - dream
+    - choice
+    - need
+    - speed
+    - wing
+    - wonderful
+    - healthy
+    - 'present / gift (tuzak: present = şimdiki / sunmak)'
+    - Of course.
+    - I see.
+    TANIMA:
+    - Have you ever …? (Present Perfect, tanıma)
+    - underwater hockey
+    - heli-skiing
+    - highlining
+    - ice screw
+    - special axe
+    - crampons
+    - thermal clothes
+    - indoor sports
+    - archery
+    - ambitious
+    - frightening
+    - journey
+    - eye-catching
+    - exotic
+    - all-inclusive
+    - according to
+    - however
+    - moreover
+    - require
+    - test the limits
+    - Far Eastern countries
+    - Cappadocia
+    - Great Barrier Reef
+    - stuntman
+    - coal miner
+    - window cleaner
+    - fighter pilot
+    - squadron commander
+    - manoeuvre
+    - supersonic
+    - set a record
+    ONCEKI_UNITE:
+    - attend (U1-003)
+    - prefer (U1-018)
+    - be interested in (U1-038)
+    - share (U1-043)
+    - support (U1-063)
+    - boring (U1-095)
+    - exciting (U1-096)
+    - in my opinion (U2-005)
+    - fond of (U2-009)
+    - dislike (U2-012)
+    - crazy (U2-015)
+    - member (U2-020)
+    - team sports / team (U2-036)
+    - individual sports / individually / individual (U2-037)
+    - trekking / trekking route (U2-039)
+    - nervous (U2-059)
+    - fascinating (U2-077)
+    - entertaining (U2-083)
+    - handmade (U3-031)
+    - how long / how much / how long does it take / it takes … (U3-047)
+    - traditional food (U3-063)
+    - guess / i guess (U4-021)
+    - decide (U4-049)
+    - safe (U5-011)
+    - expert (U5-039)
+    - i mean / in other words (U5-054)
+    - what do you mean (U5-057)
+themes:
+- name: Macera ve ekstrem sporlar
+  items:
+  - U6-001
+  - U6-002
+  - U6-003
+  - U6-004
+  - U6-005
+  - U6-006
+  - U6-007
+  - U6-008
+  - U6-009
+  - U6-010
+  note_tr: 'Ünitenin kelime gövdesi: macera kavramı, ekstrem spor adları ve etkinlik ifadeleri (go rafting, join a tour). Spor adlarının çoğu Türkçede de İngilizce kullanılır (rafting, bungee); asıl öğretilecek
+    olan tanım cümleleridir.'
+- name: Tehlike ve risk
+  items:
+  - U6-011
+  - U6-012
+  - U6-013
+  - U6-014
+  - U6-015
+  - U6-016
+  - U6-017
+  - U6-018
+  - U6-019
+  - U6-020
+  - U6-021
+  note_tr: 'Okuma metinlerinin dili: tehlike, risk, kaza, hayatta kalma. Hikâyede karakterlerin başına gelmez; dergi metni, belgesel ve eğitmen brifinginde geçer (season.yaml safety).'
+- name: Ekipman
+  items:
+  - U6-022
+  - U6-023
+  - U6-024
+  - U6-025
+  - U6-026
+  note_tr: Kamp listesi ve güvenlik brifinginin dili. equipment sayılamaz (tuzak).
+- name: Macera sıfatları ve deneyim
+  items:
+  - U6-027
+  - U6-028
+  - U6-029
+  - U6-030
+  - U6-031
+  - U6-032
+  note_tr: Karşılaştırma cümlelerinin sıfatları (more challenging, the most amusing). -ing sıfatları Ü4 -ed duygularıyla eşleşir.
+- name: Karşılaştırma, tercih ve gerekçe
+  items:
+  - U6-033
+  - U6-034
+  - U6-035
+  - U6-036
+  - U6-037
+  - U6-038
+  note_tr: Programın üç işlevini taşıyan kalıplar; LGS sorularının çoğu bu grubun üstüne kurulur.
+- name: Doğa ve yerler
+  items:
+  - U6-039
+  - U6-040
+  - U6-041
+  - U6-042
+  - U6-043
+  - U6-044
+  - U6-045
+  note_tr: Macera yerlerinin tanıtımı; Ü7 Tourism'e köprü (destination, scenery, historic places).
+- name: Hedef, beceri ve gündelik ifadeler
+  items:
+  - U6-046
+  - U6-047
+  - U6-048
+  - U6-049
+  - U6-050
+  - U6-051
+  - U6-052
+  - U6-053
+  - U6-054
+  - U6-055
+  - U6-056
+  - U6-057
+  note_tr: Bir sporu tanıtma sorularının cevapları (aim, qualifications, cost, instructor) ve sporun kazandırdıkları (gain, improve, succeed, freedom).
+grammar:
+- id: G1
+  name_tr: Karşılaştırma sıfatları (Comparatives)
+  form: kısa sıfat + -er + than · more / less + uzun sıfat + than · good → better, bad → worse, far → farther
+  examples:
+  - Canoeing is safer than rafting.
+  - I think bungee jumping is more dangerous and challenging than canoeing.
+  - Caving is less exciting than skydiving, but it's more mysterious.
+  - The weather today is worse than yesterday, so we can't go paragliding.
+  explain_tr: İki şeyi karşılaştırırken kullanılır. Tek heceli sıfatlar -er alır (safe → safer, big → bigger, cheap → cheaper); -y ile biten iki heceliler -ier (easy → easier, crazy → crazier); diğer iki
+    ve daha çok heceliler more alır (more dangerous, more amusing). less "daha az" demektir ve her sıfatla more gibi kullanılır. than "-den/-dan"dır.
+  common_errors:
+  - wrong: Rafting is more safer than caving.
+    right: Rafting is safer than caving.
+    why_tr: -er ve more birlikte kullanılmaz.
+  - wrong: Skydiving is more good than diving.
+    right: Skydiving is better than diving.
+    why_tr: 'good düzensizdir: better.'
+  - wrong: Paragliding is exciting than canoeing.
+    right: Paragliding is more exciting than canoeing.
+    why_tr: Türkçede "-den heyecanlı" denir; İngilizcede more şart.
+  - wrong: It is more dangerous from base jumping.
+    right: It is more dangerous than base jumping.
+    why_tr: '"-den" = than (from değil).'
+  lgs_note: 'En sık biçim: iki etkinliği puanlayan tablo (danger / cost / excitement yıldızları) → "Which of the following is TRUE?" Şıklarda sıfat doğru ama yön ters (safer ↔ more dangerous) çeldiricisi.
+    less … than sıkça doğru şıkkı gizler.'
+  items:
+  - U6-033
+  - U6-011
+  - U6-028
+  - U6-031
+- id: G2
+  name_tr: Üstünlük sıfatları (Superlatives)
+  form: the + kısa sıfat-est · the most / the least + uzun sıfat · the best, the worst · (in / of …)
+  examples:
+  - Base jumping is the most dangerous sport in the list.
+  - What's your craziest dream adventure?
+  - Spring is the best time to visit the waterfall.
+  - For me, caving is the least frightening activity of all.
+  explain_tr: Üç ya da daha çok şey arasında "en …" demek için. the unutulmaz. -er/-est yazım kuralları karşılaştırmayla aynıdır (crazy → the craziest, big → the biggest). Grup in (in the world, in our
+    class) ya da of (of all, of the three) ile verilir.
+  common_errors:
+  - wrong: It is most exciting sport.
+    right: It is the most exciting sport.
+    why_tr: the zorunlu.
+  - wrong: the most best
+    right: the best
+    why_tr: Düzensiz biçim most almaz.
+  - wrong: the dangerousest
+    right: the most dangerous
+    why_tr: Uzun sıfat -est almaz.
+  lgs_note: Anket/tablo sorularında "the most popular / the least expensive activity" doğru eşleşmesi; ayrıca "the best time / way to …" bilgi sorusu (ilan metni).
+  items:
+  - U6-034
+  - U6-041
+  - U6-042
+- id: G3
+  name_tr: prefer ile tercih
+  form: prefer + isim / V-ing (+ to + isim / V-ing) · prefer to + V1 · Which (one) do you prefer, A or B?
+  examples:
+  - I prefer rafting to canoeing.
+  - She prefers climbing to swimming.
+  - Which one do you prefer, skydiving or paragliding?
+  - What do you prefer doing on summer holidays?
+  explain_tr: 'Karşılaştırılan ikinci şey to ile gelir: prefer A to B = A''yı B''ye tercih etmek. Fiil kullanılırsa her iki tarafta da -ing (prefer climbing to swimming). Üçüncü tekil şahısta prefers.'
+  common_errors:
+  - wrong: I prefer rafting than canoeing.
+    right: I prefer rafting to canoeing.
+    why_tr: prefer ile than değil to.
+  - wrong: He prefer caving.
+    right: He prefers caving.
+    why_tr: Simple Present 3. tekil -s.
+  - wrong: I prefer climb to swim.
+    right: I prefer climbing to swimming.
+    why_tr: to burada edat; fiil -ing alır.
+  lgs_note: 'Diyalogda "Which one do you prefer?" sorusuna uygun cevap: tercih + gerekçe (I prefer X because it is more …). Çeldirici: kişinin bir önceki cümlede sevmediğini söylediği etkinliği "tercih"
+    eden şık.'
+  items:
+  - U6-035
+  - U6-037
+- id: G4
+  name_tr: would rather ile tercih
+  form: would rather ('d rather) + V1 (+ than + V1) · Would you rather + V1 + or + V1? · I'd rather not.
+  examples:
+  - I'd rather go caving than go skydiving.
+  - Would you rather ride a horse or ride a camel?
+  - Which one would you rather do? – I'd rather try the climbing wall.
+  - I'd rather not swim in the cold lake.
+  explain_tr: would rather, prefer ile aynı işi görür ama arkasından yalın fiil gelir; karşılaştırma than ile yapılır (prefer'deki to değil). Kısa biçimi I'd rather; olumsuzu I'd rather not.
+  common_errors:
+  - wrong: I'd rather to go rafting.
+    right: I'd rather go rafting.
+    why_tr: to yok.
+  - wrong: I'd rather going rafting.
+    right: I'd rather go rafting.
+    why_tr: -ing yok.
+  - wrong: I'd rather rafting to canoeing.
+    right: I'd rather go rafting than go canoeing.
+    why_tr: would rather fiil ister ve than ile karşılaştırır.
+  - wrong: I don't would rather …
+    right: I'd rather not …
+    why_tr: Olumsuz not ile.
+  lgs_note: Would you rather A or B? sorusunun cevabı A ya da B'den biri + gerekçe olmalı; 'Yes, I would' çeldiricisi tipik (evet–hayır sorusu değil).
+  items:
+  - U6-036
+  - U6-035
+- id: G5
+  name_tr: 'Gerekçe: Why …? – Because …'
+  form: Why + do/does/did + özne + fiil …? – Because + özne + fiil … · …, so …
+  examples:
+  - Why do you prefer kayaking? – Because it is more amusing.
+  - Why did you like it? – Because the scenery was magnificent.
+  - It's windy today, so we can't go paragliding.
+  explain_tr: because sebep, so sonuç bildirir. Cevapta because'tan sonra tam cümle gelir. Gerekçede çoğunlukla karşılaştırma vardır (more exciting, safer, cheaper).
+  common_errors:
+  - wrong: Because more amusing.
+    right: Because it is more amusing.
+    why_tr: Özne ve fiil gerekli (konuşmada kısaltılsa da sınavda tam).
+  - wrong: It's windy, because we can't fly.
+    right: It's windy, so we can't fly.
+    why_tr: Sonuç so ile.
+  lgs_note: 'Diyalogda Why? sorusundan sonraki boşluk: because ile başlayan, konuşmanın önceki bilgisiyle tutarlı şık. because ↔ so karışıklığı çeldiricisi.'
+  items:
+  - U6-037
+  - U6-054
+- id: G6
+  name_tr: 'Etkinlik fiilleri: go + V-ing / go on a … / join a …'
+  form: go + V-ing (go rafting, go caving, go scuba diving) · go on a jeep safari · join a motorcycle tour · fly in a hot-air balloon
+  examples:
+  - We went rafting in Köprülü Canyon last summer.
+  - Would you rather go caving or go on a jeep safari?
+  - My uncle joined a motorcycle tour across Anatolia.
+  explain_tr: Hareketli, açık havada yapılan etkinlikler go + V-ing ile söylenir (to yok). Ü2'deki play (top oyunları) ve do (karate, yoga) ayrımının devamı.
+  common_errors:
+  - wrong: We went to rafting.
+    right: We went rafting.
+    why_tr: go + V-ing kalıbında to yok.
+  - wrong: I play skydiving.
+    right: I go skydiving.
+    why_tr: play top oyunları için.
+  lgs_note: 'Boşluk doldurma: go / play / do eşleşmesi; ilan metninde "Join our tour!" gibi çağrılar.'
+  items:
+  - U6-004
+  - U6-008
+  - U6-010
+- id: G7
+  name_tr: -ing / -ed sıfatlar (amusing, disappointing, challenging)
+  form: şey/etkinlik → -ing (amusing, disappointing, exciting) · kişinin duygusu → -ed (amused, disappointed, excited)
+  examples:
+  - The trip was disappointing because it rained all day.
+  - We were disappointed because it rained all day.
+  - Canoeing is challenging but amusing.
+  explain_tr: Ü4'te -ed duygular öğretildi (U4-054). Etkinliği anlatan sıfat -ing, insanın hissettiği -ed.
+  common_errors:
+  - wrong: I am very disappointing.
+    right: I am very disappointed.
+    why_tr: Kişi -ed hisseder; "I am disappointing" = ben hayal kırıklığı yaratan biriyim.
+  lgs_note: 'Mesaj/yorum çıkarımı: "The concert was disappointing" → yazar memnun değil.'
+  items:
+  - U6-031
+  - U6-032
+  - U6-028
+- id: G8
+  name_tr: 'Deneyim soruları (tanıma düzeyi): Have you ever …? + geçmiş zaman'
+  form: Have you ever + V3? – Yes, I have. / No, I haven't. · When did you last do it? Where did you do it?
+  examples:
+  - Have you ever experienced any dangers?
+  - Have you ever tried rock climbing? – Yes, I have. I tried it last year.
+  - When did you last do it? – Two years ago.
+  explain_tr: Present Perfect 8. sınıf programında yok; ders kitabı soruları kalıp olarak tanınır. Ayrıntılar (ne zaman, nerede) Simple Past ile anlatılır.
+  common_errors:
+  - wrong: Did you ever try rafting? – Yes, I have.
+    right: Have you ever tried rafting? – Yes, I have.
+    why_tr: Soru ve kısa cevap aynı yardımcı fiille.
+  lgs_note: 'Yalnız tanıma: kısa cevabı (Yes, I have / No, I haven''t) eşleştirme. Üretim beklenmez.'
+  items:
+  - U6-027
+expressions:
+- en: Which one do you prefer, A or B?
+  tr: Hangisini tercih edersin, A mı B mi?
+  use: tercih sorma
+  register: nötr
+  reply:
+  - I prefer A (to B) because …
+  item: U6-035
+- en: Would you rather … or …?
+  tr: … mı yoksa … mı yeğlersin?
+  use: iki seçenek arasında tercih sorma; oyun gibi sorulabilir
+  register: gündelik
+  reply:
+  - I'd rather …
+  - Neither! I'd rather stay at home.
+  item: U6-036
+- en: I'd rather not.
+  tr: Pek istemem / Yapmasam daha iyi.
+  use: kibarca istemediğini söyleme
+  register: gündelik
+  item: U6-036
+- en: I think … is more … than …
+  tr: Bence … -den daha …
+  use: karşılaştırarak görüş bildirme
+  register: nötr
+  reply:
+  - I agree.
+  - I don't think so.
+  item: U6-033
+- en: What's your craziest dream adventure?
+  tr: En çılgın macera hayalin ne?
+  use: tanışma/sohbet sorusu
+  register: gündelik
+  reply:
+  - I guess my craziest dream is …
+  item: U6-034
+- en: Because it is more amusing / exciting / challenging.
+  tr: Çünkü daha eğlenceli / heyecanlı / zorlayıcı.
+  use: tercihe gerekçe
+  register: nötr
+  item: U6-037
+- en: What kind of sport is it?
+  tr: Ne tür bir spor?
+  use: bir sporu tanıtma
+  register: nötr
+  reply:
+  - It's a water sport / an extreme sport / an individual sport.
+  item: U6-038
+- en: How much does it cost? – It costs about … .
+  tr: Ne kadar tutuyor? – Yaklaşık … tutuyor.
+  use: fiyat sorma
+  register: nötr
+  item: U6-046
+- en: What do you need for this sport?
+  tr: Bu spor için neye ihtiyacın var?
+  use: ekipman sorma
+  register: nötr
+  reply:
+  - You need a helmet, a rope and …
+  item: U6-022
+- en: What qualifications does a person need?
+  tr: Bir kişinin hangi niteliklere ihtiyacı var?
+  use: şartları sorma (yaş, deneyim, sağlık)
+  register: nötr
+  reply:
+  - You don't need any experience.
+  - You should be a good swimmer.
+  item: U6-047
+- en: What are the possible dangers?
+  tr: Olası tehlikeler neler?
+  use: risk sorma
+  register: nötr
+  reply:
+  - You can fall / drown / get frostbite.
+  item: U6-011
+- en: What's the best time to visit / the best way to get there?
+  tr: Ziyaret için en iyi zaman / oraya gitmenin en iyi yolu ne?
+  use: yer tanıtma, gezi planı
+  register: nötr
+  reply:
+  - In spring.
+  - By bus. It's cheaper.
+  item: U6-034
+- en: My pleasure.
+  tr: Rica ederim / Ne demek, benim için zevkti.
+  use: teşekküre cevap (Thank you so much!)
+  register: nötr
+  item: U6-057
+- en: take risks
+  tr: risk almak
+  use: 'macera karakteri anlatma: Adventurers like taking risks.'
+  register: nötr
+  item: U6-012
+- en: feel the freedom
+  tr: özgürlüğü hissetmek
+  use: paragliding/skydiving deneyimi anlatma
+  register: nötr
+  item: U6-053
+- en: It takes place in …
+  tr: … -de gerçekleşir / yapılır.
+  use: etkinlik/yarışma tanıtımı (ilan metni)
+  register: nötr
+  item: U6-056
+- en: I mean … / In other words …
+  tr: Yani … / Başka bir deyişle …
+  use: açıklama (Ü5 tekrarı)
+  register: nötr
+- en: safety first
+  tr: önce güvenlik
+  use: eğitmen brifingi, uyarı
+  register: gündelik
+  item: U6-022
+collocations:
+- item: U6-001
+  pairs:
+  - go on an adventure
+  - an adventure holiday / film
+  - an adventurous person
+  - a real adventurer
+- item: U6-002
+  pairs:
+  - do extreme sports
+  - extreme sports lovers
+  - extreme weather / cold
+- item: U6-011
+  pairs:
+  - dangerous for beginners
+  - a dangerous place / sport
+  - in danger
+  - possible dangers
+- item: U6-012
+  pairs:
+  - take risks
+  - take a big risk
+  - at risk
+  - risky (TANIMA)
+- item: U6-027
+  pairs:
+  - have experience in …
+  - an amazing experience
+  - an experienced instructor
+  - experience danger
+- item: U6-022
+  pairs:
+  - safety equipment
+  - a piece of equipment
+  - diving / climbing equipment
+- item: U6-013
+  pairs:
+  - have an accident
+  - a serious accident
+  - by accident
+- item: U6-049
+  pairs:
+  - succeed in + V-ing
+  - a successful trip
+  - land successfully
+- item: U6-052
+  pairs:
+  - gain experience
+  - gain confidence
+  - gain weight
+- item: U6-050
+  pairs:
+  - improve your skills
+  - improve your English
+- item: U6-054
+  pairs:
+  - the wind blows
+  - strong wind
+  - wind speed
+  - weather conditions
+- item: U6-018
+  pairs:
+  - land safely
+  - a safe landing
+  - land on the ground
+- item: U6-042
+  pairs:
+  - enjoy the view
+  - a magnificent view / scenery
+  - a room with a view
+- item: U6-009
+  pairs:
+  - climb a mountain / wall / tree
+  - rock climbing
+  - ice climbing
+- item: U6-047
+  pairs:
+  - need qualifications
+  - have the right skills
+word_families:
+- root: adventure
+  forms:
+  - form: adventure
+    pos: n
+    tr: macera
+    item: U6-001
+  - form: adventurer
+    pos: n
+    tr: maceracı
+    item: U6-001
+  - form: adventurous
+    pos: adj
+    tr: maceraperest, maceralı
+    item: U6-001
+- root: danger
+  forms:
+  - form: danger
+    pos: n
+    tr: tehlike
+    item: U6-011
+  - form: dangerous
+    pos: adj
+    tr: tehlikeli
+    item: U6-011
+  - form: endanger
+    pos: v
+    tr: tehlikeye atmak (tanıma)
+- root: experience
+  forms:
+  - form: experience
+    pos: n/v
+    tr: deneyim; yaşamak, deneyimlemek
+    item: U6-027
+  - form: experienced
+    pos: adj
+    tr: deneyimli
+    item: U6-027
+  - form: inexperienced
+    pos: adj
+    tr: deneyimsiz
+    item: U6-027
+- root: succeed
+  forms:
+  - form: succeed
+    pos: v
+    tr: başarmak
+    item: U6-049
+  - form: success
+    pos: n
+    tr: başarı
+  - form: successful
+    pos: adj
+    tr: başarılı
+    item: U6-049
+  - form: successfully
+    pos: adv
+    tr: başarıyla
+    item: U6-049
+- root: die
+  forms:
+  - form: die
+    pos: v
+    tr: ölmek
+    item: U6-021
+  - form: death
+    pos: n
+    tr: ölüm
+    item: U6-021
+  - form: dead
+    pos: adj
+    tr: ölü
+- root: brave
+  forms:
+  - form: brave
+    pos: adj
+    tr: cesur
+    item: U6-016
+  - form: bravery
+    pos: n
+    tr: cesaret
+    item: U6-016
+  - form: courage
+    pos: n
+    tr: cesaret
+    item: U6-016
+  - form: fearless
+    pos: adj
+    tr: korkusuz
+    item: U6-016
+- root: mystery
+  forms:
+  - form: mystery
+    pos: n
+    tr: gizem
+  - form: mysterious
+    pos: adj
+    tr: gizemli
+    item: U6-029
+- root: free
+  forms:
+  - form: free
+    pos: adj
+    tr: özgür; boş; bedava
+  - form: freedom
+    pos: n
+    tr: özgürlük
+    item: U6-053
+  - form: freefall
+    pos: n
+    tr: serbest düşüş
+    item: U6-006
+- root: qualify
+  forms:
+  - form: qualification
+    pos: n
+    tr: nitelik, yeterlik
+    item: U6-047
+  - form: qualified
+    pos: adj
+    tr: nitelikli, ehil (tanıma)
+- root: explore
+  forms:
+  - form: explore
+    pos: v
+    tr: keşfetmek
+    item: U6-055
+  - form: explorer
+    pos: n
+    tr: kâşif
+synonym_sets:
+- words:
+  - courage
+  - bravery
+  difference_tr: İkisi de "cesaret"; courage daha yaygın. brave (sıfat) → bravery.
+  items:
+  - U6-016
+- words:
+  - scenery
+  - view
+  difference_tr: scenery bir bölgenin genel doğal görünümü (sayılamaz); view bir noktadan görülen manzara (a view of the lake).
+  items:
+  - U6-042
+- words:
+  - aim
+  - goal
+  difference_tr: İkisi de "amaç, hedef"; goal ayrıca futbolda gol.
+  items:
+  - U6-051
+- words:
+  - skydiving
+  - parachuting
+  difference_tr: Uçaktan atlama; skydiving'de paraşüt açılmadan önce uzun serbest düşüş (freefall) vardır.
+  items:
+  - U6-006
+- words:
+  - canoeing
+  - kayaking
+  difference_tr: Türkçede ikisine de "kano" denir; kanoda tek uçlu kürek, kayakta çift uçlu kürek (paddle). Sınavda ayrım sorulmaz.
+  items:
+  - U6-010
+- words:
+  - magnificent
+  - amazing
+  - wonderful
+  difference_tr: Hepsi olumlu; magnificent "görkemli, muhteşem" (manzara, yapı).
+  items:
+  - U6-030
+- words:
+  - amusing
+  - fun
+  - entertaining
+  difference_tr: amusing güldüren, eğlenceli; fun (U1-098), entertaining (U2-083) önceki ünitelerde.
+  items:
+  - U6-031
+- words:
+  - challenging
+  - difficult
+  - hard
+  difference_tr: challenging zor ama çekici, insanı zorlayan (olumlu çağrışım); difficult/hard nötr.
+  items:
+  - U6-028
+- words:
+  - prefer
+  - would rather
+  difference_tr: 'Aynı anlam, farklı yapı: prefer + V-ing (to), would rather + V1 (than).'
+  items:
+  - U6-035
+  - U6-036
+- words:
+  - gain
+  - win
+  - earn
+  difference_tr: gain deneyim/güven/kilo edinmek; win yarış, ödül kazanmak; earn para kazanmak.
+  items:
+  - U6-052
+opposites:
+- a: dangerous
+  b: safe
+  note_tr: safe Ü5 (U5-011)
+- a: experienced
+  b: inexperienced
+  note_tr: in- ön eki
+- a: brave / fearless
+  b: scared / frightened
+  note_tr: scared Ü4 -ed duygu
+- a: more … than
+  b: less … than
+- a: the most
+  b: the least
+- a: amusing
+  b: boring
+  note_tr: boring U1-095
+- a: succeed
+  b: fail
+  note_tr: fail tanıma
+- a: indoor sports
+  b: outdoor / extreme sports
+  note_tr: indoor TANIMA
+- a: land
+  b: take off
+  note_tr: take off tanıma
+- a: magnificent
+  b: disappointing
+traps:
+- about: challenging
+  item: U6-028
+  kind: kaynak_hatasi
+  trap_tr: Kaynak I "iddialı" diyor.
+  tip_tr: challenging = zorlayıcı, zorlu (ama denemeye değer). challenge = meydan okuma.
+- about: life jacket
+  item: U6-026
+  kind: kaynak_hatasi
+  trap_tr: Kaynak I "can simidi" diyor.
+  tip_tr: life jacket = can yeleği; can simidi = lifebuoy.
+- about: mysterious
+  item: U6-029
+  kind: kaynak_hatasi
+  trap_tr: Kaynak I "gizli" diyor.
+  tip_tr: mysterious = gizemli; gizli = secret.
+- about: qualifications
+  item: U6-047
+  kind: kaynak_hatasi
+  trap_tr: Kaynak I "özellik" diyor.
+  tip_tr: qualification = nitelik, yeterlik (yaş, deneyim, belge); özellik = feature.
+- about: flashlight
+  item: U6-025
+  kind: kaynak_hatasi
+  trap_tr: Kaynak C "flaş" da diyor.
+  tip_tr: flashlight = el feneri (İngiliz İngilizcesinde torch); fotoğraf flaşı = flash.
+- about: glacier
+  item: U6-040
+  kind: kaynak_hatasi
+  trap_tr: Kaynak C "buz dağı" da diyor.
+  tip_tr: glacier = buzul (karada); buz dağı = iceberg (denizde).
+- about: take place
+  item: U6-056
+  kind: turkce_etkisi
+  trap_tr: Kaynak I "yer almak" diyor; kelime kelime çeviri yanıltır.
+  tip_tr: 'take place = gerçekleşmek, yapılmak: The race takes place in May.'
+- about: land
+  item: U6-018
+  kind: cok_anlamli
+  trap_tr: Kaynak I yalnız "kara" veriyor; safe landing için "güvenli".
+  tip_tr: 'isim: kara, toprak · fiil: iniş yapmak (The paraglider landed safely).'
+- about: fall
+  item: U6-015
+  kind: cok_anlamli
+  trap_tr: fall Amerikan İngilizcesinde "sonbahar".
+  tip_tr: 'Bu ünitede düşmek: fall – fell – fallen. fall down / fall off.'
+- about: equipment
+  item: U6-022
+  kind: dilbilgisi
+  trap_tr: Türkçede "ekipmanlar" denir.
+  tip_tr: 'equipment sayılamaz: ❌ equipments, ❌ an equipment → ✓ some equipment / a piece of equipment.'
+- about: prefer … to
+  item: U6-035
+  kind: dilbilgisi
+  trap_tr: more … than alışkanlığıyla "prefer … than" denir.
+  tip_tr: prefer A to B; would rather A than B.
+- about: would rather
+  item: U6-036
+  kind: dilbilgisi
+  trap_tr: 'would like to ile karışır: "I''d rather to go".'
+  tip_tr: would rather + yalın fiil (to yok, -ing yok).
+- about: more + -er
+  item: U6-033
+  kind: dilbilgisi
+  trap_tr: '"more safer", "more better".'
+  tip_tr: 'Ya -er ya more; düzensizler: good–better–the best, bad–worse–the worst.'
+- about: experience / experiment
+  item: U6-027
+  kind: benzer_yazilis
+  trap_tr: experiment = deney (bilim fuarı).
+  tip_tr: experience = deneyim, yaşantı.
+- about: gain
+  item: U6-052
+  kind: turkce_etkisi
+  trap_tr: Türkçe "kazanmak" üç İngilizce fiile karşılık gelir.
+  tip_tr: gain experience / confidence; win a race; earn money.
+- about: climb
+  item: U6-009
+  kind: benzer_yazilis
+  trap_tr: b okunmaz.
+  tip_tr: /klaɪm/; climber /ˈklaɪmə/.
+- about: disappointing / disappointed
+  item: U6-032
+  kind: dilbilgisi
+  trap_tr: '"I am disappointing" yanlış anlam verir.'
+  tip_tr: Şey -ing, kişi -ed (Ü4 U4-054).
+- about: go rafting
+  item: U6-004
+  kind: turkce_etkisi
+  trap_tr: '"Raftinge gitmek" → ❌ go to rafting.'
+  tip_tr: 'go + V-ing: go rafting, go caving.'
+- about: present
+  kind: cok_anlamli
+  trap_tr: 'K: "What can we buy as a present?" — present = hediye; ayrıca şimdiki (present tense) ve sunmak (fiil, Ü2 sunum).'
+  tip_tr: 'Bağlama bak: buy a present = hediye almak.'
+- about: take adventure / risk order
+  kind: kaynak_hatasi
+  trap_tr: Kaynak I'da doğal olmayan ifadeler.
+  tip_tr: 'Doğrusu: go on an adventure; risk order anlamsız (TANIMA, kullanılmaz).'
+- about: skydiving
+  item: U6-006
+  kind: kaynak_hatasi
+  trap_tr: Kaynak I ve C "gökyüzü dalışı" (kelime kelime çeviri).
+  tip_tr: Türkçede "serbest paraşüt" ya da "uçaktan paraşütle atlama".
+- about: base jumping
+  item: U6-005
+  kind: kaynak_hatasi
+  trap_tr: Kaynak A yalnız "bir yerden atlama" diyor.
+  tip_tr: base jumping = bina, anten, köprü ya da uçurumdan paraşütle atlama; bungee jumping = esnek iple atlama.
+lgs_focus:
+  what_is_tested:
+  - 'İki ya da daha çok etkinliği karşılaştırma: tablo/grafik → doğru karşılaştırma ya da üstünlük cümlesi (en sık)'
+  - 'Tercih diyaloğu: Which one do you prefer? / Would you rather …? → uygun cevap + gerekçe'
+  - 'Bir sporu ya da macera turunu tanıtan ilan/broşür: yaş, ekipman, fiyat, eğitmen, en iyi zaman → doğru bilgi / verilmeyen bilgi'
+  - 'Maceracı ya da ekstrem spor metni: ana fikir, çıkarım (deneyim, risk, başarı)'
+  - 'Kelime anlamı: challenging, take place, aim, qualification, magnificent'
+  - 'Durum–tepki: tehlikeli bir duruma uyarı, teşekküre cevap (My pleasure)'
+  question_patterns:
+  - type: table_graph
+    description_tr: İki-dört etkinliği yıldızla puanlayan tablo (danger, cost, excitement) → doğru karşılaştırma cümlesi.
+    sample_stem: 'Table — Rafting: danger ★★, cost ★★★, fun ★★★ · Caving: danger ★★★, cost ★, fun ★★ · Paragliding: danger ★★★, cost ★★★, fun ★★★. According to the table, which of the following is TRUE?'
+    sample_options:
+    - Caving is cheaper than rafting.
+    - Rafting is more dangerous than caving.
+    - Paragliding is less expensive than caving.
+    - Caving is the most amusing activity.
+    distractor_logic_tr: Çeldiriciler aynı sıfatı ters yönde kurar (more ↔ less) ya da üstünlüğü yanlış etkinliğe verir; öğrenci her şıkta iki satırı ve sütunu tek tek karşılaştırmalı.
+    items:
+    - U6-033
+    - U6-034
+    - U6-046
+    - U6-011
+    - U6-031
+  - type: dialogue_complete
+    description_tr: Tercih sorusu → boşluk → gerekçe akışı.
+    sample_stem: 'Ali: Would you rather go scuba diving or go on a jeep safari? — Ece: ______ — Ali: Why? — Ece: Because I can''t swim very well.'
+    sample_options:
+    - I'd rather go on a jeep safari.
+    - Yes, I would. It's great.
+    - I'd rather go scuba diving.
+    - I prefer swimming to running.
+    distractor_logic_tr: Gerekçe (yüzemiyorum) suya giren seçeneği eler; "Yes, I would" evet–hayır cevabı (soru seçim sorusu); son şık yüzmeyi tercih ediyor, gerekçeyle çelişir.
+    items:
+    - U6-036
+    - U6-037
+    - U6-008
+    - U6-004
+  - type: message_infer
+    description_tr: Bir macera etkinliği ilanı/broşürü (yaş, ekipman, fiyat, eğitmen) → hangi bilgi verilmemiştir / hangisi doğrudur?
+    sample_stem: 'POSTER — Blue River Rafting Club: Age: 12+ · No experience needed: our instructors help you. · We provide helmets and life jackets. · Price: 300 TL per person. Which question is NOT answered
+      in the poster?'
+    sample_options:
+    - How long does the tour take?
+    - How old should a person be?
+    - Do I need any qualifications?
+    - How much does it cost?
+    distractor_logic_tr: Doğru şık metinde olmayan bilgiyi sorar; diğerleri metindeki bilgiyle birebir eşleşir (12+ → yaş, no experience → nitelik).
+    items:
+    - U6-047
+    - U6-048
+    - U6-022
+    - U6-023
+    - U6-026
+    - U6-046
+  - type: text_infer
+    description_tr: Bir maceracıyı ya da ekstrem sporu anlatan kısa metin → ana fikir / çıkarım.
+    sample_stem: 'Text: "Deniz started rock climbing at 15. At first, she was inexperienced and fell many times, but she never gave up. Now she is an instructor and helps beginners." What can we infer about
+      Deniz?'
+    sample_options:
+    - She succeeded because she worked hard.
+    - She stopped climbing after an accident.
+    - She has never fallen.
+    - She prefers swimming to climbing.
+    distractor_logic_tr: Çeldiriciler metindeki kelimeyi (fell, accident) yanlış bağlamda kullanır ya da metinde olmayan tercih bilgisi verir.
+    items:
+    - U6-009
+    - U6-027
+    - U6-015
+    - U6-049
+    - U6-048
+  - type: synonym
+    description_tr: Altı çizili kelimeye en yakın anlam (challenging, take place, aim, magnificent).
+    sample_stem: The race takes place in Fethiye every September. The underlined phrase "takes place" is closest in meaning to ______.
+    sample_options:
+    - happens
+    - finishes
+    - moves
+    - costs
+    distractor_logic_tr: '"place" kelimesinden yer/taşınma çağrışımı (moves) ve ilan dilinden gelen cost çeldiricileri.'
+    items:
+    - U6-056
+    - U6-028
+    - U6-051
+    - U6-030
+  - type: situation
+    description_tr: Durum → uygun tepki/cümle (tercih belirtme, risk konusunda uyarı, teşekküre cevap).
+    sample_stem: Your friend wants to go paragliding today, but the wind is very strong. What do you say?
+    sample_options:
+    - It's too windy. It's safer to wait for tomorrow.
+    - My pleasure. Have a good flight!
+    - I'd rather go paragliding today.
+    - Paragliding is the cheapest sport.
+    distractor_logic_tr: Durumun ana bilgisi (güçlü rüzgâr → tehlike) yalnız ilk şıkta karşılanır; My pleasure teşekküre cevaptır.
+    items:
+    - U6-054
+    - U6-007
+    - U6-011
+    - U6-057
+  - type: odd_one_out
+    description_tr: Kategoriye uymayanı bulma (ekipman / spor / sıfat).
+    sample_stem: Which one is NOT a piece of safety equipment?
+    sample_options:
+    - waterfall
+    - helmet
+    - life jacket
+    - knee pads
+    distractor_logic_tr: 'Tek doğa kelimesi; diğerleri ekipman. equipment sayılamaz: "a piece of" kalıbı kökte geçer.'
+    items:
+    - U6-022
+    - U6-023
+    - U6-026
+    - U6-043
+  priority_items:
+  - U6-033
+  - U6-034
+  - U6-035
+  - U6-036
+  - U6-037
+  - U6-011
+  - U6-028
+  - U6-001
+  - U6-002
+  - U6-022
+  - U6-012
+  - U6-027
+  - U6-047
+  - U6-046
+  - U6-031
+  - U6-032
+  - U6-004
+  - U6-056
+  tactics:
+  - Tabloda her şıkkı iki hücre karşılaştırarak kontrol et; "more" mi "less" mi, sıfat olumlu mu olumsuz mu?
+  - the most / the least şıkkında bütün satırlara bak; yalnız iki satır yetmez.
+  - Would you rather A or B? sorusunun cevabı A ya da B'dir; Yes/No ile başlayan şık genellikle çeldiricidir.
+  - 'Boşluktan sonraki Why? / Because … satırını oku: gerekçe hangi seçeneği gösteriyor?'
+  - İlan sorularında "NOT mentioned / NOT answered" kelimesini daire içine al; metinde olanları tek tek ele.
+  - prefer gördüysen to, would rather gördüysen yalın fiil + than arıyorsun.
+  - 'Sıfatı Türkçeye çevirerek düşünme: challenging olumlu da olabilir (zor ama değer).'
+  exam_vocabulary:
+  - en: According to the table / chart
+    tr: tabloya / grafiğe göre
+  - en: Which of the following is TRUE / FALSE?
+    tr: Aşağıdakilerden hangisi doğrudur / yanlıştır?
+  - en: compare
+    tr: karşılaştırmak
+  - en: NOT mentioned
+    tr: değinilmemiştir
+  - en: preference
+    tr: tercih
+  - en: infer
+    tr: çıkarım yapmak
+  - en: closest in meaning
+    tr: anlamca en yakın
+  - en: the underlined word
+    tr: altı çizili kelime
+cross_unit:
+- item: U6-035 prefer … to
+  links_to: U1-018 prefer
+  note_tr: Kelime Ü1'de; yapı (prefer A to B, prefer + V-ing) burada.
+- item: U6-033 -er / more … than
+  links_to: U2-090 more than / less than / the most / the least
+  note_tr: Ü2 sayı/anket dili; Ü6 sıfatla karşılaştırma. Grafik soruları ikisini birleştirir.
+- item: U6-031 amusing, U6-032 disappointing
+  links_to: U1-096 exciting, U1-095 boring, U2-077 fascinating, U2-083 entertaining, U4-054 -ed duygular
+  note_tr: Karşılaştırma cümlelerinin sıfat havuzu; -ing / -ed ayrımı.
+- item: U6-011 dangerous
+  links_to: U5-011 safe / safety
+  note_tr: Karşıt çift; safer than / more dangerous than.
+- item: U6-004 go rafting …
+  links_to: U2-036 team sport, U2-037 individual sport, U2-038 do karate, U2-039 hiking
+  note_tr: go / play / do ayrımının devamı; spor türleri.
+- item: U6-037 Why …? – Because …
+  links_to: U5-054 I mean … / In other words
+  note_tr: Gerekçe ve açıklama birlikte kullanılır.
+- item: U6-046 cost
+  links_to: U3-047 How long / How much / How many
+  note_tr: How much does it cost? fiyat sorusu; How long does it take? süre.
+- item: U6-048 instructor
+  links_to: U5-039 expert
+  note_tr: Uzman ve eğitmen; experienced instructor.
+- item: U6-047 qualifications
+  links_to: U1-003 attend, U1-015 join
+  note_tr: How old should a person be to attend it? (K)
+- item: U6-041 destination, U6-045 historic places, U6-042 scenery
+  links_to: Ünite 7 Tourism
+  note_tr: Yer tanıtma dilinin başlangıcı; Ü7'de tekrar edilecek.
+- item: U6-034 the best time / way
+  links_to: Ünite 7 Tourism
+  note_tr: What's the best time to visit? Ü7'de turizm sorusu olarak döner.
+- item: U6-027 experience
+  links_to: U1-079 laid-back, U1-090 self-disciplined (kişilik)
+  note_tr: Maceracı karakter tanımı (adventurous, brave) Ü1 kişilik sıfatlarıyla birleşir.
+story_hooks:
+- situation_tr: 'Gün 1 önerisi: Murat Bey Ü5 finalinde duyurduğu iki günlük bahar doğa kampının broşürünü dağıtır: ''Spring Adventure Camp''. Derste bir dergi sayfası okunur: ''Are you an adrenaline seeker?''
+    testi. Kaan 10/10 alır (''I love danger!''), Selin 2/10 (''I love plans.''). Murat Bey sorar: ''What kind of adventure is good for beginners?'''
+  items:
+  - U6-001
+  - U6-002
+  - U6-003
+  - U6-011
+  - U6-027
+  - U6-038
+  comedy_tr: Bora testi dürüst doldurur, puanı 5 çıkar; 'Half adventurer, half sofa.'
+- situation_tr: 'Gün 2 önerisi: Broşürde dört etkinlik var; Ece tahtaya karşılaştırma tablosu çizer (danger / fun / difficulty). Sınıf, dergideki ekstrem sporlarla kıyaslar: ''Bungee jumping is more dangerous
+    than the climbing wall.'' Kaan skydiving ister; Murat Bey: ''Not at a school camp!'''
+  items:
+  - U6-033
+  - U6-005
+  - U6-006
+  - U6-007
+  - U6-012
+  - U6-028
+  comedy_tr: Kaan her etkinliğe 'not challenging enough' der; Duru 'Sleeping is the least dangerous sport' diye ekler.
+- situation_tr: 'Gün 3 önerisi: Ece WhatsApp grubunda ''Would you rather …?'' anketi açar: rafting mi caving mi, zip-line mı kano mu. Herkes tercihini ve gerekçesini yazar; Elif''in cevabı: ''I''d rather
+    sing at the campfire.'' Geçen yılın kampını anlatan bir video yorumları: ''amusing'' / ''disappointing''.'
+  items:
+  - U6-035
+  - U6-036
+  - U6-037
+  - U6-004
+  - U6-031
+  - U6-032
+  comedy_tr: 'Bora''nın her cevabının gerekçesi böcekler: ''Because there are fewer bugs.'''
+- situation_tr: 'Gün 4 önerisi: Kamp malzeme listesi (Ece''nin 4 sayfalık listesi). Spor mağazasında: kask, dizlik, ip, el feneri, can yeleği; ''How much does it cost?'' Selin''in babası fiyatları karşılaştırır.
+    Eğitmen ekibin e-postası: ''We provide all safety equipment.'''
+  items:
+  - U6-022
+  - U6-023
+  - U6-024
+  - U6-025
+  - U6-026
+  - U6-046
+  comedy_tr: Ece listesine 'equipments' yazar; Selin kırmızı kalemle düzeltir. Kaan üç el feneri alır, pili almayı unutur.
+- situation_tr: 'Gün 5 önerisi: Kampa varış (veliler internetten aldığı gidiş-dönüş biletle otobüs). Eğitmen Deniz Hoca güvenlik brifingi verir: hangi nitelikler gerekiyor, kazalar nasıl önlenir, düşerseniz
+    ne yaparsınız. Okuma köşesi: bir dağcının hayatta kalma hikâyesi (dergi metni) ve ''rate of death'' tablosu.'
+  items:
+  - U6-048
+  - U6-047
+  - U6-013
+  - U6-015
+  - U6-014
+  - U6-021
+  comedy_tr: Kaan brifing sırasında kaskı ters takar; Deniz Hoca 'Safety first, style second.'
+- situation_tr: 'Gün 6 önerisi: Tırmanma duvarı. Bora tepeye bakıp bahane uydurmadan ''I''m scared'' der, yine de dener; amacı yarıya kadar çıkmak, sonunda tepeye ulaşır. Selin zip-line''a ilk binen olur:
+    ''I always follow the plan. Today the plan is fear.'' Eğitmen: ''You gained confidence and improved fast.'''
+  items:
+  - U6-009
+  - U6-016
+  - U6-049
+  - U6-051
+  - U6-050
+  - U6-052
+  comedy_tr: Kaan herkesten önce tırmanmak ister ama ipi bekleyemez; ekip ipini beklemeyi öğrenir.
+- situation_tr: 'Gün 7 önerisi: Gölde kano; rüzgâr çıkar, eğitmen etkinliği kısaltır ve herkes güvenle kıyıya iner. Murat Bey''in gençliğinde yaptığı tüplü dalışı anlatması: ''Under the water you feel the
+    freedom.'' Can yeleği neden şart: suda boğulma riskine dair kısa bilgi notu.'
+  items:
+  - U6-010
+  - U6-054
+  - U6-017
+  - U6-018
+  - U6-053
+  - U6-008
+  comedy_tr: Kaan kanoyu tek başına kıyıya çekmeye çalışır, kano yerinden kıpırdamaz; Duru molada uyur.
+- situation_tr: 'Gün 8 önerisi: Gece yürüyüşü; grup kısa süre yolu kaybeder, Duru sakin kalıp yönü seçer, eğitmenin feneri görünür (güvenle çözülür). Kamp ateşinde Deniz Hoca ''mysterious'' hikâyeler anlatır:
+    buzulda donma tehlikesi, uçurum kenarında kamp kuran dağcılar, köpekbalığı saldırısı efsaneleri (gerçek olaylar abartılmaz).'
+  items:
+  - U6-029
+  - U6-039
+  - U6-019
+  - U6-020
+  - U6-040
+  comedy_tr: 'Bora''nın böcek paniği: karanlıkta ''Something attacked me!'' — bir yaprak.'
+- situation_tr: 'Gün 9 önerisi: Okulda ''Dream Adventure Map'' panosu: herkes bir hayal varış noktası seçer ve tanıtır (şelale, dağ yolu, buzul manzarası). Elif Kanadalı arkadaşı Mia''ya (Ü5) kampı anlatır
+    ve Mia''nın gönderdiği şelale fotoğrafına ''magnificent'' der.'
+  items:
+  - U6-041
+  - U6-042
+  - U6-043
+  - U6-044
+  - U6-055
+  - U6-030
+  comedy_tr: 'Duru''nun hayal varış noktası: ''A hammock. Anywhere.'''
+- situation_tr: 'Gün 10 önerisi (final): Kamp ateşi turu sınıfta tekrarlanır: ''the most exciting thing I did at camp''; herkes birbirinin cesaretini sayar. Murat Bey Ü7 kancasını verir: Nisan''da yurt
+    dışından ortak bir sınıf İzmir''e geliyor, tarihi yerleri gezdirecek rehber sizsiniz; tur bir cumartesi gerçekleşecek. Elif teşekkür eden Bora''ya ''My pleasure.'' Ünite finali: 4 LGS tarzı soru.'
+  items:
+  - U6-034
+  - U6-045
+  - U6-056
+  - U6-057
+  comedy_tr: Ece'nin 4 sayfalık planından tek bir madde uygulanmıştır; en iyi anı plansız çıkan yağmurlu gece olur.
+- situation_tr: 'Ek durum: Kaan ve Bora hangi sporun "en tehlikeli" olduğunu tartışır; Selin internetten veriye bakmayı önerir (Ü5 kuralı: first search, then share). Karşılaştırma ve üstünlük cümleleri
+    tablodan okunur.'
+  items:
+  - U6-033
+  - U6-034
+  - U6-011
+  - U6-021
+  comedy_tr: Kaan'ın kaynağı bir aksiyon filmi çıkar.
+- situation_tr: 'Ek durum: Ece''nin kuzeni Ege, kampın ''disappointing'' olacağını iddia eder; dönüşte gelen fotoğraflara ''OK, magnificent'' demek zorunda kalır.'
+  items:
+  - U6-032
+  - U6-030
+  - U6-042
+  comedy_tr: Ege yorumunu üç kez düzenler.
+mini_lessons:
+- type: mini_dilbilgisi
+  text_tr: Tek heceli sıfat -er/-est alır (safe → safer → the safest); iki heceli -y ile biten -ier/-iest (crazy → crazier → the craziest); uzun sıfat more/the most (dangerous → more dangerous → the most
+    dangerous).
+  refs:
+  - U6-033
+  - U6-034
+- type: tuzak
+  text_tr: good → better → the best; bad → worse → the worst. "more better" yok.
+  refs:
+  - U6-033
+  - U6-034
+- type: mini_dilbilgisi
+  text_tr: prefer A to B — to ile; would rather A than B — than ile ve yalın fiil.
+  refs:
+  - U6-035
+  - U6-036
+- type: lgs_taktigi
+  text_tr: Would you rather …? bir seçim sorusudur; cevap "Yes" değil, seçeneklerden biridir.
+  refs:
+  - U6-036
+- type: hafiza_kancasi
+  text_tr: 'BASE jumping: Building, Antenna, Span (köprü), Earth (uçurum) — atlanan dört yer türünün baş harfleri.'
+  refs:
+  - U6-005
+- type: ilginc_bilgi
+  text_tr: 'SCUBA aslında kısaltmadır: Self-Contained Underwater Breathing Apparatus (kendi havasını taşıyan su altı solunum aygıtı).'
+  refs:
+  - U6-008
+- type: kelime_ailesi
+  text_tr: adventure (macera) → adventurer (maceracı kişi) → adventurous (maceraperest). -er kişi, -ous sıfat yapar (danger → dangerous, mystery → mysterious).
+  refs:
+  - U6-001
+  - U6-011
+  - U6-029
+- type: tuzak
+  text_tr: 'equipment sayılamaz: a piece of equipment, some equipment. ❌ equipments.'
+  refs:
+  - U6-022
+- type: hafiza_kancasi
+  text_tr: 'frostbite = frost (ayaz, kırağı) + bite (ısırmak): soğuğun "ısırması", parmak ve kulakta donma.'
+  refs:
+  - U6-020
+- type: tuzak
+  text_tr: glacier karada yavaş akan buz kütlesi (buzul); denizde yüzen buz dağı iceberg.
+  refs:
+  - U6-040
+- type: tuzak
+  text_tr: 'take place "yer almak" değil "gerçekleşmek": The festival takes place in June.'
+  refs:
+  - U6-056
+- type: tuzak
+  text_tr: 'Türkçe "kazanmak": gain (deneyim, güven), win (yarış), earn (para).'
+  refs:
+  - U6-052
+- type: ilginc_bilgi
+  text_tr: 'Türkiye''de macera rotaları: Kapadokya sıcak hava balonu, Fethiye Ölüdeniz–Babadağ yamaç paraşütü, Antalya Köprülü Kanyon rafting.'
+  refs:
+  - U6-004
+  - U6-007
+- type: mini_dilbilgisi
+  text_tr: 'go + V-ing: go rafting, go caving, go scuba diving — to yok. Top oyunları play, dövüş sporları ve yoga do (Ü2).'
+  refs:
+  - U6-004
+- type: kelime_ailesi
+  text_tr: experience (deneyim) → experienced (deneyimli) → inexperienced (deneyimsiz). in- ön eki "olumsuz" yapar.
+  refs:
+  - U6-027
+- type: tuzak
+  text_tr: disappointing (hayal kırıklığı yaratan şey) ↔ disappointed (hayal kırıklığına uğrayan kişi).
+  refs:
+  - U6-032
+- type: hafiza_kancasi
+  text_tr: climb'da b okunmaz (/klaɪm/), tıpkı comb (tarak) ve thumb (başparmak) gibi.
+  refs:
+  - U6-009
+- type: lgs_taktigi
+  text_tr: 'Tablo sorusunda less … than şıklarını atlama: doğru cevap çoğu zaman ters yönden kurulmuş karşılaştırmadır.'
+  refs:
+  - U6-033
+open_questions:
+- MEB programının Ünite 6 kazanım kodları yalnız E8.6.SP1 ve E8.6.R1 olarak doğrulandı (öğretmen planı). Dinleme/karşılıklı konuşma/yazma kodları ve tam Useful Language listesi (would rather örneği dahil)
+  resmî program PDF'inden kontrol edilmeli.
+- Bu ünitenin kaynaklarında "sınavlarda çıkmış kelimeler" tablosu yok; LGS 2018–2025 Ü6 soruları (özellikle karşılaştırma tabloları) doğrulanmadı. Ders kitabı listesindeki tablo varsa paylaşılırsa exam
+  alanı eklenir.
+- Sezon çerçevesindeki zip-line, campfire, tent, hammock, climbing wall kaynaklarda yok; birim yapılmadı. Hikâyede İngilizce olarak (öğretilmeden) kullanılması ya da 1–2 birim eklenmesi kullanıcı kararı.
+- Have you ever …? (Present Perfect) TANIMA yapıldı; season.yaml finali "the most exciting thing I've ever done" diyor. Bu cümle kalıp olarak kalsın mı, yoksa finalde "the most exciting thing at camp" mı
+  denmeli?
+- life jacket tek kaynaklı (I) ama kano sahnesi için tutuldu; present/gift BİLİNEN'e indirildi. Onaylanıyor mu?
+- Tehlike birimleri (drown, attack, frostbite, death) karakterlerin başına gelmeyecek; okuma metni, belgesel ve eğitmen anlatımında geçecek (season.yaml safety). Bu yaklaşım uygun mu?
+phrase_bank:
+- en: What activities do you prefer doing there? Why?
+  tr: Orada hangi etkinlikleri yapmayı tercih edersin? Neden?
+  function: tercih bildirme
+  items:
+  - U6-035
+  - U6-037
+  source: 'K: ders kitabı kalıp listesi'
+- en: What did you dislike doing?
+  tr: Ne yapmaktan hoşlanmadın?
+  function: tercih bildirme
+  items:
+  - U2-012
+  source: 'K: ders kitabı kalıp listesi'
+- en: What do you prefer doing on summer holidays?
+  tr: Yaz tatilinde ne yapmayı tercih edersin?
+  function: tercih bildirme
+  items:
+  - U6-035
+  source: 'K: ders kitabı kalıp listesi'
+- en: What do you prefer?
+  tr: Ne tercih edersin?
+  function: tercih bildirme
+  items:
+  - U6-035
+  source: 'K: ders kitabı kalıp listesi'
+- en: What is your favourite sport or activity?
+  tr: En sevdiğin spor ya da etkinlik ne?
+  function: tercih bildirme
+  source: 'K: ders kitabı kalıp listesi'
+- en: What sport activity do you like doing?
+  tr: Hangi sporu yapmayı seversin?
+  function: tercih bildirme
+  source: 'K: ders kitabı kalıp listesi'
+- en: What were the things you didn't like doing?
+  tr: Yapmaktan hoşlanmadığın şeyler nelerdi?
+  function: tercih bildirme
+  items:
+  - U2-012
+  source: 'K: ders kitabı kalıp listesi'
+- en: Which extreme sports do you prefer?
+  tr: Hangi ekstrem sporları tercih edersin?
+  function: tercih bildirme
+  items:
+  - U6-002
+  - U6-035
+  source: 'K: ders kitabı kalıp listesi'
+- en: Which one do you prefer the most?
+  tr: En çok hangisini tercih edersin?
+  function: tercih bildirme
+  items:
+  - U6-034
+  - U6-035
+  source: 'K: ders kitabı kalıp listesi'
+- en: Which one do you prefer?
+  tr: Hangisini tercih edersin?
+  function: tercih bildirme
+  items:
+  - U6-035
+  source: 'K: ders kitabı kalıp listesi'
+- en: Which one would you rather do?
+  tr: Hangisini yapmayı yeğlersin?
+  function: tercih bildirme
+  items:
+  - U6-036
+  source: 'K: ders kitabı kalıp listesi'
+- en: Why did you like it?
+  tr: Neden sevdin?
+  function: tercih bildirme
+  items:
+  - U6-037
+  source: 'K: ders kitabı kalıp listesi'
+- en: Why do you prefer it?
+  tr: Neden tercih ediyorsun?
+  function: tercih bildirme
+  items:
+  - U6-035
+  - U6-037
+  source: 'K: ders kitabı kalıp listesi'
+- en: Would you rather ride a horse or ride a camel?
+  tr: Ata mı binmeyi yeğlersin deveye mi?
+  function: tercih bildirme
+  items:
+  - U6-004
+  - U6-036
+  source: 'K: ders kitabı kalıp listesi'
+- en: I guess my craziest dream is travelling to the Far Eastern countries.
+  tr: Sanırım en çılgın hayalim Uzak Doğu ülkelerine gitmek.
+  function: karşılaştırma / üstünlük
+  items:
+  - U4-021
+  - U6-034
+  source: 'K: ders kitabı kalıp listesi'
+- en: I think extreme sports are more exciting than indoor sports.
+  tr: Bence ekstrem sporlar kapalı alan sporlarından daha heyecan verici.
+  function: karşılaştırma / üstünlük
+  items:
+  - U6-002
+  - U6-033
+  source: 'K: ders kitabı kalıp listesi'
+- en: I think underwater hockey is safer than surfing.
+  tr: Bence su altı hokeyi sörften daha güvenli.
+  function: karşılaştırma / üstünlük
+  items:
+  - U6-033
+  source: 'K: ders kitabı kalıp listesi'
+- en: What's the best time to visit?
+  tr: Ziyaret için en iyi zaman ne?
+  function: karşılaştırma / üstünlük
+  items:
+  - U6-034
+  - U6-041
+  source: 'K: ders kitabı kalıp listesi'
+- en: What's the best way to get there? Why?
+  tr: Oraya gitmenin en iyi yolu ne? Neden?
+  function: karşılaştırma / üstünlük
+  items:
+  - U6-034
+  - U6-037
+  source: 'K: ders kitabı kalıp listesi'
+- en: What's your craziest dream adventure?
+  tr: En çılgın macera hayalin ne?
+  function: karşılaştırma / üstünlük
+  items:
+  - U6-001
+  - U6-034
+  source: 'K: ders kitabı kalıp listesi'
+- en: Because it is more amusing.
+  tr: Çünkü o daha eğlenceli.
+  function: gerekçe
+  items:
+  - U6-031
+  - U6-037
+  source: 'K: ders kitabı kalıp listesi'
+- en: Why do you think he is an adventurer?
+  tr: Neden onun maceracı olduğunu düşünüyorsun?
+  function: gerekçe
+  items:
+  - U6-001
+  - U6-037
+  source: 'K: ders kitabı kalıp listesi'
+- en: Have you ever experienced any dangers?
+  tr: Hiç tehlike yaşadın mı?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-011
+  - U6-027
+  source: 'K: ders kitabı kalıp listesi'
+- en: How dangerous is it?
+  tr: Ne kadar tehlikeli?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-011
+  source: 'K: ders kitabı kalıp listesi'
+- en: How much does it cost?
+  tr: Ne kadar? / Fiyatı ne?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-046
+  source: 'K: ders kitabı kalıp listesi'
+- en: How old should a person be to attend it?
+  tr: Katılmak için kaç yaşında olmak gerekir?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U1-003
+  - U6-047
+  source: 'K: ders kitabı kalıp listesi'
+- en: I need …
+  tr: …-e ihtiyacım var.
+  function: etkinlik / yer hakkında bilgi
+  source: 'K: ders kitabı kalıp listesi'
+- en: It costs about 20 dollars.
+  tr: Yaklaşık 20 dolar tutuyor.
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-046
+  source: 'K: ders kitabı kalıp listesi'
+- en: What are the difficulties of this sport?
+  tr: Bu sporun zorlukları neler?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-028
+  source: 'K: ders kitabı kalıp listesi'
+- en: What are the possible dangers of this sport?
+  tr: Bu sporun olası tehlikeleri neler?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-011
+  source: 'K: ders kitabı kalıp listesi'
+- en: What can a visitor see there?
+  tr: Bir ziyaretçi orada ne görebilir?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-041
+  source: 'K: ders kitabı kalıp listesi'
+- en: What can we buy as a present?
+  tr: Hediye olarak ne alabiliriz?
+  function: etkinlik / yer hakkında bilgi
+  source: 'K: ders kitabı kalıp listesi'
+- en: What do people need to do it?
+  tr: Bunu yapmak için insanların neye ihtiyacı var?
+  function: etkinlik / yer hakkında bilgi
+  source: 'K: ders kitabı kalıp listesi'
+- en: What do you need for this sport?
+  tr: Bu spor için neye ihtiyacın var?
+  function: etkinlik / yer hakkında bilgi
+  source: 'K: ders kitabı kalıp listesi'
+- en: What does he think about kayaking?
+  tr: Kano hakkında ne düşünüyor?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-010
+  source: 'K: ders kitabı kalıp listesi'
+- en: What is the aim of it?
+  tr: Amacı ne?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-051
+  source: 'K: ders kitabı kalıp listesi'
+- en: What kind of equipment do you need for ice climbing?
+  tr: Buz tırmanışı için ne tür ekipmana ihtiyacın var?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-009
+  - U6-022
+  - U6-038
+  source: 'K: ders kitabı kalıp listesi'
+- en: What kind of sport is it?
+  tr: Ne tür bir spor?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-038
+  source: 'K: ders kitabı kalıp listesi'
+- en: What qualifications does a person need to start it?
+  tr: Başlamak için kişinin hangi niteliklere ihtiyacı var?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-047
+  source: 'K: ders kitabı kalıp listesi'
+- en: What traditional food/drinks can we have there?
+  tr: Orada hangi geleneksel yiyecek/içecekleri tadabiliriz?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U3-063
+  source: 'K: ders kitabı kalıp listesi'
+- en: What's the rate of death in base jumping?
+  tr: Base jumping'de ölüm oranı ne?
+  function: etkinlik / yer hakkında bilgi
+  items:
+  - U6-005
+  - U6-021
+  source: 'K: ders kitabı kalıp listesi'
+- en: Where do people do it?
+  tr: İnsanlar bunu nerede yapar?
+  function: etkinlik / yer hakkında bilgi
+  source: 'K: ders kitabı kalıp listesi'
+- en: What was the date?
+  tr: Tarih neydi?
+  function: deneyim anlatma
+  source: 'K: ders kitabı kalıp listesi'
+- en: When did you last do it?
+  tr: En son ne zaman yaptın?
+  function: deneyim anlatma
+  source: 'K: ders kitabı kalıp listesi'
+- en: Where did you do it?
+  tr: Nerede yaptın?
+  function: deneyim anlatma
+  source: 'K: ders kitabı kalıp listesi'
+- en: Where were you?
+  tr: Neredeydin?
+  function: deneyim anlatma
+  source: 'K: ders kitabı kalıp listesi'
+- en: Do you know any adventurers?
+  tr: Hiç maceracı tanıyor musun?
+  function: konuşma kalıpları
+  items:
+  - U6-001
+  source: 'K: ders kitabı kalıp listesi'
+- en: I mean …
+  tr: Yani, demek istediğim …
+  function: konuşma kalıpları
+  items:
+  - U5-054
+  source: 'K: ders kitabı kalıp listesi'
+- en: I see.
+  tr: Anladım.
+  function: konuşma kalıpları
+  source: 'K: ders kitabı kalıp listesi'
+- en: In other words, …
+  tr: Başka bir deyişle, …
+  function: konuşma kalıpları
+  items:
+  - U5-054
+  source: 'K: ders kitabı kalıp listesi'
+- en: My pleasure.
+  tr: Rica ederim / Benim için zevkti.
+  function: konuşma kalıpları
+  items:
+  - U6-057
+  source: 'K: ders kitabı kalıp listesi'
+- en: Yes, of course.
+  tr: Evet, tabii.
+  function: konuşma kalıpları
+  source: 'K: ders kitabı kalıp listesi'
+- en: What about your second choice?
+  tr: Peki ikinci seçeneğin?
+  function: genel soru
+  source: 'K: ders kitabı kalıp listesi'
+- en: Which country do you want to see first?
+  tr: İlk hangi ülkeyi görmek istersin?
+  function: genel soru
+  source: 'K: ders kitabı kalıp listesi'

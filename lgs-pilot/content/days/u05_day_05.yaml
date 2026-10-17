@@ -1,0 +1,308 @@
+schema_version: 1
+program: lgs
+unit: 5
+day: 5
+status: draft
+title: "Bedava davul"
+est_minutes: 10
+characters: [Bora, DrumKing_Official, Kaan, Duru, Selin, Ece, Elif, Bora'nın dedesi]
+new_items: [U5-005, U5-010, U5-013, U5-017, U5-031, U5-049]
+
+story:
+  - id: s01
+    text: "Cuma akşamı. Bora odasında yastıkları davul gibi dizmiş, iki kalemle ritim tutuyordu. Ahmet Amca'nın davulu harikaydı ama ödünçtü. Bora'nın en büyük hayali, kendine ait bir davul setiydi."
+  - id: s02
+    text: "Telefon titredi. Dün akşamki altın davullu profil yine ekrandaydı, adının yanında mavi bir tik: \"<en>DrumKing_Official sent you a {U5-005|friend request}.</en>\""
+  - id: s03
+    text: "Bora profile baktı: \"<en>2.3 million followers! He's a real drum {U5-031|influencer}! I really {U2-017|admire} drummers like him!</en>\""
+  - id: s04
+    text: "Parmağı bir saniye bile beklemedi: \"<en>{U5-005|Accept}! Of course!</en>\""
+  - id: s05
+    text: "Hemen bir mesaj düştü: \"<en>Hi Bora! I watched your band's concert video. Great drummer! I have a special {U1-017|offer} for you: a FREE drum set. 100% {U5-049|discount}! Only for my fans, only today!</en>\""
+  - id: s06
+    text: "Bora heyecandan Kaan'a sesli mesaj gönderdi: \"<en>Kaan! A famous drum {U5-031|influencer} is my friend now! A hundred percent {U5-049|discount}! I'm getting a real drum kit!</en>\""
+  - id: s07
+    text: "Kaan, basketbol çantasını kaparken cevap verdi, tabii yine koşarak: \"<en>WOW! Get one for me too! No, wait, I'm late for practice! Bye!</en>\""
+  - id: s08
+    text: "Mesajın altında kocaman, yanıp sönen kırmızı bir kutu vardı: \"<en>{U5-017|CLICK} HERE TO GET YOUR DRUM SET!</en>\" Bora'nın parmağı yine beklemedi."
+  - id: s09
+    text: "Açılan sayfanın tepesinde bir geri sayım vardı: \"<en>Your {U5-049|discount} ends in 09:59!</en>\" Altında: \"<en>{U5-006|Log in} with your ClipTube {U5-002|account} to get your prize. No {U5-002|account}? {U5-012|Sign up} here!</en>\""
+  - id: s10
+    text: "Bora iki kutuyu da saniyesinde doldurdu: \"<en>{U5-009|Username}: bora_drums. {U5-009|Password}: ●●●●●●●●. Easy!</en>\""
+  - id: s11
+    text: "O arada Bora, davul setinin fotoğrafını grubun Wrong Number sohbetine de atmıştı: \"<en>Look! My new friend is sending me THIS!</en>\" Sonra telefonu sessize aldı. Odaklanması lazımdı."
+  - id: s12
+    text: "Duru fotoğrafı görür görmez kanepede doğruldu: \"<en>Bora. That photo is from the SoundBox shop's website. I bought my red speaker there. It's their catalogue.</en>\""
+  - id: s13
+    text: "Duru: \"<en>He isn't a real {U5-031|influencer}. He's a {U5-013|stranger} with a stolen photo.</en>\""
+  - id: s14
+    text: "Selin: \"<en>Bora, you don't know this person. Please don't {U5-017|click} anything!</en>\""
+  - id: s15
+    text: "Ece: \"<en>And never give your {U5-010|personal information} to a {U5-013|stranger}!</en>\" Elif: \"<en>{U5-005|Ignore} him, Bora! Please!</en>\""
+  - id: s16
+    text: "Mesajlar telefonun üstünde birer birer belirip kayboluyordu. Ama telefon sessizdeydi ve Bora'nın gözü yalnız sayfadaydı."
+  - id: s17
+    text: "Yeni sayfa çıktı: \"<en>Great! Now {U5-024|type} your {U5-010|personal information}: full name, home address, date of birth, school.</en>\""
+  - id: s18
+    text: "Salonda Bora'nın dedesi her zamanki gibi caz dinliyordu. Annesi gece nöbetindeydi. İki adım ötede dedesi vardı, ama Bora ona hiçbir şey sormadı."
+  - id: s19
+    text: "Kaan, otobüs durağından son bir mesaj gönderdi: \"<en>Wait, I read the group chat. Bora, stop! Ask an {U2-072|adult} first! Don't give your {U5-010|personal information} to a {U5-013|stranger}!</en>\""
+  - id: s20
+    text: "Duru: \"<en>And Bora, you never {U5-007|log out} at school, and now this? Call me. Now.</en>\" Ama Bora'nın telefonu hâlâ sessizdeydi."
+  - id: s21
+    text: "Bora formu doldurmaya başladı: \"<en>Name: Bora… Address: …</en>\" Geri sayım akıyordu: 03:12, 03:11, 03:10…"
+  - id: s22
+    text: "Son kutu da doldu. Ekranın altında yeşil bir düğme parladı: \"<en>{U5-017|Press} SEND to get your FREE drum set!</en>\""
+  - id: s23
+    text: "Bora derin bir nefes aldı, gözlerini kapadı ve hayalindeki davul setini düşündü. Salondan dedesinin sesi geldi: \"<en>Bora! Dinner! And a little jazz!</en>\" Parmağı düğmenin üstündeydi…"
+
+scene:
+  - id: c01
+    speaker: DrumKing_Official
+    text: "<en>Hi! I'm a drum influencer. Accept my friend request!</en>"
+  - id: c02
+    speaker: DrumKing_Official
+    text: "<en>Click here for a free drum set. 100% discount, only today!</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>Bora, he's a stranger! Don't give him your personal information.</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>Name, address, date of birth… OK, now I just press SEND!</en>"
+
+steps:
+  - item: U5-005
+    sezdir:
+      id: u5d05-005-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"DrumKing_Official sent you a friend request\" bildiriminde \"friend request\" ne anlama geliyordu?"
+      options: ["arkadaşlık isteği", "doğum günü daveti", "ödeme isteği", "hata mesajı"]
+      answer: 0
+    kullan:
+      id: u5d05-005-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I don't know this boy, so I'm going to ignore his friend ________.</en>"
+      options: ["request", "password", "discount", "comment"]
+      answer: 0
+      explain: "Birinin seni arkadaş olarak eklemek istemesi friend request'tir; kabul etmek accept, görmezden gelmek ignore."
+    sina:
+      id: u5d05-005-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What should you do in this situation?</en>"
+      stem: "<en>You get a friend request from an account with no photo and no friends. You don't know the person.</en>"
+      options: ["Ignore the request and tell an adult if they keep writing to you.", "Accept it and send them your address.", "Accept it and share your password.", "Click on all the links in their messages."]
+      answer: 0
+      explain: "Tanımadığın, fotoğrafsız bir hesaptan gelen istek görmezden gelinir; ısrar ederse bir yetişkine söylenir. Diğerleri kişisel bilgiyi tehlikeye atar."
+  - item: U5-010
+    sezdir:
+      id: u5d05-010-z
+      type: meaning
+      context: s17
+      prompt: "Hikâyede \"type your personal information: full name, home address, date of birth, school\" cümlesinde \"personal information\" ne anlama geliyordu?"
+      options: ["kişisel bilgiler", "sınav sonuçları", "şarkı sözleri", "müzik notaları"]
+      answer: 0
+    kullan:
+      id: u5d05-010-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Your home address and your date of birth are ________. Don't share them online.</en>"
+      options: ["personal information", "friend requests", "discounts", "followers"]
+      answer: 0
+      explain: "Adın, adresin, doğum tarihin, telefon numaran ve okulun personal information'dır; internette paylaşılmaz."
+    sina:
+      id: u5d05-010-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned as personal information in the text?</en>"
+      stem: "<en>Safer Internet Week – Rule 3\nNever share your personal information online. This means your full name, your home address, your phone number and the name of your school. If a website asks for them, close it and tell an adult.</en>"
+      options: ["your favourite song", "your home address", "your school", "your phone number"]
+      answer: 0
+      explain: "Metin ad, adres, telefon numarası ve okul adını sayıyor; en sevdiğin şarkıdan söz etmiyor."
+  - item: U5-013
+    sezdir:
+      id: u5d05-013-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede \"He's a stranger with a stolen photo\" cümlesinde \"stranger\" ne anlama geliyordu?"
+      options: ["tanımadığın kişi", "başka ülkeden gelen turist", "tuhaf davranan arkadaş", "yeni öğretmen"]
+      answer: 0
+    kullan:
+      id: u5d05-013-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A man in the park asked Elif's name and address, but she didn't answer. She didn't know him. He was a ________.</en>"
+      options: ["stranger", "strange", "buddy", "close friend"]
+      answer: 0
+      explain: "Tanımadığın kişi stranger'dır (isim). strange 'tuhaf' anlamında bir sıfattır ve 'a strange' tek başına kullanılmaz."
+    sina:
+      id: u5d05-013-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which of the following can replace the underlined part?</en>"
+      stem: "<en>Murat Bey: Don't accept friend requests from <u>people you don't know</u>.</en>"
+      options: ["strangers", "close friends", "classmates", "your parents"]
+      answer: 0
+      explain: "people you don't know = strangers. Yakın arkadaşlar, sınıf arkadaşları ve anne baba tanıdığın kişilerdir."
+  - item: U5-017
+    sezdir:
+      id: u5d05-017-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"CLICK HERE TO GET YOUR DRUM SET!\" ne anlama geliyordu?"
+      options: ["Davul setini almak için buraya tıkla!", "Davul setini almak için burayı oku!", "Davul setini almak için burayı paylaş!", "Davul setini almak için buradan çık!"]
+      answer: 0
+    kullan:
+      id: u5d05-017-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>To start the video, ________ the green button.</en>"
+      options: ["press", "type", "sign up", "log out"]
+      answer: 0
+      explain: "Bir düğmeye basmak press (a button), fareyle seçmek click (on) ile anlatılır."
+    sina:
+      id: u5d05-017-s
+      type: process_order
+      lgs_like: true
+      stem_id: S07
+      prompt: "<en>According to the text, what do you do after you choose a new photo?</en>"
+      stem: "<en>How to change your profile picture:\nFirst, log in to your account. Then, click on your old photo. Choose a new photo from your phone. Finally, press 'Save'.</en>"
+      options: ["You press 'Save'.", "You log in to your account.", "You click on your old photo.", "You log out of your account."]
+      answer: 0
+      explain: "Sıra: log in → eski fotoğrafa tıkla → yenisini seç → 'Save'e bas. Yeni fotoğraftan sonra gelen adım Finally ile verilen press 'Save'."
+  - item: U5-031
+    sezdir:
+      id: u5d05-031-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"2.3 million followers! He's a real drum influencer!\" cümlesinde \"influencer\" ne anlama geliyordu?"
+      options: ["sosyal medya fenomeni, çok takipçili kişi", "müzik öğretmeni", "mağaza sahibi", "konser bileti satan kişi"]
+      answer: 0
+    kullan:
+      id: u5d05-031-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Lara has three million followers. When she wears a new jacket in her videos, everybody wants it. She's a big ________.</en>"
+      options: ["influencer", "stranger", "password", "discount"]
+      answer: 0
+      explain: "Çok takipçisi olan ve insanların seçimlerini etkileyen kişi influencer'dır; sıfatı influential (etkili)."
+    sina:
+      id: u5d05-031-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the post, which of the following is TRUE?</en>"
+      stem: "<en>TechTom (1.2 million followers)\nHi guys! I'm an influencer, and today I'm testing the new Zeta phone. The company sent it to me for free, and they are paying me for this video. Do you like the camera?</en>"
+      options: ["TechTom gets money from the company for the video.", "TechTom bought the phone with his own money.", "TechTom has twelve thousand followers.", "TechTom doesn't like phones."]
+      answer: 0
+      explain: "\"they are paying me for this video\": şirket video için para ödüyor. Telefon ücretsiz gelmiş ve takipçi sayısı 1,2 milyon."
+  - item: U5-049
+    sezdir:
+      id: u5d05-049-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"a FREE drum set. 100% discount!\" cümlesinde \"discount\" ne anlama geliyordu?"
+      options: ["indirim", "kargo ücreti", "hediye paketi", "fatura"]
+      answer: 0
+    kullan:
+      id: u5d05-049-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>These headphones are usually 500 lira, but today there's a 20% ________, so they are only 400 lira.</en>"
+      options: ["discount", "password", "comment", "stranger"]
+      answer: 0
+      explain: "Fiyattan düşülen miktar discount'tır: a 20% discount, a discount on headphones."
+    sina:
+      id: u5d05-049-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is correct?</en>"
+      stem: "<en>SoundBox – Weekend prices\nDrumsticks: 200 lira · 10% discount\nGuitar strings: 100 lira · 50% discount\nMicrophone: 800 lira · no discount</en>"
+      options: ["The guitar strings have the biggest discount.", "The microphone has a 10% discount.", "The drumsticks have a 50% discount.", "All the products have a discount."]
+      answer: 0
+      explain: "En büyük indirim %50 ile tellerde. Mikrofonda indirim yok; bagetlerde %10."
+
+review:
+  - id: u5d05-r01
+    type: gap_fill
+    item: U5-015
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Kaan dropped his phone into the pool. Now it's ________ and it doesn't turn on.</en>"
+    options: ["broken", "online", "polite", "average"]
+    answer: 0
+  - id: u5d05-r02
+    type: dialogue_complete
+    item: U5-020
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Ece: Is Duru on the internet now? I want to send her the plan.\nSelin: ________ There's a green dot next to her name.\nEce: Great! I'll send it now.</en>"
+    options: ["Yes, she's online.", "No, she's offline.", "Her phone is broken.", "Why don't we call her mum?"]
+    answer: 0
+    explain: "Yeşil nokta kişinin çevrim içi olduğunu gösterir; Ece de planı hemen gönderiyor."
+  - id: u5d05-r03
+    type: situation
+    item: U5-023
+    prompt: "<en>Selin's laptop is off. She wants to do her homework on it. What does she do first?</en>"
+    options: ["She turns it on.", "She turns it off.", "She logs out.", "She opens the window."]
+    answer: 0
+  - id: u5d05-r04
+    type: synonym
+    item: U5-026
+    lgs_like: true
+    stem_id: S12
+    prompt: "<en>Which of the following can replace the underlined part?</en>"
+    stem: "<en>Elif: My headphones <u>aren't working properly</u>. I can hear music only on one side.</en>"
+    options: ["have a problem", "are very new", "are very cheap", "are online"]
+    answer: 0
+    explain: "aren't working properly = bir sorunu var; müziğin tek taraftan gelmesi de bunu gösteriyor."
+  - id: u5d05-r05
+    type: dialogue_complete
+    item: U5-057
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Bora: Last night's video call was a disaster.\nKaan: ________\nBora: Well, my camera was on, and my grandpa was dancing behind me!</en>"
+    options: ["What do you mean?", "Why don't we chat online?", "Sorry, I can't.", "Thanks for calling."]
+    answer: 0
+    explain: "Bora ardından ne olduğunu açıklıyor; demek ki Kaan 'Ne demek istiyorsun?' diye sormuş."
+  - id: u5d05-r06
+    type: gap_fill
+    item: U5-059
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>A: We have a science project. ________ work on it together at the library?\nB: Good idea! See you there at four.</en>"
+    options: ["Why don't we", "What do you mean", "Do you mean", "Sorry, I can't"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U5-013]
+    text: "stranger = tanımadığın kişi (aynı mahalleden biri bile olabilir). Başka ülkeden gelen kişi foreigner'dır; strange ise \"tuhaf\" anlamında bir sıfattır."
+  - type: kelime_ailesi
+    refs: [U5-031]
+    text: "influence (etki, etkilemek) → influencer (-er: kişi; çok takipçili sosyal medya fenomeni) → influential (-ial: sıfat, etkili). An influential book = etkili bir kitap."
+  - type: lgs_taktigi
+    refs: [U5-005, U5-010]
+    text: "İnternet güvenliği metinlerinde doğru şık genellikle şudur: tanımadığın kişinin friend request'ini ignore et, personal information paylaşma, bir yetişkine söyle. 'Accept' ve 'share your address' içeren şıklar tuzaktır."
+  - type: mini_dilbilgisi
+    refs: [U5-017, U5-049, U5-010]
+    text: "click on a link / click the button ama press a button (press'ten sonra on gelmez). a 20% discount, a discount on shoes. personal information sayılamaz: \"informations\" ya da \"an information\" denmez."
+
+coach:
+  start: "Bora'nın telefonunda altın bir davul seti parlıyor. Bu kadar parlak şeylere dikkat! Hadi başlayalım 🥁"
+  end_good: "Süper! Bora tuzağı göremedi ama sen gördün. Yarın bakalım neler olacak 👀"
+  end_mixed: "Güzel deneme! {weak} biraz kafa karıştırdı; o sahte sayfa da tam bunun için yapılmıştı. Yarın tekrar bakarız. 🥁"
+
+notifications:
+  morning: "Bora'ya altın davullu biri ulaştı. Gerçek mi, tuzak mı? 🥁"
+  evening: "Grup Bora'yı uyarıyor ama telefonu sessizde. Ne olacak? 😬"
+  review: "stranger'ı strange ile karıştırma! Farkı hatırlıyor musun? 🤔"
+
+editor:
+  z07: {U5-005: BEKLIYOR, U5-010: BEKLIYOR, U5-013: BEKLIYOR, U5-017: BEKLIYOR, U5-031: BEKLIYOR, U5-049: BEKLIYOR}

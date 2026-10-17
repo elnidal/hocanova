@@ -1,0 +1,300 @@
+schema_version: 1
+program: lgs
+unit: 6
+day: 5
+status: draft
+title: "Deniz Hoca'nın kuralları"
+est_minutes: 10
+characters: [Kaan, Selin, Elif, Duru, Ece, Bora, Murat Bey, Deniz Hoca]
+new_items: [U6-013, U6-014, U6-015, U6-021, U6-047, U6-048]
+
+story:
+  - id: s01
+    text: "Cuma sabahı, saat 6.58. Otobüsün motoru çalışıyordu ve Selin on beş dakikadır yerindeydi. Tam kapılar kapanırken Kaan nefes nefese basamaklara atladı: \"<en>Sorry, sorry! Three alarms, one bus!</en>\""
+  - id: s02
+    text: "Yol iki saat sürdü. Elif şarkı söyledi, Duru uyudu, Ece listesini üç kez kontrol etti. Otobüs gölün kenarındaki kampa vardığında onları uzun boylu, boynunda düdük olan bir adam karşıladı."
+  - id: s03
+    text: "Murat Bey: \"<en>Good morning, team! This is Deniz Hoca, our camp {U6-048|instructor}.</en>\""
+  - id: s04
+    text: "Deniz Hoca: \"<en>Welcome! I'm your {U6-048|instructor} for two days. Rule one: {U2-041|pay attention}. Rule two: no {U6-048|instructor}, no activity.</en>\""
+  - id: s05
+    text: "Kaan'ın eli çoktan havadaydı: \"<en>What {U6-047|qualifications} do you have? Can you do {U6-006|skydiving}?</en>\""
+  - id: s06
+    text: "Deniz Hoca güldü: \"<en>I have first-aid and climbing-wall {U6-047|qualifications}, and I'm a {U6-007|paragliding} pilot. But at this camp, no sky. Only the ground and the lake.</en>\""
+  - id: s07
+    text: "Deniz Hoca: \"<en>I have {U6-047|skills}, but you need {U6-047|skills} too: listening, waiting and helping each other.</en>\""
+  - id: s08
+    text: "Deniz Hoca: \"<en>Most {U6-013|accidents} happen when people don't listen. They are in a hurry, or they forget the rules.</en>\""
+  - id: s09
+    text: "Deniz Hoca: \"<en>So how do we stop {U6-013|accidents}? {U6-023|Helmets}, {U6-024|ropes}, {U6-026|life jackets}… and no running!</en>\""
+  - id: s10
+    text: "Tam o sırada Kaan, zip-line'ı yakından görmek için koşar adım yola çıkmıştı. Deniz Hoca'nın düdüğü öttü: \"<en>Kaan! Running near the activity area? That's how {U6-013|accidents} start!</en>\" Kaan olduğu yerde durdu: \"<en>Sorry, sorry!</en>\""
+  - id: s11
+    text: "Deniz Hoca: \"<en>Now, the climbing wall. What happens if you {U6-015|fall}? Stay {U1-069|calm}. The {U6-024|rope} holds you, and you stay in the air like a spider.</en>\""
+  - id: s12
+    text: "Bora bir anda bembeyaz oldu ve fısıldadı: \"<en>A spider? Are there spiders here?</en>\" Duru yanında esnedi: \"<en>Only on the wall. Big, colourful plastic ones.</en>\""
+  - id: s13
+    text: "Selin: \"<en>And what if we {U6-015|fall} into the lake?</en>\" Deniz Hoca: \"<en>Your {U6-026|life jacket} keeps you on top of the water. Then you swim to the boat. And an {U6-048|instructor} is always there.</en>\""
+  - id: s14
+    text: "Brifingden sonra herkes eşyasını çadırlara yerleştirdi. Akşam yemeğinden önce Elif dergisini açtı; okuma köşesinde karlı bir dağda geçen bir hikâye vardı."
+  - id: s15
+    text: "Elif okudu: \"<en>'A Night on the Mountain. Aras Demir got lost on a snowy mountain. He {U6-015|fell} and hurt his leg. But he {U6-014|survived} for two nights.'</en>\""
+  - id: s16
+    text: "Ece: \"<en>How did he {U6-014|survive}?</en>\" Elif: \"<en>He stayed in one place. He had warm clothes, water and a flashlight. On the third night, a rescue team saw his light.</en>\""
+  - id: s17
+    text: "Ece defterini zafer kazanmış gibi havaya kaldırdı: \"<en>Warm clothes, water, a {U6-025|flashlight}… All on my list!</en>\""
+  - id: s18
+    text: "Kaan: \"<en>I can {U6-014|survive} anywhere! Two nights? Easy!</en>\" Selin: \"<en>Kaan, you can't {U6-014|survive} one hour without your phone.</en>\""
+  - id: s19
+    text: "Sayfanın altında küçük bir bilgi notu ve bir tablo vardı. Selin notu okudu: \"<en>'Info: In the mountains, people can {U6-021|die} from the cold. Always take warm clothes and tell an adult your plan.'</en>\""
+  - id: s20
+    text: "Kaan tabloyu parmağıyla gösterdi: \"<en>Look! The {U6-021|rate of death} in {U6-005|bungee jumping} is very low! It's {U6-033|safer than} people think!</en>\""
+  - id: s21
+    text: "Deniz Hoca yanlarından geçerken durdu: \"<en>Low, but not zero, Kaan. The {U6-021|rate of death} is low {U6-037|because} good teams don't {U6-012|take risks}.</en>\""
+  - id: s22
+    text: "Deniz Hoca: \"<en>Tomorrow, the climbing wall. It's {U6-028|challenging}, but you're never alone on it.</en>\" Herkes başını kaldırıp gölün kıyısındaki on iki metrelik duvara baktı."
+  - id: s23
+    text: "O gece çadırda Bora tavana bakıyordu: \"<en>Duru, I need a good {U1-007|excuse} for tomorrow. 'My cat is sick'?</en>\""
+  - id: s24
+    text: "Duru uyku tulumunun içinden, gözlerini açmadan cevap verdi: \"<en>You don't have a cat, Bora.</en>\" Bora iç çekti. Bu sefer kedi işe yaramayacaktı."
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>This is Deniz Hoca, our camp instructor.</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>What qualifications do you have?</en>"
+  - id: c03
+    speaker: Deniz Hoca
+    text: "<en>Most accidents happen when people don't listen.</en>"
+  - id: c04
+    speaker: Deniz Hoca
+    text: "<en>If you fall, stay calm. The rope holds you.</en>"
+  - id: c05
+    speaker: Elif
+    text: "<en>He fell and hurt his leg, but he survived for two nights.</en>"
+
+steps:
+  - item: U6-013
+    sezdir:
+      id: u6d05-013-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede Deniz Hoca'nın \"Most accidents happen when people don't listen.\" cümlesindeki \"accidents\" ne anlama geliyordu?"
+      options: ["kazalar", "tatiller", "doğum günleri", "konserler"]
+      answer: 0
+    kullan:
+      id: u6d05-013-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>There was a car ________ on the main road, so the bus was late.</en>"
+      options: ["accident", "excuse", "experience", "adventure"]
+      answer: 0
+      explain: "Yolda araba kazası olunca trafik durur: car accident."
+    sina:
+      id: u6d05-013-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>Why is Bora's mum calling him?</en>"
+      stem: "<en>Mum: Hi, Bora. There was a small accident on the main road. Nobody is hurt, but the traffic is terrible. I'll be thirty minutes late to pick you up.</en>"
+      options: ["To say that she will be late.", "To say that she is hurt.", "To ask Bora to take the bus.", "To invite Bora to dinner."]
+      answer: 0
+      explain: "Kazada kimse yaralanmamış; anne trafik yüzünden yarım saat gecikeceğini haber veriyor."
+  - item: U6-014
+    sezdir:
+      id: u6d05-014-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyedeki dergi metninde \"But he survived for two nights.\" cümlesindeki \"survived\" ne anlama geliyordu?"
+      options: ["hayatta kaldı", "uyudu", "dans etti", "şarkı söyledi"]
+      answer: 0
+    kullan:
+      id: u6d05-014-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Camels can ________ in the desert without water for many days.</en>"
+      options: ["survive", "fall", "cost", "invite"]
+      answer: 0
+      explain: "Develer çölde günlerce susuz yaşayabilir: survive = hayatta kalmak."
+    sina:
+      id: u6d05-014-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Teen Wave – A Night on the Mountain\nAras Demir got lost on a snowy mountain. He fell and hurt his leg. He stayed in one place, wore all his warm clothes and drank a little water every hour. After two nights, a rescue team saw the light of his flashlight. He survived.</en>"
+      options: ["Aras stayed in one place and kept warm.", "Aras walked down the mountain alone.", "Aras didn't have a flashlight.", "The rescue team found him after a week."]
+      answer: 0
+      explain: "Metinde Aras'ın bir yerde kaldığı ve sıcak giysilerini giydiği yazıyor; ekip onu iki gece sonra fenerinin ışığından buldu."
+  - item: U6-015
+    sezdir:
+      id: u6d05-015-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede Deniz Hoca'nın \"What happens if you fall?\" sorusundaki \"fall\" ne anlama geliyordu?"
+      options: ["düşmek", "yorulmak", "acıkmak", "uyumak"]
+      answer: 0
+    kullan:
+      id: u6d05-015-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Be careful on the ice! Don't ________.</en>"
+      options: ["fall", "fell", "falls", "falling"]
+      answer: 0
+      explain: "Don't'tan sonra fiil yalın gelir: Don't fall. fell geçmiş zaman hâlidir."
+    sina:
+      id: u6d05-015-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>What do the underlined words mean?</en>"
+      stem: "<en>1. In <u>fall</u>, the leaves turn yellow and red.\n2. Hold the rope, and you won't <u>fall</u>.</en>"
+      options: ["1: autumn · 2: go down to the ground", "1: go down to the ground · 2: autumn", "1: winter · 2: jump", "1: summer · 2: run away"]
+      answer: 0
+      explain: "Yapraklar sararınca fall (Amerikan İngilizcesi) sonbahardır; ipi tutunca düşmezsin: fall = düşmek."
+  - item: U6-021
+    sezdir:
+      id: u6d05-021-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede Kaan'ın \"The rate of death in bungee jumping is very low!\" cümlesindeki \"rate of death\" ne anlama geliyordu?"
+      options: ["ölüm oranı", "kazanma oranı", "kayıt ücreti", "bekleme süresi"]
+      answer: 0
+    kullan:
+      id: u6d05-021-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Without warm clothes, people can ________ from the cold in the mountains.</en>"
+      options: ["die", "death", "dead", "dying"]
+      answer: 0
+      explain: "can'den sonra yalın fiil gelir: can die. death isim, dead sıfattır."
+    sina:
+      id: u6d05-021-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the info note, which sentence is TRUE?</en>"
+      stem: "<en>Info note – rate of death in three sports (for every one million people in a year)\nSport A: 1\nSport B: 4\nSport C: 10</en>"
+      options: ["Sport C has a higher rate of death than Sport A.", "Sport A is more dangerous than Sport B.", "Sport B has a lower rate of death than Sport A.", "The three sports have the same rate of death."]
+      answer: 0
+      explain: "C'nin oranı 10, A'nınki 1: C daha yüksek. B (4), A'dan (1) daha düşük değil."
+  - item: U6-047
+    sezdir:
+      id: u6d05-047-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede Kaan'ın \"What qualifications do you have?\" sorusu ne anlama geliyordu?"
+      options: ["Hangi niteliklere, belgelere sahipsiniz?", "Kaç yaşındasınız?", "Nerede yaşıyorsunuz?", "Kaç kardeşiniz var?"]
+      answer: 0
+    kullan:
+      id: u6d05-047-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Duru has great guitar ________. She can play a song after listening to it only once.</en>"
+      options: ["skills", "excuses", "accidents", "equipment"]
+      answer: 0
+      explain: "Bir şarkıyı bir kez dinleyip çalabilmek bir beceridir: skill."
+    sina:
+      id: u6d05-047-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who is right for the job?</en>"
+      stem: "<en>WANTED: Camp Instructor\n- a first-aid qualification\n- good swimming skills\n- experience with teenagers</en>"
+      options: ["Ela: I have a first-aid certificate, I'm a good swimmer, and I worked at teen camps for three years.", "Can: I'm a good swimmer, but I have no first-aid training.", "Nil: I have a first-aid certificate, but I can't swim.", "Tan: I'm a good swimmer, but I never worked with teenagers."]
+      answer: 0
+      explain: "Üç niteliğin hepsine sahip olan yalnız Ela: ilk yardım belgesi, yüzme becerisi, gençlerle deneyim."
+  - item: U6-048
+    sezdir:
+      id: u6d05-048-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede Deniz Hoca'nın \"I'm your instructor for two days.\" cümlesindeki \"instructor\" ne anlama geliyordu?"
+      options: ["eğitmen", "şoför", "aşçı", "doktor"]
+      answer: 0
+    kullan:
+      id: u6d05-048-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My karate ________, Gül Hanım, teaches us every Saturday morning.</en>"
+      options: ["instructor", "customer", "secretary", "stranger"]
+      answer: 0
+      explain: "Bir beceriyi öğreten kişi instructor'dır: karate instructor, camp instructor."
+    sina:
+      id: u6d05-048-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What should you do?</en>"
+      stem: "<en>You are at the climbing wall. Your helmet is too big, and it moves on your head.</en>"
+      options: ["I tell the instructor before I start.", "I start quickly and don't tell anyone.", "I take off my helmet and start.", "I wait for the end of the day."]
+      answer: 0
+      explain: "Güvenlik ekipmanında sorun varsa başlamadan önce eğitmene söylenir."
+
+review:
+  - id: u6d05-r01
+    type: gap_fill
+    item: U6-022
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>The camp has all the safety ________, so you don't need to buy a helmet.</en>"
+    options: ["equipment", "equipments", "experience", "excuses"]
+    answer: 0
+  - id: u6d05-r02
+    type: situation
+    item: U6-023
+    prompt: "<en>Kaan is going skateboarding. He wants to protect his head and his knees. What does he need?</en>"
+    options: ["a helmet and knee pads", "a flashlight and a rope", "a life jacket and a tent", "a map and a camera"]
+    answer: 0
+  - id: u6d05-r03
+    type: gap_fill
+    item: U6-024
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Tie the boat to the tree with this ________.</en>"
+    options: ["rope", "helmet", "flashlight", "knee pad"]
+    answer: 0
+  - id: u6d05-r04
+    type: gap_fill
+    item: U6-025
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>It's dark in the tent. Can you give me the ________, please?</en>"
+    options: ["flashlight", "life jacket", "rope", "knee pads"]
+    answer: 0
+  - id: u6d05-r05
+    type: situation
+    item: U6-026
+    prompt: "<en>Elif is going on a boat trip on the lake. What must she wear?</en>"
+    options: ["a life jacket", "knee pads", "a flashlight", "a scarf"]
+    answer: 0
+  - id: u6d05-r06
+    type: dialogue_complete
+    item: U6-046
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Bora: ________\nShop assistant: It costs 120 liras.</en>"
+    options: ["How much does this flashlight cost?", "What time is it?", "Where is the flashlight?", "How many flashlights are there?"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U6-015]
+    text: "fall = düşmek; geçmiş zamanı fell (He fell and hurt his leg). Amerikan İngilizcesinde fall aynı zamanda sonbahar demektir (İngiliz İngilizcesinde autumn)."
+  - type: tuzak
+    refs: [U6-047]
+    text: "qualification \"özellik\" demek değildir: gereken nitelik, yeterlik, belge demektir (a first-aid qualification). Özellik = feature."
+  - type: kelime_ailesi
+    refs: [U6-021]
+    text: "die (ölmek, fiil) → death (ölüm, isim) → dead (ölü, sıfat). rate of death = ölüm oranı; tablolarda sık çıkar."
+
+coach:
+  start: "Otobüs kampa vardı! Deniz Hoca'nın kuralları kısa ama önemli. Kaan dinliyor mu, koşuyor mu? 🏕️"
+  end_good: "Harika! Brifingi ilk seferde kaptın. Yarın duvara hazırsın 🧗"
+  end_mixed: "İyi gidiyorsun! {weak} biraz kaydı ama ip seni tutuyor. Yarın bir tur daha 🪢"
+
+notifications:
+  morning: "Kampa vardık! Deniz Hoca'nın ilk kuralı ne olabilir? 🏕️"
+  evening: "Bora yarın için bir plan yapıyor. Kedisi yine işin içinde mi? 🐱"
+  review: "fall: sonbahar mı, başka bir şey mi? İkisi de! 🍂"
+
+editor:
+  z07: {U6-013: BEKLIYOR, U6-014: BEKLIYOR, U6-015: BEKLIYOR, U6-021: BEKLIYOR, U6-047: BEKLIYOR, U6-048: BEKLIYOR}

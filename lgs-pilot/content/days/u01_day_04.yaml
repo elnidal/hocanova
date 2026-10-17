@@ -1,0 +1,290 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 4
+status: draft
+title: "Pasta nerede?"
+est_minutes: 10
+characters: [Ece, Selin, Kaan, Duru, Bora, Ece'nin annesi, Ece'nin babaannesi, Elif (komşu)]
+new_items: [U1-054, U1-050, U1-055, U1-049, U1-092, U1-070]
+
+story:
+  - id: s01
+    text: "Cumartesi sabahı. Selin saat tam onda Ece'nin kapısındaydı, kucağında balonlarla."
+  - id: s02
+    text: "Kaan da geldi; sadece kırk dakika geç. \"<en>Sorry! I ran all the way!</en>\""
+  - id: s03
+    text: "Ece mutfaktayken Selin, Kaan'ın kulağına fısıldadı: \"Ece'ye sürpriz bir video hazırladık. Unutma, Ece bilmeyecek!\""
+  - id: s04
+    text: "Kaan başparmağını kaldırdı: \"<en>Don't worry. I can {U1-055|keep a secret}!</en>\""
+  - id: s05
+    text: "Beş dakika sonra Ece salona girdi ve Kaan, heyecandan kıpkırmızı, \"Ece, video çok güzel ol…\" dedi ve sustu."
+  - id: s06
+    text: "Selin'in bakışı üzerine hemen toparladı: \"<en>Video… games! {U1-008|How about} video games after the cake?</en>\""
+  - id: s07
+    text: "Ece bir şey anlamadı. Selin gülerek fısıldadı: \"<en>Kaan, you can't {U1-055|keep a secret} for five minutes!</en>\""
+  - id: s08
+    text: "Kaan omuz silkti: \"<en>Yes, I can! Look, I'm {U1-055|keeping the secret}… right now.</en>\""
+  - id: s09
+    text: "Saat ikiyi geçiyordu ve Bora hâlâ yoktu. Pasta da yoktu."
+  - id: s10
+    text: "Kaan söylendi: \"<en>He {U1-050|broke his promise} again! No cake for us!</en>\""
+  - id: s11
+    text: "Selin de endişeliydi: \"<en>Bora always {U1-050|breaks his promises}.</en>\""
+  - id: s12
+    text: "Ama Duru kanepeden doğrulup Bora'yı savundu: \"<en>No. I'll {U1-049|back him up}. Give him a chance. He will come.</en>\""
+  - id: s13
+    text: "Herkes şaşırdı; Duru ilk kez bu kadar hızlı ayağa kalkmıştı."
+  - id: s14
+    text: "Duru devam etti: \"<en>When I was sick, Bora brought my homework every day. He {U1-049|backed me up}.</en>\""
+  - id: s15
+    text: "Tam o sırada zil çaldı. Kapıda, terden sırılsıklam Bora vardı; elinde biraz ezilmiş ama kocaman bir pasta."
+  - id: s16
+    text: "\"<en>I'm sorry I'm late! An old lady in my street had heavy bags. I helped her carry them home.</en>\""
+  - id: s17
+    text: "Ece'nin annesi gülümsedi: \"<en>What a {U1-070|caring} boy!</en>\""
+  - id: s18
+    text: "Kaan önce pastaya, sonra Bora'ya baktı: \"<en>You {U1-054|kept your promise}! I can't believe it!</en>\""
+  - id: s19
+    text: "Bora gururla göğsünü kabarttı: \"<en>I always {U1-054|keep my promises}… sometimes.</en>\" Herkes güldü."
+  - id: s20
+    text: "Kaan biraz utandı: \"<en>Bora, I'm sorry. I said you {U1-050|broke your promise}. I was wrong.</en>\""
+  - id: s21
+    text: "Ece, Bora'ya sarıldı: \"<en>Thank you. You {U1-054|kept your promise}, and you were so {U1-070|caring} when you helped that lady.</en>\""
+  - id: s22
+    text: "Duru'nun da hakkını yememek gerekiyordu; bütün sabah Bora'yı savunmuştu. Ece ona döndü: \"<en>And you were so {U1-092|supportive}, Duru!</en>\""
+  - id: s23
+    text: "Selin ekledi: \"<en>Real friends are {U1-092|supportive}. They {U1-049|back you up} when others don't.</en>\""
+  - id: s24
+    text: "Telefon çaldı; arayan Ece'nin babaannesiydi: \"<en>Is everyone happy? Do you need anything, my dear?</en>\" Ece güldü: \"<en>Grandma, you are so {U1-070|caring}!</en>\""
+  - id: s25
+    text: "Bora fısıldadı: \"Bir sorun var: Hâlâ dans etmeyi bilmiyorum.\" Selin göz kırptı: \"<en>Don't worry. We'll be {U1-092|supportive}. We will all dance badly together!</en>\""
+  - id: s26
+    text: "Kapı yine çaldı. Komşu kızı Elif gelmişti; elinde Ece'nin gönderdiği {U1-012|INVITATION} vardı."
+  - id: s27
+    text: "Ece sevindi: \"<en>I'm so happy you {U1-001|accepted} my {U1-012|invitation}!</en>\""
+  - id: s28
+    text: "Kaan, Elif'e döndü: \"<en>{U1-026|Would you like to} dance with us? Don't worry, Bora can't dance!</en>\" Elif güldü: \"<en>{U1-011|I'd love to}!</en>\""
+  - id: s29
+    text: "Bora kıpkırmızı oldu ama müzik çoktan başlamıştı. Selin fısıldadı: \"<en>Next year, let's {U1-013|invite} a dance teacher!</en>\""
+
+scene:
+  - id: c01
+    speaker: Kaan
+    text: "<en>Bora is late. I think he broke his promise.</en>"
+  - id: c02
+    speaker: Duru
+    text: "<en>I don't agree. I'll back him up. He always helps people.</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>Here is the cake! I kept my promise!</en>"
+  - id: c04
+    speaker: Selin
+    text: "<en>Shh! Don't forget the surprise video. Keep the secret!</en>"
+
+steps:
+  - item: U1-054
+    sezdir:
+      id: d04-054-z
+      type: meaning
+      context: s18
+      prompt: "Hikâyede \"keep a promise\" ne anlama geliyordu?"
+      options: ["sözünü tutmak", "sır saklamak", "özür dilemek", "geç kalmak"]
+      answer: 0
+    kullan:
+      id: d04-054-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Bora said he would bring a cake, and he did. He ________.</en>"
+      options: ["kept his promise", "broke his promise", "told a lie", "refused"]
+      answer: 0
+    sina:
+      id: d04-054-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which of the following is TRUE about Selin?</en>"
+      stem: "<en>Selin: Last week I promised to help Duru with maths. I went to her house every day after school.</en>"
+      options: ["She keeps her promises.", "She breaks her promises.", "She never helps her friends.", "She is unreliable."]
+      answer: 0
+  - item: U1-050
+    sezdir:
+      id: d04-050-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"break a promise\" ne anlama geliyordu?"
+      options: ["sözünü tutmamak", "sözünü tutmak", "pasta yapmak", "yardım etmek"]
+      answer: 0
+    kullan:
+      id: d04-050-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>You said you would call me, but you didn't. You ________ again!</en>"
+      options: ["broke your promise", "kept your promise", "accepted my invitation", "backed me up"]
+      answer: 0
+    sina:
+      id: d04-050-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Mert best?</en>"
+      stem: "<en>Mert often breaks his promises. Yesterday he said he would come to the library, but he didn't.</en>"
+      options: ["unreliable", "loyal", "reliable", "honest"]
+      answer: 0
+  - item: U1-055
+    sezdir:
+      id: d04-055-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"keep a secret\" ne anlama geliyordu?"
+      options: ["sır saklamak", "şarkı söylemek", "yalan söylemek", "oyun oynamak"]
+      answer: 0
+    kullan:
+      id: d04-055-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't tell anyone about the surprise party. Can you ________?</en>"
+      options: ["keep a secret", "break a promise", "refuse", "apologise"]
+      answer: 0
+    sina:
+      id: d04-055-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Ece: I want to tell you something, but nobody else should know.\nSelin: ________</en>"
+      options: ["Don't worry. I can keep a secret.", "Great! I'll tell everyone.", "Sorry, I can't hear you.", "Let's post it online!"]
+      answer: 0
+  - item: U1-049
+    sezdir:
+      id: d04-049-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"back (someone) up\" ne anlama geliyordu?"
+      options: ["destek olmak, arka çıkmak", "geri gitmek", "yedeklemek", "beklemek"]
+      answer: 0
+    kullan:
+      id: d04-049-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>When everyone laughed at me, my best friend ________. She said, \"Stop it!\"</en>"
+      options: ["backed me up", "broke a promise", "refused me", "forgot me"]
+      answer: 0
+    sina:
+      id: d04-049-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Real friends back you up when you have problems.\" Which one is CLOSEST in meaning to \"back you up\"?</en>"
+      options: ["support you", "look for you", "wait for you", "call you"]
+      answer: 0
+  - item: U1-092
+    sezdir:
+      id: d04-092-z
+      type: meaning
+      context: s22
+      prompt: "Hikâyede \"supportive\" ne anlama geliyordu?"
+      options: ["destekleyici", "sinirli", "sessiz", "kıskanç"]
+      answer: 0
+    kullan:
+      id: d04-092-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My parents are very ________. They always help me and believe in me.</en>"
+      options: ["supportive", "boring", "lazy", "busy"]
+      answer: 0
+    sina:
+      id: d04-092-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which word describes Duru in this message?</en>"
+      stem: "<en>Duru: You can do it, Bora! Don't be afraid. We are all with you!</en>"
+      options: ["supportive", "dishonest", "unreliable", "selfish"]
+      answer: 0
+  - item: U1-070
+    sezdir:
+      id: d04-070-z
+      type: meaning
+      context: s17
+      prompt: "Hikâyede \"caring\" ne anlama geliyordu?"
+      options: ["şefkatli, ilgili", "komik", "yaramaz", "korkak"]
+      answer: 0
+    kullan:
+      id: d04-070-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My grandma always asks how I feel and cooks my favourite food. She is so ________.</en>"
+      options: ["caring", "lazy", "noisy", "boring"]
+      answer: 0
+    sina:
+      id: d04-070-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Bora?</en>"
+      stem: "<en>Bora saw an old lady with heavy bags. He helped her carry them home, so he was late for the party.</en>"
+      options: ["caring", "selfish", "rude", "lazy"]
+      answer: 0
+
+review:
+  - id: d04-r01
+    type: gap_fill
+    item: U1-067
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>He told my secret to everyone. I can't ________ him anymore.</en>"
+    options: ["trust", "invite", "accept", "refuse"]
+    answer: 0
+  - id: d04-r02
+    type: synonym
+    item: U1-051
+    prompt: "<en>\"You can count on me.\" Which one has the same meaning?</en>"
+    options: ["You can rely on me.", "You can count to ten.", "You can wait for me.", "You can call me."]
+    answer: 0
+  - id: d04-r03
+    type: gap_fill
+    item: U1-060
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>I need help with my project. Can I ________ you?</en>"
+    options: ["rely on", "apologise", "refuse", "excuse"]
+    answer: 0
+  - id: d04-r04
+    type: trait_match
+    item: U1-059
+    prompt: "<en>Which word describes Selin?</en>"
+    stem: "<en>Selin is never late and she always does her homework.</en>"
+    options: ["reliable", "unreliable", "lazy", "dishonest"]
+    answer: 0
+  - id: d04-r05
+    type: gap_fill
+    item: U1-077
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>To be ________, I didn't like the film very much.</en>"
+    options: ["honest", "loyal", "busy", "caring"]
+    answer: 0
+  - id: d04-r06
+    type: trait_match
+    item: U1-081
+    prompt: "<en>Which word describes the dog?</en>"
+    stem: "<en>Fıstık waits for Duru at the door every day. He never leaves her.</en>"
+    options: ["loyal", "noisy", "busy", "lazy"]
+    answer: 0
+    explain: "Sahibinden hiç ayrılmayan köpek: sadık (loyal)."
+
+tips:
+  - type: mini_dilbilgisi
+    refs: [U1-054, U1-050]
+    text: "keep → kept, break → broke. İkisi de düzensiz fiil: \"He kept his promise.\" · \"She broke her promise.\""
+  - type: tuzak
+    refs: [U1-049]
+    text: "\"back up\" (ayrı yazılır) = destek olmak. \"backup\" (bitişik) = yedek, örneğin \"a backup plan\" (yedek plan). Yazılışa dikkat! Bilgisayarda fiil olarak \"back up your files\" = dosyaları yedeklemek; bu ünitede anlam \"destek olmak\"."
+  - type: kelime_ailesi
+    refs: [U1-092, U1-070]
+    text: "support → supportive, care → caring. Fiilden kişiyi anlatan sıfat yapılır: \"She supports me. She is supportive.\""
+
+coach:
+  start: "Bugün parti günü! Ama Bora ve pasta ortada yok… 🎂 Önce dünkü kelimelere hızlı bir bakış."
+  end_good: "Harika! Söz, sır ve destek kelimelerini öğrendin. Pilotun yarısından fazlası tamam!"
+  end_mixed: "Çok iyi gidiyorsun. {weak} yarın tekrar gelecek; bir kez daha görünce oturacak."
+
+notifications:
+  morning: "Parti başladı ama Bora ve pasta yok! 🎂 Kaan'ın en büyük sınavı: susmak."
+  evening: "Bora pastayı getirecek mi? Cevap bugünkü derste, 10 dakika."
+  review: "Tek soru: \"He kept his promise.\" Bu kişi güvenilir mi, değil mi?"
+
+editor:
+  z07: {U1-054: BEKLIYOR, U1-050: BEKLIYOR, U1-055: BEKLIYOR, U1-049: BEKLIYOR, U1-092: BEKLIYOR, U1-070: BEKLIYOR}

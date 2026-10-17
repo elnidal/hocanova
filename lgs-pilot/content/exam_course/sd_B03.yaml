@@ -1,0 +1,134 @@
+schema_version: 1
+id: SD-B03
+module: B
+title: "Beğeni, tercih, fikir"
+unlock_after: "Ü2 sonu"
+minutes: 5
+stems: [S01, S04, S06, S09, S10, S12]
+functions: ["Beğeni ve beğenmeme bildirme", "Tercih bildirme", "Kişisel fikir belirtme"]
+units: [2, 6]
+intro_tr: "LGS'de beğeni soruları çoğunlukla 'derece' sorar: seviyor mu, umursamıyor mu, nefret mi ediyor? Kalıpları bir merdiven gibi sıralarsan şıklardaki ters anlam tuzağını hemen görürsün."
+cards:
+  - title_tr: "Beğeni merdiveni"
+    body_tr: "Yukarıdan aşağıya: be crazy about / love > like / enjoy / be fond of / be keen on / be into > don't mind > dislike > hate / can't stand. Bu kalıplardan sonra fiil gelirse -ing alır (enjoy swimming, can't stand waiting)."
+    examples_en:
+      - "Kaan is crazy about basketball."
+      - "I'm fond of camping. / I'm keen on hiking."
+      - "I don't mind doing the washing-up."
+      - "Elif can't stand loud music."
+    signal_words: ["be crazy about", "be into", "be keen on", "be fond of", "don't mind", "dislike", "hate", "can't stand"]
+  - title_tr: "Tercih: prefer (ve Ü6'da would rather)"
+    body_tr: "I prefer X to Y: ilk söylenen (X) tercih edilendir. 'Which do you prefer, X or Y?' sorusuna 'I prefer X', 'I don't mind. Both are fine.' ya da 'Neither.' denir. Ü6'da aynı işi 'I'd rather + fiil (than …)' de yapacak."
+    examples_en:
+      - "I prefer team sports to individual sports."
+      - "Which do you prefer, rock or jazz?"
+      - "I don't mind. Both are fine."
+      - "I'd rather go hiking than stay at home. (Ü6)"
+    signal_words: ["prefer … to …", "Which do you prefer …?", "Both", "Neither", "would rather … than (Ü6)"]
+  - title_tr: "Fikir bildirme ve katılma"
+    body_tr: "Fikir: In my opinion / I think / I believe / From my point of view / To be honest. Katılma: I agree with you. / You're right. / Me too. Katılmama: I don't agree. / Really? I find it boring."
+    examples_en:
+      - "In my opinion, casual clothes are more comfortable."
+      - "To be honest, that film was awful."
+      - "I don't agree. I think it's fascinating."
+    signal_words: ["In my opinion", "I believe", "To be honest", "I agree", "I don't agree"]
+worked_example:
+  id: sd-B03-w
+  type: text_infer
+  stem_id: S04
+  context: "Elif: I'm crazy about pop music and I listen to it every day. I don't mind jazz, but I can't stand rap because it's too loud for me."
+  prompt: "According to the text, which of the following is TRUE?"
+  options:
+    - "Elif hates rap music."
+    - "Elif is not interested in pop music."
+    - "Elif loves jazz more than pop."
+    - "Elif thinks rap is relaxing."
+  answer: 0
+  explain_tr: "can't stand = hate: Elif rap'ten nefret ediyor. 'Elif loves jazz more than pop' çekici ama metinde jazz için yalnız 'don't mind' (umursamıyor) diyor; pop için 'crazy about'."
+  items: [U2-015, U2-011, U2-013, U2-014]
+practice:
+  - id: sd-B03-p01
+    type: synonym
+    stem_id: S12
+    context: "Kaan: I'm really into basketball. I play it every day after school."
+    prompt: "Which phrase can replace 'really into'?"
+    options:
+      - "crazy about"
+      - "tired of"
+      - "bad at"
+      - "afraid of"
+    answer: 0
+    explain_tr: "be into = çok sevmek, ilgi duymak; 'crazy about' aynı anlamda. 'Every day after school' oynaması da sevdiğini gösteriyor; diğer üçü olumsuz anlam taşıyor."
+    items: [U2-016, U2-015]
+  - id: sd-B03-p02
+    type: dialogue_complete
+    stem_id: S01
+    context: "Selin: Which do you prefer, rock or jazz?\nBora: ________ It's more energetic, and I'm a drummer!"
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "I prefer rock."
+      - "I prefer jazz to rock."
+      - "I can't stand rock music."
+      - "Neither. I'm into classical music."
+    answer: 0
+    explain_tr: "Bora 'It's more energetic' diyerek seçtiği türü övüyor; enerjik olan rock. 'I prefer jazz to rock' kalıbı doğru ama seçimi ters: X to Y'de ilk söylenen tercih edilendir."
+    items: [U1-018, U2-022, U2-024, U2-035]
+  - id: sd-B03-p03
+    type: table_graph
+    stem_id: S06
+    context: "Survey: Do you like folk music?\nEce: I'm crazy about it · Kaan: I can't stand it · Duru: I don't mind it · Bora: I hate it"
+    prompt: "According to the survey, which of the following is correct?"
+    options:
+      - "Kaan and Bora dislike folk music."
+      - "Both Ece and Duru are crazy about folk music."
+      - "None of them like folk music."
+      - "Duru hates folk music."
+    answer: 0
+    explain_tr: "Kaan (can't stand) ve Bora (hate) folk müziği sevmiyor. 'Both Ece and Duru …' yarım doğru: Ece bayılıyor ama Duru yalnızca umursamıyor (don't mind)."
+    items: [U2-026, U2-013, U2-014, U2-011]
+  - id: sd-B03-p04
+    type: situation
+    stem_id: S09
+    prompt: "Which of the following is a personal opinion?"
+    options:
+      - "In my opinion, casual clothes are more comfortable."
+      - "Do you prefer casual or smart clothes?"
+      - "I bought a new outfit yesterday."
+      - "My sister has three pairs of jeans."
+    answer: 0
+    explain_tr: "'In my opinion' fikir bildirir. İkinci şık bir tercih sorusu; diğer ikisi kişisel görüş değil, olgu bildiriyor."
+    items: [U2-005, U2-064, U2-066, U2-068]
+  - id: sd-B03-p05
+    type: dialogue_complete
+    stem_id: S01
+    context: "Duru: To be honest, I think science fiction films are boring.\nElif: ________ I find them fascinating!"
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "I don't agree."
+      - "I agree with you."
+      - "You're right."
+      - "Me too."
+    answer: 0
+    explain_tr: "Elif filmleri 'fascinating' buluyor, yani Duru'nun 'boring' fikrine katılmıyor. Diğer üç şık aynı anlamda (katılıyorum) ve sonraki cümleyle çelişiyor."
+    items: [U2-018, U2-073, U2-077]
+  - id: sd-B03-p06
+    type: situation
+    stem_id: S10
+    context: "Kaan asks Selin: 'Do you like hiking?'"
+    prompt: "Which of the following is NOT a suitable answer?"
+    options:
+      - "Twice a week, on Tuesdays."
+      - "Yes, I'm keen on it."
+      - "Not really. I find it boring."
+      - "It's OK. I don't mind it."
+    answer: 0
+    explain_tr: "Soru beğeniyi soruyor (Do you like …?); 'Twice a week' ise sıklık bildirir ve 'How often …?' sorusunun cevabıdır. Diğer üçü farklı derecelerde beğeni cevabı."
+    items: [U2-039, U2-010, U2-011, U2-052]
+tips:
+  - "Şıktaki beğeni derecesini metindekiyle karşılaştır: 'don't mind' ≠ 'love', 'like' ≠ 'crazy about'. Derece değişirse şık yanlıştır."
+  - "prefer X to Y: X kazanır. Şıklarda X ile Y'nin yer değiştirmesi en sık çeldiricidir."
+  - "Boşluktan sonra gelen sıfat (fascinating / boring) katılıp katılmadığını ele verir."
+coach:
+  start: "Rock mı, caz mı? Bugün sevdiklerini, nefret ettiklerini ve fikirlerini sınav diliyle söylemeyi öğreniyoruz."
+  end: "Harika iş! Beğeni merdivenini artık ezbere biliyorsun. Bora davul çalarak kutluyor!"
+status: draft

@@ -1,0 +1,133 @@
+schema_version: 1
+id: SD-B10
+module: B
+title: "Neden–sonuç ve tahmin"
+unlock_after: "Ü10 sonu"
+minutes: 6
+stems: [S01, S04, S12, S13, S14]
+functions: ["Neden ve sonuç anlatmak", "Tahmin yapmak", "If / When ile sonuç bildirmek"]
+units: [9, 10]
+intro_tr: "Bilim, doğa ve afet metinleri neden–sonuç zinciriyle kurulur; sorular da 'Why …?' ya da 'What will happen if …?' diye gelir. Bağlaçların hangi yönü gösterdiğini bilirsen zinciri ters kuran şıkları anında elersin."
+cards:
+  - title_tr: "Neden mi, sonuç mu?"
+    body_tr: "NEDEN gösterenler: because + cümle; because of / thanks to + isim. SONUÇ gösterenler: so, that's why, as a result. 'because'tan sonra neden, 'so'dan sonra sonuç gelir. thanks to olumlu, because of nötr ya da olumsuz bir nedenle kullanılır."
+    examples_en:
+      - "Many farmers lost their crops because of the drought."
+      - "People cut down trees, so the soil slides."
+      - "Thanks to vaccines, many diseases disappeared."
+      - "The experiment failed. As a result, they tried again."
+    signal_words: ["because", "because of", "thanks to", "so", "that's why", "as a result"]
+  - title_tr: "Tahmin: will / won't"
+    body_tr: "Gelecek tahmini: will / won't + fiil. Çoğunlukla 'I think / I believe / I don't think …' ile gelir. Soru kalıbı: What do you think will happen …? Geçmiş zamanlı (was, did) ya da şimdiki zamanlı (is doing) cevaplar tahmin sorusuna uymaz."
+    examples_en:
+      - "I think there will be less water in the world in 2050."
+      - "I believe people will use more renewable energy."
+      - "What do you think will happen if sea levels rise?"
+    signal_words: ["will", "won't", "I think … will", "I believe …", "in the future", "by 2050"]
+  - title_tr: "If / When + Present Simple, … will …"
+    body_tr: "Koşul ya da zaman kısmı geniş zamandadır, sonuç kısmı will ile gelir: If we don't save water, there will be a shortage. 'If'li kısım nedeni, 'will'li kısım sonucu verir."
+    examples_en:
+      - "If people destroy forests, the temperature will rise."
+      - "When an earthquake strikes, buildings will shake."
+    signal_words: ["If …, … will …", "When …, … will …"]
+worked_example:
+  id: sd-B10-w
+  type: text_infer
+  stem_id: S04
+  context: "News report: Last summer, there was a long drought in the region. As a result, many farmers lost their crops, and the price of vegetables went up."
+  prompt: "According to the news report, why did the price of vegetables go up?"
+  options:
+    - "Because many farmers lost their crops."
+    - "Because there was a flood in the region."
+    - "Because farmers grew more crops."
+    - "Because people didn't buy vegetables."
+  answer: 0
+  explain_tr: "Zincir: kuraklık → ürün kaybı → fiyat artışı. 'flood' afet olarak çekici ama metinde sel değil kuraklık (drought) var; 'grew more crops' ise ters anlam."
+  items: [U10-007, U10-034, U9-040]
+practice:
+  - id: sd-B10-p01
+    type: gap_fill
+    stem_id: S12
+    context: "Ece forgot her umbrella, ________ she got wet in the rain."
+    prompt: "Which of the following best fills the blank?"
+    options:
+      - "so"
+      - "because"
+      - "because of"
+      - "if"
+    answer: 0
+    explain_tr: "Şemsiyeyi unutmak neden, ıslanmak sonuç; sonuçtan önce 'so' gelir. 'because' kullanılırsa ıslandığı için şemsiyeyi unuttu gibi ters bir anlam çıkar."
+    items: [U9-040]
+  - id: sd-B10-p02
+    type: gap_fill
+    stem_id: S12
+    context: "Many animals are becoming extinct ________ deforestation."
+    prompt: "Which of the following best fills the blank?"
+    options:
+      - "because of"
+      - "because"
+      - "so"
+      - "as a result"
+    answer: 0
+    explain_tr: "Boşluktan sonra bir isim (deforestation) var: because of + isim. 'because' bir cümle ister; 'as a result' ise sonucu verir ve isimden önce 'of' ister."
+    items: [U10-029, U10-032, U9-040]
+  - id: sd-B10-p03
+    type: dialogue_complete
+    stem_id: S01
+    context: "Murat Bey: What do you think will happen in 2050?\nElif: ________"
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "I think there will be less water in the world."
+      - "There was a big earthquake in 1999."
+      - "I'm recycling plastic bottles now."
+      - "Yes, I did it yesterday."
+    answer: 0
+    explain_tr: "Soru gelecek tahmini istiyor; 'will' ile kurulan tek şık ilki. Diğerleri geçmişi ya da şu anı anlatıyor."
+    items: [U10-039, U10-030]
+  - id: sd-B10-p04
+    type: text_infer
+    stem_id: S04
+    context: "Selin: If we don't save water, there will be a water shortage in our city soon. When everybody takes shorter showers, we will save a lot of water."
+    prompt: "According to Selin, which of the following is TRUE?"
+    options:
+      - "Shorter showers will help us save water."
+      - "There is a water shortage in the city now."
+      - "Taking showers causes floods."
+      - "Saving water is not necessary."
+    answer: 0
+    explain_tr: "'When everybody takes shorter showers, we will save a lot of water' aynı bilgiyi veriyor. 'There is a water shortage now' çekici ama Selin bunun ileride (soon) olacağını söylüyor."
+    items: [U10-040, U10-036, U10-030]
+  - id: sd-B10-p05
+    type: dialogue_complete
+    stem_id: S13
+    context: "Kaan: ________\nBora: Because people cut down too many trees, and the soil slid down the hill after the heavy rain."
+    prompt: "Which question can be the missing question?"
+    options:
+      - "Why did the landslide happen?"
+      - "What will happen if it rains?"
+      - "When did the earthquake strike?"
+      - "How can we recycle paper?"
+    answer: 0
+    explain_tr: "Cevap 'Because …' ile başlıyor ve geçmişte olmuş bir heyelanı açıklıyor: 'Why did …?'. 'What will happen if it rains?' gelecek sorar; cevabı 'will' ile olurdu."
+    items: [U10-004, U10-029]
+  - id: sd-B10-p06
+    type: text_infer
+    stem_id: S14
+    context: "Elif: Did you hear the news? A magnitude 6.1 earthquake struck the city last night. Luckily, the buildings were strong, so they didn't collapse.\nDuru: Yes, and thanks to our earthquake drills, people knew what to do. They stayed calm."
+    prompt: "Which of the following can we infer from the conversation?"
+    options:
+      - "The earthquake drills helped people."
+      - "Many buildings collapsed after the earthquake."
+      - "People panicked during the earthquake."
+      - "The earthquake happened in the morning."
+    answer: 0
+    explain_tr: "'thanks to our earthquake drills, people knew what to do' → tatbikatlar işe yaradı. 'Many buildings collapsed' metindeki 'collapse' kelimesini taşıyor ama metin binaların YIKILMADIĞINI söylüyor."
+    items: [U10-013, U10-008, U10-010, U10-019, U9-040]
+tips:
+  - "because / because of / thanks to → NEDEN; so / that's why / as a result → SONUÇ. Zinciri ters kuran şık en sık çeldiricidir."
+  - "because + cümle (because it rained), because of + isim (because of the rain)."
+  - "'What will happen …?' sorusunun cevabı will ile gelir; geçmiş zamanlı şıkları hemen ele."
+coach:
+  start: "Neden oldu, sonra ne olacak? Bugün because, so ve will ile neden–sonuç zincirlerini çözüyoruz."
+  end: "Tahminim şu: LGS'de bu soruları hızla çözeceksin! I believe you will. Modül B tamam, tebrikler!"
+status: draft

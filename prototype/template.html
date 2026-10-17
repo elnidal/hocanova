@@ -1,0 +1,436 @@
+<title>LGS Kelime Koçu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap">
+<style>
+/* Layout: tek sütun "sohbet + defter" — koç baloncuğu üstte, ders kartları akış hâlinde; sahneler mesajlaşma görünümünde */
+:root{
+  --bg:#F1F0F7; --paper:#FFFFFF; --ink:#1B1E3A; --muted:#62668A; --line:#DCDCEB;
+  --brand:#3B4BD8; --brand-soft:#E3E6FC;
+  --hot:#F0614A; --hot-soft:#FDE4DF;      /* yeni kelime */
+  --mint:#1E9E77; --mint-soft:#DDF3EB;    /* doğru / biliyor */
+  --amber:#C98A10; --amber-soft:#FBF0D6;  /* kararsız */
+  --bad:#D2433A; --bad-soft:#F9E1DF;
+  --bubble:#E9EAF5;
+  --shadow:0 1px 2px rgba(27,30,58,.06),0 8px 22px rgba(27,30,58,.07);
+  --f-d:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --f-b:"Nunito Sans","Segoe UI",system-ui,sans-serif;
+  --r:16px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12142A;--paper:#1B1E3A;--ink:#ECEDF8;--muted:#A3A6C8;--line:#2E3260;--brand:#8E9BFF;--brand-soft:#262B5C;
+  --hot:#FF8A75;--hot-soft:#3E2524;--mint:#53D1A6;--mint-soft:#173A31;--amber:#F0BE55;--amber-soft:#3A3020;--bad:#FF877E;--bad-soft:#3F2223;--bubble:#262A50;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.25);color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12142A;--paper:#1B1E3A;--ink:#ECEDF8;--muted:#A3A6C8;--line:#2E3260;--brand:#8E9BFF;--brand-soft:#262B5C;
+  --hot:#FF8A75;--hot-soft:#3E2524;--mint:#53D1A6;--mint-soft:#173A31;--amber:#F0BE55;--amber-soft:#3A3020;--bad:#FF877E;--bad-soft:#3F2223;--bubble:#262A50;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.25);color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-b);font-size:17px;line-height:1.6;padding-inline:16px;padding-block:18px 56px}
+.wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+h1,h2,h3{font-family:var(--f-d);margin:0;line-height:1.12;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:2rem;font-weight:800} h2{font-size:1.5rem;font-weight:800} h3{font-size:1.1rem;font-weight:800}
+p{margin:0} button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:8px}
+.eyebrow{font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.spread{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.card{background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);padding:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:12px;padding:12px 20px;font-weight:800;min-height:48px;background:var(--brand);color:#fff}
+.btn:hover{filter:brightness(1.08)} .btn[disabled]{opacity:.45;cursor:not-allowed;filter:none}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
+.btn.hot{background:var(--hot);color:#fff}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;font-weight:800;font-size:.8rem;background:var(--brand-soft);color:var(--brand)}
+.chip.new{background:var(--hot-soft);color:var(--hot)} .chip.unc{background:var(--amber-soft);color:var(--amber)} .chip.known{background:var(--mint-soft);color:var(--mint)}
+.icon-btn{display:inline-flex;align-items:center;gap:6px;border:2px solid var(--line);background:var(--paper);border-radius:10px;padding:6px 10px;font-weight:800;font-size:.85rem;color:var(--brand)}
+svg.i{width:20px;height:20px;flex:none}
+
+/* koç */
+.coach{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start}
+.avatar{width:44px;height:44px;border-radius:14px;background:var(--brand);color:#fff;display:grid;place-items:center;font-family:var(--f-d);font-weight:800;font-size:1.2rem}
+.say-bubble{background:var(--paper);border-radius:4px 16px 16px 16px;padding:12px 14px;box-shadow:var(--shadow);font-weight:600}
+.say-bubble small{display:block;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+
+/* ana ekran */
+.steps-home{display:flex;flex-direction:column;gap:10px}
+.tile{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;background:var(--paper);border-radius:var(--r);padding:14px 16px;box-shadow:var(--shadow);border:2px solid transparent;width:100%;text-align:left}
+.tile:hover:not([disabled]){border-color:var(--brand-soft)} .tile[disabled]{opacity:.5;cursor:not-allowed}
+.tile .n{font-family:var(--f-d);font-size:1.5rem;font-weight:800;color:var(--brand);text-align:center;line-height:1}
+.tile .n small{display:block;font-family:var(--f-b);font-size:.62rem;letter-spacing:.08em;color:var(--muted)}
+.tile b{font-family:var(--f-d);font-size:1.1rem}
+.tile .sub{font-size:.85rem;color:var(--muted);font-weight:600}
+.st{font-size:.76rem;font-weight:800;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.st.done{background:var(--mint-soft);color:var(--mint)} .st.open{background:var(--brand-soft);color:var(--brand)} .st.lock{background:var(--bg);color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.stat{background:var(--bg);border-radius:12px;padding:10px 12px}
+.stat b{display:block;font-family:var(--f-d);font-size:1.6rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat span{font-size:.78rem;color:var(--muted);font-weight:700}
+.bar{display:flex;gap:4px;margin-top:12px}
+.bar i{flex:1;height:8px;border-radius:8px;background:var(--line)}
+.bar i.known{background:var(--mint)} .bar i.unc{background:var(--amber)} .bar i.new{background:var(--hot)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);font-weight:700;margin-top:6px}
+.legend span{display:inline-flex;align-items:center;gap:6px}.sw{width:12px;height:12px;border-radius:4px;display:inline-block}
+
+/* ders */
+.prog{display:flex;gap:6px}.prog i{flex:1;height:6px;border-radius:6px;background:var(--line)}.prog i.on{background:var(--brand)}.prog i.cur{background:var(--hot)}
+.story{display:flex;flex-direction:column;gap:12px;font-size:1.1rem;line-height:1.75}
+.story p{max-width:65ch}
+.tk{display:inline;border:0;border-radius:6px;padding:0 3px;font-weight:800;letter-spacing:.01em;background:var(--hot-soft);color:var(--ink);border-bottom:3px solid var(--hot);line-height:1.3}
+.tk.rev{background:var(--brand-soft);border-bottom-color:var(--brand)}
+.en{font-style:italic}
+.say{border:0;background:transparent;color:var(--brand);padding:0 3px;vertical-align:middle}.say svg{width:18px;height:18px}
+.chat{display:flex;flex-direction:column;gap:8px}
+.msg{max-width:85%;background:var(--bubble);padding:9px 13px;border-radius:16px 16px 16px 4px}
+.msg.me{align-self:flex-end;background:var(--brand-soft);border-radius:16px 16px 4px 16px}
+.msg b{display:block;font-size:.75rem;color:var(--muted);letter-spacing:.04em}
+.q{display:flex;flex-direction:column;gap:14px}
+.q .prompt{font-size:1.15rem;font-weight:800}
+.q .stem{background:var(--bg);border-radius:12px;padding:12px 14px;font-size:1.02rem;white-space:pre-line}
+.q .ctx{background:var(--bg);border-radius:12px;padding:12px 14px;color:var(--muted)}
+.opts{display:grid;grid-template-columns:1fr;gap:10px}
+.opt{border:2px solid var(--line);background:var(--paper);border-radius:12px;padding:13px 14px;font-weight:700;font-size:1rem;text-align:left;min-height:52px}
+.opt:hover:not([disabled]){border-color:var(--brand)}
+.opt.right{background:var(--mint-soft);border-color:var(--mint);color:var(--mint)}
+.opt.picked{border-color:var(--ink);background:var(--bubble)}
+.opt.wrong{background:var(--bad-soft);border-color:var(--bad);color:var(--bad);text-decoration:line-through}
+.fb{font-family:var(--f-d);font-size:1.3rem;font-weight:800;min-height:1.5em}.fb.ok{color:var(--mint)}.fb.no{color:var(--bad)}
+.explain{background:var(--brand-soft);border-radius:12px;padding:10px 14px;font-weight:600}
+.stage{display:inline-flex;gap:6px;align-items:center;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.stage i{font-style:normal;padding:2px 9px;border-radius:999px;background:var(--bg);color:var(--muted)}
+.stage i.on{background:var(--ink);color:var(--paper)}
+.tip{background:var(--amber-soft);border-radius:var(--r);padding:16px 18px;display:flex;flex-direction:column;gap:4px}
+.nav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.yn{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line)}
+.yn b{font-family:var(--f-d);font-size:1.1rem}
+.seg{display:inline-flex;border:2px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:6px 14px;font-weight:800}
+.seg button.on{background:var(--ink);color:var(--paper)}
+.phone{background:var(--ink);color:var(--paper);border-radius:22px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.notif{background:rgba(255,255,255,.1);border-radius:14px;padding:10px 12px;font-size:.92rem}
+.notif small{display:block;opacity:.7;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto}
+.confirm{background:var(--bad-soft);border-radius:12px;padding:12px 14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+footer{font-size:.82rem;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+.big{font-family:var(--f-d);font-size:3rem;font-weight:800;color:var(--brand);line-height:1}
+@media (max-width:520px){h1{font-size:1.65rem}.tile{grid-template-columns:42px 1fr}.tile .st{grid-column:2;justify-self:start}.story{font-size:1.04rem}}
+@media (prefers-reduced-motion:no-preference){.card,.coach,.tip{animation:up .22s ease-out}@keyframes up{from{transform:translateY(6px)}to{transform:none}}}
+</style>
+
+<div class="wrap" id="app"></div>
+<script>const DATA = __DATA__;</script>
+<script>
+(function(){
+const $ = document.getElementById('app');
+const ITEMS = Object.fromEntries(DATA.units.flatMap(u=>u.items).map(i=>[i.id,i]));
+let CU = 1; const U=()=>DATA.units.find(u=>u.unit===CU); const dayOf=d=>U().days.find(x=>x.day===d); const DK=d=>`u${CU}d${d}`;
+const KEY='hikayenglish.lgs.pilot.v1';
+const blank=()=>({placement:null,check:null,state:{},done:{},stats:{},log:[],allOpen:false,ret:{}});
+let S=blank(); try{const r=localStorage.getItem(KEY); if(r) S=Object.assign(blank(),JSON.parse(r));}catch(e){}
+Object.keys(S.done).forEach(k=>{const m=k.match(/^d(\d+)$/); if(m){S.done['u1d'+m[1]]=S.done[k]; delete S.done[k];}}); CU=S.unit||1;
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const h=html=>{const t=document.createElement('template');t.innerHTML=html.trim();return t.content.firstElementChild;};
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a;};
+const I={
+ play:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>',
+ next:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>',
+ back:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg>',
+ bell:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg>',
+ chart:'<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>'
+};
+/* ses */
+let voice=null;
+function pick(){const v=(window.speechSynthesis&&speechSynthesis.getVoices())||[];voice=v.find(x=>/en-GB/i.test(x.lang))||v.find(x=>/^en/i.test(x.lang))||null;}
+if(window.speechSynthesis){pick();speechSynthesis.onvoiceschanged=pick;}
+function speak(t){if(!window.speechSynthesis)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t.replace(/_{3,}/g,'blank'));u.lang='en-GB';u.rate=.9;if(voice)u.voice=voice;speechSynthesis.speak(u);}catch(e){}}
+/* durum */
+const stOf=id=>S.state[id]||'new';
+function setState(id,v){S.state[id]=v;save();}
+function rec(id,ok,kind,chosen){
+  if(!id) return; const s=S.stats[id]||(S.stats[id]={c:0,w:0,conf:{}});
+  if(ok)s.c++; else {s.w++; if(chosen) s.conf[chosen]=(s.conf[chosen]||0)+1;}
+  S.log.push({t:Date.now(),id,ok,kind,chosen:chosen||null}); if(S.log.length>3000)S.log=S.log.slice(-3000); save();
+}
+/* metin işleme: {U1-xxx|görünüm} ve <en>…</en> */
+function rich(text,newSet){
+  let out=esc(text).replace(/&lt;u&gt;([\s\S]*?)&lt;\/u&gt;/g,'<u>$1</u>');
+  out=out.replace(/&lt;en&gt;([\s\S]*?)&lt;\/en&gt;/g,(m,inner)=>{
+    const plain=inner.replace(/\{(U\d+-\d+)(?:\|([^}]+))?\}/g,(x,id,d)=>d||ITEMS[id]?.display||'').replace(/&#39;|&quot;/g,'');
+    return `<span class="en">${inner}</span><button class="say" data-say="${esc(plain.replace(/<[^>]+>/g,''))}" aria-label="Dinle">${I.play}</button>`;
+  });
+  out=out.replace(/\{(U\d+-\d+)(?:\|([^}]+))?\}/g,(m,id,d)=>{const disp=d||ITEMS[id]?.display||id;return `<button class="tk ${newSet&&newSet.has(id)?'':'rev'}" data-tk="${id}" data-word="${esc(disp)}">${esc(disp)}</button>`;});
+  return out.replace(/\n/g,'<br>');
+}
+function bind(root){
+  root.querySelectorAll('[data-say]').forEach(b=>b.onclick=()=>speak(b.dataset.say));
+  root.querySelectorAll('[data-tk]').forEach(b=>b.onclick=()=>speak(b.dataset.word));
+}
+function coach(text,label){return h(`<div class="coach"><div class="avatar" aria-hidden="true">N</div><div class="say-bubble"><small>${esc(label||DATA.coach.coach_name||'Koç')}</small>${esc(text)}</div></div>`);}
+function frame(title,sub,progress){
+  $.innerHTML='';
+  const hd=h(`<header class="spread"><button class="icon-btn" id="bk">${I.back} Back</button>${progress?`<span class="chip">${esc(progress)}</span>`:''}</header>`);
+  hd.querySelector('#bk').onclick=()=>{if(window.speechSynthesis)speechSynthesis.cancel();home();};
+  $.append(hd);
+  if(title) $.append(h(`<div><p class="eyebrow">${esc(sub||'')}</p><h2>${esc(title)}</h2></div>`));
+  window.scrollTo(0,0);
+}
+/* soru motoru: şıklar karıştırılır, yanlış seçilen şık kaydedilir */
+function mcq(host,q,{onDone,itemId,kind,hint,mode}){
+  // mode 'test': tek deneme, doğru/yanlış gösterilmez (seviye ölçümü cevabı sızdırmasın)
+  // mode 'learn' (varsayılan): tek deneme; yanlışta doğru cevap ve açıklama gösterilir, tahmin turu yok
+  mode=mode||'learn';
+  const box=h(`<div class="q"></div>`);
+  if(q.prompt) box.append(h(`<p class="prompt">${rich(q.prompt)}</p>`));
+  if(hint) box.append(h(`<div class="ctx">${hint}</div>`));
+  if(q.stem) box.append(h(`<div class="stem">${rich(q.stem)}</div>`));
+  const opts=h(`<div class="opts"></div>`), fb=h(`<div class="fb" aria-live="polite"></div>`);
+  box.append(opts); box.append(fb);
+  let answered=false; const btns=[];
+  shuffle(q.options.map((t,i)=>({t,i}))).forEach(o=>{
+    const b=h(`<button class="opt">${esc(o.t)}</button>`); btns.push([b,o]);
+    b.onclick=()=>{ if(answered) return; answered=true;
+      const ok=o.i===q.answer;
+      btns.forEach(([x])=>x.disabled=true);
+      rec(itemId,ok,kind,ok?null:o.t);
+      if(mode==='test'){ b.classList.add('picked'); fb.className='fb'; fb.textContent='Cevabın kaydedildi.'; }
+      else {
+        if(ok){ b.classList.add('right'); fb.className='fb ok'; fb.textContent='Correct!'; }
+        else { b.classList.add('wrong'); btns.find(([,y])=>y.i===q.answer)[0].classList.add('right'); fb.className='fb no'; fb.textContent='Not quite. Doğrusu yeşil olan.'; }
+        if(q.explain) box.append(h(`<div class="explain">${esc(q.explain)}</div>`));
+      }
+      onDone(ok);
+    };
+    opts.append(b);
+  });
+  host.append(box); bind(box);
+}
+/* sırayla soru akışı */
+function sequence(list,{title,sub,progress,render,onEnd,intro}){
+  let k=0;
+  const run=()=>{
+    frame(title,sub,progress);
+    if(intro) $.append(coach(intro));
+    const c=h(`<section class="card"></section>`); $.append(c);
+    c.append(h(`<p class="eyebrow" style="margin-bottom:8px">${k+1} / ${list.length}</p>`));
+    const nav=h(`<div class="nav"><span></span><button class="btn" id="nx" disabled>Next ${I.next}</button></div>`);
+    render(c,list[k],ok=>{nav.querySelector('#nx').disabled=false;nav.querySelector('#nx').focus();});
+    $.append(nav);
+    nav.querySelector('#nx').onclick=()=>{k++; if(k<list.length) run(); else onEnd();};
+  };
+  if(!list.length){onEnd();return;} run();
+}
+
+/* ---------- ANA EKRAN ---------- */
+function home(){
+  $.innerHTML='';
+  const pilot=U().items;
+  const cnt={known:0,unc:0,new:0}; pilot.forEach(i=>cnt[stOf(i.id)]++);
+  const daysDone=Object.keys(S.done).filter(k=>k.startsWith(`u${CU}d`)).length;
+  $.append(h(`<header class="spread"><div><p class="eyebrow">Hikayenglish · LGS</p><h1>Kelime Koçu</h1></div>
+    <div class="row"><button class="icon-btn" id="ntf">${I.bell} Bildirimler</button><button class="icon-btn" id="prg">${I.chart} İlerleme</button></div></header>`));
+  const tabs=h(`<div class="row" role="tablist">${DATA.units.map(u=>`<button class="icon-btn" role="tab" aria-selected="${u.unit===CU}" data-u="${u.unit}" style="${u.unit===CU?'background:var(--ink);color:var(--paper);border-color:var(--ink)':''}">Ünite ${u.unit} · ${esc(u.title)}</button>`).join('')}</div>`);
+  tabs.querySelectorAll('[data-u]').forEach(b=>b.onclick=()=>{CU=+b.dataset.u;S.unit=CU;save();home();});
+  $.append(tabs);
+  let msg;
+  if(!S.placement) msg='Selam! Ben Hoca Nova, koçunum. Önce 4 dakikalık kısa bir testle seni tanıyayım; sonra Ece\'nin partisine gidiyoruz 🎈';
+  else if(!S.check) msg=DATA.coach.placement_result[S.placement.level].replace(' {name}','')+' Şimdi Friendship ünitesinin kelimelerine hızlıca bakalım.';
+  else if(daysDone<U().days.length) msg=(dayOf(daysDone+1)||{}).coach?.start||'';
+  else msg=!S.done.r8?DATA.coach.retention_invite.day08:(!S.done.r15?DATA.coach.retention_invite.day15:DATA.coach.unit_end.replace('{unit}','Friendship pilotu'));
+  $.append(coach(msg));
+  $.append(h(`<section class="card"><div class="spread"><div><p class="eyebrow">Ünite ${CU} · ${esc(U().title)}</p><h3>${pilot.length} kelime ve kalıp</h3></div><span class="chip">${S.placement?('Seviye: '+({baslangic:'başlangıç',orta:'orta',ileri:'ileri'})[S.placement.level]):'Seviye: —'}</span></div>
+     <div class="bar" aria-hidden="true">${pilot.map(i=>`<i class="${stOf(i.id)}"></i>`).join('')}</div>
+     <div class="legend"><span><i class="sw" style="background:var(--mint)"></i>şimdilik biliyor ${cnt.known}</span><span><i class="sw" style="background:var(--amber)"></i>kararsız ${cnt.unc}</span><span><i class="sw" style="background:var(--hot)"></i>yeni ${cnt.new}</span></div>
+     <div class="stats" style="margin-top:14px"><div class="stat"><b>${daysDone}/${U().days.length}</b><span>ders günü</span></div><div class="stat"><b>${cnt.known}</b><span>bilinen ifade</span></div>${CU===1?`<div class="stat"><b>${(S.done.r8?1:0)+(S.done.r15?1:0)}/2</b><span>kalıcılık kontrolü</span></div>`:`<div class="stat"><b>${cnt.unc}</b><span>kararsız ifade</span></div>`}</div></section>`));
+  const L=h(`<section class="steps-home"></section>`);
+  const tiles=[
+    {key:'pl',n:'T',sm:'TEST',t:'Başlangıç testi',s:'18 soru · 4 dk · seviyeni belirler',open:true,done:!!S.placement,go:placement},
+    {key:'ck',n:'K',sm:'KONTROL',t:'Ünite giriş kontrolü',s:'30 ifade · 2 dk · bildiklerini atlarsın',open:S.allOpen||!!S.placement,done:!!S.check,go:unitCheck},
+    ...U().days.map(d=>({key:DK(d.day),n:d.day,sm:'GÜN',t:d.title,s:d.new_items.map(i=>ITEMS[i].display).join(' · '),open:S.allOpen||(!!S.check&&(d.day===1?(CU===1||!!S.done[`u${CU-1}d${DATA.units[CU-2].days.length}`]):!!S.done[DK(d.day-1)])),done:!!S.done[DK(d.day)],go:()=>lesson(d.day)})),
+    {key:'r8',n:'8',sm:'GÜN',t:'Kalıcılık kontrolü 1 (pilot)',s:'10 soru · 4 dk · Gün 1–5 ifadeleri',open:S.allOpen||!!S.done.u1d5,done:!!S.done.r8,go:()=>retention('day08','r8')},
+    {key:'r15',n:'15',sm:'GÜN',t:'Kalıcılık kontrolü 2 (pilot)',s:'10 soru · 4 dk · Gün 1–5 ifadeleri',open:S.allOpen||!!S.done.r8,done:!!S.done.r15,go:()=>retention('day15','r15')},
+  ];
+  const shown=CU===1?tiles:tiles.filter(t=>!['pl','ck','r8','r15'].includes(t.key));
+  shown.forEach(t=>{const b=h(`<button class="tile" ${t.open?'':'disabled'}><div class="n">${t.n}<small>${t.sm}</small></div><div style="min-width:0"><b>${esc(t.t)}</b><div class="sub">${esc(t.s)}</div></div><span class="st ${t.done?'done':t.open?'open':'lock'}">${t.done?'tamamlandı':t.open?'açık':'kilitli'}</span></button>`); b.onclick=()=>t.open&&t.go(); L.append(b);});
+  $.append(L);
+  const ft=h(`<footer><label class="row" style="gap:8px;font-weight:700"><input type="checkbox" id="ao" ${S.allOpen?'checked':''}> Tüm adımları aç (ekip modu)</label><span>Gerçek gün sayımı yok: bir sonraki adım, öncekini bitirince açılır.</span></footer>`);
+  $.append(ft);
+  ft.querySelector('#ao').onchange=e=>{S.allOpen=e.target.checked;save();home();};
+  $.querySelector('#prg').onclick=progress; $.querySelector('#ntf').onclick=notifications;
+  window.scrollTo(0,0);
+}
+
+/* ---------- BAŞLANGIÇ TESTİ ---------- */
+function placement(){
+  const P=DATA.placement, list=[]; P.sections.forEach(s=>s.questions.forEach(q=>list.push({...q,sec:s.id,secTitle:s.title})));
+  const score={A:0,B:0,C:0};
+  sequence(list,{title:'Başlangıç testi',sub:'Seni tanıyalım',progress:'Test',intro:'Her soruda tek cevap hakkın var ve doğru/yanlış göstermiyorum. Bilmiyorsan tahmin et; bu bir sınav değil, sadece başlangıç noktan.',
+    render:(c,q,done)=>{c.append(h(`<p class="chip" style="align-self:flex-start;margin-bottom:10px">${esc(q.secTitle)}</p>`)); mcq(c,q,{itemId:null,kind:'placement',mode:'test',onDone:f=>{if(f)score[q.sec]++;done();}});},
+    onEnd:()=>{
+      const tot=score.A+score.B+score.C, level=tot<=8?'baslangic':(tot<=14?'orta':'ileri');
+      const low=score.A<=3?'A':(score.B<=score.C?'B':'C');  // kelime tanıma zayıfsa önce o; değilse bağlam/sınav boyutlarından düşük olan
+      S.placement={score,tot,level,focus:low,at:Date.now()}; save();
+      frame('Test bitti','Sonuç');
+      $.append(h(`<section class="card" style="display:flex;flex-direction:column;gap:14px"><div class="row" style="gap:16px"><span class="big">${tot}<span style="font-size:1.4rem;color:var(--muted)">/18</span></span><div><p class="eyebrow">Seviye</p><h3>${({baslangic:'Başlangıç',orta:'Orta',ileri:'İleri'})[level]}</h3></div></div>
+        <div class="stats"><div class="stat"><b>${score.A}/6</b><span>kelime tanıma</span></div><div class="stat"><b>${score.B}/6</b><span>bağlamı anlama</span></div><div class="stat"><b>${score.C}/6</b><span>sınavda kullanma</span></div></div></section>`));
+      $.append(coach(DATA.coach.placement_result[level].replace(' {name}','')+' '+DATA.placement.scoring.coach_focus[low]));
+      const n=h(`<div class="nav"><button class="btn ghost" id="h">${I.back} Back</button><button class="btn" id="g">Next ${I.next}</button></div>`);
+      n.querySelector('#h').onclick=home; n.querySelector('#g').onclick=unitCheck; $.append(n);
+    }});
+}
+
+/* ---------- ÜNİTE GİRİŞ KONTROLÜ ---------- */
+function sinaOf(id){for(const d of DATA.units.flatMap(u=>u.days)){const st=d.steps.find(s=>s.item===id); if(st) return st.sina;} return null;}
+function unitCheck(){
+  const U=DATA.unit_check.yes_no; const words=shuffle([...U.items.map(id=>({id,w:ITEMS[id].display})),...U.pseudowords.map(w=>({id:null,w}))]);
+  const ans={};
+  frame('Ünite giriş kontrolü','Friendship · 30 ifade','Kontrol');
+  $.append(coach(U.prompt));
+  const c=h(`<section class="card"></section>`);
+  words.forEach((x,k)=>{const r=h(`<div class="yn"><b>${esc(x.w)}</b><div class="seg" role="group" aria-label="${esc(x.w)}"><button data-v="1">Evet</button><button data-v="0">Hayır</button></div></div>`);
+    r.querySelectorAll('button').forEach(b=>b.onclick=()=>{ans[k]=b.dataset.v==='1';r.querySelectorAll('button').forEach(y=>y.classList.toggle('on',y===b));upd();}); c.append(r);});
+  $.append(c);
+  const nav=h(`<div class="nav"><span class="muted" id="cnt">0/${words.length}</span><button class="btn" id="go" disabled>Next ${I.next}</button></div>`); $.append(nav);
+  const upd=()=>{const n=Object.keys(ans).length; nav.querySelector('#cnt').textContent=n+'/'+words.length; nav.querySelector('#go').disabled=n<words.length;};
+  nav.querySelector('#go').onclick=()=>{
+    const fakes=words.filter((x,k)=>!x.id&&ans[k]).length;
+    const claimed=words.filter((x,k)=>x.id&&ans[k]).map(x=>x.id);
+    DATA.items.forEach(i=>setState(i.id,'new'));
+    const strict=fakes>=U.pseudoword_threshold;
+    if(!claimed.length){finish();return;}
+    sequence(claimed,{title:'Biliyor musun? Gösterelim',sub:'Doğrulama',progress:'Kontrol',intro:strict?'Bazı uydurma kelimelere de "evet" dedin 🙂 O yüzden "evet" dediklerinin hepsini kısaca kontrol edeceğim.':'"Evet" dediklerini birer LGS sorusuyla kontrol ediyorum.',
+      render:(c,id,done)=>{c.append(h(`<p class="chip" style="align-self:flex-start;margin-bottom:10px">${esc(ITEMS[id].display)}</p>`)); mcq(c,sinaOf(id),{itemId:id,kind:'check',mode:'test',onDone:f=>{setState(id,f?(strict?'unc':'known'):'new');done();}});},
+      onEnd:finish});
+    function finish(){
+      S.check={fakes,claimed:claimed.length,at:Date.now()}; save();
+      const cnt={known:0,unc:0,new:0}; DATA.items.forEach(i=>cnt[stOf(i.id)]++);
+      frame('Kontrol bitti','Kişisel planın');
+      $.append(h(`<section class="card"><div class="stats"><div class="stat"><b>${cnt.known}</b><span>şimdilik biliyor</span></div><div class="stat"><b>${cnt.unc}</b><span>kararsız</span></div><div class="stat"><b>${cnt.new}</b><span>yeni</span></div></div>
+        <p class="muted" style="margin-top:12px">Bildiğin ifadelerde hikâyeden tahmin adımını atlayacağız ama İngilizce kullanım ve LGS sorusu yine gelecek.${fakes?` (Uydurma kelimelere ${fakes} kez "evet" dedin.)`:''}</p></section>`));
+      const n=h(`<div class="nav"><button class="btn ghost" id="h">${I.back} Back</button><button class="btn" id="g">Gün 1'e başla ${I.next}</button></div>`);
+      n.querySelector('#h').onclick=home; n.querySelector('#g').onclick=()=>lesson(1); $.append(n);
+    }
+  };
+}
+
+/* ---------- DERS ---------- */
+function lesson(d){
+  const D=dayOf(d), NEW=new Set(D.new_items), L={d,wrong:new Set(),first:0,total:0};
+  const stepsTotal=4; let stepIdx=0;
+  const prog=()=>`Gün ${d} · ${++stepIdx}/${stepsTotal+1}`;
+  // 1) hikâye
+  frame(D.title,'Hikâye · sezdir',prog());
+  $.append(coach(D.coach.start));
+  const c=h(`<section class="card story"></section>`);
+  c.append(h(`<p class="muted" style="font-size:.95rem">Oku. <b style="color:var(--hot)">Kırmızı</b> ifadeler bugün yeni: anlamını hikâyeden çıkar. Dokununca okunuşunu duyarsın.</p>`));
+  D.story.forEach(l=>c.append(h(`<p>${rich(l.text,NEW)}</p>`)));
+  bind(c); $.append(c);
+  const n1=h(`<div class="nav"><span></span><button class="btn">Next ${I.next}</button></div>`); $.append(n1);
+  n1.querySelector('button').onclick=scene;
+  // 2) sahne
+  function scene(){
+    frame('Mesajlar','Sahne · tamamen İngilizce',prog());
+    const ch=h(`<section class="card chat"></section>`);
+    const first=D.scene?.[0]?.speaker;
+    (D.scene||[]).forEach(l=>ch.append(h(`<div class="msg ${l.speaker===first?'':'me'}"><b>${esc(l.speaker||'')}</b>${rich(l.text,NEW)}</div>`)));
+    bind(ch); $.append(ch);
+    $.append(h(`<p class="muted">Hepsini anlamaya çalış; bilmediğin kelimeye takılma.</p>`));
+    const n=h(`<div class="nav"><span></span><button class="btn">Next ${I.next}</button></div>`); $.append(n);
+    n.querySelector('button').onclick=steps;
+  }
+  // 3) Sezdir · Kullan · Sına
+  function steps(){
+    const seq=[]; stepIdx++;
+    D.steps.forEach(st=>{const known=stOf(st.item)==='known';
+      if(!known) seq.push({st,k:'sezdir'}); seq.push({st,k:'kullan'}); seq.push({st,k:'sina'});});
+    const res={};
+    sequence(seq,{title:'Sezdir · Kullan · Sına',sub:'Bugünün ifadeleri',progress:`Gün ${d} · ${stepIdx}/${stepsTotal+1}`,
+      render:(c,x,done)=>{
+        const it=ITEMS[x.st.item];
+        c.append(h(`<div class="spread" style="margin-bottom:10px"><span class="stage"><i class="${x.k==='sezdir'?'on':''}">Sezdir</i><i class="${x.k==='kullan'?'on':''}">Kullan</i><i class="${x.k==='sina'?'on':''}">Sına</i></span><span class="row" style="gap:6px">${x.retry?'<span class="chip unc">tekrar</span>':''}<span class="chip ${stOf(it.id)==='known'?'known':stOf(it.id)==='unc'?'unc':'new'}">${esc(it.display)}</span></span></div>`));
+        const q=x.st[x.k]; let hint=null;
+        if(x.k==='sezdir'){const line=D.story.find(l=>l.id===q.context); hint=rich(line.text,NEW);}
+        mcq(c,q,{itemId:it.id,kind:x.k,hint,onDone:f=>{
+          if(!x.retry){ L.total++; if(f)L.first++; else L.wrong.add(it.id); }
+          if(!f && !x.retry && x.k!=='sezdir') seq.push({...x,retry:true});
+          if(!x.retry)(res[it.id]=res[it.id]||[]).push(f);
+          if(x.k==='sezdir'){c.append(h(`<div class="explain"><b>${esc(it.display)}</b> = ${esc(it.meaning_tr)} <button class="say" data-say="${esc(it.display.replace(/[…+]|SIFAT|!/g,' '))}">${I.play}</button></div>`)); bind(c); speak(it.display.replace(/[…+]|SIFAT/g,' '));}
+          done();}});
+        if(x.k==='sezdir'){bind(c);}
+      },
+      onEnd:()=>{
+        // ders günü: hepsi ilk denemede doğruysa "kararsız" (ertesi günün tekrarı doğrularsa "biliyor"); bilinen birim doğruysa bilinen kalır; yanlış varsa "yeni"
+        Object.entries(res).forEach(([id,arr])=>{const all=arr.every(Boolean); setState(id, all ? (stOf(id)==='known'?'known':'unc') : 'new');});
+        review();
+      }});
+  }
+  // 4) tekrar
+  function review(){
+    stepIdx++;
+    const list=D.review||[];
+    if(!list.length){tips();return;}
+    sequence(list,{title:'Tekrar',sub:'Önceki günlerden',progress:`Gün ${d} · ${stepIdx}/${stepsTotal+1}`,intro:'Türkçe yok: bakalım dünkü ifadeler aklında kalmış mı?',
+      render:(c,q,done)=>{mcq(c,q,{itemId:q.item,kind:'review',onDone:f=>{L.total++; if(f){L.first++; if(q.item&&stOf(q.item)==='unc')setState(q.item,'known'); if(q.item&&stOf(q.item)==='new')setState(q.item,'unc');} else {L.wrong.add(q.item); setState(q.item,'new');} done();}});},
+      onEnd:tips});
+  }
+  // 5) hap bilgiler + bitiş
+  function tips(){
+    S.done[DK(d)]=true; save();
+    frame('Hap bilgiler','Gün '+d+' · bitti',`Gün ${d} · ${stepsTotal+1}/${stepsTotal+1}`);
+    D.tips.forEach(t=>$.append(h(`<aside class="tip"><p class="eyebrow">${esc(({hafiza_kancasi:'Hafıza kancası',tuzak:'Tuzak',lgs_taktigi:'LGS taktiği',kelime_ailesi:'Kelime ailesi',ilginc_bilgi:'İlginç bilgi',mini_dilbilgisi:'Mini dilbilgisi'})[t.type])}</p><p>${esc(t.text)}</p></aside>`)));
+    const weak=[...L.wrong].filter(Boolean).map(id=>ITEMS[id]?.display).filter(Boolean);
+    const msg=weak.length?D.coach.end_mixed.replace('{weak}',weak.slice(0,3).join(', ')):D.coach.end_good;
+    $.append(coach(msg));
+    $.append(h(`<p class="muted">${L.first}/${L.total} soruyu ilk denemede bildin.</p>`));
+    const n=h(`<div class="nav"><button class="btn ghost" id="h">${I.back} Back</button>${dayOf(d+1)?`<button class="btn" id="g">Gün ${d+1} ${I.next}</button>`:(CU===1?`<button class="btn hot" id="g">Kalıcılık kontrolü ${I.next}</button>`:(DATA.units.find(u=>u.unit===CU+1)?`<button class="btn hot" id="g">Ünite ${CU+1} ${I.next}</button>`:''))}</div>`);
+    n.querySelector('#h').onclick=home; const gb=n.querySelector('#g'); if(gb) gb.onclick=()=>dayOf(d+1)?lesson(d+1):(CU===1?retention('day08','r8'):(CU++,S.unit=CU,save(),home())); $.append(n);
+  }
+}
+
+/* ---------- KALICILIK KONTROLÜ ---------- */
+function retention(secId,key){
+  const sec=DATA.retention.sections.find(s=>s.id===secId); let ok=0;
+  sequence(sec.questions,{title:sec.title,sub:'Kalıcılık',progress:'Kontrol',intro:DATA.coach.retention_invite[secId],
+    render:(c,q,done)=>mcq(c,q,{itemId:q.item,kind:'retention',mode:'test',onDone:f=>{if(f){ok++; setState(q.item,stOf(q.item)==='new'?'unc':'known');} else setState(q.item,'unc'); done();}}),
+    onEnd:()=>{S.done[key]=true; S.ret[key]={ok,n:sec.questions.length,at:Date.now()}; save();
+      frame('Kontrol bitti','Sonuç');
+      $.append(h(`<section class="card row" style="gap:16px"><span class="big">${ok}<span style="font-size:1.4rem;color:var(--muted)">/${sec.questions.length}</span></span><div><p class="eyebrow">Hatırlama oranı</p><h3>%${Math.round(100*ok/sec.questions.length)}</h3><p class="muted">Pilot hedefi: %70 ve üstü</p></div></section>`));
+      $.append(coach(ok/sec.questions.length>=.7?'Kalıcı öğrenmişsin! Ders günündeki doğrular gerçekten akılda kalmış 💪':'Bazı ifadeler kaymış; normal. Zorlandıklarını "kararsız" yaptım, tekrarda yine göreceğiz.'));
+      const n=h(`<div class="nav"><button class="btn ghost" id="h">${I.back} Back</button>${key==='r8'?`<button class="btn" id="g">Kontrol 2 ${I.next}</button>`:''}</div>`);
+      n.querySelector('#h').onclick=home; const g=n.querySelector('#g'); if(g) g.onclick=()=>retention('day15','r15'); $.append(n);
+    }});
+}
+
+/* ---------- BİLDİRİMLER (önizleme) ---------- */
+function notifications(){
+  frame('Bildirimler','Telefonuna gelecek mesajlar (önizleme)');
+  U().days.forEach(d=>{
+    $.append(h(`<section class="phone"><p class="eyebrow" style="color:inherit;opacity:.7">Gün ${d.day} · ${esc(d.title)}</p>
+      <div class="notif"><small>Sabah · 07:30</small>${esc(d.notifications.morning)}</div>
+      <div class="notif"><small>Akşam · ders yapılmadıysa · 19:00</small>${esc(d.notifications.evening)}</div>
+      <div class="notif"><small>Ertesi gün · tekrar daveti</small>${esc(d.notifications.review)}</div></section>`));
+  });
+  $.append(h(`<p class="muted">Saatler örnektir; gerçek zamanlama uygulama kodunda belirlenecek.</p>`));
+}
+
+/* ---------- İLERLEME ---------- */
+function progress(){
+  frame('İlerleme','Kelime kelime durum (bu cihazda)');
+  const lbl={known:'şimdilik biliyor',unc:'kararsız',new:'yeni'};
+  const rows=U().items.map(i=>{const s=S.stats[i.id]||{c:0,w:0,conf:{}};const top=Object.entries(s.conf||{}).sort((a,b)=>b[1]-a[1])[0];
+    return `<tr><td class="num">${i.pilot_day}</td><td><b>${esc(i.display)}</b><div class="muted" style="font-size:.82rem">${esc(i.meaning_tr)}</div></td><td><span class="chip ${stOf(i.id)}">${lbl[stOf(i.id)]}</span></td><td class="num">${s.c}</td><td class="num">${s.w}</td><td>${top?esc(top[0])+' ('+top[1]+')':''}</td></tr>`;}).join('');
+  const pl=S.placement?`Başlangıç testi: ${S.placement.tot}/18 (A ${S.placement.score.A} · B ${S.placement.score.B} · C ${S.placement.score.C})`:'Başlangıç testi yapılmadı';
+  const rt=['r8','r15'].map(k=>S.ret[k]?`${k==='r8'?'Gün 8':'Gün 15'}: ${S.ret[k].ok}/${S.ret[k].n}`:'').filter(Boolean).join(' · ');
+  $.append(h(`<p class="muted">${esc(pl)}${rt?' · '+esc(rt):''}</p>`));
+  $.append(h(`<section class="card"><div class="tbl"><table><thead><tr><th>Gün</th><th>İfade</th><th>Durum</th><th>Doğru</th><th>Yanlış</th><th>En çok seçilen yanlış şık</th></tr></thead><tbody>${rows}</tbody></table></div></section>`));
+  const rs=h(`<div class="row"><button class="btn ghost" id="rs">İlerlemeyi sıfırla</button></div>`);
+  rs.querySelector('#rs').onclick=()=>{const cf=h(`<div class="confirm"><span>Tüm ilerleme silinecek. Emin misin?</span><button class="btn" style="background:var(--bad)" id="y">Evet, sıfırla</button><button class="btn ghost" id="n">Vazgeç</button></div>`);rs.replaceWith(cf);cf.querySelector('#y').onclick=()=>{S=blank();save();home();};cf.querySelector('#n').onclick=progress;};
+  $.append(rs);
+}
+home();
+})();
+</script>

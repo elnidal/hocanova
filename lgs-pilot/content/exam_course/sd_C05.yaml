@@ -1,0 +1,163 @@
+# LGS Sınav Dili — C05 Mini deneme 1 (Ü1–5 karışık, 8 soru). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-C05
+module: C
+title: "Mini deneme 1"
+unlock_after: "Ü5 sonu"
+minutes: 8
+stems: [S01, S02, S04, S06, S07, S08, S10, S11, S12]
+units: [1, 2, 3, 4, 5]
+intro_tr: "İlk beş ünitenin hepsinden karışık 8 soru: gerçek sınavdaki gibi her soru farklı bir kök. Amacımız hem kökleri hızla tanımak hem de soru başına yaklaşık bir dakikada kalmak."
+cards:
+  - title_tr: "Deneme ritmi"
+    body_tr: "Her soruda aynı üç adım: (1) Kökü oku ve türünü tanı (diyalog, metin, tablo, sıra, kelime). (2) Metne o kökün gözüyle bak. (3) Şıkları ele, en son kalanı işaretle. Soru başına yaklaşık 1 dakika hedefle."
+    signal_words: ["kök", "metin", "ele"]
+  - title_tr: "Takıldığın soruyu geç"
+    body_tr: "Bir soruda 1,5 dakikayı geçtiysen iki şıkka indirdiğin hâliyle işaretle ve devam et. Sona kalan süreyle geri dön. Hiç fikrin yoksa boş bırakmak, yanlışın netten götürmesinden iyidir."
+  - title_tr: "Kök hatırlatıcı"
+    body_tr: "NOT / CANNOT → üç şık doğru, tek yanlışı ara. Who …? → + / − listesi. 'I'm calling to …' → amaç. Before / After → yapılış sırası. Altı çizili kısım → yerine koy testi."
+    signal_words: ["NOT", "CANNOT", "Who", "purpose", "before", "after", "replace"]
+worked_example:
+  id: sd-C05-w
+  type: situation
+  stem_id: S10
+  context: "Bora invites Duru to play an online game tonight, but Duru has a lot of homework."
+  prompt: "What does Duru say?"
+  options:
+    - "Thanks for asking, but I'm afraid I can't."
+    - "Why don't we play now?"
+    - "Sure, that sounds great!"
+    - "What do you mean?"
+  answer: 0
+  explain_tr: "Duru'nun çok ödevi var → kibarca reddeder. 'Why don't we play now?' bir öneri; Duru'nun ödevi olduğu için oyun teklif etmesi duruma uymaz."
+  items: [U5-056, U5-059, U5-057]
+practice:
+  - id: sd-C05-p01
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Kaan: Ece, ________
+      Ece: Sure! I won't tell anyone. I promise.
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "can you keep a secret? I'm planning a surprise party for Selin."
+      - "can you tell everyone about Selin's party?"
+      - "did you enjoy Selin's party last night?"
+      - "why did you break your promise?"
+    answer: 0
+    explain_tr: "'I won't tell anyone. I promise.' bir sır saklama sözüdür. 'tell everyone' şıkkı 'tell' kelimesini taşıyor ama Ece'nin cevabıyla ters düşüyor."
+    items: [U1-055, U1-058]
+  - id: sd-C05-p02
+    type: text_infer
+    stem_id: S08
+    context: |-
+      Elif: I'm crazy about jazz. I listen to it every day.
+      Kaan: I can't stand jazz. It's boring for me.
+      Duru: I don't mind jazz, but I prefer folk music.
+      Bora: I'm really into jazz, especially the drums!
+    prompt: "Who hates jazz?"
+    options:
+      - "Kaan"
+      - "Duru"
+      - "Kaan and Duru"
+      - "Elif and Bora"
+    answer: 0
+    explain_tr: "can't stand = hate: cazdan nefret eden yalnız Kaan. Duru 'I don't mind' diyor: cazdan rahatsız değil, sadece halk müziğini daha çok seviyor."
+    items: [U2-015, U2-013, U2-011, U2-016, U2-024]
+  - id: sd-C05-p03
+    type: text_infer
+    stem_id: S04
+    context: |-
+      Secretary: I'm afraid Mr Kaya is in a meeting right now. Would you like to leave a message?
+      Selin's mum: Yes, please. Could you ask him to call me back? My number is 555 0134.
+      Secretary: Of course. I'll give him the message.
+    prompt: "According to the conversation, which of the following is TRUE?"
+    options:
+      - "Mr Kaya can't answer the phone at the moment."
+      - "Selin's mum will call Mr Kaya back later."
+      - "Mr Kaya is talking to Selin's mum."
+      - "The secretary will call Selin's mum."
+    answer: 0
+    explain_tr: "Bay Kaya toplantıda, telefona gelemiyor. 'Selin's mum will call … back' kişileri ters çeviriyor: geri arayacak olan Bay Kaya."
+    items: [U4-023, U4-009, U4-001, U4-042]
+  - id: sd-C05-p04
+    type: table_graph
+    stem_id: S06
+    context: |-
+      Class survey: What do you do online most?
+      chatting with friends: 40% · doing homework: 30% · playing games: 20% · shopping: 10%
+    prompt: "According to the chart, which of the following is correct?"
+    options:
+      - "Chatting with friends is the most popular online activity."
+      - "Most students use the Internet for homework."
+      - "Playing games is more popular than doing homework."
+      - "Shopping is as popular as playing games."
+    answer: 0
+    explain_tr: "%40 ile sohbet en yüksek değer. Ödev %30; bu 'most' (çoğu) değildir. Oyun ödevden, alışveriş de oyundan daha az."
+    items: [U2-090, U5-051, U5-044]
+  - id: sd-C05-p05
+    type: process_order
+    stem_id: S07
+    context: |-
+      Mashed potatoes: Peel the potatoes and boil them for 20 minutes. Drain the water. Then mash the potatoes and add some butter and milk. Season with salt and pepper.
+    prompt: "What do we do right after we drain the water?"
+    options:
+      - "mash the potatoes"
+      - "boil the potatoes"
+      - "peel the potatoes"
+      - "season with salt and pepper"
+    answer: 0
+    explain_tr: "Suyu süzdükten sonra 'Then mash the potatoes' geliyor. Tuz-biber son adım; süzmenin hemen ardından değil."
+    items: [U3-019, U3-002, U3-014, U3-017, U3-021]
+  - id: sd-C05-p06
+    type: message_infer
+    stem_id: S11
+    context: |-
+      Dear Sir or Madam,
+      I bought a pair of headphones from your website last week. When they arrived, they didn't work properly. I would like to return them and get my money back.
+      Best wishes,
+      Bora Yılmaz
+    prompt: "What is the aim of this e-mail?"
+    options:
+      - "to return a product that doesn't work"
+      - "to order a new pair of headphones"
+      - "to thank the shop for the fast delivery"
+      - "to ask about the price of the headphones"
+    answer: 0
+    explain_tr: "'I would like to return them and get my money back' amacı veriyor. Yeni kulaklık siparişi yok; kulaklıkla ilgili olduğu için çekici ama Bora parasını geri istiyor."
+    items: [U4-041, U5-026, U5-051]
+  - id: sd-C05-p07
+    type: text_infer
+    stem_id: S02
+    context: |-
+      Murat Bey's notice: Our class blog is now online! You can sign up with your school e-mail address. Please post one comment about a book you like every week. Don't share personal information, and never upload photos of other people without asking them first.
+    prompt: "Which of the following does NOT have an answer in the notice?"
+    options:
+      - "What is the name of the class blog?"
+      - "How can students sign up?"
+      - "How often should students post a comment?"
+      - "What shouldn't students share?"
+    answer: 0
+    explain_tr: "Kayıt yolu (school e-mail), sıklık (every week) ve paylaşılmaması gereken (personal information) yazıyor. Blogdan söz ediliyor ama adı verilmiyor."
+    items: [U5-027, U5-012, U5-028, U5-010, U5-025]
+  - id: sd-C05-p08
+    type: synonym
+    stem_id: S12
+    context: "Kaan: Sorry, Elif, I can't <u>follow you</u>. What do you mean?"
+    prompt: "Which of the following can replace the underlined part (in brackets)?"
+    options:
+      - "understand you"
+      - "walk behind you"
+      - "agree with you"
+      - "hear you"
+    answer: 0
+    explain_tr: "'What do you mean?' ipucu: Kaan anlamadığını söylüyor; can't follow = can't understand. 'walk behind you' kelimenin günlük anlamı, bu bağlamda uymaz."
+    items: [U5-055, U5-057]
+tips:
+  - "Denemeye başlamadan önce 8 sorunun köklerine hızlıca göz at; en kolay türden başlamak moral verir."
+  - "Takıldığın soruyu işaretle ve geç; dönüşte çoğu zaman cevap daha net görünür."
+  - "Bitirince yanlışlarının kök türünü not et: hangi kökte zorlanıyorsan Modül A'daki dersine dön."
+coach:
+  start: "İlk mini deneme! Sınav değil, prova. Gözünü köklere aç, saatini kur ve keyfini çıkar."
+  end: "Deneme bitti! Hangi kökte zorlandıysan orası bir sonraki hedefimiz. Her yanlış sana yol gösteriyor."
+status: draft

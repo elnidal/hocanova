@@ -1,0 +1,133 @@
+schema_version: 1
+id: SD-B01
+module: B
+title: "Davet etme ve kabul"
+unlock_after: "Ü1 sonu"
+minutes: 5
+stems: [S01, S08, S09, S10]
+functions: ["Davet etme ve öneride bulunma", "Daveti / teklifi kabul etme"]
+units: [1]
+intro_tr: "LGS'de en sık gelen diyalog konusu davettir. Davet cümlesini ve kabul cevabını bir bakışta tanırsan diyalog sorularının yarısı kendiliğinden çözülür."
+cards:
+  - title_tr: "Davet kalıpları"
+    body_tr: "Davet çoğunlukla soru biçimindedir. Would you like to / Do you want to + fiil; How about / What about + -ing ya da isim; Let's + fiil. Dikkat: Would you like SOME juice? (isim) bir teklif, Would you like TO come? (fiil) bir davettir."
+    examples_en:
+      - "Would you like to come over tomorrow?"
+      - "Do you want to join us at the cinema?"
+      - "How about going to the park after school?"
+      - "What about a film night on Friday?"
+    signal_words: ["Would you like to …?", "Do you want to …?", "How about …?", "What about …?", "Let's …"]
+  - title_tr: "Kabul kalıpları"
+    body_tr: "Kabul cevabı kısa ve olumlu bir sözle başlar (Sure, Yeah, Of course), ardından çoğunlukla bir plan ya da soru gelir (What time? I'll bring the cake.). Sounds + sıfat kalıbında sıfat hep olumludur."
+    examples_en:
+      - "Sure, that sounds fun!"
+      - "I'd love to. What time?"
+      - "That would be great!"
+      - "Yeah, why not?"
+      - "Thanks for the invitation. I'll be there."
+    signal_words: ["Sure", "I'd love to.", "Sounds great / fun!", "That would be great.", "Why not?"]
+  - title_tr: "İki küçük tuzak"
+    body_tr: "'What about you?' öneri değildir; aynı soruyu karşı tarafa geri sorar. 'I'd love to, but …' ise kabul değil, kibar bir RETtir: 'but' kelimesini görünce dur."
+    examples_en:
+      - "I'm free on Saturday. What about you?"
+      - "I'd love to, but I'm busy."
+worked_example:
+  id: sd-B01-w
+  type: dialogue_complete
+  stem_id: S01
+  context: "Selin: Are you free on Saturday afternoon?\nDuru: Yes, I have nothing to do. Why?\nSelin: ________\nDuru: That would be great! Can I bring Fıstık?"
+  prompt: "Which of the following completes the dialogue?"
+  options:
+    - "Would you like to come over and watch a film?"
+    - "Sorry, I can't come to your house."
+    - "What about you? Are you busy?"
+    - "Thanks for the invitation."
+  answer: 0
+  explain_tr: "Duru 'That would be great!' diyerek bir daveti kabul ediyor, demek ki boşlukta davet var. 'What about you? Are you busy?' çekici ama Duru zaten boş olduğunu söyledi ve 'That would be great' bir soruya verilecek cevap değil."
+  items: [U1-026, U1-005, U1-009, U1-023]
+practice:
+  - id: sd-B01-p01
+    type: situation
+    stem_id: S09
+    prompt: "Which of the following is an invitation?"
+    options:
+      - "How about going to the park after school?"
+      - "I'd love to, but I have to study."
+      - "Thanks, that sounds fun!"
+      - "I'm sorry I missed your party."
+    answer: 0
+    explain_tr: "How about + -ing bir davet/öneri kalıbı. 'I'd love to, but …' davet değil, davete verilmiş kibar bir ret."
+    items: [U1-008]
+  - id: sd-B01-p02
+    type: dialogue_complete
+    stem_id: S01
+    context: "Kaan: Do you want to join us at the basketball match tomorrow?\nBora: ________ What time does it start?\nKaan: At 4 p.m. Don't be late!"
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "Sure, why not?"
+      - "No, thanks. I'm busy tomorrow."
+      - "I'm sorry, I can't come."
+      - "Thanks for calling."
+    answer: 0
+    explain_tr: "Bora ardından maçın saatini soruyor, yani daveti kabul etmiş. Reddeden biri saat sormaz; bu yüzden iki ret şıkkı da elenir."
+    items: [U1-006, U1-015, U1-025]
+  - id: sd-B01-p03
+    type: dialogue_complete
+    stem_id: S01
+    context: "Elif: ________\nEce: Sounds great! I'll bring some sandwiches."
+    prompt: "Which of the following can be the missing part?"
+    options:
+      - "What about a picnic in the park on Sunday?"
+      - "What is your favourite food?"
+      - "Are you busy on Sunday?"
+      - "Why didn't you reply to my message?"
+    answer: 0
+    explain_tr: "'Sounds great!' bir öneriye verilen kabul cevabı ve Ece bir plan ekliyor (sandviç getirecek). 'Are you busy on Sunday?' sorusuna 'Sounds great!' diye cevap verilmez."
+    items: [U1-024, U1-022]
+  - id: sd-B01-p04
+    type: text_infer
+    stem_id: S08
+    context: "Ece: Band practice and pizza at my house on Friday at 6. Would you like to come?\nSelin: Sure, that sounds fun!\nBora: I'd love to, but I have to visit my grandmother.\nDuru: That would be great! Can I bring Fıstık?\nKaan: Sorry, I can't. I have a basketball match."
+    prompt: "Who accepts Ece's invitation?"
+    options:
+      - "Selin and Duru"
+      - "Selin and Bora"
+      - "Bora and Kaan"
+      - "Only Duru"
+    answer: 0
+    explain_tr: "Selin (Sure, that sounds fun!) ve Duru (That would be great!) kabul ediyor. Bora 'I'd love to' ile başlıyor ama 'but' ile reddediyor."
+    items: [U1-022, U1-023, U1-021]
+  - id: sd-B01-p05
+    type: situation
+    stem_id: S10
+    context: "Duru invites Bora to her birthday party. Bora is free that day and he really wants to go."
+    prompt: "What does Bora say?"
+    options:
+      - "Thanks for the invitation. I'll be there."
+      - "I'm afraid I can't. I'm busy."
+      - "Would you like to come to my party?"
+      - "It doesn't matter. You choose."
+    answer: 0
+    explain_tr: "Bora müsait ve gitmek istiyor, yani kabul eder. 'Would you like to come …?' davet eden kişinin, yani Duru'nun cümlesi."
+    items: [U1-012]
+  - id: sd-B01-p06
+    type: dialogue_complete
+    stem_id: S01
+    context: "Duru's mum: Would you like some more cake, Kaan?\nKaan: ________ I'm full."
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "No, thanks."
+      - "Yes, I'd love some."
+      - "Sure, that sounds fun!"
+      - "Why not?"
+    answer: 0
+    explain_tr: "Burada davet değil yiyecek teklifi var (some more cake). Kaan 'I'm full' (doydum) dediğine göre teklifi geri çeviriyor; 'Yes, I'd love some' bu yüzden olmaz."
+    items: [U1-017, U1-097]
+tips:
+  - "Boşluktan SONRAKİ satıra bak: 'What time?', 'Where?' ya da 'I'll bring …' geliyorsa boşlukta kabul vardır."
+  - "Would you like some …? = teklif (cevap: Yes, please / No, thanks), Would you like to …? = davet (cevap: I'd love to / Sorry, I can't)."
+  - "'I'd love to' tek başına kabul, 'I'd love to, but …' ise rettir; cümlenin sonuna kadar oku."
+coach:
+  start: "Davet geldi! Bugün kabul etmenin en tatlı yollarını öğreniyoruz. Fıstık bile 'Why not?' diyor."
+  end: "Süper! Artık bir davete 'That would be great!' demeyi biliyorsun. Bir sonraki partide görüşürüz."
+status: draft

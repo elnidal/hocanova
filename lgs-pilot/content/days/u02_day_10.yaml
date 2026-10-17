@@ -1,0 +1,316 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 10
+status: draft
+title: "Ekran başında bir cumartesi"
+est_minutes: 10
+characters: [Ece, Selin, Elif, Kaan, Bora, Duru, Murat Bey]
+new_items: [U2-055, U2-056, U2-057, U2-058, U2-059, U2-060]
+
+story:
+  - id: s01
+    text: "Cumartesi akşamı. Ece herkesi görüntülü aramaya topladı; anket sorularını bitireceklerdi: \"<en>OK, everyone! Let's {U2-055|chat online} for ten minutes and finish the survey questions.</en>\""
+  - id: s02
+    text: "Ekranlar tek tek açıldı. Duru kanepede, battaniyenin altındaydı: \"<en>I'm here. I'm just {U2-040|resting}. Saturday is my sofa day.</en>\""
+  - id: s03
+    text: "Selin'in yanakları kıpkırmızıydı: \"<en>We went {U2-039|hiking} with my dad this morning. Ten kilometres!</en>\""
+  - id: s04
+    text: "Bora'nın ekranı ise kapkaranlıktı. Sonra birden bembeyaz bir karate kıyafetiyle ekranda belirdi."
+  - id: s05
+    text: "Bora: \"<en>Look! I just came back from my karate class. I {U2-038|do karate} now! It's an {U2-037|individual sport}. No team, no stress.</en>\""
+  - id: s06
+    text: "Kaan: \"<en>Cool! But why are you holding your phone up like that?</en>\" Bora: \"<en>I want to {U2-057|take a selfie} in my karate clothes.</en>\""
+  - id: s07
+    text: "Bora telefonu havaya kaldırdı. İlk fotoğrafta gözleri kapalıydı. İkincisinde sadece alnı vardı. Üçüncüsünde arkada annesi, elinde bir tavayla duruyordu."
+  - id: s08
+    text: "Bora saçlarını çekiştirdi: \"<en>Why is it so hard to {U2-057|take a selfie}?!</en>\" Kaan kahkahayı bastı: \"<en>Bora, you're so {U1-073|funny}!</en>\""
+  - id: s09
+    text: "Elif: \"<en>Try a filter! There's one with a cat face.</en>\" Bora denedi: ekranda bıyıklı, kulaklı, karate kuşaklı bir kedi belirdi. Bora'nın hiç olmayan kedisi sonunda ortaya çıkmıştı!"
+  - id: s10
+    text: "Ece elini alnına vurdu: \"<en>That filter is {U2-060|ridiculous}! A karate cat?</en>\""
+  - id: s11
+    text: "Bora: \"<en>{U2-060|Ridiculous}? No, it's art! I want to {U2-058|share it on social media} right now.</en>\""
+  - id: s12
+    text: "Selin parmağını kaldırdı: \"<en>Wait, Bora! {U2-041|Pay attention} to the settings. The whole school can see it.</en>\""
+  - id: s13
+    text: "Bora'nın parmağı mavi düğmenin üstünde titriyordu. Alnında küçük ter damlaları belirdi."
+  - id: s14
+    text: "Bora: \"<en>I'm so {U2-059|nervous}! What if nobody likes it?</en>\""
+  - id: s15
+    text: "Duru battaniyenin altından seslendi: \"<en>Relax. It's just a photo. Why are you {U2-059|nervous}?</en>\""
+  - id: s16
+    text: "Bu arada Kaan'ın gözleri başka bir yerdeydi. Ece: \"<en>Kaan? Are you listening?</en>\" Kaan: \"<en>Sorry! I'm {U2-056|surfing the internet}. I'm looking for new basketball shoes.</en>\""
+  - id: s17
+    text: "Ece kaşlarını çattı: \"<en>I'm getting {U2-042|annoyed}, guys! We need to finish the survey!</en>\""
+  - id: s18
+    text: "Elif'in aklına bir fikir geldi: \"<en>Wait! Let's add new questions: How often do you {U2-056|surf the internet}? Do you {U2-055|chat online} with friends?</en>\""
+  - id: s19
+    text: "Ece'nin yüzü bir anda aydınlandı: \"<en>Great idea! And: How often do you {U2-057|take a selfie}? Do you {U2-058|share photos on social media}?</en>\""
+  - id: s20
+    text: "Tam o sırada Bora derin bir nefes aldı ve düğmeye bastı: \"<en>Done! I {U2-058|shared it}. Now I'm really {U2-059|nervous}.</en>\""
+  - id: s21
+    text: "İki dakika sonra telefon titredi: 1 beğeni, 5 beğeni, 20 beğeni! Murat Bey bile yorum yazmıştı: \"<en>Nice karate cat, Bora! Don't forget the survey. 😄</en>\""
+  - id: s22
+    text: "Kaan hemen Bora'ya özelden yazdı: \"<en>I'm going to {U1-046|text} you a better filter: karate dinosaur! 🦖</en>\" Bora: \"<en>No, thanks! One {U2-060|ridiculous} photo is enough.</en>\""
+  - id: s23
+    text: "Selin: \"<en>So our survey has an {U1-096|exciting} new part!</en>\" Ece: \"<en>Yes! Teens online: {U2-055|chatting online}, {U2-056|surfing the internet} and taking selfies.</en>\""
+  - id: s24
+    text: "Ekranlar teker teker kapandı. Duru hâlâ battaniyenin altındaydı: \"<en>Finally! Now I can {U2-040|rest} again.</en>\""
+
+scene:
+  - id: c01
+    speaker: Bora
+    text: "<en>I took a selfie in my karate clothes. Should I share it on social media?</en>"
+  - id: c02
+    speaker: Ece
+    text: "<en>With that cat filter? It's ridiculous!</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>I know, but I love it. I'm just a bit nervous. What if nobody likes it?</en>"
+  - id: c04
+    speaker: Kaan
+    text: "<en>Just post it! I'm surfing the internet now. I can like it first.</en>"
+  - id: c05
+    speaker: Elif
+    text: "<en>Let's chat online again tomorrow and finish the survey.</en>"
+
+steps:
+  - item: U2-055
+    sezdir:
+      id: u2d10-055-z
+      type: meaning
+      context: s01
+      prompt: "Hikâyede \"chat online\" ne anlama geliyordu?"
+      options: ["internetten sohbet etmek", "telefonla aramak", "mektup yazmak", "yüz yüze buluşmak"]
+      answer: 0
+    kullan:
+      id: u2d10-055-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My cousin lives in Germany, so we ________ on our computers every evening.</en>"
+      options: ["chat online", "do karate", "go hiking", "queue"]
+      answer: 0
+    sina:
+      id: u2d10-055-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What does Elif do?</en>"
+      stem: "<en>Elif: I can't meet my friends on weekdays, but we talk and send messages on a video app every night.</en>"
+      options: ["She chats online with her friends.", "She hangs out with her friends at the park.", "She writes letters to her friends.", "She never talks to her friends."]
+      answer: 0
+  - item: U2-056
+    sezdir:
+      id: u2d10-056-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"surf the internet\" ne anlama geliyordu?"
+      options: ["internette gezinmek", "denizde sörf yapmak", "bilgisayar tamir etmek", "interneti kapatmak"]
+      answer: 0
+    kullan:
+      id: u2d10-056-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I don't have any plans tonight. I'll just ________ and watch some funny videos.</en>"
+      options: ["surf the internet", "pick up", "queue", "do karate"]
+      answer: 0
+    sina:
+      id: u2d10-056-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which one is NOT an online activity?</en>"
+      options: ["going hiking", "surfing the internet", "chatting online", "sharing photos on social media"]
+      answer: 0
+  - item: U2-057
+    sezdir:
+      id: u2d10-057-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"take a selfie\" ne anlama geliyordu?"
+      options: ["selfie çekmek", "fotoğraf basmak", "video izlemek", "kamera satın almak"]
+      answer: 0
+    kullan:
+      id: u2d10-057-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Smile! I want to ________ with you in front of the Eiffel Tower.</en>"
+      options: ["take a selfie", "surf the internet", "follow the news", "work out"]
+      answer: 0
+    sina:
+      id: u2d10-057-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>You are at a concert with your best friend. You want a photo of both of you with your phone. What do you say?</en>"
+      options: ["Let's take a selfie!", "Let's chat online!", "Let's go hiking!", "Let's follow the news!"]
+      answer: 0
+  - item: U2-058
+    sezdir:
+      id: u2d10-058-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"share it on social media\" ne anlama geliyordu?"
+      options: ["sosyal medyada paylaşmak", "telefonu kapatmak", "fotoğrafı silmek", "fotoğrafı yazdırmak"]
+      answer: 0
+    kullan:
+      id: u2d10-058-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ece loves her new outfit. She always ________ photos of her clothes on social media.</en>"
+      options: ["shares", "rests", "queues", "trains"]
+      answer: 0
+    sina:
+      id: u2d10-058-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which is TRUE about Bora?</en>"
+      stem: "<en>Bora: I posted my karate photo on my social media account last night. 50 likes already!</en>"
+      options: ["He shared a photo on social media.", "He took a photo of his cat.", "He never uses the internet.", "He chatted online with his karate teacher."]
+      answer: 0
+  - item: U2-059
+    sezdir:
+      id: u2d10-059-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"nervous\" ne anlama geliyordu?"
+      options: ["gergin, heyecanlı", "sakin, huzurlu", "sıkılmış", "aç"]
+      answer: 0
+      explain: "Dikkat: nervous \"sinirli\" değil; gergin, heyecanlı demek."
+    kullan:
+      id: u2d10-059-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I have a big exam tomorrow and I can't sleep. I'm very ________.</en>"
+      options: ["nervous", "ridiculous", "lazy", "full"]
+      answer: 0
+    sina:
+      id: u2d10-059-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>How does Selin feel?</en>"
+      stem: "<en>Selin: My hands are shaking and my heart is beating fast. I'm going on stage in five minutes!</en>"
+      options: ["nervous", "bored", "calm", "stuffed"]
+      answer: 0
+  - item: U2-060
+    sezdir:
+      id: u2d10-060-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"ridiculous\" ne anlama geliyordu?"
+      options: ["saçma, gülünç", "harika", "korkutucu", "pahalı"]
+      answer: 0
+    kullan:
+      id: u2d10-060-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A winter coat and boots on the beach in July? That's ________!</en>"
+      options: ["ridiculous", "nervous", "calm", "patient"]
+      answer: 0
+    sina:
+      id: u2d10-060-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Kaan's new hat with a fish on top is ridiculous!\" Which one is CLOSEST in meaning to \"ridiculous\"?</en>"
+      options: ["silly", "clever", "normal", "boring"]
+      answer: 0
+
+review:
+  - id: u2d10-r01
+    type: gap_fill
+    item: U2-049
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Duru loves her bed. She ________ gets up early on Sundays.</en>"
+    options: ["rarely", "always", "usually", "often"]
+    answer: 0
+  - id: u2d10-r02
+    type: gap_fill
+    item: U2-050
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Cinema tickets are very expensive, so we ________ go to the cinema. Maybe twice a year.</en>"
+    options: ["seldom", "always", "often", "usually"]
+    answer: 0
+  - id: u2d10-r03
+    type: message_infer
+    item: U2-051
+    prompt: "<en>Which is TRUE about Kaan?</en>"
+    stem: "<en>Kaan: I go to bed very late, so I'm late for school almost every day.</en>"
+    options: ["Kaan is hardly ever on time.", "Kaan is always on time.", "Kaan usually goes to bed early.", "Kaan is never late."]
+    answer: 0
+  - id: u2d10-r04
+    type: message_infer
+    item: U2-052
+    prompt: "<en>How often does Bora do karate?</en>"
+    stem: "<en>Bora's week\nTuesday: karate class\nSaturday: karate class</en>"
+    options: ["twice a week", "once a week", "three times a week", "every day"]
+    answer: 0
+  - id: u2d10-r05
+    type: gap_fill
+    item: U2-053
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>There were thirty students in the canteen ________, so Kaan didn't get a toastie.</en>"
+    options: ["queue", "band", "gym", "survey"]
+    answer: 0
+  - id: u2d10-r06
+    type: dialogue_complete
+    item: U2-054
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Did you hear about the new space mission to the Moon?\nB: Yes! I ________ every morning.</en>"
+    options: ["follow the news", "rest", "queue", "do karate"]
+    answer: 0
+  - id: u2d10-r07
+    type: message_infer
+    item: U2-013
+    lgs_like: true
+    prompt: "<en>Which is TRUE about Bora?</en>"
+    stem: "<en>Bora: My alarm rings at 7 am on school days. It's terrible! I want to sleep until 11.</en>"
+    options: ["He can't stand getting up early.", "He is crazy about getting up early.", "He doesn't mind getting up early.", "He enjoys getting up early."]
+    answer: 0
+  - id: u2d10-r08
+    type: dialogue_complete
+    item: U2-015
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece: Do you like football, Kaan?\nKaan: ________ I watch every match and I play every day!</en>"
+    options: ["Like it? I'm crazy about it!", "Not really. It's boring.", "I can't stand it.", "I don't mind it."]
+    answer: 0
+  - id: u2d10-r09
+    type: gap_fill
+    item: U2-017
+    lgs_like: true
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Elif has posters of her favourite singer all over her room. She really ________ her.</en>"
+    options: ["admires", "dislikes", "hates", "can't stand"]
+    answer: 0
+  - id: u2d10-r10
+    type: situation
+    item: U2-018
+    lgs_like: true
+    prompt: "<en>Your friend asks about her new haircut. You don't like it very much, but you want to tell the truth politely. What do you say?</en>"
+    options: ["To be honest, I liked your old haircut more.", "I'm crazy about rap music.", "I hardly ever go out.", "Let's go hiking!"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U2-059, U2-042]
+    text: "nervous \"sinirli\" DEĞİL! nervous = gergin, heyecanlı (sınav öncesi, sahne öncesi). Sinirlenmiş biri için annoyed ya da angry kullanılır."
+  - type: hafiza_kancasi
+    refs: [U2-056]
+    text: "surf the internet: Sörfçü dalgadan dalgaya geçer, sen de sayfadan sayfaya! 🏄"
+  - type: ilginc_bilgi
+    refs: [U2-057]
+    text: "\"selfie\" kelimesi 2013'te Oxford Sözlükleri tarafından yılın kelimesi seçildi."
+  - type: mini_dilbilgisi
+    refs: [U2-058]
+    text: "share + bir şey + on social media: \"I shared my photo on social media.\" Gündelik dilde aynı anlamda post da kullanılır: \"I posted it online.\""
+
+coach:
+  start: "Cumartesi akşamı, herkes ekran başında. Bora karate kıyafetini giymiş, elinde telefonla bir şeyler deniyor… 📱"
+  end_good: "Harikasın! Bugünkü kelimeler sende, hem de hiç filtresiz. Bora'nın karate kedisi bile seninle gurur duyuyor! 🐱"
+  end_mixed: "Güzel iş! {weak} biraz takıldı, olsun. Bora da ilk denemede gözleri kapalı çıkmıştı. Yarın yine deneriz! 📸"
+
+notifications:
+  morning: "Bora'nın hiç olmayan kedisi sonunda ortaya çıktı! 🐱 Nasıl mı? Bugünkü derste."
+  evening: "Bora mavi düğmeye basacak mı? Ekran başında bir cumartesi, 10 dakika. 📱"
+  review: "Tek soru: Sahneye çıkmadan önce elleri titreyen biri nervous mı, ridiculous mı?"
+
+editor:
+  z07: {U2-055: BEKLIYOR, U2-056: BEKLIYOR, U2-057: BEKLIYOR, U2-058: BEKLIYOR, U2-059: BEKLIYOR, U2-060: BEKLIYOR}

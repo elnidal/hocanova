@@ -1,0 +1,313 @@
+schema_version: 1
+program: lgs
+unit: 4
+day: 5
+status: draft
+title: "Prova saati"
+est_minutes: 10
+characters: [Ece, Selin, Duru, Kaan, Bora, Elif, Elif'in kuzeni]
+new_items: [U4-008, U4-021, U4-027, U4-028, U4-029, U4-049]
+
+story:
+  - id: s01
+    text: "Bursa, Ece'nin teyzesinin evi, öğleden sonra üç. Ece plan defterini açtı, kalemi kulağının arkasına sıkıştırdı ve ilk prova için herkesi aynı anda grup aramasına çağırdı."
+  - id: s02
+    text: "Ece: \"<en>OK, team! This is your manager speaking. Our first rehearsal: when can we all {U4-027|meet up}?</en>\""
+  - id: s03
+    text: "Hatta sesler birer birer belirdi: Urla'dan Selin, Elif ve arkada Pamuk'un havlaması, Bora'nın çıtır çıtır cips sesi, en son da puf koltuğundan Duru'nun esneyişi. Bir tek Kaan yoktu."
+  - id: s04
+    text: "Selin: \"<en>Kaan's line is {U4-016|engaged}. Again. He's sending a three-minute voice message to somebody, I'm sure.</en>\" Ece: \"<en>I {U4-009|left a message} on his phone this morning. Nothing!</en>\""
+  - id: s05
+    text: "Ece: \"<en>Fine. We'll start without him. Selin and I are coming home on Saturday morning. So, Saturday at five, at Duru's house? Duru?</en>\""
+  - id: s06
+    text: "Grubun en {U1-079|laid-back} üyesi hiç kıpırdamadan mırıldandı: \"<en>It's my house. I {U4-021|guess} I can come.</en>\""
+  - id: s07
+    text: "Ece defterine kocaman harflerle yazdı ve altını iki kez çizdi: \"<en>Great! Saturday, five. That's our {U4-049|decision}!</en>\""
+  - id: s08
+    text: "Tam o anda Kaan hatta düştü, nefes nefese: \"<en>Sorry, sorry! I'm here! What did I miss? Saturday? Oh no, {U4-023|I'm afraid} I'm not {U4-014|available} on Saturday. I've got a match!</en>\""
+  - id: s09
+    text: "Selin hiçbir şey söylemedi; yalnızca kaşını kaldırıp defterine bir satır daha yazdı."
+  - id: s10
+    text: "Ece: \"<en>OK… Sunday at eleven? Come on, team, let's {U4-049|decide} now, please!</en>\""
+  - id: s11
+    text: "Bora: \"<en>Sunday morning? Sorry. My mum works the night shift on Saturday, so I make breakfast for her on Sunday morning. How about Sunday at four?</en>\""
+  - id: s12
+    text: "Elif: \"<en>Sunday at four? I {U4-021|guess} that's OK… no, wait! That's Pamuk's bath time at the dog salon! She waits all week for it!</en>\""
+  - id: s13
+    text: "Ece derin bir nefes aldı: \"<en>{U4-029|We'll meet on Saturday at three, then}?</en>\" Kaan: \"<en>Wait, wait! My match is at two, not at five! I can {U4-027|meet up} at five! Sorry, I'm {U1-075|always in a hurry}. I didn't read the message.</en>\""
+  - id: s14
+    text: "Bir saniyelik sessizlik. Sonra grubun en {U1-059|reliable} üyesi boğazını temizledi ve defterindeki listeyi okudu."
+  - id: s15
+    text: "Selin: \"<en>My {U4-010|memo} says: one, Saturday at five. Two, Sunday at eleven. Three, Sunday at four. Four, Saturday at three. And now… Saturday at five. That was our first {U4-049|decision}!</en>\""
+  - id: s16
+    text: "Hattaki herkes aynı anda güldü, Pamuk bile havladı. Ece: \"<en>Four changes in ten minutes! OK, OK. {U4-029|We'll meet on Saturday at five, then}. Final!</en>\""
+  - id: s17
+    text: "Duru: \"<en>I {U4-021|guess} I'll be there. It's still my house.</en>\""
+  - id: s18
+    text: "Kaan: \"<en>Great! I have to go, my coach is on the other line. I'll {U4-001|call you back} in two minutes! {U4-028|Talk to you soon}!</en>\" Selin: \"<en>So… in twenty minutes.</en>\""
+  - id: s19
+    text: "Selin: \"<en>{U4-028|Thanks for calling}, Ece. See you on Saturday!</en>\" Ece: \"<en>{U4-028|Talk to you soon}, team!</en>\""
+  - id: s20
+    text: "Aynı akşam Elif'in telefonu titredi. Ekranda kuzeninin adı vardı: kuzeni yarın sabah ailesiyle Ankara'ya taşınıyordu."
+  - id: s21
+    text: "Kuzeni: \"<en>This is my last night in İzmir. Ankara is so far!</en>\" Elif: \"<en>It's only a phone call away! Let's {U4-008|keep in touch}, OK? Every Sunday!</en>\""
+  - id: s22
+    text: "Kuzeni: \"<en>Deal. And we can {U4-027|meet up} in the summer. {U4-029|We'll meet at our ice cream shop by the sea, then}!</en>\""
+  - id: s23
+    text: "Elif: \"<en>{U4-028|Thanks for calling}! {U4-028|Take care}!</en>\" Kuzeni: \"<en>You too. Send me your concert video. And {U4-008|keep in touch}, singer!</en>\""
+  - id: s24
+    text: "Elif telefonu bıraktı, Pamuk'a sarıldı ve sınıf grubuna yazdı: \"<en>Rule number one in our band: we always {U4-008|keep in touch}. Even with Ankara! 💛</en>\""
+  - id: s25
+    text: "Gece yarısına doğru Bora'dan tek satırlık bir mesaj geldi: \"<en>Saturday at five. Only one small problem… I don't have a drum kit. 🥁</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>So, when can we meet up for the rehearsal?</en>"
+  - id: c02
+    speaker: Duru
+    text: "<en>I guess I can come on Saturday at five.</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>I'm afraid I can't… oh, wait! My match is at two. Five is fine!</en>"
+  - id: c04
+    speaker: Selin
+    text: "<en>That was our first decision. We'll meet on Saturday at five, then.</en>"
+  - id: c05
+    speaker: Elif
+    text: "<en>Great! Thanks for calling, Ece. Talk to you soon!</en>"
+
+steps:
+  - item: U4-029
+    sezdir:
+      id: u4d05-029-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"We'll meet on Saturday at five, then\" ne anlama geliyordu?"
+      options: ["O zaman cumartesi beşte buluşuruz.", "Geçen cumartesi beşte buluştuk.", "Cumartesi beşte buluşmayalım.", "Neden cumartesi beşte buluşmuyoruz?"]
+      answer: 0
+    kullan:
+      id: u4d05-029-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: I can't come on Friday, but Saturday is fine for me.\nB: OK. We ________ on Saturday, then.</en>"
+      options: ["will meet", "met", "are meet", "meets"]
+      answer: 0
+      explain: "Konuşma anında verilen ortak karar will ile kurulur: We'll meet …, then."
+    sina:
+      id: u4d05-029-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Bora: Are you free on Sunday?\nKaan: Not in the morning, but I'm free after two.\nBora: ________\nKaan: Perfect. See you there!</en>"
+      options: ["OK. We'll meet at the park at three, then.", "Sorry, I'm busy all day on Sunday.", "Who's calling, please?", "We met at the park last Sunday."]
+      answer: 0
+      explain: "Kaan ikiden sonra boş; Bora bir saat ve yer öneren kararı söylüyor, Kaan da \"See you there!\" diye kabul ediyor."
+  - item: U4-027
+    sezdir:
+      id: u4d05-027-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"meet up\" ne anlama geliyordu?"
+      options: ["buluşmak (arkadaşlarla)", "telefonu kapatmak", "yukarı çıkmak", "provayı iptal etmek"]
+      answer: 0
+    kullan:
+      id: u4d05-027-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Let's ________ after school and practise the song together.</en>"
+      options: ["meet up", "hang up", "pick up", "hold on"]
+      answer: 0
+      explain: "Arkadaşlarla bir araya gelmek için meet up kullanılır; hang up ve hold on telefon kalıplarıdır."
+    sina:
+      id: u4d05-027-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who will meet up with Ece on Sunday?</en>"
+      stem: "<en>Ece: Can you meet up with me at the café on Sunday?\nSelin: Of course! I'll be there at two.\nKaan: I'd love to, but I've got basketball practice.\nElif: Sure! Can I bring Pamuk?\nBora: Sorry, I'm visiting my grandpa.</en>"
+      options: ["Selin and Elif", "Kaan and Bora", "Selin and Kaan", "Only Elif"]
+      answer: 0
+      explain: "Selin (Of course!) ve Elif (Sure!) kabul ediyor; Kaan \"I'd love to, but…\" ile, Bora \"Sorry\" ile reddediyor."
+  - item: U4-049
+    sezdir:
+      id: u4d05-049-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"decision\" ne anlama geliyordu?"
+      options: ["karar", "hata", "şarkı", "bahane"]
+      answer: 0
+    kullan:
+      id: u4d05-049-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>We can't ________ between pizza and pasta. Let's ask Duru!</en>"
+      options: ["decide", "repeat", "hang up", "answer"]
+      answer: 0
+      explain: "İki seçenek arasında seçim yapmak decide between … ile anlatılır."
+    sina:
+      id: u4d05-049-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: Which song shall we play first, the rock song or the pop song?\nDuru: ________\nElif: OK, rock first. It's your decision!</en>"
+      options: ["I've decided: the rock song.", "I don't know any songs.", "Let's call back later.", "Sorry, wrong number."]
+      answer: 0
+      explain: "Elif \"rock first, it's your decision\" diyor; demek ki Duru rock şarkıyı seçtiğini söylemiş."
+  - item: U4-021
+    sezdir:
+      id: u4d05-021-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"I guess I can come\" ne anlama geliyordu?"
+      options: ["Sanırım gelebilirim.", "Kesinlikle gelemem.", "Hemen gelmeliyim.", "Asla gelmem."]
+      answer: 0
+    kullan:
+      id: u4d05-021-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Is Kaan coming to the rehearsal?\nB: I ________ so, but he's late as usual.</en>"
+      options: ["guess", "decide", "hang", "dial"]
+      answer: 0
+      explain: "Tam emin olmadan \"evet\" demek için I guess so kullanılır."
+    sina:
+      id: u4d05-021-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Which of the following can we infer about Selin?</en>"
+      stem: "<en>Elif: Is Duru coming to the cinema with us?\nSelin: I guess so. Yesterday she said \"maybe\".</en>"
+      options: ["She isn't sure about Duru's answer.", "She knows Duru is ill.", "She is going to the cinema alone.", "She doesn't want Duru to come."]
+      answer: 0
+      explain: "\"I guess so\" ve Duru'nun \"maybe\" cevabı Selin'in emin olmadığını gösterir; diğer şıkların dayanağı yok."
+  - item: U4-028
+    sezdir:
+      id: u4d05-028-z
+      type: meaning
+      context: s23
+      prompt: "Hikâyede \"Take care!\" ne anlama geliyordu?"
+      options: ["Kendine iyi bak!", "Dikkatli dinle!", "Biraz bekle!", "Beni geri ara!"]
+      answer: 0
+    kullan:
+      id: u4d05-028-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: OK, I have to go now. Bye!\nB: Bye, Elif! Talk to you ________!</en>"
+      options: ["soon", "late", "never", "ago"]
+      answer: 0
+      explain: "Telefonu kapatırken \"Talk to you soon\" (yakında yine konuşuruz) denir."
+    sina:
+      id: u4d05-028-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: … so the rehearsal is on Saturday at five. Don't forget!\nKaan: I won't. ________\nSelin: You're welcome. Bye!</en>"
+      options: ["Thanks for calling. Talk to you soon!", "Who's calling, please?", "Can I take a message?", "Hang on, I'll get her."]
+      answer: 0
+      explain: "Selin \"You're welcome\" diyor; demek ki Kaan teşekkür etmiş. Görüşmeyi kapatan teşekkür \"Thanks for calling\"."
+  - item: U4-008
+    sezdir:
+      id: u4d05-008-z
+      type: meaning
+      context: s21
+      prompt: "Hikâyede \"Let's keep in touch\" ne anlama geliyordu?"
+      options: ["Birbirimizden haberi kesmeyelim.", "Hadi el sıkışalım.", "Hadi birlikte taşınalım.", "Hadi hemen buluşalım."]
+      answer: 0
+    kullan:
+      id: u4d05-008-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My best friend is moving to London, but we'll ________ in touch. We'll call every week.</en>"
+      options: ["keep", "break", "take", "make"]
+      answer: 0
+      explain: "Uzaktaki biriyle haberleşmeyi sürdürmek keep in touch ile anlatılır."
+    sina:
+      id: u4d05-008-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>What is the purpose of the message?</en>"
+      stem: "<en>Can's message to Bora: Hi Bora! My family is moving to Antalya next month. I'll miss our Saturday mornings! Let's keep in touch. Here's my new number: 0542 111 22 33.</en>"
+      options: ["to say he wants to stay friends after moving", "to invite Bora to Antalya next month", "to apologise for being late", "to ask for Bora's new number"]
+      answer: 0
+      explain: "Can taşınıyor ve \"Let's keep in touch\" diyerek yeni numarasını veriyor: amacı arkadaşlığı sürdürmek."
+
+review:
+  - id: u4d05-r01
+    type: gap_fill
+    item: U4-005
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Bora ________ the number very fast and made a mistake.</en>"
+    options: ["dialled", "hung up", "answered", "held on"]
+    answer: 0
+  - id: u4d05-r02
+    type: gap_fill
+    item: U4-006
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Bora was very embarrassed, so he said \"Sorry!\" and ________ quickly.</en>"
+    options: ["hung up", "hung out", "held on", "picked up"]
+    answer: 0
+  - id: u4d05-r03
+    type: situation
+    item: U4-015
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>What does Bora say in this situation?</en>"
+    stem: "<en>Kaan calls Bora from a noisy bus. Bora hears a lot of noise and only some words: \"…match… four… tomorrow…\"</en>"
+    options: ["Sorry, it's a bad line. I can't hear you.", "Sorry, wrong number.", "I'm afraid he isn't available.", "Congratulations!"]
+    answer: 0
+    explain: "Ses kesik ve gürültülü geliyor; uygun tepki hattın kötü olduğunu söylemek."
+  - id: u4d05-r04
+    type: dialogue_complete
+    item: U4-019
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Nermin Teyze: My grandson's name is Arda. A-R-D-A.\nBora: ________\nNermin Teyze: Of course, dear. A-R-D-A.</en>"
+    options: ["Pardon? Can you repeat that, please?", "Sorry, wrong number.", "Hang on, I'll get him.", "Thanks for calling!"]
+    answer: 0
+    explain: "Nermin Teyze adı yeniden heceliyor; demek ki Bora tekrar etmesini istemiş."
+  - id: u4d05-r05
+    type: gap_fill
+    item: U4-032
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>A: Hello, can I speak to Gül Hanım, please?\nB: Gül Hanım? There's nobody with that name here. Sorry, ________.</en>"
+    options: ["wrong number", "bad line", "hold on", "speaking"]
+    answer: 0
+  - id: u4d05-r06
+    type: situation
+    item: U4-050
+    prompt: "<en>How did Bora feel?</en>"
+    stem: "<en>Bora shouted \"KARATE!\" at an old lady on the phone. Then he understood it was the wrong number.</en>"
+    options: ["embarrassed", "proud", "relaxed", "jealous"]
+    answer: 0
+
+tips:
+  - type: mini_dilbilgisi
+    refs: [U4-029, U4-049]
+    text: "Konuşmanın ortasında verilen karar will ile kurulur: \"We'll meet on Saturday, then.\" Sondaki then \"o hâlde\" demektir ve kararın az önce konuşulanlara dayandığını gösterir. \"We met …\" ise geçmişte kalmış bir buluşmayı anlatır."
+  - type: tuzak
+    refs: [U4-027]
+    text: "meet tek başına \"tanışmak\" da olabilir (Nice to meet you!). meet up ise önceden tanıdığın arkadaşlarla sözleşip bir araya gelmektir: \"Let's meet up after school.\""
+  - type: lgs_taktigi
+    refs: [U4-028]
+    text: "\"Thanks for calling\" diyen kişi telefonu AÇAN kişidir; arayana teşekkür eder. LGS diyaloğunda kimin aradığını bulmak için bu kapanış cümlesi iyi bir ipucudur."
+  - type: kelime_ailesi
+    refs: [U4-049, U4-021]
+    text: "decide (fiil) → decision (isim): make a decision. guess fiil olarak \"tahmin etmek\"tir (Guess my age!); I guess ise cümle başında yumuşak bir \"bence, herhalde\" gibi çalışır."
+
+coach:
+  start: "Bugün grup ilk prova için dört kez fikir değiştiriyor. Selin'in defteri hepsini yakalayabilecek mi? 📒"
+  end_good: "Harika! Grup dört tur attı, sen bir kez bile şaşmadın. Cumartesi beşte seni de bekliyoruz 🎸"
+  end_mixed: "İyi gidiyorsun! {weak} biraz kaydı, dert değil. Selin gibi deftere yaz, yarın bir kez daha bak 📒"
+
+notifications:
+  morning: "İlk prova ne zaman? Grup bunu bulmak için dört tur atacak 📅"
+  evening: "Ankara'ya taşınan bir kuzen, bir veda ve Bora'dan gece yarısı mesajı 🥁"
+  review: "Telefonda vedalaşmanın üç kibar yolunu duydun. Hepsini hatırlıyor musun? 👋"
+
+editor:
+  z07: {U4-008: BEKLIYOR, U4-021: BEKLIYOR, U4-027: BEKLIYOR, U4-028: BEKLIYOR, U4-029: BEKLIYOR, U4-049: BEKLIYOR}

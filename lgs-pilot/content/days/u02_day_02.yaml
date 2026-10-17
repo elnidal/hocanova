@@ -1,0 +1,283 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 2
+status: draft
+title: "Duru'nun tek cevabı"
+est_minutes: 10
+characters: [Ece, Selin, Elif, Kaan, Bora, Duru]
+new_items: [U2-007, U2-008, U2-009, U2-010, U2-011, U2-012]
+
+story:
+  - id: s01
+    text: "Salı, teneffüs. İki ekip kantinin yanındaki masada toplandı; Ece elinde soru kâğıdıyla hazırdı."
+  - id: s02
+    text: "Ece: \"<en>Today we test our {U2-003|survey} questions on each other. Question one: Do you {U2-007|like} playing computer games?</en>\""
+  - id: s03
+    text: "Kaan: \"<en>Yes! I {U2-007|like} playing football games. And I {U2-008|enjoy} winning. Every time.</en>\""
+  - id: s04
+    text: "Bora: \"<en>He {U2-008|enjoys} winning, but he never wins against me.</en>\" Kaan itiraz edecekti ama Ece çoktan sıradaki soruya geçmişti."
+  - id: s05
+    text: "Ece: \"<en>Duru, do you {U2-007|like} reading books?</en>\""
+  - id: s06
+    text: "Duru omuz silkti: \"<en>I {U2-011|don't mind} reading. If the book is short.</en>\""
+  - id: s07
+    text: "Selin: \"<en>Do you {U2-008|enjoy} cooking?</en>\" Duru: \"<en>I {U2-011|don't mind} cooking. If someone else washes the dishes.</en>\""
+  - id: s08
+    text: "Elif güldü: \"<en>Duru, you are the most {U1-079|laid-back} person in the world!</en>\""
+  - id: s09
+    text: "Sıra Elif'teydi. Gözleri parladı: \"<en>I'm {U2-009|fond of} singing. I sing in the shower, on the bus, everywhere!</en>\""
+  - id: s10
+    text: "Bora: \"<en>We know. We heard you on the bus yesterday.</en>\" Elif kıpkırmızı oldu ama o da güldü."
+  - id: s11
+    text: "Selin daha ciddi bir cevap verdi: \"<en>I'm {U2-010|keen on} reading the news. I read it every morning at breakfast.</en>\""
+  - id: s12
+    text: "Kaan: \"<en>News at breakfast? I'm not {U2-010|keen on} that. I {U2-012|dislike} reading in the morning. My eyes are still asleep!</en>\""
+  - id: s13
+    text: "Bora: \"<en>I {U2-012|dislike} getting up early too. And I'm not {U1-038|interested in} the news.</en>\""
+  - id: s14
+    text: "Ece: \"<en>Bora, what are you {U2-010|keen on}? Tell the truth.</en>\" Bora: \"<en>Taking selfies! I'm {U2-010|keen on} finding the perfect angle.</en>\""
+  - id: s15
+    text: "Ece kâğıda baktı: herkesin satırı doluydu, Duru'nunki hariç."
+  - id: s16
+    text: "Ece: \"<en>Duru, you must be {U2-009|fond of} something!</en>\""
+  - id: s17
+    text: "Duru uzun uzun düşündü: \"<en>OK. I'm {U2-009|fond of} Fıstık. And sleeping. And my guitar.</en>\""
+  - id: s18
+    text: "Kaan: \"<en>So you {U2-007|like} doing three things, and two of them are lying down.</en>\""
+  - id: s19
+    text: "Selin sonuçları yüksek sesle okudu: \"<en>Four people {U2-008|enjoy} music. Two people {U2-012|dislike} mornings. One person {U2-011|doesn't mind} anything.</en>\""
+  - id: s20
+    text: "Duru: \"<en>I {U2-011|don't mind} that result.</en>\" Masada kahkaha koptu."
+  - id: s21
+    text: "Zil çalınca Kaan, Bora'nın omzuna vurdu: \"<en>Come on, {U1-028|buddy}. Basketball after school?</en>\""
+  - id: s22
+    text: "Bora: \"<en>I {U2-011|don't mind} watching. Playing? No.</en>\" Duru arkadan seslendi: \"<en>Hey, that's my answer!</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Selin, do you like dancing?</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>Not really. I dislike dancing, but I enjoy reading. I'm keen on detective stories.</en>"
+  - id: c03
+    speaker: Elif
+    text: "<en>I'm fond of singing! What about you, Duru?</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>I don't mind singing… but only with my guitar. 🎸</en>"
+
+steps:
+  - item: U2-007
+    sezdir:
+      id: u2d02-007-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"like\" ne anlama geliyordu?"
+      options: ["sevmek, hoşlanmak", "gibi", "istemek", "beklemek"]
+      answer: 0
+    kullan:
+      id: u2d02-007-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan ________ playing basketball. He plays it every day after school.</en>"
+      options: ["likes", "is like", "liking", "like"]
+      answer: 0
+      explain: "Kaan = he → likes. Ardından fiil -ing alır: likes playing."
+    sina:
+      id: u2d02-007-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>In which sentence does \"like\" mean \"enjoy\"?</en>"
+      options: ["I like listening to music.", "She looks like her mother.", "What is your new teacher like?", "This cake tastes like chocolate."]
+      answer: 0
+      explain: "Diğer üç cümlede like = gibi (Ünite 1). Sadece ilkinde like = sevmek."
+  - item: U2-008
+    sezdir:
+      id: u2d02-008-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"enjoy\" ne anlama geliyordu?"
+      options: ["keyif almak", "kaybetmek", "unutmak", "korkmak"]
+      answer: 0
+    kullan:
+      id: u2d02-008-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>We really ________ swimming in the sea in summer.</en>"
+      options: ["enjoy", "enjoys", "enjoy to", "are enjoy"]
+      answer: 0
+      explain: "We + enjoy + -ing: We enjoy swimming. (enjoy to swim ❌)"
+    sina:
+      id: u2d02-008-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Elif enjoys singing in the shower.\" Which one is CLOSEST in meaning?</en>"
+      options: ["Elif likes singing in the shower.", "Elif never sings in the shower.", "Elif dislikes the shower.", "Elif sings only at school."]
+      answer: 0
+  - item: U2-009
+    sezdir:
+      id: u2d02-009-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"be fond of\" ne anlama geliyordu?"
+      options: ["-e düşkün olmak, çok sevmek", "-den korkmak", "-den sıkılmak", "-i unutmak"]
+      answer: 0
+    kullan:
+      id: u2d02-009-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My grandmother is very ________ gardening. She has lots of flowers.</en>"
+      options: ["fond of", "fond on", "keen of", "fond to"]
+      answer: 0
+      explain: "fond OF, keen ON. Edatı karıştırma!"
+    sina:
+      id: u2d02-009-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which of the following is TRUE about Bora?</en>"
+      stem: "<en>Bora: I'm fond of cooking. I make pancakes for my family every Sunday.</en>"
+      options: ["He likes cooking.", "He can't cook.", "He cooks every day.", "His family makes pancakes for him."]
+      answer: 0
+  - item: U2-010
+    sezdir:
+      id: u2d02-010-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"be keen on\" ne anlama geliyordu?"
+      options: ["-e meraklı olmak, hevesli olmak", "-den nefret etmek", "-i kaybetmek", "-e geç kalmak"]
+      answer: 0
+    kullan:
+      id: u2d02-010-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin is keen ________ reading the news. She reads it every morning.</en>"
+      options: ["on", "in", "at", "to"]
+      answer: 0
+    sina:
+      id: u2d02-010-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Look at the survey results. Who is keen on drawing?</en>"
+      stem: "<en>How much do you like these activities? (★ = a little, ★★★ = a lot)\nEce – drawing: ★★★ / dancing: ★\nKaan – drawing: ★ / dancing: ★★\nBora – drawing: ★ / dancing: ★★★</en>"
+      options: ["Ece", "Kaan", "Bora", "Nobody"]
+      answer: 0
+      explain: "drawing için üç yıldızı olan tek kişi Ece."
+  - item: U2-011
+    sezdir:
+      id: u2d02-011-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"don't mind\" ne anlama geliyordu?"
+      options: ["sakıncası yok, fark etmez", "çok istemek", "kesinlikle reddetmek", "unutmak"]
+      answer: 0
+    kullan:
+      id: u2d02-011-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Do you want to sit by the window or by the door?\nB: I don't ________. You choose.</en>"
+      options: ["mind", "matter", "care of", "like"]
+      answer: 0
+      explain: "I don't mind = Bana fark etmez. (\"It doesn't matter\" da olur ama \"I don't matter\" olmaz.)"
+    sina:
+      id: u2d02-011-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What does Duru mean?</en>"
+      stem: "<en>Ece: Can we practise at your house on Saturday?\nDuru: I don't mind. My mum is OK with it.</en>"
+      options: ["It's OK for her.", "She refuses.", "She is angry with Ece.", "She wants to practise at Ece's house."]
+      answer: 0
+  - item: U2-012
+    sezdir:
+      id: u2d02-012-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"dislike\" ne anlama geliyordu?"
+      options: ["sevmemek, hoşlanmamak", "beğenmek", "denemek", "hatırlamak"]
+      answer: 0
+    kullan:
+      id: u2d02-012-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I ________ getting up early. I'm always tired and grumpy in the morning.</en>"
+      options: ["dislike", "enjoy", "am fond of", "am keen on"]
+      answer: 0
+    sina:
+      id: u2d02-012-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which one is DIFFERENT in meaning?</en>"
+      options: ["dislike", "enjoy", "like", "be fond of"]
+      answer: 0
+      explain: "Diğer üçü olumlu (sevmek); dislike olumsuz."
+
+review:
+  - id: u2d02-r01
+    type: gap_fill
+    item: U2-001
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Most ________ in our school have a mobile phone. They are between 13 and 18 years old.</en>"
+    options: ["teenagers", "babies", "grandparents", "teachers"]
+    answer: 0
+  - id: u2d02-r02
+    type: gap_fill
+    item: U2-002
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>A: What do you do in your ________?\nB: I play chess and read comics.</en>"
+    options: ["free time", "school bag", "timetable", "classroom"]
+    answer: 0
+  - id: u2d02-r03
+    type: situation
+    item: U2-003
+    prompt: "<en>What is Ece doing?</en>"
+    stem: "<en>Ece asks thirty students the same five questions and writes down all their answers.</en>"
+    options: ["She is doing a survey.", "She is taking an exam.", "She is having a party.", "She is sending an invitation."]
+    answer: 0
+  - id: u2d02-r04
+    type: synonym
+    item: U2-004
+    prompt: "<en>\"We spend time together in the park on Sundays.\" Which one has the same meaning?</en>"
+    options: ["We hang out in the park on Sundays.", "We hang up in the park on Sundays.", "We clean the park on Sundays.", "We never go to the park on Sundays."]
+    answer: 0
+  - id: u2d02-r05
+    type: dialogue_complete
+    item: U2-005
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: What do you think about our school canteen?\nB: ________, the food is delicious but it's too crowded.</en>"
+    options: ["In my opinion", "What about you", "Nice to meet you", "See you later"]
+    answer: 0
+  - id: u2d02-r06
+    type: dialogue_complete
+    item: U2-006
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Kaan: I'm fourteen. ________\nBora: I'm fourteen too!</en>"
+    options: ["What about you?", "Where are you from?", "What's your name?", "How are you?"]
+    answer: 0
+
+tips:
+  - type: mini_dilbilgisi
+    refs: [U2-007, U2-008, U2-011]
+    text: "enjoy ve don't mind'dan sonra fiil -ing alır: I enjoy reading. I don't mind waiting. (enjoy to read ❌) like ise ikisini de alabilir: I like reading = I like to read."
+  - type: tuzak
+    refs: [U2-007, U1-080]
+    text: "Ünite 1'de like = gibi idi: \"What is Duru like?\" (Duru nasıl biri?). Bugün like = sevmek: \"I like singing.\" Cümlede fiil olarak mı (I like), edat olarak mı (look like, be like) geçiyor, ona bak."
+  - type: tuzak
+    refs: [U2-009, U2-010]
+    text: "Edatlar sabit: fond OF, keen ON. Arkalarından isim ya da -ing gelir: I'm fond of music. I'm keen on playing chess."
+  - type: lgs_taktigi
+    refs: [U2-008, U2-011, U2-012]
+    text: "LGS'de beğeni derecesi sorulur. Sıralamayı ezberle: like / enjoy / be fond of / be keen on (olumlu) → don't mind (ortada) → dislike (olumsuz)."
+
+coach:
+  start: "Ekipler soruları birbirinde deniyor. Herkesin bir cevabı var… Duru'nun ise hep aynı cevabı 🙃"
+  end_good: "Süpersin! Artık beğenini derece derece anlatabiliyorsun. Yarın: Bora'nın sabah alarmı ⏰"
+  end_mixed: "Güzel gidiyorsun! {weak} biraz takıldı ama yarın tekrar karşına çıkacak, bu sefer daha kolay."
+
+notifications:
+  morning: "Duru'ya ne sorsan aynı cevabı veriyor. Ne mi? Bugünkü derste 🙃"
+  evening: "Elif otobüste şarkı söylerken yakalandı 🎤 Bugünkü dersin 10 dakika."
+  review: "Tek soru: \"I don't mind cooking.\" diyen biri yemek yapmaya razı mı?"
+
+editor:
+  z07: {U2-007: BEKLIYOR, U2-008: BEKLIYOR, U2-009: BEKLIYOR, U2-010: BEKLIYOR, U2-011: BEKLIYOR, U2-012: BEKLIYOR}

@@ -1,0 +1,282 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 3
+status: draft
+title: "Bora'nın alarmı beş kez çaldı"
+est_minutes: 10
+characters: [Ece, Selin, Elif, Kaan, Bora, Duru, Murat Bey]
+new_items: [U2-013, U2-014, U2-015, U2-016, U2-017, U2-018]
+
+story:
+  - id: s01
+    text: "Çarşamba sabahı. Anketin yeni bölümü hazırdı ve Ece ilk soruyu daha sınıfın kapısında sordu."
+  - id: s02
+    text: "Ece: \"<en>What do you {U2-014|hate} doing in the morning?</en>\""
+  - id: s03
+    text: "Bora gözlerini zor açık tutuyordu: \"<en>I {U2-013|can't stand} getting up early. My alarm rang five times today.</en>\""
+  - id: s04
+    text: "Kaan: \"<en>Five times? So you {U1-016|missed} the first bus again!</en>\" Bora: \"<en>No. I {U1-016|missed} the second one too.</en>\""
+  - id: s05
+    text: "Selin: \"<en>{U2-018|To be honest}, I {U2-012|dislike} mornings too, but I'm never late.</en>\""
+  - id: s06
+    text: "Sıra Kaan'a geldi. Daha soru bitmeden cevap verdi: \"<en>Football! I'm {U2-015|crazy about} football!</en>\""
+  - id: s07
+    text: "Kaan: \"<en>I play it, I watch it, I dream about it. My bedroom walls are green, like a pitch!</en>\""
+  - id: s08
+    text: "Elif: \"<en>Kaan is {U2-015|crazy about} football, and I'm {U2-015|crazy about} Luna Ray's songs!</en>\""
+  - id: s09
+    text: "Elif telefonunun ekranını herkese gösterdi: sahnede mikrofonuyla Luna Ray. Kaan: \"<en>Who's that?</en>\" Elif: \"<en>The singer I {U2-017|admire} most!</en>\""
+  - id: s10
+    text: "Elif: \"<en>I really {U2-017|admire} her. She writes her own songs and she helps animal shelters.</en>\""
+  - id: s11
+    text: "Duru: \"<en>I {U2-017|admire} people who write songs. It's hard. I tried once and fell asleep.</en>\""
+  - id: s12
+    text: "Ece: \"<en>Duru, what are you {U2-016|into} these days?</en>\" Duru: \"<en>I'm {U2-016|into} old rock songs. Guitar solos!</en>\""
+  - id: s13
+    text: "Elif: \"<en>Really? I'm {U2-016|into} pop. But maybe we can find a middle way…</en>\" Duru ile Elif bakıştı; ikisinin de aklında bir fikir belirmişti."
+  - id: s14
+    text: "Selin sıradaki soruyu okudu: \"<en>Which school subject do you {U2-014|hate}?</en>\""
+  - id: s15
+    text: "Kaan: \"<en>I don't {U2-014|hate} any subjects. I {U2-014|hate} homework!</en>\" Murat Bey tam o anda sınıfa girmişti."
+  - id: s16
+    text: "Murat Bey gülümsedi: \"<en>{U2-018|To be honest}, Kaan, checking homework isn't my favourite thing either.</en>\""
+  - id: s17
+    text: "Bora cesaretini topladı: \"<en>Sir, is there anything you {U2-013|can't stand}?</en>\""
+  - id: s18
+    text: "Murat Bey: \"<en>Yes. Students who say 'This is {U1-095|boring}' before the lesson starts.</en>\""
+  - id: s19
+    text: "Bora ağzını hemen kapattı. Selin fısıldadı: \"<en>He {U2-013|can't stand} that word. Don't say it!</en>\""
+  - id: s20
+    text: "Ders sonunda Ece sonuçları saydı: \"<en>Three of us {U2-013|can't stand} early mornings, and two of us are {U2-015|crazy about} music.</en>\""
+  - id: s21
+    text: "Elif: \"<en>{U2-018|To be honest}, this project is more {U1-096|exciting} than I thought.</en>\""
+  - id: s22
+    text: "Kaan: \"<en>Because it's about us! Everybody is {U2-016|into} talking about themselves.</en>\" Duru ise çoktan başını sıraya koymuştu."
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>What do you hate doing, Bora?</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>I can't stand getting up early. To be honest, I hate Monday mornings.</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>I'm crazy about football! What about you, Elif?</en>"
+  - id: c04
+    speaker: Elif
+    text: "<en>I'm into pop music. I really admire Luna Ray. 🎤</en>"
+
+steps:
+  - item: U2-013
+    sezdir:
+      id: u2d03-013-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"can't stand\" ne anlama geliyordu?"
+      options: ["-e katlanamamak, hiç sevmemek", "ayakta duramamak", "-i bekleyememek", "-i hatırlayamamak"]
+      answer: 0
+    kullan:
+      id: u2d03-013-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Bora ________ getting up early. He is always grumpy in the morning.</en>"
+      options: ["can't stand", "is fond of", "enjoys", "is keen on"]
+      answer: 0
+      explain: "Sabahları huysuz = erken kalkmaya katlanamıyor."
+    sina:
+      id: u2d03-013-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Ece: Do you want to come to the concert? There will be thousands of people.\nSelin: Sorry, ________ crowded places. I always feel bad there.</en>"
+      options: ["I can't stand", "I'm crazy about", "I really enjoy", "I'm keen on"]
+      answer: 0
+      explain: "\"Sorry\" ve \"I always feel bad\" olumsuz duygu gösteriyor."
+  - item: U2-014
+    sezdir:
+      id: u2d03-014-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede \"hate\" ne anlama geliyordu?"
+      options: ["nefret etmek", "hayal etmek", "beklemek", "tercih etmek"]
+      answer: 0
+    kullan:
+      id: u2d03-014-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I ________ spiders! I scream when I see one.</en>"
+      options: ["hate", "love", "enjoy", "admire"]
+      answer: 0
+    sina:
+      id: u2d03-014-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>According to the survey results, which of the following is TRUE?</en>"
+      stem: "<en>SURVEY: How do you feel about homework? (20 students)\nlove it: 2\ndon't mind it: 5\nhate it: 13</en>"
+      options: ["Most students hate homework.", "Most students love homework.", "Thirteen students love homework.", "Five students hate homework."]
+      answer: 0
+      explain: "20 öğrenciden 13'ü \"hate it\" demiş: çoğunluk."
+  - item: U2-015
+    sezdir:
+      id: u2d03-015-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"be crazy about\" ne anlama geliyordu?"
+      options: ["-e bayılmak, deli olmak", "-den korkmak", "-e kızmak", "-i unutmak"]
+      answer: 0
+    kullan:
+      id: u2d03-015-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan is ________ football. He watches every match and has fifty football posters.</en>"
+      options: ["crazy about", "bored with", "afraid of", "tired of"]
+      answer: 0
+    sina:
+      id: u2d03-015-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Elif is crazy about Luna Ray's songs.\" Which one is CLOSEST in meaning?</en>"
+      options: ["Elif loves Luna Ray's songs very much.", "Elif thinks Luna Ray's songs are strange.", "Elif doesn't mind Luna Ray's songs.", "Elif can't stand Luna Ray's songs."]
+      answer: 0
+      explain: "be crazy about = bir şeyi çok, çok sevmek; Türkçedeki \"-e deli olmak\" gibi. Gerçekten delirmekle ilgisi yok!"
+  - item: U2-016
+    sezdir:
+      id: u2d03-016-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"be into\" ne anlama geliyordu?"
+      options: ["-e merakı olmak, -den hoşlanmak", "-in içine girmek", "-den dışarı çıkmak", "-i satmak"]
+      answer: 0
+    kullan:
+      id: u2d03-016-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: What kind of films are you ________?\nB: Comedies! I watch one every weekend.</en>"
+      options: ["into", "onto", "out", "off"]
+      answer: 0
+    sina:
+      id: u2d03-016-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which of the following is TRUE about Duru?</en>"
+      stem: "<en>Duru: These days I'm really into old rock songs. I listen to them on my way to school.</en>"
+      options: ["She likes old rock songs.", "She writes rock songs.", "She hates rock songs.", "She never listens to music."]
+      answer: 0
+  - item: U2-017
+    sezdir:
+      id: u2d03-017-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"admire\" ne anlama geliyordu?"
+      options: ["hayran olmak", "kıskanmak", "tanıştırmak", "unutmak"]
+      answer: 0
+    kullan:
+      id: u2d03-017-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I really ________ my grandfather. He is brave, kind and very wise.</en>"
+      options: ["admire", "dislike", "can't stand", "hate"]
+      answer: 0
+    sina:
+      id: u2d03-017-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>How does Elif feel about Luna Ray?</en>"
+      stem: "<en>Elif: Luna Ray writes her own songs, helps animal shelters and always smiles at her fans. She is my hero!</en>"
+      options: ["She admires her.", "She is jealous of her.", "She doesn't mind her.", "She is angry with her."]
+      answer: 0
+  - item: U2-018
+    sezdir:
+      id: u2d03-018-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"to be honest\" ne anlama geliyordu?"
+      options: ["açıkçası, dürüst olmak gerekirse", "neyse ki", "bu arada", "her neyse"]
+      answer: 0
+    kullan:
+      id: u2d03-018-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Do you like my new haircut?\nB: Well, ________, I liked your old haircut more.</en>"
+      options: ["to be honest", "nice to meet you", "have a good time", "see you soon"]
+      answer: 0
+    sina:
+      id: u2d03-018-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Ece: Did you like the film?\nSelin: ________ It was too long and a bit boring.</en>"
+      options: ["To be honest, not really.", "Yes, it was fantastic!", "I'd love to.", "Sure, let's go."]
+      answer: 0
+      explain: "Selin filmi beğenmemiş; to be honest kibarca gerçek fikri söylemeye başlar."
+
+review:
+  - id: u2d03-r01
+    type: gap_fill
+    item: U2-007
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>A: Do you ________ playing chess?\nB: Yes, I do! I play it with my dad every weekend.</en>"
+    options: ["like", "mind", "hate", "dislike"]
+    answer: 0
+  - id: u2d03-r02
+    type: gap_fill
+    item: U2-008
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Selin ________ reading detective stories. She reads one every week.</en>"
+    options: ["enjoys", "enjoy", "enjoying", "is enjoy"]
+    answer: 0
+  - id: u2d03-r03
+    type: gap_fill
+    item: U2-009
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>I'm very ________ animals, so I help at the animal shelter every Saturday.</en>"
+    options: ["fond of", "afraid of", "bored with", "tired of"]
+    answer: 0
+  - id: u2d03-r04
+    type: synonym
+    item: U2-010
+    prompt: "<en>\"Bora is keen on taking selfies.\" Which one is CLOSEST in meaning?</en>"
+    options: ["Bora really likes taking selfies.", "Bora never takes selfies.", "Bora dislikes taking selfies.", "Bora takes selfies only at school."]
+    answer: 0
+  - id: u2d03-r05
+    type: situation
+    item: U2-011
+    prompt: "<en>Kaan asks Duru, \"Can I sit next to you?\" Duru is OK with it. What does she say?</en>"
+    options: ["Sure, I don't mind.", "No, please don't.", "Sorry, this seat is for Elif.", "I'm late."]
+    answer: 0
+  - id: u2d03-r06
+    type: gap_fill
+    item: U2-012
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Kaan ________ reading in the morning, so he never reads at breakfast.</en>"
+    options: ["dislikes", "enjoys", "is keen on", "is fond of"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U2-013]
+    text: "stand = ayakta durmak, ama can't stand = katlanamamak! Arkasından -ing gelir: \"I can't stand waiting.\" (Beklemeye katlanamam.)"
+  - type: lgs_taktigi
+    refs: [U2-015, U2-014, U2-013, U2-011]
+    text: "Beğeni ölçeği: be crazy about / love (çok olumlu) → like / enjoy / be into → don't mind (ortada) → dislike → hate / can't stand (çok olumsuz). LGS bu sıralamayı tablo ile sorar."
+  - type: mini_dilbilgisi
+    refs: [U2-016]
+    text: "be into gündelik konuşma dilidir: \"I'm into jazz.\" \"Are you into video games?\" Arkasından isim ya da -ing gelir."
+  - type: kelime_ailesi
+    refs: [U2-018, U1-077]
+    text: "Ünite 1'den honest = dürüst. to be honest = dürüst olmak gerekirse. Zıttı: dishonest; isim hâli: honesty."
+
+coach:
+  start: "Bugün anketin en eğlenceli bölümü var: Bora'nın alarmı beş kez çaldı, Kaan'ın odası yemyeşil ⏰⚽"
+  end_good: "Harika! Artık en güçlü duygularını da İngilizce söyleyebiliyorsun. Yarın: Duru ile Elif'in büyük fikri 🎸"
+  end_mixed: "İyi gidiyorsun! {weak} bugün biraz zorladı, yarın onu yeniden soracağım."
+
+notifications:
+  morning: "Bora'nın alarmı bugün beş kez çaldı ⏰ Neden mi? Bugünkü derste."
+  evening: "Elif'in telefon ekranındaki şarkıcı kim? 10 dakikada öğren 🎤"
+  review: "Tek soru: \"I can't stand waiting.\" diyen biri beklemekten hoşlanıyor mu?"
+
+editor:
+  z07: {U2-013: BEKLIYOR, U2-014: BEKLIYOR, U2-015: BEKLIYOR, U2-016: BEKLIYOR, U2-017: BEKLIYOR, U2-018: BEKLIYOR}

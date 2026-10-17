@@ -1,0 +1,343 @@
+schema_version: 1
+program: lgs
+unit: 4
+day: 8
+status: draft
+title: "Çevirmeli telefon"
+est_minutes: 10
+characters: [Murat Bey, Kaan, Ece, Duru, Selin, Bora, Kaan'ın dedesi, Kaan'ın annesi, Selin'in babaannesi, Bora'nın dedesi]
+new_items: [U4-043, U4-044, U4-045, U4-046, U4-047, U4-048]
+
+story:
+  - id: s01
+    text: "Salı sabahı Murat Bey sözünü tuttu; sınıf grubuna tatil ödevinin yeni kısmı düştü: \"<en>How did your grandparents {U4-044|communicate} fifty years ago? Ask them {U4-046|face to face}. No phones, please!</en>\""
+  - id: s02
+    text: "Kaan: \"<en>No phones?! In the phone holiday? Murat Bey, are you OK? 😱</en>\""
+  - id: s03
+    text: "Ece hemen işe koyuldu: \"<en>Let's {U4-027|meet up} and {U4-049|decide} together. Who can visit which grandparent?</en>\""
+  - id: s04
+    text: "Selin: \"<en>My dad and I are going to Urla today. I'll ask my grandma.</en>\" Bora: \"<en>My grandpa is coming to our house tonight. Easy!</en>\""
+  - id: s05
+    text: "Kaan: \"<en>My grandpa has a really old phone. Come with me! {U4-029|We'll meet at my grandpa's at two, then}.</en>\" Duru: \"<en>{U4-021|I guess} I can come. Is there a sofa?</en>\""
+  - id: s06
+    text: "Saat tam ikide Ece ile Duru, Kaan'ın dedesinin kapısındaydı. Kaan ise iki dakika sonra, tişörtünü ters giymiş hâlde koşarak geldi."
+  - id: s07
+    text: "Dedesi kapıyı açıp torununa güldü: \"<en>Look at him! {U1-075|He's always in a hurry}, but he's always late. Come in, come in!</en>\""
+  - id: s08
+    text: "Çaylar gelince dede dolaptan siyah, ağır bir telefon çıkardı. Üstünde ekran yoktu; yalnızca delikli, yuvarlak bir disk vardı."
+  - id: s09
+    text: "Dede: \"<en>This {U4-048|device} is fifty years old, and it still works!</en>\" Kaan telefonu evirip çevirdi: \"<en>Where's the screen? Where are the {U4-043|applications}? Is it broken?</en>\""
+  - id: s10
+    text: "Dede: \"<en>No screen, no {U4-043|apps}! You put your finger in a hole and turn it. One number at a time.</en>\""
+  - id: s11
+    text: "Dede: \"<en>Do you know who {U4-047|invented} the telephone?</en>\" Duru, gözleri yarı kapalı, kanepeden mırıldandı: \"<en>Alexander Graham Bell. In 1876. I read it this morning.</en>\""
+  - id: s12
+    text: "Kaan: \"<en>You read something? Before noon?</en>\" Dede: \"<en>Right, Duru! A great {U4-047|invention}. But when I was a boy, there was only one phone in our street, at the grocer's.</en>\""
+  - id: s13
+    text: "Dede: \"<en>Long {U4-045|conversations}? Never! Calls were short and expensive. We {U4-044|communicated} with letters.</en>\""
+  - id: s14
+    text: "Dede eski bir teneke kutuyu açtı; içi sararmış zarflarla doluydu: \"<en>When I was a student in Ankara, your grandma and I {U4-008|kept in touch} with these. One letter every week!</en>\""
+  - id: s15
+    text: "Ece'nin gözleri parladı: \"<en>One letter every week? That's so lovely!</en>\" Kaan ise dehşete düşmüştü: \"<en>A week for one message? I can't wait one minute for a reply!</en>\""
+  - id: s16
+    text: "Dede telefonu Kaan'ın önüne koydu: \"<en>Then try this {U4-048|device}. Call your mum.</en>\" Kaan parmağını ilk deliğe soktu, diski çevirdi; disk tıkır tıkır, kaplumbağa hızıyla geri döndü."
+  - id: s17
+    text: "Kaan: \"<en>Come on, come on! This is the slowest {U4-048|device} in the world!</en>\""
+  - id: s18
+    text: "Kaan onuncu rakama geldiğinde kapı açıldı: annesi elinde bir tepsi poğaçayla içeri girdi."
+  - id: s19
+    text: "Kaan'ın annesi: \"<en>Kaan? Why are you calling me? I'm right here! Let's talk {U4-046|face to face}.</en>\""
+  - id: s20
+    text: "Herkes kahkahayı bastı. Ece: \"<en>The best phone {U4-045|conversation} in history: zero seconds!</en>\""
+  - id: s21
+    text: "Akşam Selin'den, Urla'dan bir sesli mesaj geldi: \"<en>My grandma says: 'A phone {U4-045|conversation} was three minutes, because it was expensive. Now you {U2-055|chat online} all day with one {U4-043|application}!'</en>\""
+  - id: s22
+    text: "Selin: \"<en>And she says: 'Talk {U4-046|face to face} sometimes. It's good for the heart.'</en>\""
+  - id: s23
+    text: "Bora'nın mesajı geldi: \"<en>My grandpa says: fifty years ago, he called the radio and asked for {U2-024|jazz} songs. That was his favourite way of {U4-044|communication}! 🎷</en>\""
+  - id: s24
+    text: "Kaan: \"<en>OK, I have an idea. I'll {U4-047|invent} a phone with no waiting!</en>\" Duru: \"<en>It's called a smartphone, Kaan.</en>\""
+  - id: s25
+    text: "Az sonra gruba Bora'nın telefonundan bir sesli mesaj daha düştü; bu kez konuşan dedesiydi: \"<en>Kids! For your homework: listen to some {U2-024|jazz} tonight. Old and beautiful!</en>\""
+  - id: s26
+    text: "Bora'nın dedesi: \"<en>OK, I'll stop now. {U4-028|Thanks for calling}… oh wait, nobody called. It's a message! Well, {U4-028|take care}, kids. {U4-028|Talk to you soon}!</en>\""
+  - id: s27
+    text: "Gece Ece gruba yazdı: \"<en>Homework done, team! Concert on Saturday. I'll send the final plan soon.</en>\" Duru: \"<en>Send it by letter. We'll get it next month.</en>\""
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>How did your grandparents communicate fifty years ago? Talk to them face to face.</en>"
+  - id: c02
+    speaker: Kaan'ın dedesi
+    text: "<en>This device has no screen and no applications, but it still works!</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>This phone is so slow. One day I'll invent a faster one!</en>"
+  - id: c04
+    speaker: Kaan'ın annesi
+    text: "<en>Kaan, I'm right here. Let's have a conversation face to face.</en>"
+
+steps:
+  - item: U4-043
+    sezdir:
+      id: u4d08-043-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede Kaan'ın \"Where's the screen? Where are the applications?\" cümlesinde \"application\" ne anlama geliyordu?"
+      options: ["(telefon) uygulama(sı)", "iş başvurusu", "şarj kablosu", "tuş"]
+      answer: 0
+    kullan:
+      id: u4d08-043-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>I downloaded a new music ________ on my phone. Now I can listen to songs without the internet.</en>"
+      options: ["application", "conversation", "invention", "customer"]
+      answer: 0
+      explain: "Telefona indirilen program application'dır; kısaca app denir."
+    sina:
+      id: u4d08-043-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Duru: I use three applications every day: a map app, a music app and a dictionary app. I never play games on my phone. They're boring for me.</en>"
+      options: ["Duru uses a dictionary app every day.", "Duru plays games every day.", "Duru uses five applications.", "Duru never listens to music."]
+      answer: 0
+      explain: "Duru her gün harita, müzik ve sözlük uygulaması kullanıyor; oyun oynamıyor."
+  - item: U4-044
+    sezdir:
+      id: u4d08-044-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede dedenin \"Calls were short and expensive. We communicated with letters.\" cümlesinde \"communicate\" ne anlama geliyordu?"
+      options: ["iletişim kurmak, haberleşmek", "kavga etmek", "seyahat etmek", "alışveriş yapmak"]
+      answer: 0
+    kullan:
+      id: u4d08-044-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>Dolphins ________ with each other by making different sounds.</en>"
+      options: ["communicate", "invent", "deliver", "dial"]
+      answer: 0
+      explain: "Ses, söz, yazı ya da işaretle birbirine bilgi iletmek communicate'tir; isim hâli communication."
+    sina:
+      id: u4d08-044-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is correct?</en>"
+      stem: "<en>How do you communicate with your grandparents?\nEce: phone calls – every day\nKaan: face to face – twice a week\nSelin: video calls – once a week\nBora: messages – every day</en>"
+      options: ["Kaan communicates with his grandparents face to face.", "Selin talks to her grandparents every day.", "Bora never communicates with his grandparents.", "Ece sends messages to her grandparents."]
+      answer: 0
+      explain: "Tabloda Kaan haftada iki kez yüz yüze görüşüyor; Selin haftada bir, Bora her gün mesajla, Ece telefonla."
+  - item: U4-045
+    sezdir:
+      id: u4d08-045-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede dedenin \"Long conversations? Never! Calls were short and expensive.\" cümlesinde \"conversation\" ne anlama geliyordu?"
+      options: ["konuşma, sohbet", "mektup", "şarkı", "yolculuk"]
+      answer: 0
+    kullan:
+      id: u4d08-045-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>Elif and her cousin had a long phone ________ last night. They talked for two hours!</en>"
+      options: ["conversation", "application", "device", "delivery"]
+      answer: 0
+      explain: "İki ya da daha çok kişinin karşılıklı konuşması conversation'dır."
+    sina:
+      id: u4d08-045-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which question completes the dialogue?</en>"
+      stem: "<en>Elif: ________\nDuru: About an hour. We talked about the concert and the songs.</en>"
+      options: ["How long was your conversation with Ece?", "How often do you call Ece?", "Who did you talk to?", "Where is the concert?"]
+      answer: 0
+      explain: "Cevap bir süre veriyor (About an hour); süreyi soran tek soru How long."
+  - item: U4-046
+    sezdir:
+      id: u4d08-046-z
+      type: meaning
+      context: s19
+      prompt: "Hikâyede Kaan'ın annesinin \"Why are you calling me? I'm right here! Let's talk face to face.\" cümlesinde \"face to face\" ne anlama geliyordu?"
+      options: ["yüz yüze", "telefonda", "mesajla", "sırt sırta"]
+      answer: 0
+    kullan:
+      id: u4d08-046-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>I don't like video calls. I prefer meeting my friends at the café and talking ________ .</en>"
+      options: ["face to face", "wrong number", "customer service", "bad line"]
+      answer: 0
+      explain: "Aynı yerde, karşı karşıya konuşmak talk face to face'tir."
+    sina:
+      id: u4d08-046-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What does the teacher want Ali and Mert to do?</en>"
+      stem: "<en>Teacher: Ali, Mert, please stop writing long messages to each other about the problem. Sit down together after the lesson and talk.</en>"
+      options: ["She wants them to talk face to face.", "She wants them to text each other.", "She wants them to make a phone call.", "She wants them to download an application."]
+      answer: 0
+      explain: "Öğretmen mesajı bırakıp birlikte oturup konuşmalarını istiyor; yani yüz yüze."
+  - item: U4-047
+    sezdir:
+      id: u4d08-047-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede dedenin \"Do you know who invented the telephone?\" sorusunda \"invent\" ne anlama geliyordu?"
+      options: ["icat etmek", "satın almak", "tamir etmek", "kırmak"]
+      answer: 0
+    kullan:
+      id: u4d08-047-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>My little brother ________ a new card game yesterday. Now the whole family plays it!</en>"
+      options: ["invented", "delivered", "solved", "returned"]
+      answer: 0
+      explain: "Daha önce olmayan bir şeyi ilk kez ortaya çıkarmak invent'tir; isim hâli invention."
+    sina:
+      id: u4d08-047-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Alexander Graham Bell invented the telephone in 1876. Before this invention, people usually communicated with letters. Letters were slow; sometimes they took weeks.</en>"
+      options: ["Before 1876, people usually wrote letters to communicate.", "Bell invented the letter.", "Letters were faster than telephones.", "The telephone was invented in 1976."]
+      answer: 0
+      explain: "Metne göre telefondan önce insanlar genellikle mektupla haberleşiyordu; diğer şıklar metinle çelişiyor."
+  - item: U4-048
+    sezdir:
+      id: u4d08-048-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede dedenin \"This device is fifty years old, and it still works!\" cümlesinde \"device\" ne anlama geliyordu?"
+      options: ["cihaz, alet", "oyuncak", "mobilya", "fotoğraf"]
+      answer: 0
+    kullan:
+      id: u4d08-048-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>A smartphone, a tablet and a laptop are all electronic ________ .</en>"
+      options: ["devices", "conversations", "customers", "decisions"]
+      answer: 0
+      explain: "Belli bir iş için yapılmış alet ya da makine device'tır."
+    sina:
+      id: u4d08-048-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which one is NOT a device?</en>"
+      options: ["a conversation", "a tablet", "a smartwatch", "a laptop"]
+      answer: 0
+      explain: "Tablet, akıllı saat ve dizüstü bilgisayar cihazdır; conversation (konuşma) bir cihaz değildir."
+
+review:
+  - id: u4d08-r01
+    type: situation
+    item: U4-036
+    prompt: "<en>Your new headphones don't work. You phone the company, and a recorded voice says, \"For orders, press 1. For problems, press 2.\" Where are you calling?</en>"
+    options: ["a call center", "a restaurant", "a friend's house", "a school"]
+    answer: 0
+  - id: u4d08-r02
+    type: gap_fill
+    item: U4-038
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>The shop assistant smiled and said \"Next, please!\" to the next ________ in the queue.</en>"
+    options: ["customer", "extension", "appointment", "device"]
+    answer: 0
+  - id: u4d08-r03
+    type: dialogue_complete
+    item: U4-039
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: When will my order arrive?\nB: We'll ________ it to your house tomorrow morning.</en>"
+    options: ["deliver", "complain", "solve", "invent"]
+    answer: 0
+  - id: u4d08-r04
+    type: situation
+    item: U4-040
+    prompt: "<en>Duru's new speaker arrived broken. She calls the shop and says, \"I'm not happy. It's the wrong colour and it doesn't work.\" What is she doing?</en>"
+    options: ["She is making a complaint.", "She is booking a table.", "She is keeping in touch.", "She is confirming an appointment."]
+    answer: 0
+  - id: u4d08-r05
+    type: gap_fill
+    item: U4-041
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>This jacket is too big. I'm going to ________ it to the shop and get my money back.</en>"
+    options: ["return", "deliver", "solve", "confirm"]
+    answer: 0
+  - id: u4d08-r06
+    type: gap_fill
+    item: U4-055
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>The technician came and ________ the problem with our internet in ten minutes.</en>"
+    options: ["solved", "disturbed", "dialled", "complained"]
+    answer: 0
+  - id: u4d08-r07
+    type: dialogue_complete
+    item: U4-031
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Ece: Hello, may I speak to Selin, please?\nSelin: ________\nEce: Oh, hi Selin! It's Ece. I'm calling about the concert.</en>"
+    options: ["Speaking.", "Sorry, wrong number.", "I'm afraid she isn't available.", "Hold on, I'll get her."]
+    answer: 0
+    explain: "Telefonu açan aranan kişinin kendisi; 'Speaking.' = 'Benim.' Ece de hemen konuya geçiyor."
+  - id: u4d08-r08
+    type: dialogue_complete
+    item: U4-022
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Duru's mum: Hello?\nKaan: Hi, this is Kaan. Is Duru there?\nDuru's mum: Yes, she is. ________\nKaan: Thank you!</en>"
+    options: ["Hang on a minute, I'll get her.", "Sorry, wrong number.", "I'm afraid she isn't here.", "Speaking."]
+    answer: 0
+    explain: "Anne 'Yes, she is' diyor ve Duru'yu çağırmaya gidiyor: 'I'll get her.'"
+  - id: u4d08-r09
+    type: text_infer
+    item: U4-011
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to the messages, which of the following is TRUE?</en>"
+    stem: "<en>Ece: Duru, I called you five times! Why didn't you pick up the phone?\nDuru: Sorry! My phone was on silent. I was on the sofa with Fıstık.</en>"
+    options: ["Duru didn't answer Ece's calls.", "Ece didn't call Duru.", "Duru called Ece five times.", "Duru's phone was very loud."]
+    answer: 0
+    explain: "'Why didn't you pick up the phone?' = Duru aramalara cevap vermedi; telefonu sessizdeydi."
+  - id: u4d08-r10
+    type: situation
+    item: U4-026
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>Ece calls the café. She wants to talk to Sevim Hanım, the owner. What does she say?</en>"
+    options: ["Could I speak to Sevim Hanım, please?", "Who's calling, please?", "Speaking.", "Can I take a message?"]
+    answer: 0
+    explain: "Birini telefona istemenin kibar kalıbı 'Could I speak to …, please?'"
+
+tips:
+  - type: tuzak
+    refs: [U4-043]
+    text: "application telefon bağlamında \"uygulama\"dır, kısaca app denir: download an app. Ama job application \"iş başvurusu\" demektir. Cümlede phone, download, screen varsa uygulama anlamına bak."
+  - type: kelime_ailesi
+    refs: [U4-047, U4-044]
+    text: "invent (icat etmek) → invention (icat) → inventor (mucit). communicate (iletişim kurmak) → communication (iletişim). Önünde a / the / a great varsa isim hâlini seç: a great invention."
+  - type: ilginc_bilgi
+    refs: [U4-047]
+    text: "Alexander Graham Bell telefonun patentini 1876'da aldı. Telefonla iletilen ilk cümlenin, Bell'in yardımcısına söylediği \"Mr Watson, come here, I want to see you.\" olduğu anlatılır."
+  - type: mini_dilbilgisi
+    refs: [U4-046]
+    text: "face to face kalıbında artikel yoktur: talk face to face (✓), talk a face to the face (✗). Sıfat gibi isimden önce gelince tire alır: a face-to-face conversation."
+
+coach:
+  start: "Bugün Murat Bey'in ödevi telefonsuz! Kaan'ın dedesinin dolabından ekranı olmayan bir telefon çıkıyor. Kaan buna dayanabilecek mi? ☎️"
+  end_good: "Harika! Kaan diski çevirene kadar sen bütün soruları bitirdin. Işık hızı! ⚡"
+  end_mixed: "{weak} biraz ağır döndü, tıpkı eski telefonun diski gibi. Sorun yok; yarın bir tur daha çeviririz! ☎️"
+
+notifications:
+  morning: "Murat Bey'den telefonsuz bir tatil ödevi geldi. Kaan şokta! 😱"
+  evening: "Kaan dedesinin siyah telefonuyla annesini arıyor. Bu iş ne zaman biter?"
+  review: "Tek soru: Kaan'ın annesi \"Let's talk …\" dedi. Nasıl konuşalım dedi?"
+
+editor:
+  z07: {U4-043: BEKLIYOR, U4-044: BEKLIYOR, U4-045: BEKLIYOR, U4-046: BEKLIYOR, U4-047: BEKLIYOR, U4-048: BEKLIYOR}

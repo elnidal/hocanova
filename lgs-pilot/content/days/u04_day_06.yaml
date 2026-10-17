@@ -1,0 +1,309 @@
+schema_version: 1
+program: lgs
+unit: 4
+day: 6
+status: draft
+title: "Kırk yıllık davul"
+est_minutes: 10
+characters: [Bora, Selin, Ahmet Amca, Duru, Ece, Kaan, genel merkezdeki görevliler]
+new_items: [U4-003, U4-033, U4-035, U4-037, U4-052, U4-053]
+
+story:
+  - id: s01
+    text: "Cuma sabahı, saat sekiz. Bora yatağında tavana bakıyordu: prova yarın beşteydi ve grubun davulcusunun hâlâ bir davulu yoktu. Mutfaktaki tencereler ona göz kırpıyor gibiydi."
+  - id: s02
+    text: "Bora grubun santralini, Urla'daki Selin'i aradı: \"<en>Selin, you know everybody's number. I need a drum kit. Today!</en>\""
+  - id: s03
+    text: "Selin babaannesinin kahvaltı masasından cevap verdi: \"<en>Ahmet Amca, Duru's neighbour! He played in a {U2-026|folk music} band when he was young. Duru gave me his number for emergencies. You know, Duru never picks up.</en>\""
+  - id: s04
+    text: "Bora: \"<en>Great! I'll call him now: 'Hey, Ahmet Amca, give me your drums!'</en>\" Selin: \"<en>Stop! Not like that. Be {U4-052|polite}. Start with: 'Good morning. Sorry to {U4-053|disturb} you, but…'</en>\""
+  - id: s05
+    text: "Selin bir öğretmen gibi devam etti: \"<en>Then say your name and why you're calling. And don't forget 'please' and 'thank you'. {U4-052|Polite} words open doors… and garages.</en>\""
+  - id: s06
+    text: "Bora aynanın karşısında üç kez prova yaptı. Ne olur ne olmaz diye kırmızı papyonunu bile taktı. Telefonda kimse görmeyecekti, ama olsun."
+  - id: s07
+    text: "Bora: \"<en>Good morning, Ahmet Amca. This is Bora, Duru's friend. Sorry to {U4-053|disturb} you, but I'm {U4-024|calling about} a drum kit. Do you still have one, please?</en>\""
+  - id: s08
+    text: "Ahmet Amca kahkahayı bastı: \"<en>You aren't {U4-053|disturbing} me, son! You're the most {U4-052|polite} drummer in İzmir. Yes, my old drum kit is in the garage, under forty years of dust.</en>\""
+  - id: s09
+    text: "Ahmet Amca: \"<en>We played {U2-026|folk music} with it, but drums don't mind. Rock, pop, jazz… Come at eleven and take it. Look after it, OK?</en>\""
+  - id: s10
+    text: "Saat on biri bir geçe Bora garajdaydı. Duru, kanepesinden kalkmadan pencereden Bora'nın davulları tek tek taşımasını izledi. Az sonra sınıf grubuna bir fotoğraf düştü: \"<en>I said 'Leave it to me.' I {U1-054|kept my promise}! 🥁</en>\""
+  - id: s11
+    text: "Bursa'da ise menajer Ece dertliydi: \"<en>Last night I {U4-035|booked} the stage at Sevim's café for the concert next Saturday. I also made an {U4-033|appointment} with the sound technician, next Saturday at five. But there's no email! Nothing!</en>\""
+  - id: s12
+    text: "Ece: \"<en>My aunt's internet {U4-003|connection} broke in the middle. Now I can't {U4-003|connect} to anything! Maybe our {U4-035|reservation} isn't there!</en>\""
+  - id: s13
+    text: "Kaan bunu duyar duymaz, kimseye bir şey sormadan pastanenin genel merkezini aradı. Yine koşuyordu, yine nefes nefeseydi."
+  - id: s14
+    text: "Görevli sakin bir sesle açtı: \"<en>Good morning, head office. {U4-020|How can I help you}?</en>\" Kaan: \"<en>Hey! Is the stage {U4-035|booked} or not? Yes or no? Quick, I've got practice!</en>\""
+  - id: s15
+    text: "Görevli: \"<en>Er… there's a booking for next Saturday, but nobody {U4-037|confirmed} it. Do you want me to cancel it?</en>\" Kaan, bir yandan ayakkabısını giyerken: \"<en>Yes! I mean, no! I mean… I'm late! Bye!</en>\""
+  - id: s16
+    text: "İki dakika sonra sınıf grubunda Kaan'dan bir mesaj: \"<en>Good news: I called them. Bad news: I think I said 'Yes, cancel it.' 😬</en>\" Ece'nin çığlığı Bursa'dan Urla'ya kadar duyuldu."
+  - id: s17
+    text: "Selin babaannesinin bahçesinde vişne ağacının altına koştu; Urla'da telefonun en iyi çektiği yer orasıydı: \"<en>Don't panic. Good {U4-003|connection} here. I'll call them {U1-094|as soon as possible}. Which means now.</en>\""
+  - id: s18
+    text: "Selin: \"<en>Good morning. Sorry to {U4-053|disturb} you. I'm {U4-024|calling about} the stage for next Saturday evening.</en>\" Görevli güldü: \"<en>Ah, the band! Your last {U4-002|caller} was in a big hurry.</en>\""
+  - id: s19
+    text: "Hattın öbür ucundaki {U4-042|secretary}: \"<en>Bookings are on {U4-017|extension} 30. Hold on, please. I'll {U4-012|put you through}.</en>\""
+  - id: s20
+    text: "Selin: \"<en>Hello. Could you {U4-037|confirm} our {U4-035|reservation}, please? The stage next Saturday at seven, and the sound technician's {U4-033|appointment} at five.</en>\""
+  - id: s21
+    text: "Bu kez başka bir ses cevap verdi, biraz bekletti, sonra: \"<en>Yes, I can see it. Everything is {U4-037|confirmed} now. Don't worry, nobody cancelled anything. Your friend just talked very fast!</en>\""
+  - id: s22
+    text: "Selin gruba yazdı: \"<en>Stage: {U4-035|booked}. Sound technician's {U4-033|appointment}: next Saturday at five. Everything {U4-037|confirmed}. No email needed. 📋</en>\""
+  - id: s23
+    text: "Tam o an Ece'nin teyzesinin modemi yeşil yandı ve e-posta da düştü. Ece: \"<en>The internet {U4-003|connection} is back! And here's the email! Selin, you're my hero!</en>\""
+  - id: s24
+    text: "Kaan: \"<en>So… I helped, right? 😅</en>\" Selin: \"<en>You did, Kaan. You showed us how NOT to call.</en>\""
+  - id: s25
+    text: "Gece yarısına doğru, hiç beklenmedik birinden, Duru'dan bir mesaj geldi: \"<en>I ordered a speaker for the concert. Online. By myself. It comes on Monday.</en>\" Kaan: \"<en>Duru? Online? By herself? Is she OK?!</en>\""
+
+scene:
+  - id: c01
+    speaker: Selin
+    text: "<en>Be polite, Bora. Start with 'Sorry to disturb you, but…'</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>Good morning, Ahmet Amca. Sorry to disturb you, but can I borrow your old drum kit?</en>"
+  - id: c03
+    speaker: Ece
+    text: "<en>I booked the stage and made an appointment with the sound technician, but my internet connection broke.</en>"
+  - id: c04
+    speaker: Selin
+    text: "<en>Don't worry. I called the head office, and they confirmed everything.</en>"
+
+steps:
+  - item: U4-003
+    sezdir:
+      id: u4d06-003-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"connection\" ne anlama geliyordu?"
+      options: ["bağlantı", "şifre", "ekran", "fatura"]
+      answer: 0
+    kullan:
+      id: u4d06-003-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The video keeps stopping because the internet ________ is very slow today.</en>"
+      options: ["connection", "appointment", "reservation", "extension"]
+      answer: 0
+      explain: "İnternetin hızı ya da kopması connection (bağlantı) ile anlatılır: internet connection."
+    sina:
+      id: u4d06-003-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What should Ece say in this situation?</en>"
+      stem: "<en>Ece is on a video call with the band. Her picture freezes and her voice keeps breaking. Nobody can understand her.</en>"
+      options: ["Sorry, my connection is bad. I'll call you back.", "Sorry to disturb you, but can I speak to Duru?", "I'd like to book a table, please.", "Thanks for confirming my appointment."]
+      answer: 0
+      explain: "Görüntü donuyor, ses kesiliyor: sorun bağlantıda. Uygun tepki bunu söyleyip yeniden aramak."
+  - item: U4-033
+    sezdir:
+      id: u4d06-033-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"appointment\" ne anlama geliyordu?"
+      options: ["randevu", "fatura", "bilet", "adres"]
+      answer: 0
+    kullan:
+      id: u4d06-033-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Mum can't come to the rehearsal. She has a doctor's ________ at four.</en>"
+      options: ["appointment", "connection", "caller", "extension"]
+      answer: 0
+      explain: "Belli bir saatte biriyle (doktor, kuaför, teknisyen) görüşme sözü appointment'tır."
+    sina:
+      id: u4d06-033-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>Happy Paws Pet Salon\nMessage for: Elif\nPamuk's appointment is on Tuesday at 10.30, not on Monday. Please come ten minutes early. To change the time, call 0232 444 55 66.</en>"
+      options: ["Pamuk's appointment is on Tuesday morning.", "Pamuk's appointment is on Monday at 10.30.", "Elif should come at 10.40.", "Elif can't change the time."]
+      answer: 0
+      explain: "Randevu salı 10.30'da; on dakika erken gelinmeli (10.20) ve saat telefonla değiştirilebilir."
+  - item: U4-035
+    sezdir:
+      id: u4d06-035-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"Is the stage booked?\" ne anlama geliyordu?"
+      options: ["Sahne ayırtıldı mı?", "Sahne temizlendi mi?", "Sahne kitaplarla mı dolu?", "Sahne boyandı mı?"]
+      answer: 0
+    kullan:
+      id: u4d06-035-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The café is always full on Saturdays, so Dad called yesterday and ________ a table for six.</en>"
+      options: ["booked", "disturbed", "connected", "repeated"]
+      answer: 0
+      explain: "Bir masa, oda ya da bileti önceden kendine ayırtmak book a table / a room / a ticket ile anlatılır."
+    sina:
+      id: u4d06-035-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Sevim Hanım: Good evening, Sevim's Café. How can I help you?\nKaan: ________\nSevim Hanım: Of course. A table for four at eight. What's your name, please?</en>"
+      options: ["Hi, I'd like to book a table for four at eight, please.", "Hi, what time do you close tonight?", "Sorry, wrong number.", "Can you put me through to the manager?"]
+      answer: 0
+      explain: "Sevim Hanım dört kişilik masayı ve saati tekrar edip isim soruyor; demek ki Kaan masa ayırtmak istemiş."
+  - item: U4-037
+    sezdir:
+      id: u4d06-037-z
+      type: meaning
+      context: s21
+      prompt: "Hikâyede \"Everything is confirmed\" ne anlama geliyordu?"
+      options: ["Her şey onaylandı, kesinleşti.", "Her şey iptal edildi.", "Her şey ertelendi.", "Her şey unutuldu."]
+      answer: 0
+    kullan:
+      id: u4d06-037-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Is the rehearsal still on Saturday at five?\nB: Yes. Ece called everyone this morning and ________ the time.</en>"
+      options: ["confirmed", "disturbed", "dialled", "hung up"]
+      answer: 0
+      explain: "Önceden konuşulan bir saatin geçerli olduğunu kesinleştirmek confirm ile anlatılır."
+    sina:
+      id: u4d06-037-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>Why is Ayla calling?</en>"
+      stem: "<en>Voice message for Ece:\nHello, this is Ayla from Star Hair Salon. I'm calling to confirm your appointment for tomorrow at 2 p.m. If you can't come, please call us back. Thank you!</en>"
+      options: ["to confirm Ece's appointment", "to cancel Ece's appointment", "to invite Ece to a party", "to sell Ece a new phone"]
+      answer: 0
+      explain: "\"I'm calling to confirm your appointment\" arama amacını doğrudan veriyor; iptal ya da davet yok."
+  - item: U4-052
+    sezdir:
+      id: u4d06-052-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"Be polite\" ne anlama geliyordu?"
+      options: ["Kibar ol.", "Hızlı ol.", "Cesur ol.", "Sessiz ol."]
+      answer: 0
+    kullan:
+      id: u4d06-052-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>It isn't ________ to shout \"Hey! Give me my book!\" Say \"Could you give me my book, please?\"</en>"
+      options: ["polite", "stubborn", "jealous", "busy"]
+      answer: 0
+      explain: "please, thank you ve could you ile konuşan kişi polite'tır; bağırarak emir vermek polite değildir."
+    sina:
+      id: u4d06-052-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is a polite way to ask?</en>"
+      stem: "<en>Bora is calling a music shop. He wants to talk to the manager.</en>"
+      options: ["Good morning. Could I speak to the manager, please?", "Hey! Give me the manager. Quick!", "The manager. Now.", "Where's the manager? Answer me!"]
+      answer: 0
+      explain: "Selamlama, could I ve please kibar ricanın işaretleri; diğerleri emir ve bağırma."
+  - item: U4-053
+    sezdir:
+      id: u4d06-053-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"Sorry to disturb you\" ne anlama geliyordu?"
+      options: ["Rahatsız ettiğim için kusura bakmayın.", "Geç kaldığım için kusura bakmayın.", "Sizi beklettiğim için teşekkürler.", "Beni geri aradığınız için teşekkürler."]
+      answer: 0
+    kullan:
+      id: u4d06-053-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Please be quiet. Grandpa is sleeping. Don't ________ him.</en>"
+      options: ["disturb", "confirm", "book", "connect"]
+      answer: 0
+      explain: "Birinin uykusunu ya da işini bölmek disturb ile anlatılır."
+    sina:
+      id: u4d06-053-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: ________\nMr Demir: No problem. How can I help you?\nSelin: I'm calling about the stage for Saturday.</en>"
+      options: ["Good evening, Mr Demir. Sorry to disturb you so late.", "Thanks for calling, Mr Demir. Bye!", "Hold on, I'll get him.", "Sorry, wrong number."]
+      answer: 0
+      explain: "\"No problem\" bir özre verilen cevaptır; Selin geç saatte aradığı için özür dilemiş, sonra da arama nedenini söylüyor."
+
+review:
+  - id: u4d06-r01
+    type: dialogue_complete
+    item: U4-029
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Kaan: My match finishes at four.\nBora: ________\nKaan: Perfect. See you at the café!</en>"
+    options: ["OK. We'll meet at the café at half past four, then.", "We met at the café last week.", "Sorry, wrong number.", "Can I take a message?"]
+    answer: 0
+    explain: "Kaan \"See you at the café!\" diyor; demek ki Bora yer ve saat söyleyerek bir karar vermiş."
+  - id: u4d06-r02
+    type: gap_fill
+    item: U4-027
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Elif and her cousin want to ________ in the summer and eat ice cream by the sea.</en>"
+    options: ["meet up", "hang up", "pick up", "hold on"]
+    answer: 0
+  - id: u4d06-r03
+    type: gap_fill
+    item: U4-049
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>We changed the time four times! In the end, we made a ________: Saturday at five.</en>"
+    options: ["decision", "memo", "caller", "extension"]
+    answer: 0
+  - id: u4d06-r04
+    type: synonym
+    item: U4-021
+    prompt: "<en>Which sentence is closest in meaning?</en>"
+    stem: "<en>\"I guess I can come at five.\"</en>"
+    options: ["I think I can come at five.", "I'm sure I can't come at five.", "I never come at five.", "I came at five yesterday."]
+    answer: 0
+  - id: u4d06-r05
+    type: situation
+    item: U4-028
+    prompt: "<en>Your friend called you to say \"Happy birthday!\" Now you are ending the call. What do you say?</en>"
+    options: ["Thanks for calling! Talk to you soon.", "Who's calling, please?", "Sorry, wrong number.", "Hold on, I'll get him."]
+    answer: 0
+  - id: u4d06-r06
+    type: situation
+    item: U4-008
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>What can you say in this situation?</en>"
+    stem: "<en>Your best friend is moving to another city next week. You want to stay friends and talk often.</en>"
+    options: ["Let's keep in touch!", "Hang on a minute.", "Sorry, wrong number.", "Can you repeat that?"]
+    answer: 0
+    explain: "Uzağa taşınan biriyle haberleşmeyi sürdürme isteği \"Let's keep in touch!\" ile söylenir."
+
+tips:
+  - type: tuzak
+    refs: [U4-035]
+    text: "book isim olarak \"kitap\"tır; ama ardından a table / a room / a ticket / the stage gelirse fiildir: ayırtmak. \"The stage is booked\" = sahne ayrılmış. Eş anlamlısı reserve, ismi reservation."
+  - type: lgs_taktigi
+    refs: [U4-053, U4-037]
+    text: "Telefon diyaloğunda \"Sorry to disturb you, but…\" diyen kişi arayandır ve bir ricası vardır. \"I'm calling to confirm…\" cümlesi ise \"Why is X calling?\" sorusunun cevabını doğrudan verir."
+  - type: kelime_ailesi
+    refs: [U4-003, U4-052]
+    text: "connect (fiil) → connection (isim): internet connection, bad connection. polite'ın zıttı impolite ya da rude'dur; polite kişi please, thank you, could you kullanır."
+  - type: mini_dilbilgisi
+    refs: [U4-033]
+    text: "appointment ünlüyle başladığı için an alır: make an appointment, have an appointment with the dentist. Saatle birlikte at kullanılır: an appointment at five."
+
+coach:
+  start: "Bora'nın davulu yok, Ece'nin e-postası yok, Kaan'ın sabrı hiç yok. Bugün günü kim kurtaracak? 🥁"
+  end_good: "Süper! Selin gibi sakin, Ahmet Amca'nın davulu gibi sağlam. Yarınki provada ritim senden 🥁"
+  end_mixed: "İyi iş! {weak} biraz cızırdadı ama hat hâlâ açık. Yarın bir tur daha, Selin usulü: sakin ve tane tane 📞"
+
+notifications:
+  morning: "Prova yarın, Bora'nın davulu yok. Bir telefon her şeyi değiştirebilir 🥁"
+  evening: "Kaan aceleyle aradı, sahne az kalsın gidiyordu. Selin ne yaptı dersin? 📞"
+  review: "book bugün kitap değildi. Peki ne demekti? Hatırlıyor musun? 🤔"
+
+editor:
+  z07: {U4-003: BEKLIYOR, U4-033: BEKLIYOR, U4-035: BEKLIYOR, U4-037: BEKLIYOR, U4-052: BEKLIYOR, U4-053: BEKLIYOR}

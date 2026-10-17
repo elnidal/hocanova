@@ -1,0 +1,2034 @@
+schema_version: 1
+unit: 3
+title: In the Kitchen
+status: taslak
+summary_tr: 'Ünite, bir yemeğin nasıl yapıldığını adım adım anlatmayı ve anlamayı öğretir. Sınav omurgası üç parçadır: (1) tarif fiilleri ve pişirme yöntemleri (peel, chop, slice, mix, pour, boil, fry,
+  bake…), (2) süreç dili: emir kipi ve sıralama sözcükleri (First… Then… After that… Finally…), (3) tat sıfatları ve basit soru kalıpları (How much / How many / How long, Do you prefer … or …?). LGS bu
+  üniteden genellikle bir tarif metni, karışık verilmiş adımlar, bir tercih tablosu ya da mutfakta geçen kısa bir diyalog verir; öğrenciden doğru sırayı, eksik adımı, metinde cevabı olmayan soruyu ya da
+  uygun cevabı bulmasını ister. Yiyecek adları sınavda neredeyse hiç sorulmaz; asıl puan fiillerde, sıralamada ve soru kalıplarındadır.'
+curriculum:
+  outcomes:
+  - code: E8.3.L1
+    text_tr: 'Dinleme: Bir sürecin kısa, açık ve basit anlatımlarının ana fikrini anlar.'
+  - code: E8.3.SI1
+    text_tr: 'Karşılıklı konuşma: Bir şeyin nasıl yapıldığıyla ilgili konuda soru sorar, cevap verir, fikir ve bilgi alışverişinde bulunur.'
+  - code: E8.3.SP1
+    text_tr: 'Sözlü anlatım: Bir süreci basitçe anlatır.'
+  - code: E8.3.R1
+    text_tr: 'Okuma: Bir süreçle ilgili kısa metinlerin genel anlamını anlar.'
+  - code: E8.3.R2
+    text_tr: 'Okuma: Metindeki bilinmeyen sözcüklerin anlamını bağlamdan tahmin eder.'
+  - code: E8.3.W1
+    text_tr: 'Yazma: Bağlaçlar (first, then, finally…) kullanarak bir süreci anlatan basit ifade ve cümleler yazar.'
+  functions:
+  - id: F1
+    name_tr: Basit süreçleri anlatma (Describing simple processes)
+    exponents:
+    - It's easy to make an omelette.
+    - Let me tell you how to make an omelette.
+    - First, put some oil into a pan and heat it.
+    - Second, mix two eggs in a bowl. Then add some salt.
+    - After that, add some cheese and milk.
+    - Finally, pour the mixture into the hot pan.
+    - Bake it for 30 minutes until it is golden.
+    responses:
+    - That sounds easy!
+    - What do I do after that?
+    - Sorry, can you repeat the second step?
+    items:
+    - U3-045
+    - U3-052
+    - U3-050
+    - U3-048
+    - U3-018
+    - U3-020
+    - U3-006
+    - U3-041
+    - U3-038
+    - U3-001
+    - U3-002
+    - U3-004
+    - U3-019
+    - U3-022
+    - U3-010
+    lgs_weight: yüksek
+    note_tr: Ünitenin ana işlevi. Programın örnek dili (useful language) omlet tarifi üzerinden kurulmuş. Sınavda karışık adımları sıralama, eksik adımı bulma ve tarif metninden bilgi çıkarma biçiminde
+      gelir.
+  - id: F2
+    name_tr: Tercih belirtme (Expressing preferences)
+    exponents:
+    - Do you prefer cooking pizza or pasta?
+    - I love cooking and eating pizza.
+    - I usually prefer cooking pasta.
+    - I prefer baked potatoes to fried ones.
+    - I'm in the mood for something sweet.
+    responses:
+    - I prefer pasta. It's quicker.
+    - Pizza, of course! I'm crazy about it.
+    - I don't mind. Both are delicious.
+    items:
+    - U3-053
+    - U3-058
+    - U3-028
+    - U3-030
+    - U3-034
+    - U3-035
+    - U3-001
+    - U3-004
+    lgs_weight: orta
+    note_tr: prefer (U1-018), like/love/enjoy + -ing ve be crazy about (Ü2) burada yemek bağlamında tekrar eder. Tercih tablosu (kim hangi pişirme yöntemini seviyor) sorularının dilidir. "Do you prefer
+      A or B?" sorusuna "Yes, I do" cevabı yanlıştır.
+  - id: F3
+    name_tr: Basit soru sorma, bilgi isteme (Making simple inquiries)
+    exponents:
+    - Do I use two or three eggs?
+    - What can I use to cook soup?
+    - What should I use to cook soup?
+    - How much sugar do I need?
+    - How many eggs do we need?
+    - How long does it take?
+    - How long should I bake it?
+    - Can I use butter instead of oil?
+    responses:
+    - Two eggs are enough.
+    - You can use a saucepan.
+    - About two tablespoons.
+    - It takes about twenty minutes.
+    - Bake it for half an hour.
+    items:
+    - U3-047
+    - U3-042
+    - U3-039
+    - U3-041
+    - U3-040
+    - U3-048
+    - U3-006
+    lgs_weight: yüksek
+    note_tr: 'Diyalog tamamlama sorularının çekirdeği. Cevaptaki bilgi türü (sayı / miktar / süre / araç) hangi soru kelimesinin gerektiğini söyler: "Three." → How many; "Two cups." → How much; "Twenty
+      minutes." → How long; "A frying pan." → What … use.'
+  - id: F4
+    name_tr: Yemeği ve tadı değerlendirme (tamamlayıcı işlev)
+    exponents:
+    - This soup is too salty.
+    - It tastes a bit sour.
+    - Mmm, it's delicious! Can I have the recipe?
+    - This dessert is worth trying.
+    - I don't like fried food. It's too greasy.
+    responses:
+    - Thanks! It's my grandmother's recipe.
+    - Really? I'll add some water then.
+    - Have some more!
+    items:
+    - U3-027
+    - U3-028
+    - U3-029
+    - U3-030
+    - U3-031
+    - U3-032
+    - U3-033
+    - U3-034
+    - U3-035
+    - U3-036
+    - U3-059
+    - U3-057
+    lgs_weight: orta
+    note_tr: Programda ayrı bir işlev olarak geçmiyor; ünitenin kelime listesindeki tat sıfatlarından türetilmiş tamamlayıcı başlıktır. Sınavda durum-tepki ve eş anlam sorularında tat sıfatları sık çeldirici
+      olarak kullanılır.
+sources:
+- code: I
+  name: Gönderilen 3 görsel liste (Ways of cooking, Kitchen tools, Ingredients, Preparing process, Taste, Extra words)
+  rows: 137
+- code: A
+  name: ingilizcele.com · Unit 3 In the Kitchen Vocabulary (PDF)
+  rows: 105
+- code: C
+  name: Okul listesi 2019-2020 · 8. sınıf İngilizce 3. ünite kelime listesi (camburnufomboo.meb.k12.tr, PDF)
+  rows: 210
+- code: H
+  name: LGS_Unite3_InTheKitchen_Havuz_v1.xlsx (ÖZET, HEDEF, HAVUZ) · birleşik ve tekilleştirilmiş havuz
+  rows: 240
+- code: M1
+  name: Merkez Yeşilova Ortaokulu, İngilizce 8. sınıf ünitelendirilmiş yıllık plan 2017-2018 (meb.k12.tr PDF) · işlevler, örnek dil, E8.3 kazanımları
+- code: M2
+  name: Sakarya ÖDM, 2024/2025 1. dönem ortak yazılı sınav konu soru dağılım tablosu (sakaryaodm.meb.gov.tr PDF) · E8.3.R1, R2, W1
+- code: M3
+  name: TED Ankara Koleji, 2015-2016 8. sınıf İngilizce kazanım dağılım çizelgesi · eski program (Unit 3 Cooking), yalnız karşılaştırma için
+tasnif:
+  teaching_units: 63
+  items_file: lgs-pilot/content/unit_03_items.yaml
+  counts:
+    havuz_tekil_satir: 240
+    havuz_BILINEN: 94
+    havuz_TANIMA: 73
+    havuz_CEKIRDEK: 49
+    havuz_TUZAK: 10
+    havuz_KALIP_ISLEV: 8
+    havuz_ONCEKI_UNITE: 6
+    birim_core: 42
+    birim_trap: 10
+    birim_pattern: 8
+    oncelik_1: 58
+    oncelik_2: 2
+    ham_I: 137
+    ham_A: 105
+    ham_C: 210
+  rules_tr:
+  - Öğretim birimi = ÇEKİRDEK + KALIP/İŞLEV + TUZAK. Araç ile fiili ve aynı ailedeki biçimler tek birimde öğretilir (grate + grater, drain + strainer, freeze + freezer, mix + mixture).
+  - 'Eş anlamlı kümeler tek birimdir: delicious / tasty / yummy, greasy / oily / fatty, mix / stir / blend.'
+  - 'Öncelik 1: en az iki bağımsız kaynakta geçen ya da kalıp olan birim. Öncelik 2: tek kaynak (melt, main course).'
+  - 'Yiyecek adları (mushroom, lentil, cinnamon…) BİLİNEN ya da TANIMA sayılır: hikâyede geçer, kotaya girmez; LGS bunları değil tarif fiillerini ve sıralamayı sorar.'
+  - Önceki ünitede öğretilen birimler (prefer, share, crazy about, fond of, can't stand, half) yeniden sayılmaz; hikâyede tekrar olarak geçer.
+  - 'İlk sınıflandırma 75 birim veriyordu; 7 araç/aile birleştirildi, 9 birim TANIMA ya da BİLİNEN''e indirildi, cuisine eklendi: 60 birim.'
+  - 'Kaynaklardaki yanlış Türkçe karşılıklar hedef anlamda düzeltildi (bkz. traps, kind: kaynak_hatasi).'
+  excluded_examples:
+    BILINEN:
+    - kitchen
+    - cook
+    - cut
+    - add
+    - put
+    - prepare
+    - egg
+    - oil
+    - salt
+    - sugar
+    - butter
+    - cheese
+    - milk
+    - rice
+    - pasta
+    - bread
+    - onion
+    - garlic
+    - potato
+    - carrot
+    - tomato sauce
+    - meat
+    - chicken
+    - fish
+    - fruit
+    - vegetable
+    - knife
+    - fork
+    - spoon
+    - plate
+    - glass
+    - bottle
+    - refrigerator
+    - microwave
+    - meal
+    - healthy
+    - unhealthy
+    - traditional
+    - minute
+    - chef
+    - guest
+    - piece
+    TANIMA:
+    - raw
+    - stove
+    - baking tray
+    - mixing bowl
+    - mixer
+    - cake pan
+    - remove
+    - press
+    - roll
+    - wrap
+    - rinse
+    - shake
+    - toss
+    - crush
+    - marinate
+    - dissolve
+    - constantly
+    - firmly
+    - lengthwise
+    - upside down
+    - low heat
+    - black pepper
+    - bell pepper
+    - chili pepper
+    - cinnamon
+    - cumin
+    - ginger
+    - parsley
+    - mint
+    - lentil
+    - meatball
+    - mince
+    - cornstarch
+    - powdered sugar
+    - herbs
+    - process
+    - tip
+    - following
+    - various
+    - eye-catching
+    - handmade
+    - tongue twister
+    ONCEKI_UNITE:
+    - prefer (U1-018)
+    - share (U1-043)
+    - be fond of (U2-009)
+    - can't stand (U2-013)
+    - be crazy about (U2-015)
+    - half (U2-089)
+  exam_record:
+    kaynak: Ders kitabı listeleri + çıkmış kelime tablosu (2013–2020 TEOG, 2018–2020 LGS); sayı = toplam/LGS
+    ogretim_birimlerinde:
+    - bake (3/0 LGS)
+    - boil (1/0 LGS)
+    - fry (3/0 LGS)
+    - grill (2/0 LGS)
+    - heat / preheat (5/2 LGS)
+    - chop / dice (2/1 LGS)
+    - mix / stir / blend (mixture) (11/3 LGS)
+    - peel (2/1 LGS)
+    - pour (3/1 LGS)
+    - slice (1/0 LGS)
+    - delicious / tasty / yummy (1/0 LGS)
+    - homemade (1/0 LGS)
+    - salty (1/1 LGS)
+    - sour (1/1 LGS)
+    - spicy (1/1 LGS)
+    - sweet (1/1 LGS)
+    - bowl (8/2 LGS)
+    - oven (2/0 LGS)
+    - pan / saucepan (7/2 LGS)
+    - baking powder (2/0 LGS)
+    - dough (1/0 LGS)
+    - flour (3/1 LGS)
+    - ingredients (4/0 LGS)
+    - pepper (2/2 LGS)
+    - recipe (6/3 LGS)
+    - serve (4/0 LGS)
+    - step / process (3/3 LGS)
+    - dessert (1/1 LGS)
+    - dish / meal (6/1 LGS)
+    - put … in(to) / add … to (11/5 LGS)
+    - prepare (preparation) (4/0 LGS)
+    - well-known / traditional (3/1 LGS)
+    bilinen_ama_sinavda_sik:
+    - onion (3/2 LGS)
+    - cut (2/1 LGS)
+    - graduate (2/0 LGS)
+    - knife (2/0 LGS)
+    - oil (2/1 LGS)
+    - beef (1/0 LGS)
+    - gain (1/0 LGS)
+    - meat (1/0 LGS)
+    - ready (1/1 LGS)
+    - soup (1/1 LGS)
+    - sugar (1/1 LGS)
+    not: bilinen_ama_sinavda_sik kelimeler öğretim birimi sayılmaz ama hikâyede ve soru köklerinde bilinçli olarak sık kullanılır.
+themes:
+- name: Pişirme yöntemleri
+  items:
+  - U3-001
+  - U3-002
+  - U3-003
+  - U3-004
+  - U3-005
+  - U3-006
+  - U3-007
+  - U3-008
+  - U3-009
+  note_tr: Görsel eşleştirme ve 'hangisi pişirme yöntemi değildir?' sorularının malzemesi. Türkçedeki 'kızartmak' dört İngilizce fiile dağılır (fry, roast, grill, toast).
+- name: Hazırlama fiilleri
+  items:
+  - U3-010
+  - U3-011
+  - U3-012
+  - U3-013
+  - U3-014
+  - U3-015
+  - U3-016
+  - U3-017
+  - U3-018
+  - U3-019
+  - U3-020
+  - U3-021
+  - U3-022
+  - U3-023
+  - U3-024
+  - U3-025
+  - U3-026
+  note_tr: 'Ünitenin en büyük ve sınavda en verimli grubu: tarif adımlarının fiilleri. Emir kipiyle cümle başında gelir.'
+- name: Tat ve lezzet
+  items:
+  - U3-027
+  - U3-028
+  - U3-029
+  - U3-030
+  - U3-031
+  - U3-032
+  - U3-033
+  - U3-034
+  - U3-035
+  - U3-036
+  note_tr: 'Çoğu -y ekiyle türer (salty, spicy, tasty, oily). ''Acı'' iki İngilizce karşılığa ayrılır: bitter / spicy (hot).'
+- name: Mutfak araçları ve ölçü
+  items:
+  - U3-037
+  - U3-038
+  - U3-039
+  - U3-040
+  - U3-041
+  - U3-042
+  note_tr: 'Ölçü sözcükleri sayılamayan isimlerle kullanılır: a cup of flour, a teaspoon of salt, a bunch of parsley.'
+- name: Tarif dili
+  items:
+  - U3-043
+  - U3-044
+  - U3-045
+  - U3-046
+  - U3-047
+  - U3-048
+  - U3-049
+  - U3-050
+  - U3-051
+  - U3-052
+  - U3-061
+  - U3-062
+  note_tr: 'Tarif metninin iskeleti: başlık (recipe), malzemeler (ingredients), adımlar (steps) ve sıralama sözcükleri; How much / many / long soruları.'
+- name: Yemek kültürü ve ifadeler
+  items:
+  - U3-053
+  - U3-054
+  - U3-055
+  - U3-056
+  - U3-057
+  - U3-058
+  - U3-059
+  - U3-060
+  - U3-063
+  note_tr: Diyalog ve durum-tepki soruları için hazır ifadeler; 'Turkish cuisine' okuma metinlerinde sık geçer.
+grammar:
+- id: G1
+  name_tr: Emir kipi (talimat verme)
+  form: 'Fiil (yalın) + nesne · Olumsuz: Don''t + fiil · Kibar: Please + fiil'
+  examples:
+  - Peel the potatoes and cut them into small pieces.
+  - Pour the milk into a bowl.
+  - Don't open the oven door for the first 20 minutes.
+  - Please pass me the salt.
+  explain_tr: Tarifte özne yazılmaz; cümle doğrudan fiille başlar. Türkçedeki "Patatesleri soyun" yapısının karşılığıdır. Olumsuz talimat "Don't + fiil" ile kurulur. Aynı anlamda "You peel the potatoes…"
+    da denebilir ama tariflerde emir kipi standarttır.
+  common_errors:
+  - wrong: Peeling the potatoes.
+    right: Peel the potatoes.
+    why_tr: Talimat -ing ile değil, fiilin yalın hâliyle verilir.
+  - wrong: Not add salt.
+    right: Don't add salt.
+    why_tr: Olumsuz emir "Don't" ile kurulur; "not" tek başına cümle başına gelmez.
+  - wrong: Don't to open the oven.
+    right: Don't open the oven.
+    why_tr: Don't'tan sonra "to" gelmez.
+  - wrong: Peels the potatoes.
+    right: Peel the potatoes.
+    why_tr: Emir kipinde fiile -s eklenmez; özne yok.
+  lgs_note: 'Sıralama ve eksik adım sorularındaki her seçenek bir emir cümlesidir. Cümlenin başındaki fiili tanımak (peel, boil, drain, serve) adımın tarifte nereye düştüğünü gösterir: hazırlık fiilleri
+    başta, serve / enjoy sonda.'
+  items:
+  - U3-010
+  - U3-012
+  - U3-013
+  - U3-014
+  - U3-018
+  - U3-019
+  - U3-020
+  - U3-022
+  - U3-024
+  - U3-051
+- id: G2
+  name_tr: Sıralama sözcükleri (sequencers) ve before / after / until
+  form: First(ly) / Second(ly) → Then / Next / After that → Finally / Lastly · before / after + V-ing · until + cümle
+  examples:
+  - First, wash your hands. Then, chop the onions.
+  - After that, fry them in a pan for five minutes.
+  - Finally, serve the soup hot.
+  - Wash the vegetables before cutting them.
+  - Bake the cake until it is golden brown.
+  explain_tr: 'Sıralama sözcükleri cümle başına gelir ve genelde virgülle ayrılır. First/Firstly ilk adımı, Finally/Lastly son adımı işaretler; Then, Next ve After that aradaki adımları bağlar ve birbirinin
+    yerine kullanılabilir. before/after''dan sonra fiil gelirse -ing alır. until "-e kadar" demektir: Stir until it boils = Kaynayana kadar karıştır.'
+  common_errors:
+  - wrong: At last, serve the soup.
+    right: Finally, serve the soup.
+    why_tr: '"At last" uzun bir beklemenin sonunda gelen "nihayet" demektir; tarifteki son adım "Finally" ya da "Lastly" ile verilir.'
+  - wrong: After boil the pasta, drain it.
+    right: After boiling the pasta, drain it.
+    why_tr: after/before'dan sonra fiil -ing alır (ya da tam cümle gelir - After you boil the pasta…).
+  - wrong: After, add the salt.
+    right: After that, add the salt.
+    why_tr: '"After" tek başına zarf olarak cümle başına gelmez (Türkçedeki "Sonra, …" etkisi); "After that" ya da "Then" denir.'
+  lgs_note: Sıralama sorularında önce "First" ve "Finally" içeren cümleyi bul, sonra mantık zincirini kur (soy → doğra → pişir → süz → servis et). "Then / Next / After that" tek başına sıra belirlemez;
+    içerik mantığına bak (süzmeden önce kaynatmak gerekir).
+  items:
+  - U3-045
+  - U3-052
+  - U3-050
+- id: G3
+  name_tr: Süreç anlatımı kalıpları
+  form: It's easy to make + yemek · Let me tell you how to make + yemek · You need + malzeme · It takes + süre
+  examples:
+  - It's easy to make a fruit salad.
+  - Let me tell you how to make menemen.
+  - You need three eggs, two tomatoes and a green pepper.
+  - It takes about 15 minutes.
+  - How do you make lemonade?
+  explain_tr: Bir tarifi anlatırken önce yemeğin adı ve zorluğu (It's easy to make…), sonra malzemeler (You need… / Ingredients:), ardından adımlar ve süre verilir. "It takes + süre" yapısı Türkçedeki "…
+    sürer" demektir; özne "it"tir, kişi değil.
+  common_errors:
+  - wrong: It is easy making a fruit salad.
+    right: It's easy to make a fruit salad.
+    why_tr: '"It''s easy" kalıbından sonra to + fiil gelir.'
+  - wrong: I take 15 minutes to cook it. (kastedilen - pişirmesi 15 dakika sürer)
+    right: It takes 15 minutes to cook it.
+    why_tr: '"Sürmek" anlamında özne "it" olur.'
+  - wrong: Tell me how can I make it.
+    right: Tell me how I can make it.
+    why_tr: Cümle içindeki soruda düz cümle sırası kullanılır.
+  lgs_note: 'Tarif metni ve ilan sorularında başlık + malzeme listesi + adımlar düzenini tanımak, "Which question is NOT answered?" türü sorularda hız kazandırır: metinde süre, kişi sayısı ya da sıcaklık
+    var mı diye tek tek kontrol edilir.'
+  items:
+  - U3-050
+  - U3-048
+  - U3-052
+  - U3-047
+- id: G4
+  name_tr: How much / How many / How long
+  form: How many + sayılabilen çoğul isim? · How much + sayılamayan isim? · How long + does it take / should I + fiil?
+  examples:
+  - How many eggs do we need? Three.
+  - How much flour do I need? Two cups.
+  - How long does it take? About forty minutes.
+  - How long should I boil the eggs? For ten minutes.
+  - How much is this cake? It's 50 lira.
+  explain_tr: 'Türkçedeki "ne kadar" üç ayrı İngilizce soruya ayrılır: sayı için How many (kaç tane), miktar ya da fiyat için How much, süre için How long. How many''den sonra isim çoğul olur (eggs, tomatoes);
+    How much''tan sonra isim tekil kalır (flour, milk, sugar).'
+  common_errors:
+  - wrong: How much eggs do we need?
+    right: How many eggs do we need?
+    why_tr: egg sayılabilir; sayılabilen isimler How many ile sorulur.
+  - wrong: How many sugar do I add?
+    right: How much sugar do I add?
+    why_tr: sugar sayılamaz.
+  - wrong: How much does it take? (süre sormak için)
+    right: How long does it take? → Twenty minutes.
+    why_tr: Süre How long ile sorulur; How much tek başına miktar ya da fiyat sorar ("How much time …?" doğrudur ama sınav kalıbı How long).
+  - wrong: How many egg do we need?
+    right: How many eggs do we need?
+    why_tr: How many'den sonra isim çoğul olur.
+  lgs_note: 'Diyalog tamamlamada boşluktan sonraki cevaba bak: sayı + çoğul isim → How many; ölçü + sayılamayan isim (two cups of flour) → How much; süre (for 20 minutes) → How long. Bu üç soru kalıbı birbirinin
+    en güçlü çeldiricisidir.'
+  items:
+  - U3-047
+  - U3-042
+  - U3-039
+- id: G5
+  name_tr: Sayılabilen / sayılamayan isimler ve ölçü sözcükleri
+  form: a/an + tekil sayılabilen · some/any + sayılamayan veya çoğul · ölçü + of + sayılamayan (a cup of flour, a slice of bread)
+  examples:
+  - Add an egg and some milk.
+  - We need two cups of flour and a teaspoon of baking powder.
+  - Is there any sugar in the cupboard?
+  - Buy a bunch of parsley and a loaf of bread, please.
+  - Put a slice of cheese on each piece of toast.
+  explain_tr: 'Un, şeker, süt, tuz, su, tereyağı, ekmek, pirinç gibi sayılamayan isimler çoğul olmaz ve "a" almaz; sayıları ölçü sözcüğüyle verilir: a cup of, a glass of, a bowl of, a teaspoon/tablespoon
+    of, a slice of, a piece of, a bunch of, a bottle of, a kilo of. Yumurta, domates, soğan gibi sayılabilen isimler doğrudan sayıyla kullanılır. some olumlu cümlede, any soru ve olumsuzda tercih edilir.'
+  common_errors:
+  - wrong: Add two flours.
+    right: Add two cups of flour.
+    why_tr: flour sayılamaz; ölçü sözcüğü gerekir.
+  - wrong: a bread / breads
+    right: a loaf of bread / a slice of bread / some bread
+    why_tr: bread İngilizcede sayılamaz (Türkçede "iki ekmek" denir; Türkçe etkisi).
+  - wrong: a bunch of parsleys
+    right: a bunch of parsley
+    why_tr: Sayılamayan isim ölçü sözcüğünden sonra da tekil kalır.
+  - wrong: some informations / some advices
+    right: some information / some advice
+    why_tr: Türkçede sayılabilen bazı kavramlar İngilizcede sayılamaz; mutfak dışında da aynı kural.
+  lgs_note: Malzeme listesi ve alışveriş notu sorularında "a cup of", "a teaspoon of" gibi ölçüler okunur; "How much" ile eşleşir. Boşluk doldurmada "a bunch of / a slice of / a cup of" seçenekleri isimle
+    uyumuna göre elenir (a slice of bread, a bunch of grapes).
+  items:
+  - U3-037
+  - U3-039
+  - U3-042
+  - U3-038
+  - U3-022
+  - U3-046
+  - U3-043
+- id: G6
+  name_tr: Tercih belirtme (prefer, like/love + -ing)
+  form: Do you prefer A or B? · I prefer A (to B) · I prefer + V-ing · like / love / enjoy + V-ing · be in the mood for + isim/V-ing
+  examples:
+  - Do you prefer cooking pizza or pasta?
+  - I usually prefer cooking pasta.
+  - I prefer grilled fish to fried fish.
+  - I love baking cakes at the weekend.
+  - I'm in the mood for some ice cream.
+  explain_tr: '"A mı B mi?" sorusuna seçimle cevap verilir, Yes/No ile değil. Karşılaştırmalı tercihte prefer A to B kullanılır ("B''ye göre A''yı tercih ederim"). prefer, like, love, enjoy fiillerinden
+    sonra eylem gelirse genellikle -ing kullanılır (Ü2 tekrarı).'
+  common_errors:
+  - wrong: Do you prefer pizza or pasta? — Yes, I do.
+    right: Do you prefer pizza or pasta? — Pasta, please. / I prefer pasta.
+    why_tr: Seçenekli soru Yes/No ile cevaplanmaz.
+  - wrong: I prefer grilled fish than fried fish.
+    right: I prefer grilled fish to fried fish.
+    why_tr: prefer ile "than" değil "to" kullanılır.
+  - wrong: I'm in the mood of pizza.
+    right: I'm in the mood for pizza.
+    why_tr: Kalıp "in the mood for"dur.
+  lgs_note: Tablo sorularında tik/çarpı işaretinden "who prefers what" çıkarılır. Diyalogda "Do you prefer A or B?" sorusunun cevabı seçeneklerden biri olmalı; "Yes, I do" çeldiricisi sık kullanılır.
+  items:
+  - U3-053
+  - U3-058
+  - U3-001
+  - U3-004
+  - U3-005
+- id: G7
+  name_tr: Basit danışma soruları (should / can / Do I …?)
+  form: What should/can I use to + fiil? · Should I + fiil? · Can I use A instead of B? · Do I use A or B?
+  examples:
+  - What should I use to cook soup? — Use a saucepan.
+  - Should I add more salt? — No, it's salty enough.
+  - Can I use olive oil instead of butter? — Yes, you can.
+  - Do I use two or three eggs? — Three, if they're small.
+  explain_tr: 'Tarif yaparken bilgi istemenin en basit yolları: should (yapmalı mıyım?), can (-ebilir miyim?) ve seçenekli "Do I use…?" soruları. instead of "yerine" demektir ve ardından isim gelir.'
+  common_errors:
+  - wrong: What should I use for cook soup?
+    right: What should I use to cook soup?
+    why_tr: Amaç "to + fiil" ile verilir; for'dan sonra fiil yalın gelmez.
+  - wrong: Can I use olive oil instead butter?
+    right: Can I use olive oil instead of butter?
+    why_tr: Kalıp instead of'tur.
+  - wrong: Should I to add sugar?
+    right: Should I add sugar?
+    why_tr: should'dan sonra to gelmez.
+  lgs_note: Durum-tepki ve diyalog tamamlamada 'hangi soruyu sorar?' biçiminde gelir; cevaptaki araç/malzeme bilgisi soruyu belirler.
+  items:
+  - U3-041
+  - U3-040
+  - U3-038
+  - U3-047
+- id: G8
+  name_tr: Geçmiş zaman ortacı sıfat olarak (boiled eggs, grated cheese) · tanıma düzeyi
+  form: V3 (-ed / düzensiz) + isim · boiled, fried, grilled, roasted, mashed, grated, sliced, chopped, frozen, preheated
+  examples:
+  - I'd like two boiled eggs and some grated cheese.
+  - Put the cake into a preheated oven.
+  - Mashed potatoes are my favourite side dish.
+  - We use frozen peas in this recipe.
+  explain_tr: 'Tarif fiillerinin üçüncü hâli isimden önce sıfat gibi kullanılır ve "…ılmış/…ilmiş" anlamı verir: boiled egg = haşlanmış yumurta, fried potatoes = kızarmış patates, frozen = donmuş (freeze
+    düzensizdir). Menülerde ve malzeme listelerinde çok sık görülür.'
+  common_errors:
+  - wrong: freezed vegetables
+    right: frozen vegetables
+    why_tr: freeze düzensiz fiildir (freeze – froze – frozen).
+  - wrong: a boil egg
+    right: a boiled egg
+    why_tr: Sıfat görevinde -ed'li biçim kullanılır.
+  lgs_note: Okuma metinlerinde ve menü/tablo sorularında tanımak yeterli; LGS bunu dilbilgisi sorusu olarak sormaz.
+  items:
+  - U3-002
+  - U3-004
+  - U3-005
+  - U3-007
+  - U3-017
+  - U3-015
+  - U3-003
+  - U3-006
+  - U3-022
+  - U3-010
+- id: G9
+  name_tr: Geniş zaman edilgen (Simple Present Passive) · tanıma düzeyi
+  form: isim + am/is/are + V3 (+ by / with / in …)
+  examples:
+  - Pasta is boiled in salty water.
+  - Baklava is made with thin layers of dough, nuts and syrup.
+  - Turkish coffee is served with a glass of water.
+  - These cookies are baked at 180°C.
+  explain_tr: 'Önemli olan işi yapan kişi değil, işin kendisi olduğunda kullanılır: "Makarna tuzlu suda haşlanır." Kültür metinlerinde (bir ülkenin yemeği nasıl yapılır, nasıl sunulur) sık geçer. 8. sınıf
+    düzeyinde üretmek beklenmez; okuduğunu anlamak yeterlidir.'
+  common_errors:
+  - wrong: Pasta boils in salty water by the cook.
+    right: Pasta is boiled in salty water.
+    why_tr: Edilgen yapı be + V3 ile kurulur.
+  - wrong: Turkish coffee is serve with water.
+    right: Turkish coffee is served with water.
+    why_tr: be'den sonra fiilin üçüncü hâli gelir.
+  lgs_note: Programın örnek dilinde yer almaz; ancak yemek kültürü okuma metinlerinde (is made, is served, is cooked) görülebilir. Soru, yapının adını değil metnin anlamını sorar.
+  items:
+  - U3-051
+  - U3-054
+  - U3-002
+  - U3-001
+expressions:
+- en: Enjoy your meal!
+  tr: Afiyet olsun!
+  use: Yemek sunulurken ya da yemeğe başlanırken; garson, ev sahibi ya da masadaki biri söyler.
+  reply:
+  - Thank you!
+  - Thanks, you too!
+  item: U3-057
+  register: nötr
+- en: Bon appétit!
+  tr: Afiyet olsun! (Fransızcadan)
+  use: Yemeğe başlarken; biraz daha şık ya da şakacı bir ton.
+  reply:
+  - Thank you!
+  - Bon appétit!
+  item: U3-057
+  register: nötr
+- en: Help yourself.
+  tr: Buyurun, kendiniz alın.
+  use: Ev sahibi misafire masadaki yemekten istediği kadar almasını söylerken.
+  reply:
+  - Thanks, it looks delicious!
+  register: gündelik
+- en: Would you like some more?
+  tr: Biraz daha ister misin?
+  use: Ev sahibi tabağı biten misafire sorar.
+  reply:
+  - Yes, please. It's delicious!
+  - No, thanks. I'm full.
+  register: nötr
+- en: Can I have the recipe?
+  tr: Tarifini alabilir miyim?
+  use: Beğenilen bir yemekten sonra yapan kişiye iltifat olarak.
+  reply:
+  - Of course! It's really easy.
+  - Sorry, it's a family secret!
+  item: U3-050
+  register: gündelik
+- en: It's easy to make. Let me tell you how.
+  tr: Yapması kolay. Nasıl yapıldığını anlatayım.
+  use: Tarif anlatmaya başlarken.
+  reply:
+  - Great, I'm listening.
+  - Wait, let me get a pen!
+  item: U3-045
+  register: nötr
+- en: What are the ingredients?
+  tr: Malzemeler neler?
+  use: Bir tarif öğrenirken ilk soru.
+  reply:
+  - You need flour, eggs, milk and sugar.
+  item: U3-048
+  register: nötr
+- en: How long does it take?
+  tr: Ne kadar sürer?
+  use: Hazırlık ya da pişirme süresini sorarken.
+  reply:
+  - About half an hour.
+  - It takes twenty minutes in the oven.
+  item: U3-047
+  register: nötr
+- en: I'm in the mood for pizza.
+  tr: Canım pizza istiyor.
+  use: Ne yemek istediğini söylerken; arkadaşlar ve aile arasında.
+  reply:
+  - Me too! Let's order one.
+  - Again? We had pizza yesterday!
+  item: U3-053
+  register: gündelik
+- en: I have a sweet tooth.
+  tr: Tatlıya düşkünümdür.
+  use: Tatlıyı çok sevdiğini söylerken (deyim; kelimesi kelimesine "tatlı diş" değildir).
+  reply:
+  - Me too! Let's get some baklava.
+  - No wonder you love chocolate!
+  item: U3-058
+  register: gündelik
+- en: It's worth trying.
+  tr: Denemeye değer.
+  use: Bir yemeği, restoranı ya da tarifi tavsiye ederken.
+  reply:
+  - OK, I'll try it.
+  - Really? It looks strange!
+  item: U3-059
+  register: nötr
+- en: Mmm, yummy!
+  tr: Mmm, nefis!
+  use: Bir şeyi tadınca; çocuksu ve samimi.
+  reply:
+  - I told you!
+  - Have some more!
+  item: U3-028
+  register: gündelik
+- en: It's too salty / sweet / spicy for me.
+  tr: Benim için fazla tuzlu / tatlı / acı.
+  use: Tadı fazla bulduğunu kibarca söylerken; too olumsuz anlam taşır.
+  reply:
+  - Oh, sorry! Have some water.
+  - Next time I'll add less salt.
+  item: U3-032
+  register: nötr
+- en: Serve hot. / Serve cold.
+  tr: Sıcak servis edin. / Soğuk servis edin.
+  use: Tarifin son satırında ya da paket üzerinde.
+  item: U3-051
+  register: resmi
+- en: It's a piece of cake.
+  tr: Çocuk oyuncağı, çok kolay.
+  use: Bir işin çok kolay olduğunu söylerken (deyim; mutfakla ilgisi yok).
+  reply:
+  - Easy for you to say!
+  register: gündelik
+- en: It's not my cup of tea.
+  tr: Bana göre değil, pek sevmem.
+  use: Bir şeyden hoşlanmadığını kibarca söylerken (deyim).
+  reply:
+  - Really? I love it!
+  item: U3-039
+  register: gündelik
+- en: Too many cooks spoil the broth.
+  tr: 'Bir işe çok kişi karışırsa iş bozulur. (Türkçe yakın karşılık: Horozu çok olan köyde sabah geç olur.)'
+  use: Herkes aynı işe karışınca, şakayla.
+  register: gündelik
+collocations:
+- item: U3-001
+  pairs:
+  - bake a cake
+  - bake bread
+  - bake cookies
+  - bake for 30 minutes
+  - baked potatoes
+- item: U3-002
+  pairs:
+  - boil water
+  - boil eggs
+  - boil the pasta
+  - a boiled egg
+  - bring to the boil
+- item: U3-003
+  pairs:
+  - freeze the leftovers
+  - frozen peas
+  - keep in the freezer
+  - freezing cold
+- item: U3-004
+  pairs:
+  - fry an egg
+  - fry the onions
+  - fried chicken
+  - fried potatoes
+  - deep-fry
+- item: U3-005
+  pairs:
+  - grill fish
+  - grill meat
+  - grilled vegetables
+  - grilled cheese sandwich
+- item: U3-006
+  pairs:
+  - heat the oil
+  - heat the milk
+  - preheat the oven to 180°C
+  - a preheated oven
+  - on low heat
+- item: U3-007
+  pairs:
+  - roast chicken
+  - roast potatoes
+  - roasted vegetables
+  - roasted chestnuts
+- item: U3-008
+  pairs:
+  - steam vegetables
+  - steamed rice
+  - steamed fish
+- item: U3-009
+  pairs:
+  - melt the butter
+  - melted chocolate
+  - the ice cream is melting
+- item: U3-010
+  pairs:
+  - chop the onions
+  - finely chopped parsley
+  - dice the potatoes
+  - cut into cubes
+- item: U3-011
+  pairs:
+  - combine the flour and sugar
+  - combine all the ingredients
+- item: U3-012
+  pairs:
+  - cover the pan
+  - cover with a lid
+  - cover with foil
+  - cover and leave for 10 minutes
+- item: U3-013
+  pairs:
+  - crack an egg
+  - crack two eggs into a bowl
+  - crack nuts
+- item: U3-014
+  pairs:
+  - drain the pasta
+  - drain the water
+  - use a strainer
+- item: U3-015
+  pairs:
+  - grate cheese
+  - grate a carrot
+  - grated cheese
+  - lemon zest
+- item: U3-016
+  pairs:
+  - knead the dough
+  - knead for ten minutes
+- item: U3-017
+  pairs:
+  - mash the potatoes
+  - mashed potatoes
+  - mash with a fork
+- item: U3-018
+  pairs:
+  - mix the ingredients
+  - stir the soup
+  - stir constantly
+  - blend until smooth
+  - pour the mixture
+- item: U3-019
+  pairs:
+  - peel a banana
+  - peel the potatoes
+  - potato peel
+  - orange peel
+- item: U3-020
+  pairs:
+  - pour the milk into a bowl
+  - pour the mixture into the pan
+  - pour some water
+- item: U3-021
+  pairs:
+  - season with salt and pepper
+  - season to taste
+  - seasoning
+- item: U3-022
+  pairs:
+  - slice the bread
+  - a slice of cake
+  - a slice of cheese
+  - thinly sliced tomatoes
+- item: U3-023
+  pairs:
+  - spread butter on toast
+  - spread jam on bread
+  - chocolate spread
+- item: U3-024
+  pairs:
+  - sprinkle with cheese
+  - sprinkle sugar on top
+  - sprinkle with parsley
+- item: U3-025
+  pairs:
+  - squeeze a lemon
+  - squeeze the juice
+  - freshly squeezed orange juice
+- item: U3-026
+  pairs:
+  - whisk the eggs
+  - whisk the cream
+  - whisk until fluffy
+- item: U3-027
+  pairs:
+  - bitter coffee
+  - bitter chocolate
+  - a bitter taste
+- item: U3-028
+  pairs:
+  - a delicious meal
+  - taste delicious
+  - look tasty
+  - smell yummy
+- item: U3-029
+  pairs:
+  - fresh bread
+  - fresh fruit
+  - fresh vegetables
+  - fresh orange juice
+- item: U3-030
+  pairs:
+  - greasy food
+  - oily fish
+  - fatty meat
+  - too greasy
+- item: U3-031
+  pairs:
+  - homemade bread
+  - homemade jam
+  - homemade lemonade
+  - homemade pizza
+- item: U3-032
+  pairs:
+  - salty snacks
+  - too salty
+  - salty water
+- item: U3-033
+  pairs:
+  - sour cherries
+  - a sour taste
+  - sour cream
+  - taste sour
+- item: U3-034
+  pairs:
+  - spicy food
+  - a spicy sauce
+  - too spicy for me
+- item: U3-035
+  pairs:
+  - sweet cakes
+  - sweet tea
+  - taste sweet
+  - too sweet
+- item: U3-036
+  pairs:
+  - taste the soup
+  - it tastes good
+  - strawberry flavour
+  - full of flavour
+  - a sweet taste
+- item: U3-037
+  pairs:
+  - a bunch of parsley
+  - a bunch of grapes
+  - a bunch of bananas
+  - a bunch of flowers
+- item: U3-038
+  pairs:
+  - a bowl of soup
+  - a mixing bowl
+  - a large bowl
+  - a salad bowl
+- item: U3-039
+  pairs:
+  - a cup of tea
+  - a cup of flour
+  - half a cup of milk
+- item: U3-040
+  pairs:
+  - put in the oven
+  - take out of the oven
+  - a hot oven
+  - oven gloves
+- item: U3-041
+  pairs:
+  - a frying pan
+  - a non-stick pan
+  - a large saucepan
+  - a pot of soup
+- item: U3-042
+  pairs:
+  - a teaspoon of salt
+  - two tablespoons of sugar
+  - a heaped teaspoon
+- item: U3-043
+  pairs:
+  - a teaspoon of baking powder
+  - add the baking powder
+- item: U3-044
+  pairs:
+  - knead the dough
+  - roll out the dough
+  - pizza dough
+  - bread dough
+- item: U3-045
+  pairs:
+  - first of all
+  - after that
+  - finally
+- item: U3-046
+  pairs:
+  - a cup of flour
+  - plain flour
+  - rice flour
+  - flour and water
+- item: U3-048
+  pairs:
+  - fresh ingredients
+  - the main ingredients
+  - mix all the ingredients
+- item: U3-049
+  pairs:
+  - black pepper
+  - green pepper
+  - red pepper
+  - salt and pepper
+- item: U3-050
+  pairs:
+  - follow a recipe
+  - a recipe book
+  - a family recipe
+  - a recipe for pancakes
+- item: U3-051
+  pairs:
+  - serve hot
+  - serve cold
+  - serve with rice
+  - serves four people
+- item: U3-052
+  pairs:
+  - step by step
+  - the first step
+  - follow the steps
+- item: U3-053
+  pairs:
+  - be in the mood for pizza
+  - not in the mood for cooking
+- item: U3-054
+  pairs:
+  - Turkish cuisine
+  - Italian cuisine
+  - Asian cuisine
+  - local cuisine
+- item: U3-055
+  pairs:
+  - have dessert
+  - for dessert
+  - a dessert spoon
+  - the dessert menu
+- item: U3-056
+  pairs:
+  - a main dish
+  - a side dish
+  - a traditional dish
+  - do the dishes
+  - a vegetable dish
+- item: U3-060
+  pairs:
+  - for the main course
+  - starter
+  - main course and dessert
+word_families:
+- root: bake
+  forms:
+  - form: bake
+    pos: fiil
+    tr: fırında pişirmek
+    item: U3-001
+  - form: baker
+    pos: isim
+    tr: fırıncı
+  - form: bakery
+    pos: isim
+    tr: fırın (dükkân), pastane
+  - form: baking powder
+    pos: isim
+    tr: kabartma tozu
+    item: U3-043
+- root: freeze
+  forms:
+  - form: freeze
+    pos: fiil
+    tr: dondurmak; donmak
+    item: U3-003
+  - form: freezer
+    pos: isim
+    tr: dondurucu
+    item: U3-003
+  - form: frozen
+    pos: sıfat
+    tr: donmuş, dondurulmuş
+  - form: freezing
+    pos: sıfat
+    tr: buz gibi, çok soğuk
+- root: mix
+  forms:
+  - form: mix
+    pos: fiil
+    tr: karıştırmak
+    item: U3-018
+  - form: mixture
+    pos: isim
+    tr: karışım
+    item: U3-018
+  - form: mixer
+    pos: isim
+    tr: mikser, karıştırıcı
+- root: grate
+  forms:
+  - form: grate
+    pos: fiil
+    tr: rendelemek
+    item: U3-015
+  - form: grater
+    pos: isim
+    tr: rende
+    item: U3-015
+  - form: grated
+    pos: sıfat
+    tr: rendelenmiş
+- root: heat
+  forms:
+  - form: heat
+    pos: fiil/isim
+    tr: ısıtmak; ısı, ateş
+    item: U3-006
+  - form: preheat
+    pos: fiil
+    tr: önceden ısıtmak
+    item: U3-006
+  - form: heater
+    pos: isim
+    tr: ısıtıcı
+- root: taste
+  forms:
+  - form: taste
+    pos: isim/fiil
+    tr: tat; tadına bakmak; tadı … olmak
+    item: U3-036
+  - form: tasty
+    pos: sıfat
+    tr: lezzetli
+    item: U3-028
+  - form: tasteless
+    pos: sıfat
+    tr: tatsız
+- root: salt
+  forms:
+  - form: salt
+    pos: isim
+    tr: tuz
+  - form: salty
+    pos: sıfat
+    tr: tuzlu
+    item: U3-032
+  - form: unsalted
+    pos: sıfat
+    tr: tuzsuz
+- root: spice
+  forms:
+  - form: spice
+    pos: isim
+    tr: baharat
+  - form: spicy
+    pos: sıfat
+    tr: baharatlı; acılı
+    item: U3-034
+- root: fat / oil / grease
+  forms:
+  - form: fatty
+    pos: sıfat
+    tr: yağlı (et)
+    item: U3-030
+  - form: oily
+    pos: sıfat
+    tr: yağlı (sıvı yağ içeren)
+    item: U3-030
+  - form: greasy
+    pos: sıfat
+    tr: yağlı (fazla, yağ içinde)
+    item: U3-030
+- root: cook
+  forms:
+  - form: cook
+    pos: fiil/isim
+    tr: pişirmek; aşçı
+  - form: cooker
+    pos: isim
+    tr: ocak, fırınlı ocak (aşçı değil!)
+  - form: cooking
+    pos: isim
+    tr: yemek yapma
+  - form: cookbook
+    pos: isim
+    tr: yemek kitabı
+- root: fry
+  forms:
+  - form: fry
+    pos: fiil
+    tr: kızartmak
+    item: U3-004
+  - form: fried
+    pos: sıfat
+    tr: kızarmış
+  - form: frying pan
+    pos: isim
+    tr: kızartma tavası
+    item: U3-041
+- root: fresh
+  forms:
+  - form: fresh
+    pos: sıfat
+    tr: taze
+    item: U3-029
+  - form: freshly
+    pos: zarf
+    tr: yeni, taze taze (freshly squeezed)
+- root: sweet
+  forms:
+  - form: sweet
+    pos: sıfat
+    tr: tatlı (tat)
+    item: U3-035
+  - form: sweets
+    pos: isim
+    tr: şekerleme (İngiliz İngilizcesi)
+  - form: sweet tooth
+    pos: isim
+    tr: tatlı düşkünlüğü
+    item: U3-058
+- root: home
+  forms:
+  - form: homemade
+    pos: sıfat
+    tr: ev yapımı
+    item: U3-031
+  - form: handmade
+    pos: sıfat
+    tr: el yapımı
+synonym_sets:
+- words:
+  - delicious
+  - tasty
+  - yummy
+  difference_tr: Üçü de 'lezzetli'. delicious en güçlü ve en yaygın olanı; tasty nötr; yummy çocuksu ve samimi (arkadaşa, aileye).
+  items:
+  - U3-028
+- words:
+  - greasy
+  - oily
+  - fatty
+  difference_tr: 'greasy olumsuz: fazla yağlı, yağ içinde (greasy chips). oily: sıvı yağ içeren (oily fish). fatty: hayvansal yağı çok olan (fatty meat).'
+  items:
+  - U3-030
+- words:
+  - mix
+  - stir
+  - blend
+  - combine
+  - whisk
+  difference_tr: 'mix genel ''karıştırmak''. stir: kaşıkla döndürerek karıştırmak (çorba, çay). blend: blenderda pürüzsüz hâle getirmek. combine: malzemeleri bir araya getirmek. whisk: hızla çırpmak (yumurta,
+    krema).'
+  items:
+  - U3-018
+  - U3-011
+  - U3-026
+- words:
+  - cut
+  - chop
+  - dice
+  - slice
+  difference_tr: 'cut genel ''kesmek''. chop: iri, düzensiz parçalara doğramak. dice: küçük küpler. slice: ince, düz dilimler (ekmek, domates).'
+  items:
+  - U3-010
+  - U3-022
+- words:
+  - pan
+  - frying pan
+  - saucepan
+  - pot
+  difference_tr: 'pan / frying pan: tava. saucepan: saplı, kapaklı tencere (sos tavası değil). pot: büyük, iki kulplu tencere.'
+  items:
+  - U3-041
+- words:
+  - taste
+  - flavour
+  difference_tr: 'taste: tat duyusu ve genel tat (It has a sweet taste); ayrıca fiil ''tadına bakmak''. flavour: belirli bir aroma (strawberry flavour). flavour İngiliz, flavor Amerikan yazımı.'
+  items:
+  - U3-036
+- words:
+  - meal
+  - dish
+  - course
+  difference_tr: 'meal: öğün (breakfast, lunch, dinner). dish: tek bir yemek ya da tabak. course: menünün bölümü (main course, dessert).'
+  items:
+  - U3-056
+  - U3-060
+- words:
+  - bake
+  - roast
+  difference_tr: 'İkisi de fırında pişirmek. bake: kek, ekmek, kurabiye gibi hamur işleri. roast: et, tavuk, sebze; ayrıca ateşte kavurmak (roasted chestnuts).'
+  items:
+  - U3-001
+  - U3-007
+- words:
+  - boil
+  - steam
+  difference_tr: 'boil: suyun içinde kaynatmak, haşlamak. steam: suyun buharında pişirmek (buğulama).'
+  items:
+  - U3-002
+  - U3-008
+opposites:
+- a: freeze
+  b: melt
+  note_tr: dondurmak ↔ eritmek
+- a: fresh
+  b: stale
+  note_tr: taze ↔ bayat (ekmek, kek); meyve için 'rotten' (çürük)
+- a: homemade
+  b: shop-bought / ready-made
+  note_tr: ev yapımı ↔ hazır, dükkândan alınmış
+- a: raw
+  b: cooked
+  note_tr: çiğ ↔ pişmiş
+- a: sweet
+  b: sour / bitter / salty
+  note_tr: tatlıya tek bir zıt yok; tat bağlamına göre değişir
+- a: spicy
+  b: mild
+  note_tr: acılı ↔ acısız, hafif
+- a: healthy
+  b: unhealthy
+  note_tr: un- ön eki zıt anlam verir
+- a: add
+  b: remove
+  note_tr: eklemek ↔ çıkarmak, almak
+- a: cover
+  b: uncover
+  note_tr: üstünü örtmek ↔ açmak
+- a: first
+  b: finally / lastly
+  note_tr: ilk adım ↔ son adım
+- a: serve hot
+  b: serve cold
+  note_tr: sıcak servis ↔ soğuk servis
+- a: before
+  b: after
+  note_tr: '+ V-ing: before cooking / after cooking'
+traps:
+- about: steam
+  item: U3-008
+  kind: cok_anlamli
+  trap_tr: İsim olarak 'buhar', fiil olarak 'buharda pişirmek'. Öğrenci 'steamed fish'i 'buharlı balık' sanabilir.
+  tip_tr: 'Tarif cümlesinde başta geliyorsa fiildir: Steam the vegetables = Sebzeleri buharda pişir (buğulama).'
+- about: cover
+  item: U3-012
+  kind: cok_anlamli
+  trap_tr: '''Kitap kapağı'' anlamı bilindiği için tarifte ''cover the pan'' yanlış anlaşılır.'
+  tip_tr: Mutfakta cover = üstünü örtmek, kapağını kapatmak (cover with a lid).
+- about: crack
+  item: U3-013
+  kind: cok_anlamli
+  trap_tr: İsim 'çatlak', fiil 'kırmak'. 'Crack an egg' yumurtayı çatlatmak değil, kırıp içini dökmektir.
+  tip_tr: Yumurtayla birlikte gördüğünde 'kır' diye çevir.
+- about: season
+  item: U3-021
+  kind: cok_anlamli
+  trap_tr: Herkes 'mevsim' olarak bilir; tarifte fiil olarak 'tuz, baharatla tatlandırmak' anlamındadır.
+  tip_tr: '''Season with salt and pepper'' = tuz ve karabiberle tatlandır. Cümle başında ve ''with'' ile geliyorsa fiildir.'
+- about: spread
+  item: U3-023
+  kind: cok_anlamli
+  trap_tr: '''Yaymak'' anlamı bilinir; ekmeğe tereyağı, reçel ''sürmek'' de spread''dir. Bir kaynak ''dökmek'' vermiş: yanlış (dökmek = pour).'
+  tip_tr: Kahvaltıda spread = sürmek; sıvı için pour.
+- about: bitter / spicy / hot
+  item: U3-027
+  kind: turkce_etkisi
+  trap_tr: Türkçede 'acı' hem kahvenin, ilacın acısı hem biberin acısıdır; İngilizcede ikiye ayrılır.
+  tip_tr: Kahve, bitter çikolata, ilaç → bitter. Biber, acı sos → spicy / hot.
+- about: sweet / dessert
+  item: U3-035
+  kind: turkce_etkisi
+  trap_tr: Türkçede 'tatlı' hem tat sıfatı hem yemek sonrası yiyecektir; İngilizcede sweet sıfat, dessert isimdir.
+  tip_tr: '''What''s for dessert?'' = Tatlı ne var? ''It''s too sweet'' = Fazla tatlı.'
+- about: cup
+  item: U3-039
+  kind: cok_anlamli
+  trap_tr: '''Fincan'' dışında tariflerde ölçü birimidir: a cup of flour = bir su bardağı (ölçü) un.'
+  tip_tr: Malzeme listesinde 'cup' görürsen ölçü olarak oku; How much sorusunun cevabıdır.
+- about: dish
+  item: U3-056
+  kind: cok_anlamli
+  trap_tr: dish = yemek ya da tabak; 'do the dishes' ise bulaşık yıkamak.
+  tip_tr: '''A traditional Turkish dish'' = geleneksel bir Türk yemeği; ''wash the dishes'' = bulaşık.'
+- about: pepper
+  item: U3-049
+  kind: cok_anlamli
+  trap_tr: pepper hem biber (sebze) hem karabiber (baharat). 'Salt and pepper' karabiberdir.
+  tip_tr: green/red/bell pepper = biber; black pepper ya da salt and pepper = karabiber; chilli flakes = pul biber.
+- about: a bunch of
+  item: U3-037
+  kind: cok_anlamli
+  trap_tr: '''Bir demet'' (maydanoz, çiçek, üzüm salkımı) yanında gündelik dilde ''bir sürü'' anlamı da var: a bunch of friends.'
+  tip_tr: Mutfakta demet/salkım; insanlarla gelirse 'bir sürü'.
+- about: dice
+  item: U3-010
+  kind: cok_anlamli
+  trap_tr: 'İsim olarak ''zar'' (oyun zarı) bilinir; tarifte fiil: küp küp doğramak.'
+  tip_tr: 'Zar küp şeklindedir: dice the potatoes = patatesleri zar gibi küp küp doğra.'
+- about: saucepan
+  item: U3-041
+  kind: kaynak_hatasi
+  trap_tr: Bir kaynak 'saucepan = sos tavası' vermiş. Doğrusu saplı tencere.
+  tip_tr: 'Sauce kelimesine aldanma: saucepan''de çorba da makarna da pişer.'
+- about: taste
+  item: U3-036
+  kind: dilbilgisi
+  trap_tr: taste hem isim (tat) hem fiil (tadına bakmak; tadı … olmak). 'It tastes good' yapısında sıfat gelir, zarf değil.
+  tip_tr: It tastes delicious (✓) / It tastes deliciously (✗). Taste the soup = çorbanın tadına bak.
+- about: How much / How many / How long
+  item: U3-047
+  kind: dilbilgisi
+  trap_tr: Türkçedeki tek 'ne kadar' üç soruya ayrılır; seçeneklerde birbirinin yerine konur.
+  tip_tr: Sayı → How many, miktar/fiyat → How much, süre → How long. Cevaba bakarak seç.
+- about: dessert / desert
+  item: U3-055
+  kind: benzer_yazilis
+  trap_tr: dessert (tatlı) ile desert (çöl) tek harfle ayrılır; okunuşları da farklıdır (dessert vurgusu ikinci hecede).
+  tip_tr: 'Tatlıyı hep iki kez istersin: dessert''te iki s var.'
+- about: flour / flower
+  item: U3-046
+  kind: benzer_yazilis
+  trap_tr: flour (un) ve flower (çiçek) aynı okunur.
+  tip_tr: Tarifte, kek ve ekmek bağlamında daima flour = un.
+- about: recipe / receipt
+  item: U3-050
+  kind: benzer_yazilis
+  trap_tr: recipe (tarif) ile receipt (fiş, makbuz) karışır; recipe üç hecelidir (/ˈres.ɪ.pi/).
+  tip_tr: Recipe mutfakta, receipt kasada.
+- about: cook / cooker
+  kind: sahte_dost
+  trap_tr: cooker 'aşçı' değildir; İngiliz İngilizcesinde ocak/fırınlı ocaktır. Aşçı = cook ya da chef.
+  tip_tr: My mum is a good cook = Annem iyi aşçıdır. Turn off the cooker = Ocağı kapat.
+- about: toast / tost
+  kind: sahte_dost
+  trap_tr: İngilizcede toast kızarmış ekmek dilimidir; Türkçedeki kaşarlı tost İngiltere'de 'toastie' ya da 'cheese toastie'dir. Bir kaynak 'toast = tost' vermiş.
+  tip_tr: '''A slice of toast with butter'' = tereyağlı kızarmış ekmek.'
+- about: kızartmak
+  item: U3-004
+  kind: turkce_etkisi
+  trap_tr: 'Türkçedeki ''kızartmak'' İngilizcede dört fiile ayrılır: fry (yağda), roast (fırında, ateşte), grill (ızgarada), toast (ekmeği kızartmak).'
+  tip_tr: 'Pişirme ortamını sor: yağ → fry, fırın → roast/bake, ızgara → grill.'
+- about: karıştırmak
+  item: U3-018
+  kind: turkce_etkisi
+  trap_tr: Türkçede 'karıştırmak' aynı zamanda 'birbirine karıştırmak, ayırt edememek' demektir; bu anlamda mix değil 'mix up' ya da 'confuse' kullanılır.
+  tip_tr: Mix the eggs = yumurtaları karıştır. I always mix up these words = Bu kelimeleri hep karıştırırım.
+- about: fırın
+  item: U3-040
+  kind: turkce_etkisi
+  trap_tr: Türkçede 'fırın' hem mutfak fırını hem ekmek fırını (dükkân); İngilizcede oven ve bakery ayrıdır.
+  tip_tr: Put it in the oven ↔ Buy bread from the bakery.
+- about: tasty / tasteful
+  item: U3-028
+  kind: benzer_yazilis
+  trap_tr: tasty yiyecek için 'lezzetli'; tasteful ise 'zevkli' (dekorasyon, kıyafet).
+  tip_tr: Yemek tasty, ev tasteful olur.
+- about: hot
+  item: U3-034
+  kind: cok_anlamli
+  trap_tr: hot hem 'sıcak' hem 'acı (biber)' demektir; 'hot soup' bağlama göre sıcak ya da acı çorba olabilir.
+  tip_tr: Kesinlik için acı = spicy, sıcak = hot / warm.
+- about: bitter = çikolatalı
+  item: U3-027
+  kind: kaynak_hatasi
+  trap_tr: 'Bir okul listesi ''bitter = çikolatalı'' vermiş. Türkçedeki ''bitter çikolata''dan gelen bir yanlış: bitter = acı (tat).'
+  tip_tr: Bitter chocolate = bitter (acı) çikolata; bitter tek başına çikolata demek değildir.
+- about: rice flour / cornstarch = mısır unu
+  kind: kaynak_hatasi
+  trap_tr: Bir kaynak 'rice flour' ve 'cornstarch' için 'mısır unu' yazmış. rice flour = pirinç unu; cornstarch = mısır nişastası (İngiliz İngilizcesinde cornflour).
+  tip_tr: Yiyecek adları TANIMA düzeyinde; yine de yanlış karşılık ezberlenmesin.
+- about: cranberry = yaban mersini
+  kind: kaynak_hatasi
+  trap_tr: Bir kaynak cranberry'yi 'yaban mersini' diye vermiş; yaban mersini blueberry'dir, cranberry turna yemişidir.
+  tip_tr: 'Blue = mavi: blueberry mavi yaban mersini.'
+- about: powdered sugar = toz şeker · tomato sauce = salça
+  kind: kaynak_hatasi
+  trap_tr: Görsel listede powdered sugar 'toz şeker', tomato sauce 'salça' verilmiş. powdered sugar = pudra şekeri (toz şeker = sugar / granulated sugar); salça = tomato paste, tomato sauce = domates sosu.
+  tip_tr: Hikâyede kullanılırsa düzeltilmiş anlam kullanılmalı.
+- about: pepper = pul biber · workshop = seminer · extract = aktarmak · warm = sıcak
+  kind: kaynak_hatasi
+  trap_tr: 'Okul listesinde: pepper ''pul biber'' (doğrusu biber/karabiber; pul biber = chilli flakes), workshop ''seminer'' (atölye), extract ''aktarmak'' (mutfakta öz, özüt: vanilla extract), warm ''sıcak''
+    (ılık; serve warm = ılık servis edin).'
+  tip_tr: Kaynak listeleri yalnız karşılaştırma içindir; hedef anlamlar items dosyasındakidir.
+- about: dish / meal
+  item: U3-056
+  kind: cok_anlamli
+  trap_tr: İkisi de "yemek" diye çevrilir.
+  tip_tr: dish = tabakta sunulan yemek (a Turkish dish), meal = öğün (breakfast is the first meal). do the dishes = bulaşık yıkamak.
+- about: put … into / add … to
+  item: U3-061
+  kind: dilbilgisi
+  trap_tr: 'Fiil bilinir ama edat şaşırılır: "put it to the oven".'
+  tip_tr: put + into/in (içine), add + to (-e). Sınavda en sık çıkan iki tarif fiili.
+lgs_focus:
+  what_is_tested:
+  - Karışık verilen tarif adımlarını mantık ve sıralama sözcükleriyle doğru sıraya koyma (process order).
+  - Tarif metninden bilgi çıkarma; metinde cevabı olmayan soruyu bulma (malzeme, miktar, süre, sunum).
+  - Diyalog tamamlama - How much / How many / How long, should/can ile danışma soruları ve cevapları.
+  - Tercih tablosu ya da grafiği okuma - kim hangi yemeği, hangi pişirme yöntemini tercih ediyor?
+  - Görsel ya da tanım ile tarif fiilini eşleştirme (peel, slice, pour, grate, whisk…).
+  - Tat sıfatları ve eş anlamlılar (delicious = tasty = yummy; greasy = oily).
+  - Durum-tepki - yemek ikram edildiğinde, tarif istendiğinde, tat beğenilmediğinde ne söylenir?
+  - Mesaj/not çıkarımı - anneden gelen 'yemeği hazırla' notunda yapılacak ve yapılmayacak işler.
+  question_patterns:
+  - type: process_order
+    description_tr: Bir tarifin adımları karışık verilir (genelde 4-5 cümle); doğru sıra sorulur.
+    sample_stem: Put the steps for making mashed potatoes in the correct order. I. Mash them with some butter and milk. II. Peel the potatoes and cut them into pieces. III. Boil them for twenty minutes.
+      IV. Drain the water.
+    sample_options:
+    - II – III – IV – I
+    - III – II – I – IV
+    - II – IV – III – I
+    - I – II – III – IV
+    distractor_logic_tr: 'Çeldiriciler mantık zincirini bozar: süzmeden kaynatmak, soymadan pişirmek ya da son adımı (mash) başa almak. İlk adım çoğunlukla hazırlık fiilidir (peel, wash, preheat).'
+    items:
+    - U3-019
+    - U3-002
+    - U3-014
+    - U3-017
+    - U3-045
+    - U3-052
+  - type: dialogue_complete
+    description_tr: Mutfakta geçen kısa diyalogda bir boşluk; cevaba uygun soru kalıbı seçilir.
+    sample_stem: 'Selin: I want to make pancakes for breakfast. ______ Mum: Two are enough. Don''t forget to add a cup of milk.'
+    sample_options:
+    - How many eggs do I use?
+    - How much sugar do I add?
+    - How long should I cook them?
+    - Which pan do you prefer?
+    distractor_logic_tr: Hepsi tarifle ilgili geçerli sorulardır; yalnız biri cevaptaki 'Two are enough' (sayı, sayılabilen) bilgisine uyar. How much / How long en güçlü çeldiricilerdir.
+    items:
+    - U3-047
+    - U3-039
+  - type: gap_fill
+    description_tr: Tarif cümlesinde fiil boşluğu; anlamca ve bağlamca uygun fiil seçilir.
+    sample_stem: First, ______ the oven to 180°C. Then put the cake mixture into a pan and bake it for 35 minutes.
+    sample_options:
+    - preheat
+    - peel
+    - squeeze
+    - freeze
+    distractor_logic_tr: 'Çeldiriciler aynı temadan (tarif fiilleri) gelir ama nesneyle uyuşmaz: fırın soyulmaz, sıkılmaz, dondurulmaz. Öğrenciden fiil + nesne eşleşmesini (collocation) bilmesi beklenir.'
+    items:
+    - U3-006
+    - U3-040
+    - U3-019
+    - U3-025
+    - U3-003
+  - type: synonym
+    description_tr: Altı çizili sözcüğün eş anlamlısı ya da anlamı sorulur.
+    sample_stem: 'Kaan: My grandma''s homemade lemonade is really tasty! Which word is closest in meaning to ''tasty''?'
+    sample_options:
+    - delicious
+    - bitter
+    - greasy
+    - fresh
+    distractor_logic_tr: Çeldiriciler aynı alandan tat sıfatlarıdır; fresh limonata için anlamlı olduğundan en güçlü çeldiricidir ama eş anlamlı değildir.
+    items:
+    - U3-028
+    - U3-027
+    - U3-030
+    - U3-029
+    - U3-031
+  - type: situation
+    description_tr: Bir durum anlatılır; karakterin ne söyleyeceği sorulur.
+    sample_stem: Elif gives you a slice of her homemade cake. You taste it and love it. What do you say?
+    sample_options:
+    - Mmm, it's yummy! Can I have the recipe?
+    - It's too salty for me, sorry.
+    - Sorry, I can't. I have to study.
+    - How long does it take to get there?
+    distractor_logic_tr: Biri olumsuz tat yorumu (durumla çelişir), biri Ü1'den daveti reddetme kalıbı, biri bağlam dışı How long sorusu. Doğru cevap hem beğeniyi hem uygun bir tepkiyi içerir.
+    items:
+    - U3-028
+    - U3-050
+    - U3-031
+    - U3-022
+  - type: table_graph
+    description_tr: Birkaç kişinin pişirme yöntemi ya da yemek tercihleri tablo (✓/✗) ile verilir; doğru ya da yanlış ifade sorulur.
+    sample_stem: 'The table shows four friends'' favourite ways of cooking. Ece: bake ✓, fry ✗, grill ✗ · Kaan: bake ✗, fry ✓, grill ✓ · Bora: bake ✗, fry ✗, grill ✓ · Duru: bake ✓, fry ✗, grill ✓. According
+      to the table, which of the following is true?'
+    sample_options:
+    - Ece and Duru both like baking.
+    - Kaan doesn't like grilling.
+    - Bora likes frying the most.
+    - Nobody likes frying.
+    distractor_logic_tr: Çeldiriciler tablodaki bir hücreyi ters okur ya da 'nobody / everybody / the most' gibi genellemelerle tuzak kurar. Her seçenek tek tek tabloyla karşılaştırılmalı.
+    items:
+    - U3-001
+    - U3-004
+    - U3-005
+  - type: text_infer
+    description_tr: Kısa bir tarif metni verilir; metinde cevabı olan ya da olmayan soru, ya da doğru bilgi sorulur.
+    sample_stem: Grandma's Lentil Soup. Ingredients - one cup of red lentils, an onion, four cups of water, a teaspoon of pepper, salt. First, chop the onion and fry it in a saucepan. Then add the lentils
+      and the water. Boil it for thirty minutes. Finally, season it with salt and pepper and serve it hot. Which question is NOT answered in the recipe?
+    sample_options:
+    - How many people does it serve?
+    - How long do we boil the soup?
+    - How much water do we need?
+    - Do we serve it hot or cold?
+    distractor_logic_tr: Yanlış şıklar metinde açıkça cevaplanan sorulardır (süre, miktar, sunum). Öğrenci metni tarar; kişi sayısı, sıcaklık ya da fiyat gibi verilmemiş bilgiyi bulur.
+    items:
+    - U3-050
+    - U3-048
+    - U3-010
+    - U3-004
+    - U3-041
+    - U3-002
+    - U3-021
+    - U3-051
+    - U3-045
+    - U3-047
+  - type: odd_one_out
+    description_tr: Bir gruba uymayan sözcük sorulur (pişirme yöntemi / hazırlama fiili / tat sıfatı / araç).
+    sample_stem: Which of the following is NOT a way of cooking?
+    sample_options:
+    - whisk
+    - roast
+    - steam
+    - grill
+    distractor_logic_tr: Hepsi mutfak fiilidir; ayırt edici olan ısı kullanılıp kullanılmadığıdır. whisk hazırlama fiilidir (çırpmak), diğerleri pişirme yöntemidir.
+    items:
+    - U3-026
+    - U3-007
+    - U3-008
+    - U3-005
+  - type: message_infer
+    description_tr: Bir mesaj, not ya da e-posta verilir; yapılacak / yapılmayacak iş ya da yazarın amacı sorulur.
+    sample_stem: Mum's note to Bora - Hi Bora, I'll be home late. Please boil the pasta for ten minutes and drain it. Don't add the sauce, I'll make it when I come. And don't forget to turn off the cooker!
+      Love, Mum. What should Bora NOT do?
+    sample_options:
+    - Add the sauce to the pasta.
+    - Boil the pasta.
+    - Drain the pasta.
+    - Turn off the cooker.
+    distractor_logic_tr: 'Çeldiriciler notta istenen işlerdir. ''Don''t add'' ve ''don''t forget to'' ayrımı tuzaktır: ikincisi aslında yapılması istenen bir iştir.'
+    items:
+    - U3-002
+    - U3-014
+    - U3-045
+  - type: dialogue_complete
+    description_tr: Seçenekli tercih sorusuna uygun cevap seçilir.
+    sample_stem: 'Duru: Do you prefer baked or fried potatoes? Selin: ______'
+    sample_options:
+    - Baked ones. Fried food is too greasy for me.
+    - Yes, I do. I love potatoes.
+    - Twice a week, I think.
+    - In the oven for forty minutes.
+    distractor_logic_tr: '''Yes, I do'' seçenekli soruya Yes/No cevabıdır; sıklık (Ü2) ve süre cevapları farklı soru türlerine aittir.'
+    items:
+    - U3-001
+    - U3-004
+    - U3-030
+  priority_items:
+  - U3-045
+  - U3-047
+  - U3-050
+  - U3-048
+  - U3-052
+  - U3-001
+  - U3-002
+  - U3-004
+  - U3-010
+  - U3-018
+  - U3-019
+  - U3-020
+  - U3-022
+  - U3-006
+  - U3-027
+  - U3-034
+  - U3-028
+  - U3-036
+  - U3-053
+  - U3-059
+  tactics:
+  - Sıralama sorusunda önce 'First' ve 'Finally' cümlelerini sabitle; ortadakileri 'önce ne olmalı?' mantığıyla diz (soy → doğra → pişir → süz → servis et).
+  - Şıklarda ilk adımı farklı olanları hemen ele; çoğu zaman iki şık kalır, sonra yalnız ikinci adımı karşılaştır.
+  - 'Diyalog boşluğunda boşluktan SONRAKİ cümleye bak: sayı → How many, ölçü → How much, süre → How long, araç → What should I use.'
+  - '''Which question is NOT answered?'' sorularında her şıkkın cevabını metinde işaretle; işaretleyemediğin şık doğru cevaptır.'
+  - '''Do you prefer A or B?'' sorusuna ''Yes/No'' ile başlayan şık yanlıştır.'
+  - Tablo sorularında 'nobody, everybody, all, both, the most' gibi kesin sözcükler içeren şıkları tek tek tabloyla doğrula.
+  - 'Fiil + nesne uyumuna güven: peel → meyve/sebze, pour → sıvı, knead → hamur, grate → peynir/havuç, squeeze → limon, preheat → fırın.'
+  - 'Yiyecek adını bilmesen de fiilden anlam çıkar: bilinmeyen bir sebzeyi ''peel and slice'' ediyorsan cevap için onu bilmen gerekmez (E8.3.R2: bağlamdan tahmin).'
+  exam_vocabulary:
+  - en: Which of the following …?
+    tr: Aşağıdakilerden hangisi …?
+  - en: according to the text / recipe / table
+    tr: metne / tarife / tabloya göre
+  - en: in the correct order
+    tr: doğru sırayla
+  - en: is NOT mentioned
+    tr: değinilmemiştir
+  - en: is NOT answered
+    tr: cevaplanmamıştır
+  - en: Which question …?
+    tr: Hangi soru …?
+  - en: complete the dialogue
+    tr: diyaloğu tamamla
+  - en: fill in the blank
+    tr: boşluğu doldur
+  - en: the underlined word / part
+    tr: altı çizili sözcük / bölüm
+  - en: closest in meaning
+    tr: anlamca en yakın
+  - en: the missing step
+    tr: eksik adım
+  - en: ingredients
+    tr: malzemeler (tarif metninde başlık)
+  - en: step / steps
+    tr: adım / adımlar
+  - en: true / false
+    tr: doğru / yanlış
+  - en: most likely
+    tr: büyük olasılıkla, en muhtemel
+  - en: What should … do / NOT do?
+    tr: … ne yapmalı / ne yapmamalı?
+  - en: prefer
+    tr: tercih etmek
+  - en: both … and …
+    tr: hem … hem …
+  - en: neither … nor …
+    tr: ne … ne …
+cross_unit:
+- item: U3-053 be in the mood for
+  links_to: U2-015 be crazy about · U2-016 be into · U2-007 like
+  note_tr: 'Ü2''nin beğeni dili yemek bağlamında devam eder: ''I''m crazy about pizza, but today I''m in the mood for pasta.'''
+- item: F2 Tercih belirtme
+  links_to: U1-018 prefer
+  note_tr: prefer Ü1'de öğretildi; burada 'prefer A to B' ve 'Do you prefer A or B?' kalıplarıyla yemek tercihlerinde tekrar eder.
+- item: U3-058 have a sweet tooth
+  links_to: U2-009 be fond of
+  note_tr: '''I''m fond of sweets'' ile ''I have a sweet tooth'' aynı anlama gelir; eş anlam sorusunda birbirine bağlanabilir.'
+- item: U3-034 spicy · U3-030 greasy
+  links_to: U2-013 can't stand · U2-014 hate
+  note_tr: 'Hoşlanmama dili: ''I can''t stand spicy food.'' ''I hate greasy chips.'''
+- item: U3-057 enjoy your meal
+  links_to: U1-097 full · U1-099 stuffed
+  note_tr: 'Yemek sahnesinin kapanışı: ''Would you like some more?'' – ''No, thanks. I''m full / I''m stuffed!'''
+- item: U3-028 delicious / tasty / yummy
+  links_to: U1-022 Sounds + SIFAT
+  note_tr: 'Tarif dinlerken tepki: ''Sounds delicious!'' ''Sounds yummy!'''
+- item: U3-059 worth trying
+  links_to: U2-079 recommend · U2-080 suggest
+  note_tr: 'Tavsiye dili: ''I recommend the lentil soup. It''s worth trying.'''
+- item: U3-039 cup · U3-042 teaspoon / tablespoon
+  links_to: U2-089 all / most / half / a few / none
+  note_tr: 'half Ü2''de grafik dili olarak öğretildi; burada ölçüde geçer: half a cup of milk, half a teaspoon of salt.'
+- item: U3-045 first / then / finally
+  links_to: U2-043 daily routine · U2-052 once / twice
+  note_tr: Günlük rutin anlatımındaki sıralama burada sürece taşınır; 'stir twice', 'turn it once' gibi sıklık ifadeleri tarifte de geçer.
+- item: F2 tercih tablosu
+  links_to: U2-003 survey · U2-090 more than / less than / the most
+  note_tr: 'Ü2''nin anket ve grafik dili yemek tercihi tablolarında aynen kullanılır: ''Most students prefer baked potatoes.'''
+- item: U3-051 serve · expressions (Would you like some more?)
+  links_to: U1-026 Would you like to …? · U1-017 offer
+  note_tr: 'İkram etme = teklif dili: ''Would you like some dessert?'' Kabul/ret kalıpları Ü1''den gelir.'
+- item: U3-050 recipe
+  links_to: U1-043 share · U2-058 share on social media
+  note_tr: '''Can you share the recipe?'' ''She shared her recipe on social media.'''
+story_hooks:
+- situation_tr: 'Gün 1 önerisi · Yarışma duyurusu. Murat Bey okulun ''Junior Chef'' yemek yarışmasını duyurur: her grup İngilizce bir tarif hazırlayıp sahnede adım adım anlatacak. Gruplar ilk kez okul mutfağına
+    girer; Kaan fırının düğmesini radyo sanar.'
+  items:
+  - U3-050
+  - U3-048
+  - U3-052
+  - U3-045
+  - U3-038
+  - U3-040
+  comedy_tr: 'Kaan''ın ''first, then, finally'' ile kendi sabah rutinini tarif gibi anlatması: ''First, I wake up late. Then, I run. Finally, I''m late.'''
+- situation_tr: Gün 2 önerisi · Kek denemesi. Ece, Ü1'de 'şapkaya benzeyen' pastanın rövanşını almak ister; grup kekin malzemelerini ölçer. Bir çay kaşığı kabartma tozu yerine yanlışlıkla bir yemek kaşığı
+    konur.
+  items:
+  - U3-046
+  - U3-043
+  - U3-001
+  - U3-006
+  - U3-042
+  - U3-039
+  comedy_tr: Selin'in teaspoon/tablespoon karışıklığıyla kek fırında 'volkan' gibi kabarır; Selin dürüstçe 'yine şapka oldu' der.
+- situation_tr: Gün 3 önerisi · Gizli aşçı. Takım Bora'nın kahvaltıda omlet yapamayacağını sanır; Bora (sabahları kendi kahvaltısını hazırlar) programın omlet tarifini adım adım, sakin sakin yapar. Asıl
+    kaos Kaan'ın yumurta kırma denemesidir.
+  items:
+  - U3-013
+  - U3-026
+  - U3-018
+  - U3-020
+  - U3-041
+  - U3-004
+  comedy_tr: 'Kaan yumurtayı tavanın kenarına değil kendi alnına vurur; Bora tek kelime etmeden ikinci yumurtayı tek elle kırar: ''Leave it to me.'''
+- situation_tr: 'Gün 4 önerisi · Salata istasyonu. Selin ve Elif yarışma için gavurdağı salatası denemesi yapar: soy, dilimle, küp küp doğra, limon sık, tuz-karabiberle tatlandır.'
+  items:
+  - U3-019
+  - U3-022
+  - U3-010
+  - U3-025
+  - U3-021
+  - U3-049
+  comedy_tr: Elif limonu sıkarken suyu Kaan'ın gözüne fışkırtır; Kaan 'season' kelimesini 'mevsim' sanıp 'sonbahar salatası mı?' diye sorar.
+- situation_tr: 'Gün 5 önerisi · Gözü kapalı tat testi. Murat Bey sınıfta gözü kapalı tat oyunu oynatır: limon, bitter çikolata, cips, acı biber, lokum.'
+  items:
+  - U3-035
+  - U3-033
+  - U3-027
+  - U3-032
+  - U3-034
+  - U3-036
+  comedy_tr: 'Müzik türü dışında her şeye ''I don''t mind'' diyen Duru acı biberi tadınca itiraz eder: ''I MIND! It''s too spicy!'''
+- situation_tr: 'Gün 6 önerisi · Makarna gecesi. Annesi geç kalacağı için Bora''ya not bırakır: makarnayı haşla, süz, peynir rendele. Bora arkadaşlarını çağırır; kimin ne kadar yiyeceği tartışılır.'
+  items:
+  - U3-002
+  - U3-014
+  - U3-015
+  - U3-024
+  - U3-012
+  - U3-047
+  comedy_tr: Bora süzgeci ters tutar, makarna lavaboya gider; 'How many?' diye sorulan Kaan 'How much do you have?' cevabını verir.
+- situation_tr: 'Gün 7 önerisi · Pizza hamuru. Duru''nun evinde hamur yoğurma günü: un, su ve maya birleştirilir, tereyağı eritilir, hamura domates sosu sürülür. Ege çıkagelir ve her şeye karışır.'
+  items:
+  - U3-044
+  - U3-016
+  - U3-023
+  - U3-011
+  - U3-009
+  - U3-037
+  comedy_tr: Bir demet maydanoz yerine bir demet çiçek getiren Kaan; 'too many cooks spoil the broth' anının canlı örneği.
+- situation_tr: Gün 8 önerisi · Sağlıklı menü. Okul hemşiresi yarışmacılara 'kızartma yok' kuralı koyar; gruplar ızgara, fırın ve buğulama seçeneklerine geçer, taze malzeme arar.
+  items:
+  - U3-005
+  - U3-007
+  - U3-008
+  - U3-030
+  - U3-029
+  - U3-017
+  comedy_tr: Kaan 'fried' yerine 'grilled' cips icat etmeye çalışır; Bora püre yaparken çatalı kırar.
+- situation_tr: Gün 9 önerisi · Tatlı sırrı. Selin'in babaannesinin ev yapımı dondurma tarifi. Tatlıya düşkün Bora her kaşıkta 'just to taste' der, dondurucuya konacak bir şey kalmaz.
+  items:
+  - U3-055
+  - U3-058
+  - U3-003
+  - U3-031
+  - U3-028
+  - U3-053
+  comedy_tr: 'Bora: ''I''m not in the mood for dessert.'' (Elinde üçüncü kâse.)'
+- situation_tr: 'Gün 10 önerisi · Büyük final. Yarışma günü: gruplar ana yemek ve tatlıyı jüriye servis eder, Türk mutfağını İngilizce tanıtır. Jüri Murat Bey, ''It''s worth trying'' der; kazanan belli
+    olur.'
+  items:
+  - U3-054
+  - U3-056
+  - U3-060
+  - U3-051
+  - U3-057
+  - U3-059
+  comedy_tr: Kaan 'Enjoy your meal!' derken tabağı jürinin kucağına döker; jüri tadına bakıp yine de beğenir.
+- situation_tr: 'Ek durum · Market listesi. Ece''nin annesi WhatsApp''tan İngilizce alışveriş listesi yollar (a bunch of parsley, two cups of flour, black pepper). Kaan her şeyi yanlış anlar: pepper yerine
+    dolmalık biber, flour yerine çiçek (flower).'
+  items:
+  - U3-037
+  - U3-046
+  - U3-049
+  - U3-039
+  - U3-042
+  comedy_tr: 'Kasaya bir buket çiçekle gelen Kaan: ''Flour, flower, same sound!'''
+- situation_tr: Ek durum · Bulaşık nöbeti. Yarışmadan sonra kimse bulaşık yıkamak istemez; 'do the dishes' ile 'dish' (yemek) karışır, Bora tabakları yıkamak yerine yeni bir yemek yapmaya kalkar.
+  items:
+  - U3-056
+  - U3-038
+  - U3-041
+  - U3-012
+  comedy_tr: '''Do the dishes, Bora!'' – ''Sure! Which dish? Pasta or pizza?'''
+mini_lessons:
+- type: hafiza_kancasi
+  text_tr: 'dessert mi desert mi? Tatlıyı hep iki kez istersin: dessert''te iki ''s'' var. Tek s''li desert çöldür.'
+  refs:
+  - U3-055
+- type: hafiza_kancasi
+  text_tr: 'dice''ın bir anlamı da ''zar''. Zar küp şeklindedir: dice the potatoes = patatesleri zar gibi küp küp doğra.'
+  refs:
+  - U3-010
+- type: hafiza_kancasi
+  text_tr: 'flour (un) ile flower (çiçek) aynı okunur. Tarifteyse hep un: pastaya çiçek koymuyoruz!'
+  refs:
+  - U3-046
+- type: mini_dilbilgisi
+  text_tr: 'Ne kadar? üçe ayrılır: How many eggs (kaç tane), How much milk (ne kadar miktar), How long (ne kadar süre). Cevaba bak, soruyu bul.'
+  refs:
+  - U3-047
+- type: mini_dilbilgisi
+  text_tr: 'Tarifte özne yok, fiil başta: ''Peel the potatoes.'' Olumsuzu ''Don''t'': ''Don''t open the oven!'''
+  refs:
+  - U3-019
+  - U3-040
+- type: tuzak
+  text_tr: 'Son adım ''Finally'' ya da ''Lastly'' ile gelir. ''At last'' tarifte değil, uzun beklemenin sonunda kullanılır: ''At last, the pizza is here!'''
+  refs:
+  - U3-045
+- type: kelime_ailesi
+  text_tr: '-y eki isimden tat sıfatı yapar: salt → salty, spice → spicy, taste → tasty, oil → oily, grease → greasy, fat → fatty, yum → yummy.'
+  refs:
+  - U3-032
+  - U3-034
+  - U3-028
+  - U3-030
+- type: kelime_ailesi
+  text_tr: 'pre- ''önceden'' demektir: preheat = önceden ısıtmak. Aynı ek: preview (ön izleme), prepare (hazırlamak).'
+  refs:
+  - U3-006
+- type: tuzak
+  text_tr: 'Türkçedeki ''acı'' İngilizcede ikiye ayrılır: kahve, ilaç bitter; biber, sos spicy ya da hot.'
+  refs:
+  - U3-027
+  - U3-034
+- type: tuzak
+  text_tr: '''Kızartmak'' dört fiil: yağda fry, fırında roast, ızgarada grill, ekmeği toast. Kızartmanın ortamını düşün.'
+  refs:
+  - U3-004
+  - U3-007
+  - U3-005
+- type: tuzak
+  text_tr: cooker aşçı değil, ocaktır! Aşçı cook ya da chef. 'My dad is a great cook.'
+  refs:
+  - U3-040
+  - U3-041
+- type: mini_dilbilgisi
+  text_tr: 'Un, şeker, süt sayılmaz; ölçüyle sayılır: a cup of flour, a teaspoon of sugar, a glass of milk. ''Two flours'' yok!'
+  refs:
+  - U3-039
+  - U3-042
+  - U3-046
+- type: ilginc_bilgi
+  text_tr: tsp = teaspoon (yaklaşık 5 ml), tbsp = tablespoon (yaklaşık 15 ml). Yani 1 yemek kaşığı ≈ 3 çay kaşığı. İngilizce tariflerde bu kısaltmalar çok kullanılır.
+  refs:
+  - U3-042
+- type: lgs_taktigi
+  text_tr: 'Sıralama sorusu: önce First ve Finally cümlelerini bul, sonra ''süzmeden önce kaynatmak gerekir'' gibi mantık zinciriyle ortayı diz. İlk adımı farklı şıkları hemen ele.'
+  refs:
+  - U3-045
+  - U3-052
+- type: lgs_taktigi
+  text_tr: '''Do you prefer A or B?'' sorusuna ''Yes, I do'' cevabı tuzaktır. Seçenekli soruya seçimle cevap verilir: ''B, because…'''
+  refs:
+  - U3-053
+- type: hafiza_kancasi
+  text_tr: have a sweet tooth kelimesi kelimesine 'tatlı bir dişim var' değil, 'tatlıya düşkünüm' demektir. Tatlıyı çok seven bir dişin olduğunu hayal et.
+  refs:
+  - U3-058
+- type: ilginc_bilgi
+  text_tr: cuisine Fransızcadan gelir ve 'kuizin' (/kwɪˈziːn/) diye okunur. Turkish cuisine = Türk mutfağı (yemek kültürü); evdeki mutfak odası ise kitchen.
+  refs:
+  - U3-054
+- type: ilginc_bilgi
+  text_tr: Türk kahvesi kültürü ve geleneği 2013'te UNESCO İnsanlığın Somut Olmayan Kültürel Mirası listesine girdi. Okuma metinlerinde 'Turkish coffee is served with a glass of water' gibi edilgen cümlelerle
+    karşına çıkabilir.
+  refs:
+  - U3-054
+  - U3-051
+- type: tuzak
+  text_tr: recipe (tarif, 're-si-pi' diye üç hece) ile receipt (fiş, makbuz) karışmasın. Recipe mutfakta, receipt kasada.
+  refs:
+  - U3-050
+- type: kelime_ailesi
+  text_tr: homemade = ev yapımı, handmade = el yapımı. Ev yapımı reçel homemade, el örgüsü kazak handmade.
+  refs:
+  - U3-031
+open_questions:
+- 'Kazanım kodları ve metinleri: E8.3.R1, E8.3.R2 ve E8.3.W1 bir 2024/2025 MEB ortak yazılı dağılım tablosunda (Sakarya ÖDM) doğrulandı. E8.3.L1, E8.3.SI1 ve E8.3.SP1 yalnız bir okulun 2017-2018 yıllık
+  planında görüldü; resmî 2018 öğretim programı PDF''inin 8. sınıf bölümüne erişilemedi (mufredat.meb.gov.tr kopyası kesik geldi). Resmî metinle karşılaştırılmalı.'
+- İşlevler (Describing simple processes, Expressing preferences, Making simple inquiries) ve F1-F3 exponent'lerindeki omlet örnekleri aynı 2017-2018 yıllık plandan alındı; 2015-2016 eski programda (Unit
+  3 Cooking) da aynı üç işlev vardı. Resmî 2018 programın 'useful language' bölümüyle birebir kontrol edilmedi.
+- F4 (Yemeği ve tadı değerlendirme) programda ayrı bir işlev olarak bulunamadı; kelime listesinden türetilmiş tamamlayıcı başlık olarak eklendi. Editör kaldırabilir.
+- Simple Present Passive (G9) programın örnek dilinde görülmedi; görev tanımı gereği tanıma düzeyinde eklendi. Ders kitabında geçip geçmediği kontrol edilmeli.
+- LGS'de bu üniteden yıllara göre soru sayısı yalnız bir üçüncü taraf sitede bulundu (2020 - 2, 2021 - 2, 2022 - 1, 2023 - 2, 2024 - 1); MEB kaynağıyla doğrulanmadı, 2025 verisi yok. Plan gereği çıkmış
+  soru analizi (lgs_seen) ayrıca yapılmalı.
+- 'Havuz çalışma kitabındaki HEDEF sayfası openpyxl ile okunduğunda yalnız başlık satırı geldi (formül/önbellek değeri yok); öğretim birimleri items dosyasından alındı. ÇEKİRDEK havuz satırı 49, items dosyasında
+  core sınıfı 42 birim: fark, araç/aile birleştirmesinden geliyor (7 birleştirme).'
+- Items dosyasında U3-036 varyantı Amerikan yazımıyla 'flavor', display ise İngiliz yazımıyla 'taste / flavour'. Program kaynakları 'flavor' yazıyor; uygulama eşleştirmesinde iki yazım da kabul edilmeli.
+- 'Editör kararı için aday birimler: ''raw'' (çiğ), ''remove'', ''until'' ve ''cooker/stove'' TANIMA''da; LGS okuma metinlerinde geçebilirler. ''a piece of cake'' deyimi kaynaklarda yok, yalnız expressions''a
+  eklendi.'

@@ -1,0 +1,130 @@
+schema_version: 1
+id: SD-B02
+module: B
+title: "Reddetme, özür, mazeret"
+unlock_after: "Ü1 sonu"
+minutes: 5
+stems: [S01, S04, S08, S09, S10]
+functions: ["Daveti reddetme, özür dileme ve sebep gösterme", "Kibar ret (Thanks for asking, but …)"]
+units: [1, 5]
+intro_tr: "Ret cümleleri LGS'nin en sevdiği tuzaktır: içinde 'love', 'great', 'thanks' gibi olumlu kelimeler olur ama anlamı HAYIR'dır. Reddin yapısını bilirsen bu tuzağa düşmezsin."
+cards:
+  - title_tr: "Reddin üç parçası"
+    body_tr: "Kibar bir ret genelde üç parçalıdır: yumuşatma (Sorry / I'd love to, but / I'm afraid) + ret (I can't) + sebep (because …, I have to …, I'm busy). Sebep kısmı 'bahane' (excuse) sorularının cevabıdır."
+    examples_en:
+      - "I'd love to, but I'm busy on Saturday."
+      - "I'm afraid I can't. I'm visiting my grandparents."
+      - "Sorry, I can't come over because my cousin is coming."
+    signal_words: ["Sorry, I can't …", "I'm afraid …", "I'd love to, but …", "because …", "I have to …"]
+  - title_tr: "Ekstra kibar ret (Ü5'te tekrar göreceksin)"
+    body_tr: "Önce teşekkür ya da iltifat, sonra 'but'. Başı ne kadar tatlı olursa olsun, 'but'tan sonra gelen RETtir."
+    examples_en:
+      - "Thanks for asking, but I'm afraid I can't."
+      - "That's very kind of you, but I have to study."
+    signal_words: ["Thanks for asking, but …", "That's very kind of you, but …"]
+  - title_tr: "Özür dileme ve rede cevap"
+    body_tr: "Kaçırılan bir şey için özür: I apologise for / I'm sorry for + -ing ya da isim. Reddi duyan kişi anlayışla cevap verir: That's OK. / No problem. / Maybe next time. / What a pity!"
+    examples_en:
+      - "I apologise for missing your party."
+      - "That's OK. Maybe next time."
+      - "No problem. Good luck with your exam!"
+    signal_words: ["I apologise for …", "Maybe next time.", "What a pity!", "No problem."]
+worked_example:
+  id: sd-B02-w
+  type: situation
+  stem_id: S09
+  prompt: "In which of the following does the speaker refuse an invitation?"
+  options:
+    - "That sounds great, but I can't. I have a piano lesson."
+    - "Sure, I'd love to come to your party."
+    - "Would you like to come over after school?"
+    - "Of course! What time does it start?"
+  answer: 0
+  explain_tr: "'That sounds great' ile başlıyor ama 'but I can't' ile reddediyor ve sebebini (piyano dersi) veriyor. 'Sure, I'd love to …' ve 'Of course!' kabul, üçüncü şık ise davetin kendisi."
+  items: [U1-019, U1-007]
+practice:
+  - id: sd-B02-p01
+    type: dialogue_complete
+    stem_id: S01
+    context: "Kaan: Would you like to come to my basketball match on Sunday?\nDuru: ________ I'm visiting my grandparents on Sunday.\nKaan: That's OK. Maybe next time."
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "I'd love to, but I can't."
+      - "Sure, that sounds fun!"
+      - "Yes, I'm free on Sunday."
+      - "How about going together?"
+    answer: 0
+    explain_tr: "Boşluktan sonra bir sebep (dedesini ziyaret) ve Kaan'ın 'Maybe next time' cevabı geliyor; demek ki Duru reddetti. 'Yes, I'm free on Sunday' sonraki cümleyle çelişiyor."
+    items: [U1-011, U1-021]
+  - id: sd-B02-p02
+    type: message_infer
+    stem_id: S04
+    context: "Hi Ece,\nThank you for inviting me to your birthday party on Saturday. Unfortunately, I can't attend because my family is going to Izmir for my cousin's wedding. I'm really sorry. I hope you have a great time!\nLove,\nSelin"
+    prompt: "According to the e-mail, why can't Selin attend the party?"
+    options:
+      - "She is going to a wedding with her family."
+      - "She has to study for an exam."
+      - "She doesn't like birthday parties."
+      - "Her cousin is coming to her house."
+    answer: 0
+    explain_tr: "Sebep 'because'tan sonra: ailesiyle kuzeninin düğünü için İzmir'e gidiyor. 'Her cousin is coming to her house' metindeki 'cousin' kelimesini tekrar eden ama anlamı değiştiren tuzak."
+    items: [U1-003, U1-012]
+  - id: sd-B02-p03
+    type: situation
+    stem_id: S10
+    context: "Bora forgot about Elif's party and didn't go. The next day, he wants to say sorry to her."
+    prompt: "What does Bora say?"
+    options:
+      - "I apologise for missing your party."
+      - "Thanks for the invitation. I'll be there."
+      - "Would you like to come to my party?"
+      - "That's OK. Maybe next time."
+    answer: 0
+    explain_tr: "Parti geçti ve Bora özür dilemek istiyor: 'I apologise for missing …'. 'That's OK. Maybe next time' özür dileyenin değil, özrü kabul edenin cümlesi."
+    items: [U1-002, U1-016]
+  - id: sd-B02-p04
+    type: dialogue_complete
+    stem_id: S01
+    context: "Ece: Can you come to the concert tonight?\nSelin: I'm afraid I can't. I have to study for my maths exam.\nEce: ________"
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "No problem. Good luck with your exam!"
+      - "Great! See you at 7, then."
+      - "Sure, I'd love to."
+      - "Thanks for asking, but I'm busy."
+    answer: 0
+    explain_tr: "Selin reddetti ve sebep olarak sınavını söyledi; Ece anlayışla cevap verir. 'See you at 7, then' ancak kabul edilen bir davetten sonra söylenir."
+    items: [U1-021]
+  - id: sd-B02-p05
+    type: text_infer
+    stem_id: S08
+    context: "Murat Bey: Our English club meets on Wednesday at 4 p.m. Would you like to join?\nKaan: Thanks for asking, but I have basketball practice.\nElif: Sure, why not?\nBora: That's very kind of you, but I'm busy on Wednesdays.\nDuru: That would be great!"
+    prompt: "Who refuses the invitation?"
+    options:
+      - "Kaan and Bora"
+      - "Elif and Duru"
+      - "Kaan and Elif"
+      - "Only Bora"
+    answer: 0
+    explain_tr: "Kaan ve Bora teşekkür/iltifatla başlıyor ama 'but' ile reddediyor. 'Only Bora' yarım doğru: Kaan'ın 'Thanks for asking, but …' cümlesi de bir ret."
+    items: [U1-015, U1-019]
+  - id: sd-B02-p06
+    type: odd_one_out
+    stem_id: S09
+    prompt: "Which of the following is NOT a refusal?"
+    options:
+      - "Sure, it sounds awesome."
+      - "I'd love to, but I can't."
+      - "Thanks for asking, but I'm afraid I can't."
+      - "Sorry, I'm busy that day."
+    answer: 0
+    explain_tr: "Ters soru: üç şık ret, biri değil. 'Sure, it sounds awesome' kabul cümlesi; 'I'd love to, but …' olumlu başlasa da bir ret."
+    items: [U1-022, U1-019]
+tips:
+  - "'but' gördüğün an dur: 'I'd love to, but …', 'Thanks for asking, but …' her zaman RETtir; 'but'tan sonrası bahanedir."
+  - "Boşluktan sonra 'That's OK', 'Maybe next time' ya da 'What a pity!' varsa boşlukta ret vardır."
+  - "'Why can't …?' sorusunun cevabı 'because' ya da 'I have to'dan sonra gelir; metindeki kelimeyi tekrar eden şıkka hemen atlama."
+coach:
+  start: "Bazen 'hayır' demek gerekir, sorun değil! Bugün kibarca reddetmeyi ve ret cümlesini tanımayı öğreniyoruz."
+  end: "Bravo! Artık 'I'd love to, but…' duyunca kanmıyorsun. Bora bile bahanelerini bu kadar iyi tanımıyor."
+status: draft

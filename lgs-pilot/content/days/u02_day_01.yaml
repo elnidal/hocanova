@@ -1,0 +1,284 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 1
+status: draft
+title: "Murat Bey'in büyük ödevi"
+est_minutes: 9
+characters: [Murat Bey, Ece, Selin, Elif, Kaan, Bora, Duru]
+new_items: [U2-001, U2-002, U2-003, U2-004, U2-005, U2-006]
+
+story:
+  - id: s01
+    text: "Pazartesi, İngilizce dersi. Murat Bey tahtaya kocaman harflerle yazdı: \"<en>{U2-001|TEEN} LIFE {U2-003|SURVEY}</en>\""
+  - id: s02
+    text: "Sonra sınıfa döndü: \"<en>You are all {U2-001|teenagers}. So, what do {U2-001|teens} do in their {U2-002|free time}? I want real answers, not 'I sleep'.</en>\""
+  - id: s03
+    text: "Murat Bey: \"<en>Prepare a {U2-003|survey}, ask your schoolmates and show the results with a graph in December.</en>\""
+  - id: s04
+    text: "Sınıfta bir uğultu koptu; Kaan çoktan elini kaldırmıştı: \"<en>Can we work in groups?</en>\" Murat Bey: \"<en>Groups of three. Choose fast.</en>\""
+  - id: s05
+    text: "Ece saniyesinde Selin ile Elif'e döndü; plan defteri açılmıştı bile. Arka sırada Kaan, Bora ve Duru da kendiliğinden bir ekip oldu."
+  - id: s06
+    text: "Duru esnedi: \"<en>Groups? {U1-014|It doesn't matter}. I'm with anyone who has a sofa.</en>\""
+  - id: s07
+    text: "Teneffüste iki ekip kantinin önünde toplandı. Ece: \"<en>First question: what do {U2-001|teenagers} do after school?</en>\""
+  - id: s08
+    text: "Kaan: \"<en>Easy! They {U2-004|hang out} with friends in the park.</en>\" Bora: \"<en>Or at the mall, near the ice cream shop.</en>\""
+  - id: s09
+    text: "Selin: \"<en>{U2-005|In my opinion}, our first question should be simple: 'How much {U2-002|free time} do you have?'</en>\""
+  - id: s10
+    text: "Elif: \"<en>{U2-005|I believe} music is number one. Every {U2-001|teen} listens to music. {U2-006|What about you}, Duru?</en>\""
+  - id: s11
+    text: "Duru: \"<en>Me? In my {U2-002|free time}, I lie on the sofa with Fıstık. That's a hobby, right?</en>\""
+  - id: s12
+    text: "Bora kahkahayı bastı: \"<en>Put it in the {U2-003|survey}: 'Lying on the sofa: yes or no?'</en>\""
+  - id: s13
+    text: "Kaan: \"<en>I {U1-018|prefer} football. {U2-006|What about you}, Bora? Do you {U2-004|hang out} with us after training?</en>\" Bora: \"<en>No, I take selfies. Very bad selfies.</en>\""
+  - id: s14
+    text: "Ece her fikri defterine yazıyor, Selin de hepsini tek tek numaralandırıyordu."
+  - id: s15
+    text: "Ece: \"<en>{U2-005|From my point of view}, ten questions are enough.</en>\""
+  - id: s16
+    text: "Kaan: \"<en>Ten? {U2-005|I believe} three is perfect. Then we can {U2-004|hang out}!</en>\""
+  - id: s17
+    text: "Selin kaşını kaldırdı: \"<en>Kaan, the {U2-003|survey} is our homework. It isn't a game.</en>\""
+  - id: s18
+    text: "Akşam Elif sınıf grubuna yazdı: \"<en>Let's {U1-029|chat} about the questions tonight!</en>\""
+  - id: s19
+    text: "Bora gruba bir fotoğraf attı: kanepede uyuyan Duru ve üstünde horlayan Fıstık. Altında: \"<en>Our first {U2-003|survey} result: 100% of Duru's {U2-002|free time} is sleep.</en>\""
+  - id: s20
+    text: "Duru'nun cevabı bir dakika sonra geldi: \"<en>That's {U1-073|funny}… but true.</en>\""
+  - id: s21
+    text: "Ece: \"<en>OK, team. Tomorrow we try our questions on each other. {U2-006|What about you}, boys? Are you ready?</en>\""
+  - id: s22
+    text: "Kaan: \"<en>Ready! I'm always ready!</en>\" Selin: \"<en>You're always late, Kaan.</en>\" Ekranda gülen surat yağmuru başladı."
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Our survey question: What do teenagers do in their free time?</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>They hang out with friends! What about you, Selin?</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>In my opinion, teens read a lot. I read every evening.</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>I believe teens sleep a lot. Like me. 😴</en>"
+
+steps:
+  - item: U2-001
+    sezdir:
+      id: u2d01-001-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"teen / teenager\" ne anlama geliyordu?"
+      options: ["genç, ergen (13–19 yaş)", "öğretmen", "küçük çocuk", "yaşlı kişi"]
+      answer: 0
+    kullan:
+      id: u2d01-001-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My brother is fifteen years old. He is a ________.</en>"
+      options: ["teenager", "baby", "grandparent", "teacher"]
+      answer: 0
+      explain: "13–19 yaş arası (thirTEEN … nineTEEN) = teenager."
+    sina:
+      id: u2d01-001-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Look at the list. Who is a teenager?</en>"
+      stem: "<en>Ali: 8 years old\nZeynep: 14 years old\nMr Can: 35 years old\nMrs Ayla: 62 years old</en>"
+      options: ["Zeynep", "Ali", "Mr Can", "Mrs Ayla"]
+      answer: 0
+      explain: "Sadece Zeynep 13–19 yaş aralığında."
+  - item: U2-002
+    sezdir:
+      id: u2d01-002-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"free time\" ne anlama geliyordu?"
+      options: ["boş zaman", "ders saati", "harçlık", "ödev"]
+      answer: 0
+    kullan:
+      id: u2d01-002-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I have three exams this week, so I don't have much ________ for games.</en>"
+      options: ["free time", "breakfast", "classroom", "homework"]
+      answer: 0
+      explain: "Sınav haftası = oyuna ayıracak boş zaman yok."
+    sina:
+      id: u2d01-002-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which of the following is TRUE about Selin?</en>"
+      stem: "<en>Selin: On weekdays I go to school and study a lot. At the weekend I have more free time, so I read books and go cycling.</en>"
+      options: ["She reads books in her free time at the weekend.", "She has a lot of free time on weekdays.", "She goes cycling at school.", "She never studies on weekdays."]
+      answer: 0
+  - item: U2-003
+    sezdir:
+      id: u2d01-003-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"survey\" ne anlama geliyordu?"
+      options: ["anket", "sınav", "gezi", "ödül"]
+      answer: 0
+    kullan:
+      id: u2d01-003-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>We asked 50 students about their hobbies. Here are the results of our ________.</en>"
+      options: ["survey", "holiday", "birthday", "invitation"]
+      answer: 0
+    sina:
+      id: u2d01-003-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>According to the survey results, which of the following is TRUE?</en>"
+      stem: "<en>SURVEY: What do you do after school? (40 students)\nwatch TV: 18\ndo sports: 12\nread books: 6\nplay an instrument: 4</en>"
+      options: ["Watching TV is the most popular activity.", "Most students play an instrument.", "Reading books is more popular than doing sports.", "Fifty students answered the survey."]
+      answer: 0
+      explain: "En yüksek sayı 18: watch TV."
+  - item: U2-004
+    sezdir:
+      id: u2d01-004-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"hang out\" ne anlama geliyordu?"
+      options: ["takılmak, vakit geçirmek", "çamaşır asmak", "kavga etmek", "ders çalışmak"]
+      answer: 0
+    kullan:
+      id: u2d01-004-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>On Saturdays, I usually ________ with my friends at the mall. We eat ice cream and chat.</en>"
+      options: ["hang out", "hang up", "fall asleep", "give up"]
+      answer: 0
+      explain: "hang out (with friends) = arkadaşlarla takılmak. hang up = telefonu kapatmak."
+    sina:
+      id: u2d01-004-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Kaan and Bora often hang out in the park after school.\" Which one is CLOSEST in meaning?</en>"
+      options: ["They often spend time together in the park.", "They often clean the park.", "They never go to the park.", "They often study in the library."]
+      answer: 0
+  - item: U2-005
+    sezdir:
+      id: u2d01-005-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"In my opinion\" ne anlama geliyordu?"
+      options: ["bence, bana göre", "bir zamanlar", "maalesef", "kesinlikle hayır"]
+      answer: 0
+    kullan:
+      id: u2d01-005-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: ________, football is more fun than basketball.\nB: Really? I don't agree with you.</en>"
+      options: ["From my point of view", "Nice to meet you", "Thank you very much", "Excuse me"]
+      answer: 0
+      explain: "B \"I don't agree\" diyor; demek ki A bir fikir söyledi."
+    sina:
+      id: u2d01-005-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which sentence gives an OPINION, not a fact?</en>"
+      options: ["I believe teenagers should read more books.", "There are 30 students in our class.", "Our school starts at 8.30.", "Murat Bey is our English teacher."]
+      answer: 0
+      explain: "\"I believe…\" bir fikir bildirir; diğerleri kontrol edilebilen bilgiler."
+  - item: U2-006
+    sezdir:
+      id: u2d01-006-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"What about you?\" ne anlama geliyordu?"
+      options: ["Ya sen? (aynı soruyu karşıya sorma)", "Neredesin?", "Nasılsın?", "Ne zaman?"]
+      answer: 0
+    kullan:
+      id: u2d01-006-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: I love swimming. ________\nB: I prefer cycling.</en>"
+      options: ["What about you?", "Where are you?", "How old are you?", "Who are you?"]
+      answer: 0
+    sina:
+      id: u2d01-006-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Elif: What do you do in your free time, Duru?\nDuru: I play the guitar. ________\nElif: I sing!</en>"
+      options: ["What about you?", "Where is my guitar?", "How much is it?", "What time is it?"]
+      answer: 0
+      explain: "Elif kendi hobisini söylüyor: Duru soruyu ona geri sormuş."
+
+review:
+  - id: u2d01-r01
+    type: dialogue_complete
+    item: U1-026
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece: ________\nSelin: I'd love to! What time does it start?\nEce: At four o'clock.</en>"
+    options: ["Would you like to come to the cinema with me?", "Did you like the cinema?", "Where is the cinema?", "Are you tired today?"]
+    answer: 0
+  - id: u2d01-r02
+    type: message_infer
+    item: U1-018
+    lgs_like: true
+    prompt: "<en>Which of the following is TRUE about Bora?</en>"
+    stem: "<en>Bora: Basketball is OK, but swimming is much better for me. I go to the pool every Sunday.</en>"
+    options: ["He prefers swimming to basketball.", "He prefers basketball to swimming.", "He never goes swimming.", "He plays basketball every Sunday."]
+    answer: 0
+  - id: u2d01-r03
+    type: situation
+    item: U1-014
+    lgs_like: true
+    prompt: "<en>Duru is happy with both choices. What does she say?</en>"
+    stem: "<en>Ece: Pizza or pasta for dinner, Duru?</en>"
+    options: ["It doesn't matter.", "I hate pizza.", "Sorry, I can't.", "That's not fair."]
+    answer: 0
+  - id: u2d01-r04
+    type: trait_match
+    item: U1-085
+    lgs_like: true
+    prompt: "<en>Which word describes Selin?</en>"
+    stem: "<en>Selin waits for her friends for a long time and never gets angry.</en>"
+    options: ["patient", "jealous", "stubborn", "mean"]
+    answer: 0
+  - id: u2d01-r05
+    type: message_infer
+    item: U1-100
+    lgs_like: true
+    prompt: "<en>How did Kaan find the ride?</en>"
+    stem: "<en>Kaan: The roller coaster was amazing! My heart was beating fast and I screamed all the time!</en>"
+    options: ["thrilling", "boring", "calm", "patient"]
+    answer: 0
+
+tips:
+  - type: ilginc_bilgi
+    refs: [U2-001]
+    text: "teenager kelimesi -teen ile biten yaşlardan gelir: thirTEEN (13) … nineTEEN (19). 12 (twelve) ve 20 (twenty) -teen ile bitmez, o yüzden teenager sayılmaz."
+  - type: mini_dilbilgisi
+    refs: [U2-004]
+    text: "hang out WITH + kişi, AT / IN + yer: \"I hang out with my friends at the mall.\" Dikkat: hang up = telefonu kapatmak."
+  - type: lgs_taktigi
+    refs: [U2-005]
+    text: "In my opinion, From my point of view, I believe, I think: hepsi FİKİR bildirir. LGS'de \"Which sentence gives an opinion?\" sorusunda bu kalıpları ara."
+  - type: tuzak
+    refs: [U2-006]
+    text: "\"What about you?\" yeni bir soru değil, karşıdakine AYNI soruyu geri sorar. \"I like pizza. What about you?\" = \"Ben pizza severim, ya sen?\""
+
+coach:
+  start: "Hoş geldin! Ünite 2 başlıyor. Murat Bey sınıfa kocaman bir ödev verdi ve Duru'nun hobisi tartışma yarattı 🛋️"
+  end_good: "Harika başlangıç! Artık fikrini söyleyip karşı soru sorabiliyorsun. Yarın: Duru'nun tek cevabı."
+  end_mixed: "İyi iş! {weak} biraz kafa karıştırdı, merak etme: yarın onu tekrar soracağım."
+
+notifications:
+  morning: "Murat Bey'in yeni ödevi geldi, ekipler kuruluyor 📋 Bugünün 6 ifadesi hazır."
+  evening: "Duru'nun hobisi kanepede uzanmak. Bu bir hobi sayılır mı? 9 dakikada öğren."
+  review: "Tek soru: \"What about you?\" diye soran biri ne istiyor?"
+
+editor:
+  z07: {U2-001: BEKLIYOR, U2-002: BEKLIYOR, U2-003: BEKLIYOR, U2-004: BEKLIYOR, U2-005: BEKLIYOR, U2-006: BEKLIYOR}

@@ -1,0 +1,55 @@
+# LGS Sınav Dili ek dersi — ders dosyası şeması (content/exam_course/sd_XNN.yaml)
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+required: [schema_version, id, module, title, unlock_after, minutes, intro_tr, cards, worked_example, practice, tips, coach]
+additionalProperties: false
+$defs:
+  q:
+    type: object
+    required: [id, type, prompt, options, answer, explain_tr]
+    additionalProperties: false
+    properties:
+      id: {type: string, pattern: "^sd-[ABC][0-9]{2}-(w|p[0-9]{2})$"}
+      type: {enum: [dialogue_complete, message_infer, situation, synonym, odd_one_out, gap_fill, table_graph, process_order, text_infer]}
+      stem_id: {type: string, pattern: "^S[0-9]{2}$"}
+      context: {type: string}
+      prompt: {type: string}
+      options: {type: array, minItems: 3, maxItems: 4, items: {type: string}}
+      answer: {const: 0}
+      explain_tr: {type: string}
+      items: {type: array, items: {type: string, pattern: "^U[0-9]{1,2}-[0-9]{3}$"}}
+properties:
+  schema_version: {const: 1}
+  id: {type: string, pattern: "^SD-[ABC][0-9]{2}$"}
+  module: {enum: [A, B, C]}
+  title: {type: string}
+  unlock_after: {type: string, description: "ör. 'Ü1 G3' ya da 'Ü4 sonu'"}
+  minutes: {type: integer, minimum: 3, maximum: 8}
+  stems: {type: array, items: {type: string, pattern: "^S[0-9]{2}$"}}
+  functions: {type: array, items: {type: string}}
+  units: {type: array, items: {type: integer, minimum: 1, maximum: 10}}
+  intro_tr: {type: string, maxLength: 400}
+  cards:
+    type: array
+    minItems: 2
+    maxItems: 5
+    items:
+      type: object
+      required: [title_tr, body_tr]
+      additionalProperties: false
+      properties:
+        title_tr: {type: string}
+        body_tr: {type: string}
+        examples_en: {type: array, items: {type: string}}
+        signal_words: {type: array, items: {type: string}}
+  worked_example: {$ref: "#/$defs/q"}
+  practice: {type: array, minItems: 5, maxItems: 8, items: {$ref: "#/$defs/q"}}
+  tips: {type: array, minItems: 1, maxItems: 3, items: {type: string}}
+  coach:
+    type: object
+    required: [start, end]
+    additionalProperties: false
+    properties:
+      start: {type: string, maxLength: 140}
+      end: {type: string, maxLength: 140}
+  status: {enum: [draft, approved]}

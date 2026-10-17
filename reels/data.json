@@ -1,0 +1,11 @@
+{"words": [
+ {"word": "share", "badge": "Sınavlarda 7 kez", "opts": ["saklamak", "paylaşmak", "satın almak", "unutmak"], "ans": 1,
+  "nova": "Bu kelime LGS'de <b>3 kez</b> çıktı!",
+  "ex": "Ece always <u>shares</u> her snacks with Kaan."},
+ {"word": "refuse", "badge": "Sınavlarda 6 kez", "opts": ["kabul etmek", "davet etmek", "reddetmek", "özür dilemek"], "ans": 2,
+  "nova": "Davet sorularının <b>gözdesi</b>!",
+  "ex": "Bora <u>refused</u> the invitation. He had a drum lesson."},
+ {"word": "count on", "badge": "LGS'de çıktı", "opts": ["saymak, hesaplamak", "sıraya girmek", "beklemek", "güvenmek, bel bağlamak"], "ans": 3,
+  "nova": "Dikkat, <b>tuzak</b> şık var!",
+  "ex": "Don't worry, Selin. You can <u>count on</u> me!"}
+]}

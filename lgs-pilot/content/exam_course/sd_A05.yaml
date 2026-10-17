@@ -1,0 +1,135 @@
+# LGS Sınav Dili — A05 Başlık ve ana fikir (S05). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-A05
+module: A
+title: "Başlık ve ana fikir"
+unlock_after: "Ü2 G15"
+minutes: 5
+stems: [S05]
+units: [1, 2]
+intro_tr: "'What is the best title?' ve 'What is the text mainly about?' sorularında metnin her kelimesini anlaman gerekmez. Metnin TAMAMINI kapsayan şıkkı bulmayı öğrenirsen bu soru hızlı bir puandır."
+cards:
+  - title_tr: "Başlık bir şemsiyedir"
+    body_tr: "İyi başlık metindeki bütün cümleleri altına alır. Her şıkkı sor: 'Metindeki cümlelerin hepsi bu başlığın altına sığıyor mu?' Sığmayan cümle varsa şık dar kalmıştır."
+    examples_en:
+      - "What is the best title for the text?"
+      - "What is the text mainly about?"
+      - "What is the main idea of the text?"
+    signal_words: ["title", "mainly about", "main idea"]
+  - title_tr: "Üç yanlış şık türü"
+    body_tr: "ÇOK DAR: metindeki tek bir ayrıntıyı başlık yapar (en çekici çeldirici budur). ÇOK GENİŞ: metnin konusunu aşar (Teenagers Around the World). KONU DIŞI: metinde hiç geçmeyen bir konu."
+    examples_en:
+      - "Text about Kaan's sports  → 'Kaan's Sporty Life' ✓"
+      - "'Kaan's Favourite Swimming Pool'  → çok dar ✗"
+      - "'Sports Around the World'  → çok geniş ✗"
+  - title_tr: "İpuçları: ilk cümle, son cümle, tekrar"
+    body_tr: "Konu çoğunlukla ilk cümlede verilir, son cümlede özetlenir. Metinde en çok tekrar eden kelime (music, sport, fashion) da konuyu ele verir."
+    signal_words: ["first sentence", "last sentence", "repeated words"]
+worked_example:
+  id: sd-A05-w
+  type: text_infer
+  stem_id: S05
+  context: |-
+    Many teenagers want to keep up with the latest fashion. They buy trendy clothes and share photos of their outfits on social media. But some teens don't care about fashion; they prefer comfortable, casual clothes. In my opinion, everyone should wear what they like.
+  prompt: "What is the best title for the text?"
+  options:
+    - "Teens and Fashion"
+    - "How to Take a Good Selfie"
+    - "Smart Clothes for School"
+    - "The Most Expensive Clothes in the World"
+  answer: 0
+  explain_tr: "Metin baştan sona gençlerin modaya bakışını anlatıyor. Sosyal medyadan söz edilmesi selfie şıkkını çekici yapıyor ama bu yalnız bir ayrıntı; okul kıyafeti ve pahalı kıyafetler hiç geçmiyor."
+  items: [U2-063, U2-062, U2-066, U2-068, U2-064, U2-005]
+practice:
+  - id: sd-A05-p01
+    type: text_infer
+    stem_id: S05
+    context: |-
+      Kaan goes to the gym three times a week. He works out for an hour and then he swims. He also does karate on Saturdays. He says sport keeps him energetic and fit.
+    prompt: "What is the best title for the text?"
+    options:
+      - "Kaan's Sporty Life"
+      - "Kaan's Favourite Swimming Pool"
+      - "How to Learn Karate"
+      - "Kaan's School Subjects"
+    answer: 0
+    explain_tr: "Spor salonu, yüzme ve karate: metnin tamamı Kaan'ın sporla dolu hayatı. 'Swimming Pool' tek bir ayrıntıyı başlık yapıyor, çok dar."
+    items: [U2-031, U2-032, U2-038, U2-035, U2-034, U2-052]
+  - id: sd-A05-p02
+    type: text_infer
+    stem_id: S05
+    context: |-
+      Elif listens to music most of the time. She is really into pop music and she knows all the new songs. She also likes folk music because her grandmother often sings folk songs at home. But she can't stand rap; she thinks it's too loud.
+    prompt: "What is the text mainly about?"
+    options:
+      - "Elif's taste in music"
+      - "Elif's grandmother"
+      - "The history of folk music"
+      - "Why rap music is popular"
+    answer: 0
+    explain_tr: "Metin Elif'in sevdiği ve sevmediği müzik türlerini anlatıyor. Büyükannesi yalnız halk müziğini neden sevdiğini açıklayan bir ayrıntı."
+    items: [U2-047, U2-016, U2-026, U2-013, U2-027, U2-021]
+  - id: sd-A05-p03
+    type: text_infer
+    stem_id: S05
+    context: |-
+      Duru always gets up at 7 a.m. First, she takes Fıstık for a walk. Then she has breakfast and goes to school. After school, she usually practises the guitar for an hour. She rarely watches TV in the evening; she usually reads a book before bed.
+    prompt: "What is the best title for the text?"
+    options:
+      - "A Day in Duru's Life"
+      - "Duru's Dog Fıstık"
+      - "How to Play the Guitar"
+      - "Duru's Favourite Book"
+    answer: 0
+    explain_tr: "Sabahtan yatana kadar Duru'nun günlük rutini anlatılıyor. Fıstık yalnız sabah yürüyüşünde geçiyor; onu başlık yapmak metnin çoğunu dışarıda bırakır."
+    items: [U2-043, U2-044, U2-049]
+  - id: sd-A05-p04
+    type: text_infer
+    stem_id: S05
+    context: |-
+      Murat Bey: I recommend the film "The Little Star" to all of you. It's educational and entertaining at the same time. The story teaches us to be kind to others. You can watch it with your family this weekend.
+    prompt: "What is the main idea of the text?"
+    options:
+      - "Murat Bey suggests a film to his students."
+      - "Murat Bey gives his students homework for the weekend."
+      - "Murat Bey doesn't enjoy watching films."
+      - "Students must watch films at school."
+    answer: 0
+    explain_tr: "'I recommend the film' ana fikri ilk cümlede veriyor. 'Homework for the weekend' çekici çünkü hafta sonundan söz ediliyor, ama bu bir öneri, ödev değil."
+    items: [U2-079, U2-080, U2-082, U2-083]
+  - id: sd-A05-p05
+    type: text_infer
+    stem_id: S05
+    context: |-
+      Selin did a survey in her class about free time. Many students hang out with their friends at weekends. Some of them surf the internet every day, and a few students read books regularly. Only two students do sport after school.
+    prompt: "What is the best title for the text?"
+    options:
+      - "Free Time Activities in Selin's Class"
+      - "Teenagers Around the World"
+      - "Why Students Should Read Books"
+      - "Selin's Favourite Sport"
+    answer: 0
+    explain_tr: "Metin Selin'in sınıfındaki anketin sonuçlarını veriyor. 'Teenagers Around the World' çok geniş: anket yalnız bir sınıfta yapılmış."
+    items: [U2-003, U2-002, U2-004, U2-056, U2-045]
+  - id: sd-A05-p06
+    type: text_infer
+    stem_id: S05
+    context: |-
+      Bora was a bit unreliable in the past. He often broke his promises and came late to band practice. But this year he is different. He comes to every practice on time and he always keeps his promises. Now his friends can really count on him.
+    prompt: "What is the text mainly about?"
+    options:
+      - "How Bora has changed"
+      - "Bora's drum lessons"
+      - "Why band practice is important"
+      - "Bora's new friends"
+    answer: 0
+    explain_tr: "Metin Bora'nın eskiden nasıl olduğunu ve şimdi nasıl değiştiğini anlatıyor ('But this year he is different'). Prova metinde geçiyor ama provanın önemi anlatılmıyor."
+    items: [U1-068, U1-050, U1-054, U1-051]
+tips:
+  - "Önce şıkları oku, sonra metni: her cümlede 'bu hangi şıkkın altına girer?' diye düşün."
+  - "Metinde bir kez geçen ayrıntıyı başlık yapan şıkka dikkat: en çekici yanlış odur."
+  - "'But …' ile başlayan cümle çoğu zaman metnin asıl konusunu gösterir."
+coach:
+  start: "Bugün metne kuş bakışı bakıyoruz! Ayrıntılarda boğulmadan tüm metni kapsayan şemsiyeyi bulacağız."
+  end: "Süper! Dar, geniş, konu dışı: üç tuzağı da tanıyorsun. Başlık soruları artık senin bölgen!"
+status: draft

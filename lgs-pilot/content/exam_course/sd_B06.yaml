@@ -1,0 +1,140 @@
+schema_version: 1
+id: SD-B06
+module: B
+title: "Telefon dili"
+unlock_after: "Ü4 sonu"
+minutes: 6
+stems: [S01, S02, S08, S10, S11, S12]
+functions: ["Telefon konuşmasını başlatmak ve birini istemek", "Bekletmek ve bağlamak", "Mesaj bırakmak ve almak", "Hat sorunu ve tekrar istemek", "Konuşmayı bitirmek"]
+units: [4]
+intro_tr: "Telefon diyalogları LGS'nin klasiğidir: kim arıyor, kimi arıyor, neden arıyor, mesajı kim alıyor? Telefona özel kalıpları bilirsen bu soruların çoğu ilk iki satırda çözülür."
+cards:
+  - title_tr: "Açılış: kendini tanıtmak, birini istemek"
+    body_tr: "Telefonda 'I am Ece' denmez; 'This is Ece (calling/speaking).' denir. Birini istemek: May I / Could I speak to …? / Is … there / in? Aranan kişi telefondaysa 'Speaking.' (Benim.) der. Açan kişi 'Who's calling, please?' diye sorar."
+    examples_en:
+      - "Hello, this is Ece. Is Duru in?"
+      - "Could I speak to Mr Demir, please?"
+      - "Who's calling, please? – This is Kaan."
+    signal_words: ["This is …", "May I / Could I speak to …?", "Is … there?", "Speaking.", "Who's calling?"]
+  - title_tr: "Bekletme, bağlama, ulaşılamama"
+    body_tr: "Hold on / Hang on a minute = bekleyin. I'll get her. = Onu çağırıyorum. I'll put you through. = Sizi bağlıyorum. The line is engaged. = Hat meşgul. I'm afraid she isn't available at the moment. = Şu an müsait değil."
+    examples_en:
+      - "Hang on a minute. I'll get him."
+      - "I'll put you through to the music room."
+      - "I'm afraid she isn't available at the moment."
+    signal_words: ["hold on", "hang on", "put through", "engaged", "available"]
+  - title_tr: "Mesaj bırakmak ve almak"
+    body_tr: "Can I take a message? (Mesaj alayım mı?) · Would you like to leave a message? (Mesaj bırakmak ister misiniz?) · Could you tell her to call me back? · I'll call back later. 'take a message' mesajı ALAN, 'leave a message' mesajı BIRAKAN kişinin işidir."
+    examples_en:
+      - "Can I take a message?"
+      - "Could you ask her to call me back, please?"
+      - "No, thanks. I'll call back later."
+    signal_words: ["take a message", "leave a message", "call back", "get back to", "memo"]
+  - title_tr: "Hat sorunu ve kapanış"
+    body_tr: "Sorry, it's a bad line. / Could you speak louder? / Can you repeat that? / Pardon? Kapanışta: Thanks for calling. / Talk to you soon. / Take care. Kötü bir haber duyunca: I'm sorry to hear that. Get well soon!"
+    examples_en:
+      - "Sorry, it's a bad line. Can you repeat that?"
+      - "Thanks for calling. Talk to you soon!"
+      - "I'm sorry to hear that. Get well soon!"
+    signal_words: ["bad line", "Pardon?", "Thanks for calling.", "I'm sorry to hear that."]
+worked_example:
+  id: sd-B06-w
+  type: dialogue_complete
+  stem_id: S01
+  context: "Duru's mum: Hello?\nKaan: Hello, this is Kaan. ________\nDuru's mum: I'm afraid she isn't at home. Can I take a message?"
+  prompt: "Which of the following completes the dialogue?"
+  options:
+    - "Can I speak to Duru, please?"
+    - "Who's calling, please?"
+    - "Thanks for calling."
+    - "Sorry, wrong number."
+  answer: 0
+  explain_tr: "Anne 'she isn't at home' diyor; demek ki Kaan birini (Duru'yu) istedi. 'Who's calling, please?' telefonu açanın sorusu; Kaan zaten 'this is Kaan' diyerek kendini tanıttı."
+  items: [U4-031, U4-026, U4-023, U4-009]
+practice:
+  - id: sd-B06-p01
+    type: message_infer
+    stem_id: S11
+    context: "Secretary: Good morning, City Music School. How can I help you?\nEce: Hello, I'm calling to book the big music room for Saturday. Our band needs it for two hours.\nSecretary: Hold on, please. I'll check."
+    prompt: "Why is Ece calling?"
+    options:
+      - "to make a reservation"
+      - "to make a complaint"
+      - "to talk to her teacher"
+      - "to return a product"
+    answer: 0
+    explain_tr: "'I'm calling to book the big music room' → yer ayırtmak, yani rezervasyon (book = reserve). Şikâyet ya da iade için 'I'd like to make a complaint / return …' denirdi."
+    items: [U4-024, U4-035, U4-020, U4-007]
+  - id: sd-B06-p02
+    type: text_infer
+    stem_id: S08
+    context: "Selin: Hello?\nBora: Hi, Selin. This is Bora. Is Elif there?\nSelin: Sorry, she's out with Pamuk. Would you like to leave a message?\nBora: Yes, please. Could you tell her to call me back?\nSelin: Sure, I'll give her the message."
+    prompt: "Who will probably call Bora back?"
+    options:
+      - "Elif"
+      - "Selin"
+      - "Pamuk"
+      - "Bora's mum"
+    answer: 0
+    explain_tr: "Bora Elif'i aradı ve ona geri aramasını söyleyen bir mesaj bıraktı. Selin yalnızca mesajı ileten kişi; Pamuk ise Elif'in köpeği!"
+    items: [U4-009, U4-001]
+  - id: sd-B06-p03
+    type: situation
+    stem_id: S10
+    context: "Murat Bey calls the school office and wants to speak to the head teacher. Her line is engaged, so the secretary asks him to wait."
+    prompt: "What does the secretary say?"
+    options:
+      - "Can you hold on a moment, please?"
+      - "Can I take a message?"
+      - "Thanks for calling."
+      - "Who's calling, please?"
+    answer: 0
+    explain_tr: "Sekreter beklemesini istiyor: 'hold on'. 'Can I take a message?' hat meşgulken söylenebilir ama beklemeyi değil mesaj almayı teklif eder."
+    items: [U4-007, U4-016, U4-042]
+  - id: sd-B06-p04
+    type: synonym
+    stem_id: S12
+    context: "Ece: Sorry, I'm busy now. I'll call you back in an hour."
+    prompt: "Which phrase can replace 'call you back'?"
+    options:
+      - "get back to you"
+      - "hang up on you"
+      - "put you through"
+      - "pick you up"
+    answer: 0
+    explain_tr: "call back = get back to = geri dönmek, geri aramak. 'pick you up' telefonu açmak değil, birini arabayla almak anlamına gelir; 'hang up' telefonu kapatmaktır."
+    items: [U4-001, U4-006, U4-012]
+  - id: sd-B06-p05
+    type: dialogue_complete
+    stem_id: S01
+    context: "Duru: I can't come to the café today. I've got a bad cold.\nSelin: ________ Get well soon!\nDuru: Thanks. Talk to you soon."
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "I'm sorry to hear that."
+      - "That sounds fun!"
+      - "Thanks for the invitation."
+      - "Hang on a minute."
+    answer: 0
+    explain_tr: "Duru hasta; Selin üzüntüsünü belirtip geçmiş olsun der. 'That sounds fun!' kötü bir habere verilecek cevap değil."
+    items: [U4-025, U4-028]
+  - id: sd-B06-p06
+    type: text_infer
+    stem_id: S02
+    context: "MEMO\nTo: Mr Demir\nFrom: Selin's mum\nMessage: The parents' meeting is on Thursday, not Wednesday. Please call her back after 6 p.m.\nPhone: 0532 555 18 27"
+    prompt: "Which question is NOT answered in the memo?"
+    options:
+      - "What time is the meeting?"
+      - "Who left the message?"
+      - "Which day is the meeting?"
+      - "When should Mr Demir call back?"
+    answer: 0
+    explain_tr: "Mesajı bırakan (Selin's mum), günü (Thursday) ve geri arama saati (after 6 p.m.) yazıyor; toplantının saati yazmıyor. '6 p.m.' toplantının değil, geri aramanın saati."
+    items: [U4-010, U4-001]
+tips:
+  - "Diyaloğun başında üç kişiyi not et: arayan, aranan, aracı (anne, sekreter). 'Who …?' soruları bu nottan çözülür."
+  - "Amaç sorusunda cevap genellikle 'I'm calling to / about …' cümlesindedir; selamlaşmayı atla."
+  - "take a message = mesajı alan · leave a message = mesajı bırakan. Şıklarda bu ikisi sık sık yer değiştirir."
+coach:
+  start: "Ring ring! Telefon çalıyor. Bugün kim arıyor, kimi arıyor, neden arıyor, hepsini çözüyoruz."
+  end: "Harikasın! Artık telefon diyaloglarında kaybolmuyorsun. Thanks for calling, talk to you soon!"
+status: draft

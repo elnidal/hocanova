@@ -1,0 +1,302 @@
+schema_version: 1
+program: lgs
+unit: 5
+day: 7
+status: draft
+title: "Okul yarın tatil mi?"
+est_minutes: 10
+characters: [Kaan, Selin, Ece, Bora, Duru, Elif, Murat Bey]
+new_items: [U5-016, U5-022, U5-038, U5-039, U5-042, U5-046]
+
+story:
+  - id: s01
+    text: "Salı akşamı, saat dokuzu beş geçe. Sınıf grubuna bir mesaj düştü ve telefonlar arka arkaya titremeye başladı."
+  - id: s02
+    text: "Mesajda karlı bir okul bahçesinin fotoğrafı ve kocaman harfler vardı: \"<en>BREAKING NEWS! No school tomorrow because of heavy snow! Share it with everyone! ❄️</en>\" Altında hiç tanınmayan bir hesap adı: @izmir_flash_news."
+  - id: s03
+    text: "Kaan saniyesinde yazdı: \"<en>YESSS! No school! {U5-059|Why don't we} {U2-058|share it on social media}? My followers must know!</en>\""
+  - id: s04
+    text: "Selin'in cevabı da aynı hızla geldi: \"<en>Wait, Kaan. Who wrote this? Where does this {U5-042|information} come from?</en>\""
+  - id: s05
+    text: "Kaan: \"<en>{U5-057|What do you mean}? It's news! There's a photo! A photo can't lie!</en>\""
+  - id: s06
+    text: "Ece'den bir ekran görüntüsü geldi: \"<en>Er… my weather app says sunny and 18 degrees tomorrow. Is my app {U5-015|broken}?</en>\""
+  - id: s07
+    text: "Selin'in kaşı ekranın öbür ucundan bile hissediliyordu: \"<en>I {U2-054|follow the news} every morning. There was no snow warning for İzmir. Give me five minutes. I'll {U5-038|do some research}.</en>\""
+  - id: s08
+    text: "Bora: \"<en>{U5-038|Research}? At nine p.m.? OK, Selin. After my account problem, I don't trust anything on the Internet.</en>\" Hesabını annesiyle geri alalı çok olmamıştı."
+  - id: s09
+    text: "Selin masasına geçti: \"<en>I'm {U5-023|turning on} my laptop.</en>\" Ekranda bir {U5-016|web browser} belirdi; Selin {U5-022|search engine}'e üç kelime yazdı: \"<en>İzmir snow tomorrow</en>\"."
+  - id: s10
+    text: "Birkaç saniye sonra gruba yazdı: \"<en>Results: 'A sunny week in İzmir.' 'Snow in İzmir? Very rare!' And look: the same photo is on ten websites. It's from a school in another country, from 2019.</en>\""
+  - id: s11
+    text: "Elif: \"<en>Wow! Selin, how do you do that?</en>\" Selin: \"<en>Easy. I {U5-022|search for} the news on a {U5-022|search engine}, and then I check two or three websites. Very {U5-046|useful}!</en>\""
+  - id: s12
+    text: "Selin: \"<en>Next: the school's official website.</en>\" Bora: \"<en>Which {U5-016|browser} do you use? Mine only remembers karate cat videos.</en>\""
+  - id: s13
+    text: "Okulun sayfası ekrana geldi. Selin: \"<en>I'm {U5-016|browsing} the school website now. It's {U5-020|online} and it's {U5-026|working properly}. There's only one announcement…</en>\""
+  - id: s14
+    text: "Duyuru tek satırdı: \"<en>Safer Internet Week: Think before you share!</en>\" Grupta kısa bir sessizlik oldu."
+  - id: s15
+    text: "Duru, kanepesinden bu akşamki ilk mesajını yazdı: \"<en>Maybe we need an {U5-039|expert}. A weather person. A real one.</en>\""
+  - id: s16
+    text: "Selin bir bağlantı attı: \"<en>Already found one. A weather {U5-039|expert} from the university writes: 'Sunny and warm all week. Snow in İzmir? Not this year.'</en>\""
+  - id: s17
+    text: "Kaan: \"<en>OK, Detective Selin. One more piece of {U5-042|information}, please. Is the news fake?</en>\""
+  - id: s18
+    text: "Selin: \"<en>Yes. One unknown account says snow. The {U5-039|experts}, the school website and Ece's app say sun.</en>\" Ece: \"<en>So my app isn't {U5-015|broken}! Good. I'm not buying snow boots tonight.</en>\""
+  - id: s19
+    text: "İşte o an Kaan itiraf etti. Mesajı kopyalamış, göndermek üzereymiş; parmağı tuşun bir milim üstündeymiş: \"<en>I almost sent it to my basketball team. And to my grandma. And to Murat Bey!</en>\""
+  - id: s20
+    text: "Duru: \"<en>Your fingers {U1-075|are always in a hurry}, Kaan. Your brain comes later. By bus.</en>\" Kaan güldü; bu kez itiraz edemedi."
+  - id: s21
+    text: "Kaan: \"<en>Fair. OK, I'm {U5-018|deleting} it. New rule for me: first I {U5-022|search for} it, then I share it.</en>\""
+  - id: s22
+    text: "Sonra sınıf grubuna, hayatında ilk kez göndermeden önce iki kez okuyarak yazdı: \"<en>Guys, the snow news is FAKE. Selin {U5-038|did research}. There is school tomorrow. Sorry!</en>\""
+  - id: s23
+    text: "Elif: \"<en>Selin, this was so {U5-046|useful}! You're a real news detective!</en>\" Bora: \"<en>Kaan, who are you? Where is the real Kaan?</en>\""
+  - id: s24
+    text: "Saat onda Murat Bey de yazdı: \"<en>Well done, Selin. And well done, Kaan, for stopping. Real {U5-042|information} comes from real sources. A {U5-022|search engine} is {U5-046|useful}, but a good question is even better: 'Who wrote this?' And yes, there IS school tomorrow. 😊</en>\""
+  - id: s25
+    text: "Kaan son sözü yine kaptı: \"<en>Tomorrow I'm writing rule number one for our guide: 'Ask Selin first.'</en>\" Selin kaşını kaldırdı, ama bu kez gülümseyerek."
+
+scene:
+  - id: c01
+    speaker: Kaan
+    text: "<en>Why don't we share the snow news? No school tomorrow!</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>Wait. I did some research with a search engine. The information is wrong.</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>What do you mean? There's a photo!</en>"
+  - id: c04
+    speaker: Selin
+    text: "<en>The photo is old, and a weather expert says it'll be sunny. The school website is more useful than a photo.</en>"
+
+steps:
+  - item: U5-016
+    sezdir:
+      id: u5d07-016-z
+      type: meaning
+      context: s09
+      prompt: "Hikâyede \"Ekranda bir web browser belirdi\" cümlesinde \"web browser\" ne anlama geliyordu?"
+      options: ["internet tarayıcısı", "arama sonucu", "şifre ekranı", "kamera uygulaması"]
+      answer: 0
+    kullan:
+      id: u5d07-016-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>To visit a website, first open a web ________ like ClipFox, and then type the address.</en>"
+      options: ["browser", "password", "follower", "notification"]
+      answer: 0
+      explain: "Web sitelerini açıp gezmek için kullanılan program web browser'dır; fiili browse."
+    sina:
+      id: u5d07-016-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word can replace the underlined word?</en>"
+      stem: "<en>Elif: What do you usually do online after school?\nKaan: I usually <u>browse</u> sports websites and read about basketball.</en>"
+      options: ["surf", "upload", "delete", "turn off"]
+      answer: 0
+      explain: "browse websites = internette sayfadan sayfaya gezinmek; Ü2'deki surf the Internet ile aynı anlam."
+  - item: U5-022
+    sezdir:
+      id: u5d07-022-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede Selin'in \"I search for the news on a search engine, and then I check two or three websites\" cümlesinde \"search for\" ne anlama geliyordu?"
+      options: ["aramak, araştırmak", "paylaşmak", "silmek", "indirmek"]
+      answer: 0
+    kullan:
+      id: u5d07-022-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>I don't know the capital city of Australia. I'll ________ it on the Internet.</en>"
+      options: ["search for", "log out of", "upload", "turn off"]
+      answer: 0
+      explain: "Bilmediğin bir şeyi internette bulmaya çalışmak search for'dur; aranan şey for'dan sonra gelir."
+    sina:
+      id: u5d07-022-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Selin's tips: When you see surprising news, don't share it immediately. Search for it on a search engine and look at two or three different websites. Then decide.</en>"
+      options: ["Selin suggests checking the news on more than one website.", "Selin shares surprising news immediately.", "Selin never uses search engines.", "Selin reads only one website."]
+      answer: 0
+      explain: "Metin haberi arama motorunda arayıp iki üç farklı sitede kontrol etmeyi öneriyor."
+  - item: U5-038
+    sezdir:
+      id: u5d07-038-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede Selin'in \"Give me five minutes. I'll do some research.\" cümlesinde \"do research\" ne anlama geliyordu?"
+      options: ["araştırma yapmak", "ödev teslim etmek", "haber yazmak", "uyumak"]
+      answer: 0
+    kullan:
+      id: u5d07-038-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>For our project about sea animals, we need to ________ in the library and on the Internet.</en>"
+      options: ["do research", "take a selfie", "hang up", "log out"]
+      answer: 0
+      explain: "Bir konu hakkında kaynaklara bakarak öğrenmek do research'tür; make research denmez."
+    sina:
+      id: u5d07-038-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which of the following can be the missing question?</en>"
+      stem: "<en>Murat Bey: ________\nElif: I mostly use it for doing research for my homework and chatting with my friends.</en>"
+      options: ["What do you use the Internet for?", "How often do you go to the library?", "Who is your favourite singer?", "Where do you do your homework?"]
+      answer: 0
+      explain: "Cevap 'it'i ne için kullandığını anlatıyor (doing research, chatting); bu, kullanım amacını soran sorunun cevabı."
+  - item: U5-039
+    sezdir:
+      id: u5d07-039-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"A weather expert from the university writes: 'Sunny and warm all week.'\" cümlesinde \"expert\" ne anlama geliyordu?"
+      options: ["uzman", "öğrenci", "hayran", "komşu"]
+      answer: 0
+    kullan:
+      id: u5d07-039-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>Dr Aydın knows everything about computers. People call him when they have a problem. He's a computer ________ .</en>"
+      options: ["expert", "follower", "browser", "stranger"]
+      answer: 0
+      explain: "Bir konuyu çok iyi bilen, herkesin danıştığı kişi expert'tir."
+    sina:
+      id: u5d07-039-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we say about Ms Kaya?</en>"
+      stem: "<en>Ms Kaya started working with sea turtles twenty years ago. She writes books about them, and TV channels often ask her questions about the sea.</en>"
+      options: ["She is an expert on sea turtles.", "She is a stranger to TV channels.", "She is addicted to the Internet.", "She has never seen a sea turtle."]
+      answer: 0
+      explain: "Yirmi yıllık deneyim, kitaplar ve televizyonların ona soru sorması onun bu konuda uzman olduğunu gösteriyor."
+  - item: U5-042
+    sezdir:
+      id: u5d07-042-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede Selin'in \"Where does this information come from?\" cümlesinde \"information\" ne anlama geliyordu?"
+      options: ["bilgi", "fotoğraf", "şifre", "hava durumu"]
+      answer: 0
+    kullan:
+      id: u5d07-042-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>Can you give me some ________ about the school trip? What time does the bus leave?</en>"
+      options: ["information", "informations", "an information"]
+      answer: 0
+      explain: "information sayılamaz: çoğul -s ve a/an almaz; some information ya da a piece of information denir."
+    sina:
+      id: u5d07-042-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>Why is Elif writing this message?</en>"
+      stem: "<en>Hi Murat Bey, I'm writing our Safer Internet guide with Ece and Selin. Can you give me some information about it? How many rules do we need, and when do we bring it to class? Thanks, Elif</en>"
+      options: ["to get information about the guide", "to make a complaint about the guide", "to invite Murat Bey to a concert", "to apologise for being late"]
+      answer: 0
+      explain: "Elif rehberle ilgili iki soru soruyor; amacı bilgi almak."
+  - item: U5-046
+    sezdir:
+      id: u5d07-046-z
+      type: meaning
+      context: s23
+      prompt: "Hikâyede Elif'in \"Selin, this was so useful! You're a real news detective!\" cümlesinde \"useful\" ne anlama geliyordu?"
+      options: ["yararlı, işe yarar", "sıkıcı", "tehlikeli", "komik"]
+      answer: 0
+    kullan:
+      id: u5d07-046-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>This app is really ________ . It tells me when my bus will arrive.</en>"
+      options: ["useful", "broken", "boring", "offline"]
+      answer: 0
+      explain: "İşe yarayan, bir sorunu kolaylaştıran şey useful'dır."
+    sina:
+      id: u5d07-046-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word is closest in meaning to the underlined word?</en>"
+      stem: "<en>Ece: I found a great website for our English project. It has a lot of <u>useful</u> information and short videos.</en>"
+      options: ["helpful", "boring", "dangerous", "expensive"]
+      answer: 0
+      explain: "useful information = helpful information: işe yarar bilgi. great website ipucu olumlu bir sıfat istiyor."
+
+review:
+  - id: u5d07-r01
+    type: gap_fill
+    item: U5-001
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>Only teachers have ________ to the school's computer room after 5 p.m.</en>"
+    options: ["access", "screen", "delete", "upload"]
+    answer: 0
+  - id: u5d07-r02
+    type: situation
+    item: U5-018
+    prompt: "<en>There's an old photo of you on your phone, and you really don't like it. What do you do?</en>"
+    options: ["I delete it.", "I download it.", "I post it on our channel.", "I print it for my grandma."]
+    answer: 0
+  - id: u5d07-r03
+    type: gap_fill
+    item: U5-021
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>My phone fell on the floor, and now I can't see anything on the ________ .</en>"
+    options: ["screen", "password", "account", "username"]
+    answer: 0
+  - id: u5d07-r04
+    type: dialogue_complete
+    item: U5-053
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Our concert video has two thousand views now!\nB: Great! ________, did you bring my guitar book?</en>"
+    options: ["By the way", "I got it", "In other words", "What do you mean"]
+    answer: 0
+  - id: u5d07-r05
+    type: gap_fill
+    item: U5-054
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>Duru never answers the phone and hardly ever replies to messages. ________, it isn't easy to reach Duru.</en>"
+    options: ["In other words", "By the way", "Sorry, I can't follow you", "Why don't we"]
+    answer: 0
+  - id: u5d07-r06
+    type: situation
+    item: U5-055
+    prompt: "<en>Bora's mum is explaining the steps on the screen too fast, and Bora doesn't understand her. What does he say?</en>"
+    options: ["Sorry, I can't follow you.", "I got it, thanks.", "By the way, I'm hungry.", "Why don't we go out?"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U5-042]
+    text: "information sayılamaz: informations ya da an information denmez. some information, a lot of information, a piece of information (bir parça bilgi) doğru biçimlerdir. advice de böyledir."
+  - type: mini_dilbilgisi
+    refs: [U5-022]
+    text: "search for + aradığın şey: I'm searching for my phone. search + yer ise o yerin içini aramaktır: I'm searching my bag (çantamın içine bakıyorum). İnternette: search for information, use a search engine."
+  - type: kelime_ailesi
+    refs: [U5-016, U2-056]
+    text: "browse (fiil) → browser / web browser (program). browse the Internet ile Ü2'deki surf the Internet aynı işi anlatır: sayfadan sayfaya gezinmek."
+  - type: lgs_taktigi
+    refs: [U5-039, U5-042]
+    text: "Okuma metinlerinde Experts say … ya da According to experts … kalıbı sık gelir: ardından gelen cümle metnin güvendiği bilgidir. Haberin kaynağını soran sorularda bu cümleyi işaretle."
+
+coach:
+  start: "Gece dokuzda sınıf grubuna şok bir haber düştü! Kaan göndermeye hazır, Selin'in kaşı havada. Bakalım kim haklı çıkacak? 🕵️"
+  end_good: "Dedektif rozeti senin! Selin bile bu kadar hızlı çözemezdi. 🕵️"
+  end_mixed: "{weak} biraz kaçtı, sorun değil. Kaan da bugün ilk kez durup düşündü; yarın bir tur daha!"
+
+notifications:
+  morning: "Sınıf grubunda bir haber dolaşıyor: Yarın okul yok mu? ❄️"
+  evening: "Kaan'ın parmağı gönder tuşunda. Selin yetişebilecek mi?"
+  review: "Tek soru: Selin haberin sahte olduğunu nasıl anladı? İngilizcesiyle!"
+
+editor:
+  z07: {U5-016: BEKLIYOR, U5-022: BEKLIYOR, U5-038: BEKLIYOR, U5-039: BEKLIYOR, U5-042: BEKLIYOR, U5-046: BEKLIYOR}

@@ -1,0 +1,133 @@
+schema_version: 1
+id: SD-B04
+module: B
+title: "Sıklık ve alışkanlık"
+unlock_after: "Ü2 sonu"
+minutes: 5
+stems: [S01, S04, S06, S10, S12, S13, S14]
+functions: ["Düzenli etkinlikler hakkında soru sorma", "Günlük rutini ve alışkanlıkları anlatma", "İnternet alışkanlıkları (Ü5: How often / How many hours)"]
+units: [2, 5]
+intro_tr: "'Ne sıklıkla?' sorusu LGS'de hem diyaloglarda hem anket tablolarında karşına çıkar. Sıklık kelimelerini sıraya koymayı ve 'How often' ile 'How many hours'u ayırmayı öğrenirsen bu sorular çok hızlı biter."
+cards:
+  - title_tr: "Sıklık merdiveni"
+    body_tr: "always (%100) > usually > often > sometimes > rarely = seldom = hardly ever > never (%0). Bu zarflar normal fiilden önce, 'be' fiilinden sonra gelir. 'hardly ever' zaten olumsuz anlamlıdır; yanına 'not' gelmez."
+    examples_en:
+      - "Selin is always on time."
+      - "Kaan hardly ever walks; he usually runs!"
+      - "Duru sometimes takes Fıstık to the park."
+    signal_words: ["always", "usually", "often", "sometimes", "rarely", "seldom", "hardly ever", "never"]
+  - title_tr: "Sayılı sıklık"
+    body_tr: "once a week (haftada bir), twice a month (ayda iki), three times a day (günde üç), every day, at weekends, regularly, most of the time. Tablo sorularında bunları sıklık merdivenine çevir: every day ≈ always."
+    examples_en:
+      - "He works out at the gym three times a week."
+      - "She regularly follows the news."
+      - "Most of the time, I hang out with my friends at weekends."
+    signal_words: ["once", "twice", "… times a week", "every day", "regularly", "most of the time"]
+  - title_tr: "Soru–cevap eşleşmesi"
+    body_tr: "How often …? → sıklık (twice a week). How many hours …? → süre/miktar (two hours a day). What do you do in your free time? → etkinlik (I play the guitar). Ü5'te aynı sorular internet alışkanlıkları için sorulur."
+    examples_en:
+      - "How often do you go to the gym? – Twice a week."
+      - "How many hours a day do you spend online? – About two hours."
+      - "What do you do in your free time? – I usually play the drums."
+    signal_words: ["How often …?", "How many hours …?", "Do you ever …?", "What do you do in your free time?"]
+worked_example:
+  id: sd-B04-w
+  type: dialogue_complete
+  stem_id: S13
+  context: "Murat Bey: ________\nKaan: Three times a week, on Mondays, Wednesdays and Fridays."
+  prompt: "Which question can be the missing question?"
+  options:
+    - "How often do you work out at the gym?"
+    - "How many hours do you sleep?"
+    - "What do you do at the gym?"
+    - "When did you start basketball?"
+  answer: 0
+  explain_tr: "Cevap bir sıklık (three times a week), bu yüzden soru 'How often …?' olmalı. 'How many hours …?' bir süre sorar; cevabı 'eight hours' gibi olurdu."
+  items: [U2-052, U2-032, U2-031]
+practice:
+  - id: sd-B04-p01
+    type: text_infer
+    stem_id: S04
+    context: "Bora: I never miss band practice now. I'm always on time, and I practise the drums every day."
+    prompt: "According to the text, which of the following is TRUE?"
+    options:
+      - "Bora practises the drums regularly."
+      - "Bora is sometimes late for practice."
+      - "Bora rarely plays the drums."
+      - "Bora hardly ever goes to band practice."
+    answer: 0
+    explain_tr: "'every day' = düzenli olarak (regularly). 'Bora hardly ever goes to band practice' metindeki 'never'ı taşıyor ama anlamı ters çeviriyor: Bora provayı hiç KAÇIRMIYOR."
+    items: [U2-045, U2-044]
+  - id: sd-B04-p02
+    type: table_graph
+    stem_id: S06
+    context: "Survey: How many hours a day do you spend online?\nEce: 1 hour · Kaan: 3 hours · Duru: 2 hours · Selin: 1 hour"
+    prompt: "According to the survey results, which of the following is correct?"
+    options:
+      - "Kaan spends the most time online."
+      - "Duru spends more time online than Kaan."
+      - "Ece and Selin spend the most time online."
+      - "Half of the students spend three hours online."
+    answer: 0
+    explain_tr: "En yüksek sayı Kaan'da (3 saat). Duru 2 saatle Kaan'dan az; yalnızca bir öğrenci 3 saat harcıyor, yarısı değil."
+    items: [U2-003, U2-090, U2-089]
+  - id: sd-B04-p03
+    type: synonym
+    stem_id: S12
+    context: "Elif hardly ever eats fast food. She prefers homemade meals."
+    prompt: "Which word can replace 'hardly ever'?"
+    options:
+      - "rarely"
+      - "always"
+      - "usually"
+      - "often"
+    answer: 0
+    explain_tr: "hardly ever = rarely = nadiren. 'She prefers homemade meals' ipucu da Elif'in fast food'u az yediğini gösteriyor."
+    items: [U2-051, U2-049]
+  - id: sd-B04-p04
+    type: dialogue_complete
+    stem_id: S01
+    context: "Duru: Do you ever go hiking?\nSelin: ________ I'm not keen on walking."
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "Hardly ever."
+      - "Yes, every weekend."
+      - "Yes, I always do."
+      - "Twice a day."
+    answer: 0
+    explain_tr: "Selin yürümeyi sevmediğini söylüyor, yani yürüyüşe nadiren gider. 'Yes, every weekend' sık gittiğini söyler ve sonraki cümleyle çelişir."
+    items: [U2-039, U2-051, U2-010]
+  - id: sd-B04-p05
+    type: text_infer
+    stem_id: S14
+    context: "Ece: My daily routine is simple. I always get up at 6:30. I usually do my homework before dinner, and I sometimes help my mum with the cooking. I never go to bed after 10 p.m."
+    prompt: "Which of the following CANNOT be said about Ece?"
+    options:
+      - "She often goes to bed late."
+      - "She gets up early every day."
+      - "She usually does her homework before dinner."
+      - "She sometimes cooks with her mum."
+    answer: 0
+    explain_tr: "Ters soru: üç şık doğru, biri söylenemez. Ece 'never go to bed after 10' diyor, yani sık sık geç yatmıyor. Diğer üçü metindeki always / usually / sometimes ile uyumlu."
+    items: [U2-043, U2-044]
+  - id: sd-B04-p06
+    type: situation
+    stem_id: S10
+    context: "Elif wants to learn about Duru's free-time activities."
+    prompt: "What does Elif ask?"
+    options:
+      - "What do you do in your free time?"
+      - "How long is the film?"
+      - "What time is it now?"
+      - "Are you free now?"
+    answer: 0
+    explain_tr: "Boş zaman etkinliklerini soran kalıp 'What do you do in your free time?'. 'Are you free now?' 'free' kelimesini taşıyor ama yalnızca şu an müsait olup olmadığını sorar."
+    items: [U2-002]
+tips:
+  - "Cevaptaki bilgiye bak: 'twice a week' → How often, 'two hours a day' → How many hours, 'because …' → Why."
+  - "rarely / seldom / hardly ever = neredeyse hiç: olumsuz anlamlıdır, şıklarda 'often' ile ters çevrilebilir."
+  - "Tablo sorusunda 'the most', 'more than', 'half' kelimelerinin altını çiz ve her şıkkı sayılarla tek tek kontrol et."
+coach:
+  start: "Ne sıklıkla? Hep mi, bazen mi, neredeyse hiç mi? Bugün alışkanlıkların dilini öğreniyoruz."
+  end: "Mükemmel! 'How often' ile 'How many hours' artık karışmıyor. Bu dersi always hatırla, never unutma!"
+status: draft

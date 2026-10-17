@@ -1,0 +1,303 @@
+schema_version: 1
+program: lgs
+unit: 5
+day: 1
+status: draft
+title: "Tahtadaki sayılar"
+est_minutes: 10
+characters: [Kaan, Ece, Murat Bey, Elif, Duru, Selin, Bora]
+new_items: [U5-036, U5-037, U5-040, U5-044, U5-045, U5-047]
+
+story:
+  - id: s01
+    text: "Şubat ortası, ikinci dönemin ilk pazartesisi. Okulun koridorlarında herkes aynı videoyu konuşuyordu: Wrong Number'ın pastane konseri. Telefonlar elden ele dolaşıyordu."
+  - id: s02
+    text: "Kaan sınıfa nefes nefese daldı, telefonu havada: \"<en>Guys! 80,000 views! We're famous!</en>\" Ece kaşlarını çattı: \"<en>But who put it on the Internet? Nobody asked us!</en>\""
+  - id: s03
+    text: "Kapı açıldı, Murat Bey girdi ve her zamanki gibi önce tahtaya büyük harflerle yazdı: \"<en>SAFER INTERNET WEEK</en>\" Sonra sınıfa döndü: \"<en>In two weeks, every team presents an internet guide. Same teams as our Teen Life {U2-003|Survey}.</en>\""
+  - id: s04
+    text: "\"<en>But first, a quick class {U2-003|survey}. Two questions. One: {U5-047|What do you use the Internet for?} Two: how many hours {U5-044|a day}?</en>\" Herkese birer küçük kâğıt dağıttı."
+  - id: s05
+    text: "Ece cevabını üç renkli kalemle doldurdu ve yüksek sesle okudu: \"<en>I {U5-047|use the Internet for} music and fashion videos. Two hours {U5-044|per day}. Planned, of course.</en>\""
+  - id: s06
+    text: "Elif'in cevabı tek kelimeydi: \"<en>Luna Ray!</en>\" Duru ise kâğıdını yarı uykulu doldurdu: \"<en>My internet {U5-045|usage}: videos, lying down. My {U5-040|habit}: lying down.</en>\""
+  - id: s07
+    text: "Murat Bey gülümsedi: \"<en>Very honest, Duru.</en>\" Duru omuz silkti: \"<en>I'm a {U1-079|laid-back} {U5-045|user}, sir.</en>\""
+  - id: s08
+    text: "Kaan'ın kâğıdı on saniyede hazırdı. Kendinden emin bir sesle okudu: \"<en>Me? Only one hour {U5-044|per day}!</en>\" Selin kaşını kaldırdı. Kaan sesini biraz alçalttı: \"<en>…per {U4-043|app}.</en>\""
+  - id: s09
+    text: "Selin, Kaan'ın telefonundaki simgeleri hemen saydı: on iki. \"<en>Twelve {U4-043|apps}, one hour each? That's twelve hours, Kaan! Are you an {U5-036|addict}?</en>\""
+  - id: s10
+    text: "Kaan elini kalbine koydu: \"<en>Me? An {U5-036|addict}? Never! I'm just… very fast.</en>\" Sınıf kahkahalarla çınladı."
+  - id: s11
+    text: "Murat Bey kâğıtları topladı ve Selin'le Duru'yu tahtaya çağırdı. Selin sayıyor, Duru tahtaya geçiriyordu; Duru'nun arada bir gözleri kapanıyordu (düşünüyordu, tabii)."
+  - id: s12
+    text: "On dakika sonra tahtada küçük bir tablo vardı: \"<en>{U5-047|What do we use the Internet for?} Music: 70 {U5-044|percent} · Videos: 65 {U5-044|percent} · Games: 50 {U5-044|percent} · Homework: 40 {U5-044|percent}</en>\""
+  - id: s13
+    text: "Murat Bey tablonun altına bir satır ekledi: \"<en>Class {U5-037|average}: three hours {U5-044|per day}.</en>\""
+  - id: s14
+    text: "Elif parmaklarıyla saydı: \"<en>Three hours a day… that's twenty-one hours {U5-044|per week}! Almost a whole day!</en>\""
+  - id: s15
+    text: "Murat Bey başını salladı: \"<en>Music, homework, videos: they're all OK. But be careful. A {U5-040|habit} can slowly become an {U5-036|addiction}.</en>\""
+  - id: s16
+    text: "Arka sıradan Bora gururla el kaldırdı: \"<en>Not me, sir. My {U5-045|usage} is very low. I'm under the {U5-037|average}!</en>\""
+  - id: s17
+    text: "Selin arkasına bile dönmedi: \"<en>Because your phone is always dead, Bora.</en>\" Bora hiç bozulmadı: \"<en>Exactly. It's a healthy {U5-040|habit}.</en>\""
+  - id: s18
+    text: "Teneffüste Ece defterini açtı. Video o sırada 90 bine çıkmıştı. \"<en>Team, 90,000 people watched us, but it isn't our video. We need our own channel!</en>\""
+  - id: s19
+    text: "Duru sırasına yaslandı: \"<en>Our own channel? More internet {U5-045|usage}. I'm already above the {U5-037|average}.</en>\" Ece duymadı bile; defterinde yeni bir sayfa açmıştı: \"<en>CHANNEL – TOMORROW!</en>\""
+  - id: s20
+    text: "Gece yarısı sınıf grubuna Kaan'dan bir mesaj düştü: \"<en>Update: I counted again. It isn't one hour per {U4-043|app}. It's… more. Please don't tell Selin.</en>\""
+  - id: s21
+    text: "Bir dakika sonra cevap geldi. Selin'den: \"<en>I'm in this group, Kaan.</en>\""
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>What do you use the Internet for? And how many hours per day?</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>Only one hour per day… per app.</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>Twelve apps? That's twelve hours! Are you an addict?</en>"
+  - id: c04
+    speaker: Murat Bey
+    text: "<en>The class average is three hours per day. Be careful: a habit can become an addiction.</en>"
+
+steps:
+  - item: U5-036
+    sezdir:
+      id: u5d01-036-z
+      type: meaning
+      context: s09
+      prompt: "Selin'in \"Are you an addict?\" sorusunda \"addict\" ne anlama geliyordu?"
+      options: ["bağımlı", "uzman", "acemi", "hayran"]
+      answer: 0
+    kullan:
+      id: u5d01-036-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My cousin plays computer games for ten hours every day. He can't stop. I think he's a game ________.</en>"
+      options: ["addict", "average", "survey", "percent"]
+      answer: 0
+      explain: "Bir şeyi bırakamayan kişiye addict denir; game addict, internet addict gibi."
+    sina:
+      id: u5d01-036-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Which of the following can we infer about Mert?</en>"
+      stem: "<en>Mert: I check my phone first thing in the morning and last thing at night. I can't do my homework because I look at my phone every five minutes. I want to stop, but I can't!</en>"
+      options: ["He may be a phone addict.", "He never uses his phone.", "He finishes his homework quickly.", "He doesn't want to stop."]
+      answer: 0
+      explain: "Sürekli telefona bakması ve \"I want to stop, but I can't\" demesi bağımlılık belirtisidir; öbür şıklar metinle çelişiyor."
+  - item: U5-037
+    sezdir:
+      id: u5d01-037-z
+      type: meaning
+      context: s13
+      prompt: "Murat Bey'in tabloya eklediği \"Class average: three hours per day\" satırında \"average\" ne anlama geliyordu?"
+      options: ["ortalama", "toplam", "en yüksek", "en düşük"]
+      answer: 0
+    kullan:
+      id: u5d01-037-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ali sleeps 7 hours, Ece sleeps 8 hours and Can sleeps 9 hours. The ________ is 8 hours.</en>"
+      options: ["average", "habit", "addict", "user"]
+      answer: 0
+      explain: "Sayılar toplanıp kişi sayısına bölünür: (7+8+9)÷3 = 8, yani average."
+    sina:
+      id: u5d01-037-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is correct?</en>"
+      stem: "<en>Hours on the Internet per day\nEce ……… 2\nKaan ……… 4\nSelin ……… 1\nBora ……… 1</en>"
+      options: ["The average is two hours per day.", "Selin spends the most time on the Internet.", "Bora spends more time on the Internet than Kaan.", "They all spend the same time on the Internet."]
+      answer: 0
+      explain: "2+4+1+1 = 8 saat, dört kişiye bölününce 2: ortalama günde iki saat; en çok vakit geçiren Kaan."
+  - item: U5-040
+    sezdir:
+      id: u5d01-040-z
+      type: meaning
+      context: s15
+      prompt: "Murat Bey'in \"A habit can slowly become an addiction\" sözünde \"habit\" ne anlama geliyordu?"
+      options: ["alışkanlık", "sınav", "kural", "ödev"]
+      answer: 0
+    kullan:
+      id: u5d01-040-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin gets up at 6.30 every day, even on Saturdays. It's an old ________.</en>"
+      options: ["habit", "addict", "average", "user"]
+      answer: 0
+      explain: "Her gün aynı saatte, yıllardır yapılan şey bir habit'tir; an old habit = eski bir alışkanlık."
+    sina:
+      id: u5d01-040-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Bora: I always make my own breakfast before school. Mum goes to work very early, so I started years ago. Now it's a habit. Omelette, every morning!</en>"
+      options: ["Bora regularly makes his own breakfast.", "Bora's mum makes his breakfast every morning.", "Bora started making breakfast last week.", "Bora never eats eggs."]
+      answer: 0
+      explain: "\"I always make my own breakfast\" ve \"Now it's a habit\": Bora kahvaltısını düzenli olarak kendisi hazırlıyor."
+  - item: U5-044
+    sezdir:
+      id: u5d01-044-z
+      type: meaning
+      context: s14
+      prompt: "Elif'in \"twenty-one hours per week\" sözünde \"per week\" ne anlama geliyordu?"
+      options: ["haftada", "haftaya", "her ay", "hafta sonu"]
+      answer: 0
+    kullan:
+      id: u5d01-044-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I spend about two hours on the Internet ________ day, but more at the weekend.</en>"
+      options: ["per", "in", "at", "with"]
+      answer: 0
+      explain: "per day = a day = günde; in, at ve with bu anlamı vermez."
+    sina:
+      id: u5d01-044-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is correct?</en>"
+      stem: "<en>8/B – What do you use the Internet for?\nmusic ……… 70 percent\nhomework ……… 50 percent\ngames ……… 30 percent\nshopping ……… 10 percent</en>"
+      options: ["Half of the students use the Internet for homework.", "Most students use the Internet for shopping.", "Games are more popular than music.", "None of the students play games on the Internet."]
+      answer: 0
+      explain: "Yüzde 50 yarısı (half) demektir; alışveriş yalnız yüzde 10, oyunlar müzikten az, oyun oynayan da var."
+  - item: U5-045
+    sezdir:
+      id: u5d01-045-z
+      type: meaning
+      context: s16
+      prompt: "Bora'nın \"My usage is very low\" sözünde \"usage\" ne anlama geliyordu?"
+      options: ["kullanım (miktarı)", "hız", "ses seviyesi", "telefon numarası"]
+      answer: 0
+    kullan:
+      id: u5d01-045-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This new music app is very popular. It has two million ________ in Türkiye.</en>"
+      options: ["users", "habits", "averages", "percents"]
+      answer: 0
+      explain: "Bir uygulamayı kullanan kişiler users'tır (use → user → usage)."
+    sina:
+      id: u5d01-045-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is correct?</en>"
+      stem: "<en>Internet usage in Ece's family\nDad: work e-mails – 5 hours a day\nMum: recipes – 1 hour a day\nEce: fashion videos – 2 hours a day\nGrandma: news – 1 hour a day</en>"
+      options: ["Dad's usage is the highest in the family.", "Mum uses the Internet more than Ece.", "Ece uses the Internet for work.", "Grandma's usage is the highest in the family."]
+      answer: 0
+      explain: "Günde 5 saatle en çok kullanan baba; anne 1 saat, Ece 2 saat, babaanne 1 saat."
+  - item: U5-047
+    sezdir:
+      id: u5d01-047-z
+      type: meaning
+      context: s04
+      prompt: "Murat Bey'in \"What do you use the Internet for?\" sorusu ne anlama geliyordu?"
+      options: ["İnterneti ne için kullanırsın?", "İnterneti ne zamandır kullanıyorsun?", "İnternette kaç saat geçirirsin?", "İnternete nereden bağlanırsın?"]
+      answer: 0
+    kullan:
+      id: u5d01-047-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: What do you use the Internet ________?\nB: Mostly for homework and music.</en>"
+      options: ["for", "to", "with", "at"]
+      answer: 0
+      explain: "Amaç sorusu What … for? kalıbıyla kurulur; for soru cümlesinin sonuna gelir."
+    sina:
+      id: u5d01-047-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which question can be the missing question?</en>"
+      stem: "<en>Murat Bey: ________\nElif: I mostly use it for listening to music and watching Luna Ray's videos.</en>"
+      options: ["What do you use the Internet for?", "How many hours do you spend on the Internet?", "Where do you usually use the Internet?", "Who uses the Internet in your family?"]
+      answer: 0
+      explain: "Elif interneti NE İÇİN kullandığını söylüyor (müzik, video); süre, yer ya da kişi sormuyor."
+
+review:
+  - id: u5d01-r01
+    type: message_infer
+    item: U4-024
+    lgs_like: true
+    stem_id: S11
+    prompt: "<en>Why is Ece calling?</en>"
+    stem: "<en>Woman: Good afternoon, City Music School. How can I help you?\nEce: Hello. I'm calling about your guitar lessons. How much are they for teenagers?</en>"
+    options: ["to ask about guitar lessons", "to book a concert", "to make a complaint about a teacher", "to sell her guitar"]
+    answer: 0
+    explain: "Arama nedeni \"I'm calling about …\" cümlesinde: gitar dersleri hakkında bilgi almak."
+  - id: u5d01-r02
+    type: dialogue_complete
+    item: U4-015
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Kaan: Hi Bora! Are you coming to the match on Saturday?\nBora: Sorry, Kaan, ________ I can't hear you.\nKaan: I'm on the bus! I'll call you back!</en>"
+    options: ["it's a bad line.", "I'll get him.", "wrong number.", "I'm calling about the match."]
+    answer: 0
+    explain: "Bora ardından \"I can't hear you\" diyor: hat kötü, ses gelmiyor."
+  - id: u5d01-r03
+    type: message_infer
+    item: U4-041
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to the text, which of the following is TRUE?</en>"
+    stem: "<en>Duru: My new speaker came in the wrong colour, so I called customer service. They said, \"You can return it and get your money back, or change it for a red one.\" I changed it. Now it's red!</en>"
+    options: ["Duru changed the speaker for a red one.", "Duru returned the speaker and got her money back.", "The speaker came in the right colour.", "Customer service didn't help Duru."]
+    answer: 0
+    explain: "Duru iki seçenekten değiştirmeyi seçti (I changed it); parasını geri almadı."
+  - id: u5d01-r04
+    type: situation
+    item: U4-009
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>Elif calls Ece's house, but Ece isn't at home. Ece's mum answers the phone. What should Ece's mum say?</en>"
+    options: ["Would you like to leave a message?", "Could I speak to Ece, please?", "Speaking!", "Sorry, wrong number."]
+    answer: 0
+    explain: "Aranan kişi evde değilse telefonu açan kişi mesaj bırakmak isteyip istemediğini sorar."
+  - id: u5d01-r05
+    type: message_infer
+    item: U4-051
+    lgs_like: true
+    stem_id: S14
+    prompt: "<en>Which of the following can we infer from the messages?</en>"
+    stem: "<en>Kaan: See you at the café at five!\nBora: I'm here, at the café near the school. Where are you?\nKaan: Near the school?! No, no! The cake shop across from the park!</en>"
+    options: ["There was a misunderstanding about the place.", "Kaan and Bora are at the same café.", "Bora is late again.", "Kaan doesn't like cake."]
+    answer: 0
+    explain: "İkisi farklı yerleri anlamış: buluşma yeri konusunda bir yanlış anlaşılma var."
+
+tips:
+  - type: kelime_ailesi
+    refs: [U5-036, U5-045]
+    text: "addict = bağımlı kişi (isim) · addiction = bağımlılık · addicted = bağımlı (sıfat): He is addicted to games. Aynı aile mantığı: use (kullanmak) → user (kullanıcı) → usage (kullanım). -ed/-ing farkı: addicted, bored kişinin durumu; boring bir şeyin özelliği (a boring game)."
+  - type: mini_dilbilgisi
+    refs: [U5-044]
+    text: "per day = a day = günde: two hours per day / two hours a day. per week = a week = haftada. percent sayıyla tekil kalır: 70 percent (\"70 percents\" değil)."
+  - type: lgs_taktigi
+    refs: [U5-044, U2-089]
+    text: "Grafik sorusunda önce yüzdeleri kelimeye çevir: 100 percent = all, 70–90 percent = most, 50 percent = half, 10–20 percent = a few, 0 percent = none. Sonra şıklardaki iddiayı tek tek kontrol et."
+  - type: mini_dilbilgisi
+    refs: [U5-047, U5-044]
+    text: "Alışkanlık Simple Present ile sorulur: What do you use the Internet for? → I use it for music / for doing homework (for + isim / V-ing) ya da to do homework; \"for do\" yanlış. Sıklık: How often do you go online? → Every day. Süre: How many hours a day? → Three hours a day."
+
+coach:
+  start: "Ünite 5 başlıyor! Konser videosu okulu salladı, Murat Bey de tahtaya kocaman bir başlık yazdı. Bakalım Kaan'ın cevabı ne olacak? 📱"
+  end_good: "Harika başlangıç! Tablodaki sayıları senden iyi okuyan yok. Yarın Ece büyük bir işe girişiyor: kanal! 🎉"
+  end_mixed: "İyi iş! {weak} biraz karıştı, hiç dert değil; Kaan da saymayı yeni öğreniyor. Yarın bir tekrar, sonra kanal! 📱"
+
+notifications:
+  morning: "Okul açıldı, herkes aynı videoyu konuşuyor. Murat Bey'in sorusu ise bambaşka! 📱"
+  evening: "Kaan internette sadece bir saat mi geçiriyor? Selin saymaya başladı bile. 😄"
+  review: "Tek soru: \"three hours per day\" ne demek? 🤔"
+
+editor:
+  z07: {U5-036: BEKLIYOR, U5-037: BEKLIYOR, U5-040: BEKLIYOR, U5-044: BEKLIYOR, U5-045: BEKLIYOR, U5-047: BEKLIYOR}

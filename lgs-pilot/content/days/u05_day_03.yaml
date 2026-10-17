@@ -1,0 +1,308 @@
+schema_version: 1
+program: lgs
+unit: 5
+day: 3
+status: draft
+title: "Onuncu çekim"
+est_minutes: 10
+characters: [Ece, Elif, Bora, Duru, Selin, Kaan, Bora'nın dedesi]
+new_items: [U5-019, U5-025, U5-028, U5-030, U5-033, U5-034]
+
+story:
+  - id: s01
+    text: "Çarşamba, okul çıkışı, Duru'nun evi. Ece telefonunu kitap yığınının üstüne dikkatle yerleştirdi ve kaydı başlattı: \"<en>Take ten! This time it must be perfect.</en>\""
+  - id: s02
+    text: "Elif'in sesi kısılmak üzereydi, Bora'nın kolları kopacak gibiydi. Duru gitarı kucağında kanepeye gömülmüştü; Fıstık da ayak ucunda."
+  - id: s03
+    text: "Duru tek gözünü açtı: \"<en>Ece, take two was perfect. Take five was perfect. {U2-085|Be realistic}, please.</en>\""
+  - id: s04
+    text: "Onuncu çekimin sonunda Fıstık tam zamanında havladı ve şarkı bitti. Ece nihayet gülümsedi: \"<en>OK. I'm happy. Now I {U5-025|upload} it to our channel!</en>\""
+  - id: s05
+    text: "Selin onaylarcasına başını salladı: \"<en>Good. Last time somebody {U5-025|uploaded} our concert without asking us. This time it's our video, on our channel.</en>\""
+  - id: s06
+    text: "Herkes telefonun başına üşüştü. Ekranda yavaş yavaş dolan bir çubuk: \"<en>{U5-025|Uploading}… 40%… 80%… 100%!</en>\""
+  - id: s07
+    text: "Elif hemen sordu: \"<en>Can I {U5-034|post} it on my page too?</en>\" Ece elini kaldırdı: \"<en>Wait! First, everybody {U5-030|subscribe} to the channel. We need {U5-030|followers}!</en>\""
+  - id: s08
+    text: "Bir dakika sonra Ece'nin telefonu ilk kez öttü: \"<en>Ding!</en>\" Ece ekrana atladı: \"<en>A {U5-033|notification}! Our first {U5-030|subscriber}!</en>\""
+  - id: s09
+    text: "Ekranda bir ad belirdi: \"<en>Nermin_Teyze</en>\". Bora sevinçle bağırdı: \"<en>My first fan! She's faster than all of you!</en>\""
+  - id: s10
+    text: "Ding! \"<en>New {U5-028|comment} from Arda_10: Bora is the best drummer in the world!!!</en>\" Bora hiçbir şey söylemedi; yalnızca göğsünü biraz daha kabarttı."
+  - id: s11
+    text: "Ding! \"<en>Murat Bey {U5-028|commented on} your video: Very nice! Now, homework, please.</en>\" Duru kanepeye biraz daha gömüldü."
+  - id: s12
+    text: "Ece artık her seste telefona sarılıyordu. Selin parmaklarıyla saydı: \"<en>Ece, you checked your {U5-033|notifications} forty times today. Be {U1-085|patient}!</en>\" Ece gözünü ekrandan ayırmadı: \"<en>Forty-one. Shh, a new one!</en>\""
+  - id: s13
+    text: "Bora telefonunu çıkardı: \"<en>I want to {U5-019|download} the video. Mum works tonight, so Grandpa is at our house. I want to show him.</en>\""
+  - id: s14
+    text: "Kaan şaşkınlıkla baktı: \"<en>Why {U5-019|download} it? He can watch it on the channel!</en>\" Bora: \"<en>Our internet is very slow at night. And Grandpa likes watching things… ten times.</en>\""
+  - id: s15
+    text: "Akşam Bora'nın evinde dedesi gözlüklerini taktı ve küçük ekrana eğildi. Bora gururluydu: \"<en>I {U5-019|downloaded} it for you, Grandpa. Look, that's me on drums!</en>\""
+  - id: s16
+    text: "Dede videoyu tam yedi kez izledi. Sonra kendi telefonunu çıkardı: \"<en>Now, how do I {U5-028|make a comment}? I have an idea for your band.</en>\""
+  - id: s17
+    text: "Yarım saat sonra Ece'nin telefonu iki kez öttü: \"<en>New {U5-030|subscriber}: JazzGrandpa55 · New {U5-028|comment}: Lovely song! Add some {U2-024|jazz}! A saxophone, maybe?</en>\""
+  - id: s18
+    text: "Elif gülmekten kırıldı: \"<en>A saxophone? We're a pop-rock band!</en>\" Duru grubun mesajlarına tek satırla katıldı: \"<en>Only rock. Tell him that. Politely.</en>\""
+  - id: s19
+    text: "Ece sayıları defterine geçirdi: \"<en>Twelve {U5-030|followers}, six {U5-028|comments}! Now, Elif, you can {U5-034|post} it.</en>\" Elif'in cevabı bir saniyede geldi: \"<en>{U5-034|Posted}!</en>\""
+  - id: s20
+    text: "Kaan da durmadı: \"<en>I'm {U5-034|posting} it too! On my page, in the class group, in my cousin's group, everywhere!</en>\" Selin iç çekti: \"<en>Kaan, you didn't even watch it.</en>\""
+  - id: s21
+    text: "Gece yarısı Ece hâlâ uyanıktı. Telefon bir kez daha öttü: \"<en>{U5-033|Notification}: Ahmet Amca {U5-028|commented}: My old drums sound great! 👍</en>\""
+  - id: s22
+    text: "Az sonra sınıf grubunda Duru'dan tek satır belirdi: \"<en>Ece, I got 47 {U5-033|notifications} from you tonight. Our band is famous. Now please sleep.</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Take ten! OK, I'm happy. Now I upload it to our channel.</en>"
+  - id: c02
+    speaker: Ece
+    text: "<en>Ding! A notification! Our first subscriber!</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>I downloaded the video for Grandpa. He watched it seven times!</en>"
+  - id: c04
+    speaker: JazzGrandpa55
+    text: "<en>Lovely song! Add some jazz!</en>"
+  - id: c05
+    speaker: Elif
+    text: "<en>Twelve followers! Can I post it on my page now? … Posted!</en>"
+
+steps:
+  - item: U5-019
+    sezdir:
+      id: u5d03-019-z
+      type: meaning
+      context: s13
+      prompt: "Bora'nın \"I want to download the video\" sözünde \"download\" ne anlama geliyordu?"
+      options: ["indirmek (internetten cihaza)", "yüklemek (cihazdan internete)", "silmek", "beğenmek"]
+      answer: 0
+    kullan:
+      id: u5d03-019-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This game is free. You can ________ it to your phone in two minutes.</en>"
+      options: ["download", "upload", "post", "comment"]
+      answer: 0
+      explain: "İnternetten telefona doğru alınan şey için download kullanılır; upload ters yöndür (cihazdan internete)."
+    sina:
+      id: u5d03-019-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Selin: I don't download games or films from websites I don't know. I only download homework files from our school's website. I always ask my dad first.</en>"
+      options: ["Selin downloads files from the school website.", "Selin downloads films every day.", "Selin uploads her homework to strange websites.", "Selin never asks her dad."]
+      answer: 0
+      explain: "\"I only download homework files from our school's website\": Selin yalnız okulun sitesinden dosya indiriyor."
+  - item: U5-025
+    sezdir:
+      id: u5d03-025-z
+      type: meaning
+      context: s04
+      prompt: "Ece'nin \"Now I upload it to our channel!\" sözünde \"upload\" ne anlama geliyordu?"
+      options: ["(internete) yüklemek", "indirmek", "silmek", "izlemek"]
+      answer: 0
+    kullan:
+      id: u5d03-025-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Elif took a lovely photo of Pamuk, and now she wants to ________ it to her page.</en>"
+      options: ["upload", "download", "subscribe", "log out"]
+      answer: 0
+      explain: "Telefondaki fotoğrafı internetteki sayfaya koymak upload'dur (to my page / to the channel)."
+    sina:
+      id: u5d03-025-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Ece has a new video of the band on her phone. She wants to put it on the band's channel. What does she need to do?</en>"
+      options: ["upload it", "download it", "sign up again", "log out"]
+      answer: 0
+      explain: "Videoyu telefondan kanala (internete) göndermek upload'dur; download ters yönde çalışır."
+  - item: U5-028
+    sezdir:
+      id: u5d03-028-z
+      type: meaning
+      context: s10
+      prompt: "\"New comment from Arda_10\" bildiriminde \"comment\" ne anlama geliyordu?"
+      options: ["yorum", "beğeni", "abone", "arkadaşlık isteği"]
+      answer: 0
+    kullan:
+      id: u5d03-028-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Grandpa watched our video seven times, and then he ________ on it: \"Add some jazz!\"</en>"
+      options: ["commented", "downloaded", "subscribed", "logged"]
+      answer: 0
+      explain: "Bir gönderinin altına düşünceni yazmak comment on ile anlatılır."
+    sina:
+      id: u5d03-028-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the comments, which of the following is TRUE?</en>"
+      stem: "<en>Wrong Number – \"First Song\" (rehearsal)\nComments:\nArda_10: Bora is the best drummer!!!\nJazzGrandpa55: Lovely! Add some jazz!\nNermin_Teyze: When is your next concert, children?</en>"
+      options: ["Nermin Teyze wants to see another concert.", "Arda doesn't like the drums.", "JazzGrandpa55 wants more rock music.", "Nobody commented on the video."]
+      answer: 0
+      explain: "Nermin Teyze bir sonraki konseri soruyor; Arda davulcuyu övüyor, JazzGrandpa55 caz istiyor."
+  - item: U5-030
+    sezdir:
+      id: u5d03-030-z
+      type: meaning
+      context: s08
+      prompt: "Ece'nin \"Our first subscriber!\" sözünde \"subscriber\" ne anlama geliyordu?"
+      options: ["abone", "yönetici", "davulcu", "reklam"]
+      answer: 0
+    kullan:
+      id: u5d03-030-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Luna Ray has ten million ________. Everybody follows her!</en>"
+      options: ["followers", "comments", "notifications", "passwords"]
+      answer: 0
+      explain: "Birini takip eden kişiler followers'tır (follow → follower)."
+    sina:
+      id: u5d03-030-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is correct?</en>"
+      stem: "<en>Channel ……… Subscribers\nWrong Number ……… 12\nCook with Ali ……… 3,500\nFunny Pets ……… 900\nSam's Football ……… 4</en>"
+      options: ["Wrong Number has more subscribers than Sam's Football.", "Funny Pets has the most subscribers.", "Sam's Football has more subscribers than Cook with Ali.", "Wrong Number has the most subscribers."]
+      answer: 0
+      explain: "12, 4'ten fazladır; en çok abone 3.500 ile Cook with Ali'de."
+  - item: U5-033
+    sezdir:
+      id: u5d03-033-z
+      type: meaning
+      context: s12
+      prompt: "Selin'in \"you checked your notifications forty times today\" sözünde \"notifications\" ne anlama geliyordu?"
+      options: ["bildirimler", "fotoğraflar", "alarmlar", "taslak mesajlar"]
+      answer: 0
+    kullan:
+      id: u5d03-033-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My phone makes a \"ding\" sound every time I get a new ________.</en>"
+      options: ["notification", "password", "account", "username"]
+      answer: 0
+      explain: "Yeni bir mesaj, yorum ya da abone geldiğinde telefonun verdiği uyarı notification'dır."
+    sina:
+      id: u5d03-033-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Which of the following can we infer about Ece?</en>"
+      stem: "<en>Selin: Ece, every \"ding\" is a new notification, and every time you stop and look at your phone. Forty times today! Please put it in your bag for ten minutes.</en>"
+      options: ["She checks her notifications very often.", "She never gets notifications.", "She put her phone in her bag all day.", "Her phone doesn't make any sound."]
+      answer: 0
+      explain: "Kırk kez telefona bakması ve Selin'in \"çantana koy\" demesi, Ece'nin bildirimlere çok sık baktığını gösterir."
+  - item: U5-034
+    sezdir:
+      id: u5d03-034-z
+      type: meaning
+      context: s19
+      prompt: "Ece'nin \"Now, Elif, you can post it\" sözünde \"post\" ne anlama geliyordu?"
+      options: ["(sosyal medyada) paylaşmak", "postalamak", "silmek", "indirmek"]
+      answer: 0
+    kullan:
+      id: u5d03-034-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan ________ a photo of his new trainers on social media every week. He loves them!</en>"
+      options: ["posts", "downloads", "subscribes", "logs"]
+      answer: 0
+      explain: "Sosyal medyada fotoğraf paylaşmak post ile anlatılır; burada \"posta\" anlamı yok."
+    sina:
+      id: u5d03-034-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word can replace the underlined part?</en>"
+      stem: "<en>Elif: Our video is great! I'm going to <u>share</u> it on my page tonight.</en>"
+      options: ["post", "download", "subscribe", "log out"]
+      answer: 0
+      explain: "Sosyal medyada share ile post aynı işi görür; download indirmek, subscribe abone olmak, log out çıkış yapmaktır."
+
+review:
+  - id: u5d03-r01
+    type: gap_fill
+    item: U5-002
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>My little sister is only eight, so she can't open a social media ________.</en>"
+    options: ["account", "password", "username", "habit"]
+    answer: 0
+  - id: u5d03-r02
+    type: dialogue_complete
+    item: U5-006
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Elif: What's wrong, Kaan?\nKaan: ________\nElif: Check your password. Maybe Caps Lock is on.</en>"
+    options: ["I can't log in to my account!", "I can't log out of my account!", "I love my new username!", "I signed up yesterday. It was easy!"]
+    answer: 0
+    explain: "Elif şifreyi kontrol etmesini söylüyor: Kaan hesabına giriş yapamıyor olmalı; çıkış için şifre gerekmez."
+  - id: u5d03-r03
+    type: situation
+    item: U5-007
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>You are using a computer in the school library. You finish your homework. What should you do before you leave?</en>"
+    options: ["Log out of your account.", "Tell everybody your password.", "Sign up for a new account.", "Leave your account open."]
+    answer: 0
+    explain: "Ortak bilgisayardan kalkmadan önce hesaptan çıkılır (log out)."
+  - id: u5d03-r04
+    type: gap_fill
+    item: U5-009
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Bora, don't say your ________ out loud! Everybody in the library can hear you!</en>"
+    options: ["password", "account", "habit", "average"]
+    answer: 0
+  - id: u5d03-r05
+    type: synonym
+    item: U5-012
+    lgs_like: true
+    stem_id: S12
+    prompt: "<en>Which phrase can replace the underlined word?</en>"
+    stem: "<en>Ece: I want to <u>register</u> on ClipTube today. Then I can open our band's channel.</en>"
+    options: ["sign up", "log out", "log in", "type"]
+    answer: 0
+    explain: "register = sign up = kaydolmak; log in var olan hesaba girmek, log out çıkmaktır."
+  - id: u5d03-r06
+    type: gap_fill
+    item: U5-024
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Kaan ________ very fast, so there are always mistakes in his messages.</en>"
+    options: ["types", "logs", "signs", "registers"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U5-019, U5-025]
+    text: "Yön tuzağı: DOWNload = internetten cihazına (aşağı), UPload = cihazından internete (yukarı). Video kanala → upload; oyun telefona → download. Ece videoyu kanala koydu (upload), Bora dedesine göstermek için telefonuna aldı (download)."
+  - type: tuzak
+    refs: [U5-034]
+    text: "post sana \"posta, postalamak\" gibi gelebilir; sosyal medyada ise paylaşmak (fiil) ya da gönderi (isim) demek: I posted a photo. / I like your new post. Yanında on social media, on my page varsa: paylaşmak."
+  - type: kelime_ailesi
+    refs: [U5-030, U5-028]
+    text: "follow → follower (takipçi), subscribe → subscriber (abone): -er/-r eki işi yapan kişiyi verir. comment hem fiil hem isim: comment on a video (yorum yapmak) / a nice comment (yorum)."
+  - type: lgs_taktigi
+    refs: [U5-034]
+    text: "Altı çizili kelime sorusunda (S12) her şıkkı cümleye tek tek yerleştir: anlam aynı kalıyorsa doğru şık odur. \"I'm going to share it on my page\" → post: anlam değişmiyor."
+
+coach:
+  start: "Bugün Ece ilk videoyu çekiyor… onuncu kez. Sonra telefon bir türlü susmuyor! Kim ne diyecek, hazır mısın? 🎬"
+  end_good: "Muhteşem! Ece'nin telefonu kadar hızlıydın. Yarın Bora'nın interneti tam yanlış anda bir sorun çıkarıyor… 🔔"
+  end_mixed: "Güzel iş! {weak} biraz karıştı; yönleri karıştırmak çok normal, yukarı mı aşağı mı? Yarın bir kez daha deneriz. 🎬"
+
+notifications:
+  morning: "Onuncu çekim! Ece bugün grubun ilk videosunu çekiyor. Peki sonra? 🎬"
+  evening: "Ding! Ding! Ding! Ece'nin telefonu bütün gün öttü. Kimden ne geldi? 🔔"
+  review: "Tek soru: Videoyu kanala koymak upload mı, download mı? 🤔"
+
+editor:
+  z07: {U5-019: BEKLIYOR, U5-025: BEKLIYOR, U5-028: BEKLIYOR, U5-030: BEKLIYOR, U5-033: BEKLIYOR, U5-034: BEKLIYOR}

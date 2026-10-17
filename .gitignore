@@ -1,0 +1,8 @@
+reels/frames/
+reels/aud/
+reels/_build.html
+reels/out/
+.env
+__pycache__/
+*.pyc
+.DS_Store

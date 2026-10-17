@@ -1,0 +1,343 @@
+schema_version: 1
+program: lgs
+unit: 3
+day: 9
+status: draft
+title: "Babaannenin sırrı"
+est_minutes: 10
+characters: [Selin, Ece, Elif, Bora, Selin'in babaannesi, Selin'in dedesi]
+new_items: [U3-003, U3-028, U3-031, U3-053, U3-055, U3-058]
+
+story:
+  - id: s01
+    text: "Pazar sabahı, Selin'in babaannesinin evi. Kapıdan girer girmez bağlama sesi duyuldu: Selin'in dedesi her pazar olduğu gibi salonda {U2-026|folk music} çalıyordu. Elif hemen sesiyle ona eşlik etti."
+  - id: s02
+    text: "Ece, Elif ve Selin defterlerini açtı. Ece'nin katlı pastasının yanına gelecek sır bugün öğrenilecekti. Selin gururluydu: \"<en>My grandma's {U3-031|homemade} ice cream is the best {U3-055|dessert} in İzmir!</en>\""
+  - id: s03
+    text: "Tam o sırada zil çaldı. Kapıda Bora vardı, elinde kendi kaşığıyla: \"<en>Hello! I heard about the {U3-031|homemade} ice cream. I'm the official taster!</en>\""
+  - id: s04
+    text: "Elif: \"<en>Bora, you're on the other team!</en>\" Bora: \"<en>I know, I know. But I {U3-058|have a sweet tooth}. I can't stay away from ice cream.</en>\""
+  - id: s05
+    text: "Babaanne güldü ve onu da içeri aldı: \"<en>Come in, dear. A boy with a {U3-058|sweet tooth} is always welcome in my kitchen.</en>\""
+  - id: s06
+    text: "Babaanne önlüğünü bağladı: \"<en>So, who is {U3-053|in the mood for} some ice cream today?</en>\" İlk havaya kalkan el, tabii ki Bora'nınkiydi."
+  - id: s07
+    text: "Babaanne ocağın başına geçti; gençler biraz geride bekledi. \"<en>We {U3-002|boil} the milk, the cream and the sugar together, and we {U3-018|stir} all the time. Slowly, slowly.</en>\""
+  - id: s08
+    text: "Ece'nin kalemi havada kaldı: \"<en>{U3-047|How much} sugar exactly? {U3-047|How many} grams?</en>\" Babaanne: \"<en>Hmm… a {U3-039|cup}. Maybe a little more. I never measure, dear.</en>\""
+  - id: s09
+    text: "Ece'nin gözleri büyüdü, Selin'in kaşı havaya kalktı. Babaanne göz kırptı: \"<en>The eyes measure, the hands know.</en>\" Selin bir an düşündü ve defterine yazdı: \"<en>Rule 1: Sometimes there are no rules.</en>\""
+  - id: s10
+    text: "Süt soğuyunca babaanne hepsini kocaman bir {U3-038|bowl}'a boşalttı: \"<en>Now we {U3-012|cover} the {U3-038|bowl}, and it goes into the {U3-003|freezer}.</en>\""
+  - id: s11
+    text: "Elif: \"<en>{U3-047|How long} does it stay in the {U3-003|freezer}?</en>\" Babaanne: \"<en>Four hours. But every hour, we take it out and {U3-018|stir} it. That's the secret: no ice, only cream.</en>\""
+  - id: s12
+    text: "Bora: \"<en>Four hours?! Can't we {U3-003|freeze} it faster? I can't wait four hours!</en>\""
+  - id: s13
+    text: "Bundan sonrası bir döngüydü. Her saat başı babaanne {U3-038|bowl}'u çıkardı, her saat başı Bora kaşığını uzattı: \"<en>Just to {U3-036|taste}! Mmm… {U3-028|delicious}!</en>\""
+  - id: s14
+    text: "İkinci saat: \"<en>Just to {U3-036|taste}… so {U3-028|yummy}!</en>\" Üçüncü saat: \"<en>Just to check the sugar… {U3-028|tasty}!</en>\" Bora'nın kaşığı her seferinde biraz daha büyüyordu."
+  - id: s15
+    text: "Bu arada babaanne süslemeye geçti: \"<en>On top, we {U3-024|sprinkle} some pistachios and {U3-015|grate} a little dark chocolate.</en>\""
+  - id: s16
+    text: "Elif'e de bir kavanoz vişne düştü. Babaanne: \"<en>These cherries are from my garden. {U3-014|Drain} them well, Elif. We only want the fruit.</en>\""
+  - id: s17
+    text: "Dördüncü saat. Babaanne {U3-003|freezer}'ı açıp {U3-038|bowl}'u çıkardı. Dibinde ancak üç kaşıklık bir şey kalmıştı."
+  - id: s18
+    text: "Bütün gözler Bora'ya döndü. Bora kaşığını arkasına sakladı: \"<en>What? I only {U3-036|tasted} it. Four times. Maybe five.</en>\""
+  - id: s19
+    text: "Selin: \"<en>Bora! Now we have no {U3-055|dessert} for the photo!</en>\" Salondan dedenin sesi geldi: \"<en>And none for me? I'm {U3-053|in the mood for} ice cream too!</en>\""
+  - id: s20
+    text: "Babaanne hiç kızmadı. Arka odadaki büyük {U3-003|freezer}'dan iki {U3-038|bowl} daha çıkardı: \"<en>I always make three. Grandmas know about boys with a {U3-058|sweet tooth}.</en>\""
+  - id: s21
+    text: "Ece babaannenin boynuna sarıldı: \"<en>You're so {U1-074|generous}! And this is the most {U3-028|delicious} ice cream in the world.</en>\""
+  - id: s22
+    text: "Herkes vişneli porsiyonunu aldı; dede bile bağlamayı bırakıp mutfağa geldi. Elif: \"<en>Shop ice cream is OK, but {U3-031|homemade} is a different world!</en>\""
+  - id: s23
+    text: "Babaanne sordu: \"<en>One more, Bora?</en>\" Bora üçüncü porsiyonunu kaşıklarken ciddi ciddi başını salladı: \"<en>No, thank you. I'm {U1-099|stuffed}. I'm not really {U3-053|in the mood for} {U3-055|dessert} today.</en>\""
+  - id: s24
+    text: "Elif kahkahayı bastı: \"<en>Bora, that's your third bowl!</en>\" Bora: \"<en>Exactly. I'm not {U3-053|in the mood for} a fourth.</en>\""
+  - id: s25
+    text: "Akşam Ece gruba yazdı: \"<en>Thursday: {U3-050|recipe} cards and final menus. Friday: the final!</en>\" Kaan: \"<en>And no more {U3-036|tasting} for Bora!</en>\" Bora: \"<en>{U3-047|How many} spoons is 'no more'?</en>\""
+
+scene:
+  - id: c01
+    speaker: Selin'in babaannesi
+    text: "<en>Who is in the mood for some homemade ice cream?</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>Me! I have a sweet tooth. Dessert is my favourite part of the day.</en>"
+  - id: c03
+    speaker: Elif
+    text: "<en>How long does it stay in the freezer?</en>"
+  - id: c04
+    speaker: Selin
+    text: "<en>Four hours. But Bora tasted it every hour!</en>"
+  - id: c05
+    speaker: Bora
+    text: "<en>Only because it's delicious!</en>"
+
+steps:
+  - item: U3-003
+    sezdir:
+      id: u3d09-003-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"it goes into the freezer\" ifadesinde \"freezer\" ne anlama geliyordu?"
+      options: ["dondurucu (derin dondurucu)", "fırın", "bulaşık makinesi", "süzgeç"]
+      answer: 0
+      explain: "freeze = dondurmak, freezer = dondurucu."
+    kullan:
+      id: u3d09-003-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Water ________ at 0°C and turns into ice.</en>"
+      options: ["freezes", "melts", "boils", "bakes"]
+      answer: 0
+      explain: "Su 0°C'de donup buza dönüşür: freeze. melt bunun tersidir."
+    sina:
+      id: u3d09-003-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Bora has a lot of strawberries. He wants to eat them next month. What should he do?</en>"
+      options: ["freeze them", "melt them", "grate them", "boil them for a month"]
+      answer: 0
+      explain: "Yiyeceği haftalarca saklamak için dondururuz."
+  - item: U3-028
+    sezdir:
+      id: u3d09-028-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede Bora'nın \"Mmm… delicious!\" sözünde \"delicious\" ne anlama geliyordu?"
+      options: ["lezzetli, nefis", "çok tuzlu", "çok ekşi", "berbat"]
+      answer: 0
+    kullan:
+      id: u3d09-028-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Mmm! This cake is ________. Can I have another piece?</en>"
+      options: ["delicious", "awful", "greasy", "bitter"]
+      answer: 0
+      explain: "Bir parça daha isteyen kişi keki beğenmiştir: delicious."
+    sina:
+      id: u3d09-028-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Grandma's ice cream is really tasty.\" Which one is CLOSEST in meaning to \"tasty\"?</en>"
+      options: ["delicious", "homemade", "frozen", "fresh"]
+      answer: 0
+      explain: "tasty, delicious ve yummy aynı anlamda; homemade, frozen, fresh tadı değil nasıl yapıldığını ya da durumunu anlatır."
+  - item: U3-031
+    sezdir:
+      id: u3d09-031-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede Selin'in \"My grandma's homemade ice cream\" sözünde \"homemade\" ne anlama geliyordu?"
+      options: ["ev yapımı", "hazır, dükkândan alınmış", "pahalı", "yabancı"]
+      answer: 0
+    kullan:
+      id: u3d09-031-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>We didn't buy this jam from a shop. My mum made it in our kitchen. It's ________.</en>"
+      options: ["homemade", "frozen", "greasy", "bitter"]
+      answer: 0
+      explain: "Evde yapılan, dükkândan alınmayan yiyecek homemade'dir."
+    sina:
+      id: u3d09-031-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Elif's café review: At Lavender Café, they don't buy their cakes from a factory. The owner bakes all of them in the café's kitchen every morning. My favourite is the lemon cake.</en>"
+      options: ["The cakes are homemade.", "The cakes are frozen.", "The owner buys the cakes from a factory.", "Elif's favourite is the chocolate cake."]
+      answer: 0
+      explain: "Kekler fabrikadan alınmıyor, kafenin mutfağında yapılıyor; bu, homemade'in başka kelimelerle söylenişi."
+  - item: U3-053
+    sezdir:
+      id: u3d09-053-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede babaannenin \"Who is in the mood for some ice cream?\" sorusunda \"be in the mood for\" ne anlama geliyordu?"
+      options: ["canı … istemek", "… -den korkmak", "… -e hazır olmak", "… -den sıkılmak"]
+      answer: 0
+    kullan:
+      id: u3d09-053-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>It's very hot today. I'm in the ________ for a cold lemonade.</en>"
+      options: ["mood", "mind", "fond", "keen"]
+      answer: 0
+      explain: "Kalıp be in the mood for + isim: I'm in the mood for pizza."
+    sina:
+      id: u3d09-053-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: Do you want pizza tonight?\nSelin: ________ Let's have soup.\nEce: OK, soup it is.</en>"
+      options: ["Not really. I'm not in the mood for pizza.", "Yes! I'm in the mood for pizza.", "I'm crazy about pizza.", "Pizza sounds great!"]
+      answer: 0
+      explain: "Selin ardından çorba öneriyor; demek ki canı pizza istemiyor."
+  - item: U3-055
+    sezdir:
+      id: u3d09-055-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"the best dessert in İzmir\" ifadesinde \"dessert\" ne anlama geliyordu?"
+      options: ["tatlı (yemekten sonra yenen)", "ana yemek", "çorba", "kahvaltı"]
+      answer: 0
+    kullan:
+      id: u3d09-055-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>We had soup and grilled fish, and for ________ we had ice cream.</en>"
+      options: ["dessert", "desert", "breakfast", "dough"]
+      answer: 0
+      explain: "Yemekten sonra gelen tatlı dessert (iki s); desert çöl demek."
+    sina:
+      id: u3d09-055-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the menu, which of the following is correct?</en>"
+      stem: "<en>Seaside Café – Today's menu\nSoup: lentil soup\nHot food: grilled fish, roasted chicken\nDesserts: rice pudding, homemade ice cream\nDrinks: lemonade, tea</en>"
+      options: ["You can have rice pudding as a dessert.", "Lemonade is a dessert.", "The chicken is fried.", "There are two kinds of soup."]
+      answer: 0
+      explain: "Desserts satırında rice pudding var; limonata içecek, tavuk fırında, tek çorba var."
+  - item: U3-058
+    sezdir:
+      id: u3d09-058-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede Bora'nın \"I have a sweet tooth\" cümlesi ne anlama geliyordu?"
+      options: ["tatlıya düşkünüm", "dişim ağrıyor", "tatlıdan hiç hoşlanmam", "dişçiye gideceğim"]
+      answer: 0
+      explain: "Deyimdir; kelimesi kelimesine \"tatlı diş\" değil, tatlıyı çok sevmek demektir."
+    kullan:
+      id: u3d09-058-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My dad eats chocolate every day and he loves cakes. He has a sweet ________.</en>"
+      options: ["tooth", "mouth", "tongue", "heart"]
+      answer: 0
+      explain: "Deyim have a sweet tooth; mouth, tongue ya da heart ile kurulmaz."
+    sina:
+      id: u3d09-058-s
+      type: trait_match
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who has a sweet tooth?</en>"
+      stem: "<en>Ece: I prefer salty snacks like crisps.\nKaan: Chips, please! I don't really like sweet things.\nBora: Baklava, chocolate, ice cream… I can never say no to them!\nDuru: I don't mind. Bread and cheese are fine for me.</en>"
+      options: ["Bora", "Ece", "Kaan", "Duru"]
+      answer: 0
+      explain: "Tatlılara hayır diyemeyen kişi tatlıya düşkündür: Bora."
+
+review:
+  - id: u3d09-r01
+    type: gap_fill
+    item: U3-005
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Dad, can you ________ the corn on the barbecue?</en>"
+    options: ["grill", "mash", "knead", "spread"]
+    answer: 0
+  - id: u3d09-r02
+    type: dialogue_complete
+    item: U3-007
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: How do you cook the chicken?\nB: I ________ it in the oven with potatoes for an hour.</en>"
+    options: ["roast", "steam", "mash", "spread"]
+    answer: 0
+  - id: u3d09-r03
+    type: situation
+    item: U3-008
+    prompt: "<en>Duru's mum cooks the broccoli over boiling water. She doesn't use any oil. How does she cook it?</en>"
+    options: ["She steams it.", "She fries it.", "She grills it.", "She roasts it."]
+    answer: 0
+  - id: u3d09-r04
+    type: gap_fill
+    item: U3-017
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Babies can't eat big pieces of banana, so ________ the banana with a fork.</en>"
+    options: ["mash", "grill", "roast", "steam"]
+    answer: 0
+  - id: u3d09-r05
+    type: gap_fill
+    item: U3-029
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>The fish at this market come from the sea every morning, so they're always ________.</en>"
+    options: ["fresh", "greasy", "bitter", "sweet"]
+    answer: 0
+  - id: u3d09-r06
+    type: synonym
+    item: U3-030
+    prompt: "<en>\"These chips are too oily.\" Which one is CLOSEST in meaning to \"oily\"?</en>"
+    options: ["greasy", "fresh", "sour", "sweet"]
+    answer: 0
+  - id: u3d09-r07
+    type: process_order
+    item: U3-001
+    lgs_like: true
+    stem_id: S07
+    prompt: "<en>According to the recipe, what do we do after pouring the mixture into the tin?</en>"
+    stem: "<en>Easy Chocolate Cake\nFirst, preheat the oven to 180°C. Next, combine the flour, cocoa, sugar and eggs in a big bowl. After that, pour the mixture into a cake tin. Finally, bake it for 35 minutes.</en>"
+    options: ["We bake it for 35 minutes.", "We preheat the oven.", "We combine the flour and the eggs.", "We melt some chocolate."]
+    answer: 0
+    explain: "Kalıba döktükten sonra gelen tek adım 'Finally, bake it…'; fırını ısıtmak ve karıştırmak daha önce."
+  - id: u3d09-r08
+    type: text_infer
+    item: U3-043
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to the text, which of the following is TRUE?</en>"
+    stem: "<en>Selin: Yesterday my cake rose like a volcano! I used a tablespoon of baking powder, but the recipe said a teaspoon. Next time I'll read more carefully.</en>"
+    options: ["Selin used too much baking powder.", "Selin forgot the baking powder.", "The recipe said a tablespoon of baking powder.", "Selin's cake was flat."]
+    answer: 0
+    explain: "Tarif çay kaşığı diyor, Selin yemek kaşığı kullanmış: fazla kabartma tozu."
+  - id: u3d09-r09
+    type: dialogue_complete
+    item: U3-039
+    lgs_like: true
+    stem_id: S13
+    prompt: "<en>Which question can be the missing question?</en>"
+    stem: "<en>Elif: ________\nEce: Two cups. And one teaspoon of baking powder.</en>"
+    options: ["How much flour do we need?", "How many eggs do we need?", "How long does it bake?", "How often do you bake?"]
+    answer: 0
+    explain: "Cevap bir ölçü (two cups) veriyor; sayılamayan un için How much sorulur."
+  - id: u3d09-r10
+    type: dialogue_complete
+    item: U3-006
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Kaan: The cookie dough is ready. Shall we bake it now?\nBora: ________ It needs to be hot first.\nKaan: OK, I'll wait ten minutes.</en>"
+    options: ["Not yet. Let's preheat the oven.", "Yes, the oven is cold, so it's perfect.", "No, I don't like cookies.", "Sure. Let's turn off the oven."]
+    answer: 0
+    explain: "Bora 'It needs to be hot first' diyor; önce fırın ısıtılmalı (preheat)."
+
+tips:
+  - type: hafiza_kancasi
+    refs: [U3-055]
+    text: "dessert mi desert mi? Tatlıyı hep iki kez istersin: dessert'te iki s var. Tek s'li desert çöl demek. Vurgu da farklı: desSERT (tatlı), DEsert (çöl)."
+  - type: tuzak
+    refs: [U3-035, U3-055]
+    text: "Türkçede \"tatlı\" hem tat hem yiyecek; İngilizcede ayrılır: sweet sıfattır (It's too sweet = fazla tatlı), dessert isimdir (What's for dessert? = Tatlı ne var?)."
+  - type: mini_dilbilgisi
+    refs: [U3-003]
+    text: "freeze düzensiz bir fiildir: freeze – froze – frozen. Freezed denmez: frozen peas (donmuş bezelye), The lake froze last winter."
+  - type: kelime_ailesi
+    refs: [U3-028]
+    text: "delicious / tasty / yummy üçü de lezzetli: delicious en güçlüsü, tasty nötr, yummy samimi ve çocuksu. Dikkat: tasteful \"zevkli\" demek (a tasteful dress); yemek tasty olur."
+
+coach:
+  start: "Bugün Selin'in babaannesinin evindeyiz. Bir aile sırrı ortaya çıkacak; bakalım Bora o sırra kaşığını daldırmadan durabilecek mi? 🥄"
+  end_good: "Muhteşem! Bora porsiyonları boşalttı, sen de soruları. Bugünkü kelimeler buz gibi yerinde! 🍨"
+  end_mixed: "{weak} biraz eriyip gitti, olsun. Babaannenin dediği gibi: eller zamanla öğrenir. Yarın bir kaşık daha! 🥄"
+
+notifications:
+  morning: "Selin'in babaannesi bugün aile sırrını paylaşıyor. Bora da kapıda! 🥄"
+  evening: "Dört saat, dört kaşık… Bora'nın küçük kontrolleri nasıl bitti? Ders 10 dakika."
+  review: "Tek soru: Bora \"I have a sweet tooth\" dedi. Ne demek istedi?"
+
+editor:
+  z07: {U3-003: BEKLIYOR, U3-028: BEKLIYOR, U3-031: BEKLIYOR, U3-053: BEKLIYOR, U3-055: BEKLIYOR, U3-058: BEKLIYOR}

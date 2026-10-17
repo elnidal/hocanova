@@ -1,0 +1,352 @@
+schema_version: 1
+program: lgs
+unit: 5
+day: 9
+status: draft
+title: "Kırıcı yorum"
+est_minutes: 10
+characters: [Elif, Duru, Kaan, Ece, Selin, Bora, Murat Bey, Mia]
+new_items: [U5-014, U5-027, U5-029, U5-032, U5-035, U5-048]
+
+story:
+  - id: s01
+    text: "Perşembe akşamı, saat tam dokuz. Ece kanala yeni videoyu koymuştu: Elif'in tek başına söylediği ilk şarkı. Arda'nın kalpleri, Nermin Teyze'nin alkışları peş peşe geliyordu."
+  - id: s02
+    text: "Derken videonun altına tanımadıkları bir hesaptan bir yorum düştü: Elif'in şarkı söyleyişiyle alay eden, kırıcı bir yorum. Elif telefonu ters çevirdi ve gruba tek satır yazdı: \"<en>Did you see the new comment? 😔</en>\""
+  - id: s03
+    text: "Kaan'ın parmakları çoktan klavyedeydi: \"<en>I'm going to {U1-020|reply} right now. Three pages!</en>\""
+  - id: s04
+    text: "O akşam ilk yazan, her zaman en son ve en kısa yazan Duru oldu: \"<en>Kaan, stop. Don't {U1-020|reply}. Stay {U1-069|calm}. Report it and tell an {U2-072|adult}.</en>\""
+  - id: s05
+    text: "Kaan: \"<en>Why? Someone has to answer!</en>\" Duru: \"<en>An answer gives them attention. {U5-054|In other words}, you make the fire bigger.</en>\""
+  - id: s06
+    text: "Ece kanalın menajeriydi ve hiç vakit kaybetmedi: \"<en>I can {U5-001|access} the channel settings. First, a {U5-021|screen}shot. Then I'll report the comment and block the account. I won't {U5-018|delete} anything before the screenshot.</en>\""
+  - id: s07
+    text: "Selin, Murat Bey'in derste söylediğini hatırladı: \"<en>{U5-035|Social networking sites} have rules about harmful {U5-029|content}. We can use the report button.</en>\""
+  - id: s08
+    text: "Ece hemen Murat Bey'e bir e-posta yazmaya başladı: \"<en>I'm writing to Murat Bey now. I'll {U5-014|attach} the screenshot.</en>\""
+  - id: s09
+    text: "Bora: \"<en>{U5-055|Sorry, I can't follow you}. Which screenshot? There are two.</en>\" Ece: \"<en>Both. Two {U5-014|files}, one email.</en>\" Bora: \"<en>OK. And I'm telling my mum, too. I learned it the hard way: tell an adult fast.</en>\""
+  - id: s10
+    text: "On dakika geçmeden Murat Bey'in e-postası geldi: \"<en>Thank you, Ece. I've got the {U5-014|attachment}. You all did the right thing. The school and I will take care of it tomorrow. Elif, you are not alone.</en>\""
+  - id: s11
+    text: "Elif o akşam annesine de anlattı. Annesi ona sarıldı; telefonu bir saatliğine kenara koydular ve birlikte en sevdiği Luna Ray şarkısını dinlediler."
+  - id: s12
+    text: "Gece yarısına doğru gruba Duru'dan bir mesaj daha düştü. Bu kez hiç de kısa değildi: \"<en>Elif, this matters to me. One comment is one person. We're a band, and we {U1-064|support each other}.</en>\""
+  - id: s13
+    text: "Ertesi sabah Murat Bey derse ciddi bir yüzle girdi ve kimsenin adını vermeden konuştu: \"<en>Sadly, unkind comments are {U5-048|widespread} on {U5-035|social networking sites}. But kindness is everywhere, too. Report, block, and talk to someone.</en>\""
+  - id: s14
+    text: "Teneffüste Ece telefonunu Elif'e uzattı. Videonun altında yüzlerce yeni mesaj vardı: Brezilya'dan, Japonya'dan, Kenya'dan, Kanada'dan… \"<en>Elif, look! Our followers are {U5-048|worldwide}!</en>\""
+  - id: s15
+    text: "Mesajlardan biri Kanadalı bir {U5-027|blogger}'dandı, adı Mia'ydı: \"<en>Hi Elif! I write a music {U5-027|blog}. Last year I got a comment like that, too. Your voice is lovely. Keep singing!</en>\""
+  - id: s16
+    text: "Elif'in gözleri parladı: \"<en>She has a {U5-027|vlog}, too! She sings Luna Ray songs with her ukulele!</en>\""
+  - id: s17
+    text: "Elif: \"<en>Last night I wanted to {U5-018|delete} the video. This morning I {U5-032|made new friends} in four countries!</en>\""
+  - id: s18
+    text: "Selin her zamanki gibi defterine yazdı: \"<en>For our guide: one unkind comment, a hundred kind ones. {U5-035|Social networking sites} have two faces.</en>\""
+  - id: s19
+    text: "Ece kanalın planını da hemen güncelledi: \"<en>New plan for our channel: more happy {U5-029|content}. And the comments stay open – for kind people.</en>\""
+  - id: s20
+    text: "Kaan bu kez yazmadan önce durdu, düşündü: \"<en>New rule for me: when I'm angry, I don't type. I talk to an adult first.</en>\""
+  - id: s21
+    text: "Günün gülümseten mesajı Bora'nın dedesindendi; tamamı büyük harflerle: \"<en>ELIF SINGS LIKE A JAZZ STAR! ADD SOME JAZZ!</en>\" Bora: \"<en>Sorry. Grandpa thinks capital letters are louder.</en>\""
+  - id: s22
+    text: "Akşam Elif, Mia'nın sayfasını annesiyle birlikte okudu; sonra annesinin onayıyla, adresini ya da okulunu yazmadan, kanal hesabından Mia'ya yazdı: \"<en>Thank you so much! I want to {U5-032|make new friends} who love music. {U5-059|Why don't we} sing a song together on our channels one day?</en>\""
+  - id: s23
+    text: "Mia'nın mesajı bir dakikada geldi: \"<en>Yes! And I'm going to write about you on my {U5-027|blog}: 'How to {U5-032|make new friends} after one bad comment'. 🙂</en>\""
+  - id: s24
+    text: "Gece Murat Bey sınıf grubuna yazdı: \"<en>{U5-053|By the way}, the guide presentations are on Monday. Selin, please add today's lesson: unkind {U5-029|content} is {U5-048|widespread}, but help is, too. Bora, are you ready to tell your story?</en>\""
+  - id: s25
+    text: "Bora kalemiyle masaya kısa bir davul solosu attı: \"<en>Leave it to me. And this weekend my mum and I are buying something online – the right way!</en>\""
+
+scene:
+  - id: c01
+    speaker: Kaan
+    text: "<en>I'm going to reply right now!</en>"
+  - id: c02
+    speaker: Duru
+    text: "<en>Don't reply. Report it and tell an adult.</en>"
+  - id: c03
+    speaker: Ece
+    text: "<en>I'll attach the screenshot to an email to Murat Bey.</en>"
+  - id: c04
+    speaker: Elif
+    text: "<en>Our followers are worldwide! I made new friends in four countries.</en>"
+  - id: c05
+    speaker: Mia
+    text: "<en>I write a music blog. Keep singing!</en>"
+
+steps:
+  - item: U5-014
+    sezdir:
+      id: u5d09-014-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede Ece, Murat Bey'e e-posta yazarken \"I'll attach the screenshot\" diyor. \"attach\" ne anlama geliyordu?"
+      options: ["(e-postaya dosya) eklemek, iliştirmek", "silmek", "indirmek", "şikâyet etmek"]
+      answer: 0
+    kullan:
+      id: u5d09-014-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin: I got your email, but there's no photo in it. Did you forget to ________ the file?</en>"
+      options: ["attach", "obey", "avoid", "sign up"]
+      answer: 0
+      explain: "E-postaya fotoğraf ya da belge koymak attach a file (to an email) ile söylenir."
+    sina:
+      id: u5d09-014-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>What is the purpose of Selin's email?</en>"
+      stem: "<en>To: Murat Bey\nSubject: Our survey results\nDear Murat Bey,\nYou can find our class survey results in the attachment. There are two charts in the file.\nBest wishes,\nSelin</en>"
+      options: ["to send a file with the survey results", "to ask for a new password", "to invite Murat Bey to a concert", "to complain about a comment"]
+      answer: 0
+      explain: "\"You can find our class survey results in the attachment\": Selin anket sonuçlarını ekli dosyayla gönderiyor."
+  - item: U5-027
+    sezdir:
+      id: u5d09-027-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede Kanadalı Mia \"I write a music blog\" diyor. \"blog\" ne anlama geliyordu?"
+      options: ["kişinin düzenli yazı paylaştığı internet sayfası", "müzik grubu", "arama motoru", "telefon şebekesi"]
+      answer: 0
+    kullan:
+      id: u5d09-027-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My cousin films short videos about her school day and posts them every Sunday. She has a popular ________.</en>"
+      options: ["vlog", "password", "screen", "copyright"]
+      answer: 0
+      explain: "Düzenli paylaşılan video günlüğüne vlog (video + blog) denir."
+    sina:
+      id: u5d09-027-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who is a vlogger?</en>"
+      stem: "<en>Ali: I write about my favourite books on my website every week.\nDeniz: I film short videos about my cooking and post them every Friday.\nCan: I don't post anything. I only play online games.</en>"
+      options: ["Deniz", "Ali", "Can", "Ali and Can"]
+      answer: 0
+      explain: "Vlogger düzenli video paylaşır: Deniz; Ali yazı yazdığı için blogger, Can hiçbir şey paylaşmıyor."
+  - item: U5-029
+    sezdir:
+      id: u5d09-029-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede Selin \"Social networking sites have rules about harmful content\" diyor. \"content\" ne anlama geliyordu?"
+      options: ["içerik (paylaşılan video, yazı, fotoğraf)", "kural", "şifre", "takipçi"]
+      answer: 0
+    kullan:
+      id: u5d09-029-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Our channel is only for music. We don't post any other ________: no games, no ads.</en>"
+      options: ["content", "password", "browser", "expert"]
+      answer: 0
+      explain: "Bir kanalda ya da sitede paylaşılan videolar, yazılar ve fotoğrafların hepsine content denir."
+    sina:
+      id: u5d09-029-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What should you do in this situation?</en>"
+      stem: "<en>You see a video with harmful content about a classmate on a social networking site.</en>"
+      options: ["Report it and tell an adult.", "Share it with all your friends.", "Write a rude comment under it.", "Download it and send it to your class."]
+      answer: 0
+      explain: "Zararlı içerik bildirilir ve bir yetişkine söylenir; paylaşmak, indirip yaymak ya da kaba yorum yazmak zararı büyütür."
+  - item: U5-032
+    sezdir:
+      id: u5d09-032-z
+      type: meaning
+      context: s17
+      prompt: "Hikâyede Elif \"This morning I made new friends in four countries!\" diyor. \"make new friends\" ne anlama geliyordu?"
+      options: ["yeni arkadaş edinmek", "eski arkadaşlarla buluşmak", "arkadaşlık isteğini reddetmek", "arkadaşlarına mesaj atmak"]
+      answer: 0
+    kullan:
+      id: u5d09-032-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Elif was a new student, so she joined the music club. She wanted to ________ there.</en>"
+      options: ["make new friends", "break a promise", "tell a lie", "log out"]
+      answer: 0
+      explain: "Yeni bir okulda ya da kulüpte insanlarla tanışıp arkadaş olmak make new friends ile anlatılır."
+    sina:
+      id: u5d09-032-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which question can be the missing question?</en>"
+      stem: "<en>Mert: ________\nAyşe: I join online clubs and chat with people who love the same things as me.</en>"
+      options: ["How do you make new friends on the Internet?", "How often do you change your password?", "What does BTW stand for?", "Where do you buy your clothes?"]
+      answer: 0
+      explain: "Ayşe insanlarla nasıl tanıştığını (online clubs, chat) anlatıyor; bu cevap \"How do you make new friends …?\" sorusuna uyar."
+  - item: U5-035
+    sezdir:
+      id: u5d09-035-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede Murat Bey \"unkind comments are widespread on social networking sites\" diyor. \"social networking sites\" ne anlama geliyordu?"
+      options: ["sosyal medya siteleri", "arama motorları", "haber siteleri", "okulun internet sayfası"]
+      answer: 0
+    kullan:
+      id: u5d09-035-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Millions of people share photos, post comments and chat with their friends on ________ every day.</en>"
+      options: ["social networking sites", "passwords", "expiry dates", "screens"]
+      answer: 0
+      explain: "Fotoğraf paylaşılan, yorum yazılan ve arkadaşlarla yazışılan yerler social networking sites (SNS) olarak adlandırılır."
+    sina:
+      id: u5d09-035-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>From our Safer Internet guide: Social networking sites are great for keeping in touch with friends and family. But don't accept friend requests from strangers, and never share your address or phone number.</en>"
+      options: ["We can keep in touch with our friends on social networking sites.", "We should share our address on social networking sites.", "We should accept friend requests from everybody.", "Social networking sites are only for strangers."]
+      answer: 0
+      explain: "Metin SNS'lerin arkadaş ve aileyle iletişim için iyi olduğunu söylüyor; adres paylaşmak ve tanımadıklarını kabul etmek yasaklanıyor."
+  - item: U5-048
+    sezdir:
+      id: u5d09-048-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede mesajlar Brezilya'dan, Japonya'dan, Kenya'dan geliyor ve Ece \"Our followers are worldwide!\" diyor. \"worldwide\" ne anlama geliyordu?"
+      options: ["dünyanın her yerinden, dünya çapında", "yalnızca bizim şehirden", "çok az", "çok genç"]
+      answer: 0
+    kullan:
+      id: u5d09-048-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>English is a ________ language. People speak it in many countries.</en>"
+      options: ["worldwide", "broken", "personal", "laid-back"]
+      answer: 0
+      explain: "Pek çok ülkede kullanılan bir şey için worldwide (dünya çapında) denir."
+    sina:
+      id: u5d09-048-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word can replace the underlined word?</en>"
+      stem: "<en>Using the Internet for homework is very <u>widespread</u> among teenagers today. Almost every student does it.</en>"
+      options: ["common", "dangerous", "boring", "expensive"]
+      answer: 0
+      explain: "\"Almost every student does it\" ipucu: widespread = common (yaygın)."
+
+review:
+  - id: u5d09-r01
+    type: gap_fill
+    item: U5-003
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>To stay safe online, ________ clicking on strange links.</en>"
+    options: ["avoid", "obey", "enjoy", "delete"]
+    answer: 0
+    explain: "Tehlikeli bir şeyden uzak durmak avoid + V-ing ile söylenir: avoid clicking."
+  - id: u5d09-r02
+    type: dialogue_complete
+    item: U5-004
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Kaan: Let's use a famous singer's song in our video!\nSelin: We can't. ________ We need to ask for permission first.</en>"
+    options: ["The song has copyright.", "My internet is broken.", "The password is too long.", "It's a friend request."]
+    answer: 0
+    explain: "Başkasının şarkısını izinsiz kullanmak telif hakkı (copyright) sorunudur; ardından gelen \"ask for permission\" bunu doğruluyor."
+  - id: u5d09-r03
+    type: synonym
+    item: U5-008
+    lgs_like: true
+    stem_id: S12
+    prompt: "<en>Which word can replace the underlined word?</en>"
+    stem: "<en>All students must <u>obey</u> the rules of the computer lab.</en>"
+    options: ["follow", "break", "avoid", "delete"]
+    answer: 0
+    explain: "obey the rules = follow the rules (kurallara uymak); break the rules tam tersi."
+  - id: u5d09-r04
+    type: gap_fill
+    item: U5-011
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Internet ________ is important for everyone. Learn the rules and never share your password.</en>"
+    options: ["safety", "safe", "screen", "browser"]
+    answer: 0
+    explain: "Boşluğa isim gerekir: Internet safety; safe sıfattır (a safe website)."
+  - id: u5d09-r05
+    type: gap_fill
+    item: U5-043
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Changing your password every few months is ________. It keeps your account safe.</en>"
+    options: ["necessary", "dangerous", "impossible", "useless"]
+    answer: 0
+    explain: "\"It keeps your account safe\" ipucu: şifre değiştirmek gereklidir (necessary)."
+  - id: u5d09-r06
+    type: dialogue_complete
+    item: U5-058
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Kaan: What does SNS ________?\nSelin: Social networking sites.</en>"
+    options: ["stand for", "stand up", "sign up", "log in"]
+    answer: 0
+    explain: "Bir kısaltmanın açılımı What does … stand for? ile sorulur."
+  - id: u5d09-r07
+    type: situation
+    item: U5-061
+    prompt: "<en>Elif's message says: \"The concert is at 7. Please come ASAP!\" What does ASAP stand for?</en>"
+    options: ["as soon as possible", "always say a password", "after school and practice", "all students are present"]
+    answer: 0
+    explain: "ASAP = as soon as possible (bir an önce)."
+  - id: u5d09-r08
+    type: process_order
+    item: U5-012
+    lgs_like: true
+    stem_id: S07
+    prompt: "<en>Put the steps in the correct order.</en>"
+    stem: "<en>Ece's notes for new members of the channel:\n(a) Log out when you finish.\n(b) Sign up with your email address.\n(c) Log in with your username and password.\n(d) Watch and comment on the videos.</en>"
+    options: ["b → c → d → a", "c → b → d → a", "b → d → c → a", "a → b → c → d"]
+    answer: 0
+    explain: "Önce hesap açılır (sign up), sonra giriş yapılır (log in), video izlenir, en son çıkış yapılır (log out)."
+  - id: u5d09-r09
+    type: situation
+    item: U5-009
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>What should you say in this situation?</en>"
+    stem: "<en>A friend from another class says: \"Can you tell me your password? I want to see your messages.\"</en>"
+    options: ["Sorry, I can't. My password is only for me.", "Sure! Here it is.", "I'd love to. What's your username?", "Thanks for calling. Bye!"]
+    answer: 0
+    explain: "Şifre kimseyle paylaşılmaz; kibarca reddedilir."
+  - id: u5d09-r10
+    type: dialogue_complete
+    item: U5-007
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Duru: Bora, your account is still open on the school computer! Anyone can read your messages.\nBora: Oops! ________\nDuru: Good. Now nobody can use your account.</en>"
+    options: ["I'm logging out now.", "I'm signing up now.", "I'm typing my password for you.", "I forgot my username."]
+    answer: 0
+    explain: "Duru \"Now nobody can use your account\" diyor; demek ki Bora hesaptan çıkış yaptı (log out)."
+
+tips:
+  - type: tuzak
+    refs: [U5-014]
+    text: "attachment e-postadaki ek, yani ekli dosyadır; bazı kaynaklardaki \"eklenti\" çevirisi yanlış (eklenti = add-on). Kalıp: attach a file TO an email."
+  - type: kelime_ailesi
+    refs: [U5-027]
+    text: "blog (yazı sayfası) → blogger (blog yazarı) · vlog = video + blog → vlogger. Ders kitabı sorusu: \"Do you follow any bloggers?\""
+  - type: lgs_taktigi
+    refs: [U5-035, U5-058]
+    text: "SNS = social networking sites. Sınavda kısaltma \"What does SNS stand for?\" diye sorulur; cevap açılımın kendisidir."
+  - type: mini_dilbilgisi
+    refs: [U5-032]
+    text: "Arkadaş İngilizcede make ile edinilir: make new friends, make friends from other countries. \"do friends\" ya da \"take friends\" yanlış."
+
+coach:
+  start: "Bugün ciddi bir bölüm. Grup zor bir akşam yaşıyor ama yalnız değiller. Sence ilk adımı kim atacak?"
+  end_good: "Zor bir bölümdü ve sen çok iyi takip ettin. Unutma: kırıcı bir şey görürsen yazışma, bir büyüğüne söyle. 💛"
+  end_mixed: "{weak} biraz zorladı, sorun değil; yarın yine bakarız. Bugünün asıl dersi zaten tamam: kimse yalnız değil. 💛"
+
+notifications:
+  morning: "Bugün grup zor bir akşam yaşıyor. Elif'in yanında olmaya var mısın?"
+  evening: "10 dakikalık ders seni bekliyor. Bu akşam Duru çok net konuşuyor."
+  review: "E-postaya fotoğraf koymak: attach mi, delete mi? 📎"
+
+editor:
+  z07: {U5-014: BEKLIYOR, U5-027: BEKLIYOR, U5-029: BEKLIYOR, U5-032: BEKLIYOR, U5-035: BEKLIYOR, U5-048: BEKLIYOR}

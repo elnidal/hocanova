@@ -1,0 +1,164 @@
+# Ünite kaynak dosyası şeması (lgs-kaynak/units/unit_XX_kaynak.yaml)
+# Amaç: uygulamadan bağımsız, kalıcı ünite bilgisi. Hikâye, soru, kart, video… ne üretilirse buradan beslenir.
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+required: [schema_version, unit, title, status, curriculum, sources, tasnif, themes, grammar, expressions, traps, lgs_focus, story_hooks]
+additionalProperties: false
+$defs:
+  itemId: {type: string, pattern: "^U[0-9]{1,2}-[0-9]{3}$"}
+  ids: {type: array, items: {$ref: "#/$defs/itemId"}}
+  en: {type: string, minLength: 1}
+properties:
+  schema_version: {const: 1}
+  unit: {type: integer, minimum: 1, maximum: 10}
+  title: {type: string}
+  status: {enum: [taslak, editor_onayli]}
+  summary_tr: {type: string, description: "Ünitenin 3-5 cümlelik özeti: ne öğretir, sınavda neye yarar"}
+  curriculum:
+    type: object
+    required: [outcomes, functions]
+    properties:
+      outcomes:
+        type: array
+        items: {type: object, required: [code, text_tr], properties: {code: {type: string}, text_tr: {type: string}}}
+      functions:
+        description: "İletişimsel işlevler (davet etme, tarif anlatma…) ve bunları taşıyan kalıplar"
+        type: array
+        items:
+          type: object
+          required: [id, name_tr, exponents, lgs_weight]
+          properties:
+            id: {type: string, pattern: "^F[0-9]+$"}
+            name_tr: {type: string}
+            exponents: {type: array, items: {$ref: "#/$defs/en"}, minItems: 2}
+            responses: {type: array, items: {$ref: "#/$defs/en"}}
+            items: {$ref: "#/$defs/ids"}
+            lgs_weight: {enum: [yüksek, orta, düşük]}
+            note_tr: {type: string}
+  sources:
+    type: array
+    items: {type: object, required: [code, name], properties: {code: {type: string}, name: {type: string}, rows: {type: integer}}}
+  tasnif:
+    type: object
+    required: [teaching_units, counts, items_file, excluded_examples]
+    properties:
+      teaching_units: {type: integer}
+      counts: {type: object, additionalProperties: {type: integer}}
+      items_file: {type: string}
+      rules_tr: {type: array, items: {type: string}}
+      excluded_examples:
+        description: "Öğretilmeyen ama hikâyede kullanılabilecek kelimeler, sınıfa göre"
+        type: object
+        properties:
+          BILINEN: {type: array, items: {type: string}}
+          TANIMA: {type: array, items: {type: string}}
+          ONCEKI_UNITE: {type: array, items: {type: string}}
+  themes:
+    type: array
+    items: {type: object, required: [name, items], properties: {name: {type: string}, items: {$ref: "#/$defs/ids"}, note_tr: {type: string}}}
+  grammar:
+    type: array
+    items:
+      type: object
+      required: [id, name_tr, form, examples, lgs_note]
+      properties:
+        id: {type: string, pattern: "^G[0-9]+$"}
+        name_tr: {type: string}
+        form: {type: string, description: "Yapı formülü, ör. like/love/enjoy + V-ing"}
+        examples: {type: array, items: {$ref: "#/$defs/en"}, minItems: 2}
+        explain_tr: {type: string}
+        common_errors:
+          type: array
+          items: {type: object, required: [wrong, right], properties: {wrong: {type: string}, right: {type: string}, why_tr: {type: string}}}
+        lgs_note: {type: string}
+        items: {$ref: "#/$defs/ids"}
+  expressions:
+    description: "Hazır ifadeler, diyalog kalıpları, deyimler"
+    type: array
+    items:
+      type: object
+      required: [en, tr, use]
+      properties:
+        en: {$ref: "#/$defs/en"}
+        tr: {type: string}
+        use: {type: string, description: "ne zaman/kime söylenir"}
+        reply: {type: array, items: {type: string}}
+        item: {$ref: "#/$defs/itemId"}
+        register: {enum: [gündelik, nötr, resmi]}
+  collocations:
+    type: array
+    items: {type: object, required: [item, pairs], properties: {item: {$ref: "#/$defs/itemId"}, pairs: {type: array, items: {type: string}}}}
+  word_families:
+    type: array
+    items:
+      type: object
+      required: [root, forms]
+      properties:
+        root: {type: string}
+        forms: {type: array, items: {type: object, required: [form, pos, tr], properties: {form: {type: string}, pos: {type: string}, tr: {type: string}, item: {$ref: "#/$defs/itemId"}}}}
+  synonym_sets:
+    type: array
+    items: {type: object, required: [words, difference_tr], properties: {words: {type: array, items: {type: string}}, difference_tr: {type: string}, items: {$ref: "#/$defs/ids"}}}
+  opposites:
+    type: array
+    items: {type: object, required: [a, b], properties: {a: {type: string}, b: {type: string}, note_tr: {type: string}}}
+  traps:
+    type: array
+    items:
+      type: object
+      required: [about, trap_tr, tip_tr]
+      properties:
+        about: {type: string}
+        item: {$ref: "#/$defs/itemId"}
+        kind: {enum: [sahte_dost, cok_anlamli, benzer_yazilis, dilbilgisi, kaynak_hatasi, turkce_etkisi]}
+        trap_tr: {type: string}
+        tip_tr: {type: string}
+  lgs_focus:
+    type: object
+    required: [what_is_tested, question_patterns, priority_items, tactics]
+    properties:
+      what_is_tested: {type: array, items: {type: string}}
+      question_patterns:
+        type: array
+        items:
+          type: object
+          required: [type, description_tr, sample_stem, distractor_logic_tr]
+          properties:
+            type: {enum: [dialogue_complete, message_infer, situation, synonym, trait_match, odd_one_out, gap_fill, table_graph, process_order, text_infer, picture_match]}
+            description_tr: {type: string}
+            sample_stem: {type: string, description: "ÖZGÜN örnek soru kökü (geçmiş sınavdan kopya değil)"}
+            sample_options: {type: array, items: {type: string}, description: "ilk şık doğru"}
+            distractor_logic_tr: {type: string}
+            items: {$ref: "#/$defs/ids"}
+      priority_items:
+        description: "Sınav açısından en kritik 12-20 birim"
+        $ref: "#/$defs/ids"
+      tactics: {type: array, items: {type: string}}
+      exam_vocabulary:
+        description: "Soru kökünde sık geçen talimat/kök kelimeleri (ör. 'Which of the following…', 'according to')"
+        type: array
+        items: {type: object, required: [en, tr], properties: {en: {type: string}, tr: {type: string}}}
+  cross_unit:
+    type: array
+    items: {type: object, required: [item, links_to, note_tr], properties: {item: {type: string}, links_to: {type: string}, note_tr: {type: string}}}
+  story_hooks:
+    description: "Hikâye motoru için durum fikirleri: hangi sahne hangi birimleri doğal taşır"
+    type: array
+    items: {type: object, required: [situation_tr, items], properties: {situation_tr: {type: string}, items: {$ref: "#/$defs/ids"}, comedy_tr: {type: string}}}
+  mini_lessons:
+    description: "Hap bilgi havuzu (uygulamada tips)"
+    type: array
+    items: {type: object, required: [type, text_tr], properties: {type: {enum: [hafiza_kancasi, tuzak, lgs_taktigi, kelime_ailesi, ilginc_bilgi, mini_dilbilgisi]}, text_tr: {type: string}, refs: {$ref: "#/$defs/ids"}}}
+  phrase_bank:
+    description: "Ders kitabı kalıp cümle havuzu: öğretim birimi sayılmaz; sahne diyaloglarında ve soru köklerinde kullanılır"
+    type: array
+    items:
+      type: object
+      required: [en, tr]
+      properties:
+        en: {type: string}
+        tr: {type: string}
+        function: {type: string}
+        items: {$ref: "#/$defs/ids"}
+        source: {type: string}
+  open_questions: {type: array, items: {type: string}}

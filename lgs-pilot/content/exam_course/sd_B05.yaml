@@ -1,0 +1,133 @@
+schema_version: 1
+id: SD-B05
+module: B
+title: "Tarif ve süreç dili"
+unlock_after: "Ü3 sonu"
+minutes: 5
+stems: [S02, S03, S07, S10, S12, S13]
+functions: ["Basit süreçleri anlatma", "Basit soru sorma, bilgi isteme (How much / How many / How long)"]
+units: [3]
+intro_tr: "Tarif metinleri LGS'de sıralama, 'metinde yok' ve miktar soruları için çok kullanılır. Emir kipini, sıra kelimelerini ve How much / How many farkını bilirsen tarifi bir kez okuman yeter."
+cards:
+  - title_tr: "Emir kipi: fiil başta"
+    body_tr: "Tarifte cümle yalın fiille başlar: Peel, chop, mix, pour, bake. Yasak ya da uyarı için Don't + fiil kullanılır. Fiiller aynı zamanda adımların 'ne' olduğunu söyler; sıralama sorusunda önce fiillerin altını çiz."
+    examples_en:
+      - "Peel the potatoes and slice them."
+      - "Pour the mixture into the pan."
+      - "Don't open the oven for 20 minutes."
+    signal_words: ["peel", "chop", "mix", "pour", "boil", "fry", "bake", "serve"]
+  - title_tr: "Sıra kelimeleri ve before / after"
+    body_tr: "first → then / next → after that → finally. 'Before you X, Y.' cümlesinde önce Y yapılır; 'After you X, Y.' cümlesinde önce X. Yazılış sırası ile yapılış sırası farklı olabilir."
+    examples_en:
+      - "First, heat some oil in a pan. Then, add the onions."
+      - "Before you fry the onions, chop them."
+      - "Finally, sprinkle some salt and serve."
+    signal_words: ["first", "then", "next", "after that", "finally", "before", "after"]
+  - title_tr: "How much / How many / How long"
+    body_tr: "How much + sayılamayan (sugar, flour, milk, salt). How many + sayılabilen çoğul (eggs, tomatoes). How long → süre (for 20 minutes). Ölçüler: a pinch of salt, two tablespoons of sugar, a cup of milk."
+    examples_en:
+      - "How much sugar do I need? – Two tablespoons."
+      - "How many eggs do we need? – Three."
+      - "How long does it take? – About half an hour."
+    signal_words: ["How much …?", "How many …?", "How long …?", "a pinch of", "a cup of", "a tablespoon of"]
+worked_example:
+  id: sd-B05-w
+  type: process_order
+  stem_id: S07
+  context: "Pancakes: First, crack two eggs into a bowl. Then, add a cup of milk and some flour, and whisk the mixture. After that, heat some oil in a pan. Finally, pour the mixture into the pan and cook it for two minutes."
+  prompt: "According to the recipe, what do we do right after whisking the mixture?"
+  options:
+    - "heat some oil in a pan"
+    - "crack two eggs into a bowl"
+    - "add milk and flour"
+    - "pour the mixture into the pan"
+  answer: 0
+  explain_tr: "Çırpmadan hemen sonra 'After that, heat some oil in a pan' geliyor. 'pour the mixture into the pan' de çırpmadan sonra ama hemen sonra değil; önce yağ ısıtılır, sonra 'Finally' ile karışım dökülür."
+  items: [U3-013, U3-026, U3-006, U3-045]
+practice:
+  - id: sd-B05-p01
+    type: dialogue_complete
+    stem_id: S13
+    context: "Duru: ________\nGrandma: Only a pinch. Too much salt isn't good for you."
+    prompt: "Which question can be the missing question?"
+    options:
+      - "How much salt do I need?"
+      - "How many eggs do we need?"
+      - "How long does it take?"
+      - "Do you prefer sweet or salty food?"
+    answer: 0
+    explain_tr: "Cevap bir miktar (a pinch) ve tuzdan söz ediyor; 'salt' sayılamayan olduğu için 'How much'. 'How many eggs …?' de miktar sorar ama cevapta yumurta değil tuz var."
+    items: [U3-047, U3-037]
+  - id: sd-B05-p02
+    type: text_infer
+    stem_id: S03
+    context: "Selin's tomato soup: First, chop two onions and fry them in a saucepan. Then, add four tomatoes and some water. Boil the mixture for 20 minutes. After that, blend it and season it with salt and pepper. Serve it hot."
+    prompt: "Which of the following is NOT mentioned in the recipe?"
+    options:
+      - "cheese"
+      - "a saucepan"
+      - "pepper"
+      - "onions"
+    answer: 0
+    explain_tr: "Saucepan, pepper ve onions tarifte geçiyor; peynirden (cheese) hiç söz edilmiyor."
+    items: [U3-010, U3-041, U3-049, U3-002]
+  - id: sd-B05-p03
+    type: text_infer
+    stem_id: S02
+    context: "Kaan's quick sandwich: Spread some butter on two slices of bread. Put some cheese and tomato slices on one of them. Cover it with the other slice. Grill it for three minutes. Enjoy!"
+    prompt: "Which question is NOT answered in the text?"
+    options:
+      - "How many people does it serve?"
+      - "How long do we grill the sandwich?"
+      - "What do we spread on the bread?"
+      - "What do we put on the bread?"
+    answer: 0
+    explain_tr: "Süre (three minutes), sürülen şey (butter) ve konan malzemeler (cheese, tomato) yazıyor; kaç kişilik olduğu yazmıyor."
+    items: [U3-023, U3-012, U3-005, U3-022]
+  - id: sd-B05-p04
+    type: process_order
+    stem_id: S07
+    context: "Before you mash the potatoes, boil them for 20 minutes. Peel them before you boil them. After you mash them, add some butter."
+    prompt: "Which of the following is the correct order?"
+    options:
+      - "peel → boil → mash → add butter"
+      - "boil → peel → mash → add butter"
+      - "mash → boil → peel → add butter"
+      - "peel → mash → boil → add butter"
+    answer: 0
+    explain_tr: "'Peel them before you boil them' → önce soy; 'Before you mash …, boil them' → ezmeden önce haşla; 'After you mash them, add butter' → en son tereyağı. 'boil → peel …' metindeki ilk fiili ilk adım sanan tuzak."
+    items: [U3-019, U3-002, U3-017]
+  - id: sd-B05-p05
+    type: gap_fill
+    stem_id: S12
+    context: "Murat Bey's cooking club: '________ the oven to 180 degrees before you put the cake in.'"
+    prompt: "Which word best fills the blank?"
+    options:
+      - "Preheat"
+      - "Peel"
+      - "Squeeze"
+      - "Sprinkle"
+    answer: 0
+    explain_tr: "Fırın keki koymadan önce ısıtılır: preheat. Peel, squeeze ve sprinkle yiyeceğe yapılan işlemler; fırınla kullanılmaz."
+    items: [U3-006, U3-040]
+  - id: sd-B05-p06
+    type: situation
+    stem_id: S10
+    context: "Ece is reading a recipe to Elif, but Elif doesn't hear the second step."
+    prompt: "What does Elif say?"
+    options:
+      - "Sorry, can you repeat the second step?"
+      - "That sounds easy!"
+      - "Enjoy your meal!"
+      - "It's worth trying."
+    answer: 0
+    explain_tr: "Elif ikinci adımı duymadı, tekrar istemesi gerekir. 'That sounds easy!' tarifi anlayan birinin yorumu."
+    items: [U3-052]
+tips:
+  - "serve / enjoy hep son adımdır; peel / wash genelde ilk adımlardandır."
+  - "'Before you X, Y' → önce Y. Yazılış sırasına değil, before / after mantığına güven."
+  - "Tarifte 'metinde yok' sorusu gelirse malzeme ve araçların listesini çıkar (bowl, pan, oven…) ve şıklarla eşle."
+coach:
+  start: "Mutfağa hoş geldin! Bugün tarif dilini öğreniyoruz: peel, chop, mix ve tabii finally serve!"
+  end: "Afiyet olsun! Artık bir tarifi sınav gözüyle okuyabiliyorsun. Enjoy your meal!"
+status: draft

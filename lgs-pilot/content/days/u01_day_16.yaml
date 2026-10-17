@@ -1,0 +1,340 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 16
+status: draft
+title: "Gezi formu nerede?"
+est_minutes: 10
+characters: [Murat Bey, Kaan, Selin, Bora, Elif, Ece, Duru, Kaan'ın annesi]
+new_items: [U1-017, U1-072, U1-073, U1-075, U1-090, U1-094]
+
+story:
+  - id: s01
+    text: "Çarşamba sabahı Murat Bey sınıfa elinde bir deste kâğıtla girdi."
+  - id: s02
+    text: "\"<en>Good news! On Friday we're going on a school trip: first the science centre, then the amusement park!</en>\" Sınıf alkışlarla çınladı."
+  - id: s03
+    text: "Murat Bey kâğıtları dağıttı: \"<en>But first, I need these forms back with your parents' signatures {U1-094|as soon as possible}. Tomorrow, if you can!</en>\""
+  - id: s04
+    text: "Zil çalınca Kaan formu çantasına tıkıştırdı ve ayakkabı bağcıkları çözük kapıya koştu: \"<en>Bye! I have football, then a birthday party, then… something!</en>\""
+  - id: s05
+    text: "Selin başını iki yana salladı: \"<en>Kaan {U1-075|is always in a hurry}. I'm sure he'll lose that form.</en>\""
+  - id: s06
+    text: "Ertesi sabah Kaan sınıfa koşarak daldı. Gömleğinin düğmeleri yanlış iliklenmişti; bir çorabı mavi, öteki kırmızıydı."
+  - id: s07
+    text: "Elif güldü: \"<en>Why {U1-075|are you always in a hurry}, Kaan?</en>\" Kaan nefes nefese cevap verdi: \"<en>Because I'm always late!</en>\""
+  - id: s08
+    text: "Kaan çantasını masaya boşalttı: kurşun kalemler, yarım simit, bir futbol çorabı… ama form yok. \"<en>Oh no! Where is it?</en>\""
+  - id: s09
+    text: "Bora omzuna dokundu: \"<en>Don't panic. I'll {U1-005|come over} tonight and we can look for it together.</en>\""
+  - id: s10
+    text: "Selin, Kaan'a döndü: \"<en>Did you hear that? Bora {U1-017|offered} to help you. Say thank you!</en>\""
+  - id: s11
+    text: "Kaan, Bora'ya sarıldı: \"<en>Thanks, mate! I can always {U1-052|depend on} you.</en>\""
+  - id: s12
+    text: "Murat Bey her şeyi duymuştu: \"<en>Kaan, you're not {U1-068|unreliable}, just… very fast. Bring the form {U1-094|as soon as possible}, please.</en>\""
+  - id: s13
+    text: "Selin ise formunu o sabah ilk iş teslim etmişti: imzalı, katlanmamış, şeffaf bir dosyada. Gezi için bir liste bile hazırlamıştı: su, şapka, yedek pil. Haftanın bütün ödevlerini de çoktan bitirmişti."
+  - id: s14
+    text: "Murat Bey listeye baktı: \"<en>Selin, you are so {U1-090|self-disciplined}. You make a plan and you follow it.</en>\""
+  - id: s15
+    text: "Selin omuz silkti: \"<en>I study at the same time every day, even at weekends.</en>\" Kaan dehşetle baktı: \"<en>Even at weekends? That's too {U1-090|self-disciplined} for me!</en>\""
+  - id: s16
+    text: "Murat Bey gülümsedi: \"<en>Being {U1-090|self-disciplined} is a great {U1-086|personal trait}, Kaan. Try it!</en>\""
+  - id: s17
+    text: "Teneffüste Ece ile Elif kıyafet konuşuyordu. Ece cuma günü giyeceklerini dünden beri seçiyordu: beyaz spor ayakkabı, yeni bir ceket, saçında renkli bir toka."
+  - id: s18
+    text: "Elif hayranlıkla baktı: \"<en>Wow, Ece. You always look so {U1-072|fashionable}!</en>\""
+  - id: s19
+    text: "Kaan araya girdi: \"<en>Ece is {U1-072|fashionable} even at a picnic! I'm happy when my socks are the same colour.</en>\""
+  - id: s20
+    text: "Bora çantasından annesinin kocaman pembe güneş gözlüğünü çıkarıp taktı: \"<en>I'm {U1-072|fashionable} too! Look at me!</en>\" Elif kahkahayı bastı: \"<en>Bora, you're so {U1-073|funny}!</en>\""
+  - id: s21
+    text: "Bora bununla da yetinmedi; sandalyesinde hız treni sesleri çıkararak sağa sola yattı. Duru yarı uykulu mırıldandı: \"<en>He's {U1-073|funny}. He should be on TV.</en>\""
+  - id: s22
+    text: "Tam o anda Murat Bey içeri girdi. Pembe gözlüğü görünce o da güldü: \"<en>Very {U1-073|funny}, Bora. Now, sit down, please.</en>\""
+  - id: s23
+    text: "Bora gözlüğü çıkardı, yerine oturdu: \"<en>Sorry, sir!</en>\" Murat Bey göz kırptı: \"<en>Funny and {U1-088|respectful}. Good combination!</en>\""
+  - id: s24
+    text: "Akşam Bora, dediği saatte Kaan'ın kapısındaydı. Bir saat aradılar; form sonunda futbol çantasındaki kaleci eldiveninin içinden çıktı!"
+  - id: s25
+    text: "Kaan'ın annesi mutfaktan seslendi: \"<en>Bora, can I {U1-017|offer} you some cake?</en>\" Bora: \"<en>Yes, please! I never say no to cake.</en>\""
+  - id: s26
+    text: "Kaan güldü: \"<en>Thanks for the {U1-017|offer}, Mum. And thanks, Bora!</en>\" Annesi ikisine baktı: \"<en>You two always listen to each other. That's {U1-057|mutual respect}.</en>\""
+  - id: s27
+    text: "Annesi formu imzalayıp Kaan'a uzattı: \"<en>Here. Take it to Murat Bey {U1-094|as soon as possible}!</en>\" Kaan: \"<en>Don't worry, Mum. {U1-075|I'm always in a hurry} anyway!</en>\""
+  - id: s28
+    text: "Ertesi sabah Kaan formu Murat Bey'in masasına bıraktı; ilk kez herkesten önce! \"<en>I {U1-061|respect} people who are always on time. Maybe one day I'll be one of them.</en>\""
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>Please bring your forms back as soon as possible.</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>Kaan is always in a hurry. I'm sure he lost his form.</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>Don't worry, Kaan. I can help you find it. I'll come over tonight.</en>"
+  - id: c04
+    speaker: Elif
+    text: "<en>Ece, you look so fashionable! And Bora, your pink sunglasses are so funny!</en>"
+
+steps:
+  - item: U1-017
+    sezdir:
+      id: d16-017-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"offer\" ne anlama geliyordu?"
+      options: ["teklif etmek, önermek", "reddetmek", "unutmak", "şikâyet etmek"]
+      answer: 0
+    kullan:
+      id: d16-017-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My bag was very heavy, so Bora said, \"Let me carry it for you.\" He ________ to carry my bag. What a nice friend!</en>"
+      options: ["offered", "refused", "forgot", "hated"]
+      answer: 0
+    sina:
+      id: d16-017-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Elif: Oh, this box is so heavy!\nBora: ________\nElif: Thank you! That's very kind of you.</en>"
+      options: ["Can I help you carry it?", "Why are you so stubborn?", "I'm busy. Sorry.", "It doesn't matter."]
+      answer: 0
+      explain: "Bora yardım teklif ediyor: \"Can I help you…?\" bir teklif (offer) kalıbıdır."
+  - item: U1-072
+    sezdir:
+      id: d16-072-z
+      type: meaning
+      context: s18
+      prompt: "Hikâyede \"fashionable\" ne anlama geliyordu?"
+      options: ["modaya uygun, şık", "dağınık", "utangaç", "yorgun"]
+      answer: 0
+    kullan:
+      id: d16-072-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ece always wears the latest clothes and colourful accessories. She's very ________.</en>"
+      options: ["fashionable", "unreliable", "patient", "jealous"]
+      answer: 0
+    sina:
+      id: d16-072-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Defne?</en>"
+      stem: "<en>Defne reads fashion magazines and always knows the new trends. Her clothes always look great.</en>"
+      options: ["fashionable", "self-centered", "calm", "funny"]
+      answer: 0
+  - item: U1-073
+    sezdir:
+      id: d16-073-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede \"funny\" ne anlama geliyordu?"
+      options: ["komik", "sıkıcı", "kızgın", "yorgun"]
+      answer: 0
+    kullan:
+      id: d16-073-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Bora told a joke and everyone in the class laughed. He is really ________.</en>"
+      options: ["funny", "stubborn", "jealous", "calm"]
+      answer: 0
+    sina:
+      id: d16-073-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which word describes Kerem?</en>"
+      stem: "<en>Kerem: Why did the student eat his homework? Because the teacher said it was a piece of cake! 😂</en>"
+      options: ["funny", "stubborn", "jealous", "fashionable"]
+      answer: 0
+  - item: U1-075
+    sezdir:
+      id: d16-075-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"Kaan is always in a hurry.\" ne anlama geliyordu?"
+      options: ["Kaan'ın hep acelesi var.", "Kaan hep yorgundur.", "Kaan hep çok sessizdir.", "Kaan hep kitap okur."]
+      answer: 0
+    kullan:
+      id: d16-075-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan runs everywhere, eats his breakfast in two minutes and never stops. He's always ________.</en>"
+      options: ["in a hurry", "patient", "calm", "laid-back"]
+      answer: 0
+    sina:
+      id: d16-075-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which is TRUE about Kaan?</en>"
+      stem: "<en>Mum: Kaan, slow down! You ate your breakfast in one minute, you put on different socks and you forgot your bag again!</en>"
+      options: ["He is always in a hurry.", "He is very self-disciplined.", "He is calm in the mornings.", "He is patient."]
+      answer: 0
+  - item: U1-090
+    sezdir:
+      id: d16-090-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"self-disciplined\" ne anlama geliyordu?"
+      options: ["öz disiplinli", "dağınık", "tembel", "utangaç"]
+      answer: 0
+    kullan:
+      id: d16-090-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin studies at the same time every day, even when her friends are playing games. She's very ________.</en>"
+      options: ["self-disciplined", "lazy", "unreliable", "fashionable"]
+      answer: 0
+    sina:
+      id: d16-090-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Arda best?</en>"
+      stem: "<en>Arda gets up at 6 every morning and goes running. He always finishes his homework before dinner, and he never watches TV before his work is done.</en>"
+      options: ["self-disciplined", "lazy", "unreliable", "jealous"]
+      answer: 0
+  - item: U1-094
+    sezdir:
+      id: d16-094-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"as soon as possible\" ne anlama geliyordu?"
+      options: ["bir an önce", "yavaş yavaş", "gelecek yıl", "asla"]
+      answer: 0
+    kullan:
+      id: d16-094-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The exam starts in ten minutes. Come to the classroom ________!</en>"
+      options: ["as soon as possible", "next week", "last year", "never"]
+      answer: 0
+    sina:
+      id: d16-094-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Please reply as soon as possible.\" Which one is CLOSEST in meaning?</en>"
+      options: ["Please reply very quickly.", "Please reply next month.", "Please don't reply.", "Please reply slowly."]
+      answer: 0
+
+review:
+  - id: d16-r01
+    type: gap_fill
+    item: U1-074
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>My aunt bought presents for all the children in the family. She's so ________.</en>"
+    options: ["generous", "stubborn", "jealous", "self-centered"]
+    answer: 0
+  - id: d16-r02
+    type: trait_match
+    item: U1-076
+    prompt: "<en>Which word describes Bora?</en>"
+    stem: "<en>Bora saw the teacher with a big, heavy box. He ran and carried it to the classroom for her.</en>"
+    options: ["helpful", "self-centered", "stubborn", "mean"]
+    answer: 0
+  - id: d16-r03
+    type: gap_fill
+    item: U1-078
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Ece felt ________ because Duru spent all her free time with Elif.</en>"
+    options: ["jealous", "generous", "helpful", "calm"]
+    answer: 0
+  - id: d16-r04
+    type: gap_fill
+    item: U1-082
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Duru never leaves her friends in hard times. Her ________ makes her a true friend.</en>"
+    options: ["loyalty", "dishonesty", "laziness", "jealousy"]
+    answer: 0
+  - id: d16-r05
+    type: trait_match
+    item: U1-089
+    prompt: "<en>Which word describes Ege?</en>"
+    stem: "<en>Ege talks only about himself. He never asks about other people's problems.</en>"
+    options: ["self-centered", "generous", "helpful", "understanding"]
+    answer: 0
+  - id: d16-r06
+    type: trait_match
+    item: U1-091
+    prompt: "<en>Which word describes Ege?</en>"
+    stem: "<en>Everybody saw that the ball was out, but Ege said, \"It was a goal!\" He didn't change his mind for an hour.</en>"
+    options: ["stubborn", "helpful", "generous", "patient"]
+    answer: 0
+  - id: d16-r07
+    type: message_infer
+    item: U1-004
+    lgs_like: true
+    prompt: "<en>Why can't Kaan come to the cinema?</en>"
+    stem: "<en>Kaan: I have football at 4, an English course at 6 and homework after that. Sorry, I can't come to the cinema.</en>"
+    options: ["He is busy.", "He has nothing to do.", "He is ill.", "He doesn't like films."]
+    answer: 0
+  - id: d16-r08
+    type: message_infer
+    item: U1-020
+    lgs_like: true
+    prompt: "<en>What is Ece's problem?</en>"
+    stem: "<en>Ece: Bora, are you coming to the picnic? (2 pm)\nEce: Bora? (3 pm)\nEce: BORA?? Hello?? 😤 (4 pm)</en>"
+    options: ["Bora isn't replying.", "Bora is attending the picnic.", "Bora missed the bus.", "Bora is texting too much."]
+    answer: 0
+  - id: d16-r09
+    type: dialogue_complete
+    item: U1-016
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Murat Bey: Kaan, why are you late again?\nKaan: ________</en>"
+    options: ["Sorry, sir. I missed the bus.", "I have nothing to do.", "I attended the class early.", "I replied to your message."]
+    answer: 0
+  - id: d16-r10
+    type: situation
+    item: U1-003
+    lgs_like: true
+    prompt: "<en>What does Murat Bey want to know?</en>"
+    stem: "<en>Murat Bey: The school concert is on Friday at 7 pm. Please tell me tomorrow if you can come.</en>"
+    options: ["Who can attend the concert.", "Who has nothing to do on Friday.", "Who missed the concert.", "Who can play the guitar."]
+    answer: 0
+  - id: d16-r11
+    type: message_infer
+    item: U1-019
+    lgs_like: true
+    prompt: "<en>What does Bora do in this message?</en>"
+    stem: "<en>Bora: Thanks for the invitation, Ece, but I can't come on Saturday. I have a football match.</en>"
+    options: ["He refuses the invitation.", "He accepts the invitation.", "He invites Ece to a party.", "He gives advice to Ece."]
+    answer: 0
+  - id: d16-r12
+    type: situation
+    item: U1-007
+    lgs_like: true
+    prompt: "<en>What did Kaan give Murat Bey?</en>"
+    stem: "<en>Kaan didn't bring his homework. He told Murat Bey, \"My dog ate it.\" But Kaan doesn't have a dog!</en>"
+    options: ["an excuse", "an invitation", "some advice", "a present"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U1-073]
+    text: "funny = komik, güldüren: \"a funny joke\", \"Bora is funny.\" fun = eğlenceli, keyifli: \"The trip was fun.\" \"The party was funny\" dersen partide gülünç şeyler oldu demiş olursun; eğlenceliyse \"The party was fun.\" Yarın fun'ı ayrıntılı göreceğiz!"
+  - type: mini_dilbilgisi
+    refs: [U1-017]
+    text: "offer + to + fiil: \"Bora offered to help.\" · offer + kişi + şey: \"Can I offer you some cake?\" İsim olarak da kullanılır: \"Thanks for your offer.\""
+  - type: hafiza_kancasi
+    refs: [U1-094]
+    text: "as soon as possible e-postalarda ve mesajlarda kısaca ASAP yazılır: \"Please reply ASAP.\""
+  - type: kelime_ailesi
+    refs: [U1-090, U1-089]
+    text: "self (kendi) + disciplined (disiplinli) = self-disciplined. Dün de aynı kalıbı gördün: self-centered."
+
+coach:
+  start: "Bu cuma okul gezisi var! 🎢 Ama önce imzalı formlar gerekiyor… ve Kaan'ın çorapları birbirini tutmuyor."
+  end_good: "Mükemmel! Sen de en az Selin kadar self-disciplined çalıştın. Cuma gezisine hazırsın! 🎢"
+  end_mixed: "İyi iş! {weak} biraz kaçamak yaptı ama yarın gezide yine karşına çıkacak. Pembe gözlüklerini unutma! 😎"
+
+notifications:
+  morning: "Cuma günü okul gezisi! 🎢 Ama Kaan'ın formu yine kayıp…"
+  evening: "Bora'nın pembe güneş gözlüğü seni bekliyor 😎 Bugünkü ders 10 dakika."
+  review: "Tek soru: Herkesi güldüren biri funny mi, fun mı?"
+
+editor:
+  z07: {U1-017: BEKLIYOR, U1-072: BEKLIYOR, U1-073: BEKLIYOR, U1-075: BEKLIYOR, U1-090: BEKLIYOR, U1-094: BEKLIYOR}

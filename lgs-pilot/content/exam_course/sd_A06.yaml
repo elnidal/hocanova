@@ -1,0 +1,145 @@
+# LGS Sınav Dili — A06 Tablo, grafik, cevaptan soruya (S06, S13). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-A06
+module: A
+title: "Tablo, grafik, cevaptan soruya"
+unlock_after: "Ü2 G9"
+minutes: 6
+stems: [S06, S13]
+units: [1, 2]
+intro_tr: "LGS'de bir anket tablosu ya da grafik verilip 'Hangisi doğrudur?' diye sorulur; bazen de bir cevap verilip sorusu istenir. İkisinde de puanı kazandıran şey, her şıkkı tek tek kontrol etmektir."
+cards:
+  - title_tr: "Tablo sorusu: her şık bir kontrol"
+    body_tr: "Tabloya bir kez bakıp şık seçme. Her şıktaki kişi ve sıklığı tabloda bul, doğruysa ✓ yanlışsa ✗ koy. Sıklık kelimelerinin sırasını hatırla."
+    examples_en:
+      - "always > usually > often > sometimes > rarely / hardly ever > never"
+      - "once a week · twice a week · three times a week · every day"
+    signal_words: ["always", "usually", "often", "sometimes", "rarely", "hardly ever", "never", "once", "twice"]
+  - title_tr: "Yarısı doğru şık yanlıştır"
+    body_tr: "'both', 'only', 'neither' gibi kelimeler şıkkı iki ya da daha çok kişiye bağlar. Şık 'Ece and Kaan both …' diyorsa İKİSİNİ de kontrol et; biri uymuyorsa şık yanlıştır. Kökte CANNOT varsa tabloyla çelişen şıkkı ararsın."
+    examples_en:
+      - "Both Ece and Kaan watch TV often.  → ikisi de 'often' olmalı"
+      - "Only Bora never goes to the gym.  → başka 'never' olmamalı"
+    signal_words: ["both", "only", "neither", "CANNOT"]
+  - title_tr: "Cevaptan soruya (S13)"
+    body_tr: "Bir cevap verilip sorusu istenirse cevaptaki bilginin TÜRÜNE bak: sıklık → How often, süre → How long, saat → What time, yer → Where, sebep → Why, etkinlik → What do you do …?"
+    examples_en:
+      - "Three times a week.  → How often …?"
+      - "For about an hour.  → How long …?"
+      - "At the park.  → Where …?"
+    signal_words: ["How often", "How long", "What time", "Where", "Why"]
+worked_example:
+  id: sd-A06-w
+  type: table_graph
+  stem_id: S06
+  context: |-
+    Survey: How often do you go to the gym?
+    Kaan: four times a week · Selin: once a week · Bora: never · Elif: once a week
+  prompt: "According to the table, which of the following is correct?"
+  options:
+    - "Selin and Elif go to the gym once a week."
+    - "Bora goes to the gym twice a week."
+    - "Kaan never goes to the gym."
+    - "Elif goes to the gym every day."
+  answer: 0
+  explain_tr: "Selin de Elif de 'once a week'. 'Kaan never goes …' cümlesindeki 'never' tabloda var ama Bora'ya ait; kişiyi karıştırmak bu soruların klasik tuzağı."
+  items: [U2-031, U2-052, U2-044]
+practice:
+  - id: sd-A06-p01
+    type: table_graph
+    stem_id: S06
+    context: |-
+      Free time survey (Ece / Duru / Kaan)
+      read books: often / never / sometimes
+      watch TV: rarely / sometimes / often
+      play sports: sometimes / rarely / always
+    prompt: "According to the survey results, which of the following is correct?"
+    options:
+      - "Kaan always plays sports."
+      - "Duru often reads books."
+      - "Ece and Kaan both watch TV often."
+      - "Ece never plays sports."
+    answer: 0
+    explain_tr: "Kaan'ın spor satırında 'always' yazıyor. 'Ece and Kaan both watch TV often' yarısı doğru bir şık: Kaan sık izliyor ama Ece nadiren (rarely)."
+    items: [U2-044, U2-002]
+  - id: sd-A06-p02
+    type: table_graph
+    stem_id: S06
+    context: |-
+      How often do you follow the news?
+      Murat Bey: every day · Selin: twice a week · Bora: hardly ever · Elif: twice a week
+    prompt: "Which of the following CANNOT be said according to the table?"
+    options:
+      - "Bora follows the news every day."
+      - "Murat Bey follows the news every day."
+      - "Selin and Elif follow the news twice a week."
+      - "Bora hardly ever follows the news."
+    answer: 0
+    explain_tr: "Kök CANNOT diyor: tabloyla çelişen şıkkı arıyoruz. Bora haberleri neredeyse hiç izlemiyor (hardly ever); 'every day' Murat Bey'e ait."
+    items: [U2-054, U2-051, U2-052]
+  - id: sd-A06-p03
+    type: table_graph
+    stem_id: S06
+    context: |-
+      How often do you practise at home?
+      Elif (singing): every day · Duru (guitar): three times a week · Bora (drums): once a week
+    prompt: "According to the chart, which of the following is TRUE?"
+    options:
+      - "Bora practises less often than Duru."
+      - "Duru practises every day."
+      - "Elif and Duru both practise every day."
+      - "Bora never practises at home."
+    answer: 0
+    explain_tr: "Bora haftada bir, Duru haftada üç kez çalışıyor; Bora daha az sık. 'Elif and Duru both …' yarısı doğru: yalnız Elif her gün çalışıyor."
+    items: [U2-052]
+  - id: sd-A06-p04
+    type: dialogue_complete
+    stem_id: S13
+    context: |-
+      Duru: ________
+      Kaan: Three times a week. I love basketball!
+    prompt: "Which of the following can be the missing question?"
+    options:
+      - "How often do you play basketball?"
+      - "How long is a basketball match?"
+      - "Where do you play basketball?"
+      - "Who is your favourite player?"
+    answer: 0
+    explain_tr: "'Three times a week' bir sıklık; sıklık soran 'How often …?'. 'How long …?' de bir sayı ister ama süre sorar (40 minutes gibi)."
+    items: [U2-052]
+  - id: sd-A06-p05
+    type: dialogue_complete
+    stem_id: S13
+    context: |-
+      Elif: ________
+      Selin: For about an hour. Then I do my homework.
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "How long do you read every evening?"
+      - "How often do you read?"
+      - "What time do you get up?"
+      - "Why do you like reading?"
+    answer: 0
+    explain_tr: "'For about an hour' bir süre bildirir; süre soran 'How long …?'. 'How often do you read?' aynı etkinliği soruyor ama sıklık ister (every day gibi)."
+  - id: sd-A06-p06
+    type: text_infer
+    stem_id: S13
+    context: |-
+      Bora: I usually hang out with my friends at weekends, but sometimes I stay at home and play the drums.
+    prompt: "Which question does Bora answer?"
+    options:
+      - "What do you do in your free time?"
+      - "How long do you play the drums?"
+      - "Where do your friends live?"
+      - "Why do you like the drums?"
+    answer: 0
+    explain_tr: "Bora boş zamanında yaptıklarını anlatıyor. 'drums' kelimesi iki şıkta da geçiyor ama Bora ne süre ne sebep veriyor."
+    items: [U2-004, U2-002]
+tips:
+  - "Tablo sorusunda her şıkkın yanına ✓ ya da ✗ koy; ilk 'doğru gibi' görünende durma."
+  - "both, only, never, every day kelimelerinin altını çiz ve tabloda iki kez kontrol et."
+  - "Cevaptan soru bulurken önce cevaptaki bilginin türünü Türkçe söyle: 'bu bir süre' → How long."
+coach:
+  start: "Tablolar korkutucu görünür ama aslında en dürüst sorulardır: her şey gözünün önünde! Hadi okuyalım."
+  end: "Harika! Artık tablo görünce her şıkkı tek tek kontrol ediyorsun. Yarım doğrular seni kandıramaz!"
+status: draft

@@ -1,0 +1,312 @@
+schema_version: 1
+program: lgs
+unit: 5
+day: 6
+status: draft
+title: "Karate kedi, ikinci kez"
+est_minutes: 10
+characters: [Bora, Kaan, Elif, Selin, Duru, Bora'nın annesi, Bora'nın dedesi]
+new_items: [U5-001, U5-018, U5-021, U5-053, U5-054, U5-055]
+
+story:
+  - id: s01
+    text: "Cumartesi sabahı, saat yedi. Bora hayatında ilk kez bir cumartesi bu kadar erken uyandı. Onu uyandıran alarm değildi: telefonu durmadan ötüyordu."
+  - id: s02
+    text: "Telefonda kocaman bir sayı: \"<en>63 new {U5-033|notifications}</en>\". İlki Kaan'dandı: \"<en>Bora, why did you {U5-034|post} the karate cat video AGAIN? At four in the morning?!</en>\""
+  - id: s03
+    text: "Elif: \"<en>And what are these? 'CHEAP SUNGLASSES! BUY NOW!' in five languages! Your {U5-030|followers} are confused!</en>\""
+  - id: s04
+    text: "Kaan: \"<en>Even Arda {U5-028|commented}: 'Karate boy, are you OK? Why two cats?' 😂</en>\""
+  - id: s05
+    text: "Bora yataktan fırladı, kullanıcı adını ve parolasını girdi: \"<en>Wrong password.</en>\" Bir daha denedi. Yine aynı kırmızı yazı."
+  - id: s06
+    text: "Bora: \"<en>I can't {U5-001|access} my account! Somebody changed my password!</en>\" Sonra her şeyi hatırladı: altın davul, yanıp sönen kırmızı kutu, geri sayım, o yeşil düğme… Midesi düğümlendi."
+  - id: s07
+    text: "Parmakları eski günlerdeki gibi bir mesaja başladı: \"<en>My cat did it…</en>\" Sonra durdu. {U5-018|Delete} tuşuna üç kez dokundu ve gruba bambaşka bir mesaj gönderdi."
+  - id: s08
+    text: "Bora: \"<en>Guys, I'm really {U4-050|embarrassed}, but I have to be {U1-077|honest}. It was my mistake. {U5-054|I mean}, yesterday I gave my password to that fake {U5-031|influencer}.</en>\""
+  - id: s09
+    text: "Selin: \"<en>Thank you for telling us so quickly, Bora. That was very {U1-077|honest}.</en>\" Kaan: \"<en>No excuse? No cat? Who are you, and what did you do with Bora?</en>\""
+  - id: s10
+    text: "Duru'nun mesajı her zamanki gibi kısaydı, ama bu kez saat sekizden önce gelmişti: \"<en>Step one: tell your mum. Now.</en>\""
+  - id: s11
+    text: "Annesi gece nöbetinden yeni dönmüştü; dedesi de nöbet gecelerindeki gibi salondaydı. Bora mutfağa gitti ve her şeyi en baştan anlattı: altın davul, form, parola."
+  - id: s12
+    text: "Annesi çay bardağını bıraktı: \"<en>OK. Thank you for telling me. We'll {U4-055|solve} this together. Show me.</en>\""
+  - id: s13
+    text: "Laptopun başına oturdular. Bora: \"<en>Look at the {U5-021|screen}, Mum. It says: 'Can't {U5-001|access} your account? Click here.' So we click, and then we make a new password.</en>\""
+  - id: s14
+    text: "Annesi gözlüğünü taktı: \"<en>This {U5-021|screen} is so small… Click? New password? {U5-055|Sorry, I can't follow you}, Bora. Slowly, please. I'm a nurse, not a computer.</en>\""
+  - id: s15
+    text: "Bora yavaşladı: \"<en>{U5-054|In other words}, a {U5-013|stranger} is using my account. We need a new password, and we have to {U5-018|delete} his posts.</en>\""
+  - id: s16
+    text: "Annesi bir an düşündü, sonra tam bir hemşire gibi özetledi: \"<en>So your account is sick, and a new password is the medicine?</en>\" Bora: \"<en>Er… no, Mum. But… yes. Exactly.</en>\""
+  - id: s17
+    text: "Annesi: \"<en>Ah, {U5-055|I got it}! Then let's give it the medicine.</en>\" Az sonra annesinin telefonuna bir kod geldi. Bora: \"<en>Mum, the code is on your {U5-021|screen}. Read it to me, please.</en>\""
+  - id: s18
+    text: "Bora: \"<en>My old password was 'mydog123'.</en>\" Annesi gözlüğünün üstünden baktı: \"<en>But you don't even have a dog!</en>\""
+  - id: s19
+    text: "Yeni parola uzundu; içinde rakamlar ve işaretler vardı; ne kedi vardı ne köpek. Bora: \"<en>Yes! I can {U5-001|access} my account again!</en>\""
+  - id: s20
+    text: "Sonra temizlik başladı: \"<en>Karate cat: {U5-018|deleted}. Sunglasses: {U5-018|deleted}. Five languages: {U5-018|deleted}.</en>\""
+  - id: s21
+    text: "Dedesi salondan seslendi: \"<en>Too late! I {U5-019|downloaded} the karate cat this morning. I'm watching it for the third time!</en>\""
+  - id: s22
+    text: "Annesi: \"<en>{U5-053|By the way}, Bora… who is this 'DrumKing'? Is he a real drummer?</en>\" Bora: \"<en>No, Mum. Duru says his photo is from a shop's website.</en>\""
+  - id: s23
+    text: "Grupta Kaan yine durmuyordu: \"<en>{U5-053|By the way}, the karate cat got 300 new likes this morning. Maybe keep it? 😅</en>\" Selin: \"<en>Kaan.</en>\" Kaan: \"<en>Sorry.</en>\""
+  - id: s24
+    text: "Selin: \"<en>Bora, use a different password for every account, and never put your name or birthday in it.</en>\" Kaan: \"<en>Different, no names, no birthdays… {U5-055|Sorry, I can't follow you}, Selin. I'm still in bed.</en>\""
+  - id: s25
+    text: "Öğlene doğru Bora gruba haber verdi: \"<en>I'm going to {U5-025|upload} a short video for my followers. Here's my new {U5-034|post}: 'That wasn't me. I clicked on a free drum set link. {U5-054|In other words}: don't make my mistake!'</en>\""
+  - id: s26
+    text: "Duru: \"<en>Good job, Bora. Your story goes in our Safer Internet Week guide. {U5-053|By the way}, Fıstık says hello.</en>\""
+  - id: s27
+    text: "O akşam Kaan, Bora'nın videosunu on iki gruba birden iletti: \"<en>Done! Everybody must see this!</en>\" Selin: \"<en>Did you watch it first?</en>\" Uzun bir sessizlik. Kaan: \"<en>…Not yet.</en>\""
+
+scene:
+  - id: c01
+    speaker: Bora
+    text: "<en>I can't access my account! I mean, a stranger changed my password.</en>"
+  - id: c02
+    speaker: Bora'nın annesi
+    text: "<en>Sorry, I can't follow you. What's on the screen?</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>In other words, we need a new password, and we have to delete the strange posts.</en>"
+  - id: c04
+    speaker: Bora'nın annesi
+    text: "<en>I got it! By the way, no more free drum sets, OK?</en>"
+
+steps:
+  - item: U5-001
+    sezdir:
+      id: u5d06-001-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"I can't access my account!\" ne anlama geliyordu?"
+      options: ["Hesabıma giremiyorum!", "Hesabımı beğenmiyorum!", "Hesabımı kimseye veremiyorum!", "Hesabımı satamıyorum!"]
+      answer: 0
+    kullan:
+      id: u5d06-001-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>With your school username and password, you can ________ the library's e-books from home.</en>"
+      options: ["access", "ignore", "turn off", "log out"]
+      answer: 0
+      explain: "Bir hesaba, siteye ya da bilgiye girip kullanabilmek access ile anlatılır; access'ten sonra doğrudan nesne gelir (access the e-books)."
+    sina:
+      id: u5d06-001-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the notice, which of the following is TRUE?</en>"
+      stem: "<en>School Library Notice\nFrom Monday, all students can access the online library from home. Log in with your school username and password. You can borrow three e-books a week.</en>"
+      options: ["Students can use the online library at home.", "The online library opens on Tuesday.", "Students don't need a password.", "Students can borrow five e-books a week."]
+      answer: 0
+      explain: "access the online library from home = evden kullanabilmek. Başlangıç pazartesi, parola gerekiyor, haftada üç e-kitap."
+  - item: U5-018
+    sezdir:
+      id: u5d06-018-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede \"Karate cat: deleted.\" ne anlama geliyordu?"
+      options: ["Karate kedi: silindi.", "Karate kedi: beğenildi.", "Karate kedi: kaydedildi.", "Karate kedi: gönderildi."]
+      answer: 0
+    kullan:
+      id: u5d06-018-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Oops! I sent 'Happy Birthday!' to the wrong person. Let me ________ the message.</en>"
+      options: ["delete", "download", "access", "follow"]
+      answer: 0
+      explain: "Yanlış gönderilen bir mesajı, gönderiyi ya da dosyayı yok etmek delete ile anlatılır."
+    sina:
+      id: u5d06-018-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What should Bora do in this situation?</en>"
+      stem: "<en>Bora posted a funny photo of Selin without asking her. Selin doesn't like the photo and she's upset.</en>"
+      options: ["Say sorry and delete the photo.", "Post two more photos of her.", "Download the photo and send it to everyone.", "Ignore Selin's messages."]
+      answer: 0
+      explain: "İzinsiz paylaşılan ve arkadaşını üzen bir fotoğrafın doğru çözümü özür dilemek ve fotoğrafı kaldırmaktır."
+  - item: U5-021
+    sezdir:
+      id: u5d06-021-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede \"Look at the screen, Mum.\" cümlesinde \"screen\" ne anlama geliyordu?"
+      options: ["ekran", "klavye", "fare", "şarj kablosu"]
+      answer: 0
+    kullan:
+      id: u5d06-021-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't sit too close to the TV. Your eyes get tired if you look at the ________ for hours.</en>"
+      options: ["screen", "password", "follower", "discount"]
+      answer: 0
+      explain: "Televizyonun, telefonun ya da bilgisayarın görüntünün çıktığı yüzeyi screen'dir."
+    sina:
+      id: u5d06-021-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S05
+      prompt: "<en>What is the best title for the text?</en>"
+      stem: "<en>Many teenagers look at a screen for more than six hours a day: phones, tablets, laptops and TV. Doctors have some simple advice: take a break every thirty minutes, look out of the window for a minute, and don't use your phone in bed.</en>"
+      options: ["Give Your Eyes a Break from Screens", "How to Buy a New Phone", "The History of Television", "Teenagers and Their Pets"]
+      answer: 0
+      explain: "Metnin tamamı ekran başında geçen süre ve gözleri dinlendirme önerileri hakkında; diğer başlıklar konunun dışında."
+  - item: U5-053
+    sezdir:
+      id: u5d06-053-z
+      type: meaning
+      context: s22
+      prompt: "Hikâyede annesinin \"By the way, Bora… who is this 'DrumKing'?\" cümlesinde \"By the way\" ne anlama geliyordu?"
+      options: ["Bu arada…", "Sonuç olarak…", "Örneğin…", "Kısacası…"]
+      answer: 0
+    kullan:
+      id: u5d06-053-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: The rehearsal is at five on Saturday.\nB: OK, see you there. ________, did you hear Luna Ray's new song? It's great!</en>"
+      options: ["By the way", "In other words", "What do you mean", "Sorry, I can't follow you"]
+      answer: 0
+      explain: "Konuşmanın ortasında yeni bir konu açarken ya da aklına gelen bir şeyi eklerken By the way denir."
+    sina:
+      id: u5d06-053-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>In which of the following does the speaker start a new topic?</en>"
+      options: ["The guide is ready. By the way, Bora's grandpa loves our channel.", "Never share your password. In other words, keep it secret.", "What do you mean? Do you mean the internet connection?", "Sorry, I can't follow you. Can you say it again slowly?"]
+      answer: 0
+      explain: "By the way yeni bir konu açar (rehberden dedeye geçiş). In other words aynı şeyi tekrar söyler; diğer ikisi açıklama ister."
+  - item: U5-054
+    sezdir:
+      id: u5d06-054-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede \"In other words, a stranger is using my account.\" cümlesinde \"In other words\" ne anlama geliyordu?"
+      options: ["Başka bir deyişle", "Her neyse", "Buna rağmen", "Örneğin"]
+      answer: 0
+    kullan:
+      id: u5d06-054-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin is never late. ________, she is always on time.</en>"
+      options: ["In other words", "By the way", "What do you mean", "Why don't we"]
+      answer: 0
+      explain: "Bir önceki cümleyi farklı kelimelerle yeniden söylerken In other words (ya da I mean) kullanılır."
+    sina:
+      id: u5d06-054-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which of the following can replace the underlined part?</en>"
+      stem: "<en>Duru: Bora never logs out of his account at school. <u>In other words</u>, anyone can use it.</en>"
+      options: ["That means", "By the way", "But", "What do you mean"]
+      answer: 0
+      explain: "İkinci cümle birincinin sonucunu yeniden söylüyor: In other words = That means. But zıtlık, By the way yeni konu bildirir."
+  - item: U5-055
+    sezdir:
+      id: u5d06-055-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede annesinin \"Sorry, I can't follow you\" cümlesi ne anlama geliyordu?"
+      options: ["Kusura bakma, anlayamıyorum.", "Kusura bakma, seni takip etmiyorum.", "Kusura bakma, seninle gelemem.", "Kusura bakma, sana yetişemem."]
+      answer: 0
+    kullan:
+      id: u5d06-055-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: First click 'Settings', then 'Privacy', then 'Password', then…\nB: Stop! You're too fast. Sorry, I can't ________ you.</en>"
+      options: ["follow", "subscribe", "delete", "access"]
+      answer: 0
+      explain: "Konuşmada \"I can't follow you\" karşıdakinin açıklamasını takip edemediğini, yani anlamadığını söyler."
+    sina:
+      id: u5d06-055-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Murat Bey: A strong password has capital letters, numbers and symbols, and it isn't your name.\nKaan: ________\nMurat Bey: Great! Now let's make one together.</en>"
+      options: ["I got it.", "Sorry, wrong number.", "Why don't we?", "By the way, I'm late."]
+      answer: 0
+      explain: "Murat Bey 'Great!' deyip devam ediyor; demek ki Kaan açıklamayı anladığını söylemiş: I got it."
+
+review:
+  - id: u5d06-r01
+    type: dialogue_complete
+    item: U5-005
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Elif: Someone called 'Free_Gifts_99' wants to be my friend. I don't know him.\nDuru: ________\nElif: You're right. I won't accept it.</en>"
+    options: ["Ignore his friend request.", "Accept his request quickly!", "Send him your address.", "Give him your password."]
+    answer: 0
+    explain: "Elif 'kabul etmeyeceğim' diyor; Duru tanımadığı kişinin isteğini görmezden gelmesini söylemiş."
+  - id: u5d06-r02
+    type: gap_fill
+    item: U5-010
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>The website asked for my full name, home address and phone number, so I closed it. I never give my ________ to websites like that.</en>"
+    options: ["personal information", "discount", "friend request", "influencer"]
+    answer: 0
+  - id: u5d06-r03
+    type: synonym
+    item: U5-013
+    prompt: "<en>Which of the following is closest in meaning to the underlined part?</en>"
+    stem: "<en>Never meet <u>a person you don't know</u> from the internet.</en>"
+    options: ["a stranger", "a close friend", "a buddy", "your teacher"]
+    answer: 0
+  - id: u5d06-r04
+    type: situation
+    item: U5-017
+    prompt: "<en>You want to watch the band's new video on the channel. What do you do?</en>"
+    options: ["I click on the video.", "I log out of my account.", "I turn off the laptop.", "I ignore the video."]
+    answer: 0
+  - id: u5d06-r05
+    type: gap_fill
+    item: U5-031
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Lara has two million followers. Companies send her free clothes, and she talks about them in her videos. She's a popular ________.</en>"
+    options: ["influencer", "stranger", "username", "secretary"]
+    answer: 0
+  - id: u5d06-r06
+    type: message_infer
+    item: U5-049
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to the advert, which of the following is TRUE?</en>"
+    stem: "<en>SoundBox Music Shop – Weekend Sale!\nDrumsticks: 20% discount\nGuitars: 10% discount\nOnly on Saturday and Sunday.</en>"
+    options: ["Drumsticks are cheaper than usual at the weekend.", "Guitars have a 20% discount.", "The sale is on Monday.", "Everything in the shop is free."]
+    answer: 0
+    explain: "Hafta sonu bagetlerde %20 indirim var, yani normalden ucuz. Gitarlarda %10; indirim yalnız cumartesi ve pazar."
+
+tips:
+  - type: tuzak
+    refs: [U5-055]
+    text: "follow sosyal medyada \"takip etmek\"tir; ama \"Sorry, I can't follow you\" konuşmada \"anlayamıyorum\" demektir. I got it de bu kalıpta \"aldım\" değil, \"anladım\" demektir."
+  - type: lgs_taktigi
+    refs: [U5-054]
+    text: "Altı çizili In other words ya da I mean bir önceki cümleyi yeniden söyler. Eş anlam sorusunda doğru şık önceki cümleyle aynı bilgiyi verir; yeni bilgi ekleyen ya da zıtlık bildiren (but) şık elenir."
+  - type: mini_dilbilgisi
+    refs: [U5-001]
+    text: "access fiil olarak doğrudan nesne alır: access my account (access to my account değil). İsim olarak to ile kullanılır: I don't have access to my account."
+  - type: hafiza_kancasi
+    refs: [U5-053]
+    text: "By the way kelimesi kelimesine \"yol kenarında\" demek: konuşmanın ana yolundan çıkıp kenardaki bir konuya sapıyorsun. Yeni bir konu ya da aklına gelen ek bir bilgi için kullanılır."
+
+coach:
+  start: "Bora'nın telefonu sabah yedide susmak bilmiyor. Bu kez kedi yok, bahane yok, sadece gerçekler. Hazır mısın? 📱"
+  end_good: "Harika! Bora yeni parolasını aldı, sen de altı yeni kalıbı. İkiniz de daha güçlüsünüz 💪"
+  end_mixed: "İyi gidiyorsun! {weak} biraz takıldı, sorun değil. Bora bile annesine ilk denemede anlatamadı 😉"
+
+notifications:
+  morning: "Bora bir cumartesi sabah yedide uyandı. Bu tek başına bir haber! 📱"
+  evening: "Bora annesine her şeyi anlattı. Peki annesi hangi ilacı önerdi? 🩺"
+  review: "I got it = \"aldım\" mı? Dikkat, tuzak var! 🤔"
+
+editor:
+  z07: {U5-001: BEKLIYOR, U5-018: BEKLIYOR, U5-021: BEKLIYOR, U5-053: BEKLIYOR, U5-054: BEKLIYOR, U5-055: BEKLIYOR}

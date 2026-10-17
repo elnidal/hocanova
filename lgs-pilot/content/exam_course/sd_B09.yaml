@@ -1,0 +1,132 @@
+schema_version: 1
+id: SD-B09
+module: B
+title: "Zorunluluk ve sorumluluk"
+unlock_after: "Ü8 sonu"
+minutes: 5
+stems: [S01, S06, S09, S12, S14]
+functions: ["Zorunluluk bildirmek", "Sorumluluklardan söz etmek", "Şikâyet etmek"]
+units: [8]
+intro_tr: "'don't have to' ile 'mustn't' Türkçeye çevrilince birbirine benzer ama anlamları çok farklıdır. LGS bu farkı ve 'kimin sorumluluğu?' sorusunu sever; bugün ikisini de sağlama alıyoruz."
+cards:
+  - title_tr: "have to / must: zorunluluk"
+    body_tr: "have to / has to ve must: yapmak zorunda olmak. Soru ve olumsuzda 'have to' kullanılır: Do you have to …? / I don't have to … Kural ve yazılı uyarılarda 'must' sık geçer."
+    examples_en:
+      - "I have to take out the rubbish every evening."
+      - "Do you have to help your parents at home?"
+      - "Students must be in class at 8:30."
+    signal_words: ["have to", "has to", "must", "Do you have to …?"]
+  - title_tr: "don't have to ≠ mustn't"
+    body_tr: "don't have to = gerek yok, istersen yaparsın (serbest). mustn't = yapmak YASAK. 'You don't have to cook.' (Yemek yapmana gerek yok.) ↔ 'You mustn't touch the oven.' (Fırına dokunmamalısın, yasak.)"
+    examples_en:
+      - "You don't have to cook. Dad is doing it today."
+      - "You mustn't leave your clothes on the floor."
+      - "It's Saturday, so I don't have to get up early."
+    signal_words: ["don't have to = gerek yok", "mustn't = yasak"]
+  - title_tr: "Sorumluluk ve sıra"
+    body_tr: "be responsible for / be in charge of + -ing ya da isim: … -den sorumlu olmak. Sıra: It's my / your turn. We take turns. Whose turn is it to …? Şikâyet: It's not fair! Why do I always have to …?"
+    examples_en:
+      - "I'm responsible for watering the plants."
+      - "Selin is in charge of the shopping this week."
+      - "Whose turn is it to feed the cat? – It's your turn."
+    signal_words: ["be responsible for", "be in charge of", "take turns", "Whose turn …?", "It's not fair!"]
+worked_example:
+  id: sd-B09-w
+  type: table_graph
+  stem_id: S06
+  context: "Ece's family chore chart\nEce: set the table – every day · Her brother Can: take out the rubbish – Mon, Wed, Fri · Dad: cook dinner – weekdays · Mum: do the laundry – weekends"
+  prompt: "According to the chart, which of the following is correct?"
+  options:
+    - "Ece doesn't have to cook dinner on weekdays."
+    - "Can has to take out the rubbish every day."
+    - "Mum is responsible for cooking dinner."
+    - "Dad is in charge of the laundry at weekends."
+  answer: 0
+  explain_tr: "Hafta içi akşam yemeğini babası yapıyor, yani Ece'nin yemek yapmasına gerek yok (don't have to). Can çöpü her gün değil haftada üç gün çıkarıyor."
+  items: [U8-005, U8-016, U8-004, U8-018, U8-034, U8-040]
+practice:
+  - id: sd-B09-p01
+    type: gap_fill
+    stem_id: S12
+    context: "Murat Bey: The exam starts at 9 o'clock. You ________ be late, or you can't come into the classroom."
+    prompt: "Which of the following best fills the blank?"
+    options:
+      - "mustn't"
+      - "don't have to"
+      - "have to"
+      - "must"
+    answer: 0
+    explain_tr: "Geç kalan sınava giremiyor: geç kalmak YASAK, yani mustn't. 'don't have to' 'gerek yok' demek olur ve cümlenin anlamını bozar."
+    items: [U8-040, U8-041]
+  - id: sd-B09-p02
+    type: gap_fill
+    stem_id: S12
+    context: "Duru: Tomorrow is Sunday, so I ________ get up early. I can sleep until 10!"
+    prompt: "Which of the following best fills the blank?"
+    options:
+      - "don't have to"
+      - "mustn't"
+      - "have to"
+      - "must"
+    answer: 0
+    explain_tr: "Erken kalkmak yasak değil, sadece gerekli değil: don't have to. 'mustn't' erken kalkmanın yasak olduğunu söylerdi."
+    items: [U8-040]
+  - id: sd-B09-p03
+    type: dialogue_complete
+    stem_id: S01
+    context: "Elif's mum: Whose turn is it to feed Pamuk today?\nElif: ________ I fed her yesterday. We take turns, remember?"
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "It's your turn."
+      - "It's my turn."
+      - "I'm in charge of the laundry."
+      - "I don't mind ironing."
+    answer: 0
+    explain_tr: "Elif dün besledi ve sırayla yapıyorlar; bugün sıra kardeşinde. 'It's my turn' sonraki cümleyle çelişiyor."
+    items: [U8-037, U8-026]
+  - id: sd-B09-p04
+    type: synonym
+    stem_id: S12
+    context: "Selin is in charge of watering the plants at home."
+    prompt: "Which phrase can replace 'is in charge of'?"
+    options:
+      - "is responsible for"
+      - "is fed up with"
+      - "is afraid of"
+      - "is bad at"
+    answer: 0
+    explain_tr: "be in charge of = be responsible for = … -den sorumlu olmak. 'is fed up with' (bıkmış) bir şikâyet bildirir, sorumluluk değil."
+    items: [U8-034, U8-024]
+  - id: sd-B09-p05
+    type: text_infer
+    stem_id: S14
+    context: "Ege: It's not fair! Why do I always have to wash the dishes? My sister never helps!\nMum: Don't make a fuss, Ege. Your sister vacuumed the whole house this morning. We take turns, remember?"
+    prompt: "Which of the following can we infer from the conversation?"
+    options:
+      - "Ege thinks he does more chores than his sister."
+      - "Ege's sister never does any chores."
+      - "Mum is going to wash the dishes."
+      - "Ege enjoys washing the dishes."
+    answer: 0
+    explain_tr: "'Why do I always have to …? My sister never helps!' → Ege daha çok iş yaptığını düşünüyor. 'Ege's sister never does any chores' Ege'nin sözünü taşıyor ama annesi bunu çürütüyor: kız kardeşi bu sabah evi süpürmüş."
+    items: [U8-043, U8-044, U8-006, U8-012]
+  - id: sd-B09-p06
+    type: situation
+    stem_id: S09
+    prompt: "Which of the following sentences tells us that something is NOT allowed?"
+    options:
+      - "You mustn't touch the oven. It's very hot."
+      - "You don't have to come with us."
+      - "You have to make your bed every morning."
+      - "I'm responsible for the shopping."
+    answer: 0
+    explain_tr: "mustn't bir yasak bildirir. 'You don't have to come' olumsuz görünür ama yasak değil, 'gelmene gerek yok' demektir."
+    items: [U8-040, U8-011]
+tips:
+  - "don't have to = gerek yok, mustn't = yasak. Cümleyi 'yasak mı, yoksa sadece gerekmiyor mu?' diye test et."
+  - "Şikâyet cümlesi (It's not fair! / Why do I always …?) konuşanın fikridir; metnin geri kalanı onu doğrulamayabilir."
+  - "Görev tablosunda gün ve sıklığı (every day / Mon, Wed, Fri) şıkla tek tek karşılaştır."
+coach:
+  start: "Ev işi zamanı! Bugün 'zorundasın', 'gerek yok' ve 'yasak' arasındaki farkı netleştiriyoruz."
+  end: "Harika! mustn't ile don't have to artık karışmıyor. Ödülün: bugün bulaşık sırası sende değil!"
+status: draft

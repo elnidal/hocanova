@@ -1,0 +1,313 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 11
+status: draft
+title: "Forma yok günü!"
+est_minutes: 10
+characters: [Ece, Selin, Elif, Kaan, Bora, Duru, Murat Bey, Selin'in babası]
+new_items: [U2-061, U2-062, U2-063, U2-064, U2-065, U2-066]
+
+story:
+  - id: s01
+    text: "Cuma. Okul panosunda kocaman bir yazı vardı: \"<en>FRIDAY: NO UNIFORM DAY! Wear your own clothes.</en>\" Bütün okul bir haftadır bu günü konuşuyordu."
+  - id: s02
+    text: "Ece okul kapısında belirdi: beyaz spor ayakkabılar, bol bir kot pantolon, kısa bir ceket ve saçında renkli bir toka."
+  - id: s03
+    text: "Elif'in ağzı açık kaldı: \"<en>Wow, Ece! What a nice {U2-066|outfit}!</en>\" Ece bir tur döndü: \"<en>Thanks! I planned this {U2-066|outfit} for a week.</en>\""
+  - id: s04
+    text: "Selin gülümsedi: \"<en>A week? My {U2-043|daily routine} is simple. I get up at 6.30 and I {U2-044|always} wear the same thing: my uniform!</en>\""
+  - id: s05
+    text: "Ece: \"<en>I love {U2-061|fashion}. I read blogs about it every night.</en>\""
+  - id: s06
+    text: "Ece pantolonunu gösterdi: \"<en>I {U2-063|keep up with the latest fashion}. Wide jeans are very {U2-062|trendy} this year!</en>\""
+  - id: s07
+    text: "Kaan koşarak geldi (geç, tabii ki): basketbol forması, eşofman altı, spor ayakkabı. \"<en>Morning! I'm wearing {U2-064|casual clothes}. Perfect for basketball!</en>\""
+  - id: s08
+    text: "Duru, kapüşonlusunun cebinden elini çıkarıp el salladı: \"<en>Same here. I {U2-046|mostly} wear {U2-064|casual clothes}. I'm {U1-079|laid-back}.</en>\""
+  - id: s09
+    text: "Sonra Bora köşeyi döndü ve herkes sustu. Lacivert bir takım elbise, beyaz gömlek, kırmızı bir papyon… Ayakkabıları ayna gibi parlıyordu."
+  - id: s10
+    text: "Kaan: \"<en>Bora?! Are you going to a wedding?</en>\" Bora yakasını düzeltti: \"<en>No! These are {U2-065|smart clothes}. I want to look {U1-072|fashionable}.</en>\""
+  - id: s11
+    text: "Ece gülmemek için dudağını ısırdı: \"<en>Bora, {U2-065|smart clothes} are for weddings and dinners. Today is a {U2-064|casual} day!</en>\""
+  - id: s12
+    text: "Bora omuz silkti: \"<en>My mum says I {U2-044|never} dress up. So today I'm dressing up!</en>\""
+  - id: s13
+    text: "Murat Bey sınıfa girdi, Bora'yı görünce gözlüğünü düzeltti: \"<en>Good morning, Mr Bora. Do you have a meeting with the head teacher?</en>\" Sınıf kahkahaya boğuldu; en çok da Bora güldü."
+  - id: s14
+    text: "Murat Bey: \"<en>OK, survey time! Today's question is: Do you {U2-063|keep up with the latest fashion}?</en>\""
+  - id: s15
+    text: "Elif: \"<en>I do! I follow {U2-062|trendy} singers online and I copy their {U2-066|outfits}.</en>\""
+  - id: s16
+    text: "Selin: \"<en>Not really. {U2-047|Most of the time}, I {U1-018|prefer} simple clothes.</en>\""
+  - id: s17
+    text: "Duru: \"<en>{U2-061|Fashion}? I don't follow it. My dog Fıstık is more {U2-062|trendy} than me. He has a new red collar!</en>\""
+  - id: s18
+    text: "Kaan: \"<en>I buy new clothes once a year. But I wash my basketball shirt {U2-045|regularly}!</en>\" Herkes bir ağızdan: \"<en>We hope so!</en>\""
+  - id: s19
+    text: "Ece sonuçları yazdı: \"<en>So two people {U2-063|keep up with the latest fashion} and three don't. And Bora's {U2-066|outfit} is the most famous in the school!</en>\""
+  - id: s20
+    text: "Öğle arasında Bora ceketini çıkardı, papyonu cebine koydu, gömleğinin kollarını sıvadı: \"<en>OK, OK. {U2-065|Smart clothes} are not good for basketball.</en>\""
+  - id: s21
+    text: "Okul çıkışı Selin'in babasının arabası kapıda bekliyordu. Babası camı indirdi: \"<en>I'm here to {U2-048|pick you up}, Selin. Oh, nice bow tie, Bora!</en>\""
+  - id: s22
+    text: "Bora papyonu cebinden çıkarıp gururla yeniden taktı: \"<en>Thanks! It's {U2-061|fashion}!</en>\" Ece güldü: \"<en>Bora, you're a star now!</en>\""
+
+scene:
+  - id: c01
+    speaker: Elif
+    text: "<en>Ece, I love your outfit! Wide jeans are so trendy this year.</en>"
+  - id: c02
+    speaker: Ece
+    text: "<en>Thanks! I always keep up with the latest fashion.</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>I don't care about fashion. I only wear casual clothes.</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>And I'm wearing smart clothes: a suit and a bow tie!</en>"
+  - id: c05
+    speaker: Duru
+    text: "<en>Bora, it isn't a wedding. It's a school day!</en>"
+
+steps:
+  - item: U2-061
+    sezdir:
+      id: u2d11-061-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"fashion\" ne anlama geliyordu?"
+      options: ["moda", "müzik", "spor", "yemek"]
+      answer: 0
+    kullan:
+      id: u2d11-061-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ece reads magazines about clothes and new styles. She is very interested in ________.</en>"
+      options: ["fashion", "jazz", "hiking", "karate"]
+      answer: 0
+    sina:
+      id: u2d11-061-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Ece interested in?</en>"
+      stem: "<en>Ece: I watch catwalk shows online and I know all the new colours and styles for this winter.</en>"
+      options: ["fashion", "sports", "the news", "cooking"]
+      answer: 0
+  - item: U2-062
+    sezdir:
+      id: u2d11-062-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"trendy\" ne anlama geliyordu?"
+      options: ["moda olan, popüler", "eski, demode", "pahalı", "dar"]
+      answer: 0
+    kullan:
+      id: u2d11-062-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Everyone at school wears these white trainers now. They are very ________.</en>"
+      options: ["trendy", "old-fashioned", "annoyed", "nervous"]
+      answer: 0
+    sina:
+      id: u2d11-062-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Big sunglasses are very trendy this summer.\" Which one is CLOSEST in meaning to \"trendy\"?</en>"
+      options: ["fashionable", "cheap", "boring", "ugly"]
+      answer: 0
+  - item: U2-063
+    sezdir:
+      id: u2d11-063-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"keep up with the latest fashion\" ne anlama geliyordu?"
+      options: ["son modayı takip etmek", "eski kıyafetleri saklamak", "kıyafet dikmek", "kıyafetleri ütülemek"]
+      answer: 0
+    kullan:
+      id: u2d11-063-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My sister buys every new style she sees online. She always tries to ________.</en>"
+      options: ["keep up with the latest fashion", "take a selfie", "do karate", "follow the news"]
+      answer: 0
+    sina:
+      id: u2d11-063-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Look at the survey results. Which sentence is TRUE?</en>"
+      stem: "<en>Survey question: Do you keep up with the latest fashion?\nYes: Ece, Elif\nNo: Selin, Duru, Kaan</en>"
+      options: ["Duru doesn't follow new fashion trends.", "Selin keeps up with the latest fashion.", "Ece isn't interested in fashion.", "Everybody keeps up with the latest fashion."]
+      answer: 0
+  - item: U2-064
+    sezdir:
+      id: u2d11-064-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"casual clothes\" ne anlama geliyordu?"
+      options: ["günlük (rahat) kıyafetler", "resmi kıyafetler", "okul forması", "pahalı kıyafetler"]
+      answer: 0
+    kullan:
+      id: u2d11-064-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>At the weekend I never wear a suit. I prefer ________ like jeans and T-shirts.</en>"
+      options: ["casual clothes", "smart clothes", "school uniforms", "bow ties"]
+      answer: 0
+    sina:
+      id: u2d11-064-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Bora: Tomorrow we're having a picnic and playing football in the park. What should I wear?\nEce: ________</en>"
+      options: ["Wear casual clothes, like a T-shirt and trainers.", "Wear smart clothes, like a suit and a tie.", "Wear your school uniform.", "Wear your shiny wedding shoes."]
+      answer: 0
+  - item: U2-065
+    sezdir:
+      id: u2d11-065-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"smart clothes\" ne anlama geliyordu?"
+      options: ["şık kıyafetler", "spor kıyafetleri", "eski kıyafetler", "akıllı saatler"]
+      answer: 0
+      explain: "smart burada \"akıllı\" değil; giyim için \"şık\" demek."
+    kullan:
+      id: u2d11-065-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My cousin's wedding is on Saturday evening. I need to wear ________.</en>"
+      options: ["smart clothes", "casual clothes", "pyjamas", "a tracksuit"]
+      answer: 0
+    sina:
+      id: u2d11-065-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>A: I have a job interview tomorrow. What should I wear?\nB: ________</en>"
+      options: ["Wear smart clothes, like a shirt and a jacket.", "Wear your old football shirt.", "Wear your pyjamas.", "Wear shorts and flip-flops."]
+      answer: 0
+  - item: U2-066
+    sezdir:
+      id: u2d11-066-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"outfit\" ne anlama geliyordu?"
+      options: ["kıyafet, kombin", "saç modeli", "çanta", "makyaj"]
+      answer: 0
+    kullan:
+      id: u2d11-066-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>For the party, Elif chose a blue dress, white shoes and a small bag. What a nice ________!</en>"
+      options: ["outfit", "queue", "survey", "gym"]
+      answer: 0
+    sina:
+      id: u2d11-066-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Ece asking about?</en>"
+      stem: "<en>Ece: Black jeans, a yellow jumper and white trainers for tomorrow. What do you think?</en>"
+      options: ["her outfit", "her daily routine", "her band", "her survey"]
+      answer: 0
+
+review:
+  - id: u2d11-r01
+    type: gap_fill
+    item: U2-055
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>My best friend moved to Ankara, but we ________ every evening.</en>"
+    options: ["chat online", "do karate", "queue", "rest"]
+    answer: 0
+  - id: u2d11-r02
+    type: dialogue_complete
+    item: U2-056
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: What do you usually do after dinner?\nB: I ________ and read about space.</en>"
+    options: ["surf the internet", "pick up", "queue", "go hiking"]
+    answer: 0
+  - id: u2d11-r03
+    type: situation
+    item: U2-057
+    prompt: "<en>Elif is at the top of a mountain. She turns her phone camera to her face and smiles. What is she doing?</en>"
+    options: ["She's taking a selfie.", "She's following the news.", "She's chatting online.", "She's doing karate."]
+    answer: 0
+  - id: u2d11-r04
+    type: message_infer
+    item: U2-058
+    prompt: "<en>What did Kaan do?</en>"
+    stem: "<en>Kaan: Look! I put the video of my first basket online last night. 200 people watched it!</en>"
+    options: ["He shared a video on social media.", "He took a selfie at the gym.", "He followed the news.", "He chatted online with his coach."]
+    answer: 0
+  - id: u2d11-r05
+    type: message_infer
+    item: U2-059
+    prompt: "<en>How does Bora feel?</en>"
+    stem: "<en>Bora: Tomorrow is my first karate exam. I can't eat and I can't sleep!</en>"
+    options: ["nervous", "ridiculous", "bored", "full"]
+    answer: 0
+  - id: u2d11-r06
+    type: gap_fill
+    item: U2-060
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>A pizza with chocolate and fish on top? That's ________!</en>"
+    options: ["ridiculous", "nervous", "energetic", "patient"]
+    answer: 0
+  - id: u2d11-r07
+    type: message_infer
+    item: U2-019
+    lgs_like: true
+    prompt: "<en>What are Duru, Elif and Bora?</en>"
+    stem: "<en>Duru: Elif sings, I play the guitar and Bora plays the drums. We practise together every Saturday.</en>"
+    options: ["a band", "a basketball team", "a survey group", "a karate class"]
+    answer: 0
+  - id: u2d11-r08
+    type: odd_one_out
+    item: U2-021
+    lgs_like: true
+    prompt: "<en>Which one is NOT a music genre?</en>"
+    options: ["guitar", "jazz", "rock", "pop"]
+    answer: 0
+  - id: u2d11-r09
+    type: message_infer
+    item: U2-024
+    lgs_like: true
+    prompt: "<en>Which music genre does Murat Bey probably like?</en>"
+    stem: "<en>Murat Bey: I love the saxophone and the piano. My favourite musicians are Louis Armstrong and Ella Fitzgerald.</en>"
+    options: ["jazz", "rap", "rock music", "folk music"]
+    answer: 0
+  - id: u2d11-r10
+    type: gap_fill
+    item: U2-020
+    lgs_like: true
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Our band needs a new ________. Can anyone play the drums?</en>"
+    options: ["member", "genre", "queue", "survey"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U2-065]
+    text: "smart clothes \"akıllı kıyafet\" değil! Giyimden söz ederken smart = şık. \"You look smart!\" = \"Çok şık görünüyorsun!\""
+  - type: kelime_ailesi
+    refs: [U2-061, U1-072]
+    text: "fashion (moda) → fashionable (modaya uygun) → old-fashioned (demode, eski moda)."
+  - type: mini_dilbilgisi
+    refs: [U2-064, U2-066]
+    text: "clothes her zaman çoğuldur: \"My clothes are new.\" outfit ise sayılabilir: an outfit, two outfits."
+  - type: lgs_taktigi
+    refs: [U2-064, U2-065]
+    text: "casual clothes ↔ smart clothes zıt çift. Soruda piknik, maç, park varsa casual; düğün, iş görüşmesi, şık restoran varsa smart!"
+
+coach:
+  start: "Bugün okulda forma yok! Ece bir haftadır hazırlanıyor; Bora'nın ise kimsenin beklemediği bir planı var. 👔"
+  end_good: "Muhteşem! Bugünkü kelimeleri giydin, yakıştı! Bora'nın papyonu kadar parlak bir ders oldu. 🎀"
+  end_mixed: "Güzel gidiyorsun! {weak} biraz bol geldi, olsun. Yarın bir daha deneriz, tam üstüne oturacak! 👟"
+
+notifications:
+  morning: "Forma yok günü! 👟 Bora okula ne giyip geldi? Tahmin bile edemezsin."
+  evening: "Kırmızı papyonlu Bora, eşofmanlı Kaan… Bugünkü ders 10 dakika. 👔"
+  review: "Tek soru: Düğüne giderken casual clothes mı giyilir, smart clothes mı?"
+
+editor:
+  z07: {U2-061: BEKLIYOR, U2-062: BEKLIYOR, U2-063: BEKLIYOR, U2-064: BEKLIYOR, U2-065: BEKLIYOR, U2-066: BEKLIYOR}

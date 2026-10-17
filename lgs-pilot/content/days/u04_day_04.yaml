@@ -1,0 +1,308 @@
+schema_version: 1
+program: lgs
+unit: 4
+day: 4
+status: draft
+title: "Bir rakam kaydı"
+est_minutes: 10
+characters: [Bora, Nermin Teyze, Duru, Duru'nun annesi, Ece]
+new_items: [U4-005, U4-006, U4-015, U4-019, U4-032, U4-050]
+
+story:
+  - id: s01
+    text: "Tatilin ilk haftası, sabah dokuz. Bora pijamalarıyla omletini yerken aklına birden cumartesi geldi: tatilde karate dersi var mıydı, yok muydu?"
+  - id: s02
+    text: "Bora kendi kendine: \"<en>Every Saturday we {U2-038|do karate} with Gül Hanım… but it's the holiday. I'll call her and ask.</en>\""
+  - id: s03
+    text: "Gül Hanım'ın numarası, salonun panosundan aldığı buruşuk bir kâğıttaydı. Bora bir elinde çatal, öbür elinde telefon: \"<en>OK, let me {U4-005|dial} the number. Zero, five, three, two… seven, eight… or was it seven, seven?</en>\""
+  - id: s04
+    text: "Tam o sırada çatal yere düştü, Bora eğildi ve parmağı ekranda bir rakam kaydı. Arama gitmişti bile."
+  - id: s05
+    text: "Bora: \"<en>It's {U4-013|ringing}… Come on, {U4-011|pick up}, please…</en>\""
+  - id: s06
+    text: "Sonunda hattın öbür ucundan yaşlı, yumuşacık bir ses geldi; arkada da hışırtı: \"<en>Hello? {U4-031|Who's calling}, please?</en>\""
+  - id: s07
+    text: "Bora en ciddi sesiyle: \"<en>Good morning! {U4-031|This is} Bora. {U4-026|May I speak to} Gül Hanım, please? {U4-024|I'm calling about} the Saturday class.</en>\""
+  - id: s08
+    text: "Ses: \"<en>{U4-019|Pardon}? It's a {U4-015|bad line}, dear. I can't hear you very well.</en>\""
+  - id: s09
+    text: "Bora, sesi gitmiyor sandı ve bütün gücüyle bağırdı: \"<en>BORA! KARATE! SATURDAY! Is that {U2-028|loud} enough?</en>\""
+  - id: s10
+    text: "Ses: \"<en>Karate? On Saturday? Oh dear… {U4-019|Can you repeat that}, please? Slowly, for an old lady.</en>\""
+  - id: s11
+    text: "Bora her kelimeyi heceleyerek söyledi. Hattın öbür ucunda bir an sessizlik oldu, sonra kıkır kıkır bir gülüş: \"<en>Ha! This is Nermin, dear. There's no Gül Hanım here. And I don't {U2-038|do karate}… not yet!</en>\""
+  - id: s12
+    text: "Bora'nın kulakları domates gibi kızardı: \"<en>Oh no! {U4-032|Sorry, wrong number}! I'm really, really sorry! Bye-bye!</en>\""
+  - id: s13
+    text: "Parmağı kırmızı tuşa ışık hızıyla gitti. Telefonu kanepeye fırlattı, yüzünü yastığa gömdü: \"<en>I {U4-006|hung up} on a grandma! I shouted at a grandma! I'm SO {U4-050|embarrassed}!</en>\""
+  - id: s14
+    text: "Bunu birine anlatmazsa patlayacaktı. Duru'nun cep telefonu her zamanki gibi sessizdeydi; Bora ev telefonunu aradı. Duru'nun annesi: \"<en>Hello? Oh, Bora! {U4-007|Hang on}, {U4-022|I'll get her}.</en>\""
+  - id: s15
+    text: "Uzaktan bir havlama, bir kanepe gıcırtısı, sonra Duru'nun uykulu sesi: \"<en>Hi. Duru here. Talking… very slowly.</en>\""
+  - id: s16
+    text: "Bora tek nefeste anlattı: \"<en>I {U4-005|dialled} the {U4-032|wrong number}! It was a {U4-015|bad line}, so I shouted 'KARATE' at a grandma. Then I {U4-006|hung up}. In one second!</en>\""
+  - id: s17
+    text: "Duru hiç acele etmeden: \"<en>Don't be {U4-050|embarrassed}. Fıstık barks at grandmas every day. You only shouted once.</en>\""
+  - id: s18
+    text: "Akşam yedide Bora'nın telefonu titredi. Ekranda sabahki numara vardı. Bora telefona baktı, telefon Bora'ya baktı: \"<en>It's her! Should I {U4-011|answer} it? …OK. I'll be brave.</en>\""
+  - id: s19
+    text: "Hattın öbür ucunda yine o yumuşacık ses: \"<en>Hello? Is this the karate boy? {U4-031|This is} Nermin again. Please don't {U4-006|hang up}, dear!</en>\""
+  - id: s20
+    text: "Nermin Teyze: \"<en>The line is clear tonight, not a {U4-015|bad line} like this morning. I told my grandson Arda about you. He said: 'Bora? The drummer from the band video?' He's {U2-015|crazy about} that video!</en>\""
+  - id: s21
+    text: "Bora: \"<en>{U4-019|Pardon}? He knows our band?</en>\" Nermin Teyze: \"<en>Yes! Do you ever play concerts? I can't play the drums, but I can clap!</en>\""
+  - id: s22
+    text: "Bora: \"<en>We have one on the last Saturday of the holiday! Please come! Wow. I'm not {U4-050|embarrassed} any more… well, only a little.</en>\""
+  - id: s23
+    text: "Bora sınıf grubuna yazdı: \"<en>Breaking news: we have our first fan! Thanks to a {U4-032|wrong number}. 🥁</en>\""
+  - id: s24
+    text: "Duru: \"<en>Classic Bora. Next time, {U4-005|dial} slowly.</en>\" Bursa'dan Ece: \"<en>Wait. WHAT fan?! Who? When? I need a list!</en>\""
+
+scene:
+  - id: c01
+    speaker: Bora
+    text: "<en>I dialled the wrong number this morning, and an old lady answered.</en>"
+  - id: c02
+    speaker: Duru
+    text: "<en>And it was a bad line, so you shouted?</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>Yes! She said 'Pardon?' two times. Then I said 'Sorry, wrong number' and hung up. I was so embarrassed.</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>But she called back. Now we have our first fan!</en>"
+
+steps:
+  - item: U4-005
+    sezdir:
+      id: u4d04-005-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"dial\" ne anlama geliyordu?"
+      options: ["(numarayı) tuşlamak, çevirmek", "(numarayı) kaydetmek", "(numarayı) silmek", "(numarayı) ezberlemek"]
+      answer: 0
+    kullan:
+      id: u4d04-005-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>To call the school office, ________ 0232 555 14 14.</en>"
+      options: ["dial", "hang up", "hold on", "pick up"]
+      answer: 0
+      explain: "Bir numarayı telefona girmek dial ile anlatılır: dial a number."
+    sina:
+      id: u4d04-005-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the note, which of the following is TRUE?</en>"
+      stem: "<en>Mum's note on the fridge:\nI'm at work until 6 p.m. Please don't call me before 5 because I'm in meetings. In an emergency, dial 112. There's soup in the fridge!</en>"
+      options: ["In an emergency, the child should call 112.", "The child can call Mum at 3 p.m.", "Mum's work number is 112.", "Mum is at home all day."]
+      answer: 0
+      explain: "Notta acil durumda 112'nin aranacağı yazıyor; saat 5'ten önce annenin aranmaması isteniyor ve anne akşam 6'ya kadar işte."
+  - item: U4-006
+    sezdir:
+      id: u4d04-006-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede \"hang up\" ne anlama geliyordu?"
+      options: ["telefonu kapatmak", "telefonu açmak", "hatta beklemek", "geri aramak"]
+      answer: 0
+    kullan:
+      id: u4d04-006-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Please don't ________! I haven't finished my story yet.</en>"
+      options: ["hang up", "hang on", "hang out", "pick up"]
+      answer: 0
+      explain: "Konuşma bitmeden görüşmeyi sonlandırmak hang up; hang on beklemek, hang out arkadaşlarla takılmaktır."
+    sina:
+      id: u4d04-006-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: Hello, Duru? It's me! Can you hear me?\nDuru: ________\nElif: Wait! Don't hang up! Can you hear me now?</en>"
+      options: ["Sorry, I can't hear you. I'll call you later. Bye!", "Hi, Elif! Yes, I can hear you very well.", "Sure, I'll hold on.", "Thanks, the line is very good today."]
+      answer: 0
+      explain: "Elif \"Don't hang up!\" diyor; demek ki Duru görüşmeyi bitirmek üzere: ancak \"I'll call you later. Bye!\" buna uyar."
+  - item: U4-015
+    sezdir:
+      id: u4d04-015-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"It's a bad line\" ne anlama geliyordu?"
+      options: ["Hat kötü, ses iyi gelmiyor.", "Hat meşgul.", "Yanlış numarayı aradın.", "Telefonumun şarjı bitti."]
+      answer: 0
+    kullan:
+      id: u4d04-015-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Sorry, it's a ________. I can't hear you very well. Let me call you back.</en>"
+      options: ["bad line", "wrong number", "busy day", "short message"]
+      answer: 0
+      explain: "Ses kesik geliyor ve karşıdaki duyulmuyorsa \"It's a bad line\" denir."
+    sina:
+      id: u4d04-015-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What does Ece say in this situation?</en>"
+      stem: "<en>Ece is calling Selin from Bursa. Selin's voice keeps breaking: \"Hel… Ec… conc… five…\" Ece can't understand her.</en>"
+      options: ["It's a bad line. Can you call me back?", "Thanks for the invitation.", "Sorry, wrong number.", "Who's calling, please?"]
+      answer: 0
+      explain: "Ses kesik kesik geliyor; uygun tepki hattın kötü olduğunu söyleyip tekrar aranmayı istemek. Arayan Ece olduğu için \"Who's calling?\" uymaz."
+  - item: U4-019
+    sezdir:
+      id: u4d04-019-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"Can you repeat that, please?\" ne anlama geliyordu?"
+      options: ["Tekrar eder misiniz lütfen?", "Beni geri arar mısınız lütfen?", "Biraz bekler misiniz lütfen?", "Kiminle görüşüyorum lütfen?"]
+      answer: 0
+    kullan:
+      id: u4d04-019-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Sorry, I didn't hear the time. Can you ________ that, please?</en>"
+      options: ["repeat", "hang", "dial", "hold"]
+      answer: 0
+      explain: "Duyamadığın bir şeyi yeniden söylemesini istemek için \"Can you repeat that?\" kullanılır."
+    sina:
+      id: u4d04-019-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Sevim Hanım: The concert starts at seven o'clock on Saturday.\nElif: ________\nSevim Hanım: Of course. Seven o'clock, on Saturday.</en>"
+      options: ["Pardon? Can you repeat that, please?", "Great! See you on Saturday. Bye!", "Sorry, wrong number.", "Hang on, I'll get her."]
+      answer: 0
+      explain: "Sevim Hanım aynı bilgiyi yeniden söylüyor; demek ki Elif tekrar etmesini istemiş."
+  - item: U4-032
+    sezdir:
+      id: u4d04-032-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"Sorry, wrong number\" ne anlama geliyordu?"
+      options: ["Pardon, yanlış numara.", "Pardon, hat meşgul.", "Pardon, sesiniz gelmiyor.", "Pardon, geç kaldım."]
+      answer: 0
+    kullan:
+      id: u4d04-032-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Hello, is this City Pizza?\nB: No, this is a house. I think you have the ________.</en>"
+      options: ["wrong number", "right number", "bad line", "extension"]
+      answer: 0
+      explain: "Aradığın yer yerine başka biri çıkıyorsa yanlış numarayı aramışsındır: wrong number."
+    sina:
+      id: u4d04-032-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What should Kaan say in this situation?</en>"
+      stem: "<en>Kaan calls the gym to ask about his training. A man answers: \"Hello, this is Ali's Bakery. Fresh bread, how can I help you?\"</en>"
+      options: ["Oh, sorry, wrong number.", "Can I take a message?", "Yes, speaking.", "Hang on, I'll get him."]
+      answer: 0
+      explain: "Kaan spor salonunu aramış ama fırına düşmüş; özür dileyip yanlış numara olduğunu söylemeli."
+  - item: U4-050
+    sezdir:
+      id: u4d04-050-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede \"embarrassed\" ne anlama geliyordu?"
+      options: ["utanmış, mahcup", "kızgın", "sıkılmış", "heyecanlı"]
+      answer: 0
+    kullan:
+      id: u4d04-050-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>In class, Kaan called Murat Bey \"Mum\" by mistake. Everybody laughed, and his face went red. He felt really ________.</en>"
+      options: ["embarrassed", "proud", "relaxed", "generous"]
+      answer: 0
+      explain: "Herkesin önünde komik bir hata yapıp yüzü kızaran kişi embarrassed hisseder."
+    sina:
+      id: u4d04-050-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Which of the following can we infer about Elif?</en>"
+      stem: "<en>Elif's message: I started the wrong song at the rehearsal today! Everybody laughed, and my face went red. I wanted to hide under Duru's sofa!</en>"
+      options: ["She felt embarrassed.", "She felt proud of her song.", "She was relaxed and calm.", "She doesn't like singing."]
+      answer: 0
+      explain: "Yüzü kızarıyor ve kanepenin altına saklanmak istiyor: utanmış. Diğer şıkların mesajda dayanağı yok."
+
+review:
+  - id: u4d04-r01
+    type: gap_fill
+    item: U4-012
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Secretary: Hold on, please. I'll ________ you through to Mr Demir.</en>"
+    options: ["put", "take", "pick", "hang"]
+    answer: 0
+  - id: u4d04-r02
+    type: gap_fill
+    item: U4-017
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Mr Demir isn't in the main office. Call 0232 444 10 10 and ask for ________ 214.</en>"
+    options: ["extension", "secretary", "message", "caller"]
+    answer: 0
+  - id: u4d04-r03
+    type: dialogue_complete
+    item: U4-020
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Secretary: Good morning, City Arts Centre. ________\nEce: Hello, I'm calling about the concert on Saturday.</en>"
+    options: ["How can I help you?", "Who are you?", "I'll call you back.", "Sorry, wrong number."]
+    answer: 0
+    explain: "Kurum telefonunu açan kişi kibarca nasıl yardım edebileceğini sorar; Ece de arama nedenini söyleyerek cevap veriyor."
+  - id: u4d04-r04
+    type: message_infer
+    item: U4-024
+    lgs_like: true
+    stem_id: S11
+    prompt: "<en>Why is Kaan calling?</en>"
+    stem: "<en>Kaan: Hello, this is Kaan. I'm calling about my basketball shoes. I ordered them last week, but they aren't here yet. Can you check, please?</en>"
+    options: ["to ask about his shoes", "to order new shoes", "to invite a friend to a match", "to join a basketball team"]
+    answer: 0
+    explain: "Amaç ilk cümlede: \"I'm calling about my basketball shoes\" ve gelmeyen ayakkabıyı soruyor."
+  - id: u4d04-r05
+    type: gap_fill
+    item: U4-002
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>The ________ didn't say his name, so the secretary asked: \"Who's calling, please?\"</en>"
+    options: ["caller", "secretary", "extension"]
+    answer: 0
+  - id: u4d04-r06
+    type: situation
+    item: U4-042
+    prompt: "<en>Who is this person?</en>"
+    stem: "<en>She works in an office. She answers the phone, takes messages and puts callers through to the manager.</en>"
+    options: ["a secretary", "a drummer", "a chef", "a karate teacher"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U4-006, U4-007, U2-004]
+    text: "Üç \"hang\" birbirine karışmasın: hang up = telefonu kapatmak, hang on = (hatta) beklemek, hang out = arkadaşlarla takılmak (Ü2). İpucu: up = bitti, on = devam, out = dışarı."
+  - type: mini_dilbilgisi
+    refs: [U4-050]
+    text: "embarrassed kişinin hissidir: \"I'm embarrassed.\" Olayın kendisini anlatırken -ing kullanılır: \"It was an embarrassing call.\" \"I'm embarrassing\" dersen \"Ben utandırıcı biriyim\" demiş olursun!"
+  - type: ilginc_bilgi
+    refs: [U4-005]
+    text: "Eski telefonlarda rakamlar dönen bir kadranın (dial) üzerindeydi; numarayı parmağınla tek tek çevirirdin. Bugün ekrana dokunuyoruz ama İngilizcede hâlâ \"dial a number\" diyoruz."
+  - type: lgs_taktigi
+    refs: [U4-019, U4-015]
+    text: "Diyalogda bir kişi aynı bilgiyi ikinci kez söylüyorsa, boşlukta büyük olasılıkla \"Pardon? / Can you repeat that?\" ya da \"It's a bad line\" vardır. Boşluktan sonraki satır ipucunu verir."
+
+coach:
+  start: "Bora bugün tek bir rakamı karıştırıyor. Hattın öbür ucundaki ses kime ait? 📞"
+  end_good: "Bravo! Bora'nın parmağı kaydı, seninki hiç kaymadı. Grubun ilk hayranı da senin kadar dikkatli olsun 🥁"
+  end_mixed: "Fena değil! {weak} biraz cızırdadı ama hat düzelir. Yarın bir tur daha, bu kez ses net gelecek 📶"
+
+notifications:
+  morning: "Bora bugün bir rakamı karıştıracak. Bu, yılın en güzel hatası olabilir 📞"
+  evening: "Bir rakam, bir teyze ve grubun ilk hayranı. Bugünkü hikâye seni bekliyor 🥁"
+  review: "hang up mı, hang on mu? Biri görüşmeyi bitirir, biri bekletir. Hangisi hangisi? 🤔"
+
+editor:
+  z07: {U4-005: BEKLIYOR, U4-006: BEKLIYOR, U4-015: BEKLIYOR, U4-019: BEKLIYOR, U4-032: BEKLIYOR, U4-050: BEKLIYOR}

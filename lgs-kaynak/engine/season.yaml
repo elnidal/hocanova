@@ -1,0 +1,257 @@
+# Hikayenglish LGS — Hikâye Motoru · SEZON PLANI (10 ünite, Eylül → Haziran LGS)
+# Ü1–Ü2: yazıldı (kanon) · Ü3: havuz hazır, Story Bible bekliyor · Ü4–Ü10: kelime listesi yok → olaylar temaya uygun ama ESNEK.
+# Kelime listesi gelince ünite satırı ayrıntılandırılır: olaylar birimlere göre değişebilir, karakter yayı ve kanon değişmez.
+# Ay = hikâye içi zaman (okul takvimine paralel). Gün sayıları yalnız tahmin: tekil birim ÷ ~6.
+# Dil oranı (Plan §5): Ü1–3 Türkçe anlatı + İngilizce konuşma · Ü4–7 konuşmalar ve mesajlar çoğunlukla İngilizce, anlatı Türkçe ve kısa · Ü8–10 metin büyük ölçüde İngilizce, LGS okuma düzeyi.
+
+schema_version: 1
+updated: 2026-10-15
+school_year: "2026–2027 (LGS: Haziran 2027; kesin tarih MEB takvimiyle)"
+
+arcs:   # sezon boyu karakter yayları; ünite satırları bunları adım adım ilerletir
+  kaan:  {from: "hep geç, hep acele", to: "LGS sabahı sınav binasının önünde herkesten önce", engine: "zamanlayıcı, alarm, otobüs, 'Me? Late? Never!'"}
+  bora:  {from: "bahaneci ('Sorry, I can't')", to: "güvenilir ('Leave it to me' / sorumluluk alan)", engine: "olmayan kedi, felaket selfie, şık giyinme, dans"}
+  ece:   {from: "mükemmeliyetçi planlayıcı", to: "kusuru kabul eden lider ('Mükemmel değil ama bizim')", engine: "plan defteri, şapka pasta, aşırı fotoğraf"}
+  duru:  {from: "'It doesn't matter'", to: "kararlı ('It matters to me')", engine: "puf/kanepe, Fıstık, kuru espri, ani ciddiyet"}
+  selin: {from: "kurallar ve saat gibi rutin", to: "esneklik ve küçük riskler; rutini bilerek bozmak", engine: "3.40, 6.30, nadiren cips, kaş kaldırma"}
+  elif:  {from: "yeni öğrenci, komşu kız", to: "grubun vazgeçilmez parçası; 'bu şehir ve bu grup benim de'", engine: "şarkı, Pamuk, coşkulu öneriler"}
+
+running_comedy_engines:   # her ünitede en az ikisi çalışır
+  - "Kaan'ın gecikmesi ve 'Me? Late? Never!'"
+  - "Bora'nın olmayan kedisi / bahaneleri"
+  - "Duru'nun 'fark etmez'i ve kanepesi; Fıstık'ın zamanlaması"
+  - "Ece'nin planları ve fotoğraf yağmuru"
+  - "Selin'in saat gibi rutini, kaş kaldırması"
+  - "Sınıf grubunda mesaj kazaları (yanlış kişiye mesaj, gece yarısı 80 fotoğraf, iki mavi tik)"
+  - "Murat Bey'in sakin esprileri"
+
+units:
+  - unit: 1
+    title: Friendship
+    status: yazildi
+    month: "Eylül–Ekim"
+    days: 17
+    items: 100
+    frame: "Ece'nin doğum günü partisi haftası (G1–5), ardından okulun ilk ayı: parti albümü, yeni öğrenci Elif, bilim fuarı, kavga–yalan–barışma, ikili proje, kişilik testi, kıskançlık, okul gezisi."
+    conflict: "Kaan–Bora kavgası: futbol maçı + Kaan'ın Bora'nın dans kursu sırrını ifşa etmesi (G10–11); yan çatışma Ece'nin kıskançlığı (G15)."
+    arcs:
+      kaan: "Ödev yalanını itiraf etti, Bora'dan özür diledi; projede dakik ve saygılı; gezi otobüsüne ilk kez herkesten önce bindi."
+      bora: "Kedi bahanesi → özür → pastayı getirip sözünü tuttu; tavuk dansı zaferi; sırrı ifşa edilince kırıldı, barıştı."
+      ece: "Partiyi kusursuz yapmaya çalıştı (şapka pasta); kıskançlığını itiraf etti."
+      duru: "Bora'yı savundu; adil hakem; Elif'le müzik ortaklığı; 'The Calm Friend'."
+      selin: "Güvenilir yardımcı, dürüst eleştirmen, kavgada arabulucu."
+      elif: "Partiye komşu olarak geldi, G7'de sınıfa katıldı, Duru'yla kaynaştı."
+    comedy_engine: "Bora'nın bahaneleri + Kaan'ın sır tutamaması + Duru'nun pufu"
+    finale: "Lunapark: hız treninde Bora'nın çığlığı → 'Again!'; dönüş otobüsünde Duru Ece'nin omzunda uyur; 'bu sonbaharın en güzel hediyesi arkadaşları'."
+    hook_next: "Murat Bey'in yeni ödevi (Ü2 G1'de açıldı); Duru ile Elif'in grup planı (u01d15)."
+
+  - unit: 2
+    title: Teen Life
+    status: yazildi
+    month: "Kasım–Aralık"
+    days: 16
+    items: 92
+    frame: "Teen Life Survey: Murat Bey'in 'Gençler boş zamanlarını nasıl geçiriyor?' anket ödevi; ekipler Ece–Selin–Elif / Kaan–Bora–Duru; G16'da grafikli sunum."
+    conflict: "Müzik grubu türü (rock mı pop mu), anket yükü ve 'iyi genç' tartışması; Ege'nin züppe ziyareti; ödevlerin dayanılmazlığı."
+    arcs:
+      kaan: "Spora sardı (City Gym, basketbol seçmeleri); G15'te plan yapıp bir kez zamanında geldi."
+      bora: "Karate + doğa yürüyüşü; grubun fotoğrafçısı, sonra davulcusu; selfie ünü; günde 20 dk ders sözü."
+      ece: "Anket düzenleyicisi, moda kraliçesi; sunumda ilk grafik."
+      duru: "Grup kurdu, rock'ta inatçı; Elif'in üzüntüsünü fark etti (sensitive); ters grafiği düzeltti."
+      selin: "Rutin örneği, haber takipçisi, kurallar; Kaan'la belgesel uzlaşması."
+      elif: "Vokal; Luna Ray konseri iptali; anket ekibinin enerjisi."
+    comedy_engine: "Anket soruları birbirine deneniyor + prova gürültüsü (Fıstık, Kaan'ın rap'i, Ahmet Amca'nın matkabı) + Bora'nın selfie'leri"
+    finale: "Sunum: Bora'nın grafiği ters yansır, Duru iki tıkla düzeltir; Bora'nın tavuk dansına bütün sınıf katılır; Fıstık'ın anket cevabı: sleeping. Always."
+    hook_next: "Kutlama pikniği planı; Kaan'ın seçme sonucu açık iplik."
+
+  - unit: 3
+    title: In the Kitchen
+    status: yazildi
+    month: "Aralık sonu–Ocak (yarıyıl tatilinden önceki haftalar)"
+    days_estimate: "11 (yazıldı: u03_day_01…11)"
+    items: 60
+    items_file: lgs-pilot/content/unit_03_items.yaml
+    item_themes: [pişirme yöntemleri (9), hazırlama fiilleri (17), tat ve lezzet (10), mutfak araçları ve ölçü (6), tarif dili (10), yemek kültürü ve ifadeler (8)]
+    frame: >-
+      Okulun "Küçük Şefler Yarışması" (İngilizce adı Junior Chef Contest): her takım bir ana yemek ve bir tatlıdan oluşan menü hazırlar,
+      tarifi İngilizce tarif kartı olarak yazar (Murat Bey'in şartı) ve jüriye sunar. Takımlar: Ece–Selin–Elif / Kaan–Bora–Duru.
+      Jüri: Murat Bey, kantinci teyze ve sürpriz bir konuk. Denemeler Ece'nin ve Duru'nun evinde, yetişkin gözetiminde.
+    naming_note: "Türkçe anlatıda 'yemek yarışması/mutfak yarışması' DEME: 'yemek', 'mutfak', 'tatlı', 'önce/sonra' Ü3 birimlerinin karşılığı (rules.yaml R12 unit3_risk)."
+    conflict: >-
+      Ece takımı: Ece 'şapka pasta'nın intikamını almak için kusursuz katlı pasta ister; Selin tarife gram gram uyar; Elif doğaçlama yapar
+      (fazla biber, tuz) → tarif kavgası. Kaan takımı: Kaan fırını ısıtmadan, süreyi beklemeden her şeyi aceleye getirir; Bora sorumluluk
+      alır mı yine bahane mi bulur; Duru 'fark etmez' der ama menüyü kimse seçemeyince karar onda. Orta düğüm: provada Fıstık hamuru/peyniri yer.
+      Kriz: yarışmadan bir gün önce Kaan takımının denemesi yanar, Ece takımının pastası çöker.
+    arcs:
+      kaan: "Açılışta seçme sonucu (öneri): basketbol takımına yedek olarak girdi. Ünite boyunca 'How long?' sorusunun cevabını öğrenir: zamanlayıcıyı kurar ve sabırla bekler (kantin kuyruğunda zorla beklemişti, u02d09; bu kez kendi seçimi). Final: fırın kapağını erken açmaz."
+      bora: "Annesi sabahları erken çıktığı için kendi kahvaltısını yapmayı çoktan öğrenmiş: grubun gizli aşçısı (öneri, u01d13 s09 ile uyumlu). İlk kez bahane yerine 'Leave it to me' der; yanmış denemenin sorumluluğunu üstlenir."
+      ece: "Pasta yine şapkaya benzer; bu kez ilk gülen kendisi olur: 'Şapka pasta' takımın maskotu olur. Mükemmeliyetçilikten ilk küçük adım."
+      duru: "Menü kilitlenince 'fark etmez'i bırakır: 'No. We make my mum's dish.' — müzik türü dışındaki ilk net kararı (rock inadı Ü2 G4'te yazıldı). Tadına bakan, en iyi damak (taste-tester)."
+      selin: "Tarifin dışına çıkmaz; finalde bir malzeme eksilince ilk kez doğaçlama yapar ve işe yarar."
+      elif: "Mutfakta şarkı söyleyen doğaçlamacı; takımı uzlaştırır; Pamuk jürinin önüne fırlar (küçük kaos)."
+    comedy_engine: "Kaan'ın acelesi × fırın süresi; Fıstık'ın zamanlaması; Ege'nin 'gurme' tavırları (simit/kruvasan geri dönüşü); kantinci teyzenin jüri ciddiyeti"
+    side_characters: [Murat Bey (jüri), kantinci teyze (jüri), Ege (kendini 'gurme eleştirmen' ilan eden izleyici), Duru'nun annesi, Ece'nin annesi, Ahmet Amca (matkap yerine koku şikâyeti)]
+    finale: >-
+      Yarışma günü: Ece'nin pastası yine şapka gibi, ama tadı jüriyi büyüler; Kaan zamanlayıcıyı bekler, Bora'nın sade ev yapımı yemeği
+      Ege'yi bile ikna eder ('OK… maybe homemade is pretty good' — Ü2 simit sahnesinin yankısı). İki takım da bir ödül alır
+      (lezzet / takım çalışması); asıl sürpriz: kantinci teyze Bora'nın tarifini kantin menüsüne ekler. Ünite finali LGS soruları: tarif sıralama, menü tablosu.
+    hook_next: "Kutlamada Duru ile Elif çalar; pastane sahibi videoyu görür ve 'bizde çalar mısınız?' diye arayacağını söyler — ama yarıyıl tatili başlıyor ve herkes dağılıyor."
+    open_threads_closed: [OT1 (Kaan'ın seçme sonucu)]
+
+  - unit: 4
+    title: On the Phone
+    status: yazildi
+    month: "Ocak sonu–Şubat başı (yarıyıl tatili)"
+    days_estimate: "10 (yazıldı: u04_day_01…10)"
+    expected_language: "telefon kalıpları (Can I speak to…?, Hold on, call back, leave a message, wrong number, hang up), plan yapma, rica"
+    frame: "Yarıyıl tatili: herkes başka yerde (Ece ailesiyle şehir dışında, Selin dedesinde vb.). Grubun ilk mini konser teklifi telefonla gelir; tüm organizasyon telefonda yürür."
+    conflict: "Telefon kazaları: yanlış numara, Duru'nun telefonu hiç açmaması, Kaan'ın 3 dakikalık sesli mesajları, Bora'nın dedesinin telefonu açıp caz önermesi; konser saati yanlış anlaşılır."
+    arcs:
+      kaan: "Sesli mesajda bile acele; 'call back' sözünü tutar, bir kez zamanında arar."
+      bora: "Davulcu olarak ilk gerçek sorumluluk: davulu ödünç bulur ve getirir (OT6)."
+      ece: "Gruba şarkıcı değil menajer olarak döner (OT5'i kapatır); her şeyi saat saat planlar, plan telefonda dağılır."
+      duru: "Telefonu açmayan Duru, konser iptal olacakken ilk kez kendisi arar."
+      selin: "Herkesin numarasını ve saatini bilen 'santral'."
+      elif: "İlk sahnesi; Luna Ray'in iptal konserinin yarası → kendi konseri."
+    comedy_engine: "Kesik hatlar, yanlış kişiye sesli mesaj, 'Hold on' deyip unutulan arama"
+    finale: "Şubat başı, pastanede ilk mini konser: Bora davulda, Duru gitarda, Elif mikrofonda; grubun adı kesinleşir (OT4)."
+    hook_next: "Konser videosu internete düşer, beklenmedik izlenme."
+    note: "Olaylar kelime listesine göre değişebilir."
+
+  - unit: 5
+    title: The Internet
+    status: yazildi
+    month: "Şubat–Mart"
+    days_estimate: "10 (yazıldı: u05_day_01…10)"
+    expected_language: "internet kullanımı, çevrimiçi güvenlik, şifre, indirme/yükleme, sosyal medya, alışkanlık bildirme"
+    frame: "Okulun 'Safer Internet Week' projesi + grubun kendi kanalı/sayfası. Murat Bey ekiplerden 'internet kuralları' rehberi ister."
+    conflict: "Bora 'bedava davul seti' bağlantısına tıklar, hesabı ele geçirilir, garip gönderiler paylaşılır; okulla ilgili bir sahte haber yayılır; grup videosunun altına kırıcı bir yorum gelir (ciddi ele alınır)."
+    arcs:
+      kaan: "Paylaşmadan önce düşünmeyi öğrenir (acele = sahte haberi yaymak)."
+      bora: "Hatasını saklamaz, hemen söyler ve şifresini değiştirir — bahane yok."
+      ece: "Kanalın 'mükemmel' görünmesi için her videoyu on kez çeker; kusurlu canlı yayın daha çok sevilir."
+      duru: "Kırıcı yoruma karşı grubu sakinleştirir, 'bildir ve büyükle konuş' kararını o verir."
+      selin: "Haber takipçisi → sahte haber dedektifi."
+      elif: "Kırıcı yorum ona gelir; grup arkasında durur (destek, alay değil)."
+    safety: "Siber zorbalık asla şaka değil: hedef alınan kişi desteklenir, yetişkine söylenir, mizah olaydan değil karakterlerin şifre unutkanlığından çıkar."
+    comedy_engine: "Unutulan şifreler, yanlış gruba atılan mesaj, Bora'nın hesabından paylaşılan 'karate kedi' ikinci kez"
+    finale: "Ekipler internet rehberini sunar; Bora'nın 'ele geçirilmiş hesap' hikâyesi sınıfın en etkili örneği olur."
+    hook_next: "Kanala gelen bir yorum/okul duyurusu: baharda iki günlük doğa kampı."
+
+  - unit: 6
+    title: Adventures
+    status: yazildi
+    month: "Mart–Nisan başı"
+    days_estimate: "10 (yazıldı: u06_day_01…10)"
+    expected_language: "macera sporları, deneyim anlatma, karşılaştırma/üstünlük (more exciting, the most dangerous), tercih ve gerekçe"
+    frame: "Okulun bahar doğa kampı (iki gün, eğitmen gözetiminde): tırmanma duvarı, zip-line, kano, gece yürüyüşü, kamp ateşi."
+    conflict: "Kim cesur? Bora'nın hız treni cesareti gerçek mi; Selin ilk kez konfor alanından çıkmalı; gece yürüyüşünde grup yolu kaybeder (kısa süre, güvenle çözülür)."
+    arcs:
+      kaan: "Acele yüzünden hep en önde, ama ekip ipini beklemeyi öğrenir."
+      bora: "Tırmanma duvarının tepesine çıkar; kimseye bahane uydurmadan 'korkuyorum' der, yine de dener."
+      ece: "Kamp listesi 4 sayfa; yağmur bütün planı bozar, en iyi anı plansız olan çıkar."
+      duru: "Hamakçı Duru, gece yürüyüşünde sakinliğiyle grubu toparlar ve yönü o seçer (kararlılık)."
+      selin: "Zip-line'a ilk binen olur: 'I always follow the plan. Today the plan is fear.'"
+      elif: "Kamp ateşinde şarkı; grubun ritüeli olur."
+    safety: "Kask, emniyet kemeri, eğitmen; tehlikeli davranış özendirilmez, kaza mizah malzemesi değil."
+    comedy_engine: "Kaan'ın kanoyu tek başına çekmesi, Bora'nın böcek paniği, Duru'nun her molada uyuması"
+    finale: "Kamp ateşi: 'the most exciting thing I've ever done' turu; herkes birbirinin cesaretini sayar."
+    hook_next: "Murat Bey: Nisan'da yurt dışından ortak bir sınıf İzmir'e geliyor; rehber sizsiniz."
+
+  - unit: 7
+    title: Tourism
+    status: kaynak_bekleniyor
+    month: "Nisan"
+    days_estimate: "kelime listesi gelince"
+    expected_language: "yerleri tanıtma, turistik bilgi, seyahat deneyimi, yol tarifi, öneri"
+    frame: "Ortak okul projesi: yabancı bir misafir sınıfa İzmir turu hazırlamak — Kordon, Konak Saat Kulesi, Kemeraltı, Asansör ve bir günlük antik kent gezisi. İngilizce tur broşürü + rehberlik."
+    conflict: "Ece'nin dakika dakika programı; misafirlerin her şeyi farklı istemesi; Kaan tur otobüsüne… yetişir mi?; broşürde yanlış bilgi (Selin düzeltir)."
+    arcs:
+      kaan: "Tur rehberi olarak dakiklik zorunlu; bir gecikme, sonra hep zamanında."
+      bora: "Kemeraltı'ndaki en iyi simitçiyi bilir; misafirlere Türk mutfağını anlatır (Ü3 birimleri tekrar)."
+      ece: "Program bozulur, en güzel an plansız Kordon gün batımı olur."
+      duru: "Fıstık'la Kordon yürüyüşünü önerir — rotayı ilk kez o belirler."
+      selin: "Tarih bilgileri doğru mu diye kontrol eden 'fact checker'."
+      elif: "İzmir'i misafirlerle birlikte keşfeder; ünite sonunda 'my city' der (öneri: Elif'in İzmir'e yeni taşındığı ayrıntısı Ü7 Story Bible'da kararlaştırılmalı — Ü1–2'de yazmıyor)."
+    comedy_engine: "Kaan'ın İngilizce abartılı tanıtımları, Bora'nın her durakta yemek molası istemesi, Ece'nin 147 fotoğraf geleneği"
+    finale: "Kordon'da veda; misafirler gruba 'best tour guides' kartı bırakır."
+    hook_next: "Misafirlerden biri sorar: 'Who does the chores in your house?' — sessizlik."
+
+  - unit: 8
+    title: Chores
+    status: kaynak_bekleniyor
+    month: "Nisan sonu–Mayıs"
+    days_estimate: "kelime listesi gelince"
+    expected_language: "ev işleri, zorunluluk (have to, must, don't have to), sorumluluk, beğeni/şikâyet"
+    frame: "Murat Bey'in 'Chore Challenge' haftası: herkes bir hafta ev işi günlüğü tutar, puanlar sınıfta karşılaştırılır. LGS deneme sınavları da başlamıştır."
+    conflict: "Ev işi mi ders mi? Duru'nun annesi bir haftalık iş gezisinde; Duru, babası ve Fıstık evi idare etmek zorunda. Bora eski bahane alışkanlığına döner mi?"
+    arcs:
+      kaan: "Hızlı temizlik = kırılan vazo; yavaş ve düzgün yapmayı seçer."
+      bora: "'My cat ate the vacuum cleaner' bahanesi son kez denenir, gülünür, sonra ev işi listesinin en güvenilir ismi olur."
+      ece: "Mükemmel temizlik takıntısı; kardeşine görev devretmeyi öğrenir."
+      duru: "Ev işi çizelgesini kendisi hazırlar ve uygular — kararlılığın büyük adımı."
+      selin: "Ailesinin dönüşümlü görev tablosu; ağabeyi Emre'yle anlaşma (rap sesi kısılırsa bulaşık onda)."
+      elif: "Pamuk'un bakımını sınıfa anlatır; gruba evcil hayvan sorumluluğu fikri."
+    comedy_engine: "Puan tablosu hileleri (Kaan bulaşık makinesini 'ben yıkadım' sayar), Fıstık'ın çamaşır sepetini sahiplenmesi"
+    finale: "Grup, Ahmet Amca ve mahalle için park temizliği/bahar temizliği günü düzenler; matkap bu kez iyi bir şey için çalışır."
+    hook_next: "Okul ikinci bilim şenliğini duyurur: 'Bu yıl volkan yok!'"
+
+  - unit: 9
+    title: Science
+    status: kaynak_bekleniyor
+    month: "Mayıs"
+    days_estimate: "kelime listesi gelince"
+    expected_language: "bilim, deney, buluş, süreç anlatma (edilgen yapı), bilim insanları"
+    frame: "Bilim şenliği 2 (Ü1 volkanının yankısı): bu kez buluş projesi. Murat Bey ekipleri karıştırır: Ece–Bora, Kaan–Selin, Duru–Elif."
+    conflict: "Karışık ekipler sürtüşür; deney son gün çalışmaz; Murat Bey'in ayakkabıları yine tehlikede."
+    arcs:
+      kaan: "Selin'le 'geç kalmayan alarm' icat eder — kendi kusurunu projeye dönüştürür."
+      bora: "Ece'yle çalışırken sorumluluğu o üstlenir; sunumu o yapar."
+      ece: "Bora'nın dağınıklığına katlanmayı ve onun fikrine güvenmeyi öğrenir."
+      duru: "Elif'le 'köpek havlaması çevirmeni' (Fıstık ve Pamuk deneklerde); projeyi sonuna kadar götüren o."
+      selin: "Kaan'ın 'çalışmayan ama eğlenceli' fikirlerine şans verir."
+      elif: "Bilim ve müziği birleştirir (sesle çalışan ışık)."
+    comedy_engine: "Murat Bey'in ayakkabıları, Fıstık'ın deney protokolüne uymaması, alarmın yanlış anda çalması"
+    finale: "Kaan'ın alarmı jüri önünde Bora'yı uyandırır (Bora erken kalkamaz); Murat Bey ayakkabılarını kuru tutmayı başarır."
+    hook_next: "Okulda afet hazırlık ve çevre haftası duyurusu."
+
+  - unit: 10
+    title: Natural Forces
+    status: kaynak_bekleniyor
+    month: "Mayıs sonu–Haziran başı"
+    days_estimate: "kelime listesi gelince"
+    expected_language: "doğal afetler, hava olayları, çevre sorunları, öneri ve önlem (should), gelecek tahmini"
+    frame: "Okulun afet hazırlık ve çevre haftası: deprem tatbikatı, acil durum çantası, orman yangınlarını önleme ve iklim projesi, Kordon kıyı temizliği; hafta yıl sonu gösterisiyle biter."
+    sensitivity: "İzmir gerçek bir depremi yaşadı: afetin kendisi, kayıplar, korku asla mizah değil. Ciddi bilgi doğru ve sakin verilir; mizah yalnız hazırlıktaki karakter davranışından çıkar."
+    conflict: "LGS'ye günler kala stres + hazırlık sorumluluğu; Duru'nun lise tercihi konusunda ailesine fikrini söyleyip söylememesi."
+    arcs:
+      kaan: "Tatbikatta herkesten hızlı ama bu kez acele değil, doğru hız; LGS planı saat saat hazır."
+      bora: "Acil durum çantasına cips doldurur (komik), sonra sınıfın en eksiksiz çantasını hazırlar (güvenilir)."
+      ece: "Yıl sonu gösterisi kusursuz olmayacak; olmadığı için güzel olur."
+      duru: "Ailesine istediği liseyi söyler: 'It matters to me.' — yayın doruğu."
+      selin: "Gösteri gecesi rutinini bozar, sahnede grubun arkasında dans eder."
+      elif: "Gösteride grubun vokali; Ece'nin Ü1'deki davetiyesini hatırlatan bir şarkı."
+    comedy_engine: "Bora'nın atıştırmalık çantası, Kaan'ın 30 saniyelik tatbikat rekoru, Fıstık'ın gösteri provasına dahil olması"
+    finale: "Yıl sonu gösterisi: Bora'nın dans gösterisi nihayet sahnede (OT2, Ü1'den beri bekleyen söz) ve davulda kendi grubu; Kaan ön sırada — zamanında."
+    hook_next: "LGS haftası."
+
+season_finale:
+  status: kaynak_bekleniyor
+  month: "Haziran (LGS haftası ve sonrası)"
+  content: "Yeni birim yok; 10 üniteden karma tekrar ve çıkmış soru tarzı LGS pratiği (Plan §8b: sınav öncesi yeni içerik yok). 2–3 özel bölüm."
+  beats:
+    - "LGS sabahı: Kaan sınav binasının önünde herkesten önce (saat 7.00) — Selin'den bile önce. Selin'in kaşı bu kez sevinçle kalkar."
+    - "Bora bahane yok: herkese birer kalem ve su getirir ('Leave it to me')."
+    - "Duru sınavdan çıkınca Fıstık'ı karşısında bulur; 'It doesn't matter' yerine 'It mattered. We did it.'"
+    - "Ece sınav sonrası planı yapmaz; ilk kez 'Bakalım ne olacak' der."
+    - "Selin rutinini bozar: gece yarısı cips."
+    - "Elif: 'Eylülde Ece'nin kapısına bir davetiyeyle gelmiştim.'"
+    - "Kapanış (Kordon, gün batımı): Ece sınıf grubuna yeni bir davetiye atar — yaz partisi. Bu kez herkes saniyesinde cevap verir; ilk cevap Bora'dan: 'I'd love to!' (Ü1 G1'deki üç noktanın yankısı)."
+  rules: ["LGS sonuçları gösterilmez (kimse başarısızlıkla etiketlenmez)", "duygusal ama komik; veda değil, yeni başlangıç", "lise ayrılığı hüzünlü ama umutlu: 'farklı okullar, aynı grup'"]
+
+open_threads_map:   # world.yaml open_threads → kapanacağı ünite
+  OT1: 3
+  OT2: 10
+  OT4: 4
+  OT5: 4
+  OT6: 4

@@ -1,0 +1,307 @@
+schema_version: 1
+program: lgs
+unit: 4
+day: 3
+status: draft
+title: "Depodaki ses"
+est_minutes: 10
+characters: [Ece, Sevim Hanım, Genel merkez sekreteri, Hasan Bey, Aydın Bey, Selin, Bora]
+new_items: [U4-002, U4-012, U4-017, U4-020, U4-024, U4-042]
+
+story:
+  - id: s01
+    text: "Ertesi sabah, Bursa. Ece daha kahvaltısını bitirmeden Sevim Hanım'ı aradı. Sevim Hanım her zamanki gibi nefes almadan konuşuyordu."
+  - id: s02
+    text: "Sevim Hanım: \"<en>Good morning, Ece dear! My shop is part of a small chain, you know, so our head office must say yes. Call Mr Aydın there. He's on {U4-017|extension} two-one-four. Bye-bye!</en>\""
+  - id: s03
+    text: "Sevim Hanım o kadar hızlı konuşmuştu ki Ece'nin üç renkli kalemi yetişememişti. Defterde koca harflerle şu yazıyordu: \"<en>Head office. Mr Aydın. {U4-017|Ext.} 14.</en>\" Baştaki 2 havada kalmıştı."
+  - id: s04
+    text: "Ece genel merkezin numarasını aradı. Hattın öbür ucundan genel merkezin {U4-042|secretary}'si, çok kibar bir sesle konuştu: \"<en>Good morning, head office. {U4-020|How can I help you}?</en>\""
+  - id: s05
+    text: "Ece en profesyonel menajer sesini takındı: \"<en>Good morning. {U4-031|This is} Ece, the manager of a young band. {U4-024|I'm calling about} a concert at your shop across from the park.</en>\""
+  - id: s06
+    text: "{U4-042|Secretary}: \"<en>A concert? How nice! Who would you like to speak to?</en>\" Ece defterine baktı: \"<en>{U4-026|May I speak to} Mr Aydın, please? {U4-017|Extension} fourteen.</en>\""
+  - id: s07
+    text: "{U4-042|Secretary}: \"<en>Of course. {U4-007|Hold on}, please. I'll {U4-012|put you through}.</en>\" Bir tık sesi geldi, ardından aynı piyano parçası üç kez başa döndü. Ece: \"<en>This music is so {U2-030|annoying}…</en>\""
+  - id: s08
+    text: "Sonunda arkada kutu sesleri, bir de el arabasının gıcırtısıyla derin ve sakin bir erkek sesi duyuldu: \"<en>Hello, storeroom. Hasan speaking. {U4-020|How can I help you}?</en>\""
+  - id: s09
+    text: "Ece \"<en>storeroom</en>\" kelimesini duymadı bile. Defterini açtı ve başladı: \"<en>Good morning, Mr Aydın! {U4-024|I'm calling to} ask for your permission. Our band wants to play at your shop on the last Saturday of the holiday!</en>\""
+  - id: s10
+    text: "Ece tam dört dakika konuştu: şarkılar, saatler, sandalyeler, Bora'nın henüz olmayan davulu, Elif'in sesi, Duru'nun gitarı. Hattın öbür ucundaki adam onu hiç kesmedi; arada yalnızca \"<en>Hmm.</en>\" ve \"<en>Very nice.</en>\" dedi."
+  - id: s11
+    text: "Sonunda adam nazikçe öksürdü: \"<en>It all sounds wonderful. But {U4-023|I'm afraid} I'm not Mr Aydın. I'm Hasan. I work in the storeroom. This is {U4-017|extension} fourteen. Mr Aydın is on two-one-four.</en>\""
+  - id: s12
+    text: "Ece'nin yanakları alev alev yandı: \"<en>Oh no! I'm so sorry! I talked for four minutes!</en>\" Hasan Bey güldü: \"<en>No problem. You're my first {U4-002|caller} this week. Usually only the boxes talk to me. I'm a {U1-085|patient} listener.</en>\""
+  - id: s13
+    text: "Ece: \"<en>You're so kind! You know what? You'll get the first {U1-012|invitation} to our concert!</en>\" Hasan Bey: \"<en>Really? Thank you! Now, let me {U4-012|put you through} to the right {U4-017|extension}.</en>\""
+  - id: s14
+    text: "Yine bir tık. Bu kez telefonu bambaşka bir ses aldı: \"<en>Aydın speaking. {U4-020|How can I help you}?</en>\""
+  - id: s15
+    text: "Ece bu sefer kısa ve net konuştu: \"<en>Good morning, Mr Aydın. This is Ece. {U4-024|I'm calling about} the concert at the shop across from the park. Sevim Hanım says we need your permission.</en>\""
+  - id: s16
+    text: "Aydın Bey: \"<en>Ah, yes! Sevim told me about your band. It's fine with me. On Saturday evening, the stage is yours!</en>\" Ece sandalyesinden fırladı ve odanın ortasında küçük bir zafer dansı yaptı."
+  - id: s17
+    text: "Aydın Bey: \"<en>And thank you for the {U4-002|call}. Our {U4-042|secretary} will send Sevim Hanım an email today.</en>\""
+  - id: s18
+    text: "Ece telefonu bırakır bırakmaz sınıf grubuna yazdı: \"<en>GREAT NEWS: head office says YES! Also, the storeroom says hi. 📦</en>\""
+  - id: s19
+    text: "Selin: \"<en>Wait. The {U4-042|secretary} {U4-012|put you through} to the storeroom?</en>\" Ece: \"<en>Yes, but it was my mistake. I asked for the wrong {U4-017|extension}. But Hasan Bey is coming to our concert now!</en>\""
+  - id: s20
+    text: "Selin, defterine yeni bir kural ekledi: \"<en>Rule 1: Always write the full number. Rule 2: Be nice to everyone on the phone. You never know!</en>\""
+  - id: s21
+    text: "En son Bora yazdı: \"<en>Ece, next time let ME make the {U4-002|call}. I never make mistakes with numbers. Never. 😎</en>\""
+
+scene:
+  - id: c01
+    speaker: Sekreter
+    text: "<en>Good morning, head office. How can I help you?</en>"
+  - id: c02
+    speaker: Ece
+    text: "<en>Hello, this is Ece. I'm calling about the concert. Can I speak to Mr Aydın? Extension fourteen.</en>"
+  - id: c03
+    speaker: Sekreter
+    text: "<en>Hold on, please. I'll put you through.</en>"
+  - id: c04
+    speaker: Hasan Bey
+    text: "<en>I'm afraid this is the storeroom. You're my first caller this week! Mr Aydın is on extension two-one-four.</en>"
+
+steps:
+  - item: U4-042
+    sezdir:
+      id: u4d03-042-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede telefonu \"Good morning, head office\" diye karşılayan \"secretary\" kimdi?"
+      options: ["sekreter", "müdür", "depo görevlisi", "garson"]
+      answer: 0
+    kullan:
+      id: u4d03-042-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Mr Demir is in a meeting, so his ________ answers the phone and takes messages for him.</en>"
+      options: ["secretary", "caller", "drummer", "neighbour"]
+      answer: 0
+      explain: "Bir yöneticinin telefonlarını açıp mesajlarını alan kişi secretary'dir; caller ise arayan kişidir."
+    sina:
+      id: u4d03-042-s
+      type: trait_match
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who is a secretary?</en>"
+      stem: "<en>Ayşe: I work in an office. I answer the phone and put callers through to the manager.\nMert: I work in a restaurant kitchen. I cook all day.\nCan: I teach karate to children on Saturdays.\nZeynep: I work with animals at a shelter.</en>"
+      options: ["Ayşe", "Mert", "Can", "Zeynep"]
+      answer: 0
+      explain: "Ofiste telefonu açıp arayanları yöneticiye aktaran kişi sekreterdir."
+  - item: U4-020
+    sezdir:
+      id: u4d03-020-z
+      type: meaning
+      context: s04
+      prompt: "Sekreterin \"How can I help you?\" sorusu ne anlama geliyordu?"
+      options: ["Size nasıl yardımcı olabilirim?", "Kiminle görüşmek istiyorsunuz?", "Nasılsınız?", "Neden bu kadar geç aradınız?"]
+      answer: 0
+    kullan:
+      id: u4d03-020-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Receptionist: Good afternoon, City Hotel. How can I ________ you?\nMan: I'd like some information about your rooms.</en>"
+      options: ["help", "speak", "take", "meet"]
+      answer: 0
+      explain: "Kurum telefonunu açan kişi kalıp olarak \"How can I help you?\" der."
+    sina:
+      id: u4d03-020-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>[The phone rings at the City Museum. Selin answers it.]\nSelin: ________\nWoman: Hello. I'd like some information about your opening hours, please.</en>"
+      options: ["Good morning, City Museum. How can I help you?", "I'm afraid she isn't available at the moment.", "Thank you for the information. Bye!", "Hello, I'm calling about a ticket."]
+      answer: 0
+      explain: "Kurum adına telefonu açan kişi önce kurumun adını söyler, sonra nasıl yardım edebileceğini sorar; arayan da isteğini söyleyerek cevap veriyor."
+  - item: U4-024
+    sezdir:
+      id: u4d03-024-z
+      type: meaning
+      context: s05
+      prompt: "Ece'nin \"I'm calling about a concert\" sözü ne anlama geliyordu?"
+      options: ["Bir konser hakkında arıyorum.", "Bir konseri iptal ediyorum.", "Bir konsere geliyorum.", "Bir konserde çalıyorum."]
+      answer: 0
+    kullan:
+      id: u4d03-024-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Hello, this is Kaan. I'm calling ________ ask about the basketball match tomorrow.</en>"
+      options: ["to", "about", "for", "at"]
+      answer: 0
+      explain: "Arama nedenini fiille söylerken I'm calling to + fiil, isimle söylerken I'm calling about + isim kullanılır."
+    sina:
+      id: u4d03-024-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the conversation, which of the following is TRUE?</en>"
+      stem: "<en>Elif: Hi, Duru! It's Elif. How are you? Is Fıstık OK?\nDuru: We're fine. Fıstık is sleeping on my feet.\nElif: Ha! Listen, I'm calling to ask about the song list. Which song do we play first on Saturday?</en>"
+      options: ["Elif wants to learn the first song for Saturday.", "Fıstık is ill, so Elif is worried.", "Duru is calling Elif about the song list.", "Elif is calling to invite Duru to a party."]
+      answer: 0
+      explain: "Arama nedeni \"I'm calling to …\" cümlesinde; Fıstık'ı sorması yalnızca hal hatır sorma, arayan da Duru değil Elif."
+  - item: U4-012
+    sezdir:
+      id: u4d03-012-z
+      type: meaning
+      context: s07
+      prompt: "Sekreterin \"I'll put you through\" sözü ne anlama geliyordu?"
+      options: ["Sizi (istediğiniz kişiye) bağlıyorum.", "Sizi sonra arıyorum.", "Telefonu kapatıyorum.", "Mesajınızı yazıyorum."]
+      answer: 0
+    kullan:
+      id: u4d03-012-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Secretary: Mrs Kaya is on extension 305. Hold on, please. I'll put you ________.</en>"
+      options: ["through", "on", "off", "back"]
+      answer: 0
+      explain: "Arayanı başka bir hatta, istediği kişiye aktarmak put someone through ile anlatılır."
+    sina:
+      id: u4d03-012-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Caller: Good morning. Could I speak to the manager, please?\nSecretary: ________\nCaller: Thank you very much.</en>"
+      options: ["Of course. Hold on, I'll put you through.", "No, you can't. Goodbye!", "I'm calling about my order.", "Can I speak to the manager too?"]
+      answer: 0
+      explain: "Arayan teşekkür ediyor: sekreter isteğini kabul edip onu müdüre aktarmış olmalı."
+  - item: U4-017
+    sezdir:
+      id: u4d03-017-z
+      type: meaning
+      context: s02
+      prompt: "Sevim Hanım'ın \"He's on extension two-one-four\" sözünde \"extension\" ne anlama geliyordu?"
+      options: ["dahili numara", "ek süre, uzatma", "posta kodu", "şifre"]
+      answer: 0
+      explain: "Okulda extension \"ek süre\" diye öğrenilebilir; ama telefonda bir sayıyla birlikte geçerse dahili hattır."
+    kullan:
+      id: u4d03-017-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Call the school on 0232 444 55 66 and ask for ________ 12. That's the teachers' room.</en>"
+      options: ["extension", "secretary", "caller", "invitation"]
+      answer: 0
+      explain: "Bir kurumun ana numarasından sonra istenen iç hat numarası extension ile söylenir."
+    sina:
+      id: u4d03-017-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the list, which of the following is TRUE?</en>"
+      stem: "<en>CITY SPORTS CENTRE – 0232 300 40 50\nExtension 101: Reception\nExtension 102: Swimming pool\nExtension 103: Basketball courts\nExtension 104: Café</en>"
+      options: ["To ask about swimming lessons, you should ask for extension 102.", "The café is on extension 101.", "The basketball courts don't have an extension.", "The sports centre has five extensions."]
+      answer: 0
+      explain: "Yüzme havuzu listede 102 numaralı dahili hatta; diğer şıklar listeyle çelişiyor."
+  - item: U4-002
+    sezdir:
+      id: u4d03-002-z
+      type: meaning
+      context: s12
+      prompt: "Hasan Bey'in \"You're my first caller this week\" sözünde \"caller\" ne anlama geliyordu?"
+      options: ["arayan kişi", "komşu", "patron", "şarkıcı"]
+      answer: 0
+      explain: "call (aramak) + -er = caller: telefonla arayan kişi."
+    kullan:
+      id: u4d03-002-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Radio presenter: We have a ________ on the line. Hello, who's this?\nBora: Hi! It's Bora from İzmir!</en>"
+      options: ["caller", "secretary", "extension", "member"]
+      answer: 0
+      explain: "Programa telefonla bağlanan kişi caller'dır."
+    sina:
+      id: u4d03-002-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who is the caller?</en>"
+      stem: "<en>Woman: Good afternoon, City Library. How can I help you?\nMan: Hello, this is Murat Bey. I'm calling about a book for my students.\nWoman: Of course. Hold on, please.</en>"
+      options: ["Murat Bey", "the woman", "Murat Bey's students", "the woman's friend"]
+      answer: 0
+      explain: "Telefonu açan kurum adını söyler; \"This is … I'm calling about …\" diyen kişi arayandır."
+
+review:
+  - id: u4d03-r01
+    type: gap_fill
+    item: U4-016
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>I called the cake shop three times, but the line was ________. Everybody wants Sevim Hanım's cakes!</en>"
+    options: ["engaged", "available", "patient", "awful"]
+    answer: 0
+  - id: u4d03-r02
+    type: dialogue_complete
+    item: U4-014
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Woman: Hello, Dr Kaya's office.\nKaan: Hello. Could I speak to Dr Kaya, please?\nWoman: ________ She's with a patient. Can I take a message?</en>"
+    options: ["I'm sorry, she isn't available at the moment.", "Of course. Hold on, I'll get her.", "Speaking!", "Yes, she's free now."]
+    answer: 0
+    explain: "Kadın ardından Dr Kaya'nın hastayla olduğunu söyleyip mesaj almayı öneriyor: doktor şu an müsait değil."
+  - id: u4d03-r03
+    type: dialogue_complete
+    item: U4-023
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Ece: Hello, this is Ece. Could I speak to Selin, please?\nSelin's mum: ________ She's in Urla with her grandparents.\nEce: Oh, OK. I'll call her mobile, then.</en>"
+    options: ["I'm afraid she isn't here at the moment.", "Speaking!", "Hang on a minute. I'll get her.", "Yes, this is Selin."]
+    answer: 0
+    explain: "Selin evde değil; annesi bu kötü haberi kibarca \"I'm afraid …\" ile verir."
+  - id: u4d03-r04
+    type: dialogue_complete
+    item: U4-009
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Duru's mum: Hello?\nBora: Hi, this is Bora. Is Duru there?\nDuru's mum: Sorry, Bora, she's out with Fıstık. ________\nBora: Yes, please. Tell her to bring her guitar on Saturday.</en>"
+    options: ["Would you like to leave a message?", "Can you take a message for me?", "Who's calling, please?", "I'll take that!"]
+    answer: 0
+    explain: "Telefonu açan kişi arayana mesaj bırakmak isteyip istemediğini sorar; \"Can you take a message for me?\" ise arayanın sözüdür."
+  - id: u4d03-r05
+    type: gap_fill
+    item: U4-010
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>A: Did anybody call me?\nB: Yes, your teacher. Look at the ________ next to the phone. I wrote everything down.</en>"
+    options: ["memo", "memory", "recipe", "invitation"]
+    answer: 0
+  - id: u4d03-r06
+    type: gap_fill
+    item: U4-001
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>I don't know the answer now, but I'll get back ________ you tomorrow.</en>"
+    options: ["to", "at", "on", "from"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U4-017]
+    text: "extension okul listelerinde \"ek süre, uzatma\" diye geçebilir. Telefonda bir sayıyla birlikte duyarsan dahili hattır: \"Can you put me through to extension 214?\" Ece'nin başına gelen de buydu: 214 yerine 14!"
+  - type: mini_dilbilgisi
+    refs: [U4-024]
+    text: "Arama nedenini iki yolla söyleyebilirsin: I'm calling about + isim (I'm calling about the concert) ya da I'm calling to + fiil (I'm calling to ask for permission). \"I'm calling about ask\" olmaz."
+  - type: mini_dilbilgisi
+    refs: [U4-012, U4-001]
+    text: "Telefon fiillerinde zamir iki parçanın ARASINA girer: put you through, call me back. \"I'll put through you\" ya da \"call back me\" yanlış olur."
+  - type: lgs_taktigi
+    refs: [U4-024, U4-002]
+    text: "\"Why is X calling?\" sorusunda selamlaşmayı ve hal hatırı atla: amaç çoğu zaman \"I'm calling to … / I'm calling about …\" cümlesindedir. Arayan (caller) da \"This is …\" diye kendini tanıtan kişidir."
+
+coach:
+  start: "Bugün Ece pastanenin bağlı olduğu genel merkezi arıyor. Doğru kişiye ulaşabilecek mi, yoksa bambaşka bir kapı mı açılacak? 🏢"
+  end_good: "Harika! Ece bir kez yanlış kapıya düştü, sen hiç düşmedin. Yarın Bora bir numarayla başını derde sokacak 📞"
+  end_mixed: "İyi iş! {weak} biraz karıştı ama Hasan Bey kadar sabırlıyız. Yarın bir kez daha bakarız, bu kez doğru hatta! 📦"
+
+notifications:
+  morning: "Ece bugün genel merkezi arıyor. Peki telefonun öbür ucundaki kim? 🏢"
+  evening: "Yanlış hatta dört dakikalık bir konuşma ve konserin ilk konuğu! 📦"
+  review: "Telefonda \"extension 214\" duydun. Bu 214 ne olabilir? 🤔"
+
+editor:
+  z07: {U4-002: BEKLIYOR, U4-012: BEKLIYOR, U4-017: BEKLIYOR, U4-020: BEKLIYOR, U4-024: BEKLIYOR, U4-042: BEKLIYOR}

@@ -1,0 +1,2177 @@
+schema_version: 1
+unit: 5
+title: The Internet
+status: taslak
+summary_tr: 'Ünite, internetin günlük dilini ve internet alışkanlıklarını konuşmayı öğretir: hesap açma ve giriş (sign up, log in / log out, password), bilgisayar eylemleri (click, type, download / upload,
+  attach, delete), sosyal medya (post, comment, follower, notification, social networking sites), internet güvenliği (personal information, stranger, avoid, obey the rules) ve internet alışveriş bilgileri
+  (discount, refundable, expiry date). MEB programındaki işlev "kabul etme, reddetme ve bahane sunma"dır (Would you like to join our WhatsApp group? / Why don''t we chat online at two? / I''m sorry, but
+  I can''t. My internet is broken.); bu işlev Ü1''in tekrarıdır, yenisi açıklama isteme ve verme kalıplarıdır (What do you mean? Do you mean the Internet connection? / I mean … / In other words …). Dilbilgisi
+  yükü hafiftir: alışkanlık bildiren Simple Present ve sıklık ifadeleri (How often / How many hours a day … ? / per week), anket–grafik dili (percent, most, average), internet fiillerinin edatları (log
+  in to, comment on, search for) ve güvenlik kurallarında emir kipi. LGS''de bu ünite en çok internet kullanımı grafiği/anketi, internet güvenliği ya da alışkanlık metni, internet reklamı / bilet / alışveriş
+  ekranı çıkarımı ve kabul–red diyaloğu tamamlama olarak gelir.'
+curriculum:
+  outcomes:
+  - code: E8.5.L1
+    text_tr: 'Dinleme: Sözlü metinlerin ana fikrini anlar.'
+  - code: E8.5.L2
+    text_tr: 'Dinleme: İlgili ifade ve kelimeleri anlar.'
+  - code: E8.5.SI1
+    text_tr: 'Karşılıklı konuşma: İnternet alışkanlıkları hakkında konuşur.'
+  - code: E8.5.SI2
+    text_tr: 'Karşılıklı konuşma: İnternet hakkında bilgi alışverişinde bulunur.'
+  - code: E8.5.SP1
+    text_tr: 'Sözlü anlatım: Bir dizi kalıp ve basit cümleyle bahane sunar, teklifleri kabul eder ve reddeder.'
+  - code: E8.5.R1
+    text_tr: 'Okuma: İnternet alışkanlıklarıyla ilgili kısa ve basit metinlerde ana fikri belirler. (LGS''de doğrudan ölçülen kazanım)'
+  - code: E8.5.R2
+    text_tr: 'Okuma: Çeşitli metinlerde internetle ilgili belirli bilgiyi bulur. (LGS''de doğrudan ölçülen kazanım)'
+  - code: E8.5.W1
+    text_tr: 'Yazma: İnternet alışkanlıklarını anlatan basit bir paragraf yazar.'
+  functions:
+  - id: F1
+    name_tr: Teklif ve öneriyi kabul etmek, reddetmek, bahane sunmak (Accepting and refusing / Making excuses)
+    exponents:
+    - Would you like to join our WhatsApp group?
+    - Why don't we chat online at two o'clock? I want to tell you something important.
+    - I'm visiting the museum online this afternoon. Would you like to join us?
+    - Do you want to watch the live stream with us tonight?
+    responses:
+    - Yes, sure. / That sounds great.
+    - No, thanks. I'm really busy.
+    - I'm sorry, but I can't. My internet is broken.
+    - Thanks for asking, but I'm afraid I can't.
+    - That's very kind of you, but I'm busy.
+    - No, thanks. I don't really like using social media accounts.
+    items:
+    - U5-059
+    - U5-056
+    - U5-015
+    - U5-020
+    - U5-035
+    lgs_weight: yüksek
+    note_tr: 'Programın tek açık işlevi (W1). Davet kalıpları ve ''Sorry, I can''t'' Ü1''de öğretildi (U1-026, U1-021, U1-022); bu ünitede yeni olan öneri kalıbı Why don''t we …? ve kibar red girişleridir.
+      Bahanenin içeriği internettir: bağlantı yok, internet bozuk, bilgisayar çalışmıyor.'
+  - id: F2
+    name_tr: Açıklama istemek ve vermek; anlamadığını söylemek (Asking for and giving clarification)
+    exponents:
+    - What do you mean?
+    - Do you mean the Internet connection?
+    - What do you mean by that exactly?
+    - What does 'SNS' stand for?
+    - Can you explain what it means, please?
+    - Sorry, I can't follow you.
+    responses:
+    - I mean, is your PC online or offline?
+    - What I mean is that there isn't a connection sign on the screen.
+    - In other words, you can't connect to the Internet.
+    - It stands for 'social networking site'.
+    - Oh, I got it. Thanks!
+    items:
+    - U5-057
+    - U5-054
+    - U5-058
+    - U5-055
+    - U5-020
+    - U5-021
+    - U5-026
+    lgs_weight: yüksek
+    note_tr: Programın Useful Language satırı (What do you mean? Do you mean the Internet connection? — Yes. It isn't working properly.) bu işlevi bahane diyaloğunun içine yerleştirir. Kaynak listeler (P,
+      B, C) I mean, In other words, What I mean is …, I can't follow you, I got it kalıplarını ekler.
+  - id: F3
+    name_tr: İnternet alışkanlıkları hakkında soru sormak ve anlatmak (Talking about Internet habits)
+    exponents:
+    - What do you use the Internet for?
+    - How often do you use the Internet?
+    - How many hours a day do you spend on social media?
+    - Which device do you usually prefer when you use the Internet?
+    - Who uses the Internet in your family mostly?
+    - How do you connect to the Internet?
+    responses:
+    - I often use the Internet for doing research and chatting with friends.
+    - Every day. About two hours a day.
+    - I usually use my mum's tablet.
+    - My grandfather! He reads online news all day.
+    - By phone and tablet.
+    items:
+    - U5-047
+    - U5-040
+    - U5-045
+    - U5-044
+    - U5-038
+    - U5-051
+    - U5-036
+    lgs_weight: yüksek
+    note_tr: Kazanımların çoğu (E8.5.SI1, R1, W1) alışkanlık anlatımıdır. Ders kitabındaki 'Are you an Internet addict?' testi ve internet kullanım grafikleri bu işlevi okuma sorusuna çevirir.
+  - id: F4
+    name_tr: 'İnternet hakkında bilgi alışverişi: hesap, paylaşım ve güvenlik (Exchanging information about the Internet)'
+    exponents:
+    - You must create an account to log in.
+    - Don't share your personal information and password.
+    - Before downloading a file, check it with an adult.
+    - Refuse unknown people's friend requests.
+    - Be careful with what you share on the Internet.
+    - Avoid using dangerous sites.
+    responses:
+    - OK, I'll change my password right now.
+    - Good idea. I never accept friend requests from strangers.
+    - Thanks, I didn't know that.
+    items:
+    - U5-002
+    - U5-006
+    - U5-009
+    - U5-010
+    - U5-013
+    - U5-005
+    - U5-003
+    - U5-008
+    - U5-011
+    - U5-019
+    - U5-034
+    lgs_weight: yüksek
+    note_tr: Ders kitabında (W2) güvenlik kuralları doğru/yanlış eşleştirme olarak işlenir (Share your address with strangers. ✗ / Keep your password secret except from your family members. ✓). LGS'de 'Which
+      of the following is NOT a piece of advice in the text?' tipine çok uygundur.
+  - id: F5
+    name_tr: İnternetten alışveriş ve bilet ekranlarını anlamak (Online shopping)
+    exponents:
+    - This ticket is non-refundable.
+    - Get a 20 percent discount on all products this week!
+    - Please enter the cardholder's name and the expiry date.
+    - Click the button to complete your order.
+    responses:
+    - Can I get my money back if I don't like it?
+    - Is it refundable?
+    - OK, I'll ask my mum to enter her card details.
+    items:
+    - U5-051
+    - U5-049
+    - U5-052
+    - U5-050
+    - U5-017
+    - U5-044
+    lgs_weight: orta
+    note_tr: Kaynak P ve B'deki bilet, indirim ve kart bilgileri bir internet alışveriş ekranı sahnesi taşır. Tek yön / gidiş-dönüş bilet ayrıntısı Ü7 Tourism'e bırakıldı (Ü4 kararıyla tutarlı).
+sources:
+- code: P
+  name: 'Kullanıcının yapıştırdığı web sayfası (site belirtilmedi): kelime listesi (82) + kalıp cümleler (75) + ''sınavlarda çıkmış 5. ünite kelimeleri'' tablosu (21 kelime, 2013–2020 TEOG/LGS)'
+  rows: 157
+- code: B
+  name: 'ingilizceciyiz.com — 8. Sınıf 5. Ünite Kelimeleri (PDF, 2021): https://www.ingilizceciyiz.com/wp-content/uploads/2021/08/8.-sinif-5.-unite-kelimeleri-by-ingilizceciyiz.com_.pdf'
+  rows: 171
+- code: C
+  name: 'ingilizcebankasi.com — 8. sınıflar Beşinci Ünite THE INTERNET Kelimeleri (eski kitap tabanlı; donanım adları çok): https://ingilizcebankasi.com/8-siniflar-besinci-unite-the-internet-kelimeleri/'
+  rows: 63
+- code: W1
+  name: 'MEB İngilizce Öğretim Programı (2018), 8. sınıf Ünite 5: işlev, Useful Language, kazanımlar, kelime listesi (okul sitesindeki program PDF''i, merkezyesilovaiho.meb.k12.tr)'
+  rows: 31
+- code: W2
+  name: MEB Yayınları 8. sınıf İngilizce ders kitabı Ünite 5 (egitimsistem.com cevap sayfası üzerinden; seçilmiş sözcük ve kalıplar)
+  rows: 82
+tasnif:
+  teaching_units: 61
+  counts:
+    havuz_tekil_satir: 231
+    havuz_BILINEN: 61
+    havuz_TANIMA: 58
+    havuz_ONCEKI_UNITE: 53
+    havuz_CEKIRDEK: 43
+    havuz_KALIP_ISLEV: 9
+    havuz_TUZAK: 7
+    birim_CEKIRDEK: 43
+    birim_KALIP_ISLEV: 9
+    birim_TUZAK: 7
+    oncelik_1: 59
+    oncelik_2: 0
+    cikmis_kelime_tasiyan_birim: 11
+  items_file: lgs-pilot/content/unit_05_items.yaml
+  rules_tr:
+  - 'Satır değil öğretim birimi sayılır: aileler (log in / sign in / log on; log out / log off; sign up / register; attach / attachment / file; addict / addiction; browse / browser / web browser; influencer
+    / influential; search / search engine; usage / user) ve aynı işi gören diyalog varyantları (alışkanlık soruları tek birim, 14 ham soru) birleşir. download ve upload ayrı birim, karşıt çift olarak birlikte
+    öğretilir.'
+  - Öncelik 1 = en az iki bağımsız kaynak (P, B, C, W1, W2) ya da KALIP / İŞLEV. Bu ünitede 59 birimin hepsi öncelik 1.
+  - 'Çıkmış kelime bilgisi (P tablosu) öncelikte ek işarettir: items dosyasında exam_hits alanı, çalışma kitabında ÇIKMIŞ sütunu. Çıkmış ama A1 (buy, check, computer, send) ya da önceki ünitede öğretilmiş
+    (chat, share, join, keep in touch, adult) kelimeler sayılmaz ama hikâyede ve LGS sorularında mutlaka geçer.'
+  - 'Sıkılaştırma: ilk aday 64 birimdi. one-way ticket / round trip TANIMA (bilet ayrıntıları Ü7, Ü4 kararıyla tutarlı); settings ve Let me show you TANIMA (düşük sınav değeri); widespread / worldwide ve
+    follower / subscriber birer birim. Sonuç 59 (Ü3: 60, Ü4: 53).'
+  - MEB programının Ünite 5 kelime listesindeki 21 sözcüğün 19'u birimlerde; confirm (U4-037) ve reply (U1-020) önceki ünitede öğretildi, connection yalnız 'connection sign' olarak (connect/connection U4-003).
+  - Eski kitabın donanım sahnesi (hard disk drive, processor, cable modem, wireless, telephone line, software; C listesi) TANIMA.
+  excluded_examples:
+    BILINEN:
+    - computer
+    - smartphone
+    - website
+    - buy
+    - check
+    - send
+    - choose
+    - use
+    - ticket
+    - price
+    - create
+    - find
+    - look for
+    - explain
+    - believe
+    - hope
+    - possible
+    - impossible
+    - interesting
+    - homework
+    - copy
+    - everywhere
+    - check email
+    - play online games
+    - foreign language
+    - Great!
+    - No problem!
+    - See you.
+    - Yes, sure.
+    - You, too.
+    - Where were you?
+    - How are you doing?
+    - Bye for now.
+    - I want to tell you something important.
+    - unfortunately
+    TANIMA:
+    - settings
+    - Let me show you.
+    - That's all.
+    - Lots of love.
+    - one-way ticket / round trip
+    - flight ticket
+    - departure time
+    - ticket price
+    - brand
+    - etiquette
+    - insert
+    - recognition
+    - utilitarian
+    - free offer
+    - publish
+    - via
+    - certainly
+    - definitely
+    - exactly
+    - I haven't seen you for ages.
+    - never mind
+    - desktop
+    - laptop
+    - hard disk drive
+    - processor
+    - software
+    - wireless
+    - cable modem
+    - online identity
+    - pretend
+    - online course
+    - update information
+    - do online banking
+    - affect
+    - effect
+    - improve
+    - main idea
+    - seen (kaynak hatası)
+    ONCEKI_UNITE:
+    - chat (U1-029) / chat online (U2-055) / make live chats
+    - share (U1-043) / share on social media (U2-058)
+    - join (U1-015)
+    - keep in touch (U4-008)
+    - connect / connection / internet connection (U4-003)
+    - device (U4-048)
+    - confirm (U4-037)
+    - reply (U1-020)
+    - adult (U2-072)
+    - surf the internet (U2-056)
+    - pay attention (U2-041)
+    - mostly (U2-046)
+    - pay the bill (U4-034)
+    - complain / complainer (U4-040)
+    - product (U4-041)
+    - invite (U1-013)
+    - refuse (U1-019)
+    - make an excuse (U1-007)
+    - Would you like to …? (U1-026)
+    - That sounds great. (U1-022)
+    - I'm sorry, but I can't. (U1-021)
+    - busy (U1-004)
+    - as soon as possible (U1-094)
+    - wait a second (U4-007 hold on)
+    - follow the news / online news (U2-054)
+    - opinion / What do you think about …? (U2-005)
+    - suggest (U2-080)
+    - advice (U1-035)
+    - spend time (U1-044)
+    - reliable source (U1-059 reliable)
+    - all / most / half / few (U2-089)
+    - the least (U2-090)
+    - face to face (U4-046)
+    - questionnaire (U2-003 survey)
+  exam_record:
+    kaynak: Ders kitabı listeleri + çıkmış kelime tablosu (2013–2020 TEOG, 2018–2020 LGS); sayı = toplam/LGS
+    ogretim_birimlerinde:
+    - access (2/0 LGS)
+    - broken (1/1 LGS)
+    - online / offline (connection sign) (6/1 LGS)
+    - search for / search engine (3/0 LGS)
+    - work properly (properly) (1/1 LGS)
+    - comment (on) / make a comment (1/1 LGS)
+    - make new friends (3/0 LGS)
+    - social networking sites (3/1 LGS)
+    - addict (addiction / addicted) (1/1 LGS)
+    - do research (research) (1/0 LGS)
+    - habit (1/1 LGS)
+    - information (5/2 LGS)
+    - online shopping (2/1 LGS)
+    bilinen_ama_sinavda_sik:
+    - send (2/1 LGS)
+    - buy (1/1 LGS)
+    - check (1/1 LGS)
+    - computer (1/1 LGS)
+    not: bilinen_ama_sinavda_sik kelimeler öğretim birimi sayılmaz ama hikâyede ve soru köklerinde bilinçli olarak sık kullanılır.
+themes:
+- name: Hesap, giriş ve güvenlik
+  items:
+  - U5-001
+  - U5-002
+  - U5-003
+  - U5-004
+  - U5-005
+  - U5-006
+  - U5-007
+  - U5-008
+  - U5-009
+  - U5-010
+  - U5-011
+  - U5-012
+  - U5-013
+  note_tr: Hesap açmaktan çıkış yapmaya ve güvenlik kurallarına kadar. Hikâyenin omurgası (Bora'nın ele geçirilen hesabı) bu grubu taşır. sign in / sign up ayrımı ve stranger'ın anlamı tuzak kartı.
+- name: Bilgisayar ve bağlantı
+  items:
+  - U5-014
+  - U5-015
+  - U5-016
+  - U5-017
+  - U5-018
+  - U5-019
+  - U5-020
+  - U5-021
+  - U5-022
+  - U5-023
+  - U5-024
+  - U5-025
+  - U5-026
+  note_tr: Ekranda yapılan eylemler ve bağlantı sorunları. Programın bahane diyaloğu (My internet is broken. / It isn't working properly. / Is your PC online or offline?) bu grubun sözcükleriyle kurulur.
+- name: Sosyal medya ve paylaşım
+  items:
+  - U5-027
+  - U5-028
+  - U5-029
+  - U5-030
+  - U5-031
+  - U5-032
+  - U5-033
+  - U5-034
+  - U5-035
+  note_tr: 'Paylaşım ve etkileşim dili. Çıkmış kelimeler: social networking sites, make new friends, comment. post''un ''posta'' anlamı tuzak.'
+- name: İnternet alışkanlıkları ve veriler
+  items:
+  - U5-036
+  - U5-037
+  - U5-038
+  - U5-039
+  - U5-040
+  - U5-041
+  - U5-042
+  - U5-043
+  - U5-044
+  - U5-045
+  - U5-046
+  - U5-047
+  - U5-048
+  note_tr: 'Anket, grafik ve okuma metni sözcükleri: kazanımların (SI1, R1, R2, W1) ana malzemesi. information sayılamaz isim tuzağı.'
+- name: İnternetten alışveriş
+  items:
+  - U5-049
+  - U5-050
+  - U5-051
+  - U5-052
+  - U5-060
+  note_tr: Alışveriş ekranı, indirim ilanı, iade koşulu. LGS'de görsel/ilan okuma sorusu olarak gelir.
+- name: Açıklama isteme, kabul ve red
+  items:
+  - U5-053
+  - U5-054
+  - U5-055
+  - U5-056
+  - U5-057
+  - U5-058
+  - U5-059
+  - U5-061
+  note_tr: Programın işlevi (kabul–red–bahane) ve açıklama kalıpları. Ü1 davet kalıplarıyla birlikte diyalog tamamlama sorularının ana malzemesi.
+grammar:
+- id: G1
+  name_tr: 'Öneri ve teklif: Why don''t we …? · Would you like to …? — kabul, red, bahane'
+  form: Why don't we + V1 …? · Would you like to + V1 …? → Sure. / That sounds great. · I'm sorry, but I can't. + bahane · Thanks for asking, but I'm afraid I can't. · That's very kind of you, but …
+  examples:
+  - Why don't we chat online at two o'clock?
+  - Would you like to join our WhatsApp group? — Yes, sure!
+  - I'm sorry, but I can't. My internet is broken.
+  - Thanks for asking, but I'm afraid I can't. I have a lot of homework.
+  explain_tr: 'Why don''t we …? biçim olarak olumsuz sorudur ama anlamı öneridir: ''… yapalım mı?''. Cevap ''Because …'' değil, kabul ya da red olur. Kibar red üç parçalıdır: teşekkür ya da iltifat (Thanks
+    for asking / That''s very kind of you) + but + I''m afraid I can''t / I''m busy + bahane. Bahane çoğunlukla Simple Present ya da Present Continuous ile söylenir (My internet isn''t working. / I''m studying
+    for the exam).'
+  common_errors:
+  - wrong: — Why don't we chat online? — Because I'm busy.
+    right: — Why don't we chat online? — Sorry, I can't. I'm busy.
+    why_tr: Soru gerçek bir 'neden' sorusu değil, öneridir; 'Because' ile cevaplanmaz.
+  - wrong: Why don't we to chat online?
+    right: Why don't we chat online?
+    why_tr: Why don't we'den sonra yalın fiil gelir; 'to' yok.
+  - wrong: Thanks for asking, and I can't.
+    right: Thanks for asking, but I can't.
+    why_tr: 'Teşekkürle reddin arasında zıtlık var: but.'
+  lgs_note: 'Diyalog tamamlamada boşluktan sonra bahane geliyorsa (My internet is broken) boşluğa kibar red girişi gelir; sonra ''Great! See you then.'' geliyorsa kabul. Kabul–red ayrımını soran ''Which
+    one is a refusal?'' tipinde ''Thanks for asking, but…'' tuzaklıdır: teşekkür ettiği hâlde reddeder.'
+  items:
+  - U5-059
+  - U5-056
+  - U5-015
+- id: G2
+  name_tr: 'Açıklama isteme ve verme: mean, stand for, in other words'
+  form: What do you mean (by that)? · Do you mean + isim/cümle? · What does X mean? · What does X stand for? · I mean, … · What I mean is (that) … · In other words, …
+  examples:
+  - — My internet is broken. — What do you mean? Do you mean the Internet connection?
+  - I mean, is your PC online or offline?
+  - What does 'SNS' stand for? — It stands for 'social networking site'.
+  - She never logs out of her account. In other words, anyone can use it.
+  explain_tr: 'Karşıdakinin sözünü anlamadığında What do you mean? sorulur; tahminini kontrol etmek için Do you mean …? Kendi sözünü açarken I mean / What I mean is …; aynı şeyi daha basit söylerken In
+    other words. Bir kısaltmanın açılımı stand for ile sorulur. ''mean'' burada fiildir; Ü1''deki sıfat ''mean'' (cimri, kaba) değildir. Soruda yardımcı fiil does/do olduğu için ''mean'' çekimsiz kalır:
+    What does it mean?'
+  common_errors:
+  - wrong: What does it means?
+    right: What does it mean?
+    why_tr: does'tan sonra fiil yalın kalır.
+  - wrong: What do you mean with that?
+    right: What do you mean by that?
+    why_tr: Kalıptaki edat 'by'dır; Türkçedeki 'onunla' etkisi.
+  - wrong: What is SNS stand for?
+    right: What does SNS stand for?
+    why_tr: stand for fiildir; soru does ile kurulur.
+  lgs_note: 'Altı çizili ''In other words'' ya da ''I mean'' cümlesi bir önceki cümlenin YENİDEN söylenişidir: eş anlam sorusunda doğru şık önceki cümleyle aynı bilgiyi verir, yeni bilgi ekleyen şık elenir.'
+  items:
+  - U5-057
+  - U5-054
+  - U5-058
+  - U5-055
+- id: G3
+  name_tr: 'Alışkanlık bildirme: Simple Present + sıklık ifadeleri (How often / How many hours a day …?)'
+  form: How often do you + V1 …? → every day / twice a week / three times a day · How many hours a day do you spend + on X / V-ing? · I use the Internet for + V-ing / isim · I use it to + V1
+  examples:
+  - How often do you check your notifications? — About ten times a day!
+  - How many hours a day do you spend on social media?
+  - I often use the Internet for doing research and online shopping.
+  - My dad uses the Internet to pay the bills.
+  - I post a video on our channel twice a week.
+  explain_tr: 'Alışkanlık Simple Present ile anlatılır; üçüncü tekil şahısta -s (She checks, He spends). Sıklık sorusu How often, süre sorusu How many hours (a day/a week) ile kurulur. ''a day / a week''
+    = ''günde / haftada'' (per day / per week ile aynı). Amaç için ''for + V-ing ya da isim'' veya ''to + V1'' kullanılır. Sıklık zarflarının yeri (always, usually, often) Ü2''de öğretildi: ana fiilden
+    önce, be''den sonra.'
+  common_errors:
+  - wrong: I use the Internet for do research.
+    right: I use the Internet for doing research. / I use the Internet to do research.
+    why_tr: for'dan sonra fiil -ing alır; yalın fiil için to gerekir.
+  - wrong: How many hours do you spend in the Internet?
+    right: How many hours do you spend on the Internet?
+    why_tr: İnternet için 'on the Internet' (ve 'online'); in değil.
+  - wrong: My sister check her e-mails every day.
+    right: My sister checks her e-mails every day.
+    why_tr: Üçüncü tekil şahısta -s unutulur.
+  lgs_note: Anket metinlerinde 'twice a week', 'three hours a day' gibi ifadeler tabloyla karşılaştırılır; 'once a day' ile 'once a week' ayrımı en sık çeldiricidir.
+  items:
+  - U5-047
+  - U5-040
+  - U5-044
+  - U5-038
+  - U5-045
+- id: G4
+  name_tr: 'Anket ve grafik dili: percent, most / half / few, average, increase'
+  form: X percent of + çoğul isim + çoğul fiil · Most / Half / A few of the students + V1 · The average … is … · The number of … increases / is increasing
+  examples:
+  - Sixty percent of the students use the Internet for chatting.
+  - Most of them spend more than two hours a day online.
+  - The average user checks social media ten times a day.
+  - Internet usage is increasing worldwide.
+  explain_tr: Grafik ve anket cümlelerinde yüzde ve çoğunluk sözcükleri kullanılır. percent tekil yazılır (60 percent; 'percents' denmez). 'X percent of the students' çoğul fiil alır (use), 'X percent of
+    the class' tekil olabilir. most, half, a few, none Ü2'de öğretildi (U2-089); burada internet verisiyle tekrar edilir. average = ortalama; increase = artmak (karşıtı decrease).
+  common_errors:
+  - wrong: Sixty percents of the students …
+    right: Sixty percent of the students …
+    why_tr: percent sayıdan sonra tekil kalır.
+  - wrong: Most of student use the Internet.
+    right: Most of the students use the Internet. / Most students use the Internet.
+    why_tr: most of'tan sonra the + çoğul isim gelir.
+  - wrong: The usage of the Internet are increasing.
+    right: The usage of the Internet is increasing.
+    why_tr: Özne 'usage' tekildir; of the Internet onu değiştirmez.
+  lgs_note: 'Grafik sorularında ''Which of the following is TRUE according to the chart?'' — yüzdeleri sözcüklere çevir: %50 = half, %70–90 = most, %10–20 = a few. Çeldirici, en yüksek ve en düşük değerleri
+    yer değiştirir.'
+  items:
+  - U5-044
+  - U5-037
+  - U5-041
+  - U5-045
+  - U5-048
+- id: G5
+  name_tr: İnternet fiilleri ve edatları
+  form: log in to / log out of · sign up for · click on · comment on · post on · upload to / download from · search for · connect to · subscribe to · attach a file to an e-mail
+  examples:
+  - I can't log in to my account. I forgot my password.
+  - Click on the button and sign up for the course.
+  - Bora commented on Elif's video.
+  - Don't download files from unknown websites.
+  - Search for 'Safer Internet Day' on the search engine.
+  explain_tr: İnternet fiillerinin çoğu sabit bir edatla kullanılır. log in to (giriş yapmak), log out of (çıkış yapmak), comment on (yoruma yazmak), search for (aramak), subscribe to (abone olmak). download
+    from (… -den indirmek) ile upload to (… -e yüklemek) yön bakımından karşıttır. Türkçedeki hâl ekleri birebir çevrilince edat yanlışları çıkar.
+  common_errors:
+  - wrong: I commented his photo.
+    right: I commented on his photo.
+    why_tr: comment fiil olarak 'on' ister.
+  - wrong: I'm searching my phone. (telefonumu arıyorum)
+    right: I'm searching for my phone. / I'm looking for my phone.
+    why_tr: search + nesne = o yerin içini aramak (search my bag = çantamı aramak); aranan şey 'for' ile gelir.
+  - wrong: I uploaded the video from the Internet to my phone.
+    right: I downloaded the video from the Internet to my phone.
+    why_tr: İnternetten cihaza = download; cihazdan internete = upload.
+  lgs_note: 'Gap-fill sorularında edat ya da yön ipucudur: ''from the website'' → download, ''to my channel'' → upload. sign in (giriş) ile sign up (kayıt) şıklarda birlikte gelir.'
+  items:
+  - U5-006
+  - U5-007
+  - U5-012
+  - U5-017
+  - U5-028
+  - U5-019
+  - U5-025
+  - U5-022
+  - U5-030
+  - U5-014
+- id: G6
+  name_tr: 'Güvenlik kuralları: emir kipi, Don''t …, avoid + V-ing, before + V-ing'
+  form: V1 … (Keep your password secret.) · Don't + V1 … · Never + V1 … · Avoid + V-ing · Before + V-ing, … · Be careful with …
+  examples:
+  - Don't share your personal information with strangers.
+  - Never click on a 'free offer' from an unknown account.
+  - Avoid using dangerous sites.
+  - Before downloading a file, check it with an adult.
+  - Log out of your account on public computers.
+  explain_tr: Kural ve tavsiye listeleri emir kipiyle yazılır; olumsuzu Don't ya da Never ile. avoid'den sonra fiil -ing alır (avoid using). before ve after edat olarak kullanıldığında da fiil -ing alır
+    (Before downloading …). obey the rules = kurallara uymak (follow the rules ile aynı, Ü2).
+  common_errors:
+  - wrong: Avoid to use dangerous sites.
+    right: Avoid using dangerous sites.
+    why_tr: avoid + V-ing; to yok.
+  - wrong: Not share your password.
+    right: Don't share your password.
+    why_tr: Olumsuz emir Don't + V1 ile kurulur.
+  - wrong: Before download a file, …
+    right: Before downloading a file, … / Before you download a file, …
+    why_tr: before'dan sonra ya -ing ya da tam cümle gelir.
+  lgs_note: 'Güvenlik metni sorularında ''Which of the following is NOT suggested?'' tipi beklenir: metindeki Don''t cümlesini olumluya çeviren şık (Share your address) doğru cevaptır.'
+  items:
+  - U5-008
+  - U5-003
+  - U5-011
+  - U5-010
+  - U5-013
+  - U5-007
+  - U5-019
+  - U5-009
+expressions:
+- en: Would you like to join our WhatsApp group?
+  tr: WhatsApp grubumuza katılmak ister misin?
+  use: Bir gruba, etkinliğe davet (Ü1 kalıbı, programın ilk satırı).
+  reply:
+  - Yes, sure. / That sounds great.
+  - No, thanks. I'm really busy.
+  register: gündelik
+- en: Why don't we chat online at two o'clock?
+  tr: Saat ikide internetten konuşalım mı?
+  use: Arkadaşa öneri.
+  reply:
+  - Great idea!
+  - I'm sorry, but I can't. My internet is broken.
+  item: U5-059
+  register: gündelik
+- en: I'm sorry, but I can't. My internet is broken.
+  tr: Üzgünüm ama yapamam. İnternetim bozuk.
+  use: Teklifi bahaneyle reddetmek.
+  reply:
+  - What do you mean? Do you mean the Internet connection?
+  item: U5-015
+  register: gündelik
+- en: Thanks for asking, but I'm afraid I can't.
+  tr: Sorduğun için sağ ol ama maalesef gelemem / yapamam.
+  use: Kibar red.
+  reply:
+  - No problem. Maybe next time.
+  item: U5-056
+  register: nötr
+- en: That's very kind of you, but I'm busy.
+  tr: Çok naziksin ama meşgulüm.
+  use: Kibar red; teklif edene teşekkürle.
+  reply:
+  - OK, no problem.
+  item: U5-056
+  register: nötr
+- en: What do you mean?
+  tr: Ne demek istiyorsun?
+  use: Söyleneni anlamadığında.
+  reply:
+  - I mean, my computer isn't working properly.
+  item: U5-057
+  register: gündelik
+- en: Do you mean the Internet connection?
+  tr: İnternet bağlantısını mı kastediyorsun?
+  use: Anladığını kontrol etmek.
+  reply:
+  - Yes. It isn't working properly.
+  - No, I mean my laptop.
+  item: U5-057
+  register: gündelik
+- en: What do you mean by that exactly?
+  tr: Bununla tam olarak ne demek istiyorsun?
+  use: Belirsiz bir sözün açılmasını istemek; biraz daha ciddi.
+  reply:
+  - What I mean is that we need a new password.
+  item: U5-057
+  register: nötr
+- en: I mean, … / What I mean is that …
+  tr: 'Demek istediğim … / Demek istediğim şu: …'
+  use: Kendi sözünü açmak, düzeltmek.
+  item: U5-054
+  register: gündelik
+- en: In other words, …
+  tr: Başka bir deyişle …
+  use: Aynı şeyi daha basit söylemek; yazıda da kullanılır.
+  item: U5-054
+  register: nötr
+- en: What does it mean? / What does 'SNS' stand for?
+  tr: Bu ne anlama geliyor? / 'SNS' neyin kısaltması?
+  use: Bir sözcüğün ya da kısaltmanın anlamını sormak.
+  reply:
+  - It stands for 'social networking site'.
+  item: U5-058
+  register: nötr
+- en: Can you explain what it means, please? / Can you explain it more?
+  tr: Ne anlama geldiğini açıklar mısın? / Biraz daha açıklar mısın?
+  use: Öğretmene ya da uzmana açıklama sorusu.
+  reply:
+  - Sure. Let me show you.
+  item: U5-058
+  register: nötr
+- en: Sorry, I can't follow you.
+  tr: Pardon, anlayamadım (seni takip edemiyorum).
+  use: Açıklama çok hızlı ya da karışık olduğunda.
+  reply:
+  - OK, I'll explain it again slowly.
+  item: U5-055
+  register: nötr
+- en: I got it.
+  tr: Anladım.
+  use: Açıklamayı anladığını söylemek.
+  reply:
+  - Great!
+  item: U5-055
+  register: gündelik
+- en: By the way, …
+  tr: Bu arada, aklıma gelmişken …
+  use: Konuya yeni bir bilgi eklemek, konu değiştirmek.
+  item: U5-053
+  register: gündelik
+- en: Is there a connection sign on the screen?
+  tr: Ekranda bağlantı işareti var mı?
+  use: Bağlantı sorununu anlamak için soru.
+  reply:
+  - No, there isn't. I think I'm offline.
+  item: U5-020
+  register: gündelik
+- en: It isn't working properly.
+  tr: Düzgün çalışmıyor.
+  use: Cihaz ya da bağlantı sorunu.
+  reply:
+  - Why don't you turn it off and on again?
+  - Why don't you get help from the service?
+  item: U5-026
+  register: gündelik
+- en: Turn it on. / It's off.
+  tr: Aç onu. / Kapalı.
+  use: Elektronik cihaz için.
+  item: U5-023
+  register: gündelik
+- en: What do you use the Internet for? — I often use it for …
+  tr: İnterneti ne için kullanırsın? — Çoğunlukla … için kullanırım.
+  use: Alışkanlık anketi, tanışma.
+  reply:
+  - I often use it for doing research and chatting with my friends.
+  item: U5-047
+  register: nötr
+- en: Don't share your personal information and password.
+  tr: Kişisel bilgilerini ve şifreni paylaşma.
+  use: Güvenlik kuralı, uyarı.
+  item: U5-010
+  register: nötr
+- en: Before downloading a file, check it with an adult.
+  tr: Bir dosyayı indirmeden önce bir yetişkine danış.
+  use: Güvenlik kuralı.
+  item: U5-019
+  register: nötr
+- en: This ticket is non-refundable.
+  tr: Bu biletin parası iade edilmez.
+  use: Bilet ya da alışveriş koşulu.
+  item: U5-052
+  register: resmi
+- en: What does BTW stand for? — It stands for "by the way".
+  tr: BTW neyin kısaltması? — "Bu arada" demek.
+  use: Mesaj kısaltmasının açılımını sormak.
+  item: U5-061
+  register: nötr
+collocations:
+- item: U5-002
+  pairs:
+  - create an account
+  - open an account
+  - a social media account
+  - delete your account
+- item: U5-006
+  pairs:
+  - log in to your account
+  - sign in with your password
+  - log on to the website
+- item: U5-012
+  pairs:
+  - sign up for a course
+  - register on a website
+  - register for a newsletter
+- item: U5-009
+  pairs:
+  - a strong password
+  - change your password
+  - forget your password
+  - keep your password secret
+- item: U5-010
+  pairs:
+  - share personal information
+  - protect your personal information
+- item: U5-005
+  pairs:
+  - send a friend request
+  - accept a friend request
+  - ignore a friend request
+  - refuse unknown people's friend requests
+- item: U5-008
+  pairs:
+  - obey the rules
+  - obey Internet safety rules
+  - obey the law
+- item: U5-011
+  pairs:
+  - Internet safety
+  - safety rules
+  - a safe website
+  - stay safe online
+- item: U5-017
+  pairs:
+  - click on a link
+  - click the button
+  - press a button
+  - double-click
+- item: U5-019
+  pairs:
+  - download a file
+  - download music
+  - download an app
+- item: U5-025
+  pairs:
+  - upload a photo
+  - upload a video
+  - upload a profile picture
+- item: U5-014
+  pairs:
+  - attach a file
+  - send an e-mail with an attachment
+  - open the attachment
+- item: U5-018
+  pairs:
+  - delete a file
+  - delete old posts
+  - delete a comment
+- item: U5-022
+  pairs:
+  - search for information
+  - search the Internet
+  - use a search engine
+- item: U5-016
+  pairs:
+  - browse the Internet
+  - browse websites
+  - open a web browser
+- item: U5-020
+  pairs:
+  - go online
+  - be online / offline
+  - online friends
+  - online shopping
+  - a connection sign
+- item: U5-026
+  pairs:
+  - work properly
+  - sit properly
+  - do it properly
+- item: U5-028
+  pairs:
+  - comment on a post
+  - make a comment
+  - write a comment
+  - a nice / rude comment
+- item: U5-034
+  pairs:
+  - post a photo
+  - post on social media
+  - a new post
+- item: U5-030
+  pairs:
+  - have many followers
+  - follow a blogger
+  - subscribe to a channel
+  - a vlog subscriber
+- item: U5-033
+  pairs:
+  - check notifications
+  - turn off notifications
+  - get a notification
+- item: U5-040
+  pairs:
+  - a good / bad habit
+  - Internet habits
+  - break a habit
+- item: U5-036
+  pairs:
+  - an Internet addict
+  - Internet addiction
+  - be addicted to games
+- item: U5-038
+  pairs:
+  - do research
+  - do online research
+  - research on a topic
+- item: U5-042
+  pairs:
+  - search for information
+  - personal information
+  - a piece of information
+  - valuable information
+- item: U5-049
+  pairs:
+  - get a discount
+  - a 20 percent discount
+  - a product discount
+- item: U5-051
+  pairs:
+  - do online shopping
+  - shop online
+  - an online shopping site
+word_families:
+- root: use
+  forms:
+  - form: use
+    pos: verb/noun
+    tr: kullanmak; kullanım
+  - form: user
+    pos: noun
+    tr: kullanıcı
+    item: U5-045
+  - form: usage
+    pos: noun
+    tr: kullanım (miktarı, şekli)
+    item: U5-045
+  - form: useful
+    pos: adj
+    tr: yararlı, kullanışlı
+    item: U5-046
+  - form: useless
+    pos: adj
+    tr: işe yaramaz
+- root: addict
+  forms:
+  - form: addict
+    pos: noun
+    tr: bağımlı kişi
+    item: U5-036
+  - form: addicted
+    pos: adj
+    tr: bağımlı (addicted to …)
+    item: U5-036
+  - form: addiction
+    pos: noun
+    tr: bağımlılık
+    item: U5-036
+- root: attach
+  forms:
+  - form: attach
+    pos: verb
+    tr: eklemek, iliştirmek
+    item: U5-014
+  - form: attachment
+    pos: noun
+    tr: e-posta eki, ekli dosya
+    item: U5-014
+- root: follow
+  forms:
+  - form: follow
+    pos: verb
+    tr: takip etmek; anlamak (I can't follow you)
+    item: U5-030
+  - form: follower
+    pos: noun
+    tr: takipçi
+    item: U5-030
+- root: subscribe
+  forms:
+  - form: subscribe
+    pos: verb
+    tr: abone olmak (subscribe to)
+    item: U5-030
+  - form: subscriber
+    pos: noun
+    tr: abone
+    item: U5-030
+- root: influence
+  forms:
+  - form: influence
+    pos: verb/noun
+    tr: etkilemek; etki
+  - form: influencer
+    pos: noun
+    tr: sosyal medya fenomeni
+    item: U5-031
+  - form: influential
+    pos: adj
+    tr: etkili, sözü geçen
+    item: U5-031
+- root: browse
+  forms:
+  - form: browse
+    pos: verb
+    tr: göz atmak, gezinmek
+    item: U5-016
+  - form: browser
+    pos: noun
+    tr: tarayıcı
+    item: U5-016
+- root: blog
+  forms:
+  - form: blog
+    pos: noun
+    tr: blog
+    item: U5-027
+  - form: blogger
+    pos: noun
+    tr: blog yazarı
+    item: U5-027
+  - form: vlog
+    pos: noun
+    tr: video blog
+    item: U5-027
+- root: refund
+  forms:
+  - form: refund
+    pos: noun/verb
+    tr: para iadesi; parayı iade etmek
+  - form: refundable
+    pos: adj
+    tr: iade edilebilir
+    item: U5-052
+  - form: non-refundable
+    pos: adj
+    tr: iade edilemez
+    item: U5-052
+- root: safe
+  forms:
+  - form: safe
+    pos: adj
+    tr: güvenli
+    item: U5-011
+  - form: safety
+    pos: noun
+    tr: güvenlik
+    item: U5-011
+  - form: unsafe
+    pos: adj
+    tr: güvensiz
+- root: register
+  forms:
+  - form: register
+    pos: verb
+    tr: kaydolmak
+    item: U5-012
+  - form: registration
+    pos: noun
+    tr: kayıt
+- root: notify
+  forms:
+  - form: notify
+    pos: verb
+    tr: bildirmek
+  - form: notification
+    pos: noun
+    tr: bildirim
+    item: U5-033
+- root: inform
+  forms:
+  - form: inform
+    pos: verb
+    tr: bilgilendirmek
+  - form: information
+    pos: noun (sayılamaz)
+    tr: bilgi
+    item: U5-042
+- root: necessary
+  forms:
+  - form: necessary
+    pos: adj
+    tr: gerekli
+    item: U5-043
+  - form: unnecessary
+    pos: adj
+    tr: gereksiz
+- root: proper
+  forms:
+  - form: proper
+    pos: adj
+    tr: uygun, düzgün
+  - form: properly
+    pos: adv
+    tr: düzgünce, doğru şekilde
+    item: U5-026
+- root: research
+  forms:
+  - form: research
+    pos: noun/verb
+    tr: araştırma; araştırmak
+    item: U5-038
+  - form: researcher
+    pos: noun
+    tr: araştırmacı
+synonym_sets:
+- words:
+  - log in
+  - sign in
+  - log on
+  difference_tr: Üçü de var olan hesaba giriş yapmak. log on biraz eski; sınavda log in ve sign in eş anlamlı.
+  items:
+  - U5-006
+- words:
+  - log out
+  - log off
+  - sign out
+  difference_tr: Hesaptan çıkmak. Ortak bilgisayarda mutlaka yapılması gereken.
+  items:
+  - U5-007
+- words:
+  - sign up
+  - register
+  - create an account
+  difference_tr: Yeni hesap açmak, üye olmak. register biraz resmî (register on a website); sign up for a course.
+  items:
+  - U5-012
+  - U5-002
+- words:
+  - browse the Internet
+  - surf the Internet
+  - go online
+  difference_tr: İnternette gezinmek. surf the Internet Ü2'de (U2-056) öğretildi; browse daha 'göz atmak'.
+  items:
+  - U5-016
+  - U5-020
+- words:
+  - search for
+  - look for
+  difference_tr: İkisi de aramak; internette bilgi aramak için search for daha yaygın.
+  items:
+  - U5-022
+- words:
+  - What do you mean?
+  - What do you mean by that?
+  - Can you explain what you mean?
+  difference_tr: Açıklama isteme; ikincisi belirli bir sözü işaret eder.
+  items:
+  - U5-057
+  - U5-058
+- words:
+  - I mean
+  - What I mean is
+  - In other words
+  difference_tr: İlk ikisi kendi sözünü açar/düzeltir; In other words aynı fikri farklı sözcüklerle tekrar eder.
+  items:
+  - U5-054
+- words:
+  - I got it.
+  - I see.
+  - I understand.
+  difference_tr: Anladım. I got it gündelik; 'aldım' anlamına gelmez.
+  items:
+  - U5-055
+- words:
+  - Thanks for asking, but …
+  - That's very kind of you, but …
+  - I'm sorry, but I can't.
+  difference_tr: Kibar red girişleri; ilk ikisi teşekkürle yumuşatır.
+  items:
+  - U5-056
+- words:
+  - obey the rules
+  - follow the rules
+  difference_tr: Kurallara uymak. follow the rules Ü2'de (U2-084).
+  items:
+  - U5-008
+- words:
+  - widespread
+  - common
+  difference_tr: Yaygın. widespread genellikle büyük bir alana yayılmış olanı anlatır (widespread usage).
+  items:
+  - U5-048
+- words:
+  - useful
+  - helpful
+  difference_tr: Yararlı. helpful kişi için de kullanılır (Ü1 U1-076); useful daha çok şey, bilgi, site için.
+  items:
+  - U5-046
+- words:
+  - expert
+  - specialist
+  difference_tr: Uzman. Metinlerde 'experts say …' kalıbıyla gelir.
+  items:
+  - U5-039
+opposites:
+- a: log in
+  b: log out
+  note_tr: Giriş ↔ çıkış.
+- a: sign in
+  b: sign up
+  note_tr: 'Karşıt değil ama karışan çift: giriş ↔ kayıt.'
+- a: download
+  b: upload
+  note_tr: İnternetten cihaza ↔ cihazdan internete.
+- a: online
+  b: offline
+- a: turn on
+  b: turn off
+- a: refundable
+  b: non-refundable
+- a: safe
+  b: dangerous / unsafe
+- a: useful
+  b: useless
+- a: necessary
+  b: unnecessary
+- a: increase
+  b: decrease
+- a: accept (a friend request)
+  b: ignore / refuse (a friend request)
+- a: stranger
+  b: friend / family member
+- a: work properly
+  b: be broken
+traps:
+- about: sign in / sign up
+  item: U5-006
+  kind: kaynak_hatasi
+  trap_tr: Kaynak P 'sign in / sign up = kaydolmak, hesap açmak' veriyor. sign in = giriş yapmak; yalnız sign up = kaydolmak.
+  tip_tr: in = içeri gir (giriş), up = yeni hesap 'kur' (kayıt).
+- about: post
+  item: U5-034
+  kind: cok_anlamli
+  trap_tr: post 'posta, postalamak' olarak bilinir; sosyal medyada 'paylaşmak' ve 'gönderi'. Kaynak B 'postalamak, göndermek' veriyor.
+  tip_tr: on social media / on Instagram ile geliyorsa paylaşmak.
+- about: type
+  item: U5-024
+  kind: cok_anlamli
+  trap_tr: type isim olarak 'tür' (What type of music?), fiil olarak klavyeyle yazmak (type your password).
+  tip_tr: Ardından password, name, message geliyorsa yazmak.
+- about: broken
+  item: U5-015
+  kind: turkce_etkisi
+  trap_tr: broken yalnız 'kırık' bilinir; internet ve cihaz için 'bozuk, çalışmıyor' demektir.
+  tip_tr: My internet is broken = It isn't working properly.
+- about: stranger
+  item: U5-013
+  kind: sahte_dost
+  trap_tr: '''yabancı'' çevirisi ''başka ülkeden biri'' gibi anlaşılır; stranger tanımadığın kişidir. Başka ülkeden biri foreigner.'
+  tip_tr: Ailende ya da tanıdıklarında olmayan herkes stranger olabilir, aynı mahalleden bile.
+- about: information
+  item: U5-042
+  kind: dilbilgisi
+  trap_tr: 'information sayılamaz: ''informations'', ''an information'' yanlış.'
+  tip_tr: some information / a piece of information. advice ve content da sayılamaz.
+- about: mean (fiil) / mean (sıfat)
+  item: U5-057
+  kind: cok_anlamli
+  trap_tr: Ü1'de mean 'cimri, kaba' sıfatıydı (U1-083); burada 'demek istemek, kastetmek'.
+  tip_tr: 'do/does ile soru kuruluyorsa fiil: What do you mean?'
+- about: follow
+  item: U5-055
+  kind: cok_anlamli
+  trap_tr: follow sosyal medyada 'takip etmek'; 'I can't follow you' ise 'seni anlayamıyorum'.
+  tip_tr: Konuşma içinde açıklamadan sonra geliyorsa anlamak.
+- about: I got it
+  item: U5-055
+  kind: turkce_etkisi
+  trap_tr: '''aldım'' diye çevrilir; kalıp olarak ''anladım''.'
+  tip_tr: Açıklamanın ardından gelen I got it = I understand.
+- about: Why don't we …?
+  item: U5-059
+  kind: dilbilgisi
+  trap_tr: Olumsuz soru gibi görünür, öğrenci 'Because …' ile cevap verir; oysa öneridir.
+  tip_tr: 'Why don''t we = Let''s. Cevap: Sure! / Sorry, I can''t.'
+- about: turn on / turn off / open
+  item: U5-023
+  kind: turkce_etkisi
+  trap_tr: Türkçede 'bilgisayarı açmak' ve 'kapıyı açmak' aynı fiil; İngilizcede cihaz için turn on, kapı için open.
+  tip_tr: 'Elektrikle çalışan şey: turn on / turn off.'
+- about: download / upload
+  item: U5-019
+  kind: benzer_yazilis
+  trap_tr: 'Yön karışır: down = internetten bana, up = benden internete.'
+  tip_tr: Video kanala YÜKLENİR (upload), oyun telefona İNDİRİLİR (download).
+- about: influencer
+  item: U5-031
+  kind: kaynak_hatasi
+  trap_tr: Kaynak P influencer = 'etkileyen' veriyor; kullanılan anlam 'sosyal medya fenomeni, çok takipçili kişi'. influential (etkili) sıfattır.
+  tip_tr: -er = kişi (influencer), -ial = sıfat (influential).
+- about: expiry date
+  item: U5-050
+  kind: kaynak_hatasi
+  trap_tr: P ve B 'son kullanma tarihi' veriyor; ürünlerde doğru, kredi kartında 'son geçerlilik tarihi' demek.
+  tip_tr: Kart formunda expiry date = kartın geçerli olduğu son ay/yıl.
+- about: seen / seem (ingilizceciyiz)
+  kind: kaynak_hatasi
+  trap_tr: Kaynak B 'seen = görünmek' veriyor; seen 'see' fiilinin üçüncü hâli (görüldü), görünmek = seem.
+  tip_tr: Mesajlaşmada 'Seen' = görüldü bilgisi.
+- about: browser, attachment (ingilizcebankasi)
+  kind: kaynak_hatasi
+  trap_tr: 'Kaynak C: browser = ''internet açar'' (doğrusu tarayıcı), attachment = ''eklenti'' (e-postada doğrusu ek, ekli dosya; eklenti = add-on).'
+  tip_tr: e-mail with an attachment = ekli e-posta.
+- about: engaged in / engaged
+  kind: benzer_yazilis
+  trap_tr: Kaynak B 'engaged in = ile uğraşmak' veriyor; Ü4'te engaged 'hat meşgul' (U4-016). Öğrenci karıştırabilir.
+  tip_tr: Telefonda hat meşgul; 'be engaged in an activity' bir işle meşgul olmak (bu ünitede öğretilmiyor).
+- about: graduate ceremony (ingilizceciyiz)
+  kind: kaynak_hatasi
+  trap_tr: Doğru biçim graduation ceremony (mezuniyet töreni).
+  tip_tr: graduate fiil/kişi, graduation tören.
+- about: LOL
+  item: U5-061
+  kind: kaynak_hatasi
+  trap_tr: Kaynak listesinde LOL = "Lots of love".
+  tip_tr: Günümüzde yaygın anlamı "laughing out loud" (çok komik). Sınavda kısaltma "stand for" ile sorulur.
+- about: one-way / round-trip
+  item: U5-060
+  kind: turkce_etkisi
+  trap_tr: round trip "yuvarlak gezi" sanılır.
+  tip_tr: round trip = gidiş-dönüş, one-way = tek yön. Bilet + refundable/non-refundable ile birlikte gelir.
+lgs_focus:
+  what_is_tested:
+  - 'Grafik / tablo okuma: öğrencilerin internet kullanım amaçları, saatleri, cihazları (percent, most, half, a few, per day).'
+  - 'Okuma: internet alışkanlığı ya da bağımlılık metni, güvenlik kuralları listesi; ana fikir ve ''hangisi önerilmemiştir'' tipi.'
+  - 'Diyalog tamamlama: öneri/davet → kabul, red ya da bahane (Why don''t we …? / I''m sorry, but I can''t. My internet is broken.).'
+  - 'Açıklama kalıpları: ''What do you mean?'' sorusuna uygun cevap, ''In other words'' ile verilen yeniden söyleyiş.'
+  - 'İlan / ekran çıkarımı: internet alışveriş sayfası, indirim, iade koşulu (refundable), kayıt formu (sign up, password).'
+  - 'Anlam: internet fiilleri ve yön (download / upload, log in / log out, sign in / sign up) ve çıkmış kelimeler (online / offline, social networking sites, search, information, make new friends).'
+  question_patterns:
+  - type: dialogue_complete
+    description_tr: Öneri → bahaneyle red → açıklama isteme akışında boşluk.
+    sample_stem: 'Ece: Why don''t we watch the live concert online tonight? — Bora: I''m sorry, but I can''t. My internet is broken. — Ece: ______ — Bora: Yes. There isn''t a connection sign on the screen.'
+    sample_options:
+    - What do you mean? Do you mean the Internet connection?
+    - Great! See you at eight, then.
+    - How often do you watch concerts online?
+    - Would you like to join our WhatsApp group?
+    distractor_logic_tr: Boşluktan SONRAKİ 'Yes. There isn't a connection sign' bir evet–hayır sorusuna cevaptır ve bağlantıdan söz eder; yalnız ilk şık bunu sorar. 'Great! See you' kabul sonrası cümledir
+      (Bora reddetti); alışkanlık sorusu ve davet akışla ilgisiz.
+    items:
+    - U5-057
+    - U5-059
+    - U5-015
+    - U5-020
+    - U5-021
+  - type: table_graph
+    description_tr: Öğrencilerin internet kullanım amaçları grafiği.
+    sample_stem: 'A class survey: What do students use the Internet for? — Doing research 70% · Chatting with friends 90% · Online shopping 10% · Watching videos 50% · Playing online games 40%. — Which
+      of the following is TRUE according to the survey?'
+    sample_options:
+    - Half of the students use the Internet for watching videos.
+    - Most of the students do online shopping.
+    - Doing research is the most popular activity.
+    - A few students chat with their friends online.
+    distractor_logic_tr: 'Yüzdeleri sözcüklere çevir: %50 = half (doğru), %10 = a few (most değil), en yüksek %90 sohbettir (research değil), %90 most demektir (a few değil). Çeldiriciler uç değerleri yer
+      değiştirir.'
+    items:
+    - U5-044
+    - U5-047
+    - U5-038
+    - U5-051
+  - type: text_infer
+    description_tr: Güvenlik kuralları metni; önerilmeyeni bulma.
+    sample_stem: 'SAFER INTERNET WEEK — Our class rules: Keep your password secret except from your family. Never share your address or phone number with strangers. Ignore friend requests from unknown people.
+      Before downloading a file, check it with an adult. Log out of your account on school computers. — Which of the following is NOT suggested in the text?'
+    sample_options:
+    - Accept friend requests from people you don't know.
+    - Ask an adult before you download something.
+    - Don't give your personal information to strangers.
+    - Log out when you finish using a school computer.
+    distractor_logic_tr: Doğru şık metindeki 'Ignore friend requests from unknown people' kuralını tersine çevirir. Diğer üç şık metindeki kuralların farklı sözcüklerle söylenişidir (check it with an adult
+      = ask an adult; address/phone = personal information).
+    items:
+    - U5-009
+    - U5-013
+    - U5-005
+    - U5-019
+    - U5-007
+    - U5-010
+    - U5-011
+  - type: message_infer
+    description_tr: İnternet alışveriş ilanı / ekranı.
+    sample_stem: 'DRUM WORLD ONLINE — Weekend offer: 30% discount on all drumsticks! Free delivery for orders over 500 TL. Please note: Sale products are non-refundable. To order, sign up and enter the
+      cardholder''s name and the expiry date of the card. — Which of the following is TRUE according to the advertisement?'
+    sample_options:
+    - You can't get your money back for sale products.
+    - Drumsticks are 30% more expensive at the weekend.
+    - You don't need an account to order.
+    - All orders have free delivery.
+    distractor_logic_tr: non-refundable = parası iade edilmez. Çeldiriciler discount'u zam gibi gösterir, 'sign up' şartını yok sayar, '500 TL üzeri' koşulunu genelleştirir.
+    items:
+    - U5-049
+    - U5-052
+    - U5-012
+    - U5-050
+    - U5-051
+  - type: situation
+    description_tr: Durum verilir; kibar red cümlesi seçilir.
+    sample_stem: Your friend invites you to an online game tournament on Saturday, but you have a piano lesson. What do you say?
+    sample_options:
+    - Thanks for asking, but I'm afraid I can't. I have a piano lesson.
+    - That sounds great! What time does it start?
+    - Why don't we play the game on Saturday?
+    - I often use the Internet for playing games.
+    distractor_logic_tr: Durum red istiyor; ikinci şık kabul, üçüncü yeni bir öneri (aynı etkinliği önermek), dördüncü alışkanlık bildirimi.
+    items:
+    - U5-056
+    - U5-059
+    - U5-047
+  - type: synonym
+    description_tr: Altı çizili ifadenin anlamı / yeniden söyleyiş.
+    sample_stem: Kaan spends six hours a day online and feels angry when he can't connect. In other words, ______.
+    sample_options:
+    - he may be an Internet addict
+    - he never uses social networking sites
+    - his internet is working properly
+    - he is an expert on computers
+    distractor_logic_tr: 'In other words aynı bilgiyi özetler: çok uzun süre + bağlanamayınca öfke = bağımlılık belirtisi. Diğer şıklar metinle çelişir ya da metinde olmayan bir bilgi ekler.'
+    items:
+    - U5-054
+    - U5-036
+    - U5-045
+    - U5-026
+    - U5-039
+  - type: gap_fill
+    description_tr: İnternet fiilinin yönü / türü.
+    sample_stem: I made a video of our rehearsal. I'm going to ______ it to our channel tonight, so our followers can watch it.
+    sample_options:
+    - upload
+    - download
+    - log out
+    - delete
+    distractor_logic_tr: '''to our channel'' cihazdan internete yönü gösterir: upload. download ters yön; log out ve delete takipçilerin izlemesiyle çelişir.'
+    items:
+    - U5-025
+    - U5-019
+    - U5-007
+    - U5-018
+    - U5-030
+  priority_items:
+  - U5-020
+  - U5-035
+  - U5-022
+  - U5-042
+  - U5-032
+  - U5-051
+  - U5-040
+  - U5-036
+  - U5-015
+  - U5-026
+  - U5-028
+  - U5-006
+  - U5-012
+  - U5-009
+  - U5-019
+  - U5-025
+  - U5-057
+  - U5-059
+  - U5-056
+  - U5-044
+  tactics:
+  - 'Diyalogda boşluktan SONRAKİ cümleyi oku: ''Yes. It isn''t working properly.'' bir ''Do you mean …?'' sorusuna, ''Great! See you then.'' bir kabule, ''OK, maybe next time.'' bir redde cevaptır.'
+  - 'Kabul–red sorusunda ''Thanks'' kelimesine aldanma: ''Thanks for asking, but…'' bir RED''dir; but''tan sonrası belirleyicidir.'
+  - Grafik sorusunda önce yüzdeleri sözcüğe çevir (%50 half, %70+ most, %10–20 a few, %0 none); sonra şıklardaki en büyük / en küçük iddiayı kontrol et.
+  - Güvenlik metni sorusunda (NOT suggested) metindeki Don't / Never cümlelerini işaretle; bunları olumluya çeviren şık cevaptır.
+  - 'Yön ipucu: ''from the Internet / website'' → download; ''to my channel / account'' → upload. Yeni hesap → sign up; var olan hesaba → log in / sign in.'
+  - In other words / I mean ile başlayan şık yeni bilgi eklemez; önceki cümleyi özetler.
+  exam_vocabulary:
+  - en: Which of the following is TRUE according to the chart/survey?
+    tr: Grafiğe/ankete göre aşağıdakilerden hangisi doğrudur?
+  - en: Which of the following is NOT suggested/mentioned in the text?
+    tr: Metinde hangisi önerilmemiş/söz edilmemiştir?
+  - en: What is the main idea of the text?
+    tr: Metnin ana fikri nedir?
+  - en: Which of the following best completes the conversation?
+    tr: Konuşmayı en iyi tamamlayan hangisidir?
+  - en: Which one is a refusal / an acceptance?
+    tr: Hangisi bir ret / bir kabuldür?
+  - en: What does the underlined expression mean?
+    tr: Altı çizili ifade ne anlama gelir?
+  - en: survey / questionnaire / participants
+    tr: anket / anket formu / katılımcılar
+  - en: according to
+    tr: … -e göre
+cross_unit:
+- item: U5-059
+  links_to: U1-008 How about …? · U1-024 What about …? · U1-026 Would you like to …?
+  note_tr: Ü1 davet kalıplarına 'Why don't we …?' eklenir; cevaplar aynı (Sounds great / Sorry, I can't).
+- item: U5-056
+  links_to: U1-021 Sorry, I can't … · U1-007 excuse · U4-023 I'm afraid …
+  note_tr: 'Kibar red: Ü1 özür ve bahane + Ü4 ''I''m afraid'' birleşir.'
+- item: U5-015
+  links_to: U1-007 excuse
+  note_tr: Programın bahane örneği 'My internet is broken'; Bora'nın eski bahane alışkanlığına (kedi) gönderme.
+- item: U5-057
+  links_to: U1-083 mean (sıfat)
+  note_tr: 'Aynı sözcük: Ü1''de ''cimri, kaba'', Ü5''te ''demek istemek''. Tuzak kartı ikisini yan yana koyar.'
+- item: U5-020
+  links_to: U4-003 connect (connection) · U2-055 chat online · U2-056 surf the internet
+  note_tr: Bağlantı ve çevrim içi etkinlikler Ü2 ve Ü4'te başladı; Ü5 online/offline ve connection sign ile tamamlar.
+- item: U5-035
+  links_to: U2-058 share on social media · U1-043 share
+  note_tr: Paylaşım Ü1–Ü2'de öğretildi; Ü5 social networking sites, post, comment ile genişletir.
+- item: U5-047
+  links_to: U2-044 sıklık zarfları · U2-052 once / twice … times · U2-046 mostly
+  note_tr: Alışkanlık soruları Ü2'nin sıklık dilini internet bağlamında tekrar eder.
+- item: U5-044
+  links_to: U2-089 all / most / half / a few / none · U2-090 more than / the most
+  note_tr: Ü2 anket–grafik dili burada yüzde ve ortalama ile genişler.
+- item: U5-008
+  links_to: U2-084 follow the rules
+  note_tr: obey the rules = follow the rules.
+- item: U5-016
+  links_to: U2-056 surf the internet
+  note_tr: browse the Internet = surf the Internet; yeni olan browser (tarayıcı) ismi.
+- item: U5-032
+  links_to: U1-033 friendship · U4-008 keep in touch
+  note_tr: 'Çıkmış kelimeler make new friends ve keep in touch: internetle arkadaşlık Ü1 ve Ü4''e bağlanır.'
+- item: U5-051
+  links_to: U4-041 return / change a product · U4-039 deliver · U4-040 make a complaint
+  note_tr: Ü4'teki çağrı merkezi iadesi Ü5'te internet alışverişi (refundable, discount) ile birleşir.
+- item: U5-052
+  links_to: Ü7 Tourism
+  note_tr: Ü5 G10'da öğretildi (U5-060, internetten bilet alma); Ü7 Tourism'de tekrar edilir.
+- item: U5-046
+  links_to: U1-076 helpful
+  note_tr: useful (şey için) ↔ helpful (kişi için de).
+- item: U5-011
+  links_to: U1-059 reliable
+  note_tr: Güvenilir kaynak (reliable source) sahte haber sahnesinde Ü1 sözcüğüyle kurulur.
+story_hooks:
+- situation_tr: 'Gün 1 önerisi: Murat Bey tahtaya büyük harfle SAFER INTERNET WEEK yazar ve ödevi açıklar: her ekip bir rehber hazırlayacak. Önce sınıf anketi: ''What do you use the Internet for? How many
+    hours a day?'' Sonuçlar tahtada: ortalama günde üç saat. Kaan''ın cevabı ''only one hour… per app'' sınıfı güldürür; Selin ''Is that an addict?'' diye kaşını kaldırır.'
+  items:
+  - U5-047
+  - U5-040
+  - U5-045
+  - U5-044
+  - U5-037
+  - U5-036
+  comedy_tr: 'Duru''nun ankete cevabı: ''Internet usage: I watch videos lying down. Habit: lying down.'' Fıstık''ın da bir hesabı olduğu ortaya çıkar (yöneten Duru).'
+- situation_tr: 'Gün 2 önerisi: Ece, grubun kanalını açar: sign up, kanal adı, kullanıcı adı, parola. Herkes kendi giriş bilgisini unutur; Kaan aceleyle yanlış yazar (type), Bora hesabından çıkmayı unutur
+    ve okul bilgisayarında açık kalır.'
+  items:
+  - U5-012
+  - U5-002
+  - U5-009
+  - U5-006
+  - U5-007
+  - U5-024
+  comedy_tr: 'Bora''nın parolası ''mycat123'' — kedisi olmayan çocuğun parolası (canon_facts: Bora''nın kedisi yok).'
+- situation_tr: 'Gün 3 önerisi: İlk video: Ece prova videosunu on kez çeker, sonunda kanala yükler; ilk takipçiler ve abone sayısı, bildirim sesleri, ilk yorumlar. Bora videoyu kendi telefonuna indirip
+    ailesine gösterir; dedesi ''caz eklesinler'' yorumunu gönderiye yazar.'
+  items:
+  - U5-025
+  - U5-019
+  - U5-034
+  - U5-028
+  - U5-030
+  - U5-033
+  comedy_tr: 'Ece her bildirimde telefonuna bakar; Selin sayar: ''You checked it forty times today.'''
+- situation_tr: 'Gün 4 önerisi (programın diyaloğu): Ece ''Why don''t we chat online at eight?'' der. Bora: ''I''m sorry, but I can''t. My internet is broken.'' Ece: ''What do you mean? Do you mean the
+    Internet connection?'' Duru telefonda adım adım yardım eder: modem kapalı mı, ekranda bağlantı işareti var mı, düzgün çalışıyor mu? Sonunda sorun: Bora''nın modemi hiç açılmamıştır.'
+  items:
+  - U5-059
+  - U5-015
+  - U5-026
+  - U5-020
+  - U5-023
+  - U5-057
+  comedy_tr: Bora'nın bahane geçmişi yüzünden kimse önce inanmaz ('Is this the cat again?'); bu kez bahane gerçektir.
+- situation_tr: 'Gün 5 önerisi: Bora''ya tanımadığı bir hesaptan arkadaşlık isteği gelir: kendini ünlü bir davulcu fenomeni gibi tanıtır, ''bedava davul seti'' için yüzde yüz indirim vaat eder. Bora isteği
+    kabul eder ve bağlantıya tıklar; açılan sayfa adını, adresini, doğum tarihini ister. Bora kişisel bilgilerini yazmaya başlar.'
+  items:
+  - U5-017
+  - U5-013
+  - U5-005
+  - U5-031
+  - U5-010
+  - U5-049
+  comedy_tr: Fenomenin profil fotoğrafındaki davulcu, aslında bir müzik mağazası kataloğunun fotoğrafıdır; Duru bunu ilk bakışta fark eder ama Bora çoktan tıklamıştır.
+- situation_tr: 'Gün 6 önerisi: Ertesi sabah Bora''nın hesabından garip gönderiler paylaşılmıştır (''karate kedi'' videosu ikinci kez, yabancı dilde reklamlar). Bora hesabına erişemez. Bahane uydurmadan
+    gruba hemen söyler (yayı: ''bahane yok''); annesiyle birlikte ekrandaki adımları izler, gönderileri siler. Annesi açıklamayı takip edemez; Bora ''I mean… in other words, someone has my account'' diye
+    anlatır.'
+  items:
+  - U5-001
+  - U5-018
+  - U5-021
+  - U5-054
+  - U5-055
+  - U5-053
+  comedy_tr: 'Hemşire olan annesi (canon) durumu hastalık diliyle özetler: ''So your account has a virus and needs a new password, like medicine?'' Bora: ''I got it… no, Mum. But yes.'''
+- situation_tr: 'Gün 7 önerisi: Sınıf grubunda bir ''haber'' yayılır: ''Okul yarın tatil!'' Kaan paylaşmak üzeredir; Selin önce arama motorunda araştırır, okulun resmî sayfasına tarayıcıdan bakar, uzman
+    görüşü okur: haber sahte. Kaan ilk kez ''paylaşmadan önce düşün'' kuralını uygular.'
+  items:
+  - U5-022
+  - U5-016
+  - U5-038
+  - U5-039
+  - U5-042
+  - U5-046
+  comedy_tr: 'Haberin kaynağı Ege''dir: kendi okulunun tatil olduğunu yazmış, kimse hangi okul olduğuna bakmamıştır.'
+- situation_tr: 'Gün 8 önerisi: Ekipler rehberi yazar: kurallara uymak, tehlikeli sitelerden kaçınmak, başkalarının fotoğrafını izinsiz paylaşmamak (telif hakkı), şifre değiştirmenin gerekli olması. Kaan
+    ''SNS'' kısaltmasını sorar: ''What does SNS stand for?'''
+  items:
+  - U5-008
+  - U5-003
+  - U5-011
+  - U5-004
+  - U5-043
+  - U5-058
+  comedy_tr: 'Ece''nin rehber taslağı 14 sayfadır; Selin ''Rule one: a guide must be short'' der.'
+- situation_tr: 'Gün 9 önerisi (ciddi ton): Grubun videosunun altına Elif''e kırıcı bir yorum gelir. Grup alay etmez, cevap yazmaz; Duru ''bildir ve bir yetişkinle konuş'' kararını verir, ekran görüntüsü
+    Murat Bey''e e-posta ekiyle gönderilir. Ertesi gün dünyanın dört bir yanından takipçiler Elif''e destek yazar; Elif yeni arkadaşlar edinir. Sosyal ağ sitelerinin iyi ve kötü yüzü konuşulur.'
+  items:
+  - U5-035
+  - U5-029
+  - U5-032
+  - U5-027
+  - U5-048
+  - U5-014
+  comedy_tr: 'Mizah olaydan değil sonrasından çıkar: destek mesajlarından biri Bora''nın dedesindendir ve tamamen büyük harflerle yazılmıştır (season.yaml safety: siber zorbalık asla şaka değil).'
+- situation_tr: 'Gün 10 önerisi (final): Grup gerçek baget almak için bir müzik sitesine girer; Bora''nın annesi yanında, kart bilgilerini annesi yazar (kart sahibi, son geçerlilik tarihi); indirimli ürünlerin
+    iade edilemediği fark edilir. Bir fenomenin ''ücretli tanıtım'' teklifini Ece kibarca reddeder. Rehber sunumunda Bora kendi hikâyesini anlatır; kanalın izlenmesi artar.'
+  items:
+  - U5-051
+  - U5-052
+  - U5-050
+  - U5-041
+  - U5-056
+  comedy_tr: 'Ece''nin reddi: ''Thanks for asking, but I''m afraid we can''t. We are too famous… in our class.'''
+- situation_tr: Selin'in babası (dakik, 3.40) ilk kez internetten bilet almaya çalışır; Selin telefonda adım adım anlatır, babası 'Sorry, I can't follow you' der; Selin 'In other words, click the green
+    button' diye özetler.
+  items:
+  - U5-055
+  - U5-054
+  - U5-017
+  - U5-051
+  comedy_tr: Babası butona saat tam 3.40'ta basar.
+- situation_tr: 'Kaan''ın ''Me? Addicted? Never!'' haftası: telefonunu bir gün kapalı tutmaya söz verir, öğle arasında ''just one notification'' der.'
+  items:
+  - U5-036
+  - U5-033
+  - U5-023
+  - U5-040
+  comedy_tr: 'Kaan''ın söz verdiği gün bildirim sayısı: 0. Ertesi gün: 312.'
+- situation_tr: Duru, Fıstık için bir video blog açar; ilk abonesi Pamuk'un hesabıdır (yöneten Elif).
+  items:
+  - U5-027
+  - U5-030
+  - U5-025
+  - U5-032
+  comedy_tr: Fıstık her videoda uyur; kanalın adı 'Sleeping. Always.' olur (Ü2 G16 anket cevabının yankısı).
+mini_lessons:
+- type: hafiza_kancasi
+  text_tr: sign IN = içeri gir (giriş) · sign UP = yeni hesap kur (kayıt). Önce sign up, sonra her gün sign in.
+  refs:
+  - U5-006
+  - U5-012
+- type: hafiza_kancasi
+  text_tr: 'DOWNload: internetten aşağı, cihazına iner. UPload: cihazından yukarı, internete çıkar.'
+  refs:
+  - U5-019
+  - U5-025
+- type: tuzak
+  text_tr: 'post sosyal medyada ''paylaşmak / gönderi''. Postacı (postman) ile ilgisi tarihî: ikisi de bir şeyi ''göndermek''.'
+  refs:
+  - U5-034
+- type: tuzak
+  text_tr: stranger = tanımadığın kişi (yan apartmandan bile olabilir). Başka ülkeden biri = foreigner.
+  refs:
+  - U5-013
+- type: tuzak
+  text_tr: My internet is broken = internetim bozuk. broken yalnız 'kırık' değil, 'çalışmıyor' da demek.
+  refs:
+  - U5-015
+  - U5-026
+- type: mini_dilbilgisi
+  text_tr: 'Why don''t we chat online? = Let''s chat online. Cevap ''Because…'' değil: ''Sure!'' ya da ''Sorry, I can''t.'''
+  refs:
+  - U5-059
+- type: mini_dilbilgisi
+  text_tr: 'information sayılamaz: some information, a piece of information. ''informations'' yok.'
+  refs:
+  - U5-042
+- type: mini_dilbilgisi
+  text_tr: 'avoid + V-ing: Avoid using dangerous sites. Before + V-ing: Before downloading a file, ask an adult.'
+  refs:
+  - U5-003
+  - U5-019
+- type: mini_dilbilgisi
+  text_tr: comment ON a post · search FOR information · log IN TO an account · subscribe TO a channel.
+  refs:
+  - U5-028
+  - U5-022
+  - U5-006
+  - U5-030
+- type: lgs_taktigi
+  text_tr: '''Thanks for asking, but…'' bir RED''dir. Kabul–red sorusunda but''tan sonrasına bak.'
+  refs:
+  - U5-056
+- type: lgs_taktigi
+  text_tr: 'Grafik sorusu: %50 = half, %70 ve üstü = most, %10–20 = a few. Önce çevir, sonra şıkları oku.'
+  refs:
+  - U5-044
+  - U5-037
+- type: lgs_taktigi
+  text_tr: '''Which is NOT suggested?'' sorusunda metindeki Don''t / Never kurallarını bul; onları tersine çeviren şık cevaptır.'
+  refs:
+  - U5-008
+  - U5-003
+  - U5-011
+- type: kelime_ailesi
+  text_tr: use → user (kullanıcı) → usage (kullanım) → useful (yararlı) → useless (işe yaramaz).
+  refs:
+  - U5-045
+  - U5-046
+- type: kelime_ailesi
+  text_tr: addict (bağımlı kişi) · addicted to (bağımlı) · addiction (bağımlılık). 'He is an Internet addict' = 'He is addicted to the Internet'.
+  refs:
+  - U5-036
+- type: kelime_ailesi
+  text_tr: refund (para iadesi) → refundable (iade edilebilir) → non-refundable (iade edilemez). non- olumsuz yapar.
+  refs:
+  - U5-052
+- type: tuzak
+  text_tr: 'mean iki kez karşına çıktı: Ü1''de ''cimri, kaba'' (He is mean), Ü5''te ''demek istemek'' (What do you mean?).'
+  refs:
+  - U5-057
+- type: ilginc_bilgi
+  text_tr: Safer Internet Day (Daha Güvenli İnternet Günü) 2004'ten beri her yıl Şubat'ta kutlanıyor; 2027'de tarih 9 Şubat Salı.
+  refs:
+  - U5-011
+- type: ilginc_bilgi
+  text_tr: E-postada @ işaretini ilk kullanan Ray Tomlinson'dı (1971). Ders kitabının internet tarihi metninde de geçer.
+  refs:
+  - U5-014
+- type: ilginc_bilgi
+  text_tr: World Wide Web'i (www) Tim Berners-Lee 1989'da CERN'de önerdi; ilk web tarayıcısını da o yazdı.
+  refs:
+  - U5-016
+- type: hafiza_kancasi
+  text_tr: SNS = Social Networking Site(s). What does SNS stand for? sorusunun cevabı.
+  refs:
+  - U5-035
+  - U5-058
+open_questions:
+- Görev metninde Ünite 5 işlevleri 'Making simple inquiries / Stating personal opinions' olarak tahmin edilmişti; MEB 2018 programında (W1) Ünite 5'in işlevi yalnız 'Accepting and refusing / Making excuses'.
+  Açıklama kalıpları (What do you mean? Do you mean …?) programın Useful Language'ında var; 'In other words' ve 'I can't follow you' yalnız kaynak listelerinde. Bu yorum onaylanıyor mu?
+- Programın sırasında Ünite 5 15.–18. haftalara (Aralık–Ocak) konuyor; sezon planı Şubat–Mart diyor. Hikâye zamanı Safer Internet Day (9 Şubat 2027) ile uyumlu olduğu için Şubat korunabilir; okul takvimiyle
+  çelişki kullanıcı kararı.
+- Sezon çatışması için gereken 'hack / hacker', 'link', 'fake news', 'cyberbullying', 'report' kaynaklarda yok; birim yapılmadı. Hikâyede İngilizce olarak kullanılması (öğretilmeden) ya da 1–2 birim eklenmesi
+  kullanıcı kararı.
+- Çıkmış kelime tablosu (P) 2013–2020 TEOG/LGS'yi kapsıyor; 2021–2026 LGS soruları doğrulanmadı. P'nin hangi siteden alındığı bilinmiyor.
+- Ders kitabı (W2) bilgileri egitimsistem.com cevap sayfasından; baskı yılı ve güncel kitapla birebirliği doğrulanamadı.
+- ingilizcele.com listesi (görevde örnek kaynak) içerik telifi nedeniyle tam alınamadı; yerine ingilizcebankasi.com (C) kullanıldı. C listesi eski kitap tabanlı (donanım sahnesi).
+- 'Gün gruplaması season.yaml çerçevesine dayanıyor; Story Bible u05 yazılınca pilot_day alanları items dosyasına işlenecek. Türkçe anlatıda ''Güvenli İnternet haftası'' adı R12 nedeniyle kullanılmamalı
+  (güvenli = U5-011 karşılığı): <en>Safer Internet Week</en> önerildi.'
+- Bilet sözcükleri (one-way, round trip) iki bağımsız kaynakta Ü5 altında geçtiği için Ü5'e geri alındı (U5-060); Ü7'de tekrar edilir.
+phrase_bank:
+- en: Can you explain it more, please?
+  tr: Daha fazla açıklayabilir misin lütfen?
+  function: açıklama isteme
+  items:
+  - U4-007
+  - U4-026
+  - U4-031
+  - U5-058
+  source: ders kitabı kalıp listesi
+- en: Can you explain what it means?
+  tr: Ne anlama geldiğini açıklayabilir misin?
+  function: açıklama isteme
+  items:
+  - U5-058
+  source: ders kitabı kalıp listesi
+- en: I got it.
+  tr: Anladım.
+  function: açıklama isteme
+  items:
+  - U5-055
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: I mean, is your PC online or offline?
+  tr: Demek istediğim, bilgisayarın internete bağlı mı değil mi?
+  function: açıklama isteme
+  items:
+  - U1-083
+  - U5-020
+  - U5-054
+  - U5-057
+  source: ders kitabı kalıp listesi
+- en: I mean, there isn't a connection sign.
+  tr: Demek istediğim, bağlantı işareti yok
+  function: açıklama isteme
+  items:
+  - U1-083
+  - U4-003
+  - U5-020
+  - U5-054
+  - U5-057
+  source: ders kitabı kalıp listesi
+- en: In other words, ….
+  tr: Başka bir deyişle….
+  function: açıklama isteme
+  items:
+  - U5-054
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: Sorry, I can't follow you.
+  tr: Affedersin, seni takip edemiyorum.
+  function: açıklama isteme
+  items:
+  - U1-021
+  - U4-032
+  - U5-055
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: What does it mean?
+  tr: O ne anlama geliyor?
+  function: açıklama isteme
+  items:
+  - U1-083
+  - U5-057
+  - U5-058
+  source: ders kitabı kalıp listesi
+- en: What I mean is that ……
+  tr: Demek istediğim/kastettiğim şudur ki……
+  function: açıklama isteme
+  items:
+  - U1-083
+  - U5-054
+  - U5-057
+  source: ders kitabı kalıp listesi
+- en: Do you follow any bloggers?
+  tr: Blog yazarlarını takip eder misin?
+  function: bilgi sorma
+  items:
+  - U5-027
+  source: ders kitabı kalıp listesi
+- en: Do you have any plans for tonight?
+  tr: Bu gece için herhangi bir planın var mı?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Do you mean the Internet connection?
+  tr: İnternet bağlantısını mı kastediyorsun?
+  function: bilgi sorma
+  items:
+  - U1-083
+  - U4-003
+  - U5-057
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: For what purposes do you use the Internet?
+  tr: İnterneti ne amaçla kullanırsın?
+  function: bilgi sorma
+  items:
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: How do you connect to the Internet?
+  tr: İnternete nasıl bağlanırsın?
+  function: bilgi sorma
+  items:
+  - U4-003
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: How many friends do you have on your social media accounts?
+  tr: Sosyal medya hesaplarında kaç tane arkadaşın var?
+  function: bilgi sorma
+  items:
+  - U2-058
+  - U3-047
+  - U5-002
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: How many hours do you spend a day on social media?
+  tr: Bir günde sosyal medyada kaç saatini harcarsın?
+  function: bilgi sorma
+  items:
+  - U2-058
+  - U3-047
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: How many hours do you spend on the Internet?
+  tr: İnternette kaç saatini harcarsın?
+  function: bilgi sorma
+  items:
+  - U3-047
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: How many songs do you download per week?
+  tr: Haftada kaç tane şarkı indirirsin?
+  function: bilgi sorma
+  items:
+  - U3-047
+  - U5-019
+  - U5-044
+  source: ders kitabı kalıp listesi
+- en: How much do you pay for the Internet use every month?
+  tr: Her ay internete ne kadar para harcarsın?
+  function: bilgi sorma
+  items:
+  - U3-047
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: How often do you use the Internet?
+  tr: İnterneti ne sıklıkla kullanırsın?
+  function: bilgi sorma
+  items:
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: Is there a connection sign on the screen?
+  tr: Ekranda bağlantı işareti var mı?
+  function: bilgi sorma
+  items:
+  - U4-003
+  - U5-020
+  - U5-021
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: What do you mean by that exactly?
+  tr: Tam olarak ne demek istiyorsun?
+  function: bilgi sorma
+  items:
+  - U1-083
+  - U5-057
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: What do you mean?
+  tr: Ne demek istiyorsun?
+  function: bilgi sorma
+  items:
+  - U1-083
+  - U5-057
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: What do you think about the Internet?
+  tr: İnternet hakkında ne düşünüyorsun?
+  function: bilgi sorma
+  items:
+  - U2-089
+  source: ders kitabı kalıp listesi
+- en: What do you use the Internet for?
+  tr: İnterneti ne için kullanırsın?
+  function: bilgi sorma
+  items:
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: What kind of websites does your mother follow?
+  tr: Annen ne tür internet sitelerini takip eder?
+  function: bilgi sorma
+  items:
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: Where do you usually use the Internet?
+  tr: İnterneti genellikle nerede kullanırsın?
+  function: bilgi sorma
+  items:
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: Where were you?
+  tr: Neredeydin?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Which device do you usually prefer when you use the Internet?
+  tr: İnterneti kullandığında genellikle hangi aygıtı tercih edersin?
+  function: bilgi sorma
+  items:
+  - U1-018
+  - U4-048
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: Who uses the Internet in your family mostly?
+  tr: Ailende interneti en çok kim kullanır?
+  function: bilgi sorma
+  items:
+  - U2-046
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: Why are you asking?
+  tr: Neden soruyorsun?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Why don't we chat online at 2 o'clock?
+  tr: Neden saat 2'de internette sohbet etmiyoruz?
+  function: davet / teklif
+  items:
+  - U1-029
+  - U2-055
+  - U5-020
+  - U5-059
+  source: ders kitabı kalıp listesi
+- en: Would you like to join our WhatsApp group?
+  tr: WhatsApp grubumuza katılmak ister misin?
+  function: davet / teklif
+  items:
+  - U1-015
+  - U1-026
+  - U1-080
+  - U2-007
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: Would you like to join us?
+  tr: Bize katılmak ister misin?
+  function: davet / teklif
+  items:
+  - U1-015
+  - U1-026
+  - U1-080
+  - U2-007
+  source: ders kitabı kalıp listesi
+- en: By the way!
+  tr: Bu arada, aklıma gelmişken
+  function: fikir / bağlaç
+  items:
+  - U5-053
+  source: ders kitabı kalıp listesi
+- en: It's necessary for everyone.
+  tr: O herkes için gereklidir.
+  function: fikir / bağlaç
+  items:
+  - U5-043
+  source: ders kitabı kalıp listesi
+- en: That's all.
+  tr: Hepsi bu kadar.
+  function: fikir / bağlaç
+  items:
+  - U2-089
+  source: ders kitabı kalıp listesi
+- en: We use it in every part of our life.
+  tr: Onu hayatımızın her alanında kullanırız.
+  function: fikir / bağlaç
+  source: ders kitabı kalıp listesi
+- en: I'd love to. What time?
+  tr: İsterim. Saat kaçta?
+  function: kabul / onay
+  items:
+  - U1-011
+  source: ders kitabı kalıp listesi
+- en: That sounds great.
+  tr: Kulağa harika geliyor.
+  function: kabul / onay
+  items:
+  - U1-022
+  source: ders kitabı kalıp listesi
+- en: Yes, sure.
+  tr: Evet, tabii ki.
+  function: kabul / onay
+  source: ders kitabı kalıp listesi
+- en: I often use the Internet for ……
+  tr: Sıklıkla interneti …… için kullanırım.
+  function: kendini anlatma
+  items:
+  - U5-047
+  source: ders kitabı kalıp listesi
+- en: I want to tell you something important.
+  tr: Sana önemli bir şey söylemek istiyorum.
+  function: kendini anlatma
+  source: ders kitabı kalıp listesi
+- en: I'm really busy.
+  tr: Gerçekten meşgulüm.
+  function: red / mazeret
+  items:
+  - U1-004
+  source: ders kitabı kalıp listesi
+- en: I'm sorry, but I can't.
+  tr: Üzgünüm ama yapamam.
+  function: red / mazeret
+  items:
+  - U4-032
+  source: ders kitabı kalıp listesi
+- en: No, only one way.
+  tr: Hayır, sadece tek yön.
+  function: red / mazeret
+  source: ders kitabı kalıp listesi
+- en: No, thanks.
+  tr: Hayır, teşekkürler.
+  function: red / mazeret
+  source: ders kitabı kalıp listesi
+- en: Thanks for asking, but I'm afraid I can't.
+  tr: Sorduğun için sağ ol ama maalesef yapamam.
+  function: red / mazeret
+  items:
+  - U4-023
+  - U5-056
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: That's very kind of you, but I'm busy.
+  tr: Çok naziksin ama meşgulüm.
+  function: red / mazeret
+  items:
+  - U1-004
+  - U5-056
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: As soon as possible.
+  tr: Bir an önce, ilk fırsatta, en kısa zamanda
+  function: rica / yardım
+  items:
+  - U1-094
+  source: ders kitabı kalıp listesi
+- en: Can you help us, please?
+  tr: Bize yardım edebilir misiniz lütfen?
+  function: rica / yardım
+  items:
+  - U4-007
+  - U4-026
+  - U4-031
+  source: ders kitabı kalıp listesi
+- en: I hope you can help me.
+  tr: Umarım bana yardım edebilirsin
+  function: rica / yardım
+  source: ders kitabı kalıp listesi
+- en: Let me show you.
+  tr: Sana göstereyim.
+  function: rica / yardım
+  source: ders kitabı kalıp listesi
+- en: Wait a second.
+  tr: Bir saniye bekle
+  function: rica / yardım
+  items:
+  - U3-045
+  source: ders kitabı kalıp listesi
+- en: What can I do for you?
+  tr: Senin için ne yapabilirim?
+  function: rica / yardım
+  source: ders kitabı kalıp listesi
+- en: Why don't you get help from the service?
+  tr: Neden servisten yardım almıyorsun?
+  function: rica / yardım
+  items:
+  - U5-059
+  source: ders kitabı kalıp listesi
+- en: Great, thanks.
+  tr: Harika, teşekkürler.
+  function: selamlaşma / hal hatır
+  source: ders kitabı kalıp listesi
+- en: How are you doing?
+  tr: Nasılsın, nasıl gidiyor?
+  function: selamlaşma / hal hatır
+  source: ders kitabı kalıp listesi
+- en: I can't search on the Internet.
+  tr: İnternette araştıramıyorum.
+  function: sorun bildirme (cihaz)
+  items:
+  - U5-022
+  source: ders kitabı kalıp listesi
+- en: It is off.
+  tr: Kapalı.
+  function: sorun bildirme (cihaz)
+  items:
+  - U5-007
+  - U5-023
+  source: ders kitabı kalıp listesi
+- en: It isn't working properly.
+  tr: Düzgün çalışmıyor.
+  function: sorun bildirme (cihaz)
+  items:
+  - U5-026
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: My Internet is broken.
+  tr: İnternetim bozuk.
+  function: sorun bildirme (cihaz)
+  items:
+  - U5-015
+  source: ders kitabı kalıp listesi
+- en: Turn it on.
+  tr: Aç. (Elektronik bir alet.)
+  function: sorun bildirme (cihaz)
+  items:
+  - U5-023
+  source: ders kitabı kalıp listesi
+- en: I'm afraid she's in a meeting at the moment.
+  tr: Maalesef şu an toplantıda.
+  function: telefon
+  items:
+  - U4-023
+  source: ders kitabı kalıp listesi
+- en: Great!
+  tr: Harika
+  function: tepki / şaşırma
+  source: ders kitabı kalıp listesi
+- en: Oh my God!
+  tr: Aman Tanrım! / Vay canına!
+  function: tepki / şaşırma
+  source: ders kitabı kalıp listesi
+- en: What about you?
+  tr: Peki ya sen?
+  function: tepki / şaşırma
+  items:
+  - U1-024
+  - U2-006
+  - U2-089
+  source: ders kitabı kalıp listesi
+- en: No problem!
+  tr: Önemli değil, sorun değil
+  function: teşekkür / karşılık
+  source: ders kitabı kalıp listesi
+- en: Thank you for your help.
+  tr: Yardımın için teşekkürler.
+  function: teşekkür / karşılık
+  source: ders kitabı kalıp listesi
+- en: You, too.
+  tr: Sen de.
+  function: teşekkür / karşılık
+  source: ders kitabı kalıp listesi
+- en: Bye for now.
+  tr: Şimdilik hoşça kal
+  function: vedalaşma / kapanış
+  source: ders kitabı kalıp listesi
+- en: Get well soon!
+  tr: Geçmiş olsun
+  function: vedalaşma / kapanış
+  items:
+  - U4-025
+  source: ders kitabı kalıp listesi
+- en: Lots of love,
+  tr: Sevgiler, (samimi mesaj/mektup kapanışı)
+  function: vedalaşma / kapanış
+  source: ders kitabı kalıp listesi
+- en: See you.
+  tr: Görüşürüz.
+  function: vedalaşma / kapanış
+  source: ders kitabı kalıp listesi
+- en: Take care.
+  tr: Kendine iyi bak.
+  function: vedalaşma / kapanış
+  items:
+  - U4-028
+  source: ders kitabı kalıp listesi

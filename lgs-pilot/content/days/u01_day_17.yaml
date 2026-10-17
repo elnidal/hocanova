@@ -1,0 +1,323 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 17
+status: draft
+title: "Lunapark ve büyük final"
+est_minutes: 10
+characters: [Kaan, Murat Bey, Selin, Bora, Duru, Elif, Ece]
+new_items: [U1-095, U1-096, U1-098, U1-100]
+
+story:
+  - id: s01
+    text: "Cuma. Otobüs saat sekizde kalktı. Peki Kaan? Herkesten önce otobüsteydi, hem de en ön koltukta!"
+  - id: s02
+    text: "Murat Bey listeyi saydı: \"<en>Everyone is here. Even Kaan! This is going to be a great day.</en>\""
+  - id: s03
+    text: "İlk durak bilim merkeziydi. Kaan gezegenler salonunda kocaman esnedi: \"<en>Planets, planets, planets… This is so {U1-095|boring}.</en>\""
+  - id: s04
+    text: "Selin onu bir teraziye doğru itti: \"<en>{U1-095|Boring}? Look! You can see your weight on Mars!</en>\" Kaan teraziye çıktı: Mars'ta sadece on dokuz kilo!"
+  - id: s05
+    text: "Kaan'ın gözleri parladı: \"<en>OK, that's not {U1-095|boring}. That's cool! I'm moving to Mars.</en>\""
+  - id: s06
+    text: "Bora bir robot kolunu kumandayla yönetiyordu: \"<en>This is so {U1-096|exciting}! I'm a scientist now!</en>\""
+  - id: s07
+    text: "Duru ise bir bankta oturmuş, gözleri yarı kapalıydı: \"<en>I'm {U1-069|calm}. I'm enjoying science… from here.</en>\""
+  - id: s08
+    text: "Elif dinozor iskeletinin önünde durdu: \"<en>What was a T-rex {U1-080|like}? Big teeth, small arms… and not very {U1-085|patient}, I think!</en>\""
+  - id: s09
+    text: "Öğleden sonra lunapark! Kapıdan girer girmez dev bir hız treni gördüler; raylar neredeyse bulutlara kadar çıkıyordu."
+  - id: s10
+    text: "Kaan zıpladı: \"<en>The roller coaster! It's the most {U1-100|thrilling} ride in the park!</en>\""
+  - id: s11
+    text: "Bora yutkundu: \"<en>{U1-100|Thrilling}? It looks… terrifying.</en>\""
+  - id: s12
+    text: "Selin onu cesaretlendirdi: \"<en>Come on! Rides {U1-080|like} this are {U1-096|exciting}. You'll love it!</en>\""
+  - id: s13
+    text: "Ece, Bora'nın koluna girdi: \"<en>Don't worry. We'll sit together. It's {U1-098|fun}, I promise!</en>\""
+  - id: s14
+    text: "Tren tırmandı, tırmandı… ve aşağı! Bora'nın çığlığı bütün lunaparkta yankılandı. Murat Bey aşağıdan el salladı."
+  - id: s15
+    text: "İndiklerinde Bora'nın saçları dimdik havadaydı: \"<en>That was… {U1-100|thrilling}! Again! Let's go again!</en>\""
+  - id: s16
+    text: "Duru hız trenine binmedi; çarpışan arabalara bindi ve yavaş yavaş sürdü: \"<en>Roller coasters aren't for me. Bumper cars are {U1-098|fun} enough.</en>\""
+  - id: s17
+    text: "Kaan arabasıyla Duru'ya çarptı: \"<en>Duru, you drive {U1-080|like} my grandma!</en>\" Duru kılını kıpırdatmadı: \"<en>Thanks. Your grandma is a {U1-069|calm} driver.</en>\""
+  - id: s18
+    text: "Ece, Elif ve Duru dönme dolaba birlikte bindiler. Salı günkü o küçük sızı çoktan unutulmuştu."
+  - id: s19
+    text: "Ece en tepede şehre baktı: \"<en>Being with you two is so much {U1-098|fun}.</en>\" Elif gülümsedi: \"<en>{U1-048|You're fun to be with} too, Ece!</en>\""
+  - id: s20
+    text: "Akşam dönüş yolunda Murat Bey sordu: \"<en>So, what was the best part? The science centre or the amusement park?</en>\""
+  - id: s21
+    text: "Kaan: \"<en>The science centre was {U1-095|boring}… for five minutes. Then it was {U1-096|exciting}!</en>\""
+  - id: s22
+    text: "Bora: \"<en>The roller coaster! It changed my {U1-087|personality}. I'm brave now!</en>\" Herkes alkışladı."
+  - id: s23
+    text: "Murat Bey güldü: \"<en>Bravery is a new {U1-086|personal trait} for you, Bora. Well done!</en>\""
+  - id: s24
+    text: "Selin ekledi: \"<en>And you were so {U1-085|patient} and {U1-093|understanding} all day, sir. Thirty students, ten hours!</en>\""
+  - id: s25
+    text: "Otobüs yola koyuldu. Duru, Ece'nin omzunda uyuyakaldı. Ece camdan bakarken düşündü: Bir doğum günü partisiyle başlayan bu sonbahar ona en güzel hediyeyi vermişti: bu gürültülü, dağınık, harika arkadaşları."
+
+scene:
+  - id: c01
+    speaker: Kaan
+    text: "<en>The science centre is boring. Can we go to the amusement park now?</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>It isn't boring! Look, you can see your weight on Mars. That's exciting!</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>The roller coaster was thrilling! Let's go again!</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>I prefer the bumper cars. They're fun, and I can stay calm.</en>"
+
+steps:
+  - item: U1-095
+    sezdir:
+      id: d17-095-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"boring\" ne anlama geliyordu?"
+      options: ["sıkıcı", "korkunç", "pahalı", "kolay"]
+      answer: 0
+    kullan:
+      id: d17-095-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This film is so ________. I fell asleep after ten minutes.</en>"
+      options: ["boring", "exciting", "thrilling", "funny"]
+      answer: 0
+    sina:
+      id: d17-095-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>A: How was the history documentary last night?\nB: ________ I almost fell asleep.</en>"
+      options: ["It was really boring.", "It was really exciting.", "It was thrilling!", "It was so much fun."]
+      answer: 0
+  - item: U1-096
+    sezdir:
+      id: d17-096-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"exciting\" ne anlama geliyordu?"
+      options: ["heyecan verici", "sıkıcı", "tehlikeli", "kolay"]
+      answer: 0
+    kullan:
+      id: d17-096-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Tomorrow we're going to our favourite band's concert! I can't wait. It's so ________!</en>"
+      options: ["exciting", "boring", "tiring", "difficult"]
+      answer: 0
+    sina:
+      id: d17-096-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>How does Elif feel about the trip?</en>"
+      stem: "<en>Elif: Only one more day! I packed my bag three times and I can't sleep. Tomorrow will be amazing!</en>"
+      options: ["She thinks it's exciting.", "She thinks it's boring.", "She is calm about it.", "She doesn't want to go."]
+      answer: 0
+  - item: U1-098
+    sezdir:
+      id: d17-098-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede \"fun\" ne anlama geliyordu?"
+      options: ["eğlenceli", "komik", "sıkıcı", "zor"]
+      answer: 0
+      explain: "fun = eğlenceli, keyifli. Komik olan funny'dir."
+    kullan:
+      id: d17-098-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Let's go to the water park on Sunday. We can swim and play all day. It will be ________!</en>"
+      options: ["fun", "funny", "boring", "terrible"]
+      answer: 0
+      explain: "Su parkı komik değil, eğlenceli: fun. funny = komik, güldüren."
+    sina:
+      id: d17-098-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>A: How was the picnic?\nB: ________ We played volleyball and sang songs all day.</en>"
+      options: ["It was so much fun!", "It was so boring.", "Sorry, I can't.", "It doesn't matter."]
+      answer: 0
+  - item: U1-100
+    sezdir:
+      id: d17-100-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"thrilling\" ne anlama geliyordu?"
+      options: ["çok heyecan verici, nefes kesen", "çok sıkıcı", "çok yavaş", "çok ucuz"]
+      answer: 0
+    kullan:
+      id: d17-100-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The last minute of the football match was ________. Our team scored in the 90th minute!</en>"
+      options: ["thrilling", "boring", "calm", "patient"]
+      answer: 0
+    sina:
+      id: d17-100-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"The roller coaster ride was thrilling.\" Which one is CLOSEST in meaning?</en>"
+      options: ["It was very exciting.", "It was very boring.", "It was very slow.", "It was very funny."]
+      answer: 0
+
+review:
+  - id: d17-r01
+    type: gap_fill
+    item: U1-017
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Bora ________ to help me with my maths homework. What a nice friend!</en>"
+    options: ["offered", "refused", "forgot", "hated"]
+    answer: 0
+  - id: d17-r02
+    type: trait_match
+    item: U1-072
+    prompt: "<en>Which word describes Ece?</en>"
+    stem: "<en>Ece always wears stylish clothes and she knows the latest trends.</en>"
+    options: ["fashionable", "funny", "self-disciplined", "stubborn"]
+    answer: 0
+  - id: d17-r03
+    type: gap_fill
+    item: U1-073
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>My uncle tells great jokes. Everybody laughs when he talks. He's really ________.</en>"
+    options: ["funny", "boring", "stubborn", "patient"]
+    answer: 0
+  - id: d17-r04
+    type: dialogue_complete
+    item: U1-075
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Look! Kaan is running again, and his shoes are untied.\nB: ________</en>"
+    options: ["Yes, he's always in a hurry.", "Yes, he's always patient.", "Yes, he's very calm.", "Yes, he's very laid-back."]
+    answer: 0
+  - id: d17-r05
+    type: trait_match
+    item: U1-090
+    prompt: "<en>Which word describes Selin?</en>"
+    stem: "<en>Selin makes a plan every Sunday and follows it all week. She always finishes her homework before she plays.</en>"
+    options: ["self-disciplined", "lazy", "fashionable", "funny"]
+    answer: 0
+  - id: d17-r06
+    type: gap_fill
+    item: U1-094
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>My phone battery is almost dead. I need a charger ________!</en>"
+    options: ["as soon as possible", "next year", "slowly", "never"]
+    answer: 0
+  - id: d17-r07
+    type: message_infer
+    item: U1-027
+    lgs_like: true
+    prompt: "<en>What happened?</en>"
+    stem: "<en>Kaan: Bora and I shouted at each other about the football match. Now we aren't talking.</en>"
+    options: ["They argued.", "They spent time together.", "They supported each other.", "They shared a secret."]
+    answer: 0
+  - id: d17-r08
+    type: situation
+    item: U1-031
+    lgs_like: true
+    prompt: "<en>Which is TRUE about Bora?</en>"
+    stem: "<en>It's Saturday. Bora is at home. His friends aren't texting him, and nobody calls him. He has no one to talk to.</en>"
+    options: ["He feels alone.", "He is very busy.", "He is having fun with friends.", "He is in a hurry."]
+    answer: 0
+  - id: d17-r09
+    type: dialogue_complete
+    item: U1-046
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: I can't talk now. I'm in the library.\nB: OK. ________</en>"
+    options: ["I'll text you later.", "Let's argue about it.", "I prefer the cinema.", "That's thrilling!"]
+    answer: 0
+  - id: d17-r10
+    type: situation
+    item: U1-045
+    lgs_like: true
+    prompt: "<en>Which one describes their friendship best?</en>"
+    stem: "<en>Ece and Selin have been friends since kindergarten. They share everything and always support each other.</en>"
+    options: ["They have a strong bond.", "They have a bad feeling.", "They have a big argument.", "They have a new relationship."]
+    answer: 0
+  - id: d17-r11
+    type: trait_match
+    item: U1-059
+    lgs_like: true
+    prompt: "<en>Which word describes Selin?</en>"
+    stem: "<en>Selin is never late. When she says, \"I'll do it,\" she always does it.</en>"
+    options: ["reliable", "unreliable", "stubborn", "jealous"]
+    answer: 0
+  - id: d17-r12
+    type: message_infer
+    item: U1-077
+    lgs_like: true
+    prompt: "<en>Which word describes Duru?</en>"
+    stem: "<en>Duru: Murat Bey, I broke the window. I'm really sorry. It was me, not Bora.</en>"
+    options: ["honest", "unreliable", "self-centered", "jealous"]
+    answer: 0
+  - id: d17-f01
+    type: dialogue_complete
+    item: U1-026
+    lgs_like: true
+    prompt: "<en>ÜNİTE FİNALİ 1 — Which one completes the dialogue?</en>"
+    stem: "<en>Elif: We're going to the amusement park on Sunday. ________\nDuru: I'd love to! What time?\nElif: At ten. Don't be late!</en>"
+    options: ["Would you like to come with us?", "Did you go there last year?", "Why are you so stubborn?", "How was the roller coaster?"]
+    answer: 0
+    explain: "Duru \"I'd love to!\" diyerek bir daveti kabul ediyor; boşlukta bir davet olmalı."
+  - id: d17-f02
+    type: message_infer
+    item: U1-072
+    lgs_like: true
+    prompt: "<en>ÜNİTE FİNALİ 2 — Which of the following is NOT true about Bora?</en>"
+    stem: "<en>My best friend is Bora. He's very funny; his jokes always make me laugh. He's helpful, too. Last week he offered to carry my heavy bag. He isn't fashionable. He wears the same old T-shirt every day, but I don't care. He is always there for me.</en>"
+    options: ["He always wears stylish clothes.", "He makes his friend laugh.", "He helps other people.", "He supports his friend."]
+    answer: 0
+    explain: "Metinde \"He isn't fashionable\" yazıyor; şık giyindiği doğru değil."
+  - id: d17-f03
+    type: synonym
+    item: U1-037
+    lgs_like: true
+    prompt: "<en>ÜNİTE FİNALİ 3 — \"She is always there for me.\" Which one is CLOSEST in meaning?</en>"
+    options: ["She always supports me.", "She always lives near me.", "She is always in a hurry.", "She is always at home."]
+    answer: 0
+    explain: "always there for me = her zaman yanımda, beni destekliyor. Bir yerde durmakla ilgisi yok."
+  - id: d17-f04
+    type: message_infer
+    item: U1-058
+    lgs_like: true
+    prompt: "<en>ÜNİTE FİNALİ 4 — What is Kaan doing in this message?</en>"
+    stem: "<en>Kaan: Bora, I'm sorry for last week. I told your secret to others, and that was wrong. I promise it won't happen again. Can we spend time together this weekend?</en>"
+    options: ["He is apologising and making a promise.", "He is refusing an invitation.", "He is telling a new secret.", "He is giving advice to Bora."]
+    answer: 0
+
+tips:
+  - type: kelime_ailesi
+    refs: [U1-095, U1-096]
+    text: "-ing şeyi, -ed kişinin hissini anlatır: \"The film was boring. → I was bored.\" · \"The trip was exciting. → I was excited.\" \"I'm boring\" dersen \"Ben sıkıcı biriyim\" demiş olursun!"
+  - type: tuzak
+    refs: [U1-098, U1-073]
+    text: "fun ↔ funny son kez: \"The trip was fun.\" (eğlenceliydi) · \"Bora's sunglasses were funny.\" (komikti). fun isim olarak da kullanılır: \"Have fun!\" = İyi eğlenceler!"
+  - type: ilginc_bilgi
+    refs: [U1-100]
+    text: "thrill = ürperti, büyük heyecan. Buradan thriller (gerilim filmi ya da romanı) kelimesi gelir. thrilling, exciting'in daha güçlüsüdür."
+  - type: lgs_taktigi
+    refs: [U1-072, U1-086]
+    text: "LGS'de soruda NOT görürsen dur ve altını çiz: metinde doğru OLMAYAN şıkkı arıyorsun. Her şıkkı metinle tek tek karşılaştır."
+
+coach:
+  start: "Gezi günü! 🎢 Bilim merkezi, lunapark ve Ünite 1'in final düdüğü. Kemerlerini bağla!"
+  end_good: "Tebrikler, Ünite 1 bitti! 🏆 17 günde 100 kelime ve kalıp artık senin. Ece'nin davetiyesinden hız trenine kadar her adımda yanındaydım; seninle gurur duyuyorum. Sırada Ünite 2 var!"
+  end_mixed: "Ünite 1 bitti, helal olsun! 🎉 {weak} biraz inat ediyor ama ünite tekrarında onu da yakalayacağız. 100 kelimeyi geride bıraktın!"
+
+notifications:
+  morning: "Gezi günü! 🎢 Bora hız trenine binecek mi, yoksa kaçacak mı?"
+  evening: "Ünite 1'in son dersi! 10 dakika sonra 100 kelime senin. 🏁"
+  review: "Tek soru: Hız treni thrilling mi, boring mi? 😄"
+
+editor:
+  z07: {U1-095: BEKLIYOR, U1-096: BEKLIYOR, U1-098: BEKLIYOR, U1-100: BEKLIYOR}

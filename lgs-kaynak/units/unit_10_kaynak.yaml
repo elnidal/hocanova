@@ -1,0 +1,1315 @@
+schema_version: 1
+unit: 10
+title: Natural Forces
+status: taslak
+summary_tr: 'Son ünite doğal afetleri, iklim ve çevre sorunlarını konuşmayı öğretir. Programın iki işlevi gelecekle ilgili tahmin yapmak (What do you think will happen if we can''t reduce the greenhouse
+  effect?) ve neden–sonuç anlatmaktır (People cut down trees, so the soil slides.). Yeni kelimelerin omurgası afet adları (earthquake, flood, landslide, avalanche, drought, hurricane, tornado, tsunami),
+  çevre sorunları (global warming, pollution, deforestation, shortage) ve hazırlık / çözüm dilidir (emergency kit, take precautions, prevent, recycle, save, renewable energy). damage (U8), warn (U8), survive
+  (U6), climate (U7), reduce ve result (U9) önceki ünitelerden tekrar edilir. LGS''de ünite en çok afet / çevre haberi ya da broşür okuma, "Which of the following is a precaution …?" türü durum soruları,
+  will ile tahmin ve If / because / so ile sonuç çıkarımı olarak gelir. Afet konusu hassastır: içerikte korkutucu ayrıntı yok, vurgu hazırlık ve dayanışma.'
+curriculum:
+  outcomes:
+  - code: E8.10.L (kod doğrulanamadı)
+    text_tr: 'Dinleme: Doğal afetler ve doğa olaylarıyla ilgili kısa metinlerde belirli bilgileri tanır (breaking news etkinliği).'
+  - code: E8.10.SP (kod doğrulanamadı)
+    text_tr: 'Sözlü anlatım: Doğal afetlerin gelecekteki etkileri hakkında tahminlerde bulunur; neden ve sonuçları konuşur.'
+  - code: E8.10.R (kod doğrulanamadı)
+    text_tr: 'Okuma: Doğal güçler ve afetlerle ilgili metinlerde belirli bilgileri bulur; neden–sonuç ilişkilerini anlar. (LGS''de doğrudan ölçülen kazanım türü)'
+  - code: E8.10.W (kod doğrulanamadı)
+    text_tr: 'Yazma: Bir doğal afet ya da çevre sorunu hakkında tahmin ve öneri içeren kısa bir metin yazar.'
+  functions:
+  - id: F1
+    name_tr: Tahmin yapmak (Making predictions)
+    exponents:
+    - What do you think will happen when an earthquake strikes?
+    - What do you think will happen if we can't reduce the greenhouse effect?
+    - I believe forests will disappear because we cut down too many trees.
+    - In 2050, there will be less water in the world.
+    - Look at those dark clouds! It's going to rain.
+    responses:
+    - I think buildings will shake.
+    - Sea levels will rise and some animals will become extinct.
+    - I don't think so. People will use renewable energy.
+    items:
+    - U10-039
+    - U10-026
+    - U10-032
+    - U10-043
+    - U10-037
+    lgs_weight: yüksek
+    note_tr: Programın doğrulanan işlevi (learner.net, ingilizcepedia). Kanıta dayalı tahminde be going to (ingilizcepedia).
+  - id: F2
+    name_tr: Neden ve sonuç anlatmak (Discussing reasons and results)
+    exponents:
+    - People cut down trees and don't plant new ones, so the soil slides.
+    - If people destroy forests, the temperature will rise.
+    - Global warming causes droughts.
+    - Deforestation leads to landslides.
+    - Many farmers lost their crops because of the drought.
+    responses:
+    - That's why we should plant more trees.
+    - As a result, there is a water shortage.
+    items:
+    - U10-040
+    - U10-042
+    - U10-029
+    - U10-007
+    - U10-030
+    lgs_weight: yüksek
+    note_tr: Programın doğrulanan işlevi. so / because of / that's why / as a result Ü9'da öğretildi (U9-040), burada tekrar edilir.
+  - id: F3
+    name_tr: Önlem ve çözüm önermek (suggesting precautions and solutions)
+    exponents:
+    - We should reduce heat-trapping gases.
+    - Why don't we prepare an earthquake emergency kit?
+    - We should recycle paper and plastic.
+    - We shouldn't waste water.
+    responses:
+    - That's a good idea.
+    - I agree with you.
+    - I don't agree. We should use public transport instead.
+    items:
+    - U10-041
+    - U10-016
+    - U10-017
+    - U10-035
+    - U10-036
+    - U10-033
+    - U10-044
+    lgs_weight: yüksek
+    note_tr: Ders kitabı eşleştirme etkinliği (s. 129); Why don't we …? U5-059.
+  - id: F4
+    name_tr: Afetleri ve doğa olaylarını tanımlamak (describing natural disasters)
+    exponents:
+    - An earthquake is the shaking of the surface of the Earth.
+    - A tsunami is an extremely big wave.
+    - The roof of the house collapsed after the earthquake.
+    - The earthquake had a magnitude of 6.2 on the Richter scale.
+    responses:
+    - Luckily, nobody was injured.
+    - Rescue teams helped the people in the area.
+    items:
+    - U10-002
+    - U10-003
+    - U10-014
+    - U10-013
+    - U10-010
+    - U10-022
+    lgs_weight: orta
+    note_tr: ingilizcepedia Useful Language; tanım cümleleri "X is …" kalıbıyla.
+sources:
+- code: A
+  name: ingilizcele.com — 8. Sınıf 10. Ünite Natural Forces Ünite Kelimeleri (PDF)
+  rows: 137
+- code: B
+  name: ingilizceciyiz.com — 8. Sınıf 10. Ünite Kelimeleri Natural Forces (PDF)
+  rows: 139
+- code: W
+  name: 'ingilizcedilbilgisi.net 10. ünite kelime listesi ve "Sınavlarda çıkmış 10. ünite kelimeleri" tablosu: ERİŞİLEMEDİ'
+  rows: 0
+- code: R
+  name: 'Kısa web araştırması: egitimsistem.com MEB ders kitabı Ü10 cevapları (s. 120–130); ingilizcepedia.com Ü10 konu anlatımı; learner.net program özeti; rehberpanda.com Natural Forces (güvenlik ifadeleri)'
+  rows: 38
+tasnif:
+  teaching_units: 48
+  counts:
+    birim_CEKIRDEK: 30
+    birim_KALIP_ISLEV: 5
+    birim_TUZAK: 13
+    oncelik_1: 40
+    oncelik_2: 8
+    havuz_CEKIRDEK: 86
+    havuz_KALIP_ISLEV: 9
+    havuz_TUZAK: 33
+    havuz_BILINEN: 41
+    havuz_TANIMA: 53
+    havuz_ONCEKI_UNITE: 41
+    havuz_toplam: 263
+  items_file: lgs-pilot/content/unit_10_items.yaml
+  rules_tr:
+  - 'Satır değil öğretim birimi sayılır: afet adları beş kümede, aileler (pollution / pollute, injure / injury, predict / prediction, threat / threaten) ve eş anlamlılar (protect / preserve, shortage /
+    lack, destroy / wipe out, recycle / reuse) tek birim.'
+  - Öncelik 1 = en az iki bağımsız kaynak (A, B, R) ya da KALIP / İŞLEV.
+  - Neden–sonuç bağlaçları U9-040'ta öğretildiği için Ü10'da ayrı bağlaç birimi yok; cause / lead to fiil birimi ve If / When + will kalıbı var.
+  - A'nın uzmanlık / okuma metni terimleri (nacreous clouds, homogeneous mass, fault lines, altitude, pressure, severity, flora, vegetation) ve B'nin haber sahneleri (molten rock, ash, huge flames, swallow,
+    starvation, fatal) TANIMA; coğrafya ve A1–A2 kelimeler BİLİNEN.
+  - 'Afet hassasiyeti: ölüm / yaralanma kelimeleri öğretilir ama örneklerde ayrıntı yok; hazırlık ve dayanışma öne çıkar.'
+  excluded_examples:
+    BILINEN:
+    - building
+    - continent
+    - country
+    - create
+    - desert
+    - direction
+    - distance
+    - during
+    - earth
+    - enough
+    - factories
+    - future
+    - happen
+    - human
+    - human being
+    - kill
+    - lake
+    - land
+    - leave
+    - lose
+    - mountain
+    - movement
+    - ocean
+    - past
+    - planet
+    - plant
+    - powerful
+    - rain
+    - regular
+    - river
+    - roof
+    - sea
+    - snow
+    - speed
+    - strong
+    - strong buildings
+    - sunset
+    - terrible
+    - think
+    - wave
+    - world
+    TANIMA:
+    - absence
+    - abundant
+    - acre
+    - air conditioning
+    - altitude
+    - ash
+    - authorities
+    - biological pollutants
+    - blow off
+    - build up
+    - burst
+    - cloud formation
+    - dawn
+    - depth
+    - educate people
+    - eject
+    - evolve into
+    - explosion
+    - extend
+    - fatal
+    - fault lines
+    - flora
+    - flow down
+    - government
+    - homogeneous mass
+    - huge flames
+    - iceberg
+    - infection
+    - jolt apart
+    - keep on
+    - liquid
+    - make heavy things immobilize
+    - mold
+    - molten rock
+    - mud
+    - nacreous clouds
+    - natural wonder
+    - non-stop cloud-to-cloud lightning
+    - occasion
+    - overpopulation
+    - polar winters
+    - pressure
+    - rainclouds
+    - reach up
+    - severity
+    - solid
+    - starvation
+    - stick
+    - swallow
+    - uncontrollable
+    - vegetation
+    - water sources
+    - weigh
+    ONCEKI_UNITE:
+    - common (U1-036)
+    - interested in (U1-038)
+    - suggestion (U2-080)
+    - less (U2-090)
+    - heat (U3-006)
+    - melt (U3-009)
+    - spread (U3-023)
+    - process (U3-052)
+    - worth (U3-059)
+    - prepare (U3-062)
+    - safe (U5-011)
+    - average (U5-037)
+    - increase (U5-041)
+    - information (U5-042)
+    - mean (U5-058)
+    - danger, dangerous (U6-011)
+    - survivor (U6-014)
+    - fall (U6-015)
+    - death (U6-021)
+    - experience (U6-027)
+    - mysterious (U6-029)
+    - glacier (U6-040)
+    - hill (U6-044)
+    - blow, wind (U6-054)
+    - take place (U6-056)
+    - island (U7-022)
+    - climate, temperature (U7-027)
+    - unbelievable (U7-049)
+    - dust (U8-015)
+    - take care (U8-025)
+    - damage, damaged (U8-046)
+    - warn (U8-048)
+    - universe (U9-005)
+    - result (U9-009)
+    - variety, vary (U9-042)
+    - reduce (U9-043)
+  exam_record:
+    kaynak: W tablosu erişilemedi; çıkmış kelime sayıları yok (kullanıcı tabloyu yapıştırırsa doldurulacak).
+    ogretim_birimlerinde: []
+    onceki_unitelerde: []
+    bilinen_tanima: []
+themes:
+- name: Doğal afetler
+  items:
+  - U10-001
+  - U10-002
+  - U10-003
+  - U10-004
+  - U10-005
+  - U10-006
+  - U10-007
+  - U10-008
+  - U10-009
+  - U10-010
+  - U10-011
+  - U10-012
+  note_tr: Afet adları beş kümede (earthquake; tsunami / volcanic eruption; flood / landslide / avalanche; hurricane / tornado / storm; drought / forest fire) + lightning; afetin etkisini anlatan fiiller
+    (hit / strike / shake, destroy, collapse, injure, threaten). damage (U8-046) tekrar edilir.
+- name: Yer bilimi ve doğa olayları
+  items:
+  - U10-013
+  - U10-014
+  - U10-015
+  note_tr: 'Deprem ve doğa olayı metinlerinin terimleri: magnitude (Richter scale), surface / layer (crust, plates), rainbow.'
+- name: Afete hazırlık ve dayanışma
+  items:
+  - U10-016
+  - U10-017
+  - U10-018
+  - U10-019
+  - U10-020
+  - U10-021
+  - U10-022
+  - U10-023
+  - U10-024
+  - U10-025
+  note_tr: 'Hazırlık ve kurtarma dili: emergency kit, take precautions, prevent, deprem tatbikatı talimatları, breaking news, rescue, first aid, escape, deal with, suffer from. warn (U8-048), survive (U6-014),
+    prepare (U3-062) tekrar edilir.'
+- name: Çevre sorunları ve iklim
+  items:
+  - U10-026
+  - U10-027
+  - U10-028
+  - U10-029
+  - U10-030
+  - U10-031
+  - U10-032
+  - U10-033
+  - U10-034
+  note_tr: global warming / climate change, greenhouse gases, pollution, deforestation, shortage, environment, become extinct, waste, crops. climate (U7-027), melt (U3-009) tekrar edilir.
+- name: Çevreyi korumak
+  items:
+  - U10-035
+  - U10-036
+  - U10-037
+  - U10-038
+  note_tr: 'Çözüm dili: protect, recycle / reuse, save (water / energy), renewable energy. reduce (U9-043) ile 3R.'
+- name: Tahmin ve neden–sonuç kalıpları
+  items:
+  - U10-039
+  - U10-040
+  - U10-041
+  - U10-042
+  - U10-043
+  - U10-044
+  note_tr: 'Programın iki işlevi: tahmin (will / be going to; If / When + will) ve neden–sonuç (cause / lead to); çözüm önerme (should) ve görüşe katılma (agree / disagree). so / because of / as a result
+    U9-040.'
+- name: Okuma metinlerinin fiil ve sıfatları
+  items:
+  - U10-045
+  - U10-046
+  - U10-047
+  - U10-048
+  note_tr: 'Okuma metni ve soru köklerinde sık: occur, sudden / suddenly, consist of, approximately.'
+grammar:
+- id: G1
+  name_tr: will ile tahmin (be going to karşılaştırması)
+  form: 'Özne + will / won''t + V1 · I think / I believe / I''m sure + özne + will … · What do you think will happen …? · Kanıt varsa: am / is / are going to + V1'
+  examples:
+  - I think there will be more droughts in the future.
+  - Scientists believe sea levels will rise by 2100.
+  - Look at the sky! It's going to rain.
+  explain_tr: Görüşe dayalı gelecek tahmini will ile yapılır; zaman ifadeleri in the future, in 2050, by 2100, soon. Gözle görülen bir kanıt varsa (kara bulutlar) be going to daha doğaldır. LGS düzeyinde
+    will ana yapıdır.
+  common_errors:
+  - wrong: It will happens.
+    right: It will happen.
+    why_tr: will'den sonra yalın fiil.
+  - wrong: I don't think it won't rain.
+    right: I don't think it will rain.
+    why_tr: 'Olumsuzluk bir kez: I don''t think + will.'
+  - wrong: What do you think will be happen?
+    right: What do you think will happen?
+    why_tr: be gereksiz.
+  lgs_note: Diyalog tamamlamada "What do you think will happen …?" sorusunun cevabı will içeren tahmin şıkkıdır; çeldiriciler geçmiş zaman ya da öneri cümlesidir.
+  items:
+  - U10-039
+  - U10-043
+  - U10-026
+- id: G2
+  name_tr: If / When + Present Simple, … will … (sonuç)
+  form: 'If / When + özne + V1 (-s), özne + will + V1 · Ana cümle önce gelirse virgül yok: There will be floods if it rains heavily.'
+  examples:
+  - If we cut down forests, there will be more landslides.
+  - When an earthquake strikes, buildings shake.
+  - If we don't save water, we will have a water shortage.
+  explain_tr: 'Koşul ve sonuç: if yan cümlesi şimdiki geniş zamanda, sonuç cümlesi will ile. when kesin olacak durumda (olduğunda), if olası durumda (olursa). Genel doğrularda iki taraf da geniş zaman olabilir.'
+  common_errors:
+  - wrong: If we will cut down trees, …
+    right: If we cut down trees, …
+    why_tr: if yan cümlesinde will yok.
+  - wrong: If it rains, there is will be a flood.
+    right: If it rains, there will be a flood.
+    why_tr: there will be.
+  lgs_note: Metin çıkarımında "What will happen if …?" sorusu; doğru şık metindeki sonuç cümlesidir.
+  items:
+  - U10-040
+  - U10-029
+  - U10-030
+  - U10-004
+- id: G3
+  name_tr: Neden–sonuç fiilleri ve bağlaçları
+  form: X causes / leads to + isim · because + cümle · because of + isim · so / that's why / as a result + sonuç
+  examples:
+  - Air pollution causes health problems.
+  - Deforestation leads to floods and landslides.
+  - The farmers lost their crops because of the drought.
+  - It didn't rain for months, so the rivers dried up.
+  explain_tr: cause hem isim (the cause of the fire) hem fiil (cause a fire); lead to = yol açmak. Bağlaçlar U9-040'ta öğretildi, burada çevre metinlerinde tekrar edilir.
+  common_errors:
+  - wrong: Pollution causes to health problems.
+    right: Pollution causes health problems.
+    why_tr: cause edatsız; lead to ise to ile.
+  - wrong: because of it didn't rain
+    right: because it didn't rain
+    why_tr: Cümleden önce because.
+  lgs_note: Neden mi sonuç mu? Çeldirici sonucu neden gibi verir; okun yönüne bak (drought → crop loss).
+  items:
+  - U10-042
+  - U10-034
+  - U10-028
+  - U10-029
+- id: G4
+  name_tr: should / shouldn't ile öneri ve çözüm
+  form: Özne + should / shouldn't + V1 · Why don't we + V1? · We must + V1 (güçlü zorunluluk)
+  examples:
+  - We should use renewable energy.
+  - We shouldn't waste water.
+  - Why don't we plant trees in the school garden?
+  explain_tr: should tavsiye ve öneri bildirir; must / have to (U8-035) zorunluluk. Çevre metinlerinin "What should we do?" kısmı bu kalıpla yazılır.
+  common_errors:
+  - wrong: We should to recycle.
+    right: We should recycle.
+    why_tr: should + yalın fiil, to yok.
+  - wrong: We should recycling.
+    right: We should recycle.
+    why_tr: -ing değil, yalın fiil.
+  lgs_note: '"Which of the following is NOT a suggestion to save energy?" türü sorular; çeldirici çevreye zarar veren eylem.'
+  items:
+  - U10-041
+  - U10-036
+  - U10-035
+  - U10-037
+- id: G5
+  name_tr: 'Emir kipi: güvenlik talimatları'
+  form: V1 (+ nesne)! · Don't + V1! · Stay away from + isim · Stay + sıfat (Stay calm!)
+  examples:
+  - Stay calm and don't panic.
+  - Drop, cover and hold on!
+  - Stay away from windows. Don't use the lift.
+  explain_tr: 'Deprem tatbikatı ve broşür talimatları emir kipiyle yazılır; Ü3 tarif dilindeki emir kipinin aynısı. AFAD talimatı: Çök – Kapan – Tutun.'
+  common_errors:
+  - wrong: Not use the lift!
+    right: Don't use the lift!
+    why_tr: Olumsuz emir Don't ile.
+  - wrong: Stay away windows!
+    right: Stay away from windows!
+    why_tr: stay away from.
+  lgs_note: Broşür / poster sorusunda "Which of the following is NOT mentioned in the brochure?"; görsel eşleştirme (picture_match).
+  items:
+  - U10-019
+  - U10-016
+  - U10-023
+- id: G6
+  name_tr: 'Sayılamayan isimler ve tekil-çoğul tuzakları: news, pollution, species, phenomena'
+  form: The news is … · a piece of news · one species / two species · phenomenon (tekil) – phenomena (çoğul)
+  examples:
+  - 'The news is very good: everyone is safe.'
+  - Many animal species are in danger.
+  - A rainbow is a beautiful natural phenomenon.
+  explain_tr: news -s ile biter ama tekil ve sayılamazdır. species tekil ve çoğulda aynıdır. phenomena çoğuldur (Türkçedeki "fenomen" ile karıştırma).
+  common_errors:
+  - wrong: The news are bad.
+    right: The news is bad.
+    why_tr: news tekil fiil alır.
+  - wrong: a natural phenomena
+    right: a natural phenomenon
+    why_tr: a ile tekil biçim.
+  lgs_note: Doğrudan sorulmaz; şıklarda yanlış biçim olarak görülebilir.
+  items:
+  - U10-020
+  - U10-032
+  - U10-001
+expressions:
+- en: What do you think will happen …?
+  tr: Sence … ne olacak?
+  use: tahmin sorarken
+  reply:
+  - I think …will…
+  - I'm not sure, but maybe …
+  item: U10-039
+  register: nötr
+- en: I believe / I'm sure … will …
+  tr: İnanıyorum / Eminim ki … olacak.
+  use: tahmin bildirirken
+  item: U10-039
+  register: nötr
+- en: I agree with you. / I don't agree.
+  tr: Sana katılıyorum. / Katılmıyorum.
+  use: görüşe katılırken / karşı çıkarken
+  reply:
+  - Why not?
+  - Me too.
+  item: U10-044
+  register: nötr
+- en: We should …
+  tr: … -meliyiz.
+  use: çözüm önerirken
+  reply:
+  - That's a good idea.
+  - You're right.
+  item: U10-041
+  register: nötr
+- en: Why don't we prepare an emergency kit?
+  tr: Neden bir acil durum çantası hazırlamıyoruz?
+  use: öneri
+  reply:
+  - Good idea! Let's do it.
+  item: U10-016
+  register: gündelik
+- en: Stay calm!
+  tr: Sakin ol!
+  use: tatbikat / acil durumda
+  item: U10-019
+  register: gündelik
+- en: Drop, cover and hold on!
+  tr: Çök, kapan, tutun!
+  use: deprem anı talimatı
+  item: U10-019
+  register: nötr
+- en: Stay away from windows!
+  tr: Pencerelerden uzak dur!
+  use: güvenlik talimatı
+  item: U10-019
+  register: nötr
+- en: Here is the breaking news.
+  tr: Son dakika haberi.
+  use: haber girişi
+  item: U10-020
+  register: resmi
+- en: Take the necessary precautions.
+  tr: Gerekli önlemleri alın.
+  use: uyarı, broşür
+  item: U10-017
+  register: resmi
+- en: Don't waste water!
+  tr: Suyu israf etme!
+  use: çevre uyarısı
+  item: U10-033
+  register: gündelik
+- en: We are running out of …
+  tr: … tükeniyor / bitiyor.
+  use: kaynak sıkıntısı
+  item: U10-030
+  register: nötr
+- en: Everyone is safe.
+  tr: Herkes güvende.
+  use: tatbikat ya da haber sonu
+  item: U5-011
+  register: nötr
+- en: It causes … / It leads to …
+  tr: … neden olur / yol açar.
+  use: sonucu bağlarken
+  item: U10-042
+  register: nötr
+collocations:
+- item: U10-017
+  pairs:
+  - take precautions
+  - take the necessary measures
+  - safety measures
+- item: U10-016
+  pairs:
+  - emergency kit
+  - emergency exit
+  - in an emergency
+  - emergency number
+- item: U10-028
+  pairs:
+  - air pollution
+  - water pollution
+  - soil pollution
+  - reduce pollution
+- item: U10-036
+  pairs:
+  - save water
+  - save energy
+  - save lives
+  - energy-saving light bulbs
+- item: U10-037
+  pairs:
+  - renewable energy
+  - clean energy
+  - solar power
+  - wind power
+  - fossil fuels
+  - produce clean energy
+- item: U10-030
+  pairs:
+  - water shortage
+  - energy shortage
+  - food shortage
+  - run out of water
+  - lack of rain
+- item: U10-008
+  pairs:
+  - an earthquake hit / struck the city
+  - lightning struck the tree
+  - the ground shook
+- item: U10-027
+  pairs:
+  - greenhouse gases
+  - greenhouse effect
+  - reduce emissions
+word_families:
+- root: pollute
+  forms:
+  - form: pollute
+    pos: v
+    tr: kirletmek
+    item: U10-028
+  - form: pollution
+    pos: n
+    tr: kirlilik
+    item: U10-028
+  - form: polluted
+    pos: adj
+    tr: kirli, kirlenmiş
+    item: U10-028
+- root: predict
+  forms:
+  - form: predict
+    pos: v
+    tr: tahmin etmek
+    item: U10-043
+  - form: prediction
+    pos: n
+    tr: tahmin
+    item: U10-043
+  - form: predictable
+    pos: adj
+    tr: tahmin edilebilir
+- root: injure
+  forms:
+  - form: injure
+    pos: v
+    tr: yaralamak
+    item: U10-011
+  - form: injury
+    pos: n
+    tr: yaralanma
+    item: U10-011
+  - form: injured
+    pos: adj
+    tr: yaralı
+    item: U10-011
+- root: destroy
+  forms:
+  - form: destroy
+    pos: v
+    tr: yok etmek
+    item: U10-009
+  - form: destruction
+    pos: n
+    tr: yıkım
+    item: U10-009
+  - form: destructive
+    pos: adj
+    tr: yıkıcı
+- root: threat
+  forms:
+  - form: threat
+    pos: n
+    tr: tehdit
+    item: U10-012
+  - form: threaten
+    pos: v
+    tr: tehdit etmek
+    item: U10-012
+  - form: threatening
+    pos: adj
+    tr: tehdit edici
+    item: U10-012
+- root: environment
+  forms:
+  - form: environment
+    pos: n
+    tr: çevre
+    item: U10-031
+  - form: environmental
+    pos: adj
+    tr: çevresel
+    item: U10-031
+  - form: environmentally friendly
+    pos: adj
+    tr: çevre dostu
+- root: recycle
+  forms:
+  - form: recycle
+    pos: v
+    tr: geri dönüştürmek
+    item: U10-035
+  - form: recycling
+    pos: n
+    tr: geri dönüşüm
+    item: U10-035
+  - form: recyclable
+    pos: adj
+    tr: geri dönüştürülebilir
+    item: U10-035
+synonym_sets:
+- words:
+  - damage
+  - destroy
+  - wipe out
+  difference_tr: damage zarar verir (onarılabilir, U8-046); destroy ve wipe out tamamen yok eder.
+  items:
+  - U10-009
+- words:
+  - protect
+  - preserve
+  - prevent
+  difference_tr: protect / preserve korumak; prevent bir şeyin olmasını önlemek. Eş anlamlı değil, karıştırılır.
+  items:
+  - U10-038
+  - U10-018
+- words:
+  - rescue
+  - save
+  difference_tr: İkisi de kurtarmak; rescue tehlikeden kurtarma operasyonu (rescue team), save daha genel ve ayrıca tasarruf etmek.
+  items:
+  - U10-022
+  - U10-036
+- words:
+  - occur
+  - happen
+  - take place
+  difference_tr: occur ve happen beklenmedik olay için; take place (U6-056) planlı etkinlik için daha doğal.
+  items:
+  - U10-045
+- words:
+  - shortage
+  - lack
+  difference_tr: shortage yeterli miktarın olmaması (water shortage); lack (of) eksiklik, yokluk.
+  items:
+  - U10-030
+- words:
+  - predict
+  - guess
+  - forecast
+  difference_tr: predict bilgiye dayalı, guess bilmeden, forecast hava durumu tahmini.
+  items:
+  - U10-043
+- words:
+  - hurricane
+  - tornado
+  - storm
+  difference_tr: storm genel fırtına; hurricane okyanusta oluşan büyük kasırga; tornado karada dönen hortum.
+  items:
+  - U10-005
+opposites:
+- a: agree
+  b: disagree
+- a: renewable
+  b: non-renewable
+- a: toxic
+  b: non-toxic
+- a: flood
+  b: drought
+  note_tr: çok su ↔ susuzluk
+- a: waste
+  b: save
+  note_tr: waste water ↔ save water
+- a: increase
+  b: reduce
+  note_tr: increase U5-041, reduce U9-043
+- a: sudden
+  b: gradual
+traps:
+- about: save
+  item: U10-036
+  kind: cok_anlamli
+  trap_tr: save yalnız "kurtarmak" bilinir.
+  tip_tr: save water / energy = tasarruf etmek; save money = biriktirmek; save lives = hayat kurtarmak.
+- about: waste
+  item: U10-033
+  kind: cok_anlamli
+  trap_tr: İsim mi fiil mi karışır.
+  tip_tr: Don't waste water = israf etme (fiil); toxic waste = zehirli atık (isim).
+- about: protect / prevent
+  item: U10-018
+  kind: benzer_yazilis
+  trap_tr: İkisi de pro-/pre- ile başlar.
+  tip_tr: protect = korumak (protect animals); prevent = önlemek (prevent fires).
+- about: lightning / lighting
+  item: U10-006
+  kind: benzer_yazilis
+  trap_tr: Yazılışları neredeyse aynı.
+  tip_tr: lightning = yıldırım; lighting = aydınlatma.
+- about: hurricane / tornado
+  item: U10-005
+  kind: kaynak_hatasi
+  trap_tr: B ikisine de "kasırga" diyor.
+  tip_tr: tornado = hortum (karada); hurricane = kasırga (okyanusta).
+- about: collapse building (B)
+  item: U10-010
+  kind: kaynak_hatasi
+  trap_tr: B "collapse building = binayı yıkmak" yazmış.
+  tip_tr: 'collapse nesnesiz: The building collapsed (çöktü). Yıkmak = destroy / knock down.'
+- about: damage / destroy
+  item: U10-009
+  kind: cok_anlamli
+  trap_tr: İkisi de "zarar" diye çevrilebilir.
+  tip_tr: damage = hasar (onarılabilir, U8-046); destroy = tamamen yok etmek.
+- about: news
+  item: U10-020
+  kind: dilbilgisi
+  trap_tr: -s yüzünden çoğul sanılır.
+  tip_tr: The news is …; a piece of news.
+- about: environment
+  item: U10-031
+  kind: turkce_etkisi
+  trap_tr: Türkçe "çevre" sosyal çevreyi de kapsar.
+  tip_tr: environment = doğal çevre; sosyal çevre = people around you / social circle.
+- about: greenhouse
+  item: U10-027
+  kind: sahte_dost
+  trap_tr: '"Yeşil ev" diye çevrilir.'
+  tip_tr: greenhouse = sera; greenhouse gases = sera gazları.
+- about: phenomenon / phenomena
+  item: U10-001
+  kind: turkce_etkisi
+  trap_tr: Türkçe "fenomen" (ünlü kişi) anlamı akla gelir.
+  tip_tr: Ünitede doğa olayı; phenomena çoğul.
+- about: measure
+  item: U10-017
+  kind: cok_anlamli
+  trap_tr: measure yalnız "ölçmek" bilinir.
+  tip_tr: take measures = önlem almak.
+- about: strike
+  item: U10-008
+  kind: cok_anlamli
+  trap_tr: strike = grev de demek.
+  tip_tr: An earthquake struck … = deprem vurdu; strike–struck–struck.
+- about: cause
+  item: U10-042
+  kind: dilbilgisi
+  trap_tr: cause to + isim yazılır.
+  tip_tr: cause + isim (cause floods); lead to + isim.
+- about: if … will
+  item: U10-040
+  kind: dilbilgisi
+  trap_tr: Türkçe "kesersek … olacak" etkisiyle if cümlesine will konur.
+  tip_tr: If we cut … , there will be …
+- about: I am agree
+  item: U10-044
+  kind: turkce_etkisi
+  trap_tr: '"Katılıyorum" → I am agree.'
+  tip_tr: I agree (with you).
+- about: predict / guess
+  item: U10-043
+  kind: cok_anlamli
+  trap_tr: İkisi de "tahmin etmek" çevrilir.
+  tip_tr: predict bilgiye dayalı, guess bilmeden.
+- about: natural forces (A)
+  item: U10-001
+  kind: kaynak_hatasi
+  trap_tr: A "natural forces = doğal afetler" yazmış.
+  tip_tr: natural forces = doğal güçler; doğal afet = natural disaster.
+- about: plate (A)
+  item: U10-014
+  kind: kaynak_hatasi
+  trap_tr: A "plate = tabaka, katman" yazmış.
+  tip_tr: Yer biliminde plate = levha (tectonic plates); layer = katman.
+- about: heat (A)
+  kind: kaynak_hatasi
+  trap_tr: A "heat = ısıtma" yazmış.
+  tip_tr: heat = ısı, sıcaklık; ısıtmak (U3-006).
+- about: occasion (A)
+  kind: kaynak_hatasi
+  trap_tr: A "occasion = ortam" yazmış.
+  tip_tr: occasion = durum, fırsat, özel gün.
+- about: vary (A)
+  kind: kaynak_hatasi
+  trap_tr: A "vary = çeşitlendirmek" yazmış.
+  tip_tr: vary = değişmek, farklılık göstermek (U9-042 ailesi).
+- about: volcano eruption (A)
+  item: U10-003
+  kind: kaynak_hatasi
+  trap_tr: A "volcano eruption" yazmış.
+  tip_tr: volcanic eruption.
+- about: acre (B)
+  kind: kaynak_hatasi
+  trap_tr: B "acre = dönüm" yazmış.
+  tip_tr: 1 acre ≈ 4 dönüm (≈4047 m²).
+- about: take care (B)
+  kind: kaynak_hatasi
+  trap_tr: B "take care = ilgilenmek" yazmış.
+  tip_tr: ilgilenmek = take care of (U8-025); Take care! = Kendine iyi bak.
+- about: AFAD (A)
+  item: U10-016
+  kind: kaynak_hatasi
+  trap_tr: A "Türkiye Acil Durum Yönetimi Başkanlığı" yazmış.
+  tip_tr: 'Resmî ad: Afet ve Acil Durum Yönetimi Başkanlığı.'
+lgs_focus:
+  what_is_tested:
+  - 'Afet / çevre haberi, broşür ya da blog okuma: neden, sonuç, önlem'
+  - will ile tahmin içeren diyalog tamamlama
+  - If / because / so ile sonuç çıkarımı
+  - 'Durum–tepki: afet anında / çevreyi korumak için ne yapılmalı (should, emir kipi)'
+  - 'Kelime anlamı: drought, flood, landslide, avalanche, shortage, pollution, prevent, precaution, save'
+  question_patterns:
+  - type: dialogue_complete
+    description_tr: Tahmin sorusuna uygun cevap.
+    sample_stem: 'A: What do you think will happen if we keep cutting down forests? B: ----'
+    sample_options:
+    - I think there will be more floods and landslides.
+    - I planted a tree last week.
+    - Yes, I agree. Thank you.
+    - Because it rained a lot yesterday.
+    distractor_logic_tr: Geçmiş zaman, teşekkür ya da neden cümlesi; tahmin (will) yok.
+    items:
+    - U10-039
+    - U10-029
+    - U10-004
+  - type: text_infer
+    description_tr: Kısa çevre metni; sonuç çıkarımı.
+    sample_stem: 'Read the text: ''It didn''t rain in the region for eight months. The rivers dried up and farmers couldn''t grow crops. Now people use water carefully and take short showers.'' What is
+      the main problem in the text?'
+    sample_options:
+    - drought
+    - flood
+    - avalanche
+    - earthquake
+    distractor_logic_tr: Aynı kümenin diğer afetleri; flood zıt durum.
+    items:
+    - U10-007
+    - U10-034
+    - U10-036
+    - U10-030
+  - type: situation
+    description_tr: Tatbikat / güvenlik durumunda doğru davranış.
+    sample_stem: Your school is doing an earthquake drill. The alarm rings. What should you do?
+    sample_options:
+    - Drop, cover and hold on under your desk.
+    - Run to the lift quickly.
+    - Stand next to the windows.
+    - Go back to get your phone.
+    distractor_logic_tr: Talimatlarda yasaklanan davranışlar (lift, windows).
+    items:
+    - U10-019
+    - U10-016
+    - U10-017
+  - type: message_infer
+    description_tr: 'Broşür / poster: belirtilmeyen bilgi.'
+    sample_stem: 'Poster: ''Prepare an emergency kit: water, a torch, a first aid kit, a whistle and some food.'' Which item is NOT on the poster?'
+    sample_options:
+    - a tablet
+    - a torch
+    - a whistle
+    - water
+    distractor_logic_tr: Posterde açıkça geçen maddeler.
+    items:
+    - U10-016
+    - U10-023
+  - type: gap_fill
+    description_tr: Neden–sonuç fiili / bağlacı.
+    sample_stem: Greenhouse gases ---- global warming, so we should use clean energy.
+    sample_options:
+    - cause
+    - prevent
+    - protect
+    - save
+    distractor_logic_tr: Ünitenin olumlu eylem fiilleri anlamı tersine çevirir.
+    items:
+    - U10-042
+    - U10-027
+    - U10-026
+    - U10-037
+  - type: odd_one_out
+    description_tr: Çevreyi korumaya yönelik olmayan eylem.
+    sample_stem: Which of the following does NOT help the environment?
+    sample_options:
+    - leaving the lights on all day
+    - recycling paper and glass
+    - using energy-saving light bulbs
+    - taking short showers
+    distractor_logic_tr: Doğru öneriler; aykırı olan israf.
+    items:
+    - U10-035
+    - U10-036
+    - U10-033
+  priority_items:
+  - U10-001
+  - U10-002
+  - U10-004
+  - U10-007
+  - U10-005
+  - U10-039
+  - U10-040
+  - U10-042
+  - U10-041
+  - U10-017
+  - U10-018
+  - U10-016
+  - U10-019
+  - U10-026
+  - U10-028
+  - U10-029
+  - U10-030
+  - U10-036
+  - U10-035
+  - U10-009
+  tactics:
+  - '"What do you think will happen …?" sorusunda will içeren tahmin şıkkını ara.'
+  - 'Metinde neden–sonuç okunu çiz: drought → crops die → food shortage; soru çoğunlukla bu zincirden gelir.'
+  - Önlem sorularında "Don't / Stay away from" talimatlarını eleme ölçütü olarak kullan (lift, windows).
+  - 'save kelimesini bağlamdan çöz: water / energy → tasarruf; lives / people → kurtarmak.'
+  - NOT içeren sorularda (Which is NOT …?) her şıkkı metinde işaretle.
+  exam_vocabulary:
+  - en: What is the main problem in the text?
+    tr: Metindeki asıl sorun nedir?
+  - en: Which of the following is a precaution?
+    tr: Aşağıdakilerden hangisi bir önlemdir?
+  - en: What will happen if …?
+    tr: … olursa ne olacak?
+  - en: does NOT help
+    tr: yardımcı olmaz
+  - en: according to the brochure
+    tr: broşüre göre
+cross_unit:
+- item: U10-009
+  links_to: U8-046
+  note_tr: damage (U8) ↔ destroy (U10).
+- item: U10-022
+  links_to: U6-014
+  note_tr: survive / survivor (U6) ile kurtarma dili.
+- item: U10-016
+  links_to: U8-048
+  note_tr: warn (U8) afet uyarısında; prepare (U3-062) emergency kit ile.
+- item: U10-026
+  links_to: U7-027
+  note_tr: climate / temperature (U7) → climate change.
+- item: U10-035
+  links_to: U9-043
+  note_tr: reduce (U9) – reuse – recycle = 3R.
+- item: U10-042
+  links_to: U9-040
+  note_tr: Neden–sonuç bağlaçları U9; Why …? – Because … U6-037.
+- item: U10-041
+  links_to: U5-059
+  note_tr: Why don't we …? (U5) öneri; must / have to U8-035.
+- item: U10-019
+  links_to: U3-045
+  note_tr: Ü3 tarif dilindeki emir kipi ve sıralama (first, then) talimatlarda.
+- item: U10-044
+  links_to: U2-005
+  note_tr: In my opinion / I believe (U2) görüş kalıpları.
+- item: U10-045
+  links_to: U6-056
+  note_tr: take place (U6) ile eş anlam karşılaştırması.
+story_hooks:
+- situation_tr: Murat Bey afet hazırlık ve çevre haftasını duyurur; her ekip bir görev alır (tatbikat, acil durum çantası, orman yangınını önleme, iklim projesi).
+  items:
+  - U10-001
+  - U10-016
+  - U10-017
+  - U10-026
+- situation_tr: 'Deprem tatbikatı: Kaan 30 saniyelik rekoru kırmak ister ama bu kez doğru hız önemlidir; herkes sakin ve düzenli çıkar, AFAD gönüllüsü teşekkür eder.'
+  items:
+  - U10-019
+  - U10-002
+  - U10-024
+  - U10-023
+  comedy_tr: Kaan bahçede ilk değil, en düzenli olan olur.
+- situation_tr: Bora acil durum çantasına cips doldurur; Selin listeyi okur, Bora sınıfın en eksiksiz çantasını hazırlar.
+  items:
+  - U10-016
+  - U10-023
+  - U10-018
+  - U10-041
+  comedy_tr: Listede "whistle" var; Bora düdüğü tatbikat boyunca çalar.
+- situation_tr: 'Duru ve Elif orman yangınlarını önleme posteri hazırlar: kuraklık, sıcak hava ve "ateş yakmayın" uyarıları.'
+  items:
+  - U10-007
+  - U10-038
+  - U10-042
+  - U10-029
+- situation_tr: 'İklim projesi: Ece grubu 2050 için tahminler yazar ve tartışır; herkes başka bir sonuç tahmin eder.'
+  items:
+  - U10-039
+  - U10-040
+  - U10-044
+  - U10-043
+  - U10-030
+- situation_tr: 'Kordon kıyı temizliği: atıklar ayrılır, geri dönüşüm kutuları dolar; Fıstık da bir şişe getirir.'
+  items:
+  - U10-028
+  - U10-033
+  - U10-035
+  - U10-031
+  comedy_tr: Fıstık şişeyi geri dönüşüm kutusuna değil Bora'nın çantasına koyar.
+- situation_tr: 'Haftanın sonunda okul radyosunda "breaking news": sınıf hazırlık haftasını tamamladı, yıl sonu gösterisinde enerji tasarruflu ışıklar kullanılacak.'
+  items:
+  - U10-020
+  - U10-036
+  - U10-037
+  - U10-046
+mini_lessons:
+- type: tuzak
+  text_tr: 'save üç anlamlıdır: save water = tasarruf etmek, save lives = kurtarmak, save money = biriktirmek.'
+  refs:
+  - U10-036
+- type: mini_dilbilgisi
+  text_tr: 'If cümlesinde will yok: If we cut down trees, there will be more landslides.'
+  refs:
+  - U10-040
+- type: mini_dilbilgisi
+  text_tr: 'Görüşe dayalı tahmin will, gözle görülen kanıt be going to: Look at those clouds! It''s going to rain.'
+  refs:
+  - U10-039
+- type: tuzak
+  text_tr: protect = korumak, prevent = önlemek. We protect animals; we prevent fires.
+  refs:
+  - U10-038
+  - U10-018
+- type: tuzak
+  text_tr: tornado = hortum (karada), hurricane = kasırga (okyanusta), storm = fırtına.
+  refs:
+  - U10-005
+- type: hafiza_kancasi
+  text_tr: 'drought "dry" ile başlar gibi düşün: kuru, susuz → kuraklık. flood tam tersi: çok su → sel.'
+  refs:
+  - U10-007
+  - U10-004
+- type: mini_dilbilgisi
+  text_tr: 'Güvenlik talimatı emir kipiyle: Stay calm! Don''t use the lift! Stay away from windows!'
+  refs:
+  - U10-019
+- type: kelime_ailesi
+  text_tr: pollute → pollution → polluted; recycle → recycling → recyclable; injure → injury → injured.
+  refs:
+  - U10-028
+  - U10-035
+  - U10-011
+- type: tuzak
+  text_tr: 'collapse nesne almaz: The building collapsed (çöktü). Yıkmak için destroy.'
+  refs:
+  - U10-010
+  - U10-009
+- type: ilginc_bilgi
+  text_tr: 'AFAD''ın deprem anı talimatı "Çök – Kapan – Tutun"dur (İngilizcesi: Drop, cover and hold on).'
+  refs:
+  - U10-019
+  - U10-016
+- type: lgs_taktigi
+  text_tr: 'Neden–sonuç sorusunda oku çiz: drought → crops die → food shortage. Soru bu zincirin bir halkasını ister.'
+  refs:
+  - U10-042
+  - U10-007
+  - U10-034
+- type: tuzak
+  text_tr: 'news tekildir: The news is good. greenhouse = sera ("yeşil ev" değil).'
+  refs:
+  - U10-020
+  - U10-027
+open_questions:
+- W (ingilizcedilbilgisi.net 10. ünite kelime listesi ve çıkmış kelimeler tablosu) erişilemedi; exam alanı ve exam_record boş. Tablo yapıştırılırsa doldurulur.
+- E8.10 kazanım kodları doğrulanamadı; işlevler (Making predictions, Discussing reasons and results) learner.net ve ingilizcepedia'dan, örnek cümleler MEB ders kitabı cevap sayfasından.
+- rehberpanda.com Ü10'da Past Continuous + when öğretiyor; MEB 2018 programında bulunamadı, birime alınmadı.
+- Neden–sonuç bağlaçları U9-040'ta öğretildi; Ü10'da ayrı bir "tekrar birimi" ister misiniz?
+- 'Birim sayısı 48 (hedef ~50–60''ın biraz altında). Sınırdaki TANIMA adayları: fault lines, severity, solid / liquid, authorities / government, abundant, educate people.'
+phrase_bank:
+- en: What do you think will happen when an earthquake strikes?
+  tr: Sence bir deprem olduğunda ne olacak?
+  function: tahmin
+  items:
+  - U10-039
+  - U10-002
+  - U10-008
+  source: ingilizcepedia.com Ü10 konu anlatımı (Useful Language)
+- en: What do you think will happen if we can't reduce the greenhouse effect?
+  tr: Sence sera etkisini azaltamazsak ne olacak?
+  function: tahmin
+  items:
+  - U10-039
+  - U10-040
+  - U10-027
+  source: ingilizcepedia.com Ü10 konu anlatımı (Useful Language)
+- en: I believe forests will disappear because we cut down too many trees.
+  tr: Bence ormanlar yok olacak çünkü çok fazla ağaç kesiyoruz.
+  function: tahmin
+  items:
+  - U10-039
+  - U10-029
+  source: MEB ders kitabı Ü10 (egitimsistem.com cevap sayfası)
+- en: Look at the dark clouds! It's going to rain.
+  tr: Şu kara bulutlara bak! Yağmur yağacak.
+  function: tahmin
+  items:
+  - U10-039
+  source: ingilizcepedia.com Ü10 konu anlatımı (Useful Language)
+- en: In the future, there will be less water in many countries.
+  tr: Gelecekte birçok ülkede daha az su olacak.
+  function: tahmin
+  items:
+  - U10-039
+  - U10-030
+  source: kalıp örneği (R araştırmasına dayalı, özgün)
+- en: People cut down trees and don't plant new ones, so the soil slides.
+  tr: İnsanlar ağaç kesiyor ve yenisini dikmiyor, bu yüzden toprak kayıyor.
+  function: neden–sonuç
+  items:
+  - U10-029
+  - U10-004
+  - U10-042
+  source: MEB ders kitabı Ü10 (egitimsistem.com cevap sayfası)
+- en: If people destroy forests, the temperature will rise.
+  tr: İnsanlar ormanları yok ederse sıcaklık artacak.
+  function: neden–sonuç
+  items:
+  - U10-040
+  - U10-029
+  - U10-026
+  source: MEB ders kitabı Ü10 (egitimsistem.com cevap sayfası)
+- en: Reusing and recycling help reduce greenhouse gas emissions.
+  tr: Yeniden kullanmak ve geri dönüştürmek sera gazı salımını azaltmaya yardım eder.
+  function: neden–sonuç
+  items:
+  - U10-035
+  - U10-027
+  source: ingilizcepedia.com Ü10 konu anlatımı (Useful Language)
+- en: Global warming causes droughts and melting glaciers.
+  tr: Küresel ısınma kuraklığa ve buzulların erimesine neden olur.
+  function: neden–sonuç
+  items:
+  - U10-026
+  - U10-042
+  - U10-007
+  source: kalıp örneği (R araştırmasına dayalı, özgün)
+- en: Many farmers lost their crops because of the drought.
+  tr: Kuraklık yüzünden birçok çiftçi ürününü kaybetti.
+  function: neden–sonuç
+  items:
+  - U10-034
+  - U10-007
+  source: kalıp örneği (R araştırmasına dayalı, özgün)
+- en: We should reduce heat-trapping gases.
+  tr: Isıyı hapseden gazları azaltmalıyız.
+  function: öneri
+  items:
+  - U10-041
+  - U10-027
+  source: MEB ders kitabı Ü10 (egitimsistem.com cevap sayfası)
+- en: Why don't we prepare an earthquake emergency kit?
+  tr: Neden bir deprem acil durum çantası hazırlamıyoruz?
+  function: öneri
+  items:
+  - U10-016
+  - U10-041
+  source: MEB ders kitabı Ü10 (egitimsistem.com cevap sayfası)
+- en: We can get electricity from renewable energy sources like windmills and solar power.
+  tr: Rüzgâr türbinleri ve güneş enerjisi gibi yenilenebilir kaynaklardan elektrik elde edebiliriz.
+  function: öneri
+  items:
+  - U10-037
+  source: ingilizcepedia.com Ü10 konu anlatımı (Useful Language)
+- en: We shouldn't waste water. Let's take short showers.
+  tr: Suyu israf etmemeliyiz. Kısa duş alalım.
+  function: öneri
+  items:
+  - U10-041
+  - U10-033
+  - U10-036
+  source: kalıp örneği (R araştırmasına dayalı, özgün)
+- en: Stay calm! Don't panic!
+  tr: Sakin ol! Panik yapma!
+  function: güvenlik
+  items:
+  - U10-019
+  source: rehberpanda.com güvenlik ifadeleri
+- en: Stay away from windows!
+  tr: Pencerelerden uzak dur!
+  function: güvenlik
+  items:
+  - U10-019
+  source: rehberpanda.com güvenlik ifadeleri
+- en: Get under the table and hold on.
+  tr: Masanın altına gir ve tutun.
+  function: güvenlik
+  items:
+  - U10-019
+  source: rehberpanda.com güvenlik ifadeleri
+- en: An earthquake is the shaking of the surface of the Earth.
+  tr: Deprem, yeryüzünün sarsılmasıdır.
+  function: tanım
+  items:
+  - U10-002
+  - U10-014
+  - U10-008
+  source: ingilizcepedia.com Ü10 konu anlatımı (Useful Language)
+- en: A tsunami is an extremely big wave.
+  tr: Tsunami çok büyük bir dalgadır.
+  function: tanım
+  items:
+  - U10-003
+  source: ingilizcepedia.com Ü10 konu anlatımı (Useful Language)
+- en: The roof of the house collapsed after the earthquake, but everyone was safe.
+  tr: Depremden sonra evin çatısı çöktü ama herkes güvendeydi.
+  function: tanım
+  items:
+  - U10-010
+  - U10-002
+  source: ingilizcepedia.com Ü10 konu anlatımı (Useful Language)
+- en: What does "phenomenon" mean? – It means an event in nature, like a rainbow.
+  tr: '"Phenomenon" ne demek? – Gökkuşağı gibi bir doğa olayı demek.'
+  function: tanım
+  items:
+  - U10-001
+  - U10-015
+  source: ingilizcepedia.com Ü10 konu anlatımı (Useful Language)

@@ -1,0 +1,307 @@
+schema_version: 1
+program: lgs
+unit: 4
+day: 1
+status: draft
+title: "Menajer Ece"
+est_minutes: 10
+characters: [Ece, Sevim Hanım, Duru, Duru'nun annesi, Bora, Bora'nın dedesi]
+new_items: [U4-007, U4-011, U4-013, U4-022, U4-026, U4-031]
+
+story:
+  - id: s01
+    text: "Yarıyıl tatilinin ilk sabahı, Bursa. Ece teyzesinin evinde bavulunu daha yeni açmıştı ki küçük kardeşi elinde Ece'nin telefonuyla salondan koşa koşa geldi: \"<en>Ece! It's {U4-013|ringing}! {U4-022|I'll take that}!</en>\""
+  - id: s02
+    text: "Ece telefonu son anda kaptı. Ekranda bilinmeyen bir numara vardı. \"<en>Hello?</en>\" Karşıdan hızlı, neşeli bir kadın sesi geldi: \"<en>Hello! Is that Ece? {U4-031|This is} Sevim, from the cake shop across from the park!</en>\""
+  - id: s03
+    text: "Sevim Hanım nefes almadan konuşuyordu: \"<en>I saw your video from the cooking contest. Your {U2-019|band} is wonderful! Can you play a mini concert at my shop? On the last Saturday of the holiday, in the evening!</en>\""
+  - id: s04
+    text: "Ece'nin eli titredi: \"<en>{U4-007|Hold on}, Sevim Hanım! I need my notebook!</en>\" Defter, kalem, üç renk fosforlu kalem… Ece on saniyede hazırdı."
+  - id: s05
+    text: "\"<en>Yes, we can play! I'm… I'm the manager of the {U2-019|band}!</en>\" Menajer mi? Bunu o an uydurmuştu. Bir zamanlar şarkıcı olmayı kabul etmişti; ama şimdi anlıyordu ki onun yeri mikrofonun başı değil, plan defterinin başıydı."
+  - id: s06
+    text: "Konuşma biter bitmez sınıf grubuna yazdı: \"<en>BIG NEWS! We have a real concert! Your new manager is on it.</en>\" Yarım saat geçti. İki gri tik. Kimse görmemişti bile."
+  - id: s07
+    text: "Ece önce Duru'yu denedi. Duru'nun cep telefonu, her tatilde olduğu gibi, sessizdeydi. Ece ev numarasını aradı ve sabırsızca söylendi: \"<en>Come on, Duru, {U4-011|pick up}! {U4-011|Pick up}!</en>\""
+  - id: s08
+    text: "Hattın öbür ucundan, arkada Mozart çalan bir ses geldi: Duru'nun annesi. \"<en>Hello? {U4-031|Who's calling}, please?</en>\""
+  - id: s09
+    text: "Ece en kibar sesini takındı: \"<en>Hello! {U4-031|This is Ece}, Duru's friend. {U4-026|May I speak to} Duru, please?</en>\""
+  - id: s10
+    text: "\"<en>Of course, Ece! {U4-007|Hang on a minute}. {U4-022|I'll get her}.</en>\" Ece uzaklaşan terlik seslerini, sonra salondan gelen sesi duydu: \"<en>Duru! It's for you! It's Ece!</en>\""
+  - id: s11
+    text: "Duru kanepede, battaniyenin altındaydı; Fıstık da ayak ucunda horluyordu. Duru gözlerini bile açmadı: \"<en>Mum, I'm on holiday. I'm a {U1-079|laid-back} person. I don't {U4-011|pick up} on holidays. It's my rule.</en>\""
+  - id: s12
+    text: "Annesi ahizeyi kanepenin üstüne bıraktı ve mutfağa döndü. Tam o sırada Fıstık uyandı, ahizeyi ağzına aldı ve kuyruğunu sallayarak salonun ortasına taşıdı."
+  - id: s13
+    text: "Ece hattın öbür ucunda hızlı hızlı bir soluma duydu: \"<en>Hello? Duru? Is that you?</en>\" Gelen tek ses: \"<en>Woof!</en>\""
+  - id: s14
+    text: "Ece bir an düşündü, sonra çok ciddi bir sesle: \"<en>Hello, Fıstık. {U4-026|Could I speak to} your owner, please? It's very important.</en>\" Fıstık: \"<en>Woof! Woof!</en>\" Ece: \"<en>Is that a yes or a no?</en>\""
+  - id: s15
+    text: "Sonunda Duru kanepeden ağır ağır kalktı ve ahizeyi Fıstık'ın ağzından kurtardı: \"<en>Hi. Duru {U4-031|speaking}. Sorry, Fıstık wants to be the manager too.</en>\""
+  - id: s16
+    text: "Ece her şeyi anlattı: konser, pastane, tatilin son cumartesisi. Duru: \"<en>A concert? Hmm. I don't m…</en>\" Ece: \"<en>Don't say 'I don't mind'! Say yes!</en>\" Duru iç çekti: \"<en>OK. Yes. Can I go back to my sofa now?</en>\""
+  - id: s17
+    text: "Sıra Bora'daydı. Bora'nın evinde ev telefonunun sesiyle iki kişi birden fırladı: Bora ve dedesi. Bora: \"<en>{U4-022|I'll take that}!</en>\" Dedesi: \"<en>No, no! When it {U4-013|rings}, I {U4-011|answer}. That's the rule in this house!</en>\""
+  - id: s18
+    text: "Dedesi daha hızlıydı: \"<en>Hello! Bora's grandpa {U4-031|speaking}. Young lady, do you like {U2-024|jazz}?</en>\" Ece şaşırdı: \"<en>Er… hello. {U4-026|Can I speak to} Bora, please?</en>\""
+  - id: s19
+    text: "Dede: \"<en>Of course. But first, listen to this!</en>\" Ve telefona bir saksafon kaydı tuttu. Tam üç dakika. Ece defterine yazdı: \"<en>Bora's grandpa: loves the saxophone. Very much.</en>\""
+  - id: s20
+    text: "Sonunda Bora ahizeyi kaptı: \"<en>Sorry, Ece! He does that to everyone. {U4-007|Hang on a sec}, I'm going to my room.</en>\""
+  - id: s21
+    text: "Bora konseri duyunca önce sevinçle bağırdı, sonra birden sustu: \"<en>A real concert… with real drums? Ece, I don't have drums. Only Mum's {U3-041|pans}!</en>\" Sonra derin bir nefes aldı: \"<en>Don't worry. I'll find some drums. Leave it to me!</en>\""
+  - id: s22
+    text: "Geriye Kaan kalıyordu. Ece numarayı iki kez denedi. İkisinde de aynı kısa, inatçı ses: düt… düt… düt… Sonunda yazdı: \"<en>Kaan! Give me a {U4-013|ring}! Today!</en>\""
+  - id: s23
+    text: "Gece yarısı Duru'dan sınıf grubuna tek bir mesaj düştü: \"<en>Good news: Fıstık can {U4-011|answer} now. Bad news: he only speaks Dog.</en>\""
+
+scene:
+  - id: c01
+    speaker: Duru'nun annesi
+    text: "<en>Hello? Who's calling, please?</en>"
+  - id: c02
+    speaker: Ece
+    text: "<en>Hello, this is Ece. May I speak to Duru, please?</en>"
+  - id: c03
+    speaker: Duru'nun annesi
+    text: "<en>Of course. Hang on a minute. I'll get her.</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>Hi. Duru speaking. Sorry, I don't usually pick up on holidays.</en>"
+
+steps:
+  - item: U4-007
+    sezdir:
+      id: u4d01-007-z
+      type: meaning
+      context: s10
+      prompt: "Duru'nun annesinin \"Hang on a minute\" sözü ne anlama geliyordu?"
+      options: ["(hatta) bekle, bir dakika", "telefonu kapat", "sonra tekrar ara", "daha yüksek sesle konuş"]
+      answer: 0
+    kullan:
+      id: u4d01-007-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Can I speak to Mr Demir, please?\nB: Yes, ________ a moment, please. I'll get him.</en>"
+      options: ["hold on", "hang out", "pick up", "ring"]
+      answer: 0
+      explain: "Karşıdakini hatta bekletirken hold on (ya da hang on) denir; hang out arkadaşlarla takılmak, pick up telefonu açmaktır."
+    sina:
+      id: u4d01-007-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Kaan: Hi, is Bora there, please?\nBora's grandpa: ________ I'll get him.\nKaan: Thanks!</en>"
+      options: ["Hang on a minute.", "He isn't at home now.", "Goodbye, see you!", "Nice to meet you, too."]
+      answer: 0
+      explain: "Ardından \"I'll get him\" geliyor: dede Bora'yı çağırmaya gidiyor, Kaan'dan beklemesini istiyor."
+  - item: U4-011
+    sezdir:
+      id: u4d01-011-z
+      type: meaning
+      context: s07
+      prompt: "Ece'nin \"Come on, Duru, pick up!\" sözünde \"pick up\" ne anlama geliyordu?"
+      options: ["telefonu açmak", "telefonu kapatmak", "yerden almak", "mesaj atmak"]
+      answer: 0
+      explain: "pick up yerden almak da demektir; ama çalan bir telefon için söylenince telefonu açmaktır."
+    kullan:
+      id: u4d01-011-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The phone rang five times, but nobody ________. Everyone was in the garden.</en>"
+      options: ["answered", "rang", "held on", "invited"]
+      answer: 0
+    sina:
+      id: u4d01-011-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Ece: Duru never picks up when she is on the sofa. So I always talk to her mum first.</en>"
+      options: ["Duru doesn't answer the phone on the sofa.", "Duru's mum never answers the phone.", "Ece never talks to Duru's mum.", "Duru always answers the phone quickly."]
+      answer: 0
+      explain: "picks up ≈ answers: doğru şık metni aynen tekrar etmiyor, eş anlamlısıyla söylüyor."
+  - item: U4-013
+    sezdir:
+      id: u4d01-013-z
+      type: meaning
+      context: s01
+      prompt: "Kardeşin \"It's ringing!\" sözünde \"ringing\" ne anlama geliyordu?"
+      options: ["(telefon) çalıyor", "yüzük takıyor", "şarjı bitiyor", "kapanıyor"]
+      answer: 0
+    kullan:
+      id: u4d01-013-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I can't talk now. Give me a ________ after dinner, OK?</en>"
+      options: ["ring", "band", "recipe", "member"]
+      answer: 0
+      explain: "Give me a ring = Beni (telefonla) ara."
+    sina:
+      id: u4d01-013-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin: I'm going into the cinema now. Can we talk later?\nElif: Sure. ________\nSelin: OK, after the film. Bye!</en>"
+      options: ["Give me a ring after the film.", "What a beautiful ring!", "Hang on a minute, I'll get her.", "May I speak to Selin, please?"]
+      answer: 0
+      explain: "Selin \"after the film\" diye cevap veriyor: Elif ona filmden sonra aramasını söylemiş. Yüzük şıkkı ring'in öbür anlamıyla kurulmuş bir tuzak."
+  - item: U4-022
+    sezdir:
+      id: u4d01-022-z
+      type: meaning
+      context: s10
+      prompt: "Duru'nun annesinin \"I'll get her\" sözü ne anlama geliyordu?"
+      options: ["Onu çağırayım.", "Onu sonra ararım.", "Onu tanımıyorum.", "Ona kızgınım."]
+      answer: 0
+    kullan:
+      id: u4d01-022-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>[The phone rings in the kitchen.]\nMum: Oh no, my hands are wet!\nKaan: Don't worry, ________!</en>"
+      options: ["I'll take that", "I take that", "I took that", "I'm taking that tomorrow"]
+      answer: 0
+      explain: "Telefon çaldığı anda verilen karar will ile kurulur: I'll take that."
+    sina:
+      id: u4d01-022-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Which of the following can we infer from the dialogue?</en>"
+      stem: "<en>[The phone rings at Bora's house.]\nBora: I'll take that!\nGrandpa: No, no, I'll take that! I always answer first.</en>"
+      options: ["Both Bora and his grandpa want to answer the phone.", "Nobody wants to answer the phone.", "Bora's grandpa is not at home.", "Bora is asleep."]
+      answer: 0
+      explain: "İkisi de \"I'll take that!\" diyor: ikisi de telefona bakmak istiyor."
+  - item: U4-026
+    sezdir:
+      id: u4d01-026-z
+      type: meaning
+      context: s09
+      prompt: "Ece'nin \"May I speak to Duru, please?\" sorusu ne anlama geliyordu?"
+      options: ["Duru ile görüşebilir miyim?", "Duru ile konuşmayı bırakır mısınız?", "Duru sizi arıyor mu?", "Duru evde ne yapıyor?"]
+      answer: 0
+    kullan:
+      id: u4d01-026-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Hello, this is Ece. ________ to Mr Demir, please?</en>"
+      options: ["Could I speak", "Can I talking", "May you speak", "Do I speak"]
+      answer: 0
+      explain: "Kendi adına izin isterken Could I / May I / Can I + fiilin yalın hâli kullanılır."
+    sina:
+      id: u4d01-026-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the conversation, which of the following is TRUE?</en>"
+      stem: "<en>Woman: Hello?\nElif: Hi, this is Elif. May I speak to Ece, please?\nWoman: Of course. Hang on, I'll get her.</en>"
+      options: ["Elif is calling Ece's house.", "Ece is calling Elif's house.", "The woman wants to speak to Elif.", "Ece answers the phone."]
+      answer: 0
+  - item: U4-031
+    sezdir:
+      id: u4d01-031-z
+      type: meaning
+      context: s15
+      prompt: "Duru'nun \"Duru speaking\" sözü ne anlama geliyordu?"
+      options: ["Benim, Duru. (telefonda)", "Duru şu an konuşuyor, bekleyin.", "Duru ile konuşmak istiyorum.", "Duru konuşamıyor."]
+      answer: 0
+      explain: "Telefonda \"Speaking.\" ya da \"Duru speaking.\" = Benim, buyurun; \"konuşuyorum\" diye çevrilmez."
+    kullan:
+      id: u4d01-031-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Hello, can I speak to Bora, please?\nB: ________. Who's this?\nA: Oh, hi Bora! It's Kaan.</en>"
+      options: ["Speaking", "I'm speaking", "Who's calling", "Hold on"]
+      answer: 0
+      explain: "Aranan kişi telefonu kendisi açtıysa tek kelimeyle \"Speaking.\" der."
+    sina:
+      id: u4d01-031-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who is calling?</en>"
+      stem: "<en>Man: Hello?\nWoman: Hello, this is Sevim from the cake shop. Could I speak to Ece, please?\nMan: Hang on a minute. I'll get her.</en>"
+      options: ["Sevim", "Ece", "the man", "Ece's mum"]
+      answer: 0
+      explain: "\"This is …\" kalıbı arayanın kendini tanıttığı yerdir; \"Could I speak to …?\" ise aranan kişiyi verir."
+
+review:
+  - id: u4d01-r01
+    type: process_order
+    item: U3-045
+    lgs_like: true
+    stem_id: S07
+    prompt: "<en>According to the message, what does Kaan do after he puts the cheese on the bread?</en>"
+    stem: "<en>Bora: Making toast is easy, buddy! First, put two slices of bread on the table. Then, put some cheese on one slice. After that, put the other slice on top. Finally, put it in the toaster for three minutes.</en>"
+    options: ["He puts the other slice on top.", "He puts it in the toaster.", "He puts two slices of bread on the table.", "He puts some cheese on the other slice."]
+    answer: 0
+    explain: "Peynirden (Then) hemen sonra After that adımı geliyor: öbür dilimi üstüne koymak."
+  - id: u4d01-r02
+    type: dialogue_complete
+    item: U3-047
+    lgs_like: true
+    stem_id: S13
+    prompt: "<en>Which question can be the missing question?</en>"
+    stem: "<en>Ece: ________\nSelin: About forty minutes. Don't open the oven door before that!</en>"
+    options: ["How long does the cake take in the oven?", "How many eggs do we need?", "How much sugar is in the cake?", "How often do you bake cakes?"]
+    answer: 0
+    explain: "Cevap bir süre (about forty minutes) veriyor; süre How long ile sorulur."
+  - id: u4d01-r03
+    type: text_infer
+    item: U3-048
+    lgs_like: true
+    stem_id: S03
+    prompt: "<en>Which ingredient is NOT mentioned in the text?</en>"
+    stem: "<en>Bora's breakfast: First, crack two eggs into a bowl and whisk them. Then, heat a little butter in a pan. Pour the eggs into the pan and cook them for two minutes. Finally, sprinkle some salt and pepper.</en>"
+    options: ["cheese", "butter", "eggs", "pepper"]
+    answer: 0
+  - id: u4d01-r04
+    type: text_infer
+    item: U3-034
+    lgs_like: true
+    stem_id: S08
+    prompt: "<en>Who can't eat spicy food?</en>"
+    stem: "<en>Nazmiye Teyze: What would you like on your toast?\nKaan: Cheese and lots of hot red pepper, please!\nDuru: Only cheese for me. Hot food makes me cry.\nSelin: Cheese and a little hot pepper, please. I love hot food too.</en>"
+    options: ["Duru", "Kaan", "Selin", "Kaan and Selin"]
+    answer: 0
+    explain: "Kaan ve Selin acı biber istiyor; Duru \"Hot food makes me cry\" diyor."
+  - id: u4d01-r05
+    type: dialogue_complete
+    item: U3-059
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Ege: I never eat at small cafés. I only like famous restaurants.\nBora: ________ Their homemade lemonade is amazing!\nEge: OK, maybe one glass.</en>"
+    options: ["Go to the café across from the park. It's worth trying.", "You're right. Small cafés are awful.", "I'm full. I can't eat anything.", "Enjoy your meal!"]
+    answer: 0
+    explain: "Bora ardından limonatayı övüyor ve Ege ikna oluyor: boşlukta bir öneri olmalı."
+
+tips:
+  - type: tuzak
+    refs: [U4-031]
+    text: "Telefonda \"Speaking.\" = \"Benim, buyurun.\" Yani \"konuşuyorum\" değil! Kendini tanıtırken de \"I am Ece\" değil, \"This is Ece\" ya da \"It's Ece\" denir. Duru'nun \"Duru speaking\" sözü tam olarak buydu."
+  - type: tuzak
+    refs: [U4-011, U2-048]
+    text: "pick up Ü2'de \"arabayla almak\" (My dad picks me up) ve \"yerden almak\" demekti. Çalan bir telefon için söylenirse: telefonu açmak. Aynı işi answer the phone da görür."
+  - type: tuzak
+    refs: [U4-013]
+    text: "ring isim olarak \"yüzük\"; fiil olarak telefonun çalması ya da birini telefonla aramak. \"Give me a ring!\" = \"Beni ara!\" Kimse senden yüzük istemiyor. 💍"
+  - type: mini_dilbilgisi
+    refs: [U4-022]
+    text: "Telefon çaldığı ANDA verilen karar will ile kurulur: \"I'll take that!\", \"I'll get her.\" \"I take that\" yanlış olur, çünkü karar o saniyede veriliyor."
+
+coach:
+  start: "Ünite 4 başlıyor! Yarıyıl tatili, herkes başka bir yerde ve bütün işler telefonda. Ece'ye bilinmeyen bir numaradan büyük haber var! 📞"
+  end_good: "Süper başlangıç! Fıstık bile telefona çıktı, sen de bütün kalıpları cebe koydun. Yarın Ece Kaan'a ulaşmaya çalışacak. 🎉"
+  end_mixed: "İyi iş! {weak} biraz karıştı, hiç dert değil. Ece de Kaan'a ilk seferde ulaşamadı; yarın birlikte tekrar deneriz. 📞"
+
+notifications:
+  morning: "Tatilin ilk sabahı Ece'ye bilinmeyen bir numaradan büyük bir haber geldi! 📞"
+  evening: "Ece, Duru'yu istedi; karşısına Fıstık çıktı! 10 dakikada olanları öğren. 🐶"
+  review: "Tek soru: Telefonda \"Speaking.\" ne demek? Konuşuyorum mu, başka bir şey mi?"
+
+editor:
+  z07: {U4-007: BEKLIYOR, U4-011: BEKLIYOR, U4-013: BEKLIYOR, U4-022: BEKLIYOR, U4-026: BEKLIYOR, U4-031: BEKLIYOR}

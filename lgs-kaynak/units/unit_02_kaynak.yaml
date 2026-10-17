@@ -1,0 +1,2366 @@
+schema_version: 1
+unit: 2
+title: Teen Life
+status: taslak
+summary_tr: 'Ünite, gençlerin boş zamanını, düzenli etkinliklerini ve zevklerini konu alır: müzik ve film türleri, spor, sosyal medya, moda ve günlük rutin. Sınav omurgası üç ayaklıdır: (1) beğeni/tercih
+  bildirme (like, love, enjoy, don''t mind, dislike, hate, can''t stand, be fond of, be keen on, be crazy about, be into + V-ing / isim) ve fikir belirtme (In my opinion, I think, To be honest); (2) sıklık
+  zarfları ve ifadeleri (always … never, hardly ever, once/twice a week) ile Simple Present; (3) anket, tablo ve grafik dili (most, half, a few, none; more than, the most, the least). LGS''de bu ünite en
+  çok tablo/grafik okuma, diyalog tamamlama ve kısa metin (blog, anket raporu) çıkarımı olarak gelir; değerlendirme sıfatları (terrific, ridiculous, unbearable, trendy, snob) şıklarda ve metinlerde anlam
+  bilgisi ister.'
+curriculum:
+  outcomes:
+  - code: E8.2.L1
+    text_tr: 'Dinleme: Gençlerin düzenli etkinlikleriyle ilgili ifade ve kalıpları anlar.'
+  - code: E8.2.SI1
+    text_tr: 'Karşılıklı konuşma: Gençlerin düzenli etkinlikleri hakkında konuşur.'
+  - code: E8.2.SP1
+    text_tr: 'Sözlü anlatım: Neyi tercih ettiğini, neyi sevip neyi sevmediğini ifade eder.'
+  - code: E8.2.SP2
+    text_tr: 'Sözlü anlatım: Günlük etkinlikleri basit biçimde anlatır.'
+  - code: E8.2.R1
+    text_tr: 'Okuma: Gençlerin düzenli etkinlikleriyle ilgili kısa ve basit metinleri anlar. (LGS''de doğrudan ölçülen ana kazanım)'
+  - code: E8.2.W1
+    text_tr: 'Yazma: Gençlerin düzenli etkinlikleri hakkında kısa ve basit bir paragraf yazar.'
+  functions:
+  - id: F1
+    name_tr: Beğeni ve beğenmeme bildirme (Expressing likes and dislikes)
+    exponents:
+    - I love/like/enjoy going to concerts.
+    - I hate/dislike shopping with my parents.
+    - I'm fond of / keen on camping.
+    - I'm crazy about rap. / I'm really into jazz.
+    - I never listen to pop music; I can't stand it.
+    - I don't mind doing the washing-up.
+    - Do you like playing computer games?
+    responses:
+    - Yes, I love it! / Yes, I'm crazy about it.
+    - It's OK. I don't mind it.
+    - Not really. / No, I can't stand it.
+    - Me too. / So do I.
+    - Me neither. / Neither do I.
+    items:
+    - U2-007
+    - U2-008
+    - U2-009
+    - U2-010
+    - U2-011
+    - U2-012
+    - U2-013
+    - U2-014
+    - U2-015
+    - U2-016
+    - U2-017
+    lgs_weight: yüksek
+    note_tr: Programdaki örnek cümlelerin çoğu bu işleve aittir. Şıklarda beğeni derecesi (can't stand ↔ crazy about) ve -ing yapısı sınanır.
+  - id: F2
+    name_tr: Tercih bildirme (Expressing preferences)
+    exponents:
+    - I prefer hip-hop concerts. I think they're terrific.
+    - I prefer reading the news online.
+    - I prefer team sports to individual sports.
+    - Which do you prefer, rock or jazz?
+    responses:
+    - I prefer rock. It's more energetic.
+    - I don't mind. Both are fine.
+    - Neither. I'm into classical music.
+    items:
+    - U1-018
+    - U2-011
+    - U2-036
+    - U2-037
+    - U2-021
+    lgs_weight: orta
+    note_tr: prefer Ünite 1'de öğretildi (U1-018); burada 'prefer A to B' ve 'prefer + V-ing' kalıbıyla tekrar edilir.
+  - id: F3
+    name_tr: Kişisel fikir belirtme (Stating personal opinions)
+    exponents:
+    - In my opinion, casual clothes are more comfortable.
+    - I think it's unbearable.
+    - I believe teenagers need more free time.
+    - From my point of view, social media is a waste of time.
+    - To be honest, that film was awful.
+    - What do you think about rap music?
+    responses:
+    - I agree with you. / You're right.
+    - I don't agree. I think it's fascinating.
+    - Really? I find it boring.
+    items:
+    - U2-005
+    - U2-018
+    - U2-060
+    - U2-075
+    - U2-076
+    - U2-077
+    - U2-078
+    - U2-088
+    lgs_weight: yüksek
+    note_tr: Diyalog tamamlama sorularında boşluk genellikle fikir cümlesidir; doğru şık, karşı tarafın verdiği gerekçeyle uyumlu sıfatı içerir.
+  - id: F4
+    name_tr: Düzenli etkinlikler hakkında basit soru sorma (Making simple inquiries)
+    exponents:
+    - What do you do in the evenings?
+    - What do you do in your free time?
+    - How often do you go to the gym?
+    - Do you ever go hiking?
+    - What about you?
+    responses:
+    - I usually do my homework, but I also listen to music.
+    - Twice a week, on Tuesdays and Fridays.
+    - Hardly ever. I'm not keen on walking.
+    - I rarely/seldom go to the theatre.
+    items:
+    - U2-002
+    - U2-006
+    - U2-044
+    - U2-049
+    - U2-050
+    - U2-051
+    - U2-052
+    lgs_weight: yüksek
+    note_tr: How often sorusunun cevabı sıklık zarfı ya da 'once/twice/three times a week' olmalıdır; şıklarda 'At 7 o'clock' gibi zaman cevabı çeldiricidir.
+  - id: F5
+    name_tr: Günlük rutini ve düzenli etkinlikleri anlatma
+    exponents:
+    - I always get up at 7 and my dad picks me up after school.
+    - She regularly follows the news.
+    - Most of the time, I hang out with my friends at weekends.
+    - He works out at the gym three times a week.
+    responses:
+    - Really? I hardly ever get up before 9 at weekends.
+    - That sounds like a busy daily routine!
+    items:
+    - U2-043
+    - U2-045
+    - U2-046
+    - U2-047
+    - U2-048
+    - U2-054
+    - U2-004
+    - U2-032
+    lgs_weight: orta
+    note_tr: E8.2.SP2 ve E8.2.W1 ile örtüşür; LGS'de blog/günlük metninden bilgi çıkarma biçiminde gelir.
+  - id: F6
+    name_tr: Anket ve grafik sonuçlarını yorumlama
+    exponents:
+    - Most of the students like pop music.
+    - Half of them go to the gym regularly.
+    - Only a few teenagers listen to jazz.
+    - None of them listen to classical music.
+    - More students like football than basketball.
+    - Classical music is the least popular genre.
+    responses:
+    - So, pop is the most popular genre in our class.
+    - That's surprising! I thought more people liked rock.
+    items:
+    - U2-003
+    - U2-089
+    - U2-090
+    - U2-023
+    - U2-025
+    lgs_weight: yüksek
+    note_tr: Programın işlev listesinde ayrı başlık olarak yok; programın önerdiği bağlamlardan (Questionnaires, Tables, Reports) ve ders kitabı etkinliklerinden gelir. LGS'de tablo/grafik sorusunun dili
+      budur, bu yüzden yüksek ağırlık verildi.
+  - id: F7
+    name_tr: Öneride bulunma ve tavsiye isteme (film, kitap, etkinlik)
+    exponents:
+    - Can you recommend a good science fiction film?
+    - I suggest watching this documentary. It's educational.
+    - My teacher advised me to read more.
+    - You should try hiking. It's relaxing.
+    responses:
+    - Thanks, I'll watch it this weekend.
+    - Hmm, I'm not into documentaries.
+    items:
+    - U2-079
+    - U2-080
+    - U2-081
+    - U2-082
+    - U2-083
+    lgs_weight: düşük
+    note_tr: Programın Ünite 2 işlevleri arasında yok; kaynak listelerden gelen sözcükler. Durum-tepki sorularında çeldirici ya da doğru şık olarak görünebilir.
+sources:
+- code: A
+  name: ingilizcele.com — Unit 2 Teen Life Vocabulary (PDF, 3 sayfa); günlük rutin ağırlıklı
+  rows: 119
+- code: B
+  name: ingilizceciyiz.com — 8. Sınıf 2. Ünite Önemli Kelimeler (Okan Gültekin)
+  rows: 78
+- code: C
+  name: Okul listesi 2019-2020 (camburnufomboo.meb.k12.tr, QUYZ-TÜM ÜNİTELER-2); eski kitabın kamp, kitap türü, kültürel miras sahnelerini taşır
+  rows: 217
+- code: D
+  name: teen-life-kelimeler.pdf; fikir bildirme, grafik kelimeleri, sıklık, tür listeleri
+  rows: 103
+- code: T
+  name: tahtaapp.com konu anlatımı
+  rows: 45
+- code: X
+  name: 212.xlsx — '1920 Unit 2 Teen Life Vocabulary List' (2019-2020 okul listesi; Ünite 1 sözcükleri de karışık)
+  rows: 30
+- code: K
+  name: Claude önerisi (bağımsız kaynak sayılmaz)
+  rows: 71
+- code: MEB
+  name: 'MEB İngilizce Dersi Öğretim Programı (2018), 8. sınıf Ünite 2 Teen Life: kazanımlar, Functions and Useful Language, önerilen bağlamlar (okul yıllık planları ve il ÖDM belgeleri üzerinden doğrulandı)'
+tasnif:
+  teaching_units: 92
+  counts:
+    havuz_tekil_satir: 391
+    havuz_TANIMA: 136
+    havuz_BILINEN: 126
+    havuz_CEKIRDEK: 73
+    havuz_ONCEKI_UNITE: 23
+    havuz_KALIP_ISLEV: 23
+    havuz_TUZAK: 10
+    birim_CEKIRDEK: 68
+    birim_KALIP_ISLEV: 15
+    birim_TUZAK: 9
+    birim_oncelik_1: 61
+    birim_oncelik_2: 31
+  items_file: lgs-pilot/content/unit_02_items.yaml
+  rules_tr:
+  - 'Öğretim birimi = ÇEKİRDEK + KALIP/İŞLEV + TUZAK. Havuz satırı ile birim farklıdır: varyantlar tek birimde birleşir (teen/teenager; fikir bildirme 1 kalıp; grafik kelimeleri 2 kalıp; sıklık zarfları
+    tek ölçek kalıbı). Bu yüzden havuzda 73 ÇEKİRDEK satırı, listede 68 ÇEKİRDEK birimi vardır.'
+  - 'Öncelik 1: en az 2 bağımsız kaynakta geçen sözcük ya da ünitenin kalıbı. Öncelik 2: tek kaynak.'
+  - 'BİLİNEN (A1 günlük rutin: get up, have breakfast, always, usually…) öğretilmez, hikâyede serbestçe geçer. Sıklık zarflarının kendisi BİLİNEN; öğretilen, sıralaması ve cümledeki yeridir (U2-044).'
+  - 'TANIMA: eski kitabın sahneleri (kamp malzemeleri, kitap türleri, kültürel miras) ve seviye üstü sözcükler. Hikâyede bağlamdan anlaşılır biçimde kullanılabilir, sınanmaz.'
+  - 'ÖNCEKİ ÜNİTE: Ünite 1''de öğretilen 23 birim (prefer, chat, boring, exciting, fun, spend time…). Sayılmaz, tekrar için kullanılır.'
+  - 100 birim kota değildir; ünite doğal olarak 92 birim verdi, doldurulmadı.
+  excluded_examples:
+    BILINEN:
+    - always
+    - usually
+    - often
+    - sometimes
+    - never
+    - get up
+    - have breakfast
+    - do homework
+    - go to bed
+    - listen to music
+    - love
+    - I think
+    - interesting
+    - healthy
+    - weekend
+    - singer
+    - concert
+    - popular
+    - comedy
+    - hobby
+    - go shopping
+    - play video games
+    - ride a bike
+    - take photos
+    - cool
+    - terrible
+    TANIMA:
+    - archery
+    - campfire
+    - tent
+    - compass
+    - sleeping bag
+    - torch
+    - detective
+    - fantasy
+    - biography
+    - heavy metal
+    - opera
+    - beatbox
+    - skydiving
+    - snowboarding
+    - trekking
+    - documentary
+    - thriller
+    - horror film
+    - leisure time
+    - screen time
+    - sleep in
+    - stay up late
+    - adore
+    - detest
+    - dull
+    - trending topics
+    - form a band
+    - catch the bus
+    ONCEKI_UNITE:
+    - prefer (U1-018)
+    - chat (U1-029)
+    - boring (U1-095)
+    - exciting (U1-096)
+    - fun (U1-098)
+    - be interested in (U1-038)
+    - spend time (U1-044)
+    - attend (U1-003)
+    - join (U1-015)
+    - share (U1-043)
+    - text (U1-046)
+    - argue (U1-027)
+    - buddy (U1-028)
+    - close friend (U1-030)
+    - fashionable (U1-072)
+    - respect (U1-061)
+    - honest (U1-077)
+    - respectful (U1-088)
+    - fair (U1-071)
+    - always in a hurry (U1-075)
+  exam_record:
+    kaynak: Ders kitabı listeleri + çıkmış kelime tablosu (2013–2020 TEOG, 2018–2020 LGS); sayı = toplam/LGS
+    ogretim_birimlerinde:
+    - can't stand (4/1 LGS)
+    - pick up (1/0 LGS)
+    - trendy (4/1 LGS)
+    - adult (1/1 LGS)
+    - terrific (1/0 LGS)
+    - unbearable (4/0 LGS)
+    bilinen_ama_sinavda_sik: []
+    not: bilinen_ama_sinavda_sik kelimeler öğretim birimi sayılmaz ama hikâyede ve soru köklerinde bilinçli olarak sık kullanılır.
+themes:
+- name: Beğeni, tercih, fikir
+  items:
+  - U2-005
+  - U2-006
+  - U2-007
+  - U2-008
+  - U2-009
+  - U2-010
+  - U2-011
+  - U2-012
+  - U2-013
+  - U2-014
+  - U2-015
+  - U2-016
+  - U2-017
+  - U2-018
+  note_tr: 'Ünitenin dilbilgisi çekirdeği: hepsi isim ya da V-ing alır. Sınavın en yoğun bölgesi.'
+- name: Gençlik hayatı ve etkinlikler
+  items:
+  - U2-001
+  - U2-002
+  - U2-004
+  - U2-019
+  - U2-020
+  - U2-031
+  - U2-032
+  - U2-033
+  - U2-034
+  - U2-036
+  - U2-037
+  - U2-038
+  - U2-039
+  - U2-041
+  - U2-054
+  - U2-055
+  - U2-056
+  - U2-057
+  - U2-058
+  - U2-072
+  - U2-084
+  - U2-085
+  - U2-086
+  - U2-087
+  note_tr: Spor, müzik grubu, sosyal medya, okul sorumlulukları. Okuma metinlerinin konu sözcükleri.
+- name: Günlük rutin ve sıklık
+  items:
+  - U2-040
+  - U2-043
+  - U2-044
+  - U2-045
+  - U2-046
+  - U2-047
+  - U2-048
+  - U2-049
+  - U2-050
+  - U2-051
+  - U2-052
+  - U2-053
+  note_tr: 'Tablo sorularının dili: hangi etkinlik ne sıklıkla.'
+- name: Değerlendirme sıfatları
+  items:
+  - U2-028
+  - U2-029
+  - U2-030
+  - U2-035
+  - U2-042
+  - U2-059
+  - U2-060
+  - U2-074
+  - U2-075
+  - U2-076
+  - U2-077
+  - U2-078
+  - U2-082
+  - U2-083
+  - U2-088
+  - U2-091
+  - U2-092
+  note_tr: Fikir cümlelerinin gerekçesi. Olumlu/olumsuz kutbu doğru bilmek diyalog sorularında belirleyicidir (terrific olumlu, unbearable olumsuz).
+- name: Moda ve giyim
+  items:
+  - U2-061
+  - U2-062
+  - U2-063
+  - U2-064
+  - U2-065
+  - U2-066
+  - U2-067
+  - U2-068
+  - U2-069
+  - U2-070
+  - U2-071
+  note_tr: Programın 'useful vocabulary' listesindeki casual fashion, trendy, snob bu temadadır.
+- name: Müzik ve film türleri
+  items:
+  - U2-021
+  - U2-022
+  - U2-023
+  - U2-024
+  - U2-025
+  - U2-026
+  - U2-027
+  - U2-073
+  note_tr: Programda 'types of music' olarak geçer. Tür adları Türkçeye yakın olduğundan kolaydır; asıl sınanan, türe yapılan yorumdur.
+- name: Öneri ve tavsiye
+  items:
+  - U2-079
+  - U2-080
+  - U2-081
+  note_tr: Kaynak listelerden; programın işlev listesinde yok, düşük ağırlık.
+- name: Anket ve grafik dili
+  items:
+  - U2-003
+  - U2-089
+  - U2-090
+  note_tr: Sayıca küçük ama LGS tablo/grafik sorularında doğrudan iş görür.
+grammar:
+- id: G1
+  name_tr: Beğeni fiilleri + V-ing (like, love, enjoy, hate, dislike, don't mind, can't stand)
+  form: Özne + like / love / enjoy / dislike / hate / don't mind / can't stand + V-ing ya da isim
+  examples:
+  - I enjoy listening to jazz in the evenings.
+  - My brother can't stand waiting in a queue.
+  - Do you mind lending me your guitar? — No, I don't mind.
+  - She loves taking selfies, but she hates sharing them.
+  explain_tr: 'Beğeni bildiren fiillerden sonra ikinci bir eylem gelirse fiil -ing alır. like, love ve hate ''to + fiil'' de alabilir (I like to read), anlam neredeyse aynıdır. enjoy, don''t mind, can''t
+    stand ve dislike ise yalnızca -ing alır. enjoy tek başına kalamaz, nesne ister: ''I enjoyed it.'''
+  common_errors:
+  - wrong: I enjoy to play basketball.
+    right: I enjoy playing basketball.
+    why_tr: enjoy'dan sonra 'to' gelmez; Türkçedeki 'oynamaktan' yapısı -ing ile karşılanır.
+  - wrong: I can't stand to get up early.
+    right: I can't stand getting up early.
+    why_tr: can't stand yalnızca -ing alır (LGS düzeyinde bunu kural olarak bil).
+  - wrong: I enjoyed very much.
+    right: I enjoyed it very much.
+    why_tr: enjoy geçişlidir; neyden keyif aldığını söylemek zorundasın.
+  - wrong: I don't mind to wait.
+    right: I don't mind waiting.
+    why_tr: don't mind + -ing.
+  lgs_note: Boşluk doldurma ve diyalog sorularında fiil biçimi (playing/to play) sınanabilir; daha sık sınanan, fiilin anlam derecesidir (don't mind = nötr, can't stand = çok olumsuz).
+  items:
+  - U2-007
+  - U2-008
+  - U2-011
+  - U2-012
+  - U2-013
+  - U2-014
+- id: G2
+  name_tr: Edatlı beğeni kalıpları + isim / V-ing (be fond of, be keen on, be crazy about, be into)
+  form: Özne + am/is/are + fond of / keen on / crazy about / into / interested in + isim ya da V-ing
+  examples:
+  - Elif is crazy about a famous singer.
+  - I'm not keen on doing karate.
+  - Kaan is fond of playing basketball.
+  - Are you into science fiction?
+  explain_tr: 'Bu kalıplarda ''be'' fiili ve edat zorunludur; edattan sonraki fiil her zaman -ing alır. Güç sırası kabaca: be crazy about (bayılmak) > be fond of / be keen on (çok sevmek, meraklı olmak)
+    > be into (gündelik: ilgisi olmak). Olumsuzda ''not keen on'' kibarca ''pek sevmem'' demektir.'
+  common_errors:
+  - wrong: I fond of music.
+    right: I'm fond of music.
+    why_tr: fond bir sıfattır; 'be' olmadan cümle kurulmaz. Türkçede 'düşkünüm' tek kelime olduğu için 'am' unutulur.
+  - wrong: She is keen on to dance.
+    right: She is keen on dancing.
+    why_tr: Edattan (on, of, about, into) sonra fiil -ing olur.
+  - wrong: He is crazy for football.
+    right: He is crazy about football.
+    why_tr: 'Edat kalıbın parçasıdır: crazy about, fond of, keen on, interested in.'
+  - wrong: I'm interesting in jazz.
+    right: I'm interested in jazz.
+    why_tr: İlgiyi duyan kişi -ed alır; interesting, şeyin kendisini anlatır.
+  lgs_note: Eş anlam sorularında 'be fond of = be keen on = like a lot' ve 'be into = be interested in' eşleşmeleri çıkar.
+  items:
+  - U2-009
+  - U2-010
+  - U2-015
+  - U2-016
+- id: G3
+  name_tr: 'Tercih: prefer A to B / prefer + V-ing'
+  form: prefer + isim/V-ing + to + isim/V-ing · Which do you prefer, A or B?
+  examples:
+  - I prefer pop music to rock music.
+  - Bora prefers individual sports to team sports.
+  - She prefers reading the news online.
+  explain_tr: Karşılaştırmalı tercihte 'than' değil 'to' kullanılır. Kişi 3. tekil ise prefers olur.
+  common_errors:
+  - wrong: I prefer jazz than rap.
+    right: I prefer jazz to rap.
+    why_tr: prefer kalıbında 'than' yerine 'to'; Türkçedeki '-e göre/-den' karışıklığı.
+  - wrong: He prefer hiking.
+    right: He prefers hiking.
+    why_tr: Simple Present'ta he/she/it -s alır.
+  lgs_note: prefer Ünite 1'den tanıdık; bu ünitede tercih diyaloglarında ve anket metinlerinde geçer.
+  items:
+  - U1-018
+  - U2-036
+  - U2-037
+- id: G4
+  name_tr: 'Simple Present: düzenli etkinlikler ve rutin'
+  form: I/You/We/They + V · He/She/It + V-s/-es · Do/Does + özne + V? · don't/doesn't + V
+  examples:
+  - Selin follows the news every morning.
+  - Does Kaan work out regularly? — Yes, he does.
+  - My dad picks me up after school.
+  - Teenagers don't usually wear formal clothes at weekends.
+  explain_tr: Alışkanlık, rutin ve genel doğruları anlatır. Soru ve olumsuzda does/doesn't geldiğinde fiil yalın kalır.
+  common_errors:
+  - wrong: She doesn't likes rap.
+    right: She doesn't like rap.
+    why_tr: -s yükünü 'does' alır; ana fiil yalın kalır.
+  - wrong: Does he goes to the gym?
+    right: Does he go to the gym?
+    why_tr: Soruda da aynı kural.
+  - wrong: My sister watch TV every evening.
+    right: My sister watches TV every evening.
+    why_tr: 3. tekil öznede -s/-es unutulmamalı.
+  lgs_note: Metin sorularında 3. tekil kişi hakkında anlatım yapılır; doğru şık genellikle metindeki bilginin farklı sözcüklerle (paraphrase) söylenmiş hâlidir.
+  items:
+  - U2-043
+  - U2-048
+  - U2-054
+- id: G5
+  name_tr: 'Sıklık zarfları: sıra ve cümledeki yer'
+  form: always (%100) > usually > often > sometimes > rarely/seldom/hardly ever > never (%0) · zarf + ana fiil · am/is/are + zarf
+  examples:
+  - Kaan is always late for school.
+  - I usually hang out with my friends on Saturdays.
+  - Bora hardly ever reads books.
+  - We rarely go to classical music concerts.
+  explain_tr: 'Sıklık zarfı ana fiilden önce, ''be'' fiilinden (am/is/are) sonra gelir. Yardımcı fiil varsa yardımcı fiil ile ana fiil arasına girer: ''I don''t usually…'', ''Do you often…?''. sometimes
+    ve usually cümle başına da gelebilir. rarely, seldom, hardly ever ve never zaten olumsuz anlamlıdır; fiil olumlu kalır.'
+  common_errors:
+  - wrong: I go always to the gym.
+    right: I always go to the gym.
+    why_tr: Türkçede zarf serbest dolaşır; İngilizcede ana fiilden önce durur.
+  - wrong: He always is happy.
+    right: He is always happy.
+    why_tr: be fiilinden sonra gelir.
+  - wrong: I don't never eat fast food.
+    right: I never eat fast food.
+    why_tr: Çift olumsuz olmaz; never/hardly ever zaten 'hiç/neredeyse hiç' demektir.
+  - wrong: I hardly go to the cinema. (= neredeyse hiç anlamında)
+    right: I hardly ever go to the cinema.
+    why_tr: Sıklık için kalıp 'hardly ever'dır.
+  lgs_note: Tablo sorularında işaret sayısı ↔ zarf eşleştirmesi sınanır (7 gün = always/every day, 0 = never). Ölçekte rarely ve seldom aynı basamaktadır.
+  items:
+  - U2-044
+  - U2-049
+  - U2-050
+  - U2-051
+  - U2-045
+  - U2-046
+  - U2-047
+- id: G6
+  name_tr: 'Sıklık ifadeleri: once / twice / … times + a day/week/month; every …'
+  form: once / twice / three times + a + day/week/month/year · every + day/week/Monday · on + günler (on Fridays)
+  examples:
+  - I go hiking twice a month.
+  - Duru walks Fıstık three times a day.
+  - We have band practice every Saturday.
+  explain_tr: Bu ifadeler cümlenin sonuna gelir. 'Bir kez' once, 'iki kez' twice; üçten sonra 'number + times'. 'Haftada' karşılığı 'a week'tir (in a week değil).
+  common_errors:
+  - wrong: I go to the gym two times in a week.
+    right: I go to the gym twice a week.
+    why_tr: Türkçedeki 'haftada' → a week; 'two times' yanlış değil ama 'twice' doğal ve sınavdaki biçimdir.
+  - wrong: How many times do you go swimming? — At 5 o'clock.
+    right: How often do you go swimming? — Once a week.
+    why_tr: Sıklık sorusu 'How often'dır; cevap saat değil sıklık olmalıdır.
+  lgs_note: Tablo sorularında 'once a week' ile 'every day' gibi farklar üzerinden doğru/yanlış cümle seçtirilir.
+  items:
+  - U2-052
+  - U2-044
+- id: G7
+  name_tr: 'Anket ve grafik dili: miktar sözcükleri ve karşılaştırma'
+  form: All / Most / Half / Some / A few / None + of the + çoğul isim (+ çoğul fiil) · more/less + isim + than · the most / the least + sıfat/isim
+  examples:
+  - Most of the students enjoy pop music.
+  - Half of the teenagers in the survey work out regularly.
+  - Only a few students listen to jazz.
+  - None of my classmates likes folk music.
+  - Football is more popular than basketball in our class.
+  - Rap is the least popular genre.
+  explain_tr: 'Oranlar: all = %100, most = yarıdan fazla, half = %50, some = bir kısmı, a few = az sayıda, none = %0. ''about / nearly'' = yaklaşık. Bir sınıfın %60''ı ''most'' (çoğu), %10''u ''a few''
+    (birkaçı) olarak anlatılır. ''None of'' sonrası fiil tekil ya da çoğul olabilir; sınavda ikisi de kabul görür.'
+  common_errors:
+  - wrong: Most of students like rap.
+    right: Most of the students like rap. / Most students like rap.
+    why_tr: '''of'' kullanılırsa ardından ''the/my/these'' gelir.'
+  - wrong: The most students like pop.
+    right: Most students like pop.
+    why_tr: '''the most'' en çok (üstünlük) demektir; ''çoğu'' anlamında ''most'' tek başına kullanılır.'
+  - wrong: None of them don't like football.
+    right: None of them like(s) football.
+    why_tr: None zaten olumsuz; fiil olumlu kalır.
+  - wrong: Basketball is popular than tennis.
+    right: Basketball is more popular than tennis.
+    why_tr: Uzun sıfatlarda karşılaştırma 'more … than' ile yapılır.
+  lgs_note: 'Grafik sorusunun özü: rakamı doğru miktar sözcüğüne çevirmek. ''Half'' = tam yarı; 15/30 half, 16/30 ''more than half/most''.'
+  items:
+  - U2-089
+  - U2-090
+  - U2-003
+- id: G8
+  name_tr: Fikir bildirme kalıpları ve noktalama
+  form: In my opinion, … · I think (that) … · I believe (that) … · From my point of view, … · To be honest, …
+  examples:
+  - In my opinion, smart clothes are not comfortable.
+  - To be honest, I can't stand horror films.
+  - I believe hiking is relaxing.
+  explain_tr: Hepsi 'bence' anlamına yakındır. In my opinion / From my point of view / To be honest cümle başındayken virgülle ayrılır; I think / I believe virgül almaz.
+  common_errors:
+  - wrong: According to me, jazz is boring.
+    right: In my opinion, jazz is boring.
+    why_tr: '''Bana göre''nin kelimesi kelimesine çevirisi doğal değildir; according to başkalarının görüşü/kaynak için kullanılır (according to the survey).'
+  - wrong: In my opinion, I think rap is awesome.
+    right: In my opinion, rap is awesome. / I think rap is awesome.
+    why_tr: İki fikir kalıbı üst üste gereksiz tekrar olur.
+  - wrong: To be honestly, …
+    right: To be honest, …
+    why_tr: 'Kalıp sabittir: to be honest.'
+  lgs_note: according to soru köklerinde 'metne/grafiğe göre' anlamında çok geçer; öğrencinin kendi fikri için kullanılmaz.
+  items:
+  - U2-005
+  - U2-018
+- id: G9
+  name_tr: -ed / -ing sıfatları (annoyed / annoying, relaxed / relaxing)
+  form: duyguyu yaşayan kişi → -ed (annoyed, bored, interested) · duyguyu veren şey/kişi → -ing (annoying, boring, interesting)
+  examples:
+  - The noisy neighbour is annoying. Duru is annoyed.
+  - Hiking is relaxing, so I feel relaxed after it.
+  - This documentary is educational and entertaining.
+  explain_tr: 'Türkçede ''sıkıcı / sıkılmış'', ''sinir bozucu / sinirlenmiş'' farkı aynı mantıktır: -ing = -ıcı, -ed = -mış.'
+  common_errors:
+  - wrong: I am boring in the history lesson.
+    right: I am bored in the history lesson.
+    why_tr: '''I am boring'' ''ben sıkıcı biriyim'' demektir.'
+  - wrong: The loud music makes me annoying.
+    right: The loud music makes me annoyed.
+    why_tr: Duyguyu yaşayan kişi -ed alır.
+  lgs_note: Sıfat seçimi soruları ve metindeki duygu çıkarımı (Duru is annoyed → mutsuz/rahatsız) için.
+  items:
+  - U2-030
+  - U2-042
+  - U2-091
+  - U2-083
+  - U2-082
+- id: G10
+  name_tr: recommend / suggest / advise kalıpları
+  form: recommend/suggest + V-ing · recommend + isim (+ to someone) · advise + someone + to V · advice (isim, sayılamaz)
+  examples:
+  - Murat Bey recommended this book to us.
+  - I suggest watching a science fiction film tonight.
+  - The coach advised Kaan to rest after training.
+  explain_tr: 'advise fiildir (s ile, /z/ sesi), advice isimdir (c ile, /s/ sesi) ve sayılamaz: a piece of advice.'
+  common_errors:
+  - wrong: She suggested me a film.
+    right: She suggested a film to me.
+    why_tr: suggest kişiyi doğrudan nesne almaz.
+  - wrong: He gave me an advise.
+    right: He gave me some advice.
+    why_tr: İsim advice'tır ve 'an' almaz.
+  - wrong: I recommend you to watch it.
+    right: I recommend watching it. / I recommend that you watch it.
+    why_tr: LGS düzeyinde güvenli kalıp recommend + V-ing ya da isim.
+  lgs_note: Düşük ağırlık; okuma metinlerinde tanıma düzeyinde yeterli.
+  items:
+  - U2-079
+  - U2-080
+  - U2-081
+expressions:
+- en: What do you do in your free time?
+  tr: Boş zamanında ne yaparsın?
+  use: Birinin hobilerini sorarken; anketin klasik ilk sorusu.
+  reply:
+  - I usually hang out with my friends.
+  - I'm into music, so I play the guitar.
+  item: U2-002
+  register: nötr
+- en: How often do you …?
+  tr: Ne sıklıkla …?
+  use: Bir etkinliğin sıklığını sorarken.
+  reply:
+  - Twice a week.
+  - Hardly ever.
+  - Every day after school.
+  item: U2-044
+  register: nötr
+- en: What about you? / How about you?
+  tr: Ya sen?
+  use: Kendi cevabını verdikten sonra soruyu karşı tarafa yöneltirken.
+  reply:
+  - Me too.
+  - Not me. I prefer rock.
+  item: U2-006
+  register: gündelik
+- en: I don't mind.
+  tr: Fark etmez. / Benim için sorun değil.
+  use: Seçenekler arasında tercihin olmadığında ya da bir şeye razı olduğunda.
+  reply:
+  - Great, let's watch the comedy then.
+  - Are you sure?
+  item: U2-011
+  register: nötr
+- en: I can't stand it!
+  tr: Ona katlanamıyorum! / Hiç çekemem!
+  use: Çok güçlü hoşnutsuzluk; arkadaşlar arasında.
+  reply:
+  - Really? I quite like it.
+  - Me neither! It's so annoying.
+  item: U2-013
+  register: gündelik
+- en: I'm crazy about …
+  tr: …'e bayılıyorum.
+  use: Çok sevdiğin bir şey için coşkulu konuşurken.
+  reply:
+  - Me too! It's awesome.
+  - Really? I'm not keen on it.
+  item: U2-015
+  register: gündelik
+- en: I'm not really into …
+  tr: … pek bana göre değil.
+  use: Kibarca ilgisizlik bildirirken.
+  reply:
+  - What are you into, then?
+  - No problem. What about pop?
+  item: U2-016
+  register: gündelik
+- en: It's not my cup of tea.
+  tr: Bana hitap etmiyor. / Benim tarzım değil.
+  use: İngiliz İngilizcesinde kibar 'sevmem' deyimi; bir müzik türü, film ya da etkinlik için.
+  reply:
+  - Fair enough. What do you like?
+  item: U2-012
+  register: gündelik
+- en: To be honest, …
+  tr: Açıkçası, … / Dürüst olmak gerekirse, …
+  use: Karşı tarafın duymak istemeyebileceği bir fikri yumuşatarak söylerken.
+  reply:
+  - That's OK. Tell me.
+  - I see your point.
+  item: U2-018
+  register: nötr
+- en: In my opinion, … / From my point of view, …
+  tr: Bence, … / Bana göre, …
+  use: Fikrini açıkça belirtirken; yazılı metinlerde ve sunumlarda da uygun.
+  reply:
+  - I agree with you.
+  - I'm afraid I don't agree.
+  item: U2-005
+  register: resmi
+- en: Me too. / So do I.
+  tr: Ben de.
+  use: Olumlu bir cümleye katılırken (I love jazz. — So do I.).
+  reply: []
+  register: gündelik
+- en: Me neither. / Neither do I.
+  tr: Ben de (değil).
+  use: Olumsuz bir cümleye katılırken (I don't like rap. — Me neither.).
+  reply: []
+  register: gündelik
+- en: It drives me crazy.
+  tr: Beni deli ediyor, çıldırtıyor.
+  use: Sinir bozucu bir şey için; 'be crazy about' (bayılmak) ile karıştırılmamalı.
+  reply:
+  - I know! It's so annoying.
+  - Just ignore it.
+  item: U2-030
+  register: gündelik
+- en: That's ridiculous!
+  tr: Bu çok saçma!
+  use: Mantıksız ya da gülünç bir fikir veya görünüm için.
+  reply:
+  - No, it isn't! It's trendy.
+  - I know, but it's funny.
+  item: U2-060
+  register: gündelik
+- en: Sounds terrific! / That's awesome!
+  tr: Kulağa müthiş geliyor! / Bu müthiş!
+  use: Bir öneriye ya da habere coşkuyla karşılık verirken.
+  reply:
+  - I knew you'd like it!
+  item: U2-075
+  register: gündelik
+- en: Can you recommend a good …?
+  tr: İyi bir … önerebilir misin?
+  use: Film, kitap, şarkı tavsiyesi isterken.
+  reply:
+  - I'd recommend this one. It's fascinating.
+  - You should watch a science fiction film.
+  item: U2-079
+  register: nötr
+- en: You look fit!
+  tr: Formda görünüyorsun!
+  use: Spor yapan birine iltifat ederken.
+  reply:
+  - Thanks! I work out three times a week.
+  item: U2-034
+  register: gündelik
+- en: Let's hang out after school.
+  tr: Okuldan sonra takılalım.
+  use: Arkadaşa gündelik buluşma önerirken.
+  reply:
+  - Sounds good!
+  - Sorry, I can't. I have karate.
+  item: U2-004
+  register: gündelik
+- en: No way!
+  tr: Olmaz! / İmkânı yok! / Hadi canım!
+  use: Güçlü ret ya da şaşkınlık; arkadaşlar arası.
+  register: gündelik
+collocations:
+- item: U2-002
+  pairs:
+  - in my free time
+  - have free time
+  - spend your free time (doing)
+  - free-time activities
+- item: U2-003
+  pairs:
+  - do / carry out a survey
+  - the results of the survey
+  - according to the survey
+  - a survey about teenagers
+- item: U2-004
+  pairs:
+  - hang out with friends
+  - hang out at the mall / in the park
+  - a place to hang out
+- item: U2-008
+  pairs:
+  - enjoy + V-ing
+  - enjoy yourself
+  - enjoy the film / the concert
+  - really enjoy
+- item: U2-019
+  pairs:
+  - form / start a band
+  - join a band
+  - a rock / school band
+  - band practice
+- item: U2-020
+  pairs:
+  - a member of the band / club / team
+  - become a member
+  - family member
+- item: U2-031
+  pairs:
+  - go to the gym
+  - join a gym
+  - at the gym
+  - gym class
+- item: U2-032
+  pairs:
+  - work out at the gym
+  - work out regularly
+  - work out three times a week
+- item: U2-033
+  pairs:
+  - train hard
+  - train for a match
+  - train every day
+- item: U2-038
+  pairs:
+  - do karate / judo / yoga / gymnastics
+  - play football / basketball / chess
+  - go swimming / hiking / skating
+- item: U2-041
+  pairs:
+  - pay attention to the teacher
+  - pay attention in class
+  - pay more attention
+- item: U2-048
+  pairs:
+  - pick someone up from school
+  - pick up litter
+  - pick up the phone
+  - pick me up at 5
+- item: U2-053
+  pairs:
+  - wait in a queue
+  - join the queue
+  - jump the queue
+  - a long queue
+- item: U2-054
+  pairs:
+  - follow the news
+  - follow someone on social media
+  - follow the rules
+- item: U2-057
+  pairs:
+  - take a selfie (make değil)
+  - take photos
+  - post a selfie
+- item: U2-058
+  pairs:
+  - share a photo on social media
+  - post on social media
+  - spend time on social media
+- item: U2-061
+  pairs:
+  - in fashion
+  - out of fashion
+  - fashion show
+  - follow fashion
+- item: U2-063
+  pairs:
+  - keep up with the latest fashion
+  - keep up with trends
+  - the latest news / songs
+- item: U2-064
+  pairs:
+  - wear casual clothes
+  - casual clothes ↔ smart / formal clothes
+  - casual style
+- item: U2-071
+  pairs:
+  - pretty good
+  - pretty easy
+  - pretty boring
+  - a pretty dress
+- item: U2-079
+  pairs:
+  - recommend a book / film to someone
+  - highly recommend
+  - recommend + V-ing
+- item: U2-084
+  pairs:
+  - follow the rules
+  - break the rules
+  - school rules
+- item: U2-087
+  pairs:
+  - get high grades
+  - get low grades
+  - get good marks (BrE)
+- item: U2-028
+  pairs:
+  - loud music
+  - a loud voice
+  - too loud
+  - turn the music down, it's too loud
+- item: U2-075
+  pairs:
+  - a terrific idea
+  - do a terrific job
+  - terrific news
+word_families:
+- root: enjoy
+  forms:
+  - form: enjoy
+    pos: fiil
+    tr: keyif almak
+    item: U2-008
+  - form: enjoyable
+    pos: sıfat
+    tr: keyifli, zevkli
+    item: U2-092
+  - form: enjoyment
+    pos: isim
+    tr: keyif, zevk
+- root: annoy
+  forms:
+  - form: annoy
+    pos: fiil
+    tr: sinir etmek, rahatsız etmek
+  - form: annoyed
+    pos: sıfat
+    tr: sinirlenmiş, rahatsız olmuş
+    item: U2-042
+  - form: annoying
+    pos: sıfat
+    tr: sinir bozucu
+    item: U2-030
+- root: relax
+  forms:
+  - form: relax
+    pos: fiil
+    tr: rahatlamak, dinlenmek
+  - form: relaxed
+    pos: sıfat
+    tr: rahatlamış, rahat (kişi)
+  - form: relaxing
+    pos: sıfat
+    tr: rahatlatıcı
+    item: U2-091
+- root: entertain
+  forms:
+  - form: entertain
+    pos: fiil
+    tr: eğlendirmek
+  - form: entertaining
+    pos: sıfat
+    tr: eğlendirici
+    item: U2-083
+  - form: entertainment
+    pos: isim
+    tr: eğlence
+- root: educate
+  forms:
+  - form: education
+    pos: isim
+    tr: eğitim
+  - form: educational
+    pos: sıfat
+    tr: eğitici, öğretici
+    item: U2-082
+- root: impress
+  forms:
+  - form: impress
+    pos: fiil
+    tr: etkilemek
+  - form: impressive
+    pos: sıfat
+    tr: etkileyici
+    item: U2-076
+  - form: impressed
+    pos: sıfat
+    tr: etkilenmiş
+- root: fascinate
+  forms:
+  - form: fascinating
+    pos: sıfat
+    tr: büyüleyici
+    item: U2-077
+  - form: fascinated
+    pos: sıfat
+    tr: büyülenmiş
+- root: bear
+  forms:
+  - form: bear
+    pos: fiil
+    tr: katlanmak, dayanmak (genelde can't bear)
+  - form: unbearable
+    pos: sıfat
+    tr: katlanılmaz
+    item: U2-088
+  - form: bearable
+    pos: sıfat
+    tr: katlanılabilir
+- root: like
+  forms:
+  - form: like
+    pos: fiil
+    tr: sevmek, hoşlanmak
+    item: U2-007
+  - form: dislike
+    pos: fiil/isim
+    tr: sevmemek; hoşlanmama
+    item: U2-012
+  - form: likes and dislikes
+    pos: isim
+    tr: sevdikleri ve sevmedikleri
+- root: fashion
+  forms:
+  - form: fashion
+    pos: isim
+    tr: moda
+    item: U2-061
+  - form: fashionable
+    pos: sıfat
+    tr: modaya uygun, şık
+    item: U1-072
+  - form: old-fashioned
+    pos: sıfat
+    tr: demode, eski moda
+- root: comfort
+  forms:
+  - form: comfortable
+    pos: sıfat
+    tr: rahat
+    item: U2-068
+  - form: uncomfortable
+    pos: sıfat
+    tr: rahatsız (eden)
+- root: energy
+  forms:
+  - form: energy
+    pos: isim
+    tr: enerji
+  - form: energetic
+    pos: sıfat
+    tr: enerjik
+    item: U2-035
+- root: regular
+  forms:
+  - form: regular
+    pos: sıfat
+    tr: düzenli
+  - form: regularly
+    pos: zarf
+    tr: düzenli olarak
+    item: U2-045
+- root: real
+  forms:
+  - form: real
+    pos: sıfat
+    tr: gerçek
+  - form: realistic
+    pos: sıfat
+    tr: gerçekçi
+    item: U2-085
+  - form: unrealistic
+    pos: sıfat
+    tr: gerçekçi olmayan
+- root: advise / advice
+  forms:
+  - form: advise
+    pos: fiil
+    tr: tavsiye etmek
+    item: U2-081
+  - form: advice
+    pos: isim (sayılamaz)
+    tr: tavsiye, öğüt
+    item: U1-035
+- root: recommend / suggest
+  forms:
+  - form: recommend
+    pos: fiil
+    tr: tavsiye etmek
+    item: U2-079
+  - form: recommendation
+    pos: isim
+    tr: tavsiye
+  - form: suggest
+    pos: fiil
+    tr: önermek
+    item: U2-080
+  - form: suggestion
+    pos: isim
+    tr: öneri
+- root: awe
+  forms:
+  - form: awesome
+    pos: sıfat
+    tr: müthiş, harika
+    item: U2-074
+  - form: awful
+    pos: sıfat
+    tr: berbat
+    item: U2-078
+- root: admire
+  forms:
+  - form: admire
+    pos: fiil
+    tr: hayran olmak
+    item: U2-017
+  - form: admirer
+    pos: isim
+    tr: hayran
+  - form: admiration
+    pos: isim
+    tr: hayranlık
+synonym_sets:
+- words:
+  - be crazy about
+  - love
+  - be fond of
+  - be keen on
+  - enjoy
+  - like
+  - be into
+  difference_tr: 'Hepsi olumlu. Güç sırası kabaca: crazy about > love > fond of / keen on / enjoy > like. be into gündelik dildir. enjoy daha çok etkinlik için (enjoy swimming), admire ise kişiye hayranlık
+    (admire a singer) içindir.'
+  items:
+  - U2-015
+  - U2-009
+  - U2-010
+  - U2-008
+  - U2-007
+  - U2-016
+  - U2-017
+- words:
+  - dislike
+  - hate
+  - can't stand
+  difference_tr: dislike = sevmemek (ılımlı, biraz resmi); hate ve can't stand = nefret etmek, katlanamamak (en güçlü). don't mind bu skalanın ortasıdır, olumsuz değildir.
+  items:
+  - U2-012
+  - U2-014
+  - U2-013
+  - U2-011
+- words:
+  - rarely
+  - seldom
+  - hardly ever
+  difference_tr: Üçü de 'nadiren'. hardly ever 'neredeyse hiç' ile never'a en yakın olanıdır; seldom biraz daha yazı dilidir. Sınavda üçü de aynı basamak kabul edilir.
+  items:
+  - U2-049
+  - U2-050
+  - U2-051
+- words:
+  - usually
+  - mostly
+  - most of the time
+  difference_tr: usually sıklık zarfıdır (fiilden önce). mostly ve most of the time 'çoğunlukla, çoğu zaman' anlamında, genelde cümle sonunda ya da başında.
+  items:
+  - U2-044
+  - U2-046
+  - U2-047
+- words:
+  - awesome
+  - terrific
+  - fantastic
+  - amazing
+  - impressive
+  - fascinating
+  difference_tr: Hepsi olumlu. awesome/terrific/fantastic gündelik coşku; impressive 'etkileyici' (başarı, performans); fascinating 'büyüleyici' (merak uyandıran konu, belgesel).
+  items:
+  - U2-074
+  - U2-075
+  - U2-076
+  - U2-077
+- words:
+  - awful
+  - terrible
+  - unbearable
+  - ridiculous
+  difference_tr: awful/terrible = berbat (kalite); unbearable = katlanılmaz (sıcak, gürültü, ödev yükü); ridiculous = saçma, gülünç (fikir, kıyafet).
+  items:
+  - U2-078
+  - U2-088
+  - U2-060
+- words:
+  - loud
+  - noisy
+  difference_tr: loud ses şiddetini anlatır (loud music, a loud voice); noisy bir yerin ya da kişinin sürekli gürültü yaptığını (a noisy classroom, noisy neighbours).
+  items:
+  - U2-028
+  - U2-029
+- words:
+  - recommend
+  - suggest
+  - advise
+  difference_tr: 'recommend: denediğin bir şeyi tavsiye etmek (film, kitap); suggest: fikir/öneri sunmak (Let''s…); advise: yol göstermek, öğüt vermek (doktor, öğretmen).'
+  items:
+  - U2-079
+  - U2-080
+  - U2-081
+- words:
+  - trendy
+  - fashionable
+  - in fashion
+  difference_tr: trendy daha gündelik ve 'şu an popüler' vurgulu; fashionable daha genel 'modaya uygun' (U1-072).
+  items:
+  - U2-062
+  - U1-072
+- words:
+  - outfit
+  - clothes
+  difference_tr: clothes genel olarak kıyafetler (her zaman çoğul); outfit bir arada giyilen takım/kombin (a new outfit for the party).
+  items:
+  - U2-066
+- words:
+  - entertaining
+  - fun
+  - enjoyable
+  - relaxing
+  - educational
+  difference_tr: entertaining insanı eğlendiren (film, gösteri); fun eğlenceli (etkinlik, kişi); enjoyable keyifli; relaxing rahatlatıcı; educational öğretici. Kaynak D 'fun = entertaining' der; yakın ama
+    aynı değil.
+  items:
+  - U2-083
+  - U2-092
+  - U2-091
+  - U2-082
+- words:
+  - annoyed
+  - nervous
+  - angry
+  difference_tr: annoyed = canı sıkılmış, sinirlenmiş (hafif kızgınlık); angry = kızgın; nervous = gergin, heyecanlı, tedirgin (sınav, sahne öncesi). nervous 'sinirli' değildir.
+  items:
+  - U2-042
+  - U2-059
+- words:
+  - teen
+  - teenager
+  - adolescent
+  difference_tr: teen ve teenager aynı (13-19 yaş); adolescent resmi/bilimsel ve sınav düzeyi dışında.
+  items:
+  - U2-001
+opposites:
+- a: like
+  b: dislike
+  note_tr: dis- ön eki olumsuzluk verir.
+- a: love
+  b: hate
+- a: be crazy about
+  b: can't stand
+  note_tr: Beğeni skalasının iki ucu.
+- a: always
+  b: never
+- a: casual clothes
+  b: smart / formal clothes
+- a: formal
+  b: informal / casual
+- a: team sport
+  b: individual sport
+- a: loud
+  b: quiet
+- a: noisy
+  b: quiet / peaceful
+- a: trendy
+  b: old-fashioned
+- a: ordinary
+  b: unusual / extraordinary
+- a: comfortable
+  b: uncomfortable
+- a: awesome
+  b: awful
+  note_tr: Aynı kökten (awe) ama zıt anlam.
+- a: terrific
+  b: terrible
+  note_tr: Benzer yazılış, zıt anlam.
+- a: relaxing
+  b: stressful
+- a: teenager
+  b: adult
+- a: realistic
+  b: unrealistic
+- a: follow the rules
+  b: break the rules
+- a: get high grades
+  b: get low grades
+- a: more than
+  b: less than
+- a: the most
+  b: the least
+- a: all
+  b: none
+- a: work out
+  b: rest
+- a: energetic
+  b: lazy / tired
+traps:
+- about: like
+  item: U2-007
+  kind: cok_anlamli
+  trap_tr: Ünite 1'de 'What is he like?' = 'Nasıl biri?' (like = gibi). Bu ünitede 'Do you like…?' = 'sever misin?'.
+  tip_tr: '''What is she like?'' kişilik sorar; ''What does she like?'' zevklerini sorar. ''does'' varsa ''sevmek''tir.'
+- about: can't stand
+  item: U2-013
+  kind: cok_anlamli
+  trap_tr: stand = ayakta durmak; öğrenci 'ayakta duramıyorum' diye çevirir.
+  tip_tr: can't stand + isim/-ing = katlanamamak. 'I can't stand rap' müzikle ilgilidir, bacakla değil.
+- about: don't mind
+  item: U2-011
+  kind: kaynak_hatasi
+  trap_tr: Kaynak D 'mind = umursamak' der. Öğrenci 'I don't mind' cümlesini 'umursamıyorum, bana ne' gibi kaba bir tavır sanır.
+  tip_tr: I don't mind = fark etmez / benim için sorun değil (nötr, kibar). Olumsuz bir duygu değildir; beğeni skalasının ortasıdır.
+- about: terrific
+  item: U2-075
+  kind: sahte_dost
+  trap_tr: terror/terrible çağrışımıyla 'korkunç' sanılır.
+  tip_tr: terrific = müthiş, harika (olumlu). terrible = berbat (olumsuz). Diyalogda 'terrific' diyen kişi memnundur.
+- about: smart clothes
+  item: U2-065
+  kind: cok_anlamli
+  trap_tr: smart = akıllı; 'akıllı kıyafet' gibi anlaşılır.
+  tip_tr: Kıyafet için smart = şık, özenli. smart clothes ↔ casual clothes.
+- about: genre / type
+  item: U2-021
+  kind: cok_anlamli
+  trap_tr: type hem 'tür' (isim) hem 'klavyede yazmak' (fiil). genre okunuşu yazılışından çok farklı.
+  tip_tr: What type/kind of music…? = hangi tür. genre /ˈʒɒnrə/ 'jonra' gibi okunur.
+- about: train
+  item: U2-033
+  kind: cok_anlamli
+  trap_tr: train = tren (isim) bilinir; fiil olarak 'antrenman yapmak' kaçırılır.
+  tip_tr: 'Özneden sonra fiil yerinde ise antrenmandır: ''Kaan trains every day.'' Türkçedeki ''antrenman'' sözcüğü de buradan.'
+- about: look fit / fit
+  item: U2-034
+  kind: cok_anlamli
+  trap_tr: fit = formda; ama 'These jeans don't fit' = 'bu kot üstüme olmuyor'.
+  tip_tr: look fit, keep fit → sağlık/spor. fit + kıyafet → beden uyması.
+- about: rest
+  item: U2-040
+  kind: cok_anlamli
+  trap_tr: rest = dinlenmek; 'the rest (of)' = geri kalanı. Grafik sorularında 'the rest of the students' çıkabilir.
+  tip_tr: the + rest + of → geri kalan. Fiil yerinde → dinlenmek.
+- about: pick up
+  item: U2-048
+  kind: cok_anlamli
+  trap_tr: pick up = yerden almak; ama 'My dad picks me up after school' = 'babam beni okuldan (arabayla) alır'.
+  tip_tr: pick + kişi + up → birini bir yerden almak. pick up + eşya → yerden almak.
+- about: hang out
+  item: U2-004
+  kind: turkce_etkisi
+  trap_tr: hang = asmak; 'dışarı asmak' gibi saçma çeviriler. Kaynak B 'hang around = gezinmek' der, nüans kaçar.
+  tip_tr: hang out (with) = arkadaşlarla takılmak, vakit geçirmek; amaçsız ve keyifli zaman.
+- about: queue
+  item: U2-053
+  kind: benzer_yazilis
+  trap_tr: Yazılışı okunuşundan çok farklı (/kjuː/, 'kyu'). Amerikan İngilizcesinde 'line' denir.
+  tip_tr: Q harfi gibi okunur; geri kalan 'ueue' sessizdir. wait in a queue = sırada beklemek.
+- about: pretty
+  item: U2-071
+  kind: cok_anlamli
+  trap_tr: Kaynaklar yalnızca 'sevimli' verir. 'pretty good / pretty boring' içinde pretty = oldukça.
+  tip_tr: pretty + sıfat → oldukça. pretty + isim → güzel, sevimli (a pretty dress).
+- about: nervous
+  item: U2-059
+  kind: kaynak_hatasi
+  trap_tr: Kaynak D 'nervous = gergin, sinirli' der; Türkçedeki 'sinirli' (kızgın) anlamı yanlıştır.
+  tip_tr: nervous = gergin, heyecanlı, tedirgin (sınav, sahne öncesi). Kızgın için angry / annoyed.
+- about: ridiculous
+  item: U2-060
+  kind: kaynak_hatasi
+  trap_tr: Kaynak C 'tuhaf/rezalet' ve 'rezil/kötü' verir.
+  tip_tr: ridiculous = saçma, gülünç (absürt). 'Kötü' için awful, 'tuhaf' için strange/weird.
+- about: be realistic / realistic
+  item: U2-085
+  kind: kaynak_hatasi
+  trap_tr: 'Kaynak D ''realistic: gerçek olaylar'', C ''gerçeğe uygun kitap türü'' der (eski kitaptaki kitap türü listesi). Havuzda bu satırlar ''be realistic'' ile birleştirildi.'
+  tip_tr: be realistic = gerçekçi olmak (hayaller ve hedefler için). Kitap türü olarak 'realistic fiction' ayrı, TANIMA düzeyinde.
+- about: pay attention
+  item: U2-041
+  kind: kaynak_hatasi
+  trap_tr: Kaynak C 'pay attention = ilgilenmek' der.
+  tip_tr: pay attention (to) = dikkat etmek. 'İlgilenmek' = be interested in (U1-038).
+- about: casual
+  item: U2-064
+  kind: kaynak_hatasi
+  trap_tr: Kaynak D 'casual = günlük, sıradan' der; 'sıradan' anlamı ordinary'dir.
+  tip_tr: casual clothes = günlük, rahat kıyafet. ordinary = sıradan (U2-070).
+- about: snob
+  item: U2-069
+  kind: kaynak_hatasi
+  trap_tr: Kaynak C 'ukala' der; ukala bilgiçlik taslayan (know-it-all) kişidir.
+  tip_tr: snob = züppe, kendini üstün gören (para, marka, statü yüzünden).
+- about: sensitive / sensible
+  item: U2-086
+  kind: sahte_dost
+  trap_tr: sensible 'sensitif/hassas' gibi görünür ama 'mantıklı, aklı başında' demektir.
+  tip_tr: sensitive = duyarlı, hassas. sensible = mantıklı.
+- about: comfortable / relaxed / casual
+  item: U2-068
+  kind: turkce_etkisi
+  trap_tr: Türkçedeki tek 'rahat' sözcüğü İngilizcede dört farklı sözcükle karşılanır.
+  tip_tr: 'Koltuk/kıyafet: comfortable · kişi: relaxed / laid-back (U1-079) · giyim tarzı: casual.'
+- about: advise / advice
+  item: U2-081
+  kind: benzer_yazilis
+  trap_tr: 'Tek harf farkı: advise (fiil, ''z'' sesi) – advice (isim, ''s'' sesi).'
+  tip_tr: 'C = isim (advice), S = fiil (advise). ''an advice'' denmez: some advice.'
+- about: hardly ever + olumsuz fiil
+  item: U2-051
+  kind: dilbilgisi
+  trap_tr: '''I don''t hardly ever…'' gibi çift olumsuz kurulur.'
+  tip_tr: hardly ever, rarely, seldom, never zaten olumsuz anlam taşır; fiil olumlu kalır.
+- about: most / the most
+  item: U2-089
+  kind: dilbilgisi
+  trap_tr: '''The most students…'' yazılır; ''çoğu'' ile ''en çok'' karışır.'
+  tip_tr: Most students = öğrencilerin çoğu. the most popular = en popüler.
+- about: be crazy about / drive someone crazy
+  item: U2-015
+  kind: cok_anlamli
+  trap_tr: 'İkisinde de crazy var: be crazy about = bayılmak (olumlu), it drives me crazy = beni çıldırtıyor (olumsuz).'
+  tip_tr: about varsa sevgi; drive varsa sinir.
+- about: terrible / awful kaynak listeleri
+  item: U2-078
+  kind: turkce_etkisi
+  trap_tr: Türkçede 'korkunç güzel' gibi kullanımlar olduğundan awful/terrible bazen olumlu sanılır.
+  tip_tr: awful ve terrible İngilizcede olumsuzdur (berbat). Olumlu coşku için awesome / terrific.
+- about: desert / dessert (kaynak X)
+  kind: kaynak_hatasi
+  trap_tr: Kaynak X 'desert = tatlı' yazar; desert çöl demektir. Ünite 3'te dessert (U3-055) öğretilecek.
+  tip_tr: 'dessert''te iki s var: tatlıyı herkes iki kez ister.'
+lgs_focus:
+  what_is_tested:
+  - 'Tablo/grafik okuma: anket sonuçları ya da kişilerin etkinlik sıklığı tablosundan doğru/yanlış yargı seçme (most, half, a few, none, once a week, never).'
+  - 'Diyalog tamamlama: beğeni/fikir sorusuna uygun cevap ya da cevaba uygun soru (How often…? — Twice a week).'
+  - 'Kısa metin çıkarımı: bir gencin blog yazısı, anket raporu ya da mesajından kişinin zevk ve rutinlerini çıkarma.'
+  - 'Anlam: beğeni kalıplarının derecesi (can''t stand ↔ crazy about) ve değerlendirme sıfatlarının olumlu/olumsuz yönü (terrific, unbearable, ridiculous).'
+  - 'Eş anlam: be fond of = be keen on; rarely = seldom; trendy = fashionable.'
+  - Sıklık zarfının cümledeki yeri ve tablodaki karşılığı.
+  question_patterns:
+  - type: table_graph
+    description_tr: Dört gencin hangi etkinliği ne sıklıkla yaptığını gösteren tablo; tabloya göre doğru cümle seçilir.
+    sample_stem: 'The table shows how often four teenagers do some activities. Work out — Ada: every day, Can: never, Ela: twice a week, Arda: once a week. Play the guitar — Ada: never, Can: every day,
+      Ela: once a week, Arda: never. Which of the following is TRUE according to the table?'
+    sample_options:
+    - Arda works out more often than he plays the guitar.
+    - Can is fond of working out, so he does it every day.
+    - Ela plays the guitar more often than she works out.
+    - Ada and Arda never work out.
+    distractor_logic_tr: Çeldiriciler kişi ya da etkinlik değiştirir (Can'in sporu ile gitarı karıştırılır), sıklığı tersine çevirir ya da 'never' sözcüğünü yanlış kişiye bağlar. Her şık için tabloda tek
+      hücreyi kontrol et.
+    items:
+    - U2-044
+    - U2-052
+    - U2-009
+    - U2-032
+  - type: table_graph
+    description_tr: Sınıf anketinin yüzde/sayı grafiği; miktar sözcüğüne çeviri sınanır.
+    sample_stem: 'Our class survey: 30 students. Pop music: 18 · Rock: 6 · Jazz: 3 · Folk: 3 · Classical: 0. Which of the following is NOT correct according to the survey?'
+    sample_options:
+    - Half of the students prefer rock music.
+    - Most of the students like pop music.
+    - None of the students chose classical music.
+    - Only a few students like jazz.
+    distractor_logic_tr: Doğru şık yanlış olanı arar (NOT). 6/30 'half' değildir. Öğrenciler 'Most' (18/30 > yarı) ve 'a few' (3/30) eşiklerini tartmadan geçer. Soru kökündeki NOT'u kaçırmak en sık hata.
+    items:
+    - U2-089
+    - U2-090
+    - U2-003
+  - type: dialogue_complete
+    description_tr: Kısa diyalogda beğeni derecesine uygun cümle seçme.
+    sample_stem: 'Ece: Do you want to go to the folk music concert on Saturday? — Duru: ______ I like folk, but I prefer rock. If you want to go, I''ll come with you.'
+    sample_options:
+    - I don't mind.
+    - I can't stand folk music.
+    - I'm crazy about folk music!
+    - I never listen to music.
+    distractor_logic_tr: Devamdaki 'I like folk, but I prefer rock … I'll come' nötr-olumlu bir tavır kurar. can't stand ve never çelişir; crazy about ise 'prefer rock' ile uyuşmaz. Boşluktan SONRAKİ cümle
+      anahtardır.
+    items:
+    - U2-011
+    - U2-013
+    - U2-015
+    - U1-018
+  - type: dialogue_complete
+    description_tr: Cevaba uygun soru seçme (How often / What do you do / What about you).
+    sample_stem: 'Kaan: ______ — Bora: Three times a week. I have karate lessons on Mondays, Wednesdays and Fridays.'
+    sample_options:
+    - How often do you do karate?
+    - What time do you do karate?
+    - Where do you do karate?
+    - Why do you like karate?
+    distractor_logic_tr: Cevaptaki 'three times a week' sıklık bildirir. 'on Mondays…' gün bilgisi 'What time/When' çeldiricisini besler; asıl ipucu 'times a week'tir.
+    items:
+    - U2-052
+    - U2-038
+    - U2-044
+  - type: message_infer
+    description_tr: Bir gencin blog yazısı ya da e-postasından çıkarım.
+    sample_stem: Hi! I'm Elif. I'm really into music. I sing in a band with my best friend and we practise twice a week. I'm not keen on sports, but I go hiking with my family once a month because it's
+      relaxing. To be honest, I can't stand getting up early at weekends. — Which of the following is TRUE about Elif?
+    sample_options:
+    - She enjoys hiking because it helps her relax.
+    - She practises with her band every day.
+    - She is fond of doing sports.
+    - She likes getting up early on Saturdays.
+    distractor_logic_tr: Doğru şık metni başka sözcüklerle söyler (relaxing → helps her relax). Çeldiriciler sıklığı büyütür (twice a week → every day), olumsuz kalıbı olumluya çevirir (not keen on → fond
+      of) ya da can't stand'i tersine okur.
+    items:
+    - U2-016
+    - U2-010
+    - U2-013
+    - U2-018
+    - U2-039
+    - U2-091
+    - U2-052
+  - type: situation
+    description_tr: Durum verilir, söylenebilecek en uygun cümle seçilir.
+    sample_stem: Your friend shows you a new pair of shoes. You think they are very modern and popular, and you really like them. What do you say?
+    sample_options:
+    - Wow, they're really trendy! I love them.
+    - To be honest, they look ridiculous.
+    - I don't mind. They're ordinary.
+    - They're unbearable. I can't stand them.
+    distractor_logic_tr: Durumdaki 'modern and popular' + 'really like' trendy + love'a gider. Diğerleri olumsuz ya da nötr sıfatlarla (ridiculous, ordinary, unbearable) kutbu bozar.
+    items:
+    - U2-062
+    - U2-060
+    - U2-070
+    - U2-088
+    - U2-011
+  - type: synonym
+    description_tr: Altı çizili kalıba anlamca en yakın ifade.
+    sample_stem: Selin is fond of reading the news online. The underlined phrase is closest in meaning to ______.
+    sample_options:
+    - is keen on
+    - can't stand
+    - doesn't mind
+    - is annoyed by
+    distractor_logic_tr: Çeldiriciler aynı skaladan ama farklı derecelerden seçilir; 'doesn't mind' nötr olduğu için en çekici yanlıştır.
+    items:
+    - U2-009
+    - U2-010
+    - U2-013
+    - U2-011
+    - U2-042
+  - type: gap_fill
+    description_tr: Sıklık zarfı ya da beğeni fiiliyle anlamlı boşluk doldurma.
+    sample_stem: Kaan is late for almost every lesson. He ______ arrives on time.
+    sample_options:
+    - hardly ever
+    - always
+    - usually
+    - often
+    distractor_logic_tr: Bağlam 'neredeyse her derse geç' diyor; olumlu sıklık zarfları çelişir. Öğrenci 'on time'ı atlayıp 'late' ile always'i eşleştirebilir.
+    items:
+    - U2-051
+    - U2-044
+  - type: odd_one_out
+    description_tr: Anlamca gruba uymayan sözcük.
+    sample_stem: Which word is different from the others in meaning?
+    sample_options:
+    - awful
+    - terrific
+    - awesome
+    - impressive
+    distractor_logic_tr: terrific 'terrible'a benzediği için yanlışlıkla olumsuz seçilir; aslında olumlu olan üçlünün parçasıdır.
+    items:
+    - U2-078
+    - U2-075
+    - U2-074
+    - U2-076
+  priority_items:
+  - U2-013
+  - U2-011
+  - U2-009
+  - U2-010
+  - U2-015
+  - U2-008
+  - U2-014
+  - U2-016
+  - U2-005
+  - U2-018
+  - U2-044
+  - U2-049
+  - U2-050
+  - U2-051
+  - U2-052
+  - U2-089
+  - U2-090
+  - U2-075
+  - U2-088
+  - U2-062
+  tactics:
+  - Tablo/grafik sorusunda önce kökteki TRUE/NOT/CANNOT sözcüğünü daire içine al; sonra her şık için tabloda tek hücre kontrol et.
+  - 'Miktar eşikleri: all %100 · most > %50 · half = %50 · a few = küçük sayı · none = 0. Rakamı önce bu sözcüklerden birine çevir.'
+  - 'Diyalog boşluğunda boşluktan SONRAKİ cümleyi oku: ''but I prefer…'', ''so I go every day'' gibi devam, tavrın derecesini gösterir.'
+  - How often → sıklık cevabı (once/twice/every/never); What time/When → saat/gün. Şıktaki soru sözcüğünü cevapla eşleştir.
+  - 'Paraphrase avı: doğru şık metindeki bilgiyi farklı sözcükle verir (relaxing → helps her relax; can''t stand → hates). Metindeki sözcüğün aynısını taşıyan şıkka hemen atlama.'
+  - 'Sıfatları + / – diye işaretle: terrific, awesome, impressive, fascinating (+) · awful, unbearable, ridiculous, annoying (–) · ordinary (nötr). Kutbu uymayan şıkları ele.'
+  - Olumsuz zarflar (hardly ever, rarely, seldom, never) ile 'not' bir arada görürsen o şık büyük olasılıkla dilbilgisi açısından yanlış.
+  exam_vocabulary:
+  - en: Which of the following is TRUE / NOT true …?
+    tr: Aşağıdakilerden hangisi doğrudur / doğru değildir?
+  - en: according to the table / chart / graph / survey
+    tr: tabloya / çizelgeye / grafiğe / ankete göre
+  - en: complete the dialogue / the missing part
+    tr: diyaloğu / eksik bölümü tamamlayınız
+  - en: Which of the following CANNOT be said …?
+    tr: Aşağıdakilerden hangisi söylenemez?
+  - en: It is clear that …
+    tr: … olduğu açıktır
+  - en: How often …?
+    tr: Ne sıklıkla …?
+  - en: results
+    tr: sonuçlar
+  - en: participant(s)
+    tr: katılımcı(lar)
+  - en: percent / per cent (%)
+    tr: yüzde
+  - en: the most / the least popular
+    tr: en popüler / en az popüler
+  - en: preference(s)
+    tr: tercih(ler)
+  - en: free-time activities
+    tr: boş zaman etkinlikleri
+  - en: is closest in meaning to …
+    tr: … anlamca en yakındır
+  - en: the best response
+    tr: en uygun cevap/tepki
+  - en: mentioned / not mentioned
+    tr: değinilen / değinilmeyen
+  - en: both … and … / neither … nor …
+    tr: hem … hem … / ne … ne …
+  - en: except
+    tr: hariç
+  - en: in the correct order
+    tr: doğru sırayla
+cross_unit:
+- item: U2-007 like
+  links_to: U1-080 like (gibi)
+  note_tr: 'Aynı sözcük, iki ünitede iki anlam: ''What is he like?'' (nasıl biri) ↔ ''What does he like?'' (neyi sever).'
+- item: U2-011 don't mind
+  links_to: U1-014 It doesn't matter.
+  note_tr: İkisi de 'fark etmez'. It doesn't matter durum için, I don't mind kişinin tavrı için; diyalog sorularında yer değiştirebilir.
+- item: U2-006 what about you?
+  links_to: U1-024 What about …?
+  note_tr: U1'de 'What about going to the cinema?' öneridir; burada 'What about you?' karşı sorudur.
+- item: U2-005 In my opinion / I believe
+  links_to: U1-042 same opinion
+  note_tr: opinion kelimesi U1'de tanıtıldı; burada fikir bildirme kalıbına dönüşür.
+- item: U2-062 trendy
+  links_to: U1-072 fashionable
+  note_tr: Eş anlamlı; eş anlam sorusu için hazır çift.
+- item: U2-068 comfortable
+  links_to: U1-079 laid-back
+  note_tr: 'Türkçedeki ''rahat''ın iki karşılığı: eşya/kıyafet ↔ kişilik.'
+- item: U2-010 be keen on / U2-016 be into
+  links_to: U1-038 interested in
+  note_tr: Aynı edat + -ing mantığı; be interested in tekrarı bu ünitede doğal.
+- item: U2-081 advise
+  links_to: U1-035 give advice
+  note_tr: 'Fiil/isim çifti: advise ↔ advice.'
+- item: U2-055 chat online
+  links_to: U1-029 chat / U1-046 text
+  note_tr: Arkadaşlık ünitesinin iletişim fiilleri sosyal medya bağlamında tekrar eder.
+- item: U2-058 share on social media
+  links_to: U1-043 share
+  note_tr: share U1'de duygu/eşya paylaşmaktı; burada içerik paylaşmak.
+- item: U2-004 hang out
+  links_to: U1-044 spend time
+  note_tr: spend time with friends ≈ hang out with friends (hang out daha gündelik).
+- item: U2-086 sensitive
+  links_to: U1-070 caring / U1-093 understanding
+  note_tr: Kişilik sıfatları ailesi; karakter tanımı sorularında birlikte çıkar.
+- item: U2-084 follow the rules
+  links_to: U1-071 fair
+  note_tr: 'İyi genç/iyi arkadaş değerleri: kurallara uymak, adil olmak.'
+- item: U2-091 relaxing / U2-083 entertaining
+  links_to: U1-095 boring / U1-096 exciting / U1-100 thrilling
+  note_tr: -ing değerlendirme sıfatları U1'de başladı; bu ünitede sayı ve incelik artıyor.
+- item: U2-074 awesome / U2-075 terrific
+  links_to: U1-022 Sounds + SIFAT!
+  note_tr: '''Sounds terrific!'' davete olumlu cevap kalıbı; iki ünitenin birleştiği yer.'
+- item: U2-044 sıklık zarfları
+  links_to: U1-075 He/She is always in a hurry.
+  note_tr: be + always sırası U1'de kalıp olarak görüldü; burada kural olarak öğretilir.
+- item: U2-013 can't stand
+  links_to: U1-021 Sorry, I can't …
+  note_tr: 'Aynı ''can''t'' iki işlev: reddetme (U1) ↔ katlanamama (U2).'
+- item: U2-089 all / most / half
+  links_to: U3-047 How much / How many
+  note_tr: Miktar dili Ünite 3'te sayılan/sayılamayan isimlerle devam eder.
+- item: U2-015 be crazy about
+  links_to: U3-058 have a sweet tooth / U3-053 be in the mood for
+  note_tr: Beğeni ve istek ifadeleri yemek bağlamında devam eder.
+- item: U2-079 recommend
+  links_to: U3-059 worth trying
+  note_tr: Tavsiye dili tarif ve restoran bağlamında tekrar eder.
+- item: U2-008 enjoy
+  links_to: U3-057 enjoy your meal
+  note_tr: 'enjoy''un kalıplaşmış kullanımı: afiyet olsun.'
+- item: dessert (kaynak X hatası)
+  links_to: U3-055 dessert
+  note_tr: Ünite 2 kaynak listesindeki 'desert = tatlı' yazım hatası, Ünite 3 öğretiminde düzeltilmeli.
+story_hooks:
+- situation_tr: 'Anket provası: Duru her soruya ''I don''t mind'' der; ta ki Bora ''Fıstık gitar penanı yerse?'' diye sorana kadar.'
+  items:
+  - U2-011
+  - U2-007
+  - U2-012
+  - U2-013
+  - U2-006
+  comedy_tr: Hiçbir şeyi umursamayan Duru'nun ilk kez 'I DO mind!' diye bağırması; Fıstık penayı çoktan yutmuştur (veteriner gerekmez, pena sonra kanepe altında bulunur).
+- situation_tr: 'Beğeni skalası oyunu: sınıf tahtasına ''can''t stand'' ile ''crazy about'' arasında bir çizgi çizilir; herkes kendini konulara göre yerleştirir.'
+  items:
+  - U2-013
+  - U2-014
+  - U2-012
+  - U2-011
+  - U2-007
+  - U2-008
+  - U2-009
+  - U2-010
+  - U2-015
+  - U2-016
+  comedy_tr: Kaan 'matematik' kartında kendini 'can't stand'e koyar, Murat Bey 'matematik sınavı yarın' deyince 'crazy about'a koşar.
+- situation_tr: 'Duru ve Elif''in grubu ilk provada: tür seçimi kavgası, komşunun matkabı ve havlayan Fıstık.'
+  items:
+  - U2-019
+  - U2-020
+  - U2-021
+  - U2-022
+  - U2-023
+  - U2-024
+  - U2-025
+  - U2-026
+  - U2-027
+  - U2-028
+  - U2-029
+  - U2-030
+  - U2-042
+  comedy_tr: Kayıt dinlendiğinde en ritmik ses Fıstık'ın havlamasıdır; grup onu 'davulcu üye' ilan eder.
+- situation_tr: 'Kaan spor salonunda: formda görünmek için ''antrenman'' selfie''leri çeker ama asıl antrenmanı unutur.'
+  items:
+  - U2-031
+  - U2-032
+  - U2-033
+  - U2-034
+  - U2-035
+  - U2-036
+  - U2-057
+  comedy_tr: Selfie'lerde hep aynı ağırlığı tutar, çünkü kaldırabildiği tek ağırlık odur.
+- situation_tr: 'Bora bireysel spor arar: karate dersinde hocaya dikkat etmediği için sağ ile solu karıştırır; hafta sonu doğa yürüyüşünde de herkes dinlenirken o yolu kaybeder.'
+  items:
+  - U2-037
+  - U2-038
+  - U2-039
+  - U2-040
+  - U2-041
+  - U2-042
+  comedy_tr: Kaybolduğu yer, otoparkın arkasındaki ağaçlıktır; grup onu ilk beş dakikada bulur.
+- situation_tr: 'Sıklık anketi: kantin kuyruğunda sorular sorulur; Bora sabahları erken kalkmaya katlanamaz, Kaan neredeyse hiç zamanında gelmez, Selin her gün haberleri takip eder.'
+  items:
+  - U2-043
+  - U2-044
+  - U2-047
+  - U2-049
+  - U2-050
+  - U2-051
+  - U2-052
+  - U2-053
+  - U2-054
+  - U2-045
+  comedy_tr: Kaan anketi doldurmak için bile kuyruğa geç girer; sıra ona geldiğinde kantinde simit bitmiştir.
+- situation_tr: '''Pick up'' karışıklığı: Selin ''My dad picks me up at four'' der; Bora yerdeki kalemi alıp ''I picked it up too!'' diye övünür.'
+  items:
+  - U2-048
+  - U2-045
+  - U2-046
+  comedy_tr: Selin'in babası okul kapısına gelir, Bora'yı da yanlışlıkla arabaya alır; Bora kendini başka mahallede bulur.
+- situation_tr: 'Ekran başında: grup sohbetinde selfie filtresi kazası; Bora''nın paylaşmadan önceki heyecanı.'
+  items:
+  - U2-055
+  - U2-056
+  - U2-057
+  - U2-058
+  - U2-059
+  - U2-060
+  comedy_tr: Filtre Bora'nın yüzünü patatese çevirir; gönderi sınıfın en çok beğenilen fotoğrafı olur.
+- situation_tr: 'Kendi kıyafetini giy günü: Ece son modayı takip eden kombiniyle gelir; Kaan ''smart clothes'' duyunca akıllı saatini takıp gelir.'
+  items:
+  - U2-061
+  - U2-062
+  - U2-063
+  - U2-064
+  - U2-065
+  - U2-066
+  - U2-068
+  comedy_tr: Kaan eşofmanla gelir ama 'akıllı saatim var, demek ki smart' diye ısrar eder.
+- situation_tr: 'Ege ve yetişkin kuzeni ziyarete gelir: resmi kıyafet, züppe tavırlar; Duru''nun sıradan ama rahat tarzı kazanır.'
+  items:
+  - U2-067
+  - U2-069
+  - U2-070
+  - U2-071
+  - U2-072
+  - U2-068
+  comedy_tr: Ege'nin pahalı ayakkabıları çamura batar; Duru'nun spor ayakkabıları 'pretty comfortable' çıkar.
+- situation_tr: 'Film gecesi: bilim kurgu filminden sonra Elif ''terrific!'' der, Kaan bunu ''korkunç'' sanıp ona hak verir.'
+  items:
+  - U2-073
+  - U2-074
+  - U2-075
+  - U2-076
+  - U2-077
+  - U2-078
+  comedy_tr: İkisi on dakika boyunca birbirine katıldığını sanarak tartışır; sonunda Murat Bey'in kelime kartı kavgayı bitirir.
+- situation_tr: 'Anket sonuçları ve Murat Bey''in tavsiyeleri: gruplar grafiklerini sunar; Murat Bey bir belgesel önerir, ödev yükü ''dayanılmaz'' ilan edilir ama herkes yüksek not ister.'
+  items:
+  - U2-089
+  - U2-090
+  - U2-003
+  - U2-079
+  - U2-080
+  - U2-081
+  - U2-082
+  - U2-083
+  - U2-084
+  - U2-085
+  - U2-086
+  - U2-087
+  - U2-088
+  - U2-091
+  - U2-092
+  comedy_tr: 'Bora''nın grafiğinde tek çubuk vardır: ''None of the students like Monday mornings — %100.'' Murat Bey ''be realistic'' der ama gülmeden duramaz.'
+mini_lessons:
+- type: mini_dilbilgisi
+  text_tr: 'enjoy, don''t mind, can''t stand her zaman -ing ister: I enjoy dancing. like, love ve hate ise ikisini de kabul eder: I like dancing / I like to dance.'
+  refs:
+  - U2-008
+  - U2-011
+  - U2-013
+  - U2-007
+  - U2-014
+- type: hafiza_kancasi
+  text_tr: terrific ≠ terrible! terrific harika, terrible berbat. Yazılışları kardeş ama biri gülümser, biri surat asar.
+  refs:
+  - U2-075
+  - U2-078
+- type: lgs_taktigi
+  text_tr: 'Grafik sorusunda rakamı sözcüğe çevir: 30 kişide 18 → most, 15 → half, 3 → a few, 0 → none. ''Half'' tam yarıdır; 16 kişi half değil, ''more than half''tır.'
+  refs:
+  - U2-089
+  - U2-090
+- type: tuzak
+  text_tr: smart clothes 'akıllı kıyafet' değil, şık kıyafettir. Düğüne smart, parka casual giyilir.
+  refs:
+  - U2-065
+  - U2-064
+- type: mini_dilbilgisi
+  text_tr: 'Sıklık zarfı ana fiilin önüne, am/is/are''nin arkasına: I always walk to school · Kaan is always late.'
+  refs:
+  - U2-044
+- type: hafiza_kancasi
+  text_tr: hardly ever = 'hard' + 'ever', 'zor zahmet bir kere'. Neredeyse never demektir; yanına 'not' koyma.
+  refs:
+  - U2-051
+  - U2-049
+  - U2-050
+- type: kelime_ailesi
+  text_tr: '-ing veren, -ed hisseden: The film is boring → I am bored. The noise is annoying → I am annoyed.'
+  refs:
+  - U2-030
+  - U2-042
+  - U2-091
+- type: lgs_taktigi
+  text_tr: 'Beğeni skalasını sırala: can''t stand ≈ hate < dislike < don''t mind < like < enjoy / be fond of / be keen on < love < be crazy about. Diyalogda tavır derecesini buna göre seç.'
+  refs:
+  - U2-013
+  - U2-014
+  - U2-012
+  - U2-011
+  - U2-007
+  - U2-008
+  - U2-009
+  - U2-010
+  - U2-015
+- type: ilginc_bilgi
+  text_tr: 'teenager sözcüğü İngilizce sayılardaki ''-teen'' ekinden gelir: thirTEEN''den nineTEEN''e kadar olan yaşlar, yani 13-19.'
+  refs:
+  - U2-001
+- type: hafiza_kancasi
+  text_tr: 'queue ''kyu'' diye okunur: Q harfini söyle, geri kalan dört harf (ueue) sırada sessizce bekler.'
+  refs:
+  - U2-053
+- type: kelime_ailesi
+  text_tr: 'awesome ve awful aynı kökten (awe: hayranlık karışık korku) gelir ama bugün zıt anlamlıdır: awesome harika, awful berbat.'
+  refs:
+  - U2-074
+  - U2-078
+- type: tuzak
+  text_tr: sensitive = duyarlı, hassas. sensible = mantıklı. 'Sensible' sensitif değildir!
+  refs:
+  - U2-086
+- type: lgs_taktigi
+  text_tr: How often sorusunun cevabı sıklıktır (once a week, hardly ever), saat değil. Şıklarda 'At 6 o'clock' görürsen o, What time sorusunun cevabıdır.
+  refs:
+  - U2-044
+  - U2-052
+- type: mini_dilbilgisi
+  text_tr: 'Sporda üç fiil: top oyunlarına play (play football), -ing''li etkinliklere go (go hiking, go swimming), dövüş sporu ve bireysel egzersize do (do karate, do yoga).'
+  refs:
+  - U2-038
+  - U2-039
+  - U2-036
+  - U2-037
+- type: ilginc_bilgi
+  text_tr: 'genre Fransızcadan gelir ve ''jonra'' gibi okunur. Gündelik konuşmada aynı anlamda ''type'' ya da ''kind'' de denir: What kind of music do you like?'
+  refs:
+  - U2-021
+- type: tuzak
+  text_tr: 'I don''t mind kaba değil, kibardır: ''fark etmez, benim için sorun değil.'' Olumsuz bir duygu taşımaz.'
+  refs:
+  - U2-011
+- type: tuzak
+  text_tr: 'advise fiil, advice isim. Ezber: Sesli söyle, advi-Z-e fiildir (vız vız iş yapar), advi-C-e isimdir. ''an advice'' denmez: some advice.'
+  refs:
+  - U2-081
+- type: ilginc_bilgi
+  text_tr: 'İngiliz ve Amerikan İngilizcesi: queue ↔ line, film ↔ movie, favourite ↔ favorite, trainers ↔ sneakers. LGS metinlerinde ikisi de çıkabilir.'
+  refs:
+  - U2-053
+  - U2-073
+- type: mini_dilbilgisi
+  text_tr: 'he/she/it ile fiile -s: Selin follows the news. Ama does/doesn''t geldiyse -s gider: Does she follow…? She doesn''t like…'
+  refs:
+  - U2-054
+  - U2-048
+- type: hafiza_kancasi
+  text_tr: 'Türkçedeki ''pikap'' (kamyonet) İngilizce pickup''tan gelir; pick up ''alıp yüklemek, almak'' demek. Bu ünitede: arabayla birini almak. My dad picks me up after school.'
+  refs:
+  - U2-048
+open_questions:
+- Kazanımlar (E8.2.L1, SI1, SP1, SP2, R1, W1) ve işlevler (Expressing likes and dislikes · Expressing preferences · Stating personal opinions / Making simple inquiries) okul yıllık planı ve il ÖDM belgeleri
+  üzerinden doğrulandı; mufredat.meb.gov.tr'deki program PDF'inin kendisi açılıp okunmadı.
+- Programın Ünite 2 işlev listesinde sıklık zarfları ve grafik dili ayrı işlev olarak geçmiyor (yalnız örnek cümlelerde 'usually', 'rarely/seldom', 'never' ve önerilen bağlamlarda 'Questionnaires, Tables,
+  Reports' var). F6 ve G5-G7 bu yüzden ders kitabı ve LGS soru tipine dayanıyor.
+- Tavsiye fiilleri (recommend, suggest, advise) programda bu üniteye bağlı değil; F7 düşük ağırlıkla tutuldu. Editör bu işlevi çıkarmak isteyebilir.
+- 2018 programının 2027 LGS'de hâlâ geçerli olduğu görev tanımından alındı; Türkiye Yüzyılı Maarif Modeli programının 8. sınıfa hangi yıl geçtiği ayrıca doğrulanmadı.
+- LGS'de Ünite 2'den kaç soru geldiği resmî olarak ilan edilmiyor; question_patterns geçmiş sınav kopyası değil, LGS biçimine göre özgün örneklerdir. MEB'in Teen Life örnek soruları bu dosya için incelenmedi.
+- Kaynak X (212.xlsx) ÖZET sayfasının kaynak tablosunda ayrı kod olarak yok (C satırında '+ 212.xlsx eki' diye anılıyor) ama HAVUZ'da ayrı kod olarak kullanılıyor; kodlama birleştirilmeli.
+- 'Havuz ÖZET sayfasında ''Öncelik 2: 33'' yazıyor; HEDEF sayfasında sayınca 31 çıkıyor (61 + 31 = 92). ÖZET''teki 33 güncellenmeli.'
+- 'HAVUZ''da ''every day'' satırı C kaynağı için ''her hafta'' karşılığını gösteriyor; C listesinde ''every day: her gün'' ve ''every week: her hafta'' ayrı satırlar. Birleştirme hatası (öğretim birimini
+  etkilemiyor).'
+- Havuzda 'social media' satırındaki K notu 'takipçi' yanlış (social media = sosyal medya); öğretim birimi U2-058'i etkilemiyor.
+phrase_bank:
+- en: However, I can't stand detective books.
+  tr: Ancak polisiye kitaplara katlanamam.
+  function: beğeni / tercih
+  items:
+  - U2-013
+  source: ders kitabı kalıp listesi
+- en: I am interested in playing the guitar.
+  tr: Gitar çalmaya ilgim var.
+  function: beğeni / tercih
+  items:
+  - U1-038
+  source: ders kitabı kalıp listesi
+- en: I enjoy going to concerts.
+  tr: Konsere gitmekten keyif alırım.
+  function: beğeni / tercih
+  items:
+  - U2-008
+  source: ders kitabı kalıp listesi
+- en: I hate insulting others.
+  tr: Başkalarına hakaret etmekten nefret ederim.
+  function: beğeni / tercih
+  items:
+  - U2-014
+  source: ders kitabı kalıp listesi
+- en: I prefer hip-hop concerts.
+  tr: Hip-hop konserlerini tercih ederim.
+  function: beğeni / tercih
+  items:
+  - U1-018
+  source: ders kitabı kalıp listesi
+- en: I'm keen on camping.
+  tr: Kampa meraklıyım.
+  function: beğeni / tercih
+  source: ders kitabı kalıp listesi
+- en: It's my favourite daily activity.
+  tr: En sevdiğim günlük etkinlik bu.
+  function: beğeni / tercih
+  source: ders kitabı kalıp listesi
+- en: My favourite school subject is …
+  tr: En sevdiğim ders …
+  function: beğeni / tercih
+  source: ders kitabı kalıp listesi
+- en: We're fond of sports.
+  tr: Spora düşkünüz.
+  function: beğeni / tercih
+  source: ders kitabı kalıp listesi
+- en: Do teenagers follow the news?
+  tr: Gençler haberleri takip eder mi?
+  function: bilgi sorma
+  items:
+  - U2-054
+  source: ders kitabı kalıp listesi
+- en: Do you prefer reading children's books or sci-fi books?
+  tr: Çocuk kitabı mı bilim kurgu mu okumayı tercih edersin?
+  function: bilgi sorma
+  items:
+  - U1-018
+  source: ders kitabı kalıp listesi
+- en: How do you go to school?
+  tr: Okula nasıl gidersin?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: How many classes do you take a week?
+  tr: Haftada kaç dersin var?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: How much do you pay?
+  tr: Ne kadar ödüyorsun?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: How often do you do sports?
+  tr: Ne sıklıkla spor yaparsın?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: How often do you go to the cinema?
+  tr: Ne sıklıkla sinemaya gidersin?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: How often do you meet your friends?
+  tr: Arkadaşlarınla ne sıklıkla buluşursun?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: How often do you surf the Internet?
+  tr: Ne sıklıkla internette gezinirsin?
+  function: bilgi sorma
+  items:
+  - U2-056
+  source: ders kitabı kalıp listesi
+- en: How often do you visit your grandparents?
+  tr: Büyükanneni ne sıklıkla ziyaret edersin?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What are you interested in?
+  tr: Neye ilgin var?
+  function: bilgi sorma
+  items:
+  - U1-038
+  source: ders kitabı kalıp listesi
+- en: What do you do at the weekends?
+  tr: Hafta sonları ne yaparsın?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What do you do in the evenings?
+  tr: Akşamları ne yaparsın?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What do you never do in the evenings?
+  tr: Akşamları asla ne yapmazsın?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What do you usually do with your family?
+  tr: Ailenle genelde ne yaparsın?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What goals do teenagers have?
+  tr: Gençlerin hedefleri neler?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What kind of items do teenagers mostly buy?
+  tr: Gençler çoğunlukla ne tür şeyler satın alır?
+  function: bilgi sorma
+  items:
+  - U2-046
+  source: ders kitabı kalıp listesi
+- en: What sports do you do regularly?
+  tr: Düzenli olarak hangi sporları yaparsın?
+  function: bilgi sorma
+  items:
+  - U2-045
+  source: ders kitabı kalıp listesi
+- en: What sports do you like watching?
+  tr: Hangi sporları izlemeyi seversin?
+  function: bilgi sorma
+  items:
+  - U1-080
+  - U2-007
+  source: ders kitabı kalıp listesi
+- en: What sports would you like to try?
+  tr: Hangi sporları denemek istersin?
+  function: bilgi sorma
+  items:
+  - U1-026
+  - U1-080
+  - U2-007
+  source: ders kitabı kalıp listesi
+- en: What time does he have dinner?
+  tr: Saat kaçta akşam yemeği yer?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: What type of music do you prefer?
+  tr: Ne tür müzik tercih edersin?
+  function: bilgi sorma
+  items:
+  - U1-018
+  - U2-021
+  source: ders kitabı kalıp listesi
+- en: When do you usually go on holiday?
+  tr: Genelde ne zaman tatile gidersin?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Where do you usually have lunch?
+  tr: Öğle yemeğini genelde nerede yersin?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Which sports do you prefer?
+  tr: Hangi sporları tercih edersin?
+  function: bilgi sorma
+  items:
+  - U1-018
+  source: ders kitabı kalıp listesi
+- en: Who dislikes arguing with friends?
+  tr: Kim arkadaşlarıyla tartışmayı sevmez?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Who dislikes listening to jazz music?
+  tr: Kim caz dinlemeyi sevmez?
+  function: bilgi sorma
+  items:
+  - U2-024
+  source: ders kitabı kalıp listesi
+- en: Who do you do sports with?
+  tr: Kiminle spor yaparsın?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Who enjoys doing exercise?
+  tr: Kim egzersiz yapmaktan keyif alır?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Who enjoys eating out?
+  tr: Kim dışarıda yemek yemekten keyif alır?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Who enjoys following fashion?
+  tr: Kim modayı takip etmekten keyif alır?
+  function: bilgi sorma
+  items:
+  - U2-061
+  source: ders kitabı kalıp listesi
+- en: Who enjoys reading travel books?
+  tr: Kim gezi kitabı okumaktan keyif alır?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Who hates getting up early?
+  tr: Kim erken kalkmaktan nefret eder?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Who hates talking about serious topics?
+  tr: Kim ciddi konular konuşmaktan nefret eder?
+  function: bilgi sorma
+  items:
+  - U2-089
+  source: ders kitabı kalıp listesi
+- en: Who likes eating healthy food?
+  tr: Kim sağlıklı yemek yemeyi sever?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Who likes playing an instrument?
+  tr: Kim bir enstrüman çalmayı sever?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Who usually helps you with your homework?
+  tr: Ödevinde sana genelde kim yardım eder?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: Why is he successful?
+  tr: O neden başarılı?
+  function: bilgi sorma
+  source: ders kitabı kalıp listesi
+- en: By the way
+  tr: Bu arada
+  function: fikir / bağlaç
+  source: ders kitabı kalıp listesi
+- en: For example
+  tr: Örneğin
+  function: fikir / bağlaç
+  source: ders kitabı kalıp listesi
+- en: I don't think so.
+  tr: Sanmıyorum. / Öyle düşünmüyorum.
+  function: fikir / bağlaç
+  source: ders kitabı kalıp listesi
+- en: I think it is unbearable.
+  tr: Bence dayanılmaz.
+  function: fikir / bağlaç
+  items:
+  - U2-088
+  source: ders kitabı kalıp listesi
+- en: To be honest, …
+  tr: Açıkçası, …
+  function: fikir / bağlaç
+  items:
+  - U1-077
+  - U2-018
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: That's a good idea.
+  tr: İyi fikir.
+  function: kabul / onay
+  source: ders kitabı kalıp listesi
+- en: I am afraid of …
+  tr: …-den korkarım.
+  function: kendini anlatma
+  source: ders kitabı kalıp listesi
+- en: I am worried about …
+  tr: … için endişeliyim.
+  function: kendini anlatma
+  items:
+  - U2-089
+  source: ders kitabı kalıp listesi
+- en: I don't know much about him.
+  tr: Onun hakkında pek bir şey bilmiyorum.
+  function: kendini anlatma
+  items:
+  - U2-089
+  source: ders kitabı kalıp listesi
+- en: I go there on foot.
+  tr: Oraya yürüyerek giderim.
+  function: kendini anlatma
+  source: ders kitabı kalıp listesi
+- en: I should pay more attention to …
+  tr: …-e daha çok dikkat etmeliyim.
+  function: kendini anlatma
+  source: ders kitabı kalıp listesi
+- en: I spend most of my free time …
+  tr: Boş zamanımın çoğunu … geçiririm.
+  function: kendini anlatma
+  items:
+  - U2-002
+  - U2-089
+  - U2-090
+  source: ders kitabı kalıp listesi
+- en: I'd like to be a … because …
+  tr: … olmak isterim çünkü …
+  function: kendini anlatma
+  items:
+  - U1-080
+  - U2-007
+  source: ders kitabı kalıp listesi
+- en: I'd like to learn more about …
+  tr: … hakkında daha çok şey öğrenmek isterim.
+  function: kendini anlatma
+  items:
+  - U1-080
+  - U2-007
+  - U2-089
+  source: ders kitabı kalıp listesi
+- en: I'm good at …
+  tr: …-de iyiyim, yetenekliyim.
+  function: kendini anlatma
+  source: ders kitabı kalıp listesi
+- en: My closest friend is … because she/he is …
+  tr: En yakın arkadaşım … çünkü o …
+  function: kendini anlatma
+  source: ders kitabı kalıp listesi
+- en: This makes me feel energetic.
+  tr: Bu bana enerji veriyor.
+  function: kendini anlatma
+  items:
+  - U2-035
+  source: ders kitabı kalıp listesi
+- en: I'll lend you mine.
+  tr: Sana benimkini ödünç veririm.
+  function: rica / yardım
+  source: ders kitabı kalıp listesi
+- en: I'm doing great, thanks.
+  tr: Çok iyiyim, teşekkürler.
+  function: selamlaşma / hal hatır
+  source: ders kitabı kalıp listesi
+- en: Pretty good, thanks.
+  tr: Gayet iyi, teşekkürler.
+  function: selamlaşma / hal hatır
+  items:
+  - U2-071
+  source: ders kitabı kalıp listesi
+- en: What's up?
+  tr: N'aber?
+  function: selamlaşma / hal hatır
+  source: ders kitabı kalıp listesi
+- en: And you?
+  tr: Ya sen?
+  function: tepki / şaşırma
+  source: ders kitabı kalıp listesi
+- en: Are you kidding?
+  tr: Şaka mı yapıyorsun?
+  function: tepki / şaşırma
+  source: ders kitabı kalıp listesi
+- en: Me too.
+  tr: Ben de.
+  function: tepki / şaşırma
+  source: ders kitabı kalıp listesi
+- en: They're terrific.
+  tr: Onlar müthiş.
+  function: tepki / şaşırma
+  items:
+  - U2-075
+  source: ders kitabı kalıp listesi

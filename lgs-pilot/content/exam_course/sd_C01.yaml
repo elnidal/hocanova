@@ -1,0 +1,163 @@
+# LGS Sınav Dili — C01 Diyalog atölyesi (S01, S08, S10). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-C01
+module: C
+title: "Diyalog atölyesi"
+unlock_after: "Ü4 sonu"
+minutes: 7
+stems: [S01, S08, S10]
+units: [1, 2, 3, 4]
+intro_tr: "Dört ünite bitti; LGS'deki diyalog soruları artık senin alanın. Bu atölyede üç diyalog kökünü karışık çözüyoruz: boşluğu tamamla, doğru kişiyi bul, duruma uygun cümleyi seç."
+cards:
+  - title_tr: "Diyalogda üç soru, üç yöntem"
+    body_tr: "Boşluk tamamlama (S01): sonraki satırı oku. Kişi bulma (S08): her kişiye + / − koy. Durum (S10): durumu Türkçe özetle, sonra kalıbı seç. Kökü okuyunca hangi yöntemi kullanacağına karar ver."
+    examples_en:
+      - "Which of the following completes the dialogue?  → sonraki satır"
+      - "Who …?  → + / − listesi"
+      - "What does X say in this situation?  → Türkçe özet"
+  - title_tr: "Telefonda kim kim?"
+    body_tr: "Telefon diyaloglarında üç rol var: ARAYAN (May I speak to …? / This is … calling), TELEFONU AÇAN (Hello? / Who's calling? / Hold on, I'll get her) ve ARANAN (Speaking.). Bir cümleyi kimin söyleyebileceğini bu rollere göre düşün."
+    examples_en:
+      - "Arayan: Could I speak to Selin, please?"
+      - "Açan: Who's calling, please? / I'm afraid she's out."
+      - "Aranan: Speaking."
+    signal_words: ["calling", "speak to", "Who's calling?", "Speaking.", "Hold on"]
+  - title_tr: "Kibar ret yine rettir"
+    body_tr: "'I'd love to, but …', 'Thanks for asking, but …', 'I'm afraid I can't' kibar ama RET. Telefonda 'I'm afraid he isn't available' de 'şu an konuşamaz' demektir."
+    signal_words: ["but", "I'm afraid", "not available"]
+worked_example:
+  id: sd-C01-w
+  type: dialogue_complete
+  stem_id: S01
+  context: |-
+    Secretary: Good morning, Star Music School. How can I help you?
+    Ece: Hello. Could I speak to Mr Aydın, please?
+    Secretary: ________ He's in a lesson at the moment.
+    Ece: OK. Can I leave a message?
+  prompt: "Which of the following completes the conversation?"
+  options:
+    - "I'm afraid he isn't available."
+    - "Hold on, I'll put you through."
+    - "Speaking."
+    - "Sorry, you have the wrong number."
+  answer: 0
+  explain_tr: "Sekreter 'He's in a lesson' diyor ve Ece mesaj bırakmak istiyor; Bay Aydın telefona gelemez. 'I'll put you through' bağlayacağını söyler, sonraki satırlarla çelişir."
+  items: [U4-020, U4-026, U4-023, U4-014, U4-009, U4-042]
+practice:
+  - id: sd-C01-p01
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Bora: Hello, may I speak to Kaan, please?
+      Kaan's dad: ________
+      Bora: It's Bora, his friend from school.
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "Who's calling, please?"
+      - "Can I take a message?"
+      - "What's wrong?"
+      - "Where are you calling from?"
+    answer: 0
+    explain_tr: "Bora adını ve kim olduğunu söylüyor; demek ki 'Kim arıyor?' diye sorulmuş. 'Where are you calling from?' de bir soru ama cevabı bir yer olmalı."
+    items: [U4-026, U4-031]
+  - id: sd-C01-p02
+    type: text_infer
+    stem_id: S08
+    context: |-
+      Ece: We're having a meeting about the concert on Thursday at 5. Can everyone come?
+      Kaan: I'm afraid I can't. I have basketball training.
+      Elif: Sure! I'll bring my lyrics.
+      Bora: Sounds good, but I have to leave at 5.30.
+      Duru: I'd love to, but I'm taking Fıstık to the vet.
+      Selin: No problem. I'll be there on time.
+    prompt: "Who will NOT come to the meeting?"
+    options:
+      - "Kaan and Duru"
+      - "Kaan, Bora and Duru"
+      - "Elif and Selin"
+      - "Only Kaan"
+    answer: 0
+    explain_tr: "Kaan (I'm afraid I can't) ve Duru (I'd love to, but …) gelmiyor. Bora'daki 'but' tuzak: geliyor, yalnız erken ayrılacak."
+    items: [U4-023]
+  - id: sd-C01-p03
+    type: situation
+    stem_id: S10
+    context: "Selin is talking to Elif on the phone, but the line is bad. She can't understand what Elif is saying."
+    prompt: "What does Selin say?"
+    options:
+      - "Sorry, can you repeat that, please?"
+      - "Thanks for calling. Take care."
+      - "Hold on, I'll get her."
+      - "Can I speak to Elif, please?"
+    answer: 0
+    explain_tr: "Hat kötü, Selin anlamıyor → tekrar etmesini ister. 'Can I speak to Elif?' yanlış, çünkü Selin zaten Elif'le konuşuyor."
+    items: [U4-015, U4-019]
+  - id: sd-C01-p04
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Duru: Hi Kaan! Do you want to go to the new burger place on Saturday?
+      Kaan: ________ I'm crazy about burgers!
+      Duru: Great! Let's meet at 1 o'clock.
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "That would be great!"
+      - "I'm afraid I can't."
+      - "I don't mind cooking."
+      - "Sorry, wrong number."
+    answer: 0
+    explain_tr: "Kaan hamburgere bayılıyor ve Duru 'Great!' diyerek buluşma saati veriyor: kabul. 'I'm afraid I can't' ret olduğu için sonraki satırlarla çelişir."
+    items: [U1-023, U2-015]
+  - id: sd-C01-p05
+    type: situation
+    stem_id: S10
+    context: "Murat Bey calls a pizza place. The pizza arrived very late and it was cold."
+    prompt: "Which of the following is NOT suitable for Murat Bey in this situation?"
+    options:
+      - "Thank you! The pizza was delicious."
+      - "I'd like to make a complaint."
+      - "My order arrived late and it was cold."
+      - "Can I speak to the manager, please?"
+    answer: 0
+    explain_tr: "Murat Bey şikâyet etmek için arıyor; diğer üç cümle şikâyete uygun. Soğuk ve geç gelen pizzaya 'Lezzetliydi, teşekkürler!' demek duruma uymaz."
+    items: [U4-040, U4-039, U4-026, U3-028]
+  - id: sd-C01-p06
+    type: text_infer
+    stem_id: S08
+    context: |-
+      Woman: Good afternoon, Green Clinic.
+      Man: Hello, this is Ahmet Kaya. I'd like to make an appointment with Dr Demir.
+      Woman: Of course. Is Friday at 3 p.m. OK?
+      Man: Yes, that's perfect. Thank you.
+    prompt: "Who is calling?"
+    options:
+      - "Ahmet Kaya"
+      - "Dr Demir"
+      - "the secretary at Green Clinic"
+    answer: 0
+    explain_tr: "'This is Ahmet Kaya' arayanın kendini tanıtmasıdır. Dr Demir adı geçiyor ama o görüşülmek istenen kişi, telefonu kliniğin çalışanı açıyor."
+    items: [U4-031, U4-033, U4-002]
+  - id: sd-C01-p07
+    type: dialogue_complete
+    stem_id: S01
+    context: |-
+      Elif: Hi Selin, it's Elif. Are you busy?
+      Selin: Not really. ________
+      Elif: I have a question about our maths homework.
+    prompt: "Which of the following can be the missing part?"
+    options:
+      - "What's up?"
+      - "Talk to you soon!"
+      - "Sorry, wrong number."
+      - "Hold on, I'll get her."
+    answer: 0
+    explain_tr: "Elif ardından neden aradığını açıklıyor; Selin 'Ne oldu, ne var?' diye sormuş olmalı. 'Talk to you soon!' görüşmeyi bitirir, ardından soru gelmez."
+    items: [U4-028, U1-004]
+tips:
+  - "Kökü okuyunca yöntemi seç: boşluk → alt satır, Who → + / − listesi, durum → Türkçe özet."
+  - "Telefon diyaloglarında önce rolleri belirle: arayan, açan, aranan."
+  - "'but'tan sonra gelen her zaman ret demek değildir; 'I have to leave at 5.30' gibi bir koşul da olabilir. Cümleyi sonuna kadar oku."
+coach:
+  start: "Atölye zamanı! Bugün diyalogları karışık çözeceğiz. Kulaklıkları tak, Wrong Number seni arıyor."
+  end: "Harika! Telefonda kimin kim olduğunu, kimin geldiğini, ne denmesi gerektiğini biliyorsun. Diyalog ustası!"
+status: draft

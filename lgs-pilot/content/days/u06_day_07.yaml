@@ -1,0 +1,306 @@
+schema_version: 1
+program: lgs
+unit: 6
+day: 7
+status: draft
+title: "Kaan Havayolları"
+est_minutes: 10
+characters: [Ece, Kaan, Bora, Selin, Elif, Duru]
+new_items: [U6-008, U6-010, U6-017, U6-018, U6-053, U6-054]
+
+story:
+  - id: s01
+    text: "Kampın ikinci sabahı göl ayna gibiydi. Kıyıda yan yana dizilmiş, iki kişilik turuncu {U6-010|canoes} bekliyordu."
+  - id: s02
+    text: "Deniz Hoca kıyıya bir masa kurmuştu: \"<en>We provide all the safety {U6-022|equipment}. Everybody takes a {U6-026|life jacket} and a {U6-010|paddle}. No {U6-023|helmets} on the lake today.</en>\""
+  - id: s03
+    text: "Deniz Hoca turuncu yelekleri tek tek dağıttı: \"<en>Why a {U6-026|life jacket}? Because people without one can {U6-017|drown}, even good swimmers. On my lake, it's always on.</en>\""
+  - id: s04
+    text: "Ece kıyıdaki tabelayı yüksek sesle okudu: \"<en>Most people who {U6-017|drown} in boat accidents are not wearing a {U6-026|life jacket}.</en>\" Bora yeleğinin bütün tokalarını üç kez kontrol etti."
+  - id: s05
+    text: "Ekipler kuruldu: Ece–Selin, Elif–Duru, Kaan–Bora. Bora daha yeleğini yeni kapatıyordu ama Kaan çoktan oturmuş, {U6-010|paddle}'ı deli gibi sallıyordu."
+  - id: s06
+    text: "Ama hiçbir yere gitmiyordu. Deniz Hoca güldü: \"<en>Kaan, your {U6-010|canoe} is still on the {U6-024|rope}! And your partner is here, on the beach.</en>\""
+  - id: s07
+    text: "Deniz Hoca: \"<en>{U6-010|Canoeing} is a team sport. Wait for Bora. Be {U1-085|patient}.</en>\" Kaan: \"<en>{U1-085|Patient}? Sorry, I don't know that word.</en>\""
+  - id: s08
+    text: "Sonunda bütün ekipler göldeydi. Bora ilk beş dakika {U2-059|nervous} görünüyordu, sonra kendi ritmini buldu: \"<en>Left, right, left, right… it's like drums! I feel the {U6-053|freedom}!</en>\""
+  - id: s09
+    text: "Yarım saat sonra ağaçların uçları eğilmeye başladı. Su kırış kırış oldu, küçük dalgalar teknelerin yanına vurdu. Ece'nin şapkası kafasından havalanıp kıyıya doğru uçtu."
+  - id: s10
+    text: "Deniz Hoca düdüğünü çaldı: \"<en>The {U6-054|wind} is getting stronger. Everybody, back to the beach. We {U6-018|land} there, next to the red flag.</en>\""
+  - id: s11
+    text: "Deniz Hoca'nın sesinde hiç telaş yoktu. Kendi teknesiyle grubun hemen arkasındaydı: \"<en>Stay {U1-069|calm}. Paddle slowly and together. I'm right behind you.</en>\""
+  - id: s12
+    text: "Elif şarkıyla tempo tuttu: \"<en>The {U6-054|wind} is {U6-054|blowing}, but we are going!</en>\" Duru ritme uydu ve hayatında ilk kez acelesi olan biri gibi göründü."
+  - id: s13
+    text: "Ekipler birer birer kıyıya vardı. Kaan, pilot anonsu yapar gibi: \"<en>Ladies and gentlemen, safe {U6-018|landing}! Thank you for flying with Kaan Airlines!</en>\""
+  - id: s14
+    text: "Selin: \"<en>We didn't fly, Kaan. We {U6-018|landed} early because the {U6-054|wind} was too strong. That was the right decision.</en>\""
+  - id: s15
+    text: "Deniz Hoca: \"<en>Now let's carry the {U6-010|canoes} up the beach. Two people for each one.</en>\" Kaan beklemedi bile. Kendi {U6-010|canoe}'larının ucunu yakaladı ve tek başına çekmeye başladı."
+  - id: s16
+    text: "Çekti. Asıldı. Yüzü domates gibi kızardı. Turuncu gövde bir santim bile kıpırdamadı. Bora: \"<en>Er, Kaan…</en>\" Kaan: \"<en>Not now! I can do it alone!</en>\""
+  - id: s17
+    text: "Bora sessizce içini gösterdi. Duru, turuncu yeleğinin içinde, teknenin dibinde mışıl mışıl uyuyordu."
+  - id: s18
+    text: "Duru tek gözünü açtı: \"<en>Five more minutes. The {U6-054|wind} is nice here.</en>\" Dört kişi birlikte tuttular ve turuncu gövde, içinde Duru'yla, kolayca kumsala çıktı. Kaan: \"<en>OK. A team is faster than Kaan.</en>\""
+  - id: s19
+    text: "Öğleden sonra yağmur başlayınca herkes büyük çadırda toplandı. Murat Bey gençliğinden bir fotoğraf gösterdi: maskeli, siyah bir {U6-008|wetsuit} içinde gülümseyen genç bir adam. \"<en>I loved {U6-008|scuba diving} when I was at university.</en>\""
+  - id: s20
+    text: "Murat Bey'in gözleri parladı: \"<en>Under the water you feel the {U6-053|freedom}. No phones, no noise, only fish.</en>\""
+  - id: s21
+    text: "Kaan: \"<en>Can I go {U6-008|scuba diving} next summer?</en>\" Murat Bey: \"<en>Only with a {U6-008|diving club} and an {U6-048|instructor}. Divers never go alone, because nobody wants to {U6-017|drown}.</en>\""
+  - id: s22
+    text: "Selin hemen not aldı: \"<en>How much does {U6-008|scuba diving} {U6-046|cost}?</en>\" Murat Bey: \"<en>The {U6-022|equipment} {U6-046|costs} a lot, so beginners usually rent it.</en>\""
+  - id: s23
+    text: "Elif: \"<en>I feel the {U6-053|freedom} when I sing.</en>\" Duru, battaniyesinin altından: \"<en>I feel it in my hammock.</en>\""
+  - id: s24
+    text: "Akşam Deniz Hoca bir duyuru yaptı: \"<en>Tomorrow night we have a night walk. Bring your {U6-025|flashlight}!</en>\" Ece çantasından iki {U6-025|flashlight} ve yedek pil çıkardı. Tabii ki."
+  - id: s25
+    text: "Bora yutkundu: \"<en>A night walk? In the forest? With… bugs?</en>\" Kimse cevap vermedi. Uzaktan bir baykuş öttü."
+
+scene:
+  - id: c01
+    speaker: Deniz Hoca
+    text: "<en>The wind is getting stronger. Everybody, back to the beach!</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>Safe landing! Thank you for flying with Kaan Airlines!</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>We landed early because the wind was blowing hard.</en>"
+  - id: c04
+    speaker: Murat Bey
+    text: "<en>I loved scuba diving. Under the water you feel the freedom.</en>"
+  - id: c05
+    speaker: Deniz Hoca
+    text: "<en>Always wear your life jacket. People without one can drown.</en>"
+
+steps:
+  - item: U6-008
+    sezdir:
+      id: u6d07-008-z
+      type: meaning
+      context: s19
+      prompt: "Hikâyede Murat Bey \"I loved scuba diving when I was at university\" diyor. \"scuba diving\" ne anlama geliyordu?"
+      options: ["tüplü dalış", "yelkenli yarışı", "dağ yürüyüşü", "buz pateni"]
+      answer: 0
+    kullan:
+      id: u6d07-008-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>To go ________, you need a mask, a wetsuit and an air tank.</en>"
+      options: ["scuba diving", "skydiving", "paragliding", "rock climbing"]
+      answer: 0
+      explain: "Maske, dalış giysisi ve hava tüpü su altı içindir: scuba diving."
+    sina:
+      id: u6d07-008-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is correct?</en>"
+      stem: "<en>Activity        Age    Price\nCanoeing        10+    200 TL\nScuba diving    14+    900 TL\nParagliding     16+    1,500 TL</en>"
+      options: ["Scuba diving is more expensive than canoeing.", "Paragliding is cheaper than scuba diving.", "A 12-year-old can go scuba diving.", "Canoeing is only for people over 14."]
+      answer: 0
+      explain: "Tüplü dalış 900 TL, kano 200 TL: daha pahalı. Yamaç paraşütü dalıştan pahalı; dalış için en az 14 yaş gerekir; kano 10 yaşından itibaren."
+  - item: U6-010
+    sezdir:
+      id: u6d07-010-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede Deniz Hoca \"Canoeing is a team sport. Wait for Bora\" diyor. \"canoeing\" ne anlama geliyordu?"
+      options: ["kano sporu", "yüzme", "balık tutma", "ip atlama"]
+      answer: 0
+    kullan:
+      id: u6d07-010-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Hold the ________ with both hands and move it through the water.</en>"
+      options: ["paddle", "helmet", "flashlight", "pads"]
+      answer: 0
+      explain: "Kanoyu suda ilerletmek için paddle kullanılır; paddle hem isim (kürek) hem fiil (kürek çekmek) olur."
+    sina:
+      id: u6d07-010-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the text?</en>"
+      stem: "<en>Lake Camp: Kayaking Day\nWe meet at 9.00 at the beach. The instructor gives everyone a life jacket and a paddle. We paddle for two hours. Then we have lunch near the lake.</en>"
+      options: ["the price of the activity", "the meeting time", "the safety equipment", "the place for lunch"]
+      answer: 0
+      explain: "Buluşma saati (9.00), güvenlik donanımı (life jacket) ve öğle yemeği yeri (near the lake) metinde var; fiyat yok."
+  - item: U6-017
+    sezdir:
+      id: u6d07-017-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyedeki tabelada \"Most people who drown in boat accidents are not wearing a life jacket\" yazıyor. \"drown\" ne anlama geliyordu?"
+      options: ["(suda) boğulmak", "üşümek", "kaybolmak", "yorulmak"]
+      answer: 0
+    kullan:
+      id: u6d07-017-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Never swim alone in the sea. People can ________ in deep water.</en>"
+      options: ["drown", "land", "gain", "climb"]
+      answer: 0
+      explain: "Derin suda yalnız yüzmenin tehlikesi drown'dır. Tekne için sink (batmak) kullanılır."
+    sina:
+      id: u6d07-017-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What is the main message of the note?</en>"
+      stem: "<en>SAFETY NOTE: Wear your life jacket at all times on the lake. Even strong swimmers can drown in cold water.</en>"
+      options: ["A life jacket is important for everyone.", "Only bad swimmers need a life jacket.", "Cold water is good for swimming.", "Strong swimmers don't need any equipment."]
+      answer: 0
+      explain: "Even strong swimmers can drown: iyi yüzücüler dahil herkes can yeleği giymeli."
+  - item: U6-018
+    sezdir:
+      id: u6d07-018-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede Kaan kıyıya varınca \"Ladies and gentlemen, safe landing!\" diyor. \"safe landing\" ne anlama geliyordu?"
+      options: ["güvenli iniş", "iyi yolculuklar", "hızlı kalkış", "dikkatli sürüş"]
+      answer: 0
+    kullan:
+      id: u6d07-018-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Our plane is going to ________ at İzmir Airport at 6.30.</en>"
+      options: ["land", "drown", "climb", "fall"]
+      answer: 0
+      explain: "Uçağın havalimanına inmesi land'dir. land isim olarak 'kara' da demektir: by land = karadan."
+    sina:
+      id: u6d07-018-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>What does the underlined word mean?</en>"
+      stem: "<en>The paraglider flew over the sea for ten minutes and <u>landed</u> safely on the beach.</en>"
+      options: ["came down to the ground", "went up into the sky", "jumped into the water", "stayed in the air"]
+      answer: 0
+      explain: "Havada uçtuktan sonra kumsala inmiş: landed = came down to the ground."
+  - item: U6-053
+    sezdir:
+      id: u6d07-053-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede Murat Bey \"Under the water you feel the freedom\" diyor. \"freedom\" ne anlama geliyordu?"
+      options: ["özgürlük", "açlık", "uykusuzluk", "acele"]
+      answer: 0
+    kullan:
+      id: u6d07-053-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Birds can fly anywhere they want. They have ________.</en>"
+      options: ["freedom", "equipment", "accidents", "qualifications"]
+      answer: 0
+      explain: "İstediği yere gidebilmek freedom'dır; feel the freedom = özgürlüğü hissetmek."
+    sina:
+      id: u6d07-053-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: Why do you love cycling so much, Kaan?\nKaan: ________</en>"
+      options: ["Because I feel the freedom when I ride.", "Because it's raining today.", "I'd rather not, thanks.", "It costs 50 TL."]
+      answer: 0
+      explain: "Why? sorusuna Because ile sevmenin nedeni verilir: özgürlük hissi. Yağmur bisikleti sevmenin nedeni değil."
+  - item: U6-054
+    sezdir:
+      id: u6d07-054-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede Deniz Hoca \"The wind is getting stronger. Everybody, back to the beach\" diyor. \"wind\" ne anlama geliyordu?"
+      options: ["rüzgâr", "ses", "müzik", "ışık"]
+      answer: 0
+    kullan:
+      id: u6d07-054-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Close the window, please. The wind is ________ the papers off my desk.</en>"
+      options: ["blowing", "drowning", "landing", "climbing"]
+      answer: 0
+      explain: "Rüzgâr için fiil blow'dur: The wind is blowing. Geçmiş zamanı blew."
+    sina:
+      id: u6d07-054-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What does Selin probably say?</en>"
+      stem: "<en>Selin wants to fly her kite in the park, but the leaves on the trees are not moving at all.</en>"
+      options: ["There isn't any wind today.", "The wind is too strong today.", "Let's put on our life jackets.", "The plane is going to land."]
+      answer: 0
+      explain: "Yapraklar hiç kıpırdamıyorsa rüzgâr yoktur; uçurtma uçmaz."
+
+review:
+  - id: u6d07-r01
+    type: gap_fill
+    item: U6-009
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Mountain goats can ________ very steep rocks.</en>"
+    options: ["climb", "cost", "prefer", "invite"]
+    answer: 0
+  - id: u6d07-r02
+    type: gap_fill
+    item: U6-016
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>It takes a lot of ________ to say 'I'm scared' in front of your friends.</en>"
+    options: ["courage", "equipment", "rope", "flashlight"]
+    answer: 0
+  - id: u6d07-r03
+    type: dialogue_complete
+    item: U6-049
+    prompt: "<en>Complete the dialogue.</en>"
+    stem: "<en>A: Did you finish the 1,000-piece puzzle?\nB: Yes! It was difficult, but I ________.</en>"
+    options: ["succeeded", "refused", "forgot", "apologised"]
+    answer: 0
+  - id: u6d07-r04
+    type: gap_fill
+    item: U6-050
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Kaan practises basketball every day, so his game is ________ fast.</en>"
+    options: ["improving", "costing", "falling", "surviving"]
+    answer: 0
+  - id: u6d07-r05
+    type: synonym
+    item: U6-051
+    prompt: "<en>Which word is closest in meaning to 'aim'?</en>"
+    options: ["goal", "rope", "accident", "skill"]
+    answer: 0
+  - id: u6d07-r06
+    type: gap_fill
+    item: U6-052
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Bora ________ a lot of confidence at the climbing wall.</en>"
+    options: ["gained", "cost", "climbed", "invited"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U6-018]
+    text: "land isim olarak \"kara, toprak\" demektir (by land = karadan). Fiil olarak ise \"iniş yapmak, yere inmek\": The plane landed. Safe landing! LGS'de cümlede fiil mi isim mi, ona bak."
+  - type: ilginc_bilgi
+    refs: [U6-008]
+    text: "SCUBA aslında bir kısaltma: Self-Contained Underwater Breathing Apparatus, yani dalgıcın kendi havasını taşıdığı su altı solunum aygıtı."
+  - type: kelime_ailesi
+    refs: [U6-054]
+    text: "wind (isim) → windy (sıfat): It's windy today. Rüzgârın fiili blow: The wind is blowing. Geçmiş zaman düzensiz: blow → blew."
+  - type: lgs_taktigi
+    refs: [U6-017]
+    text: "drown ile sink karışmasın: insan ve hayvan için drown (boğulmak), tekne ve gemi için sink (batmak) kullanılır."
+
+coach:
+  start: "Bugün göldeyiz! Turuncu yelekler hazır. Kaan yine herkesten önce yola çıktı… ya da çıkamadı 🚣"
+  end_good: "Harika! Kaan Havayolları'ndan sana tam puan: kalkış temiz, varış kusursuz ✈️"
+  end_mixed: "Fena değil! {weak} biraz dalgalıydı. Yeleğini giy, yarın aynı gölde bir tur daha 🚣"
+
+notifications:
+  morning: "Göl ayna gibi, Kaan çok hevesli. Ama bir şey ters gidecek… 🚣"
+  evening: "Kaan tek başına çekti, çekti… Teknenin içinde kim vardı? 😴"
+  review: "Kaan'ın pilot anonsu neydi? 'Safe …!' Hatırla ✈️"
+
+editor:
+  z07: {U6-008: BEKLIYOR, U6-010: BEKLIYOR, U6-017: BEKLIYOR, U6-018: BEKLIYOR, U6-053: BEKLIYOR, U6-054: BEKLIYOR}

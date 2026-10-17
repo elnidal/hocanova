@@ -1,0 +1,734 @@
+schema_version: 1
+program: lgs
+unit: 2
+unit_title: Teen Life
+source: LGS_Unite2_TeenLife_Havuz_v1 (HEDEF, onaylı)
+items:
+- id: U2-001
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: teen / teenager
+  kind: phrase
+  meaning_tr: genç, ergen (13–19 yaş)
+  pilot_day: 1
+  variants:
+  - teen
+  - teenager
+- id: U2-002
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: free time
+  kind: phrase
+  meaning_tr: boş zaman
+  pilot_day: 1
+- id: U2-003
+  unit: 2
+  theme: Anket ve grafik dili
+  display: survey
+  kind: word
+  meaning_tr: anket
+  pilot_day: 1
+- id: U2-004
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: hang out
+  kind: trap
+  meaning_tr: takılmak, vakit geçirmek
+  pilot_day: 1
+  trap_note: takılmak, oyalanmak
+  variants:
+  - hang around
+- id: U2-005
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: In my opinion / From my point of view / I believe
+  kind: pattern
+  meaning_tr: bence / bana göre / inanıyorum ki
+  pilot_day: 1
+  function: fikir
+  variants:
+  - I believe
+  - from my point of view
+  - in my opinion
+- id: U2-006
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: what about you?
+  kind: pattern
+  meaning_tr: ya sen? (karşı soru)
+  pilot_day: 1
+  function: karşı soru
+- id: U2-007
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: like
+  kind: trap
+  meaning_tr: sevmek, hoşlanmak (like + -ing)
+  pilot_day: 2
+  trap_note: 'Ünite 1: "gibi" (U1-080) · Ünite 2: "sevmek" (like + -ing)'
+- id: U2-008
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: enjoy
+  kind: word
+  meaning_tr: keyif almak, zevk almak (+ -ing)
+  pilot_day: 2
+- id: U2-009
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: be fond of
+  kind: pattern
+  meaning_tr: -e düşkün olmak (+ -ing)
+  pilot_day: 2
+  function: beğeni
+- id: U2-010
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: be keen on
+  kind: pattern
+  meaning_tr: -e meraklı olmak (+ -ing)
+  pilot_day: 2
+  function: beğeni
+- id: U2-011
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: don't mind
+  kind: pattern
+  meaning_tr: sakıncası yok, fark etmez (+ -ing)
+  pilot_day: 2
+  function: kayıtsızlık
+- id: U2-012
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: dislike
+  kind: word
+  meaning_tr: sevmemek, hoşlanmamak
+  pilot_day: 2
+- id: U2-013
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: can't stand
+  kind: pattern
+  meaning_tr: -e katlanamamak, hiç sevmemek (+ -ing)
+  pilot_day: 3
+  function: beğenmeme
+  trap_note: '"ayakta durmak" ↔ can''t stand = katlanamamak'
+  variants:
+  - stand
+  exam:
+    teog_lgs_total: 4
+    lgs: 1
+    words:
+    - can't stand
+- id: U2-014
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: hate
+  kind: word
+  meaning_tr: nefret etmek
+  pilot_day: 3
+- id: U2-015
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: be crazy about
+  kind: pattern
+  meaning_tr: -e bayılmak, deli olmak
+  pilot_day: 3
+  function: beğeni
+- id: U2-016
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: be into
+  kind: pattern
+  meaning_tr: -e merakı olmak, -den hoşlanmak (gündelik)
+  pilot_day: 3
+  function: beğeni
+- id: U2-017
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: admire
+  kind: word
+  meaning_tr: hayran olmak
+  pilot_day: 3
+- id: U2-018
+  unit: 2
+  theme: Beğeni, tercih, fikir
+  display: to be honest
+  kind: pattern
+  meaning_tr: açıkçası, dürüst olmak gerekirse
+  pilot_day: 3
+  function: fikir
+- id: U2-019
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: band
+  kind: word
+  meaning_tr: müzik grubu
+  pilot_day: 4
+- id: U2-020
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: member
+  kind: word
+  meaning_tr: üye
+  pilot_day: 4
+- id: U2-021
+  unit: 2
+  theme: Müzik ve film türleri
+  display: genre
+  kind: trap
+  meaning_tr: tür (müzik, film, kitap)
+  pilot_day: 4
+  trap_note: '"tür" ↔ "yazmak (klavyede)"'
+  variants:
+  - type
+- id: U2-022
+  unit: 2
+  theme: Müzik ve film türleri
+  display: rock music
+  kind: phrase
+  meaning_tr: rock müzik
+  pilot_day: 4
+- id: U2-023
+  unit: 2
+  theme: Müzik ve film türleri
+  display: pop music
+  kind: phrase
+  meaning_tr: pop müzik
+  pilot_day: 4
+- id: U2-024
+  unit: 2
+  theme: Müzik ve film türleri
+  display: jazz
+  kind: word
+  meaning_tr: caz
+  pilot_day: 4
+- id: U2-025
+  unit: 2
+  theme: Müzik ve film türleri
+  display: classical music
+  kind: phrase
+  meaning_tr: klasik müzik
+  pilot_day: 5
+- id: U2-026
+  unit: 2
+  theme: Müzik ve film türleri
+  display: folk music
+  kind: phrase
+  meaning_tr: halk müziği
+  pilot_day: 5
+- id: U2-027
+  unit: 2
+  theme: Müzik ve film türleri
+  display: rap
+  kind: word
+  meaning_tr: rap müzik
+  pilot_day: 5
+- id: U2-028
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: loud
+  kind: word
+  meaning_tr: yüksek sesli
+  pilot_day: 5
+- id: U2-029
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: noisy
+  kind: word
+  meaning_tr: gürültülü
+  pilot_day: 5
+- id: U2-030
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: annoying
+  kind: word
+  meaning_tr: sinir bozucu
+  pilot_day: 5
+- id: U2-031
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: gym
+  kind: word
+  meaning_tr: spor salonu
+  pilot_day: 6
+- id: U2-032
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: work out
+  kind: phrase
+  meaning_tr: spor yapmak, egzersiz yapmak
+  pilot_day: 6
+- id: U2-033
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: train
+  kind: trap
+  meaning_tr: antrenman yapmak (fiil)
+  pilot_day: 6
+  trap_note: '"tren" ↔ antrenman yapmak'
+- id: U2-034
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: look fit
+  kind: trap
+  meaning_tr: formda görünmek
+  pilot_day: 6
+  trap_note: fit = formda; "uymak" anlamı da var (It doesn't fit)
+- id: U2-035
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: energetic
+  kind: word
+  meaning_tr: enerjik
+  pilot_day: 6
+- id: U2-036
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: team sport
+  kind: phrase
+  meaning_tr: takım sporu
+  pilot_day: 6
+- id: U2-037
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: individual sport
+  kind: phrase
+  meaning_tr: bireysel spor
+  pilot_day: 7
+- id: U2-038
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: do karate
+  kind: phrase
+  meaning_tr: karate yapmak (do + dövüş sporu)
+  pilot_day: 7
+- id: U2-039
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: hiking
+  kind: word
+  meaning_tr: doğa yürüyüşü
+  pilot_day: 7
+- id: U2-040
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: rest
+  kind: trap
+  meaning_tr: dinlenmek
+  pilot_day: 7
+  trap_note: '"dinlenmek" ↔ "geri kalan" (the rest)'
+- id: U2-041
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: pay attention
+  kind: phrase
+  meaning_tr: dikkat etmek
+  pilot_day: 7
+- id: U2-042
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: annoyed
+  kind: word
+  meaning_tr: sinirlenmiş, rahatsız olmuş
+  pilot_day: 7
+- id: U2-043
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: daily routine
+  kind: phrase
+  meaning_tr: günlük rutin
+  pilot_day: 8
+- id: U2-044
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: always > usually > often > sometimes > rarely > never
+  kind: pattern
+  meaning_tr: sıklık zarflarının sırası ve yeri
+  pilot_day: 8
+  function: sıklık
+- id: U2-045
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: regularly
+  kind: word
+  meaning_tr: düzenli olarak
+  pilot_day: 8
+- id: U2-046
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: mostly
+  kind: word
+  meaning_tr: çoğunlukla
+  pilot_day: 8
+- id: U2-047
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: most of the time
+  kind: pattern
+  meaning_tr: çoğu zaman
+  pilot_day: 8
+  function: sıklık
+- id: U2-048
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: pick up
+  kind: trap
+  meaning_tr: (arabayla) almak; yerden almak
+  pilot_day: 8
+  trap_note: '"yerden almak" ↔ "arabayla almak"'
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - pick up
+- id: U2-049
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: rarely
+  kind: word
+  meaning_tr: nadiren
+  pilot_day: 9
+- id: U2-050
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: seldom
+  kind: word
+  meaning_tr: nadiren, seyrek
+  pilot_day: 9
+- id: U2-051
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: hardly ever
+  kind: pattern
+  meaning_tr: neredeyse hiç
+  pilot_day: 9
+  function: sıklık
+- id: U2-052
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: once / twice / … times
+  kind: pattern
+  meaning_tr: bir kez / iki kez / … kez (a week, a month)
+  pilot_day: 9
+  function: sıklık
+- id: U2-053
+  unit: 2
+  theme: Günlük rutin ve sıklık
+  display: queue
+  kind: trap
+  meaning_tr: sıra, kuyruk; sıraya girmek
+  pilot_day: 9
+  trap_note: BrE "sıra"; okunuş /kjuː/
+- id: U2-054
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: follow the news
+  kind: phrase
+  meaning_tr: haberleri takip etmek
+  pilot_day: 9
+- id: U2-055
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: chat online
+  kind: phrase
+  meaning_tr: internetten sohbet etmek
+  pilot_day: 10
+- id: U2-056
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: surf the internet
+  kind: phrase
+  meaning_tr: internette gezinmek
+  pilot_day: 10
+- id: U2-057
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: take a selfie
+  kind: phrase
+  meaning_tr: selfie çekmek
+  pilot_day: 10
+- id: U2-058
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: share on social media
+  kind: phrase
+  meaning_tr: sosyal medyada paylaşmak
+  pilot_day: 10
+  variants:
+  - social media
+- id: U2-059
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: nervous
+  kind: word
+  meaning_tr: gergin, heyecanlı
+  pilot_day: 10
+- id: U2-060
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: ridiculous
+  kind: word
+  meaning_tr: saçma, gülünç
+  pilot_day: 10
+- id: U2-061
+  unit: 2
+  theme: Moda ve giyim
+  display: fashion
+  kind: word
+  meaning_tr: moda
+  pilot_day: 11
+- id: U2-062
+  unit: 2
+  theme: Moda ve giyim
+  display: trendy
+  kind: word
+  meaning_tr: moda olan, popüler
+  pilot_day: 11
+  exam:
+    teog_lgs_total: 4
+    lgs: 1
+    words:
+    - trendy
+- id: U2-063
+  unit: 2
+  theme: Moda ve giyim
+  display: keep up with the latest fashion
+  kind: phrase
+  meaning_tr: son modayı takip etmek
+  pilot_day: 11
+  variants:
+  - latest fashion
+- id: U2-064
+  unit: 2
+  theme: Moda ve giyim
+  display: casual clothes
+  kind: phrase
+  meaning_tr: günlük (rahat) kıyafetler
+  pilot_day: 11
+- id: U2-065
+  unit: 2
+  theme: Moda ve giyim
+  display: smart clothes
+  kind: phrase
+  meaning_tr: şık kıyafetler
+  pilot_day: 11
+- id: U2-066
+  unit: 2
+  theme: Moda ve giyim
+  display: outfit
+  kind: word
+  meaning_tr: kıyafet, kombin
+  pilot_day: 11
+- id: U2-067
+  unit: 2
+  theme: Moda ve giyim
+  display: formal
+  kind: word
+  meaning_tr: resmi
+  pilot_day: 12
+- id: U2-068
+  unit: 2
+  theme: Moda ve giyim
+  display: comfortable
+  kind: word
+  meaning_tr: rahat (kıyafet, koltuk)
+  pilot_day: 12
+- id: U2-069
+  unit: 2
+  theme: Moda ve giyim
+  display: snob
+  kind: word
+  meaning_tr: züppe, kendini beğenmiş
+  pilot_day: 12
+- id: U2-070
+  unit: 2
+  theme: Moda ve giyim
+  display: ordinary
+  kind: word
+  meaning_tr: sıradan
+  pilot_day: 12
+- id: U2-071
+  unit: 2
+  theme: Moda ve giyim
+  display: pretty
+  kind: trap
+  meaning_tr: güzel, sevimli; oldukça (pretty good)
+  pilot_day: 12
+  trap_note: '"güzel, sevimli" ↔ "oldukça" (pretty good)'
+- id: U2-072
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: adult
+  kind: word
+  meaning_tr: yetişkin
+  pilot_day: 12
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - adult
+- id: U2-073
+  unit: 2
+  theme: Müzik ve film türleri
+  display: science fiction
+  kind: phrase
+  meaning_tr: bilim kurgu
+  pilot_day: 13
+- id: U2-074
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: awesome
+  kind: word
+  meaning_tr: harika, müthiş
+  pilot_day: 13
+- id: U2-075
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: terrific
+  kind: word
+  meaning_tr: müthiş, harika (korkunç değil!)
+  pilot_day: 13
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - terrific
+- id: U2-076
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: impressive
+  kind: word
+  meaning_tr: etkileyici
+  pilot_day: 13
+- id: U2-077
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: fascinating
+  kind: word
+  meaning_tr: büyüleyici
+  pilot_day: 13
+- id: U2-078
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: awful
+  kind: word
+  meaning_tr: berbat, korkunç
+  pilot_day: 13
+- id: U2-079
+  unit: 2
+  theme: Öneri ve tavsiye
+  display: recommend
+  kind: word
+  meaning_tr: tavsiye etmek, önermek
+  pilot_day: 14
+- id: U2-080
+  unit: 2
+  theme: Öneri ve tavsiye
+  display: suggest
+  kind: word
+  meaning_tr: önermek
+  pilot_day: 14
+- id: U2-081
+  unit: 2
+  theme: Öneri ve tavsiye
+  display: advise
+  kind: word
+  meaning_tr: tavsiye vermek (fiil)
+  pilot_day: 14
+- id: U2-082
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: educational
+  kind: word
+  meaning_tr: eğitici, öğretici
+  pilot_day: 14
+- id: U2-083
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: entertaining
+  kind: word
+  meaning_tr: eğlendirici
+  pilot_day: 14
+- id: U2-084
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: follow the rules
+  kind: phrase
+  meaning_tr: kurallara uymak
+  pilot_day: 15
+- id: U2-085
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: be realistic
+  kind: phrase
+  meaning_tr: gerçekçi olmak
+  pilot_day: 15
+- id: U2-086
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: sensitive
+  kind: word
+  meaning_tr: duyarlı, hassas
+  pilot_day: 15
+  variants:
+  - be sensitive
+- id: U2-087
+  unit: 2
+  theme: Gençlik hayatı ve etkinlikler
+  display: get high grades
+  kind: phrase
+  meaning_tr: yüksek not almak
+  pilot_day: 15
+- id: U2-088
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: unbearable
+  kind: word
+  meaning_tr: katlanılmaz, dayanılmaz
+  pilot_day: 15
+  exam:
+    teog_lgs_total: 4
+    lgs: 0
+    words:
+    - unbearable
+- id: U2-089
+  unit: 2
+  theme: Anket ve grafik dili
+  display: all / most / half / a few / none
+  kind: pattern
+  meaning_tr: hepsi / çoğu / yarısı / birkaçı / hiçbiri
+  pilot_day: 16
+  function: grafik
+  variants:
+  - all
+  - half
+  - nearly / about
+  - none
+  - only a few
+- id: U2-090
+  unit: 2
+  theme: Anket ve grafik dili
+  display: more than / less than / the most / the least
+  kind: pattern
+  meaning_tr: -den fazla / -den az / en çok / en az
+  pilot_day: 16
+  function: grafik
+  variants:
+  - more than / less than
+  - most / least
+- id: U2-091
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: relaxing
+  kind: word
+  meaning_tr: rahatlatıcı, dinlendirici
+  pilot_day: 16
+- id: U2-092
+  unit: 2
+  theme: Değerlendirme sıfatları
+  display: enjoyable
+  kind: word
+  meaning_tr: keyifli, zevkli
+  pilot_day: 16
+exam_note: 'exam: kullanıcının paylaştığı ders kitabı listelerindeki "sınavlarda çıkmış kelimeler" tablosu (2013–2020 TEOG + 2018–2020 LGS). 2021 sonrası doğrulanmadı.'

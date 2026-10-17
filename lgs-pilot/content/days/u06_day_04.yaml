@@ -1,0 +1,303 @@
+schema_version: 1
+program: lgs
+unit: 6
+day: 4
+status: draft
+title: "Dört sayfalık liste"
+est_minutes: 10
+characters: [Ece, Kaan, Selin, Bora, Duru, Elif]
+new_items: [U6-022, U6-023, U6-024, U6-025, U6-026, U6-046]
+
+story:
+  - id: s01
+    text: "Perşembe, saat tam 3.40. Selin'in babası okul kapısındaydı; ne 3.39 ne 3.41. Bugün altı kişiyi alışveriş merkezindeki spor mağazasına götürecekti."
+  - id: s02
+    text: "Ece arabada dört sayfalık listesini açtı: \"<en>Page one: camp {U6-022|equipment}. Number one: a {U6-023|helmet}. Number two: knee {U6-023|pads}. Number three: a {U6-024|rope}…</en>\""
+  - id: s03
+    text: "Kaan: \"<en>Four pages? We're going for two days, not two years! I'm an {U6-003|adrenaline seeker}. I don't need a list!</en>\""
+  - id: s04
+    text: "Selin: \"<en>An {U6-003|adrenaline seeker} with no {U6-023|helmet}? That's {U6-011|dangerous}, Kaan.</en>\""
+  - id: s05
+    text: "Mağazaya girer girmez Kaan raftan kırmızı, parlak bir şey kapıp kafasına geçirdi ve aynaya döndü: \"<en>Look at me! A real {U6-001|adventurer}!</en>\" Ece: \"<en>Red is very {U1-072|fashionable} this spring.</en>\""
+  - id: s06
+    text: "Bora ise doğruca mağazanın en karanlık köşesine gitti: \"<en>I need a {U6-025|flashlight}. A big one. For bugs. I want to see them before they see me.</en>\""
+  - id: s07
+    text: "Bora görevliye döndü: \"<en>Excuse me, {U6-046|how much does} this {U6-025|flashlight} {U6-046|cost}?</en>\" Görevli: \"<en>The big one is 300 liras. The small one is 120.</en>\""
+  - id: s08
+    text: "Selin'in babası cebinden küçük bir defter çıkarıp fiyatları yazdı; tıpkı Selin gibi. Sonra ikisini de yakıp duvara tuttu: \"<en>The big one is {U6-033|more expensive}, but the small one is {U6-033|brighter}. Interesting.</en>\""
+  - id: s09
+    text: "Duru'yu bir süre kimse görmedi. Sonra mağazanın ortasındaki sergi hamağından bir ses geldi: \"<en>Is this camp {U6-022|equipment}? Then I'm ready.</en>\""
+  - id: s10
+    text: "Elif başka bir rafın önünde çığlık attı: \"<en>Look, a pink {U6-026|life jacket}! Pamuk has one just like this!</en>\""
+  - id: s11
+    text: "Ece: \"<en>A {U6-026|life jacket} is on page two. For the lake. No {U6-026|life jacket}, no water activities.</en>\""
+  - id: s12
+    text: "Kaan etikete uzandı: \"<en>{U6-046|How much does it cost}?</en>\" Görevli: \"<en>This one {U6-046|costs} 650 liras.</en>\""
+  - id: s13
+    text: "Kaan: \"<en>650?! My football boots {U6-046|cost} less!</en>\""
+  - id: s14
+    text: "Ece listedeki her şeyi telefonundaki hesap makinesine girdi ve bir an sustu: \"<en>Total for one person: 2,400 liras.</en>\" Mağazada derin bir sessizlik oldu."
+  - id: s15
+    text: "Selin'in babası: \"<en>Hmm. Wait a minute. I think the camp sent an email last night.</en>\""
+  - id: s16
+    text: "Selin e-postayı açıp okudu: \"<en>'Dear parents, we provide all {U6-022|safety equipment}: {U6-023|helmets}, {U6-024|ropes} and {U6-026|life jackets}. Students only need a {U6-025|flashlight}, a water bottle and warm clothes.'</en>\""
+  - id: s17
+    text: "Ece listesine baktı. İlk iki sayfa bir anda boşa gitmişti: \"<en>Two pages… for nothing.</en>\""
+  - id: s18
+    text: "Elif ona sarıldı: \"<en>Not for nothing! Now we know a lot about camp {U6-022|equipment}. That's a good {U6-027|experience} too!</en>\""
+  - id: s19
+    text: "Ece gülümseyip sayfayı çevirdi: \"<en>OK. New plan. {U6-038|What kind of} {U6-025|flashlight} do we need?</en>\" Selin'in babası defterini gösterdi: \"<en>A small one. It {U6-046|costs} less, and it's brighter. And today there's a {U5-049|discount}.</en>\""
+  - id: s20
+    text: "Kaan hâlâ kırmızı şeyi çıkarmamıştı: \"<en>Can I keep this {U6-023|helmet} on? It's my {U6-002|extreme sports} look!</en>\" Görevli: \"<en>Only if you buy it.</en>\" Kaan onu bir saniyede rafa geri koydu."
+  - id: s21
+    text: "Bora bu arada kalın, sarı bir şeyi omzuna dolamıştı: \"<en>And this {U6-024|rope}? For the climbing wall?</en>\" Selin: \"<en>The camp gives us the {U6-024|ropes}, Bora. Put it back.</en>\""
+  - id: s22
+    text: "Kasada Ece saydı: \"<en>Six people, six small {U6-025|flashlights}… Wait. Five people. Where's Duru?</en>\" Duru sergi hamağında, kollarını kavuşturmuş, mışıl mışıl uyuyordu."
+  - id: s23
+    text: "Akşam Kaan gruba yazdı: \"<en>Bus at 7 a.m. tomorrow. Three alarms are ready. Me? Late? Never!</en>\" Selin: \"<en>I'll call you at 6.15. Just in case.</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Camp equipment: a helmet, knee pads and a rope.</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>Excuse me, how much does this flashlight cost?</en>"
+  - id: c03
+    speaker: Görevli
+    text: "<en>It costs 120 liras.</en>"
+  - id: c04
+    speaker: Elif
+    text: "<en>Look, a pink life jacket!</en>"
+  - id: c05
+    speaker: Selin
+    text: "<en>The camp provides all safety equipment. We only need a flashlight.</en>"
+
+steps:
+  - item: U6-022
+    sezdir:
+      id: u6d04-022-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyedeki e-postada \"we provide all safety equipment: helmets, ropes and life jackets\" cümlesindeki \"equipment\" ne anlama geliyordu?"
+      options: ["ekipman, donanım", "kurallar", "görevliler", "kameralar"]
+      answer: 0
+    kullan:
+      id: u6d04-022-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A tennis player needs some ________: a racket, balls and good shoes.</en>"
+      options: ["equipment", "equipments", "experience", "excuse"]
+      answer: 0
+      explain: "equipment sayılamaz; sonuna -s gelmez. Raket, top ve ayakkabı tenis ekipmanıdır."
+    sina:
+      id: u6d04-022-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the email, which of the following is TRUE?</en>"
+      stem: "<en>From: Spring Adventure Camp\nDear parents,\nWe provide all safety equipment: helmets, ropes and life jackets. Students need to bring a flashlight, a water bottle and warm clothes.</en>"
+      options: ["Students don't need to buy helmets.", "Students need to bring their own ropes.", "The camp gives every student a flashlight.", "Students don't need warm clothes."]
+      answer: 0
+      explain: "Kamp kask, ip ve can yeleğini veriyor; el feneri, su şişesi ve sıcak giysiyi öğrenciler getiriyor."
+  - item: U6-023
+    sezdir:
+      id: u6d04-023-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede Selin'in \"An adrenaline seeker with no helmet?\" sorusundaki \"helmet\" ne anlama geliyordu?"
+      options: ["kask", "kamp çantası", "güneş gözlüğü", "eldiven"]
+      answer: 0
+    kullan:
+      id: u6d04-023-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Always wear a ________ on your bike. It protects your head.</en>"
+      options: ["helmet", "life jacket", "knee pad", "rope"]
+      answer: 0
+      explain: "Başı koruyan helmet'tır (kask). Knee pads dizi korur."
+    sina:
+      id: u6d04-023-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What does Elif need?</en>"
+      stem: "<en>Elif is learning to skate. After every lesson, her knees hurt.</en>"
+      options: ["knee pads", "a flashlight", "a life jacket", "a rope"]
+      answer: 0
+      explain: "Dizleri korumak için knee pads gerekir."
+  - item: U6-024
+    sezdir:
+      id: u6d04-024-z
+      type: meaning
+      context: s21
+      prompt: "Hikâyede Selin'in \"The camp gives us the ropes, Bora.\" cümlesindeki \"ropes\" ne anlama geliyordu?"
+      options: ["ipler, halatlar", "kasklar", "haritalar", "çadırlar"]
+      answer: 0
+    kullan:
+      id: u6d04-024-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>On the climbing wall, a strong ________ holds you, so you are safe.</en>"
+      options: ["rope", "flashlight", "helmet", "life jacket"]
+      answer: 0
+      explain: "Tırmanma duvarında seni tutan sağlam bir rope'tur (ip, halat)."
+    sina:
+      id: u6d04-024-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the rules, which of the following is TRUE?</en>"
+      stem: "<en>Climbing wall rules\nHelmet: always\nRope: always\nPhone: no\nAn adult with you: always</en>"
+      options: ["You must use a rope on the climbing wall.", "You can take your phone on the wall.", "You don't need a helmet on the wall.", "You can go on the wall without an adult."]
+      answer: 0
+      explain: "Kurallara göre ip ve kask her zaman zorunlu, telefon yasak, yanında hep bir yetişkin var."
+  - item: U6-025
+    sezdir:
+      id: u6d04-025-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede Bora'nın \"I need a flashlight. A big one. For bugs. I want to see them…\" cümlesindeki \"flashlight\" ne anlama geliyordu?"
+      options: ["el feneri", "uyku tulumu", "büyüteç", "fotoğraf makinesi"]
+      answer: 0
+    kullan:
+      id: u6d04-025-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The power is off and it's very dark. Where's my ________?</en>"
+      options: ["flashlight", "flash", "helmet", "life jacket"]
+      answer: 0
+      explain: "Karanlıkta yolunu görmek için flashlight (el feneri) gerekir. Flash fotoğraf makinesinin flaşıdır."
+    sina:
+      id: u6d04-025-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>What does Selin need?</en>"
+      stem: "<en>It's night at the camp. Selin wants to walk to the bathroom, but it's very dark outside.</en>"
+      options: ["a flashlight", "a life jacket", "knee pads", "a rope"]
+      answer: 0
+      explain: "Karanlıkta yürümek için el feneri: flashlight."
+  - item: U6-026
+    sezdir:
+      id: u6d04-026-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede Ece'nin \"No life jacket, no water activities.\" cümlesindeki \"life jacket\" ne anlama geliyordu?"
+      options: ["can yeleği", "can simidi", "yağmurluk", "spor ayakkabı"]
+      answer: 0
+    kullan:
+      id: u6d04-026-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>You must wear a ________ on the boat. It keeps you on top of the water.</en>"
+      options: ["life jacket", "helmet", "flashlight", "rope"]
+      answer: 0
+      explain: "Seni suyun üstünde tutan, giyilen şey life jacket'tır."
+    sina:
+      id: u6d04-026-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S11
+      prompt: "<en>Why is Selin's dad writing to Ece?</en>"
+      stem: "<en>Hi Ece, it's Selin's dad. The camp provides all the life jackets, so please don't buy one. See you tomorrow!</en>"
+      options: ["To tell her not to buy a life jacket.", "To ask her to buy a life jacket.", "To invite her to a swimming race.", "To say that the camp is cancelled."]
+      answer: 0
+      explain: "Kamp can yeleklerini veriyor; mesajın amacı Ece'ye can yeleği almamasını söylemek."
+  - item: U6-046
+    sezdir:
+      id: u6d04-046-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede Bora'nın \"How much does this flashlight cost?\" sorusu ne anlama geliyordu?"
+      options: ["Bu el feneri ne kadar?", "Bu el feneri ne kadar ağır?", "Bu el feneri kaç saat yanar?", "Bu el feneri kimin?"]
+      answer: 0
+    kullan:
+      id: u6d04-046-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: How much does this rope ________?\nB: It's 90 liras.</en>"
+      options: ["cost", "costs", "costing", "to cost"]
+      answer: 0
+      explain: "does'tan sonra fiil yalın kalır: How much does it cost? Cevapta ise It costs … denir."
+    sina:
+      id: u6d04-046-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the price list, which sentence is TRUE?</en>"
+      stem: "<en>TopPeak Sports – prices\nHelmet: 450 TL\nKnee pads: 200 TL\nFlashlight: 120 TL\nLife jacket: 650 TL</en>"
+      options: ["The life jacket costs more than the helmet.", "The flashlight costs more than the knee pads.", "The knee pads cost 450 TL.", "The helmet costs less than the flashlight."]
+      answer: 0
+      explain: "Can yeleği 650 TL, kask 450 TL: can yeleği daha pahalı. Diğer cümleler listeyle çelişiyor."
+
+review:
+  - id: u6d04-r01
+    type: gap_fill
+    item: U6-004
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Selin's cousin loves dark places under the ground. Every summer she goes ________ in Antalya.</en>"
+    options: ["caving", "to caving", "cave", "caves"]
+    answer: 0
+  - id: u6d04-r02
+    type: synonym
+    item: U6-031
+    prompt: "<en>Which word is closest in meaning to 'amusing'?</en>"
+    stem: "<en>The video of the teachers at the campfire was very amusing.</en>"
+    options: ["funny", "sad", "scary", "disappointing"]
+    answer: 0
+  - id: u6d04-r03
+    type: gap_fill
+    item: U6-032
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>We waited for the bus for two hours, and then it rained all day. The first day of the trip was ________.</en>"
+    options: ["disappointing", "disappointed", "amusing", "exciting"]
+    answer: 0
+  - id: u6d04-r04
+    type: gap_fill
+    item: U6-035
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Duru prefers sleeping in a hammock ________ walking in the forest.</en>"
+    options: ["to", "than", "from", "with"]
+    answer: 0
+  - id: u6d04-r05
+    type: gap_fill
+    item: U6-036
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>A: Do you want to go out tonight?\nB: No, thanks. I'd rather ________ at home.</en>"
+    options: ["stay", "to stay", "staying", "stayed"]
+    answer: 0
+  - id: u6d04-r06
+    type: dialogue_complete
+    item: U6-037
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>A: Why do you want to go rafting?\nB: ________</en>"
+    options: ["Because I love water.", "At ten o'clock.", "Yes, I do.", "With my friends."]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U6-022]
+    text: "equipment sayılamaz: ❌ equipments → ✓ some equipment. Tek bir parça için a piece of equipment denir."
+  - type: tuzak
+    refs: [U6-025]
+    text: "flashlight = el feneri. Fotoğraf makinesinin flaşı ise flash'tır; ikisini karıştırma."
+  - type: tuzak
+    refs: [U6-026]
+    text: "life jacket = can yeleği (giyilir). Simit şeklindeki can simidi ise lifebuoy'dur."
+  - type: tuzak
+    refs: [U6-046]
+    text: "cost düzensizdir: cost – cost – cost (dün de 'It cost 120 liras'). Soru: How much does it cost? → Cevap: It costs 120 liras."
+
+coach:
+  start: "Ece'nin listesi dört sayfa, Selin'in babasının defteri hazır. Kaan kırmızı bir şeyi kafasına geçirdi bile 🛒"
+  end_good: "Süper! Listedeki her şeyi buldun, hem de bütçeyi aşmadan 🛒"
+  end_mixed: "İyi iş! {weak} rafta kaldı ama sorun değil; yarın gelip alırız 🛒"
+
+notifications:
+  morning: "Ece'nin listesi dört sayfa. Hepsine gerçekten gerek var mı? 📋"
+  evening: "Spor mağazasında biri hamakta uyuyakaldı. Tahmin et kim 😴"
+  review: "How much does it ___? cost mu, costs mu? 🤔"
+
+editor:
+  z07: {U6-022: BEKLIYOR, U6-023: BEKLIYOR, U6-024: BEKLIYOR, U6-025: BEKLIYOR, U6-026: BEKLIYOR, U6-046: BEKLIYOR}

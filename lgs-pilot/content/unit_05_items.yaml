@@ -1,0 +1,887 @@
+schema_version: 1
+program: lgs
+unit: 5
+unit_title: The Internet
+source: LGS_Unite5_TheInternet_Havuz_v1 (HEDEF)
+note: 'pilot_day = Ünite 5 ders günü (story_bible_u05.md). meaning_ban (düz kök) / ban_tr (regex): çeviri yasağında meaning_tr yerine bu kökler aranır.'
+items:
+- id: U5-001
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: access
+  kind: word
+  class: core
+  meaning_tr: erişmek, ulaşmak; erişim
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - access
+  pilot_day: 6
+- id: U5-002
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: account
+  kind: word
+  class: core
+  meaning_tr: (internet, sosyal medya) hesap
+  priority: 1
+  variants:
+  - accounts
+  - create an account
+  pilot_day: 2
+- id: U5-003
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: avoid
+  kind: word
+  class: core
+  meaning_tr: kaçınmak, uzak durmak (+ V-ing)
+  priority: 1
+  variants:
+  - avoid using dangerous sites
+  pilot_day: 8
+- id: U5-004
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: copyright
+  kind: word
+  class: core
+  meaning_tr: telif hakkı (başkalarının hakları)
+  priority: 1
+  variants:
+  - copyright issues
+  - rights of others
+  pilot_day: 8
+- id: U5-005
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: friend request (accept / ignore)
+  kind: phrase
+  class: core
+  meaning_tr: arkadaşlık isteği (kabul etmek / görmezden gelmek)
+  priority: 1
+  variants:
+  - friend request
+  - friend requests
+  - ignore
+  pilot_day: 5
+- id: U5-006
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: log in / sign in (log on)
+  kind: phrase
+  class: trap
+  meaning_tr: oturum açmak, giriş yapmak
+  priority: 1
+  variants:
+  - log in
+  - log in / log on
+  - log in/on
+  - log on
+  - sign in
+  - sign in/up
+  trap_note: sign in = giriş yapmak ↔ sign up = kaydolmak, üye olmak; kaynak P ikisini de "kaydolmak" veriyor
+  pilot_day: 2
+- id: U5-007
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: log out / log off
+  kind: phrase
+  class: core
+  meaning_tr: oturumu kapatmak, çıkış yapmak
+  priority: 1
+  variants:
+  - log off
+  - log off/out
+  - log out
+  - log out/off
+  pilot_day: 2
+- id: U5-008
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: obey (the rules)
+  kind: word
+  class: core
+  meaning_tr: (kurallara) uymak
+  priority: 1
+  variants:
+  - obey internet safety rules
+  - Obey the Internet safety rules
+  pilot_day: 8
+- id: U5-009
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: password (username)
+  kind: word
+  class: core
+  meaning_tr: şifre, parola (kullanıcı adı)
+  priority: 1
+  variants:
+  - don't share your personal information and password
+  - password
+  - username
+  pilot_day: 2
+- id: U5-010
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: personal information
+  kind: phrase
+  class: core
+  meaning_tr: kişisel bilgi
+  priority: 1
+  variants:
+  - don't share your personal information and password
+  pilot_day: 5
+- id: U5-011
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: safe / safety (internet safety)
+  kind: phrase
+  class: core
+  meaning_tr: güvenli / güvenlik (internet güvenliği)
+  priority: 1
+  variants:
+  - Be careful with what you share on the Internet
+  - obey internet safety rules
+  - Obey the Internet safety rules
+  - use safe websites
+  pilot_day: 8
+  meaning_ban:
+  - güvenli
+  - güvenlik
+- id: U5-012
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: sign up / register
+  kind: phrase
+  class: core
+  meaning_tr: kaydolmak, üye olmak, hesap açmak
+  priority: 1
+  variants:
+  - register
+  - sign in / sign up
+  - sign in/up
+  - sign up
+  pilot_day: 2
+- id: U5-013
+  unit: 5
+  theme: Hesap, giriş ve güvenlik
+  display: stranger (unknown people)
+  kind: word
+  class: trap
+  meaning_tr: tanımadığın kişi, yabancı (bilinmeyen kişiler)
+  priority: 1
+  variants:
+  - stranger
+  - unknown people
+  trap_note: stranger = tanımadığın kişi; foreigner = başka ülkeden biri; strange = tuhaf
+  pilot_day: 5
+- id: U5-014
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: attach (attachment / file)
+  kind: phrase
+  class: core
+  meaning_tr: eklemek, iliştirmek (dosya eki / dosya)
+  priority: 1
+  variants:
+  - attach
+  - attach a file
+  - attachment
+  - file
+  - send e-mails with attachment
+  pilot_day: 9
+- id: U5-015
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: broken
+  kind: word
+  class: trap
+  meaning_tr: bozuk; kırık
+  priority: 1
+  exam_hits: 1
+  variants:
+  - I'm sorry, but I can't. My internet is broken
+  - My Internet is broken
+  trap_note: '"kırık" (bardak, kol) ↔ "bozuk, çalışmıyor" (internet, telefon): My internet is broken.'
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - broken
+  pilot_day: 4
+- id: U5-016
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: browser / web browser (browse)
+  kind: phrase
+  class: core
+  meaning_tr: internet tarayıcısı (göz atmak, gezinmek)
+  priority: 1
+  variants:
+  - browse
+  - browse articles
+  - browse internet
+  - browse the internet
+  - browser
+  - web browser
+  pilot_day: 7
+  meaning_ban:
+  - tarayıcı
+  - göz at
+- id: U5-017
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: click / press (a button)
+  kind: phrase
+  class: core
+  meaning_tr: tıklamak / (tuşa, düğmeye) basmak
+  priority: 1
+  variants:
+  - button
+  - click
+  - click button
+  - press button
+  pilot_day: 5
+- id: U5-018
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: delete
+  kind: word
+  class: core
+  meaning_tr: silmek
+  priority: 1
+  pilot_day: 6
+- id: U5-019
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: download
+  kind: word
+  class: core
+  meaning_tr: indirmek
+  priority: 1
+  variants:
+  - Before downloading a file, check it with an adult
+  - downloads
+  pilot_day: 3
+- id: U5-020
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: online / offline (connection sign)
+  kind: phrase
+  class: core
+  meaning_tr: çevrim içi / çevrim dışı (bağlantı işareti)
+  priority: 1
+  exam_hits: 6
+  variants:
+  - connection sign
+  - Is there a connection sign on the screen?
+  - is your pc online or offline
+  - offline
+  - online
+  exam:
+    teog_lgs_total: 6
+    lgs: 1
+    words:
+    - offline
+    - online
+  pilot_day: 4
+- id: U5-021
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: screen
+  kind: word
+  class: core
+  meaning_tr: ekran
+  priority: 1
+  pilot_day: 6
+- id: U5-022
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: search for / search engine
+  kind: phrase
+  class: core
+  meaning_tr: aramak, araştırmak / arama motoru
+  priority: 1
+  exam_hits: 3
+  variants:
+  - I can't search on the Internet
+  - search
+  - search engine
+  - search for information
+  - search for recipe
+  - search for sth
+  - use search engine
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - search
+  pilot_day: 7
+- id: U5-023
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: turn on / turn off
+  kind: phrase
+  class: trap
+  meaning_tr: (cihazı) açmak / kapatmak
+  priority: 1
+  variants:
+  - It is off
+  - Turn it on
+  - turn on
+  trap_note: cihaz için turn on/off; kapı, pencere için open/close. "It is off." = kapalı
+  pilot_day: 4
+- id: U5-024
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: type
+  kind: word
+  class: trap
+  meaning_tr: (klavyeyle) yazmak
+  priority: 1
+  trap_note: isim olarak "tür, çeşit" (What type of …?) ↔ fiil olarak klavyeyle yazmak
+  pilot_day: 2
+- id: U5-025
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: upload
+  kind: word
+  class: core
+  meaning_tr: (internete) yüklemek
+  priority: 1
+  variants:
+  - upload a profile picture
+  - upload photo
+  - upload videos
+  pilot_day: 3
+- id: U5-026
+  unit: 5
+  theme: Bilgisayar ve bağlantı
+  display: work properly (properly)
+  kind: phrase
+  class: core
+  meaning_tr: düzgün çalışmak (düzgünce, doğru şekilde)
+  priority: 1
+  exam_hits: 1
+  variants:
+  - It isn't working properly
+  - properly
+  - work properly
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - properly
+  pilot_day: 4
+- id: U5-027
+  unit: 5
+  theme: Sosyal medya ve paylaşım
+  display: blog / vlog (blogger)
+  kind: phrase
+  class: core
+  meaning_tr: blog / video blog (blog yazarı)
+  priority: 1
+  variants:
+  - blog
+  - Do you follow any bloggers?
+  - vlog
+  pilot_day: 9
+- id: U5-028
+  unit: 5
+  theme: Sosyal medya ve paylaşım
+  display: comment (on) / make a comment
+  kind: phrase
+  class: core
+  meaning_tr: yorum yapmak; yorum
+  priority: 1
+  exam_hits: 1
+  variants:
+  - comment
+  - comment on a post
+  - I comment on your photos
+  - make comment
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - comment
+  pilot_day: 3
+- id: U5-029
+  unit: 5
+  theme: Sosyal medya ve paylaşım
+  display: content
+  kind: word
+  class: core
+  meaning_tr: içerik
+  priority: 1
+  variants:
+  - share content
+  pilot_day: 9
+- id: U5-030
+  unit: 5
+  theme: Sosyal medya ve paylaşım
+  display: follower / subscriber (follow / subscribe)
+  kind: phrase
+  class: core
+  meaning_tr: takipçi / abone (takip etmek / abone olmak)
+  priority: 1
+  variants:
+  - follower
+  - followers
+  - subscribe
+  - subscriber
+  pilot_day: 3
+- id: U5-031
+  unit: 5
+  theme: Sosyal medya ve paylaşım
+  display: influencer (influential)
+  kind: phrase
+  class: core
+  meaning_tr: sosyal medya fenomeni, kanaat önderi (etkili)
+  priority: 1
+  variants:
+  - influencer
+  - influential
+  pilot_day: 5
+  meaning_ban:
+  - fenomen
+  - kanaat önder
+- id: U5-032
+  unit: 5
+  theme: Sosyal medya ve paylaşım
+  display: make new friends
+  kind: phrase
+  class: core
+  meaning_tr: yeni arkadaş edinmek
+  priority: 1
+  exam_hits: 3
+  variants:
+  - make friends from other countries
+  - online friends
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - make new friends
+  pilot_day: 9
+- id: U5-033
+  unit: 5
+  theme: Sosyal medya ve paylaşım
+  display: notification (check notifications)
+  kind: phrase
+  class: core
+  meaning_tr: bildirim (bildirimlere bakmak)
+  priority: 1
+  variants:
+  - check notifications
+  - notifications
+  pilot_day: 3
+- id: U5-034
+  unit: 5
+  theme: Sosyal medya ve paylaşım
+  display: post
+  kind: word
+  class: trap
+  meaning_tr: (sosyal medyada) paylaşmak; gönderi
+  priority: 1
+  variants:
+  - post pictures
+  trap_note: '"posta, postalamak" ↔ sosyal medyada paylaşmak / gönderi; kaynak B "postalamak" veriyor'
+  pilot_day: 3
+- id: U5-035
+  unit: 5
+  theme: Sosyal medya ve paylaşım
+  display: social networking sites
+  kind: phrase
+  class: core
+  meaning_tr: sosyal ağ siteleri
+  priority: 1
+  exam_hits: 3
+  variants:
+  - social networking site
+  exam:
+    teog_lgs_total: 3
+    lgs: 1
+    words:
+    - social networking sites
+  pilot_day: 9
+- id: U5-036
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: addict (addiction / addicted)
+  kind: phrase
+  class: core
+  meaning_tr: bağımlı (bağımlılık / bağımlı olmuş)
+  priority: 1
+  exam_hits: 1
+  variants:
+  - addict
+  - addiction
+  - internet addiction
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - addict
+  pilot_day: 1
+- id: U5-037
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: average
+  kind: word
+  class: core
+  meaning_tr: ortalama
+  priority: 1
+  pilot_day: 1
+- id: U5-038
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: do research (research)
+  kind: phrase
+  class: core
+  meaning_tr: araştırma yapmak (araştırma)
+  priority: 1
+  variants:
+  - do research
+  - research
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - research
+  pilot_day: 7
+- id: U5-039
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: expert
+  kind: word
+  class: core
+  meaning_tr: uzman
+  priority: 1
+  variants:
+  - experts
+  pilot_day: 7
+- id: U5-040
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: habit
+  kind: word
+  class: core
+  meaning_tr: alışkanlık
+  priority: 1
+  exam_hits: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - habit
+  pilot_day: 1
+- id: U5-041
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: increase
+  kind: word
+  class: core
+  meaning_tr: artmak, artırmak; artış
+  priority: 1
+  variants:
+  - the usage of the Internet is increasing
+  pilot_day: 10
+- id: U5-042
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: information
+  kind: word
+  class: trap
+  meaning_tr: bilgi
+  priority: 1
+  exam_hits: 3
+  variants:
+  - valuable information
+  trap_note: 'sayılamaz: "informations", "an information" yok; a piece of information'
+  exam:
+    teog_lgs_total: 5
+    lgs: 2
+    words:
+    - information
+    - information
+  pilot_day: 7
+  ban_tr:
+  - bilgi(?!sayar)
+- id: U5-043
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: necessary
+  kind: word
+  class: core
+  meaning_tr: gerekli
+  priority: 1
+  variants:
+  - It's necessary for everyone
+  pilot_day: 8
+- id: U5-044
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: percent / per day / per week
+  kind: pattern
+  class: pattern
+  meaning_tr: yüzde / günde / haftada (grafik dili)
+  priority: 1
+  variants:
+  - How many songs do you download per week?
+  - per day
+  - per week
+  - percent
+  - x hours a day
+  pilot_day: 1
+- id: U5-045
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: usage (user)
+  kind: word
+  class: core
+  meaning_tr: kullanım (kullanıcı)
+  priority: 1
+  variants:
+  - the usage of the Internet is increasing
+  - usage
+  - users
+  pilot_day: 1
+- id: U5-046
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: useful
+  kind: word
+  class: core
+  meaning_tr: yararlı, kullanışlı
+  priority: 1
+  variants:
+  - visit useful website
+  pilot_day: 7
+- id: U5-047
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: What do you use the Internet for? (alışkanlık soruları)
+  kind: pattern
+  class: pattern
+  meaning_tr: İnterneti ne için kullanırsın? / … için kullanırım (How often / How many hours …?)
+  priority: 1
+  variants:
+  - For what purposes do you use the Internet?
+  - How do you connect to the Internet?
+  - How many friends do you have on your social media accounts?
+  - How many hours do you spend a day on social media?
+  - How many hours do you spend on the Internet?
+  - How much do you pay for the Internet use every month?
+  - How often do you go online?
+  - How often do you use the Internet?
+  - I often use the Internet for
+  - What do you use Internet for?
+  - What kind of websites does your mother follow?
+  - Where do you usually use the Internet?
+  - Which device do you usually prefer when you use the Internet?
+  - Who uses the Internet in your family mostly?
+  pilot_day: 1
+- id: U5-048
+  unit: 5
+  theme: İnternet alışkanlıkları ve veriler
+  display: widespread / worldwide
+  kind: phrase
+  class: core
+  meaning_tr: yaygın / dünya çapında
+  priority: 1
+  variants:
+  - widespread
+  - worldwide
+  pilot_day: 9
+- id: U5-049
+  unit: 5
+  theme: İnternetten alışveriş
+  display: discount
+  kind: word
+  class: core
+  meaning_tr: indirim
+  priority: 1
+  variants:
+  - product discount
+  pilot_day: 5
+- id: U5-050
+  unit: 5
+  theme: İnternetten alışveriş
+  display: expiry date (cardholder)
+  kind: phrase
+  class: core
+  meaning_tr: son kullanma tarihi (kart sahibi)
+  priority: 1
+  variants:
+  - cardholder
+  - expiry date
+  pilot_day: 10
+- id: U5-051
+  unit: 5
+  theme: İnternetten alışveriş
+  display: online shopping
+  kind: phrase
+  class: core
+  meaning_tr: internetten alışveriş
+  priority: 1
+  exam_hits: 2
+  variants:
+  - do online shopping
+  exam:
+    teog_lgs_total: 2
+    lgs: 1
+    words:
+    - online shopping
+  pilot_day: 10
+- id: U5-052
+  unit: 5
+  theme: İnternetten alışveriş
+  display: refundable / non-refundable
+  kind: phrase
+  class: core
+  meaning_tr: iade edilebilir / iade edilemez
+  priority: 1
+  variants:
+  - non-refundable
+  - refundable
+  pilot_day: 10
+- id: U5-053
+  unit: 5
+  theme: Açıklama isteme, kabul ve red
+  display: By the way
+  kind: pattern
+  class: pattern
+  meaning_tr: bu arada, aklıma gelmişken
+  priority: 1
+  pilot_day: 6
+- id: U5-054
+  unit: 5
+  theme: Açıklama isteme, kabul ve red
+  display: I mean … / What I mean is … / In other words
+  kind: pattern
+  class: pattern
+  meaning_tr: Demek istediğim … / Başka bir deyişle
+  priority: 1
+  variants:
+  - I mean
+  - I mean, is your PC online or offline?
+  - I mean, there isn't a connection sign
+  - in other words
+  - In other words,
+  - What I mean is that
+  pilot_day: 6
+- id: U5-055
+  unit: 5
+  theme: Açıklama isteme, kabul ve red
+  display: Sorry, I can't follow you. / I got it.
+  kind: pattern
+  class: pattern
+  meaning_tr: Pardon, anlayamadım (seni takip edemiyorum). / Anladım.
+  priority: 1
+  variants:
+  - I got it
+  - sorry I can't follow you
+  - Sorry, I can't follow you
+  trap_note: follow burada "takip etmek" değil "anlamak"; I got it = anladım ("aldım" değil)
+  pilot_day: 6
+- id: U5-056
+  unit: 5
+  theme: Açıklama isteme, kabul ve red
+  display: Thanks for asking, but … / That's very kind of you, but …
+  kind: pattern
+  class: pattern
+  meaning_tr: Sorduğun için sağ ol ama … / Çok naziksin ama … (kibar red)
+  priority: 1
+  variants:
+  - No thanks. I don't really like using social media accounts
+  - Thanks for asking, but I'm afraid I can't
+  - That's very kind of you, but I'm busy
+  pilot_day: 10
+- id: U5-057
+  unit: 5
+  theme: Açıklama isteme, kabul ve red
+  display: What do you mean? / Do you mean …?
+  kind: pattern
+  class: pattern
+  meaning_tr: Ne demek istiyorsun? / … mı demek istiyorsun?
+  priority: 1
+  variants:
+  - do you mean ....?
+  - Do you mean the Internet connection?
+  - mean
+  - What do you mean by that exactly?
+  - What do you mean?
+  trap_note: mean (fiil) = demek istemek, kastetmek ↔ mean (sıfat, Ü1) = cimri, kaba
+  pilot_day: 4
+- id: U5-058
+  unit: 5
+  theme: Açıklama isteme, kabul ve red
+  display: What does it mean? / Can you explain …? (stand for)
+  kind: pattern
+  class: pattern
+  meaning_tr: Ne anlama geliyor? / Açıklar mısın? (… anlamına gelmek, kısaltması olmak)
+  priority: 1
+  variants:
+  - Can you explain it more, please?
+  - can you explain more?
+  - can you explain what it means
+  - Can you explain what it means?
+  - stand for
+  - What does it mean?
+  pilot_day: 8
+- id: U5-059
+  unit: 5
+  theme: Açıklama isteme, kabul ve red
+  display: Why don't we …?
+  kind: pattern
+  class: pattern
+  meaning_tr: … yapalım mı? Neden … yapmıyoruz? (öneri)
+  priority: 1
+  variants:
+  - Why don't we chat online at 2 o'clock?
+  - Why don't we chat online at one o'clock?
+  - Why don't we chat online at two o'clock?
+  - Why don't you get help from the service?
+  trap_note: olumsuz soru gibi görünür ama öneridir; cevap "Sure!" ya da "Sorry, I can't …"
+  pilot_day: 4
+- id: U5-060
+  unit: 5
+  theme: İnternetten alışveriş
+  display: one-way / round-trip (ticket)
+  kind: phrase
+  class: core
+  meaning_tr: tek yön / gidiş-dönüş (bilet)
+  priority: 1
+  variants:
+  - one way ticket
+  - round trip
+  - round-trip ticket
+  - flight ticket
+  trap_note: Ders kitabında internetten bilet alma sahnesiyle Ü5'te; Ü7 (Tourism) içinde tekrar edilir
+  pilot_day: 10
+- id: U5-061
+  unit: 5
+  theme: Açıklama isteme, kabul ve red
+  display: internet kısaltmaları (BTW, ASAP, THX, OMG, CU)
+  kind: pattern
+  class: trap
+  meaning_tr: 'mesaj kısaltmaları: by the way, as soon as possible, thanks, oh my God, see you'
+  priority: 1
+  variants:
+  - BTW
+  - ASAP
+  - THX
+  - OMG
+  - CU
+  - NP
+  - GWS
+  - TC
+  trap_note: 'Kaynakta LOL = "Lots of love" yazıyor; günümüzde yaygın anlamı "laughing out loud" (sesli gülüyorum). stand for ile sorulur: What does BTW stand for?'
+  pilot_day: 8
+  meaning_ban:
+  - kısaltma
+exam_note: 'exam: kullanıcının paylaştığı ders kitabı listelerindeki "sınavlarda çıkmış kelimeler" tablosu (2013–2020 TEOG + 2018–2020 LGS). 2021 sonrası doğrulanmadı.'

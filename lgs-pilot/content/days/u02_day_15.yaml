@@ -1,0 +1,310 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 15
+status: draft
+title: "Anketin son sayfası"
+est_minutes: 10
+characters: [Ece, Selin, Kaan, Bora, Elif, Duru, Ege, Murat Bey]
+new_items: [U2-084, U2-085, U2-086, U2-087, U2-088]
+
+story:
+  - id: s01
+    text: "Çarşamba. Anketin son bölümüne gelmişlerdi. Ece soruyu yüksek sesle okudu: \"<en>Last part! Question 9: What makes a good teenager?</en>\""
+  - id: s02
+    text: "Selin hiç düşünmeden cevap verdi: \"<en>A good teenager {U2-084|follows the rules}. At school, at home, everywhere.</en>\""
+  - id: s03
+    text: "Tam o sırada kapı açıldı ve Kaan nefes nefese içeri daldı. Ders başlayalı on dakika olmuştu."
+  - id: s04
+    text: "Ece güldü: \"<en>Kaan, do you {U2-084|follow the rules}? Rule number one: Don't be late!</en>\""
+  - id: s05
+    text: "Kaan çantasını sıraya bıraktı: \"<en>I always {U2-084|follow the rules}… except that one.</en>\""
+  - id: s06
+    text: "Sonra Bora söz aldı: \"<en>Question 10: What is your goal this year? Mine is easy. I want to {U2-087|get high grades} in every lesson!</en>\""
+  - id: s07
+    text: "Selin merakla sordu: \"<en>How many hours do you study a day?</en>\" Bora gururla: \"<en>Five minutes. Sometimes ten.</en>\""
+  - id: s08
+    text: "Selin derin bir nefes aldı: \"<en>Bora, {U2-085|be realistic}! You can't {U2-087|get high grades} with five minutes a day.</en>\""
+  - id: s09
+    text: "Bora bir süre düşündü: \"<en>OK, OK. I'll {U2-085|be realistic}: twenty minutes a day. And no phone!</en>\" Herkes alkışladı."
+  - id: s10
+    text: "Kaan başını sıraya koydu: \"<en>My problem isn't the exams. It's the homework! Three projects, two tests and a survey report. It's {U2-088|unbearable}!</en>\""
+  - id: s11
+    text: "Elif başını salladı: \"<en>Yes, this week is {U2-088|unbearable}. I'm {U2-071|pretty} tired too.</en>\" Sesi her zamankinden kısıktı."
+  - id: s12
+    text: "Duru her zamanki gibi pufundaydı ama gözü Elif'teydi. Elif'in en sevdiği şarkıcı konserini iptal etmişti ve Elif sabahtan beri neredeyse hiç konuşmamıştı."
+  - id: s13
+    text: "Duru çikolatasının yarısını Elif'e uzattı: \"<en>I know you're sad about the concert. Do you want to talk?</en>\" Elif'in yüzünde küçük bir gülümseme belirdi."
+  - id: s14
+    text: "Ece, Selin'e fısıldadı: \"<en>Duru notices everything. She's very {U2-086|sensitive}.</en>\""
+  - id: s15
+    text: "Selin anket kâğıdına yazdı: \"<en>Answer to question 9: A good teen is {U2-086|sensitive} to other people's feelings.</en>\""
+  - id: s16
+    text: "Bu arada Ege de mesajla ankete katıldı: \"<en>A good teen wears {U2-067|formal} clothes, like me and my cousin Kerem!</en>\""
+  - id: s17
+    text: "Duru telefona bakıp esnedi: \"<en>{U2-067|Formal} clothes? No, thanks. I'm happy in my {U2-068|comfortable} hoodie.</en>\""
+  - id: s18
+    text: "Bora sırıttı: \"<en>Ege is nicer now, but sometimes he still sounds like a {U2-069|snob}!</en>\" Ece kuzenini savundu: \"<en>He's trying. Remember, he apologised at my party.</en>\""
+  - id: s19
+    text: "Murat Bey bütün cevapları dinledi: \"<en>So, a good teen is {U1-077|honest}, {U1-076|helpful} and {U2-086|sensitive}. But remember, nobody is perfect. Not even an {U2-072|adult}!</en>\""
+  - id: s20
+    text: "Kaan şaşırdı: \"<en>Not even you, sir?</en>\" Murat Bey güldü: \"<en>Last week I lost my car keys three times. I'm a very {U2-070|ordinary} man!</en>\""
+  - id: s21
+    text: "Sonra herkese döndü: \"<en>{U2-085|Be realistic} about your homework. Make a plan, do one task a day, and it won't be {U2-088|unbearable}.</en>\""
+  - id: s22
+    text: "Kaan o akşam bir plan yaptı. Ve ertesi sabah bir mucize oldu: zil çalmadan Kaan sınıftaydı!"
+  - id: s23
+    text: "Selin gözlerine inanamadı: \"<en>Kaan! You're on time! Are you OK?</en>\" Kaan: \"<en>New plan. I {U2-084|follow the rules} now, and I want to {U2-087|get high grades} too!</en>\""
+  - id: s24
+    text: "Bora da sınıf grubuna yazdı: \"<en>Twenty minutes! No phone! I'm a new man!</en>\" Elif hemen cevap verdi: \"<en>Here's a {U1-076|helpful} tip: twenty-one minutes tomorrow!</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Question 9: What makes a good teenager?</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>A good teenager follows the rules and is sensitive to other people's feelings.</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>I want to get high grades, but this homework is unbearable!</en>"
+  - id: c04
+    speaker: Murat Bey
+    text: "<en>Be realistic, Bora. Make a plan and study a little every day.</en>"
+
+steps:
+  - item: U2-084
+    sezdir:
+      id: u2d15-084-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"follow the rules\" ne anlama geliyordu?"
+      options: ["kurallara uymak", "kuralları yazmak", "kuralları değiştirmek", "birinin peşinden gitmek"]
+      answer: 0
+    kullan:
+      id: u2d15-084-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>In the library, you must ________: no food, no phones and no talking.</en>"
+      options: ["follow the rules", "break the rules", "get high grades", "take a selfie"]
+      answer: 0
+    sina:
+      id: u2d15-084-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Which student does NOT follow the class rules?</en>"
+      stem: "<en>Class rules: Be on time. No phones in class. Listen to the teacher.\nAli: I always come to school on time.\nZeynep: I turn off my phone before the lesson.\nMert: I often play games on my phone in class.\nDeniz: I listen carefully when the teacher speaks.</en>"
+      options: ["Mert", "Ali", "Zeynep", "Deniz"]
+      answer: 0
+  - item: U2-085
+    sezdir:
+      id: u2d15-085-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"be realistic\" ne anlama geliyordu?"
+      options: ["gerçekçi olmak", "hayalci olmak", "acele etmek", "cesur olmak"]
+      answer: 0
+    kullan:
+      id: u2d15-085-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>You can't learn a new language in one week. Please ________.</en>"
+      options: ["be realistic", "follow the news", "hang out", "pick up"]
+      answer: 0
+    sina:
+      id: u2d15-085-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>A: I'm going to read twenty books this weekend!\nB: ________ Maybe one or two books is better.</en>"
+      options: ["Come on, be realistic.", "That's awesome, do it!", "I can't stand books.", "What about you?"]
+      answer: 0
+  - item: U2-086
+    sezdir:
+      id: u2d15-086-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"sensitive\" ne anlama geliyordu?"
+      options: ["duyarlı, hassas", "kaba", "kıskanç", "tembel"]
+      answer: 0
+    kullan:
+      id: u2d15-086-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My brother cries at sad films and always worries about his friends. He's very ________.</en>"
+      options: ["sensitive", "energetic", "noisy", "formal"]
+      answer: 0
+    sina:
+      id: u2d15-086-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Ayşe best?</en>"
+      stem: "<en>Ayşe noticed that the new student was alone at lunch. She sat with him, smiled and asked about his day.</en>"
+      options: ["sensitive", "self-centered", "stubborn", "lazy"]
+      answer: 0
+  - item: U2-087
+    sezdir:
+      id: u2d15-087-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"get high grades\" ne anlama geliyordu?"
+      options: ["yüksek not almak", "yüksekten atlamak", "sınıf atlamak", "ödül vermek"]
+      answer: 0
+    kullan:
+      id: u2d15-087-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Selin studies regularly, so she always ________ in her exams.</en>"
+      options: ["gets high grades", "gets bored", "gets lost", "gets angry"]
+      answer: 0
+    sina:
+      id: u2d15-087-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Kaan's goal?</en>"
+      stem: "<en>Kaan: This year I want to get high grades, so I study for two hours every day, and I ask Murat Bey when I don't understand something.</en>"
+      options: ["to be successful in his exams", "to make new friends", "to join a band", "to work out at the gym"]
+      answer: 0
+  - item: U2-088
+    sezdir:
+      id: u2d15-088-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"unbearable\" ne anlama geliyordu?"
+      options: ["dayanılmaz, katlanılmaz", "eğlenceli", "kolay", "sessiz"]
+      answer: 0
+    kullan:
+      id: u2d15-088-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>It's 42°C today. This heat is ________! I need a cold drink and some shade.</en>"
+      options: ["unbearable", "comfortable", "ordinary", "impressive"]
+      answer: 0
+    sina:
+      id: u2d15-088-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"The noise from the street is unbearable.\" Which one is CLOSEST in meaning?</en>"
+      options: ["I can't stand the noise.", "I don't mind the noise.", "The noise is quite nice.", "I can't hear the noise."]
+      answer: 0
+
+review:
+  - id: u2d15-r01
+    type: gap_fill
+    item: U2-079
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>A: Can you ________ a good film for the weekend?\nB: Sure! Watch 'Planet Zero'. It's awesome.</en>"
+    options: ["recommend", "refuse", "annoy", "hate"]
+    answer: 0
+  - id: u2d15-r02
+    type: gap_fill
+    item: U2-080
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Murat Bey ________ adding a new question to our survey.</en>"
+    options: ["suggested", "wanted", "decided", "promised"]
+    answer: 0
+    explain: "suggest + -ing: suggested adding. want, decide ve promise ise to ile kullanılır (wanted to add)."
+  - id: u2d15-r03
+    type: gap_fill
+    item: U2-081
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>My dentist ________ me to eat less sugar and brush my teeth twice a day.</en>"
+    options: ["advised", "suggested", "admired", "enjoyed"]
+    answer: 0
+    explain: "advise + kişi + to: advised me to eat. \"suggested me to\" yanlıştır."
+  - id: u2d15-r04
+    type: situation
+    item: U2-082
+    prompt: "<en>What kind of programme is it?</en>"
+    stem: "<en>In this TV programme, you learn about planets, stars and the history of space travel.</en>"
+    options: ["educational", "awful", "noisy", "annoying"]
+    answer: 0
+  - id: u2d15-r05
+    type: gap_fill
+    item: U2-083
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>The magic show was really ________. Everybody laughed and clapped.</en>"
+    options: ["entertaining", "educational", "formal", "ordinary"]
+    answer: 0
+  - id: u2d15-r06
+    type: message_infer
+    item: U2-043
+    lgs_like: true
+    prompt: "<en>What is Selin talking about?</en>"
+    stem: "<en>Selin: I get up at seven, have breakfast, go to school, do my homework at five and go to bed at ten. Every day!</en>"
+    options: ["her daily routine", "her favourite film", "her summer holiday", "her new outfit"]
+    answer: 0
+  - id: u2d15-r07
+    type: situation
+    item: U2-044
+    lgs_like: true
+    prompt: "<en>How often does Elif practise singing?</en>"
+    stem: "<en>Elif's week — practise singing:\nMon ✓ · Tue ✓ · Wed ✓ · Thu ✓ · Fri ✓ · Sat ✓ · Sun ✗</en>"
+    options: ["She usually practises singing.", "She never practises singing.", "She rarely practises singing.", "She sometimes practises singing."]
+    answer: 0
+  - id: u2d15-r08
+    type: dialogue_complete
+    item: U2-048
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Selin: Dad, my lesson finishes at four. Can you ________ from school?\nDad: Sure, I'll be there with the car at four.</en>"
+    options: ["pick me up", "pay attention", "work out", "follow the news"]
+    answer: 0
+  - id: u2d15-r09
+    type: synonym
+    item: U2-045
+    lgs_like: true
+    prompt: "<en>\"Kaan goes to the gym regularly.\" Which one is CLOSEST in meaning?</en>"
+    options: ["He goes there on the same days every week.", "He has never been there.", "He went there only once.", "He hates going there."]
+    answer: 0
+  - id: u2d15-r10
+    type: dialogue_complete
+    item: U2-004
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: What do you usually do at weekends?\nB: I ________ with my friends at the mall. We chat and eat ice cream.</en>"
+    options: ["hang out", "work out", "pay attention", "follow the news"]
+    answer: 0
+  - id: u2d15-r11
+    type: dialogue_complete
+    item: U2-006
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: I'm keen on playing chess. ________\nB: Me? I prefer basketball.</en>"
+    options: ["What about you?", "Where do you live?", "What time is it?", "How old are you?"]
+    answer: 0
+  - id: u2d15-r12
+    type: message_infer
+    item: U2-003
+    lgs_like: true
+    prompt: "<en>What did Ece do?</en>"
+    stem: "<en>Ece asked fifty students, \"What do you do in your free time?\" Then she put their answers on a chart.</en>"
+    options: ["She did a survey.", "She hung out with friends.", "She took a selfie.", "She worked out."]
+    answer: 0
+
+tips:
+  - type: kelime_ailesi
+    refs: [U2-088, U2-013]
+    text: "bear = katlanmak → bearable (katlanılabilir) → unbearable (katlanılmaz). un- olumsuz yapar. \"It's unbearable.\" ≈ \"I can't stand it.\" Bonus: bear isim olarak \"ayı\" demek!"
+  - type: tuzak
+    refs: [U2-086]
+    text: "sensitive ≠ sensible! sensitive = duyarlı, hassas (\"She's sensitive to others' feelings.\") · sensible = mantıklı, akıllıca (\"That's a sensible plan.\")."
+  - type: mini_dilbilgisi
+    refs: [U2-087, U2-084]
+    text: "get high grades = get good marks (İngiliz İngilizcesinde mark da \"not\" demek). Tersi: get low grades. follow the rules'un tersi: break the rules (kuralları çiğnemek)."
+  - type: lgs_taktigi
+    refs: [U2-084]
+    text: "\"Which student does NOT follow the rules?\" gibi sorularda önce kuralları oku, sonra her kişiyi kurallarla tek tek karşılaştır. Kurala aykırı tek kişi cevaptır."
+
+coach:
+  start: "Anketin son sayfası! 📝 Bugün Kaan'ın en zor sınavı: ders başlamadan sınıfta olmak."
+  end_good: "Bravo! 🎓 Bugünkü beş ifadeyle iyi bir öğrenciyi İngilizce anlatabilirsin. Bir de Kaan'ın zamanında geldiğini gördük; bugün mucizeler günü!"
+  end_mixed: "{weak} biraz zorladı ama sorun yok. Murat Bey ne dedi: her gün küçük bir adım. Yarın bir kez daha deneriz! 💪"
+
+notifications:
+  morning: "Bora günde 5 dakika çalışıyor ve hedefi büyük. Selin ne diyecek? 📝"
+  evening: "Kaan zamanında gelebilecek mi? Mucize 10 dakikalık derste! ⏰"
+  review: "Tek soru: \"This homework is unbearable\" = \"I can't stand it\" mı? 🤔"
+
+editor:
+  z07: {U2-084: BEKLIYOR, U2-085: BEKLIYOR, U2-086: BEKLIYOR, U2-087: BEKLIYOR, U2-088: BEKLIYOR}

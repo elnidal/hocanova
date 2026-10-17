@@ -1,0 +1,159 @@
+# LGS Sınav Dili — C02 Tablo ve anket atölyesi (S06, S13). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+id: SD-C02
+module: C
+title: "Tablo ve anket atölyesi"
+unlock_after: "Ü5 sonu"
+minutes: 7
+stems: [S06, S13]
+units: [2, 3, 5]
+intro_tr: "İnternet alışkanlıkları ünitesi LGS'nin anket ve grafik sorularına en çok kaynak olan ünitedir. Bu atölyede yüzdeler, saatler ve 'most / half / none' gibi kelimelerle karışık tablo soruları çözüyoruz."
+cards:
+  - title_tr: "Miktar kelimeleri"
+    body_tr: "Anket sonuçları çoğunlukla kesir kelimeleriyle anlatılır. 10 kişilik bir ankette: all = 10, most = 6–9, half = 5, a few = 2–3, none = 0. Yüzdelerle: %50 = half, %100 = all, %0 = none."
+    examples_en:
+      - "Half of the students use the Internet for homework."
+      - "None of them go online after midnight."
+      - "Most students spend more than two hours online."
+    signal_words: ["all", "most", "half", "a few", "none", "percent"]
+  - title_tr: "Karşılaştırma kelimeleri"
+    body_tr: "more than / less than iki değeri, the most / the least tüm tabloyu karşılaştırır. 'the most' diyen şıkta tablodaki EN BÜYÜK değeri bul; ikinci büyük değer yetmez."
+    examples_en:
+      - "Ece spends more time online than Kaan."
+      - "Watching videos is the most popular activity."
+    signal_words: ["more than", "less than", "the most", "the least"]
+  - title_tr: "Cevaba göre soru: How often / How long / How many hours"
+    body_tr: "How often → sıklık (every day, twice a week). How long / How many hours → süre (for two hours, three hours a day). How much → miktar ya da fiyat. What … for? → amaç (for homework, for music)."
+    examples_en:
+      - "How many hours do you spend online? – About three hours a day."
+      - "What do you use the Internet for? – Mostly for homework."
+    signal_words: ["How often", "How long", "How many hours", "What … for?"]
+worked_example:
+  id: sd-C02-w
+  type: table_graph
+  stem_id: S06
+  context: |-
+    Survey of 20 students: What do you use the Internet for most?
+    watching videos: 8 students · homework: 5 students · social media: 5 students · online games: 2 students
+  prompt: "According to the survey results, which of the following is correct?"
+  options:
+    - "Watching videos is the most popular activity."
+    - "Half of the students use the Internet for homework."
+    - "Online games are more popular than social media."
+    - "None of the students play online games."
+  answer: 0
+  explain_tr: "8 öğrenciyle videolar en yüksek değer. 'Half of the students … homework' çekici ama 20'nin yarısı 10'dur, ödev için kullanan 5 kişi."
+  items: [U5-047, U5-045]
+practice:
+  - id: sd-C02-p01
+    type: table_graph
+    stem_id: S06
+    context: |-
+      How many hours do you spend online per day?
+      Ece: 2 hours · Kaan: 4 hours · Duru: 1 hour · Bora: 4 hours · Selin: 1 hour · Elif: 2 hours
+    prompt: "According to the table, which of the following is TRUE?"
+    options:
+      - "Kaan and Bora spend the most time online."
+      - "Duru spends more time online than Elif."
+      - "Half of the friends spend four hours online a day."
+      - "Selin spends the most time online."
+    answer: 0
+    explain_tr: "4 saatle Kaan ve Bora en yüksek değer. 'Half … four hours' yanlış: altı kişiden yarısı üç kişi eder, 4 saat kalan yalnız iki kişi."
+    items: [U5-044, U5-045]
+  - id: sd-C02-p02
+    type: table_graph
+    stem_id: S06
+    context: |-
+      Survey results: Internet safety habits (class 8B, 30 students)
+      never share their password: 100% · accept friend requests from strangers: 0% · log out after using a shared computer: 50% · check privacy settings regularly: 20%
+    prompt: "Which of the following CANNOT be said according to the survey?"
+    options:
+      - "Most students check their privacy settings regularly."
+      - "All of the students keep their passwords secret."
+      - "None of the students accept friend requests from strangers."
+      - "Half of the students log out after using a shared computer."
+    answer: 0
+    explain_tr: "Kök CANNOT: tabloyla çelişeni arıyoruz. Gizlilik ayarını düzenli kontrol eden yalnız %20; bu 'most' değil, 'a few' olur. Diğer üçü %100, %0 ve %50 ile uyumlu."
+    items: [U5-009, U5-005, U5-013, U5-007, U5-044]
+  - id: sd-C02-p03
+    type: dialogue_complete
+    stem_id: S13
+    context: |-
+      Murat Bey: ________
+      Elif: Mostly for listening to music and watching song videos.
+    prompt: "Which of the following can be the missing question?"
+    options:
+      - "What do you use the Internet for?"
+      - "How many hours do you spend online?"
+      - "When do you usually go online?"
+      - "Do you have a social media account?"
+    answer: 0
+    explain_tr: "Elif interneti NE İÇİN kullandığını söylüyor (for listening …). 'How many hours …?' internetle ilgili ama süre ister."
+    items: [U5-047, U5-002]
+  - id: sd-C02-p04
+    type: table_graph
+    stem_id: S06
+    context: |-
+      How often do they post on social media?
+      Elif: every day · Kaan: once a week · Duru: twice a month · Selin: never · Bora: every day
+    prompt: "According to the chart, which of the following is correct?"
+    options:
+      - "Elif and Bora post more often than Kaan."
+      - "Selin posts once a week."
+      - "Duru posts more often than Elif."
+      - "All of the friends post on social media."
+    answer: 0
+    explain_tr: "Elif ve Bora her gün, Kaan haftada bir paylaşıyor; ikisi de daha sık. 'All of the friends post' tek kişiyle çöker: Selin hiç paylaşmıyor."
+    items: [U5-034, U5-035]
+  - id: sd-C02-p05
+    type: dialogue_complete
+    stem_id: S13
+    context: |-
+      Duru: ________
+      Kaan: About three hours a day. I know it's too much!
+    prompt: "Which of the following completes the dialogue?"
+    options:
+      - "How many hours do you spend online?"
+      - "How often do you check your notifications?"
+      - "What time do you usually go online?"
+      - "Why do you use the Internet?"
+    answer: 0
+    explain_tr: "'Three hours a day' günlük bir süre; süreyi 'How many hours …?' sorar. 'How often …?' sıklık sorar (every day gibi), kaç saat olduğunu değil."
+    items: [U5-044, U5-033]
+  - id: sd-C02-p06
+    type: table_graph
+    stem_id: S06
+    context: |-
+      Average screen time per day (Wrong Number)
+      Monday–Friday: 2 hours · Saturday: 4 hours · Sunday: 5 hours
+    prompt: "According to the chart, which of the following is TRUE?"
+    options:
+      - "The band spends the most time in front of screens on Sunday."
+      - "Screen time on Saturday is less than on weekdays."
+      - "The band spends five hours a day online during the week."
+      - "Screen time is the same every day."
+    answer: 0
+    explain_tr: "Pazar günü 5 saatle en yüksek değer. 'five hours a day … during the week' metindeki '5' sayısını yanlış günle eşliyor: hafta içi 2 saat."
+    items: [U5-037, U5-044, U5-021]
+  - id: sd-C02-p07
+    type: text_infer
+    stem_id: S13
+    context: |-
+      Selin: I never download apps without asking my parents, and I always use strong passwords. I also never share my personal information online.
+    prompt: "Which question does Selin answer?"
+    options:
+      - "How do you stay safe online?"
+      - "How many apps do you have?"
+      - "What is your password?"
+      - "Why do you like social media?"
+    answer: 0
+    explain_tr: "Selin'in sıraladığı her şey internet güvenliği alışkanlığı. 'What is your password?' şifre kelimesiyle çekici ama Selin şifresini söylemiyor, nasıl seçtiğini anlatıyor."
+    items: [U5-019, U5-009, U5-010, U5-011]
+tips:
+  - "Toplam kişi sayısını baştan not et: 'half' ve 'most' kararını ona göre verirsin."
+  - "'the most' gördüğünde tablodaki en büyük değeri işaretle; 'all' ve 'none' gördüğünde tek bir istisna arayıp bul."
+  - "Cevaptan soru bulurken cevaptaki birime bak: 'a day' süre, 'a week' sıklık olabilir; 'three hours a day' süre, 'three times a day' sıklıktır."
+coach:
+  start: "Anketörler hazır! Bugün sayılarla konuşuyoruz: yarısı, çoğu, hiçbiri. Hesap makinesine gerek yok, söz."
+  end: "Bravo! Yüzdeler, saatler, 'the most': tablolar artık sana sır vermiyor. Anket soruları cebinde!"
+status: draft

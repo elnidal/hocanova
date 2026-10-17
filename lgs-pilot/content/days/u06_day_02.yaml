@@ -1,0 +1,301 @@
+schema_version: 1
+program: lgs
+unit: 6
+day: 2
+status: draft
+title: "Tahtadaki tablo"
+est_minutes: 10
+characters: [Ece, Elif, Kaan, Selin, Bora, Duru, Murat Bey]
+new_items: [U6-005, U6-006, U6-007, U6-012, U6-028, U6-033]
+
+story:
+  - id: s01
+    text: "Salı, öğle arası. Ece tahtaya üç sütunlu bir tablo çizdi ve sütunların başına yazdı: \"<en>FUN | DIFFICULTY | DANGER</en>\". Sınıfta kalan herkes merakla etrafına toplandı."
+  - id: s02
+    text: "Ece: \"<en>OK, team. Today's question: which activity is {U6-033|more dangerous}? We give points from one to five.</en>\""
+  - id: s03
+    text: "Elif dergiyi açtı. Bu haftaki özel sayının kapağında havada süzülen insanlar vardı: \"<en>Look! {U6-005|Bungee jumping}! People jump off a bridge, and an elastic cord stops them.</en>\""
+  - id: s04
+    text: "Kaan: \"<en>Five points for fun! {U6-005|Bungee jumping} is {U6-033|more exciting than} the climbing wall!</en>\""
+  - id: s05
+    text: "Selin: \"<en>And five points for danger. It's {U6-033|more dangerous than} the climbing wall too.</en>\""
+  - id: s06
+    text: "Bora sayfayı çevirdi ve yüzü bembeyaz oldu: \"<en>And this is {U6-005|base jumping}. People jump off a tall building and open a {U6-006|parachute}. No, thank you. I'm happy on the ground.</en>\""
+  - id: s07
+    text: "Kaan bir sonraki fotoğrafı görünce ayağa fırladı: \"<en>{U6-006|Skydiving}! You jump out of a plane and fly like a bird! Murat Bey, can we do {U6-006|skydiving} at camp?</en>\""
+  - id: s08
+    text: "Murat Bey sınıfın köşesinde kâğıt okuyordu; başını bile kaldırmadı: \"<en>Not at a school camp! Here, have some chocolate. It's {U3-027|bitter}, like my answer.</en>\""
+  - id: s09
+    text: "Kaan pes etmedi: \"<en>Then {U6-007|paragliding}? You fly slowly. It's {U6-033|safer than} {U6-006|skydiving}!</en>\""
+  - id: s10
+    text: "Murat Bey: \"<en>{U6-007|Paragliding} isn't on the list either, Kaan. I don't want my students to {U6-012|take risks} in the sky.</en>\""
+  - id: s11
+    text: "Duru sırasına yaslanmış, gözleri yarı kapalı konuştu: \"<en>I'd like {U6-007|paragliding}. You sit and fly. It's a sofa in the sky.</en>\""
+  - id: s12
+    text: "Ece puanları tabloya işledi. Bungee satırı kıpkırmızı olmuştu; tırmanma duvarının satırı ise ortalarda bir yerdeydi."
+  - id: s13
+    text: "Selin: \"<en>Look. The climbing wall is {U6-028|challenging}, but it isn't very dangerous. An adult is always with you.</en>\""
+  - id: s14
+    text: "Bora: \"<en>{U6-028|Challenging}? For me, the stairs to the second floor are {U6-028|challenging}.</en>\""
+  - id: s15
+    text: "Kaan göğsünü gere gere: \"<en>I love {U6-012|taking risks}! {U6-012|Risk} is my middle name!</en>\""
+  - id: s16
+    text: "Selin: \"<en>Kaan, you {U6-012|take risks} every morning. You leave home at 7.58 for an eight o'clock lesson.</en>\" Murat Bey: \"<en>True. Kaan is {U1-075|always in a hurry}.</en>\""
+  - id: s17
+    text: "Murat Bey sonunda kâğıtlarını bıraktı ve gülümsedi: \"<en>But good sentences, team! 'Safer than', 'more dangerous than'… Just remember: we say '{U6-033|safer}', not 'more safer'!</en>\""
+  - id: s18
+    text: "Elif: \"<en>For me, singing by the campfire is {U6-033|better than} all of them!</en>\""
+  - id: s19
+    text: "Ece tabloyu bitirdi ve sonucu sınıfa okudu: \"<en>The climbing wall: a little {U6-028|challenging}, a lot of fun, not much danger.</en>\""
+  - id: s20
+    text: "Ece: \"<en>So the climbing wall is {U6-033|less dangerous than} {U6-005|bungee jumping} and {U6-033|more fun than} the bus trip!</en>\""
+  - id: s21
+    text: "Duru: \"<en>And a hammock is {U2-091|relaxing}. Zero {U6-012|risk}.</en>\" Kaan: \"<en>Zero fun!</en>\" Duru: \"<en>Zero problems.</en>\""
+  - id: s22
+    text: "Zil çaldı. Herkes çıkarken Kaan tahtaya gizlice döndü ve tablonun en altına küçük harflerle bir satır ekledi: \"<en>{U6-006|Skydiving}: 5, 5, 5!!!</en>\""
+  - id: s23
+    text: "Ece fark etti, satırı sildi ve telefonunu çıkardı: \"<en>OK. Tomorrow, a poll. Everybody votes, and nobody writes on my table!</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Which activity is more dangerous?</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>Bungee jumping is more exciting than the climbing wall! Can we do skydiving?</en>"
+  - id: c03
+    speaker: Murat Bey
+    text: "<en>Not at a school camp! I don't want you to take risks.</en>"
+  - id: c04
+    speaker: Selin
+    text: "<en>The climbing wall is challenging, but it's safer than paragliding.</en>"
+  - id: c05
+    speaker: Ece
+    text: "<en>So the climbing wall is less dangerous than bungee jumping.</en>"
+
+steps:
+  - item: U6-005
+    sezdir:
+      id: u6d02-005-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"Bungee jumping! People jump off a bridge, and an elastic cord stops them.\" cümlesine göre \"bungee jumping\" nedir?"
+      options: ["ayağa bağlı esnek bir iple yüksekten atlama", "uçaktan atlayıp havada süzülme", "suyun altına dalma", "dağdan bisikletle inme"]
+      answer: 0
+    kullan:
+      id: u6d02-005-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>In ________, people jump off a high bridge, and an elastic cord pulls them back up.</en>"
+      options: ["bungee jumping", "paragliding", "skydiving", "chess"]
+      answer: 0
+      explain: "Köprüden esnek bir iple atlamak bungee jumping'dir. Paragliding'de kanatla süzülürsün, skydiving'de uçaktan atlarsın."
+    sina:
+      id: u6d02-005-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the text, which of the following is TRUE?</en>"
+      stem: "<en>Base jumping is different from bungee jumping. In bungee jumping, an elastic cord stops you. In base jumping, you jump off a tall building or a mountain and open a parachute.</en>"
+      options: ["Base jumpers use a parachute.", "Bungee jumpers use a parachute.", "Base jumpers jump out of a plane.", "Bungee jumping and base jumping are the same."]
+      answer: 0
+      explain: "Metne göre base jumping'de paraşüt açılır; bungee'de esnek ip durdurur. Uçaktan atlamak skydiving'dir."
+  - item: U6-006
+    sezdir:
+      id: u6d02-006-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"Skydiving! You jump out of a plane…\" cümlesindeki \"skydiving\" ne anlama geliyordu?"
+      options: ["uçaktan paraşütle atlama", "dağa yürüyüş yapma", "balonla gezme", "gölde yüzme"]
+      answer: 0
+    kullan:
+      id: u6d02-006-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My uncle jumped out of a plane at 4,000 metres and opened his parachute. He loves ________.</en>"
+      options: ["skydiving", "bungee jumping", "paragliding", "hiking"]
+      answer: 0
+      explain: "Uçaktan atlayıp paraşüt açmak skydiving'dir. Bungee'de köprüden, paragliding'de dağ yamacından başlarsın."
+    sina:
+      id: u6d02-006-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>Who wants to try skydiving?</en>"
+      stem: "<en>Teen Wave asked three readers about their dream sport.\nAyşe: I want to jump out of a plane!\nTolga: I want to fly from a mountain with a big wing.\nNil: I want to jump off a bridge with an elastic cord.</en>"
+      options: ["Ayşe", "Tolga", "Nil", "Nobody"]
+      answer: 0
+      explain: "Uçaktan atlamak isteyen Ayşe'dir: skydiving. Tolga paragliding, Nil bungee jumping istiyor."
+  - item: U6-007
+    sezdir:
+      id: u6d02-007-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede Duru'nun \"I'd like paragliding. You sit and fly.\" cümlesindeki \"paragliding\" ne anlama geliyordu?"
+      options: ["yamaç paraşütü", "tüplü dalış", "bisiklet turu", "buz pateni"]
+      answer: 0
+    kullan:
+      id: u6d02-007-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>In ________, you run down a mountain with a big wing above you and fly slowly like a bird.</en>"
+      options: ["paragliding", "bungee jumping", "skydiving", "karate"]
+      answer: 0
+      explain: "Dağ yamacından koşup büyük bir kanatla süzülmek paragliding'dir (yamaç paraşütü)."
+    sina:
+      id: u6d02-007-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the camp brochure, which of the following is TRUE?</en>"
+      stem: "<en>Spring Adventure Camp – activities\nClimbing wall: yes\nZip-line: yes\nNight walk: yes\nParagliding: no\nSkydiving: no</en>"
+      options: ["Students can't go paragliding at the camp.", "Students can go skydiving at the camp.", "There isn't a zip-line at the camp.", "There isn't a night walk at the camp."]
+      answer: 0
+      explain: "Broşürde paragliding 'no' yazıyor; zip-line ve night walk var, skydiving yok."
+  - item: U6-012
+    sezdir:
+      id: u6d02-012-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede Murat Bey'in \"I don't want my students to take risks in the sky.\" cümlesindeki \"take risks\" ne anlama geliyordu?"
+      options: ["risk almak", "fotoğraf çekmek", "ödev yapmak", "şarkı söylemek"]
+      answer: 0
+    kullan:
+      id: u6d02-012-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't ________ in the car. Wear your seat belt and follow the rules.</en>"
+      options: ["take risks", "pay attention", "be careful", "follow the news"]
+      answer: 0
+      explain: "Emniyet kemeri takıp kurallara uyan kişi risk almaz: Don't take risks."
+    sina:
+      id: u6d02-012-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Murat Bey: The lake is cold and deep. Please stay with the group.\nKaan: But I want to swim to the other side alone!\nMurat Bey: ________</en>"
+      options: ["No, Kaan. Please don't take risks.", "Great idea! Go now!", "Sorry, wrong number.", "I'd love to."]
+      answer: 0
+      explain: "Soğuk ve derin gölde tek başına yüzmek risklidir; öğretmen 'risk alma' der."
+  - item: U6-028
+    sezdir:
+      id: u6d02-028-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede \"The climbing wall is challenging, but it isn't very dangerous.\" cümlesindeki \"challenging\" ne anlama geliyordu?"
+      options: ["zorlayıcı ama denemeye değer", "çok sıkıcı", "tamamen kolay", "çok pahalı"]
+      answer: 0
+    kullan:
+      id: u6d02-028-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The last level of this game is really ________. I tried twenty times, but I want to try again!</en>"
+      options: ["challenging", "boring", "easy", "relaxing"]
+      answer: 0
+      explain: "Yirmi kez denenip yine denenmek istenen bölüm zorlayıcıdır ama vazgeçirmez: challenging."
+    sina:
+      id: u6d02-028-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which of the following is closest in meaning to the underlined word?</en>"
+      stem: "<en>Ece: The maths test was <u>challenging</u>, but I learned a lot from it.</en>"
+      options: ["difficult", "boring", "short", "easy"]
+      answer: 0
+      explain: "challenging = zor ama öğretici: difficult. Kolay bir sınav challenging olmaz."
+  - item: U6-033
+    sezdir:
+      id: u6d02-033-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede Selin'in \"It's more dangerous than the climbing wall too.\" cümlesi ne anlama geliyordu?"
+      options: ["Üstelik tırmanma duvarından daha tehlikeli.", "Tırmanma duvarı kadar güvenli.", "Tırmanma duvarından daha ucuz.", "Tırmanma duvarı da çok eğlenceli."]
+      answer: 0
+    kullan:
+      id: u6d02-033-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A bike is fast, but a car is ________ than a bike.</en>"
+      options: ["faster", "fast", "more fast", "fastest"]
+      answer: 0
+      explain: "Tek heceli sıfat -er alır: fast → faster than. 'more fast' denmez."
+    sina:
+      id: u6d02-033-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to Ece's table, which sentence is correct?</en>"
+      stem: "<en>Ece's table (points 0–5)\nZip-line – fun: 4, danger: 2\nBungee jumping – fun: 5, danger: 5\nHammock – fun: 1, danger: 0</en>"
+      options: ["Bungee jumping is more dangerous than the zip-line.", "The hammock is more fun than the zip-line.", "The zip-line is more dangerous than bungee jumping.", "The hammock is more dangerous than the zip-line."]
+      answer: 0
+      explain: "Tehlike puanı: bungee 5, zip-line 2, hamak 0. Yalnız ilk cümle tabloyla uyuşuyor."
+
+review:
+  - id: u6d02-r01
+    type: gap_fill
+    item: U6-001
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Elif's cousin loves ________ books. Her favourite is about a girl who travels around the world on a small boat.</en>"
+    options: ["adventure", "cooking", "grammar", "fashion"]
+    answer: 0
+  - id: u6d02-r02
+    type: gap_fill
+    item: U6-002
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Snowboarding, bungee jumping and skydiving are all ________.</en>"
+    options: ["extreme sports", "team sports", "board games", "indoor hobbies"]
+    answer: 0
+  - id: u6d02-r03
+    type: trait_match
+    item: U6-003
+    prompt: "<en>Which person is an adrenaline seeker?</en>"
+    options: ["Tuna: I love fast rides and high places.", "Ada: I read books in my garden.", "Efe: I sleep on the sofa all weekend.", "Sena: I like quiet walks with my dog."]
+    answer: 0
+  - id: u6d02-r04
+    type: gap_fill
+    item: U6-011
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Murat Bey: Don't touch that electric cable. It's ________!</en>"
+    options: ["dangerous", "delicious", "fashionable", "polite"]
+    answer: 0
+  - id: u6d02-r05
+    type: gap_fill
+    item: U6-027
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>The camp team is very ________. They work at camps every summer.</en>"
+    options: ["experienced", "inexperienced", "boring", "jealous"]
+    answer: 0
+  - id: u6d02-r06
+    type: situation
+    item: U6-038
+    prompt: "<en>You want to learn about your friend's taste in sports. What do you ask?</en>"
+    options: ["What kind of sports do you like?", "How often do you do sports?", "Where is the gym?", "Who is your coach?"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U6-005]
+    text: "İkisi de \"atlama\" ama aynı şey değil: bungee jumping'de seni esnek bir ip (elastic cord) durdurur; base jumping'de yüksek bir yapıdan ya da uçurumdan atlayıp paraşüt açarsın."
+  - type: tuzak
+    refs: [U6-028]
+    text: "challenging \"iddialı\" demek değildir. challenging = zorlayıcı, zorlu ama denemeye değer (a challenging game). challenge ise isim: meydan okuma."
+  - type: tuzak
+    refs: [U6-033]
+    text: "Düzensizlere dikkat: good → better, bad → worse. ❌ more safer → ✓ safer. less + sıfat = daha az …: less dangerous than (daha az tehlikeli)."
+  - type: mini_dilbilgisi
+    refs: [U6-033]
+    text: "Tek heceli sıfat -er alır (safe → safer); -y ile biten iki heceli -ier alır (crazy → crazier); uzun sıfatlar more alır (dangerous → more dangerous). Arkasından than gelir."
+
+coach:
+  start: "Ece tahtaya bir tablo çizdi, Kaan gözünü gökyüzüne dikti. Murat Bey'in cevabı çikolatası kadar sert 🍫"
+  end_good: "Süper! Senin tablonda puanlar: eğlence 5, hata 0 📊"
+  end_mixed: "Fena değil! {weak} biraz sallandı. Tabloyu bir daha çizer, yarın tekrar bakarız 📊"
+
+notifications:
+  morning: "Köprüden mi, uçaktan mı, hamaktan mı? Ece tabloyu çizdi 📊"
+  evening: "Kaan gökyüzüne çıkmak istedi. Murat Bey'in cevabı? 🍫"
+  review: "more safer mı, safer mı? Hangisi doğruydu? 🤔"
+
+editor:
+  z07: {U6-005: BEKLIYOR, U6-006: BEKLIYOR, U6-007: BEKLIYOR, U6-012: BEKLIYOR, U6-028: BEKLIYOR, U6-033: BEKLIYOR}

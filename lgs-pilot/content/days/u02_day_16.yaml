@@ -1,0 +1,313 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 16
+status: draft
+title: "Büyük sunum"
+est_minutes: 10
+characters: [Ece, Selin, Elif, Kaan, Bora, Duru, Murat Bey]
+new_items: [U2-089, U2-090, U2-091, U2-092]
+
+story:
+  - id: s01
+    text: "Cuma, büyük gün. Tahtada kocaman bir başlık vardı: \"<en>Teen Life Survey: The Results</en>\". Gruplar haftalardır bu an için çalışıyordu."
+  - id: s02
+    text: "Bora kravat takmıştı. Duru şaşkınlıkla baktı: \"<en>Bora, why are you wearing a tie?</en>\" Bora yakasını düzeltti: \"<en>It's a big day! I want to look {U2-076|impressive}.</en>\""
+  - id: s03
+    text: "İlk sunum Ece, Selin ve Elif'indi. Ece ilk grafiği gösterdi: \"<en>We asked forty students. {U2-089|All of them} have a phone, and {U2-089|most of them} chat online every day.</en>\""
+  - id: s04
+    text: "Selin devam etti: \"<en>{U2-089|Half of them}, twenty out of forty, do sports in their free time. Only {U2-089|a few} read books.</en>\""
+  - id: s05
+    text: "Elif sırıttı: \"<en>And this is my favourite result: {U2-089|none of them} like homework!</en>\" Sınıftan alkış koptu."
+  - id: s06
+    text: "Sonra film türleri grafiği geldi. Selin: \"<en>{U2-073|Science fiction} is {U2-090|the most popular} genre. Romantic comedy got {U2-090|less than} ten votes.</en>\""
+  - id: s07
+    text: "Ece hafifçe kızardı: \"<en>Yes… I voted for romantic comedy.</en>\" Kaan arka sıradan bağırdı: \"<en>{U2-073|Science fiction} forever! 'Planet Zero' was {U2-074|awesome}!</en>\""
+  - id: s08
+    text: "Murat Bey defterine not aldı: \"<en>Very clear charts. That's {U2-075|terrific} work, girls.</en>\""
+  - id: s09
+    text: "Sıra Kaan, Bora ve Duru'daydı. Bora bilgisayara koştu, tıkladı… ve grafik ekrana ters yansıdı! Sütunlar tavandan sarkıyordu."
+  - id: s10
+    text: "Bora kıpkırmızı oldu: \"<en>Oh no, this is {U2-078|awful}!</en>\" Duru hiç acele etmeden bilgisayara uzandı ve iki tıkla grafiği düzeltti."
+  - id: s11
+    text: "Kaan boğazını temizledi: \"<en>Our first question was: What is the most {U2-091|relaxing} free time activity?</en>\""
+  - id: s12
+    text: "Duru grafiği gösterdi: \"<en>Sleeping got {U2-090|more than} twenty votes. It's the most {U2-091|relaxing} activity. I'm not surprised.</en>\" Bütün sınıf Duru'ya döndü; Duru omuz silkti."
+  - id: s13
+    text: "Bora ekledi: \"<en>Listening to music is second. And here's something {U2-077|fascinating}: in our school, girls listen to music {U2-090|more than} boys!</en>\""
+  - id: s14
+    text: "Kaan bir sonraki slayta geçti: \"<en>Our second question: What is the most {U2-092|enjoyable} activity with friends?</en>\""
+  - id: s15
+    text: "Kaan sütunları tek tek gösterdi: \"<en>Playing football is number one. Dancing is number two. Bora says dancing is very {U2-092|enjoyable}!</en>\" Bora küçük bir tavuk dansı figürü yaptı; bu kez bütün sınıf onunla birlikte dans etti."
+  - id: s16
+    text: "Duru son sütunu gösterdi: \"<en>And {U2-090|the least popular} activity is… doing homework together. Zero votes.</en>\""
+  - id: s17
+    text: "Murat Bey ayağa kalktı: \"<en>Both groups did a great job. Your presentations were really {U1-096|exciting}. I learnt a lot about you!</en>\""
+  - id: s18
+    text: "Selin, Kaan'a döndü: \"<en>Your group was great too. We {U1-064|support each other}, right?</en>\" Kaan güldü: \"<en>Always! Even when the chart is upside down!</en>\""
+  - id: s19
+    text: "Teneffüste Elif sordu: \"<en>Let's celebrate this weekend! A film night, a concert or a picnic?</en>\" Duru: \"<en>I {U1-018|prefer} my sofa. It's very {U2-091|relaxing}.</en>\""
+  - id: s20
+    text: "Ece pencereden dışarı baktı: \"<en>The weather is sunny. A picnic in the park would be really {U2-092|enjoyable}!</en>\""
+  - id: s21
+    text: "Bora parmaklarıyla saydı: \"<en>{U2-089|Most of us} want the park. Sorry, Duru!</en>\" Duru iç çekti: \"<en>Fine. But I'm bringing a pillow.</en>\""
+  - id: s22
+    text: "Akşam sınıf grubuna Murat Bey'den bir mesaj düştü: \"<en>Great presentations today. Your survey got {U2-090|more than} forty answers. {U2-076|Impressive}!</en>\""
+  - id: s23
+    text: "Ece telefonuna gülümsedi. Kasımda bir ödevle başlayan şey koca bir sınıf hikâyesine dönüşmüştü: provalar, film geceleri, spor salonu ve Kaan'ın zamanında geldiği o tek sabah."
+  - id: s24
+    text: "Gece geç saatte grupta son bir fotoğraf belirdi: Fıstık, Duru'nun yastığında mışıl mışıl uyuyordu. Altında Duru'nun notu vardı: \"<en>Fıstık's survey answer: sleeping. Always.</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>We asked forty students. All of them have a phone.</en>"
+  - id: c02
+    speaker: Selin
+    text: "<en>Half of them do sports, but only a few read books.</en>"
+  - id: c03
+    speaker: Duru
+    text: "<en>Sleeping is the most relaxing activity. It got more than twenty votes.</en>"
+  - id: c04
+    speaker: Kaan
+    text: "<en>And football is the most enjoyable activity with friends. Homework is the least popular!</en>"
+
+steps:
+  - item: U2-089
+    sezdir:
+      id: u2d16-089-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"half of them\" ne anlama geliyordu?"
+      options: ["yarısı", "hepsi", "hiçbiri", "birkaçı"]
+      answer: 0
+    kullan:
+      id: u2d16-089-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Survey: \"Do you have a pet?\" — Yes: 0 students · No: 30 students\n________ of the students have a pet.</en>"
+      options: ["None", "All", "Most", "Half"]
+      answer: 0
+    sina:
+      id: u2d16-089-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Look at the survey results. Which one is TRUE?</en>"
+      stem: "<en>Survey (20 students): \"Do you play a musical instrument?\"\nYes: 18 · No: 2</en>"
+      options: ["Most of the students play an instrument.", "None of the students play an instrument.", "Half of the students play an instrument.", "All of the students play an instrument."]
+      answer: 0
+  - item: U2-090
+    sezdir:
+      id: u2d16-090-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"the least popular\" ne anlama geliyordu?"
+      options: ["en az sevilen", "en sevilen", "daha sevilen", "çok sevilen"]
+      answer: 0
+    kullan:
+      id: u2d16-090-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan sleeps six hours a night, but Duru sleeps ten hours. Kaan sleeps ________ Duru.</en>"
+      options: ["less than", "more than", "the most", "the least"]
+      answer: 0
+    sina:
+      id: u2d16-090-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Look at the chart. Which one is TRUE?</en>"
+      stem: "<en>Favourite sport (30 students):\nFootball: 14 · Basketball: 9 · Volleyball: 5 · Tennis: 2</en>"
+      options: ["Tennis is the least popular sport.", "Volleyball is more popular than basketball.", "Basketball is the most popular sport.", "Football got less than ten votes."]
+      answer: 0
+  - item: U2-091
+    sezdir:
+      id: u2d16-091-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"relaxing\" ne anlama geliyordu?"
+      options: ["rahatlatıcı, dinlendirici", "yorucu", "heyecan verici", "sinir bozucu"]
+      answer: 0
+    kullan:
+      id: u2d16-091-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>After a long day at school, a warm bath is very ________.</en>"
+      options: ["relaxing", "annoying", "noisy", "unbearable"]
+      answer: 0
+    sina:
+      id: u2d16-091-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Listening to the sound of the sea is relaxing.\" Which one is CLOSEST in meaning?</en>"
+      options: ["It makes me feel calm.", "It makes me feel nervous.", "It makes me feel annoyed.", "It makes me feel angry."]
+      answer: 0
+  - item: U2-092
+    sezdir:
+      id: u2d16-092-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede \"enjoyable\" ne anlama geliyordu?"
+      options: ["keyifli, zevkli", "zor", "yorucu", "sıkıcı"]
+      answer: 0
+    kullan:
+      id: u2d16-092-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Thank you for the party. The food was delicious and the music was great. It was a very ________ evening!</en>"
+      options: ["enjoyable", "awful", "unbearable", "boring"]
+      answer: 0
+    sina:
+      id: u2d16-092-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>A: How was the school trip?\nB: ________ We visited a museum, played games and had a picnic.</en>"
+      options: ["It was really enjoyable.", "It was unbearable.", "It was awful.", "I can't stand trips."]
+      answer: 0
+
+review:
+  - id: u2d16-r01
+    type: gap_fill
+    item: U2-084
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Football players must ________. If they don't, the referee shows them a yellow card.</en>"
+    options: ["follow the rules", "get high grades", "be realistic", "pick up"]
+    answer: 0
+  - id: u2d16-r02
+    type: dialogue_complete
+    item: U2-085
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: I'm going to be a famous singer next month!\nB: Hmm, ________ You need years of practice.</en>"
+    options: ["be realistic.", "follow the news.", "take a selfie.", "hang out."]
+    answer: 0
+  - id: u2d16-r03
+    type: trait_match
+    item: U2-086
+    prompt: "<en>Which word describes Duru?</en>"
+    stem: "<en>Duru always notices when her friends are sad, and she tries to help them.</en>"
+    options: ["sensitive", "snob", "stubborn", "lazy"]
+    answer: 0
+  - id: u2d16-r04
+    type: gap_fill
+    item: U2-087
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>If you study regularly and listen in class, you can ________ in your exams.</en>"
+    options: ["get high grades", "get bored", "follow the news", "hang out"]
+    answer: 0
+  - id: u2d16-r05
+    type: synonym
+    item: U2-088
+    prompt: "<en>\"This homework is unbearable!\" Which one is CLOSEST in meaning?</en>"
+    options: ["I can't stand this homework.", "This homework is enjoyable.", "This homework is easy.", "I don't mind this homework."]
+    answer: 0
+  - id: u2d16-r06
+    type: situation
+    item: U2-051
+    lgs_like: true
+    prompt: "<en>Which one is TRUE about Kaan?</en>"
+    stem: "<en>This month there were twenty school days. Kaan was on time only once.</en>"
+    options: ["Kaan is hardly ever on time.", "Kaan is always on time.", "Kaan is usually on time.", "Kaan is often on time."]
+    answer: 0
+  - id: u2d16-r07
+    type: situation
+    item: U2-052
+    lgs_like: true
+    prompt: "<en>How often does Bora do karate?</en>"
+    stem: "<en>Bora's karate lessons: every Tuesday and every Saturday.</en>"
+    options: ["twice a week", "once a week", "three times a week", "once a month"]
+    answer: 0
+  - id: u2d16-r08
+    type: dialogue_complete
+    item: U2-053
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Why are you so late?\nB: The canteen was crowded. I waited in a long ________ for my sandwich.</en>"
+    options: ["queue", "band", "survey", "gym"]
+    answer: 0
+  - id: u2d16-r09
+    type: message_infer
+    item: U2-054
+    lgs_like: true
+    prompt: "<en>Which one is TRUE about Selin?</en>"
+    stem: "<en>Selin: Every morning I read a news app, and every evening I watch the news on TV with my dad.</en>"
+    options: ["She follows the news.", "She chats online.", "She takes selfies.", "She works out."]
+    answer: 0
+  - id: u2d16-r10
+    type: dialogue_complete
+    item: U2-011
+    lgs_like: true
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Pizza or burger for lunch?\nB: ________ Both are fine for me.</en>"
+    options: ["I don't mind.", "I can't stand pizza.", "I dislike both.", "I'm keen on pizza."]
+    answer: 0
+  - id: u2d16-r11
+    type: gap_fill
+    item: U2-010
+    lgs_like: true
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Elif is very keen on ________. She sings every day.</en>"
+    options: ["singing", "sing", "to sing", "sang"]
+    answer: 0
+    explain: "be keen on + -ing: keen on singing."
+  - id: u2d16-f01
+    type: message_infer
+    item: U2-003
+    lgs_like: true
+    prompt: "<en>ÜNİTE FİNALİ 1 — Look at the survey results. Which of the following is NOT true?</en>"
+    stem: "<en>Teen Life Survey (40 students): \"What do you do in your free time?\"\nChat online: 30 · Do sports: 20 · Play an instrument: 10 · Read books: 4</en>"
+    options: ["Most of the students read books.", "Half of the students do sports.", "Only a few students read books.", "Chatting online is the most popular activity."]
+    answer: 0
+    explain: "40 kişiden sadece 4'ü kitap okuyor: bu \"a few\"dır, \"most\" değil."
+  - id: u2d16-f02
+    type: dialogue_complete
+    item: U2-013
+    lgs_like: true
+    prompt: "<en>ÜNİTE FİNALİ 2 — Which one completes the dialogue?</en>"
+    stem: "<en>Ece: Do you like hiking, Duru?\nDuru: ________ I hate walking up hills, and I get tired very quickly.\nEce: OK, let's go to the cinema then.</en>"
+    options: ["No, I can't stand it.", "Yes, I'm crazy about it.", "I don't mind it at all.", "Yes, I'm really keen on it."]
+    answer: 0
+    explain: "Duru yokuş yürümekten nefret ediyor; tek olumsuz cevap \"I can't stand it\"."
+  - id: u2d16-f03
+    type: situation
+    item: U2-044
+    lgs_like: true
+    prompt: "<en>ÜNİTE FİNALİ 3 — Look at Selin's routine. Which one is TRUE?</en>"
+    stem: "<en>Selin's routine:\nfollow the news: every day\ngo to the gym: never\nwatch science fiction films: twice a month\nchat online: four or five times a week</en>"
+    options: ["She never goes to the gym.", "She always watches science fiction films.", "She rarely follows the news.", "She hardly ever chats online."]
+    answer: 0
+    explain: "Spor salonu: hiç → never. Haberleri her gün takip ediyor (always), haftada 4–5 kez sohbet ediyor (often)."
+  - id: u2d16-f04
+    type: synonym
+    item: U2-015
+    lgs_like: true
+    prompt: "<en>ÜNİTE FİNALİ 4 — \"Kaan is crazy about basketball.\" Which one is CLOSEST in meaning?</en>"
+    options: ["He loves basketball very much.", "He thinks basketball is a crazy sport.", "He can't stand basketball.", "He doesn't mind basketball."]
+    answer: 0
+    explain: "be crazy about = bir şeye bayılmak; delilikle ilgisi yok."
+
+tips:
+  - type: lgs_taktigi
+    refs: [U2-089]
+    text: "Grafik sorularında oranı düşün: all = %100 · most = yarıdan fazla · half = %50 · a few = küçük bir sayı · none = %0. 40 kişiden 4'ü \"a few\", 30'u \"most\"tur."
+  - type: tuzak
+    refs: [U2-089, U2-090]
+    text: "most of the students = öğrencilerin çoğu · the most popular = en popüler. \"the\" gelince anlam \"en\" olur: the most (en çok) ↔ the least (en az)."
+  - type: kelime_ailesi
+    refs: [U2-091, U2-092, U2-008]
+    text: "relax → relaxing (rahatlatıcı, şey için) → relaxed (rahatlamış, kişi için): \"The music is relaxing. I feel relaxed.\" · enjoy → enjoyable: \"The picnic was enjoyable.\""
+  - type: mini_dilbilgisi
+    refs: [U2-090]
+    text: "more than / less than iki şeyi karşılaştırır: \"Girls listen to music more than boys.\" Sayılabilen isimlerle resmî dilde fewer than da kullanılır: \"fewer than ten votes\"."
+
+coach:
+  start: "Sunum günü! 📊 Grafikler, oylar, ters dönen bir slayt ve Ünite 2'nin final düdüğü. Hazır mısın?"
+  end_good: "Tebrikler, Ünite 2 bitti! 🏆 16 günde 92 kelime ve kalıp senin oldu: anketler, müzik grupları, spor salonu, film gecesi ve bugünkü grafikler. Murat Bey'in anketinde \"en çalışkan öğrenci\" sütunu olsaydı, en uzunu seninki olurdu! Sırada Ünite 3 var."
+  end_mixed: "Ünite 2 bitti, helal olsun! 🎉 {weak} biraz direniyor ama ünite tekrarında onu da yakalayacağız. Bora'nın grafiği bile sonunda düzeldi!"
+
+notifications:
+  morning: "Sunum günü! 📊 Bora'nın grafiği neden tavandan sarkıyor?"
+  evening: "Ünite 2'nin son dersi! 10 dakika sonra bütün ünite senin. 🏁"
+  review: "Tek soru: 40 kişiden 4'ü \"most\" mu, \"a few\" mı? 📊"
+
+editor:
+  z07: {U2-089: BEKLIYOR, U2-090: BEKLIYOR, U2-091: BEKLIYOR, U2-092: BEKLIYOR}

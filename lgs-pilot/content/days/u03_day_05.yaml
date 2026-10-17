@@ -1,0 +1,317 @@
+schema_version: 1
+program: lgs
+unit: 3
+day: 5
+status: draft
+title: "Gözü kapalı"
+est_minutes: 10
+characters: [Murat Bey, Kaan, Selin, Bora, Ece, Elif, Duru]
+new_items: [U3-027, U3-032, U3-033, U3-034, U3-035, U3-036]
+
+story:
+  - id: s01
+    text: "Perşembe, İngilizce dersi. Murat Bey sınıfa kocaman, kapalı bir kutuyla girdi ve tahtaya yazdı: \"<en>JUNIOR CHEF WARM-UP: THE SCARF GAME</en>\""
+  - id: s02
+    text: "Murat Bey: \"<en>Tie your scarf over your eyes. I'll give you something small. Eat it and tell me the {U3-036|taste}. In English, please!</en>\""
+  - id: s03
+    text: "Kaan ilk sıraya koşarak geldi, tabii ki. Gözleri bağlıyken Murat Bey avucuna küçük, sarı bir parça bıraktı."
+  - id: s04
+    text: "Kaan'ın yüzü buruştu, gözleri kısıldı, omuzları kulaklarına kadar çıktı: \"<en>Ugh! It's so {U3-033|sour}! A lemon?!</en>\""
+  - id: s05
+    text: "Murat Bey: \"<en>Correct! Lemons are very {U3-033|sour}. Next: Selin.</en>\" Selin'in avucuna koyu kahverengi, küçük bir kare geldi."
+  - id: s06
+    text: "Selin: \"<en>Hmm… chocolate? But it isn't nice. It's {U3-027|bitter}, like my dad's coffee with no sugar.</en>\""
+  - id: s07
+    text: "Murat Bey: \"<en>Yes! Dark chocolate, ninety percent cocoa. Very {U3-027|bitter}.</en>\" Selin: \"<en>Ninety percent? Who eats that?</en>\" Murat Bey: \"<en>Me. Every day.</en>\""
+  - id: s08
+    text: "Sıra Bora'ya geldi. Kutu daha açılmadan ağzı açıktı. Çıtır, çıtır… \"<en>Crunchy… {U3-032|salty}… crisps! Cheese and onion! Can I have the bag?</en>\""
+  - id: s09
+    text: "Murat Bey: \"<en>One crisp, Bora. Too much {U3-032|salty} food isn't good for you.</en>\""
+  - id: s10
+    text: "Ece'nin avucundaki parça yumuşacık ve pudralıydı: \"<en>Very {U3-035|sweet}… rose {U3-036|flavour}! It's Turkish delight!</en>\""
+  - id: s11
+    text: "Elif: \"<en>I love {U3-035|sweet} things! Can I be next? Please, please?</en>\" Murat Bey: \"<en>Sorry, Elif. One more person.</en>\""
+  - id: s12
+    text: "Bütün sınıf arka sıraya döndü. Duru, sandalyesinde yarı uzanmış oturuyordu: sınıfın en {U1-079|laid-back} insanı."
+  - id: s13
+    text: "Murat Bey: \"<en>Duru, do you want something {U3-035|sweet} or something {U3-033|sour}?</en>\" Duru: \"<en>I {U2-011|don't mind}. Anything.</en>\""
+  - id: s14
+    text: "Murat Bey kutunun dibinden küçük, parlak, kıpkırmızı bir şey çıkardı. Kaan fısıldadı: \"<en>Oh no. That's a red chilli {U3-049|pepper}…</en>\""
+  - id: s15
+    text: "Duru minicik bir ısırık aldı. Bir saniye hiçbir şey olmadı. İki saniye. Üçüncü saniyede Duru'nun yüzü o kırmızı şeyle aynı renge döndü."
+  - id: s16
+    text: "Duru: \"<en>I MIND! I MIND! It's too {U3-034|spicy}! Water! Water!</en>\""
+  - id: s17
+    text: "Kaan: \"<en>Duru said 'I mind'! Somebody write it on the board!</en>\" Bora ise çantasından bir kutu süt çıkardı: \"<en>Milk is better than water for {U3-034|spicy} food. Trust me, I'm a chef.</en>\""
+  - id: s18
+    text: "Duru sütü bir dikişte bitirdi, derin bir nefes aldı ve kararını açıkladı: \"<en>Never again. I {U2-013|can't stand} {U3-034|spicy} food. That's final.</en>\""
+  - id: s19
+    text: "Murat Bey: \"<en>Well done, everybody! {U3-035|Sweet}, {U3-033|sour}, {U3-027|bitter}, {U3-032|salty} and {U3-034|spicy}: five {U3-036|tastes}, five brave students.</en>\""
+  - id: s20
+    text: "Derken kutudan son bir şey çıktı: bir kek. Murat Bey: \"<en>A prize. I {U3-001|baked} it last night: two {U3-039|cups} of {U3-046|flour}, three eggs and one {U3-042|teaspoon} of {U3-043|baking powder}.</en>\""
+  - id: s21
+    text: "Selin elini kaldırdı ve ilk gülen o oldu: \"<en>One {U3-042|teaspoon}, not a {U3-042|tablespoon}. I know, I know!</en>\" Murat Bey göz kırptı: \"<en>Everybody learns from a volcano.</en>\""
+  - id: s22
+    text: "Murat Bey: \"<en>And here's the secret: I {U3-006|preheated} the {U3-040|oven} {U3-045|first}. Ten minutes at 180 degrees.</en>\""
+  - id: s23
+    text: "Selin keki ısırdı ve onayladı: \"<en>Not {U3-027|bitter}, not {U3-034|spicy}. Just right.</en>\" Bora ikinci parçaya uzanırken: \"<en>The perfect {U3-036|taste}!</en>\""
+  - id: s24
+    text: "Teneffüste Bora sınıf grubuna yazdı: \"<en>My mum is on night shift tomorrow. Pasta at my place? My grandpa {U1-005|is coming over} too. Leave it to me! 🍝</en>\""
+  - id: s25
+    text: "Kaan: \"<en>I'm in!</en>\" Duru: \"<en>Only if it isn't {U3-034|spicy}.</en>\""
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>So, how did the lemon taste, Kaan?</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>Very sour! And Selin's dark chocolate was bitter.</en>"
+  - id: c03
+    speaker: Bora
+    text: "<en>My crisps were salty, and Ece's Turkish delight was sweet. Rose flavour!</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>And my red chilli was too spicy. Now I mind.</en>"
+
+steps:
+  - item: U3-035
+    sezdir:
+      id: u3d05-035-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"sweet\" ne anlama geliyordu?"
+      options: ["tatlı (tat)", "ekşi", "tuzlu", "sert"]
+      answer: 0
+    kullan:
+      id: u3d05-035-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>There are five spoons of sugar in this lemonade. It's too ________!</en>"
+      options: ["sweet", "salty", "bitter", "spicy"]
+      answer: 0
+      explain: "Şekerin verdiği tat sweet ile anlatılır; too sweet = fazla tatlı."
+    sina:
+      id: u3d05-035-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Elif: What do you want after lunch?\nKaan: ________\nElif: Then try this baklava. It's full of sugar and honey!</en>"
+      options: ["Something sweet, please.", "Something salty, please.", "Something sour, please.", "Something spicy, please."]
+      answer: 0
+      explain: "Elif'in cevabı şeker ve bal dolu baklava; demek ki Kaan tatlı bir şey istemiş."
+  - item: U3-033
+    sezdir:
+      id: u3d05-033-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"sour\" ne anlama geliyordu?"
+      options: ["ekşi", "tatlı", "tuzlu", "yumuşak"]
+      answer: 0
+    kullan:
+      id: u3d05-033-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan made a funny face after the lemon. Lemons are very ________.</en>"
+      options: ["sour", "sweet", "salty", "spicy"]
+      answer: 0
+      explain: "Limonun tadı sour ile anlatılır: a sour lemon."
+    sina:
+      id: u3d05-033-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>Elif: I made lemonade with the juice of six lemons and no sugar. Ece drank a little and closed her eyes tightly. Then she asked for water!</en>"
+      options: ["The lemonade is very sour.", "The lemonade is very sweet.", "There is a lot of sugar in it.", "Ece wants more lemonade."]
+      answer: 0
+      explain: "Altı limon, hiç şeker yok ve Ece su istiyor: limonata çok ekşi; diğer şıklar metinle çelişiyor."
+  - item: U3-027
+    sezdir:
+      id: u3d05-027-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"bitter\" ne anlama geliyordu?"
+      options: ["acı (kahve, ilaç gibi)", "acı (biber gibi)", "tatlı", "ekşi"]
+      answer: 0
+    kullan:
+      id: u3d05-027-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This medicine tastes ________, so my little brother hates it.</en>"
+      options: ["bitter", "sweet", "spicy", "salty"]
+      answer: 0
+      explain: "İlacın, şekersiz kahvenin acısı bitter; biberin acısı spicy."
+    sina:
+      id: u3d05-027-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we infer about Selin's dad's coffee?</en>"
+      stem: "<en>Selin: My dad drinks his coffee black, with no sugar and no milk. I tried it once. Never again!</en>"
+      options: ["It is bitter.", "It is sweet.", "It is salty.", "It is spicy."]
+      answer: 0
+      explain: "Şekersiz, sütsüz sade kahve acıdır (bitter); Selin'in \"Never again!\" demesi de bunu destekler."
+  - item: U3-032
+    sezdir:
+      id: u3d05-032-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"salty\" ne anlama geliyordu?"
+      options: ["tuzlu", "tatlı", "ekşi", "yağlı"]
+      answer: 0
+    kullan:
+      id: u3d05-032-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't drink sea water. It's very ________.</en>"
+      options: ["salty", "sweet", "bitter", "sour"]
+      answer: 0
+      explain: "Tuzun verdiği tat salty ile anlatılır (salt + y)."
+    sina:
+      id: u3d05-032-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is correct?</en>"
+      stem: "<en>8/B – Our favourite snack (30 students)\ncrisps (salty) ……… 15\nTurkish delight (sweet) ……… 9\ndark chocolate (bitter) ……… 4\npickles (sour) ……… 2</en>"
+      options: ["Half of the students like a salty snack best.", "Most students like a bitter snack best.", "Nobody chose a sour snack.", "More students chose dark chocolate than Turkish delight."]
+      answer: 0
+      explain: "30 öğrencinin 15'i (yarısı) tuzlu cipsi seçmiş; diğer şıklar tablodaki sayılarla çelişiyor."
+  - item: U3-034
+    sezdir:
+      id: u3d05-034-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"spicy\" ne anlama geliyordu?"
+      options: ["baharatlı, acılı (biber gibi)", "ekşi", "tuzlu", "soğuk"]
+      answer: 0
+    kullan:
+      id: u3d05-034-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This chilli sauce is very ________. Drink some milk after it!</en>"
+      options: ["spicy", "sweet", "sour", "bitter"]
+      answer: 0
+      explain: "Biberin, acı sosun yakıcı tadı spicy (ya da hot) ile anlatılır."
+    sina:
+      id: u3d05-034-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Duru: Can I try your soup?\nBora: Sure, but be careful. ________\nDuru: Oh no! Then I need a glass of milk first.</en>"
+      options: ["There's a lot of chilli in it.", "There's a lot of sugar in it.", "It's very cold.", "It's very cheap."]
+      answer: 0
+      explain: "Duru'nun önce süt istemesi çorbanın acılı olduğunu gösterir; şeker, soğukluk ya da fiyat süt gerektirmez."
+  - item: U3-036
+    sezdir:
+      id: u3d05-036-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"taste\" ne anlama geliyordu?"
+      options: ["tat, lezzet", "renk", "fiyat", "ağırlık"]
+      answer: 0
+    kullan:
+      id: u3d05-036-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Mmm! This soup ________ really good. Can I have some more?</en>"
+      options: ["tastes", "peels", "seasons", "slices"]
+      answer: 0
+      explain: "taste fiil olarak \"tadı … olmak\" demektir ve ardından sıfat gelir: It tastes good."
+    sina:
+      id: u3d05-036-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which question can be the missing question?</en>"
+      stem: "<en>Ece: ________\nElif: Strawberry, please! It's my favourite.\nEce: OK, one strawberry ice cream.</en>"
+      options: ["What flavour of ice cream would you like?", "When does the ice cream shop open?", "Who bought the ice cream?", "Why do you like ice cream?"]
+      answer: 0
+      explain: "Cevap bir çeşit/aroma (strawberry) veriyor; bunu soran tek soru \"What flavour…?\""
+
+review:
+  - id: u3d05-r01
+    type: gap_fill
+    item: U3-019
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Wash and ________ the carrots. We don't eat the skin.</en>"
+    options: ["peel", "pour", "whisk", "fry"]
+    answer: 0
+  - id: u3d05-r02
+    type: gap_fill
+    item: U3-022
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Cut the bread into thin ________ for the sandwiches.</en>"
+    options: ["slices", "bowls", "steps", "cups"]
+    answer: 0
+  - id: u3d05-r03
+    type: dialogue_complete
+    item: U3-010
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Ece: What do I do with the onion now?\nSelin: ________ Very small cubes, please.\nEce: OK, no problem.</en>"
+    options: ["Dice it.", "Squeeze it.", "Pour it.", "Whisk it."]
+    answer: 0
+    explain: "\"Very small cubes\" küp küp doğramayı (dice) anlatıyor."
+  - id: u3d05-r04
+    type: situation
+    item: U3-025
+    prompt: "<en>What is Elif doing?</en>"
+    stem: "<en>Elif is holding half a lemon over the salad bowl. She is pressing it hard, and the juice is falling on the tomatoes.</en>"
+    options: ["She is squeezing the lemon.", "She is peeling the lemon.", "She is frying the lemon.", "She is slicing the lemon."]
+    answer: 0
+  - id: u3d05-r05
+    type: gap_fill
+    item: U3-021
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>The salad is a bit boring. Let's ________ it with salt and black pepper.</en>"
+    options: ["season", "peel", "crack", "pour"]
+    answer: 0
+  - id: u3d05-r06
+    type: gap_fill
+    item: U3-049
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Can you pass me the salt and ________, please?</en>"
+    options: ["pepper", "cup", "oven", "recipe"]
+    answer: 0
+  - id: u3d05-r07
+    type: text_infer
+    item: U3-048
+    lgs_like: true
+    stem_id: S03
+    prompt: "<en>Which of the following is NOT mentioned in the recipe?</en>"
+    stem: "<en>Murat Bey's Easy Cake\nIngredients: 2 cups of flour, 3 eggs, 1 cup of sugar, 1 cup of milk, 1 teaspoon of baking powder.\nFirst, preheat the oven. Then, mix everything in a big bowl. Finally, bake it for 35 minutes.</en>"
+    options: ["butter", "milk", "eggs", "baking powder"]
+    answer: 0
+    explain: "Malzeme listesinde süt, yumurta ve kabartma tozu var; tereyağı (butter) yok."
+
+tips:
+  - type: tuzak
+    refs: [U3-027, U3-034]
+    text: "Türkçedeki \"acı\" İngilizcede ikiye ayrılır: kahve, bitter çikolata, ilaç → bitter · biber, acı sos → spicy (ya da hot). Bitter tek başına \"çikolatalı\" demek değildir!"
+  - type: tuzak
+    refs: [U3-035]
+    text: "sweet bir TAT sıfatıdır: \"It's too sweet.\" = Fazla tatlı. Yemekten sonra yenen \"tatlı\" (baklava, sütlaç) için İngilizcede ayrı bir isim var; Gün 9'da tanışacaksın."
+  - type: mini_dilbilgisi
+    refs: [U3-036]
+    text: "taste hem isim (the taste = tat) hem fiildir: \"Taste the soup.\" = Çorbanın tadına bak. \"It tastes good.\" yapısında ardından sıfat gelir (tastes good ✓, tastes well ✗). flavour İngiliz yazımı; Amerikalılar flavor yazar."
+  - type: ilginc_bilgi
+    refs: [U3-034]
+    text: "Bora haklı: biberin yakıcılığını veren madde (kapsaisin) suda neredeyse hiç çözünmez, bu yüzden su pek işe yaramaz. Süt ve yoğurt ise yanmayı daha hızlı yatıştırır."
+
+coach:
+  start: "Murat Bey'in kutusunda beş gizem var, gözler kapalı. Duru bugün ilk kez itiraz edecek mi? 🙈"
+  end_good: "Süper! Dilin de kelimelerin de keskin. Duru'ya bir bardak süt, sana bir yıldız ⭐"
+  end_mixed: "Fena değil! {weak} biraz yaktı ama Bora ne diyor: süt iyi gelir, tekrar daha da iyi. 🥛"
+
+notifications:
+  morning: "Bugün gözler kapalı. Murat Bey'in kutusundan ne çıkacak? 🙈"
+  evening: "Duru bugün ilk kez 'I mind!' dedi. Sebebi küçücük ve kıpkırmızı 🌶️"
+  review: "Kahve 'bitter', kırmızı biber 'spicy'. Peki limon? Cevap tek kelime 🍋"
+
+editor:
+  z07: {U3-027: BEKLIYOR, U3-032: BEKLIYOR, U3-033: BEKLIYOR, U3-034: BEKLIYOR, U3-035: BEKLIYOR, U3-036: BEKLIYOR}

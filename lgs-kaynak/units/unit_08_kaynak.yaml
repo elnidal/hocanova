@@ -1,0 +1,1332 @@
+schema_version: 1
+unit: 8
+title: Chores
+status: taslak
+summary_tr: Ünite, ev işlerini, sorumlulukları ve zorunlulukları konuşmayı öğretir. Programın işlevi zorunluluk bildirmedir (Do you have to help your parents? – Yes, I must set the table every evening.);
+  kazanımlar sorumluluklardan söz etmeyi (I'm responsible for taking out the garbage.) ve ev işleriyle ilgili beğeni ve şikâyeti de kapsar (I don't like doing the laundry. / I have too many tasks!). Kelime
+  gövdesi "fiil + nesne" ev işi kalıplarıdır (set the table, load the dishwasher, make the bed, vacuum the house, mow the lawn, hang out the laundry); beğeni fiilleri ve sıklık zarfları Ü2'den, -ed duygu
+  sıfatları Ü4'ten tekrar edilir. LGS'de ünite en çok aile ev işi çizelgesi / tablosu okuma, "Who is responsible for …?" çıkarımı, resim–ev işi eşleştirme ve "don't have to / mustn't" anlam farkı olarak
+  gelir.
+curriculum:
+  outcomes:
+  - code: E8.8.L1
+    text_tr: 'Dinleme: İnsanların sorumluluklarını anlatan kısa bir konuşmanın ana noktalarını belirler.'
+  - code: E8.8.L2
+    text_tr: 'Dinleme: Çeşitli sözlü metinlerde zorunlulukları, beğenileri ve beğenmedikleri anlar.'
+  - code: E8.8.L3
+    text_tr: 'Dinleme: Kısa, olgusal konuşmalarda konu değişimini izler.'
+  - code: E8.8.SI1
+    text_tr: 'Karşılıklı konuşma: Doğrudan bilgi alışverişi gerektiren basit, rutin görevlerde etkileşim kurar.'
+  - code: E8.8.SI2
+    text_tr: 'Karşılıklı konuşma: Sorumluluklar hakkında konuşur.'
+  - code: E8.8.SP1
+    text_tr: 'Sözlü anlatım: Zorunluluklarını, beğendiklerini ve beğenmediklerini basit ifadelerle anlatır. (Dağılım tablosunda 1 soru)'
+  - code: E8.8.R1
+    text_tr: 'Okuma: Sorumluluklarla ilgili kısa ve basit metinleri anlar. (LGS''de doğrudan ölçülen kazanım; dağılım tablosunda 2 soru)'
+  - code: E8.8.W1
+    text_tr: 'Yazma: Duyguları ve sorumlulukları hakkında kısa, basit şiir / öykü yazar.'
+  functions:
+  - id: F1
+    name_tr: Zorunluluk bildirmek (Expressing obligation)
+    exponents:
+    - Do you have to help your parents in housework?
+    - I must help my parents to set the table.
+    - I have to take out the garbage every evening.
+    - You don't have to cook. Dad is doing it today.
+    - You mustn't leave your clothes on the floor.
+    responses:
+    - Yes, I do. I have to make my bed every morning.
+    - No, I don't. My brother is in charge of that.
+    - Well, I must help my brother to do his homework.
+    items:
+    - U8-035
+    - U8-040
+    - U8-036
+    - U8-005
+    - U8-016
+    - U8-011
+    lgs_weight: yüksek
+    note_tr: Programın açık işlevi (ingilizcepedia 29. hafta planı). Ders kitabında mustn't (s.103) ve want someone to (s.106) da var; don't have to ders kitabı cevaplarında görülmedi ama LGS'nin klasik
+      anlam tuzağı.
+  - id: F2
+    name_tr: Sorumluluklardan söz etmek (Talking about responsibilities)
+    exponents:
+    - Who is responsible for doing the shopping in your family?
+    - Whose responsibility is washing the dishes?
+    - What are you in charge of at home?
+    - Whose turn is it to feed the cat?
+    responses:
+    - I'm responsible for dusting the shelves.
+    - It's my mother's responsibility.
+    - I'm in charge of watering the plants.
+    - It's Selin's turn. We take turns.
+    items:
+    - U8-034
+    - U8-037
+    - U8-001
+    - U8-002
+    - U8-015
+    - U8-024
+    - U8-026
+    - U8-003
+    lgs_weight: yüksek
+    note_tr: Kazanım SI2 ve R1. Okuma sorularının çoğu bir ailenin ev işi tablosundan "Who is responsible for …?" bilgisini ister.
+  - id: F3
+    name_tr: Ev işleri hakkında beğeni ve beğenmeme (Expressing likes and dislikes)
+    exponents:
+    - Which chore do you like doing?
+    - Which task do you find enjoyable?
+    - I like setting the table because I like decorating it.
+    - I can't stand ironing the clothes.
+    - I don't mind loading the dishwasher.
+    responses:
+    - I enjoy watering the plants. It's relaxing.
+    - I hate taking out the rubbish. It smells awful!
+    - I have fun when I take my dog for a walk.
+    items:
+    - U8-005
+    - U8-021
+    - U8-008
+    - U8-024
+    - U8-016
+    - U8-025
+    lgs_weight: orta
+    note_tr: Kazanım SP1. Beğeni fiilleri (like, enjoy, don't mind, can't stand, hate + V-ing) Ü2'de öğretildi (U2-007…U2-016); bu ünitede ev işi kalıplarıyla tekrar edilir.
+  - id: F4
+    name_tr: Şikâyet etmek (Making complaints)
+    exponents:
+    - I don't like it when I have too many tasks.
+    - It's not fair! Why do I always have to wash the dishes?
+    - My room is always a mess because my brother never tidies up.
+    - I'm fed up with doing the laundry.
+    responses:
+    - Don't make a fuss. We take turns.
+    - OK, you don't have to do it today.
+    - You're right. Let's share the chores equally.
+    items:
+    - U8-042
+    - U8-043
+    - U8-044
+    - U8-010
+    - U8-037
+    - U8-040
+    lgs_weight: orta
+    note_tr: Ayrı bir işlev olarak doğrulanamadı (bkz. open_questions); ders kitabı s.98 "I don't like when I have too many tasks" cümlesine dayanır.
+sources:
+- code: A
+  name: ingilizcele.com — 8. Sınıf 8. Ünite Chores Ünite Kelimeleri (PDF)
+  rows: 61
+- code: I
+  name: Okul listesi "8.SINIF İNGİLİZCE 8.ÜNİTE KELİME LİSTESİ" (camburnufomboo.meb.k12.tr; eski kitap sahneleri içerir)
+  rows: 184
+- code: W
+  name: Kullanıcının yapıştırdığı ders kitabı listesi + "Sınavlarda çıkmış 8. ünite kelimeleri" tablosu (2013–2019 TEOG/LGS)
+  rows: 108
+- code: R
+  name: 'Kısa web araştırması: ingilizcepedia.com 8. sınıf 29. hafta günlük planı (işlev, Useful Language, kazanımlar); Kesentaş O.O. 8. sınıf konu-soru dağılım tablosu (E8.8 kodları, soru sayıları); egitimsistem.com
+    MEB ders kitabı Ünite 8 cevapları (s. 96–106)'
+  rows: 15
+tasnif:
+  teaching_units: 50
+  counts:
+    birim_CEKIRDEK: 26
+    birim_KALIP_ISLEV: 7
+    birim_TUZAK: 17
+    oncelik_1: 43
+    oncelik_2: 7
+    havuz_CEKIRDEK: 49
+    havuz_KALIP_ISLEV: 12
+    havuz_TUZAK: 32
+    havuz_BILINEN: 65
+    havuz_TANIMA: 37
+    havuz_ONCEKI_UNITE: 57
+    havuz_toplam: 252
+  items_file: lgs-pilot/content/unit_08_items.yaml
+  rules_tr:
+  - 'Satır değil öğretim birimi sayılır: ev işi kalıbı (fiil + nesne) ile fiilin kendisi tek birim (vacuum / vacuum the house; mop / mop the floor); eş anlamlı kümeler (garbage / trash / rubbish; wash the
+    dishes / do the washing up; be responsible for / be in charge of; take care of / look after; task / duty / assignment) tek birim.'
+  - Öncelik 1 = en az iki bağımsız kaynak (A, I, W, R) ya da KALIP / İŞLEV.
+  - 'Sıkılaştırma: ilk aday liste ~60 birimdi; kullanıcının sıkı liste tercihiyle 50 birime indi (Ü6: 57, Ü7: 61). clean the windows, wash the car, silent, decorate, boss, become, classmate BİLİNEN; doorbell,
+    graduate, moral, periodically, peaceful, feature, gloom, elder, equally TANIMA.'
+  - 'Duygu sıfatları: get bored / get annoyed / worried U4-054 (-ed duygular), annoyed U2-042, nervous U2-059; ÖNCEKİ ÜNİTE.'
+  - I listesinin eski kitap sahneleri (grilling a steak, go bowling, shoelace, word power, Sacrifice Feast, poem) TANIMA.
+  excluded_examples:
+    BILINEN:
+    - a little
+    - all day
+    - almost
+    - angry
+    - arrive
+    - ask
+    - bad
+    - be late
+    - be silent
+    - become
+    - boss
+    - bring
+    - bring the materials
+    - carefully
+    - classmate
+    - clean
+    - clean the windows
+    - continue
+    - decorate
+    - different
+    - difficult
+    - dirty
+    - do homework
+    - each other
+    - education
+    - everyone
+    - excited
+    - festival
+    - get ready
+    - give
+    - grass
+    - happen
+    - happy
+    - hard
+    - have lots of things to do
+    - help
+    - ill
+    - importance
+    - important
+    - keep
+    TANIMA:
+    - brilliant
+    - doorbell
+    - elder
+    - entire
+    - equally
+    - even
+    - feature
+    - female
+    - gather
+    - gloom
+    - go bowling
+    - graduate
+    - however
+    - male
+    - moral
+    - moreover
+    - no matter
+    - on their own
+    - one by one
+    - peaceful
+    - periodically
+    - poem
+    - raise
+    - randomly
+    - ribbon
+    - right
+    - sacrifice feast
+    - seem
+    - severe
+    - shoelace
+    - slipper
+    - take off
+    - to be done
+    - undone
+    - volunteer
+    - welcoming our guests
+    - word power
+    ONCEKI_UNITE:
+    - busy (U1-004)
+    - chat (U1-029)
+    - feeling (U1-032)
+    - share (U1-043)
+    - keep our promises (U1-054)
+    - respect (U1-061)
+    - fair (U1-071)
+    - be respectful, respectful (U1-088)
+    - as soon as (U1-094)
+    - boring (U1-095)
+    - questionnaire (U2-003)
+    - opinion (U2-005)
+    - hate (U2-014)
+    - noisily (U2-029)
+    - annoyed (U2-042)
+    - always, never, often, sometimes, usually (U2-044)
+    - pick up (U2-048)
+    - rarely (U2-049)
+    - nervous (U2-059)
+    - make a suggestion, suggestion (U2-080)
+    - grilling a steak (U3-005)
+    - delicious (U3-028)
+    - sweet (U3-035)
+    - after that (U3-045)
+    - step by step (U3-052)
+    - dessert (U3-055)
+    - dish, meal (U3-056)
+    - preparation, prepare, prepare breakfast, prepare dinner, prepare the meals (U3-062)
+    - tradition (U3-063)
+    - hang on (U4-007)
+    - ring (U4-013)
+    - bill, pay the bills (U4-034)
+    - complain (U4-040)
+    - return (U4-041)
+    - disturb, disturbing (U4-053)
+    - bored, get annoyed, get bored, worried (U4-054)
+    - obey (U5-008)
+    - habit (U5-040)
+    - necessary (U5-043)
+    - by the way (U5-053)
+    - experience (U6-027)
+  exam_record:
+    kaynak: 'W: "Sınavlarda çıkmış 8. ünite kelimeleri" (2013–2019 TEOG, 2018–2019 LGS); sayı = toplam/LGS'
+    ogretim_birimlerinde:
+    - chores / household chores (do the chores) (5/1 LGS)
+    - task / duty / assignment (4/0 LGS)
+    - do the grocery shopping (groceries) (2/0 LGS)
+    - cook (cook the meals / cook dinner) (7/0 LGS)
+    - set the table (3/0 LGS)
+    - wash the dishes / do the washing up (dishes) (3/0 LGS)
+    - load / empty the dishwasher (dishwasher) (4/0 LGS)
+    - tidy up / clean up (tidy – untidy) (2/0 LGS)
+    - make the bed (4/1 LGS)
+    - sweep (sweep the floor / sweep the leaves) (1/0 LGS)
+    - mop (mop the floor) (1/0 LGS)
+    - dust (dust the shelves) (1/1 LGS)
+    - take out the garbage / trash / rubbish (4/1 LGS)
+    - do the laundry (laundry) (3/1 LGS)
+    - hang out the laundry / washing (hang) (1/0 LGS)
+    - iron (iron the clothes) (1/0 LGS)
+    - water the plants / flowers (3/0 LGS)
+    - take care of / look after (3/0 LGS)
+    - relative (1/1 LGS)
+    - borrow / lend (1/0 LGS)
+    - furniture (1/1 LGS)
+    - be responsible for / be in charge of (responsibility) (6/0 LGS)
+    - warn (1/0 LGS)
+    onceki_unitelerde:
+    - dish (6/0) → U3-056
+    - prepare (6/0) → U3-062
+    - share (5/0) → U1-043
+    - get bored (4/1 LGS) → U4-054
+    - meal (3/0) → U3-056
+    - bill (2/0) → U4-034
+    - delicious (2/1 LGS) → U3-028
+    - dessert (1/1 LGS) → U3-055
+    - chat (1/0) → U1-029
+    - experience (1/0) → U6-027
+    - get annoyed (1/0) → U4-054
+    - habit (1/0) → U5-040
+    - pick up (1/0) → U2-048
+    - respect (1/0) → U1-061
+    - ring (1/0) → U4-013
+    bilinen_tanima:
+    - classmate (4/0) BİLİNEN
+    - understand (4/0) BİLİNEN
+    - become (1/1 LGS) BİLİNEN
+    - pay (1/0) BİLİNEN
+    - doorbell (1/0) TANIMA
+    - severe (1/0) TANIMA
+themes:
+- name: Ev işleri ve görevler
+  items:
+  - U8-001
+  - U8-002
+  - U8-003
+  note_tr: 'Ünitenin çatı kelimeleri: chores, task / duty, market alışverişi.'
+- name: Mutfak ve sofra
+  items:
+  - U8-004
+  - U8-005
+  - U8-006
+  - U8-007
+  - U8-008
+  note_tr: Sofra ve bulaşık işleri. dish (U3-056) ↔ the dishes (bulaşık) ve cook ↔ cooker tuzakları.
+- name: Temizlik ve düzen
+  items:
+  - U8-009
+  - U8-010
+  - U8-011
+  - U8-012
+  - U8-013
+  - U8-014
+  - U8-015
+  - U8-016
+  - U8-017
+  note_tr: 'Ev temizliği fiilleri: tidy up, vacuum, sweep, mop, dust, take out the garbage. Resimli eşleştirme sorularının gövdesi.'
+- name: Çamaşır
+  items:
+  - U8-018
+  - U8-019
+  - U8-020
+  - U8-021
+  - U8-022
+  note_tr: 'Çamaşır döngüsü: separate → do the laundry → hang out → fold → iron. Sıralama sorusuna uygun.'
+- name: Bahçe, evcil hayvan ve bakım
+  items:
+  - U8-023
+  - U8-024
+  - U8-025
+  - U8-026
+  note_tr: 'Dış işler ve bakım: mow the lawn, water the plants, take care of / look after, feed.'
+- name: Ev ve aile hayatı
+  items:
+  - U8-027
+  - U8-028
+  - U8-029
+  - U8-030
+  - U8-031
+  - U8-032
+  - U8-033
+  note_tr: 'Ev ve aile kelimeleri: flat, furniture, relative, harçlık ve ödül, ödünç alma, günlük tutma.'
+- name: Sorumluluk ve zorunluluk kalıpları
+  items:
+  - U8-034
+  - U8-035
+  - U8-036
+  - U8-037
+  - U8-038
+  - U8-039
+  - U8-040
+  - U8-041
+  note_tr: 'Programın işlevini taşıyan kalıplar: have to / must, don''t have to ≠ mustn''t, be responsible for / be in charge of, take turns, want someone to.'
+- name: Tutum, duygu ve şikâyet
+  items:
+  - U8-042
+  - U8-043
+  - U8-044
+  - U8-045
+  - U8-046
+  - U8-047
+  - U8-048
+  - U8-049
+  - U8-050
+  note_tr: 'Şikâyet ve tutum dili: too many tasks, It''s not fair!, make a fuss; okuma metinlerinin fiilleri (affect, damage, warn) ve bağlaçları (instead of, immediately).'
+grammar:
+- id: G1
+  name_tr: 'Zorunluluk: have to / must'
+  form: I/You/We/They have to + V1 · He/She has to + V1 · must + V1 (tüm kişiler) · Do/Does … have to …? · had to (geçmiş)
+  examples:
+  - I have to take out the garbage every evening.
+  - She has to look after her little brother on Saturdays.
+  - Do you have to make your bed? – Yes, I do.
+  - We must cooperate on chores.
+  explain_tr: have to dışarıdan gelen zorunluluk ya da kural (annem istiyor, okul kuralı); must konuşanın kendisinin gerekli gördüğü (I must study harder) ya da yazılı kural. Sınavda ikisi çoğunlukla aynı
+    anlamda (zorunda olmak) kullanılır. must çekimlenmez, to almaz.
+  common_errors:
+  - wrong: She have to iron the clothes.
+    right: She has to iron the clothes.
+    why_tr: he/she/it ile has to.
+  - wrong: I must to tidy my room.
+    right: I must tidy my room.
+    why_tr: must yalın fiil alır.
+  - wrong: Do you must help your parents?
+    right: Do you have to help your parents?
+    why_tr: must ile do kullanılmaz; soruda have to tercih edilir.
+  lgs_note: Ev işi tablosu sorularında "has to / doesn't have to" ile kim neyi yapmak zorunda bilgisi sorulur; çeldiriciler kişiyi ya da günü değiştirir.
+  items:
+  - U8-035
+  - U8-034
+- id: G2
+  name_tr: don't have to ≠ mustn't
+  form: don't / doesn't have to + V1 = gerek yok · mustn't + V1 = yasak
+  examples:
+  - It's Sunday. You don't have to get up early.
+  - You mustn't touch the iron. It's hot!
+  - Selin doesn't have to wash the dishes today; it's her brother's turn.
+  explain_tr: 'Olumlu hâlleri benzer olsa da olumsuzları zıt anlamlıdır: don''t have to "zorunda değilsin, istersen yap"; mustn''t "yapma, yasak".'
+  common_errors:
+  - wrong: You mustn't cook tonight, I've already ordered pizza.
+    right: You don't have to cook tonight.
+    why_tr: Yasak değil, gerek yok.
+  lgs_note: Durum–anlam sorusunda "Which sentence means it is not necessary?" tipinde doğrudan sorulabilir; mustn't şıkkı en güçlü çeldiricidir.
+  items:
+  - U8-040
+  - U8-035
+- id: G3
+  name_tr: 'Sorumluluk: be responsible for / be in charge of + isim / V-ing'
+  form: be responsible for / be in charge of + noun / V-ing · Whose responsibility is …? – It's my/his … responsibility.
+  examples:
+  - I'm responsible for taking out the garbage.
+  - My dad is in charge of the grocery shopping.
+  - Whose responsibility is feeding the cat? – It's Elif's responsibility.
+  explain_tr: 'Edattan (for / of) sonra fiil gelirse -ing alır. responsibility isim: It''s my responsibility.'
+  common_errors:
+  - wrong: I'm responsible for take out the garbage.
+    right: I'm responsible for taking out the garbage.
+    why_tr: Edattan sonra V-ing.
+  - wrong: I'm responsible of the dog.
+    right: I'm responsible for the dog. / I'm in charge of the dog.
+    why_tr: responsible for, in charge of.
+  lgs_note: 'Okuma ve tablo sorularının ana yapısı: "Who is responsible for mowing the lawn?" cevabı tablodan bulunur.'
+  items:
+  - U8-034
+  - U8-037
+- id: G4
+  name_tr: Beğeni fiilleri + V-ing ve sıklık zarfları (Ü2 tekrarı)
+  form: like / love / enjoy / don't mind / hate / can't stand + V-ing · always / usually / often / sometimes / rarely / never
+  examples:
+  - I enjoy watering the plants.
+  - My brother can't stand ironing.
+  - I usually set the table, but I never do the washing up.
+  explain_tr: Beğeni fiilinden sonraki ev işi kalıbı -ing alır (enjoy watering). Sıklık zarfı ana fiilden önce, be fiilinden sonra gelir.
+  common_errors:
+  - wrong: I don't mind to load the dishwasher.
+    right: I don't mind loading the dishwasher.
+    why_tr: don't mind + V-ing.
+  - wrong: I make always my bed.
+    right: I always make my bed.
+    why_tr: Sıklık zarfı ana fiilden önce.
+  lgs_note: Anket/grafik sorularında "How often does Ali do the laundry?" ve "Which chore does she enjoy most?" birlikte sorulur.
+  items:
+  - U8-024
+  - U8-021
+  - U8-008
+  - U8-005
+  - U8-006
+- id: G5
+  name_tr: want / ask someone to do something
+  form: want / ask / tell + kişi (me, us, him) + to V1
+  examples:
+  - My mum wants me to tidy up my room.
+  - Our teacher wants us to return the books on time.
+  - Dad asked me to feed the cat.
+  explain_tr: Birinin başkasından bir şey yapmasını istemesi; zorunluluğun dolaylı anlatımı. Türkçedeki "-mesini istemek" yapısı İngilizcede that cümlesiyle kurulmaz.
+  common_errors:
+  - wrong: My mum wants that I tidy my room.
+    right: My mum wants me to tidy my room.
+    why_tr: want + nesne + to V1.
+  - wrong: She wants me tidy my room.
+    right: She wants me to tidy my room.
+    why_tr: to unutulmaz.
+  lgs_note: Mesaj / not sorularında "What does Mum want Ali to do?" sorusu bu yapıyla gelir.
+  items:
+  - U8-036
+  - U8-041
+  - U8-026
+- id: G6
+  name_tr: too much / too many (şikâyet)
+  form: too many + sayılabilen çoğul · too much + sayılamayan · too + sıfat
+  examples:
+  - I have too many tasks this week!
+  - There's too much laundry in the basket.
+  - This room is too untidy.
+  explain_tr: too "gereğinden fazla" anlamında olumsuzluk ve şikâyet taşır; very yalnız "çok" demektir. laundry, furniture, homework sayılamaz → too much.
+  common_errors:
+  - wrong: I have too much chores.
+    right: I have too many chores.
+    why_tr: chores sayılabilir çoğul.
+  - wrong: There are too many furnitures.
+    right: There is too much furniture.
+    why_tr: furniture sayılamaz.
+  lgs_note: Şikâyet diyaloğunda boşluğa "too many tasks" gelir; çeldirici "too much tasks" ya da olumlu bir cümledir.
+  items:
+  - U8-042
+  - U8-033
+  - U8-018
+expressions:
+- en: Do you have to help your parents?
+  tr: Annene babana yardım etmek zorunda mısın?
+  use: zorunluluk sorusu
+  reply:
+  - Yes, I do. I have to set the table.
+  - No, I don't.
+  item: U8-035
+  register: nötr
+- en: I'm responsible for …
+  tr: …den ben sorumluyum.
+  use: kendi görevini söylerken
+  reply:
+  - That's a lot of work!
+  item: U8-034
+  register: nötr
+- en: I'm in charge of …
+  tr: … benim sorumluluğumda.
+  use: görevi üstlenmiş olmayı anlatırken
+  item: U8-034
+  register: nötr
+- en: Whose turn is it?
+  tr: Sıra kimde?
+  use: dönüşümlü ev işinde
+  reply:
+  - It's my turn.
+  - It's your turn to wash the dishes.
+  item: U8-037
+  register: gündelik
+- en: It's not fair!
+  tr: Hiç adil değil! / Haksızlık!
+  use: şikâyet ederken
+  reply:
+  - Don't make a fuss.
+  - OK, let's take turns.
+  item: U8-043
+  register: gündelik
+- en: Why do I always have to …?
+  tr: Neden hep ben … zorundayım?
+  use: şikâyet ederken
+  item: U8-043
+  register: gündelik
+- en: I have too many tasks.
+  tr: Çok fazla işim var.
+  use: yoğunluktan yakınırken
+  item: U8-042
+  register: nötr
+- en: Don't make a fuss!
+  tr: Yaygara koparma! / Büyütme!
+  use: küçük bir şeye çok tepki verene
+  item: U8-044
+  register: gündelik
+- en: What a mess!
+  tr: Ne dağınıklık!
+  use: dağınık odaya girince
+  reply:
+  - Sorry, I'll tidy up now.
+  item: U8-010
+  register: gündelik
+- en: I'll do my best.
+  tr: Elimden geleni yapacağım.
+  use: bir görevi üstlenirken
+  item: U8-039
+  register: nötr
+- en: You don't have to …
+  tr: …mana gerek yok.
+  use: birini zorunluluktan kurtarırken
+  item: U8-040
+  register: nötr
+- en: Can I borrow your …?
+  tr: …ini ödünç alabilir miyim?
+  use: bir şey isterken
+  reply:
+  - Sure, here you are.
+  - Sorry, I'm using it.
+  item: U8-031
+  register: nötr
+- en: Could you give me a hand?
+  tr: Bana yardım eder misin?
+  use: ev işinde yardım isterken
+  reply:
+  - Of course.
+  - Just a minute.
+  register: gündelik
+- en: Let's share the chores equally.
+  tr: Ev işlerini eşit paylaşalım.
+  use: iş bölümü önerirken
+  item: U8-038
+  register: nötr
+collocations:
+- item: U8-001
+  pairs:
+  - do the chores
+  - household chores
+  - daily chores
+  - share the chores
+  - indoor / outdoor chores
+- item: U8-008
+  pairs:
+  - load the dishwasher
+  - empty the dishwasher
+  - load the washing machine
+- item: U8-009
+  pairs:
+  - tidy up the room
+  - clean up the house
+  - clean up the garage
+  - a tidy room
+  - an untidy desk
+- item: U8-016
+  pairs:
+  - take out the garbage
+  - take out the trash
+  - take out the rubbish
+  - rubbish bin
+- item: U8-018
+  pairs:
+  - do the laundry
+  - separate the laundry
+  - hang out the laundry
+  - fold the clothes
+  - iron the clothes
+- item: U8-025
+  pairs:
+  - take care of the baby
+  - take care of the dog
+  - look after my little brother
+- item: U8-034
+  pairs:
+  - be responsible for + V-ing
+  - be in charge of + noun
+  - take responsibility
+  - It's my responsibility
+- item: U8-010
+  pairs:
+  - make a mess
+  - What a mess!
+  - a messy room
+word_families:
+- root: responsible
+  forms:
+  - form: responsible
+    pos: adj
+    tr: sorumlu
+    item: U8-034
+  - form: responsibility
+    pos: n
+    tr: sorumluluk
+    item: U8-034
+  - form: irresponsible
+    pos: adj
+    tr: sorumsuz
+- root: tidy
+  forms:
+  - form: tidy
+    pos: adj / v
+    tr: düzenli / toparlamak
+    item: U8-009
+  - form: untidy
+    pos: adj
+    tr: dağınık
+    item: U8-009
+  - form: tidy up
+    pos: phr v
+    tr: toparlamak
+    item: U8-009
+- root: cooperate
+  forms:
+  - form: cooperate
+    pos: v
+    tr: iş birliği yapmak
+    item: U8-038
+  - form: cooperation
+    pos: n
+    tr: iş birliği
+    item: U8-038
+  - form: cooperative
+    pos: adj
+    tr: iş birliğine yatkın
+- root: encourage
+  forms:
+  - form: encourage
+    pos: v
+    tr: cesaretlendirmek
+    item: U8-045
+  - form: encouraging
+    pos: adj
+    tr: cesaretlendirici
+    item: U8-045
+  - form: courage
+    pos: n
+    tr: cesaret
+    item: U6-016
+- root: oblige
+  forms:
+  - form: obligation
+    pos: n
+    tr: zorunluluk
+    item: U8-035
+  - form: obligatory
+    pos: adj
+    tr: zorunlu
+synonym_sets:
+- words:
+  - garbage
+  - trash
+  - rubbish
+  difference_tr: Üçü de çöp; garbage / trash Amerikan, rubbish İngiliz İngilizcesi.
+  items:
+  - U8-016
+- words:
+  - take care of
+  - look after
+  difference_tr: Aynı anlam (bakmak, ilgilenmek); look after biraz daha İngiliz İngilizcesi.
+  items:
+  - U8-025
+- words:
+  - be responsible for
+  - be in charge of
+  difference_tr: in charge of yönetme / üstlenme vurgusu taşır; sınavda eş anlamlı kabul edilir.
+  items:
+  - U8-034
+- words:
+  - wash the dishes
+  - do the washing up
+  - do the dishes
+  difference_tr: Hepsi bulaşık yıkamak; do the washing up İngiliz İngilizcesi.
+  items:
+  - U8-006
+- words:
+  - task
+  - duty
+  - chore
+  - assignment
+  difference_tr: chore ev işi; task genel iş / görev; duty vazife; assignment okulda verilen ödev / görev.
+  items:
+  - U8-002
+  - U8-001
+- words:
+  - untidy
+  - messy
+  difference_tr: Aynı anlam (dağınık); mess isim.
+  items:
+  - U8-009
+  - U8-010
+opposites:
+- a: tidy
+  b: untidy / messy
+- a: clean
+  b: dirty
+- a: load
+  b: empty / unload
+  note_tr: bulaşık makinesi
+- a: borrow
+  b: lend
+  note_tr: ödünç almak ↔ ödünç vermek
+- a: have to
+  b: don't have to
+  note_tr: mustn't ile karıştırılmamalı
+- a: set the table
+  b: clear the table
+traps:
+- about: don't have to / mustn't
+  item: U8-040
+  kind: dilbilgisi
+  trap_tr: İkisi de "olumsuz zorunluluk" sanılır.
+  tip_tr: don't have to = gerek yok; mustn't = yasak.
+- about: dish / dishes
+  item: U8-006
+  kind: cok_anlamli
+  trap_tr: dish yemek / tabak (U3-056); the dishes bulaşık.
+  tip_tr: wash / do the dishes gördüğünde "bulaşık" düşün.
+- about: cook / cooker
+  item: U8-004
+  kind: sahte_dost
+  trap_tr: cooker aşçı sanılır; aslında ocak / fırındır. Aşçı = cook.
+  tip_tr: My mother is a good cook = annem iyi yemek yapar.
+- about: make the bed
+  item: U8-011
+  kind: turkce_etkisi
+  trap_tr: '"Yatak yapmak / yatağı yapmak" gibi çevrilir; kaynak I "Yatağı yapmak" yazmış.'
+  tip_tr: Sabah yatağı düzeltmek, toplamak.
+- about: hang out / hang out the laundry / hang on
+  item: U8-020
+  kind: cok_anlamli
+  trap_tr: hang out takılmak (U2-004), hang out the laundry çamaşır sermek, hang on beklemek (U4-007).
+  tip_tr: 'Nesneye bak: the laundry / the washing varsa çamaşır.'
+- about: dust
+  item: U8-015
+  kind: cok_anlamli
+  trap_tr: dust isim (toz); fiil olarak "toz yapmak" değil "tozunu almak".
+  tip_tr: dust the shelves = rafların tozunu almak.
+- about: iron
+  item: U8-021
+  kind: cok_anlamli
+  trap_tr: iron "demir" bilinir; ev işi bağlamında ütü / ütülemek.
+  tip_tr: iron the clothes; okunuş /ˈaɪən/.
+- about: empty
+  item: U8-008
+  kind: cok_anlamli
+  trap_tr: empty sıfat "boş" bilinir; fiil "boşaltmak".
+  tip_tr: empty the dishwasher / the bin.
+- about: water
+  item: U8-024
+  kind: cok_anlamli
+  trap_tr: 'water fiil olabilir: sulamak.'
+  tip_tr: water the plants.
+- about: flat
+  item: U8-027
+  kind: cok_anlamli
+  trap_tr: flat "düz" bilinir; ev bağlamında apartman dairesi.
+  tip_tr: We live in a flat on the third floor.
+- about: relative
+  item: U8-028
+  kind: sahte_dost
+  trap_tr: relatif / göreceli sanılır.
+  tip_tr: relatives = akrabalar.
+- about: borrow / lend
+  item: U8-031
+  kind: turkce_etkisi
+  trap_tr: Türkçede ikisi de "ödünç"; yön karışır.
+  tip_tr: borrow FROM (alırsın), lend TO (verirsin).
+- about: diary / dairy / daily
+  item: U8-032
+  kind: benzer_yazilis
+  trap_tr: diary günlük (defter), dairy süt ürünleri, daily günlük (her gün).
+  tip_tr: keep a diary.
+- about: furniture
+  item: U8-033
+  kind: dilbilgisi
+  trap_tr: Sayılabilir sanılıp "furnitures" yazılır.
+  tip_tr: a piece of furniture; too much furniture.
+- about: affect / effect
+  item: U8-047
+  kind: benzer_yazilis
+  trap_tr: affect fiil, effect isim.
+  tip_tr: Chores affect our lives. / It has a good effect.
+- about: on time / in time
+  item: U8-041
+  kind: cok_anlamli
+  trap_tr: İkisi de "zamanında" çevrilir.
+  tip_tr: on time = tam vaktinde; in time = geç kalmadan.
+- about: diary (W)
+  item: U8-032
+  kind: kaynak_hatasi
+  trap_tr: W "diary = günlük ev işi" yazmış.
+  tip_tr: diary = günlük, ajanda.
+- about: hang on (W)
+  item: U8-020
+  kind: kaynak_hatasi
+  trap_tr: W "hang on = asmak" yazmış.
+  tip_tr: hang on = beklemek (U4-007); asmak = hang.
+- about: allowance (I)
+  item: U8-029
+  kind: kaynak_hatasi
+  trap_tr: I "allowance = izin" yazmış.
+  tip_tr: allowance = harçlık.
+- about: in time (I)
+  item: U8-041
+  kind: kaynak_hatasi
+  trap_tr: I "in time = zamanla" yazmış.
+  tip_tr: in time = vaktinde, geç kalmadan.
+- about: immediately (I)
+  item: U8-050
+  kind: kaynak_hatasi
+  trap_tr: I "immediately = birden, aniden" yazmış.
+  tip_tr: immediately = hemen, derhal; aniden = suddenly.
+- about: fair (A)
+  kind: kaynak_hatasi
+  trap_tr: A "fair = dürüst" yazmış.
+  tip_tr: fair = adil (U1-071); dürüst = honest.
+lgs_focus:
+  what_is_tested:
+  - Ailenin ev işi çizelgesi / tablosundan kim neyi, ne sıklıkla yapıyor (has to, is responsible for)
+  - Resim–ev işi kalıbı eşleştirme (vacuum, mop, iron, mow the lawn, hang out the laundry)
+  - 'Zorunluluk anlamı: have to / must / don''t have to / mustn''t'
+  - Ev işleri hakkında beğeni / şikâyet içeren mesaj veya diyalog
+  - Ev işi anketi grafiği (how often, enjoy, hate)
+  question_patterns:
+  - type: table_graph
+    description_tr: Bir ailenin haftalık ev işi tablosu; kim neyden sorumlu ya da kim neyi yapmak zorunda değil.
+    sample_stem: 'According to the chart, which of the following is TRUE? (Tablo: Mum – cook the meals; Ali – take out the garbage; Ece – set the table, water the plants)'
+    sample_options:
+    - Ece is responsible for two chores.
+    - Ali has to cook the meals.
+    - Mum doesn't have to do any chores.
+    - Ali waters the plants.
+    distractor_logic_tr: Çeldiriciler kişi–iş eşlemesini değiştirir ya da "doesn't have to" ile ters anlam kurar.
+    items:
+    - U8-034
+    - U8-035
+    - U8-016
+    - U8-005
+    - U8-024
+    - U8-004
+  - type: situation
+    description_tr: Durum verilir, uygun zorunluluk cümlesi seçilir.
+    sample_stem: It's Saturday and Kerem's dad has already done the laundry. What can his dad say to him?
+    sample_options:
+    - You don't have to do the laundry today.
+    - You mustn't do the laundry today.
+    - You have to do the laundry today.
+    - You must do the laundry twice.
+    distractor_logic_tr: mustn't (yasak) ile don't have to (gerek yok) karışıklığı.
+    items:
+    - U8-040
+    - U8-018
+  - type: picture_match
+    description_tr: Dört resim ve dört ev işi kalıbı; eşleşmeyen ya da doğru eşleşen bulunur.
+    sample_stem: 'Which chore is shown in the picture? (Resim: elinde ütü olan çocuk)'
+    sample_options:
+    - iron the clothes
+    - fold the clothes
+    - hang out the laundry
+    - separate the laundry
+    distractor_logic_tr: Aynı temanın (çamaşır) diğer kalıpları.
+    items:
+    - U8-021
+    - U8-022
+    - U8-020
+    - U8-019
+  - type: dialogue_complete
+    description_tr: Şikâyet ya da sorumluluk diyaloğunda boşluk.
+    sample_stem: 'A: Why are you so angry? B: ---- I always have to wash the dishes. A: Don''t make a fuss. We take turns.'
+    sample_options:
+    - It's not fair!
+    - That's a good idea!
+    - I'll do my best.
+    - You're welcome!
+    distractor_logic_tr: Bağlamdan kopuk ama kalıp olarak tanıdık ifadeler.
+    items:
+    - U8-043
+    - U8-044
+    - U8-037
+    - U8-006
+  - type: message_infer
+    description_tr: 'Buzdolabı notu / mesaj: anne çocuktan ne yapmasını istiyor.'
+    sample_stem: 'Note: ''Deniz, please empty the dishwasher and feed the cat before I come home. You don''t have to cook. – Mum'' What does Mum want Deniz to do?'
+    sample_options:
+    - Empty the dishwasher and feed the cat.
+    - Cook dinner and feed the cat.
+    - Load the dishwasher and cook.
+    - Go shopping and cook.
+    distractor_logic_tr: load ↔ empty karışıklığı; don't have to cook'un yanlış okunması.
+    items:
+    - U8-008
+    - U8-026
+    - U8-036
+    - U8-040
+  - type: table_graph
+    description_tr: 'Ev işi anketi: öğrencilerin en çok / en az sevdiği işler.'
+    sample_stem: According to the survey, which chore do most students hate?
+    sample_options:
+    - ironing the clothes
+    - watering the plants
+    - feeding the pets
+    - setting the table
+    distractor_logic_tr: Grafikteki en düşük ve en yüksek değerlerin ters okunması.
+    items:
+    - U8-021
+    - U8-024
+    - U8-026
+    - U8-005
+  priority_items:
+  - U8-001
+  - U8-034
+  - U8-035
+  - U8-040
+  - U8-005
+  - U8-011
+  - U8-016
+  - U8-018
+  - U8-006
+  - U8-008
+  - U8-009
+  - U8-012
+  - U8-015
+  - U8-021
+  - U8-024
+  - U8-025
+  - U8-003
+  - U8-037
+  - U8-043
+  - U8-004
+  tactics:
+  - Tablo sorusunda önce şıklardaki kişi adlarını tabloda bul, sonra işi karşılaştır.
+  - Şıkta don't have to ya da mustn't görürsen anlamı Türkçeye çevirip durumla karşılaştır.
+  - 'Ev işi kalıbını fiil + nesne olarak oku: empty / load, wash / dry, set / clear.'
+  - Notlarda "You don't have to …" yapılmayacak işi gösterir; cevaptan ele.
+  exam_vocabulary:
+  - en: responsible for
+    tr: -den sorumlu
+  - en: Which of the following is NOT mentioned?
+    tr: Aşağıdakilerden hangisi belirtilmemiştir?
+  - en: according to the chart
+    tr: tabloya göre
+  - en: whose
+    tr: kimin
+  - en: it is not necessary
+    tr: gerekli değil
+cross_unit:
+- item: U8-006
+  links_to: U3-056
+  note_tr: dish (yemek / tabak) ↔ the dishes (bulaşık).
+- item: U8-020
+  links_to: U2-004
+  note_tr: hang out (takılmak) ↔ hang out the laundry (çamaşır sermek); hang on U4-007.
+- item: U8-043
+  links_to: U1-071
+  note_tr: fair = adil; şikâyet kalıbında not fair.
+- item: U8-034
+  links_to: U1-043
+  note_tr: 'share the chores: share Ü1.'
+- item: U8-035
+  links_to: U5-008
+  note_tr: obey the rules / follow the rules (U2-084) ile kural dili.
+- item: U8-042
+  links_to: U4-040
+  note_tr: make a complaint (U4) ↔ ev içi şikâyet kalıpları.
+- item: get bored / get annoyed / worried
+  links_to: U4-054
+  note_tr: -ed duygu sıfatları tekrar edilir.
+- item: like / enjoy / hate / can't stand + V-ing
+  links_to: U2-007
+  note_tr: Beğeni fiilleri Ü2; ev işi kalıplarıyla tekrar.
+- item: always / usually / rarely / never
+  links_to: U2-044
+  note_tr: Ev işi sıklığı.
+- item: prepare the meals
+  links_to: U3-062
+  note_tr: prepare / preparation Ü3.
+story_hooks:
+- situation_tr: 'Murat Bey ''Chore Challenge''ı duyurur: herkes bir hafta ev işi günlüğü tutacak, puanlar sınıfta karşılaştırılacak.'
+  items:
+  - U8-001
+  - U8-032
+  - U8-002
+  - U8-030
+  - U8-034
+- situation_tr: Duru'nun annesi iş gezisinde; Duru buzdolabına dönüşümlü görev çizelgesi asar.
+  items:
+  - U8-037
+  - U8-035
+  - U8-040
+  - U8-003
+  - U8-004
+  - U8-005
+  comedy_tr: Babası çizelgede kendi adını hep "market" sütununa yazar.
+- situation_tr: 'Kaan hızlı temizlik rekoru dener: elektrik süpürgesi, paspas, toz bezi aynı anda; vazo kırılır.'
+  items:
+  - U8-012
+  - U8-014
+  - U8-015
+  - U8-046
+  - U8-048
+  - U8-050
+- situation_tr: 'Bora''nın son bahanesi: "My cat ate the vacuum cleaner." Sınıf güler; Bora ertesi gün çöpü çıkarıp çimleri biçerek puan toplar.'
+  items:
+  - U8-012
+  - U8-016
+  - U8-023
+  - U8-039
+  - U8-045
+- situation_tr: 'Selin ve ağabeyi Emre pazarlık eder: rap sesi kısılırsa bulaşık Emre''de.'
+  items:
+  - U8-006
+  - U8-008
+  - U8-043
+  - U8-042
+  - U8-044
+  comedy_tr: '''It''s not fair!'' iki taraftan da aynı anda.'
+- situation_tr: 'Ece çamaşır işinde mükemmeliyetçi: ayırma, asma, katlama, ütü; sonunda kardeşine görev devreder.'
+  items:
+  - U8-018
+  - U8-019
+  - U8-020
+  - U8-022
+  - U8-021
+  - U8-038
+- situation_tr: Elif Pamuk'un bakımını anlatır; grup mahallede park temizliği günü düzenler.
+  items:
+  - U8-025
+  - U8-026
+  - U8-024
+  - U8-009
+  - U8-010
+  - U8-017
+mini_lessons:
+- type: tuzak
+  text_tr: don't have to = gerek yok; mustn't = yasak. 'Bugün pazar, erken kalkmana gerek yok' → You don't have to get up early.
+  refs:
+  - U8-040
+  - U8-035
+- type: mini_dilbilgisi
+  text_tr: 'be responsible for / be in charge of sonrası fiil -ing alır: responsible for feeding the cat.'
+  refs:
+  - U8-034
+- type: tuzak
+  text_tr: dish = yemek ya da tabak; the dishes = bulaşık. wash / do the dishes = bulaşık yıkamak.
+  refs:
+  - U8-006
+- type: tuzak
+  text_tr: cooker aşçı değil, ocaktır. Aşçı = cook.
+  refs:
+  - U8-004
+- type: hafiza_kancasi
+  text_tr: 'Çamaşırın yolculuğu: separate → do the laundry → hang out → fold → iron.'
+  refs:
+  - U8-019
+  - U8-018
+  - U8-020
+  - U8-022
+  - U8-021
+- type: kelime_ailesi
+  text_tr: tidy (düzenli) – untidy (dağınık) – tidy up (toparlamak); mess (dağınıklık) – messy (dağınık).
+  refs:
+  - U8-009
+  - U8-010
+- type: tuzak
+  text_tr: borrow = ödünç AL, lend = ödünç VER. Can I borrow your pen? / Can you lend me your pen?
+  refs:
+  - U8-031
+- type: mini_dilbilgisi
+  text_tr: too many + sayılabilen (too many chores), too much + sayılamayan (too much laundry). too şikâyet taşır.
+  refs:
+  - U8-042
+  - U8-033
+- type: tuzak
+  text_tr: make the bed, make a mess, make a fuss; ama do the chores, do the laundry, do the shopping, do the washing up.
+  refs:
+  - U8-011
+  - U8-010
+  - U8-044
+  - U8-001
+  - U8-018
+  - U8-003
+- type: ilginc_bilgi
+  text_tr: garbage / trash Amerikan, rubbish İngiliz İngilizcesi; flat İngiliz, apartment Amerikan. Sınavda hepsi geçebilir.
+  refs:
+  - U8-016
+  - U8-027
+- type: mini_dilbilgisi
+  text_tr: 'want + kişi + to V1: My mum wants me to tidy my room. ("wants that I" denmez.)'
+  refs:
+  - U8-036
+- type: lgs_taktigi
+  text_tr: Ev işi tablosunda önce kişileri, sonra işleri işaretle; "doesn't have to" o işin o kişiye ait olmadığını gösterir.
+  refs:
+  - U8-034
+  - U8-035
+  - U8-040
+open_questions:
+- '"Making complaints" MEB programında ayrı işlev mi? Doğrulanan tek işlev "Expressing obligation" (ingilizcepedia günlük planı); şikâyet kalıpları ders kitabı s.98''e dayanıyor.'
+- '"don''t have to" ders kitabı cevap sayfasında görülmedi (mustn''t s.103 var); birim LGS değerinden dolayı eklendi, kullanıcı onayı bekliyor.'
+- Ders kitabı s.102 cevap sayfasında yok; o sayfanın kalıpları eksik olabilir.
+- 'cook (A1) sınav sıklığı (7) ve cook/cooker tuzağı nedeniyle TUZAK birimi yapıldı: kullanıcı BİLİNEN tercih ederse 49 birim.'
+phrase_bank:
+- en: Do you have to help your parents in housework?
+  tr: Ev işlerinde annene babana yardım etmek zorunda mısın?
+  function: zorunluluk
+  items:
+  - U8-035
+  source: MEB Useful Language
+- en: Well, I must help my parents to set the table.
+  tr: Şey, sofrayı kurmak için annemlere yardım etmeliyim.
+  function: zorunluluk
+  items:
+  - U8-035
+  - U8-005
+  source: MEB Useful Language
+- en: I must help my brother to do his homework.
+  tr: Kardeşimin ödevine yardım etmeliyim.
+  function: zorunluluk
+  items:
+  - U8-035
+  source: MEB Useful Language
+- en: We must work together on chores.
+  tr: Ev işlerinde birlikte çalışmalıyız.
+  function: zorunluluk
+  items:
+  - U8-035
+  - U8-038
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: I mustn't forget to take out the trash.
+  tr: Çöpü çıkarmayı unutmamalıyım.
+  function: zorunluluk
+  items:
+  - U8-040
+  - U8-016
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: Our school library wants us to return the books on time.
+  tr: Okul kütüphanemiz kitapları zamanında iade etmemizi istiyor.
+  function: zorunluluk
+  items:
+  - U8-036
+  - U8-041
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: My teacher wants us to do our homework and give our projects on time.
+  tr: Öğretmenimiz ödevlerimizi yapmamızı ve projelerimizi zamanında vermemizi istiyor.
+  function: zorunluluk
+  items:
+  - U8-036
+  - U8-041
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: Does your sister have any obligations?
+  tr: Kız kardeşinin hiç sorumluluğu var mı?
+  function: zorunluluk
+  items:
+  - U8-035
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: What are your responsibilities at home?
+  tr: Evdeki sorumlulukların neler?
+  function: sorumluluk
+  items:
+  - U8-034
+  source: ders kitabı kalıp listesi (W/R)
+- en: I'm responsible for taking my dog for a walk.
+  tr: Köpeğimi yürüyüşe çıkarmaktan ben sorumluyum.
+  function: sorumluluk
+  items:
+  - U8-034
+  - U8-025
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: I'm responsible for dusting the shelves.
+  tr: Rafların tozunu almaktan ben sorumluyum.
+  function: sorumluluk
+  items:
+  - U8-034
+  - U8-015
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: I'm responsible for doing the grocery shopping once a week.
+  tr: Haftada bir market alışverişinden ben sorumluyum.
+  function: sorumluluk
+  items:
+  - U8-034
+  - U8-003
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: Whose responsibility is doing the shopping? – It's my mother's responsibility.
+  tr: Alışveriş kimin sorumluluğu? – Annemin.
+  function: sorumluluk
+  items:
+  - U8-034
+  - U8-003
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: Who is in charge of the dog?
+  tr: Köpekten kim sorumlu?
+  function: sorumluluk
+  items:
+  - U8-034
+  source: ders kitabı kalıp listesi (W/R)
+- en: My task is washing the car every weekend.
+  tr: Görevim her hafta sonu arabayı yıkamak.
+  function: sorumluluk
+  items:
+  - U8-002
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: Which task do you find enjoyable?
+  tr: Hangi işi keyifli buluyorsun?
+  function: beğeni
+  items:
+  - U8-002
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: I usually set the table because I like decorating it.
+  tr: Genelde sofrayı ben kurarım çünkü süslemeyi severim.
+  function: beğeni
+  items:
+  - U8-005
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: I have fun when I take my dog for a walk.
+  tr: Köpeğimi gezdirirken eğlenirim.
+  function: beğeni
+  items:
+  - U8-025
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: Which chores do you like / dislike doing?
+  tr: Hangi ev işlerini yapmayı seversin / sevmezsin?
+  function: beğeni
+  items:
+  - U8-001
+  source: ders kitabı kalıp listesi (W/R)
+- en: I don't like it when I have too many tasks.
+  tr: Çok fazla işim olduğunda hoşlanmam.
+  function: şikâyet
+  items:
+  - U8-042
+  source: MEB ders kitabı s. 96–106 (egitimsistem.com cevap sayfası)
+- en: It's not fair! Why do I always have to do the washing up?
+  tr: Haksızlık! Neden hep bulaşığı ben yıkamak zorundayım?
+  function: şikâyet
+  items:
+  - U8-043
+  - U8-006
+  source: şikâyet kalıbı (R)
+- en: My brother never tidies up his room. It's always a mess.
+  tr: Ağabeyim odasını hiç toplamaz. Hep dağınıktır.
+  function: şikâyet
+  items:
+  - U8-009
+  - U8-010
+  source: ders kitabı kalıp listesi (W/R)
+- en: How often do you do the laundry?
+  tr: Ne sıklıkla çamaşır yıkarsın?
+  function: sıklık
+  items:
+  - U8-018
+  source: ders kitabı kalıp listesi (W/R)
+- en: I make my bed every morning.
+  tr: Her sabah yatağımı toplarım.
+  function: sıklık
+  items:
+  - U8-011
+  source: ders kitabı kalıp listesi (W/R)

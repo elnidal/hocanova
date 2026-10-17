@@ -1,0 +1,286 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 7
+status: draft
+title: "Yeni öğrenci"
+est_minutes: 10
+characters: [Murat Bey, Elif, Ece, Kaan, Selin, Bora, Duru]
+new_items: [U1-039, U1-038, U1-036, U1-034, U1-042, U1-029]
+
+story:
+  - id: s01
+    text: "Pazartesi sabahı. Murat Bey sınıfa girdi; yanında, partiden hatırladıkları bir yüz vardı: Elif!"
+  - id: s02
+    text: "Murat Bey: \"<en>Good morning, class. Let me {U1-039|introduce} our new student. This is Elif.</en>\""
+  - id: s03
+    text: "Kaan elini kaldırdı: \"<en>Murat Bey, you don't need to {U1-039|introduce} her. She saw Bora's chicken dance!</en>\" Bora kıpkırmızı oldu."
+  - id: s04
+    text: "Murat Bey gülümsedi: \"<en>Welcome, Elif. What are you {U1-038|interested in}?</en>\" Elif: \"<en>Music and animals!</en>\""
+  - id: s05
+    text: "Teneffüste Ece, Elif'i koluna taktı: \"<en>Come on! I'll {U1-039|introduce} you to everyone.</en>\""
+  - id: s06
+    text: "\"<en>This is Kaan. Never tell him a secret!</en>\" Kaan itiraz etti: \"<en>Hey! I {U1-055|kept the secret} about the video!</en>\" Ece: \"<en>For five minutes!</en>\""
+  - id: s07
+    text: "\"<en>This is Selin. She always {U1-054|keeps her promises}. And this is Bora. He's very {U1-070|caring}. He helps old ladies with heavy bags.</en>\""
+  - id: s08
+    text: "Kaan araya girdi: \"<en>Yes, Bora sometimes {U1-050|breaks his promises}… but then he arrives with a cake!</en>\""
+  - id: s09
+    text: "Son durak Duru'ydu. Duru sırasında kulaklıkla, gözleri kapalı oturuyordu."
+  - id: s10
+    text: "Elif, Duru'nun çantasındaki gitar anahtarlığını gördü: \"<en>Do you play the guitar?</en>\" Duru bir gözünü açtı: \"<en>Yes. Are you {U1-038|interested in} music?</en>\""
+  - id: s11
+    text: "Elif: \"<en>Yes, I'm very {U1-038|interested in} music. I play the guitar too! And I have a dog. Her name is Pamuk.</en>\""
+  - id: s12
+    text: "Duru'nun iki gözü birden açıldı: \"<en>A dog? I have a dog too! Fıstık!</en>\""
+  - id: s13
+    text: "Selin güldü: \"<en>Wow, you two {U1-036|have a lot in common}!</en>\""
+  - id: s14
+    text: "Zil çaldığında ikisi hâlâ telefonlarına eğilmiş, Fıstık ile Pamuk'un fotoğraflarını karşılaştırıyordu."
+  - id: s15
+    text: "Murat Bey: \"<en>Duru, Elif, you can {U1-029|chat} at break time. Now, page 12, please.</en>\""
+  - id: s16
+    text: "Kaan, Bora'ya fısıldadı: \"<en>Look at them. They {U1-034|get on well}.</en>\" Bora: \"<en>Duru is awake in a lesson! Elif is magic!</en>\""
+  - id: s17
+    text: "Dersin konusu evcil hayvanlardı. Murat Bey sordu: \"<en>Dogs or cats? Which are better?</en>\""
+  - id: s18
+    text: "Duru ve Elif hep bir ağızdan bağırdı: \"<en>Dogs!</en>\" Elif sevindi: \"<en>We have the {U1-042|same opinion}, Duru!</en>\""
+  - id: s19
+    text: "Bora: \"<en>Cats are better. My cat says hello.</en>\" Kaan: \"<en>Bora, you don't have a cat!</en>\" Bütün sınıf güldü."
+  - id: s20
+    text: "Kaan: \"<en>Bora and I don't have the {U1-042|same opinion} about cats. But we {U1-036|have a lot in common}: we both love cake!</en>\""
+  - id: s21
+    text: "Akşam sınıf grubunda bildirimler hiç durmadı. Sebebi belliydi: Duru ve Elif."
+  - id: s22
+    text: "Kaan sonunda yazdı: \"<en>Duru, Elif, please {U1-029|chat} in private! My phone is on fire! 🔥</en>\""
+  - id: s23
+    text: "Duru: \"<en>Sorry! We {U1-029|chatted} about guitars for two hours.</en>\" Ece şaşırdı: \"<en>Duru never writes more than three words!</en>\""
+  - id: s24
+    text: "Selin: \"<en>Elif and Duru {U1-036|have a lot in common}, so they {U1-034|get on well with} each other. Like us!</en>\""
+  - id: s25
+    text: "Elif: \"<en>Thank you, everyone. You are so {U1-092|supportive}! I think I'll {U1-034|get on well with} all of you.</en>\""
+  - id: s26
+    text: "Selin: \"<en>We'll {U1-049|back you up}, Elif. And Ece and I have the {U1-042|same opinion}: you're one of us now!</en>\""
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>Let me introduce our new student, Elif.</en>"
+  - id: c02
+    speaker: Elif
+    text: "<en>Hi! I'm interested in music and animals.</en>"
+  - id: c03
+    speaker: Duru
+    text: "<en>Me too! We have a lot in common.</en>"
+  - id: c04
+    speaker: Kaan
+    text: "<en>They get on well. They chatted for two hours last night!</en>"
+
+steps:
+  - item: U1-039
+    sezdir:
+      id: d07-039-z
+      type: meaning
+      context: s02
+      prompt: "Hikâyede \"introduce\" ne anlama geliyordu?"
+      options: ["tanıştırmak, tanıtmak", "davet etmek", "aramak", "beklemek"]
+      answer: 0
+    kullan:
+      id: d07-039-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ece, can you ________ me to your new classmate? I want to meet her.</en>"
+      options: ["introduce", "invite", "refuse", "trust"]
+      answer: 0
+    sina:
+      id: d07-039-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Ece: Mom, I'd like to introduce my new classmate. This is Elif.\nMom: ________</en>"
+      options: ["Nice to meet you, Elif!", "Sorry, I can't.", "No, thanks. I'm full.", "That's not fair!"]
+      answer: 0
+  - item: U1-038
+    sezdir:
+      id: d07-038-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede \"interested in\" ne anlama geliyordu?"
+      options: ["… ile ilgilenmek", "… -den korkmak", "… -den sıkılmak", "… -i unutmak"]
+      answer: 0
+    kullan:
+      id: d07-038-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Duru plays the guitar every day and listens to songs all the time. She is very ________ music.</en>"
+      options: ["interested in", "bored with", "afraid of", "angry with"]
+      answer: 0
+    sina:
+      id: d07-038-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Which of the following is TRUE about Elif?</en>"
+      stem: "<en>Elif: I read books about planets and stars. One day, I want to be an astronaut!</en>"
+      options: ["She is interested in space.", "She is afraid of space.", "She isn't interested in books.", "She wants to be a teacher."]
+      answer: 0
+  - item: U1-036
+    sezdir:
+      id: d07-036-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede \"have a lot in common\" ne anlama geliyordu?"
+      options: ["birçok ortak noktası olmak", "çok tartışmak", "hiç anlaşamamak", "akraba olmak"]
+      answer: 0
+    kullan:
+      id: d07-036-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Elif and Duru both love music, dogs and long weekends. They ________.</en>"
+      options: ["have a lot in common", "have nothing in common", "argue all the time", "break their promises"]
+      answer: 0
+    sina:
+      id: d07-036-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What can we say about Can and Mert?</en>"
+      stem: "<en>Can: I love football, but my friend Mert hates it. I like pizza, Mert likes salad. I get up early, and Mert sleeps until noon!</en>"
+      options: ["They don't have much in common.", "They have a lot in common.", "They both love football.", "They both get up early."]
+      answer: 0
+  - item: U1-034
+    sezdir:
+      id: d07-034-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"get on well\" ne anlama geliyordu?"
+      options: ["(biriyle) iyi anlaşmak", "kavga etmek", "birbirini kıskanmak", "aynı otobüse binmek"]
+      answer: 0
+    kullan:
+      id: d07-034-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Elif is friendly and kind. She ________ everyone in the class.</en>"
+      options: ["gets on well with", "argues with", "breaks promises to", "is angry with"]
+      answer: 0
+    sina:
+      id: d07-034-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"Duru and Elif get on well.\" Which one is CLOSEST in meaning?</en>"
+      options: ["They like each other and are good friends.", "They argue all the time.", "They live in the same street.", "They don't know each other."]
+      answer: 0
+  - item: U1-042
+    sezdir:
+      id: d07-042-z
+      type: meaning
+      context: s18
+      prompt: "Hikâyede \"same opinion\" ne anlama geliyordu?"
+      options: ["aynı fikir", "farklı fikir", "aynı köpek", "aynı şarkı"]
+      answer: 0
+    kullan:
+      id: d07-042-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I think dogs are great, and Elif thinks so too. We have the ________.</en>"
+      options: ["same opinion", "different opinion", "same dog", "same excuse"]
+      answer: 0
+    sina:
+      id: d07-042-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Duru: I think this song is amazing!\nElif: ________ It's my favourite song.</en>"
+      options: ["I have the same opinion.", "I don't agree at all.", "Sorry, I can't hear it.", "It sounds terrible."]
+      answer: 0
+  - item: U1-029
+    sezdir:
+      id: d07-029-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede \"chat\" ne anlama geliyordu?"
+      options: ["sohbet etmek", "sınav olmak", "kavga etmek", "uyumak"]
+      answer: 0
+    kullan:
+      id: d07-029-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Duru and Elif love talking about music. Last night they ________ on the phone for two hours.</en>"
+      options: ["chatted", "cooked", "slept", "swam"]
+      answer: 0
+    sina:
+      id: d07-029-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>What are Kaan and Bora doing?</en>"
+      stem: "<en>Kaan and Bora are sitting in the school canteen. They are laughing and talking about their weekend.</en>"
+      options: ["They are chatting.", "They are arguing.", "They are sleeping.", "They are doing a test."]
+      answer: 0
+
+review:
+  - id: d07-r01
+    type: gap_fill
+    item: U1-028
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Bora and Kaan do everything together. They are good ________.</en>"
+    options: ["buddies", "enemies", "strangers", "rivals"]
+    answer: 0
+  - id: d07-r02
+    type: synonym
+    item: U1-040
+    prompt: "<en>\"See you tomorrow, mate!\" Which one has the CLOSEST meaning?</en>"
+    options: ["See you tomorrow, friend!", "See you tomorrow, teacher!", "See you tomorrow, stranger!", "See you tomorrow, sir!"]
+    answer: 0
+  - id: d07-r03
+    type: gap_fill
+    item: U1-030
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Ece and Selin have known each other for years. They talk every day and share all their secrets. They are ________.</en>"
+    options: ["close friends", "strangers", "enemies", "new neighbours"]
+    answer: 0
+  - id: d07-r04
+    type: situation
+    item: U1-047
+    prompt: "<en>Which one describes Bora?</en>"
+    stem: "<en>Your bike is broken and you are far from home. Bora walks with you for an hour and helps you carry it.</en>"
+    options: ["He is a true friend.", "He is a stranger.", "He is mean.", "He is unreliable."]
+    answer: 0
+  - id: d07-r05
+    type: dialogue_complete
+    item: U1-048
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Elif: I love being with you, Duru. You always make me laugh!\nDuru: Thanks! ________</en>"
+    options: ["You're fun to be with too!", "You're so mean!", "I'm stuffed.", "That's not fair!"]
+    answer: 0
+  - id: d07-r06
+    type: gap_fill
+    item: U1-033
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Ece and Selin met in kindergarten. Their ________ started when they were five.</en>"
+    options: ["friendship", "invitation", "excuse", "homework"]
+    answer: 0
+
+tips:
+  - type: mini_dilbilgisi
+    refs: [U1-039]
+    text: "introduce A to B: \"Ece introduced Elif to Kaan.\" Kendini tanıtırken: \"Let me introduce myself.\""
+  - type: tuzak
+    refs: [U1-038]
+    text: "interested in'den sonra fiil gelirse -ing alır: \"I'm interested in playing the guitar.\" Dikkat: interested (ilgilenen kişi) ≠ interesting (ilginç olan şey): \"I'm interested in music. Music is interesting.\""
+  - type: kelime_ailesi
+    refs: [U1-036, U1-042]
+    text: "have a lot in common ↔ have nothing in common (hiç ortak noktası olmamak). same opinion ↔ different opinion (farklı fikir). Zıtlarını da bilirsen LGS'de çeldiriciyi hemen yakalarsın."
+  - type: mini_dilbilgisi
+    refs: [U1-029]
+    text: "chat hem fiil hem isim: \"We chatted for an hour.\" = \"We had a chat for an hour.\" chat → chatted (t iki kez yazılır)."
+
+coach:
+  start: "Sınıfa yeni biri geliyor! Ve Duru bir derste ilk kez gözlerini açık tutacak 😮"
+  end_good: "Harika! Artık birini tanıştırabilir, ortak noktaları anlatabilirsin. Elif seninle gurur duyar!"
+  end_mixed: "İyi iş! {weak} biraz kafa karıştırdı; yarınki tekrar sorularında yine göreceğiz."
+
+notifications:
+  morning: "Sınıfta yeni biri var! Duru'nun gözleri neden birden açıldı? 🎸🐶"
+  evening: "Kaan'ın telefonu neden yanıyor? Cevap Duru ve Elif'te. 10 dakika 🔥"
+  review: "Tek soru: \"We have a lot in common.\" diyen iki kişi birbirine benziyor mu?"
+
+editor:
+  z07: {U1-039: BEKLIYOR, U1-038: BEKLIYOR, U1-036: BEKLIYOR, U1-034: BEKLIYOR, U1-042: BEKLIYOR, U1-029: BEKLIYOR}

@@ -1,0 +1,300 @@
+schema_version: 1
+program: lgs
+unit: 5
+day: 2
+status: draft
+title: "Kanal açılıyor"
+est_minutes: 10
+characters: [Ece, Elif, Duru, Bora, Kaan, Selin]
+new_items: [U5-002, U5-006, U5-007, U5-009, U5-012, U5-024]
+
+story:
+  - id: s01
+    text: "Salı, okul çıkışı. Kütüphanenin köşesindeki bilgisayarların başında Ece, Elif, Duru, Bora ve Kaan toplanmıştı. Selin yan masada ödevini yapıyor, arada bir başını kaldırıyordu."
+  - id: s02
+    text: "Ece defterini açtı: \"<en>OK, team. 90,000 views, and it isn't even our video. Today we open our own channel on ClipTube. First, I {U5-012|sign up}.</en>\""
+  - id: s03
+    text: "Ekranda boş kutular belirdi. Ece her kutuyu özenle doldurdu: \"<en>I {U5-024|type} our name: Wrong Number. {U5-009|Username}: wrongnumber_band. And now a {U5-009|password}. A strong one.</en>\""
+  - id: s04
+    text: "Elif heyecanla sordu: \"<en>Can all of us use it?</en>\" Ece: \"<en>It's one {U5-002|account} for the whole band. I'm the manager, so I keep the {U5-009|password}.</en>\""
+  - id: s05
+    text: "Kaan sandalyesini yaklaştırdı: \"<en>And I want my own {U5-002|account}! Let me {U5-012|register} now!</en>\" Ece daha cevap veremeden klavye Kaan'ın önündeydi."
+  - id: s06
+    text: "Selin kitabından başını kaldırmadan: \"<en>Slow down, Kaan. You're {U1-075|always in a hurry}.</en>\" Kaan: \"<en>I {U5-024|type} very fast. Look!</en>\""
+  - id: s07
+    text: "Ekranda kocaman harflerle bir karşılama mesajı çıktı: \"<en>Welcome, KANA!</en>\" Kaan donup kaldı: \"<en>Who's Kana?!</en>\" Duru: \"<en>You. You {U5-024|typed} your name wrong.</en>\""
+  - id: s08
+    text: "Kaan elini salladı: \"<en>{U1-014|It doesn't matter}. Kana is a cool name.</en>\" Ece defterine küçük bir not düştü: \"<en>Kaan = Kana. OK.</en>\""
+  - id: s09
+    text: "Sonra Ece herkese döndü: \"<en>Now everybody, {U5-006|log in} to your own {U5-002|accounts}. I'll add you to the channel.</en>\" İşte o anda kütüphaneye derin bir sessizlik çöktü."
+  - id: s10
+    text: "Elif bilgisayara eğildi: \"<en>My {U5-009|password}… 'pamuk123'? No… 'lunaray'? No…</en>\" Üç deneme, üç kırmızı uyarı."
+  - id: s11
+    text: "Duru gözlerini kapadı: \"<en>Mine is in my head. Somewhere. Give me a minute.</en>\" Bir dakika sonra gözleri hâlâ kapalıydı. Düşünüyordu. Herhalde."
+  - id: s12
+    text: "Bora ise gururla göğsünü kabarttı: \"<en>I never forget mine. It's 'mycat123'.</en>\" Herkes dönüp ona baktı. Selin bu kez kitabını kapattı: \"<en>Bora. You don't have a cat.</en>\""
+  - id: s13
+    text: "Bora sırıttı: \"<en>Exactly! Nobody can guess it.</en>\" Elif fısıldadı: \"<en>But now the whole library knows it!</en>\" Bora etrafına bakındı: \"<en>Oh. Well… you can all {U1-055|keep a secret}, right?</en>\""
+  - id: s14
+    text: "Ece kalemini masaya vurdu: \"<en>Bora, change it. Today.</en>\" Bora: \"<en>OK, OK, tonight. Look, I {U5-006|logged in}. Add me, manager!</en>\""
+  - id: s15
+    text: "Kaan ise hâlâ ekranla boğuşuyordu: \"<en>Why can't I {U5-006|sign in}? I {U5-024|typed} my {U5-009|password} right!</en>\" Duru tek gözünü açıp ekrana baktı: \"<en>Caps Lock.</en>\""
+  - id: s16
+    text: "Tam o sırada Bora'nın telefonu titredi: dedesi okulun önünde bekliyordu. Bora çantasını kaptı ve koşarak çıktı. Bilgisayarın ekranında hâlâ onun profili açıktı: \"<en>Hi, Bora!</en>\""
+  - id: s17
+    text: "Herkesin şaşkın bakışları arasında Duru sandalyesinden kalktı. Evet, kendiliğinden. \"<en>Bora didn't {U5-007|log out}. Now anybody can use his {U5-002|account}.</en>\""
+  - id: s18
+    text: "Kaan muzipçe gülümsedi: \"<en>Let's change his profile photo to a cat!</en>\" Duru başını iki yana salladı: \"<en>No. Friends don't do that.</en>\" Kaan hemen ellerini kaldırdı: \"<en>Joking! Just joking!</en>\""
+  - id: s19
+    text: "Duru fareyi aldı, iki saniyede işi bitirdi: \"<en>There. {U5-007|Logged off}.</en>\" Sonra Bora'ya mesaj attı: \"<en>You didn't {U5-007|log out} at school. I did it for you. And please change 'mycat123'.</en>\""
+  - id: s20
+    text: "Akşam Ece kanal sayfasını bir kez daha açtı: \"<en>Wrong Number · 0 videos.</en>\" Gruba mesaj attı: \"<en>We {U5-012|signed up} today. Tomorrow we film our first video, and it must be perfect! And everybody: always {U5-007|log out} on school computers!</en>\""
+  - id: s21
+    text: "Gece yarısı Bora'dan bir mesaj geldi: \"<en>Done! New {U5-009|password}. No cats this time.</en>\" Duru: \"<en>Dog?</en>\" Bir dakika sessizlik. Bora: \"<en>…I need to change it again.</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>First, I sign up. It's one account for the whole band, and I keep the password.</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>Why can't I log in? I typed my password right!</en>"
+  - id: c03
+    speaker: Duru
+    text: "<en>Caps Lock.</en>"
+  - id: c04
+    speaker: Duru
+    text: "<en>Bora didn't log out. Now anybody can use his account. There. Logged off.</en>"
+
+steps:
+  - item: U5-002
+    sezdir:
+      id: u5d02-002-z
+      type: meaning
+      context: s04
+      prompt: "Ece'nin \"It's one account for the whole band\" sözünde \"account\" ne anlama geliyordu?"
+      options: ["hesap (internet sitesinde)", "şarkı listesi", "grup sohbeti", "konser bileti"]
+      answer: 0
+    kullan:
+      id: u5d02-002-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Ece manages the band's ________ on ClipTube. She is the only person with the password.</en>"
+      options: ["account", "password", "username", "user"]
+      answer: 0
+      explain: "Şifreyle korunan ve yönetilen şey hesaptır (account); password ve username hesabın parçalarıdır."
+    sina:
+      id: u5d02-002-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>Ece: Hi team! Our band has one account on ClipTube now. Only I know the password. If you want to change something on the channel, ask me first.</en>"
+      options: ["Ece controls the band's account.", "Every member has the password.", "The band has three accounts.", "Ece doesn't know the password."]
+      answer: 0
+      explain: "Şifreyi yalnız Ece biliyor ve değişiklik için ona sormak gerekiyor: hesabı Ece yönetiyor."
+  - item: U5-006
+    sezdir:
+      id: u5d02-006-z
+      type: meaning
+      context: s09
+      prompt: "Ece'nin \"Now everybody, log in to your own accounts\" sözünde \"log in\" ne anlama geliyordu?"
+      options: ["giriş yapmak (oturum açmak)", "kaydolmak", "çıkış yapmak", "hesabı silmek"]
+      answer: 0
+    kullan:
+      id: u5d02-006-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I forgot my password, so I can't ________ to my account.</en>"
+      options: ["log in", "log out", "sign up", "type"]
+      answer: 0
+      explain: "Var olan bir hesaba şifreyle girmek log in (to) ile anlatılır; sign up yeni hesap açmaktır."
+    sina:
+      id: u5d02-006-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Bora has a ClipTube account. He knows his username and password. He wants to open his account and watch the band's channel. Which button does he need?</en>"
+      options: ["Log in", "Sign up", "Log out", "Register"]
+      answer: 0
+      explain: "Hesabı zaten var: kaydolmasına (Sign up / Register) gerek yok, giriş yapması (Log in) gerekiyor."
+  - item: U5-007
+    sezdir:
+      id: u5d02-007-z
+      type: meaning
+      context: s17
+      prompt: "Duru'nun \"Bora didn't log out\" sözünde \"log out\" ne anlama geliyordu?"
+      options: ["çıkış yapmak (oturumu kapatmak)", "giriş yapmak", "şifresini değiştirmek", "kanalı açmak"]
+      answer: 0
+    kullan:
+      id: u5d02-007-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>You're using a school computer, so don't forget to ________ when you finish!</en>"
+      options: ["log out", "log in", "sign up", "register"]
+      answer: 0
+      explain: "Ortak bilgisayarda işin bitince hesaptan çıkmak gerekir: log out (log off)."
+    sina:
+      id: u5d02-007-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the notice, which of the following is TRUE?</en>"
+      stem: "<en>LIBRARY COMPUTERS – RULES\n1. Don't eat or drink near the computers.\n2. Don't share your password with anyone.\n3. Always log off before you leave.</en>"
+      options: ["Students should log out before they leave.", "Students can eat near the computers.", "Students should share their passwords with friends.", "Students should log in before they leave."]
+      answer: 0
+      explain: "Kural 3: \"log off\" = \"log out\"; doğru şık aynı bilgiyi eş anlamlısıyla veriyor."
+  - item: U5-009
+    sezdir:
+      id: u5d02-009-z
+      type: meaning
+      context: s04
+      prompt: "Ece'nin \"I'm the manager, so I keep the password\" sözünde \"password\" ne anlama geliyordu?"
+      options: ["şifre", "kullanıcı adı", "kanal adı", "telefon numarası"]
+      answer: 0
+    kullan:
+      id: u5d02-009-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Never tell anyone your ________. Keep it a secret!</en>"
+      options: ["password", "average", "channel", "user"]
+      answer: 0
+      explain: "Kimseye söylenmemesi gereken şey şifredir (password)."
+    sina:
+      id: u5d02-009-s
+      type: situation
+      lgs_like: true
+      stem_id: S08
+      prompt: "<en>A strong password is long and has letters, numbers and symbols. Who has a strong password?</en>"
+      stem: "<en>Elif: pamuk\nBora: 123456\nSelin: S3l!n_6.30am\nKaan: kaan</en>"
+      options: ["Selin", "Elif", "Bora", "Kaan"]
+      answer: 0
+      explain: "Yalnız Selin'in şifresi uzun ve harf, sayı, sembol içeriyor; öbürleri kısa ve tahmin edilmesi kolay."
+  - item: U5-012
+    sezdir:
+      id: u5d02-012-z
+      type: meaning
+      context: s02
+      prompt: "Ece'nin \"First, I sign up\" sözünde \"sign up\" ne anlama geliyordu?"
+      options: ["kaydolmak (yeni hesap açmak)", "giriş yapmak", "çıkış yapmak", "video çekmek"]
+      answer: 0
+    kullan:
+      id: u5d02-012-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Elif doesn't have a ClipTube account yet. She must ________ first.</en>"
+      options: ["sign up", "log in", "log out", "sign in"]
+      answer: 0
+      explain: "Hesabı olmayan biri önce kaydolur (sign up); log in / sign in var olan hesaba girmektir."
+    sina:
+      id: u5d02-012-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Duru: Can I watch the band's videos on ClipTube?\nEce: Sure. Do you have an account?\nDuru: No, I don't.\nEce: ________</en>"
+      options: ["Then you need to sign up first.", "Then log in with your password.", "Then log out, please.", "Then type your old password."]
+      answer: 0
+      explain: "Duru'nun hesabı yok; ne giriş yapabilir ne eski şifresini yazabilir: önce kaydolması gerekir."
+  - item: U5-024
+    sezdir:
+      id: u5d02-024-z
+      type: meaning
+      context: s06
+      prompt: "Kaan'ın \"I type very fast\" sözünde \"type\" ne anlama geliyordu?"
+      options: ["(klavyeyle) yazmak", "okumak", "konuşmak", "çizmek"]
+      answer: 0
+    kullan:
+      id: u5d02-024-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Please ________ your username and your password in the boxes.</en>"
+      options: ["type", "log out", "sign up", "read"]
+      answer: 0
+      explain: "Kutulara klavyeyle bir şey girmek type ile anlatılır."
+    sina:
+      id: u5d02-024-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>In which sentence does \"type\" have a DIFFERENT meaning?</en>"
+      options: ["What type of films do you like?", "Type your name here.", "Kaan types very fast.", "Please type the password again."]
+      answer: 0
+      explain: "What type of …? sorusunda type isimdir (tür, çeşit); öbür üç cümlede fiildir (klavyeyle yazmak)."
+
+review:
+  - id: u5d02-r01
+    type: gap_fill
+    item: U5-036
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Kaan plays games on his phone all day and he can't stop. Selin thinks he's a game ________.</en>"
+    options: ["addict", "habit", "average", "app"]
+    answer: 0
+  - id: u5d02-r02
+    type: situation
+    item: U5-037
+    prompt: "<en>Selin got 80, 90 and 100 in three English tests. What is her average score?</en>"
+    options: ["90", "80", "100", "270"]
+    answer: 0
+    explain: "(80+90+100)÷3 = 90; 270 toplamdır, ortalama değil."
+  - id: u5d02-r03
+    type: gap_fill
+    item: U5-040
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Bora always drinks a glass of milk before bed. It's his ________.</en>"
+    options: ["habit", "addict", "average", "usage"]
+    answer: 0
+  - id: u5d02-r04
+    type: dialogue_complete
+    item: U5-044
+    lgs_like: true
+    stem_id: S13
+    prompt: "<en>Which question can be the missing question?</en>"
+    stem: "<en>Elif: ________\nDuru: About two hours per day. Mostly videos.</en>"
+    options: ["How many hours per day do you spend on the Internet?", "What time do you go to bed?", "How often do you go to the gym?", "Who do you watch videos with?"]
+    answer: 0
+    explain: "Duru bir süre (about two hours per day) veriyor; süre How many hours … ile sorulur."
+  - id: u5d02-r05
+    type: gap_fill
+    item: U5-045
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Mum checks our Internet ________ every month. Last month it was very high because of my brother's games!</en>"
+    options: ["usage", "user", "habit", "average"]
+    answer: 0
+    explain: "Ne kadar internet kullanıldığı = Internet usage."
+  - id: u5d02-r06
+    type: dialogue_complete
+    item: U5-047
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Murat Bey: What do you use the Internet for, Selin?\nSelin: ________</en>"
+    options: ["I use it for the news and my homework.", "About an hour a day.", "In my room, after school.", "Since I was ten."]
+    answer: 0
+    explain: "Soru amaç soruyor (What … for?); süre, yer ya da zaman veren şıklar soruya uymuyor."
+
+tips:
+  - type: tuzak
+    refs: [U5-006, U5-012]
+    text: "sign IN = giriş yapmak (log in ile aynı), sign UP = kaydolmak, yeni hesap açmak. Bazı kaynaklar ikisine de \"kaydolmak\" diyor: yanlış! Hafıza kancası: in = içeri gir, up = yeni hesabı kur."
+  - type: tuzak
+    refs: [U5-024]
+    text: "type isim olarak \"tür, çeşit\" demek: What type of music do you like? Fiil olarak klavyeyle yazmak: Type your password. Ardından password, name ya da message geliyorsa yazmaktır."
+  - type: lgs_taktigi
+    refs: [U5-012, U5-006, U5-007]
+    text: "Hesap sorularında önce sor: Hesap var mı? Yoksa → sign up / register. Varsa → log in / sign in. İş bitti mi? → log out / log off. Sınav eş anlamlıyı sever: log off = log out."
+  - type: mini_dilbilgisi
+    refs: [U5-007, U5-009]
+    text: "Alışkanlık Simple Present + sıklık zarfıyla anlatılır: I always log out. Bora never forgets his password. Zarf ana fiilden önce, be'den sonra gelir: Kaan is always in a hurry."
+
+coach:
+  start: "Bugün Ece grubun kanalını açıyor. Kolay mı sandın? Dört kişi, dört unutkan kafa ve bir kedi meselesi! 🔑"
+  end_good: "Süper! Ece kanalı açtı, sen de bütün kapıların anahtarını aldın. Yarın ilk video çekiliyor… onuncu kez! 🎬"
+  end_mixed: "İyi gidiyorsun! {weak} biraz karıştı; Kaan da adını yanlış yazdı, dünya yıkılmadı. Yarın birlikte bir daha bakarız. 🔑"
+
+notifications:
+  morning: "Ece bugün grubun kanalını açıyor. Bora'nın bir sırrı var ama… pek saklı değil! 🔑"
+  evening: "Kaan'ın adı ekranda bambaşka çıktı, Bora'nın profili kütüphanede açık kaldı! 💻"
+  review: "Tek soru: Yeni bir site için sign in mi, sign up mı? 🤔"
+
+editor:
+  z07: {U5-002: BEKLIYOR, U5-006: BEKLIYOR, U5-007: BEKLIYOR, U5-009: BEKLIYOR, U5-012: BEKLIYOR, U5-024: BEKLIYOR}

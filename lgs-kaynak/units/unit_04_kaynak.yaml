@@ -1,0 +1,1818 @@
+schema_version: 1
+unit: 4
+title: On the Phone
+status: taslak
+summary_tr: 'Ünite, telefonda konuşmanın baştan sona akışını öğretir: arayanın kendini tanıtması ve birini istemesi (This is … / May I speak to …?), bekletme ve bağlama (Hold on / Hang on, I''ll put you
+  through), kişiye ulaşılamaması (I''m afraid he isn''t available at the moment), mesaj bırakma ve alma (Would you like to leave a message?), geri dönüş sözü (I''ll call you back / I''ll get back to you)
+  ve konuşmayı kapatma. Programın ikinci işlevi konuşma anında verilen karardır (The phone rings — I''ll take that. / We''ll meet at the café, then.): ünitenin taşıdığı dilbilgisi, ani karar bildiren will''dir.
+  Üçüncü ayak çağrı merkezi ve randevu dilidir: şikâyet, iade, teslimat, rezervasyon, onaylama. LGS''de bu ünite en çok diyalog tamamlama (boşluğa uygun telefon cümlesi), telefon notu / mesaj çıkarımı ve
+  konuşma cümlelerini sıraya koyma olarak beklenir; engaged, extension, available, hold on, put through gibi telefon anlamı Türkçeden farklı olan sözcükler şıklarda belirleyicidir.'
+curriculum:
+  outcomes:
+  - code: E8.4.L1
+    text_tr: 'Dinleme: Telefon konuşmasıyla ilgili ifadeleri ve kelimeleri tanır.'
+  - code: E8.4.L2
+    text_tr: 'Dinleme: Bir telefon konuşmasını takip eder.'
+  - code: E8.4.SI1
+    text_tr: 'Karşılıklı konuşma: Soru sorup cevaplayarak basit bir telefon görüşmesi yapar.'
+  - code: E8.4.SP1
+    text_tr: 'Sözlü anlatım: Konuşma sırasında verdiği kararları ifade eder.'
+  - code: E8.4.R1
+    text_tr: 'Okuma: İlgili kelimeleri içeren kısa ve basit metinleri anlar. (LGS''de doğrudan ölçülen ana kazanım)'
+  - code: E8.4.W1
+    text_tr: 'Yazma: Kısa ve basit konuşmalar (diyaloglar) yazar.'
+  functions:
+  - id: F1
+    name_tr: Telefon konuşmasını başlatmak, kendini tanıtmak ve birini istemek (Following phone conversations)
+    exponents:
+    - Hello! This is Ece calling. Is Duru in?
+    - May I speak to Mr Demir, please?
+    - Could I speak to the manager, please?
+    - Is Selin there?
+    - Hello, City Concert Hall. How can I help you?
+    - Who's calling, please?
+    responses:
+    - Speaking. (Benim.)
+    - Yes, just a moment. I'll get her.
+    - Who's calling, please?
+    - I'm afraid she isn't available at the moment.
+    - Sorry, you've got the wrong number.
+    items:
+    - U4-031
+    - U4-026
+    - U4-011
+    - U4-013
+    - U4-002
+    - U4-020
+    - U4-032
+    - U4-042
+    lgs_weight: yüksek
+    note_tr: Programın 'Useful Language' örneklerinin ilk satırları bu işlevdir (This is … calling, is … in? / May I speak to …? / Is … there?). Telefonda kendini 'I am …' ile değil 'This is …' ile tanıtmak
+      sınanır.
+  - id: F2
+    name_tr: Bekletmek ve bağlamak (Holding and putting through)
+    exponents:
+    - Can you hold on a moment, please?
+    - Hang on a minute; I'll get him.
+    - Just a minute, please.
+    - I'll put you through to the sales department.
+    - Can you put me through to extension 214, please?
+    - Please hold the line.
+    responses:
+    - Sure, I'll hold.
+    - Thank you.
+    - Sorry, the line is engaged. Would you like to hold?
+    items:
+    - U4-007
+    - U4-012
+    - U4-017
+    - U4-016
+    - U4-042
+    - U4-003
+    lgs_weight: yüksek
+    note_tr: Programın kelime listesinde hang on, hold (the) line, put someone through, extension, engaged, connect birlikte geçer. Sekreter–arayan diyalogları bu işlevin tipik bağlamıdır.
+  - id: F3
+    name_tr: Kişiye ulaşılamaması; mesaj bırakmak ve almak (Taking and leaving messages)
+    exponents:
+    - I'm afraid he is not available at the moment. He has gone out.
+    - Sorry, she's on the other line.
+    - Would you like to leave a message?
+    - Can I take a message?
+    - Could you tell him to call me back, please?
+    - Can you ask her to get back to me as soon as possible?
+    responses:
+    - Yes, please. Could you tell him that the rehearsal is at five?
+    - No, thanks. I'll call back later.
+    - OK, I'll give her the message.
+    - Let me take a memo.
+    items:
+    - U4-023
+    - U4-014
+    - U4-009
+    - U4-010
+    - U4-001
+    - U4-016
+    lgs_weight: yüksek
+    note_tr: 'Telefon notu (memo) okuma soruları bu işlevden üretilir: kim aradı, kimi aradı, ne istedi, ne zaman geri aranacak.'
+  - id: F4
+    name_tr: Hat sorunu, duyamamak ve tekrar istemek (Problems on the line)
+    exponents:
+    - Sorry, it's a bad line. I can't hear you very well.
+    - Could you speak a little louder, please?
+    - Can you repeat that, please?
+    - I beg your pardon?
+    - How do you spell your surname?
+    responses:
+    - Sure. I said the concert is on Friday.
+    - It's D-E-M-İ-R.
+    - Let me call you back. Maybe the line will be better.
+    items:
+    - U4-015
+    - U4-019
+    - U4-001
+    - U4-006
+    - U4-005
+    lgs_weight: orta
+    note_tr: Güncel MEB kitabında (W2) 'It's a bad line', 'Could you please repeat that?', 'Can you spell?' geçiyor; kaynak listelerde louder, repeat, I beg your pardon var.
+  - id: F5
+    name_tr: Konuşma anında verilen kararı bildirmek (Stating decisions taken at the time of speaking)
+    exponents:
+    - '[The phone rings.] I''ll take that.'
+    - Hang on a minute; I'll get her.
+    - I'll see you at the café tomorrow, then.
+    - We'll meet next Saturday, then.
+    - I'm sorry to hear that. We'll meet up later, then.
+    - I'll get back to you in an hour.
+    responses:
+    - OK, see you then!
+    - Great. Talk to you soon.
+    - Fine. I'll wait for your call.
+    items:
+    - U4-022
+    - U4-029
+    - U4-027
+    - U4-049
+    - U4-001
+    - U4-025
+    lgs_weight: yüksek
+    note_tr: Programın açık işlevi. 'then' (o hâlde) ile biten will cümleleri konuşmanın sonunda varılan kararı gösterir; sıralama sorularında son satır adayıdır.
+  - id: F6
+    name_tr: 'Çağrı merkezi ve hizmet: şikâyet, iade, teslimat, rezervasyon, randevu'
+    exponents:
+    - I'm calling about my order. It hasn't been delivered yet.
+    - I'd like to make a complaint.
+    - I'd like to return this product. It doesn't work.
+    - I'd like to book a room for two nights.
+    - I'd like to make an appointment with Dr Aksoy.
+    - Can you confirm my reservation, please?
+    responses:
+    - I'm sorry about that. Can I have your order number, please?
+    - Of course. For which day?
+    - Your appointment is confirmed for Monday at 10 a.m.
+    - I'll put you through to customer service.
+    items:
+    - U4-036
+    - U4-038
+    - U4-024
+    - U4-040
+    - U4-041
+    - U4-039
+    - U4-035
+    - U4-033
+    - U4-037
+    - U4-034
+    - U4-020
+    lgs_weight: orta
+    note_tr: Programın önerilen ödevi bir çağrı merkezi canlandırmasıdır (W1). Kaynak listelerdeki 'book a flight ticket, single/return ticket' gibi bilet ayrıntıları Ü7 Tourism'e bırakıldı.
+  - id: F7
+    name_tr: Konuşmayı bitirmek; iyi dilek ve üzüntü bildirmek
+    exponents:
+    - Thanks for calling.
+    - I'll talk to you soon.
+    - Take care. Bye!
+    - What's wrong? You sound tired.
+    - I'm sorry to hear that. Get well soon!
+    - Let's keep in touch.
+    responses:
+    - You too. Bye!
+    - Thanks. I feel a bit better now.
+    - Sure, I'll text you.
+    items:
+    - U4-028
+    - U4-030
+    - U4-025
+    - U4-008
+    - U4-004
+    - U4-006
+    lgs_weight: orta
+    note_tr: B listesindeki 'what's wrong with you, get well soon, I'm sorry to hear that, take care' ile programdaki 'I'm sorry to hear that' bu işlevin kaynağı.
+sources:
+- code: I
+  name: Okul listesi 2019-2020 (camburnufomboo.meb.k12.tr, QUYZ-4. ünite); eski kitabın iletişim tarihi, gönüllülük ve gelecek planı sahnelerini taşır
+  rows: 281
+- code: A
+  name: ingilizcele.com — Unit 4 On the Phone Vocabulary
+  rows: 89
+- code: B
+  name: ingilizceciyiz.com — 8. Sınıf 4. Ünite Kelimeleri (3 sütun; satır kırılmaları elle birleştirildi)
+  rows: 108
+- code: W1
+  name: 'MEB İngilizce Öğretim Programı (2018), 8. sınıf Ünite 4: işlevler, Useful Language, kelimeler, kazanımlar (okul sitesindeki program PDF''i); kazanımlar Kırklareli İl MEM soru dağılım tablosuyla
+    da doğrulandı'
+  rows: 33
+- code: W2
+  name: MEB Yayınları 8. sınıf İngilizce ders kitabı Ünite 4 (egitimsistem.com cevap sayfası üzerinden)
+  rows: 43
+- code: W3
+  name: rehberpanda.com — LGS İngilizce On the Phone konu anlatımı
+  rows: 15
+- code: W4
+  name: Espresso English — Telephone English Phrases (genel telefon İngilizcesi)
+  rows: 25
+- code: W5
+  name: 'sinavtime.com — 8. sınıf On the Phone test soruları (arama sonucu başlıkları: sekreter diyalogları)'
+  rows: 5
+- code: K
+  name: 'Claude önerisi (bağımsız kaynak sayılmaz): Sorry, wrong number.'
+  rows: 1
+tasnif:
+  teaching_units: 55
+  counts:
+    havuz_tekil_satir: 331
+    havuz_BILINEN: 133
+    havuz_TANIMA: 126
+    havuz_CEKIRDEK: 23
+    havuz_ONCEKI_UNITE: 19
+    havuz_KALIP_ISLEV: 18
+    havuz_TUZAK: 12
+    birim_CEKIRDEK: 23
+    birim_KALIP_ISLEV: 18
+    birim_TUZAK: 12
+    oncelik_1: 50
+    oncelik_2: 3
+  items_file: lgs-pilot/content/unit_04_items.yaml
+  rules_tr:
+  - 'Satır değil öğretim birimi sayılır: kelime aileleri (communicate/communication, invent/invention), eş anlamlılar (hold on/hang on/just a minute/hold the line; call back/get back to; contact/get in
+    touch; engaged/the line is busy) ve aynı işi gören diyalog varyantları (Can you repeat that? / Pardon? / Can you spell? / louder) tek birimdir.'
+  - 'Öncelik 1 = en az iki bağımsız kaynak (I, A, B, W1–W5) ya da KALIP / İŞLEV. Claude önerisi (K) kaynak sayılmaz: ''Sorry, wrong number.'' bu yüzden öncelik 2.'
+  - 'Eski kitabın sahneleri (iletişim tarihi: smoke signals, telegraph, commander; gönüllülük: donate, refugee, Amputee Football Team; gelecek planları: get married, have a baby) I ve A''da birlikte geçse
+    de TANIMA: iki liste aynı eski kitaptan türemiş, güncel MEB kitabında (W2) ve programda (W1) yoklar.'
+  - 'Sonraki ünitelerin konusu ertelendi: social networks, security risks, stranger, educative game → Ü5 The Internet; single/return ticket, departure/arrival time, travel agent → Ü7 Tourism.'
+  - 'Sıkılaştırma: ilk aday 55 birimdi; urgent/emergency ve arrange tek kaynak olduğu için TANIMA''ya indi, video chat/live chat Ü1 chat (U1-029) tekrarı sayıldı. Sonuç 53 (Ü3: 60).'
+  - MEB programının Ünite 4 kelime listesindeki 16 sözcüğün hepsi (available, connect, contact, dial, engaged, extension, get/keep in touch, get back, hang on/up, hold the line, memo, pick up, polite, put
+    someone through) birimlerde var.
+  excluded_examples:
+    BILINEN:
+    - cell phone
+    - smart phone
+    - telephone
+    - make a phone call
+    - talk on the phone
+    - send a message
+    - send an e-mail
+    - write a letter
+    - meet
+    - hear
+    - speak
+    - tell
+    - understand
+    - angry
+    - bored
+    - worried
+    - surprised
+    - scared
+    - happy
+    - sad
+    - sleepy
+    - gift
+    - expensive
+    - ticket
+    - flight
+    - neighbour
+    - police officer
+    - accident
+    - fire
+    - of course
+    - sure
+    - you are welcome
+    - later
+    - soon
+    - probably
+    TANIMA:
+    - smoke signals
+    - messenger bird
+    - telegraph
+    - printing machine
+    - television transmission
+    - throughout history
+    - old-fashioned
+    - commander
+    - soldiers
+    - purpose
+    - range
+    - warn
+    - donate
+    - refugee
+    - people in need
+    - plant trees
+    - medical care
+    - raise awareness
+    - Amputee Football Team
+    - get married
+    - have a baby
+    - have an operation
+    - single / return ticket
+    - departure / arrival time
+    - ticket price
+    - social networks
+    - security risks
+    - stranger
+    - educative game
+    - lyrics
+    - translate
+    - burglary
+    - burglar
+    - break into
+    - low battery
+    - reminder
+    - urgent (emergency)
+    - arrange (arrangement)
+    - last (sürmek)
+    - wonder
+    - staff
+    - under warranty
+    - overseas phone call
+    - headquarters
+    ONCEKI_UNITE:
+    - text a message (U1-046)
+    - video chat / live chat (U1-029 chat)
+    - invite / invitation (U1-013, U1-012)
+    - accept (U1-001)
+    - prefer (U1-018)
+    - share (U1-043)
+    - generous (U1-074)
+    - fun (U1-098)
+    - introduce (U1-039)
+    - as soon as possible (U1-094)
+    - calm down / keep calm (U1-069 calm)
+    - Would you like to …? (U1-026)
+    - busy (U1-004; engaged birimine bağlı)
+    - opinion (U2-005)
+    - suggestion (U2-080)
+    - social networks (U2-058)
+  exam_record:
+    kaynak: Ders kitabı listeleri + çıkmış kelime tablosu (2013–2020 TEOG, 2018–2020 LGS); sayı = toplam/LGS
+    ogretim_birimlerinde:
+    - caller (call / phone) (5/1 LGS)
+    - contact / get in touch (3/1 LGS)
+    - hang up (1/0 LGS)
+    - hold on / hang on (2/1 LGS)
+    - keep in touch (5/0 LGS)
+    - leave / take a message (1/0 LGS)
+    - pick up / answer (the phone) (1/1 LGS)
+    - available (1/0 LGS)
+    - Can you repeat that? / Pardon? (1/0 LGS)
+    - call center (1/1 LGS)
+    - customer (customer service) (1/1 LGS)
+    - communicate (communication) (5/0 LGS)
+    - conversation (1/1 LGS)
+    - face to face (1/0 LGS)
+    - bored / scared / surprised (-ed duygular) (5/1 LGS)
+    - solve (a problem) (1/1 LGS)
+    bilinen_ama_sinavda_sik:
+    - write (4/0 LGS)
+    - letter (2/0 LGS)
+    - send (2/0 LGS)
+    - doorbell (1/0 LGS)
+    - go on vacation (1/0 LGS)
+    - harmful (1/0 LGS)
+    - interaction (1/0 LGS)
+    - medicine (1/0 LGS)
+    - social network (1/0 LGS)
+    - talk (1/1 LGS)
+    not: bilinen_ama_sinavda_sik kelimeler öğretim birimi sayılmaz ama hikâyede ve soru köklerinde bilinçli olarak sık kullanılır.
+themes:
+- name: Telefon eylemleri
+  items:
+  - U4-001
+  - U4-002
+  - U4-003
+  - U4-004
+  - U4-005
+  - U4-006
+  - U4-007
+  - U4-008
+  - U4-009
+  - U4-010
+  - U4-011
+  - U4-012
+  - U4-013
+  note_tr: 'Bir telefon görüşmesinin fiilleri: aramak, açmak, bekletmek, bağlamak, mesaj bırakmak, kapatmak, geri aramak. Çoğu phrasal verb: nesne zamirinin yeri (call me back, put you through) dilbilgisi
+    notunda.'
+- name: Hat ve ulaşılabilirlik
+  items:
+  - U4-014
+  - U4-015
+  - U4-016
+  - U4-017
+  - U4-018
+  note_tr: 'Türkçe karşılığı tuzaklı telefon sözcükleri: engaged (nişanlı değil meşgul), extension (dahili), available (müsait), receiver (ahize/alıcı). Şıklarda en sık çeldirici bu grup.'
+- name: Telefon kalıpları ve anlık kararlar
+  items:
+  - U4-019
+  - U4-020
+  - U4-021
+  - U4-022
+  - U4-023
+  - U4-024
+  - U4-025
+  - U4-026
+  - U4-027
+  - U4-028
+  - U4-029
+  - U4-030
+  - U4-031
+  - U4-032
+  note_tr: Diyalog tamamlama sorularının ana malzemesi. Her biri bir soru–cevap çiftiyle öğretilir (May I speak to…? → Speaking. / I'm afraid…).
+- name: Çağrı merkezi, rezervasyon, randevu
+  items:
+  - U4-033
+  - U4-034
+  - U4-035
+  - U4-036
+  - U4-037
+  - U4-038
+  - U4-039
+  - U4-040
+  - U4-041
+  - U4-042
+  - U4-055
+  note_tr: Programın çağrı merkezi ödevi ve sekreter diyalogları. Okuma metni olarak 'müşteri hizmetleri konuşması' ya da 'randevu notu' biçiminde gelir.
+- name: İletişim yolları ve teknoloji
+  items:
+  - U4-043
+  - U4-044
+  - U4-045
+  - U4-046
+  - U4-047
+  - U4-048
+  note_tr: Ünitenin okuma metni sözcükleri (iletişim yolları, buluşlar). Eski kitabın tarih sahnesinden yalnız sınavda işe yarayan genel sözcükler alındı.
+- name: Görgü, duygu ve karar
+  items:
+  - U4-049
+  - U4-050
+  - U4-051
+  - U4-052
+  - U4-053
+  - U4-054
+  note_tr: 'Telefon görgüsü (polite, disturb), yanlış anlaşılma ve utanma: hikâyenin duygusal çatışmasını taşır; decide anlık karar işlevine bağlanır.'
+grammar:
+- id: G1
+  name_tr: 'Telefonda kimlik: This is … / Speaking. / Is … there?'
+  form: This is + ad (+ calling). · Is + ad + there/in? · Speaking. · Who's calling, please?
+  examples:
+  - Hello, this is Kaan. Is Bora there?
+  - — May I speak to Selin? — Speaking.
+  - Who's calling, please? — It's Elif, her classmate.
+  explain_tr: 'Telefonda kendini tanıtırken ''This is …'' ya da ''It''s …'' kullanılır; karşıdakini görmediğimiz için ''I am …'' doğal değildir. Aranan kişi telefonu açtıysa ''Speaking.'' der: ''Benim,
+    buyurun.'' anlamındadır. Karşıdakinin kim olduğunu ''Who are you?'' diye sormak kabadır; ''Who''s calling, please?'' denir.'
+  common_errors:
+  - wrong: Hello, I am Ece. Is Duru at home?
+    right: Hello, this is Ece. Is Duru there?
+    why_tr: Türkçedeki 'Ben Ece' doğrudan çevrilmiş. Telefonda 'this is' kalıptır.
+  - wrong: Who are you?
+    right: Who's calling, please?
+    why_tr: '''Who are you?'' telefonda kaba ve şaşkın bir soru gibi durur.'
+  - wrong: — May I speak to Selin? — I am speaking.
+    right: — May I speak to Selin? — Speaking.
+    why_tr: '''Speaking'' tek başına kalıptır; ''I am speaking'' ''şu an konuşuyorum'' demek olur.'
+  lgs_note: 'Diyalogda boşluğa ''Speaking.'' ya da ''Who''s calling, please?'' getirilir. ''Speaking'' cevabından sonra arayan doğrudan konusuna geçer: ipucu budur.'
+  items:
+  - U4-031
+  - U4-026
+- id: G2
+  name_tr: 'Kibar rica: Can / Could / May I …? · Can / Could you …?'
+  form: 'May/Could/Can I + V1 …? (izin) · Could/Can you + V1 …, please? (rica) · Cevap: Sure. / Of course. / I''m afraid …'
+  examples:
+  - May I speak to Mrs Yılmaz, please?
+  - Could you hold on a moment, please?
+  - Can you tell her to call me back?
+  - Could I leave a message?
+  explain_tr: '''May I'' en resmî, ''Could I'' kibar, ''Can I'' gündelik izin isteğidir. Karşıdakinden bir şey yapmasını isterken ''Could you / Can you'' kullanılır. Kibar olumsuz cevap ''I''m afraid …''
+    ile başlar (Maalesef …).'
+  common_errors:
+  - wrong: May you hold on?
+    right: Could you hold on, please?
+    why_tr: '''May'' karşıdakinden rica etmek için kullanılmaz; yalnız kendi adımıza izin isterken (May I…?).'
+  - wrong: Can I speak with Mr Demir? — No.
+    right: — Can I speak to Mr Demir? — I'm afraid he isn't available at the moment.
+    why_tr: Tek kelimelik 'No' telefonda kaba kaçar; 'I'm afraid…' ile gerekçe verilir.
+  lgs_note: Şıklardaki 'May I / Could you' ayrımı kim kimden ne istiyor sorusuyla çözülür. Kibar–kaba ayrımı 'polite' sözcüğüyle sorulabilir.
+  items:
+  - U4-026
+  - U4-007
+  - U4-019
+  - U4-023
+  - U4-052
+- id: G3
+  name_tr: 'Konuşma anında karar: will (I''ll …) — be going to ile karşılaştırma'
+  form: I'll / We'll + V1 (konuşma anında verilen karar) · …, then. (o hâlde) · be going to + V1 (önceden verilmiş plan, tanıma)
+  examples:
+  - '[The phone rings.] — I''ll take that!'
+  - — Duru isn't here. — OK, I'll call back later.
+  - — I can't come today, I'm ill. — I'm sorry to hear that. We'll meet next week, then.
+  - — Is the line engaged again? — Yes. I'll send her a message.
+  explain_tr: 'Karar konuşma sırasında, bir duruma tepki olarak veriliyorsa will kullanılır: telefon çalar → ''I''ll take that''; kişi yoktur → ''I''ll call back''. Cümle sonundaki ''then'' (o zaman, o
+    hâlde) kararın önceki cümleye dayandığını gösterir. Önceden planlanmış iş için be going to kullanılır (I''m going to visit my grandma on Sunday): bu ayrım LGS''de tanıma düzeyinde.'
+  common_errors:
+  - wrong: The phone is ringing. — I take it.
+    right: The phone is ringing. — I'll take it.
+    why_tr: Türkçedeki geniş zaman ('Ben bakarım') Simple Present'e çevrilince hata olur; anlık karar için will gerekir.
+  - wrong: — He's not available. — OK, I'm calling back later.
+    right: — He's not available. — OK, I'll call back later.
+    why_tr: Present Continuous şu anki eylem ya da kesin plan bildirir; konuşma anındaki karar will ile kurulur.
+  - wrong: We meet next Saturday, then.
+    right: We'll meet next Saturday, then.
+    why_tr: Karar bildiren 'then' cümlesinde will düşürülmez.
+  lgs_note: Programın açık işlevi (E8.4.SP1). Diyalog sonunda varılan kararı soran sorularda doğru şık genellikle 'I'll … / We'll …, then' cümlesidir; çeldirici, kararı değil önceki durumu tekrar eden cümledir.
+  items:
+  - U4-022
+  - U4-029
+  - U4-001
+  - U4-049
+  - U4-027
+- id: G4
+  name_tr: Telefon phrasal verb'leri ve nesnenin yeri
+  form: call + nesne + back · put + nesne + through (to …) · pick + it/the phone + up · get back to + nesne · hang up / hold on / hang on (nesnesiz)
+  examples:
+  - Can you ask him to call me back?
+  - Please hold on. I'll put you through to the manager.
+  - She picked up the phone and said 'Speaking.'
+  - I'll get back to you in an hour.
+  - Don't hang up! I haven't finished.
+  explain_tr: 'Nesne zamir (me, you, him, her, it) ise iki parçanın ARASINA girer: call me back, put you through, pick it up. ''get back to'' ve ''contact'' gibi fiillerde kişi sondadır. hang up, hold on,
+    hang on nesne almaz: telefonu kapatmak için ''hang up the phone'' da denir ama ''hang up him'' denmez.'
+  common_errors:
+  - wrong: Please call back me.
+    right: Please call me back.
+    why_tr: Zamir phrasal verb'ün ortasına girer.
+  - wrong: I'll get back you tomorrow.
+    right: I'll get back to you tomorrow.
+    why_tr: '''get back to someone'' kalıbındaki ''to'' düşmez.'
+  - wrong: Can you contact with me?
+    right: Can you contact me? / Can you get in touch with me?
+    why_tr: Fiil olarak contact edat almaz; 'with' yalnız 'get in touch with' ve isim kullanımında (contact with someone).
+  lgs_note: Gap-fill ve eş anlam sorularında 'call back = get back to', 'hold on = hang on' eşleşmeleri; 'hang up' ↔ 'hang on' karışıklığı çeldirici olarak kullanılır.
+  items:
+  - U4-001
+  - U4-012
+  - U4-011
+  - U4-006
+  - U4-007
+  - U4-004
+- id: G5
+  name_tr: 'Mesaj iletme: tell / ask + kişi + to V1 · Could you tell him (that) …?'
+  form: Could you tell/ask + kişi + to + V1? · Could you tell + kişi + (that) + cümle? · Please tell + kişi + not to + V1.
+  examples:
+  - Could you tell him to call me back?
+  - Can you ask her to bring the guitar?
+  - Could you tell Ece that the rehearsal is at five?
+  - Please tell Bora not to be late.
+  explain_tr: 'Başkasına iletilecek istek ''tell/ask + kişi + to + fiil'' kalıbıyla kurulur; olumsuzu ''not to''. Bilgi iletilecekse ''tell + kişi + (that) + cümle'' kullanılır. Telefon notları (memo) bu
+    kalıbı tersinden okutur: ''Kaan called. He asked you to call him back.'''
+  common_errors:
+  - wrong: Could you tell him call me?
+    right: Could you tell him to call me?
+    why_tr: İkinci fiilden önce 'to' gerekir.
+  - wrong: Please tell her don't be late.
+    right: Please tell her not to be late.
+    why_tr: Olumsuz istek 'not to + V1' ile iletilir.
+  lgs_note: 'Mesaj notu sorularında ''Who should call whom?'' türü çıkarım: memo''daki ''asked you to call him back'' arayanın geri aranmak istediğini gösterir.'
+  items:
+  - U4-009
+  - U4-010
+  - U4-001
+- id: G6
+  name_tr: Neden ulaşılamıyor? Present Continuous ve tanıma düzeyinde Present Perfect
+  form: He/She is + V-ing (at the moment / right now) · He has gone out. / She has just left. (tanıma)
+  examples:
+  - I'm afraid she's talking on the other line at the moment.
+  - Sorry, he's having a meeting right now.
+  - I'm afraid he isn't available. He has gone out.
+  - She has just left the office. Can I take a message?
+  explain_tr: 'Aranan kişinin şu an ne yaptığı Present Continuous ile söylenir (at the moment, right now). Programdaki ''He has gone out'' Present Perfect''tir: 8. sınıfta öğretilmez, kalıp olarak tanınır
+    (''çıktı, şu an burada değil'').'
+  common_errors:
+  - wrong: She talks on the other line now.
+    right: She is talking on the other line now.
+    why_tr: Şu an süren eylem için Simple Present değil Present Continuous.
+  - wrong: He has gone out yesterday.
+    right: He went out yesterday. / He has gone out.
+    why_tr: Belirli geçmiş zaman sözcüğü (yesterday) Present Perfect ile kullanılmaz; kalıp olduğu gibi öğrenilir.
+  lgs_note: Diyalog tamamlamada 'I'm afraid he isn't available' cümlesinin devamı bir gerekçedir (He's in a meeting / He has gone out); şıklarda gerekçeyle çelişen cümle elenir.
+  items:
+  - U4-023
+  - U4-014
+  - U4-009
+expressions:
+- en: This is … (calling).
+  tr: Ben … (arıyorum).
+  use: Arayan kendini tanıtır.
+  reply:
+  - Hi …! How are you?
+  - Who would you like to speak to?
+  item: U4-031
+  register: nötr
+- en: Speaking.
+  tr: Benim, buyurun.
+  use: Aranan kişi telefonu kendisi açtığında.
+  reply:
+  - Oh, hi! It's Ece. I'm calling about the concert.
+  item: U4-031
+  register: nötr
+- en: Who's calling, please?
+  tr: Kim arıyor acaba?
+  use: Telefonu açan, arayanı soruyor; sekreterler sık kullanır.
+  reply:
+  - It's Kaan, her classmate.
+  - This is Mr Demir from City Concert Hall.
+  item: U4-031
+  register: nötr
+- en: May I speak to …, please? / Could I speak to …?
+  tr: … ile görüşebilir miyim?
+  use: Birini istemek; 'May' en resmî.
+  reply:
+  - Speaking.
+  - Hold on, please. I'll get him.
+  - I'm afraid she isn't available at the moment.
+  item: U4-026
+  register: resmi
+- en: Is … there? / Is … in?
+  tr: … orada mı? / … evde mi?
+  use: Arkadaş ya da aile evini ararken gündelik soru.
+  reply:
+  - Yes, hang on a minute.
+  - No, he has gone out.
+  item: U4-026
+  register: gündelik
+- en: Hold on, please. / Hang on a minute.
+  tr: Bekleyin lütfen. / Bir dakika.
+  use: Karşıdakini hatta bekletmek; hang on daha gündelik.
+  reply:
+  - Sure.
+  - OK, I'll hold.
+  item: U4-007
+  register: nötr
+- en: I'll put you through.
+  tr: Sizi bağlıyorum.
+  use: Sekreter ya da santral arayanı istenen kişiye bağlar.
+  reply:
+  - Thank you.
+  item: U4-012
+  register: resmi
+- en: The line is engaged / busy.
+  tr: Hat meşgul.
+  use: Aranan hat başka bir görüşmede.
+  reply:
+  - OK, I'll hold.
+  - I'll call back later, then.
+  item: U4-016
+  register: nötr
+- en: I'm afraid he isn't available at the moment.
+  tr: Maalesef şu anda müsait değil.
+  use: Kibarca olumsuz haber vermek.
+  reply:
+  - Can I leave a message?
+  - OK, I'll call back later.
+  item: U4-023
+  register: nötr
+- en: Would you like to leave a message?
+  tr: Mesaj bırakmak ister misiniz?
+  use: Aranan kişi yokken telefonu açan sorar.
+  reply:
+  - Yes, please. Could you tell her to call me back?
+  - No, thanks. I'll call back later.
+  item: U4-009
+  register: nötr
+- en: Can I take a message?
+  tr: Mesajınızı alayım mı? / Not alayım mı?
+  use: Aynı durum; telefonu açan not alır.
+  reply:
+  - Yes, please. Tell him the rehearsal is at five.
+  item: U4-009
+  register: nötr
+- en: Could you tell him to call me back?
+  tr: Beni geri aramasını söyler misiniz?
+  use: Mesaj bırakırken.
+  reply:
+  - Sure. What's your number?
+  - Of course. I'll give him the message.
+  item: U4-001
+  register: nötr
+- en: I'll get back to you.
+  tr: Size dönüş yaparım.
+  use: Bilgi verdikten sonra geri dönmeyi söz vermek.
+  reply:
+  - Great, thanks.
+  - OK, I'll wait for your call.
+  item: U4-001
+  register: nötr
+- en: It's a bad line. I can't hear you very well.
+  tr: Hat kötü, seni pek iyi duyamıyorum.
+  use: Ses kesik geliyorsa.
+  reply:
+  - Let me call you back.
+  - Can you hear me now?
+  item: U4-015
+  register: gündelik
+- en: Can you repeat that, please? / I beg your pardon?
+  tr: Tekrar eder misiniz? / Efendim?
+  use: Duyamadığında ya da anlamadığında; 'I beg your pardon' daha resmî.
+  reply:
+  - Sure. I said …
+  item: U4-019
+  register: nötr
+- en: How can I help you? / May I help you?
+  tr: Size nasıl yardımcı olabilirim?
+  use: Çağrı merkezi, otel, mağaza telefonu açarken.
+  reply:
+  - I'm calling about my order.
+  - I'd like to book a room.
+  item: U4-020
+  register: resmi
+- en: I'm calling about …
+  tr: … hakkında arıyorum.
+  use: Arama nedenini söylemek.
+  reply:
+  - Of course. Can I have your name, please?
+  item: U4-024
+  register: nötr
+- en: Sorry, wrong number.
+  tr: Pardon, yanlış numara.
+  use: Yanlış kişiyi aradığında ya da biri seni yanlışlıkla aradığında.
+  reply:
+  - No problem.
+  item: U4-032
+  register: gündelik
+- en: I'll take that. / I'll get it.
+  tr: (Telefona) ben bakarım.
+  use: Telefon çalınca anında verilen karar.
+  reply:
+  - Thanks!
+  item: U4-022
+  register: gündelik
+- en: Hang on a minute; I'll get him.
+  tr: Bir dakika, onu çağırayım.
+  use: Telefonu açan, istenen kişiyi çağırmaya gider.
+  reply:
+  - Thanks.
+  item: U4-022
+  register: gündelik
+- en: We'll meet at the café tomorrow, then.
+  tr: O zaman yarın kafede buluşuruz.
+  use: Konuşmanın sonunda ortak karar.
+  reply:
+  - Great. See you!
+  item: U4-029
+  register: gündelik
+- en: What's wrong? / What's the matter?
+  tr: Ne oldu? Neyin var?
+  use: Karşıdakinin sesinden bir sorun sezince.
+  reply:
+  - I've got a cold.
+  - My phone is broken.
+  item: U4-030
+  register: gündelik
+- en: I'm sorry to hear that.
+  tr: Buna üzüldüm.
+  use: Kötü bir haber duyunca.
+  reply:
+  - Thanks.
+  item: U4-025
+  register: nötr
+- en: Get well soon!
+  tr: Geçmiş olsun!
+  use: Hasta birine.
+  reply:
+  - Thank you.
+  item: U4-025
+  register: gündelik
+- en: Thanks for calling. / Talk to you soon. / Take care.
+  tr: Aradığın için sağ ol. / Görüşürüz. / Kendine iyi bak.
+  use: Konuşmayı kapatırken.
+  reply:
+  - You too. Bye!
+  item: U4-028
+  register: gündelik
+- en: Let's keep in touch.
+  tr: Görüşmeyi bırakmayalım.
+  use: Uzaklaşan bir arkadaşla vedalaşırken.
+  reply:
+  - Sure! I'll text you every week.
+  item: U4-008
+  register: gündelik
+- en: Sorry to disturb you, but …
+  tr: Rahatsız ettiğim için kusura bakmayın ama …
+  use: Geç saatte ya da meşgul birini ararken kibar giriş.
+  reply:
+  - No problem. How can I help?
+  item: U4-053
+  register: resmi
+- en: I guess so.
+  tr: Sanırım öyle.
+  use: Tam emin olmadan onaylamak.
+  item: U4-021
+  register: gündelik
+collocations:
+- item: U4-005
+  pairs:
+  - dial a number
+  - dial the wrong number
+  - dial 112
+- item: U4-011
+  pairs:
+  - pick up the phone
+  - answer the phone
+  - answer a call
+- item: U4-006
+  pairs:
+  - hang up the phone
+  - hang up on someone
+- item: U4-009
+  pairs:
+  - leave a message
+  - take a message
+  - give someone the message
+  - get a message
+- item: U4-010
+  pairs:
+  - take a memo
+  - write a memo
+  - leave a memo on the desk
+- item: U4-016
+  pairs:
+  - the line is engaged
+  - the line is busy
+  - an engaged tone
+- item: U4-017
+  pairs:
+  - extension number
+  - extension 214
+  - dial the extension
+- item: U4-003
+  pairs:
+  - connect someone to …
+  - an internet connection
+  - a bad connection
+  - lose the connection
+- item: U4-004
+  pairs:
+  - contact someone
+  - get in touch with someone
+  - contact number
+- item: U4-008
+  pairs:
+  - keep in touch with friends
+  - stay in touch
+  - lose touch
+- item: U4-035
+  pairs:
+  - book a room
+  - book a table
+  - book a ticket
+  - make a reservation
+- item: U4-033
+  pairs:
+  - make an appointment
+  - have an appointment
+  - a doctor's appointment
+  - cancel an appointment
+- item: U4-040
+  pairs:
+  - make a complaint
+  - report a problem
+  - complain about the delivery
+- item: U4-041
+  pairs:
+  - return a product
+  - change a product
+  - get a refund
+- item: U4-034
+  pairs:
+  - phone bill
+  - electricity bill
+  - pay the bill
+- item: U4-036
+  pairs:
+  - call the call center
+  - call center staff
+  - customer service line
+- item: U4-044
+  pairs:
+  - communicate with someone
+  - online communication
+  - communication skills
+- item: U4-045
+  pairs:
+  - have a conversation
+  - a phone conversation
+  - start a conversation
+word_families:
+- root: communicate
+  forms:
+  - form: communicate
+    pos: verb
+    tr: iletişim kurmak
+    item: U4-044
+  - form: communication
+    pos: noun
+    tr: iletişim
+    item: U4-044
+  - form: communicative
+    pos: adj
+    tr: iletişimi güçlü, konuşkan
+- root: invent
+  forms:
+  - form: invent
+    pos: verb
+    tr: icat etmek
+    item: U4-047
+  - form: invention
+    pos: noun
+    tr: icat, buluş
+    item: U4-047
+  - form: inventor
+    pos: noun
+    tr: mucit
+- root: call
+  forms:
+  - form: call
+    pos: verb/noun
+    tr: aramak; arama
+    item: U4-002
+  - form: caller
+    pos: noun
+    tr: arayan kişi
+    item: U4-002
+  - form: call back
+    pos: phrasal verb
+    tr: geri aramak
+    item: U4-001
+- root: deliver
+  forms:
+  - form: deliver
+    pos: verb
+    tr: teslim etmek
+    item: U4-039
+  - form: delivery
+    pos: noun
+    tr: teslimat
+    item: U4-039
+- root: connect
+  forms:
+  - form: connect
+    pos: verb
+    tr: bağlamak, bağlanmak
+    item: U4-003
+  - form: connection
+    pos: noun
+    tr: bağlantı
+    item: U4-003
+- root: receive / send
+  forms:
+  - form: receive
+    pos: verb
+    tr: almak (mesaj, arama)
+    item: U4-018
+  - form: receiver
+    pos: noun
+    tr: alıcı; ahize
+    item: U4-018
+  - form: send
+    pos: verb
+    tr: göndermek
+  - form: sender
+    pos: noun
+    tr: gönderen
+    item: U4-018
+- root: decide
+  forms:
+  - form: decide
+    pos: verb
+    tr: karar vermek
+    item: U4-049
+  - form: decision
+    pos: noun
+    tr: karar
+    item: U4-049
+- root: complain
+  forms:
+  - form: complain
+    pos: verb
+    tr: şikâyet etmek
+    item: U4-040
+  - form: complaint
+    pos: noun
+    tr: şikâyet
+    item: U4-040
+- root: reserve
+  forms:
+  - form: reserve
+    pos: verb
+    tr: ayırtmak
+    item: U4-035
+  - form: reservation
+    pos: noun
+    tr: rezervasyon
+    item: U4-035
+- root: confirm
+  forms:
+  - form: confirm
+    pos: verb
+    tr: onaylamak, teyit etmek
+    item: U4-037
+  - form: confirmation
+    pos: noun
+    tr: onay
+- root: understand
+  forms:
+  - form: understand
+    pos: verb
+    tr: anlamak
+  - form: misunderstand
+    pos: verb
+    tr: yanlış anlamak
+  - form: misunderstanding
+    pos: noun
+    tr: yanlış anlaşılma
+    item: U4-051
+- root: polite
+  forms:
+  - form: polite
+    pos: adj
+    tr: kibar
+    item: U4-052
+  - form: impolite
+    pos: adj
+    tr: kaba
+  - form: politely
+    pos: adv
+    tr: kibarca
+- root: available
+  forms:
+  - form: available
+    pos: adj
+    tr: müsait; mevcut
+    item: U4-014
+  - form: unavailable
+    pos: adj
+    tr: müsait değil, ulaşılamaz
+- root: embarrass
+  forms:
+  - form: embarrassed
+    pos: adj
+    tr: utanmış, mahcup (kişi)
+    item: U4-050
+  - form: embarrassing
+    pos: adj
+    tr: utandırıcı (durum)
+- root: disturb
+  forms:
+  - form: disturb
+    pos: verb
+    tr: rahatsız etmek
+    item: U4-053
+  - form: Do not disturb
+    pos: phrase
+    tr: Rahatsız etmeyin (kapı kartı)
+synonym_sets:
+- words:
+  - hold on
+  - hang on
+  - just a minute / just a moment
+  - hold the line
+  difference_tr: Hepsi 'bekleyin' der. hang on ve just a minute gündelik; hold the line ve Could you hold on, please? sekreter/çağrı merkezi dili.
+  items:
+  - U4-007
+- words:
+  - call back
+  - get back to
+  - ring back
+  difference_tr: call back = geri aramak; get back to someone = dönüş yapmak (aramak ya da e-posta olabilir); ring back İngiliz İngilizcesi.
+  items:
+  - U4-001
+  - U4-013
+- words:
+  - contact
+  - get in touch with
+  - reach
+  difference_tr: contact (edatsız fiil) daha resmî; get in touch with gündelik; reach = ulaşabilmek (I couldn't reach him).
+  items:
+  - U4-004
+- words:
+  - engaged
+  - busy
+  difference_tr: Telefon hattı için ikisi de 'meşgul'. busy kişi için de kullanılır (Ü1); engaged kişi için 'nişanlı' demektir.
+  items:
+  - U4-016
+- words:
+  - pick up
+  - answer
+  difference_tr: pick up the phone = ahizeyi kaldırmak, açmak; answer the phone = telefona cevap vermek. Sınavda eş anlamlı.
+  items:
+  - U4-011
+- words:
+  - I'm afraid
+  - Unfortunately
+  - Sorry, but
+  difference_tr: Olumsuz haberi yumuşatan girişler; I'm afraid burada korku bildirmez.
+  items:
+  - U4-023
+- words:
+  - Can you repeat that?
+  - Pardon? / I beg your pardon?
+  - Sorry? / Excuse me?
+  - What did you say?
+  difference_tr: Duyamadığında tekrar isteme. I beg your pardon en resmî; What? kaba kaçabilir.
+  items:
+  - U4-019
+- words:
+  - book
+  - reserve
+  - make a reservation
+  difference_tr: Hepsi 'ayırtmak'. book en gündelik; reserve ve make a reservation otel/restoran dilinde.
+  items:
+  - U4-035
+- words:
+  - What's wrong?
+  - What's the matter?
+  - Is everything OK?
+  difference_tr: Karşıdakinin bir sorunu olduğunu sezince sorulur; cevap çoğunlukla bir sorundur, ardından I'm sorry to hear that gelir.
+  items:
+  - U4-030
+  - U4-025
+- words:
+  - return
+  - change
+  - replace
+  difference_tr: return a product = iade etmek (para geri); change / replace = yenisiyle değiştirmek.
+  items:
+  - U4-041
+opposites:
+- a: pick up (the phone)
+  b: hang up
+  note_tr: Görüşmenin başı ve sonu.
+- a: hold on
+  b: hang up
+  note_tr: Bekle ↔ kapat. Şıklarda yer değiştirir.
+- a: available
+  b: unavailable / busy / engaged
+- a: caller
+  b: receiver
+  note_tr: Arayan ↔ aranan (alıcı).
+- a: sender
+  b: receiver
+- a: leave a message
+  b: take a message
+  note_tr: Arayan bırakır, telefonu açan alır.
+- a: polite
+  b: rude / impolite
+- a: confirm
+  b: cancel
+  note_tr: Randevu ve rezervasyon dilinde.
+- a: face to face
+  b: on the phone / online
+- a: a good line
+  b: a bad line
+traps:
+- about: engaged
+  item: U4-016
+  kind: cok_anlamli
+  trap_tr: Öğrenci 'engaged'i yalnız 'nişanlı' bilir; telefonda 'The line is engaged' = hat meşgul.
+  tip_tr: Telefon bağlamında engaged = busy. Kişi için kullanılırsa nişanlı.
+- about: extension
+  item: U4-017
+  kind: kaynak_hatasi
+  trap_tr: Okul listesi (I) 'extension = ek süre' veriyor. Bu ünitede extension 'dahili numara'dır (extension 214).
+  tip_tr: 'Telefonda bir sayıyla birlikte geçerse dahili hat: ''Can you put me through to extension 214?'''
+- about: ring
+  item: U4-013
+  kind: cok_anlamli
+  trap_tr: '''ring'' isim olarak yüzük; fiil olarak (telefon) çalmak ve telefonla aramak (I''ll ring you).'
+  tip_tr: 'Fiil kalıbına bak: The phone is ringing / Give me a ring = beni ara.'
+- about: I'm afraid
+  item: U4-023
+  kind: turkce_etkisi
+  trap_tr: Kaynak B 'korkarım ki' diye çeviriyor; Türkçede tuhaf. Kalıp korku değil kibar 'maalesef' bildirir.
+  tip_tr: I'm afraid + olumsuz haber = maalesef. 'I'm afraid of dogs' ise gerçek korku.
+- about: hang up / hang on / hang out
+  item: U4-006
+  kind: benzer_yazilis
+  trap_tr: 'Üçü de hang ile başlar: hang up = kapatmak, hang on = beklemek, hang out = takılmak (Ü2).'
+  tip_tr: up = bitti (kapat), on = devam (bekle), out = dışarı (arkadaşlarla takıl).
+- about: pick up
+  item: U4-011
+  kind: cok_anlamli
+  trap_tr: pick up Ü2'de 'birini arabayla almak' (My dad picks me up) ve 'yerden almak' anlamında geçti; burada telefonu açmak.
+  tip_tr: Nesne 'the phone' ya da çalan telefon ise açmak.
+- about: get back
+  item: U4-001
+  kind: cok_anlamli
+  trap_tr: get back = (eve) geri dönmek; get back to someone = birine dönüş yapmak, geri aramak. B listesi yalnız 'geri dönmek' veriyor.
+  tip_tr: Ardından 'to + kişi' geliyorsa telefonla/mesajla dönüş.
+- about: return
+  item: U4-041
+  kind: cok_anlamli
+  trap_tr: return = geri dönmek; return a product = iade etmek; return ticket = gidiş-dönüş bileti (tek yön değil).
+  tip_tr: Nesnesi ürünse iade; bilet ise gidiş-dönüş.
+- about: book
+  item: U4-035
+  kind: cok_anlamli
+  trap_tr: Fiil olarak 'book a room/table/ticket' = ayırtmak, rezervasyon yapmak.
+  tip_tr: book'tan sonra a room / a table / a ticket geliyorsa fiil.
+- about: bill
+  item: U4-034
+  kind: cok_anlamli
+  trap_tr: Bill bir isim de olabilir; çağrı merkezi bağlamında fatura (phone bill), restoranda hesap.
+  tip_tr: Önünde 'the / my / phone' varsa fatura.
+- about: available
+  item: U4-014
+  kind: cok_anlamli
+  trap_tr: Kaynak A 'uygun' veriyor; kişi için 'müsait, telefona gelebilir', eşya/hizmet için 'mevcut, satışta'.
+  tip_tr: 'Özne kişi ise müsait: ''He isn''t available at the moment.'''
+- about: receiver
+  item: U4-018
+  kind: cok_anlamli
+  trap_tr: receiver hem mesajın alıcısı hem telefonun ahizesi (pick up the receiver).
+  tip_tr: Fiil 'pick up / put down' ise ahize.
+- about: application
+  item: U4-043
+  kind: cok_anlamli
+  trap_tr: application = telefon uygulaması (app) ama 'başvuru' anlamı da var (job application).
+  tip_tr: Telefon, indir (download) kelimeleriyle geçiyorsa uygulama.
+- about: Speaking.
+  item: U4-031
+  kind: turkce_etkisi
+  trap_tr: '''Speaking'' telefonda ''Benim'' demektir; öğrenci ''konuşuyorum'' sanıp şıkkı eler.'
+  tip_tr: May I speak to X? — Speaking. = Telefondaki X'in kendisi.
+- about: This is … / I am …
+  item: U4-031
+  kind: turkce_etkisi
+  trap_tr: '''Ben Ece'' telefonda ''I am Ece'' diye çevrilir; doğal kalıp ''This is Ece''.'
+  tip_tr: Telefonda kendini tanıtırken This is / It's.
+- about: call me back / call back me
+  item: U4-001
+  kind: dilbilgisi
+  trap_tr: Zamir phrasal verb'ün sonuna konarak 'call back me' denir (yanlış).
+  tip_tr: 'Zamir ortaya: call me back, put you through, pick it up.'
+- about: tell him call me
+  item: U4-009
+  kind: dilbilgisi
+  trap_tr: 'Mesaj iletirken ''to'' unutulur: ''Could you tell him call me?'''
+  tip_tr: tell/ask + kişi + TO + fiil.
+- about: matter
+  item: U4-030
+  kind: cok_anlamli
+  trap_tr: matter isim olarak 'madde, konu'; What's the matter? = Ne oldu, sorun ne? It doesn't matter (Ü1) = önemli değil.
+  tip_tr: Soru kalıbı olarak sorun soruyor.
+- about: memo / memory
+  item: U4-010
+  kind: benzer_yazilis
+  trap_tr: memo (kısa not) ile memory (hafıza) karışır.
+  tip_tr: take a memo = not almak; memo kısa, kâğıda yazılan nottur.
+- about: percent, local authority, anymore (okul listesi)
+  kind: kaynak_hatasi
+  trap_tr: 'Kaynak I: percent = ''yüzme'' (doğrusu yüzde), local authority = ''muhtar'' (yerel yönetim), anymore = ''bundan sonra'' (not … anymore = artık … değil).'
+  tip_tr: Bu sözcükler öğretilmiyor ama hikâyede geçerse doğru anlamla kullanılır.
+- about: printing machine, single ticket (ingilizcele)
+  kind: kaynak_hatasi
+  trap_tr: 'Kaynak A: printing machine = ''yazıcı'' (doğrusu baskı makinesi, matbaa; yazıcı = printer); single ticket = ''tek kişilik bilet'' (doğrusu tek yön bilet).'
+  tip_tr: 'single ticket ↔ return ticket: tek yön ↔ gidiş-dönüş (Ü7''de öğretilecek).'
+- about: headquarter, waste time (ingilizceciyiz)
+  kind: kaynak_hatasi
+  trap_tr: 'Kaynak B: ''headquarter'' yazımı yanlış (headquarters, sonu -s); waste time = ''zaman harcamak'' değil ''zamanı boşa harcamak''.'
+  tip_tr: spend time (Ü1) = vakit geçirmek; waste time = boşa harcamak.
+- about: bored ↔ boring
+  item: U4-054
+  kind: dilbilgisi
+  trap_tr: '"I am boring" = "Ben sıkıcı biriyim" olur.'
+  tip_tr: '-ed: kişinin hissi (I am bored/scared/surprised); -ing: şeyin etkisi (a boring call). bored LGS 2018 dahil 4 kez çıktı.'
+lgs_focus:
+  what_is_tested:
+  - 'Diyalog tamamlama: telefon konuşmasında boşluğa uygun cümle (Speaking. / Hold on, please. / Would you like to leave a message? / I''ll call back later.).'
+  - 'Telefon notu, mesaj ya da e-posta çıkarımı: kim aradı, kimi aradı, neden aradı, ne istedi, geri aranacak mı.'
+  - 'Diyalog sıralama: karışık verilen telefon cümlelerini doğru sıraya koyma (selamlama → kişi isteme → bekletme/ulaşılamama → mesaj → kapanış).'
+  - 'Durum–tepki: ''Telefon çalıyor ve kardeşin duş alıyor; ne dersin?'' gibi durumda anlık karar cümlesi (I''ll take that).'
+  - 'Anlam: telefon anlamı Türkçeden farklı sözcükler (engaged, extension, available, hold on, put through, hang up).'
+  - 'Çağrı merkezi/randevu metinleri: müşterinin sorunu ve istenen çözüm (return, deliver, complaint, appointment, confirm).'
+  question_patterns:
+  - type: dialogue_complete
+    description_tr: Sekreter–arayan diyaloğunda boşluğa uygun cümle.
+    sample_stem: 'Secretary: Good morning, Blue Sky Travel. How can I help you? — Mr Aksoy: Hello, could I speak to Ms Kaya, please? — Secretary: ______ — Mr Aksoy: Yes, please. Could you tell her to call
+      me back after lunch?'
+    sample_options:
+    - I'm afraid she isn't available at the moment. Would you like to leave a message?
+    - Speaking. What can I do for you?
+    - Hold on, please. I'll put you through.
+    - Sorry, you've got the wrong number.
+    distractor_logic_tr: Boşluktan SONRAKİ 'Yes, please. Could you tell her…' bir mesaj teklifine cevaptır; yalnız ilk şık mesaj teklifi içerir. 'Speaking' sekreterin Ms Kaya olduğunu söyler (çelişki);
+      'I'll put you through' sonrasında mesaj gerekmez; 'wrong number' konuşmayı bitirir.
+    items:
+    - U4-023
+    - U4-009
+    - U4-031
+    - U4-012
+    - U4-032
+    - U4-042
+  - type: message_infer
+    description_tr: Telefon notu (memo) okuma; kim, kimi, ne istedi.
+    sample_stem: 'MEMO — To: Duru · From: Ece · Time: 4.15 p.m. · Message: Ece called. The concert hall is booked for Friday. She can''t hear you on your mobile because of the bad line. She asked you to
+      call her back on her home phone before 8 p.m. — Which of the following is TRUE according to the memo?'
+    sample_options:
+    - Duru should call Ece before eight o'clock.
+    - Ece will call Duru again at 4.15.
+    - Duru booked the concert hall for Friday.
+    - Ece's home phone was engaged all afternoon.
+    distractor_logic_tr: Çeldiriciler kişileri ters çevirir (kim kimi arayacak; salonu kim ayırttı), notun saatini (4.15) geri arama saati gibi gösterir ya da metinde olmayan bir bilgi ekler (engaged).
+      'asked you to call her back' = Duru arayacak.
+    items:
+    - U4-010
+    - U4-001
+    - U4-035
+    - U4-015
+    - U4-016
+  - type: process_order
+    description_tr: Karışık telefon cümlelerini sıraya koyma.
+    sample_stem: Put the sentences in the correct order to make a phone conversation. (I) Hang on a minute. I'll get him. (II) Hello, this is Selin. Is Kaan there? (III) Thanks. (IV) Hi Selin. Yes, he is.
+      — Which is the correct order?
+    sample_options:
+    - II – IV – I – III
+    - IV – II – III – I
+    - II – I – IV – III
+    - I – II – IV – III
+    distractor_logic_tr: 'Telefon akışı: kendini tanıtma ve kişi isteme → cevap → bekletme → teşekkür. Çeldiriciler ''Hang on''u istekten önceye ya da ''Yes, he is'' cevabından önceye alır.'
+    items:
+    - U4-031
+    - U4-026
+    - U4-007
+    - U4-022
+  - type: situation
+    description_tr: Durum verilir; anlık karar cümlesi seçilir.
+    sample_stem: You are at home with your little brother. The phone rings, but your mum is in the garden. What do you say?
+    sample_options:
+    - I'll take that!
+    - I'm going to call Mum next week.
+    - Sorry, the line is engaged.
+    - Can you put me through, please?
+    distractor_logic_tr: Konuşma anında verilen karar will ile kurulur. 'going to … next week' önceden plan; 'engaged' ve 'put me through' arayanın cümleleridir, telefonu açacak kişinin değil.
+    items:
+    - U4-022
+    - U4-016
+    - U4-012
+  - type: synonym
+    description_tr: Diyalogdaki altı çizili ifadenin anlamı.
+    sample_stem: — Can I speak to Mr Demir, please? — Hang on, please. I'll see if he is in his office. — The underlined expression means ______.
+    sample_options:
+    - wait a moment
+    - end the call
+    - call again later
+    - speak more loudly
+    distractor_logic_tr: '''hang up'' (kapat = end the call) benzer yazılış tuzağı; ''call again later'' call back''in anlamı; ''speak more loudly'' bad line bağlamından gelir.'
+    items:
+    - U4-007
+    - U4-006
+    - U4-001
+    - U4-015
+  - type: text_infer
+    description_tr: Çağrı merkezi konuşmasından müşterinin sorununu ve isteğini çıkarma.
+    sample_stem: 'Operator: Thank you for calling Tekno Customer Service. How can I help you? — Ali: Hi, I''m calling about the headphones I ordered last week. They were delivered yesterday, but the left
+      side doesn''t work. I''d like to return them. — Operator: I''m sorry to hear that. Could you tell me your order number? — What is Ali''s purpose for calling?'
+    sample_options:
+    - He wants to give back a product that is broken.
+    - He wants to learn the price of new headphones.
+    - His order has not been delivered yet.
+    - He wants to make an appointment with a technician.
+    distractor_logic_tr: '''They were delivered yesterday'' teslimat sorununu eler; ''return them'' = give back. Çeldiriciler metindeki sözcükleri (order, delivered) yanlış duruma bağlar.'
+    items:
+    - U4-036
+    - U4-038
+    - U4-024
+    - U4-039
+    - U4-041
+    - U4-025
+    - U4-020
+  - type: dialogue_complete
+    description_tr: Konuşmanın sonunda verilen karar (then).
+    sample_stem: 'Bora: Hi Kaan! Are you coming to the rehearsal at five? — Kaan: Sorry, I can''t. I''m ill and I have to stay in bed. — Bora: Oh, I''m sorry to hear that. ______ — Kaan: Great. See you
+      on Saturday!'
+    sample_options:
+    - We'll meet on Saturday morning, then.
+    - I had a great time at the rehearsal.
+    - Could you put me through to Kaan?
+    - I'm afraid the line is engaged.
+    distractor_logic_tr: Kaan'ın cevabı 'See you on Saturday' kararın Cumartesi olduğunu gösterir; yalnız ilk şık bir karar bildirir. Diğerleri zaman (geçmiş), rol (arayan) ya da durum (hat meşgul) bakımından
+      çelişir.
+    items:
+    - U4-029
+    - U4-025
+    - U4-027
+    - U4-049
+  priority_items:
+  - U4-031
+  - U4-026
+  - U4-007
+  - U4-012
+  - U4-023
+  - U4-014
+  - U4-009
+  - U4-010
+  - U4-001
+  - U4-016
+  - U4-017
+  - U4-022
+  - U4-029
+  - U4-015
+  - U4-019
+  - U4-006
+  - U4-011
+  - U4-004
+  - U4-008
+  - U4-052
+  tactics:
+  - 'Telefon diyaloğunda boşluktan SONRAKİ cümleyi oku: ''Yes, please…'' bir teklife, ''Speaking'' bir isteğe, ''Thanks, I''ll hold'' bir bekletmeye cevaptır.'
+  - 'Rolleri belirle: sekreter/telefonu açan ''Hold on, I''ll put you through, Can I take a message?'' der; arayan ''May I speak to…?, Can I leave a message?, I''ll call back'' der. Rolü bozan şıkkı ele.'
+  - Memo sorularında To / From / Message satırlarını ayrı ayrı işaretle; 'asked you to call her back' gibi cümlelerde kimin kimi arayacağını ok çizerek bul.
+  - 'Sıralama sorularında iskelet: selamlama + kendini tanıtma → kişi isteme → bekletme ya da ulaşılamama → mesaj → kapanış / then ile karar.'
+  - '''then'' ile biten will cümlesi konuşmanın varılan kararıdır; çoğunlukla son satırlardadır.'
+  - 'Telefon sözcüğünün Türkçedeki ilk anlamına güvenme: engaged, extension, available, ring, receiver, book, bill telefonda başka anlam taşır.'
+  exam_vocabulary:
+  - en: Which of the following is TRUE according to the memo/conversation?
+    tr: Nota/konuşmaya göre aşağıdakilerden hangisi doğrudur?
+  - en: Which of the following best completes the conversation?
+    tr: Konuşmayı en iyi tamamlayan hangisidir?
+  - en: What is the purpose of the call?
+    tr: Aramanın amacı nedir?
+  - en: Who is the caller?
+    tr: Arayan kişi kimdir?
+  - en: Put the sentences in the correct order.
+    tr: Cümleleri doğru sıraya koyunuz.
+  - en: What does the underlined expression mean?
+    tr: Altı çizili ifade ne anlama gelir?
+  - en: What will Ece probably do next?
+    tr: Ece muhtemelen bundan sonra ne yapacak?
+  - en: decision / decide
+    tr: 'karar / karar vermek (soru kökünde: What did they decide?)'
+cross_unit:
+- item: U4-016
+  links_to: U1-004 busy
+  note_tr: busy Ü1'de kişi için öğretildi; burada hat için (The line is busy) engaged'in eş anlamlısı.
+- item: U4-009
+  links_to: U1-026 Would you like to …?
+  note_tr: Ü1 davet kalıbı burada 'Would you like to leave a message?' olarak teklif işlevinde.
+- item: U4-029
+  links_to: U1-013 invite · U1-001 accept · U1-019 refuse
+  note_tr: Telefonda davet–kabul–red akışı Ü1'in tekrarı; Ü4 bunun sonuna 'We'll meet …, then' kararını ekler.
+- item: U4-001
+  links_to: U1-094 as soon as possible
+  note_tr: '''Can you ask her to call me back as soon as possible?'' doğal birleşim.'
+- item: U4-044
+  links_to: U1-046 text · U1-029 chat · U2-055 chat online
+  note_tr: İletişim yolları Ü1–Ü2 sözcükleriyle örülür; text a message ve video chat yeniden öğretilmez.
+- item: U4-011
+  links_to: U2-048 pick up
+  note_tr: pick up Ü2'de 'arabayla almak'; Ü4'te 'telefonu açmak'. Çok anlamlılık kartı ikisini yan yana koyar.
+- item: U4-006
+  links_to: U2-004 hang out
+  note_tr: hang out / hang up / hang on üçlüsü tek bir hap bilgiyle ayrılır.
+- item: U4-025
+  links_to: U1-020 reply · U1-007 excuse
+  note_tr: Üzüntü bildirme Ü1 özür ve bahane diyaloglarına yakın; 'I'm sorry to hear that' ile 'I'm sorry, I can't' ayrımı.
+- item: U4-043
+  links_to: Ü5 The Internet
+  note_tr: application, social networks, online communication, security risks Ü5'te ayrıntılı işlenecek; burada yalnız telefon uygulaması.
+- item: U4-035
+  links_to: Ü7 Tourism
+  note_tr: book a room/table burada telefon rezervasyonu; bilet türleri (single/return ticket), departure/arrival Ü7'ye bırakıldı.
+- item: U4-039
+  links_to: U3 (sipariş bağlamı)
+  note_tr: Ü3'te order TANIMA kalmıştı; Ü4'te 'order something to eat' ve teslimat şikâyeti telefonda geçer.
+story_hooks:
+- situation_tr: 'Gün 1 önerisi: Ece, grubun menajeri olduğunu ilan eder ve Duru''nun evini arar. Telefonu Duru''nun annesi açar; ''Is Duru there?'' sorusu, ''Hang on a minute; I''ll get her'' ve kanepeden
+    kalkmak istemeyen Duru. Bu arada telefon çalınca Bora''nın ''I''ll take that!'' refleksi.'
+  items:
+  - U4-031
+  - U4-026
+  - U4-011
+  - U4-013
+  - U4-022
+  - U4-007
+  comedy_tr: Telefonu ilk açan Fıstık olur (ahize düşer, havlama); Ece 'Speaking?' diye sorar, cevap yine havlamadır.
+- situation_tr: 'Gün 2 önerisi: Ece, Kaan''a ulaşamaz: hat sürekli meşgul, ev telefonunu açan annesi ''I''m afraid he isn''t available. He has gone out.'' der. Ece mesaj bırakır, annesi not alır ama notu
+    buzdolabı mıknatısının altında unutur; Kaan iki gün sonra ''I''ll get back to you!'' diye döner.'
+  items:
+  - U4-014
+  - U4-023
+  - U4-009
+  - U4-010
+  - U4-001
+  - U4-016
+  comedy_tr: 'Kaan''ın meşgul olma nedeni: basketbol koçuna ''yedek oyuncu'' itirazını telefonda kırk dakika anlatmaktadır.'
+- situation_tr: 'Gün 3 önerisi: Konser salonu için belediyenin kültür merkezini aramak. Sekreter ''How can I help you?'' diye açar; Ece ''I''m calling about…'' der, sekreter dahili numara verip bağlar;
+    yanlış dahiliye bağlanan Ece kendini otoparka bağlanmış bulur.'
+  items:
+  - U4-012
+  - U4-017
+  - U4-042
+  - U4-020
+  - U4-024
+  - U4-002
+  comedy_tr: Otopark görevlisi Ece'yi o kadar kibar dinler ki konserin ilk bileti ona söz verilir.
+- situation_tr: 'Gün 4 önerisi: Bora, karate hocası Gül Hanım''ı arayacakken yanlış numarayı tuşlar; yaşlı bir teyze ''I beg your pardon?'' der, hat kötüdür, Bora bağırarak tekrar eder, sonunda utanıp telefonu
+    kapatır.'
+  items:
+  - U4-015
+  - U4-019
+  - U4-006
+  - U4-005
+  - U4-032
+  - U4-050
+  comedy_tr: 'Teyze ertesi gün geri arar: torunu konsere gelmek istiyormuş. Bora''nın yanlış numarası ilk seyirciyi bulur.'
+- situation_tr: 'Gün 5 önerisi: Prova günü telefon trafiği: Duru ''I guess I can come at five'' der, Kaan gelemeyeceğini söyler, grup konuşmanın sonunda ''We''ll meet on Saturday, then.'' kararına varır.
+    Elif''in Ankara''ya taşınan kuzeniyle ''Let''s keep in touch.'' vedası da aynı akşam.'
+  items:
+  - U4-029
+  - U4-027
+  - U4-049
+  - U4-021
+  - U4-028
+  - U4-008
+  comedy_tr: Grup buluşma kararını dört kez değiştirir; Selin hepsini takvimine yazar ve en sonunda ilk karara geri dönüldüğünü gösterir.
+- situation_tr: 'Gün 6 önerisi: Salon rezervasyonunu onaylatmak ve ses teknisyeniyle randevu almak. Selin kibar telefon dilini öğretir (''Sorry to disturb you, but…''); Kaan aceleyle ''Hey, is the hall
+    booked or not?'' diye arayınca rezervasyon az kalsın iptal olur. İnternet bağlantısı kopunca e-posta onayı gelmez.'
+  items:
+  - U4-035
+  - U4-033
+  - U4-037
+  - U4-053
+  - U4-052
+  - U4-003
+  comedy_tr: Selin telefonu Kaan'ın elinden alıp her cümleye 'please' ekler; teknisyen 'Bu kadar kibar müşteri görmedim' diyerek indirim yapar.
+- situation_tr: 'Gün 7 önerisi: İnternetten alınan hoparlör yanlış renkte ve bozuk gelir. Duru çağrı merkezini arar: müşteri hizmetleri, şikâyet, iade ya da değişim; konuşmanın sonunda ailesinin telefon
+    faturası hakkında da bilgi ister.'
+  items:
+  - U4-036
+  - U4-038
+  - U4-039
+  - U4-040
+  - U4-041
+  - U4-034
+  comedy_tr: Bekleme müziği Luna Ray şarkısıdır (kurmaca); Elif hattı bırakmak istemez, Duru'ya 'Don't hang up, it's the chorus!' der.
+- situation_tr: 'Gün 8 önerisi: Murat Bey''in ödevi: ''Babaannelerimiz nasıl iletişim kurardı?'' Grup aile büyükleriyle yüz yüze konuşur; telefonun icadı, eski cihazlar ve bugünkü uygulamalar karşılaştırılır.'
+  items:
+  - U4-044
+  - U4-045
+  - U4-046
+  - U4-047
+  - U4-048
+  - U4-043
+  comedy_tr: Kaan'ın dedesi çevirmeli telefonu nasıl kullanacağını gösterir; Kaan 'Ekran nerede?' diye sorar.
+- situation_tr: 'Gün 9 önerisi: Konserden bir gün önce yanlış anlaşılma: Ece''nin aceleyle yazdığı mesaj Elif''e ''konser iptal'' gibi gelir. Elif''in sesi telefonda üzgündür (''What''s wrong?''), Ece durumu
+    düzeltir, ''I''m sorry to hear that'' ve ''Get well soon'' (Elif''in boğazı ağrıyordur) ile gün kapanır; mesajın göndereni ve alıcısı tartışması komik bir sonla biter.'
+  items:
+  - U4-051
+  - U4-030
+  - U4-025
+  - U4-004
+  - U4-018
+  comedy_tr: 'Yanlış anlaşılmanın kaynağı Ece''nin telefonundaki otomatik düzeltme: ''concert is ON'' yerine ''concert is GONE'' yazmıştır.'
+- situation_tr: '''Speaking'' karışıklığı: Bora telefonda ''May I speak to Bora?'' diye sorulunca ''I''m speaking!'' der; karşıdaki ''Who is speaking?'' diye sorar ve konuşma döngüye girer.'
+  items:
+  - U4-031
+  - U4-026
+  - U4-019
+  comedy_tr: 'Döngüyü Bora''nın annesi bitirir: telefonu alır, ''This is Bora''s mum. He means: speaking.'''
+- situation_tr: 'Ege''nin kibarsızlığı: Ege, konser salonunu kendi adına arar, ''Who are you?'' diye başlar, sekreter onu bekletir ve bir türlü bağlamaz.'
+  items:
+  - U4-052
+  - U4-007
+  - U4-012
+  - U4-031
+  comedy_tr: Ece aynı numarayı arar, 'This is Ece calling. Could you put me through, please?' der ve hemen bağlanır.
+- situation_tr: 'Konser akşamı: telefonlar sessize alınır; Kaan''ın telefonu en sessiz şarkıda çalar ve ekranda ''Wrong number?'' yazan bilinmeyen numara görünür.'
+  items:
+  - U4-013
+  - U4-032
+  - U4-006
+  - U4-050
+  comedy_tr: 'Arayan, Gün 4''teki teyzedir: ''I''m at the door, where is the concert?'''
+mini_lessons:
+- type: hafiza_kancasi
+  text_tr: hang + up = yukarı astım, bitti (kapat) · hang + on = bekle, devam · hang + out = dışarı, takıl (Ü2).
+  refs:
+  - U4-006
+  - U4-007
+- type: tuzak
+  text_tr: engaged telefonda 'meşgul'; parmağında yüzükle 'engaged' olan biri ise nişanlı. Telefonda The line is engaged = The line is busy.
+  refs:
+  - U4-016
+- type: tuzak
+  text_tr: extension yalnız 'uzatma' değil; iş yerlerinde 'dahili numara'. 'Extension 214, please.' = 214'e bağlar mısınız?
+  refs:
+  - U4-017
+- type: mini_dilbilgisi
+  text_tr: 'Telefonda ''Ben Ali'' = ''This is Ali.'' Aranan kişinin kendisiysen: ''Speaking.'' (Benim.)'
+  refs:
+  - U4-031
+- type: mini_dilbilgisi
+  text_tr: 'Zamir ortaya girer: call ME back, put YOU through, pick IT up. ''call back me'' yanlış.'
+  refs:
+  - U4-001
+  - U4-012
+  - U4-011
+- type: mini_dilbilgisi
+  text_tr: 'Telefon çaldı, karar şimdi: I''ll take that! Önceden plan: I''m going to call Grandma on Sunday.'
+  refs:
+  - U4-022
+  - U4-029
+- type: lgs_taktigi
+  text_tr: 'Telefon diyaloğunda rol bul: ''Can I take a message?'' telefonu açanın, ''Can I leave a message?'' arayanın cümlesi.'
+  refs:
+  - U4-009
+- type: lgs_taktigi
+  text_tr: 'Memo sorusunda üç soru sor: Kim aradı? Kimi aradı? Ne istedi? Şıkların çoğu bu üçünden birini ters çevirir.'
+  refs:
+  - U4-010
+  - U4-001
+- type: tuzak
+  text_tr: 'I''m afraid her zaman korku değildir: ''I''m afraid he isn''t available.'' = Maalesef müsait değil.'
+  refs:
+  - U4-023
+- type: kelime_ailesi
+  text_tr: call → caller (arayan) · send → sender (gönderen) · receive → receiver (alıcı; ahize). -er eki 'yapan kişi/alet' yapar.
+  refs:
+  - U4-002
+  - U4-018
+- type: kelime_ailesi
+  text_tr: 'understand → misunderstand → misunderstanding. mis- = yanlış: misspell (yanlış yazmak), misunderstand (yanlış anlamak).'
+  refs:
+  - U4-051
+- type: kelime_ailesi
+  text_tr: polite ↔ impolite; available ↔ unavailable. im-/un- olumsuz yapar.
+  refs:
+  - U4-052
+  - U4-014
+- type: tuzak
+  text_tr: return a product = iade; return ticket = gidiş-dönüş. 'Return' gördüğünde nesnesine bak.
+  refs:
+  - U4-041
+- type: hafiza_kancasi
+  text_tr: 'book bir kitapsa okunur, bir oda ise ayırtılır: book a room, book a table, book a ticket.'
+  refs:
+  - U4-035
+- type: ilginc_bilgi
+  text_tr: Türkiye'de tek acil çağrı numarası 112'dir; polis, ambulans ve itfaiye aynı numaradan ulaşılır (dial 112).
+  refs:
+  - U4-005
+- type: ilginc_bilgi
+  text_tr: Telefonun patenti 1876'da Alexander Graham Bell adına alındı; ilk telefon konuşması da aynı yıl yapıldı.
+  refs:
+  - U4-047
+- type: lgs_taktigi
+  text_tr: '''then'' ile biten cümle bir karardır: ''We''ll meet at six, then.'' Sıralama sorusunda son satırlara yakışır.'
+  refs:
+  - U4-029
+- type: mini_dilbilgisi
+  text_tr: 'Mesaj ilet: tell/ask + kişi + TO + fiil. ''Could you tell him to call me?'' Olumsuz: ''tell her not to be late''.'
+  refs:
+  - U4-009
+  - U4-001
+- type: hafiza_kancasi
+  text_tr: 'call center (Amerikan yazımı) = call centre (İngiliz yazımı). İkisi de aynı: çağrı merkezi.'
+  refs:
+  - U4-036
+open_questions:
+- '''Sorry, wrong number.'' hiçbir kaynakta yok (yalnız Claude önerisi); öncelik 2 olarak eklendi. Kullanıcı tutmak istiyor mu?'
+- Bilet ayrıntıları (single/return ticket, departure/arrival time, ticket price) Ü7 Tourism'e, social networks/security risks/application ayrıntısı Ü5 The Internet'e bırakıldı. Bu ertelemeler onaylanıyor
+  mu?
+- urgent/emergency ve arrange tek kaynak olduğu için TANIMA'ya indi; 'It's urgent' telefon dilinde doğal. Tekrar öğretim birimi yapılsın mı?
+- MEB programının kelime listesinde 'hold line' yazıyor; doğal kullanım 'hold the line'. Ünitede bu biçimde verildi.
+- Kırklareli İl MEM soru dağılım tablosunda E8.4.R1 için '1 2 1 2 2 1', E8.4.W1 için '1 1 1 1' rakamları etiketsiz; hangi sınav/dönem sütunları olduğu doğrulanamadı. Bu ünitenin geçmiş LGS'lerde kaç soruyla
+  geldiği de doğrulanmadı.
+- Güncel MEB Yayınları ders kitabının (W2) baskı yılı egitimsistem.com sayfasından doğrulanamadı; içerik okuma metinleri (burglary, misunderstanding, low battery) güncel kitaba göre yeniden kontrol edilmeli.
+- Gün gruplaması önerisi konser omurgasına dayanıyor (world.yaml OT4–OT6); Story Bible u04 yazılınca pilot_day alanları items dosyasına işlenecek.
+phrase_bank:
+- en: Are you free on Sunday?
+  tr: Pazar günü müsait misin?
+  function: davet / teklif
+  source: ders kitabı kalıp listesi
+- en: Would you like to join us?
+  tr: Bize katılmak ister misin?
+  function: davet / teklif
+  items:
+  - U1-015
+  - U1-026
+  - U1-080
+  - U2-007
+  source: ders kitabı kalıp listesi
+- en: Would you like to leave a message?
+  tr: Mesaj bırakmak ister misiniz?
+  function: davet / teklif
+  items:
+  - U1-026
+  - U1-080
+  - U2-007
+  - U4-009
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: Can I speak to …, please?
+  tr: … ile görüşebilir miyim lütfen?
+  function: telefon
+  items:
+  - U4-007
+  - U4-026
+  - U4-031
+  source: ders kitabı kalıp listesi
+- en: Is … there?
+  tr: … orada mı?
+  function: telefon
+  source: ders kitabı kalıp listesi
+- en: This is … speaking.
+  tr: Ben … (telefonda kendini tanıtma)
+  function: telefon
+  items:
+  - U4-031
+  source: ders kitabı kalıp listesi
+- en: Hold on a moment, I'll get him/her.
+  tr: Bir dakika, onu çağırıyorum.
+  function: telefon
+  items:
+  - U4-007
+  - U4-022
+  source: ders kitabı kalıp listesi
+- en: Hang on a minute.
+  tr: Bir dakika bekle.
+  function: telefon
+  items:
+  - U4-007
+  source: ders kitabı kalıp listesi
+- en: I'm calling to …
+  tr: … için arıyorum.
+  function: telefon
+  source: ders kitabı kalıp listesi
+- en: I'd like to talk to …
+  tr: … ile konuşmak istiyorum.
+  function: telefon
+  items:
+  - U1-080
+  - U2-007
+  source: ders kitabı kalıp listesi
+- en: It's a bad line.
+  tr: Hat çok kötü.
+  function: telefon
+  items:
+  - U4-015
+  source: ders kitabı kalıp listesi
+- en: I can't hear you well.
+  tr: Seni iyi duyamıyorum.
+  function: telefon
+  source: ders kitabı kalıp listesi
+- en: Can you repeat that, please?
+  tr: Tekrar eder misin lütfen?
+  function: telefon
+  items:
+  - U4-007
+  - U4-019
+  - U4-026
+  - U4-031
+  source: ders kitabı kalıp listesi
+- en: Could you speak louder, please?
+  tr: Daha yüksek sesle konuşabilir misiniz?
+  function: telefon
+  items:
+  - U4-007
+  - U4-019
+  - U4-026
+  - U4-031
+  source: ders kitabı kalıp listesi
+- en: Hang on a second, I'll put you through.
+  tr: Bir saniye, sizi bağlıyorum.
+  function: telefon
+  items:
+  - U3-045
+  - U3-061
+  - U4-007
+  - U4-012
+  source: ders kitabı kalıp listesi
+- en: I'm afraid she isn't available at the moment.
+  tr: Maalesef şu an müsait değil.
+  function: telefon
+  items:
+  - U4-014
+  - U4-023
+  source: ders kitabı kalıp listesi
+- en: Could you tell him that I called?
+  tr: Aradığımı ona söyler misiniz?
+  function: telefon
+  items:
+  - U4-001
+  source: ders kitabı kalıp listesi
+- en: Could you ask her to call me back?
+  tr: Beni geri aramasını söyler misiniz?
+  function: telefon
+  items:
+  - U4-001
+  - U4-002
+  - U4-007
+  - U4-022
+  source: ders kitabı kalıp listesi
+- en: Can I take a message?
+  tr: Mesajınızı alayım mı?
+  function: telefon
+  items:
+  - U4-009
+  source: ders kitabı kalıp listesi (ifadelerde de var)
+- en: Shall I take a message?
+  tr: Not alayım mı?
+  function: telefon
+  items:
+  - U4-009
+  source: ders kitabı kalıp listesi

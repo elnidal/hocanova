@@ -1,0 +1,304 @@
+schema_version: 1
+program: lgs
+unit: 6
+day: 3
+status: draft
+title: "Ece'nin anketi"
+est_minutes: 10
+characters: [Ece, Kaan, Bora, Selin, Duru, Elif]
+new_items: [U6-004, U6-031, U6-032, U6-035, U6-036, U6-037]
+
+story:
+  - id: s01
+    text: "Çarşamba akşamı saat dokuzda gruptaki altı telefon aynı anda titredi. Ece bir anket açmıştı ve altına bir kural eklemişti: tek kelimelik cevap yetmez."
+  - id: s02
+    text: "Ece: \"<en>Camp poll! Question 1, just for fun: {U6-036|would you rather} {U6-004|go rafting} or {U6-004|go caving}? Write your answer AND a reason!</en>\""
+  - id: s03
+    text: "Kaan iki saniyede cevap verdi: \"<en>{U6-004|Rafting}! I {U6-035|prefer} water {U6-035|to} dark holes!</en>\""
+  - id: s04
+    text: "Ece: \"<en>{U6-037|Why}? Reasons, please!</en>\" Kaan: \"<en>{U6-037|Because} it's fast and wet!</en>\""
+  - id: s05
+    text: "Bora: \"<en>Caves have bugs. Bugs are {U2-030|annoying}. {U6-036|I'd rather} {U6-004|go rafting} with Kaan than meet a bat in the dark.</en>\""
+  - id: s06
+    text: "Selin: \"<en>{U6-036|I'd rather} {U6-004|go caving}.</en>\" Ece: \"<en>Why?</en>\" Selin: \"<en>{U6-037|Because} caves don't move. Rivers do. And there's always a guide with you.</en>\""
+  - id: s07
+    text: "Duru'nun mesajı on dakika sonra geldi: \"<en>Are there sofas in caves?</en>\" Ece: \"<en>No.</en>\" Duru: \"<en>Then {U6-004|rafting}. You sit in a boat.</en>\""
+  - id: s08
+    text: "Ece: \"<en>Question 2: the zip-line or the canoe? {U6-035|Which one do you prefer}?</en>\""
+  - id: s09
+    text: "Kaan: \"<en>Zip-line! It's {U6-033|faster than} a canoe, and you fly!</en>\""
+  - id: s10
+    text: "Selin: \"<en>Canoe. I {U6-035|prefer} my feet near the water {U6-035|to} my feet in the sky.</en>\""
+  - id: s11
+    text: "Elif oy vermek yerine bir ses kaydı gönderdi. Kayıtta şarkı söylüyordu: \"<en>{U6-036|I'd rather} sing by the campfire, la-la-laaa!</en>\" Ece: \"<en>Elif, that's not an option!</en>\" Elif: \"<en>It is now!</en>\""
+  - id: s12
+    text: "Ece derin bir nefes aldı ve ankete üçüncü bir seçenek ekledi: \"<en>Option C: Elif's campfire concert.</en>\" Bir dakikada üç oy geldi."
+  - id: s13
+    text: "Bu sırada Bora gruba geçen yılın sekizinci sınıflarının kamp videosunu attı: \"<en>Look! Last year's camp video. It's really {U6-031|amusing}!</en>\""
+  - id: s14
+    text: "Videonun altında yüzlerce yorum vardı. Ece ilkini yüksek sesle okudu: \"<en>'So {U6-031|amusing}! The teachers sang by the campfire for an hour… very badly 😂'</en>\""
+  - id: s15
+    text: "İkinci yorum o kadar neşeli değildi: \"<en>'The food was {U6-032|disappointing}. The pasta was cold.'</en>\""
+  - id: s16
+    text: "Kaan: \"<en>Cold pasta? That's really {U6-032|disappointing}. {U6-036|I'd rather} eat my shoe.</en>\""
+  - id: s17
+    text: "Elif: \"<en>Look at minute three! Murat Bey is singing with a guitar! So {U6-031|amusing}!</en>\""
+  - id: s18
+    text: "Selin videoyu sonuna kadar izledi: \"<en>And look, it rained on day two. The night walk was cancelled. That's {U6-032|disappointing}.</en>\""
+  - id: s19
+    text: "Ece'nin parmakları ekranın üstünde öylece kaldı: \"<en>Rain?! Rain isn't in my plan!</en>\""
+  - id: s20
+    text: "Selin: \"<en>Don't worry. I {U2-054|follow the news} every morning. I'll check the weather for camp.</en>\""
+  - id: s21
+    text: "Duru: \"<en>I {U2-011|don't mind} rain. {U6-036|I'd rather} sleep in the tent anyway.</en>\""
+  - id: s22
+    text: "Gece yarısına doğru Ece sonuçları paylaştı: \"<en>{U6-004|Rafting} 4, {U6-004|caving} 2. Zip-line 4, canoe 2. Campfire concert: 6!</en>\""
+  - id: s23
+    text: "Kaan: \"<en>{U6-037|Why} is the concert the winner? {U6-037|Because} it's the only option with marshmallows!</en>\""
+  - id: s24
+    text: "Ece gülerek telefonu bıraktı ve plan defterini açtı. Yarın için yeni bir dosya hazırlamıştı bile: dört sayfa. Başlığı: \"<en>Camp list – final – final 2</en>\""
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Would you rather go rafting or go caving? Why?</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>Rafting! Because it's fast. I prefer water to dark holes.</en>"
+  - id: c03
+    speaker: Elif
+    text: "<en>I'd rather sing by the campfire!</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>Last year's camp video is really amusing.</en>"
+  - id: c05
+    speaker: Selin
+    text: "<en>But the rain on day two was disappointing.</en>"
+
+steps:
+  - item: U6-004
+    sezdir:
+      id: u6d03-004-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede Selin'in \"I'd rather go caving.\" cümlesindeki \"go caving\" ne anlama geliyordu?"
+      options: ["mağaraları gezip keşfetmek", "nehirde botla yol almak", "ormanda kamp kurmak", "balonla uçmak"]
+      answer: 0
+    kullan:
+      id: u6d03-004-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Next summer my family is going to ________ on the river. We'll be in a big boat with a guide.</en>"
+      options: ["go rafting", "go to rafting", "go caving", "go on rafting"]
+      answer: 0
+      explain: "go + V-ing kalıbında to yoktur: go rafting. Nehirde botla gidilen etkinlik rafting'dir, caving değil."
+    sina:
+      id: u6d03-004-s
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>Arda is 13. According to the timetable, which activity is NOT possible for him?</en>"
+      stem: "<en>Summer Fun Club – Saturday\n09.00 Go caving (age 12+)\n11.00 Go rafting (age 14+)\n14.00 Join a bike tour (age 10+)</en>"
+      options: ["going rafting at 11.00", "going caving at 09.00", "joining the bike tour at 14.00"]
+      answer: 0
+      explain: "Rafting 14 yaş ve üstü için; 13 yaşındaki Arda katılamaz. Caving (12+) ve bisiklet turu (10+) olur."
+  - item: U6-031
+    sezdir:
+      id: u6d03-031-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyedeki yorumda \"So amusing! The teachers sang by the campfire for an hour… very badly 😂\" cümlesindeki \"amusing\" ne anlama geliyordu?"
+      options: ["eğlenceli, güldüren", "korkutucu", "üzücü", "sıkıcı"]
+      answer: 0
+    kullan:
+      id: u6d03-031-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Bora's chicken dance is really ________. Everybody laughs every time.</en>"
+      options: ["amusing", "disappointing", "dangerous", "boring"]
+      answer: 0
+      explain: "Herkesi güldüren şey amusing'dir."
+    sina:
+      id: u6d03-031-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which of the following is closest in meaning to the underlined word?</en>"
+      stem: "<en>Elif: Last night I watched a film about a talking dog. It was very <u>amusing</u>. I laughed a lot.</en>"
+      options: ["funny", "scary", "sad", "long"]
+      answer: 0
+      explain: "'I laughed a lot' ipucu: amusing = funny."
+  - item: U6-032
+    sezdir:
+      id: u6d03-032-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyedeki yorumda \"The food was disappointing. The pasta was cold.\" cümlesindeki \"disappointing\" ne anlama geliyordu?"
+      options: ["hayal kırıklığı yaratan", "çok lezzetli", "çok pahalı", "çok sıcak"]
+      answer: 0
+    kullan:
+      id: u6d03-032-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The concert was ________. The singer was late and sang only two songs.</en>"
+      options: ["disappointing", "disappointed", "amusing", "thrilling"]
+      answer: 0
+      explain: "Konser (şey) hayal kırıklığı yaratır: disappointing. Disappointed kişinin hissidir: I was disappointed."
+    sina:
+      id: u6d03-032-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>How does Ege probably find the film?</en>"
+      stem: "<en>Ege: I watched the new superhero film yesterday. The story was boring, and the ending was terrible. I want my money back!</en>"
+      options: ["disappointing", "amusing", "thrilling", "fascinating"]
+      answer: 0
+      explain: "Sıkıcı hikâye, berbat son, parasını geri istiyor: film disappointing."
+  - item: U6-035
+    sezdir:
+      id: u6d03-035-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede Kaan'ın \"I prefer water to dark holes!\" cümlesi ne anlama geliyordu?"
+      options: ["Suyu karanlık deliklere tercih ederim!", "Su karanlık deliklerden korkar!", "Suyu karanlık deliklere götürürüm!", "Su karanlık deliklerden daha soğuktur!"]
+      answer: 0
+    kullan:
+      id: u6d03-035-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I prefer tea ________ coffee.</en>"
+      options: ["to", "than", "from", "of"]
+      answer: 0
+      explain: "prefer A to B: than değil, to kullanılır."
+    sina:
+      id: u6d03-035-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Murat Bey: Which one do you prefer, the zip-line or the hammock?\nSelin: ________</en>"
+      options: ["I prefer the hammock to the zip-line.", "I'm sorry to hear that.", "Yes, I do.", "At ten o'clock."]
+      answer: 0
+      explain: "Which one…? sorusuna iki seçenekten biri söylenerek cevap verilir; Yes, I do olmaz."
+  - item: U6-036
+    sezdir:
+      id: u6d03-036-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede Elif'in \"I'd rather sing by the campfire!\" cümlesi ne anlama geliyordu?"
+      options: ["Ben kamp ateşinin başında şarkı söylemeyi yeğlerim!", "Kamp ateşinin başında şarkı söylemek zorundayım!", "Kamp ateşinin başında şarkı söyledim!", "Kamp ateşinin başında şarkı söyleyemem!"]
+      answer: 0
+    kullan:
+      id: u6d03-036-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>It's raining. I'd rather ________ at home and watch a film.</en>"
+      options: ["stay", "to stay", "staying", "stays"]
+      answer: 0
+      explain: "would rather + yalın fiil: I'd rather stay. to stay ya da staying olmaz."
+    sina:
+      id: u6d03-036-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>What is Duru doing in her answer?</en>"
+      stem: "<en>Kaan: Let's go to the cinema tonight.\nDuru: Hmm, I'd rather stay at home and sleep.</en>"
+      options: ["expressing a preference", "apologising for being late", "giving directions", "accepting the invitation"]
+      answer: 0
+      explain: "I'd rather … ile Duru sinema yerine evde kalmayı yeğlediğini söylüyor: tercih bildirme."
+  - item: U6-037
+    sezdir:
+      id: u6d03-037-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede Ece'nin \"Why?\" sorusu ve Kaan'ın \"Because it's fast and wet!\" cevabındaki \"Why\" ve \"Because\" ne anlama geliyordu?"
+      options: ["Neden? – Çünkü …", "Ne zaman? – Sonra …", "Nerede? – Burada …", "Kim? – O …"]
+      answer: 0
+    kullan:
+      id: u6d03-037-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Why do you want to go rafting?\nB: ________ I love water and speed.</en>"
+      options: ["Because", "But", "So", "Or"]
+      answer: 0
+      explain: "Why? sorusuna sebep Because ile verilir."
+    sina:
+      id: u6d03-037-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S13
+      prompt: "<en>Which question is suitable for Selin's answer?</en>"
+      stem: "<en>Kaan: ________\nSelin: Because I don't like high places.</en>"
+      options: ["Why do you prefer the hammock to the zip-line?", "Where is the zip-line?", "When does the night walk start?", "Do you like high places?"]
+      answer: 0
+      explain: "Because ile başlayan cevap bir Why? sorusuna verilir. Do you like…? sorusunun cevabı Yes/No olur."
+
+review:
+  - id: u6d03-r01
+    type: gap_fill
+    item: U6-005
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>In ________, you jump off a bridge, and an elastic cord stops you.</en>"
+    options: ["bungee jumping", "skydiving", "paragliding", "hiking"]
+    answer: 0
+  - id: u6d03-r02
+    type: situation
+    item: U6-006
+    prompt: "<en>Tolga is in a plane at 4,000 metres. He jumps out and opens his parachute. What is he doing?</en>"
+    options: ["skydiving", "bungee jumping", "paragliding", "hiking"]
+    answer: 0
+  - id: u6d03-r03
+    type: gap_fill
+    item: U6-007
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>At the top of the mountain, people run, open a big wing and fly slowly over the sea. This is ________.</en>"
+    options: ["paragliding", "skydiving", "bungee jumping", "karate"]
+    answer: 0
+  - id: u6d03-r04
+    type: dialogue_complete
+    item: U6-012
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Dad: Please don't swim far from the beach. ________\nBora: OK, Dad. I'll stay near the beach.</en>"
+    options: ["Don't take risks.", "Take a lot of risks.", "Sorry, wrong number.", "I'm sorry to hear that."]
+    answer: 0
+  - id: u6d03-r05
+    type: gap_fill
+    item: U6-028
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>Learning the guitar is ________, but Duru loves it. She practises every day.</en>"
+    options: ["challenging", "boring", "disappointing", "ordinary"]
+    answer: 0
+  - id: u6d03-r06
+    type: gap_fill
+    item: U6-033
+    prompt: "<en>Choose the best option.</en>"
+    stem: "<en>The zip-line is ________ than the hammock.</en>"
+    options: ["more exciting", "exciting", "most exciting", "excitinger"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U6-004, U1-003]
+    text: "go + V-ing kalıbında to yoktur: ❌ go to rafting → ✓ go rafting, go caving. Bir tura katılmak join a tour'dur; attend (Ü1) ise bir etkinliğe, derse katılmaktır."
+  - type: tuzak
+    refs: [U6-032]
+    text: "-ing / -ed farkı: disappointing şeyi anlatır (The food was disappointing). disappointed kişinin hissidir (I was disappointed)."
+  - type: tuzak
+    refs: [U6-035]
+    text: "prefer A to B: ❌ prefer water than caves → ✓ prefer water to caves. prefer'dan sonra V-ing ya da to V gelebilir: I prefer swimming / I prefer to swim."
+  - type: tuzak
+    refs: [U6-036]
+    text: "would rather + yalın fiil: ❌ I'd rather to go / going → ✓ I'd rather go. Kıyas yapılırsa than gelir: I'd rather go rafting than meet a bat."
+
+coach:
+  start: "Ece bir anket açtı: nehir mi, mağara mı? Herkes cevap verdi, Elif ise şarkı söyledi 🎤"
+  end_good: "Bravo! Hem seçimini yaptın hem sebebini söyledin. Ece'nin anketinde birinci sensin 🗳️"
+  end_mixed: "Güzel deneme! {weak} biraz soğuk makarna gibiydi. Yarın ısıtıp tekrar deneriz 🍝"
+
+notifications:
+  morning: "Nehir mi, mağara mı? Ece'nin anketi açık, oyunu bekliyor 🗳️"
+  evening: "Geçen yılın kamp videosunda Murat Bey gitar çalıyor 😂"
+  review: "prefer A ___ B: than mı, to mu? 🤔"
+
+editor:
+  z07: {U6-004: BEKLIYOR, U6-031: BEKLIYOR, U6-032: BEKLIYOR, U6-035: BEKLIYOR, U6-036: BEKLIYOR, U6-037: BEKLIYOR}

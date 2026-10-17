@@ -1,0 +1,289 @@
+# Sınav Dili modülü — LGS İngilizce soru kökleri, taktikler ve soru kökü kelimeleri
+# Kelime ünitelerinden BAĞIMSIZ ama onlara bağlı: soru kökleri her ünitede aynıdır.
+# Kullanım: (1) "Sınav Dili" mini dersleri (track) · (2) gün dosyalarındaki sina/review sorularında stem_id ile etiketleme
+# Örnek sorular ÖZGÜNDÜR (geçmiş sınav sorusu kopyası değildir). Doğru cevap her zaman options[0]; uygulama karıştırır.
+schema_version: 1
+status: taslak
+exam_facts:
+  - "LGS sözel bölümünde 10 İngilizce sorusu vardır; 4 şıklı, yanlış doğruyu götürmez (doğru sayısı esas, yanlış cevap netten düşer: 3 yanlış 1 doğruyu götürür)."
+  - "Sorular çoğunlukla kısa bir metin, diyalog, mesaj, tablo ya da görsel üzerine kuruludur; tek başına kelime anlamı sorusu nadirdir. Kelime bilgisi metni anlamak için gerekir."
+  - "Soru kökleri İngilizcedir; kökü yanlış okumak (özellikle NOT / CANNOT) en sık puan kaybıdır."
+open_questions:
+  - "Yanlış-doğru oranı ve soru sayısı her yıl MEB kılavuzundan teyit edilmeli (2027 kılavuzu yayımlanınca)."
+
+stems:
+  - id: S01
+    family: diyalog
+    en: "Which of the following completes the dialogue / conversation?"
+    variants: ["Which of the following best completes the conversation?", "Which of the following can be the missing part?"]
+    tr: "Aşağıdakilerden hangisi diyaloğu tamamlar?"
+    asks_tr: "Boşluğa gelen cümle; hem önceki hem SONRAKİ satırla uyumlu olmalı."
+    strategy_tr: "Boşluktan sonraki satırı mutlaka oku: cevap 'Yes' ise boşluk soru cümlesidir; 'What time?' geliyorsa boşlukta kabul vardır."
+    traps_tr: "Konuyla ilgili ama işlevi yanlış şık (davet yerine teşekkür); soru biçimi uymayan şık (How often? sorusuna 'At 7 o'clock')."
+    question_type: dialogue_complete
+    units: [1, 2, 3, 4, 5]
+    example:
+      context: "Ece: Would you like to come to the cinema on Saturday?\nBora: ________ What time does the film start?\nEce: At 3 p.m."
+      options: ["I'd love to!", "Sorry, I can't. I'm busy.", "Thanks for calling.", "I don't mind cooking."]
+      answer: 0
+      explain_tr: "Bora ardından saati soruyor; demek ki daveti kabul etmiş. Reddeden biri saat sormaz."
+  - id: S02
+    family: metin
+    en: "Which of the following does NOT have an answer in the text?"
+    variants: ["Which question is NOT answered in the text?"]
+    tr: "Aşağıdakilerden hangisinin cevabı metinde yoktur?"
+    asks_tr: "Dört sorudan üçünün cevabı metinde var; cevabı OLMAYAN aranır."
+    strategy_tr: "Her şıkkı metinde tek tek ara ve bulduklarını ele. NOT büyük harfle yazılır: kökü okurken daire içine al."
+    traps_tr: "Metinde konusu geçen ama ayrıntısı verilmeyen soru (Kek yapılır deniyor ama 'Kaç dakika pişer?' yazmıyor)."
+    question_type: text_infer
+    units: [1, 2, 3, 4, 5]
+    example:
+      context: "Selin's text: Hi Elif! Our band practice is at Duru's house on Friday at 5 p.m. Please bring your microphone. Duru's mum is making pizza for us!"
+      options: ["How long will the practice take?", "Where is the practice?", "What should Elif bring?", "Who is making pizza?"]
+      answer: 0
+      explain_tr: "Yer (Duru's house), getirilecek şey (microphone) ve pizzayı yapan (Duru's mum) yazıyor; provanın ne kadar süreceği yazmıyor."
+  - id: S03
+    family: metin
+    en: "Which of the following is NOT mentioned in the text?"
+    variants: ["Which tool is NOT mentioned in the recipe?", "Which of the following is NOT true according to the text?"]
+    tr: "Aşağıdakilerden hangisinden metinde bahsedilmemiştir? / hangisi doğru değildir?"
+    asks_tr: "Metinde geçmeyen malzeme, araç, etkinlik ya da bilgi."
+    strategy_tr: "Tarif sorularında malzeme ve araç listesini çıkar (bowl, pan, oven…) ve şıklarla karşılaştır."
+    traps_tr: "Eşanlamlıyla geçen öğe: metinde 'saucepan' yazar, şıkta 'pan' olur; ikisi farklı değildir, dikkatli eşle."
+    question_type: text_infer
+    units: [3, 4, 5]
+    example:
+      context: "Recipe: First, break two eggs into a bowl and whisk them. Then, heat some oil in a pan. Pour the eggs into the pan and cook for three minutes. Finally, sprinkle some salt and serve."
+      options: ["an oven", "a bowl", "a pan", "salt"]
+      answer: 0
+      explain_tr: "Bowl, pan ve salt tarifte var; omlet ocakta yapılır, fırından (oven) söz edilmez."
+  - id: S04
+    family: metin
+    en: "According to the text, which of the following is TRUE?"
+    variants: ["Which of the following is correct according to the text?", "We can understand from the text that …"]
+    tr: "Metne göre aşağıdakilerden hangisi doğrudur? / Metinden … anlaşılır."
+    asks_tr: "Metindeki bilginin farklı kelimelerle (eşanlamlı, karşıt, olumsuz yapı) ifade edilmiş hâli."
+    strategy_tr: "Doğru şık genellikle metni AYNEN tekrar etmez, başka kelimelerle söyler: busy = not available, can't stand = hate."
+    traps_tr: "Metindeki kelimeleri birebir taşıyan ama anlamı ters çeviren şık (always ↔ never, likes ↔ can't stand)."
+    question_type: text_infer
+    units: [1, 2, 3, 4, 5]
+    example:
+      context: "Kaan: I'm crazy about basketball, so I go to the gym three times a week. I hardly ever watch TV because it's boring for me."
+      options: ["Kaan rarely watches TV.", "Kaan can't stand basketball.", "Kaan goes to the gym once a week.", "Kaan thinks TV is exciting."]
+      answer: 0
+      explain_tr: "hardly ever ≈ rarely. Diğerleri metinle çelişiyor: crazy about ↔ can't stand, three times ↔ once, boring ↔ exciting."
+  - id: S05
+    family: metin
+    en: "What is the best title for the text?"
+    variants: ["What is the text mainly about?", "What is the main idea of the text?"]
+    tr: "Metin için en iyi başlık hangisidir? / Metin esas olarak ne hakkındadır?"
+    asks_tr: "Metnin TAMAMINI kapsayan konu."
+    strategy_tr: "Çok dar (tek ayrıntı) ve çok geniş (konunun dışına taşan) şıkları ele; ilk ve son cümle genellikle konuyu verir."
+    traps_tr: "Metinde geçen bir ayrıntıyı başlık gibi sunan şık."
+    question_type: text_infer
+    units: [1, 2, 3, 4, 5]
+    example:
+      context: "Murat Bey's notice: Do you spend too much time online? Never share your password with others. Don't click on strange links, and don't accept friend requests from strangers. Tell an adult if something online worries you."
+      options: ["Staying Safe on the Internet", "How to Make New Friends Online", "The History of the Internet", "Choosing a Good Password"]
+      answer: 0
+      explain_tr: "Metnin tamamı internet güvenliği kuralları. 'Choosing a Good Password' yalnız bir ayrıntı; diğer ikisi konunun dışında."
+  - id: S06
+    family: tablo_grafik
+    en: "According to the table / chart, which of the following is correct?"
+    variants: ["Which of the following CANNOT be said according to the chart?", "According to the survey results, …"]
+    tr: "Tabloya / grafiğe göre aşağıdakilerden hangisi doğrudur? (… söylenemez?)"
+    asks_tr: "Sayıların ya da işaretlerin cümleye dökülmüş hâli: most, half, more than, the least, both, neither."
+    strategy_tr: "Her şıkkı tabloyla tek tek kontrol et; 'both', 'neither', 'only' ve 'more than' kelimelerinin altını çiz."
+    traps_tr: "Yarısı doğru şık: 'Both Ece and Kaan like rap' derken yalnız biri seviyorsa şık yanlıştır."
+    question_type: table_graph
+    units: [2, 3, 5]
+    example:
+      context: "Survey: How often do you go online?  Ece: every day · Kaan: twice a week · Duru: every day · Bora: once a week"
+      options: ["Half of the students go online every day.", "Kaan goes online more often than Ece.", "None of the students go online every day.", "Bora goes online twice a week."]
+      answer: 0
+      explain_tr: "4 öğrenciden 2'si (Ece, Duru) her gün giriyor; yarısı. Kaan Ece'den daha az giriyor; Bora haftada bir."
+  - id: S07
+    family: süreç
+    en: "What is the first / next / last step? · Put the steps in the correct order."
+    variants: ["According to the recipe, what do we do after …?", "Which of the following is the correct order?"]
+    tr: "İlk / sonraki / son adım nedir? · Adımları doğru sıraya koy."
+    asks_tr: "Tarif ya da işlem sırası; sıralama sözcükleri (first, then, next, after that, finally) ve mantık."
+    strategy_tr: "Sıralama sözcükleri yoksa mantığa bak: soymadan doğranmaz, ısıtmadan pişmez, süzmeden ezilmez; serve/enjoy hep sondadır."
+    traps_tr: "Metindeki yazılış sırası ile 'after/before' ile anlatılan gerçek sıra farklı olabilir: 'Before you fry the onions, chop them.'"
+    question_type: process_order
+    units: [3, 5]
+    example:
+      context: "Before you fry the potatoes, peel and slice them. After that, put them into hot oil. Finally, sprinkle some salt."
+      options: ["peel → slice → fry → add salt", "fry → peel → slice → add salt", "slice → fry → peel → add salt", "peel → fry → slice → add salt"]
+      answer: 0
+      explain_tr: "'Before you fry …, peel and slice them': önce soy ve dilimle, sonra kızart, en son tuz."
+  - id: S08
+    family: kişi_eşleştirme
+    en: "Who …? (Who is available for …? / Who enjoys …? / Who can't …?)"
+    variants: ["Which of the following people …?", "Who is calling?", "Who will join the party?"]
+    tr: "Kim …? (Kim müsait? / Kim … yapmaktan hoşlanır? / Kim arıyor?)"
+    asks_tr: "Birden çok kişinin anlatıldığı metinde doğru kişiyi bulmak."
+    strategy_tr: "Her kişi için bir satırlık not çıkar (+ / −). Telefon diyaloglarında 'Who's calling?' arayanı, 'Can I speak to …?' aranan kişiyi verir."
+    traps_tr: "Ret cümlesindeki olumlu kelime: 'I'd love to, but I'm busy' diyen kişi KATILMIYOR."
+    question_type: text_infer
+    units: [1, 2, 4]
+    example:
+      context: "Ece: Can you come to the picnic on Sunday?\nSelin: Sure, I'd love to!\nKaan: I'd love to, but I have a basketball match.\nDuru: Sorry, I'm visiting my grandparents.\nBora: Why not? I'll bring the drinks."
+      options: ["Selin and Bora", "Kaan and Duru", "Selin and Kaan", "Only Bora"]
+      answer: 0
+      explain_tr: "Selin (Sure, I'd love to) ve Bora (Why not?) kabul ediyor. Kaan 'I'd love to, but …' ile reddediyor."
+  - id: S09
+    family: işlev
+    en: "Which of the following is an example of …? (an invitation / a refusal / an apology / an excuse / a preference)"
+    variants: ["In which of the following does the speaker refuse an invitation?", "Which of the following is a suggestion?"]
+    tr: "Aşağıdakilerden hangisi … örneğidir? (davet / ret / özür / bahane / tercih)"
+    asks_tr: "Cümlenin ne İŞE yaradığını tanımak: kalıbı işlevle eşlemek."
+    strategy_tr: "İşlev sinyallerini ezberle: Would you like…? = davet · I'd love to, but… = ret · I'm sorry… = özür · because… = gerekçe · I prefer… = tercih · Why don't we…? = öneri."
+    traps_tr: "Aynı cümlede iki işlev: 'I'm sorry, I can't come because I'm ill' hem özür hem ret hem bahane içerir; kökün tam olarak neyi istediğine bak."
+    question_type: situation
+    units: [1, 2, 5]
+    example:
+      context: "Which of the following is a refusal?"
+      options: ["Thanks for asking, but I'm afraid I can't.", "Would you like to join our WhatsApp group?", "Sure, that sounds fun.", "Why don't we chat online at 2 o'clock?"]
+      answer: 0
+      explain_tr: "'Thanks for asking, but …' kibar bir ret. Diğerleri davet, kabul ve öneri."
+  - id: S10
+    family: durum
+    en: "What should X say in this situation? / Which of the following can be a response?"
+    variants: ["Which of the following is NOT a suitable response?", "What does X probably say?"]
+    tr: "Bu durumda X ne söylemeli? / Hangisi bir cevap olabilir? (hangisi uygun bir cevap değildir?)"
+    asks_tr: "Verilen duruma uygun kalıp."
+    strategy_tr: "Önce durumu Türkçe kısa özetle (arkadaşı hasta → geçmiş olsun), sonra kalıbı seç."
+    traps_tr: "'NOT a suitable response' kökünde üç uygun cevap verilir; tek uygunsuz olanı ararsın."
+    question_type: situation
+    units: [1, 2, 4, 5]
+    example:
+      context: "Duru calls Elif, but Elif's voice is very low and Duru can't hear her well. What does Duru say?"
+      options: ["Could you speak louder, please?", "Thanks for the invitation.", "I'm afraid I can't.", "Can I take a message?"]
+      answer: 0
+      explain_tr: "Ses duyulmuyor → 'daha yüksek sesle konuşur musun'. Mesaj almak sekreterin, davete teşekkür davet edilenin işi."
+  - id: S11
+    family: metin
+    en: "Why is X calling / writing? · What is the purpose of the message?"
+    variants: ["According to the conversation, why does Kaan call Selin?", "The aim of this e-mail is to …"]
+    tr: "X neden arıyor / yazıyor? · Mesajın amacı nedir?"
+    asks_tr: "Telefon görüşmesi, e-posta ya da mesajın amacı (davet etmek, özür dilemek, bilgi istemek, şikâyet etmek)."
+    strategy_tr: "Amaç genellikle ilk 1-2 cümlede: 'I'm calling to …', 'I'm writing to …'. Selamlaşma kısmını atla."
+    traps_tr: "Görüşmede geçen ama amaç olmayan ayrıntı (hal hatır sorma, yan konu)."
+    question_type: message_infer
+    units: [1, 4, 5]
+    example:
+      context: "Kaan: Hi Selin, it's Kaan. I'm calling to ask about the homework. Which pages do we need to read for Monday?\nSelin: Hang on, let me check. Pages 20 to 25."
+      options: ["to get information about the homework", "to invite Selin to a match", "to apologise for being late", "to make an appointment"]
+      answer: 0
+      explain_tr: "'I'm calling to ask about the homework' amacı doğrudan veriyor."
+  - id: S12
+    family: kelime
+    en: "Which word / phrase can replace the underlined part? · What does the underlined word mean?"
+    variants: ["The underlined word is closest in meaning to …", "Which word best fills the blank?"]
+    tr: "Altı çizili kısmın yerine hangisi gelebilir? / Boşluğa hangisi gelir?"
+    asks_tr: "Bağlamdan anlam çıkarma; eşanlamlı ya da aynı işlevdeki kalıp."
+    strategy_tr: "Şıkları cümleye tek tek yerleştir ve anlamın değişip değişmediğine bak; bilmediğin kelimede bağlamdaki ipucunu (but, because, so) kullan."
+    traps_tr: "Anlamca yakın ama dilbilgisi uymayan şık: 'I'm keen ___ swimming' → on; 'fond ___' → of."
+    question_type: synonym
+    units: [1, 2, 3, 4, 5]
+    example:
+      context: "Bora: You can always count on Selin. She never breaks her promises."
+      options: ["rely on", "argue with", "get on", "hang up"]
+      answer: 0
+      explain_tr: "count on = rely on = güvenmek. 'She never breaks her promises' ipucu."
+  - id: S13
+    family: soru_bulma
+    en: "Which of the following questions is answered? · Which question can be the missing question?"
+    variants: ["Which question does Kaan answer?", "What is the question for this answer?"]
+    tr: "Aşağıdaki sorulardan hangisi cevaplanmıştır? / Eksik soru hangisidir?"
+    asks_tr: "Cevaptan soruyu bulmak: soru kelimesi (How often, How long, Where, Who, Why) ile cevabın türü eşleşmeli."
+    strategy_tr: "Cevaptaki bilginin türüne bak: 'twice a week' → How often; 'for 20 minutes' → How long; 'because …' → Why."
+    traps_tr: "How long (süre) ↔ How often (sıklık) ↔ How much (miktar / fiyat) karışıklığı."
+    question_type: dialogue_complete
+    units: [2, 3, 5]
+    example:
+      context: "Elif: ________\nDuru: About two hours a day, mostly for music videos."
+      options: ["How many hours do you spend online?", "How often do you go to the gym?", "What kind of music do you like?", "Where do you usually use the Internet?"]
+      answer: 0
+      explain_tr: "Cevap bir süre (two hours a day) veriyor; süre soran tek şık 'How many hours …?'"
+  - id: S14
+    family: metin
+    en: "Which of the following can we infer / CANNOT say about X?"
+    variants: ["We can say that X …", "It is clear that …"]
+    tr: "X hakkında hangisi çıkarılabilir / söylenemez?"
+    asks_tr: "Metinde açıkça yazmayan ama metinden çıkan sonuç (ya da çıkmayan)."
+    strategy_tr: "Çıkarım şıkkı metindeki bir cümleye dayanmalı; 'probably' gibi kelimeler sorun değildir ama metinle çelişmemeli."
+    traps_tr: "Kulağa mantıklı gelen ama metinde dayanağı olmayan şık (genel kültür tuzağı)."
+    question_type: text_infer
+    units: [1, 2, 4, 5]
+    example:
+      context: "Ece: Kaan, the concert starts at 7. Please don't be late again!\nKaan: Don't worry, I'll be there on time this time. I promise!"
+      options: ["Kaan is often late.", "Kaan doesn't like concerts.", "Ece is the singer of the band.", "The concert is in the morning."]
+      answer: 0
+      explain_tr: "'Don't be late AGAIN' ve 'this time' → Kaan daha önce de geç kalmış. Diğerlerinin metinde dayanağı yok ya da metinle çelişiyor (konser akşam 7'de)."
+
+tactics:
+  - id: T01
+    tr: "Önce kökü oku, sonra metni. Ne aradığını bilerek okumak süreyi yarıya indirir."
+  - id: T02
+    tr: "NOT, CANNOT, EXCEPT, FALSE büyük harfle yazılır: kökte daire içine al; ters soruda üç şık doğrudur."
+  - id: T03
+    tr: "Doğru şık genellikle metni kelimesi kelimesine tekrar etmez; eşanlamlı ya da başka bir yapıyla söyler (busy = not available, call back = return the call, put through = connect)."
+  - id: T04
+    tr: "Metindeki kelimeleri aynen taşıyan şıkka hemen güvenme; anlamı ters çevirmiş olabilir."
+  - id: T05
+    tr: "Diyalogda boşluktan SONRAKİ satır, boşluğa ne geleceğini çoğunlukla ele verir."
+  - id: T06
+    tr: "'I'd love to, but …', 'Thanks for asking, but …', 'That's very kind of you, but …' her zaman RET sinyalidir; 'but'tan sonrası bahanedir."
+  - id: T07
+    tr: "Tablo sorularında 'both, neither, only, all, none, more than, the most' kelimelerini tek tek kontrol et; yarısı doğru şık yanlıştır."
+  - id: T08
+    tr: "Bilmediğin bir kelime çıkarsa paniğe kapılma: soru çoğunlukla o kelimeyi bilmeden de çözülür; bağlaç ipuçlarına (but, because, so) bak."
+  - id: T09
+    tr: "Emin olmadığın soruda iki şıkka indirdiysen işaretle; tamamen bilmiyorsan boş bırak (yanlışlar neti düşürür)."
+  - id: T10
+    tr: "Telefon diyaloglarında kimin aradığını, kimin arandığını ve kimin aracı olduğunu (sekreter, anne) baştan not et."
+
+exam_vocabulary:
+  - {en: "according to", tr: "-e göre"}
+  - {en: "the following", tr: "aşağıdaki(ler)"}
+  - {en: "mentioned", tr: "bahsedilen, sözü edilen"}
+  - {en: "NOT / CANNOT / EXCEPT", tr: "değil / -emez / hariç"}
+  - {en: "true / correct", tr: "doğru"}
+  - {en: "false / wrong", tr: "yanlış"}
+  - {en: "complete", tr: "tamamlamak"}
+  - {en: "dialogue / conversation", tr: "diyalog, konuşma"}
+  - {en: "text / passage", tr: "metin, parça"}
+  - {en: "title", tr: "başlık"}
+  - {en: "mainly about", tr: "esas olarak … hakkında"}
+  - {en: "purpose / aim", tr: "amaç"}
+  - {en: "underlined", tr: "altı çizili"}
+  - {en: "blank / gap", tr: "boşluk"}
+  - {en: "replace", tr: "yerine geçmek"}
+  - {en: "response / reply", tr: "cevap, karşılık"}
+  - {en: "suitable / appropriate", tr: "uygun"}
+  - {en: "situation", tr: "durum"}
+  - {en: "statement", tr: "ifade, cümle"}
+  - {en: "infer", tr: "çıkarım yapmak"}
+  - {en: "table / chart / graph", tr: "tablo / çizelge / grafik"}
+  - {en: "survey results", tr: "anket sonuçları"}
+  - {en: "step / order", tr: "adım / sıra"}
+  - {en: "both … and / neither … nor", tr: "hem … hem / ne … ne"}
+  - {en: "probably", tr: "muhtemelen"}
+
+track:
+  name: "Sınav Dili"
+  design_tr: >
+    Kelime derslerinden ayrı, kısa (3-4 dk) mini dersler. Her ders bir soru ailesini öğretir: kök kartı (İngilizce + Türkçe),
+    ne sorduğu, taktik, çözümlü örnek, 2 alıştırma. Ders açıldıktan sonra o kök, kelime günlerindeki Sına ve tekrar sorularında
+    (stem_id ile) kullanılmaya başlar; böylece kök hem ayrı öğretilir hem her gün tekrar edilir.
+  lessons:
+    - {sira: 1, title: "Diyaloğu tamamla", stems: [S01], unlock_after: "Ü1 Gün 3"}
+    - {sira: 2, title: "Kim katılıyor? Kim reddediyor?", stems: [S08, S09], unlock_after: "Ü1 Gün 8"}
+    - {sira: 3, title: "Metinde var mı, yok mu?", stems: [S02, S03, S04], unlock_after: "Ü1 Gün 14"}
+    - {sira: 4, title: "Tablo ve anket okuma", stems: [S06, S13], unlock_after: "Ü2 Gün 9"}
+    - {sira: 5, title: "Başlık ve ana fikir", stems: [S05, S14], unlock_after: "Ü2 Gün 15"}
+    - {sira: 6, title: "Tarif sırası", stems: [S07], unlock_after: "Ü3 Gün 4"}
+    - {sira: 7, title: "Telefonda kim, neden arıyor?", stems: [S11, S10], unlock_after: "Ü4 Gün 3"}
+    - {sira: 8, title: "Altı çizili kelime ve eşanlamlılar", stems: [S12], unlock_after: "Ü5 Gün 3"}

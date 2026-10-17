@@ -1,0 +1,138 @@
+# Hikayenglish LGS — Hikâye Motoru · BÖLÜM ŞABLONU
+# 1) Günlük bölümün vuruş şablonu  2) Story Bible gün satırı biçimi  3) Ünite yayı şablonu
+# Kurallar için rules.yaml (Rxx), karakterler için world.yaml, ünite çerçevesi için season.yaml.
+
+schema_version: 1
+updated: 2026-10-15
+
+# ============================================================== 1. GÜNLÜK BÖLÜM (story, 18–28 satır)
+episode:
+  length: {story_lines: "18–28", scene_lines: "3–5", est_minutes: "≤ 10"}
+  beats:
+    - id: B1
+      name: Açılış kancası
+      lines: "1–2"
+      purpose: "Gün/saat + yer + tek cümlelik merak: bir mesaj, bir ilan, bir kapı zili."
+      rules: ["İlk satırda yeni birim şart değil", "Zaman ifadesiyle aç (Pazartesi sabahı… / Cumartesi öğleden sonra…)"]
+      example: "u02d06 s01 — okul panosunda basketbol seçme ilanı; Kaan'ın gözleri parlar."
+    - id: B2
+      name: Durum
+      lines: "2–4"
+      purpose: "Günün sorusu/görevi kurulur (Story Bible gün satırındaki 'olay'). İlk yeni birim(ler) burada doğal ilk geçişini yapar."
+      rules: ["Yeni birimin ilk geçişi anlamı sezdirecek kadar açık bağlamda (sezdir.context genelde bu satırlardan seçilir)"]
+      example: "u02d07 s03 — 'I want an individual sport.' (takım sporunda herkes bağırıyor → bireysel)"
+    - id: B3
+      name: İngilizce sahne (hikâye içi)
+      lines: "4–8"
+      purpose: "Karakterler <en> içinde konuşur/mesajlaşır; birimler karakterin sesiyle bedenlenir (Selin dürüst, Bora bahaneci, Duru 'fark etmez')."
+      rules: ["Her konuşma satırı bir karakterin voice'una uyar (world.yaml)", "Türkçe anlatı kısa köprü cümleleri"]
+    - id: B4
+      name: Komik düğüm
+      lines: "2–4"
+      purpose: "Günün espri patlaması: plan bozulur, telefon yanlış kişiye gider, Fıstık havlar, Kaan geç kalır."
+      rules: ["Düğüm yeni birimlerden en az birini taşır (R48)", "Kimse aşağılanmaz; alay edilen de güler (R42–R44)"]
+      example: "u02d07 s15–s18 — Bora tekmeyi yanlış atar, Mert'in suyu dökülür: 'I'm really annoyed!'"
+    - id: B5
+      name: Yeni birimlerin 3 farklı satırda geçişi
+      lines: "hikâyeye yayılmış"
+      purpose: "Her yeni birim ≥3 ayrı satırda (R10): 1) sezdiren ilk bağlam 2) farklı bir karakterin ağzında 3) çekimli/farklı yapıda ya da kapanışta."
+      rules: ["Üç geçiş aynı kalıbın kopyası olmasın (She's patient / I'm not patient at all / I want to be more patient)", "Tablo/sıklık/sıralama birimleri bir liste, ilan ya da sonuç cümlesinde de geçsin"]
+    - id: B6
+      name: d−3 birimlerinin yeni bağlamda dönüşü
+      lines: "1–3"
+      purpose: "Üç gün önceki birimler bugünkü olayın İÇİNDE geri gelir (R24) — hatırlatma değil, yeni durum."
+      rules: ["d−3'ün tüm birimleri", "Önceki ünitelerden 2–4 belirteç de bu tür doğal anlarda (R29)"]
+      example: "u02d09 s08 — Gün 6'nın gym/work out/train birimleri Kaan'ın geç kalma bahanesinde döner."
+    - id: B7
+      name: Kapanış esprisi / ertesi güne kanca
+      lines: "1–2"
+      purpose: "Kuru bir Duru cümlesi, Kaan'ın 'Me? Late? Never!'i, gece yarısı gelen bir mesaj ya da yarına bir soru."
+      rules: ["Ünite içi günlerde kanca bir sonraki Story Bible satırına bağlanır", "Son satır yeni birim taşıyabilir (3. geçiş için iyi yer)"]
+      example: "u02d07 s28 — 'And on Mondays?' 'Rest!'"
+  scene:
+    lines: "3–5"
+    purpose: "Tamamen İngilizce mesajlaşma/diyalog: hikâyenin özeti ve 'Kullan' adımının bağlamı; yeni birimlerin çoğu düz İngilizce geçer."
+  after_story:   # sırası uygulamadaki akışla aynı
+    - "steps: her yeni birim için sezdir (Türkçe, context) → kullan (İngilizce gap_fill) → sina (LGS tarzı)"
+    - "review: takvime göre (d−1 tüm birimler; d−7 ≥3 LGS; d−14 ≥2 LGS; ünite 1. günü önceki üniteden 5 LGS)"
+    - "tips: 2–4 hap bilgi (tuzak notları önce)"
+    - "coach: start / end_good / end_mixed({weak})"
+    - "notifications: morning / evening / review (≤ 90)"
+    - "editor.z07: yeni birimler BEKLIYOR"
+  day_file_skeleton: |
+    schema_version: 1
+    program: lgs
+    unit: {U}
+    day: {D}
+    status: draft
+    title: "…"                      # anlam sızdırmaz (R12)
+    est_minutes: 10
+    characters: [...]
+    new_items: [U{U}-xxx, ...]       # pilot_day == {D}
+    story: [{id: s01, text: "…"}, ...]
+    scene: [{id: c01, speaker: …, text: "<en>…</en>"}, ...]
+    steps:
+      - item: U{U}-xxx
+        sezdir: {id: u{U}d{DD}-xxx-z, type: meaning, context: sNN, prompt: "Hikâyede \"…\" ne anlama geliyordu?", options: [doğru, …], answer: 0}
+        kullan: {id: u{U}d{DD}-xxx-k, type: gap_fill, prompt: "Boşluğa uygun olanı seç.", stem: "<en>…</en>", options: [doğru, …], answer: 0, explain: "…"}
+        sina:   {id: u{U}d{DD}-xxx-s, type: dialogue_complete, lgs_like: true, prompt: "<en>Which one completes the dialogue?</en>", stem: "<en>…</en>", options: [doğru, …], answer: 0, explain: "…"}
+    review: [{id: u{U}d{DD}-r01, type: gap_fill, item: U{U}-yyy, ...}]
+    tips: [{type: tuzak, refs: [U{U}-xxx], text: "…"}]
+    coach: {start: "…", end_good: "…", end_mixed: "… {weak} …"}
+    notifications: {morning: "…", evening: "…", review: "…"}
+    editor: {z07: {U{U}-xxx: BEKLIYOR}}
+
+# ============================================================== 2. STORY BIBLE GÜN SATIRI
+story_bible_day_row:
+  format: "| Gün | Başlık önerisi | Olay | Yeni birimler |"
+  fields:
+    gun: "1…N (pilot_day değeri)"
+    baslik_onerisi: "2–4 kelime, anlam sızdırmayan (ör. 'Katlanamadıklarımız' değil, 'Bora'nın alarmı' daha güvenli)"
+    olay: "1–3 cümle: kim, nerede, ne olur, hangi komik düğüm; hangi karakterin yayı ilerler"
+    yeni_birimler: "display biçimleri ' · ' ile; sıra items dosyasındaki pilot_day ile aynı"
+  example: "| 7 | Bora spor seçiyor | Bora takım sporu yerine bireysel spor arar: karate dersi, hafta sonu doğa yürüyüşü. Hoca dikkat etmesini söyler. | individual sport · do karate · hiking · rest · pay attention · annoyed |"
+  checks:
+    - "Her günün birimleri o olayda doğal geçebiliyor mu? (zorlama varsa birimi komşu güne kaydır, pilot_day'i güncelle)"
+    - "Birbirine karışan birimler (annoying/annoyed, sweet/dessert) aynı güne ya da art arda günlere"
+    - "Sıklık/tablo/sıralama birimleri anket, menü, tarif, ilan gibi metin içeren olaylara"
+
+# ============================================================== 3. ÜNİTE YAYI
+unit_arc:
+  stages:   # N = ünitedeki gün sayısı
+    - id: A1
+      name: Açılış günü
+      day: "1"
+      content: "Çerçeve olay ilan edilir (ödev, yarışma, gezi, proje); ekipler/roller kurulur; önceki üniteden 5 LGS tarzı review sorusu (R27); önceki ünitenin kancası karşılanır."
+      examples: ["Ü1 G1: Ece'nin davetiyesi", "Ü2 G1: Murat Bey'in Teen Life Survey ödevi"]
+    - id: A2
+      name: Kurulum
+      day: "2 … ~0,3N"
+      content: "Karakterler çerçeveye kendi tarzlarıyla girer; temel birim kümesi (ünitenin omurga işlevi) erken öğretilir."
+      examples: ["Ü2 G2–G5: anket soruları denenir, grup kurulur, ilk prova"]
+    - id: A3
+      name: Orta düğüm
+      day: "~0,5N"
+      content: "Beklenmedik bir engel ya da misafir; yan çatışma; bir karakterin yayında görünür adım."
+      examples: ["Ü1 G9: bilim fuarı (Kaan otobüsü kaçırır)", "Ü2 G7–G8: Bora'nın sporu, Selin'in rutini"]
+    - id: A4
+      name: Kriz
+      day: "~0,6N–0,75N"
+      content: "Ana çatışma doruğa çıkar: kavga, yalan, başarısız deneme, kayıp."
+      examples: ["Ü1 G10–G11: kavga ve sırrın ortaya çıkışı", "Ü2 G12: züppe kuzen ziyareti; G15 ödev yükü 'dayanılmaz'"]
+    - id: A5
+      name: Çözüm
+      day: "kriz + 1–2"
+      content: "Konuşma, özür, yardımlaşma; yay adımı kalıcılaşır."
+      examples: ["Ü1 G12: cips ve kulaklıkla barışma", "Ü2 G15: Kaan'ın planı ve zamanında gelişi"]
+    - id: A6
+      name: Final
+      day: "N"
+      content: "Çerçeve olayın doruğu (parti, sunum, yarışma, konser); ünitenin duygusal kapanışı + son espri; ünite finali soruları (review'da çok sayıda lgs_like, ünite geneli); bir sonraki üniteye kanca."
+      examples: ["Ü1 G17: lunapark + 'en güzel hediye arkadaşlarım'", "Ü2 G16: ters grafik + herkes tavuk dansı yapar"]
+  finale_questions: "Final gününde review ≥ 10 soru, çoğu lgs_like: true; tablo/grafik ya da kısa metin üzerinden ünite geneli (Ü1 G17: 16 review/10 LGS · Ü2 G16: 15/10)."
+  checklist:
+    - "Her ana karakter ünitede en az bir 'kendi günü'ne sahip mi?"
+    - "Sezon yayı (season.yaml) bu ünitede en az bir adım ilerledi mi?"
+    - "En az iki süregiden komedi motoru çalıştı mı?"
+    - "Açık iplik kapandı mı / yeni açık iplik world.yaml'a yazıldı mı?"
+    - "Kanca bir sonraki ünitenin çerçevesine bağlanıyor mu?"

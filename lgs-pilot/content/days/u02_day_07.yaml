@@ -1,0 +1,298 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 7
+status: draft
+title: "Bora spor seçiyor"
+est_minutes: 10
+characters: [Bora, Kaan, Elif, Selin, Ece, Duru]
+new_items: [U2-037, U2-038, U2-039, U2-040, U2-041, U2-042]
+
+story:
+  - id: s01
+    text: "Salı, teneffüs. Kaan hâlâ basketbol hayalleri kuruyor ve herkesi peşinden sürüklemeye çalışıyor."
+  - id: s02
+    text: "Kaan: \"<en>Bora, come to the tryouts with me! Basketball is the best team sport!</en>\" Ece: \"<en>Kaan, don't be so {U1-091|stubborn}. He said no three times.</en>\""
+  - id: s03
+    text: "Bora: \"<en>In a team, everybody shouts at you when you miss the ball. No, thanks. I want an {U2-037|individual sport}.</en>\""
+  - id: s04
+    text: "Elif hemen fırsatı yakaladı: \"<en>Or you can play in our {U2-019|band}, not only take photos! We still need a drummer. Be a real {U2-020|member}!</en>\""
+  - id: s05
+    text: "Bora: \"<en>Me? On drums? OK, why not! But I also need a sport for my body, not only for my ears.</en>\""
+  - id: s06
+    text: "Selin: \"<en>What about tennis or swimming? They're both {U2-037|individual sports}.</en>\" Bora: \"<en>Swimming? Cold water at 7 a.m.? Never!</en>\""
+  - id: s07
+    text: "O akşam Bora uzun uzun araştırdı. Gece yarısına doğru gruba bir mesaj düştü:"
+  - id: s08
+    text: "Bora: \"<en>Big news! From Saturday, I {U2-038|do karate}! 🥋</en>\""
+  - id: s09
+    text: "Kaan: \"<en>You {U2-038|do karate}? Bora, you fell over a coffee table last week!</en>\""
+  - id: s10
+    text: "Cumartesi sabahı ilk ders. Hoca Japon bir usta değil, mahalleden Gül Hanım'dı. Çok ciddi görünüyordu."
+  - id: s11
+    text: "Gül Hanım: \"<en>Welcome! So, why do you want to {U2-038|do karate}?</en>\" Bora: \"<en>To be strong… and to be the coolest person in my class.</en>\""
+  - id: s12
+    text: "Gül Hanım: \"<en>Rule number one: {U2-041|pay attention}. Watch my hands and watch my feet.</en>\""
+  - id: s13
+    text: "Isınma sırasında hoparlörden hafif bir müzik geliyordu. Gül Hanım: \"<en>We always warm up to {U2-024|jazz}. It's good for rhythm.</en>\""
+  - id: s14
+    text: "Bora: \"<en>Can we change the {U2-021|genre}? {U2-022|Rock music} is better for karate!</en>\""
+  - id: s15
+    text: "Bora hoparlöre bakarken tekmeyi yanlış yöne attı. Yanındaki çocuğun su şişesi havaya uçtu ve tüm su tişörtüne döküldü."
+  - id: s16
+    text: "Gül Hanım: \"<en>Bora! {U2-041|Pay attention}, please! Your eyes are on the speaker, not on me.</en>\""
+  - id: s17
+    text: "Islanan çocuk, Mert, tişörtüne baktı. Hiç mutlu görünmüyordu: \"<en>Hey! My T-shirt is all wet now. I'm really {U2-042|annoyed}!</en>\""
+  - id: s18
+    text: "Bora koşup bir havlu getirdi: \"<en>Sorry, sorry! I'll {U2-041|pay attention} from now on!</en>\" Mert gülümsedi: \"<en>Thanks. You're {U1-076|helpful}… and dangerous.</en>\""
+  - id: s19
+    text: "Gül Hanım ise çok {U1-085|patient} biriydi: \"<en>I'm not {U2-042|annoyed}, Bora. Everybody makes mistakes in the first lesson.</en>\""
+  - id: s20
+    text: "Ders bitince Bora eve gitti, kanepeye yığıldı ve gruba yazdı: \"<en>Karate is hard. My legs are dead. I need to {U2-040|rest} for a week!</en>\""
+  - id: s21
+    text: "Duru: \"<en>Welcome to my world. I {U2-040|rest} every day. I'm a professional.</en>\""
+  - id: s22
+    text: "Selin: \"<en>Bora, my family is going {U2-039|hiking} in the forest tomorrow. Do you want to come? It's easy and quiet.</en>\""
+  - id: s23
+    text: "Bora: \"<en>{U2-039|Hiking}? Is there a lot of walking?</en>\" Selin: \"<en>Bora… that's what hiking is!</en>\""
+  - id: s24
+    text: "Pazar sabahı Bora ormandaydı. Selin'in babası telefonundan {U2-023|pop music} açtı ve en önden yürüdü."
+  - id: s25
+    text: "Selin'in babası: \"<en>Every hour, we stop and {U2-040|rest} for five minutes. And watch the path – there are tree roots everywhere!</en>\""
+  - id: s26
+    text: "Bora: \"<en>{U2-039|Hiking} is great! No ball, no team, nobody shouts at me. Just trees and birds!</en>\""
+  - id: s27
+    text: "Gece yarısı Bora gruba ormandan tam seksen fotoğraf attı. Ece: \"<en>Bora, it's midnight! Eighty photos of trees?! I'm so {U2-042|annoyed}! 😤</en>\" Bora: \"<en>Sorry! But look at photo 47 – a squirrel!</en>\""
+  - id: s28
+    text: "Bora: \"<en>Karate on Saturdays, hiking on Sundays. I'm an {U2-037|individual sport} person now!</en>\" Kaan: \"<en>And on Mondays?</en>\" Bora: \"<en>Rest!</en>\""
+
+scene:
+  - id: c01
+    speaker: Kaan
+    text: "<en>Bora, why don't you play basketball with us?</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>I prefer an individual sport. I do karate on Saturdays and I go hiking on Sundays.</en>"
+  - id: c03
+    speaker: Kaan
+    text: "<en>Karate? Do you pay attention to the teacher?</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>Now I do! Last week a boy got annoyed because of me. Today I just want to rest.</en>"
+
+steps:
+  - item: U2-037
+    sezdir:
+      id: u2d07-037-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"individual sport\" ne anlama geliyordu?"
+      options: ["bireysel spor", "takım sporu", "kış sporu", "su sporu"]
+      answer: 0
+    kullan:
+      id: u2d07-037-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Tennis singles, swimming and karate are ________. You don't need other players on your side.</en>"
+      options: ["individual sports", "team sports", "music genres", "board games"]
+      answer: 0
+    sina:
+      id: u2d07-037-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Look at the survey results. Who chose an individual sport?</en>"
+      stem: "<en>Teen Life Survey – Your favourite sport\nKaan: basketball\nBora: karate\nEce: volleyball\nDuru: \"I don't do sports.\"</en>"
+      options: ["Bora", "Kaan", "Ece", "Duru"]
+      answer: 0
+  - item: U2-038
+    sezdir:
+      id: u2d07-038-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"do karate\" ne anlama geliyordu?"
+      options: ["karate yapmak", "karate izlemek", "karateden korkmak", "karate öğretmek"]
+      answer: 0
+    kullan:
+      id: u2d07-038-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>My brother ________ karate every Saturday. He has a black belt.</en>"
+      options: ["does", "plays", "goes", "makes"]
+      answer: 0
+    sina:
+      id: u2d07-038-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Mert: What do you do on Saturday mornings?\nBora: ________\nMert: Cool! What colour is your belt?</en>"
+      options: ["I do karate.", "I play the guitar.", "I go hiking.", "I sleep until noon."]
+      answer: 0
+  - item: U2-039
+    sezdir:
+      id: u2d07-039-z
+      type: meaning
+      context: s22
+      prompt: "Hikâyede \"hiking\" ne anlama geliyordu?"
+      options: ["doğa yürüyüşü", "yüzme", "balık tutma", "bisiklet sürme"]
+      answer: 0
+    kullan:
+      id: u2d07-039-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>We love nature. Every Sunday we put on our backpacks and go ________ in the mountains.</en>"
+      options: ["hiking", "shopping", "dancing", "bowling"]
+      answer: 0
+    sina:
+      id: u2d07-039-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Selin's family going to do?</en>"
+      stem: "<en>Selin: Bring good shoes, a bottle of water and a hat. We'll walk 8 km through the forest and have lunch by the lake.</en>"
+      options: ["go hiking", "do karate", "go shopping", "play a team sport"]
+      answer: 0
+  - item: U2-040
+    sezdir:
+      id: u2d07-040-z
+      type: meaning
+      context: s20
+      prompt: "Hikâyede \"rest\" ne anlama geliyordu?"
+      options: ["dinlenmek", "geri kalan", "koşmak", "çalışmak"]
+      answer: 0
+    kullan:
+      id: u2d07-040-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>You look very tired after the match. Sit down and ________ for a while.</en>"
+      options: ["rest", "train", "work out", "hurry"]
+      answer: 0
+    sina:
+      id: u2d07-040-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>In which sentence does \"rest\" mean \"relax and stop doing things\"?</en>"
+      options: ["After the long walk, we stopped to rest.", "Kaan ate half of the pizza, and Bora ate the rest.", "I'll tell you the rest of the story tomorrow.", "Duru was at home for the rest of the day."]
+      answer: 0
+  - item: U2-041
+    sezdir:
+      id: u2d07-041-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"pay attention\" ne anlama geliyordu?"
+      options: ["dikkat etmek", "para ödemek", "yardım etmek", "izin vermek"]
+      answer: 0
+    kullan:
+      id: u2d07-041-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Please ________ to the teacher. This information will be in the exam.</en>"
+      options: ["pay attention", "take a break", "look fit", "rest"]
+      answer: 0
+    sina:
+      id: u2d07-041-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>What can Gül Hanım say to Bora?</en>"
+      stem: "<en>During the karate lesson, Bora is looking out of the window. He isn't watching the teacher at all.</en>"
+      options: ["Bora, pay attention, please!", "Bora, have a rest, please!", "Well done, Bora!", "Bora, you look fit!"]
+      answer: 0
+  - item: U2-042
+    sezdir:
+      id: u2d07-042-z
+      type: meaning
+      context: s17
+      prompt: "Hikâyede \"annoyed\" ne anlama geliyordu?"
+      options: ["sinirlenmiş, rahatsız olmuş", "çok mutlu", "utangaç", "heyecanlı"]
+      answer: 0
+    kullan:
+      id: u2d07-042-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The drill next door was on for two hours, so Elif was very ________.</en>"
+      options: ["annoyed", "annoying", "energetic", "fit"]
+      answer: 0
+    sina:
+      id: u2d07-042-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>How does Ece feel?</en>"
+      stem: "<en>Ece: Kaan, you're late AGAIN! I waited for you for forty minutes in the cold! 😤</en>"
+      options: ["annoyed", "relaxed", "proud", "thankful"]
+      answer: 0
+
+review:
+  - id: u2d07-r01
+    type: gap_fill
+    item: U2-031
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Kaan goes to the ________ after school. He lifts weights and runs on the running machine there.</en>"
+    options: ["gym", "library", "band", "survey"]
+    answer: 0
+  - id: u2d07-r02
+    type: synonym
+    item: U2-032
+    prompt: "<en>\"My dad works out every morning.\" Which one is CLOSEST in meaning?</en>"
+    options: ["My dad does exercise every morning.", "My dad goes to the office every morning.", "My dad sleeps late every morning.", "My dad reads the news every morning."]
+    answer: 0
+  - id: u2d07-r03
+    type: gap_fill
+    item: U2-033
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>The basketball team ________ every Monday and Wednesday after school.</en>"
+    options: ["trains", "admires", "dislikes", "hates"]
+    answer: 0
+  - id: u2d07-r04
+    type: message_infer
+    item: U2-034
+    prompt: "<en>What can we say about Kaan?</en>"
+    stem: "<en>Kaan: I go to the gym three times a week and I eat healthy food. Now everyone says I look strong and healthy!</en>"
+    options: ["He looks fit.", "He looks ill.", "He is lazy.", "He hates sport."]
+    answer: 0
+  - id: u2d07-r05
+    type: trait_match
+    item: U2-035
+    prompt: "<en>Which word describes Elif's grandma?</en>"
+    stem: "<en>Elif's grandma is seventy, but she swims every morning, dances at every wedding and walks ten kilometres a day.</en>"
+    options: ["energetic", "lazy", "sleepy", "bored"]
+    answer: 0
+  - id: u2d07-r06
+    type: gap_fill
+    item: U2-036
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>I love basketball because it's a ________. I play with four friends and we win or lose together.</en>"
+    options: ["team sport", "individual sport", "music genre", "survey"]
+    answer: 0
+  - id: u2d07-r07
+    type: situation
+    item: U2-029
+    lgs_like: true
+    prompt: "<en>Why does Selin want to change the place?</en>"
+    stem: "<en>Selin and Ece want to study in the café. But there is loud music, a crying baby and twenty people talking. Selin says, \"Let's go to the library.\"</en>"
+    options: ["The café is too noisy.", "The café is too quiet.", "The café is closed.", "The library is noisy."]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U2-040]
+    text: "rest fiil olunca dinlenmek: \"I need to rest.\" Ama the rest of = …in geri kalanı: \"the rest of the pizza\" (pizzanın geri kalanı). Başında the varsa dinlenme yok, \"kalan kısım\" var!"
+  - type: mini_dilbilgisi
+    refs: [U2-038, U2-039]
+    text: "Spor fiilleri: do + dövüş sporları ve yoga (do karate, do judo, do yoga) · play + top oyunları (play basketball, play tennis) · go + -ing ile biten etkinlikler (go hiking, go swimming, go skiing)."
+  - type: tuzak
+    refs: [U2-042, U2-030]
+    text: "annoying = sinir bozan; annoyed = sinirlenmiş. \"Mert was annoyed.\" = Mert sinirlendi. \"Mert was annoying.\" deseydik, Mert'in kendisi sinir bozucu olurdu! Kişinin hissi -ed, o hissi veren şey -ing."
+  - type: kelime_ailesi
+    refs: [U2-041]
+    text: "pay attention (to) = dikkat etmek: \"Pay attention to the teacher.\" Burada pay \"ödemek\" değil! attention tek başına da kullanılır: anonslarda \"Attention, please!\" duyarsın."
+
+coach:
+  start: "Kaan basketbolda, Duru kanepede… Bora ise kendine yeni bir spor arıyor. Ama hangisi? 🥋"
+  end_good: "Süper! Bora siyah kuşağa çok uzak ama sen bugün kuşak atladın 🥋"
+  end_mixed: "Güzel iş! {weak} biraz tekme attı ama Gül Hanım ne diyor: herkes ilk derste hata yapar. Yarın tekrar! 🥋"
+
+notifications:
+  morning: "Bora kendine yeni bir spor seçti. İpucu: beyaz bir kıyafet ve bir kuşak 🥋"
+  evening: "Bora gece yarısı gruba 80 fotoğraf attı. Ece'nin tepkisi bugünkü derste 🌲"
+  review: "Tek soru: \"the rest of the pizza\" pizzanın dinlenmesi mi, geri kalanı mı? 🍕"
+
+editor:
+  z07: {U2-037: BEKLIYOR, U2-038: BEKLIYOR, U2-039: BEKLIYOR, U2-040: BEKLIYOR, U2-041: BEKLIYOR, U2-042: BEKLIYOR}

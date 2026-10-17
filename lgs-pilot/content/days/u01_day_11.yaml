@@ -1,0 +1,309 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 11
+status: draft
+title: "Köpek ödevimi yedi"
+est_minutes: 10
+characters: [Kaan, Bora, Selin, Ece, Duru, Elif, Murat Bey]
+new_items: [U1-053, U1-056, U1-058, U1-062, U1-065, U1-066]
+
+story:
+  - id: s01
+    text: "Pazartesi, İngilizce dersi. Murat Bey ödevleri topluyordu."
+  - id: s02
+    text: "Kaan'ın masasının önünde durdu: \"<en>Kaan, where is your homework?</en>\""
+  - id: s03
+    text: "Kaan bir an düşündü ve en masum yüz ifadesini takındı: \"<en>My dog ate it, sir.</en>\""
+  - id: s04
+    text: "Sınıf bir anda buz kesti. Duru başını kaldırdı: \"<en>Kaan, you don't have a dog. I have a dog.</en>\""
+  - id: s05
+    text: "Murat Bey gözlüğünü düzeltti ve sakin bir sesle konuştu: \"<en>Kaan, please don't {U1-065|tell lies}. Just tell me the truth.</en>\""
+  - id: s06
+    text: "Kaan kıpkırmızı oldu: \"<en>OK… That was a {U1-056|lie}. I forgot it at home. I'm sorry.</en>\""
+  - id: s07
+    text: "Murat Bey gülümsedi: \"<en>Thank you. Bring it tomorrow. {U1-058|Promise}?</en>\" Kaan: \"<en>I {U1-058|promise}!</en>\""
+  - id: s08
+    text: "Arka masadan Bora mırıldandı: \"<en>He {U1-065|tells lies} all the time. Not only about homework.</en>\""
+  - id: s09
+    text: "Teneffüste Selin, Bora'yı kantinde buldu: \"<en>What do you mean? {U1-024|What about} the football match? Was it really about football?</en>\""
+  - id: s10
+    text: "Bora bir süre ayakkabılarına baktı, sonra anlattı: Cumartesileri kimseye çaktırmadan dans kursuna gidiyordu. Tavuk dansından sonra gerçekten dans etmeyi öğrenmek istiyordu."
+  - id: s11
+    text: "\"<en>It was a {U1-062|secret}. Only Kaan knew. And on Friday, the whole football team asked me about my dance class!</en>\""
+  - id: s12
+    text: "Selin'in gözleri büyüdü: \"<en>So Kaan {U1-066|told your secret to others}?</en>\""
+  - id: s13
+    text: "Bora başını salladı: \"<en>Yes. And he {U1-058|promised}! He said, 'I'll never {U1-066|tell your secret to others}.'</en>\""
+  - id: s14
+    text: "Ece de yanlarına gelmişti. Taşlar yerine oturdu: \"<en>So that's why you didn't pass the ball…</en>\""
+  - id: s15
+    text: "Bora omuz silkti: \"<en>Maybe. I was angry. I didn't want to play with him.</en>\""
+  - id: s16
+    text: "Selin her zamanki ciddi yüzüyle konuştu: \"<en>{U1-053|Dishonesty} breaks friendships. A {U1-056|lie} is small at first, then it gets bigger and bigger.</en>\""
+  - id: s17
+    text: "Duru cipsini çiğnerken ekledi: \"<en>Like the dog that ate the homework. A dog that doesn't exist!</en>\" Bora bile gülmeden duramadı."
+  - id: s18
+    text: "Tam bu anda Kaan kantinin kapısında belirdi. Bora'yı görünce durdu: \"<en>Bora, {U1-006|do you want to} sit with us?</en>\" Bora: \"<en>No, thanks. I {U1-018|prefer} to sit here.</en>\""
+  - id: s19
+    text: "Kaan, Selin'e döndü: \"<en>{U1-024|What about} you? Are you angry too?</en>\" Selin: \"<en>I'm not angry. But first the homework {U1-056|lie}, then Bora's {U1-062|secret}… {U1-053|Dishonesty} is a big problem, Kaan.</en>\""
+  - id: s20
+    text: "Kaan yere baktı: \"<en>You're right. I {U1-066|told his secret to others}. It was a big mistake.</en>\""
+  - id: s21
+    text: "Ece yumuşak bir sesle ekledi: \"<en>You're not a bad person, Kaan. But {U1-053|dishonesty} hurts people.</en>\""
+  - id: s22
+    text: "Kaan içini çekti: \"<en>I {U1-010|would like to} talk to Bora. But he doesn't want to talk to me.</en>\""
+  - id: s23
+    text: "Ece: \"<en>Give him a day. And no more {U1-065|telling lies}, OK?</en>\" Kaan elini kalbine koydu: \"<en>I {U1-058|promise}. A real {U1-058|promise} this time.</en>\""
+  - id: s24
+    text: "Akşam Elif gruba yazdı: \"<en>{U1-006|Do you want to} watch a film on Saturday? All of us?</en>\""
+  - id: s25
+    text: "Duru: \"<en>{U1-014|It doesn't matter} which film. I'll sleep anyway.</en>\" Ece: \"<en>{U1-023|That would be great}!</en>\""
+  - id: s26
+    text: "Kaan yalnızca bir kalp gönderdi. Bora hiçbir şey yazmadı ama bu kez grubu sessize de almadı. Belki onun da bir {U1-062|SECRET}'ı vardı: Kaan'ı özlemişti."
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>Kaan, where is your homework? Please don't tell lies.</en>"
+  - id: c02
+    speaker: Kaan
+    text: "<en>Sorry, sir. I forgot it. I promise to bring it tomorrow.</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>Kaan told Bora's secret to others. That's why Bora is angry.</en>"
+  - id: c04
+    speaker: Ece
+    text: "<en>Dishonesty hurts friendships. I hope Kaan apologises.</en>"
+
+steps:
+  - item: U1-053
+    sezdir:
+      id: d11-053-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede \"dishonesty\" ne anlama geliyordu?"
+      options: ["dürüst olmama, sahtekârlık", "sabırsızlık", "tembellik", "utangaçlık"]
+      answer: 0
+    kullan:
+      id: d11-053-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Copying your friend's answers in an exam is a kind of ________.</en>"
+      options: ["dishonesty", "friendship", "honesty", "kindness"]
+      answer: 0
+    sina:
+      id: d11-053-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which one is NOT an example of dishonesty?</en>"
+      options: ["telling the truth when it is difficult", "cheating in an exam", "telling lies to your teacher", "copying your friend's homework"]
+      answer: 0
+  - item: U1-056
+    sezdir:
+      id: d11-056-z
+      type: meaning
+      context: s06
+      prompt: "Hikâyede \"lie\" ne anlama geliyordu?"
+      options: ["yalan", "uzanmak", "hediye", "ödev"]
+      answer: 0
+    kullan:
+      id: d11-056-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't believe him. He said he was at home, but that was a ________. He was at the cinema.</en>"
+      options: ["lie", "secret", "promise", "feeling"]
+      answer: 0
+    sina:
+      id: d11-056-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>In which sentence does \"lie\" have a DIFFERENT meaning?</en>"
+      options: ["I'm tired. I want to lie down on the sofa.", "Don't lie to me!", "It was a big lie.", "He never tells lies."]
+      answer: 0
+      explain: "lie down = uzanmak. Diğer cümlelerde lie = yalan (söylemek)."
+  - item: U1-058
+    sezdir:
+      id: d11-058-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"promise\" ne anlama geliyordu?"
+      options: ["söz vermek; söz", "rica etmek", "emir vermek", "teşekkür etmek"]
+      answer: 0
+    kullan:
+      id: d11-058-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't worry about your project. I ________ I will help you tomorrow.</en>"
+      options: ["promise", "refuse", "argue", "apologise"]
+      answer: 0
+    sina:
+      id: d11-058-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Mum: You can go to the park, but come home before seven.\nKaan: ________</en>"
+      options: ["OK, I promise.", "I told a lie.", "Sorry, I'm full.", "I have a secret."]
+      answer: 0
+  - item: U1-062
+    sezdir:
+      id: d11-062-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"secret\" ne anlama geliyordu?"
+      options: ["sır", "hediye", "kural", "ödül"]
+      answer: 0
+    kullan:
+      id: d11-062-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Don't tell anyone, please. It's a ________ between you and me.</en>"
+      options: ["secret", "lie", "feeling", "text"]
+      answer: 0
+    sina:
+      id: d11-062-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What does Elif want from Ece?</en>"
+      stem: "<en>Elif: Ece, I'm planning a birthday surprise for Duru. I'll tell you about it, but please don't tell her!</en>"
+      options: ["She wants Ece to keep a secret.", "She wants Ece to tell a lie.", "She wants Ece to break a promise.", "She wants Ece to invite Duru."]
+      answer: 0
+  - item: U1-065
+    sezdir:
+      id: d11-065-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"tell lies\" ne anlama geliyordu?"
+      options: ["yalan söylemek", "şarkı söylemek", "sır saklamak", "özür dilemek"]
+      answer: 0
+    kullan:
+      id: d11-065-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Kaan said, \"My dog ate my homework.\" But Kaan doesn't have a dog. He ________.</en>"
+      options: ["told a lie", "kept a promise", "told the truth", "kept a secret"]
+      answer: 0
+    sina:
+      id: d11-065-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Mert best?</en>"
+      stem: "<en>Mert often tells lies. Last week he said he was the captain of the football team, but he isn't even in the team.</en>"
+      options: ["dishonest", "honest", "reliable", "loyal"]
+      answer: 0
+  - item: U1-066
+    sezdir:
+      id: d11-066-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede \"tell (someone's) secret to others\" ne anlama geliyordu?"
+      options: ["sırrı başkalarına söylemek", "sırrı saklamak", "başkalarına yardım etmek", "başkalarını davet etmek"]
+      answer: 0
+    kullan:
+      id: d11-066-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I told Kaan about my dance class, and the next day everyone knew. He ________.</en>"
+      options: ["told my secret to others", "kept my secret", "kept his promise", "backed me up"]
+      answer: 0
+    sina:
+      id: d11-066-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Selin: Can I tell you something? Promise you won't tell anyone.\nDuru: ________</en>"
+      options: ["Don't worry. I never tell secrets to others.", "Great! I'll tell everyone.", "Sure, I'll post it online.", "OK, but I'll tell my whole class."]
+      answer: 0
+
+review:
+  - id: d11-r01
+    type: gap_fill
+    item: U1-027
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Kaan and Bora always ________ about football. They never agree.</en>"
+    options: ["argue", "get on well", "have the same opinion", "chat happily"]
+    answer: 0
+  - id: d11-r02
+    type: gap_fill
+    item: U1-032
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Please be kind to her. Don't hurt her ________.</en>"
+    options: ["feelings", "invitations", "texts", "excuses"]
+    answer: 0
+  - id: d11-r03
+    type: situation
+    item: U1-031
+    prompt: "<en>Bora is at a new school. He doesn't know anyone, and nobody talks to him. How does he feel?</en>"
+    options: ["He feels alone.", "He feels stuffed.", "He feels proud.", "He feels laid-back."]
+    answer: 0
+  - id: d11-r04
+    type: dialogue_complete
+    item: U1-041
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: How are things with your brother?\nB: ________ We play games and talk every evening.</en>"
+    options: ["Great! We have a very good relationship.", "Bad. We argue all the time.", "I don't really know him.", "He never talks to me."]
+    answer: 0
+  - id: d11-r05
+    type: gap_fill
+    item: U1-045
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Twins often have a ________. They understand each other without words.</en>"
+    options: ["strong bond", "bad feeling", "short text", "big argument"]
+    answer: 0
+  - id: d11-r06
+    type: gap_fill
+    item: U1-046
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>I'll be a bit late. I'll ________ you when I leave the house.</en>"
+    options: ["text", "argue", "forget", "refuse"]
+    answer: 0
+  - id: d11-r07
+    type: message_infer
+    item: U1-054
+    lgs_like: true
+    prompt: "<en>Which of the following is TRUE about Bora?</en>"
+    stem: "<en>Ece: Bora said, \"I'll bring the cake.\" He was late, but he came with a big cake!</en>"
+    options: ["He kept his promise.", "He broke his promise.", "He told a lie.", "He refused the invitation."]
+    answer: 0
+  - id: d11-r08
+    type: trait_match
+    item: U1-092
+    lgs_like: true
+    prompt: "<en>Which word describes Selin in this message?</en>"
+    stem: "<en>Selin: Don't worry about the exam, Bora. You studied hard. I believe in you!</en>"
+    options: ["supportive", "mean", "unreliable", "dishonest"]
+    answer: 0
+  - id: d11-r09
+    type: odd_one_out
+    item: U1-050
+    lgs_like: true
+    prompt: "<en>Which sentence is about breaking a promise?</en>"
+    options: ["He said he would come, but he didn't.", "She did everything she said.", "He never tells anyone my secrets.", "She helped me with my homework."]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U1-056]
+    text: "lie = yalan, yalan söylemek: \"Don't lie to me!\" Ama lie down = uzanmak: \"I want to lie down.\" Geçmiş halleri de farklı: yalan söyledi = lied, uzandı = lay. Yanında down varsa yalan değil, kanepe var!"
+  - type: mini_dilbilgisi
+    refs: [U1-065, U1-066]
+    text: "tell a lie, tell the truth, tell a secret: hepsi TELL ile kurulur. ❌ say a lie, ❌ say a secret. Geçmiş hali: told (He told a lie.)"
+  - type: kelime_ailesi
+    refs: [U1-053]
+    text: "honest (dürüst) → dishonest (dürüst olmayan) → dishonesty (sahtekârlık) · honesty (dürüstlük). dis- eki anlamı tersine çevirir: like → dislike."
+  - type: lgs_taktigi
+    refs: [U1-058]
+    text: "promise hem fiil hem isim: \"I promise.\" (söz veriyorum) · \"a promise\" (bir söz). LGS'de keep a promise (tutmak) ve break a promise (bozmak) eşleşmesine dikkat."
+
+coach:
+  start: "Bugün Murat Bey'in dersinde bir köpek ödev yiyor… ama ortada köpek yok! 🐶 Önce dünkü kelimeler."
+  end_good: "Bravo! Güveni sarsan kelimeleri de öğrendin. Yarın barış zamanı mı? Göreceğiz. 🕊️"
+  end_mixed: "{weak} biraz kafa karıştırdı, çok normal; lie gibi kelimeler sinsi olur. Yarın yine karşılaşacaksınız."
+
+notifications:
+  morning: "Kaan'ın köpeği ödevini yemiş. Tek sorun: Kaan'ın köpeği yok. 🐶"
+  evening: "Bora neden pas vermedi? Asıl sebep bugün ortaya çıkıyor. 10 dakika!"
+  review: "Tek soru: \"I want to lie down.\" Bu cümlede lie ne demek?"
+
+editor:
+  z07: {U1-053: BEKLIYOR, U1-056: BEKLIYOR, U1-058: BEKLIYOR, U1-062: BEKLIYOR, U1-065: BEKLIYOR, U1-066: BEKLIYOR}

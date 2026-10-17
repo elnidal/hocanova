@@ -1,0 +1,754 @@
+schema_version: 1
+program: lgs
+unit: 9
+unit_title: Science
+source: LGS_Unite9_Science_Havuz_v1 (HEDEF)
+status: taslak, kullanıcı onayı bekliyor
+note: 'taslak, kullanıcı onayı bekliyor; hikâye/gün dosyası yazılmayacak (yalnız kelime havuzu), pilot_day yok. meaning_ban: çeviri yasağında meaning_tr yerine bu kökler aranır. exam: 2013–2020 TEOG + LGS
+  çıkmış kelime tablosu (kullanıcının yapıştırdığı ingilizcedilbilgisi.net tablosu, /tmp/claude-0/lgs9/exam_W.txt). W kelime listesi erişilemedi (yalnız 8 satırlık örnek).'
+items:
+- id: U9-001
+  unit: 9
+  theme: Bilim ve bilim insanları
+  display: science / scientist / scientific (scientific developments)
+  kind: phrase
+  class: core
+  meaning_tr: bilim, fen / bilim insanı / bilimsel (bilimsel gelişmeler)
+  priority: 1
+  exam:
+    teog_lgs_total: 4
+    lgs: 2
+    words:
+    - scientist
+    - scientific
+  variants:
+  - science
+  - scientific
+  - scientific developments
+  - scientist
+  trap_note: 'vurgu kayar: SCIence – SCIentist – scienTIFic; science fiction (U2-073) ayrı birim'
+  meaning_ban:
+  - bilim
+  - fen
+- id: U9-002
+  unit: 9
+  theme: Bilim ve bilim insanları
+  display: chemist / chemistry / chemical
+  kind: phrase
+  class: trap
+  meaning_tr: kimyager / kimya / kimyasal (madde)
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - chemical
+  variants:
+  - chemical
+  - chemist
+  trap_note: ch /k/ okunur; İngiliz İngilizcesinde chemist's = eczane (chemist = eczacı da olabilir)
+  meaning_ban:
+  - kimya
+  - eczac
+- id: U9-003
+  unit: 9
+  theme: Bilim ve bilim insanları
+  display: physics / physicist
+  kind: phrase
+  class: trap
+  meaning_tr: fizik / fizikçi
+  priority: 1
+  variants:
+  - physicist
+  - physics
+  trap_note: physics -s ile yazılır ama tekildir (Physics is fun); physician = doktor, fizikçi değil. Kaynak B "physic" yazmış
+  meaning_ban:
+  - fizik
+- id: U9-004
+  unit: 9
+  theme: Bilim ve bilim insanları
+  display: gravity
+  kind: word
+  class: core
+  meaning_tr: yer çekimi
+  priority: 1
+  trap_note: 'Newton discovered gravity: discover (U7-039) ile birlikte geçer; the law of gravity = yer çekimi yasası'
+  meaning_ban:
+  - çekim
+- id: U9-005
+  unit: 9
+  theme: Bilim ve bilim insanları
+  display: space / universe (space travel)
+  kind: phrase
+  class: trap
+  meaning_tr: uzay / evren (uzay yolculuğu)
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - space
+  variants:
+  - space
+  - space travel
+  - universe
+  trap_note: 'space ayrıca boşluk, yer (There isn''t enough space); uzay anlamında artikelsiz: travel to space'
+  meaning_ban:
+  - uzay
+  - evren
+- id: U9-006
+  unit: 9
+  theme: Bilim ve bilim insanları
+  display: medicine
+  kind: word
+  class: trap
+  meaning_tr: tıp; ilaç
+  priority: 2
+  trap_note: 'iki anlam: study medicine (tıp okumak) / take medicine (ilaç almak); medical = tıbbi'
+  meaning_ban:
+  - tıp
+  - ilaç
+- id: U9-007
+  unit: 9
+  theme: Bilim ve bilim insanları
+  display: genius / brilliant
+  kind: phrase
+  class: trap
+  meaning_tr: dahi, deha / parlak, çok zeki; harika
+  priority: 2
+  variants:
+  - brilliant
+  - genius
+  trap_note: brilliant kaynaklarda "parlak"; insan için çok zeki (a brilliant scientist), fikir için harika (a brilliant idea)
+  meaning_ban:
+  - dahi
+  - deha
+  - parlak
+  - zeki
+- id: U9-008
+  unit: 9
+  theme: Deney ve araştırma
+  display: experiment (do / conduct an experiment)
+  kind: phrase
+  class: trap
+  meaning_tr: deney (deney yapmak)
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - experiment
+  variants:
+  - conduct experiment
+  - experiment
+  trap_note: experiment (deney) ≠ experience (deneyim, U6-027) ≠ expert (uzman, U5-039); do / carry out / conduct an experiment (kaynak B "make experiment")
+  meaning_ban:
+  - deney
+- id: U9-009
+  unit: 9
+  theme: Deney ve araştırma
+  display: result
+  kind: word
+  class: core
+  meaning_tr: sonuç
+  priority: 1
+  exam:
+    teog_lgs_total: 3
+    lgs: 2
+    words:
+    - result
+  trap_note: the result(s) of the experiment; as a result (sonuç olarak) neden–sonuç kalıbında. Sınavda 3 kez, LGS 2
+  meaning_ban:
+  - sonuç
+- id: U9-010
+  unit: 9
+  theme: Deney ve araştırma
+  display: work on (a project / an invention)
+  kind: pattern
+  class: pattern
+  meaning_tr: (bir şeyin) üzerinde çalışmak
+  priority: 1
+  variants:
+  - work on
+  trap_note: 'work on + nesne: Scientists are working on a new vaccine. work for = bir yerde/biri için çalışmak'
+  meaning_ban:
+  - üzerinde çalış
+- id: U9-011
+  unit: 9
+  theme: Deney ve araştırma
+  display: discuss / discussion / debate
+  kind: phrase
+  class: trap
+  meaning_tr: tartışmak, görüşmek / tartışma / münazara
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 1
+    words:
+    - discuss
+    - discussion
+  variants:
+  - debate
+  - discuss
+  - discussion
+  trap_note: 'discuss edat almaz: discuss the results (discuss about yanlış); debate resmî tartışma, münazara (kavga değil)'
+  meaning_ban:
+  - tartış
+  - görüş
+  - münazara
+- id: U9-012
+  unit: 9
+  theme: Deney ve araştırma
+  display: observe / examine (observation)
+  kind: phrase
+  class: core
+  meaning_tr: gözlemlemek / incelemek (gözlem)
+  priority: 2
+  variants:
+  - examine
+  - observe
+  - observe substances
+  trap_note: observe = dikkatle izleyip not etmek; examine = yakından incelemek, (doktor) muayene etmek; exam ile aynı aileden
+  meaning_ban:
+  - gözlem
+  - incele
+  - muayene
+- id: U9-013
+  unit: 9
+  theme: Deney ve araştırma
+  display: matter / substance
+  kind: phrase
+  class: trap
+  meaning_tr: madde
+  priority: 2
+  variants:
+  - matter
+  trap_note: bilimde matter = madde; ama What's the matter? (U4-030) = Ne oldu?, It doesn't matter (U1-014) = Önemli değil
+  meaning_ban:
+  - madde
+- id: U9-014
+  unit: 9
+  theme: Deney ve araştırma
+  display: fact (in fact)
+  kind: phrase
+  class: trap
+  meaning_tr: gerçek, olgu (aslında)
+  priority: 2
+  variants:
+  - fact
+  trap_note: fact (kanıtlanabilir bilgi) ≠ opinion (görüş, U2-005); in fact = aslında. LGS "fact or opinion" ayrımı
+  meaning_ban:
+  - gerçek
+  - olgu
+  - aslında
+- id: U9-015
+  unit: 9
+  theme: Deney ve araştırma
+  display: find out
+  kind: phrase
+  class: trap
+  meaning_tr: (araştırıp) öğrenmek, ortaya çıkarmak
+  priority: 2
+  trap_note: find out = bilgiyi araştırıp öğrenmek; find = kaybolanı bulmak. find–found (found "kurmak" ayrı birim)
+  meaning_ban:
+  - öğren
+  - ortaya çıkar
+- id: U9-016
+  unit: 9
+  theme: Deney ve araştırma
+  display: knowledge (gain knowledge)
+  kind: phrase
+  class: core
+  meaning_tr: bilgi (bilgi edinmek)
+  priority: 2
+  variants:
+  - gain knowledge
+  trap_note: 'sayılamaz: knowledges yanlış; k okunmaz /ˈnɒlɪdʒ/; know ile aynı aile'
+  meaning_ban:
+  - bilgi
+- id: U9-017
+  unit: 9
+  theme: Deney ve araştırma
+  display: wonder (I wonder …)
+  kind: phrase
+  class: trap
+  meaning_tr: merak etmek (merak ediyorum …)
+  priority: 2
+  variants:
+  - wonder
+  trap_note: fiil "merak etmek", isim "harika, mucize" (the wonders of science); wander (dolaşmak) ile karıştırma
+  meaning_ban:
+  - merak
+- id: U9-018
+  unit: 9
+  theme: Deney ve araştırma
+  display: calculate (calculator / make a calculation)
+  kind: phrase
+  class: core
+  meaning_tr: hesaplamak (hesap makinesi / hesap yapmak)
+  priority: 2
+  variants:
+  - calculator
+  - make calculation
+  meaning_ban:
+  - hesap
+- id: U9-019
+  unit: 9
+  theme: Buluşlar ve teknoloji
+  display: publish / print (printing press)
+  kind: phrase
+  class: trap
+  meaning_tr: yayımlamak / basmak, yazdırmak (matbaa)
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - publish
+  variants:
+  - print
+  - printing press
+  - publish
+  trap_note: publish = yayımlamak (kitap, makale); print = basmak, yazıcıdan çıkarmak; printing press = matbaa (Gutenberg)
+  meaning_ban:
+  - yayım
+  - yayın
+  - basmak
+  - matbaa
+  - yazdır
+- id: U9-020
+  unit: 9
+  theme: Buluşlar ve teknoloji
+  display: light bulb (electric bulb)
+  kind: phrase
+  class: core
+  meaning_tr: ampul (elektrik ampulü)
+  priority: 2
+  variants:
+  - electric bulb
+  trap_note: Edison and the light bulb; bulb tek başına çiçek soğanı da demek
+  meaning_ban:
+  - ampul
+- id: U9-021
+  unit: 9
+  theme: Buluşlar ve teknoloji
+  display: artificial / virtual (artificial intelligence / virtual reality)
+  kind: phrase
+  class: core
+  meaning_tr: yapay / sanal (yapay zekâ / sanal gerçeklik)
+  priority: 2
+  variants:
+  - artificial
+  - virtual
+  trap_note: artificial = insan yapımı, doğal olmayan; virtual = bilgisayar ortamında var olan. Kaynak A "artifical" yazmış
+  meaning_ban:
+  - yapay
+  - sanal
+  - suni
+- id: U9-022
+  unit: 9
+  theme: Buluşlar ve teknoloji
+  display: found (founder)
+  kind: word
+  class: trap
+  meaning_tr: kurmak (kurucu)
+  priority: 2
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - found
+  variants:
+  - found
+  trap_note: 'found–founded (kurmak) ≠ found (find''ın geçmişi): He founded a company in 1990 = 1990''da bir şirket kurdu'
+  meaning_ban:
+  - kurmak
+  - kurucu
+  - kurdu
+- id: U9-023
+  unit: 9
+  theme: Buluşlar ve teknoloji
+  display: fix / repair
+  kind: phrase
+  class: trap
+  meaning_tr: tamir etmek, onarmak
+  priority: 2
+  exam:
+    teog_lgs_total: 3
+    lgs: 0
+    words:
+    - fix
+  variants:
+  - fix
+  trap_note: fix ayrıca sabitlemek, ayarlamak (fix a date); sınavlarda 3 kez
+  meaning_ban:
+  - tamir
+  - onar
+- id: U9-024
+  unit: 9
+  theme: Buluşlar ve teknoloji
+  display: translate (translator / translation)
+  kind: phrase
+  class: core
+  meaning_tr: çevirmek, tercüme etmek (çevirmen / çeviri)
+  priority: 2
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - translate
+  variants:
+  - translate
+  trap_note: translate from English into Turkish; turn (dönmek / döndürmek) ile karıştırma
+  meaning_ban:
+  - çevir
+  - tercüme
+- id: U9-025
+  unit: 9
+  theme: Buluşlar ve teknoloji
+  display: revolutionary
+  kind: word
+  class: core
+  meaning_tr: devrim niteliğinde, çığır açan
+  priority: 2
+  trap_note: revolution = devrim; a revolutionary invention
+  meaning_ban:
+  - devrim
+  - çığır
+- id: U9-026
+  unit: 9
+  theme: Sağlık ve tıp
+  display: cure / treat / heal (treatment / get better)
+  kind: phrase
+  class: trap
+  meaning_tr: tedavi etmek, iyileştirmek; çare (tedavi / iyileşmek)
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - cure
+  variants:
+  - cure
+  - develop cure
+  - get better
+  - get treated
+  - heal infection
+  - treatment
+  trap_note: cure = tamamen iyileştirmek, çare (a cure for …); treat ayrıca ikram etmek / davranmak; heal = (yara) iyileş(tir)mek; get better = iyileşmek
+  meaning_ban:
+  - tedavi
+  - iyileş
+  - çare
+- id: U9-027
+  unit: 9
+  theme: Sağlık ve tıp
+  display: disease (diagnose a disease)
+  kind: phrase
+  class: core
+  meaning_tr: hastalık (hastalığı teşhis etmek)
+  priority: 2
+  variants:
+  - diagnose
+  - disease
+  trap_note: disease = (ciddi, bulaşıcı) hastalık; illness genel rahatsızlık; diagnose = teşhis etmek
+  meaning_ban:
+  - hastalık
+  - teşhis
+- id: U9-028
+  unit: 9
+  theme: Sağlık ve tıp
+  display: vaccine (vaccination)
+  kind: word
+  class: core
+  meaning_tr: aşı (aşılama)
+  priority: 2
+  variants:
+  - vaccination
+  trap_note: vaccine = aşı (madde), vaccination = aşılama (kaynak B yalnız vaccination)
+  meaning_ban:
+  - aşı
+- id: U9-029
+  unit: 9
+  theme: Başarı ve ödül
+  display: achievement / accomplishment (achieve)
+  kind: phrase
+  class: core
+  meaning_tr: başarı (başarmak)
+  priority: 1
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - achievement
+  variants:
+  - accomplishment
+  - achievement
+  trap_note: achieve = başarmak (succeed U6-049); scientific achievements = bilimsel başarılar
+  meaning_ban:
+  - başar
+- id: U9-030
+  unit: 9
+  theme: Başarı ve ödül
+  display: award / prize (win the Nobel Prize)
+  kind: phrase
+  class: trap
+  meaning_tr: ödül (Nobel Ödülü kazanmak)
+  priority: 1
+  exam:
+    teog_lgs_total: 4
+    lgs: 0
+    words:
+    - award
+    - Nobel Prize
+  variants:
+  - award
+  - nobel prize
+  trap_note: award / prize yarışma, başarı ödülü; reward (U8) bir davranışın karşılığı. win a prize (take a prize değil)
+  meaning_ban:
+  - ödül
+- id: U9-031
+  unit: 9
+  theme: Başarı ve ödül
+  display: competition (take part in a competition)
+  kind: phrase
+  class: core
+  meaning_tr: yarışma (yarışmaya katılmak)
+  priority: 2
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - competition
+    - take part
+  variants:
+  - competition
+  - take part
+  trap_note: compete = yarışmak; take part in = join = katılmak; science fair = bilim fuarı / şenliği
+  meaning_ban:
+  - yarış
+  - katıl
+- id: U9-032
+  unit: 9
+  theme: Başarı ve ödül
+  display: contribution (contribute to)
+  kind: phrase
+  class: core
+  meaning_tr: katkı (katkıda bulunmak)
+  priority: 2
+  variants:
+  - contribution
+  trap_note: 'contribute to + isim / V-ing: contribute to science; make a contribution'
+  meaning_ban:
+  - katkı
+- id: U9-033
+  unit: 9
+  theme: Başarı ve ödül
+  display: deserve
+  kind: word
+  class: core
+  meaning_tr: hak etmek
+  priority: 2
+  trap_note: She deserved the Nobel Prize. / You deserve it!
+  meaning_ban:
+  - hak et
+- id: U9-034
+  unit: 9
+  theme: Başarı ve ödül
+  display: appreciate
+  kind: word
+  class: core
+  meaning_tr: takdir etmek, değerini bilmek; minnettar olmak
+  priority: 2
+  trap_note: I appreciate your help = Yardımın için minnettarım
+  meaning_ban:
+  - takdir
+  - değerini bil
+  - minnettar
+- id: U9-035
+  unit: 9
+  theme: Başarı ve ödül
+  display: struggle
+  kind: word
+  class: core
+  meaning_tr: mücadele etmek; mücadele
+  priority: 2
+  variants:
+  - admire struggle
+  trap_note: struggle with / against …; kaynak B "admire struggle" (mücadeleye hayran olmak)
+  meaning_ban:
+  - mücadele
+- id: U9-036
+  unit: 9
+  theme: Geçmiş, şimdi ve neden–sonuç kalıpları
+  display: Who invented / discovered …? – X invented … in (year). (the inventor of …)
+  kind: pattern
+  class: pattern
+  meaning_tr: Kim icat etti / keşfetti? – X … yılında … icat etti. (… mucidi)
+  priority: 1
+  variants:
+  - who invented
+  trap_note: 'Who özne ise did kullanılmaz: Who invented the telephone? (Who did invent … yanlış); yıl için in 1876'
+  meaning_ban:
+  - icat etti
+  - keşfetti
+  - mucidi
+- id: U9-037
+  unit: 9
+  theme: Geçmiş, şimdi ve neden–sonuç kalıpları
+  display: was / were invented / discovered by … (Simple Past Passive, tanıma)
+  kind: pattern
+  class: pattern
+  meaning_tr: … tarafından icat edildi / keşfedildi (geçmiş zaman edilgen)
+  priority: 1
+  variants:
+  - was invented by
+  trap_note: 'was / were + V3 (+ by): The telephone was invented by Bell in 1876. Etken: Bell invented the telephone. Tanıma düzeyi (Ü3 Simple Present Passive ile)'
+  meaning_ban:
+  - edildi
+  - tarafından
+- id: U9-038
+  unit: 9
+  theme: Geçmiş, şimdi ve neden–sonuç kalıpları
+  display: was born in … / grew up / passed away (died) in … / at the age of …
+  kind: pattern
+  class: pattern
+  meaning_tr: … doğdu / büyüdü / … vefat etti (öldü) / … yaşında
+  priority: 1
+  variants:
+  - childhood
+  - pass away
+  - was born in
+  trap_note: 'be born hep edilgen: I was born in 2012 (I born yanlış); pass away = die (kibar); pass (geçmek) ile karıştırma; childhood = çocukluk'
+  meaning_ban:
+  - doğdu
+  - vefat
+  - yaşında
+  - büyüdü
+  - çocukluk
+- id: U9-039
+  unit: 9
+  theme: Geçmiş, şimdi ve neden–sonuç kalıpları
+  display: now / at the moment / currently / these days (Present Continuous)
+  kind: pattern
+  class: pattern
+  meaning_tr: şimdi / şu anda / şu sıralar (şimdiki zaman)
+  priority: 1
+  variants:
+  - currently
+  - now / at the moment
+  trap_note: 'am / is / are + V-ing: Scientists are working on it at the moment. Geçmişle karşıtlık: In 1928 Fleming discovered …; now scientists are …'
+  meaning_ban:
+  - şimdi
+  - şu anda
+  - şu sıra
+- id: U9-040
+  unit: 9
+  theme: Geçmiş, şimdi ve neden–sonuç kalıpları
+  display: 'cause and effect: so / that''s why / because of / thanks to / as a result (of)'
+  kind: pattern
+  class: pattern
+  meaning_tr: 'neden–sonuç: bu yüzden / … yüzünden / … sayesinde / sonuç olarak'
+  priority: 1
+  exam:
+    teog_lgs_total: 2
+    lgs: 0
+    words:
+    - cause and effect
+    - as a result of
+  variants:
+  - as a result of
+  - cause and effect
+  - thanks to
+  - that's why
+  trap_note: because + cümle, because of + isim; thanks to olumlu (sayesinde); as a result cümle başında, virgülle
+  meaning_ban:
+  - yüzden
+  - sayesinde
+  - sonuç olarak
+  - nedeniyle
+- id: U9-041
+  unit: 9
+  theme: Okuma metinlerinin fiil ve sıfatları
+  display: describe (description)
+  kind: phrase
+  class: core
+  meaning_tr: tanımlamak, betimlemek, anlatmak (tanım, betimleme)
+  priority: 2
+  variants:
+  - describe
+  trap_note: 'describe edatsız: describe the experiment (describe about yanlış); soru kökü: Which of the following best describes …?'
+  meaning_ban:
+  - tanımla
+  - betimle
+  - tarif
+- id: U9-042
+  unit: 9
+  theme: Okuma metinlerinin fiil ve sıfatları
+  display: several / various (variety)
+  kind: phrase
+  class: core
+  meaning_tr: birkaç / çeşitli (çeşit)
+  priority: 2
+  exam:
+    teog_lgs_total: 5
+    lgs: 0
+    words:
+    - several
+    - various
+  variants:
+  - several
+  - various
+  trap_note: several = birkaç (a few'dan biraz fazla) + çoğul isim; various = çeşitli, farklı farklı. Sınavlarda several 4 kez
+  meaning_ban:
+  - birkaç
+  - çeşitli
+  - çeşit
+- id: U9-043
+  unit: 9
+  theme: Okuma metinlerinin fiil ve sıfatları
+  display: reduce
+  kind: word
+  class: core
+  meaning_tr: azaltmak
+  priority: 2
+  trap_note: reduce ≠ increase (artırmak, U5-041); reduce healthcare costs
+  meaning_ban:
+  - azalt
+- id: U9-044
+  unit: 9
+  theme: Okuma metinlerinin fiil ve sıfatları
+  display: unique
+  kind: word
+  class: core
+  meaning_tr: benzersiz, eşsiz
+  priority: 2
+  trap_note: unique /juˈniːk/; "çok unique" denmez (zaten tek)
+  meaning_ban:
+  - benzersiz
+  - eşsiz
+- id: U9-045
+  unit: 9
+  theme: Okuma metinlerinin fiil ve sıfatları
+  display: record
+  kind: word
+  class: trap
+  meaning_tr: kaydetmek; kayıt; rekor
+  priority: 2
+  trap_note: 'isim REcord (kayıt, rekor: break a record), fiil reCORD (kaydetmek): record the results'
+  meaning_ban:
+  - kaydet
+  - kayıt
+  - rekor
+- id: U9-046
+  unit: 9
+  theme: Okuma metinlerinin fiil ve sıfatları
+  display: realize
+  kind: word
+  class: trap
+  meaning_tr: farkına varmak, anlamak
+  priority: 2
+  trap_note: 'realize ≠ Türkçedeki "realize etmek (gerçekleştirmek)": She realized her mistake = Hatasını fark etti; İngiliz yazımı realise'
+  meaning_ban:
+  - fark
+  - anladı

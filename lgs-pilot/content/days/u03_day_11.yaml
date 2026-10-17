@@ -1,0 +1,314 @@
+schema_version: 1
+program: lgs
+unit: 3
+day: 11
+status: draft
+title: "Büyük final"
+est_minutes: 10
+characters: [Murat Bey, Nazmiye Teyze, Ece, Selin, Elif, Kaan, Bora, Duru, Ege, Pamuk]
+new_items: [U3-051, U3-057, U3-059]
+
+story:
+  - id: s01
+    text: "Cuma günü okulun konferans salonu bir restorana dönüşmüştü. Sahnenin üstünde kocaman bir pankart asılıydı: \"<en>JUNIOR CHEF – THE FINAL</en>\""
+  - id: s02
+    text: "Jüri masasında Murat Bey, Nazmiye Teyze ve sürpriz konuk okul müdürü oturuyordu. Nazmiye Teyze'nin elinde bir not defteri vardı; onu kantinde hiç bu kadar ciddi görmemişlerdi."
+  - id: s03
+    text: "İzleyicilerin en önünde Ece'nin kuzeni Ege, güneş gözlüğüyle kurulmuştu: \"<en>I'm a food critic, you know. I hope nobody serves {U3-017|mashed} potatoes from a packet.</en>\""
+  - id: s04
+    text: "Murat Bey düdüğü çaldı: \"<en>Teams, you have one hour. Then you {U3-051|serve} your menu to the jury. And remember: no fried food!</en>\""
+  - id: s05
+    text: "Ece takımının köşesinde Selin kartı okudu: \"<en>{U3-007|Roast} the chicken with lemon juice…</en>\" ve olduğu yerde kaldı. Limon yoktu! Elif dünkü provada hepsini harcamıştı."
+  - id: s06
+    text: "Selin hayatında ilk kez kartın dışına çıktı ve Elif'in çantasındaki portakalı aldı: \"<en>No lemon? OK. We'll use this {U3-029|fresh} orange. It's not on the card, but I think it works.</en>\" Ece ile Elif birbirine baktı: Bu gerçekten Selin miydi?"
+  - id: s07
+    text: "Her iki köşede de bir nöbetçi öğretmen fırın ve ocak işinin başındaydı. Kaan takımının köfteleri pişmeye başlamıştı. Bora zamanlayıcıyı Kaan'a uzattı: \"<en>Forty minutes, buddy. The timer is yours.</en>\""
+  - id: s08
+    text: "Kaan kollarını kavuşturup camın önüne oturdu: \"<en>No problem. I'm {U1-085|patient} now. Very, very {U1-085|patient}.</en>\" Her dakika gözü biraz daha seğiriyordu."
+  - id: s09
+    text: "Otuz beşinci dakikada eli kapağa uzandı… ve havada durdu. Kaan zil çalana kadar bekledi. Bora ile Duru aynı anda alkışladı: \"<en>Kaan! You waited!</en>\""
+  - id: s10
+    text: "O arada Ece pastayı tezgâha koydu ve herkes sustu. Pasta yine eğriydi; yine kocaman bir şapkaya benziyordu."
+  - id: s11
+    text: "Ece bir an pastaya baktı ve ilk kahkahayı kendisi attı: \"<en>It's a hat again! OK, it's our hat now. Our lucky hat!</en>\""
+  - id: s12
+    text: "Jüri masasına ilk Ece takımı yürüdü. Ece: \"<en>For the {U3-060|main course}, we {U3-051|serve} {U3-007|roast} chicken with {U3-008|steamed} vegetables. Nothing is fried, so it isn't {U3-030|greasy}.</en>\""
+  - id: s13
+    text: "Selin devam etti: \"<en>And for {U3-055|dessert}, our lucky hat cake with my grandma's {U3-031|homemade} ice cream.</en>\" Elif her parçayı jüriye uzattı: \"<en>{U3-057|Enjoy your meal}!</en>\""
+  - id: s14
+    text: "Nazmiye Teyze pastadan bir lokma aldı. Uzun bir sessizlik… \"<en>It looks like a hat, but it's {U3-028|delicious}.</en>\""
+  - id: s15
+    text: "Murat Bey tavuktan bir çatal aldı ve kaşlarını kaldırdı: \"<en>Orange in the chicken? Unusual, but it's {U3-059|worth trying}. Very {U2-076|impressive}, Selin!</en>\""
+  - id: s16
+    text: "Sıra Kaan takımına geldi. Duru öne çıktı: \"<en>This is İzmir köftesi, a {U3-063|traditional} {U3-056|dish} from our city. Turkish {U3-054|cuisine} needs time and love.</en>\""
+  - id: s17
+    text: "Bora devam etti: \"<en>We {U3-005|grilled} the peppers and {U3-007|roasted} the potatoes. No frying! And my rice pudding is our {U3-055|dessert}.</en>\""
+  - id: s18
+    text: "Kaan tepsiyi iki eliyle jüriye uzattı: \"<en>{U3-057|Enjoy your meal}!</en>\" Tam o anda izleyicilerin arasından beyaz bir top fırladı: Pamuk! Ece'nin annesinin kucağından kurtulmuş, jüri masasına koşuyordu."
+  - id: s19
+    text: "Kaan bir an sendeledi ama tepsiyi basketbol topu gibi havada yakaladı. Tek bir köfte bile düşmedi. Pamuk ise Nazmiye Teyze'nin önüne oturup kuyruğunu salladı."
+  - id: s20
+    text: "Elif kıpkırmızı koştu: \"<en>Sorry! I think she wants some köfte too. It's {U3-059|worth trying}, right?</en>\" Bütün salon güldü; Nazmiye Teyze bile."
+  - id: s21
+    text: "Bora sütlaç kasesini Ege'ye uzattı: \"<en>{U3-057|Enjoy your meal}, Mr Critic!</en>\" Ege bir kaşık aldı ve hiçbir şey demedi. Bir kaşık daha aldı. Bir tane daha…"
+  - id: s22
+    text: "Derken gözlüğünü çıkardı: \"<en>OK… maybe {U3-031|homemade} is {U2-071|pretty} good. It's {U3-059|worth trying}.</en>\" Bora sırıttı: \"<en>That's your third spoon, critic!</en>\""
+  - id: s23
+    text: "Murat Bey ayağa kalktı: \"<en>And the winners are… both teams! Ece's team gets the Best Flavour award, and Kaan's team gets the Best Teamwork award!</en>\""
+  - id: s24
+    text: "Nazmiye Teyze defterini kapattı: \"<en>And Bora, I want your rice pudding in my canteen. From Monday, we {U3-051|serve} it every day!</en>\" Bora gülümsedi: \"<en>Leave it to me.</en>\""
+  - id: s25
+    text: "Kutlamada Duru gitarını, Elif mikrofonu aldı; Bora iki kaşıkla tencerelerde ritim tuttu. Ece her saniyeyi kaydetti ve videoyu paylaştı."
+  - id: s26
+    text: "Gece videonun altına bir yorum düştü. Parkın karşısındaki pastanenin sahibi yazmıştı: \"<en>Great music! Can your band play at my cake shop? I'll call you this week.</en>\""
+  - id: s27
+    text: "Duru yorumu okudu ve tek satır yazdı: \"<en>A real concert? I don't mind… if my sofa comes too.</en>\" Ama birkaç hafta sonra yarıyıl tatili başlıyordu ve herkes bir yere dağılacaktı…"
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>You have one hour. Then serve your menu to the jury.</en>"
+  - id: c02
+    speaker: Elif
+    text: "<en>Here's our roast chicken and our lucky hat cake. Enjoy your meal!</en>"
+  - id: c03
+    speaker: Murat Bey
+    text: "<en>Orange in the chicken? It's worth trying!</en>"
+  - id: c04
+    speaker: Ege
+    text: "<en>OK… maybe homemade is pretty good.</en>"
+  - id: c05
+    speaker: Nazmiye Teyze
+    text: "<en>From Monday, we serve Bora's rice pudding in the canteen!</en>"
+
+steps:
+  - item: U3-051
+    sezdir:
+      id: u3d11-051-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"serve your menu to the jury\" sözündeki \"serve\" ne anlama geliyordu?"
+      options: ["servis etmek, sunmak", "satın almak", "saklamak", "dondurmak"]
+      answer: 0
+    kullan:
+      id: u3d11-051-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The soup is ready. Pour it into bowls and ________ it hot with some lemon.</en>"
+      options: ["serve", "freeze", "peel", "knead"]
+      answer: 0
+      explain: "Tarifin son adımı genellikle serve'dür: Serve hot = sıcak servis edin."
+    sina:
+      id: u3d11-051-s
+      type: process_order
+      lgs_like: true
+      stem_id: S07
+      prompt: "<en>Put the steps in the correct order.</en>"
+      stem: "<en>Mum's lentil soup\n(1) Serve it hot with some lemon.\n(2) Boil the lentils and the onion for thirty minutes.\n(3) Chop an onion.\n(4) Blend the soup until it's smooth.</en>"
+      options: ["3 – 2 – 4 – 1", "2 – 3 – 1 – 4", "1 – 3 – 2 – 4", "3 – 4 – 2 – 1"]
+      answer: 0
+      explain: "Soğan doğranmadan kaynatılmaz, kaynamadan blenderdan geçmez; serve her zaman en sondadır."
+  - item: U3-057
+    sezdir:
+      id: u3d11-057-z
+      type: meaning
+      context: s13
+      prompt: "Hikâyede Elif jüriye \"Enjoy your meal!\" derken ne demek istiyordu?"
+      options: ["Afiyet olsun!", "Geçmiş olsun!", "Kolay gelsin!", "İyi yolculuklar!"]
+      answer: 0
+    kullan:
+      id: u3d11-057-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Waiter: Here's your pizza. ________\nCustomer: Thank you!</en>"
+      options: ["Enjoy your meal!", "Get well soon!", "Nice to meet you!", "Happy birthday!"]
+      answer: 0
+      explain: "Yemek masaya konurken söylenen kalıp Enjoy your meal!; cevabı Thank you!"
+    sina:
+      id: u3d11-057-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Selin's grandma: Dinner is ready, children. Here's some homemade pasta. ________\nBora: Thank you! It looks delicious.</en>"
+      options: ["Enjoy your meal!", "See you next year!", "Sorry, I'm busy.", "Good luck in the exam!"]
+      answer: 0
+      explain: "Babaanne yemeği masaya koyuyor, Bora teşekkür ediyor: arada \"afiyet olsun\" gelir."
+  - item: U3-059
+    sezdir:
+      id: u3d11-059-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede Murat Bey \"it's worth trying\" derken ne demek istiyordu?"
+      options: ["denemeye değer", "çok pahalı", "berbat, yenmez", "çok kolay yapılır"]
+      answer: 0
+    kullan:
+      id: u3d11-059-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The lemon cake at the new café is amazing. It's really ________.</en>"
+      options: ["worth trying", "too salty", "awful", "burnt"]
+      answer: 0
+      explain: "Bir şey çok iyiyse \"denemeye değer\" denir: worth trying."
+    sina:
+      id: u3d11-059-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is Elif doing in the message?</en>"
+      stem: "<en>Elif's message: Have you tried Nazmiye Teyze's new rice pudding? It's Bora's recipe and it's really worth trying!</en>"
+      options: ["recommending a dessert", "complaining about a dessert", "inviting Bora to a party", "apologising to Nazmiye Teyze"]
+      answer: 0
+      explain: "worth trying = tavsiye dili; Elif sütlacı öneriyor (recommend)."
+
+review:
+  - id: u3d11-r01
+    type: gap_fill
+    item: U3-054
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Pasta and pizza are popular dishes in Italian ________.</en>"
+    options: ["cuisine", "recipe", "oven", "freezer"]
+    answer: 0
+  - id: u3d11-r02
+    type: gap_fill
+    item: U3-056
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>We have three ________ a day: breakfast, lunch and dinner.</en>"
+    options: ["meals", "dishes", "bowls", "recipes"]
+    answer: 0
+    explain: "Kahvaltı, öğle ve akşam yemeği öğündür: meal. dish tek bir yemektir."
+  - id: u3d11-r03
+    type: dialogue_complete
+    item: U3-060
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Waiter: Would you like a starter?\nCustomer: No, thanks. I'd like the grilled fish for my ________.\nWaiter: Good choice!</en>"
+    options: ["main course", "dessert", "recipe", "ingredients"]
+    answer: 0
+  - id: u3d11-r04
+    type: gap_fill
+    item: U3-061
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Put the cake ________ the oven for forty minutes.</en>"
+    options: ["into", "to", "at", "off"]
+    answer: 0
+    explain: "put … into = -in içine koymak: put it into the oven."
+  - id: u3d11-r05
+    type: situation
+    item: U3-062
+    lgs_like: true
+    prompt: "<en>What is Duru's mum doing?</en>"
+    stem: "<en>Duru's mum is chopping onions and kneading meat. The family will have dinner at seven.</en>"
+    options: ["She is preparing dinner.", "She is doing the dishes.", "She is ordering a pizza.", "She is having breakfast."]
+    answer: 0
+  - id: u3d11-r06
+    type: synonym
+    item: U3-063
+    prompt: "<en>\"Everybody in Turkey knows simit.\" Which one is CLOSEST in meaning?</en>"
+    options: ["Simit is well-known in Turkey.", "Simit is new in Turkey.", "Simit is expensive in Turkey.", "Simit is frozen in Turkey."]
+    answer: 0
+  - id: u3d11-r07
+    type: process_order
+    item: U3-019
+    lgs_like: true
+    stem_id: S07
+    prompt: "<en>Put the steps in the correct order.</en>"
+    stem: "<en>Elif's salad notes\n(a) After that, squeeze half a lemon over the vegetables.\n(b) First, peel the cucumber.\n(c) Finally, season the salad with salt and pepper.\n(d) Then, dice the cucumber and the tomatoes.</en>"
+    options: ["b – d – a – c", "d – b – a – c", "b – a – d – c", "a – b – d – c"]
+    answer: 0
+    explain: "First → Then → After that → Finally: soy, küp küp doğra, limonu sık, tuz-karabiberle tatlandır."
+  - id: u3d11-r08
+    type: synonym
+    item: U3-021
+    lgs_like: true
+    prompt: "<en>\"Season the soup with salt and pepper.\" What does the cook mean?</en>"
+    options: ["Put some salt and pepper in the soup.", "Make the soup in winter.", "Cook the soup for three months.", "Freeze the soup."]
+    answer: 0
+    explain: "Tarifte season fiildir: tuz ve baharatla tatlandırmak; mevsimle ilgisi yok."
+  - id: u3d11-r09
+    type: text_infer
+    item: U3-049
+    lgs_like: true
+    stem_id: S03
+    prompt: "<en>Which of the following is NOT mentioned in the recipe?</en>"
+    stem: "<en>Gavurdağı salad: Slice two tomatoes and chop a green pepper. Squeeze a lemon over them. Season with salt and black pepper.</en>"
+    options: ["an onion", "a lemon", "a green pepper", "salt"]
+    answer: 0
+    explain: "Domates, yeşil biber, limon, tuz ve karabiber var; soğan yok."
+  - id: u3d11-r10
+    type: dialogue_complete
+    item: U3-010
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Kaan: How should I cut the carrots for the soup?\nBora: ________ Small pieces cook quickly.</en>"
+    options: ["Dice them into small cubes.", "Freeze them first.", "Don't cut them at all.", "Season them with sugar."]
+    answer: 0
+    explain: "Ardından gelen \"Small pieces\" ipucu: dice = küçük küpler hâlinde doğramak."
+  - id: u3d11-r11
+    type: process_order
+    item: U3-061
+    lgs_like: true
+    stem_id: S07
+    prompt: "<en>Put the steps of the recipe in the correct order.</en>"
+    stem: "<en>İzmir köftesi\n(1) Put the tray into a preheated oven for forty minutes.\n(2) Knead the meat with an egg, some bread and a chopped onion.\n(3) Serve hot with rice.\n(4) Make small meatballs and put them on a tray with potato slices.</en>"
+    options: ["2 – 4 – 1 – 3", "4 – 2 – 1 – 3", "2 – 1 – 4 – 3", "1 – 2 – 4 – 3"]
+    answer: 0
+    explain: "Et yoğrulmadan köfte yapılmaz, köfteler tepsiye konmadan fırına girmez; serve en sondadır."
+  - id: u3d11-r12
+    type: table_graph
+    item: U3-060
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the table, which of the following is correct?</en>"
+    stem: "<en>Junior Chef – Final Menus\nEce–Selin–Elif · Main course: roast chicken with steamed vegetables · Dessert: layered cake with homemade ice cream · Award: Best Flavour\nKaan–Bora–Duru · Main course: İzmir köftesi with roasted potatoes · Dessert: rice pudding · Award: Best Teamwork</en>"
+    options: ["The ice cream in Ece's team's dessert isn't from a shop.", "Kaan's team served chicken for the main course.", "Both teams got the Best Flavour award.", "Ece's team served rice pudding."]
+    answer: 0
+    explain: "homemade = ev yapımı, yani dükkândan alınmamış. Tavuk ve sütlaç diğer takımın değil; Best Flavour yalnız Ece takımının."
+  - id: u3d11-r13
+    type: dialogue_complete
+    item: U3-031
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which of the following completes the dialogue?</en>"
+    stem: "<en>Ege: I never eat homemade food. Restaurant food is always better.\nBora: ________ Try my rice pudding!\nEge: Hmm… OK, it's pretty good!</en>"
+    options: ["Really? Homemade food is worth trying.", "You're right. Don't try it.", "Enjoy your meal at the restaurant!", "Sorry, I'm not hungry."]
+    answer: 0
+    explain: "Bora ardından sütlacını denemesini istiyor; ev yemeğini savunan, \"denemeye değer\" diyen şık uyuyor."
+  - id: u3d11-r14
+    type: text_infer
+    item: U3-047
+    lgs_like: true
+    stem_id: S02
+    prompt: "<en>Which of the following does NOT have an answer in the text?</en>"
+    stem: "<en>Duru's mum's note: İzmir köftesi is a well-known dish from İzmir. You need minced meat, an egg, some bread, potatoes, green peppers and tomatoes. It takes about an hour. Cook it in the oven at 180 degrees and serve it hot with rice.</en>"
+    options: ["How many people does it serve?", "How long does it take?", "What is the oven temperature?", "What do we serve it with?"]
+    answer: 0
+    explain: "Süre (about an hour), sıcaklık (180 degrees) ve yanında ne verileceği (rice) yazıyor; kaç kişilik olduğu yazmıyor."
+
+tips:
+  - type: lgs_taktigi
+    refs: [U3-051, U3-045]
+    text: "Tarif sırası sorularında serve ve enjoy her zaman en sondadır; peel, wash, chop gibi hazırlık fiilleri ise başta. Sıralama sözcüğü yoksa bu mantıkla ilk ve son adımı hemen bul."
+  - type: mini_dilbilgisi
+    refs: [U3-051]
+    text: "serve kalıpları: serve hot (sıcak servis et) · serve cold (soğuk servis et) · serve with rice (pilavla servis et) · This recipe serves four people (Bu tarif dört kişilik)."
+  - type: ilginc_bilgi
+    refs: [U3-057]
+    text: "Enjoy your meal! = Afiyet olsun! Fransızcadan gelen Bon appétit! de aynı anlamda kullanılır. Kibar cevap: \"Thank you!\" ya da masadakilere \"Thanks, you too!\""
+  - type: mini_dilbilgisi
+    refs: [U3-059]
+    text: "worth'ten sonra fiil -ing alır: worth trying (denemeye değer), worth visiting (görmeye değer), worth watching (izlemeye değer). \"worth to try\" yanlıştır."
+
+coach:
+  start: "Final günü! 🏆 Jüri masada, Kaan zamanlayıcının başında. Bakalım bu kez kapağı erken açacak mı?"
+  end_good: "Ünite 3 bitti, şefim! 👨‍🍳 Junior Chef'te iki ödül çıktı; sen de bütün üniteyi cebe koydun. Sırada telefonlar var!"
+  end_mixed: "Ünite 3 bitti! {weak} biraz çiğ kaldı ama dert değil, tekrarla pişireceğiz. Şapka pasta bile ödül aldı! 🎩"
+
+notifications:
+  morning: "Büyük final bugün! Ece'nin pastası yine şapka mı olacak? 🎩"
+  evening: "Ünite 3'ün son dersi! 10 dakika ve bütün ünite senin. 🏁"
+  review: "Tek soru: Tarifin en son adımı hangisi, serve mi peel mi? 🍽️"
+
+editor:
+  z07: {U3-051: BEKLIYOR, U3-057: BEKLIYOR, U3-059: BEKLIYOR}

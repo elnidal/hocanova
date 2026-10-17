@@ -1,0 +1,363 @@
+schema_version: 1
+program: lgs
+unit: 5
+day: 8
+status: draft
+title: "Rehber yazılıyor"
+est_minutes: 10
+characters: [Murat Bey, Kaan, Bora, Duru, Ece, Selin, Elif]
+new_items: [U5-003, U5-004, U5-008, U5-011, U5-043, U5-058, U5-061]
+
+story:
+  - id: s01
+    text: "Çarşamba, son ders. Murat Bey tahtaya kocaman harflerle yazdı: \"<en>YOUR GUIDE: FIVE RULES FOR A {U5-011|SAFE} INTERNET</en>\""
+  - id: s02
+    text: "Murat Bey: \"<en>Five rules. Short and clear. You have forty minutes. Writing rules is easy, but it's hard to {U5-008|obey} them. Remember yesterday's snow!</en>\" Kaan sırasında biraz küçüldü."
+  - id: s03
+    text: "Ekipler masaları birleştirdi. Duru defterini açmadan sordu: \"<en>Five? Is that {U5-043|necessary}? Three rules are enough. Then we can rest.</en>\""
+  - id: s04
+    text: "Murat Bey arkadan geçerken: \"<en>Five, Duru. It's {U5-043|necessary}.</en>\" Duru, kanepesini özleyerek kalemi eline aldı."
+  - id: s05
+    text: "Bora kâğıdı kendine çekti: \"<en>Rule one is mine. I learned it the hard way: never accept a {U5-005|friend request} from a {U5-013|stranger}.</en>\" Sesi bu kez hiç şakacı değildi."
+  - id: s06
+    text: "Bora devam etti: \"<en>Rule two: don't {U5-017|click} on strange links. A 100% {U5-049|discount}? {U5-003|Avoid} it! A famous {U5-031|influencer} with a free drum set? Probably not real.</en>\""
+  - id: s07
+    text: "Duru, birden ciddileşerek ekledi: \"<en>Rule three: never write your {U5-010|personal information} on a website you don't know. And {U1-055|keep your password secret}.</en>\""
+  - id: s08
+    text: "Bora: \"<en>And if there's a problem, change your password. My mum and I changed mine in five minutes. It's {U5-043|necessary}, believe me.</en>\""
+  - id: s09
+    text: "Yan masada Ece'nin ekibi de işe koyulmuştu. Ece: \"<en>Our first rule: {U5-008|obey the rules} of every website. Selin, you write it. You're the queen of rules.</en>\""
+  - id: s10
+    text: "Selin: \"<en>Of course. A good teenager {U2-084|follows the rules}. And a good Internet user {U5-008|obeys} them too.</en>\""
+  - id: s11
+    text: "Elif'in kaşları çatıldı: \"<en>Rule two: {U5-004|copyright}. Remember our concert video? Someone uploaded it, and nobody asked us first!</en>\""
+  - id: s12
+    text: "Ece: \"<en>Exactly. Don't post other people's photos or videos without asking. Songs and videos have {U5-004|copyright}: they belong to the people who made them.</en>\""
+  - id: s13
+    text: "Kaan masasından döndü: \"<en>Wait… so I can't put Luna Ray's new song in my basketball video?</en>\" Elif: \"<en>Not without permission. {U5-004|Copyright}, Kaan!</en>\""
+  - id: s14
+    text: "Selin: \"<en>Rule three: {U5-003|avoid} using dangerous websites. Use only {U5-011|safe} ones.</en>\""
+  - id: s15
+    text: "Duru kendinden emin başını salladı: \"<en>I'm good at this. I {U5-003|avoid} a lot of things. Running. Stairs. Monday mornings.</en>\" Kaan: \"<en>And answering the phone!</en>\""
+  - id: s16
+    text: "Tam o sırada Elif, Kaan'ın masasına küçük bir not uzattı: \"<en>{U5-061|OMG}, our guide is great! Need help? Tell me {U5-061|ASAP}. {U5-061|CU} after school!</en>\""
+  - id: s17
+    text: "Kaan notu üç kez okudu: \"<en>OK… {U5-058|What does ASAP stand for}?</en>\" Bora: \"<en>Always Sandwiches And Pizza?</en>\""
+  - id: s18
+    text: "Selin yan masadan, kaşı havada: \"<en>No, Bora. It stands for '{U1-094|as soon as possible}'. And {U5-061|CU} means 'see you'.</en>\""
+  - id: s19
+    text: "Duru: \"<en>And {U5-061|BTW}? {U5-058|Can you explain} that one too?</en>\" Selin: \"<en>'{U5-053|By the way}.' Kaan writes it in every message.</en>\""
+  - id: s20
+    text: "Murat Bey bu sohbeti duymuştu tabii. Gülümsedi: \"<en>Good. That can be one of your rules: if you don't understand a message, ask. '{U5-058|What does it mean}?' is a smart question.</en>\""
+  - id: s21
+    text: "Kaan dördüncü kuralı kendisi yazdı, harf harf: \"<en>Rule four: think before you share. I learned it last night.</en>\""
+  - id: s22
+    text: "Sonra havalı görünmek için son bir soru sordu: \"<en>Murat Bey, one more question. What does SNS stand for? I see it everywhere.</en>\""
+  - id: s23
+    text: "Duru hiç düşünmeden: \"<en>Sleepy Nap Society. My club.</en>\" Bütün sınıf güldü; Murat Bey de."
+  - id: s24
+    text: "Murat Bey: \"<en>Nice try, Duru. Kaan, that's tomorrow's lesson.</en>\" Zil çaldığında iki ekibin rehberinin de başlığı hazırdı."
+  - id: s25
+    text: "Ece'nin ekibi: \"<en>Stay {U5-011|safe}, stay smart.</en>\" Kaan'ın ekibi, Bora'nın önerisiyle: \"<en>Five Rules from a Boy Who {U5-017|Clicked}.</en>\""
+  - id: s26
+    text: "Akşam Ece sınıf grubuna bir duyuru attı: \"<en>Tomorrow at 9 p.m.: Elif's first solo song on our channel! 🎤</en>\" Elif'in cevabı üç ünlem işaretiydi."
+
+scene:
+  - id: c01
+    speaker: Murat Bey
+    text: "<en>Five rules for a safe Internet, please. It's necessary.</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>Rule one: avoid friend requests from strangers.</en>"
+  - id: c03
+    speaker: Elif
+    text: "<en>Rule two: respect copyright. Don't post other people's videos without asking.</en>"
+  - id: c04
+    speaker: Kaan
+    text: "<en>What does ASAP stand for?</en>"
+  - id: c05
+    speaker: Selin
+    text: "<en>It stands for 'as soon as possible'. And BTW means 'by the way'.</en>"
+
+steps:
+  - item: U5-003
+    sezdir:
+      id: u5d08-003-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede Selin'in \"Rule three: avoid using dangerous websites. Use only safe ones.\" cümlesinde \"avoid\" ne anlama geliyordu?"
+      options: ["kaçınmak, uzak durmak", "ziyaret etmek", "paylaşmak", "kaydolmak"]
+      answer: 0
+    kullan:
+      id: u5d08-003-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>You should ________ eating a lot of sugar before bed. It's bad for your sleep.</en>"
+      options: ["avoid", "obey", "access", "search for"]
+      answer: 0
+      explain: "Kötü bir şeyden uzak durmak avoid'dir ve ardından fiil -ing alır: avoid eating."
+    sina:
+      id: u5d08-003-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT suggested in the guide?</en>"
+      stem: "<en>OUR SAFER INTERNET GUIDE\n• Avoid clicking on links from people you don't know.\n• Keep your password secret.\n• Ask an adult before you download a game.\n• Log out when you use a school computer.</en>"
+      options: ["Click on every link in your messages.", "Ask an adult before downloading games.", "Don't tell your password to other people.", "Log out when you finish on a school computer."]
+      answer: 0
+      explain: "Rehber bilinmeyen bağlantılardan uzak durmayı söylüyor; her bağlantıya tıklamak bunun tersi."
+  - item: U5-004
+    sezdir:
+      id: u5d08-004-z
+      type: meaning
+      context: s12
+      prompt: "Hikâyede Ece'nin \"Songs and videos have copyright: they belong to the people who made them.\" cümlesinde \"copyright\" ne anlama geliyordu?"
+      options: ["telif hakkı", "abone sayısı", "şifre", "reklam"]
+      answer: 0
+    kullan:
+      id: u5d08-004-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>You can't use that singer's song in your video without permission. It's a ________ problem.</en>"
+      options: ["copyright", "password", "discount", "notification"]
+      answer: 0
+      explain: "Bir şarkı, fotoğraf ya da videonun onu yapan kişiye ait olması copyright'tır; izinsiz kullanmak sorun yaratır."
+    sina:
+      id: u5d08-004-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>What can we infer about Elif?</en>"
+      stem: "<en>Ece: I love this photo of the sea! Can we post it on our channel?\nElif: Wait, it isn't ours. A photographer took it. We need to ask her first.</en>"
+      options: ["She is careful about copyright.", "She wants a discount on the photo.", "She thinks Ece's screen is broken.", "She doesn't like the sea."]
+      answer: 0
+      explain: "Elif fotoğrafın başkasına ait olduğunu ve önce izin almak gerektiğini söylüyor; telif hakkına dikkat ediyor."
+  - item: U5-008
+    sezdir:
+      id: u5d08-008-z
+      type: meaning
+      context: s10
+      prompt: "Hikâyede Selin'in \"And a good Internet user obeys them too.\" cümlesinde \"obey\" ne anlama geliyordu?"
+      options: ["(kurallara) uymak", "kuralları çiğnemek", "kural koymak", "kuralları unutmak"]
+      answer: 0
+    kullan:
+      id: u5d08-008-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>In a football match, all the players must ________ the rules of the game.</en>"
+      options: ["obey", "avoid", "delete", "access"]
+      answer: 0
+      explain: "Kurallara uymak obey the rules'dur; follow the rules ile aynı anlamdadır."
+    sina:
+      id: u5d08-008-s
+      type: synonym
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>Which word can replace the underlined word?</en>"
+      stem: "<en>Murat Bey: In this class, we all <u>obey</u> the rules: we listen to each other, we don't use our phones, and we come on time.</en>"
+      options: ["follow", "break", "avoid", "forget"]
+      answer: 0
+      explain: "obey the rules = follow the rules; ardından sayılan davranışlar kurallara uyulduğunu gösteriyor."
+  - item: U5-011
+    sezdir:
+      id: u5d08-011-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede Selin'in \"Use only safe ones.\" cümlesinde \"safe\" ne anlama geliyordu?"
+      options: ["güvenli", "hızlı", "ücretsiz", "popüler"]
+      answer: 0
+    kullan:
+      id: u5d08-011-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>Always wear a helmet when you ride your bike. It's important for your ________ .</en>"
+      options: ["safety", "discount", "copyright", "password"]
+      answer: 0
+      explain: "safe sıfat, safety isimdir: for your safety = güvenliğin için."
+    sina:
+      id: u5d08-011-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is an example of safe behaviour online?</en>"
+      options: ["Ignoring a friend request from a stranger.", "Sharing your home address in a comment.", "Telling your password to a new online friend.", "Clicking on a link that promises a free phone."]
+      answer: 0
+      explain: "Tanımadığın birinin isteğini görmezden gelmek güvenli davranıştır; diğerleri kişisel bilgiyi ya da hesabı tehlikeye atar."
+  - item: U5-043
+    sezdir:
+      id: u5d08-043-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede Murat Bey'in \"Five, Duru. It's necessary.\" cümlesinde \"necessary\" ne anlama geliyordu?"
+      options: ["gerekli", "imkânsız", "eğlenceli", "kolay"]
+      answer: 0
+    kullan:
+      id: u5d08-043-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>You can't enter the exam without your student card. It's ________ .</en>"
+      options: ["necessary", "unnecessary", "offline", "famous"]
+      answer: 0
+      explain: "Olmadan olmayan şey necessary'dir; unnecessary tam tersi."
+    sina:
+      id: u5d08-043-s
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Bora: Do I have to bring my drumsticks to the rehearsal tomorrow?\nDuru: ________ We're only practising the song with the guitar.</en>"
+      options: ["No, it isn't necessary.", "Yes, it's really necessary.", "By the way, I'm hungry.", "Sorry, I can't follow you."]
+      answer: 0
+      explain: "Duru provada yalnız gitar çalışacaklarını söylüyor; demek ki baget getirmek gerekli değil."
+  - item: U5-058
+    sezdir:
+      id: u5d08-058-z
+      type: meaning
+      context: s17
+      prompt: "Hikâyede Kaan'ın \"What does ASAP stand for?\" sorusu ne anlama geliyordu?"
+      options: ["ASAP neyin kısaltması, ne anlama geliyor?", "ASAP nerede duruyor?", "ASAP'ı kim yazdı?", "ASAP ne zaman gönderildi?"]
+      answer: 0
+    kullan:
+      id: u5d08-058-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>A: What does 'THX' ________ ?\nB: It means 'thanks'.</en>"
+      options: ["stand for", "stands for", "standing for"]
+      answer: 0
+      explain: "Soru does ile kurulunca fiil yalın kalır: What does THX stand for?"
+    sina:
+      id: u5d08-058-s
+      type: situation
+      lgs_like: true
+      stem_id: S10
+      prompt: "<en>Your friend writes a long message about a new game, but you don't understand one word in it. What do you say?</en>"
+      options: ["Can you explain what it means?", "I got it, thanks.", "Why don't we play it now?", "By the way, my internet is broken."]
+      answer: 0
+      explain: "Anlamadığın bir kelime için açıklama istenir: Can you explain what it means?"
+  - item: U5-061
+    sezdir:
+      id: u5d08-061-z
+      type: meaning
+      context: s16
+      prompt: "Hikâyede Elif'in notundaki \"Need help? Tell me ASAP.\" cümlesinde \"ASAP\" ne anlama geliyordu?"
+      options: ["en kısa zamanda", "teşekkürler", "görüşürüz", "aman tanrım"]
+      answer: 0
+    kullan:
+      id: u5d08-061-k
+      type: gap_fill
+      prompt: "<en>Choose the best option to fill in the blank.</en>"
+      stem: "<en>Elif: Can you send me the song ________ ? The rehearsal starts in ten minutes!</en>"
+      options: ["ASAP", "BTW", "THX", "CU"]
+      answer: 0
+      explain: "Acil bir istek için ASAP (as soon as possible) kullanılır."
+    sina:
+      id: u5d08-061-s
+      type: message_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the message, which of the following is TRUE?</en>"
+      stem: "<en>Kaan: OMG! I forgot my basketball shoes at your house! 😱 Can you bring them to school ASAP? THX! CU at 8.</en>"
+      options: ["Kaan needs his shoes quickly.", "Kaan is thanking his friend for a birthday present.", "Kaan will meet his friend at 9.", "Kaan has his basketball shoes with him."]
+      answer: 0
+      explain: "ASAP = as soon as possible: Kaan ayakkabılarını hemen istiyor. CU at 8 = saat sekizde görüşürüz."
+
+review:
+  - id: u5d08-r01
+    type: gap_fill
+    item: U5-016
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>My computer is new. Which web ________ do you use to visit websites, ClipFox or Wavey?</en>"
+    options: ["browser", "password", "screen", "follower"]
+    answer: 0
+  - id: u5d08-r02
+    type: dialogue_complete
+    item: U5-022
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: I don't know the words of this song.\nB: ________ them on the Internet. It takes ten seconds.</en>"
+    options: ["Search for", "Log out of", "Delete", "Turn off"]
+    answer: 0
+  - id: u5d08-r03
+    type: gap_fill
+    item: U5-038
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>Before she starts a project, Selin always ________ in the library and online.</en>"
+    options: ["does research", "logs out", "turns off", "deletes"]
+    answer: 0
+  - id: u5d08-r04
+    type: gap_fill
+    item: U5-039
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>Dr Demir has studied volcanoes for thirty years, and people often ask him questions about them. He's a volcano ________ .</en>"
+    options: ["expert", "follower", "stranger", "user"]
+    answer: 0
+  - id: u5d08-r05
+    type: dialogue_complete
+    item: U5-042
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Bora: Where can I find the bus times for the school trip?\nSelin: Check the school website. It has all the ________ .</en>"
+    options: ["information", "passwords", "followers", "notifications"]
+    answer: 0
+  - id: u5d08-r06
+    type: gap_fill
+    item: U5-046
+    prompt: "<en>Choose the best option to fill in the blank.</en>"
+    stem: "<en>This map app is very ________ . I never get lost now.</en>"
+    options: ["useful", "broken", "boring", "offline"]
+    answer: 0
+  - id: u5d08-r07
+    type: table_graph
+    item: U5-044
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the table, which of the following is correct?</en>"
+    stem: "<en>Class 8-B: How many hours a day do you spend online?\n• Less than 1 hour: 10%\n• 1–2 hours: 40%\n• 3–4 hours: 30%\n• More than 4 hours: 20%</en>"
+    options: ["Twenty percent of the students spend more than four hours a day online.", "Most of the students spend less than one hour a day online.", "Forty percent of the students spend three or four hours a day online.", "None of the students spend more than four hours a day online."]
+    answer: 0
+    explain: "Tabloda 'More than 4 hours: 20%' yazıyor; 'less than 1 hour' yalnız %10, '3–4 hours' %30."
+  - id: u5d08-r08
+    type: table_graph
+    item: U5-037
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the survey, which of the following is TRUE?</en>"
+    stem: "<en>Time online per day:\n• Ece: 2 hours\n• Selin: 1 hour\n• Kaan: 5 hours\n• Bora: 4 hours\nThe average is 3 hours a day.</en>"
+    options: ["Kaan spends more time online than the average.", "Selin spends more time online than the average.", "Bora spends less time online than the average.", "Ece's time online is the same as the average."]
+    answer: 0
+    explain: "Ortalama 3 saat; Kaan 5 saatle ortalamanın üstünde. Selin (1) ve Ece (2) altında, Bora (4) üstünde."
+  - id: u5d08-r09
+    type: text_infer
+    item: U5-036
+    lgs_like: true
+    stem_id: S14
+    prompt: "<en>What can we infer about Tarık?</en>"
+    stem: "<en>Tarık checks his phone fifty times a day. He plays online games until midnight, and he feels angry when he can't connect to the Internet.</en>"
+    options: ["He may be addicted to the Internet.", "He rarely uses his phone.", "He has a healthy online habit.", "He doesn't like online games."]
+    answer: 0
+    explain: "Günde elli kez telefona bakmak, gece yarısına kadar oyun ve bağlanamayınca öfke bağımlılık belirtileri."
+
+tips:
+  - type: tuzak
+    refs: [U5-061]
+    text: "LOL bazı kelime listelerinde \"Lots of love\" diye geçer; bugün yaygın anlamı \"laughing out loud\" (çok komik, gülüyorum). Sınavda kısaltmalar çoğunlukla stand for ile sorulur: What does BTW stand for?"
+  - type: mini_dilbilgisi
+    refs: [U5-003]
+    text: "avoid + V-ing: Avoid using dangerous sites. \"Avoid to use\" yanlıştır. Aynı kural Ü2'deki enjoy, don't mind, can't stand için de geçerli."
+  - type: kelime_ailesi
+    refs: [U5-011, U5-043, U5-008, U2-084]
+    text: "safe (sıfat) → safety (isim) → unsafe (zıt). necessary ↔ unnecessary. obey the rules = follow the rules: ikisi de aynı anlama gelir, LGS'de birbirinin yerine sorulabilir."
+  - type: lgs_taktigi
+    refs: [U5-058]
+    text: "What does X stand for? sorusunda yardımcı fiil does olduğu için stand -s almaz. Cevapta ise -s gelir: It stands for \"as soon as possible\". \"What is SNS stand for?\" yanlıştır."
+
+coach:
+  start: "Bugün rehber günü! Bora kendi hatasından bir kural çıkarıyor, Duru ise beş kurala itiraz ediyor. Bakalım kim kazanacak? 📝"
+  end_good: "Rehberin hazır, kuralların yerinde! Murat Bey görse tahtaya yıldız çizerdi. ⭐"
+  end_mixed: "{weak} biraz zorladı, olsun. Kaan da dün bir kuralı zor yoldan öğrendi; yarın birlikte pekiştiririz!"
+
+notifications:
+  morning: "Tahtada beş kural var, Duru üç tane yeter diyor. Kim kazanacak? 📝"
+  evening: "Elif'in notunda tuhaf harfler var: ASAP? CU? Çözmek 10 dakika!"
+  review: "Tek soru: Bora'nın birinci kuralı neydi? İngilizcesini hatırla!"
+
+editor:
+  z07: {U5-003: BEKLIYOR, U5-004: BEKLIYOR, U5-008: BEKLIYOR, U5-011: BEKLIYOR, U5-043: BEKLIYOR, U5-058: BEKLIYOR, U5-061: BEKLIYOR}

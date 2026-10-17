@@ -1,0 +1,309 @@
+schema_version: 1
+program: lgs
+unit: 2
+day: 12
+status: draft
+title: "Takım elbiseli misafirler"
+est_minutes: 10
+characters: [Ece, Selin, Elif, Kaan, Bora, Duru, Ege (Ece'nin kuzeni), Kerem (Ege'nin kuzeni)]
+new_items: [U2-067, U2-068, U2-069, U2-070, U2-071, U2-072]
+
+story:
+  - id: s01
+    text: "Pazar öğleden sonra. Grup, parkın karşısındaki küçük pastanede anket sonuçlarına bakıyordu. Kapı açıldı ve içeri iki kişi girdi."
+  - id: s02
+    text: "Önde Ege vardı: lacivert takım elbise, kravat, ayna gibi parlayan ayakkabılar. Arkasında yine takım elbiseli, uzun boylu genç bir adam."
+  - id: s03
+    text: "Ece gözlerine inanamadı: \"<en>Ege? Why are you wearing such {U2-067|formal} clothes? It's Sunday!</en>\""
+  - id: s04
+    text: "Ege burnunu havaya dikti: \"<en>This is my cousin Kerem. He's an {U2-072|adult}. He works in a bank. We only wear {U2-067|formal} clothes now.</en>\""
+  - id: s05
+    text: "Kerem gülümseyerek herkesle tokalaştı: \"<en>Hi, everyone. Nice to meet you.</en>\" Kaan, Bora'ya fısıldadı: \"<en>A real {U2-072|adult}! With a tie!</en>\""
+  - id: s06
+    text: "Ege masaya şöyle bir baktı. Sonra gözü Duru'ya takıldı: bol, yumuşacık bir kazak ve tüylü terliğe benzeyen kahverengi botlar."
+  - id: s07
+    text: "Ege: \"<en>Duru, your clothes are so {U2-070|ordinary}.</en>\" Duru omuz silkti: \"<en>Thanks! They're {U2-068|comfortable}. I'm {U1-079|laid-back}.</en>\""
+  - id: s08
+    text: "Ece kaşlarını çattı: \"<en>Ege, don't be {U1-083|mean}.</en>\" Selin, Elif'in kulağına eğildi: \"<en>He's acting like a {U2-069|snob}.</en>\""
+  - id: s09
+    text: "Ege tezgâha baktı: önünde altı kişi bekliyordu. \"<en>A {U2-053|queue}? I {U2-051|hardly ever} wait in a {U2-053|queue}.</en>\""
+  - id: s10
+    text: "Kerem onu kolundan nazikçe tuttu: \"<en>Ege, everybody waits. Come on.</en>\" İkisi de en arkaya geçti."
+  - id: s11
+    text: "Beklerken Ege vitrine burun kıvırdı: \"<en>Simit and tea? So {U2-070|ordinary}. In my opinion, a café needs croissants.</en>\""
+  - id: s12
+    text: "Bora gülmemek için yanağını ısırdı: \"<en>Ege, you're such a {U2-069|snob}! Simit isn't {U2-070|ordinary}. It's the king of food!</en>\""
+  - id: s13
+    text: "Kerem ise simidinden kocaman bir ısırık aldı ve gözlerini kapadı: \"<en>Mmm! This is {U2-071|pretty} good. Actually, it's great!</en>\""
+  - id: s14
+    text: "Sonra kravatını gevşetti, ceketini sandalyeye astı: \"<en>Phew! {U2-067|Formal} clothes are for work. They aren't very {U2-068|comfortable}.</en>\""
+  - id: s15
+    text: "Ege'nin ağzı açık kaldı: \"<en>But you said you {U2-049|rarely} wear jeans!</en>\" Kerem güldü: \"<en>At work, yes. At the weekend I {U2-050|seldom} wear a suit. Today we came from a family lunch.</en>\""
+  - id: s16
+    text: "Kerem, Duru'nun botlarını gösterdi: \"<en>Those boots look {U2-068|comfortable}. And {U2-071|pretty}, too!</en>\" Duru, Ege'ye zafer dolu bir bakış attı."
+  - id: s17
+    text: "Elif defterini açtı: \"<en>Kerem, can we ask you our survey questions? We need an {U2-072|adult}!</en>\""
+  - id: s18
+    text: "Kerem: \"<en>Sure! How often do I read? Every day. I {U2-054|follow the news} on the bus every morning.</en>\" Selin'in gözleri parladı: \"<en>Me too! On my phone, every morning!</en>\""
+  - id: s19
+    text: "Kerem: \"<en>The gym? {U2-052|Twice a week}. And I play football with my friends on Sundays, in old jeans!</en>\""
+  - id: s20
+    text: "Ege yavaşça kravatını çıkarıp cebine koydu, simitten küçük bir parça kopardı: \"<en>OK… maybe simit is {U2-071|pretty} good.</en>\" Herkes güldü."
+  - id: s21
+    text: "Ece kuzeninin omzuna dokundu: \"<en>Ege, you aren't really a {U2-069|snob}. You just wanted to look like Kerem.</en>\" Ege kızardı: \"<en>Maybe a little.</en>\""
+  - id: s22
+    text: "Kerem göz kırptı: \"<en>Ege, clothes don't make you cool. Being kind and {U1-088|respectful} does.</en>\""
+  - id: s23
+    text: "Duru ayağını uzattı: \"<en>And {U2-068|comfortable} boots, of course!</en>\" Ege de herkesle birlikte kahkahaya boğuldu."
+
+scene:
+  - id: c01
+    speaker: Ege
+    text: "<en>Duru, your clothes are so ordinary.</en>"
+  - id: c02
+    speaker: Duru
+    text: "<en>Maybe, but they're comfortable. I don't need formal clothes on a Sunday.</en>"
+  - id: c03
+    speaker: Selin
+    text: "<en>Ege, don't be a snob. Look at Kerem!</en>"
+  - id: c04
+    speaker: Kerem
+    text: "<en>I wear a suit at work, but at the weekend I wear jeans. And this simit is pretty good!</en>"
+
+steps:
+  - item: U2-067
+    sezdir:
+      id: u2d12-067-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"formal\" ne anlama geliyordu?"
+      options: ["resmi", "rahat", "renkli", "eski"]
+      answer: 0
+    kullan:
+      id: u2d12-067-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>You can't wear jeans and trainers to the ceremony. It's a ________ event.</en>"
+      options: ["formal", "casual", "ordinary", "ridiculous"]
+      answer: 0
+    sina:
+      id: u2d12-067-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Where do people usually wear formal clothes?</en>"
+      options: ["at a wedding ceremony in a hotel", "at a picnic in the park", "at a basketball match", "at a sleepover at a friend's house"]
+      answer: 0
+  - item: U2-068
+    sezdir:
+      id: u2d12-068-z
+      type: meaning
+      context: s07
+      prompt: "Hikâyede \"comfortable\" ne anlama geliyordu?"
+      options: ["rahat", "pahalı", "yepyeni", "dar"]
+      answer: 0
+    kullan:
+      id: u2d12-068-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>This sofa is so soft and ________. I can sleep here!</en>"
+      options: ["comfortable", "formal", "annoying", "nervous"]
+      answer: 0
+    sina:
+      id: u2d12-068-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What is the most important thing for Duru?</en>"
+      stem: "<en>Duru: I always wear soft trainers and big jumpers. I don't care about style. I just want to feel relaxed.</en>"
+      options: ["comfortable clothes", "formal clothes", "the latest fashion", "expensive brands"]
+      answer: 0
+  - item: U2-069
+    sezdir:
+      id: u2d12-069-z
+      type: meaning
+      context: s08
+      prompt: "Hikâyede \"snob\" ne anlama geliyordu?"
+      options: ["züppe, kendini beğenmiş", "utangaç", "yardımsever", "sakar"]
+      answer: 0
+    kullan:
+      id: u2d12-069-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>He thinks he is better than everyone because his clothes are expensive. He's a ________.</en>"
+      options: ["snob", "buddy", "member", "teenager"]
+      answer: 0
+    sina:
+      id: u2d12-069-s
+      type: trait_match
+      lgs_like: true
+      prompt: "<en>Which word describes Mert?</en>"
+      stem: "<en>Mert never eats at normal restaurants. He says, \"Only expensive places are good enough for me.\" He laughs at people with old phones.</en>"
+      options: ["snob", "generous", "laid-back", "understanding"]
+      answer: 0
+  - item: U2-070
+    sezdir:
+      id: u2d12-070-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"ordinary\" ne anlama geliyordu?"
+      options: ["sıradan", "pahalı", "garip", "lezzetli"]
+      answer: 0
+    kullan:
+      id: u2d12-070-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>It was an ________ day. I went to school, did my homework and went to bed. Nothing special.</en>"
+      options: ["ordinary", "exciting", "thrilling", "ridiculous"]
+      answer: 0
+    sina:
+      id: u2d12-070-s
+      type: synonym
+      lgs_like: true
+      prompt: "<en>\"My phone is very ordinary. It isn't new or special.\" Which one is CLOSEST in meaning to \"ordinary\"?</en>"
+      options: ["normal", "fantastic", "expensive", "strange"]
+      answer: 0
+  - item: U2-071
+    sezdir:
+      id: u2d12-071-z
+      type: meaning
+      context: s13
+      prompt: "Kerem'in \"This is pretty good.\" cümlesinde \"pretty\" ne anlama geliyordu?"
+      options: ["oldukça", "sevimli", "hiç değil", "biraz bile"]
+      answer: 0
+      explain: "pretty + sıfat (pretty good) = oldukça iyi. \"a pretty dress\" dersek güzel demek olur."
+    kullan:
+      id: u2d12-071-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>The exam wasn't perfect, but it wasn't bad. It was ________ good.</en>"
+      options: ["pretty", "ordinary", "formal", "snob"]
+      answer: 0
+    sina:
+      id: u2d12-071-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>In which sentence does \"pretty\" mean \"quite\"?</en>"
+      options: ["The film was pretty long. It was nearly three hours.", "What a pretty dress!", "Elif has a pretty little cat.", "These flowers are so pretty."]
+      answer: 0
+  - item: U2-072
+    sezdir:
+      id: u2d12-072-z
+      type: meaning
+      context: s04
+      prompt: "Hikâyede \"adult\" ne anlama geliyordu?"
+      options: ["yetişkin", "öğrenci", "çocuk", "öğretmen"]
+      answer: 0
+    kullan:
+      id: u2d12-072-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Children under 12 must come to this film with an ________.</en>"
+      options: ["adult", "snob", "member", "outfit"]
+      answer: 0
+    sina:
+      id: u2d12-072-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Ali is 8. His mum is 40, his uncle is 35 and his grandma is 70. Who is NOT an adult?</en>"
+      options: ["Ali", "his mum", "his uncle", "his grandma"]
+      answer: 0
+
+review:
+  - id: u2d12-r01
+    type: gap_fill
+    item: U2-061
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Paris and Milan are famous for their ________ shows. Designers show their new clothes there.</en>"
+    options: ["fashion", "queue", "rap", "survey"]
+    answer: 0
+  - id: u2d12-r02
+    type: synonym
+    item: U2-062
+    prompt: "<en>\"Those trainers are really trendy now.\" Which one is CLOSEST in meaning to \"trendy\"?</en>"
+    options: ["popular", "old", "cheap", "dirty"]
+    answer: 0
+  - id: u2d12-r03
+    type: message_infer
+    item: U2-063
+    prompt: "<en>Which is TRUE about Elif?</en>"
+    stem: "<en>Elif: I check the newest styles online every day, and I always buy the clothes that are in fashion.</en>"
+    options: ["She keeps up with the latest fashion.", "She doesn't care about clothes.", "She seldom buys clothes.", "She always wears formal clothes."]
+    answer: 0
+  - id: u2d12-r04
+    type: situation
+    item: U2-064
+    prompt: "<en>You are going to the cinema with your friends on Saturday. What do you wear?</en>"
+    options: ["casual clothes, like jeans and a hoodie", "a suit and a tie", "a wedding dress", "a doctor's coat"]
+    answer: 0
+  - id: u2d12-r05
+    type: dialogue_complete
+    item: U2-065
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: We're going to an expensive restaurant for Grandma's 80th birthday.\nB: Then we should wear ________.</en>"
+    options: ["smart clothes", "pyjamas", "football shirts", "old tracksuits"]
+    answer: 0
+  - id: u2d12-r06
+    type: gap_fill
+    item: U2-066
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Ece took a photo of her new ________: a green dress, a denim jacket and white trainers.</en>"
+    options: ["outfit", "band", "gym", "queue"]
+    answer: 0
+  - id: u2d12-r07
+    type: message_infer
+    item: U2-030
+    lgs_like: true
+    prompt: "<en>What does Selin think about her neighbour's dog?</en>"
+    stem: "<en>Selin: My neighbour's dog barks all night and I can't sleep!</en>"
+    options: ["It's annoying.", "It's calm.", "It's generous.", "It's patient."]
+    answer: 0
+  - id: u2d12-r08
+    type: message_infer
+    item: U2-025
+    lgs_like: true
+    prompt: "<en>What kind of music does Murat Bey listen to while he studies?</en>"
+    stem: "<en>Murat Bey: When I study, I listen to Mozart and Beethoven. Their music helps me think.</en>"
+    options: ["classical music", "rap", "rock music", "folk music"]
+    answer: 0
+  - id: u2d12-r09
+    type: gap_fill
+    item: U2-029
+    lgs_like: true
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>We can't study in the canteen. Everybody is shouting and laughing. It's too ________.</en>"
+    options: ["noisy", "quiet", "formal", "comfortable"]
+    answer: 0
+  - id: u2d12-r10
+    type: message_infer
+    item: U2-027
+    lgs_like: true
+    prompt: "<en>Which music genre is Bora making?</en>"
+    stem: "<en>Bora writes rhyming words and says them very fast to a strong beat. He doesn't really sing.</en>"
+    options: ["rap", "jazz", "classical music", "folk music"]
+    answer: 0
+
+tips:
+  - type: tuzak
+    refs: [U2-071]
+    text: "pretty iki anlamlı! pretty + isim = güzel, sevimli (a pretty dress). pretty + sıfat/zarf = oldukça (pretty good, pretty long). Kerem simide \"güzel\" demedi, \"oldukça iyi\" dedi!"
+  - type: kelime_ailesi
+    refs: [U2-068, U2-067]
+    text: "comfortable ↔ uncomfortable (rahatsız) · formal ↔ informal (resmi olmayan, gündelik)."
+  - type: lgs_taktigi
+    refs: [U2-067, U2-064, U2-065]
+    text: "formal clothes ≈ smart clothes, zıttı casual clothes. Soruda takım elbise, kravat, düğün, toplantı görürsen cevap büyük ihtimalle formal!"
+  - type: ilginc_bilgi
+    refs: [U2-068]
+    text: "comfortable yazıldığı gibi okunmaz: /ˈkʌmftəbl/, yani \"KAMF-tı-bıl\". Ortadaki \"or\" neredeyse hiç duyulmaz."
+
+coach:
+  start: "Ege geri döndü, hem de yanında takım elbiseli bir misafirle! Pastanede bugün tuhaf bir pazar yaşanacak. 🥯"
+  end_good: "Harika! Bugün hem pretty'nin iki yüzünü hem de Ege'nin yeni halini tanıdın. Sonuçların pretty good, hatta mükemmel! 🎉"
+  end_mixed: "Güzel iş! {weak} biraz zorladı, sorun değil. Ege bile simidi sonunda sevdi; bu kelimeyi de yarın seveceksin! 🥯"
+
+notifications:
+  morning: "Ege geri geldi ama yalnız değil! 👔 Yanındaki takım elbiseli adam kim?"
+  evening: "Simit mi kruvasan mı? Ege'nin pastane krizi bugünkü derste, 10 dakika. 🥯"
+  review: "Tek soru: \"This simit is pretty good.\" Buradaki pretty ne demek?"
+
+editor:
+  z07: {U2-067: BEKLIYOR, U2-068: BEKLIYOR, U2-069: BEKLIYOR, U2-070: BEKLIYOR, U2-071: BEKLIYOR, U2-072: BEKLIYOR}

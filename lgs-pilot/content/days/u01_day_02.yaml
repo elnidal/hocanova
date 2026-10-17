@@ -1,0 +1,276 @@
+schema_version: 1
+program: lgs
+unit: 1
+day: 2
+status: draft
+title: "Bora'nın kedisi (olmayan)"
+est_minutes: 10
+characters: [Ece, Bora, Kaan, Duru]
+new_items: [U1-019, U1-021, U1-007, U1-002, U1-025, U1-022]
+
+story:
+  - id: s01
+    text: "Ertesi sabah sınıf grubunda bir tek Bora'nın cevabı eksikti."
+  - id: s02
+    text: "Teneffüste Ece doğrudan sordu: \"<en>Bora, {U1-026|would you like to} come to my party?</en>\""
+  - id: s03
+    text: "Bora derin bir nefes aldı, masum bir yüz takındı: \"<en>{U1-021|Sorry, I can't}. My cat is sick.</en>\""
+  - id: s04
+    text: "Ece kaşlarını kaldırdı. Bora'nın kedisi yoktu! Geçen ay da \"kedim telefonumu sakladı\" demişti."
+  - id: s05
+    text: "Kaan fısıldadı: \"Bu, Bora'nın bu ayki on ikinci {U1-007|EXCUSE}'u.\""
+  - id: s06
+    text: "Duru ekledi: \"Matematik ödevini getirmediği gün de yine bir kedi {U1-007|EXCUSE}'u uydurmuştu: Kedi yedi!\""
+  - id: s07
+    text: "Ece gülmemek için dudağını ısırdı: \"<en>Bora, that's a funny {U1-007|excuse}!</en>\""
+  - id: s08
+    text: "Sonra bir şans daha verdi: \"<en>{U1-008|How about} Sunday? We can watch a film.</en>\""
+  - id: s09
+    text: "Bora yine aynı cümleyi kurdu: \"<en>{U1-021|Sorry, I can't}. I have a basketball match.</en>\""
+  - id: s10
+    text: "Okuldan çıkarken Kaan denedi: \"<en>Bora, come to the shop with me!</en>\" Cevap belliydi: \"<en>{U1-021|Sorry, I can't}. I'm busy.</en>\""
+  - id: s11
+    text: "Kaan kollarını iki yana açtı: \"<en>He always {U1-019|refuses}!</en>\""
+  - id: s12
+    text: "Ece, Duru'ya döndü: \"<en>Why does he always {U1-019|refuse} our invitations?</en>\""
+  - id: s13
+    text: "O akşam Bora'dan uzun bir sesli mesaj geldi: \"<en>I didn't want to {U1-019|refuse}, but…</en>\""
+  - id: s14
+    text: "Mesaj devam ediyordu: \"<en>I want to {U1-002|apologise}. I don't have a cat! The real reason is… I can't dance.</en>\""
+  - id: s15
+    text: "Ece kahkahayı bastı: \"<en>You don't have to dance! We can play board games.</en>\" Bora: \"<en>Really? {U1-022|Sounds great}!</en>\""
+  - id: s16
+    text: "Kaan araya girdi: \"<en>And there is pizza!</en>\" Bora: \"<en>{U1-022|Sounds fun}!</en>\""
+  - id: s17
+    text: "Duru, cips paketinin arasından yazdı: \"<en>A party with no cat? {U1-022|Sounds good}. Come, Bora! {U1-025|Why not}?</en>\""
+  - id: s18
+    text: "Bora bir süre düşündü, sonra yazdı: \"<en>{U1-025|Why not}? I'm coming! And I {U1-002|apologise} again.</en>\""
+  - id: s19
+    text: "Kaan hemen sordu: \"<en>Did Bora {U1-002|apologise}?</en>\" Ece: \"<en>Yes! And guess what? He {U1-001|accepted} the {U1-012|invitation}!</en>\""
+  - id: s20
+    text: "Kaan sevinçle yazdı: \"<en>Pizza and cake on Saturday? {U1-025|Why not}!</en>\" Listede artık herkes vardı. Bir tek pastayı kimin getireceği belli değildi."
+
+scene:
+  - id: c01
+    speaker: Ece
+    text: "<en>Would you like to come to my party on Saturday?</en>"
+  - id: c02
+    speaker: Bora
+    text: "<en>Sorry, I can't. I have to visit my grandmother.</en>"
+  - id: c03
+    speaker: Ece
+    text: "<en>Oh, that's OK. How about Sunday? We can have pizza.</en>"
+  - id: c04
+    speaker: Bora
+    text: "<en>Sounds great! Why not?</en>"
+
+steps:
+  - item: U1-019
+    sezdir:
+      id: d02-019-z
+      type: meaning
+      context: s11
+      prompt: "Hikâyede \"refuse\" ne anlama geliyordu?"
+      options: ["reddetmek", "kabul etmek", "davet etmek", "beklemek"]
+      answer: 0
+    kullan:
+      id: d02-019-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>Bora always ________ our invitations. He never comes!</en>"
+      options: ["refuses", "accepts", "invites", "enjoys"]
+      answer: 0
+      explain: "\"He never comes\" (hiç gelmiyor): demek ki davetleri reddediyor."
+    sina:
+      id: d02-019-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Duru refuses the invitation. Which one completes the dialogue?</en>"
+      stem: "<en>Ece: Would you like to come to the cinema with us?\nDuru: ________</en>"
+      options: ["I'm afraid I can't. I have a guitar lesson.", "Sure! What time?", "I'd love to!", "That sounds fun. See you there!"]
+      answer: 0
+  - item: U1-021
+    sezdir:
+      id: d02-021-z
+      type: meaning
+      context: s03
+      prompt: "Hikâyede \"Sorry, I can't.\" ne anlama geliyordu?"
+      options: ["Üzgünüm, gelemem / yapamam.", "Teşekkürler, gelirim.", "Belki yarın.", "Ne zaman?"]
+      answer: 0
+    kullan:
+      id: d02-021-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: Would you like to play football after school?\nB: ________ I have to study for the test.</en>"
+      options: ["Sorry, I can't.", "Yes, I'd love to!", "Why not?", "Sounds great!"]
+      answer: 0
+      explain: "Arkasından bir sebep geliyor (test için çalışmalıyım): bu bir red."
+    sina:
+      id: d02-021-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>What does Kaan mean in his message?</en>"
+      stem: "<en>Kaan: Thanks for asking, Selin! Sorry, I can't come on Friday. My cousins are visiting us.</en>"
+      options: ["He refuses the invitation and gives a reason.", "He accepts the invitation.", "He invites Selin to his house.", "He apologises for being late."]
+      answer: 0
+  - item: U1-007
+    sezdir:
+      id: d02-007-z
+      type: meaning
+      context: s05
+      prompt: "Hikâyede \"excuse\" ne anlama geliyordu?"
+      options: ["bahane, mazeret", "hediye", "şaka", "sır"]
+      answer: 0
+    kullan:
+      id: d02-007-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>\"My dog ate my homework\" is a very old ________!</en>"
+      options: ["excuse", "invitation", "party", "secret"]
+      answer: 0
+    sina:
+      id: d02-007-s
+      type: situation
+      lgs_like: true
+      prompt: "<en>Which of the following is an EXCUSE?</en>"
+      stem: "<en>Ece asks Bora: \"Why didn't you come to the meeting?\"</en>"
+      options: ["\"My bike broke on the way.\"", "\"Happy birthday, Ece!\"", "\"I'd love to come.\"", "\"Would you like some cake?\""]
+      answer: 0
+      explain: "Bahane (excuse), bir şeyi neden yapmadığını açıklamak için söylenir."
+  - item: U1-002
+    sezdir:
+      id: d02-002-z
+      type: meaning
+      context: s14
+      prompt: "Hikâyede \"apologise\" ne anlama geliyordu?"
+      options: ["özür dilemek", "teşekkür etmek", "şikâyet etmek", "söz vermek"]
+      answer: 0
+    kullan:
+      id: d02-002-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>I broke your pencil. I want to ________. I'll buy you a new one.</en>"
+      options: ["apologise", "invite", "accept", "celebrate"]
+      answer: 0
+      explain: "Kırdı, yenisini alacak: özür diliyor. (Amerikan yazımı: apologize)"
+    sina:
+      id: d02-002-s
+      type: message_infer
+      lgs_like: true
+      prompt: "<en>Why does Bora write this message?</en>"
+      stem: "<en>Bora: Ece, I'm really sorry. I didn't tell the truth about my cat. Please forgive me!</en>"
+      options: ["to apologise", "to invite Ece to a party", "to accept an invitation", "to ask for a cat"]
+      answer: 0
+  - item: U1-025
+    sezdir:
+      id: d02-025-z
+      type: meaning
+      context: s18
+      prompt: "Hikâyede \"Why not?\" ne anlama geliyordu?"
+      options: ["Neden olmasın? (kabul)", "Neden geldin?", "Hayır, olmaz.", "Neden gitmedin?"]
+      answer: 0
+    kullan:
+      id: d02-025-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: How about going to the beach this weekend?\nB: ________ It's going to be sunny!</en>"
+      options: ["Why not?", "Sorry, I can't.", "Why?", "Where were you?"]
+      answer: 0
+      explain: "\"It's going to be sunny\" olumlu bir sebep: B kabul ediyor."
+    sina:
+      id: d02-025-s
+      type: dialogue_complete
+      lgs_like: true
+      prompt: "<en>Which response ACCEPTS the suggestion?</en>"
+      stem: "<en>Kaan: Let's make a cake for Ece's party together.\nDuru: ________</en>"
+      options: ["Why not? I have some chocolate.", "Sorry, I'm busy all week.", "I don't think so.", "I can't cook at all."]
+      answer: 0
+  - item: U1-022
+    sezdir:
+      id: d02-022-z
+      type: meaning
+      context: s15
+      prompt: "Hikâyede \"Sounds great!\" ne anlama geliyordu?"
+      options: ["Kulağa harika geliyor!", "Ses çok yüksek!", "Sesini duyamıyorum.", "Harika bir şarkı!"]
+      answer: 0
+    kullan:
+      id: d02-022-k
+      type: gap_fill
+      prompt: "Boşluğa uygun olanı seç."
+      stem: "<en>A: How about a picnic on Sunday?\nB: ________! I'll bring sandwiches.</en>"
+      options: ["Sounds fun", "Sounds boring", "Sorry, I can't", "I'm not sure"]
+      answer: 0
+    sina:
+      id: d02-022-s
+      type: odd_one_out
+      lgs_like: true
+      prompt: "<en>Which one is NOT used to accept an invitation?</en>"
+      options: ["I'm afraid I'm busy.", "Sounds great!", "Why not?", "I'd love to."]
+      answer: 0
+
+review:
+  - id: d02-r01
+    type: gap_fill
+    item: U1-026
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>________ come to my house for dinner tonight?</en>"
+    options: ["Would you like to", "Do you like", "How about", "Would you like"]
+    answer: 0
+  - id: d02-r02
+    type: gap_fill
+    item: U1-008
+    stem: "<en>________ meeting at the park at 5?</en>"
+    prompt: "Boşluğa uygun olanı seç."
+    options: ["How about", "Would you like to", "Why not", "How many"]
+    answer: 0
+  - id: d02-r03
+    type: gap_fill
+    item: U1-013
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>Ece wants to ________ everyone in our class.</en>"
+    options: ["invite", "invitation", "refuse", "excuse"]
+    answer: 0
+  - id: d02-r04
+    type: gap_fill
+    item: U1-012
+    prompt: "Boşluğa uygun olanı seç."
+    stem: "<en>I got an ________ to Selin's party. It's on Friday.</en>"
+    options: ["invitation", "invited", "accept", "excuse"]
+    answer: 0
+  - id: d02-r05
+    type: situation
+    item: U1-001
+    prompt: "<en>Duru says \"Yes, I'll come!\" What does she do?</en>"
+    options: ["She accepts the invitation.", "She refuses the invitation.", "She apologises.", "She gives an excuse."]
+    answer: 0
+  - id: d02-r06
+    type: dialogue_complete
+    item: U1-011
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>A: Would you like to join our team?\nB: ________ When is the first match?</en>"
+    options: ["I'd love to!", "Sorry, I can't.", "No, thanks.", "Maybe next year."]
+    answer: 0
+
+tips:
+  - type: lgs_taktigi
+    refs: [U1-021, U1-019]
+    text: "Boşluktan sonra bir ENGEL geliyorsa (\"I have to…\", \"I'm busy…\") cevap bir red; olumlu bir plan geliyorsa (\"I'll bring…\") kabul."
+  - type: ilginc_bilgi
+    refs: [U1-002]
+    text: "İngiliz İngilizcesinde \"apologise\" (apologize de olur), Amerikan İngilizcesinde \"apologize\" yazılır. İkisi de doğru; LGS'de ikisini de görebilirsin."
+  - type: tuzak
+    refs: [U1-007]
+    text: "\"excuse\" iki farklı yerde karşına çıkar: \"a funny excuse\" = komik bir bahane, ama \"Excuse me!\" = affedersiniz."
+
+coach:
+  start: "Dünkü 6 ifadeyi hatırlıyor musun? Önce onlara bakacağız, sonra Bora'nın inanılmaz hikâyelerine 😄"
+  end_good: "Mükemmel! Artık hem kabul etmeyi hem de kibarca reddetmeyi biliyorsun. Bu ünitenin en çok sorulan kısmı bu."
+  end_mixed: "Güzel gidiyorsun. {weak} yarın karşına yine çıkacak, bu sefer daha kolay gelecek."
+
+notifications:
+  morning: "Bora'nın kedisi yok ama hikâyesi çok 🐱 Bugün kibarca \"hayır\" demeyi öğreniyoruz."
+  evening: "Bora'nın gece gönderdiği sesli mesajda ne var? 10 dakikada öğren 👀"
+  review: "Tek soru: \"Sorry, I can't. I'm busy.\" Bu bir kabul mü, red mi?"
+
+editor:
+  z07: {U1-019: BEKLIYOR, U1-021: BEKLIYOR, U1-007: BEKLIYOR, U1-002: BEKLIYOR, U1-025: BEKLIYOR, U1-022: BEKLIYOR}

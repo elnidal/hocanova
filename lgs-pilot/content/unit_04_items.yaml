@@ -1,0 +1,960 @@
+schema_version: 1
+program: lgs
+unit: 4
+unit_title: On the Phone
+source: LGS_Unite4_OnThePhone_Havuz_v1 (HEDEF)
+note: 'pilot_day = Ünite 4 ders günü (story_bible_u04.md). meaning_ban: çeviri yasağında meaning_tr yerine bu kökler aranır.'
+items:
+- id: U4-001
+  unit: 4
+  theme: Telefon eylemleri
+  display: call back / get back (to)
+  kind: phrase
+  class: trap
+  meaning_tr: geri aramak / (birine) dönüş yapmak
+  priority: 1
+  variants:
+  - Could you ask her to call me back?
+  - Could you tell him to call me?
+  - Could you tell him/her to call me back?
+  - I'll call back later
+  - I'll call you later
+  - I'll get back to you in an hour
+  - call back
+  - get back
+  trap_note: get back = eve/geri dönmek; get back to someone = birine dönüş yapmak, geri aramak
+  pilot_day: 2
+  meaning_ban:
+  - geri ara
+  - dönüş yap
+- id: U4-002
+  unit: 4
+  theme: Telefon eylemleri
+  display: caller (call / phone)
+  kind: phrase
+  class: core
+  meaning_tr: arayan kişi (aramak, telefon etmek)
+  priority: 1
+  variants:
+  - Call/Phone
+  - call
+  - caller
+  - phone
+  - phone call
+  - mobile phone
+  - cell phone
+  - smartphone
+  exam:
+    teog_lgs_total: 5
+    lgs: 1
+    words:
+    - call
+    - mobile phone
+    - phone call
+  pilot_day: 3
+  meaning_ban:
+  - arayan
+- id: U4-003
+  unit: 4
+  theme: Telefon eylemleri
+  display: connect (connection)
+  kind: phrase
+  class: core
+  meaning_tr: bağlamak, bağlanmak (bağlantı)
+  priority: 1
+  variants:
+  - connect
+  - connection
+  - internet connection
+  pilot_day: 6
+  meaning_ban:
+  - bağla
+  - bağlantı
+- id: U4-004
+  unit: 4
+  theme: Telefon eylemleri
+  display: contact / get in touch
+  kind: phrase
+  class: core
+  meaning_tr: iletişime geçmek, ulaşmak
+  priority: 1
+  variants:
+  - I'll get in touch
+  - contact
+  - contact with someone
+  - get in touch
+  exam:
+    teog_lgs_total: 3
+    lgs: 1
+    words:
+    - contact
+  pilot_day: 9
+  meaning_ban:
+  - iletişime geç
+  - ulaş
+- id: U4-005
+  unit: 4
+  theme: Telefon eylemleri
+  display: dial (a number)
+  kind: phrase
+  class: core
+  meaning_tr: (numarayı) tuşlamak, çevirmek
+  priority: 1
+  variants:
+  - dial
+  - dial a number
+  pilot_day: 4
+  meaning_ban:
+  - tuşla
+  - numarayı çevir
+- id: U4-006
+  unit: 4
+  theme: Telefon eylemleri
+  display: hang up
+  kind: phrase
+  class: trap
+  meaning_tr: telefonu kapatmak
+  priority: 1
+  variants:
+  - Hang up the phone
+  trap_note: hang up (kapatmak) ↔ hang on (beklemek) ↔ hang out (takılmak, Ü2)
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - hang up
+  pilot_day: 4
+  meaning_ban:
+  - telefonu kapat
+  - kapattı
+- id: U4-007
+  unit: 4
+  theme: Telefon eylemleri
+  display: hold on / hang on
+  kind: pattern
+  class: pattern
+  meaning_tr: (hatta) beklemek, bir dakika
+  priority: 1
+  variants:
+  - Can you hold on a moment
+  - please?
+  - Could you hold on a moment
+  - please?
+  - Hang on a minute; I'll get him/her
+  - Hang on a sec
+  - Hold on
+  - please
+  - Just a moment
+  - please
+  - hang on
+  - hold on
+  - hold on a minute
+  - hold the line
+  - just a minute
+  exam:
+    teog_lgs_total: 2
+    lgs: 1
+    words:
+    - hold on
+  pilot_day: 1
+  meaning_ban:
+  - hatta bekle
+  - bir dakika
+- id: U4-008
+  unit: 4
+  theme: Telefon eylemleri
+  display: keep in touch
+  kind: pattern
+  class: pattern
+  meaning_tr: iletişimi koparmamak, görüşmeye devam etmek
+  priority: 1
+  exam:
+    teog_lgs_total: 5
+    lgs: 0
+    words:
+    - keep in touch
+    - keep in touch
+  pilot_day: 5
+  meaning_ban:
+  - iletişimi kopar
+  - görüşmeye devam
+- id: U4-009
+  unit: 4
+  theme: Telefon eylemleri
+  display: leave / take a message
+  kind: pattern
+  class: pattern
+  meaning_tr: mesaj bırakmak / mesaj almak (not almak)
+  priority: 1
+  variants:
+  - Can I take a message?
+  - Would you like to leave a message?
+  - leave a message
+  - take a message
+  trap_note: leave a message = arayan bırakır; take a message = telefonu açan alır
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - leave a message
+  pilot_day: 2
+  meaning_ban:
+  - mesaj bırak
+  - not al
+- id: U4-010
+  unit: 4
+  theme: Telefon eylemleri
+  display: memo (take a memo)
+  kind: phrase
+  class: core
+  meaning_tr: kısa not (not almak)
+  priority: 1
+  variants:
+  - memo
+  - take a memo
+  pilot_day: 2
+  meaning_ban:
+  - kısa not
+  - not al
+- id: U4-011
+  unit: 4
+  theme: Telefon eylemleri
+  display: pick up / answer (the phone)
+  kind: phrase
+  class: trap
+  meaning_tr: telefonu açmak / cevap vermek
+  priority: 1
+  variants:
+  - answer
+  - pick up
+  trap_note: pick up = telefonu açmak; ama "yerden almak", "birini arabayla almak" da demek (Ü2 pick up ile bağ)
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - answer
+  pilot_day: 1
+  meaning_ban:
+  - telefonu aç
+  - cevap ver
+- id: U4-012
+  unit: 4
+  theme: Telefon eylemleri
+  display: put someone through
+  kind: pattern
+  class: pattern
+  meaning_tr: (telefonda) birini birine bağlamak
+  priority: 1
+  variants:
+  - Can you put me through to …?
+  - I'll put you through
+  - Put someone through to someone
+  - put through
+  pilot_day: 3
+  meaning_ban:
+  - bağla
+- id: U4-013
+  unit: 4
+  theme: Telefon eylemleri
+  display: ring
+  kind: word
+  class: trap
+  meaning_tr: (telefon) çalmak; telefonla aramak
+  priority: 1
+  trap_note: '"yüzük" ↔ (telefon) çalmak, aramak: "Give me a ring" = beni ara'
+  pilot_day: 1
+  meaning_ban:
+  - telefon çal
+  - zil çal
+  - telefonla ara
+- id: U4-014
+  unit: 4
+  theme: Hat ve ulaşılabilirlik
+  display: available
+  kind: word
+  class: trap
+  meaning_tr: müsait, (telefona) gelebilecek durumda; mevcut
+  priority: 1
+  variants:
+  - He/She is not available
+  - not available at the moment
+  trap_note: kişi için "müsait", eşya/hizmet için "mevcut, bulunur"
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - available
+  pilot_day: 2
+  meaning_ban:
+  - müsait
+  - mevcut
+- id: U4-015
+  unit: 4
+  theme: Hat ve ulaşılabilirlik
+  display: bad line (I can't hear you)
+  kind: pattern
+  class: pattern
+  meaning_tr: hat kötü, sesi iyi gelmiyor
+  priority: 1
+  variants:
+  - I can't hear you very well
+  - It's a bad line
+  - bad connection
+  - bad line
+  - line
+  pilot_day: 4
+  meaning_ban:
+  - hat kötü
+  - sesi iyi gelm
+  - duyamıyor
+- id: U4-016
+  unit: 4
+  theme: Hat ve ulaşılabilirlik
+  display: engaged (The line is busy)
+  kind: phrase
+  class: trap
+  meaning_tr: (hat) meşgul
+  priority: 1
+  variants:
+  - The line is busy
+  - engaged
+  trap_note: '"nişanlı" ↔ telefonda "meşgul"; busy (Ü1) ile eş anlamlı'
+  pilot_day: 2
+  meaning_ban:
+  - meşgul
+- id: U4-017
+  unit: 4
+  theme: Hat ve ulaşılabilirlik
+  display: extension
+  kind: word
+  class: trap
+  meaning_tr: dahili numara
+  priority: 1
+  variants:
+  - extension number
+  trap_note: '"uzatma, ek süre" ↔ telefonda "dahili (hat)"'
+  pilot_day: 3
+  meaning_ban:
+  - dahili
+- id: U4-018
+  unit: 4
+  theme: Hat ve ulaşılabilirlik
+  display: receiver / sender
+  kind: phrase
+  class: trap
+  meaning_tr: alıcı (ahize) / gönderen
+  priority: 1
+  variants:
+  - receive
+  - receiver
+  - sender
+  trap_note: receiver hem "alıcı kişi" hem "telefon ahizesi"
+  pilot_day: 9
+  meaning_ban:
+  - alıcı
+  - gönderen
+  - ahize
+- id: U4-019
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: Can you repeat that? / Pardon?
+  kind: pattern
+  class: pattern
+  meaning_tr: Tekrar eder misiniz? / Efendim? (duyamadım)
+  priority: 1
+  variants:
+  - Can you spell?
+  - Could you please repeat that?
+  - Could you repeat that?
+  - Could you speak a little louder?
+  - Could you spell your last name?
+  - How do you spell your name?
+  - I beg your pardon
+  - louder
+  - repeat
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - repeat
+  pilot_day: 4
+  meaning_ban:
+  - tekrar eder
+  - efendim
+- id: U4-020
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: How can I help you?
+  kind: pattern
+  class: pattern
+  meaning_tr: Size nasıl yardımcı olabilirim?
+  priority: 1
+  variants:
+  - How can I help you?
+  - May I help you?
+  pilot_day: 3
+  meaning_ban:
+  - yardımcı olabilir
+- id: U4-021
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: I guess
+  kind: pattern
+  class: pattern
+  meaning_tr: 'sanırım, galiba (guess: tahmin etmek)'
+  priority: 1
+  variants:
+  - guess
+  pilot_day: 5
+  meaning_ban:
+  - sanırım
+  - galiba
+- id: U4-022
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: I'll get him/her. / I'll take that.
+  kind: pattern
+  class: pattern
+  meaning_tr: Onu çağırayım. / (Telefona) ben bakarım. (anlık karar)
+  priority: 1
+  variants:
+  - I will take that
+  - I'll get him
+  - I'll take that
+  pilot_day: 1
+  meaning_ban:
+  - çağırayım
+  - ben bakarım
+- id: U4-023
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: I'm afraid … (not available at the moment)
+  kind: pattern
+  class: pattern
+  meaning_tr: Maalesef … (şu an müsait değil)
+  priority: 1
+  variants:
+  - He has gone out
+  - I'm afraid
+  - I'm afraid he is not available at the moment
+  - at the moment
+  trap_note: I'm afraid burada "korkarım" değil, kibar "maalesef"
+  pilot_day: 2
+  meaning_ban:
+  - maalesef
+- id: U4-024
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: I'm calling about / to …
+  kind: pattern
+  class: pattern
+  meaning_tr: … hakkında / … için arıyorum
+  priority: 1
+  variants:
+  - I'm calling about …
+  - ask for a service
+  - ask for information
+  - get information
+  - give some information
+  pilot_day: 3
+  meaning_ban:
+  - için arıyor
+  - hakkında arıyor
+- id: U4-025
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: I'm sorry to hear that. / Get well soon.
+  kind: pattern
+  class: pattern
+  meaning_tr: Buna üzüldüm. / Geçmiş olsun.
+  priority: 1
+  variants:
+  - I'm sorry to hear that
+  - feel better
+  - get well soon
+  pilot_day: 9
+  meaning_ban:
+  - üzüldüm
+  - geçmiş olsun
+- id: U4-026
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: May I / Could I speak to …?
+  kind: pattern
+  class: pattern
+  meaning_tr: … ile görüşebilir miyim?
+  priority: 1
+  variants:
+  - Could I speak to the manager
+  - please?
+  - Could I speak to …?
+  - Is … there?
+  - May I speak to …?
+  - May I speak with …?
+  - may I speak to
+  pilot_day: 1
+  meaning_ban:
+  - görüşebilir
+- id: U4-027
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: meet up
+  kind: phrase
+  class: core
+  meaning_tr: buluşmak (arkadaşla)
+  priority: 1
+  pilot_day: 5
+  meaning_ban:
+  - buluş
+- id: U4-028
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: Thanks for calling. / Talk to you soon. / Take care.
+  kind: pattern
+  class: pattern
+  meaning_tr: Aradığın için sağ ol / Görüşürüz / Kendine iyi bak
+  priority: 1
+  variants:
+  - Have a nice day
+  - I'll talk to you soon
+  - Talk to you soon
+  - Thanks for calling
+  - take care
+  pilot_day: 5
+  meaning_ban:
+  - aradığın için
+  - görüşürüz
+  - kendine iyi bak
+- id: U4-029
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: We'll meet …, then.
+  kind: pattern
+  class: pattern
+  meaning_tr: O zaman … buluşuruz. (konuşma anında verilen karar, will)
+  priority: 1
+  variants:
+  - I'll see you at the café tomorrow
+  - then
+  - Let's meet there about an hour then
+  - We'll meet next Saturday
+  - then
+  - We'll meet up later
+  - then
+  pilot_day: 5
+  meaning_ban:
+  - buluşuruz
+- id: U4-030
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: What's wrong? / What's the matter?
+  kind: pattern
+  class: pattern
+  meaning_tr: Ne oldu? Neyin var?
+  priority: 1
+  variants:
+  - matter
+  - what's wrong with you
+  trap_note: 'matter: "madde, konu" ↔ What''s the matter? = sorun ne?'
+  pilot_day: 9
+  meaning_ban:
+  - ne oldu
+  - neyin var
+- id: U4-031
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: Who's calling? / This is … (speaking)
+  kind: pattern
+  class: pattern
+  meaning_tr: Kim arıyor? / Ben …; Benim (aranan kişi)
+  priority: 1
+  variants:
+  - Speaking
+  - This is …
+  - This is … calling
+  - is … in?
+  - Who is calling?
+  - Who's calling
+  - please?
+  trap_note: '"Speaking." = "Benim", "konuşuyorum" değil; telefonda "I am Ali" değil "This is Ali" denir'
+  pilot_day: 1
+  meaning_ban:
+  - kim arıyor
+- id: U4-032
+  unit: 4
+  theme: Telefon kalıpları ve anlık kararlar
+  display: Sorry, wrong number.
+  kind: pattern
+  class: pattern
+  meaning_tr: Pardon, yanlış numara.
+  priority: 2
+  variants:
+  - Sorry
+  - wrong number
+  pilot_day: 4
+  meaning_ban:
+  - yanlış numara
+- id: U4-033
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: appointment
+  kind: word
+  class: core
+  meaning_tr: randevu
+  priority: 1
+  variants:
+  - doctor appointment
+  pilot_day: 6
+  meaning_ban:
+  - randevu
+- id: U4-034
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: bill
+  kind: word
+  class: trap
+  meaning_tr: fatura; hesap
+  priority: 1
+  variants:
+  - learn about a bill
+  trap_note: isim olarak Bill ↔ fatura (phone bill, electricity bill)
+  pilot_day: 10
+  meaning_ban:
+  - fatura
+  - hesap
+- id: U4-035
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: book / reserve (reservation)
+  kind: phrase
+  class: trap
+  meaning_tr: rezervasyon yaptırmak, ayırtmak
+  priority: 1
+  variants:
+  - Flight reservation
+  - I booked your room
+  - book a flight ticket
+  - book a room
+  - reserve a room
+  - restaurant reservation
+  trap_note: '"kitap" ↔ book a room/table/ticket = ayırtmak'
+  pilot_day: 6
+  meaning_ban:
+  - rezervasyon
+  - ayırt
+- id: U4-036
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: call center
+  kind: phrase
+  class: core
+  meaning_tr: çağrı merkezi
+  priority: 1
+  variants:
+  - manicipality call center
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - call center
+  pilot_day: 7
+  meaning_ban:
+  - çağrı merkez
+- id: U4-037
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: confirm
+  kind: word
+  class: core
+  meaning_tr: onaylamak, teyit etmek
+  priority: 1
+  pilot_day: 6
+  meaning_ban:
+  - onayla
+  - teyit
+- id: U4-038
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: customer (customer service)
+  kind: phrase
+  class: core
+  meaning_tr: müşteri (müşteri hizmetleri)
+  priority: 1
+  variants:
+  - customer
+  - customer service
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - customer
+  pilot_day: 7
+  meaning_ban:
+  - müşteri
+- id: U4-039
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: deliver (delivery)
+  kind: phrase
+  class: core
+  meaning_tr: teslim etmek (teslimat)
+  priority: 1
+  variants:
+  - deliver
+  - delivery
+  pilot_day: 7
+  meaning_ban:
+  - teslim
+- id: U4-040
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: make a complaint / report a problem
+  kind: phrase
+  class: core
+  meaning_tr: şikâyette bulunmak / sorun bildirmek
+  priority: 1
+  variants:
+  - Report problems with delivery
+  - make a complaint
+  - report
+  pilot_day: 7
+  meaning_ban:
+  - şikâyet
+  - şikayet
+  - sorun bildir
+- id: U4-041
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: return / change a product
+  kind: phrase
+  class: trap
+  meaning_tr: ürünü iade etmek / değiştirmek
+  priority: 1
+  variants:
+  - Change/Return a product
+  - change a product
+  - product
+  - replace
+  - return a product
+  trap_note: return = geri dönmek; return a product = iade etmek; return ticket = gidiş-dönüş bileti
+  pilot_day: 7
+  meaning_ban:
+  - iade
+- id: U4-042
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: secretary
+  kind: word
+  class: core
+  meaning_tr: sekreter
+  priority: 1
+  pilot_day: 3
+  meaning_ban:
+  - sekreter
+- id: U4-043
+  unit: 4
+  theme: İletişim yolları ve teknoloji
+  display: application
+  kind: word
+  class: trap
+  meaning_tr: (telefon) uygulama(sı)
+  priority: 1
+  trap_note: '"başvuru" anlamı da var (job application)'
+  pilot_day: 8
+  meaning_ban:
+  - uygulama
+  - başvuru
+- id: U4-044
+  unit: 4
+  theme: İletişim yolları ve teknoloji
+  display: communicate (communication)
+  kind: phrase
+  class: core
+  meaning_tr: iletişim kurmak (iletişim)
+  priority: 1
+  variants:
+  - communicate
+  - communication
+  - online communication
+  exam:
+    teog_lgs_total: 5
+    lgs: 0
+    words:
+    - communicate
+    - communication
+  pilot_day: 8
+  meaning_ban:
+  - iletişim
+- id: U4-045
+  unit: 4
+  theme: İletişim yolları ve teknoloji
+  display: conversation
+  kind: word
+  class: core
+  meaning_tr: konuşma, sohbet
+  priority: 1
+  variants:
+  - phone conversation
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - phone conversation
+  pilot_day: 8
+  meaning_ban:
+  - sohbet
+  - konuşmayı
+  - konuşması
+- id: U4-046
+  unit: 4
+  theme: İletişim yolları ve teknoloji
+  display: face to face
+  kind: phrase
+  class: core
+  meaning_tr: yüz yüze
+  priority: 1
+  variants:
+  - talk face to face
+  exam:
+    teog_lgs_total: 1
+    lgs: 0
+    words:
+    - face to face
+  pilot_day: 8
+  meaning_ban:
+  - yüz yüze
+- id: U4-047
+  unit: 4
+  theme: İletişim yolları ve teknoloji
+  display: invent (invention)
+  kind: phrase
+  class: core
+  meaning_tr: icat etmek (icat)
+  priority: 1
+  variants:
+  - invent
+  - invented
+  - invention
+  pilot_day: 8
+  meaning_ban:
+  - icat
+- id: U4-048
+  unit: 4
+  theme: İletişim yolları ve teknoloji
+  display: device
+  kind: word
+  class: core
+  meaning_tr: cihaz, alet
+  priority: 2
+  pilot_day: 8
+  meaning_ban:
+  - cihaz
+  - alet
+- id: U4-049
+  unit: 4
+  theme: Görgü, duygu ve karar
+  display: decide (decision)
+  kind: phrase
+  class: core
+  meaning_tr: karar vermek (karar)
+  priority: 1
+  variants:
+  - decide
+  - decide on the time
+  - decision
+  - decisions
+  pilot_day: 5
+  meaning_ban:
+  - karar
+- id: U4-050
+  unit: 4
+  theme: Görgü, duygu ve karar
+  display: embarrassed
+  kind: word
+  class: core
+  meaning_tr: utanmış, mahcup
+  priority: 1
+  pilot_day: 4
+  meaning_ban:
+  - utan
+  - mahcup
+- id: U4-051
+  unit: 4
+  theme: Görgü, duygu ve karar
+  display: misunderstanding
+  kind: word
+  class: core
+  meaning_tr: yanlış anlaşılma
+  priority: 1
+  pilot_day: 9
+  meaning_ban:
+  - yanlış anla
+- id: U4-052
+  unit: 4
+  theme: Görgü, duygu ve karar
+  display: polite
+  kind: word
+  class: core
+  meaning_tr: kibar, nazik
+  priority: 1
+  pilot_day: 6
+  meaning_ban:
+  - kibar
+  - nazik
+- id: U4-053
+  unit: 4
+  theme: Görgü, duygu ve karar
+  display: disturb
+  kind: word
+  class: core
+  meaning_tr: rahatsız etmek
+  priority: 2
+  pilot_day: 6
+  meaning_ban:
+  - rahatsız
+- id: U4-054
+  unit: 4
+  theme: Görgü, duygu ve karar
+  display: bored / scared / surprised (-ed duygular)
+  kind: phrase
+  class: trap
+  meaning_tr: sıkılmış / korkmuş / şaşırmış (kişinin hissi)
+  priority: 1
+  variants:
+  - bored
+  - scared
+  - surprised
+  - angry
+  - sleepy
+  trap_note: -ed kişinin hissi (I am bored), -ing şeyin özelliği (The film is boring); bored sınavda 4 kez çıktı
+  exam:
+    teog_lgs_total: 5
+    lgs: 1
+    words:
+    - angry
+    - bored
+  pilot_day: 10
+  meaning_ban:
+  - sıkıl
+  - kork
+  - şaşır
+- id: U4-055
+  unit: 4
+  theme: Çağrı merkezi, rezervasyon, randevu
+  display: solve (a problem)
+  kind: word
+  class: core
+  meaning_tr: (sorunu) çözmek, halletmek
+  priority: 1
+  variants:
+  - solve the problem
+  exam:
+    teog_lgs_total: 1
+    lgs: 1
+    words:
+    - solve
+  pilot_day: 7
+  meaning_ban:
+  - çöz
+  - hallet
+exam_note: 'exam: kullanıcının paylaştığı ders kitabı listelerindeki "sınavlarda çıkmış kelimeler" tablosu (2013–2020 TEOG + 2018–2020 LGS). 2021 sonrası doğrulanmadı.'
