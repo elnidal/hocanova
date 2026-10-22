@@ -292,7 +292,7 @@ tips:
     text: "follow → follower (takipçi), subscribe → subscriber (abone): -er/-r eki işi yapan kişiyi verir. comment hem fiil hem isim: comment on a video (yorum yapmak) / a nice comment (yorum)."
   - type: lgs_taktigi
     refs: [U5-034]
-    text: "Altı çizili kelime sorusunda (S12) her şıkkı cümleye tek tek yerleştir: anlam aynı kalıyorsa doğru şık odur. \"I'm going to share it on my page\" → post: anlam değişmiyor."
+    text: "Altı çizili kelime sorusunda her şıkkı cümleye tek tek yerleştir: anlam aynı kalıyorsa doğru şık odur. \"I'm going to share it on my page\" → post: anlam değişmiyor."
 
 coach:
   start: "Bugün Ece ilk videoyu çekiyor… onuncu kez. Sonra telefon bir türlü susmuyor! Kim ne diyecek, hazır mısın? 🎬"

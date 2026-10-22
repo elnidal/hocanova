@@ -282,7 +282,7 @@ review:
 tips:
   - type: tuzak
     refs: [U4-031]
-    text: "Telefonda \"Speaking.\" = \"Benim, buyurun.\" Yani \"konuşuyorum\" değil! Kendini tanıtırken de \"I am Ece\" değil, \"This is Ece\" ya da \"It's Ece\" denir. Duru'nun \"Duru speaking\" sözü tam olarak buydu."
+    text: "Telefonda \"Speaking.\" = \"Benim, buyurun.\" (konuşuyorum demek değil!). Kendini tanıtırken \"I am Ece\" değil, \"This is Ece\" ya da \"It's Ece\" denir. Örnek: \"Hello, Duru speaking.\""
   - type: tuzak
     refs: [U4-011, U2-048]
     text: "pick up Ü2'de \"arabayla almak\" (My dad picks me up) ve \"yerden almak\" demekti. Çalan bir telefon için söylenirse: telefonu açmak. Aynı işi answer the phone da görür."

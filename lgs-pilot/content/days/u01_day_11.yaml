@@ -284,7 +284,7 @@ review:
 tips:
   - type: tuzak
     refs: [U1-056]
-    text: "lie = yalan, yalan söylemek: \"Don't lie to me!\" Ama lie down = uzanmak: \"I want to lie down.\" Geçmiş halleri de farklı: yalan söyledi = lied, uzandı = lay. Yanında down varsa yalan değil, kanepe var!"
+    text: "lie = yalan söylemek: \"Don't lie to me!\" Ama lie down = uzanmak: \"I want to lie down.\" Yanında down varsa yalan değil, kanepe var! (Geçmiş halleri farklı: yalan söyledi = lied, uzandı = lay.)"
   - type: mini_dilbilgisi
     refs: [U1-065, U1-066]
     text: "tell a lie, tell the truth, tell a secret: hepsi TELL ile kurulur. ❌ say a lie, ❌ say a secret. Geçmiş hali: told (He told a lie.)"

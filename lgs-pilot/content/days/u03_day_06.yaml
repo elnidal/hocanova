@@ -303,7 +303,7 @@ tips:
     text: "-er ile alet: grate (rendelemek) → grater (rende), open → opener (açacak). Ama drain'in aleti farklı bir kelime: strainer (süzgeç)."
   - type: lgs_taktigi
     refs: [U3-002, U3-014, U3-024]
-    text: "Tarif sırası (S07) mantığı: önce boil, sonra drain, en son sprinkle. Kaynamadan süzülmez, süzülmeden peynir serpilmez; yemek hep en sondadır."
+    text: "Tarif sırası mantığı: önce boil, sonra drain, en son sprinkle. Kaynamadan süzülmez, süzülmeden peynir serpilmez; yemek hep en sondadır."
 
 coach:
   start: "Bora'nın annesi bir not bıraktı, Kaan'ın elinde bir zamanlayıcı var. Bu akşam her şey yolunda gidecek mi? 🍝"

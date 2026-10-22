@@ -288,7 +288,7 @@ tips:
     text: "Ölçü sözcüğünden sonra sayılamayan isim tekil kalır: a pinch of salt, a handful of cheese, a bunch of parsley (parsleys değil). flour da sayılamaz: two flours değil, two cups of flour."
   - type: ilginc_bilgi
     refs: [U3-016, U3-046]
-    text: "knead'deki k okunmaz: /niːd/, tıpkı need gibi. flour ile flower da aynı okunur; Kaan'ın papatyaları bu yüzden geldi. Tarifte, kek ve ekmek yanında hep flour = un."
+    text: "knead'deki k okunmaz: /niːd/, tıpkı need gibi. flour ile flower da aynı okunur. Tarifte, kek ve ekmek yanında hep flour = un."
 
 coach:
   start: "Bugün Duru'nun evinde pizza günü! Kaan bir sesli mesajı yanlış duyacak, Fıstık da fırsat kollayacak. 🍕"

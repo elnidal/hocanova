@@ -225,7 +225,7 @@ tips:
     text: "\"I'd love to, but…\" ile başlayan cümle aslında kibar bir RED: \"I'd love to, but I have a test tomorrow.\" LGS'de sık çıkar; \"but\"tan sonrasına bak."
   - type: lgs_taktigi
     refs: [U1-001, U1-011]
-    text: "Davet diyaloğunda boşluktan SONRAKİ cümleye bak. \"What should I bring?\" geliyorsa kabul, \"Maybe next time\" geliyorsa red var."
+    text: "Davet diyaloğunda boşluktan SONRAKİ cümleye bak. \"What should I bring?\" (Ne getireyim?) geliyorsa boşlukta bir KABUL vardır; \"Maybe next time.\" (Belki başka sefer.) geliyorsa bir RED vardır."
 
 coach:
   start: "Hoş geldin! Bugün 6 ifade var, 9 dakikanı alır. Ece parti veriyor ama Bora'dan ses yok… 👀"

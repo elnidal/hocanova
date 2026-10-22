@@ -365,7 +365,7 @@ review:
 tips:
   - type: tuzak
     refs: [U5-060]
-    text: "round-trip \"yuvarlak gezi\" değil, gidiş-dönüş demek; one-way tek yön. İngiliz İngilizcesinde aynı biletler return ticket (gidiş-dönüş) ve single ticket (tek yön) diye de geçer. Bu ikili Ünite 7 (Tourism) bilet sahnelerinde yine karşına çıkacak."
+    text: "round-trip \"yuvarlak gezi\" değil, gidiş-dönüş demek; one-way tek yön. İngiliz İngilizcesinde aynı biletler return ticket (gidiş-dönüş) ve single ticket (tek yön) diye geçer."
   - type: tuzak
     refs: [U5-050]
     text: "Yiyecekte expiry date son kullanma tarihidir; kredi kartında ise kartın son geçerlilik ayı/yılıdır (06/29). cardholder = kartın sahibi; kart bilgisini yalnız o yazar."

@@ -271,7 +271,7 @@ tips:
     text: "keep → kept, break → broke. İkisi de düzensiz fiil: \"He kept his promise.\" · \"She broke her promise.\""
   - type: tuzak
     refs: [U1-049]
-    text: "\"back up\" (ayrı yazılır) = destek olmak. \"backup\" (bitişik) = yedek, örneğin \"a backup plan\" (yedek plan). Yazılışa dikkat! Bilgisayarda fiil olarak \"back up your files\" = dosyaları yedeklemek; bu ünitede anlam \"destek olmak\"."
+    text: "\"back up\" (ayrı yazılır) = destek olmak: \"I'll back you up.\" (Seni desteklerim.) \"backup\" (bitişik) ise yedek demektir: \"a backup plan\" = yedek plan. Yazılışa dikkat!"
   - type: kelime_ailesi
     refs: [U1-092, U1-070]
     text: "support → supportive, care → caring. Fiilden kişiyi anlatan sıfat yapılır: \"She supports me. She is supportive.\""

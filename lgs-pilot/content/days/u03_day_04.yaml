@@ -303,7 +303,7 @@ tips:
     text: "dice isim olarak oyun zarı; tarifte fiil: küp küp doğramak. Zar küp şeklindedir: \"Dice the onion\" = Soğanı zar gibi küçük küpler hâlinde doğra. chop ise genel doğramak."
   - type: lgs_taktigi
     refs: [U3-019, U3-022, U3-045]
-    text: "Tarif sırası sorusunda (S07) sıralama sözcüğü yoksa mantığa bak: soymadan dilimlenmez. \"Before you slice it, peel it.\" cümlesinde yazılış sırası ile yapılış sırası terstir: önce peel, sonra slice!"
+    text: "Tarif sırası sorusunda sıralama sözcüğü yoksa mantığa bak: soymadan dilimlenmez. \"Before you slice it, peel it.\" cümlesinde yazılış sırası ile yapılış sırası terstir: önce peel, sonra slice!"
 
 coach:
   start: "Ece'nin evinde bıçaklar hazır, salata sırada. Ama Kaan neden kapıda ve neden tek gözü kapalı? 🍋"

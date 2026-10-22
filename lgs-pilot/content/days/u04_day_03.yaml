@@ -282,7 +282,7 @@ review:
 tips:
   - type: tuzak
     refs: [U4-017]
-    text: "extension okul listelerinde \"ek süre, uzatma\" diye geçebilir. Telefonda bir sayıyla birlikte duyarsan dahili hattır: \"Can you put me through to extension 214?\" Ece'nin başına gelen de buydu: 214 yerine 14!"
+    text: "extension okul listelerinde \"ek süre, uzatma\" diye geçebilir. Telefonda bir sayıyla birlikte duyarsan dahili hattır: \"Can you put me through to extension 214?\" (214 numaralı dahiliye bağlar mısınız?)"
   - type: mini_dilbilgisi
     refs: [U4-024]
     text: "Arama nedenini iki yolla söyleyebilirsin: I'm calling about + isim (I'm calling about the concert) ya da I'm calling to + fiil (I'm calling to ask for permission). \"I'm calling about ask\" olmaz."

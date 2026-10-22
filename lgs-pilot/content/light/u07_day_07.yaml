@@ -175,7 +175,7 @@ tips:
     text: "ancient ≠ old: ancient binlerce yıllık (ancient city), old günlük eski (old building). Kaynak listelerde ikisi de \"eski\" yazıyor."
   - type: mini_dilbilgisi
     refs: [U7-032]
-    text: "Tarih metinlerinde \"was built / was conquered / is located\" kalıplarını tanı: \"inşa edildi / fethedildi / bulunur\". Üretmen gerekmez."
+    text: "Tarih metinlerinde \"was built\" = inşa edildi, \"was conquered\" = fethedildi. Bunları tanıman yeter, kendin kurman gerekmez."
 coach:
   start: "Gün 7: binlerce yıllık yapılar! Saray, cami, mimari ve inşa 🏛️"
   end_good: "Harika! Tarihî bir gezinin dilini konuşuyorsun 🏛️ Yarın imparatorlar ve keşifler."

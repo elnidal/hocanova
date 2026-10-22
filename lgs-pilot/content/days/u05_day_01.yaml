@@ -278,7 +278,7 @@ review:
 tips:
   - type: kelime_ailesi
     refs: [U5-036, U5-045]
-    text: "addict = bağımlı kişi (isim) · addiction = bağımlılık · addicted = bağımlı (sıfat): He is addicted to games. Aynı aile mantığı: use (kullanmak) → user (kullanıcı) → usage (kullanım). -ed/-ing farkı: addicted, bored kişinin durumu; boring bir şeyin özelliği (a boring game)."
+    text: "addict = bağımlı kişi (isim) · addiction = bağımlılık · addicted = bağımlı (sıfat): \"He is addicted to games.\" Aynı aile mantığı: use (kullanmak) → user (kullanıcı) → usage (kullanım)."
   - type: mini_dilbilgisi
     refs: [U5-044]
     text: "per day = a day = günde: two hours per day / two hours a day. per week = a week = haftada. percent sayıyla tekil kalır: 70 percent (\"70 percents\" değil)."
@@ -287,7 +287,7 @@ tips:
     text: "Grafik sorusunda önce yüzdeleri kelimeye çevir: 100 percent = all, 70–90 percent = most, 50 percent = half, 10–20 percent = a few, 0 percent = none. Sonra şıklardaki iddiayı tek tek kontrol et."
   - type: mini_dilbilgisi
     refs: [U5-047, U5-044]
-    text: "Alışkanlık Simple Present ile sorulur: What do you use the Internet for? → I use it for music / for doing homework (for + isim / V-ing) ya da to do homework; \"for do\" yanlış. Sıklık: How often do you go online? → Every day. Süre: How many hours a day? → Three hours a day."
+    text: "İnterneti ne için kullandığını şöyle sorarsın: \"What do you use the Internet for?\" Cevap: \"I use it for music.\" ya da \"I use it for doing homework.\" (for + isim ya da -ing)"
 
 coach:
   start: "Ünite 5 başlıyor! Konser videosu okulu salladı, Murat Bey de tahtaya kocaman bir başlık yazdı. Bakalım Kaan'ın cevabı ne olacak? 📱"

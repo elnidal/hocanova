@@ -292,7 +292,7 @@ tips:
     text: "İnternet güvenliği metinlerinde doğru şık genellikle şudur: tanımadığın kişinin friend request'ini ignore et, personal information paylaşma, bir yetişkine söyle. 'Accept' ve 'share your address' içeren şıklar tuzaktır."
   - type: mini_dilbilgisi
     refs: [U5-017, U5-049, U5-010]
-    text: "click on a link / click the button ama press a button (press'ten sonra on gelmez). a 20% discount, a discount on shoes. personal information sayılamaz: \"informations\" ya da \"an information\" denmez."
+    text: "click on a link / click the button; ama press a button (press'ten sonra on gelmez). Örnek: \"Click on the link.\" · \"Press the green button.\""
 
 coach:
   start: "Bora'nın telefonunda altın bir davul seti parlıyor. Bu kadar parlak şeylere dikkat! Hadi başlayalım 🥁"

@@ -290,7 +290,7 @@ review:
 tips:
   - type: tuzak
     refs: [U4-016, U1-004]
-    text: "engaged bir kişi için \"nişanlı\" demektir; ama \"The line is engaged\" = hat meşgul. Bu anlamda busy (Ü1) ile eş anlamlıdır: \"The line is busy.\" Kaan'ın hattı nişanlanmadı, sadece kırk dakika boyunca doluydu! 😄"
+    text: "engaged bir kişi için \"nişanlı\" demektir; ama \"The line is engaged\" = hat meşgul. Bu anlamda busy (Ü1) ile eş anlamlıdır: \"The line is busy.\" Hat nişanlanmaz, sadece doludur! 😄"
   - type: tuzak
     refs: [U4-023, U4-014]
     text: "I'm afraid burada \"korkarım\" değil, kibar bir \"maalesef\": \"I'm afraid he isn't available.\" available kişi için \"müsait\", eşya ya da hizmet için \"mevcut, bulunur\" demektir (The shop is available on Saturday)."
@@ -299,7 +299,7 @@ tips:
     text: "leave a message = arayan kişi mesaj bırakır. take a message = telefonu açan kişi mesajı alır, çoğu zaman bir memo'ya yazar. \"Can I take a message?\" sorusunu hep telefonu açan sorar."
   - type: tuzak
     refs: [U4-001]
-    text: "get back tek başına \"(eve) dönmek\": \"I get back home at six.\" get back to + kişi ise \"birine dönüş yapmak, onu sonra aramak\": \"I'll get back to you.\" Zamir de call'un ortasına girer: call me back, \"call back me\" değil."
+    text: "get back tek başına \"(eve) dönmek\": \"I get back home at six.\" get back to + kişi ise \"birine dönüş yapmak\": \"I'll get back to you.\" (Sana sonra döneceğim.)"
 
 coach:
   start: "Ece bugün Kaan'ı arıyor, arıyor, arıyor… Ama hattın öbür ucundan hep aynı ses geliyor: düt düt düt. Kaan kiminle konuşuyor? 📞"
