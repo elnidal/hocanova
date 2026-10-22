@@ -96,6 +96,7 @@ steps:
       stem: "<en>Tennis singles, swimming and karate are ________. You don't need other players on your side.</en>"
       options: ["individual sports", "team sports", "music genres", "board games"]
       answer: 0
+      explain: "Yanında takım arkadaşı gerekmeyen tenis (tekler), yüzme ve karate bireysel spordur (individual sports)."
     sina:
       id: u2d07-037-s
       type: message_infer
@@ -104,6 +105,7 @@ steps:
       stem: "<en>Teen Life Survey – Your favourite sport\nKaan: basketball\nBora: karate\nEce: volleyball\nDuru: \"I don't do sports.\"</en>"
       options: ["Bora", "Kaan", "Ece", "Duru"]
       answer: 0
+      explain: "Karate bireysel bir sporudur; basketbol ve voleybol takım sporu. Duru spor yapmıyor."
   - item: U2-038
     sezdir:
       id: u2d07-038-z
@@ -119,6 +121,7 @@ steps:
       stem: "<en>My brother ________ karate every Saturday. He has a black belt.</en>"
       options: ["does", "plays", "goes", "makes"]
       answer: 0
+      explain: "Karate için \"do\" fiili kullanılır: does karate. (play topla oynanan oyunlara, go ise -ing sporlara gelir.)"
     sina:
       id: u2d07-038-s
       type: dialogue_complete
@@ -127,6 +130,7 @@ steps:
       stem: "<en>Mert: What do you do on Saturday mornings?\nBora: ________\nMert: Cool! What colour is your belt?</en>"
       options: ["I do karate.", "I play the guitar.", "I go hiking.", "I sleep until noon."]
       answer: 0
+      explain: "\"What colour is your belt?\" kuşak renginden söz ediyor; karate yapıyor: I do karate."
   - item: U2-039
     sezdir:
       id: u2d07-039-z
@@ -142,6 +146,7 @@ steps:
       stem: "<en>We love nature. Every Sunday we put on our backpacks and go ________ in the mountains.</en>"
       options: ["hiking", "shopping", "dancing", "bowling"]
       answer: 0
+      explain: "Sırt çantasıyla dağda yürümek: go hiking."
     sina:
       id: u2d07-039-s
       type: message_infer
@@ -150,6 +155,7 @@ steps:
       stem: "<en>Selin: Bring good shoes, a bottle of water and a hat. We'll walk 8 km through the forest and have lunch by the lake.</en>"
       options: ["go hiking", "do karate", "go shopping", "play a team sport"]
       answer: 0
+      explain: "İyi ayakkabı, su, şapka ve 8 km orman yürüyüşü: hiking (doğa yürüyüşü)."
   - item: U2-040
     sezdir:
       id: u2d07-040-z
@@ -165,6 +171,7 @@ steps:
       stem: "<en>You look very tired after the match. Sit down and ________ for a while.</en>"
       options: ["rest", "train", "work out", "hurry"]
       answer: 0
+      explain: "Maçtan sonra yorgun biri oturup dinlenir: rest."
     sina:
       id: u2d07-040-s
       type: synonym
@@ -172,6 +179,7 @@ steps:
       prompt: "<en>In which sentence does \"rest\" mean \"relax and stop doing things\"?</en>"
       options: ["After the long walk, we stopped to rest.", "Kaan ate half of the pizza, and Bora ate the rest.", "I'll tell you the rest of the story tomorrow.", "Duru was at home for the rest of the day."]
       answer: 0
+      explain: "Burada rest = dinlenmek. Diğer cümlelerde the rest = geri kalan."
   - item: U2-041
     sezdir:
       id: u2d07-041-z
@@ -187,6 +195,7 @@ steps:
       stem: "<en>Please ________ to the teacher. This information will be in the exam.</en>"
       options: ["pay attention", "take a break", "look fit", "rest"]
       answer: 0
+      explain: "Bu bilgi sınavda çıkacak; öğretmeni dikkatle dinle: pay attention."
     sina:
       id: u2d07-041-s
       type: situation
@@ -195,6 +204,7 @@ steps:
       stem: "<en>During the karate lesson, Bora is looking out of the window. He isn't watching the teacher at all.</en>"
       options: ["Bora, pay attention, please!", "Bora, have a rest, please!", "Well done, Bora!", "Bora, you look fit!"]
       answer: 0
+      explain: "Pencereden bakan Bora'ya \"dikkat et\" denir: pay attention, please!"
   - item: U2-042
     sezdir:
       id: u2d07-042-z
@@ -210,6 +220,7 @@ steps:
       stem: "<en>The drill next door was on for two hours, so Elif was very ________.</en>"
       options: ["annoyed", "annoying", "energetic", "fit"]
       answer: 0
+      explain: "Matkap yüzünden Elif rahatsız oldu: annoyed (rahatsız olmuş). annoying ise rahatsız eden şeyi anlatır."
     sina:
       id: u2d07-042-s
       type: message_infer
@@ -218,6 +229,7 @@ steps:
       stem: "<en>Ece: Kaan, you're late AGAIN! I waited for you for forty minutes in the cold! 😤</en>"
       options: ["annoyed", "relaxed", "proud", "thankful"]
       answer: 0
+      explain: "40 dakika soğukta bekleyen Ece kızgın ve rahatsız: annoyed."
 
 review:
   - id: u2d07-r01
@@ -227,12 +239,14 @@ review:
     stem: "<en>Kaan goes to the ________ after school. He lifts weights and runs on the running machine there.</en>"
     options: ["gym", "library", "band", "survey"]
     answer: 0
+    explain: "Ağırlık kaldırıp koşu bandına çıkılan yer spor salonu (gym)."
   - id: u2d07-r02
     type: synonym
     item: U2-032
     prompt: "<en>\"My dad works out every morning.\" Which one is CLOSEST in meaning?</en>"
     options: ["My dad does exercise every morning.", "My dad goes to the office every morning.", "My dad sleeps late every morning.", "My dad reads the news every morning."]
     answer: 0
+    explain: "work out = spor yapmak; babam her sabah egzersiz yapar."
   - id: u2d07-r03
     type: gap_fill
     item: U2-033
@@ -240,6 +254,7 @@ review:
     stem: "<en>The basketball team ________ every Monday and Wednesday after school.</en>"
     options: ["trains", "admires", "dislikes", "hates"]
     answer: 0
+    explain: "Basketbol takımı salı ve çarşamba antrenman yapar: trains."
   - id: u2d07-r04
     type: message_infer
     item: U2-034
@@ -247,6 +262,7 @@ review:
     stem: "<en>Kaan: I go to the gym three times a week and I eat healthy food. Now everyone says I look strong and healthy!</en>"
     options: ["He looks fit.", "He looks ill.", "He is lazy.", "He hates sport."]
     answer: 0
+    explain: "Haftada üç gün spor salonuna giden ve sağlıklı yiyen Kaan formda görünür."
   - id: u2d07-r05
     type: trait_match
     item: U2-035
@@ -254,6 +270,7 @@ review:
     stem: "<en>Elif's grandma is seventy, but she swims every morning, dances at every wedding and walks ten kilometres a day.</en>"
     options: ["energetic", "lazy", "sleepy", "bored"]
     answer: 0
+    explain: "Yetmiş yaşında yüzen, dans eden, günde on km yürüyen büyükanne enerjiktir."
   - id: u2d07-r06
     type: gap_fill
     item: U2-036
@@ -261,6 +278,7 @@ review:
     stem: "<en>I love basketball because it's a ________. I play with four friends and we win or lose together.</en>"
     options: ["team sport", "individual sport", "music genre", "survey"]
     answer: 0
+    explain: "Dört arkadaşla beraber oynanan oyun takım sporudur."
   - id: u2d07-r07
     type: situation
     item: U2-029
@@ -269,6 +287,7 @@ review:
     stem: "<en>Selin and Ece want to study in the café. But there is loud music, a crying baby and twenty people talking. Selin says, \"Let's go to the library.\"</en>"
     options: ["The café is too noisy.", "The café is too quiet.", "The café is closed.", "The library is noisy."]
     answer: 0
+    explain: "Yüksek müzik, ağlayan bebek ve konuşan insanlar: kafe çok gürültülü (too noisy)."
 
 tips:
   - type: tuzak

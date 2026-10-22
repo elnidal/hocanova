@@ -242,6 +242,7 @@ review:
     stem: "<en>Bora's grandpa: Bora? Yes, he's here. ________ a minute, I'll get him.</en>"
     options: ["Hang on", "Hang out", "Speak", "Ring"]
     answer: 0
+    explain: "\"Hang on a minute\" = bir dakika bekle (telefonda)."
   - id: u4d02-r02
     type: gap_fill
     item: U4-011
@@ -249,6 +250,7 @@ review:
     stem: "<en>Duru's phone rang ten times, but she didn't ________. It was on silent.</en>"
     options: ["pick up", "hang out", "invite", "join"]
     answer: 0
+    explain: "Telefon sessizdeydi, cevap vermedi: pick up (telefonu açmak)."
   - id: u4d02-r03
     type: gap_fill
     item: U4-013
@@ -256,6 +258,7 @@ review:
     stem: "<en>Listen! Is that your phone? It's ________ in your bag.</en>"
     options: ["ringing", "speaking", "holding", "picking"]
     answer: 0
+    explain: "Telefon çalıyor: ringing."
   - id: u4d02-r04
     type: dialogue_complete
     item: U4-022

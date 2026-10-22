@@ -88,6 +88,7 @@ steps:
       stem: "<en>In the library, you must ________: no food, no phones and no talking.</en>"
       options: ["follow the rules", "break the rules", "get high grades", "take a selfie"]
       answer: 0
+      explain: "Kütüphanede yemek, telefon ve konuşma yasak: kurallara uymalısın (follow the rules)."
     sina:
       id: u2d15-084-s
       type: situation
@@ -96,6 +97,7 @@ steps:
       stem: "<en>Class rules: Be on time. No phones in class. Listen to the teacher.\nAli: I always come to school on time.\nZeynep: I turn off my phone before the lesson.\nMert: I often play games on my phone in class.\nDeniz: I listen carefully when the teacher speaks.</en>"
       options: ["Mert", "Ali", "Zeynep", "Deniz"]
       answer: 0
+      explain: "Soru kurallara UYMAYANI soruyor. Kurallardan biri \"No phones in class\"; Mert derste telefonda oyun oynuyor."
   - item: U2-085
     sezdir:
       id: u2d15-085-z
@@ -111,6 +113,7 @@ steps:
       stem: "<en>You can't learn a new language in one week. Please ________.</en>"
       options: ["be realistic", "follow the news", "hang out", "pick up"]
       answer: 0
+      explain: "Bir haftada yeni dil öğrenemezsin; gerçekçi ol (be realistic)."
     sina:
       id: u2d15-085-s
       type: dialogue_complete
@@ -119,6 +122,7 @@ steps:
       stem: "<en>A: I'm going to read twenty books this weekend!\nB: ________ Maybe one or two books is better.</en>"
       options: ["Come on, be realistic.", "That's awesome, do it!", "I can't stand books.", "What about you?"]
       answer: 0
+      explain: "Bir hafta sonunda yirmi kitap okumak gerçekçi değil; \"Come on, be realistic.\" diye uyarılır."
   - item: U2-086
     sezdir:
       id: u2d15-086-z
@@ -134,6 +138,7 @@ steps:
       stem: "<en>My brother cries at sad films and always worries about his friends. He's very ________.</en>"
       options: ["sensitive", "energetic", "noisy", "formal"]
       answer: 0
+      explain: "Üzücü filmlerde ağlayan ve arkadaşları için endişelenen kişi hassastır: sensitive."
     sina:
       id: u2d15-086-s
       type: trait_match
@@ -142,6 +147,7 @@ steps:
       stem: "<en>Ayşe noticed that the new student was alone at lunch. She sat with him, smiled and asked about his day.</en>"
       options: ["sensitive", "self-centered", "stubborn", "lazy"]
       answer: 0
+      explain: "Yeni öğrencinin yalnız olduğunu fark edip yanına oturan Ayşe başkalarının duygularına duyarlıdır: sensitive."
   - item: U2-087
     sezdir:
       id: u2d15-087-z
@@ -157,6 +163,7 @@ steps:
       stem: "<en>Selin studies regularly, so she always ________ in her exams.</en>"
       options: ["gets high grades", "gets bored", "gets lost", "gets angry"]
       answer: 0
+      explain: "Düzenli çalışan Selin sınavlarda yüksek not alır: gets high grades."
     sina:
       id: u2d15-087-s
       type: message_infer
@@ -165,6 +172,7 @@ steps:
       stem: "<en>Kaan: This year I want to get high grades, so I study for two hours every day, and I ask Murat Bey when I don't understand something.</en>"
       options: ["to be successful in his exams", "to make new friends", "to join a band", "to work out at the gym"]
       answer: 0
+      explain: "Yüksek not almak istiyor ve her gün çalışıyor: amacı sınavlarda başarılı olmak."
   - item: U2-088
     sezdir:
       id: u2d15-088-z
@@ -180,6 +188,7 @@ steps:
       stem: "<en>It's 42°C today. This heat is ________! I need a cold drink and some shade.</en>"
       options: ["unbearable", "comfortable", "ordinary", "impressive"]
       answer: 0
+      explain: "42 derece sıcak dayanılmaz (unbearable)."
     sina:
       id: u2d15-088-s
       type: synonym
@@ -187,6 +196,7 @@ steps:
       prompt: "<en>\"The noise from the street is unbearable.\" Which one is CLOSEST in meaning?</en>"
       options: ["I can't stand the noise.", "I don't mind the noise.", "The noise is quite nice.", "I can't hear the noise."]
       answer: 0
+      explain: "unbearable = dayanılmaz; I can't stand the noise."
 
 review:
   - id: u2d15-r01
@@ -196,6 +206,7 @@ review:
     stem: "<en>A: Can you ________ a good film for the weekend?\nB: Sure! Watch 'Planet Zero'. It's awesome.</en>"
     options: ["recommend", "refuse", "annoy", "hate"]
     answer: 0
+    explain: "Hafta sonu için iyi bir film öner: recommend."
   - id: u2d15-r02
     type: gap_fill
     item: U2-080
@@ -219,6 +230,7 @@ review:
     stem: "<en>In this TV programme, you learn about planets, stars and the history of space travel.</en>"
     options: ["educational", "awful", "noisy", "annoying"]
     answer: 0
+    explain: "Gezegenler, yıldızlar ve uzay yolculuğu tarihi öğrendiren program eğiticidir (educational)."
   - id: u2d15-r05
     type: gap_fill
     item: U2-083
@@ -226,6 +238,7 @@ review:
     stem: "<en>The magic show was really ________. Everybody laughed and clapped.</en>"
     options: ["entertaining", "educational", "formal", "ordinary"]
     answer: 0
+    explain: "Herkesin güldüğü ve alkışladığı sihir gösterisi eğlenceliydi (entertaining)."
   - id: u2d15-r06
     type: message_infer
     item: U2-043
@@ -234,6 +247,7 @@ review:
     stem: "<en>Selin: I get up at seven, have breakfast, go to school, do my homework at five and go to bed at ten. Every day!</en>"
     options: ["her daily routine", "her favourite film", "her summer holiday", "her new outfit"]
     answer: 0
+    explain: "Her günkü yapılan işleri sayan kişi günlük rutinini anlatıyor."
   - id: u2d15-r07
     type: situation
     item: U2-044
@@ -242,6 +256,7 @@ review:
     stem: "<en>Elif's week — practise singing:\nMon ✓ · Tue ✓ · Wed ✓ · Thu ✓ · Fri ✓ · Sat ✓ · Sun ✗</en>"
     options: ["She usually practises singing.", "She never practises singing.", "She rarely practises singing.", "She sometimes practises singing."]
     answer: 0
+    explain: "Haftada 6 gün çalışıyor; bu \"usually\" (genellikle). Hiç, nadiren ya da bazen değil."
   - id: u2d15-r08
     type: dialogue_complete
     item: U2-048
@@ -250,6 +265,7 @@ review:
     stem: "<en>Selin: Dad, my lesson finishes at four. Can you ________ from school?\nDad: Sure, I'll be there with the car at four.</en>"
     options: ["pick me up", "pay attention", "work out", "follow the news"]
     answer: 0
+    explain: "Babasından okuldan almasını istiyor: pick me up."
   - id: u2d15-r09
     type: synonym
     item: U2-045
@@ -257,6 +273,7 @@ review:
     prompt: "<en>\"Kaan goes to the gym regularly.\" Which one is CLOSEST in meaning?</en>"
     options: ["He goes there on the same days every week.", "He has never been there.", "He went there only once.", "He hates going there."]
     answer: 0
+    explain: "regularly = düzenli; aynı günlerde her hafta gider."
   - id: u2d15-r10
     type: dialogue_complete
     item: U2-004
@@ -265,6 +282,7 @@ review:
     stem: "<en>A: What do you usually do at weekends?\nB: I ________ with my friends at the mall. We chat and eat ice cream.</en>"
     options: ["hang out", "work out", "pay attention", "follow the news"]
     answer: 0
+    explain: "Hafta sonu AVM'de arkadaşlarla sohbet ve dondurma: hang out (takılmak)."
   - id: u2d15-r11
     type: dialogue_complete
     item: U2-006
@@ -273,6 +291,7 @@ review:
     stem: "<en>A: I'm keen on playing chess. ________\nB: Me? I prefer basketball.</en>"
     options: ["What about you?", "Where do you live?", "What time is it?", "How old are you?"]
     answer: 0
+    explain: "\"What about you?\" = ya sen? Kendi tercihini söyledikten sonra karşıdakine sorulur."
   - id: u2d15-r12
     type: message_infer
     item: U2-003
@@ -281,6 +300,7 @@ review:
     stem: "<en>Ece asked fifty students, \"What do you do in your free time?\" Then she put their answers on a chart.</en>"
     options: ["She did a survey.", "She hung out with friends.", "She took a selfie.", "She worked out."]
     answer: 0
+    explain: "Elli öğrenciye soru sorup cevapları grafiğe koymak anket yapmaktır: did a survey."
 
 tips:
   - type: kelime_ailesi

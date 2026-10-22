@@ -92,6 +92,7 @@ steps:
       stem: "<en>Duru never worries about anything. She is very ________.</en>"
       options: ["laid-back", "stressed", "angry", "busy"]
       answer: 0
+      explain: "Hiçbir şey için endişelenmeyen rahat kişi: laid-back. stressed ve angry bunun tersidir."
     sina:
       id: d05-079-s
       type: trait_match
@@ -100,6 +101,7 @@ steps:
       stem: "<en>Mert never gets angry or stressed. Even before exams, he is calm and relaxed.</en>"
       options: ["laid-back", "bad-tempered", "jealous", "nervous"]
       answer: 0
+      explain: "Sınav öncesi bile sakin ve rahat: laid-back. Bad-tempered, jealous ve nervous bu durumla uyuşmaz."
   - item: U1-084
     sezdir:
       id: d05-084-z
@@ -115,6 +117,7 @@ steps:
       stem: "<en>Kaan loves meeting new people and talking to them. He is ________.</en>"
       options: ["outgoing", "shy", "quiet", "lazy"]
       answer: 0
+      explain: "Yeni insanlarla tanışmayı ve konuşmayı seven kişi dışa dönüktür: outgoing. shy tersidir."
     sina:
       id: d05-084-s
       type: message_infer
@@ -123,6 +126,7 @@ steps:
       stem: "<en>Elif: I'm new at this school, but I've already made ten friends. I love talking to people!</en>"
       options: ["outgoing", "shy", "mean", "unreliable"]
       answer: 0
+      explain: "Yeni okulda on arkadaş edinen ve konuşmayı seven Elif dışa dönüktür: outgoing."
   - item: U1-083
     sezdir:
       id: d05-083-z
@@ -138,6 +142,7 @@ steps:
       stem: "<en>He never shares his things and he says unkind words. He is ________.</en>"
       options: ["mean", "generous", "caring", "supportive"]
       answer: 0
+      explain: "Eşyalarını paylaşmayan ve kaba konuşan kişi: mean (cimri, kırıcı)."
     sina:
       id: d05-083-s
       type: odd_one_out
@@ -161,6 +166,7 @@ steps:
       stem: "<en>Everyone did the same work, so everyone gets the same points. That's ________.</en>"
       options: ["fair", "mean", "boring", "busy"]
       answer: 0
+      explain: "Herkes aynı işi yaptıysa aynı puanı almak adildir: fair."
     sina:
       id: d05-071-s
       type: odd_one_out
@@ -184,6 +190,7 @@ steps:
       stem: "<en>No more cake for me, thanks. I'm ________.</en>"
       options: ["full", "hungry", "empty", "thirsty"]
       answer: 0
+      explain: "\"No more cake for me\" = yeter, doydum: I'm full. Hungry (aç) bunun tersidir."
     sina:
       id: d05-097-s
       type: dialogue_complete
@@ -192,6 +199,7 @@ steps:
       stem: "<en>Mom: Would you like some more rice?\nKaan: ________</en>"
       options: ["No, thanks. I'm full.", "Yes, I'm full.", "I'm hungry, no thanks.", "Sorry, I'm late."]
       answer: 0
+      explain: "Daha fazla pirinç teklifine \"No, thanks. I'm full.\" diye cevap verilir. \"Yes, I'm full\" kendi içinde çelişir."
   - item: U1-099
     sezdir:
       id: d05-099-z
@@ -207,6 +215,7 @@ steps:
       stem: "<en>I ate three pieces of cake and two sandwiches. I'm ________!</en>"
       options: ["stuffed", "hungry", "thirsty", "busy"]
       answer: 0
+      explain: "Çok yemek yedikten sonra \"I'm stuffed!\" = tıka basa doydum."
     sina:
       id: d05-099-s
       type: synonym
@@ -214,6 +223,7 @@ steps:
       prompt: "<en>\"I'm stuffed.\" Which one is CLOSEST in meaning?</en>"
       options: ["I'm very full.", "I'm very hungry.", "I'm very tired.", "I'm very happy."]
       answer: 0
+      explain: "I'm stuffed = I'm very full (çok doydum). Aç, yorgun ya da mutlu demek değildir."
 
 review:
   - id: d05-r01
@@ -223,6 +233,7 @@ review:
     stem: "<en>Selin always does what she says. She always ________.</en>"
     options: ["keeps her promises", "breaks her promises", "refuses", "tells lies"]
     answer: 0
+    explain: "\"Does what she says\" = söylediğini yapar; yani sözünü tutar (keeps her promises). breaks her promises tersidir."
   - id: d05-r02
     type: trait_match
     item: U1-050
@@ -230,6 +241,7 @@ review:
     stem: "<en>Kaan said, \"I'll bring the music.\" But he forgot it at home.</en>"
     options: ["He broke his promise.", "He kept his promise.", "He kept a secret.", "He backed up a friend."]
     answer: 0
+    explain: "Kaan müziği getireceğini söyledi ama evde unuttu: sözünü bozdu (broke his promise)."
   - id: d05-r03
     type: dialogue_complete
     item: U1-055
@@ -237,12 +249,14 @@ review:
     stem: "<en>A: Please don't tell anyone about my new song.\nB: ________</en>"
     options: ["OK, I'll keep it a secret.", "OK, I'll tell everyone.", "Sorry, I'm full.", "Why not? Let's post it!"]
     answer: 0
+    explain: "\"Don't tell anyone\" diyen birine verilecek doğru cevap sırrı saklayacağını söylemektir: I'll keep it a secret."
   - id: d05-r04
     type: synonym
     item: U1-049
     prompt: "<en>\"My friends always back me up.\" Which one has the CLOSEST meaning?</en>"
     options: ["My friends always support me.", "My friends always forget me.", "My friends always invite me.", "My friends are always late."]
     answer: 0
+    explain: "back me up = beni destekler. En yakın anlam: always support me."
   - id: d05-r05
     type: gap_fill
     item: U1-092
@@ -250,6 +264,7 @@ review:
     stem: "<en>Thanks for helping me before the exam. You are so ________!</en>"
     options: ["supportive", "mean", "laid-back", "full"]
     answer: 0
+    explain: "Sınavdan önce yardım eden kişi destekleyicidir: supportive."
   - id: d05-r06
     type: trait_match
     item: U1-070
@@ -257,6 +272,7 @@ review:
     stem: "<en>Ece's grandma calls every day and asks, \"Are you OK? Do you need anything?\"</en>"
     options: ["caring", "mean", "unreliable", "outgoing"]
     answer: 0
+    explain: "Her gün arayıp \"Bir şeye ihtiyacın var mı?\" diye soran büyükanne ilgili ve şefkatlidir: caring."
   - id: d05-f01
     type: dialogue_complete
     item: U1-026
@@ -274,6 +290,7 @@ review:
     stem: "<en>My best friend is Selin. She always keeps her promises, and I can tell her all my secrets. When I have a problem, she backs me up. She never gets angry. She is calm and laid-back.</en>"
     options: ["She often breaks her promises.", "She can keep a secret.", "She supports her friend.", "She is a calm person."]
     answer: 0
+    explain: "Soru DOĞRU OLMAYANI soruyor. Metinde Selin sözlerini hep tutuyor; \"often breaks her promises\" bunun tersidir, bu yüzden yanlış olan şık budur."
 
 tips:
   - type: tuzak

@@ -96,6 +96,7 @@ steps:
       stem: "<en>My bag was very heavy, so Bora said, \"Let me carry it for you.\" He ________ to carry my bag. What a nice friend!</en>"
       options: ["offered", "refused", "forgot", "hated"]
       answer: 0
+      explain: "\"Let me carry it for you\" diye teklif etti: offered (teklif etti)."
     sina:
       id: d16-017-s
       type: dialogue_complete
@@ -120,6 +121,7 @@ steps:
       stem: "<en>Ece always wears the latest clothes and colourful accessories. She's very ________.</en>"
       options: ["fashionable", "unreliable", "patient", "jealous"]
       answer: 0
+      explain: "Son moda kıyafet ve aksesuar giyen Ece modaya uygun (fashionable)."
     sina:
       id: d16-072-s
       type: trait_match
@@ -128,6 +130,7 @@ steps:
       stem: "<en>Defne reads fashion magazines and always knows the new trends. Her clothes always look great.</en>"
       options: ["fashionable", "self-centered", "calm", "funny"]
       answer: 0
+      explain: "Moda dergisi okuyup yeni trendleri bilen Defne modayı takip ediyor: fashionable."
   - item: U1-073
     sezdir:
       id: d16-073-z
@@ -143,6 +146,7 @@ steps:
       stem: "<en>Bora told a joke and everyone in the class laughed. He is really ________.</en>"
       options: ["funny", "stubborn", "jealous", "calm"]
       answer: 0
+      explain: "Fıkrasıyla herkesi güldüren Bora komiktir: funny."
     sina:
       id: d16-073-s
       type: message_infer
@@ -151,6 +155,7 @@ steps:
       stem: "<en>Kerem: Why did the student eat his homework? Because the teacher said it was a piece of cake! 😂</en>"
       options: ["funny", "stubborn", "jealous", "fashionable"]
       answer: 0
+      explain: "Kerem espri yapıyor: funny."
   - item: U1-075
     sezdir:
       id: d16-075-z
@@ -166,6 +171,7 @@ steps:
       stem: "<en>Kaan runs everywhere, eats his breakfast in two minutes and never stops. He's always ________.</en>"
       options: ["in a hurry", "patient", "calm", "laid-back"]
       answer: 0
+      explain: "Her yere koşan ve kahvaltısını iki dakikada bitiren Kaan hep acelesi vardır: in a hurry."
     sina:
       id: d16-075-s
       type: message_infer
@@ -174,6 +180,7 @@ steps:
       stem: "<en>Mum: Kaan, slow down! You ate your breakfast in one minute, you put on different socks and you forgot your bag again!</en>"
       options: ["He is always in a hurry.", "He is very self-disciplined.", "He is calm in the mornings.", "He is patient."]
       answer: 0
+      explain: "Annesi \"yavaşla\" diyor; Kaan hep acele ediyor: He is always in a hurry."
   - item: U1-090
     sezdir:
       id: d16-090-z
@@ -189,6 +196,7 @@ steps:
       stem: "<en>Selin studies at the same time every day, even when her friends are playing games. She's very ________.</en>"
       options: ["self-disciplined", "lazy", "unreliable", "fashionable"]
       answer: 0
+      explain: "Arkadaşları oyun oynarken bile aynı saatte çalışan Selin disiplinlidir: self-disciplined."
     sina:
       id: d16-090-s
       type: trait_match
@@ -197,6 +205,7 @@ steps:
       stem: "<en>Arda gets up at 6 every morning and goes running. He always finishes his homework before dinner, and he never watches TV before his work is done.</en>"
       options: ["self-disciplined", "lazy", "unreliable", "jealous"]
       answer: 0
+      explain: "Her sabah 6'da kalkıp koşan, işini bitirmeden TV izlemeyen Arda disiplinlidir: self-disciplined."
   - item: U1-094
     sezdir:
       id: d16-094-z
@@ -212,6 +221,7 @@ steps:
       stem: "<en>The exam starts in ten minutes. Come to the classroom ________!</en>"
       options: ["as soon as possible", "next week", "last year", "never"]
       answer: 0
+      explain: "Sınav on dakikada başlıyor; as soon as possible = mümkün olan en kısa sürede."
     sina:
       id: d16-094-s
       type: synonym
@@ -219,6 +229,7 @@ steps:
       prompt: "<en>\"Please reply as soon as possible.\" Which one is CLOSEST in meaning?</en>"
       options: ["Please reply very quickly.", "Please reply next month.", "Please don't reply.", "Please reply slowly."]
       answer: 0
+      explain: "as soon as possible = en kısa sürede; yani çok çabuk cevap ver."
 
 review:
   - id: d16-r01
@@ -228,6 +239,7 @@ review:
     stem: "<en>My aunt bought presents for all the children in the family. She's so ________.</en>"
     options: ["generous", "stubborn", "jealous", "self-centered"]
     answer: 0
+    explain: "Bütün çocuklara hediye alan teyze cömerttir: generous."
   - id: d16-r02
     type: trait_match
     item: U1-076
@@ -235,6 +247,7 @@ review:
     stem: "<en>Bora saw the teacher with a big, heavy box. He ran and carried it to the classroom for her.</en>"
     options: ["helpful", "self-centered", "stubborn", "mean"]
     answer: 0
+    explain: "Öğretmenin ağır kutusunu taşıyan Bora yardımseverdir: helpful."
   - id: d16-r03
     type: gap_fill
     item: U1-078
@@ -242,6 +255,7 @@ review:
     stem: "<en>Ece felt ________ because Duru spent all her free time with Elif.</en>"
     options: ["jealous", "generous", "helpful", "calm"]
     answer: 0
+    explain: "Duru bütün zamanını Elif'le geçirdiği için Ece kıskandı: jealous."
   - id: d16-r04
     type: gap_fill
     item: U1-082
@@ -249,6 +263,7 @@ review:
     stem: "<en>Duru never leaves her friends in hard times. Her ________ makes her a true friend.</en>"
     options: ["loyalty", "dishonesty", "laziness", "jealousy"]
     answer: 0
+    explain: "Zor zamanlarda arkadaşlarını bırakmamak sadakattir: loyalty."
   - id: d16-r05
     type: trait_match
     item: U1-089
@@ -256,6 +271,7 @@ review:
     stem: "<en>Ege talks only about himself. He never asks about other people's problems.</en>"
     options: ["self-centered", "generous", "helpful", "understanding"]
     answer: 0
+    explain: "Yalnızca kendinden bahseden ve başkalarının sorunlarını sormayan Ege bencildir: self-centered."
   - id: d16-r06
     type: trait_match
     item: U1-091
@@ -263,6 +279,7 @@ review:
     stem: "<en>Everybody saw that the ball was out, but Ege said, \"It was a goal!\" He didn't change his mind for an hour.</en>"
     options: ["stubborn", "helpful", "generous", "patient"]
     answer: 0
+    explain: "Herkes topun dışarıda olduğunu görmesine rağmen Ege fikrini değiştirmedi: inatçı (stubborn)."
   - id: d16-r07
     type: message_infer
     item: U1-004
@@ -271,6 +288,7 @@ review:
     stem: "<en>Kaan: I have football at 4, an English course at 6 and homework after that. Sorry, I can't come to the cinema.</en>"
     options: ["He is busy.", "He has nothing to do.", "He is ill.", "He doesn't like films."]
     answer: 0
+    explain: "Futbol, İngilizce kursu ve ödevi var; yani meşgul: He is busy."
   - id: d16-r08
     type: message_infer
     item: U1-020
@@ -279,6 +297,7 @@ review:
     stem: "<en>Ece: Bora, are you coming to the picnic? (2 pm)\nEce: Bora? (3 pm)\nEce: BORA?? Hello?? 😤 (4 pm)</en>"
     options: ["Bora isn't replying.", "Bora is attending the picnic.", "Bora missed the bus.", "Bora is texting too much."]
     answer: 0
+    explain: "Ece üç kez mesaj atıyor ama Bora cevap vermiyor: Bora isn't replying."
   - id: d16-r09
     type: dialogue_complete
     item: U1-016
@@ -287,6 +306,7 @@ review:
     stem: "<en>Murat Bey: Kaan, why are you late again?\nKaan: ________</en>"
     options: ["Sorry, sir. I missed the bus.", "I have nothing to do.", "I attended the class early.", "I replied to your message."]
     answer: 0
+    explain: "\"Why are you late again?\" sorusuna mantıklı cevap: Sorry, sir. I missed the bus. (otobüsü kaçırdım)"
   - id: d16-r10
     type: situation
     item: U1-003
@@ -295,6 +315,7 @@ review:
     stem: "<en>Murat Bey: The school concert is on Friday at 7 pm. Please tell me tomorrow if you can come.</en>"
     options: ["Who can attend the concert.", "Who has nothing to do on Friday.", "Who missed the concert.", "Who can play the guitar."]
     answer: 0
+    explain: "Murat Bey konsere kimlerin gelebileceğini soruyor: Who can attend the concert."
   - id: d16-r11
     type: message_infer
     item: U1-019
@@ -303,6 +324,7 @@ review:
     stem: "<en>Bora: Thanks for the invitation, Ece, but I can't come on Saturday. I have a football match.</en>"
     options: ["He refuses the invitation.", "He accepts the invitation.", "He invites Ece to a party.", "He gives advice to Ece."]
     answer: 0
+    explain: "Futbol maçı yüzünden gelemeyeceğini söylüyor: daveti reddediyor."
   - id: d16-r12
     type: situation
     item: U1-007
@@ -311,6 +333,7 @@ review:
     stem: "<en>Kaan didn't bring his homework. He told Murat Bey, \"My dog ate it.\" But Kaan doesn't have a dog!</en>"
     options: ["an excuse", "an invitation", "some advice", "a present"]
     answer: 0
+    explain: "Köpeği olmadığı hâlde \"köpeğim yedi\" demek bir bahanedir: an excuse."
 
 tips:
   - type: tuzak

@@ -92,6 +92,7 @@ steps:
       stem: "<en>A: ________ play basketball with us after school?\nB: Sure, I'd love to!</en>"
       options: ["Do you want to", "Why did you", "Where did you", "How often do you"]
       answer: 0
+      explain: "\"Do you want to + fiil\" bir teklif sorusudur; cevap \"Sure, I'd love to!\" ile uyuyor."
     sina:
       id: d08-006-s
       type: situation
@@ -100,6 +101,7 @@ steps:
       stem: "<en>Ece is going to the park with her dog. She wants Elif to come with her.</en>"
       options: ["Do you want to come to the park with me?", "Did you go to the park yesterday?", "Where is your dog?", "Why are you at the park?"]
       answer: 0
+      explain: "Parka gelmesini isteyen Ece teklif eder: Do you want to come to the park with me?"
   - item: U1-024
     sezdir:
       id: d08-024-z
@@ -115,6 +117,7 @@ steps:
       stem: "<en>A: I don't want to watch a film today.\nB: OK. ________ a picnic?</en>"
       options: ["What about", "Who is", "Why was", "How much is"]
       answer: 0
+      explain: "\"What about + isim/-ing?\" öneri kalıbıdır: What about a picnic?"
     sina:
       id: d08-024-s
       type: dialogue_complete
@@ -123,6 +126,7 @@ steps:
       stem: "<en>Kaan: I'm bored. What can we do?\nSelin: ________\nKaan: Good idea! Let's go.</en>"
       options: ["What about playing basketball?", "I'm not bored.", "Where were you yesterday?", "I have a lot of homework."]
       answer: 0
+      explain: "Sıkılan Kaan'a öneri yapılır ve Kaan \"Good idea!\" der: What about playing basketball?"
   - item: U1-018
     sezdir:
       id: d08-018-z
@@ -138,6 +142,7 @@ steps:
       stem: "<en>Bora likes films, but he ________ picnics. He thinks they're more fun.</en>"
       options: ["prefers", "hates", "forgets", "breaks"]
       answer: 0
+      explain: "Bora filmleri sever ama pikniklerin daha eğlenceli olduğunu düşünür: prefers (tercih eder)."
     sina:
       id: d08-018-s
       type: message_infer
@@ -146,6 +151,7 @@ steps:
       stem: "<en>Selin: The cinema is OK, but picnics are better for me. I love being outside in the sun.</en>"
       options: ["She prefers picnics to the cinema.", "She prefers the cinema to picnics.", "She doesn't like being outside.", "She hates the cinema."]
       answer: 0
+      explain: "Selin pikniği sinemadan daha çok seviyor: prefers picnics to the cinema."
   - item: U1-014
     sezdir:
       id: d08-014-z
@@ -161,6 +167,7 @@ steps:
       stem: "<en>A: Pizza or burger? Which one do you want?\nB: ________ I like both.</en>"
       options: ["It doesn't matter.", "Sorry, I can't.", "That's not fair.", "I hate both."]
       answer: 0
+      explain: "\"I like both\" diyen kişi için fark etmez: It doesn't matter."
     sina:
       id: d08-014-s
       type: message_infer
@@ -169,6 +176,7 @@ steps:
       stem: "<en>Duru: Cinema or picnic? I'm happy with both. You choose!</en>"
       options: ["It doesn't matter to her.", "She prefers the cinema.", "She prefers the picnic.", "She doesn't want to come."]
       answer: 0
+      explain: "Duru ikisinden de memnun ve \"You choose!\" diyor: fark etmez (It doesn't matter)."
   - item: U1-010
     sezdir:
       id: d08-010-z
@@ -184,6 +192,7 @@ steps:
       stem: "<en>A: Would you like to join us at the picnic?\nB: Yes, ________ come. Thank you!</en>"
       options: ["I would like to", "I don't want to", "I can't", "I refuse to"]
       answer: 0
+      explain: "\"Would you like to join us?\" sorusuna kabul cevabı: Yes, I would like to come."
     sina:
       id: d08-010-s
       type: synonym
@@ -191,6 +200,7 @@ steps:
       prompt: "<en>\"I would like to visit the science museum.\" Which one is CLOSEST in meaning?</en>"
       options: ["I want to visit the science museum.", "I visited the science museum.", "I don't want to visit the science museum.", "I have to visit the science museum."]
       answer: 0
+      explain: "I would like to = I want to (istiyorum)."
   - item: U1-023
     sezdir:
       id: d08-023-z
@@ -206,6 +216,7 @@ steps:
       stem: "<en>A: I can help you with your English homework.\nB: Really? ________ Thanks!</en>"
       options: ["That would be great.", "That's not fair.", "It doesn't matter.", "Sorry, I can't."]
       answer: 0
+      explain: "Yardım teklifine memnuniyetle verilen cevap: That would be great. (Harika olur.)"
     sina:
       id: d08-023-s
       type: dialogue_complete
@@ -214,6 +225,7 @@ steps:
       stem: "<en>Selin: My dad can drive us to the park on Saturday.\nEce: ________</en>"
       options: ["That would be great! Thanks!", "That's not fair!", "I'm stuffed, thanks.", "Why are you so mean?"]
       answer: 0
+      explain: "Babasının arabayla götürmesi bir iyilik teklifidir; cevap \"That would be great! Thanks!\""
 
 review:
   - id: d08-r01
@@ -223,6 +235,7 @@ review:
     stem: "<en>Hi Mum! Let me ________ my new classmate. This is Elif.</en>"
     options: ["introduce", "refuse", "apologise", "prefer"]
     answer: 0
+    explain: "Yeni sınıf arkadaşını annesiyle tanıştırmak: introduce."
   - id: d08-r02
     type: gap_fill
     item: U1-038
@@ -230,6 +243,7 @@ review:
     stem: "<en>Elif loves animals and wants to be a vet. She is very ________ animals.</en>"
     options: ["interested in", "bored with", "afraid of", "angry with"]
     answer: 0
+    explain: "Hayvanları seven ve veteriner olmak isteyen kişi hayvanlarla ilgilidir: interested in."
   - id: d08-r03
     type: situation
     item: U1-036
@@ -237,12 +251,14 @@ review:
     stem: "<en>Duru: Elif and I both play the guitar, love dogs and hate early mornings.</en>"
     options: ["They have a lot in common.", "They have nothing in common.", "They argue a lot.", "They are sisters."]
     answer: 0
+    explain: "Duru ve Elif ikisi de gitar çalıyor, köpekleri seviyor: çok ortak noktaları var."
   - id: d08-r04
     type: synonym
     item: U1-034
     prompt: "<en>\"Kaan gets on well with everyone.\" Which one is CLOSEST in meaning?</en>"
     options: ["Everyone likes Kaan, and he likes everyone.", "Kaan argues with everyone.", "Kaan is always late.", "Kaan doesn't know anyone."]
     answer: 0
+    explain: "get on well with = iyi anlaşmak. Kaan herkesle iyi anlaşır: Everyone likes Kaan, and he likes everyone."
   - id: d08-r05
     type: dialogue_complete
     item: U1-042
@@ -250,6 +266,7 @@ review:
     stem: "<en>A: I think this film is boring.\nB: Me too! We have the ________.</en>"
     options: ["same opinion", "different opinion", "same excuse", "same invitation"]
     answer: 0
+    explain: "Aynı şeyi düşünen kişiler aynı fikirdedir: same opinion."
   - id: d08-r06
     type: gap_fill
     item: U1-029
@@ -257,6 +274,7 @@ review:
     stem: "<en>At break time, Duru and Elif sat in the garden and ________ about their dogs.</en>"
     options: ["chatted", "slept", "cooked", "swam"]
     answer: 0
+    explain: "Bahçede oturup köpeklerinden bahsetmek sohbet etmektir: chatted."
   - id: d08-r07
     type: dialogue_complete
     item: U1-026
@@ -265,6 +283,7 @@ review:
     stem: "<en>Ece: ________\nElif: I'd love to! What time does it start?\nEce: At three o'clock.</en>"
     options: ["Would you like to come to my party?", "Did you like my party?", "Where is your house?", "Are you tired?"]
     answer: 0
+    explain: "\"I'd love to! What time does it start?\" cevabı bir davete verilmiş; davet cümlesi Would you like to come to my party?"
   - id: d08-r08
     type: message_infer
     item: U1-012
@@ -273,6 +292,7 @@ review:
     stem: "<en>Dear Selin,\nPlease come to our picnic on Saturday at 11 o'clock in the city park. Bring your favourite snack!\nEce</en>"
     options: ["Ece's home address", "the day of the picnic", "the place of the picnic", "the time of the picnic"]
     answer: 0
+    explain: "Davetiyede gün, yer ve saat var; Ece'nin ev adresi yazmıyor, yalnızca \"city park\" yazıyor."
   - id: d08-r09
     type: message_infer
     item: U1-001
@@ -281,6 +301,7 @@ review:
     stem: "<en>Bora: Thanks for the invitation, Ece! Of course I'll come to the picnic. I'll bring sandwiches!</en>"
     options: ["He accepted the invitation.", "He refused the invitation.", "He invited Ece to a party.", "He apologised to Ece."]
     answer: 0
+    explain: "Davet için teşekkür edip \"I'll come\" diyen Bora daveti kabul etti."
 
 tips:
   - type: mini_dilbilgisi

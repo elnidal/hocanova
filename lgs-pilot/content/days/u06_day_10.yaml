@@ -182,6 +182,7 @@ review:
     prompt: "<en>Which word is closest in meaning to 'magnificent'?</en>"
     options: ["amazing", "boring", "dangerous", "cheap"]
     answer: 0
+    explain: "magnificent = amazing (muhteşem, harika)."
   - id: u6d10-r02
     type: gap_fill
     item: U6-041
@@ -189,6 +190,7 @@ review:
     stem: "<en>The train is late. We will arrive at our ________ two hours late.</en>"
     options: ["destination", "equipment", "courage", "glacier"]
     answer: 0
+    explain: "Tren geç; varış noktamıza (destination) iki saat geç ulaşacağız."
   - id: u6d10-r03
     type: gap_fill
     item: U6-042
@@ -196,12 +198,14 @@ review:
     stem: "<en>Let's sit by the window. The ________ of the lake is beautiful from here.</en>"
     options: ["view", "wind", "goal", "accident"]
     answer: 0
+    explain: "Pencerenin yanından gölün manzarası (view) çok güzel."
   - id: u6d10-r04
     type: situation
     item: U6-043
     prompt: "<en>Water falls from a high rock into a river. What is it?</en>"
     options: ["a waterfall", "a glacier", "a flashlight", "a destination"]
     answer: 0
+    explain: "Yüksek kayadan nehre dökülen su şelaledir (waterfall)."
   - id: u6d10-r05
     type: gap_fill
     item: U6-044
@@ -209,6 +213,7 @@ review:
     stem: "<en>The bus went slowly along the ________. There were many sharp turns between the mountains.</en>"
     options: ["mountainous road", "waterfall", "glacier", "view"]
     answer: 0
+    explain: "Dağlar arasında keskin virajlı yol: mountainous road."
   - id: u6d10-r06
     type: gap_fill
     item: U6-055
@@ -216,6 +221,7 @@ review:
     stem: "<en>On our holiday, we want to ________ the old streets of Mardin.</en>"
     options: ["explore", "drown", "attack", "land"]
     answer: 0
+    explain: "Mardin'in eski sokaklarını keşfetmek (explore) istiyoruz."
   - id: u6d10-r07
     type: message_infer
     item: U6-035

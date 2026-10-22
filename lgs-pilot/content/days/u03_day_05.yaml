@@ -240,6 +240,7 @@ review:
     stem: "<en>Wash and ________ the carrots. We don't eat the skin.</en>"
     options: ["peel", "pour", "whisk", "fry"]
     answer: 0
+    explain: "Havuçları yıkayıp kabuğunu soy (peel); kabuğu yemiyoruz."
   - id: u3d05-r02
     type: gap_fill
     item: U3-022
@@ -247,6 +248,7 @@ review:
     stem: "<en>Cut the bread into thin ________ for the sandwiches.</en>"
     options: ["slices", "bowls", "steps", "cups"]
     answer: 0
+    explain: "Ekmeği sandviç için ince dilimlere (slices) kes."
   - id: u3d05-r03
     type: dialogue_complete
     item: U3-010
@@ -264,6 +266,7 @@ review:
     stem: "<en>Elif is holding half a lemon over the salad bowl. She is pressing it hard, and the juice is falling on the tomatoes.</en>"
     options: ["She is squeezing the lemon.", "She is peeling the lemon.", "She is frying the lemon.", "She is slicing the lemon."]
     answer: 0
+    explain: "Limonu sıkıp suyunu salatanın üstüne akıtıyor: squeezing."
   - id: u3d05-r05
     type: gap_fill
     item: U3-021
@@ -271,6 +274,7 @@ review:
     stem: "<en>The salad is a bit boring. Let's ________ it with salt and black pepper.</en>"
     options: ["season", "peel", "crack", "pour"]
     answer: 0
+    explain: "Salata sıkıcı; tuz ve karabiberle tatlandıralım (season)."
   - id: u3d05-r06
     type: gap_fill
     item: U3-049
@@ -278,6 +282,7 @@ review:
     stem: "<en>Can you pass me the salt and ________, please?</en>"
     options: ["pepper", "cup", "oven", "recipe"]
     answer: 0
+    explain: "Tuz ve karabiber (pepper) yan yana söylenir."
   - id: u3d05-r07
     type: text_infer
     item: U3-048

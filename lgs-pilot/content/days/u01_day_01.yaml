@@ -137,6 +137,7 @@ steps:
       stem: "<en>Hi Kaan! I'm having a party on Friday. I'm inviting all our classmates. Can you come? – Ece</en>"
       options: ["Ece is planning a party.", "Kaan is having a party.", "The party is on Saturday.", "Ece doesn't want her classmates at the party."]
       answer: 0
+      explain: "Mesajda Ece \"I'm having a party\" ve \"I'm inviting all our classmates\" diyor: parti planlayan Ece'dir. Partiyi veren Kaan değil, gün de Friday (Cuma)."
   - item: U1-012
     sezdir:
       id: d01-012-z
@@ -177,6 +178,7 @@ steps:
       stem: "<en>Thank you for the invitation. I'm happy to ________ it!</en>"
       options: ["accept", "refuse", "invite", "forget"]
       answer: 0
+      explain: "Davete teşekkür edip sevinen kişi daveti kabul eder: accept. refuse reddetmek demektir, anlama uymaz."
     sina:
       id: d01-001-s
       type: dialogue_complete
@@ -185,6 +187,7 @@ steps:
       stem: "<en>Ece: Would you like to come to my party?\nKaan: ________ What should I bring?</en>"
       options: ["Sure, I'd love to.", "Sorry, I'm busy.", "No, I can't.", "Maybe next year."]
       answer: 0
+      explain: "\"What should I bring?\" (Ne getireyim?) diyen kişi daveti kabul etmiştir. Doğru cevap \"Sure, I'd love to.\"; diğerleri red ya da belirsiz yanıttır."
   - item: U1-011
     sezdir:
       id: d01-011-z

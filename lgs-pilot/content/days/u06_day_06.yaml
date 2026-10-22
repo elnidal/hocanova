@@ -245,6 +245,7 @@ review:
     stem: "<en>Always wear a helmet on your bike. It protects your head if you have an ________.</en>"
     options: ["accident", "adventure", "instructor", "experience"]
     answer: 0
+    explain: "Bisiklette kask, kaza (accident) olursa kafayı korur."
   - id: u6d06-r02
     type: gap_fill
     item: U6-014
@@ -252,6 +253,7 @@ review:
     stem: "<en>Camels can ________ for a long time in the desert without water.</en>"
     options: ["survive", "fall", "cost", "prefer"]
     answer: 0
+    explain: "Develer çölde uzun süre susuz hayatta kalabilir (survive)."
   - id: u6d06-r03
     type: gap_fill
     item: U6-015
@@ -259,6 +261,7 @@ review:
     stem: "<en>Be careful on the ice! You can ________ and hurt your leg.</en>"
     options: ["fall", "survive", "cost", "prefer"]
     answer: 0
+    explain: "Buzda dikkat et; düşüp (fall) bacağını yaralayabilirsin."
   - id: u6d06-r04
     type: gap_fill
     item: U6-021
@@ -266,6 +269,7 @@ review:
     stem: "<en>The book tells the story of a famous singer's life, from her birth to her ________.</en>"
     options: ["death", "accident", "experience", "instructor"]
     answer: 0
+    explain: "Hayat hikâyesi doğumdan ölüme (death) kadar anlatılır."
   - id: u6d06-r05
     type: gap_fill
     item: U6-047
@@ -273,12 +277,14 @@ review:
     stem: "<en>To work as a climbing instructor, you need the right ________: a certificate and a first aid course.</en>"
     options: ["qualifications", "accidents", "flashlights", "ropes"]
     answer: 0
+    explain: "Tırmanış eğitmeni olmak için sertifika ve ilk yardım kursu gibi niteliklere (qualifications) ihtiyaç var."
   - id: u6d06-r06
     type: situation
     item: U6-048
     prompt: "<en>At the camp, who teaches you how to use the safety equipment?</en>"
     options: ["the instructor", "the customer", "the secretary", "the caller"]
     answer: 0
+    explain: "Güvenlik ekipmanının kullanımını öğreten kişi eğitmendir (instructor)."
 
 tips:
   - type: tuzak

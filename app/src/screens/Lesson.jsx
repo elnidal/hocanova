@@ -208,7 +208,10 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   )
 
   const weak = stats.wrong.map(id => items[id]?.display).filter(Boolean)
-  const msg = weak.length ? day.coach.end_mixed.replace('{weak}', weak.slice(0, 3).join(', ')) : day.coach.end_good
+  const ratio = stats.total ? stats.first / stats.total : 1
+  const msg = !weak.length ? day.coach.end_good
+    : ratio >= 0.6 ? day.coach.end_mixed.replace('{weak}', weak.slice(0, 3).join(', '))
+    : `Yeni ifadelerde ilk gün zorlanmak çok normal 💪 ${weak.slice(0, 3).join(', ')} yarın yeniden karşına çıkacak; tekrar ettikçe oturur.`
   const tomorrow = dueCountBy(state.progress, endOfTomorrow(Date.now()))
   return (
     <div className="wrap">
@@ -219,7 +222,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
           {day.new_items.map(id => (
             <li key={id}>
               <span><b>{items[id]?.display}</b> <span className="muted">{items[id]?.meaning_tr}</span></span>
-              <span className={stats.wrong.includes(id) ? 'hot' : ''}>{stats.wrong.includes(id) ? 'biraz karıştı' : '✓'}</span>
+              <span className={stats.wrong.includes(id) ? 'hot' : ''}>{stats.wrong.includes(id) ? 'yarın tekrar' : '✓'}</span>
             </li>
           ))}
         </ul>

@@ -239,12 +239,14 @@ review:
     stem: "<en>Water ________ at 100°C. You can see big bubbles.</en>"
     options: ["boils", "melts", "drains", "covers"]
     answer: 0
+    explain: "Su 100°C'de kaynar (boils) ve büyük baloncuklar görülür."
   - id: u3d07-r02
     type: situation
     item: U3-012
     prompt: "<en>Your soup is on the cooker and you don't want it to get cold. What do you do?</en>"
     options: ["cover the saucepan with a lid", "grate the saucepan", "sprinkle the lid", "drain the soup"]
     answer: 0
+    explain: "Çorba soğumasın diye tencerenin kapağını kapatırız (cover)."
   - id: u3d07-r03
     type: dialogue_complete
     item: U3-014
@@ -252,6 +254,7 @@ review:
     stem: "<en>A: The pasta is ready. What now?\nB: ________ Then grate some cheese on it.</en>"
     options: ["Drain it in a strainer.", "Grate it on a grater.", "Boil it for another hour.", "Pour it on the floor."]
     answer: 0
+    explain: "Makarna hazırsa önce süzülür (drain), sonra peynir rendelenir."
   - id: u3d07-r04
     type: gap_fill
     item: U3-015
@@ -259,6 +262,7 @@ review:
     stem: "<en>Can you ________ some cheese for the pasta? Use the side with the small holes.</en>"
     options: ["grate", "boil", "drain", "cover"]
     answer: 0
+    explain: "Küçük delikli yüzle peyniri rendele (grate)."
   - id: u3d07-r05
     type: gap_fill
     item: U3-024
@@ -266,6 +270,7 @@ review:
     stem: "<en>________ a little salt on the potatoes before you eat them.</en>"
     options: ["Sprinkle", "Drain", "Boil", "Cover"]
     answer: 0
+    explain: "Patateslerin üzerine biraz tuz serp (sprinkle)."
   - id: u3d07-r06
     type: dialogue_complete
     item: U3-047
@@ -275,6 +280,7 @@ review:
     stem: "<en>Kaan: ________ does the pasta need to boil?\nBora: About ten minutes. Set the timer!</en>"
     options: ["How long", "How much", "How many", "How often"]
     answer: 0
+    explain: "\"How long...?\" ne kadar sürer sorusudur; cevap \"About ten minutes\"."
 
 tips:
   - type: tuzak

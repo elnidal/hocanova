@@ -88,6 +88,7 @@ steps:
       stem: "<en>I love films about space, robots and the future. ________ is my favourite genre.</en>"
       options: ["Science fiction", "Folk music", "Fashion", "Hiking"]
       answer: 0
+      explain: "Uzay, robot ve gelecek filmleri: science fiction (bilim kurgu)."
     sina:
       id: u2d13-073-s
       type: message_infer
@@ -96,6 +97,7 @@ steps:
       stem: "<en>Ali: My favourite films always have spaceships, aliens and robots from the year 3000.</en>"
       options: ["science fiction", "romantic comedy", "history documentary", "musical"]
       answer: 0
+      explain: "Uzay gemisi, uzaylı ve robot: bilim kurgu (science fiction)."
   - item: U2-074
     sezdir:
       id: u2d13-074-z
@@ -111,6 +113,7 @@ steps:
       stem: "<en>A: We won the match 5–0!\nB: Wow, that's ________!</en>"
       options: ["awesome", "awful", "boring", "annoying"]
       answer: 0
+      explain: "Maçı 5-0 kazandık, harika! awesome = muhteşem."
     sina:
       id: u2d13-074-s
       type: synonym
@@ -118,6 +121,7 @@ steps:
       prompt: "<en>\"The concert was awesome.\" Which one is CLOSEST in meaning?</en>"
       options: ["It was great.", "It was terrible.", "It was boring.", "It was too short."]
       answer: 0
+      explain: "awesome = great (harika)."
   - item: U2-075
     sezdir:
       id: u2d13-075-z
@@ -134,6 +138,7 @@ steps:
       stem: "<en>You got 100 in the exam? ________ job, Bora! I'm proud of you.</en>"
       options: ["Terrific", "Awful", "Boring", "Terrible"]
       answer: 0
+      explain: "Sınavdan 100 alan Bora'ya \"Terrific job!\" (Harika iş!) denir."
     sina:
       id: u2d13-075-s
       type: dialogue_complete
@@ -158,6 +163,7 @@ steps:
       stem: "<en>She can speak five languages, and she is only fourteen. That's really ________.</en>"
       options: ["impressive", "awful", "boring", "ordinary"]
       answer: 0
+      explain: "Çok dil bilen on dört yaşındaki kız etkileyicidir: impressive."
     sina:
       id: u2d13-076-s
       type: message_infer
@@ -166,6 +172,7 @@ steps:
       stem: "<en>Kaan: Did you see Selin's science project? She built a small robot, and it can clean the classroom! Wow!</en>"
       options: ["He thinks it's impressive.", "He thinks it's awful.", "He thinks it's boring.", "He thinks it's ridiculous."]
       answer: 0
+      explain: "Sınıfı temizleyen küçük robot yapan Selin'in projesi etkileyici (impressive)."
   - item: U2-077
     sezdir:
       id: u2d13-077-z
@@ -181,6 +188,7 @@ steps:
       stem: "<en>I read a book about the ocean. Some fish can make their own light! It was ________.</en>"
       options: ["fascinating", "awful", "boring", "annoying"]
       answer: 0
+      explain: "Bazı balıklar kendi ışığını üretiyor; ilgi çekici, büyüleyici (fascinating)."
     sina:
       id: u2d13-077-s
       type: synonym
@@ -188,6 +196,7 @@ steps:
       prompt: "<en>\"I find space fascinating.\" Which one is CLOSEST in meaning?</en>"
       options: ["I think space is very interesting.", "I think space is very boring.", "I'm afraid of space.", "I don't know anything about space."]
       answer: 0
+      explain: "fascinating = çok ilginç (very interesting)."
   - item: U2-078
     sezdir:
       id: u2d13-078-z
@@ -203,6 +212,7 @@ steps:
       stem: "<en>The food at that restaurant was ________. It was cold and very salty. I'm never going there again.</en>"
       options: ["awful", "terrific", "awesome", "impressive"]
       answer: 0
+      explain: "Soğuk ve tuzlu yemek berbattı (awful); bir daha gitmeyecek."
     sina:
       id: u2d13-078-s
       type: dialogue_complete
@@ -211,6 +221,7 @@ steps:
       stem: "<en>A: Did you like the new horror film?\nB: No, ________ The story was silly and the actors were bad.</en>"
       options: ["it was awful.", "it was terrific.", "it was impressive.", "it was fascinating."]
       answer: 0
+      explain: "Hikâye saçma, oyuncular kötü olduğu için film berbattı: it was awful."
 
 review:
   - id: u2d13-r01
@@ -220,6 +231,7 @@ review:
     stem: "<en>My father wears a suit and a tie to work. His office is a very ________ place.</en>"
     options: ["formal", "casual", "comfortable", "ridiculous"]
     answer: 0
+    explain: "Takım elbise ve kravat giyilen ofis resmî (formal) bir yerdir."
   - id: u2d13-r02
     type: gap_fill
     item: U2-068
@@ -227,6 +239,7 @@ review:
     stem: "<en>These old trainers aren't trendy, but they are very ________. I can walk all day in them.</en>"
     options: ["comfortable", "formal", "awful", "nervous"]
     answer: 0
+    explain: "Moda olmasa da bütün gün yürünebilen eski spor ayakkabılar rahattır (comfortable)."
   - id: u2d13-r03
     type: trait_match
     item: U2-069
@@ -234,6 +247,7 @@ review:
     stem: "<en>Can thinks he is better than everyone because his clothes are expensive. He doesn't talk to people with cheap shoes.</en>"
     options: ["He is a snob.", "He is a true friend.", "He is very patient.", "He is very helpful."]
     answer: 0
+    explain: "Pahalı kıyafetlerle kendini üstün gören Can bir snobdur."
   - id: u2d13-r04
     type: gap_fill
     item: U2-070
@@ -241,6 +255,7 @@ review:
     stem: "<en>Nothing special happened today. It was just an ________ Tuesday: school, homework and dinner.</en>"
     options: ["ordinary", "impressive", "awesome", "exciting"]
     answer: 0
+    explain: "Özel bir şey olmadı, okul ödev ve yemek: sıradan (ordinary) bir salı."
   - id: u2d13-r05
     type: synonym
     item: U2-071
@@ -255,6 +270,7 @@ review:
     stem: "<en>Children under twelve must come to the cinema with ________.</en>"
     options: ["an adult", "a baby", "a snob", "an outfit"]
     answer: 0
+    explain: "12 yaş altı çocuklar yanında bir yetişkinle (an adult) gelmeli."
   - id: u2d13-r07
     type: situation
     item: U2-031
@@ -263,6 +279,7 @@ review:
     stem: "<en>Kaan wants to lift weights and run on a running machine after school.</en>"
     options: ["to the gym", "to the library", "to the cinema", "to the canteen"]
     answer: 0
+    explain: "Ağırlık kaldırıp koşu makinesinde koşmak isteyen spor salonuna (gym) gider."
   - id: u2d13-r08
     type: message_infer
     item: U2-032
@@ -271,6 +288,7 @@ review:
     stem: "<en>Kaan: I go to the gym three times a week. I lift weights, do push-ups and run for an hour.</en>"
     options: ["He works out.", "He takes selfies.", "He plays the guitar.", "He follows the news."]
     answer: 0
+    explain: "Haftada üç kez spor salonunda ağırlık kaldırıp koşuyor: spor yapıyor (works out)."
   - id: u2d13-r09
     type: odd_one_out
     item: U2-036
@@ -278,6 +296,7 @@ review:
     prompt: "<en>Which one is NOT a team sport?</en>"
     options: ["karate", "basketball", "volleyball", "football"]
     answer: 0
+    explain: "Soru takım sporu OLMAYANI soruyor. Karate bireysel spordur; diğerleri takım sporudur."
   - id: u2d13-r10
     type: trait_match
     item: U2-035
@@ -286,6 +305,7 @@ review:
     stem: "<en>Elif's grandmother is seventy, but she swims every morning, dances at every wedding and walks ten kilometres a day.</en>"
     options: ["energetic", "lazy", "nervous", "bored"]
     answer: 0
+    explain: "Yetmiş yaşında her sabah yüzen, dans eden büyükanne enerjiktir."
 
 tips:
   - type: tuzak

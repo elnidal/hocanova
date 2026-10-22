@@ -118,6 +118,7 @@ steps:
       stem: "<en>Selin: On weekdays I go to school and study a lot. At the weekend I have more free time, so I read books and go cycling.</en>"
       options: ["She reads books in her free time at the weekend.", "She has a lot of free time on weekdays.", "She goes cycling at school.", "She never studies on weekdays."]
       answer: 0
+      explain: "Metinde hafta sonu daha çok boş zamanı olduğu ve kitap okuyup bisiklete bindiği yazıyor. Hafta içi çok çalışıyor."
   - item: U2-003
     sezdir:
       id: u2d01-003-z
@@ -133,6 +134,7 @@ steps:
       stem: "<en>We asked 50 students about their hobbies. Here are the results of our ________.</en>"
       options: ["survey", "holiday", "birthday", "invitation"]
       answer: 0
+      explain: "50 öğrenciye hobilerini sorduk; bunların sonucu bir anketin (survey) sonucudur."
     sina:
       id: u2d01-003-s
       type: message_infer
@@ -165,6 +167,7 @@ steps:
       prompt: "<en>\"Kaan and Bora often hang out in the park after school.\" Which one is CLOSEST in meaning?</en>"
       options: ["They often spend time together in the park.", "They often clean the park.", "They never go to the park.", "They often study in the library."]
       answer: 0
+      explain: "hang out = vakit geçirmek, takılmak. Kaan ve Bora okuldan sonra parkta birlikte vakit geçiriyor."
   - item: U2-005
     sezdir:
       id: u2d01-005-z
@@ -204,6 +207,7 @@ steps:
       stem: "<en>A: I love swimming. ________\nB: I prefer cycling.</en>"
       options: ["What about you?", "Where are you?", "How old are you?", "Who are you?"]
       answer: 0
+      explain: "\"I love swimming. What about you?\" = Ben yüzmeyi severim, ya sen? Karşı taraf kendi tercihini söylüyor."
     sina:
       id: u2d01-006-s
       type: dialogue_complete
@@ -223,6 +227,7 @@ review:
     stem: "<en>Ece: ________\nSelin: I'd love to! What time does it start?\nEce: At four o'clock.</en>"
     options: ["Would you like to come to the cinema with me?", "Did you like the cinema?", "Where is the cinema?", "Are you tired today?"]
     answer: 0
+    explain: "\"What time does it start?\" kabul cevabı; davet cümlesi: Would you like to come to the cinema with me?"
   - id: u2d01-r02
     type: message_infer
     item: U1-018
@@ -231,6 +236,7 @@ review:
     stem: "<en>Bora: Basketball is OK, but swimming is much better for me. I go to the pool every Sunday.</en>"
     options: ["He prefers swimming to basketball.", "He prefers basketball to swimming.", "He never goes swimming.", "He plays basketball every Sunday."]
     answer: 0
+    explain: "Bora yüzmeyi basketboldan çok seviyor: He prefers swimming to basketball."
   - id: u2d01-r03
     type: situation
     item: U1-014
@@ -239,6 +245,7 @@ review:
     stem: "<en>Ece: Pizza or pasta for dinner, Duru?</en>"
     options: ["It doesn't matter.", "I hate pizza.", "Sorry, I can't.", "That's not fair."]
     answer: 0
+    explain: "İkisinden de memnun olan kişi \"fark etmez\" der: It doesn't matter."
   - id: u2d01-r04
     type: trait_match
     item: U1-085
@@ -247,6 +254,7 @@ review:
     stem: "<en>Selin waits for her friends for a long time and never gets angry.</en>"
     options: ["patient", "jealous", "stubborn", "mean"]
     answer: 0
+    explain: "Arkadaşlarını uzun süre bekleyip kızmayan Selin sabırlıdır: patient."
   - id: u2d01-r05
     type: message_infer
     item: U1-100
@@ -255,6 +263,7 @@ review:
     stem: "<en>Kaan: The roller coaster was amazing! My heart was beating fast and I screamed all the time!</en>"
     options: ["thrilling", "boring", "calm", "patient"]
     answer: 0
+    explain: "Hız treni harikaydı, kalbi hızlı atıyordu: thrilling (heyecan verici)."
 
 tips:
   - type: ilginc_bilgi

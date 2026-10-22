@@ -94,6 +94,7 @@ steps:
       stem: "<en>Mozart and Beethoven are two famous composers of ________.</en>"
       options: ["classical music", "rap", "folk music", "pop music"]
       answer: 0
+      explain: "Mozart ve Beethoven klasik müzik bestecileridir."
     sina:
       id: u2d05-025-s
       type: situation
@@ -102,6 +103,7 @@ steps:
       stem: "<en>Elif: My mum often goes to concerts with a big orchestra. She loves violins, pianos and composers like Mozart and Chopin.</en>"
       options: ["classical music", "rap", "rock music", "folk music"]
       answer: 0
+      explain: "Büyük orkestra, keman, piyano, Mozart, Chopin: klasik müzik."
   - item: U2-026
     sezdir:
       id: u2d05-026-z
@@ -117,6 +119,7 @@ steps:
       stem: "<en>My grandad plays the bağlama and sings old songs from his village. He loves ________.</en>"
       options: ["folk music", "rap", "classical music", "jazz"]
       answer: 0
+      explain: "Bağlama çalan ve köy şarkıları söyleyen dede halk müziğini sever: folk music."
     sina:
       id: u2d05-026-s
       type: message_infer
@@ -125,6 +128,7 @@ steps:
       stem: "<en>Teen Life Survey – Question 4: What music does your family listen to?\nSelin's grandad: traditional songs from Anatolia, with the bağlama\nElif's mum: Mozart and Chopin, with a big orchestra\nKaan's brother: fast words, rhymes and a strong beat</en>"
       options: ["folk music", "classical music", "rap", "jazz"]
       answer: 0
+      explain: "Selin'in dedesi Anadolu'nun geleneksel şarkılarını bağlama ile dinliyor: halk müziği (folk music)."
   - item: U2-027
     sezdir:
       id: u2d05-027-z
@@ -140,6 +144,7 @@ steps:
       stem: "<en>In ________ songs, the singers don't really sing. They say the words very fast, with rhymes and a strong beat.</en>"
       options: ["rap", "classical music", "folk music", "jazz"]
       answer: 0
+      explain: "Çok hızlı kelimeler, kafiyeler ve güçlü ritim rap'in özelliğidir."
     sina:
       id: u2d05-027-s
       type: dialogue_complete
@@ -148,6 +153,7 @@ steps:
       stem: "<en>Elif: What kind of music are you into, Kaan?\nKaan: ________\nElif: So you write your own rhymes and say them fast over a beat? Cool!</en>"
       options: ["I'm into rap.", "I'm into classical music.", "I'm into folk music.", "I can't stand music."]
       answer: 0
+      explain: "Kendi kafiyelerini ritim üstünde hızlı söylemek rap'tir: I'm into rap."
   - item: U2-028
     sezdir:
       id: u2d05-028-z
@@ -163,6 +169,7 @@ steps:
       stem: "<en>Please turn the TV down. It's too ________ and the baby is sleeping.</en>"
       options: ["loud", "quiet", "slow", "cheap"]
       answer: 0
+      explain: "Bebek uyuyor, TV'yi kısın: çok gürültülü (too loud)."
     sina:
       id: u2d05-028-s
       type: message_infer
@@ -171,6 +178,7 @@ steps:
       stem: "<en>Selin: My new neighbour plays music at full volume until midnight. I can hear every word from my bedroom, and I can't sleep!</en>"
       options: ["The music is too loud.", "The music is too quiet.", "Her neighbour has no music.", "Her neighbour is very patient."]
       answer: 0
+      explain: "Komşu gece yarısına kadar müziği tam ses çalıyor: müzik çok yüksek sesli (too loud)."
   - item: U2-029
     sezdir:
       id: u2d05-029-z
@@ -186,6 +194,7 @@ steps:
       stem: "<en>The canteen is very ________ at lunchtime. Hundreds of students talk, shout and laugh at the same time.</en>"
       options: ["noisy", "quiet", "empty", "boring"]
       answer: 0
+      explain: "Yüzlerce öğrencinin konuşup bağırdığı kantin gürültülüdür: noisy."
     sina:
       id: u2d05-029-s
       type: message_infer
@@ -194,6 +203,7 @@ steps:
       stem: "<en>Places at Bora's school at 12.30:\n- the library: no talking\n- the music room: empty\n- the computer room: quiet, only two students\n- the canteen: very noisy</en>"
       options: ["the canteen", "the library", "the music room", "the computer room"]
       answer: 0
+      explain: "Soru uygun OLMAYAN yeri soruyor: kantin çok gürültülü; diğer yerler sessiz."
   - item: U2-030
     sezdir:
       id: u2d05-030-z
@@ -209,6 +219,7 @@ steps:
       stem: "<en>My little brother kicks my chair all the time when I'm doing my homework. It's really ________!</en>"
       options: ["annoying", "relaxing", "patient", "fair"]
       answer: 0
+      explain: "Ödev yaparken sandalyeme vuran kardeşim sinir bozucudur: annoying."
     sina:
       id: u2d05-030-s
       type: situation
@@ -217,6 +228,7 @@ steps:
       stem: "<en>Ece is trying to study for an exam. Her phone beeps every ten seconds with new messages from the class group. She can't finish a single page.</en>"
       options: ["The messages are annoying.", "The messages are relaxing.", "The phone is quiet.", "Ece has nothing to do."]
       answer: 0
+      explain: "Telefon her on saniyede bir ötüyor ve Ece çalışamıyor: mesajlar rahatsız edici (annoying)."
 
 review:
   - id: u2d05-r01
@@ -226,6 +238,7 @@ review:
     stem: "<en>Duru plays the guitar and Elif sings. They want to start a ________ together.</en>"
     options: ["band", "member", "genre", "survey"]
     answer: 0
+    explain: "Biri gitar çalıp biri şarkı söylerse birlikte bir grup (band) kurarlar."
   - id: u2d05-r02
     type: gap_fill
     item: U2-020
@@ -233,6 +246,7 @@ review:
     stem: "<en>Our band has three ________: a singer, a guitarist and a drummer.</en>"
     options: ["members", "genres", "songs", "surveys"]
     answer: 0
+    explain: "Şarkıcı, gitarist ve davulcu: grubun üç üyesi (members) var."
   - id: u2d05-r03
     type: dialogue_complete
     item: U2-021
@@ -240,6 +254,7 @@ review:
     stem: "<en>A: What's your favourite music ________?\nB: Jazz. But I like rock music too.</en>"
     options: ["genre", "member", "band", "survey"]
     answer: 0
+    explain: "Müzik türü: genre (jazz, rock)."
   - id: u2d05-r04
     type: situation
     item: U2-022
@@ -247,6 +262,7 @@ review:
     stem: "<en>Kaan's cousin loves electric guitars, heavy drums and long guitar solos. His favourite band is Queen.</en>"
     options: ["rock music", "classical music", "folk music", "rap"]
     answer: 0
+    explain: "Elektro gitar, ağır davul, Queen: rock müzik."
   - id: u2d05-r05
     type: gap_fill
     item: U2-023
@@ -254,6 +270,7 @@ review:
     stem: "<en>________ is very popular with teenagers. The songs are short and catchy, and you hear them on the radio all day.</en>"
     options: ["Pop music", "Jazz", "Classical music", "Folk music"]
     answer: 0
+    explain: "Kısa, akılda kalan, radyoda her an çalan şarkılar pop müziktir."
   - id: u2d05-r06
     type: gap_fill
     item: U2-024
@@ -261,6 +278,7 @@ review:
     stem: "<en>Louis Armstrong was a famous trumpet player from New Orleans. He was a star of ________.</en>"
     options: ["jazz", "rap", "folk music", "classical music"]
     answer: 0
+    explain: "Trompetçi Louis Armstrong caz müziğinin yıldızıydı: jazz."
   - id: u2d05-r07
     type: message_infer
     item: U2-013
@@ -269,6 +287,7 @@ review:
     stem: "<en>Bora: My alarm rings at 6.30 every morning. I hate it! Getting up early is the worst thing in the world.</en>"
     options: ["He can't stand getting up early.", "He is keen on getting up early.", "He doesn't mind getting up early.", "He enjoys his alarm."]
     answer: 0
+    explain: "Çalar saati sevmiyor, erken kalkmak \"en kötü şey\": dayanamıyor (can't stand)."
   - id: u2d05-r08
     type: synonym
     item: U2-005
@@ -276,6 +295,7 @@ review:
     prompt: "<en>\"From my point of view, Saturday is the best day for practice.\" Which one is CLOSEST in meaning?</en>"
     options: ["In my opinion, Saturday is the best day for practice.", "Everybody says Saturday is the worst day for practice.", "I don't know which day is best for practice.", "We never practise on Saturdays."]
     answer: 0
+    explain: "\"From my point of view\" = bana göre; \"In my opinion\" ile aynı anlamda."
 
 tips:
   - type: tuzak

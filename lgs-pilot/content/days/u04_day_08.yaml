@@ -241,6 +241,7 @@ review:
     prompt: "<en>Your new headphones don't work. You phone the company, and a recorded voice says, \"For orders, press 1. For problems, press 2.\" Where are you calling?</en>"
     options: ["a call center", "a restaurant", "a friend's house", "a school"]
     answer: 0
+    explain: "Kayıtlı ses \"siparişler için 1'e bas\" diyor: çağrı merkezi (call center)."
   - id: u4d08-r02
     type: gap_fill
     item: U4-038
@@ -248,6 +249,7 @@ review:
     stem: "<en>The shop assistant smiled and said \"Next, please!\" to the next ________ in the queue.</en>"
     options: ["customer", "extension", "appointment", "device"]
     answer: 0
+    explain: "Kuyruktaki sıradaki kişiye müşteri (customer) denir."
   - id: u4d08-r03
     type: dialogue_complete
     item: U4-039
@@ -255,12 +257,14 @@ review:
     stem: "<en>A: When will my order arrive?\nB: We'll ________ it to your house tomorrow morning.</en>"
     options: ["deliver", "complain", "solve", "invent"]
     answer: 0
+    explain: "Siparişiniz yarın sabah eve teslim edilecek (deliver)."
   - id: u4d08-r04
     type: situation
     item: U4-040
     prompt: "<en>Duru's new speaker arrived broken. She calls the shop and says, \"I'm not happy. It's the wrong colour and it doesn't work.\" What is she doing?</en>"
     options: ["She is making a complaint.", "She is booking a table.", "She is keeping in touch.", "She is confirming an appointment."]
     answer: 0
+    explain: "Duru \"mutsuzum, yanlış renk ve çalışmıyor\" diyor: şikâyet ediyor (complaint)."
   - id: u4d08-r05
     type: gap_fill
     item: U4-041
@@ -268,6 +272,7 @@ review:
     stem: "<en>This jacket is too big. I'm going to ________ it to the shop and get my money back.</en>"
     options: ["return", "deliver", "solve", "confirm"]
     answer: 0
+    explain: "Ceket büyük; dükkâna geri götürüp parayı geri alacak: return."
   - id: u4d08-r06
     type: gap_fill
     item: U4-055
@@ -275,6 +280,7 @@ review:
     stem: "<en>The technician came and ________ the problem with our internet in ten minutes.</en>"
     options: ["solved", "disturbed", "dialled", "complained"]
     answer: 0
+    explain: "Teknisyen internet sorununu on dakikada çözdü (solved)."
   - id: u4d08-r07
     type: dialogue_complete
     item: U4-031

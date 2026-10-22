@@ -113,6 +113,7 @@ steps:
       stem: "<en>The phone rang five times, but nobody ________. Everyone was in the garden.</en>"
       options: ["answered", "rang", "held on", "invited"]
       answer: 0
+      explain: "Telefon beş kez çaldı ama kimse açmadı/cevap vermedi: answered."
     sina:
       id: u4d01-011-s
       type: message_infer
@@ -200,6 +201,7 @@ steps:
       stem: "<en>Woman: Hello?\nElif: Hi, this is Elif. May I speak to Ece, please?\nWoman: Of course. Hang on, I'll get her.</en>"
       options: ["Elif is calling Ece's house.", "Ece is calling Elif's house.", "The woman wants to speak to Elif.", "Ece answers the phone."]
       answer: 0
+      explain: "Elif \"May I speak to Ece?\" diyor, yani Ece'nin evini arıyor."
   - item: U4-031
     sezdir:
       id: u4d01-031-z
@@ -258,6 +260,7 @@ review:
     stem: "<en>Bora's breakfast: First, crack two eggs into a bowl and whisk them. Then, heat a little butter in a pan. Pour the eggs into the pan and cook them for two minutes. Finally, sprinkle some salt and pepper.</en>"
     options: ["cheese", "butter", "eggs", "pepper"]
     answer: 0
+    explain: "Metinde yumurta, tereyağı, tuz ve karabiber var; peynir (cheese) geçmiyor."
   - id: u4d01-r04
     type: text_infer
     item: U3-034

@@ -241,12 +241,14 @@ review:
     stem: "<en>In ________, you jump off a bridge, and an elastic cord stops you.</en>"
     options: ["bungee jumping", "skydiving", "paragliding", "hiking"]
     answer: 0
+    explain: "Köprüden atlayıp elastik iple durdurulmak bungee jumping."
   - id: u6d03-r02
     type: situation
     item: U6-006
     prompt: "<en>Tolga is in a plane at 4,000 metres. He jumps out and opens his parachute. What is he doing?</en>"
     options: ["skydiving", "bungee jumping", "paragliding", "hiking"]
     answer: 0
+    explain: "Uçaktan atlayıp paraşütünü açmak skydiving."
   - id: u6d03-r03
     type: gap_fill
     item: U6-007
@@ -254,6 +256,7 @@ review:
     stem: "<en>At the top of the mountain, people run, open a big wing and fly slowly over the sea. This is ________.</en>"
     options: ["paragliding", "skydiving", "bungee jumping", "karate"]
     answer: 0
+    explain: "Dağın tepesinden koşup büyük kanatla denizin üzerinde uçmak paragliding."
   - id: u6d03-r04
     type: dialogue_complete
     item: U6-012
@@ -261,6 +264,7 @@ review:
     stem: "<en>Dad: Please don't swim far from the beach. ________\nBora: OK, Dad. I'll stay near the beach.</en>"
     options: ["Don't take risks.", "Take a lot of risks.", "Sorry, wrong number.", "I'm sorry to hear that."]
     answer: 0
+    explain: "Babası uzak yüzmemesini istiyor; \"Don't take risks.\" (Risk alma.)"
   - id: u6d03-r05
     type: gap_fill
     item: U6-028
@@ -268,6 +272,7 @@ review:
     stem: "<en>Learning the guitar is ________, but Duru loves it. She practises every day.</en>"
     options: ["challenging", "boring", "disappointing", "ordinary"]
     answer: 0
+    explain: "Gitar öğrenmek zorlayıcıdır (challenging) ama Duru sevdiği için her gün çalışıyor."
   - id: u6d03-r06
     type: gap_fill
     item: U6-033
@@ -275,6 +280,7 @@ review:
     stem: "<en>The zip-line is ________ than the hammock.</en>"
     options: ["more exciting", "exciting", "most exciting", "excitinger"]
     answer: 0
+    explain: "Karşılaştırma \"than\" ile: more exciting than (daha heyecan verici)."
 
 tips:
   - type: tuzak

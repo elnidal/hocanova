@@ -239,6 +239,7 @@ review:
     stem: "<en>Selin's cousin loves dark places under the ground. Every summer she goes ________ in Antalya.</en>"
     options: ["caving", "to caving", "cave", "caves"]
     answer: 0
+    explain: "\"go + -ing\": goes caving (mağaracılık yapmak)."
   - id: u6d04-r02
     type: synonym
     item: U6-031
@@ -246,6 +247,7 @@ review:
     stem: "<en>The video of the teachers at the campfire was very amusing.</en>"
     options: ["funny", "sad", "scary", "disappointing"]
     answer: 0
+    explain: "amusing = funny (eğlenceli, komik)."
   - id: u6d04-r03
     type: gap_fill
     item: U6-032
@@ -253,6 +255,7 @@ review:
     stem: "<en>We waited for the bus for two hours, and then it rained all day. The first day of the trip was ________.</en>"
     options: ["disappointing", "disappointed", "amusing", "exciting"]
     answer: 0
+    explain: "İki saat bekleyip bütün gün yağmur yağması hayal kırıklığı yaratan (disappointing) bir gündür."
   - id: u6d04-r04
     type: gap_fill
     item: U6-035
@@ -260,6 +263,7 @@ review:
     stem: "<en>Duru prefers sleeping in a hammock ________ walking in the forest.</en>"
     options: ["to", "than", "from", "with"]
     answer: 0
+    explain: "\"prefer A to B\" kalıbı: prefers sleeping ... to walking."
   - id: u6d04-r05
     type: gap_fill
     item: U6-036
@@ -267,6 +271,7 @@ review:
     stem: "<en>A: Do you want to go out tonight?\nB: No, thanks. I'd rather ________ at home.</en>"
     options: ["stay", "to stay", "staying", "stayed"]
     answer: 0
+    explain: "\"I'd rather + fiil kökü\": I'd rather stay at home."
   - id: u6d04-r06
     type: dialogue_complete
     item: U6-037
@@ -274,6 +279,7 @@ review:
     stem: "<en>A: Why do you want to go rafting?\nB: ________</en>"
     options: ["Because I love water.", "At ten o'clock.", "Yes, I do.", "With my friends."]
     answer: 0
+    explain: "\"Why...?\" sorusuna \"Because...\" ile cevap verilir."
 
 tips:
   - type: tuzak

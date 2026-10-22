@@ -88,6 +88,7 @@ steps:
       stem: "<en>My grandma loves her oven. She ________ cookies for us every Sunday.</en>"
       options: ["bakes", "drinks", "washes", "reads"]
       answer: 0
+      explain: "Büyükannem fırınını sever ve her pazar bize kurabiye pişirir: bakes."
     sina:
       id: u3d02-001-s
       type: odd_one_out
@@ -121,6 +122,7 @@ steps:
       stem: "<en>Mum's note: Ece, I'll be home at six. Please preheat the oven at half past five. We can bake the bread together when I arrive.</en>"
       options: ["The oven should be hot before Mum comes home.", "Mum will be home at half past five.", "Ece should bake the bread alone.", "The oven must be cold at six."]
       answer: 0
+      explain: "Annesi saat altıda gelecek ve fırının 5.30'da ısıtılmasını istiyor; yani anne gelmeden fırın sıcak olmalı."
   - item: U3-039
     sezdir:
       id: u3d02-039-z
@@ -147,6 +149,7 @@ steps:
       stem: "<en>Pancakes for two people. Ingredients: one cup of milk, one cup of flour, two eggs and a little butter.</en>"
       options: ["You need the same amount of milk and flour.", "You need two cups of milk.", "There aren't any eggs in the pancakes.", "You need more flour than milk."]
       answer: 0
+      explain: "Tarifte bir su bardağı süt ve bir su bardağı un var: miktarları aynı."
   - item: U3-042
     sezdir:
       id: u3d02-042-z
@@ -162,6 +165,7 @@ steps:
       stem: "<en>I like my tea with a little sugar. Can I have a ________ of sugar, please? Just a small one.</en>"
       options: ["teaspoon", "bowl", "oven", "recipe"]
       answer: 0
+      explain: "Çok az şeker için küçük bir çay kaşığı (teaspoon) yeterli."
     sina:
       id: u3d02-042-s
       type: message_infer
@@ -187,6 +191,7 @@ steps:
       stem: "<en>Our cake didn't rise. It's flat! I think we forgot the ________.</en>"
       options: ["baking powder", "oven gloves", "plates", "napkins"]
       answer: 0
+      explain: "Kek kabarmadı, yassı; kabartma tozunu (baking powder) unutmuşuz."
     sina:
       id: u3d02-043-s
       type: message_infer
@@ -196,6 +201,7 @@ steps:
       stem: "<en>Elif: My cake didn't rise. It's flat like a pancake!\nSelin: Oh no! Maybe you forgot the baking powder.</en>"
       options: ["Elif probably didn't use any baking powder.", "Elif's cake is very tall.", "Selin made the cake with Elif.", "Elif's cake rose too much."]
       answer: 0
+      explain: "Pasta yassı kaldı ve Selin kabartma tozunu unutmuş olabileceğini söylüyor."
   - item: U3-046
     sezdir:
       id: u3d02-046-z
@@ -212,6 +218,7 @@ steps:
       stem: "<en>To make bread, you need ________, water and a little salt.</en>"
       options: ["flour", "flowers", "ice cream", "coffee"]
       answer: 0
+      explain: "Ekmek için un (flour), su ve biraz tuz gerekir. flowers çiçek demektir."
     sina:
       id: u3d02-046-s
       type: dialogue_complete
@@ -221,6 +228,7 @@ steps:
       stem: "<en>Ece: Mum, we need two cups of flour for the cake. ________\nMum: Yes, there's a big bag in the cupboard.</en>"
       options: ["Do we have any flour?", "Do we have any flowers?", "Is the cake ready?", "Who is your teacher?"]
       answer: 0
+      explain: "\"Do we have any flour?\" (Un var mı?) un sorusu; flowers çiçek demektir."
 
 review:
   - id: u3d02-r01
@@ -230,12 +238,14 @@ review:
     stem: "<en>Can you give me a ________ for my soup, please? A big one.</en>"
     options: ["bowl", "oven", "recipe", "step"]
     answer: 0
+    explain: "Çorba için büyük bir kase (bowl) rica ediyor."
   - id: u3d02-r02
     type: situation
     item: U3-040
     prompt: "<en>You want to bake a cake. The cake mixture is ready. Where does it go now?</en>"
     options: ["into the oven", "into the fridge", "into the bin", "into the washing machine"]
     answer: 0
+    explain: "Kek karışımı hazırsa fırına (oven) konur."
   - id: u3d02-r03
     type: dialogue_complete
     item: U3-045
@@ -251,6 +261,7 @@ review:
     stem: "<en>We need four ________ for this salad: tomatoes, cucumbers, onions and lemon juice.</en>"
     options: ["ingredients", "steps", "ovens", "recipes"]
     answer: 0
+    explain: "Salatadaki domates, salatalık, soğan ve limon suyu malzemedir (ingredients)."
   - id: u3d02-r05
     type: dialogue_complete
     item: U3-050
@@ -260,6 +271,7 @@ review:
     stem: "<en>Elif: This soup is wonderful! ________\nGrandma: Of course! Write it down: water, red lentils, an onion…</en>"
     options: ["Can I have the recipe?", "Can I have the receipt?", "Is the soup cold?", "Where is the bathroom?"]
     answer: 0
+    explain: "Çorba tarifini isteyen kişi \"Can I have the recipe?\" der. receipt fiş demektir."
   - id: u3d02-r06
     type: gap_fill
     item: U3-052
@@ -267,6 +279,7 @@ review:
     stem: "<en>This recipe has five ________. Number one is \"Wash your hands.\"</en>"
     options: ["steps", "ingredients", "bowls", "ovens"]
     answer: 0
+    explain: "Tarifin \"bir, iki, üç\" diye giden maddeleri adımlardır (steps)."
 
 tips:
   - type: tuzak

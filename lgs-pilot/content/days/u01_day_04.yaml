@@ -98,6 +98,7 @@ steps:
       stem: "<en>Bora said he would bring a cake, and he did. He ________.</en>"
       options: ["kept his promise", "broke his promise", "told a lie", "refused"]
       answer: 0
+      explain: "Söz verdiği pastayı getirdi: sözünü tuttu (kept his promise)."
     sina:
       id: d04-054-s
       type: message_infer
@@ -106,6 +107,7 @@ steps:
       stem: "<en>Selin: Last week I promised to help Duru with maths. I went to her house every day after school.</en>"
       options: ["She keeps her promises.", "She breaks her promises.", "She never helps her friends.", "She is unreliable."]
       answer: 0
+      explain: "Selin Duru'ya yardım edeceğine söz verdi ve her gün gitti: sözünü tutuyor (keeps her promises)."
   - item: U1-050
     sezdir:
       id: d04-050-z
@@ -121,6 +123,7 @@ steps:
       stem: "<en>You said you would call me, but you didn't. You ________ again!</en>"
       options: ["broke your promise", "kept your promise", "accepted my invitation", "backed me up"]
       answer: 0
+      explain: "\"You said you would call me, but you didn't\" = aramadın, sözünü bozdun: broke your promise."
     sina:
       id: d04-050-s
       type: trait_match
@@ -129,6 +132,7 @@ steps:
       stem: "<en>Mert often breaks his promises. Yesterday he said he would come to the library, but he didn't.</en>"
       options: ["unreliable", "loyal", "reliable", "honest"]
       answer: 0
+      explain: "Mert sık sık sözünü bozuyor: unreliable (güvenilmez). reliable ve honest tersini söyler."
   - item: U1-055
     sezdir:
       id: d04-055-z
@@ -144,6 +148,7 @@ steps:
       stem: "<en>Don't tell anyone about the surprise party. Can you ________?</en>"
       options: ["keep a secret", "break a promise", "refuse", "apologise"]
       answer: 0
+      explain: "Sürpriz partiyi kimseye söylememek sır tutmaktır: keep a secret."
     sina:
       id: d04-055-s
       type: dialogue_complete
@@ -152,6 +157,7 @@ steps:
       stem: "<en>Ece: I want to tell you something, but nobody else should know.\nSelin: ________</en>"
       options: ["Don't worry. I can keep a secret.", "Great! I'll tell everyone.", "Sorry, I can't hear you.", "Let's post it online!"]
       answer: 0
+      explain: "Ece sırrını paylaşmak istiyor; doğru cevap sırrı saklayacağını söylemek: \"I can keep a secret.\""
   - item: U1-049
     sezdir:
       id: d04-049-z
@@ -167,6 +173,7 @@ steps:
       stem: "<en>When everyone laughed at me, my best friend ________. She said, \"Stop it!\"</en>"
       options: ["backed me up", "broke a promise", "refused me", "forgot me"]
       answer: 0
+      explain: "Herkes gülünce arkadaşı \"Stop it!\" dedi, yani onu destekledi: backed me up."
     sina:
       id: d04-049-s
       type: synonym
@@ -174,6 +181,7 @@ steps:
       prompt: "<en>\"Real friends back you up when you have problems.\" Which one is CLOSEST in meaning to \"back you up\"?</en>"
       options: ["support you", "look for you", "wait for you", "call you"]
       answer: 0
+      explain: "back you up = desteklemek. En yakın anlam support you."
   - item: U1-092
     sezdir:
       id: d04-092-z
@@ -189,6 +197,7 @@ steps:
       stem: "<en>My parents are very ________. They always help me and believe in me.</en>"
       options: ["supportive", "boring", "lazy", "busy"]
       answer: 0
+      explain: "Hep yardım eden ve inanan aileler destekleyicidir: supportive."
     sina:
       id: d04-092-s
       type: message_infer
@@ -197,6 +206,7 @@ steps:
       stem: "<en>Duru: You can do it, Bora! Don't be afraid. We are all with you!</en>"
       options: ["supportive", "dishonest", "unreliable", "selfish"]
       answer: 0
+      explain: "Duru \"You can do it!\" diyerek cesaret veriyor: supportive."
   - item: U1-070
     sezdir:
       id: d04-070-z
@@ -212,6 +222,7 @@ steps:
       stem: "<en>My grandma always asks how I feel and cooks my favourite food. She is so ________.</en>"
       options: ["caring", "lazy", "noisy", "boring"]
       answer: 0
+      explain: "Nasıl hissettiğini soran ve sevdiği yemeği yapan büyükanne ilgili, şefkatli biridir: caring."
     sina:
       id: d04-070-s
       type: trait_match
@@ -220,6 +231,7 @@ steps:
       stem: "<en>Bora saw an old lady with heavy bags. He helped her carry them home, so he was late for the party.</en>"
       options: ["caring", "selfish", "rude", "lazy"]
       answer: 0
+      explain: "Bora yaşlı hanıma yardım etmek için partiye geç kaldı: başkalarını düşünüyor, yani caring."
 
 review:
   - id: d04-r01
@@ -229,12 +241,14 @@ review:
     stem: "<en>He told my secret to everyone. I can't ________ him anymore.</en>"
     options: ["trust", "invite", "accept", "refuse"]
     answer: 0
+    explain: "Sırrını herkese anlatan birine artık güvenemezsin: trust."
   - id: d04-r02
     type: synonym
     item: U1-051
     prompt: "<en>\"You can count on me.\" Which one has the same meaning?</en>"
     options: ["You can rely on me.", "You can count to ten.", "You can wait for me.", "You can call me."]
     answer: 0
+    explain: "\"count on\" = rely on. \"count to ten\" on'a kadar saymak demektir; benzer görünür ama anlamı farklıdır."
   - id: d04-r03
     type: gap_fill
     item: U1-060
@@ -242,6 +256,7 @@ review:
     stem: "<en>I need help with my project. Can I ________ you?</en>"
     options: ["rely on", "apologise", "refuse", "excuse"]
     answer: 0
+    explain: "Projeme yardım için ona güvenebilir miyim: rely on you."
   - id: d04-r04
     type: trait_match
     item: U1-059
@@ -249,6 +264,7 @@ review:
     stem: "<en>Selin is never late and she always does her homework.</en>"
     options: ["reliable", "unreliable", "lazy", "dishonest"]
     answer: 0
+    explain: "Hiç geç kalmayan ve ödevini yapan kişi güvenilirdir: reliable."
   - id: d04-r05
     type: gap_fill
     item: U1-077
@@ -256,6 +272,7 @@ review:
     stem: "<en>To be ________, I didn't like the film very much.</en>"
     options: ["honest", "loyal", "busy", "caring"]
     answer: 0
+    explain: "\"To be honest\" = dürüst olmak gerekirse; sevmediğini açıkça söylerken kullanılan kalıp."
   - id: d04-r06
     type: trait_match
     item: U1-081

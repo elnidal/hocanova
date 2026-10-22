@@ -243,6 +243,7 @@ review:
     stem: "<en>Bora ________ the number very fast and made a mistake.</en>"
     options: ["dialled", "hung up", "answered", "held on"]
     answer: 0
+    explain: "Numarayı çevirdi (dialled) ve yanlış yaptı."
   - id: u4d05-r02
     type: gap_fill
     item: U4-006
@@ -250,6 +251,7 @@ review:
     stem: "<en>Bora was very embarrassed, so he said \"Sorry!\" and ________ quickly.</en>"
     options: ["hung up", "hung out", "held on", "picked up"]
     answer: 0
+    explain: "Utanan Bora \"Sorry!\" deyip hemen telefonu kapattı (hung up)."
   - id: u4d05-r03
     type: situation
     item: U4-015
@@ -277,6 +279,7 @@ review:
     stem: "<en>A: Hello, can I speak to Gül Hanım, please?\nB: Gül Hanım? There's nobody with that name here. Sorry, ________.</en>"
     options: ["wrong number", "bad line", "hold on", "speaking"]
     answer: 0
+    explain: "O isimde kimse yok; yanlış numara (wrong number)."
   - id: u4d05-r06
     type: situation
     item: U4-050
@@ -284,6 +287,7 @@ review:
     stem: "<en>Bora shouted \"KARATE!\" at an old lady on the phone. Then he understood it was the wrong number.</en>"
     options: ["embarrassed", "proud", "relaxed", "jealous"]
     answer: 0
+    explain: "Yaşlı hanıma \"KARATE!\" diye bağırıp yanlış numara olduğunu anlayınca utandı (embarrassed)."
 
 tips:
   - type: mini_dilbilgisi

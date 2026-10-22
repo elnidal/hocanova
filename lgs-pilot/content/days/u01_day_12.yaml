@@ -90,6 +90,7 @@ steps:
       stem: "<en>My sister always listens to my problems and ________. She tells me what to do.</en>"
       options: ["gives me advice", "tells me lies", "argues with me", "misses the bus"]
       answer: 0
+      explain: "Sorunlarımı dinleyen ve ne yapmam gerektiğini söyleyen kardeşim bana tavsiye verir: gives me advice."
     sina:
       id: d12-035-s
       type: dialogue_complete
@@ -98,6 +99,7 @@ steps:
       stem: "<en>Bora: I argued with my best friend. What should I do?\nSelin: ________</en>"
       options: ["My advice is to talk to him face to face.", "I argued with him yesterday.", "He has a new bike.", "I'm stuffed, thanks."]
       answer: 0
+      explain: "Arkadaşıyla tartışan Bora'ya tavsiye: My advice is to talk to him face to face. (advice = tavsiye)"
   - item: U1-037
     sezdir:
       id: d12-037-z
@@ -113,6 +115,7 @@ steps:
       stem: "<en>Whenever I have a problem, my sister helps me. She is always ________ me.</en>"
       options: ["there for", "angry with", "far from", "bored with"]
       answer: 0
+      explain: "\"always there for me\" = ihtiyacım olduğunda yanımda: there for."
     sina:
       id: d12-037-s
       type: message_infer
@@ -121,6 +124,7 @@ steps:
       stem: "<en>Ece: Selin is always there for me.</en>"
       options: ["Selin helps and supports her when she needs it.", "Selin always waits for her at the same place.", "Selin lives near her house.", "Selin is never at school."]
       answer: 0
+      explain: "\"always there for me\" = ihtiyacım olduğunda bana yardım edip destek olur; yer ya da zamanla ilgili değil."
   - item: U1-043
     sezdir:
       id: d12-043-z
@@ -136,6 +140,7 @@ steps:
       stem: "<en>I have two sandwiches. I can ________ them with you.</en>"
       options: ["share", "argue", "miss", "text"]
       answer: 0
+      explain: "İki sandviçim var, seninle paylaşabilirim: share."
     sina:
       id: d12-043-s
       type: situation
@@ -143,6 +148,7 @@ steps:
       prompt: "<en>Kaan has a big bag of chips. Bora is hungry. What does a good friend do?</en>"
       options: ["He shares his chips with Bora.", "He eats all the chips himself.", "He hides the chips from Bora.", "He sells the chips to Bora."]
       answer: 0
+      explain: "İyi arkadaş cipsi paylaşır: He shares his chips with Bora."
   - item: U1-044
     sezdir:
       id: d12-044-z
@@ -158,6 +164,7 @@ steps:
       stem: "<en>I love my grandparents. I ________ with them every weekend. We cook and play games together.</en>"
       options: ["spend time", "argue", "feel alone", "tell lies"]
       answer: 0
+      explain: "Büyükanne ve büyükbabayla vakit geçirmek: spend time."
     sina:
       id: d12-044-s
       type: synonym
@@ -165,6 +172,7 @@ steps:
       prompt: "<en>\"Duru and Elif spend a lot of time together.\" Which one is CLOSEST in meaning?</en>"
       options: ["They are often together.", "They spend a lot of money.", "They never see each other.", "They are always busy."]
       answer: 0
+      explain: "spend time together = sık sık birlikte olmak."
   - item: U1-063
     sezdir:
       id: d12-063-z
@@ -180,6 +188,7 @@ steps:
       stem: "<en>My parents always ________ me. They come to all my basketball games.</en>"
       options: ["support", "argue with", "lie to", "refuse"]
       answer: 0
+      explain: "Basketbol maçlarına gelen aileler beni destekler: support."
     sina:
       id: d12-063-s
       type: odd_one_out
@@ -187,6 +196,7 @@ steps:
       prompt: "<en>Which sentence does NOT show support?</en>"
       options: ["You can't do it. Just stop.", "You can do it! Don't give up.", "I'm with you. Let's try again.", "Don't worry. I'll help you."]
       answer: 0
+      explain: "Soru destek GÖSTERMEYEN cümleyi soruyor. \"You can't do it. Just stop.\" cesaret kırar; diğer üçü destek verir."
   - item: U1-064
     sezdir:
       id: d12-064-z
@@ -202,6 +212,7 @@ steps:
       stem: "<en>Selin is good at maths and Ece is good at English. They help with each other's homework. They ________.</en>"
       options: ["support each other", "argue with each other", "tell lies", "feel alone"]
       answer: 0
+      explain: "Birbirlerinin ödevlerine yardım eden arkadaşlar birbirini destekler: support each other."
     sina:
       id: d12-064-s
       type: dialogue_complete
@@ -210,6 +221,7 @@ steps:
       stem: "<en>Elif: What makes a good friendship?\nDuru: ________</en>"
       options: ["Friends support each other in good and bad times.", "Friends never spend time together.", "Friends tell secrets to others.", "Friends argue all the time."]
       answer: 0
+      explain: "İyi arkadaşlık iyi ve kötü günlerde birbirini desteklemektir."
 
 review:
   - id: d12-r01
@@ -219,12 +231,14 @@ review:
     stem: "<en>Cheating in a game is ________. It isn't fair.</en>"
     options: ["dishonesty", "friendship", "support", "advice"]
     answer: 0
+    explain: "Oyunda hile yapmak adil değildir, yani dürüst olmamaktır: dishonesty."
   - id: d12-r02
     type: situation
     item: U1-056
     prompt: "<en>Bora said, \"I have a cat.\" But he doesn't have a cat. What did he say?</en>"
     options: ["a lie", "a secret", "a promise", "the truth"]
     answer: 0
+    explain: "Olmayan bir kedisi olduğunu söylemek yalandır (a lie)."
   - id: d12-r03
     type: gap_fill
     item: U1-058
@@ -232,6 +246,7 @@ review:
     stem: "<en>A: Will you come to my dance show?\nB: Yes, I ________. I'll be there.</en>"
     options: ["promise", "lie", "argue", "refuse"]
     answer: 0
+    explain: "\"I'll be there\" diyerek geleceğine söz veriyor: Yes, I promise."
   - id: d12-r04
     type: gap_fill
     item: U1-062
@@ -239,18 +254,21 @@ review:
     stem: "<en>The surprise party is a ________. Don't tell Ece!</en>"
     options: ["secret", "lie", "feeling", "promise"]
     answer: 0
+    explain: "Ece'ye söylenmeyecek sürpriz parti bir sırdır: a secret."
   - id: d12-r05
     type: trait_match
     item: U1-065
     prompt: "<en>Which word describes a person who often tells lies?</en>"
     options: ["dishonest", "honest", "reliable", "caring"]
     answer: 0
+    explain: "Sık sık yalan söyleyen kişi dürüst değildir: dishonest."
   - id: d12-r06
     type: situation
     item: U1-066
     prompt: "<en>Ece told Kaan a secret: she was writing a song. The next day, the whole class knew about it. What did Kaan do?</en>"
     options: ["He told her secret to others.", "He kept her secret.", "He kept his promise.", "He gave her advice."]
     answer: 0
+    explain: "Ece'nin sırrını ertesi gün herkes biliyor: Kaan sırrı başkalarına anlattı."
   - id: d12-r07
     type: trait_match
     item: U1-084
@@ -259,6 +277,7 @@ review:
     stem: "<en>Elif loves meeting new people. On her first day at school, she talked to everyone in the class.</en>"
     options: ["outgoing", "shy", "mean", "quiet"]
     answer: 0
+    explain: "Yeni insanlarla tanışmayı seven ve ilk gün herkesle konuşan Elif dışa dönüktür: outgoing."
   - id: d12-r08
     type: dialogue_complete
     item: U1-097
@@ -267,6 +286,7 @@ review:
     stem: "<en>Ece's mum: Would you like another piece of cake, Bora?\nBora: ________ I've already had three!</en>"
     options: ["No, thanks. I'm full.", "Yes, please. I'm hungry.", "Sorry, I'm busy.", "I have nothing to do."]
     answer: 0
+    explain: "Üç dilim pasta yemiş; yeter diye cevaplar: No, thanks. I'm full."
   - id: d12-r09
     type: odd_one_out
     item: U1-083

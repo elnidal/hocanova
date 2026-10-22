@@ -109,6 +109,7 @@ steps:
       stem: "<en>I ________ spiders! I scream when I see one.</en>"
       options: ["hate", "love", "enjoy", "admire"]
       answer: 0
+      explain: "Örümcek görünce çığlık atan kişi onlardan nefret eder: hate."
     sina:
       id: u2d03-014-s
       type: message_infer
@@ -133,6 +134,7 @@ steps:
       stem: "<en>Kaan is ________ football. He watches every match and has fifty football posters.</en>"
       options: ["crazy about", "bored with", "afraid of", "tired of"]
       answer: 0
+      explain: "Her maçı izleyen ve elli posteri olan kişi futbola deli gibi meraklıdır: crazy about."
     sina:
       id: u2d03-015-s
       type: synonym
@@ -156,6 +158,7 @@ steps:
       stem: "<en>A: What kind of films are you ________?\nB: Comedies! I watch one every weekend.</en>"
       options: ["into", "onto", "out", "off"]
       answer: 0
+      explain: "\"be into\" = bir şeye ilgi duymak, meraklı olmak: What kind of films are you into?"
     sina:
       id: u2d03-016-s
       type: message_infer
@@ -164,6 +167,7 @@ steps:
       stem: "<en>Duru: These days I'm really into old rock songs. I listen to them on my way to school.</en>"
       options: ["She likes old rock songs.", "She writes rock songs.", "She hates rock songs.", "She never listens to music."]
       answer: 0
+      explain: "\"I'm really into old rock songs\" = eski rock şarkılarını çok severim."
   - item: U2-017
     sezdir:
       id: u2d03-017-z
@@ -179,6 +183,7 @@ steps:
       stem: "<en>I really ________ my grandfather. He is brave, kind and very wise.</en>"
       options: ["admire", "dislike", "can't stand", "hate"]
       answer: 0
+      explain: "Cesur, nazik ve bilge dedemi takdir ederim: admire."
     sina:
       id: u2d03-017-s
       type: message_infer
@@ -187,6 +192,7 @@ steps:
       stem: "<en>Elif: Luna Ray writes her own songs, helps animal shelters and always smiles at her fans. She is my hero!</en>"
       options: ["She admires her.", "She is jealous of her.", "She doesn't mind her.", "She is angry with her."]
       answer: 0
+      explain: "Elif, Luna Ray'in iyi özelliklerini sayıyor ve \"my hero\" diyor: onu takdir ediyor (admires)."
   - item: U2-018
     sezdir:
       id: u2d03-018-z
@@ -202,6 +208,7 @@ steps:
       stem: "<en>A: Do you like my new haircut?\nB: Well, ________, I liked your old haircut more.</en>"
       options: ["to be honest", "nice to meet you", "have a good time", "see you soon"]
       answer: 0
+      explain: "Eski saç stilini daha çok beğendiğini söylerken kullanılan dürüst kalıp: to be honest."
     sina:
       id: u2d03-018-s
       type: dialogue_complete
@@ -220,6 +227,7 @@ review:
     stem: "<en>A: Do you ________ playing chess?\nB: Yes, I do! I play it with my dad every weekend.</en>"
     options: ["like", "mind", "hate", "dislike"]
     answer: 0
+    explain: "\"Do you like + -ing?\" Evet, babamla her hafta sonu oynuyorum: like."
   - id: u2d03-r02
     type: gap_fill
     item: U2-008
@@ -227,6 +235,7 @@ review:
     stem: "<en>Selin ________ reading detective stories. She reads one every week.</en>"
     options: ["enjoys", "enjoy", "enjoying", "is enjoy"]
     answer: 0
+    explain: "Üçüncü tekil kişide fiile -s gelir: Selin enjoys reading."
   - id: u2d03-r03
     type: gap_fill
     item: U2-009
@@ -234,18 +243,21 @@ review:
     stem: "<en>I'm very ________ animals, so I help at the animal shelter every Saturday.</en>"
     options: ["fond of", "afraid of", "bored with", "tired of"]
     answer: 0
+    explain: "Hayvanları sevip barınakta çalışan kişi hayvanlara düşkündür: fond of."
   - id: u2d03-r04
     type: synonym
     item: U2-010
     prompt: "<en>\"Bora is keen on taking selfies.\" Which one is CLOSEST in meaning?</en>"
     options: ["Bora really likes taking selfies.", "Bora never takes selfies.", "Bora dislikes taking selfies.", "Bora takes selfies only at school."]
     answer: 0
+    explain: "\"keen on\" = çok sevmek: Bora selfie çekmeyi çok seviyor."
   - id: u2d03-r05
     type: situation
     item: U2-011
     prompt: "<en>Kaan asks Duru, \"Can I sit next to you?\" Duru is OK with it. What does she say?</en>"
     options: ["Sure, I don't mind.", "No, please don't.", "Sorry, this seat is for Elif.", "I'm late."]
     answer: 0
+    explain: "Duru yan yana oturmayı kabul ediyor; \"I don't mind\" = sorun değil."
   - id: u2d03-r06
     type: gap_fill
     item: U2-012
@@ -253,6 +265,7 @@ review:
     stem: "<en>Kaan ________ reading in the morning, so he never reads at breakfast.</en>"
     options: ["dislikes", "enjoys", "is keen on", "is fond of"]
     answer: 0
+    explain: "Kaan sabah okumaktan hoşlanmıyor, bu yüzden kahvaltıda okumaz: dislikes."
 
 tips:
   - type: tuzak

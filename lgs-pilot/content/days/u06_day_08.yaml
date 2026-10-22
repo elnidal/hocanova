@@ -212,12 +212,14 @@ review:
     stem: "<en>My uncle loves ________. He swims with the fish 20 metres under the sea.</en>"
     options: ["scuba diving", "paragliding", "skydiving", "rock climbing"]
     answer: 0
+    explain: "Denizin 20 metre altında balıklarla yüzmek: scuba diving."
   - id: u6d08-r02
     type: situation
     item: U6-010
     prompt: "<en>You are on a lake in a small, narrow boat. You move it with a paddle. What are you doing?</en>"
     options: ["canoeing", "skydiving", "caving", "climbing"]
     answer: 0
+    explain: "Dar, küçük tekneyi kürekle ilerletmek: canoeing."
   - id: u6d08-r03
     type: gap_fill
     item: U6-017
@@ -225,6 +227,7 @@ review:
     stem: "<en>Life jackets help people not to ________ in the water.</en>"
     options: ["drown", "land", "gain", "climb"]
     answer: 0
+    explain: "Can yelekleri insanların suda boğulmamasına (drown) yardım eder."
   - id: u6d08-r04
     type: dialogue_complete
     item: U6-018
@@ -232,6 +235,7 @@ review:
     stem: "<en>A: What time does your plane ________ in Ankara?\nB: At 10.15. Can you pick me up?</en>"
     options: ["land", "drown", "fall", "climb"]
     answer: 0
+    explain: "Uçak Ankara'ya saat 10.15'te iner (land)."
   - id: u6d08-r05
     type: gap_fill
     item: U6-053
@@ -239,6 +243,7 @@ review:
     stem: "<en>I love my bike. When I ride it by the sea, I feel the ________.</en>"
     options: ["freedom", "accident", "death", "equipment"]
     answer: 0
+    explain: "Denizde bisiklet sürerken özgürlüğü (freedom) hissederim."
   - id: u6d08-r06
     type: gap_fill
     item: U6-054
@@ -246,6 +251,7 @@ review:
     stem: "<en>The ________ is very strong today. My umbrella broke!</en>"
     options: ["wind", "freedom", "courage", "goal"]
     answer: 0
+    explain: "Şemsiye kırıldığına göre rüzgâr (wind) çok güçlü."
   - id: u6d08-r07
     type: situation
     item: U6-011

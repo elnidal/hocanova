@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { loadAllUnits } from '../content.js'
+import Splash from '../components/Splash.jsx'
 import { buildReport } from '../report.js'
 
 const WD = ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt']
@@ -8,7 +9,7 @@ const WD = ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt']
 export default function ParentReport({ index, state, onExit }) {
   const [items, setItems] = useState(null)
   useEffect(() => { loadAllUnits(index).then(us => setItems(us.flatMap(u => u.items))) }, [index])
-  if (!items) return <div className="wrap muted">Rapor hazırlanıyor…</div>
+  if (!items) return <Splash text="Rapor hazırlanıyor…" />
   const r = buildReport({ progress: state.progress, daily: state.daily, doneDays: state.doneDays, items, now: Date.now() })
   const max = Math.max(1, ...r.week.map(d => d.n))
   const nick = state.profile?.nick || 'Öğrenci'

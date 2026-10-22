@@ -168,6 +168,7 @@ review:
     stem: "<en>Pasta and pizza are popular dishes in Italian ________.</en>"
     options: ["cuisine", "recipe", "oven", "freezer"]
     answer: 0
+    explain: "İtalyan mutfağında (cuisine) makarna ve pizza popüler yemeklerdir."
   - id: u3d11-r02
     type: gap_fill
     item: U3-056
@@ -185,6 +186,7 @@ review:
     stem: "<en>Waiter: Would you like a starter?\nCustomer: No, thanks. I'd like the grilled fish for my ________.\nWaiter: Good choice!</en>"
     options: ["main course", "dessert", "recipe", "ingredients"]
     answer: 0
+    explain: "Başlangıç yemeğinden sonra gelen ızgara balık ana yemektir (main course)."
   - id: u3d11-r04
     type: gap_fill
     item: U3-061
@@ -201,12 +203,14 @@ review:
     stem: "<en>Duru's mum is chopping onions and kneading meat. The family will have dinner at seven.</en>"
     options: ["She is preparing dinner.", "She is doing the dishes.", "She is ordering a pizza.", "She is having breakfast."]
     answer: 0
+    explain: "Soğan doğrayıp et yoğuran anne akşam yemeği hazırlıyor."
   - id: u3d11-r06
     type: synonym
     item: U3-063
     prompt: "<en>\"Everybody in Turkey knows simit.\" Which one is CLOSEST in meaning?</en>"
     options: ["Simit is well-known in Turkey.", "Simit is new in Turkey.", "Simit is expensive in Turkey.", "Simit is frozen in Turkey."]
     answer: 0
+    explain: "\"Everybody knows simit\" = Simit Türkiye'de çok bilinir (well-known)."
   - id: u3d11-r07
     type: process_order
     item: U3-019

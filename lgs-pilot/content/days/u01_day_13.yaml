@@ -92,6 +92,7 @@ steps:
       stem: "<en>I'm at home all evening. Do you want to ________ and watch a film with me?</en>"
       options: ["come over", "argue", "miss", "depend on"]
       answer: 0
+      explain: "Akşam evdeyim; gelip benimle film izlemek ister misin? come over = (birinin evine) gelmek."
     sina:
       id: d13-005-s
       type: dialogue_complete
@@ -100,6 +101,7 @@ steps:
       stem: "<en>Elif: I'm so bored at home.\nDuru: ________ We can play with Fıstık in the garden.</en>"
       options: ["Why don't you come over to my house?", "Sorry, I'm not at home today.", "I don't like dogs at all.", "Text me next year."]
       answer: 0
+      explain: "Sıkılan Elif'e Duru \"Why don't you come over to my house?\" (Neden bize gelmiyorsun?) der; bahçede Fıstık'la oynayabilirler."
   - item: U1-052
     sezdir:
       id: d13-052-z
@@ -115,6 +117,7 @@ steps:
       stem: "<en>Selin always does what she says. You can ________ her.</en>"
       options: ["depend on", "argue with", "lie to", "feel alone with"]
       answer: 0
+      explain: "Her zaman söylediğini yapan kişiye güvenebilirsin: depend on."
     sina:
       id: d13-052-s
       type: synonym
@@ -122,6 +125,7 @@ steps:
       prompt: "<en>\"You can depend on Selin.\" Which one is CLOSEST in meaning?</en>"
       options: ["You can rely on Selin.", "You can argue with Selin.", "You can come over to Selin's house.", "You can text Selin."]
       answer: 0
+      explain: "depend on = rely on (güvenmek)."
   - item: U1-057
     sezdir:
       id: d13-057-z
@@ -137,6 +141,7 @@ steps:
       stem: "<en>Kaan listens to Bora, and Bora listens to Kaan. There is ________ between them.</en>"
       options: ["mutual respect", "a big argument", "dishonesty", "a bad feeling"]
       answer: 0
+      explain: "Birbirini dinleyen iki kişi arasında karşılıklı saygı (mutual respect) vardır."
     sina:
       id: d13-057-s
       type: message_infer
@@ -145,6 +150,7 @@ steps:
       stem: "<en>Murat Bey: In this class, I listen to you and you listen to me. Nobody laughs at anybody's ideas.</en>"
       options: ["There should be mutual respect in the class.", "Students must be quiet all the time.", "Only the teacher can talk.", "Students shouldn't share their ideas."]
       answer: 0
+      explain: "Birbirini dinlemek ve fikirlerle dalga geçmemek = sınıfta karşılıklı saygı olmalı."
   - item: U1-061
     sezdir:
       id: d13-061-z
@@ -160,6 +166,7 @@ steps:
       stem: "<en>We should ________ older people and listen to them.</en>"
       options: ["respect", "argue with", "lie to", "refuse"]
       answer: 0
+      explain: "Yaşlı insanlara saygı göstermeli ve onları dinlemeliyiz: respect."
     sina:
       id: d13-061-s
       type: situation
@@ -167,6 +174,7 @@ steps:
       prompt: "<en>Which of the following shows respect?</en>"
       options: ["listening carefully when someone is talking", "laughing at a friend's mistake", "looking at your phone while your teacher is talking", "talking loudly in the library"]
       answer: 0
+      explain: "Soru saygı gösteren davranışı soruyor: birini dikkatle dinlemek. Diğerleri saygısızlıktır."
   - item: U1-088
     sezdir:
       id: d13-088-z
@@ -182,6 +190,7 @@ steps:
       stem: "<en>He always says \"please\" and \"thank you\" to older people. He is very ________.</en>"
       options: ["respectful", "unreliable", "mean", "lazy"]
       answer: 0
+      explain: "Yaşlılara hep \"please\" ve \"thank you\" diyen kişi saygılıdır: respectful."
     sina:
       id: d13-088-s
       type: trait_match
@@ -190,6 +199,7 @@ steps:
       stem: "<en>At Bora's house, Kaan took off his shoes, thanked Bora's mum and carried his glass to the kitchen.</en>"
       options: ["respectful", "rude", "unreliable", "lazy"]
       answer: 0
+      explain: "Ayakkabılarını çıkaran, teşekkür eden Kaan saygılıdır (respectful); rude (kaba) tersidir."
   - item: U1-068
     sezdir:
       id: d13-068-z
@@ -205,6 +215,7 @@ steps:
       stem: "<en>He often forgets his promises and he is always late. He's ________.</en>"
       options: ["unreliable", "reliable", "respectful", "loyal"]
       answer: 0
+      explain: "Sözlerini unutan ve hep geç gelen kişi güvenilmezdir: unreliable."
     sina:
       id: d13-068-s
       type: odd_one_out
@@ -222,6 +233,7 @@ review:
     stem: "<en>I don't know what to do about my problem. Can you give me some ________?</en>"
     options: ["advice", "lies", "feelings", "texts"]
     answer: 0
+    explain: "Sorunum için ne yapacağımı bilmiyorum; bana tavsiye (advice) verir misin?"
   - id: d13-r02
     type: dialogue_complete
     item: U1-037
@@ -229,6 +241,7 @@ review:
     stem: "<en>A: Why is Selin your best friend?\nB: ________</en>"
     options: ["Because she is always there for me.", "Because she is always late.", "Because she never helps me.", "Because she tells my secrets to others."]
     answer: 0
+    explain: "\"She is always there for me\" = Hep yanımda; iyi bir arkadaşın nedeni bu. Diğer şıklar olumsuz özellikler sayıyor."
   - id: d13-r03
     type: gap_fill
     item: U1-043
@@ -236,6 +249,7 @@ review:
     stem: "<en>Kaan opened his bag of chips and ________ it with Bora.</en>"
     options: ["shared", "argued", "depended", "missed"]
     answer: 0
+    explain: "Cipsini Bora ile paylaştı: shared (share'in geçmişi)."
   - id: d13-r04
     type: gap_fill
     item: U1-044
@@ -243,18 +257,21 @@ review:
     stem: "<en>At the weekend, I like to ________ with my family.</en>"
     options: ["spend time", "argue", "feel alone", "tell lies"]
     answer: 0
+    explain: "Hafta sonu ailemle vakit geçirmeyi severim: spend time."
   - id: d13-r05
     type: synonym
     item: U1-063
     prompt: "<en>\"My parents always support me.\" Which one is CLOSEST in meaning?</en>"
     options: ["My parents always back me up.", "My parents always argue with me.", "My parents are always busy.", "My parents never listen to me."]
     answer: 0
+    explain: "support = back up (desteklemek). Ailem beni hep destekler."
   - id: d13-r06
     type: situation
     item: U1-064
     prompt: "<en>Ece helps Selin with English, and Selin helps Ece with maths. What do they do?</en>"
     options: ["They support each other.", "They argue with each other.", "They tell lies.", "They feel alone."]
     answer: 0
+    explain: "Birbirlerinin derslerine yardım eden arkadaşlar birbirini destekler: support each other."
   - id: d13-r07
     type: synonym
     item: U1-028
@@ -262,6 +279,7 @@ review:
     prompt: "<en>\"Bora is my buddy.\" Which one is CLOSEST in meaning?</en>"
     options: ["Bora is my friend.", "Bora is my teacher.", "Bora is my cousin.", "Bora is my neighbour."]
     answer: 0
+    explain: "buddy = friend (arkadaş)."
   - id: d13-r08
     type: message_infer
     item: U1-047
@@ -270,6 +288,7 @@ review:
     stem: "<en>Selin: A true friend doesn't only stay with you in good times. When you have a problem, a true friend is always there.</en>"
     options: ["someone who helps you in bad times too", "someone who is only fun at parties", "someone who always agrees with you", "someone who lives next door"]
     answer: 0
+    explain: "Selin'e göre gerçek arkadaş sorun anında da yanında olandır: someone who helps you in bad times too."
   - id: d13-r09
     type: dialogue_complete
     item: U1-048
@@ -278,6 +297,7 @@ review:
     stem: "<en>Elif: I really enjoyed the picnic with you today, Duru.\nDuru: Me too! ________</en>"
     options: ["You're fun to be with.", "You're always late.", "I feel alone with you.", "You're so unreliable."]
     answer: 0
+    explain: "Piknikten keyif alan Elif'e Duru \"You're fun to be with.\" (Seninle olmak eğlenceli) der."
 
 tips:
   - type: tuzak

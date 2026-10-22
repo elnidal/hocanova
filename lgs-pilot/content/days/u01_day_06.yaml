@@ -88,6 +88,7 @@ steps:
       stem: "<en>Kaan and Bora play football, eat lunch and do homework together. Bora is Kaan's best ________.</en>"
       options: ["buddy", "enemy", "stranger", "boss"]
       answer: 0
+      explain: "Birlikte futbol oynayan, yemek yiyen, ödev yapan kişi yakın arkadaştır: buddy (arkadaş, kanka)."
     sina:
       id: d06-028-s
       type: synonym
@@ -95,6 +96,7 @@ steps:
       prompt: "<en>\"Bora is my buddy.\" Which one is CLOSEST in meaning?</en>"
       options: ["Bora is my friend.", "Bora is my brother.", "Bora is my teacher.", "Bora is my neighbour."]
       answer: 0
+      explain: "buddy = friend (arkadaş). Kardeş, öğretmen ya da komşu değildir."
   - item: U1-030
     sezdir:
       id: d06-030-z
@@ -110,6 +112,7 @@ steps:
       stem: "<en>Selin knows all my secrets, and I know all of hers. She is my ________.</en>"
       options: ["close friend", "stranger", "enemy", "new teacher"]
       answer: 0
+      explain: "Birbirinin sırlarını bilen kişi yakın arkadaştır: close friend. stranger yabancı demektir."
     sina:
       id: d06-030-s
       type: message_infer
@@ -118,6 +121,7 @@ steps:
       stem: "<en>Duru: I met Mert last week. He's nice, but I don't know him very well yet.</en>"
       options: ["Mert isn't Duru's close friend yet.", "Mert is Duru's close friend.", "Duru and Mert are brother and sister.", "Duru knows all of Mert's secrets."]
       answer: 0
+      explain: "Duru Mert'i yeni tanıdı ve \"I don't know him very well yet\" diyor; yani henüz yakın arkadaş değil."
   - item: U1-033
     sezdir:
       id: d06-033-z
@@ -133,6 +137,7 @@ steps:
       stem: "<en>Ece and Selin met in kindergarten and they are still together. Their ________ is very strong.</en>"
       options: ["friendship", "homework", "invitation", "excuse"]
       answer: 0
+      explain: "Anaokulundan beri birlikte olan iki kişinin arkadaşlığı (friendship) güçlüdür."
     sina:
       id: d06-033-s
       type: situation
@@ -141,6 +146,7 @@ steps:
       stem: "<en>Selin: Ece and I met when we were five. We still walk to school together and help each other every day.</en>"
       options: ["a long friendship", "a new teacher", "a birthday cake", "a school trip"]
       answer: 0
+      explain: "Beş yaşından beri birlikte okula gidip birbirlerine yardım ediyorlar: uzun süreli bir arkadaşlıktan söz ediyor."
   - item: U1-040
     sezdir:
       id: d06-040-z
@@ -156,6 +162,7 @@ steps:
       stem: "<en>Bora: Thanks for helping me with my bike, ________!</en>"
       options: ["mate", "enemy", "rival"]
       answer: 0
+      explain: "Bisikletime yardım ettiğin için teşekkürler, arkadaşım: mate (arkadaş). enemy ve rival olumsuzdur."
     sina:
       id: d06-040-s
       type: synonym
@@ -163,6 +170,7 @@ steps:
       prompt: "<en>\"Kaan is my best mate.\" Which word is CLOSEST in meaning to \"mate\"?</en>"
       options: ["friend", "teacher", "cousin", "rival"]
       answer: 0
+      explain: "mate = friend (arkadaş, dost). Öğretmen, kuzen ve rakip değil."
   - item: U1-047
     sezdir:
       id: d06-047-z
@@ -178,6 +186,7 @@ steps:
       stem: "<en>When I was sick, Bora brought my homework every day. He is a ________.</en>"
       options: ["true friend", "bad friend", "stranger", "liar"]
       answer: 0
+      explain: "Hasta olduğunda her gün ödevini getiren kişi gerçek bir arkadaştır: a true friend."
     sina:
       id: d06-047-s
       type: dialogue_complete
@@ -186,6 +195,7 @@ steps:
       stem: "<en>Murat Bey: What is a true friend for you, Selin?\nSelin: ________</en>"
       options: ["Someone who helps me when I have problems.", "Someone who tells my secrets to everyone.", "Someone who forgets my birthday every year.", "Someone who is always late for our meetings."]
       answer: 0
+      explain: "Gerçek arkadaş sorun yaşadığında yardım eden kişidir. Diğer şıklar kötü arkadaş özelliklerini sayıyor."
   - item: U1-048
     sezdir:
       id: d06-048-z
@@ -201,6 +211,7 @@ steps:
       stem: "<en>I always laugh when I'm with you, Kaan. ________</en>"
       options: ["You're fun to be with.", "You're always late.", "You're so mean.", "You're very boring."]
       answer: 0
+      explain: "\"I always laugh when I'm with you\" diyen birine \"You're fun to be with.\" (Seninle olmak eğlenceli) denir. Diğer şıklar olumsuz."
     sina:
       id: d06-048-s
       type: situation
@@ -209,6 +220,7 @@ steps:
       stem: "<en>Kaan tells great jokes and always has fun ideas. Everyone loves being with him.</en>"
       options: ["You're fun to be with.", "You're so boring.", "You never come to our parties.", "You always make us sad."]
       answer: 0
+      explain: "Kaan komik şakalar yapıyor ve herkes onunla olmayı seviyor: arkadaşları ona \"You're fun to be with\" diyebilir."
 
 review:
   - id: d06-r01
@@ -218,6 +230,7 @@ review:
     stem: "<en>There's a big exam tomorrow, but Duru isn't worried at all. She is so ________.</en>"
     options: ["laid-back", "stressed", "mean", "full"]
     answer: 0
+    explain: "Büyük sınavdan önce hiç endişelenmeyen kişi rahattır: laid-back. stressed (stresli) tersidir."
   - id: d06-r02
     type: trait_match
     item: U1-084
@@ -225,6 +238,7 @@ review:
     stem: "<en>At the party, Kaan talked to everyone and made three new friends.</en>"
     options: ["outgoing", "shy", "mean", "quiet"]
     answer: 0
+    explain: "Partide herkesle konuşup üç yeni arkadaş edinen kişi dışa dönüktür: outgoing. shy ve quiet tersidir."
   - id: d06-r03
     type: gap_fill
     item: U1-083
@@ -232,6 +246,7 @@ review:
     stem: "<en>Kaan laughed at Bora's old shoes. Selin said, \"Don't be ________, Kaan! That's not nice.\"</en>"
     options: ["mean", "fair", "full", "laid-back"]
     answer: 0
+    explain: "Selin \"That's not nice\" dediği için Kaan'ın davranışı kırıcıydı: Don't be mean."
   - id: d06-r04
     type: situation
     item: U1-071
@@ -239,6 +254,7 @@ review:
     stem: "<en>The teacher gives every student the same time and the same questions in the test.</en>"
     options: ["That's fair.", "That's mean.", "We're stuffed.", "We're outgoing."]
     answer: 0
+    explain: "Öğretmen herkese aynı süreyi ve soruları veriyor; bu adildir: That's fair."
   - id: d06-r05
     type: dialogue_complete
     item: U1-097
@@ -246,12 +262,14 @@ review:
     stem: "<en>Ece's mom: Would you like some more pasta, Selin?\nSelin: No, thank you. ________</en>"
     options: ["I'm full.", "I'm hungry.", "I'm outgoing.", "I'm late."]
     answer: 0
+    explain: "Daha fazla makarna teklifini reddedip \"No, thank you\" diyen kişi doymuştur: I'm full."
   - id: d06-r06
     type: synonym
     item: U1-099
     prompt: "<en>\"After three pieces of cake, Bora was stuffed.\" Which one is CLOSEST in meaning?</en>"
     options: ["He was very full.", "He was very hungry.", "He was very tired.", "He was very angry."]
     answer: 0
+    explain: "stuffed = çok doymuş. En yakın anlam: He was very full."
 
 tips:
   - type: hafiza_kancasi

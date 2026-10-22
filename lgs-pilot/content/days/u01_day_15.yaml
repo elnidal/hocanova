@@ -99,6 +99,7 @@ steps:
       stem: "<en>My uncle gave money to the animal shelter and bought new books for our school library. He is very ________.</en>"
       options: ["generous", "mean", "stubborn", "jealous"]
       answer: 0
+      explain: "Hayvan barınağına para veren, kütüphaneye kitap alan amca cömerttir: generous."
     sina:
       id: d15-074-s
       type: message_infer
@@ -107,6 +108,7 @@ steps:
       stem: "<en>Ali: I have two sandwiches today. Here, take one! And you can have my juice too.</en>"
       options: ["generous", "self-centered", "stubborn", "jealous"]
       answer: 0
+      explain: "Sandviçini ve suyunu paylaşan Ali cömerttir: generous."
   - item: U1-076
     sezdir:
       id: d15-076-z
@@ -122,6 +124,7 @@ steps:
       stem: "<en>Thanks for carrying my heavy bags, Bora. You're so ________!</en>"
       options: ["helpful", "stubborn", "jealous", "unreliable"]
       answer: 0
+      explain: "Ağır çantaları taşıyan Bora yardımseverdir: helpful."
     sina:
       id: d15-076-s
       type: trait_match
@@ -130,6 +133,7 @@ steps:
       stem: "<en>Zeynep often stays after class. She cleans the board, carries books for the teacher and explains the homework to new students.</en>"
       options: ["helpful", "self-centered", "lazy", "jealous"]
       answer: 0
+      explain: "Öğretmene yardım eden, yeni öğrencilere ödevi açıklayan Zeynep yardımseverdir: helpful."
   - item: U1-078
     sezdir:
       id: d15-078-z
@@ -145,6 +149,7 @@ steps:
       stem: "<en>Ece doesn't like it when Duru spends all her time with Elif. She feels a little ________.</en>"
       options: ["jealous", "generous", "helpful", "full"]
       answer: 0
+      explain: "Duru bütün vaktini Elif'le geçirince Ece biraz kıskanır: jealous."
     sina:
       id: d15-078-s
       type: message_infer
@@ -153,6 +158,7 @@ steps:
       stem: "<en>Mert: My best friend has a new friend now. They sit together and laugh all the time. I want my best friend back!</en>"
       options: ["jealous", "stuffed", "calm", "generous"]
       answer: 0
+      explain: "En iyi arkadaşının yeni bir arkadaşı olunca \"best friend back\" demesi kıskançlıktır: jealous."
   - item: U1-082
     sezdir:
       id: d15-082-z
@@ -168,6 +174,7 @@ steps:
       stem: "<en>A good dog never leaves its owner. Dogs are famous for their ________.</en>"
       options: ["loyalty", "dishonesty", "excuses", "lies"]
       answer: 0
+      explain: "Köpekler sahiplerini bırakmaz; sadakatleriyle (loyalty) ünlüdür."
     sina:
       id: d15-082-s
       type: situation
@@ -175,6 +182,7 @@ steps:
       prompt: "<en>Which sentence is about loyalty?</en>"
       options: ["Duru never leaves her friends, even in hard times.", "Duru is good at playing the guitar.", "Duru sleeps a lot at weekends.", "Duru has a dog called Fıstık."]
       answer: 0
+      explain: "Zor zamanda bile arkadaşlarını bırakmamak sadakattir (loyalty)."
   - item: U1-089
     sezdir:
       id: d15-089-z
@@ -190,6 +198,7 @@ steps:
       stem: "<en>He only thinks about himself and never asks how other people feel. He is ________.</en>"
       options: ["self-centered", "generous", "helpful", "understanding"]
       answer: 0
+      explain: "Yalnızca kendini düşünen, başkalarına hislerini sormayan kişi bencildir: self-centered."
     sina:
       id: d15-089-s
       type: trait_match
@@ -198,6 +207,7 @@ steps:
       stem: "<en>In the park, Ege talked only about his new phone. He didn't ask anyone a question and he didn't listen to others.</en>"
       options: ["self-centered", "generous", "helpful", "loyal"]
       answer: 0
+      explain: "Yalnızca yeni telefonundan söz eden, kimseyi dinlemeyen Ege bencil davranıyor: self-centered."
   - item: U1-091
     sezdir:
       id: d15-091-z
@@ -213,6 +223,7 @@ steps:
       stem: "<en>My little brother never changes his mind. When he says no, it's no! He's so ________.</en>"
       options: ["stubborn", "generous", "helpful", "calm"]
       answer: 0
+      explain: "Fikrini hiç değiştirmeyen kardeşim inatçıdır: stubborn."
     sina:
       id: d15-091-s
       type: dialogue_complete
@@ -221,6 +232,7 @@ steps:
       stem: "<en>Selin: Ege, everyone saw it. The ball was out!\nEge: ________\nSelin: Oh, you're so stubborn!</en>"
       options: ["No! It was a goal. I'm not changing my mind.", "OK, you're right. Sorry.", "Let's ask the others, then.", "Can I have an ice cream, please?"]
       answer: 0
+      explain: "Top dışarıdaydı ama Ege fikrini değiştirmiyor; Selin \"you're so stubborn\" dediği için cevap inatçı olmalı."
 
 review:
   - id: d15-r01
@@ -230,6 +242,7 @@ review:
     stem: "<en>Don't panic! Stay ________ and listen to the teacher.</en>"
     options: ["calm", "stubborn", "jealous", "full"]
     answer: 0
+    explain: "Paniğe kapılma, sakin kal ve öğretmeni dinle: calm."
   - id: d15-r02
     type: dialogue_complete
     item: U1-080
@@ -245,12 +258,14 @@ review:
     stem: "<en>Grandpa spent two hours teaching me chess. I made the same mistake ten times, but he never got angry.</en>"
     options: ["patient", "self-centered", "stubborn", "jealous"]
     answer: 0
+    explain: "Aynı hatayı on kez yapsam da büyükbabam kızmadı: sabırlı (patient)."
   - id: d15-r04
     type: odd_one_out
     item: U1-086
     prompt: "<en>Which one is NOT a personal trait?</en>"
     options: ["chocolate", "honest", "calm", "loyal"]
     answer: 0
+    explain: "Soru kişilik özelliği OLMAYANI soruyor: chocolate bir yiyecek; honest, calm, loyal özelliktir."
   - id: d15-r05
     type: gap_fill
     item: U1-087
@@ -258,6 +273,7 @@ review:
     stem: "<en>Bora is shy, but his brother is very outgoing. They have very different ________.</en>"
     options: ["personalities", "invitations", "excuses", "promises"]
     answer: 0
+    explain: "Bora utangaç, kardeşi dışa dönük: kişilikleri (personalities) farklı."
   - id: d15-r06
     type: trait_match
     item: U1-093
@@ -265,6 +281,7 @@ review:
     stem: "<en>I was ill and missed the exam. Ms Kaya said, \"Don't worry. You can take it next week.\"</en>"
     options: ["understanding", "unreliable", "stubborn", "mean"]
     answer: 0
+    explain: "Sınavı kaçıran öğrenciye \"gelecek hafta girebilirsin\" diyen öğretmen anlayışlıdır: understanding."
   - id: d15-r07
     type: message_infer
     item: U1-018
@@ -273,6 +290,7 @@ review:
     stem: "<en>Bora: Cinema or picnic? I prefer the picnic. I want to be outside in the sun.</en>"
     options: ["He would rather have a picnic.", "He wants to go to the cinema.", "He doesn't want to go out.", "He doesn't have an opinion."]
     answer: 0
+    explain: "\"I prefer the picnic\" = pikniği tercih ediyor; yani He would rather have a picnic."
   - id: d15-r08
     type: dialogue_complete
     item: U1-014
@@ -281,6 +299,7 @@ review:
     stem: "<en>Ece: Duru, pizza or burgers?\nDuru: ________ I'm happy with both.</en>"
     options: ["It doesn't matter.", "I'd prefer pasta.", "Sorry, I can't.", "I don't like them."]
     answer: 0
+    explain: "İkisinden de memnun; fark etmez: It doesn't matter."
   - id: d15-r09
     type: dialogue_complete
     item: U1-023
@@ -289,6 +308,7 @@ review:
     stem: "<en>Selin: I can bring my speaker to the picnic.\nElif: ________ We can listen to music all day.</en>"
     options: ["That would be great!", "That's not fair!", "I have nothing to do.", "Sorry, I'm busy."]
     answer: 0
+    explain: "Hoparlör getirme teklifine \"Harika olur!\" denir: That would be great!"
   - id: d15-r10
     type: message_infer
     item: U1-012
@@ -297,6 +317,7 @@ review:
     stem: "<en>Hi everyone! My birthday party is on Saturday at 3 pm at my house. Please come! — Ece</en>"
     options: ["an invitation", "an apology", "an excuse", "a secret"]
     answer: 0
+    explain: "Tarih, saat, yer ve \"Please come!\" içeren mesaj bir davettir: an invitation."
   - id: d15-r11
     type: dialogue_complete
     item: U1-011
@@ -305,6 +326,7 @@ review:
     stem: "<en>Bora: Would you like to come to my football match on Sunday?\nKaan: ________ What time does it start?</en>"
     options: ["I'd love to!", "Sorry, I can't.", "No, I refuse.", "That's not fair."]
     answer: 0
+    explain: "\"What time does it start?\" diye soruyor; yani kabul etmiş: I'd love to!"
 
 tips:
   - type: kelime_ailesi

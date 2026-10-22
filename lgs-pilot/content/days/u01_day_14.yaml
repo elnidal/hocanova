@@ -95,6 +95,7 @@ steps:
       stem: "<en>Don't shout, please. Take a deep breath and stay ________.</en>"
       options: ["calm", "angry", "noisy", "busy"]
       answer: 0
+      explain: "Bağırma, derin nefes al ve sakin kal: calm. angry ve noisy bu cümleye uymaz."
     sina:
       id: d14-069-s
       type: trait_match
@@ -103,6 +104,7 @@ steps:
       stem: "<en>The fire alarm rang during the exam. Everyone ran and screamed, but Defne walked out slowly and quietly. She wasn't afraid at all.</en>"
       options: ["calm", "nervous", "lazy", "mean"]
       answer: 0
+      explain: "Yangın alarmında herkes kaçıp bağırırken Defne yavaşça çıkıyor ve korkmuyor: sakin (calm)."
   - item: U1-080
     sezdir:
       id: d14-080-z
@@ -118,6 +120,7 @@ steps:
       stem: "<en>A: What is your new teacher ________?\nB: She's calm and patient. We all love her.</en>"
       options: ["like", "likes", "look", "love"]
       answer: 0
+      explain: "\"What is your teacher like?\" = Öğretmenin nasıl biri? Kişiliği sorarken \"What is she like?\" kalıbı kullanılır."
     sina:
       id: d14-080-s
       type: dialogue_complete
@@ -143,6 +146,7 @@ steps:
       stem: "<en>Learning to play the guitar takes a long time. You must be ________.</en>"
       options: ["patient", "lazy", "mean", "full"]
       answer: 0
+      explain: "Gitar öğrenmek uzun sürer; sabırlı (patient) olmalısın."
     sina:
       id: d14-085-s
       type: message_infer
@@ -151,6 +155,7 @@ steps:
       stem: "<en>Our teacher, Ms Aydın, never gets angry. When we don't understand a topic, she waits and explains it again and again.</en>"
       options: ["patient", "unreliable", "mean", "outgoing"]
       answer: 0
+      explain: "Hiç kızmayıp konuyu tekrar tekrar anlatan öğretmen sabırlıdır: patient."
   - item: U1-086
     sezdir:
       id: d14-086-z
@@ -166,6 +171,7 @@ steps:
       stem: "<en>Honesty is the most important ________ in a friend for me.</en>"
       options: ["personal trait", "birthday party", "phone number", "excuse"]
       answer: 0
+      explain: "Dürüstlük arkadaşta aradığım en önemli kişilik özelliğidir (personal trait)."
     sina:
       id: d14-086-s
       type: odd_one_out
@@ -173,6 +179,7 @@ steps:
       prompt: "<en>Which one is NOT a personal trait?</en>"
       options: ["birthday", "patient", "calm", "honest"]
       answer: 0
+      explain: "Soru kişilik özelliği OLMAYANI soruyor. Doğum günü (birthday) bir özellik değil, bir gündür; patient, calm, honest kişilik özellikleridir."
   - item: U1-087
     sezdir:
       id: d14-087-z
@@ -188,6 +195,7 @@ steps:
       stem: "<en>My sister and I look the same, but we have very different ________. She is shy, and I am outgoing.</en>"
       options: ["personalities", "faces", "invitations", "excuses"]
       answer: 0
+      explain: "Kardeşler benzeyip farklı karakterde olabilir: farklı kişilikler (personalities). faces (yüzler) aynı olduğu için yanlış."
     sina:
       id: d14-087-s
       type: situation
@@ -211,6 +219,7 @@ steps:
       stem: "<en>I forgot my homework, but my teacher was very ________. She said, \"Bring it tomorrow.\"</en>"
       options: ["understanding", "mean", "unreliable", "outgoing"]
       answer: 0
+      explain: "Ödevi unutan öğrenciye \"yarın getir\" diyen öğretmen anlayışlıdır: understanding."
     sina:
       id: d14-093-s
       type: trait_match
@@ -219,6 +228,7 @@ steps:
       stem: "<en>Mert broke a glass in the kitchen. His mum didn't shout. She said, \"It was an accident. These things happen.\"</en>"
       options: ["understanding", "stubborn", "mean", "unreliable"]
       answer: 0
+      explain: "Bardağı kıran Mert'e annesi kızmıyor, \"kaza oldu\" diyor: anlayışlı (understanding)."
 
 review:
   - id: d14-r01
@@ -228,12 +238,14 @@ review:
     stem: "<en>My parents are out tonight. Do you want to ________ and watch a film with me?</en>"
     options: ["come over", "depend on", "refuse", "apologise"]
     answer: 0
+    explain: "Ailem yok, gel benimle film izle: come over (bize gelmek)."
   - id: d14-r02
     type: synonym
     item: U1-052
     prompt: "<en>\"You can depend on Selin.\" Which one has the CLOSEST meaning?</en>"
     options: ["You can trust Selin.", "You can call Selin.", "You can visit Selin.", "You can forget Selin."]
     answer: 0
+    explain: "depend on = trust / rely on (güvenmek)."
   - id: d14-r03
     type: gap_fill
     item: U1-057
@@ -241,6 +253,7 @@ review:
     stem: "<en>Kaan listens to Bora's ideas, and Bora listens to Kaan's ideas. There is ________ between them.</en>"
     options: ["mutual respect", "dishonesty", "a secret", "a lie"]
     answer: 0
+    explain: "Birbirinin fikirlerini dinleyen iki kişi arasında karşılıklı saygı vardır: mutual respect."
   - id: d14-r04
     type: gap_fill
     item: U1-061
@@ -248,6 +261,7 @@ review:
     stem: "<en>Be polite and listen to your grandparents. You should ________ older people.</en>"
     options: ["respect", "refuse", "argue with", "lie to"]
     answer: 0
+    explain: "Yaşlılara karşı nazik olup dinlemek: respect."
   - id: d14-r05
     type: trait_match
     item: U1-088
@@ -255,6 +269,7 @@ review:
     stem: "<en>At Bora's house, Kaan said \"Good afternoon\" to Bora's mum, took off his shoes and thanked her for the tea.</en>"
     options: ["respectful", "mean", "unreliable", "lazy"]
     answer: 0
+    explain: "\"Good afternoon\" diyen, ayakkabısını çıkaran ve çay için teşekkür eden Kaan saygılıdır: respectful."
   - id: d14-r06
     type: trait_match
     item: U1-068
@@ -262,6 +277,7 @@ review:
     stem: "<en>Emre is often late, forgets his homework and never does what he says.</en>"
     options: ["unreliable", "reliable", "patient", "loyal"]
     answer: 0
+    explain: "Sık geç kalan, ödevini unutan ve söylediğini yapmayan Emre güvenilmezdir: unreliable."
   - id: d14-r07
     type: message_infer
     item: U1-036
@@ -270,6 +286,7 @@ review:
     stem: "<en>Elif: Duru and I both love dogs, we both play the guitar and we both hate Mondays!</en>"
     options: ["They have a lot in common.", "They argue a lot.", "They have nothing to do.", "They don't get on well."]
     answer: 0
+    explain: "Köpekleri, gitarı ve pazartesi nefretini paylaşıyorlar: çok ortak noktaları var."
   - id: d14-r08
     type: dialogue_complete
     item: U1-039
@@ -278,6 +295,7 @@ review:
     stem: "<en>Ece: Elif, ________ Duru. She's my close friend.\nElif: Hi, Duru! Nice to meet you.</en>"
     options: ["let me introduce you to", "let me apologise to", "I don't want to meet", "I can't reply to"]
     answer: 0
+    explain: "Birini tanıştırırken \"let me introduce you to + kişi\" denir. Elif \"Nice to meet you\" diyerek karşılık veriyor."
   - id: d14-r09
     type: situation
     item: U1-034
@@ -286,6 +304,7 @@ review:
     stem: "<en>Kaan and Bora are friends again. They play football together, laugh at the same jokes and don't argue anymore.</en>"
     options: ["They get on well.", "They don't speak to each other.", "They are angry with each other.", "They feel alone."]
     answer: 0
+    explain: "Yeniden arkadaş olup tartışmayı bıraktılar: iyi anlaşıyorlar (get on well)."
   - id: d14-r10
     type: gap_fill
     item: U1-029
@@ -293,6 +312,7 @@ review:
     stem: "<en>Ece and Elif ________ on the phone for two hours last night. They talked about everything!</en>"
     options: ["chatted", "refused", "argued", "apologised"]
     answer: 0
+    explain: "İki saat telefonda her şeyi konuştular: chatted (sohbet ettiler)."
 
 tips:
   - type: tuzak

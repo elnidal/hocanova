@@ -92,6 +92,7 @@ steps:
       stem: "<en>Copying your friend's answers in an exam is a kind of ________.</en>"
       options: ["dishonesty", "friendship", "honesty", "kindness"]
       answer: 0
+      explain: "Sınavda arkadaşının cevaplarını kopyalamak dürüst olmamaktır: dishonesty."
     sina:
       id: d11-053-s
       type: odd_one_out
@@ -99,6 +100,7 @@ steps:
       prompt: "<en>Which one is NOT an example of dishonesty?</en>"
       options: ["telling the truth when it is difficult", "cheating in an exam", "telling lies to your teacher", "copying your friend's homework"]
       answer: 0
+      explain: "Soru dürüstsüzlük örneği OLMAYANI soruyor. Zor olsa bile doğruyu söylemek dürüstlüktür; diğerleri hile ve yalandır."
   - item: U1-056
     sezdir:
       id: d11-056-z
@@ -114,6 +116,7 @@ steps:
       stem: "<en>Don't believe him. He said he was at home, but that was a ________. He was at the cinema.</en>"
       options: ["lie", "secret", "promise", "feeling"]
       answer: 0
+      explain: "Evde olduğunu söyledi ama sinemadaydı: yalan söyledi (lie)."
     sina:
       id: d11-056-s
       type: odd_one_out
@@ -137,6 +140,7 @@ steps:
       stem: "<en>Don't worry about your project. I ________ I will help you tomorrow.</en>"
       options: ["promise", "refuse", "argue", "apologise"]
       answer: 0
+      explain: "\"I promise I will help you\" = Sana yardım edeceğime söz veriyorum."
     sina:
       id: d11-058-s
       type: dialogue_complete
@@ -145,6 +149,7 @@ steps:
       stem: "<en>Mum: You can go to the park, but come home before seven.\nKaan: ________</en>"
       options: ["OK, I promise.", "I told a lie.", "Sorry, I'm full.", "I have a secret."]
       answer: 0
+      explain: "Annesi \"seven'dan önce gel\" diyor; Kaan söz vererek cevap verir: OK, I promise."
   - item: U1-062
     sezdir:
       id: d11-062-z
@@ -160,6 +165,7 @@ steps:
       stem: "<en>Don't tell anyone, please. It's a ________ between you and me.</en>"
       options: ["secret", "lie", "feeling", "text"]
       answer: 0
+      explain: "Kimseye söylememen gereken şey sırdır: a secret."
     sina:
       id: d11-062-s
       type: message_infer
@@ -168,6 +174,7 @@ steps:
       stem: "<en>Elif: Ece, I'm planning a birthday surprise for Duru. I'll tell you about it, but please don't tell her!</en>"
       options: ["She wants Ece to keep a secret.", "She wants Ece to tell a lie.", "She wants Ece to break a promise.", "She wants Ece to invite Duru."]
       answer: 0
+      explain: "Elif sürprizi anlatıyor ama Duru'ya söylenmemesini istiyor: Ece'den sır tutmasını bekliyor."
   - item: U1-065
     sezdir:
       id: d11-065-z
@@ -183,6 +190,7 @@ steps:
       stem: "<en>Kaan said, \"My dog ate my homework.\" But Kaan doesn't have a dog. He ________.</en>"
       options: ["told a lie", "kept a promise", "told the truth", "kept a secret"]
       answer: 0
+      explain: "Köpeği olmadığı hâlde köpeğinin ödevini yediğini söyledi: yalan söyledi (told a lie)."
     sina:
       id: d11-065-s
       type: trait_match
@@ -191,6 +199,7 @@ steps:
       stem: "<en>Mert often tells lies. Last week he said he was the captain of the football team, but he isn't even in the team.</en>"
       options: ["dishonest", "honest", "reliable", "loyal"]
       answer: 0
+      explain: "Takımda bile olmadığı hâlde kaptan olduğunu söyleyen Mert dürüst değildir: dishonest."
   - item: U1-066
     sezdir:
       id: d11-066-z
@@ -206,6 +215,7 @@ steps:
       stem: "<en>I told Kaan about my dance class, and the next day everyone knew. He ________.</en>"
       options: ["told my secret to others", "kept my secret", "kept his promise", "backed me up"]
       answer: 0
+      explain: "Dans dersini anlattım, ertesi gün herkes biliyordu: Kaan sırrımı başkalarına anlattı."
     sina:
       id: d11-066-s
       type: dialogue_complete
@@ -214,6 +224,7 @@ steps:
       stem: "<en>Selin: Can I tell you something? Promise you won't tell anyone.\nDuru: ________</en>"
       options: ["Don't worry. I never tell secrets to others.", "Great! I'll tell everyone.", "Sure, I'll post it online.", "OK, but I'll tell my whole class."]
       answer: 0
+      explain: "\"Promise you won't tell anyone\" diyen birine sırrı saklayacağını söyleyen cevap verilir: I never tell secrets to others."
 
 review:
   - id: d11-r01
@@ -223,6 +234,7 @@ review:
     stem: "<en>Kaan and Bora always ________ about football. They never agree.</en>"
     options: ["argue", "get on well", "have the same opinion", "chat happily"]
     answer: 0
+    explain: "Hiç anlaşamayan kişiler tartışır (argue). get on well ve same opinion ters anlam verir."
   - id: d11-r02
     type: gap_fill
     item: U1-032
@@ -230,12 +242,14 @@ review:
     stem: "<en>Please be kind to her. Don't hurt her ________.</en>"
     options: ["feelings", "invitations", "texts", "excuses"]
     answer: 0
+    explain: "Ona karşı nazik ol; duygularını (feelings) incitme."
   - id: d11-r03
     type: situation
     item: U1-031
     prompt: "<en>Bora is at a new school. He doesn't know anyone, and nobody talks to him. How does he feel?</en>"
     options: ["He feels alone.", "He feels stuffed.", "He feels proud.", "He feels laid-back."]
     answer: 0
+    explain: "Yeni okulda kimseyi tanımıyor, kimse onunla konuşmuyor: yalnız hisseder (feels alone)."
   - id: d11-r04
     type: dialogue_complete
     item: U1-041
@@ -243,6 +257,7 @@ review:
     stem: "<en>A: How are things with your brother?\nB: ________ We play games and talk every evening.</en>"
     options: ["Great! We have a very good relationship.", "Bad. We argue all the time.", "I don't really know him.", "He never talks to me."]
     answer: 0
+    explain: "\"We play games and talk every evening\" iyi bir ilişkiyi anlatır: Great! We have a very good relationship."
   - id: d11-r05
     type: gap_fill
     item: U1-045
@@ -250,6 +265,7 @@ review:
     stem: "<en>Twins often have a ________. They understand each other without words.</en>"
     options: ["strong bond", "bad feeling", "short text", "big argument"]
     answer: 0
+    explain: "İkizler sözsüz anlaşır; aralarında güçlü bir bağ (strong bond) vardır."
   - id: d11-r06
     type: gap_fill
     item: U1-046
@@ -257,6 +273,7 @@ review:
     stem: "<en>I'll be a bit late. I'll ________ you when I leave the house.</en>"
     options: ["text", "argue", "forget", "refuse"]
     answer: 0
+    explain: "Biraz geç kalacağım, evden çıkınca sana mesaj atarım: text you."
   - id: d11-r07
     type: message_infer
     item: U1-054
@@ -265,6 +282,7 @@ review:
     stem: "<en>Ece: Bora said, \"I'll bring the cake.\" He was late, but he came with a big cake!</en>"
     options: ["He kept his promise.", "He broke his promise.", "He told a lie.", "He refused the invitation."]
     answer: 0
+    explain: "Bora geç geldi ama pastayı getirdi: sözünü tuttu (kept his promise)."
   - id: d11-r08
     type: trait_match
     item: U1-092
@@ -273,6 +291,7 @@ review:
     stem: "<en>Selin: Don't worry about the exam, Bora. You studied hard. I believe in you!</en>"
     options: ["supportive", "mean", "unreliable", "dishonest"]
     answer: 0
+    explain: "\"I believe in you!\" diyen Selin cesaret veriyor: supportive (destekleyici)."
   - id: d11-r09
     type: odd_one_out
     item: U1-050
@@ -280,6 +299,7 @@ review:
     prompt: "<en>Which sentence is about breaking a promise?</en>"
     options: ["He said he would come, but he didn't.", "She did everything she said.", "He never tells anyone my secrets.", "She helped me with my homework."]
     answer: 0
+    explain: "Söz bozmak: \"He said he would come, but he didn't.\" Diğer cümleler sözü tutmayı ve yardımı anlatır."
 
 tips:
   - type: tuzak

@@ -239,6 +239,7 @@ review:
     stem: "<en>Elif's cousin loves ________ books. Her favourite is about a girl who travels around the world on a small boat.</en>"
     options: ["adventure", "cooking", "grammar", "fashion"]
     answer: 0
+    explain: "Dünya çevresinde yolculuk eden kızın kitabı: macera kitabı (adventure)."
   - id: u6d02-r02
     type: gap_fill
     item: U6-002
@@ -246,12 +247,14 @@ review:
     stem: "<en>Snowboarding, bungee jumping and skydiving are all ________.</en>"
     options: ["extreme sports", "team sports", "board games", "indoor hobbies"]
     answer: 0
+    explain: "Snowboard, bungee jumping ve skydiving ekstrem sporlardır."
   - id: u6d02-r03
     type: trait_match
     item: U6-003
     prompt: "<en>Which person is an adrenaline seeker?</en>"
     options: ["Tuna: I love fast rides and high places.", "Ada: I read books in my garden.", "Efe: I sleep on the sofa all weekend.", "Sena: I like quiet walks with my dog."]
     answer: 0
+    explain: "Hız ve yükseklik seven kişi adrenalin arayıcısıdır."
   - id: u6d02-r04
     type: gap_fill
     item: U6-011
@@ -259,6 +262,7 @@ review:
     stem: "<en>Murat Bey: Don't touch that electric cable. It's ________!</en>"
     options: ["dangerous", "delicious", "fashionable", "polite"]
     answer: 0
+    explain: "Elektrik kablosu tehlikelidir (dangerous)."
   - id: u6d02-r05
     type: gap_fill
     item: U6-027
@@ -266,12 +270,14 @@ review:
     stem: "<en>The camp team is very ________. They work at camps every summer.</en>"
     options: ["experienced", "inexperienced", "boring", "jealous"]
     answer: 0
+    explain: "Her yaz kamplarda çalışan ekip tecrübelidir (experienced)."
   - id: u6d02-r06
     type: situation
     item: U6-038
     prompt: "<en>You want to learn about your friend's taste in sports. What do you ask?</en>"
     options: ["What kind of sports do you like?", "How often do you do sports?", "Where is the gym?", "Who is your coach?"]
     answer: 0
+    explain: "Spor zevkini öğrenmek için \"What kind of sports do you like?\" diye sorarız."
 
 tips:
   - type: tuzak

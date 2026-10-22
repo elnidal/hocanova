@@ -92,6 +92,7 @@ steps:
       stem: "<en>My ________ is simple: I get up at 7, go to school, do my homework and go to bed at 10.</en>"
       options: ["daily routine", "favourite genre", "survey", "band"]
       answer: 0
+      explain: "Her gün aynı sırayla yapılan işler günlük rutindir (daily routine)."
     sina:
       id: u2d08-043-s
       type: message_infer
@@ -100,6 +101,7 @@ steps:
       stem: "<en>Selin: I get up at 6.30, have breakfast at 7, go to school at 7.45, do my homework at 5 and go to bed at 10.</en>"
       options: ["What's your daily routine?", "What's your favourite genre?", "What sport do you do?", "Who picks you up after school?"]
       answer: 0
+      explain: "Saat saat gününü anlatan Selin \"What's your daily routine?\" sorusunu cevaplıyor."
   - item: U2-044
     sezdir:
       id: u2d08-044-z
@@ -115,6 +117,7 @@ steps:
       stem: "<en>Selin ________ late for school. She gets up at 6.30 every day.</en>"
       options: ["is never", "never is", "is late never", "never"]
       answer: 0
+      explain: "Sıklık zarfı \"be\" fiilinden SONRA gelir: Selin is never late."
     sina:
       id: u2d08-044-s
       type: message_infer
@@ -123,6 +126,7 @@ steps:
       stem: "<en>How many nights a week do you read before bed?\nSelin: 7 nights\nDuru: 2 nights\nBora: 0 nights</en>"
       options: ["Selin always reads before bed.", "Bora usually reads before bed.", "Duru always reads before bed.", "Selin never reads before bed."]
       answer: 0
+      explain: "Anket: Selin haftada 7 gece okuyor; yani her gece okuyor (always)."
   - item: U2-045
     sezdir:
       id: u2d08-045-z
@@ -138,6 +142,7 @@ steps:
       stem: "<en>To stay fit, you should exercise ________ – three times a week, not once a month.</en>"
       options: ["regularly", "rarely", "never", "hardly"]
       answer: 0
+      explain: "Haftada üç kez düzenli egzersiz: regularly."
     sina:
       id: u2d08-045-s
       type: synonym
@@ -145,6 +150,7 @@ steps:
       prompt: "<en>\"Ece visits her grandma regularly – every Sunday at 2 p.m.\" Which one is CLOSEST in meaning?</en>"
       options: ["Ece visits her grandma at the same time every week.", "Ece rarely visits her grandma.", "Ece never visits her grandma.", "Ece visited her grandma only once."]
       answer: 0
+      explain: "regularly = düzenli olarak; her pazar saat 2'de gidiyor, yani her hafta aynı saatte."
   - item: U2-046
     sezdir:
       id: u2d08-046-z
@@ -160,6 +166,7 @@ steps:
       stem: "<en>The songs on Elif's playlist are ________ pop songs, but there are a few rock songs too.</en>"
       options: ["mostly", "never", "always", "rarely"]
       answer: 0
+      explain: "Çoğu pop şarkısı ve birkaç rock: mostly (çoğunlukla)."
     sina:
       id: u2d08-046-s
       type: message_infer
@@ -168,6 +175,7 @@ steps:
       stem: "<en>Murat Bey's class (25 students): What do you do in your free time?\nchat online: 18 students\nplay sports: 4 students\nread books: 3 students</en>"
       options: ["The students mostly chat online in their free time.", "The students mostly read books in their free time.", "None of the students play sports.", "Nobody reads books."]
       answer: 0
+      explain: "18 öğrenci online sohbet ediyor; çoğu bunu yapıyor: mostly chat online."
   - item: U2-047
     sezdir:
       id: u2d08-047-z
@@ -183,6 +191,7 @@ steps:
       stem: "<en>A: Is Kaan late every day?\nB: Not every day, but ________. Maybe four days a week.</en>"
       options: ["most of the time", "never", "once", "rarely"]
       answer: 0
+      explain: "Haftada dört gün geç kalıyor; \"çoğu zaman\" (most of the time)."
     sina:
       id: u2d08-047-s
       type: synonym
@@ -190,6 +199,7 @@ steps:
       prompt: "<en>\"Most of the time, Duru is calm.\" Which word is CLOSEST in meaning to \"most of the time\"?</en>"
       options: ["usually", "never", "rarely", "once"]
       answer: 0
+      explain: "most of the time = usually (genellikle)."
   - item: U2-048
     sezdir:
       id: u2d08-048-z
@@ -205,6 +215,7 @@ steps:
       stem: "<en>My mum can't ________ me ________ after school today, so I'll take the bus.</en>"
       options: ["pick / up", "give / up", "get / up", "look / up"]
       answer: 0
+      explain: "pick me up = beni almak (arabayla). give up (vazgeçmek), get up (kalkmak), look up (aramak) anlam vermez."
     sina:
       id: u2d08-048-s
       type: synonym
@@ -212,6 +223,7 @@ steps:
       prompt: "<en>In which sentence does \"pick up\" mean \"collect someone by car\"?</en>"
       options: ["Dad will pick us up at 5 outside the cinema.", "Please pick up the paper on the floor.", "Bora picked up a pen from the ground.", "Can you pick up that book for me?"]
       answer: 0
+      explain: "Burada pick up = birini arabayla almak. Diğer cümlelerde yerden bir şeyi almak."
 
 review:
   - id: u2d08-r01
@@ -221,6 +233,7 @@ review:
     stem: "<en>Bora doesn't like playing in a team, so he chose karate. It's his favourite ________.</en>"
     options: ["individual sport", "team sport", "music genre", "band"]
     answer: 0
+    explain: "Takımda oynamayı sevmeyen Bora karateyi seçti; bu bireysel spordur."
   - id: u2d08-r02
     type: gap_fill
     item: U2-038
@@ -228,6 +241,7 @@ review:
     stem: "<en>Bora ________ karate every Saturday morning with Gül Hanım.</en>"
     options: ["does", "plays", "goes", "makes"]
     answer: 0
+    explain: "Karate için \"does\" kullanılır."
   - id: u2d08-r03
     type: situation
     item: U2-039
@@ -235,6 +249,7 @@ review:
     stem: "<en>Every Sunday, Selin's family puts on their backpacks and walks for hours in the mountains and forests.</en>"
     options: ["They go hiking.", "They do karate.", "They work out at the gym.", "They play a team sport."]
     answer: 0
+    explain: "Sırt çantasıyla dağ ve ormanda saatlerce yürümek: hiking."
   - id: u2d08-r04
     type: gap_fill
     item: U2-040
@@ -242,6 +257,7 @@ review:
     stem: "<en>After two hours of karate, Bora was very tired. He lay on the sofa to ________.</en>"
     options: ["rest", "train", "work out", "pay attention"]
     answer: 0
+    explain: "İki saatlik karateden sonra kanepede dinleniyor: rest."
   - id: u2d08-r05
     type: dialogue_complete
     item: U2-041
@@ -249,6 +265,7 @@ review:
     stem: "<en>Murat Bey: Kaan, you're looking at your phone again. ________\nKaan: Sorry, sir.</en>"
     options: ["Please pay attention.", "Please have a rest.", "You look fit.", "Well done!"]
     answer: 0
+    explain: "Telefona bakan öğrenciye \"Lütfen dikkat et\" denir: Please pay attention."
   - id: u2d08-r06
     type: gap_fill
     item: U2-042
@@ -256,6 +273,7 @@ review:
     stem: "<en>Mert's T-shirt was wet because of Bora's kick. Mert was a bit ________.</en>"
     options: ["annoyed", "annoying", "energetic", "relaxing"]
     answer: 0
+    explain: "Bora'nın tekmesi yüzünden Mert biraz rahatsız oldu (annoyed)."
   - id: u2d08-r07
     type: message_infer
     item: U2-003
@@ -264,6 +282,7 @@ review:
     stem: "<en>Murat Bey: Ask twenty students the same five questions about their free time. Write down their answers and bring the results next week.</en>"
     options: ["do a survey", "form a band", "go hiking", "do karate"]
     answer: 0
+    explain: "Yirmi öğrenciye aynı beş soruyu sorup cevapları yazmak anket yapmaktır: do a survey."
   - id: u2d08-r08
     type: dialogue_complete
     item: U2-004
@@ -272,6 +291,7 @@ review:
     stem: "<en>A: What do you usually do at the weekend?\nB: ________ We go to the park or the shopping centre together.</en>"
     options: ["I hang out with my friends.", "I do karate alone.", "I stay in bed all day.", "I hate weekends."]
     answer: 0
+    explain: "Hafta sonu parka gidip arkadaşlarıyla vakit geçiriyor: I hang out with my friends."
   - id: u2d08-r09
     type: dialogue_complete
     item: U2-006
@@ -280,6 +300,7 @@ review:
     stem: "<en>Elif: I'm really into pop music. ________\nDuru: Me? I prefer rock music.</en>"
     options: ["What about you?", "How old are you?", "Where do you live?", "Why are you late?"]
     answer: 0
+    explain: "\"I'm into pop music. What about you?\" = Ya sen? Duru kendi tercihini söylüyor."
   - id: u2d08-r10
     type: synonym
     item: U2-005
@@ -287,6 +308,7 @@ review:
     prompt: "<en>\"In my opinion, teenagers should sleep more.\" Which one is CLOSEST in meaning?</en>"
     options: ["I believe teenagers should sleep more.", "Everybody knows teenagers sleep a lot.", "Teenagers never sleep.", "I have no idea about teenagers' sleep."]
     answer: 0
+    explain: "In my opinion = I believe (bence, inanıyorum ki)."
 
 tips:
   - type: mini_dilbilgisi

@@ -92,6 +92,7 @@ steps:
       stem: "<en>I go to the ________ three times a week. I lift weights and use the running machines there.</en>"
       options: ["gym", "library", "canteen", "cinema"]
       answer: 0
+      explain: "Ağırlık kaldırıp koşu bandı kullanılan yer spor salonudur (gym)."
     sina:
       id: u2d06-031-s
       type: situation
@@ -100,6 +101,7 @@ steps:
       stem: "<en>Kaan: I'm wearing my sports shoes. There are weights and running machines all around me, and my coach is next to me. I'm so tired!</en>"
       options: ["at the gym", "at the library", "at the cinema", "at a café"]
       answer: 0
+      explain: "Spor ayakkabısı, ağırlıklar, koşu makineleri ve koç: Kaan spor salonunda."
   - item: U2-032
     sezdir:
       id: u2d06-032-z
@@ -115,6 +117,7 @@ steps:
       stem: "<en>Ece's mum ________ every morning before work. She does yoga and runs for twenty minutes.</en>"
       options: ["works out", "sleeps in", "gives up", "stays up"]
       answer: 0
+      explain: "Yoga yapıp koşan kişi spor yapıyor: works out."
     sina:
       id: u2d06-032-s
       type: synonym
@@ -122,6 +125,7 @@ steps:
       prompt: "<en>\"Kaan works out three times a week.\" Which one is CLOSEST in meaning?</en>"
       options: ["Kaan does exercise three times a week.", "Kaan goes to work three times a week.", "Kaan goes out with friends three times a week.", "Kaan watches basketball three times a week."]
       answer: 0
+      explain: "work out = spor yapmak, antrenman yapmak. İşe gitmek değil."
   - item: U2-033
     sezdir:
       id: u2d06-033-z
@@ -137,6 +141,7 @@ steps:
       stem: "<en>Our volleyball team ________ every Tuesday and Thursday. We practise passing and serving for two hours.</en>"
       options: ["trains", "admires", "dislikes", "hates"]
       answer: 0
+      explain: "Haftada iki gün iki saat pas ve servis çalışan takım antrenman yapar: trains."
     sina:
       id: u2d06-033-s
       type: synonym
@@ -144,6 +149,7 @@ steps:
       prompt: "<en>\"Our swimming team trains at 7 a.m.\" In which sentence does \"train\" have the SAME meaning?</en>"
       options: ["Athletes train very hard before the Olympics.", "I'm taking the train to Ankara.", "The train is late again.", "We missed the last train."]
       answer: 0
+      explain: "Burada train = antrenman yapmak (fiil). Diğer cümlelerde train = tren (isim)."
   - item: U2-034
     sezdir:
       id: u2d06-034-z
@@ -159,6 +165,7 @@ steps:
       stem: "<en>My uncle goes running every day and eats healthy food. He's fifty, but he ________.</en>"
       options: ["looks fit", "looks tired", "feels alone", "looks ill"]
       answer: 0
+      explain: "Her gün koşup sağlıklı beslenen amca elli yaşında olsa da formda görünür: looks fit."
     sina:
       id: u2d06-034-s
       type: message_infer
@@ -167,6 +174,7 @@ steps:
       stem: "<en>Ece: Wow, Kaan! Two weeks at the gym and now you look strong and healthy. Well done!</en>"
       options: ["He looks fit.", "He looks ill.", "He looks lazy.", "He looks bored."]
       answer: 0
+      explain: "Ece \"you look strong and healthy\" diyor: yani Kaan formda görünüyor (looks fit)."
   - item: U2-035
     sezdir:
       id: u2d06-035-z
@@ -182,6 +190,7 @@ steps:
       stem: "<en>My little sister never sits down. She runs, jumps and dances all day. She's so ________!</en>"
       options: ["energetic", "lazy", "sleepy", "calm"]
       answer: 0
+      explain: "Hiç oturmayan, bütün gün koşup zıplayan kız çok enerjiktir: energetic."
     sina:
       id: u2d06-035-s
       type: trait_match
@@ -190,6 +199,7 @@ steps:
       stem: "<en>Kaan gets up at 6, runs in the park, goes to school, plays basketball in the afternoon and still wants to dance in the evening.</en>"
       options: ["energetic", "lazy", "laid-back", "patient"]
       answer: 0
+      explain: "Sabah koşu, basketbol ve akşam dans: Kaan enerjik (energetic)."
   - item: U2-036
     sezdir:
       id: u2d06-036-z
@@ -205,6 +215,7 @@ steps:
       stem: "<en>Volleyball is a ________. There are six players on each side of the net.</en>"
       options: ["team sport", "board game", "music genre", "survey"]
       answer: 0
+      explain: "Ağın her iki yanında altışar oyuncu olan voleybol takım sporudur (team sport)."
     sina:
       id: u2d06-036-s
       type: odd_one_out
@@ -212,6 +223,7 @@ steps:
       prompt: "<en>Which one is NOT a team sport?</en>"
       options: ["tennis singles", "basketball", "football", "volleyball"]
       answer: 0
+      explain: "Soru takım sporu OLMAYANI soruyor. Tek kişilik tenis (singles) bireysel spordur; diğerleri takım sporudur."
 
 review:
   - id: u2d06-r01
@@ -221,6 +233,7 @@ review:
     stem: "<en>Elif's mum listens to Mozart, Beethoven and Bach. She is fond of ________.</en>"
     options: ["classical music", "rap", "folk music", "rock music"]
     answer: 0
+    explain: "Mozart, Beethoven ve Bach klasik müziğin bestecileridir."
   - id: u2d06-r02
     type: dialogue_complete
     item: U2-026
@@ -228,6 +241,7 @@ review:
     stem: "<en>A: What's your grandad's favourite music?\nB: ________ He plays old village songs on his bağlama.</en>"
     options: ["Folk music.", "Rap.", "Jazz.", "Classical music."]
     answer: 0
+    explain: "Köy şarkıları ve bağlama halk müziğidir: Folk music."
   - id: u2d06-r03
     type: situation
     item: U2-027
@@ -235,6 +249,7 @@ review:
     stem: "<en>Kaan writes his own rhymes and says them very fast over a strong beat.</en>"
     options: ["rap", "classical music", "folk music", "jazz"]
     answer: 0
+    explain: "Kendi kafiyelerini ritim üstünde hızlı söyleyen Kaan rap yapıyor."
   - id: u2d06-r04
     type: gap_fill
     item: U2-028
@@ -242,6 +257,7 @@ review:
     stem: "<en>Can you turn the music down, please? It's too ________. I can't hear you!</en>"
     options: ["loud", "quiet", "slow", "soft"]
     answer: 0
+    explain: "\"I can't hear you!\" dediği için müzik çok yüksek sesli (loud)."
   - id: u2d06-r05
     type: gap_fill
     item: U2-029
@@ -249,6 +265,7 @@ review:
     stem: "<en>I can't study in the canteen. It's always ________ there because everybody talks and laughs.</en>"
     options: ["noisy", "quiet", "empty", "clean"]
     answer: 0
+    explain: "Herkes konuşup güldüğü için kantin gürültülüdür: noisy."
   - id: u2d06-r06
     type: situation
     item: U2-030
@@ -256,6 +273,7 @@ review:
     stem: "<en>Duru's neighbour uses his drill every Saturday at 8 a.m. Duru wants to sleep, but she can't.</en>"
     options: ["annoying", "relaxing", "quiet", "delicious"]
     answer: 0
+    explain: "Cumartesi 8'de matkap sesi uyutmuyor: rahatsız edici (annoying)."
   - id: u2d06-r07
     type: message_infer
     item: U2-011
@@ -264,6 +282,7 @@ review:
     stem: "<en>Elif: Duru, should we practise at your house or at mine?\nDuru: Your house or my house – both are OK for me.</en>"
     options: ["She doesn't mind practising at either house.", "She can't stand practising.", "She is keen on practising at Elif's house.", "She dislikes Elif's house."]
     answer: 0
+    explain: "\"Both are OK for me\" = ikisi de olur; hangisinde çalışacağı fark etmez (doesn't mind)."
 
 tips:
   - type: tuzak

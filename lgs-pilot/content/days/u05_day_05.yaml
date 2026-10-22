@@ -236,6 +236,7 @@ review:
     stem: "<en>Kaan dropped his phone into the pool. Now it's ________ and it doesn't turn on.</en>"
     options: ["broken", "online", "polite", "average"]
     answer: 0
+    explain: "Telefon havuza düştü, açılmıyor: bozuk (broken)."
   - id: u5d05-r02
     type: dialogue_complete
     item: U5-020
@@ -252,6 +253,7 @@ review:
     prompt: "<en>Selin's laptop is off. She wants to do her homework on it. What does she do first?</en>"
     options: ["She turns it on.", "She turns it off.", "She logs out.", "She opens the window."]
     answer: 0
+    explain: "Kapalı laptop ile çalışmak için önce açar (turn on)."
   - id: u5d05-r04
     type: synonym
     item: U5-026
@@ -279,6 +281,7 @@ review:
     stem: "<en>A: We have a science project. ________ work on it together at the library?\nB: Good idea! See you there at four.</en>"
     options: ["Why don't we", "What do you mean", "Do you mean", "Sorry, I can't"]
     answer: 0
+    explain: "\"Why don't we + fiil?\" öneri kalıbıdır; cevap \"Good idea!\""
 
 tips:
   - type: tuzak

@@ -227,6 +227,7 @@ review:
     stem: "<en>Before mobile phones, people often ________ with each other by letter.</en>"
     options: ["communicated", "invented", "dialled", "hung up"]
     answer: 0
+    explain: "Cep telefonundan önce insanlar mektupla iletişim kurardı (communicated)."
   - id: u4d09-r03
     type: gap_fill
     item: U4-045
@@ -234,6 +235,7 @@ review:
     stem: "<en>Kaan talked to his grandpa about old phones for an hour. It was a long and funny ________.</en>"
     options: ["conversation", "device", "invention", "application"]
     answer: 0
+    explain: "Dedesiyle bir saat konuşması uzun ve komik bir sohbetti (conversation)."
   - id: u4d09-r04
     type: situation
     item: U4-046
@@ -249,6 +251,7 @@ review:
     stem: "<en>Who ________ the telephone? — Alexander Graham Bell. He got the first telephone patent in 1876.</en>"
     options: ["invented", "delivered", "confirmed", "returned"]
     answer: 0
+    explain: "Telefonu kim icat etti? invented = icat etti."
   - id: u4d09-r06
     type: gap_fill
     item: U4-048
@@ -256,6 +259,7 @@ review:
     stem: "<en>Grandpa's old phone has no screen, but it still works. It's a fifty-year-old ________!</en>"
     options: ["device", "customer", "extension", "appointment"]
     answer: 0
+    explain: "Ekranı olmayan ama hâlâ çalışan elli yıllık cihaz (device)."
   - id: u4d09-r07
     type: dialogue_complete
     item: U4-023

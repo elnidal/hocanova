@@ -244,6 +244,7 @@ review:
     stem: "<en>I love this song! I'm going to ________ it to my phone and listen to it on the bus.</en>"
     options: ["download", "upload", "comment", "log out"]
     answer: 0
+    explain: "Şarkıyı telefona indirmek: download."
   - id: u5d04-r02
     type: gap_fill
     item: U5-025
@@ -251,6 +252,7 @@ review:
     stem: "<en>Ece filmed the rehearsal ten times. In the end, she ________ the best video to the band's channel.</en>"
     options: ["uploaded", "downloaded", "logged out", "typed"]
     answer: 0
+    explain: "Videoyu kanala yüklemek: upload (uploaded)."
   - id: u5d04-r03
     type: situation
     item: U5-028
@@ -268,12 +270,14 @@ review:
     stem: "<en>Elif's cousin has a cooking channel with 120 ________. Every time he uploads a video, they get a notification.</en>"
     options: ["subscribers", "passwords", "usernames", "averages"]
     answer: 0
+    explain: "Kanalı takip edenlere abone (subscriber) denir."
   - id: u5d04-r05
     type: situation
     item: U5-033
     prompt: "<en>Ece's phone makes a 'ding' every time someone likes the video. What is she getting?</en>"
     options: ["notifications", "passwords", "accounts", "usernames"]
     answer: 0
+    explain: "Biri videoyu beğenince gelen \"ding\" bir bildirimdir (notification)."
   - id: u5d04-r06
     type: gap_fill
     item: U5-034
@@ -281,6 +285,7 @@ review:
     stem: "<en>Elif ________ a photo of Pamuk on her account and wrote 'My best friend!' under it.</en>"
     options: ["posted", "downloaded", "logged out", "signed up"]
     answer: 0
+    explain: "Hesabında fotoğraf paylaştı: posted."
 
 tips:
   - type: tuzak

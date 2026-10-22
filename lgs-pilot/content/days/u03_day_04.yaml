@@ -242,6 +242,7 @@ review:
     stem: "<en>Bora ________ two eggs into the bowl with one hand. Kaan tried too, but his egg landed on his forehead.</en>"
     options: ["cracked", "sliced", "seasoned", "squeezed"]
     answer: 0
+    explain: "Yumurtayı tek elle kaseye kırdı: cracked."
   - id: u3d04-r02
     type: gap_fill
     item: U3-026
@@ -249,6 +250,7 @@ review:
     stem: "<en>________ the eggs and the milk quickly with a fork until they are light and full of air.</en>"
     options: ["Whisk", "Fry", "Peel", "Slice"]
     answer: 0
+    explain: "Yumurta ve sütü çatalla hızlı karıştırıp hafifletmek: whisk."
   - id: u3d04-r03
     type: dialogue_complete
     item: U3-018
@@ -266,6 +268,7 @@ review:
     stem: "<en>Don't ________ all the milk into the bowl at once. Do it slowly.</en>"
     options: ["pour", "crack", "fry", "peel"]
     answer: 0
+    explain: "Sütü yavaşça dökmek: pour."
   - id: u3d04-r05
     type: gap_fill
     item: U3-041
@@ -273,6 +276,7 @@ review:
     stem: "<en>Heat a little oil in a frying ________, then fry the eggs for three minutes.</en>"
     options: ["pan", "bowl", "cup", "oven"]
     answer: 0
+    explain: "Tavada (frying pan) yağ ısıtıp yumurtaları kızartırız."
   - id: u3d04-r06
     type: gap_fill
     item: U3-004
@@ -280,6 +284,7 @@ review:
     stem: "<en>Every morning Bora ________ two eggs in a little butter. Breakfast is ready in three minutes.</en>"
     options: ["fries", "whisks", "pours", "peels"]
     answer: 0
+    explain: "Her sabah yumurtaları tereyağında kızartır (fries). Üçüncü tekil kişide -s."
   - id: u3d04-r07
     type: process_order
     item: U3-045

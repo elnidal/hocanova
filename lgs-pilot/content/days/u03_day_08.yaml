@@ -239,6 +239,7 @@ review:
     stem: "<en>Take the chocolate out of the sun! It's starting to ________.</en>"
     options: ["melt", "knead", "combine", "spread"]
     answer: 0
+    explain: "Çikolatayı güneşten uzaklaştır; erimeye (melt) başladı."
   - id: u3d08-r02
     type: dialogue_complete
     item: U3-011
@@ -246,12 +247,14 @@ review:
     stem: "<en>A: What do I do with the eggs, the sugar and the flour?\nB: ________ them in a big bowl.</en>"
     options: ["Combine", "Melt", "Spread", "Peel"]
     answer: 0
+    explain: "Yumurta, şeker ve unu büyük bir kasede birleştir (combine)."
   - id: u3d08-r03
     type: situation
     item: U3-016
     prompt: "<en>Bora is pushing, folding and turning the bread dough with his hands. What is he doing?</en>"
     options: ["He is kneading it.", "He is melting it.", "He is slicing it.", "He is pouring it."]
     answer: 0
+    explain: "Hamuru itip katlayıp çeviriyor: yoğuruyor (kneading)."
   - id: u3d08-r04
     type: gap_fill
     item: U3-023
@@ -259,6 +262,7 @@ review:
     stem: "<en>Use a knife to ________ the chocolate cream on your bread.</en>"
     options: ["spread", "pour", "knead", "boil"]
     answer: 0
+    explain: "Bıçakla ekmeğe çikolatalı kremayı sürmek: spread."
   - id: u3d08-r05
     type: gap_fill
     item: U3-037
@@ -266,12 +270,14 @@ review:
     stem: "<en>Kaan gave his grandma ________ flowers for her birthday.</en>"
     options: ["a bunch of", "a pinch of", "a cup of", "a teaspoon of"]
     answer: 0
+    explain: "Büyükannesine bir demet çiçek (a bunch of flowers) verdi."
   - id: u3d08-r06
     type: situation
     item: U3-044
     prompt: "<en>Which one do you make with flour, water and yeast?</en>"
     options: ["dough", "sauce", "lemonade", "salad"]
     answer: 0
+    explain: "Un, su ve mayadan hamur (dough) yapılır."
   - id: u3d08-r07
     type: process_order
     item: U3-045

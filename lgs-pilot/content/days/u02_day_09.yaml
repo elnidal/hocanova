@@ -91,6 +91,7 @@ steps:
       stem: "<en>Bora doesn't like reading. He ________ reads books, maybe once a year.</en>"
       options: ["rarely", "always", "usually", "often"]
       answer: 0
+      explain: "Okumayı sevmeyen kişi yılda bir kez okuyorsa nadiren (rarely) okur."
     sina:
       id: u2d09-049-s
       type: message_infer
@@ -115,6 +116,7 @@ steps:
       stem: "<en>My grandparents live in another country, so we ________ see them. Only once or twice a year.</en>"
       options: ["seldom", "always", "usually", "often"]
       answer: 0
+      explain: "Yılda bir iki kez görüşüyorlar: seldom (nadiren)."
     sina:
       id: u2d09-050-s
       type: synonym
@@ -122,6 +124,7 @@ steps:
       prompt: "<en>\"Elif seldom eats fast food. She prefers home-made meals.\" Which one is CLOSEST in meaning to \"seldom\"?</en>"
       options: ["rarely", "often", "always", "usually"]
       answer: 0
+      explain: "seldom = rarely (nadiren). often ve always sık sık demektir."
   - item: U2-051
     sezdir:
       id: u2d09-051-z
@@ -137,6 +140,7 @@ steps:
       stem: "<en>Kaan is late almost every day. He is ________ on time.</en>"
       options: ["hardly ever", "always", "usually", "often"]
       answer: 0
+      explain: "Hemen her gün geç kalıyor; zamanında gelmesi neredeyse hiç olmaz: hardly ever."
     sina:
       id: u2d09-051-s
       type: dialogue_complete
@@ -145,6 +149,7 @@ steps:
       stem: "<en>A: Do you often eat fast food?\nB: ________ I prefer healthy food. Maybe once a year.</en>"
       options: ["No, I hardly ever eat it.", "Yes, I eat it every day.", "Yes, I usually have it for lunch.", "Yes, I always eat it at weekends."]
       answer: 0
+      explain: "\"Maybe once a year\" diyen kişi neredeyse hiç yemiyor: No, I hardly ever eat it."
   - item: U2-052
     sezdir:
       id: u2d09-052-z
@@ -160,6 +165,7 @@ steps:
       stem: "<en>I go to the gym on Mondays and Thursdays. I go there ________ a week.</en>"
       options: ["twice", "once", "three times", "four times"]
       answer: 0
+      explain: "Pazartesi ve perşembe: haftada iki kez (twice a week)."
     sina:
       id: u2d09-052-s
       type: message_infer
@@ -168,6 +174,7 @@ steps:
       stem: "<en>Selin's calendar\nMonday: swimming\nTuesday: piano\nWednesday: swimming\nThursday: —\nFriday: swimming</en>"
       options: ["three times a week", "once a week", "twice a week", "every day"]
       answer: 0
+      explain: "Takvimde pazartesi, çarşamba ve cuma yüzme var: haftada üç kez."
   - item: U2-053
     sezdir:
       id: u2d09-053-z
@@ -183,6 +190,7 @@ steps:
       stem: "<en>There were twenty people at the bus stop, so we waited in the ________ for fifteen minutes.</en>"
       options: ["queue", "menu", "gym", "band"]
       answer: 0
+      explain: "Durakta yirmi kişi sırada bekliyor: queue (sıra)."
     sina:
       id: u2d09-053-s
       type: situation
@@ -190,6 +198,7 @@ steps:
       prompt: "<en>You are at the cinema. Everybody is waiting for tickets, but a boy walks to the front. What do you say to him?</en>"
       options: ["Excuse me, please wait in the queue.", "I'd love to join you.", "I rarely go to the cinema.", "Can you pick me up at six?"]
       answer: 0
+      explain: "Sıraya girmeyen çocuğa \"Excuse me, please wait in the queue.\" denir."
   - item: U2-054
     sezdir:
       id: u2d09-054-z
@@ -205,6 +214,7 @@ steps:
       stem: "<en>My dad reads the newspaper every morning and watches TV news every evening. He likes to ________.</en>"
       options: ["follow the news", "work out", "hang out", "do karate"]
       answer: 0
+      explain: "Her sabah gazete okuyup akşam haberleri izleyen baba haberleri takip eder: follow the news."
     sina:
       id: u2d09-054-s
       type: message_infer
@@ -213,6 +223,7 @@ steps:
       stem: "<en>Selin: I read news websites on the bus and I watch the evening news with my mum. I want to know what's happening in the world.</en>"
       options: ["She follows the news.", "She rarely reads.", "She hardly ever watches TV.", "She isn't interested in the world."]
       answer: 0
+      explain: "Haber sitelerini okuyup akşam haberlerini izleyen Selin haberleri takip ediyor."
 
 review:
   - id: u2d09-r01
@@ -222,6 +233,7 @@ review:
     stem: "<en>Selin gets up at 7, has breakfast at 7.30 and leaves home at 8 every day. This is her ________.</en>"
     options: ["daily routine", "free time", "survey", "band"]
     answer: 0
+    explain: "Her gün aynı saatlerde yapılan işler günlük rutindir."
   - id: u2d09-r02
     type: gap_fill
     item: U2-044
@@ -237,12 +249,14 @@ review:
     stem: "<en>To look fit, you need to work out ________, not only once a month.</en>"
     options: ["regularly", "rarely", "never", "late"]
     answer: 0
+    explain: "Formda görünmek için ayda bir değil düzenli (regularly) spor yapmalısın."
   - id: u2d09-r04
     type: synonym
     item: U2-046
     prompt: "<en>\"My friends mostly listen to pop music.\" Which one is CLOSEST in meaning to \"mostly\"?</en>"
     options: ["generally", "never", "rarely", "quietly"]
     answer: 0
+    explain: "mostly = generally (çoğunlukla, genel olarak)."
   - id: u2d09-r05
     type: dialogue_complete
     item: U2-047
@@ -250,6 +264,7 @@ review:
     stem: "<en>A: Is your little brother noisy?\nB: Yes, ________. He's quiet only when he's asleep.</en>"
     options: ["most of the time", "hardly ever", "never", "once a year"]
     answer: 0
+    explain: "Sadece uyurken sessiz; yani çoğu zaman gürültülü: most of the time."
   - id: u2d09-r06
     type: message_infer
     item: U2-048
@@ -257,6 +272,7 @@ review:
     stem: "<en>Selin: Dad, school finishes at 3.30 today. Can you pick me up at the gate?</en>"
     options: ["She wants her dad to come and take her home by car.", "She wants to pick some flowers at the gate.", "She wants to walk home with her friends.", "She wants her dad to paint the gate."]
     answer: 0
+    explain: "pick up = birini arabayla almak. Selin babasından kapıdan alıp eve götürmesini istiyor."
   - id: u2d09-r07
     type: dialogue_complete
     item: U2-011
@@ -265,6 +281,7 @@ review:
     stem: "<en>Ece: Shall we watch a comedy or an action film?\nDuru: ________ Both are OK for me.</en>"
     options: ["I don't mind.", "I can't stand films.", "I dislike both of them.", "No, I'm busy."]
     answer: 0
+    explain: "\"Both are OK for me\" diyen kişi fark etmez der: I don't mind."
   - id: u2d09-r08
     type: message_infer
     item: U2-010
@@ -273,6 +290,7 @@ review:
     stem: "<en>Elif: I'm really keen on singing. I sing in the shower, on the bus and in the band!</en>"
     options: ["She enjoys singing a lot.", "She dislikes singing.", "She doesn't mind singing, but she prefers dancing.", "She rarely sings."]
     answer: 0
+    explain: "\"keen on singing\" = şarkı söylemeyi çok sever."
   - id: u2d09-r09
     type: gap_fill
     item: U2-012
@@ -281,6 +299,7 @@ review:
     stem: "<en>Bora ________ getting up early. He wants to sleep until noon every day.</en>"
     options: ["dislikes", "enjoys", "is fond of", "is keen on"]
     answer: 0
+    explain: "Öğlene kadar uyumak isteyen kişi erken kalkmaktan hoşlanmaz: dislikes."
   - id: u2d09-r10
     type: message_infer
     item: U2-008
@@ -289,6 +308,7 @@ review:
     stem: "<en>Teen Life Survey: Selin\nreading: ★★★★★\ndancing: ★☆☆☆☆</en>"
     options: ["Selin enjoys reading, but she isn't keen on dancing.", "Selin enjoys dancing more than reading.", "Selin dislikes reading.", "Selin is fond of dancing."]
     answer: 0
+    explain: "Okuma 5 yıldız, dans 1 yıldız: okumayı seviyor, dansa meraklı değil."
 
 tips:
   - type: mini_dilbilgisi

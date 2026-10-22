@@ -249,6 +249,7 @@ review:
     stem: "<en>Bora eats chocolate, cake or ice cream every day. He can't say no to sweets.</en>"
     options: ["He has a sweet tooth.", "He is always in a hurry.", "He hates desserts.", "He can't stand sugar."]
     answer: 0
+    explain: "Her gün çikolata, pasta ya da dondurma yiyen ve tatlıya hayır diyemeyen kişinin tatlı bir dişi vardır (has a sweet tooth)."
   - id: u3d10-r03
     type: gap_fill
     item: U3-003
@@ -256,6 +257,7 @@ review:
     stem: "<en>Put the ice cream in the ________ quickly, or it will melt.</en>"
     options: ["freezer", "oven", "pan", "saucepan"]
     answer: 0
+    explain: "Dondurma erimesin diye hemen dondurucuya (freezer) konur."
   - id: u3d10-r04
     type: dialogue_complete
     item: U3-031
@@ -263,12 +265,14 @@ review:
     stem: "<en>A: Did you buy this jam at the supermarket?\nB: No, it's ________. My grandma made it.</en>"
     options: ["homemade", "frozen", "greasy", "bitter"]
     answer: 0
+    explain: "Büyükannesinin yaptığı reçel ev yapımıdır (homemade)."
   - id: u3d10-r05
     type: synonym
     item: U3-028
     prompt: "<en>\"This soup is really tasty!\" Which one is CLOSEST in meaning?</en>"
     options: ["It's delicious.", "It's awful.", "It's too salty.", "It's bitter."]
     answer: 0
+    explain: "tasty = delicious (lezzetli)."
   - id: u3d10-r06
     type: dialogue_complete
     item: U3-053

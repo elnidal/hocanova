@@ -80,7 +80,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
 
       {placement && <GoalCard goal={state.goal} daily={state.daily} onChange={goal => dispatch({ type: 'goal', goal })} />}
 
-      {placement && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
+      {placement && (state.profile?.nick || Object.keys(state.doneDays).length > 0) && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
 
       {retentions.some(r => r.st.status !== 'not-started') && (
         <section className="card">
@@ -99,13 +99,16 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         </section>
       )}
 
-      <div className="chips" role="tablist">
-        {unitsWithDays.map(u => (
-          <button key={u.unit} role="tab" aria-selected={u.unit === unit.unit} className={`pill${u.unit === unit.unit ? ' on' : ''}`} onClick={() => dispatch({ type: 'unit', unit: u.unit })}>
-            Ünite {u.unit} · {u.title}
-          </button>
-        ))}
-      </div>
+      <details className="card unitpick">
+        <summary><b>Ünite {unit.unit} · <span lang="en">{unit.title}</span></b> <span className="muted small">· ünite değiştir</span></summary>
+        <div className="chips" role="tablist">
+          {unitsWithDays.map(u => (
+            <button key={u.unit} role="tab" aria-selected={u.unit === unit.unit} className={`pill${u.unit === unit.unit ? ' on' : ''}`} onClick={() => dispatch({ type: 'unit', unit: u.unit })}>
+              Ünite {u.unit} · <span lang="en">{u.title}</span>
+            </button>
+          ))}
+        </div>
+      </details>
 
       <section className="card">
         <div className="eyebrow">Ünite {unit.unit} · <span lang="en">{unit.title}</span></div>

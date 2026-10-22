@@ -109,6 +109,7 @@ steps:
       stem: "<en>Selin wants to join the school chess club. She wants to become a ________ of the club.</en>"
       options: ["member", "headmaster", "match", "poster"]
       answer: 0
+      explain: "Satranç kulübüne katılan kişi kulübün üyesi (member) olur."
     sina:
       id: u2d04-020-s
       type: situation
@@ -117,6 +118,7 @@ steps:
       stem: "<en>Bora can't play any instruments, but now his name is on the band list. He takes photos at every practice and concert.</en>"
       options: ["Bora is a member of the band.", "Bora plays the drums in the band.", "Bora is the singer of the band.", "Bora doesn't go to the practices."]
       answer: 0
+      explain: "Bora hiçbir enstrüman çalmıyor ama grup listesinde adı var ve fotoğraf çekiyor: grubun üyesi."
   - item: U2-021
     sezdir:
       id: u2d04-021-z
@@ -132,6 +134,7 @@ steps:
       stem: "<en>Rock, pop and jazz are three different music ________.</en>"
       options: ["genres", "bands", "members", "singers"]
       answer: 0
+      explain: "Rock, pop ve caz farklı müzik türleridir: genres."
     sina:
       id: u2d04-021-s
       type: odd_one_out
@@ -155,6 +158,7 @@ steps:
       stem: "<en>My brother is into ________. He listens to loud electric guitars and drums all day.</en>"
       options: ["rock music", "a lullaby", "the news", "silence"]
       answer: 0
+      explain: "Yüksek sesli elektro gitar ve davul rock müziktir."
     sina:
       id: u2d04-022-s
       type: message_infer
@@ -179,6 +183,7 @@ steps:
       stem: "<en>Elif loves the catchy hits on the radio and dances to them all the time. She is a big fan of ________.</en>"
       options: ["pop music", "the news", "silence", "homework"]
       answer: 0
+      explain: "Radyodaki akılda kalan hit şarkılar pop müziktir."
     sina:
       id: u2d04-023-s
       type: dialogue_complete
@@ -203,6 +208,7 @@ steps:
       stem: "<en>My grandpa listens to ________ every evening. He loves the saxophone and the piano.</en>"
       options: ["jazz", "jeans", "juice", "jam"]
       answer: 0
+      explain: "Saksafon ve piyano seven dede caz dinler: jazz."
     sina:
       id: u2d04-024-s
       type: message_infer
@@ -221,6 +227,7 @@ review:
     stem: "<en>I ________ the noise of my neighbour's drill. It gives me a headache!</en>"
     options: ["can't stand", "am crazy about", "admire", "am into"]
     answer: 0
+    explain: "Komşunun matkap sesi baş ağrıtıyor; dayanamıyorum: can't stand."
   - id: u2d04-r02
     type: situation
     item: U2-014
@@ -228,12 +235,14 @@ review:
     stem: "<en>Selin screams and runs away when she sees a snake, even on TV.</en>"
     options: ["She hates them.", "She admires them.", "She is into them.", "She is crazy about them."]
     answer: 0
+    explain: "Yılan görünce çığlık atıp kaçan Selin yılanlardan nefret eder: hates them."
   - id: u2d04-r03
     type: synonym
     item: U2-015
     prompt: "<en>\"Kaan loves football very, very much.\" Which one has the same meaning?</en>"
     options: ["Kaan is crazy about football.", "Kaan can't stand football.", "Kaan doesn't mind football.", "Kaan dislikes football."]
     answer: 0
+    explain: "Futbolu çok çok seviyor: crazy about football."
   - id: u2d04-r04
     type: gap_fill
     item: U2-016
@@ -241,6 +250,7 @@ review:
     stem: "<en>A: Are you ________ video games?\nB: Yes, a lot! I play every weekend.</en>"
     options: ["into", "onto", "off", "out"]
     answer: 0
+    explain: "\"be into\" ile aynı anlam: Are you into video games?"
   - id: u2d04-r05
     type: gap_fill
     item: U2-017
@@ -248,6 +258,7 @@ review:
     stem: "<en>Many teenagers ________ famous athletes. They want to be like them one day.</en>"
     options: ["admire", "hate", "can't stand", "dislike"]
     answer: 0
+    explain: "Gençler ünlü sporcuları örnek alır ve takdir eder: admire."
   - id: u2d04-r06
     type: dialogue_complete
     item: U2-018
@@ -255,6 +266,7 @@ review:
     stem: "<en>Ece: Do you like my cake?\nSelin: ________, it looks a bit like a hat. But it's delicious!</en>"
     options: ["To be honest", "Nice to meet you", "What about you", "See you later"]
     answer: 0
+    explain: "Pastanın şapkaya benzediğini dürüstçe söyleyen kişi \"To be honest\" der."
 
 tips:
   - type: tuzak

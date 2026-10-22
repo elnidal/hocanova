@@ -89,6 +89,7 @@ steps:
       stem: "<en>Ece: Would you like to come to the cinema with us?\nDuru: ________</en>"
       options: ["I'm afraid I can't. I have a guitar lesson.", "Sure! What time?", "I'd love to!", "That sounds fun. See you there!"]
       answer: 0
+      explain: "Duru daveti reddediyor; kibar red kalıbı \"I'm afraid I can't\" + sebep (gitar dersi). Diğer şıklar kabul cümleleridir."
   - item: U1-021
     sezdir:
       id: d02-021-z
@@ -113,6 +114,7 @@ steps:
       stem: "<en>Kaan: Thanks for asking, Selin! Sorry, I can't come on Friday. My cousins are visiting us.</en>"
       options: ["He refuses the invitation and gives a reason.", "He accepts the invitation.", "He invites Selin to his house.", "He apologises for being late."]
       answer: 0
+      explain: "Kaan \"Sorry, I can't come\" diyerek reddediyor ve sebebini söylüyor (kuzenleri geliyor). Kabul etmiyor, geç kalmaktan da söz etmiyor."
   - item: U1-007
     sezdir:
       id: d02-007-z
@@ -128,6 +130,7 @@ steps:
       stem: "<en>\"My dog ate my homework\" is a very old ________!</en>"
       options: ["excuse", "invitation", "party", "secret"]
       answer: 0
+      explain: "\"My dog ate my homework\" ödev yapmamak için söylenen eski bir bahanedir: excuse (bahane)."
     sina:
       id: d02-007-s
       type: situation
@@ -161,6 +164,7 @@ steps:
       stem: "<en>Bora: Ece, I'm really sorry. I didn't tell the truth about my cat. Please forgive me!</en>"
       options: ["to apologise", "to invite Ece to a party", "to accept an invitation", "to ask for a cat"]
       answer: 0
+      explain: "Bora \"I'm really sorry\" ve \"Please forgive me\" diyor: özür diliyor. Özür dilemenin İngilizcesi apologise; davet ya da kabul söz konusu değil."
   - item: U1-025
     sezdir:
       id: d02-025-z
@@ -185,6 +189,7 @@ steps:
       stem: "<en>Kaan: Let's make a cake for Ece's party together.\nDuru: ________</en>"
       options: ["Why not? I have some chocolate.", "Sorry, I'm busy all week.", "I don't think so.", "I can't cook at all."]
       answer: 0
+      explain: "\"Let's make a cake\" bir öneridir; \"Why not?\" (Neden olmasın?) öneriyi kabul eder. Diğer şıklar reddeder."
   - item: U1-022
     sezdir:
       id: d02-022-z
@@ -200,6 +205,7 @@ steps:
       stem: "<en>A: How about a picnic on Sunday?\nB: ________! I'll bring sandwiches.</en>"
       options: ["Sounds fun", "Sounds boring", "Sorry, I can't", "I'm not sure"]
       answer: 0
+      explain: "Piknik önerisini kabul eden kişi \"Sounds fun!\" (Kulağa eğlenceli geliyor) der ve sandviç getirmeyi teklif eder; mantık olarak kabul bekleniyor."
     sina:
       id: d02-022-s
       type: odd_one_out
@@ -207,6 +213,7 @@ steps:
       prompt: "<en>Which one is NOT used to accept an invitation?</en>"
       options: ["I'm afraid I'm busy.", "Sounds great!", "Why not?", "I'd love to."]
       answer: 0
+      explain: "Soru \"kabul için KULLANILMAYAN\" olanı soruyor. \"I'm afraid I'm busy.\" bir red cümlesidir; diğer üçü kabul ifadesidir."
 
 review:
   - id: d02-r01
@@ -216,6 +223,7 @@ review:
     stem: "<en>________ come to my house for dinner tonight?</en>"
     options: ["Would you like to", "Do you like", "How about", "Would you like"]
     answer: 0
+    explain: "Davet cümlesi \"Would you like to + fiil\" ile kurulur: Would you like to come...? \"Would you like\" tek başına fiil ister, \"to\"suz olmaz."
   - id: d02-r02
     type: gap_fill
     item: U1-008
@@ -223,6 +231,7 @@ review:
     prompt: "Boşluğa uygun olanı seç."
     options: ["How about", "Would you like to", "Why not", "How many"]
     answer: 0
+    explain: "Ardından -ing gelen öneri kalıbı \"How about + -ing\" (How about meeting...?). Would you like to'dan sonra fiil kökü gelir, -ing gelmez."
   - id: d02-r03
     type: gap_fill
     item: U1-013
@@ -230,6 +239,7 @@ review:
     stem: "<en>Ece wants to ________ everyone in our class.</en>"
     options: ["invite", "invitation", "refuse", "excuse"]
     answer: 0
+    explain: "\"to\"dan sonra fiil gelir: to invite (davet etmek). invitation isimdir, kalıba girmez."
   - id: d02-r04
     type: gap_fill
     item: U1-012
@@ -237,12 +247,14 @@ review:
     stem: "<en>I got an ________ to Selin's party. It's on Friday.</en>"
     options: ["invitation", "invited", "accept", "excuse"]
     answer: 0
+    explain: "\"an\" ve \"to Selin's party\" ifadesi bir isim ister: an invitation (davet). invited fiil biçimidir."
   - id: d02-r05
     type: situation
     item: U1-001
     prompt: "<en>Duru says \"Yes, I'll come!\" What does she do?</en>"
     options: ["She accepts the invitation.", "She refuses the invitation.", "She apologises.", "She gives an excuse."]
     answer: 0
+    explain: "\"Yes, I'll come!\" demek daveti kabul etmektir: accepts the invitation."
   - id: d02-r06
     type: dialogue_complete
     item: U1-011
@@ -250,6 +262,7 @@ review:
     stem: "<en>A: Would you like to join our team?\nB: ________ When is the first match?</en>"
     options: ["I'd love to!", "Sorry, I can't.", "No, thanks.", "Maybe next year."]
     answer: 0
+    explain: "\"When is the first match?\" diye sorması takıma katılmak istediğini gösterir; bu yüzden cevap kabul olmalı: I'd love to!"
 
 tips:
   - type: lgs_taktigi

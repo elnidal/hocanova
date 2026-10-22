@@ -88,6 +88,7 @@ steps:
       stem: "<en>Every morning I eat my cereal with milk in a big ________.</en>"
       options: ["bowl", "oven", "recipe", "step"]
       answer: 0
+      explain: "Her sabah mısır gevreğini sütle büyük bir kasede (bowl) yerim."
     sina:
       id: u3d01-038-s
       type: dialogue_complete
@@ -113,6 +114,7 @@ steps:
       stem: "<en>Be careful! Don't touch the ________ door. It's very hot inside.</en>"
       options: ["oven", "fridge", "bowl", "recipe"]
       answer: 0
+      explain: "Fırının (oven) kapısına dokunma; içi çok sıcak."
     sina:
       id: u3d01-040-s
       type: message_infer
@@ -122,6 +124,7 @@ steps:
       stem: "<en>Murat Bey: Students, the oven in the school kitchen gets very hot. Please never use it without an adult.</en>"
       options: ["Students must use the oven with an adult.", "Students can use the oven alone.", "The oven never gets hot.", "There isn't an oven in the school kitchen."]
       answer: 0
+      explain: "Murat Bey fırının çok ısındığını ve yetişkin olmadan kullanılmaması gerektiğini söylüyor."
   - item: U3-045
     sezdir:
       id: u3d01-045-z
@@ -147,6 +150,7 @@ steps:
       stem: "<en>Selin's morning: First, I wake up at 6.30. Then, I have breakfast. After that, I read the news on my phone. Finally, I walk to school with Ece.</en>"
       options: ["Selin reads the news after breakfast.", "Selin walks to school before breakfast.", "Selin reads the news before she wakes up.", "Selin walks to school alone."]
       answer: 0
+      explain: "Metinde sıra: uyanmak, kahvaltı, After that haberleri okumak, Finally okula yürümek; haberleri kahvaltıdan sonra okuyor."
   - item: U3-048
     sezdir:
       id: u3d01-048-z
@@ -162,6 +166,7 @@ steps:
       stem: "<en>Before you start cooking, check the ________: do you have eggs, milk and sugar?</en>"
       options: ["ingredients", "steps", "ovens", "bowls"]
       answer: 0
+      explain: "Yemek yapmaya başlamadan malzemeleri (ingredients) kontrol et: yumurta, süt, şeker."
     sina:
       id: u3d01-048-s
       type: odd_one_out
@@ -195,6 +200,7 @@ steps:
       stem: "<en>Elif: Your grandma's soup is amazing! ________\nEce: Sorry, it's a family secret!</en>"
       options: ["Can I have the recipe?", "Where is the bathroom?", "Is the oven very old?", "Do you want to watch a film?"]
       answer: 0
+      explain: "Tarifi sır olarak saklayan büyükanneye \"Can I have the recipe?\" (Tarifi alabilir miyim?) denir."
   - item: U3-052
     sezdir:
       id: u3d01-052-z
@@ -210,6 +216,7 @@ steps:
       stem: "<en>Making bread at home is a long ________. It takes the whole morning.</en>"
       options: ["process", "ingredient", "bowl", "oven"]
       answer: 0
+      explain: "Ekmek yapmak bütün sabahı alan uzun bir süreçtir (process)."
     sina:
       id: u3d01-052-s
       type: message_infer
@@ -219,6 +226,7 @@ steps:
       stem: "<en>Murat Bey: Your recipe card must be clear. Write each step on a new line and give every step a number.</en>"
       options: ["Each step must be on a different line.", "The steps don't need numbers.", "All the steps must be on one line.", "A recipe card doesn't need any steps."]
       answer: 0
+      explain: "Murat Bey her adımın yeni satırda ve numaralı olmasını istiyor."
 
 review:
   - id: u3d01-r01
@@ -260,6 +268,7 @@ review:
     stem: "<en>Gül Hanım: Bora, you're looking out of the window again. Rule number one in my class: ________\nBora: Sorry! I'm listening now.</en>"
     options: ["Pay attention!", "Take a selfie!", "Hang out with your friends!", "Surf the internet!"]
     answer: 0
+    explain: "\"You're looking out of the window\" diyen öğretmen \"Pay attention!\" der."
   - id: u3d01-r05
     type: text_infer
     item: U2-091
@@ -269,6 +278,7 @@ review:
     stem: "<en>Ece: I want to go to the cinema and then to a concert!\nDuru: I just want to lie on my sofa with a blanket and some soft music.\nKaan: A football match and the gym!</en>"
     options: ["Duru", "Ece", "Kaan", "Ece and Kaan"]
     answer: 0
+    explain: "Duru kanepede battaniye ve yumuşak müzik istiyor; yani sakin akşam isteyen odur."
 
 tips:
   - type: tuzak

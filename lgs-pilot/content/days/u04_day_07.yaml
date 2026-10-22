@@ -243,12 +243,14 @@ review:
     stem: "<en>I can't send the email. My laptop won't ________ to the internet.</en>"
     options: ["connect", "confirm", "disturb", "book"]
     answer: 0
+    explain: "Laptop internete bağlanmıyor: connect."
   - id: u4d07-r02
     type: situation
     item: U4-033
     prompt: "<en>Ece's tooth hurts. She wants to see the dentist on Friday at 3 p.m. What does she need?</en>"
     options: ["an appointment", "an extension", "a wrong number", "a memo"]
     answer: 0
+    explain: "Diş hekimine belirli gün ve saate randevu (appointment) gerekir."
   - id: u4d07-r03
     type: dialogue_complete
     item: U4-035
@@ -256,6 +258,7 @@ review:
     stem: "<en>A: Sevim's Café, good morning.\nB: Hello. I'd like to ________ a table for six on Saturday evening, please.</en>"
     options: ["book", "disturb", "connect", "repeat"]
     answer: 0
+    explain: "Restoranda masa ayırtmak: book a table."
   - id: u4d07-r04
     type: gap_fill
     item: U4-037
@@ -263,6 +266,7 @@ review:
     stem: "<en>Hello, this is Selin. We booked the stage last week. I'm calling to ________ our reservation for Saturday at seven.</en>"
     options: ["confirm", "disturb", "dial", "connect"]
     answer: 0
+    explain: "Daha önce yapılan rezervasyonu doğrulamak: confirm."
   - id: u4d07-r05
     type: trait_match
     item: U4-052
@@ -270,12 +274,14 @@ review:
     stem: "<en>Selin always says \"please\", \"thank you\" and \"Sorry to disturb you\" on the phone. She is very ________ .</en>"
     options: ["polite", "stubborn", "jealous", "mean"]
     answer: 0
+    explain: "\"please\", \"thank you\" diyen Selin kibardır (polite)."
   - id: u4d07-r06
     type: situation
     item: U4-053
     prompt: "<en>It's late in the evening. You need to call your neighbour, but she is probably resting. What do you say first?</en>"
     options: ["Sorry to disturb you, but…", "Thanks for calling!", "Sorry, wrong number.", "Take care!"]
     answer: 0
+    explain: "Geç saatte rahatsız ederken ilk söylenen: Sorry to disturb you, but…"
   - id: u4d07-r07
     type: message_infer
     item: U4-024

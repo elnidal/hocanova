@@ -90,6 +90,7 @@ steps:
       stem: "<en>This film is so ________. I fell asleep after ten minutes.</en>"
       options: ["boring", "exciting", "thrilling", "funny"]
       answer: 0
+      explain: "On dakikada uyutan film sıkıcıdır: boring. exciting ve thrilling aksi anlam verir."
     sina:
       id: d17-095-s
       type: dialogue_complete
@@ -98,6 +99,7 @@ steps:
       stem: "<en>A: How was the history documentary last night?\nB: ________ I almost fell asleep.</en>"
       options: ["It was really boring.", "It was really exciting.", "It was thrilling!", "It was so much fun."]
       answer: 0
+      explain: "\"I almost fell asleep\" (neredeyse uyuyakaldım) diyen kişi filmi sıkıcı bulmuştur: It was really boring."
   - item: U1-096
     sezdir:
       id: d17-096-z
@@ -113,6 +115,7 @@ steps:
       stem: "<en>Tomorrow we're going to our favourite band's concert! I can't wait. It's so ________!</en>"
       options: ["exciting", "boring", "tiring", "difficult"]
       answer: 0
+      explain: "Sabırsızlıkla beklenen konser heyecan vericidir: exciting. boring ve tiring bu duyguya uymaz."
     sina:
       id: d17-096-s
       type: message_infer
@@ -121,6 +124,7 @@ steps:
       stem: "<en>Elif: Only one more day! I packed my bag three times and I can't sleep. Tomorrow will be amazing!</en>"
       options: ["She thinks it's exciting.", "She thinks it's boring.", "She is calm about it.", "She doesn't want to go."]
       answer: 0
+      explain: "Bir gün kaldı, çantasını üç kez hazırladı, uyuyamıyor: gezi onun için heyecan verici (exciting)."
   - item: U1-098
     sezdir:
       id: d17-098-z
@@ -146,6 +150,7 @@ steps:
       stem: "<en>A: How was the picnic?\nB: ________ We played volleyball and sang songs all day.</en>"
       options: ["It was so much fun!", "It was so boring.", "Sorry, I can't.", "It doesn't matter."]
       answer: 0
+      explain: "Gün boyu voleybol oynayıp şarkı söylemek eğlencelidir: It was so much fun!"
   - item: U1-100
     sezdir:
       id: d17-100-z
@@ -161,6 +166,7 @@ steps:
       stem: "<en>The last minute of the football match was ________. Our team scored in the 90th minute!</en>"
       options: ["thrilling", "boring", "calm", "patient"]
       answer: 0
+      explain: "90. dakikada gol atılan son dakika heyecan vericiydi: thrilling."
     sina:
       id: d17-100-s
       type: synonym
@@ -168,6 +174,7 @@ steps:
       prompt: "<en>\"The roller coaster ride was thrilling.\" Which one is CLOSEST in meaning?</en>"
       options: ["It was very exciting.", "It was very boring.", "It was very slow.", "It was very funny."]
       answer: 0
+      explain: "thrilling = çok heyecanlı (very exciting). Hız treni yavaş ya da sıkıcı değil."
 
 review:
   - id: d17-r01
@@ -177,6 +184,7 @@ review:
     stem: "<en>Bora ________ to help me with my maths homework. What a nice friend!</en>"
     options: ["offered", "refused", "forgot", "hated"]
     answer: 0
+    explain: "\"Let me help you\" diyerek yardım etmeyi teklif etti: offered."
   - id: d17-r02
     type: trait_match
     item: U1-072
@@ -184,6 +192,7 @@ review:
     stem: "<en>Ece always wears stylish clothes and she knows the latest trends.</en>"
     options: ["fashionable", "funny", "self-disciplined", "stubborn"]
     answer: 0
+    explain: "Şık giyinen ve trendleri bilen Ece modaya uygundur: fashionable."
   - id: d17-r03
     type: gap_fill
     item: U1-073
@@ -191,6 +200,7 @@ review:
     stem: "<en>My uncle tells great jokes. Everybody laughs when he talks. He's really ________.</en>"
     options: ["funny", "boring", "stubborn", "patient"]
     answer: 0
+    explain: "Fıkra anlatıp herkesi güldüren amca komiktir: funny."
   - id: d17-r04
     type: dialogue_complete
     item: U1-075
@@ -198,6 +208,7 @@ review:
     stem: "<en>A: Look! Kaan is running again, and his shoes are untied.\nB: ________</en>"
     options: ["Yes, he's always in a hurry.", "Yes, he's always patient.", "Yes, he's very calm.", "Yes, he's very laid-back."]
     answer: 0
+    explain: "Ayakkabı bağcığı çözük hâlde koşan Kaan'ın hep acelesi var: He's always in a hurry."
   - id: d17-r05
     type: trait_match
     item: U1-090
@@ -205,6 +216,7 @@ review:
     stem: "<en>Selin makes a plan every Sunday and follows it all week. She always finishes her homework before she plays.</en>"
     options: ["self-disciplined", "lazy", "fashionable", "funny"]
     answer: 0
+    explain: "Plan yapıp ona uyan, önce ödevini bitiren Selin disiplinlidir: self-disciplined."
   - id: d17-r06
     type: gap_fill
     item: U1-094
@@ -212,6 +224,7 @@ review:
     stem: "<en>My phone battery is almost dead. I need a charger ________!</en>"
     options: ["as soon as possible", "next year", "slowly", "never"]
     answer: 0
+    explain: "Telefon şarjı bitmek üzere; şarj aletine en kısa sürede ihtiyacım var: as soon as possible."
   - id: d17-r07
     type: message_infer
     item: U1-027
@@ -220,6 +233,7 @@ review:
     stem: "<en>Kaan: Bora and I shouted at each other about the football match. Now we aren't talking.</en>"
     options: ["They argued.", "They spent time together.", "They supported each other.", "They shared a secret."]
     answer: 0
+    explain: "Maç yüzünden birbirlerine bağırıp konuşmuyorlar: tartıştılar (argued)."
   - id: d17-r08
     type: situation
     item: U1-031
@@ -228,6 +242,7 @@ review:
     stem: "<en>It's Saturday. Bora is at home. His friends aren't texting him, and nobody calls him. He has no one to talk to.</en>"
     options: ["He feels alone.", "He is very busy.", "He is having fun with friends.", "He is in a hurry."]
     answer: 0
+    explain: "Cumartesi evde; kimse yazmıyor, kimse aramıyor: kendini yalnız hissediyor."
   - id: d17-r09
     type: dialogue_complete
     item: U1-046
@@ -236,6 +251,7 @@ review:
     stem: "<en>A: I can't talk now. I'm in the library.\nB: OK. ________</en>"
     options: ["I'll text you later.", "Let's argue about it.", "I prefer the cinema.", "That's thrilling!"]
     answer: 0
+    explain: "Kütüphanede konuşamayan kişiye \"Sana sonra mesaj atarım\" denir: I'll text you later."
   - id: d17-r10
     type: situation
     item: U1-045
@@ -244,6 +260,7 @@ review:
     stem: "<en>Ece and Selin have been friends since kindergarten. They share everything and always support each other.</en>"
     options: ["They have a strong bond.", "They have a bad feeling.", "They have a big argument.", "They have a new relationship."]
     answer: 0
+    explain: "Anaokulundan beri arkadaş olan, her şeyi paylaşan ve destekleyen kızların güçlü bir bağı vardır."
   - id: d17-r11
     type: trait_match
     item: U1-059
@@ -252,6 +269,7 @@ review:
     stem: "<en>Selin is never late. When she says, \"I'll do it,\" she always does it.</en>"
     options: ["reliable", "unreliable", "stubborn", "jealous"]
     answer: 0
+    explain: "Hiç geç kalmayan ve \"yaparım\" dediğini yapan Selin güvenilirdir: reliable."
   - id: d17-r12
     type: message_infer
     item: U1-077
@@ -260,6 +278,7 @@ review:
     stem: "<en>Duru: Murat Bey, I broke the window. I'm really sorry. It was me, not Bora.</en>"
     options: ["honest", "unreliable", "self-centered", "jealous"]
     answer: 0
+    explain: "Camı kıran Duru gerçeği söylüyor ve kimseyi suçlamıyor: dürüst (honest)."
   - id: d17-f01
     type: dialogue_complete
     item: U1-026
@@ -294,6 +313,7 @@ review:
     stem: "<en>Kaan: Bora, I'm sorry for last week. I told your secret to others, and that was wrong. I promise it won't happen again. Can we spend time together this weekend?</en>"
     options: ["He is apologising and making a promise.", "He is refusing an invitation.", "He is telling a new secret.", "He is giving advice to Bora."]
     answer: 0
+    explain: "Kaan hem özür diliyor (\"I'm sorry\") hem de söz veriyor (\"I promise\"): apologising and making a promise."
 
 tips:
   - type: kelime_ailesi

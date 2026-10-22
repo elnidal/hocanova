@@ -243,6 +243,7 @@ review:
     stem: "<en>Mountain goats can ________ very steep rocks.</en>"
     options: ["climb", "cost", "prefer", "invite"]
     answer: 0
+    explain: "Dağ keçileri çok dik kayalara tırmanabilir (climb)."
   - id: u6d07-r02
     type: gap_fill
     item: U6-016
@@ -250,6 +251,7 @@ review:
     stem: "<en>It takes a lot of ________ to say 'I'm scared' in front of your friends.</en>"
     options: ["courage", "equipment", "rope", "flashlight"]
     answer: 0
+    explain: "Arkadaşlarının önünde korktuğunu söylemek cesaret (courage) ister."
   - id: u6d07-r03
     type: dialogue_complete
     item: U6-049
@@ -257,6 +259,7 @@ review:
     stem: "<en>A: Did you finish the 1,000-piece puzzle?\nB: Yes! It was difficult, but I ________.</en>"
     options: ["succeeded", "refused", "forgot", "apologised"]
     answer: 0
+    explain: "Zor olan yapbozu bitirdiyse başardı (succeeded)."
   - id: u6d07-r04
     type: gap_fill
     item: U6-050
@@ -264,12 +267,14 @@ review:
     stem: "<en>Kaan practises basketball every day, so his game is ________ fast.</en>"
     options: ["improving", "costing", "falling", "surviving"]
     answer: 0
+    explain: "Her gün çalışan Kaan'ın oyunu gelişiyor (improving)."
   - id: u6d07-r05
     type: synonym
     item: U6-051
     prompt: "<en>Which word is closest in meaning to 'aim'?</en>"
     options: ["goal", "rope", "accident", "skill"]
     answer: 0
+    explain: "aim = goal (amaç, hedef)."
   - id: u6d07-r06
     type: gap_fill
     item: U6-052
@@ -277,6 +282,7 @@ review:
     stem: "<en>Bora ________ a lot of confidence at the climbing wall.</en>"
     options: ["gained", "cost", "climbed", "invited"]
     answer: 0
+    explain: "Tırmanış duvarında çok özgüven kazandı (gained)."
 
 tips:
   - type: tuzak

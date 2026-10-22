@@ -116,6 +116,7 @@ steps:
       prompt: "<en>\"Elif enjoys singing in the shower.\" Which one is CLOSEST in meaning?</en>"
       options: ["Elif likes singing in the shower.", "Elif never sings in the shower.", "Elif dislikes the shower.", "Elif sings only at school."]
       answer: 0
+      explain: "enjoy + -ing = yapmaktan hoşlanmak: Elif likes singing in the shower."
   - item: U2-009
     sezdir:
       id: u2d02-009-z
@@ -140,6 +141,7 @@ steps:
       stem: "<en>Bora: I'm fond of cooking. I make pancakes for my family every Sunday.</en>"
       options: ["He likes cooking.", "He can't cook.", "He cooks every day.", "His family makes pancakes for him."]
       answer: 0
+      explain: "\"I'm fond of cooking\" = yemek yapmayı severim."
   - item: U2-010
     sezdir:
       id: u2d02-010-z
@@ -155,6 +157,7 @@ steps:
       stem: "<en>Selin is keen ________ reading the news. She reads it every morning.</en>"
       options: ["on", "in", "at", "to"]
       answer: 0
+      explain: "\"keen on + -ing\" kalıbı: keen on reading (okumaya meraklı)."
     sina:
       id: u2d02-010-s
       type: situation
@@ -188,6 +191,7 @@ steps:
       stem: "<en>Ece: Can we practise at your house on Saturday?\nDuru: I don't mind. My mum is OK with it.</en>"
       options: ["It's OK for her.", "She refuses.", "She is angry with Ece.", "She wants to practise at Ece's house."]
       answer: 0
+      explain: "\"I don't mind\" = sorun değil, olur. Duru'nun annesi de uygun buluyor."
   - item: U2-012
     sezdir:
       id: u2d02-012-z
@@ -203,6 +207,7 @@ steps:
       stem: "<en>I ________ getting up early. I'm always tired and grumpy in the morning.</en>"
       options: ["dislike", "enjoy", "am fond of", "am keen on"]
       answer: 0
+      explain: "Sabah hep yorgun ve huysuz olan kişi erken kalkmaktan hoşlanmaz: dislike."
     sina:
       id: u2d02-012-s
       type: odd_one_out
@@ -220,6 +225,7 @@ review:
     stem: "<en>Most ________ in our school have a mobile phone. They are between 13 and 18 years old.</en>"
     options: ["teenagers", "babies", "grandparents", "teachers"]
     answer: 0
+    explain: "13–18 yaş arası kişilere teenager (genç) denir."
   - id: u2d02-r02
     type: gap_fill
     item: U2-002
@@ -227,6 +233,7 @@ review:
     stem: "<en>A: What do you do in your ________?\nB: I play chess and read comics.</en>"
     options: ["free time", "school bag", "timetable", "classroom"]
     answer: 0
+    explain: "\"What do you do in your free time?\" = Boş zamanında ne yaparsın? Satranç ve çizgi roman boş zaman etkinliğidir."
   - id: u2d02-r03
     type: situation
     item: U2-003
@@ -234,12 +241,14 @@ review:
     stem: "<en>Ece asks thirty students the same five questions and writes down all their answers.</en>"
     options: ["She is doing a survey.", "She is taking an exam.", "She is having a party.", "She is sending an invitation."]
     answer: 0
+    explain: "Otuz öğrenciye aynı soruları sorup cevapları yazmak anket yapmaktır: doing a survey."
   - id: u2d02-r04
     type: synonym
     item: U2-004
     prompt: "<en>\"We spend time together in the park on Sundays.\" Which one has the same meaning?</en>"
     options: ["We hang out in the park on Sundays.", "We hang up in the park on Sundays.", "We clean the park on Sundays.", "We never go to the park on Sundays."]
     answer: 0
+    explain: "spend time together = hang out (takılmak, vakit geçirmek). hang up ise telefonu kapatmaktır."
   - id: u2d02-r05
     type: dialogue_complete
     item: U2-005
@@ -247,6 +256,7 @@ review:
     stem: "<en>A: What do you think about our school canteen?\nB: ________, the food is delicious but it's too crowded.</en>"
     options: ["In my opinion", "What about you", "Nice to meet you", "See you later"]
     answer: 0
+    explain: "\"In my opinion\" = bence; görüş bildirirken kullanılır. Cümlenin devamında düşünce var."
   - id: u2d02-r06
     type: dialogue_complete
     item: U2-006
@@ -254,6 +264,7 @@ review:
     stem: "<en>Kaan: I'm fourteen. ________\nBora: I'm fourteen too!</en>"
     options: ["What about you?", "Where are you from?", "What's your name?", "How are you?"]
     answer: 0
+    explain: "\"I'm fourteen. What about you?\" = Ben on dörtteyim, ya sen? Yaş söyleyince karşı tarafa aynı soru \"What about you?\" ile sorulur."
 
 tips:
   - type: mini_dilbilgisi

@@ -241,6 +241,7 @@ review:
     stem: "<en>Dad, can you ________ the corn on the barbecue?</en>"
     options: ["grill", "mash", "knead", "spread"]
     answer: 0
+    explain: "Barbekü üzerinde mısırı ızgara yapmak: grill."
   - id: u3d09-r02
     type: dialogue_complete
     item: U3-007
@@ -248,12 +249,14 @@ review:
     stem: "<en>A: How do you cook the chicken?\nB: I ________ it in the oven with potatoes for an hour.</en>"
     options: ["roast", "steam", "mash", "spread"]
     answer: 0
+    explain: "Tavuğu fırında patatesle bir saat pişirmek: roast."
   - id: u3d09-r03
     type: situation
     item: U3-008
     prompt: "<en>Duru's mum cooks the broccoli over boiling water. She doesn't use any oil. How does she cook it?</en>"
     options: ["She steams it.", "She fries it.", "She grills it.", "She roasts it."]
     answer: 0
+    explain: "Kaynayan suyun buharında, yağsız pişirmek: steam (buharda pişirmek)."
   - id: u3d09-r04
     type: gap_fill
     item: U3-017
@@ -261,6 +264,7 @@ review:
     stem: "<en>Babies can't eat big pieces of banana, so ________ the banana with a fork.</en>"
     options: ["mash", "grill", "roast", "steam"]
     answer: 0
+    explain: "Bebekler büyük muz parçası yiyemez; muzu çatalla ezeriz (mash)."
   - id: u3d09-r05
     type: gap_fill
     item: U3-029
@@ -268,12 +272,14 @@ review:
     stem: "<en>The fish at this market come from the sea every morning, so they're always ________.</en>"
     options: ["fresh", "greasy", "bitter", "sweet"]
     answer: 0
+    explain: "Balıklar her sabah denizden geldiği için hep taze (fresh)."
   - id: u3d09-r06
     type: synonym
     item: U3-030
     prompt: "<en>\"These chips are too oily.\" Which one is CLOSEST in meaning to \"oily\"?</en>"
     options: ["greasy", "fresh", "sour", "sweet"]
     answer: 0
+    explain: "oily = yağlı; en yakın anlam greasy."
   - id: u3d09-r07
     type: process_order
     item: U3-001

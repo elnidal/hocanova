@@ -250,6 +250,7 @@ review:
     stem: "<en>Elif and her cousin want to ________ in the summer and eat ice cream by the sea.</en>"
     options: ["meet up", "hang up", "pick up", "hold on"]
     answer: 0
+    explain: "Yazın buluşup (meet up) dondurma yemek isteyen kuzenler."
   - id: u4d06-r03
     type: gap_fill
     item: U4-049
@@ -257,6 +258,7 @@ review:
     stem: "<en>We changed the time four times! In the end, we made a ________: Saturday at five.</en>"
     options: ["decision", "memo", "caller", "extension"]
     answer: 0
+    explain: "Saati dört kez değiştirdik; sonunda karar verdik (decision): cumartesi beş."
   - id: u4d06-r04
     type: synonym
     item: U4-021
@@ -264,12 +266,14 @@ review:
     stem: "<en>\"I guess I can come at five.\"</en>"
     options: ["I think I can come at five.", "I'm sure I can't come at five.", "I never come at five.", "I came at five yesterday."]
     answer: 0
+    explain: "\"I guess I can come at five\" = Sanırım beşte gelebilirim."
   - id: u4d06-r05
     type: situation
     item: U4-028
     prompt: "<en>Your friend called you to say \"Happy birthday!\" Now you are ending the call. What do you say?</en>"
     options: ["Thanks for calling! Talk to you soon.", "Who's calling, please?", "Sorry, wrong number.", "Hold on, I'll get him."]
     answer: 0
+    explain: "Doğum günü araması bitince \"Thanks for calling! Talk to you soon.\" denir."
   - id: u4d06-r06
     type: situation
     item: U4-008

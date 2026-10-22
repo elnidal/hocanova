@@ -229,6 +229,7 @@ review:
     stem: "<en>Kaan plays games on his phone all day and he can't stop. Selin thinks he's a game ________.</en>"
     options: ["addict", "habit", "average", "app"]
     answer: 0
+    explain: "Bütün gün oyun oynayıp duramayan kişi oyun bağımlısıdır (addict)."
   - id: u5d02-r02
     type: situation
     item: U5-037
@@ -243,6 +244,7 @@ review:
     stem: "<en>Bora always drinks a glass of milk before bed. It's his ________.</en>"
     options: ["habit", "addict", "average", "usage"]
     answer: 0
+    explain: "Her gece yatmadan süt içmek bir alışkanlıktır (habit)."
   - id: u5d02-r04
     type: dialogue_complete
     item: U5-044

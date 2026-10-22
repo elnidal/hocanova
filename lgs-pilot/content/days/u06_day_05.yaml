@@ -241,12 +241,14 @@ review:
     stem: "<en>The camp has all the safety ________, so you don't need to buy a helmet.</en>"
     options: ["equipment", "equipments", "experience", "excuses"]
     answer: 0
+    explain: "equipment sayılamayan bir isimdir; -s almaz (safety equipment)."
   - id: u6d05-r02
     type: situation
     item: U6-023
     prompt: "<en>Kaan is going skateboarding. He wants to protect his head and his knees. What does he need?</en>"
     options: ["a helmet and knee pads", "a flashlight and a rope", "a life jacket and a tent", "a map and a camera"]
     answer: 0
+    explain: "Kafayı ve dizleri korumak için kask ve dizlik gerekir."
   - id: u6d05-r03
     type: gap_fill
     item: U6-024
@@ -254,6 +256,7 @@ review:
     stem: "<en>Tie the boat to the tree with this ________.</en>"
     options: ["rope", "helmet", "flashlight", "knee pad"]
     answer: 0
+    explain: "Tekneyi ağaca bağlamak için ip (rope)."
   - id: u6d05-r04
     type: gap_fill
     item: U6-025
@@ -261,12 +264,14 @@ review:
     stem: "<en>It's dark in the tent. Can you give me the ________, please?</en>"
     options: ["flashlight", "life jacket", "rope", "knee pads"]
     answer: 0
+    explain: "Çadır karanlık; el feneri (flashlight) isteniyor."
   - id: u6d05-r05
     type: situation
     item: U6-026
     prompt: "<en>Elif is going on a boat trip on the lake. What must she wear?</en>"
     options: ["a life jacket", "knee pads", "a flashlight", "a scarf"]
     answer: 0
+    explain: "Göldeki tekne gezisinde can yeleği (life jacket) giyilir."
   - id: u6d05-r06
     type: dialogue_complete
     item: U6-046
@@ -274,6 +279,7 @@ review:
     stem: "<en>Bora: ________\nShop assistant: It costs 120 liras.</en>"
     options: ["How much does this flashlight cost?", "What time is it?", "Where is the flashlight?", "How many flashlights are there?"]
     answer: 0
+    explain: "Cevap \"It costs 120 liras\" olduğu için soru: How much does this flashlight cost?"
 
 tips:
   - type: tuzak

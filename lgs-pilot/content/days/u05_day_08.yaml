@@ -269,6 +269,7 @@ review:
     stem: "<en>My computer is new. Which web ________ do you use to visit websites, ClipFox or Wavey?</en>"
     options: ["browser", "password", "screen", "follower"]
     answer: 0
+    explain: "Web sitelerini gezmek için kullanılan program tarayıcıdır (browser)."
   - id: u5d08-r02
     type: dialogue_complete
     item: U5-022
@@ -276,6 +277,7 @@ review:
     stem: "<en>A: I don't know the words of this song.\nB: ________ them on the Internet. It takes ten seconds.</en>"
     options: ["Search for", "Log out of", "Delete", "Turn off"]
     answer: 0
+    explain: "Şarkı sözlerini internette ara: Search for them."
   - id: u5d08-r03
     type: gap_fill
     item: U5-038
@@ -283,6 +285,7 @@ review:
     stem: "<en>Before she starts a project, Selin always ________ in the library and online.</en>"
     options: ["does research", "logs out", "turns off", "deletes"]
     answer: 0
+    explain: "Projeden önce kütüphanede ve internette araştırma yapar (does research)."
   - id: u5d08-r04
     type: gap_fill
     item: U5-039
@@ -290,6 +293,7 @@ review:
     stem: "<en>Dr Demir has studied volcanoes for thirty years, and people often ask him questions about them. He's a volcano ________ .</en>"
     options: ["expert", "follower", "stranger", "user"]
     answer: 0
+    explain: "Otuz yıldır yanardağ çalışan kişi uzmandır (expert)."
   - id: u5d08-r05
     type: dialogue_complete
     item: U5-042
@@ -297,6 +301,7 @@ review:
     stem: "<en>Bora: Where can I find the bus times for the school trip?\nSelin: Check the school website. It has all the ________ .</en>"
     options: ["information", "passwords", "followers", "notifications"]
     answer: 0
+    explain: "Okul sitesinde otobüs saatleri gibi her türlü bilgi (information) var."
   - id: u5d08-r06
     type: gap_fill
     item: U5-046
@@ -304,6 +309,7 @@ review:
     stem: "<en>This map app is very ________ . I never get lost now.</en>"
     options: ["useful", "broken", "boring", "offline"]
     answer: 0
+    explain: "Yolunu kaybetmemesini sağlayan harita uygulaması faydalıdır (useful)."
   - id: u5d08-r07
     type: table_graph
     item: U5-044

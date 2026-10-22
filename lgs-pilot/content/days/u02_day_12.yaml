@@ -86,6 +86,7 @@ steps:
       stem: "<en>You can't wear jeans and trainers to the ceremony. It's a ________ event.</en>"
       options: ["formal", "casual", "ordinary", "ridiculous"]
       answer: 0
+      explain: "Törende kot ve spor ayakkabı giyemezsin; resmî (formal) bir etkinlik."
     sina:
       id: u2d12-067-s
       type: situation
@@ -93,6 +94,7 @@ steps:
       prompt: "<en>Where do people usually wear formal clothes?</en>"
       options: ["at a wedding ceremony in a hotel", "at a picnic in the park", "at a basketball match", "at a sleepover at a friend's house"]
       answer: 0
+      explain: "Otelde düğün töreni resmî bir etkinliktir; orada resmî kıyafet giyilir."
   - item: U2-068
     sezdir:
       id: u2d12-068-z
@@ -108,6 +110,7 @@ steps:
       stem: "<en>This sofa is so soft and ________. I can sleep here!</en>"
       options: ["comfortable", "formal", "annoying", "nervous"]
       answer: 0
+      explain: "Yumuşak ve rahat (comfortable) kanepede uyuyabilirim."
     sina:
       id: u2d12-068-s
       type: message_infer
@@ -116,6 +119,7 @@ steps:
       stem: "<en>Duru: I always wear soft trainers and big jumpers. I don't care about style. I just want to feel relaxed.</en>"
       options: ["comfortable clothes", "formal clothes", "the latest fashion", "expensive brands"]
       answer: 0
+      explain: "Yumuşak ayakkabı ve büyük kazak: Duru için en önemlisi rahat kıyafet."
   - item: U2-069
     sezdir:
       id: u2d12-069-z
@@ -131,6 +135,7 @@ steps:
       stem: "<en>He thinks he is better than everyone because his clothes are expensive. He's a ________.</en>"
       options: ["snob", "buddy", "member", "teenager"]
       answer: 0
+      explain: "Kıyafetleri pahalı diye kendini herkesten üstün sanan kişi snob'dur."
     sina:
       id: u2d12-069-s
       type: trait_match
@@ -139,6 +144,7 @@ steps:
       stem: "<en>Mert never eats at normal restaurants. He says, \"Only expensive places are good enough for me.\" He laughs at people with old phones.</en>"
       options: ["snob", "generous", "laid-back", "understanding"]
       answer: 0
+      explain: "Yalnızca pahalı yerlere gidip eski telefonlulara gülen Mert snobdur."
   - item: U2-070
     sezdir:
       id: u2d12-070-z
@@ -154,6 +160,7 @@ steps:
       stem: "<en>It was an ________ day. I went to school, did my homework and went to bed. Nothing special.</en>"
       options: ["ordinary", "exciting", "thrilling", "ridiculous"]
       answer: 0
+      explain: "Okula gitti, ödev yaptı, yattı; özel bir şey yok: sıradan (ordinary) bir gün."
     sina:
       id: u2d12-070-s
       type: synonym
@@ -161,6 +168,7 @@ steps:
       prompt: "<en>\"My phone is very ordinary. It isn't new or special.\" Which one is CLOSEST in meaning to \"ordinary\"?</en>"
       options: ["normal", "fantastic", "expensive", "strange"]
       answer: 0
+      explain: "ordinary = normal (sıradan, özel olmayan)."
   - item: U2-071
     sezdir:
       id: u2d12-071-z
@@ -177,6 +185,7 @@ steps:
       stem: "<en>The exam wasn't perfect, but it wasn't bad. It was ________ good.</en>"
       options: ["pretty", "ordinary", "formal", "snob"]
       answer: 0
+      explain: "Sınav mükemmel değil ama kötü de değil: oldukça (pretty) iyi."
     sina:
       id: u2d12-071-s
       type: situation
@@ -184,6 +193,7 @@ steps:
       prompt: "<en>In which sentence does \"pretty\" mean \"quite\"?</en>"
       options: ["The film was pretty long. It was nearly three hours.", "What a pretty dress!", "Elif has a pretty little cat.", "These flowers are so pretty."]
       answer: 0
+      explain: "Burada pretty = oldukça (quite). Diğer cümlelerde pretty = güzel."
   - item: U2-072
     sezdir:
       id: u2d12-072-z
@@ -199,6 +209,7 @@ steps:
       stem: "<en>Children under 12 must come to this film with an ________.</en>"
       options: ["adult", "snob", "member", "outfit"]
       answer: 0
+      explain: "12 yaş altı çocuklar filme bir yetişkinle (adult) gelmelidir."
     sina:
       id: u2d12-072-s
       type: odd_one_out
@@ -206,6 +217,7 @@ steps:
       prompt: "<en>Ali is 8. His mum is 40, his uncle is 35 and his grandma is 70. Who is NOT an adult?</en>"
       options: ["Ali", "his mum", "his uncle", "his grandma"]
       answer: 0
+      explain: "Ali 8 yaşında, yani çocuk. Anne, amca ve büyükanne yetişkindir."
 
 review:
   - id: u2d12-r01
@@ -215,12 +227,14 @@ review:
     stem: "<en>Paris and Milan are famous for their ________ shows. Designers show their new clothes there.</en>"
     options: ["fashion", "queue", "rap", "survey"]
     answer: 0
+    explain: "Tasarımcıların yeni kıyafetlerini gösterdiği moda gösterileri (fashion shows)."
   - id: u2d12-r02
     type: synonym
     item: U2-062
     prompt: "<en>\"Those trainers are really trendy now.\" Which one is CLOSEST in meaning to \"trendy\"?</en>"
     options: ["popular", "old", "cheap", "dirty"]
     answer: 0
+    explain: "trendy = popular (moda olan, popüler)."
   - id: u2d12-r03
     type: message_infer
     item: U2-063
@@ -228,12 +242,14 @@ review:
     stem: "<en>Elif: I check the newest styles online every day, and I always buy the clothes that are in fashion.</en>"
     options: ["She keeps up with the latest fashion.", "She doesn't care about clothes.", "She seldom buys clothes.", "She always wears formal clothes."]
     answer: 0
+    explain: "Her gün en yeni stilleri takip edip moda kıyafetleri alıyor: en son modayı takip ediyor."
   - id: u2d12-r04
     type: situation
     item: U2-064
     prompt: "<en>You are going to the cinema with your friends on Saturday. What do you wear?</en>"
     options: ["casual clothes, like jeans and a hoodie", "a suit and a tie", "a wedding dress", "a doctor's coat"]
     answer: 0
+    explain: "Cumartesi arkadaşlarla sinemaya günlük (casual) kıyafet giyilir."
   - id: u2d12-r05
     type: dialogue_complete
     item: U2-065
@@ -241,6 +257,7 @@ review:
     stem: "<en>A: We're going to an expensive restaurant for Grandma's 80th birthday.\nB: Then we should wear ________.</en>"
     options: ["smart clothes", "pyjamas", "football shirts", "old tracksuits"]
     answer: 0
+    explain: "Pahalı restoran ve doğum günü için şık kıyafet (smart clothes) giyilir."
   - id: u2d12-r06
     type: gap_fill
     item: U2-066
@@ -248,6 +265,7 @@ review:
     stem: "<en>Ece took a photo of her new ________: a green dress, a denim jacket and white trainers.</en>"
     options: ["outfit", "band", "gym", "queue"]
     answer: 0
+    explain: "Yeşil elbise, kot ceket ve beyaz spor ayakkabı bir kombindir (outfit)."
   - id: u2d12-r07
     type: message_infer
     item: U2-030
@@ -256,6 +274,7 @@ review:
     stem: "<en>Selin: My neighbour's dog barks all night and I can't sleep!</en>"
     options: ["It's annoying.", "It's calm.", "It's generous.", "It's patient."]
     answer: 0
+    explain: "Köpek bütün gece havlıyor ve uyuyamıyor: sinir bozucu (annoying)."
   - id: u2d12-r08
     type: message_infer
     item: U2-025
@@ -264,6 +283,7 @@ review:
     stem: "<en>Murat Bey: When I study, I listen to Mozart and Beethoven. Their music helps me think.</en>"
     options: ["classical music", "rap", "rock music", "folk music"]
     answer: 0
+    explain: "Çalışırken Mozart ve Beethoven dinliyor: klasik müzik."
   - id: u2d12-r09
     type: gap_fill
     item: U2-029
@@ -272,6 +292,7 @@ review:
     stem: "<en>We can't study in the canteen. Everybody is shouting and laughing. It's too ________.</en>"
     options: ["noisy", "quiet", "formal", "comfortable"]
     answer: 0
+    explain: "Herkes bağırıp güldüğü için kantin çok gürültülü (noisy)."
   - id: u2d12-r10
     type: message_infer
     item: U2-027
@@ -280,6 +301,7 @@ review:
     stem: "<en>Bora writes rhyming words and says them very fast to a strong beat. He doesn't really sing.</en>"
     options: ["rap", "jazz", "classical music", "folk music"]
     answer: 0
+    explain: "Kafiyeli sözleri hızlıca ritim üzerinde söyleyen Bora rap yapıyor."
 
 tips:
   - type: tuzak

@@ -253,6 +253,7 @@ review:
     stem: "<en>The website asked for my full name, home address and phone number, so I closed it. I never give my ________ to websites like that.</en>"
     options: ["personal information", "discount", "friend request", "influencer"]
     answer: 0
+    explain: "Ad, adres ve telefon numarası kişisel bilgidir (personal information); sitelere verilmez."
   - id: u5d06-r03
     type: synonym
     item: U5-013
@@ -260,12 +261,14 @@ review:
     stem: "<en>Never meet <u>a person you don't know</u> from the internet.</en>"
     options: ["a stranger", "a close friend", "a buddy", "your teacher"]
     answer: 0
+    explain: "Tanımadığın biri: stranger (yabancı)."
   - id: u5d06-r04
     type: situation
     item: U5-017
     prompt: "<en>You want to watch the band's new video on the channel. What do you do?</en>"
     options: ["I click on the video.", "I log out of my account.", "I turn off the laptop.", "I ignore the video."]
     answer: 0
+    explain: "Videoyu izlemek için ona tıklanır: I click on the video."
   - id: u5d06-r05
     type: gap_fill
     item: U5-031
@@ -273,6 +276,7 @@ review:
     stem: "<en>Lara has two million followers. Companies send her free clothes, and she talks about them in her videos. She's a popular ________.</en>"
     options: ["influencer", "stranger", "username", "secretary"]
     answer: 0
+    explain: "İki milyon takipçisi olan ve firmaların ürün gönderdiği kişi bir influencer'dır."
   - id: u5d06-r06
     type: message_infer
     item: U5-049

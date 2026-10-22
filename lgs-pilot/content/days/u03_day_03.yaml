@@ -118,6 +118,7 @@ steps:
       stem: "<en>For this cake, ________ two eggs into a bowl. Be careful: no shells!</en>"
       options: ["crack", "fry", "heat", "bake"]
       answer: 0
+      explain: "Yumurtayı kaseye kırmak: crack. \"no shells\" kabuk olmasın demek."
     sina:
       id: u3d03-013-s
       type: situation
@@ -141,6 +142,7 @@ steps:
       stem: "<en>There's sugar in your tea. Now ________ it with a spoon.</en>"
       options: ["stir", "crack", "fry", "bake"]
       answer: 0
+      explain: "Çaya şeker koydun; şimdi kaşıkla karıştır: stir."
     sina:
       id: u3d03-018-s
       type: odd_one_out
@@ -164,6 +166,7 @@ steps:
       stem: "<en>Can you ________ some water into my glass, please? I'm really thirsty.</en>"
       options: ["pour", "crack", "whisk", "fry"]
       answer: 0
+      explain: "Bardağıma biraz su dök (pour)."
     sina:
       id: u3d03-020-s
       type: odd_one_out
@@ -187,6 +190,7 @@ steps:
       stem: "<en>________ the eggs fast with a fork for one minute.</en>"
       options: ["Whisk", "Pour", "Bake", "Drink"]
       answer: 0
+      explain: "Yumurtaları çatalla hızlıca çırp: whisk."
     sina:
       id: u3d03-026-s
       type: dialogue_complete
@@ -196,6 +200,7 @@ steps:
       stem: "<en>Ece: The eggs are in the bowl. What now?\nMum: ________ Use a fork and do it very fast.</en>"
       options: ["Whisk them.", "Bake them.", "Wash them.", "Count them."]
       answer: 0
+      explain: "Çatalla hızlıca çırpmak: Whisk them."
   - item: U3-041
     sezdir:
       id: u3d03-041-z
@@ -211,6 +216,7 @@ steps:
       stem: "<en>Heat a little oil in a frying ________ and fry the onions.</en>"
       options: ["pan", "bowl", "cup", "oven"]
       answer: 0
+      explain: "Tavada (frying pan) yağ ısıtıp soğan kızartılır."
     sina:
       id: u3d03-041-s
       type: message_infer
@@ -230,6 +236,7 @@ review:
     stem: "<en>My grandma ________ bread in the oven every Friday. The whole house smells wonderful.</en>"
     options: ["bakes", "washes", "drinks", "cuts"]
     answer: 0
+    explain: "Büyükannem her cuma fırında ekmek pişirir: bakes."
   - id: u3d03-r02
     type: gap_fill
     item: U3-006
@@ -237,6 +244,7 @@ review:
     stem: "<en>First, ________ the oven to 180°C. Then, bake the cake for 35 minutes.</en>"
     options: ["preheat", "wash", "break", "clean"]
     answer: 0
+    explain: "Önce fırını 180°C'ye ısıt (preheat), sonra keki pişir."
   - id: u3d03-r03
     type: dialogue_complete
     item: U3-039
@@ -246,6 +254,7 @@ review:
     stem: "<en>Elif: Is one cup of milk enough for the cake?\nSelin: ________ The recipe says two cups.</en>"
     options: ["No, we need one more cup.", "Yes, it's perfect.", "Yes, we need two eggs.", "No, the oven is cold."]
     answer: 0
+    explain: "Tarif iki bardak süt diyor; bir bardak yetmez, bir bardak daha gerekir."
   - id: u3d03-r04
     type: gap_fill
     item: U3-042
@@ -261,6 +270,7 @@ review:
     stem: "<en>Our cake is flat again. We forgot the ________!</en>"
     options: ["baking powder", "oven gloves", "plates", "napkins"]
     answer: 0
+    explain: "Kek yine yassı kalmış; kabartma tozunu (baking powder) unutmuşuz."
   - id: u3d03-r06
     type: gap_fill
     item: U3-046
@@ -268,6 +278,7 @@ review:
     stem: "<en>To make pancakes, you need eggs, milk and a cup of ________.</en>"
     options: ["flour", "flowers", "coffee", "ice cream"]
     answer: 0
+    explain: "Krep için yumurta, süt ve bir bardak un (flour) gerekir."
 
 tips:
   - type: tuzak

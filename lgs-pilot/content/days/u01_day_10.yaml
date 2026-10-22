@@ -90,6 +90,7 @@ steps:
       stem: "<en>My brother and I always ________ about the TV remote. He wants football, but I want films.</en>"
       options: ["argue", "agree", "get on well", "have the same opinion"]
       answer: 0
+      explain: "TV kumandası için herkes farklı şey istiyor: tartışırlar (argue). agree ve same opinion ters anlam verir."
     sina:
       id: d10-027-s
       type: dialogue_complete
@@ -98,6 +99,7 @@ steps:
       stem: "<en>Ece: Why are Kaan and Bora angry with each other?\nSelin: ________</en>"
       options: ["They argued about the football match.", "They got on well at the match.", "They have a lot in common.", "They are both interested in music."]
       answer: 0
+      explain: "Kızgın olmalarının nedeni maç hakkında tartışmaları: They argued about the football match."
   - item: U1-032
     sezdir:
       id: d10-032-z
@@ -113,6 +115,7 @@ steps:
       stem: "<en>Please don't laugh at his drawing. You will hurt his ________.</en>"
       options: ["feelings", "excuses", "invitations", "matches"]
       answer: 0
+      explain: "Arkadaşının çizimine gülmek onun duygularını incitir: hurt his feelings."
     sina:
       id: d10-032-s
       type: situation
@@ -120,6 +123,7 @@ steps:
       prompt: "<en>Kaan says, \"I have a bad feeling about the exam.\" What does he mean?</en>"
       options: ["He thinks the exam will not go well.", "He is sure the exam will be easy.", "He has already finished the exam.", "He is excited about the exam."]
       answer: 0
+      explain: "\"I have a bad feeling about the exam\" = Sınav hakkında kötü bir önsezim var; sınavın iyi geçmeyeceğini düşünüyor."
   - item: U1-031
     sezdir:
       id: d10-031-z
@@ -135,6 +139,7 @@ steps:
       stem: "<en>We moved to a new city and I don't have any friends here yet. I often ________.</en>"
       options: ["feel alone", "get on well with everyone", "have a lot in common", "chat with my classmates"]
       answer: 0
+      explain: "Yeni şehirde hiç arkadaşı yok; kendini yalnız hisseder: feel alone."
     sina:
       id: d10-031-s
       type: message_infer
@@ -143,6 +148,7 @@ steps:
       stem: "<en>Bora: Nobody understands me. Everyone is with Kaan. I sit in the garden at break and nobody comes.</en>"
       options: ["He feels alone.", "He feels stuffed.", "He feels proud.", "He feels excited."]
       answer: 0
+      explain: "Kimse Bora'yı anlamıyor ve molada bahçede yalnız oturuyor: kendini yalnız hissediyor."
   - item: U1-041
     sezdir:
       id: d10-041-z
@@ -158,6 +164,7 @@ steps:
       stem: "<en>My mum and I talk about everything. We have a very good ________.</en>"
       options: ["relationship", "excuse", "invitation", "match"]
       answer: 0
+      explain: "Annesiyle her şeyi konuşan biri çok iyi bir ilişkiye (relationship) sahiptir."
     sina:
       id: d10-041-s
       type: synonym
@@ -165,6 +172,7 @@ steps:
       prompt: "<en>\"Ece and Selin have a great relationship.\" Which one is CLOSEST in meaning?</en>"
       options: ["Ece and Selin get on very well.", "Ece and Selin often argue.", "Ece and Selin never chat.", "Ece and Selin go to different schools."]
       answer: 0
+      explain: "great relationship = çok iyi ilişki; Ece ve Selin çok iyi anlaşıyor."
   - item: U1-045
     sezdir:
       id: d10-045-z
@@ -180,6 +188,7 @@ steps:
       stem: "<en>Duru and Fıstık are always together. There is a ________ between them.</en>"
       options: ["strong bond", "bad feeling", "big argument", "short text"]
       answer: 0
+      explain: "Duru ile Fıstık hep birlikte: aralarında güçlü bir bağ (strong bond) vardır."
     sina:
       id: d10-045-s
       type: trait_match
@@ -188,6 +197,7 @@ steps:
       stem: "<en>Ali and Can have been friends since kindergarten. They help each other with every problem, and they never stay angry for long.</en>"
       options: ["They have a strong bond.", "They never get on well.", "They don't trust each other.", "They have nothing in common."]
       answer: 0
+      explain: "Anaokulundan beri arkadaş, birbirlerine yardım ediyor ve uzun küsmüyorlar: güçlü bir bağları var."
   - item: U1-046
     sezdir:
       id: d10-046-z
@@ -203,6 +213,7 @@ steps:
       stem: "<en>I'm at the cinema now, so I can't talk. I'll ________ you after the film.</en>"
       options: ["text", "argue", "forget", "refuse"]
       answer: 0
+      explain: "Sinemada konuşamam, filmden sonra sana mesaj atarım: text you."
     sina:
       id: d10-046-s
       type: odd_one_out
@@ -220,6 +231,7 @@ review:
     stem: "<en>Sorry, I can't come to the cinema today. I'm very ________ with my science project.</en>"
     options: ["busy", "bored", "full", "free"]
     answer: 0
+    explain: "Proje yüzünden gelemiyor: meşgul (busy). free (boş) bunun tersidir."
   - id: d10-r02
     type: dialogue_complete
     item: U1-009
@@ -227,6 +239,7 @@ review:
     stem: "<en>A: What are you doing this afternoon?\nB: ________ Let's meet in the park!</en>"
     options: ["Nothing. I have nothing to do.", "I'm very busy today.", "Sorry, I can't.", "I missed the bus."]
     answer: 0
+    explain: "\"Let's meet in the park!\" diyen kişinin boş olması gerekir: Nothing. I have nothing to do."
   - id: d10-r03
     type: gap_fill
     item: U1-003
@@ -234,6 +247,7 @@ review:
     stem: "<en>More than two hundred students will ________ the science fair on Friday.</en>"
     options: ["attend", "reply", "chat", "introduce"]
     answer: 0
+    explain: "Bilim fuarına katılmak: attend."
   - id: d10-r04
     type: gap_fill
     item: U1-015
@@ -248,6 +262,7 @@ review:
     prompt: "<en>Kaan woke up late and ran to the bus stop, but the bus was already gone. What happened?</en>"
     options: ["He missed the bus.", "He joined the bus.", "He attended the bus.", "He replied to the bus."]
     answer: 0
+    explain: "Otobüs gitmiş: otobüsü kaçırdı (missed the bus). Otobüse \"join/attend/reply\" denmez."
   - id: d10-r06
     type: gap_fill
     item: U1-020
@@ -255,6 +270,7 @@ review:
     stem: "<en>I sent Bora three messages, but he didn't ________.</en>"
     options: ["reply", "attend", "join", "introduce"]
     answer: 0
+    explain: "Mesajlara cevap vermedi: didn't reply."
   - id: d10-r07
     type: message_infer
     item: U1-059
@@ -263,6 +279,7 @@ review:
     stem: "<en>Ece: When I need help, I call Selin. She always comes on time and does what she says.</en>"
     options: ["reliable", "dishonest", "mean", "lazy"]
     answer: 0
+    explain: "Her zaman zamanında gelen ve söylediğini yapan Selin güvenilirdir: reliable."
   - id: d10-r08
     type: dialogue_complete
     item: U1-051
@@ -271,6 +288,7 @@ review:
     stem: "<en>Kaan: I need someone to help me carry the tables for the science fair.\nSelin: ________\nKaan: Thanks, Selin! You're the best.</en>"
     options: ["You can count on me.", "I can't trust you.", "Sorry, I'm busy.", "I have no idea."]
     answer: 0
+    explain: "Masaları taşımak için yardım isteyen Kaan'a Selin \"You can count on me.\" (Bana güvenebilirsin) der."
   - id: d10-r09
     type: synonym
     item: U1-077
@@ -278,6 +296,7 @@ review:
     prompt: "<en>\"To be honest, I didn't like the film.\" Which one is CLOSEST in meaning to \"To be honest\"?</en>"
     options: ["To tell the truth", "To be quick", "In my free time", "At the end"]
     answer: 0
+    explain: "To be honest = To tell the truth (dürüst olmak gerekirse, doğrusunu söylemek gerekirse)."
 
 tips:
   - type: tuzak

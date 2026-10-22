@@ -92,6 +92,7 @@ steps:
       stem: "<en>Ece, can you ________ me to your new classmate? I want to meet her.</en>"
       options: ["introduce", "invite", "refuse", "trust"]
       answer: 0
+      explain: "Yeni sınıf arkadaşıyla tanışmak için onu tanıştırmasını istiyor: introduce (tanıştırmak)."
     sina:
       id: d07-039-s
       type: dialogue_complete
@@ -100,6 +101,7 @@ steps:
       stem: "<en>Ece: Mom, I'd like to introduce my new classmate. This is Elif.\nMom: ________</en>"
       options: ["Nice to meet you, Elif!", "Sorry, I can't.", "No, thanks. I'm full.", "That's not fair!"]
       answer: 0
+      explain: "Biri yeni arkadaşını tanıştırınca verilecek cevap \"Nice to meet you!\" (Tanıştığıma memnun oldum)."
   - item: U1-038
     sezdir:
       id: d07-038-z
@@ -115,6 +117,7 @@ steps:
       stem: "<en>Duru plays the guitar every day and listens to songs all the time. She is very ________ music.</en>"
       options: ["interested in", "bored with", "afraid of", "angry with"]
       answer: 0
+      explain: "Her gün gitar çalan ve şarkı dinleyen biri müzikle ilgilenir: interested in."
     sina:
       id: d07-038-s
       type: message_infer
@@ -123,6 +126,7 @@ steps:
       stem: "<en>Elif: I read books about planets and stars. One day, I want to be an astronaut!</en>"
       options: ["She is interested in space.", "She is afraid of space.", "She isn't interested in books.", "She wants to be a teacher."]
       answer: 0
+      explain: "Elif gezegenler ve yıldızlar hakkında kitap okuyor ve astronot olmak istiyor: uzayla ilgileniyor (interested in space)."
   - item: U1-036
     sezdir:
       id: d07-036-z
@@ -138,6 +142,7 @@ steps:
       stem: "<en>Elif and Duru both love music, dogs and long weekends. They ________.</en>"
       options: ["have a lot in common", "have nothing in common", "argue all the time", "break their promises"]
       answer: 0
+      explain: "Ortak sevdikleri çok şey var: have a lot in common (çok ortak noktaları var)."
     sina:
       id: d07-036-s
       type: message_infer
@@ -146,6 +151,7 @@ steps:
       stem: "<en>Can: I love football, but my friend Mert hates it. I like pizza, Mert likes salad. I get up early, and Mert sleeps until noon!</en>"
       options: ["They don't have much in common.", "They have a lot in common.", "They both love football.", "They both get up early."]
       answer: 0
+      explain: "Can ve Mert'in sevdikleri birbirine zıt (futbol, yemek, uyku saati); bu yüzden \"don't have much in common\"."
   - item: U1-034
     sezdir:
       id: d07-034-z
@@ -161,6 +167,7 @@ steps:
       stem: "<en>Elif is friendly and kind. She ________ everyone in the class.</en>"
       options: ["gets on well with", "argues with", "breaks promises to", "is angry with"]
       answer: 0
+      explain: "Arkadaş canlısı ve kibar Elif herkesle iyi anlaşır: gets on well with."
     sina:
       id: d07-034-s
       type: synonym
@@ -168,6 +175,7 @@ steps:
       prompt: "<en>\"Duru and Elif get on well.\" Which one is CLOSEST in meaning?</en>"
       options: ["They like each other and are good friends.", "They argue all the time.", "They live in the same street.", "They don't know each other."]
       answer: 0
+      explain: "get on well = iyi anlaşmak. They like each other and are good friends."
   - item: U1-042
     sezdir:
       id: d07-042-z
@@ -183,6 +191,7 @@ steps:
       stem: "<en>I think dogs are great, and Elif thinks so too. We have the ________.</en>"
       options: ["same opinion", "different opinion", "same dog", "same excuse"]
       answer: 0
+      explain: "Köpeklerin harika olduğunu ikisi de düşünüyor: aynı fikirdeler (same opinion)."
     sina:
       id: d07-042-s
       type: dialogue_complete
@@ -191,6 +200,7 @@ steps:
       stem: "<en>Duru: I think this song is amazing!\nElif: ________ It's my favourite song.</en>"
       options: ["I have the same opinion.", "I don't agree at all.", "Sorry, I can't hear it.", "It sounds terrible."]
       answer: 0
+      explain: "Şarkıyı harika bulan Duru'ya Elif aynı şeyi düşündüğü için \"I have the same opinion.\" diyor."
   - item: U1-029
     sezdir:
       id: d07-029-z
@@ -206,6 +216,7 @@ steps:
       stem: "<en>Duru and Elif love talking about music. Last night they ________ on the phone for two hours.</en>"
       options: ["chatted", "cooked", "slept", "swam"]
       answer: 0
+      explain: "İki saat telefonda konuşmak chat (sohbet etmek) fiiliyle anlatılır: chatted."
     sina:
       id: d07-029-s
       type: situation
@@ -214,6 +225,7 @@ steps:
       stem: "<en>Kaan and Bora are sitting in the school canteen. They are laughing and talking about their weekend.</en>"
       options: ["They are chatting.", "They are arguing.", "They are sleeping.", "They are doing a test."]
       answer: 0
+      explain: "Kantinde gülüp hafta sonundan konuşuyorlar: sohbet ediyorlar (are chatting)."
 
 review:
   - id: d07-r01
@@ -223,12 +235,14 @@ review:
     stem: "<en>Bora and Kaan do everything together. They are good ________.</en>"
     options: ["buddies", "enemies", "strangers", "rivals"]
     answer: 0
+    explain: "Her şeyi birlikte yapan Bora ve Kaan iyi arkadaşlardır: buddies."
   - id: d07-r02
     type: synonym
     item: U1-040
     prompt: "<en>\"See you tomorrow, mate!\" Which one has the CLOSEST meaning?</en>"
     options: ["See you tomorrow, friend!", "See you tomorrow, teacher!", "See you tomorrow, stranger!", "See you tomorrow, sir!"]
     answer: 0
+    explain: "mate = friend. \"See you tomorrow, mate!\" = Yarın görüşürüz, arkadaşım!"
   - id: d07-r03
     type: gap_fill
     item: U1-030
@@ -236,6 +250,7 @@ review:
     stem: "<en>Ece and Selin have known each other for years. They talk every day and share all their secrets. They are ________.</en>"
     options: ["close friends", "strangers", "enemies", "new neighbours"]
     answer: 0
+    explain: "Yıllardır tanışan, her gün konuşan ve sırlarını paylaşan kişiler yakın arkadaştır: close friends."
   - id: d07-r04
     type: situation
     item: U1-047
@@ -243,6 +258,7 @@ review:
     stem: "<en>Your bike is broken and you are far from home. Bora walks with you for an hour and helps you carry it.</en>"
     options: ["He is a true friend.", "He is a stranger.", "He is mean.", "He is unreliable."]
     answer: 0
+    explain: "Bisiklet bozulunca bir saat yürüyüp taşımana yardım eden kişi gerçek arkadaştır: a true friend."
   - id: d07-r05
     type: dialogue_complete
     item: U1-048
@@ -250,6 +266,7 @@ review:
     stem: "<en>Elif: I love being with you, Duru. You always make me laugh!\nDuru: Thanks! ________</en>"
     options: ["You're fun to be with too!", "You're so mean!", "I'm stuffed.", "That's not fair!"]
     answer: 0
+    explain: "\"You always make me laugh\" diyen birine \"You're fun to be with too!\" denir. Diğer şıklar bağlama uymaz."
   - id: d07-r06
     type: gap_fill
     item: U1-033
@@ -257,6 +274,7 @@ review:
     stem: "<en>Ece and Selin met in kindergarten. Their ________ started when they were five.</en>"
     options: ["friendship", "invitation", "excuse", "homework"]
     answer: 0
+    explain: "Anaokulunda tanışan iki kişinin arkadaşlığı (friendship) beş yaşında başladı."
 
 tips:
   - type: mini_dilbilgisi

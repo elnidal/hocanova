@@ -240,12 +240,14 @@ review:
     stem: "<en>Only teachers have ________ to the school's computer room after 5 p.m.</en>"
     options: ["access", "screen", "delete", "upload"]
     answer: 0
+    explain: "Okul bilgisayar odasına yalnızca öğretmenlerin erişimi (access) var."
   - id: u5d07-r02
     type: situation
     item: U5-018
     prompt: "<en>There's an old photo of you on your phone, and you really don't like it. What do you do?</en>"
     options: ["I delete it.", "I download it.", "I post it on our channel.", "I print it for my grandma."]
     answer: 0
+    explain: "Beğenmediğin eski fotoğrafı silersin (delete)."
   - id: u5d07-r03
     type: gap_fill
     item: U5-021
@@ -253,6 +255,7 @@ review:
     stem: "<en>My phone fell on the floor, and now I can't see anything on the ________ .</en>"
     options: ["screen", "password", "account", "username"]
     answer: 0
+    explain: "Telefon düştü, ekranda (screen) bir şey görünmüyor."
   - id: u5d07-r04
     type: dialogue_complete
     item: U5-053
@@ -260,6 +263,7 @@ review:
     stem: "<en>A: Our concert video has two thousand views now!\nB: Great! ________, did you bring my guitar book?</en>"
     options: ["By the way", "I got it", "In other words", "What do you mean"]
     answer: 0
+    explain: "Konuyu değiştirirken \"By the way\" (Bu arada) kullanılır."
   - id: u5d07-r05
     type: gap_fill
     item: U5-054
@@ -267,12 +271,14 @@ review:
     stem: "<en>Duru never answers the phone and hardly ever replies to messages. ________, it isn't easy to reach Duru.</en>"
     options: ["In other words", "By the way", "Sorry, I can't follow you", "Why don't we"]
     answer: 0
+    explain: "Duru telefona cevap vermiyor, mesajlara da; \"In other words\" (başka bir deyişle) bunun özetini verir."
   - id: u5d07-r06
     type: situation
     item: U5-055
     prompt: "<en>Bora's mum is explaining the steps on the screen too fast, and Bora doesn't understand her. What does he say?</en>"
     options: ["Sorry, I can't follow you.", "I got it, thanks.", "By the way, I'm hungry.", "Why don't we go out?"]
     answer: 0
+    explain: "Anlatılanı yetişemeyen kişi \"Sorry, I can't follow you.\" der."
 
 tips:
   - type: tuzak

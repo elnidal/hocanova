@@ -91,6 +91,7 @@ steps:
       stem: "<en>My cousin lives in Germany, so we ________ on our computers every evening.</en>"
       options: ["chat online", "do karate", "go hiking", "queue"]
       answer: 0
+      explain: "Almanya'daki kuzenle bilgisayardan konuşmak: chat online."
     sina:
       id: u2d10-055-s
       type: message_infer
@@ -99,6 +100,7 @@ steps:
       stem: "<en>Elif: I can't meet my friends on weekdays, but we talk and send messages on a video app every night.</en>"
       options: ["She chats online with her friends.", "She hangs out with her friends at the park.", "She writes letters to her friends.", "She never talks to her friends."]
       answer: 0
+      explain: "Hafta içi görüşemiyorlar ama video uygulamasında konuşup mesaj gönderiyor: online sohbet ediyor."
   - item: U2-056
     sezdir:
       id: u2d10-056-z
@@ -114,6 +116,7 @@ steps:
       stem: "<en>I don't have any plans tonight. I'll just ________ and watch some funny videos.</en>"
       options: ["surf the internet", "pick up", "queue", "do karate"]
       answer: 0
+      explain: "Bir planı yok; internette gezip komik videolar izleyecek: surf the internet."
     sina:
       id: u2d10-056-s
       type: odd_one_out
@@ -121,6 +124,7 @@ steps:
       prompt: "<en>Which one is NOT an online activity?</en>"
       options: ["going hiking", "surfing the internet", "chatting online", "sharing photos on social media"]
       answer: 0
+      explain: "Soru çevrim dışı olanı soruyor: dağda yürüyüş (hiking) internetle ilgili değildir."
   - item: U2-057
     sezdir:
       id: u2d10-057-z
@@ -136,6 +140,7 @@ steps:
       stem: "<en>Smile! I want to ________ with you in front of the Eiffel Tower.</en>"
       options: ["take a selfie", "surf the internet", "follow the news", "work out"]
       answer: 0
+      explain: "Eyfel Kulesi önünde seninle fotoğraf çektirmek isteyen biri selfie çeker: take a selfie."
     sina:
       id: u2d10-057-s
       type: situation
@@ -143,6 +148,7 @@ steps:
       prompt: "<en>You are at a concert with your best friend. You want a photo of both of you with your phone. What do you say?</en>"
       options: ["Let's take a selfie!", "Let's chat online!", "Let's go hiking!", "Let's follow the news!"]
       answer: 0
+      explain: "Telefonla kendinizin birlikte fotoğrafını çekmek: Let's take a selfie!"
   - item: U2-058
     sezdir:
       id: u2d10-058-z
@@ -158,6 +164,7 @@ steps:
       stem: "<en>Ece loves her new outfit. She always ________ photos of her clothes on social media.</en>"
       options: ["shares", "rests", "queues", "trains"]
       answer: 0
+      explain: "Kıyafet fotoğraflarını sosyal medyada paylaşır: shares."
     sina:
       id: u2d10-058-s
       type: message_infer
@@ -166,6 +173,7 @@ steps:
       stem: "<en>Bora: I posted my karate photo on my social media account last night. 50 likes already!</en>"
       options: ["He shared a photo on social media.", "He took a photo of his cat.", "He never uses the internet.", "He chatted online with his karate teacher."]
       answer: 0
+      explain: "Karate fotoğrafını sosyal medyada paylaştı: He shared a photo on social media."
   - item: U2-059
     sezdir:
       id: u2d10-059-z
@@ -182,6 +190,7 @@ steps:
       stem: "<en>I have a big exam tomorrow and I can't sleep. I'm very ________.</en>"
       options: ["nervous", "ridiculous", "lazy", "full"]
       answer: 0
+      explain: "Büyük sınav öncesi uyuyamayan kişi gergindir: nervous."
     sina:
       id: u2d10-059-s
       type: message_infer
@@ -190,6 +199,7 @@ steps:
       stem: "<en>Selin: My hands are shaking and my heart is beating fast. I'm going on stage in five minutes!</en>"
       options: ["nervous", "bored", "calm", "stuffed"]
       answer: 0
+      explain: "Eller titriyor, kalp hızlı atıyor: gergin (nervous)."
   - item: U2-060
     sezdir:
       id: u2d10-060-z
@@ -205,6 +215,7 @@ steps:
       stem: "<en>A winter coat and boots on the beach in July? That's ________!</en>"
       options: ["ridiculous", "nervous", "calm", "patient"]
       answer: 0
+      explain: "Temmuzda plajda kışlık mont ve bot saçmadır: ridiculous."
     sina:
       id: u2d10-060-s
       type: synonym
@@ -212,6 +223,7 @@ steps:
       prompt: "<en>\"Kaan's new hat with a fish on top is ridiculous!\" Which one is CLOSEST in meaning to \"ridiculous\"?</en>"
       options: ["silly", "clever", "normal", "boring"]
       answer: 0
+      explain: "ridiculous = silly (saçma, gülünç)."
 
 review:
   - id: u2d10-r01
@@ -221,6 +233,7 @@ review:
     stem: "<en>Duru loves her bed. She ________ gets up early on Sundays.</en>"
     options: ["rarely", "always", "usually", "often"]
     answer: 0
+    explain: "Yatağını seven Duru pazar günleri nadiren erken kalkar: rarely."
   - id: u2d10-r02
     type: gap_fill
     item: U2-050
@@ -228,6 +241,7 @@ review:
     stem: "<en>Cinema tickets are very expensive, so we ________ go to the cinema. Maybe twice a year.</en>"
     options: ["seldom", "always", "often", "usually"]
     answer: 0
+    explain: "Bilet pahalı olduğu için yılda iki kez gidiyorlar: seldom (nadiren)."
   - id: u2d10-r03
     type: message_infer
     item: U2-051
@@ -235,6 +249,7 @@ review:
     stem: "<en>Kaan: I go to bed very late, so I'm late for school almost every day.</en>"
     options: ["Kaan is hardly ever on time.", "Kaan is always on time.", "Kaan usually goes to bed early.", "Kaan is never late."]
     answer: 0
+    explain: "Gece geç yattığı için neredeyse hep geç kalıyor: hardly ever on time."
   - id: u2d10-r04
     type: message_infer
     item: U2-052
@@ -242,6 +257,7 @@ review:
     stem: "<en>Bora's week\nTuesday: karate class\nSaturday: karate class</en>"
     options: ["twice a week", "once a week", "three times a week", "every day"]
     answer: 0
+    explain: "Salı ve cumartesi karate dersi: haftada iki kez."
   - id: u2d10-r05
     type: gap_fill
     item: U2-053
@@ -249,6 +265,7 @@ review:
     stem: "<en>There were thirty students in the canteen ________, so Kaan didn't get a toastie.</en>"
     options: ["queue", "band", "gym", "survey"]
     answer: 0
+    explain: "Kantinde otuz kişi sırada beklediği için Kaan tost alamadı: queue."
   - id: u2d10-r06
     type: dialogue_complete
     item: U2-054
@@ -256,6 +273,7 @@ review:
     stem: "<en>A: Did you hear about the new space mission to the Moon?\nB: Yes! I ________ every morning.</en>"
     options: ["follow the news", "rest", "queue", "do karate"]
     answer: 0
+    explain: "Her sabah haberleri izleyen/okuyan kişi haberleri takip eder: follow the news."
   - id: u2d10-r07
     type: message_infer
     item: U2-013
@@ -264,6 +282,7 @@ review:
     stem: "<en>Bora: My alarm rings at 7 am on school days. It's terrible! I want to sleep until 11.</en>"
     options: ["He can't stand getting up early.", "He is crazy about getting up early.", "He doesn't mind getting up early.", "He enjoys getting up early."]
     answer: 0
+    explain: "Çalar saat \"terrible\", öğlene kadar uyumak istiyor: erken kalkmaya dayanamıyor (can't stand)."
   - id: u2d10-r08
     type: dialogue_complete
     item: U2-015
@@ -272,6 +291,7 @@ review:
     stem: "<en>Ece: Do you like football, Kaan?\nKaan: ________ I watch every match and I play every day!</en>"
     options: ["Like it? I'm crazy about it!", "Not really. It's boring.", "I can't stand it.", "I don't mind it."]
     answer: 0
+    explain: "Her maçı izleyip her gün oynayan kişi futbola bayılır: crazy about it."
   - id: u2d10-r09
     type: gap_fill
     item: U2-017
@@ -280,6 +300,7 @@ review:
     stem: "<en>Elif has posters of her favourite singer all over her room. She really ________ her.</en>"
     options: ["admires", "dislikes", "hates", "can't stand"]
     answer: 0
+    explain: "Odasının her yerinde sevdiği şarkıcının posterleri var; onu çok takdir ediyor (admires)."
   - id: u2d10-r10
     type: situation
     item: U2-018
@@ -287,6 +308,7 @@ review:
     prompt: "<en>Your friend asks about her new haircut. You don't like it very much, but you want to tell the truth politely. What do you say?</en>"
     options: ["To be honest, I liked your old haircut more.", "I'm crazy about rap music.", "I hardly ever go out.", "Let's go hiking!"]
     answer: 0
+    explain: "Beğenmediğin saç için nazik ve dürüst cümle: To be honest, I liked your old haircut more."
 
 tips:
   - type: tuzak

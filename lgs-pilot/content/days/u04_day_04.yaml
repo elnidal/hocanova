@@ -238,6 +238,7 @@ review:
     stem: "<en>Secretary: Hold on, please. I'll ________ you through to Mr Demir.</en>"
     options: ["put", "take", "pick", "hang"]
     answer: 0
+    explain: "\"put you through to\" = seni bağlamak."
   - id: u4d04-r02
     type: gap_fill
     item: U4-017
@@ -245,6 +246,7 @@ review:
     stem: "<en>Mr Demir isn't in the main office. Call 0232 444 10 10 and ask for ________ 214.</en>"
     options: ["extension", "secretary", "message", "caller"]
     answer: 0
+    explain: "\"ask for extension 214\" = dahili 214'ü iste."
   - id: u4d04-r03
     type: dialogue_complete
     item: U4-020
@@ -272,6 +274,7 @@ review:
     stem: "<en>The ________ didn't say his name, so the secretary asked: \"Who's calling, please?\"</en>"
     options: ["caller", "secretary", "extension"]
     answer: 0
+    explain: "Arayan kişi (caller) adını söylememiş; sekreter \"Who's calling?\" diye soruyor."
   - id: u4d04-r06
     type: situation
     item: U4-042
@@ -279,6 +282,7 @@ review:
     stem: "<en>She works in an office. She answers the phone, takes messages and puts callers through to the manager.</en>"
     options: ["a secretary", "a drummer", "a chef", "a karate teacher"]
     answer: 0
+    explain: "Telefona bakan, mesaj alan ve müdüre bağlayan kişi sekreterdir."
 
 tips:
   - type: tuzak

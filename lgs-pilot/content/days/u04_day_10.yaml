@@ -178,6 +178,7 @@ review:
     stem: "<en>I said, \"Meet me at two,\" but Kaan heard \"at ten\". It was a ________.</en>"
     options: ["misunderstanding", "conversation", "delivery", "reservation"]
     answer: 0
+    explain: "Saat \"two\" ile \"ten\" birbirine karıştı; bu bir yanlış anlaşılmadır (misunderstanding)."
   - id: u4d10-r06
     type: dialogue_complete
     item: U4-012

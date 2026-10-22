@@ -88,6 +88,7 @@ steps:
       stem: "<en>A: I want to read a good book this weekend. Can you ________ one?\nB: Sure! Try 'The Little Prince'.</en>"
       options: ["recommend", "refuse", "hate", "forget"]
       answer: 0
+      explain: "İyi bir kitap öner: recommend (tavsiye etmek, önermek)."
     sina:
       id: u2d14-079-s
       type: dialogue_complete
@@ -96,6 +97,7 @@ steps:
       stem: "<en>A: ________\nB: Yes! Try the pizza place near the park. Their pizzas are terrific.</en>"
       options: ["Can you recommend a good restaurant?", "Did you cook pizza yesterday?", "Do you hate pizza?", "How far is the park?"]
       answer: 0
+      explain: "Cevap \"Try the pizza place\" diye öneri veriyor; soru: Can you recommend a good restaurant?"
   - item: U2-080
     sezdir:
       id: u2d14-080-z
@@ -111,6 +113,7 @@ steps:
       stem: "<en>It's raining. I ________ watching a film at home. We can go to the park tomorrow.</en>"
       options: ["suggest", "forget", "apologise", "invite"]
       answer: 0
+      explain: "Yağmur yağıyor; evde film izlemeyi öneriyorum: suggest."
     sina:
       id: u2d14-080-s
       type: message_infer
@@ -119,6 +122,7 @@ steps:
       stem: "<en>Selin: We have a maths exam on Friday. Why don't we study together at the library after school?</en>"
       options: ["She is suggesting a plan.", "She is refusing an invitation.", "She is apologising.", "She is complaining about the library."]
       answer: 0
+      explain: "\"Why don't we study together?\" bir öneridir: Selin plan öneriyor."
   - item: U2-081
     sezdir:
       id: u2d14-081-z
@@ -134,6 +138,7 @@ steps:
       stem: "<en>The doctor ________ me to drink more water and sleep eight hours a night.</en>"
       options: ["advised", "admired", "annoyed", "refused"]
       answer: 0
+      explain: "Doktor bana çok su içmemi ve sekiz saat uyumamı tavsiye etti: advised."
     sina:
       id: u2d14-081-s
       type: situation
@@ -141,6 +146,7 @@ steps:
       prompt: "<en>Your friend has a bad cold, but he wants to go to football training. What do you advise him?</en>"
       options: ["You should stay at home and rest.", "You should train harder today.", "You should eat a lot of ice cream.", "You should swim in the cold sea."]
       answer: 0
+      explain: "Hasta olan arkadaşına \"evde dinlen\" diye tavsiye verilir."
   - item: U2-082
     sezdir:
       id: u2d14-082-z
@@ -156,6 +162,7 @@ steps:
       stem: "<en>This app teaches you twenty new words a day. It's very ________.</en>"
       options: ["educational", "awful", "ridiculous", "noisy"]
       answer: 0
+      explain: "Günde yirmi yeni kelime öğreten uygulama eğiticidir: educational."
     sina:
       id: u2d14-082-s
       type: synonym
@@ -163,6 +170,7 @@ steps:
       prompt: "<en>\"The museum trip was educational.\" Which one is CLOSEST in meaning?</en>"
       options: ["We learnt a lot on the trip.", "We laughed a lot on the trip.", "The trip was very noisy.", "The trip was too expensive."]
       answer: 0
+      explain: "educational = eğitici; gezide çok şey öğrendik."
   - item: U2-083
     sezdir:
       id: u2d14-083-z
@@ -178,6 +186,7 @@ steps:
       stem: "<en>The comedy show was really ________. We laughed for two hours.</en>"
       options: ["entertaining", "educational", "boring", "formal"]
       answer: 0
+      explain: "İki saat güldüren komedi eğlencelidir (entertaining)."
     sina:
       id: u2d14-083-s
       type: message_infer
@@ -186,6 +195,7 @@ steps:
       stem: "<en>Mert: Last night I watched a cartoon about a silly cat. I didn't learn anything, but I laughed a lot!</en>"
       options: ["It was entertaining but not educational.", "It was educational but not entertaining.", "It was both educational and entertaining.", "It was neither educational nor entertaining."]
       answer: 0
+      explain: "Hiçbir şey öğrenmemiş ama çok gülmüş: eğlenceli ama eğitici değil."
 
 review:
   - id: u2d14-r01
@@ -195,6 +205,7 @@ review:
     stem: "<en>My brother loves films about robots, aliens and life on Mars. His favourite genre is ________.</en>"
     options: ["science fiction", "folk music", "jazz", "fashion"]
     answer: 0
+    explain: "Robot, uzaylı ve Mars filmleri: science fiction."
   - id: u2d14-r02
     type: dialogue_complete
     item: U2-074
@@ -202,12 +213,14 @@ review:
     stem: "<en>A: I've got two free tickets for the concert! Do you want to come?\nB: ________ I love that band!</en>"
     options: ["Wow, that's awesome!", "Oh no, that's awful.", "That's so boring.", "What a ridiculous idea!"]
     answer: 0
+    explain: "Bedava bilet ve sevdiği grup: Wow, that's awesome!"
   - id: u2d14-r03
     type: synonym
     item: U2-075
     prompt: "<en>\"Your English is terrific!\" Which one is CLOSEST in meaning?</en>"
     options: ["Your English is excellent.", "Your English is terrible.", "Your English is scary.", "Your English is boring."]
     answer: 0
+    explain: "terrific = excellent (harika, mükemmel)."
   - id: u2d14-r04
     type: gap_fill
     item: U2-076
@@ -215,6 +228,7 @@ review:
     stem: "<en>Bora learnt to play the drums in only two months. That's very ________.</en>"
     options: ["impressive", "awful", "ordinary", "annoying"]
     answer: 0
+    explain: "İki ayda davul çalmayı öğrenmesi etkileyici (impressive)."
   - id: u2d14-r05
     type: situation
     item: U2-077
@@ -222,6 +236,7 @@ review:
     stem: "<en>Elif reads about octopuses for hours. She thinks they are amazing and very interesting animals.</en>"
     options: ["fascinating", "awful", "boring", "annoying"]
     answer: 0
+    explain: "Ahtapotları saatlerce okuyup çok ilginç bulan Elif büyülenmiş: fascinating."
   - id: u2d14-r06
     type: gap_fill
     item: U2-078
@@ -229,6 +244,7 @@ review:
     stem: "<en>The weather was ________ on our holiday. It rained every day, and it was very cold.</en>"
     options: ["awful", "terrific", "awesome", "impressive"]
     answer: 0
+    explain: "Her gün yağmur yağan ve çok soğuk olan hava berbattı (awful)."
   - id: u2d14-r07
     type: message_infer
     item: U2-037
@@ -237,6 +253,7 @@ review:
     stem: "<en>Bora: I don't want to play in a team. I want a sport I can do alone, at my own speed.</en>"
     options: ["an individual sport", "a team sport", "a ball game with ten players", "a relay race"]
     answer: 0
+    explain: "Takımda oynamak istemeyen ve tek başına yapılabilen spor arıyor: bireysel spor."
   - id: u2d14-r08
     type: message_infer
     item: U2-039
@@ -245,6 +262,7 @@ review:
     stem: "<en>Selin: Every Sunday my dad and I walk in the mountains for hours. We love nature!</en>"
     options: ["She goes hiking.", "She does karate.", "She goes to the gym.", "She chats online."]
     answer: 0
+    explain: "Babasıyla pazar günü saatlerce dağda yürüyor: hiking."
   - id: u2d14-r09
     type: dialogue_complete
     item: U2-041
@@ -253,6 +271,7 @@ review:
     stem: "<en>Murat Bey: Bora, please ________. This information is important for the exam.\nBora: Sorry, sir. I'm listening now.</en>"
     options: ["pay attention", "rest", "take a selfie", "hang out"]
     answer: 0
+    explain: "\"This information is important for the exam\" dedikten sonra \"dikkat et\" denir: pay attention."
   - id: u2d14-r10
     type: message_infer
     item: U2-042
@@ -261,6 +280,7 @@ review:
     stem: "<en>Ece: The neighbour's dog barked all night, and I couldn't sleep. I'm really angry now!</en>"
     options: ["annoyed", "calm", "excited", "fascinated"]
     answer: 0
+    explain: "Köpek bütün gece havladığı için Ece rahatsız ve kızgın (annoyed)."
 
 tips:
   - type: mini_dilbilgisi

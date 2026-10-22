@@ -234,6 +234,7 @@ review:
     stem: "<en>I called the cake shop three times, but the line was ________. Everybody wants Sevim Hanım's cakes!</en>"
     options: ["engaged", "available", "patient", "awful"]
     answer: 0
+    explain: "Herkes pasta istediği için hat meşgul (engaged)."
   - id: u4d03-r02
     type: dialogue_complete
     item: U4-014
@@ -271,6 +272,7 @@ review:
     stem: "<en>A: Did anybody call me?\nB: Yes, your teacher. Look at the ________ next to the phone. I wrote everything down.</en>"
     options: ["memo", "memory", "recipe", "invitation"]
     answer: 0
+    explain: "Telefonun yanına yazılan not: memo. memory (hafıza) farklı bir kelime."
   - id: u4d03-r06
     type: gap_fill
     item: U4-001
@@ -278,6 +280,7 @@ review:
     stem: "<en>I don't know the answer now, but I'll get back ________ you tomorrow.</en>"
     options: ["to", "at", "on", "from"]
     answer: 0
+    explain: "\"get back to you\" = sana geri dönmek; kalıp \"to\" ile kurulur."
 
 tips:
   - type: tuzak

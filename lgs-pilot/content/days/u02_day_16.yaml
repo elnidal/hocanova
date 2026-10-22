@@ -88,6 +88,7 @@ steps:
       stem: "<en>Survey: \"Do you have a pet?\" — Yes: 0 students · No: 30 students\n________ of the students have a pet.</en>"
       options: ["None", "All", "Most", "Half"]
       answer: 0
+      explain: "0 öğrencinin evcil hayvanı var, 30'unun yok: hiçbiri (None)."
     sina:
       id: u2d16-089-s
       type: message_infer
@@ -96,6 +97,7 @@ steps:
       stem: "<en>Survey (20 students): \"Do you play a musical instrument?\"\nYes: 18 · No: 2</en>"
       options: ["Most of the students play an instrument.", "None of the students play an instrument.", "Half of the students play an instrument.", "All of the students play an instrument."]
       answer: 0
+      explain: "20 öğrencinin 18'i çalgı çalıyor: çoğu (most of the students)."
   - item: U2-090
     sezdir:
       id: u2d16-090-z
@@ -111,6 +113,7 @@ steps:
       stem: "<en>Kaan sleeps six hours a night, but Duru sleeps ten hours. Kaan sleeps ________ Duru.</en>"
       options: ["less than", "more than", "the most", "the least"]
       answer: 0
+      explain: "Kaan 6 saat, Duru 10 saat uyuyor: Kaan Duru'dan daha az uyuyor (less than)."
     sina:
       id: u2d16-090-s
       type: message_infer
@@ -119,6 +122,7 @@ steps:
       stem: "<en>Favourite sport (30 students):\nFootball: 14 · Basketball: 9 · Volleyball: 5 · Tennis: 2</en>"
       options: ["Tennis is the least popular sport.", "Volleyball is more popular than basketball.", "Basketball is the most popular sport.", "Football got less than ten votes."]
       answer: 0
+      explain: "Tenis 2 oyla en az sevilen spordur (the least popular)."
   - item: U2-091
     sezdir:
       id: u2d16-091-z
@@ -134,6 +138,7 @@ steps:
       stem: "<en>After a long day at school, a warm bath is very ________.</en>"
       options: ["relaxing", "annoying", "noisy", "unbearable"]
       answer: 0
+      explain: "Uzun okul gününden sonra sıcak banyo rahatlatıcıdır: relaxing."
     sina:
       id: u2d16-091-s
       type: synonym
@@ -141,6 +146,7 @@ steps:
       prompt: "<en>\"Listening to the sound of the sea is relaxing.\" Which one is CLOSEST in meaning?</en>"
       options: ["It makes me feel calm.", "It makes me feel nervous.", "It makes me feel annoyed.", "It makes me feel angry."]
       answer: 0
+      explain: "relaxing = insanı sakinleştiren; I feel calm."
   - item: U2-092
     sezdir:
       id: u2d16-092-z
@@ -156,6 +162,7 @@ steps:
       stem: "<en>Thank you for the party. The food was delicious and the music was great. It was a very ________ evening!</en>"
       options: ["enjoyable", "awful", "unbearable", "boring"]
       answer: 0
+      explain: "Yemek lezzetli, müzik harikaydı: keyifli (enjoyable) bir akşam."
     sina:
       id: u2d16-092-s
       type: dialogue_complete
@@ -164,6 +171,7 @@ steps:
       stem: "<en>A: How was the school trip?\nB: ________ We visited a museum, played games and had a picnic.</en>"
       options: ["It was really enjoyable.", "It was unbearable.", "It was awful.", "I can't stand trips."]
       answer: 0
+      explain: "Müze, oyun ve piknik: gezi keyifliydi (enjoyable)."
 
 review:
   - id: u2d16-r01
@@ -173,6 +181,7 @@ review:
     stem: "<en>Football players must ________. If they don't, the referee shows them a yellow card.</en>"
     options: ["follow the rules", "get high grades", "be realistic", "pick up"]
     answer: 0
+    explain: "Futbolcular kurallara uymazsa hakem sarı kart gösterir: follow the rules."
   - id: u2d16-r02
     type: dialogue_complete
     item: U2-085
@@ -180,6 +189,7 @@ review:
     stem: "<en>A: I'm going to be a famous singer next month!\nB: Hmm, ________ You need years of practice.</en>"
     options: ["be realistic.", "follow the news.", "take a selfie.", "hang out."]
     answer: 0
+    explain: "Gelecek ay ünlü şarkıcı olmak gerçekçi değil; yıllarca çalışmak gerekir: be realistic."
   - id: u2d16-r03
     type: trait_match
     item: U2-086
@@ -187,6 +197,7 @@ review:
     stem: "<en>Duru always notices when her friends are sad, and she tries to help them.</en>"
     options: ["sensitive", "snob", "stubborn", "lazy"]
     answer: 0
+    explain: "Arkadaşlarının üzgün olduğunu fark edip yardım eden Duru hassastır: sensitive."
   - id: u2d16-r04
     type: gap_fill
     item: U2-087
@@ -194,12 +205,14 @@ review:
     stem: "<en>If you study regularly and listen in class, you can ________ in your exams.</en>"
     options: ["get high grades", "get bored", "follow the news", "hang out"]
     answer: 0
+    explain: "Düzenli çalışıp derste dinleyen sınavda yüksek not alır: get high grades."
   - id: u2d16-r05
     type: synonym
     item: U2-088
     prompt: "<en>\"This homework is unbearable!\" Which one is CLOSEST in meaning?</en>"
     options: ["I can't stand this homework.", "This homework is enjoyable.", "This homework is easy.", "I don't mind this homework."]
     answer: 0
+    explain: "unbearable = dayanılmaz: I can't stand this homework."
   - id: u2d16-r06
     type: situation
     item: U2-051
@@ -208,6 +221,7 @@ review:
     stem: "<en>This month there were twenty school days. Kaan was on time only once.</en>"
     options: ["Kaan is hardly ever on time.", "Kaan is always on time.", "Kaan is usually on time.", "Kaan is often on time."]
     answer: 0
+    explain: "Yirmi günde yalnız bir kez zamanında: neredeyse hiç zamanında gelmiyor (hardly ever on time)."
   - id: u2d16-r07
     type: situation
     item: U2-052
@@ -216,6 +230,7 @@ review:
     stem: "<en>Bora's karate lessons: every Tuesday and every Saturday.</en>"
     options: ["twice a week", "once a week", "three times a week", "once a month"]
     answer: 0
+    explain: "Her salı ve her cumartesi: haftada iki kez."
   - id: u2d16-r08
     type: dialogue_complete
     item: U2-053
@@ -224,6 +239,7 @@ review:
     stem: "<en>A: Why are you so late?\nB: The canteen was crowded. I waited in a long ________ for my sandwich.</en>"
     options: ["queue", "band", "survey", "gym"]
     answer: 0
+    explain: "Kantin kalabalıktı; sandviç için uzun bir sırada (queue) bekledim."
   - id: u2d16-r09
     type: message_infer
     item: U2-054
@@ -232,6 +248,7 @@ review:
     stem: "<en>Selin: Every morning I read a news app, and every evening I watch the news on TV with my dad.</en>"
     options: ["She follows the news.", "She chats online.", "She takes selfies.", "She works out."]
     answer: 0
+    explain: "Her sabah haber uygulaması, her akşam TV haberi: haberleri takip ediyor."
   - id: u2d16-r10
     type: dialogue_complete
     item: U2-011
@@ -240,6 +257,7 @@ review:
     stem: "<en>A: Pizza or burger for lunch?\nB: ________ Both are fine for me.</en>"
     options: ["I don't mind.", "I can't stand pizza.", "I dislike both.", "I'm keen on pizza."]
     answer: 0
+    explain: "\"Both are fine for me\" diyen kişi fark etmez der: I don't mind."
   - id: u2d16-r11
     type: gap_fill
     item: U2-010

@@ -242,6 +242,7 @@ review:
     stem: "<en>Baklava has a lot of sugar and honey in it. It's very ________.</en>"
     options: ["sweet", "sour", "salty", "bitter"]
     answer: 0
+    explain: "Bol şekerli ve ballı baklava çok tatlıdır (sweet)."
   - id: u3d06-r02
     type: gap_fill
     item: U3-033
@@ -249,6 +250,7 @@ review:
     stem: "<en>This lemon juice is too ________ for me. I need some sugar in it.</en>"
     options: ["sour", "sweet", "salty", "spicy"]
     answer: 0
+    explain: "Limon suyu çok ekşi (sour); şeker lazım."
   - id: u3d06-r03
     type: gap_fill
     item: U3-027
@@ -256,6 +258,7 @@ review:
     stem: "<en>My dad drinks his coffee with no sugar. I tried it once, but it was too ________ for me.</en>"
     options: ["bitter", "sweet", "salty", "spicy"]
     answer: 0
+    explain: "Şekersiz kahve acıdır (bitter)."
   - id: u3d06-r04
     type: dialogue_complete
     item: U3-032
@@ -273,6 +276,7 @@ review:
     stem: "<en>Mert put some red chilli sauce on his kebab. After the first bite, his face went red and he drank two glasses of milk.</en>"
     options: ["very spicy", "very sweet", "very salty", "very sour"]
     answer: 0
+    explain: "Acı sos yiyen Mert'in yüzü kızarıyor ve iki bardak süt içiyor: çok acı (spicy)."
   - id: u3d06-r06
     type: gap_fill
     item: U3-036
@@ -280,6 +284,7 @@ review:
     stem: "<en>Can you ________ the sauce, please? I think it needs more salt.</en>"
     options: ["taste", "drain", "grate", "crack"]
     answer: 0
+    explain: "Daha çok tuz gerekip gerekmediğine bakmak için sosu tat (taste)."
   - id: u3d06-r07
     type: process_order
     item: U3-010

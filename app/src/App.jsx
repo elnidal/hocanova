@@ -9,6 +9,7 @@ import Lesson from './screens/Lesson.jsx'
 import Review from './screens/Review.jsx'
 import UnitCheck from './screens/UnitCheck.jsx'
 import Retention from './screens/Retention.jsx'
+import Splash from './components/Splash.jsx'
 import WordList from './screens/WordList.jsx'
 import ParentReport from './screens/ParentReport.jsx'
 import { parseAssignment } from './goal.js'
@@ -36,7 +37,7 @@ export default function App() {
   const wrap = el => <HintCtx.Provider value={hintValue}>{el}</HintCtx.Provider>
 
   if (error) return <div className="wrap">İçerik yüklenemedi. <button className="btn" onClick={() => location.reload()}>Yeniden dene</button></div>
-  if (!index || !unit) return <div className="wrap muted">Yükleniyor…</div>
+  if (!index || !unit) return <Splash />
 
   const ensureCtx = async () => {
     if (lessonCtx) return lessonCtx
@@ -53,7 +54,7 @@ export default function App() {
   const startRetention = async id => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'retention', id }) }
   const startReview = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'review' }) }
 
-  if (screen.name === 'loading') return <div className="wrap muted">Ders hazırlanıyor…</div>
+  if (screen.name === 'loading') return <Splash text="Ders hazırlanıyor…" />
   if (screen.name === 'lesson') {
     const day = unit.days.find(d => d.day === screen.day)
     const hasNext = unit.days.some(d => d.day === screen.day + 1)

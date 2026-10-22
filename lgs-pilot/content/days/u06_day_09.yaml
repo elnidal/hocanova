@@ -231,12 +231,14 @@ review:
     stem: "<en>In the film, a big bear ________ the campers, but they run away safely.</en>"
     options: ["attacks", "lands", "improves", "costs"]
     answer: 0
+    explain: "Büyük ayı kampçılara saldırıyor (attacks) ama kaçıp kurtuluyorlar."
   - id: u6d09-r02
     type: situation
     item: U6-020
     prompt: "<en>It's minus 25°C on the mountain, and a climber has no gloves. What can happen to his fingers?</en>"
     options: ["They can get frostbite.", "They can drown.", "They can land.", "They can gain courage."]
     answer: 0
+    explain: "Eksi 25 derecede eldivensiz parmaklar donabilir (frostbite)."
   - id: u6d09-r03
     type: gap_fill
     item: U6-029
@@ -244,6 +246,7 @@ review:
     stem: "<en>There's a ________ box at the door. There's no name on it, and nobody knows who left it.</en>"
     options: ["mysterious", "experienced", "challenging", "amusing"]
     answer: 0
+    explain: "Üstünde isim olmayan ve kimin bıraktığı bilinmeyen kutu gizemlidir (mysterious)."
   - id: u6d09-r04
     type: gap_fill
     item: U6-039
@@ -251,12 +254,14 @@ review:
     stem: "<en>The old lighthouse is on the top of a high ________. From the window, you can see the sea far below.</en>"
     options: ["cliff", "canoe", "rope", "paddle"]
     answer: 0
+    explain: "Eski deniz feneri yüksek bir uçurumun (cliff) tepesinde."
   - id: u6d09-r05
     type: synonym
     item: U6-040
     prompt: "<en>Which of the following describes a glacier?</en>"
     options: ["a huge, slow river of ice", "a small lake in a forest", "a narrow boat with a paddle", "a hot, dry desert"]
     answer: 0
+    explain: "Glacier = buzul: dev, yavaş akan bir buz nehri."
   - id: u6d09-r06
     type: table_graph
     item: U6-033

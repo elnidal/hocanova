@@ -90,6 +90,7 @@ steps:
       stem: "<en>More than two hundred students will ________ the concert tonight.</en>"
       options: ["attend", "reply", "apologise", "chat"]
       answer: 0
+      explain: "Konsere katılmak: attend (bir etkinliğe katılmak). reply cevap vermek, chat sohbet etmek."
     sina:
       id: d09-003-s
       type: synonym
@@ -97,6 +98,7 @@ steps:
       prompt: "<en>\"Many people attended the science fair.\" Which one is CLOSEST in meaning?</en>"
       options: ["Many people went to the science fair.", "Many people missed the science fair.", "Many people didn't like the science fair.", "Many people forgot the science fair."]
       answer: 0
+      explain: "attended = gitti, katıldı. Many people went to the science fair."
   - item: U1-015
     sezdir:
       id: d09-015-z
@@ -112,6 +114,7 @@ steps:
       stem: "<en>We're playing football in the garden. Do you want to ________ us?</en>"
       options: ["join", "attend", "reply", "prefer"]
       answer: 0
+      explain: "Oyuna katılmak için \"join us\" denir. attend bir etkinliğe katılmak içindir."
     sina:
       id: d09-015-s
       type: situation
@@ -120,6 +123,7 @@ steps:
       stem: "<en>Elif sees her classmates. They are playing volleyball. She wants to play with them.</en>"
       options: ["Can I join you?", "Can you help me with my homework?", "Did you miss the bus?", "Why didn't you reply?"]
       answer: 0
+      explain: "Voleybol oynayan sınıf arkadaşlarına katılmak isteyen Elif \"Can I join you?\" der."
   - item: U1-009
     sezdir:
       id: d09-009-z
@@ -135,6 +139,7 @@ steps:
       stem: "<en>A: Are you free on Saturday?\nB: Yes, ________ Let's meet!</en>"
       options: ["I have nothing to do.", "I'm very busy.", "I have a lot of homework.", "I can't come."]
       answer: 0
+      explain: "Cumartesi boş olan kişi \"I have nothing to do\" der ve buluşmayı önerir."
     sina:
       id: d09-009-s
       type: dialogue_complete
@@ -143,6 +148,7 @@ steps:
       stem: "<en>Selin: Why are you lying on the sofa all day, Duru?\nDuru: ________</en>"
       options: ["Because I have nothing to do.", "Because I'm very busy.", "Because I missed the bus.", "Because I have three exams today."]
       answer: 0
+      explain: "Bütün gün kanepede yatmasının sebebi yapacak bir şeyinin olmaması."
   - item: U1-004
     sezdir:
       id: d09-004-z
@@ -158,6 +164,7 @@ steps:
       stem: "<en>Sorry, I can't play today. I'm ________ with my homework.</en>"
       options: ["busy", "full", "fair", "laid-back"]
       answer: 0
+      explain: "Ödeviyle meşgul olduğu için oynayamıyor: busy."
     sina:
       id: d09-004-s
       type: message_infer
@@ -166,6 +173,7 @@ steps:
       stem: "<en>Kaan: Football practice on Monday, swimming on Tuesday, a maths test on Wednesday… I can't meet you this week!</en>"
       options: ["busy", "bored", "laid-back", "lazy"]
       answer: 0
+      explain: "Kaan'ın haftası antrenman, yüzme ve sınavla dolu: meşgul (busy)."
   - item: U1-020
     sezdir:
       id: d09-020-z
@@ -181,6 +189,7 @@ steps:
       stem: "<en>I sent you three messages yesterday. Why didn't you ________?</en>"
       options: ["reply", "attend", "join", "prefer"]
       answer: 0
+      explain: "Üç mesaj gönderdim ama cevap vermedin: reply (cevap vermek)."
     sina:
       id: d09-020-s
       type: message_infer
@@ -189,6 +198,7 @@ steps:
       stem: "<en>Ece (10:00): Bora, are you coming?\nEce (11:30): Bora???\nEce (13:00): Hello?! Are you there?</en>"
       options: ["Bora isn't replying to her messages.", "Bora is replying too fast.", "Bora is sending her too many messages.", "Bora is at her house."]
       answer: 0
+      explain: "Ece birkaç saat boyunca mesaj atıyor ama Bora cevap vermiyor."
   - item: U1-016
     sezdir:
       id: d09-016-z
@@ -204,6 +214,7 @@ steps:
       stem: "<en>Hurry up! It's 8:05. We will ________ the bus!</en>"
       options: ["miss", "join", "attend", "reply"]
       answer: 0
+      explain: "Saat 8:05; otobüsü kaçıracağız: miss the bus."
     sina:
       id: d09-016-s
       type: odd_one_out
@@ -221,6 +232,7 @@ review:
     stem: "<en>A: ________ play tennis with me on Sunday?\nB: Sure! What time?</en>"
     options: ["Do you want to", "Why did you", "Where did you", "How often do you"]
     answer: 0
+    explain: "Teklif kalıbı: Do you want to play tennis with me? Cevap: Sure! What time?"
   - id: d09-r02
     type: gap_fill
     item: U1-010
@@ -228,6 +240,7 @@ review:
     stem: "<en>I ________ visit London one day. It's my dream!</en>"
     options: ["would like to", "refuse to", "don't want to", "apologise to"]
     answer: 0
+    explain: "\"I would like to visit London one day\" = Bir gün Londra'yı ziyaret etmek istiyorum."
   - id: d09-r03
     type: dialogue_complete
     item: U1-014
@@ -235,12 +248,14 @@ review:
     stem: "<en>A: Tea or orange juice?\nB: ________ I like both.</en>"
     options: ["It doesn't matter.", "That's not fair.", "Sorry, I'm late.", "I'm not thirsty."]
     answer: 0
+    explain: "İkisini de seven kişi için fark etmez: It doesn't matter."
   - id: d09-r04
     type: synonym
     item: U1-018
     prompt: "<en>\"I prefer cats to dogs.\" Which one is CLOSEST in meaning?</en>"
     options: ["I like cats more than dogs.", "I like dogs more than cats.", "I don't like cats or dogs.", "I have a cat and a dog."]
     answer: 0
+    explain: "prefer A to B = A'yı B'den çok sevmek. I prefer cats to dogs = Kedileri köpeklerden çok seviyorum."
   - id: d09-r05
     type: dialogue_complete
     item: U1-023
@@ -248,6 +263,7 @@ review:
     stem: "<en>A: I can lend you my bike for the weekend.\nB: Really? ________</en>"
     options: ["That would be great!", "That's not fair!", "I'm stuffed.", "You're so mean!"]
     answer: 0
+    explain: "Bisikletini ödünç vermek bir iyilik teklifidir; cevap \"That would be great!\" (Harika olur!)"
   - id: d09-r06
     type: dialogue_complete
     item: U1-024
@@ -255,6 +271,7 @@ review:
     stem: "<en>A: I don't like pizza.\nB: OK. ________ pasta?</en>"
     options: ["What about", "Where is", "How old is", "When was"]
     answer: 0
+    explain: "\"I don't like pizza\" dedikten sonra yeni bir öneri gelir: What about pasta? (What about + isim)."
   - id: d09-r07
     type: message_infer
     item: U1-002
@@ -263,6 +280,7 @@ review:
     stem: "<en>Kaan: Ece, I'm really sorry. I was late again and I forgot your book at home. I feel bad about it.</en>"
     options: ["He is apologising.", "He is inviting Ece.", "He is refusing an invitation.", "He is accepting an offer."]
     answer: 0
+    explain: "Kaan geç kaldığı ve kitabı unuttuğu için \"I'm really sorry\" diyor: özür diliyor (apologising)."
   - id: d09-r08
     type: dialogue_complete
     item: U1-021
@@ -271,6 +289,7 @@ review:
     stem: "<en>Selin: Would you like to come to the science museum with us on Saturday?\nDuru: ________ I have a guitar lesson on Saturday.</en>"
     options: ["Sorry, I can't.", "I'd love to!", "Sounds great!", "Why not?"]
     answer: 0
+    explain: "Duru'nun gitar dersi var; yani daveti reddediyor: Sorry, I can't. Diğer şıklar kabul cümleleridir."
   - id: d09-r09
     type: message_infer
     item: U1-007
@@ -279,6 +298,7 @@ review:
     stem: "<en>Bora: Sorry, I can't come to the party. My cat is sick.</en>"
     options: ["an excuse", "an invitation", "a promise", "a present"]
     answer: 0
+    explain: "Bora'nın kedisi yok; \"My cat is sick\" gelmemek için uydurulmuş bir bahanedir: an excuse."
 
 tips:
   - type: tuzak

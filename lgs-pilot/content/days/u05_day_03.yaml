@@ -236,6 +236,7 @@ review:
     stem: "<en>My little sister is only eight, so she can't open a social media ________.</en>"
     options: ["account", "password", "username", "habit"]
     answer: 0
+    explain: "Sekiz yaşındaki kardeş sosyal medya hesabı (account) açamaz."
   - id: u5d03-r02
     type: dialogue_complete
     item: U5-006
@@ -262,6 +263,7 @@ review:
     stem: "<en>Bora, don't say your ________ out loud! Everybody in the library can hear you!</en>"
     options: ["password", "account", "habit", "average"]
     answer: 0
+    explain: "Şifreni (password) yüksek sesle söyleme; kütüphanedeki herkes duyar."
   - id: u5d03-r05
     type: synonym
     item: U5-012
@@ -279,6 +281,7 @@ review:
     stem: "<en>Kaan ________ very fast, so there are always mistakes in his messages.</en>"
     options: ["types", "logs", "signs", "registers"]
     answer: 0
+    explain: "Çok hızlı yazdığı için mesajlarda hata var: types (yazar)."
 
 tips:
   - type: tuzak
