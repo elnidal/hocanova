@@ -1,3 +1,4 @@
+import SpeakerIcon from '../components/SpeakerIcon.jsx'
 import { useEffect, useMemo, useState } from 'react'
 import { loadAllUnits } from '../content.js'
 import { buildExamples, flashDeck } from '../flash.js'
@@ -77,7 +78,7 @@ export default function Flash({ index, state, dispatch, startDeck, onExit }) {
           : <div className="fc-back">
               <div className="spread">
                 <b className="fc-word" lang="en">{it.display}</b>
-                <button className="say" aria-label="Dinle" onClick={e => { e.stopPropagation(); speak(it.display.split('(')[0]) }}>🔊</button>
+                <button className="say" aria-label="Dinle" onClick={e => { e.stopPropagation(); speak(it.display.split('(')[0]) }}><SpeakerIcon /></button>
               </div>
               <p className="fc-meaning">{it.meaning_tr}</p>
               {ex?.tr && <p className="muted small">{ex.tr}</p>}

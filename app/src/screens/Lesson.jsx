@@ -1,3 +1,4 @@
+import SpeakerIcon from '../components/SpeakerIcon.jsx'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { planLesson, pickQuestion, alternativeQuestion, statusOf, dueCountBy, endOfTomorrow } from '../engine'
 import { speak } from '../tts.js'
@@ -179,7 +180,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
             {ctx && <div className="ctx">{rt(ctx.text)}</div>}
             <Question key={`${entry.q.id}${entry.retry ? 'r' : ''}`} q={shuffled} mode="learn" last={last} items={items} newSet={newSet} speak={speak}
               onAnswer={onAnswer} onNext={onNext}
-              extra={entry.role === 'sezdir' && <div className="explain"><b>{it.display}</b> = {it.meaning_tr} <button className="say" aria-label="Dinle" onClick={() => speak(it.display)}>🔊</button></div>} />
+              extra={entry.role === 'sezdir' && <div className="explain"><b>{it.display}</b> = {it.meaning_tr} <button className="say" aria-label="Dinle" onClick={() => speak(it.display)}><SpeakerIcon /></button></div>} />
           </div>
         )
       }}

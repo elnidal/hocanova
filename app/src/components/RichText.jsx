@@ -1,3 +1,4 @@
+import SpeakerIcon from './SpeakerIcon.jsx'
 // İçerik işaretleri: {U1-012|görünen} / {U1-012}, <en>…</en> (İngilizce), <u>…</u> (altı çizili)
 const TOKEN = /(\{U\d+-\d+(?:\|[^}]*)?\})/
 const MARK = /\{(U\d+-\d+)(?:\|([^}]*))?\}/g
@@ -41,7 +42,7 @@ export default function RichText({ text, items, newSet, speak, noPlay, onWord, g
       return (
         <span key={i}>
           <em className="en"><RichText text={inner} items={items} newSet={newSet} speak={speak} onWord={onWord} _left={left} noPlay /></em>
-          {speak && !noPlay && <button className="say" aria-label="Dinle" onClick={() => speak(plain(inner, items))}>🔊</button>}
+          {speak && !noPlay && <button className="say" aria-label="Dinle" onClick={() => speak(plain(inner, items))}><SpeakerIcon /></button>}
         </span>
       )
     }
