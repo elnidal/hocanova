@@ -50,7 +50,7 @@ export default function Question({ q, mode = 'test', onAnswer, onNext, last, ext
       </div>
       {learn && locked && (
         <div aria-live="polite">
-          <p className={`fb ${ok ? 'ok' : 'no'}`}>{ok ? 'Correct!' : 'Not quite. Doğrusu yeşil olan.'}</p>
+          <p className={`fb ${ok ? 'ok' : 'no'}`}>{ok ? 'Doğru!' : 'Neredeyse. Doğrusu yeşil olan.'}</p>
           {q.explain && <div className="explain">{q.explain}</div>}
           {extra}
         </div>

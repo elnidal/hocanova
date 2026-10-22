@@ -102,7 +102,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
       </div>
 
       <section className="card">
-        <div className="eyebrow">Ünite {unit.unit} · {unit.title}</div>
+        <div className="eyebrow">Ünite {unit.unit} · <span lang="en">{unit.title}</span></div>
         <h3>{ids.length} öğretim birimi</h3>
         <p className="muted small">Birim = bir kelime ya da kalıp (eş anlamlılar tek sayılır).</p>
         <div className="dots">

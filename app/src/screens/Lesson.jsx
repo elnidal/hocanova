@@ -31,7 +31,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
 
   // Hikâyeli günlerde kart: örnek cümle, hikâyenin ilk İngilizce satırından alınır.
   const autoCard = id => {
-    for (const l of [...day.story, ...(day.scene || [])]) {
+    for (const l of [...(day.story || []), ...(day.scene || [])]) {
       const seg = (l.text.match(/<en>[\s\S]*?<\/en>/g) || []).find(x => markIds(x).includes(id))
       if (seg) return { example_en: plain(seg.slice(4, -5), items), note_tr: items[id]?.trap_note || null }
     }
@@ -41,7 +41,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   // İlk geçişte kısa Türkçe karşılık (ileri seviyede yok: orada anlamı çıkarmaya çalışırlar)
   const glossByLine = useMemo(() => {
     const seen = new Set(), out = {}
-    for (const l of [...day.story, ...(day.scene || [])]) {
+    for (const l of [...(day.story || []), ...(day.scene || [])]) {
       const g = {}
       for (const id of markIds(l.text)) if (newSet.has(id) && !seen.has(id)) { seen.add(id); g[id] = shortGloss(items[id]) }
       out[l.id] = advanced ? {} : g
