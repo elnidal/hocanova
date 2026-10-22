@@ -138,3 +138,6 @@ button.tk{cursor:pointer}
 :root{--nova-bubble:#EEF0FE;--nova-edge:#C9CFF8}
 @media (prefers-color-scheme:dark){:root{--nova-bubble:#23285A;--nova-edge:#3A4290}}
 .splash .nova{margin:4px 0}
+.growth-row{display:flex;align-items:center;justify-content:center;gap:18px;text-align:center}
+.growth-row div{display:flex;flex-direction:column}.growth-row b{font-family:var(--f-d);font-size:2rem;line-height:1.1}
+.growth-row span{color:var(--muted);font-size:.85rem}.growth-arrow{font-size:1.6rem;color:var(--muted)}.big-win b{color:var(--mint);font-size:2.6rem}

@@ -12,6 +12,8 @@ import Retention from './screens/Retention.jsx'
 import Splash from './components/Splash.jsx'
 import Mistakes from './screens/Mistakes.jsx'
 import ExamCourse from './screens/ExamCourse.jsx'
+import Quiz from './screens/Quiz.jsx'
+import { preQuiz, postQuiz, weeklyQuiz, weekKey } from './quiz.js'
 import Flash from './screens/Flash.jsx'
 import WordList from './screens/WordList.jsx'
 import ParentReport from './screens/ParentReport.jsx'
@@ -56,6 +58,16 @@ export default function App() {
   const startUnitCheck = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'unitcheck' }) }
   const startRetention = async id => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'retention', id }) }
   const startMistakes = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'mistakes' }) }
+  // Quiz: ön/son test (ünite) ve Cuma quiz'i; sorular havuzdan o an seçilir.
+  const startQuiz = async kind => {
+    setScreen({ name: 'loading' })
+    const ctx = await ensureCtx()
+    const uq = state.unitQuiz?.[unit.unit] || {}
+    const questions = kind === 'pre' ? preQuiz(ctx.qIndex, unit)
+      : kind === 'post' ? postQuiz(ctx.qIndex, unit, uq.pre?.qids)
+      : weeklyQuiz(ctx.qIndex, state.progress, Date.now())
+    setScreen({ name: 'quiz', kind, questions, key: weekKey(Date.now()) })
+  }
   const startReview = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'review' }) }
 
   if (screen.name === 'loading') return <Splash text="Ders hazırlanıyor…" />
@@ -68,6 +80,12 @@ export default function App() {
   }
   if (screen === 'wordlist') return wrap(<WordList units={index.units.filter(u => u.dayCount)} startUnit={unit.unit} onExit={() => setScreen('home')} />)
   if (screen.name === 'mistakes') return wrap(<Mistakes state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} onFlash={deck => setScreen({ name: 'flash', deck })} onExit={() => setScreen('home')} />)
+  if (screen.name === 'quiz') return wrap(<Quiz kind={screen.kind} questions={screen.questions} items={lessonCtx.items}
+    title={screen.kind === 'weekly' ? 'Bu haftanın ifadeleri' : `Ünite ${unit.unit} · ${unit.title}`}
+    before={state.unitQuiz?.[unit.unit]?.pre} dispatch={dispatch} onExit={() => setScreen('home')}
+    onFinish={result => screen.kind === 'weekly'
+      ? dispatch({ type: 'weekly', key: screen.key, result })
+      : dispatch({ type: 'unitQuiz', unit: unit.unit, phase: screen.kind, result })} />)
   if (screen === 'exam') return wrap(<ExamCourse index={index} state={state} dispatch={dispatch} onExit={() => setScreen('home')} />)
   if (screen.name === 'flash') return wrap(<Flash index={index} state={state} dispatch={dispatch} startDeck={screen.deck} onExit={() => setScreen('home')} />)
   if (screen === 'report') return wrap(<ParentReport index={index} state={state} onExit={() => setScreen('home')} />)
@@ -79,5 +97,5 @@ export default function App() {
       onFinish={result => dispatch({ type: 'placement', result, now: Date.now() })}
       onExit={() => setScreen('home')} />
   )
-  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} onWordList={() => setScreen('wordlist')} onReport={() => setScreen('report')} onFlash={deck => setScreen({ name: 'flash', deck })} onMistakes={startMistakes} onExam={() => setScreen('exam')} account={account} />)
+  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} onWordList={() => setScreen('wordlist')} onReport={() => setScreen('report')} onFlash={deck => setScreen({ name: 'flash', deck })} onMistakes={startMistakes} onExam={() => setScreen('exam')} onQuiz={startQuiz} account={account} />)
 }

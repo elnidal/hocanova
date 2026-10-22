@@ -4,12 +4,13 @@ import Logo from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
 import { coachMessage, streakOf } from '../goal.js'
 import { openMistakeCount } from '../mistakes.js'
+import { weeklyDue, pct } from '../quiz.js'
 import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, onExam, account }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, onExam, onQuiz, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -24,9 +25,12 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const retentions = index.retention.unit === unit.unit
     ? index.retention.sections.map(sec => ({ sec, st: retentionState({ section: sec, unit: unit.unit, doneDays: state.doneDays, retentions: state.retentions, progress, now }) }))
     : []
-  const checkAvail = placement && index.unit_check.unit === unit.unit && !state.unitChecks?.[unit.unit] && doneN === 0
   const levelText = placement ? index.coach.placement_result[placement.level].replace(' {name}', '') : ''
   const streak = streakOf(state.daily, now)
+  const uq = state.unitQuiz?.[unit.unit] || {}
+  const preAvail = placement && doneN === 0 && !uq.pre && !uq.preSkipped && !uq.post
+  const nextUnit = index.units.find(u => u.unit > unit.unit && u.dayCount)
+  const weekly = placement && weeklyDue(progress, state.weekly, now)
   const mistakesOpen = openMistakeCount(progress)
   const readyChecks = retentions.filter(r => r.st.status === 'ready')
   const waitChecks = retentions.filter(r => r.st.status !== 'ready' && r.st.status !== 'not-started')
@@ -51,14 +55,14 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <p className="muted">18 soru · 4 dk · seviyeni belirler</p>
           <button className="btn" onClick={onPlacement}>Teste başla →</button>
         </section>
-      ) : checkAvail ? (
+      ) : preAvail ? (
         <section className="card today">
           <div className="eyebrow">Önce bir bakalım</div>
-          <h2>Ünite {unit.unit} giriş kontrolü</h2>
-          <p className="muted">2 dk · bildiğin ifadeleri işaretle, bilmediklerini dersler öğretsin</p>
+          <h2>Ünite {unit.unit} ön testi</h2>
+          <p className="muted">10 soru · 3 dk · ünite sonunda gelişmeni bununla karşılaştıracağız</p>
           <div className="row">
-            <button className="btn" onClick={onUnitCheck}>Kontrole başla →</button>
-            <button className="btn ghost" onClick={() => dispatch({ type: 'skipUnitCheck', unit: unit.unit, now: Date.now() })}>Şimdilik atla</button>
+            <button className="btn" onClick={() => onQuiz('pre')}>Teste başla →</button>
+            <button className="btn ghost" onClick={() => dispatch({ type: 'unitQuiz', unit: unit.unit, phase: 'preSkipped', result: { now: Date.now() } })}>Şimdilik atla</button>
           </div>
         </section>
       ) : nextDay ? (
@@ -70,13 +74,39 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <button className="btn" onClick={() => onLesson(nextDay.day)}>{capped ? 'Yine de bir ders daha →' : 'Derse başla →'}</button>
         </section>
       ) : (
-        <section className="card today"><h2>Bu ünitenin dersleri bitti 🎉</h2></section>
+        uq.post ? (
+          <section className="card today growth">
+            <div className="eyebrow">Ünite {unit.unit} tamam 🎉</div>
+            {uq.pre?.n ? (
+              <div className="growth-row">
+                <div><b>%{pct(uq.pre)}</b><span>giriş</span></div>
+                <span className="growth-arrow" aria-hidden="true">→</span>
+                <div className="big-win"><b>%{pct(uq.post)}</b><span>çıkış</span></div>
+              </div>
+            ) : <h2>Son test: %{pct(uq.post)}</h2>}
+            {nextUnit && <button className="btn" onClick={() => dispatch({ type: 'unit', unit: nextUnit.unit })}>Ünite {nextUnit.unit}'e geç →</button>}
+          </section>
+        ) : (
+          <section className="card today">
+            <div className="eyebrow">Bu ünitenin dersleri bitti 🎉</div>
+            <h2>Ünite {unit.unit} son testi</h2>
+            <p className="muted">15 LGS tarzı soru · 8 dk{uq.pre?.n ? ` · girişte %${pct(uq.pre)} yapmıştın` : ''}</p>
+            <button className="btn" onClick={() => onQuiz('post')}>Son teste başla →</button>
+          </section>
+        )
       )}
 
       {placement && due > 0 && (
         <section className="card slim">
           <div><b>{due} ifade tekrar bekliyor</b><div className="muted small">Bugün en fazla 10 tanesi sorulur.</div></div>
           <button className="btn sm" onClick={onReview}>Tekrar →</button>
+        </section>
+      )}
+
+      {weekly && (
+        <section className="card slim">
+          <div><b>Cuma quiz'i hazır 🗓️</b><div className="muted small">Bu haftanın ifadelerinden 10 soru · süreli</div></div>
+          <button className="btn sm" onClick={() => onQuiz('weekly')}>Başla →</button>
         </section>
       )}
 
@@ -110,6 +140,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <div className="stat"><b>{doneN}/{unit.days.length}</b><span>ders günü</span></div>
           <div className="stat"><b>{due}</b><span>bekleyen tekrar</span></div>
         </div>
+        {Boolean(uq.pre?.n || uq.post) && <p className="muted small">Ön test: {uq.pre?.n ? `%${pct(uq.pre)}` : '—'} · Son test: {uq.post ? `%${pct(uq.post)}` : 'ünite bitince'}</p>}
         {waitChecks.map(({ sec, st }) => (
           <p className="muted small" key={sec.id}>{sec.title}: {st.status === 'done' ? `tamamlandı · ${st.ok}/${st.n} (%${Math.round(100 * st.ok / st.n)})` : st.status === 'wait' ? `${st.days} gün sonra açılır` : 'önce biraz daha ders gerekiyor'}</p>
         ))}

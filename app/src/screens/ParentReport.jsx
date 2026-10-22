@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { loadAllUnits } from '../content.js'
 import Splash from '../components/Splash.jsx'
+import { pct } from '../quiz.js'
 import { buildReport } from '../report.js'
 
 const WD = ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt']
@@ -45,6 +46,14 @@ export default function ParentReport({ index, state, onExit }) {
 
         <h3>Kelime durumu</h3>
         <p>{r.total} ifadenin <b>{r.state.known}</b> tanesi kalıcı öğrenildi, <b>{r.state.unc}</b> tanesi pekişiyor, <b>{r.state.new}</b> tanesi henüz başlanmadı. Tamamlanan ders günü: <b>{r.lessonsDone}</b>.</p>
+
+        {Object.keys(state.unitQuiz || {}).length > 0 && <>
+          <h3>Ünite testleri</h3>
+          <ul>{Object.entries(state.unitQuiz).filter(([, q]) => q.pre?.n || q.post).map(([u, q]) => (
+            <li key={u}>Ünite {u}: giriş {q.pre?.n ? `%${pct(q.pre)}` : '—'} → çıkış {q.post ? <b>%{pct(q.post)}</b> : 'ünite sürüyor'}</li>
+          ))}</ul>
+        </>}
+        {Object.keys(state.weekly || {}).length > 0 && <p>Cuma quiz'leri: {Object.entries(state.weekly).slice(-4).map(([k, r]) => `${k.slice(5).split('-').reverse().join('.')} haftası %${pct(r)}`).join(' · ')}</p>}
 
         <h3>Zorlandığı ifadeler</h3>
         {r.hardest.length ? (
