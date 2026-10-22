@@ -130,3 +130,8 @@ button.tk{cursor:pointer}
 .rate button span{font-size:1.2rem;line-height:1}
 .rate .rate-dont{border-color:var(--hot);color:var(--hot)}.rate .rate-unsure{border-color:var(--amber);color:var(--amber)}.rate .rate-know{background:var(--mint);border-color:var(--mint);color:var(--paper)}
 @media (prefers-reduced-motion:reduce){.fc-back{animation:none}}
+.exam-row{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:12px;padding:10px 0;border-top:1px solid var(--line);cursor:pointer;width:100%}
+.exam-row .grow{display:flex;flex-direction:column}.exam-row:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.exam-dot{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:.85rem;background:var(--bg);color:var(--muted);flex:none}
+.exam-dot.ready{background:var(--brand-soft);color:var(--brand)}.exam-dot.done{background:var(--mint);color:var(--paper)}
+.exam-ex{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:.95rem}

@@ -9,7 +9,7 @@ import ProfileCard from '../components/ProfileCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, account }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, onExam, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -119,6 +119,13 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         <section className="card slim">
           <div><b>Hızlı kart</b><div className="muted small">2 dakikalık kart turu · öğrendiklerin ve zorlandıkların</div></div>
           <button className="btn sm" onClick={() => onFlash()}>Kartlar →</button>
+        </section>
+      )}
+
+      {placement && Object.keys(state.doneDays).length > 0 && (
+        <section className="card slim">
+          <div><b>Sınav Dili</b><div className="muted small">LGS soru tipleri ve taktikleri · 24 kısa ders</div></div>
+          <button className="btn sm ghost" onClick={onExam}>Aç →</button>
         </section>
       )}
 

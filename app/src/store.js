@@ -25,6 +25,8 @@ function apply(s, a) {
     case 'placement': return { ...s, placement: { ...a.result, at: a.now }, progress: setLevel(s.progress, a.result.level) }
     case 'answer': return { ...s, progress: recordAnswer(s.progress, a.payload), daily: countAnswer(s.daily, a.payload.now) }
     case 'flash': return { ...s, progress: recordFlash(s.progress, a), daily: countAnswer(s.daily, a.now) }
+    case 'examQ': return { ...s, daily: countAnswer(s.daily, a.now) }
+    case 'examDone': return { ...s, examDone: { ...(s.examDone || {}), [a.id]: { ok: a.ok, n: a.n, at: a.now } } }
     case 'goal': return { ...s, goal: a.goal }
     case 'dayDone': return { ...s, doneDays: { ...s.doneDays, [a.key]: { first: a.first, total: a.total, n: a.n, at: a.now } } }
     case 'retentionDone': return { ...s, retentions: { ...(s.retentions || {}), [`u${a.unit}:${a.id}`]: { ok: a.ok, n: a.n, at: a.now } } }
