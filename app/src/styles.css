@@ -132,9 +132,7 @@ button.tk{cursor:pointer}
 .exam-dot.ready{background:var(--brand-soft);color:var(--brand)}.exam-dot.done{background:var(--mint);color:var(--paper)}
 .exam-ex{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:.95rem}
 /* Hoca Nova: avatar ve konuşma balonu (kartlardan ayrışsın diye renkli zemin + avatara bakan kuyruk) */
-.nova{display:block;flex:none}.nova-bg{fill:var(--brand)}.nova-star{fill:#FFC93C;stroke:#FFC93C;stroke-width:9;stroke-linejoin:round}
-.nova-glass{fill:#fff;stroke:#1B1E3A;stroke-width:2.6}.nova-eye{fill:#1B1E3A}.nova-line{fill:none;stroke:#1B1E3A;stroke-width:2.6;stroke-linecap:round}.nova-cheek{fill:#F0614A;opacity:.45}
-.say-bubble{position:relative;background:var(--nova-bubble);color:var(--ink);border:1.5px solid var(--nova-edge);border-radius:4px 16px 16px 16px;padding:10px 14px 12px;font-weight:600}
+.nova{display:block;flex:none}.nova-bg{fill:var(--brand)}.say-bubble{position:relative;background:var(--nova-bubble);color:var(--ink);border:1.5px solid var(--nova-edge);border-radius:4px 16px 16px 16px;padding:10px 14px 12px;font-weight:600}
 .say-bubble::before{content:"";position:absolute;left:-8px;top:12px;width:12px;height:12px;background:var(--nova-bubble);border-left:1.5px solid var(--nova-edge);border-bottom:1.5px solid var(--nova-edge);transform:rotate(45deg)}
 .say-bubble small{display:block;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);margin-bottom:2px}
 :root{--nova-bubble:#EEF0FE;--nova-edge:#C9CFF8}
