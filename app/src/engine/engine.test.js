@@ -149,14 +149,26 @@ test('applyUnitCheck: doğrulananlar known, yanlışlar new, uydurmaya evet → 
   assert.deepEqual(counts(p, ['a', 'b', 'c']), { known: 0, unc: 1, new: 2 })
 })
 
-test('planLesson: bilinen kelimede sezdir atlanır; ek tekrar günün kelimelerini içermez', () => {
+test('planLesson: kart-önce akışta adımlar kullan+sına; kartlar bilinmeyenler için; ek tekrar günün kelimelerini içermez', () => {
   let p = applyUnitCheck(createProgress(), { itemIds: ['A', 'B'], claimed: ['A'], verified: { A: true }, fakes: 0, now: T0 })
   p = ans(p, 'Z', 'q', true, 'lesson', T0 - 3 * DAY)
   const day = { steps: [{ item: 'A' }, { item: 'B' }], review: [{ id: 'r' }] }
   const plan = planLesson(day, p, T0 + 10 * DAY)
-  assert.deepEqual(plan.steps[0], { item: 'A', parts: ['kullan', 'sina'], skippedSezdir: true })
-  assert.deepEqual(plan.steps[1].parts, ['sezdir', 'kullan', 'sina'])
+  assert.equal(plan.mode, 'cardFirst')
+  assert.deepEqual(plan.steps.map(s => s.parts), [['kullan', 'sina'], ['kullan', 'sina']])
+  assert.deepEqual(plan.cardItems, ['B'])
   assert.deepEqual(plan.extraReview, ['Z'])
+})
+
+test('planLesson: ileri seviyede eski akış (sezdir bonus), bilinen birimde atlanır', () => {
+  const day = { steps: [{ item: 'A' }, { item: 'B' }] }
+  const adv = setLevel(createProgress(), 'ileri')
+  const known = applyUnitCheck(adv, { itemIds: ['A', 'B'], claimed: ['A'], verified: { A: true }, fakes: 0, now: T0 })
+  const plan = planLesson(day, known, T0 + DAY)
+  assert.equal(plan.mode, 'advanced')
+  assert.deepEqual(plan.steps[0].parts, ['kullan', 'sina'])
+  assert.deepEqual(plan.steps[1].parts, ['sezdir', 'kullan', 'sina'])
+  assert.deepEqual(plan.cardItems, ['B'])
 })
 
 // Gerçek içerik sağlık kontrolü (npm run content çalıştırılmışsa)

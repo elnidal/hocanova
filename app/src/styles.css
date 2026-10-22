@@ -83,3 +83,9 @@ button.tk{cursor:pointer}
 .softnote{background:color-mix(in srgb,var(--amber) 15%,transparent);border-radius:12px;padding:10px 12px;font-size:.92rem}
 .tipcard{border-left:4px solid var(--brand)}
 .review-wrong summary{cursor:pointer}.rw{border-top:1px solid var(--line);padding:10px 0;margin-top:10px}.rw p{margin:.2em 0}.small.ok{color:var(--mint)}
+.gl{color:var(--muted);font-size:.82em;font-weight:700}
+.nar{margin:0}
+.quote{background:var(--bg);border-left:4px solid var(--brand);border-radius:0 12px 12px 0;padding:6px 12px;margin:2px 0 4px}
+.wordpop{position:fixed;left:12px;right:12px;bottom:12px;max-width:520px;margin:0 auto;z-index:20;flex-direction:row;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 8px 30px #0004}
+.wordpop .x{border:0;background:none;font-size:1.2rem;color:var(--muted)}
+.storyline{display:flex;flex-direction:column;gap:2px}

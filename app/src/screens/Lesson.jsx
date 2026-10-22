@@ -3,23 +3,55 @@ import { planLesson, pickQuestion, statusOf, dueCountBy, endOfTomorrow } from '.
 import { speak } from '../tts.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
-import RichText from '../components/RichText.jsx'
+import RichText, { markIds, plain } from '../components/RichText.jsx'
 import Run from '../components/Run.jsx'
 import CardView from '../components/CardView.jsx'
 
 const TIP = { hafiza_kancasi: 'Hafıza kancası', tuzak: 'Tuzak', lgs_taktigi: 'LGS taktiği', kelime_ailesi: 'Kelime ailesi', ilginc_bilgi: 'İlginç bilgi', mini_dilbilgisi: 'Mini dilbilgisi' }
 const STAGE_LABEL = { card: 'Kart', sezdir: 'Sezdir', kullan: 'Kullan', sina: 'Sına' }
 const PHASES_STORY = ['story', 'scene', 'steps', 'review', 'tips']
+const PHASES_CARDS = ['cards', ...PHASES_STORY]
 const PHASES_LIGHT = ['steps', 'review', 'tips'] // hafif mod: hikâye ve sahne yok
 
 export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext, softCapped }) {
   const light = day.mode === 'light'
-  const PHASES = light ? PHASES_LIGHT : PHASES_STORY
-  const STAGE = light ? ['card', 'kullan', 'sina'] : ['sezdir', 'kullan', 'sina']
   const [plan] = useState(() => planLesson(day, state.progress, Date.now()))
+  const cardFirst = plan.mode === 'cardFirst'
+  const advanced = plan.mode === 'advanced'
+  const PHASES = light ? PHASES_LIGHT : cardFirst && plan.cardItems.length ? PHASES_CARDS : PHASES_STORY
+  const STAGE = light ? ['card', 'kullan', 'sina'] : advanced ? ['sezdir', 'kullan', 'sina'] : ['kullan', 'sina']
   const newSet = useMemo(() => new Set(day.new_items), [day])
-  const [phase, setPhase] = useState(light ? 'steps' : 'story')
+  const [phase, setPhase] = useState(light ? 'steps' : cardFirst && plan.cardItems.length ? 'cards' : 'story')
   const [stats, setStats] = useState({ first: 0, total: 0, wrong: [] })
+  const [pop, setPop] = useState(null) // dokunulan ifadenin anlam kutusu
+
+  // Hikâyeli günlerde kart: örnek cümle, hikâyenin ilk İngilizce satırından alınır.
+  const autoCard = id => {
+    for (const l of [...day.story, ...(day.scene || [])]) {
+      const seg = (l.text.match(/<en>[\s\S]*?<\/en>/g) || []).find(x => markIds(x).includes(id))
+      if (seg) return { example_en: plain(seg.slice(4, -5), items), note_tr: items[id]?.trap_note || null }
+    }
+    return { example_en: null, note_tr: items[id]?.trap_note || null }
+  }
+  const cardEntries = useMemo(() => plan.cardItems.map(id => ({ itemId: id, role: 'card', card: autoCard(id) })), [plan]) // eslint-disable-line react-hooks/exhaustive-deps
+  // İlk geçişte kısa Türkçe karşılık (ileri seviyede yok: orada anlamı çıkarmaya çalışırlar)
+  const glossByLine = useMemo(() => {
+    const seen = new Set(), out = {}
+    const short = m => String(m || '').replace(/\s*\([^)]*\)/g, '').trim()
+    for (const l of [...day.story, ...(day.scene || [])]) {
+      const g = {}
+      for (const id of markIds(l.text)) if (newSet.has(id) && !seen.has(id)) { seen.add(id); g[id] = short(items[id]?.meaning_tr) }
+      out[l.id] = advanced ? {} : g
+    }
+    return out
+  }, [day, items, newSet, advanced])
+  const onWord = (id, label) => { speak(label); setPop({ label, meaning: items[id]?.meaning_tr }) }
+  const popup = pop && (
+    <aside className="card wordpop" role="status">
+      <span><b>{pop.label}</b> — {pop.meaning}</span>
+      <button className="x" aria-label="Kapat" onClick={() => setPop(null)}>✕</button>
+    </aside>
+  )
   // Hap bilgi: ilgili ifadenin son sorusundan hemen sonra gösterilir; bugünün ifadelerine bağlı olmayanlar raporda çıkar.
   const { stepList, leftoverTips } = useMemo(() => {
     const flat = plan.steps.flatMap(s => s.parts.map(k => {
@@ -56,22 +88,41 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       <div className="grow"><div className="eyebrow">{sub}</div><h2>{title}</h2></div>
     </div>
   )
-  const rt = t => <RichText text={t} items={items} newSet={newSet} speak={speak} />
+  const rt = (t, gloss) => <RichText text={t} items={items} newSet={newSet} speak={speak} onWord={onWord} gloss={gloss} />
 
   const record = (entry, ok, picked, shuffled) => {
     dispatch({ type: 'answer', payload: { itemId: entry.itemId, qid: entry.q.id, correct: ok, kind: entry.role === 'review' ? 'review' : 'lesson', chosen: ok ? null : shuffled.options[picked], now: Date.now() } })
     if (!entry.retry) setStats(s => ({ first: s.first + (ok ? 1 : 0), total: s.total + 1, wrong: ok || s.wrong.includes(entry.itemId) ? s.wrong : [...s.wrong, entry.itemId] }))
   }
 
+  if (phase === 'cards') return (
+    <Run key="cards" list={cardEntries}
+      render={(entry, _s, last, _a, onNext, i) => (
+        <div className="wrap">
+          {head('Bugünün ifadeleri', 'Önce öğrenelim')}
+          {i === 0 && <Coach text={`Bugün ${cardEntries.length} yeni ifade var. Önce onlara kısaca bakalım, sonra hikâyede nasıl geçtiklerini göreceksin.`} />}
+          <CardView item={items[entry.itemId]} card={entry.card} status={statusOf(state.progress, entry.itemId)} last={last} nextLabel={last ? 'Hikâyeye geç' : 'Sonraki'} onNext={onNext} />
+        </div>
+      )}
+      onResult={() => null}
+      onEnd={() => setPhase('story')} />
+  )
+
   if (phase === 'story') return (
     <div className="wrap">
-      {head(day.title, 'Hikâye · sezdir')}
-      <Coach text={day.coach.start} />
+      {head(day.title, advanced ? 'Hikâye · sezdir' : 'Hikâyede gör')}
+      {!cardFirst && <Coach text={day.coach.start} />}
       <section className="card story">
-        <p className="muted small">Oku. <b className="hot">Kırmızı</b> ifadeler bugün yeni: anlamını hikâyeden çıkar. Dokununca okunuşunu duyarsın.</p>
-        {day.story.map(l => <p key={l.id}>{rt(l.text)}</p>)}
+        <p className="muted small">{advanced
+          ? <>Oku. <b className="hot">Kırmızı</b> ifadeler bugün yeni: anlamını hikâyeden çıkarmaya çalış. Dokununca okunuşunu duyarsın.</>
+          : <>Hikâyeyi oku. <b className="hot">Kırmızı</b> ifadeler bugün öğrendiklerin; ilk geçtikleri yerde kısa Türkçesi yazıyor, dokununca anlamını ve okunuşunu görürsün.</>}</p>
+        {day.story.map(l => <StoryLine key={l.id} text={l.text} rt={t => rt(t, glossByLine[l.id])} />)}
       </section>
-      <div className="nav"><button className="btn" onClick={() => setPhase(day.scene?.length ? 'scene' : 'steps')}>Sonraki →</button></div>
+      <div className="row">
+        {cardFirst && <button className="btn ghost" onClick={() => { setPop(null); setPhase('steps') }}>Hikâyeyi atla</button>}
+        <button className="btn" onClick={() => { setPop(null); setPhase(day.scene?.length ? 'scene' : 'steps') }}>Sonraki →</button>
+      </div>
+      {popup}
     </div>
   )
 
@@ -82,11 +133,12 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
         {head('Mesajlar', 'Sahne · tamamen İngilizce')}
         <section className="card chat">
           {day.scene.map(l => (
-            <div key={l.id} className={`msg${l.speaker === first ? '' : ' me'}`}><b>{l.speaker}</b>{rt(l.text)}</div>
+            <div key={l.id} className={`msg${l.speaker === first ? '' : ' me'}`}><b>{l.speaker}</b>{rt(l.text, glossByLine[l.id])}</div>
           ))}
         </section>
         <p className="muted">Hepsini anlamaya çalış; bilmediğin kelimeye takılma.</p>
-        <div className="nav"><button className="btn" onClick={() => setPhase('steps')}>Sonraki →</button></div>
+        <div className="nav"><button className="btn" onClick={() => { setPop(null); setPhase('steps') }}>Sonraki →</button></div>
+        {popup}
       </div>
     )
   }
@@ -96,7 +148,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       render={(entry, shuffled, last, onAnswer, onNext, i) => {
         if (entry.role === 'tip') return (
           <div className="wrap">
-            {head(light ? 'Kullan · Sına' : 'Bugünün ifadeleri', 'Hap bilgi')}
+            {head(advanced ? 'Sezdir · Kullan · Sına' : 'Kullan · Sına', 'Hap bilgi')}
             <TipView tip={entry.tip} last={last} onNext={onNext} />
           </div>
         )
@@ -111,7 +163,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
         const ctx = entry.role === 'sezdir' && day.story.find(l => l.id === entry.q.context)
         return (
           <div className="wrap">
-            {head(light ? 'Kullan · Sına' : 'Sezdir · Kullan · Sına', 'Bugünün ifadeleri')}
+            {head(advanced ? 'Sezdir · Kullan · Sına' : 'Kullan · Sına', 'Bugünün ifadeleri')}
             <div className="spread">
               <span className="stage">{STAGE.map(s => <i key={s} className={s === entry.role ? 'on' : ''}>{STAGE_LABEL[s]}</i>)}</span>
               <span className="row">{entry.retry && <span className="chip unc">tekrar</span>}<span className={`chip ${statusOf(state.progress, entry.itemId)}`}>{it.display}</span></span>
@@ -182,5 +234,17 @@ function TipView({ tip, last, onNext }) {
       <p>{tip.text}</p>
       {onNext && <div className="nav"><button className="btn" onClick={onNext}>{last ? 'Bitir' : 'Devam'} →</button></div>}
     </aside>
+  )
+}
+
+// Anlatım cümlesi (kim, ne yapıyor) ile İngilizce replik ayrı satırlarda: replik balonu üstündeki anlatımla okunur.
+function StoryLine({ text, rt }) {
+  const clean = x => x.replace(/^[\s"“”]+|[\s"“”]+$/g, '')
+  return (
+    <div className="storyline">
+      {text.split(/(<en>[\s\S]*?<\/en>)/g).map((p, i) => p.startsWith('<en>')
+        ? <div className="quote" key={i}>{rt(p)}</div>
+        : clean(p) ? <p className="nar" key={i}>{rt(clean(p))}</p> : null)}
+    </div>
   )
 }
