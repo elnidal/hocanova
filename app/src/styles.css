@@ -115,3 +115,5 @@ button.tk{cursor:pointer}
 @media (prefers-reduced-motion:reduce){.dots3 i{animation:none;opacity:.6}}
 .unitpick summary{cursor:pointer;list-style:none}.unitpick summary::-webkit-details-marker{display:none}
 .unitpick .chips{margin-top:10px}
+.slim{flex-direction:row;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px}
+.goalpick summary{cursor:pointer}.goalpick .chips{margin-top:8px}

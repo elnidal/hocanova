@@ -26,6 +26,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const checkAvail = placement && index.unit_check.unit === unit.unit && !state.unitChecks?.[unit.unit] && doneN === 0
   const levelText = placement ? index.coach.placement_result[placement.level].replace(' {name}', '') : ''
   const streak = streakOf(state.daily, now)
+  const readyChecks = retentions.filter(r => r.st.status === 'ready')
+  const waitChecks = retentions.filter(r => r.st.status !== 'ready' && r.st.status !== 'not-started')
   const coachText = placement
     ? coachMessage({ daily: state.daily, goal: state.goal, due, now, fallback: levelText })
     : 'Selam! Ben Hoca Nova, koçunum. Önce 4 dakikalık kısa bir testle seni tanıyayım; sonra Ece\'nin partisine gidiyoruz 🎈'
@@ -62,7 +64,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <div className="eyebrow">{doneN ? 'Sıradaki ders' : 'İlk ders'} · Gün {nextDay.day}</div>
           <h2>{nextDay.title}</h2>
           <p className="muted">{nextDay.est_minutes} dk · {nextDay.new_items.length} yeni ifade{due ? ` · ${due} tekrar bekliyor` : ''}</p>
-          {capped && <p className="softnote">Bugün {newToday} yeni ifade öğrendin, harika! Dinlenmiş kafayla yarınki tekrar öğrendiklerini kalıcı yapar; yine de istersen devam edebilirsin.</p>}
+          {capped && <p className="softnote">Bugün {newToday} yeni ifade öğrendin, harika! Yarınki tekrar bunları kalıcı yapar; istersen yine de devam edebilirsin.</p>}
           <button className="btn" onClick={() => onLesson(nextDay.day)}>{capped ? 'Yine de bir ders daha →' : 'Derse başla →'}</button>
         </section>
       ) : (
@@ -70,37 +72,25 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
       )}
 
       {placement && due > 0 && (
-        <section className="card today">
-          <div className="eyebrow">Tekrar</div>
-          <h3>{due} ifade tekrar bekliyor</h3>
-          <p className="muted small">Bugün en fazla 10 tanesi sorulur; geciken ve yanlış yapılanlar önce.</p>
-          <button className="btn ghost" onClick={onReview}>Tekrara başla →</button>
+        <section className="card slim">
+          <div><b>{due} ifade tekrar bekliyor</b><div className="muted small">Bugün en fazla 10 tanesi sorulur.</div></div>
+          <button className="btn sm" onClick={onReview}>Tekrar →</button>
         </section>
       )}
 
       {placement && <GoalCard goal={state.goal} daily={state.daily} onChange={goal => dispatch({ type: 'goal', goal })} />}
 
-      {placement && (state.profile?.nick || Object.keys(state.doneDays).length > 0) && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
+      {placement && !state.profile?.nick && Object.keys(state.doneDays).length > 0 && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
 
-      {retentions.some(r => r.st.status !== 'not-started') && (
-        <section className="card">
-          <div className="eyebrow">Kalıcılık kontrolleri</div>
-          {retentions.map(({ sec, st }) => (
-            <div className="spread" key={sec.id}>
-              <div><b>{sec.title}</b><div className="muted small">
-                {st.status === 'done' ? `Tamamlandı · ${st.ok}/${st.n} (%${Math.round(100 * st.ok / st.n)})`
-                  : st.status === 'wait' ? `${st.days} gün sonra açılır`
-                  : st.status === 'need-lessons' ? 'Önce biraz daha ders gerekiyor'
-                  : '10 soru · 4 dk'}
-              </div></div>
-              {st.status === 'ready' && <button className="btn sm" onClick={() => onRetention(sec.id)}>Başla →</button>}
-            </div>
-          ))}
+      {readyChecks.map(({ sec }) => (
+        <section className="card slim" key={sec.id}>
+          <div><b>{sec.title}</b><div className="muted small">10 soru · 4 dk · kalıcılığı ölçer</div></div>
+          <button className="btn sm" onClick={() => onRetention(sec.id)}>Başla →</button>
         </section>
-      )}
+      ))}
 
       <details className="card unitpick">
-        <summary><b>Ünite {unit.unit} · <span lang="en">{unit.title}</span></b> <span className="muted small">· ünite değiştir</span></summary>
+        <summary><b>Ünite {unit.unit} · <span lang="en">{unit.title}</span></b> <span className="muted small">· {doneN}/{unit.days.length} gün · ilerleme ve ünite değiştir</span></summary>
         <div className="chips" role="tablist">
           {unitsWithDays.map(u => (
             <button key={u.unit} role="tab" aria-selected={u.unit === unit.unit} className={`pill${u.unit === unit.unit ? ' on' : ''}`} onClick={() => dispatch({ type: 'unit', unit: u.unit })}>
@@ -108,12 +98,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
             </button>
           ))}
         </div>
-      </details>
-
-      <section className="card">
-        <div className="eyebrow">Ünite {unit.unit} · <span lang="en">{unit.title}</span></div>
-        <h3>{ids.length} öğretim birimi</h3>
-        <p className="muted small">Birim = bir kelime ya da kalıp (eş anlamlılar tek sayılır).</p>
+        <p className="muted small">{ids.length} ifade (eş anlamlılar tek sayılır)</p>
         <div className="dots">
           <span className="dot known" />şimdilik biliyor {c.known}
           <span className="dot unc" />kararsız {c.unc}
@@ -123,13 +108,19 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <div className="stat"><b>{doneN}/{unit.days.length}</b><span>ders günü</span></div>
           <div className="stat"><b>{due}</b><span>bekleyen tekrar</span></div>
         </div>
-      </section>
+        {waitChecks.map(({ sec, st }) => (
+          <p className="muted small" key={sec.id}>{sec.title}: {st.status === 'done' ? `tamamlandı · ${st.ok}/${st.n} (%${Math.round(100 * st.ok / st.n)})` : st.status === 'wait' ? `${st.days} gün sonra açılır` : 'önce biraz daha ders gerekiyor'}</p>
+        ))}
+      </details>
 
       {placement && <div className="row"><button className="btn ghost" onClick={onWordList}>Kelime listesi (PDF)</button><button className="btn ghost" onClick={onReport}>Veli raporu</button></div>}
 
-      <AccountCard account={account} />
-
-      <button className="linkbtn" onClick={() => { if (confirm('Tüm ilerleme bu cihazdan silinsin mi?')) dispatch({ type: 'reset' }) }}>Verileri sıfırla</button>
+      <details className="card unitpick">
+        <summary><b>Hesabım</b> <span className="muted small">· takma ad, kayıt, sıfırlama</span></summary>
+        {placement && (state.profile?.nick || Object.keys(state.doneDays).length === 0) && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
+        <AccountCard account={account} />
+        <button className="linkbtn" onClick={() => { if (confirm('Tüm ilerleme bu cihazdan silinsin mi?')) dispatch({ type: 'reset' }) }}>Verileri sıfırla</button>
+      </details>
     </div>
   )
 }
