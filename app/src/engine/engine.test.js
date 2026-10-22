@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import {
   DAY, createProgress, recordAnswer, setLevel, statusOf, getItem, counts,
-  dueItems, nextDueAt, buildQuestionIndex, pickQuestion, shuffleOptions, isCorrect, mulberry32,
+  dueItems, dueCountBy, nextDueAt, buildQuestionIndex, pickQuestion, shuffleOptions, isCorrect, mulberry32,
   scorePlacement, applyUnitCheck, planLesson,
 } from './index.js'
 
@@ -191,4 +191,12 @@ test('hafif mod: tekrar sorusu indekste "review" rolüyle; ders planında ilk ad
   let p = ans(createProgress(), 'L', 'k', true, 'lesson', T0)
   p = ans(p, 'L', 's', true, 'lesson', T0)
   assert.equal(pickQuestion(idx, 'L', p).id, 't')
+})
+
+test('dueCountBy: verilen zamana kadar vadesi gelenleri sayar', () => {
+  let p = ans(createProgress(), 'A', 'q', true, 'lesson', T0)
+  p = ans(p, 'B', 'q', true, 'lesson', T0 + 3 * DAY)
+  assert.equal(dueCountBy(p, T0 + DAY), 1)
+  assert.equal(dueCountBy(p, T0 + 5 * DAY), 2)
+  assert.equal(dueCountBy(createProgress(), T0), 0)
 })

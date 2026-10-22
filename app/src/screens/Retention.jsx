@@ -37,12 +37,12 @@ export default function Retention({ section, unit, items, dispatch, onExit }) {
           <div className="spread"><button className="btn ghost sm" onClick={onExit}>← Geri</button><span className="muted">{i + 1} / {n}</span></div>
           <div className="bar" aria-hidden="true"><i style={{ width: `${(i / n) * 100}%` }} /></div>
           {i === 0 && <Coach text={INVITE[section.id]} />}
-          <Question key={entry.q.id} q={shuffled} mode="test" last={last} items={items} speak={speak}
+          <Question key={entry.q.id} q={shuffled} mode="test" allowUnknown last={last} items={items} speak={speak}
             onAnswer={picked => { onAnswer(picked); onNext() }} />
         </div>
       )}
       onResult={(entry, correct, picked, shuffled) => {
-        dispatch({ type: 'answer', payload: { itemId: entry.itemId, qid: entry.q.id, correct, kind: 'retention', chosen: correct ? null : shuffled.options[picked], now: Date.now() } })
+        dispatch({ type: 'answer', payload: { itemId: entry.itemId, qid: entry.q.id, correct, kind: 'retention', chosen: correct ? null : (shuffled.options[picked] ?? '(bilmiyorum)'), now: Date.now() } })
         if (correct) setOk(v => v + 1)
         return null
       }}

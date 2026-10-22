@@ -1,4 +1,4 @@
-import { counts, dueCount, canStartLesson, retentionState } from '../engine'
+import { counts, dueCount, newItemsToday, overSoftCap, NEW_ITEMS_SOFT_CAP, retentionState } from '../engine'
 import Coach from '../components/Coach.jsx'
 import Logo from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
@@ -16,7 +16,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const nextDay = unit.days.find(d => !state.doneDays[doneKey(d)])
   const due = dueCount(progress, now)
   // Giriş kontrolü: veri yalnız bazı ünitelerde var; ünite başlamadan ve bir kez sunulur.
-  const canLesson = canStartLesson(state.doneDays, now)
+  const newToday = newItemsToday(state.doneDays, now)
+  const capped = overSoftCap(state.doneDays, now)
   const retentions = index.retention.unit === unit.unit
     ? index.retention.sections.map(sec => ({ sec, st: retentionState({ section: sec, unit: unit.unit, doneDays: state.doneDays, retentions: state.retentions, progress, now }) }))
     : []
@@ -52,18 +53,13 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
             <button className="btn ghost" onClick={() => dispatch({ type: 'skipUnitCheck', unit: unit.unit, now: Date.now() })}>Şimdilik atla</button>
           </div>
         </section>
-      ) : nextDay && !canLesson ? (
-        <section className="card today">
-          <div className="eyebrow">Bugünün dersi</div>
-          <h2>Bugünkü dersi tamamladın ✓</h2>
-          <p className="muted">Gün {nextDay.day} yarın açılır. Günler arası bekleme, kelimelerin kalıcı olması için.</p>
-        </section>
       ) : nextDay ? (
         <section className="card today">
-          <div className="eyebrow">Bugünün dersi · Gün {nextDay.day}</div>
+          <div className="eyebrow">{doneN ? 'Sıradaki ders' : 'İlk ders'} · Gün {nextDay.day}</div>
           <h2>{nextDay.title}</h2>
           <p className="muted">{nextDay.est_minutes} dk · {nextDay.new_items.length} yeni ifade{due ? ` · ${due} tekrar bekliyor` : ''}</p>
-          <button className="btn" onClick={() => onLesson(nextDay.day)}>Derse başla →</button>
+          {capped && <p className="softnote">Bugün {newToday} yeni ifade öğrendin, harika! Dinlenmiş kafayla yarınki tekrar öğrendiklerini kalıcı yapar; yine de istersen devam edebilirsin.</p>}
+          <button className="btn" onClick={() => onLesson(nextDay.day)}>{capped ? 'Yine de bir ders daha →' : 'Derse başla →'}</button>
         </section>
       ) : (
         <section className="card today"><h2>Bu ünitenin dersleri bitti 🎉</h2></section>

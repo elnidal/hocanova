@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { planLesson, pickQuestion, statusOf } from '../engine'
+import { planLesson, pickQuestion, statusOf, dueCountBy, endOfTomorrow } from '../engine'
 import { speak } from '../tts.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
@@ -12,7 +12,7 @@ const STAGE_LABEL = { card: 'Kart', sezdir: 'Sezdir', kullan: 'Kullan', sina: 'S
 const PHASES_STORY = ['story', 'scene', 'steps', 'review', 'tips']
 const PHASES_LIGHT = ['steps', 'review', 'tips'] // hafif mod: hikâye ve sahne yok
 
-export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext, hasNextDay }) {
+export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext, softCapped }) {
   const light = day.mode === 'light'
   const PHASES = light ? PHASES_LIGHT : PHASES_STORY
   const STAGE = light ? ['card', 'kullan', 'sina'] : ['sezdir', 'kullan', 'sina']
@@ -20,17 +20,31 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   const newSet = useMemo(() => new Set(day.new_items), [day])
   const [phase, setPhase] = useState(light ? 'steps' : 'story')
   const [stats, setStats] = useState({ first: 0, total: 0, wrong: [] })
-  const stepList = useMemo(() => plan.steps.flatMap(s => s.parts.map(k => {
-    const step = day.steps.find(x => x.item === s.item)
-    return k === 'card' ? { itemId: s.item, role: 'card', card: step.card } : { itemId: s.item, role: k, q: step[k] }
-  })), [plan, day])
+  // Hap bilgi: ilgili ifadenin son sorusundan hemen sonra gösterilir; bugünün ifadelerine bağlı olmayanlar raporda çıkar.
+  const { stepList, leftoverTips } = useMemo(() => {
+    const flat = plan.steps.flatMap(s => s.parts.map(k => {
+      const step = day.steps.find(x => x.item === s.item)
+      return k === 'card' ? { itemId: s.item, role: 'card', card: step.card } : { itemId: s.item, role: k, q: step[k] }
+    }))
+    const lastIdx = {}
+    flat.forEach((e, i) => { lastIdx[e.itemId] = i })
+    const placed = [], leftover = []
+    ;(day.tips || []).forEach(t => {
+      const idxs = (t.refs || []).filter(r => r in lastIdx).map(r => lastIdx[r])
+      if (idxs.length) placed.push({ at: Math.max(...idxs), tip: t }); else leftover.push(t)
+    })
+    placed.sort((a, b) => b.at - a.at) // sondan başa ekle ki indeksler kaymasın
+    const out = [...flat]
+    placed.forEach(p => out.splice(p.at + 1, 0, { itemId: null, role: 'tip', tip: p.tip }))
+    return { stepList: out, leftoverTips: leftover }
+  }, [plan, day])
   const reviewList = useMemo(() => [
     ...plan.review.map(q => ({ itemId: q.item, role: 'review', q })),
     ...plan.extraReview.map(id => ({ itemId: id, role: 'review', q: pickQuestion(qIndex, id, state.progress) })).filter(e => e.q),
   ], [plan, qIndex, state.progress])
 
   const finish = () => {
-    dispatch({ type: 'dayDone', key: `u${day.unit}d${day.day}`, first: stats.first, total: stats.total, now: Date.now() })
+    dispatch({ type: 'dayDone', key: `u${day.unit}d${day.day}`, first: stats.first, total: stats.total, n: day.new_items.length, now: Date.now() })
     setPhase('tips')
   }
 
@@ -80,6 +94,12 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   if (phase === 'steps') return (
     <Run key="steps" list={stepList} canRetry
       render={(entry, shuffled, last, onAnswer, onNext, i) => {
+        if (entry.role === 'tip') return (
+          <div className="wrap">
+            {head(light ? 'Kullan · Sına' : 'Bugünün ifadeleri', 'Hap bilgi')}
+            <TipView tip={entry.tip} last={last} onNext={onNext} />
+          </div>
+        )
         const it = items[entry.itemId]
         if (entry.role === 'card') return (
           <div className="wrap">
@@ -125,17 +145,42 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
 
   const weak = stats.wrong.map(id => items[id]?.display).filter(Boolean)
   const msg = weak.length ? day.coach.end_mixed.replace('{weak}', weak.slice(0, 3).join(', ')) : day.coach.end_good
+  const tomorrow = dueCountBy(state.progress, endOfTomorrow(Date.now()))
   return (
     <div className="wrap">
-      {head('Hap bilgiler', 'Gün bitti')}
-      {day.tips.map((t, i) => <aside className="card tip" key={i}><div className="eyebrow">{TIP[t.type] || t.type}</div><p>{t.text}</p></aside>)}
+      {head('Bugünün raporu', 'Gün bitti')}
+      <section className="card report">
+        <div className="eyebrow">Bugün öğrendiklerin</div>
+        <ul>
+          {day.new_items.map(id => (
+            <li key={id}>
+              <span><b>{items[id]?.display}</b> <span className="muted">{items[id]?.meaning_tr}</span></span>
+              <span className={stats.wrong.includes(id) ? 'hot' : ''}>{stats.wrong.includes(id) ? 'biraz karıştı' : '✓'}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="stats">
+          <div className="stat"><b>{stats.first}/{stats.total}</b><span>ilk denemede doğru</span></div>
+          <div className="stat"><b>{tomorrow}</b><span>yarına kadar tekrar</span></div>
+        </div>
+      </section>
+      {leftoverTips.map((t, i) => <TipView key={i} tip={t} />)}
       <Coach text={msg} />
-      <p className="muted">{stats.first}/{stats.total} soruyu ilk denemede bildin.</p>
+      {softCapped && <p className="softnote">Bugün çok yeni ifade öğrendin! Beyin dinlenirken öğrendiklerini pekiştirir; yarınki tekrar çok işe yarayacak. İstersen yine de devam edebilirsin.</p>}
       <div className="row">
         <button className="btn ghost" onClick={onExit}>← Ana ekran</button>
-        {onNext && <button className="btn" onClick={onNext}>Gün {day.day + 1} →</button>}
+        {onNext && <button className="btn" onClick={onNext}>{softCapped ? 'Yine de devam et →' : 'Bir tane daha →'}</button>}
       </div>
-      {!onNext && hasNextDay && <p className="muted">Bugünlük bu kadar ✓ Aralıklı tekrar günler arasında işe yarar: Gün {day.day + 1} yarın seni bekliyor.</p>}
     </div>
+  )
+}
+
+function TipView({ tip, last, onNext }) {
+  return (
+    <aside className="card tipcard">
+      <div className="eyebrow">Hap bilgi · {TIP[tip.type] || tip.type}</div>
+      <p>{tip.text}</p>
+      {onNext && <div className="nav"><button className="btn" onClick={onNext}>{last ? 'Bitir' : 'Devam'} →</button></div>}
+    </aside>
   )
 }

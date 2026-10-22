@@ -1,7 +1,6 @@
 // Günlük ders sınırı ve kalıcılık kontrolü açılma kuralları. Saf fonksiyonlar.
 import { DAY } from './progress.js'
 
-export const LESSONS_PER_DAY = 1
 // Ünitenin ilk dersi bittikten kaç takvim günü sonra açılır (Gün 8 → +7, Gün 15 → +14).
 export const RETENTION_AFTER_DAYS = { day08: 7, day15: 14 }
 
@@ -9,9 +8,12 @@ const startOfDay = ts => { const d = new Date(ts); return new Date(d.getFullYear
 export const dayKey = ts => { const d = new Date(ts); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}` }
 export const calendarDaysBetween = (a, b) => Math.round((startOfDay(b) - startOfDay(a)) / DAY)
 
-export const lessonsToday = (doneDays, now) => Object.values(doneDays || {}).filter(d => dayKey(d.at) === dayKey(now)).length
-export const canStartLesson = (doneDays, now, limit = LESSONS_PER_DAY) => lessonsToday(doneDays, now) < limit
-export const nextLessonOpensAt = now => startOfDay(now) + DAY
+// Günlük kilit yok: öğrenci istediği kadar devam eder. Çok yeni ifade öğrenilirse yalnız yumuşak bir uyarı gösterilir.
+export const NEW_ITEMS_SOFT_CAP = 15
+/** Bugün bitirilen derslerin yeni ifade sayısı (eski kayıtlarda n yoksa 5 sayılır). */
+export const newItemsToday = (doneDays, now) =>
+  Object.values(doneDays || {}).filter(d => dayKey(d.at) === dayKey(now)).reduce((sum, d) => sum + (d.n ?? 5), 0)
+export const overSoftCap = (doneDays, now, cap = NEW_ITEMS_SOFT_CAP) => newItemsToday(doneDays, now) >= cap
 
 /**
  * Kalıcılık kontrolünün durumu:
@@ -29,3 +31,6 @@ export function retentionState({ section, unit, doneDays, retentions, progress, 
   if (unseen) return { status: 'need-lessons', unseen }
   return { status: 'ready' }
 }
+
+/** Yarın gece yarısına kadar (yarın dahil) vadesi gelmiş tekrarları saymak için zaman damgası. */
+export const endOfTomorrow = now => startOfDay(now) + 2 * DAY - 1

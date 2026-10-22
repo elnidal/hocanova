@@ -75,3 +75,11 @@ button.tk{cursor:pointer}
 .cardview h2{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .cardview .meaning{font-size:1.15rem;font-weight:800;color:var(--brand)}
 .cardview .example{background:var(--bg);border-radius:12px;padding:10px 14px}.cardview .example p{margin:.2em 0}
+.hint{margin:-4px 0 0;color:var(--muted);font-size:.92rem;font-weight:700}
+.hintbtn{align-self:flex-start;border:1px dashed var(--line);background:transparent;border-radius:999px;padding:2px 12px;font-size:.78rem;font-weight:800;color:var(--muted)}
+.opt.unknown{border-style:dashed;color:var(--muted);font-weight:600}
+.report li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}.report li:last-child{border-bottom:0}
+.report ul{list-style:none;margin:0;padding:0}
+.softnote{background:color-mix(in srgb,var(--amber) 15%,transparent);border-radius:12px;padding:10px 12px;font-size:.92rem}
+.tipcard{border-left:4px solid var(--brand)}
+.review-wrong summary{cursor:pointer}.rw{border-top:1px solid var(--line);padding:10px 0;margin-top:10px}.rw p{margin:.2em 0}.small.ok{color:var(--mint)}

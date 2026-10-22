@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { loadIndex, loadUnit, loadAllUnits } from './content.js'
-import { buildQuestionIndex, canStartLesson } from './engine'
+import { buildQuestionIndex, overSoftCap } from './engine'
+import { HintCtx } from './hintContext.js'
 import { useStore } from './store.js'
 import Home from './screens/Home.jsx'
 import Placement from './screens/Placement.jsx'
@@ -19,6 +20,9 @@ export default function App() {
 
   useEffect(() => { loadIndex().then(setIndex).catch(setError) }, [])
   useEffect(() => { loadUnit(state.unit).then(setUnit).catch(setError) }, [state.unit])
+
+  const hintValue = { seen: state.hintSeen || {}, bump: key => dispatch({ type: 'hint', key }) }
+  const wrap = el => <HintCtx.Provider value={hintValue}>{el}</HintCtx.Provider>
 
   if (error) return <div className="wrap">İçerik yüklenemedi. <button className="btn" onClick={() => location.reload()}>Yeniden dene</button></div>
   if (!index || !unit) return <div className="wrap muted">Yükleniyor…</div>
@@ -42,17 +46,17 @@ export default function App() {
   if (screen.name === 'lesson') {
     const day = unit.days.find(d => d.day === screen.day)
     const hasNext = unit.days.some(d => d.day === screen.day + 1)
-    const canNext = hasNext && canStartLesson(state.doneDays, Date.now())
-    return <Lesson key={day.day} day={day} items={lessonCtx.items} qIndex={lessonCtx.qIndex} state={state} dispatch={dispatch}
-      onExit={() => setScreen('home')} hasNextDay={hasNext} onNext={canNext ? () => startLesson(screen.day + 1) : null} />
+    return wrap(<Lesson key={day.day} day={day} items={lessonCtx.items} qIndex={lessonCtx.qIndex} state={state} dispatch={dispatch}
+      softCapped={overSoftCap(state.doneDays, Date.now())}
+      onExit={() => setScreen('home')} onNext={hasNext ? () => startLesson(screen.day + 1) : null} />)
   }
-  if (screen.name === 'unitcheck') return <UnitCheck def={index.unit_check} unit={unit} items={lessonCtx.items} qIndex={lessonCtx.qIndex} state={state} dispatch={dispatch} onExit={() => setScreen('home')} />
-  if (screen.name === 'retention') return <Retention section={index.retention.sections.find(x => x.id === screen.id)} unit={unit.unit} items={lessonCtx.items} dispatch={dispatch} onExit={() => setScreen('home')} />
-  if (screen.name === 'review') return <Review state={state} dispatch={dispatch} qIndex={lessonCtx.qIndex} items={lessonCtx.items} onExit={() => setScreen('home')} />
-  if (screen === 'placement') return (
+  if (screen.name === 'unitcheck') return wrap(<UnitCheck def={index.unit_check} unit={unit} items={lessonCtx.items} qIndex={lessonCtx.qIndex} state={state} dispatch={dispatch} onExit={() => setScreen('home')} />)
+  if (screen.name === 'retention') return wrap(<Retention section={index.retention.sections.find(x => x.id === screen.id)} unit={unit.unit} items={lessonCtx.items} dispatch={dispatch} onExit={() => setScreen('home')} />)
+  if (screen.name === 'review') return wrap(<Review state={state} dispatch={dispatch} qIndex={lessonCtx.qIndex} items={lessonCtx.items} onExit={() => setScreen('home')} />)
+  if (screen === 'placement') return wrap(
     <Placement def={index.placement} coach={index.coach}
       onFinish={result => dispatch({ type: 'placement', result, now: Date.now() })}
       onExit={() => setScreen('home')} />
   )
-  return <Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} account={account} />
+  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} account={account} />)
 }

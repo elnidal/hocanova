@@ -21,3 +21,7 @@ export function nextDueAt(p, now) {
 
 export const daysUntil = (ts, now) => Math.ceil((ts - now) / DAY)
 export const lastSeenAt = (p, id) => getItem(p, id).lastAt
+
+export function dueCountBy(p, ts) {
+  return Object.values(p.items).filter(it => it.due != null && it.due <= ts && (it.status !== 'new' || it.wrong > 0)).length
+}

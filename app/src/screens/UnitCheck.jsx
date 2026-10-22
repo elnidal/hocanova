@@ -69,7 +69,7 @@ export default function UnitCheck({ def, unit, items, qIndex, state, dispatch, o
       <div className="wrap">
         <div className="spread"><span className="chip">{items[cur.id].display}</span><span className="muted">{i + 1} / {list.length}</span></div>
         <Coach text={strict ? 'Bazı uydurma kelimelere de "evet" dedin 🙂 O yüzden "evet" dediklerinin hepsini kısaca kontrol ediyorum.' : '"Evet" dediklerini birer LGS sorusuyla kontrol ediyorum.'} />
-        <Question key={cur.id} q={cur.q} items={items} last={i + 1 === list.length} onAnswer={picked => next(isCorrect(cur.q, picked))} />
+        <Question key={cur.id} q={cur.q} allowUnknown items={items} last={i + 1 === list.length} onAnswer={picked => next(isCorrect(cur.q, picked))} />
       </div>
     )
   }

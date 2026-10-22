@@ -1,22 +1,28 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { DAY, createProgress, recordAnswer, dayKey, lessonsToday, canStartLesson, nextLessonOpensAt, calendarDaysBetween, retentionState } from './index.js'
+import { DAY, createProgress, recordAnswer, dayKey, newItemsToday, overSoftCap, NEW_ITEMS_SOFT_CAP, calendarDaysBetween, retentionState } from './index.js'
 
 const at = (y, m, d, h = 12) => new Date(y, m - 1, d, h).getTime()
 
-test('aynı takvim günü ikinci ders engellenir, ertesi gün açılır', () => {
-  const done = { u1d1: { at: at(2026, 10, 19, 9) } }
-  assert.equal(lessonsToday(done, at(2026, 10, 19, 23)), 1)
-  assert.equal(canStartLesson(done, at(2026, 10, 19, 23)), false)
-  assert.equal(canStartLesson(done, at(2026, 10, 20, 0)), true)
-  assert.equal(canStartLesson({}, at(2026, 10, 19)), true)
+test('yumuşak sınır: bugünkü yeni ifadeler toplanır, 15 ve üstünde uyarı çıkar, ertesi gün sıfırlanır', () => {
+  const done = { u1d1: { at: at(2026, 10, 19, 9), n: 6 }, u1d2: { at: at(2026, 10, 19, 11), n: 5 }, u7d1: { at: at(2026, 10, 18, 22), n: 9 } }
+  assert.equal(newItemsToday(done, at(2026, 10, 19, 23)), 11)
+  assert.equal(overSoftCap(done, at(2026, 10, 19, 23)), false)
+  const more = { ...done, u1d3: { at: at(2026, 10, 19, 13), n: 4 } }
+  assert.equal(overSoftCap(more, at(2026, 10, 19, 23)), true)
+  assert.equal(NEW_ITEMS_SOFT_CAP, 15)
+  assert.equal(overSoftCap(more, at(2026, 10, 20, 0)), false)
 })
 
-test('gece yarısı sınırı yerel saate göredir; nextLessonOpensAt ertesi gün 00:00', () => {
-  const now = at(2026, 10, 19, 23)
-  assert.equal(dayKey(nextLessonOpensAt(now)), dayKey(at(2026, 10, 20)))
-  assert.equal(new Date(nextLessonOpensAt(now)).getHours(), 0)
+test('eski kayıtlarda n yoksa ders başına 5 yeni ifade sayılır; kilit yoktur', () => {
+  const done = { u1d1: { at: at(2026, 10, 19, 9) }, u1d2: { at: at(2026, 10, 19, 10) } }
+  assert.equal(newItemsToday(done, at(2026, 10, 19, 12)), 10)
+  assert.equal(newItemsToday({}, at(2026, 10, 19)), 0)
+})
+
+test('takvim günü farkı yerel geceyarısına göredir', () => {
   assert.equal(calendarDaysBetween(at(2026, 10, 19, 23), at(2026, 10, 20, 1)), 1)
+  assert.equal(dayKey(at(2026, 10, 19, 23)), dayKey(at(2026, 10, 19, 1)))
 })
 
 const section = { id: 'day08', questions: [{ item: 'A' }, { item: 'B' }] }
