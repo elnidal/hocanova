@@ -254,7 +254,7 @@ review:
 tips:
   - type: lgs_taktigi
     refs: [U1-021, U1-019]
-    text: "Boşluktan sonra bir ENGEL geliyorsa (\"I have to…\", \"I'm busy…\") cevap bir red; olumlu bir plan geliyorsa (\"I'll bring…\") kabul."
+    text: "Boşluktan SONRAKİ cümleye bak. Orada gelememe sebebi varsa (\"I have to study.\", \"I'm busy.\") boşluk bir REDDİR: \"Sorry, I can't.\" Orada hazırlık ya da plan varsa (\"I'll bring my ball.\", \"What time?\") boşluk bir KABULDÜR: \"Sounds great!\""
   - type: ilginc_bilgi
     refs: [U1-002]
     text: "İngiliz İngilizcesinde \"apologise\" (apologize de olur), Amerikan İngilizcesinde \"apologize\" yazılır. İkisi de doğru; LGS'de ikisini de görebilirsin."

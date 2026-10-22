@@ -685,7 +685,7 @@ Which of the following CANNOT be inferred from the text?
 ## 12. Hap bilgiler
 
 - **mini_dilbilgisi**: Would you like TO + fiil (Would you like to come?) · How about + -ing ya da isim (How about coming? / How about pizza?). İkisini karıştırmamak diyalog sorularında bir puandır.
-- **lgs_taktigi**: Boşluktan sonra bir ENGEL geliyorsa (I have to…, I'm busy…) cevap reddir; olumlu bir plan ya da soru geliyorsa (What time?, I'll bring…) kabuldür.
+- **lgs_taktigi**: Boşluktan SONRAKİ cümleye bak. Orada gelememe sebebi varsa (I have to study., I'm busy.) boşluk bir REDDİR: Sorry, I can't. Orada hazırlık ya da plan varsa (I'll bring my ball., What time?) boşluk bir KABULDÜR: Sounds great!
 - **tuzak**: "I'd love to" kabul gibi başlar ama ardından "but" geliyorsa nazik bir reddir. Cevabın sonunu okumadan şık işaretleme.
 - **tuzak**: "Why not?" soru işaretine rağmen kabuldür: "Neden olmasın, olur!". "Are you busy?" sorusuna "No, not at all." ise "hiç değilim, müsaitim" demektir.
 - **hafiza_kancasi**: reliable = rely (güvenmek) + able (-ebilir) = güvenilebilir. un- eklersen tersi - unreliable.
