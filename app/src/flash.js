@@ -3,7 +3,7 @@
 const plain = (text, items) =>
   String(text ?? '').replace(/\{(U\d+-\d+)(?:\|([^}]*))?\}/g, (_, id, t) => t || items?.[id]?.display || id).replace(/<[^>]+>/g, '')
 
-const clean = t => String(t ?? '').replace(/\s*\n\s*/g, ' / ').trim()
+const clean = t => String(t ?? '').replace(/\s*\n\s*/g, '\n').trim() // diyalog satırları korunur
 
 // "vacation / holiday", "Would you like to …?", "sightseeing (go sightseeing / sightseeing tour)" → aranacak biçimler (önce ana biçim, sonra parantez içindekiler)
 const variants = display => {

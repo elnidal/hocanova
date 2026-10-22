@@ -3,12 +3,13 @@ import Coach from '../components/Coach.jsx'
 import Logo from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
 import { coachMessage, streakOf } from '../goal.js'
+import { openMistakeCount } from '../mistakes.js'
 import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, account }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -26,6 +27,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const checkAvail = placement && index.unit_check.unit === unit.unit && !state.unitChecks?.[unit.unit] && doneN === 0
   const levelText = placement ? index.coach.placement_result[placement.level].replace(' {name}', '') : ''
   const streak = streakOf(state.daily, now)
+  const mistakesOpen = openMistakeCount(progress)
   const readyChecks = retentions.filter(r => r.st.status === 'ready')
   const waitChecks = retentions.filter(r => r.st.status !== 'ready' && r.st.status !== 'not-started')
   const coachText = placement
@@ -117,6 +119,13 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         <section className="card slim">
           <div><b>Hızlı kart</b><div className="muted small">2 dakikalık kart turu · öğrendiklerin ve zorlandıkların</div></div>
           <button className="btn sm" onClick={() => onFlash()}>Kartlar →</button>
+        </section>
+      )}
+
+      {placement && mistakesOpen > 0 && (
+        <section className="card slim">
+          <div><b>Yanlış defterim</b><div className="muted small">{mistakesOpen} soru: doğrusu ve nedeni</div></div>
+          <button className="btn sm ghost" onClick={onMistakes}>Aç →</button>
         </section>
       )}
 

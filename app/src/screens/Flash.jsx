@@ -6,7 +6,7 @@ import Splash from '../components/Splash.jsx'
 import Coach from '../components/Coach.jsx'
 
 const DECKS = { hard: 'Zorlandıklarım', learned: 'Öğrendiklerim' }
-const RATE = [['dont', 'Bilmiyorum'], ['unsure', 'Emin değilim'], ['know', 'Bildim']]
+const RATE = [['dont', 'Bilmiyorum', '✗'], ['unsure', 'Emin değilim', '~'], ['know', 'Bildim', '✓']]
 
 // Hızlı kart: cümlede işaretli ifade → anlamını hatırla → çevir → kendini değerlendir. Durumu soru çözerek kazanırsın; kart yalnız sırayı etkiler.
 export default function Flash({ index, state, dispatch, startDeck, onExit }) {
@@ -67,22 +67,26 @@ export default function Flash({ index, state, dispatch, startDeck, onExit }) {
     <div className="wrap">
       <div className="spread"><button className="btn ghost sm" onClick={onExit}>← Çık</button><span className="chip">{DECKS[deck]} · {i + 1}/{list.length}</span></div>
       <div className="bar" aria-hidden="true"><i style={{ width: `${(i / list.length) * 100}%` }} /></div>
-      <section className="card flashcard" onClick={() => !open && setOpen(true)}>
-        {ex?.parts[1]
-          ? <p className="en-line big-line" lang="en">{ex.parts[0]}<mark>{ex.parts[1]}</mark>{ex.parts[2]}</p>
-          : <p className="en-line big-line" lang="en"><mark>{it.display}</mark></p>}
+      <section className={`card flashcard${open ? ' open' : ''}`} onClick={() => !open && setOpen(true)}>
+        <div className="eyebrow">İşaretli ifade ne demek?</div>
+        <p className="fc-sentence" lang="en">
+          {ex?.parts[1] ? <>{ex.parts[0]}<mark>{ex.parts[1]}</mark>{ex.parts[2]}</> : <mark>{it.display}</mark>}
+        </p>
         {!open
-          ? <p className="muted small">İşaretli ifadenin anlamı ne? Aklından söyle, sonra kartı çevir.</p>
-          : <>
-              <h2 lang="en">{it.display} <button className="say" aria-label="Dinle" onClick={e => { e.stopPropagation(); speak(it.display.split('(')[0]) }}>🔊</button></h2>
-              <p className="meaning">{it.meaning_tr}</p>
-              {ex?.tr && <p className="muted">{ex.tr}</p>}
+          ? <p className="muted small fc-hint">Aklından söyle, sonra kartı çevir 👆</p>
+          : <div className="fc-back">
+              <div className="spread">
+                <b className="fc-word" lang="en">{it.display}</b>
+                <button className="say" aria-label="Dinle" onClick={e => { e.stopPropagation(); speak(it.display.split('(')[0]) }}>🔊</button>
+              </div>
+              <p className="fc-meaning">{it.meaning_tr}</p>
+              {ex?.tr && <p className="muted small">{ex.tr}</p>}
               {it.trap_note && <div className="explain">💡 {it.trap_note}</div>}
-            </>}
+            </div>}
       </section>
       {!open
         ? <button className="btn" onClick={() => setOpen(true)}>Kartı çevir</button>
-        : <div className="rate">{RATE.map(([k, label]) => <button key={k} className={`btn ${k === 'know' ? '' : 'ghost'}`} onClick={() => rate(k)}>{label}</button>)}</div>}
+        : <div className="rate">{RATE.map(([k, label, icon]) => <button key={k} className={`rate-${k}`} onClick={() => rate(k)}><span aria-hidden="true">{icon}</span>{label}</button>)}</div>}
     </div>
   )
 }

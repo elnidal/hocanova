@@ -64,7 +64,9 @@ export function recordAnswer(p, { itemId, qid, correct, kind = 'lesson', chosen 
     if (it.status === 'known') it.status = 'unc'
     it.due = now + intervalDays(p, 0) * DAY
   }
-  const log = [...p.log, { t: now, id: itemId, qid: qid ?? null, ok: !!correct, kind }].slice(-LOG_CAP)
+  const entry = { t: now, id: itemId, qid: qid ?? null, ok: !!correct, kind }
+  if (!correct && chosen != null) entry.ch = chosen // yanlış defteri için seçilen şık
+  const log = [...p.log, entry].slice(-LOG_CAP)
   return { ...p, items: { ...p.items, [itemId]: it }, log }
 }
 
