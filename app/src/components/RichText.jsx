@@ -13,7 +13,8 @@ function Words({ text, items, newSet, speak, onWord, left }) {
     const m = /^\{(U\d+-\d+)(?:\|([^}]*))?\}$/.exec(p)
     if (!m) return p
     const [, id, shown] = m
-    const label = shown || items?.[id]?.display || id
+    const raw = shown || items?.[id]?.display || id
+    const label = raw.length > 1 && raw === raw.toUpperCase() && /[A-Z]/.test(raw) ? raw.toLowerCase() : raw // yazar tercihi BÜYÜK harf: küçüğe çevrilir
     const cls = `tk${newSet?.has(id) ? ' new' : ''}`
     const g = left?.[id]
     if (g) delete left[id] // açıklama yalnız ilk geçişte

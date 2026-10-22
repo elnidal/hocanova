@@ -45,7 +45,7 @@ p{margin:0}button{font:inherit;color:inherit;cursor:pointer}
 .hot{color:var(--hot)}.grow{flex:1 1 100%}
 .btn.sm{min-height:36px;padding:6px 12px;font-size:.85rem}
 .story p+p{margin-top:0}.story{gap:14px}
-.tk{font:inherit;font-weight:800;border:0;background:none;padding:0;border-bottom:2px solid var(--line);color:inherit}
+.tk{font:inherit;font-weight:700;border:0;background:none;padding:0;border-bottom:1.5px dotted var(--muted);color:inherit}
 .tk.new{color:var(--hot);border-bottom-color:var(--hot);background:color-mix(in srgb,var(--hot) 12%,transparent);border-radius:4px;padding:0 3px}
 button.tk{cursor:pointer}
 .say{border:0;background:none;padding:0 4px;cursor:pointer;font-size:.9rem}
@@ -89,3 +89,5 @@ button.tk{cursor:pointer}
 .wordpop{position:fixed;left:12px;right:12px;bottom:12px;max-width:520px;margin:0 auto;z-index:20;flex-direction:row;align-items:center;justify-content:space-between;gap:10px;box-shadow:0 8px 30px #0004}
 .wordpop .x{border:0;background:none;font-size:1.2rem;color:var(--muted)}
 .storyline{display:flex;flex-direction:column;gap:2px}
+.quote.tr{border-left-color:var(--line);background:transparent;padding-left:12px;color:var(--ink)}
+.quote.tr::before{content:'💬 ';font-size:.8em}

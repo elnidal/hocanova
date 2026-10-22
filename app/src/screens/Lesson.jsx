@@ -1,9 +1,10 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { planLesson, pickQuestion, statusOf, dueCountBy, endOfTomorrow } from '../engine'
 import { speak } from '../tts.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
 import RichText, { markIds, plain } from '../components/RichText.jsx'
+import { shortGloss } from '../gloss.js'
 import Run from '../components/Run.jsx'
 import CardView from '../components/CardView.jsx'
 
@@ -24,6 +25,9 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   const [phase, setPhase] = useState(light ? 'steps' : cardFirst && plan.cardItems.length ? 'cards' : 'story')
   const [stats, setStats] = useState({ first: 0, total: 0, wrong: [] })
   const [pop, setPop] = useState(null) // dokunulan ifadenin anlam kutusu
+  const CHUNK = 4 // hikâye 4'er satır açılır: ekran kalabalık olmasın
+  const [shown, setShown] = useState(CHUNK)
+  useEffect(() => { if (shown > CHUNK) document.getElementById(`line-${day.story[shown - CHUNK]?.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }, [shown]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // Hikâyeli günlerde kart: örnek cümle, hikâyenin ilk İngilizce satırından alınır.
   const autoCard = id => {
@@ -37,10 +41,9 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   // İlk geçişte kısa Türkçe karşılık (ileri seviyede yok: orada anlamı çıkarmaya çalışırlar)
   const glossByLine = useMemo(() => {
     const seen = new Set(), out = {}
-    const short = m => String(m || '').replace(/\s*\([^)]*\)/g, '').trim()
     for (const l of [...day.story, ...(day.scene || [])]) {
       const g = {}
-      for (const id of markIds(l.text)) if (newSet.has(id) && !seen.has(id)) { seen.add(id); g[id] = short(items[id]?.meaning_tr) }
+      for (const id of markIds(l.text)) if (newSet.has(id) && !seen.has(id)) { seen.add(id); g[id] = shortGloss(items[id]) }
       out[l.id] = advanced ? {} : g
     }
     return out
@@ -116,11 +119,14 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
         <p className="muted small">{advanced
           ? <>Oku. <b className="hot">Kırmızı</b> ifadeler bugün yeni: anlamını hikâyeden çıkarmaya çalış. Dokununca okunuşunu duyarsın.</>
           : <>Hikâyeyi oku. <b className="hot">Kırmızı</b> ifadeler bugün öğrendiklerin; ilk geçtikleri yerde kısa Türkçesi yazıyor, dokununca anlamını ve okunuşunu görürsün.</>}</p>
-        {day.story.map(l => <StoryLine key={l.id} text={l.text} rt={t => rt(t, glossByLine[l.id])} />)}
+        {day.story.slice(0, cardFirst || advanced ? shown : day.story.length).map(l => <div id={`line-${l.id}`} key={l.id}><StoryLine text={l.text} rt={t => rt(t, glossByLine[l.id])} /></div>)}
+        {shown < day.story.length && <p className="muted small">{shown} / {day.story.length} satır</p>}
       </section>
       <div className="row">
         {cardFirst && <button className="btn ghost" onClick={() => { setPop(null); setPhase('steps') }}>Hikâyeyi atla</button>}
-        <button className="btn" onClick={() => { setPop(null); setPhase(day.scene?.length ? 'scene' : 'steps') }}>Sonraki →</button>
+        {shown < day.story.length
+          ? <button className="btn" onClick={() => setShown(n => Math.min(n + CHUNK, day.story.length))}>Devam →</button>
+          : <button className="btn" onClick={() => { setPop(null); setPhase(day.scene?.length ? 'scene' : 'steps') }}>Sonraki →</button>}
       </div>
       {popup}
     </div>
@@ -240,11 +246,13 @@ function TipView({ tip, last, onNext }) {
 // Anlatım cümlesi (kim, ne yapıyor) ile İngilizce replik ayrı satırlarda: replik balonu üstündeki anlatımla okunur.
 function StoryLine({ text, rt }) {
   const clean = x => x.replace(/^[\s"“”]+|[\s"“”]+$/g, '')
-  return (
-    <div className="storyline">
-      {text.split(/(<en>[\s\S]*?<\/en>)/g).map((p, i) => p.startsWith('<en>')
-        ? <div className="quote" key={i}>{rt(p)}</div>
-        : clean(p) ? <p className="nar" key={i}>{rt(clean(p))}</p> : null)}
-    </div>
-  )
+  const SPEECH = /^(.*?[:：])\s*[“"](.+?)[”"]?\s*$/s // "Kim dedi: \"konuşma\"" → anlatım + balon
+  const out = []
+  text.split(/(<en>[\s\S]*?<\/en>)/g).forEach((p, i) => {
+    if (p.startsWith('<en>')) return out.push(<div className="quote" key={i}>{rt(p)}</div>)
+    const m = SPEECH.exec(p.trim())
+    if (m) { out.push(<p className="nar" key={`${i}n`}>{rt(m[1])}</p>); return out.push(<div className="quote tr" key={`${i}s`}>{rt(m[2])}</div>) }
+    if (clean(p)) out.push(<p className="nar" key={i}>{rt(clean(p))}</p>)
+  })
+  return <div className="storyline">{out}</div>
 }
