@@ -10,7 +10,7 @@ import ProfileCard from '../components/ProfileCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, onExam, onQuiz, account }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, onExam, onQuiz, onTour, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -36,7 +36,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const waitChecks = retentions.filter(r => r.st.status !== 'ready' && r.st.status !== 'not-started')
   const coachText = placement
     ? coachMessage({ daily: state.daily, goal: state.goal, due, now, fallback: levelText })
-    : 'Selam! Ben Hoca Nova, koçunum. Önce 4 dakikalık kısa bir testle seni tanıyayım; sonra Ece\'nin partisine gidiyoruz 🎈'
+    : 'Hazırsan 4 dakikalık kısa bir testle başlayalım; derslerini seviyene göre ayarlayacağım 🎯'
   const unitsWithDays = index.units.filter(u => u.dayCount)
 
   return (
@@ -173,6 +173,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         <summary><b>Hesabım</b> <span className="muted small">· takma ad, kayıt, sıfırlama</span></summary>
         {placement && (state.profile?.nick || Object.keys(state.doneDays).length === 0) && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
         <AccountCard account={account} />
+        <button className="linkbtn" onClick={onTour}>Tanıtım turunu tekrar izle</button>
         <button className="linkbtn" onClick={() => { if (confirm('Tüm ilerleme bu cihazdan silinsin mi?')) dispatch({ type: 'reset' }) }}>Verileri sıfırla</button>
       </details>
     </div>

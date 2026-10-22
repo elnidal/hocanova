@@ -153,3 +153,12 @@ select.field{appearance:none;background:var(--paper) url("data:image/svg+xml,%3C
 .report-body .stats{grid-template-columns:repeat(2,1fr)}
 @media (min-width:600px){.report-body .stats{grid-template-columns:repeat(4,1fr)}}
 .week{padding-top:4px}
+.onboard{min-height:calc(100vh - 80px);justify-content:center}
+.onboard-card{align-items:center;text-align:center;gap:10px;animation:fcin .25s ease-out}.onboard-card h1{margin:4px 0 0}.onboard-card p{margin:0}
+.onboard-list{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:10px;text-align:left;width:100%}
+.onboard-list li{display:flex;gap:12px;align-items:flex-start;background:var(--bg);border-radius:12px;padding:10px 12px}
+.onboard-list li > span:last-child{display:flex;flex-direction:column}.ob-icon{font-size:1.4rem;line-height:1.2}
+.dots-nav{display:flex;justify-content:center;gap:8px}.dots-nav i{width:8px;height:8px;border-radius:50%;background:var(--line)}.dots-nav i.on{background:var(--brand);width:22px;border-radius:8px}
+.onboard-nav{display:grid;grid-template-columns:auto 1fr;gap:10px}.onboard-nav .btn:only-child{grid-column:1/-1}
+.onboard-list li{padding:8px 12px}
+@media (prefers-reduced-motion:reduce){.onboard-card{animation:none}}

@@ -29,6 +29,7 @@ function apply(s, a) {
     case 'examDone': return { ...s, examDone: { ...(s.examDone || {}), [a.id]: { ok: a.ok, n: a.n, at: a.now } } }
     case 'unitQuiz': return { ...s, unitQuiz: { ...(s.unitQuiz || {}), [a.unit]: { ...(s.unitQuiz?.[a.unit] || {}), [a.phase]: a.result } } }
     case 'weekly': return { ...s, weekly: { ...(s.weekly || {}), [a.key]: a.result } }
+    case 'onboarded': return { ...s, onboarded: true }
     case 'goal': return { ...s, goal: a.goal }
     case 'dayDone': return { ...s, doneDays: { ...s.doneDays, [a.key]: { first: a.first, total: a.total, n: a.n, at: a.now } } }
     case 'retentionDone': return { ...s, retentions: { ...(s.retentions || {}), [`u${a.unit}:${a.id}`]: { ok: a.ok, n: a.n, at: a.now } } }

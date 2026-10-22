@@ -12,6 +12,7 @@ import Retention from './screens/Retention.jsx'
 import Splash from './components/Splash.jsx'
 import Mistakes from './screens/Mistakes.jsx'
 import ExamCourse from './screens/ExamCourse.jsx'
+import Onboarding from './screens/Onboarding.jsx'
 import Quiz from './screens/Quiz.jsx'
 import { preQuiz, postQuiz, weeklyQuiz, weekKey } from './quiz.js'
 import Flash from './screens/Flash.jsx'
@@ -70,6 +71,11 @@ export default function App() {
   }
   const startReview = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'review' }) }
 
+  // İlk açılış turu: yeni öğrenci (test çözülmemiş ve tur görülmemiş) ya da "Turu tekrar izle"
+  if (screen === 'tour' || (!state.onboarded && !state.placement && screen === 'home')) return (
+    <Onboarding last={state.placement ? 'Ana ekrana dön' : 'Başlangıç testine geç'}
+      onDone={() => { dispatch({ type: 'onboarded' }); setScreen(screen === 'tour' || state.placement ? 'home' : 'placement') }} />
+  )
   if (screen.name === 'loading') return <Splash text="Ders hazırlanıyor…" />
   if (screen.name === 'lesson') {
     const day = unit.days.find(d => d.day === screen.day)
@@ -97,5 +103,5 @@ export default function App() {
       onFinish={result => dispatch({ type: 'placement', result, now: Date.now() })}
       onExit={() => setScreen('home')} />
   )
-  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} onWordList={() => setScreen('wordlist')} onReport={() => setScreen('report')} onFlash={deck => setScreen({ name: 'flash', deck })} onMistakes={startMistakes} onExam={() => setScreen('exam')} onQuiz={startQuiz} account={account} />)
+  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} onWordList={() => setScreen('wordlist')} onReport={() => setScreen('report')} onFlash={deck => setScreen({ name: 'flash', deck })} onMistakes={startMistakes} onExam={() => setScreen('exam')} onQuiz={startQuiz} onTour={() => setScreen('tour')} account={account} />)
 }
