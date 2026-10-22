@@ -2,12 +2,13 @@ import { counts, dueCount, newItemsToday, overSoftCap, NEW_ITEMS_SOFT_CAP, reten
 import Coach from '../components/Coach.jsx'
 import Logo from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
+import { coachMessage, streakOf } from '../goal.js'
 import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, account }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -23,8 +24,10 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
     ? index.retention.sections.map(sec => ({ sec, st: retentionState({ section: sec, unit: unit.unit, doneDays: state.doneDays, retentions: state.retentions, progress, now }) }))
     : []
   const checkAvail = placement && index.unit_check.unit === unit.unit && !state.unitChecks?.[unit.unit] && doneN === 0
+  const levelText = placement ? index.coach.placement_result[placement.level].replace(' {name}', '') : ''
+  const streak = streakOf(state.daily, now)
   const coachText = placement
-    ? index.coach.placement_result[placement.level].replace(' {name}', '')
+    ? coachMessage({ daily: state.daily, goal: state.goal, due, now, fallback: levelText })
     : 'Selam! Ben Hoca Nova, koçunum. Önce 4 dakikalık kısa bir testle seni tanıyayım; sonra Ece\'nin partisine gidiyoruz 🎈'
   const unitsWithDays = index.units.filter(u => u.dayCount)
 
@@ -32,7 +35,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
     <div className="wrap">
       <div className="spread">
         <div><div className="eyebrow"><Logo /> · LGS</div><h1>Kelime Koçu</h1></div>
-        {placement && <span className="chip">Seviye: {LEVEL[placement.level]}</span>}
+        {placement && <span className="chip">{streak >= 2 ? `🔥 ${streak} gün · ` : ''}Seviye: {LEVEL[placement.level]}</span>}
       </div>
 
       <Coach text={coachText} />
@@ -119,7 +122,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         </div>
       </section>
 
-      {placement && <button className="btn ghost" onClick={onWordList}>Kelime listesi (PDF) →</button>}
+      {placement && <div className="row"><button className="btn ghost" onClick={onWordList}>Kelime listesi (PDF)</button><button className="btn ghost" onClick={onReport}>Veli raporu</button></div>}
 
       <AccountCard account={account} />
 

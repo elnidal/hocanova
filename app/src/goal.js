@@ -43,3 +43,45 @@ export function buildWordList(unit, firstDays = null) {
   }
   return groups
 }
+
+const DAY_MS = 864e5
+
+// Seri: üst üste çalışılan gün sayısı. Bugün henüz çalışılmadıysa dünden geriye sayılır (gün bitene kadar zincir sürer).
+export function streakOf(daily = {}, now) {
+  let n = 0
+  let t = now
+  if (!daily[dayStamp(t)]) t -= DAY_MS
+  while (daily[dayStamp(t)] > 0) { n++; t -= DAY_MS }
+  return n
+}
+
+// Son kez çalışılandan bu yana geçen gün (hiç çalışılmadıysa null; bugün çalışıldıysa 0).
+export function daysAway(daily = {}, now) {
+  const keys = Object.keys(daily).filter(k => daily[k] > 0).sort()
+  if (!keys.length) return null
+  const [y, m, d] = keys[keys.length - 1].split('-').map(Number)
+  const last = new Date(y, m - 1, d).getTime()
+  const today = new Date(dayStamp(now) + 'T00:00:00').getTime()
+  return Math.round((today - last) / DAY_MS)
+}
+
+// Ana ekrandaki Hoca Nova mesajı: duruma göre (hedef, seri, ara verme, bekleyen tekrar).
+export function coachMessage({ daily, goal, due, now, fallback }) {
+  const done = todayCount(daily, now)
+  const away = daysAway(daily, now)
+  const streak = streakOf(daily, now)
+  if (done >= goal.target) return `Bugünkü hedefi tamamladın, helal olsun! ${streak >= 2 ? `${streak} gündür aralıksız çalışıyorsun 🔥` : 'Yarın görüşürüz 👋'}`
+  if (done > 0) return `Bugün ${done} soru çözdün, güzel gidiyor. Hedefe ${goal.target - done} soru kaldı.`
+  if (away != null && away >= 2) return `${away} gündür görüşemedik, sorun değil! Bugün 5 dakikada yetişiriz.`
+  if (streak >= 2) return `${streak} gündür üst üste çalışıyorsun. Zinciri bozmayalım, bugün de azıcık yapalım 🔥`
+  if (due > 0) return `${due} ifade tekrar bekliyor. Kalıcı öğrenmenin sırrı tekrar: önce onlara bakalım.`
+  return fallback
+}
+
+// Son 7 günün günlük soru sayıları (eskiden yeniye).
+export function weekCounts(daily = {}, now) {
+  return Array.from({ length: 7 }, (_, i) => {
+    const t = now - (6 - i) * DAY_MS
+    return { stamp: dayStamp(t), n: daily[dayStamp(t)] || 0, wd: new Date(t).getDay() }
+  })
+}

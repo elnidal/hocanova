@@ -54,3 +54,9 @@ export function shuffleOptions(q, rng = Math.random) {
 }
 
 export const isCorrect = (shuffled, pickedIndex) => pickedIndex === shuffled.correctIndex
+
+/** Aynı oturumda yanlış yapılan kelime için yeniden sorarken farklı bir soru seç (aynı soruyu tekrar sorma; sezdir hariç). */
+export function alternativeQuestion(index, itemId, askedIds, { rng = Math.random } = {}) {
+  const pool = (index.get(itemId) || []).filter(q => q.role !== 'sezdir' && !askedIds.has(q.id))
+  return pool.length ? pool[Math.floor(rng() * pool.length)] : null
+}

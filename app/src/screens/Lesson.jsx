@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from 'react'
-import { planLesson, pickQuestion, statusOf, dueCountBy, endOfTomorrow } from '../engine'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { planLesson, pickQuestion, alternativeQuestion, statusOf, dueCountBy, endOfTomorrow } from '../engine'
 import { speak } from '../tts.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
@@ -23,6 +23,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   const STAGE = light ? ['card', 'kullan', 'sina'] : advanced ? ['sezdir', 'kullan', 'sina'] : ['kullan', 'sina']
   const newSet = useMemo(() => new Set(day.new_items), [day])
   const [phase, setPhase] = useState(light ? 'steps' : cardFirst && plan.cardItems.length ? 'cards' : 'story')
+  const asked = useRef(new Set()) // bu derste sorulan soru kimlikleri: yanlışta aynı soruyu tekrar sormamak için
   const [stats, setStats] = useState({ first: 0, total: 0, wrong: [] })
   const [pop, setPop] = useState(null) // dokunulan ifadenin anlam kutusu
   const CHUNK = 4 // hikâye 4'er satır açılır: ekran kalabalık olmasın
@@ -151,7 +152,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
 
   if (phase === 'steps') return (
     <Run key="steps" list={stepList} canRetry
-      render={(entry, shuffled, last, onAnswer, onNext, i) => {
+      render={(entry, shuffled, last, onAnswer, onNext, i, queue) => {
         if (entry.role === 'tip') return (
           <div className="wrap">
             {head(advanced ? 'Sezdir · Kullan · Sına' : 'Kullan · Sına', 'Hap bilgi')}
@@ -170,6 +171,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
         return (
           <div className="wrap">
             {head(advanced ? 'Sezdir · Kullan · Sına' : 'Kullan · Sına', 'Bugünün ifadeleri')}
+            <Progress queue={queue} i={i} />
             <div className="spread">
               <span className="stage">{STAGE.map(s => <i key={s} className={s === entry.role ? 'on' : ''}>{STAGE_LABEL[s]}</i>)}</span>
               <span className="row">{entry.retry && <span className="chip unc">tekrar</span>}<span className={`chip ${statusOf(state.progress, entry.itemId)}`}>{it.display}</span></span>
@@ -183,16 +185,20 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       }}
       onResult={(entry, ok, picked, shuffled) => {
         record(entry, ok, picked, shuffled)
-        return !ok && !entry.retry && entry.role !== 'sezdir' ? { ...entry, retry: true } : null
+        asked.current.add(entry.q.id)
+        if (ok || entry.retry || entry.role === 'sezdir') return null
+        const alt = alternativeQuestion(qIndex, entry.itemId, asked.current) // aynı kelimeden farklı soru; yoksa aynısı
+        return { ...entry, q: alt || entry.q, retry: true }
       }}
       onEnd={() => (reviewList.length ? setPhase('review') : finish())} />
   )
 
   if (phase === 'review') return (
     <Run key="review" list={reviewList}
-      render={(entry, shuffled, last, onAnswer, onNext) => (
+      render={(entry, shuffled, last, onAnswer, onNext, i, queue) => (
         <div className="wrap">
           {head('Tekrar', 'Önceki günlerden')}
+          <Progress queue={queue} i={i} />
           <Coach text={light ? 'Önceki günlerden bazı ifadeleri tekrar edelim.' : 'Türkçe yok: bakalım önceki ifadeler aklında kalmış mı?'} />
           <Question key={entry.q.id} q={shuffled} mode="learn" last={last} items={items} onAnswer={onAnswer} onNext={onNext} />
         </div>
@@ -229,6 +235,19 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
         <button className="btn ghost" onClick={onExit}>← Ana ekran</button>
         {onNext && <button className="btn" onClick={onNext}>{softCapped ? 'Yine de devam et →' : 'Bir tane daha →'}</button>}
       </div>
+    </div>
+  )
+}
+
+// Soru ilerlemesi: yalnız soru girişleri sayılır (kart ve hap bilgi hariç).
+function Progress({ queue, i }) {
+  const isQ = e => e.role !== 'tip' && e.role !== 'card'
+  const total = queue.filter(isQ).length
+  const n = queue.slice(0, i).filter(isQ).length + 1
+  return (
+    <div className="qprog">
+      <div className="bar" aria-hidden="true"><i style={{ width: `${(Math.min(n, total) - 1) / total * 100}%` }} /></div>
+      <span className="muted small">Soru {Math.min(n, total)} / {total}</span>
     </div>
   )
 }

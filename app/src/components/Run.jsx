@@ -12,5 +12,5 @@ export default function Run({ list, render, onResult, onEnd }) {
   return render(entry, shuffled, last,
     picked => { const again = onResult(entry, picked === shuffled.correctIndex, picked, shuffled); if (again) setQueue(q => [...q, again]) },
     () => (last ? onEnd() : setI(i + 1)),
-    i)
+    i, queue)
 }
