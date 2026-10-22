@@ -9,6 +9,8 @@ import Lesson from './screens/Lesson.jsx'
 import Review from './screens/Review.jsx'
 import UnitCheck from './screens/UnitCheck.jsx'
 import Retention from './screens/Retention.jsx'
+import WordList from './screens/WordList.jsx'
+import { parseAssignment } from './goal.js'
 
 export default function App() {
   const [state, dispatch, account] = useStore()
@@ -20,6 +22,14 @@ export default function App() {
 
   useEffect(() => { loadIndex().then(setIndex).catch(setError) }, [])
   useEffect(() => { loadUnit(state.unit).then(setUnit).catch(setError) }, [state.unit])
+
+  // Öğretmen ödev bağlantısı (?odev=100&not=...): hedefi bir kez yazar, adresi temizler.
+  useEffect(() => {
+    const a = parseAssignment(location.search)
+    if (!a) return
+    dispatch({ type: 'goal', goal: { target: a.target, source: 'teacher', note: a.note } })
+    history.replaceState(null, '', location.pathname)
+  }, [dispatch])
 
   const hintValue = { seen: state.hintSeen || {}, bump: key => dispatch({ type: 'hint', key }) }
   const wrap = el => <HintCtx.Provider value={hintValue}>{el}</HintCtx.Provider>
@@ -50,6 +60,7 @@ export default function App() {
       softCapped={overSoftCap(state.doneDays, Date.now())}
       onExit={() => setScreen('home')} onNext={hasNext ? () => startLesson(screen.day + 1) : null} />)
   }
+  if (screen === 'wordlist') return wrap(<WordList units={index.units.filter(u => u.dayCount)} startUnit={unit.unit} onExit={() => setScreen('home')} />)
   if (screen.name === 'unitcheck') return wrap(<UnitCheck def={index.unit_check} unit={unit} items={lessonCtx.items} qIndex={lessonCtx.qIndex} state={state} dispatch={dispatch} onExit={() => setScreen('home')} />)
   if (screen.name === 'retention') return wrap(<Retention section={index.retention.sections.find(x => x.id === screen.id)} unit={unit.unit} items={lessonCtx.items} dispatch={dispatch} onExit={() => setScreen('home')} />)
   if (screen.name === 'review') return wrap(<Review state={state} dispatch={dispatch} qIndex={lessonCtx.qIndex} items={lessonCtx.items} onExit={() => setScreen('home')} />)
@@ -58,5 +69,5 @@ export default function App() {
       onFinish={result => dispatch({ type: 'placement', result, now: Date.now() })}
       onExit={() => setScreen('home')} />
   )
-  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} account={account} />)
+  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} onWordList={() => setScreen('wordlist')} account={account} />)
 }

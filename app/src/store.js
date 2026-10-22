@@ -3,6 +3,7 @@ import { createProgress, setLevel, recordAnswer, applyUnitCheck } from './engine
 import { enabled, supabase, ensureSession, fetchRemote, pushRemote } from './supabase.js'
 import { chooseSync } from './sync.js'
 import { getCaptchaToken } from './captcha.js'
+import { countAnswer, DEFAULT_GOAL } from './goal.js'
 
 const KEY = 'hikayenglish.lgs.app.v1'
 
@@ -11,7 +12,7 @@ export const localAdapter = {
   save(s) { try { localStorage.setItem(KEY, JSON.stringify(s)) } catch { /* özel mod vb. */ } },
 }
 
-const initial = () => ({ progress: createProgress(), placement: null, unit: 1, doneDays: {}, unitChecks: {}, retentions: {}, profile: null, hintSeen: {}, savedAt: 0 })
+const initial = () => ({ progress: createProgress(), placement: null, unit: 1, doneDays: {}, unitChecks: {}, retentions: {}, profile: null, hintSeen: {}, daily: {}, goal: DEFAULT_GOAL, savedAt: 0 })
 
 function reducer(s, a) {
   if (a.type === 'hydrate') return { ...initial(), ...a.state }
@@ -22,7 +23,8 @@ function reducer(s, a) {
 function apply(s, a) {
   switch (a.type) {
     case 'placement': return { ...s, placement: { ...a.result, at: a.now }, progress: setLevel(s.progress, a.result.level) }
-    case 'answer': return { ...s, progress: recordAnswer(s.progress, a.payload) }
+    case 'answer': return { ...s, progress: recordAnswer(s.progress, a.payload), daily: countAnswer(s.daily, a.payload.now) }
+    case 'goal': return { ...s, goal: a.goal }
     case 'dayDone': return { ...s, doneDays: { ...s.doneDays, [a.key]: { first: a.first, total: a.total, n: a.n, at: a.now } } }
     case 'retentionDone': return { ...s, retentions: { ...(s.retentions || {}), [`u${a.unit}:${a.id}`]: { ok: a.ok, n: a.n, at: a.now } } }
     case 'reviewDone': return { ...s, reviews: [...(s.reviews || []), { first: a.first, total: a.total, at: a.now }].slice(-200) }

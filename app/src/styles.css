@@ -91,3 +91,14 @@ button.tk{cursor:pointer}
 .storyline{display:flex;flex-direction:column;gap:2px}
 .quote.tr{border-left-color:var(--line);background:transparent;padding-left:12px;color:var(--ink)}
 .quote.tr::before{content:'💬 ';font-size:.8em}
+.goal .bar{margin:6px 0}
+.wordlist table{width:100%;border-collapse:collapse}
+.wordlist td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.wordlist .chk{width:1.6em;color:var(--muted)}
+.wl-group{break-inside:avoid;margin-top:14px}
+@media print{
+  .noprint,.linkbtn{display:none!important}
+  :root{--bg:#fff;--paper:#fff;--ink:#000;--muted:#444;--line:#bbb}
+  body{background:#fff}
+  .wrap{max-width:none}
+}

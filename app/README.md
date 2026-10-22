@@ -46,3 +46,9 @@ npm run deploy     # içeriği üretir, derler, canlıya gönderir (netlify logi
 
 `.env.local` içindeki Supabase değerleri derleme sırasında pakete gömülür (publishable anahtar herkese açık olacak şekilde tasarlanmıştır).
 Netlify ekip ayarı yeni sitelere varsayılan olarak "yalnız Netlify üyeleri görsün" korumasını koyabiliyor; yeni site açarsan `netlify api updateSite` ile `sso_login:false` yap.
+
+## Öğretmen ödev bağlantısı
+
+Sınıfa şu biçimde bir bağlantı gönder; açan öğrencinin günlük hedefi güncellenir (5–300 soru):
+
+`https://hikayenglish-lgs.netlify.app/?odev=100&not=Bugün%20100%20soru%20çöz`

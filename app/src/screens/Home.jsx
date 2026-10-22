@@ -2,11 +2,12 @@ import { counts, dueCount, newItemsToday, overSoftCap, NEW_ITEMS_SOFT_CAP, reten
 import Coach from '../components/Coach.jsx'
 import Logo from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
+import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, account }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -74,6 +75,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         </section>
       )}
 
+      {placement && <GoalCard goal={state.goal} daily={state.daily} onChange={goal => dispatch({ type: 'goal', goal })} />}
+
       {placement && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
 
       {retentions.some(r => r.st.status !== 'not-started') && (
@@ -115,6 +118,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <div className="stat"><b>{due}</b><span>bekleyen tekrar</span></div>
         </div>
       </section>
+
+      {placement && <button className="btn ghost" onClick={onWordList}>Kelime listesi (PDF) →</button>}
 
       <AccountCard account={account} />
 
