@@ -13,22 +13,31 @@ export default function WordList({ units, startUnit, onExit }) {
 
   return (
     <div className="wrap wordlist">
-      <div className="noprint">
+      <div className="noprint wl-head">
         <button className="btn ghost sm" onClick={onExit}>← Geri</button>
         <h1>Kelime listesi</h1>
-        <p className="muted small">Listeyi seç, sonra “PDF olarak kaydet” de. Açılan pencerede hedef olarak “PDF olarak kaydet”i seçmen yeter.</p>
-        <div className="chips">
-          {units.map(u => <button key={u.unit} className={`pill${u.unit === unitNo ? ' on' : ''}`} onClick={() => setUnitNo(u.unit)}>Ünite {u.unit}</button>)}
-        </div>
-        <div className="chips">
-          <button className={`pill${first10 ? ' on' : ''}`} onClick={() => setFirst10(true)}>İlk 10 gün</button>
-          <button className={`pill${!first10 ? ' on' : ''}`} onClick={() => setFirst10(false)}>Tüm ünite</button>
+        <p className="muted">Üniteyi ve kapsamı seç, sonra PDF olarak kaydet ya da yazdır.</p>
+      </div>
+      <section className="card noprint wl-controls">
+        <label className="wl-field">
+          <span className="eyebrow">Ünite</span>
+          <select className="field" value={unitNo} onChange={e => setUnitNo(Number(e.target.value))}>
+            {units.map(u => <option key={u.unit} value={u.unit}>Ünite {u.unit} · {u.title}</option>)}
+          </select>
+        </label>
+        <div className="wl-field">
+          <span className="eyebrow">Kapsam</span>
+          <div className="seg" role="radiogroup">
+            <button role="radio" aria-checked={first10} className={first10 ? 'on' : ''} onClick={() => setFirst10(true)}>İlk 10 gün</button>
+            <button role="radio" aria-checked={!first10} className={!first10 ? 'on' : ''} onClick={() => setFirst10(false)}>Tüm ünite</button>
+          </div>
         </div>
         <button className="btn" disabled={!unit} onClick={() => window.print()}>PDF olarak kaydet / yazdır</button>
-      </div>
+        <p className="muted small">Açılan pencerede hedef olarak “PDF olarak kaydet”i seç.</p>
+      </section>
 
       {unit && (
-        <article className="printable">
+        <article className="card printable">
           <h2>Ünite {unit.unit} · <span lang="en">{unit.title}</span> · {first10 ? 'ilk 10 gün' : 'tüm kelimeler'}</h2>
           <p className="muted small">{total} ifade · HikayEnglish LGS Kelime Koçu</p>
           {groups.map(g => (

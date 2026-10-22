@@ -17,12 +17,13 @@ export default function ParentReport({ index, state, onExit }) {
 
   return (
     <div className="wrap parent">
-      <div className="noprint">
+      <div className="noprint wl-head">
         <button className="btn ghost sm" onClick={onExit}>← Geri</button>
-        <p className="muted small">Bu rapor yalnızca bu cihazdaki ilerlemeden hazırlanır. “PDF olarak kaydet” deyip veliyle paylaşabilirsin.</p>
+        <h1>Veli raporu</h1>
+        <p className="muted">Bu cihazdaki ilerlemeden hazırlanır. PDF olarak kaydedip veliyle paylaşabilirsin.</p>
         <button className="btn" onClick={() => window.print()}>PDF olarak kaydet / yazdır</button>
       </div>
-      <article className="printable">
+      <article className="card printable report-body">
         <div className="eyebrow"><span lang="en">HikayEnglish</span> · LGS Kelime Koçu · Veli raporu</div>
         <h1>{nick}{state.profile?.group ? ` · ${state.profile.group}` : ''}</h1>
         <p className="muted small">Tarih: {r.date} · Son 7 günün özeti</p>

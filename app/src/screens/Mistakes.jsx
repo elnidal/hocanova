@@ -25,7 +25,7 @@ export default function Mistakes({ state, qIndex, items, onFlash, onExit }) {
       {list.map(m => {
         const q = byId.get(m.qid), it = items[m.itemId]
         return (
-          <section className={`card mistake${m.fixed ? ' fixed' : ''}`} key={m.qid}>
+          <section className={`card q mistake${m.fixed ? ' fixed' : ''}`} key={m.qid}>
             <div className="spread">
               <span className="chip">{it?.display} · <span className="muted">{it?.meaning_tr}</span></span>
               {m.fixed ? <span className="chip known">düzeldi ✓</span> : m.n > 1 && <span className="chip unc">{m.n} kez</span>}
