@@ -80,3 +80,16 @@ export function counts(p, itemIds) {
   for (const id of itemIds) c[statusOf(p, id)]++
   return c
 }
+
+/**
+ * Hızlı kart cevabı (öğrencinin kendi değerlendirmesi). Durumu (known/unc) DEĞİŞTİRMEZ: o, gerçek sorularla kazanılır.
+ * Yalnız sırayı etkiler: 'dont' → hemen tekrara, 'unsure' → en geç yarın, 'know' → plan aynı kalır.
+ */
+export function recordFlash(p, { itemId, rating, now }) {
+  if (!itemId) return p
+  const it = { ...getItem(p, itemId) }
+  if (rating === 'dont') { it.due = now; it.flashMiss = (it.flashMiss || 0) + 1 }
+  else if (rating === 'unsure') it.due = Math.min(it.due ?? Infinity, now + DAY)
+  const log = [...p.log, { t: now, id: itemId, qid: null, ok: rating === 'know', kind: 'flash' }].slice(-LOG_CAP)
+  return { ...p, items: { ...p.items, [itemId]: it }, log }
+}

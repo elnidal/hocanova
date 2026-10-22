@@ -117,3 +117,6 @@ button.tk{cursor:pointer}
 .unitpick .chips{margin-top:10px}
 .slim{flex-direction:row;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px}
 .goalpick summary{cursor:pointer}.goalpick .chips{margin-top:8px}
+.flashcard{cursor:pointer;min-height:240px;justify-content:center}
+.big-line{font-size:1.25rem;line-height:1.5}.flashcard mark{background:var(--brand-soft);color:var(--ink);border-radius:6px;padding:0 4px;font-weight:800}
+.rate{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.rate .btn{padding-left:6px;padding-right:6px}

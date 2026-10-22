@@ -8,7 +8,7 @@ import ProfileCard from '../components/ProfileCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, account }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -112,6 +112,13 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <p className="muted small" key={sec.id}>{sec.title}: {st.status === 'done' ? `tamamlandı · ${st.ok}/${st.n} (%${Math.round(100 * st.ok / st.n)})` : st.status === 'wait' ? `${st.days} gün sonra açılır` : 'önce biraz daha ders gerekiyor'}</p>
         ))}
       </details>
+
+      {placement && Object.values(progress.items).some(it => it.status !== 'new') && (
+        <section className="card slim">
+          <div><b>Hızlı kart</b><div className="muted small">2 dakikalık kart turu · öğrendiklerin ve zorlandıkların</div></div>
+          <button className="btn sm" onClick={() => onFlash()}>Kartlar →</button>
+        </section>
+      )}
 
       {placement && <div className="row"><button className="btn ghost" onClick={onWordList}>Kelime listesi (PDF)</button><button className="btn ghost" onClick={onReport}>Veli raporu</button></div>}
 
