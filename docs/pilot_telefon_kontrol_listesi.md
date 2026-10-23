@@ -58,6 +58,15 @@ Her sorunda şunları not et: **cihaz + tarayıcı**, **hangi adım**, **ne oldu
   - [ ] PDF beyaz zeminli, tablo düzgün, düğmeler PDF'te görünmüyor.
 - [ ] **Veli raporu:** Aynı şekilde PDF'e kaydet; kutular ve haftalık çubuklar düzgün.
 
+## 7b. Yeni: Sorun bildir, veli bağlantısı, paylaşım kartı
+(Sorun bildir ve veli bağlantısı için Supabase'de `reports.sql` ve `parent_link.sql` çalıştırılmış olmalı.)
+- [ ] Bir sorunun cevabını verince altta "Bu soruda sorun mu var?" çıkıyor; gönderince "Teşekkürler" yazıyor.
+- [ ] Veli raporu → "Bağlantı oluştur" → "Paylaş / kopyala". Bağlantıyı **başka bir telefonda** aç: rapor giriş istemeden açılıyor.
+- [ ] "Bağlantıyı kapat" dedikten sonra aynı bağlantı "artık geçerli değil" diyor.
+- [ ] Ünite son testinde ilerleme varsa "Sonucumu paylaş 📸" kartı çıkıyor; kartta ad yok; paylaşım sayfası (iPhone) ya da indirme (Android) çalışıyor.
+- [ ] Öğretmen paneli: `/#ogretmen` adresinde giriş yapınca sınıf özeti ve öğrenciler görünüyor (`teacher.sql` çalıştırılmış olmalı).
+- [ ] Ses: robotik değil, mümkünse İngiliz aksanı. (Telefonun ayarlarından daha iyi bir İngilizce ses indirilebilir.)
+
 ## 8. Öğretmen ödev bağlantısı
 - [ ] Telefonda şu adresi aç: `https://hikayenglish-lgs.netlify.app/?odev=50&not=Bugün%2050%20soru`
 - [ ] Hedef kartı "Öğretmeninin ödevi · 0 / 50" ve "Bugün 50 soru" notunu gösteriyor.

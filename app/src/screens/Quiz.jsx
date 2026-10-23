@@ -4,6 +4,8 @@ import { pct } from '../quiz.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
 import RichText from '../components/RichText.jsx'
+import ShareResult from '../components/ShareResult.jsx'
+import { worthSharing } from '../shareCard.js'
 
 const TEXT = {
   pre: { eyebrow: 'Ünite ön testi', intro: 'Üniteye başlamadan önce ne bildiğine bakalım. Bilmediğin çok şey çıkacak, olması gereken bu! Bilmiyorsan "Bilmiyorum" de. Ünite bitince aynı ifadelerden bir son test yapacağız ve farkı birlikte göreceğiz.' },
@@ -68,6 +70,7 @@ export default function Quiz({ kind, title, questions, items, before, dispatch, 
             {kind === 'weekly' && <div className="stat"><b>{mm}</b><span>süre</span></div>}
           </section>
         )}
+        {kind !== 'pre' && worthSharing({ kind, from: kind === 'post' ? b : null, to: p }) && <ShareResult kind={kind} title={title} from={kind === 'post' ? b : null} to={p} />}
         <Coach text={kind === 'pre'
           ? 'Başlangıç noktan kaydedildi. Şimdi dersler bilmediklerini öğretecek; ünite sonunda farkı birlikte göreceğiz.'
           : p >= 80 ? 'Harika bir sonuç! Bu ifadeler artık senin.' : p >= 50 ? 'İyi gidiyorsun. Yanlışların tekrar listende öne geçti.' : 'Zorlandığın ifadeleri tekrar ve kartlarla pekiştireceğiz. Pes yok 💪'} />

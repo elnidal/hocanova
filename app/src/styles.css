@@ -169,3 +169,4 @@ select.field{appearance:none;background:var(--paper) url("data:image/svg+xml,%3C
 .teacher h2{margin:10px 0 0}.student{gap:4px;padding:14px 16px}.wrow{padding:6px 0;border-top:1px solid var(--line)}.wrow:first-of-type{border-top:0}
 .teacher .stat b.hot{color:var(--hot)}.teacher .ok{color:var(--mint);font-weight:700}
 .share{gap:10px}.share input{font-size:.9rem}
+.sharecard{align-items:center}.sharecard img{width:min(240px,70%);border-radius:14px;box-shadow:var(--shadow)}
