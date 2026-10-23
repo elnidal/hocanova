@@ -19,6 +19,7 @@ import Flash from './screens/Flash.jsx'
 import WordList from './screens/WordList.jsx'
 import ParentReport from './screens/ParentReport.jsx'
 import { parseAssignment } from './goal.js'
+import { flushReports } from './reports.js'
 
 export default function App() {
   const [state, dispatch, account] = useStore()
@@ -38,6 +39,13 @@ export default function App() {
     dispatch({ type: 'goal', goal: { target: a.target, source: 'teacher', note: a.note } })
     history.replaceState(null, '', location.pathname)
   }, [dispatch])
+
+  // Bekleyen "Sorun bildir" kayıtlarını aç-kapa ve bağlantı gelince gönder
+  useEffect(() => {
+    flushReports().catch(() => {})
+    window.addEventListener('online', flushReports)
+    return () => window.removeEventListener('online', flushReports)
+  }, [])
 
   const hintValue = { seen: state.hintSeen || {}, bump: key => dispatch({ type: 'hint', key }) }
   const wrap = el => <HintCtx.Provider value={hintValue}>{el}</HintCtx.Provider>

@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react'
 import { hintFor, hintCollapsed } from '../engine'
 import { HintCtx } from '../hintContext.js'
 import RichText from './RichText.jsx'
+import ReportIssue from './ReportIssue.jsx'
 
 /**
  * q: shuffleOptions çıktısı.
@@ -53,6 +54,7 @@ export default function Question({ q, mode = 'test', onAnswer, onNext, last, ext
           <p className={`fb ${ok ? 'ok' : 'no'}`}>{ok ? 'Doğru!' : 'Neredeyse. Doğrusu yeşil olan.'}</p>
           {q.explain && <div className="explain">{q.explain}</div>}
           {extra}
+          <ReportIssue key={q.id} q={q} screen={mode} />
         </div>
       )}
       <div className="nav">

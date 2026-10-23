@@ -162,3 +162,7 @@ select.field{appearance:none;background:var(--paper) url("data:image/svg+xml,%3C
 .onboard-nav{display:grid;grid-template-columns:auto 1fr;gap:10px}.onboard-nav .btn:only-child{grid-column:1/-1}
 .onboard-list li{padding:8px 12px}
 @media (prefers-reduced-motion:reduce){.onboard-card{animation:none}}
+.report-link{align-self:flex-start;font-size:.85rem}
+.report-form{display:flex;flex-direction:column;gap:8px;background:var(--bg);border-radius:12px;padding:10px}
+.seg3{display:flex;flex-direction:column;gap:6px}.seg3 button{font:inherit;font-weight:700;text-align:left;border:2px solid var(--line);background:var(--paper);color:var(--ink);border-radius:10px;padding:8px 10px;cursor:pointer}
+.seg3 button.on{border-color:var(--brand);background:var(--brand-soft)}
