@@ -5,7 +5,7 @@ import NovaAvatar from './NovaAvatar.jsx'
 export default function Splash({ text = 'Hoca Nova hazırlanıyor…' }) {
   return (
     <div className="splash" role="status">
-      <div className="splash-logo"><Logo /></div>
+      <div className="splash-logo"><Logo big /></div>
       <NovaAvatar size={64} />
       <p className="muted">{text}</p>
       <div className="dots3" aria-hidden="true"><i /><i /><i /></div>

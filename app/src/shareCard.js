@@ -1,5 +1,6 @@
 // Paylaşılabilir sonuç kartı (Instagram hikâyesi boyutu 1080x1920): canvas ile çizilir, kişisel bilgi içermez.
 import { OWL } from './owlArt.js'
+import { drawWordmark, DARK } from './logoDraw.js'
 const owlImage = () => new Promise((res, rej) => {
   const img = new Image()
   img.onload = () => res(img); img.onerror = rej
@@ -39,8 +40,9 @@ export async function drawCard(opts) {
   x.fillStyle = '#FFC93C'; x.fillText(t.big, W / 2, 1060)
   x.font = `700 62px ${F}`; x.fillStyle = '#fff'; x.fillText(t.sub, W / 2, 1180)
   if (t.foot) { x.font = `600 44px ${F}`; x.fillStyle = 'rgba(255,255,255,.7)'; wrap(x, t.foot, W / 2, 1300, 880, 56) }
-  x.font = `800 60px ${F}`; x.fillStyle = '#fff'; x.fillText('HikayEnglish · LGS Kelime Koçu', W / 2, 1690)
-  x.font = `600 40px ${F}`; x.fillStyle = 'rgba(255,255,255,.7)'; x.fillText('Günde 10 dakika, LGS İngilizce kelimeleri', W / 2, 1760)
+  drawWordmark(x, W / 2, 1700, 110, DARK, 'center')
+  x.textAlign = 'center'; x.font = `700 38px ${F}`; x.fillStyle = 'rgba(255,255,255,.85)'; x.fillText('LGS KELİME KOÇU', W / 2, 1755)
+  x.font = `600 40px ${F}`; x.fillStyle = 'rgba(255,255,255,.7)'; x.fillText('Günde 10 dakika, LGS İngilizce kelimeleri', W / 2, 1820)
   return new Promise(res => c.toBlob(res, 'image/png'))
 }
 

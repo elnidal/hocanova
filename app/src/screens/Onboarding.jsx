@@ -37,7 +37,7 @@ export default function Onboarding({ onDone, last = 'Başlangıç testine geç' 
   return (
     <div className="wrap onboard">
       <div className="spread">
-        <span className="eyebrow"><Logo /> · LGS</span>
+        <span className="onboard-logo"><Logo big /></span>
         {!end && <button className="linkbtn" onClick={onDone}>Atla</button>}
       </div>
       <section className="card onboard-card" key={i}>

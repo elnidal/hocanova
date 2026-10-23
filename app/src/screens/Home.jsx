@@ -1,6 +1,6 @@
 import { counts, dueCount, newItemsToday, overSoftCap, NEW_ITEMS_SOFT_CAP, retentionState } from '../engine'
 import Coach from '../components/Coach.jsx'
-import Logo from '../components/Logo.jsx'
+import { LogoLockup } from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
 import { coachMessage, streakOf } from '../goal.js'
 import { openMistakeCount } from '../mistakes.js'
@@ -42,7 +42,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   return (
     <div className="wrap">
       <div className="spread">
-        <div><div className="eyebrow"><Logo /> · LGS</div><h1>Kelime Koçu</h1></div>
+        <LogoLockup />
         {placement && <span className="chip">{streak >= 2 ? `🔥 ${streak} gün · ` : ''}Seviye: {LEVEL[placement.level]}</span>}
       </div>
 
