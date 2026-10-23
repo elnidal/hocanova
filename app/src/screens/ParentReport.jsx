@@ -3,11 +3,13 @@ import { loadAllUnits } from '../content.js'
 import Splash from '../components/Splash.jsx'
 import { pct } from '../quiz.js'
 import { buildReport } from '../report.js'
+import { enabled, createParentLink, revokeParentLinks } from '../supabase.js'
+import { makeToken, shareUrl } from '../parentShare.js'
 
 const WD = ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt']
 
 // Veli raporu: tek sayfa, yazdırılabilir / PDF. Veri yalnız bu cihazdaki ilerlemeden hesaplanır.
-export default function ParentReport({ index, state, onExit }) {
+export default function ParentReport({ index, state, onExit, dispatch, remote = false }) {
   const [items, setItems] = useState(null)
   useEffect(() => { loadAllUnits(index).then(us => setItems(us.flatMap(u => u.items))) }, [index])
   if (!items) return <Splash text="Rapor hazırlanıyor…" />
@@ -18,11 +20,12 @@ export default function ParentReport({ index, state, onExit }) {
   return (
     <div className="wrap parent">
       <div className="noprint wl-head">
-        <button className="btn ghost sm" onClick={onExit}>← Geri</button>
+        {!remote && <button className="btn ghost sm" onClick={onExit}>← Geri</button>}
         <h1>Veli raporu</h1>
-        <p className="muted">Bu cihazdaki ilerlemeden hazırlanır. PDF olarak kaydedip veliyle paylaşabilirsin.</p>
+        <p className="muted">{remote ? 'Öğrencinin son 7 günlük çalışma özeti.' : 'Bu cihazdaki ilerlemeden hazırlanır. Bağlantıyla ya da PDF olarak veliyle paylaşabilirsin.'}</p>
         <button className="btn" onClick={() => window.print()}>PDF olarak kaydet / yazdır</button>
       </div>
+      {!remote && enabled && <ShareParent token={state.parentToken} dispatch={dispatch} />}
       <article className="card printable report-body">
         <div className="eyebrow"><span lang="en">HikayEnglish</span> · LGS Kelime Koçu · Veli raporu</div>
         <h1>{nick}{state.profile?.group ? ` · ${state.profile.group}` : ''}</h1>
@@ -66,5 +69,37 @@ export default function ParentReport({ index, state, onExit }) {
         <p className="muted small">Bu rapor öğrencinin çalışma özetidir; resmî bir değerlendirme değildir.</p>
       </article>
     </div>
+  )
+}
+
+// "Veliyle paylaş": rastgele bir bağlantı oluşturur; öğrenci istediği an kapatabilir.
+function ShareParent({ token, dispatch }) {
+  const [busy, setBusy] = useState(false)
+  const [msg, setMsg] = useState('')
+  const url = token ? shareUrl(location.origin, token) : ''
+  const run = async fn => { setBusy(true); setMsg(''); try { await fn() } catch (e) { setMsg('Olmadı: ' + (e.message || 'bağlantı kurulamadı')) } setBusy(false) }
+  const create = () => run(async () => { const t = makeToken(); await createParentLink(t); dispatch({ type: 'parentToken', token: t }) })
+  const revoke = () => run(async () => { await revokeParentLinks(); dispatch({ type: 'parentToken', token: null }) })
+  const share = () => run(async () => {
+    if (navigator.share) { try { await navigator.share({ title: 'Hikayenglish veli raporu', url }) } catch { /* vazgeçildi */ } }
+    else { await navigator.clipboard.writeText(url); setMsg('Bağlantı kopyalandı ✓') }
+  })
+  return (
+    <section className="card noprint share">
+      <div className="eyebrow">Veliyle paylaş</div>
+      {!token ? (
+        <>
+          <p className="muted small">Veli bu bağlantıyı kendi telefonunda açar, giriş gerekmez. Rapor güncel kalır. İstediğin zaman kapatabilirsin.</p>
+          <button className="btn" disabled={busy} onClick={create}>Bağlantı oluştur</button>
+        </>
+      ) : (
+        <>
+          <input className="field" readOnly value={url} onFocus={e => e.target.select()} aria-label="Veli bağlantısı" />
+          <div className="row"><button className="btn" disabled={busy} onClick={share}>Paylaş / kopyala</button><button className="btn ghost" disabled={busy} onClick={revoke}>Bağlantıyı kapat</button></div>
+          <p className="muted small">Bu bağlantıyı bilen herkes raporu görür; yalnız veline gönder. Kapatırsan eski bağlantı çalışmaz.</p>
+        </>
+      )}
+      {msg && <p className="small">{msg}</p>}
+    </section>
   )
 }

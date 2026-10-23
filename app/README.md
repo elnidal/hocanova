@@ -59,3 +59,7 @@ Sınıfa şu biçimde bir bağlantı gönder; açan öğrencinin günlük hedefi
 2. Authentication → Users → Add user ile kendi e-posta + şifreni oluştur (Auto confirm).
 3. `supabase/teacher.sql` çalıştır, dosyanın sonundaki yorumlu `insert` satırını e-postanla çalıştırıp kendini öğretmen yap.
 4. Panel: `https://hikayenglish-lgs.netlify.app/#ogretmen` (öğrenci oturumundan ayrı giriş; yalnız o sekmede açık kalır).
+
+## Veli bağlantısı
+
+`supabase/parent_link.sql` çalıştırılırsa, Veli raporu ekranında "Bağlantı oluştur" çıkar. Veli `…/#veli=KOD` adresini kendi telefonunda açar (giriş yok, öğrenci oturumu açılmaz); yalnız `parent_report` işlevi çağrılır. Öğrenci "Bağlantıyı kapat" derse bağlantı çalışmaz.

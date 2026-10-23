@@ -26,3 +26,20 @@ export async function pushRemote(uid, state) {
   const { error } = await supabase.from('progress').upsert({ user_id: uid, state, updated_at: new Date().toISOString() })
   if (error) throw error
 }
+
+// Veli bağlantısı (supabase/parent_link.sql)
+export async function createParentLink(token) {
+  await ensureSession()
+  const { error } = await supabase.from('parent_links').insert({ token })
+  if (error) throw error
+}
+export async function revokeParentLinks() {
+  const user = await ensureSession()
+  const { error } = await supabase.from('parent_links').delete().eq('user_id', user.id)
+  if (error) throw error
+}
+export async function fetchParentReport(token) {
+  const { data, error } = await supabase.rpc('parent_report', { p_token: token })
+  if (error) throw error
+  return data
+}
