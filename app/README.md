@@ -37,7 +37,7 @@ select * from analytics.word_stats order by yanlis_yuzde desc, yanlis desc limit
 
 ## Yayın (Netlify)
 
-Canlı adres: https://hikayenglish-lgs.netlify.app (Netlify ekibi LGSingilizce, site `hikayenglish-lgs`). Pilot: arama motorlarına kapalı (noindex).
+Canlı adres: https://hikayenglish-koc.netlify.app (Netlify ekibi LGSingilizce, site `hikayenglish-lgs`). Pilot: arama motorlarına kapalı (noindex).
 
 ```bash
 cd app
@@ -51,14 +51,14 @@ Netlify ekip ayarı yeni sitelere varsayılan olarak "yalnız Netlify üyeleri g
 
 Sınıfa şu biçimde bir bağlantı gönder; açan öğrencinin günlük hedefi güncellenir (5–300 soru):
 
-`https://hikayenglish-lgs.netlify.app/?odev=100&not=Bugün%20100%20soru%20çöz`
+`https://hikayenglish-koc.netlify.app/?odev=100&not=Bugün%20100%20soru%20çöz`
 
 ## Öğretmen paneli ve "Sorun bildir" (Supabase kurulumu)
 
 1. `supabase/reports.sql` çalıştır (öğrenci bildirimleri için tablo).
 2. Authentication → Users → Add user ile kendi e-posta + şifreni oluştur (Auto confirm).
 3. `supabase/teacher.sql` çalıştır, dosyanın sonundaki yorumlu `insert` satırını e-postanla çalıştırıp kendini öğretmen yap.
-4. Panel: `https://hikayenglish-lgs.netlify.app/#ogretmen` (öğrenci oturumundan ayrı giriş; yalnız o sekmede açık kalır).
+4. Panel: `https://hikayenglish-koc.netlify.app/#ogretmen` (öğrenci oturumundan ayrı giriş; yalnız o sekmede açık kalır).
 
 ## Veli bağlantısı
 

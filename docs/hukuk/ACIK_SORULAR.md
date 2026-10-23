@@ -13,7 +13,7 @@ Taslaklar (`gizlilik_aydinlatma_taslak.md`, `veli_bilgilendirme_riza_taslak.md`)
 
 ## CAPTCHA kurulumu (Murat'ın yapacağı, ~10 dk)
 Kod hazır ve isteğe bağlı; **sıra önemli** (yanlış sırada yeni öğrenciler giriş yapamaz):
-1. Cloudflare hesabında **Turnstile** → yeni widget; alan adı: `hikayenglish-lgs.netlify.app` (yerel deneme için `localhost` da ekle). **Site anahtarı** (herkese açık) ve **gizli anahtar** (secret) verilir.
+1. Cloudflare hesabında **Turnstile** → yeni widget; alan adı: `hikayenglish-koc.netlify.app` (yerel deneme için `localhost` da ekle). **Site anahtarı** (herkese açık) ve **gizli anahtar** (secret) verilir.
 2. `app/.env.local` dosyasına `VITE_TURNSTILE_SITE_KEY=<site anahtarı>` yaz → bana söyle, derleyip yayınlayayım ve telefonda yeni bir öğrenci olarak giriş yapıldığını doğrulayayım.
 3. **Ancak ondan sonra** Supabase → Authentication → Attack Protection → CAPTCHA → Turnstile → **gizli anahtarı** yapıştır, kaydet.
 4. Gizli anahtarı kimseyle paylaşma, git'e koyma; yalnız Supabase paneline girilir.

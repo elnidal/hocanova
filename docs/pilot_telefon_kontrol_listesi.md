@@ -1,6 +1,6 @@
 # Pilot öncesi telefon kontrol listesi
 
-Adres: **https://hikayenglish-lgs.netlify.app**
+Adres: **https://hikayenglish-koc.netlify.app**
 Süre: cihaz başına yaklaşık 40 dakika. En az **bir iPhone (Safari)** ve **bir Android (Chrome)** ile dene.
 
 Her sorunda şunları not et: **cihaz + tarayıcı**, **hangi adım**, **ne oldu / ne bekliyordun**, mümkünse **ekran görüntüsü**. Bana aynen gönder, düzeltirim.
@@ -68,7 +68,7 @@ Her sorunda şunları not et: **cihaz + tarayıcı**, **hangi adım**, **ne oldu
 - [ ] Ses: robotik değil, mümkünse İngiliz aksanı. (Telefonun ayarlarından daha iyi bir İngilizce ses indirilebilir.)
 
 ## 8. Öğretmen ödev bağlantısı
-- [ ] Telefonda şu adresi aç: `https://hikayenglish-lgs.netlify.app/?odev=50&not=Bugün%2050%20soru`
+- [ ] Telefonda şu adresi aç: `https://hikayenglish-koc.netlify.app/?odev=50&not=Bugün%2050%20soru`
 - [ ] Hedef kartı "Öğretmeninin ödevi · 0 / 50" ve "Bugün 50 soru" notunu gösteriyor.
 
 ## 9. Kalıcılık ve çevrimdışı
