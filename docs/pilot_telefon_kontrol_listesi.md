@@ -20,9 +20,8 @@ Her sorunda şunları not et: **cihaz + tarayıcı**, **hangi adım**, **ne oldu
 ## 2. Ana ekrana ekleme (uygulama gibi kullanım)
 **iPhone (Safari):** Paylaş düğmesi → "Ana Ekrana Ekle".
 **Android (Chrome):** Üç nokta → "Ana ekrana ekle" ya da "Uygulamayı yükle".
-- [ ] İkon ana ekranda görünüyor, adı "Kelime Koçu".
+- [ ] İkon (gözlüklü baykuş) ana ekranda görünüyor, adı "Kelime Koçu". Eski ikon görünürse siteyi silip yeniden ekle (telefonlar ikonu önbelleğe alır).
 - [ ] İkondan açınca tarayıcı çubuğu olmadan tam ekran açılıyor.
-- [ ] Not: ikon henüz eski logo (baykuş değil). Bilinen eksik.
 
 ## 3. Başlangıç testi (18 soru)
 - [ ] Bölüm girişleri (A, B, C) görünüyor.
@@ -78,7 +77,6 @@ Her sorunda şunları not et: **cihaz + tarayıcı**, **hangi adım**, **ne oldu
 - Cuma quiz'i yalnız **cuma–pazar** arası ve o hafta en az 5 ifade çalışıldıysa görünür.
 - Ünite son testi, ünitenin **tüm** dersleri bitince açılır.
 - İlerleme ve veli raporu **cihaza bağlı**. Başka telefonda sıfırdan başlar (hesap kaydı yapılmadıysa).
-- Uygulama ikonu henüz baykuş değil.
 
 ## 12. Bitince
 - [ ] Bulduklarını bana gönder (cihaz + adım + ekran görüntüsü).
