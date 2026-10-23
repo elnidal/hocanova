@@ -52,3 +52,10 @@ Netlify ekip ayarı yeni sitelere varsayılan olarak "yalnız Netlify üyeleri g
 Sınıfa şu biçimde bir bağlantı gönder; açan öğrencinin günlük hedefi güncellenir (5–300 soru):
 
 `https://hikayenglish-lgs.netlify.app/?odev=100&not=Bugün%20100%20soru%20çöz`
+
+## Öğretmen paneli ve "Sorun bildir" (Supabase kurulumu)
+
+1. `supabase/reports.sql` çalıştır (öğrenci bildirimleri için tablo).
+2. Authentication → Users → Add user ile kendi e-posta + şifreni oluştur (Auto confirm).
+3. `supabase/teacher.sql` çalıştır, dosyanın sonundaki yorumlu `insert` satırını e-postanla çalıştırıp kendini öğretmen yap.
+4. Panel: `https://hikayenglish-lgs.netlify.app/#ogretmen` (öğrenci oturumundan ayrı giriş; yalnız o sekmede açık kalır).

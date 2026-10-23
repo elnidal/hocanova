@@ -12,6 +12,7 @@ import Retention from './screens/Retention.jsx'
 import Splash from './components/Splash.jsx'
 import Mistakes from './screens/Mistakes.jsx'
 import ExamCourse from './screens/ExamCourse.jsx'
+import Teacher from './screens/Teacher.jsx'
 import Onboarding from './screens/Onboarding.jsx'
 import Quiz from './screens/Quiz.jsx'
 import { preQuiz, postQuiz, weeklyQuiz, weekKey } from './quiz.js'
@@ -50,6 +51,7 @@ export default function App() {
   const hintValue = { seen: state.hintSeen || {}, bump: key => dispatch({ type: 'hint', key }) }
   const wrap = el => <HintCtx.Provider value={hintValue}>{el}</HintCtx.Provider>
 
+  if (location.hash === '#ogretmen') return <Teacher />
   if (error) return <div className="wrap">İçerik yüklenemedi. <button className="btn" onClick={() => location.reload()}>Yeniden dene</button></div>
   if (!index || !unit) return <Splash />
 
