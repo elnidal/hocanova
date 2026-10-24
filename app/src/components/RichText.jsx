@@ -9,10 +9,13 @@ export const plain = (text, items) =>
 /** Metindeki ifade kimliklerini (görünme sırasıyla) verir. */
 export const markIds = text => [...String(text ?? '').matchAll(MARK)].map(m => m[1])
 
+// Soru kökündeki boşluk (____) belirgin bir kutu olarak gösterilir.
+const blankify = (str, k) => str.split(/(_{3,})/).map((x, j) => (/^_{3,}$/.test(x) ? <span key={`${k}-${j}`} className="blank" role="img" aria-label="boşluk" /> : x))
+
 function Words({ text, items, newSet, speak, onWord, left }) {
   return text.split(TOKEN).map((p, i) => {
     const m = /^\{(U\d+-\d+)(?:\|([^}]*))?\}$/.exec(p)
-    if (!m) return p
+    if (!m) return blankify(p, i)
     const [, id, shown] = m
     const raw = shown || items?.[id]?.display || id
     const label = raw.length > 1 && raw === raw.toUpperCase() && /[A-Z]/.test(raw) ? raw.toLowerCase() : raw // yazar tercihi BÜYÜK harf: küçüğe çevrilir

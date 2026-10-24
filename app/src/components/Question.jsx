@@ -38,11 +38,12 @@ export default function Question({ q, mode = 'test', onAnswer, onNext, last, ext
       <p className="prompt">{rt(q.prompt)}</p>
       {hint && (!collapsed || open) && <p className="hint">🇹🇷 {hint.text}</p>}
       {hint && collapsed && !open && <button type="button" className="hintbtn" onClick={() => setOpen(true)}>🇹🇷 Türkçesi</button>}
-      {q.stem && <p className="stem">{rt(q.stem)}</p>}
+      {q.stem && <p className={`stem${q.stem.replace(/<[^>]+>/g, '').length > 120 ? ' long' : ''}`}>{rt(q.stem)}</p>}
       <div className="opts" role="radiogroup">
         {q.options.map((o, i) => (
           <button key={i} role="radio" aria-checked={picked === i} disabled={locked} className={`opt${cls(i)}`} onClick={() => choose(i)}>
-            <RichText text={o} />
+            <span className="letter" aria-hidden="true">{'ABCDE'[i]}</span>
+            <span className="otext"><RichText text={o} /></span>
           </button>
         ))}
         {!learn && allowUnknown && (
