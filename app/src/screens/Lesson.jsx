@@ -175,7 +175,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
             <Progress queue={queue} i={i} />
             <div className="spread">
               <span className="stage">{STAGE.map(s => <i key={s} className={s === entry.role ? 'on' : ''}>{STAGE_LABEL[s]}</i>)}</span>
-              <span className="row">{entry.retry && <span className="chip unc">tekrar</span>}<span className={`chip ${statusOf(state.progress, entry.itemId)}`}>{it.display}</span></span>
+              <span className="row">{entry.retry && <span className="chip unc">tekrar</span>}</span> {/* ifadenin kendisi gösterilmez: boşluk doldurma cevabını ele verirdi */}
             </div>
             {ctx && <div className="ctx">{rt(ctx.text)}</div>}
             <Question key={`${entry.q.id}${entry.retry ? 'r' : ''}`} q={shuffled} mode="learn" last={last} items={items} newSet={newSet} speak={speak}

@@ -64,7 +64,7 @@ export default function Review({ state, dispatch, qIndex, items, onExit }) {
           <div className="wrap">
             {head(i)}
             <div className="bar" aria-hidden="true"><i style={{ width: `${(i / total) * 100}%` }} /></div>
-            <div className="row"><span className="eyebrow">Günlük tekrar</span><span className={`chip ${entry.before}`}>{it.display}</span></div>
+            <div className="row"><span className="eyebrow">Günlük tekrar</span><span className={`chip ${entry.before}`}>{{ new: 'yeni', unc: 'kararsız', known: 'biliniyor' }[entry.before]}</span></div>
             <Question key={entry.q.id} q={shuffled} mode="learn" last={last} items={items} speak={speak} onAnswer={onAnswer} onNext={onNext}
               extra={now !== entry.before && <p className="muted small">Durum: {LABEL[entry.before]} → <b>{LABEL[now]}</b></p>} />
           </div>
