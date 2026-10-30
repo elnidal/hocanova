@@ -63,3 +63,7 @@ Sınıfa şu biçimde bir bağlantı gönder; açan öğrencinin günlük hedefi
 ## Veli bağlantısı
 
 `supabase/parent_link.sql` çalıştırılırsa, Veli raporu ekranında "Bağlantı oluştur" çıkar. Veli `…/#veli=KOD` adresini kendi telefonunda açar (giriş yok, öğrenci oturumu açılmaz); yalnız `parent_report` işlevi çağrılır. Öğrenci "Bağlantıyı kapat" derse bağlantı çalışmaz.
+
+## Tahta modu (sınıfta)
+
+`https://hikayenglish-koc.netlify.app/#tahta` — ünite ve günü elle seçip dersi tahtada açarsın. Giriş, başlangıç testi ve sıra kilidi yok; oturum açılmaz, ilerleme kaydedilmez (sayfa yenilenince sıfırlanır).
