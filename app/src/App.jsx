@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { loadIndex, loadUnit, loadAllUnits } from './content.js'
 import { buildQuestionIndex, overSoftCap } from './engine'
+import { canSpeak } from './tts.js'
 import { HintCtx } from './hintContext.js'
 import { useStore } from './store.js'
 import Home from './screens/Home.jsx'
@@ -57,7 +58,7 @@ export default function App() {
     if (lessonCtx) return lessonCtx
     const units = await loadAllUnits(index)
     const ctx = {
-      qIndex: buildQuestionIndex({ units, retention: index.retention }),
+      qIndex: buildQuestionIndex({ units, retention: index.retention, listen: canSpeak }),
       items: Object.fromEntries(units.flatMap(u => u.items).map(i => [i.id, i])),
     }
     setLessonCtx(ctx)

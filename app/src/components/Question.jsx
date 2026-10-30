@@ -3,11 +3,14 @@ import { hintFor, hintCollapsed } from '../engine'
 import { HintCtx } from '../hintContext.js'
 import RichText from './RichText.jsx'
 import ReportIssue from './ReportIssue.jsx'
+import SpeakerIcon from './SpeakerIcon.jsx'
+import { speak as say } from '../tts.js'
 
 /**
  * q: shuffleOptions çıktısı.
  * mode 'test'  : seçip "Sonraki" ile onaylar; geri bildirim yok (onAnswer onayda çağrılır). allowUnknown ile "Bilmiyorum" (picked = -1).
  * mode 'learn' : tıklayınca kilitlenir, doğru/yanlış ve açıklama gösterilir (onAnswer tıklamada), "Sonraki" onNext çağırır.
+ * q.listen: dinleme sorusu; metin gösterilmez, açılışta ve düğmeyle okunur.
  * Soru kökünün altında Türkçe satır gösterilir; alwaysHint değilse birkaç gösterimden sonra "TR" düğmesinin arkasına geçer.
  */
 export default function Question({ q, mode = 'test', onAnswer, onNext, last, extra, items, newSet, speak, allowUnknown = false, alwaysHint = false }) {
@@ -18,6 +21,7 @@ export default function Question({ q, mode = 'test', onAnswer, onNext, last, ext
   const [collapsed] = useState(() => !alwaysHint && !!hint && hintCollapsed(seen, hint.key))
   const [open, setOpen] = useState(false)
   useEffect(() => { if (hint && !alwaysHint) bump(hint.key) }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { if (q.listen) say(q.listen) }, [q.listen])
   const learn = mode === 'learn'
   const ok = picked === q.correctIndex
 
@@ -38,6 +42,7 @@ export default function Question({ q, mode = 'test', onAnswer, onNext, last, ext
       <p className="prompt">{rt(q.prompt)}</p>
       {hint && (!collapsed || open) && <p className="hint">🇹🇷 {hint.text}</p>}
       {hint && collapsed && !open && <button type="button" className="hintbtn" onClick={() => setOpen(true)}>🇹🇷 Türkçesi</button>}
+      {q.listen && <button type="button" className="btn listen" onClick={() => say(q.listen)}><SpeakerIcon /> Tekrar dinle</button>}
       {q.stem && <p className={`stem${q.stem.replace(/<[^>]+>/g, '').length > 120 ? ' long' : ''}`}>{rt(q.stem)}</p>}
       <div className="opts" role="radiogroup">
         {q.options.map((o, i) => (

@@ -8,8 +8,9 @@ export const mulberry32 = a => () => {
   return ((t ^ (t >>> 14)) >>> 0) / 4294967296
 }
 
-/** itemId → o kelimeyle ilgili tüm sorular (role: sezdir/kullan/sina/review/retention). */
-export function buildQuestionIndex({ units, retention }) {
+/** itemId → o kelimeyle ilgili tüm sorular (role: sezdir/kullan/sina/review/retention/drill).
+ *  drill: içerik derlemesinde üretilen anlam/çeviri/dinle/zıt soruları; listen false ise (ses yok) dinleme soruları alınmaz. */
+export function buildQuestionIndex({ units, retention, listen = true }) {
   const idx = new Map()
   const add = (itemId, role, q, meta) => {
     if (!itemId || !q) return
@@ -24,11 +25,12 @@ export function buildQuestionIndex({ units, retention }) {
     }
     for (const q of d.review || []) add(q.item, 'review', q, meta)
   }
+  for (const u of units) for (const q of u.drills || []) if (listen || q.type !== 'dinle') add(q.item, 'drill', q, { unit: u.unit })
   for (const sec of retention?.sections || []) for (const q of sec.questions) add(q.item, 'retention', q, {})
   return idx
 }
 
-const REVIEW_ROLES = ['review', 'retention', 'kullan', 'sina']
+const REVIEW_ROLES = ['review', 'retention', 'kullan', 'sina', 'drill']
 
 /** Tekrar için soru seç: önce hiç doğru yapılmamış, sonra son sorulandan farklı olan; sezdir en son çare. */
 export function pickQuestion(index, itemId, p, { roles = REVIEW_ROLES, rng = Math.random } = {}) {
@@ -51,6 +53,13 @@ export function shuffleOptions(q, rng = Math.random) {
     [order[i], order[j]] = [order[j], order[i]]
   }
   return { ...q, options: order.map(i => q.options[i]), correctIndex: order.indexOf(q.answer ?? 0) }
+}
+
+/** Kelimenin alıştırma sorusu: types sırasıyla ilk bulunan tip. */
+export const drillFor = (index, itemId, types) => {
+  const qs = (index.get(itemId) || []).filter(q => q.role === 'drill')
+  for (const t of types) { const q = qs.find(x => x.type === t); if (q) return q }
+  return null
 }
 
 export const isCorrect = (shuffled, pickedIndex) => pickedIndex === shuffled.correctIndex

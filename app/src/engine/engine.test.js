@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import {
   DAY, createProgress, recordAnswer, setLevel, statusOf, getItem, counts,
-  dueItems, dueCountBy, nextDueAt, buildQuestionIndex, pickQuestion, shuffleOptions, isCorrect, mulberry32,
+  dueItems, dueCountBy, nextDueAt, buildQuestionIndex, drillFor, pickQuestion, shuffleOptions, isCorrect, mulberry32,
   scorePlacement, applyUnitCheck, planLesson, lessonMinutes,
 } from './index.js'
 
@@ -155,7 +155,8 @@ test('planLesson: kart-önce akışta adımlar kullan+sına; kartlar bilinmeyenl
   const day = { steps: [{ item: 'A' }, { item: 'B' }], review: [{ id: 'r' }] }
   const plan = planLesson(day, p, T0 + 10 * DAY)
   assert.equal(plan.mode, 'cardFirst')
-  assert.deepEqual(plan.steps.map(s => s.parts), [['kullan', 'sina'], ['kullan', 'sina']])
+  assert.deepEqual(plan.steps.map(s => s.parts), [['kullan', 'sina'], ['tani', 'kullan', 'sina']])
+  assert.equal(plan.steps[1].taniType, 'dinle')
   assert.deepEqual(plan.cardItems, ['B'])
   assert.deepEqual(plan.extraReview, ['Z'])
 })
@@ -189,6 +190,21 @@ test('gerçek içerik: tüm sorularda answer 0 ve ≥2 şık; her adım kelimesi
     for (const r of need) assert.ok(roles.includes(r), `${s.item} ${r}`)
   }
   assert.ok(n > 500)
+  for (const u of units) for (const q of u.drills) {
+    assert.equal(new Set(q.options).size, 4, q.id) // 4 farklı şık
+    assert.ok(index.get(q.item), q.id)
+  }
+})
+
+test('alıştırma soruları: dizine drill rolüyle girer; ses yoksa dinleme alınmaz; drillFor tip sırasına uyar', () => {
+  const u = { unit: 1, days: [], drills: [
+    { id: 'A-anlam', item: 'A', type: 'anlam', options: ['a', 'b', 'c', 'd'], answer: 0 },
+    { id: 'A-dinle', item: 'A', type: 'dinle', listen: 'x', options: ['a', 'b', 'c', 'd'], answer: 0 }] }
+  assert.deepEqual(buildQuestionIndex({ units: [u] }).get('A').map(q => q.role), ['drill', 'drill'])
+  const mute = buildQuestionIndex({ units: [u], listen: false })
+  assert.deepEqual(mute.get('A').map(q => q.id), ['A-anlam'])
+  assert.equal(drillFor(mute, 'A', ['dinle', 'anlam']).id, 'A-anlam')
+  assert.equal(drillFor(mute, 'B', ['anlam']), null)
 })
 
 test('hafif mod: tekrar sorusu indekste "review" rolüyle; ders planında ilk adım kart', () => {
@@ -196,7 +212,7 @@ test('hafif mod: tekrar sorusu indekste "review" rolüyle; ders planında ilk ad
   const idx = buildQuestionIndex({ units: [light], retention: null })
   assert.deepEqual(idx.get('L').map(q => `${q.id}:${q.role}`).sort(), ['k:kullan', 's:sina', 't:review'])
   const plan = planLesson(light.days[0], createProgress(), T0)
-  assert.deepEqual(plan.steps[0].parts, ['card', 'kullan', 'sina'])
+  assert.deepEqual(plan.steps[0].parts, ['card', 'tani', 'kullan', 'sina'])
   const known = applyUnitCheck(createProgress(), { itemIds: ['L'], claimed: ['L'], verified: { L: true }, fakes: 0, now: T0 })
   assert.deepEqual(planLesson(light.days[0], known, T0).steps[0].parts, ['kullan', 'sina'])
   // tekrar sorusu, ders günü soruları doğru yapılmışsa tekrarda seçilir
@@ -214,6 +230,6 @@ test('dueCountBy: verilen zamana kadar vadesi gelenleri sayar', () => {
 })
 
 test('lessonMinutes: hikâyeli günde hikâye sayılmaz, hafif modda içerikteki süre', () => {
-  assert.equal(lessonMinutes({ new_items: ['a', 'b', 'c', 'd', 'e', 'f'], review: [], est_minutes: 9 }), 7)
+  assert.equal(lessonMinutes({ new_items: ['a', 'b', 'c', 'd', 'e', 'f'], review: [], est_minutes: 9 }), 9)
   assert.equal(lessonMinutes({ mode: 'light', new_items: ['a'], est_minutes: 6 }), 6)
 })

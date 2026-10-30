@@ -1,6 +1,6 @@
 import SpeakerIcon from '../components/SpeakerIcon.jsx'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { planLesson, pickQuestion, alternativeQuestion, statusOf, dueCountBy, endOfTomorrow } from '../engine'
+import { planLesson, pickQuestion, alternativeQuestion, drillFor, TANI_TYPES, statusOf, dueCountBy, endOfTomorrow } from '../engine'
 import { speak } from '../tts.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
@@ -10,7 +10,7 @@ import Run from '../components/Run.jsx'
 import CardView from '../components/CardView.jsx'
 
 const TIP = { hafiza_kancasi: 'Hafıza kancası', tuzak: 'Tuzak', lgs_taktigi: 'LGS taktiği', kelime_ailesi: 'Kelime ailesi', ilginc_bilgi: 'İlginç bilgi', mini_dilbilgisi: 'Mini dilbilgisi' }
-const STAGE_LABEL = { card: 'Kart', sezdir: 'Sezdir', kullan: 'Kullan', sina: 'Sına' }
+const STAGE_LABEL = { card: 'Kart', tani: 'Tanı', sezdir: 'Sezdir', kullan: 'Kullan', sina: 'Sına' }
 const PHASES_STORY = ['story', 'scene', 'steps', 'review', 'tips'] // ileri seviye: hikâyeden sezdirme
 const PHASES_CARDS = ['cards', 'scene', 'steps', 'review', 'tips'] // kart → kısa sahne → alıştırma; uzun hikâye isteğe bağlı
 const PHASES_LIGHT = ['steps', 'review', 'tips'] // hafif mod: hikâye ve sahne yok
@@ -22,7 +22,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   const advanced = plan.mode === 'advanced'
   const hasScene = Boolean(day.scene?.length)
   const PHASES = (light ? PHASES_LIGHT : cardFirst ? PHASES_CARDS.filter(x => (x !== 'cards' || plan.cardItems.length) && (x !== 'scene' || hasScene)) : PHASES_STORY)
-  const STAGE = light ? ['card', 'kullan', 'sina'] : advanced ? ['sezdir', 'kullan', 'sina'] : ['kullan', 'sina']
+  const STAGE = light ? ['card', 'tani', 'kullan', 'sina'] : advanced ? ['sezdir', 'kullan', 'sina'] : ['tani', 'kullan', 'sina']
   const newSet = useMemo(() => new Set(day.new_items), [day])
   const [phase, setPhase] = useState(light ? 'steps' : cardFirst ? (plan.cardItems.length ? 'cards' : hasScene ? 'scene' : 'steps') : 'story')
   const [storyBack, setStoryBack] = useState(null) // kart-önce akışta hikâye isteğe bağlı: okuyunca bu aşamaya dönülür
@@ -65,8 +65,10 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   const { stepList, leftoverTips } = useMemo(() => {
     const flat = plan.steps.flatMap(s => s.parts.map(k => {
       const step = day.steps.find(x => x.item === s.item)
-      return k === 'card' ? { itemId: s.item, role: 'card', card: step.card } : { itemId: s.item, role: k, q: step[k] }
-    }))
+      if (k === 'card') return { itemId: s.item, role: 'card', card: step.card }
+      if (k === 'tani') return { itemId: s.item, role: 'tani', q: drillFor(qIndex, s.item, [s.taniType, ...TANI_TYPES]) }
+      return { itemId: s.item, role: k, q: step[k] }
+    })).filter(e => e.role === 'card' || e.q)
     const lastIdx = {}
     flat.forEach((e, i) => { lastIdx[e.itemId] = i })
     const placed = [], leftover = []
@@ -78,7 +80,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
     const out = [...flat]
     placed.forEach(p => out.splice(p.at + 1, 0, { itemId: null, role: 'tip', tip: p.tip }))
     return { stepList: out, leftoverTips: leftover }
-  }, [plan, day])
+  }, [plan, day, qIndex])
   const reviewList = useMemo(() => [
     ...plan.review.map(q => ({ itemId: q.item, role: 'review', q })),
     ...plan.extraReview.map(id => ({ itemId: id, role: 'review', q: pickQuestion(qIndex, id, state.progress) })).filter(e => e.q),
@@ -164,7 +166,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       render={(entry, shuffled, last, onAnswer, onNext, i, queue) => {
         if (entry.role === 'tip') return (
           <div className="wrap">
-            {head(advanced ? 'Sezdir · Kullan · Sına' : 'Kullan · Sına', 'Hap bilgi')}
+            {head(advanced ? 'Sezdir · Kullan · Sına' : 'Alıştırma', 'Hap bilgi')}
             <TipView tip={entry.tip} last={last} onNext={onNext} />
           </div>
         )
@@ -179,7 +181,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
         const ctx = entry.role === 'sezdir' && day.story.find(l => l.id === entry.q.context)
         return (
           <div className="wrap">
-            {head(advanced ? 'Sezdir · Kullan · Sına' : 'Kullan · Sına', 'Bugünün ifadeleri')}
+            {head(advanced ? 'Sezdir · Kullan · Sına' : 'Alıştırma', 'Bugünün ifadeleri')}
             <Progress queue={queue} i={i} />
             <div className="spread">
               <span className="stage">{STAGE.map(s => <i key={s} className={s === entry.role ? 'on' : ''}>{STAGE_LABEL[s]}</i>)}</span>
@@ -208,7 +210,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
         <div className="wrap">
           {head('Tekrar', 'Önceki günlerden')}
           <Progress queue={queue} i={i} />
-          <Coach text={light ? 'Önceki günlerden bazı ifadeleri tekrar edelim.' : 'Türkçe yok: bakalım önceki ifadeler aklında kalmış mı?'} />
+          <Coach text={light ? 'Önceki günlerden bazı ifadeleri tekrar edelim.' : 'Bakalım önceki ifadeler aklında kalmış mı?'} />
           <Question key={entry.q.id} q={shuffled} mode="learn" last={last} items={items} onAnswer={onAnswer} onNext={onNext} />
         </div>
       )}

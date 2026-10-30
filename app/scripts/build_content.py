@@ -2,7 +2,9 @@
 Kullanım (repo kökünden): python3 app/scripts/build_content.py
 Çıktı: app/public/content/index.json + unit_XX.json (ünite başına tembel yüklenir)
 """
-import glob, json, os, yaml
+import glob, json, os, sys, yaml
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import drills
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 C = os.path.join(ROOT, "lgs-pilot", "content")
 OUT = os.path.join(ROOT, "app", "public", "content")
@@ -23,8 +25,10 @@ for u in range(1, 11):
     for i in it["items"]:
         if i["id"] in GLOSS:
             i["gloss_tr"] = GLOSS[i["id"]]
-    dump(f"unit_{u:02d}.json", {"unit": u, "title": it["unit_title"], "items": it["items"], "days": days})
-    units.append({"unit": u, "title": it["unit_title"], "itemCount": len(it["items"]), "dayCount": len(days)})
+    kaynak = os.path.join(ROOT, "lgs-kaynak", "units", f"unit_{u:02d}_kaynak.yaml")
+    dr = drills.build(it["items"], L(kaynak) if os.path.exists(kaynak) else None)  # anlam/çeviri/dinle/zıt alıştırmaları
+    dump(f"unit_{u:02d}.json", {"unit": u, "title": it["unit_title"], "items": it["items"], "days": days, "drills": dr})
+    units.append({"unit": u, "title": it["unit_title"], "itemCount": len(it["items"]), "dayCount": len(days), "drillCount": len(dr)})
 # Sınav Dili ek dersi: kilit etiketi ("Ü1 G3" / "Ü1 sonu") sayıya çevrilir, derslerin açılma sırasına dizilir.
 import re
 def unlock(t):
@@ -44,4 +48,4 @@ dump("index.json", {
     "retention": L(os.path.join(C, "tests", "retention_checks.yaml")),
     "coach": L(os.path.join(C, "coach.yaml")),
 })
-print("ok", [(x["unit"], x["itemCount"], x["dayCount"]) for x in units], "sınav dili:", len(exam))
+print("ok", [(x["unit"], x["itemCount"], x["dayCount"], x["drillCount"]) for x in units], "sınav dili:", len(exam))

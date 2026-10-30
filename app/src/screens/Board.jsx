@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { loadIndex, loadUnit, loadAllUnits } from '../content.js'
 import { buildQuestionIndex, createProgress, recordAnswer } from '../engine'
 import { HintCtx } from '../hintContext.js'
+import { canSpeak } from '../tts.js'
 import { LogoLockup } from '../components/Logo.jsx'
 import Splash from '../components/Splash.jsx'
 import Lesson from './Lesson.jsx'
@@ -22,7 +23,7 @@ export default function Board() {
     loadIndex().then(async idx => {
       const units = await loadAllUnits(idx)
       setCtx({
-        qIndex: buildQuestionIndex({ units, retention: idx.retention }),
+        qIndex: buildQuestionIndex({ units, retention: idx.retention, listen: canSpeak }),
         items: Object.fromEntries(units.flatMap(u => u.items).map(i => [i.id, i])),
       })
       setIndex(idx)

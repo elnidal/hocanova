@@ -20,6 +20,8 @@ export const bestVoice = voices => voices.map(v => [rankVoice(v), v]).filter(([s
 const TR_TAGS = /\b(SIFAT|FİİL|İSİM|ZARF|ÖZNE|NESNE)\b/g
 export const speakable = t => String(t).replace(TR_TAGS, ' ').replace(/_{3,}/g, 'blank').replace(/[…+]/g, ' ').replace(/\s+/g, ' ').trim()
 
+export const canSpeak = Boolean(synth)
+
 let voice = null
 const pick = () => { voice = bestVoice(synth?.getVoices?.() || []) }
 if (synth) { pick(); synth.onvoiceschanged = pick }
