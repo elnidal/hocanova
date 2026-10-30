@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "node --test src/engine/*.test.js src/*.test.js",
-    "deploy": "npm run content && vite build && netlify deploy --dir=dist --prod --site d995158d-61be-48b2-aa84-885e037dad2f"
+    "deploy": "npm run content && vite build && netlify deploy --dir=dist --prod --site cda4e72c-84f9-455e-b6d5-88bcd4e9b9e9"
   },
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "^5.3.0",
