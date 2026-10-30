@@ -11,8 +11,8 @@ import CardView from '../components/CardView.jsx'
 
 const TIP = { hafiza_kancasi: 'Hafıza kancası', tuzak: 'Tuzak', lgs_taktigi: 'LGS taktiği', kelime_ailesi: 'Kelime ailesi', ilginc_bilgi: 'İlginç bilgi', mini_dilbilgisi: 'Mini dilbilgisi' }
 const STAGE_LABEL = { card: 'Kart', sezdir: 'Sezdir', kullan: 'Kullan', sina: 'Sına' }
-const PHASES_STORY = ['story', 'scene', 'steps', 'review', 'tips']
-const PHASES_CARDS = ['cards', ...PHASES_STORY]
+const PHASES_STORY = ['story', 'scene', 'steps', 'review', 'tips'] // ileri seviye: hikâyeden sezdirme
+const PHASES_CARDS = ['cards', 'scene', 'steps', 'review', 'tips'] // kart → kısa sahne → alıştırma; uzun hikâye isteğe bağlı
 const PHASES_LIGHT = ['steps', 'review', 'tips'] // hafif mod: hikâye ve sahne yok
 
 export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext, softCapped }) {
@@ -20,10 +20,13 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   const [plan] = useState(() => planLesson(day, state.progress, Date.now()))
   const cardFirst = plan.mode === 'cardFirst'
   const advanced = plan.mode === 'advanced'
-  const PHASES = light ? PHASES_LIGHT : cardFirst && plan.cardItems.length ? PHASES_CARDS : PHASES_STORY
+  const hasScene = Boolean(day.scene?.length)
+  const PHASES = (light ? PHASES_LIGHT : cardFirst ? PHASES_CARDS.filter(x => (x !== 'cards' || plan.cardItems.length) && (x !== 'scene' || hasScene)) : PHASES_STORY)
   const STAGE = light ? ['card', 'kullan', 'sina'] : advanced ? ['sezdir', 'kullan', 'sina'] : ['kullan', 'sina']
   const newSet = useMemo(() => new Set(day.new_items), [day])
-  const [phase, setPhase] = useState(light ? 'steps' : cardFirst && plan.cardItems.length ? 'cards' : 'story')
+  const [phase, setPhase] = useState(light ? 'steps' : cardFirst ? (plan.cardItems.length ? 'cards' : hasScene ? 'scene' : 'steps') : 'story')
+  const [storyBack, setStoryBack] = useState(null) // kart-önce akışta hikâye isteğe bağlı: okuyunca bu aşamaya dönülür
+  const openStory = () => { setPop(null); setShown(CHUNK); setStoryBack(phase); setPhase('story') }
   const asked = useRef(new Set()) // bu derste sorulan soru kimlikleri: yanlışta aynı soruyu tekrar sormamak için
   const [stats, setStats] = useState({ first: 0, total: 0, wrong: [] })
   const [pop, setPop] = useState(null) // dokunulan ifadenin anlam kutusu
@@ -43,7 +46,8 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   // İlk geçişte kısa Türkçe karşılık (ileri seviyede yok: orada anlamı çıkarmaya çalışırlar)
   const glossByLine = useMemo(() => {
     const seen = new Set(), out = {}
-    for (const l of [...(day.story || []), ...(day.scene || [])]) {
+    const lines = cardFirst ? [...(day.scene || []), ...(day.story || [])] : [...(day.story || []), ...(day.scene || [])] // kısa Türkçe, ilk okunan yerde
+    for (const l of lines) {
       const g = {}
       for (const id of markIds(l.text)) if (newSet.has(id) && !seen.has(id)) { seen.add(id); g[id] = shortGloss(items[id]) }
       out[l.id] = advanced ? {} : g
@@ -86,10 +90,11 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   }
 
   const phaseNo = PHASES.indexOf(phase) + 1
+  const closeStory = () => { setPop(null); setPhase(storyBack); setStoryBack(null) }
   const head = (title, sub) => (
     <div className="spread">
-      <button className="btn ghost sm" onClick={onExit}>← Geri</button>
-      <span className="chip">Gün {day.day} · {phaseNo}/{PHASES.length}</span>
+      <button className="btn ghost sm" onClick={storyBack && phase === 'story' ? closeStory : onExit}>← Geri</button>
+      <span className="chip">Gün {day.day} · {phaseNo ? `${phaseNo}/${PHASES.length}` : 'isteğe bağlı'}</span>
       <div className="grow"><div className="eyebrow">{sub}</div><h2>{title}</h2></div>
     </div>
   )
@@ -105,18 +110,18 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       render={(entry, _s, last, _a, onNext, i) => (
         <div className="wrap">
           {head('Bugünün ifadeleri', 'Önce öğrenelim')}
-          {i === 0 && <Coach text={`Bugün ${cardEntries.length} yeni ifade var. Önce onlara kısaca bakalım, sonra hikâyede nasıl geçtiklerini göreceksin.`} />}
-          <CardView item={items[entry.itemId]} card={entry.card} status={statusOf(state.progress, entry.itemId)} last={last} nextLabel={last ? 'Hikâyeye geç' : 'Sonraki'} onNext={onNext} />
+          {i === 0 && <Coach text={`Bugün ${cardEntries.length} yeni ifade var. Önce onlara kısaca bakalım, sonra ${hasScene ? 'kısa bir sahnede görüp ' : ''}bol bol alıştırma yapacağız.`} />}
+          <CardView item={items[entry.itemId]} card={entry.card} status={statusOf(state.progress, entry.itemId)} last={last} nextLabel={last ? (hasScene ? 'Sahneye geç' : 'Alıştırmaya geç') : 'Sonraki'} onNext={onNext} />
         </div>
       )}
       onResult={() => null}
-      onEnd={() => setPhase('story')} />
+      onEnd={() => setPhase(hasScene ? 'scene' : 'steps')} />
   )
 
   if (phase === 'story') return (
     <div className="wrap">
       {head(day.title, advanced ? 'Hikâye · sezdir' : 'Hikâyede gör')}
-      {!cardFirst && <Coach text={day.coach.start} />}
+      {!storyBack && <Coach text={day.coach.start} />}
       <section className="card story">
         <p className="muted small">{advanced
           ? <>Oku. <b className="hot">Kırmızı</b> ifadeler bugün yeni: anlamını hikâyeden çıkarmaya çalış. Dokununca okunuşunu duyarsın.</>
@@ -125,10 +130,10 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
         {shown < day.story.length && <p className="muted small">{shown} / {day.story.length} satır</p>}
       </section>
       <div className="row">
-        {cardFirst && <button className="btn ghost" onClick={() => { setPop(null); setPhase('steps') }}>Hikâyeyi atla</button>}
+        {storyBack && shown < day.story.length && <button className="btn ghost" onClick={closeStory}>Hikâyeyi kapat</button>}
         {shown < day.story.length
           ? <button className="btn" onClick={() => setShown(n => Math.min(n + CHUNK, day.story.length))}>Devam →</button>
-          : <button className="btn" onClick={() => { setPop(null); setPhase(day.scene?.length ? 'scene' : 'steps') }}>Sonraki →</button>}
+          : <button className="btn" onClick={() => (storyBack ? closeStory() : (setPop(null), setPhase(hasScene ? 'scene' : 'steps')))}>{storyBack ? 'Bitti, geri dön' : 'Sonraki →'}</button>}
       </div>
       {popup}
     </div>
@@ -145,7 +150,10 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
           ))}
         </section>
         <p className="muted">Hepsini anlamaya çalış; bilmediğin kelimeye takılma.</p>
-        <div className="nav"><button className="btn" onClick={() => { setPop(null); setPhase('steps') }}>Sonraki →</button></div>
+        <div className="row">
+          {cardFirst && day.story?.length > 0 && <button className="btn ghost" onClick={openStory}>Hikâyenin tamamını oku (isteğe bağlı)</button>}
+          <button className="btn" onClick={() => { setPop(null); setPhase('steps') }}>Alıştırmaya geç →</button>
+        </div>
         {popup}
       </div>
     )
@@ -237,6 +245,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       {softCapped && <p className="softnote">Bugün çok yeni ifade öğrendin! Beyin dinlenirken öğrendiklerini pekiştirir; yarınki tekrar çok işe yarayacak. İstersen yine de devam edebilirsin.</p>}
       <div className="row">
         <button className="btn ghost" onClick={onExit}>← Ana ekran</button>
+        {cardFirst && day.story?.length > 0 && <button className="btn ghost" onClick={openStory}>Günün hikâyesini oku</button>}
         {onNext && <button className="btn" onClick={onNext}>{softCapped ? 'Yine de devam et →' : 'Bir tane daha →'}</button>}
       </div>
     </div>

@@ -4,7 +4,7 @@ import { dueItems } from './schedule.js'
 /**
  * Günlük ders planı.
  *  - Hafif mod: kart → kullan → sına.
- *  - Hikâyeli gün: kartlar ayrı bir aşamada (known olmayan birimler için) gösterilir; adımlarda yalnız kullan + sına gelir.
+ *  - Hikâyeli gün: kartlar (known olmayan birimler) → kısa İngilizce sahne → kullan + sına; uzun hikâye isteğe bağlı (Lesson.jsx).
  *    "ileri" seviyede eski akış bonus olarak sürer: önce hikâye, sonra her birim için sezdir → kullan → sına.
  *  - Bilinen birimde tanıtım adımı (kart / sezdir) atlanır.
  * extraReview: dersin kendi tekrar sorularına ek, vakti gelmiş kelimeler (tavanlı).
