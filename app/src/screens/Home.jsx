@@ -1,4 +1,4 @@
-import { counts, dueCount, newItemsToday, overSoftCap, NEW_ITEMS_SOFT_CAP, retentionState } from '../engine'
+import { counts, dueCount, newItemsToday, overSoftCap, NEW_ITEMS_SOFT_CAP, retentionState, lessonMinutes } from '../engine'
 import Coach from '../components/Coach.jsx'
 import { LogoLockup } from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
@@ -68,8 +68,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
       ) : nextDay ? (
         <section className="card today">
           <div className="eyebrow">{doneN ? 'Sıradaki ders' : 'İlk ders'} · Gün {nextDay.day}</div>
-          <h2>{nextDay.title}</h2>
-          <p className="muted">{nextDay.est_minutes} dk · {nextDay.new_items.length} yeni ifade{due ? ` · ${due} tekrar bekliyor` : ''}</p>
+          <h2 lang="en">{nextDay.new_items.map(id => unit.items.find(i => i.id === id)?.display).filter(Boolean).join(' · ')}</h2>
+          <p className="muted">{lessonMinutes(nextDay)} dk · {nextDay.new_items.length} yeni ifade · kart, sahne, alıştırma{due ? ` · ${due} tekrar bekliyor` : ''}</p>
           {capped && <p className="softnote">Bugün {newToday} yeni ifade öğrendin, harika! Yarınki tekrar bunları kalıcı yapar; istersen yine de devam edebilirsin.</p>}
           <button className="btn" onClick={() => onLesson(nextDay.day)}>{capped ? 'Yine de bir ders daha →' : 'Derse başla →'}</button>
         </section>

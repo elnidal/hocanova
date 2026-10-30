@@ -4,7 +4,7 @@ import fs from 'node:fs'
 import {
   DAY, createProgress, recordAnswer, setLevel, statusOf, getItem, counts,
   dueItems, dueCountBy, nextDueAt, buildQuestionIndex, pickQuestion, shuffleOptions, isCorrect, mulberry32,
-  scorePlacement, applyUnitCheck, planLesson,
+  scorePlacement, applyUnitCheck, planLesson, lessonMinutes,
 } from './index.js'
 
 const T0 = 1_700_000_000_000
@@ -211,4 +211,9 @@ test('dueCountBy: verilen zamana kadar vadesi gelenleri sayar', () => {
   assert.equal(dueCountBy(p, T0 + DAY), 1)
   assert.equal(dueCountBy(p, T0 + 5 * DAY), 2)
   assert.equal(dueCountBy(createProgress(), T0), 0)
+})
+
+test('lessonMinutes: hikâyeli günde hikâye sayılmaz, hafif modda içerikteki süre', () => {
+  assert.equal(lessonMinutes({ new_items: ['a', 'b', 'c', 'd', 'e', 'f'], review: [], est_minutes: 9 }), 7)
+  assert.equal(lessonMinutes({ mode: 'light', new_items: ['a'], est_minutes: 6 }), 6)
 })

@@ -26,3 +26,8 @@ export function planLesson(day, p, now, { reviewLimit = 6 } = {}) {
     extraReview: dueItems(p, now, { limit: reviewLimit, exclude: inDay }),
   }
 }
+
+/** Ana ekranda gösterilen ders süresi (dk). Hikâyeli günlerin içerikteki süresi uzun hikâyeyi de sayar;
+ *  yeni akışta hikâye isteğe bağlı: kart ~20 sn, sahne ~30 sn, soru ~20 sn. Hafif modda içerikteki süre kullanılır. */
+export const lessonMinutes = day => day.mode === 'light' ? day.est_minutes
+  : Math.max(3, Math.round(day.new_items.length / 3 + (2 * day.new_items.length + (day.review?.length || 0)) / 3 + 0.5))
