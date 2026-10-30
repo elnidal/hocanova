@@ -35,7 +35,7 @@ docs/                      # üretim yöntemi, ilk plan, ekran görüntüleri
 ## Komutlar
 
 ```bash
-pip install pyyaml jsonschema openpyxl playwright   # Chromium + ffmpeg de gerekli (Reels için)
+python3 -m venv .venv && .venv/bin/pip install pyyaml jsonschema openpyxl playwright   # Chromium + ffmpeg de gerekli (Reels için); Homebrew Python sistem geneline pip kurdurmaz
 python3 lgs-pilot/tools/lgs_validate.py           # günlük dersler → beklenen: 0 ENGEL, 0 UYARI
 python3 lgs-pilot/tools/exam_course_validate.py   # ek ders → 0 ENGEL
 python3 lgs-pilot/tools/exam_course_md.py         # ek dersin okunur .md'si
