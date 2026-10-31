@@ -207,7 +207,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         <button className="linkbtn" onClick={() => { if (confirm('Tüm ilerleme bu cihazdan silinsin mi?')) dispatch({ type: 'reset' }) }}>Verileri sıfırla</button>
       </details>
 
-      <p className="rolelinks small"><a className="linkbtn" href="#giris">Öğretmen misiniz? Tahta modu ve panel · Veli girişi →</a></p>
+      <p className="rolelinks small"><a className="linkbtn" href="#giris">Öğretmen / veli girişi</a> · <a className="linkbtn" href="#tanitim">Hoca Nova hakkında</a></p>
     </div>
   )
 }
