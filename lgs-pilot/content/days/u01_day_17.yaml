@@ -285,7 +285,7 @@ review:
     item: U1-045
     lgs_like: true
     prompt: "<en>Which one describes their friendship best?</en>"
-    stem: "<en>Ece and Selin have been friends since kindergarten. They share everything and always support each other.</en>"
+    stem: "<en>Ece and Selin became friends in kindergarten, and they are still best friends. They share everything and always support each other.</en>"
     options: ["They have a strong bond.", "They have a bad feeling.", "They have a big argument.", "They have a new relationship."]
     answer: 0
     explain: "Anaokulundan beri arkadaş olan, her şeyi paylaşan ve destekleyen kızların güçlü bir bağı vardır."

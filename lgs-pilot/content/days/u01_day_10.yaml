@@ -210,7 +210,7 @@ steps:
       type: trait_match
       lgs_like: true
       prompt: "<en>Which sentence best describes Ali and Can?</en>"
-      stem: "<en>Ali and Can have been friends since kindergarten. They help each other with every problem, and they never stay angry for long.</en>"
+      stem: "<en>Ali and Can became friends in kindergarten, and they are still best friends. They help each other with every problem, and they never stay angry for long.</en>"
       options: ["They have a strong bond.", "They never get on well.", "They don't trust each other.", "They have nothing in common."]
       answer: 0
       explain: "Anaokulundan beri arkadaş, birbirlerine yardım ediyor ve uzun küsmüyorlar: güçlü bir bağları var."

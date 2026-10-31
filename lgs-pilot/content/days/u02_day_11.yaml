@@ -325,14 +325,14 @@ review:
     item: U2-024
     lgs_like: true
     prompt: "<en>Which music genre does Murat Bey probably like?</en>"
-    stem: "<en>Murat Bey: I love the saxophone and the piano. My favourite musicians are Louis Armstrong and Ella Fitzgerald.</en>"
+    stem: "<en>Murat Bey: I love the saxophone and the piano. On Friday nights I go to a small club and listen to a band with a trumpet and a double bass.</en>"
     options: ["jazz", "rap", "rock music", "folk music"]
     answer: 0
-    explain: "Saksafon, piyano, Louis Armstrong, Ella Fitzgerald: caz müziği."
+    explain: "Saksafon, piyano, trompet, kontrbas ve küçük bir kulüp: caz müziği."
     why_wrong:
-      - "Rap için ipucu yok; saksafon ve Louis Armstrong caza işaret eder."
-      - "Rock için ipucu yok; saksafon ve Ella Fitzgerald caza işaret eder."
-      - "Halk müziği geleneksel şarkılardır; saksafon ve bu isimler caza ait."
+      - "Rap için ipucu yok; saksafon ve trompet caza işaret eder."
+      - "Rock için ipucu yok; saksafon ve kontrbas caza işaret eder."
+      - "Halk müziği geleneksel şarkılardır; saksafon, trompet ve kulüp grubu caza ait."
   - id: u2d11-r10
     type: gap_fill
     item: U2-020

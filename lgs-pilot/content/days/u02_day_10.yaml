@@ -342,13 +342,13 @@ review:
     item: U2-018
     lgs_like: true
     prompt: "<en>Your friend asks about her new haircut. You don't like it very much, but you want to tell the truth politely. What do you say?</en>"
-    options: ["To be honest, I liked your old haircut more.", "I'm crazy about rap music.", "I hardly ever go out.", "Let's go hiking!"]
+    options: ["To be honest, I liked your old haircut more.", "Wow, it's perfect! I love it!", "Your hair looks terrible. Go back to the hairdresser!", "I don't know. Ask someone else."]
     answer: 0
     explain: "Beğenmediğin saç için nazik ve dürüst cümle: To be honest, I liked your old haircut more."
     why_wrong:
-      - "Rap müzikle ilgili bu cümle saç sorusuna cevap değil."
-      - "Ne sıklıkla dışarı çıktığın saç sorusuyla ilgisiz."
-      - "Yürüyüş önerisi bir cevap değil; arkadaşın saçını soruyor."
+      - "Kibar ama doğru değil: aslında saçı pek beğenmiyorsun."
+      - "Doğruyu söylüyor ama kaba; soru kibarca söylemeni istiyor."
+      - "Fikrini hiç söylemiyor; soru doğruyu kibarca söylemeni istiyor."
 
 tips:
   - type: tuzak

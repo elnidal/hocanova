@@ -100,14 +100,14 @@ steps:
       type: situation
       lgs_like: true
       prompt: "<en>Which genre is Elif's mum fond of?</en>"
-      stem: "<en>Elif: My mum often goes to concerts with a big orchestra. She loves violins, pianos and composers like Mozart and Chopin.</en>"
+      stem: "<en>Elif: My mum often goes to concerts with a big orchestra. She loves violins, pianos and long pieces by composers from the 1700s.</en>"
       options: ["classical music", "rap", "rock music", "folk music"]
       answer: 0
-      explain: "Büyük orkestra, keman, piyano, Mozart, Chopin: klasik müzik."
+      explain: "Büyük orkestra, keman, piyano, 1700'lerin bestecileri: klasik müzik."
       why_wrong:
-        - "Rap hızlı söz ve ritimle yapılır; orkestra, keman ve Mozart klasik müzik ipucu."
-        - "Rock'ta orkestra ve Mozart yoktur; ipuçları klasik müziğe ait."
-        - "Halk müziği geleneksel şarkılardır; Mozart ve Chopin klasik müzik bestecisi."
+        - "Rap hızlı söz ve ritimle yapılır; orkestra, keman ve eski besteciler klasik müzik ipucu."
+        - "Rock'ta orkestra ve eski besteciler yoktur; ipuçları klasik müziğe ait."
+        - "Halk müziği geleneksel şarkılardır; orkestra ve besteci klasik müzik ipucu."
   - item: U2-026
     sezdir:
       id: u2d05-026-z
@@ -129,13 +129,13 @@ steps:
       type: message_infer
       lgs_like: true
       prompt: "<en>Look at the survey answers. Which genre does Selin's grandad listen to?</en>"
-      stem: "<en>Teen Life Survey – Question 4: What music does your family listen to?\nSelin's grandad: traditional songs from Anatolia, with the bağlama\nElif's mum: Mozart and Chopin, with a big orchestra\nKaan's brother: fast words, rhymes and a strong beat</en>"
+      stem: "<en>Teen Life Survey – Question 4: What music does your family listen to?\nSelin's grandad: traditional songs from Anatolia, with the bağlama\nElif's mum: music by old composers, with a big orchestra\nSelin's brother: fast words, rhymes and a strong beat</en>"
       options: ["folk music", "classical music", "rap", "jazz"]
       answer: 0
       explain: "Selin'in dedesi Anadolu'nun geleneksel şarkılarını bağlama ile dinliyor: halk müziği (folk music)."
       why_wrong:
         - "Klasik müzik Elif'in annesinin satırında; dedenin satırı \"traditional songs\"."
-        - "Rap Kaan'ın ağabeyinin satırına ait: \"fast words, rhymes and a strong beat\"."
+        - "Rap Selin'in ağabeyinin satırına ait: \"fast words, rhymes and a strong beat\"."
         - "Ankette caz için hiçbir ipucu yok; bağlama ve Anadolu halk müziğini gösterir."
   - item: U2-027
     sezdir:

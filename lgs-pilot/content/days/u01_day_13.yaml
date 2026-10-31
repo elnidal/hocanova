@@ -240,14 +240,14 @@ steps:
       id: d13-068-s
       type: odd_one_out
       lgs_like: true
-      prompt: "<en>Which word is DIFFERENT from the others?</en>"
+      prompt: "<en>Three of these words describe a good friend. Which one does NOT?</en>"
       options: ["unreliable", "reliable", "honest", "loyal"]
       answer: 0
-      explain: "unreliable olumsuz bir özellik; diğer üçü olumlu."
+      explain: "unreliable (güvenilmez) iyi bir arkadaşı anlatmaz; diğer üçü olumlu özellik."
       why_wrong:
-        - "\"Reliable\" güvenilir demek; olumlu bir özellik, yani diğerleriyle aynı grupta."
-        - "\"Honest\" dürüst demek; olumlu bir özellik, gruptan ayrılmıyor."
-        - "\"Loyal\" sadık demek; o da olumlu bir özellik. Farklı olan tek olumsuz kelime."
+        - "\"Reliable\" güvenilir demek; iyi bir arkadaşın özelliği."
+        - "\"Honest\" dürüst demek; iyi bir arkadaşın özelliği."
+        - "\"Loyal\" sadık demek; o da iyi bir arkadaşı anlatır."
 
 review:
   - id: d13-r01

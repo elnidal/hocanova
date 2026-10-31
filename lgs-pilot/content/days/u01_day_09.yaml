@@ -240,7 +240,7 @@ steps:
       type: odd_one_out
       lgs_like: true
       prompt: "<en>In which sentence does \"miss\" have a DIFFERENT meaning?</en>"
-      options: ["I miss my grandma. I haven't seen her for months.", "Hurry up, or you'll miss the bus.", "Kaan missed the start of the film.", "Don't miss the science fair on Friday!"]
+      options: ["I miss my grandma. She lives in another city now.", "Hurry up, or you'll miss the bus.", "Kaan missed the start of the film.", "Don't miss the science fair on Friday!"]
       answer: 0
       explain: "Birinci cümlede miss = özlemek. Diğerlerinde miss = kaçırmak (otobüsü, filmi, fuarı)."
       why_wrong:

@@ -308,14 +308,14 @@ review:
     item: U2-025
     lgs_like: true
     prompt: "<en>What kind of music does Murat Bey listen to while he studies?</en>"
-    stem: "<en>Murat Bey: When I study, I listen to Mozart and Beethoven. Their music helps me think.</en>"
+    stem: "<en>Murat Bey: When I study, I listen to long pieces for piano and violin by old composers. There are no words, and the music helps me think.</en>"
     options: ["classical music", "rap", "rock music", "folk music"]
     answer: 0
-    explain: "Çalışırken Mozart ve Beethoven dinliyor: klasik müzik."
+    explain: "Çalışırken eski bestecilerin piyano ve keman eserlerini dinliyor: klasik müzik."
     why_wrong:
-      - "Mozart ve Beethoven rap yapmaz; onlar klasik müzik bestecisi."
-      - "Rock için ipucu yok; Mozart ve Beethoven klasik müziği gösteriyor."
-      - "Halk müziği geleneksel şarkılardır; Mozart ve Beethoven klasik müziğe ait."
+      - "Rap'te sözler hızlı söylenir; bu müzikte söz yok, piyano ve keman var."
+      - "Rock için ipucu yok; eski besteciler, piyano ve keman klasik müziği gösteriyor."
+      - "Halk müziği geleneksel şarkılardır; eski bestecilerin piyano-keman eserleri klasik müziğe ait."
   - id: u2d12-r09
     type: gap_fill
     item: U2-029
@@ -333,11 +333,11 @@ review:
     type: message_infer
     item: U2-027
     lgs_like: true
-    prompt: "<en>Which music genre is Bora making?</en>"
-    stem: "<en>Bora writes rhyming words and says them very fast to a strong beat. He doesn't really sing.</en>"
+    prompt: "<en>Which music genre does MC Kuzey make?</en>"
+    stem: "<en>Selin's brother Emre's favourite singer is MC Kuzey. MC Kuzey writes rhyming words and says them very fast to a strong beat. He doesn't really sing.</en>"
     options: ["rap", "jazz", "classical music", "folk music"]
     answer: 0
-    explain: "Kafiyeli sözleri hızlıca ritim üzerinde söyleyen Bora rap yapıyor."
+    explain: "Kafiyeli sözleri hızlıca ritim üzerinde söyleyen MC Kuzey rap yapıyor."
     why_wrong:
       - "Caz için saksafon ya da trompet ipucu yok; kafiye ve ritim rap'e ait."
       - "Klasik müzikte orkestra olur; hızlı kafiyeli söz söylenmez."

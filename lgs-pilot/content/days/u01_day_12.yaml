@@ -311,7 +311,7 @@ review:
     item: U1-097
     lgs_like: true
     prompt: "<en>Which one completes the dialogue?</en>"
-    stem: "<en>Ece's mum: Would you like another piece of cake, Bora?\nBora: ________ I've already had three!</en>"
+    stem: "<en>Ece's mum: Would you like another piece of cake, Bora?\nBora: ________ I ate three pieces!</en>"
     options: ["No, thanks. I'm full.", "Yes, please. I'm hungry.", "Sorry, I'm busy.", "I have nothing to do."]
     answer: 0
     explain: "Üç dilim pasta yemiş; yeter diye cevaplar: No, thanks. I'm full."

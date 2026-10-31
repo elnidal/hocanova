@@ -234,14 +234,14 @@ steps:
       type: message_infer
       lgs_like: true
       prompt: "<en>Which genre does Bora's grandpa probably like?</en>"
-      stem: "<en>Bora: My grandpa has hundreds of old records. Every evening he listens to Louis Armstrong and plays his saxophone a little.</en>"
+      stem: "<en>Bora: My grandpa has hundreds of old records. In his youth he played in a small night club band. Every evening he listens to slow trumpet songs and plays his saxophone a little.</en>"
       options: ["jazz", "rap", "pop music", "rock music"]
       answer: 0
-      explain: "Louis Armstrong ünlü bir caz trompetçisiydi; saksafon da cazın simge çalgılarından biri."
+      explain: "Eski plaklar, gece kulübü grubu, trompet ve saksafon: cazın simgeleri."
       why_wrong:
-        - "Rap'te saksafon ve eski plaklar öne çıkmaz; ipuçları caza işaret ediyor."
-        - "Pop müzik için metinde ipucu yok; saksafon ve Louis Armstrong caza ait."
-        - "Rock'ta elektro gitar öne çıkar; saksafon ve Louis Armstrong caz ipucu."
+        - "Rap'te saksafon, trompet ve eski plaklar öne çıkmaz; ipuçları caza işaret ediyor."
+        - "Pop müzik için metinde ipucu yok; saksafon, trompet ve gece kulübü caza ait."
+        - "Rock'ta elektro gitar öne çıkar; saksafon ve trompet caz ipucu."
 
 review:
   - id: u2d04-r01
