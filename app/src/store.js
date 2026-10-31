@@ -28,6 +28,8 @@ function apply(s, a) {
     case 'examQ': return { ...s, daily: countAnswer(s.daily, a.now) }
     case 'examDone': return { ...s, examDone: { ...(s.examDone || {}), [a.id]: { ok: a.ok, n: a.n, at: a.now } } }
     case 'unitQuiz': return { ...s, unitQuiz: { ...(s.unitQuiz || {}), [a.unit]: { ...(s.unitQuiz?.[a.unit] || {}), [a.phase]: a.result } } }
+    case 'miniLgs': return { ...s, miniLgs: [...(s.miniLgs || []), a.result].slice(-30) }
+    case 'repairDone': return { ...s, repairs: [...(s.repairs || []), { units: a.units, ok: a.ok, n: a.n, at: a.now }].slice(-50) }
     case 'weekly': return { ...s, weekly: { ...(s.weekly || {}), [a.key]: a.result } }
     case 'onboarded': return { ...s, onboarded: true }
     case 'parentToken': return { ...s, parentToken: a.token }

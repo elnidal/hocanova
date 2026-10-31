@@ -12,3 +12,6 @@ __pycache__/
 .venv/
 
 .claude/settings.local.json
+
+# Haftalık sosyal medya çıktıları (PNG/MP4; betikle yeniden üretilir)
+sosyal_medya/haftalik/*/

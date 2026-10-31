@@ -1,31 +1,37 @@
 import { useState } from 'react'
 import NovaAvatar from '../components/NovaAvatar.jsx'
 import Logo from '../components/Logo.jsx'
+import { daysToLgs } from '../coachPlan.js'
 
-// İlk açılış turu: 3 kısa sayfa. Yalnız ilk girişte (ya da "Turu tekrar izle" ile) gösterilir.
+// İlk açılış turu: 3 kısa sayfa (tanıtım, günlük rutin, sınava doğru). Yalnız ilk girişte (ya da "Turu tekrar izle" ile) gösterilir.
 const PAGES = [
   {
-    title: 'Selam, ben Hoca Nova!',
-    body: 'LGS İngilizce kelime koçunum. 8. sınıfın 10 ünitesindeki kelimeleri ve kalıpları seninle adım adım çalışacağız. Ezber yok: önce görürsün, sonra kullanırsın, sonra sınav sorusunda yakalarsın.',
-    list: null,
+    title: 'Hoca Nova: yeni nesil İngilizce koçun',
+    body: 'Sıfırdan başlıyor olsan da sorun yok. LGS İngilizcesini ezberle değil, planla halledeceğiz: 8. sınıfın 10 ünitesi, adım adım, seninle birlikte.',
+    countdown: true,
+    list: [
+      ['🧭', 'Seviyeni ölçerim', '4 dakikalık testle nereden başlayacağını bulurum.'],
+      ['🗺️', 'Planı ben yaparım', 'Ana ekranda her gün ne yapacağını sırayla söylerim.'],
+      ['📈', 'Netini takip ederim', 'Mini LGS ile netini görür, puan kaybettiğin üniteyi tamir ederiz.'],
+    ],
   },
   {
-    title: 'Günde 10 dakika yeter',
+    title: 'Günde 10–15 dakika yeter',
     body: 'Her gün aynı küçük rutin:',
     list: [
-      ['📘', 'Ders', 'Birkaç yeni ifade, kısa bir hikâye ve sorular.'],
       ['🔁', 'Tekrar', 'Unutmak üzere olduğun ifadeleri tam zamanında sorarım.'],
+      ['📘', 'Ders', 'Önce görürsün, sonra kullanırsın, sonra LGS sorusunda yakalarsın.'],
       ['🎯', 'Hedef', 'Günlük soru hedefin ana ekranda; serini bozma!'],
     ],
   },
   {
-    title: 'Yanındaki yardımcılar',
-    body: 'Ders dışında da işine yarayacaklar:',
+    title: 'Sınava doğru',
+    body: 'Haftada bir kendini sınarız, eksikleri kapatırız:',
     list: [
-      ['🃏', 'Hızlı kart', '2 dakikalık kart turu: otobüste, teneffüste.'],
-      ['📒', 'Yanlış defterim', 'Yanlış yaptığın sorular, doğrusu ve nedeni.'],
+      ['📝', 'Mini LGS', '10 soru, 15 dakika: gerçek sınav gibi, sonunda netin.'],
+      ['🔧', 'Tamir seti', 'Denemede kaybettiğin ünitelerden 5\'er soru.'],
       ['🧭', 'Sınav Dili', 'LGS soru tiplerinin taktikleri.'],
-      ['🗓️', 'Cuma quiz\'i', 'Haftanın ifadelerinden 10 soru.'],
+      ['🃏', 'Hızlı kart', '2 dakikalık kart turu: otobüste, teneffüste.'],
     ],
   },
 ]
@@ -43,6 +49,7 @@ export default function Onboarding({ onDone, last = 'Başlangıç testine geç' 
       <section className="card onboard-card" key={i}>
         {i === 0 ? <NovaAvatar size={96} /> : <NovaAvatar size={56} />}
         <h1>{p.title}</h1>
+        {p.countdown && <span className="chip">LGS'ye {daysToLgs(Date.now())} gün</span>}
         <p>{p.body}</p>
         {p.list && (
           <ul className="onboard-list">

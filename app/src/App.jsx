@@ -19,6 +19,8 @@ import { preQuiz, postQuiz, weeklyQuiz, weekKey } from './quiz.js'
 import Flash from './screens/Flash.jsx'
 import WordList from './screens/WordList.jsx'
 import ParentReport from './screens/ParentReport.jsx'
+import MiniLgs from './screens/MiniLgs.jsx'
+import Repair from './screens/Repair.jsx'
 import { parseAssignment } from './goal.js'
 import { flushReports } from './reports.js'
 
@@ -78,6 +80,8 @@ export default function App() {
       : weeklyQuiz(ctx.qIndex, state.progress, Date.now())
     setScreen({ name: 'quiz', kind, questions, key: weekKey(Date.now()) })
   }
+  const startMini = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'mini' }) }
+  const startRepair = async units => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'repair', units }) }
   const startReview = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'review' }) }
 
   // İlk açılış turu: yeni öğrenci (test çözülmemiş ve tur görülmemiş) ya da "Turu tekrar izle"
@@ -101,6 +105,8 @@ export default function App() {
     onFinish={result => screen.kind === 'weekly'
       ? dispatch({ type: 'weekly', key: screen.key, result })
       : dispatch({ type: 'unitQuiz', unit: unit.unit, phase: screen.kind, result })} />)
+  if (screen.name === 'mini') return wrap(<MiniLgs index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} onRepair={startRepair} onExit={() => setScreen('home')} />)
+  if (screen.name === 'repair') return wrap(<Repair key={(screen.units || []).join()} index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} startUnits={screen.units} onExit={() => setScreen('home')} />)
   if (screen === 'exam') return wrap(<ExamCourse index={index} state={state} dispatch={dispatch} onExit={() => setScreen('home')} />)
   if (screen.name === 'flash') return wrap(<Flash index={index} state={state} dispatch={dispatch} startDeck={screen.deck} onExit={() => setScreen('home')} />)
   if (screen === 'report') return wrap(<ParentReport index={index} state={state} dispatch={dispatch} onExit={() => setScreen("home")} />)
@@ -112,5 +118,5 @@ export default function App() {
       onFinish={result => dispatch({ type: 'placement', result, now: Date.now() })}
       onExit={() => setScreen('home')} />
   )
-  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} onWordList={() => setScreen('wordlist')} onReport={() => setScreen('report')} onFlash={deck => setScreen({ name: 'flash', deck })} onMistakes={startMistakes} onExam={() => setScreen('exam')} onQuiz={startQuiz} onTour={() => setScreen('tour')} account={account} />)
+  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} onWordList={() => setScreen('wordlist')} onReport={() => setScreen('report')} onFlash={deck => setScreen({ name: 'flash', deck })} onMistakes={startMistakes} onExam={() => setScreen('exam')} onQuiz={startQuiz} onMini={startMini} onRepair={units => startRepair(units)} onTour={() => setScreen('tour')} account={account} />)
 }

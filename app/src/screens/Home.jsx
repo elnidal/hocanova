@@ -5,12 +5,14 @@ import AccountCard from '../components/AccountCard.jsx'
 import { coachMessage, streakOf } from '../goal.js'
 import { openMistakeCount } from '../mistakes.js'
 import { weeklyDue, pct } from '../quiz.js'
+import { miniTrend, fmtNet } from '../lgsMini.js'
+import { coachPlan, daysToLgs, planHeadline } from '../coachPlan.js'
 import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, onExam, onQuiz, onTour, account }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, onExam, onQuiz, onMini, onRepair, onTour, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -34,9 +36,13 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const mistakesOpen = openMistakeCount(progress)
   const readyChecks = retentions.filter(r => r.st.status === 'ready')
   const waitChecks = retentions.filter(r => r.st.status !== 'ready' && r.st.status !== 'not-started')
+  const plan = placement && !preAvail ? coachPlan({ state, due, nextDay, weekly, unitDone: !nextDay && !uq.post, now }) : []
+  const firstOpen = plan.find(s => !s.done)
+  const run = s => ({ review: onReview, lesson: () => onLesson(nextDay.day), post: () => onQuiz('post'), weekly: () => onQuiz('weekly'), mini: onMini, repair: () => onRepair(s.units) })[s.action]()
   const coachText = placement
-    ? coachMessage({ daily: state.daily, goal: state.goal, due, now, fallback: levelText })
+    ? coachMessage({ daily: state.daily, goal: state.goal, due, now, fallback: plan.length && Object.keys(state.doneDays).length ? planHeadline(plan, daysToLgs(now)) : levelText })
     : 'Hazırsan 4 dakikalık kısa bir testle başlayalım; derslerini seviyene göre ayarlayacağım 🎯'
+  const mini = miniTrend(state.miniLgs)
   const unitsWithDays = index.units.filter(u => u.dayCount)
 
   return (
@@ -47,6 +53,22 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
       </div>
 
       <Coach text={coachText} />
+
+      {plan.length > 0 && (
+        <section className="card plan">
+          <div className="spread"><div className="eyebrow">Nova'nın bugünkü planı</div><span className="chip">LGS'ye {daysToLgs(now)} gün</span></div>
+          <ol className="plan-steps">
+            {plan.map((s, k) => (
+              <li key={s.key} className={s.done ? 'done' : s === firstOpen ? 'now' : ''}>
+                <span className="plan-dot" aria-hidden="true">{s.done ? '✓' : k + 1}</span>
+                <span className="plan-text"><b>{s.title}</b><span className="muted small">{s.note}</span></span>
+                {s === firstOpen && <button className="btn sm" onClick={() => run(s)}>Şimdi →</button>}
+              </li>
+            ))}
+          </ol>
+          {!firstOpen && <p className="muted small">Bugünkü plan bitti 🎉 İstersen aşağıdan kart turu ya da Sınav Dili.</p>}
+        </section>
+      )}
 
       {!placement ? (
         <section className="card today">
@@ -96,17 +118,24 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         )
       )}
 
-      {placement && due > 0 && (
+      {placement && preAvail && due > 0 && (
         <section className="card slim">
           <div><b>{due} ifade tekrar bekliyor</b><div className="muted small">Bugün en fazla 10 tanesi sorulur.</div></div>
           <button className="btn sm" onClick={onReview}>Tekrar →</button>
         </section>
       )}
 
-      {weekly && (
+      {placement && (
         <section className="card slim">
-          <div><b>Cuma quiz'i hazır 🗓️</b><div className="muted small">Bu haftanın ifadelerinden 10 soru · süreli</div></div>
-          <button className="btn sm" onClick={() => onQuiz('weekly')}>Başla →</button>
+          <div><b>Mini LGS 🎯</b><div className="muted small">10 soru · 15 dk · netini hesaplar{mini ? ` · son net ${fmtNet(mini.last)}` : ''}</div></div>
+          <button className="btn sm ghost" onClick={onMini}>Başla →</button>
+        </section>
+      )}
+
+      {placement && (
+        <section className="card slim">
+          <div><b>Denemeden sonra: tamir seti 🔧</b><div className="muted small">Yanlış yaptığın üniteleri seç · ünite başına 5 soru</div></div>
+          <button className="btn sm ghost" onClick={() => onRepair()}>Aç →</button>
         </section>
       )}
 

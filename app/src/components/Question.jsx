@@ -13,7 +13,7 @@ import { speak as say } from '../tts.js'
  * q.listen: dinleme sorusu; metin gösterilmez, açılışta ve düğmeyle okunur.
  * Soru kökünün altında Türkçe satır gösterilir; alwaysHint değilse birkaç gösterimden sonra "TR" düğmesinin arkasına geçer.
  */
-export default function Question({ q, mode = 'test', onAnswer, onNext, last, extra, items, newSet, speak, allowUnknown = false, alwaysHint = false }) {
+export default function Question({ q, mode = 'test', onAnswer, onNext, last, extra, items, newSet, speak, allowUnknown = false, unknownLabel = 'Bilmiyorum', alwaysHint = false }) {
   const [picked, setPicked] = useState(null)
   const [locked, setLocked] = useState(false)
   const { seen, bump } = useContext(HintCtx)
@@ -52,7 +52,7 @@ export default function Question({ q, mode = 'test', onAnswer, onNext, last, ext
           </button>
         ))}
         {!learn && allowUnknown && (
-          <button role="radio" aria-checked={picked === -1} className={`opt unknown${picked === -1 ? ' on' : ''}`} onClick={() => setPicked(-1)}>Bilmiyorum</button>
+          <button role="radio" aria-checked={picked === -1} className={`opt unknown${picked === -1 ? ' on' : ''}`} onClick={() => setPicked(-1)}>{unknownLabel}</button>
         )}
       </div>
       {learn && locked && (
