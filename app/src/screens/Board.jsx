@@ -10,11 +10,11 @@ import Lesson from './Lesson.jsx'
 // Tahta modu (adres sonuna #tahta): öğretmen istediği ünitenin istediği gününü açar.
 // Ders açıkken üst çubukla gün gün ve üniteden üniteye serbest geçilir (dersi bitirmek gerekmez).
 // Giriş yok, oturum açılmaz, ilerleme kaydedilmez; cevaplar yalnız sayfa açıkken bellekte tutulur.
-export default function Board() {
+export default function Board({ startUnit = 1, startDay = null }) {
   const [index, setIndex] = useState(null)
   const [ctx, setCtx] = useState(null) // { qIndex, items, units }
-  const [unitNo, setUnitNo] = useState(1)
-  const [day, setDay] = useState(null)
+  const [unitNo, setUnitNo] = useState(startUnit)
+  const [day, setDay] = useState(startDay)
   const [state, setState] = useState(() => ({ progress: createProgress(), doneDays: {} }))
   const [hints, setHints] = useState({})
   const [error, setError] = useState(false)

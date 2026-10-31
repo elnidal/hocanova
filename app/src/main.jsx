@@ -32,7 +32,8 @@ function Root() {
   const parentToken = parseToken(hash)
   if (parentToken) return <><Back /><ParentView key={parentToken} token={parentToken} /></>
   if (hash === '#ogretmen') return <><Back /><Teacher /></>
-  if (hash === '#tahta') return <Board />
+  const tahta = /^#tahta(?:\/(\d+)(?:\/(\d+))?)?$/.exec(hash) // #tahta · #tahta/3 · #tahta/3/1
+  if (tahta) return <Board key={hash} startUnit={+tahta[1] || 1} startDay={+tahta[2] || null} />
   if (hash === '#giris' || hash === '#veli') return <Giris />
   if (hash === '#tanitim' || (!hash && !returning())) return <Landing />
   return <App />
