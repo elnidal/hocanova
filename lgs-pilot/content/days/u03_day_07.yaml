@@ -308,3 +308,36 @@ notifications:
 
 editor:
   z07: {U3-009: BEKLIYOR, U3-011: BEKLIYOR, U3-016: BEKLIYOR, U3-023: BEKLIYOR, U3-037: BEKLIYOR, U3-044: BEKLIYOR}
+
+mini:                     # deneme (Ü3): uzun hikâye yerine her ifadeye kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U3-009
+    durum: "Teneffüste Kaan cebinden bir çikolata çıkarıyor."
+    lines:
+      - { speaker: "Kaan", text: "Eyvah! Sabahtan beri cebimdeydi; bak, tamamen {U3-009|melted}." }
+      - { speaker: "Bora", text: "Artık çikolata değil, çikolata çorbası. Kaşıkla ye!" }
+  - item: U3-011
+    durum: "Duru ve annesi pizza tarif kartının başında."
+    lines:
+      - { speaker: "Duru", text: "Kartta '{U3-011|Combine} un, su ve tuz' yazıyor. Hepsi birlikte mi?" }
+      - { speaker: "Duru'nun annesi", text: "Evet, üçü tek bir top olacak; hiçbiri ayrı kalmasın." }
+  - item: U3-016
+    durum: "Kaan tezgâhta un topunun başına geçti; Duru'nun annesi yanında."
+    lines:
+      - { speaker: "Duru'nun annesi", text: "Kart diyor ki: on dakika {U3-016|knead}. Bastır, katla, çevir, yine bastır." }
+      - { speaker: "Kaan", text: "On dakika mı? Bu basketbol antrenmanından zor!" }
+  - item: U3-023
+    durum: "Ece, Selin'e katlı pastanın kremasını gösteriyor."
+    lines:
+      - { speaker: "Ece", text: "Çikolatalı kremayı katların arasına {U3-023|spread}: her yere eşit, ince ince." }
+      - { speaker: "Selin", text: "Kenarlara da! Geçen sefer ortası dağ gibiydi." }
+  - item: U3-037
+    durum: "Kaan, Duru'nun evine maydanoz yerine çiçekle geldi."
+    lines:
+      - { speaker: "Duru", text: "Kaan, maydanoz istedim; sen {U3-037|a bunch of} papatya getirdin!" }
+      - { speaker: "Kaan", text: "Ama ikisi de yeşil, ikisi de güzel kokuyor!" }
+      - { speaker: "Duru'nun annesi", text: "Papatyalar vazoya. Pizzaya {U3-037|a pinch of} tuz, {U3-037|a handful of} zeytin yeter." }
+  - item: U3-044
+    durum: "Kaan'ın elleri un içinde; pizza tabanı bir türlü toparlanmıyor."
+    lines:
+      - { speaker: "Kaan", text: "Bu {U3-044|dough} ellerime yapıştı, hiç çıkmıyor!" }
+      - { speaker: "Duru'nun annesi", text: "Biraz un serp, top yap. Yarım saat dinlenince kabaracak." }

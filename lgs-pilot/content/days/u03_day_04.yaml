@@ -322,3 +322,35 @@ notifications:
 
 editor:
   z07: {U3-010: BEKLIYOR, U3-019: BEKLIYOR, U3-021: BEKLIYOR, U3-022: BEKLIYOR, U3-025: BEKLIYOR, U3-049: BEKLIYOR}
+mini:                     # deneme (Ü3): uzun hikâye yerine her ifadeye kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U3-010
+    durum: "Ece'nin annesi yanında; Selin soğanı küçük küçük kesiyor."
+    lines:
+      - { speaker: Selin, text: "Soğanı {U3-010|chop}, domatesi {U3-010|dice}: minicik küpler!" }
+      - { speaker: "Ece'nin annesi", text: "Parmaklarını içeri kıvır, yavaş git. Acele yok." }
+  - item: U3-019
+    durum: "Elif elinde bir salatalık, yüzünde itiraz."
+    lines:
+      - { speaker: Elif, text: "Kartta yazıyor: salatalığı {U3-019|peel}… Ama yeşil dışı en güzel yeri!" }
+      - { speaker: Ece, text: "Peki, yarısı yeşil kalsın. Anlaştık!" }
+  - item: U3-021
+    durum: "Salata hazır; Selin tuzu ve sumak kavanozunu getiriyor."
+    lines:
+      - { speaker: Selin, text: "Son adım: {U3-021|season}. Biraz tuz, biraz sumak." }
+      - { speaker: Elif, text: "{U3-021|Season} mı? Ben onu kış, yaz diye bilirdim!" }
+      - { speaker: Selin, text: "O da doğru. Ama mutfakta başka anlamı var; tadına bak, anlarsın!" }
+  - item: U3-022
+    durum: "Ece ekmeği tahtaya koyuyor; annesi bıçağı tutuyor."
+    lines:
+      - { speaker: Ece, text: "Herkese iki {U3-022|slice} ekmek. Üç kişiyiz." }
+      - { speaker: "Ece'nin annesi", text: "O zaman altı {U3-022|slice}. İnce ince kesiyorum." }
+  - item: U3-025
+    durum: "Elif yarım limonu iki eliyle tutuyor."
+    lines:
+      - { speaker: Elif, text: "Limonu {U3-025|squeeze} sırası bende! Salatanın tam üstüne." }
+      - { speaker: Selin, text: "Çekirdeklere dikkat! Hepsi salataya düştü." }
+  - item: U3-049
+    durum: "Elif buzdolabından uzun, yeşil bir şey çıkarıyor."
+    lines:
+      - { speaker: Elif, text: "Yeşil {U3-049|pepper}! Salatama çok yakışır." }
+      - { speaker: Selin, text: "Kartta sadece siyah {U3-049|pepper} var: o toz olan, değirmendeki." }

@@ -347,3 +347,35 @@ notifications:
 
 editor:
   z07: {U3-054: BEKLIYOR, U3-056: BEKLIYOR, U3-060: BEKLIYOR, U3-061: BEKLIYOR, U3-062: BEKLIYOR, U3-063: BEKLIYOR}
+
+mini:                     # deneme (Ü3): uzun hikâye yerine her ifadeye kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U3-054
+    durum: "Murat Bey haritada İtalya'yı gösteriyor."
+    lines:
+      - { speaker: "Murat Bey", text: "İtalyan {U3-054|cuisine} deyince akla pizza ve makarna gelir. Ya bizimki?" }
+      - { speaker: "Elif", text: "Kebap, mantı, baklava, dolma… liste bitmez!" }
+  - item: U3-056
+    durum: "Duru ve Kaan takımlarının kartını yazıyor."
+    lines:
+      - { speaker: "Duru", text: "Bizim takımın {U3-056|dish}'i İzmir köftesi; annemin en iyisi." }
+      - { speaker: "Kaan", text: "Günde üç {U3-056|meal} yerim; üçünde de köfte olsa itiraz etmem!" }
+  - item: U3-060
+    durum: "Murat Bey tahtaya menü sırasını yazıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Sıra şöyle: çorba, {U3-060|main course}, en son {U3-055|dessert}." }
+      - { speaker: "Selin", text: "Bizim {U3-060|main course} limonlu tavuk; masanın yıldızı o!" }
+  - item: U3-061
+    durum: "Ece takımın kartını yüksek sesle okuyor; Selin limonu sıkıyor."
+    lines:
+      - { speaker: "Ece", text: "Kart diyor ki: <en>{U3-061|Add} lemon juice {U3-061|to} the chicken.</en> Ne kadar?" }
+      - { speaker: "Selin", text: "İki kaşık. Fazlası ekşi olur!" }
+  - item: U3-062
+    durum: "Bora sütlaç planını anlatıyor; Duru'nun annesi dinliyor."
+    lines:
+      - { speaker: "Bora", text: "Sütlacın {U3-062|preparation}'ı iki saat sürüyor; o yüzden bu akşam başlıyoruz." }
+      - { speaker: "Duru'nun annesi", text: "Ocağın başında ben de olacağım, merak etme." }
+  - item: U3-063
+    durum: "Murat Bey, Kaan takımının kartını okuyor."
+    lines:
+      - { speaker: "Murat Bey", text: "İzmir köftesi çok {U3-063|well-known}; Türkiye'de herkes adını bilir." }
+      - { speaker: "Duru", text: "Annem hep der ki: yüz yıllık, {U3-063|traditional} bir yemek bu." }

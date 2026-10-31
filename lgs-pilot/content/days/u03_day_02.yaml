@@ -307,3 +307,35 @@ notifications:
 
 editor:
   z07: {U3-001: BEKLIYOR, U3-006: BEKLIYOR, U3-039: BEKLIYOR, U3-042: BEKLIYOR, U3-043: BEKLIYOR, U3-046: BEKLIYOR}
+mini:                     # deneme (Ü3): uzun hikâye yerine her ifadeye kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U3-001
+    durum: "Cumartesi; Ece annesiyle mutfakta, tepsi hazır."
+    lines:
+      - { speaker: Ece, text: "Kek {U3-001|bake} zamanı! Hamur tepside, {U3-040|oven} da hazır." }
+      - { speaker: "Ece'nin annesi", text: "Tepsiyi ben koyarım. Kırk dakika; kapağı sakın erken açma!" }
+  - item: U3-006
+    durum: "Selin telefondan talimatları okuyor; Ece'nin annesi düğmenin başında."
+    lines:
+      - { speaker: Selin, text: "Telefonda yazıyor: kek girmeden {U3-040|oven}'u 180 dereceye {U3-006|preheat}." }
+      - { speaker: "Ece'nin annesi", text: "Düğmeyi çevirdim. On dakikada içi sıcacık olur." }
+      - { speaker: Elif, text: "Yani kek soğuk bir yere girmiyor. Akıllıca!" }
+  - item: U3-039
+    durum: "Elif telefondaki listenin ilk satırını okuyor ama kafası karışıyor."
+    lines:
+      - { speaker: Elif, text: "İki {U3-039|cups} şeker mi? Çay içer gibi mi koyacağız?" }
+      - { speaker: Ece, text: "Yok, şu küçük plastik {U3-039|cup}: iki kez doldur, kaba boşalt." }
+  - item: U3-042
+    durum: "Selin çekmeceden biri küçük, biri büyük iki şey çıkarıyor."
+    lines:
+      - { speaker: Selin, text: "Vanilya için bir {U3-042|teaspoon}, yağ için bir {U3-042|tablespoon}." }
+      - { speaker: Elif, text: "Küçüğüyle çay, büyüğüyle çorba içiyoruz, değil mi?" }
+  - item: U3-043
+    durum: "Elif küçük bir paketin hepsini kabın içine boşaltmak üzere."
+    lines:
+      - { speaker: Ece, text: "Dur! Sadece bir {U3-042|teaspoon} {U3-043|baking powder}! Fazlası keki balon gibi şişirir." }
+      - { speaker: Elif, text: "Yani kek bu beyaz şey sayesinde mi yukarı çıkıyor?" }
+  - item: U3-046
+    durum: "Ece paketi açınca masaya beyaz bir bulut yayılıyor."
+    lines:
+      - { speaker: Elif, text: "Hapşu! Bu beyaz şey ne?" }
+      - { speaker: Ece, text: "{U3-046|Flour}! Kekin, ekmeğin, kurabiyenin temeli. İki {U3-039|cups} lazım." }

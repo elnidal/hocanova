@@ -306,3 +306,35 @@ notifications:
 
 editor:
   z07: {U3-004: BEKLIYOR, U3-013: BEKLIYOR, U3-018: BEKLIYOR, U3-020: BEKLIYOR, U3-026: BEKLIYOR, U3-041: BEKLIYOR}
+mini:                     # deneme (Ü3): uzun hikâye yerine her ifadeye kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U3-004
+    durum: "Pazar kahvaltısı; Duru'nun annesi ocağın başında, yağ cızırdıyor."
+    lines:
+      - { speaker: Kaan, text: "Patatesleri {U3-004|fry} işi kimde? Ben çıtır çıtır severim!" }
+      - { speaker: "Duru'nun annesi", text: "Bende. Sıcak yağ sıçrar; sen tabakları getir." }
+  - item: U3-013
+    durum: "Bora bir yumurtayı tezgâhın kenarına tıklatıyor."
+    lines:
+      - { speaker: Bora, text: "Yumurtayı {U3-013|crack} işi kolay: kenara bir tık, iki başparmak, açıl!" }
+      - { speaker: Duru, text: "Kabuk parçaları da içine düştü ama!" }
+      - { speaker: Bora, text: "Bu yumurtada zaten bir {U3-013|crack} vardı, suç onun!" }
+  - item: U3-018
+    durum: "Süt ve yumurta hazır; tahta spatula Kaan'da."
+    lines:
+      - { speaker: Duru, text: "Şimdi {U3-018|mix}: yavaş yavaş, hep aynı yöne {U3-018|stir}." }
+      - { speaker: Kaan, text: "Bu {U3-018|mixture} çok kalın! Biraz daha süt mü?" }
+  - item: U3-020
+    durum: "Kaan süt şişesini eğiyor ama şişe ağzına kadar dolu."
+    lines:
+      - { speaker: Duru, text: "Yavaşça {U3-020|pour}! Hepsi birden değil." }
+      - { speaker: Kaan, text: "Tamam, tamam… Ups. Bez nerede?" }
+  - item: U3-026
+    durum: "Bora çekmeceden tel bir alet çıkarıyor."
+    lines:
+      - { speaker: Bora, text: "Bu {U3-026|whisk} çok hızlı! Yumurtalar köpük köpük oldu." }
+      - { speaker: Duru, text: "Kolum yoruldu. Sıra sende, Kaan: hızlı hızlı, durmak yok!" }
+  - item: U3-041
+    durum: "Duru'nun annesi ocağa iki şey koyuyor: biri yayvan, biri derin ve saplı."
+    lines:
+      - { speaker: "Duru'nun annesi", text: "Pankek bu yayvan {U3-041|pan}'da, süt de şu derin {U3-041|saucepan}'da." }
+      - { speaker: Kaan, text: "Sıcakken saplarına dokunmuyorum, söz!" }

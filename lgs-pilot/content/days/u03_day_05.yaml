@@ -320,3 +320,34 @@ notifications:
 
 editor:
   z07: {U3-027: BEKLIYOR, U3-032: BEKLIYOR, U3-033: BEKLIYOR, U3-034: BEKLIYOR, U3-035: BEKLIYOR, U3-036: BEKLIYOR}
+mini:                     # deneme (Ü3): uzun hikâye yerine her ifadeye kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U3-027
+    durum: "Bora'nın gözleri bağlı; Murat Bey avucuna koyu bir parça bırakıyor."
+    lines:
+      - { speaker: Bora, text: "Hmm… Çikolata ama hiç şeker yok! Çok {U3-027|bitter}!" }
+      - { speaker: "Murat Bey", text: "Doğru! Yüzde doksan kakao. Sade kahve de genelde {U3-027|bitter}." }
+  - item: U3-032
+    durum: "Sıra Duru'da; avucuna küçük, çıtır bir şey geliyor."
+    lines:
+      - { speaker: Duru, text: "Çıtır… ve çok {U3-032|salty}! Deniz suyu gibi. Kraker mi?" }
+      - { speaker: "Murat Bey", text: "Evet! Su isteyen var mı?" }
+  - item: U3-033
+    durum: "Elif'in avucuna küçük, yeşil bir erik geliyor."
+    lines:
+      - { speaker: Elif, text: "Iyy! Yüzüm buruştu! Bu erik çok {U3-033|sour}!" }
+      - { speaker: Kaan, text: "Benim limonum kadar {U3-033|sour} mu?" }
+  - item: U3-034
+    durum: "Selin küçük bir cips parçasını ağzına atıyor; gözleri sulanıyor."
+    lines:
+      - { speaker: Selin, text: "Su! Ağzım yanıyor! Bu çok {U3-034|spicy}!" }
+      - { speaker: "Murat Bey", text: "Üstündeki kırmızı tozu gördün mü? Hepsi onun yüzünden." }
+  - item: U3-035
+    durum: "Ece'nin avucuna küçük, yapışkan bir parça geliyor."
+    lines:
+      - { speaker: Ece, text: "Mmm! Bal gibi {U3-035|sweet}! Lokum mu bu?" }
+      - { speaker: "Murat Bey", text: "Bravo! Şekerli şeylerin hepsi {U3-035|sweet}." }
+  - item: U3-036
+    durum: "Oyun bitti; Murat Bey tahtaya bir soru yazıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Bugün kaç farklı {U3-036|taste} bulduk? Beş!" }
+      - { speaker: Kaan, text: "Benim favori {U3-036|flavour}'ım çilekli dondurma. Kutuda var mı?" }
