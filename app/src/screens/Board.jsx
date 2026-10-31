@@ -67,6 +67,10 @@ export default function Board() {
         <LogoLockup />
         <span className="chip">Tahta modu · kayıt yok</span>
       </div>
+      <div className="spread">
+        <a className="linkbtn" href="#giris">← Girişler</a>
+        <span className="muted small">Ders açıkken üstteki çubukla gün gün, üniteden üniteye geçebilirsiniz.</span>
+      </div>
       <section className="card">
         <div className="eyebrow">Ünite seç</div>
         <div className="chips" role="tablist">

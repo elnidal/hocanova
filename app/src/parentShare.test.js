@@ -21,3 +21,12 @@ test('uzak özetten rapor üretilir', () => {
   const rep = buildReport({ progress: st.progress, daily: st.daily, doneDays: st.doneDays, items: [{ id: 'U1-001', display: 'invite', meaning_tr: 'davet etmek' }, { id: 'U1-002', display: 'x', meaning_tr: 'y' }], now })
   assert.equal(rep.weekTotal, 12); assert.equal(rep.accuracy, 50); assert.equal(rep.hardest[0].display, 'invite'); assert.equal(st.profile.nick, 'Zeynep')
 })
+
+test('yapıştırılan bağlantıdan ya da koddan veli kodu', async () => {
+  const { extractToken } = await import('./parentShare.js')
+  const t = 'Ab3_-cdEFghIJklMNopQRstu'
+  assert.equal(extractToken(`https://lgsingilizce.app/#veli=${t}`), t)
+  assert.equal(extractToken(`  Raporum: https://hocanova.netlify.app/#veli=${t} `), t)
+  assert.equal(extractToken(t), t)
+  assert.equal(extractToken('kısa'), null)
+})

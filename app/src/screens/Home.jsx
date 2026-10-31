@@ -203,8 +203,11 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         {placement && (state.profile?.nick || Object.keys(state.doneDays).length === 0) && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
         <AccountCard account={account} />
         <button className="linkbtn" onClick={onTour}>Tanıtım turunu tekrar izle</button>
+        <a className="linkbtn" href="#giris">Öğretmen / veli girişi</a>
         <button className="linkbtn" onClick={() => { if (confirm('Tüm ilerleme bu cihazdan silinsin mi?')) dispatch({ type: 'reset' }) }}>Verileri sıfırla</button>
       </details>
+
+      <p className="rolelinks small"><a className="linkbtn" href="#giris">Öğretmen misiniz? Tahta modu ve panel · Veli girişi →</a></p>
     </div>
   )
 }

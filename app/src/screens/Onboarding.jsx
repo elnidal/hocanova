@@ -66,6 +66,7 @@ export default function Onboarding({ onDone, last = 'Başlangıç testine geç' 
         {i > 0 && <button className="btn ghost" onClick={() => setI(i - 1)}>← Geri</button>}
         <button className="btn" onClick={() => (end ? onDone() : setI(i + 1))}>{end ? `${last} →` : 'İleri →'}</button>
       </div>
+      <p className="rolelinks small"><a className="linkbtn" href="#giris">Öğretmen ya da veli misiniz? Buradan girin →</a></p>
     </div>
   )
 }
