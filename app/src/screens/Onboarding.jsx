@@ -10,28 +10,28 @@ const PAGES = [
     body: 'Sıfırdan başlıyor olsan da sorun yok. LGS İngilizcesini ezberle değil, planla halledeceğiz: 8. sınıfın 10 ünitesi, adım adım, seninle birlikte.',
     countdown: true,
     list: [
-      ['🧭', 'Seviyeni ölçerim', '4 dakikalık testle nereden başlayacağını bulurum.'],
-      ['🗺️', 'Planı ben yaparım', 'Ana ekranda her gün ne yapacağını sırayla söylerim.'],
-      ['📈', 'Netini takip ederim', 'Mini LGS ile netini görür, puan kaybettiğin üniteyi tamir ederiz.'],
+      ['', 'Seviyeni ölçerim', '4 dakikalık testle nereden başlayacağını bulurum.'],
+      ['', 'Planı ben yaparım', 'Ana ekranda her gün ne yapacağını sırayla söylerim.'],
+      ['', 'Netini takip ederim', 'Mini LGS ile netini görür, puan kaybettiğin üniteyi tamir ederiz.'],
     ],
   },
   {
     title: 'Günde 10–15 dakika yeter',
     body: 'Her gün aynı küçük rutin:',
     list: [
-      ['🔁', 'Tekrar', 'Unutmak üzere olduğun ifadeleri tam zamanında sorarım.'],
-      ['📘', 'Ders', 'Önce görürsün, sonra kullanırsın, sonra LGS sorusunda yakalarsın.'],
-      ['🎯', 'Hedef', 'Günlük soru hedefin ana ekranda; serini bozma!'],
+      ['', 'Tekrar', 'Unutmak üzere olduğun ifadeleri tam zamanında sorarım.'],
+      ['', 'Ders', 'Önce görürsün, sonra kullanırsın, sonra LGS sorusunda yakalarsın.'],
+      ['', 'Hedef', 'Günlük soru hedefin ana ekranda; serini bozma!'],
     ],
   },
   {
     title: 'Sınava doğru',
     body: 'Haftada bir kendini sınarız, eksikleri kapatırız:',
     list: [
-      ['📝', 'Mini LGS', '10 soru, 15 dakika: gerçek sınav gibi, sonunda netin.'],
-      ['🔧', 'Tamir seti', 'Denemede kaybettiğin ünitelerden 5\'er soru.'],
-      ['🧭', 'Sınav Dili', 'LGS soru tiplerinin taktikleri.'],
-      ['🃏', 'Hızlı kart', '2 dakikalık kart turu: otobüste, teneffüste.'],
+      ['', 'Mini LGS', '10 soru, 15 dakika: gerçek sınav gibi, sonunda netin.'],
+      ['', 'Tamir seti', 'Denemede kaybettiğin ünitelerden 5\'er soru.'],
+      ['', 'Sınav Dili', 'LGS soru tiplerinin taktikleri.'],
+      ['', 'Hızlı kart', '2 dakikalık kart turu: otobüste, teneffüste.'],
     ],
   },
 ]
@@ -53,8 +53,8 @@ export default function Onboarding({ onDone, last = 'Başlangıç testine geç' 
         <p>{p.body}</p>
         {p.list && (
           <ul className="onboard-list">
-            {p.list.map(([icon, t, d]) => (
-              <li key={t}><span className="ob-icon" aria-hidden="true">{icon}</span><span><b>{t}</b><span className="muted small">{d}</span></span></li>
+            {p.list.map(([, t, d], k) => (
+              <li key={t}><span className="ob-icon" aria-hidden="true">{String(k + 1).padStart(2, '0')}</span><span><b>{t}</b><span className="muted small">{d}</span></span></li>
             ))}
           </ul>
         )}

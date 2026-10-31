@@ -44,7 +44,7 @@ export default function Flash({ index, state, dispatch, startDeck, onExit }) {
 
   if (i >= list.length) return (
     <div className="wrap">
-      <h1>Kartlar bitti 🎉</h1>
+      <h1>Kartlar bitti</h1>
       <div className="card stats">
         <div className="stat"><b>{score.know}</b><span>bildim</span></div>
         <div className="stat"><b>{score.unsure}</b><span>emin değilim</span></div>

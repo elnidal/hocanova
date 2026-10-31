@@ -41,7 +41,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const run = s => ({ review: onReview, lesson: () => onLesson(nextDay.day), post: () => onQuiz('post'), weekly: () => onQuiz('weekly'), mini: onMini, repair: () => onRepair(s.units) })[s.action]()
   const coachText = placement
     ? coachMessage({ daily: state.daily, goal: state.goal, due, now, fallback: plan.length && Object.keys(state.doneDays).length ? planHeadline(plan, daysToLgs(now)) : levelText })
-    : 'Hazırsan 4 dakikalık kısa bir testle başlayalım; derslerini seviyene göre ayarlayacağım 🎯'
+    : 'Hazırsan 4 dakikalık kısa bir testle başlayalım; derslerini seviyene göre ayarlayacağım.'
   const mini = miniTrend(state.miniLgs)
   const unitsWithDays = index.units.filter(u => u.dayCount)
 
@@ -49,14 +49,17 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
     <div className="wrap">
       <div className="spread">
         <LogoLockup />
-        {placement && <span className="chip">{streak >= 2 ? `🔥 ${streak} gün · ` : ''}Seviye: {LEVEL[placement.level]}</span>}
+        {placement && <span className="chip">{streak >= 2 ? `${streak} gün seri · ` : ''}Seviye: {LEVEL[placement.level]}</span>}
       </div>
 
       <Coach text={coachText} />
 
       {plan.length > 0 && (
         <section className="card plan">
-          <div className="spread"><div className="eyebrow">Nova'nın bugünkü planı</div><span className="chip">LGS'ye {daysToLgs(now)} gün</span></div>
+          <div className="plan-top">
+            <div><div className="eyebrow">Nova'nın bugünkü planı</div><h2>{firstOpen ? `${plan.filter(s => s.done).length} / ${plan.length} tamam` : 'Plan tamam'}</h2></div>
+            <div className="plan-count"><b>{daysToLgs(now)}</b><span>gün kaldı</span></div>
+          </div>
           <ol className="plan-steps">
             {plan.map((s, k) => (
               <li key={s.key} className={s.done ? 'done' : s === firstOpen ? 'now' : ''}>
@@ -66,7 +69,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
               </li>
             ))}
           </ol>
-          {!firstOpen && <p className="muted small">Bugünkü plan bitti 🎉 İstersen aşağıdan kart turu ya da Sınav Dili.</p>}
+          {!firstOpen && <p className="muted small">Bugünkü plan bitti. İstersen aşağıdan kart turu ya da Sınav Dili.</p>}
         </section>
       )}
 
@@ -98,7 +101,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
       ) : (
         uq.post ? (
           <section className="card today growth">
-            <div className="eyebrow">Ünite {unit.unit} tamam 🎉</div>
+            <div className="eyebrow">Ünite {unit.unit} tamamlandı</div>
             {uq.pre?.n ? (
               <div className="growth-row">
                 <div><b>%{pct(uq.pre)}</b><span>giriş</span></div>
@@ -110,7 +113,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           </section>
         ) : (
           <section className="card today">
-            <div className="eyebrow">Bu ünitenin dersleri bitti 🎉</div>
+            <div className="eyebrow">Bu ünitenin dersleri bitti</div>
             <h2>Ünite {unit.unit} son testi</h2>
             <p className="muted">15 LGS tarzı soru · 8 dk{uq.pre?.n ? ` · girişte %${pct(uq.pre)} yapmıştın` : ''}</p>
             <button className="btn" onClick={() => onQuiz('post')}>Son teste başla →</button>
@@ -125,21 +128,24 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         </section>
       )}
 
-      {placement && (
-        <section className="card slim">
-          <div><b>Mini LGS 🎯</b><div className="muted small">10 soru · 15 dk · netini hesaplar{mini ? ` · son net ${fmtNet(mini.last)}` : ''}</div></div>
-          <button className="btn sm ghost" onClick={onMini}>Başla →</button>
-        </section>
-      )}
 
-      {placement && (
-        <section className="card slim">
-          <div><b>Denemeden sonra: tamir seti 🔧</b><div className="muted small">Yanlış yaptığın üniteleri seç · ünite başına 5 soru</div></div>
-          <button className="btn sm ghost" onClick={() => onRepair()}>Aç →</button>
-        </section>
-      )}
 
       {placement && <GoalCard goal={state.goal} daily={state.daily} onChange={goal => dispatch({ type: 'goal', goal })} />}
+
+      {placement && (
+        <section className="tools" aria-label="Araçlar">
+          <div className="eyebrow">Araçlar</div>
+          <div className="tool-grid">
+            <button className="tool accent" onClick={onMini}><b>Mini LGS</b><span>10 soru · 15 dk{mini ? ` · son net ${fmtNet(mini.last)}` : ' · netini hesaplar'}</span></button>
+            <button className="tool" onClick={() => onRepair()}><b>Tamir seti</b><span>Denemede kaybettiğin üniteler · 5'er soru</span></button>
+            {Object.values(progress.items).some(it => it.status !== 'new') && <button className="tool" onClick={() => onFlash()}><b>Hızlı kart</b><span>2 dakikalık kart turu</span></button>}
+            {Object.keys(state.doneDays).length > 0 && <button className="tool" onClick={onExam}><b>Sınav Dili</b><span>LGS soru tipleri · 24 ders</span></button>}
+            {mistakesOpen > 0 && <button className="tool" onClick={onMistakes}><b>Yanlış defterim</b><span>{mistakesOpen} soru: doğrusu ve nedeni</span></button>}
+            <button className="tool" onClick={onWordList}><b>Kelime listesi</b><span>Ünite ünite · PDF</span></button>
+            <button className="tool" onClick={onReport}><b>Veli raporu</b><span>Son 7 gün · paylaş</span></button>
+          </div>
+        </section>
+      )}
 
       {placement && !state.profile?.nick && Object.keys(state.doneDays).length > 0 && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
 
@@ -175,28 +181,9 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         ))}
       </details>
 
-      {placement && Object.values(progress.items).some(it => it.status !== 'new') && (
-        <section className="card slim">
-          <div><b>Hızlı kart</b><div className="muted small">2 dakikalık kart turu · öğrendiklerin ve zorlandıkların</div></div>
-          <button className="btn sm" onClick={() => onFlash()}>Kartlar →</button>
-        </section>
-      )}
 
-      {placement && Object.keys(state.doneDays).length > 0 && (
-        <section className="card slim">
-          <div><b>Sınav Dili</b><div className="muted small">LGS soru tipleri ve taktikleri · 24 kısa ders</div></div>
-          <button className="btn sm ghost" onClick={onExam}>Aç →</button>
-        </section>
-      )}
 
-      {placement && mistakesOpen > 0 && (
-        <section className="card slim">
-          <div><b>Yanlış defterim</b><div className="muted small">{mistakesOpen} soru: doğrusu ve nedeni</div></div>
-          <button className="btn sm ghost" onClick={onMistakes}>Aç →</button>
-        </section>
-      )}
 
-      {placement && <div className="row"><button className="btn ghost" onClick={onWordList}>Kelime listesi (PDF)</button><button className="btn ghost" onClick={onReport}>Veli raporu</button></div>}
 
       <details className="card unitpick">
         <summary><b>Hesabım</b> <span className="muted small">· takma ad, kayıt, sıfırlama</span></summary>

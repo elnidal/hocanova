@@ -235,3 +235,44 @@ select.field{appearance:none;background:var(--paper) url("data:image/svg+xml,%3C
 .homelink{display:block;margin:0 auto 6px;max-width:720px;font-weight:800;color:var(--brand);text-decoration:none}
 .rolelinks{text-align:center;margin-top:18px}
 .card.role > span[aria-hidden]{flex:none;font-weight:800;color:var(--brand)}
+
+/* ===== Cila: tanıtım sayfasıyla aynı çizgi (ince kenarlı kartlar, mercan etiketler, koyu plan paneli, araç ızgarası) ===== */
+.card{border:1px solid var(--line);box-shadow:0 1px 2px rgba(27,30,58,.04);border-radius:18px}
+.eyebrow{letter-spacing:.12em;color:var(--hot)}
+h1{letter-spacing:-.025em}h2{letter-spacing:-.02em}
+.btn{transition:transform .15s ease,background .15s ease}.btn:hover:not(:disabled){transform:translateY(-1px)}
+.btn:disabled{opacity:.55}
+
+.card.plan{background:#11143A;color:#F4F3FB;border:0;padding:22px;box-shadow:0 14px 34px rgba(17,20,58,.22)}
+.plan-top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.plan .eyebrow{color:#FF8A75}
+.plan h2{color:#fff;font-size:1.55rem;margin-top:6px}
+.plan-count{text-align:right;flex:none}
+.plan-count b{display:block;font-family:var(--f-d);font-size:2.4rem;line-height:1;letter-spacing:-.03em;color:#FFC93C}
+.plan-count span{font-size:.75rem;font-weight:700;color:rgba(244,243,251,.7)}
+.plan .plan-steps li{background:rgba(255,255,255,.07);color:#F4F3FB}
+.plan .plan-steps .muted{color:rgba(244,243,251,.62)}
+.plan .plan-dot{background:rgba(255,255,255,.14);color:#fff}
+.plan .plan-steps li.now{background:#fff;color:#1B1E3A;box-shadow:none}
+.plan .plan-steps li.now .muted{color:#62668A}
+.plan .plan-steps li.now .plan-dot{background:#3B4BD8;color:#fff}
+.plan .plan-steps li.done .plan-dot{background:#1E9E77;color:#fff}
+.plan .btn{background:#FF6B4F;color:#fff}
+.plan > p.muted{color:rgba(244,243,251,.7)}
+
+.tools{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.tool-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:600px){.tool-grid{grid-template-columns:repeat(3,1fr)}}
+.tool{display:flex;flex-direction:column;gap:4px;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 14px 16px;font:inherit;color:var(--ink);cursor:pointer;transition:transform .15s ease,border-color .15s ease}
+.tool:hover{border-color:var(--brand);transform:translateY(-1px)}
+.tool b{font-family:var(--f-d);font-size:1.05rem;letter-spacing:-.01em}
+.tool span{font-size:.8rem;line-height:1.35;color:var(--muted)}
+.tool.accent{background:#3B4BD8;border-color:#3B4BD8;color:#fff}.tool.accent span{color:rgba(255,255,255,.8)}
+
+.onboard-list .ob-icon{font-family:var(--f-d);font-weight:800;font-size:.95rem;color:var(--brand);min-width:1.6em;line-height:1.5}
+.role-head{font-family:var(--f-d)}
+@media (prefers-color-scheme:dark){
+  .card.plan{background:#1D2160;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 14px 34px rgba(0,0,0,.35)}
+  .btn:not(.ghost){color:#11143A}
+  .plan .btn{color:#fff}
+}

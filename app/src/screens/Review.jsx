@@ -31,7 +31,7 @@ export default function Review({ state, dispatch, qIndex, items, onExit }) {
 
   if (!total) return (
     <div className="wrap">
-      {head()}<h2>Bugün tekrar yok 🎉</h2>
+      {head()}<h2>Bugün tekrar yok</h2>
       <Coach text="Tüm ifadeler zamanında. Yeni ders günü seni bekliyor." />
       <button className="btn" onClick={onExit}>Ana ekran</button>
     </div>
