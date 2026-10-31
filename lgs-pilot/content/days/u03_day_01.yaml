@@ -306,36 +306,35 @@ notifications:
 
 editor:
   z07: {U3-038: BEKLIYOR, U3-040: BEKLIYOR, U3-045: BEKLIYOR, U3-048: BEKLIYOR, U3-050: BEKLIYOR, U3-052: BEKLIYOR}
-mini:                     # deneme (Ü3): uzun hikâye yerine her ifadeye kısa sahne
+mini:                     # deneme (Ü3): uzun hikâye yerine her ifadeye kısa Türkçe sahne, hedef ifade İngilizce
   - item: U3-038
     durum: "Ece mutfakta kek yapmaya hazırlanıyor."
     lines:
-      - { speaker: Ece, text: "<en>Mum, where's the big {U3-038|bowl}? I need it for the eggs and the flour.</en>" }
-      - { speaker: "Ece'nin annesi", text: "<en>It's in the cupboard, next to the plates. Be careful, it's glass!</en>" }
+      - { speaker: Ece, text: "Anne, büyük {U3-038|bowl} nerede? Yumurtaları ve unu içinde karıştıracağım." }
+      - { speaker: "Ece'nin annesi", text: "Dolapta, tabakların yanında. Dikkat et, cam!" }
   - item: U3-040
-    durum: "Bora kurabiyeleri hazırladı; dedesi yardıma geliyor."
+    durum: "Bora kurabiyeleri hazırladı; dedesi yardıma geldi."
     lines:
-      - { speaker: Bora, text: "<en>Grandpa, the cookies are ready. Can you put them in the {U3-040|oven}?</en>" }
-      - { speaker: Dedesi, text: "<en>Of course. It's very hot, so stay away from it. Twelve minutes!</en>" }
+      - { speaker: Bora, text: "Dede, kurabiyeler hazır! {U3-040|Oven} ısındı mı?" }
+      - { speaker: Dedesi, text: "Isındı ama çok sıcak; sen uzak dur, tepsiyi ben koyarım. On iki dakika!" }
   - item: U3-045
     durum: "Selin, Elif'e en sevdiği sandviçi anlatıyor."
     lines:
-      - { speaker: Selin, text: "<en>{U3-045|First}, cut the bread. {U3-045|Then}, add some cheese and tomatoes.</en>" }
-      - { speaker: Elif, text: "<en>And {U3-045|after that}?</en>" }
-      - { speaker: Selin, text: "<en>{U3-045|Finally}, put it in the toaster. Easy!</en>" }
+      - { speaker: Selin, text: "Çok kolay: {U3-045|first} ekmeği kes, {U3-045|then} peynirle domates koy." }
+      - { speaker: Elif, text: "{U3-045|After that}?" }
+      - { speaker: Selin, text: "{U3-045|Finally} tost makinesine at. Bitti!" }
   - item: U3-048
     durum: "Duru pazar sabahı için alışveriş listesi yazıyor."
     lines:
-      - { speaker: Duru, text: "<en>We need three {U3-048|ingredients} for pancakes: eggs, milk and flour.</en>" }
-      - { speaker: Elif, text: "<en>Is that all? What about sugar?</en>" }
-      - { speaker: Duru, text: "<en>OK, four {U3-048|ingredients} then!</en>" }
+      - { speaker: Duru, text: "Pankek için üç {U3-048|ingredients} lazım: yumurta, süt ve un." }
+      - { speaker: Elif, text: "Şeker yok mu? Bence dört!" }
   - item: U3-050
     durum: "Murat Bey dersin sonunda ödev veriyor."
     lines:
-      - { speaker: Murat Bey, text: "<en>For homework, write your family's favourite {U3-050|recipe} in English.</en>" }
-      - { speaker: Kaan, text: "<en>Can I write my grandma's {U3-050|recipe}? Her soup is the best!</en>" }
+      - { speaker: Murat Bey, text: "Ödev: ailenizin en sevdiği yemeğin {U3-050|recipe}'sini İngilizce yazın." }
+      - { speaker: Kaan, text: "Büyükannemin çorbası olur mu? Onun {U3-050|recipe}'si dünyanın en iyisi!" }
   - item: U3-052
     durum: "Elif ilk kez çay demlemeye çalışıyor."
     lines:
-      - { speaker: Elif, text: "<en>Making Turkish tea is a long {U3-052|process}!</en>" }
-      - { speaker: Ece, text: "<en>Don't worry. It's only four easy {U3-052|steps}. I can help you.</en>" }
+      - { speaker: Elif, text: "Türk çayı demlemek ne uzun bir {U3-052|process}!" }
+      - { speaker: Ece, text: "Korkma, sadece dört kolay {U3-052|step}. Ben yardım ederim." }

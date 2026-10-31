@@ -39,6 +39,9 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
 
   // Hikâyeli günlerde kart: örnek cümle, hikâyenin ilk İngilizce satırından alınır.
   const autoCard = id => {
+    // Mini sahneli günde sahne Türkçe: İngilizce örnek, kullan sorusunun cümlesi (boşluk doğru cevapla dolu)
+    const k = hasMini && day.steps.find(x => x.item === id)?.kullan
+    if (k?.stem && /_{3,}/.test(k.stem)) return { example_en: plain(k.stem.replace(/<\/?en>/g, '').replace(/_{3,}/, k.options[k.answer ?? 0]), items), note_tr: items[id]?.trap_note || null }
     for (const l of [...mini.filter(m => m.item === id).flatMap(m => m.lines), ...(day.story || []), ...(day.scene || [])]) {
       const seg = (l.text.match(/<en>[\s\S]*?<\/en>/g) || []).find(x => markIds(x).includes(id))
       if (seg) return { example_en: plain(seg.slice(4, -5), items), note_tr: items[id]?.trap_note || null }
