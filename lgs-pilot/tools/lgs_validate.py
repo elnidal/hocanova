@@ -61,7 +61,14 @@ def main():
         if errs: continue
         docs[d] = doc
         story_txt = [l["text"] for l in doc["story"]]
-        full = " ".join(story_txt)
+        mini = doc.get("mini", [])
+        mini_txt = [l["text"] for m in mini for l in m["lines"]] + [m.get("durum", "") for m in mini]
+        full = " ".join(story_txt + mini_txt)
+        if mini:  # mini sahne denemesi: her yeni birimin kendi sahnesi olmalı ve birim orada geçmeli
+            for i in doc["new_items"]:
+                m = next((x for x in mini if x["item"] == i), None)
+                if not m: engel(W, "MİNİ", f"{items[i]['display']} için mini sahne yok")
+                elif not any(re.search(r"\{" + i + r"[}|]", l["text"]) for l in m["lines"]): engel(W, "MİNİ", f"{items[i]['display']} kendi mini sahnesinde geçmiyor")
 
         # yeni birimler
         exp = sorted(i for i, pd in pilot_day.items() if pd == d)
@@ -69,7 +76,7 @@ def main():
         if sorted(s["item"] for s in doc["steps"]) != sorted(doc["new_items"]): engel(W, "ADIM", "her yeni birim için bir steps kaydı olmalı")
 
         # belirteçler
-        for txt in story_txt + [l["text"] for l in doc.get("scene", [])]:
+        for txt in story_txt + mini_txt + [l["text"] for l in doc.get("scene", [])]:
             for m in TOKEN.finditer(txt):
                 i = m.group(1)
                 if i not in items: engel(W, "BELİRTEÇ", f"bilinmeyen {i}")

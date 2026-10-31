@@ -21,6 +21,26 @@ properties:
   scene:                                                # 2. adım KULLAN bağlamı: tamamen İngilizce kısa sahne (mesaj, diyalog)
     type: array
     items: { $ref: "#/$defs/line" }
+  mini:                                                 # deneme: hikâye yerine her yeni birime 2–3 satırlık İngilizce mini sahne
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [item, lines]
+      properties:
+        item: { $ref: "#/$defs/itemId" }
+        durum: { type: string }       # tek satır Türkçe durum (çeviri yasağı geçerli)
+        lines:
+          type: array
+          minItems: 2
+          maxItems: 4
+          items:
+            type: object
+            additionalProperties: false
+            required: [speaker, text]
+            properties:
+              speaker: { type: string }
+              text: { type: string }
   steps:                                                # her yeni birim için üç soru
     type: array
     items:

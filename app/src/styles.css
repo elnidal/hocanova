@@ -276,3 +276,5 @@ h1{letter-spacing:-.025em}h2{letter-spacing:-.02em}
   .btn:not(.ghost){color:#11143A}
   .plan .btn{color:#fff}
 }
+.chat.mini{gap:8px}
+.mini-durum{margin:0 0 2px;font-size:.85rem;font-weight:700;color:var(--muted)}

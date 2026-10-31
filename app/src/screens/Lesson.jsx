@@ -20,11 +20,14 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   const [plan] = useState(() => planLesson(day, state.progress, Date.now()))
   const cardFirst = plan.mode === 'cardFirst'
   const advanced = plan.mode === 'advanced'
-  const hasScene = Boolean(day.scene?.length)
-  const PHASES = (light ? PHASES_LIGHT : cardFirst ? PHASES_CARDS.filter(x => (x !== 'cards' || plan.cardItems.length) && (x !== 'scene' || hasScene)) : PHASES_STORY)
+  // Mini sahne denemesi: gün dosyasında `mini` varsa uzun hikâye yerine her ifadenin 2–3 satırlık sahnesi gösterilir.
+  const mini = useMemo(() => (day.mini || []).map(m => ({ ...m, lines: m.lines.map((l, k) => ({ ...l, id: `${m.item}-${k}` })) })), [day])
+  const hasMini = mini.length > 0
+  const hasScene = hasMini || Boolean(day.scene?.length)
+  const PHASES = (light ? PHASES_LIGHT : cardFirst ? PHASES_CARDS.filter(x => (x !== 'cards' || plan.cardItems.length) && (x !== 'scene' || hasScene)) : hasMini ? PHASES_STORY.filter(x => x !== 'story') : PHASES_STORY)
   const STAGE = light ? ['card', 'tani', 'kullan', 'sina'] : advanced ? ['sezdir', 'kullan', 'sina'] : ['tani', 'kullan', 'sina']
   const newSet = useMemo(() => new Set(day.new_items), [day])
-  const [phase, setPhase] = useState(light ? 'steps' : cardFirst ? (plan.cardItems.length ? 'cards' : hasScene ? 'scene' : 'steps') : 'story')
+  const [phase, setPhase] = useState(light ? 'steps' : cardFirst ? (plan.cardItems.length ? 'cards' : hasScene ? 'scene' : 'steps') : hasMini ? 'scene' : 'story')
   const [storyBack, setStoryBack] = useState(null) // kart-önce akışta hikâye isteğe bağlı: okuyunca bu aşamaya dönülür
   const openStory = () => { setPop(null); setShown(CHUNK); setStoryBack(phase); setPhase('story') }
   const asked = useRef(new Set()) // bu derste sorulan soru kimlikleri: yanlışta aynı soruyu tekrar sormamak için
@@ -36,7 +39,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
 
   // Hikâyeli günlerde kart: örnek cümle, hikâyenin ilk İngilizce satırından alınır.
   const autoCard = id => {
-    for (const l of [...(day.story || []), ...(day.scene || [])]) {
+    for (const l of [...mini.filter(m => m.item === id).flatMap(m => m.lines), ...(day.story || []), ...(day.scene || [])]) {
       const seg = (l.text.match(/<en>[\s\S]*?<\/en>/g) || []).find(x => markIds(x).includes(id))
       if (seg) return { example_en: plain(seg.slice(4, -5), items), note_tr: items[id]?.trap_note || null }
     }
@@ -46,14 +49,14 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   // İlk geçişte kısa Türkçe karşılık (ileri seviyede yok: orada anlamı çıkarmaya çalışırlar)
   const glossByLine = useMemo(() => {
     const seen = new Set(), out = {}
-    const lines = cardFirst ? [...(day.scene || []), ...(day.story || [])] : [...(day.story || []), ...(day.scene || [])] // kısa Türkçe, ilk okunan yerde
+    const lines = hasMini ? mini.flatMap(m => m.lines) : cardFirst ? [...(day.scene || []), ...(day.story || [])] : [...(day.story || []), ...(day.scene || [])] // kısa Türkçe, ilk okunan yerde
     for (const l of lines) {
       const g = {}
       for (const id of markIds(l.text)) if (newSet.has(id) && !seen.has(id)) { seen.add(id); g[id] = shortGloss(items[id]) }
       out[l.id] = advanced ? {} : g
     }
     return out
-  }, [day, items, newSet, advanced])
+  }, [day, items, newSet, advanced, mini, hasMini])
   const onWord = (id, label) => { speak(label); setPop({ label, meaning: items[id]?.meaning_tr }) }
   const popup = pop && (
     <aside className="card wordpop" role="status">
@@ -141,6 +144,24 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
     </div>
   )
 
+  if (phase === 'scene' && hasMini) return (
+    <div className="wrap">
+      {head('Mini sahneler', advanced ? 'Anlamı sahneden çıkar' : 'Bugünün ifadeleri iş başında')}
+      {advanced && <Coach text={day.coach.start} />}
+      {mini.map(m => (
+        <section className="card chat mini" key={m.item}>
+          {m.durum && <p className="mini-durum">{m.durum}</p>}
+          {m.lines.map((l, k) => (
+            <div key={l.id} className={`msg${k % 2 ? ' me' : ''}`}><b>{l.speaker}</b>{rt(l.text, glossByLine[l.id])}</div>
+          ))}
+        </section>
+      ))}
+      <p className="muted">{advanced ? 'Altı çizili ifadelerin anlamını sahneden tahmin et; sorularda göreceğiz.' : 'Bilmediğin kelimeye dokun, anlamı çıkar.'}</p>
+      <button className="btn" onClick={() => { setPop(null); setPhase('steps') }}>Alıştırmaya geç →</button>
+      {popup}
+    </div>
+  )
+
   if (phase === 'scene') {
     const first = day.scene[0]?.speaker
     return (
@@ -178,7 +199,8 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
             <CardView item={it} card={entry.card} status={statusOf(state.progress, entry.itemId)} last={last} onNext={onNext} />
           </div>
         )
-        const ctx = entry.role === 'sezdir' && day.story.find(l => l.id === entry.q.context)
+        const miniCtx = entry.role === 'sezdir' && hasMini && mini.find(m => m.item === entry.itemId)
+        const ctx = entry.role === 'sezdir' && !miniCtx && day.story.find(l => l.id === entry.q.context)
         return (
           <div className="wrap">
             {head(advanced ? 'Sezdir · Kullan · Sına' : 'Alıştırma', 'Bugünün ifadeleri')}
@@ -188,7 +210,8 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
               <span className="row">{entry.retry && <span className="chip unc">tekrar</span>}</span> {/* ifadenin kendisi gösterilmez: boşluk doldurma cevabını ele verirdi */}
             </div>
             {ctx && <div className="ctx">{rt(ctx.text)}</div>}
-            <Question key={`${entry.q.id}${entry.retry ? 'r' : ''}`} q={shuffled} mode="learn" last={last} items={items} newSet={newSet} speak={speak}
+            {miniCtx && <div className="ctx">{miniCtx.lines.map(l => <div key={l.id}><b>{l.speaker}:</b> {rt(l.text)}</div>)}</div>}
+            <Question key={`${entry.q.id}${entry.retry ? 'r' : ''}`} q={miniCtx ? { ...shuffled, prompt: shuffled.prompt.replace(/^Hikâyede/, 'Sahnede') } : shuffled} mode="learn" last={last} items={items} newSet={newSet} speak={speak}
               onAnswer={onAnswer} onNext={onNext}
               extra={entry.role === 'sezdir' && <div className="explain"><b>{it.display}</b> = {it.meaning_tr} <button className="say" aria-label="Dinle" onClick={() => speak(it.display)}><SpeakerIcon /></button></div>} />
           </div>

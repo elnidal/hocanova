@@ -306,3 +306,36 @@ notifications:
 
 editor:
   z07: {U3-038: BEKLIYOR, U3-040: BEKLIYOR, U3-045: BEKLIYOR, U3-048: BEKLIYOR, U3-050: BEKLIYOR, U3-052: BEKLIYOR}
+mini:                     # deneme (Ü3): uzun hikâye yerine her ifadeye kısa sahne
+  - item: U3-038
+    durum: "Ece mutfakta kek yapmaya hazırlanıyor."
+    lines:
+      - { speaker: Ece, text: "<en>Mum, where's the big {U3-038|bowl}? I need it for the eggs and the flour.</en>" }
+      - { speaker: "Ece'nin annesi", text: "<en>It's in the cupboard, next to the plates. Be careful, it's glass!</en>" }
+  - item: U3-040
+    durum: "Bora kurabiyeleri hazırladı; dedesi yardıma geliyor."
+    lines:
+      - { speaker: Bora, text: "<en>Grandpa, the cookies are ready. Can you put them in the {U3-040|oven}?</en>" }
+      - { speaker: Dedesi, text: "<en>Of course. It's very hot, so stay away from it. Twelve minutes!</en>" }
+  - item: U3-045
+    durum: "Selin, Elif'e en sevdiği sandviçi anlatıyor."
+    lines:
+      - { speaker: Selin, text: "<en>{U3-045|First}, cut the bread. {U3-045|Then}, add some cheese and tomatoes.</en>" }
+      - { speaker: Elif, text: "<en>And {U3-045|after that}?</en>" }
+      - { speaker: Selin, text: "<en>{U3-045|Finally}, put it in the toaster. Easy!</en>" }
+  - item: U3-048
+    durum: "Duru pazar sabahı için alışveriş listesi yazıyor."
+    lines:
+      - { speaker: Duru, text: "<en>We need three {U3-048|ingredients} for pancakes: eggs, milk and flour.</en>" }
+      - { speaker: Elif, text: "<en>Is that all? What about sugar?</en>" }
+      - { speaker: Duru, text: "<en>OK, four {U3-048|ingredients} then!</en>" }
+  - item: U3-050
+    durum: "Murat Bey dersin sonunda ödev veriyor."
+    lines:
+      - { speaker: Murat Bey, text: "<en>For homework, write your family's favourite {U3-050|recipe} in English.</en>" }
+      - { speaker: Kaan, text: "<en>Can I write my grandma's {U3-050|recipe}? Her soup is the best!</en>" }
+  - item: U3-052
+    durum: "Elif ilk kez çay demlemeye çalışıyor."
+    lines:
+      - { speaker: Elif, text: "<en>Making Turkish tea is a long {U3-052|process}!</en>" }
+      - { speaker: Ece, text: "<en>Don't worry. It's only four easy {U3-052|steps}. I can help you.</en>" }
