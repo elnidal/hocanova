@@ -35,30 +35,31 @@ select * from analytics.word_stats order by yanlis_yuzde desc, yanlis desc limit
 
 Öğrenci ilk testten sonra takma ad ve (isteğe bağlı) sınıf kodu girer; gerçek ad zorunlu değildir.
 
-## Yayın (Netlify)
+## Yayın (Cloudflare)
 
-Canlı adres: https://hocanova.netlify.app (Netlify ekibi hocanova, site `hocanova`; eski adres hikayenglish-koc.netlify.app kredisi biten hesapta kaldı). Pilot: arama motorlarına kapalı (noindex).
+Canlı adres: **https://lgsingilizce.app** (www da çalışır). Cloudflare Workers statik yayın, ayar `wrangler.jsonc`, güvenlik ve noindex başlıkları `public/_headers`. Pilot: arama motorlarına kapalı (noindex).
 
 ```bash
 cd app
-npm run deploy     # içeriği üretir, derler, canlıya gönderir (netlify login gerekir; Python + pyyaml gerekir)
+npm run deploy     # içeriği üretir, derler, Cloudflare'e gönderir (bir kez: npx wrangler@4 login; Python + pyyaml gerekir)
 ```
 
 `.env.local` içindeki Supabase değerleri derleme sırasında pakete gömülür (publishable anahtar herkese açık olacak şekilde tasarlanmıştır).
-Netlify ekip ayarı yeni sitelere varsayılan olarak "yalnız Netlify üyeleri görsün" korumasını koyabiliyor; yeni site açarsan `netlify api updateSite` ile `sso_login:false` yap.
+
+**Eski adres:** `hocanova.netlify.app` artık yalnız `migrate/` taşıma sayfasını sunar. Ziyaretçinin tarayıcı verisini (ilerleme + Supabase oturumu) `#tasi=` ile yeni adrese taşır, eski service worker'ı kaldırır. Yeni adreste `src/boot.js` → `src/migrate.js` bu veriyi yazar. Taşıma sayfasını değiştirirsen: `npm run deploy:eski-adres`. (Daha eski hikayenglish-koc.netlify.app kredisi biten hesapta kaldı.)
 
 ## Öğretmen ödev bağlantısı
 
 Sınıfa şu biçimde bir bağlantı gönder; açan öğrencinin günlük hedefi güncellenir (5–300 soru):
 
-`https://hocanova.netlify.app/?odev=100&not=Bugün%20100%20soru%20çöz`
+`https://lgsingilizce.app/?odev=100&not=Bugün%20100%20soru%20çöz`
 
 ## Öğretmen paneli ve "Sorun bildir" (Supabase kurulumu)
 
 1. `supabase/reports.sql` çalıştır (öğrenci bildirimleri için tablo).
 2. Authentication → Users → Add user ile kendi e-posta + şifreni oluştur (Auto confirm).
 3. `supabase/teacher.sql` çalıştır, dosyanın sonundaki yorumlu `insert` satırını e-postanla çalıştırıp kendini öğretmen yap.
-4. Panel: `https://hocanova.netlify.app/#ogretmen` (öğrenci oturumundan ayrı giriş; yalnız o sekmede açık kalır).
+4. Panel: `https://lgsingilizce.app/#ogretmen` (öğrenci oturumundan ayrı giriş; yalnız o sekmede açık kalır).
 
 ## Veli bağlantısı
 
@@ -66,4 +67,4 @@ Sınıfa şu biçimde bir bağlantı gönder; açan öğrencinin günlük hedefi
 
 ## Tahta modu (sınıfta)
 
-`https://hocanova.netlify.app/#tahta` — ünite ve günü elle seçip dersi tahtada açarsın. Giriş, başlangıç testi ve sıra kilidi yok; oturum açılmaz, ilerleme kaydedilmez (sayfa yenilenince sıfırlanır).
+`https://lgsingilizce.app/#tahta` — ünite ve günü elle seçip dersi tahtada açarsın. Giriş, başlangıç testi ve sıra kilidi yok; oturum açılmaz, ilerleme kaydedilmez (sayfa yenilenince sıfırlanır).

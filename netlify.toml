@@ -1,4 +1,4 @@
-# Pilot yayını: yerelde derle (npm run content && npm run build), sonra `netlify deploy --dir=app/dist --prod`.
+# ESKİ: uygulama artık Cloudflare'de (lgsingilizce.app). Netlify'daki hocanova sitesi yalnız app/migrate taşıma sayfasını sunar (npm run deploy:eski-adres).
 [build]
   publish = "app/dist"
 
