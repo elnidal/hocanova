@@ -101,6 +101,10 @@ steps:
       options: ["Can rarely reads books.", "Can rarely plays computer games.", "Can never goes swimming.", "Can reads a book every day."]
       answer: 0
       explain: "Ayda bir kez kitap okuyan biri için \"rarely\" kullanılır."
+      why_wrong:
+        - "Bilgisayar oyunu \"every day\"; nadiren değil, her gün."
+        - "\"Never\" yanlış; Can \"twice a week\" yüzüyor."
+        - "Kitap \"once a month\"; \"every day\" ise oyun satırına ait."
   - item: U2-050
     sezdir:
       id: u2d09-050-z
@@ -125,6 +129,10 @@ steps:
       options: ["rarely", "often", "always", "usually"]
       answer: 0
       explain: "seldom = rarely (nadiren). often ve always sık sık demektir."
+      why_wrong:
+        - "\"Often\" sık sık demek; Elif ev yemeğini tercih ettiği için fast food'u az yiyor."
+        - "\"Always\" her zaman demek; \"seldom\" bunun neredeyse tersi."
+        - "\"Usually\" genellikle demek; \"seldom\" ise nadiren."
   - item: U2-051
     sezdir:
       id: u2d09-051-z
@@ -150,6 +158,10 @@ steps:
       options: ["No, I hardly ever eat it.", "Yes, I eat it every day.", "Yes, I usually have it for lunch.", "Yes, I always eat it at weekends."]
       answer: 0
       explain: "\"Maybe once a year\" diyen kişi neredeyse hiç yemiyor: No, I hardly ever eat it."
+      why_wrong:
+        - "\"Every day\" ile \"Maybe once a year\" çelişiyor."
+        - "\"Usually\" genellikle demek; yılda bir kez yiyen biri bunu söylemez."
+        - "\"Always… at weekends\" her hafta sonu demek; \"once a year\" ile çelişir."
   - item: U2-052
     sezdir:
       id: u2d09-052-z
@@ -175,6 +187,10 @@ steps:
       options: ["three times a week", "once a week", "twice a week", "every day"]
       answer: 0
       explain: "Takvimde pazartesi, çarşamba ve cuma yüzme var: haftada üç kez."
+      why_wrong:
+        - "Yüzme takvimde üç gün geçiyor: pazartesi, çarşamba ve cuma."
+        - "İki gün değil üç gün: cuma da \"swimming\"."
+        - "Salı piyano, perşembe boş; her gün yüzmüyor."
   - item: U2-053
     sezdir:
       id: u2d09-053-z
@@ -199,6 +215,10 @@ steps:
       options: ["Excuse me, please wait in the queue.", "I'd love to join you.", "I rarely go to the cinema.", "Can you pick me up at six?"]
       answer: 0
       explain: "Sıraya girmeyen çocuğa \"Excuse me, please wait in the queue.\" denir."
+      why_wrong:
+        - "\"I'd love to join you\" bir daveti kabul etmektir; burada davet yok."
+        - "Sinemaya ne sıklıkla gittiğin bu durumla ilgisiz; sorun sırayı geçen çocuk."
+        - "Birinden seni almasını istemek; sıraya girmeyen çocukla ilgisi yok."
   - item: U2-054
     sezdir:
       id: u2d09-054-z
@@ -224,6 +244,10 @@ steps:
       options: ["She follows the news.", "She rarely reads.", "She hardly ever watches TV.", "She isn't interested in the world."]
       answer: 0
       explain: "Haber sitelerini okuyup akşam haberlerini izleyen Selin haberleri takip ediyor."
+      why_wrong:
+        - "Tam tersi: Selin otobüste haber siteleri okuyor."
+        - "Selin her akşam annesiyle haber izliyor; \"hardly ever\" metinle çelişir."
+        - "Tam tersi: \"I want to know what's happening in the world.\""
 
 review:
   - id: u2d09-r01
@@ -282,6 +306,10 @@ review:
     options: ["I don't mind.", "I can't stand films.", "I dislike both of them.", "No, I'm busy."]
     answer: 0
     explain: "\"Both are OK for me\" diyen kişi fark etmez der: I don't mind."
+    why_wrong:
+      - "\"I can't stand films\" ile \"Both are OK for me\" çelişir."
+      - "\"I dislike both\" ikisini de sevmemek; Duru \"both are OK\" diyor."
+      - "\"No, I'm busy\" bir daveti geri çevirir; Ece seçim soruyor."
   - id: u2d09-r08
     type: message_infer
     item: U2-010
@@ -291,6 +319,10 @@ review:
     options: ["She enjoys singing a lot.", "She dislikes singing.", "She doesn't mind singing, but she prefers dancing.", "She rarely sings."]
     answer: 0
     explain: "\"keen on singing\" = şarkı söylemeyi çok sever."
+    why_wrong:
+      - "Tam tersi: \"keen on singing\" şarkı söylemeyi çok sevmek demek."
+      - "Metinde dans geçmiyor; \"doesn't mind\" da \"really keen on\" için çok zayıf."
+      - "\"Rarely\" metinle çelişir; Elif duşta, otobüste ve grupta şarkı söylüyor."
   - id: u2d09-r09
     type: gap_fill
     item: U2-012
@@ -300,6 +332,10 @@ review:
     options: ["dislikes", "enjoys", "is fond of", "is keen on"]
     answer: 0
     explain: "Öğlene kadar uyumak isteyen kişi erken kalkmaktan hoşlanmaz: dislikes."
+    why_wrong:
+      - "Öğlene kadar uyumak isteyen biri erken kalkmaktan keyif almaz."
+      - "\"Is fond of\" sevmek demek; ikinci cümle bunun tam tersini söylüyor."
+      - "\"Is keen on\" hevesli olmak demek; Bora erken kalkmaya hiç hevesli değil."
   - id: u2d09-r10
     type: message_infer
     item: U2-008
@@ -309,6 +345,10 @@ review:
     options: ["Selin enjoys reading, but she isn't keen on dancing.", "Selin enjoys dancing more than reading.", "Selin dislikes reading.", "Selin is fond of dancing."]
     answer: 0
     explain: "Okuma 5 yıldız, dans 1 yıldız: okumayı seviyor, dansa meraklı değil."
+    why_wrong:
+      - "Tersi doğru: okuma 5 yıldız, dans yalnız 1 yıldız."
+      - "\"Dislikes reading\" yanlış; okuma en yüksek puanı almış."
+      - "Dans yalnız 1 yıldız; \"is fond of\" çok sevmek demek."
 
 tips:
   - type: mini_dilbilgisi

@@ -90,6 +90,10 @@ steps:
       options: ["I'm afraid I can't. I have a guitar lesson.", "Sure! What time?", "I'd love to!", "That sounds fun. See you there!"]
       answer: 0
       explain: "Duru daveti reddediyor; kibar red kalıbı \"I'm afraid I can't\" + sebep (gitar dersi). Diğer şıklar kabul cümleleridir."
+      why_wrong:
+        - "\"Sure! What time?\" daveti kabul eder; soru ise Duru'nun reddettiğini söylüyor."
+        - "\"I'd love to!\" bir kabul cümlesi; reddetmek isteyen biri bunu söylemez."
+        - "\"See you there!\" orada buluşacağını gösterir, yani kabuldür; red değildir."
   - item: U1-021
     sezdir:
       id: d02-021-z
@@ -115,6 +119,10 @@ steps:
       options: ["He refuses the invitation and gives a reason.", "He accepts the invitation.", "He invites Selin to his house.", "He apologises for being late."]
       answer: 0
       explain: "Kaan \"Sorry, I can't come\" diyerek reddediyor ve sebebini söylüyor (kuzenleri geliyor). Kabul etmiyor, geç kalmaktan da söz etmiyor."
+      why_wrong:
+        - "Tam tersi: \"Sorry, I can't come on Friday\" daveti reddediyor."
+        - "Kaan kimseyi evine çağırmıyor; yalnız kuzenlerinin geleceğini söylüyor."
+        - "\"Sorry\" geç kaldığı için değil, gelemediği için; mesajda gecikmeden söz edilmiyor."
   - item: U1-007
     sezdir:
       id: d02-007-z
@@ -140,6 +148,10 @@ steps:
       options: ["\"My bike broke on the way.\"", "\"Happy birthday, Ece!\"", "\"I'd love to come.\"", "\"Would you like some cake?\""]
       answer: 0
       explain: "Bahane (excuse), bir şeyi neden yapmadığını açıklamak için söylenir."
+      why_wrong:
+        - "Bu bir doğum günü kutlaması; toplantıya neden gelinmediğini açıklamıyor."
+        - "\"I'd love to come\" bir daveti kabul eder; geçmişteki bir gelmeyişi açıklamaz."
+        - "Bu bir ikram teklifi; \"Why didn't you come?\" sorusuna sebep vermiyor."
   - item: U1-002
     sezdir:
       id: d02-002-z
@@ -165,6 +177,10 @@ steps:
       options: ["to apologise", "to invite Ece to a party", "to accept an invitation", "to ask for a cat"]
       answer: 0
       explain: "Bora \"I'm really sorry\" ve \"Please forgive me\" diyor: özür diliyor. Özür dilemenin İngilizcesi apologise; davet ya da kabul söz konusu değil."
+      why_wrong:
+        - "Mesajda davet yok; \"Please forgive me\" özür dilendiğini gösteriyor."
+        - "Bora bir daveti kabul etmiyor; \"I'm really sorry\" ile yanlışı için özür diliyor."
+        - "Tuzak kelime \"cat\": Bora kedi istemiyor, kedi hakkında doğruyu söylemediğini itiraf ediyor."
   - item: U1-025
     sezdir:
       id: d02-025-z
@@ -190,6 +206,10 @@ steps:
       options: ["Why not? I have some chocolate.", "Sorry, I'm busy all week.", "I don't think so.", "I can't cook at all."]
       answer: 0
       explain: "\"Let's make a cake\" bir öneridir; \"Why not?\" (Neden olmasın?) öneriyi kabul eder. Diğer şıklar reddeder."
+      why_wrong:
+        - "\"Sorry, I'm busy all week\" öneriyi reddeder; soru kabul eden cevabı istiyor."
+        - "\"I don't think so\" katılmadığını gösterir; bu bir red cevabıdır."
+        - "\"I can't cook at all\" yapamayacağını söyler; öneriyi kabul etmez."
   - item: U1-022
     sezdir:
       id: d02-022-z
@@ -214,6 +234,10 @@ steps:
       options: ["I'm afraid I'm busy.", "Sounds great!", "Why not?", "I'd love to."]
       answer: 0
       explain: "Soru \"kabul için KULLANILMAYAN\" olanı soruyor. \"I'm afraid I'm busy.\" bir red cümlesidir; diğer üçü kabul ifadesidir."
+      why_wrong:
+        - "\"Sounds great!\" öneriyi ya da daveti beğenip kabul etmek için kullanılır."
+        - "\"Why not?\" \"Neden olmasın?\" demek; bir kabul ifadesidir."
+        - "\"I'd love to\" en bilinen kabul kalıbıdır; soru kabulde KULLANILMAYANI istiyor."
 
 review:
   - id: d02-r01

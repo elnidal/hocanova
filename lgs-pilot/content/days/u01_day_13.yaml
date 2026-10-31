@@ -102,6 +102,10 @@ steps:
       options: ["Why don't you come over to my house?", "Sorry, I'm not at home today.", "I don't like dogs at all.", "Text me next year."]
       answer: 0
       explain: "Sıkılan Elif'e Duru \"Why don't you come over to my house?\" (Neden bize gelmiyorsun?) der; bahçede Fıstık'la oynayabilirler."
+      why_wrong:
+        - "Evde olmayan biri ardından \"We can play with Fıstık in the garden\" diyemez; ikisi çelişiyor."
+        - "Köpekleri hiç sevmeyen biri Fıstık'la oynamayı önermez."
+        - "\"Next year\" çok uzak; Duru şimdi birlikte oynamayı öneriyor."
   - item: U1-052
     sezdir:
       id: d13-052-z
@@ -126,6 +130,10 @@ steps:
       options: ["You can rely on Selin.", "You can argue with Selin.", "You can come over to Selin's house.", "You can text Selin."]
       answer: 0
       explain: "depend on = rely on (güvenmek)."
+      why_wrong:
+        - "\"Argue\" tartışmak demek; \"depend on\" ise güvenmek."
+        - "\"Come over\" birinin evine uğramak demek; güven anlamı taşımaz."
+        - "\"Text\" mesaj atmak demek; \"depend on\" ile anlam bağı yok."
   - item: U1-057
     sezdir:
       id: d13-057-z
@@ -151,6 +159,10 @@ steps:
       options: ["There should be mutual respect in the class.", "Students must be quiet all the time.", "Only the teacher can talk.", "Students shouldn't share their ideas."]
       answer: 0
       explain: "Birbirini dinlemek ve fikirlerle dalga geçmemek = sınıfta karşılıklı saygı olmalı."
+      why_wrong:
+        - "\"All the time\" aşırı bir ifade; Murat Bey öğrencilerin konuşup dinlenmesini istiyor."
+        - "Tam tersi: \"you listen to me\" kadar \"I listen to you\" da diyor; öğrenciler de konuşuyor."
+        - "Tam tersi: fikirlere gülünmemesini istiyor, yani fikirler paylaşılıyor."
   - item: U1-061
     sezdir:
       id: d13-061-z
@@ -175,6 +187,10 @@ steps:
       options: ["listening carefully when someone is talking", "laughing at a friend's mistake", "looking at your phone while your teacher is talking", "talking loudly in the library"]
       answer: 0
       explain: "Soru saygı gösteren davranışı soruyor: birini dikkatle dinlemek. Diğerleri saygısızlıktır."
+      why_wrong:
+        - "Arkadaşının hatasına gülmek onu kırar; bu saygısızlıktır."
+        - "Öğretmen konuşurken telefona bakmak onu dinlememek demek; saygısızlıktır."
+        - "Kütüphanede yüksek sesle konuşmak başkalarını rahatsız eder; saygısızlıktır."
   - item: U1-088
     sezdir:
       id: d13-088-z
@@ -200,6 +216,10 @@ steps:
       options: ["respectful", "rude", "unreliable", "lazy"]
       answer: 0
       explain: "Ayakkabılarını çıkaran, teşekkür eden Kaan saygılıdır (respectful); rude (kaba) tersidir."
+      why_wrong:
+        - "Tam tersi: \"rude\" kaba demek, Kaan ise teşekkür edip bardağını mutfağa götürüyor."
+        - "\"Unreliable\" güvenilmez demek; metinde sözünü tutmamakla ilgili bilgi yok."
+        - "\"Lazy\" tembel demek; bardağını kendisi mutfağa taşıyan biri tembel değil."
   - item: U1-068
     sezdir:
       id: d13-068-z
@@ -224,6 +244,10 @@ steps:
       options: ["unreliable", "reliable", "honest", "loyal"]
       answer: 0
       explain: "unreliable olumsuz bir özellik; diğer üçü olumlu."
+      why_wrong:
+        - "\"Reliable\" güvenilir demek; olumlu bir özellik, yani diğerleriyle aynı grupta."
+        - "\"Honest\" dürüst demek; olumlu bir özellik, gruptan ayrılmıyor."
+        - "\"Loyal\" sadık demek; o da olumlu bir özellik. Farklı olan tek olumsuz kelime."
 
 review:
   - id: d13-r01
@@ -280,6 +304,10 @@ review:
     options: ["Bora is my friend.", "Bora is my teacher.", "Bora is my cousin.", "Bora is my neighbour."]
     answer: 0
     explain: "buddy = friend (arkadaş)."
+    why_wrong:
+      - "\"Buddy\" yakın arkadaş için kullanılır; öğretmenle ilgisi yok."
+      - "\"Cousin\" kuzen demek; \"buddy\" aile değil arkadaş anlatır."
+      - "\"Neighbour\" komşu demek; \"buddy\" ise arkadaş."
   - id: d13-r08
     type: message_infer
     item: U1-047
@@ -289,6 +317,10 @@ review:
     options: ["someone who helps you in bad times too", "someone who is only fun at parties", "someone who always agrees with you", "someone who lives next door"]
     answer: 0
     explain: "Selin'e göre gerçek arkadaş sorun anında da yanında olandır: someone who helps you in bad times too."
+    why_wrong:
+      - "\"Only\" tuzağı: Selin \"doesn't only stay with you in good times\" diyor."
+      - "Metinde her şeye katılmaktan söz edilmiyor; konu zor anda yanında olmak."
+      - "Tuzak kelime \"there\": \"always there\" yakın oturmak değil, yanında olmak demek."
   - id: d13-r09
     type: dialogue_complete
     item: U1-048
@@ -298,6 +330,10 @@ review:
     options: ["You're fun to be with.", "You're always late.", "I feel alone with you.", "You're so unreliable."]
     answer: 0
     explain: "Piknikten keyif alan Elif'e Duru \"You're fun to be with.\" (Seninle olmak eğlenceli) der."
+    why_wrong:
+      - "Duru \"Me too!\" diyerek keyif aldığını söylüyor; ardından eleştiri gelmez."
+      - "Birlikte keyif aldığı birine \"I feel alone with you\" denmez."
+      - "\"Unreliable\" güvenilmez demek; güzel bir pikniğin ardından bu söylenmez."
 
 tips:
   - type: tuzak

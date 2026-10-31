@@ -97,6 +97,10 @@ steps:
       options: ["fashion", "sports", "the news", "cooking"]
       answer: 0
       explain: "Defile izleyip yeni renk ve stilleri bilen Ece modayla ilgileniyor."
+      why_wrong:
+        - "Metinde spor geçmiyor; \"catwalk shows\" ve \"styles\" modayı gösteriyor."
+        - "\"The news\" haber demek; Ece haber değil, defile izliyor."
+        - "Yemekle ilgili ipucu yok; Ece renk ve stil bilgisinden söz ediyor."
   - item: U2-062
     sezdir:
       id: u2d11-062-z
@@ -121,6 +125,10 @@ steps:
       options: ["fashionable", "cheap", "boring", "ugly"]
       answer: 0
       explain: "trendy = fashionable (moda, popüler)."
+      why_wrong:
+        - "\"Cheap\" ucuz demek; \"trendy\" fiyatı değil, modada olmayı anlatır."
+        - "\"Boring\" sıkıcı demek; herkesin taktığı popüler bir şey sıkıcı sayılmaz."
+        - "\"Ugly\" çirkin demek; \"trendy\" olumlu, moda olan anlamında."
   - item: U2-063
     sezdir:
       id: u2d11-063-z
@@ -146,6 +154,10 @@ steps:
       options: ["Duru doesn't follow new fashion trends.", "Selin keeps up with the latest fashion.", "Ece isn't interested in fashion.", "Everybody keeps up with the latest fashion."]
       answer: 0
       explain: "Anketteki \"No\" kısmında Duru var; yani yeni modayı takip etmiyor."
+      why_wrong:
+        - "Selin \"No\" satırında; yeni modayı takip etmiyor."
+        - "Tam tersi: Ece \"Yes\" satırında, modayı takip ediyor."
+        - "\"Everybody\" aşırı bir ifade; Selin, Duru ve Kaan \"No\" demiş."
   - item: U2-064
     sezdir:
       id: u2d11-064-z
@@ -171,6 +183,10 @@ steps:
       options: ["Wear casual clothes, like a T-shirt and trainers.", "Wear smart clothes, like a suit and a tie.", "Wear your school uniform.", "Wear your shiny wedding shoes."]
       answer: 0
       explain: "Piknik ve futbol için rahat, günlük kıyafet: casual clothes."
+      why_wrong:
+        - "Takım elbise ve kravat resmî kıyafettir; piknik ve futbol için uygun değil."
+        - "Okul üniforması okul içindir; parkta piknik ve futbol için uymaz."
+        - "Parlak düğün ayakkabısı resmî bir giysi; futbol oynamaya uygun değil."
   - item: U2-065
     sezdir:
       id: u2d11-065-z
@@ -197,6 +213,10 @@ steps:
       options: ["Wear smart clothes, like a shirt and a jacket.", "Wear your old football shirt.", "Wear your pyjamas.", "Wear shorts and flip-flops."]
       answer: 0
       explain: "İş görüşmesi için gömlek ve ceket gibi şık kıyafet giyilir."
+      why_wrong:
+        - "Eski futbol forması spor içindir; iş görüşmesi şık giyim ister."
+        - "Pijama evde uyumak içindir; iş görüşmesine uygun değil."
+        - "Şort ve parmak arası terlik plaj kıyafetidir; iş görüşmesine uymaz."
   - item: U2-066
     sezdir:
       id: u2d11-066-z
@@ -222,6 +242,10 @@ steps:
       options: ["her outfit", "her daily routine", "her band", "her survey"]
       answer: 0
       explain: "Siyah kot, sarı kazak ve spor ayakkabı: Ece kombinini soruyor."
+      why_wrong:
+        - "Ece saatleri ya da günlük işlerini değil, giysilerini sayıyor."
+        - "Metinde grup ya da müzik geçmiyor; Ece kıyafetlerini anlatıyor."
+        - "Ece anket sonucu değil, yarınki kıyafeti hakkında fikir soruyor."
 
 review:
   - id: u2d11-r01
@@ -280,6 +304,10 @@ review:
     options: ["a band", "a basketball team", "a survey group", "a karate class"]
     answer: 0
     explain: "Şarkı söyleyen, gitar çalan, davul çalan ve birlikte çalışan üçlü bir gruptur: a band."
+    why_wrong:
+      - "Metinde top ya da maç yok; şarkı, gitar ve davul bir grubu gösterir."
+      - "Anket grubu soru sorar; bu üçlü birlikte müzik yapıyor."
+      - "Karate dersinde şarkı ve gitar olmaz; ipuçları müzik grubuna ait."
   - id: u2d11-r08
     type: odd_one_out
     item: U2-021
@@ -288,6 +316,10 @@ review:
     options: ["guitar", "jazz", "rock", "pop"]
     answer: 0
     explain: "Soru müzik türü OLMAYANI soruyor. Guitar bir enstrümandır; jazz, rock, pop türdür."
+    why_wrong:
+      - "\"Jazz\" bir müzik türüdür."
+      - "\"Rock\" bir müzik türüdür."
+      - "\"Pop\" bir müzik türüdür. Soru tür OLMAYANI istiyor."
   - id: u2d11-r09
     type: message_infer
     item: U2-024
@@ -297,6 +329,10 @@ review:
     options: ["jazz", "rap", "rock music", "folk music"]
     answer: 0
     explain: "Saksafon, piyano, Louis Armstrong, Ella Fitzgerald: caz müziği."
+    why_wrong:
+      - "Rap için ipucu yok; saksafon ve Louis Armstrong caza işaret eder."
+      - "Rock için ipucu yok; saksafon ve Ella Fitzgerald caza işaret eder."
+      - "Halk müziği geleneksel şarkılardır; saksafon ve bu isimler caza ait."
   - id: u2d11-r10
     type: gap_fill
     item: U2-020
@@ -306,6 +342,10 @@ review:
     options: ["member", "genre", "queue", "survey"]
     answer: 0
     explain: "Davul çalan birini arıyoruz; grubumuza yeni bir üye (member) lazım."
+    why_wrong:
+      - "\"Genre\" müzik türü demek; davul çalabilen bir kişi tür olmaz."
+      - "\"Queue\" sıra (kuyruk) demek; gruba kuyruk değil, üye gerekir."
+      - "\"Survey\" anket demek; ikinci cümle davul çalan bir kişi arıyor."
 
 tips:
   - type: tuzak

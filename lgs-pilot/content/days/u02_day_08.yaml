@@ -102,6 +102,10 @@ steps:
       options: ["What's your daily routine?", "What's your favourite genre?", "What sport do you do?", "Who picks you up after school?"]
       answer: 0
       explain: "Saat saat gününü anlatan Selin \"What's your daily routine?\" sorusunu cevaplıyor."
+      why_wrong:
+        - "Selin müzik türünden söz etmiyor; saat saat gününü anlatıyor."
+        - "Selin bir spordan söz etmiyor; günlük işlerini sıralıyor."
+        - "Selin onu kimin aldığını söylemiyor; cevabında kimse geçmiyor."
   - item: U2-044
     sezdir:
       id: u2d08-044-z
@@ -127,6 +131,10 @@ steps:
       options: ["Selin always reads before bed.", "Bora usually reads before bed.", "Duru always reads before bed.", "Selin never reads before bed."]
       answer: 0
       explain: "Anket: Selin haftada 7 gece okuyor; yani her gece okuyor (always)."
+      why_wrong:
+        - "Bora \"0 nights\" okuyor; \"usually\" değil, \"never\" olmalı."
+        - "Duru yalnız \"2 nights\" okuyor; \"always\" için her gece okuması gerekir."
+        - "Tam tersi: Selin \"7 nights\", yani her gece okuyor."
   - item: U2-045
     sezdir:
       id: u2d08-045-z
@@ -151,6 +159,10 @@ steps:
       options: ["Ece visits her grandma at the same time every week.", "Ece rarely visits her grandma.", "Ece never visits her grandma.", "Ece visited her grandma only once."]
       answer: 0
       explain: "regularly = düzenli olarak; her pazar saat 2'de gidiyor, yani her hafta aynı saatte."
+      why_wrong:
+        - "\"Rarely\" nadiren demek; \"every Sunday\" çok düzenli bir ziyaret."
+        - "\"Never\" metinle çelişiyor; Ece her pazar büyükannesine gidiyor."
+        - "\"Only once\" tek bir ziyaret demek; \"regularly\" tekrar eden bir alışkanlık."
   - item: U2-046
     sezdir:
       id: u2d08-046-z
@@ -176,6 +188,10 @@ steps:
       options: ["The students mostly chat online in their free time.", "The students mostly read books in their free time.", "None of the students play sports.", "Nobody reads books."]
       answer: 0
       explain: "18 öğrenci online sohbet ediyor; çoğu bunu yapıyor: mostly chat online."
+      why_wrong:
+        - "\"read books\" yalnız 3 kişi; 25 kişide çoğunluk değil."
+        - "\"None\" aşırı bir ifade; 4 öğrenci spor yapıyor."
+        - "\"Nobody\" aşırı bir ifade; 3 öğrenci kitap okuyor."
   - item: U2-047
     sezdir:
       id: u2d08-047-z
@@ -200,6 +216,10 @@ steps:
       options: ["usually", "never", "rarely", "once"]
       answer: 0
       explain: "most of the time = usually (genellikle)."
+      why_wrong:
+        - "\"Never\" hiç demek; \"most of the time\" ise çoğu zaman."
+        - "\"Rarely\" nadiren demek; \"most of the time\" bunun tam tersi."
+        - "\"Once\" bir kez demek; \"most of the time\" sık olan bir durumu anlatır."
   - item: U2-048
     sezdir:
       id: u2d08-048-z
@@ -224,6 +244,10 @@ steps:
       options: ["Dad will pick us up at 5 outside the cinema.", "Please pick up the paper on the floor.", "Bora picked up a pen from the ground.", "Can you pick up that book for me?"]
       answer: 0
       explain: "Burada pick up = birini arabayla almak. Diğer cümlelerde yerden bir şeyi almak."
+      why_wrong:
+        - "Yerdeki kâğıdı almak demek; arabayla kimse alınmıyor."
+        - "Yerden kalem almak demek; burada \"pick up\" bir eşyayı kaldırmak."
+        - "Bir kitabı alıp vermek demek; araba ya da kişi yok."
 
 review:
   - id: u2d08-r01
@@ -283,6 +307,10 @@ review:
     options: ["do a survey", "form a band", "go hiking", "do karate"]
     answer: 0
     explain: "Yirmi öğrenciye aynı beş soruyu sorup cevapları yazmak anket yapmaktır: do a survey."
+    why_wrong:
+      - "Grup kurmak için soru sorup cevap yazmak gerekmez; bu anket yapmaktır."
+      - "Doğa yürüyüşüyle ilgili ipucu yok; öğrencilere aynı sorular soruluyor."
+      - "Karateyle ilgili ipucu yok; iş, soru sorup sonuçları getirmek."
   - id: u2d08-r08
     type: dialogue_complete
     item: U2-004
@@ -292,6 +320,10 @@ review:
     options: ["I hang out with my friends.", "I do karate alone.", "I stay in bed all day.", "I hate weekends."]
     answer: 0
     explain: "Hafta sonu parka gidip arkadaşlarıyla vakit geçiriyor: I hang out with my friends."
+    why_wrong:
+      - "B \"We… together\" diyor; \"alone\" bununla çelişir."
+      - "B parka ve alışveriş merkezine gidiyor; bütün gün yatakta kalmıyor."
+      - "\"I hate weekends\" ile devamdaki keyifli plan çelişir."
   - id: u2d08-r09
     type: dialogue_complete
     item: U2-006
@@ -301,6 +333,10 @@ review:
     options: ["What about you?", "How old are you?", "Where do you live?", "Why are you late?"]
     answer: 0
     explain: "\"I'm into pop music. What about you?\" = Ya sen? Duru kendi tercihini söylüyor."
+    why_wrong:
+      - "Duru \"Me? I prefer rock music.\" diyor; yaş sorusuna müzik tercihiyle cevap verilmez."
+      - "\"Where do you live?\" yer sorar; Duru bir yer değil, müzik türü söylüyor."
+      - "\"Why are you late?\" neden sorar; Duru'nun cevabı bir bahane değil, tercih."
   - id: u2d08-r10
     type: synonym
     item: U2-005
@@ -309,6 +345,10 @@ review:
     options: ["I believe teenagers should sleep more.", "Everybody knows teenagers sleep a lot.", "Teenagers never sleep.", "I have no idea about teenagers' sleep."]
     answer: 0
     explain: "In my opinion = I believe (bence, inanıyorum ki)."
+    why_wrong:
+      - "\"In my opinion\" kişisel fikirdir; \"everybody knows\" herkesin bildiği bir gerçek gibi sunar."
+      - "\"Never\" aşırı bir ifade; cümle gençlerin daha çok uyuması gerektiğini söylüyor."
+      - "Konuşan kişinin net bir fikri var; \"I have no idea\" bunun tersi."
 
 tips:
   - type: mini_dilbilgisi

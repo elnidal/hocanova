@@ -98,6 +98,10 @@ steps:
       options: ["Can you recommend a good restaurant?", "Did you cook pizza yesterday?", "Do you hate pizza?", "How far is the park?"]
       answer: 0
       explain: "Cevap \"Try the pizza place\" diye öneri veriyor; soru: Can you recommend a good restaurant?"
+      why_wrong:
+        - "Geçmişi soran bir soruya \"Try the pizza place…\" diye öneriyle cevap verilmez."
+        - "Pizzadan nefret edip etmediğini soran biri \"Yes! Try…\" önerisini beklemez."
+        - "\"How far…?\" mesafe sorar; cevapta mesafe değil, öneri var."
   - item: U2-080
     sezdir:
       id: u2d14-080-z
@@ -123,6 +127,10 @@ steps:
       options: ["She is suggesting a plan.", "She is refusing an invitation.", "She is apologising.", "She is complaining about the library."]
       answer: 0
       explain: "\"Why don't we study together?\" bir öneridir: Selin plan öneriyor."
+      why_wrong:
+        - "Selin bir daveti reddetmiyor; tersine kendisi öneri yapıyor."
+        - "Mesajda \"sorry\" yok; Selin özür dilemiyor."
+        - "Selin kütüphaneden şikâyet etmiyor; orada çalışmayı öneriyor."
   - item: U2-081
     sezdir:
       id: u2d14-081-z
@@ -147,6 +155,10 @@ steps:
       options: ["You should stay at home and rest.", "You should train harder today.", "You should eat a lot of ice cream.", "You should swim in the cold sea."]
       answer: 0
       explain: "Hasta olan arkadaşına \"evde dinlen\" diye tavsiye verilir."
+      why_wrong:
+        - "Hasta birine daha çok antrenman önerilmez; dinlenmesi gerekir."
+        - "Soğuk algınlığında dondurma iyi bir tavsiye değildir."
+        - "Hasta birine soğuk denizde yüzmek önerilmez; bu tehlikeli."
   - item: U2-082
     sezdir:
       id: u2d14-082-z
@@ -171,6 +183,10 @@ steps:
       options: ["We learnt a lot on the trip.", "We laughed a lot on the trip.", "The trip was very noisy.", "The trip was too expensive."]
       answer: 0
       explain: "educational = eğitici; gezide çok şey öğrendik."
+      why_wrong:
+        - "\"Educational\" eğitici demek; gülmek eğlenceli (entertaining) bir şeyi anlatır."
+        - "Cümle gürültüden söz etmiyor; gezinin öğretici olduğunu söylüyor."
+        - "Fiyat bilgisi cümlede yok; \"educational\" öğrenmekle ilgili."
   - item: U2-083
     sezdir:
       id: u2d14-083-z
@@ -196,6 +212,10 @@ steps:
       options: ["It was entertaining but not educational.", "It was educational but not entertaining.", "It was both educational and entertaining.", "It was neither educational nor entertaining."]
       answer: 0
       explain: "Hiçbir şey öğrenmemiş ama çok gülmüş: eğlenceli ama eğitici değil."
+      why_wrong:
+        - "Tam tersi: Mert \"I didn't learn anything\" diyor; eğitici değil."
+        - "Mert hiçbir şey öğrenmemiş; \"both\" iki özelliği de verdiği için yanlış."
+        - "Mert \"I laughed a lot\" diyor; çizgi film eğlenceliydi."
 
 review:
   - id: u2d14-r01
@@ -254,6 +274,10 @@ review:
     options: ["an individual sport", "a team sport", "a ball game with ten players", "a relay race"]
     answer: 0
     explain: "Takımda oynamak istemeyen ve tek başına yapılabilen spor arıyor: bireysel spor."
+    why_wrong:
+      - "Bora \"I don't want to play in a team\" diyor; takım sporu istemiyor."
+      - "On oyunculu top oyunu bir takım sporudur; Bora tek başına yapmak istiyor."
+      - "Bayrak yarışı takımla koşulur; Bora \"alone\" diyor."
   - id: u2d14-r08
     type: message_infer
     item: U2-039
@@ -263,6 +287,10 @@ review:
     options: ["She goes hiking.", "She does karate.", "She goes to the gym.", "She chats online."]
     answer: 0
     explain: "Babasıyla pazar günü saatlerce dağda yürüyor: hiking."
+    why_wrong:
+      - "Karate için dağda yürünmez; ipucu \"walk in the mountains\"."
+      - "Spor salonu kapalı bir yerdir; Selin doğada, dağlarda yürüyor."
+      - "Online sohbet ile dağ yürüyüşü ilgisiz; \"We love nature!\" doğa yürüyüşünü gösterir."
   - id: u2d14-r09
     type: dialogue_complete
     item: U2-041
@@ -272,6 +300,10 @@ review:
     options: ["pay attention", "rest", "take a selfie", "hang out"]
     answer: 0
     explain: "\"This information is important for the exam\" dedikten sonra \"dikkat et\" denir: pay attention."
+    why_wrong:
+      - "\"Rest\" dinlenmek demek; önemli bilgi anlatan öğretmen dinlenmeyi istemez."
+      - "Ders sırasında \"take a selfie\" istenmez; Bora'nın cevabı \"I'm listening now\"."
+      - "\"Hang out\" arkadaşlarla takılmak demek; dersle ilgisi yok."
   - id: u2d14-r10
     type: message_infer
     item: U2-042
@@ -281,6 +313,10 @@ review:
     options: ["annoyed", "calm", "excited", "fascinated"]
     answer: 0
     explain: "Köpek bütün gece havladığı için Ece rahatsız ve kızgın (annoyed)."
+    why_wrong:
+      - "\"Calm\" sakin demek; Ece \"I'm really angry now!\" diyor."
+      - "\"Excited\" heyecanlı demek; uykusuz ve kızgın biri için uymaz."
+      - "\"Fascinated\" büyülenmiş demek; köpek havlaması Ece'yi büyülemiyor, kızdırıyor."
 
 tips:
   - type: mini_dilbilgisi

@@ -100,6 +100,10 @@ steps:
       options: ["It was really boring.", "It was really exciting.", "It was thrilling!", "It was so much fun."]
       answer: 0
       explain: "\"I almost fell asleep\" (neredeyse uyuyakaldım) diyen kişi filmi sıkıcı bulmuştur: It was really boring."
+      why_wrong:
+        - "Tam tersi: heyecanlı bir belgeselde kimse uyuyakalmaz."
+        - "\"Thrilling\" çok heyecanlı demek; \"I almost fell asleep\" ile çelişiyor."
+        - "Çok eğlenceli bir şey izleyen biri neredeyse uyumaz."
   - item: U1-096
     sezdir:
       id: d17-096-z
@@ -125,6 +129,10 @@ steps:
       options: ["She thinks it's exciting.", "She thinks it's boring.", "She is calm about it.", "She doesn't want to go."]
       answer: 0
       explain: "Bir gün kaldı, çantasını üç kez hazırladı, uyuyamıyor: gezi onun için heyecan verici (exciting)."
+      why_wrong:
+        - "Tam tersi: \"Tomorrow will be amazing!\" diyen biri geziyi sıkıcı bulmuyor."
+        - "Çantasını üç kez hazırlayıp uyuyamayan biri sakin değil, heyecanlı."
+        - "Elif gün sayıyor (\"Only one more day!\"); gitmek istiyor."
   - item: U1-098
     sezdir:
       id: d17-098-z
@@ -151,6 +159,10 @@ steps:
       options: ["It was so much fun!", "It was so boring.", "Sorry, I can't.", "It doesn't matter."]
       answer: 0
       explain: "Gün boyu voleybol oynayıp şarkı söylemek eğlencelidir: It was so much fun!"
+      why_wrong:
+        - "Gün boyu voleybol oynayıp şarkı söylemek sıkıcı bir gün anlatmaz."
+        - "\"Sorry, I can't\" bir daveti reddeder; \"How was…?\" sorusuna uymaz."
+        - "\"It doesn't matter\" tercih sorusuna verilir; \"How was the picnic?\" sorusuna değil."
   - item: U1-100
     sezdir:
       id: d17-100-z
@@ -175,6 +187,10 @@ steps:
       options: ["It was very exciting.", "It was very boring.", "It was very slow.", "It was very funny."]
       answer: 0
       explain: "thrilling = çok heyecanlı (very exciting). Hız treni yavaş ya da sıkıcı değil."
+      why_wrong:
+        - "Tam tersi: \"thrilling\" çok heyecanlı demek, sıkıcı değil."
+        - "\"Slow\" yavaş demek; \"thrilling\" hızı değil, heyecanı anlatır."
+        - "\"Funny\" komik demek; \"thrilling\" heyecan verici demek, güldürmek değil."
 
 review:
   - id: d17-r01
@@ -234,6 +250,10 @@ review:
     options: ["They argued.", "They spent time together.", "They supported each other.", "They shared a secret."]
     answer: 0
     explain: "Maç yüzünden birbirlerine bağırıp konuşmuyorlar: tartıştılar (argued)."
+    why_wrong:
+      - "Birbirine bağırıp artık konuşmayan iki kişi birlikte vakit geçirmiyor."
+      - "Bağırmak destek değil; \"Now we aren't talking\" küs olduklarını gösteriyor."
+      - "Mesajda sır yok; konu maç yüzünden çıkan kavga."
   - id: d17-r08
     type: situation
     item: U1-031
@@ -243,6 +263,10 @@ review:
     options: ["He feels alone.", "He is very busy.", "He is having fun with friends.", "He is in a hurry."]
     answer: 0
     explain: "Cumartesi evde; kimse yazmıyor, kimse aramıyor: kendini yalnız hissediyor."
+    why_wrong:
+      - "Bora evde ve kimse onu aramıyor; meşgul olduğuna dair ipucu yok."
+      - "Tam tersi: \"He has no one to talk to\" yazıyor; arkadaşlarıyla değil."
+      - "Acele etmek için bir sebep yok; Bora evde tek başına."
   - id: d17-r09
     type: dialogue_complete
     item: U1-046
@@ -252,6 +276,10 @@ review:
     options: ["I'll text you later.", "Let's argue about it.", "I prefer the cinema.", "That's thrilling!"]
     answer: 0
     explain: "Kütüphanede konuşamayan kişiye \"Sana sonra mesaj atarım\" denir: I'll text you later."
+    why_wrong:
+      - "Kütüphanede olan birine tartışmayı önermek konuşmaya uymaz."
+      - "Sinema tercihi \"I can't talk now\" cümlesiyle ilgisiz."
+      - "\"That's thrilling!\" çok heyecanlı demek; kütüphane bilgisine verilecek cevap değil."
   - id: d17-r10
     type: situation
     item: U1-045
@@ -261,6 +289,10 @@ review:
     options: ["They have a strong bond.", "They have a bad feeling.", "They have a big argument.", "They have a new relationship."]
     answer: 0
     explain: "Anaokulundan beri arkadaş olan, her şeyi paylaşan ve destekleyen kızların güçlü bir bağı vardır."
+    why_wrong:
+      - "\"Bad feeling\" kötü önsezi demek; her şeyi paylaşan iki arkadaşı anlatmaz."
+      - "Metinde tartışma yok; \"always support each other\" yazıyor."
+      - "\"New\" yeni demek; anaokulundan beri süren arkadaşlık yeni değil."
   - id: d17-r11
     type: trait_match
     item: U1-059
@@ -270,6 +302,10 @@ review:
     options: ["reliable", "unreliable", "stubborn", "jealous"]
     answer: 0
     explain: "Hiç geç kalmayan ve \"yaparım\" dediğini yapan Selin güvenilirdir: reliable."
+    why_wrong:
+      - "Tam tersi: \"never late\" olan ve dediğini yapan biri güvenilirdir."
+      - "\"Stubborn\" inatçı demek; metinde inatla ilgili bir ipucu yok."
+      - "\"Jealous\" kıskanç demek; metin Selin'in sözünü tutmasını anlatıyor."
   - id: d17-r12
     type: message_infer
     item: U1-077
@@ -279,6 +315,10 @@ review:
     options: ["honest", "unreliable", "self-centered", "jealous"]
     answer: 0
     explain: "Camı kıran Duru gerçeği söylüyor ve kimseyi suçlamıyor: dürüst (honest)."
+    why_wrong:
+      - "\"Unreliable\" güvenilmez demek; hatasını itiraf eden biri güvenilirdir."
+      - "\"Self-centered\" kendini düşünen demek; Duru ise Bora suçlanmasın diye doğruyu söylüyor."
+      - "\"Jealous\" kıskanç demek; mesajda kıskançlıkla ilgili bir ipucu yok."
   - id: d17-f01
     type: dialogue_complete
     item: U1-026
@@ -288,6 +328,10 @@ review:
     options: ["Would you like to come with us?", "Did you go there last year?", "Why are you so stubborn?", "How was the roller coaster?"]
     answer: 0
     explain: "Duru \"I'd love to!\" diyerek bir daveti kabul ediyor; boşlukta bir davet olmalı."
+    why_wrong:
+      - "\"Did you go…last year?\" geçmişi sorar; \"I'd love to!\" ise davete verilen cevaptır."
+      - "\"Why are you so stubborn?\" bir suçlama; ardından \"I'd love to!\" denmez."
+      - "\"How was…?\" fikir sorar; Duru'nun \"What time?\" sorusu bir davete cevap."
   - id: d17-f02
     type: message_infer
     item: U1-072
@@ -297,6 +341,10 @@ review:
     options: ["He always wears stylish clothes.", "He makes his friend laugh.", "He helps other people.", "He supports his friend."]
     answer: 0
     explain: "Metinde \"He isn't fashionable\" yazıyor; şık giyindiği doğru değil."
+    why_wrong:
+      - "Bu doğru bir bilgi: \"his jokes always make me laugh\" yazıyor."
+      - "Bu doğru bir bilgi: Bora ağır çantayı taşımayı teklif etmiş."
+      - "Bu doğru bir bilgi: \"He is always there for me\" destek olduğunu gösteriyor."
   - id: d17-f03
     type: synonym
     item: U1-037
@@ -305,6 +353,10 @@ review:
     options: ["She always supports me.", "She always lives near me.", "She is always in a hurry.", "She is always at home."]
     answer: 0
     explain: "always there for me = her zaman yanımda, beni destekliyor. Bir yerde durmakla ilgisi yok."
+    why_wrong:
+      - "Tuzak kelime \"there\": \"always there for me\" yakın oturmak değil, yanında olmak demek."
+      - "\"In a hurry\" acele etmek demek; kalıpla anlam bağı yok."
+      - "Tuzak kelime \"there\": kalıp bir yeri değil, desteği anlatır."
   - id: d17-f04
     type: message_infer
     item: U1-058
@@ -314,6 +366,10 @@ review:
     options: ["He is apologising and making a promise.", "He is refusing an invitation.", "He is telling a new secret.", "He is giving advice to Bora."]
     answer: 0
     explain: "Kaan hem özür diliyor (\"I'm sorry\") hem de söz veriyor (\"I promise\"): apologising and making a promise."
+    why_wrong:
+      - "Mesajda davet reddi yok; tersine Kaan \"Can we spend time together?\" diye soruyor."
+      - "Kaan yeni bir sır anlatmıyor; eski sırrı yaydığı için özür diliyor."
+      - "Kaan tavsiye vermiyor; \"I'm sorry\" ve \"I promise\" diyor."
 
 tips:
   - type: kelime_ailesi

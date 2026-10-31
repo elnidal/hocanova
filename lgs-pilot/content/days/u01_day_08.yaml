@@ -102,6 +102,10 @@ steps:
       options: ["Do you want to come to the park with me?", "Did you go to the park yesterday?", "Where is your dog?", "Why are you at the park?"]
       answer: 0
       explain: "Parka gelmesini isteyen Ece teklif eder: Do you want to come to the park with me?"
+      why_wrong:
+        - "\"Did you go…yesterday?\" geçmişi sorar; Ece ise Elif'i şimdi davet etmek istiyor."
+        - "Köpek Ece'nin yanında; bu soru davet etmez."
+        - "Elif henüz parkta değil; bu soru onu parka çağırmıyor."
   - item: U1-024
     sezdir:
       id: d08-024-z
@@ -127,6 +131,10 @@ steps:
       options: ["What about playing basketball?", "I'm not bored.", "Where were you yesterday?", "I have a lot of homework."]
       answer: 0
       explain: "Sıkılan Kaan'a öneri yapılır ve Kaan \"Good idea!\" der: What about playing basketball?"
+      why_wrong:
+        - "Bu bir öneri değil; Kaan'ın \"Good idea!\" cevabına uymuyor."
+        - "Geçmişte nerede olduğunu sormak bir öneri değil; \"Let's go\" ile bağ kurmaz."
+        - "Ödevden şikâyet bir öneri değil; ardından \"Good idea!\" denmez."
   - item: U1-018
     sezdir:
       id: d08-018-z
@@ -152,6 +160,10 @@ steps:
       options: ["She prefers picnics to the cinema.", "She prefers the cinema to picnics.", "She doesn't like being outside.", "She hates the cinema."]
       answer: 0
       explain: "Selin pikniği sinemadan daha çok seviyor: prefers picnics to the cinema."
+      why_wrong:
+        - "Sıralama ters çevrilmiş: Selin \"picnics are better for me\" diyor."
+        - "Tam tersi: Selin \"I love being outside in the sun\" diyor."
+        - "\"Hate\" aşırı bir ifade; Selin sinema için \"OK\" diyor, nefret etmiyor."
   - item: U1-014
     sezdir:
       id: d08-014-z
@@ -177,6 +189,10 @@ steps:
       options: ["It doesn't matter to her.", "She prefers the cinema.", "She prefers the picnic.", "She doesn't want to come."]
       answer: 0
       explain: "Duru ikisinden de memnun ve \"You choose!\" diyor: fark etmez (It doesn't matter)."
+      why_wrong:
+        - "Duru bir tercih yapmıyor; \"I'm happy with both\" diyor."
+        - "Duru pikniği de seçmiyor; \"You choose!\" diyerek kararı bırakıyor."
+        - "Duru gelmek istemediğini söylemiyor; iki seçenekten de memnun."
   - item: U1-010
     sezdir:
       id: d08-010-z
@@ -201,6 +217,10 @@ steps:
       options: ["I want to visit the science museum.", "I visited the science museum.", "I don't want to visit the science museum.", "I have to visit the science museum."]
       answer: 0
       explain: "I would like to = I want to (istiyorum)."
+      why_wrong:
+        - "\"Visited\" geçmiş zaman; \"would like to\" ise şu anki isteği anlatır."
+        - "Tam tersi: \"would like to\" istemek demek, istememek değil."
+        - "\"Have to\" zorunluluk anlatır; \"would like to\" ise istek anlatır."
   - item: U1-023
     sezdir:
       id: d08-023-z
@@ -226,6 +246,10 @@ steps:
       options: ["That would be great! Thanks!", "That's not fair!", "I'm stuffed, thanks.", "Why are you so mean?"]
       answer: 0
       explain: "Babasının arabayla götürmesi bir iyilik teklifidir; cevap \"That would be great! Thanks!\""
+      why_wrong:
+        - "\"That's not fair!\" haksızlığa itiraz eder; iyilik teklifine cevap olmaz."
+        - "\"I'm stuffed\" doymak demek; araba teklifiyle ilgisi yok."
+        - "Yardım teklif eden birine \"mean\" (kaba) denmez; teklif nazik bir davranış."
 
 review:
   - id: d08-r01
@@ -284,6 +308,10 @@ review:
     options: ["Would you like to come to my party?", "Did you like my party?", "Where is your house?", "Are you tired?"]
     answer: 0
     explain: "\"I'd love to! What time does it start?\" cevabı bir davete verilmiş; davet cümlesi Would you like to come to my party?"
+    why_wrong:
+      - "\"Did you like…?\" fikir sorar; \"I'd love to\" ise davete verilen cevaptır."
+      - "Adres sorusuna \"I'd love to!\" cevabı verilmez."
+      - "\"Are you tired?\" sorusuna \"What time does it start?\" diye devam edilmez."
   - id: d08-r08
     type: message_infer
     item: U1-012
@@ -293,6 +321,10 @@ review:
     options: ["Ece's home address", "the day of the picnic", "the place of the picnic", "the time of the picnic"]
     answer: 0
     explain: "Davetiyede gün, yer ve saat var; Ece'nin ev adresi yazmıyor, yalnızca \"city park\" yazıyor."
+    why_wrong:
+      - "Gün davetiyede var: \"on Saturday\"."
+      - "Yer davetiyede var: \"in the city park\"."
+      - "Saat davetiyede var: \"at 11 o'clock\"."
   - id: d08-r09
     type: message_infer
     item: U1-001
@@ -302,6 +334,10 @@ review:
     options: ["He accepted the invitation.", "He refused the invitation.", "He invited Ece to a party.", "He apologised to Ece."]
     answer: 0
     explain: "Davet için teşekkür edip \"I'll come\" diyen Bora daveti kabul etti."
+    why_wrong:
+      - "Tam tersi: \"Of course I'll come\" daveti kabul eder."
+      - "Davet eden Bora değil, Ece; Bora yalnız cevap veriyor."
+      - "Mesajda özür yok; Bora \"Thanks for the invitation\" diyerek teşekkür ediyor."
 
 tips:
   - type: mini_dilbilgisi

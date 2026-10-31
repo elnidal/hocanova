@@ -106,6 +106,10 @@ steps:
       options: ["Can I help you carry it?", "Why are you so stubborn?", "I'm busy. Sorry.", "It doesn't matter."]
       answer: 0
       explain: "Bora yardım teklif ediyor: \"Can I help you…?\" bir teklif (offer) kalıbıdır."
+      why_wrong:
+        - "\"Why are you so stubborn?\" bir suçlama; ardından Elif \"That's very kind of you\" demez."
+        - "\"I'm busy. Sorry.\" yardımı reddeder; Elif'in teşekkürüyle çelişiyor."
+        - "\"It doesn't matter\" fark etmez demek; ağır kutu için bir yardım teklifi değil."
   - item: U1-072
     sezdir:
       id: d16-072-z
@@ -131,6 +135,10 @@ steps:
       options: ["fashionable", "self-centered", "calm", "funny"]
       answer: 0
       explain: "Moda dergisi okuyup yeni trendleri bilen Defne modayı takip ediyor: fashionable."
+      why_wrong:
+        - "\"Self-centered\" kendini düşünen demek; metin yalnız Defne'nin modayı izlediğini anlatıyor."
+        - "\"Calm\" sakin demek; metinde Defne'nin davranışından değil, giyiminden söz ediliyor."
+        - "\"Funny\" komik demek; metinde espri yok, moda ve kıyafet var."
   - item: U1-073
     sezdir:
       id: d16-073-z
@@ -156,6 +164,10 @@ steps:
       options: ["funny", "stubborn", "jealous", "fashionable"]
       answer: 0
       explain: "Kerem espri yapıyor: funny."
+      why_wrong:
+        - "\"Stubborn\" inatçı demek; Kerem yalnız bir espri yapıyor."
+        - "\"Jealous\" kıskanç demek; mesajda kıskançlıkla ilgili bir ipucu yok."
+        - "\"Fashionable\" modaya uygun demek; mesajda kıyafetten söz edilmiyor."
   - item: U1-075
     sezdir:
       id: d16-075-z
@@ -181,6 +193,10 @@ steps:
       options: ["He is always in a hurry.", "He is very self-disciplined.", "He is calm in the mornings.", "He is patient."]
       answer: 0
       explain: "Annesi \"yavaşla\" diyor; Kaan hep acele ediyor: He is always in a hurry."
+      why_wrong:
+        - "Tam tersi: farklı çorap giyip çantasını unutan biri disiplinli değil."
+        - "Annesi \"slow down!\" diyor; Kaan sabahları sakin değil, telaşlı."
+        - "\"Patient\" sabırlı demek; kahvaltısını bir dakikada yiyen biri sabırsız."
   - item: U1-090
     sezdir:
       id: d16-090-z
@@ -206,6 +222,10 @@ steps:
       options: ["self-disciplined", "lazy", "unreliable", "jealous"]
       answer: 0
       explain: "Her sabah 6'da kalkıp koşan, işini bitirmeden TV izlemeyen Arda disiplinlidir: self-disciplined."
+      why_wrong:
+        - "Tam tersi: her sabah 6'da kalkıp koşan biri tembel değil."
+        - "\"Unreliable\" güvenilmez demek; ödevini hep bitiren Arda için uygun değil."
+        - "\"Jealous\" kıskanç demek; metinde kıskançlıkla ilgili bir ipucu yok."
   - item: U1-094
     sezdir:
       id: d16-094-z
@@ -230,6 +250,10 @@ steps:
       options: ["Please reply very quickly.", "Please reply next month.", "Please don't reply.", "Please reply slowly."]
       answer: 0
       explain: "as soon as possible = en kısa sürede; yani çok çabuk cevap ver."
+      why_wrong:
+        - "\"Next month\" çok geç; \"as soon as possible\" en kısa sürede demek."
+        - "Tam tersi: cümle cevap istiyor, cevap verme demiyor."
+        - "\"Slowly\" yavaşça demek; \"as soon as possible\" ise mümkün olduğunca çabuk."
 
 review:
   - id: d16-r01
@@ -289,6 +313,10 @@ review:
     options: ["He is busy.", "He has nothing to do.", "He is ill.", "He doesn't like films."]
     answer: 0
     explain: "Futbol, İngilizce kursu ve ödevi var; yani meşgul: He is busy."
+    why_wrong:
+      - "Tam tersi: futbol, kurs ve ödevi olan Kaan'ın çok işi var."
+      - "Kaan hasta olduğunu söylemiyor; sebep yoğun programı."
+      - "Filmleri sevmediğini söylemiyor; gelememesinin sebebi işleri."
   - id: d16-r08
     type: message_infer
     item: U1-020
@@ -298,6 +326,10 @@ review:
     options: ["Bora isn't replying.", "Bora is attending the picnic.", "Bora missed the bus.", "Bora is texting too much."]
     answer: 0
     explain: "Ece üç kez mesaj atıyor ama Bora cevap vermiyor: Bora isn't replying."
+    why_wrong:
+      - "Bora pikniğe geldiyse Ece ona \"are you coming?\" diye yazmazdı."
+      - "Otobüs bilgisi mesajlarda yok; Ece yalnız cevap alamıyor."
+      - "Tam tersi: çok mesaj atan Ece, Bora ise hiç cevap vermiyor."
   - id: d16-r09
     type: dialogue_complete
     item: U1-016
@@ -307,6 +339,10 @@ review:
     options: ["Sorry, sir. I missed the bus.", "I have nothing to do.", "I attended the class early.", "I replied to your message."]
     answer: 0
     explain: "\"Why are you late again?\" sorusuna mantıklı cevap: Sorry, sir. I missed the bus. (otobüsü kaçırdım)"
+    why_wrong:
+      - "\"I have nothing to do\" geç kalmanın sebebini açıklamaz."
+      - "\"Early\" erken demek; geç kalan birinin cevabıyla çelişiyor."
+      - "Mesaja cevap vermek \"Why are you late?\" sorusuna uymuyor."
   - id: d16-r10
     type: situation
     item: U1-003
@@ -316,6 +352,10 @@ review:
     options: ["Who can attend the concert.", "Who has nothing to do on Friday.", "Who missed the concert.", "Who can play the guitar."]
     answer: 0
     explain: "Murat Bey konsere kimlerin gelebileceğini soruyor: Who can attend the concert."
+    why_wrong:
+      - "Murat Bey boş olanları değil, konsere gelebilecekleri soruyor (\"if you can come\")."
+      - "Konser cuma günü, yani henüz olmadı; kimse kaçırmış olamaz."
+      - "Murat Bey gitar çalanları sormuyor; konsere kimin geleceğini soruyor."
   - id: d16-r11
     type: message_infer
     item: U1-019
@@ -325,6 +365,10 @@ review:
     options: ["He refuses the invitation.", "He accepts the invitation.", "He invites Ece to a party.", "He gives advice to Ece."]
     answer: 0
     explain: "Futbol maçı yüzünden gelemeyeceğini söylüyor: daveti reddediyor."
+    why_wrong:
+      - "Tam tersi: \"but I can't come on Saturday\" daveti reddediyor."
+      - "Davet eden Bora değil, Ece; Bora yalnız cevap veriyor."
+      - "Bora tavsiye vermiyor; gelememesinin sebebini söylüyor."
   - id: d16-r12
     type: situation
     item: U1-007
@@ -334,6 +378,10 @@ review:
     options: ["an excuse", "an invitation", "some advice", "a present"]
     answer: 0
     explain: "Köpeği olmadığı hâlde \"köpeğim yedi\" demek bir bahanedir: an excuse."
+    why_wrong:
+      - "Kaan kimseyi davet etmiyor; ödevini neden getirmediğini açıklıyor."
+      - "\"Advice\" tavsiye demek; Kaan öğretmene tavsiye vermiyor."
+      - "\"Present\" hediye demek; Kaan öğretmene bir şey vermiyor, bahane uyduruyor."
 
 tips:
   - type: tuzak

@@ -98,6 +98,10 @@ steps:
       options: ["science fiction", "romantic comedy", "history documentary", "musical"]
       answer: 0
       explain: "Uzay gemisi, uzaylı ve robot: bilim kurgu (science fiction)."
+      why_wrong:
+        - "Romantik komedi aşk ve mizah anlatır; uzay gemisi ve robot değil."
+        - "Tarih belgeseli geçmişi anlatır; \"the year 3000\" gelecekte geçer."
+        - "Müzikalde şarkı ve dans olur; metinde müzik ipucu yok."
   - item: U2-074
     sezdir:
       id: u2d13-074-z
@@ -122,6 +126,10 @@ steps:
       options: ["It was great.", "It was terrible.", "It was boring.", "It was too short."]
       answer: 0
       explain: "awesome = great (harika)."
+      why_wrong:
+        - "Tam tersi: \"awesome\" harika, \"terrible\" korkunç demek."
+        - "\"Boring\" sıkıcı demek; \"awesome\" olumlu bir sözcük."
+        - "Cümle konserin süresinden söz etmiyor; yalnız ne kadar harika olduğunu söylüyor."
   - item: U2-075
     sezdir:
       id: u2d13-075-z
@@ -148,6 +156,10 @@ steps:
       options: ["It was terrific!", "It was awful.", "It was terrible.", "It was boring."]
       answer: 0
       explain: "Güneşli hava ve harika otel olumlu; terrific olumlu, terrible ise korkunç demek."
+      why_wrong:
+        - "\"Awful\" berbat demek; \"sunny\" ve \"great\" ile çelişir."
+        - "\"Terrible\" korkunç demek; \"terrific\" ile karıştırma, biri olumlu biri olumsuz."
+        - "\"Boring\" sıkıcı demek; ardından gelen cümleler tatili övüyor."
   - item: U2-076
     sezdir:
       id: u2d13-076-z
@@ -173,6 +185,10 @@ steps:
       options: ["He thinks it's impressive.", "He thinks it's awful.", "He thinks it's boring.", "He thinks it's ridiculous."]
       answer: 0
       explain: "Sınıfı temizleyen küçük robot yapan Selin'in projesi etkileyici (impressive)."
+      why_wrong:
+        - "\"Awful\" berbat demek; Kaan \"Wow!\" diyerek hayranlığını gösteriyor."
+        - "\"Boring\" sıkıcı demek; sınıfı temizleyen robot Kaan'ı şaşırtıyor."
+        - "\"Ridiculous\" gülünç demek; Kaan projeyle alay etmiyor, övüyor."
   - item: U2-077
     sezdir:
       id: u2d13-077-z
@@ -197,6 +213,10 @@ steps:
       options: ["I think space is very interesting.", "I think space is very boring.", "I'm afraid of space.", "I don't know anything about space."]
       answer: 0
       explain: "fascinating = çok ilginç (very interesting)."
+      why_wrong:
+        - "Tam tersi: \"fascinating\" büyüleyici, çok ilginç demek."
+        - "\"Afraid\" korkmak demek; \"fascinating\" korku değil, ilgi anlatır."
+        - "Bir şeyi büyüleyici bulan kişi onunla ilgilenir; bilgisizlik metinde yok."
   - item: U2-078
     sezdir:
       id: u2d13-078-z
@@ -222,6 +242,10 @@ steps:
       options: ["it was awful.", "it was terrific.", "it was impressive.", "it was fascinating."]
       answer: 0
       explain: "Hikâye saçma, oyuncular kötü olduğu için film berbattı: it was awful."
+      why_wrong:
+        - "\"Terrific\" harika demek; \"No\" ve \"silly story\" ile çelişir."
+        - "\"Impressive\" etkileyici demek; kötü oyuncular ve saçma hikâye etkilemez."
+        - "\"Fascinating\" büyüleyici demek; B filmi beğenmediğini söylüyor."
 
 review:
   - id: u2d13-r01
@@ -280,6 +304,10 @@ review:
     options: ["to the gym", "to the library", "to the cinema", "to the canteen"]
     answer: 0
     explain: "Ağırlık kaldırıp koşu makinesinde koşmak isteyen spor salonuna (gym) gider."
+    why_wrong:
+      - "Kütüphanede ağırlık ve koşu makinesi yoktur."
+      - "Sinemada spor yapılmaz; ağırlık ve koşu makinesi spor salonundadır."
+      - "Kantin yemek yeridir; ağırlık kaldırılacak yer değil."
   - id: u2d13-r08
     type: message_infer
     item: U2-032
@@ -289,6 +317,10 @@ review:
     options: ["He works out.", "He takes selfies.", "He plays the guitar.", "He follows the news."]
     answer: 0
     explain: "Haftada üç kez spor salonunda ağırlık kaldırıp koşuyor: spor yapıyor (works out)."
+    why_wrong:
+      - "Metinde selfie geçmiyor; Kaan ağırlık kaldırıp koşuyor."
+      - "Metinde gitar geçmiyor; Kaan spor salonundan söz ediyor."
+      - "Haber takip etmekle ilgili ipucu yok; şınav ve koşu spor yapmaktır."
   - id: u2d13-r09
     type: odd_one_out
     item: U2-036
@@ -297,6 +329,10 @@ review:
     options: ["karate", "basketball", "volleyball", "football"]
     answer: 0
     explain: "Soru takım sporu OLMAYANI soruyor. Karate bireysel spordur; diğerleri takım sporudur."
+    why_wrong:
+      - "Basketbol takımla oynanır; takım sporudur."
+      - "Voleybol takımla oynanır; takım sporudur."
+      - "Futbol takımla oynanır; takım sporudur. Soru takım sporu OLMAYANI istiyor."
   - id: u2d13-r10
     type: trait_match
     item: U2-035
@@ -306,6 +342,10 @@ review:
     options: ["energetic", "lazy", "nervous", "bored"]
     answer: 0
     explain: "Yetmiş yaşında her sabah yüzen, dans eden büyükanne enerjiktir."
+    why_wrong:
+      - "\"Lazy\" tembel demek; her gün on kilometre yürüyen biri tembel değil."
+      - "\"Nervous\" gergin demek; metinde korku ya da endişe ipucu yok."
+      - "\"Bored\" sıkılmış demek; yüzen, dans eden büyükanne çok hareketli."
 
 tips:
   - type: tuzak

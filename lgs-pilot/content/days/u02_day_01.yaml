@@ -94,6 +94,10 @@ steps:
       options: ["Zeynep", "Ali", "Mr Can", "Mrs Ayla"]
       answer: 0
       explain: "Sadece Zeynep 13–19 yaş aralığında."
+      why_wrong:
+        - "Ali 8 yaşında; \"teenager\" 13–19 yaş arasıdır, Ali henüz çocuk."
+        - "Mr Can 35 yaşında; bu yaş \"teenager\" değil, yetişkin."
+        - "Mrs Ayla 62 yaşında; \"teenager\" aralığının çok üstünde."
   - item: U2-002
     sezdir:
       id: u2d01-002-z
@@ -119,6 +123,10 @@ steps:
       options: ["She reads books in her free time at the weekend.", "She has a lot of free time on weekdays.", "She goes cycling at school.", "She never studies on weekdays."]
       answer: 0
       explain: "Metinde hafta sonu daha çok boş zamanı olduğu ve kitap okuyup bisiklete bindiği yazıyor. Hafta içi çok çalışıyor."
+      why_wrong:
+        - "Tam tersi: \"On weekdays I go to school and study a lot\"; boş zaman hafta sonunda."
+        - "Bisiklet hafta sonu yapılıyor; metin okulda bisiklete bindiğini söylemiyor."
+        - "\"Never\" aşırı bir ifade; Selin hafta içi \"study a lot\" diyor."
   - item: U2-003
     sezdir:
       id: u2d01-003-z
@@ -144,6 +152,10 @@ steps:
       options: ["Watching TV is the most popular activity.", "Most students play an instrument.", "Reading books is more popular than doing sports.", "Fifty students answered the survey."]
       answer: 0
       explain: "En yüksek sayı 18: watch TV."
+      why_wrong:
+        - "\"play an instrument\" yalnız 4 kişi; 40 kişide 4 kişi çoğunluk değil."
+        - "Tersi doğru: \"read books\" 6, \"do sports\" 12; spor daha popüler."
+        - "Başlıkta \"40 students\" yazıyor; elli sayısı tabloda yok."
   - item: U2-004
     sezdir:
       id: u2d01-004-z
@@ -168,6 +180,10 @@ steps:
       options: ["They often spend time together in the park.", "They often clean the park.", "They never go to the park.", "They often study in the library."]
       answer: 0
       explain: "hang out = vakit geçirmek, takılmak. Kaan ve Bora okuldan sonra parkta birlikte vakit geçiriyor."
+      why_wrong:
+        - "\"Hang out\" vakit geçirmek demek; parkı temizlemekle ilgisi yok."
+        - "\"Often\" sık sık demek; \"never\" bunun tam tersi."
+        - "Cümlede kütüphane ya da ders çalışmak geçmiyor; yer park."
   - item: U2-005
     sezdir:
       id: u2d01-005-z
@@ -192,6 +208,10 @@ steps:
       options: ["I believe teenagers should read more books.", "There are 30 students in our class.", "Our school starts at 8.30.", "Murat Bey is our English teacher."]
       answer: 0
       explain: "\"I believe…\" bir fikir bildirir; diğerleri kontrol edilebilen bilgiler."
+      why_wrong:
+        - "Sınıftaki öğrenci sayısı sayılarak kontrol edilebilir; bu bir bilgi (fact)."
+        - "Okulun başlama saati kontrol edilebilir bir bilgi, kişisel fikir değil."
+        - "Öğretmenin kim olduğu bir bilgi; içinde \"I believe/I think\" gibi fikir yok."
   - item: U2-006
     sezdir:
       id: u2d01-006-z
@@ -217,6 +237,10 @@ steps:
       options: ["What about you?", "Where is my guitar?", "How much is it?", "What time is it?"]
       answer: 0
       explain: "Elif kendi hobisini söylüyor: Duru soruyu ona geri sormuş."
+      why_wrong:
+        - "Duru gitarını aramıyor; Elif'in \"I sing!\" cevabı bu soruya uymaz."
+        - "\"How much is it?\" fiyat sorar; Elif fiyat değil hobi söylüyor."
+        - "\"What time is it?\" saat sorar; \"I sing!\" saate cevap olmaz."
 
 review:
   - id: u2d01-r01
@@ -228,6 +252,10 @@ review:
     options: ["Would you like to come to the cinema with me?", "Did you like the cinema?", "Where is the cinema?", "Are you tired today?"]
     answer: 0
     explain: "\"What time does it start?\" kabul cevabı; davet cümlesi: Would you like to come to the cinema with me?"
+    why_wrong:
+      - "Geçmişteki bir şeyi beğenip beğenmediğini sorar; \"I'd love to!\" bir davete cevaptır."
+      - "Yer sorusuna \"I'd love to!\" diye cevap verilmez; cevap bir yer olurdu."
+      - "\"Are you tired?\" sorusu evet/hayır ister; \"I'd love to!\" davet kabulüdür."
   - id: u2d01-r02
     type: message_infer
     item: U1-018
@@ -237,6 +265,10 @@ review:
     options: ["He prefers swimming to basketball.", "He prefers basketball to swimming.", "He never goes swimming.", "He plays basketball every Sunday."]
     answer: 0
     explain: "Bora yüzmeyi basketboldan çok seviyor: He prefers swimming to basketball."
+    why_wrong:
+      - "Tam tersi: Bora \"swimming is much better for me\" diyor."
+      - "\"Never\" metinle çelişiyor; Bora \"I go to the pool every Sunday\" diyor."
+      - "Pazar günleri havuza gidiyor; basketbolu pazar günü oynadığı yazmıyor."
   - id: u2d01-r03
     type: situation
     item: U1-014
@@ -246,6 +278,10 @@ review:
     options: ["It doesn't matter.", "I hate pizza.", "Sorry, I can't.", "That's not fair."]
     answer: 0
     explain: "İkisinden de memnun olan kişi \"fark etmez\" der: It doesn't matter."
+    why_wrong:
+      - "\"I hate pizza\" bir seçeneği reddetmek; Duru ikisinden de memnun."
+      - "\"Sorry, I can't\" bir daveti geri çevirir; burada seçim soruluyor."
+      - "\"That's not fair\" haksızlığa itiraz eder; ortada haksızlık yok."
   - id: u2d01-r04
     type: trait_match
     item: U1-085
@@ -255,6 +291,10 @@ review:
     options: ["patient", "jealous", "stubborn", "mean"]
     answer: 0
     explain: "Arkadaşlarını uzun süre bekleyip kızmayan Selin sabırlıdır: patient."
+    why_wrong:
+      - "\"Jealous\" kıskanç demek; metinde kıskançlık ipucu yok."
+      - "\"Stubborn\" inatçı demek; uzun süre kızmadan beklemek sabrı gösterir."
+      - "\"Mean\" kaba, kötü kalpli demek; \"never gets angry\" ile çelişir."
   - id: u2d01-r05
     type: message_infer
     item: U1-100
@@ -264,6 +304,10 @@ review:
     options: ["thrilling", "boring", "calm", "patient"]
     answer: 0
     explain: "Hız treni harikaydı, kalbi hızlı atıyordu: thrilling (heyecan verici)."
+    why_wrong:
+      - "\"Boring\" sıkıcı demek; \"amazing\" ve hızlı atan kalp bununla çelişir."
+      - "\"Calm\" sakin demek; sürekli çığlık atan biri sakin değil."
+      - "\"Patient\" bir kişinin sabırlı olduğunu anlatır; bir oyun aletini anlatmaz."
 
 tips:
   - type: ilginc_bilgi

@@ -99,6 +99,10 @@ steps:
       options: ["Many people went to the science fair.", "Many people missed the science fair.", "Many people didn't like the science fair.", "Many people forgot the science fair."]
       answer: 0
       explain: "attended = gitti, katıldı. Many people went to the science fair."
+      why_wrong:
+        - "Tam tersi: \"miss\" kaçırmak demek, \"attend\" ise katılmak."
+        - "\"Attend\" beğenip beğenmemeyi değil, gidip katılmayı anlatır."
+        - "\"Forget\" unutmak demek; \"attend\" etkinliğe gitmek anlamına gelir."
   - item: U1-015
     sezdir:
       id: d09-015-z
@@ -124,6 +128,10 @@ steps:
       options: ["Can I join you?", "Can you help me with my homework?", "Did you miss the bus?", "Why didn't you reply?"]
       answer: 0
       explain: "Voleybol oynayan sınıf arkadaşlarına katılmak isteyen Elif \"Can I join you?\" der."
+      why_wrong:
+        - "Elif ödev yardımı istemiyor; \"She wants to play with them\" yazıyor."
+        - "Otobüsle ilgili bir bilgi yok; Elif oyuna katılmak istiyor."
+        - "\"Reply\" mesaja cevap vermek demek; durum oyuna katılmayla ilgili."
   - item: U1-009
     sezdir:
       id: d09-009-z
@@ -149,6 +157,10 @@ steps:
       options: ["Because I have nothing to do.", "Because I'm very busy.", "Because I missed the bus.", "Because I have three exams today."]
       answer: 0
       explain: "Bütün gün kanepede yatmasının sebebi yapacak bir şeyinin olmaması."
+      why_wrong:
+        - "Çok meşgul biri bütün gün kanepede yatamaz; \"all day\" ile çelişiyor."
+        - "Otobüsü kaçırmak bütün gün kanepede yatmayı açıklamaz."
+        - "Bugün üç sınavı olan biri bütün gün kanepede yatmaz."
   - item: U1-004
     sezdir:
       id: d09-004-z
@@ -174,6 +186,10 @@ steps:
       options: ["busy", "bored", "laid-back", "lazy"]
       answer: 0
       explain: "Kaan'ın haftası antrenman, yüzme ve sınavla dolu: meşgul (busy)."
+      why_wrong:
+        - "Tam tersi: \"bored\" yapacak işi olmamak demek, Kaan'ın haftası ise dolu."
+        - "\"Laid-back\" rahat, sakin demek; programı dolu Kaan bu hafta rahat değil."
+        - "\"Lazy\" tembel demek; antrenman, yüzme ve sınavla uğraşan biri tembel değil."
   - item: U1-020
     sezdir:
       id: d09-020-z
@@ -199,6 +215,10 @@ steps:
       options: ["Bora isn't replying to her messages.", "Bora is replying too fast.", "Bora is sending her too many messages.", "Bora is at her house."]
       answer: 0
       explain: "Ece birkaç saat boyunca mesaj atıyor ama Bora cevap vermiyor."
+      why_wrong:
+        - "Tam tersi: Bora hiç cevap vermiyor, Ece \"Are you there?\" diye soruyor."
+        - "Mesajları gönderen Bora değil, Ece; hepsi \"Ece\" adıyla yazılmış."
+        - "Bora Ece'nin yanında olsaydı Ece \"Are you there?\" diye yazmazdı."
   - item: U1-016
     sezdir:
       id: d09-016-z
@@ -223,6 +243,10 @@ steps:
       options: ["I miss my grandma. I haven't seen her for months.", "Hurry up, or you'll miss the bus.", "Kaan missed the start of the film.", "Don't miss the science fair on Friday!"]
       answer: 0
       explain: "Birinci cümlede miss = özlemek. Diğerlerinde miss = kaçırmak (otobüsü, filmi, fuarı)."
+      why_wrong:
+        - "Burada \"miss\" kaçırmak demek: acele etmezsen otobüsü kaçırırsın."
+        - "Burada da \"miss\" kaçırmak demek: Kaan filmin başını kaçırdı."
+        - "Burada da \"miss\" kaçırmak demek: bilim fuarını kaçırma."
 
 review:
   - id: d09-r01
@@ -281,6 +305,10 @@ review:
     options: ["He is apologising.", "He is inviting Ece.", "He is refusing an invitation.", "He is accepting an offer."]
     answer: 0
     explain: "Kaan geç kaldığı ve kitabı unuttuğu için \"I'm really sorry\" diyor: özür diliyor (apologising)."
+    why_wrong:
+      - "Mesajda davet yok; \"I'm really sorry\" özür dilendiğini gösteriyor."
+      - "Kaan bir davete cevap vermiyor; geç kalıp kitabı unuttuğu için özür diliyor."
+      - "Mesajda teklif yok; \"I feel bad about it\" pişmanlık anlatıyor."
   - id: d09-r08
     type: dialogue_complete
     item: U1-021
@@ -290,6 +318,10 @@ review:
     options: ["Sorry, I can't.", "I'd love to!", "Sounds great!", "Why not?"]
     answer: 0
     explain: "Duru'nun gitar dersi var; yani daveti reddediyor: Sorry, I can't. Diğer şıklar kabul cümleleridir."
+    why_wrong:
+      - "\"I'd love to!\" kabul eder; ama \"I have a guitar lesson on Saturday\" gelemeyeceğini gösteriyor."
+      - "\"Sounds great!\" bir kabul cümlesi; Duru'nun cumartesi dersi var."
+      - "\"Why not?\" kabul anlamına gelir; cumartesi meşgul olan biriyle çelişiyor."
   - id: d09-r09
     type: message_infer
     item: U1-007
@@ -299,6 +331,10 @@ review:
     options: ["an excuse", "an invitation", "a promise", "a present"]
     answer: 0
     explain: "Bora'nın kedisi yok; \"My cat is sick\" gelmemek için uydurulmuş bir bahanedir: an excuse."
+    why_wrong:
+      - "Bora kimseyi davet etmiyor; \"Sorry, I can't come\" bir davete cevap."
+      - "Bora söz vermiyor; gelmemek için bir sebep uyduruyor."
+      - "\"Present\" hediye demek; mesajda hediye yok."
 
 tips:
   - type: tuzak

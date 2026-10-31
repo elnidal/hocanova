@@ -104,6 +104,10 @@ steps:
       options: ["classical music", "rap", "rock music", "folk music"]
       answer: 0
       explain: "Büyük orkestra, keman, piyano, Mozart, Chopin: klasik müzik."
+      why_wrong:
+        - "Rap hızlı söz ve ritimle yapılır; orkestra, keman ve Mozart klasik müzik ipucu."
+        - "Rock'ta orkestra ve Mozart yoktur; ipuçları klasik müziğe ait."
+        - "Halk müziği geleneksel şarkılardır; Mozart ve Chopin klasik müzik bestecisi."
   - item: U2-026
     sezdir:
       id: u2d05-026-z
@@ -129,6 +133,10 @@ steps:
       options: ["folk music", "classical music", "rap", "jazz"]
       answer: 0
       explain: "Selin'in dedesi Anadolu'nun geleneksel şarkılarını bağlama ile dinliyor: halk müziği (folk music)."
+      why_wrong:
+        - "Klasik müzik Elif'in annesinin satırında; dedenin satırı \"traditional songs\"."
+        - "Rap Kaan'ın ağabeyinin satırına ait: \"fast words, rhymes and a strong beat\"."
+        - "Ankette caz için hiçbir ipucu yok; bağlama ve Anadolu halk müziğini gösterir."
   - item: U2-027
     sezdir:
       id: u2d05-027-z
@@ -154,6 +162,10 @@ steps:
       options: ["I'm into rap.", "I'm into classical music.", "I'm into folk music.", "I can't stand music."]
       answer: 0
       explain: "Kendi kafiyelerini ritim üstünde hızlı söylemek rap'tir: I'm into rap."
+      why_wrong:
+        - "Elif \"rhymes\" ve \"beat\" diyor; klasik müzikte kafiyeli hızlı söz yok."
+        - "Halk müziği geleneksel şarkılardır; Elif'in tarif ettiği hızlı kafiyeler rap'e ait."
+        - "Kaan müzikten nefret etseydi Elif \"Cool!\" deyip kafiyelerini anlatmazdı."
   - item: U2-028
     sezdir:
       id: u2d05-028-z
@@ -179,6 +191,10 @@ steps:
       options: ["The music is too loud.", "The music is too quiet.", "Her neighbour has no music.", "Her neighbour is very patient."]
       answer: 0
       explain: "Komşu gece yarısına kadar müziği tam ses çalıyor: müzik çok yüksek sesli (too loud)."
+      why_wrong:
+        - "Tam tersi: \"at full volume\" ve \"I can hear every word\" müziğin yüksek olduğunu gösteriyor."
+        - "Komşunun müziği var; Selin onu gece yarısına kadar duyuyor."
+        - "\"Patient\" sabırlı demek; sorun komşunun karakteri değil, müziğin sesi."
   - item: U2-029
     sezdir:
       id: u2d05-029-z
@@ -204,6 +220,10 @@ steps:
       options: ["the canteen", "the library", "the music room", "the computer room"]
       answer: 0
       explain: "Soru uygun OLMAYAN yeri soruyor: kantin çok gürültülü; diğer yerler sessiz."
+      why_wrong:
+        - "Kütüphane \"no talking\": sessiz bir yer, ders için uygun."
+        - "Müzik odası \"empty\": boş olduğu için sessiz, uygun."
+        - "Bilgisayar odası \"quiet\": sessiz, uygun. Soru uygun OLMAYANI istiyor."
   - item: U2-030
     sezdir:
       id: u2d05-030-z
@@ -229,6 +249,10 @@ steps:
       options: ["The messages are annoying.", "The messages are relaxing.", "The phone is quiet.", "Ece has nothing to do."]
       answer: 0
       explain: "Telefon her on saniyede bir ötüyor ve Ece çalışamıyor: mesajlar rahatsız edici (annoying)."
+      why_wrong:
+        - "\"Relaxing\" rahatlatıcı demek; Ece çalışamıyor, rahatlamıyor."
+        - "Telefon her on saniyede bir ötüyor; sessiz değil."
+        - "Ece'nin çalışacağı bir sınavı var; yapacak işi var."
 
 review:
   - id: u2d05-r01
@@ -288,6 +312,10 @@ review:
     options: ["He can't stand getting up early.", "He is keen on getting up early.", "He doesn't mind getting up early.", "He enjoys his alarm."]
     answer: 0
     explain: "Çalar saati sevmiyor, erken kalkmak \"en kötü şey\": dayanamıyor (can't stand)."
+    why_wrong:
+      - "\"Keen on\" hevesli olmak demek; \"I hate it!\" ile çelişiyor."
+      - "\"Doesn't mind\" umursamamak demek; \"the worst thing\" diyen biri umursuyor."
+      - "\"Enjoy\" keyif almak demek; Bora alarmından \"I hate it!\" diye söz ediyor."
   - id: u2d05-r08
     type: synonym
     item: U2-005
@@ -296,6 +324,10 @@ review:
     options: ["In my opinion, Saturday is the best day for practice.", "Everybody says Saturday is the worst day for practice.", "I don't know which day is best for practice.", "We never practise on Saturdays."]
     answer: 0
     explain: "\"From my point of view\" = bana göre; \"In my opinion\" ile aynı anlamda."
+    why_wrong:
+      - "\"From my point of view\" kişisel fikirdir; \"everybody\" ve \"worst\" metinde yok."
+      - "Konuşan kişi en iyi günü açıkça söylüyor; bilmediğini söylemiyor."
+      - "Cümle cumartesiyi en iyi prova günü diye öneriyor; \"never\" ile çelişir."
 
 tips:
   - type: tuzak

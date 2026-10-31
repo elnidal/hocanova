@@ -98,6 +98,10 @@ steps:
       options: ["Most of the students play an instrument.", "None of the students play an instrument.", "Half of the students play an instrument.", "All of the students play an instrument."]
       answer: 0
       explain: "20 öğrencinin 18'i çalgı çalıyor: çoğu (most of the students)."
+      why_wrong:
+        - "\"None\" hiç kimse demek; 18 öğrenci \"Yes\" demiş."
+        - "\"Half\" yarısı demek; 20 kişinin yarısı 10 olurdu, burada 18."
+        - "\"All\" hepsi demek; 2 öğrenci \"No\" demiş."
   - item: U2-090
     sezdir:
       id: u2d16-090-z
@@ -123,6 +127,10 @@ steps:
       options: ["Tennis is the least popular sport.", "Volleyball is more popular than basketball.", "Basketball is the most popular sport.", "Football got less than ten votes."]
       answer: 0
       explain: "Tenis 2 oyla en az sevilen spordur (the least popular)."
+      why_wrong:
+        - "Tersi doğru: voleybol 5, basketbol 9; basketbol daha popüler."
+        - "En popüler futbol (14); basketbol ikinci sırada."
+        - "Futbol 14 oy almış; ondan fazla."
   - item: U2-091
     sezdir:
       id: u2d16-091-z
@@ -147,6 +155,10 @@ steps:
       options: ["It makes me feel calm.", "It makes me feel nervous.", "It makes me feel annoyed.", "It makes me feel angry."]
       answer: 0
       explain: "relaxing = insanı sakinleştiren; I feel calm."
+      why_wrong:
+        - "\"Nervous\" gergin demek; \"relaxing\" insanı sakinleştirir."
+        - "\"Annoyed\" rahatsız, kızgın demek; \"relaxing\" bunun tam tersi."
+        - "\"Angry\" kızgın demek; rahatlatıcı bir ses insanı kızdırmaz."
   - item: U2-092
     sezdir:
       id: u2d16-092-z
@@ -172,6 +184,10 @@ steps:
       options: ["It was really enjoyable.", "It was unbearable.", "It was awful.", "I can't stand trips."]
       answer: 0
       explain: "Müze, oyun ve piknik: gezi keyifliydi (enjoyable)."
+      why_wrong:
+        - "\"Unbearable\" dayanılmaz demek; müze, oyun ve piknik keyifli bir gün anlatır."
+        - "\"Awful\" berbat demek; B gezide yapılan güzel şeyleri sayıyor."
+        - "\"I can't stand trips\" ile ardından gelen keyifli anlatım çelişir."
 
 review:
   - id: u2d16-r01
@@ -222,6 +238,10 @@ review:
     options: ["Kaan is hardly ever on time.", "Kaan is always on time.", "Kaan is usually on time.", "Kaan is often on time."]
     answer: 0
     explain: "Yirmi günde yalnız bir kez zamanında: neredeyse hiç zamanında gelmiyor (hardly ever on time)."
+    why_wrong:
+      - "\"Always\" aşırı bir ifade; Kaan yirmi günün yalnız birinde zamanında gelmiş."
+      - "\"Usually\" genellikle demek; 20'de 1 bunun çok altında."
+      - "\"Often\" sık sık demek; yalnız bir kez sık sayılmaz."
   - id: u2d16-r07
     type: situation
     item: U2-052
@@ -231,6 +251,10 @@ review:
     options: ["twice a week", "once a week", "three times a week", "once a month"]
     answer: 0
     explain: "Her salı ve her cumartesi: haftada iki kez."
+    why_wrong:
+      - "Salı ve cumartesi iki gün eder; bir değil."
+      - "Üç gün değil; metinde yalnız salı ve cumartesi var."
+      - "\"Every Tuesday\" her hafta demek; ayda bir değil."
   - id: u2d16-r08
     type: dialogue_complete
     item: U2-053
@@ -240,6 +264,10 @@ review:
     options: ["queue", "band", "survey", "gym"]
     answer: 0
     explain: "Kantin kalabalıktı; sandviç için uzun bir sırada (queue) bekledim."
+    why_wrong:
+      - "\"Band\" müzik grubu demek; sandviç için grupta beklenmez."
+      - "\"Survey\" anket demek; kalabalık kantinde beklenen şey bir sıra."
+      - "\"Gym\" spor salonu demek; \"a long… for my sandwich\" sırayı gösterir."
   - id: u2d16-r09
     type: message_infer
     item: U2-054
@@ -249,6 +277,10 @@ review:
     options: ["She follows the news.", "She chats online.", "She takes selfies.", "She works out."]
     answer: 0
     explain: "Her sabah haber uygulaması, her akşam TV haberi: haberleri takip ediyor."
+    why_wrong:
+      - "Metinde arkadaşlarla yazışma yok; Selin haber okuyup izliyor."
+      - "Metinde fotoğraf geçmiyor; \"news app\" ve \"the news on TV\" var."
+      - "Spor yapmakla ilgili ipucu yok; Selin her gün haber takip ediyor."
   - id: u2d16-r10
     type: dialogue_complete
     item: U2-011
@@ -258,6 +290,10 @@ review:
     options: ["I don't mind.", "I can't stand pizza.", "I dislike both.", "I'm keen on pizza."]
     answer: 0
     explain: "\"Both are fine for me\" diyen kişi fark etmez der: I don't mind."
+    why_wrong:
+      - "\"I can't stand pizza\" ile \"Both are fine for me\" çelişir."
+      - "\"I dislike both\" ikisini de sevmemek; B ikisinin de olur olduğunu söylüyor."
+      - "\"Keen on pizza\" pizzayı seçmek olur; B ikisi arasında fark görmüyor."
   - id: u2d16-r11
     type: gap_fill
     item: U2-010
@@ -267,6 +303,10 @@ review:
     options: ["singing", "sing", "to sing", "sang"]
     answer: 0
     explain: "be keen on + -ing: keen on singing."
+    why_wrong:
+      - "\"Keen on\" kalıbından sonra fiil \"-ing\" alır; yalın \"sing\" olmaz."
+      - "\"Keen on\" sonrasında \"to sing\" kullanılmaz; \"on\" bir edat, ardından -ing gelir."
+      - "\"Sang\" geçmiş zaman; \"keen on\" sonrasında -ing biçimi gerekir."
   - id: u2d16-f01
     type: message_infer
     item: U2-003
@@ -276,6 +316,10 @@ review:
     options: ["Most of the students read books.", "Half of the students do sports.", "Only a few students read books.", "Chatting online is the most popular activity."]
     answer: 0
     explain: "40 kişiden sadece 4'ü kitap okuyor: bu \"a few\"dır, \"most\" değil."
+    why_wrong:
+      - "Bu doğru: 40 kişinin yarısı 20; \"Do sports: 20\". Soru doğru OLMAYANI istiyor."
+      - "Bu doğru: 4 kişi gerçekten \"only a few\"."
+      - "Bu doğru: 30 oyla en popüler etkinlik online sohbet."
   - id: u2d16-f02
     type: dialogue_complete
     item: U2-013
@@ -285,6 +329,10 @@ review:
     options: ["No, I can't stand it.", "Yes, I'm crazy about it.", "I don't mind it at all.", "Yes, I'm really keen on it."]
     answer: 0
     explain: "Duru yokuş yürümekten nefret ediyor; tek olumsuz cevap \"I can't stand it\"."
+    why_wrong:
+      - "\"Crazy about\" bayılmak demek; \"I hate walking up hills\" ile çelişir."
+      - "\"I don't mind it\" umursamamak demek; \"I hate…\" diyen biri umursuyor."
+      - "\"Keen on\" hevesli olmak demek; Duru \"I get tired very quickly\" diyor."
   - id: u2d16-f03
     type: situation
     item: U2-044
@@ -294,6 +342,10 @@ review:
     options: ["She never goes to the gym.", "She always watches science fiction films.", "She rarely follows the news.", "She hardly ever chats online."]
     answer: 0
     explain: "Spor salonu: hiç → never. Haberleri her gün takip ediyor (always), haftada 4–5 kez sohbet ediyor (often)."
+    why_wrong:
+      - "Bilim kurgu filmi \"twice a month\"; \"always\" değil."
+      - "Haber \"every day\"; \"rarely\" değil, \"always\" olurdu."
+      - "Online sohbet haftada 4–5 kez; bu \"often\", \"hardly ever\" değil."
   - id: u2d16-f04
     type: synonym
     item: U2-015
@@ -302,6 +354,10 @@ review:
     options: ["He loves basketball very much.", "He thinks basketball is a crazy sport.", "He can't stand basketball.", "He doesn't mind basketball."]
     answer: 0
     explain: "be crazy about = bir şeye bayılmak; delilikle ilgisi yok."
+    why_wrong:
+      - "\"Crazy\" tuzağı: burada \"deli\" değil, \"bir şeye bayılmak\" anlamında."
+      - "Tam tersi: \"can't stand\" dayanamamak demek."
+      - "\"Doesn't mind\" umursamamak demek; \"crazy about\" güçlü bir sevgi anlatır."
 
 tips:
   - type: lgs_taktigi

@@ -93,6 +93,10 @@ steps:
       options: ["I like listening to music.", "She looks like her mother.", "What is your new teacher like?", "This cake tastes like chocolate."]
       answer: 0
       explain: "Diğer üç cümlede like = gibi (Ünite 1). Sadece ilkinde like = sevmek."
+      why_wrong:
+        - "\"Looks like\" birine benzemek demek; burada \"like\" gibi anlamında."
+        - "\"What is … like?\" nasıl biri olduğunu sorar; \"like\" sevmek değil."
+        - "\"Tastes like\" tadı gibi demek; burada \"like\" yine gibi anlamında."
   - item: U2-008
     sezdir:
       id: u2d02-008-z
@@ -117,6 +121,10 @@ steps:
       options: ["Elif likes singing in the shower.", "Elif never sings in the shower.", "Elif dislikes the shower.", "Elif sings only at school."]
       answer: 0
       explain: "enjoy + -ing = yapmaktan hoşlanmak: Elif likes singing in the shower."
+      why_wrong:
+        - "Tam tersi: \"enjoys singing\" şarkı söylemekten hoşlanmak demek."
+        - "\"Dislikes\" sevmemek; cümle Elif'in duşta şarkı söylemeyi sevdiğini söylüyor."
+        - "Cümlede okul geçmiyor; yer duş, \"only\" ise metinde olmayan bir sınır."
   - item: U2-009
     sezdir:
       id: u2d02-009-z
@@ -142,6 +150,10 @@ steps:
       options: ["He likes cooking.", "He can't cook.", "He cooks every day.", "His family makes pancakes for him."]
       answer: 0
       explain: "\"I'm fond of cooking\" = yemek yapmayı severim."
+      why_wrong:
+        - "Her pazar ailesine krep yapan biri yemek yapabiliyor."
+        - "Sıklık yanlış: \"every Sunday\" diyor, her gün değil."
+        - "Roller ters çevrilmiş: krepleri Bora ailesi için yapıyor."
   - item: U2-010
     sezdir:
       id: u2d02-010-z
@@ -167,6 +179,10 @@ steps:
       options: ["Ece", "Kaan", "Bora", "Nobody"]
       answer: 0
       explain: "drawing için üç yıldızı olan tek kişi Ece."
+      why_wrong:
+        - "Kaan resim için yalnız bir yıldız vermiş; \"★ = a little\"."
+        - "Bora'nın üç yıldızı dansa ait; resim için yalnız bir yıldızı var."
+        - "Ece resim için üç yıldız vermiş; yani resme hevesli biri var."
   - item: U2-011
     sezdir:
       id: u2d02-011-z
@@ -192,6 +208,10 @@ steps:
       options: ["It's OK for her.", "She refuses.", "She is angry with Ece.", "She wants to practise at Ece's house."]
       answer: 0
       explain: "\"I don't mind\" = sorun değil, olur. Duru'nun annesi de uygun buluyor."
+      why_wrong:
+        - "\"I don't mind\" sorun değil demek; Duru reddetmiyor."
+        - "Duru'nun kızdığına dair ipucu yok; \"My mum is OK with it\" diyor."
+        - "Ece \"your house\" diyor ve Duru kabul ediyor; prova Duru'nun evinde."
   - item: U2-012
     sezdir:
       id: u2d02-012-z
@@ -216,6 +236,10 @@ steps:
       options: ["dislike", "enjoy", "like", "be fond of"]
       answer: 0
       explain: "Diğer üçü olumlu (sevmek); dislike olumsuz."
+      why_wrong:
+        - "\"Enjoy\" keyif almak demek; olumlu bir anlam, diğerleriyle aynı grupta."
+        - "\"Like\" sevmek demek; olumlu, farklı olan bu değil."
+        - "\"Be fond of\" bir şeyi sevmek demek; o da olumlu grupta."
 
 review:
   - id: u2d02-r01

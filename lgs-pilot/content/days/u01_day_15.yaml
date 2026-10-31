@@ -109,6 +109,10 @@ steps:
       options: ["generous", "self-centered", "stubborn", "jealous"]
       answer: 0
       explain: "Sandviçini ve suyunu paylaşan Ali cömerttir: generous."
+      why_wrong:
+        - "Tam tersi: \"self-centered\" kendini düşünen demek, Ali ise yiyeceğini paylaşıyor."
+        - "\"Stubborn\" inatçı demek; metinde inatla ilgili bir ipucu yok."
+        - "\"Jealous\" kıskanç demek; arkadaşına sandviç veren Ali'de kıskançlık yok."
   - item: U1-076
     sezdir:
       id: d15-076-z
@@ -134,6 +138,10 @@ steps:
       options: ["helpful", "self-centered", "lazy", "jealous"]
       answer: 0
       explain: "Öğretmene yardım eden, yeni öğrencilere ödevi açıklayan Zeynep yardımseverdir: helpful."
+      why_wrong:
+        - "\"Self-centered\" kendini düşünen demek; Zeynep ise başkalarına yardım ediyor."
+        - "\"Lazy\" tembel demek; dersten sonra kalıp tahta silen biri tembel değil."
+        - "\"Jealous\" kıskanç demek; metinde kıskançlıkla ilgili bir ipucu yok."
   - item: U1-078
     sezdir:
       id: d15-078-z
@@ -159,6 +167,10 @@ steps:
       options: ["jealous", "stuffed", "calm", "generous"]
       answer: 0
       explain: "En iyi arkadaşının yeni bir arkadaşı olunca \"best friend back\" demesi kıskançlıktır: jealous."
+      why_wrong:
+        - "\"Stuffed\" tıka basa doymak demek; bir duygu değil, yemekle ilgili."
+        - "\"Calm\" sakin demek; \"I want my best friend back!\" diyen biri rahatsız."
+        - "\"Generous\" cömert demek; Mert paylaşmak değil, arkadaşını geri istiyor."
   - item: U1-082
     sezdir:
       id: d15-082-z
@@ -183,6 +195,10 @@ steps:
       options: ["Duru never leaves her friends, even in hard times.", "Duru is good at playing the guitar.", "Duru sleeps a lot at weekends.", "Duru has a dog called Fıstık."]
       answer: 0
       explain: "Zor zamanda bile arkadaşlarını bırakmamak sadakattir (loyalty)."
+      why_wrong:
+        - "Gitar çalmak bir yetenek; sadakatle ilgisi yok."
+        - "Hafta sonu çok uyumak bir alışkanlık; sadakat anlatmaz."
+        - "Fıstık adında köpeği olması doğru bir bilgi ama sadakatle ilgili değil."
   - item: U1-089
     sezdir:
       id: d15-089-z
@@ -208,6 +224,10 @@ steps:
       options: ["self-centered", "generous", "helpful", "loyal"]
       answer: 0
       explain: "Yalnızca yeni telefonundan söz eden, kimseyi dinlemeyen Ege bencil davranıyor: self-centered."
+      why_wrong:
+        - "\"Generous\" cömert demek; Ege hiçbir şey paylaşmıyor."
+        - "\"Helpful\" yardımsever demek; kimseyi dinlemeyen biri yardım etmiyor."
+        - "\"Loyal\" sadık demek; metin Ege'nin yalnız kendinden söz ettiğini anlatıyor."
   - item: U1-091
     sezdir:
       id: d15-091-z
@@ -233,6 +253,10 @@ steps:
       options: ["No! It was a goal. I'm not changing my mind.", "OK, you're right. Sorry.", "Let's ask the others, then.", "Can I have an ice cream, please?"]
       answer: 0
       explain: "Top dışarıdaydı ama Ege fikrini değiştirmiyor; Selin \"you're so stubborn\" dediği için cevap inatçı olmalı."
+      why_wrong:
+        - "\"You're right. Sorry.\" fikrini değiştirmek demek; ardından \"so stubborn\" denmez."
+        - "Başkalarına sormayı önermek inat değil; Selin'in \"stubborn\" tepkisine uymaz."
+        - "Dondurma istemek tartışmayla ilgisiz; Ege'nin inadını göstermiyor."
 
 review:
   - id: d15-r01
@@ -291,6 +315,10 @@ review:
     options: ["He would rather have a picnic.", "He wants to go to the cinema.", "He doesn't want to go out.", "He doesn't have an opinion."]
     answer: 0
     explain: "\"I prefer the picnic\" = pikniği tercih ediyor; yani He would rather have a picnic."
+    why_wrong:
+      - "Tam tersi: Bora \"I prefer the picnic\" diyor, sinemayı değil."
+      - "Bora \"I want to be outside in the sun\" diyor; dışarı çıkmak istiyor."
+      - "Bora açıkça bir tercih yapıyor; fikri yok demek metinle çelişiyor."
   - id: d15-r08
     type: dialogue_complete
     item: U1-014
@@ -300,6 +328,10 @@ review:
     options: ["It doesn't matter.", "I'd prefer pasta.", "Sorry, I can't.", "I don't like them."]
     answer: 0
     explain: "İkisinden de memnun; fark etmez: It doesn't matter."
+    why_wrong:
+      - "Pasta bir seçenek değil; Duru \"I'm happy with both\" diyor."
+      - "\"Sorry, I can't\" bir daveti reddeder; tercih sorusuna uymaz."
+      - "Tam tersi: \"I'm happy with both\" diyen biri ikisini de seviyor."
   - id: d15-r09
     type: dialogue_complete
     item: U1-023
@@ -309,6 +341,10 @@ review:
     options: ["That would be great!", "That's not fair!", "I have nothing to do.", "Sorry, I'm busy."]
     answer: 0
     explain: "Hoparlör getirme teklifine \"Harika olur!\" denir: That would be great!"
+    why_wrong:
+      - "\"That's not fair!\" haksızlığa itiraz eder; iyilik teklifine cevap olmaz."
+      - "\"I have nothing to do\" teklifle ilgisiz; Elif müziğe sevindiğini söylüyor."
+      - "\"Sorry, I'm busy\" reddeder; ama Elif \"We can listen to music all day\" diyor."
   - id: d15-r10
     type: message_infer
     item: U1-012
@@ -318,6 +354,10 @@ review:
     options: ["an invitation", "an apology", "an excuse", "a secret"]
     answer: 0
     explain: "Tarih, saat, yer ve \"Please come!\" içeren mesaj bir davettir: an invitation."
+    why_wrong:
+      - "Mesajda \"sorry\" yok; Ece özür dilemiyor, \"Please come!\" diyor."
+      - "Bahane bir şeyi neden yapmadığını açıklar; Ece ise herkesi partiye çağırıyor."
+      - "\"Hi everyone!\" diye herkese yazılan mesaj sır olamaz."
   - id: d15-r11
     type: dialogue_complete
     item: U1-011
@@ -327,6 +367,10 @@ review:
     options: ["I'd love to!", "Sorry, I can't.", "No, I refuse.", "That's not fair."]
     answer: 0
     explain: "\"What time does it start?\" diye soruyor; yani kabul etmiş: I'd love to!"
+    why_wrong:
+      - "\"Sorry, I can't\" reddeder; ama Kaan \"What time does it start?\" diye soruyor."
+      - "\"No, I refuse\" hem kaba bir red hem de saat soran birine uymaz."
+      - "\"That's not fair\" haksızlığa itiraz eder; davete cevap değildir."
 
 tips:
   - type: kelime_ailesi

@@ -95,6 +95,10 @@ steps:
       options: ["at a wedding ceremony in a hotel", "at a picnic in the park", "at a basketball match", "at a sleepover at a friend's house"]
       answer: 0
       explain: "Otelde düğün töreni resmî bir etkinliktir; orada resmî kıyafet giyilir."
+      why_wrong:
+        - "Parkta piknik rahat bir etkinlik; orada günlük kıyafet giyilir."
+        - "Basketbol maçında rahat ya da spor kıyafet giyilir, resmî değil."
+        - "Arkadaşın evinde yatıya kalmak çok rahat bir ortam; resmî kıyafet gerekmez."
   - item: U2-068
     sezdir:
       id: u2d12-068-z
@@ -120,6 +124,10 @@ steps:
       options: ["comfortable clothes", "formal clothes", "the latest fashion", "expensive brands"]
       answer: 0
       explain: "Yumuşak ayakkabı ve büyük kazak: Duru için en önemlisi rahat kıyafet."
+      why_wrong:
+        - "Resmî kıyafet rahat değildir; Duru \"I just want to feel relaxed\" diyor."
+        - "Duru \"I don't care about style\" diyor; son moda onun için önemli değil."
+        - "Metinde pahalı markalar geçmiyor; Duru yalnız rahatlık istiyor."
   - item: U2-069
     sezdir:
       id: u2d12-069-z
@@ -145,6 +153,10 @@ steps:
       options: ["snob", "generous", "laid-back", "understanding"]
       answer: 0
       explain: "Yalnızca pahalı yerlere gidip eski telefonlulara gülen Mert snobdur."
+      why_wrong:
+        - "\"Generous\" cömert demek; başkalarına gülmek cömertlik değil."
+        - "\"Laid-back\" rahat, telaşsız demek; Mert her şeyi küçümsüyor."
+        - "\"Understanding\" anlayışlı demek; eski telefonlu insanlara gülmekle çelişir."
   - item: U2-070
     sezdir:
       id: u2d12-070-z
@@ -169,6 +181,10 @@ steps:
       options: ["normal", "fantastic", "expensive", "strange"]
       answer: 0
       explain: "ordinary = normal (sıradan, özel olmayan)."
+      why_wrong:
+        - "\"Fantastic\" harika demek; cümle telefonun \"special\" olmadığını söylüyor."
+        - "\"Expensive\" pahalı demek; \"ordinary\" sıradan, özel olmayan anlamında."
+        - "\"Strange\" garip demek; sıradan bir şey garip olmaz."
   - item: U2-071
     sezdir:
       id: u2d12-071-z
@@ -194,6 +210,10 @@ steps:
       options: ["The film was pretty long. It was nearly three hours.", "What a pretty dress!", "Elif has a pretty little cat.", "These flowers are so pretty."]
       answer: 0
       explain: "Burada pretty = oldukça (quite). Diğer cümlelerde pretty = güzel."
+      why_wrong:
+        - "\"A pretty dress\" güzel bir elbise demek; burada pretty güzel anlamında."
+        - "\"A pretty little cat\" sevimli, güzel bir kedi demek."
+        - "\"So pretty\" çok güzel demek; \"quite\" anlamı yok."
   - item: U2-072
     sezdir:
       id: u2d12-072-z
@@ -218,6 +238,10 @@ steps:
       options: ["Ali", "his mum", "his uncle", "his grandma"]
       answer: 0
       explain: "Ali 8 yaşında, yani çocuk. Anne, amca ve büyükanne yetişkindir."
+      why_wrong:
+        - "Anne 40 yaşında; yetişkin."
+        - "Amca 35 yaşında; yetişkin."
+        - "Büyükanne 70 yaşında; yetişkin. Soru yetişkin OLMAYANI istiyor."
 
 review:
   - id: u2d12-r01
@@ -275,6 +299,10 @@ review:
     options: ["It's annoying.", "It's calm.", "It's generous.", "It's patient."]
     answer: 0
     explain: "Köpek bütün gece havlıyor ve uyuyamıyor: sinir bozucu (annoying)."
+    why_wrong:
+      - "\"Calm\" sakin demek; bütün gece havlayan bir köpek sakin değil."
+      - "\"Generous\" cömert demek; bir kişinin özelliğidir, havlamayla ilgisi yok."
+      - "\"Patient\" sabırlı demek; Selin'in uykusunu bölen köpek için uygun değil."
   - id: u2d12-r08
     type: message_infer
     item: U2-025
@@ -284,6 +312,10 @@ review:
     options: ["classical music", "rap", "rock music", "folk music"]
     answer: 0
     explain: "Çalışırken Mozart ve Beethoven dinliyor: klasik müzik."
+    why_wrong:
+      - "Mozart ve Beethoven rap yapmaz; onlar klasik müzik bestecisi."
+      - "Rock için ipucu yok; Mozart ve Beethoven klasik müziği gösteriyor."
+      - "Halk müziği geleneksel şarkılardır; Mozart ve Beethoven klasik müziğe ait."
   - id: u2d12-r09
     type: gap_fill
     item: U2-029
@@ -293,6 +325,10 @@ review:
     options: ["noisy", "quiet", "formal", "comfortable"]
     answer: 0
     explain: "Herkes bağırıp güldüğü için kantin çok gürültülü (noisy)."
+    why_wrong:
+      - "\"Quiet\" sessiz demek; herkesin bağırdığı bir yer sessiz değil."
+      - "\"Formal\" resmî demek; ses düzeyini anlatmaz."
+      - "\"Comfortable\" rahat demek; çalışılamayan bir yer için uymaz."
   - id: u2d12-r10
     type: message_infer
     item: U2-027
@@ -302,6 +338,10 @@ review:
     options: ["rap", "jazz", "classical music", "folk music"]
     answer: 0
     explain: "Kafiyeli sözleri hızlıca ritim üzerinde söyleyen Bora rap yapıyor."
+    why_wrong:
+      - "Caz için saksafon ya da trompet ipucu yok; kafiye ve ritim rap'e ait."
+      - "Klasik müzikte orkestra olur; hızlı kafiyeli söz söylenmez."
+      - "Halk müziği geleneksel şarkılardır; \"rhyming words… very fast\" rap'i gösterir."
 
 tips:
   - type: tuzak

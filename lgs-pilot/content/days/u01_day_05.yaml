@@ -102,6 +102,10 @@ steps:
       options: ["laid-back", "bad-tempered", "jealous", "nervous"]
       answer: 0
       explain: "Sınav öncesi bile sakin ve rahat: laid-back. Bad-tempered, jealous ve nervous bu durumla uyuşmaz."
+      why_wrong:
+        - "\"Bad-tempered\" çabuk sinirlenen demek; metinde \"never gets angry\" yazıyor."
+        - "\"Jealous\" kıskanç demek; metinde kıskançlıkla ilgili bir ipucu yok."
+        - "\"Nervous\" gergin demek; Mert sınav öncesi bile \"calm and relaxed\"."
   - item: U1-084
     sezdir:
       id: d05-084-z
@@ -127,6 +131,10 @@ steps:
       options: ["outgoing", "shy", "mean", "unreliable"]
       answer: 0
       explain: "Yeni okulda on arkadaş edinen ve konuşmayı seven Elif dışa dönüktür: outgoing."
+      why_wrong:
+        - "Tam tersi: \"shy\" utangaç demek, Elif ise \"I love talking to people!\" diyor."
+        - "\"Mean\" kaba demek; on arkadaş edinen ve konuşmayı seven birini anlatmaz."
+        - "\"Unreliable\" güvenilmez demek; metinde sözünü tutmamakla ilgili bilgi yok."
   - item: U1-083
     sezdir:
       id: d05-083-z
@@ -151,6 +159,10 @@ steps:
       options: ["What does this word mean?", "Don't be mean to your brother.", "Ege was mean to Bora.", "She is never mean to animals."]
       answer: 0
       explain: "Birinci cümlede mean = \"anlamına gelmek\" (fiil). Diğerlerinde \"kaba, cimri\" (kişilik)."
+      why_wrong:
+        - "Burada \"mean\" kaba demek; kardeşe kötü davranma diye uyarıyor."
+        - "Burada da \"mean\" kaba demek; Ege'nin Bora'ya kötü davrandığını anlatıyor."
+        - "Burada da \"mean\" kaba, acımasız demek; hayvanlara kötü davranmamayı anlatıyor."
   - item: U1-071
     sezdir:
       id: d05-071-z
@@ -175,6 +187,10 @@ steps:
       options: ["We went to the book fair last weekend.", "That's not fair!", "Our teacher is fair to everyone.", "A judge must be fair."]
       answer: 0
       explain: "book fair = kitap fuarı. Diğerlerinde fair = adil."
+      why_wrong:
+        - "\"That's not fair!\" haksızlık bu demek; burada \"fair\" adil anlamında."
+        - "Burada \"fair\" adil demek; öğretmenin herkese eşit davrandığını anlatıyor."
+        - "Burada \"fair\" adil demek; hâkimin taraf tutmaması gerektiğini söylüyor."
   - item: U1-097
     sezdir:
       id: d05-097-z
@@ -200,6 +216,10 @@ steps:
       options: ["No, thanks. I'm full.", "Yes, I'm full.", "I'm hungry, no thanks.", "Sorry, I'm late."]
       answer: 0
       explain: "Daha fazla pirinç teklifine \"No, thanks. I'm full.\" diye cevap verilir. \"Yes, I'm full\" kendi içinde çelişir."
+      why_wrong:
+        - "\"Yes\" daha fazla istediğini, \"I'm full\" ise doyduğunu söyler; cevap kendi içinde çelişiyor."
+        - "\"I'm hungry\" aç olduğunu söyler; aç biri teklifi \"no thanks\" ile reddetmez."
+        - "\"Sorry, I'm late\" geç kalınca söylenir; yemek teklifine cevap olmaz."
   - item: U1-099
     sezdir:
       id: d05-099-z
@@ -224,6 +244,10 @@ steps:
       options: ["I'm very full.", "I'm very hungry.", "I'm very tired.", "I'm very happy."]
       answer: 0
       explain: "I'm stuffed = I'm very full (çok doydum). Aç, yorgun ya da mutlu demek değildir."
+      why_wrong:
+        - "Tam tersi: \"stuffed\" tıka basa doymak demek, aç olmak değil."
+        - "\"Tired\" yorgun demek; \"stuffed\" yemekle ilgilidir."
+        - "\"Happy\" mutlu demek; \"stuffed\" duygu değil, doymuşluk anlatır."
 
 review:
   - id: d05-r01
@@ -282,6 +306,10 @@ review:
     options: ["Would you like to join us?", "Did you like the film?", "Where is the cinema?", "How much is the ticket?"]
     answer: 0
     explain: "Bora \"Sorry, I can't\" diyerek bir daveti reddediyor; boşlukta bir davet olmalı."
+    why_wrong:
+      - "\"Did you like…?\" fikir sorar; Bora'nın \"Sorry, I can't\" cevabı bir davete aittir."
+      - "Yer soran birine \"Sorry, I can't\" denmez; cevap bir daveti reddediyor."
+      - "Fiyat sorusuna \"I promised to help my grandma\" diye cevap verilmez; boşlukta davet var."
   - id: d05-f02
     type: message_infer
     item: U1-050
@@ -291,6 +319,10 @@ review:
     options: ["She often breaks her promises.", "She can keep a secret.", "She supports her friend.", "She is a calm person."]
     answer: 0
     explain: "Soru DOĞRU OLMAYANI soruyor. Metinde Selin sözlerini hep tutuyor; \"often breaks her promises\" bunun tersidir, bu yüzden yanlış olan şık budur."
+    why_wrong:
+      - "Bu doğru bir bilgi: metinde \"I can tell her all my secrets\" yazıyor."
+      - "Bu doğru bir bilgi: \"she backs me up\" arkadaşını desteklediğini gösteriyor."
+      - "Bu doğru bir bilgi: metinde \"She is calm and laid-back\" yazıyor."
 
 tips:
   - type: tuzak

@@ -87,6 +87,10 @@ steps:
       options: ["He is disappointed in Mert.", "He wants to invite Mert to a party.", "He thinks Mert is honest.", "He is proud of Mert."]
       answer: 0
       explain: "Mert sırrı herkese anlattı ve Ali \"I can't trust him anymore\" diyor: hayal kırıklığı (disappointed) yaşıyor."
+      why_wrong:
+        - "Ali, sırrını yayan birini partiye çağırmak istemiyor; \"I can't trust him\" kırgınlık gösteriyor."
+        - "Tam tersi: sırrı herkese anlatan biri için Ali \"I can't trust him anymore\" diyor."
+        - "\"Proud\" gurur duymak demek; Ali'nin cümlesi ise hayal kırıklığı anlatıyor."
   - item: U1-051
     sezdir:
       id: d03-051-z
@@ -111,6 +115,10 @@ steps:
       options: ["rely on", "look for", "get up", "turn off"]
       answer: 0
       explain: "\"count on\" = güvenmek, dayanmak. En yakın anlam rely on. look for (aramak), get up (kalkmak), turn off (kapatmak) başka anlamlardır."
+      why_wrong:
+        - "\"Look for\" aramak demek; birine güvenmekle ilgisi yok."
+        - "\"Get up\" yataktan kalkmak demek; \"count on\" ile anlam bağı yok."
+        - "\"Turn off\" bir aleti kapatmak demek; güvenmek anlamı taşımaz."
   - item: U1-060
     sezdir:
       id: d03-060-z
@@ -136,6 +144,10 @@ steps:
       options: ["You can rely on me. I'll come early.", "Sorry, I don't like parties.", "I don't know you.", "It was a great party!"]
       answer: 0
       explain: "Ece yardım istiyor; yardım etmeye hazır cevap \"You can rely on me. I'll come early.\" Diğerleri yardım istemeyle ilgisiz ya da olumsuz."
+      why_wrong:
+        - "Ece yardım istiyor; partiyi sevmediğini söylemek bu isteğe cevap olmaz."
+        - "\"I don't know you\" Ece'nin isteğiyle ilgisiz; Selin ve Ece birbirini tanıyor."
+        - "\"It was\" geçmişi anlatır; parti henüz yapılmadı, süsler hazırlanıyor."
   - item: U1-059
     sezdir:
       id: d03-059-z
@@ -161,6 +173,10 @@ steps:
       options: ["reliable", "late", "forgetful", "unreliable"]
       answer: 0
       explain: "Kaan geç geliyor ve bazen hiç gelmiyor; bu güvenilmez bir davranış. Yani reliable onu anlatmaz, ama late, forgetful ve unreliable anlatır."
+      why_wrong:
+        - "Kaan'ı anlatıyor: \"usually arrives at 6\" yani söz verdiği saatten geç geliyor."
+        - "Kaan'ı anlatıyor: \"Sometimes he forgets to come\" unutkan olduğunu gösteriyor."
+        - "Kaan'ı anlatıyor: sözünü tutmayan biri \"unreliable\" (güvenilmez) olur."
   - item: U1-077
     sezdir:
       id: d03-077-z
@@ -186,6 +202,10 @@ steps:
       options: ["She is honest.", "She is jealous of Kaan.", "She refuses an invitation.", "She is apologising."]
       answer: 0
       explain: "Duru, şarkıyı sevmediğini açıkça ama kibarca söylüyor: dürüst (honest). Kıskançlık ya da özür yok."
+      why_wrong:
+        - "Kıskançlık için ipucu yok; Duru gitar kısmını da açıkça övüyor (\"was great\")."
+        - "Duru bir davete cevap vermiyor; şarkı hakkında fikrini söylüyor."
+        - "Duru özür dilemiyor; mesajda \"sorry\" yok, yalnız dürüst bir yorum var."
   - item: U1-081
     sezdir:
       id: d03-081-z
@@ -211,6 +231,10 @@ steps:
       options: ["loyal", "unreliable", "dishonest", "rude"]
       answer: 0
       explain: "Takımı hep kaybetse de Mert desteklemeyi bırakmıyor: sadık (loyal)."
+      why_wrong:
+        - "\"Unreliable\" güvenilmez demek; Mert ise takımını hiç bırakmıyor."
+        - "\"Dishonest\" yalancı demek; metinde yalanla ilgili bir ipucu yok."
+        - "\"Rude\" kaba demek; Mert'in kimseye kaba davrandığı yazmıyor."
 
 review:
   - id: d03-r01

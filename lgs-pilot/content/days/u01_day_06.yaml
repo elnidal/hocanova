@@ -97,6 +97,10 @@ steps:
       options: ["Bora is my friend.", "Bora is my brother.", "Bora is my teacher.", "Bora is my neighbour."]
       answer: 0
       explain: "buddy = friend (arkadaş). Kardeş, öğretmen ya da komşu değildir."
+      why_wrong:
+        - "\"Buddy\" arkadaş demek; aile bağı anlatmaz, kardeş için \"brother\" kullanılır."
+        - "\"Buddy\" yakın arkadaş için kullanılır; öğretmenle ilgisi yok."
+        - "\"Neighbour\" komşu demek; \"buddy\" ise arkadaş."
   - item: U1-030
     sezdir:
       id: d06-030-z
@@ -122,6 +126,10 @@ steps:
       options: ["Mert isn't Duru's close friend yet.", "Mert is Duru's close friend.", "Duru and Mert are brother and sister.", "Duru knows all of Mert's secrets."]
       answer: 0
       explain: "Duru Mert'i yeni tanıdı ve \"I don't know him very well yet\" diyor; yani henüz yakın arkadaş değil."
+      why_wrong:
+        - "Tam tersi: Duru \"I don't know him very well yet\" diyor; yakın arkadaş değiller."
+        - "Metinde kardeşlik bilgisi yok; Duru Mert'le \"last week\" tanışmış."
+        - "Duru Mert'i iyi tanımıyor; onun bütün sırlarını bilmesi metinle çelişiyor."
   - item: U1-033
     sezdir:
       id: d06-033-z
@@ -147,6 +155,10 @@ steps:
       options: ["a long friendship", "a new teacher", "a birthday cake", "a school trip"]
       answer: 0
       explain: "Beş yaşından beri birlikte okula gidip birbirlerine yardım ediyorlar: uzun süreli bir arkadaşlıktan söz ediyor."
+      why_wrong:
+        - "Metinde öğretmenden söz edilmiyor; Selin Ece'yle arkadaşlığını anlatıyor."
+        - "Metinde doğum günü ya da pasta yok; konu \"since we were five\" süren arkadaşlık."
+        - "Okulla ilgili tek bilgi birlikte yürümek; bir okul gezisinden söz edilmiyor."
   - item: U1-040
     sezdir:
       id: d06-040-z
@@ -171,6 +183,10 @@ steps:
       options: ["friend", "teacher", "cousin", "rival"]
       answer: 0
       explain: "mate = friend (arkadaş, dost). Öğretmen, kuzen ve rakip değil."
+      why_wrong:
+        - "\"Mate\" arkadaş demek; öğretmen anlamı yok."
+        - "\"Cousin\" kuzen demek; \"mate\" aile değil arkadaş anlatır."
+        - "Tam tersi gibi: \"rival\" rakip demek, \"best mate\" ise en yakın arkadaş."
   - item: U1-047
     sezdir:
       id: d06-047-z
@@ -196,6 +212,10 @@ steps:
       options: ["Someone who helps me when I have problems.", "Someone who tells my secrets to everyone.", "Someone who forgets my birthday every year.", "Someone who is always late for our meetings."]
       answer: 0
       explain: "Gerçek arkadaş sorun yaşadığında yardım eden kişidir. Diğer şıklar kötü arkadaş özelliklerini sayıyor."
+      why_wrong:
+        - "Sırları herkese anlatan biri güvenilmezdir; \"true friend\" tanımına uymaz."
+        - "Her yıl doğum gününü unutan biri gerçek arkadaşın özelliği değil."
+        - "Hep geç kalmak kötü arkadaş özelliği; soru gerçek arkadaşı soruyor."
   - item: U1-048
     sezdir:
       id: d06-048-z
@@ -221,6 +241,10 @@ steps:
       options: ["You're fun to be with.", "You're so boring.", "You never come to our parties.", "You always make us sad."]
       answer: 0
       explain: "Kaan komik şakalar yapıyor ve herkes onunla olmayı seviyor: arkadaşları ona \"You're fun to be with\" diyebilir."
+      why_wrong:
+        - "Tam tersi: herkes Kaan'la olmayı seviyor, yani sıkıcı değil."
+        - "Metinde Kaan'ın partilere gelmediği bilgisi yok; bu bilgi uydurma."
+        - "\"Great jokes\" yapan biri insanları üzmez, güldürür."
 
 review:
   - id: d06-r01

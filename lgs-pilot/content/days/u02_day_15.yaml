@@ -98,6 +98,10 @@ steps:
       options: ["Mert", "Ali", "Zeynep", "Deniz"]
       answer: 0
       explain: "Soru kurallara UYMAYANI soruyor. Kurallardan biri \"No phones in class\"; Mert derste telefonda oyun oynuyor."
+      why_wrong:
+        - "Ali \"I always come to school on time\" diyor; \"Be on time\" kuralına uyuyor."
+        - "Zeynep dersten önce telefonunu kapatıyor; \"No phones in class\" kuralına uyuyor."
+        - "Deniz öğretmeni dikkatle dinliyor; \"Listen to the teacher\" kuralına uyuyor."
   - item: U2-085
     sezdir:
       id: u2d15-085-z
@@ -123,6 +127,10 @@ steps:
       options: ["Come on, be realistic.", "That's awesome, do it!", "I can't stand books.", "What about you?"]
       answer: 0
       explain: "Bir hafta sonunda yirmi kitap okumak gerçekçi değil; \"Come on, be realistic.\" diye uyarılır."
+      why_wrong:
+        - "\"That's awesome, do it!\" plana destek verir; ama B \"Maybe one or two books is better\" diyor."
+        - "\"I can't stand books\" B'nin bir iki kitap önermesiyle çelişir."
+        - "\"What about you?\" karşı soru sorar; B burada fikir sormuyor, uyarıyor."
   - item: U2-086
     sezdir:
       id: u2d15-086-z
@@ -148,6 +156,10 @@ steps:
       options: ["sensitive", "self-centered", "stubborn", "lazy"]
       answer: 0
       explain: "Yeni öğrencinin yalnız olduğunu fark edip yanına oturan Ayşe başkalarının duygularına duyarlıdır: sensitive."
+      why_wrong:
+        - "\"Self-centered\" bencil demek; başkasını düşünen Ayşe bunun tam tersi."
+        - "\"Stubborn\" inatçı demek; metinde inat ipucu yok."
+        - "\"Lazy\" tembel demek; Ayşe yeni öğrenciyle ilgilenmek için harekete geçiyor."
   - item: U2-087
     sezdir:
       id: u2d15-087-z
@@ -173,6 +185,10 @@ steps:
       options: ["to be successful in his exams", "to make new friends", "to join a band", "to work out at the gym"]
       answer: 0
       explain: "Yüksek not almak istiyor ve her gün çalışıyor: amacı sınavlarda başarılı olmak."
+      why_wrong:
+        - "Kaan yeni arkadaşlardan söz etmiyor; \"high grades\" istiyor."
+        - "Gruba katılmakla ilgili ipucu yok; Kaan ders çalışıyor."
+        - "Spor salonu metinde geçmiyor; Kaan'ın hedefi notlarla ilgili."
   - item: U2-088
     sezdir:
       id: u2d15-088-z
@@ -197,6 +213,10 @@ steps:
       options: ["I can't stand the noise.", "I don't mind the noise.", "The noise is quite nice.", "I can't hear the noise."]
       answer: 0
       explain: "unbearable = dayanılmaz; I can't stand the noise."
+      why_wrong:
+        - "\"Don't mind\" umursamamak demek; \"unbearable\" dayanılmaz demek."
+        - "\"Quite nice\" oldukça hoş demek; dayanılmaz bir gürültü hoş değildir."
+        - "Gürültü duyulmasaydı dayanılmaz olmazdı; cümle tersini söylüyor."
 
 review:
   - id: u2d15-r01
@@ -248,6 +268,10 @@ review:
     options: ["her daily routine", "her favourite film", "her summer holiday", "her new outfit"]
     answer: 0
     explain: "Her günkü yapılan işleri sayan kişi günlük rutinini anlatıyor."
+    why_wrong:
+      - "Selin bir filmden söz etmiyor; her gün yaptığı işleri sayıyor."
+      - "Yaz tatili değil, okul günleri: \"go to school… Every day!\""
+      - "Selin kıyafetlerini anlatmıyor; saatleri ve günlük işleri sayıyor."
   - id: u2d15-r07
     type: situation
     item: U2-044
@@ -257,6 +281,10 @@ review:
     options: ["She usually practises singing.", "She never practises singing.", "She rarely practises singing.", "She sometimes practises singing."]
     answer: 0
     explain: "Haftada 6 gün çalışıyor; bu \"usually\" (genellikle). Hiç, nadiren ya da bazen değil."
+    why_wrong:
+      - "\"Never\" aşırı bir ifade; Elif haftada 6 gün çalışıyor."
+      - "\"Rarely\" nadiren demek; 7 günün 6'sı nadiren değil."
+      - "\"Sometimes\" bazen demek; haftada 6 gün bundan çok daha sık."
   - id: u2d15-r08
     type: dialogue_complete
     item: U2-048
@@ -266,6 +294,10 @@ review:
     options: ["pick me up", "pay attention", "work out", "follow the news"]
     answer: 0
     explain: "Babasından okuldan almasını istiyor: pick me up."
+    why_wrong:
+      - "\"Pay attention\" dikkat etmek demek; arabayla okuldan almak değil."
+      - "\"Work out\" spor yapmak demek; babanın cevabı \"with the car\" diyor."
+      - "\"Follow the news\" haber takip etmek demek; okuldan almakla ilgisi yok."
   - id: u2d15-r09
     type: synonym
     item: U2-045
@@ -274,6 +306,10 @@ review:
     options: ["He goes there on the same days every week.", "He has never been there.", "He went there only once.", "He hates going there."]
     answer: 0
     explain: "regularly = düzenli; aynı günlerde her hafta gider."
+    why_wrong:
+      - "\"Has never been there\" hiç gitmemek demek; \"regularly\" düzenli gitmek."
+      - "\"Only once\" tek bir kez demek; \"regularly\" tekrar eden bir alışkanlık."
+      - "Cümle Kaan'ın spor salonunu sevmediğini söylemiyor; düzenli gidiyor."
   - id: u2d15-r10
     type: dialogue_complete
     item: U2-004
@@ -283,6 +319,10 @@ review:
     options: ["hang out", "work out", "pay attention", "follow the news"]
     answer: 0
     explain: "Hafta sonu AVM'de arkadaşlarla sohbet ve dondurma: hang out (takılmak)."
+    why_wrong:
+      - "\"Work out\" spor yapmak demek; sohbet edip dondurma yemek spor değil."
+      - "\"Pay attention\" dikkat etmek demek; arkadaşlarla AVM'de vakit geçirmek değil."
+      - "\"Follow the news\" haber takip etmek demek; AVM'deki sohbetle ilgisi yok."
   - id: u2d15-r11
     type: dialogue_complete
     item: U2-006
@@ -292,6 +332,10 @@ review:
     options: ["What about you?", "Where do you live?", "What time is it?", "How old are you?"]
     answer: 0
     explain: "\"What about you?\" = ya sen? Kendi tercihini söyledikten sonra karşıdakine sorulur."
+    why_wrong:
+      - "\"Where do you live?\" yer sorar; B yer değil, sevdiği sporu söylüyor."
+      - "\"What time is it?\" saat sorar; \"I prefer basketball\" saat cevabı değil."
+      - "\"How old are you?\" yaş sorar; B tercihini söylüyor."
   - id: u2d15-r12
     type: message_infer
     item: U2-003
@@ -301,6 +345,10 @@ review:
     options: ["She did a survey.", "She hung out with friends.", "She took a selfie.", "She worked out."]
     answer: 0
     explain: "Elli öğrenciye soru sorup cevapları grafiğe koymak anket yapmaktır: did a survey."
+    why_wrong:
+      - "Ece arkadaşlarıyla takılmıyor; elli öğrenciye soru soruyor."
+      - "Metinde fotoğraf yok; Ece cevapları bir grafiğe koyuyor."
+      - "Spor yapmakla ilgili ipucu yok; soru sormak ve grafik anket işidir."
 
 tips:
   - type: kelime_ailesi

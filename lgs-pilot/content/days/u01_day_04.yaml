@@ -108,6 +108,10 @@ steps:
       options: ["She keeps her promises.", "She breaks her promises.", "She never helps her friends.", "She is unreliable."]
       answer: 0
       explain: "Selin Duru'ya yardım edeceğine söz verdi ve her gün gitti: sözünü tutuyor (keeps her promises)."
+      why_wrong:
+        - "Tam tersi: Selin söz verdiği gibi \"every day after school\" Duru'ya gitmiş."
+        - "\"Never\" aşırı bir ifade; Selin her gün arkadaşına yardım etmeye gitmiş."
+        - "\"Unreliable\" güvenilmez demek; sözünü her gün tutan biri güvenilirdir."
   - item: U1-050
     sezdir:
       id: d04-050-z
@@ -133,6 +137,10 @@ steps:
       options: ["unreliable", "loyal", "reliable", "honest"]
       answer: 0
       explain: "Mert sık sık sözünü bozuyor: unreliable (güvenilmez). reliable ve honest tersini söyler."
+      why_wrong:
+        - "\"Loyal\" sadık demek; sözünü sık sık bozan biri için uygun değil."
+        - "Tam tersi: \"reliable\" güvenilir demek, Mert ise \"often breaks his promises\"."
+        - "\"Honest\" dürüst demek; \"he said he would come, but he didn't\" bununla çelişiyor."
   - item: U1-055
     sezdir:
       id: d04-055-z
@@ -158,6 +166,10 @@ steps:
       options: ["Don't worry. I can keep a secret.", "Great! I'll tell everyone.", "Sorry, I can't hear you.", "Let's post it online!"]
       answer: 0
       explain: "Ece sırrını paylaşmak istiyor; doğru cevap sırrı saklayacağını söylemek: \"I can keep a secret.\""
+      why_wrong:
+        - "Ece \"nobody else should know\" diyor; herkese anlatmak isteğin tam tersi."
+        - "Ece'yi duymayan biri ne söyleneceğini bilemez; bu cevap sır isteğine uymuyor."
+        - "Sırrı internette paylaşmak \"nobody else should know\" isteğiyle çelişiyor."
   - item: U1-049
     sezdir:
       id: d04-049-z
@@ -182,6 +194,10 @@ steps:
       options: ["support you", "look for you", "wait for you", "call you"]
       answer: 0
       explain: "back you up = desteklemek. En yakın anlam support you."
+      why_wrong:
+        - "\"Look for\" aramak demek; sorun anında desteklemek anlamı taşımaz."
+        - "\"Wait for\" beklemek demek; \"back you up\" ise yanında durup desteklemek."
+        - "\"Call\" aramak, telefon etmek demek; destek anlamı vermez."
   - item: U1-092
     sezdir:
       id: d04-092-z
@@ -207,6 +223,10 @@ steps:
       options: ["supportive", "dishonest", "unreliable", "selfish"]
       answer: 0
       explain: "Duru \"You can do it!\" diyerek cesaret veriyor: supportive."
+      why_wrong:
+        - "\"Dishonest\" yalancı demek; Duru'nun mesajında yalanla ilgili bir ipucu yok."
+        - "\"Unreliable\" güvenilmez demek; \"We are all with you!\" diyen biri yanında duruyor."
+        - "\"Selfish\" bencil demek; Duru ise kendini değil Bora'yı düşünüp cesaret veriyor."
   - item: U1-070
     sezdir:
       id: d04-070-z
@@ -232,6 +252,10 @@ steps:
       options: ["caring", "selfish", "rude", "lazy"]
       answer: 0
       explain: "Bora yaşlı hanıma yardım etmek için partiye geç kaldı: başkalarını düşünüyor, yani caring."
+      why_wrong:
+        - "Tam tersi: \"selfish\" bencil demek, Bora ise başkasına yardım için geç kalıyor."
+        - "\"Rude\" kaba demek; yaşlı birine çanta taşımak kibar bir davranış."
+        - "\"Lazy\" tembel demek; ağır çantaları eve kadar taşıyan biri tembel değildir."
 
 review:
   - id: d04-r01

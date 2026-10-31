@@ -94,6 +94,10 @@ steps:
       options: ["I can't stand", "I'm crazy about", "I really enjoy", "I'm keen on"]
       answer: 0
       explain: "\"Sorry\" ve \"I always feel bad\" olumsuz duygu gösteriyor."
+      why_wrong:
+        - "\"Crazy about\" çok sevmek demek; ama \"Sorry\" ve \"I always feel bad\" Selin'in sevmediğini gösteriyor."
+        - "\"Enjoy\" keyif almak demek; kalabalıkta kendini kötü hisseden biri bunu söylemez."
+        - "\"Keen on\" hevesli olmak demek; daveti \"Sorry\" ile reddeden biriyle çelişiyor."
   - item: U2-014
     sezdir:
       id: u2d03-014-z
@@ -119,6 +123,10 @@ steps:
       options: ["Most students hate homework.", "Most students love homework.", "Thirteen students love homework.", "Five students hate homework."]
       answer: 0
       explain: "20 öğrenciden 13'ü \"hate it\" demiş: çoğunluk."
+      why_wrong:
+        - "\"love it\" yalnız 2 kişi; 20 kişide 2 kişi çoğunluk değil."
+        - "13 sayısı doğru ama \"hate it\" satırına ait. Sayıyı hep kendi satırıyla eşleştir."
+        - "5 kişi \"don't mind it\" (umursamıyorum) demiş, \"hate\" dememiş."
   - item: U2-015
     sezdir:
       id: u2d03-015-z
@@ -143,6 +151,10 @@ steps:
       options: ["Elif loves Luna Ray's songs very much.", "Elif thinks Luna Ray's songs are strange.", "Elif doesn't mind Luna Ray's songs.", "Elif can't stand Luna Ray's songs."]
       answer: 0
       explain: "be crazy about = bir şeyi çok, çok sevmek; Türkçedeki \"-e deli olmak\" gibi. Gerçekten delirmekle ilgisi yok!"
+      why_wrong:
+        - "\"Crazy\" tuzağı: burada \"garip, deli\" değil, \"bir şeyi çok sevmek\" anlamında."
+        - "\"Doesn't mind\" (umursamamak) çok zayıf kalıyor; \"crazy about\" güçlü bir sevgi anlatır."
+        - "Tam tersi: \"can't stand\" bir şeye hiç dayanamamak demek."
   - item: U2-016
     sezdir:
       id: u2d03-016-z
@@ -168,6 +180,10 @@ steps:
       options: ["She likes old rock songs.", "She writes rock songs.", "She hates rock songs.", "She never listens to music."]
       answer: 0
       explain: "\"I'm really into old rock songs\" = eski rock şarkılarını çok severim."
+      why_wrong:
+        - "Duru şarkı yazdığını söylemiyor, yalnız dinliyor (\"I listen to them\")."
+        - "Tam tersi: \"I'm really into\" çok sevmek demek."
+        - "Duru her gün okul yolunda müzik dinliyor; \"never\" metinle çelişiyor."
   - item: U2-017
     sezdir:
       id: u2d03-017-z
@@ -193,6 +209,10 @@ steps:
       options: ["She admires her.", "She is jealous of her.", "She doesn't mind her.", "She is angry with her."]
       answer: 0
       explain: "Elif, Luna Ray'in iyi özelliklerini sayıyor ve \"my hero\" diyor: onu takdir ediyor (admires)."
+      why_wrong:
+        - "Kıskançlık için bir ipucu yok; \"She is my hero!\" övgü cümlesi."
+        - "\"Doesn't mind\" umursamamak demek; birini kahramanı ilan eden kişi onu umursar."
+        - "Metinde öfke yok; Elif yalnız iyi özellikleri sayıyor."
   - item: U2-018
     sezdir:
       id: u2d03-018-z
@@ -218,6 +238,10 @@ steps:
       options: ["To be honest, not really.", "Yes, it was fantastic!", "I'd love to.", "Sure, let's go."]
       answer: 0
       explain: "Selin filmi beğenmemiş; to be honest kibarca gerçek fikri söylemeye başlar."
+      why_wrong:
+        - "Cevaptan sonraki cümle filmin uzun ve sıkıcı olduğunu söylüyor; \"fantastic\" bununla çelişir."
+        - "\"I'd love to\" bir davete verilen cevaptır; \"Did you like…?\" sorusuna uymaz."
+        - "\"Sure, let's go\" bir öneriye cevaptır; soru filmi beğenip beğenmediği."
 
 review:
   - id: u2d03-r01

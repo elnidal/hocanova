@@ -101,6 +101,10 @@ steps:
       options: ["She chats online with her friends.", "She hangs out with her friends at the park.", "She writes letters to her friends.", "She never talks to her friends."]
       answer: 0
       explain: "Hafta içi görüşemiyorlar ama video uygulamasında konuşup mesaj gönderiyor: online sohbet ediyor."
+      why_wrong:
+        - "Elif \"I can't meet my friends on weekdays\" diyor; parkta buluşmuyorlar."
+        - "Mektup geçmiyor; Elif video uygulamasında konuşuyor ve mesaj atıyor."
+        - "\"Never\" metinle çelişir; Elif \"every night\" arkadaşlarıyla konuşuyor."
   - item: U2-056
     sezdir:
       id: u2d10-056-z
@@ -125,6 +129,10 @@ steps:
       options: ["going hiking", "surfing the internet", "chatting online", "sharing photos on social media"]
       answer: 0
       explain: "Soru çevrim dışı olanı soruyor: dağda yürüyüş (hiking) internetle ilgili değildir."
+      why_wrong:
+        - "İnternette gezinmek bir online etkinliktir."
+        - "Online sohbet bir online etkinliktir."
+        - "Sosyal medyada fotoğraf paylaşmak online bir etkinliktir. Soru online OLMAYANI istiyor."
   - item: U2-057
     sezdir:
       id: u2d10-057-z
@@ -149,6 +157,10 @@ steps:
       options: ["Let's take a selfie!", "Let's chat online!", "Let's go hiking!", "Let's follow the news!"]
       answer: 0
       explain: "Telefonla kendinizin birlikte fotoğrafını çekmek: Let's take a selfie!"
+      why_wrong:
+        - "\"Chat online\" internetten yazışmaktır; konserde birlikte fotoğraf çekmek değil."
+        - "Doğa yürüyüşü önerisi bu durumla ilgisiz; istek telefonla fotoğraf."
+        - "Haber takip etmek fotoğrafla ilgisiz; isteğe uyan \"take a selfie\"."
   - item: U2-058
     sezdir:
       id: u2d10-058-z
@@ -174,6 +186,10 @@ steps:
       options: ["He shared a photo on social media.", "He took a photo of his cat.", "He never uses the internet.", "He chatted online with his karate teacher."]
       answer: 0
       explain: "Karate fotoğrafını sosyal medyada paylaştı: He shared a photo on social media."
+      why_wrong:
+        - "Bora \"my karate photo\" diyor; kedi fotoğrafından söz edilmiyor."
+        - "\"Never\" metinle çelişir; Bora sosyal medyada fotoğraf paylaşmış."
+        - "Metinde karate öğretmeniyle sohbet geçmiyor; Bora fotoğraf paylaşmış."
   - item: U2-059
     sezdir:
       id: u2d10-059-z
@@ -200,6 +216,10 @@ steps:
       options: ["nervous", "bored", "calm", "stuffed"]
       answer: 0
       explain: "Eller titriyor, kalp hızlı atıyor: gergin (nervous)."
+      why_wrong:
+        - "\"Bored\" sıkılmış demek; titreyen eller ve hızlı kalp heyecanı gösteriyor."
+        - "\"Calm\" sakin demek; \"My hands are shaking\" ile çelişir."
+        - "\"Stuffed\" çok tok demek; durum yemekle ilgili değil, sahneyle ilgili."
   - item: U2-060
     sezdir:
       id: u2d10-060-z
@@ -224,6 +244,10 @@ steps:
       options: ["silly", "clever", "normal", "boring"]
       answer: 0
       explain: "ridiculous = silly (saçma, gülünç)."
+      why_wrong:
+        - "\"Clever\" akıllıca demek; balıklı şapka akıllıca değil, gülünç."
+        - "\"Normal\" sıradan demek; tepesinde balık olan bir şapka normal değil."
+        - "\"Boring\" sıkıcı demek; \"ridiculous\" güldüren, saçma bir şeyi anlatır."
 
 review:
   - id: u2d10-r01
@@ -283,6 +307,10 @@ review:
     options: ["He can't stand getting up early.", "He is crazy about getting up early.", "He doesn't mind getting up early.", "He enjoys getting up early."]
     answer: 0
     explain: "Çalar saat \"terrible\", öğlene kadar uyumak istiyor: erken kalkmaya dayanamıyor (can't stand)."
+    why_wrong:
+      - "\"Crazy about\" bayılmak demek; Bora alarm için \"It's terrible!\" diyor."
+      - "\"Doesn't mind\" umursamamak demek; \"terrible\" diyen biri umursuyor."
+      - "\"Enjoys\" keyif almak demek; 11'e kadar uyumak isteyen biri erken kalkmaktan hoşlanmaz."
   - id: u2d10-r08
     type: dialogue_complete
     item: U2-015
@@ -292,6 +320,10 @@ review:
     options: ["Like it? I'm crazy about it!", "Not really. It's boring.", "I can't stand it.", "I don't mind it."]
     answer: 0
     explain: "Her maçı izleyip her gün oynayan kişi futbola bayılır: crazy about it."
+    why_wrong:
+      - "\"Not really. It's boring\" sevmemektir; her gün oynayan biri bunu söylemez."
+      - "\"Can't stand\" dayanamamak demek; \"I watch every match\" ile çelişir."
+      - "\"Don't mind\" umursamamak demek; her maçı izleyen biri için çok zayıf."
   - id: u2d10-r09
     type: gap_fill
     item: U2-017
@@ -301,6 +333,10 @@ review:
     options: ["admires", "dislikes", "hates", "can't stand"]
     answer: 0
     explain: "Odasının her yerinde sevdiği şarkıcının posterleri var; onu çok takdir ediyor (admires)."
+    why_wrong:
+      - "\"Dislikes\" sevmemek demek; odasını şarkıcının posterleriyle dolduran biri onu sever."
+      - "\"Hates\" nefret etmek demek; \"favourite singer\" ile çelişir."
+      - "\"Can't stand\" dayanamamak demek; \"favourite singer\" ile çelişir."
   - id: u2d10-r10
     type: situation
     item: U2-018
@@ -309,6 +345,10 @@ review:
     options: ["To be honest, I liked your old haircut more.", "I'm crazy about rap music.", "I hardly ever go out.", "Let's go hiking!"]
     answer: 0
     explain: "Beğenmediğin saç için nazik ve dürüst cümle: To be honest, I liked your old haircut more."
+    why_wrong:
+      - "Rap müzikle ilgili bu cümle saç sorusuna cevap değil."
+      - "Ne sıklıkla dışarı çıktığın saç sorusuyla ilgisiz."
+      - "Yürüyüş önerisi bir cevap değil; arkadaşın saçını soruyor."
 
 tips:
   - type: tuzak

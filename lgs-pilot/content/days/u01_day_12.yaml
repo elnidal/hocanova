@@ -100,6 +100,10 @@ steps:
       options: ["My advice is to talk to him face to face.", "I argued with him yesterday.", "He has a new bike.", "I'm stuffed, thanks."]
       answer: 0
       explain: "Arkadaşıyla tartışan Bora'ya tavsiye: My advice is to talk to him face to face. (advice = tavsiye)"
+      why_wrong:
+        - "Bora tavsiye istiyor; Selin'in de tartıştığını söylemesi bir öneri değil."
+        - "Yeni bisiklet bilgisi \"What should I do?\" sorusuna cevap vermiyor."
+        - "\"I'm stuffed\" doymak demek; tartışmayla ilgisi yok."
   - item: U1-037
     sezdir:
       id: d12-037-z
@@ -125,6 +129,10 @@ steps:
       options: ["Selin helps and supports her when she needs it.", "Selin always waits for her at the same place.", "Selin lives near her house.", "Selin is never at school."]
       answer: 0
       explain: "\"always there for me\" = ihtiyacım olduğunda bana yardım edip destek olur; yer ya da zamanla ilgili değil."
+      why_wrong:
+        - "Tuzak kelime \"there\": \"always there for me\" bir yeri değil, desteği anlatır."
+        - "Bu kalıp yakın oturmakla ilgili değil; ihtiyaç anında yanında olmak demek."
+        - "Tam tersi gibi: \"always there\" her zaman yanında demek; okula gelmemekle ilgisi yok."
   - item: U1-043
     sezdir:
       id: d12-043-z
@@ -149,6 +157,10 @@ steps:
       options: ["He shares his chips with Bora.", "He eats all the chips himself.", "He hides the chips from Bora.", "He sells the chips to Bora."]
       answer: 0
       explain: "İyi arkadaş cipsi paylaşır: He shares his chips with Bora."
+      why_wrong:
+        - "Aç arkadaşının önünde bütün cipsi yemek iyi arkadaşa yakışmaz."
+        - "Cipsi saklamak paylaşmanın tam tersi."
+        - "Arkadaşına cips satmak iyilik değil; iyi arkadaş paylaşır."
   - item: U1-044
     sezdir:
       id: d12-044-z
@@ -173,6 +185,10 @@ steps:
       options: ["They are often together.", "They spend a lot of money.", "They never see each other.", "They are always busy."]
       answer: 0
       explain: "spend time together = sık sık birlikte olmak."
+      why_wrong:
+        - "Tuzak kelime \"spend\": burada para değil, zaman geçirmekten söz ediliyor."
+        - "Tam tersi: birlikte çok vakit geçiren iki kişi sık görüşür."
+        - "\"Busy\" meşgul demek; cümle birlikte vakit geçirmeyi anlatıyor."
   - item: U1-063
     sezdir:
       id: d12-063-z
@@ -197,6 +213,10 @@ steps:
       options: ["You can't do it. Just stop.", "You can do it! Don't give up.", "I'm with you. Let's try again.", "Don't worry. I'll help you."]
       answer: 0
       explain: "Soru destek GÖSTERMEYEN cümleyi soruyor. \"You can't do it. Just stop.\" cesaret kırar; diğer üçü destek verir."
+      why_wrong:
+        - "\"You can do it! Don't give up.\" cesaret veriyor; bu destek gösterir."
+        - "\"I'm with you\" yanındayım demek; destek gösterir."
+        - "\"I'll help you\" yardım sözü verir; bu da destektir. Soru destek OLMAYANI istiyor."
   - item: U1-064
     sezdir:
       id: d12-064-z
@@ -222,6 +242,10 @@ steps:
       options: ["Friends support each other in good and bad times.", "Friends never spend time together.", "Friends tell secrets to others.", "Friends argue all the time."]
       answer: 0
       explain: "İyi arkadaşlık iyi ve kötü günlerde birbirini desteklemektir."
+      why_wrong:
+        - "\"Never\" aşırı bir ifade; iyi arkadaşlar birlikte vakit geçirir."
+        - "Sırları başkalarına anlatmak arkadaşlığa zarar verir."
+        - "\"All the time\" aşırı bir ifade; sürekli tartışmak iyi arkadaşlığı anlatmaz."
 
 review:
   - id: d12-r01
@@ -278,6 +302,10 @@ review:
     options: ["outgoing", "shy", "mean", "quiet"]
     answer: 0
     explain: "Yeni insanlarla tanışmayı seven ve ilk gün herkesle konuşan Elif dışa dönüktür: outgoing."
+    why_wrong:
+      - "Tam tersi: \"shy\" utangaç demek, Elif ise ilk gün herkesle konuştu."
+      - "\"Mean\" kaba demek; metinde kabalık ipucu yok."
+      - "\"Quiet\" sessiz demek; sınıftaki herkesle konuşan biri sessiz değil."
   - id: d12-r08
     type: dialogue_complete
     item: U1-097
@@ -287,6 +315,10 @@ review:
     options: ["No, thanks. I'm full.", "Yes, please. I'm hungry.", "Sorry, I'm busy.", "I have nothing to do."]
     answer: 0
     explain: "Üç dilim pasta yemiş; yeter diye cevaplar: No, thanks. I'm full."
+    why_wrong:
+      - "\"Yes, please. I'm hungry.\" daha fazla ister; ama Bora zaten üç dilim yemiş."
+      - "\"Sorry, I'm busy\" bir davete cevaptır; ikram teklifine uymaz."
+      - "\"I have nothing to do\" yemek teklifine cevap vermez."
   - id: d12-r09
     type: odd_one_out
     item: U1-083
@@ -295,6 +327,10 @@ review:
     options: ["Don't be mean to your little brother.", "What does this word mean?", "I don't understand what you mean.", "A red light means stop."]
     answer: 0
     explain: "Birinci cümlede mean = kaba, cimri (kişilik). Diğerlerinde \"anlamına gelmek, kastetmek\"."
+    why_wrong:
+      - "Burada \"mean\" anlamına gelmek demek (fiil): bu kelime ne demek?"
+      - "Burada \"mean\" kastetmek demek: ne demek istediğini anlamıyorum."
+      - "Burada \"means\" anlamına gelmek demek: kırmızı ışık dur demektir."
 
 tips:
   - type: tuzak

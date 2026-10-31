@@ -100,6 +100,10 @@ steps:
       options: ["They argued about the football match.", "They got on well at the match.", "They have a lot in common.", "They are both interested in music."]
       answer: 0
       explain: "Kızgın olmalarının nedeni maç hakkında tartışmaları: They argued about the football match."
+      why_wrong:
+        - "Tam tersi: iyi anlaşan iki kişi birbirine kızgın olmaz."
+        - "Ortak yönlerinin çok olması kızgınlığın sebebi değil; soru \"angry\" olmalarını soruyor."
+        - "Müziğe ilgi kızgınlığı açıklamaz; metinde müzikle ilgili bilgi de yok."
   - item: U1-032
     sezdir:
       id: d10-032-z
@@ -124,6 +128,10 @@ steps:
       options: ["He thinks the exam will not go well.", "He is sure the exam will be easy.", "He has already finished the exam.", "He is excited about the exam."]
       answer: 0
       explain: "\"I have a bad feeling about the exam\" = Sınav hakkında kötü bir önsezim var; sınavın iyi geçmeyeceğini düşünüyor."
+      why_wrong:
+        - "Tam tersi: \"bad feeling\" kötü bir önsezi; sınavın kolay olacağından emin değil."
+        - "\"I have a bad feeling\" sınavdan önce söylenir; sınavın bittiğini göstermez."
+        - "\"Excited\" heyecanlı ve istekli demek; \"bad feeling\" ise kaygı anlatıyor."
   - item: U1-031
     sezdir:
       id: d10-031-z
@@ -149,6 +157,10 @@ steps:
       options: ["He feels alone.", "He feels stuffed.", "He feels proud.", "He feels excited."]
       answer: 0
       explain: "Kimse Bora'yı anlamıyor ve molada bahçede yalnız oturuyor: kendini yalnız hissediyor."
+      why_wrong:
+        - "\"Stuffed\" tıka basa doymak demek; bir duygu değil, yemekle ilgili."
+        - "\"Proud\" gurur duymak demek; \"Nobody understands me\" diyen biri gururlu değil."
+        - "\"Excited\" heyecanlı demek; bahçede tek başına oturan Bora üzgün ve yalnız."
   - item: U1-041
     sezdir:
       id: d10-041-z
@@ -173,6 +185,10 @@ steps:
       options: ["Ece and Selin get on very well.", "Ece and Selin often argue.", "Ece and Selin never chat.", "Ece and Selin go to different schools."]
       answer: 0
       explain: "great relationship = çok iyi ilişki; Ece ve Selin çok iyi anlaşıyor."
+      why_wrong:
+        - "Tam tersi: \"great relationship\" çok iyi ilişki demek, sık sık tartışmak değil."
+        - "\"Never\" aşırı bir ifade; iyi ilişkisi olan iki kişi elbette sohbet eder."
+        - "Metinde okul bilgisi yok; \"relationship\" iki kişinin arasını anlatır."
   - item: U1-045
     sezdir:
       id: d10-045-z
@@ -198,6 +214,10 @@ steps:
       options: ["They have a strong bond.", "They never get on well.", "They don't trust each other.", "They have nothing in common."]
       answer: 0
       explain: "Anaokulundan beri arkadaş, birbirlerine yardım ediyor ve uzun küsmüyorlar: güçlü bir bağları var."
+      why_wrong:
+        - "Tam tersi: anaokulundan beri arkadaş olan ve birbirine yardım eden iki kişi iyi anlaşır."
+        - "Her sorunda birbirine yardım eden iki kişi birbirine güvenir."
+        - "Yıllardır arkadaş olup her sorunda birlikte olan iki kişinin ortak yönü vardır."
   - item: U1-046
     sezdir:
       id: d10-046-z
@@ -222,6 +242,10 @@ steps:
       options: ["Text me when you get home.", "Read the text and answer the questions.", "This text is too long.", "The text on page 12 is about friendship."]
       answer: 0
       explain: "\"Text me\" = bana mesaj at (fiil). Diğerlerinde text = metin (isim)."
+      why_wrong:
+        - "Burada \"text\" metin demek (isim): metni oku ve soruları cevapla."
+        - "Burada \"text\" isim: \"This text\" bir metni gösteriyor."
+        - "Burada \"text\" isim: \"The text on page 12\" sayfadaki metni anlatıyor."
 
 review:
   - id: d10-r01
@@ -280,6 +304,10 @@ review:
     options: ["reliable", "dishonest", "mean", "lazy"]
     answer: 0
     explain: "Her zaman zamanında gelen ve söylediğini yapan Selin güvenilirdir: reliable."
+    why_wrong:
+      - "\"Dishonest\" yalancı demek; \"does what she says\" bunun tam tersi."
+      - "\"Mean\" kaba demek; yardıma koşan biri kaba değildir."
+      - "\"Lazy\" tembel demek; her çağrıda zamanında gelen biri tembel değil."
   - id: d10-r08
     type: dialogue_complete
     item: U1-051
@@ -289,6 +317,10 @@ review:
     options: ["You can count on me.", "I can't trust you.", "Sorry, I'm busy.", "I have no idea."]
     answer: 0
     explain: "Masaları taşımak için yardım isteyen Kaan'a Selin \"You can count on me.\" (Bana güvenebilirsin) der."
+    why_wrong:
+      - "\"I can't trust you\" yardım etmez; ardından Kaan \"Thanks, You're the best\" demez."
+      - "\"Sorry, I'm busy\" yardımı reddeder; Kaan'ın teşekkürüyle çelişiyor."
+      - "\"I have no idea\" bilmiyorum demek; yardım isteğine cevap olmuyor."
   - id: d10-r09
     type: synonym
     item: U1-077
@@ -297,6 +329,10 @@ review:
     options: ["To tell the truth", "To be quick", "In my free time", "At the end"]
     answer: 0
     explain: "To be honest = To tell the truth (dürüst olmak gerekirse, doğrusunu söylemek gerekirse)."
+    why_wrong:
+      - "\"Quick\" hızlı demek; \"honest\" ile anlam bağı yok."
+      - "\"In my free time\" boş zamanımda demek; doğruyu söylemeyi anlatmaz."
+      - "\"At the end\" sonunda demek; \"To be honest\" ise doğrusunu söylemek gerekirse."
 
 tips:
   - type: tuzak

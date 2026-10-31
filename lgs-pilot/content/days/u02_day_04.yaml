@@ -94,6 +94,10 @@ steps:
       options: ["The band needs a guitar player.", "The band practises on Saturdays.", "You should talk to Elif.", "They practise at Duru's house."]
       answer: 0
       explain: "Posterde sadece davulcu ve klavyeci aranıyor; gitarcı (Duru) zaten var."
+      why_wrong:
+        - "Bu bilgi doğru: posterde \"Practice: Saturdays\" yazıyor."
+        - "Bu bilgi doğru: \"Interested? Talk to Elif!\" yazıyor."
+        - "Bu bilgi doğru: \"at Duru's house\" yazıyor. Soru doğru OLMAYANI istiyor."
   - item: U2-020
     sezdir:
       id: u2d04-020-z
@@ -119,6 +123,10 @@ steps:
       options: ["Bora is a member of the band.", "Bora plays the drums in the band.", "Bora is the singer of the band.", "Bora doesn't go to the practices."]
       answer: 0
       explain: "Bora hiçbir enstrüman çalmıyor ama grup listesinde adı var ve fotoğraf çekiyor: grubun üyesi."
+      why_wrong:
+        - "Bora \"can't play any instruments\"; davul çaldığı yazmıyor."
+        - "Metinde Bora'nın şarkı söylediği geçmiyor; o fotoğraf çekiyor."
+        - "Tam tersi: Bora \"every practice\" fotoğraf çekiyor, yani provalara gidiyor."
   - item: U2-021
     sezdir:
       id: u2d04-021-z
@@ -143,6 +151,10 @@ steps:
       options: ["guitar", "rock", "jazz", "pop"]
       answer: 0
       explain: "guitar bir çalgı; diğerleri müzik türü."
+      why_wrong:
+        - "\"Rock\" bir müzik türüdür."
+        - "\"Jazz\" bir müzik türüdür."
+        - "\"Pop\" bir müzik türüdür. Soru tür OLMAYANI istiyor."
   - item: U2-022
     sezdir:
       id: u2d04-022-z
@@ -168,6 +180,10 @@ steps:
       options: ["Rock music is the most popular genre.", "Pop music is more popular than rock music.", "Jazz is more popular than rap.", "Nobody likes jazz."]
       answer: 0
       explain: "12 öğrenciyle en çok seçilen tür rock music."
+      why_wrong:
+        - "Tersi doğru: rock 12, pop 10; rock daha popüler."
+        - "Tersi doğru: rap 5, jazz 3; rap daha popüler."
+        - "\"Nobody\" aşırı bir ifade; 3 öğrenci jazz seçmiş."
   - item: U2-023
     sezdir:
       id: u2d04-023-z
@@ -193,6 +209,10 @@ steps:
       options: ["Pop music.", "Very loudly.", "At home.", "With my friends."]
       answer: 0
       explain: "\"What kind of…?\" tür sorar; cevap bir müzik türü olmalı."
+      why_wrong:
+        - "\"Very loudly\" nasıl dinlediğini anlatır; \"What kind of…?\" tür sorar."
+        - "\"At home\" bir yer cevabıdır; soru müzik türünü soruyor."
+        - "\"With my friends\" kiminle sorusuna cevaptır, tür sorusuna değil."
   - item: U2-024
     sezdir:
       id: u2d04-024-z
@@ -218,6 +238,10 @@ steps:
       options: ["jazz", "rap", "pop music", "rock music"]
       answer: 0
       explain: "Louis Armstrong ünlü bir caz trompetçisiydi; saksafon da cazın simge çalgılarından biri."
+      why_wrong:
+        - "Rap'te saksafon ve eski plaklar öne çıkmaz; ipuçları caza işaret ediyor."
+        - "Pop müzik için metinde ipucu yok; saksafon ve Louis Armstrong caza ait."
+        - "Rock'ta elektro gitar öne çıkar; saksafon ve Louis Armstrong caz ipucu."
 
 review:
   - id: u2d04-r01

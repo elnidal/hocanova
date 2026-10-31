@@ -102,6 +102,10 @@ steps:
       options: ["at the gym", "at the library", "at the cinema", "at a café"]
       answer: 0
       explain: "Spor ayakkabısı, ağırlıklar, koşu makineleri ve koç: Kaan spor salonunda."
+      why_wrong:
+        - "Kütüphanede ağırlık ve koşu makinesi olmaz."
+        - "Sinemada koç ve koşu makinesi olmaz."
+        - "Kafede ağırlık ve koşu makinesi olmaz; ipuçları spor salonunu gösteriyor."
   - item: U2-032
     sezdir:
       id: u2d06-032-z
@@ -126,6 +130,10 @@ steps:
       options: ["Kaan does exercise three times a week.", "Kaan goes to work three times a week.", "Kaan goes out with friends three times a week.", "Kaan watches basketball three times a week."]
       answer: 0
       explain: "work out = spor yapmak, antrenman yapmak. İşe gitmek değil."
+      why_wrong:
+        - "\"Work\" tuzağı: \"work out\" işe gitmek değil, spor yapmak demek."
+        - "\"Go out\" dışarı çıkmak demek; \"work out\" ile karıştırma."
+        - "\"Work out\" spor yapmaktır; basketbol izlemek yapılan bir spor değil."
   - item: U2-033
     sezdir:
       id: u2d06-033-z
@@ -150,6 +158,10 @@ steps:
       options: ["Athletes train very hard before the Olympics.", "I'm taking the train to Ankara.", "The train is late again.", "We missed the last train."]
       answer: 0
       explain: "Burada train = antrenman yapmak (fiil). Diğer cümlelerde train = tren (isim)."
+      why_wrong:
+        - "Burada \"the train\" bir isim: tren. Asıl cümledeki \"trains\" ise antrenman yapmak."
+        - "\"The train is late\" cümlesinde train trendir, antrenman değil."
+        - "\"The last train\" son tren demek; fiil değil, isim."
   - item: U2-034
     sezdir:
       id: u2d06-034-z
@@ -175,6 +187,10 @@ steps:
       options: ["He looks fit.", "He looks ill.", "He looks lazy.", "He looks bored."]
       answer: 0
       explain: "Ece \"you look strong and healthy\" diyor: yani Kaan formda görünüyor (looks fit)."
+      why_wrong:
+        - "\"Ill\" hasta demek; Ece \"healthy\" diyor."
+        - "\"Lazy\" tembel demek; iki hafta spor salonuna giden biri tembel değil."
+        - "\"Bored\" sıkılmış demek; Ece Kaan'ın duygusundan değil görünüşünden söz ediyor."
   - item: U2-035
     sezdir:
       id: u2d06-035-z
@@ -200,6 +216,10 @@ steps:
       options: ["energetic", "lazy", "laid-back", "patient"]
       answer: 0
       explain: "Sabah koşu, basketbol ve akşam dans: Kaan enerjik (energetic)."
+      why_wrong:
+        - "\"Lazy\" tembel demek; sabahtan akşama durmayan Kaan bunun tam tersi."
+        - "\"Laid-back\" rahat, telaşsız demek; metin Kaan'ın enerjisini anlatıyor."
+        - "\"Patient\" sabırlı demek; metinde beklemek ya da sabır ipucu yok."
   - item: U2-036
     sezdir:
       id: u2d06-036-z
@@ -224,6 +244,10 @@ steps:
       options: ["tennis singles", "basketball", "football", "volleyball"]
       answer: 0
       explain: "Soru takım sporu OLMAYANI soruyor. Tek kişilik tenis (singles) bireysel spordur; diğerleri takım sporudur."
+      why_wrong:
+        - "Basketbol takımla oynanır; takım sporudur."
+        - "Futbol takımla oynanır; takım sporudur."
+        - "Voleybol takımla oynanır; takım sporudur. Soru takım sporu OLMAYANI istiyor."
 
 review:
   - id: u2d06-r01
@@ -283,6 +307,10 @@ review:
     options: ["She doesn't mind practising at either house.", "She can't stand practising.", "She is keen on practising at Elif's house.", "She dislikes Elif's house."]
     answer: 0
     explain: "\"Both are OK for me\" = ikisi de olur; hangisinde çalışacağı fark etmez (doesn't mind)."
+    why_wrong:
+      - "\"Can't stand\" dayanamamak demek; Duru provayı reddetmiyor, iki ev de ona uygun."
+      - "Duru Elif'in evini seçmiyor; \"both are OK for me\" diyor."
+      - "\"Dislikes\" sevmemek demek; Duru Elif'in evinin de \"OK\" olduğunu söylüyor."
 
 tips:
   - type: tuzak

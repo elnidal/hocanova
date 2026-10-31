@@ -105,6 +105,10 @@ steps:
       options: ["calm", "nervous", "lazy", "mean"]
       answer: 0
       explain: "Yangın alarmında herkes kaçıp bağırırken Defne yavaşça çıkıyor ve korkmuyor: sakin (calm)."
+      why_wrong:
+        - "Tam tersi: \"nervous\" gergin demek, Defne ise \"wasn't afraid at all\"."
+        - "Yavaş yürümek tembellik değil; metin Defne'nin sakinliğini anlatıyor."
+        - "\"Mean\" kaba demek; metinde Defne'nin kimseye kötü davrandığı yazmıyor."
   - item: U1-080
     sezdir:
       id: d14-080-z
@@ -130,6 +134,10 @@ steps:
       options: ["What is your brother like?", "What does your brother like?", "Where is your brother?", "How old is your brother?"]
       answer: 0
       explain: "Cevap kişiliği anlatıyor; bunu \"What is he like?\" sorar. \"What does he like?\" neyi sevdiğini sorar."
+      why_wrong:
+        - "\"What does he like?\" neyi sevdiğini sorar; cevap ise kişiliği anlatıyor."
+        - "\"Where\" yer sorar; \"He's outgoing\" bir yer bilgisi değil."
+        - "\"How old\" yaş sorar; cevapta yaş yok, kişilik var."
   - item: U1-085
     sezdir:
       id: d14-085-z
@@ -156,6 +164,10 @@ steps:
       options: ["patient", "unreliable", "mean", "outgoing"]
       answer: 0
       explain: "Hiç kızmayıp konuyu tekrar tekrar anlatan öğretmen sabırlıdır: patient."
+      why_wrong:
+        - "\"Unreliable\" güvenilmez demek; konuyu tekrar tekrar anlatan öğretmen güvenilirdir."
+        - "\"Mean\" kaba demek; metinde \"never gets angry\" yazıyor."
+        - "\"Outgoing\" dışa dönük demek; metin sabrı anlatıyor, sosyal olmayı değil."
   - item: U1-086
     sezdir:
       id: d14-086-z
@@ -180,6 +192,10 @@ steps:
       options: ["birthday", "patient", "calm", "honest"]
       answer: 0
       explain: "Soru kişilik özelliği OLMAYANI soruyor. Doğum günü (birthday) bir özellik değil, bir gündür; patient, calm, honest kişilik özellikleridir."
+      why_wrong:
+        - "\"Patient\" sabırlı demek; bir kişilik özelliğidir."
+        - "\"Calm\" sakin demek; bir kişilik özelliğidir."
+        - "\"Honest\" dürüst demek; o da kişilik özelliği. Soru OLMAYANI istiyor."
   - item: U1-087
     sezdir:
       id: d14-087-z
@@ -204,6 +220,10 @@ steps:
       options: ["What is she like?", "What does she look like?", "How old is she?", "Where does she live?"]
       answer: 0
       explain: "\"What does she look like?\" dış görünüşü sorar; kişiliği \"What is she like?\" sorar."
+      why_wrong:
+        - "\"What does she look like?\" dış görünüşü sorar; kişiliği değil."
+        - "\"How old\" yaşı sorar; kişilik hakkında bilgi vermez."
+        - "\"Where does she live?\" adresi sorar; kişilikle ilgisi yok."
   - item: U1-093
     sezdir:
       id: d14-093-z
@@ -229,6 +249,10 @@ steps:
       options: ["understanding", "stubborn", "mean", "unreliable"]
       answer: 0
       explain: "Bardağı kıran Mert'e annesi kızmıyor, \"kaza oldu\" diyor: anlayışlı (understanding)."
+      why_wrong:
+        - "\"Stubborn\" inatçı demek; annenin sakin cevabında inat yok."
+        - "\"Mean\" kaba demek; anne \"didn't shout\" ve Mert'i suçlamıyor."
+        - "\"Unreliable\" güvenilmez demek; metinde sözünü tutmamakla ilgili bilgi yok."
 
 review:
   - id: d14-r01
@@ -287,6 +311,10 @@ review:
     options: ["They have a lot in common.", "They argue a lot.", "They have nothing to do.", "They don't get on well."]
     answer: 0
     explain: "Köpekleri, gitarı ve pazartesi nefretini paylaşıyorlar: çok ortak noktaları var."
+    why_wrong:
+      - "Metinde tartışma yok; Elif yalnız ortak yönlerini sayıyor."
+      - "\"Have nothing to do\" yapacak işi olmamak demek; konu ortak yönler."
+      - "Tam tersi: bu kadar ortak yönü olan iki arkadaş iyi anlaşır."
   - id: d14-r08
     type: dialogue_complete
     item: U1-039
@@ -296,6 +324,10 @@ review:
     options: ["let me introduce you to", "let me apologise to", "I don't want to meet", "I can't reply to"]
     answer: 0
     explain: "Birini tanıştırırken \"let me introduce you to + kişi\" denir. Elif \"Nice to meet you\" diyerek karşılık veriyor."
+    why_wrong:
+      - "Ece özür dilemiyor; Elif'in \"Nice to meet you\" cevabı tanışmayı gösteriyor."
+      - "Tam tersi: tanışmak istemeyen biri ardından \"She's my close friend\" diye tanıtmaz."
+      - "\"Reply\" mesaja cevap vermek demek; burada yüz yüze tanıştırma var."
   - id: d14-r09
     type: situation
     item: U1-034
@@ -305,6 +337,10 @@ review:
     options: ["They get on well.", "They don't speak to each other.", "They are angry with each other.", "They feel alone."]
     answer: 0
     explain: "Yeniden arkadaş olup tartışmayı bıraktılar: iyi anlaşıyorlar (get on well)."
+    why_wrong:
+      - "Birlikte oynayıp gülen iki kişi birbiriyle konuşuyor."
+      - "Metinde \"don't argue anymore\" yazıyor; artık kızgın değiller."
+      - "Birlikte futbol oynayan iki arkadaş yalnız değil."
   - id: d14-r10
     type: gap_fill
     item: U1-029

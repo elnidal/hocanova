@@ -102,6 +102,10 @@ steps:
       options: ["Nice to meet you, Elif!", "Sorry, I can't.", "No, thanks. I'm full.", "That's not fair!"]
       answer: 0
       explain: "Biri yeni arkadaşını tanıştırınca verilecek cevap \"Nice to meet you!\" (Tanıştığıma memnun oldum)."
+      why_wrong:
+        - "\"Sorry, I can't\" bir daveti reddeder; tanıştırılan birine söylenmez."
+        - "\"No, thanks. I'm full\" yemek teklifine verilir; tanışmayla ilgisi yok."
+        - "\"That's not fair!\" haksızlığa itiraz eder; tanıştırma anına uymaz."
   - item: U1-038
     sezdir:
       id: d07-038-z
@@ -127,6 +131,10 @@ steps:
       options: ["She is interested in space.", "She is afraid of space.", "She isn't interested in books.", "She wants to be a teacher."]
       answer: 0
       explain: "Elif gezegenler ve yıldızlar hakkında kitap okuyor ve astronot olmak istiyor: uzayla ilgileniyor (interested in space)."
+      why_wrong:
+        - "Tam tersi: uzaydan korkan biri astronot olmak istemez."
+        - "Elif \"I read books\" diyor; kitaplarla ilgilendiği açık."
+        - "Metinde öğretmenlik yok; Elif \"I want to be an astronaut\" diyor."
   - item: U1-036
     sezdir:
       id: d07-036-z
@@ -152,6 +160,10 @@ steps:
       options: ["They don't have much in common.", "They have a lot in common.", "They both love football.", "They both get up early."]
       answer: 0
       explain: "Can ve Mert'in sevdikleri birbirine zıt (futbol, yemek, uyku saati); bu yüzden \"don't have much in common\"."
+      why_wrong:
+        - "Tam tersi: futbol, yemek ve uyku saatinde Can ile Mert birbirine zıt."
+        - "Yalnız Can futbolu seviyor; \"Mert hates it\" yazıyor."
+        - "Erken kalkan yalnız Can; Mert \"sleeps until noon\"."
   - item: U1-034
     sezdir:
       id: d07-034-z
@@ -176,6 +188,10 @@ steps:
       options: ["They like each other and are good friends.", "They argue all the time.", "They live in the same street.", "They don't know each other."]
       answer: 0
       explain: "get on well = iyi anlaşmak. They like each other and are good friends."
+      why_wrong:
+        - "Tam tersi: \"get on well\" iyi anlaşmak demek, sürekli tartışmak değil."
+        - "Aynı sokakta oturmak metinde yok; \"get on well\" ilişkiyi anlatır, adresi değil."
+        - "İyi anlaşan iki kişi birbirini tanır; bu şık anlamla çelişiyor."
   - item: U1-042
     sezdir:
       id: d07-042-z
@@ -201,6 +217,10 @@ steps:
       options: ["I have the same opinion.", "I don't agree at all.", "Sorry, I can't hear it.", "It sounds terrible."]
       answer: 0
       explain: "Şarkıyı harika bulan Duru'ya Elif aynı şeyi düşündüğü için \"I have the same opinion.\" diyor."
+      why_wrong:
+        - "Elif şarkıya \"my favourite song\" diyor; katılmadığını söylemesi bununla çelişir."
+        - "Şarkıyı duymayan biri onun en sevdiği şarkı olduğunu ekleyemez."
+        - "\"Terrible\" berbat demek; en sevdiği şarkıya kimse böyle demez."
   - item: U1-029
     sezdir:
       id: d07-029-z
@@ -226,6 +246,10 @@ steps:
       options: ["They are chatting.", "They are arguing.", "They are sleeping.", "They are doing a test."]
       answer: 0
       explain: "Kantinde gülüp hafta sonundan konuşuyorlar: sohbet ediyorlar (are chatting)."
+      why_wrong:
+        - "Gülüp hafta sonunu konuşan iki kişi tartışmıyor, keyifle sohbet ediyor."
+        - "\"Laughing and talking\" yazıyor; uyuyan biri konuşamaz."
+        - "Kantinde sınav yapılmaz; metinde test bilgisi yok."
 
 review:
   - id: d07-r01

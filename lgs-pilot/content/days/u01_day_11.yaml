@@ -101,6 +101,10 @@ steps:
       options: ["telling the truth when it is difficult", "cheating in an exam", "telling lies to your teacher", "copying your friend's homework"]
       answer: 0
       explain: "Soru dürüstsüzlük örneği OLMAYANI soruyor. Zor olsa bile doğruyu söylemek dürüstlüktür; diğerleri hile ve yalandır."
+      why_wrong:
+        - "Sınavda kopya çekmek hiledir; bu bir dürüstsüzlük örneğidir."
+        - "Öğretmene yalan söylemek açık bir dürüstsüzlük örneğidir."
+        - "Arkadaşının ödevini kopyalamak da dürüstsüzlüktür; soru OLMAYANI istiyor."
   - item: U1-056
     sezdir:
       id: d11-056-z
@@ -125,6 +129,10 @@ steps:
       options: ["I'm tired. I want to lie down on the sofa.", "Don't lie to me!", "It was a big lie.", "He never tells lies."]
       answer: 0
       explain: "lie down = uzanmak. Diğer cümlelerde lie = yalan (söylemek)."
+      why_wrong:
+        - "Burada \"lie\" yalan söylemek demek: bana yalan söyleme."
+        - "Burada \"lie\" yalan demek (isim): büyük bir yalandı."
+        - "Burada da \"lie\" yalan demek: \"tells lies\" yalan söylemek."
   - item: U1-058
     sezdir:
       id: d11-058-z
@@ -150,6 +158,10 @@ steps:
       options: ["OK, I promise.", "I told a lie.", "Sorry, I'm full.", "I have a secret."]
       answer: 0
       explain: "Annesi \"seven'dan önce gel\" diyor; Kaan söz vererek cevap verir: OK, I promise."
+      why_wrong:
+        - "Annenin kuralına \"I told a lie\" cevabı uymaz; yalan söylemekten söz edilmiyor."
+        - "\"I'm full\" doymak demek; eve dönme saatiyle ilgisi yok."
+        - "Sırrı olduğunu söylemek, \"come home before seven\" isteğine cevap vermez."
   - item: U1-062
     sezdir:
       id: d11-062-z
@@ -175,6 +187,10 @@ steps:
       options: ["She wants Ece to keep a secret.", "She wants Ece to tell a lie.", "She wants Ece to break a promise.", "She wants Ece to invite Duru."]
       answer: 0
       explain: "Elif sürprizi anlatıyor ama Duru'ya söylenmemesini istiyor: Ece'den sır tutmasını bekliyor."
+      why_wrong:
+        - "Elif yalan istemiyor; yalnız \"please don't tell her\" diyor."
+        - "Ece daha söz vermedi; Elif sözün bozulmasını değil, sırrın saklanmasını istiyor."
+        - "Tuzak isim: sürpriz Duru için, ama Elif Ece'den onu davet etmesini istemiyor."
   - item: U1-065
     sezdir:
       id: d11-065-z
@@ -200,6 +216,10 @@ steps:
       options: ["dishonest", "honest", "reliable", "loyal"]
       answer: 0
       explain: "Takımda bile olmadığı hâlde kaptan olduğunu söyleyen Mert dürüst değildir: dishonest."
+      why_wrong:
+        - "Tam tersi: \"often tells lies\" diyen metin dürüst birini anlatmaz."
+        - "\"Reliable\" güvenilir demek; sık sık yalan söyleyen birine güvenilmez."
+        - "\"Loyal\" sadık demek; metin Mert'in sadakatinden değil, yalanlarından söz ediyor."
   - item: U1-066
     sezdir:
       id: d11-066-z
@@ -225,6 +245,10 @@ steps:
       options: ["Don't worry. I never tell secrets to others.", "Great! I'll tell everyone.", "Sure, I'll post it online.", "OK, but I'll tell my whole class."]
       answer: 0
       explain: "\"Promise you won't tell anyone\" diyen birine sırrı saklayacağını söyleyen cevap verilir: I never tell secrets to others."
+      why_wrong:
+        - "Selin \"Promise you won't tell anyone\" diyor; herkese anlatmak bununla çelişir."
+        - "İnternette paylaşmak söz verilen sırrı herkese duyurmak demek."
+        - "\"OK\" deyip bütün sınıfa anlatmak \"won't tell anyone\" sözünü bozar."
 
 review:
   - id: d11-r01
@@ -283,6 +307,10 @@ review:
     options: ["He kept his promise.", "He broke his promise.", "He told a lie.", "He refused the invitation."]
     answer: 0
     explain: "Bora geç geldi ama pastayı getirdi: sözünü tuttu (kept his promise)."
+    why_wrong:
+      - "Tam tersi: Bora geç kalsa da söylediği pastayı getirdi."
+      - "Bora \"I'll bring the cake\" dedi ve getirdi; söylediği doğru çıktı."
+      - "Bora partiye geldi; daveti reddetmedi."
   - id: d11-r08
     type: trait_match
     item: U1-092
@@ -292,6 +320,10 @@ review:
     options: ["supportive", "mean", "unreliable", "dishonest"]
     answer: 0
     explain: "\"I believe in you!\" diyen Selin cesaret veriyor: supportive (destekleyici)."
+    why_wrong:
+      - "\"Mean\" kaba demek; \"I believe in you!\" diyen biri kaba değil."
+      - "\"Unreliable\" güvenilmez demek; metinde sözünü tutmamakla ilgili bilgi yok."
+      - "\"Dishonest\" yalancı demek; Selin'in mesajında yalan yok, cesaret var."
   - id: d11-r09
     type: odd_one_out
     item: U1-050
@@ -300,6 +332,10 @@ review:
     options: ["He said he would come, but he didn't.", "She did everything she said.", "He never tells anyone my secrets.", "She helped me with my homework."]
     answer: 0
     explain: "Söz bozmak: \"He said he would come, but he didn't.\" Diğer cümleler sözü tutmayı ve yardımı anlatır."
+    why_wrong:
+      - "Söylediği her şeyi yapan biri sözünü tutmuştur, bozmamıştır."
+      - "Bu sır tutmayı anlatıyor; söz bozmak değil."
+      - "Bu yardım etmeyi anlatıyor; verilen bir söz ve bozulması yok."
 
 tips:
   - type: tuzak

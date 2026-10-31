@@ -106,6 +106,10 @@ steps:
       options: ["Bora", "Kaan", "Ece", "Duru"]
       answer: 0
       explain: "Karate bireysel bir sporudur; basketbol ve voleybol takım sporu. Duru spor yapmıyor."
+      why_wrong:
+        - "Basketbol bir takım sporudur."
+        - "Voleybol bir takım sporudur."
+        - "Duru \"I don't do sports\" demiş; hiçbir spor seçmemiş."
   - item: U2-038
     sezdir:
       id: u2d07-038-z
@@ -131,6 +135,10 @@ steps:
       options: ["I do karate.", "I play the guitar.", "I go hiking.", "I sleep until noon."]
       answer: 0
       explain: "\"What colour is your belt?\" kuşak renginden söz ediyor; karate yapıyor: I do karate."
+      why_wrong:
+        - "Gitarın kuşağı olmaz; Mert'in \"belt\" sorusu karateyi gösterir."
+        - "Doğa yürüyüşünde kuşak rengi sorulmaz; ipucu \"What colour is your belt?\""
+        - "Öğlene kadar uyuyan birine \"Cool! What colour is your belt?\" denmez."
   - item: U2-039
     sezdir:
       id: u2d07-039-z
@@ -156,6 +164,10 @@ steps:
       options: ["go hiking", "do karate", "go shopping", "play a team sport"]
       answer: 0
       explain: "İyi ayakkabı, su, şapka ve 8 km orman yürüyüşü: hiking (doğa yürüyüşü)."
+      why_wrong:
+        - "Karate için ormanda 8 km yürünmez; ipuçları doğa yürüyüşünü gösteriyor."
+        - "Alışverişe ormanda yürüyerek gidilmez; \"through the forest\" doğa yürüyüşüdür."
+        - "Takım sporu için top ya da takım ipucu yok; aile ormanda yürüyecek."
   - item: U2-040
     sezdir:
       id: u2d07-040-z
@@ -180,6 +192,10 @@ steps:
       options: ["After the long walk, we stopped to rest.", "Kaan ate half of the pizza, and Bora ate the rest.", "I'll tell you the rest of the story tomorrow.", "Duru was at home for the rest of the day."]
       answer: 0
       explain: "Burada rest = dinlenmek. Diğer cümlelerde the rest = geri kalan."
+      why_wrong:
+        - "\"Ate the rest\" pizzanın geri kalanını yedi demek; dinlenmek değil."
+        - "\"The rest of the story\" hikâyenin geri kalanı demek."
+        - "\"The rest of the day\" günün geri kalanı demek; dinlenmek anlamı yok."
   - item: U2-041
     sezdir:
       id: u2d07-041-z
@@ -205,6 +221,10 @@ steps:
       options: ["Bora, pay attention, please!", "Bora, have a rest, please!", "Well done, Bora!", "Bora, you look fit!"]
       answer: 0
       explain: "Pencereden bakan Bora'ya \"dikkat et\" denir: pay attention, please!"
+      why_wrong:
+        - "\"Have a rest\" dinlen demek; dersi dinlemeyen birine bu söylenmez."
+        - "\"Well done\" tebrik etmektir; pencereden bakan Bora tebriki hak eden bir şey yapmıyor."
+        - "\"You look fit\" görünüşü övmektir; sorun Bora'nın dikkatsizliği."
   - item: U2-042
     sezdir:
       id: u2d07-042-z
@@ -230,6 +250,10 @@ steps:
       options: ["annoyed", "relaxed", "proud", "thankful"]
       answer: 0
       explain: "40 dakika soğukta bekleyen Ece kızgın ve rahatsız: annoyed."
+      why_wrong:
+        - "\"Relaxed\" rahat demek; 😤 ve büyük harfle \"AGAIN\" kızgınlığı gösteriyor."
+        - "\"Proud\" gururlu demek; kırk dakika bekletilen biri gurur duymaz."
+        - "\"Thankful\" minnettar demek; Ece teşekkür etmiyor, şikâyet ediyor."
 
 review:
   - id: u2d07-r01
@@ -288,6 +312,10 @@ review:
     options: ["The café is too noisy.", "The café is too quiet.", "The café is closed.", "The library is noisy."]
     answer: 0
     explain: "Yüksek müzik, ağlayan bebek ve konuşan insanlar: kafe çok gürültülü (too noisy)."
+    why_wrong:
+      - "Tam tersi: yüksek müzik, ağlayan bebek ve yirmi kişi kafeyi gürültülü yapıyor."
+      - "Kafe açık; Selin ve Ece zaten oradalar."
+      - "Selin sessiz bir yer için kütüphaneyi öneriyor; metinde kütüphane gürültülü değil."
 
 tips:
   - type: tuzak

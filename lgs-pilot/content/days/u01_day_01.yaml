@@ -88,6 +88,10 @@ steps:
       options: ["Would you like to watch a film with us tonight?", "What did you watch last night?", "Do you like your new phone?", "Where were you yesterday?"]
       answer: 0
       explain: "Duru \"I'd love to\" diyerek bir daveti kabul ediyor; demek ki boşlukta bir davet var."
+      why_wrong:
+        - "Duru'nun \"I'd love to\" cevabı bir daveti kabul eder; geçmişte ne izlendiğini soran bir soruya uymaz."
+        - "\"Do you like…?\" fikir sorar; \"I'd love to\" ise davete verilen cevaptır."
+        - "\"Where were you?\" yer sorar; \"What time does it start?\" de bir etkinlik olduğunu gösteriyor."
   - item: U1-008
     sezdir:
       id: d01-008-z
@@ -113,6 +117,10 @@ steps:
       options: ["giving a suggestion", "asking for homework help", "saying sorry", "talking about the weather"]
       answer: 0
       explain: "How about… = öneri (suggestion)."
+      why_wrong:
+        - "Mesajda ödevden hiç söz edilmiyor; \"How about bringing…?\" bir öneri kalıbıdır."
+        - "Selin özür dilemiyor; mesajda \"sorry\" gibi bir ifade yok."
+        - "Mesajda hava durumuyla ilgili bir bilgi yok; konu parti ve meyve suyu."
   - item: U1-013
     sezdir:
       id: d01-013-z
@@ -138,6 +146,10 @@ steps:
       options: ["Ece is planning a party.", "Kaan is having a party.", "The party is on Saturday.", "Ece doesn't want her classmates at the party."]
       answer: 0
       explain: "Mesajda Ece \"I'm having a party\" ve \"I'm inviting all our classmates\" diyor: parti planlayan Ece'dir. Partiyi veren Kaan değil, gün de Friday (Cuma)."
+      why_wrong:
+        - "Tuzak isim değişimi: partiyi veren Ece (\"I'm having a party\"), Kaan ise davet edilen kişi."
+        - "Gün yanlış: mesajda \"on Friday\" yazıyor, Saturday değil."
+        - "Tam tersi: Ece \"I'm inviting all our classmates\" diyor, yani sınıf arkadaşlarını istiyor."
   - item: U1-012
     sezdir:
       id: d01-012-z
@@ -163,6 +175,10 @@ steps:
       options: ["The party is on Thursday.", "Ece is going to be 14.", "The party is at Ece's house.", "Guests should reply before Friday."]
       answer: 0
       explain: "Parti cumartesi; perşembe cevap vermek için son gün."
+      why_wrong:
+        - "Bu doğru bir bilgi: \"14th birthday party\" Ece'nin 14 yaşına gireceğini gösteriyor."
+        - "Bu doğru bir bilgi: \"Where: Ece's house\" yazıyor."
+        - "Bu doğru bir bilgi: \"reply by Thursday\" cuma gününden önce cevap vermek demek."
   - item: U1-001
     sezdir:
       id: d01-001-z
@@ -188,6 +204,10 @@ steps:
       options: ["Sure, I'd love to.", "Sorry, I'm busy.", "No, I can't.", "Maybe next year."]
       answer: 0
       explain: "\"What should I bring?\" (Ne getireyim?) diyen kişi daveti kabul etmiştir. Doğru cevap \"Sure, I'd love to.\"; diğerleri red ya da belirsiz yanıttır."
+      why_wrong:
+        - "\"Sorry, I'm busy\" bir red cümlesi; ardından \"What should I bring?\" diye sorulmaz."
+        - "\"No, I can't\" daveti reddeder; oysa Kaan ne getireceğini soruyor."
+        - "\"Maybe next year\" belirsiz bir erteleme; partiye gelmeyen biri ne getireceğini sormaz."
   - item: U1-011
     sezdir:
       id: d01-011-z
@@ -213,6 +233,10 @@ steps:
       options: ["I'd love to!", "I'm sorry, I can't.", "I don't like parks.", "I went there yesterday."]
       answer: 0
       explain: "Arkasından \"I'll bring some snacks\" geliyor: Duru geliyor, yani kabul ediyor."
+      why_wrong:
+        - "\"I'm sorry, I can't\" reddeder; ama \"I'll bring some snacks\" Duru'nun geleceğini gösteriyor."
+        - "Parkı sevmeyen biri ardından atıştırmalık getireceğini söylemez; cevap öneriyle çelişiyor."
+        - "Dün gittiğini söylemek öneriyi kabul etmez; \"I'll bring some snacks\" ile bağ kurmuyor."
 
 review: []
 
