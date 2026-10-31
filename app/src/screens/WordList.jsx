@@ -39,7 +39,7 @@ export default function WordList({ units, startUnit, onExit }) {
       {unit && (
         <article className="card printable">
           <h2>Ünite {unit.unit} · <span lang="en">{unit.title}</span> · {first10 ? 'ilk 10 gün' : 'tüm kelimeler'}</h2>
-          <p className="muted small">{total} ifade · HikayEnglish LGS Kelime Koçu</p>
+          <p className="muted small">{total} ifade · Hoca Nova · LGS İngilizce</p>
           {groups.map(g => (
             <section key={g.title} className="wl-group">
               <h3>{g.title}</h3>

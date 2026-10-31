@@ -1,11 +1,11 @@
-// HikayEnglish logosunu canvas'a çizer (paylaşım kartı ve marka dosyaları için). Arayüzdeki Logo.jsx ile aynı renk mantığı.
+// Hoca Nova yazı logosunu canvas'a çizer (paylaşım kartı ve marka dosyaları için). Arayüzdeki Logo.jsx ile aynı renk mantığı.
 import { OWL, OWL_DEFS } from './owlArt.js'
 
 export const FONT = '"Bricolage Grotesque Variable","Trebuchet MS",system-ui,sans-serif'
 export const LIGHT = { a: '#1B1E3A', e: '#F0614A', c: '#3B4BD8' }   // açık zemin
 export const DARK = { a: '#FFFFFF', e: '#FF8A75', c: '#A9B3FF' }    // koyu zemin
 
-const PARTS = [['Hikay', 'a', 1], ['E', 'e', 1.12], ['nglish', 'c', 1]]
+const PARTS = [['Hoca ', 'a', 1], ['N', 'e', 1.12], ['ova', 'c', 1]]
 
 function star(ctx, cx, cy, r, color) {
   ctx.fillStyle = color; ctx.beginPath()

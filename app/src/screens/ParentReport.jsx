@@ -27,7 +27,7 @@ export default function ParentReport({ index, state, onExit, dispatch, remote = 
       </div>
       {!remote && enabled && <ShareParent token={state.parentToken} dispatch={dispatch} />}
       <article className="card printable report-body">
-        <div className="eyebrow"><span lang="en">HikayEnglish</span> · LGS Kelime Koçu · Veli raporu</div>
+        <div className="eyebrow">Hoca Nova · LGS İngilizce · Veli raporu</div>
         <h1>{nick}{state.profile?.group ? ` · ${state.profile.group}` : ''}</h1>
         <p className="muted small">Tarih: {r.date} · Son 7 günün özeti</p>
 
@@ -81,7 +81,7 @@ function ShareParent({ token, dispatch }) {
   const create = () => run(async () => { const t = makeToken(); await createParentLink(t); dispatch({ type: 'parentToken', token: t }) })
   const revoke = () => run(async () => { await revokeParentLinks(); dispatch({ type: 'parentToken', token: null }) })
   const share = () => run(async () => {
-    if (navigator.share) { try { await navigator.share({ title: 'Hikayenglish veli raporu', url }) } catch { /* vazgeçildi */ } }
+    if (navigator.share) { try { await navigator.share({ title: 'Hoca Nova veli raporu', url }) } catch { /* vazgeçildi */ } }
     else { await navigator.clipboard.writeText(url); setMsg('Bağlantı kopyalandı ✓') }
   })
   return (

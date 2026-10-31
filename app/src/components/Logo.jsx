@@ -1,10 +1,10 @@
 import NovaAvatar from './NovaAvatar.jsx'
 
-// HikayEnglish: üç renkli yazı logosu ("Hikay" koyu, "E" mercan + altın parıltı, "nglish" mavi). big=true: renkli büyük sürüm.
+// Hoca Nova: üç renkli yazı logosu ("Hoca" koyu, "N" mercan + altın parıltı, "ova" mavi). big=true: renkli büyük sürüm.
 export default function Logo({ big = false }) {
   return (
-    <span className={`logo${big ? ' big' : ''}`} aria-label="HikayEnglish">
-      <span className="lg-a">Hikay</span><b>E</b><span className="lg-c">nglish</span>
+    <span className={`logo${big ? ' big' : ''}`} aria-label="Hoca Nova">
+      <span className="lg-a">Hoca&nbsp;</span><b>N</b><span className="lg-c">ova</span>
     </span>
   )
 }
@@ -16,7 +16,7 @@ export function LogoLockup() {
       <NovaAvatar size={56} />
       <div>
         <h1 className="lockup-word"><Logo big /></h1>
-        <div className="lockup-tag">LGS Kelime Koçu</div>
+        <div className="lockup-tag">LGS İngilizce</div>
       </div>
     </div>
   )

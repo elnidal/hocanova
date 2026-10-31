@@ -8,8 +8,8 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'Hikayenglish LGS Kelime Koçu',
-        short_name: 'Kelime Koçu',
+        name: 'Hoca Nova · LGS İngilizce',
+        short_name: 'Hoca Nova',
         lang: 'tr',
         display: 'standalone',
         background_color: '#f1f0f8',

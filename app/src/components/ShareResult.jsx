@@ -13,8 +13,8 @@ export default function ShareResult({ kind, title, from, to }) {
     try { const b = await drawCard({ kind, title, from, to }); setBlob(b); setUrl(URL.createObjectURL(b)) } finally { setBusy(false) }
   }
   const share = async () => {
-    const file = new File([blob], 'hikayenglish-sonuc.png', { type: 'image/png' })
-    if (navigator.canShare?.({ files: [file] })) { try { await navigator.share({ files: [file], text: 'HikayEnglish ile LGS kelimelerini çalışıyorum 🦉' }) } catch { /* vazgeçildi */ } return }
+    const file = new File([blob], 'hoca-nova-sonuc.png', { type: 'image/png' })
+    if (navigator.canShare?.({ files: [file] })) { try { await navigator.share({ files: [file], text: 'Hoca Nova ile LGS İngilizceye hazırlanıyorum 🦉 lgsingilizce.app' }) } catch { /* vazgeçildi */ } return }
     const a = document.createElement('a'); a.href = url; a.download = file.name; a.click()
   }
   return (
