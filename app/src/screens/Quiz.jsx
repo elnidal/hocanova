@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { shuffleOptions, isCorrect } from '../engine'
+import { shuffleOptions, isCorrect, wrongReason } from '../engine'
 import { pct } from '../quiz.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
@@ -84,6 +84,7 @@ export default function Quiz({ kind, title, questions, items, before, dispatch, 
                 <p className="small">Cevabın: <b>{answers[q.id] === -1 ? 'Bilmiyorum' : q.options[answers[q.id]]}</b></p>
                 <p className="small ok">Doğrusu: <b>{q.options[q.correctIndex]}</b></p>
                 {q.explain && <div className="explain">{q.explain}</div>}
+                {wrongReason(q, q.options[answers[q.id]]) && <div className="explain why">🤔 <b>Senin şıkkın neden olmadı:</b> {wrongReason(q, q.options[answers[q.id]])}</div>}
               </div>
             ))}
           </details>

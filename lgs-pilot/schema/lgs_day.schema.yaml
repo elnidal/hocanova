@@ -91,6 +91,7 @@ $defs:
       options: { type: array, items: { type: string }, minItems: 3, maxItems: 4 }
       answer: { type: integer, minimum: 0, maximum: 3 }
       explain: { type: string }     # cevaptan sonra 1 cümlelik açıklama
+      why_wrong: { type: array, items: { type: string }, minItems: 2, maxItems: 3 }  # yanlış şıkların (options[1:]) sırasıyla neden yanlış olduğu
       item: { $ref: "#/$defs/itemId" }   # review sorularında hangi birimi yokladığı
       lgs_like: { type: boolean }   # LGS biçimine yakın soru
       stem_id: { type: string, pattern: "^S[0-9]{2}$" }   # lgs-kaynak/exam/sinav_dili.yaml soru kökü

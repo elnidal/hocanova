@@ -52,8 +52,18 @@ export function shuffleOptions(q, rng = Math.random) {
     const j = Math.floor(rng() * (i + 1));
     [order[i], order[j]] = [order[j], order[i]]
   }
-  return { ...q, options: order.map(i => q.options[i]), correctIndex: order.indexOf(q.answer ?? 0) }
+  return { ...q, options: order.map(i => q.options[i]), correctIndex: order.indexOf(q.answer ?? 0), whyWrong: whyMap(q) }
 }
+
+/** why_wrong (yanlış şıklar sırasıyla) → şık metni → açıklama. */
+const whyMap = q => {
+  if (q.whyWrong || !q.why_wrong) return q.whyWrong // karıştırılmış soruda eşleme hazır
+  const wrong = q.options.filter((_, i) => i !== (q.answer ?? 0))
+  return Object.fromEntries(wrong.map((o, k) => [o, q.why_wrong[k]]).filter(([, r]) => r))
+}
+
+/** Seçilen yanlış şıkkın neden yanlış olduğu (karıştırılmış ya da ham soruda); yoksa null. */
+export const wrongReason = (q, optionText) => (optionText == null ? null : whyMap(q)?.[optionText] || null)
 
 /** Kelimenin alıştırma sorusu: types sırasıyla ilk bulunan tip. */
 export const drillFor = (index, itemId, types) => {

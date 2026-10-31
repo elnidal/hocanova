@@ -233,3 +233,14 @@ test('lessonMinutes: hikâyeli günde hikâye sayılmaz, hafif modda içerikteki
   assert.equal(lessonMinutes({ new_items: ['a', 'b', 'c', 'd', 'e', 'f'], review: [], est_minutes: 9 }), 9)
   assert.equal(lessonMinutes({ mode: 'light', new_items: ['a'], est_minutes: 6 }), 6)
 })
+
+test('why_wrong: karıştırılmış ve ham soruda seçilen yanlış şıkkın açıklaması', async () => {
+  const { shuffleOptions, wrongReason, mulberry32 } = await import('./index.js')
+  const q = { options: ['doğru', 'y1', 'y2', 'y3'], answer: 0, why_wrong: ['bir', 'iki', 'üç'] }
+  const s = shuffleOptions(q, mulberry32(5))
+  assert.equal(wrongReason(s, 'y2'), 'iki')
+  assert.equal(wrongReason(q, 'y3'), 'üç')
+  assert.equal(wrongReason(q, 'doğru'), null)
+  assert.equal(wrongReason({ options: ['a', 'b'] }, 'b'), null)
+  assert.equal(wrongReason(q, null), null)
+})

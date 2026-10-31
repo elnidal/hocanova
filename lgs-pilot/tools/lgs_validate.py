@@ -39,6 +39,8 @@ def check_question(where, q, ids_seen):
     ids_seen.add(q["id"])
     if q["answer"] >= len(q["options"]): engel(where, "SORU", f"{q['id']}: cevap indeksi dışarıda")
     if len(set(q["options"])) != len(q["options"]): engel(where, "SORU", f"{q['id']}: aynı şık iki kez")
+    if "why_wrong" in q and len(q["why_wrong"]) != len(q["options"]) - 1:
+        engel(where, "SORU", f"{q['id']}: why_wrong {len(q['why_wrong'])} açıklama, yanlış şık {len(q['options']) - 1}")
 
 def main():
     items = {}

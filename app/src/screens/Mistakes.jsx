@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { mistakeList } from '../mistakes.js'
+import { wrongReason } from '../engine'
 import Coach from '../components/Coach.jsx'
 import RichText from '../components/RichText.jsx'
 
@@ -35,6 +36,7 @@ export default function Mistakes({ state, qIndex, items, onFlash, onExit }) {
             {m.chosen && <p className="small no-line">Senin cevabın: <b>{m.chosen}</b></p>}
             <p className="small ok">Doğrusu: <b>{q.options[q.answer ?? 0]}</b></p>
             {q.explain && <div className="explain">{q.explain}</div>}
+            {wrongReason(q, m.chosen) && <div className="explain why">🤔 <b>Senin şıkkın neden olmadı:</b> {wrongReason(q, m.chosen)}</div>}
           </section>
         )
       })}

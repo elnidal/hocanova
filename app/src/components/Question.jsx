@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react'
-import { hintFor, hintCollapsed } from '../engine'
+import { hintFor, hintCollapsed, wrongReason } from '../engine'
 import { HintCtx } from '../hintContext.js'
 import RichText from './RichText.jsx'
 import ReportIssue from './ReportIssue.jsx'
@@ -59,6 +59,7 @@ export default function Question({ q, mode = 'test', onAnswer, onNext, last, ext
         <div aria-live="polite">
           <p className={`fb ${ok ? 'ok' : 'no'}`}>{ok ? 'Doğru!' : 'Neredeyse. Doğrusu yeşil olan.'}</p>
           {q.explain && <div className="explain">{q.explain}</div>}
+          {!ok && picked >= 0 && wrongReason(q, q.options[picked]) && <div className="explain why">🤔 <b>Senin şıkkın neden olmadı:</b> {wrongReason(q, q.options[picked])}</div>}
           {extra}
           <ReportIssue key={q.id} q={q} screen={mode} />
         </div>
