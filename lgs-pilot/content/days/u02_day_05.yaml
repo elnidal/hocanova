@@ -355,3 +355,35 @@ notifications:
 
 editor:
   z07: {U2-025: BEKLIYOR, U2-026: BEKLIYOR, U2-027: BEKLIYOR, U2-028: BEKLIYOR, U2-029: BEKLIYOR, U2-030: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-025
+    durum: "Selin pazar kahvaltısını anlatıyor."
+    lines:
+      - { speaker: "Selin", text: "Babam pazar sabahları keman ve piyanolu uzun eserler açar. {U2-025|Classical music} olmadan kahvaltı olmaz." }
+      - { speaker: "Ece", text: "Bizim evde kahvaltı müziği çaydanlığın düdüğü." }
+  - item: U2-026
+    durum: "Selin bayramda dedesinin evini anlatıyor."
+    lines:
+      - { speaker: "Selin", text: "Dedem bağlamasını eline alınca bütün aile köy türkülerine eşlik eder. {U2-026|Folk music} bizim bayram sesimiz." }
+      - { speaker: "Elif", text: "Bana da bir tane öğretsin!" }
+  - item: U2-027
+    durum: "Selin, ağabeyi Emre'nin dinlediklerini taklit ediyor."
+    lines:
+      - { speaker: "Selin", text: "Emre'nin şarkılarında melodi az, söz çok: hızlı hızlı konuşma ve arkada ritim. {U2-027|Rap}!" }
+      - { speaker: "Kaan", text: "MC Kuzey gibi! Nefes almadan konuşuyor." }
+  - item: U2-028
+    durum: "Provada Duru amfinin düğmesini sonuna kadar çeviriyor."
+    lines:
+      - { speaker: "Elif", text: "Duru, çok {U2-028|loud}! Kendi sesimi duyamıyorum." }
+      - { speaker: "Duru", text: "Pardon! Biraz kısıyorum." }
+  - item: U2-029
+    durum: "Provadan sonra Ece ve Selin kantine giriyor."
+    lines:
+      - { speaker: "Ece", text: "Herkes aynı anda bağırıyor, tabaklar şangırdıyor. Kantin bugün çok {U2-029|noisy}." }
+      - { speaker: "Selin", text: "Kulaklarım hâlâ provada!" }
+  - item: U2-030
+    durum: "Duru'nun telefonu provada durmadan bip bip ötüyor."
+    lines:
+      - { speaker: "Duru", text: "Her iki dakikada bir bip! Bu ses çok {U2-030|annoying}." }
+      - { speaker: "Elif", text: "Sessize al; prova bitince bakarsın." }

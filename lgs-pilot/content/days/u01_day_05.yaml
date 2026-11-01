@@ -350,3 +350,35 @@ notifications:
 
 editor:
   z07: {U1-079: BEKLIYOR, U1-084: BEKLIYOR, U1-083: BEKLIYOR, U1-071: BEKLIYOR, U1-097: BEKLIYOR, U1-099: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-079
+    durum: "Dans yarışması başlamak üzere; herkes koşturuyor, Duru kanepede."
+    lines:
+      - { speaker: "Kaan", text: "Herkes hazırlanıyor, sen hâlâ uzanıyorsun!" }
+      - { speaker: "Duru", text: "Ben {U1-079|laid-back} biriyim. Acele yok, dans kaçmaz." }
+  - item: U1-084
+    durum: "Ege partiye ilk kez geldi ama hemen herkesle konuşuyor."
+    lines:
+      - { speaker: "Selin", text: "Ege beş dakikada herkesle tanıştı; çok {U1-084|outgoing}." }
+      - { speaker: "Ece", text: "Kuzenim öyle: asansörde bile yeni insanlarla konuşur." }
+  - item: U1-083
+    durum: "Ege son kurabiyeyi kimseye vermiyor."
+    lines:
+      - { speaker: "Kaan", text: "Ege, bir ısırık bile yok mu? Bu çok {U1-083|mean}!" }
+      - { speaker: "Ege", text: "Tamam, tamam… yarım ısırık." }
+  - item: U1-071
+    durum: "Duru tavuk dansı yarışmasının hakemi."
+    lines:
+      - { speaker: "Duru", text: "Kuzen de olsa, en eski dostum da olsa; puan herkese aynı." }
+      - { speaker: "Ece", text: "Haklı. Duru çok {U1-071|fair} bir hakem." }
+  - item: U1-097
+    durum: "Ece'nin annesi Bora'ya bir dilim pasta daha uzatıyor."
+    lines:
+      - { speaker: "Bora", text: "Teşekkürler ama hayır. <en>I'm {U1-097|full}.</en>" }
+      - { speaker: "Ece'nin annesi", text: "Üç dilim yedin, haklısın!" }
+  - item: U1-099
+    durum: "Kaan beşinci dilim pastadan sonra kanepeye yığılıyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>I'm {U1-099|stuffed}!</en> Bir lokma daha yersem patlarım." }
+      - { speaker: "Selin", text: "Tavuk dansı da yapamazsın artık!" }

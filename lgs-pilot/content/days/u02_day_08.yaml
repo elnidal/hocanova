@@ -376,3 +376,35 @@ notifications:
 
 editor:
   z07: {U2-043: BEKLIYOR, U2-044: BEKLIYOR, U2-045: BEKLIYOR, U2-046: BEKLIYOR, U2-047: BEKLIYOR, U2-048: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-043
+    durum: "Selin, Ece'ye gününü saat saat anlatıyor."
+    lines:
+      - { speaker: "Selin", text: "Altıda kalkarım, kahvaltı, okul, ödev, kitap ve onda yatak. Benim {U2-043|daily routine}'im hiç değişmez." }
+      - { speaker: "Ece", text: "Saat gibi kızsın!" }
+  - item: U2-044
+    durum: "Murat Bey sınıfa kimin geç kaldığını soruyor."
+    lines:
+      - { speaker: "Ece", text: "Selin mi? <en>She {U2-044|never} comes late.</en>" }
+      - { speaker: "Kaan", text: "Ben mi? <en>I {U2-044|usually} come late.</en> Ama hep gülümseyerek!" }
+  - item: U2-045
+    durum: "Elif, Selin'in kitaplığına bakıyor."
+    lines:
+      - { speaker: "Selin", text: "Her akşam tam yirmi dakika okurum; bir gün bile atlamam. <en>I read {U2-045|regularly}.</en>" }
+      - { speaker: "Elif", text: "Kitaplığın bu yüzden dolup taşıyor." }
+  - item: U2-046
+    durum: "Elif hafta sonu için Selin'i parka çağırıyor."
+    lines:
+      - { speaker: "Selin", text: "Hafta sonu {U2-046|mostly} evdeyim; ara sıra parka çıkarım." }
+      - { speaker: "Elif", text: "Biz de o 'ara sıra'yı bekliyoruz!" }
+  - item: U2-047
+    durum: "Bora, Duru'nun evdeki yerini soruyor."
+    lines:
+      - { speaker: "Duru", text: "{U2-047|Most of the time} kanepedeyim; yemek saatinde mutfağa geçiyorum." }
+      - { speaker: "Bora", text: "Fıstık da yanında, değil mi?" }
+  - item: U2-048
+    durum: "Okul çıkışı Selin kapıya doğru koşuyor."
+    lines:
+      - { speaker: "Selin", text: "Babam kapıda bekliyor! <en>My dad {U2-048|picks} me {U2-048|up} at four.</en>" }
+      - { speaker: "Murat Bey", text: "Koşarken düşen kalemi de <en>{U2-048|pick up}</en>, Selin!" }

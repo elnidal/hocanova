@@ -395,3 +395,36 @@ notifications:
 
 editor:
   z07: {U1-074: BEKLIYOR, U1-076: BEKLIYOR, U1-078: BEKLIYOR, U1-082: BEKLIYOR, U1-089: BEKLIYOR, U1-091: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-074
+    durum: "Parkta Ege herkese dondurma alıyor."
+    lines:
+      - { speaker: "Ece", text: "Ege bütün harçlığıyla herkese dondurma aldı. Ne kadar {U1-074|generous}!" }
+      - { speaker: "Ege", text: "Bugün kutlama günü!" }
+  - item: U1-076
+    durum: "Elif, Ece'nin annesinin market poşetlerini taşıyor."
+    lines:
+      - { speaker: "Ece'nin annesi", text: "Elif poşetleri taşıdı, masayı kurdu. Çok {U1-076|helpful} bir kız." }
+      - { speaker: "Ece", text: "Evet… biraz fazla iyi." }
+  - item: U1-078
+    durum: "Ece, Duru ile Elif'in birlikte gitar çalmasını uzaktan izliyor."
+    lines:
+      - { speaker: "Selin", text: "Ece, yüzün kıpkırmızı! Yoksa {U1-078|jealous} mısın?" }
+      - { speaker: "Ece", text: "Biraz… Duru artık hep Elif'le." }
+  - item: U1-082
+    durum: "Duru, Ece'yi bir kenara çekiyor."
+    lines:
+      - { speaker: "Duru", text: "<en>You're my oldest friend.</en> Bu hiç değişmez." }
+      - { speaker: "Ece", text: "Senin bu {U1-082|loyalty}'n Fıstık'ınkinden bile güçlü!" }
+      - { speaker: "Duru", text: "Fıstık duymasın, alınır." }
+  - item: U1-089
+    durum: "Ege maçta topu kimseye vermiyor."
+    lines:
+      - { speaker: "Kaan", text: "Ege, top sadece senin mi? Hep kendini düşünüyorsun; çok {U1-089|self-centered}'sın!" }
+      - { speaker: "Ege", text: "Tamam, tamam… bir pas. Belki." }
+  - item: U1-091
+    durum: "Top çizgiyi geçmedi ama Ege 'gol' diye tutturuyor."
+    lines:
+      - { speaker: "Kaan", text: "Video bile var, ama Ege hâlâ 'gol' diyor. Çok {U1-091|stubborn}!" }
+      - { speaker: "Ege", text: "Gol, gol, gol!" }

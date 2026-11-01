@@ -409,3 +409,35 @@ notifications:
 
 editor:
   z07: {U1-017: BEKLIYOR, U1-072: BEKLIYOR, U1-073: BEKLIYOR, U1-075: BEKLIYOR, U1-090: BEKLIYOR, U1-094: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-017
+    durum: "Kaan gezi formunu bulamıyor; Bora yanına geliyor."
+    lines:
+      - { speaker: "Bora", text: "<en>Can I help?</en> Çantayı birlikte boşaltalım." }
+      - { speaker: "Selin", text: "Bak, Bora ne dedi: <en>Can I help you?</en> Yani hemen {U1-017|offered}; ne iyi!" }
+  - item: U1-072
+    durum: "Elif yeni bir şapkayla okula geliyor."
+    lines:
+      - { speaker: "Ece", text: "Şapkan çok {U1-072|fashionable}! Bu yıl herkes bundan takıyor." }
+      - { speaker: "Elif", text: "Teşekkürler! Pamuk da bayıldı; sabah ısırmaya çalıştı." }
+  - item: U1-073
+    durum: "Bora, Kaan'ın çantasından çıkanları tek tek sayıyor."
+    lines:
+      - { speaker: "Bora", text: "Bir çorap, üç kalem, eski bir sandviç… form yok!" }
+      - { speaker: "Selin", text: "Bora, çok {U1-073|funny}'sin! Kaan bile gülüyor." }
+  - item: U1-075
+    durum: "Kaan'ın annesi oğlunu anlatıyor."
+    lines:
+      - { speaker: "Kaan'ın annesi", text: "Kahvaltıyı ayakta yapar, ayakkabısını kapıda giyer. <en>{U1-075|He is always in a hurry}.</en>" }
+      - { speaker: "Kaan", text: "Çünkü hep geç kalıyorum, anne!" }
+  - item: U1-090
+    durum: "Selin her gün aynı saatte ödevine oturuyor."
+    lines:
+      - { speaker: "Kaan", text: "Selin, kimse söylemeden her gün saat beşte ders çalışıyorsun!" }
+      - { speaker: "Ece", text: "Selin çok {U1-090|self-disciplined}; çalar saat bile ondan çekinir." }
+  - item: U1-094
+    durum: "Murat Bey gezi formlarını topluyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Formları {U1-094|as soon as possible} getirin; otobüs cuma kalkıyor." }
+      - { speaker: "Kaan", text: "Yarın sabah ilk iş, hocam!" }

@@ -343,3 +343,36 @@ notifications:
 
 editor:
   z07: {U2-037: BEKLIYOR, U2-038: BEKLIYOR, U2-039: BEKLIYOR, U2-040: BEKLIYOR, U2-041: BEKLIYOR, U2-042: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-037
+    durum: "Bora takım maçından sonra yorgun ve dalgın."
+    lines:
+      - { speaker: "Bora", text: "Takımda herkes benden pas bekliyor, ben strese giriyorum. Tek başıma yaptığım bir {U2-037|individual sport} lazım." }
+      - { speaker: "Kaan", text: "Tenis, yüzme, koşu... Seçenek çok!" }
+  - item: U2-038
+    durum: "Kaan, Bora'ya yeni bir spor öneriyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>Why don't you {U2-038|do karate}?</en> Beyaz giysi, siyah kemer, tekme, 'Hah!'" }
+      - { speaker: "Bora", text: "Tekme mi? Ben merdivende bile tökezliyorum." }
+  - item: U2-039
+    durum: "Elif pazar gününü anlatıyor."
+    lines:
+      - { speaker: "Elif", text: "Pazar günü Pamuk'la ormandaki patikada saatlerce yürüdük, tepeye kadar. {U2-039|Hiking} süperdi!" }
+      - { speaker: "Bora", text: "Saatlerce mi? Ben markete kadar yürüyünce bitiyorum." }
+  - item: U2-040
+    durum: "Bora pistte üçüncü turu bitirip bankın yanına geliyor."
+    lines:
+      - { speaker: "Selin", text: "Bora, yüzün kıpkırmızı. Biraz otur, {U2-040|rest}." }
+      - { speaker: "Bora", text: "Beş dakika... sonra devam!" }
+  - item: U2-041
+    durum: "Grubun provasında Bora davulun başında."
+    lines:
+      - { speaker: "Elif", text: "Bora, ritme {U2-041|pay attention}! Davul şarkıdan önde koşuyor." }
+      - { speaker: "Bora", text: "Tamam, gözüm Duru'nun gitarında." }
+  - item: U2-042
+    durum: "Duru kaşlarını çatmış, elinde kopuk bir tel var."
+    lines:
+      - { speaker: "Elif", text: "Duru'ya ne oldu?" }
+      - { speaker: "Bora", text: "Fıstık yine gitar telini çiğnemiş. Duru çok {U2-042|annoyed}." }
+      - { speaker: "Duru", text: "Hem de dün taktığım teldi!" }

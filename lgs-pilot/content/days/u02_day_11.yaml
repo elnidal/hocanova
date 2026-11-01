@@ -373,3 +373,35 @@ notifications:
 
 editor:
   z07: {U2-061: BEKLIYOR, U2-062: BEKLIYOR, U2-063: BEKLIYOR, U2-064: BEKLIYOR, U2-065: BEKLIYOR, U2-066: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-061
+    durum: "Ece telefonunda podyum fotoğraflarına bakıyor."
+    lines:
+      - { speaker: "Ece", text: "Milano, Paris, podyumlar, yeni sezon renkleri... {U2-061|Fashion} dünyası çok hızlı değişiyor." }
+      - { speaker: "Selin", text: "Ben geçen sezonun rengini bile bilmiyorum!" }
+  - item: U2-062
+    durum: "Elif okul koridorunda herkesin bol pantolonuna dikkat çekiyor."
+    lines:
+      - { speaker: "Elif", text: "Bu yıl herkes bol paça giyiyor; çok {U2-062|trendy}." }
+      - { speaker: "Kaan", text: "Benimki üç beden büyük. O da sayılır mı?" }
+  - item: U2-063
+    durum: "Ece, Elif'in sabah alışkanlığını anlatıyor."
+    lines:
+      - { speaker: "Ece", text: "Elif her sabah yeni sezon fotoğraflarına bakıyor. <en>She {U2-063|keeps up with the latest fashion}.</en>" }
+      - { speaker: "Elif", text: "Bilgi şart; yarın forma yok!" }
+  - item: U2-064
+    durum: "Duru yarın ne giyeceğini düşünmüyor bile."
+    lines:
+      - { speaker: "Duru", text: "Tişört, kot, spor ayakkabı: işte {U2-064|casual clothes}. Ben hep böyle gezerim." }
+      - { speaker: "Bora", text: "Pijama da bu listeye girer mi?" }
+  - item: U2-065
+    durum: "Selin'in babası düğün için hazırlanıyor."
+    lines:
+      - { speaker: "Selin'in babası", text: "Akşam düğün var: ceket, kumaş pantolon, parlak ayakkabı. {U2-065|Smart clothes} giyin!" }
+      - { speaker: "Selin", text: "Baba, kravatı da mı takacağız?" }
+  - item: U2-066
+    durum: "Forma yok günü Elif okula renk renk geldi."
+    lines:
+      - { speaker: "Elif", text: "Mor şapka, sarı ceket, yeşil ayakkabı: bugünkü {U2-066|outfit}'im nasıl?" }
+      - { speaker: "Duru", text: "Gökkuşağı gibi! Herkes sana bakıyor." }

@@ -308,3 +308,35 @@ notifications:
 
 editor:
   z07: {U1-067: BEKLIYOR, U1-051: BEKLIYOR, U1-060: BEKLIYOR, U1-059: BEKLIYOR, U1-077: BEKLIYOR, U1-081: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-067
+    durum: "Ece pasta parasını kime vereceğini düşünüyor."
+    lines:
+      - { speaker: "Ece", text: "Parayı Selin'e veriyorum. <en>I {U1-067|trust} her.</en>" }
+      - { speaker: "Selin", text: "Merak etme, kuruşu kuruşuna geri getiririm." }
+  - item: U1-051
+    durum: "Ece yardım listesini yazıyor; Kaan yanında."
+    lines:
+      - { speaker: "Ece", text: "Balonları Kaan şişirsin. <en>I can {U1-051|count on} him.</en>" }
+      - { speaker: "Kaan", text: "Yüz balon! Ciğerlerim hazır." }
+  - item: U1-060
+    durum: "Ece'nin annesi listedeki 'pasta' satırına bakıyor."
+    lines:
+      - { speaker: "Ece'nin annesi", text: "Pasta benden. <en>You can {U1-060|rely on} me.</en>" }
+      - { speaker: "Ece", text: "Teşekkürler anne! Çikolatalı olsun." }
+  - item: U1-059
+    durum: "Selin listedeki isimleri okuyor."
+    lines:
+      - { speaker: "Selin", text: "Kaan hep geç kalır ama Duru tam saatinde gelir; çok {U1-059|reliable}." }
+      - { speaker: "Ece", text: "O zaman masa süsleri Duru'da." }
+  - item: U1-077
+    durum: "Kaan mutfakta; kurabiye tabağında bir boşluk var."
+    lines:
+      - { speaker: "Kaan", text: "Eksik kurabiyeyi ben yedim. Saklamayacağım!" }
+      - { speaker: "Ece", text: "En azından {U1-077|honest}'sin. Ama bir tane daha yok!" }
+  - item: U1-081
+    durum: "Duru, Fıstık'ı partiye getirip getiremeyeceğini soruyor."
+    lines:
+      - { speaker: "Duru", text: "Fıstık beni hiç yalnız bırakmaz; çok {U1-081|loyal} bir köpek." }
+      - { speaker: "Ece", text: "Gelsin, ama pastaya burnunu sokmasın!" }

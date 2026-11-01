@@ -360,3 +360,36 @@ notifications:
 
 editor:
   z07: {U1-027: BEKLIYOR, U1-032: BEKLIYOR, U1-031: BEKLIYOR, U1-041: BEKLIYOR, U1-045: BEKLIYOR, U1-046: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-027
+    durum: "Futbol maçında Kaan ile Bora aynı topun peşinde."
+    lines:
+      - { speaker: "Kaan", text: "Pas ver, Bora! Hep tek başına koşuyorsun!" }
+      - { speaker: "Bora", text: "Sen de hiç pas vermiyorsun!" }
+      - { speaker: "Selin", text: "<en>Stop {U1-027|arguing}, you two!</en>" }
+  - item: U1-032
+    durum: "Bora maçtan sonra en uzak banka oturdu; Duru yanına geliyor."
+    lines:
+      - { speaker: "Duru", text: "Kaan'a çok kızdın, değil mi? Bu {U1-032|feeling} geçer." }
+      - { speaker: "Bora", text: "Kızgınım, ama biraz da kırgınım." }
+  - item: U1-031
+    durum: "Bora akşamüstü bahçede tek başına oturuyor."
+    lines:
+      - { speaker: "Bora", text: "Kaan'sız ne maç var ne şaka. <en>I {U1-031|feel alone}.</en>" }
+      - { speaker: "Duru", text: "Yalnız değilsin; ben buradayım, Fıstık da." }
+  - item: U1-041
+    durum: "Ece akşam Kaan'ı arıyor."
+    lines:
+      - { speaker: "Ece", text: "Bora'yla yıllardır beraberdiniz. Bir maç yüzünden bu {U1-041|relationship} bitmez." }
+      - { speaker: "Kaan", text: "Haklısın. Ama ilk adımı kim atacak?" }
+  - item: U1-045
+    durum: "Selin, Kaan ile Bora'nın anaokulu fotoğrafına bakıyor."
+    lines:
+      - { speaker: "Selin", text: "Anaokulundan beri birlikteler. Aralarında {U1-045|strong bond} var." }
+      - { speaker: "Ece", text: "Doğru; bir kavga o ipi koparamaz." }
+  - item: U1-046
+    durum: "Kaan gece telefonu elinde, Bora'yı aramaya çekiniyor."
+    lines:
+      - { speaker: "Ece", text: "Aramak zorsa kısa bir şey yaz. <en>Just {U1-046|text} him.</en>" }
+      - { speaker: "Kaan", text: "Peki ne yazayım? 'Merhaba' çok mu kısa?" }

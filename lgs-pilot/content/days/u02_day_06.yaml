@@ -338,3 +338,36 @@ notifications:
 
 editor:
   z07: {U2-031: BEKLIYOR, U2-032: BEKLIYOR, U2-033: BEKLIYOR, U2-034: BEKLIYOR, U2-035: BEKLIYOR, U2-036: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-031
+    durum: "Kaan okul çıkışı spor çantasını gösteriyor."
+    lines:
+      - { speaker: "Kaan", text: "Şimdi {U2-031|gym}'e gidiyorum: koşu bandı, ağırlıklar, atlama ipi..." }
+      - { speaker: "Bora", text: "Ben de geleyim mi? Orada su sebili var mı?" }
+  - item: U2-032
+    durum: "Kaan sabah planını anlatıyor."
+    lines:
+      - { speaker: "Kaan", text: "Her sabah yirmi dakika şınav ve mekik. <en>I {U2-032|work out} every morning.</en>" }
+      - { speaker: "Ece", text: "Ben de her sabah yirmi dakika daha uyuyorum." }
+  - item: U2-033
+    durum: "Kaan basketbol takımının programını anlatıyor."
+    lines:
+      - { speaker: "Kaan", text: "Salı ve perşembe koçumuz bizi terletiyor. <en>We {U2-033|train} on Tuesdays and Thursdays.</en>" }
+      - { speaker: "Selin", text: "Maç günü de pazar, değil mi?" }
+  - item: U2-034
+    durum: "Bora bir ay sonra Kaan'a bakıp şaşırıyor."
+    lines:
+      - { speaker: "Bora", text: "Kaan, omuzların genişlemiş, hızın artmış! <en>You {U2-034|look fit}!</en>" }
+      - { speaker: "Kaan", text: "Teşekkürler! Hedef: takımın en güçlüsü olmak." }
+  - item: U2-035
+    durum: "Duru, Kaan'ın gününü sayıyor."
+    lines:
+      - { speaker: "Duru", text: "Kaan sabah koşuyor, öğlen top oynuyor, akşam hâlâ zıplıyor. Çok {U2-035|energetic}." }
+      - { speaker: "Elif", text: "Sen de onu izlerken yoruluyorsun, değil mi?" }
+      - { speaker: "Duru", text: "Kesinlikle." }
+  - item: U2-036
+    durum: "Kaan basketbolu Bora'ya anlatıyor."
+    lines:
+      - { speaker: "Kaan", text: "Basketbolda tek başına kazanamazsın; beş kişi birlikte oynar. Bu bir {U2-036|team sport}." }
+      - { speaker: "Bora", text: "Futbol da öyle: on bir kişi, tek top." }

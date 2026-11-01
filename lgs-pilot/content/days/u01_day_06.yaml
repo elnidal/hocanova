@@ -321,3 +321,35 @@ notifications:
 
 editor:
   z07: {U1-028: BEKLIYOR, U1-030: BEKLIYOR, U1-033: BEKLIYOR, U1-040: BEKLIYOR, U1-047: BEKLIYOR, U1-048: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-028
+    durum: "Parti albümünde Kaan ile Bora'nın fotoğrafı var."
+    lines:
+      - { speaker: "Kaan", text: "Bak, ben ve {U1-028|buddy}'m Bora! Yine aynı pozu vermişiz." }
+      - { speaker: "Bora", text: "Anaokulundan beri bu pozu veriyoruz." }
+  - item: U1-030
+    durum: "Selin albümde Ece'yle sarıldıkları fotoğrafa bakıyor."
+    lines:
+      - { speaker: "Selin", text: "Ece benim {U1-030|close friend}'im; her şeyimi bilir." }
+      - { speaker: "Ece", text: "Kedinin adını bile ilk ben öğrendim!" }
+  - item: U1-033
+    durum: "Ece albümün kapağına bir başlık yazıyor."
+    lines:
+      - { speaker: "Ece", text: "Kapak yazısı: '<en>Our {U1-033|friendship} is forever.</en>'" }
+      - { speaker: "Kaan", text: "Altına bir de pasta çiz!" }
+  - item: U1-040
+    durum: "Ege albümdeki fotoğrafta Kaan'ın omzuna kolunu atmış."
+    lines:
+      - { speaker: "Ege", text: "<en>Hey, {U1-040|mate}!</en> Bu fotoğrafı bana da gönder." }
+      - { speaker: "Kaan", text: "Tamam, ama gözlerim kapalı çıkmışım!" }
+  - item: U1-047
+    durum: "Bora, partide Duru'nun onu savunduğu anı hatırlıyor."
+    lines:
+      - { speaker: "Bora", text: "Geç kaldığım gün beni sen savundun. Sen {U1-047|true friend}'sin, Duru." }
+      - { speaker: "Duru", text: "Bir dahakine pastayı erken getir, yeter." }
+  - item: U1-048
+    durum: "Parti bitti; Ece kapıda Kaan'ı uğurluyor."
+    lines:
+      - { speaker: "Ece", text: "Balonlar, dans, şakalar… <en>{U1-048|You're fun to be with}, Kaan!</en>" }
+      - { speaker: "Kaan", text: "Sen de! Seneye yine parti, değil mi?" }

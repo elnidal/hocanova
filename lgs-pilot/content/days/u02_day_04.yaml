@@ -318,3 +318,35 @@ notifications:
 
 editor:
   z07: {U2-019: BEKLIYOR, U2-020: BEKLIYOR, U2-021: BEKLIYOR, U2-022: BEKLIYOR, U2-023: BEKLIYOR, U2-024: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-019
+    durum: "Duru gitarını kucağına alıp Elif'e bir fikir söylüyor."
+    lines:
+      - { speaker: "Duru", text: "Okul gösterisi için bir {U2-019|band} kuralım: ben gitar, sen şarkı!" }
+      - { speaker: "Elif", text: "Bir de isim lazım. Afişe ne yazacağız?" }
+  - item: U2-020
+    durum: "Elif afişin altına büyük harflerle bir not ekliyor."
+    lines:
+      - { speaker: "Elif", text: "Davulcu arıyoruz! Gruba yeni bir {U2-020|member} lazım." }
+      - { speaker: "Duru", text: "Şimdilik iki kişiyiz; üçüncüsü gelirse tam kadro." }
+  - item: U2-021
+    durum: "Ece afişi okuyup soruyor."
+    lines:
+      - { speaker: "Ece", text: "Hızlı ve gitarlı mı, yavaş ve sakin mi? Hangi {U2-021|genre}'de çalacaksınız?" }
+      - { speaker: "Duru", text: "Hepsinden biraz! Biz karışığız." }
+  - item: U2-022
+    durum: "Duru hayalindeki sahneyi anlatıyor."
+    lines:
+      - { speaker: "Duru", text: "Elektro gitar, bas bas bağıran hoparlör, sallanan saçlar: {U2-022|rock music}!" }
+      - { speaker: "Kaan", text: "Komşular şimdiden taşınmaya başladı." }
+  - item: U2-023
+    durum: "Elif radyoda en sevdiği şarkıyı duyunca söylemeye başlıyor."
+    lines:
+      - { speaker: "Elif", text: "Herkesin ezberlediği, her gün çalan şarkılar... Luna Ray gibi! {U2-023|Pop music} benim tarzım." }
+      - { speaker: "Selin", text: "Nakaratı üç dakikada aklına yapışıyor zaten." }
+  - item: U2-024
+    durum: "Bora dedesinin akşam alışkanlığını anlatıyor."
+    lines:
+      - { speaker: "Bora", text: "Dedem akşamları saksafonlu, yavaş, eski plaklar dinler. {U2-024|Jazz} olmadan uyuyamaz." }
+      - { speaker: "Elif", text: "Dedenle birlikte bir konser verelim mi?" }

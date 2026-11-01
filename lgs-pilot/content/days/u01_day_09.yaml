@@ -362,3 +362,35 @@ notifications:
 
 editor:
   z07: {U1-003: BEKLIYOR, U1-015: BEKLIYOR, U1-009: BEKLIYOR, U1-004: BEKLIYOR, U1-020: BEKLIYOR, U1-016: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-003
+    durum: "Murat Bey derste bir duyuru yapıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>All students will {U1-003|attend} the science fair on Friday.</en>" }
+      - { speaker: "Kaan", text: "Cuma mı? Bütün okul spor salonunda olacak yani!" }
+  - item: U1-015
+    durum: "Ece, Selin ve Duru volkan projesi için ekip kurdu; Elif yanlarına geliyor."
+    lines:
+      - { speaker: "Elif", text: "<en>Can I {U1-015|join} your team?</en>" }
+      - { speaker: "Ece", text: "Tabii! Dört kişi daha iyi." }
+  - item: U1-009
+    durum: "Kaan cumartesi sabahı sıkılmış, Bora'yı arıyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>{U1-009|I have nothing to do}.</en> Gel, volkana yardım edelim." }
+      - { speaker: "Bora", text: "Geliyorum, ama köpük kısmı benim!" }
+  - item: U1-004
+    durum: "Selin, ağabeyi Emre'den volkan için yardım istiyor."
+    lines:
+      - { speaker: "Selin", text: "Emre, volkanı boyamama yardım eder misin?" }
+      - { speaker: "Emre", text: "Şimdi olmaz, çok {U1-004|busy}'yim; yarın sınavım var." }
+  - item: U1-020
+    durum: "Bora gruptaki mesajları saatler sonra görüyor."
+    lines:
+      - { speaker: "Ece", text: "Bora, sana dört kez yazdım! <en>Why didn't you {U1-020|reply}?</en>" }
+      - { speaker: "Bora", text: "Telefonum çekmecedeydi, şimdi gördüm!" }
+  - item: U1-016
+    durum: "Fuar günü Kaan koşarak salona giriyor; volkan çoktan köpürmüş."
+    lines:
+      - { speaker: "Kaan", text: "<en>Oh no, I {U1-016|missed} the volcano!</en>" }
+      - { speaker: "Selin", text: "Üzülme, videosu var. İkinci patlama saat üçte." }

@@ -385,3 +385,26 @@ notifications:
 
 editor:
   z07: {U2-089: BEKLIYOR, U2-090: BEKLIYOR, U2-091: BEKLIYOR, U2-092: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-089
+    durum: "Ece sunumdan önce sonuçları okuyor."
+    lines:
+      - { speaker: "Ece", text: "Sınıfta otuz kişiye sorduk; otuzu da müzik dinliyor. <en>{U2-089|All} of them!</en>" }
+      - { speaker: "Selin", text: "Kitap okuyan? Sadece üç kişi: <en>{U2-089|a few}</en>." }
+      - { speaker: "Elif", text: "Örgü ören? Kimse yok: <en>{U2-089|none}</en>!" }
+  - item: U2-090
+    durum: "Selin grafikteki sütunları gösteriyor."
+    lines:
+      - { speaker: "Selin", text: "Müzik en uzun sütun. <en>Music is {U2-090|the most} popular.</en>" }
+      - { speaker: "Kaan", text: "Örgü de en kısa sütun: <en>{U2-090|the least}</en>. Zavallı örgü!" }
+  - item: U2-091
+    durum: "Sunumdan sonra Duru evde kanepeye gömülüyor."
+    lines:
+      - { speaker: "Duru", text: "Sıcak süt, yağmur sesi, yanımda Fıstık... Çok {U2-091|relaxing}." }
+      - { speaker: "Elif", text: "Fıstık uyudu bile, sen de az kaldın!" }
+  - item: U2-092
+    durum: "Sunum bitti; sınıf alkışlıyor."
+    lines:
+      - { speaker: "Elif", text: "Hiç korkulacak bir şey değilmiş; herkes güldü, alkışladı. Çok {U2-092|enjoyable} bir gündü!" }
+      - { speaker: "Kaan", text: "Yarın bir daha yapalım mı?" }

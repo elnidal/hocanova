@@ -363,3 +363,35 @@ notifications:
 
 editor:
   z07: {U1-053: BEKLIYOR, U1-056: BEKLIYOR, U1-058: BEKLIYOR, U1-062: BEKLIYOR, U1-065: BEKLIYOR, U1-066: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-053
+    durum: "Murat Bey ödev konusunu sınıfla konuşuyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Ödevi unutmak olur. Ama uydurma hikâye anlatmak {U1-053|dishonesty}." }
+      - { speaker: "Kaan", text: "Anladım hocam… köpek hikâyesi uydurmaydı." }
+  - item: U1-056
+    durum: "Kaan ödevini getirmedi ve bir hikâye anlatıyor."
+    lines:
+      - { speaker: "Kaan", text: "Hocam, köpek ödevimi yedi!" }
+      - { speaker: "Selin", text: "Kaan'ın köpeği yok ki. Bu kocaman bir {U1-056|lie}!" }
+  - item: U1-058
+    durum: "Kaan, Murat Bey'in masasının önünde duruyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>I {U1-058|promise}, I will bring my homework tomorrow.</en>" }
+      - { speaker: "Murat Bey", text: "Yarın sabah ilk derste masamda görmek istiyorum." }
+  - item: U1-062
+    durum: "Bora teneffüste Selin'i bir köşeye çekiyor."
+    lines:
+      - { speaker: "Bora", text: "Kimse bilmiyor: gizlice dans kursuna gidiyorum. Bu benim {U1-062|secret}'ım." }
+      - { speaker: "Selin", text: "Merak etme, bende kalır." }
+  - item: U1-065
+    durum: "Selin, ders çıkışında Kaan'la konuşuyor."
+    lines:
+      - { speaker: "Selin", text: "Ödev için uydurma şeyler anlatma artık. <en>Don't {U1-065|tell lies}, Kaan.</en>" }
+      - { speaker: "Kaan", text: "Haklısın. Zaten kimse inanmadı." }
+  - item: U1-066
+    durum: "Kaan, Bora'nın dans kursunu bütün sınıfa anlattı; Bora çok kızgın."
+    lines:
+      - { speaker: "Bora", text: "Sadece sana anlatmıştım! <en>Why did you {U1-066|tell my secret to others}?</en>" }
+      - { speaker: "Kaan", text: "Ağzımdan kaçtı… Çok kötü oldu, biliyorum." }

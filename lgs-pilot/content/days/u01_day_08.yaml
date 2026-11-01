@@ -365,3 +365,36 @@ notifications:
 
 editor:
   z07: {U1-006: BEKLIYOR, U1-024: BEKLIYOR, U1-018: BEKLIYOR, U1-014: BEKLIYOR, U1-010: BEKLIYOR, U1-023: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-006
+    durum: "Kaan cuma akşamı grup mesajına yazıyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>{U1-006|Do you want to} go to the park on Saturday?</en>" }
+      - { speaker: "Bora", text: "Top getirirsen geliyorum!" }
+  - item: U1-024
+    durum: "Selin plana bir şey eklemek istiyor."
+    lines:
+      - { speaker: "Selin", text: "Sadece top mu oynayacağız? <en>{U1-024|What about} a picnic?</en>" }
+      - { speaker: "Ece", text: "Evet! Sandviçleri ben hazırlarım." }
+  - item: U1-018
+    durum: "Ece sandviç listesini yapıyor."
+    lines:
+      - { speaker: "Ece", text: "Duru, peynirli mi yumurtalı mı?" }
+      - { speaker: "Duru", text: "<en>I {U1-018|prefer} cheese.</en> Yumurtanın kokusunu sevmem." }
+  - item: U1-014
+    durum: "Ece, Bora'ya buluşma saatini soruyor."
+    lines:
+      - { speaker: "Ece", text: "Bora, saat on mu, on bir mi?" }
+      - { speaker: "Bora", text: "<en>{U1-014|It doesn't matter}.</en> Ben her saatte acıkırım." }
+  - item: U1-010
+    durum: "Elif gruba ilk kez yazıyor."
+    lines:
+      - { speaker: "Elif", text: "<en>{U1-010|I would like to} come too.</en> Pamuk'u da getirebilir miyim?" }
+      - { speaker: "Ece", text: "Tabii! Fıstık'la tanışsınlar." }
+  - item: U1-023
+    durum: "Duru gitarını pikniğe getirmeyi düşünüyor."
+    lines:
+      - { speaker: "Duru", text: "Gitarımı getirirsem çimenlerde şarkı söyleriz." }
+      - { speaker: "Selin", text: "<en>{U1-023|That would be great}!</en>" }
+      - { speaker: "Kaan", text: "Ama ben söylemem; sesim kargaya benziyor." }

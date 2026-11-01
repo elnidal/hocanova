@@ -329,3 +329,36 @@ notifications:
 
 editor:
   z07: {U1-054: BEKLIYOR, U1-050: BEKLIYOR, U1-055: BEKLIYOR, U1-049: BEKLIYOR, U1-092: BEKLIYOR, U1-070: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-054
+    durum: "Bora partiye geç geliyor; elinde pasta kutusu var."
+    lines:
+      - { speaker: "Bora", text: "Geç kaldım ama pasta burada! <en>I {U1-054|kept my promise}.</en>" }
+      - { speaker: "Selin", text: "Bravo! Pastasız kalacağız sandık." }
+  - item: U1-050
+    durum: "Selin, Kaan'a geçen haftayı hatırlatıyor."
+    lines:
+      - { speaker: "Selin", text: "Kitabımı getirecektin, getirmedin. <en>You {U1-050|broke your promise}.</en>" }
+      - { speaker: "Kaan", text: "Doğru… Yarın getiriyorum, bu sefer gerçekten!" }
+  - item: U1-055
+    durum: "Ece'nin annesi sürpriz pastayı Elif'e gösteriyor."
+    lines:
+      - { speaker: "Ece'nin annesi", text: "Ece'ye söyleme, sürpriz! <en>Can you {U1-055|keep a secret}?</en>" }
+      - { speaker: "Elif", text: "Ağzıma fermuar çektim bile." }
+  - item: U1-049
+    durum: "Kaan, Bora'nın geç kalmasına söyleniyor; Duru araya giriyor."
+    lines:
+      - { speaker: "Kaan", text: "Bora yine geç kaldı, kesin uyuyordu!" }
+      - { speaker: "Duru", text: "Hayır, yaşlı komşusuna yardım ediyordu. <en>I {U1-049|back him up}.</en>" }
+  - item: U1-092
+    durum: "Ece pastayı kesmeden önce telaşlanıyor; Selin yanında."
+    lines:
+      - { speaker: "Ece", text: "Ya pasta kötü çıkarsa?" }
+      - { speaker: "Selin", text: "Ne olursa olsun buradayım. Hadi, kes!" }
+      - { speaker: "Ece", text: "Sen hep bu kadar {U1-092|supportive}'sin, Selin." }
+  - item: U1-070
+    durum: "Ece'nin babaannesi misafirlere battaniye ve sıcak süt getiriyor."
+    lines:
+      - { speaker: "Kaan", text: "Babaannen herkese süt, battaniye getiriyor; çok {U1-070|caring}!" }
+      - { speaker: "Ece", text: "Herkese üşüyor musun diye sorar. Onu çok severim." }

@@ -316,3 +316,36 @@ notifications:
 
 editor:
   z07: {U2-007: BEKLIYOR, U2-008: BEKLIYOR, U2-009: BEKLIYOR, U2-010: BEKLIYOR, U2-011: BEKLIYOR, U2-012: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-007
+    durum: "Ece soru kâğıdıyla Kaan'ın karşısında."
+    lines:
+      - { speaker: "Ece", text: "<en>What do you {U2-007|like} doing?</en> Tek kelime yeter." }
+      - { speaker: "Kaan", text: "Basketbol! Bir de pizza yemek. İkisi birlikte daha iyi." }
+  - item: U2-008
+    durum: "Selin hafta sonu yaptığı resmi gösteriyor."
+    lines:
+      - { speaker: "Selin", text: "Fırçayı elime alınca saatlerce kalkmıyorum. <en>I really {U2-008|enjoy} painting.</en>" }
+      - { speaker: "Elif", text: "Belli! Burnunda bile mavi boya var." }
+  - item: U2-009
+    durum: "Kaan, büyükannesinin bahçesini anlatıyor."
+    lines:
+      - { speaker: "Kaan", text: "Büyükannem her sabah çiçeklerini sular, toprakla uğraşır. <en>She {U2-009|is fond of} gardening.</en>" }
+      - { speaker: "Bora", text: "O yüzden her hafta size domates geliyor!" }
+  - item: U2-010
+    durum: "Selin bulmaca kitabının son sayfasında."
+    lines:
+      - { speaker: "Ece", text: "Selin bütün bulmacaları bitirdi, yenisini bekliyor. <en>She {U2-010|is keen on} puzzles.</en>" }
+      - { speaker: "Selin", text: "Bir tane daha var mı? Zor olsun!" }
+  - item: U2-011
+    durum: "Pikniğin sonunda iş bölümü yapılıyor."
+    lines:
+      - { speaker: "Elif", text: "Bardakları kim kurulayacak?" }
+      - { speaker: "Duru", text: "<en>I {U2-011|don't mind} drying.</en> Ama oturarak." }
+      - { speaker: "Elif", text: "Anlaştık, sandalye senin!" }
+  - item: U2-012
+    durum: "Bora sabah alarmından şikâyet ediyor."
+    lines:
+      - { speaker: "Bora", text: "Sabah altıda kalkmak mı? <en>I {U2-012|dislike} it.</en> Alarm benim düşmanım." }
+      - { speaker: "Selin", text: "Ama okul sekizde başlıyor, Bora." }

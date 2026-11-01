@@ -376,3 +376,35 @@ notifications:
 
 editor:
   z07: {U1-069: BEKLIYOR, U1-080: BEKLIYOR, U1-085: BEKLIYOR, U1-086: BEKLIYOR, U1-087: BEKLIYOR, U1-093: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-069
+    durum: "Dergi testinin sonucu çıktı; Duru sonucunu okuyor."
+    lines:
+      - { speaker: "Duru", text: "Sonucum: '<en>The {U1-069|Calm} Friend</en>'. Hiç telaşlanmazmışım." }
+      - { speaker: "Kaan", text: "Doğru! Okul zili çalsa sen önce çayını bitirirsin." }
+  - item: U1-080
+    durum: "Elif, Kaan'a sınıftakileri soruyor."
+    lines:
+      - { speaker: "Elif", text: "<en>What is Bora {U1-080|like}?</en>" }
+      - { speaker: "Kaan", text: "Şakacı, biraz dağınık, dansta bir numara!" }
+  - item: U1-085
+    durum: "Selin, Kaan'a matematik sorusunu üçüncü kez anlatıyor."
+    lines:
+      - { speaker: "Kaan", text: "Üçüncü kez anlatıyorsun ve hiç kızmıyorsun!" }
+      - { speaker: "Ece", text: "Selin çok {U1-085|patient}; ben ikincide pes ederdim." }
+  - item: U1-086
+    durum: "Ece dergi testindeki bir soruyu okuyor."
+    lines:
+      - { speaker: "Ece", text: "Soru: En güçlü {U1-086|personal trait}'in hangisi? Cesaret mi, sabır mı, mizah mı?" }
+      - { speaker: "Selin", text: "Seninki kesinlikle mizah." }
+  - item: U1-087
+    durum: "Elif dergideki testin başlığını gösteriyor."
+    lines:
+      - { speaker: "Elif", text: "Başlık: '<en>Your {U1-087|personality} in 10 questions</en>'. Hadi, herkes çözsün!" }
+      - { speaker: "Bora", text: "Ben ilk! Umarım sonucum 'süper kahraman' çıkar." }
+  - item: U1-093
+    durum: "Bora, partiye gelmek istemediği günü Ece'ye anlatıyor."
+    lines:
+      - { speaker: "Bora", text: "Kedi hikâyeme kızmadın, beni dinledin. Çok {U1-093|understanding}'sin, Ece." }
+      - { speaker: "Ece", text: "Çünkü sonunda geldin, pastayı da getirdin!" }

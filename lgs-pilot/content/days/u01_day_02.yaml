@@ -311,3 +311,35 @@ notifications:
 
 editor:
   z07: {U1-019: BEKLIYOR, U1-021: BEKLIYOR, U1-007: BEKLIYOR, U1-002: BEKLIYOR, U1-025: BEKLIYOR, U1-022: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-019
+    durum: "Ece, Bora'nın cevabını okuyor ve kaşlarını çatıyor."
+    lines:
+      - { speaker: "Ece", text: "Bora partiye gelecek mi? <en>No, he {U1-019|refused}.</en> Nedenini söylemedi." }
+      - { speaker: "Kaan", text: "Bilmem, geçen hafta pasta için can atıyordu." }
+  - item: U1-021
+    durum: "Bora, Ece'ye sesli mesaj gönderiyor."
+    lines:
+      - { speaker: "Bora", text: "<en>{U1-021|Sorry, I can't} come. My cat is ill.</en>" }
+      - { speaker: "Ece", text: "Kedi mi? Senin kedin var mıydı?" }
+  - item: U1-007
+    durum: "Kaan ve Duru teneffüste Bora'nın mesajını konuşuyor."
+    lines:
+      - { speaker: "Kaan", text: "Bora'nın kedisi yok ki! Bu düpedüz bir {U1-007|excuse}." }
+      - { speaker: "Duru", text: "Gelmemek için kedi uydurmuş. Yaratıcı ama." }
+  - item: U1-002
+    durum: "Bora ertesi gün başını öne eğip Ece'nin yanına geliyor."
+    lines:
+      - { speaker: "Bora", text: "<en>I {U1-002|apologise}, Ece. There is no cat.</en>" }
+      - { speaker: "Ece", text: "Biliyordum! Peki partiye geliyor musun?" }
+  - item: U1-025
+    durum: "Ece, Bora'yı partiye gelmeye ikna etmeye çalışıyor."
+    lines:
+      - { speaker: "Ece", text: "Gel işte! Pasta da var, müzik de." }
+      - { speaker: "Bora", text: "<en>{U1-025|Why not}?</en> Tamam, geliyorum!" }
+  - item: U1-022
+    durum: "Ece, Bora'ya parti planını anlatıyor."
+    lines:
+      - { speaker: "Ece", text: "Önce pasta, sonra dans yarışması!" }
+      - { speaker: "Bora", text: "<en>{U1-022|Sounds fun}!</en> Dansın kralı benim, söyleyeyim." }

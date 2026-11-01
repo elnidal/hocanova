@@ -266,3 +266,35 @@ notifications:
 
 editor:
   z07: {U1-026: BEKLIYOR, U1-008: BEKLIYOR, U1-013: BEKLIYOR, U1-012: BEKLIYOR, U1-001: BEKLIYOR, U1-011: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-026
+    durum: "Ece teneffüste Kaan'ın yanına geliyor."
+    lines:
+      - { speaker: "Ece", text: "Kaan, cumartesi evde partim var. <en>{U1-026|Would you like to} come?</en>" }
+      - { speaker: "Kaan", text: "<en>Sure!</en> Saat kaçta? Pasta var mı?" }
+  - item: U1-008
+    durum: "Parti hazırlığında Selin müzik listesini seçiyor."
+    lines:
+      - { speaker: "Selin", text: "Şarkılar hazır. <en>{U1-008|How about} dancing after the cake?</en>" }
+      - { speaker: "Ece", text: "Süper fikir! Ama önce pasta, sonra dans." }
+  - item: U1-013
+    durum: "Ece misafir listesini yazıyor; annesi omzunun üstünden bakıyor."
+    lines:
+      - { speaker: "Ece", text: "<en>I want to {U1-013|invite} Kaan, Duru, Bora and Selin.</en>" }
+      - { speaker: "Ece'nin annesi", text: "Dört kişi mi? Tamam, bir pasta herkese yeter." }
+  - item: U1-012
+    durum: "Akşam Ece sınıf grubuna rengârenk bir kart gönderiyor."
+    lines:
+      - { speaker: "Ece", text: "Bakın, {U1-012|invitation} hazır: saat, adres, bir sürü balon!" }
+      - { speaker: "Duru", text: "Balonlar güzel olmuş. Saat üçte kapındayım." }
+  - item: U1-001
+    durum: "Ece telefonundaki cevapları sayıyor."
+    lines:
+      - { speaker: "Ece", text: "Kaan ve Duru {U1-001|accepted}; ikisi de hemen 'evet' dedi!" }
+      - { speaker: "Selin", text: "Beni de yaz, ben de geliyorum!" }
+  - item: U1-011
+    durum: "Ece, Kaan'dan erken gelip balon şişirmesini istiyor."
+    lines:
+      - { speaker: "Ece", text: "Partiden önce gelip bana yardım eder misin?" }
+      - { speaker: "Kaan", text: "<en>Yes! {U1-011|I'd love to}!</en> Balonlar benden." }

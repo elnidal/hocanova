@@ -361,3 +361,35 @@ notifications:
 
 editor:
   z07: {U1-005: BEKLIYOR, U1-052: BEKLIYOR, U1-057: BEKLIYOR, U1-061: BEKLIYOR, U1-088: BEKLIYOR, U1-068: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-005
+    durum: "Kaan ile Bora ikili proje için plan yapıyor."
+    lines:
+      - { speaker: "Bora", text: "<en>Can you {U1-005|come over} after school?</en> Bizim evde çalışalım." }
+      - { speaker: "Kaan", text: "Tamam, saat dörtte kapındayım." }
+  - item: U1-052
+    durum: "Murat Bey ikili projeleri dağıtıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>In this project, you {U1-052|depend on} each other.</en>" }
+      - { speaker: "Kaan", text: "Yani Bora uyursa ben de yanarım!" }
+  - item: U1-057
+    durum: "Kaan ile Bora proje için kurallar yazıyor."
+    lines:
+      - { speaker: "Kaan", text: "Kural bir: ben konuşurken sen dinle, sen konuşurken ben." }
+      - { speaker: "Bora", text: "Kural iki: {U1-057|mutual respect}. Kimse araya girmez." }
+  - item: U1-061
+    durum: "Kaan, Bora'nın hemşire annesinin her sabah erkenden çıktığını öğreniyor."
+    lines:
+      - { speaker: "Kaan", text: "Annen herkesten erken kalkıp hastalara koşuyor. <en>I really {U1-061|respect} your mum.</en>" }
+      - { speaker: "Bora", text: "Ben de. Bazen gece bile hastaneye gidiyor." }
+  - item: U1-088
+    durum: "Bora'nın annesi akşam Kaan'la tanışıyor."
+    lines:
+      - { speaker: "Bora'nın annesi", text: "Kaan ayakkabılarını çıkardı, teşekkür etti, sesini hiç yükseltmedi. Çok {U1-088|respectful}." }
+      - { speaker: "Bora", text: "Bizim evde öyle; maçta değil!" }
+  - item: U1-068
+    durum: "Kaan tam saatinde Bora'nın kapısında."
+    lines:
+      - { speaker: "Bora", text: "Eskiden 'geliyorum' deyip gelmezdin; çok {U1-068|unreliable}'dın." }
+      - { speaker: "Kaan", text: "Ama bugün tam dörtte buradayım, bir dakika bile şaşmadan!" }

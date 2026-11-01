@@ -369,3 +369,35 @@ notifications:
 
 editor:
   z07: {U2-067: BEKLIYOR, U2-068: BEKLIYOR, U2-069: BEKLIYOR, U2-070: BEKLIYOR, U2-071: BEKLIYOR, U2-072: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-067
+    durum: "Ece'nin kuzenleri düğünden çıkıp bahçeye geldi."
+    lines:
+      - { speaker: "Ece", text: "Takım elbise, kravat, parlak ayakkabı... Çok {U2-067|formal}!" }
+      - { speaker: "Selin", text: "Biz de onları eşofmanla karşıladık." }
+  - item: U2-068
+    durum: "Duru eşofmanıyla kanepeye uzanıyor."
+    lines:
+      - { speaker: "Duru", text: "Bu eşofman hiçbir yerimi sıkmıyor; bütün gün içinde yatarım. Çok {U2-068|comfortable}." }
+      - { speaker: "Elif", text: "Senin için en önemli şey bu zaten!" }
+  - item: U2-069
+    durum: "Bora dizideki bir karakteri anlatıyor."
+    lines:
+      - { speaker: "Bora", text: "Dizideki çocuk 'Benim ayakkabım sizinkinden pahalı' deyip burnunu havaya kaldırıyor. Tam bir {U2-069|snob}." }
+      - { speaker: "Kaan", text: "Sonunda da çamura düşüyor, değil mi?" }
+  - item: U2-070
+    durum: "Kaan, gününü anlatırken esniyor."
+    lines:
+      - { speaker: "Kaan", text: "Benim günüm hiç ilginç değil: okul, yemek, uyku. Çok {U2-070|ordinary}." }
+      - { speaker: "Elif", text: "Ama dün kantinde tepsiyi düşürüp alkış aldın, o hiç de öyle değildi!" }
+  - item: U2-071
+    durum: "Ece ile Selin sunum provasının ardından konuşuyor."
+    lines:
+      - { speaker: "Ece", text: "Kuzenimin sunumu nasıldı?" }
+      - { speaker: "Selin", text: "<en>It was {U2-071|pretty} good.</en> Ama biraz uzundu." }
+  - item: U2-072
+    durum: "Bora annesinden duyduklarını anlatıyor."
+    lines:
+      - { speaker: "Bora", text: "Annem diyor ki: on sekiz yaşına gelince oy kullanırsın, ehliyet alırsın; artık bir {U2-072|adult} olursun." }
+      - { speaker: "Kaan", text: "O zaman dört yıl daha çocuğum. Yaşasın!" }

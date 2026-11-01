@@ -335,3 +335,37 @@ notifications:
 
 editor:
   z07: {U2-001: BEKLIYOR, U2-002: BEKLIYOR, U2-003: BEKLIYOR, U2-004: BEKLIYOR, U2-005: BEKLIYOR, U2-006: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-001
+    durum: "Murat Bey tahtaya bir yaş çizgisi çiziyor."
+    lines:
+      - { speaker: "Murat Bey", text: "13'ten 19 yaşına kadar herkes bir {U2-001|teenager}. Bu sınıfta olmayan var mı?" }
+      - { speaker: "Kaan", text: "Ben! 14 yaşındayım ama ruhum otuz." }
+      - { speaker: "Selin", text: "Kaan, 14 de o çizginin içinde." }
+  - item: U2-002
+    durum: "Ece, Duru'ya ödevsiz saatlerini soruyor."
+    lines:
+      - { speaker: "Duru", text: "Ders yok, ödev yok, kimse bir şey istemiyor: işte benim {U2-002|free time}'ım." }
+      - { speaker: "Ece", text: "Peki o saatlerde ne yapıyorsun?" }
+      - { speaker: "Duru", text: "Kanepe ve Fıstık. Başka bir şey değil." }
+  - item: U2-003
+    durum: "Ece teneffüste plan defterini açıyor."
+    lines:
+      - { speaker: "Ece", text: "Her sınıfa on soru soracağız, cevapları sayıp grafik çizeceğiz. İşte bizim {U2-003|survey}!" }
+      - { speaker: "Selin", text: "Soru kâğıdını ben hazırlarım; numaralı, düzenli." }
+  - item: U2-004
+    durum: "Okul zili çaldı; Kaan çantasını omzuna atıyor."
+    lines:
+      - { speaker: "Kaan", text: "Eve gitmek yok! <en>Let's {U2-004|hang out} in the park!</en>" }
+      - { speaker: "Bora", text: "Olur! Banklarda otururuz, top atarız, dondurma yeriz." }
+  - item: U2-005
+    durum: "Grup ilk sorunun ne olacağını tartışıyor."
+    lines:
+      - { speaker: "Selin", text: "<en>{U2-005|In my opinion}</en>, ilk soru kısa ve kolay olmalı." }
+      - { speaker: "Elif", text: "<en>{U2-005|I believe}</en> herkes müzik sorusuna cevap verir." }
+  - item: U2-006
+    durum: "Elif okul sonrası planını anlatıyor."
+    lines:
+      - { speaker: "Elif", text: "Ben okuldan sonra şarkı çalışıyorum. <en>{U2-006|What about you}, Duru?</en>" }
+      - { speaker: "Duru", text: "Ben mi? Ben uyuyorum. Fıstık da." }

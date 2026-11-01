@@ -358,3 +358,35 @@ notifications:
 
 editor:
   z07: {U1-035: BEKLIYOR, U1-037: BEKLIYOR, U1-043: BEKLIYOR, U1-044: BEKLIYOR, U1-063: BEKLIYOR, U1-064: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-035
+    durum: "Bora okul bahçesinde; Ece ve Selin yanına oturuyor."
+    lines:
+      - { speaker: "Bora", text: "<en>Can you {U1-035|give me some advice}?</en> Kaan'la nasıl barışırım?" }
+      - { speaker: "Selin", text: "Önce konuş. Sonra cips götür; Kaan cipse hayır demez." }
+  - item: U1-037
+    durum: "Bora, Kaan'ın bir ay boyunca onunla yürüdüğünü hatırlıyor."
+    lines:
+      - { speaker: "Bora", text: "Bisikletim bozulunca Kaan bir ay benimle yürüdü. <en>{U1-037|He is always there for me}.</en>" }
+      - { speaker: "Selin", text: "O zaman bunu ona da söyle!" }
+  - item: U1-043
+    durum: "Bora, Kaan'a bir paket cips uzatıyor."
+    lines:
+      - { speaker: "Bora", text: "<en>Let's {U1-043|share} it.</en> Yarısı senin." }
+      - { speaker: "Kaan", text: "Barışma cipsi mi bu? Tamam, barıştık!" }
+  - item: U1-044
+    durum: "Kaan ile Bora parkta salıncaklarda sallanıyor."
+    lines:
+      - { speaker: "Kaan", text: "Bir hafta ayrı kaldık. <en>I want to {U1-044|spend more time} with you.</en>" }
+      - { speaker: "Bora", text: "Ben de. Yarın maç, sonra simit?" }
+  - item: U1-063
+    durum: "Ece, Bora'nın dans kursunu öğrenince ona bir not yazıyor."
+    lines:
+      - { speaker: "Ece", text: "Dans kursun harika, Bora. <en>We all {U1-063|support} you!</en>" }
+      - { speaker: "Bora", text: "O zaman gösteri günü en önde oturun!" }
+  - item: U1-064
+    durum: "Ece, barışma gününün fotoğrafının altına bir yazı yazıyor."
+    lines:
+      - { speaker: "Ece", text: "Kavga biter, biz kalırız. <en>We {U1-064|support each other}.</en>" }
+      - { speaker: "Duru", text: "Bir de cipsleri bölüşürüz." }

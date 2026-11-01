@@ -326,3 +326,36 @@ notifications:
 
 editor:
   z07: {U1-039: BEKLIYOR, U1-038: BEKLIYOR, U1-036: BEKLIYOR, U1-034: BEKLIYOR, U1-042: BEKLIYOR, U1-029: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-039
+    durum: "Elif sınıfa ilk kez giriyor; Ece onu tahtanın önüne getiriyor."
+    lines:
+      - { speaker: "Ece", text: "<en>Let me {U1-039|introduce} my neighbour, Elif.</en>" }
+      - { speaker: "Murat Bey", text: "Hoş geldin Elif! Şuraya, Selin'in yanına otur." }
+  - item: U1-038
+    durum: "Teneffüste Duru, Elif'in çantasından sarkan gitar penasını görüyor."
+    lines:
+      - { speaker: "Duru", text: "<en>Are you {U1-038|interested in} music?</en>" }
+      - { speaker: "Elif", text: "Çok! Evde bir gitarım, bir de köpeğim var." }
+  - item: U1-036
+    durum: "Duru ile Elif konuştukça şaşırıyor."
+    lines:
+      - { speaker: "Duru", text: "İkimiz de gitar çalıyoruz, ikimizin de köpeği var!" }
+      - { speaker: "Elif", text: "<en>We {U1-036|have a lot in common}!</en>" }
+  - item: U1-034
+    durum: "Öğle arasında Selin ile Ece, Duru ve Elif'e bakıyor."
+    lines:
+      - { speaker: "Selin", text: "Elif ile Duru'ya bak, sabahtan beri gülüyorlar." }
+      - { speaker: "Ece", text: "<en>They {U1-034|get on well}.</en> Ben de çok sevindim." }
+  - item: U1-042
+    durum: "Kaan ve Bora en iyi pizzayı konuşuyor."
+    lines:
+      - { speaker: "Kaan", text: "Bence en iyi pizza bol peynirli olanı." }
+      - { speaker: "Bora", text: "<en>We have the {U1-042|same opinion}!</en> Bol peynir, bol mısır." }
+  - item: U1-029
+    durum: "Akşam Elif, Duru'ya yazıyor; Kaan da grupta."
+    lines:
+      - { speaker: "Elif", text: "<en>Let's {U1-029|chat} after dinner!</en>" }
+      - { speaker: "Duru", text: "Tamam! Bu sefer hemen yazacağım." }
+      - { speaker: "Kaan", text: "Duru hemen mi yazacak? Mucize!" }

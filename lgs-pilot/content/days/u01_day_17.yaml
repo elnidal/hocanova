@@ -397,3 +397,25 @@ notifications:
 
 editor:
   z07: {U1-095: BEKLIYOR, U1-096: BEKLIYOR, U1-098: BEKLIYOR, U1-100: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U1-095
+    durum: "Lunaparkta Bora atlıkarıncaya bakıyor."
+    lines:
+      - { speaker: "Bora", text: "Dönüp duruyor, hiçbir şey olmuyor. Çok {U1-095|boring}!" }
+      - { speaker: "Selin", text: "Bence huzurlu. Ama tamam, başka yere bakalım." }
+  - item: U1-096
+    durum: "Gezi sabahı Kaan otobüse herkesten önce biniyor."
+    lines:
+      - { speaker: "Kaan", text: "Bütün gece uyuyamadım; bugün çok {U1-096|exciting} bir gün!" }
+      - { speaker: "Murat Bey", text: "Kaan, otobüs yarım saat sonra kalkıyor." }
+  - item: U1-098
+    durum: "Elif ve Duru çarpışan arabalardan iniyor."
+    lines:
+      - { speaker: "Elif", text: "Duru'ya beş kez çarptım! Çok {U1-098|fun}!" }
+      - { speaker: "Duru", text: "Bir tur daha; bu sefer ben kazanacağım." }
+  - item: U1-100
+    durum: "Ece ve Selin dev hız treninden iniyor; saçları dimdik."
+    lines:
+      - { speaker: "Ece", text: "Uçtuk sanki! Hayatımın en {U1-100|thrilling} üç dakikası!" }
+      - { speaker: "Selin", text: "Kalbim hâlâ küt küt atıyor. Bir daha binelim mi?" }

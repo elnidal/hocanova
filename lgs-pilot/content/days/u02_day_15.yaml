@@ -376,3 +376,30 @@ notifications:
 
 editor:
   z07: {U2-084: BEKLIYOR, U2-085: BEKLIYOR, U2-086: BEKLIYOR, U2-087: BEKLIYOR, U2-088: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-084
+    durum: "Ece, Selin'in bir alışkanlığını anlatıyor."
+    lines:
+      - { speaker: "Ece", text: "Selin kırmızı ışıkta hiç geçmez, kütüphanede hiç konuşmaz. <en>She always {U2-084|follows the rules}.</en>" }
+      - { speaker: "Selin", text: "Tabelalar okunmak için var!" }
+  - item: U2-085
+    durum: "Kaan kocaman bir kitap yığınının başında."
+    lines:
+      - { speaker: "Kaan", text: "Yarın sabaha kadar on kitap bitireceğim!" }
+      - { speaker: "Ece", text: "Kaan, <en>{U2-085|be realistic}</en>. Bir tane bile iyi olur." }
+  - item: U2-086
+    durum: "Elif, Pamuk'un korktuğu anları anlatıyor."
+    lines:
+      - { speaker: "Elif", text: "Biri bağırınca Pamuk hemen yatağın altına saklanıyor. Çok {U2-086|sensitive}." }
+      - { speaker: "Duru", text: "Fıstık ise bağıranlara daha çok havlıyor." }
+  - item: U2-087
+    durum: "Kaan, Selin'in karnesine bakıp şaşırıyor."
+    lines:
+      - { speaker: "Kaan", text: "Selin'in sırrı ne? <en>How does she {U2-087|get high grades}?</en>" }
+      - { speaker: "Selin", text: "Her gün yarım saat tekrar. Sihir yok!" }
+  - item: U2-088
+    durum: "Sınıfın kliması bozuldu; içerisi fırın gibi."
+    lines:
+      - { speaker: "Bora", text: "Ter içindeyim! Bu sıcak {U2-088|unbearable}." }
+      - { speaker: "Duru", text: "Pencereyi açın, yoksa eriyeceğim!" }

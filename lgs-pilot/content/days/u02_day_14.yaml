@@ -344,3 +344,30 @@ notifications:
 
 editor:
   z07: {U2-079: BEKLIYOR, U2-080: BEKLIYOR, U2-081: BEKLIYOR, U2-082: BEKLIYOR, U2-083: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-079
+    durum: "Murat Bey elinde bir macera kitabıyla sınıfa giriyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Bu kitabı okuyun; bitirince bana teşekkür edersiniz. <en>I {U2-079|recommend} it.</en>" }
+      - { speaker: "Ece", text: "Kaç sayfa, hocam?" }
+  - item: U2-080
+    durum: "Yağmur başladı; parka gitme planı suya düştü."
+    lines:
+      - { speaker: "Kaan", text: "Park olmaz. <en>I {U2-080|suggest} a board game.</en>" }
+      - { speaker: "Bora", text: "Olur, ama bu sefer ben kazanacağım!" }
+  - item: U2-081
+    durum: "Sınavdan bir gün önce Murat Bey sınıfla konuşuyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Sınavdan önceki gece geç yatmayın. <en>I {U2-081|advise} you to sleep early.</en>" }
+      - { speaker: "Bora", text: "Bu sefer beş tane alarm kurarım!" }
+  - item: U2-082
+    durum: "Selin arılarla ilgili bir belgesel izledi."
+    lines:
+      - { speaker: "Selin", text: "Arıların balı nasıl yaptığını bu belgeselde gördüm. Çok {U2-082|educational}!" }
+      - { speaker: "Kaan", text: "Ben de bir şey gördüm: arılardan uzak duracağım." }
+  - item: U2-083
+    durum: "Elif dün akşam izlediği çizgi filmi anlatıyor."
+    lines:
+      - { speaker: "Elif", text: "Baştan sona kahkaha attım, hiç sıkılmadım. Çok {U2-083|entertaining}." }
+      - { speaker: "Duru", text: "Fıstık bile ekrana bakıp havladı." }

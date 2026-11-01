@@ -373,3 +373,35 @@ notifications:
 
 editor:
   z07: {U2-073: BEKLIYOR, U2-074: BEKLIYOR, U2-075: BEKLIYOR, U2-076: BEKLIYOR, U2-077: BEKLIYOR, U2-078: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-073
+    durum: "Kaan film gecesinin afişini gösteriyor."
+    lines:
+      - { speaker: "Kaan", text: "Uzay gemileri, robotlar, başka gezegenler... Bu akşam {U2-073|science fiction} izliyoruz!" }
+      - { speaker: "Duru", text: "Ben patlamış mısırı getiriyorum." }
+  - item: U2-074
+    durum: "Filmin ortasında Kaan yerinden fırlıyor."
+    lines:
+      - { speaker: "Kaan", text: "Robot gezegeni tek eliyle kaldırdı! Bu sahne {U2-074|awesome}!" }
+      - { speaker: "Bora", text: "Geri saralım, bir daha izleyelim!" }
+  - item: U2-075
+    durum: "Selin jeneriği izlerken kıpırdamıyor."
+    lines:
+      - { speaker: "Selin", text: "Filmin müzikleri {U2-075|terrific}; tüylerim diken diken oldu." }
+      - { speaker: "Ece", text: "Sonunu da kimse tahmin edemedi!" }
+  - item: U2-076
+    durum: "Ece ekrandaki şehre hayretle bakıyor."
+    lines:
+      - { speaker: "Ece", text: "Binalar, ışıklar, uçan arabalar... Gerçek gibi! Efektler çok {U2-076|impressive}." }
+      - { speaker: "Elif", text: "Hepsini bilgisayarda yapmışlar, inanabiliyor musun?" }
+  - item: U2-077
+    durum: "Film bitti; Selin kara delikleri düşünüyor."
+    lines:
+      - { speaker: "Selin", text: "Kara delikler ışığı bile yutuyormuş. Bu konu çok {U2-077|fascinating}; hemen okumak istiyorum." }
+      - { speaker: "Duru", text: "Selin, film bitti; ders başlamasın!" }
+  - item: U2-078
+    durum: "Duru patlamış mısırdan bir avuç alıp yüzünü buruşturuyor."
+    lines:
+      - { speaker: "Duru", text: "Tuz yerine şeker dökmüşüm. Tadı {U2-078|awful}!" }
+      - { speaker: "Kaan", text: "Ver bakalım, ben yine de yerim." }

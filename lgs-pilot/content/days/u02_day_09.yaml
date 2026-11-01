@@ -376,3 +376,35 @@ notifications:
 
 editor:
   z07: {U2-049: BEKLIYOR, U2-050: BEKLIYOR, U2-051: BEKLIYOR, U2-052: BEKLIYOR, U2-053: BEKLIYOR, U2-054: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-049
+    durum: "Kaan, Duru'yu sabah koşusuna çağırıyor."
+    lines:
+      - { speaker: "Duru", text: "Koşu mu? <en>I {U2-049|rarely} run.</en> Yılda bir, otobüse yetişirken." }
+      - { speaker: "Kaan", text: "O da koşu sayılır!" }
+  - item: U2-050
+    durum: "Bora dedesinin akşamlarını anlatıyor."
+    lines:
+      - { speaker: "Bora", text: "Dedem televizyonu pek açmaz. <en>He {U2-050|seldom} watches TV.</en> Plaklarını dinler." }
+      - { speaker: "Elif", text: "Eski usul bir dede!" }
+  - item: U2-051
+    durum: "Ece, Selin'in ödev defterini gösteriyor."
+    lines:
+      - { speaker: "Ece", text: "Selin ödevini unutur mu? <en>She {U2-051|hardly ever} forgets.</en>" }
+      - { speaker: "Selin", text: "Son unuttuğumda üçüncü sınıftaydım. Hâlâ utanıyorum." }
+  - item: U2-052
+    durum: "Ece anket tablosuna Kaan'ın cevabını yazıyor."
+    lines:
+      - { speaker: "Kaan", text: "Salı ve perşembe antrenman var: <en>{U2-052|twice} a week</en>." }
+      - { speaker: "Ece", text: "Maç da her ayın son pazarı, yani <en>{U2-052|once} a month</en>." }
+  - item: U2-053
+    durum: "Teneffüs zili çaldı; herkes kantin tezgâhına üşüştü."
+    lines:
+      - { speaker: "Kantinci teyze", text: "Çocuklar, itişmeyin! Arka arkaya dizilin, düzgün bir {U2-053|queue} olsun!" }
+      - { speaker: "Kaan", text: "Ben en arkadayım... yine." }
+  - item: U2-054
+    durum: "Murat Bey elinde gazeteyle sınıfa giriyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Sabah gazeteye, akşam bültene bakarım. <en>I {U2-054|follow the news}.</en>" }
+      - { speaker: "Bora", text: "Ben sadece hava durumuna bakıyorum: yağmur var mı, yok mu." }

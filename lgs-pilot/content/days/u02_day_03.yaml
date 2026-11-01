@@ -317,3 +317,35 @@ notifications:
 
 editor:
   z07: {U2-013: BEKLIYOR, U2-014: BEKLIYOR, U2-015: BEKLIYOR, U2-016: BEKLIYOR, U2-017: BEKLIYOR, U2-018: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U2-013
+    durum: "Tebeşir tahtada gıcırdıyor; Elif kulaklarını kapatıyor."
+    lines:
+      - { speaker: "Elif", text: "Bu ses beynimi tırmalıyor! <en>I {U2-013|can't stand} it!</en>" }
+      - { speaker: "Kaan", text: "Ben de! Tüylerim diken diken oldu." }
+  - item: U2-014
+    durum: "Pazartesi sabahı Duru sınıfa sürünerek giriyor."
+    lines:
+      - { speaker: "Duru", text: "Hafta sonu bitti, yine erken kalktım. <en>I {U2-014|hate} Mondays.</en>" }
+      - { speaker: "Bora", text: "Salı da pek farklı değil ama." }
+  - item: U2-015
+    durum: "Kaan maç gününü bekleyemiyor."
+    lines:
+      - { speaker: "Kaan", text: "Maç varsa yemeği bile unuturum. <en>I'm {U2-015|crazy about} basketball!</en>" }
+      - { speaker: "Ece", text: "Geçen hafta ödevi de unuttun ama." }
+  - item: U2-016
+    durum: "Selin ağabeyi Emre'yi anlatıyor."
+    lines:
+      - { speaker: "Selin", text: "Emre bütün gün kulaklıkla gezer, kafası ritimle sallanır. <en>He's {U2-016|into} rap.</en>" }
+      - { speaker: "Elif", text: "Odasından hep bum bum sesi geliyor, değil mi?" }
+  - item: U2-017
+    durum: "Bora annesinin gece nöbetinden söz ediyor."
+    lines:
+      - { speaker: "Bora", text: "Annem bütün gece hastalara bakıyor, sabah yine gülümsüyor. <en>I really {U2-017|admire} her.</en>" }
+      - { speaker: "Ece", text: "Hemşirelik çok zor bir iş. Haklısın." }
+  - item: U2-018
+    durum: "Bora derse yirmi dakika geç geldi."
+    lines:
+      - { speaker: "Bora", text: "<en>{U2-018|To be honest}</en>, alarm beş kez çaldı; ben hiçbirini duymadım." }
+      - { speaker: "Murat Bey", text: "Doğruyu söylediğin için teşekkürler, Bora. Bu akşam erken yat." }
