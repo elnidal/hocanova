@@ -31,6 +31,10 @@ steps:
       options: ["It is famous for the Mevlana Museum.", "It is famous with the weather.", "It is famous at the sea.", "It is famous by the sea."]
       answer: 0
       explain: "Kalıp \"famous for\" ile kurulur; with, at, by yanlıştır."
+      why_wrong:
+        - "\"Famous with\" yanlış edat; ünlü olunan şey \"for\" ile söylenir."
+        - "\"Famous at the sea\" anlamsız bir yapı; doğru kalıp \"famous for\"."
+        - "\"By the sea\" deniz kenarında demek; ünlü olma nedenini bildirmez."
     tekrar:
       id: u7d12-056-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["Bursa is famous for its kebab.", "Bursa is famous with its kebab.", "Bursa is famous at its kebab.", "Bursa is famous by its kebab."]
       answer: 0
       explain: "\"famous for + isim\"."
+      why_wrong:
+        - "\"Famous with\" Türkçedeki \"ile ünlü\"den gelen bir tuzak; doğru edat \"for\"."
+        - "\"Famous at\" yanlış edat; bir şeyle ünlü olmak \"famous for\" olur."
+        - "\"Famous by\" kullanılmaz; doğru kalıp her zaman \"famous for + isim\"."
   - item: U7-057
     card:
       example_en: "Have you ever been to Ephesus? – Yes, I have. I went there last year."
@@ -63,6 +71,10 @@ steps:
       options: ["Yes, I have.", "Yes, I am.", "No, I wasn't.", "No, I don't."]
       answer: 0
       explain: "Almanya'ya gitmiş olduğu için cevap: Yes, I have."
+      why_wrong:
+        - "\"Have you ever…?\" sorusu \"have\" ile cevaplanır; \"Yes, I am\" uymaz."
+        - "Bora Almanya'ya gitmiş; olumsuz cevap da \"wasn't\" de yanlış."
+        - "\"No, I don't\" hem olumsuz hem yanlış yardımcı fiil; Bora gitmiş."
     tekrar:
       id: u7d12-057-t
       type: dialogue_complete
@@ -73,6 +85,10 @@ steps:
       options: ["No, I haven't.", "Yes, I have.", "Yes, I did.", "No, I didn't."]
       answer: 0
       explain: "\"But I'd love to go there one day\" henüz gitmediğini gösterir; \"Have you ever…?\" sorusunun olumsuz kısa cevabı: No, I haven't."
+      why_wrong:
+        - "\"But I'd love to go there one day\" B'nin henüz gitmediğini gösteriyor."
+        - "\"Have you ever…?\" sorusu \"did\" ile cevaplanmaz; üstelik B oraya gitmemiş."
+        - "\"Didn't\" bu kalıba uymaz; doğru kısa cevap \"No, I haven't.\""
   - item: U7-058
     card:
       example_en: "Did you enjoy your trip? – Yes, it was great! How long did you stay? – Three days."
@@ -96,6 +112,10 @@ steps:
       options: ["Did you enjoy your trip?", "Do you like football?", "Are you going to school?", "Can you swim?"]
       answer: 0
       explain: "Cevap \"Evet, çok keyif aldım\" olduğuna göre soru geziyle ilgili olmalı."
+      why_wrong:
+        - "Cevaptaki \"The beaches were wonderful\" futbolla ilgili değil; soru geziyi sormalı."
+        - "Okula gitmeyi soran soru \"I really enjoyed it\" ve plajlarla uyuşmuyor."
+        - "\"Can you swim?\" yeteneği sorar; cevap ise geçmişteki bir geziyi anlatıyor."
     tekrar:
       id: u7d12-058-t
       type: dialogue_complete
@@ -106,6 +126,10 @@ steps:
       options: ["Four days.", "Four euros.", "Four people.", "Four kilometres."]
       answer: 0
       explain: "How long = ne kadar süre: dört gün."
+      why_wrong:
+        - "\"Four euros\" fiyat bildirir; \"How long\" ise ne kadar süre kaldığını sorar."
+        - "\"Four people\" kişi sayısıdır; \"How many people\" sorusunun cevabı olur."
+        - "\"Four kilometres\" mesafe bildirir; bu \"How far\" sorusunun cevabı olur."
   - item: U7-059
     card:
       example_en: "What is Mardin like? – It's a historic and beautiful city."
@@ -129,6 +153,10 @@ steps:
       options: ["It's lively and charming.", "Yes, I like İzmir.", "I am from İzmir.", "I don't go there."]
       answer: 0
       explain: "Soru İzmir'in nasıl bir yer olduğunu soruyor; sıfatlarla betimleme gerekir."
+      why_wrong:
+        - "\"Yes, I like İzmir\" \"Do you like…?\" sorusunun cevabı; \"What is … like?\" betimleme ister."
+        - "Nereli olduğunu söylemek İzmir'in nasıl bir yer olduğunu anlatmaz."
+        - "Oraya gitmediğini söylemek şehri betimlemez; soru İzmir'in nasıl olduğunu soruyor."
     tekrar:
       id: u7d12-059-t
       type: situation
@@ -138,6 +166,10 @@ steps:
       options: ["What is Antalya like?", "Do you like Antalya?", "Where is Antalya?", "Is Antalya far?"]
       answer: 0
       explain: "\"What is … like?\" bir yerin nasıl olduğunu sorar."
+      why_wrong:
+        - "\"Do you like…?\" kişinin sevip sevmediğini sorar; yerin nasıl olduğunu değil."
+        - "\"Where is…?\" sorusu konumu sorar; yerin nasıl bir yer olduğunu betimletmez."
+        - "\"Is Antalya far?\" yalnız uzaklığı sorar; şehri betimlemeyi istemez."
   - item: U7-060
     card:
       example_en: "What do you think about the new museum? – To me, it is wonderful."
@@ -161,6 +193,10 @@ steps:
       options: ["What do you think about travelling by train?", "How old are you?", "Where do you live?", "What time is it?"]
       answer: 0
       explain: "\"To me, it is a great idea\" fikir bildirir; soru da fikir sormalıdır."
+      why_wrong:
+        - "\"How old are you?\" yaş sorar; ona \"a great idea\" diye cevap verilmez."
+        - "Nerede yaşadığı sorulursa cevap bir yer olur; fikir değil."
+        - "Saat sorusunun cevabı bir saattir; \"To me, it is a great idea\" uymaz."
     tekrar:
       id: u7d12-060-t
       type: dialogue_complete
@@ -171,6 +207,10 @@ steps:
       options: ["To me, it is a great idea.", "To me, it is on Monday.", "To me, it is in Rome.", "To me, it is eleven o'clock."]
       answer: 0
       explain: "Fikir sorulduğuna göre cevap da bir fikirdir."
+      why_wrong:
+        - "\"On Monday\" bir zaman bildirir; fikir soran soruya cevap olmaz."
+        - "\"In Rome\" bir yer bildirir; Selin ise Elif'in fikrini soruyor."
+        - "Saat bilgisi fikir değil; Elif ardından adaları görmeyi çok istediğini söylüyor."
   - item: U7-061
     card:
       example_en: "The Blue Mosque is a must-see in İstanbul. It is worth visiting."
@@ -194,6 +234,10 @@ steps:
       options: ["You must not miss it.", "It is dangerous.", "It is not worth doing.", "It is only for children."]
       answer: 0
       explain: "must-see = mutlaka görülmeli: kaçırılmamalı."
+      why_wrong:
+        - "Yazar balon turunun tehlikeli olduğundan söz etmiyor; metinde olmayan bilgi."
+        - "\"Must-see\" mutlaka görülmeli demek; \"not worth doing\" bunun tam tersi."
+        - "Metinde çocuklardan söz edilmiyor; yazar Kapadokya'ya giden herkese öneriyor."
     tekrar:
       id: u7d12-061-t
       type: situation
@@ -203,6 +247,10 @@ steps:
       options: ["It's a must-see.", "It's not worth seeing.", "It's a very small thing.", "It's closed for repair."]
       answer: 0
       explain: "must-see = mutlaka görülmesi gereken."
+      why_wrong:
+        - "\"Not worth seeing\" görmeye değmez demek; \"must-see\"nin tam tersi."
+        - "\"A very small thing\" önemsiz bir şeyi anlatır; mutlaka görülmeli anlamı yok."
+        - "\"Closed for repair\" tamir için kapalı demek; görülemez, bir öneri değil."
 tips:
   - type: tuzak
     refs: [U7-059]

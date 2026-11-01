@@ -31,6 +31,10 @@ steps:
       options: ["Ephesus is important for the world's cultural heritage.", "Ephesus is a new city.", "Ephesus is closed to tourists.", "Ephesus is a modern port."]
       answer: 0
       explain: "Dünya Miras Listesi'ne alınan antik şehir kültürel miras için önemlidir."
+      why_wrong:
+        - "Efes bir \"ancient city\"; yeni bir şehir değil, binlerce yıllık."
+        - "Her yıl milyondan fazla turist geliyor; turistlere kapalı değil."
+        - "Metin Efes'i antik şehir olarak anlatıyor; modern bir liman değil."
     tekrar:
       id: u7d09-040-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["An ancient theatre and old traditions", "A new shopping centre", "A modern airport", "A football match"]
       answer: 0
       explain: "Antik tiyatro ve eski gelenekler kültürel mirastır."
+      why_wrong:
+        - "Yeni alışveriş merkezi bugünün yapısıdır; geçmişten kalan miras değil."
+        - "Modern havalimanı yeni yapılmıştır; kültürel miras geçmişten kalan şeylerdir."
+        - "Futbol maçı bir etkinlik; geçmişten kalan gelenek ya da yapı değil."
   - item: U7-041
     card:
       example_en: "The castle dates back to the twelfth century."
@@ -63,6 +71,10 @@ steps:
       options: ["Some of them are about 5,000 years old.", "They were built last year.", "They are 500 years old.", "They are made of gold."]
       answer: 0
       explain: "MÖ 3000 yaklaşık 5.000 yıl öncesidir."
+      why_wrong:
+        - "\"Date back to 3000 BC\": duvarlar geçen yıl değil, binlerce yıl önce yapıldı."
+        - "500 yıl çok az; MÖ 3000 yaklaşık 5.000 yıl önce demek."
+        - "Metin duvarların neyden yapıldığını söylemiyor; altın metinde olmayan bilgi."
     tekrar:
       id: u7d09-041-t
       type: gap_fill
@@ -73,6 +85,10 @@ steps:
       options: ["dates back", "goes down", "looks after", "comes out"]
       answer: 0
       explain: "\"dates back to 1550\" = 1550'ye dayanır."
+      why_wrong:
+        - "\"Go down\" aşağı inmek demek; bir yapının ne kadar eski olduğunu anlatmaz."
+        - "\"Look after\" birine bakmak, ilgilenmek demek; bir yapının tarihini bildirmez."
+        - "\"Come out\" çıkmak ya da yayımlanmak demek; caminin yaşını anlatmaz."
   - item: U7-042
     card:
       example_en: "The museum contains more than five thousand ancient objects."
@@ -96,6 +112,10 @@ steps:
       options: ["Many ancient objects", "Only modern paintings", "Nothing important", "A swimming pool"]
       answer: 0
       explain: "Müze 2.000'den fazla antik eşya barındırıyor."
+      why_wrong:
+        - "Metin antik eşyalardan söz ediyor; modern resimler metinde yok."
+        - "Müzede 2.000'den fazla antik eşya var; önemsiz bir yer değil."
+        - "Yüzme havuzu metinde olmayan bilgi; müze eski eşyalar sergiliyor."
     tekrar:
       id: u7d09-042-t
       type: gap_fill
@@ -106,6 +126,10 @@ steps:
       options: ["contained", "conquered", "abandoned", "accepted"]
       answer: 0
       explain: "Mezarda çok sayıda çömlek ve altın bulunuyordu: contained."
+      why_wrong:
+        - "\"Conquered\" fethetti demek; bir mezar çömlekleri ya da altını fethedemez."
+        - "\"Abandoned\" terk etti demek; mezarın içinde ne bulunduğunu anlatmaz."
+        - "\"Accepted\" kabul etti demek; bir yerin içinde ne olduğunu söylemez."
   - item: U7-043
     card:
       example_en: "We bought handmade carpets and pottery at the handicrafts market."
@@ -129,6 +153,10 @@ steps:
       options: ["Watch artists and buy handicrafts", "Ride a cruise ship", "Sunbathe at the seaside", "Climb a plateau"]
       answer: 0
       explain: "Ziyaretçiler sanatçıları izleyebilir ve el sanatları satın alabilir."
+      why_wrong:
+        - "Avanos'ta gemi turundan söz edilmiyor; metin çömlekçiliği anlatıyor."
+        - "Sahilde güneşlenmek metinde yok; ziyaretçiler çömlek yapımını izliyor."
+        - "Platoya tırmanmak metinde olmayan bilgi; ziyaretçiler el sanatı ürünler alıyor."
     tekrar:
       id: u7d09-043-t
       type: situation
@@ -138,6 +166,10 @@ steps:
       options: ["A carpet made by hand", "A car made in a factory", "A phone made by a machine", "A plastic bottle"]
       answer: 0
       explain: "El yapımı halı bir el sanatıdır."
+      why_wrong:
+        - "Fabrikada yapılan araba makine ürünüdür; el yapımı değil."
+        - "Makinenin yaptığı telefon el sanatı sayılmaz; el emeği yok."
+        - "Plastik şişe fabrikada üretilir; elle yapılmış sanat değil."
   - item: U7-044
     card:
       example_en: "İstanbul has great cultural diversity: people from many cultures live there."
@@ -161,6 +193,10 @@ steps:
       options: ["It has cultural diversity.", "It has only one culture.", "It is under construction.", "It is an abandoned class."]
       answer: 0
       explain: "Farklı ülkelerden öğrenciler var: kültürel çeşitlilik."
+      why_wrong:
+        - "Suriye, Almanya, Japonya, Türkiye: sınıfta tek değil, birçok kültür var."
+        - "\"Under construction\" yapım aşamasında demek; binalar için kullanılır, sınıfı anlatmaz."
+        - "Terk edilmiş sınıf olmaz; öğrenciler birlikte yemek yiyip dil öğreniyor."
     tekrar:
       id: u7d09-044-t
       type: situation
@@ -170,6 +206,10 @@ steps:
       options: ["Many different cultures living together", "Only one traditional culture", "A very old building", "A city with no people"]
       answer: 0
       explain: "Cultural diversity = farklı kültürlerin bir arada olması."
+      why_wrong:
+        - "Tek bir geleneksel kültür çeşitliliğin tersi; diversity farklılık demek."
+        - "Çok eski bir bina kültürel miras olabilir ama çeşitlilik değil."
+        - "İnsanı olmayan bir şehirde farklı kültürler bir arada yaşayamaz."
 tips:
   - type: tuzak
     refs: [U7-040]

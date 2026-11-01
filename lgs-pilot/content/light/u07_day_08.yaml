@@ -31,6 +31,10 @@ steps:
       options: ["The empire was very large and lasted a long time.", "The empire was a small village.", "The empire lasted only ten years.", "The empire was only in one country."]
       answer: 0
       explain: "600 yıldan uzun sürmüş ve üç kıtada toprakları olmuş: büyük ve uzun ömürlü."
+      why_wrong:
+        - "600 yıldan uzun süren, üç kıtaya yayılan devlet küçük bir köy değil."
+        - "\"More than 600 years\": on yıl metindeki bilgiyle çelişiyor."
+        - "Asya, Avrupa ve Afrika: imparatorluk tek bir ülkede değil, üç kıtadaydı."
     tekrar:
       id: u7d08-035-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["A person who rules an empire", "A person who guides tourists", "A person who watches a match", "A person who cooks in a hotel"]
       answer: 0
       explain: "Emperor, bir imparatorluğu yöneten kişidir."
+      why_wrong:
+        - "Turistleri gezdiren kişi tur rehberidir; imparator ülke yönetir."
+        - "Maç izleyen kişi seyircidir (spectator); imparatorlukla ilgisi yok."
+        - "Otelde yemek pişiren kişi aşçıdır; bir imparatorluğu yönetmez, mutfakta çalışır."
   - item: U7-036
     card:
       example_en: "Sultan Mehmet II conquered İstanbul in 1453."
@@ -63,6 +71,10 @@ steps:
       options: ["The Ottomans took the city.", "The city was abandoned.", "A new bridge was built.", "A palace was destroyed by a flood."]
       answer: 0
       explain: "Conquered = fethetti: Osmanlılar şehri aldı."
+      why_wrong:
+        - "\"Conquered\" ele geçirmek demek; şehir terk edilmedi, Osmanlılar aldı."
+        - "Metinde yeni bir köprüden hiç söz edilmiyor; metinde olmayan bilgi."
+        - "Sel ve saray yıkımı metinde yok; 1453'te şehir fethedildi."
     tekrar:
       id: u7d08-036-t
       type: gap_fill
@@ -73,6 +85,10 @@ steps:
       options: ["conquered", "accepted", "visited", "cooked"]
       answer: 0
       explain: "Birçok ülkeyi alıp büyük bir imparatorluk kurmak: conquer."
+      why_wrong:
+        - "\"Accepted\" kabul etti demek; imparatorluk kurmak için ülkeleri ele geçirmek gerekir."
+        - "\"Visited\" ziyaret etti demek; ülkeleri gezerek bir imparatorluk kurulmaz."
+        - "\"Cooked\" pişirdi demek; ülke pişirmek anlamsız, cümleye hiç uymaz."
   - item: U7-037
     card:
       example_en: "The Silk Road was a famous trade route between Asia and Europe."
@@ -96,6 +112,10 @@ steps:
       options: ["Merchants moved goods from China to Europe.", "Merchants moved goods only inside one village.", "Only ships used the road.", "Merchants carried only fruit."]
       answer: 0
       explain: "Yol Çin'den Avrupa'ya uzanıyor ve tüccarlar ipek, baharat, çay taşıyor."
+      why_wrong:
+        - "Yol Çin'den Avrupa'ya uzanıyor; tek bir köyün içinde değil."
+        - "Metinde gemiden söz edilmiyor; \"road\" kara yolunu anlatıyor."
+        - "Tüccarlar ipek, baharat ve çay taşıyor; meyveden söz edilmiyor."
     tekrar:
       id: u7d08-037-t
       type: situation
@@ -105,6 +125,10 @@ steps:
       options: ["A road or sea way used to carry goods from one place to another", "A road used only by tourists on foot", "A path for animals in a national park", "A place where kings live"]
       answer: 0
       explain: "Mal taşımak için kullanılan kara ya da deniz yolu."
+      why_wrong:
+        - "Yalnız yürüyen turistlerin yolu ticaret yolu değil; orada mal taşınmıyor."
+        - "Milli parktaki hayvan patikası doğaya aittir; orada mal taşınmaz."
+        - "Kralların yaşadığı yer saraydır; mal taşınan bir yol değildir."
   - item: U7-038
     card:
       example_en: "The villagers abandoned the old city after the earthquake."
@@ -128,6 +152,10 @@ steps:
       options: ["The people left it.", "The people are hiding.", "It is a new village.", "The sea covered it."]
       answer: 0
       explain: "İnsanlar 1920'lerde köyü bırakıp gitmiş; bugün evler boş."
+      why_wrong:
+        - "İnsanlar saklanmıyor; metin köyü 1920'lerde bırakıp gittiklerini söylüyor."
+        - "Köy yeni değil; 1920'lerden beri boş duran eski taş evler var."
+        - "Metinde denizden söz edilmiyor; köy insanlar gittiği için boş kaldı."
     tekrar:
       id: u7d08-038-t
       type: synonym
@@ -137,6 +165,10 @@ steps:
       options: ["leave", "join", "build", "visit"]
       answer: 0
       explain: "abandon = bırakıp gitmek, terk etmek ≈ leave."
+      why_wrong:
+        - "\"Join\" katılmak demek; bir yeri terk etmenin tam tersi anlamda."
+        - "\"Build\" inşa etmek demek; bir yeri bırakıp gitmekle ilgisi yok."
+        - "\"Visit\" ziyaret etmek; bir yere gidip gelmek, terk etmek değil."
   - item: U7-039
     card:
       example_en: "Archaeologists discovered a 2,000-year-old city under the ground."
@@ -160,6 +192,10 @@ steps:
       options: ["A king's tomb", "A new island", "A trade route", "A big port"]
       answer: 0
       explain: "Arkeologlar Mısır'da genç bir kralın mezarını keşfetti."
+      why_wrong:
+        - "Arkeologlar yeni bir ada bulmadı; Mısır'da bir mezar keşfettiler."
+        - "Ticaret yolundan metinde söz edilmiyor; altın dolu bir mezar bulundu."
+        - "Metinde büyük bir liman geçmiyor; genç bir kralın mezarı keşfedildi."
     tekrar:
       id: u7d08-039-t
       type: synonym
@@ -169,6 +205,10 @@ steps:
       options: ["discover", "conquer", "abandon", "construct"]
       answer: 0
       explain: "Bir şeyi ilk kez bulmak: discover."
+      why_wrong:
+        - "\"Conquer\" savaşarak ele geçirmektir; ilk kez bulmak değil."
+        - "\"Abandon\" bırakıp gitmektir; bir şeyi ilk kez bulmanın tam tersi."
+        - "\"Construct\" inşa etmek demek; var olmayan şeyi yapmak, bulmak değil."
 tips:
   - type: kelime_ailesi
     refs: [U7-035]

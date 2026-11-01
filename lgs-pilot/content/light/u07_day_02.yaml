@@ -31,6 +31,10 @@ steps:
       options: ["Because it has beautiful old houses", "Because it has a big airport", "Because it has the best beaches", "Because it is a big city"]
       answer: 0
       explain: "Metin, kasabanın eski Osmanlı evleri yüzünden popüler bir turistik yer olduğunu söylüyor."
+      why_wrong:
+        - "Metinde havalimanından hiç söz edilmiyor; metinde olmayan bilgi."
+        - "Safranbolu'nun plajı yazmıyor; ziyaretçiler eski evler için geliyor."
+        - "Metin \"This small town\" diyor; büyük şehir değil, küçük bir kasaba."
     tekrar:
       id: u7d02-001-t
       type: gap_fill
@@ -41,6 +45,10 @@ steps:
       options: ["attractive", "attraction", "attract", "attracting"]
       answer: 0
       explain: "\"is very … to tourists\": sıfat gerekir; attractive = çekici."
+      why_wrong:
+        - "\"Attraction\" isimdir; \"very\" ile nitelenecek bir sıfat gerekiyor."
+        - "\"Attract\" fiildir; \"is very\" sonrasında yalın fiil gelmez."
+        - "\"Attracting\" burada sıfat yerine geçmez; doğru sıfat \"attractive\"."
   - item: U7-006
     card:
       example_en: "We went on a cruise in the Mediterranean last summer."
@@ -64,6 +72,10 @@ steps:
       options: ["We are going on a cruise.", "We are going by bike.", "We are staying at home.", "We are visiting a farm."]
       answer: 0
       explain: "Yedi günlük büyük bir gemi tatili cruise'dur. Diğer şıklar \"gemi\" bilgisiyle uyuşmuyor."
+      why_wrong:
+        - "Kaan \"a big ship\" diyor; bisikletle adalara gidilmez."
+        - "Evde kalan biri yedi günlük gemi tatilinden söz etmez."
+        - "Çiftlik ziyareti karada olur; Kaan gemide bir tatil anlatıyor."
     tekrar:
       id: u7d02-006-t
       type: situation
@@ -73,6 +85,10 @@ steps:
       options: ["Mert is sleeping in a cabin on a ship and watching the sea.", "Mert is sleeping in a tent in the forest.", "Mert is sleeping in a hotel in the city.", "Mert is sleeping on a train."]
       answer: 0
       explain: "Gemideki kamarada uyumak ve denizi izlemek gemi tatilini (cruise) anlatır."
+      why_wrong:
+        - "Ormanda çadırda uyumak kamp yapmaktır; gemi yolculuğu değil."
+        - "Şehirdeki otel karada; \"cruise\" için gemide olmak gerekir."
+        - "Tren de bir taşıt ama denizde gitmez; gemi tatili değil."
   - item: U7-007
     card:
       example_en: "The tour guide showed us the old city and told us interesting stories."
@@ -96,16 +112,24 @@ steps:
       options: ["He is a tour guide.", "He is a pilot.", "He is a doctor.", "He is a farmer."]
       answer: 0
       explain: "Binayı anlatıp turistleri gezdiren kişi tur rehberidir."
+      why_wrong:
+        - "Pilot uçak kullanır; adam turistlere binayı anlatıp gezdiriyor."
+        - "Doktor hasta bakar; burada ise turistlere binanın tarihi anlatılıyor."
+        - "Çiftçi tarlada çalışır; turistlere sarayı anlatmak rehberin işi."
     tekrar:
       id: u7d02-007-t
-      type: gap_fill
+      type: text_infer
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which one completes the sentence?</en>"
-      stem: "<en>A good ________ knows a lot about history and speaks more than one language.</en>"
-      options: ["tour guide", "souvenir", "brochure", "cruise"]
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the brochure?</en>"
+      stem: "<en>EPHESUS DAY TOUR\nTour guide: speaks English and German\nBus from your hotel at 8 a.m.\nLunch at a village restaurant\n35 € per person</en>"
+      options: ["The number of people in the group", "The languages of the person who shows you around", "The time when the tour starts", "The cost for each visitor"]
       answer: 0
-      explain: "Tarih bilen ve birkaç dil konuşan kişi tur rehberidir; diğerleri kişi değil, nesne ya da etkinliktir."
+      explain: "Broşürde grupta kaç kişi olacağı yazmıyor. Rehberin dilleri, kalkış saati ve kişi başı fiyat satırlarda var."
+      why_wrong:
+        - "\"Tour guide: speaks English and German\": size yeri gezdiren kişinin konuştuğu diller bu satırda."
+        - "\"Bus from your hotel at 8 a.m.\" satırı turun sabah sekizde başladığını söylüyor."
+        - "\"35 € per person\" her ziyaretçinin ödeyeceği ücret; bu bilgi broşürde var."
   - item: U7-008
     card:
       example_en: "I bought a small boat as a souvenir from Bodrum."
@@ -129,6 +153,10 @@ steps:
       options: ["Yes, I bought a souvenir.", "Yes, I bought a ticket.", "No, I sold my bag.", "No, I lost my passport."]
       answer: 0
       explain: "Küçük bir çömlek gezi hatırasıdır (souvenir). Bilet ya da pasaport değildir."
+      why_wrong:
+        - "Bilet hatıra eşyası değil; Selin \"a small clay pot\" alıyor."
+        - "Selin bir şey aldığını anlatıyor; \"No, I sold\" bununla çelişiyor."
+        - "Pasaport kaybetmek, \"It will remind me of my trip\" cümlesiyle ilgisiz."
     tekrar:
       id: u7d02-008-t
       type: gap_fill
@@ -139,6 +167,10 @@ steps:
       options: ["to remember a place", "to cook a meal", "to study for an exam", "to repair a car"]
       answer: 0
       explain: "Souvenir bir yeri hatırlamak için alınır."
+      why_wrong:
+        - "Yemek pişirmek için alınan şey malzemedir; hatıra eşyası değil."
+        - "Sınava çalışmak için kitap alınır; souvenir bir yeri hatırlatır."
+        - "Araba tamiri için parça alınır; souvenir bir gezi anısıdır."
   - item: U7-009
     card:
       example_en: "We read the travel brochure and chose a hotel near the beach."
@@ -162,6 +194,10 @@ steps:
       options: ["How to get to the hotel", "The price of the holiday", "Breakfast at the hotel", "Evening activities"]
       answer: 0
       explain: "Fiyat (400 €), kahvaltı ve akşam etkinlikleri yazıyor; otele nasıl gidileceği yazmıyor."
+      why_wrong:
+        - "\"400 € per person\" tatilin fiyatını veriyor; bilgi metinde var."
+        - "\"Free breakfast every morning\" oteldeki kahvaltıyı anlatıyor; bilgi metinde var."
+        - "\"Boat trips and folk dance shows in the evenings\" akşam etkinlikleri."
     tekrar:
       id: u7d02-009-t
       type: situation
@@ -171,6 +207,10 @@ steps:
       options: ["A paper with pictures, prices and information about a holiday place", "A book with words and their meanings", "A list of the students in a class", "A letter from an old friend"]
       answer: 0
       explain: "Tatil yeri hakkında resim, fiyat ve bilgi veren kâğıt broşürdür."
+      why_wrong:
+        - "Kelimeler ve anlamları olan kitap sözlüktür; broşür değil."
+        - "Sınıf listesinde öğrenci adları olur; tatil bilgisi yoktur."
+        - "Eski bir arkadaştan gelen kâğıt mektuptur; tatil yeri tanıtmaz."
 tips:
   - type: kelime_ailesi
     refs: [U7-001]

@@ -30,6 +30,10 @@ steps:
       options: ["enormous", "tiny", "ancient", "rural"]
       answer: 0
       explain: "huge ≈ enormous (kocaman)."
+      why_wrong:
+        - "\"Tiny\" minik demek; \"huge\" kelimesinin eş anlamlısı değil, zıttı."
+        - "\"Ancient\" çok eski demek; büyüklük değil, bir şeyin yaşını bildirir."
+        - "\"Rural\" kırsal demek; yer türünü anlatır, stadyumun büyüklüğünü değil."
     tekrar:
       id: u7d11-050-t
       type: odd_one_out
@@ -39,6 +43,10 @@ steps:
       options: ["tiny", "huge", "giant", "large"]
       answer: 0
       explain: "enormous (devasa) ↔ tiny (minik)."
+      why_wrong:
+        - "\"Huge\" kocaman demek; enormous ile eş anlamlı, zıt değil."
+        - "\"Giant\" dev demek; enormous ile aynı anlamı taşıyor."
+        - "\"Large\" büyük demek; enormous'a yakın, zıt anlam değil."
   - item: U7-051
     card:
       example_en: "Hagia Sophia is a remarkable building."
@@ -62,6 +70,10 @@ steps:
       options: ["It's remarkable!", "It's boring.", "It's ordinary.", "It's ugly."]
       answer: 0
       explain: "400 yıllık ve hâlâ sağlam köprü için övgü uygun: It's remarkable!"
+      why_wrong:
+        - "400 yıllık sağlam köprü sıkıcı bulunmuyor; Kaan hayran kalmış."
+        - "\"Ordinary\" sıradan demek; Kaan'ın \"still very strong!\" övgüsüyle çelişiyor."
+        - "\"Ugly\" çirkin demek; Kaan'ın ünlemli ve olumlu övgüsüne hiç uymuyor."
     tekrar:
       id: u7d11-051-t
       type: synonym
@@ -71,6 +83,10 @@ steps:
       options: ["amazing", "normal", "average", "empty"]
       answer: 0
       explain: "remarkable ≈ amazing."
+      why_wrong:
+        - "\"Normal\" sıradan demek; remarkable ise dikkat çekici, olağanüstü anlamındadır."
+        - "\"Average\" ortalama demek; remarkable kelimesinin tam tersi anlamda kullanılır."
+        - "\"Empty\" boş demek; remarkable ile hiçbir anlam ilişkisi yok."
   - item: U7-052
     card:
       example_en: "The market is crowded on Saturdays. It is a busy street."
@@ -94,6 +110,10 @@ steps:
       options: ["Let's take a quiet road instead.", "Let's run through the street.", "Let's play football there.", "Let's go there at once."]
       answer: 0
       explain: "Caddede çok araba ve insan var; daha sakin bir yol önermek mantıklı."
+      why_wrong:
+        - "Arabalarla dolu caddede koşmak tehlikelidir; Selin bunu önermez."
+        - "Kalabalık caddede futbol oynanmaz; Selin sakin bir yol arıyor."
+        - "\"At once\" hemen demek; ama Selin o caddeden gitmek istemiyor."
     tekrar:
       id: u7d11-052-t
       type: situation
@@ -103,6 +123,10 @@ steps:
       options: ["A street with many people and cars", "A street where people work in offices", "A street with no people", "A street with a lot of homework"]
       answer: 0
       explain: "Yer için busy = kalabalık, hareketli (meşgul değil)."
+      why_wrong:
+        - "\"Busy\" burada meşgul değil; bir yer için kalabalık, hareketli demek."
+        - "İnsanı olmayan bir cadde sakindir; \"busy street\"in tam tersini anlatır."
+        - "Caddenin ödevi olmaz; \"busy\" kişide meşgul, yerde kalabalık demek."
   - item: U7-053
     card:
       example_en: "Our trip to Cappadocia was unforgettable. I will always remember the balloons."
@@ -126,6 +150,10 @@ steps:
       options: ["It was an unforgettable experience.", "It was a boring trip.", "It was a short walk.", "It was a bad experience."]
       answer: 0
       explain: "O sabahı sonsuza kadar hatırlayacak: unutulmaz bir deneyim."
+      why_wrong:
+        - "\"I will remember that morning forever\": gezi sıkıcı değildi."
+        - "Balonla uçmak kısa bir yürüyüş değil; Elif Kapadokya üzerinde uçtu."
+        - "Yüzlerce fotoğraf ve sonsuza kadar hatırlamak kötü bir deneyime uymaz."
     tekrar:
       id: u7d11-053-t
       type: gap_fill
@@ -136,6 +164,10 @@ steps:
       options: ["memories", "accommodations", "populations", "climates"]
       answer: 0
       explain: "Fotoğraflara bakarak gezi anılarını hatırlıyor: good memories."
+      why_wrong:
+        - "\"Accommodations\" kalınacak yerler demek; fotoğraflara bakınca hatırlanan şeyler anılardır."
+        - "\"Populations\" nüfus demek; okul gezisinden kalan güzel şeyleri anlatmaz."
+        - "\"Climates\" iklimler demek; fotoğraflara bakınca hatırlanan gezi anıları değil."
   - item: U7-054
     card:
       example_en: "I will definitely come back to this city. It is truly beautiful."
@@ -159,6 +191,10 @@ steps:
       options: ["Yes, definitely!", "No, never!", "I'm not sure at all.", "I don't want to go."]
       answer: 0
       explain: "Müzeyi çok beğenmiş; olumlu ve kesin bir cevap uyar."
+      why_wrong:
+        - "\"Never\" asla demek; \"the best museum\" diyen biri tekrar gitmek ister."
+        - "Bora kararsız değil; müzeyi şehrin en iyisi olarak görüyor."
+        - "\"I don't want to go\" müzeyi çok beğenmesiyle çelişiyor."
     tekrar:
       id: u7d11-054-t
       type: gap_fill
@@ -169,6 +205,10 @@ steps:
       options: ["truly", "hardly", "rarely", "never"]
       answer: 0
       explain: "\"truly wonderful\" = gerçekten harika."
+      why_wrong:
+        - "\"Hardly\" neredeyse hiç demek; \"You must visit then!\" önerisiyle çelişiyor."
+        - "\"Rarely\" nadiren demek; ardından gelen \"You must visit then!\" önerisine uymaz."
+        - "\"Never\" asla demek; Mayıs'ta mutlaka gidin önerisiyle çelişiyor."
   - item: U7-055
     card:
       example_en: "Alaçatı is a charming town with stone houses and flower-covered streets."
@@ -192,6 +232,10 @@ steps:
       options: ["Small and lovely", "Huge and noisy", "Cold and ugly", "Modern and crowded"]
       answer: 0
       explain: "Sadece on oda, güllü bahçe ve sıcak aile ortamı: küçük ve hoş."
+      why_wrong:
+        - "On odalı otel kocaman değil; aile ortamı da gürültülü değil."
+        - "Güllü bahçe ve sıcak aile ortamı soğuk, çirkin bir yeri anlatmaz."
+        - "Sadece on oda var; otel kalabalık değil, küçük ve sakin."
     tekrar:
       id: u7d11-055-t
       type: synonym
@@ -201,6 +245,10 @@ steps:
       options: ["lovely", "enormous", "crowded", "ancient"]
       answer: 0
       explain: "charming ≈ lovely."
+      why_wrong:
+        - "\"Enormous\" kocaman demek; charming ise hoş, sevimli ve çekici anlamında."
+        - "\"Crowded\" kalabalık demek; charming ile anlamca hiçbir ilgisi yok."
+        - "\"Ancient\" çok eski demek; charming ise çekici ve hoş demek."
 tips:
   - type: tuzak
     refs: [U7-052]

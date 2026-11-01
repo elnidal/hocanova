@@ -31,6 +31,10 @@ steps:
       options: ["Guests can have breakfast at the place.", "Guests can have dinner at the place.", "It has 50 rooms.", "It costs 6 € per night."]
       answer: 0
       explain: "Her sabah kahvaltı var; öğle ve akşam yemeği dahil değil; 6 oda, gecesi 50 €."
+      why_wrong:
+        - "\"Lunch and dinner are not included\": akşam yemeği verilmiyor."
+        - "50 sayısı fiyata ait; oda sayısı 6. Aynı sayı farklı bilgiye bağlanmış."
+        - "Gecelik fiyat 50 €; 6 oda sayısıdır. Sayılar yer değiştirmiş."
     tekrar:
       id: u7d04-015-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["At a bed and breakfast", "At a big resort with three pools", "On a cruise ship", "At a huge shopping centre"]
       answer: 0
       explain: "Küçük, ucuz ve oda + kahvaltı veren yer bed and breakfast'tır."
+      why_wrong:
+        - "Üç havuzlu büyük resort küçük ve ucuz bir yer değildir."
+        - "Gemi tatili pahalıdır ve gemide kalınır; küçük ucuz bir oda değil."
+        - "Alışveriş merkezi konaklama yeri değildir; orada oda ve kahvaltı olmaz."
   - item: U7-016
     card:
       example_en: "A guesthouse is cheaper than a big hotel, and the owners are very friendly."
@@ -63,6 +71,10 @@ steps:
       options: ["No, we didn't.", "Yes, we did.", "Yes, it was huge.", "No, we stayed at home."]
       answer: 0
       explain: "Küçük bir guesthouse'ta kalmışlar; yani büyük otelde kalmadılar: No, we didn't."
+      why_wrong:
+        - "Selin küçük bir pansiyonda kaldı; \"Yes, we did\" büyük otelde kaldığını söyler."
+        - "\"Huge\" kocaman demek; Selin \"small guesthouse\" diyor, yani yer küçüktü."
+        - "Selin Mardin'e gitti ve bir pansiyonda kaldı; evde kalmadı."
     tekrar:
       id: u7d04-016-t
       type: odd_one_out
@@ -72,6 +84,10 @@ steps:
       options: ["A souvenir shop", "A guesthouse", "A bed and breakfast", "A resort"]
       answer: 0
       explain: "Hediyelik eşya dükkânı kalınacak yer değildir; diğerleri konaklama yerleridir."
+      why_wrong:
+        - "Guesthouse küçük bir pansiyondur; misafirler orada gece kalır ve uyur."
+        - "Bed and breakfast oda ve kahvaltı veren bir konaklama yeridir."
+        - "Resort tatilcilerin kaldığı büyük tatil köyüdür; kalınacak bir yerdir."
   - item: U7-017
     card:
       example_en: "The holiday resort has a big pool, a beach and a spa."
@@ -89,12 +105,16 @@ steps:
       id: u7d04-017-s
       type: text_infer
       lgs_like: true
-      stem_id: S14
-      prompt: "<en>What can we say about Palm Resort?</en>"
-      stem: "<en>Palm Resort is by the sea. It has two swimming pools, a water park and five restaurants. Families with children love it.</en>"
-      options: ["It is good for a family holiday.", "It is a quiet hotel for old people.", "It has no pools.", "It is in the mountains."]
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the brochure?</en>"
+      stem: "<en>SUNSET BAY RESORT – Marmaris\nTwo pools, a water park and five restaurants\nRooms for families with children\nFree shuttle to the town centre\nOpen from May to October</en>"
+      options: ["The price of a room", "Places for swimming", "A way to get to the town", "The months when it is open"]
       answer: 0
-      explain: "Su parkı, havuzlar ve restoranlar var; çocuklu aileler seviyor: aile tatili için uygun."
+      explain: "Resort'un havuzları, kasabaya ulaşım ve açık olduğu aylar yazıyor; oda fiyatı yok."
+      why_wrong:
+        - "\"Two pools, a water park\": yüzülecek yerler broşürde var."
+        - "\"Free shuttle to the town centre\" kasabaya nasıl gidileceğini anlatıyor."
+        - "\"Open from May to October\" resort'un açık olduğu ayları veriyor."
     tekrar:
       id: u7d04-017-t
       type: gap_fill
@@ -105,6 +125,10 @@ steps:
       options: ["resort", "office", "factory", "garage"]
       answer: 0
       explain: "Tatil için gidilen, yapacak çok şey olan yer resort'tur."
+      why_wrong:
+        - "Ofis çalışma yeridir; yaz tatili Ege kıyısındaki bir ofiste geçirilmez."
+        - "Fabrikada üretim yapılır; \"a lot to do\" tatil eğlencesini anlatıyor."
+        - "Garaj araba konan yerdir; tatil için gidilen güzel bir yer değil."
   - item: U7-018
     card:
       example_en: "My grandparents live in the countryside, and the air there is very clean."
@@ -128,6 +152,10 @@ steps:
       options: ["In a rural area", "In a big city", "On an island", "In a busy street"]
       answer: 0
       explain: "Şehre uzak, çiftlik, tavuklar, nehir, temiz hava, sakin yaşam: kırsal bölge (rural area)."
+      why_wrong:
+        - "Metin \"far from the city\" diyor; büyük şehir bunun tam tersi."
+        - "Adadan söz edilmiyor; evin yanında deniz değil küçük bir nehir var."
+        - "Kalabalık cadde, \"the life is quiet\" bilgisiyle çelişiyor."
     tekrar:
       id: u7d04-018-t
       type: situation
@@ -137,6 +165,10 @@ steps:
       options: ["They live in a quiet place far from the city.", "They live in a big city.", "They live in another country.", "They live on a ship."]
       answer: 0
       explain: "\"live in the country\" kırsalda yaşamak demektir; başka bir ülkede yaşamak için \"live abroad\" denir."
+      why_wrong:
+        - "\"The country\" burada kırsal demek; büyük şehir bunun tam tersi."
+        - "Başka ülkede yaşamak \"live abroad\" ile söylenir; \"the country\" tuzağına dikkat."
+        - "Gemide yaşamaktan söz edilmiyor; \"in the country\" kırsalda yaşamaktır."
   - item: U7-019
     card:
       example_en: "Urban life is fast, and there are many shops, cars and tall buildings."
@@ -160,6 +192,10 @@ steps:
       options: ["City B is an urban area, and Village A is a rural area.", "Village A has more shops than City B.", "Village A has 20 cinemas.", "City B has fewer people than Village A."]
       answer: 0
       explain: "Büyük nüfuslu, çok mağazalı City B kentsel; küçük Village A kırsaldır."
+      why_wrong:
+        - "Village A'da 1 mağaza, City B'de 500 var: karşılaştırma ters kurulmuş."
+        - "20 sinema City B'nin satırında; Village A'da sinema yok."
+        - "2 milyon, 300'den çok: City B daha kalabalık, karşılaştırma ters kurulmuş."
     tekrar:
       id: u7d04-019-t
       type: odd_one_out
@@ -169,6 +205,10 @@ steps:
       options: ["rural", "ancient", "crowded", "busy"]
       answer: 0
       explain: "urban (kentsel) ↔ rural (kırsal)."
+      why_wrong:
+        - "\"Ancient\" çok eski demek; kentselin zıttı değil, yaşla ilgili."
+        - "\"Crowded\" kalabalık demek; şehirler genelde kalabalıktır, zıt anlam değil."
+        - "\"Busy\" hareketli demek; şehir hayatını anlatır, \"urban\"ın zıttı olamaz."
   - item: U7-063
     card:
       example_en: "Our budget is small, so we are staying in a cheap guesthouse, not a big resort."
@@ -206,7 +246,7 @@ steps:
       lgs_like: true
       stem_id: S01
       prompt: "<en>Which one completes the dialogue?</en>"
-      stem: "<en>Elif: Let's stay at the Grand Palace Hotel! It has three pools.\nDuru: ________ It's 300 € per night.</en>"
+      stem: "<en>Elif: Let's stay at the Sea Star Hotel! It has three pools.\nDuru: ________ It's 300 € per night.</en>"
       options: ["It's not in our budget.", "It's a must-see place.", "It's famous for its pools.", "It's very crowded."]
       answer: 0
       explain: "Duru fiyatı (300 € per night) gerekçe gösteriyor: bütçelerine uymuyor."

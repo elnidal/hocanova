@@ -30,16 +30,24 @@ steps:
       options: ["The Colosseum is an ancient building because it is about 2,000 years old.", "My bicycle is an ancient bicycle because it is three years old.", "This phone is ancient because I bought it yesterday.", "That shop is ancient because it opened last week."]
       answer: 0
       explain: "ancient binlerce yıllık şeyler için kullanılır; üç yıllık bisiklet ya da dün alınan telefon ancient olamaz."
+      why_wrong:
+        - "Üç yıllık bisiklet antik olamaz; ancient binlerce yıllık şeyler içindir."
+        - "Dün alınan telefon yepyenidir; \"ancient\" ile tam çelişiyor."
+        - "Geçen hafta açılan dükkân yepyenidir; hiçbir şekilde antik sayılmaz."
     tekrar:
       id: u7d07-030-t
-      type: gap_fill
+      type: table_graph
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which one completes the sentence?</en>"
-      stem: "<en>Troy is an ________ city. People lived there more than 3,000 years ago.</en>"
-      options: ["ancient", "modern", "urban", "crowded"]
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is TRUE?</en>"
+      stem: "<en>Göbeklitepe: over 11,000 years old · ancient temple · Şanlıurfa\nAspendos: about 1,850 years old · ancient theatre · Antalya\nGalata Tower: about 680 years old · stone tower · İstanbul</en>"
+      options: ["Göbeklitepe is the most ancient place in the table.", "The Galata Tower is older than Aspendos.", "Aspendos is in Şanlıurfa.", "The Galata Tower is about 1,850 years old."]
       answer: 0
-      explain: "3.000 yıldan eski şehir: ancient city."
+      explain: "11.000 yılı aşkın Göbeklitepe tablodaki en eski (most ancient) yer."
+      why_wrong:
+        - "680 yıl, 1.850 yıldan az: karşılaştırma ters kurulmuş."
+        - "Şanlıurfa Göbeklitepe'nin satırında; Aspendos Antalya'da. Özellik yanlış yere verilmiş."
+        - "1.850 Aspendos'un yaşı; Galata Kulesi'nin satırında 680 yazıyor."
   - item: U7-031
     card:
       example_en: "Ottoman architecture is famous for its domes and tiles."
@@ -63,6 +71,10 @@ steps:
       options: ["Famous buildings of an architect", "A holiday in the mountains", "The population of a city", "A new football stadium"]
       answer: 0
       explain: "Metin ünlü bir mimarın yaptığı yapılardan söz ediyor."
+      why_wrong:
+        - "Metinde dağ tatilinden söz edilmiyor; Mimar Sinan'ın yapıları anlatılıyor."
+        - "Şehirlerin nüfusu metinde geçmiyor; konu camiler ve köprüler."
+        - "Yeni stadyum yok; metin yüzyıllar önce yapılmış yapılardan söz ediyor."
     tekrar:
       id: u7d07-031-t
       type: gap_fill
@@ -72,6 +84,10 @@ steps:
       options: ["architecture", "tourism", "climate", "transportation"]
       answer: 0
       explain: "Bina tasarlama sanatı: architecture."
+      why_wrong:
+        - "\"Tourism\" gezi ve turistlerle ilgili sektördür; bina tasarlamak değil."
+        - "\"Climate\" bir yerin iklimidir; binaları tasarlama sanatıyla hiç ilgisi yok."
+        - "\"Transportation\" ulaşım demek; insanları ve eşyaları taşır, bina tasarlamaz."
   - item: U7-032
     card:
       example_en: "The construction of the bridge took five years."
@@ -95,6 +111,10 @@ steps:
       options: ["About seven years", "About seventy years", "About two years", "About twenty years"]
       answer: 0
       explain: "1609'dan 1616'ya kadar: yaklaşık yedi yıl."
+      why_wrong:
+        - "1616 − 1609 = 7; yetmiş yıl, sayıya bir sıfır eklemek olur."
+        - "Yapım 1609'da başlayıp 1616'da bitti; iki yıldan çok daha uzun."
+        - "Yirmi yıl çok fazla; iki tarih arasında yalnız yedi yıl var."
     tekrar:
       id: u7d07-032-t
       type: gap_fill
@@ -105,6 +125,10 @@ steps:
       options: ["construction", "location", "climate", "tourism"]
       answer: 0
       explain: "\"under construction\" = yapım aşamasında (kapalı)."
+      why_wrong:
+        - "\"Under location\" diye bir kalıp yok; location yer, konum demek."
+        - "\"Under climate\" anlamsız; iklim müzenin kapalı olmasını açıklamaz."
+        - "\"Under tourism\" denmez; doğru kalıp \"under construction\": yapım aşamasında."
   - item: U7-033
     card:
       example_en: "Topkapı Palace was the home of the sultans. A mansion is a large, beautiful house."
@@ -128,6 +152,10 @@ steps:
       options: ["A mansion", "A mosque", "A bridge", "A fountain"]
       answer: 0
       explain: "Zengin bir ailenin, yirmi odalı büyük evi: mansion (konak)."
+      why_wrong:
+        - "Cami ibadet yeridir; zengin bir ailenin yirmi odalı evi değil."
+        - "Köprü üzerinden geçilir; içinde oda ve bahçe olmaz."
+        - "Çeşme su akan küçük bir yapıdır; içinde yirmi oda bulunmaz."
     tekrar:
       id: u7d07-033-t
       type: situation
@@ -137,6 +165,10 @@ steps:
       options: ["A palace", "A harbour", "A guesthouse", "A square"]
       answer: 0
       explain: "Kral ya da sultanın evi saraydır."
+      why_wrong:
+        - "Liman gemilerin durduğu yerdir; kral ya da sultan orada yaşamaz."
+        - "Pansiyon misafirlerin kaldığı küçük yerdir; bir sultanın evi değil."
+        - "Meydan şehirde açık bir alandır; içinde kimse yaşamaz."
   - item: U7-034
     card:
       example_en: "We took off our shoes before we entered the mosque."
@@ -159,6 +191,10 @@ steps:
       options: ["Please take off your shoes and speak quietly.", "Please run and shout in the building.", "Please eat your lunch inside.", "Please play loud music."]
       answer: 0
       explain: "Camide ayakkabı çıkarılır ve sessiz konuşulur."
+      why_wrong:
+        - "Camide koşup bağırmak saygısızlıktır; rehber bunun tersini, sessizliği ister."
+        - "Cami içinde yemek yenmez; rehber ayakkabı çıkarmayı hatırlatır."
+        - "Camide yüksek sesle müzik çalınmaz; ibadet yerinde sessiz olunur."
     tekrar:
       id: u7d07-034-t
       type: gap_fill
@@ -169,6 +205,10 @@ steps:
       options: ["mosque", "harbour", "stadium", "factory"]
       answer: 0
       explain: "Ziyaretçilerin mütevazı giyinip sessiz konuşması gereken yer camidir."
+      why_wrong:
+        - "Limanda mütevazı giyinme ve sessiz konuşma kuralı olmaz; orası gemiler içindir."
+        - "Stadyumda insanlar bağırır; sessiz konuşma kuralı oraya uymaz."
+        - "Fabrika çalışma yeridir; ziyaretçilere giyinme kuralı konan bir ibadet yeri değil."
 tips:
   - type: tuzak
     refs: [U7-030]

@@ -31,6 +31,10 @@ steps:
       options: ["It's our pleasure!", "You are late!", "Be quiet!", "I don't know."]
       answer: 0
       explain: "Teşekküre misafirperver bir cevap: It's our pleasure!"
+      why_wrong:
+        - "Konuk teşekkür ediyor; \"You are late\" kaba ve ilgisiz bir cevap."
+        - "\"Be quiet\" sus demek; misafirperver bir ev sahibi böyle konuşmaz."
+        - "\"I don't know\" teşekküre cevap olmaz; ev sahibi misafirini ağırlıyor."
     tekrar:
       id: u7d10-045-t
       type: gap_fill
@@ -41,6 +45,10 @@ steps:
       options: ["hospitable", "crowded", "ancient", "enormous"]
       answer: 0
       explain: "Yabancıları çaya davet eden insanlar misafirperverdir (hospitable)."
+      why_wrong:
+        - "\"Crowded\" kalabalık demek; yabancıları çaya davet etmeyi anlatmaz."
+        - "\"Ancient\" çok eski demek; insanların misafirlere nasıl davrandığını anlatmaz."
+        - "\"Enormous\" kocaman demek; büyüklük bildirir, insanların cömertliğini anlatmaz."
   - item: U7-046
     card:
       example_en: "We ate authentic local food at a small restaurant."
@@ -64,6 +72,10 @@ steps:
       options: ["Local farmers", "Tourists", "Factories abroad", "Tour guides"]
       answer: 0
       explain: "Ürünleri yerel çiftçiler yapıyor."
+      why_wrong:
+        - "Turistler pazarda ürünleri yalnız tadıyor; onları yapanlar \"local farmers\"."
+        - "\"Factories abroad\" metinle çelişiyor; ürünler köyde, yerel çiftçilerin elinden."
+        - "Tur rehberinden metinde söz edilmiyor; ürünleri çiftçiler yapıyor."
     tekrar:
       id: u7d10-046-t
       type: synonym
@@ -73,6 +85,10 @@ steps:
       options: ["real", "expensive", "crowded", "new"]
       answer: 0
       explain: "authentic = gerçek, özgün ≈ real."
+      why_wrong:
+        - "\"Expensive\" pahalı demek; bir şeyin gerçek olup olmadığını söylemez."
+        - "\"Crowded\" kalabalık demek; authentic ile hiçbir anlam ilişkisi yok."
+        - "\"New\" yeni demek; authentic ise gerçek, özgün ve yerel anlamındadır."
   - item: U7-047
     card:
       example_en: "The dancers wore colourful clothes and performed a folk dance."
@@ -96,6 +112,10 @@ steps:
       options: ["Learn a traditional dance", "Go on a cruise", "Visit a museum", "Buy handicrafts"]
       answer: 0
       explain: "Konuklar bazı adımları öğrenip dansçılarla oynayabilir."
+      why_wrong:
+        - "Gemi turu metinde yok; cuma akşamı bahçede halk dansı var."
+        - "Müze ziyaretinden söz edilmiyor; konuklar dans adımları öğreniyor."
+        - "El sanatı alışverişi metinde olmayan bilgi; konuklar dans ediyor."
     tekrar:
       id: u7d10-047-t
       type: situation
@@ -105,6 +125,10 @@ steps:
       options: ["Dancers in traditional clothes are dancing to traditional music.", "Players are running after a ball.", "A man is repairing a car.", "Students are writing an exam."]
       answer: 0
       explain: "Geleneksel kıyafetli dansçılar halk oyunu gösterisini anlatır."
+      why_wrong:
+        - "Topun peşinden koşan oyuncular futbol maçıdır; dans gösterisi değil."
+        - "Araba tamir eden adam iş yapıyor; halk dansı yok."
+        - "Sınav yazan öğrenciler okulda; geleneksel müzik ve dans yok."
   - item: U7-048
     card:
       example_en: "Ramadan Feast is an important religious celebration in Türkiye."
@@ -127,6 +151,10 @@ steps:
       options: ["Ramadan Feast", "A football final", "A school concert", "A film festival"]
       answer: 0
       explain: "Ramazan Bayramı dini bir kutlamadır."
+      why_wrong:
+        - "Futbol finali spor etkinliğidir; dini bir kutlama değil."
+        - "Okul konseri bir müzik etkinliğidir; dinle hiçbir ilgisi yok."
+        - "Film festivali bir sanat etkinliğidir; dini bir bayram değil."
     tekrar:
       id: u7d10-048-t
       type: odd_one_out
@@ -136,6 +164,10 @@ steps:
       options: ["A harbour", "A mosque", "A church", "A temple"]
       answer: 0
       explain: "Liman dini bir yer değildir; diğerleri ibadet yerleridir."
+      why_wrong:
+        - "Cami Müslümanların ibadet ettiği bir yerdir; dini yerlerden biridir."
+        - "Kilise Hristiyanların ibadet ettiği bir yerdir; dini yerlerden biridir."
+        - "Tapınak (temple) birçok dinde ibadet edilen dini bir yerdir."
   - item: U7-049
     card:
       example_en: "The view from the top was incredible!"
@@ -159,6 +191,10 @@ steps:
       options: ["It was incredible!", "It was boring.", "It was ordinary.", "It was terrible."]
       answer: 0
       explain: "Şarkıcı harikaymış; olumlu bir cevap: It was incredible!"
+      why_wrong:
+        - "\"The singer was fantastic\": konser sıkıcı olamaz, ipucu olumlu."
+        - "\"Ordinary\" sıradan demek; fantastik bir şarkıcıyla izlenen konser sıradan değil."
+        - "\"Terrible\" berbat demek; oysa Elif şarkıcıyı fantastik buluyor, konseri beğenmiş."
     tekrar:
       id: u7d10-049-t
       type: synonym
@@ -168,6 +204,10 @@ steps:
       options: ["incredible", "ordinary", "simple", "boring"]
       answer: 0
       explain: "unbelievable ≈ incredible."
+      why_wrong:
+        - "\"Ordinary\" sıradan demek; \"unbelievable\" kelimesinin tam tersi anlamda."
+        - "\"Simple\" basit demek; \"unbelievable\" ile anlamca hiç örtüşmüyor."
+        - "\"Boring\" sıkıcı demek; inanılmaz bir şeyin tam tersini anlatır."
   - item: U7-064
     card:
       example_en: "In a fair world, everybody has equality and justice: the same rights for all people."

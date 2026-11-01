@@ -31,16 +31,24 @@ steps:
       options: ["At the seaside", "In the highlands", "In a big office", "At school"]
       answer: 0
       explain: "Her sabah yüzüyorlar, taze balık yiyorlar, deniz sıcak: Deniz sahilde (at the seaside)."
+      why_wrong:
+        - "Yaylada deniz olmaz; oysa Deniz her sabah denizde yüzüyor."
+        - "Ofiste yüzülmez; mesaj tatilde denizde geçen günleri anlatıyor."
+        - "\"We swim every morning\": okulda değil, deniz kenarında tatildeler."
     tekrar:
       id: u7d05-020-t
-      type: gap_fill
+      type: table_graph
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which one completes the sentence?</en>"
-      stem: "<en>Let's go to the ________ this weekend and have a picnic near the sea.</en>"
-      options: ["seaside", "bank", "library", "factory"]
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is TRUE?</en>"
+      stem: "<en>Kaş: seaside town · 8,000 people · famous for diving trips\nUzungöl: village by a lake · 2,000 people · famous for wooden houses\nErzurum: city on a plateau · 750,000 people · famous for skiing</en>"
+      options: ["Kaş is a good place for a holiday by the sea.", "Uzungöl has more people than Kaş.", "Erzurum is famous for diving trips.", "Erzurum has 8,000 people."]
       answer: 0
-      explain: "Deniz kenarında piknik yapılır: seaside."
+      explain: "Kaş bir sahil kasabası (seaside town): deniz kenarında tatil için uygun."
+      why_wrong:
+        - "Uzungöl'de 2.000, Kaş'ta 8.000 kişi var: karşılaştırma ters kurulmuş."
+        - "Dalış turları Kaş'ın satırında; özellik yanlış şehre verilmiş."
+        - "8.000 Kaş'ın nüfusu; Erzurum'un satırında 750.000 yazıyor. Sayıyı kendi satırıyla eşleştir."
   - item: U7-021
     card:
       example_en: "Many shepherds take their animals to the highlands in summer."
@@ -64,6 +72,10 @@ steps:
       options: ["The village is high above the sea.", "The village is next to the sea.", "The weather is hot in summer.", "There is no snow in winter."]
       answer: 0
       explain: "Köy deniz seviyesinden 1.800 metre yüksekte; diğer şıklar metinle çelişiyor."
+      why_wrong:
+        - "\"1,800 metres above the sea\": köy denizin yanında değil, yüksekte."
+        - "\"In summer the weather is cool\": yazın hava sıcak değil, serin."
+        - "\"In winter it snows a lot\": kışın çok kar yağıyor."
     tekrar:
       id: u7d05-021-t
       type: situation
@@ -73,6 +85,10 @@ steps:
       options: ["A plateau", "A harbour", "A beach", "A fountain"]
       answer: 0
       explain: "Plato yüksek düzlüktür; liman ve plaj denizin kenarındadır."
+      why_wrong:
+        - "Liman deniz kıyısındadır; gemiler orada durur, yüksekte değil."
+        - "Plaj denizin hemen kenarındadır; deniz seviyesinden yüksek değil."
+        - "Çeşme genelde şehir meydanında olur; yükseklikle hiç ilgisi yok."
   - item: U7-022
     card:
       example_en: "We took a boat to a small island and swam in the clear water."
@@ -96,13 +112,23 @@ steps:
       options: ["Yes, I visited the island.", "Yes, I visited the airport.", "No, I stayed at school.", "No, I visited my cousin's farm."]
       answer: 0
       explain: "Vapurla gidilen ve iki gün kalınan yer adadır; Elif \"Yes\" demeli."
+      why_wrong:
+        - "Vapurla havalimanına gidilmez; Elif feribotla Bozcaada'ya, yani bir adaya gitmiş."
+        - "Elif \"We took a ferry\" diyor; okulda kalmadı, yolculuk yaptı."
+        - "Kuzenin çiftliği karada; feribotla gidilen ve iki gün kalınan yer ada."
     tekrar:
       id: u7d05-022-t
-      type: odd_one_out
-      prompt: "<en>In which word is there a letter that we don't say?</en>"
-      options: ["island", "sand", "sea", "sun"]
+      type: situation
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>\"There is sea all around Bozcaada. You can only get there by ferry.\" What is Bozcaada?</en>"
+      options: ["an island", "a highland", "a square", "a fountain"]
       answer: 0
-      explain: "island /ˈaɪlənd/: s okunmaz."
+      explain: "Her yanı denizle çevrili, oraya yalnız vapurla gidilen yer: island."
+      why_wrong:
+        - "Highland yüksek, dağlık bir bölgedir; çevresi denizle çevrili değildir."
+        - "Square şehrin ortasındaki meydandır; vapurla gidilmez."
+        - "Fountain suyun aktığı çeşmedir; bir yer adı olamaz."
   - item: U7-023
     card:
       example_en: "People meet in the city square on Sundays."
@@ -126,6 +152,10 @@ steps:
       options: ["Square", "Climate", "Wildlife", "Population"]
       answer: 0
       explain: "\"Konak Square\" = Konak Meydanı. Diğer kelimeler yer adı olamaz."
+      why_wrong:
+        - "\"Climate\" iklim demek; \"Konak Climate\" diye bir yer adı olmaz."
+        - "\"Wildlife\" yaban hayatıdır; saat kulesi bir meydanda bulunur."
+        - "\"Population\" nüfus demek; çeşmenin yanındaki bir yeri anlatamaz, sayı bildirir."
     tekrar:
       id: u7d05-023-t
       type: situation
@@ -135,6 +165,10 @@ steps:
       options: ["The shops, cafés and a fountain are around the old square.", "The teacher drew a square on the board.", "My room has a square window.", "The box is square and heavy."]
       answer: 0
       explain: "İlk cümlede square şehirdeki meydandır; diğerlerinde \"kare\" şeklidir."
+      why_wrong:
+        - "Burada square tahtaya çizilen kare şekil; şehirdeki meydan değil."
+        - "Kare pencere bir şekli anlatıyor; \"square\" burada meydan anlamında değil."
+        - "Kare kutu şekil bildiriyor; şehirdeki bir yerden söz edilmiyor."
   - item: U7-024
     card:
       example_en: "Children were playing near the fountain in the square."
@@ -158,6 +192,10 @@ steps:
       options: ["A swimming pool", "A fountain", "Cafés and shops", "Street musicians"]
       answer: 0
       explain: "Çeşme, kafeler, dükkânlar ve sokak müzisyenleri var; yüzme havuzundan söz edilmiyor."
+      why_wrong:
+        - "\"In the middle you can see a beautiful fountain\": çeşme metinde var."
+        - "\"Around it there are cafés and shops\": kafeler ve dükkânlar geçiyor."
+        - "\"Street musicians play music every evening\": sokak müzisyenleri metinde."
     tekrar:
       id: u7d05-024-t
       type: gap_fill
@@ -168,6 +206,10 @@ steps:
       options: ["fountain", "backpack", "sandwich", "ticket"]
       answer: 0
       explain: "Madeni para atıp dilek tutulan yer çeşmedir (fountain)."
+      why_wrong:
+        - "Sırt çantasına para atılıp dilek tutulmaz; o eşya taşımak içindir."
+        - "Sandviç bir yiyecektir; içine madeni para atılıp dilek tutulmaz."
+        - "Bilete para atılmaz; dilek tutulan yer eski bir çeşmedir."
 tips:
   - type: tuzak
     refs: [U7-023]

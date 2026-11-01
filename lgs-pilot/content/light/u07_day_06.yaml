@@ -31,6 +31,10 @@ steps:
       options: ["Ships can easily come to it.", "It is far from the sea.", "It has no sea.", "It is in the highlands."]
       answer: 0
       explain: "Büyük gemiler her sabah gelip mal getiriyor ve şehrin doğal limanı var: gemiler kolayca gelebilir."
+      why_wrong:
+        - "Babası her sabah gemi izliyor; şehir denizden uzak olamaz."
+        - "Metin \"a city by the sea\" diyor; şehrin denizi var."
+        - "Yaylada liman olmaz; şehir deniz kenarında ve doğal limanı var."
     tekrar:
       id: u7d06-025-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["A place where ships stop to load and unload goods", "A place where people watch films", "A place where students take exams", "A place where planes take off"]
       answer: 0
       explain: "Liman, gemilerin yük aldığı ve boşalttığı yerdir."
+      why_wrong:
+        - "Film izlenen yer sinemadır; liman gemilerin durduğu yerdir."
+        - "Sınava girilen yer okuldur; gemilerin yük aldığı yerle ilgisi yok."
+        - "Uçakların kalktığı yer havalimanıdır (airport); port deniz kıyısındadır."
   - item: U7-026
     card:
       example_en: "The hotel is located in the city centre. Its location is perfect."
@@ -63,16 +71,24 @@ steps:
       options: ["It is near the beach and the castle.", "It is on a mountain.", "It is far from the sea.", "It is next to an airport."]
       answer: 0
       explain: "Otel Bodrum'un merkezinde; plaja ve kaleye beş dakika uzaklıkta."
+      why_wrong:
+        - "Otel Bodrum'un merkezinde (in the centre); dağın üstünde değil."
+        - "\"Five minutes from the beach\": otel denize uzak değil, çok yakın."
+        - "Havalimanından metinde hiç söz edilmiyor; metinde olmayan bilgi."
     tekrar:
       id: u7d06-026-t
-      type: gap_fill
+      type: table_graph
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which one completes the sentence?</en>"
-      stem: "<en>The museum's ________ is perfect: it is next to the bus station.</en>"
-      options: ["location", "climate", "population", "accommodation"]
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is TRUE?</en>"
+      stem: "<en>Castle Inn: next to Bodrum Castle · 80 € per night\nPine Lodge: in a forest, 10 km from the town · 45 € per night\nHarbour House: by the harbour, near the bus station · 60 € per night</en>"
+      options: ["Pine Lodge is the cheapest, but its location is far from the town.", "Castle Inn is cheaper than Pine Lodge.", "Pine Lodge is near the bus station.", "Harbour House costs 80 € per night."]
       answer: 0
-      explain: "Otobüs istasyonunun yanında olması yerin konumunu (location) anlatır."
+      explain: "Pine Lodge 45 € ile en ucuzu; ama konumu ormanda, kasabaya 10 km uzakta."
+      why_wrong:
+        - "80 €, 45 €'dan pahalı: karşılaştırma ters kurulmuş."
+        - "Otogarın yanındaki otel Harbour House; özellik yanlış otele verilmiş."
+        - "80 € Castle Inn'in fiyatı; Harbour House'un satırında 60 € yazıyor."
   - item: U7-027
     card:
       example_en: "The Mediterranean climate is hot and dry in summer. Today the weather is rainy."
@@ -88,14 +104,18 @@ steps:
       explain: "Bugünkü hava için weather kullanılır; climate yıllar boyunca süren iklimdir."
     sina:
       id: u7d06-027-s
-      type: text_infer
+      type: table_graph
       lgs_like: true
-      stem_id: S04
-      prompt: "<en>What is the climate of this country like?</en>"
-      stem: "<en>Egypt has a hot, dry climate. It almost never rains there, and the summers are very hot.</en>"
-      options: ["Hot and dry", "Cold and rainy", "Cool and windy", "Snowy all year"]
+      stem_id: S06
+      prompt: "<en>According to the table, which of the following is TRUE?</en>"
+      stem: "<en>Antalya: summer 34°C · winter 10°C · rain: 60 days a year\nKars: summer 24°C · winter −12°C · rain: 110 days a year\nMardin: summer 38°C · winter 3°C · rain: 40 days a year</en>"
+      options: ["Mardin has the hottest and driest climate of the three.", "Kars is warmer than Antalya in winter.", "Antalya has the coldest winters.", "Mardin has 110 rainy days a year."]
       answer: 0
-      explain: "Metin: sıcak ve kuru iklim."
+      explain: "Mardin'de yaz en sıcak (38°C) ve yağışlı gün en az (40): iklimi en sıcak ve en kuru."
+      why_wrong:
+        - "Kars'ta kış −12°C, Antalya'da 10°C: karşılaştırma ters kurulmuş."
+        - "En soğuk kış Kars'ta (−12°C); özellik yanlış şehre verilmiş."
+        - "110 Kars'ın yağışlı gün sayısı; Mardin'in satırında 40 yazıyor."
     tekrar:
       id: u7d06-027-t
       type: situation
@@ -105,6 +125,10 @@ steps:
       options: ["Winters in Erzurum are very cold and long.", "It is raining now, so take an umbrella.", "It was sunny this morning.", "I didn't wear a coat today because it was warm."]
       answer: 0
       explain: "Kışların her yıl soğuk ve uzun olması iklimi anlatır; diğerleri belli bir günün havasıdır."
+      why_wrong:
+        - "\"It is raining now\" şu anki havadır; iklim yıllar boyu süren durumdur."
+        - "\"This morning\" yalnız bir sabahı anlatıyor; bu hava durumu, iklim değil."
+        - "\"Today\" tek bir günden söz ediyor; iklim bir yerin genel havasıdır."
   - item: U7-028
     card:
       example_en: "The population of İstanbul is about sixteen million."
@@ -128,6 +152,10 @@ steps:
       options: ["City B", "City A", "City C", "City A and City C"]
       answer: 0
       explain: "800 bin, 1,5 milyon ve 2 milyon arasında en küçük nüfus City B'dedir."
+      why_wrong:
+        - "City A 2 milyonla en kalabalık; soru en küçük nüfusu istiyor."
+        - "City C 1,5 milyon; 800 binden fazla olduğu için en küçük değil."
+        - "City A ve City C, City B'den kalabalık; ikisi de en küçük değil."
     tekrar:
       id: u7d06-028-t
       type: gap_fill
@@ -138,6 +166,10 @@ steps:
       options: ["population", "climate", "souvenir", "brochure"]
       answer: 0
       explain: "Köylerden gençler gidince köydeki insan sayısı, yani nüfus azalır."
+      why_wrong:
+        - "\"Climate\" bir yerin iklimi demek; gençlerin köyden gitmesi iklimi küçültmez."
+        - "\"Souvenir\" hatıra eşyasıdır; köydeki insan sayısıyla hiç ilgisi yok."
+        - "\"Brochure\" tanıtım kâğıdıdır; köyde yaşayan insan sayısını anlatmaz."
   - item: U7-029
     card:
       example_en: "The national park protects the wildlife: bears, deer and many birds live there."
@@ -161,6 +193,10 @@ steps:
       options: ["Wild animals", "Big ships", "Old palaces", "Tall hotels"]
       answer: 0
       explain: "Geyik, tilki ve kuşlar: yabani hayvanlar."
+      why_wrong:
+        - "Büyük gemiler denizde olur; metin ormandaki parkı anlatıyor."
+        - "Parkta eski saraylardan söz edilmiyor; bu metinde olmayan bilgi."
+        - "Yüksek otellerden söz edilmiyor; ziyaretçiler geyik, tilki ve kuş görüyor."
     tekrar:
       id: u7d06-029-t
       type: situation
@@ -170,6 +206,10 @@ steps:
       options: ["Bears and deer live freely in the forest.", "Cars are stopping at the traffic lights.", "Students are doing homework at a desk.", "Tourists are buying souvenirs."]
       answer: 0
       explain: "Ormanda özgürce yaşayan ayılar ve geyikler yaban hayatıdır."
+      why_wrong:
+        - "Trafik ışığındaki arabalar şehir hayatıdır; yabani hayvanlar değil."
+        - "Masada ödev yapan öğrenciler doğadaki yabani hayvanlarla ilgili değil."
+        - "Hatıra eşyası alan turistler alışveriş yapıyor; yaban hayatı yok."
 tips:
   - type: tuzak
     refs: [U7-027]

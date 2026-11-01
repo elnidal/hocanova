@@ -31,6 +31,10 @@ steps:
       options: ["visitors", "spectators", "audiences", "players"]
       answer: 0
       explain: "Müzeyi gezmeye gelen kişiler visitors'tır. Spectators gösteri ya da maç izleyenlere denir."
+      why_wrong:
+        - "\"Spectators\" maç ya da gösteri izleyenlerdir; müze gezenlere \"visitors\" denir."
+        - "\"Audiences\" konser ya da oyun izleyen topluluktur; müze için kullanılmaz."
+        - "Müzede oyuncu olmaz; metin antik şehri görmeye gelenleri anlatıyor."
     tekrar:
       id: u7d03-010-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["A man who is watching a football match in the stadium", "A woman who is walking around a museum", "A boy who is buying a souvenir", "A girl who is reading a brochure"]
       answer: 0
       explain: "Spectator, maç ya da gösteri izleyen kişidir."
+      why_wrong:
+        - "Müzede gezen kadın ziyaretçidir (visitor); izleyici bir gösteri izler."
+        - "Hatıra eşyası alan çocuk alışveriş yapıyor; bir şey izlemiyor."
+        - "Broşür okuyan kız bilgi ediniyor; maç ya da gösteri izlemiyor."
   - item: U7-011
     card:
       example_en: "Transportation in İstanbul is easy: you can take a bus, a metro or a ferry."
@@ -63,6 +71,10 @@ steps:
       options: ["Taxis", "Buses", "A train", "Bikes"]
       answer: 0
       explain: "Otobüs, tren ve bisiklet kiralama var; taksiden söz edilmiyor."
+      why_wrong:
+        - "\"Buses run every ten minutes\": otobüs metinde var."
+        - "\"There is a small train to the beach\": tren metinde geçiyor."
+        - "\"You can also hire a bike\": bisiklet kiralamak mümkün."
     tekrar:
       id: u7d03-011-t
       type: gap_fill
@@ -73,6 +85,10 @@ steps:
       options: ["transportation", "souvenir", "climate", "island"]
       answer: 0
       explain: "Havalimanından otele gitmeyi anlatan kelime transportation'dır (ulaşım)."
+      why_wrong:
+        - "\"Souvenir\" hatıra eşyasıdır; havalimanından otele nasıl gidileceğini anlatmaz."
+        - "\"Climate\" bir yerin iklimidir; otobüs sıklığıyla ilgisi yok."
+        - "\"Island\" ada demek; Elif bir yer değil, oraya nasıl gidileceğini anlatıyor."
   - item: U7-012
     card:
       example_en: "The hotel has many recreational activities: you can sunbathe, play volleyball or have a rest."
@@ -90,12 +106,16 @@ steps:
       id: u7d03-012-s
       type: text_infer
       lgs_like: true
-      stem_id: S04
-      prompt: "<en>According to the text, which recreational activity is NOT possible at the resort?</en>"
-      stem: "<en>Palm Resort offers many recreational activities. Guests can play tennis, go windsurfing or have a rest by the pool. In the evenings, there are music shows.</en>"
-      options: ["Horse riding", "Playing tennis", "Windsurfing", "Resting by the pool"]
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the brochure?</en>"
+      stem: "<en>GREEN PINE HOLIDAY VILLAGE\nRecreational activities: tennis, windsurfing, yoga by the pool\nMusic shows every evening\nKids' club: 10 a.m. – 5 p.m.\nPrice: 90 € per person per night</en>"
+      options: ["Horse riding", "Evening entertainment", "Activities for children", "The cost of one night"]
       answer: 0
-      explain: "Tenis, rüzgâr sörfü ve havuz kenarında dinlenme var; at binmeden söz edilmiyor."
+      explain: "Tenis, rüzgâr sörfü, yoga, müzik gösterileri ve çocuk kulübü var; at binmekten söz edilmiyor."
+      why_wrong:
+        - "\"Music shows every evening\": akşam eğlencesi broşürde var."
+        - "\"Kids' club: 10 a.m. – 5 p.m.\" çocuklar için gündüz etkinliği olduğunu gösteriyor."
+        - "\"90 € per person per night\" bir gecenin kişi başı fiyatını veriyor."
     tekrar:
       id: u7d03-012-t
       type: situation
@@ -105,6 +125,10 @@ steps:
       options: ["Playing volleyball on the beach", "Writing a long exam", "Cleaning the kitchen", "Doing the homework"]
       answer: 0
       explain: "Plajda voleybol oynamak boş zamanda yapılan bir eğlence etkinliğidir."
+      why_wrong:
+        - "Uzun bir sınav yazmak eğlence için yapılmaz; zorunlu bir iştir."
+        - "Mutfak temizlemek ev işidir; boş zaman eğlencesi sayılmaz."
+        - "Ödev yapmak okul işidir; \"recreational\" dinlenip eğlenmek içindir."
   - item: U7-013
     card:
       example_en: "The price of the accommodation is 80 euros per night."
@@ -128,15 +152,24 @@ steps:
       options: ["You are lucky!", "You are late for school!", "You should wash your hands!", "You can't swim here!"]
       answer: 0
       explain: "Resepsiyonist deniz manzaralı oda olduğunu söylüyor; bu yüzden şans/iyi haber ifadesi uyar."
+      why_wrong:
+        - "Konuk okula geç kalmadı; o deniz kenarında kalacak yer arıyor."
+        - "El yıkama öğüdü odayla ilgisiz; resepsiyonist iyi bir haber veriyor."
+        - "\"You can't swim here\" bir yasak; ardından \"We have rooms\" iyi haberi gelmez."
     tekrar:
       id: u7d03-013-t
-      type: gap_fill
+      type: text_infer
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which one is the correct spelling?</en>"
-      options: ["accommodation", "acomodation", "accomodation", "acommodation"]
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the brochure?</en>"
+      stem: "<en>CAPPADOCIA WEEKEND\nAccommodation: a cave hotel in Göreme\nFree minibus from Kayseri Airport\nBalloon ride at sunrise: 150 € extra\n2 nights · 220 € per person</en>"
+      options: ["The weather in Cappadocia", "The place where visitors sleep", "How visitors get there from the airport", "An activity early in the morning"]
       answer: 0
-      explain: "Doğru yazım çift c ve çift m ile: accommodation."
+      explain: "Broşürde hava durumu yok. Kalınacak yer (accommodation), havalimanından ulaşım ve sabah etkinliği yazıyor."
+      why_wrong:
+        - "\"Accommodation: a cave hotel in Göreme\" ziyaretçilerin kalacağı yeri veriyor."
+        - "\"Free minibus from Kayseri Airport\" havalimanından nasıl gidileceğini anlatıyor."
+        - "\"Balloon ride at sunrise\": gün doğumu sabahın erken saati; bu etkinlik broşürde var."
   - item: U7-014
     card:
       example_en: "We stayed at an all-inclusive hotel, so meals and drinks were free."
@@ -160,6 +193,10 @@ steps:
       options: ["Guests don't pay extra money for meals.", "Guests pay extra money for drinks.", "Tennis lessons are free.", "The holiday is for 3 nights."]
       answer: 0
       explain: "Yemekler ve içecekler fiyata dahil; spa ve tenis dersi ekstra ücretli; tatil 7 gece."
+      why_wrong:
+        - "\"All drinks are included\": içecekler fiyata dahil, ekstra ödenmez."
+        - "\"Spa and tennis lessons cost extra\": tenis dersi ücretsiz değil."
+        - "Reklamda tatil \"7 nights\" diye yazıyor; 3 gece metinde olmayan bilgi."
     tekrar:
       id: u7d03-014-t
       type: situation
@@ -169,6 +206,10 @@ steps:
       options: ["An all-inclusive hotel", "A hotel with free taxis", "A hotel with a big garden", "A hotel near the airport"]
       answer: 0
       explain: "Yemek ve içecek dahil olan otel all-inclusive'dir."
+      why_wrong:
+        - "Ücretsiz taksi ulaşımla ilgili; yemek ve içecekleri fiyata katmaz."
+        - "Büyük bahçe güzel bir özellik ama yemekler bu yüzden dahil olmaz."
+        - "Havalimanına yakınlık konumu anlatır; yemek ve içecek bilgisi vermez."
   - item: U7-062
     card:
       example_en: "The hotel costs 60 euros per night, and breakfast is 10 euros per person."
