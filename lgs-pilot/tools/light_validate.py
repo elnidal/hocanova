@@ -49,9 +49,58 @@ def check_q(f, q, role, day_prefix):
         W(f, f"{qid}: Present Perfect şüphesi: \"{m.group(0)}\"")
 
 
+TOKEN = re.compile(r"\{(U\d{1,2}-\d{3})(?:\|([^}]+))?\}")
+EN_SEG = re.compile(r"<en>.*?</en>", re.S)
+TR_CH = "a-zçğıöşüâîû"
+low = lambda t: t.replace("I", "ı").replace("İ", "i").lower()
+
+
+def ban_patterns(it):
+    """Çeviri yasağı kalıpları (lgs_validate ile aynı mantık): ban_tr › meaning_ban › meaning_tr parçaları."""
+    if it.get("ban_tr"): return [low(b) for b in it["ban_tr"]]
+    if it.get("meaning_ban"): return [re.escape(low(b)) for b in it["meaning_ban"]]
+    pats = []
+    for part in re.split(r"[,/;]", re.sub(r"\(.*?\)", "", it.get("meaning_tr", ""))):
+        q = re.sub(r"^-", "", low(part.replace("…", "").replace("?", "").replace(".", "").strip()))
+        if len(q) >= 3: pats.append(re.escape(q))
+    return pats
+
+
+def check_mini(f, d, items_full, taught):
+    """Mini sahne: her yeni birimin kendi sahnesi, birim orada belirteçle geçer, öğretilmemiş birime belirteç yok, çeviri yasağı."""
+    mini = d.get("mini") or []
+    if not mini: return
+    for m in mini:
+        if not 2 <= len(m.get("lines", [])) <= 4: E(f, f"mini {m.get('item')}: 2–4 satır olmalı")
+    for i in d["new_items"]:
+        m = next((x for x in mini if x.get("item") == i), None)
+        if not m: E(f, f"{i}: mini sahne yok"); continue
+        if not any(re.search(r"\{" + i + r"[}|]", l["text"]) for l in m["lines"]): E(f, f"{i}: kendi mini sahnesinde geçmiyor")
+    full = " ".join([m.get("durum", "") for m in mini] + [l["text"] for m in mini for l in m["lines"]])
+    for t in TOKEN.finditer(full):
+        if t.group(1) not in taught: E(f, f"mini: {t.group(1)} henüz öğretilmedi ya da bilinmiyor")
+    plain = low(TOKEN.sub(" ", EN_SEG.sub(" ", full)))
+    for i in {t.group(1) for t in TOKEN.finditer(full)}:
+        it = items_full.get(i)
+        if not it: continue
+        for pat in ban_patterns(it):
+            mm = re.search(r"(?<![" + TR_CH + r"])" + pat, plain)
+            if mm: W(f, f"ÇEVİRİ: {it.get('display')} karşılığı \"{mm.group(0)}\" mini sahnede geçiyor olabilir")
+
+
 def main():
     files = sorted(glob.glob(os.path.join(ROOT, "content", "light", "u*_day_*.yaml")))
     ids = set()
+    # öğretim sırası: önceki ünitelerin tüm birimleri + bu ünitenin bugüne kadarki günleri
+    all_items = {}
+    for uf in sorted(glob.glob(os.path.join(ROOT, "content", "unit_*_items.yaml"))):
+        for it in yaml.safe_load(open(uf, encoding="utf-8"))["items"]: all_items[it["id"]] = it
+    days = [yaml.safe_load(open(x, encoding="utf-8")) for x in files]
+    taught_by = {}
+    for dd in sorted(days, key=lambda z: (z["unit"], z["day"])):
+        prev = {i for i in all_items if int(i[1:i.index("-")]) < dd["unit"]}
+        same = {i for z in days if z["unit"] == dd["unit"] and z["day"] <= dd["day"] for i in z["new_items"]}
+        taught_by[(dd["unit"], dd["day"])] = prev | same
     for f in files:
         d = yaml.safe_load(open(f, encoding="utf-8"))
         for k in ("unit", "day", "title", "new_items", "steps", "tips", "coach", "notifications", "est_minutes"):
@@ -85,6 +134,7 @@ def main():
         for k, v in (d.get("notifications") or {}).items():
             if len(v) > 90:
                 E(f, f"bildirim {k} {len(v)} karakter (≤ 90)")
+        check_mini(f, d, all_items, taught_by[(d["unit"], d["day"])])
         for t in d.get("tips", []):
             if t.get("type") not in {"hafiza_kancasi", "tuzak", "lgs_taktigi", "kelime_ailesi", "ilginc_bilgi", "mini_dilbilgisi"}:
                 E(f, f"bilinmeyen ipucu türü {t.get('type')}")

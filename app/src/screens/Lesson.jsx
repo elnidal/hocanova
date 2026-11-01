@@ -24,10 +24,10 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   const mini = useMemo(() => (day.mini || []).map(m => ({ ...m, lines: m.lines.map((l, k) => ({ ...l, id: `${m.item}-${k}` })) })), [day])
   const hasMini = mini.length > 0
   const hasScene = hasMini || Boolean(day.scene?.length)
-  const PHASES = (light ? PHASES_LIGHT : cardFirst ? PHASES_CARDS.filter(x => (x !== 'cards' || plan.cardItems.length) && (x !== 'scene' || hasScene)) : hasMini ? PHASES_STORY.filter(x => x !== 'story') : PHASES_STORY)
+  const PHASES = (light ? (hasMini ? ['scene', ...PHASES_LIGHT] : PHASES_LIGHT) : cardFirst ? PHASES_CARDS.filter(x => (x !== 'cards' || plan.cardItems.length) && (x !== 'scene' || hasScene)) : hasMini ? PHASES_STORY.filter(x => x !== 'story') : PHASES_STORY)
   const STAGE = light ? ['card', 'tani', 'kullan', 'sina'] : advanced ? ['sezdir', 'kullan', 'sina'] : ['tani', 'kullan', 'sina']
   const newSet = useMemo(() => new Set(day.new_items), [day])
-  const [phase, setPhase] = useState(light ? 'steps' : cardFirst ? (plan.cardItems.length ? 'cards' : hasScene ? 'scene' : 'steps') : hasMini ? 'scene' : 'story')
+  const [phase, setPhase] = useState(light ? (hasMini ? 'scene' : 'steps') : cardFirst ? (plan.cardItems.length ? 'cards' : hasScene ? 'scene' : 'steps') : hasMini ? 'scene' : 'story')
   const [storyBack, setStoryBack] = useState(null) // kart-önce akışta hikâye isteğe bağlı: okuyunca bu aşamaya dönülür
   const openStory = () => { setPop(null); setShown(CHUNK); setStoryBack(phase); setPhase('story') }
   const asked = useRef(new Set()) // bu derste sorulan soru kimlikleri: yanlışta aynı soruyu tekrar sormamak için
