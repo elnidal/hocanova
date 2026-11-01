@@ -152,10 +152,10 @@ sources:
     kitabı cevapları s. 84–94'
   rows: 37
 tasnif:
-  teaching_units: 61
+  teaching_units: 64
   counts:
-    birim_CEKIRDEK: 50
-    birim_KALIP_ISLEV: 6
+    birim_CEKIRDEK: 52
+    birim_KALIP_ISLEV: 7
     birim_TUZAK: 5
     oncelik_1: 60
     oncelik_2: 1
@@ -171,6 +171,7 @@ tasnif:
   - 'Satır değil öğretim birimi sayılır: aileler (attraction / attract / attractive; conquer / conquest / invasion; emperor / empire; hospitality / hospitable; discover / rediscover) ve eş anlamlı kümeler
     (trip / journey / travel; vacation / holiday; incredible / unbelievable; enormous / huge; definitely / truly; local / authentic; highland / plateau; palace / mansion) tek birim.'
   - Öncelik 1 = en az iki bağımsız kaynak (A, B, I, W) ya da KALIP / İŞLEV. charming yalnız çıkmış kelime tablosunda (W) olduğu için öncelik 2.
+  - "Murat kararı (1 Kasım 2026): per person / per night (U7-062, KALIP: broşür sorularının fiyat satırı), budget (U7-063) ve değerlerden justice / equality (U7-064) listeye alındı. historic site Ü6'da (U6-045) olduğu için ayrı birim değil; U7-057 yalnız soru ve kısa cevaplar (Yes, I have. / No, I haven't.), tam Present Perfect cümlesi yok."
   - 'Sıkılaştırma: ilk aday liste 67 birimdi. tourism ve amphitheatre BİLİNEN (Türkçe ile aynı); province, budget / per person, depart, suppose TANIMA (tek kaynak); sunbathe / have a rest eğlence etkinlikleri
     birimine bağlandı; weigh TANIMA. Sonuç 61 (Ü5: 61, Ü6: 57).'
   - 'Have you ever been to …? KALIP birimi yapıldı (Ü6''da TANIMA idi): ders kitabı, EBA dinleme metni ve kalıp listesi bu kalıbı kullanıyor. Present Perfect dilbilgisi olarak öğretilmez (kullanıcı onayı
@@ -347,6 +348,8 @@ themes:
   - U7-010
   - U7-011
   - U7-012
+  - U7-062
+  - U7-063
   note_tr: Gezi türleri, turist ve rehber, broşür dili. Broşür/ilan okuma sorularının kelime gövdesi.
 - name: Konaklama
   items:
@@ -395,6 +398,7 @@ themes:
   - U7-046
   - U7-047
   - U7-048
+  - U7-064
   note_tr: Geleneksel el sanatı, halk dansı, misafirperverlik, yerel yemek. Yemek kelimeleri Ü3'te (dish, cuisine, traditional).
 - name: Yerleri betimleme
   items:

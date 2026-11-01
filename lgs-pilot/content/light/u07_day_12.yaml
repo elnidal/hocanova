@@ -69,10 +69,10 @@ steps:
       lgs_like: true
       stem_id: S01
       prompt: "<en>Which of the following completes the dialogue?</en>"
-      stem: "<en>A: Have you ever been to Antalya?\nB: ________ I've never been there, but I'd love to go.</en>"
+      stem: "<en>A: Have you ever been to Antalya?\nB: ________ But I'd love to go there one day.</en>"
       options: ["No, I haven't.", "Yes, I have.", "Yes, I did.", "No, I didn't."]
       answer: 0
-      explain: "\"I've never been there\" diyor; bu yüzden cevap: No, I haven't."
+      explain: "\"But I'd love to go there one day\" henüz gitmediğini gösterir; \"Have you ever…?\" sorusunun olumsuz kısa cevabı: No, I haven't."
   - item: U7-058
     card:
       example_en: "Did you enjoy your trip? – Yes, it was great! How long did you stay? – Three days."

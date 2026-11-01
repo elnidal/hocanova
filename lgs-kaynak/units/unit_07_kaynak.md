@@ -24,7 +24,7 @@
 **F2 · Deneyimden söz etmek (Talking about experiences)** (LGS ağırlığı: yüksek)
 - Kalıplar: *Have you ever been to Cappadocia?* · *Have you ever been abroad?* · *Did you enjoy your trip?* · *How long did you stay there?* · *What did you do while you were there?* · *What did you like the most about it?*
 - Cevaplar: *Yes, I have. I went there last summer.* · *No, I haven't. I've never been abroad.* · *Yes, it was incredible!* · *We stayed there for a week.* · *We went sightseeing and bought souvenirs.* · *The hospitality of the local people.*
-- Birimler: Have you ever been to …? / I have been to … / I've never been to …, Did you enjoy your trip? / How long did you stay? (gezi soruları), abroad, trip / journey / travel, sightseeing (go sightseeing / sightseeing tour), souvenir, hospitality (hospitable), unforgettable (memory), incredible / unbelievable
+- Birimler: Have you ever been to …? – Yes, I have. / No, I haven't., Did you enjoy your trip? / How long did you stay? (gezi soruları), abroad, trip / journey / travel, sightseeing (go sightseeing / sightseeing tour), souvenir, hospitality (hospitable), unforgettable (memory), incredible / unbelievable
 - Not: Programda "Talking about experiences" (Grade 8.7.1) olarak geçer. Have you ever been …? sabit kalıp olarak öğretilir; ayrıntı Simple Past ile verilir (Yes, I have. I went there in 2023).
 
 **F3 · Tercih bildirmek ve gerekçe sunmak (Expressing preferences / Giving reasons)** (LGS ağırlığı: yüksek)
@@ -47,12 +47,12 @@
 
 ## 2. Tasnif
 
-Öğretim birimi: **61** · birimler: `lgs-pilot/content/unit_07_items.yaml`
+Öğretim birimi: **64** · birimler: `lgs-pilot/content/unit_07_items.yaml`
 
 | Sınıf | Sayı |
 |---|---|
-| birim_CEKIRDEK | 50 |
-| birim_KALIP_ISLEV | 6 |
+| birim_CEKIRDEK | 52 |
+| birim_KALIP_ISLEV | 7 |
 | birim_TUZAK | 5 |
 | oncelik_1 | 60 |
 | oncelik_2 | 1 |
@@ -65,6 +65,7 @@
 | havuz_toplam | 318 |
 - Satır değil öğretim birimi sayılır: aileler (attraction / attract / attractive; conquer / conquest / invasion; emperor / empire; hospitality / hospitable; discover / rediscover) ve eş anlamlı kümeler (trip / journey / travel; vacation / holiday; incredible / unbelievable; enormous / huge; definitely / truly; local / authentic; highland / plateau; palace / mansion) tek birim.
 - Öncelik 1 = en az iki bağımsız kaynak (A, B, I, W) ya da KALIP / İŞLEV. charming yalnız çıkmış kelime tablosunda (W) olduğu için öncelik 2.
+- Murat kararı (1 Kasım 2026): per person / per night (U7-062, KALIP: broşür sorularının fiyat satırı), budget (U7-063) ve değerlerden justice / equality (U7-064) listeye alındı. historic site Ü6'da (U6-045) olduğu için ayrı birim değil; U7-057 yalnız soru ve kısa cevaplar (Yes, I have. / No, I haven't.), tam Present Perfect cümlesi yok.
 - Sıkılaştırma: ilk aday liste 67 birimdi. tourism ve amphitheatre BİLİNEN (Türkçe ile aynı); province, budget / per person, depart, suppose TANIMA (tek kaynak); sunbathe / have a rest eğlence etkinlikleri birimine bağlandı; weigh TANIMA. Sonuç 61 (Ü5: 61, Ü6: 57).
 - Have you ever been to …? KALIP birimi yapıldı (Ü6'da TANIMA idi): ders kitabı, EBA dinleme metni ve kalıp listesi bu kalıbı kullanıyor. Present Perfect dilbilgisi olarak öğretilmez (kullanıcı onayı bekliyor).
 - Değerler kutusu (justice, equality, cooperation, mercifulness…) ve eski kitap sahneleri (Pompeii, Serengeti, Orhun Yazıtları) TANIMA.
@@ -74,13 +75,13 @@
 
 ### Temalar
 
-- **Turizm ve seyahat** (12): tourist attraction (attract / attractive), vacation / holiday, trip / journey / travel, abroad, sightseeing (go sightseeing / sightseeing tour), cruise (cruise holiday), tour guide (guide), souvenir, travel brochure / advertisement, visitor / spectator, transportation, recreational activities (entertainment / sunbathe / have a rest) — Gezi türleri, turist ve rehber, broşür dili. Broşür/ilan okuma sorularının kelime gövdesi.
+- **Turizm ve seyahat** (14): tourist attraction (attract / attractive), vacation / holiday, trip / journey / travel, abroad, sightseeing (go sightseeing / sightseeing tour), cruise (cruise holiday), tour guide (guide), souvenir, travel brochure / advertisement, visitor / spectator, transportation, recreational activities (entertainment / sunbathe / have a rest), per person / per night, budget — Gezi türleri, turist ve rehber, broşür dili. Broşür/ilan okuma sorularının kelime gövdesi.
 - **Konaklama** (5): accommodation (accommodate), all-inclusive (hotel / resort), bed and breakfast (B&B), guesthouse, resort (holiday resort) — Kalacak yer türleri: broşür ve tablo sorularında "Where can you stay?" cevapları.
 - **Yerler ve coğrafya** (12): countryside / rural, urban, seaside, highland / plateau, island, square (city square), fountain, port / natural port (port city), location (be located in), climate (temperature), population, wildlife — Bir şehri ya da bölgeyi tanıtan metnin dili: konum, iklim, nüfus, meydan, liman. square ve countryside tuzaklı.
 - **Tarih ve mimari** (13): ancient (ancient city), architecture (historical architecture), construction (build), palace / mansion, mosque, emperor / empire, conquer (conquest / invasion), trade route (route), abandon (abandoned city), discover / rediscover, heritage (natural / cultural heritage), date back to, contain — Okuma metinlerinin tarih dili (antik kent, fetih, imparator, inşa). Edilgen yapı (was built / was conquered) tanıma düzeyinde.
-- **Kültür ve gelenek** (6): handicrafts (pottery), cultural diversity (culture / cultural), hospitality (hospitable), local / authentic, folk dance, religious (religious celebration / ceremony) — Geleneksel el sanatı, halk dansı, misafirperverlik, yerel yemek. Yemek kelimeleri Ü3'te (dish, cuisine, traditional).
+- **Kültür ve gelenek** (7): handicrafts (pottery), cultural diversity (culture / cultural), hospitality (hospitable), local / authentic, folk dance, religious (religious celebration / ceremony), justice / equality — Geleneksel el sanatı, halk dansı, misafirperverlik, yerel yemek. Yemek kelimeleri Ü3'te (dish, cuisine, traditional).
 - **Yerleri betimleme** (7): incredible / unbelievable, enormous / huge, remarkable, crowded (busy street), unforgettable (memory), definitely / truly, charming — Betimleme sıfatları; fascinating, magnificent, mysterious önceki ünitelerde (tekrar). Karşılaştırma cümlelerinin sıfatları.
-- **Deneyim, görüş ve öneri kalıpları** (6): be famous for (What is … famous for?), Have you ever been to …? / I have been to … / I've never been to …, Did you enjoy your trip? / How long did you stay? (gezi soruları), What is … like? (the weather / the climate / the city), What do you think about …? – To me, …, must-see / worth seeing (worth visiting) — Programın işlevlerini taşıyan kalıplar: deneyim (Have you ever been to …?), betimleme sorusu (What is … like?), görüş (What do you think about …? – To me, …), geçmiş gezi soruları, öneri (must-see / worth seeing).
+- **Deneyim, görüş ve öneri kalıpları** (6): be famous for (What is … famous for?), Have you ever been to …? – Yes, I have. / No, I haven't., Did you enjoy your trip? / How long did you stay? (gezi soruları), What is … like? (the weather / the climate / the city), What do you think about …? – To me, …, must-see / worth seeing (worth visiting) — Programın işlevlerini taşıyan kalıplar: deneyim (Have you ever been to …?), betimleme sorusu (What is … like?), görüş (What do you think about …? – To me, …), geçmiş gezi soruları, öneri (must-see / worth seeing).
 
 ## 3. Dilbilgisi
 
@@ -285,7 +286,7 @@ famous for "… ile ünlü" (for + isim); famous as "… olarak ünlü". worth't
 - Kelime anlamı: fascinating, charming, ancient, accommodation, sightseeing, souvenir, climate
 - Tercih + gerekçe: kişinin söylediği nedene uygun tatil türü
 
-**En kritik birimler:** tourist attraction (attract / attractive), vacation / holiday, trip / journey / travel, sightseeing (go sightseeing / sightseeing tour), souvenir, accommodation (accommodate), all-inclusive (hotel / resort), countryside / rural, seaside, square (city square), climate (temperature), population, ancient (ancient city), construction (build), charming, definitely / truly, transportation, Have you ever been to …? / I have been to … / I've never been to …, What is … like? (the weather / the climate / the city), be famous for (What is … famous for?)
+**En kritik birimler:** tourist attraction (attract / attractive), vacation / holiday, trip / journey / travel, sightseeing (go sightseeing / sightseeing tour), souvenir, accommodation (accommodate), all-inclusive (hotel / resort), countryside / rural, seaside, square (city square), climate (temperature), population, ancient (ancient city), construction (build), charming, definitely / truly, transportation, Have you ever been to …? – Yes, I have. / No, I haven't., What is … like? (the weather / the climate / the city), be famous for (What is … famous for?)
 
 ### Soru kalıpları (özgün örnekler, ilk şık doğru)
 
@@ -380,7 +381,7 @@ famous for "… ile ünlü" (for + isim); famous as "… olarak ünlü". worth't
   Birimler: tourist attraction (attract / attractive), travel brochure / advertisement, must-see / worth seeing (worth visiting), tour guide (guide), visitor / spectator  
   Espri: Ece'nin listesinde 47 yer var; tur bir gün.
 - Misafirlerle tanışma: "Have you ever been to Turkey?" – "No, never!" Kaan "Have you ever been abroad?" diye sorar, cevap "Yes, now!"  
-  Birimler: Have you ever been to …? / I have been to … / I've never been to …, abroad, trip / journey / travel, vacation / holiday  
+  Birimler: Have you ever been to …? – Yes, I have. / No, I haven't., abroad, trip / journey / travel, vacation / holiday  
   Espri: Kaan "I have gone to Izmir" der, Selin düzeltir: "You live here, Kaan."
 - Broşür yazımı: Konak Meydanı, Saat Kulesi'nin çeşmesi, Kordon'un deniz kenarı; Selin broşürdeki nüfus ve iklim bilgisini düzeltir.  
   Birimler: square (city square), fountain, seaside, population, climate (temperature), location (be located in)  
@@ -423,11 +424,11 @@ famous for "… ile ünlü" (for + isim); famous as "… olarak ünlü". worth't
 
 **deneyim**
 
-- *Have you ever been abroad?* — Hiç yurt dışına gittin mi?  (Have you ever been to …? / I have been to … / I've never been to …, abroad)
-- *Have you ever visited an island?* — Hiç bir adayı ziyaret ettin mi?  (Have you ever been to …? / I have been to … / I've never been to …, island)
-- *Where have you been to in Turkey?* — Türkiye'de nerelere gittin?  (Have you ever been to …? / I have been to … / I've never been to …)
-- *I have been to England.* — İngiltere'ye gittim (bulundum).  (Have you ever been to …? / I have been to … / I've never been to …)
-- *I have never seen such a splendid place.* — Hiç böyle muhteşem bir yer görmedim.  (Have you ever been to …? / I have been to … / I've never been to …)
+- *Have you ever been abroad?* — Hiç yurt dışına gittin mi?  (Have you ever been to …? – Yes, I have. / No, I haven't., abroad)
+- *Have you ever visited an island?* — Hiç bir adayı ziyaret ettin mi?  (Have you ever been to …? – Yes, I have. / No, I haven't., island)
+- *Where have you been to in Turkey?* — Türkiye'de nerelere gittin?  (Have you ever been to …? – Yes, I have. / No, I haven't.)
+- *I have been to England.* — İngiltere'ye gittim (bulundum).  (Have you ever been to …? – Yes, I have. / No, I haven't.)
+- *I have never seen such a splendid place.* — Hiç böyle muhteşem bir yer görmedim.  (Have you ever been to …? – Yes, I have. / No, I haven't.)
 
 **geçmiş gezi**
 

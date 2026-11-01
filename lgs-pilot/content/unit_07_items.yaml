@@ -862,14 +862,14 @@ items:
 - id: U7-057
   unit: 7
   theme: Deneyim, görüş ve öneri kalıpları
-  display: Have you ever been to …? / I have been to … / I've never been to …
+  display: Have you ever been to …? – Yes, I have. / No, I haven't.
   kind: pattern
   class: pattern
-  meaning_tr: … -e hiç gittin mi? / … -e gittim / … -e hiç gitmedim
+  meaning_tr: … -e hiç gittin mi? – Evet, gittim. / Hayır, gitmedim.
   priority: 1
   variants:
   - have you ever been to …?
-  trap_note: been to = gidip dönmüş olmak; "gone to" orada, henüz dönmemiş. Kalıp olarak öğretilir, Present Perfect dilbilgisi olarak değil
+  trap_note: been to = gidip dönmüş olmak. Soru ve kısa cevaplar (Yes, I have. / No, I haven't.) sabit kalıp olarak öğretilir; ayrıntı Simple Past ile verilir (I went there last summer). Present Perfect dilbilgisi olarak öğretilmez
 - id: U7-058
   unit: 7
   theme: Deneyim, görüş ve öneri kalıpları
@@ -923,3 +923,47 @@ items:
   meaning_ban:
   - görülmesi gereken
   - görmeye değer
+- id: U7-062
+  unit: 7
+  theme: Turizm ve seyahat
+  display: per person / per night
+  kind: phrase
+  class: pattern
+  meaning_tr: kişi başı / gecelik (bir gece için)
+  priority: 1
+  variants:
+  - per person
+  - per night
+  meaning_ban:
+  - kişi başı
+  - gecelik
+  trap_note: per = başına. "400 € per person" = kişi başı 400 €; broşür sorularında fiyat satırını bulmanın anahtarı
+- id: U7-063
+  unit: 7
+  theme: Turizm ve seyahat
+  display: budget
+  kind: word
+  class: core
+  meaning_tr: bütçe
+  priority: 2
+  variants:
+  - budget
+  - on a budget
+  meaning_ban:
+  - bütçe
+- id: U7-064
+  unit: 7
+  theme: Değerler (For a better life)
+  display: justice / equality
+  kind: phrase
+  class: core
+  meaning_tr: adalet / eşitlik
+  priority: 2
+  variants:
+  - justice
+  - equality
+  - fair
+  meaning_ban:
+  - adalet
+  - eşitlik
+  trap_note: Programdaki "For a better life / country / world" değerleri. honesty ve patience aynı kutuda; Ü1'deki honest (U1-077) ve patient (U1-085) sıfatlarının isim hâli. LGS'de metindeki davranışı değerle eşleştirme biçiminde gelebilir
