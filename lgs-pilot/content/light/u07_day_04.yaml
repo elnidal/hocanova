@@ -5,8 +5,8 @@ unit: 7
 day: 4
 status: draft
 title: "Otel türleri ve yaşadığımız yer"
-est_minutes: 7
-new_items: [U7-015, U7-016, U7-017, U7-018, U7-019]
+est_minutes: 8
+new_items: [U7-015, U7-016, U7-017, U7-018, U7-019, U7-063]
 steps:
   - item: U7-015
     card:
@@ -169,6 +169,51 @@ steps:
       options: ["rural", "ancient", "crowded", "busy"]
       answer: 0
       explain: "urban (kentsel) ↔ rural (kırsal)."
+  - item: U7-063
+    card:
+      example_en: "Our budget is small, so we are staying in a cheap guesthouse, not a big resort."
+      example_tr: "Bütçemiz küçük, bu yüzden büyük bir tatil köyünde değil, ucuz bir pansiyonda kalıyoruz."
+      note_tr: "budget = harcayabileceğin para miktarı. on a budget = az parayla, hesaplı. Broşür sorularında fiyatlarla birlikte gelir."
+    kullan:
+      id: u7d04-063-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>We only have 500 liras for the whole trip. We must plan our ________ carefully.</en>"
+      options: ["budget", "souvenir", "climate", "population"]
+      answer: 0
+      explain: "Gezi için ayrılan para miktarı: budget."
+      why_wrong:
+        - "Souvenir gezi hatırası olarak alınan eşya; parayı planlamakla ilgisi yok."
+        - "Climate bir yerin hava durumu; 500 lira ile ilgili değil."
+        - "Population bir yerde yaşayan insan sayısı; cümle paradan söz ediyor."
+    sina:
+      id: u7d04-063-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S14
+      prompt: "<en>Which of the following can we say about Kaan?</en>"
+      stem: "<en>Kaan: I want to go on holiday this summer, but I'm on a budget. All-inclusive resorts are too expensive for me, so I'll stay in a small B&B and eat at local restaurants.</en>"
+      options: ["He wants a cheap holiday.", "He loves all-inclusive resorts.", "He doesn't want to go on holiday.", "He will cook all his meals."]
+      answer: 0
+      explain: "\"I'm on a budget\" ve \"too expensive\": Kaan hesaplı bir tatil istiyor."
+      why_wrong:
+        - "Her şey dahil otelleri pahalı bulduğunu söylüyor; sevdiğini söylemiyor."
+        - "\"I want to go on holiday\" diyor; tatile gitmek istiyor."
+        - "Yerel restoranlarda yiyeceğini söylüyor; yemek yapmaktan söz etmiyor."
+    tekrar:
+      id: u7d04-063-t
+      type: dialogue_complete
+      lgs_like: true
+      stem_id: S01
+      prompt: "<en>Which one completes the dialogue?</en>"
+      stem: "<en>Elif: Let's stay at the Grand Palace Hotel! It has three pools.\nDuru: ________ It's 300 € per night.</en>"
+      options: ["It's not in our budget.", "It's a must-see place.", "It's famous for its pools.", "It's very crowded."]
+      answer: 0
+      explain: "Duru fiyatı (300 € per night) gerekçe gösteriyor: bütçelerine uymuyor."
+      why_wrong:
+        - "Görülmesi gereken yer anlamına gelir; ardından gelen fiyat cümlesiyle bağlanmaz."
+        - "Havuzları Elif zaten söyledi; Duru fiyatla itiraz ediyor."
+        - "Kalabalık olması fiyatla ilgili değil; Duru'nun gerekçesi para."
 tips:
   - type: tuzak
     refs: [U7-018]

@@ -1,0 +1,135 @@
+schema_version: 1
+program: lgs
+mode: light
+exam: true                # sınav provası: yeni ifade yok, ünitenin üç LGS soru tipi (broşür, tablo, deneyim diyaloğu)
+unit: 7
+day: 13
+status: draft
+title: "Sınav provası: broşür, tablo, diyalog"
+est_minutes: 8
+new_items: []
+steps: []
+review:
+  - id: u7d13-r01
+    item: U7-009
+    type: text_infer
+    lgs_like: true
+    stem_id: S03
+    prompt: "<en>Which of the following is NOT mentioned in the brochure?</en>"
+    stem: "<en>BLUE COAST RESORT\nAll-inclusive · 7 nights\n450 € per person\nActivities: water sports, folk dance shows, boat trips\nFree bus from the airport</en>"
+    options: ["The best time to visit", "The type of accommodation", "The price of the holiday", "Transportation from the airport"]
+    answer: 0
+    explain: "Broşürde ne zaman gidileceği yazmıyor. Diğer üç bilgi satırlarda var."
+    why_wrong:
+      - "\"All-inclusive\" satırı konaklama türünü veriyor."
+      - "\"450 € per person\" tatilin fiyatı."
+      - "\"Free bus from the airport\" havalimanından ulaşımı anlatıyor."
+  - id: u7d13-r02
+    item: U7-062
+    type: text_infer
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to the brochure, which of the following is TRUE?</en>"
+    stem: "<en>OLD TOWN GUESTHOUSE\nIn the city square, next to the fountain\nRoom: 40 € per night · Breakfast: free\nGuided city tour: 10 € per person (only on Saturdays)</en>"
+    options: ["A family of three pays 30 € for the city tour.", "Breakfast costs 40 € per night.", "The guesthouse is in the countryside.", "There is a city tour every day."]
+    answer: 0
+    explain: "Tur kişi başı 10 €: üç kişilik aile 30 € öder."
+    why_wrong:
+      - "Kahvaltı ücretsiz; 40 € odanın gecelik fiyatı. Sayıyı kendi satırıyla eşleştir."
+      - "Pansiyon şehir meydanında, çeşmenin yanında; kırsalda değil."
+      - "Tur yalnız cumartesileri var (\"only on Saturdays\")."
+  - id: u7d13-r03
+    item: U7-028
+    type: table_graph
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the table, which of the following is TRUE?</en>"
+    stem: "<en>Mardin: population 870,000 · summer 34°C · famous for its ancient architecture\nBodrum: population 200,000 · summer 30°C · famous for its seaside and cruises\nSafranbolu: population 70,000 · summer 28°C · famous for its old mansions</en>"
+    options: ["Mardin has the biggest population.", "Safranbolu is hotter than Bodrum in summer.", "Bodrum is famous for its old mansions.", "Safranbolu is more crowded than Mardin."]
+    answer: 0
+    explain: "870.000 ile en kalabalık şehir Mardin."
+    why_wrong:
+      - "28°C, 30°C'den sıcak değil: karşılaştırma ters kurulmuş."
+      - "Eski konaklar Safranbolu'nun satırında; özellik yanlış şehre verilmiş."
+      - "Safranbolu'nun nüfusu en küçük (70.000); kalabalık olan Mardin."
+  - id: u7d13-r04
+    item: U7-022
+    type: table_graph
+    lgs_like: true
+    stem_id: S14
+    prompt: "<en>Which of the following CANNOT be said according to the table?</en>"
+    stem: "<en>Bozcaada: an island · famous for its beaches and an old castle\nCappadocia: a highland area · famous for hot air balloons and caves\nEphesus: an ancient city · famous for its library and amphitheatre</en>"
+    options: ["You can visit an island in Cappadocia.", "Ephesus is an ancient city.", "Cappadocia is famous for hot air balloons.", "Bozcaada is an island."]
+    answer: 0
+    explain: "Ada Bozcaada; Kapadokya bir yayla bölgesi. Bu yüzden bu cümle söylenemez."
+    why_wrong:
+      - "Tabloda Efes için \"an ancient city\" yazıyor; söylenebilir."
+      - "Kapadokya'nın satırında \"hot air balloons\" var; söylenebilir."
+      - "Bozcaada'nın satırında \"an island\" yazıyor; söylenebilir."
+  - id: u7d13-r05
+    item: U7-057
+    type: dialogue_complete
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece: Have you ever been to Cappadocia?\nKaan: ________ I went there with my family last spring. It was unforgettable!</en>"
+    options: ["Yes, I have.", "No, I haven't.", "Yes, I do.", "No, I didn't."]
+    answer: 0
+    explain: "Kaan ardından oraya gittiğini anlatıyor; \"Have you ever…?\" sorusunun olumlu kısa cevabı: Yes, I have."
+    why_wrong:
+      - "Arkadan gelen \"I went there\" olumsuz cevapla çelişir."
+      - "\"Have you…?\" sorusu have ile cevaplanır, do ile değil."
+      - "Hem olumsuz hem de yardımcı fiil soruya uymuyor."
+  - id: u7d13-r06
+    item: U7-059
+    type: dialogue_complete
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Selin: What is Safranbolu like?\nBora: ________</en>"
+    options: ["It's a charming town with old mansions.", "I'd love to go there.", "I went there by bus.", "Yes, it is."]
+    answer: 0
+    explain: "\"What is … like?\" bir yeri betimlemeyi ister: şirin, eski konaklı bir kasaba."
+    why_wrong:
+      - "Gitme isteği bildirir; yerin nasıl olduğunu anlatmaz."
+      - "Nasıl gittiğini anlatır; yerin nasıl olduğunu değil."
+      - "\"What\" ile başlayan soru evet/hayır ile cevaplanmaz."
+  - id: u7d13-r07
+    item: U7-061
+    type: synonym
+    lgs_like: true
+    stem_id: S12
+    prompt: "<en>\"Ephesus is definitely worth seeing.\" Which one is CLOSEST in meaning?</en>"
+    options: ["You should really visit Ephesus.", "Ephesus is too crowded to visit.", "Nobody visits Ephesus anymore.", "Ephesus is cheaper than other places."]
+    answer: 0
+    explain: "worth seeing = görmeye değer; definitely = kesinlikle. Yani mutlaka gitmelisin."
+    why_wrong:
+      - "Kalabalıktan söz etmiyor; tersine, gidilmesini öneriyor."
+      - "\"Worth seeing\" ziyaret edilmeye değer demek; kimsenin gitmemesi tam tersi."
+      - "Cümlede fiyat yok; görmeye değer olmasından söz ediyor."
+  - id: u7d13-r08
+    item: U1-077
+    type: situation
+    lgs_like: true
+    stem_id: S09
+    prompt: "<en>Which value does Elif show?</en>"
+    stem: "<en>Elif finds a wallet in the hotel lobby. She takes it to the reception and says, \"Somebody lost this.\"</en>"
+    options: ["honesty", "equality", "patience", "hospitality"]
+    answer: 0
+    explain: "Bulduğu cüzdanı sahibine ulaştırmak dürüstlüktür: honesty (Ü1'deki honest)."
+    why_wrong:
+      - "Equality herkesin aynı haklara sahip olması; burada hak konusu yok."
+      - "Patience beklemeyi bilmek; Elif beklemiyor, hemen teslim ediyor."
+      - "Hospitality misafire sıcak davranmak; otel görevlisinin değeri olurdu."
+tips:
+  - type: lgs_taktigi
+    refs: []
+    text: "\"NOT mentioned\" sorusunda her şıkkı metinde bir satırla eşleştir. Eşleştiremediğin şık cevaptır. Tabloda ise sayıyı ve özelliği hep kendi satırında oku."
+coach:
+  start: "Gün 13: sınav provası! LGS'nin Ünite 7'den sorduğu üç tip soru: broşür, tablo ve diyalog 📝"
+  end_good: "Tam not! Broşür, tablo, diyalog: Ünite 7 sınavına hazırsın 🏆"
+  end_mixed: "İyi iş! {weak} biraz zorladı; tekrarda yine karşına çıkacak 📝"
+notifications:
+  morning: "Bugün Ünite 7 sınav provası: broşür, tablo, diyalog 📝"
+  evening: "Broşürde fiyat 450 € per person. Üç kişi ne öder? 🤔"
+  review: "Have you ever been to Cappadocia? Kısa cevabı biliyor musun?"

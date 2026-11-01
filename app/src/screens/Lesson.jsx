@@ -24,10 +24,11 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   const mini = useMemo(() => (day.mini || []).map(m => ({ ...m, lines: m.lines.map((l, k) => ({ ...l, id: `${m.item}-${k}` })) })), [day])
   const hasMini = mini.length > 0
   const hasScene = hasMini || Boolean(day.scene?.length)
-  const PHASES = (light ? (hasMini ? ['scene', ...PHASES_LIGHT] : PHASES_LIGHT) : cardFirst ? PHASES_CARDS.filter(x => (x !== 'cards' || plan.cardItems.length) && (x !== 'scene' || hasScene)) : hasMini ? PHASES_STORY.filter(x => x !== 'story') : PHASES_STORY)
+  const examDay = Boolean(day.exam) // sınav provası: yeni ifade yok, yalnız LGS biçimli sorular
+  const PHASES = (examDay ? ['review', 'tips'] : light ? (hasMini ? ['scene', ...PHASES_LIGHT] : PHASES_LIGHT) : cardFirst ? PHASES_CARDS.filter(x => (x !== 'cards' || plan.cardItems.length) && (x !== 'scene' || hasScene)) : hasMini ? PHASES_STORY.filter(x => x !== 'story') : PHASES_STORY)
   const STAGE = light ? ['card', 'tani', 'kullan', 'sina'] : advanced ? ['sezdir', 'kullan', 'sina'] : ['tani', 'kullan', 'sina']
   const newSet = useMemo(() => new Set(day.new_items), [day])
-  const [phase, setPhase] = useState(light ? (hasMini ? 'scene' : 'steps') : cardFirst ? (plan.cardItems.length ? 'cards' : hasScene ? 'scene' : 'steps') : hasMini ? 'scene' : 'story')
+  const [phase, setPhase] = useState(examDay ? 'review' : light ? (hasMini ? 'scene' : 'steps') : cardFirst ? (plan.cardItems.length ? 'cards' : hasScene ? 'scene' : 'steps') : hasMini ? 'scene' : 'story')
   const [storyBack, setStoryBack] = useState(null) // kart-önce akışta hikâye isteğe bağlı: okuyunca bu aşamaya dönülür
   const openStory = () => { setPop(null); setShown(CHUNK); setStoryBack(phase); setPhase('story') }
   const asked = useRef(new Set()) // bu derste sorulan soru kimlikleri: yanlışta aynı soruyu tekrar sormamak için
@@ -234,9 +235,9 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
     <Run key="review" list={reviewList}
       render={(entry, shuffled, last, onAnswer, onNext, i, queue) => (
         <div className="wrap">
-          {head('Tekrar', 'Önceki günlerden')}
+          {examDay ? head(day.title, 'Sınav provası') : head('Tekrar', 'Önceki günlerden')}
           <Progress queue={queue} i={i} />
-          <Coach text={light ? 'Önceki günlerden bazı ifadeleri tekrar edelim.' : 'Bakalım önceki ifadeler aklında kalmış mı?'} />
+          {(!examDay || i === 0) && <Coach text={examDay ? day.coach.start : light ? 'Önceki günlerden bazı ifadeleri tekrar edelim.' : 'Bakalım önceki ifadeler aklında kalmış mı?'} />}
           <Question key={entry.q.id} q={shuffled} mode="learn" last={last} items={items} onAnswer={onAnswer} onNext={onNext} />
         </div>
       )}
@@ -254,15 +255,15 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
     <div className="wrap">
       {head('Bugünün raporu', 'Gün bitti')}
       <section className="card report">
-        <div className="eyebrow">Bugün öğrendiklerin</div>
-        <ul>
+        <div className="eyebrow">{examDay ? 'Sınav provası sonucu' : 'Bugün öğrendiklerin'}</div>
+        {!examDay && <ul>
           {day.new_items.map(id => (
             <li key={id}>
               <span><b>{items[id]?.display}</b> <span className="muted">{items[id]?.meaning_tr}</span></span>
               <span className={stats.wrong.includes(id) ? 'hot' : ''}>{stats.wrong.includes(id) ? 'yarın tekrar' : '✓'}</span>
             </li>
           ))}
-        </ul>
+        </ul>}
         <div className="stats">
           <div className="stat"><b>{stats.first}/{stats.total}</b><span>ilk denemede doğru</span></div>
           <div className="stat"><b>{tomorrow}</b><span>yarına kadar tekrar</span></div>

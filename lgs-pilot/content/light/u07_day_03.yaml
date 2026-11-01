@@ -5,8 +5,8 @@ unit: 7
 day: 3
 status: draft
 title: "Ziyaretçiler, ulaşım ve konaklama"
-est_minutes: 7
-new_items: [U7-010, U7-011, U7-012, U7-013, U7-014]
+est_minutes: 8
+new_items: [U7-010, U7-011, U7-012, U7-013, U7-014, U7-062]
 steps:
   - item: U7-010
     card:
@@ -169,6 +169,50 @@ steps:
       options: ["An all-inclusive hotel", "A hotel with free taxis", "A hotel with a big garden", "A hotel near the airport"]
       answer: 0
       explain: "Yemek ve içecek dahil olan otel all-inclusive'dir."
+  - item: U7-062
+    card:
+      example_en: "The hotel costs 60 euros per night, and breakfast is 10 euros per person."
+      example_tr: "Otel gecelik 60 avro, kahvaltı da kişi başı 10 avro."
+      note_tr: "per = başına. per person = her bir kişi için, per night = bir gece için. Broşürde fiyatın yanındaki bu iki ifadeye dikkat: toplam fiyat değildir."
+    kullan:
+      id: u7d03-062-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>The boat trip is 15 euros ________, so it costs 60 euros for a family of four.</en>"
+      options: ["per person", "per year", "all-inclusive", "abroad"]
+      answer: 0
+      explain: "Dört kişi × 15 avro = 60 avro: fiyat kişi başıdır (per person)."
+      why_wrong:
+        - "Per year yıllık demek; bir tekne turu için yıllık fiyat olmaz."
+        - "All-inclusive her şey dahil otel türüdür; fiyatın kime göre olduğunu söylemez."
+        - "Abroad yurt dışı demek; cümlede yer değil fiyat konuşuluyor."
+    sina:
+      id: u7d03-062-s
+      type: text_infer
+      lgs_like: true
+      stem_id: S04
+      prompt: "<en>According to the brochure, which of the following is TRUE?</en>"
+      stem: "<en>SEA VIEW GUESTHOUSE\nRoom: 50 € per night\nBreakfast: 8 € per person\nFree bicycles for all guests</en>"
+      options: ["Two people pay 16 € for breakfast.", "A room for two nights costs 50 €.", "Breakfast is free for all guests.", "Bicycles cost 8 € per person."]
+      answer: 0
+      explain: "Kahvaltı kişi başı 8 €: iki kişi 16 € öder."
+      why_wrong:
+        - "Oda gecelik 50 €; iki gece 100 € eder. per night satırını iki geceyle çarpmak gerekir."
+        - "Ücretsiz (free) olan kahvaltı değil, bisikletler."
+        - "8 € kahvaltının fiyatı; bisikletler ücretsiz. Sayıyı kendi satırıyla eşleştir."
+    tekrar:
+      id: u7d03-062-t
+      type: situation
+      lgs_like: true
+      stem_id: S12
+      prompt: "<en>\"The tour costs 30 € per person.\" What does this mean?</en>"
+      options: ["Each person pays 30 €.", "The whole group pays 30 €.", "The tour lasts 30 minutes.", "Only one person can join the tour."]
+      answer: 0
+      explain: "per person: her bir kişi 30 € öder."
+      why_wrong:
+        - "Grubun tamamı için olsaydı \"per group\" yazardı."
+        - "30 bir fiyat (€), süre değil."
+        - "Kişi sayısı sınırı yok; fiyatın nasıl hesaplandığı anlatılıyor."
 tips:
   - type: tuzak
     refs: [U7-010]

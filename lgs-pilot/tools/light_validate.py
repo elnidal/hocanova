@@ -19,9 +19,13 @@ def texts(q):
 
 def check_q(f, q, role, day_prefix):
     qid = q.get("id", "?")
-    suf = {"kullan": "k", "sina": "s", "tekrar": "t"}[role]
-    if not re.fullmatch(rf"{day_prefix}-\d{{3}}-{suf}", qid):
-        E(f, f"{qid}: id biçimi {day_prefix}-NNN-{suf} olmalı")
+    if role == "review":
+        if not re.fullmatch(rf"{day_prefix}-r\d{{2}}", qid):
+            E(f, f"{qid}: id biçimi {day_prefix}-rNN olmalı")
+    else:
+        suf = {"kullan": "k", "sina": "s", "tekrar": "t"}[role]
+        if not re.fullmatch(rf"{day_prefix}-\d{{3}}-{suf}", qid):
+            E(f, f"{qid}: id biçimi {day_prefix}-NNN-{suf} olmalı")
     if q.get("type") not in TYPES:
         E(f, f"{qid}: bilinmeyen type {q.get('type')}")
     if q.get("answer") != 0:
@@ -35,7 +39,7 @@ def check_q(f, q, role, day_prefix):
         E(f, f"{qid}: prompt boş")
     if not q.get("explain"):
         E(f, f"{qid}: açıklama (explain) yok")
-    if role == "sina":
+    if role in ("sina", "review"):
         if not q.get("lgs_like"):
             E(f, f"{qid}: Sına sorusunda lgs_like: true olmalı")
         if q.get("stem_id") and not re.fullmatch(r"S(0[1-9]|1[0-4])", str(q["stem_id"])):
@@ -115,7 +119,16 @@ def main():
         step_items = [s["item"] for s in d.get("steps", [])]
         if sorted(step_items) != sorted(d.get("new_items", [])):
             E(f, "new_items ile steps birimleri aynı olmalı")
-        if not 1 <= len(step_items) <= 8:
+        if d.get("exam"):  # sınav provası günü: yeni ifade yok, review soruları LGS biçiminde
+            if step_items: E(f, "sınav provası gününde yeni ifade olmaz")
+            if not 6 <= len(d.get("review", [])) <= 12: E(f, "sınav provası 6–12 soru olmalı")
+            for q in d.get("review", []):
+                check_q(f, q, "review", prefix)
+                if q.get("id") in ids: E(f, f"tekrarlanan id {q.get('id')}")
+                ids.add(q.get("id"))
+                if not q.get("item"): E(f, f"{q.get('id')}: item yok")
+                if "why_wrong" in q and len(q["why_wrong"]) != len(q.get("options", [])) - 1: E(f, f"{q.get('id')}: why_wrong sayısı")
+        elif not 1 <= len(step_items) <= 8:
             W(f, f"gün başına {len(step_items)} birim (hedef 4–6)")
         for s in d.get("steps", []):
             if s["item"] not in items:

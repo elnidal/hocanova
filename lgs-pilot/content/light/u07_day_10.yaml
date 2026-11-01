@@ -5,8 +5,8 @@ unit: 7
 day: 10
 status: draft
 title: "Gelenekler ve misafirperverlik"
-est_minutes: 7
-new_items: [U7-045, U7-046, U7-047, U7-048, U7-049]
+est_minutes: 8
+new_items: [U7-045, U7-046, U7-047, U7-048, U7-049, U7-064]
 steps:
   - item: U7-045
     card:
@@ -168,6 +168,49 @@ steps:
       options: ["incredible", "ordinary", "simple", "boring"]
       answer: 0
       explain: "unbelievable ≈ incredible."
+  - item: U7-064
+    card:
+      example_en: "In a fair world, everybody has equality and justice: the same rights for all people."
+      example_tr: "Adil bir dünyada herkes için eşitlik ve adalet vardır: bütün insanlar için aynı haklar."
+      note_tr: "justice = herkese hakkını veren doğru düzen; equality = herkesin aynı haklara sahip olması. Aynı kutuda honesty (Ü1'deki honest) ve patience (Ü1'deki patient) da var: For a better life / country / world."
+    kullan:
+      id: u7d10-064-k
+      type: gap_fill
+      prompt: "<en>Choose the best option.</en>"
+      stem: "<en>Boys and girls should have the same chances at school. This is ________.</en>"
+      options: ["equality", "hospitality", "population", "construction"]
+      answer: 0
+      explain: "Herkese aynı fırsat: equality."
+      why_wrong:
+        - "Hospitality misafirlere sıcak davranmaktır; aynı fırsatlarla ilgili değil."
+        - "Population nüfus demek; cümle haklardan söz ediyor."
+        - "Construction inşaat, yapım demek; konu okul fırsatları."
+    sina:
+      id: u7d10-064-s
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which of the following is an example of justice?</en>"
+      options: ["A judge listens to both sides and then makes a fair decision.", "A family welcomes guests with tea and food.", "A tourist buys a souvenir from a local shop.", "A boy waits for his friend for an hour."]
+      answer: 0
+      explain: "İki tarafı da dinleyip adil karar vermek: justice."
+      why_wrong:
+        - "Misafiri çay ve yemekle karşılamak hospitality örneğidir."
+        - "Hediyelik eşya almak bir gezi etkinliği; değerle ilgisi yok."
+        - "Bir saat beklemek sabır (patience) örneğidir, adalet değil."
+    tekrar:
+      id: u7d10-064-t
+      type: situation
+      lgs_like: true
+      stem_id: S09
+      prompt: "<en>Which value does this sentence show? \"Everybody can vote, rich or poor.\"</en>"
+      options: ["equality", "patience", "hospitality", "honesty"]
+      answer: 0
+      explain: "Zengin ya da yoksul, herkes oy verebilir: eşit haklar, equality."
+      why_wrong:
+        - "Patience beklemeyi bilmektir; cümlede bekleme yok."
+        - "Hospitality misafirperverliktir; cümle haklardan söz ediyor."
+        - "Honesty doğruyu söylemektir; cümlede yalan ya da doğru yok."
 tips:
   - type: kelime_ailesi
     refs: [U7-045]
