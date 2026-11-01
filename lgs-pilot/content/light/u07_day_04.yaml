@@ -229,3 +229,35 @@ notifications:
   morning: "Bugün: pansiyon, tatil köyü, kırsal ve kentsel. Nerede kalacaksın? 🏡"
   evening: "\"The country\" her zaman \"ülke\" mi demek? Bir düşün 🤔"
   review: "urban'ın zıttı hangi kelime? 🏙️"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-015
+    durum: "Bozcaada'da küçük bir taş evin kapısında tahta bir tabela var."
+    lines:
+      - { speaker: "Elif", text: "Tabelada yazıyor: <en>{U7-015|Bed and breakfast}</en>. Sabah kahvaltısını ev sahibi hazırlıyor!" }
+      - { speaker: "Duru", text: "Domates bahçeden, reçel ev sahibinin mutfağından. Ben burada kalırım!" }
+  - item: U7-016
+    durum: "Selin, ailesiyle Safranbolu'da eski bir evin üst katında kalıyor; sabah mesaj atıyor."
+    lines:
+      - { speaker: "Selin", text: "Otel değil, eski bir ev; sahibi alt katta oturuyor. <en>We're staying at a {U7-016|guesthouse}.</en>" }
+      - { speaker: "Ece", text: "Ev sahibi size de çay getirdi mi?" }
+      - { speaker: "Selin", text: "Üç kere! Daha kahvaltı bile etmedik." }
+  - item: U7-017
+    durum: "Kaan havuzları, restoranları ve su kaydırakları olan büyük bir yerin fotoğrafını gösteriyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>It's a big {U7-017|resort}</en>: altı havuz, üç restoran, bir de su kaydırağı!" }
+      - { speaker: "Bora", text: "Altı havuz mu? Ben haritasız kaybolurum." }
+  - item: U7-018
+    durum: "Bora dedesiyle şehirden uzak bir köye gidiyor; telefon çekmiyor."
+    lines:
+      - { speaker: "Bora", text: "Ne trafik var ne apartman; inek, tavuk, dere… <en>I love the {U7-018|countryside}.</en>" }
+      - { speaker: "Dedesi", text: "Telefonu bırak da gel, ağaçtan erik toplayalım." }
+  - item: U7-019
+    durum: "Murat Bey tahtaya iki sütun çiziyor: metro, gökdelen, trafik | tarla, dere, inek."
+    lines:
+      - { speaker: "Murat Bey", text: "Metro, gökdelen, trafik: <en>this is an {U7-019|urban} area.</en> Peki ikinci sütun?" }
+      - { speaker: "Elif", text: "<en>{U7-018|Rural}!</en> Çünkü orada inek var, metro yok." }
+  - item: U7-063
+    durum: "Ece kumbarasını boşaltıp paraları sayıyor; hafta sonu Kemeraltı'na gidecekler."
+    lines:
+      - { speaker: "Ece", text: "Toplam 400 lira. <en>My {U7-063|budget} is 400 liras.</en> Fazlası yok!" }
+      - { speaker: "Selin", text: "O zaman önce simit, sonra {U7-008|souvenirs}. Hesap sende!" }

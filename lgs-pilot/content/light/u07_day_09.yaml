@@ -185,3 +185,29 @@ notifications:
   morning: "Bugün: kültürel miras, el sanatları, \"date back to\" ve çeşitlilik 🏺"
   evening: "Doğal miras mı, kültürel miras mı? Pamukkale hangisi? 🤔"
   review: "Bir kale 12. yüzyıla dayanıyor: İngilizcede hangi kalıp? 🏰"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-040
+    durum: "Murat Bey tahtadaki listeyi okuyor: Kapadokya, Efes, Safranbolu, Truva."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>They are on the World {U7-040|Heritage} List.</en> Bütün insanlığın ortak hazinesi." }
+      - { speaker: "Selin", text: "Yani Safranbolu benim de, Japonya'daki bir çocuğun da!" }
+  - item: U7-041
+    durum: "Göbeklitepe'de Elif tabeladaki rakama bakıp gözlerini kırpıştırıyor."
+    lines:
+      - { speaker: "Elif", text: "Tabelada yazıyor: <en>It {U7-041|dates back to} 9600 BC.</en>" }
+      - { speaker: "Kaan", text: "On bir bin yıl önce! Piramitlerden bile eski!" }
+  - item: U7-042
+    durum: "Duru müzede camlı bir vitrinin önünde küçük kartı okuyor."
+    lines:
+      - { speaker: "Duru", text: "<en>This box {U7-042|contains} 300 old coins.</en> Hepsi tek tek sayılmış!" }
+      - { speaker: "Bora", text: "Benim kumbaramda da bozuk para var ama onu müzeye kimse koymaz." }
+  - item: U7-043
+    durum: "Avanos'ta Ece bir ustanın yanında dönen tezgâhta çamura şekil veriyor."
+    lines:
+      - { speaker: "Ece", text: "Ellerim çamur içinde ama bak, bir vazo çıkıyor! <en>{U7-043|Pottery} is fun!</en>" }
+      - { speaker: "Usta", text: "<en>Be {U1-085|patient}!</en> Yavaş, kızım… Tamam, bu da güzel bir tabak oldu." }
+  - item: U7-044
+    durum: "Okul şenliğinde her masada başka bir şehrin yemeği, müziği ve kıyafeti var."
+    lines:
+      - { speaker: "Selin", text: "Antep baklavası, Karadeniz horonu, Ege zeybeği… <en>This is {U7-044|cultural diversity}!</en>" }
+      - { speaker: "Kaan", text: "Ben her masada tadına baktım. <en>Everything is {U3-028|delicious}!</en>" }

@@ -216,3 +216,34 @@ notifications:
   morning: "Bugün: devasa, olağanüstü, kalabalık, unutulmaz ve şirin! Kartpostal yaz ✉️"
   evening: "\"A busy street\" meşgul bir cadde mi, kalabalık bir cadde mi? 🤔"
   review: "\"Enormous\" ile \"huge\" arasındaki fark ne? 🐘"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-050
+    durum: "Bora, Nemrut Dağı'ndaki taş başların yanında fotoğraf çektiriyor."
+    lines:
+      - { speaker: "Bora", text: "Her biri benden üç kat büyük! <en>These heads are {U7-050|enormous}!</en>" }
+      - { speaker: "Dedesi", text: "Burnu bile senin boyunda, evlat." }
+  - item: U7-051
+    durum: "Murat Bey Çatalhöyük'ün duvar resimlerini perdeye yansıtıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Dokuz bin yıllık resimler ve renkleri hâlâ duruyor. <en>That's {U7-051|remarkable}.</en>" }
+      - { speaker: "Ece", text: "Benim geçen yılki resmim bile soldu!" }
+  - item: U7-052
+    durum: "Sınıf, tahtadaki tabloda İstanbul'la Bozcaada'yı karşılaştırıyor."
+    lines:
+      - { speaker: "Kaan", text: "İstanbul'da metroda yer yok, köprüde trafik… <en>It's very {U7-052|crowded}.</en>" }
+      - { speaker: "Elif", text: "Bozcaada'da ise sokakta bir kedi, bir de ben." }
+  - item: U7-053
+    durum: "Tatilden dönen Duru, Fıstık'la kumsalda çekilmiş fotoğrafları gösteriyor."
+    lines:
+      - { speaker: "Duru", text: "Fıstık ilk kez denizi gördü ve dalgalara havladı! <en>It was an {U7-053|unforgettable} day.</en>" }
+      - { speaker: "Selin", text: "Bu fotoğrafı çerçeveletmelisin." }
+  - item: U7-054
+    durum: "Ece, Mardin'den yeni dönen Selin'e bir daha gidip gitmeyeceğini soruyor."
+    lines:
+      - { speaker: "Selin", text: "<en>{U7-054|Definitely}!</en> Taş evler, gün batımı, künefe… Bu yaz yine." }
+      - { speaker: "Ece", text: "O zaman bu sefer ben de bavulumu hazırlıyorum." }
+  - item: U7-055
+    durum: "Elif Cumalıkızık'ta renkli kapıların ve dar taş sokakların arasında yürüyor."
+    lines:
+      - { speaker: "Elif", text: "Küçücük bir köy ama her köşe kartpostal gibi. <en>It's a {U7-055|charming} village.</en>" }
+      - { speaker: "Ece", text: "Teyzem Bursa'da oturuyor; bir dahaki sefere ben de geliyorum!" }

@@ -184,3 +184,29 @@ notifications:
   morning: "Bugün: antik şehir, saray, cami ve mimari. Tarihe yolculuk! 🏛️"
   evening: "Bisikletin üç yaşında. Ona \"ancient\" denir mi? 🚲"
   review: "\"under construction\" levhasını görünce ne anlarsın? 🚧"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-030
+    durum: "Efes'te sınıf, mermer sütunların arasında yürüyor."
+    lines:
+      - { speaker: "Rehber", text: "Bu sokaklar iki bin yıldan daha eski. <en>Ephesus is an {U7-030|ancient} city.</en>" }
+      - { speaker: "Bora", text: "İki bin yıl mı? Dedemden bile yaşlı!" }
+  - item: U7-031
+    durum: "Duru Safranbolu'da ahşap cumbalı beyaz evlerin fotoğrafını çekiyor."
+    lines:
+      - { speaker: "Duru", text: "Pencereler, çatılar, tahta oymalar… <en>I love the {U7-031|architecture} here.</en>" }
+      - { speaker: "Elif", text: "Evler birbirine benziyor ama her biri ayrı güzel." }
+  - item: U7-032
+    durum: "Okulun yanındaki boş arsada vinçler ve kasklı işçiler var."
+    lines:
+      - { speaker: "Kaan", text: "Burası kütüphane olacakmış. <en>The {U7-032|construction} will take two years.</en>" }
+      - { speaker: "Selin", text: "İki yıl mı? O zaman biz liseye gitmiş oluruz!" }
+  - item: U7-033
+    durum: "İstanbul gezisinde sınıf, altın süslemeli büyük salonlarda dolaşıyor."
+    lines:
+      - { speaker: "Rehber", text: "Padişahlar burada yaşadı. <en>This is Dolmabahçe {U7-033|Palace}.</en>" }
+      - { speaker: "Ece", text: "Şu avize bizim salondan büyük!" }
+  - item: U7-034
+    durum: "Ece Edirne'de dört ince minareli, büyük kubbeli bir yapının önünde duruyor."
+    lines:
+      - { speaker: "Ece", text: "Dört minare, kocaman bir kubbe! <en>Is it a {U7-034|mosque}?</en>" }
+      - { speaker: "Ece'nin babası", text: "<en>Yes, it's the Selimiye.</en> İçeride sessiz olalım, ayakkabılarımızı da çıkaralım." }

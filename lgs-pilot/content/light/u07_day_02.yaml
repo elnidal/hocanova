@@ -186,3 +186,29 @@ notifications:
   morning: "Bugün: tur rehberi, hediyelik eşya ve broşür. Gezi başlıyor! 🗺️"
   evening: "Bir otelin broşüründe \"NOT mentioned\" sorusu çıkarsa ne yaparsın? 🤔"
   review: "Geziden aldığın küçük hatıra eşyasına İngilizce ne denir? 🎁"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-001
+    durum: "Murat Bey tahtaya Kapadokya'nın balonlu bir fotoğrafını asıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Her yıl binlerce kişi bunu görmeye geliyor. <en>It's a famous {U7-001|tourist attraction}.</en>" }
+      - { speaker: "Kaan", text: "Balonlar, peri bacaları… Ben de sıraya girerim!" }
+  - item: U7-006
+    durum: "Ece'nin babası bilgisayarda kocaman beyaz bir geminin fotoğrafını açıyor."
+    lines:
+      - { speaker: "Ece'nin babası", text: "Bir hafta denizde, her sabah başka bir şehir! <en>A {U7-006|cruise} in the Aegean!</en>" }
+      - { speaker: "Ece", text: "Gemide havuz da var mı? O zaman ben varım!" }
+  - item: U7-007
+    durum: "Efes'te elinde sarı bayrak olan bir kadın grubun önünde yürüyor; herkes onu izliyor."
+    lines:
+      - { speaker: "Selin", text: "Bayrağı takip edin dedi. <en>She is our {U7-007|tour guide}.</en>" }
+      - { speaker: "Bora", text: "Her taşın hikâyesini biliyor. Ben kendi doğum günümü zor hatırlıyorum!" }
+  - item: U7-008
+    durum: "Elif dönüşte çantasından küçük bir mıknatıs ve bir anahtarlık çıkarıyor."
+    lines:
+      - { speaker: "Elif", text: "Mıknatıs annem için, anahtarlık sana. <en>A little {U7-008|souvenir} from Safranbolu!</en>" }
+      - { speaker: "Duru", text: "Üstünde minicik ahşap bir ev var. Hemen anahtarıma takıyorum!" }
+  - item: U7-009
+    durum: "Ece'nin annesi otelin masasında katlanmış, renkli bir kâğıt açıyor."
+    lines:
+      - { speaker: "Ece'nin annesi", text: "Fotoğraflar, fiyatlar, harita… Hepsi bu {U7-009|brochure}'de yazıyor." }
+      - { speaker: "Ece", text: "Kapaktaki havuz gerçekten bu kadar mavi mi, yoksa fotoğraf hilesi mi?" }

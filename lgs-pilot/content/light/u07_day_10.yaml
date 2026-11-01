@@ -226,3 +226,34 @@ notifications:
   morning: "Bugün: misafirperverlik, yerel lezzetler, halk oyunu ve inanılmaz! 🍯"
   evening: "\"Authentic\" kelimesine en yakın anlam hangisi? 🤔"
   review: "Camide, kilisede, tapınakta: hepsi için hangi sıfat? 🕌"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-045
+    durum: "Mardin'de bir aile, yol soran Selin'lere kapıyı açıp onları çaya davet ediyor."
+    lines:
+      - { speaker: "Selin", text: "Sadece yolu sorduk; çay, börek, bir de yol için kurabiye! <en>What {U7-045|hospitality}!</en>" }
+      - { speaker: "Selin'in babası", text: "Teşekkür etmeyi unutma, kızım. Kurabiyeleri de paylaşırız." }
+  - item: U7-046
+    durum: "Gaziantep'te Kaan menüye değil, garsonun önerisine kulak veriyor."
+    lines:
+      - { speaker: "Kaan", text: "Hamburger istemiyorum. <en>I want to taste {U7-046|local} dishes.</en>" }
+      - { speaker: "Garson", text: "O zaman yuvarlama ve beyran. Buranın insanı sabah sabah bunu yer!" }
+  - item: U7-047
+    durum: "Okul şenliğinde Bora kollarını arkadaşlarına dolamış, davulla birlikte zıplıyor."
+    lines:
+      - { speaker: "Bora", text: "Sağ, sol, zıpla! <en>This {U7-047|folk dance} is from the Black Sea region.</en>" }
+      - { speaker: "Duru", text: "Tavuk dansından sonra ikinci şampiyonluk geliyor!" }
+  - item: U7-048
+    durum: "Bayram sabahı Ece'nin babaannesi herkese şeker ve kolonya uzatıyor."
+    lines:
+      - { speaker: "Ece", text: "Ramazan Bayramı, Kurban Bayramı… <en>They are {U7-048|religious} holidays.</en>" }
+      - { speaker: "Babaannesi", text: "Önce büyüklerin elini öp, sonra şekerini al!" }
+  - item: U7-049
+    durum: "Kapadokya'da gün doğarken gökyüzü yüzlerce balonla doluyor."
+    lines:
+      - { speaker: "Elif", text: "Yüzlerce balon, hepsi aynı anda! <en>It's {U7-049|incredible}!</en>" }
+      - { speaker: "Duru", text: "Fotoğraf çekmeyi unuttum, sadece bakıyorum." }
+  - item: U7-064
+    durum: "Sınıf başkanlığı seçiminde Selin kısa bir konuşma yapıyor."
+    lines:
+      - { speaker: "Selin", text: "Herkesin oyu aynı değerde. <en>I believe in {U7-064|equality}.</en>" }
+      - { speaker: "Murat Bey", text: "Kural herkese aynı uygulanırsa ona da <en>{U7-064|justice}</en> deriz." }

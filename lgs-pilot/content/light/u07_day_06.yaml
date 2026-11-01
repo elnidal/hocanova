@@ -185,3 +185,29 @@ notifications:
   morning: "Bugün: liman, konum, iklim, nüfus ve yaban hayatı. Bir yeri tarif et! 🌍"
   evening: "Climate mı, weather mı? Bugün yağmur yağıyor, hangisi? ☔"
   review: "Bir şehirde yaşayan insan sayısına İngilizce ne denir? 👥"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-025
+    durum: "Ece babasıyla Kordon'da yürürken uzakta dev gemiler yük boşaltıyor."
+    lines:
+      - { speaker: "Ece'nin babası", text: "Gemiler buradan bütün dünyaya açılıyor. <en>İzmir is a big {U7-025|port} city.</en>" }
+      - { speaker: "Ece", text: "Şu kırmızı gemi nereye gidiyor acaba?" }
+  - item: U7-026
+    durum: "Selin haritada Mardin'i parmağıyla gösteriyor."
+    lines:
+      - { speaker: "Selin", text: "Burada, güneydoğuda, bir tepenin üstünde. <en>Its {U7-026|location} is amazing.</en>" }
+      - { speaker: "Bora", text: "Tepe mi? O zaman manzara harika olmalı." }
+  - item: U7-027
+    durum: "Murat Bey tahtaya iki şehir yazıyor: Antalya ve Erzurum."
+    lines:
+      - { speaker: "Murat Bey", text: "Antalya'da kış ılık, Erzurum'da kar dizlere kadar. <en>The {U7-027|climate} is very different.</en>" }
+      - { speaker: "Kaan", text: "Yani Erzurum'a ocakta şortla gidilmez!" }
+  - item: U7-028
+    durum: "Sınıf, iki şehrin bilgilerini karşılaştıran bir tabloyu okuyor."
+    lines:
+      - { speaker: "Elif", text: "<en>İstanbul: {U7-028|population} 15 million. Bozcaada: about 3,000.</en>" }
+      - { speaker: "Duru", text: "Üç bin mi? Orada herkes herkesi tanıyordur!" }
+  - item: U7-029
+    durum: "Kaan ve Bora, Kuş Cenneti'nde dürbünle sazlıkları izliyor."
+    lines:
+      - { speaker: "Kaan", text: "Pelikanlar, balıkçıllar, bir de su samuru! <en>The {U7-029|wildlife} here is {U2-077|fascinating}.</en>" }
+      - { speaker: "Bora", text: "Fısılda, yoksa hepsi uçup gider." }

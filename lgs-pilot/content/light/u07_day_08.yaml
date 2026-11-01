@@ -184,3 +184,29 @@ notifications:
   morning: "Bugün: imparator, fetih, ticaret yolu, terk edilmiş şehir ve keşif 📜"
   evening: "İpek Yolu hangi iki kıtayı bağlıyordu? 🐫"
   review: "\"Discover\" mı, \"conquer\" mı? Bir mağarayı ilk kez bulmak? 🔦"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-035
+    durum: "Müzede Selin, altın bir sikkenin üstündeki taçlı yüze bakıyor."
+    lines:
+      - { speaker: "Selin", text: "Bu kim? Başında taç, omzunda pelerin…" }
+      - { speaker: "Rehber", text: "<en>He was a Roman {U7-035|emperor}.</en> Bütün bu toprakları o yönetti." }
+  - item: U7-036
+    durum: "Murat Bey İstanbul'un 1453 yılını anlatıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>In 1453, the Ottomans {U7-036|conquered} the city.</en> Sonra şehrin yönetimi değişti." }
+      - { speaker: "Kaan", text: "Surlar hâlâ duruyor, değil mi? Geçen hafta önünden geçtik." }
+  - item: U7-037
+    durum: "Duru haritada Çin'den Anadolu'ya uzanan bir çizgiyi parmağıyla takip ediyor."
+    lines:
+      - { speaker: "Duru", text: "Develer ipek ve baharat taşımış. <en>The Silk Road was a {U7-037|trade route}.</en>" }
+      - { speaker: "Elif", text: "Bütün yolu yürüyerek mi? Benim ayaklarım şimdiden ağrıdı." }
+  - item: U7-038
+    durum: "Bora ve dedesi Fethiye yakınında, çatısı olmayan taş evlerin arasında yürüyor."
+    lines:
+      - { speaker: "Dedesi", text: "Bir zamanlar burada yüzlerce aile yaşarmış. <en>Now it's an {U7-038|abandoned} village.</en>" }
+      - { speaker: "Bora", text: "Kimse yok… Sadece rüzgâr ve iki keçi." }
+  - item: U7-039
+    durum: "Belgeselde bir çiftçi tarlayı sürerken topraktan taş bir heykel çıkıyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>A farmer {U7-039|discovered} it by accident!</en>" }
+      - { speaker: "Ece", text: "Ben bahçeyi kazınca sadece solucan çıkıyor." }

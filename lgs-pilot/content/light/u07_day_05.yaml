@@ -183,3 +183,29 @@ notifications:
   morning: "Bugün: sahil, yayla, ada, meydan ve çeşme. Hangisine gidiyoruz? 🧭"
   evening: "\"island\" kelimesinde hangi harf okunmaz? 🏝️"
   review: "Şehirde \"square\" kare mi demek, meydan mı? 🤔"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-020
+    durum: "Selin Urla'dan, babaannesinin evinden fotoğraf gönderiyor; balkonun önü masmavi."
+    lines:
+      - { speaker: "Selin", text: "Balkondan dalgaları duyuyorum! <en>The house is by the {U7-020|seaside}.</en>" }
+      - { speaker: "Elif", text: "Kum, martı, dondurma… Biraz kıskandım!" }
+  - item: U7-021
+    durum: "Elif annesiyle Karadeniz'de minibüsle saatlerce yukarı çıkıyor."
+    lines:
+      - { speaker: "Elif", text: "Bulutlar ayağımızın altında, inekler yemyeşil çimende… <en>We are on a {U7-021|highland}!</en>" }
+      - { speaker: "Elif'in annesi", text: "Hırkanı giy; burası temmuzda bile serin." }
+  - item: U7-022
+    durum: "Ece ve ailesi Bozcaada'ya gitmek için feribota biniyor."
+    lines:
+      - { speaker: "Ece", text: "Her yanı deniz, köprü yok; tek yol feribot. <en>It's a small {U7-022|island}.</en>" }
+      - { speaker: "Ece'nin babası", text: "Kırk dakika sonra oradayız. Martılara simidini kaptırma!" }
+  - item: U7-023
+    durum: "Kaan sınıf gezisinde arkadaşlarını kaybetti; telefonla Duru'yu arıyor."
+    lines:
+      - { speaker: "Kaan", text: "Saat kulesinin önündeyim, etrafta güvercinler! <en>I'm in the main {U7-023|square}.</en>" }
+      - { speaker: "Duru", text: "Kıpırdama, kulenin önüne geliyoruz!" }
+  - item: U7-024
+    durum: "Duru, Fıstık'la parkta yürürken Fıstık havaya fışkıran suya doğru koşuyor."
+    lines:
+      - { speaker: "Duru", text: "Fıstık, ıslanacaksın! <en>Stay away from the {U7-024|fountain}!</en>" }
+      - { speaker: "Bora", text: "Çok geç. Fıstık havuzun içinde, su da tam tepesinden fışkırıyor." }

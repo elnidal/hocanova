@@ -218,3 +218,38 @@ notifications:
   morning: "Son gün! \"What is İzmir like?\" sorusuna ne cevap verirsin? 🎒"
   evening: "Tourism bitti! Hangi kalıp seni en çok zorladı? 🤔"
   review: "\"Famous for\" mı, \"famous with\" mi? Tek harf farkı değil, tek edat! 🌍"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-056
+    durum: "Murat Bey sınıfa bilmece soruyor: kebap, baklava, fıstık."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>What is Gaziantep {U7-056|famous for}?</en>" }
+      - { speaker: "Kaan", text: "<en>It's {U7-056|famous for} baklava!</en> Bir de fıstık… Duru'nunki değil ama!" }
+      - { speaker: "Duru", text: "Fıstık bunu duymasın, alınır." }
+  - item: U7-057
+    durum: "Teneffüste Bora, Elif'e telefonundaki balon fotoğrafını gösteriyor."
+    lines:
+      - { speaker: "Bora", text: "<en>{U7-057|Have you ever been to} Cappadocia?</en>" }
+      - { speaker: "Elif", text: "<en>{U7-057|No, I haven't}.</en> Ya sen?" }
+      - { speaker: "Bora", text: "<en>{U7-057|Yes, I have}. I went there last summer with my grandpa.</en>" }
+  - item: U7-058
+    durum: "Pazartesi sabahı Ece, Bozcaada'dan dönen Kaan'ı okul kapısında karşılıyor."
+    lines:
+      - { speaker: "Ece", text: "<en>{U7-058|Did you enjoy your trip}?</en>" }
+      - { speaker: "Kaan", text: "Çok! Her gün denize girdim." }
+      - { speaker: "Ece", text: "<en>{U7-058|How long did you stay}?</en>" }
+      - { speaker: "Kaan", text: "Beş gün. Bir ay olsa yine az gelirdi!" }
+  - item: U7-059
+    durum: "Elif telefonda Ankara'ya taşınan kuzeniyle konuşuyor."
+    lines:
+      - { speaker: "Elif", text: "<en>{U7-059|What is the weather like} in Ankara?</en>" }
+      - { speaker: "Elif'in kuzeni", text: "Kar yağıyor, her yer bembeyaz! Gelirken atkını unutma." }
+  - item: U7-060
+    durum: "Sınıf, okul gezisi için Kapadokya ile Antalya arasında oylama yapıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>{U7-060|What do you think about} Cappadocia?</en>" }
+      - { speaker: "Duru", text: "<en>{U7-060|To me}, it's better than Antalya.</en> Antalya'da peri bacası yok!" }
+  - item: U7-061
+    durum: "Efes'in girişinde Ece haritadaki yıldızlı noktaları sayıyor."
+    lines:
+      - { speaker: "Ece", text: "Celsus Kütüphanesi'nin yanında üç yıldız var: <en>{U7-061|must-see}!</en>" }
+      - { speaker: "Rehber", text: "<en>Yes, it's {U6-030|magnificent}.</en> Onu görmeden sakın dönmeyin." }

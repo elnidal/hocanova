@@ -153,3 +153,25 @@ notifications:
   morning: "Bugün tatil kelimeleri: trip mi, travel mı? 🧳"
   evening: "Kuzeni yurt dışında yaşıyor: \"lives abroad\" mı, \"lives to abroad\" mı? 🌍"
   review: "İstanbul'u gezip görmek için hangi kalıp? go ____ 📸"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-002
+    durum: "Son ders zili çalıyor; Kaan takvimde yaz aylarını kırmızıyla işaretliyor."
+    lines:
+      - { speaker: "Kaan", text: "Üç ay okul yok! Bu yaz büyük bir {U7-002|holiday} istiyorum: deniz, kum, dondurma." }
+      - { speaker: "Selin", text: "Ben de. Ama önce karneyi bir görelim!" }
+  - item: U7-003
+    durum: "Elif, Ankara'daki kuzenine gitmek için otobüs bileti alıyor."
+    lines:
+      - { speaker: "Elif", text: "<en>It's a long {U7-003|journey}: six hours by bus!</en>" }
+      - { speaker: "Duru", text: "Altı saat mi? Yanına iki kitap, bir de yedek kulaklık al." }
+      - { speaker: "Elif", text: "Olsun, <en>I love to {U7-003|travel}.</en>" }
+  - item: U7-004
+    durum: "Kaan, kuzeninden gelen fotoğrafı gösteriyor; arkada karlı bir Berlin sokağı var."
+    lines:
+      - { speaker: "Kaan", text: "Kuzenim artık Berlin'de okuyor. <en>He lives {U7-004|abroad} now.</en>" }
+      - { speaker: "Ece", text: "Pasaport, valiz, yeni bir dil… Cesur kuzen!" }
+  - item: U7-005
+    durum: "Duru annesiyle İstanbul için bir günlük plan yapıyor; listede kule, çarşı, müze var."
+    lines:
+      - { speaker: "Duru", text: "Sabah Galata Kulesi, öğlen Kapalıçarşı… <en>We're going {U7-005|sightseeing} all day!</en>" }
+      - { speaker: "Duru'nun annesi", text: "Rahat ayakkabı giy; akşama ayakların konuşur!" }

@@ -228,3 +228,34 @@ notifications:
   morning: "Bugün: ulaşım, konaklama ve her şey dahil otel. Odanı ayırt! 🏨"
   evening: "Visitor mı, spectator mı? Maçta stadyumda olan kim? ⚽"
   review: "\"Accommodation\" nasıl yazılır? Kaç tane c ve m var? 🤔"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U7-010
+    durum: "Müzenin girişindeki ekranda bir sayı her dakika artıyor."
+    lines:
+      - { speaker: "Selin", text: "Ekranda yazıyor: <en>Today: 2,350 {U7-010|visitors}</en>. Sabah dokuzdan beri!" }
+      - { speaker: "Kaan", text: "Hepsi aynı anda dinozor salonuna girmesin bari." }
+  - item: U7-011
+    durum: "Ece'nin ailesi Kapadokya'daki otelin sayfasını okuyor."
+    lines:
+      - { speaker: "Ece'nin babası", text: "Burada yazıyor: <en>{U7-011|Transportation}: free bus from the airport.</en>" }
+      - { speaker: "Ece", text: "Süper, valizle otobüs otobüs dolaşmak yok!" }
+  - item: U7-012
+    durum: "Kaan otelin panosundaki listeyi yüksek sesle okuyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>{U7-012|Recreational activities}: pool games, mini golf, beach volleyball.</en>" }
+      - { speaker: "Bora", text: "Hepsine varım. Ama önce mini golf, sonra dondurma!" }
+  - item: U7-013
+    durum: "Selin'in babası tablette seçenekleri karşılaştırıyor: otel mi, kamp çadırı mı?"
+    lines:
+      - { speaker: "Selin'in babası", text: "Uçak biletleri tamam. Şimdi sıra {U7-013|accommodation}'da." }
+      - { speaker: "Selin", text: "Çadır olmasın baba, geçen sefer bütün gece sivrisinek!" }
+  - item: U7-014
+    durum: "Ece annesiyle bir otelin fiyat sayfasına bakıyor."
+    lines:
+      - { speaker: "Ece'nin annesi", text: "<en>{U7-014|All-inclusive}: breakfast, lunch, dinner, snacks and drinks.</en>" }
+      - { speaker: "Ece", text: "Yani dondurma için ayrıca para yok mu? Bu otel benim!" }
+  - item: U7-062
+    durum: "Kaan, ailesiyle üç gece kalacakları otelin fiyatını hesaplıyor."
+    lines:
+      - { speaker: "Kaan", text: "{U7-009|Brochure}'de yazıyor: <en>Room: 60 € {U7-062|per night}. Breakfast: 8 € {U7-062|per person}.</en>" }
+      - { speaker: "Kaan'ın annesi", text: "Dört kişiyiz: kahvaltıyı dört kere, odayı bir kere yaz. Sakin ol!" }
