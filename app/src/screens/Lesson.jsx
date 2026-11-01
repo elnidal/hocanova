@@ -177,7 +177,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
         </section>
         <p className="muted">Hepsini anlamaya çalış; bilmediğin kelimeye takılma.</p>
         <div className="row">
-          {cardFirst && day.story?.length > 0 && <button className="btn ghost" onClick={openStory}>Hikâyenin tamamını oku (isteğe bağlı)</button>}
+          {cardFirst && !hasMini && day.story?.length > 0 && <button className="btn ghost" onClick={openStory}>Hikâyenin tamamını oku (isteğe bağlı)</button>}
           <button className="btn" onClick={() => { setPop(null); setPhase('steps') }}>Alıştırmaya geç →</button>
         </div>
         {popup}
@@ -273,7 +273,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       {softCapped && <p className="softnote">Bugün çok yeni ifade öğrendin! Beyin dinlenirken öğrendiklerini pekiştirir; yarınki tekrar çok işe yarayacak. İstersen yine de devam edebilirsin.</p>}
       <div className="row">
         <button className="btn ghost" onClick={onExit}>← Ana ekran</button>
-        {cardFirst && day.story?.length > 0 && <button className="btn ghost" onClick={openStory}>Günün hikâyesini oku</button>}
+        {cardFirst && !hasMini && day.story?.length > 0 && <button className="btn ghost" onClick={openStory}>Günün hikâyesini oku</button>}
         {onNext && <button className="btn" onClick={onNext}>{softCapped ? 'Yine de devam et →' : 'Bir tane daha →'}</button>}
       </div>
     </div>
