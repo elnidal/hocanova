@@ -308,3 +308,35 @@ notifications:
 
 editor:
   z07: {U4-002: BEKLIYOR, U4-012: BEKLIYOR, U4-017: BEKLIYOR, U4-020: BEKLIYOR, U4-024: BEKLIYOR, U4-042: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U4-002
+    durum: "Bora'nın dedesi radyoda caz programı dinliyor; programa telefonla istek geliyor."
+    lines:
+      - { speaker: "Radyo sunucusu", text: "<en>Our next {U4-002|caller} is from Bursa. Hello, you're on the air!</en>" }
+      - { speaker: "Bora'nın dedesi", text: "Bursa'dan kim olabilir? Aa, bu Ece'nin sesi!" }
+  - item: U4-012
+    durum: "Ece, kültür merkezini arıyor; önce santral cevap veriyor."
+    lines:
+      - { speaker: "Santral görevlisi", text: "<en>One moment, please. I'll {U4-012|put you through} to the events office.</en>" }
+      - { speaker: "Ece", text: "Teşekkürler! Hah, şimdi bir müzik başladı…" }
+  - item: U4-017
+    durum: "Bora, annesinin çalıştığı hastaneyi arayacak."
+    lines:
+      - { speaker: "Bora", text: "Hastanenin numarası tamam da annemin servisine nasıl ulaşacağım?" }
+      - { speaker: "Bora'nın dedesi", text: "Kâğıtta yazıyor: <en>{U4-017|Extension} 214.</en> Santrale bu sayıyı söyle." }
+  - item: U4-020
+    durum: "Selin, kütüphanenin danışma masasını arıyor."
+    lines:
+      - { speaker: "Kütüphane görevlisi", text: "<en>Good morning, City Library. {U4-020|How can I help you}?</en>" }
+      - { speaker: "Selin", text: "<en>Good morning.</en> Sipariş ettiğim kitap geldi mi diye soracaktım." }
+  - item: U4-024
+    durum: "Ece, Sevim Hanım'ın pastanesini arıyor."
+    lines:
+      - { speaker: "Ece", text: "<en>Hello, this is Ece. {U4-024|I'm calling about} the concert on Saturday.</en>" }
+      - { speaker: "Sevim Hanım", text: "Ece! Tam ben de seni düşünüyordum. Sandalyeleri sayalım mı?" }
+  - item: U4-042
+    durum: "Kaan, okul müdürünü aramış ama telefonda başka bir hanımla konuşmuş."
+    lines:
+      - { speaker: "Kaan", text: "Müdür Bey'le konuşacaktım, karşıma başka biri çıktı." }
+      - { speaker: "Selin", text: "O, müdürün {U4-042|secretary}'si. Müdürün bütün ajandası onda; her şeyi o ayarlar." }

@@ -305,3 +305,34 @@ notifications:
 
 editor:
   z07: {U6-005: BEKLIYOR, U6-006: BEKLIYOR, U6-007: BEKLIYOR, U6-012: BEKLIYOR, U6-028: BEKLIYOR, U6-033: BEKLIYOR}
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U6-005
+    durum: "Bora dergide köprüden baş aşağı atlayan birine bakıyor; ayağına esnek bir kordon bağlı."
+    lines:
+      - { speaker: "Bora", text: "Köprüden aşağı, baş aşağı… <en>{U6-005|Bungee jumping}? No, thank you!</en>" }
+      - { speaker: "Kaan", text: "Ama kordon seni yoyo gibi geri çekiyor! Ben bayılırım." }
+  - item: U6-006
+    durum: "Kaan, açık bir uçak kapısında sıra bekleyen insanların fotoğrafını gösteriyor."
+    lines:
+      - { speaker: "Kaan", text: "Uçaktan atlıyorsun, kuş gibi süzülüyorsun! <en>I want to go {U6-006|skydiving}!</en>" }
+      - { speaker: "Selin", text: "Ben uçakta pencere kenarına bile oturmam." }
+  - item: U6-007
+    durum: "Duru dergide dağın yamacından yavaşça havalanan renkli kanatlara bakıyor."
+    lines:
+      - { speaker: "Duru", text: "<en>{U6-007|Paragliding}</en>: yavaş yavaş süzülüyorsun, hiç acele yok. Tam bana göre." }
+      - { speaker: "Elif", text: "Duru'yu ilk kez bir spora heveslenirken görüyorum!" }
+  - item: U6-012
+    durum: "Kaan matematik sınavında bütün soruları tahminle işaretlemek istiyor."
+    lines:
+      - { speaker: "Selin", text: "Hiç çalışmadan, tahminle mi? <en>Don't {U6-012|take risks} with your exam!</en>" }
+      - { speaker: "Kaan", text: "Haklısın. Bu akşam çalışırım… belki." }
+  - item: U6-028
+    durum: "Selin elli kelimelik İngilizce bulmacayı sonunda bitiriyor."
+    lines:
+      - { speaker: "Selin", text: "Bir saat uğraştım, beynim yandı ama bitirince çok mutlu oldum. <en>It was {U6-028|challenging}!</en>" }
+      - { speaker: "Bora", text: "Bana kolayını ver. Ben beş dakikada bitireyim, sonra uyuyayım." }
+  - item: U6-033
+    durum: "Ece tahtadaki tabloya iki etkinliğin puanını yazıyor."
+    lines:
+      - { speaker: "Ece", text: "Duvarda hep bir yetişkin seni tutuyor. <en>The wall is {U6-033|safer than} {U6-005|bungee jumping}.</en>" }
+      - { speaker: "Kaan", text: "Tamam ama <en>bungee is {U6-033|more exciting}!</en>" }

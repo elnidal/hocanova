@@ -350,3 +350,35 @@ notifications:
 
 editor:
   z07: {U5-014: BEKLIYOR, U5-027: BEKLIYOR, U5-029: BEKLIYOR, U5-032: BEKLIYOR, U5-035: BEKLIYOR, U5-048: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U5-014
+    durum: "Selin, Murat Bey'e ödevini e-postayla gönderiyor."
+    lines:
+      - { speaker: "Selin", text: "Gönder'e bastım… dur! Dosya nerede?" }
+      - { speaker: "Ece", text: "<en>You forgot to {U5-014|attach} the file!</en> Ataç resmine tıkla." }
+  - item: U5-027
+    durum: "Elif her pazar Pamuk'la yürüyüşünü kameraya çekiyor."
+    lines:
+      - { speaker: "Elif", text: "Her pazar yeni bölüm: Pamuk'la Park Turu! Bu benim {U5-027|vlog}'um." }
+      - { speaker: "Duru", text: "Fıstık da konuk olabilir mi? Kameraya çok bakar." }
+  - item: U5-029
+    durum: "Ece kanal toplantısında defterini açıyor."
+    lines:
+      - { speaker: "Ece", text: "<en>We need more {U5-029|content} for the channel!</en>" }
+      - { speaker: "Bora", text: "Davul dersi videosu? Ben hazırım!" }
+  - item: U5-032
+    durum: "Elif, Kanadalı Mia'yla yazışmasını anlatıyor."
+    lines:
+      - { speaker: "Elif", text: "Annem izin verdi; Mia'yla İngilizce yazışıyoruz. <en>I love to {U5-032|make new friends}!</en>" }
+      - { speaker: "Selin", text: "Adresini, okulunu söyleme ama, unutma." }
+  - item: U5-035
+    durum: "Murat Bey sınıfa bir soru soruyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>Which {U5-035|social networking sites} do you use?</en>" }
+      - { speaker: "Kaan", text: "Ben yalnızca kanalımızı kullanıyorum, hocam. Bir de oyun grubumu." }
+  - item: U5-048
+    durum: "Elif'in videosuna farklı ülkelerden destek mesajları geliyor."
+    lines:
+      - { speaker: "Duru", text: "Kanada, Japonya, Brezilya… <en>We have friends {U5-048|worldwide} now!</en>" }
+      - { speaker: "Elif", text: "Haritaya her ülke için bir iğne batıralım!" }

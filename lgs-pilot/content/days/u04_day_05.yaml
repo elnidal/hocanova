@@ -315,3 +315,37 @@ notifications:
 
 editor:
   z07: {U4-008: BEKLIYOR, U4-021: BEKLIYOR, U4-027: BEKLIYOR, U4-028: BEKLIYOR, U4-029: BEKLIYOR, U4-049: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U4-008
+    durum: "Ece, Bursa'daki teyzesinin evinden ayrılıyor."
+    lines:
+      - { speaker: "Ece'nin teyzesi", text: "Sık sık ara, fotoğraf gönder. <en>Let's {U4-008|keep in touch}!</en>" }
+      - { speaker: "Ece", text: "Söz teyzeciğim, her pazar ararım!" }
+  - item: U4-021
+    durum: "Bora pencereden kara bulutlara bakıyor."
+    lines:
+      - { speaker: "Bora", text: "Bugün parka gidebilir miyiz sence?" }
+      - { speaker: "Selin", text: "<en>{U4-021|I guess} not. It's going to rain.</en>" }
+      - { speaker: "Bora", text: "O zaman piknik salonda!" }
+  - item: U4-027
+    durum: "Kaan sınıf grubuna mesaj gönderiyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>Let's {U4-027|meet up} at the park on Saturday!</en> Top getiren var mı?" }
+      - { speaker: "Duru", text: "Ben gelirim, Fıstık da gelir. Topu o kovalar!" }
+  - item: U4-028
+    durum: "Bora, telefonda dedesiyle konuşmayı bitiriyor."
+    lines:
+      - { speaker: "Bora'nın dedesi", text: "Sesini duymak güzeldi, evlat. <en>{U4-028|Thanks for calling}!</en>" }
+      - { speaker: "Bora", text: "<en>{U4-028|Take care}, Grandpa. {U4-028|Talk to you soon}!</en>" }
+  - item: U4-029
+    durum: "Ece ve Selin hafta sonu için saat ayarlıyor."
+    lines:
+      - { speaker: "Selin", text: "Cumartesi ikiye kadar dersim var." }
+      - { speaker: "Ece", text: "<en>OK! {U4-029|We'll meet at three, then}.</en>" }
+      - { speaker: "Selin", text: "Üç dediysen üç. 3.01 değil!" }
+  - item: U4-049
+    durum: "Dondurmacıda Elif on dakikadır vitrine bakıyor."
+    lines:
+      - { speaker: "Kaan", text: "Elif, arkadaki sıra uzadı! <en>Please {U4-049|decide}!</en>" }
+      - { speaker: "Elif", text: "Çilek mi, çikolata mı… Tamam: ikisi birden!" }

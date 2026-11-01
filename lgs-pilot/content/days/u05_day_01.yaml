@@ -301,3 +301,35 @@ notifications:
 
 editor:
   z07: {U5-036: BEKLIYOR, U5-037: BEKLIYOR, U5-040: BEKLIYOR, U5-044: BEKLIYOR, U5-045: BEKLIYOR, U5-047: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U5-036
+    durum: "Gece yarısı; Kaan hâlâ oyunda, annesi kapıda."
+    lines:
+      - { speaker: "Kaan'ın annesi", text: "Saat on iki, Kaan! Bu oyun seni hiç bırakmıyor. <en>You're a game {U5-036|addict}!</en>" }
+      - { speaker: "Kaan", text: "Son bölüm, anne, söz!" }
+  - item: U5-037
+    durum: "Murat Bey sınav kâğıtlarını dağıtıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Sınıfın {U5-037|average}'ı yetmiş beş. Bazılarınız üstünde, bazılarınız altında." }
+      - { speaker: "Bora", text: "Ben tam yetmiş beş aldım. Tam ortadayım!" }
+  - item: U5-040
+    durum: "Selin her sabah 6.30'da kalkıyor, cumartesi bile."
+    lines:
+      - { speaker: "Ece", text: "Cumartesi bile mi? Neden?" }
+      - { speaker: "Selin", text: "Yıllardır böyle, alarmsız uyanıyorum. <en>It's a {U5-040|habit}.</en>" }
+  - item: U5-044
+    durum: "Elif, sınıfın verdiği cevapları sayıp tahtaya yazıyor."
+    lines:
+      - { speaker: "Elif", text: "<en>Sixty {U5-044|percent} of the class use their phones at dinner!</en>" }
+      - { speaker: "Kaan", text: "Ben de onların arasındayım. <en>I play games two hours {U5-044|a day}.</en>" }
+  - item: U5-045
+    durum: "Ece, grubun yeni sayfasına kaç kişinin girdiğine bakıyor."
+    lines:
+      - { speaker: "Ece", text: "Dün yalnızca dört {U5-045|user} vardı. Bugün kırk!" }
+      - { speaker: "Duru", text: "O dördü bizdik, biliyorsun." }
+  - item: U5-047
+    durum: "Murat Bey derse bir soruyla başlıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>Bora, {U5-047|what do you use the Internet for}?</en>" }
+      - { speaker: "Bora", text: "<en>For drum videos!</en> Bir de… arada bir ödev." }

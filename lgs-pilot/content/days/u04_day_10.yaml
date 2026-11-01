@@ -276,3 +276,15 @@ notifications:
 
 editor:
   z07: {U4-034: BEKLIYOR, U4-054: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U4-034
+    durum: "Konserden sonra grup Sevim Hanım'ın pastanesinde tost yiyor."
+    lines:
+      - { speaker: "Ece", text: "Menajer olarak ödemeyi ben yapayım. <en>Can we have the {U4-034|bill}, please?</en>" }
+      - { speaker: "Sevim Hanım", text: "Bu akşam benden! Konser harikaydı." }
+  - item: U4-054
+    durum: "Perde açılmadan önce Elif'in elleri titriyor."
+    lines:
+      - { speaker: "Elif", text: "Ya sözleri unutursam? <en>I'm so {U4-054|scared}!</en>" }
+      - { speaker: "Duru", text: "Unutmazsın. Unutursan da ben gitarla uzatırım!" }

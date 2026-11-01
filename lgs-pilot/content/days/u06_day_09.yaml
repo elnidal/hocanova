@@ -326,3 +326,34 @@ notifications:
 
 editor:
   z07: {U6-030: BEKLIYOR, U6-041: BEKLIYOR, U6-042: BEKLIYOR, U6-043: BEKLIYOR, U6-044: BEKLIYOR, U6-055: BEKLIYOR}
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U6-030
+    durum: "Elif okul korosunun yeni salonuna ilk kez giriyor: kırmızı perde, yüzlerce ışık."
+    lines:
+      - { speaker: "Elif", text: "Vay! Işıklar, perde, bu salon… <en>It's {U6-030|magnificent}!</en>" }
+      - { speaker: "Ece", text: "Ağzın açık kaldı. Kapat da şarkı söyleyebil!" }
+  - item: U6-041
+    durum: "Kaan durakta bir otobüse binmek üzere; Selin önündeki ekranı gösteriyor."
+    lines:
+      - { speaker: "Kaan", text: "Bu otobüs okula gidiyor mu?" }
+      - { speaker: "Selin", text: "Hayır, ekrana bak. <en>{U6-041|Destination}: Airport.</en> Bizimki 35 numara." }
+  - item: U6-042
+    durum: "Selin, Urla'da babaannesinin bahçesinden denize bakıyor."
+    lines:
+      - { speaker: "Selin", text: "Zeytin ağaçları, arkada deniz, güneş batıyor. <en>What a {U6-042|view}!</en>" }
+      - { speaker: "Ece", text: "Fotoğraf at! Ben buradan sadece karşı apartmanı görüyorum." }
+  - item: U6-043
+    durum: "Bora dedesiyle ormanda yürürken gürül gürül bir ses duyuyor."
+    lines:
+      - { speaker: "Bora", text: "Bu ses ne? Dev bir duş gibi!" }
+      - { speaker: "Dedesi", text: "Kayalardan aşağı dökülen suyun sesi. Gel, {U6-043|waterfall}'u gör." }
+  - item: U6-044
+    durum: "Selin'in babası virajlı, yokuşlu bir yolda yavaş yavaş sürüyor."
+    lines:
+      - { speaker: "Selin", text: "Sağ, sol, sağ, sol… midem karıştı. Bu {U6-044|mountainous road} hiç bitmiyor mu?" }
+      - { speaker: "Selin'in babası", text: "Az kaldı. Şu {U6-044|hill}'in arkasında köy var." }
+  - item: U6-055
+    durum: "Duru ve Fıstık parkın hiç gitmedikleri arka yolunda yürüyor."
+    lines:
+      - { speaker: "Duru", text: "Fıstık her ağacı kokluyor, her köşeye bakıyor. <en>He loves to {U6-055|explore}.</en>" }
+      - { speaker: "Elif", text: "Pamuk da öyle. Yeni bir park, yeni bir dünya!" }

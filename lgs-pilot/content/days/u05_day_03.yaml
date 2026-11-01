@@ -309,3 +309,36 @@ notifications:
 
 editor:
   z07: {U5-019: BEKLIYOR, U5-025: BEKLIYOR, U5-028: BEKLIYOR, U5-030: BEKLIYOR, U5-033: BEKLIYOR, U5-034: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U5-019
+    durum: "Duru internette bedava bir akor kitabı buluyor."
+    lines:
+      - { speaker: "Duru", text: "Bu akor kitabı bedava! <en>I'm going to {U5-019|download} it.</en>" }
+      - { speaker: "Elif", text: "Önce Murat Bey'e sor; her bedava dosya temiz değil." }
+  - item: U5-025
+    durum: "Ece provanın videosunu kanala koymaya hazırlanıyor."
+    lines:
+      - { speaker: "Ece", text: "Video hazır! <en>I'm {U5-025|uploading} it now.</en>" }
+      - { speaker: "Bora", text: "Bekle, davulda hapşırmıştım! O kısmı kes!" }
+  - item: U5-028
+    durum: "Kanaldaki ilk videonun altında yeni bir satır beliriyor."
+    lines:
+      - { speaker: "Ece", text: "Bakın! <en>JazzGrandpa55 {U5-028|commented} on our video!</en>" }
+      - { speaker: "Bora", text: "Dedem! Ne diyor?" }
+      - { speaker: "Ece", text: "<en>Add some jazz!</en> Her zamanki gibi." }
+  - item: U5-030
+    durum: "Ece her sabah kanaldaki sayıya bakıyor."
+    lines:
+      - { speaker: "Ece", text: "Dün on iki {U5-030|subscriber}, bugün on beş!" }
+      - { speaker: "Selin", text: "Yavaş ama emin adımlarla!" }
+  - item: U5-033
+    durum: "Ders sırasında Kaan'ın cebinden durmadan tık tık sesi geliyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Kaan, o telefon neden durmadan ötüyor?" }
+      - { speaker: "Kaan", text: "Pardon hocam, kanalın {U5-033|notifications}'ı! Hemen sessize alıyorum." }
+  - item: U5-034
+    durum: "Elif konserden bir fotoğraf seçiyor."
+    lines:
+      - { speaker: "Elif", text: "Bu fotoğrafta hepimiz gülüyoruz. <en>Let's {U5-034|post} it on our page!</en>" }
+      - { speaker: "Duru", text: "Ama Fıstık'ın kuyruğu yüzümü kapatıyor!" }

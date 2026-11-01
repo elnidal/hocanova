@@ -314,3 +314,36 @@ notifications:
 
 editor:
   z07: {U5-001: BEKLIYOR, U5-018: BEKLIYOR, U5-021: BEKLIYOR, U5-053: BEKLIYOR, U5-054: BEKLIYOR, U5-055: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U5-001
+    durum: "Teneffüste Kaan okul bilgisayarından oyun sitesine girmeye çalışıyor."
+    lines:
+      - { speaker: "Kaan", text: "Oyun sitesi açılmıyor, bir uyarı çıktı." }
+      - { speaker: "Selin", text: "Okul ağı izin vermiyor. <en>Students can't {U5-001|access} game sites here.</en>" }
+  - item: U5-018
+    durum: "Ece, Bora'nın gözleri kapalı çıktığı fotoğrafı gruba koymak üzere."
+    lines:
+      - { speaker: "Bora", text: "O fotoğrafta gözlerim kapalı! <en>Please {U5-018|delete} it!</en>" }
+      - { speaker: "Ece", text: "Tamam, tamam. Gitti, yok artık." }
+  - item: U5-021
+    durum: "Bora'nın dedesi telefondaki yazıları okuyamıyor."
+    lines:
+      - { speaker: "Bora'nın dedesi", text: "Bu harfler karınca kadar! Gözlüğüm de yok." }
+      - { speaker: "Bora", text: "<en>Use the tablet, Grandpa. The {U5-021|screen} is bigger.</en>" }
+  - item: U5-053
+    durum: "Kaan, Elif'le ödevi konuşurken aklına başka bir şey düşüyor."
+    lines:
+      - { speaker: "Kaan", text: "Ödev cumaya, tamam. <en>Oh, {U5-053|by the way}, it's Duru's birthday tomorrow!</en>" }
+      - { speaker: "Elif", text: "Yarın mı? Hediye almadım! Koş!" }
+  - item: U5-054
+    durum: "Bora, Murat Bey'e ödevini anlatıyor."
+    lines:
+      - { speaker: "Bora", text: "Ödevim evde… <en>{U5-054|I mean}, it's in my bag, but my bag is at home.</en>" }
+      - { speaker: "Murat Bey", text: "Yani ödev de çanta da evde. Yarın ikisini birlikte getir." }
+  - item: U5-055
+    durum: "Duru, Kaan'a bir gitar akorunu çok hızlı gösteriyor."
+    lines:
+      - { speaker: "Duru", text: "Üçüncü perde, ikinci tel, sonra kaydır, sonra…" }
+      - { speaker: "Kaan", text: "<en>Wait! {U5-055|Sorry, I can't follow you}.</en>" }
+      - { speaker: "Duru", text: "Peki, en baştan, yavaşça." }

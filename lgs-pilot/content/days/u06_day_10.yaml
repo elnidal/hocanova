@@ -319,3 +319,24 @@ notifications:
 
 editor:
   z07: {U6-034: BEKLIYOR, U6-045: BEKLIYOR, U6-056: BEKLIYOR, U6-057: BEKLIYOR}
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U6-034
+    durum: "Ece kantindeki üç tostun fiyatına bakıyor."
+    lines:
+      - { speaker: "Ece", text: "Kaşarlı 40, karışık 55, sucuklu 60 lira. <en>The sausage toast is {U6-034|the most expensive}.</en>" }
+      - { speaker: "Bora", text: "Ben kaşarlı alayım, cebim rahat etsin." }
+  - item: U6-045
+    durum: "Murat Bey İzmir turu için tahtaya bir liste yazıyor: Agora, Saat Kulesi, Kemeraltı."
+    lines:
+      - { speaker: "Murat Bey", text: "Konuklarımız eski İzmir'i görmek istiyor. <en>We'll visit {U6-045|historic places}.</en>" }
+      - { speaker: "Ece", text: "Agora iki bin yıllık! Listeye ilk o." }
+  - item: U6-056
+    durum: "Selin okul panosundaki bilim fuarı afişini okuyor."
+    lines:
+      - { speaker: "Selin", text: "Bilim fuarı, spor salonunda. <en>It {U6-056|takes place} on Friday at two.</en>" }
+      - { speaker: "Kaan", text: "İkide mi? Tamam, bu sefer yarım saat erken gelirim." }
+  - item: U6-057
+    durum: "Bora, Elif'in ağır kitaplarını kütüphaneye taşımasına yardım ediyor."
+    lines:
+      - { speaker: "Elif", text: "Çok teşekkürler, Bora!" }
+      - { speaker: "Bora", text: "<en>{U6-057|My pleasure}.</en> Zaten kollarım için spor oldu." }

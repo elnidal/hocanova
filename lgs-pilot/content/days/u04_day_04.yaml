@@ -310,3 +310,37 @@ notifications:
 
 editor:
   z07: {U4-005: BEKLIYOR, U4-006: BEKLIYOR, U4-015: BEKLIYOR, U4-019: BEKLIYOR, U4-032: BEKLIYOR, U4-050: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U4-005
+    durum: "Selin numarayı kâğıttan okuyor, Bora telefonun başında."
+    lines:
+      - { speaker: "Selin", text: "Sıfır, beş, üç, iki… Yavaş ol!" }
+      - { speaker: "Bora", text: "<en>OK, I'm {U4-005|dialling} now.</en> Son rakam yedi miydi, bir miydi?" }
+      - { speaker: "Selin", text: "Yedi! Bu sefer doğru kişiye gitsin." }
+  - item: U4-006
+    durum: "Duru telefonda annesiyle; annesi hep son sözü söylüyor."
+    lines:
+      - { speaker: "Duru", text: "Anne, tamam, yemeğimi yiyeceğim, söz! <en>I have to {U4-006|hang up} now. Bye!</en>" }
+      - { speaker: "Duru'nun annesi", text: "Bir şey daha: Fıstık'ın mamasını unutma!" }
+  - item: U4-015
+    durum: "Kaan otobüste, tünele giriyor; Ece'nin sesi kesik kesik geliyor."
+    lines:
+      - { speaker: "Ece", text: "Kaan? Kaan! Ses cızırdıyor… <en>It's a {U4-015|bad line}!</en>" }
+      - { speaker: "Kaan", text: "Tünel… çıkınca… ararım!" }
+  - item: U4-019
+    durum: "Elif'in Ankara'daki kuzeni yeni adresini çok hızlı söylüyor."
+    lines:
+      - { speaker: "Elif'in kuzeni", text: "Gül Sokak, on yedi numara, kat iki, daire dört, zil en üstte…" }
+      - { speaker: "Elif", text: "Dur dur, çok hızlı! <en>{U4-019|Can you repeat that}, please?</en>" }
+  - item: U4-032
+    durum: "Kaan, Bora'yı aradığını sanıyor."
+    lines:
+      - { speaker: "Kaan", text: "Bora, bagetleri getirmeyi unutma, tamam mı?" }
+      - { speaker: "Kırtasiyeci", text: "Baget mi? Burası kırtasiye, evladım. Bende yalnızca kalem var!" }
+      - { speaker: "Kaan", text: "<en>Oh, {U4-032|sorry, wrong number}!</en> Kusura bakmayın!" }
+  - item: U4-050
+    durum: "Elif sınıfta elini kaldırıp Murat Bey'e yanlışlıkla 'anne' diyor."
+    lines:
+      - { speaker: "Elif", text: "Anneciğim… yani, Murat Bey! Of, yüzüm kıpkırmızı oldu." }
+      - { speaker: "Ece", text: "<en>Don't be {U4-050|embarrassed}!</en> Herkesin başına gelir." }

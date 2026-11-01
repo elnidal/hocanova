@@ -309,3 +309,36 @@ notifications:
 
 editor:
   z07: {U5-005: BEKLIYOR, U5-010: BEKLIYOR, U5-013: BEKLIYOR, U5-017: BEKLIYOR, U5-031: BEKLIYOR, U5-049: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U5-005
+    durum: "Kaan'ın telefonu titriyor; Bora yeni bir profil açmış."
+    lines:
+      - { speaker: "Kaan", text: "Bora bana {U5-005|friend request} göndermiş! Biz zaten arkadaşız ki." }
+      - { speaker: "Bora", text: "Yeni profilim o! <en>Please {U5-005|accept} it!</en>" }
+  - item: U5-010
+    durum: "Bir yarışma sitesi Elif'ten ev adresini ve doğum gününü istiyor."
+    lines:
+      - { speaker: "Elif", text: "Ödül bir kulaklık! Adresimi gireyim mi?" }
+      - { speaker: "Ece", text: "Hayır! O {U5-010|personal information}. Önce annene sor." }
+  - item: U5-013
+    durum: "Duru'ya oyunda hiç görmediği biri yazıyor: 'Kaç yaşındasın, nerede oturuyorsun?'"
+    lines:
+      - { speaker: "Duru", text: "Bu kim? Hiç görmedim. <en>He's a {U5-013|stranger}.</en>" }
+      - { speaker: "Selin", text: "Hiç cevap yazma; engelle ve annene göster." }
+  - item: U5-017
+    durum: "Murat Bey tahtada okulun sitesini gösteriyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Ödevler bu sayfada. <en>{U5-017|Click} on Homework.</en>" }
+      - { speaker: "Elif", text: "Buldum! Aa, yarına üç ödev var!" }
+  - item: U5-031
+    durum: "Kaan aynanın karşısında telefona konuşuyor."
+    lines:
+      - { speaker: "Kaan", text: "Merhaba, sevgili izleyiciler! Bugün size basketbol ayakkabımı tanıtıyorum." }
+      - { speaker: "Selin", text: "Kaan, odada yalnızca ben varım. <en>You aren't an {U5-031|influencer} yet!</en>" }
+      - { speaker: "Kaan", text: "Henüz! Bir gün bir milyon kişi izleyecek." }
+  - item: U5-049
+    durum: "Ece kırtasiyenin vitrinindeki kırmızı yazıyı okuyor."
+    lines:
+      - { speaker: "Ece", text: "<en>Fifty percent {U5-049|discount}!</en> Defterler yarı fiyatına!" }
+      - { speaker: "Selin", text: "Hemen girelim; yeni dönem için on defter lazım!" }

@@ -309,3 +309,29 @@ notifications:
 
 editor:
   z07: {U6-019: BEKLIYOR, U6-020: BEKLIYOR, U6-029: BEKLIYOR, U6-039: BEKLIYOR, U6-040: BEKLIYOR}
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U6-019
+    durum: "Fıstık bahçedeki yeşil hortumu görünce havlamaya başlıyor."
+    lines:
+      - { speaker: "Duru", text: "Fıstık, o bir hortum. <en>It isn't going to {U6-019|attack} you.</en>" }
+      - { speaker: "Duru'nun annesi", text: "Bizim cesur bekçi şimdi kanepenin arkasında." }
+  - item: U6-020
+    durum: "Ece kartopu oynadıktan sonra eldivensiz ellerini ısıtmaya çalışıyor."
+    lines:
+      - { speaker: "Ece", text: "Parmaklarımı hissetmiyorum! <en>My fingers are {U6-020|frozen}!</en>" }
+      - { speaker: "Selin", text: "Sıcak çikolata geliyor. Bir dahaki sefere eldiven!" }
+  - item: U6-029
+    durum: "Okul kütüphanesinde bir kitabın arasından eski, imzasız bir harita çıkıyor."
+    lines:
+      - { speaker: "Elif", text: "Kim çizmiş, nereyi gösteriyor, kimse bilmiyor. <en>How {U6-029|mysterious}!</en>" }
+      - { speaker: "Ece", text: "Hemen bir dosya açıyorum: Harita, çözüm planı 1." }
+  - item: U6-039
+    durum: "Selin ailesiyle sahil yolunda; yolun bir yanında kırk metre aşağıda dalgalar var."
+    lines:
+      - { speaker: "Selin", text: "Yol bir yanda bitiyor, aşağısı boşluk ve deniz. Bu bir {U6-039|cliff}, baba!" }
+      - { speaker: "Selin'in babası", text: "O yüzden korkuluklar var. Yavaş gidiyoruz, arabadan inmiyoruz." }
+  - item: U6-040
+    durum: "Elif, Mia'nın gönderdiği fotoğrafı açıyor: dağların arasında mavi-beyaz, dev bir buz örtüsü."
+    lines:
+      - { speaker: "Elif", text: "Mia kuzeyde görmüş. Binlerce yıllık buz! <en>A real {U6-040|glacier}!</en>" }
+      - { speaker: "Bora", text: "Ben fotoğraftan bile üşüdüm." }

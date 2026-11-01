@@ -347,3 +347,36 @@ notifications:
 
 editor:
   z07: {U4-043: BEKLIYOR, U4-044: BEKLIYOR, U4-045: BEKLIYOR, U4-046: BEKLIYOR, U4-047: BEKLIYOR, U4-048: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U4-043
+    durum: "Kaan'ın büyükannesi yeni telefonundaki küçük resimlere bakıyor."
+    lines:
+      - { speaker: "Kaan'ın büyükannesi", text: "Kaan, bu küçük resimler ne? Her biri ayrı bir şey mi?" }
+      - { speaker: "Kaan", text: "<en>Yes, each one is an {U4-043|application}.</en> Bu hava durumu, bu da fotoğraflar." }
+  - item: U4-044
+    durum: "Murat Bey eski zamanları anlatıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Yüz elli yıl önce telefon yoktu. <en>How did people {U4-044|communicate}?</en>" }
+      - { speaker: "Bora", text: "Mektupla! Bir de… güvercinle mi?" }
+      - { speaker: "Murat Bey", text: "Bazen evet, güvercinle!" }
+  - item: U4-045
+    durum: "Ece ile Selin iki saattir telefonda."
+    lines:
+      - { speaker: "Ece'nin annesi", text: "Ece, saat on bir! Bu {U4-045|conversation} ne zaman bitecek?" }
+      - { speaker: "Ece", text: "Beş dakika, anne! Selin'e konser planını anlatıyorum." }
+  - item: U4-046
+    durum: "Kaan, Duru'ya beş dakikalık bir sesli mesaj göndermek üzere."
+    lines:
+      - { speaker: "Duru", text: "Dur, mesaj gönderme, konu önemli. <en>Let's talk {U4-046|face to face} tomorrow.</en>" }
+      - { speaker: "Kaan", text: "Tamam, yarın kantinde karşılıklı otururuz." }
+  - item: U4-047
+    durum: "Kaan teneffüste büyük bir hayalini anlatıyor."
+    lines:
+      - { speaker: "Kaan", text: "Dünyada hiç olmayan bir şey yapacağım. <en>I'm going to {U4-047|invent} a homework robot!</en>" }
+      - { speaker: "Ece", text: "Fikir harika, ama Murat Bey robotun ödevini kabul etmez." }
+  - item: U4-048
+    durum: "Murat Bey masaya bir telefon, bir tablet ve bir akıllı saat koyuyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Bunların her biri bir {U4-048|device}. Sizce en eskisi hangisi?" }
+      - { speaker: "Duru", text: "Telefon! Saat daha yeni." }

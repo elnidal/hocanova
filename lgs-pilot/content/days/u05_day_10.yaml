@@ -388,3 +388,35 @@ notifications:
 
 editor:
   z07: {U5-041: BEKLIYOR, U5-050: BEKLIYOR, U5-051: BEKLIYOR, U5-052: BEKLIYOR, U5-056: BEKLIYOR, U5-060: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U5-041
+    durum: "Ece kanalın grafiğine bakıyor; çizgi hep yukarı gidiyor."
+    lines:
+      - { speaker: "Ece", text: "<en>Our subscribers {U5-041|increased} again!</en> Bin, iki bin, üç bin dört yüz!" }
+      - { speaker: "Bora", text: "Dedem her gün bütün videoları izliyor, ondan!" }
+  - item: U5-050
+    durum: "Bora'nın annesi buzdolabından yoğurdu alıp kutuya bakıyor."
+    lines:
+      - { speaker: "Bora'nın annesi", text: "Bu yoğurdun {U5-050|expiry date}'i dünmüş! Çöpe gidiyor." }
+      - { speaker: "Bora", text: "İyi ki kutuya baktın, anne. Az kalsın yiyordum!" }
+  - item: U5-051
+    durum: "Kaan'ın annesi kapıda bu haftanın üçüncü paketini alıyor."
+    lines:
+      - { speaker: "Kaan'ın annesi", text: "Bu hafta üçüncü paket, Kaan! Hepsi senin mi?" }
+      - { speaker: "Kaan", text: "<en>I love {U5-051|online shopping}!</en> Ama bu seferki büyükannemin." }
+  - item: U5-052
+    durum: "Selin konser biletini alırken küçük yazıyı okuyor."
+    lines:
+      - { speaker: "Selin", text: "Burada yazıyor: <en>This ticket is {U5-052|non-refundable}.</en>" }
+      - { speaker: "Ece", text: "O zaman tarihi iki kez kontrol et. Fikrini değiştirirsen paran gider!" }
+  - item: U5-056
+    durum: "Sevim Hanım gruba dördüncü kez pasta getiriyor."
+    lines:
+      - { speaker: "Sevim Hanım", text: "Bir dilim daha? Çikolatalı!" }
+      - { speaker: "Bora", text: "<en>{U5-056|That's very kind of you, but} I'm full.</en> Mideme bir lokma daha sığmaz!" }
+  - item: U5-060
+    durum: "Selin'in babası Urla'ya gidecekleri otobüsün biletini alıyor."
+    lines:
+      - { speaker: "Selin'in babası", text: "Sabah gidip akşam döneceğiz. <en>Two {U5-060|round-trip} tickets, please.</en>" }
+      - { speaker: "Selin", text: "Otobüs 8.00'de kalkıyorsa babam 7.30'da orada olur!" }

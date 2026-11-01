@@ -316,3 +316,37 @@ notifications:
 
 editor:
   z07: {U4-001: BEKLIYOR, U4-009: BEKLIYOR, U4-010: BEKLIYOR, U4-014: BEKLIYOR, U4-016: BEKLIYOR, U4-023: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U4-001
+    durum: "Ece, Selin'i arıyor; Selin markette, kasada."
+    lines:
+      - { speaker: "Selin", text: "Ece, elim kolum poşet dolu! <en>I'll {U4-001|call you back} in ten minutes.</en>" }
+      - { speaker: "Ece", text: "Tamam. Ama on dakika diyorsan on dakika, Selin!" }
+  - item: U4-009
+    durum: "Bora, Kaan'ı arıyor; Kaan antrenmanda, telefona annesi bakıyor."
+    lines:
+      - { speaker: "Kaan'ın annesi", text: "Kaan antrenmanda, Bora. <en>Can I {U4-009|take a message}?</en>" }
+      - { speaker: "Bora", text: "<en>Yes, please.</en> Yarınki provayı saat üçe aldık deyin, lütfen." }
+      - { speaker: "Kaan'ın annesi", text: "Kalemim hazır: saat üç, prova. Tamam!" }
+  - item: U4-010
+    durum: "Ece buzdolabına sarı bir kâğıt yapıştırıyor."
+    lines:
+      - { speaker: "Ece", text: "Anne, buzdolabındaki {U4-010|memo}'yu okudun mu? Cumartesi provam var!" }
+      - { speaker: "Ece'nin annesi", text: "Okudum: 'Cumartesi 15.00, prova, beni bekleme.' Çok net!" }
+  - item: U4-014
+    durum: "Ece, Duru'nun evini arıyor; karşıda Duru'nun annesi var."
+    lines:
+      - { speaker: "Duru'nun annesi", text: "Duru şu an duşta, Ece. <en>She isn't {U4-014|available} right now.</en>" }
+      - { speaker: "Ece", text: "Sorun değil, yarım saat sonra yine ararım." }
+  - item: U4-016
+    durum: "Kaan, Elif'i beş kez arıyor; her seferinde aynı ses geliyor."
+    lines:
+      - { speaker: "Kaan", text: "Dıt-dıt-dıt… Yine! Elif kiminle konuşuyor bu kadar?" }
+      - { speaker: "Selin", text: "Ankara'daki kuzeniyle. <en>Her line is always {U4-016|engaged} on Sundays.</en>" }
+  - item: U4-023
+    durum: "Kaan, Selin'in evini arıyor; karşıda Selin'in babası var."
+    lines:
+      - { speaker: "Selin'in babası", text: "<en>{U4-023|I'm afraid} Selin isn't at home. She's at the library.</en>" }
+      - { speaker: "Kaan", text: "Kütüphane beşte kapanıyor. Beşi on geçe yine ararım!" }
+      - { speaker: "Selin'in babası", text: "Beşi on geçe demek, beşi on geçe. Aferin!" }

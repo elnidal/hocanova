@@ -311,3 +311,35 @@ notifications:
 
 editor:
   z07: {U4-003: BEKLIYOR, U4-033: BEKLIYOR, U4-035: BEKLIYOR, U4-037: BEKLIYOR, U4-052: BEKLIYOR, U4-053: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U4-003
+    durum: "Kaan oyunu açıyor ama ortada dönen bir daire var."
+    lines:
+      - { speaker: "Kaan", text: "Of, yine olmadı! <en>I can't {U4-003|connect} to the Internet.</en>" }
+      - { speaker: "Elif", text: "Modemi kapatıp aç; bizde hep öyle düzeliyor." }
+  - item: U4-033
+    durum: "Bora'nın annesi takvime bakıyor."
+    lines:
+      - { speaker: "Bora'nın annesi", text: "Bora, yarın saat dörtte dişçideyiz. <en>We have an {U4-033|appointment}.</en>" }
+      - { speaker: "Bora", text: "Yarın mı? Ama prova var! Başka güne alabilir miyiz?" }
+  - item: U4-035
+    durum: "Selin'in babası pazar kahvaltısı için bir lokantayı arıyor."
+    lines:
+      - { speaker: "Selin'in babası", text: "<en>I'd like to {U4-035|book} a table for five at nine o'clock, please.</en>" }
+      - { speaker: "Selin", text: "Dokuz demek dokuz. Babam yine kapıda 8.59'da olur!" }
+  - item: U4-037
+    durum: "Ece konser için Sevim Hanım'a son kez yazıyor."
+    lines:
+      - { speaker: "Ece", text: "<en>Can you {U4-037|confirm} the time, please? Saturday at six?</en>" }
+      - { speaker: "Sevim Hanım", text: "Evet: cumartesi, saat altı. Kesin, değişmez!" }
+  - item: U4-052
+    durum: "Bora telefonda Nermin Teyze'yle konuşuyor; Kaan yanında dinliyor."
+    lines:
+      - { speaker: "Kaan", text: "Lütfen, teşekkürler, iyi günler… Bora, telefonda bambaşka birisin!" }
+      - { speaker: "Bora", text: "Nermin Teyze'yle böyle konuşulur. <en>I'm always {U4-052|polite} on the phone.</en>" }
+  - item: U4-053
+    durum: "Duru odasında sınava çalışıyor; kapısına bir kâğıt asmış."
+    lines:
+      - { speaker: "Ece", text: "Kapında ne yazıyor? <en>Please do not {U4-053|disturb}!</en>" }
+      - { speaker: "Duru", text: "Sen girebilirsin, Ece. Fıstık giremez; defterimi yiyor!" }

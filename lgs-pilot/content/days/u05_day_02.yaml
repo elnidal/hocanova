@@ -300,3 +300,35 @@ notifications:
 
 editor:
   z07: {U5-002: BEKLIYOR, U5-006: BEKLIYOR, U5-007: BEKLIYOR, U5-009: BEKLIYOR, U5-012: BEKLIYOR, U5-024: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U5-002
+    durum: "Ece, grubun kanalı için ad düşünüyor."
+    lines:
+      - { speaker: "Ece", text: "Kanalımız için bir {U5-002|account} lazım. Adı ne olsun?" }
+      - { speaker: "Bora", text: "wrongnumber_band! Kısa ve net." }
+  - item: U5-006
+    durum: "Duru okul bilgisayarında ödev sitesine giremiyor."
+    lines:
+      - { speaker: "Duru", text: "<en>I can't {U5-006|log in}!</en> Adımı doğru girdim ama…" }
+      - { speaker: "Elif", text: "Büyük harf tuşu açık kalmış, ondan!" }
+  - item: U5-007
+    durum: "Kaan kütüphane bilgisayarından kalkıyor; kanal sayfası hâlâ açık."
+    lines:
+      - { speaker: "Selin", text: "Kaan, dur! <en>{U5-007|Log out} first!</en> Yoksa sonraki kişi senin adına video koyar." }
+      - { speaker: "Kaan", text: "Haklısın. Bir de oyun puanlarımı görür!" }
+  - item: U5-009
+    durum: "Bora kanala video koymak istiyor; Ece'nin cevabı net."
+    lines:
+      - { speaker: "Bora", text: "Ece, kanalın {U5-009|password}'ünü verir misin? Bir video koyacağım." }
+      - { speaker: "Ece", text: "Asla! O yalnızca menajerde durur. Videoyu bana gönder." }
+  - item: U5-012
+    durum: "Elif bir yemek sitesinde tarif okumak istiyor."
+    lines:
+      - { speaker: "Elif", text: "Tarif açılmıyor! <en>I have to {U5-012|sign up} first.</en>" }
+      - { speaker: "Selin", text: "Adın ve e-postan yeter; iki dakika sürer." }
+  - item: U5-024
+    durum: "Bora iki parmakla, harf harf klavyeye vuruyor."
+    lines:
+      - { speaker: "Kaan", text: "Bora, bir cümle on dakika sürdü!" }
+      - { speaker: "Bora", text: "<en>I {U5-024|type} slowly, but I never make mistakes!</en>" }

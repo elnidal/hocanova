@@ -367,3 +367,40 @@ notifications:
 
 editor:
   z07: {U5-003: BEKLIYOR, U5-004: BEKLIYOR, U5-008: BEKLIYOR, U5-011: BEKLIYOR, U5-043: BEKLIYOR, U5-058: BEKLIYOR, U5-061: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U5-003
+    durum: "Murat Bey internette dikkat edilecek şeyleri anlatıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>{U5-003|Avoid} clicking on strange links.</en> 'Bedava hediye' diyen her şey tuzak olabilir." }
+      - { speaker: "Bora", text: "Bunu bana söylemenize artık gerek yok, hocam." }
+  - item: U5-004
+    durum: "Ece videonun arkasına ünlü bir şarkı koymak istiyor."
+    lines:
+      - { speaker: "Selin", text: "O şarkı bizim değil. {U5-004|Copyright} sorunu çıkar." }
+      - { speaker: "Ece", text: "Haklısın. Kendi şarkımızı koyarız, Duru'nun gitarıyla!" }
+  - item: U5-008
+    durum: "Sınıf internet rehberinin ilk maddesini seçiyor."
+    lines:
+      - { speaker: "Kaan", text: "İlk madde ne olsun?" }
+      - { speaker: "Duru", text: "<en>Always {U5-008|obey the rules} of the site.</en> Yaş sınırı neyse o!" }
+  - item: U5-011
+    durum: "Elif bir siteden oyun almak istiyor; önce Selin'e soruyor."
+    lines:
+      - { speaker: "Elif", text: "Bu siteden oyun almak sorun olur mu?" }
+      - { speaker: "Selin", text: "Adres çok garip. <en>I don't think it's {U5-011|safe}.</en>" }
+  - item: U5-043
+    durum: "Duru prova çantasına üç kutu gitar teli koyuyor."
+    lines:
+      - { speaker: "Duru'nun annesi", text: "Bir prova için üç kutu tel mi? <en>Is that really {U5-043|necessary}?</en>" }
+      - { speaker: "Duru", text: "Tel kopar, anne. Müzisyen her zaman hazırlıklı olur!" }
+  - item: U5-058
+    durum: "Kaan, İngilizce bir oyunda yeni bir kelimeyle karşılaşıyor."
+    lines:
+      - { speaker: "Kaan", text: "Hocam, oyunda bir kelime var: <en>quest. {U5-058|What does it mean}?</en>" }
+      - { speaker: "Murat Bey", text: "Kahramanın bir şey bulmak için çıktığı yolculuk gibi düşün." }
+  - item: U5-061
+    durum: "Bora'nın annesi mesaj atmış; dedesi Bora'nın omzunun üstünden okuyor."
+    lines:
+      - { speaker: "Bora'nın dedesi", text: "Annen ne yazmış? <en>Come home {U5-061|ASAP}.</en> Bu harfler ne böyle?" }
+      - { speaker: "Bora", text: "Yemek masada, dede. Koşuyoruz!" }

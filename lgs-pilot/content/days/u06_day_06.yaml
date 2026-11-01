@@ -312,3 +312,34 @@ notifications:
 
 editor:
   z07: {U6-009: BEKLIYOR, U6-016: BEKLIYOR, U6-049: BEKLIYOR, U6-050: BEKLIYOR, U6-051: BEKLIYOR, U6-052: BEKLIYOR}
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U6-009
+    durum: "Selin'in kedisi yine kitaplığın en üst rafına çıkmış."
+    lines:
+      - { speaker: "Selin", text: "Her gün rafların en tepesine… <en>My cat {U6-009|climbs} everything!</en>" }
+      - { speaker: "Ece", text: "Bir gün onu buzdolabının üstünde uyurken bulacaksın." }
+  - item: U6-016
+    durum: "Selin bütün sınıfın önünde ilk sunumunu yapacak; elleri titriyor."
+    lines:
+      - { speaker: "Ece", text: "Dizleri titriyor ama yine de kalkıyor. <en>That's real {U6-016|courage}.</en>" }
+      - { speaker: "Selin", text: "Bir de sesim titremezse süper olacak." }
+  - item: U6-049
+    durum: "Kaan iki haftadır top sektirme rekoru için çalışıyor."
+    lines:
+      - { speaker: "Kaan", text: "Yüz sektirme! Sonunda! <en>I {U6-049|succeeded}!</en>" }
+      - { speaker: "Bora", text: "Tebrikler. Şimdi topu ödev defterinin üstünden çek." }
+  - item: U6-050
+    durum: "Bora üç ay önceki ve bugünkü davul kayıtlarını art arda dinletiyor."
+    lines:
+      - { speaker: "Bora", text: "İlk kayıt felaket, bugünkü çok daha temiz. <en>I {U6-050|improved} a lot!</en>" }
+      - { speaker: "Elif", text: "Her gün çalışınca böyle oluyor işte." }
+  - item: U6-051
+    durum: "Murat Bey dönem başında herkese küçük birer kâğıt dağıtıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Bu dönem için tek bir şey yazın. <en>What's your {U6-051|goal}?</en>" }
+      - { speaker: "Duru", text: "<en>My {U6-051|aim}:</en> derste bir kez bile esnememek." }
+  - item: U6-052
+    durum: "Elif yaz boyunca hayvan barınağında gönüllü çalıştı."
+    lines:
+      - { speaker: "Elif", text: "Köpek gezdirmeyi, mama hazırlamayı öğrendim. <en>I {U6-052|gained} a lot of {U6-027|experience}.</en>" }
+      - { speaker: "Ece", text: "Pamuk da orada yeni arkadaşlarla tanıştı mı?" }

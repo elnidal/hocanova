@@ -306,3 +306,35 @@ notifications:
 
 editor:
   z07: {U6-001: BEKLIYOR, U6-002: BEKLIYOR, U6-003: BEKLIYOR, U6-011: BEKLIYOR, U6-027: BEKLIYOR, U6-038: BEKLIYOR}
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U6-001
+    durum: "Kaan teneffüste kamp broşürünü herkese tek tek gösteriyor."
+    lines:
+      - { speaker: "Kaan", text: "Göl, orman, tırmanma duvarı, gece yürüyüşü! Bu kamp tam bir {U6-001|adventure}!" }
+      - { speaker: "Bora", text: "Benim için en büyük {U6-001|adventure}: otobüste iki saat uyanık kalmak." }
+  - item: U6-002
+    durum: "Elif dergide kayakla kayalıktan aşağı atlayan birinin fotoğrafını gösteriyor."
+    lines:
+      - { speaker: "Elif", text: "Bak, karların üstünden havaya uçuyor! <en>He loves {U6-002|extreme sports}.</en>" }
+      - { speaker: "Duru", text: "Ben fotoğrafa bakarken bile yoruldum." }
+  - item: U6-003
+    durum: "Kaan sabah sınıfa koşarak giriyor; elinde dergideki test."
+    lines:
+      - { speaker: "Kaan", text: "Hız, yükseklik, en yüksek salıncak… hepsi benim! <en>I'm an {U6-003|adrenaline seeker}!</en>" }
+      - { speaker: "Selin", text: "Ben de sakin bir kitabı severim. Herkes farklı, Kaan." }
+  - item: U6-011
+    durum: "Kaan, köprüden tek başına suya atlamak istediğini söylüyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Köprüden, tek başına, ipsiz mi? <en>No way! It's {U6-011|dangerous}!</en>" }
+      - { speaker: "Kaan", text: "Peki… kampta hocayla, kaskla tırmanma duvarı olur mu?" }
+      - { speaker: "Murat Bey", text: "İşte o olur." }
+  - item: U6-027
+    durum: "Selin çadır kurmayı hiç bilmediğini itiraf ediyor."
+    lines:
+      - { speaker: "Selin", text: "Hiç çadırda uyumadım. Bu benim için yepyeni bir {U6-027|experience} olacak." }
+      - { speaker: "Murat Bey", text: "Merak etme, bu benim onuncu kampım. <en>I'm {U6-027|experienced}.</en>" }
+  - item: U6-038
+    durum: "Ece kamp listesi için herkese soru soruyor."
+    lines:
+      - { speaker: "Ece", text: "<en>{U6-038|What kind of} music do you like at a campfire?</en>" }
+      - { speaker: "Elif", text: "Hepsini! Ama en çok pop. Ben söylerim, siz alkışlarsınız." }

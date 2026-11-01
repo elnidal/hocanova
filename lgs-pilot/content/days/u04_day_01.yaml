@@ -308,3 +308,37 @@ notifications:
 
 editor:
   z07: {U4-007: BEKLIYOR, U4-011: BEKLIYOR, U4-013: BEKLIYOR, U4-022: BEKLIYOR, U4-026: BEKLIYOR, U4-031: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U4-007
+    durum: "Selin telefonda Ece'yle konuşurken kapıya biri geliyor."
+    lines:
+      - { speaker: "Selin", text: "<en>{U4-007|Hold on}, Ece!</en> Kapıda kargocu var, hemen dönüyorum." }
+      - { speaker: "Ece", text: "Tamam, telefonu kulağımdan ayırmıyorum. Acele etme!" }
+  - item: U4-011
+    durum: "Kaan, Bora'yı üçüncü kez arıyor."
+    lines:
+      - { speaker: "Kaan", text: "Dıt… dıt… dıt… <en>Come on, Bora, {U4-011|pick up}!</en>" }
+      - { speaker: "Bora", text: "Alo? Pardon, duştaydım! Telefon salonda kalmış." }
+  - item: U4-013
+    durum: "Murat Bey derste konuşurken bir çantadan müzik sesi yükseliyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Kimin telefonu bu? <en>Something is {U4-013|ringing}!</en>" }
+      - { speaker: "Duru", text: "Benimki! Annem arıyor, özür dilerim. Hemen sessize alıyorum." }
+  - item: U4-022
+    durum: "Selin, Ece'nin ev numarasını aradı; karşıda Ece'nin annesi var."
+    lines:
+      - { speaker: "Selin", text: "İyi akşamlar, teyzeciğim! Ece evde mi?" }
+      - { speaker: "Ece'nin annesi", text: "Evde, odasında. <en>{U4-007|Hold on}, {U4-022|I'll get her}.</en>" }
+      - { speaker: "Ece'nin annesi", text: "Eceee! Selin seni istiyor!" }
+  - item: U4-026
+    durum: "Kaan, Duru'nun ev numarasını aradı; karşıda Duru'nun annesi var."
+    lines:
+      - { speaker: "Kaan", text: "<en>Good evening. {U4-026|May I speak to} Duru, please?</en>" }
+      - { speaker: "Duru'nun annesi", text: "Tabii canım, odasında ödev yapıyor. Seni duyunca çok sevinir!" }
+  - item: U4-031
+    durum: "Bora'nın evinde telefon ötüyor; dedesi telefonu kulağına götürüyor."
+    lines:
+      - { speaker: "Bora'nın dedesi", text: "Alo? <en>{U4-031|Who's calling}, please?</en>" }
+      - { speaker: "Kaan", text: "<en>Hello! {U4-031|This is} Kaan, Bora's friend.</en>" }
+      - { speaker: "Bora'nın dedesi", text: "Ah, basketbolcu Kaan! Bora'yı hemen veriyorum." }

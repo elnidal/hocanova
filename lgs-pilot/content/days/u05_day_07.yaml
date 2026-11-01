@@ -306,3 +306,35 @@ notifications:
 
 editor:
   z07: {U5-016: BEKLIYOR, U5-022: BEKLIYOR, U5-038: BEKLIYOR, U5-039: BEKLIYOR, U5-042: BEKLIYOR, U5-046: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U5-016
+    durum: "Bora'nın dedesi bilgisayarda internete nereden gireceğini soruyor."
+    lines:
+      - { speaker: "Bora'nın dedesi", text: "Bora, internet nereden açılıyor? Bu mavi daire mi?" }
+      - { speaker: "Bora", text: "<en>Yes, that's the {U5-016|web browser}.</en> Ona tıkla, sonra adresi gir." }
+  - item: U5-022
+    durum: "Elif bir şarkının adını hatırlamıyor."
+    lines:
+      - { speaker: "Elif", text: "Şarkıdan yalnızca bir cümle biliyorum!" }
+      - { speaker: "Duru", text: "O cümleyi kutuya gir. <en>Use a {U5-022|search engine}.</en>" }
+  - item: U5-038
+    durum: "Selin kütüphanede beş kitabın arasında oturuyor."
+    lines:
+      - { speaker: "Kaan", text: "Bu kadar kitap ne için?" }
+      - { speaker: "Selin", text: "Fen projesi: arılar. <en>I need to {U5-038|do some research}.</en>" }
+  - item: U5-039
+    durum: "Selin'in babaannesi tartı kullanmadan reçel yapıyor."
+    lines:
+      - { speaker: "Selin", text: "Babaannem hiç ölçmez, ama reçeli hep mükemmel olur." }
+      - { speaker: "Ece", text: "<en>She's an {U5-039|expert}!</en> Kırk yıllık iş bu." }
+  - item: U5-042
+    durum: "Ece, okulun yarın tatil olup olmadığını öğrenmek istiyor."
+    lines:
+      - { speaker: "Ece", text: "Herkes başka bir şey söylüyor. <en>I need correct {U5-042|information}.</en>" }
+      - { speaker: "Selin", text: "Okulun resmî sitesine bak; söylentilere değil." }
+  - item: U5-046
+    durum: "Bora yeni aldığı çok cepli çantayı gösteriyor."
+    lines:
+      - { speaker: "Bora", text: "Baget cebi, su cebi, kulaklık cebi! <en>It's very {U5-046|useful}.</en>" }
+      - { speaker: "Duru", text: "Bir cebi de unuttuğun ödevlere ayır." }

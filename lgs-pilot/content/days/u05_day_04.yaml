@@ -313,3 +313,35 @@ notifications:
 
 editor:
   z07: {U5-015: BEKLIYOR, U5-020: BEKLIYOR, U5-023: BEKLIYOR, U5-026: BEKLIYOR, U5-057: BEKLIYOR, U5-059: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U5-015
+    durum: "Provaya bir saat var; Bora'nın bagetlerinden biri ikiye ayrılmış."
+    lines:
+      - { speaker: "Bora", text: "<en>Oh no, my drumstick is {U5-015|broken}!</en>" }
+      - { speaker: "Ece", text: "Menajer her şeyi düşünür: yedek baget çantamda!" }
+  - item: U5-020
+    durum: "Ece, Kaan'a mesaj atıyor ama cevap gelmiyor."
+    lines:
+      - { speaker: "Ece", text: "Kaan'ın adının yanında yeşil ışık yok. <en>He's {U5-020|offline}.</en>" }
+      - { speaker: "Selin", text: "Antrenmandadır; telefonu soyunma odasında." }
+  - item: U5-023
+    durum: "Gece; Bora'nın dedesi salonda televizyonun önünde uyuyakalmış."
+    lines:
+      - { speaker: "Bora", text: "Dedem uyumuş, televizyon bağırıyor… <en>I'll {U5-023|turn it off}.</en>" }
+      - { speaker: "Bora'nın dedesi", text: "Uyumuyordum, dinliyordum!" }
+  - item: U5-026
+    durum: "Kaan'ın kulaklığından ses bir gelip bir gidiyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>My headphones aren't {U5-026|working properly}.</en> Bir kulak var, bir kulak yok!" }
+      - { speaker: "Elif", text: "Kabloyu kıvırma; ondan oluyor." }
+  - item: U5-057
+    durum: "Duru, Bora'ya yalnızca bir davul ve bir saat resmi göndermiş."
+    lines:
+      - { speaker: "Bora", text: "<en>{U5-057|What do you mean}, Duru?</en> Davul saati mi?" }
+      - { speaker: "Duru", text: "Prova saat dörtte, davulunu getir demek!" }
+  - item: U5-059
+    durum: "Cumartesi; hava güneşli, herkes evde oturuyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>{U5-059|Why don't we} go to the park?</en>" }
+      - { speaker: "Elif", text: "Süper fikir! Pamuk'u da getiriyorum." }

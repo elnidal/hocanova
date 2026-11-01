@@ -317,3 +317,30 @@ notifications:
 
 editor:
   z07: {U4-004: BEKLIYOR, U4-018: BEKLIYOR, U4-025: BEKLIYOR, U4-030: BEKLIYOR, U4-051: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U4-004
+    durum: "Ece okulun bahar şenliğinde çalmak istiyor."
+    lines:
+      - { speaker: "Ece", text: "Müdürle konuşmalıyım. <en>How can I {U4-004|get in touch} with the head teacher?</en>" }
+      - { speaker: "Selin", text: "Kolay: önce Murat Bey'e söyle, o haber verir." }
+  - item: U4-018
+    durum: "Elif kapıya gelen kartpostala bakıyor."
+    lines:
+      - { speaker: "Elif", text: "Kartta benim adım var ama {U4-018|sender} kısmı boş! Kimden bu?" }
+      - { speaker: "Duru", text: "Pula bak: Ankara! Kuzenindir." }
+  - item: U4-025
+    durum: "Kaan, Bora'yı arayıp kötü haberi veriyor."
+    lines:
+      - { speaker: "Kaan", text: "Antrenmanda bileğim burkuldu. Bir hafta top yok." }
+      - { speaker: "Bora", text: "<en>Oh no, {U4-025|I'm sorry to hear that}. {U4-025|Get well soon}!</en>" }
+  - item: U4-030
+    durum: "Duru sabah sınıfa surat asarak giriyor."
+    lines:
+      - { speaker: "Ece", text: "<en>Duru? {U4-030|What's wrong}?</en>" }
+      - { speaker: "Duru", text: "Fıstık bütün gece havladı. Gözümü kırpmadım!" }
+  - item: U4-051
+    durum: "Bora sınıfa kırk kurabiyeyle geliyor; Ece telefonda dört demiş."
+    lines:
+      - { speaker: "Ece", text: "Dört dedim, Bora, dört! Kırk değil!" }
+      - { speaker: "Bora", text: "Telefonda kırk gibi geldi. Küçük bir {U4-051|misunderstanding}… ama herkese yeter!" }

@@ -307,3 +307,36 @@ notifications:
 
 editor:
   z07: {U6-022: BEKLIYOR, U6-023: BEKLIYOR, U6-024: BEKLIYOR, U6-025: BEKLIYOR, U6-026: BEKLIYOR, U6-046: BEKLIYOR}
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U6-022
+    durum: "Ece kamp çantasına koyacaklarını yatağın üstüne diziyor."
+    lines:
+      - { speaker: "Ece", text: "Uyku tulumu, mat, matara, yedek çorap… <en>All my camp {U6-022|equipment} is here!</en>" }
+      - { speaker: "Selin", text: "Dört sayfalık liste bunlar için miydi?" }
+  - item: U6-023
+    durum: "Kaan bisiklete binmeden önce annesi onu kapıda durduruyor."
+    lines:
+      - { speaker: "Kaan'ın annesi", text: "Önce kafana şunu tak, dizlerine de şunları! <en>{U6-023|Helmet} and {U6-023|knee pads}, please.</en>" }
+      - { speaker: "Kaan", text: "Anne, sadece markete gidiyorum!" }
+      - { speaker: "Kaan'ın annesi", text: "Market de yolda." }
+  - item: U6-024
+    durum: "Beden eğitiminde iki takım karşılıklı çekişiyor."
+    lines:
+      - { speaker: "Kaan", text: "Çek! Daha sıkı tut! <en>Hold the {U6-024|rope}!</en>" }
+      - { speaker: "Bora", text: "Tutuyorum ama ellerim yandı!" }
+  - item: U6-025
+    durum: "Elektrikler kesiliyor; Duru'nun evi zifiri karanlık."
+    lines:
+      - { speaker: "Duru", text: "Fıstık, korkma… Anne, {U6-025|flashlight} nerede?" }
+      - { speaker: "Duru'nun annesi", text: "Çekmecede. Düğmesine bas, yeter." }
+  - item: U6-026
+    durum: "Elif, Pamuk'u tekneye bindirmeden önce ona pembe bir yelek giydiriyor."
+    lines:
+      - { speaker: "Elif", text: "Pamuk, önce {U6-026|life jacket}! Suda seni yukarıda tutar." }
+      - { speaker: "Ece", text: "Pamuk'a çok yakışmış, tam bir kaptan!" }
+  - item: U6-046
+    durum: "Bora mağazada küçük bir matarayı eline alıyor."
+    lines:
+      - { speaker: "Bora", text: "<en>Excuse me, {U6-046|how much does it cost}?</en>" }
+      - { speaker: "Görevli", text: "Doksan lira. Büyüğü yüz elli." }
+      - { speaker: "Bora", text: "Küçüğü yeter. Su aynı su." }

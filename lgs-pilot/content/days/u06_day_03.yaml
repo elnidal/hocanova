@@ -308,3 +308,34 @@ notifications:
 
 editor:
   z07: {U6-004: BEKLIYOR, U6-031: BEKLIYOR, U6-032: BEKLIYOR, U6-035: BEKLIYOR, U6-036: BEKLIYOR, U6-037: BEKLIYOR}
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U6-004
+    durum: "Ece, kamp anketine iki seçenek ekliyor: köpüklü bir nehir ve karanlık bir mağara."
+    lines:
+      - { speaker: "Ece", text: "Botla nehirden inmek mi, mağaranın içinde yürümek mi? <en>{U6-004|Go rafting} or {U6-004|go caving}?</en>" }
+      - { speaker: "Kaan", text: "Nehir! Islanmak bedava!" }
+  - item: U6-031
+    durum: "Bora geçen yılın kamp videosunu izlerken gülmekten koltuktan kayıyor."
+    lines:
+      - { speaker: "Bora", text: "Öğretmenler ateşin başında yanlış notalarla şarkı söylüyor! <en>It's so {U6-031|amusing}!</en>" }
+      - { speaker: "Elif", text: "Dur, ben de izleyeyim! Gülmekten karnım ağrıdı." }
+  - item: U6-032
+    durum: "Elif pazar günü bir konsere gitti; bir saat beklediler, şarkıcı iki şarkı söyleyip gitti."
+    lines:
+      - { speaker: "Elif", text: "Bir saat bekledik, iki şarkı ve bitti. <en>It was so {U6-032|disappointing}.</en>" }
+      - { speaker: "Ece", text: "Üzülme. Gel, kamp ateşinde sen bütün gece söyle!" }
+  - item: U6-035
+    durum: "Kantin görevlisi Duru'ya iki tost gösteriyor: kaşarlı ve sucuklu."
+    lines:
+      - { speaker: "Kantin görevlisi", text: "<en>{U6-035|Which one do you prefer}?</en>" }
+      - { speaker: "Duru", text: "Kaşarlı. <en>I {U6-035|prefer} cheese {U6-035|to} meat.</en> Bir de uykuyu her şeye." }
+  - item: U6-036
+    durum: "Elif yağmurlu cumartesi için Ece'ye iki plan soruyor."
+    lines:
+      - { speaker: "Elif", text: "<en>{U6-036|Would you rather} watch a film or bake a cake?</en>" }
+      - { speaker: "Ece", text: "<en>{U6-036|I'd rather} bake a cake.</en> Film sonra, kekin yanında!" }
+  - item: U6-037
+    durum: "Duru ankete oy vermiş ama açıklama yazmamış."
+    lines:
+      - { speaker: "Ece", text: "Duru, kurala uy lütfen. <en>{U6-037|Why} rafting?</en>" }
+      - { speaker: "Duru", text: "<en>{U6-037|Because} you sit in a boat.</en> Oturmak benim sporum." }

@@ -304,3 +304,34 @@ notifications:
 
 editor:
   z07: {U6-013: BEKLIYOR, U6-014: BEKLIYOR, U6-015: BEKLIYOR, U6-021: BEKLIYOR, U6-047: BEKLIYOR, U6-048: BEKLIYOR}
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U6-013
+    durum: "Kampa giden otobüsün camından yol kenarında çarpışmış iki araba görünüyor."
+    lines:
+      - { speaker: "Selin", text: "Şuraya bak! Neyse ki herkes dışarıda, iyi görünüyor. <en>A small {U6-013|accident}.</en>" }
+      - { speaker: "Murat Bey", text: "İşte bu yüzden emniyet kemerleri hep takılı, arkadaşlar." }
+  - item: U6-014
+    durum: "Elif, iki ay su vermeyi unuttuğu saksı çiçeğinde yeni bir yaprak görüyor."
+    lines:
+      - { speaker: "Elif", text: "Ona hiç bakmadım, ama bak, yeşil bir yaprak! <en>It {U6-014|survived}!</en>" }
+      - { speaker: "Ece", text: "Güçlü bir çiçekmiş. Artık telefonuna hatırlatıcı kur!" }
+  - item: U6-015
+    durum: "Ece'nin tabağındaki son dilim kek yavaş yavaş kenara kayıyor."
+    lines:
+      - { speaker: "Ece", text: "Hayır, hayır… <en>Don't {U6-015|fall}!</en>" }
+      - { speaker: "Bora", text: "Çok geç. Ama yerde bile güzel görünüyor." }
+  - item: U6-021
+    durum: "Selin dergideki tabloyu okuyor: emniyet kemeri takanlar ve takmayanlar."
+    lines:
+      - { speaker: "Selin", text: "Bak, kemer takanlarda {U6-021|rate of death} çok düşük." }
+      - { speaker: "Kaan", text: "Demek kemer gerçekten hayat kurtarıyor. Ben hep takıyorum!" }
+  - item: U6-047
+    durum: "Ece okulun ilk yardım kulübüne başvuru formunu okuyor."
+    lines:
+      - { speaker: "Ece", text: "İlk yardım kursu, takım çalışması, sabır… <en>I have the {U6-047|qualifications}!</en>" }
+      - { speaker: "Selin", text: "Liste yapmak da bir {U6-047|skill} sayılırsa, seni hemen alırlar." }
+  - item: U6-048
+    durum: "Ece tenis kursundan heyecanla dönüyor."
+    lines:
+      - { speaker: "Ece", text: "Ayşe Hanım raketi nasıl tutacağımı gösterdi. <en>She's a great tennis {U6-048|instructor}.</en>" }
+      - { speaker: "Selin", text: "Bir saatte servis atmayı mı öğrendin?" }

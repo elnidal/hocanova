@@ -310,3 +310,34 @@ notifications:
 
 editor:
   z07: {U6-008: BEKLIYOR, U6-010: BEKLIYOR, U6-017: BEKLIYOR, U6-018: BEKLIYOR, U6-053: BEKLIYOR, U6-054: BEKLIYOR}
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U6-008
+    durum: "Selin belgeselde mercanların arasında yüzen, sırtı tüplü insanları izliyor."
+    lines:
+      - { speaker: "Selin", text: "Hocalarıyla birlikte, balıkların arasında… <en>One day I want to go {U6-008|scuba diving}.</en>" }
+      - { speaker: "Ece", text: "Önce yüzme kursu, sonra kulüp. Listeye yazıyorum!" }
+  - item: U6-010
+    durum: "Elif ve Duru göl kıyısında iki kişilik turuncu tekneye biniyor."
+    lines:
+      - { speaker: "Elif", text: "Sen sağdan, ben soldan! <en>{U6-010|Canoeing} is a team sport!</en>" }
+      - { speaker: "Duru", text: "Ben arkada ritmi tutarım… gözlerim kapalı." }
+  - item: U6-017
+    durum: "Deniz Hoca, yeleğini kapatmadan suya yaklaşan Kaan'ı kıyıda durduruyor."
+    lines:
+      - { speaker: "Deniz Hoca", text: "Yelek yoksa göl de yok. <en>Even good swimmers can {U6-017|drown}.</en>" }
+      - { speaker: "Kaan", text: "Tamam hocam, tokaları üç kez kontrol ettim." }
+  - item: U6-018
+    durum: "Ece havalimanında Ankara'dan gelen babaannesini bekliyor; gözü ekranda."
+    lines:
+      - { speaker: "Ece", text: "Ekranda yazıyor: on dakika sonra! <en>The plane {U6-018|lands} at 5.20.</en>" }
+      - { speaker: "Elif", text: "Tam zamanında. Hadi, kapının önüne geçelim!" }
+  - item: U6-053
+    durum: "Karne günü; zil çalınca Kaan çantasını havaya kaldırıp bahçeye koşuyor."
+    lines:
+      - { speaker: "Kaan", text: "Ödev yok, alarm yok, üç ay! <en>I feel the {U6-053|freedom}!</en>" }
+      - { speaker: "Selin", text: "Ben yine her sabah 6.30'da kalkacağım ama." }
+  - item: U6-054
+    durum: "Bora balkonda çamaşır asarken tişörtler havada uçuşuyor."
+    lines:
+      - { speaker: "Bora", text: "Tişörtüm komşunun balkonuna gitti! <en>The {U6-054|wind} is so strong today.</en>" }
+      - { speaker: "Dedesi", text: "Mandal kullan, evlat. Mandal!" }

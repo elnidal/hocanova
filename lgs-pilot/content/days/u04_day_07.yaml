@@ -328,3 +328,37 @@ notifications:
 
 editor:
   z07: {U4-036: BEKLIYOR, U4-038: BEKLIYOR, U4-039: BEKLIYOR, U4-040: BEKLIYOR, U4-041: BEKLIYOR, U4-055: BEKLIYOR}
+
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U4-036
+    durum: "Kaan internetten aldığı ayakkabıyı soracak; yirmi dakikadır hatta."
+    lines:
+      - { speaker: "Kaan", text: "Bu {U4-036|call center}'da kimse yok mu? Yirmi dakikadır aynı müzik!" }
+      - { speaker: "Ece", text: "Sabret, sıranı tutuyorsun. Birazdan biri çıkar." }
+  - item: U4-038
+    durum: "Sevim Hanım pastanede kurabiye tabağını hazırlıyor."
+    lines:
+      - { speaker: "Sevim Hanım", text: "Benim için en önemli kişi kim, biliyor musun? <en>The {U4-038|customer}!</en>" }
+      - { speaker: "Ece", text: "O yüzden mi kapıdan giren herkese kurabiye veriyorsunuz?" }
+      - { speaker: "Sevim Hanım", text: "Bir tane! Yalnızca bir tane." }
+  - item: U4-039
+    durum: "Elif kapıda kargo bekliyor; Pamuk da yanında."
+    lines:
+      - { speaker: "Elif", text: "Kargo şirketi mesaj attı: <en>Your parcel will be {U4-039|delivered} today.</en>" }
+      - { speaker: "Duru", text: "Pamuk kapıdan ayrılmıyor. O da nöbette!" }
+  - item: U4-040
+    durum: "Duru'nun yeni kulaklığının sol tarafından ses gelmiyor."
+    lines:
+      - { speaker: "Duru", text: "Daha dün aldım! Mağazayı arayıp <en>I want to {U4-040|make a complaint}</en> diyeceğim." }
+      - { speaker: "Elif", text: "Fişi sakla; ilk onu soracaklar." }
+  - item: U4-041
+    durum: "Bora'nın dedesi ona iki beden küçük bir kazak almış."
+    lines:
+      - { speaker: "Bora", text: "Dede, kazak çok güzel ama kolları dirseğimde!" }
+      - { speaker: "Bora'nın dedesi", text: "Dert etme. Mağazaya gidip <en>Can I {U4-041|change} it for a bigger size?</en> deriz." }
+  - item: U4-055
+    durum: "Kaan matematik ödevinin son sorusunda takılmış."
+    lines:
+      - { speaker: "Kaan", text: "Yarım saattir bakıyorum, olmuyor!" }
+      - { speaker: "Selin", text: "Ver bakayım. <en>I can {U4-055|solve} it in two minutes.</en>" }
+      - { speaker: "Kaan", text: "İki dakika mı? Kronometreyi başlatıyorum!" }
