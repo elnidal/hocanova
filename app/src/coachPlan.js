@@ -63,6 +63,60 @@ export function coachPlan({ state, due, nextDay, weekly, unitDone, now }) {
   return steps
 }
 
+const WEEK_MS = 7 * DAY_MS
+export const REVIEW_DAYS = 30 // son 30 gün yeni ders değil, tekrar ve deneme
+const AY = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık']
+
+/** Haftanın başı: pazartesi 00.00 (yerel saat). */
+const weekStartOf = now => {
+  const d = new Date(now)
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate() - ((d.getDay() + 6) % 7)).getTime()
+}
+
+/** "Nisan ortasında" gibi yaklaşık tarih. */
+const approxDate = t => {
+  const d = new Date(t), g = d.getDate()
+  return `${AY[d.getMonth()]} ${g <= 10 ? 'başında' : g <= 20 ? 'ortasında' : 'sonunda'}`
+}
+
+/**
+ * Tempo: kalan dersleri son 30 güne kadar haftalara böler. Hedef hafta başındaki duruma göre hesaplanır,
+ * hafta içinde değişmez. Dönen mode: 'pace' | 'complete' (ders kalmadı) | 'final' (son 30 gün).
+ */
+export function pacePlan({ totalLessons, doneDays = {}, now, lgs = LGS_DATE, reviewDays = REVIEW_DAYS }) {
+  const ats = Object.values(doneDays).map(d => d?.at ?? 0)
+  const start = weekStartOf(now)
+  const weekDone = ats.filter(t => t >= start).length
+  const lastWeekDone = ats.filter(t => t >= start - WEEK_MS && t < start).length
+  const left = Math.max(0, totalLessons - ats.length)
+  if (!left) return { mode: 'complete', left: 0, weekDone }
+  const end = lgs - reviewDays * DAY_MS
+  if (now >= end) return { mode: 'final', left, weekDone }
+  const leftAtStart = left + weekDone
+  const weeks = (end - start) / WEEK_MS
+  const need = Math.ceil(leftAtStart / weeks)
+  const target = Math.min(7, need)
+  const prevTarget = Math.min(7, Math.ceil((leftAtStart + lastWeekDone) / (weeks + 1)))
+  const startedBefore = ats.length > weekDone
+  return {
+    mode: 'pace', left, weekDone, target,
+    tight: need > 7, // her gün bir ders bile yetmiyor
+    raised: startedBefore && target > prevTarget ? prevTarget : null, // tempo geçen haftaya göre arttıysa eski değer
+    finishAt: start + Math.ceil(leftAtStart / target) * WEEK_MS,
+  }
+}
+
+/** Tempo cümlesi. Suçlamaz: geride kalınca yalnız yeni tempoyu söyler. */
+export function paceText(p) {
+  if (p.mode === 'complete') return 'Bütün dersler bitti! Şimdi tekrar ve Mini LGS zamanı.'
+  if (p.mode === 'final') return 'Son düzlük: bu günlerde yeni dersten çok tekrar ve Mini LGS işe yarar.'
+  if (p.tight) return 'Her gün bir ders iyi bir tempo. Hepsi yetişmezse en çok soru gelen konulara öncelik veririz.'
+  const finish = `Bu tempoyla üniteler ${approxDate(p.finishAt)} biter; kalan süre tekrar ve deneme için.`
+  if (p.raised) return `Tempo haftada ${p.raised} dersten ${p.target} derse çıktı; sorun değil, hâlâ yetişiyoruz. ${finish}`
+  if (p.weekDone >= p.target) return `Bu haftanın hedefi tamam! Devam etmek istersen sınava daha da erken hazır olursun.`
+  return finish
+}
+
 /** Planın başına Nova'nın tek cümlesi. */
 export function planHeadline(steps, days) {
   const left = steps.filter(s => !s.done).length

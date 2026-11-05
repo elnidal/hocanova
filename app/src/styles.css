@@ -278,3 +278,8 @@ h1{letter-spacing:-.025em}h2{letter-spacing:-.02em}
 }
 .chat.mini{gap:8px}
 .mini-durum{margin:0 0 2px;font-size:.85rem;font-weight:700;color:var(--muted)}
+.pace{display:flex;flex-direction:column;gap:6px}
+.pace-row{font-size:.92rem;color:#fff}
+.pace-bar{height:6px;border-radius:99px;background:rgba(255,255,255,.15);overflow:hidden}
+.pace-bar i{display:block;height:100%;background:#FFC93C;transition:width .2s}
+.pace p{margin:0;font-size:.82rem;line-height:1.4;color:rgba(244,243,251,.72)}

@@ -6,7 +6,7 @@ import { coachMessage, streakOf } from '../goal.js'
 import { openMistakeCount } from '../mistakes.js'
 import { weeklyDue, pct } from '../quiz.js'
 import { miniTrend, fmtNet } from '../lgsMini.js'
-import { coachPlan, daysToLgs, planHeadline } from '../coachPlan.js'
+import { coachPlan, daysToLgs, planHeadline, pacePlan, paceText } from '../coachPlan.js'
 import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
 
@@ -36,9 +36,12 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const mistakesOpen = openMistakeCount(progress)
   const readyChecks = retentions.filter(r => r.st.status === 'ready')
   const waitChecks = retentions.filter(r => r.st.status !== 'ready' && r.st.status !== 'not-started')
-  const plan = placement && !preAvail ? coachPlan({ state, due, nextDay, weekly, unitDone: !nextDay && !uq.post, now }) : []
+  const plan = !placement ? []
+    : preAvail ? [{ key: 'pre', action: 'pre', done: false, title: `Ünite ${unit.unit} ön testi`, note: '10 soru: ünite sonunda farkı bununla göreceğiz.' }]
+    : coachPlan({ state, due, nextDay, weekly, unitDone: !nextDay && !uq.post, now })
   const firstOpen = plan.find(s => !s.done)
-  const run = s => ({ review: onReview, lesson: () => onLesson(nextDay.day), post: () => onQuiz('post'), weekly: () => onQuiz('weekly'), mini: onMini, repair: () => onRepair(s.units) })[s.action]()
+  const pace = pacePlan({ totalLessons: index.units.reduce((n, u) => n + (u.dayCount || 0), 0), doneDays: state.doneDays, now })
+  const run = s => ({ review: onReview, lesson: () => onLesson(nextDay.day), pre: () => onQuiz('pre'), post: () => onQuiz('post'), weekly: () => onQuiz('weekly'), mini: onMini, repair: () => onRepair(s.units) })[s.action]()
   const coachText = placement
     ? coachMessage({ daily: state.daily, goal: state.goal, due, now, fallback: plan.length && Object.keys(state.doneDays).length ? planHeadline(plan, daysToLgs(now)) : levelText })
     : 'Hazırsan 4 dakikalık kısa bir testle başlayalım; derslerini seviyene göre ayarlayacağım.'
@@ -54,11 +57,20 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
 
       <Coach text={coachText} />
 
-      {plan.length > 0 && (
+      {placement && (
         <section className="card plan">
           <div className="plan-top">
             <div><div className="eyebrow">Nova'nın bugünkü planı</div><h2>{firstOpen ? `${plan.filter(s => s.done).length} / ${plan.length} tamam` : 'Plan tamam'}</h2></div>
             <div className="plan-count"><b>{daysToLgs(now)}</b><span>gün kaldı</span></div>
+          </div>
+          <div className="pace">
+            {pace.mode === 'pace' && (
+              <>
+                <div className="pace-row"><b>Bu hafta {pace.weekDone} / {pace.target} ders</b></div>
+                <div className="pace-bar" aria-hidden="true"><i style={{ width: `${Math.min(100, (pace.weekDone / pace.target) * 100)}%` }} /></div>
+              </>
+            )}
+            <p>{paceText(pace)}</p>
           </div>
           <ol className="plan-steps">
             {plan.map((s, k) => (
