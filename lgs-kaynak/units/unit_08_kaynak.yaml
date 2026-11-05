@@ -145,6 +145,7 @@ tasnif:
   rules_tr:
   - 'Satır değil öğretim birimi sayılır: ev işi kalıbı (fiil + nesne) ile fiilin kendisi tek birim (vacuum / vacuum the house; mop / mop the floor); eş anlamlı kümeler (garbage / trash / rubbish; wash the
     dishes / do the washing up; be responsible for / be in charge of; take care of / look after; task / duty / assignment) tek birim.'
+  - "Murat kararı (5 Kasım 2026): don't have to ≠ mustn't (U8-040) ve cook (U8-004) listede kalır; liste 50 birim, ekleme ya da çıkarma yok."
   - Öncelik 1 = en az iki bağımsız kaynak (A, I, W, R) ya da KALIP / İŞLEV.
   - 'Sıkılaştırma: ilk aday liste ~60 birimdi; kullanıcının sıkı liste tercihiyle 50 birime indi (Ü6: 57, Ü7: 61). clean the windows, wash the car, silent, decorate, boss, become, classmate BİLİNEN; doorbell,
     graduate, moral, periodically, peaceful, feature, gloom, elder, equally TANIMA.'

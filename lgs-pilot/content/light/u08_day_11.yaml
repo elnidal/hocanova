@@ -1,0 +1,133 @@
+schema_version: 1
+program: lgs
+mode: light
+exam: true                # sınav provası: yeni ifade yok; çizelge, not, zorunluluk, şikâyet diyaloğu
+unit: 8
+day: 11
+status: draft
+title: "Sınav provası: çizelge, not, diyalog"
+est_minutes: 8
+new_items: []
+steps: []
+review:
+  - id: u8d11-r01
+    item: U8-034
+    type: table_graph
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+    stem: "<en>OUR FAMILY'S CHORES\nMum: cook dinner, do the laundry\nDad: do the grocery shopping, mow the lawn\nDeniz: set the table, take out the rubbish\nNil: feed the dog, water the plants</en>"
+    options: ["Nil is responsible for feeding the dog.", "Deniz does the laundry.", "Dad sets the table.", "Mum waters the plants."]
+    answer: 0
+    explain: "\"feed the dog\" Nil'in satırında: köpeği beslemekten Nil sorumlu."
+    why_wrong:
+      - "\"Do the laundry\" Mum'ın satırında; iş yanlış kişiye verilmiş."
+      - "\"Set the table\" Deniz'in satırında; Dad market alışverişi ve çim biçme yapıyor."
+      - "\"Water the plants\" Nil'in satırında; Mum yemek ve çamaşırdan sorumlu."
+  - id: u8d11-r02
+    item: U8-040
+    type: table_graph
+    lgs_like: true
+    stem_id: S08
+    prompt: "<en>According to the chart, who doesn't have to vacuum the house or iron the clothes?</en>"
+    stem: "<en>Make the bed: Deniz ✓ · Arda ✓ · Nil ✓\nVacuum the house: Deniz ✗ · Arda ✓ · Nil ✗\nIron the clothes: Deniz ✗ · Arda ✗ · Nil ✓</en>"
+    options: ["Deniz", "Arda", "Nil", "Arda and Nil"]
+    answer: 0
+    explain: "Deniz'in iki satırda da ✗ işareti var: ikisini de yapmak zorunda değil."
+    why_wrong:
+      - "Arda'nın \"Vacuum the house\" satırında ✓ var; süpürmek onun görevi."
+      - "Nil'in \"Iron the clothes\" satırında ✓ var; ütü onun görevi."
+      - "Arda süpürüyor, Nil ütü yapıyor; ikisinin de bir görevi var."
+  - id: u8d11-r03
+    item: U8-021
+    type: table_graph
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the survey, which of the following is TRUE?</en>"
+    stem: "<en>Class 8A: Which chore do you dislike the most? (30 students)\nIron the clothes: 12\nTake out the rubbish: 9\nWash the dishes: 6\nMake the bed: 3</en>"
+    options: ["More students dislike ironing than taking out the rubbish.", "Making the bed is the most disliked chore.", "Six students dislike taking out the rubbish.", "Twelve students dislike washing the dishes."]
+    answer: 0
+    explain: "12 öğrenci ütüyü, 9 öğrenci çöpü seçmiş: ütüyü sevmeyen daha çok."
+    why_wrong:
+      - "En düşük sayı (3) yatak toplamada; en yüksek ile en düşük ters okunmuş."
+      - "6 sayısı bulaşık satırında; çöpü seçen 9 kişi. Sayıyı kendi satırıyla eşleştir."
+      - "12 sayısı ütü satırında; bulaşığı seçen 6 kişi."
+  - id: u8d11-r04
+    item: U8-008
+    type: message_infer
+    lgs_like: true
+    stem_id: S14
+    prompt: "<en>What can we understand from the note on the fridge?</en>"
+    stem: "<en>Kids, I'll be home at 7 p.m. Please load the dishwasher and tidy up the living room. You don't have to cook. I'll bring pizza! Love, Mum</en>"
+    options: ["The children don't need to prepare dinner.", "Mum wants the children to empty the dishwasher.", "Mum will come home in the morning.", "The children must make a pizza."]
+    answer: 0
+    explain: "\"You don't have to cook. I'll bring pizza\": yemek yapmalarına gerek yok."
+    why_wrong:
+      - "Notta \"load\" yazıyor; load doldurmak, empty boşaltmak demektir. Tam tersi."
+      - "Notta \"at 7 p.m.\" yazıyor; p.m. akşam saatini gösterir."
+      - "Pizzayı annesi getiriyor; \"don't have to cook\" yapmaları gerekmediğini söylüyor."
+  - id: u8d11-r05
+    item: U8-040
+    type: situation
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>Mum has just mopped the kitchen floor. It is still wet. What should she say to the children?</en>"
+    options: ["You mustn't walk on the floor now.", "You don't have to walk on the floor.", "You have to walk on the floor now.", "You can walk on the floor now."]
+    answer: 0
+    explain: "Yer ıslak ve yürümek istenmiyor: bu bir yasak, mustn't."
+    why_wrong:
+      - "\"Don't have to\" gerek yok demektir; yürümek yasak olduğunu söylemez."
+      - "\"Have to\" zorunluluk bildirir; anne tam tersini istiyor."
+      - "\"Can\" izin verir; ıslak yerde yürümeye izin yok."
+  - id: u8d11-r06
+    item: U8-040
+    type: synonym
+    lgs_like: true
+    stem_id: S12
+    prompt: "<en>\"It's Saturday, so you don't have to get up early.\" Which one is CLOSEST in meaning?</en>"
+    options: ["It isn't necessary to get up early.", "You are not allowed to get up early.", "You must get up early.", "You never get up early."]
+    answer: 0
+    explain: "don't have to = gerekli değil (it isn't necessary); istersen kalkabilirsin."
+    why_wrong:
+      - "\"Not allowed\" yasak demektir; bu mustn't anlamıdır, don't have to değil."
+      - "\"Must\" zorunluluk bildirir; cümlenin tam tersi."
+      - "\"Never\" sıklık bildirir; cümle bugün için gerekli olmadığını söylüyor."
+  - id: u8d11-r07
+    item: U8-043
+    type: dialogue_complete
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Mum: Kaan, can you also vacuum the living room?\nKaan: ________ I washed the dishes and took out the rubbish today!</en>"
+    options: ["It's not fair! Why do I always have to do everything?", "Sure, I have nothing to do today.", "You're welcome.", "That's a good idea."]
+    answer: 0
+    explain: "Kaan bugün yaptığı işleri sayarak itiraz ediyor: şikâyet kalıbı."
+    why_wrong:
+      - "\"Nothing to do\" arkadan gelen iş listesiyle çelişir; Kaan çok iş yaptığını söylüyor."
+      - "\"You're welcome\" teşekküre verilen cevaptır; burada teşekkür yok."
+      - "\"Good idea\" öneriyi kabul eder; Kaan ise itiraz ediyor."
+  - id: u8d11-r08
+    item: U8-037
+    type: situation
+    lgs_like: true
+    stem_id: S09
+    prompt: "<en>Which of the following is an example of \"taking turns\"?</en>"
+    options: ["Deniz washes the dishes on Monday, and Arda washes them on Tuesday.", "Deniz washes the dishes every day.", "Nobody washes the dishes on Monday.", "Arda asks Deniz for some money."]
+    answer: 0
+    explain: "Bir gün biri, ertesi gün öbürü: işi sırayla yapıyorlar."
+    why_wrong:
+      - "Her gün aynı kişi yapıyorsa sıra değişmiyor demektir."
+      - "Kimse yapmıyorsa sırayla yapılan bir iş de yoktur."
+      - "Para istemenin sırayla iş yapmakla ilgisi yok."
+tips:
+  - type: lgs_taktigi
+    refs: [U8-040]
+    text: "Çizelgede önce soruda kim ya da hangi iş geçiyor, onun satırına git; yanındaki bilgiyi başka satırla karıştırma. mustn't = yasak, don't have to = gerek yok: sınavın en sevdiği tuzak."
+coach:
+  start: "Sınav provası! LGS'nin bu üniteden sevdiği sorular: çizelge, buzdolabı notu ve mustn't tuzağı 📝"
+  end_good: "Tam not! Çizelge de not da seni korkutmuyor. Ünite 8 tamam 🏆"
+  end_mixed: "İyi iş! {weak} biraz zorladı; tekrarda yine karşına çıkacak 📝"
+notifications:
+  morning: "Bugün Ünite 8 sınav provası: çizelge, not, diyalog 📝"
+  evening: "Don't have to mu, mustn't mu? Biri yasak, biri değil 🤔"
+  review: "\"You don't have to cook\" notunu okuyan çocuk yemek yapar mı?"
