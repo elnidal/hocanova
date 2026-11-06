@@ -30,6 +30,10 @@ steps:
       options: ["We discussed the problem for an hour.", "We discussed about the problem for an hour.", "We discussed on the problem for an hour.", "We discussed of the problem for an hour."]
       answer: 0
       explain: "discuss'tan sonra edat gelmez."
+      why_wrong:
+        - "discuss doğrudan nesne alır; about gelmez."
+        - "discuss ile on kullanılmaz."
+        - "discuss ile of kullanılmaz."
     tekrar:
       id: u9d03-011-t
       type: situation
@@ -39,6 +43,10 @@ steps:
       options: ["A formal discussion where people give different opinions", "A fight with fists", "A kind of experiment", "A science book"]
       answer: 0
       explain: "debate = farklı görüşlerin tartışıldığı resmî tartışma (münazara)."
+      why_wrong:
+        - "Yumruk kavgası değil, fikir tartışmasıdır."
+        - "Deney değil, konuşmaya dayanır."
+        - "Kitap değil, bir etkinliktir."
   - item: U9-012
     card:
       example_en: "Scientists observe the stars with a telescope. The doctor examined my throat."
@@ -61,6 +69,10 @@ steps:
       options: ["The doctor examined the boy's ear.", "The doctor observed the stars.", "The doctor mowed the lawn.", "The doctor translated the book."]
       answer: 0
       explain: "Doktor kulağı muayene eder (examine)."
+      why_wrong:
+        - "Yıldız gözlemek doktor işi değildir."
+        - "Çim biçmek doktor işi değildir."
+        - "Çeviri doktor işi değildir."
     tekrar:
       id: u9d03-012-t
       type: situation
@@ -70,6 +82,10 @@ steps:
       options: ["Watching something carefully and writing what you see", "Cooking a meal", "Washing clothes", "Buying a ticket"]
       answer: 0
       explain: "observation = dikkatle izleyip kaydetme (gözlem)."
+      why_wrong:
+        - "Yemekle ilgisi yok."
+        - "Çamaşırla ilgisi yok."
+        - "Bilet almakla ilgisi yok."
   - item: U9-013
     card:
       example_en: "Everything around us is matter: solids, liquids and gases."
@@ -92,6 +108,10 @@ steps:
       options: ["Solids, liquids and gases are types of matter.", "What's the matter with you?", "It doesn't matter.", "Your health matters to me."]
       answer: 0
       explain: "İlk cümlede matter = madde (bilim terimi)."
+      why_wrong:
+        - "\"What's the matter?\" ne oldu demektir."
+        - "\"It doesn't matter\" önemli değil demektir."
+        - "Burada matter fiildir: önemli olmak."
     tekrar:
       id: u9d03-013-t
       type: dialogue_complete
@@ -102,6 +122,10 @@ steps:
       options: ["I lost my notebook.", "It's a solid.", "It's a liquid.", "It's in the laboratory."]
       answer: 0
       explain: "\"What's the matter?\" = Ne oldu? Cevap sorunu anlatır."
+      why_wrong:
+        - "\"What's the matter\" neyin var demektir; katı madde sorulmuyor."
+        - "Sıvı cevabı üzgün birine uymaz."
+        - "Yer sorulmuyor; neyin var diye soruluyor."
   - item: U9-014
     card:
       example_en: "It is a fact that the Earth goes round the Sun. In fact, it takes one year."
@@ -124,6 +148,10 @@ steps:
       options: ["Chemistry is the most interesting lesson.", "The Earth goes round the Sun.", "Ice is cold.", "Water freezes at 0 °C."]
       answer: 0
       explain: "\"en ilginç ders\" kişisel görüştür; diğerleri kanıtlanabilir."
+      why_wrong:
+        - "Dünya'nın dönmesi bilimsel gerçektir."
+        - "Buzun soğuk olması gerçektir."
+        - "Suyun donma noktası ölçülmüş bir gerçektir."
     tekrar:
       id: u9d03-014-t
       type: situation
@@ -133,6 +161,10 @@ steps:
       options: ["Gold is a metal.", "Gold is boring.", "Gold is the best colour.", "Gold is ugly."]
       answer: 0
       explain: "Altının metal olması kanıtlanabilir bir bilgidir."
+      why_wrong:
+        - "boring kişisel görüştür."
+        - "\"the best\" kişisel görüştür."
+        - "ugly kişisel görüştür."
   - item: U9-015
     card:
       example_en: "We did an experiment to find out how plants grow."
@@ -156,6 +188,10 @@ steps:
       options: ["For my science project.", "For my dinner plate.", "For my gym bag.", "For my winter coat."]
       answer: 0
       explain: "Uçakların nasıl uçtuğunu öğrenmek bir bilim projesi için olabilir."
+      why_wrong:
+        - "Yemek tabağı uçakları açıklamaz."
+        - "Spor çantası kitap okuma nedeni değildir."
+        - "Kış montu uçaklarla ilgili değildir."
     tekrar:
       id: u9d03-015-t
       type: situation
@@ -165,6 +201,10 @@ steps:
       options: ["I found my keys under the sofa.", "I found out my keys under the sofa.", "I find out my keys under the sofa yesterday.", "I founded my keys under the sofa."]
       answer: 0
       explain: "Kaybolan anahtarı bulmak: found (find'ın geçmişi)."
+      why_wrong:
+        - "Anahtarı bulmak find'dır; find out araştırıp öğrenmektir."
+        - "Yesterday varken find olmaz; find out da uymaz."
+        - "founded kurmaktır; find'ın geçmişi found'dur."
 tips:
   - type: tuzak
     refs: [U9-014]
@@ -180,3 +220,31 @@ notifications:
   morning: "Bugün: tartışma, gözlem, madde, gerçek ve \"find out\" 🔍"
   evening: "\"Fact\" mi, \"opinion\" mı? \"En güzel ders\" hangisi? 🤔"
   review: "\"Find\" ile \"find out\" arasındaki fark ne? 🔎"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U9-011
+    durum: "Murat Bey tahtaya bir soru yazıyor: telefon okula girsin mi? Sınıf bir anda karışıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>Let's {U9-011|discuss} this in groups.</en>" }
+      - { speaker: "Kaan", text: "Kantinde olur mu, hocam?" }
+  - item: U9-012
+    durum: "Bora boğazı ağrıdığı için doktorun karşısında oturuyor."
+    lines:
+      - { speaker: "Doktor", text: "Ağzını aç. <en>Let me {U9-012|examine} your throat.</en>" }
+      - { speaker: "Bora", text: "Akşama davul provam var, olur mu?" }
+      - { speaker: "Doktor", text: "Davulu boğazınla çalmıyorsun herhâlde." }
+  - item: U9-013
+    durum: "Ece üç kabı yan yana koymuş: buz, su, sıcak buhar."
+    lines:
+      - { speaker: "Ece", text: "<en>All of these are {U9-013|matter}.</en>" }
+      - { speaker: "Kaan", text: "Çorbam da mı?" }
+      - { speaker: "Ece", text: "Kaşığın da, sen de." }
+  - item: U9-014
+    durum: "Kantinde Kaan pizza dilimini havaya kaldırıyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>It's a {U9-014|fact}: pizza is the best food.</en>" }
+      - { speaker: "Elif", text: "O senin fikrin. <en>Water freezes at 0 °C: that's a {U9-014|fact}.</en>" }
+  - item: U9-015
+    durum: "Fıstık her gece dokuzda kapıya koşuyor; Duru kapının önüne telefon koyuyor."
+    lines:
+      - { speaker: "Duru", text: "<en>I'm going to {U9-015|find out} why.</en>" }
+      - { speaker: "Duru'nun annesi", text: "Telefona gerek yok. Komşu ona köfte veriyor." }

@@ -31,6 +31,10 @@ steps:
       options: ["scientific", "science", "scientist", "scientifically"]
       answer: 0
       explain: "\"developments\" isminin önüne sıfat gelir: scientific."
+      why_wrong:
+        - "science isimdir; developments'tan önce sıfat gerekir."
+        - "scientist kişidir; sıfat gerekir."
+        - "scientifically zarftır; isimden önce sıfat gelir."
     tekrar:
       id: u9d01-001-t
       type: odd_one_out
@@ -40,6 +44,10 @@ steps:
       options: ["scientist", "science", "scientific", "laboratory"]
       answer: 0
       explain: "Kişiyi anlatan kelime scientist'tir."
+      why_wrong:
+        - "science bir alandır, kişi değil."
+        - "scientific sıfattır, kişi değil."
+        - "laboratory bir yerdir, kişi değil."
   - item: U9-002
     card:
       example_en: "A chemist studies chemistry. Some chemical products are dangerous."
@@ -63,13 +71,24 @@ steps:
       options: ["She is a chemist.", "She is a chef.", "She is a janitor.", "She is a pilot."]
       answer: 0
       explain: "Laboratuvarda kimyasal maddeleri inceleyen kişi kimyagerdir."
+      why_wrong:
+        - "Aşçı laboratuvarda çalışmaz."
+        - "janitor okul binasıyla ilgilenir; kimyasal madde incelemez."
+        - "Pilot uçak kullanır; laboratuvarda çalışmaz."
     tekrar:
       id: u9d01-002-t
-      type: situation
-      prompt: "<en>How do we say the letters \"ch\" in \"chemistry\"?</en>"
-      options: ["like k", "like ch in \"church\"", "like sh", "like j"]
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+      stem: "<en>SCIENCE CLUB TIMETABLE\nMonday: Chemistry – Mrs Aksoy\nWednesday: Physics – Mr Demir\nFriday: Biology – Mrs Tan</en>"
+      options: ["The chemistry lesson is on Monday.", "Mr Demir teaches chemistry.", "The physics lesson is on Friday.", "Mrs Tan teaches physics."]
       answer: 0
-      explain: "chemistry: ch /k/ okunur."
+      explain: "Monday satırında Chemistry yazıyor: kimya dersi pazartesi."
+      why_wrong:
+        - "Mr Demir'in satırında Physics var; kimyayı Mrs Aksoy veriyor."
+        - "Physics Wednesday satırında; Friday'de Biology var."
+        - "Mrs Tan'ın satırında Biology var; fiziği Mr Demir veriyor."
   - item: U9-003
     card:
       example_en: "Physics is difficult for some students. Einstein was a famous physicist."
@@ -92,6 +111,10 @@ steps:
       options: ["Physics is my favourite subject.", "Physics are my favourite subject.", "Physic is my favourite subject.", "Physics were my favourite subject."]
       answer: 0
       explain: "physics tekil kabul edilir: Physics is."
+      why_wrong:
+        - "physics -s ile bitse de tekildir: is."
+        - "physic diye bir ders adı yok; physics denir."
+        - "physics tekildir; were kullanılmaz."
     tekrar:
       id: u9d01-003-t
       type: situation
@@ -101,6 +124,10 @@ steps:
       options: ["He or she is a doctor.", "He or she studies forces and energy.", "He or she cooks meals.", "He or she repairs cars."]
       answer: 0
       explain: "physician = doktor; fizikçi physicist'tir."
+      why_wrong:
+        - "Kuvvet ve enerjiyle uğraşan physicist'tir; physician doktordur."
+        - "Yemek pişirmek aşçının işidir."
+        - "Araba tamiri ustanın işidir."
   - item: U9-004
     card:
       example_en: "Gravity pulls things down to the ground."
@@ -124,6 +151,10 @@ steps:
       options: ["A force that pulls things to the Earth", "A kind of fruit", "A scientist", "A machine"]
       answer: 0
       explain: "Metin gravity'yi nesneleri Dünya'ya çeken kuvvet olarak tanımlıyor."
+      why_wrong:
+        - "Elma örnekti; gravity meyve değildir."
+        - "Bilim insanı Newton'dır; gravity bir kuvvettir."
+        - "Makine değil, doğal bir kuvvettir."
     tekrar:
       id: u9d01-004-t
       type: situation
@@ -133,6 +164,10 @@ steps:
       options: ["Things would float in the air.", "Things would fall faster.", "Everything would get hot.", "Water would disappear."]
       answer: 0
       explain: "Yer çekimi olmasaydı nesneler havada süzülürdü (astronotlar gibi)."
+      why_wrong:
+        - "Yer çekimi olmasaydı daha hızlı değil, hiç düşmezdi."
+        - "Yer çekiminin sıcaklıkla ilgisi yok."
+        - "Su yok olmaz; süzülürdü."
   - item: U9-005
     card:
       example_en: "Astronauts travel to space. There isn't much space in the small room."
@@ -155,6 +190,10 @@ steps:
       options: ["Is there enough space for my bag?", "Rockets fly into space.", "Astronauts travel to space.", "The Earth is a planet in space."]
       answer: 0
       explain: "İlk cümlede space = boş yer; diğerlerinde uzay."
+      why_wrong:
+        - "Burada space uzaydır."
+        - "Burada space uzaydır."
+        - "Burada space uzaydır."
     tekrar:
       id: u9d01-005-t
       type: gap_fill
@@ -165,6 +204,10 @@ steps:
       options: ["space", "gravity", "science", "medicine"]
       answer: 0
       explain: "Mutfakta yer yok: not enough space."
+      why_wrong:
+        - "Mutfakta gravity eksik olmaz; masa için yer gerekir."
+        - "science bilimdir; yer anlamı taşımaz."
+        - "medicine ilaç ya da tıptır."
 tips:
   - type: kelime_ailesi
     refs: [U9-001, U9-002, U9-003]
@@ -180,3 +223,31 @@ notifications:
   morning: "Yeni ünite Science! Bugün: bilim insanı, kimya, fizik, yer çekimi ve uzay 🔬"
   evening: "Physicist mi, physician mı? Hangisi doktor? 🤔"
   review: "\"Space\" her zaman uzay mı demek? 🚀"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U9-001
+    durum: "Okul panosuna yeni bir afiş asılıyor; Kaan yaklaşıp okuyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>Young {U9-001|scientists}</en> arıyorlarmış. Ben de başvurayım." }
+      - { speaker: "Ece", text: "Geçen hafta mikroskobu ters tutan sen değil miydin?" }
+  - item: U9-002
+    durum: "Ece önlüğünü giyiyor; masada renkli tüpler dizili."
+    lines:
+      - { speaker: "Ece", text: "Dokunma! <en>These are {U9-002|chemicals}.</en>" }
+      - { speaker: "Bora", text: "Mavi olan meyve suyu gibi kokuyor." }
+      - { speaker: "Ece", text: "Koklama da!" }
+  - item: U9-003
+    durum: "Kaan potaya üst üste atıyor, top hep çemberden dönüyor."
+    lines:
+      - { speaker: "Selin", text: "<en>It's just {U9-003|physics}.</en> Açıyı değiştir." }
+      - { speaker: "Kaan", text: "Üç aydır antrenman yapıyorum, sen bir açıyla mı çözdün?" }
+  - item: U9-004
+    durum: "Kantinde Bora'nın elindeki tost yere düşüyor, tabii ki peynirli tarafı alta geliyor."
+    lines:
+      - { speaker: "Bora", text: "Neden hep aşağı düşüyor?" }
+      - { speaker: "Elif", text: "<en>Because of {U9-004|gravity}!</en>" }
+      - { speaker: "Bora", text: "Peki neden hep peynirli tarafı?" }
+  - item: U9-005
+    durum: "Gece balkonda küçük bir teleskop var; Bora dedesiyle gökyüzüne bakıyor."
+    lines:
+      - { speaker: "Bora", text: "<en>I want to travel to {U9-005|space}.</en>" }
+      - { speaker: "Dedesi", text: "Git evlat. Davulu da götür; orada ses çıkmaz, rahat ederiz." }

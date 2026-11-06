@@ -1,0 +1,135 @@
+schema_version: 1
+program: lgs
+mode: light
+exam: true                # sınav provası: yeni ifade yok; biyografi, tablo, neden-sonuç, deney sırası
+unit: 9
+day: 10
+status: draft
+title: "Sınav provası: biyografi, tablo, neden-sonuç"
+est_minutes: 8
+new_items: []
+steps: []
+review:
+  - id: u9d10-r01
+    item: U9-038
+    type: text_infer
+    lgs_like: true
+    stem_id: S03
+    prompt: "<en>Which of the following is NOT mentioned in the text?</en>"
+    stem: "<en>Aziz Sancar was born in Mardin in 1946. He studied medicine in İstanbul. Later, he worked at a university in the USA. In 2015, he won the Nobel Prize in Chemistry for his work on DNA.</en>"
+    options: ["The name of his first book", "The place where he was born", "The subject he studied in İstanbul", "The year when he won the prize"]
+    answer: 0
+    explain: "Doğum yeri, okuduğu bölüm ve ödül yılı var; kitap adı yok."
+    why_wrong:
+      - "\"born in Mardin\" metinde yazıyor."
+      - "\"studied medicine\" metinde yazıyor."
+      - "\"In 2015\" metinde yazıyor."
+  - id: u9d10-r02
+    item: U9-036
+    type: table_graph
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+    stem: "<en>INVENTORS\nGutenberg: printing press, about 1450\nBell: telephone, 1876\nThe Wright brothers: aeroplane, 1903</en>"
+    options: ["The aeroplane is the newest invention in the chart.", "Bell invented the printing press.", "Gutenberg invented the telephone in 1876.", "The Wright brothers came before Gutenberg."]
+    answer: 0
+    explain: "En yeni tarih 1903, aeroplane satırında."
+    why_wrong:
+      - "Bell'in satırında telephone var; matbaa Gutenberg'in."
+      - "1876 ve telephone Bell'in satırında."
+      - "1903, 1450'den sonradır; sıra ters kurulmuş."
+  - id: u9d10-r03
+    item: U9-030
+    type: table_graph
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the survey, which of the following is TRUE?</en>"
+    stem: "<en>Class 8B: Which invention can't you live without? (30 students)\nThe internet: 14\nMobile phone: 9\nElectric light: 5\nCar: 2</en>"
+    options: ["More students chose the internet than the mobile phone.", "Fourteen students chose the car.", "Electric light is the most popular answer.", "Nine students chose the internet."]
+    answer: 0
+    explain: "14, 9'dan büyük: interneti seçen daha çok."
+    why_wrong:
+      - "14 sayısı internet satırında; car 2."
+      - "En büyük sayı 14; electric light 5."
+      - "9 sayısı mobile phone satırında; internet 14."
+  - id: u9d10-r04
+    item: U9-037
+    type: synonym
+    lgs_like: true
+    stem_id: S12
+    prompt: "<en>\"Penicillin was discovered by Fleming.\" Which one is CLOSEST in meaning?</en>"
+    options: ["Fleming discovered penicillin.", "Penicillin discovered Fleming.", "Fleming was discovered by penicillin.", "Fleming didn't know about penicillin."]
+    answer: 0
+    explain: "Edilgen cümlenin etkin hâli: keşfeden Fleming."
+    why_wrong:
+      - "Özne ve nesne yer değiştirmiş; penisilin keşfetmez."
+      - "Keşfedilen Fleming değil, penisilindir."
+      - "Keşfeden biri onu bilmiyor olamaz."
+  - id: u9d10-r05
+    item: U9-040
+    type: text_infer
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to the text, what is the RESULT of the printing press?</en>"
+    stem: "<en>Before the printing press, people wrote books by hand, so books were very expensive. Thanks to Gutenberg's machine, books became cheaper. As a result, more people learned to read.</en>"
+    options: ["More people learned to read.", "People wrote more books by hand.", "Books became more expensive.", "Fewer people could buy books."]
+    answer: 0
+    explain: "\"As a result, more people learned to read\" sonucu veriyor."
+    why_wrong:
+      - "Elle yazmak makineden önceki durumdu."
+      - "Metin \"became cheaper\" diyor; tam tersi."
+      - "Kitap ucuzlayınca daha çok kişi alabilir; tam tersi."
+  - id: u9d10-r06
+    item: U9-039
+    type: text_infer
+    lgs_like: true
+    stem_id: S14
+    prompt: "<en>What can we understand about Dr Aksoy?</en>"
+    stem: "<en>Dr Aksoy published her first report in 2020. At the moment, she is working on a new vaccine with her team in Ankara.</en>"
+    options: ["She is working on a vaccine these days.", "She finished the vaccine in 2020.", "She works alone.", "She is writing her first report now."]
+    answer: 0
+    explain: "\"At the moment, she is working\" şu anda yaptığı işi anlatıyor."
+    why_wrong:
+      - "2020'de bitirdiği şey ilk raporuydu; aşı üzerinde hâlâ çalışıyor."
+      - "Metin \"with her team\" diyor."
+      - "İlk rapor 2020'de yayımlandı; bu geçmiş."
+  - id: u9d10-r07
+    item: U9-035
+    type: dialogue_complete
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Ece: My experiment failed again. I want to stop.\nElif: ________ Edison failed many times, too.</en>"
+    options: ["Don't give up! Keep trying.", "You deserve the prize.", "Congratulations on your success!", "I agree. Stop it now."]
+    answer: 0
+    explain: "Elif, Edison'ı örnek vererek yüreklendiriyor."
+    why_wrong:
+      - "Deney başarısız oldu; ödül konuşulmuyor."
+      - "Başarı yok; tebrik uygun değil."
+      - "Edison örneği vazgeçmemek içindir; \"Stop\" onunla çelişir."
+  - id: u9d10-r08
+    item: U9-008
+    type: process_order
+    lgs_like: true
+    stem_id: S07
+    prompt: "<en>What do the students do just before they record the results?</en>"
+    stem: "<en>Our experiment: First, we put ice in two glasses. Then, we put one glass in the sun and the other in the shade. After that, we observe the glasses. Finally, we record the results.</en>"
+    options: ["They observe the glasses.", "They put ice in the glasses.", "They put a glass in the sun.", "They drink the water."]
+    answer: 0
+    explain: "\"After that\" gözlem, \"Finally\" kayıt: kayıttan hemen önce gözlem var."
+    why_wrong:
+      - "Buzu koymak ilk adım: \"First\"."
+      - "Bardağı güneşe koymak ikinci adım: \"Then\"."
+      - "Metinde su içmek yok."
+tips:
+  - type: lgs_taktigi
+    refs: [U9-038]
+    text: "Biyografide önce tarihleri ve yerleri işaretle: soru çoğu zaman onları sorar. \"NOT mentioned\" ise şıkları tek tek metinde ara; bulduğunu ele."
+coach:
+  start: "Sınav provası! LGS'nin bu üniteden sevdiği sorular: biyografi, buluş tablosu, neden-sonuç 📝"
+  end_good: "Tam not! Biyografi de tablo da seni korkutmuyor. Ünite 9 tamam 🏆"
+  end_mixed: "İyi iş! {weak} biraz zorladı; tekrarda yine karşına çıkacak 📝"
+notifications:
+  morning: "Bugün Ünite 9 sınav provası: biyografi, tablo, neden-sonuç 📝"
+  evening: "\"As a result\" gördün mü? Cevap büyük ihtimalle hemen yanında 🤔"
+  review: "Biyografi sorusunda önce neyi işaretlersin? Tarih ve yer!"

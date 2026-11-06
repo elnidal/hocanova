@@ -30,6 +30,10 @@ steps:
       options: ["Describe the picture in two sentences.", "Describe about the picture in two sentences.", "Describe of the picture in two sentences.", "Describe to the picture in two sentences."]
       answer: 0
       explain: "describe'tan sonra edat gelmez."
+      why_wrong:
+        - "describe doğrudan nesne alır; about gelmez."
+        - "describe ile of kullanılmaz."
+        - "describe ile to kullanılmaz."
     tekrar:
       id: u9d09-041-t
       type: situation
@@ -39,6 +43,10 @@ steps:
       options: ["Words that tell us what something is like", "A kind of medicine", "A big prize", "A science fair"]
       answer: 0
       explain: "description = bir şeyin nasıl olduğunu anlatan sözler."
+      why_wrong:
+        - "İlaç medicine'dır."
+        - "Ödül prize'dır."
+        - "Bilim fuarı science fair'dir."
   - item: U9-042
     card:
       example_en: "Several students joined the club. We tried various experiments."
@@ -61,6 +69,10 @@ steps:
       options: ["There are several experiments in the book.", "There is several experiments in the book.", "There are several experiment in the book.", "There are several of experiments in the book."]
       answer: 0
       explain: "several + çoğul isim + are."
+      why_wrong:
+        - "several çoğuldur: There are."
+        - "several sonrası isim çoğul olur: experiments."
+        - "several of arkasından the ister; burada gerekmez."
     tekrar:
       id: u9d09-042-t
       type: synonym
@@ -70,6 +82,10 @@ steps:
       options: ["different", "same", "empty", "few"]
       answer: 0
       explain: "various ≈ different (çeşitli)."
+      why_wrong:
+        - "same aynıdır; tam tersi."
+        - "empty boştur."
+        - "few azdır; çeşit anlamı taşımaz."
   - item: U9-043
     card:
       example_en: "Vaccines reduce the number of sick people."
@@ -93,6 +109,10 @@ steps:
       options: ["Use less energy", "Use more energy", "Buy more lights", "Leave the lights on"]
       answer: 0
       explain: "reduce the energy = enerjiyi azaltmak."
+      why_wrong:
+        - "Afiş azaltmayı istiyor; tam tersi."
+        - "Daha çok lamba daha çok enerji demektir."
+        - "Afiş \"Turn off\" diyor; tam tersi."
     tekrar:
       id: u9d09-043-t
       type: odd_one_out
@@ -102,6 +122,10 @@ steps:
       options: ["increase", "decrease", "lower", "cut"]
       answer: 0
       explain: "reduce (azaltmak) ↔ increase (artırmak)."
+      why_wrong:
+        - "decrease azaltmaktır; eş anlamlı."
+        - "lower düşürmektir; eş anlamlı."
+        - "cut kesmek, azaltmaktır; eş anlamlı."
   - item: U9-044
     card:
       example_en: "Every fingerprint is unique."
@@ -124,6 +148,10 @@ steps:
       options: ["common", "special", "only", "rare"]
       answer: 0
       explain: "unique (benzersiz) ↔ common (sıradan, yaygın)."
+      why_wrong:
+        - "special özeldir; unique'e yakın."
+        - "only tek demektir; unique'e yakın."
+        - "rare nadirdir; unique'e yakın."
     tekrar:
       id: u9d09-044-t
       type: situation
@@ -133,6 +161,10 @@ steps:
       options: ["Your own fingerprint", "A pencil from a pack of 100", "A bus ticket", "A plastic bag"]
       answer: 0
       explain: "Parmak izi kişiye özgüdür: benzersiz."
+      why_wrong:
+        - "Paketten 100 kalem birbirinin aynısıdır."
+        - "Otobüs biletleri birbirinin aynısıdır."
+        - "Plastik poşetler birbirinin aynısıdır."
   - item: U9-045
     card:
       example_en: "Please record the results. He broke the world record."
@@ -155,6 +187,10 @@ steps:
       options: ["Please record the temperature every hour.", "She broke the world record.", "This record is very old.", "I have a record of all my marks."]
       answer: 0
       explain: "İlk cümlede record fiildir (kaydetmek); diğerlerinde isim."
+      why_wrong:
+        - "Burada record isimdir: the world record."
+        - "\"This record\" isimdir."
+        - "\"a record\" isimdir."
     tekrar:
       id: u9d09-045-t
       type: situation
@@ -164,6 +200,10 @@ steps:
       options: ["To do better than the best result before", "To damage a music player", "To lose a notebook", "To stop an experiment"]
       answer: 0
       explain: "break a record = önceki en iyi sonucu geçmek (rekor kırmak)."
+      why_wrong:
+        - "Müzik çalar kırmak anlamında değil."
+        - "Defter kaybetmekle ilgisi yok."
+        - "Deneyi durdurmakla ilgisi yok."
   - item: U9-046
     card:
       example_en: "She realised her mistake and corrected it."
@@ -187,6 +227,10 @@ steps:
       options: ["I just realised that", "I just fixed that", "I just mowed that", "I just folded that"]
       answer: 0
       explain: "\"Ödevimi unuttuğumu yeni fark ettim\": I just realised that …"
+      why_wrong:
+        - "Unuttuğunu fark etmiş; tamir ettiği bir şey yok."
+        - "mow çim biçmektir."
+        - "fold katlamaktır."
     tekrar:
       id: u9d09-046-t
       type: situation
@@ -196,6 +240,10 @@ steps:
       options: ["To understand or notice something", "To make something real", "To cook something", "To paint something"]
       answer: 0
       explain: "realise = farkına varmak, anlamak."
+      why_wrong:
+        - "make real gibi görünse de anlamı fark etmektir."
+        - "Yemekle ilgisi yok."
+        - "Boyamakla ilgisi yok."
 tips:
   - type: tuzak
     refs: [U9-046]
@@ -211,3 +259,37 @@ notifications:
   morning: "Son gün: anlatmak, birkaç, azaltmak, benzersiz, kaydetmek, fark etmek 🔭"
   evening: "\"Describe about\" doğru mu? Neden? 🤔"
   review: "\"Realise\" Türkçedeki \"realize etmek\" mi demek? Hayır! 💡"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U9-041
+    durum: "Murat Bey sınıfa yeni bir yazma görevi veriyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>{U9-041|Describe} your dream room.</en>" }
+      - { speaker: "Kaan", text: "Pota, kanepe, bir de buzdolabı." }
+      - { speaker: "Murat Bey", text: "İngilizce lütfen, Kaan." }
+  - item: U9-042
+    durum: "Sergi salonunda masalar köpük ve tüplerle dolu."
+    lines:
+      - { speaker: "Ece", text: "Bugün <en>we tried {U9-042|various} experiments.</en>" }
+      - { speaker: "Kaan", text: "Tavandaki leke hangisinden?" }
+      - { speaker: "Ece", text: "Yalnız köpüklü olandan." }
+  - item: U9-043
+    durum: "Selin'in babası elektrik faturasını masaya bırakıyor, Emre'nin odasından müzik geliyor."
+    lines:
+      - { speaker: "Selin'in babası", text: "<en>We should {U9-043|reduce} our electricity bill.</en>" }
+      - { speaker: "Emre", text: "Bana bakmayın. Ben yalnız üç hoparlör kullanıyorum." }
+  - item: U9-044
+    durum: "Selin sınıfta parmak izi sunumu yapıyor; Kaan sıranın altında elini saklıyor."
+    lines:
+      - { speaker: "Selin", text: "<en>Every fingerprint is {U9-044|unique}.</en>" }
+      - { speaker: "Kaan", text: "Yani dolaptaki pastada bıraktığım iz de mi?" }
+      - { speaker: "Selin", text: "Evet. Yakalandın." }
+  - item: U9-045
+    durum: "Beden dersinde Ece elinde kronometreyle bekliyor; Kaan çizgide."
+    lines:
+      - { speaker: "Ece", text: "<en>Let's {U9-045|record} your time.</en>" }
+      - { speaker: "Kaan", text: "Kantinde tost bitiyor deyin, görün bakın." }
+  - item: U9-046
+    durum: "Üçüncü dersin sonunda Bora aynanın önünde donup kalıyor."
+    lines:
+      - { speaker: "Bora", text: "<en>I just {U9-046|realised} my T-shirt is inside out!</en>" }
+      - { speaker: "Kaan", text: "Üç saattir söylüyoruz." }

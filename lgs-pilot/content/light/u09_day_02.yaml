@@ -30,6 +30,10 @@ steps:
       options: ["He studies medicine at university.", "Take your medicine twice a day.", "The medicine is on the table.", "I bought some medicine for my cough."]
       answer: 0
       explain: "İlk cümlede medicine = tıp (okunan bölüm); diğerlerinde ilaçtır."
+      why_wrong:
+        - "Burada medicine içilen ilaçtır."
+        - "Masadaki şey ilaçtır; ders değil."
+        - "Öksürük için alınan ilaçtır."
     tekrar:
       id: u9d02-006-t
       type: gap_fill
@@ -40,6 +44,10 @@ steps:
       options: ["medicine", "science", "gravity", "space"]
       answer: 0
       explain: "Doktorun verdiği şey ilaçtır (medicine)."
+      why_wrong:
+        - "Baş ağrısına science verilmez."
+        - "gravity kuvvettir; doktor veremez."
+        - "space uzay ya da boş yerdir."
   - item: U9-007
     card:
       example_en: "Einstein was a genius. She is a brilliant scientist."
@@ -63,6 +71,10 @@ steps:
       options: ["She is extremely clever.", "She is not interested in school.", "She is afraid of exams.", "She is a bad student."]
       answer: 0
       explain: "17 yaşında üniversiteyi bitiren ve beş dil konuşan kişi dahi olarak görülüyor."
+      why_wrong:
+        - "17 yaşında üniversite bitiren okula ilgisiz sayılmaz."
+        - "Metinde sınav korkusu geçmiyor."
+        - "Herkes ona dahi diyor; kötü öğrenci değil."
     tekrar:
       id: u9d02-007-t
       type: synonym
@@ -72,6 +84,10 @@ steps:
       options: ["wonderful", "terrible", "boring", "ordinary"]
       answer: 0
       explain: "a brilliant idea = harika fikir ≈ wonderful."
+      why_wrong:
+        - "terrible korkunçtur; tam tersi."
+        - "boring sıkıcıdır; brilliant övgüdür."
+        - "ordinary sıradandır; brilliant sıra dışıdır."
   - item: U9-008
     card:
       example_en: "The students did an experiment in the laboratory."
@@ -94,16 +110,24 @@ steps:
       options: ["experiment", "experience", "expert", "expression"]
       answer: 0
       explain: "Bilimsel deney: experiment."
+      why_wrong:
+        - "experience tecrübedir; yazılışı benziyor diye tuzak."
+        - "expert uzman kişidir."
+        - "expression ifadedir."
     tekrar:
       id: u9d02-008-t
       type: gap_fill
       lgs_like: true
       stem_id: S12
       prompt: "<en>Which one completes the sentence?</en>"
-      stem: "<en>She has a lot of ________ in teaching. She has taught for twenty years.</en>"
+      stem: "<en>She has a lot of ________ in teaching. She started her job twenty years ago.</en>"
       options: ["experience", "experiment", "expert", "exam"]
       answer: 0
-      explain: "Yirmi yıllık öğretmenlik: deneyim (experience)."
+      explain: "Yirmi yıllık iş: tecrübe, experience."
+      why_wrong:
+        - "experiment deneydir; öğretmenlikte yıllar deney değil, tecrübe kazandırır."
+        - "expert uzman kişidir; \"a lot of\" ile kullanılmaz."
+        - "exam sınavdır; yirmi yıllık işi anlatmaz."
   - item: U9-009
     card:
       example_en: "The result of the experiment was surprising."
@@ -127,6 +151,10 @@ steps:
       options: ["The plant in the sun grew better.", "Both plants died.", "The plant in the dark grew better.", "Both plants stayed the same."]
       answer: 0
       explain: "Güneşteki bitki yeşil ve uzun; karanlıktaki küçük ve sarı."
+      why_wrong:
+        - "Metinde iki bitki de yaşıyor."
+        - "Karanlıktaki küçük ve sarı kalmış; tersi."
+        - "Biri uzamış, öbürü sararmış; aynı kalmamışlar."
     tekrar:
       id: u9d02-009-t
       type: gap_fill
@@ -137,6 +165,10 @@ steps:
       options: ["as a result", "on time", "at once", "in front of"]
       answer: 0
       explain: "Neden–sonuç bağlantısı: as a result (sonuç olarak)."
+      why_wrong:
+        - "on time zamanında demektir; sonucu bildirmez."
+        - "at once hemen demektir; sonucu bildirmez."
+        - "in front of önünde demektir."
   - item: U9-010
     card:
       example_en: "Scientists are working on a new vaccine."
@@ -160,6 +192,10 @@ steps:
       options: ["I'm working on a project.", "I'm working for a hospital.", "I'm working at a bank.", "I'm working in the garden."]
       answer: 0
       explain: "Küçük robot yapıyor: proje üzerinde çalışıyor."
+      why_wrong:
+        - "Hastane robotla ilgili değildir."
+        - "Banka robotla ilgili değildir."
+        - "Bahçe robot yapmakla ilgili değildir."
     tekrar:
       id: u9d02-010-t
       type: gap_fill
@@ -170,6 +206,10 @@ steps:
       options: ["at", "on", "by", "of"]
       answer: 0
       explain: "Çalıştığı yer için work at; üzerinde çalıştığı iş için work on."
+      why_wrong:
+        - "work on bir iş ya da proje içindir; yer için at gerekir."
+        - "by ile yer söylenmez."
+        - "of ile yer söylenmez."
 tips:
   - type: tuzak
     refs: [U9-008]
@@ -185,3 +225,31 @@ notifications:
   morning: "Bugün: tıp, dahi, deney, sonuç ve \"work on\" 🧪"
   evening: "Experiment, experience, expert: farkı söyleyebilir misin? 🤔"
   review: "\"Work on\" ile \"work at\" aynı mı? 🏥"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U9-006
+    durum: "Bora öksürüyor; annesi hastane çıkışı eve bir kutuyla geliyor."
+    lines:
+      - { speaker: "Bora'nın annesi", text: "<en>Take your {U9-006|medicine} after lunch.</en>" }
+      - { speaker: "Bora", text: "Çilekliymiş." }
+      - { speaker: "Bora'nın annesi", text: "Kutuda öyle yazıyor. Çilek hiç görmemiştir." }
+  - item: U9-007
+    durum: "Elif zor bir problemi üç dakikada bitirip kalemini bırakıyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>You're a {U9-007|genius}!</en>" }
+      - { speaker: "Elif", text: "Cevap anahtarı arkada yazıyordu." }
+  - item: U9-008
+    durum: "Selin iki saksı aldı: birini balkona, öbürünü karanlık dolaba koyuyor."
+    lines:
+      - { speaker: "Selin", text: "<en>It's an {U9-008|experiment}.</en> İki hafta bekleyeceğiz." }
+      - { speaker: "Emre", text: "Dolaptaki kazağıma bir şey olur mu?" }
+  - item: U9-009
+    durum: "İki hafta geçti; Selin dolabı açıyor, Emre arkasında bekliyor."
+    lines:
+      - { speaker: "Selin", text: "<en>Look at the {U9-009|result}!</en> Balkondaki uzamış, bu sararmış." }
+      - { speaker: "Emre", text: "Kazağım da sararmış!" }
+  - item: U9-010
+    durum: "Kaan'ın masası kablo ve vidayla dolu; annesi kapıdan bakıyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>I'm {U9-010|working on} a robot.</en>" }
+      - { speaker: "Kaan'ın annesi", text: "Çöpü çıkarabilecek mi?" }
+      - { speaker: "Kaan", text: "O ikinci modelde." }

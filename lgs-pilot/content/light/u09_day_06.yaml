@@ -31,6 +31,10 @@ steps:
       options: ["Cure infections", "Make food", "Clean clothes", "Light a room"]
       answer: 0
       explain: "Metne göre penisilin birçok enfeksiyonu tedavi eden ilk ilaçtı."
+      why_wrong:
+        - "Metin ilaçtan söz ediyor; yiyecekten değil."
+        - "Temizlikle ilgisi yok."
+        - "Işıkla ilgisi yok."
     tekrar:
       id: u9d06-026-t
       type: gap_fill
@@ -41,6 +45,10 @@ steps:
       options: ["heal", "hang", "hurt", "hide"]
       answer: 0
       explain: "Kırık kemik iyileşir: heal."
+      why_wrong:
+        - "hang asmaktır; kemik için olmaz."
+        - "hurt acımaktır; iyileşmenin tersi."
+        - "hide saklamaktır."
   - item: U9-027
     card:
       example_en: "Doctors diagnose the disease and give treatment."
@@ -56,13 +64,18 @@ steps:
       explain: "Sivrisinekle yayılan ciddi hastalık: disease."
     sina:
       id: u9d06-027-s
-      type: situation
+      type: table_graph
       lgs_like: true
-      stem_id: S10
-      prompt: "<en>Which word means \"to find out what illness a person has\"?</en>"
-      options: ["diagnose", "dust", "dry", "diary"]
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+      stem: "<en>WHY DID STUDENTS MISS SCHOOL THIS WINTER?\nFlu: 14 students\nCold: 9 students\nStomach ache: 4 students\nOther diseases: 3 students</en>"
+      options: ["Flu was the most common reason.", "Fourteen students had a cold.", "More students had a stomach ache than a cold.", "Nine students had flu."]
       answer: 0
-      explain: "Hangi hastalık olduğunu belirlemek: diagnose."
+      explain: "En büyük sayı 14, flu satırında."
+      why_wrong:
+        - "14 sayısı flu satırında; cold 9."
+        - "4, 9'dan küçük; karşılaştırma ters kurulmuş."
+        - "9 sayısı cold satırında; flu 14."
     tekrar:
       id: u9d06-027-t
       type: gap_fill
@@ -73,6 +86,10 @@ steps:
       options: ["diseases", "chores", "squares", "islands"]
       answer: 0
       explain: "El yıkamak birçok hastalığı önler."
+      why_wrong:
+        - "El yıkamak ev işlerini önlemez."
+        - "squares kareler ya da meydanlardır."
+        - "islands adalardır."
   - item: U9-028
     card:
       example_en: "The vaccine protects children from the disease."
@@ -96,6 +113,10 @@ steps:
       options: ["They save lives.", "They cause diseases.", "They make food.", "They clean the air."]
       answer: 0
       explain: "Metne göre aşılar milyonlarca hayat kurtarıyor."
+      why_wrong:
+        - "Tam tersi: hastalıktan korurlar."
+        - "Yiyecek yapmazlar."
+        - "Havayı temizlemezler."
     tekrar:
       id: u9d06-028-t
       type: situation
@@ -105,6 +126,10 @@ steps:
       options: ["A medicine that protects people from a disease", "A machine that prints books", "A tool for cooking", "A place for sleeping"]
       answer: 0
       explain: "Aşı, hastalıktan koruyan bir ilaçtır."
+      why_wrong:
+        - "Kitap basan printing press'tir."
+        - "Aşı yemek aleti değildir."
+        - "Aşı bir yer değildir."
   - item: U9-029
     card:
       example_en: "Winning the science fair was a great achievement."
@@ -128,6 +153,10 @@ steps:
       options: ["He won a Nobel Prize.", "He built a bridge.", "He wrote a novel.", "He flew a plane."]
       answer: 0
       explain: "2015 Nobel Kimya Ödülü'nü paylaştı."
+      why_wrong:
+        - "Metinde köprü yok; Nobel Ödülü var."
+        - "Metinde roman yok; DNA çalışması var."
+        - "Metinde uçak yok; kimya ödülü var."
     tekrar:
       id: u9d06-029-t
       type: synonym
@@ -137,6 +166,10 @@ steps:
       options: ["success", "failure", "mess", "duty"]
       answer: 0
       explain: "achievement ≈ success."
+      why_wrong:
+        - "failure başarısızlıktır; tam tersi."
+        - "mess dağınıklıktır."
+        - "duty görevdir."
   - item: U9-030
     card:
       example_en: "She won a Nobel Prize. The best student got an award."
@@ -159,15 +192,24 @@ steps:
       options: ["She won the Nobel Prize in 1903.", "She made the Nobel Prize in 1903.", "She did the Nobel Prize in 1903.", "She played the Nobel Prize in 1903."]
       answer: 0
       explain: "Ödül kazanmak: win a prize."
+      why_wrong:
+        - "Ödül için win kullanılır; make değil."
+        - "Ödül için win kullanılır; do değil."
+        - "Ödül oynanmaz; kazanılır."
     tekrar:
       id: u9d06-030-t
-      type: situation
+      type: table_graph
       lgs_like: true
-      stem_id: S09
-      prompt: "<en>Which one is an award?</en>"
-      options: ["The Nobel Prize", "A pocket money", "A bill", "A recipe"]
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+      stem: "<en>SCIENCE FAIR AWARDS\nBest Idea: Ece\nBest Experiment: Kaan\nBest Poster: Selin\nBest Team: 8B</en>"
+      options: ["Selin won the award for the best poster.", "Kaan won the award for the best idea.", "Ece won the award for the best experiment.", "Class 8A won the team award."]
       answer: 0
-      explain: "Nobel Ödülü bir başarı ödülüdür."
+      explain: "Best Poster satırında Selin var."
+      why_wrong:
+        - "Best Idea satırında Ece var; Kaan'ınki Best Experiment."
+        - "Best Experiment satırında Kaan var; Ece'ninki Best Idea."
+        - "Best Team satırında 8B yazıyor; 8A değil."
 tips:
   - type: tuzak
     refs: [U9-030]
@@ -183,3 +225,31 @@ notifications:
   morning: "Bugün: çare, hastalık, aşı, başarı ve ödül 🏅"
   evening: "Award ile reward aynı şey mi? 🤔"
   review: "\"Diagnose\" ne demek? Doktor ne yapar? 🩺"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U9-026
+    durum: "Bora burnunu çekiyor; annesi önüne bir kâse çorba koyuyor."
+    lines:
+      - { speaker: "Bora'nın annesi", text: "Çorba, uyku, su. <en>That's the best {U9-026|cure}.</en>" }
+      - { speaker: "Bora", text: "Davul yok mu?" }
+      - { speaker: "Bora'nın annesi", text: "Komşular için ilk şart o." }
+  - item: U9-027
+    durum: "Sınıfta herkes arka arkaya hapşırıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>Flu is a common {U9-027|disease} in winter.</en> Ellerinizi yıkayın." }
+      - { speaker: "Kaan", text: "Hocam, yarın hiç gelmesem daha güvenli olmaz mı?" }
+  - item: U9-028
+    durum: "Sağlık odasının önünde sıra var; Kaan'ın yüzü bembeyaz."
+    lines:
+      - { speaker: "Hemşire", text: "<en>It's just a {U9-028|vaccine}.</en> Bir saniye sürer." }
+      - { speaker: "Kaan", text: "Bir saniye çok uzun!" }
+      - { speaker: "Ece", text: "Sahadaki aslana bakın." }
+  - item: U9-029
+    durum: "Murat Bey deneme kâğıtlarını dağıtıyor; Elif'in önünde durup gülümsüyor."
+    lines:
+      - { speaker: "Murat Bey", text: "On soruda on net! <en>That's a great {U9-029|achievement}!</en>" }
+      - { speaker: "Elif", text: "Bunu çerçeveletiyorum, hocam." }
+  - item: U9-030
+    durum: "Okul salonunda tören; Selin'in babası en önde, saatine bakıyor."
+    lines:
+      - { speaker: "Müdür", text: "<en>And the {U9-030|prize} goes to… Selin!</en>" }
+      - { speaker: "Selin'in babası", text: "Tam 3.40. Çok güzel." }

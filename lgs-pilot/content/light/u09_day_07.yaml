@@ -31,6 +31,10 @@ steps:
       options: ["A telescope", "A laptop", "A bike", "A book"]
       answer: 0
       explain: "Afişte ödül teleskop olarak yazıyor."
+      why_wrong:
+        - "Afişte laptop yazmıyor."
+        - "Afişte bisiklet yazmıyor."
+        - "Afişte kitap yazmıyor."
     tekrar:
       id: u9d07-031-t
       type: gap_fill
@@ -41,6 +45,10 @@ steps:
       options: ["take part", "take off", "take out", "take after"]
       answer: 0
       explain: "Yarışmaya katılmak: take part in."
+      why_wrong:
+        - "take off havalanmak ya da çıkarmaktır."
+        - "take out çıkarmaktır."
+        - "take after birine benzemektir."
   - item: U9-032
     card:
       example_en: "Marie Curie made a great contribution to science."
@@ -64,6 +72,10 @@ steps:
       options: ["Her work helped medicine.", "She built the first telephone.", "She discovered America.", "She invented the car."]
       answer: 0
       explain: "Çalışmaları doktorların hastalıkları tedavi etmesine yardım etti."
+      why_wrong:
+        - "Telefon Bell ile bilinir; metinde geçmiyor."
+        - "Metinde Amerika geçmiyor."
+        - "Metinde araba geçmiyor."
     tekrar:
       id: u9d07-032-t
       type: situation
@@ -73,6 +85,10 @@ steps:
       options: ["Everyone can contribute to a cleaner world.", "Everyone can contribute a cleaner world.", "Everyone can contribute at a cleaner world.", "Everyone can contribute on a cleaner world."]
       answer: 0
       explain: "Kalıp: contribute to."
+      why_wrong:
+        - "contribute ile to gerekir."
+        - "contribute ile at kullanılmaz."
+        - "contribute ile on kullanılmaz."
   - item: U9-033
     card:
       example_en: "You worked hard, so you deserve this prize."
@@ -96,6 +112,10 @@ steps:
       options: ["Congratulations! You deserve it.", "I'm sorry to hear that.", "Don't be late!", "What a pity!"]
       answer: 0
       explain: "Kazanan arkadaşı tebrik etmek uygun."
+      why_wrong:
+        - "Kazanan birine üzgünüm denmez."
+        - "Geç kalmanın konuyla ilgisi yok."
+        - "\"What a pity\" kötü habere verilir."
     tekrar:
       id: u9d07-033-t
       type: situation
@@ -105,6 +125,10 @@ steps:
       options: ["A student who worked hard and did a great project", "A student who copied a project", "A student who never came to class", "A student who broke the lab"]
       answer: 0
       explain: "Çok çalışıp harika proje yapan öğrenci ödülü hak eder."
+      why_wrong:
+        - "Kopya çeken ödülü hak etmez."
+        - "Derse gelmeyen ödülü hak etmez."
+        - "Laboratuvarı kıran ödülü hak etmez."
   - item: U9-034
     card:
       example_en: "I really appreciate your help."
@@ -128,6 +152,10 @@ steps:
       options: ["I really appreciate it.", "I really mow it.", "I really iron it.", "I really dust it."]
       answer: 0
       explain: "Defteri verene teşekkür: I really appreciate it."
+      why_wrong:
+        - "mow çim biçmektir; defter biçilmez."
+        - "iron ütülemektir; defter ütülenmez."
+        - "dust toz almaktır; teşekkür bildirmez."
     tekrar:
       id: u9d07-034-t
       type: situation
@@ -137,6 +165,10 @@ steps:
       options: ["I really appreciate it.", "I can't stand it.", "I don't mind.", "I'm afraid not."]
       answer: 0
       explain: "appreciate = takdir etmek, minnettar olmak."
+      why_wrong:
+        - "\"I can't stand it\" dayanamıyorum demektir."
+        - "\"I don't mind\" sorun değil demektir."
+        - "\"I'm afraid not\" ne yazık ki hayır demektir."
   - item: U9-035
     card:
       example_en: "She struggled with maths, but she never gave up."
@@ -160,6 +192,10 @@ steps:
       options: ["He struggled but kept trying.", "He gave up quickly.", "He didn't like experiments.", "He never failed."]
       answer: 0
       explain: "Binlerce deneme yaptı, başarısız olsa da vazgeçmedi."
+      why_wrong:
+        - "Metin \"never gave up\" diyor; tam tersi."
+        - "Binlerce malzeme denedi; deneyleri seviyordu."
+        - "Metin \"failed many times\" diyor."
     tekrar:
       id: u9d07-035-t
       type: situation
@@ -169,6 +205,10 @@ steps:
       options: ["He studied late every night but still found the lesson very difficult.", "He finished the exam in five minutes.", "He won the prize easily.", "He didn't do anything."]
       answer: 0
       explain: "Çok çalışmasına rağmen zorlanmak mücadeleyi anlatır."
+      why_wrong:
+        - "Beş dakikada bitirmek kolaylık gösterir."
+        - "\"Easily\" kolayca demektir; mücadele yok."
+        - "Hiçbir şey yapmayan mücadele etmez."
 tips:
   - type: mini_dilbilgisi
     refs: [U9-032]
@@ -184,3 +224,32 @@ notifications:
   morning: "Bugün: yarışma, katkı, hak etmek, takdir ve mücadele 🏆"
   evening: "\"Contribute\" sonrası hangi edat gelir? 🤔"
   review: "Birine \"Hak ettin!\" demek için İngilizcede ne dersin? 🏅"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U9-031
+    durum: "Duvarda yeni bir afiş var; grup önünde toplanmış."
+    lines:
+      - { speaker: "Duru", text: "<en>Let's {U9-031|take part in} the school {U9-031|competition}.</en>" }
+      - { speaker: "Elif", text: "Birinciye bir teleskop veriyorlar." }
+      - { speaker: "Bora", text: "Davulla ne yapacağız onu?" }
+  - item: U9-032
+    durum: "Sınıf sergisi bitti; Murat Bey herkese teşekkür ediyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>Everyone made a {U9-032|contribution}.</en>" }
+      - { speaker: "Kaan", text: "Ben de alkışladım." }
+      - { speaker: "Murat Bey", text: "Evet Kaan, onu da saydım." }
+  - item: U9-033
+    durum: "Mahalle turnuvası bitti; Cem Abi kupayı Kaan'a uzatıyor."
+    lines:
+      - { speaker: "Cem Abi", text: "Bir ay her sabah buradaydın. <en>You {U9-033|deserve} it.</en>" }
+      - { speaker: "Kaan", text: "Bunu kantine de götürebilir miyim?" }
+  - item: U9-034
+    durum: "Elif hastaydı; Duru ona bütün derslerin defterini getirdi."
+    lines:
+      - { speaker: "Elif", text: "Teşekkürler. <en>I really {U9-034|appreciate} it.</en>" }
+      - { speaker: "Duru", text: "Yalnız çizimlere fazla bakma." }
+  - item: U9-035
+    durum: "Ece matematik defterinin başında saçını çekiştiriyor."
+    lines:
+      - { speaker: "Ece", text: "<en>I {U9-035|struggle} with maths every week.</en>" }
+      - { speaker: "Elif", text: "Ama geçen denemeden iyisin." }
+      - { speaker: "Ece", text: "Çünkü bu sefer soruyu da okudum." }

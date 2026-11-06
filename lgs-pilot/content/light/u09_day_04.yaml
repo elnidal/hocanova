@@ -30,13 +30,24 @@ steps:
       options: ["Knowledge is power.", "Knowledges are power.", "A knowledge is power.", "Knowledge are power."]
       answer: 0
       explain: "knowledge sayılamaz ve tekil fiil alır: Knowledge is power."
+      why_wrong:
+        - "knowledge sayılamaz; çoğul olmaz."
+        - "knowledge ile a kullanılmaz."
+        - "knowledge tekildir: is."
     tekrar:
       id: u9d04-016-t
-      type: odd_one_out
-      prompt: "<en>In which word is the letter \"k\" silent?</en>"
-      options: ["knowledge", "kitchen", "kitten", "kilo"]
+      type: text_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the brochure?</en>"
+      stem: "<en>THE SCIENCE MUSEUM\nGain knowledge about space, the human body and electricity. Watch short films every hour.\nStudents pay half price.\nClosed on Mondays.</en>"
+      options: ["The museum café", "The films", "The price for students", "The closing day"]
       answer: 0
-      explain: "knowledge /ˈnɒlɪdʒ/: k okunmaz."
+      explain: "Broşürde film, öğrenci fiyatı ve kapalı gün var; kafeden söz edilmiyor."
+      why_wrong:
+        - "\"Watch short films every hour\" broşürde yazıyor."
+        - "\"Students pay half price\" broşürde yazıyor."
+        - "\"Closed on Mondays\" broşürde yazıyor."
   - item: U9-017
     card:
       example_en: "I wonder why the sky is blue."
@@ -60,15 +71,24 @@ steps:
       options: ["I wonder too.", "I wander too.", "I wounded too.", "I wore too."]
       answer: 0
       explain: "\"Ben de merak ediyorum\": I wonder too."
+      why_wrong:
+        - "wander dolaşmaktır; wonder ile karışıyor."
+        - "wounded yaralanmıştır."
+        - "wore giymiştir (wear)."
     tekrar:
       id: u9d04-017-t
-      type: situation
+      type: message_infer
       lgs_like: true
-      stem_id: S09
-      prompt: "<en>Which word means \"to walk without a clear direction\"?</en>"
-      options: ["wander", "wonder", "wonderful", "wall"]
+      stem_id: S14
+      prompt: "<en>What can we understand about Ece?</en>"
+      stem: "<en>Ece: I wonder how bees find their way home. I'm going to read about it tonight.</en>"
+      options: ["She wants to learn about bees.", "She knows everything about bees.", "She is afraid of bees.", "She wants to buy some bees."]
       answer: 0
-      explain: "Amaçsız dolaşmak: wander; wonder merak etmektir."
+      explain: "\"I wonder\" ve okuyacak olması: arıları öğrenmek istiyor."
+      why_wrong:
+        - "I wonder biliyorum değil, merak ediyorum demektir."
+        - "Korkudan söz etmiyor; merak ediyor."
+        - "Satın almaktan değil, okumaktan söz ediyor."
   - item: U9-018
     card:
       example_en: "Use a calculator to calculate the total."
@@ -92,6 +112,10 @@ steps:
       options: ["It does maths quickly.", "It makes tea.", "It cleans the floor.", "It tells the weather."]
       answer: 0
       explain: "Metne göre sayıları hızla toplar, çıkarır, çarpar, böler."
+      why_wrong:
+        - "Çay yapan makine su ısıtıcısıdır."
+        - "Yeri süpürge temizler."
+        - "Hava durumunu göstermez; sayı işlemi yapar."
     tekrar:
       id: u9d04-018-t
       type: gap_fill
@@ -102,6 +126,10 @@ steps:
       options: ["calculation", "calculator", "calculate", "calculating"]
       answer: 0
       explain: "\"in the ...\" isim ister: calculation (hesap)."
+      why_wrong:
+        - "calculator makinedir; yapılan iş calculation."
+        - "calculate fiildir; \"the\" sonrası isim gerekir."
+        - "calculating fiil biçimidir; isim gerekir."
   - item: U9-019
     card:
       example_en: "The scientist published her results in a magazine. Gutenberg built the printing press."
@@ -125,15 +153,24 @@ steps:
       options: ["It made books cheaper.", "It made books rarer.", "It stopped people from reading.", "It made paper expensive."]
       answer: 0
       explain: "Metne göre kitapları ucuzlattı ve daha çok kişi okuyabildi."
+      why_wrong:
+        - "Metin \"cheaper\" diyor; kitaplar daha az değil, daha çok oldu."
+        - "Metin \"more people could read\" diyor; tam tersi."
+        - "Metinde pahalı kâğıt geçmiyor."
     tekrar:
       id: u9d04-019-t
-      type: situation
+      type: table_graph
       lgs_like: true
-      stem_id: S09
-      prompt: "<en>What is a printing press?</en>"
-      options: ["A machine that prints many copies of books", "A machine that cooks", "A machine that washes dishes", "A machine that irons clothes"]
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+      stem: "<en>GREAT INVENTIONS\nAbout 1450: printing press\n1876: telephone\n1879: light bulb\n1903: aeroplane</en>"
+      options: ["The printing press is the oldest invention in the chart.", "The aeroplane came before the telephone.", "The telephone came in 1450.", "The light bulb is the newest invention in the chart."]
       answer: 0
-      explain: "Matbaa, kitapların çok sayıda kopyasını basan makinedir."
+      explain: "En eski tarih yaklaşık 1450, printing press satırında."
+      why_wrong:
+        - "1903, 1876'dan sonradır; sıra ters kurulmuş."
+        - "Telefonun tarihi 1876; 1450 printing press'in."
+        - "En yeni tarih 1903 ve aeroplane'in; ampul 1879."
   - item: U9-020
     card:
       example_en: "The light bulb in my room is broken."
@@ -156,6 +193,10 @@ steps:
       options: ["The light bulb", "The telephone", "The printing press", "The vaccine"]
       answer: 0
       explain: "Geceleri ışık veren icat ampuldür."
+      why_wrong:
+        - "Telefon konuşmak içindir."
+        - "Printing press kitap basar."
+        - "Aşı hastalıktan korur."
     tekrar:
       id: u9d04-020-t
       type: gap_fill
@@ -166,6 +207,10 @@ steps:
       options: ["bulb", "bomb", "bank", "bone"]
       answer: 0
       explain: "Edison elektrik ampulüyle (electric bulb) anılır."
+      why_wrong:
+        - "bomb bomba demektir."
+        - "bank banka demektir."
+        - "bone kemik demektir."
 tips:
   - type: tuzak
     refs: [U9-016]
@@ -181,3 +226,31 @@ notifications:
   morning: "Bugün: bilgi, merak, hesap, matbaa ve ampul 💡"
   evening: "\"Knowledges\" diye bir kelime var mı? 🤔"
   review: "Wonder mı, wander mı? Hangisi merak etmek? 🌌"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U9-016
+    durum: "Kütüphaneye yeni kitaplar geldi; Murat Bey kutuyu masaya koyuyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>{U9-016|Knowledge} is power.</en>" }
+      - { speaker: "Kaan", text: "Hocam, güç için tost yetmiyor mu?" }
+  - item: U9-017
+    durum: "Teneffüste Elif başını kaldırmış gökyüzüne bakıyor."
+    lines:
+      - { speaker: "Elif", text: "<en>I {U9-017|wonder} why the sky is blue.</en>" }
+      - { speaker: "Duru", text: "Ben de Fıstık neden her şeye havlıyor, onu." }
+  - item: U9-018
+    durum: "Bora kantinde tost, ayran ve çikolatayı tezgâha diziyor."
+    lines:
+      - { speaker: "Bora", text: "<en>Can you {U9-018|calculate} the total?</en>" }
+      - { speaker: "Ece", text: "Gerek yok. Cebinde üç lira var, sonuç belli." }
+  - item: U9-019
+    durum: "Okul dergisinin yeni sayısı dağıtılıyor; Selin eve koşarak geliyor."
+    lines:
+      - { speaker: "Selin", text: "<en>They {U9-019|published} my story in the school magazine!</en>" }
+      - { speaker: "Emre", text: "Benim rap sözlerimi koymadılar." }
+      - { speaker: "Selin", text: "Dergi sessizdir, Emre." }
+  - item: U9-020
+    durum: "Sınıfın tavanındaki lamba yanıp sönüyor; Yılmaz Amca merdivenle geliyor."
+    lines:
+      - { speaker: "Yılmaz Amca", text: "<en>The {U9-020|light bulb} is broken.</en>" }
+      - { speaker: "Kaan", text: "Ders iptal mi?" }
+      - { speaker: "Yılmaz Amca", text: "İki dakikaya yanar, otur." }

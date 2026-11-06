@@ -30,6 +30,10 @@ steps:
       options: ["Fleming discovered penicillin in 1928.", "Fleming invented penicillin in 1928.", "Fleming discover penicillin in 1928.", "Fleming discovering penicillin in 1928."]
       answer: 0
       explain: "Penisilin zaten doğada vardı; bulunmuştur: discovered. Yıl için in 1928."
+      why_wrong:
+        - "Penisilin keşfedilir; invented makine gibi şeyler içindir."
+        - "1928 geçmiştir; discovered gerekir."
+        - "discovering tek başına yüklem olmaz."
     tekrar:
       id: u9d08-036-t
       type: dialogue_complete
@@ -40,6 +44,10 @@ steps:
       options: ["Who invented the telephone?", "Who did invent the telephone?", "Who invent the telephone?", "Who inventing the telephone?"]
       answer: 0
       explain: "Özne soruluyorsa: Who invented …?"
+      why_wrong:
+        - "Who özne iken did kullanılmaz."
+        - "Geçmiş zaman gerekir: invented."
+        - "inventing tek başına yüklem olmaz."
   - item: U9-037
     card:
       example_en: "The telephone was invented by Bell in 1876."
@@ -62,6 +70,10 @@ steps:
       options: ["The telephone was invented by Bell.", "The telephone invented Bell.", "Bell was invented by the telephone.", "The telephone is inventing Bell."]
       answer: 0
       explain: "Edilgen: The telephone was invented by Bell."
+      why_wrong:
+        - "Telefon Bell'i icat edemez; özne ve nesne karışmış."
+        - "Bell icat edilmedi; icat eden o."
+        - "Telefon bir şey icat etmez; zaman da yanlış."
     tekrar:
       id: u9d08-037-t
       type: gap_fill
@@ -72,6 +84,10 @@ steps:
       options: ["was discovered", "discovered", "was discover", "discovering"]
       answer: 0
       explain: "Penisilin Fleming tarafından keşfedildi: was discovered."
+      why_wrong:
+        - "Penisilin keşfetmez, keşfedilir; was gerekir."
+        - "was'tan sonra discovered gelir."
+        - "discovering tek başına yüklem olmaz."
   - item: U9-038
     card:
       example_en: "Marie Curie was born in 1867. She died in 1934 at the age of 66."
@@ -95,15 +111,24 @@ steps:
       options: ["In 1727", "In 1643", "At the age of 18", "In a small village"]
       answer: 0
       explain: "Metne göre 1727'de öldü (passed away)."
+      why_wrong:
+        - "1643 doğum yılıdır."
+        - "18 üniversiteye gittiği yaştır."
+        - "Köy büyüdüğü yerdir; soru ne zaman diyor."
     tekrar:
       id: u9d08-038-t
-      type: situation
+      type: text_infer
       lgs_like: true
-      stem_id: S09
-      prompt: "<en>What does \"pass away\" mean?</en>"
-      options: ["die", "go home", "walk past", "fall asleep"]
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the text?</en>"
+      stem: "<en>Marie Curie was born in Warsaw in 1867. She moved to Paris to study physics. She won two Nobel Prizes. She passed away in 1934 at the age of 66.</en>"
+      options: ["The names of her children", "The place where she was born", "The number of her Nobel Prizes", "The year when she passed away"]
       answer: 0
-      explain: "pass away = ölmek (kibar söyleyiş)."
+      explain: "Doğum yeri, ödül sayısı ve ölüm yılı var; çocuklarının adları yok."
+      why_wrong:
+        - "\"born in Warsaw\" metinde yazıyor."
+        - "\"two Nobel Prizes\" metinde yazıyor."
+        - "\"passed away in 1934\" metinde yazıyor."
   - item: U9-039
     card:
       example_en: "Scientists are working on a new vaccine at the moment."
@@ -127,6 +152,10 @@ steps:
       options: ["discovered", "is discovering", "has discover", "discovering"]
       answer: 0
       explain: "in 1928 = geçmiş: discovered."
+      why_wrong:
+        - "In 1928 geçmiştir; şimdiki zaman olmaz."
+        - "Geçmiş tarih varken bu yapı kullanılmaz; biçimi de yanlış."
+        - "discovering tek başına yüklem olmaz."
     tekrar:
       id: u9d08-039-t
       type: situation
@@ -136,6 +165,10 @@ steps:
       options: ["She is writing a report at the moment.", "She wrote a report in 1999.", "She was writing a report last night.", "She wrote a report yesterday."]
       answer: 0
       explain: "at the moment = şu anda: Present Continuous."
+      why_wrong:
+        - "1999 geçmiştir."
+        - "\"last night\" geçmiştir."
+        - "yesterday geçmiştir."
   - item: U9-040
     card:
       example_en: "It rained a lot, so the match was cancelled. Because of the rain, we stayed at home."
@@ -159,6 +192,10 @@ steps:
       options: ["Thanks to", "Because", "So", "Although"]
       answer: 0
       explain: "Olumlu sonuç ve isim: Thanks to the new vaccine."
+      why_wrong:
+        - "Because arkasından cümle ister; burada isim var."
+        - "So cümle başında isimle kullanılmaz."
+        - "Although zıtlık bildirir; burada olumlu sonuç var."
     tekrar:
       id: u9d08-040-t
       type: gap_fill
@@ -169,6 +206,10 @@ steps:
       options: ["so", "because of", "thanks to", "because"]
       answer: 0
       explain: "Sonucu bağlayan: so (bu yüzden)."
+      why_wrong:
+        - "because of isim ister; arkadan cümle geliyor."
+        - "thanks to isim ister; arkadan cümle geliyor."
+        - "because nedeni bildirir; burada sonuç gerekir."
 tips:
   - type: tuzak
     refs: [U9-036, U9-004, U9-020]
@@ -184,3 +225,30 @@ notifications:
   morning: "Bugün: kim icat etti, kim keşfetti, doğdu, şimdi ve neden-sonuç 📜"
   evening: "\"Who did invent\" mi, \"Who invented\" mi? 🤔"
   review: "Invent mi, discover mı? Penisilin hangisi? 🔬"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U9-036
+    durum: "Sınıfta bilgi oyunu var; Murat Bey Kaan'a dönüyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>{U9-036|Who invented} the telephone?</en>" }
+      - { speaker: "Kaan", text: "Bilmiyorum, hocam ama şarj kablosunu hiç düşünmemiş." }
+  - item: U9-037
+    durum: "Murat Bey tahtaya kocaman bir tarih yazıyor: 1876."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>The telephone {U9-037|was invented by} Bell.</en>" }
+      - { speaker: "Bora", text: "Yani benim yanlış numara da onun eseri." }
+  - item: U9-038
+    durum: "Selin dedesinin bağlamasını akort etmesini izliyor."
+    lines:
+      - { speaker: "Dedesi", text: "<en>I {U9-038|was born in} a small village.</en> Bağlamayı orada tanıdım." }
+      - { speaker: "Selin", text: "Kaç yıl önce, dede?" }
+      - { speaker: "Dedesi", text: "Bağlamaya sor, o benden yaşlı." }
+  - item: U9-039
+    durum: "Annesi kapıdan sesleniyor; Kaan'ın odasından tribün sesleri geliyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>I'm studying {U9-039|at the moment}.</en>" }
+      - { speaker: "Kaan'ın annesi", text: "Ders kitabın gol de atıyor demek!" }
+  - item: U9-040
+    durum: "Elif deneme kâğıdını Duru'nun gözüne tutuyor."
+    lines:
+      - { speaker: "Elif", text: "<en>{U9-040|Thanks to} your notes, I passed!</en>" }
+      - { speaker: "Duru", text: "Bana bir dondurma borcun var." }

@@ -30,6 +30,10 @@ steps:
       options: ["Artificial intelligence helps computers learn.", "Natural intelligence helps computers learn.", "Artifical intelligence helps computers learn.", "Artificially intelligence helps computers learn."]
       answer: 0
       explain: "Doğru terim ve yazım: artificial intelligence."
+      why_wrong:
+        - "Bilgisayarların zekâsı doğal değil, yapaydır."
+        - "Doğru yazılışı artificial'dır."
+        - "artificially zarftır; isimden önce sıfat gerekir."
     tekrar:
       id: u9d05-021-t
       type: situation
@@ -39,6 +43,10 @@ steps:
       options: ["A virtual classroom", "A paper map", "A real garden", "A wooden desk"]
       answer: 0
       explain: "Sanal sınıf yalnızca bilgisayar ortamında vardır (virtual)."
+      why_wrong:
+        - "Kâğıt harita elle tutulur."
+        - "Gerçek bahçe elle tutulur."
+        - "Tahta sıra elle tutulur."
   - item: U9-022
     card:
       example_en: "He founded a company in 1990."
@@ -61,6 +69,10 @@ steps:
       options: ["He founded a company.", "He found a company.", "He finds a company.", "He is finding a company."]
       answer: 0
       explain: "Şirket kurmak: found (founded). found = find'ın geçmişi (bulmak)."
+      why_wrong:
+        - "found burada find'ın geçmişi olur: buldu demektir."
+        - "finds bulur demektir."
+        - "finding bulma demektir."
     tekrar:
       id: u9d05-022-t
       type: gap_fill
@@ -71,6 +83,10 @@ steps:
       options: ["found", "founded", "finded", "founding"]
       answer: 0
       explain: "Bir madeni parayı bulmak: find – found."
+      why_wrong:
+        - "founded kurmaktır; bahçede para kurulmaz."
+        - "find düzensizdir; finded olmaz."
+        - "founding kurma demektir."
   - item: U9-023
     card:
       example_en: "The mechanic fixed my bike. Can you repair this radio?"
@@ -94,6 +110,10 @@ steps:
       options: ["Let me see. I can repair it.", "Let me see. I can eat it.", "Let me see. I can drink it.", "Let me see. I can water it."]
       answer: 0
       explain: "Çalışmayan TV için tamir etmek uygun."
+      why_wrong:
+        - "Televizyon yenmez."
+        - "Televizyon içilmez."
+        - "Televizyon sulanmaz."
     tekrar:
       id: u9d05-023-t
       type: synonym
@@ -103,6 +123,10 @@ steps:
       options: ["fix", "break", "lose", "hide"]
       answer: 0
       explain: "repair ≈ fix."
+      why_wrong:
+        - "break kırmaktır; tam tersi."
+        - "lose kaybetmektir."
+        - "hide saklamaktır."
   - item: U9-024
     card:
       example_en: "She translated the book from English into Turkish."
@@ -126,6 +150,10 @@ steps:
       options: ["Wait a moment.", "Close the door.", "Sing a song.", "Wash the dishes."]
       answer: 0
       explain: "Rehber levhayı çevirecek; önce \"bir dakika bekle\" demesi uygun."
+      why_wrong:
+        - "Kapıyı kapatmak tabelayı açıklamaz."
+        - "Şarkı söylemek tabelayı açıklamaz."
+        - "Bulaşığın konuyla ilgisi yok."
     tekrar:
       id: u9d05-024-t
       type: gap_fill
@@ -136,6 +164,10 @@ steps:
       options: ["translate", "translated", "translator", "translation"]
       answer: 0
       explain: "Please + fiil: translate."
+      why_wrong:
+        - "Please'ten sonra fiil yalın gelir."
+        - "translator kişidir; fiil gerekir."
+        - "translation isimdir; fiil gerekir."
   - item: U9-025
     card:
       example_en: "The printing press was a revolutionary invention."
@@ -159,6 +191,10 @@ steps:
       options: ["It changed the way people travelled.", "It was very cheap.", "It was made of paper.", "It was invented by a chef."]
       answer: 0
       explain: "Metne göre insanların seyahat biçimini değiştirdi."
+      why_wrong:
+        - "Metinde ucuzluktan söz edilmiyor."
+        - "Kâğıttan yapıldığı yazmıyor."
+        - "Mucitleri Wright kardeşlerdir; aşçı değil."
     tekrar:
       id: u9d05-025-t
       type: situation
@@ -168,6 +204,10 @@ steps:
       options: ["A very new and important invention that changes things", "A very old invention", "A very small invention", "A very cheap invention"]
       answer: 0
       explain: "revolutionary = her şeyi değiştiren yeni ve önemli."
+      why_wrong:
+        - "Eski olması devrim niteliğini anlatmaz."
+        - "Küçük olması devrim niteliğini anlatmaz."
+        - "Ucuz olması devrim niteliğini anlatmaz."
 tips:
   - type: tuzak
     refs: [U9-022]
@@ -183,3 +223,32 @@ notifications:
   morning: "Bugün: yapay, sanal, kurmak, tamir, çeviri ve çığır açan! 🔧"
   evening: "\"Found\" hem bulmak hem kurmak mı? 🤔"
   review: "Yapay zekâ İngilizcede nasıl denir? 🤖"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U9-021
+    durum: "Ece çiçekleri yine susuz bıraktı; babası masaya yeni bir vazo koyuyor."
+    lines:
+      - { speaker: "Ece'nin babası", text: "<en>These are {U9-021|artificial} flowers.</en> Su istemezler." }
+      - { speaker: "Ece", text: "Sonunda anlaşabileceğim çiçekler!" }
+  - item: U9-022
+    durum: "Prova arasında kimin en eski üye olduğu konuşuluyor."
+    lines:
+      - { speaker: "Bora", text: "<en>I {U9-022|founded} this band!</en>" }
+      - { speaker: "Duru", text: "Adını bile senin yanlış numaran koydu." }
+  - item: U9-023
+    durum: "Selin'in bisikletinin zinciri çıktı; babası kollarını sıvıyor."
+    lines:
+      - { speaker: "Selin'in babası", text: "<en>I can {U9-023|fix} it in five minutes.</en>" }
+      - { speaker: "Selin", text: "Tam beş mi?" }
+      - { speaker: "Selin'in babası", text: "Beş. Dört değil, altı değil." }
+  - item: U9-024
+    durum: "Sokakta bir turist duvardaki yazıyı gösteriyor, kolu da duvara dayalı."
+    lines:
+      - { speaker: "Turist", text: "<en>What does this sign say?</en>" }
+      - { speaker: "Elif", text: "Bir saniye. <en>I can {U9-024|translate} it.</en>" }
+      - { speaker: "Kaan", text: "Islak boya yazıyor. Kolunuza bakın." }
+  - item: U9-025
+    durum: "Murat Bey eski, kablolu bir telefonun fotoğrafını gösteriyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>This was a {U9-025|revolutionary} invention.</en>" }
+      - { speaker: "Kaan", text: "Oyun yok, kamera yok. Neyi değiştirdi ki?" }
+      - { speaker: "Murat Bey", text: "Uzaktaki sesi yanına getirdi, Kaan." }
