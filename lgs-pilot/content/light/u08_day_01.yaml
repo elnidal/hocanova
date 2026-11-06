@@ -31,6 +31,10 @@ steps:
       options: ["Only in the afternoon.", "Yes, all day.", "No, I'm free in the morning.", "Yes, I'm going to the beach in the morning."]
       answer: 0
       explain: "Selin sabah ev işi yapacak; bu yüzden yalnızca öğleden sonra müsait."
+      why_wrong:
+        - "Selin sabah ev işi yapacak; bütün gün boş değil."
+        - "Sabah ev işi varken \"free in the morning\" cümlenin devamıyla çelişir."
+        - "Sabah ev işi yapacaksa aynı anda plajda olamaz."
     tekrar:
       id: u8d01-001-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["Washing the dishes", "Watching a film", "Playing basketball", "Listening to music"]
       answer: 0
       explain: "Bulaşık yıkamak bir ev işidir; diğerleri boş zaman etkinliğidir."
+      why_wrong:
+        - "Film izlemek boş zaman etkinliğidir, ev işi değil."
+        - "Basketbol oynamak spordur, ev işi değil."
+        - "Müzik dinlemek boş zaman etkinliğidir, ev işi değil."
   - item: U8-002
     card:
       example_en: "Everyone in our family has a task. My duty is to water the plants."
@@ -63,6 +71,10 @@ steps:
       options: ["Zeynep", "Ali", "Dad", "Mum"]
       answer: 0
       explain: "Yemeği Zeynep pişiriyor."
+      why_wrong:
+        - "Ali arabayı yıkıyor: \"washes the car\"."
+        - "Dad alışverişi yapıyor: \"does the shopping\"."
+        - "Mum notu yazan kişi; yemek işi notta Zeynep'e verilmiş."
     tekrar:
       id: u8d01-002-t
       type: synonym
@@ -72,6 +84,10 @@ steps:
       options: ["job", "gift", "rule", "holiday"]
       answer: 0
       explain: "task ≈ job (görev, iş)."
+      why_wrong:
+        - "gift hediye demektir; task yapılacak bir iştir."
+        - "rule kural demektir; task yapılacak bir iştir."
+        - "holiday tatildir; task bunun tersine bir iştir."
   - item: U8-003
     card:
       example_en: "Dad does the grocery shopping every Friday."
@@ -95,6 +111,10 @@ steps:
       options: ["I'll do the grocery shopping.", "I'll go to the cinema.", "I'll call the doctor.", "I'll write a letter."]
       answer: 0
       explain: "Yumurta ve meyve almak market alışverişidir."
+      why_wrong:
+        - "Sinema yumurta ve meyve eksiğini çözmez."
+        - "Doktoru aramanın evdeki eksiklerle ilgisi yok."
+        - "Mektup yazmak yumurta ve meyve getirmez."
     tekrar:
       id: u8d01-003-t
       type: gap_fill
@@ -105,6 +125,10 @@ steps:
       options: ["grocery", "chore", "cooker", "dust"]
       answer: 0
       explain: "Ekmek, süt, yumurta için yapılan alışveriş: grocery shopping."
+      why_wrong:
+        - "chore ev işidir; \"chore shopping\" diye bir kalıp yok."
+        - "cooker ocak ya da fırındır; alışverişle ilgisi yok."
+        - "dust tozdur; ekmek ve süt alışverişini anlatmaz."
   - item: U8-004
     card:
       example_en: "My mother is a good cook. She cooks dinner every evening."
@@ -127,6 +151,10 @@ steps:
       options: ["The cook is making dinner in the kitchen.", "The cooker is making dinner in the kitchen.", "The cooked is making dinner in the kitchen.", "The cooking is making dinner in the kitchen."]
       answer: 0
       explain: "Yemek yapan kişi cook'tur; cooker ocak/fırındır."
+      why_wrong:
+        - "cooker bir cihazdır; yemek yapan kişi değildir."
+        - "cooked fiilin geçmiş biçimidir; özne olamaz."
+        - "cooking yemek yapma eylemidir; yemek yapan kişi değildir."
     tekrar:
       id: u8d01-004-t
       type: situation
@@ -136,6 +164,10 @@ steps:
       options: ["A machine with hot plates used for cooking", "A person who cooks in a restaurant", "A big bowl for soup", "A kind of vegetable"]
       answer: 0
       explain: "cooker = pişirme cihazı (ocak/fırın); aşçı cook'tur."
+      why_wrong:
+        - "Yemek yapan kişi cook'tur; cooker bir cihazdır."
+        - "Çorba kâsesi bowl'dur; cooker değil."
+        - "cooker yiyecek değil, mutfak cihazıdır."
   - item: U8-005
     card:
       example_en: "Please set the table. Dinner is ready."
@@ -159,6 +191,10 @@ steps:
       options: ["Let me set the table.", "Let me clear the table.", "Let me do the laundry.", "Let me take out the rubbish."]
       answer: 0
       explain: "Tabak ve çatalları masaya koymak sofrayı kurmaktır; clear the table yemekten sonra toplamaktır."
+      why_wrong:
+        - "clear the table yemekten sonra toplamaktır; yemek daha yenmedi."
+        - "Çamaşırın tabak ve çatalla ilgisi yok."
+        - "Çöpü çıkarmak tabakları masaya koymak değildir."
     tekrar:
       id: u8d01-005-t
       type: situation
@@ -168,6 +204,10 @@ steps:
       options: ["set the table", "clear the table", "wash the table", "break the table"]
       answer: 0
       explain: "Yemekten önce sofra hazırlamak: set the table."
+      why_wrong:
+        - "clear the table yemekten sonra masayı toplamaktır."
+        - "Masayı yıkamak tabak koymak anlamına gelmez."
+        - "break kırmak demektir; sofra hazırlığıyla ilgisi yok."
 tips:
   - type: tuzak
     refs: [U8-004]
@@ -183,3 +223,29 @@ notifications:
   morning: "Yeni ünite Chores! Bugün: ev işleri, görev, market ve sofra 🧤"
   evening: "\"Cook\" aşçı mı, ocak mı? \"Cooker\" ise? 🍳"
   review: "Ev işleri için hangi fiil: do mu, make mi? 🤔"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U8-001
+    durum: "Cumartesi sabahı Selin'in babası buzdolabına uzun bir liste asıyor; Emre listeyi görünce odasına doğru kayboluyor."
+    lines:
+      - { speaker: "Selin", text: "Emre, nereye? Bugün herkes <en>{U8-001|household chores}</en> için evde!" }
+      - { speaker: "Selin'in babası", text: "Liste uzun ama öğlene biter. Sonra da dondurma." }
+  - item: U8-002
+    durum: "Murat Bey tahtaya yeni bir proje yazıyor; Kaan elindeki kalemi bırakıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>Your {U8-002|assignment} is a short poster about your home.</en> Cuma günü isterim." }
+      - { speaker: "Kaan", text: "Cuma mı? Hocam, benim poster daha kâğıdını bile seçmedi!" }
+  - item: U8-003
+    durum: "Ece'nin annesi kapıda elinde bir listeyle; buzdolabında yalnız bir limon kaldı."
+    lines:
+      - { speaker: "Ece'nin annesi", text: "Süt yok, yumurta yok, ekmek yok. <en>Let's {U8-003|do the grocery shopping}!</en>" }
+      - { speaker: "Ece", text: "Arabayı bu sefer ben iteceğim. Çikolata rafının önünden de geçeriz, değil mi?" }
+  - item: U8-004
+    durum: "Bora mutfakta; tencereden garip bir koku yükseliyor."
+    lines:
+      - { speaker: "Bora", text: "Annem bu gece nöbette, merak etme dede. <en>I can {U8-004|cook} dinner!</en>" }
+      - { speaker: "Dedesi", text: "Ocağı kapat evlat, ben pideciyi arıyorum." }
+  - item: U8-005
+    durum: "Misafirlere on dakika var; Duru'nun annesi mutfaktan sesleniyor, tabaklar hâlâ dolapta."
+    lines:
+      - { speaker: "Duru'nun annesi", text: "Duru, geliyorlar! <en>Please {U8-005|set the table}.</en>" }
+      - { speaker: "Duru", text: "Tamam, tamam. Çatal solda mıydı, sağda mı?" }

@@ -31,6 +31,10 @@ steps:
       options: ["I can lend you mine.", "I can borrow you mine.", "I can lend from you mine.", "I can borrow to you mine."]
       answer: 0
       explain: "Kalemi veren kişi lend kullanır: lend you mine."
+      why_wrong:
+        - "borrow ödünç almaktır; veren kişi lend der."
+        - "lend ile from kullanılmaz; \"lend you\" denir."
+        - "borrow ile to kullanılmaz; veren kişi lend der."
     tekrar:
       id: u8d07-031-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["Can you lend me your bike?", "Can you borrow me your bike?", "Can you lend from me your bike?", "Can you borrow to me your bike?"]
       answer: 0
       explain: "Bisikleti verecek kişiden istenir: lend me."
+      why_wrong:
+        - "borrow ödünç almaktır; karşındakinden vermesini istiyorsan lend me."
+        - "lend ile from kullanılmaz."
+        - "borrow to kalıbı yoktur."
   - item: U8-032
     card:
       example_en: "Elif keeps a diary and writes in it every night."
@@ -55,13 +63,18 @@ steps:
       explain: "Gününü yazdığı defter: diary."
     sina:
       id: u8d07-032-s
-      type: gap_fill
+      type: message_infer
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which word means \"a book where you write about your day\"?</en>"
-      options: ["diary", "dairy", "daily", "dairs"]
+      stem_id: S14
+      prompt: "<en>What can we understand from this page?</en>"
+      stem: "<en>Dear Diary, today was a long day. I borrowed Duru's notes, tidied my room and did my homework. I write here every night because it helps me relax. Elif</en>"
+      options: ["Elif writes in her diary every night.", "Elif lent her notes to Duru.", "Elif didn't do her homework.", "Elif writes in her diary once a week."]
       answer: 0
-      explain: "diary = günlük defteri. dairy süt ürünleridir."
+      explain: "\"I write here every night\": Elif günlüğünü her gece yazıyor."
+      why_wrong:
+        - "\"Borrowed\" ödünç almak demektir; notları Duru'dan alan Elif, tam tersi."
+        - "Elif \"did my homework\" diyor; ödevini yapmış."
+        - "\"Every night\" her gece demektir; haftada bir değil."
     tekrar:
       id: u8d07-032-t
       type: situation
@@ -71,6 +84,10 @@ steps:
       options: ["I keep a diary and write in it every night.", "I keep a dairy and write in it every night.", "I keep a daily and write in it every night.", "I keep a dairies and write in it every night."]
       answer: 0
       explain: "Kalıp: keep a diary."
+      why_wrong:
+        - "dairy süt ürünleridir; diary ile harf sırası karışıyor."
+        - "daily günlük (sıfat) ya da gazetedir; \"keep a diary\" kalıbı değil."
+        - "dairies çoğuldur ve a ile kullanılmaz; anlamı da süt ürünleridir."
   - item: U8-033
     card:
       example_en: "We bought new furniture for the living room: a sofa and a table."
@@ -93,6 +110,10 @@ steps:
       options: ["We need some new furniture.", "We need some new furnitures.", "We need a new furnitures.", "We need many furniture."]
       answer: 0
       explain: "Sayılamaz isim: some new furniture."
+      why_wrong:
+        - "furniture sayılamaz; çoğul eki almaz."
+        - "furniture ne a alır ne de çoğul eki."
+        - "furniture sayılamaz; many ile kullanılmaz."
     tekrar:
       id: u8d07-033-t
       type: odd_one_out
@@ -102,6 +123,10 @@ steps:
       options: ["a spoon", "a sofa", "a wardrobe", "a desk"]
       answer: 0
       explain: "Kaşık mutfak eşyasıdır; kanepe, gardırop ve masa mobilyadır."
+      why_wrong:
+        - "sofa kanepedir; mobilyadır."
+        - "wardrobe gardıroptur; mobilyadır."
+        - "desk çalışma masasıdır; mobilyadır."
   - item: U8-034
     card:
       example_en: "I'm responsible for taking out the garbage. Ece is in charge of the plants."
@@ -125,6 +150,10 @@ steps:
       options: ["Selin", "Kaan", "Dad", "Mum"]
       answer: 0
       explain: "Çizelgeye göre bulaşıktan Selin sorumlu."
+      why_wrong:
+        - "Kaan'ın satırında çöp var: \"taking out the garbage\"."
+        - "Dad'in satırında alışveriş var: \"shopping\"."
+        - "Mum'ın satırında yemek var: \"cooking\"."
     tekrar:
       id: u8d07-034-t
       type: gap_fill
@@ -135,6 +164,10 @@ steps:
       options: ["of", "for", "to", "with"]
       answer: 0
       explain: "Kalıp: be in charge of."
+      why_wrong:
+        - "\"in charge of\" kalıptır; for \"responsible for\" ile kullanılır."
+        - "in charge ile to kullanılmaz."
+        - "in charge ile with kullanılmaz."
   - item: U8-035
     card:
       example_en: "I have to tidy my room every day. You must finish your homework."
@@ -158,6 +191,10 @@ steps:
       options: ["I have to look after my little brother.", "I has to look after my little brother.", "I must to look after my little brother.", "I having to look after my little brother."]
       answer: 0
       explain: "I ile have to kullanılır; must'tan sonra to gelmez."
+      why_wrong:
+        - "I ile has değil have kullanılır."
+        - "must ile to kullanılmaz."
+        - "Cümlede çekimli fiil gerekir; \"I having\" olmaz."
     tekrar:
       id: u8d07-035-t
       type: situation
@@ -167,6 +204,10 @@ steps:
       options: ["She has to do the washing up.", "She have to do the washing up.", "She has to does the washing up.", "She must to do the washing up."]
       answer: 0
       explain: "She + has to + fiilin yalın hâli."
+      why_wrong:
+        - "She ile have değil has kullanılır."
+        - "has to'dan sonra fiil yalın gelir: do."
+        - "must ile to kullanılmaz."
 tips:
   - type: tuzak
     refs: [U8-031]
@@ -185,3 +226,33 @@ notifications:
   morning: "Bugün: ödünç alma, günlük, mobilya ve sorumluluk 📒"
   evening: "Borrow mu, lend mi? Kalemi veren hangisini söyler? 🤔"
   review: "\"Furnitures\" doğru mu? Neden? 🛋️"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U8-031
+    durum: "Sınava beş dakika kala Duru çantasını altüst ediyor."
+    lines:
+      - { speaker: "Duru", text: "Kalemim evde kaldı! <en>Can I {U8-031|borrow} your pen?</en>" }
+      - { speaker: "Bora", text: "<en>I can {U8-031|lend} you my pen.</en> Ama ucunu ısırma." }
+  - item: U8-032
+    durum: "Elif'in masasında kilitli küçük bir defter var; Ece merakla bakıyor."
+    lines:
+      - { speaker: "Elif", text: "<en>I {U8-032|keep a diary}.</en> Her gece yazıyorum." }
+      - { speaker: "Ece", text: "Ben de var mıyım içinde?" }
+      - { speaker: "Elif", text: "Kilidi boşuna mı taktım?" }
+  - item: U8-033
+    durum: "Selin'in babası ve Emre yeni kanepeyle kapıda sıkıştı; arkada masa ve iki koltuk sırada."
+    lines:
+      - { speaker: "Selin'in babası", text: "Bu kadar <en>{U8-033|furniture}</en> bu kapıdan girmez." }
+      - { speaker: "Emre", text: "Kanepe de ben de sıkıştık; biri beni çeksin!" }
+  - item: U8-034
+    durum: "Sınıf sergisi kuruluyor; Murat Bey elinde listeyle masaların arasında dolaşıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>Who's {U8-034|responsible for} the poster?</en>" }
+      - { speaker: "Selin", text: "Ben, hocam. <en>Kaan is {U8-034|in charge of} the cables.</en>" }
+      - { speaker: "Kaan", text: "Kablolar beni sever; geçen sefer yalnız ışıklar gitti." }
+  - item: U8-035
+    durum: "Kaan maç için çıkmak üzere; annesi kapıda kollarını kavuşturmuş."
+    lines:
+      - { speaker: "Kaan", text: "Anne, maç başlıyor!" }
+      - { speaker: "Kaan'ın annesi", text: "Önce oda. <en>You {U8-035|have to} tidy your room.</en>" }
+      - { speaker: "Kaan", text: "Maçtan sonra olmaz mı?" }
+      - { speaker: "Kaan'ın annesi", text: "<en>You {U8-035|must} do it now.</en>" }

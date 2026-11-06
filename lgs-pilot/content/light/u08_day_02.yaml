@@ -31,6 +31,10 @@ steps:
       options: ["I will. I'll wash the dishes.", "I will. I'll wash the car.", "I will. I'll sweep the lawn.", "I will. I'll iron the shirts."]
       answer: 0
       explain: "do the washing up = bulaşık yıkamak; cevap da bulaşıkla ilgili olmalı."
+      why_wrong:
+        - "Soru bulaşık için soruluyor; araba yıkamak cevap olmaz."
+        - "sweep yer süpürmek, lawn çimdir; washing up ile ilgisi yok."
+        - "Gömlek ütülemek bulaşıkla ilgili değildir."
     tekrar:
       id: u8d02-006-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["Plates, bowls and cups after a meal", "A type of food", "Clean clothes", "Garden tools"]
       answer: 0
       explain: "the dishes = yemekten sonra yıkanacak tabak, kase ve bardaklar."
+      why_wrong:
+        - "Burada dishes yemek türü değil, yıkanan kaplardır."
+        - "Temiz kıyafetler clothes'tur; dishes değil."
+        - "Bahçe aletleri yemekten sonra yıkanan şeyler değildir."
   - item: U8-007
     card:
       example_en: "I washed the plates and he dried them with a towel."
@@ -63,6 +71,10 @@ steps:
       options: ["She wants help to dry the dishes.", "She wants help to cook dinner.", "She wants to go shopping.", "She wants to wash the clothes."]
       answer: 0
       explain: "Tabaklar yıkanmış ve ıslak; havlu alıp yardım istiyor: kurulamak."
+      why_wrong:
+        - "Selin yemekten değil, ıslak tabaklardan söz ediyor."
+        - "Alışveriş yok; havlu ve ıslak tabaklar var."
+        - "Yıkanan şey kıyafet değil, tabaklar: \"all the plates\"."
     tekrar:
       id: u8d02-007-t
       type: synonym
@@ -72,6 +84,10 @@ steps:
       options: ["wet", "hot", "clean", "empty"]
       answer: 0
       explain: "dry (kuru) ↔ wet (ıslak)."
+      why_wrong:
+        - "hot sıcak demektir; dry'ın karşıtı değil."
+        - "clean temiz demektir; kuru olmakla ilgisi yok."
+        - "empty boş demektir; kuru olmakla ilgisi yok."
   - item: U8-008
     card:
       example_en: "I load the dishwasher after dinner and empty it in the morning."
@@ -95,6 +111,10 @@ steps:
       options: ["I'll empty it first.", "I'll load it first.", "I'll sweep it first.", "I'll iron it first."]
       answer: 0
       explain: "Makine temiz tabakla dolu; önce boşaltmak, sonra kirli bardakları yüklemek gerekir."
+      why_wrong:
+        - "Makine zaten temiz tabakla dolu; yeniden doldurulamaz."
+        - "Makine süpürülmez; sweep yer için kullanılır."
+        - "Makine ütülenmez; iron kıyafet için kullanılır."
     tekrar:
       id: u8d02-008-t
       type: odd_one_out
@@ -104,6 +124,10 @@ steps:
       options: ["empty the dishwasher", "fill the dishwasher", "buy the dishwasher", "break the dishwasher"]
       answer: 0
       explain: "load (doldurmak) ↔ empty (boşaltmak)."
+      why_wrong:
+        - "fill doldurmak demektir; load ile aynı anlamda, karşıtı değil."
+        - "Satın almak doldurmanın karşıtı değildir."
+        - "Kırmak doldurmanın karşıtı değildir."
   - item: U8-009
     card:
       example_en: "Tidy up your room before the guests come."
@@ -127,6 +151,10 @@ steps:
       options: ["Sorry, Mum. I'll tidy it up.", "Sorry, Mum. I'll mess it up.", "Thanks, Mum. I'll break it.", "Sorry, Mum. I'll buy it."]
       answer: 0
       explain: "Oda dağınık; özür dileyip toparlayacağını söylemek uygun."
+      why_wrong:
+        - "mess it up dağıtmak demektir; anne tam tersini istiyor."
+        - "Oda kırılacak bir şey değil, üstelik teşekkürü gerektiren bir durum yok."
+        - "Odayı satın almak anlamsız; oda zaten onun."
     tekrar:
       id: u8d02-009-t
       type: synonym
@@ -136,6 +164,10 @@ steps:
       options: ["untidy", "clean", "quiet", "tiny"]
       answer: 0
       explain: "tidy (düzenli) ↔ untidy (dağınık)."
+      why_wrong:
+        - "clean tidy'ye yakındır; karşıtı değildir."
+        - "quiet sessiz demektir; karşıtı değildir."
+        - "tiny çok küçük demektir; tidy'ye benzediği için tuzaktır."
   - item: U8-010
     card:
       example_en: "What a mess! There are toys all over the floor."
@@ -159,6 +191,10 @@ steps:
       options: ["It was very messy.", "It was very tidy.", "It was very clean.", "It was empty."]
       answer: 0
       explain: "Kanepede kıyafet, yerde tabak: oda çok dağınık (messy)."
+      why_wrong:
+        - "Kanepede kıyafet, yerde tabak varken oda düzenli olamaz."
+        - "TV'nin üstünde pizza kutusu varken temiz denemez."
+        - "Eşyalarla dolu bir oda boş değildir."
     tekrar:
       id: u8d02-010-t
       type: gap_fill
@@ -169,6 +205,10 @@ steps:
       options: ["messy", "tidy", "empty", "clean"]
       answer: 0
       explain: "Kalemi bulamıyorsa masa dağınıktır: messy."
+      why_wrong:
+        - "Masa düzenli olsaydı kalemini bulurdu."
+        - "Kalemi bulamıyorsa masa boş değil, karışıktır."
+        - "Temizlik değil, düzen sorunu var; kalemi bulamıyor."
 tips:
   - type: tuzak
     refs: [U8-006]
@@ -184,3 +224,31 @@ notifications:
   morning: "Bugün: bulaşık, kurulama, bulaşık makinesi ve toparlama 🍽️"
   evening: "\"Load\" mı \"empty\" mi? Makine temiz tabakla dolu, önce ne yaparsın? 🤔"
   review: "\"Tidy\" kelimesinin zıttı ne? 🧹"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U8-006
+    durum: "Kalabalık bir akşam yemeği bitti; lavaboda tabak ve bardaktan bir kule yükseliyor."
+    lines:
+      - { speaker: "Kaan", text: "Bu kule bana mı kaldı? <en>OK, I'll {U8-006|wash the dishes}.</en>" }
+      - { speaker: "Kaan'ın annesi", text: "Önce bardaklar. Kuleyi devirme, tek tek!" }
+  - item: U8-007
+    durum: "Lavabonun yanında yıkanmış tabaklar sıralanıyor; hepsinden su damlıyor."
+    lines:
+      - { speaker: "Kaan", text: "Anne, bunlar hâlâ ıslak." }
+      - { speaker: "Kaan'ın annesi", text: "Al şu havluyu. <en>{U8-007|Dry the dishes}, please.</en>" }
+      - { speaker: "Kaan", text: "Havlu da ıslak. Yeni havlu lazım!" }
+  - item: U8-008
+    durum: "Makinenin kapağı açık: içinde pırıl pırıl tabaklar, tezgâhta kirli bardaklar var."
+    lines:
+      - { speaker: "Ece'nin babası", text: "Önce şu pırıl pırıl tabakları çıkar: <en>{U8-008|empty the dishwasher}.</en>" }
+      - { speaker: "Ece", text: "Kirli bardaklar da sırada. <en>Then I'll {U8-008|load} it.</en>" }
+  - item: U8-009
+    durum: "Duru'nun annesi odanın kapısını açıyor; yerde çoraplar, masada kalemler, kanepede gitar."
+    lines:
+      - { speaker: "Duru'nun annesi", text: "Yarın teyzen geliyor. <en>{U8-009|Tidy up} your room, please.</en>" }
+      - { speaker: "Duru", text: "Ama ben her şeyin yerini biliyorum!" }
+      - { speaker: "Duru'nun annesi", text: "Çorabın yeri lamba mı?" }
+  - item: U8-010
+    durum: "Bora'nın dedesi eve dönüyor; salonda plaklar, pizza kutuları, yerde bir davul sopası."
+    lines:
+      - { speaker: "Dedesi", text: "<en>What a {U8-010|mess}!</en> Burada konser mi vardı?" }
+      - { speaker: "Bora", text: "Küçük bir prova, dede. Üç kişiydik, on kişi gibi çaldık." }

@@ -30,15 +30,24 @@ steps:
       options: ["The storm caused a lot of damage.", "The storm caused a lot of damages.", "The storm caused a lot of damaged.", "The storm caused many damage."]
       answer: 0
       explain: "Hasar anlamında damage sayılamaz: a lot of damage."
+      why_wrong:
+        - "damage burada sayılamaz; çoğul olmaz."
+        - "damaged fiilin geçmiş biçimi; \"a lot of\" isimle kullanılır."
+        - "damage sayılamaz; many ile kullanılmaz."
     tekrar:
       id: u8d10-046-t
-      type: situation
+      type: message_infer
       lgs_like: true
-      stem_id: S10
-      prompt: "<en>Which of these can damage a phone?</en>"
-      options: ["Water", "A soft cloth", "A clean case", "A charger"]
+      stem_id: S14
+      prompt: "<en>What can we understand from the note?</en>"
+      stem: "<en>Kids, the rain came in through the kitchen window last night and damaged the new carpet. Please don't walk on it. Dad will call the repair shop.</en>"
+      options: ["The carpet is in bad condition because of the rain.", "The children broke the kitchen window.", "The carpet is still in good condition.", "Dad will buy a new carpet tonight."]
       answer: 0
-      explain: "Su telefona zarar verebilir."
+      explain: "\"The rain … damaged the new carpet\": halı yağmurdan zarar görmüş."
+      why_wrong:
+        - "Notta kırılan pencere yok; yağmur pencereden içeri girmiş."
+        - "\"Damaged\" hasar gördü demektir; halı iyi durumda değil."
+        - "Dad tamirciyi arayacak; yeni halı almaktan söz edilmiyor."
   - item: U8-047
     card:
       example_en: "Doing the chores together affects the family in a good way."
@@ -62,6 +71,10 @@ steps:
       options: ["effect", "affect", "effected", "affecting"]
       answer: 0
       explain: "\"a bad ...\" isim ister: effect (etki)."
+      why_wrong:
+        - "affect fiildir; \"a bad\" sonrası isim gerekir."
+        - "effected isim değil; \"a bad effect\" denir."
+        - "affecting fiil biçimidir; isim gerekir."
     tekrar:
       id: u8d10-047-t
       type: gap_fill
@@ -72,6 +85,10 @@ steps:
       options: ["affect", "effect", "effects", "effected"]
       answer: 0
       explain: "can + fiil: affect."
+      why_wrong:
+        - "effect isimdir; can'den sonra fiil gerekir."
+        - "effects isimdir; can'den sonra fiil gerekir."
+        - "effected fiil yerine geçmez; can'den sonra affect gelir."
   - item: U8-048
     card:
       example_en: "Mum warned me not to touch the hot iron."
@@ -95,6 +112,10 @@ steps:
       options: ["warning", "warm", "wearing", "waiting"]
       answer: 0
       explain: "Islak zemin konusunda uyardığı için teşekkür ediyor: warning me."
+      why_wrong:
+        - "warm sıcak demektir; for'dan sonra -ing gerekir."
+        - "wearing giymektir; anlamsız olur."
+        - "waiting beklemektir; baba uyarıyor."
     tekrar:
       id: u8d10-048-t
       type: situation
@@ -104,6 +125,10 @@ steps:
       options: ["Mum warned me not to run.", "Mum warned me to not running.", "Mum warned me don't run.", "Mum warned that me not run."]
       answer: 0
       explain: "Kalıp: warn + kişi + not to + fiil."
+      why_wrong:
+        - "warn'dan sonra to do gelir; to not running olmaz."
+        - "warned me don't run dil bilgisine aykırı."
+        - "Sözcük sırası bozuk: warned me not to run."
   - item: U8-049
     card:
       example_en: "Instead of watching TV, I tidied my room."
@@ -127,6 +152,10 @@ steps:
       options: ["instead of", "instead", "because", "except"]
       answer: 0
       explain: "\"meyve suyu yerine su\": instead of + isim."
+      why_wrong:
+        - "instead tek başına isim almaz; \"instead of\" gerekir."
+        - "because neden bildirir; arkasından cümle gelir."
+        - "except 'hariç' demektir; yerine koymayı anlatmaz."
     tekrar:
       id: u8d10-049-t
       type: situation
@@ -136,6 +165,10 @@ steps:
       options: ["He helped his mum instead of playing games.", "He helped his mum instead playing games.", "He helped his mum instead to playing games.", "He helped his mum instead of to play games."]
       answer: 0
       explain: "instead of + fiil+ing."
+      why_wrong:
+        - "of eksik: instead of playing."
+        - "of yerine to kullanılmaz: instead of playing."
+        - "of'tan sonra -ing gelir: of playing."
   - item: U8-050
     card:
       example_en: "Call the doctor immediately!"
@@ -159,6 +192,10 @@ steps:
       options: ["Leave at once", "Wait for ten minutes", "Finish their homework", "Go to the library"]
       answer: 0
       explain: "immediately = at once: hemen çıkmalılar."
+      why_wrong:
+        - "\"Immediately\" hemen demektir; on dakika beklemek tam tersi."
+        - "Ödev bitirmek söylenmiyor; binadan çıkılacak."
+        - "Kütüphane değil, bahçeye gidilecek: \"go to the garden\"."
     tekrar:
       id: u8d10-050-t
       type: synonym
@@ -168,6 +205,10 @@ steps:
       options: ["at once", "later", "never", "sometimes"]
       answer: 0
       explain: "immediately ≈ at once."
+      why_wrong:
+        - "later sonra demektir; tam tersi."
+        - "never hiçbir zaman demektir."
+        - "sometimes bazen demektir."
 tips:
   - type: tuzak
     refs: [U8-047]
@@ -183,3 +224,33 @@ notifications:
   morning: "Son gün: zarar, etki, uyarı, \"instead of\" ve hemen! 🏁"
   evening: "Affect mi, effect mi? Hangisi fiil? 🤔"
   review: "\"Immediately\" ile \"suddenly\" aynı şey mi? ⏱️"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U8-046
+    durum: "Gece fırtına vardı; okulun bahçesinde kiremitler, kapıda kısa bir duyuru."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>The storm {U8-046|damaged} the roof.</en> Ders bugün kütüphanede." }
+      - { speaker: "Kaan", text: "Keşke matematik defterim de sınıfta kalsaydı." }
+  - item: U8-047
+    durum: "Ece gece ikiye kadar telefondaydı; sabah derste başı düşüyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Ece, dün gece kaç saat uyudun?" }
+      - { speaker: "Ece", text: "Üç… belki dört, hocam." }
+      - { speaker: "Murat Bey", text: "<en>Too little sleep can {U8-047|affect} your grades.</en> Gözlerini de, görüyorum." }
+  - item: U8-048
+    durum: "Emre parmağına üflüyor; annesi mutfak kapısında elleri belinde duruyor."
+    lines:
+      - { speaker: "Selin'in annesi", text: "<en>I {U8-048|warned} you: don't touch the hot iron!</en>" }
+      - { speaker: "Emre", text: "Soğudu mu diye bakmıştım." }
+      - { speaker: "Selin'in annesi", text: "Soğumamış, değil mi?" }
+  - item: U8-049
+    durum: "Kantinde kuyruğun sonunda Selin; camın ardındaki son tost az önce satıldı."
+    lines:
+      - { speaker: "Kantinci Teyze", text: "Tost bitti, kızım." }
+      - { speaker: "Selin", text: "<en>Then I'll have an apple {U8-049|instead of} toast.</en>" }
+      - { speaker: "Kaan", text: "Elma mı? Seni tanıyamadım." }
+  - item: U8-050
+    durum: "Tatbikat zili çalıyor; herkes kapıya yürürken Bora hâlâ defterine yazıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Bora, <en>leave the classroom {U8-050|immediately}!</en>" }
+      - { speaker: "Bora", text: "Cümlemi bitireyim, hocam." }
+      - { speaker: "Murat Bey", text: "Zil seni beklemez!" }

@@ -31,15 +31,24 @@ steps:
       options: ["in time", "on time", "at time", "by time"]
       answer: 0
       explain: "\"just in time to + fiil\" = tam yetişecek kadar erken."
+      why_wrong:
+        - "on time tam planlanan saatte demektir; burada son anda yetişiyor."
+        - "\"at time\" diye bir kalıp yok."
+        - "\"by time\" diye bir kalıp yok."
     tekrar:
       id: u8d09-041-t
-      type: situation
+      type: table_graph
       lgs_like: true
-      stem_id: S10
-      prompt: "<en>Which sentence means \"exactly at the planned time\"?</en>"
-      options: ["The bus arrived on time.", "The bus arrived in time.", "The bus arrived at time.", "The bus arrived by time."]
+      stem_id: S06
+      prompt: "<en>According to the timetable, which bus arrived on time?</en>"
+      stem: "<en>BUS TIMES (planned – arrived)\nBus 12: 8.00 – 8.00\nBus 25: 8.15 – 8.30\nBus 40: 8.30 – 8.35</en>"
+      options: ["Bus 12", "Bus 25", "Bus 40", "Bus 25 and Bus 40"]
       answer: 0
-      explain: "Planlanan saatinde gelmek: on time."
+      explain: "Planlanan ve gelinen saat yalnız Bus 12'de aynı: tam vaktinde gelen o."
+      why_wrong:
+        - "Bus 25 planlanandan 15 dakika sonra gelmiş."
+        - "Bus 40 planlanandan 5 dakika sonra gelmiş; az da olsa geç."
+        - "İkisinin de geliş saati planlanandan sonra."
   - item: U8-042
     card:
       example_en: "I have too many chores and too much homework."
@@ -62,6 +71,10 @@ steps:
       options: ["There is too much laundry today.", "There are too much laundry today.", "There is too many laundry today.", "There are too many laundry today."]
       answer: 0
       explain: "laundry sayılamaz: There is too much laundry."
+      why_wrong:
+        - "laundry tekildir; there are olmaz."
+        - "laundry sayılamaz; too many kullanılmaz."
+        - "Hem there are hem too many yanlış; laundry sayılamaz."
     tekrar:
       id: u8d09-042-t
       type: gap_fill
@@ -72,6 +85,10 @@ steps:
       options: ["too many", "too much", "much too", "a too"]
       answer: 0
       explain: "chores sayılabilen çoğuldur: too many chores."
+      why_wrong:
+        - "chores sayılabilir; too much değil too many."
+        - "\"much too\" sıfatla kullanılır; isimden önce gelmez."
+        - "a too diye bir kullanım yok."
   - item: U8-043
     card:
       example_en: "It's not fair! Why do I always have to do the dishes?"
@@ -95,6 +112,10 @@ steps:
       options: ["He thinks it is unfair.", "He is very happy.", "He is sleepy.", "He loves chores."]
       answer: 0
       explain: "\"It's not fair!\" haksızlık hissini anlatır."
+      why_wrong:
+        - "Şikâyet eden biri çok mutlu değildir."
+        - "Uykusuz olduğunu söylemiyor; kızgın ve bıkkın."
+        - "Ev işini sevmiyor: \"Why do I always have to do it?\""
     tekrar:
       id: u8d09-043-t
       type: situation
@@ -104,6 +125,10 @@ steps:
       options: ["It's not fair!", "That's wonderful!", "Thank you very much.", "I'd love to."]
       answer: 0
       explain: "\"It's not fair!\" bir şikâyettir."
+      why_wrong:
+        - "\"That's wonderful\" sevinç bildirir."
+        - "\"Thank you\" teşekkür bildirir."
+        - "\"I'd love to\" daveti kabul eder."
   - item: U8-044
     card:
       example_en: "Don't make a fuss! It's only a small mistake."
@@ -127,6 +152,10 @@ steps:
       options: ["Sorry, Dad. I'll do it now.", "Sorry, Dad. I'll make a bigger fuss.", "Thanks, Dad. I'll shout more.", "Sorry, Dad. I'll cry louder."]
       answer: 0
       explain: "Yaygara yapma denince özür dileyip işi yapmak uygun."
+      why_wrong:
+        - "Baba yaygara koparma diyor; daha çok koparmak uygun değil."
+        - "Daha çok bağırmak istenenin tam tersi."
+        - "Daha yüksek sesle ağlamak istenenin tam tersi."
     tekrar:
       id: u8d09-044-t
       type: situation
@@ -136,6 +165,10 @@ steps:
       options: ["To complain loudly about something small", "To cook a big meal", "To clean the house quickly", "To fold the clothes"]
       answer: 0
       explain: "make a fuss = küçük bir şey için yaygara koparmak."
+      why_wrong:
+        - "make burada yemek değil; fuss küçük şeye yaygara koparmaktır."
+        - "Hızlı temizlikle ilgisi yok."
+        - "Kıyafet katlamakla ilgisi yok."
   - item: U8-045
     card:
       example_en: "My teacher is very encouraging. She says, \"You can do it!\""
@@ -159,6 +192,10 @@ steps:
       options: ["Encouraging", "Rude", "Careless", "Lazy"]
       answer: 0
       explain: "Başarısızlıktan sonra tekrar denemesini söyleyen öğretmen cesaretlendiricidir."
+      why_wrong:
+        - "rude kabadır; öğretmen nazik konuşuyor."
+        - "careless dikkatsizdir; öğretmen öğrenciyi önemsiyor."
+        - "lazy tembeldir; metinde buna işaret yok."
     tekrar:
       id: u8d09-045-t
       type: situation
@@ -168,6 +205,10 @@ steps:
       options: ["You can do it! Try again.", "You will never learn.", "Stop trying.", "This is too difficult for you."]
       answer: 0
       explain: "Cesaret veren cümle: You can do it! Try again."
+      why_wrong:
+        - "\"You will never learn\" kırıcıdır, yüreklendirmez."
+        - "\"Stop trying\" vazgeç demektir."
+        - "\"Too difficult for you\" güvenini kırar."
 tips:
   - type: tuzak
     refs: [U8-041]
@@ -183,3 +224,33 @@ notifications:
   morning: "Bugün: on time / in time, too much / too many, \"It's not fair!\" 🙂"
   evening: "\"Too much\" mı, \"too many\" mi? Ev işleri sayılabilir mi? 🤔"
   review: "\"Make a fuss\" ile \"make a mess\" aynı şey mi? 😄"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U8-041
+    durum: "Okul çıkışı sinemaya gidilecek; Selin'in babası arabanın yanında saatine bakıyor."
+    lines:
+      - { speaker: "Selin'in babası", text: "Saat 3.40. <en>I'm always {U8-041|on time}.</en>" }
+      - { speaker: "Kaan", text: "<en>I'm just {U8-041|in time}!</en> Son düzlükte koştum." }
+      - { speaker: "Selin", text: "Kaan dakika kaçırmadan geldi, hayret!" }
+  - item: U8-042
+    durum: "Kaan deftere bu haftanın işlerini yazıyor; liste ikinci sayfaya geçti."
+    lines:
+      - { speaker: "Kaan", text: "<en>I have {U8-042|too many} tasks and {U8-042|too much} homework!</en>" }
+      - { speaker: "Ece", text: "Bir de basket antrenmanın var." }
+      - { speaker: "Kaan", text: "O listede değil; o benim molam!" }
+  - item: U8-043
+    durum: "Kaan üç gündür lavabonun başında; kuzeni kanepede oturuyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>{U8-043|It's not fair! Why do I always have to} wash the dishes?</en>" }
+      - { speaker: "Kaan'ın annesi", text: "Kuzenin misafir, oğlum." }
+      - { speaker: "Kaan", text: "İki haftadır misafir!" }
+  - item: U8-044
+    durum: "Bora'nın tişörtüne bir damla çorba sıçradı; Bora sandalyeden fırlıyor."
+    lines:
+      - { speaker: "Bora", text: "Eyvah! Tişörtüm bitti, günüm bitti!" }
+      - { speaker: "Dedesi", text: "<en>Don't {U8-044|make a fuss}!</en> Bir damla çorba o, evlat." }
+  - item: U8-045
+    durum: "Murat Bey sınav kâğıtlarını dağıtıyor; Elif notuna bakıp iç çekiyor."
+    lines:
+      - { speaker: "Elif", text: "Yine olmadı, hocam." }
+      - { speaker: "Murat Bey", text: "Geçen seferden iki soru fazla. <en>Try again, you can do it!</en>" }
+      - { speaker: "Elif", text: "<en>He's so {U8-045|encouraging}.</en> Bir test daha çözüyorum." }

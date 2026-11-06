@@ -31,6 +31,10 @@ steps:
       options: ["Mum wants me to tidy it.", "Mum wants that I tidy it.", "Mum wants I tidy it.", "Mum wants me tidy it."]
       answer: 0
       explain: "want + kişi + to + fiil."
+      why_wrong:
+        - "want ile that kurulmaz: want someone to do."
+        - "want'tan sonra özne cümlesi gelmez; \"wants me to\" denir."
+        - "to eksik: wants me to tidy."
     tekrar:
       id: u8d08-036-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["My teacher wants us to be quiet.", "My teacher wants that we be quiet.", "My teacher wants we to be quiet.", "My teacher wants us be quiet."]
       answer: 0
       explain: "Kalıp: want + us + to be."
+      why_wrong:
+        - "want ile that kurulmaz."
+        - "we özne biçimidir; nesne gerekir: us."
+        - "to eksik: wants us to be."
   - item: U8-037
     card:
       example_en: "We take turns washing the dishes. It's my turn today."
@@ -63,6 +71,10 @@ steps:
       options: ["Kaan's", "Ece's", "Bora's", "Dad's"]
       answer: 0
       explain: "Bugün salı; salı günü sıra Kaan'da."
+      why_wrong:
+        - "Ece'nin günü Monday; bugün Tuesday."
+        - "Bora'nın günü Wednesday; bugün Tuesday."
+        - "Listede Dad yok."
     tekrar:
       id: u8d08-037-t
       type: dialogue_complete
@@ -73,6 +85,10 @@ steps:
       options: ["It's my turn.", "It's my dishes.", "It's me turn.", "It's turn me."]
       answer: 0
       explain: "Kalıp: It's my turn."
+      why_wrong:
+        - "Dishes değil turn gerekir; soru \"whose turn\"."
+        - "me değil my kullanılır: my turn."
+        - "Sözcük sırası bozuk: It's my turn."
   - item: U8-038
     card:
       example_en: "If we cooperate, we can finish the chores quickly."
@@ -96,6 +112,10 @@ steps:
       options: ["The family to cooperate", "The family to go out", "The children to sleep", "Dad to do everything"]
       answer: 0
       explain: "Herkese görev veriyor: ailenin iş birliği yapmasını istiyor."
+      why_wrong:
+        - "Dışarı çıkmak yok; hepsi evde iş paylaşıyor."
+        - "Uyumak yok; her birine bir iş veriliyor."
+        - "Dad yalnız yemek yapıyor; işler paylaşılıyor."
     tekrar:
       id: u8d08-038-t
       type: synonym
@@ -105,6 +125,10 @@ steps:
       options: ["work together", "work alone", "stop working", "go away"]
       answer: 0
       explain: "cooperate ≈ work together."
+      why_wrong:
+        - "work alone tek başına çalışmaktır; tam tersi."
+        - "stop working çalışmayı bırakmaktır; tam tersi."
+        - "go away uzaklaşmaktır; birlikte çalışmakla ilgisi yok."
   - item: U8-039
     card:
       example_en: "I'll do my best to finish my chores on time."
@@ -128,6 +152,10 @@ steps:
       options: ["I'll try hard.", "I'll do nothing.", "I'll never start.", "I'll give up."]
       answer: 0
       explain: "\"I'll do my best\" çabalayacağını söyler: I'll try hard."
+      why_wrong:
+        - "\"I'll do my best\" ile çelişir; hiçbir şey yapmamak olmaz."
+        - "Hiç başlamamak elinden geleni yapmakla çelişir."
+        - "give up vazgeçmektir; tam tersi."
     tekrar:
       id: u8d08-039-t
       type: situation
@@ -137,6 +165,10 @@ steps:
       options: ["She did her best.", "She made her best.", "She took her best.", "She played her best."]
       answer: 0
       explain: "Kalıp: do one's best."
+      why_wrong:
+        - "Kalıp do ile kurulur: do your best; make olmaz."
+        - "take ile olmaz: did her best."
+        - "play ile olmaz: did her best."
   - item: U8-040
     card:
       example_en: "You don't have to wear a uniform today. You mustn't run in the corridor."
@@ -159,6 +191,10 @@ steps:
       options: ["You mustn't touch the paintings.", "You don't have to touch the paintings.", "You have to touch the paintings.", "You can touch the paintings."]
       answer: 0
       explain: "mustn't = yasak; don't have to = gerek yok."
+      why_wrong:
+        - "don't have to gerekli değil demektir; yasak değil."
+        - "have to zorunluluktur; yasağın tersi."
+        - "can izin verir; yasak değil."
     tekrar:
       id: u8d08-040-t
       type: situation
@@ -168,6 +204,10 @@ steps:
       options: ["You don't have to pay.", "You mustn't pay.", "You must pay.", "You have to pay."]
       answer: 0
       explain: "don't have to = gerekli değil."
+      why_wrong:
+        - "mustn't yasak demektir; \"gerekli değil\" değil."
+        - "must zorunluluktur; tam tersi."
+        - "have to zorunluluktur; tam tersi."
 tips:
   - type: tuzak
     refs: [U8-040]
@@ -183,3 +223,31 @@ notifications:
   morning: "Bugün: want me to, sıra, iş birliği ve \"mustn't\" tuzağı 🚦"
   evening: "\"Don't have to\" ile \"mustn't\" aynı mı? 🤔"
   review: "\"Do my best\" mi, \"make my best\" mi? 💪"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U8-036
+    durum: "Cumartesi sabahı Selin, Duru'yu odasında elinde bezle yakalıyor."
+    lines:
+      - { speaker: "Selin", text: "Cumartesi bu saatte oda mı?" }
+      - { speaker: "Duru", text: "<en>My mum {U8-036|wants me to} tidy it.</en> Teyzem geliyor." }
+      - { speaker: "Selin", text: "Teyzen iyi ki geliyor; odanın zeminini ilk kez görüyorum!" }
+  - item: U8-037
+    durum: "Yemekten sonra Ece ile küçük kardeşi lavabonun önünde bakışıyor."
+    lines:
+      - { speaker: "Ece", text: "Dün ben yıkadım. <en>It's your {U8-037|turn}!</en>" }
+      - { speaker: "Ece'nin babası", text: "<en>You can {U8-037|take turns}:</en> bir gün sen, bir gün kardeşin. Kavga bitti." }
+  - item: U8-038
+    durum: "Sınıf temizliği günü; herkes başka bir köşede oyalanıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Tek tek akşama kadar sürer. <en>If we {U8-038|cooperate},</en> yarım saatte biter." }
+      - { speaker: "Kaan", text: "Tamam, sandalyeler bende. Elif, tahta sende!" }
+  - item: U8-039
+    durum: "Teneffüste Murat Bey, Bora'yı koridorda yakalıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Bora, sunum cuma günü. Yetişir mi?" }
+      - { speaker: "Bora", text: "Söz vermeyeyim hocam ama <en>I'll {U8-039|do my best}.</en>" }
+      - { speaker: "Murat Bey", text: "Bu sefer kedin hasta olmasın yalnız." }
+  - item: U8-040
+    durum: "Okul gezisi sabahı; Selin forma konusunda emin değil, Kaan müze kurallarını soruyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Bugün <en>you {U8-040|don't have to} wear a uniform.</en> Ama müzede <en>you {U8-040|mustn't} touch the paintings.</en>" }
+      - { speaker: "Kaan", text: "Yani tişört serbest, tablolara el sürmek değil. Anlaşıldı." }

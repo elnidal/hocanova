@@ -31,13 +31,24 @@ steps:
       options: ["I'll iron it.", "I'll mop it.", "I'll feed it.", "I'll water it."]
       answer: 0
       explain: "Buruşuk gömlek için yapılacak iş ütülemektir."
+      why_wrong:
+        - "Gömlek paspaslanmaz; mop yer için kullanılır."
+        - "feed canlıları beslemektir; gömlek için olmaz."
+        - "water bitkiler için kullanılır; gömlek sulanmaz."
     tekrar:
       id: u8d05-021-t
-      type: odd_one_out
-      prompt: "<en>In which word is there a letter that we don't say?</en>"
-      options: ["iron", "ring", "red", "run"]
+      type: table_graph
+      lgs_like: true
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+      stem: "<en>SUNDAY CHORES (minutes)\nIron the shirts: 30\nDo the laundry: 15\nHang out the washing: 10\nMake the beds: 5</en>"
+      options: ["Ironing the shirts takes the longest time.", "Making the beds takes thirty minutes.", "Doing the laundry takes less time than making the beds.", "Hanging out the washing takes fifteen minutes."]
       answer: 0
-      explain: "iron /ˈaɪən/: r okunmaz."
+      explain: "En büyük sayı 30, ütünün satırında: en uzun süren iş o."
+      why_wrong:
+        - "30 sayısı ütü satırında; yatakların süresi 5 dakika."
+        - "15 dakika, 5 dakikadan uzun; karşılaştırma ters kurulmuş."
+        - "15 sayısı çamaşır satırında; asmak 10 dakika sürüyor."
   - item: U8-022
     card:
       example_en: "Fold the clothes and put them in the wardrobe."
@@ -61,6 +72,10 @@ steps:
       options: ["She folded the clothes.", "She ironed the clothes.", "She washed the clothes.", "She sold the clothes."]
       answer: 0
       explain: "Kıyafetleri küçük kareler hâline getirip çekmeceye koymak katlamaktır."
+      why_wrong:
+        - "\"Small squares\" katlamayı anlatır; ütü geçmiyor."
+        - "Giysiler zaten kurumuş: \"dry clothes\"."
+        - "Giysileri çekmeceye koyuyor; satmıyor."
     tekrar:
       id: u8d05-022-t
       type: process_order
@@ -71,6 +86,10 @@ steps:
       options: ["She folds them.", "She separates them.", "She washes them.", "She irons them."]
       answer: 0
       explain: "Metne göre asmadan sonra katlıyor."
+      why_wrong:
+        - "Ayırma ilk adım: \"First\"."
+        - "Yıkama ikinci adım: asmadan önce."
+        - "Metinde ütü yok; son adım katlamak."
   - item: U8-023
     card:
       example_en: "Dad mows the lawn every two weeks."
@@ -94,6 +113,10 @@ steps:
       options: ["Early on Sunday morning", "On Monday evening", "On Saturday night", "In the afternoon"]
       answer: 0
       explain: "Pazar günleri erkenden, hava çok ısınmadan çimleri biçiyor."
+      why_wrong:
+        - "Metin \"On Sundays\" diyor; Monday yanlış gün."
+        - "Metin \"get up early\" diyor; gece değil, gün de Sunday."
+        - "Sıcak basmadan önce yapıyor: \"before it gets too hot\"."
     tekrar:
       id: u8d05-023-t
       type: situation
@@ -103,6 +126,10 @@ steps:
       options: ["In a garden or a park", "In a bedroom", "In a kitchen", "In a classroom"]
       answer: 0
       explain: "Çimenlik bahçe ya da parkta bulunur."
+      why_wrong:
+        - "Yatak odasında çim olmaz."
+        - "Mutfakta çim olmaz."
+        - "Sınıfta çim olmaz."
   - item: U8-024
     card:
       example_en: "Please water the plants twice a week."
@@ -126,6 +153,10 @@ steps:
       options: ["Twice a week", "Every day", "Once a month", "Only on Fridays"]
       answer: 0
       explain: "Pazartesi ve perşembe: haftada iki kez."
+      why_wrong:
+        - "Metin yalnız Monday ve Thursday diyor; her gün değil."
+        - "Haftada iki gün sulanacak; ayda bir değil."
+        - "Friday dönüş günü: \"away until Friday\"."
     tekrar:
       id: u8d05-024-t
       type: situation
@@ -135,6 +166,10 @@ steps:
       options: ["I water the flowers every morning.", "I drink a glass of water every morning.", "The water is very cold.", "The sea water is salty."]
       answer: 0
       explain: "İlk cümlede water fiildir (sulamak); diğerlerinde isimdir."
+      why_wrong:
+        - "Burada water isimdir: \"a glass of water\"."
+        - "\"The water\" isimdir; soğukluğu anlatılıyor."
+        - "\"Sea water\" isimdir; tuzlu olduğu söyleniyor."
   - item: U8-025
     card:
       example_en: "Selin takes care of her little brother after school."
@@ -157,6 +192,10 @@ steps:
       options: ["look after the baby", "look for the baby", "look at the baby", "look like the baby"]
       answer: 0
       explain: "Bebeğe bakmak: look after the baby. look for = aramak."
+      why_wrong:
+        - "look for aramaktır; bebeğe bakmak değil."
+        - "look at bir şeye bakmaktır; ilgilenmek değil."
+        - "look like benzemektir."
     tekrar:
       id: u8d05-025-t
       type: dialogue_complete
@@ -167,6 +206,10 @@ steps:
       options: ["My cousin will look after him.", "My cousin will look for him.", "My cousin will look like him.", "My cousin will look up him."]
       answer: 0
       explain: "Tatildeyken köpeğe bakacak kişi: look after him."
+      why_wrong:
+        - "look for aramaktır; köpek kayıp değil."
+        - "look like benzemektir; soruya cevap olmaz."
+        - "look up sözlükte aramaktır; köpekle olmaz."
 tips:
   - type: tuzak
     refs: [U8-021]
@@ -182,3 +225,33 @@ notifications:
   morning: "Bugün: ütü, katlama, çim biçme, çiçek sulama ve bakım 🌿"
   evening: "Look after mı, look for mu? Hasta büyükanneye ne yaparsın? 🤔"
   review: "\"Iron\" kelimesinde hangi harf okunmaz? 👕"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U8-021
+    durum: "Yarın okul fotoğrafı var; Kaan'ın gömleği buruş buruş."
+    lines:
+      - { speaker: "Kaan'ın annesi", text: "Bu gömlekle fotoğraf çekilmez. <en>{U8-021|Iron} it, please.</en>" }
+      - { speaker: "Kaan", text: "Önü yeter, arkası fotoğrafta görünmüyor." }
+  - item: U8-022
+    durum: "Duru kurumuş kıyafetleri dolaba tıkıyor; kapak bir türlü kapanmıyor."
+    lines:
+      - { speaker: "Duru'nun annesi", text: "Öyle sığmaz. <en>{U8-022|Fold} the clothes first.</en>" }
+      - { speaker: "Duru", text: "Kapağı biraz daha itsem?" }
+      - { speaker: "Duru'nun annesi", text: "Kapak seninle aynı fikirde değil." }
+  - item: U8-023
+    durum: "Ece'nin babası makineyi bahçeye çıkarıyor; otlar bileğe gelmiş."
+    lines:
+      - { speaker: "Ece'nin babası", text: "Bugün büyük gün. <en>I'm going to {U8-023|mow the lawn}.</en>" }
+      - { speaker: "Ece", text: "Saat sekiz baba, komşular!" }
+      - { speaker: "Ece'nin babası", text: "Tamam, dokuzda. Söz." }
+  - item: U8-024
+    durum: "Selin tatile gidiyor; balkondaki saksıları Ece'ye tek tek gösteriyor."
+    lines:
+      - { speaker: "Selin", text: "Pazartesi ve perşembe, unutma: <en>{U8-024|water the plants}.</en>" }
+      - { speaker: "Ece", text: "Hepsine aynı mı?" }
+      - { speaker: "Selin", text: "Küçük kaktüse bir yudum yeter; boğma onu." }
+  - item: U8-025
+    durum: "Elif bir haftalığına gidiyor; Pamuk kapının önünde bavulu kokluyor."
+    lines:
+      - { speaker: "Elif", text: "Duru, <en>can you {U8-025|look after} Pamuk?</en>" }
+      - { speaker: "Duru", text: "Fıstık'la arkadaş olurlar, merak etme." }
+      - { speaker: "Elif", text: "Pamuk seni seçti bile; ayakkabını kapıyor." }

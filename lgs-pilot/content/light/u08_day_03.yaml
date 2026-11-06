@@ -31,6 +31,10 @@ steps:
       options: ["She makes her bed.", "She buys a new bed.", "She cleans the carpet.", "She cooks breakfast."]
       answer: 0
       explain: "Yastıkları yerine koyup çarşafı düzeltmek yatağı toplamaktır."
+      why_wrong:
+        - "Yeni yatak almıyor; yastık ve çarşafı düzeltiyor."
+        - "Halıdan söz edilmiyor; yastık ve çarşaf var."
+        - "Kahvaltıdan söz edilmiyor; yatağıyla uğraşıyor."
     tekrar:
       id: u8d03-011-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["Please make the bed.", "Please do the bed.", "Please cook the bed.", "Please play the bed."]
       answer: 0
       explain: "Kalıp make the bed'dir."
+      why_wrong:
+        - "Yatak için do değil, make kullanılır: make the bed."
+        - "cook yemek için kullanılır; yatakla olmaz."
+        - "play oyun için kullanılır; yatakla olmaz."
   - item: U8-012
     card:
       example_en: "Dad vacuums the carpets with the vacuum cleaner on Sundays."
@@ -63,15 +71,24 @@ steps:
       options: ["A vacuum cleaner", "A washing machine", "A cooker", "A dishwasher"]
       answer: 0
       explain: "Halı ve kanepeyi temizleyen makine elektrik süpürgesidir."
+      why_wrong:
+        - "Çamaşır makinesi kıyafet yıkar; halı ve kanepe için değil."
+        - "Ocak yemek pişirir; halı temizlemez."
+        - "Bulaşık makinesi tabak yıkar; halı temizlemez."
     tekrar:
       id: u8d03-012-t
-      type: gap_fill
+      type: table_graph
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which one is the correct spelling?</en>"
-      options: ["vacuum", "vaccum", "vacum", "vaccuum"]
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+      stem: "<en>SATURDAY CLEANING\nMum: dust the shelves\nDad: mop the kitchen floor\nKaan: vacuum the carpets\nGrandma: sweep the balcony</en>"
+      options: ["Kaan uses a vacuum cleaner on Saturday.", "Mum mops the kitchen floor.", "Dad vacuums the carpets.", "Grandma dusts the shelves."]
       answer: 0
-      explain: "Doğru yazım: vacuum (tek c, çift u)."
+      explain: "\"vacuum the carpets\" Kaan'ın satırında: elektrik süpürgesini o kullanıyor."
+      why_wrong:
+        - "\"Mop the kitchen floor\" Dad'in satırında; Mum rafların tozunu alıyor."
+        - "\"Vacuum the carpets\" Kaan'ın satırında; Dad yeri paspaslıyor."
+        - "\"Dust the shelves\" Mum'ın satırında; Grandma balkonu süpürüyor."
   - item: U8-013
     card:
       example_en: "I sweep the floor with a broom after dinner."
@@ -95,6 +112,10 @@ steps:
       options: ["I'll sweep it.", "I'll iron it.", "I'll water it.", "I'll cook it."]
       answer: 0
       explain: "Süpürgeyi getireceğine göre yeri süpürecek."
+      why_wrong:
+        - "Yer ütülenmez; süpürge getirecekse süpürecektir."
+        - "Yer sulanmaz; kırıntılar için süpürge gerekir."
+        - "Yer pişirilmez; kırıntılar süpürülür."
     tekrar:
       id: u8d03-013-t
       type: gap_fill
@@ -104,6 +125,10 @@ steps:
       options: ["swept", "sweeped", "swepted", "sweeps"]
       answer: 0
       explain: "sweep – swept (düzensiz fiil)."
+      why_wrong:
+        - "sweep düzensiz fiildir; -ed almaz."
+        - "swept zaten geçmiş biçimdir; ayrıca -ed eklenmez."
+        - "sweeps geniş zamandır; geçmiş biçim değil."
   - item: U8-014
     card:
       example_en: "After sweeping, Bora mops the kitchen floor with water."
@@ -127,6 +152,10 @@ steps:
       options: ["She cleans the kitchen floor with water.", "She sweeps the living room.", "She waters the plants.", "She washes the dishes."]
       answer: 0
       explain: "Salı günü mutfak zeminini paspaslıyor."
+      why_wrong:
+        - "Salonu süpürmek Monday satırında."
+        - "Bitkileri sulamak Wednesday satırında."
+        - "Listede bulaşık yok; salı işi mutfak zeminini paspaslamak."
     tekrar:
       id: u8d03-014-t
       type: situation
@@ -136,6 +165,10 @@ steps:
       options: ["You sweep with a broom and mop with water.", "You sweep with water and mop with a broom.", "They are exactly the same.", "Both are used for cooking."]
       answer: 0
       explain: "Süpürgeyle süpürülür (sweep); su ve paspasla silinir (mop)."
+      why_wrong:
+        - "Araçlar yer değiştirmiş: süpürge sweep, su ise mop içindir."
+        - "Aynı değiller: biri süpürgeyle, öbürü suyla yapılır."
+        - "İkisi de temizlik işidir; yemekle ilgisi yok."
   - item: U8-015
     card:
       example_en: "Please dust the shelves. They are full of dust."
@@ -159,6 +192,10 @@ steps:
       options: ["She dusted the room.", "She cooked a meal.", "She fed the fish.", "She painted the wall."]
       answer: 0
       explain: "Eşyaların tozunu aldı: dust."
+      why_wrong:
+        - "Yemekten söz edilmiyor; bezle eşyaları siliyor."
+        - "Balık beslemek yok; \"no dust on them\" diyor."
+        - "Duvar boyamıyor; TV, kitaplık ve lambaları siliyor."
     tekrar:
       id: u8d03-015-t
       type: situation
@@ -168,6 +205,10 @@ steps:
       options: ["I dust the shelves every Saturday.", "There is dust on the table.", "The dust is grey.", "Dust is everywhere."]
       answer: 0
       explain: "İlk cümlede dust fiildir (tozunu almak); diğerlerinde isimdir."
+      why_wrong:
+        - "Burada dust isimdir: \"There is dust\" (masada toz var)."
+        - "\"The dust\" isimdir; arkadan \"is grey\" geliyor."
+        - "Cümlenin öznesi dust; yani isim olarak kullanılmış."
 tips:
   - type: tuzak
     refs: [U8-011]
@@ -183,3 +224,31 @@ notifications:
   morning: "Bugün: yatağı toplamak, süpürmek, paspaslamak, toz almak 🧹"
   evening: "Sweep mi, vacuum mu? Hangisi elektrik süpürgesi? 🤔"
   review: "\"Dust\" bir fiil olabilir mi? Evet! Ne anlama gelir? 🧽"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U8-011
+    durum: "Selin saat 6.30'da kalktı; odasından çıkmadan son bir kontrol yapıyor."
+    lines:
+      - { speaker: "Selin", text: "Bir dakika baba. <en>First, I {U8-011|make the bed}.</en> Sonra kahvaltı." }
+      - { speaker: "Emre", text: "Benimki öğlene kadar böyle kalacak." }
+  - item: U8-012
+    durum: "Pazar sabahı; Kaan kulaklıkla müzik dinliyor, koridordan gürültülü bir makine yaklaşıyor."
+    lines:
+      - { speaker: "Kaan'ın annesi", text: "Ayaklarını kaldır! <en>I'm going to {U8-012|vacuum} the carpet.</en>" }
+      - { speaker: "Kaan", text: "Anne, pazar sabahı saat sekiz!" }
+      - { speaker: "Kaan'ın annesi", text: "Halı saate bakmıyor." }
+  - item: U8-013
+    durum: "Okul bahçesi sarı yapraklarla dolu; Bora elinde uzun saplı bir fırçayla duruyor."
+    lines:
+      - { speaker: "Bora", text: "Ceza değil, gönüllüyüm! <en>I {U8-013|sweep} the leaves every Friday.</en>" }
+      - { speaker: "Elif", text: "Rüzgâr senden hızlı ama. Az önceki yığın yine dağıldı." }
+  - item: U8-014
+    durum: "Ece'nin küçük kardeşi mutfakta sütü döktü; Ece kovayı getiriyor."
+    lines:
+      - { speaker: "Ece", text: "Kimse girmesin! <en>I'm going to {U8-014|mop} the floor.</en>" }
+      - { speaker: "Ece'nin babası", text: "Tamam ama önce kardeşinin ayaklarına bak; bütün evde süt izi var." }
+  - item: U8-015
+    durum: "Duru raftaki eski kitabı çekiyor ve üst üste hapşırıyor."
+    lines:
+      - { speaker: "Duru", text: "Hapşu! Bu rafa en son kim dokundu?" }
+      - { speaker: "Duru'nun annesi", text: "Kimse. <en>Please {U8-015|dust} the shelves.</en> Bez orada." }
+      - { speaker: "Duru", text: "Bu kitap benden yaşlı; tek bez yetmez." }

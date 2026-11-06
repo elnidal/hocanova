@@ -31,15 +31,24 @@ steps:
       options: ["She feeds him.", "She walks him in the park.", "She washes him.", "She sells him."]
       answer: 0
       explain: "Kasesini mamayla doldurup su veriyor: onu besliyor."
+      why_wrong:
+        - "Park geçmiyor; kaba yiyecek ve su koyuyor."
+        - "Yıkamaktan söz edilmiyor; kabını dolduruyor."
+        - "Satmak yok; her sabah bakıyor."
     tekrar:
       id: u8d06-026-t
-      type: gap_fill
+      type: table_graph
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>What is the past form of \"feed\"?</en>"
-      options: ["fed", "feeded", "feeds", "feding"]
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+      stem: "<en>WHO FEEDS THE PETS?\nMorning: Deniz – the cat\nAfternoon: Arda – the fish\nEvening: Nil – the dog</en>"
+      options: ["Nil feeds the dog in the evening.", "Deniz feeds the fish in the morning.", "Arda feeds the cat in the evening.", "Nil feeds the fish in the afternoon."]
       answer: 0
-      explain: "feed – fed (düzensiz fiil)."
+      explain: "Evening satırında Nil ve köpek var: akşam köpeği Nil besliyor."
+      why_wrong:
+        - "Sabah satırında Deniz var ama hayvan kedi; balık öğleden sonra satırında."
+        - "Arda'nın satırında balık ve öğleden sonra yazıyor; kişi, hayvan ve saat karışmış."
+        - "Nil akşam satırında ve köpeği besliyor; balık Arda'nın."
   - item: U8-027
     card:
       example_en: "We live in a flat on the third floor."
@@ -63,6 +72,10 @@ steps:
       options: ["A flat", "A palace", "A tent", "A mansion"]
       answer: 0
       explain: "Altıncı kat, asansör, balkon: apartman dairesi."
+      why_wrong:
+        - "Saray iki yatak odalı ve küçük mutfaklı olmaz."
+        - "Çadırda altıncı kat ve asansör olmaz."
+        - "mansion büyük konaktır; altıncı katta iki odalı değildir."
     tekrar:
       id: u8d06-027-t
       type: situation
@@ -72,6 +85,10 @@ steps:
       options: ["flat", "square", "port", "resort"]
       answer: 0
       explain: "İngiliz İngilizcesinde apartment = flat."
+      why_wrong:
+        - "square meydan demektir; ev türü değil."
+        - "port liman demektir; ev türü değil."
+        - "resort tatil yeridir; apartman dairesi değil."
   - item: U8-028
     card:
       example_en: "All my relatives come to our house on holidays."
@@ -95,6 +112,10 @@ steps:
       options: ["His relatives", "His classmates", "His teachers", "His neighbours"]
       answer: 0
       explain: "Büyükanne-büyükbaba, amca ve çocukları: akrabalar."
+      why_wrong:
+        - "Gelenler sınıf arkadaşı değil, büyükanne-büyükbaba ve dayı/amca."
+        - "Gelenler öğretmen değil, aile büyükleri."
+        - "Gelenler komşu değil; \"We are a big family\" diyor."
     tekrar:
       id: u8d06-028-t
       type: odd_one_out
@@ -104,6 +125,10 @@ steps:
       options: ["A neighbour", "An aunt", "A cousin", "A grandfather"]
       answer: 0
       explain: "Komşu akraba değildir."
+      why_wrong:
+        - "aunt teyze ya da halandır; akrabandır."
+        - "cousin kuzendir; akrabandır."
+        - "grandfather dededir; akrabandır."
   - item: U8-029
     card:
       example_en: "I get an allowance of fifty liras every week."
@@ -127,15 +152,24 @@ steps:
       options: ["I use my allowance.", "I use my homework.", "I use my room.", "I use my bed."]
       answer: 0
       explain: "Ailesinin verdiği haftalık para harçlıktır."
+      why_wrong:
+        - "Ödevle sinema bileti alınmaz."
+        - "Oda ile bilet parası ödenmez."
+        - "Yatak ile bilet parası ödenmez."
     tekrar:
       id: u8d06-029-t
-      type: synonym
+      type: table_graph
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which word means \"pocket money\"?</en>"
-      options: ["allowance", "assignment", "furniture", "relative"]
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+      stem: "<en>WEEKLY ALLOWANCE\nDeniz: 100 liras – tidy the room\nArda: 150 liras – mow the lawn\nNil: 120 liras – feed the cat</en>"
+      options: ["Arda gets the biggest allowance.", "Nil gets the smallest allowance.", "Deniz gets an allowance for mowing the lawn.", "Arda and Nil get the same allowance."]
       answer: 0
-      explain: "pocket money = allowance (harçlık)."
+      explain: "En büyük sayı 150, Arda'nın satırında: en çok harçlığı o alıyor."
+      why_wrong:
+        - "En küçük sayı 100 ve Deniz'in; Nil 120 lira alıyor."
+        - "\"Mow the lawn\" Arda'nın satırında; Deniz odayı topluyor."
+        - "Arda 150, Nil 120 lira alıyor; miktarlar farklı."
   - item: U8-030
     card:
       example_en: "My parents gave me a reward for tidying my room."
@@ -159,6 +193,10 @@ steps:
       options: ["Going to the cinema", "Buying a new bike", "Having an extra chore", "Cleaning the car"]
       answer: 0
       explain: "Babası ödül olarak Cumartesi sinemaya gitmeyi öneriyor."
+      why_wrong:
+        - "Bisiklet alınacağı söylenmiyor; cumartesi sinemaya gidecekler."
+        - "Fazladan ev işi ödül değildir; tam tersi."
+        - "Araba temizlemek metinde yok."
     tekrar:
       id: u8d06-030-t
       type: situation
@@ -168,6 +206,10 @@ steps:
       options: ["A gift for doing a good job", "A punishment for being late", "A bill for a hotel", "A map of the city"]
       answer: 0
       explain: "İyi iş çıkarana verilen hediye ödüldür."
+      why_wrong:
+        - "punishment cezadır; ödülün karşıtı."
+        - "Otel faturası ödül değildir; para ödersin."
+        - "Şehir haritası başarı karşılığı verilen bir şey değildir."
 tips:
   - type: ilginc_bilgi
     refs: [U8-016, U8-027]
@@ -183,3 +225,31 @@ notifications:
   morning: "Bugün: besleme, daire, akraba, harçlık ve ödül 💰"
   evening: "Flat sadece \"düz\" mü demek? Evde ne anlama gelir? 🏠"
   review: "Akraba mı, komşu mu? Hangisi \"relative\"? 👨‍👩‍👧"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U8-026
+    durum: "Fıstık boş kabının başına oturmuş, gözlerini Duru'ya dikmiş."
+    lines:
+      - { speaker: "Duru", text: "Okula geç kalıyorum ama o gözlerle… <en>OK, I'll {U8-026|feed} you.</en>" }
+      - { speaker: "Duru'nun annesi", text: "O sabah bir kere yedi. İnanma!" }
+  - item: U8-027
+    durum: "Kaan telefonda kuzeninin yeni evini gösteriyor; küçük bir balkondan şehir görünüyor."
+    lines:
+      - { speaker: "Kaan", text: "<en>My cousin lives in a small {U8-027|flat}.</en> Altıncı kat, asansörlü." }
+      - { speaker: "Bora", text: "Asansör bozulunca kuzenin de spora başlar." }
+  - item: U8-028
+    durum: "Bayram sabahı; Kaan'ın evinde kapı zili on kez çalıyor, ayakkabılar koridora sığmıyor."
+    lines:
+      - { speaker: "Kaan", text: "Anne, bu kadar insan kim?" }
+      - { speaker: "Kaan'ın annesi", text: "<en>They're our {U8-028|relatives}.</en> Çayları getir." }
+      - { speaker: "Kaan", text: "Yarısının adını bilmiyorum!" }
+  - item: U8-029
+    durum: "Kantinin önünde Bora cebindeki bozuk paraları sayıyor."
+    lines:
+      - { speaker: "Bora", text: "Daha çarşamba ve elimde üç lira kaldı." }
+      - { speaker: "Ece", text: "<en>Don't you {U8-029|get an allowance}?</en>" }
+      - { speaker: "Bora", text: "Alıyorum. Pazartesi bitti." }
+  - item: U8-030
+    durum: "Kaan bir hafta boyunca evdeki her işi yaptı; annesi ona iki sinema bileti uzatıyor."
+    lines:
+      - { speaker: "Kaan'ın annesi", text: "<en>This is your {U8-030|reward}.</en> Bir hafta hiç söylenmedin." }
+      - { speaker: "Kaan", text: "Bir hafta daha yaparsam patlamış mısır da var mı?" }

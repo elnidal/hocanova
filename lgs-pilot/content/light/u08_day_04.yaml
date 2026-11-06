@@ -31,6 +31,10 @@ steps:
       options: ["I'll take out the garbage now.", "I'll take off the garbage now.", "I'll make the garbage now.", "I'll read the garbage now."]
       answer: 0
       explain: "Çöp kutusu dolu; çöpü çıkarmak gerekir (take out). take off giysi çıkarmak içindir."
+      why_wrong:
+        - "take off çıkarmak (giysi) ya da havalanmaktır; çöp için take out denir."
+        - "Çöp yapılmaz; dolu kova dışarı çıkarılır."
+        - "Çöp okunmaz; kova dolu ve kötü kokuyor."
     tekrar:
       id: u8d04-016-t
       type: odd_one_out
@@ -40,6 +44,10 @@ steps:
       options: ["sofa", "garbage", "trash", "rubbish"]
       answer: 0
       explain: "garbage, trash, rubbish = çöp; sofa kanepedir."
+      why_wrong:
+        - "garbage çöp demektir; diğerleriyle aynı."
+        - "trash çöp demektir; diğerleriyle aynı."
+        - "rubbish çöp demektir; diğerleriyle aynı."
   - item: U8-017
     card:
       example_en: "The school janitor cleans the corridors every morning."
@@ -63,6 +71,10 @@ steps:
       options: ["The janitor", "The tourist", "The cook", "The spectator"]
       answer: 0
       explain: "Duyuruya göre kırık pencere ya da akan musluk hademeye söylenir."
+      why_wrong:
+        - "Duyuruda turist yok; bina Mr Yılmaz'a emanet."
+        - "Aşçı değil, janitor binadan sorumlu."
+        - "spectator seyircidir; duyuruda geçmiyor."
     tekrar:
       id: u8d04-017-t
       type: situation
@@ -72,6 +84,10 @@ steps:
       options: ["A janitor", "A pilot", "A tour guide", "A dentist"]
       answer: 0
       explain: "Okul binasını temiz tutan kişi hademedir."
+      why_wrong:
+        - "Pilot uçak kullanır; okulda çalışmaz."
+        - "Tur rehberi turistlerle çalışır; okulu temizlemez."
+        - "Diş hekimi dişlere bakar; binayla ilgilenmez."
   - item: U8-018
     card:
       example_en: "I do the laundry on Sundays. The laundry basket is full."
@@ -94,6 +110,10 @@ steps:
       options: ["There is a lot of laundry to do today.", "There are a lot of laundries to do today.", "There is a lot of laundrys to do today.", "There are many laundry to do today."]
       answer: 0
       explain: "laundry sayılamaz isimdir: There is a lot of laundry."
+      why_wrong:
+        - "laundry sayılamaz; çoğul olmaz."
+        - "laundry çoğul eki almaz."
+        - "laundry sayılamaz; many ile kullanılmaz."
     tekrar:
       id: u8d04-018-t
       type: dialogue_complete
@@ -104,6 +124,10 @@ steps:
       options: ["They are in the laundry basket.", "They are in the fridge.", "They are in the cooker.", "They are in the bin."]
       answer: 0
       explain: "Kirli çoraplar çamaşır sepetindedir."
+      why_wrong:
+        - "Kirli çorap buzdolabında durmaz."
+        - "Kirli çorap ocakta durmaz."
+        - "Kirli çorap yıkanır; bin çöp kovasıdır."
   - item: U8-019
     card:
       example_en: "Separate the white clothes from the coloured ones before you wash them."
@@ -119,13 +143,18 @@ steps:
       explain: "Koyu ve beyaz çamaşırları ayırmak: separate."
     sina:
       id: u8d04-019-s
-      type: gap_fill
+      type: message_infer
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which one is the correct spelling?</en>"
-      options: ["separate", "seperate", "separete", "sepparate"]
+      stem_id: S14
+      prompt: "<en>What can we understand from the note on the washing machine?</en>"
+      stem: "<en>Kids, please separate the laundry before you wash it. Put the white clothes in one basket and the dark clothes in the other. Love, Dad</en>"
+      options: ["The white clothes and the dark clothes should be washed apart.", "All the clothes should go in one basket.", "Dad washed all the clothes yesterday.", "The children should buy two new baskets."]
       answer: 0
-      explain: "Doğru yazım: separate (ortada a)."
+      explain: "\"separate\" ve iki ayrı sepet: beyazlar ve koyular ayrı yıkanacak."
+      why_wrong:
+        - "Notta \"one basket\" beyazlar, \"the other\" koyular için; iki sepet var."
+        - "Not yıkamanın daha yapılmadığını gösteriyor: \"before you wash it\"."
+        - "Notta sepet satın almak yok; var olan sepetlere koymaları isteniyor."
     tekrar:
       id: u8d04-019-t
       type: situation
@@ -135,6 +164,10 @@ steps:
       options: ["Because dark colours can stain white clothes", "Because white clothes are heavier", "Because dark clothes are always dirty", "Because white clothes can't be washed"]
       answer: 0
       explain: "Koyu renkler beyaz çamaşırları lekeleyebilir."
+      why_wrong:
+        - "Ağırlık nedeniyle ayrılmaz; sorun renktir."
+        - "Koyu giysiler hep kirli değildir; sorun renk geçmesidir."
+        - "Beyaz giysiler de yıkanır; yalnız koyularla birlikte değil."
   - item: U8-020
     card:
       example_en: "I hang out the laundry in the garden when it is sunny."
@@ -158,6 +191,10 @@ steps:
       options: ["She is hanging out the laundry.", "She is hanging on the laundry.", "She is hanging out with the laundry.", "She is hanging in the laundry."]
       answer: 0
       explain: "Bahçedeki anne çamaşır seriyor: hang out the laundry."
+      why_wrong:
+        - "hang out ile kullanılır; \"hanging on\" başka anlam taşır."
+        - "\"Hang out with\" biriyle takılmaktır; çamaşırla olmaz."
+        - "hang in burada kalıp değildir; doğrusu hang out."
     tekrar:
       id: u8d04-020-t
       type: situation
@@ -167,6 +204,10 @@ steps:
       options: ["hang out the laundry", "do the laundry", "fold the laundry", "separate the laundry"]
       answer: 0
       explain: "Islak çamaşırı kurumaya asmak: hang out the laundry."
+      why_wrong:
+        - "do the laundry yıkamaktır; dışarı asmak değil."
+        - "fold katlamaktır; kurumuş giysiler için yapılır."
+        - "separate ayırmaktır; yıkamadan önce yapılır."
 tips:
   - type: hafiza_kancasi
     refs: [U8-019, U8-018, U8-020]
@@ -182,3 +223,33 @@ notifications:
   morning: "Bugün: çöpü çıkarmak, hademe ve çamaşır. Sepet dolu! 🧺"
   evening: "Hang out, hang on, hang out the laundry: farkı biliyor musun? 🤔"
   review: "\"Seperate\" mı, \"separate\" mı? Hangisi doğru yazım? ✍️"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U8-016
+    durum: "Mutfakta keskin bir koku var; kovanın kapağı artık kapanmıyor."
+    lines:
+      - { speaker: "Kaan'ın annesi", text: "Kaan, <en>{U8-016|take out the rubbish}, please!</en>" }
+      - { speaker: "Kaan", text: "Dün de ben indirdim." }
+      - { speaker: "Kaan'ın annesi", text: "Bugün de sen; koku senin odana doğru gidiyor." }
+  - item: U8-017
+    durum: "Sınıfta pencerenin kolu koptu; Elif elinde kolla koridorda duruyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Bunu <en>our {U8-017|janitor}</en> Yılmaz Amca'ya götür; binanın her vidasını tanır." }
+      - { speaker: "Elif", text: "Sabah altıdan beri burada olan Yılmaz Amca, değil mi? Tamam hocam." }
+  - item: U8-018
+    durum: "Selin, Emre'nin odasından taşan bir sepeti taşıyor; yolda çoraplar düşüyor."
+    lines:
+      - { speaker: "Selin", text: "Bunların hepsi senin mi? <en>Who's going to {U8-018|do the laundry}?</en>" }
+      - { speaker: "Emre", text: "Makine yapar." }
+      - { speaker: "Selin", text: "O makineye bu kadar çorap girmez." }
+  - item: U8-019
+    durum: "Ece beyaz gömlekle siyah çorabı aynı makineye atmak üzere; babası son anda yetişiyor."
+    lines:
+      - { speaker: "Ece'nin babası", text: "Dur! <en>{U8-019|Separate} the white clothes from the black ones!</en>" }
+      - { speaker: "Ece", text: "Ne olur ki?" }
+      - { speaker: "Ece'nin babası", text: "Geçen sefer beyaz gömleğim griydi." }
+  - item: U8-020
+    durum: "Güneşli bir gün; ıslak havlular sepette bekliyor, Bora'nın dedesi balkondan sesleniyor."
+    lines:
+      - { speaker: "Dedesi", text: "Hava güzel. <en>Let's {U8-020|hang out the washing}.</en>" }
+      - { speaker: "Bora", text: "Mandallar nerede, dede?" }
+      - { speaker: "Dedesi", text: "Caz plaklarının yanında, nerede olacak?" }
