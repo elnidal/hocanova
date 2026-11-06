@@ -31,6 +31,10 @@ steps:
       options: ["Sea levels are rising.", "The Earth is getting colder.", "Deserts are becoming forests.", "Rainfall is stopping everywhere."]
       answer: 0
       explain: "Buzlar eriyor ve deniz seviyeleri yükseliyor."
+      why_wrong:
+        - "Metin \"getting warmer\" diyor; tam tersi."
+        - "Metinde çöl ve orman geçmiyor."
+        - "Metin yağmurun durduğundan söz etmiyor."
     tekrar:
       id: u10d06-026-t
       type: synonym
@@ -40,6 +44,10 @@ steps:
       options: ["worldwide", "local", "tiny", "private"]
       answer: 0
       explain: "global = dünya çapında (worldwide)."
+      why_wrong:
+        - "local yereldir; global'in karşıtı."
+        - "tiny çok küçüktür."
+        - "private özeldir."
   - item: U10-027
     card:
       example_en: "Greenhouse gases trap heat in the atmosphere."
@@ -63,6 +71,10 @@ steps:
       options: ["They trap heat.", "They cool the Earth.", "They make rain.", "They clean the air."]
       answer: 0
       explain: "Metne göre ısıyı hapsedip Dünya'yı ısıtırlar."
+      why_wrong:
+        - "Metin Dünya'yı ısıttıklarını söylüyor; tam tersi."
+        - "Metinde yağmurdan söz edilmiyor."
+        - "Metin havayı temizlediğini söylemiyor; kömür ve petrolden çıkıyorlar."
     tekrar:
       id: u10d06-027-t
       type: situation
@@ -72,6 +84,10 @@ steps:
       options: ["A glass building where plants grow", "A house painted green", "A park with trees", "A shop for green clothes"]
       answer: 0
       explain: "greenhouse = bitki yetiştirilen cam yapı (sera)."
+      why_wrong:
+        - "Yeşile boyalı ev değil; bitkilerin yetiştiği cam yapıdır."
+        - "Park açık alandır; cam yapı değildir."
+        - "Giyim dükkânı değildir."
   - item: U10-028
     card:
       example_en: "Air pollution is a problem in big cities."
@@ -95,6 +111,10 @@ steps:
       options: ["polluted", "pollution", "pollute", "pollutes"]
       answer: 0
       explain: "\"river\" isminin önüne sıfat gelir: polluted (kirlenmiş)."
+      why_wrong:
+        - "pollution isimdir; river'dan önce sıfat gerekir."
+        - "pollute fiildir; sıfat gerekir."
+        - "pollutes çekimli fiildir; sıfat gerekir."
     tekrar:
       id: u10d06-028-t
       type: odd_one_out
@@ -104,6 +124,10 @@ steps:
       options: ["Water pollution", "Water fountain", "Water bottle", "Waterfall"]
       answer: 0
       explain: "Su kirliliği bir kirlilik türüdür."
+      why_wrong:
+        - "Su çeşmesi kirlilik türü değildir."
+        - "Su şişesi kirlilik türü değildir."
+        - "Şelale doğa güzelliğidir; kirlilik değil."
   - item: U10-029
     card:
       example_en: "People cut down trees, and deforestation causes landslides."
@@ -127,6 +151,10 @@ steps:
       options: ["Landslides", "Rainbows", "Earthquakes", "Tsunamis"]
       answer: 0
       explain: "Ağaçsız toprak yağmurda kayar: heyelan."
+      why_wrong:
+        - "Gökkuşağı ağaç kesmeyle ilgili değildir."
+        - "Depremi plakalar oluşturur; ağaçlar değil."
+        - "Tsunami denizde olur; ağaç kesmeyle olmaz."
     tekrar:
       id: u10d06-029-t
       type: situation
@@ -136,6 +164,10 @@ steps:
       options: ["Cutting down trees without planting new ones", "Planting trees", "Protecting wildlife", "Using less paper"]
       answer: 0
       explain: "Yeni ağaç dikmeden ağaç kesmek ormanlara zarar verir."
+      why_wrong:
+        - "Ağaç dikmek ormanlar için iyidir."
+        - "Vahşi yaşamı korumak ormanlar için iyidir."
+        - "Az kâğıt kullanmak daha az ağaç kesilmesini sağlar."
   - item: U10-030
     card:
       example_en: "There is a water shortage in the region. We are running out of water."
@@ -158,16 +190,24 @@ steps:
       options: ["We are running out of water.", "We are running out water.", "We are running out to water.", "We are running of out water."]
       answer: 0
       explain: "Kalıp: run out of + isim."
+      why_wrong:
+        - "run out ile of gerekir: running out of water."
+        - "run out ile to kullanılmaz."
+        - "Sözcük sırası bozuk: running out of."
     tekrar:
       id: u10d06-030-t
-      type: gap_fill
+      type: table_graph
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which one completes the sentence?</en>"
-      stem: "<en>The plants died because of the ________ of rain.</en>"
-      options: ["lack", "luck", "lock", "lick"]
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+      stem: "<en>WATER LEVEL IN THE DAM\nJanuary: 80%\nMarch: 60%\nMay: 40%\nJuly: 15%</en>"
+      options: ["The town may have a water shortage in July.", "The dam is full in July.", "The water level rises every month.", "March has the lowest water level."]
       answer: 0
-      explain: "\"lack of rain\" = yağmur eksikliği. luck şanstır."
+      explain: "Temmuzda su %15'e düşmüş: su sıkıntısı çıkabilir."
+      why_wrong:
+        - "Temmuzda oran %15; baraj dolu değil, en düşük seviyede."
+        - "Sayılar 80'den 15'e iniyor; seviye yükselmiyor, düşüyor."
+        - "En düşük oran temmuzda; martta %60 var."
 tips:
   - type: tuzak
     refs: [U10-027]
@@ -183,3 +223,30 @@ notifications:
   morning: "Bugün: küresel ısınma, sera gazı, kirlilik, ormansızlaşma ve kıtlık 🌡️"
   evening: "Greenhouse \"yeşil ev\" mi demek? 🤔"
   review: "Lack mi, luck mı? \"Yağmur eksikliği\" hangisi? ☔"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U10-026
+    durum: "Kasım ortasında Ece okula tişörtle geliyor."
+    lines:
+      - { speaker: "Ece", text: "Kasımda tişört! <en>It's {U10-026|global warming}.</en>" }
+      - { speaker: "Selin", text: "Yoksa montunu yine evde mi unuttun?" }
+  - item: U10-027
+    durum: "Bora ve Elif güneşe iki kavanoz koymuş; birinin kapağı kapalı, termometresi yüksek."
+    lines:
+      - { speaker: "Bora", text: "Bu kavanozun içi neden daha sıcak?" }
+      - { speaker: "Elif", text: "<en>That's the {U10-027|greenhouse effect}.</en> Yazın arabaya binmek gibi." }
+  - item: U10-028
+    durum: "Kaan dere kenarında duruyor; suyun üstünde köpük ve plastik şişeler var."
+    lines:
+      - { speaker: "Kaan", text: "<en>This is water {U10-028|pollution}.</en>" }
+      - { speaker: "Selin", text: "Fotoğrafını çek, belediyeye yazalım." }
+  - item: U10-029
+    durum: "Tepeye giden yolda kütükler sıra sıra duruyor; Selin'in babası arabayı yavaşlatıyor."
+    lines:
+      - { speaker: "Selin'in babası", text: "Burası yemyeşildi. <en>{U10-029|Deforestation} is a big problem.</en>" }
+      - { speaker: "Selin", text: "Okuldaki fidan kampanyasını buraya da getirelim." }
+  - item: U10-030
+    durum: "Binanın girişinde su kesintisi duyurusu asılı; Ece havluyla duşa gidiyor."
+    lines:
+      - { speaker: "Ece'nin annesi", text: "<en>There is a water {U10-030|shortage} this summer.</en> Duşu kısa tut." }
+      - { speaker: "Ece", text: "Ne kadar kısa?" }
+      - { speaker: "Ece'nin annesi", text: "Şarkının nakaratına kadar." }

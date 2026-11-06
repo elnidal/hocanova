@@ -30,6 +30,10 @@ steps:
       options: ["A traffic jam", "An earthquake", "A flood", "A volcanic eruption"]
       answer: 0
       explain: "Trafik sıkışıklığı doğal afet değildir."
+      why_wrong:
+        - "Deprem bir doğal afettir."
+        - "Sel bir doğal afettir."
+        - "Yanardağ patlaması bir doğal afettir."
     tekrar:
       id: u10d01-001-t
       type: situation
@@ -39,6 +43,10 @@ steps:
       options: ["Rainbows are natural phenomena.", "Rainbows are natural phenomenon.", "A rainbow is natural phenomena.", "A rainbow are natural phenomenon."]
       answer: 0
       explain: "phenomenon tekil, phenomena çoğuldur: Rainbows are natural phenomena."
+      why_wrong:
+        - "Rainbows çoğul; phenomenon tekildir."
+        - "A rainbow tekil; phenomena çoğuldur."
+        - "A rainbow ile \"are\" kullanılmaz."
   - item: U10-002
     card:
       example_en: "A strong earthquake hit the city. There were small aftershocks."
@@ -62,6 +70,10 @@ steps:
       options: ["Small aftershocks followed.", "A big flood came.", "A storm started.", "A fire started."]
       answer: 0
       explain: "Sabah küçük artçı sarsıntılar (aftershocks) oldu."
+      why_wrong:
+        - "Metinde sel yok; yalnız artçı sarsıntılar var."
+        - "Metinde fırtına yok."
+        - "Metinde yangın yok."
     tekrar:
       id: u10d01-002-t
       type: situation
@@ -71,6 +83,10 @@ steps:
       options: ["A smaller shake after the main earthquake", "A big wave in the sea", "A kind of storm", "A loud noise from a volcano"]
       answer: 0
       explain: "Artçı sarsıntı, ana depremden sonra gelen daha küçük sarsıntıdır."
+      why_wrong:
+        - "Denizdeki dev dalga tsunamidir."
+        - "Fırtına hava olayıdır; artçı sarsıntı yerin sallanmasıdır."
+        - "Yanardağ sesi değil, ana depremden sonraki küçük sarsıntıdır."
   - item: U10-003
     card:
       example_en: "A volcanic eruption sends ash into the sky. A tsunami is a giant sea wave."
@@ -93,13 +109,24 @@ steps:
       options: ["A giant sea wave caused by an earthquake or an eruption", "A strong wind over land", "A long period without rain", "A kind of fire"]
       answer: 0
       explain: "Tsunami, deprem ya da patlamayla oluşan dev deniz dalgasıdır."
+      why_wrong:
+        - "Karada esen güçlü rüzgâr tornado ya da fırtınadır."
+        - "Uzun süre yağmur yağmaması drought'tur."
+        - "Tsunami su kütlesidir, yangın değildir."
     tekrar:
       id: u10d01-003-t
-      type: odd_one_out
-      prompt: "<en>In \"tsunami\", which letter at the beginning is not said?</en>"
-      options: ["t", "s", "u", "n"]
+      type: text_infer
+      lgs_like: true
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the brochure?</en>"
+      stem: "<en>VOLCANO MUSEUM\nWatch a film about a volcanic eruption. See real ash and rocks. Learn how a tsunami starts.\nOpen every day: 9 a.m. – 5 p.m.\nTickets: 50 liras</en>"
+      options: ["A gift shop", "A film about an eruption", "The price of the tickets", "The opening hours"]
       answer: 0
-      explain: "tsunami /suːˈnɑːmi/: baştaki t okunmaz."
+      explain: "Broşürde film, saat ve bilet fiyatı var; hediyelik eşya dükkânından söz edilmiyor."
+      why_wrong:
+        - "\"Watch a film about a volcanic eruption\" broşürde yazıyor."
+        - "\"Tickets: 50 liras\" fiyatı veriyor."
+        - "\"9 a.m. – 5 p.m.\" açılış saatlerini veriyor."
   - item: U10-004
     card:
       example_en: "Heavy rain caused a flood. A landslide closed the road."
@@ -123,6 +150,10 @@ steps:
       options: ["There was a landslide.", "There was a drought.", "There was a rainbow.", "There was a festival."]
       answer: 0
       explain: "Toprak ve kayaların yola düşmesi heyelandır (landslide)."
+      why_wrong:
+        - "drought kuraklıktır; toprak ve kaya düşürmez."
+        - "Gökkuşağı yolu kapatmaz."
+        - "Festival \"Soil and rocks fell\" ile uyuşmaz."
     tekrar:
       id: u10d01-004-t
       type: situation
@@ -132,6 +163,10 @@ steps:
       options: ["An avalanche", "A drought", "A heat wave", "A tsunami"]
       answer: 0
       explain: "Karlı dağlarda çığ (avalanche) düşer."
+      why_wrong:
+        - "drought kuraklıktır; karla ilgisi yok."
+        - "Sıcak hava dalgası karlı dağda olmaz."
+        - "Tsunami denizde olur; dağda değil."
   - item: U10-005
     card:
       example_en: "A hurricane forms over the ocean. A tornado forms over land."
@@ -155,6 +190,10 @@ steps:
       options: ["Over warm oceans", "Over high mountains", "In deserts", "Under the ground"]
       answer: 0
       explain: "Metne göre kasırgalar sıcak okyanuslar üzerinde başlar."
+      why_wrong:
+        - "Metin \"warm oceans\" diyor; dağ geçmiyor."
+        - "Çöl geçmiyor; okyanusta başlıyor."
+        - "Yerin altı depremle ilgilidir; hurricane okyanusta başlar."
     tekrar:
       id: u10d01-005-t
       type: odd_one_out
@@ -164,6 +203,10 @@ steps:
       options: ["drought", "hurricane", "tornado", "thunderstorm"]
       answer: 0
       explain: "drought kuraklıktır; diğerleri fırtına türleridir."
+      why_wrong:
+        - "hurricane bir fırtına türüdür."
+        - "tornado bir fırtına türüdür."
+        - "thunderstorm gök gürültülü fırtınadır."
 tips:
   - type: tuzak
     refs: [U10-005]
@@ -179,3 +222,31 @@ notifications:
   morning: "Yeni ünite! Bugün: afet, deprem, tsunami, sel, hortum ve kasırga 🌍"
   evening: "Tornado mu, hurricane mi? Hangisi okyanusta oluşur? 🤔"
   review: "\"Flood\" kelimesi nasıl okunur? \"Fluud\" mu, \"flad\" mı? 🌊"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U10-001
+    durum: "Murat Bey tahtaya yeni ünitenin adını yazıyor; haritada kırmızı işaretler var."
+    lines:
+      - { speaker: "Murat Bey", text: "Bu ünitede <en>{U10-001|natural disasters}</en> konuşacağız. Panik yok, hazırlık var." }
+      - { speaker: "Kaan", text: "Matematik sınavım da listede mi, hocam?" }
+  - item: U10-002
+    durum: "Okulda prova günü: zil çalıyor, herkes sıraların yanında bekliyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Bu yalnızca bir prova. <en>What do we do in an {U10-002|earthquake}?</en>" }
+      - { speaker: "Selin", text: "Sıranın altına gireriz, hocam. Koşmak yok." }
+  - item: U10-003
+    durum: "Ece, fuardaki maketini yine masaya koydu; sirke ve karbonat hazır."
+    lines:
+      - { speaker: "Ece", text: "<en>This is a {U10-003|volcano}.</en> İzleyin!" }
+      - { speaker: "Bora", text: "Geçen sefer tavanı da boyamıştı. Bir adım geri gidelim." }
+  - item: U10-004
+    durum: "Selin'in babası direksiyonda; dağ yolunda kırmızı bir tabela duruyor."
+    lines:
+      - { speaker: "Selin'in babası", text: "<en>A {U10-004|landslide} closed the road.</en> Öbür yoldan gidiyoruz." }
+      - { speaker: "Selin", text: "Eyvah, 3.40'ta varamayacağız, baba." }
+      - { speaker: "Selin'in babası", text: "İşte buna gerçekten üzüldüm." }
+  - item: U10-005
+    durum: "Akşam haberinde okyanusun üstünde dev bir bulut dönüyor; Kaan büyükannesiyle izliyor."
+    lines:
+      - { speaker: "Spiker", text: "<en>A {U10-005|hurricane} is moving over the ocean.</en>" }
+      - { speaker: "Büyükannesi", text: "Kaan, balkondaki çamaşırları al." }
+      - { speaker: "Kaan", text: "Okyanus çok uzakta, büyükanne!" }

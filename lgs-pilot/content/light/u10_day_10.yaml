@@ -30,15 +30,24 @@ steps:
       options: ["happen", "stop", "escape", "borrow"]
       answer: 0
       explain: "occur ≈ happen."
+      why_wrong:
+        - "stop durmaktır; tam tersi."
+        - "escape kaçmaktır."
+        - "borrow ödünç almaktır."
     tekrar:
       id: u10d10-045-t
-      type: gap_fill
+      type: table_graph
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>What is the past form of \"occur\"?</en>"
-      options: ["occurred", "occured", "occurd", "occurrd"]
+      stem_id: S06
+      prompt: "<en>According to the chart, which of the following is TRUE?</en>"
+      stem: "<en>DISASTERS IN OUR REGION (2020–2024)\nFloods: 12\nForest fires: 7\nLandslides: 4\nEarthquakes: 1</en>"
+      options: ["Floods occurred more often than forest fires.", "Earthquakes occurred most often.", "Landslides occurred twelve times.", "Forest fires occurred less often than landslides."]
       answer: 0
-      explain: "occur – occurred (r ikilenir)."
+      explain: "12, 7'den büyük: seller orman yangınlarından daha sık olmuş."
+      why_wrong:
+        - "Earthquakes satırındaki sayı 1, tablonun en küçüğü."
+        - "12 sayısı Floods satırında; Landslides 4."
+        - "Forest fires 7, Landslides 4; karşılaştırma ters kurulmuş."
   - item: U10-046
     card:
       example_en: "A sudden storm surprised the tourists. Suddenly, the ground shook."
@@ -62,15 +71,24 @@ steps:
       options: ["sudden", "suddenly", "suddenness", "suddens"]
       answer: 0
       explain: "\"change\" isminin önüne sıfat gelir: sudden."
+      why_wrong:
+        - "suddenly zarftır; change isminden önce sıfat gerekir."
+        - "suddenness isimdir; sıfat gerekir."
+        - "suddens diye bir kelime yok."
     tekrar:
       id: u10d10-046-t
-      type: situation
+      type: dialogue_complete
       lgs_like: true
-      stem_id: S09
-      prompt: "<en>Which word is an adverb?</en>"
-      options: ["suddenly", "sudden", "storm", "change"]
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: Why did everyone scream during the film?\nBora: ________ The whole room went dark.</en>"
+      options: ["The lights suddenly went out.", "The lights slowly came on.", "The film ended on time.", "The seats were very comfortable."]
       answer: 0
-      explain: "Zarf (adverb): suddenly."
+      explain: "Oda bir anda kararınca herkes bağırmış: ışıklar birden gitmiş."
+      why_wrong:
+        - "Işıklar yavaşça yansa oda kararmaz; tam tersi olur."
+        - "Filmin vaktinde bitmesi çığlığı açıklamaz."
+        - "Rahat koltuklar çığlığa ya da karanlığa neden olmaz."
   - item: U10-047
     card:
       example_en: "The Earth consists of layers."
@@ -93,6 +111,10 @@ steps:
       options: ["The team consists of ten students.", "The team is consisted of ten students.", "The team consist ten students.", "The team consists ten students."]
       answer: 0
       explain: "Kalıp: consist of + isim."
+      why_wrong:
+        - "consist edilgen kurulmaz."
+        - "team tekil: consists; of da eksik."
+        - "of eksik: consists of."
     tekrar:
       id: u10d10-047-t
       type: synonym
@@ -102,6 +124,10 @@ steps:
       options: ["be made up of", "be afraid of", "be tired of", "be proud of"]
       answer: 0
       explain: "consist of ≈ be made up of."
+      why_wrong:
+        - "be afraid of korkmaktır."
+        - "be tired of bıkmaktır."
+        - "be proud of gurur duymaktır."
   - item: U10-048
     card:
       example_en: "The earthquake lasted approximately forty seconds."
@@ -125,6 +151,10 @@ steps:
       options: ["About 800", "Exactly 200", "About 80", "Nearly 8,000"]
       answer: 0
       explain: "approximately 800 = yaklaşık 800 kişi."
+      why_wrong:
+        - "200 çocukların sayısı; \"exactly\" de yanlış."
+        - "Metin 800 diyor; 80 değil."
+        - "Metin 800 diyor; 8.000 değil."
     tekrar:
       id: u10d10-048-t
       type: synonym
@@ -134,6 +164,10 @@ steps:
       options: ["about", "never", "exactly", "hardly"]
       answer: 0
       explain: "approximately ≈ about."
+      why_wrong:
+        - "never asla demektir."
+        - "exactly tam olarak demektir; tam tersi."
+        - "hardly neredeyse hiç demektir."
 tips:
   - type: tuzak
     refs: [U10-047]
@@ -149,3 +183,26 @@ notifications:
   morning: "Son gün: meydana gelmek, ani, oluşmak ve yaklaşık 📖"
   evening: "\"Is consisted of\" doğru mu? Neden? 🤔"
   review: "\"Occur\" kelimesine en yakın anlam hangisi? 📖"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U10-045
+    durum: "Elif okuma parçasında bir kelimenin altını çiziyor."
+    lines:
+      - { speaker: "Elif", text: "Hocam, <en>what does \"{U10-045|occur}\" mean?</en>" }
+      - { speaker: "Murat Bey", text: "<en>It means \"happen\".</en> Sınavda karşına böyle çıkar." }
+  - item: U10-046
+    durum: "Ders sessiz sedasız sürerken sınıf bir anda kararıyor."
+    lines:
+      - { speaker: "Duru", text: "<en>{U10-046|Suddenly}, the lights went out!</en>" }
+      - { speaker: "Kaan", text: "Sınav iptal mi?" }
+      - { speaker: "Murat Bey", text: "Hayır. Güneş dışarıda hâlâ orada, Kaan." }
+  - item: U10-047
+    durum: "Bora, grubu Wrong Number'ı müzik öğretmenine tanıtıyor; Fıstık da kapıdan bakıyor."
+    lines:
+      - { speaker: "Bora", text: "<en>Our band {U10-047|consists of} three people.</en>" }
+      - { speaker: "Duru", text: "Dört. Fıstık da havlıyor." }
+  - item: U10-048
+    durum: "Kantin kuyruğu kapıya kadar uzamış; Kaan parmak ucunda bakıyor."
+    lines:
+      - { speaker: "Kaan", text: "Önümüzde kaç kişi var?" }
+      - { speaker: "Ece", text: "<en>{U10-048|Approximately} thirty.</en>" }
+      - { speaker: "Kaan", text: "Tost bize yetişmez." }

@@ -23,13 +23,18 @@ steps:
       explain: "Gökte çakan ışık yıldırımdır: lightning."
     sina:
       id: u10d02-006-s
-      type: situation
+      type: dialogue_complete
       lgs_like: true
-      stem_id: S09
-      prompt: "<en>Which word is about the electric lights in a room?</en>"
-      options: ["lighting", "lightning", "thunder", "storm"]
+      stem_id: S01
+      prompt: "<en>Which of the following completes the dialogue?</en>"
+      stem: "<en>Ece: Why are you running to the building?\nKaan: ________ It isn't safe under the trees.</en>"
+      options: ["There is lightning in the sky.", "There is a rainbow in the sky.", "The sun is shining.", "It is a beautiful day."]
       answer: 0
-      explain: "Odadaki aydınlatma: lighting. lightning yıldırımdır."
+      explain: "Ağaçların altının güvenli olmamasının nedeni gökteki yıldırım."
+      why_wrong:
+        - "Gökkuşağı tehlike değildir; koşup içeri kaçmayı gerektirmez."
+        - "Güneşli havada ağaçların altı güvensiz olmaz."
+        - "Güzel bir gün \"It isn't safe\" sözüyle çelişir."
     tekrar:
       id: u10d02-006-t
       type: gap_fill
@@ -40,6 +45,10 @@ steps:
       options: ["thunderstorm", "drought", "rainbow", "landslide"]
       answer: 0
       explain: "Yıldırım düşebilecek gök gürültülü fırtınada ağacın altında durulmaz."
+      why_wrong:
+        - "Kuraklıkta ağaç altında durmak tehlike yaratmaz."
+        - "Gökkuşağı tehlikeli değildir."
+        - "Heyelan yamaçta olur; ağaç altı uyarısıyla ilgili değil."
   - item: U10-007
     card:
       example_en: "There was a long drought, and a forest fire started."
@@ -63,6 +72,10 @@ steps:
       options: ["It didn't rain for two months.", "It rained every day.", "The village was under water.", "It snowed in July."]
       answer: 0
       explain: "Metne göre iki ay boyunca yağmur yağmadı."
+      why_wrong:
+        - "Metin \"no rain for two months\" diyor."
+        - "Köy sular altında değil; yakınında yangın çıkmış."
+        - "Metin \"very hot and dry\" diyor; kar yok."
     tekrar:
       id: u10d02-007-t
       type: odd_one_out
@@ -72,6 +85,10 @@ steps:
       options: ["flood", "fire", "earthquake", "wind"]
       answer: 0
       explain: "drought (çok az su) ↔ flood (çok fazla su)."
+      why_wrong:
+        - "Yangın kuraklığın karşıtı değil, sonucu olabilir."
+        - "Deprem suyla ilgili değildir."
+        - "Rüzgâr kuraklığın karşıtı değildir."
   - item: U10-008
     card:
       example_en: "An earthquake struck the region. The storm hit the coast."
@@ -87,13 +104,18 @@ steps:
       explain: "Geçmiş zaman: strike – struck."
     sina:
       id: u10d02-008-s
-      type: gap_fill
+      type: text_infer
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>What is the past form of \"shake\"?</en>"
-      options: ["shook", "shaked", "shaken", "shakes"]
+      stem_id: S04
+      prompt: "<en>According to the news, which of the following is TRUE?</en>"
+      stem: "<en>An earthquake struck the town at 5 a.m. It shook the buildings for about twenty seconds. Schools are closed today.</en>"
+      options: ["The ground shook for about twenty seconds.", "The earthquake struck in the evening.", "The ground shook for two hours.", "Schools are open today."]
       answer: 0
-      explain: "shake – shook – shaken."
+      explain: "\"for about twenty seconds\": yaklaşık yirmi saniye sürmüş."
+      why_wrong:
+        - "\"5 a.m.\" sabahın erken saatidir; akşam değil."
+        - "Süre saat değil, yirmi saniye olarak verilmiş."
+        - "Haberde \"Schools are closed today\" yazıyor."
     tekrar:
       id: u10d02-008-t
       type: situation
@@ -103,6 +125,10 @@ steps:
       options: ["The earthquake shook the buildings.", "The earthquake shaked the buildings.", "The earthquake shaken the buildings.", "The earthquake shakes the buildings yesterday."]
       answer: 0
       explain: "Geçmişte sallamak: shook."
+      why_wrong:
+        - "shake düzensizdir; -ed almaz."
+        - "shaken üçüncü biçimdir; tek başına geçmiş zaman olmaz."
+        - "\"yesterday\" varken geniş zaman kullanılmaz."
   - item: U10-009
     card:
       example_en: "The fire destroyed many houses. The flood wiped out the crops."
@@ -125,6 +151,10 @@ steps:
       options: ["The earthquake destroyed the building.", "The earthquake damaged the building a little.", "The earthquake shook the building.", "The earthquake missed the building."]
       answer: 0
       explain: "destroy = tamamen yok etmek; damage hasar vermektir."
+      why_wrong:
+        - "\"A little\" hasar azdır; bina hâlâ kullanılabilir."
+        - "Sallanmak binanın kullanılamaz olduğunu göstermez."
+        - "miss ıskalamaktır; binaya bir şey olmamış demektir."
     tekrar:
       id: u10d02-009-t
       type: synonym
@@ -134,6 +164,10 @@ steps:
       options: ["destroy completely", "build again", "clean slowly", "paint"]
       answer: 0
       explain: "wipe out ≈ destroy completely."
+      why_wrong:
+        - "build again yeniden yapmaktır; tam tersi."
+        - "Yavaşça temizlemek silip yok etmek değildir."
+        - "Boyamanın yok etmekle ilgisi yok."
   - item: U10-010
     card:
       example_en: "The old building collapsed during the earthquake."
@@ -156,6 +190,10 @@ steps:
       options: ["The bridge collapsed after the flood.", "The flood collapsed the bridge.", "The bridge was collapsing the flood.", "The bridge collapsed by the flood."]
       answer: 0
       explain: "collapse nesne almaz; kendiliğinden çöker: The bridge collapsed."
+      why_wrong:
+        - "collapse nesne almaz: köprü kendisi yıkılır."
+        - "\"Was collapsing the flood\" anlamsızdır; collapse nesne almaz."
+        - "collapse edilgen kurulmaz; \"by\" kullanılmaz."
     tekrar:
       id: u10d02-010-t
       type: situation
@@ -165,6 +203,10 @@ steps:
       options: ["The wall fell down", "Someone painted the wall", "Someone built the wall", "The wall became hot"]
       answer: 0
       explain: "collapse = çökmek, yıkılmak."
+      why_wrong:
+        - "Boyamakla ilgisi yok."
+        - "İnşa etmek tam tersidir."
+        - "Sıcaklıkla ilgisi yok."
 tips:
   - type: tuzak
     refs: [U10-006]
@@ -180,3 +222,31 @@ notifications:
   morning: "Bugün: yıldırım, kuraklık, vurmak, yok etmek ve çökmek ⚡"
   evening: "Lightning mi, lighting mi? Hangisi yıldırım? 🤔"
   review: "\"Collapse\" nesne alır mı? Hayır! Neden? 🏚️"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U10-006
+    durum: "Akşam gökyüzü bir anda aydınlanıyor; Duru gitarıyla balkonda."
+    lines:
+      - { speaker: "Duru", text: "Gördün mü? <en>{U10-006|Lightning}!</en>" }
+      - { speaker: "Duru'nun annesi", text: "İçeri gel! Gitarın metal telleriyle orası hiç iyi fikir değil." }
+  - item: U10-007
+    durum: "Eylül sonu; Ece'nin babası sararmış otlara bakıyor, iki aydır bir bulut geçmedi."
+    lines:
+      - { speaker: "Ece'nin babası", text: "<en>It's a long {U10-007|drought}.</en> Çiçekler bile susuz." }
+      - { speaker: "Ece", text: "Çim biçme derdin de kalktı ama, baba!" }
+  - item: U10-008
+    durum: "Bora dedesiyle sabah haberlerini izliyor; ekranda rüzgârdan eğilmiş ağaçlar var."
+    lines:
+      - { speaker: "Spiker", text: "<en>A storm {U10-008|hit} the coast last night.</en> Herkes güvende." }
+      - { speaker: "Bora", text: "Bizim balkondaki saksı da gitmiş, dede!" }
+      - { speaker: "Dedesi", text: "O saksı zaten eğriydi." }
+  - item: U10-009
+    durum: "Kaan sahilde üç saatte kumdan bir kale yaptı; büyük bir dalga yaklaşıyor."
+    lines:
+      - { speaker: "Kaan", text: "Hayır, hayır! <en>The wave {U10-009|destroyed} my castle!</en>" }
+      - { speaker: "Selin", text: "Üç saat yapım, üç saniye son. Yeni rekor." }
+  - item: U10-010
+    durum: "Elif masaya kitaplardan bir kule dizmiş; en üste son sözlüğü koyuyor."
+    lines:
+      - { speaker: "Elif", text: "Bir tane daha…" }
+      - { speaker: "Duru", text: "Dikkat! <en>It's going to {U10-010|collapse}!</en>" }
+      - { speaker: "Elif", text: "Geç kaldın. Sözlük de çorabımın üstünde." }

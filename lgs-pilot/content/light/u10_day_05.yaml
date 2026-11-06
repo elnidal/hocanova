@@ -30,6 +30,10 @@ steps:
       options: ["Many people suffer from hunger after a drought.", "Many people suffer of hunger after a drought.", "Many people suffer by hunger after a drought.", "Many people suffer on hunger after a drought."]
       answer: 0
       explain: "Kalıp: suffer from."
+      why_wrong:
+        - "suffer ile of kullanılmaz: suffer from."
+        - "suffer ile by kullanılmaz: suffer from."
+        - "suffer ile on kullanılmaz: suffer from."
     tekrar:
       id: u10d05-021-t
       type: gap_fill
@@ -40,6 +44,10 @@ steps:
       options: ["from", "of", "to", "by"]
       answer: 0
       explain: "suffer from the heat."
+      why_wrong:
+        - "suffer ile of kullanılmaz."
+        - "suffer ile to kullanılmaz."
+        - "suffer ile by kullanılmaz."
   - item: U10-022
     card:
       example_en: "The rescue team helped the families leave the flooded houses."
@@ -63,6 +71,10 @@ steps:
       options: ["To tell people how to get help", "To advertise a hotel", "To sell tickets", "To invite people to a party"]
       answer: 0
       explain: "Duyuru, yardım gerekirse 112'yi aramayı söylüyor."
+      why_wrong:
+        - "Duyuruda otel yok; yardım numarası var."
+        - "Bilet satılmıyor; 112 aranması isteniyor."
+        - "Parti değil, sel bölgesi söz konusu."
     tekrar:
       id: u10d05-022-t
       type: situation
@@ -72,6 +84,10 @@ steps:
       options: ["It helps people in danger", "It sells tickets", "It cooks meals in a restaurant", "It repairs computers"]
       answer: 0
       explain: "Kurtarma ekibi tehlikedeki insanlara yardım eder."
+      why_wrong:
+        - "Bilet satmak kurtarma ekibinin işi değil."
+        - "Restoranda yemek pişirmek aşçının işidir."
+        - "Bilgisayar tamiri teknisyenin işidir."
   - item: U10-023
     card:
       example_en: "She gave first aid to the injured boy until the ambulance came."
@@ -95,6 +111,10 @@ steps:
       options: ["Don't worry.", "Don't sleep.", "Don't swim.", "Don't sing."]
       answer: 0
       explain: "Parmağı kesilen arkadaşı sakinleştirmek ve ilk yardım çantasını getirmek uygun."
+      why_wrong:
+        - "Kesik parmağa \"uyuma\" cevabı uymaz."
+        - "Yüzmenin konuyla ilgisi yok."
+        - "Şarkının konuyla ilgisi yok."
     tekrar:
       id: u10d05-023-t
       type: situation
@@ -104,6 +124,10 @@ steps:
       options: ["Bandages", "Pizza", "Footballs", "Keys"]
       answer: 0
       explain: "İlk yardım çantasında sargı bezi bulunur."
+      why_wrong:
+        - "Pizza ilk yardım çantasına konmaz."
+        - "Top ilk yardım çantasına konmaz."
+        - "Anahtar ilk yardım malzemesi değildir."
   - item: U10-024
     card:
       example_en: "The animals escaped from the burning forest."
@@ -126,6 +150,10 @@ steps:
       options: ["The family escaped from the flood.", "The family escaped to the flood.", "The family escaped of the flood.", "The family escaped in the flood from."]
       answer: 0
       explain: "Kalıp: escape from."
+      why_wrong:
+        - "escape ile to sel için anlamsızdır: kaçılan şey from ile söylenir."
+        - "escape ile of kullanılmaz."
+        - "Sözcük sırası bozuk: escaped from the flood."
     tekrar:
       id: u10d05-024-t
       type: synonym
@@ -135,6 +163,10 @@ steps:
       options: ["get away", "come back", "stay inside", "fall down"]
       answer: 0
       explain: "escape ≈ get away."
+      why_wrong:
+        - "come back geri dönmektir; tam tersi."
+        - "stay inside içeride kalmaktır; tam tersi."
+        - "fall down düşmektir."
   - item: U10-025
     card:
       example_en: "Governments must deal with natural disasters quickly."
@@ -157,6 +189,10 @@ steps:
       options: ["How do you deal with stress?", "How do you deal stress?", "How do you deal to stress?", "How do you deal in stress?"]
       answer: 0
       explain: "Kalıp: deal with."
+      why_wrong:
+        - "deal ile with gerekir; deal stress olmaz."
+        - "deal ile to kullanılmaz."
+        - "deal ile in bu anlamda kullanılmaz."
     tekrar:
       id: u10d05-025-t
       type: synonym
@@ -166,6 +202,10 @@ steps:
       options: ["cope with", "run out of", "get up", "put on"]
       answer: 0
       explain: "deal with ≈ cope with."
+      why_wrong:
+        - "run out of tükenmektir."
+        - "get up kalkmaktır."
+        - "put on giymektir."
 tips:
   - type: mini_dilbilgisi
     refs: [U10-021]
@@ -181,3 +221,30 @@ notifications:
   morning: "Bugün: sıkıntı çekmek, kurtarma, ilk yardım, kaçmak ve başa çıkmak 🚑"
   evening: "\"Suffer of\" mu, \"suffer from\" mu? 🤔"
   review: "İlk yardım çantasında neler olur? 🩹"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U10-021
+    durum: "Ağustos öğleni; Pamuk'un dili bir karış dışarıda."
+    lines:
+      - { speaker: "Elif", text: "<en>Pamuk {U10-021|suffers from} the heat.</en>" }
+      - { speaker: "Duru", text: "Gölgeye geçelim. Fıstık çoktan geçti bile." }
+  - item: U10-022
+    durum: "Komşunun kedisi ağacın tepesinde miyavlıyor; kırmızı araç sokağa giriyor."
+    lines:
+      - { speaker: "İtfaiyeci", text: "<en>We're the {U10-022|rescue team}.</en> Geri çekilin, lütfen." }
+      - { speaker: "Bora", text: "Bu arada o kedi benim değil. Murat Bey'e söylemeyin." }
+  - item: U10-023
+    durum: "Beden dersinde Selin dizini sıyırdı; herkes başına toplanıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "Telaş yok. <en>Where's the {U10-023|first aid kit}?</en>" }
+      - { speaker: "Ece", text: "Burada, hocam. Bandı ben takayım." }
+  - item: U10-024
+    durum: "Fen laboratuvarında hamsterın kafesi açık, içi boş."
+    lines:
+      - { speaker: "Elif", text: "<en>The hamster {U10-024|escaped}!</en>" }
+      - { speaker: "Kaan", text: "Çantamdan bir ses geliyor. Sanırım buldum." }
+  - item: U10-025
+    durum: "Deneme sabahı; koridorda herkes son notlara bakıyor."
+    lines:
+      - { speaker: "Selin", text: "<en>How do you {U10-025|deal with} stress?</en>" }
+      - { speaker: "Elif", text: "Önce derin nefes, sonra bir test." }
+      - { speaker: "Kaan", text: "Ben tost yiyorum." }

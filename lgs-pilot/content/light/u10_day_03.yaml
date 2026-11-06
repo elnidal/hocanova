@@ -31,6 +31,10 @@ steps:
       options: ["He was slightly hurt.", "He was not in the car.", "He is in serious danger.", "He broke the tree."]
       answer: 0
       explain: "Kolunda küçük bir yara var ama şimdi iyi: hafif yaralanmış."
+      why_wrong:
+        - "Metin sürücünün arabada olduğunu söylüyor."
+        - "Metin \"a small injury… he is OK now\" diyor."
+        - "Ağaç fırtınada düştü; sürücü kırmadı."
     tekrar:
       id: u10d03-011-t
       type: gap_fill
@@ -41,6 +45,10 @@ steps:
       options: ["injury", "injure", "injured", "injuring"]
       answer: 0
       explain: "\"a knee ...\" isim ister: injury."
+      why_wrong:
+        - "injure fiildir; \"a knee\" sonrası isim gerekir."
+        - "injured sıfattır; isim gerekir."
+        - "injuring fiil biçimidir; isim gerekir."
   - item: U10-012
     card:
       example_en: "Global warming is a serious threat to the Earth."
@@ -63,6 +71,10 @@ steps:
       options: ["Floods threaten many villages.", "Floods threat many villages.", "Floods are threaten many villages.", "Floods threatening many villages."]
       answer: 0
       explain: "Fiil threaten: Floods threaten many villages."
+      why_wrong:
+        - "threat isimdir; fiil gerekir: threaten."
+        - "are ile threaten birlikte kullanılmaz."
+        - "Cümlede çekimli fiil yok: threatening tek başına olmaz."
     tekrar:
       id: u10d03-012-t
       type: synonym
@@ -72,6 +84,10 @@ steps:
       options: ["a big danger", "a nice gift", "a small mistake", "a good result"]
       answer: 0
       explain: "serious threat ≈ big danger."
+      why_wrong:
+        - "gift hediyedir; tehdit tam tersi."
+        - "small mistake küçük hatadır; \"serious\" ile uyuşmaz."
+        - "good result iyi sonuçtur; tehdit olumsuzdur."
   - item: U10-013
     card:
       example_en: "It was a magnitude 6 earthquake on the Richter scale."
@@ -95,6 +111,10 @@ steps:
       options: ["Earthquake B", "Earthquake A", "Earthquake C", "They were the same"]
       answer: 0
       explain: "En yüksek büyüklük 6.8: Earthquake B."
+      why_wrong:
+        - "4.5 en küçük sayı; en zayıf deprem o."
+        - "5.2, 6.8'den küçük."
+        - "Üç sayı da farklı."
     tekrar:
       id: u10d03-013-t
       type: gap_fill
@@ -105,6 +125,10 @@ steps:
       options: ["stronger", "weaker", "smaller", "slower"]
       answer: 0
       explain: "Büyüklük 7 olan deprem 4 olandan çok daha güçlüdür."
+      why_wrong:
+        - "7, 4'ten büyük; weaker tam tersi."
+        - "smaller güç için değil, boyut için; ayrıca anlam ters."
+        - "slower hızla ilgilidir; magnitude gücü gösterir."
   - item: U10-014
     card:
       example_en: "Earthquakes happen when the plates in the Earth's crust move."
@@ -128,6 +152,10 @@ steps:
       options: ["When the plates move", "When it rains heavily", "When the sun is very hot", "When the sea is cold"]
       answer: 0
       explain: "Metne göre levhalar hareket edince deprem olur."
+      why_wrong:
+        - "Metin yağmurdan söz etmiyor."
+        - "Metin güneşten söz etmiyor."
+        - "Metin denizin sıcaklığından söz etmiyor."
     tekrar:
       id: u10d03-014-t
       type: synonym
@@ -137,6 +165,10 @@ steps:
       options: ["surface", "centre", "bottom", "core"]
       answer: 0
       explain: "surface = yüzey, üst kısım."
+      why_wrong:
+        - "centre orta noktadır; üst kısım değil."
+        - "bottom alt kısımdır; tam tersi."
+        - "core en iç kısımdır; tam tersi."
   - item: U10-015
     card:
       example_en: "After the rain, we saw a beautiful rainbow."
@@ -160,6 +192,10 @@ steps:
       options: ["When it rains and the sun shines", "When it snows at night", "When the wind is very strong", "When the ground shakes"]
       answer: 0
       explain: "Hem yağmur yağarken hem güneş açarken görülür."
+      why_wrong:
+        - "Metin kardan değil, yağmur ve güneşten söz ediyor."
+        - "Rüzgâr geçmiyor; ışık ve yağmur damlası var."
+        - "Yerin sallanmasının gökkuşağıyla ilgisi yok."
     tekrar:
       id: u10d03-015-t
       type: synonym
@@ -169,6 +205,10 @@ steps:
       options: ["reflect", "reduce", "record", "repair"]
       answer: 0
       explain: "Işığı yüzeyden geri yollamak: reflect (yansıtmak)."
+      why_wrong:
+        - "reduce azaltmaktır."
+        - "record kaydetmektir."
+        - "repair tamir etmektir."
 tips:
   - type: kelime_ailesi
     refs: [U10-011]
@@ -184,3 +224,31 @@ notifications:
   morning: "Bugün: yaralanma, tehdit, büyüklük, yüzey ve gökkuşağı 🌈"
   evening: "Yer biliminde \"plate\" tabak mı demek? 🤔"
   review: "Richter ölçeği neyi ölçer? 📏"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U10-011
+    durum: "Antrenmanda Kaan dizini tutarak yere oturuyor; Cem Abi yanına geliyor."
+    lines:
+      - { speaker: "Cem Abi", text: "<en>It's a small {U10-011|injury}.</en> Bir hafta dinlen." }
+      - { speaker: "Kaan", text: "Bir hafta mı? Top beni unutur!" }
+  - item: U10-012
+    durum: "Selin fen posterine denizdeki plastikleri çiziyor; Bora yanında meyve suyu içiyor."
+    lines:
+      - { speaker: "Selin", text: "<en>Plastic is a serious {U10-012|threat} to sea animals.</en>" }
+      - { speaker: "Bora", text: "Haklısın. Pipeti de hemen cebime koyuyorum." }
+  - item: U10-013
+    durum: "Murat Bey tahtaya iki sayı yazıyor: 4,5 ve 6,8."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>Which one has the bigger {U10-013|magnitude}?</en>" }
+      - { speaker: "Elif", text: "6,8, hocam." }
+      - { speaker: "Kaan", text: "Keşke benim notum da öyle büyüse." }
+  - item: U10-014
+    durum: "Selin elindeki portakalı soyarak Ece'ye bir şey anlatıyor."
+    lines:
+      - { speaker: "Selin", text: "Bak, <en>the Earth has {U10-014|layers}.</en> Tıpkı bunun gibi." }
+      - { speaker: "Ece", text: "Dünya portakal mı şimdi?" }
+      - { speaker: "Selin", text: "Hayır, ama bunu yiyebiliriz." }
+  - item: U10-015
+    durum: "Yağmur dindi, güneş çıktı; sınıfça cama koşuluyor."
+    lines:
+      - { speaker: "Duru", text: "<en>Look, a {U10-015|rainbow}!</en>" }
+      - { speaker: "Bora", text: "Bütün renkler var. Tam benim kazak." }

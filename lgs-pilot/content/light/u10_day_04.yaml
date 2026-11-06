@@ -31,16 +31,24 @@ steps:
       options: ["Water, a torch and some food.", "A football and a guitar.", "A pizza and a TV.", "Toys and sweets only."]
       answer: 0
       explain: "Acil durum çantasında su, fener ve yiyecek bulunur."
+      why_wrong:
+        - "Top ve gitar acil durumda işe yaramaz."
+        - "TV acil durum çantasına konmaz."
+        - "Oyuncak ve şekerle acil durum geçirilmez."
     tekrar:
       id: u10d04-016-t
-      type: gap_fill
+      type: text_infer
       lgs_like: true
-      stem_id: S12
-      prompt: "<en>Which one completes the sentence?</en>"
-      stem: "<en>Look for the ________ exit if there is a fire.</en>"
-      options: ["emergency", "expensive", "enormous", "encouraging"]
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the leaflet?</en>"
+      stem: "<en>PREPARE YOUR EMERGENCY KIT\nPut these in your kit: water, a torch, some food, warm clothes and important phone numbers. Check your kit every six months.</en>"
+      options: ["A map of the city", "A torch", "Warm clothes", "Phone numbers"]
       answer: 0
-      explain: "Yangında acil çıkış (emergency exit) aranır."
+      explain: "Listede su, fener, yiyecek, sıcak giysi ve telefon numaraları var; harita yok."
+      why_wrong:
+        - "\"a torch\" listede geçiyor."
+        - "\"warm clothes\" listede geçiyor."
+        - "\"important phone numbers\" listede geçiyor."
   - item: U10-017
     card:
       example_en: "We must take precautions before a storm."
@@ -63,6 +71,10 @@ steps:
       options: ["The government took the necessary measures.", "The government made the necessary measures.", "The government did the necessary measures.", "The government gave the necessary measures."]
       answer: 0
       explain: "Kalıp: take measures."
+      why_wrong:
+        - "measures ile make değil take kullanılır."
+        - "measures ile do değil take kullanılır."
+        - "measures ile give değil take kullanılır."
     tekrar:
       id: u10d04-017-t
       type: situation
@@ -72,6 +84,10 @@ steps:
       options: ["Keeping a torch and water at home", "Watching the storm from the window", "Ignoring the warning", "Going out in a storm"]
       answer: 0
       explain: "Önceden tedbir almak: evde fener ve su bulundurmak."
+      why_wrong:
+        - "Pencereden izlemek tehlikelidir; önlem değildir."
+        - "Uyarıyı duymazdan gelmek önlemin tersidir."
+        - "Fırtınada dışarı çıkmak önlem değildir."
   - item: U10-018
     card:
       example_en: "Trees can prevent landslides."
@@ -94,6 +110,10 @@ steps:
       options: ["Dams prevent floods.", "Dams prevent from floods.", "Dams protect floods.", "Dams are prevent floods."]
       answer: 0
       explain: "prevent doğrudan nesne alır: Dams prevent floods."
+      why_wrong:
+        - "prevent doğrudan nesne alır; burada from gerekmez."
+        - "protect korumaktır; sellerden korumak için protect from gerekir."
+        - "are ile prevent birlikte kullanılmaz."
     tekrar:
       id: u10d04-018-t
       type: situation
@@ -103,6 +123,10 @@ steps:
       options: ["protect = keep safe; prevent = stop something from happening", "protect = stop something from happening; prevent = keep safe", "They are exactly the same", "Both mean \"to cook\""]
       answer: 0
       explain: "protect korumak, prevent önlemek demektir."
+      why_wrong:
+        - "Anlamlar yer değiştirmiş."
+        - "Aynı değiller: biri korur, öbürü olmasını durdurur."
+        - "Yemekle ilgisi yok."
   - item: U10-019
     card:
       example_en: "Drop, cover and hold on! Stay away from windows! Don't use the lift!"
@@ -125,15 +149,24 @@ steps:
       options: ["Stay away from windows.", "Stand next to the window.", "Use the lift.", "Run through the corridor."]
       answer: 0
       explain: "Deprem anında camlardan uzak durulur."
+      why_wrong:
+        - "Cam kırılabilir; pencereden uzak durulur."
+        - "Depremde asansör kullanılmaz."
+        - "Koridorda koşmak düşme riskini artırır."
     tekrar:
       id: u10d04-019-t
-      type: situation
+      type: text_infer
       lgs_like: true
-      stem_id: S09
-      prompt: "<en>Which one is a negative instruction?</en>"
-      options: ["Don't use the lift!", "Stay calm!", "Drop, cover and hold on!", "Stay away from windows!"]
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the leaflet?</en>"
+      stem: "<en>EARTHQUAKE SAFETY\nDuring an earthquake: Drop, cover and hold on. Stay away from windows. Don't use the lift.\nAfter the earthquake: Stay calm and walk to the meeting area.</en>"
+      options: ["Turn off the television.", "Keep away from the windows.", "Don't get in the lift.", "Walk to the meeting area."]
       answer: 0
-      explain: "Olumsuz emir Don't + fiil ile kurulur."
+      explain: "Broşürde televizyondan söz edilmiyor; öbür üçü aynen ya da eş anlamlı biçimde geçiyor."
+      why_wrong:
+        - "\"Stay away from windows\" ile aynı anlamda."
+        - "\"Don't use the lift\" ile aynı anlamda."
+        - "\"walk to the meeting area\" broşürde yazıyor."
   - item: U10-020
     card:
       example_en: "Breaking news: a storm is coming to the coast."
@@ -156,6 +189,10 @@ steps:
       options: ["The news is on TV now.", "The news are on TV now.", "A news is on TV now.", "The newses are on TV now."]
       answer: 0
       explain: "news tekil fiil alır: The news is."
+      why_wrong:
+        - "news tekil kabul edilir: is."
+        - "news ile a kullanılmaz."
+        - "news'in \"newses\" diye çoğulu yok."
     tekrar:
       id: u10d04-020-t
       type: situation
@@ -165,6 +202,10 @@ steps:
       options: ["Very new and important news that has just arrived", "A very old story", "A story about a broken bone", "News about breakfast"]
       answer: 0
       explain: "breaking news = son dakika haberi."
+      why_wrong:
+        - "Eski hikâye son dakika haberi değildir."
+        - "breaking burada kırılmak anlamında değil."
+        - "Kahvaltıyla ilgisi yok; breakfast'e benziyor diye tuzak."
 tips:
   - type: tuzak
     refs: [U10-018, U10-038]
@@ -180,3 +221,31 @@ notifications:
   morning: "Bugün: acil durum, önlem, önlemek, talimat ve son dakika haberi 🧰"
   evening: "\"The news is\" mi, \"the news are\" mı? 🤔"
   review: "Protect mi, prevent mı? Yangını önlemek hangisi? 🔥"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U10-016
+    durum: "Selin'in babası kapının yanına küçük bir paket koyuyor: su, fener, bisküvi."
+    lines:
+      - { speaker: "Selin'in babası", text: "<en>This is our {U10-016|emergency kit}.</en> Yeri burası, değişmez." }
+      - { speaker: "Emre", text: "Bisküvileri neden sayıyorsun?" }
+      - { speaker: "Selin'in babası", text: "Çünkü sen varsın." }
+  - item: U10-017
+    durum: "Kaan'ın annesi hava raporunu izleyip balkondaki saksıları içeri alıyor."
+    lines:
+      - { speaker: "Kaan'ın annesi", text: "Yarın hava bozuk. <en>We should {U10-017|take precautions}.</en>" }
+      - { speaker: "Kaan", text: "Saksılara mont mu giydireceğiz?" }
+  - item: U10-018
+    durum: "Sınıfça okulun arkasındaki yamaca fidan dikiliyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>Tree roots can {U10-018|prevent} landslides.</en>" }
+      - { speaker: "Bora", text: "Bu fidan mı? Hocam, kendini zor tutuyor." }
+  - item: U10-019
+    durum: "Zil çalıyor; bu bir prova. Kaan sıranın altına giriyor ve bir şey fark ediyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>{U10-019|Drop, cover and hold on!}</en>" }
+      - { speaker: "Kaan", text: "Hocam, burada eski bir sakız var!" }
+      - { speaker: "Murat Bey", text: "<en>{U10-019|Stay calm!}</en> Sakızı sonra konuşuruz." }
+  - item: U10-020
+    durum: "Ekranın altında kırmızı bir yazı akıyor; Ece'nin babası kumandaya uzanıyor."
+    lines:
+      - { speaker: "Ece'nin babası", text: "Değiştirme! <en>{U10-020|Breaking news}!</en>" }
+      - { speaker: "Ece", text: "Baba, haber bu: hayvanat bahçesine yavru panda gelmiş." }

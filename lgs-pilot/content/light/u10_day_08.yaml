@@ -30,6 +30,10 @@ steps:
       options: ["I save ten liras every week.", "The doctor saved his life.", "Save water in summer.", "Rescue teams save people."]
       answer: 0
       explain: "İlk cümlede save = para biriktirmek."
+      why_wrong:
+        - "Burada save hayat kurtarmaktır."
+        - "Burada save su tasarrufudur."
+        - "Burada save insan kurtarmaktır."
     tekrar:
       id: u10d08-036-t
       type: situation
@@ -39,6 +43,10 @@ steps:
       options: ["To keep people alive", "To spend money", "To use less energy", "To collect stamps"]
       answer: 0
       explain: "save lives = hayat kurtarmak."
+      why_wrong:
+        - "Para harcamak kurtarmakla ilgili değil."
+        - "Az enerji harcamak save energy'dir; lives değil."
+        - "Pul biriktirmenin hayat kurtarmakla ilgisi yok."
   - item: U10-037
     card:
       example_en: "Solar power and wind power are renewable energy. Coal and oil are fossil fuels."
@@ -62,6 +70,10 @@ steps:
       options: ["It is clean and never runs out.", "It is cheap but dirty.", "It uses coal.", "It only works at night."]
       answer: 0
       explain: "Rüzgâr tükenmez ve havayı kirletmez."
+      why_wrong:
+        - "Metin kirletmediğini söylüyor: dirty yanlış."
+        - "Metin \"Unlike coal\" diyor; kömür kullanmıyor."
+        - "Metinde gece bilgisi yok; rüzgârla çalışıyor."
     tekrar:
       id: u10d08-037-t
       type: situation
@@ -71,6 +83,10 @@ steps:
       options: ["Coal", "Wind", "The sun", "A river"]
       answer: 0
       explain: "Kömür bir fosil yakıttır."
+      why_wrong:
+        - "Rüzgâr yenilenebilir enerjidir."
+        - "Güneş yenilenebilir enerjidir."
+        - "Nehir yenilenebilir enerji kaynağıdır."
   - item: U10-038
     card:
       example_en: "National parks protect wildlife. We should preserve our forests."
@@ -93,6 +109,10 @@ steps:
       options: ["We must protect animals from hunters.", "We must prevent animals from hunters.", "We must prefer animals from hunters.", "We must produce animals from hunters."]
       answer: 0
       explain: "Hayvanları avcılardan korumak: protect … from …."
+      why_wrong:
+        - "prevent olmasını durdurmaktır; hayvanlar için protect gerekir."
+        - "prefer tercih etmektir."
+        - "produce üretmektir."
     tekrar:
       id: u10d08-038-t
       type: synonym
@@ -102,6 +122,10 @@ steps:
       options: ["preserve", "pollute", "waste", "destroy"]
       answer: 0
       explain: "preserve = korumak, muhafaza etmek."
+      why_wrong:
+        - "pollute kirletmektir; tam tersi."
+        - "waste israf etmektir."
+        - "destroy yok etmektir; tam tersi."
   - item: U10-039
     card:
       example_en: "I think there will be more floods in the future. What do you think will happen?"
@@ -125,6 +149,10 @@ steps:
       options: ["I'm not sure, but", "I'm sure it was", "Yesterday", "Last year"]
       answer: 0
       explain: "Gelecek tahmini yapılıyor; \"I'm not sure, but I think it will be warmer\" uygun."
+      why_wrong:
+        - "\"it was\" geçmiş zamandır; soru gelecek için."
+        - "Yesterday geçmiştir; soru gelecek için."
+        - "Last year geçmiştir; soru gelecek için."
     tekrar:
       id: u10d08-039-t
       type: situation
@@ -134,6 +162,10 @@ steps:
       options: ["I think it will rain tomorrow.", "It rained yesterday.", "It is raining now.", "It rains a lot in autumn."]
       answer: 0
       explain: "will ile gelecekle ilgili bir tahmin yapılıyor."
+      why_wrong:
+        - "Dün yağdı: geçmişi anlatır."
+        - "Şu an yağıyor: tahmin değil."
+        - "Genel durumu anlatır: tahmin değil."
   - item: U10-040
     card:
       example_en: "If we cut down trees, there will be more landslides."
@@ -157,6 +189,10 @@ steps:
       options: ["rains", "will rain", "rained", "rain"]
       answer: 0
       explain: "If cümlesinde will olmaz; it + fiil+s: rains."
+      why_wrong:
+        - "If'li kısımda will kullanılmaz: If it rains."
+        - "Sonuç gelecekte; rained uymaz."
+        - "it ile rain değil rains kullanılır."
     tekrar:
       id: u10d08-040-t
       type: situation
@@ -166,6 +202,10 @@ steps:
       options: ["When the ground shakes, we will drop and cover.", "When the ground will shake, we will drop and cover.", "When the ground shook, we will drop and cover.", "When the ground is shaking will, we drop."]
       answer: 0
       explain: "When cümlesinde Simple Present, ana cümlede will."
+      why_wrong:
+        - "When'li kısımda will kullanılmaz."
+        - "shook geçmiştir; ana cümle gelecek."
+        - "Sözcük sırası bozuk."
 tips:
   - type: tuzak
     refs: [U10-036]
@@ -181,3 +221,31 @@ notifications:
   morning: "Bugün: tasarruf, yenilenebilir enerji, koruma ve gelecek tahmini 🔆"
   evening: "If cümlesinde \"will\" kullanılır mı? Hayır! 🤔"
   review: "Save kaç anlamlı? Üç! Hatırlıyor musun? 💧"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U10-036
+    durum: "Ece kumbarasını sallıyor; Bora sınıftan çıkarken ışığı kapatıyor."
+    lines:
+      - { speaker: "Ece", text: "Her hafta on lira. <en>I {U10-036|save} my allowance.</en>" }
+      - { speaker: "Bora", text: "Ben de <en>I {U10-036|save} energy.</en> Bak, ışık sönük." }
+      - { speaker: "Ece", text: "O daha ucuz bir hobi." }
+  - item: U10-037
+    durum: "Selin'in babası çatıya taktırdığı panelleri gururla gösteriyor."
+    lines:
+      - { speaker: "Selin'in babası", text: "<en>{U10-037|Solar power}: it's renewable energy!</en>" }
+      - { speaker: "Emre", text: "Yağmurlu günlerde rap dinleyemeyecek miyim?" }
+  - item: U10-038
+    durum: "Sınıf gezisi; ormanın girişindeki büyük tabelanın önünde rehber konuşuyor."
+    lines:
+      - { speaker: "Rehber", text: "<en>We {U10-038|protect} wildlife here.</en> Yüksek sesle müzik yok." }
+      - { speaker: "Bora", text: "Davulu otobüste bıraktım, merak etmeyin." }
+  - item: U10-039
+    durum: "Murat Bey tahtaya kocaman bir 2050 yazıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>{U10-039|What do you think will happen} in 2050?</en>" }
+      - { speaker: "Duru", text: "<en>{U10-039|I think} robots will do the chores.</en>" }
+      - { speaker: "Kaan", text: "Oh! Bulaşık nihayet benden çıktı." }
+  - item: U10-040
+    durum: "Maç öncesi gökyüzü kararıyor; Ece hava durumuna bakıyor."
+    lines:
+      - { speaker: "Ece", text: "<en>{U10-040|If it rains,} the match will stop.</en>" }
+      - { speaker: "Kaan", text: "Bulutlar, lütfen. Doksan dakika sabredin." }

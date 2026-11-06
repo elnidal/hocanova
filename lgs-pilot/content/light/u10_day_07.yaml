@@ -31,15 +31,24 @@ steps:
       options: ["Protecting the environment", "Learning to cook", "Playing football", "Visiting museums"]
       answer: 0
       explain: "Çöp toplama, ağaç dikme ve çevre sorunları afişleri: çevreyi koruma."
+      why_wrong:
+        - "Metinde yemek yok; çöp toplama ve ağaç dikme var."
+        - "Spor geçmiyor; afiş ve ağaç var."
+        - "Müze gezisi geçmiyor; etkinlikler parkta ve okulda."
     tekrar:
       id: u10d07-031-t
-      type: situation
+      type: text_infer
       lgs_like: true
-      stem_id: S10
-      prompt: "<en>Which sentence is correct?</en>"
-      options: ["Pollution harms the environment.", "Pollution harm the environment.", "Pollution harms to the environment.", "Pollution harms of the environment."]
+      stem_id: S03
+      prompt: "<en>Which of the following is NOT mentioned in the poster?</en>"
+      stem: "<en>GREEN WEEK\nMonday: Collect rubbish in the park.\nWednesday: Plant trees near the school.\nFriday: Make posters about environmental issues.</en>"
+      options: ["Visiting a factory", "Collecting rubbish", "Planting trees", "Making posters"]
       answer: 0
-      explain: "Pollution tekil: harms the environment (edatsız)."
+      explain: "Üç etkinlik sayılmış; fabrika gezisi yok."
+      why_wrong:
+        - "Monday satırında yazıyor."
+        - "Wednesday satırında yazıyor."
+        - "Friday satırında yazıyor."
   - item: U10-032
     card:
       example_en: "Some animals are endangered because their forests are disappearing."
@@ -63,6 +72,10 @@ steps:
       options: ["People destroy their homes.", "They don't like food.", "They want to leave the Earth.", "They travel too much."]
       answer: 0
       explain: "Metne göre insanlar yaşam alanlarını yok ediyor."
+      why_wrong:
+        - "Metin hayvanların yiyecek seçmesinden söz etmiyor."
+        - "Metin Dünya'dan ayrılmaktan söz etmiyor."
+        - "Metin yolculuktan söz etmiyor; yuvaları yok ediliyor."
     tekrar:
       id: u10d07-032-t
       type: situation
@@ -72,6 +85,10 @@ steps:
       options: ["There are many species in the rainforest.", "There are many specieses in the rainforest.", "There are many specie in the rainforest.", "There is many species in the rainforest."]
       answer: 0
       explain: "species çoğulda da aynıdır: many species."
+      why_wrong:
+        - "species çoğulda da species'tir; -es almaz."
+        - "specie diye tekil biçim kullanılmaz."
+        - "\"Many\" çoğul ister: There are."
   - item: U10-033
     card:
       example_en: "Don't waste water. Toxic waste is dangerous for nature."
@@ -94,6 +111,10 @@ steps:
       options: ["Toxic waste can harm rivers.", "Don't waste your time.", "He wastes a lot of paper.", "We waste too much food."]
       answer: 0
       explain: "İlk cümlede waste isimdir (atık); diğerlerinde fiildir (israf etmek)."
+      why_wrong:
+        - "Burada waste fiildir: Don't waste."
+        - "Burada waste fiildir: He wastes."
+        - "Burada waste fiildir: We waste."
     tekrar:
       id: u10d07-033-t
       type: gap_fill
@@ -104,6 +125,10 @@ steps:
       options: ["waste", "wastes", "wasting", "wasted"]
       answer: 0
       explain: "toxic waste = zehirli atık (sayılamaz isim)."
+      why_wrong:
+        - "waste atık anlamında sayılamaz; çoğul olmaz."
+        - "wasting fiil biçimidir; isim gerekir."
+        - "wasted fiil ya da sıfattır; isim gerekir."
   - item: U10-034
     card:
       example_en: "Farmers grow crops. The harvest was good this year."
@@ -127,6 +152,10 @@ steps:
       options: ["The harvest was lost.", "The harvest was very good.", "The farmers sold more crops.", "Food became cheaper."]
       answer: 0
       explain: "Kuraklık yüzünden ekinler kurudu ve hasat kayboldu."
+      why_wrong:
+        - "Metin mahsulün kaybedildiğini söylüyor; tam tersi."
+        - "Ekinler kurumuş; daha çok satılamaz."
+        - "Metin \"more expensive\" diyor; tam tersi."
     tekrar:
       id: u10d07-034-t
       type: situation
@@ -136,6 +165,10 @@ steps:
       options: ["drought → crops die → food shortage", "food shortage → drought → crops die", "crops die → food shortage → drought", "drought → food shortage → crops die"]
       answer: 0
       explain: "Önce kuraklık, sonra ekinler ölür, sonra yiyecek kıtlığı."
+      why_wrong:
+        - "Kıtlık en başta gelemez: önce kuraklık olur."
+        - "Ekinleri öldüren kuraklık en sonda gelemez."
+        - "Kıtlık, ekinler öldükten sonra olur; sıra karışmış."
   - item: U10-035
     card:
       example_en: "We recycle paper and glass. You can reuse plastic bottles."
@@ -158,6 +191,10 @@ steps:
       options: ["A glass bottle", "A used tissue", "Dirty food", "A broken light"]
       answer: 0
       explain: "Cam şişe geri dönüştürülebilir."
+      why_wrong:
+        - "Kullanılmış mendil geri dönüştürülmez."
+        - "Yiyecek artığı cam ya da kâğıt gibi dönüştürülmez."
+        - "Kırık ampul ayrı toplanır; normal geri dönüşüme gitmez."
     tekrar:
       id: u10d07-035-t
       type: gap_fill
@@ -168,6 +205,10 @@ steps:
       options: ["reuse", "remove", "repair", "record"]
       answer: 0
       explain: "Üç R: reduce, reuse, recycle."
+      why_wrong:
+        - "remove kaldırmaktır; üç R'den biri değil."
+        - "repair tamir etmektir; kalıp reuse ile söylenir."
+        - "record kaydetmektir."
 tips:
   - type: tuzak
     refs: [U10-031]
@@ -183,3 +224,31 @@ notifications:
   morning: "Bugün: çevre, nesli tükenmek, atık, ekin ve geri dönüşüm ♻️"
   evening: "\"Waste\" fiil mi isim mi? İkisi de! 🤔"
   review: "Üç R nedir? Reduce, reuse, ...? ♻️"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U10-031
+    durum: "Sınıfta Yeşil Hafta afişleri asılıyor; Kaan sırasının altına bakıyor."
+    lines:
+      - { speaker: "Murat Bey", text: "<en>This week we talk about the {U10-031|environment}.</en>" }
+      - { speaker: "Kaan", text: "Hocam, benim sıranın altından başlayabilir miyiz?" }
+  - item: U10-032
+    durum: "Elif ile Duru belgesel izliyor; kumsalda küçük kaplumbağalar denize yürüyor."
+    lines:
+      - { speaker: "Elif", text: "<en>Sea turtles are {U10-032|endangered}.</en>" }
+      - { speaker: "Duru", text: "Yazın o kumsala gideceğiz. Şemsiyemizi öteye açalım." }
+  - item: U10-033
+    durum: "Bora dişini fırçalarken musluk açık akıyor; bir yandan da ritim tutuyor."
+    lines:
+      - { speaker: "Dedesi", text: "<en>Don't {U10-033|waste} water!</en>" }
+      - { speaker: "Bora", text: "Ritim tutuyordum, dede." }
+      - { speaker: "Dedesi", text: "Caz olsa anlarım. Kapat." }
+  - item: U10-034
+    durum: "Kaan köyde büyükannesinin yanında; kasalar dolusu domates avluya taşınıyor."
+    lines:
+      - { speaker: "Büyükannesi", text: "Bu yıl şükür, <en>the {U10-034|harvest} was good.</en>" }
+      - { speaker: "Kaan", text: "O zaman kış boyunca salça bizde!" }
+  - item: U10-035
+    durum: "Selin sınıfa üç renkli kutu koydu; Kaan elinde muz kabuğuyla geliyor."
+    lines:
+      - { speaker: "Selin", text: "<en>We {U10-035|recycle} paper and glass here.</en>" }
+      - { speaker: "Kaan", text: "Peki bu?" }
+      - { speaker: "Selin", text: "O bu kutulara girmez, Kaan." }

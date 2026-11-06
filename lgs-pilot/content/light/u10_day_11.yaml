@@ -1,0 +1,134 @@
+schema_version: 1
+program: lgs
+mode: light
+exam: true                # sınav provası: yeni ifade yok; broşür, tablo, neden-sonuç, çözüm diyaloğu
+unit: 10
+day: 11
+status: draft
+title: "Sınav provası: broşür, tablo, çözüm"
+est_minutes: 8
+new_items: []
+steps: []
+review:
+  - id: u10d11-r01
+    item: U10-019
+    type: text_infer
+    lgs_like: true
+    stem_id: S03
+    prompt: "<en>Which of the following is NOT mentioned in the brochure?</en>"
+    stem: "<en>BE READY FOR A FLOOD\nBefore: Keep an emergency kit at home. Learn the way to high ground.\nDuring: Go upstairs. Don't walk through the water.\nAfter: Listen to the news and stay away from damaged buildings.</en>"
+    options: ["Buying a new car", "Keeping an emergency kit", "Going upstairs", "Listening to the news"]
+    answer: 0
+    explain: "Broşürde kit, üst kat ve haberler var; araba almaktan söz edilmiyor."
+    why_wrong:
+      - "\"Keep an emergency kit at home\" broşürde yazıyor."
+      - "\"Go upstairs\" During bölümünde yazıyor."
+      - "\"Listen to the news\" After bölümünde yazıyor."
+  - id: u10d11-r02
+    item: U10-017
+    type: situation
+    lgs_like: true
+    stem_id: S09
+    prompt: "<en>Which of the following is a precaution against forest fires?</en>"
+    options: ["Not lighting a fire in the forest", "Leaving rubbish among the trees", "Having a barbecue on a windy day", "Cutting down trees for fun"]
+    answer: 0
+    explain: "Ormanda ateş yakmamak yangın çıkmasını önler."
+    why_wrong:
+      - "Çöp bırakmak, özellikle cam, yangın riskini artırır."
+      - "Rüzgârlı günde mangal kıvılcım saçar; önlem değil, tehlikedir."
+      - "Ağaç kesmek ormana zarar verir; önlem değildir."
+  - id: u10d11-r03
+    item: U10-013
+    type: table_graph
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the table, which of the following is TRUE?</en>"
+    stem: "<en>EARTHQUAKES THIS YEAR\nTown A: magnitude 3.2 – 5 seconds\nTown B: magnitude 5.8 – 25 seconds\nTown C: magnitude 4.1 – 40 seconds</en>"
+    options: ["The earthquake in Town C lasted the longest.", "The earthquake in Town A was the strongest.", "The earthquake in Town B lasted forty seconds.", "The earthquake in Town C was stronger than the one in Town B."]
+    answer: 0
+    explain: "En uzun süre 40 saniye, Town C satırında."
+    why_wrong:
+      - "3.2 en küçük büyüklük; en güçlü olan 5.8 ile Town B."
+      - "40 saniye Town C'de; Town B 25 saniye sürmüş."
+      - "4.1, 5.8'den küçük; karşılaştırma ters kurulmuş."
+  - id: u10d11-r04
+    item: U10-035
+    type: table_graph
+    lgs_like: true
+    stem_id: S06
+    prompt: "<en>According to the survey, which of the following is TRUE?</en>"
+    stem: "<en>Class 8A: What do you do to help the environment? (30 students)\nRecycle paper: 14\nSave water: 9\nPlant trees: 5\nUse public transport: 2</en>"
+    options: ["Recycling paper is the most popular answer.", "Nine students plant trees.", "Using public transport is the most popular answer.", "More students plant trees than save water."]
+    answer: 0
+    explain: "En büyük sayı 14, kâğıt geri dönüşümü satırında."
+    why_wrong:
+      - "9 sayısı su tasarrufu satırında; ağaç diken 5 kişi."
+      - "2 en küçük sayı; en az seçilen cevap bu."
+      - "5, 9'dan küçük; karşılaştırma ters kurulmuş."
+  - id: u10d11-r05
+    item: U10-042
+    type: text_infer
+    lgs_like: true
+    stem_id: S04
+    prompt: "<en>According to the text, what is the RESULT of deforestation?</en>"
+    stem: "<en>People cut down trees for wood and land. Without roots to hold the soil, heavy rain carries the soil down the hills. This leads to landslides and floods in many villages.</en>"
+    options: ["Landslides and floods", "More trees on the hills", "Less rain in the villages", "Stronger roots"]
+    answer: 0
+    explain: "\"This leads to landslides and floods\": sonuç heyelan ve sel."
+    why_wrong:
+      - "Ağaçlar kesiliyor; tepelerde ağaç azalıyor, artmıyor."
+      - "Metin \"heavy rain\" diyor; yağmurun azaldığını söylemiyor."
+      - "Metin \"without roots\" diyor; kök kalmıyor."
+  - id: u10d11-r06
+    item: U10-022
+    type: text_infer
+    lgs_like: true
+    stem_id: S14
+    prompt: "<en>What can we understand from the news report?</en>"
+    stem: "<en>Breaking news: A sudden storm hit the coast this morning. Rescue teams helped twenty people on small boats. Nobody was seriously injured, but the storm damaged the port.</en>"
+    options: ["The people on the boats got help.", "Many people were seriously injured.", "The port wasn't damaged.", "The storm happened last week."]
+    answer: 0
+    explain: "\"Rescue teams helped twenty people\": teknedekilere yardım edilmiş."
+    why_wrong:
+      - "Metin \"Nobody was seriously injured\" diyor."
+      - "Metin \"damaged the port\" diyor; liman hasar görmüş."
+      - "Metin \"this morning\" diyor; geçen hafta değil."
+  - id: u10d11-r07
+    item: U10-041
+    type: dialogue_complete
+    lgs_like: true
+    stem_id: S01
+    prompt: "<en>Which one completes the dialogue?</en>"
+    stem: "<en>Selin: Our town is running out of water this summer.\nKaan: You're right. ________</en>"
+    options: ["We should take shorter showers.", "We should wash the car every day.", "We shouldn't turn off the tap.", "We should water the garden all day."]
+    answer: 0
+    explain: "Su azalıyorsa çözüm daha az su kullanmak: kısa duş."
+    why_wrong:
+      - "Her gün araba yıkamak suyu daha da azaltır."
+      - "Musluğu kapatmamak suyu israf eder; \"shouldn't\" anlamı ters çevirir."
+      - "Bütün gün bahçe sulamak suyu tüketir."
+  - id: u10d11-r08
+    item: U10-040
+    type: situation
+    lgs_like: true
+    stem_id: S10
+    prompt: "<en>Which sentence gives a correct cause and result?</en>"
+    options: ["If we cut down the forests, many animals will lose their homes.", "If we plant more trees, there will be more air pollution.", "If we recycle more, we will need more rubbish bins for waste.", "If we save energy, we will use more coal."]
+    answer: 0
+    explain: "Orman kesilirse hayvanlar yuvasını kaybeder: neden ve sonuç uyumlu."
+    why_wrong:
+      - "Ağaç havayı temizler; kirlilik artmaz, azalır."
+      - "Geri dönüşüm arttıkça çöp azalır; çoğalmaz."
+      - "Enerji tasarrufu daha az kömür kullanmak demektir."
+tips:
+  - type: lgs_taktigi
+    refs: [U10-019]
+    text: "\"NOT mentioned\" sorusunda şıkları tek tek broşürde ara: bulduğunu ele, kalan cevaptır. Eş anlamlı cümleye dikkat: \"Keep away\" ile \"Stay away\" aynı bilgidir."
+coach:
+  start: "Sınav provası! LGS'nin bu üniteden sevdiği sorular: broşür, tablo, neden-sonuç ve çözüm önerisi 📝"
+  end_good: "Tam not! Broşür de tablo da seni korkutmuyor. Ünite 10 tamam 🏆"
+  end_mixed: "İyi iş! {weak} biraz zorladı; tekrarda yine karşına çıkacak 📝"
+notifications:
+  morning: "Bugün Ünite 10 sınav provası: broşür, tablo, çözüm 📝"
+  evening: "\"NOT mentioned\" sorusunda ne ararsın: olanı mı, olmayanı mı? 🤔"
+  review: "Şıkları broşürde tek tek ara: bulduğunu ele, kalan cevap."

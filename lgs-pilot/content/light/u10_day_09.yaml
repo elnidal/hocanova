@@ -31,6 +31,10 @@ steps:
       options: ["We should turn off the lights.", "We should to turn off the lights.", "We shoulds turn off the lights.", "We should turning off the lights."]
       answer: 0
       explain: "Doğru kalıp: should + yalın fiil."
+      why_wrong:
+        - "should'dan sonra to gelmez."
+        - "should çekimlenmez."
+        - "should'dan sonra -ing gelmez: fiil yalın."
     tekrar:
       id: u10d09-041-t
       type: situation
@@ -40,6 +44,10 @@ steps:
       options: ["You should drink more water.", "You drank water yesterday.", "You are drinking water.", "You never drink water."]
       answer: 0
       explain: "should ile tavsiye verilir."
+      why_wrong:
+        - "Geçmişi anlatır; öğüt değil."
+        - "Şu anı anlatır; öğüt değil."
+        - "Alışkanlığı anlatır; öğüt değil."
   - item: U10-042
     card:
       example_en: "Heavy rain causes floods. Pollution leads to health problems."
@@ -62,6 +70,10 @@ steps:
       options: ["Pollution leads to health problems.", "Pollution leads health problems.", "Pollution leads at health problems.", "Pollution leads in health problems."]
       answer: 0
       explain: "Kalıp: lead to + isim."
+      why_wrong:
+        - "lead ile to gerekir."
+        - "lead ile at kullanılmaz."
+        - "lead ile in bu anlamda kullanılmaz."
     tekrar:
       id: u10d09-042-t
       type: situation
@@ -71,6 +83,10 @@ steps:
       options: ["Heavy rain", "A rainbow", "A first aid kit", "A vaccine"]
       answer: 0
       explain: "Seli çoğunlukla şiddetli yağmur başlatır."
+      why_wrong:
+        - "Gökkuşağı selin sebebi değildir."
+        - "İlk yardım çantası selin sebebi değildir."
+        - "Aşının sel ile ilgisi yok."
   - item: U10-043
     card:
       example_en: "Scientists predict that sea levels will rise. A weather forecast is a prediction."
@@ -86,13 +102,18 @@ steps:
       explain: "Gelecek haftanın havasını önceden söylemek: predict."
     sina:
       id: u10d09-043-s
-      type: situation
+      type: table_graph
       lgs_like: true
-      stem_id: S10
-      prompt: "<en>In which sentence is the speaker making a guess, NOT a prediction based on information?</en>"
-      options: ["I don't know the answer, so I'll guess: it's 42.", "The weather forecast says it will rain tomorrow.", "Scientists say the Earth will get warmer.", "Satellites show a storm is coming."]
+      stem_id: S06
+      prompt: "<en>According to the weather forecast, which of the following is TRUE?</en>"
+      stem: "<en>WEATHER FORECAST\nMonday: sunny, 28°C\nTuesday: cloudy, 22°C\nWednesday: storm, 18°C</en>"
+      options: ["A storm is predicted for Wednesday.", "Monday will be the coldest day.", "Tuesday will be sunny.", "It will be 28°C on Wednesday."]
       answer: 0
-      explain: "Bilgi olmadan söylenen tahmin guess'tir."
+      explain: "Wednesday satırında \"storm\" var: fırtına çarşamba için bekleniyor."
+      why_wrong:
+        - "28°C en yüksek sayı; Monday en sıcak gün."
+        - "Tuesday \"cloudy\", yani bulutlu; sunny Monday'de."
+        - "28°C Monday'in sıcaklığı; Wednesday 18°C."
     tekrar:
       id: u10d09-043-t
       type: situation
@@ -102,6 +123,10 @@ steps:
       options: ["The forecast says it will snow tomorrow.", "It snowed yesterday.", "It is snowing now.", "It never snows here."]
       answer: 0
       explain: "Gelecekle ilgili bilgiye dayalı söz: prediction."
+      why_wrong:
+        - "Dün yağdı: geçmiş."
+        - "Şu an yağıyor: tahmin değil."
+        - "Genel durum: tahmin değil."
   - item: U10-044
     card:
       example_en: "I agree with you. I don't agree with him."
@@ -125,6 +150,10 @@ steps:
       options: ["I agree with you.", "I am agree with you.", "I agrees you.", "I not agree with you."]
       answer: 0
       explain: "Katılmak için: I agree with you."
+      why_wrong:
+        - "agree fiildir; am ile kullanılmaz."
+        - "I ile agrees olmaz; with da eksik."
+        - "Olumsuz için don't gerekir; ayrıca anlam ters."
     tekrar:
       id: u10d09-044-t
       type: situation
@@ -134,6 +163,10 @@ steps:
       options: ["I don't agree with you.", "I am not agree with you.", "I don't agree to you.", "I not agree with you."]
       answer: 0
       explain: "Olumsuz: don't agree with."
+      why_wrong:
+        - "agree ile am not kullanılmaz: I don't agree."
+        - "agree kişi için with alır: agree with you."
+        - "Olumsuz için don't gerekir."
 tips:
   - type: tuzak
     refs: [U10-043]
@@ -149,3 +182,27 @@ notifications:
   morning: "Bugün: should, neden olmak, tahmin etmek ve katılmak 💬"
   evening: "\"I am agree\" doğru mu? 🤔"
   review: "Predict mi, guess mi? Hava tahmini hangisi? 🌦️"
+mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
+  - item: U10-041
+    durum: "Sınıf toplantısı; güneş içeri doluyor ama bütün lambalar açık."
+    lines:
+      - { speaker: "Selin", text: "<en>{U10-041|We should} turn off the lights.</en>" }
+      - { speaker: "Bora", text: "<en>{U10-041|We shouldn't} leave the tap on, either.</en>" }
+      - { speaker: "Murat Bey", text: "Güzel. Projeksiyonu da kapatıyorum." }
+  - item: U10-042
+    durum: "Okul önünde sabah trafiği; Elif ağzını atkısıyla örtüyor."
+    lines:
+      - { speaker: "Elif", text: "<en>Too many cars {U10-042|cause} air pollution.</en>" }
+      - { speaker: "Kaan", text: "<en>And it {U10-042|leads to} headaches.</en> Benimki başladı bile." }
+  - item: U10-043
+    durum: "Selin'in babası sabah telefonuna bakıp şemsiyeyi kapının yanına koyuyor."
+    lines:
+      - { speaker: "Selin'in babası", text: "<en>They {U10-043|predict} rain at 3.40.</en>" }
+      - { speaker: "Selin", text: "Baba, saatini de mi söylediler?" }
+      - { speaker: "Selin'in babası", text: "Yağmur da dakik olsun bari." }
+  - item: U10-044
+    durum: "Kantinde müzik tartışması büyüyor; Duru en sevdiği türü söylüyor."
+    lines:
+      - { speaker: "Duru", text: "Bence en güzeli caz." }
+      - { speaker: "Bora", text: "<en>I {U10-044|agree} with you.</en> Dedem de öyle der." }
+      - { speaker: "Kaan", text: "<en>I {U10-044|disagree}.</en> Basket sahasında caz mı çalacağız?" }
