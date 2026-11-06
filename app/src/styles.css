@@ -244,6 +244,11 @@ h1{letter-spacing:-.025em}h2{letter-spacing:-.02em}
 .btn:disabled{opacity:.55}
 
 .card.plan{background:#11143A;color:#F4F3FB;border:0;padding:22px;box-shadow:0 14px 34px rgba(17,20,58,.22)}
+.karne p{margin:10px 0}
+.karne-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.karne-stats div{background:var(--bg);border-radius:14px;padding:10px 6px;text-align:center;min-width:0}
+.karne-stats b{display:block;font-family:var(--f-d);font-size:1.5rem;line-height:1.1}
+.karne-stats span{font-size:.75rem;font-weight:700;color:var(--muted,#62668A)}
 .plan-top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
 .plan .eyebrow{color:#FF8A75}
 .plan h2{color:#fff;font-size:1.55rem;margin-top:6px}

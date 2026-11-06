@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { coachPlan, planHeadline, daysToLgs, LGS_DATE, pacePlan, paceText } from './coachPlan.js'
+import { coachPlan, planHeadline, daysToLgs, LGS_DATE, pacePlan, paceText, weeklyReport, reportText } from './coachPlan.js'
 
 const now = new Date(2026, 10, 2, 18).getTime() // 2 Kasım 2026 akşam
 const H = 36e5
@@ -89,4 +89,36 @@ test('tempo: artış, bitiş, yoğun tempo ve son 30 gün', () => {
   const r = pacePlan({ totalLessons: 50, doneDays: {}, now: new Date(2027, 4, 20).getTime() })
   assert.equal(r.mode, 'final')
   assert.match(paceText(r), /Son düzlük/)
+})
+
+const monday = new Date(2026, 10, 9, 12).getTime() // 9 Kasım 2026 pazartesi; geçen hafta 2–8 Kasım
+const lastWeek = new Date(2026, 10, 4, 12).getTime(), twoAgo = new Date(2026, 9, 28, 12).getTime()
+const answers = (t, id, ok, n) => Array.from({ length: n }, (_, i) => ({ qid: `${id}-${t}-${ok}-${i}`, id, ok, t }))
+
+test('karne: hiç çalışılmadıysa yok; ara verince suçlamaz', () => {
+  assert.equal(weeklyReport({ state: base, now: monday }), null)
+  const r = weeklyReport({ state: { ...base, doneDays: { a: { at: twoAgo } } }, now: monday })
+  assert.equal(r.lessons, 0)
+  assert.match(reportText(r), /ara verdin/)
+  assert.ok(!/geride|geç kaldın|yetersiz/i.test(reportText(r)))
+})
+
+test('karne: bu haftanın işi geçen haftaya sayılmaz, kart turu yüzdeye girmez', () => {
+  const log = [...answers(monday, 'U3-001', false, 6), { qid: 'f', id: 'U3-001', ok: false, t: lastWeek, kind: 'flash' }, ...answers(lastWeek, 'U1-001', true, 4)]
+  const r = weeklyReport({ state: { ...base, doneDays: { a: { at: lastWeek }, b: { at: monday } }, progress: { log } }, now: monday })
+  assert.deepEqual([r.lessons, r.answers, r.accuracy, r.weakUnit], [1, 4, null, null])
+})
+
+test('karne: doğru oranı artışı ve en zayıf ünite', () => {
+  const log = [...answers(twoAgo, 'U1-001', true, 5), ...answers(twoAgo, 'U1-002', false, 5), ...answers(lastWeek, 'U2-001', true, 16), ...answers(lastWeek, 'U3-001', false, 3), ...answers(lastWeek, 'U2-002', false, 1)]
+  const r = weeklyReport({ state: { ...base, doneDays: { a: { at: lastWeek } }, progress: { log } }, now: monday })
+  assert.deepEqual([r.accuracy, r.prevAccuracy, r.weakUnit, r.weakCount], [80, 50, 3, 3])
+  assert.equal(reportText(r), "Doğru oranın %50'den %80'e çıktı! En çok Ünite 3 zorladı; kısa bir tamir iyi gelir.")
+})
+
+test('karne: Mini LGS net farkı öne çıkar; 2 yanlış zayıf sayılmaz', () => {
+  const miniLgs = [{ now: twoAgo, net: 5 }, { now: lastWeek, net: 6.67 }]
+  const r = weeklyReport({ state: { ...base, miniLgs, progress: { log: answers(lastWeek, 'U4-001', false, 2) } }, now: monday })
+  assert.deepEqual([r.net, r.netDiff, r.weakUnit], [6.67, 1.67, null])
+  assert.match(reportText(r), /netin 1,67 arttı/)
 })

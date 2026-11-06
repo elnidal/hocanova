@@ -1,6 +1,6 @@
 // Hoca Nova'nın günlük planı: öğrenciye "şimdi ne yapmalıyım?" sorusunun sıralı cevabı. Saf fonksiyonlar, testli.
 import { dayStamp } from './goal.js'
-import { weakUnits } from './lgsMini.js'
+import { weakUnits, unitOfItem } from './lgsMini.js'
 
 const DAY_MS = 864e5
 // MEB'in açıkladığı tarih: 13 Haziran 2027 Pazar (sözel oturum 09:30).
@@ -115,6 +115,54 @@ export function paceText(p) {
   if (p.raised) return `Tempo haftada ${p.raised} dersten ${p.target} derse çıktı; sorun değil, hâlâ yetişiyoruz. ${finish}`
   if (p.weekDone >= p.target) return `Bu haftanın hedefi tamam! Devam etmek istersen sınava daha da erken hazır olursun.`
   return finish
+}
+
+/**
+ * Geçen haftanın karnesi (pazartesi–pazar): ders, doğru yüzdesi, Mini LGS, en çok zorlanılan ünite.
+ * Daha önce hiç çalışılmadıysa null. Yüzde için en az 5 cevap gerekir; zayıf ünite için en az 3 yanlış.
+ */
+export function weeklyReport({ state, now }) {
+  const start = weekStartOf(now), from = start - WEEK_MS, before = from - WEEK_MS
+  const lessonAts = Object.values(state.doneDays || {}).map(d => d?.at ?? 0)
+  const log = (state.progress?.log || []).filter(e => e.qid && e.kind !== 'flash')
+  if (!lessonAts.some(t => t < start) && !log.some(e => e.t < start)) return null
+  const acc = (a, b) => {
+    const week = log.filter(e => e.t >= a && e.t < b)
+    return week.length >= 5 ? Math.round((week.filter(e => e.ok).length / week.length) * 100) : null
+  }
+  const wrong = {}
+  for (const e of log) {
+    if (e.t < from || e.t >= start || e.ok) continue
+    const u = unitOfItem(e.id)
+    if (u) wrong[u] = (wrong[u] || 0) + 1
+  }
+  const top = Object.entries(wrong).sort((a, b) => b[1] - a[1] || a[0] - b[0])[0]
+  const minis = state.miniLgs || []
+  const weekMinis = minis.filter(m => m.now >= from && m.now < start)
+  const lastMini = weekMinis.at(-1)
+  const prevMini = lastMini ? minis[minis.indexOf(lastMini) - 1] : null
+  return {
+    lessons: lessonAts.filter(t => t >= from && t < start).length,
+    answers: log.filter(e => e.t >= from && e.t < start).length,
+    accuracy: acc(from, start),
+    prevAccuracy: acc(before, from),
+    net: lastMini ? lastMini.net : null,
+    netDiff: lastMini && prevMini ? Math.round((lastMini.net - prevMini.net) * 100) / 100 : null,
+    weakUnit: top && top[1] >= 3 ? +top[0] : null,
+    weakCount: top && top[1] >= 3 ? top[1] : 0,
+  }
+}
+
+/** Karnenin Nova cümlesi: önce kazanım, sonra tek öneri. Suçlamaz. */
+export function reportText(r) {
+  if (!r.lessons && !r.answers && r.net == null) return 'Geçen hafta ara verdin, olur böyle. Bu hafta tek dersle yeniden başlıyoruz.'
+  const num = x => String(x).replace('.', ',')
+  const win = r.netDiff > 0 ? `Mini LGS netin ${num(r.netDiff)} arttı!`
+    : r.accuracy != null && r.prevAccuracy != null && r.accuracy - r.prevAccuracy >= 5 ? `Doğru oranın %${r.prevAccuracy}'den %${r.accuracy}'e çıktı!`
+    : r.accuracy >= 80 ? `%${r.accuracy} doğru, çok sağlam bir hafta!`
+    : r.lessons ? `${r.lessons} ders bitirdin, emeğin birikiyor.`
+    : 'Tekrarlarını yaptın, kalıcılık böyle gelir.'
+  return r.weakUnit ? `${win} En çok Ünite ${r.weakUnit} zorladı; kısa bir tamir iyi gelir.` : win
 }
 
 /** Planın başına Nova'nın tek cümlesi. */

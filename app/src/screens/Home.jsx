@@ -6,7 +6,7 @@ import { coachMessage, streakOf } from '../goal.js'
 import { openMistakeCount } from '../mistakes.js'
 import { weeklyDue, pct } from '../quiz.js'
 import { miniTrend, fmtNet } from '../lgsMini.js'
-import { coachPlan, daysToLgs, planHeadline, pacePlan, paceText } from '../coachPlan.js'
+import { coachPlan, daysToLgs, planHeadline, pacePlan, paceText, weeklyReport, reportText } from '../coachPlan.js'
 import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
 
@@ -46,6 +46,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
     ? coachMessage({ daily: state.daily, goal: state.goal, due, now, fallback: plan.length && Object.keys(state.doneDays).length ? planHeadline(plan, daysToLgs(now)) : levelText })
     : 'Hazırsan 4 dakikalık kısa bir testle başlayalım; derslerini seviyene göre ayarlayacağım.'
   const mini = miniTrend(state.miniLgs)
+  const report = placement ? weeklyReport({ state, now }) : null
   const unitsWithDays = index.units.filter(u => u.dayCount)
 
   return (
@@ -82,6 +83,19 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
             ))}
           </ol>
           {!firstOpen && <p className="muted small">Bugünkü plan bitti. İstersen aşağıdan kart turu ya da Sınav Dili.</p>}
+        </section>
+      )}
+
+      {report && (
+        <section className="card karne" aria-label="Geçen haftanın karnesi">
+          <div className="eyebrow">Geçen haftanın karnesi</div>
+          <div className="karne-stats">
+            <div><b>{report.lessons}</b><span>ders</span></div>
+            <div><b>{report.accuracy == null ? '–' : `%${report.accuracy}`}</b><span>doğru</span></div>
+            <div><b>{report.net == null ? '–' : fmtNet(report.net)}</b><span>Mini LGS net</span></div>
+          </div>
+          <p>{reportText(report)}</p>
+          {report.weakUnit && <button className="btn sm" onClick={() => onRepair([report.weakUnit])}>Ünite {report.weakUnit} tamir seti →</button>}
         </section>
       )}
 
