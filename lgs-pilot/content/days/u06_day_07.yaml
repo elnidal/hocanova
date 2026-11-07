@@ -104,6 +104,10 @@ steps:
       options: ["Scuba diving is more expensive than canoeing.", "Paragliding is cheaper than scuba diving.", "A 12-year-old can go scuba diving.", "Canoeing is only for people over 14."]
       answer: 0
       explain: "Tüplü dalış 900 TL, kano 200 TL: daha pahalı. Yamaç paraşütü dalıştan pahalı; dalış için en az 14 yaş gerekir; kano 10 yaşından itibaren."
+      why_wrong:
+        - "Yamaç paraşütü 1.500, dalış 900: daha pahalı."
+        - "Dalış 14 yaş üstü."
+        - "Kano 10 yaş üstü."
   - item: U6-010
     sezdir:
       id: u6d07-010-z
@@ -130,6 +134,10 @@ steps:
       options: ["the price of the activity", "the meeting time", "the safety equipment", "the place for lunch"]
       answer: 0
       explain: "Buluşma saati (9.00), güvenlik donanımı (life jacket) ve öğle yemeği yeri (near the lake) metinde var; fiyat yok."
+      why_wrong:
+        - "Buluşma saati 9.00."
+        - "Can yeleği ve kürek veriliyor."
+        - "Öğle yemeği göl kenarında."
   - item: U6-017
     sezdir:
       id: u6d07-017-z
@@ -156,6 +164,10 @@ steps:
       options: ["A life jacket is important for everyone.", "Only bad swimmers need a life jacket.", "Cold water is good for swimming.", "Strong swimmers don't need any equipment."]
       answer: 0
       explain: "Even strong swimmers can drown: iyi yüzücüler dahil herkes can yeleği giymeli."
+      why_wrong:
+        - "Not \"Even strong swimmers\" diyor; herkes için."
+        - "Soğuk suda boğulma tehlikesi var."
+        - "İyi yüzücüler de yelek giymeli."
   - item: U6-018
     sezdir:
       id: u6d07-018-z
@@ -182,6 +194,10 @@ steps:
       options: ["came down to the ground", "went up into the sky", "jumped into the water", "stayed in the air"]
       answer: 0
       explain: "Havada uçtuktan sonra kumsala inmiş: landed = came down to the ground."
+      why_wrong:
+        - "Yükselmek değil, yere inmek."
+        - "Suya atlamadı; kumsala indi."
+        - "Havada kalmak \"landed\"ın tersi."
   - item: U6-053
     sezdir:
       id: u6d07-053-z
@@ -208,6 +224,10 @@ steps:
       options: ["Because I feel the freedom when I ride.", "Because it's raining today.", "I'd rather not, thanks.", "It costs 50 TL."]
       answer: 0
       explain: "Why? sorusuna Because ile sevmenin nedeni verilir: özgürlük hissi. Yağmur bisikleti sevmenin nedeni değil."
+      why_wrong:
+        - "Yağmur bisikleti sevme nedeni değil."
+        - "Bu bir daveti reddetmek."
+        - "Soru fiyat değil, neden."
   - item: U6-054
     sezdir:
       id: u6d07-054-z
@@ -234,6 +254,10 @@ steps:
       options: ["There isn't any wind today.", "The wind is too strong today.", "Let's put on our life jackets.", "The plane is going to land."]
       answer: 0
       explain: "Yapraklar hiç kıpırdamıyorsa rüzgâr yoktur; uçurtma uçmaz."
+      why_wrong:
+        - "Yapraklar hiç kıpırdamıyorsa rüzgâr güçlü değildir."
+        - "Can yeleği uçurtmayla ilgili değil."
+        - "Uçak yok."
 
 review:
   - id: u6d07-r01

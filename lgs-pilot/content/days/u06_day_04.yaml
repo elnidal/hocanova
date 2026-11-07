@@ -100,6 +100,10 @@ steps:
       options: ["Students don't need to buy helmets.", "Students need to bring their own ropes.", "The camp gives every student a flashlight.", "Students don't need warm clothes."]
       answer: 0
       explain: "Kamp kask, ip ve can yeleğini veriyor; el feneri, su şişesi ve sıcak giysiyi öğrenciler getiriyor."
+      why_wrong:
+        - "İpi kamp veriyor."
+        - "Feneri öğrenciler getirecek."
+        - "Sıcak kıyafet getirmeleri isteniyor."
   - item: U6-023
     sezdir:
       id: u6d04-023-z
@@ -126,6 +130,10 @@ steps:
       options: ["knee pads", "a flashlight", "a life jacket", "a rope"]
       answer: 0
       explain: "Dizleri korumak için knee pads gerekir."
+      why_wrong:
+        - "Fener karanlık için."
+        - "Can yeleği su için."
+        - "İp tırmanış için; dizleri korumaz."
   - item: U6-024
     sezdir:
       id: u6d04-024-z
@@ -152,6 +160,10 @@ steps:
       options: ["You must use a rope on the climbing wall.", "You can take your phone on the wall.", "You don't need a helmet on the wall.", "You can go on the wall without an adult."]
       answer: 0
       explain: "Kurallara göre ip ve kask her zaman zorunlu, telefon yasak, yanında hep bir yetişkin var."
+      why_wrong:
+        - "Phone: no."
+        - "Helmet: always."
+        - "Yanında her zaman bir yetişkin olmalı."
   - item: U6-025
     sezdir:
       id: u6d04-025-z
@@ -178,6 +190,10 @@ steps:
       options: ["a flashlight", "a life jacket", "knee pads", "a rope"]
       answer: 0
       explain: "Karanlıkta yürümek için el feneri: flashlight."
+      why_wrong:
+        - "Can yeleği karanlıkta işe yaramaz."
+        - "Dizlik yolu aydınlatmaz."
+        - "İp karanlıkta görmeyi sağlamaz."
   - item: U6-026
     sezdir:
       id: u6d04-026-z
@@ -204,6 +220,10 @@ steps:
       options: ["To tell her not to buy a life jacket.", "To ask her to buy a life jacket.", "To invite her to a swimming race.", "To say that the camp is cancelled."]
       answer: 0
       explain: "Kamp can yeleklerini veriyor; mesajın amacı Ece'ye can yeleği almamasını söylemek."
+      why_wrong:
+        - "Mesaj \"please don't buy one\" diyor."
+        - "Yüzme yarışı daveti yok."
+        - "Kamp iptal değil; \"See you tomorrow\"."
   - item: U6-046
     sezdir:
       id: u6d04-046-z
@@ -230,6 +250,10 @@ steps:
       options: ["The life jacket costs more than the helmet.", "The flashlight costs more than the knee pads.", "The knee pads cost 450 TL.", "The helmet costs less than the flashlight."]
       answer: 0
       explain: "Can yeleği 650 TL, kask 450 TL: can yeleği daha pahalı. Diğer cümleler listeyle çelişiyor."
+      why_wrong:
+        - "Fener 120, dizlik 200: ters karşılaştırma."
+        - "Dizlik 200 TL; 450 kaskın fiyatı."
+        - "Kask 450, fener 120: kask daha pahalı."
 
 review:
   - id: u6d04-r01

@@ -99,6 +99,10 @@ steps:
       options: ["Sharks don't attack people very often.", "Most sharks eat people.", "Scientists are afraid of sharks.", "Shark attacks happen every day."]
       answer: 0
       explain: "Metinde köpekbalığı saldırılarının çok nadir olduğu (very rare) yazıyor; köpekbalıkları çoğunlukla balık yer."
+      why_wrong:
+        - "Çoğu köpekbalığı balık yer."
+        - "Bilim insanlarının korktuğu söylenmiyor."
+        - "Saldırılar \"very rare\"."
   - item: U6-020
     sezdir:
       id: u6d08-020-z
@@ -125,6 +129,10 @@ steps:
       options: ["Wear warm gloves and boots, or you can get frostbite.", "Take your swimsuit and sunglasses only.", "Don't take any equipment with you.", "Go alone and leave your phone at home."]
       answer: 0
       explain: "Çok soğukta doğru tavsiye sıcak eldiven ve bot giymektir; diğerleri tehlikeli ya da yersiz."
+      why_wrong:
+        - "Karlı dağda mayo işe yaramaz."
+        - "Ekipmansız gitmek tehlikelidir."
+        - "Yalnız ve telefonsuz gitmek tehlikelidir."
   - item: U6-029
     sezdir:
       id: u6d08-029-z
@@ -151,6 +159,10 @@ steps:
       options: ["A Mysterious Light", "A Funny Village", "The New Lighthouse Keeper", "A Trip to the Beach"]
       answer: 0
       explain: "Işığın nereden geldiğini kimse bilmiyor: konu gizemli bir ışık. Deniz feneri boş, yani yeni bir bekçi de yok."
+      why_wrong:
+        - "Metinde komik bir şey yok."
+        - "Kimse orada yaşamıyor; yeni bekçi yok."
+        - "Kumsal gezisi anlatılmıyor."
   - item: U6-039
     sezdir:
       id: u6d08-039-z
@@ -177,6 +189,10 @@ steps:
       options: ["Ece", "Kaan", "Selin", "Duru"]
       answer: 0
       explain: "Ece gün batımını bir uçurumun tepesinden, güvenlik çitinin arkasından izledi."
+      why_wrong:
+        - "Kaan gölde yüzdü."
+        - "Selin ormanda yürüdü."
+        - "Duru hamakta uyudu."
   - item: U6-040
     sezdir:
       id: u6d08-040-z
@@ -203,6 +219,10 @@ steps:
       options: ["Lisa walked on the ice with a guide.", "Lisa went to Switzerland alone in winter.", "The glacier was green.", "Lisa didn't need warm clothes."]
       answer: 0
       explain: "Lisa yazın bir rehberle buzulda yürüdü ve kalın giyindi; buz mavi ve beyazdı."
+      why_wrong:
+        - "Rehberle gitti ve hava yazdı."
+        - "Buz mavi ve beyazdı."
+        - "Sıcak kıyafet giydi."
 
 review:
   - id: u6d08-r01
@@ -262,6 +282,10 @@ review:
     options: ["Don't do that! It's dangerous.", "Great idea! It's very safe.", "I'd rather go skydiving.", "How much does it cost?"]
     answer: 0
     explain: "Kasksız, dik yokuştan inmek tehlikelidir; Selin onu uyarır."
+    why_wrong:
+      - "Kasksız dik yokuş güvenli değildir."
+      - "Konu Selin'in tercihi değil."
+      - "Fiyat sorulmuyor."
   - id: u6d08-r08
     type: trait_match
     item: U6-003
@@ -272,6 +296,10 @@ review:
     options: ["Ali", "Zeynep", "Can", "Ela"]
     answer: 0
     explain: "Skydiving ve bungee jumping seven Ali heyecan peşinde koşan biridir."
+    why_wrong:
+      - "Zeynep evde okumayı seviyor."
+      - "Can sakin yürüyüşleri seviyor."
+      - "Ela hızlı oyuncaklardan nefret ediyor."
   - id: u6d08-r09
     type: dialogue_complete
     item: U6-038
@@ -282,6 +310,10 @@ review:
     options: ["What kind of adventures do you like?", "How much does it cost?", "Where do you live?", "Why were you late?"]
     answer: 0
     explain: "Cevap bir tür bildiriyor (thrilling ones): soru What kind of …? olmalı."
+    why_wrong:
+      - "Cevap fiyat değil, tür."
+      - "Cevap yer değil."
+      - "Cevap gecikme nedeni değil."
 
 tips:
   - type: tuzak

@@ -102,6 +102,10 @@ steps:
       options: ["To say that she will be late.", "To say that she is hurt.", "To ask Bora to take the bus.", "To invite Bora to dinner."]
       answer: 0
       explain: "Kazada kimse yaralanmamış; anne trafik yüzünden yarım saat gecikeceğini haber veriyor."
+      why_wrong:
+        - "\"Nobody is hurt\" diyor."
+        - "Otobüse binmesini istemiyor; geç alacak."
+        - "Akşam yemeği daveti yok."
   - item: U6-014
     sezdir:
       id: u6d05-014-z
@@ -128,6 +132,10 @@ steps:
       options: ["Aras stayed in one place and kept warm.", "Aras walked down the mountain alone.", "Aras didn't have a flashlight.", "The rescue team found him after a week."]
       answer: 0
       explain: "Metinde Aras'ın bir yerde kaldığı ve sıcak giysilerini giydiği yazıyor; ekip onu iki gece sonra fenerinin ışığından buldu."
+      why_wrong:
+        - "Bir yerde kaldı; yürümedi."
+        - "Ekip fenerinin ışığını gördü."
+        - "İki gece sonra buldular; bir hafta değil."
   - item: U6-015
     sezdir:
       id: u6d05-015-z
@@ -154,6 +162,10 @@ steps:
       options: ["1: autumn · 2: go down to the ground", "1: go down to the ground · 2: autumn", "1: winter · 2: jump", "1: summer · 2: run away"]
       answer: 0
       explain: "Yapraklar sararınca fall (Amerikan İngilizcesi) sonbahardır; ipi tutunca düşmezsin: fall = düşmek."
+      why_wrong:
+        - "Anlamlar yer değiştirmiş."
+        - "1. cümlede mevsim sonbahar; kış değil."
+        - "1. cümlede sonbahar; 2. cümlede düşmek."
   - item: U6-021
     sezdir:
       id: u6d05-021-z
@@ -180,6 +192,10 @@ steps:
       options: ["Sport C has a higher rate of death than Sport A.", "Sport A is more dangerous than Sport B.", "Sport B has a lower rate of death than Sport A.", "The three sports have the same rate of death."]
       answer: 0
       explain: "C'nin oranı 10, A'nınki 1: C daha yüksek. B (4), A'dan (1) daha düşük değil."
+      why_wrong:
+        - "Sport A 1, Sport B 4: A daha güvenli."
+        - "Sport B 4, Sport A 1: B'nin oranı daha yüksek."
+        - "Oranlar farklı: 1, 4, 10."
   - item: U6-047
     sezdir:
       id: u6d05-047-z
@@ -206,6 +222,10 @@ steps:
       options: ["Ela: I have a first-aid certificate, I'm a good swimmer, and I worked at teen camps for three years.", "Can: I'm a good swimmer, but I have no first-aid training.", "Nil: I have a first-aid certificate, but I can't swim.", "Tan: I'm a good swimmer, but I never worked with teenagers."]
       answer: 0
       explain: "Üç niteliğin hepsine sahip olan yalnız Ela: ilk yardım belgesi, yüzme becerisi, gençlerle deneyim."
+      why_wrong:
+        - "Can'ın ilk yardım eğitimi yok."
+        - "Nil yüzme bilmiyor."
+        - "Tan gençlerle çalışmamış."
   - item: U6-048
     sezdir:
       id: u6d05-048-z
@@ -232,6 +252,10 @@ steps:
       options: ["I tell the instructor before I start.", "I start quickly and don't tell anyone.", "I take off my helmet and start.", "I wait for the end of the day."]
       answer: 0
       explain: "Güvenlik ekipmanında sorun varsa başlamadan önce eğitmene söylenir."
+      why_wrong:
+        - "Bol kaskla başlamak tehlikelidir."
+        - "Kaskı çıkarmak daha tehlikelidir."
+        - "Gün sonunu beklemek sorunu çözmez; eğitmene söylemek gerekir."
 
 review:
   - id: u6d05-r01

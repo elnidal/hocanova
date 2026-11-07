@@ -96,6 +96,10 @@ steps:
       options: ["The zip-line was the most popular activity.", "The night walk was more popular than canoeing.", "The climbing wall was the most popular activity.", "Canoeing was the least popular activity."]
       answer: 0
       explain: "En çok oyu zip-line aldı (10). En az oyu alan gece yürüyüşü (2), kano değil."
+      why_wrong:
+        - "Gece yürüyüşü 2, kano 8."
+        - "Tırmanma 5; en popüler zip-line (10)."
+        - "En az seçilen gece yürüyüşü (2)."
   - item: U6-045
     sezdir:
       id: u6d10-045-z
@@ -122,6 +126,10 @@ steps:
       options: ["The Clock Tower is more than 100 years old.", "The Clock Tower is in Ankara.", "It was built in 2001.", "Tourists can't take photos there."]
       answer: 0
       explain: "1901'de yapılmış, yani 100 yaşından büyük. Saat Kulesi İzmir'de ve turistler orada fotoğraf çekiyor."
+      why_wrong:
+        - "Kule İzmir'de."
+        - "1901'de yapıldı."
+        - "Her gün fotoğraf çekiliyor."
   - item: U6-056
     sezdir:
       id: u6d10-056-z
@@ -148,6 +156,10 @@ steps:
       options: ["Where does the festival take place?", "Who is your favourite singer?", "How much does it cost?", "Why don't you come with us?"]
       answer: 0
       explain: "Cevap bir yer ve zaman veriyor (in Konak Square, next Sunday): etkinliğin nerede yapıldığı sorulmuş."
+      why_wrong:
+        - "Cevap kişi değil, yer ve zaman."
+        - "Cevap fiyat değil."
+        - "Bu bir öneri; cevap yer veriyor."
   - item: U6-057
     sezdir:
       id: u6d10-057-z
@@ -174,6 +186,10 @@ steps:
       options: ["My pleasure.", "Get well soon.", "Sorry, wrong number.", "I'd rather not."]
       answer: 0
       explain: "Teşekküre verilen kibar cevap My pleasure'dır."
+      why_wrong:
+        - "Komşu hasta değil."
+        - "Yanlış numara değil."
+        - "Teşekküre ret cevabı verilmez."
 
 review:
   - id: u6d10-r01
@@ -232,6 +248,10 @@ review:
     options: ["Su", "Ali", "Ela", "Can"]
     answer: 0
     explain: "prefer A to B = A'yı B'ye tercih etmek. Su tırmanmayı kanoya tercih ediyor; Ali tam tersini."
+    why_wrong:
+      - "Ali kanoyu tercih ediyor."
+      - "Ela hamağı seçiyor."
+      - "Can ikisini aynı seviyor."
   - id: u6d10-r08
     type: synonym
     item: U6-032
@@ -242,6 +262,10 @@ review:
     options: ["not as good as we hoped", "very funny", "really exciting", "full of action"]
     answer: 0
     explain: "Hikâye sıkıcı, son kötü: film beklenen kadar iyi değil, yani disappointing."
+    why_wrong:
+      - "Sıkıcı hikâye komik değildir."
+      - "Heyecan yok; hikâye sıkıcıydı."
+      - "Aksiyon dolu değil."
   - id: u6d10-r09
     type: situation
     item: U6-031
@@ -252,6 +276,10 @@ review:
     options: ["amusing", "disappointing", "dangerous", "mysterious"]
     answer: 0
     explain: "Herkesi güldüren hikâye amusing'dir."
+    why_wrong:
+      - "Herkes güldü; hayal kırıklığı yok."
+      - "Tehlike yok."
+      - "Gizem yok; hikâye komikti."
   - id: u6d10-r10
     type: table_graph
     item: U6-033
@@ -262,6 +290,10 @@ review:
     options: ["Rock Camp has the most activities.", "Lake Camp is the most expensive.", "Pine Camp is farther than Lake Camp.", "Lake Camp is closer than Pine Camp."]
     answer: 0
     explain: "En çok etkinlik Rock Camp'te (7). En pahalı Rock Camp; Pine Camp (50 km) Lake Camp'ten (80 km) daha yakın."
+    why_wrong:
+      - "En pahalı Rock Camp (2.500)."
+      - "Pine 50 km, Lake 80 km: Pine daha yakın."
+      - "Lake 80, Pine 50: Lake daha uzak."
   - id: u6d10-r11
     type: message_infer
     item: U6-014
@@ -272,6 +304,10 @@ review:
     options: ["How old is Aron?", "Who did Aron climb with?", "Where did they stay for two nights?", "Why did they survive?"]
     answer: 0
     explain: "Kiminle tırmandığı, nerede kaldıkları ve neden hayatta kaldıkları metinde var; Aron'un yaşı yok."
+    why_wrong:
+      - "İki arkadaş ve rehberle tırmandı."
+      - "Küçük bir dağ kulübesinde kaldılar."
+      - "Sıcak kıyafetleri sayesinde kurtuldular."
   - id: u6d10-r12
     type: dialogue_complete
     item: U6-036
@@ -282,6 +318,10 @@ review:
     options: ["refusing an offer politely", "accepting an invitation", "making a complaint", "giving directions"]
     answer: 0
     explain: "Thanks for asking, but I'd rather … kibar bir rettir: Ozan atlamak yerine izlemeyi yeğliyor."
+    why_wrong:
+      - "\"I'd rather watch\" kabul değildir."
+      - "Şikâyet yok."
+      - "Yol tarifi yok."
   - id: u6d10-r13
     type: synonym
     item: U6-055
@@ -292,6 +332,10 @@ review:
     options: ["discover and learn about", "clean", "build", "close"]
     answer: 0
     explain: "explore = bir yeri gezip tanımak, keşfetmek: discover and learn about."
+    why_wrong:
+      - "Mağaralar temizlenmeyecek; keşfedilecek."
+      - "Mağara inşa edilmez."
+      - "Kapatmak keşfetmenin tersi."
 
 tips:
   - type: tuzak

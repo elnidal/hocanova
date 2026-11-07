@@ -100,6 +100,10 @@ steps:
       options: ["Base jumpers use a parachute.", "Bungee jumpers use a parachute.", "Base jumpers jump out of a plane.", "Bungee jumping and base jumping are the same."]
       answer: 0
       explain: "Metne göre base jumping'de paraşüt açılır; bungee'de esnek ip durdurur. Uçaktan atlamak skydiving'dir."
+      why_wrong:
+        - "Bungee'de elastik ip var; paraşüt değil."
+        - "Base jumper bina ya da dağdan atlar; uçaktan değil."
+        - "Metin \"different\" diyor."
   - item: U6-006
     sezdir:
       id: u6d02-006-z
@@ -126,6 +130,10 @@ steps:
       options: ["Ayşe", "Tolga", "Nil", "Nobody"]
       answer: 0
       explain: "Uçaktan atlamak isteyen Ayşe'dir: skydiving. Tolga paragliding, Nil bungee jumping istiyor."
+      why_wrong:
+        - "Tolga yamaç paraşütü istiyor (büyük kanat)."
+        - "Nil bungee jumping istiyor (elastik ip)."
+        - "Ayşe uçaktan atlamak istiyor."
   - item: U6-007
     sezdir:
       id: u6d02-007-z
@@ -152,6 +160,10 @@ steps:
       options: ["Students can't go paragliding at the camp.", "Students can go skydiving at the camp.", "There isn't a zip-line at the camp.", "There isn't a night walk at the camp."]
       answer: 0
       explain: "Broşürde paragliding 'no' yazıyor; zip-line ve night walk var, skydiving yok."
+      why_wrong:
+        - "Skydiving: no."
+        - "Zip-line: yes."
+        - "Night walk: yes."
   - item: U6-012
     sezdir:
       id: u6d02-012-z
@@ -178,6 +190,10 @@ steps:
       options: ["No, Kaan. Please don't take risks.", "Great idea! Go now!", "Sorry, wrong number.", "I'd love to."]
       answer: 0
       explain: "Soğuk ve derin gölde tek başına yüzmek risklidir; öğretmen 'risk alma' der."
+      why_wrong:
+        - "Öğretmen grupla kalmasını istiyor; yalnız göndermez."
+        - "Yanlış numara değil."
+        - "Davet yok; öğretmen uyarıyor."
   - item: U6-028
     sezdir:
       id: u6d02-028-z
@@ -204,6 +220,10 @@ steps:
       options: ["difficult", "boring", "short", "easy"]
       answer: 0
       explain: "challenging = zor ama öğretici: difficult. Kolay bir sınav challenging olmaz."
+      why_wrong:
+        - "Çok şey öğrendiği test sıkıcı sayılmaz."
+        - "Süre konuşulmuyor."
+        - "Easy tam tersi."
   - item: U6-033
     sezdir:
       id: u6d02-033-z
@@ -230,6 +250,10 @@ steps:
       options: ["Bungee jumping is more dangerous than the zip-line.", "The hammock is more fun than the zip-line.", "The zip-line is more dangerous than bungee jumping.", "The hammock is more dangerous than the zip-line."]
       answer: 0
       explain: "Tehlike puanı: bungee 5, zip-line 2, hamak 0. Yalnız ilk cümle tabloyla uyuşuyor."
+      why_wrong:
+        - "Hamak 1, zip-line 4: hamak daha az eğlenceli."
+        - "Zip-line 2, bungee 5: ters karşılaştırma."
+        - "Hamak 0, zip-line 2: hamak daha güvenli."
 
 review:
   - id: u6d02-r01

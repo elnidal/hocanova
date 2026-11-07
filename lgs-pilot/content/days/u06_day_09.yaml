@@ -92,6 +92,10 @@ steps:
       options: ["amazing", "boring", "dangerous", "disappointing"]
       answer: 0
       explain: "magnificent = amazing, çok güzel ve etkileyici. Diğerleri olumsuz anlamlı."
+      why_wrong:
+        - "Boring tam tersi."
+        - "Fotoğraf tehlike değil, güzellik anlatıyor."
+        - "Disappointing hayal kırıklığıdır."
   - item: U6-041
     sezdir:
       id: u6d09-041-z
@@ -118,6 +122,10 @@ steps:
       options: ["The trip to İzmir is longer than the trip to Ankara.", "Bus A leaves later than Bus B.", "Bus B's destination is Bursa.", "The trip to Bursa is longer than the trip to İzmir."]
       answer: 0
       explain: "İzmir yolculuğu 7,5 saat, Ankara 4,5 saat. A otobüsü B'den erken kalkıyor; B'nin varış yeri Ankara; Bursa yolculuğu 2,5 saat."
+      why_wrong:
+        - "A 08.00, B 09.00: A daha erken."
+        - "B Ankara'ya gidiyor."
+        - "Bursa 2,5 saat, İzmir 7,5 saat."
   - item: U6-042
     sezdir:
       id: u6d09-042-z
@@ -144,6 +152,10 @@ steps:
       options: ["What a magnificent view!", "What a dangerous accident!", "How much does it cost?", "I'd rather stay at home."]
       answer: 0
       explain: "Tepeden bütün şehri ve denizi görünce manzaraya hayranlık duyulur."
+      why_wrong:
+        - "Kaza yok."
+        - "Fiyat sorulmuyor."
+        - "Manzara karşısında evde kalmak istemek uymaz."
   - item: U6-043
     sezdir:
       id: u6d09-043-z
@@ -170,6 +182,10 @@ steps:
       options: ["You can see the waterfall from a boat.", "The waterfall is in İzmir.", "The water falls into a lake.", "Nobody visits the waterfall."]
       answer: 0
       explain: "Metinde şelaleyi tekneden izleyebileceğin yazıyor. Şelale Antalya'da ve su denize dökülüyor."
+      why_wrong:
+        - "Şelale Antalya'da."
+        - "Su denize dökülüyor."
+        - "Her yıl çok turist geliyor."
   - item: U6-044
     sezdir:
       id: u6d09-044-z
@@ -196,6 +212,10 @@ steps:
       options: ["the hotel they stayed at", "how long they drove", "what they saw", "where they had lunch"]
       answer: 0
       explain: "Süre (six hours), görülenler (hills, villages, river) ve öğle yemeği yeri metinde var; otel yok."
+      why_wrong:
+        - "Altı saat yazdı."
+        - "Manzara anlatılıyor."
+        - "Öğle yemeği köyde."
   - item: U6-055
     sezdir:
       id: u6d09-055-z
@@ -222,6 +242,10 @@ steps:
       options: ["to invite Selin on a trip", "to say sorry to Selin", "to ask for help with homework", "to refuse Selin's invitation"]
       answer: 0
       explain: "Would you like to come with us? bir davettir; Elif Selin'i geziye çağırıyor."
+      why_wrong:
+        - "Özür yok."
+        - "Ödev yardımı istemiyor."
+        - "Selin'in daveti yok; Elif davet ediyor."
 
 review:
   - id: u6d09-r01
@@ -272,6 +296,10 @@ review:
     options: ["Canoeing is less dangerous than the zip-line.", "Bungee jumping is less fun than canoeing.", "The zip-line is more dangerous than bungee jumping.", "Canoeing is more fun than the zip-line."]
     answer: 0
     explain: "Kano tehlikede 1, zip-line 2: kano daha az tehlikeli. Diğer üç karşılaştırma tablonun tersini söylüyor."
+    why_wrong:
+      - "Bungee 5, kano 3: bungee daha eğlenceli."
+      - "Zip-line 2, bungee 5."
+      - "Kano 3, zip-line 4."
   - id: u6d09-r07
     type: trait_match
     item: U6-012
@@ -282,6 +310,10 @@ review:
     options: ["She is careful.", "She is an adrenaline seeker.", "She loves dangerous sports.", "She never wears a helmet."]
     answer: 0
     explain: "Risk almayan, kask takan ve denize yalnız girmeyen biri dikkatlidir (careful)."
+    why_wrong:
+      - "Risk almayan biri adrenalin peşinde değildir."
+      - "Tehlikeli sporlardan kaçınıyor."
+      - "Her zaman kask takıyor."
   - id: u6d09-r08
     type: synonym
     item: U6-028
@@ -292,6 +324,10 @@ review:
     options: ["difficult", "easy", "boring", "cheap"]
     answer: 0
     explain: "challenging = zorlayıcı ama denemeye değer; en yakın anlam difficult. but I loved it zorluğu ama keyfi gösteriyor."
+    why_wrong:
+      - "Easy tam tersi."
+      - "Sevdiği bir şey sıkıcı değildir."
+      - "Fiyat konuşulmuyor."
   - id: u6d09-r09
     type: message_infer
     item: U6-006
@@ -302,6 +338,10 @@ review:
     options: ["Tom", "Ayla", "Lara", "Can"]
     answer: 0
     explain: "Uçaktan paraşütle atlamak skydiving'dir. Ayla paragliding, Lara bungee jumping yaptı."
+    why_wrong:
+      - "Ayla yamaç paraşütü yaptı."
+      - "Lara bungee jumping yaptı."
+      - "Can buzulda yürüdü."
 
 tips:
   - type: tuzak

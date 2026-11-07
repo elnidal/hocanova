@@ -100,6 +100,10 @@ steps:
       options: ["adventurous", "lazy", "stubborn", "jealous"]
       answer: 0
       explain: "Yeni şeyler denemeyi seven, ormanda çadırda uyuyan ve İzlanda'ya gitmek isteyen biri adventurous'tır."
+      why_wrong:
+        - "Çadırda uyuyup soğuk gölde yüzen tembel değildir."
+        - "stubborn inatçıdır; metin yeni şeyler denemeyi anlatıyor."
+        - "jealous kıskançtır; metinde buna işaret yok."
   - item: U6-002
     sezdir:
       id: u6d01-002-z
@@ -126,6 +130,10 @@ steps:
       options: ["Lale", "Arda", "Can", "Defne"]
       answer: 0
       explain: "Yüksek dağlardan snowboard ile inmek bir extreme sport'tur; satranç, çizgi roman ve film değildir."
+      why_wrong:
+        - "Satranç sakin bir oyundur."
+        - "Çizgi roman okumak sakin bir etkinliktir."
+        - "Evde film izlemek ekstrem spor değildir."
   - item: U6-003
     sezdir:
       id: u6d01-003-z
@@ -152,6 +160,10 @@ steps:
       options: ["Kaan", "Bora", "Selin", "Duru"]
       answer: 0
       explain: "8–10 puan adrenaline seeker demek; bu aralıkta yalnız Kaan (10) var."
+      why_wrong:
+        - "Bora 5 puanla \"a little excitement\" grubunda."
+        - "Selin 2 puanla sakin günleri seviyor."
+        - "Duru 0 puanla sakin günleri seviyor."
   - item: U6-011
     sezdir:
       id: u6d01-011-z
@@ -178,6 +190,10 @@ steps:
       options: ["not safe", "very boring", "really cheap", "easy"]
       answer: 0
       explain: "İnce buzun üstünde yürümek güvenli değildir: dangerous = not safe."
+      why_wrong:
+        - "Tabela sıkıcılıktan değil, tehlikeden söz ediyor."
+        - "Fiyatla ilgisi yok."
+        - "Kolay demek tam tersi; ince buzda yürümek tehlikeli."
   - item: U6-027
     sezdir:
       id: u6d01-027-z
@@ -204,6 +220,10 @@ steps:
       options: ["Yes, they're very experienced.", "No, they're inexperienced.", "Sorry, wrong number.", "I'd love to."]
       answer: 0
       explain: "Yirmi yıldır her yaz kampta çalışan bir ekip deneyimlidir: experienced."
+      why_wrong:
+        - "Yirmi yıldır çalışan ekip deneyimsiz olamaz."
+        - "Yanlış numara değil."
+        - "Bu bir davete verilen cevaptır."
   - item: U6-038
     sezdir:
       id: u6d01-038-z
@@ -230,6 +250,10 @@ steps:
       options: ["What kind of music do you like?", "How often do you sing?", "Who is your favourite singer?", "Where do you listen to music?"]
       answer: 0
       explain: "Elif müzik türü söylüyor (pop, jazz); bu yüzden soru What kind of music…? olmalı. Sıklık, kişi ya da yer sorulmamış."
+      why_wrong:
+        - "Cevap sıklık değil, müzik türü."
+        - "Cevapta şarkıcı adı yok."
+        - "Cevap yer değil, tür."
 
 review:
   - id: u6d01-r01
@@ -242,6 +266,10 @@ review:
     options: ["He shouldn't click on the link.", "He should click on the link quickly.", "He should send his password.", "He should share the link with his friends."]
     answer: 0
     explain: "Tanımadığı birinden gelen 'bedava' bağlantıya tıklamamalı (click)."
+    why_wrong:
+      - "Tanımadığı birinin linkine tıklamak tehlikelidir."
+      - "Şifre asla gönderilmez."
+      - "Şüpheli linki paylaşmak arkadaşlarını da tehlikeye atar."
   - id: u6d01-r02
     type: table_graph
     item: U5-060
@@ -252,6 +280,10 @@ review:
     options: ["A round-trip ticket: 250 TL", "A one-way ticket: 150 TL", "A round-trip ticket: 150 TL", "A one-way ticket: 250 TL"]
     answer: 0
     explain: "Gidip dönmek için tek bilet round-trip'tir ve 250 TL'dir."
+    why_wrong:
+      - "Gidip dönecek; tek yön yetmez."
+      - "Gidiş-dönüş 250 TL."
+      - "Tek yön 150 TL ve dönüşü kapsamaz."
   - id: u6d01-r03
     type: situation
     item: U5-056
@@ -262,6 +294,10 @@ review:
     options: ["refusing an invitation", "accepting an invitation", "giving directions", "making a complaint"]
     answer: 0
     explain: "That's very kind of you, but … kibar bir ret kalıbıdır."
+    why_wrong:
+      - "\"but I can't\" kabul değildir."
+      - "Yol tarifi yok."
+      - "Şikâyet yok; kibarca reddediyor."
   - id: u6d01-r04
     type: text_infer
     item: U5-041
@@ -272,6 +308,10 @@ review:
     options: ["The number of subscribers went up in February.", "The channel lost subscribers in February.", "The channel had 3,400 subscribers in January.", "Most of the comments are unkind."]
     answer: 0
     explain: "increased = arttı: Şubatta abone sayısı 1.200'den 3.400'e çıktı."
+    why_wrong:
+      - "1.200'den 3.400'e çıktı; kaybetmedi."
+      - "Ocakta 1.200 abone vardı."
+      - "Rapor \"Most of the comments are kind\" diyor."
   - id: u6d01-r05
     type: message_infer
     item: U5-020
@@ -282,6 +322,10 @@ review:
     options: ["To say that she will be offline for a while.", "To invite Mia to the camp.", "To ask for Mia's password.", "To make a complaint about the internet."]
     answer: 0
     explain: "Kampta internet yok; Elif iki gün çevrim dışı (offline) olacağını haber veriyor."
+    why_wrong:
+      - "Mia'yı kampa çağırmıyor."
+      - "Şifre istemiyor."
+      - "Şikâyet yok; kampta internet olmadığını bildiriyor."
 
 tips:
   - type: tuzak

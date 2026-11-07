@@ -102,6 +102,9 @@ steps:
       options: ["going rafting at 11.00", "going caving at 09.00", "joining the bike tour at 14.00"]
       answer: 0
       explain: "Rafting 14 yaş ve üstü için; 13 yaşındaki Arda katılamaz. Caving (12+) ve bisiklet turu (10+) olur."
+      why_wrong:
+        - "Mağara 12 yaş üstü; Arda 13."
+        - "Bisiklet turu 10 yaş üstü; Arda katılabilir."
   - item: U6-031
     sezdir:
       id: u6d03-031-z
@@ -128,6 +131,10 @@ steps:
       options: ["funny", "scary", "sad", "long"]
       answer: 0
       explain: "'I laughed a lot' ipucu: amusing = funny."
+      why_wrong:
+        - "Çok güldüyse film korkunç değildir."
+        - "Gülmek üzgün olmakla çelişir."
+        - "Süre konuşulmuyor."
   - item: U6-032
     sezdir:
       id: u6d03-032-z
@@ -154,6 +161,10 @@ steps:
       options: ["disappointing", "amusing", "thrilling", "fascinating"]
       answer: 0
       explain: "Sıkıcı hikâye, berbat son, parasını geri istiyor: film disappointing."
+      why_wrong:
+        - "Ege sıkıldı; amusing komiktir."
+        - "thrilling heyecanlıdır; hikâye sıkıcıydı."
+        - "fascinating büyüleyicidir; Ege parasını geri istiyor."
   - item: U6-035
     sezdir:
       id: u6d03-035-z
@@ -180,6 +191,10 @@ steps:
       options: ["I prefer the hammock to the zip-line.", "I'm sorry to hear that.", "Yes, I do.", "At ten o'clock."]
       answer: 0
       explain: "Which one…? sorusuna iki seçenekten biri söylenerek cevap verilir; Yes, I do olmaz."
+      why_wrong:
+        - "Kötü haber yok."
+        - "Soru evet-hayır sorusu değil."
+        - "Saat sorulmadı."
   - item: U6-036
     sezdir:
       id: u6d03-036-z
@@ -206,6 +221,10 @@ steps:
       options: ["expressing a preference", "apologising for being late", "giving directions", "accepting the invitation"]
       answer: 0
       explain: "I'd rather … ile Duru sinema yerine evde kalmayı yeğlediğini söylüyor: tercih bildirme."
+      why_wrong:
+        - "Özür yok."
+        - "Yol tarifi yok."
+        - "Evde kalmayı tercih ediyor; daveti kabul etmiyor."
   - item: U6-037
     sezdir:
       id: u6d03-037-z
@@ -232,6 +251,10 @@ steps:
       options: ["Why do you prefer the hammock to the zip-line?", "Where is the zip-line?", "When does the night walk start?", "Do you like high places?"]
       answer: 0
       explain: "Because ile başlayan cevap bir Why? sorusuna verilir. Do you like…? sorusunun cevabı Yes/No olur."
+      why_wrong:
+        - "Cevap yer değil, neden."
+        - "Cevap saat değil, neden."
+        - "Bu evet-hayır sorusu; cevap \"Because\" ile başlıyor."
 
 review:
   - id: u6d03-r01
