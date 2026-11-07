@@ -119,6 +119,11 @@ def story_html(gun, gorev, ek=""):
           f'<div class="foot" style="bottom:330px">{owl(120, bg=False)}<span class="nova">Hoca Nova: Küçük adım, her gün. 💪</span></div>')
     return sayfa(ic, 1080, 1920, "#3B4BD8", "grad")
 
+def ozel_story_html(html):
+    """Geri sayımsız, sade story (ör. 10 Kasım anması): baykuş ve görev kartı yok."""
+    ic = f'<div class="main" style="top:380px;bottom:420px;gap:60px;text-align:center;align-items:center">{html}</div>'
+    return sayfa(ic, 1080, 1920, "#1B1E3A", "grad")
+
 GUNLER = ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"]
 AYLAR = ["", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
 
@@ -193,7 +198,8 @@ def main():
             isler.append((yol, os.path.join(gun_klasoru(cikti, g["kod"]), ad + ".png"), 1080, 1350))
         ad = f'{g["kod"][:6]}_story'
         yol = os.path.join(gecici, ad + ".html")
-        open(yol, "w", encoding="utf-8").write(story_html(g["story"]["gun"], g["story"]["gorev"], g["story"].get("ek", "")))
+        st = g["story"]
+        open(yol, "w", encoding="utf-8").write(ozel_story_html(st["html"]) if "html" in st else story_html(st["gun"], st["gorev"], st.get("ek", "")))
         isler.append((yol, os.path.join(gun_klasoru(cikti, g["kod"]), ad + ".png"), 1080, 1920))
     with ThreadPoolExecutor(4) as ex:
         list(ex.map(ekran_goruntusu, isler))
