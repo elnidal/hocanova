@@ -101,6 +101,10 @@ steps:
       options: ["Something sweet, please.", "Something salty, please.", "Something sour, please.", "Something spicy, please."]
       answer: 0
       explain: "Elif'in cevabı şeker ve bal dolu baklava; demek ki Kaan tatlı bir şey istemiş."
+      why_wrong:
+        - "Elif baklava öneriyor; Kaan tuzlu istemiş olsa bu öneri uymaz."
+        - "Ekşi istene bal ve şekerli tatlı önerilmez."
+        - "Acı isteyene baklava önerilmez."
   - item: U3-033
     sezdir:
       id: u3d05-033-z
@@ -127,6 +131,10 @@ steps:
       options: ["The lemonade is very sour.", "The lemonade is very sweet.", "There is a lot of sugar in it.", "Ece wants more lemonade."]
       answer: 0
       explain: "Altı limon, hiç şeker yok ve Ece su istiyor: limonata çok ekşi; diğer şıklar metinle çelişiyor."
+      why_wrong:
+        - "Şekersiz altı limon: tatlı olamaz."
+        - "Mesaj \"no sugar\" diyor."
+        - "Ece su istedi; daha fazla limonata değil."
   - item: U3-027
     sezdir:
       id: u3d05-027-z
@@ -153,6 +161,10 @@ steps:
       options: ["It is bitter.", "It is sweet.", "It is salty.", "It is spicy."]
       answer: 0
       explain: "Şekersiz, sütsüz sade kahve acıdır (bitter); Selin'in \"Never again!\" demesi de bunu destekler."
+      why_wrong:
+        - "Şekersiz kahve tatlı olmaz."
+        - "Kahvede tuz yok."
+        - "Kahvede baharat yok; sade kahve acıdır."
   - item: U3-032
     sezdir:
       id: u3d05-032-z
@@ -179,6 +191,10 @@ steps:
       options: ["Half of the students like a salty snack best.", "Most students like a bitter snack best.", "Nobody chose a sour snack.", "More students chose dark chocolate than Turkish delight."]
       answer: 0
       explain: "30 öğrencinin 15'i (yarısı) tuzlu cipsi seçmiş; diğer şıklar tablodaki sayılarla çelişiyor."
+      why_wrong:
+        - "Acı atıştırmalığı 4 kişi seçmiş; çoğunluk değil."
+        - "Turşuyu 2 kişi seçmiş."
+        - "Bitter 4, tatlı 9; ters karşılaştırma."
   - item: U3-034
     sezdir:
       id: u3d05-034-z
@@ -205,6 +221,10 @@ steps:
       options: ["There's a lot of chilli in it.", "There's a lot of sugar in it.", "It's very cold.", "It's very cheap."]
       answer: 0
       explain: "Duru'nun önce süt istemesi çorbanın acılı olduğunu gösterir; şeker, soğukluk ya da fiyat süt gerektirmez."
+      why_wrong:
+        - "Şekerli çorba için süt içmek gerekmez."
+        - "Soğuk çorba dikkat gerektirmez; Duru acıya karşı süt istiyor."
+        - "Ucuzluk çorbayı tehlikeli yapmaz."
   - item: U3-036
     sezdir:
       id: u3d05-036-z
@@ -231,6 +251,10 @@ steps:
       options: ["What flavour of ice cream would you like?", "When does the ice cream shop open?", "Who bought the ice cream?", "Why do you like ice cream?"]
       answer: 0
       explain: "Cevap bir çeşit/aroma (strawberry) veriyor; bunu soran tek soru \"What flavour…?\""
+      why_wrong:
+        - "Cevap bir saat değil, tat veriyor."
+        - "Cevap bir kişi değil, tat veriyor."
+        - "Cevap bir neden değil; \"Strawberry, please!\" seçim yapıyor."
 
 review:
   - id: u3d05-r01
@@ -259,6 +283,10 @@ review:
     options: ["Dice it.", "Squeeze it.", "Pour it.", "Whisk it."]
     answer: 0
     explain: "\"Very small cubes\" küp küp doğramayı (dice) anlatıyor."
+    why_wrong:
+      - "Soğan sıkılmaz."
+      - "Soğan dökülmez."
+      - "Soğan çırpılmaz."
   - id: u3d05-r04
     type: situation
     item: U3-025
@@ -293,6 +321,10 @@ review:
     options: ["butter", "milk", "eggs", "baking powder"]
     answer: 0
     explain: "Malzeme listesinde süt, yumurta ve kabartma tozu var; tereyağı (butter) yok."
+    why_wrong:
+      - "Süt malzemelerde var."
+      - "Yumurta malzemelerde var."
+      - "Kabartma tozu malzemelerde var."
 
 tips:
   - type: tuzak

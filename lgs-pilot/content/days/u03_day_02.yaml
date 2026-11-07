@@ -97,6 +97,10 @@ steps:
       options: ["a fruit salad", "bread", "a cake", "cookies"]
       answer: 0
       explain: "Ekmek, kek ve kurabiye fırında pişer; meyve salatası hiç pişmez."
+      why_wrong:
+        - "Ekmek fırında pişirilir."
+        - "Kek fırında pişirilir."
+        - "Kurabiye fırında pişirilir."
   - item: U3-006
     sezdir:
       id: u3d02-006-z
@@ -123,6 +127,10 @@ steps:
       options: ["The oven should be hot before Mum comes home.", "Mum will be home at half past five.", "Ece should bake the bread alone.", "The oven must be cold at six."]
       answer: 0
       explain: "Annesi saat altıda gelecek ve fırının 5.30'da ısıtılmasını istiyor; yani anne gelmeden fırın sıcak olmalı."
+      why_wrong:
+        - "Mum altıda geliyor; beş buçuk fırını ısıtma saati."
+        - "Not \"bake the bread together\" diyor."
+        - "Fırın 5.30'da ısınmaya başlayınca altıda sıcak olur."
   - item: U3-039
     sezdir:
       id: u3d02-039-z
@@ -150,6 +158,10 @@ steps:
       options: ["You need the same amount of milk and flour.", "You need two cups of milk.", "There aren't any eggs in the pancakes.", "You need more flour than milk."]
       answer: 0
       explain: "Tarifte bir su bardağı süt ve bir su bardağı un var: miktarları aynı."
+      why_wrong:
+        - "Tarif bir bardak süt diyor."
+        - "Tarifte iki yumurta var."
+        - "Un ve süt aynı miktar: birer bardak."
   - item: U3-042
     sezdir:
       id: u3d02-042-z
@@ -176,6 +188,10 @@ steps:
       options: ["He used too much salt.", "He used less salt than the recipe says.", "He didn't use any salt.", "He followed the recipe perfectly."]
       answer: 0
       explain: "Bir yemek kaşığı yaklaşık üç çay kaşığıdır; Kaan tarifin istediğinden fazla tuz koymuş."
+      why_wrong:
+        - "Tablespoon, teaspoon'dan büyüktür; daha az değil, fazla koymuş."
+        - "Kaan tuz kullanmış; yalnız ölçüyü karıştırmış."
+        - "Tarifteki ölçüye uymamış."
   - item: U3-043
     sezdir:
       id: u3d02-043-z
@@ -202,6 +218,10 @@ steps:
       options: ["Elif probably didn't use any baking powder.", "Elif's cake is very tall.", "Selin made the cake with Elif.", "Elif's cake rose too much."]
       answer: 0
       explain: "Pasta yassı kaldı ve Selin kabartma tozunu unutmuş olabileceğini söylüyor."
+      why_wrong:
+        - "Kek \"flat like a pancake\"; uzun değil."
+        - "Selin yalnızca tahmin yürütüyor; birlikte yaptıklarını söylemiyor."
+        - "Kek hiç kabarmamış: \"didn't rise\"."
   - item: U3-046
     sezdir:
       id: u3d02-046-z
@@ -229,6 +249,10 @@ steps:
       options: ["Do we have any flour?", "Do we have any flowers?", "Is the cake ready?", "Who is your teacher?"]
       answer: 0
       explain: "\"Do we have any flour?\" (Un var mı?) un sorusu; flowers çiçek demektir."
+      why_wrong:
+        - "flower un değil, çiçektir; okunuşu benzer diye tuzak."
+        - "Cevap bir torbanın yerini veriyor; kek hazır mı sorusuna uymaz."
+        - "Öğretmen sorusu dolaptaki torbayla cevaplanmaz."
 
 review:
   - id: u3d02-r01
@@ -272,6 +296,10 @@ review:
     options: ["Can I have the recipe?", "Can I have the receipt?", "Is the soup cold?", "Where is the bathroom?"]
     answer: 0
     explain: "Çorba tarifini isteyen kişi \"Can I have the recipe?\" der. receipt fiş demektir."
+    why_wrong:
+      - "receipt fiştir; recipe tariftir."
+      - "Çorba övülüyor; soğukluk sorulmuyor."
+      - "Cevap malzeme sayıyor; banyonun yeri sorulmamış."
   - id: u3d02-r06
     type: gap_fill
     item: U3-052

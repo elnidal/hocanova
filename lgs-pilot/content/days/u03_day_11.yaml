@@ -108,6 +108,10 @@ steps:
       options: ["3 – 2 – 4 – 1", "2 – 3 – 1 – 4", "1 – 3 – 2 – 4", "3 – 4 – 2 – 1"]
       answer: 0
       explain: "Soğan doğranmadan kaynatılmaz, kaynamadan blenderdan geçmez; serve her zaman en sondadır."
+      why_wrong:
+        - "Önce soğan doğranır, sonra kaynar."
+        - "Servis en son yapılır."
+        - "Blender kaynatmadan sonra gelir."
   - item: U3-057
     sezdir:
       id: u3d11-057-z
@@ -134,6 +138,10 @@ steps:
       options: ["Enjoy your meal!", "See you next year!", "Sorry, I'm busy.", "Good luck in the exam!"]
       answer: 0
       explain: "Babaanne yemeği masaya koyuyor, Bora teşekkür ediyor: arada \"afiyet olsun\" gelir."
+      why_wrong:
+        - "Yemek sunulurken \"seneye görüşürüz\" denmez."
+        - "Meşgul olmak sofraya davetle çelişir."
+        - "Sınav dileği yemek sunarken söylenmez."
   - item: U3-059
     sezdir:
       id: u3d11-059-z
@@ -155,10 +163,14 @@ steps:
       type: message_infer
       lgs_like: true
       prompt: "<en>What is Elif doing in the message?</en>"
-      stem: "<en>Elif's message: Have you tried Nazmiye Teyze's new rice pudding? It's Bora's recipe and it's really worth trying!</en>"
+      stem: "<en>Elif's message: You must try Nazmiye Teyze's new rice pudding! It's Bora's recipe and it's really worth trying!</en>"
       options: ["recommending a dessert", "complaining about a dessert", "inviting Bora to a party", "apologising to Nazmiye Teyze"]
       answer: 0
       explain: "worth trying = tavsiye dili; Elif sütlacı öneriyor (recommend)."
+      why_wrong:
+        - "Elif tatlıyı övüyor; şikâyet yok."
+        - "Parti daveti yok."
+        - "Özür yok; öneri var."
 
 review:
   - id: u3d11-r01
@@ -187,6 +199,10 @@ review:
     options: ["main course", "dessert", "recipe", "ingredients"]
     answer: 0
     explain: "Başlangıç yemeğinden sonra gelen ızgara balık ana yemektir (main course)."
+    why_wrong:
+      - "Başlangıç istemedi; balık ana yemek olur, tatlı değil."
+      - "recipe tariftir; sipariş değil."
+      - "ingredients malzemelerdir."
   - id: u3d11-r04
     type: gap_fill
     item: U3-061
@@ -204,6 +220,10 @@ review:
     options: ["She is preparing dinner.", "She is doing the dishes.", "She is ordering a pizza.", "She is having breakfast."]
     answer: 0
     explain: "Soğan doğrayıp et yoğuran anne akşam yemeği hazırlıyor."
+    why_wrong:
+      - "Bulaşık değil, yemek hazırlığı yapıyor."
+      - "Pizza sipariş etmiyor; kendisi pişiriyor."
+      - "Akşam yemeği hazırlanıyor; kahvaltı değil."
   - id: u3d11-r06
     type: synonym
     item: U3-063
@@ -221,6 +241,10 @@ review:
     options: ["b – d – a – c", "d – b – a – c", "b – a – d – c", "a – b – d – c"]
     answer: 0
     explain: "First → Then → After that → Finally: soy, küp küp doğra, limonu sık, tuz-karabiberle tatlandır."
+    why_wrong:
+      - "İlk adım soymak: \"First\"."
+      - "Doğramak limondan önce gelir."
+      - "Limon \"After that\" ile; ilk adım değil."
   - id: u3d11-r08
     type: synonym
     item: U3-021
@@ -229,6 +253,10 @@ review:
     options: ["Put some salt and pepper in the soup.", "Make the soup in winter.", "Cook the soup for three months.", "Freeze the soup."]
     answer: 0
     explain: "Tarifte season fiildir: tuz ve baharatla tatlandırmak; mevsimle ilgisi yok."
+    why_wrong:
+      - "Burada season mevsim değil, tuz biber koymaktır."
+      - "Üç ay pişirmek anlamsız; season burada fiil."
+      - "Dondurmak tuz biberle ilgisi yok."
   - id: u3d11-r09
     type: text_infer
     item: U3-049
@@ -239,6 +267,10 @@ review:
     options: ["an onion", "a lemon", "a green pepper", "salt"]
     answer: 0
     explain: "Domates, yeşil biber, limon, tuz ve karabiber var; soğan yok."
+    why_wrong:
+      - "Limon tarifte var."
+      - "Yeşil biber tarifte var."
+      - "Tuz tarifte var."
   - id: u3d11-r10
     type: dialogue_complete
     item: U3-010
@@ -249,6 +281,10 @@ review:
     options: ["Dice them into small cubes.", "Freeze them first.", "Don't cut them at all.", "Season them with sugar."]
     answer: 0
     explain: "Ardından gelen \"Small pieces\" ipucu: dice = küçük küpler hâlinde doğramak."
+    why_wrong:
+      - "Dondurmak küçük parçalar vermez."
+      - "Bora \"small pieces\" diyor; hiç kesmemek çelişir."
+      - "Çorbadaki havuç şekerle tatlandırılmaz."
   - id: u3d11-r11
     type: process_order
     item: U3-061
@@ -259,6 +295,10 @@ review:
     options: ["2 – 4 – 1 – 3", "4 – 2 – 1 – 3", "2 – 1 – 4 – 3", "1 – 2 – 4 – 3"]
     answer: 0
     explain: "Et yoğrulmadan köfte yapılmaz, köfteler tepsiye konmadan fırına girmez; serve en sondadır."
+    why_wrong:
+      - "Köfte yapmadan önce hamur yoğrulur."
+      - "Fırın köfteler tepsiye dizildikten sonra."
+      - "Fırın ilk adım olamaz."
   - id: u3d11-r12
     type: table_graph
     item: U3-060
@@ -269,6 +309,10 @@ review:
     options: ["The ice cream in Ece's team's dessert isn't from a shop.", "Kaan's team served chicken for the main course.", "Both teams got the Best Flavour award.", "Ece's team served rice pudding."]
     answer: 0
     explain: "homemade = ev yapımı, yani dükkândan alınmamış. Tavuk ve sütlaç diğer takımın değil; Best Flavour yalnız Ece takımının."
+    why_wrong:
+      - "Kaan'ın takımı İzmir köftesi yaptı."
+      - "Kaan'ın takımı Best Teamwork aldı."
+      - "Sütlaç Kaan'ın takımının tatlısı."
   - id: u3d11-r13
     type: dialogue_complete
     item: U3-031
@@ -279,6 +323,10 @@ review:
     options: ["Really? Homemade food is worth trying.", "You're right. Don't try it.", "Enjoy your meal at the restaurant!", "Sorry, I'm not hungry."]
     answer: 0
     explain: "Bora ardından sütlacını denemesini istiyor; ev yemeğini savunan, \"denemeye değer\" diyen şık uyuyor."
+    why_wrong:
+      - "Bora sütlaç öneriyor; \"deneme\" demek çelişir."
+      - "Konu restoranda yemek değil."
+      - "Aç olmamak öneriyle uyuşmaz."
   - id: u3d11-r14
     type: text_infer
     item: U3-047
@@ -289,6 +337,10 @@ review:
     options: ["How many people does it serve?", "How long does it take?", "What is the oven temperature?", "What do we serve it with?"]
     answer: 0
     explain: "Süre (about an hour), sıcaklık (180 degrees) ve yanında ne verileceği (rice) yazıyor; kaç kişilik olduğu yazmıyor."
+    why_wrong:
+      - "Not \"about an hour\" diyor."
+      - "Not \"180 degrees\" diyor."
+      - "Not \"with rice\" diyor."
 
 tips:
   - type: lgs_taktigi

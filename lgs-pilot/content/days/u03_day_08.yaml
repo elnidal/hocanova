@@ -103,6 +103,10 @@ steps:
       options: ["We grill it with a little lemon.", "We fry it in a lot of oil.", "We mash it with a fork.", "We knead it like bread."]
       answer: 0
       explain: "Garson 'No, it isn't (fried)' diyor; balığı yağda değil ızgarada pişiriyorlar."
+      why_wrong:
+        - "Garson \"No, it isn't\" fried diyor; yağda kızartmak çelişir."
+        - "Balık ezilmez."
+        - "Balık hamur gibi yoğrulmaz."
   - item: U3-007
     sezdir:
       id: u3d08-007-z
@@ -127,6 +131,10 @@ steps:
       options: ["peel", "roast", "grill", "steam"]
       answer: 0
       explain: "roast, grill, steam pişirme yöntemi; peel (soymak) pişirmeden önceki hazırlık işi."
+      why_wrong:
+        - "roast fırında kızartmaktır; pişirme yoludur."
+        - "grill ızgaradır; pişirme yoludur."
+        - "steam buharda pişirmektir."
   - item: U3-008
     sezdir:
       id: u3d08-008-z
@@ -152,6 +160,10 @@ steps:
       options: ["He is steaming vegetables.", "He is frying vegetables.", "He is grilling vegetables.", "He is mashing vegetables."]
       answer: 0
       explain: "Sebzeler suya değmiyor, kaynayan suyun buharıyla pişiyor: steam."
+      why_wrong:
+        - "Yağ yok; sıcak buhar pişiriyor."
+        - "Izgara ateşle yapılır; burada buhar var."
+        - "Sebzeler ezilmiyor; pişiyor."
   - item: U3-017
     sezdir:
       id: u3d08-017-z
@@ -178,6 +190,10 @@ steps:
       options: ["peel → boil → drain → mash", "boil → peel → mash → drain", "peel → drain → boil → mash", "mash → peel → boil → drain"]
       answer: 0
       explain: "'Before you boil…, peel them': önce soy, sonra haşla, suyunu süz ve en son ez."
+      why_wrong:
+        - "Önce soyulur sonra haşlanır."
+        - "Haşlamadan süzülmez."
+        - "Ezmek en son adımdır."
   - item: U3-029
     sezdir:
       id: u3d08-029-z
@@ -204,6 +220,10 @@ steps:
       options: ["fresh", "greasy", "salty", "spicy"]
       answer: 0
       explain: "Bu sabah bahçeden toplanan meyve tazedir."
+      why_wrong:
+        - "Yeni toplanan çilek yağlı olmaz."
+        - "Çilek tuzlu olmaz."
+        - "Çilek acı olmaz; bu sabah toplanmış, taze."
   - item: U3-030
     sezdir:
       id: u3d08-030-z
@@ -230,6 +250,10 @@ steps:
       options: ["The chips are the greasiest food on the menu.", "The rice is oily.", "The chicken is fried.", "The potatoes are steamed."]
       answer: 0
       explain: "En çok yağ cipste (a lot of oil); pilavda hiç yağ yok, tavuk ızgara, patates fırında."
+      why_wrong:
+        - "Pilav \"no oil\" yazıyor."
+        - "Tavuk \"grilled\" yazıyor."
+        - "Patates \"roasted\" yazıyor."
 
 review:
   - id: u3d08-r01
@@ -288,6 +312,10 @@ review:
     options: ["washing and squeezing the lemons", "combining the juice with water", "drinking the lemonade", "buying some ice"]
     answer: 0
     explain: "Satırların yazılış sırası karışık; ilk adımı 'First' sözcüğü gösteriyor."
+    why_wrong:
+      - "Birleştirmek \"Then\" ile geliyor; ikinci adım."
+      - "İçmek \"Finally\"; son adım."
+      - "Buz almak tarifte yok."
   - id: u3d08-r08
     type: text_infer
     item: U3-050
@@ -298,6 +326,10 @@ review:
     options: ["How much sugar do we need?", "How many eggs do we need?", "How long does it take?", "Where will they try the recipe?"]
     answer: 0
     explain: "Yumurta sayısı, süre ve yer yazıyor; şekerden hiç söz edilmiyor."
+    why_wrong:
+      - "Metin iki yumurta diyor."
+      - "Metin 20 dakika diyor."
+      - "Metin Selin'in evi diyor."
   - id: u3d08-r09
     type: text_infer
     item: U3-048
@@ -308,6 +340,10 @@ review:
     options: ["tomatoes", "eggs", "milk", "cheese"]
     answer: 0
     explain: "Malzeme listesinde yumurta, süt ve peynir var; domates yok."
+    why_wrong:
+      - "Yumurta malzemelerde var."
+      - "Süt malzemelerde var."
+      - "Peynir malzemelerde var."
   - id: u3d08-r10
     type: dialogue_complete
     item: U3-040
@@ -318,6 +354,10 @@ review:
     options: ["Yes, I heated it to 180°C ten minutes ago.", "No, I'm not hungry.", "Yes, the bowl is in the cupboard.", "Sorry, I can't find the recipe."]
     answer: 0
     explain: "Elif 'Great! … bake it now' diyor; demek ki fırın ısınmış."
+    why_wrong:
+      - "Açlık sorulmadı; fırın soruldu."
+      - "Kâsenin yeri sorulmadı."
+      - "Tarif değil, fırının sıcaklığı soruldu."
 
 tips:
   - type: tuzak

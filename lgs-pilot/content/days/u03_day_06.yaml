@@ -105,6 +105,10 @@ steps:
       options: ["b → d → a → c", "d → b → a → c", "b → a → d → c", "a → b → d → c"]
       answer: 0
       explain: "Su kaynamadan makarna pişmez, pişmeden süzülmez; peynir serpmek ve yemek hep sondadır."
+      why_wrong:
+        - "Makarna önce kaynayan suya atılamaz; su önce kaynar."
+        - "Süzmek pişirmeden sonra gelir."
+        - "Süzmek ilk adım olamaz."
   - item: U3-014
     sezdir:
       id: u3d06-014-z
@@ -129,6 +133,10 @@ steps:
       options: ["a strainer", "a grater", "a teaspoon", "an oven"]
       answer: 0
       explain: "Pişmiş makarnayı sudan ayırmak için süzgeç (strainer) gerekir; rende peynir için, fırın pişirmek içindir."
+      why_wrong:
+        - "Rende peynir içindir; su süzmez."
+        - "Çay kaşığı suyu süzmez."
+        - "Fırın suyu süzmez."
   - item: U3-015
     sezdir:
       id: u3d06-015-z
@@ -155,6 +163,10 @@ steps:
       options: ["an oven", "a saucepan", "a strainer", "a grater"]
       answer: 0
       explain: "Notta saucepan, strainer ve grater geçiyor; makarna ocakta pişer, fırından (oven) söz edilmiyor."
+      why_wrong:
+        - "Notta \"saucepan\" geçiyor."
+        - "Notta \"strainer\" geçiyor."
+        - "Notta \"grater\" geçiyor."
   - item: U3-024
     sezdir:
       id: u3d06-024-z
@@ -181,6 +193,10 @@ steps:
       options: ["Let's sprinkle some cheese on it.", "Let's drain it.", "Let's boil it.", "Let's crack it."]
       answer: 0
       explain: "Elif'in cevabı peynirden söz ediyor; pizzanın üstüne peynir serpmek sprinkle ile olur."
+      why_wrong:
+        - "Pizzanın suyu süzülmez."
+        - "Pizza haşlanmaz."
+        - "Pizza kırılmaz; Elif peynirden söz ediyor."
   - item: U3-012
     sezdir:
       id: u3d06-012-z
@@ -207,6 +223,10 @@ steps:
       options: ["Mum wants the soup to stay warm.", "Mum wants Bora to eat the soup cold.", "Mum wants Bora to grate the soup.", "The soup is in the oven."]
       answer: 0
       explain: "\"I don't want it to get cold\" = sıcak kalsın istiyor; doğru şık bunu başka kelimelerle söylüyor."
+      why_wrong:
+        - "Anne çorbanın soğumasını istemiyor."
+        - "Çorba rendelenmez."
+        - "Mesaj \"on the cooker\" diyor; fırında değil."
   - item: U3-047
     sezdir:
       id: u3d06-047-z
@@ -233,6 +253,10 @@ steps:
       options: ["How long do we boil the pasta?", "How much pasta do we have?", "How many plates do we need?", "How often do you cook pasta?"]
       answer: 0
       explain: "Cevap bir süre (nine minutes) veriyor; süre How long ile sorulur."
+      why_wrong:
+        - "Cevap bir süre veriyor; miktar değil."
+        - "Cevap tabak sayısı değil, dakika."
+        - "Cevap sıklık değil, süre."
 
 review:
   - id: u3d06-r01
@@ -269,6 +293,10 @@ review:
     options: ["They're too salty!", "They're too sweet!", "They're too sour!", "They're too bitter!"]
     answer: 0
     explain: "Duru tuz kutusunu soruyor; demek ki cipsler fazla tuzlu."
+    why_wrong:
+      - "Tuz kutusu tatlı yapmaz."
+      - "Tuz ekşi yapmaz."
+      - "Tuz acılık değil, tuzluluk verir."
   - id: u3d06-r05
     type: situation
     item: U3-034
@@ -295,6 +323,10 @@ review:
     options: ["We dice them.", "We wash them.", "We squeeze lemon juice over them.", "We sprinkle sugar on them."]
     answer: 0
     explain: "\"After you peel them, dice them\": soymadan hemen sonra küp küp doğranır; yıkama soymadan önce gelir."
+    why_wrong:
+      - "Yıkamak soymadan önce: \"Before you peel\"."
+      - "Limon küplerden sonra."
+      - "Şeker en son: \"Finally\"."
 
 tips:
   - type: tuzak

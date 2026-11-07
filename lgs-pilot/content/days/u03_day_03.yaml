@@ -103,6 +103,10 @@ steps:
       options: ["I'm frying them.", "I'm baking a cake.", "I'm whisking the eggs.", "I'm washing the bowls."]
       answer: 0
       explain: "Selin'in cevabı \"In hot oil?\" diyor; patatesle ve sıcak yağla uyumlu tek şık frying."
+      why_wrong:
+        - "Selin \"In hot oil?\" diyor; kek pişirmek fırında olur."
+        - "Yumurta değil, patates konuşuluyor."
+        - "Kâse yıkamak sıcak yağla yapılmaz."
   - item: U3-013
     sezdir:
       id: u3d03-013-z
@@ -127,6 +131,10 @@ steps:
       options: ["There's a crack on my phone screen.", "Crack two eggs into a bowl.", "Can you crack the eggs, Bora?", "Don't crack the eggs on your head!"]
       answer: 0
       explain: "Yumurtayla birlikte crack \"kırmak\"tır; ekranda bir crack ise \"çatlak\"."
+      why_wrong:
+        - "Burada crack yumurta kırmaktır."
+        - "Burada crack yumurta kırmaktır."
+        - "Burada da yumurta kırmak anlamında."
   - item: U3-018
     sezdir:
       id: u3d03-018-z
@@ -151,6 +159,10 @@ steps:
       options: ["fry", "mix", "stir", "blend"]
       answer: 0
       explain: "mix, stir ve blend malzemeleri karıştırmaktır; fry ise yağda pişirmektir."
+      why_wrong:
+        - "mix karıştırmaktır; diğerleriyle aynı anlamda."
+        - "stir karıştırmaktır."
+        - "blend karıştırmak, çırpmaktır."
   - item: U3-020
     sezdir:
       id: u3d03-020-z
@@ -175,6 +187,10 @@ steps:
       options: ["an apple", "milk", "water", "orange juice"]
       answer: 0
       explain: "pour sıvılar için kullanılır: süt, su, meyve suyu. Elma dökülmez."
+      why_wrong:
+        - "Süt dökülebilir."
+        - "Su dökülebilir."
+        - "Portakal suyu dökülebilir."
   - item: U3-026
     sezdir:
       id: u3d03-026-z
@@ -201,6 +217,10 @@ steps:
       options: ["Whisk them.", "Bake them.", "Wash them.", "Count them."]
       answer: 0
       explain: "Çatalla hızlıca çırpmak: Whisk them."
+      why_wrong:
+        - "Çatalla hızlıca yapılan iş fırında pişirmek olamaz."
+        - "Kâsedeki yumurtalar yıkanmaz."
+        - "Saymak için çatal gerekmez."
   - item: U3-041
     sezdir:
       id: u3d03-041-z
@@ -227,6 +247,10 @@ steps:
       options: ["an oven", "a bowl", "a pan", "butter"]
       answer: 0
       explain: "Bowl, pan ve butter metinde var; omlet ocakta yapılır, fırından (oven) söz edilmiyor."
+      why_wrong:
+        - "Metinde \"a bowl\" geçiyor."
+        - "Metinde \"a pan\" geçiyor."
+        - "Metinde \"some butter\" geçiyor."
 
 review:
   - id: u3d03-r01
@@ -255,6 +279,10 @@ review:
     options: ["No, we need one more cup.", "Yes, it's perfect.", "Yes, we need two eggs.", "No, the oven is cold."]
     answer: 0
     explain: "Tarif iki bardak süt diyor; bir bardak yetmez, bir bardak daha gerekir."
+    why_wrong:
+      - "Tarif iki bardak diyor; bir bardak yetmez."
+      - "Konu süt; yumurta sorulmadı."
+      - "Fırın sorulmadı; sütün yetip yetmediği soruldu."
   - id: u3d03-r04
     type: gap_fill
     item: U3-042

@@ -106,6 +106,10 @@ steps:
       options: ["wash → peel → slice → squeeze lemon → season", "wash → slice → peel → squeeze lemon → season", "peel → wash → slice → season → squeeze lemon", "wash → peel → squeeze lemon → slice → season"]
       answer: 0
       explain: "\"Before you slice them, peel them\" cümlesinde yazılış sırası ters: önce soyulur, sonra dilimlenir; Finally en son adımı verir."
+      why_wrong:
+        - "\"Before you slice them, peel them\": soymak dilimlemeden önce."
+        - "İlk adım yıkamak; tuz en son."
+        - "Limon dilimlemeden sonra sıkılır."
   - item: U3-022
     sezdir:
       id: u3d04-022-z
@@ -132,6 +136,10 @@ steps:
       options: ["Can you slice it thinly, please?", "Can you peel it, please?", "Can you squeeze it, please?", "Can you season it, please?"]
       answer: 0
       explain: "Boşluktan sonraki satır \"thin slices\" diyor; ekmeği ince ince dilimlemek slice ile olur."
+      why_wrong:
+        - "Ekmek soyulmaz."
+        - "Ekmek sıkılmaz."
+        - "Ece \"thin slices\" diyor; baharat değil, dilim istenmiş."
   - item: U3-010
     sezdir:
       id: u3d04-010-z
@@ -157,6 +165,10 @@ steps:
       options: ["She is dicing the onion.", "She is peeling the onion.", "She is squeezing the onion.", "She is seasoning the onion."]
       answer: 0
       explain: "Küçük küpler hâlinde kesmek dice; peel kabuğu soymak, squeeze sıkmak, season tuz ve baharatla tatlandırmaktır."
+      why_wrong:
+        - "Bıçakla küp küp doğruyor; soymuyor."
+        - "Soğan sıkılmaz; doğranıyor."
+        - "Tuz biber yok; küçük küplere kesiyor."
   - item: U3-025
     sezdir:
       id: u3d04-025-z
@@ -183,6 +195,10 @@ steps:
       options: ["Elif squeezed a lemon and the juice went into Kaan's eye.", "Elif peeled an onion and Kaan cried.", "Kaan ate all the salad.", "Kaan seasoned the salad with a lot of salt."]
       answer: 0
       explain: "Metindeki \"pressed the lemon very hard\" ifadesi doğru şıkta squeezed ile, başka kelimelerle söyleniyor."
+      why_wrong:
+        - "Mesajda soğan değil, limon var."
+        - "Salatayı yiyen değil, gözü yanan Kaan."
+        - "Mesajda tuz geçmiyor; limon suyu sıçramış."
   - item: U3-021
     sezdir:
       id: u3d04-021-z
@@ -207,6 +223,10 @@ steps:
       options: ["Season the chicken with salt and pepper.", "Summer is my favourite season.", "The football season starts in August.", "Winter is a cold season in Ankara."]
       answer: 0
       explain: "Cümle başında emir olarak ve with ile gelen season fiildir (tatlandır); diğerlerinde isim (mevsim, sezon)."
+      why_wrong:
+        - "Burada season mevsimdir."
+        - "Burada season sezon, dönemdir."
+        - "Burada season mevsimdir."
   - item: U3-049
     sezdir:
       id: u3d04-049-z
@@ -233,6 +253,10 @@ steps:
       options: ["walnuts", "a lemon", "an onion", "a green pepper"]
       answer: 0
       explain: "Malzeme listesini şıklarla tek tek eşle: limon, soğan ve yeşil biber var; ceviz (walnuts) yok."
+      why_wrong:
+        - "Limon malzemelerde var."
+        - "Soğan malzemelerde var."
+        - "Yeşil biber malzemelerde var."
 
 review:
   - id: u3d04-r01
@@ -261,6 +285,10 @@ review:
     options: ["Stir it with a spoon.", "Fry it in a pan.", "Crack it into a bowl.", "Peel it first."]
     answer: 0
     explain: "Dipte kalan tozu sütle birleştirmek için kaşıkla karıştırılır: stir."
+    why_wrong:
+      - "Süt tavada kızartılmaz."
+      - "Toz kâseye kırılmaz; yumurta kırılır."
+      - "Toz soyulmaz."
   - id: u3d04-r04
     type: gap_fill
     item: U3-020
@@ -295,6 +323,10 @@ review:
     options: ["b → d → c → a", "b → c → d → a", "d → b → c → a", "a → b → d → c"]
     answer: 0
     explain: "First → Then → After that → Finally sırası; yumurta kırılmadan çırpılmaz, çırpılmadan pişirilmez."
+    why_wrong:
+      - "Kızartma çırpmadan sonra gelir."
+      - "Önce yumurta kırılır, sonra çırpılır."
+      - "Yemek en son: \"Finally\"."
 
 tips:
   - type: tuzak

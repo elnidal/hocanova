@@ -105,6 +105,10 @@ steps:
       options: ["Turkish cuisine has a lot of great dishes.", "My kitchen is very small.", "Sorry, the oven is broken.", "I'm not hungry, thanks."]
       answer: 0
       explain: "Rehber hemen ardından yemek öneriyor; Türk yemek kültürünü öven cümle konuşmayı bağlıyor."
+      why_wrong:
+        - "Mutfak büyüklüğü yemek önerisi değildir."
+        - "Bozuk fırın turistin sorusuna cevap değil."
+        - "Aç olmamak öneri değildir."
   - item: U3-056
     sezdir:
       id: u3d10-056-z
@@ -130,6 +134,10 @@ steps:
       options: ["wash the plates and glasses", "cook a new dish", "buy some new plates", "eat more dinner"]
       answer: 0
       explain: "do the dishes = bulaşık yıkamak; burada yeni yemek pişirmekle ilgisi yok."
+      why_wrong:
+        - "Yemek bitti; yeni yemek istenmiyor."
+        - "Yeni tabak almak istenmiyor."
+        - "Daha çok yemek istenmiyor; bulaşık isteniyor."
   - item: U3-060
     sezdir:
       id: u3d10-060-z
@@ -156,6 +164,10 @@ steps:
       options: ["You can choose between two main courses.", "There are two desserts on the menu.", "The main course is tomato soup.", "Rice pudding is a starter."]
       answer: 0
       explain: "Main course satırında OR var: tavuk ya da makarna seçilebilir. Diğer şıklar menüyle çelişiyor."
+      why_wrong:
+        - "Menüde tek tatlı var: rice pudding."
+        - "Çorba başlangıç yemeği."
+        - "Sütlaç tatlı bölümünde."
   - item: U3-061
     sezdir:
       id: u3d10-061-z
@@ -182,6 +194,10 @@ steps:
       options: ["2 – 4 – 1 – 3", "4 – 2 – 3 – 1", "1 – 2 – 4 – 3", "2 – 1 – 3 – 4"]
       answer: 0
       explain: "Pirinç sütte kaynar, şeker eklenir, karışım kaselere dökülür, kaseler en son fırına girer."
+      why_wrong:
+        - "Şeker sıcak süte eklenir; önce pirinç sütte kaynar."
+        - "Kâselere dökmek ilk adım olamaz."
+        - "Fırın kâselere dökmeden sonra gelir; şeker eksik kalır."
   - item: U3-062
     sezdir:
       id: u3d10-062-z
@@ -206,6 +222,10 @@ steps:
       options: ["Let's prepare the food for the party.", "Let's eat the food at the party.", "Let's buy the food after the party.", "Let's freeze the food after the party."]
       answer: 0
       explain: "get something ready = prepare: bir şeyi hazır hâle getirmek."
+      why_wrong:
+        - "get ready yemek değil, hazırlamaktır."
+        - "Partiden sonra almak hazırlamak değildir."
+        - "Dondurmak hazırlamak anlamına gelmez."
   - item: U3-063
     sezdir:
       id: u3d10-063-z
@@ -228,10 +248,14 @@ steps:
       lgs_like: true
       stem_id: S04
       prompt: "<en>According to the text, which of the following is TRUE?</en>"
-      stem: "<en>Aşure is a traditional Turkish dessert. Families have made it for hundreds of years. They make a big pot and share it with their neighbours.</en>"
+      stem: "<en>Aşure is a traditional Turkish dessert. Families started making it hundreds of years ago. They make a big pot and share it with their neighbours.</en>"
       options: ["Aşure is a very old dessert.", "Aşure is a new dessert.", "Families never share aşure.", "Only restaurants make aşure."]
       answer: 0
       explain: "traditional + for hundreds of years: aşure çok eski bir tatlı. Diğerleri metinle çelişiyor."
+      why_wrong:
+        - "Yüzlerce yıl önce başlamış; yeni değil."
+        - "Metin komşularla paylaşıldığını söylüyor."
+        - "Aileler yapıyor; yalnız restoranlar değil."
 
 review:
   - id: u3d10-r01
@@ -291,6 +315,10 @@ review:
     options: ["b – d – c – a", "d – b – c – a", "b – c – a – d", "c – a – b – d"]
     answer: 0
     explain: "First → Then → After that → Finally: kır, çırp, yağı ısıt, tavaya dök."
+    why_wrong:
+      - "Çırpmak kırmadan sonra."
+      - "Yağı ısıtmak çırpmadan sonra; çırpma en sona kalmaz."
+      - "İlk adım yumurta kırmak: \"First\"."
   - id: u3d10-r08
     type: text_infer
     item: U3-041
@@ -301,6 +329,10 @@ review:
     options: ["milk", "eggs", "a bowl", "butter"]
     answer: 0
     explain: "Yumurta, kase ve tereyağı tarifte geçiyor; süt geçmiyor."
+    why_wrong:
+      - "Yumurta tarifte var."
+      - "Kâse tarifte var."
+      - "Tereyağı tarifte var."
   - id: u3d10-r09
     type: dialogue_complete
     item: U3-004
@@ -311,6 +343,10 @@ review:
     options: ["fry", "freeze", "whisk", "pour"]
     answer: 0
     explain: "Kızgın yağda pişirmek fry'dır; Kaan'ın cevabındaki oily ipucu."
+    why_wrong:
+      - "Patates sıcak yağda dondurulmaz."
+      - "Patates çırpılmaz."
+      - "pour dökmektir; sıcak yağla patates kızartılır."
   - id: u3d10-r10
     type: situation
     item: U3-018
@@ -320,6 +356,10 @@ review:
     options: ["Stir it with a spoon.", "Crack it into a bowl.", "Freeze it for an hour.", "Pour it on the floor."]
     answer: 0
     explain: "Çorbanın dibi tutmasın diye kaşıkla karıştırılır: stir."
+    why_wrong:
+      - "Çorba kâseye kırılmaz."
+      - "Dondurmak dibini tutmasını engellemez."
+      - "Yere dökmek çözüm değildir."
 
 tips:
   - type: tuzak

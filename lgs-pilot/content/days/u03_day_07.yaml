@@ -103,6 +103,10 @@ steps:
       options: ["It melts.", "It gets cold and hard.", "It becomes salty.", "It breaks into small pieces."]
       answer: 0
       explain: "Sıcakla yumuşayıp sıvılaşan şey erir: melt."
+      why_wrong:
+        - "Sıcak su çikolatayı yumuşatıyor; sertleştirmez."
+        - "Tuz eklenmedi."
+        - "Kırılmıyor; sıvılaşıyor."
   - item: U3-011
     sezdir:
       id: u3d07-011-z
@@ -127,6 +131,10 @@ steps:
       options: ["mix", "melt", "peel", "slice"]
       answer: 0
       explain: "Tarifte combine ve mix aynı işi anlatır: malzemeleri bir araya getirip karıştırmak."
+      why_wrong:
+        - "melt eritmektir."
+        - "peel soymaktır."
+        - "slice dilimlemektir."
   - item: U3-016
     sezdir:
       id: u3d07-016-z
@@ -153,6 +161,10 @@ steps:
       options: ["We knead the dough.", "We bake the bread.", "We leave it in a warm place.", "We melt some butter."]
       answer: 0
       explain: "Malzemeler birleştikten hemen sonra \"After that, knead…\" geliyor; bekletmek ve pişirmek daha sonra."
+      why_wrong:
+        - "Pişirmek en son adım."
+        - "Ilık yerde bekletmek yoğurmadan sonra."
+        - "Tarifte tereyağı yok."
   - item: U3-023
     sezdir:
       id: u3d07-023-z
@@ -179,6 +191,10 @@ steps:
       options: ["spread some butter and honey on the bread.", "pour the milk into the glasses.", "knead the dough for ten minutes.", "peel the oranges for the juice."]
       answer: 0
       explain: "Elif'in cevabı (Butter first…) ve bıçak, ekmeğe bir şey sürüldüğünü gösteriyor."
+      why_wrong:
+        - "Elif \"Butter first, then honey\" diyor; süt dökmek değil."
+        - "Hamur yoğurmak kahvaltı ekmeğine sürmek değildir."
+        - "Portakal soymak tereyağı ve balla ilgili değil."
   - item: U3-037
     sezdir:
       id: u3d07-037-z
@@ -206,6 +222,10 @@ steps:
       options: ["a bunch of flowers", "grapes", "parsley", "walnuts"]
       answer: 0
       explain: "Üzüm, maydanoz ve ceviz mesajda var; çiçekten söz edilmiyor (Kaan'ın hatasını yapma!)."
+      why_wrong:
+        - "Üzüm mesajda var."
+        - "Maydanoz mesajda var."
+        - "Ceviz mesajda var."
   - item: U3-044
     sezdir:
       id: u3d07-044-z
@@ -230,6 +250,10 @@ steps:
       options: ["flour and water", "lemon juice and sugar", "tomatoes and onions", "cheese and olives"]
       answer: 0
       explain: "Hamurun temeli un ve sudur; domates, peynir, zeytin pizzanın üstüne gelir."
+      why_wrong:
+        - "Limon suyu ve şeker hamur yapmaz."
+        - "Domates ve soğan üst malzemedir."
+        - "Peynir ve zeytin üste konur; hamur değildir."
 
 review:
   - id: u3d07-r01
@@ -281,6 +305,10 @@ review:
     options: ["How long", "How much", "How many", "How often"]
     answer: 0
     explain: "\"How long...?\" ne kadar sürer sorusudur; cevap \"About ten minutes\"."
+    why_wrong:
+      - "Cevap süre veriyor; how much miktar sorar."
+      - "How many sayı sorar."
+      - "How often sıklık sorar."
 
 tips:
   - type: tuzak

@@ -103,6 +103,10 @@ steps:
       options: ["freeze them", "melt them", "grate them", "boil them for a month"]
       answer: 0
       explain: "Yiyeceği haftalarca saklamak için dondururuz."
+      why_wrong:
+        - "Eritmek saklamaz."
+        - "Çilek rendelenmez."
+        - "Bir ay kaynatılmaz; dondurmak gerekir."
   - item: U3-028
     sezdir:
       id: u3d09-028-z
@@ -127,6 +131,10 @@ steps:
       options: ["delicious", "homemade", "frozen", "fresh"]
       answer: 0
       explain: "tasty, delicious ve yummy aynı anlamda; homemade, frozen, fresh tadı değil nasıl yapıldığını ya da durumunu anlatır."
+      why_wrong:
+        - "homemade ev yapımıdır; lezzetli demek değil."
+        - "frozen donmuştur."
+        - "fresh tazedir; lezzet bildirmez."
   - item: U3-031
     sezdir:
       id: u3d09-031-z
@@ -153,6 +161,10 @@ steps:
       options: ["The cakes are homemade.", "The cakes are frozen.", "The owner buys the cakes from a factory.", "Elif's favourite is the chocolate cake."]
       answer: 0
       explain: "Kekler fabrikadan alınmıyor, kafenin mutfağında yapılıyor; bu, homemade'in başka kelimelerle söylenişi."
+      why_wrong:
+        - "Kekler her sabah pişiriliyor; donmuş değil."
+        - "Metin \"don't buy their cakes from a factory\" diyor."
+        - "Elif'in favorisi limonlu kek."
   - item: U3-053
     sezdir:
       id: u3d09-053-z
@@ -179,6 +191,10 @@ steps:
       options: ["Not really. I'm not in the mood for pizza.", "Yes! I'm in the mood for pizza.", "I'm crazy about pizza.", "Pizza sounds great!"]
       answer: 0
       explain: "Selin ardından çorba öneriyor; demek ki canı pizza istemiyor."
+      why_wrong:
+        - "Selin çorba öneriyor; pizza istemiyor."
+        - "Pizzaya bayılan çorba önermez."
+        - "Pizza güzel diyen sonra çorba önermez."
   - item: U3-055
     sezdir:
       id: u3d09-055-z
@@ -205,6 +221,10 @@ steps:
       options: ["You can have rice pudding as a dessert.", "Lemonade is a dessert.", "The chicken is fried.", "There are two kinds of soup."]
       answer: 0
       explain: "Desserts satırında rice pudding var; limonata içecek, tavuk fırında, tek çorba var."
+      why_wrong:
+        - "Limonata içecekler bölümünde."
+        - "Tavuk \"roasted\" yazıyor."
+        - "Menüde tek çorba var."
   - item: U3-058
     sezdir:
       id: u3d09-058-z
@@ -232,6 +252,10 @@ steps:
       options: ["Bora", "Ece", "Kaan", "Duru"]
       answer: 0
       explain: "Tatlılara hayır diyemeyen kişi tatlıya düşkündür: Bora."
+      why_wrong:
+        - "Ece tuzlu atıştırmalık seviyor."
+        - "Kaan tatlı şeyleri sevmiyor."
+        - "Duru için fark etmiyor; ekmek peynir yeter."
 
 review:
   - id: u3d09-r01
@@ -290,6 +314,10 @@ review:
     options: ["We bake it for 35 minutes.", "We preheat the oven.", "We combine the flour and the eggs.", "We melt some chocolate."]
     answer: 0
     explain: "Kalıba döktükten sonra gelen tek adım 'Finally, bake it…'; fırını ısıtmak ve karıştırmak daha önce."
+    why_wrong:
+      - "Fırın ilk adımda ısıtıldı."
+      - "Malzemeler dökmeden önce karıştırıldı."
+      - "Tarifte çikolata eritmek yok."
   - id: u3d09-r08
     type: text_infer
     item: U3-043
@@ -300,6 +328,10 @@ review:
     options: ["Selin used too much baking powder.", "Selin forgot the baking powder.", "The recipe said a tablespoon of baking powder.", "Selin's cake was flat."]
     answer: 0
     explain: "Tarif çay kaşığı diyor, Selin yemek kaşığı kullanmış: fazla kabartma tozu."
+    why_wrong:
+      - "Selin kabartma tozu kullanmış; unutmamış."
+      - "Tarif \"a teaspoon\" diyor."
+      - "Kek yanardağ gibi kabarmış; düz değil."
   - id: u3d09-r09
     type: dialogue_complete
     item: U3-039
@@ -310,6 +342,10 @@ review:
     options: ["How much flour do we need?", "How many eggs do we need?", "How long does it bake?", "How often do you bake?"]
     answer: 0
     explain: "Cevap bir ölçü (two cups) veriyor; sayılamayan un için How much sorulur."
+    why_wrong:
+      - "Cevapta yumurta yok; bardak ölçüsü var."
+      - "Cevap süre değil, miktar."
+      - "Cevap sıklık değil, miktar."
   - id: u3d09-r10
     type: dialogue_complete
     item: U3-006
@@ -320,6 +356,10 @@ review:
     options: ["Not yet. Let's preheat the oven.", "Yes, the oven is cold, so it's perfect.", "No, I don't like cookies.", "Sure. Let's turn off the oven."]
     answer: 0
     explain: "Bora 'It needs to be hot first' diyor; önce fırın ısıtılmalı (preheat)."
+    why_wrong:
+      - "Bora \"It needs to be hot first\" diyor; soğuk fırın uygun değil."
+      - "Konu kurabiye sevmek değil, fırın."
+      - "Fırını kapatmak ısınmasını engeller."
 
 tips:
   - type: hafiza_kancasi
