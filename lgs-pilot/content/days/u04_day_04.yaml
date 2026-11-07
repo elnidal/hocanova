@@ -99,6 +99,10 @@ steps:
       options: ["In an emergency, the child should call 112.", "The child can call Mum at 3 p.m.", "Mum's work number is 112.", "Mum is at home all day."]
       answer: 0
       explain: "Notta acil durumda 112'nin aranacağı yazıyor; saat 5'ten önce annenin aranmaması isteniyor ve anne akşam 6'ya kadar işte."
+      why_wrong:
+        - "Not \"don't call me before 5\" diyor."
+        - "112 acil numara; annenin iş numarası değil."
+        - "Anne 18.00'e kadar işte."
   - item: U4-006
     sezdir:
       id: u4d04-006-z
@@ -125,6 +129,10 @@ steps:
       options: ["Sorry, I can't hear you. I'll call you later. Bye!", "Hi, Elif! Yes, I can hear you very well.", "Sure, I'll hold on.", "Thanks, the line is very good today."]
       answer: 0
       explain: "Elif \"Don't hang up!\" diyor; demek ki Duru görüşmeyi bitirmek üzere: ancak \"I'll call you later. Bye!\" buna uyar."
+      why_wrong:
+        - "Elif \"Don't hang up!\" diyor; Duru duymuyor."
+        - "Duru duymayacak ki kapatıyor; Elif tekrar soruyor."
+        - "Hat iyi olsaydı Elif tekrar sormazdı."
   - item: U4-015
     sezdir:
       id: u4d04-015-z
@@ -151,6 +159,10 @@ steps:
       options: ["It's a bad line. Can you call me back?", "Thanks for the invitation.", "Sorry, wrong number.", "Who's calling, please?"]
       answer: 0
       explain: "Ses kesik kesik geliyor; uygun tepki hattın kötü olduğunu söyleyip tekrar aranmayı istemek. Arayan Ece olduğu için \"Who's calling?\" uymaz."
+      why_wrong:
+        - "Davetten söz edilmiyor; ses kesiliyor."
+        - "Ece Selin'i arıyor; yanlış numara değil."
+        - "Kimin aradığı belli."
   - item: U4-019
     sezdir:
       id: u4d04-019-z
@@ -177,6 +189,10 @@ steps:
       options: ["Pardon? Can you repeat that, please?", "Great! See you on Saturday. Bye!", "Sorry, wrong number.", "Hang on, I'll get her."]
       answer: 0
       explain: "Sevim Hanım aynı bilgiyi yeniden söylüyor; demek ki Elif tekrar etmesini istemiş."
+      why_wrong:
+        - "Sevim Hanım bilgiyi tekrar ediyor; Elif tekrar istemiş."
+        - "Yanlış numara değil; konser konuşuluyor."
+        - "Kimse çağrılmıyor."
   - item: U4-032
     sezdir:
       id: u4d04-032-z
@@ -203,6 +219,10 @@ steps:
       options: ["Oh, sorry, wrong number.", "Can I take a message?", "Yes, speaking.", "Hang on, I'll get him."]
       answer: 0
       explain: "Kaan spor salonunu aramış ama fırına düşmüş; özür dileyip yanlış numara olduğunu söylemeli."
+      why_wrong:
+        - "Mesaj almak fırının işi; Kaan arayan."
+        - "\"Speaking\" istenen kişi söyler."
+        - "Kaan birini çağırmıyor; yanlış yeri aradı."
   - item: U4-050
     sezdir:
       id: u4d04-050-z
@@ -229,6 +249,10 @@ steps:
       options: ["She felt embarrassed.", "She felt proud of her song.", "She was relaxed and calm.", "She doesn't like singing."]
       answer: 0
       explain: "Yüzü kızarıyor ve kanepenin altına saklanmak istiyor: utanmış. Diğer şıkların mesajda dayanağı yok."
+      why_wrong:
+        - "Herkes güldü, yüzü kızardı; gurur yok."
+        - "Saklanmak istedi; rahat değil."
+        - "Yanlış şarkıyı başlattı; şarkıyı sevmediğini söylemiyor."
 
 review:
   - id: u4d04-r01
@@ -257,6 +281,10 @@ review:
     options: ["How can I help you?", "Who are you?", "I'll call you back.", "Sorry, wrong number."]
     answer: 0
     explain: "Kurum telefonunu açan kişi kibarca nasıl yardım edebileceğini sorar; Ece de arama nedenini söyleyerek cevap veriyor."
+    why_wrong:
+      - "Kibar bir sekreter \"Who are you?\" demez."
+      - "Konuşma yeni başlıyor."
+      - "Ece doğru yeri aramış."
   - id: u4d04-r04
     type: message_infer
     item: U4-024
@@ -267,6 +295,10 @@ review:
     options: ["to ask about his shoes", "to order new shoes", "to invite a friend to a match", "to join a basketball team"]
     answer: 0
     explain: "Amaç ilk cümlede: \"I'm calling about my basketball shoes\" ve gelmeyen ayakkabıyı soruyor."
+    why_wrong:
+      - "Ayakkabıyı geçen hafta sipariş etti; yenisini istemiyor."
+      - "Maç daveti yok."
+      - "Takıma katılmaktan söz etmiyor."
   - id: u4d04-r05
     type: gap_fill
     item: U4-002

@@ -105,6 +105,10 @@ steps:
       options: ["Duru uses a dictionary app every day.", "Duru plays games every day.", "Duru uses five applications.", "Duru never listens to music."]
       answer: 0
       explain: "Duru her gün harita, müzik ve sözlük uygulaması kullanıyor; oyun oynamıyor."
+      why_wrong:
+        - "Duru hiç oyun oynamıyor."
+        - "Üç uygulama kullanıyor."
+        - "Müzik uygulaması kullanıyor."
   - item: U4-044
     sezdir:
       id: u4d08-044-z
@@ -131,6 +135,10 @@ steps:
       options: ["Kaan communicates with his grandparents face to face.", "Selin talks to her grandparents every day.", "Bora never communicates with his grandparents.", "Ece sends messages to her grandparents."]
       answer: 0
       explain: "Tabloda Kaan haftada iki kez yüz yüze görüşüyor; Selin haftada bir, Bora her gün mesajla, Ece telefonla."
+      why_wrong:
+        - "Selin haftada bir görüntülü konuşuyor."
+        - "Bora her gün mesaj atıyor."
+        - "Ece telefonla arıyor; mesajı Bora atıyor."
   - item: U4-045
     sezdir:
       id: u4d08-045-z
@@ -157,6 +165,10 @@ steps:
       options: ["How long was your conversation with Ece?", "How often do you call Ece?", "Who did you talk to?", "Where is the concert?"]
       answer: 0
       explain: "Cevap bir süre veriyor (About an hour); süreyi soran tek soru How long."
+      why_wrong:
+        - "Cevap süre veriyor; sıklık değil."
+        - "Cevap kişi değil, süre."
+        - "Cevap yer değil, süre."
   - item: U4-046
     sezdir:
       id: u4d08-046-z
@@ -183,6 +195,10 @@ steps:
       options: ["She wants them to talk face to face.", "She wants them to text each other.", "She wants them to make a phone call.", "She wants them to download an application."]
       answer: 0
       explain: "Öğretmen mesajı bırakıp birlikte oturup konuşmalarını istiyor; yani yüz yüze."
+      why_wrong:
+        - "Öğretmen mesajlaşmayı bırakmalarını istiyor."
+        - "Oturup konuşmalarını istiyor; telefon değil."
+        - "Uygulama indirmekten söz edilmiyor."
   - item: U4-047
     sezdir:
       id: u4d08-047-z
@@ -209,6 +225,10 @@ steps:
       options: ["Before 1876, people usually wrote letters to communicate.", "Bell invented the letter.", "Letters were faster than telephones.", "The telephone was invented in 1976."]
       answer: 0
       explain: "Metne göre telefondan önce insanlar genellikle mektupla haberleşiyordu; diğer şıklar metinle çelişiyor."
+      why_wrong:
+        - "Bell telefonu icat etti."
+        - "Mektuplar yavaştı."
+        - "Tarih 1876."
   - item: U4-048
     sezdir:
       id: u4d08-048-z
@@ -233,6 +253,10 @@ steps:
       options: ["a conversation", "a tablet", "a smartwatch", "a laptop"]
       answer: 0
       explain: "Tablet, akıllı saat ve dizüstü bilgisayar cihazdır; conversation (konuşma) bir cihaz değildir."
+      why_wrong:
+        - "Tablet bir cihazdır."
+        - "Akıllı saat bir cihazdır."
+        - "Dizüstü bilgisayar bir cihazdır."
 
 review:
   - id: u4d08-r01
@@ -291,6 +315,10 @@ review:
     options: ["Speaking.", "Sorry, wrong number.", "I'm afraid she isn't available.", "Hold on, I'll get her."]
     answer: 0
     explain: "Telefonu açan aranan kişinin kendisi; 'Speaking.' = 'Benim.' Ece de hemen konuya geçiyor."
+    why_wrong:
+      - "Ece doğru kişiye ulaştı."
+      - "Selin telefonda; müsait."
+      - "Selin zaten konuşuyor; çağrılmaz."
   - id: u4d08-r08
     type: dialogue_complete
     item: U4-022
@@ -301,6 +329,10 @@ review:
     options: ["Hang on a minute, I'll get her.", "Sorry, wrong number.", "I'm afraid she isn't here.", "Speaking."]
     answer: 0
     explain: "Anne 'Yes, she is' diyor ve Duru'yu çağırmaya gidiyor: 'I'll get her.'"
+    why_wrong:
+      - "Doğru numara; Duru evde."
+      - "Anne \"Yes, she is\" diyor."
+      - "Konuşan Duru'nun annesi."
   - id: u4d08-r09
     type: text_infer
     item: U4-011
@@ -311,6 +343,10 @@ review:
     options: ["Duru didn't answer Ece's calls.", "Ece didn't call Duru.", "Duru called Ece five times.", "Duru's phone was very loud."]
     answer: 0
     explain: "'Why didn't you pick up the phone?' = Duru aramalara cevap vermedi; telefonu sessizdeydi."
+    why_wrong:
+      - "Ece beş kez aradı."
+      - "Arayan Ece."
+      - "Telefon sessizdeydi."
   - id: u4d08-r10
     type: situation
     item: U4-026
@@ -320,6 +356,10 @@ review:
     options: ["Could I speak to Sevim Hanım, please?", "Who's calling, please?", "Speaking.", "Can I take a message?"]
     answer: 0
     explain: "Birini telefona istemenin kibar kalıbı 'Could I speak to …, please?'"
+    why_wrong:
+      - "Bunu telefonu açan sorar."
+      - "\"Speaking\" istenen kişi söyler."
+      - "Not almak açan kişinin işi."
 
 tips:
   - type: tuzak

@@ -105,6 +105,10 @@ steps:
       options: ["someone at a call center", "his best friend", "his English teacher", "a doctor"]
       answer: 0
       explain: "Ayla 'How can I help you?' diye açıyor ve sipariş numarası istiyor; Mert bir şirketin çağrı merkeziyle konuşuyor."
+      why_wrong:
+        - "Arkadaş sipariş numarası istemez."
+        - "Öğretmen sipariş numarası istemez."
+        - "Doktor tablet siparişiyle ilgilenmez."
   - item: U4-038
     sezdir:
       id: u4d07-038-z
@@ -131,6 +135,10 @@ steps:
       options: ["Tarık is a customer of Sunny Shoes.", "Ms Aksoy bought trainers last week.", "Tarık works in customer service.", "Ms Aksoy is calling Tarık."]
       answer: 0
       explain: "Tarık mağazadan ayakkabı almış ve müşteri hizmetlerini arıyor; Ms Aksoy telefonu açan görevli."
+      why_wrong:
+        - "Ayakkabıyı alan Tarık."
+        - "Müşteri hizmetlerinde Ms Aksoy çalışıyor."
+        - "Tarık arıyor."
   - item: U4-039
     sezdir:
       id: u4d07-039-z
@@ -157,6 +165,10 @@ steps:
       options: ["How much is the speaker?", "When will the speaker arrive?", "How much is the delivery?", "What colour is the speaker?"]
       answer: 0
       explain: "Gün, saat, renk ve kargonun ücretsiz olduğu yazıyor; hoparlörün fiyatı yazmıyor."
+      why_wrong:
+        - "Teslim tarihi çarşamba."
+        - "Teslimat ücretsiz: \"free\"."
+        - "Renk kırmızı."
   - item: U4-040
     sezdir:
       id: u4d07-040-z
@@ -182,6 +194,10 @@ steps:
       options: ["My order came two days late, and the box was broken.", "Thank you for the fast delivery!", "Could I book a table for two, please?", "Would you like to come to our concert?"]
       answer: 0
       explain: "Geç gelen sipariş ve kırık kutu memnuniyetsizlik bildiriyor; diğerleri teşekkür, rezervasyon ve davet."
+      why_wrong:
+        - "Teşekkür şikâyet değildir."
+        - "Masa ayırtmak şikâyet değildir."
+        - "Davet şikâyet değildir."
   - item: U4-041
     sezdir:
       id: u4d07-041-z
@@ -208,6 +224,10 @@ steps:
       options: ["Would you like to change it or return it?", "Would you like to leave a message?", "How about meeting up at five?", "Can you repeat your phone number?"]
       answer: 0
       explain: "Müşteri 'paramı geri istiyorum' diyor; bu, değişim mi iade mi sorusunun cevabı."
+      why_wrong:
+        - "Müşteri parasını istiyor; not bırakmıyor."
+        - "Buluşma önerisi mağazaya uymaz."
+        - "Telefon numarası sorulmadı."
   - item: U4-055
     sezdir:
       id: u4d07-055-z
@@ -234,6 +254,10 @@ steps:
       options: ["He solved Kaan's problem.", "He made a complaint about Kaan.", "He delivered a new laptop.", "He didn't answer Kaan's call."]
       answer: 0
       explain: "Görevli her şeyi anlatmış ve bilgisayar artık çalışıyor; demek ki sorunu çözmüş."
+      why_wrong:
+        - "Şikâyet yok; Kaan memnun."
+        - "Yeni bilgisayar gelmedi; eskisi düzeldi."
+        - "Adam cevap verdi ve yardım etti."
 
 review:
   - id: u4d07-r01
@@ -292,6 +316,10 @@ review:
     options: ["to get information about guitar lessons", "to make a complaint about a teacher", "to book a table at a café", "to say sorry for being late"]
     answer: 0
     explain: "'I'm calling to ask about the guitar lessons' arama amacını doğrudan veriyor."
+    why_wrong:
+      - "Şikâyet yok; bilgi soruyor."
+      - "Masa ayırtmıyor."
+      - "Özür dilemiyor."
   - id: u4d07-r08
     type: situation
     item: U4-032
@@ -301,6 +329,10 @@ review:
     options: ["Sorry, wrong number.", "Speaking.", "I'll put you through.", "Hold on, I'll get her."]
     answer: 0
     explain: "Yanlış kişiyi aradığını anlayan kişi özür diler: 'Sorry, wrong number.'"
+    why_wrong:
+      - "\"Speaking\" istenen kişi söyler."
+      - "Bağlamak sekreter işi."
+      - "Bora birini çağırmıyor."
 
 tips:
   - type: tuzak

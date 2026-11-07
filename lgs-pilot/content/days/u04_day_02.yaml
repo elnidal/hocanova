@@ -95,10 +95,14 @@ steps:
       lgs_like: true
       stem_id: S01
       prompt: "<en>Which of the following completes the dialogue?</en>"
-      stem: "<en>Ece: I've called Kaan five times, but I always hear \"beep, beep, beep\".\nSelin: ________\nEce: Yes, he's probably talking to his coach again.</en>"
+      stem: "<en>Ece: I called Kaan five times, but I always hear \"beep, beep, beep\".\nSelin: ________\nEce: Yes, he's probably talking to his coach again.</en>"
       options: ["Maybe his line is engaged.", "Maybe he's asleep.", "Great! So he answered you.", "Why don't you text Duru?"]
       answer: 0
       explain: "Ece \"he's probably talking to his coach\" diyerek onaylıyor: Selin hattın meşgul olduğunu tahmin etmiş olmalı."
+      why_wrong:
+        - "Uyuyan biri meşgul sinyali vermez."
+        - "Ece hep \"beep\" duyuyor; Kaan açmamış."
+        - "Duru'nun konuyla ilgisi yok; Ece Kaan'ın konuştuğunu düşünüyor."
   - item: U4-023
     sezdir:
       id: u4d02-023-z
@@ -126,6 +130,10 @@ steps:
       options: ["I'm afraid I can't. I'm visiting my grandma.", "Sure, I'd love to!", "Why not? What time?", "That would be great."]
       answer: 0
       explain: "\"I'm afraid I can't\" kibar bir ret; diğer üç cevap daveti kabul ediyor."
+      why_wrong:
+        - "Sure ve love to kabul bildirir."
+        - "\"Why not?\" kabul bildirir."
+        - "\"That would be great\" kabul bildirir."
   - item: U4-014
     sezdir:
       id: u4d02-014-z
@@ -153,6 +161,10 @@ steps:
       options: ["Selin is busy on Friday until 6 p.m.", "Selin can come on Friday at 4 p.m.", "Selin isn't free on Saturday morning.", "Selin's grandparents are coming to the rehearsal."]
       answer: 0
       explain: "not available ≈ busy: doğru şık mesajı aynen tekrar etmiyor, eş anlamlısıyla söylüyor."
+      why_wrong:
+        - "Selin cuma 6'ya kadar müsait değil; 4'te gelemez."
+        - "Mesaj \"Saturday morning is fine\" diyor."
+        - "Selin dedesiyle ninesini ziyaret ediyor; onlar provaya gelmiyor."
   - item: U4-009
     sezdir:
       id: u4d02-009-z
@@ -179,6 +191,10 @@ steps:
       options: ["Bora", "Selin", "the woman", "Selin and the woman"]
       answer: 0
       explain: "Mesajı bırakan arayan kişidir (Bora); kadın mesajı alıyor, Selin ise evde değil."
+      why_wrong:
+        - "Selin evde değil; mesaj ona bırakılıyor."
+        - "Kadın mesajı alan kişi."
+        - "Mesajı bırakan yalnız Bora."
   - item: U4-010
     sezdir:
       id: u4d02-010-z
@@ -206,6 +222,10 @@ steps:
       options: ["Mr Demir should call Mrs Arslan before 5 p.m.", "Mrs Arslan wrote the memo.", "The meeting is on Wednesday.", "Mr Demir called Mrs Arslan at 11 a.m."]
       answer: 0
       explain: "Notta arayan Bayan Arslan; Bay Demir'den onu saat 5'ten önce aramasını istiyor. Notu yazan başka biri, toplantı da perşembe."
+      why_wrong:
+        - "Arayan Mrs Arslan; notu başkası almış."
+        - "Mesaj \"Thursday, not Wednesday\" diyor."
+        - "Saat 11'de arayan Mrs Arslan."
   - item: U4-001
     sezdir:
       id: u4d02-001-z
@@ -233,6 +253,10 @@ steps:
       options: ["Kaan will call Ece after six.", "Kaan will go back home before six.", "Ece will call Kaan at practice.", "Kaan doesn't want to talk to Ece."]
       answer: 0
       explain: "get back to you = seni (geri) ararım; \"go back home\" şıkkı get back'in öbür anlamıyla kurulmuş bir tuzak."
+      why_wrong:
+        - "\"Get back to you\" geri aramaktır; eve dönmek değil."
+        - "Kaan arayacak; Ece değil."
+        - "Kaan meşgul; konuşmak istemediğini söylemiyor."
 
 review:
   - id: u4d02-r01
@@ -269,6 +293,10 @@ review:
     options: ["Don't worry, Mum. I'll take that!", "Who's calling, please?", "Sorry, I can't hear it.", "Hang on, I'll get her."]
     answer: 0
     explain: "Annesi teşekkür ediyor: Kaan telefona bakmayı o anda üstlenmiş olmalı (anlık karar: I'll …)."
+    why_wrong:
+      - "Anne arayanı sormuyor; telefonu açacak birini istiyor."
+      - "Kaan duymuyorsa anne teşekkür etmez."
+      - "Telefon daha açılmadı; kimseyi çağıramaz."
   - id: u4d02-r05
     type: dialogue_complete
     item: U4-026
@@ -279,6 +307,10 @@ review:
     options: ["Could I speak to Sevim Hanım, please?", "Who's calling, please?", "I'll take that!", "Can I give you a ring?"]
     answer: 0
     explain: "Cevap \"Speaking!\": telefonu açan kadın, Elif'in görüşmek istediği kişinin kendisi."
+    why_wrong:
+      - "Arayan Elif; bunu soran açan kişidir."
+      - "\"I'll take that\" telefonu açarken söylenir."
+      - "Elif zaten arıyor; sonra aramayı teklif etmez."
   - id: u4d02-r06
     type: dialogue_complete
     item: U4-031
@@ -289,6 +321,10 @@ review:
     options: ["It's Kaan, Bora's friend.", "I'm fine, thanks.", "Speaking.", "Bora isn't here."]
     answer: 0
     explain: "\"Who's calling?\" sorusuna arayan kendini tanıtarak cevap verir; \"Speaking.\" ise aranan kişinin cevabıdır."
+    why_wrong:
+      - "Kadın kim olduğunu soruyor; hal hatır değil."
+      - "\"Speaking\" istenen kişi telefondayken söylenir."
+      - "Kadın Bora'yı çağıracak; Bora evde."
 
 tips:
   - type: tuzak

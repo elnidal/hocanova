@@ -101,6 +101,10 @@ steps:
       options: ["Sorry, my connection is bad. I'll call you back.", "Sorry to disturb you, but can I speak to Duru?", "I'd like to book a table, please.", "Thanks for confirming my appointment."]
       answer: 0
       explain: "Görüntü donuyor, ses kesiliyor: sorun bağlantıda. Uygun tepki bunu söyleyip yeniden aramak."
+      why_wrong:
+        - "Ece zaten grupla konuşuyor; Duru'yu istemez."
+        - "Masa ayırtmak konuyla ilgisi yok."
+        - "Randevu onaylanmıyor."
   - item: U4-033
     sezdir:
       id: u4d06-033-z
@@ -127,6 +131,10 @@ steps:
       options: ["Pamuk's appointment is on Tuesday morning.", "Pamuk's appointment is on Monday at 10.30.", "Elif should come at 10.40.", "Elif can't change the time."]
       answer: 0
       explain: "Randevu salı 10.30'da; on dakika erken gelinmeli (10.20) ve saat telefonla değiştirilebilir."
+      why_wrong:
+        - "Mesaj \"not on Monday\" diyor."
+        - "On dakika erken: 10.20."
+        - "Saati değiştirmek için numara verilmiş."
   - item: U4-035
     sezdir:
       id: u4d06-035-z
@@ -153,6 +161,10 @@ steps:
       options: ["Hi, I'd like to book a table for four at eight, please.", "Hi, what time do you close tonight?", "Sorry, wrong number.", "Can you put me through to the manager?"]
       answer: 0
       explain: "Sevim Hanım dört kişilik masayı ve saati tekrar edip isim soruyor; demek ki Kaan masa ayırtmak istemiş."
+      why_wrong:
+        - "Sevim Hanım masa ayırtıyor; kapanış saati sorulmamış."
+        - "Doğru yeri aramış."
+        - "Müdüre bağlanmak istenmiyor; masa ayırtılıyor."
   - item: U4-037
     sezdir:
       id: u4d06-037-z
@@ -179,6 +191,10 @@ steps:
       options: ["to confirm Ece's appointment", "to cancel Ece's appointment", "to invite Ece to a party", "to sell Ece a new phone"]
       answer: 0
       explain: "\"I'm calling to confirm your appointment\" arama amacını doğrudan veriyor; iptal ya da davet yok."
+      why_wrong:
+        - "\"If you can't come\" diyor; iptal etmiyor."
+        - "Parti daveti yok."
+        - "Telefon satmıyor."
   - item: U4-052
     sezdir:
       id: u4d06-052-z
@@ -205,6 +221,10 @@ steps:
       options: ["Good morning. Could I speak to the manager, please?", "Hey! Give me the manager. Quick!", "The manager. Now.", "Where's the manager? Answer me!"]
       answer: 0
       explain: "Selamlama, could I ve please kibar ricanın işaretleri; diğerleri emir ve bağırma."
+      why_wrong:
+        - "\"Give me… Quick!\" kabadır."
+        - "Emir gibi ve kaba."
+        - "\"Answer me!\" kabadır."
   - item: U4-053
     sezdir:
       id: u4d06-053-z
@@ -231,6 +251,10 @@ steps:
       options: ["Good evening, Mr Demir. Sorry to disturb you so late.", "Thanks for calling, Mr Demir. Bye!", "Hold on, I'll get him.", "Sorry, wrong number."]
       answer: 0
       explain: "\"No problem\" bir özre verilen cevaptır; Selin geç saatte aradığı için özür dilemiş, sonra da arama nedenini söylüyor."
+      why_wrong:
+        - "Konuşma başlıyor; vedalaşma olmaz."
+        - "Selin kimseyi çağırmıyor; Mr Demir'le konuşuyor."
+        - "Doğru kişiyi aramış."
 
 review:
   - id: u4d06-r01
@@ -243,6 +267,10 @@ review:
     options: ["OK. We'll meet at the café at half past four, then.", "We met at the café last week.", "Sorry, wrong number.", "Can I take a message?"]
     answer: 0
     explain: "Kaan \"See you at the café!\" diyor; demek ki Bora yer ve saat söyleyerek bir karar vermiş."
+    why_wrong:
+      - "Geçmiş hafta plan değildir."
+      - "Yanlış numara değil."
+      - "Not alınmıyor; buluşma ayarlanıyor."
   - id: u4d06-r02
     type: gap_fill
     item: U4-027
@@ -284,6 +312,10 @@ review:
     options: ["Let's keep in touch!", "Hang on a minute.", "Sorry, wrong number.", "Can you repeat that?"]
     answer: 0
     explain: "Uzağa taşınan biriyle haberleşmeyi sürdürme isteği \"Let's keep in touch!\" ile söylenir."
+    why_wrong:
+      - "\"Hang on\" bekle demektir."
+      - "Yanlış numara değil."
+      - "Tekrar istemek bu duruma uymaz."
 
 tips:
   - type: tuzak

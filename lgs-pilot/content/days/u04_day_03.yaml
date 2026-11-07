@@ -93,6 +93,10 @@ steps:
       options: ["Ayşe", "Mert", "Can", "Zeynep"]
       answer: 0
       explain: "Ofiste telefonu açıp arayanları yöneticiye aktaran kişi sekreterdir."
+      why_wrong:
+        - "Mert aşçı."
+        - "Can karate öğretmeni."
+        - "Zeynep hayvan barınağında çalışıyor."
   - item: U4-020
     sezdir:
       id: u4d03-020-z
@@ -119,6 +123,10 @@ steps:
       options: ["Good morning, City Museum. How can I help you?", "I'm afraid she isn't available at the moment.", "Thank you for the information. Bye!", "Hello, I'm calling about a ticket."]
       answer: 0
       explain: "Kurum adına telefonu açan kişi önce kurumun adını söyler, sonra nasıl yardım edebileceğini sorar; arayan da isteğini söyleyerek cevap veriyor."
+      why_wrong:
+        - "Telefonu Selin açıyor; kimseyi aramıyor."
+        - "Konuşma yeni başlıyor; vedalaşma olmaz."
+        - "Bunu arayan kişi söyler; Selin telefonu açıyor."
   - item: U4-024
     sezdir:
       id: u4d03-024-z
@@ -145,6 +153,10 @@ steps:
       options: ["Elif wants to learn the first song for Saturday.", "Fıstık is ill, so Elif is worried.", "Duru is calling Elif about the song list.", "Elif is calling to invite Duru to a party."]
       answer: 0
       explain: "Arama nedeni \"I'm calling to …\" cümlesinde; Fıstık'ı sorması yalnızca hal hatır sorma, arayan da Duru değil Elif."
+      why_wrong:
+        - "Fıstık iyi: \"We're fine\"."
+        - "Arayan Elif."
+        - "Parti yok; şarkı listesi soruluyor."
   - item: U4-012
     sezdir:
       id: u4d03-012-z
@@ -171,6 +183,10 @@ steps:
       options: ["Of course. Hold on, I'll put you through.", "No, you can't. Goodbye!", "I'm calling about my order.", "Can I speak to the manager too?"]
       answer: 0
       explain: "Arayan teşekkür ediyor: sekreter isteğini kabul edip onu müdüre aktarmış olmalı."
+      why_wrong:
+        - "Arayan teşekkür ediyor; ret cevabı uymaz."
+        - "Bunu sekreter değil, arayan söyler."
+        - "Sekreter müdürle konuşmak istemez; bağlar."
   - item: U4-017
     sezdir:
       id: u4d03-017-z
@@ -198,6 +214,10 @@ steps:
       options: ["To ask about swimming lessons, you should ask for extension 102.", "The café is on extension 101.", "The basketball courts don't have an extension.", "The sports centre has five extensions."]
       answer: 0
       explain: "Yüzme havuzu listede 102 numaralı dahili hatta; diğer şıklar listeyle çelişiyor."
+      why_wrong:
+        - "Kafe 104."
+        - "Basketbol sahası 103."
+        - "Listede dört dahili numara var."
   - item: U4-002
     sezdir:
       id: u4d03-002-z
@@ -225,6 +245,10 @@ steps:
       options: ["Murat Bey", "the woman", "Murat Bey's students", "the woman's friend"]
       answer: 0
       explain: "Telefonu açan kurum adını söyler; \"This is … I'm calling about …\" diyen kişi arayandır."
+      why_wrong:
+        - "Kadın telefonu açan kütüphaneci."
+        - "Öğrenciler arayan değil; kitap onlar için."
+        - "Arayan Murat Bey."
 
 review:
   - id: u4d03-r01
@@ -245,6 +269,10 @@ review:
     options: ["I'm sorry, she isn't available at the moment.", "Of course. Hold on, I'll get her.", "Speaking!", "Yes, she's free now."]
     answer: 0
     explain: "Kadın ardından Dr Kaya'nın hastayla olduğunu söyleyip mesaj almayı öneriyor: doktor şu an müsait değil."
+    why_wrong:
+      - "Kadın \"Can I take a message?\" diyor; bağlamıyor."
+      - "\"Speaking\" Dr Kaya söyleyebilirdi; o hastayla."
+      - "Doktor hastayla; müsait değil."
   - id: u4d03-r03
     type: dialogue_complete
     item: U4-023
@@ -255,6 +283,10 @@ review:
     options: ["I'm afraid she isn't here at the moment.", "Speaking!", "Hang on a minute. I'll get her.", "Yes, this is Selin."]
     answer: 0
     explain: "Selin evde değil; annesi bu kötü haberi kibarca \"I'm afraid …\" ile verir."
+    why_wrong:
+      - "Selin Urla'da; telefonu açan annesi."
+      - "Selin evde değil; çağrılamaz."
+      - "Konuşan Selin'in annesi."
   - id: u4d03-r04
     type: dialogue_complete
     item: U4-009
@@ -265,6 +297,10 @@ review:
     options: ["Would you like to leave a message?", "Can you take a message for me?", "Who's calling, please?", "I'll take that!"]
     answer: 0
     explain: "Telefonu açan kişi arayana mesaj bırakmak isteyip istemediğini sorar; \"Can you take a message for me?\" ise arayanın sözüdür."
+    why_wrong:
+      - "Not bırakan Bora; anne ondan not istemez."
+      - "Arayanın kim olduğu belli: Bora."
+      - "Telefon zaten açıldı."
   - id: u4d03-r05
     type: gap_fill
     item: U4-010

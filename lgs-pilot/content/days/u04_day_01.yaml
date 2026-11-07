@@ -97,6 +97,10 @@ steps:
       options: ["Hang on a minute.", "He isn't at home now.", "Goodbye, see you!", "Nice to meet you, too."]
       answer: 0
       explain: "Ardından \"I'll get him\" geliyor: dede Bora'yı çağırmaya gidiyor, Kaan'dan beklemesini istiyor."
+      why_wrong:
+        - "Dede \"I'll get him\" diyor; Bora evde."
+        - "Konuşma yeni başlıyor; vedalaşma olmaz."
+        - "Tanışma cümlesi değil; Kaan biriyle tanışmıyor."
   - item: U4-011
     sezdir:
       id: u4d01-011-z
@@ -124,6 +128,10 @@ steps:
       options: ["Duru doesn't answer the phone on the sofa.", "Duru's mum never answers the phone.", "Ece never talks to Duru's mum.", "Duru always answers the phone quickly."]
       answer: 0
       explain: "picks up ≈ answers: doğru şık metni aynen tekrar etmiyor, eş anlamlısıyla söylüyor."
+      why_wrong:
+        - "Ece önce Duru'nun annesiyle konuşuyor; annesi açıyor."
+        - "Metin \"I always talk to her mum first\" diyor."
+        - "Duru kanepedeyken hiç açmıyor: \"never picks up\"."
   - item: U4-013
     sezdir:
       id: u4d01-013-z
@@ -150,6 +158,10 @@ steps:
       options: ["Give me a ring after the film.", "What a beautiful ring!", "Hang on a minute, I'll get her.", "May I speak to Selin, please?"]
       answer: 0
       explain: "Selin \"after the film\" diye cevap veriyor: Elif ona filmden sonra aramasını söylemiş. Yüzük şıkkı ring'in öbür anlamıyla kurulmuş bir tuzak."
+      why_wrong:
+        - "Burada ring yüzük değil; \"give me a ring\" aramak demektir."
+        - "Selin'le zaten konuşuyor; birini çağırmıyor."
+        - "Elif zaten Selin'le konuşuyor; onu istemesi anlamsız."
   - item: U4-022
     sezdir:
       id: u4d01-022-z
@@ -176,6 +188,10 @@ steps:
       options: ["Both Bora and his grandpa want to answer the phone.", "Nobody wants to answer the phone.", "Bora's grandpa is not at home.", "Bora is asleep."]
       answer: 0
       explain: "İkisi de \"I'll take that!\" diyor: ikisi de telefona bakmak istiyor."
+      why_wrong:
+        - "İkisi de \"I'll take that\" diyor; açmak istiyorlar."
+        - "Dede telefonu açmak istiyor; evde."
+        - "Bora konuşuyor; uyumuyor."
   - item: U4-026
     sezdir:
       id: u4d01-026-z
@@ -202,6 +218,10 @@ steps:
       options: ["Elif is calling Ece's house.", "Ece is calling Elif's house.", "The woman wants to speak to Elif.", "Ece answers the phone."]
       answer: 0
       explain: "Elif \"May I speak to Ece?\" diyor, yani Ece'nin evini arıyor."
+      why_wrong:
+        - "Arayan Elif; Ece'yi istiyor."
+        - "Kadın Ece'yi çağıracak; Elif'le konuşmak istemiyor."
+        - "Telefonu kadın açıyor."
   - item: U4-031
     sezdir:
       id: u4d01-031-z
@@ -229,6 +249,10 @@ steps:
       options: ["Sevim", "Ece", "the man", "Ece's mum"]
       answer: 0
       explain: "\"This is …\" kalıbı arayanın kendini tanıttığı yerdir; \"Could I speak to …?\" ise aranan kişiyi verir."
+      why_wrong:
+        - "Ece aranan kişi."
+        - "Adam telefonu açan kişi."
+        - "Ece'nin annesinden söz edilmiyor; arayan Sevim."
 
 review:
   - id: u4d01-r01
@@ -241,6 +265,10 @@ review:
     options: ["He puts the other slice on top.", "He puts it in the toaster.", "He puts two slices of bread on the table.", "He puts some cheese on the other slice."]
     answer: 0
     explain: "Peynirden (Then) hemen sonra After that adımı geliyor: öbür dilimi üstüne koymak."
+    why_wrong:
+      - "Tost makinesi en son adım."
+      - "İki dilimi masaya koymak ilk adım."
+      - "Peynir yalnız bir dilime konuyor; sonra öbür dilim üste."
   - id: u4d01-r02
     type: dialogue_complete
     item: U3-047
@@ -251,6 +279,10 @@ review:
     options: ["How long does the cake take in the oven?", "How many eggs do we need?", "How much sugar is in the cake?", "How often do you bake cakes?"]
     answer: 0
     explain: "Cevap bir süre (about forty minutes) veriyor; süre How long ile sorulur."
+    why_wrong:
+      - "Cevap süre veriyor; yumurta sayısı değil."
+      - "Cevap miktar değil, dakika."
+      - "Cevap sıklık değil, süre."
   - id: u4d01-r03
     type: text_infer
     item: U3-048
@@ -261,6 +293,10 @@ review:
     options: ["cheese", "butter", "eggs", "pepper"]
     answer: 0
     explain: "Metinde yumurta, tereyağı, tuz ve karabiber var; peynir (cheese) geçmiyor."
+    why_wrong:
+      - "Tereyağı metinde var."
+      - "Yumurta metinde var."
+      - "Biber metinde var."
   - id: u4d01-r04
     type: text_infer
     item: U3-034
@@ -271,6 +307,10 @@ review:
     options: ["Duru", "Kaan", "Selin", "Kaan and Selin"]
     answer: 0
     explain: "Kaan ve Selin acı biber istiyor; Duru \"Hot food makes me cry\" diyor."
+    why_wrong:
+      - "Kaan bol acı biber istiyor."
+      - "Selin acıyı sevdiğini söylüyor."
+      - "İkisi de acı istiyor."
   - id: u4d01-r05
     type: dialogue_complete
     item: U3-059
@@ -281,6 +321,10 @@ review:
     options: ["Go to the café across from the park. It's worth trying.", "You're right. Small cafés are awful.", "I'm full. I can't eat anything.", "Enjoy your meal!"]
     answer: 0
     explain: "Bora ardından limonatayı övüyor ve Ege ikna oluyor: boşlukta bir öneri olmalı."
+    why_wrong:
+      - "Bora kafeyi öneriyor; küçük kafeler kötü demiyor."
+      - "Ege'yi ikna ediyor; tok olduğunu söylemiyor."
+      - "\"Afiyet olsun\" öneri değildir."
 
 tips:
   - type: tuzak

@@ -106,6 +106,10 @@ steps:
       options: ["to tell her friends how to reach her", "to cancel the sound check", "to invite Selin to the concert", "to complain about her phone"]
       answer: 0
       explain: "\"If you need me, please get in touch with Selin\": Ece arkadaşlarına kendisine nasıl ulaşacaklarını söylüyor."
+      why_wrong:
+        - "Ses kontrolü iptal değil; telefonu kapalı olacak."
+        - "Selin'i davet etmiyor."
+        - "Şikâyet yok."
   - item: U4-018
     sezdir:
       id: u4d09-018-z
@@ -132,6 +136,10 @@ steps:
       options: ["Kaan is the sender and Bora is the receiver.", "Bora is the sender and Kaan is the receiver.", "Bora sent the message to Kaan.", "Kaan got the message from Bora."]
       answer: 0
       explain: "From (kimden) gönderen kişiyi, To (kime) alıcıyı gösterir: Kaan yazdı, Bora aldı."
+      why_wrong:
+        - "Gönderen Kaan."
+        - "Mesajı Kaan gönderdi."
+        - "Mesajı alan Bora."
   - item: U4-025
     sezdir:
       id: u4d09-025-z
@@ -158,6 +166,10 @@ steps:
       options: ["I'm sorry to hear that.", "That's great news!", "Sorry, wrong number.", "I'll take that."]
       answer: 0
       explain: "Kötü bir haber (hastalık) duyulunca \"I'm sorry to hear that\" denir; \"That's great news\" iyi haber içindir."
+      why_wrong:
+        - "Hastalık iyi haber değil."
+        - "Doğru kişiyle konuşuyor."
+        - "Telefon zaten açık."
   - item: U4-030
     sezdir:
       id: u4d09-030-z
@@ -184,6 +196,10 @@ steps:
       options: ["What's wrong, Duru?", "Thanks for calling. Take care!", "Could you put me through, please?", "Sorry, wrong number."]
       answer: 0
       explain: "Sorunu öğrenmek isteyen kişi \"What's wrong?\" diye sorar; diğerleri vedalaşma, bağlatma ve yanlış numara kalıpları."
+      why_wrong:
+        - "Konuşma başında vedalaşma olmaz."
+        - "Elif kimseye bağlanmak istemiyor."
+        - "Doğru kişiyi aradı."
   - item: U4-051
     sezdir:
       id: u4d09-051-z
@@ -210,6 +226,10 @@ steps:
       options: ["There was a misunderstanding about the place.", "Kaan and Bora went to the cinema together.", "Kaan was late for the meeting.", "Bora doesn't like cafés."]
       answer: 0
       explain: "İkisi farklı yerlere gitmiş çünkü buluşma yerini farklı anlamışlar; Kaan bir saat beklediğine göre geç kalan o değil."
+      why_wrong:
+        - "Biri sinemada, biri kafedeydi."
+        - "Kaan bir saat bekledi; geç kalan o değil."
+        - "Bora kafeyi sevmediğini söylemiyor."
 
 review:
   - id: u4d09-r01
@@ -270,6 +290,10 @@ review:
     options: ["I'm afraid he isn't available at the moment.", "Speaking.", "Hold on, I'll get him.", "Sure, here he is."]
     answer: 0
     explain: "Ece ardından \"I'll call back later\" diyor; demek ki Kaan telefona gelemiyor. Diğer üç şıkta Kaan telefona geliyor."
+    why_wrong:
+      - "\"Speaking\" Kaan söylerdi; o antrenmanda."
+      - "Kaan evde değil."
+      - "Kaan antrenmanda."
   - id: u4d09-r08
     type: text_infer
     item: U4-010
@@ -280,6 +304,10 @@ review:
     options: ["Where is Ece now?", "Who called Kaan?", "What time did Ece call?", "Why should Kaan call Ece?"]
     answer: 0
     explain: "Arayan (Ece), saat (4 p.m.) ve neden (konser) yazıyor; Ece'nin şu an nerede olduğu yazmıyor."
+    why_wrong:
+      - "Arayan Ece."
+      - "Saat 16.00."
+      - "Konser için."
   - id: u4d09-r09
     type: message_infer
     item: U4-001
@@ -290,6 +318,10 @@ review:
     options: ["to return Ece's call and ask about the rehearsal", "to invite Ece to a basketball match", "to leave a message for his mum", "to complain about the concert"]
     answer: 0
     explain: "\"I'm calling you back about the concert\": Kaan Ece'nin aramasına dönüyor ve prova saatini soruyor."
+    why_wrong:
+      - "Maç daveti yok."
+      - "Annesine not bırakmıyor."
+      - "Şikâyet yok; prova saatini soruyor."
 
 tips:
   - type: tuzak
