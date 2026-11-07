@@ -106,6 +106,10 @@ steps:
       options: ["is going up", "is going down", "is staying the same", "is ending"]
       answer: 0
       explain: "\"More people go online every day\" ipucu: increase = go up."
+      why_wrong:
+        - "Going down azalmaktır."
+        - "Staying the same değişmemektir."
+        - "Ending bitmektir."
   - item: U5-050
     sezdir:
       id: u5d10-050-z
@@ -132,6 +136,10 @@ steps:
       options: ["What did he buy?", "Who is the cardholder?", "When does the card expire?", "How much does he pay?"]
       answer: 0
       explain: "Formda kart sahibi, son geçerlilik tarihi ve tutar var; ne satın alındığı yazmıyor."
+      why_wrong:
+        - "Kart sahibi Mehmet Kaya."
+        - "Son kullanma 06/29."
+        - "Toplam 320 TL."
   - item: U5-051
     sezdir:
       id: u5d10-051-z
@@ -158,6 +166,10 @@ steps:
       options: ["Selin talks to her dad before she buys something online.", "Selin thinks online shopping is slow.", "Selin buys things from any website.", "Selin never compares prices."]
       answer: 0
       explain: "\"I always ask my dad first\" = alışverişten önce babasıyla konuşur; diğer şıklar metinle çelişiyor."
+      why_wrong:
+        - "Selin hızlı olduğunu söylüyor."
+        - "Bilmediği sitelerden almıyor."
+        - "Fiyat karşılaştırabildiğini söylüyor."
   - item: U5-052
     sezdir:
       id: u5d10-052-z
@@ -184,6 +196,10 @@ steps:
       options: ["I'm afraid not. They were on sale, so they're non-refundable.", "Of course. They're refundable, so here's your money.", "Sorry, wrong number.", "Thanks for asking, but I'm busy."]
       answer: 0
       explain: "Ardından \"But you can change them\" geliyor; demek ki para iadesi yok: non-refundable. İkinci şık parayı geri verdiği için \"But …\" ile uyuşmuyor."
+      why_wrong:
+        - "Para iade edilse \"But you can change\" denmezdi."
+        - "Yanlış numara değil."
+        - "Müşteriyle ilgilenmiyor gibi; bağlama uymaz."
   - item: U5-056
     sezdir:
       id: u5d10-056-z
@@ -210,6 +226,10 @@ steps:
       options: ["That's very kind of you, but we don't do paid ads.", "Great! Send me the money now.", "Why don't we make the video today?", "Sure, I'd love to."]
       answer: 0
       explain: "Teklifi istemiyorsun ama kibar olmalısın: teşekkür + but + gerekçe."
+      why_wrong:
+        - "Para istemek reddetmek değildir."
+        - "Bu kabul etmektir."
+        - "Bu da kabul etmektir."
   - item: U5-060
     sezdir:
       id: u5d10-060-z
@@ -236,6 +256,10 @@ steps:
       options: ["a round-trip ticket for 800 TL", "a one-way ticket for 450 TL", "two round-trip tickets for 1,600 TL", "a one-way ticket for 800 TL"]
       answer: 0
       explain: "Cuma gidip pazar dönecek: gidiş-dönüş (round-trip) bileti, 800 TL."
+      why_wrong:
+        - "Gidip dönecek; tek yön yetmez."
+        - "Tek kişi için iki bilet gerekmez."
+        - "Tek yön 450 TL."
 
 review:
   - id: u5d10-r01
@@ -294,6 +318,10 @@ review:
     options: ["download the video", "upload the video", "delete the video", "comment on the video"]
     answer: 0
     explain: "İnternetsiz izlemek için videoyu telefona indirmek gerekir: download; upload internete yüklemektir."
+    why_wrong:
+      - "Yüklemek internete koymaktır; ters yön."
+      - "Silerse gösteremez."
+      - "Yorum yazmak videoyu kaydetmez."
   - id: u5d10-r08
     type: text_infer
     item: U5-033
@@ -304,6 +332,10 @@ review:
     options: ["Selin gives Ece a suggestion.", "Ece is going to delete her account.", "Selin can't study because of her phone.", "Ece gets a notification once a day."]
     answer: 0
     explain: "\"Why don't you …?\" bir öneridir; Selin Ece'ye öneride bulunuyor."
+    why_wrong:
+      - "Ece hesabını silmiyor."
+      - "Çalışamayan Ece."
+      - "İki dakikada bir bildirim geliyor."
   - id: u5d10-r09
     type: text_infer
     item: U5-028
@@ -314,6 +346,10 @@ review:
     options: ["Bora's grandpa", "Arda", "Nermin Teyze", "Arda and Nermin Teyze"]
     answer: 0
     explain: "\"Add some jazz! A saxophone, maybe?\" yorumunu yazan dede, şarkıya caz eklenmesini istiyor; diğerleri yalnız övüyor."
+    why_wrong:
+      - "Arda Bora'yı övüyor."
+      - "Nermin Teyze gururlu; müzik istemiyor."
+      - "İkisi de farklı müzik istemiyor."
   - id: u5d10-r10
     type: gap_fill
     item: U5-034
@@ -332,6 +368,10 @@ review:
     options: ["Half of the students use the Internet for watching videos.", "Most of the students do online shopping.", "Chatting is the most popular activity.", "None of the students do research for homework."]
     answer: 0
     explain: "%50 = half; online alışveriş %10 (a few), en popüler etkinlik %80 ile ödev araştırması."
+    why_wrong:
+      - "Alışveriş yüzde 10."
+      - "En popüler ödev araştırması (yüzde 80)."
+      - "Ödev araştırması yüzde 80."
   - id: u5d10-r12
     type: text_infer
     item: U5-030
@@ -342,6 +382,10 @@ review:
     options: ["What is the name of the band's new song?", "How many subscribers does the band have?", "When is the next live rehearsal?", "What does the band ask the followers?"]
     answer: 0
     explain: "Abone sayısı (3,400), prova zamanı (Saturday, 5 p.m.) ve istek (izinsiz paylaşmayın) yazıyor; yeni şarkının adı yok."
+    why_wrong:
+      - "Abone sayısı 3.400."
+      - "Prova cumartesi 17.00."
+      - "İzinsiz paylaşmamalarını istiyor."
   - id: u5d10-r13
     type: situation
     item: U5-059
@@ -351,6 +395,10 @@ review:
     options: ["Why don't we post the video tonight?", "Thanks for asking, but I can't.", "Sorry, I can't follow you.", "I got it."]
     answer: 0
     explain: "Why don't we …? bir öneridir; diğerleri sırasıyla ret, anlamadığını söyleme ve anladım demek."
+    why_wrong:
+      - "Bu ret cevabı."
+      - "Bu anlamadığını söylemek."
+      - "Bu anladığını söylemek."
   - id: u5d10-r14
     type: synonym
     item: U5-054
@@ -361,6 +409,10 @@ review:
     options: ["I mean", "By the way", "Thanks for asking, but", "What do you mean?"]
     answer: 0
     explain: "In other words aynı fikri yeniden söyler, I mean de öyle; By the way yeni bir konu açar."
+    why_wrong:
+      - "By the way konu değiştirir."
+      - "Bu ret kalıbıdır."
+      - "Bu soru sorar; açıklamaz."
 
 tips:
   - type: tuzak

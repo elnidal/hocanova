@@ -93,6 +93,10 @@ steps:
       options: ["He may be a phone addict.", "He never uses his phone.", "He finishes his homework quickly.", "He doesn't want to stop."]
       answer: 0
       explain: "Sürekli telefona bakması ve \"I want to stop, but I can't\" demesi bağımlılık belirtisidir; öbür şıklar metinle çelişiyor."
+      why_wrong:
+        - "Her beş dakikada telefona bakıyor; hiç kullanmamak tam tersi."
+        - "Metin ödevini yapamadığını söylüyor."
+        - "Mert \"I want to stop\" diyor."
   - item: U5-037
     sezdir:
       id: u5d01-037-z
@@ -119,6 +123,10 @@ steps:
       options: ["The average is two hours per day.", "Selin spends the most time on the Internet.", "Bora spends more time on the Internet than Kaan.", "They all spend the same time on the Internet."]
       answer: 0
       explain: "2+4+1+1 = 8 saat, dört kişiye bölününce 2: ortalama günde iki saat; en çok vakit geçiren Kaan."
+      why_wrong:
+        - "Selin 1 saatle en az kullananlardan."
+        - "Bora 1, Kaan 4 saat; ters karşılaştırma."
+        - "Süreler farklı: 1, 2 ve 4 saat."
   - item: U5-040
     sezdir:
       id: u5d01-040-z
@@ -145,6 +153,10 @@ steps:
       options: ["Bora regularly makes his own breakfast.", "Bora's mum makes his breakfast every morning.", "Bora started making breakfast last week.", "Bora never eats eggs."]
       answer: 0
       explain: "\"I always make my own breakfast\" ve \"Now it's a habit\": Bora kahvaltısını düzenli olarak kendisi hazırlıyor."
+      why_wrong:
+        - "Annesi çok erken işe gidiyor; kahvaltıyı Bora yapıyor."
+        - "\"Years ago\" başlamış; geçen hafta değil."
+        - "Her sabah omlet yiyor."
   - item: U5-044
     sezdir:
       id: u5d01-044-z
@@ -171,6 +183,10 @@ steps:
       options: ["Half of the students use the Internet for homework.", "Most students use the Internet for shopping.", "Games are more popular than music.", "None of the students play games on the Internet."]
       answer: 0
       explain: "Yüzde 50 yarısı (half) demektir; alışveriş yalnız yüzde 10, oyunlar müzikten az, oyun oynayan da var."
+      why_wrong:
+        - "Alışveriş yüzde 10; en az seçilen."
+        - "Oyun 30, müzik 70; ters karşılaştırma."
+        - "Oyun oynayan yüzde 30 var."
   - item: U5-045
     sezdir:
       id: u5d01-045-z
@@ -197,6 +213,10 @@ steps:
       options: ["Dad's usage is the highest in the family.", "Mum uses the Internet more than Ece.", "Ece uses the Internet for work.", "Grandma's usage is the highest in the family."]
       answer: 0
       explain: "Günde 5 saatle en çok kullanan baba; anne 1 saat, Ece 2 saat, babaanne 1 saat."
+      why_wrong:
+        - "Annesi 1, Ece 2 saat; ters karşılaştırma."
+        - "Ece moda videoları izliyor; iş için kullanan babası."
+        - "Babaanne 1 saat; en çok kullanan babası."
   - item: U5-047
     sezdir:
       id: u5d01-047-z
@@ -223,6 +243,10 @@ steps:
       options: ["What do you use the Internet for?", "How many hours do you spend on the Internet?", "Where do you usually use the Internet?", "Who uses the Internet in your family?"]
       answer: 0
       explain: "Elif interneti NE İÇİN kullandığını söylüyor (müzik, video); süre, yer ya da kişi sormuyor."
+      why_wrong:
+        - "Cevap süre değil, amaç veriyor."
+        - "Cevap yer değil, amaç veriyor."
+        - "Cevap aileden biri değil, kullanım amacı."
 
 review:
   - id: u5d01-r01
@@ -235,6 +259,10 @@ review:
     options: ["to ask about guitar lessons", "to book a concert", "to make a complaint about a teacher", "to sell her guitar"]
     answer: 0
     explain: "Arama nedeni \"I'm calling about …\" cümlesinde: gitar dersleri hakkında bilgi almak."
+    why_wrong:
+      - "Konser ayırtmıyor; ders ücretini soruyor."
+      - "Şikâyet yok."
+      - "Gitarını satmıyor."
   - id: u5d01-r02
     type: dialogue_complete
     item: U4-015
@@ -245,6 +273,10 @@ review:
     options: ["it's a bad line.", "I'll get him.", "wrong number.", "I'm calling about the match."]
     answer: 0
     explain: "Bora ardından \"I can't hear you\" diyor: hat kötü, ses gelmiyor."
+    why_wrong:
+      - "Kaan'la zaten konuşuyor; birini çağırmıyor."
+      - "Doğru kişiyi aramış."
+      - "Arayan Kaan; Bora değil."
   - id: u5d01-r03
     type: message_infer
     item: U4-041
@@ -255,6 +287,10 @@ review:
     options: ["Duru changed the speaker for a red one.", "Duru returned the speaker and got her money back.", "The speaker came in the right colour.", "Customer service didn't help Duru."]
     answer: 0
     explain: "Duru iki seçenekten değiştirmeyi seçti (I changed it); parasını geri almadı."
+    why_wrong:
+      - "Duru değiştirdi; parasını geri almadı."
+      - "Yanlış renkte geldi."
+      - "Müşteri hizmetleri iki seçenek sundu; yardım etti."
   - id: u5d01-r04
     type: situation
     item: U4-009
@@ -264,6 +300,10 @@ review:
     options: ["Would you like to leave a message?", "Could I speak to Ece, please?", "Speaking!", "Sorry, wrong number."]
     answer: 0
     explain: "Aranan kişi evde değilse telefonu açan kişi mesaj bırakmak isteyip istemediğini sorar."
+    why_wrong:
+      - "Bunu arayan söyler."
+      - "\"Speaking\" Ece söylerdi; o evde değil."
+      - "Elif doğru evi aramış."
   - id: u5d01-r05
     type: message_infer
     item: U4-051
@@ -274,6 +314,10 @@ review:
     options: ["There was a misunderstanding about the place.", "Kaan and Bora are at the same café.", "Bora is late again.", "Kaan doesn't like cake."]
     answer: 0
     explain: "İkisi farklı yerleri anlamış: buluşma yeri konusunda bir yanlış anlaşılma var."
+    why_wrong:
+      - "Biri okul yanındaki kafede, öbürü pastanede."
+      - "Bora zaten orada; geç kalan değil."
+      - "Pastaneden söz etmesi keki sevmediğini göstermez."
 
 tips:
   - type: kelime_ailesi

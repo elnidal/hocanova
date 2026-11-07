@@ -105,6 +105,10 @@ steps:
       options: ["Students can use the online library at home.", "The online library opens on Tuesday.", "Students don't need a password.", "Students can borrow five e-books a week."]
       answer: 0
       explain: "access the online library from home = evden kullanabilmek. Başlangıç pazartesi, parola gerekiyor, haftada üç e-kitap."
+      why_wrong:
+        - "Kütüphane pazartesi açılıyor."
+        - "Şifreyle giriş gerekiyor."
+        - "Haftada üç e-kitap."
   - item: U5-018
     sezdir:
       id: u5d06-018-z
@@ -131,6 +135,10 @@ steps:
       options: ["Say sorry and delete the photo.", "Post two more photos of her.", "Download the photo and send it to everyone.", "Ignore Selin's messages."]
       answer: 0
       explain: "İzinsiz paylaşılan ve arkadaşını üzen bir fotoğrafın doğru çözümü özür dilemek ve fotoğrafı kaldırmaktır."
+      why_wrong:
+        - "Daha fazla fotoğraf durumu kötüleştirir."
+        - "Fotoğrafı yaymak Selin'i daha çok üzer."
+        - "Selin'i görmezden gelmek özür değildir."
   - item: U5-021
     sezdir:
       id: u5d06-021-z
@@ -157,6 +165,10 @@ steps:
       options: ["Give Your Eyes a Break from Screens", "How to Buy a New Phone", "The History of Television", "Teenagers and Their Pets"]
       answer: 0
       explain: "Metnin tamamı ekran başında geçen süre ve gözleri dinlendirme önerileri hakkında; diğer başlıklar konunun dışında."
+      why_wrong:
+        - "Telefon almaktan söz edilmiyor."
+        - "Televizyonun tarihi anlatılmıyor."
+        - "Evcil hayvan yok."
   - item: U5-053
     sezdir:
       id: u5d06-053-z
@@ -182,6 +194,10 @@ steps:
       options: ["The guide is ready. By the way, Bora's grandpa loves our channel.", "Never share your password. In other words, keep it secret.", "What do you mean? Do you mean the internet connection?", "Sorry, I can't follow you. Can you say it again slowly?"]
       answer: 0
       explain: "By the way yeni bir konu açar (rehberden dedeye geçiş). In other words aynı şeyi tekrar söyler; diğer ikisi açıklama ister."
+      why_wrong:
+        - "\"In other words\" aynı fikri açıklar."
+        - "\"Do you mean\" anlamayı sorar."
+        - "Tekrar istemek yeni konu açmak değildir."
   - item: U5-054
     sezdir:
       id: u5d06-054-z
@@ -208,6 +224,10 @@ steps:
       options: ["That means", "By the way", "But", "What do you mean"]
       answer: 0
       explain: "İkinci cümle birincinin sonucunu yeniden söylüyor: In other words = That means. But zıtlık, By the way yeni konu bildirir."
+      why_wrong:
+        - "By the way konu değiştirir."
+        - "But zıtlık bildirir."
+        - "What do you mean soru sorar."
   - item: U5-055
     sezdir:
       id: u5d06-055-z
@@ -234,6 +254,10 @@ steps:
       options: ["I got it.", "Sorry, wrong number.", "Why don't we?", "By the way, I'm late."]
       answer: 0
       explain: "Murat Bey 'Great!' deyip devam ediyor; demek ki Kaan açıklamayı anladığını söylemiş: I got it."
+      why_wrong:
+        - "Yanlış numara değil."
+        - "\"Why don't we?\" tek başına cevap olmaz."
+        - "Konu değiştirmek uygun değil; öğretmen \"Great\" diyor."
 
 review:
   - id: u5d06-r01
@@ -246,6 +270,10 @@ review:
     options: ["Ignore his friend request.", "Accept his request quickly!", "Send him your address.", "Give him your password."]
     answer: 0
     explain: "Elif 'kabul etmeyeceğim' diyor; Duru tanımadığı kişinin isteğini görmezden gelmesini söylemiş."
+    why_wrong:
+      - "Tanımadığı birini hemen kabul etmek tehlikelidir."
+      - "Adres verilmez."
+      - "Şifre verilmez."
   - id: u5d06-r02
     type: gap_fill
     item: U5-010
@@ -287,6 +315,10 @@ review:
     options: ["Drumsticks are cheaper than usual at the weekend.", "Guitars have a 20% discount.", "The sale is on Monday.", "Everything in the shop is free."]
     answer: 0
     explain: "Hafta sonu bagetlerde %20 indirim var, yani normalden ucuz. Gitarlarda %10; indirim yalnız cumartesi ve pazar."
+    why_wrong:
+      - "Gitarda yüzde 10 var."
+      - "İndirim cumartesi ve pazar."
+      - "Her şey bedava değil; yalnız indirim var."
 
 tips:
   - type: tuzak

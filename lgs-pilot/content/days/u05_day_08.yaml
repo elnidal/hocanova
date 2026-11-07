@@ -106,6 +106,10 @@ steps:
       options: ["Click on every link in your messages.", "Ask an adult before downloading games.", "Don't tell your password to other people.", "Log out when you finish on a school computer."]
       answer: 0
       explain: "Rehber bilinmeyen bağlantılardan uzak durmayı söylüyor; her bağlantıya tıklamak bunun tersi."
+      why_wrong:
+        - "Yetişkine sormak rehberde var."
+        - "Şifreyi gizli tutmak rehberde var."
+        - "Okul bilgisayarında çıkış rehberde var."
   - item: U5-004
     sezdir:
       id: u5d08-004-z
@@ -132,6 +136,10 @@ steps:
       options: ["She is careful about copyright.", "She wants a discount on the photo.", "She thinks Ece's screen is broken.", "She doesn't like the sea."]
       answer: 0
       explain: "Elif fotoğrafın başkasına ait olduğunu ve önce izin almak gerektiğini söylüyor; telif hakkına dikkat ediyor."
+      why_wrong:
+        - "İndirimden söz edilmiyor."
+        - "Ekran konuşulmuyor."
+        - "Denizi sevmediğini söylemiyor."
   - item: U5-008
     sezdir:
       id: u5d08-008-z
@@ -158,6 +166,10 @@ steps:
       options: ["follow", "break", "avoid", "forget"]
       answer: 0
       explain: "obey the rules = follow the rules; ardından sayılan davranışlar kurallara uyulduğunu gösteriyor."
+      why_wrong:
+        - "Break bozmak, çiğnemektir; tam tersi."
+        - "Avoid kaçınmaktır."
+        - "Forget unutmaktır."
   - item: U5-011
     sezdir:
       id: u5d08-011-z
@@ -183,6 +195,10 @@ steps:
       options: ["Ignoring a friend request from a stranger.", "Sharing your home address in a comment.", "Telling your password to a new online friend.", "Clicking on a link that promises a free phone."]
       answer: 0
       explain: "Tanımadığın birinin isteğini görmezden gelmek güvenli davranıştır; diğerleri kişisel bilgiyi ya da hesabı tehlikeye atar."
+      why_wrong:
+        - "Ev adresi paylaşmak tehlikelidir."
+        - "Şifre kimseye söylenmez."
+        - "Bedava telefon vaadi tuzaktır."
   - item: U5-043
     sezdir:
       id: u5d08-043-z
@@ -209,6 +225,10 @@ steps:
       options: ["No, it isn't necessary.", "Yes, it's really necessary.", "By the way, I'm hungry.", "Sorry, I can't follow you."]
       answer: 0
       explain: "Duru provada yalnız gitar çalışacaklarını söylüyor; demek ki baget getirmek gerekli değil."
+      why_wrong:
+        - "Duru yalnız gitarla çalışacaklarını söylüyor."
+        - "Konu değiştirmek cevap değil."
+        - "Duru anlıyor; tekrar istemiyor."
   - item: U5-058
     sezdir:
       id: u5d08-058-z
@@ -234,6 +254,10 @@ steps:
       options: ["Can you explain what it means?", "I got it, thanks.", "Why don't we play it now?", "By the way, my internet is broken."]
       answer: 0
       explain: "Anlamadığın bir kelime için açıklama istenir: Can you explain what it means?"
+      why_wrong:
+        - "Anlamadın; anladım demek doğru değil."
+        - "Oyun önermek soruyu çözmez."
+        - "Konu değiştirmek uygun değil."
   - item: U5-061
     sezdir:
       id: u5d08-061-z
@@ -260,6 +284,10 @@ steps:
       options: ["Kaan needs his shoes quickly.", "Kaan is thanking his friend for a birthday present.", "Kaan will meet his friend at 9.", "Kaan has his basketball shoes with him."]
       answer: 0
       explain: "ASAP = as soon as possible: Kaan ayakkabılarını hemen istiyor. CU at 8 = saat sekizde görüşürüz."
+      why_wrong:
+        - "Doğum günü hediyesi yok."
+        - "Mesaj \"CU at 8\" diyor."
+        - "Ayakkabıları arkadaşının evinde unutmuş."
 
 review:
   - id: u5d08-r01
@@ -320,6 +348,10 @@ review:
     options: ["Twenty percent of the students spend more than four hours a day online.", "Most of the students spend less than one hour a day online.", "Forty percent of the students spend three or four hours a day online.", "None of the students spend more than four hours a day online."]
     answer: 0
     explain: "Tabloda 'More than 4 hours: 20%' yazıyor; 'less than 1 hour' yalnız %10, '3–4 hours' %30."
+    why_wrong:
+      - "Bir saatten az kullananlar yüzde 10."
+      - "Yüzde 40, 1–2 saat kullananların."
+      - "Yüzde 20'si dört saatten fazla kullanıyor."
   - id: u5d08-r08
     type: table_graph
     item: U5-037
@@ -330,6 +362,10 @@ review:
     options: ["Kaan spends more time online than the average.", "Selin spends more time online than the average.", "Bora spends less time online than the average.", "Ece's time online is the same as the average."]
     answer: 0
     explain: "Ortalama 3 saat; Kaan 5 saatle ortalamanın üstünde. Selin (1) ve Ece (2) altında, Bora (4) üstünde."
+    why_wrong:
+      - "Selin 1 saat; ortalamanın altında."
+      - "Bora 4 saat; ortalamanın üstünde."
+      - "Ece 2 saat; ortalama 3."
   - id: u5d08-r09
     type: text_infer
     item: U5-036
@@ -340,6 +376,10 @@ review:
     options: ["He may be addicted to the Internet.", "He rarely uses his phone.", "He has a healthy online habit.", "He doesn't like online games."]
     answer: 0
     explain: "Günde elli kez telefona bakmak, gece yarısına kadar oyun ve bağlanamayınca öfke bağımlılık belirtileri."
+    why_wrong:
+      - "Günde elli kez bakıyor; az değil."
+      - "Bu sağlıklı bir alışkanlık değil."
+      - "Gece yarısına kadar oyun oynuyor."
 
 tips:
   - type: tuzak

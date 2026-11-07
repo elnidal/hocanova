@@ -106,6 +106,10 @@ steps:
       options: ["isn't working", "is very new", "is turned on", "is online"]
       answer: 0
       explain: "Fotoğrafları gönderemiyor çünkü telefon bozuk: is broken = isn't working. Açık ya da çevrim içi bir telefon fotoğraf gönderebilirdi."
+      why_wrong:
+        - "Bozuk telefon yeni değildir."
+        - "Açık olması fotoğrafı engellemez."
+        - "Çevrimiçi olmak bozuk olmanın tersi."
   - item: U5-020
     sezdir:
       id: u5d04-020-z
@@ -132,6 +136,10 @@ steps:
       options: ["Only two people are online at 9 p.m.", "Bora is online at 9 p.m.", "Most of the people are online.", "Ece and Duru are both offline."]
       answer: 0
       explain: "Yalnız Ece ve Kaan online; beş kişiden üçü offline olduğu için çoğunluk değil. Duru offline, Ece online."
+      why_wrong:
+        - "Bora offline."
+        - "Beş kişiden yalnız ikisi online."
+        - "Ece online."
   - item: U5-023
     sezdir:
       id: u5d04-023-z
@@ -158,6 +166,10 @@ steps:
       options: ["Please turn off your phones.", "Please turn on your phones.", "Please open your phones.", "Please log in to your phones."]
       answer: 0
       explain: "Telefonların sesini hiç duymamak için kapatılmaları gerekir: turn off. Telefon için open kullanılmaz."
+      why_wrong:
+        - "Açmak ses istemeyen öğretmenin isteği olmaz."
+        - "Telefon açılmaz; açık/kapalı yapılır."
+        - "Telefona giriş yapmak sesi kesmez."
   - item: U5-026
     sezdir:
       id: u5d04-026-z
@@ -184,6 +196,10 @@ steps:
       options: ["The speaker has a problem with its sound.", "The speaker doesn't turn on.", "Deniz bought the speaker yesterday.", "Deniz wants a new laptop."]
       answer: 0
       explain: "Hoparlör açılıyor (It turns on) ama müzik birkaç saniyede bir kesiliyor; sorun sesle ilgili. Alım geçen hafta yapılmış."
+      why_wrong:
+        - "Hoparlör açılıyor: \"It turns on\"."
+        - "Geçen hafta almış."
+        - "Dizüstü bilgisayar istemiyor."
   - item: U5-057
     sezdir:
       id: u5d04-057-z
@@ -210,6 +226,10 @@ steps:
       options: ["What do you mean? Do you mean it isn't working properly?", "Why don't we go to the doctor?", "Sorry, wrong number.", "Thanks for calling."]
       answer: 0
       explain: "Kaan 'Yes!' deyip tabletin yavaşladığını anlatıyor; demek ki Selin ne demek istediğini sorup bir tahminde bulunmuş."
+      why_wrong:
+        - "Tablet hasta olmaz; doktor gerekmez."
+        - "Yanlış numara değil."
+        - "Konuşma bitmiyor."
   - item: U5-059
     sezdir:
       id: u5d04-059-z
@@ -235,6 +255,10 @@ steps:
       options: ["Why don't we upload the video tonight?", "My internet is broken.", "I'm sorry, I can't.", "What do you mean?"]
       answer: 0
       explain: "Why don't we…? öneri kalıbıdır. Diğerleri sırasıyla bahane, ret ve açıklama isteme."
+      why_wrong:
+        - "Bu bir sorun bildirimi."
+        - "Bu ret cevabı."
+        - "Bu bir soru; öneri değil."
 
 review:
   - id: u5d04-r01
@@ -263,6 +287,10 @@ review:
     options: ["He should comment on the video.", "He should upload the video.", "He should log out.", "He should download the video."]
     answer: 0
     explain: "Bir videonun altına görüş yazmak comment (on) ile anlatılır."
+    why_wrong:
+      - "Videoyu o yüklemiyor."
+      - "Çıkış yorum yazmaz."
+      - "İndirmek yorum yazmak değildir."
   - id: u5d04-r04
     type: gap_fill
     item: U5-030

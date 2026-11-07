@@ -104,6 +104,10 @@ steps:
       options: ["to send a file with the survey results", "to ask for a new password", "to invite Murat Bey to a concert", "to complain about a comment"]
       answer: 0
       explain: "\"You can find our class survey results in the attachment\": Selin anket sonuçlarını ekli dosyayla gönderiyor."
+      why_wrong:
+        - "Şifre istemiyor."
+        - "Konser daveti yok."
+        - "Şikâyet yok; dosya gönderiyor."
   - item: U5-027
     sezdir:
       id: u5d09-027-z
@@ -130,6 +134,10 @@ steps:
       options: ["Deniz", "Ali", "Can", "Ali and Can"]
       answer: 0
       explain: "Vlogger düzenli video paylaşır: Deniz; Ali yazı yazdığı için blogger, Can hiçbir şey paylaşmıyor."
+      why_wrong:
+        - "Ali yazı yazıyor; video değil."
+        - "Can hiçbir şey paylaşmıyor."
+        - "İkisi de video çekmiyor."
   - item: U5-029
     sezdir:
       id: u5d09-029-z
@@ -156,6 +164,10 @@ steps:
       options: ["Report it and tell an adult.", "Share it with all your friends.", "Write a rude comment under it.", "Download it and send it to your class."]
       answer: 0
       explain: "Zararlı içerik bildirilir ve bir yetişkine söylenir; paylaşmak, indirip yaymak ya da kaba yorum yazmak zararı büyütür."
+      why_wrong:
+        - "Paylaşmak zararı büyütür."
+        - "Kaba yorum durumu kötüleştirir."
+        - "Yaymak zararı büyütür."
   - item: U5-032
     sezdir:
       id: u5d09-032-z
@@ -182,6 +194,10 @@ steps:
       options: ["How do you make new friends on the Internet?", "How often do you change your password?", "What does BTW stand for?", "Where do you buy your clothes?"]
       answer: 0
       explain: "Ayşe insanlarla nasıl tanıştığını (online clubs, chat) anlatıyor; bu cevap \"How do you make new friends …?\" sorusuna uyar."
+      why_wrong:
+        - "Cevap şifre değil, arkadaşlık anlatıyor."
+        - "Cevapta kısaltma yok."
+        - "Cevapta alışveriş yok."
   - item: U5-035
     sezdir:
       id: u5d09-035-z
@@ -208,6 +224,10 @@ steps:
       options: ["We can keep in touch with our friends on social networking sites.", "We should share our address on social networking sites.", "We should accept friend requests from everybody.", "Social networking sites are only for strangers."]
       answer: 0
       explain: "Metin SNS'lerin arkadaş ve aileyle iletişim için iyi olduğunu söylüyor; adres paylaşmak ve tanımadıklarını kabul etmek yasaklanıyor."
+      why_wrong:
+        - "Metin adres paylaşmayın diyor."
+        - "Yabancılardan istek kabul etmeyin diyor."
+        - "Metin bu sitelerin iyi yanını da söylüyor."
   - item: U5-048
     sezdir:
       id: u5d09-048-z
@@ -234,6 +254,10 @@ steps:
       options: ["common", "dangerous", "boring", "expensive"]
       answer: 0
       explain: "\"Almost every student does it\" ipucu: widespread = common (yaygın)."
+      why_wrong:
+        - "Dangerous tehlikelidir."
+        - "Boring sıkıcıdır."
+        - "Expensive pahalıdır."
 
 review:
   - id: u5d09-r01
@@ -262,6 +286,10 @@ review:
     options: ["follow", "break", "avoid", "delete"]
     answer: 0
     explain: "obey the rules = follow the rules (kurallara uymak); break the rules tam tersi."
+    why_wrong:
+      - "Break çiğnemektir; tam tersi."
+      - "Avoid kaçınmaktır."
+      - "Delete silmektir."
   - id: u5d09-r04
     type: gap_fill
     item: U5-011
@@ -303,6 +331,10 @@ review:
     options: ["b → c → d → a", "c → b → d → a", "b → d → c → a", "a → b → c → d"]
     answer: 0
     explain: "Önce hesap açılır (sign up), sonra giriş yapılır (log in), video izlenir, en son çıkış yapılır (log out)."
+    why_wrong:
+      - "Önce kayıt, sonra giriş."
+      - "İzlemek için önce giriş gerekir."
+      - "Çıkış en son yapılır."
   - id: u5d09-r09
     type: situation
     item: U5-009
@@ -313,6 +345,10 @@ review:
     options: ["Sorry, I can't. My password is only for me.", "Sure! Here it is.", "I'd love to. What's your username?", "Thanks for calling. Bye!"]
     answer: 0
     explain: "Şifre kimseyle paylaşılmaz; kibarca reddedilir."
+    why_wrong:
+      - "Şifre kimseye verilmez."
+      - "Kullanıcı adı da paylaşılmaz."
+      - "Telefon konuşması değil."
   - id: u5d09-r10
     type: dialogue_complete
     item: U5-007
@@ -323,6 +359,10 @@ review:
     options: ["I'm logging out now.", "I'm signing up now.", "I'm typing my password for you.", "I forgot my username."]
     answer: 0
     explain: "Duru \"Now nobody can use your account\" diyor; demek ki Bora hesaptan çıkış yaptı (log out)."
+    why_wrong:
+      - "Hesap zaten var."
+      - "Şifreyi başkasına yazmak tehlikeli."
+      - "Kullanıcı adını unutmak çözüm değil."
 
 tips:
   - type: tuzak

@@ -98,6 +98,10 @@ steps:
       options: ["Selin downloads files from the school website.", "Selin downloads films every day.", "Selin uploads her homework to strange websites.", "Selin never asks her dad."]
       answer: 0
       explain: "\"I only download homework files from our school's website\": Selin yalnız okulun sitesinden dosya indiriyor."
+      why_wrong:
+        - "Yalnız okul dosyalarını indiriyor; film değil."
+        - "Tanımadığı sitelere bir şey yüklemiyor."
+        - "\"I always ask my dad first\" diyor."
   - item: U5-025
     sezdir:
       id: u5d03-025-z
@@ -123,6 +127,10 @@ steps:
       options: ["upload it", "download it", "sign up again", "log out"]
       answer: 0
       explain: "Videoyu telefondan kanala (internete) göndermek upload'dur; download ters yönde çalışır."
+      why_wrong:
+        - "İndirmek siteden telefona almaktır; ters yön."
+        - "Hesap zaten var."
+        - "Çıkış yapmak videoyu koymaz."
   - item: U5-028
     sezdir:
       id: u5d03-028-z
@@ -149,6 +157,10 @@ steps:
       options: ["Nermin Teyze wants to see another concert.", "Arda doesn't like the drums.", "JazzGrandpa55 wants more rock music.", "Nobody commented on the video."]
       answer: 0
       explain: "Nermin Teyze bir sonraki konseri soruyor; Arda davulcuyu övüyor, JazzGrandpa55 caz istiyor."
+      why_wrong:
+        - "Arda Bora'yı en iyi davulcu sayıyor."
+        - "JazzGrandpa55 caz istiyor; rock değil."
+        - "Videonun altında üç yorum var."
   - item: U5-030
     sezdir:
       id: u5d03-030-z
@@ -175,6 +187,10 @@ steps:
       options: ["Wrong Number has more subscribers than Sam's Football.", "Funny Pets has the most subscribers.", "Sam's Football has more subscribers than Cook with Ali.", "Wrong Number has the most subscribers."]
       answer: 0
       explain: "12, 4'ten fazladır; en çok abone 3.500 ile Cook with Ali'de."
+      why_wrong:
+        - "Funny Pets 900; en çok Cook with Ali."
+        - "Sam's Football 4, Cook with Ali 3.500."
+        - "Wrong Number 12 ile sondan ikinci."
   - item: U5-033
     sezdir:
       id: u5d03-033-z
@@ -201,6 +217,10 @@ steps:
       options: ["She checks her notifications very often.", "She never gets notifications.", "She put her phone in her bag all day.", "Her phone doesn't make any sound."]
       answer: 0
       explain: "Kırk kez telefona bakması ve Selin'in \"çantana koy\" demesi, Ece'nin bildirimlere çok sık baktığını gösterir."
+      why_wrong:
+        - "Bugün kırk bildirim gelmiş."
+        - "Selin telefonu çantaya koymasını istiyor; koymuş değil."
+        - "Her bildirimde \"ding\" sesi var."
   - item: U5-034
     sezdir:
       id: u5d03-034-z
@@ -227,6 +247,10 @@ steps:
       options: ["post", "download", "subscribe", "log out"]
       answer: 0
       explain: "Sosyal medyada share ile post aynı işi görür; download indirmek, subscribe abone olmak, log out çıkış yapmaktır."
+      why_wrong:
+        - "Download indirmektir; paylaşmak değil."
+        - "Subscribe abone olmaktır."
+        - "Log out çıkış yapmaktır."
 
 review:
   - id: u5d03-r01
@@ -247,6 +271,10 @@ review:
     options: ["I can't log in to my account!", "I can't log out of my account!", "I love my new username!", "I signed up yesterday. It was easy!"]
     answer: 0
     explain: "Elif şifreyi kontrol etmesini söylüyor: Kaan hesabına giriş yapamıyor olmalı; çıkış için şifre gerekmez."
+    why_wrong:
+      - "Elif şifreyi kontrol et diyor; sorun giriş yapamamak."
+      - "Şifre çıkış için gerekmez."
+      - "Sorunu olan biri bunu söylemez."
   - id: u5d03-r03
     type: situation
     item: U5-007
@@ -256,6 +284,10 @@ review:
     options: ["Log out of your account.", "Tell everybody your password.", "Sign up for a new account.", "Leave your account open."]
     answer: 0
     explain: "Ortak bilgisayardan kalkmadan önce hesaptan çıkılır (log out)."
+    why_wrong:
+      - "Şifre kimseye söylenmez."
+      - "Yeni hesaba gerek yok."
+      - "Hesabı açık bırakmak tehlikelidir."
   - id: u5d03-r04
     type: gap_fill
     item: U5-009
@@ -274,6 +306,10 @@ review:
     options: ["sign up", "log out", "log in", "type"]
     answer: 0
     explain: "register = sign up = kaydolmak; log in var olan hesaba girmek, log out çıkmaktır."
+    why_wrong:
+      - "Log out çıkıştır."
+      - "Log in mevcut hesaba giriştir; kayıt değil."
+      - "Type yazmaktır."
   - id: u5d03-r06
     type: gap_fill
     item: U5-024

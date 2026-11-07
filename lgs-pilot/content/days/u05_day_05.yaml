@@ -97,6 +97,10 @@ steps:
       options: ["Ignore the request and tell an adult if they keep writing to you.", "Accept it and send them your address.", "Accept it and share your password.", "Click on all the links in their messages."]
       answer: 0
       explain: "Tanımadığın, fotoğrafsız bir hesaptan gelen istek görmezden gelinir; ısrar ederse bir yetişkine söylenir. Diğerleri kişisel bilgiyi tehlikeye atar."
+      why_wrong:
+        - "Tanımadığına adres verilmez."
+        - "Şifre kimseyle paylaşılmaz."
+        - "Tanımadıktan gelen linke tıklanmaz."
   - item: U5-010
     sezdir:
       id: u5d05-010-z
@@ -123,6 +127,10 @@ steps:
       options: ["your favourite song", "your home address", "your school", "your phone number"]
       answer: 0
       explain: "Metin ad, adres, telefon numarası ve okul adını sayıyor; en sevdiğin şarkıdan söz etmiyor."
+      why_wrong:
+        - "Ev adresi metinde geçiyor."
+        - "Okul adı metinde geçiyor."
+        - "Telefon numarası metinde geçiyor."
   - item: U5-013
     sezdir:
       id: u5d05-013-z
@@ -149,6 +157,10 @@ steps:
       options: ["strangers", "close friends", "classmates", "your parents"]
       answer: 0
       explain: "people you don't know = strangers. Yakın arkadaşlar, sınıf arkadaşları ve anne baba tanıdığın kişilerdir."
+      why_wrong:
+        - "Yakın arkadaşlar tanıdığımız kişilerdir."
+        - "Sınıf arkadaşlarımızı tanırız."
+        - "Anne baba tanıdığımız kişilerdir."
   - item: U5-017
     sezdir:
       id: u5d05-017-z
@@ -175,6 +187,10 @@ steps:
       options: ["You press 'Save'.", "You log in to your account.", "You click on your old photo.", "You log out of your account."]
       answer: 0
       explain: "Sıra: log in → eski fotoğrafa tıkla → yenisini seç → 'Save'e bas. Yeni fotoğraftan sonra gelen adım Finally ile verilen press 'Save'."
+      why_wrong:
+        - "Giriş ilk adım."
+        - "Eski fotoğrafa tıklamak seçmeden önce."
+        - "Metinde çıkış yok."
   - item: U5-031
     sezdir:
       id: u5d05-031-z
@@ -201,6 +217,10 @@ steps:
       options: ["TechTom gets money from the company for the video.", "TechTom bought the phone with his own money.", "TechTom has twelve thousand followers.", "TechTom doesn't like phones."]
       answer: 0
       explain: "\"they are paying me for this video\": şirket video için para ödüyor. Telefon ücretsiz gelmiş ve takipçi sayısı 1,2 milyon."
+      why_wrong:
+        - "Şirket telefonu bedava gönderdi."
+        - "1,2 milyon takipçisi var."
+        - "Telefonu test ediyor; sevmediğini söylemiyor."
   - item: U5-049
     sezdir:
       id: u5d05-049-z
@@ -227,6 +247,10 @@ steps:
       options: ["The guitar strings have the biggest discount.", "The microphone has a 10% discount.", "The drumsticks have a 50% discount.", "All the products have a discount."]
       answer: 0
       explain: "En büyük indirim %50 ile tellerde. Mikrofonda indirim yok; bagetlerde %10."
+      why_wrong:
+        - "Mikrofonda indirim yok."
+        - "Bagetlerde yüzde 10 var."
+        - "Mikrofonda indirim yok."
 
 review:
   - id: u5d05-r01
@@ -247,6 +271,10 @@ review:
     options: ["Yes, she's online.", "No, she's offline.", "Her phone is broken.", "Why don't we call her mum?"]
     answer: 0
     explain: "Yeşil nokta kişinin çevrim içi olduğunu gösterir; Ece de planı hemen gönderiyor."
+    why_wrong:
+      - "Yeşil nokta çevrimiçi demektir."
+      - "Telefonun bozuk olduğu söylenmiyor."
+      - "Ece mesaj atacak; aramaya gerek yok."
   - id: u5d05-r03
     type: situation
     item: U5-023
@@ -264,6 +292,10 @@ review:
     options: ["have a problem", "are very new", "are very cheap", "are online"]
     answer: 0
     explain: "aren't working properly = bir sorunu var; müziğin tek taraftan gelmesi de bunu gösteriyor."
+    why_wrong:
+      - "Bozuk kulaklık yeni olmaz."
+      - "Fiyatla ilgisi yok."
+      - "Kulaklık çevrimiçi olmaz."
   - id: u5d05-r05
     type: dialogue_complete
     item: U5-057
@@ -274,6 +306,10 @@ review:
     options: ["What do you mean?", "Why don't we chat online?", "Sorry, I can't.", "Thanks for calling."]
     answer: 0
     explain: "Bora ardından ne olduğunu açıklıyor; demek ki Kaan 'Ne demek istiyorsun?' diye sormuş."
+    why_wrong:
+      - "Görüntülü konuşmayı anlatıyor; öneri değil."
+      - "Ret cevabı uymaz."
+      - "Konuşma bitmiyor."
   - id: u5d05-r06
     type: gap_fill
     item: U5-059

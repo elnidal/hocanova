@@ -101,6 +101,10 @@ steps:
       options: ["surf", "upload", "delete", "turn off"]
       answer: 0
       explain: "browse websites = internette sayfadan sayfaya gezinmek; Ü2'deki surf the Internet ile aynı anlam."
+      why_wrong:
+        - "Upload yüklemektir."
+        - "Delete silmektir."
+        - "Turn off kapatmaktır."
   - item: U5-022
     sezdir:
       id: u5d07-022-z
@@ -127,6 +131,10 @@ steps:
       options: ["Selin suggests checking the news on more than one website.", "Selin shares surprising news immediately.", "Selin never uses search engines.", "Selin reads only one website."]
       answer: 0
       explain: "Metin haberi arama motorunda arayıp iki üç farklı sitede kontrol etmeyi öneriyor."
+      why_wrong:
+        - "Selin \"don't share it immediately\" diyor."
+        - "Arama motoru kullanmayı öneriyor."
+        - "İki üç site öneriyor."
   - item: U5-038
     sezdir:
       id: u5d07-038-z
@@ -153,6 +161,10 @@ steps:
       options: ["What do you use the Internet for?", "How often do you go to the library?", "Who is your favourite singer?", "Where do you do your homework?"]
       answer: 0
       explain: "Cevap 'it'i ne için kullandığını anlatıyor (doing research, chatting); bu, kullanım amacını soran sorunun cevabı."
+      why_wrong:
+        - "Cevap sıklık değil, amaç."
+        - "Cevapta şarkıcı yok."
+        - "Cevap yer değil, amaç."
   - item: U5-039
     sezdir:
       id: u5d07-039-z
@@ -176,9 +188,13 @@ steps:
       stem_id: S14
       prompt: "<en>What can we say about Ms Kaya?</en>"
       stem: "<en>Ms Kaya started working with sea turtles twenty years ago. She writes books about them, and TV channels often ask her questions about the sea.</en>"
-      options: ["She is an expert on sea turtles.", "She is a stranger to TV channels.", "She is addicted to the Internet.", "She has never seen a sea turtle."]
+      options: ["She is an expert on sea turtles.", "She is a stranger to TV channels.", "She is addicted to the Internet.", "She doesn't know much about sea turtles."]
       answer: 0
       explain: "Yirmi yıllık deneyim, kitaplar ve televizyonların ona soru sorması onun bu konuda uzman olduğunu gösteriyor."
+      why_wrong:
+        - "TV kanalları ona soru soruyor; yabancı değil."
+        - "İnternetten söz edilmiyor."
+        - "Yirmi yıldır kaplumbağalarla çalışıyor."
   - item: U5-042
     sezdir:
       id: u5d07-042-z
@@ -205,6 +221,10 @@ steps:
       options: ["to get information about the guide", "to make a complaint about the guide", "to invite Murat Bey to a concert", "to apologise for being late"]
       answer: 0
       explain: "Elif rehberle ilgili iki soru soruyor; amacı bilgi almak."
+      why_wrong:
+        - "Şikâyet yok; bilgi istiyor."
+        - "Konser daveti yok."
+        - "Özür dilemiyor."
   - item: U5-046
     sezdir:
       id: u5d07-046-z
@@ -231,6 +251,10 @@ steps:
       options: ["helpful", "boring", "dangerous", "expensive"]
       answer: 0
       explain: "useful information = helpful information: işe yarar bilgi. great website ipucu olumlu bir sıfat istiyor."
+      why_wrong:
+        - "Boring sıkıcıdır; \"great\" ile çelişir."
+        - "Dangerous tehlikelidir."
+        - "Expensive pahalıdır."
 
 review:
   - id: u5d07-r01

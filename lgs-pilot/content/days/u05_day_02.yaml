@@ -93,6 +93,10 @@ steps:
       options: ["Ece controls the band's account.", "Every member has the password.", "The band has three accounts.", "Ece doesn't know the password."]
       answer: 0
       explain: "Şifreyi yalnız Ece biliyor ve değişiklik için ona sormak gerekiyor: hesabı Ece yönetiyor."
+      why_wrong:
+        - "Şifreyi yalnız Ece biliyor."
+        - "Mesaj \"one account\" diyor."
+        - "Ece \"Only I know the password\" diyor."
   - item: U5-006
     sezdir:
       id: u5d02-006-z
@@ -118,6 +122,10 @@ steps:
       options: ["Log in", "Sign up", "Log out", "Register"]
       answer: 0
       explain: "Hesabı zaten var: kaydolmasına (Sign up / Register) gerek yok, giriş yapması (Log in) gerekiyor."
+      why_wrong:
+        - "Hesabı var; yeniden kayıt gerekmez."
+        - "Log out çıkış yapmaktır."
+        - "Register kayıt olmaktır; hesabı zaten var."
   - item: U5-007
     sezdir:
       id: u5d02-007-z
@@ -144,6 +152,10 @@ steps:
       options: ["Students should log out before they leave.", "Students can eat near the computers.", "Students should share their passwords with friends.", "Students should log in before they leave."]
       answer: 0
       explain: "Kural 3: \"log off\" = \"log out\"; doğru şık aynı bilgiyi eş anlamlısıyla veriyor."
+      why_wrong:
+        - "Kural 1 yemeyi yasaklıyor."
+        - "Kural 2 şifre paylaşmayı yasaklıyor."
+        - "Ayrılmadan önce çıkış yapılır; giriş değil."
   - item: U5-009
     sezdir:
       id: u5d02-009-z
@@ -170,6 +182,10 @@ steps:
       options: ["Selin", "Elif", "Bora", "Kaan"]
       answer: 0
       explain: "Yalnız Selin'in şifresi uzun ve harf, sayı, sembol içeriyor; öbürleri kısa ve tahmin edilmesi kolay."
+      why_wrong:
+        - "Elif'in şifresi yalnız harf ve köpeğinin adı."
+        - "Bora'nınki yalnız rakam."
+        - "Kaan'ınki kendi adı."
   - item: U5-012
     sezdir:
       id: u5d02-012-z
@@ -196,6 +212,10 @@ steps:
       options: ["Then you need to sign up first.", "Then log in with your password.", "Then log out, please.", "Then type your old password."]
       answer: 0
       explain: "Duru'nun hesabı yok; ne giriş yapabilir ne eski şifresini yazabilir: önce kaydolması gerekir."
+      why_wrong:
+        - "Hesabı yok; giriş yapamaz."
+        - "Çıkış yapacağı bir hesabı yok."
+        - "Eski şifresi olamaz; hesabı yok."
   - item: U5-024
     sezdir:
       id: u5d02-024-z
@@ -220,6 +240,10 @@ steps:
       options: ["What type of films do you like?", "Type your name here.", "Kaan types very fast.", "Please type the password again."]
       answer: 0
       explain: "What type of …? sorusunda type isimdir (tür, çeşit); öbür üç cümlede fiildir (klavyeyle yazmak)."
+      why_wrong:
+        - "Burada type yazmak demek."
+        - "Burada type yazmak demek."
+        - "Burada type yazmak demek."
 
 review:
   - id: u5d02-r01
@@ -255,6 +279,10 @@ review:
     options: ["How many hours per day do you spend on the Internet?", "What time do you go to bed?", "How often do you go to the gym?", "Who do you watch videos with?"]
     answer: 0
     explain: "Duru bir süre (about two hours per day) veriyor; süre How many hours … ile sorulur."
+    why_wrong:
+      - "Cevap saat değil, süre veriyor."
+      - "Cevap sıklık değil, günlük süre."
+      - "Cevap kişi değil, süre."
   - id: u5d02-r05
     type: gap_fill
     item: U5-045
@@ -273,6 +301,10 @@ review:
     options: ["I use it for the news and my homework.", "About an hour a day.", "In my room, after school.", "Since I was ten."]
     answer: 0
     explain: "Soru amaç soruyor (What … for?); süre, yer ya da zaman veren şıklar soruya uymuyor."
+    why_wrong:
+      - "Bu süre cevabı; soru amaç soruyor."
+      - "Bu yer ve zaman cevabı."
+      - "Bu başlangıç zamanı cevabı."
 
 tips:
   - type: tuzak
