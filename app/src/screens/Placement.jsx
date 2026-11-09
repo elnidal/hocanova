@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { scorePlacement, shuffleOptions, isCorrect } from '../engine'
+import { placementExpectationLabel } from '../firstUse.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
 import RichText from '../components/RichText.jsx'
@@ -7,7 +8,7 @@ import RichText from '../components/RichText.jsx'
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 const SEC = { A: 'kelime tanıma', B: 'bağlamı anlama', C: 'sınavda kullanma' }
 
-export default function Placement({ def, coach, onFinish, onExit }) {
+export default function Placement({ def, coach, onFinish, onExit, onTour }) {
   const list = useMemo(() => def.sections.flatMap(s => s.questions.map(q => ({ ...shuffleOptions(q), sec: s.id, secTitle: s.title }))), [def])
   const [i, setI] = useState(-1) // -1: giriş
   const [introSeen, setIntroSeen] = useState({})
@@ -54,17 +55,22 @@ export default function Placement({ def, coach, onFinish, onExit }) {
     )
   }
 
-  if (i < 0) return (
-    <div className="wrap">
-      <div className="eyebrow">Başlangıç testi</div>
-      <h1>Seni tanıyalım</h1>
-      <Coach text={'Her soruda tek cevap hakkın var ve test sırasında doğru/yanlış göstermiyorum. Bilmiyorsan "Bilmiyorum" de; tahmin etmen gerekmiyor. Bu bir sınav değil, sadece başlangıç noktan. Testten sonra yanlışlarının doğrusunu birlikte göreceğiz.'} />
-      <div className="row">
-        <button className="btn ghost" onClick={onExit}>← Geri</button>
-        <button className="btn" onClick={() => setI(0)}>Başla · {list.length} soru</button>
+  if (i < 0) {
+    const expect = placementExpectationLabel(def)
+    return (
+      <div className="wrap placement-intro">
+        <div className="eyebrow">Başlangıç testi</div>
+        <h1>Seni tanıyalım</h1>
+        {expect && <p className="expect">{expect}. Seviyeni belirler.</p>}
+        <Coach text={'Her soruda tek cevap hakkın var ve test sırasında doğru/yanlış göstermiyorum. Bilmiyorsan "Bilmiyorum" de; tahmin etmen gerekmiyor. Bu bir sınav değil, sadece başlangıç noktan. Testten sonra yanlışlarının doğrusunu birlikte göreceğiz.'} />
+        <div className="row">
+          <button className="btn ghost" onClick={onExit}>← Geri</button>
+          <button className="btn" onClick={() => setI(0)}>Başla · {list.length} soru</button>
+        </div>
+        {onTour && <p className="rolelinks"><button type="button" className="skip" onClick={onTour}>Kısa tanıtımı gör</button></p>}
       </div>
-    </div>
-  )
+    )
+  }
 
   const q = list[i]
   const sec = def.sections.find(s => s.id === q.sec)

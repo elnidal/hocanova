@@ -23,12 +23,13 @@ import MiniLgs from './screens/MiniLgs.jsx'
 import Repair from './screens/Repair.jsx'
 import { parseAssignment } from './goal.js'
 import { flushReports } from './reports.js'
+import { initialLearnerScreen, afterTourScreen } from './firstUse.js'
 
 export default function App() {
   const [state, dispatch, account] = useStore()
   const [index, setIndex] = useState(null)
   const [unit, setUnit] = useState(null)
-  const [screen, setScreen] = useState('home')
+  const [screen, setScreen] = useState(() => initialLearnerScreen({ hash: location.hash, placement: state.placement }))
   const [lessonCtx, setLessonCtx] = useState(null) // { qIndex, items }
   const [error, setError] = useState(null)
 
@@ -84,10 +85,10 @@ export default function App() {
   const startRepair = async units => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'repair', units }) }
   const startReview = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'review' }) }
 
-  // İlk açılış turu: yeni öğrenci (test çözülmemiş ve tur görülmemiş) ya da "Turu tekrar izle"
-  if (screen === 'tour' || (!state.onboarded && !state.placement && screen === 'home')) return (
+  // Tanıtım turu isteğe bağlı. #basla ile gelen ve henüz seviyesi olmayan öğrenci doğrudan teste gider.
+  if (screen === 'tour') return (
     <Onboarding last={state.placement ? 'Ana ekrana dön' : 'Başlangıç testine geç'}
-      onDone={() => { dispatch({ type: 'onboarded' }); setScreen(screen === 'tour' || state.placement ? 'home' : 'placement') }} />
+      onDone={() => { dispatch({ type: 'onboarded' }); setScreen(afterTourScreen({ placement: state.placement })) }} />
   )
   if (screen.name === 'loading') return <Splash text="Ders hazırlanıyor…" />
   if (screen.name === 'lesson') {
@@ -116,7 +117,7 @@ export default function App() {
   if (screen === 'placement') return wrap(
     <Placement def={index.placement} coach={index.coach}
       onFinish={result => dispatch({ type: 'placement', result, now: Date.now() })}
-      onExit={() => setScreen('home')} />
+      onExit={() => setScreen('home')} onTour={() => setScreen('tour')} />
   )
   return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} onWordList={() => setScreen('wordlist')} onReport={() => setScreen('report')} onFlash={deck => setScreen({ name: 'flash', deck })} onMistakes={startMistakes} onExam={() => setScreen('exam')} onQuiz={startQuiz} onMini={startMini} onRepair={units => startRepair(units)} onTour={() => setScreen('tour')} account={account} />)
 }
