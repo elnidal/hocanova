@@ -4,12 +4,14 @@ import { speak } from '../tts.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
 import Run from '../components/Run.jsx'
+import { REVIEW_CAP } from '../engine/schedule.js'
+import { sessionWrap, stepCta } from '../sessionCoach.js'
 
 const LABEL = { new: 'yeni', unc: 'kararsız', known: 'biliniyor' }
-const LIMIT = 10
+const LIMIT = REVIEW_CAP
 
 // Bağımsız günlük tekrar: vakti gelmiş kelimeler (tavan LIMIT), her biri için daha önce doğru yapılmamış bir soru.
-export default function Review({ state, dispatch, qIndex, items, onExit }) {
+export default function Review({ state, dispatch, qIndex, items, onExit, nextStep, onContinue }) {
   const [start] = useState(() => {
     const now = Date.now()
     const list = dueItems(state.progress, now, { limit: LIMIT })
@@ -32,8 +34,13 @@ export default function Review({ state, dispatch, qIndex, items, onExit }) {
   if (!total) return (
     <div className="wrap">
       {head()}<h2>Bugün tekrar yok</h2>
-      <Coach text="Tüm ifadeler zamanında. Yeni ders günü seni bekliyor." />
-      <button className="btn" onClick={onExit}>Ana ekran</button>
+      <Coach text={nextStep && nextStep.key !== 'review'
+        ? `Bugün sorulacak tekrar kalmadı. Sıradaki adım: ${nextStep.title}.`
+        : 'Bugün sorulacak tekrar kalmadı.'} />
+      <div className="row">
+        {nextStep && nextStep.key !== 'review' && <button className="btn" onClick={onContinue}>{stepCta(nextStep)}</button>}
+        <button className="btn ghost" onClick={onExit}>Ana ekran</button>
+      </div>
     </div>
   )
 
@@ -44,13 +51,14 @@ export default function Review({ state, dispatch, qIndex, items, onExit }) {
       <div className="wrap">
         <div className="eyebrow">Günlük tekrar · bitti</div>
         <div className="card result">
-          <div className="row"><span className="big">{stats.first}<small>/{total}</small></span><div><div className="eyebrow">İlk denemede</div><h2>{stats.first === total ? 'Hepsi yerinde!' : 'Güzel iş'}</h2></div></div>
+          <div className="row"><span className="big">{stats.first}<small>/{total}</small></span><div><div className="eyebrow">İlk denemede</div><h2>{stats.first === total ? 'Hepsi doğru' : 'Bu oturum bitti'}</h2></div></div>
           {next && <p className="muted">Sıradaki tekrar: {daysUntil(next, Date.now()) <= 1 ? 'yarın' : `${daysUntil(next, Date.now())} gün sonra`}.</p>}
         </div>
-        <Coach text={weak.length
-          ? `${weak.slice(0, 3).join(', ')} biraz kaydı; normal. Onları yakında farklı bir soruyla yine getireceğim.`
-          : 'Hepsini hatırladın! Bu ifadeler artık daha uzun aralıklarla gelecek.'} />
-        <button className="btn" onClick={onExit}>Ana ekran</button>
+        <Coach text={sessionWrap({ first: stats.first, total, missed: weak, nextTitle: nextStep?.title }).text} />
+        <div className="row">
+          {nextStep && <button className="btn" onClick={onContinue}>{stepCta(nextStep)}</button>}
+          <button className="btn ghost" onClick={onExit}>Ana ekran</button>
+        </div>
       </div>
     )
   }

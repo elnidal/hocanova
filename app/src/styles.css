@@ -292,3 +292,13 @@ h1{letter-spacing:-.025em}h2{letter-spacing:-.02em}
 .pace-bar{height:6px;border-radius:99px;background:rgba(255,255,255,.15);overflow:hidden}
 .pace-bar i{display:block;height:100%;background:#FFC93C;transition:width .2s}
 .pace p{margin:0;font-size:.82rem;line-height:1.4;color:rgba(244,243,251,.72)}
+.why{color:var(--ink);font-size:1rem;font-weight:700;line-height:1.45}
+.card.today .btn{align-self:flex-start}
+@media (max-width:480px){
+  h1{font-size:1.65rem}
+  .card.today h2{font-size:1.35rem}
+  .card.today .btn{width:100%}
+  .plan h2{font-size:1.25rem}
+  .plan-count b{font-size:1.8rem}
+  .plan-steps li{align-items:flex-start}
+}

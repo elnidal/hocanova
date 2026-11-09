@@ -8,7 +8,7 @@ export default function GoalCard({ goal, daily, onChange }) {
   return (
     <section className="card goal">
       <div className="spread">
-        <div><div className="eyebrow">{goal.source === 'teacher' ? 'Öğretmeninin ödevi' : 'Bugünkü hedef'}</div><b>{done} / {goal.target} soru</b></div>
+        <div><div className="eyebrow">{goal.source === 'teacher' ? 'Öğretmeninin ödevi' : 'Soru sayacı'}</div><b>{done} / {goal.target} soru</b></div>
         <span className="muted small">{reached ? 'Tamam ✓' : `Kalan ${goal.target - done}`}</span>
       </div>
       <div className="bar" aria-hidden="true"><i style={{ width: `${pct}%` }} /></div>

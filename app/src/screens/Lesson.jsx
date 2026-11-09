@@ -8,6 +8,7 @@ import RichText, { markIds, plain } from '../components/RichText.jsx'
 import { shortGloss } from '../gloss.js'
 import Run from '../components/Run.jsx'
 import CardView from '../components/CardView.jsx'
+import { sessionWrap, stepCta } from '../sessionCoach.js'
 
 const TIP = { hafiza_kancasi: 'Hafıza kancası', tuzak: 'Tuzak', lgs_taktigi: 'LGS taktiği', kelime_ailesi: 'Kelime ailesi', ilginc_bilgi: 'İlginç bilgi', mini_dilbilgisi: 'Mini dilbilgisi' }
 const STAGE_LABEL = { card: 'Kart', tani: 'Tanı', sezdir: 'Sezdir', kullan: 'Kullan', sina: 'Sına' }
@@ -15,7 +16,7 @@ const PHASES_STORY = ['story', 'scene', 'steps', 'review', 'tips'] // ileri sevi
 const PHASES_CARDS = ['cards', 'scene', 'steps', 'review', 'tips'] // kart → kısa sahne → alıştırma; uzun hikâye isteğe bağlı
 const PHASES_LIGHT = ['steps', 'review', 'tips'] // hafif mod: hikâye ve sahne yok
 
-export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext, softCapped }) {
+export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext, onContinue, nextStep, softCapped }) {
   const light = day.mode === 'light'
   const [plan] = useState(() => planLesson(day, state.progress, Date.now()))
   const cardFirst = plan.mode === 'cardFirst'
@@ -246,10 +247,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   )
 
   const weak = stats.wrong.map(id => items[id]?.display).filter(Boolean)
-  const ratio = stats.total ? stats.first / stats.total : 1
-  const msg = !weak.length ? day.coach.end_good
-    : ratio >= 0.6 ? day.coach.end_mixed.replace('{weak}', weak.slice(0, 3).join(', '))
-    : `Yeni ifadelerde ilk gün zorlanmak çok normal 💪 ${weak.slice(0, 3).join(', ')} yarın yeniden karşına çıkacak; tekrar ettikçe oturur.`
+  const msg = sessionWrap({ first: stats.first, total: stats.total, missed: weak, nextTitle: nextStep?.title }).text
   const tomorrow = dueCountBy(state.progress, endOfTomorrow(Date.now()))
   return (
     <div className="wrap">
@@ -260,7 +258,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
           {day.new_items.map(id => (
             <li key={id}>
               <span><b>{items[id]?.display}</b> <span className="muted">{items[id]?.meaning_tr}</span></span>
-              <span className={stats.wrong.includes(id) ? 'hot' : ''}>{stats.wrong.includes(id) ? 'yarın tekrar' : '✓'}</span>
+              <span className={stats.wrong.includes(id) ? 'hot' : ''}>{stats.wrong.includes(id) ? 'ilk denemede kaçtı' : 'ilk denemede doğru'}</span>
             </li>
           ))}
         </ul>}
@@ -275,7 +273,9 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       <div className="row">
         <button className="btn ghost" onClick={onExit}>← Ana ekran</button>
         {cardFirst && !hasMini && day.story?.length > 0 && <button className="btn ghost" onClick={openStory}>Günün hikâyesini oku</button>}
-        {onNext && <button className="btn" onClick={onNext}>{softCapped ? 'Yine de devam et →' : 'Bir tane daha →'}</button>}
+        {nextStep
+          ? <button className="btn" onClick={onContinue}>{stepCta(nextStep)}</button>
+          : nextStep === undefined && onNext && <button className="btn" onClick={onNext}>{softCapped ? 'Yine de devam et →' : 'Bir tane daha →'}</button>}
       </div>
     </div>
   )
