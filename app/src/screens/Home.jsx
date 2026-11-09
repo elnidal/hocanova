@@ -9,6 +9,7 @@ import { miniTrend, fmtNet } from '../lgsMini.js'
 import { coachPlan, daysToLgs, planHeadline, pacePlan, paceText, weeklyReport, reportText } from '../coachPlan.js'
 import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
+import { placementExpectationLabel } from '../firstUse.js'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
@@ -42,9 +43,10 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const firstOpen = plan.find(s => !s.done)
   const pace = pacePlan({ totalLessons: index.units.reduce((n, u) => n + (u.dayCount || 0), 0), doneDays: state.doneDays, now })
   const run = s => ({ review: onReview, lesson: () => onLesson(nextDay.day), pre: () => onQuiz('pre'), post: () => onQuiz('post'), weekly: () => onQuiz('weekly'), mini: onMini, repair: () => onRepair(s.units) })[s.action]()
+  const placeLabel = placementExpectationLabel(index.placement)
   const coachText = placement
     ? coachMessage({ daily: state.daily, goal: state.goal, due, now, fallback: plan.length && Object.keys(state.doneDays).length ? planHeadline(plan, daysToLgs(now)) : levelText })
-    : 'Hazırsan 4 dakikalık kısa bir testle başlayalım; derslerini seviyene göre ayarlayacağım.'
+    : `Hazırsan kısa bir testle başlayalım${placeLabel ? ` (${placeLabel})` : ''}; derslerini seviyene göre ayarlayacağım.`
   const mini = miniTrend(state.miniLgs)
   const report = placement ? weeklyReport({ state, now }) : null
   const unitsWithDays = index.units.filter(u => u.dayCount)
@@ -103,8 +105,11 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         <section className="card today">
           <div className="eyebrow">Bugün</div>
           <h2>Başlangıç testi</h2>
-          <p className="muted">18 soru · 4 dk · seviyeni belirler</p>
-          <button className="btn" onClick={onPlacement}>Teste başla →</button>
+          {placeLabel && <p className="expect">{placeLabel}. Seviyeni belirler.</p>}
+          <div className="row">
+            <button className="btn" onClick={onPlacement}>Teste başla →</button>
+            <button type="button" className="skip" onClick={onTour}>Kısa tanıtımı gör</button>
+          </div>
         </section>
       ) : preAvail ? (
         <section className="card today">
@@ -215,7 +220,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         <summary><b>Hesabım</b> <span className="muted small">· takma ad, kayıt, sıfırlama</span></summary>
         {placement && (state.profile?.nick || Object.keys(state.doneDays).length === 0) && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
         <AccountCard account={account} />
-        <button className="linkbtn" onClick={onTour}>Tanıtım turunu tekrar izle</button>
+        <button type="button" className="skip" onClick={onTour}>Kısa tanıtımı izle</button>
         <a className="linkbtn" href="#giris">Öğretmen / veli girişi</a>
         <button className="linkbtn" onClick={() => { if (confirm('Tüm ilerleme bu cihazdan silinsin mi?')) dispatch({ type: 'reset' }) }}>Verileri sıfırla</button>
       </details>
