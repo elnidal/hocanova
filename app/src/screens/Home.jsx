@@ -2,11 +2,12 @@ import { counts, dueCount, newItemsToday, overSoftCap, NEW_ITEMS_SOFT_CAP, reten
 import Coach from '../components/Coach.jsx'
 import { LogoLockup } from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
-import { coachMessage, streakOf } from '../goal.js'
+import { streakOf } from '../goal.js'
 import { openMistakeCount } from '../mistakes.js'
 import { weeklyDue, pct } from '../quiz.js'
 import { miniTrend, fmtNet } from '../lgsMini.js'
-import { coachPlan, daysToLgs, planHeadline, pacePlan, paceText, weeklyReport, reportText } from '../coachPlan.js'
+import { daysToLgs, pacePlan, paceText, weeklyReport, reportText } from '../coachPlan.js'
+import { learnerView, stepCta } from '../sessionCoach.js'
 import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
 import { placementExpectationLabel } from '../firstUse.js'
@@ -28,7 +29,6 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const retentions = index.retention.unit === unit.unit
     ? index.retention.sections.map(sec => ({ sec, st: retentionState({ section: sec, unit: unit.unit, doneDays: state.doneDays, retentions: state.retentions, progress, now }) }))
     : []
-  const levelText = placement ? index.coach.placement_result[placement.level].replace(' {name}', '') : ''
   const streak = streakOf(state.daily, now)
   const uq = state.unitQuiz?.[unit.unit] || {}
   const preAvail = placement && doneN === 0 && !uq.pre && !uq.preSkipped && !uq.post
@@ -37,15 +37,17 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const mistakesOpen = openMistakeCount(progress)
   const readyChecks = retentions.filter(r => r.st.status === 'ready')
   const waitChecks = retentions.filter(r => r.st.status !== 'ready' && r.st.status !== 'not-started')
-  const plan = !placement ? []
-    : preAvail ? [{ key: 'pre', action: 'pre', done: false, title: `Ünite ${unit.unit} ön testi`, note: '10 soru: ünite sonunda farkı bununla göreceğiz.' }]
-    : coachPlan({ state, due, nextDay, weekly, unitDone: !nextDay && !uq.post, now })
+  const view = placement ? learnerView({
+    state, due, nextDay, weekly, unitDone: !nextDay && !uq.post, now, preAvail,
+    perSection: index.placement?.scoring?.per_section_max,
+  }) : null
+  const plan = view?.steps || []
   const firstOpen = plan.find(s => !s.done)
   const pace = pacePlan({ totalLessons: index.units.reduce((n, u) => n + (u.dayCount || 0), 0), doneDays: state.doneDays, now })
-  const run = s => ({ review: onReview, lesson: () => onLesson(nextDay.day), pre: () => onQuiz('pre'), post: () => onQuiz('post'), weekly: () => onQuiz('weekly'), mini: onMini, repair: () => onRepair(s.units) })[s.action]()
+  const run = s => ({ review: onReview, lesson: () => onLesson(nextDay.day), pre: () => onQuiz('pre'), post: () => onQuiz('post'), weekly: () => onQuiz('weekly'), mini: onMini, repair: () => onRepair(s.units) })[s.action]?.()
   const placeLabel = placementExpectationLabel(index.placement)
   const coachText = placement
-    ? coachMessage({ daily: state.daily, goal: state.goal, due, now, fallback: plan.length && Object.keys(state.doneDays).length ? planHeadline(plan, daysToLgs(now)) : levelText })
+    ? view.lead
     : `Hazırsan kısa bir testle başlayalım${placeLabel ? ` (${placeLabel})` : ''}; derslerini seviyene göre ayarlayacağım.`
   const mini = miniTrend(state.miniLgs)
   const report = placement ? weeklyReport({ state, now }) : null
@@ -61,9 +63,24 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
       <Coach text={coachText} />
 
       {placement && (
+        <section className="card today">
+          <div className="eyebrow">Bugünkü iş{view.stepCount ? ` · adım ${view.stepNo} / ${view.stepCount}` : ''}</div>
+          <h2>{view.goal.title}</h2>
+          <p className="why">{view.goal.why}</p>
+          {view.evidence && <p className="why">{view.evidence.text}</p>}
+          {firstOpen?.key === 'lesson' && nextDay && (
+            <p className="muted">{lessonMinutes(nextDay)} dk · {nextDay.new_items.length ? `${nextDay.new_items.length} yeni ifade` : nextDay.title}</p>
+          )}
+          {capped && firstOpen?.key === 'lesson' && <p className="softnote">Bugün {newToday} yeni ifade öğrendin. İstersen bugün burada durabilirsin; ders kaydın durur.</p>}
+          {firstOpen && <button className="btn" onClick={() => run(firstOpen)}>{stepCta(firstOpen)}</button>}
+          {firstOpen?.key === 'pre' && <button className="btn ghost" onClick={() => dispatch({ type: 'unitQuiz', unit: unit.unit, phase: 'preSkipped', result: { now: Date.now() } })}>Giriş ölçümünü şimdilik atla</button>}
+        </section>
+      )}
+
+      {placement && plan.length > 0 && (
         <section className="card plan">
           <div className="plan-top">
-            <div><div className="eyebrow">Nova'nın bugünkü planı</div><h2>{firstOpen ? `${plan.filter(s => s.done).length} / ${plan.length} tamam` : 'Plan tamam'}</h2></div>
+            <div><div className="eyebrow">Bugünkü sıra</div><h2>{firstOpen ? `${plan.filter(s => s.done).length} / ${plan.length} tamam` : 'Sıra bitti'}</h2></div>
             <div className="plan-count"><b>{daysToLgs(now)}</b><span>gün kaldı</span></div>
           </div>
           <div className="pace">
@@ -80,11 +97,9 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
               <li key={s.key} className={s.done ? 'done' : s === firstOpen ? 'now' : ''}>
                 <span className="plan-dot" aria-hidden="true">{s.done ? '✓' : k + 1}</span>
                 <span className="plan-text"><b>{s.title}</b><span className="muted small">{s.note}</span></span>
-                {s === firstOpen && <button className="btn sm" onClick={() => run(s)}>Şimdi →</button>}
               </li>
             ))}
           </ol>
-          {!firstOpen && <p className="muted small">Bugünkü plan bitti. İstersen aşağıdan kart turu ya da Sınav Dili.</p>}
         </section>
       )}
 
@@ -101,7 +116,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         </section>
       )}
 
-      {!placement ? (
+      {!placement && (
         <section className="card today">
           <div className="eyebrow">Bugün</div>
           <h2>Başlangıç testi</h2>
@@ -111,51 +126,20 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
             <button type="button" className="skip" onClick={onTour}>Kısa tanıtımı gör</button>
           </div>
         </section>
-      ) : preAvail ? (
-        <section className="card today">
-          <div className="eyebrow">Önce bir bakalım</div>
-          <h2>Ünite {unit.unit} ön testi</h2>
-          <p className="muted">10 soru · 3 dk · ünite sonunda gelişmeni bununla karşılaştıracağız</p>
-          <div className="row">
-            <button className="btn" onClick={() => onQuiz('pre')}>Teste başla →</button>
-            <button className="btn ghost" onClick={() => dispatch({ type: 'unitQuiz', unit: unit.unit, phase: 'preSkipped', result: { now: Date.now() } })}>Şimdilik atla</button>
-          </div>
-        </section>
-      ) : nextDay ? (
-        <section className="card today">
-          <div className="eyebrow">{doneN ? 'Sıradaki ders' : 'İlk ders'} · Gün {nextDay.day}</div>
-          {nextDay.new_items.length ? <h2 lang="en">{nextDay.new_items.map(id => unit.items.find(i => i.id === id)?.display).filter(Boolean).join(' · ')}</h2> : <h2>{nextDay.title}</h2>}
-          <p className="muted">{lessonMinutes(nextDay)} dk · {nextDay.exam ? `${nextDay.review?.length || 0} LGS sorusu · broşür, tablo, diyalog` : `${nextDay.new_items.length} yeni ifade · kart, sahne, alıştırma`}{due ? ` · ${due} tekrar bekliyor` : ''}</p>
-          {capped && <p className="softnote">Bugün {newToday} yeni ifade öğrendin, harika! Yarınki tekrar bunları kalıcı yapar; istersen yine de devam edebilirsin.</p>}
-          <button className="btn" onClick={() => onLesson(nextDay.day)}>{capped ? 'Yine de bir ders daha →' : 'Derse başla →'}</button>
-        </section>
-      ) : (
-        uq.post ? (
-          <section className="card today growth">
-            <div className="eyebrow">Ünite {unit.unit} tamamlandı</div>
-            {uq.pre?.n ? (
-              <div className="growth-row">
-                <div><b>%{pct(uq.pre)}</b><span>giriş</span></div>
-                <span className="growth-arrow" aria-hidden="true">→</span>
-                <div className="big-win"><b>%{pct(uq.post)}</b><span>çıkış</span></div>
-              </div>
-            ) : <h2>Son test: %{pct(uq.post)}</h2>}
-            {nextUnit && <button className="btn" onClick={() => dispatch({ type: 'unit', unit: nextUnit.unit })}>Ünite {nextUnit.unit}'e geç →</button>}
-          </section>
-        ) : (
-          <section className="card today">
-            <div className="eyebrow">Bu ünitenin dersleri bitti</div>
-            <h2>Ünite {unit.unit} son testi</h2>
-            <p className="muted">15 LGS tarzı soru · 8 dk{uq.pre?.n ? ` · girişte %${pct(uq.pre)} yapmıştın` : ''}</p>
-            <button className="btn" onClick={() => onQuiz('post')}>Son teste başla →</button>
-          </section>
-        )
       )}
 
-      {placement && preAvail && due > 0 && (
-        <section className="card slim">
-          <div><b>{due} ifade tekrar bekliyor</b><div className="muted small">Bugün en fazla 10 tanesi sorulur.</div></div>
-          <button className="btn sm" onClick={onReview}>Tekrar →</button>
+      {placement && uq.post && !nextDay && (
+        <section className="card today growth">
+          <div className="eyebrow">Ünite {unit.unit} dersleri bitti</div>
+          {uq.pre?.n ? (
+            <div className="growth-row">
+              <div><b>%{pct(uq.pre)}</b><span>giriş</span></div>
+              <span className="growth-arrow" aria-hidden="true">→</span>
+              <div className="big-win"><b>%{pct(uq.post)}</b><span>çıkış</span></div>
+            </div>
+          ) : <h2>Son test: %{pct(uq.post)}</h2>}
+          <p className="why">Bu iki testin sayımı. Aradaki fark başka bir kazanım iddiası değil.</p>
+          {nextUnit && <button className="btn" onClick={() => dispatch({ type: 'unit', unit: nextUnit.unit })}>Ünite {nextUnit.unit}’e geç</button>}
         </section>
       )}
 

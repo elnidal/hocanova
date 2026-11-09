@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { loadIndex, loadUnit, loadAllUnits } from './content.js'
-import { buildQuestionIndex, overSoftCap } from './engine'
+import { buildQuestionIndex, dueCount, overSoftCap } from './engine'
 import { canSpeak } from './tts.js'
 import { HintCtx } from './hintContext.js'
 import { useStore } from './store.js'
@@ -15,7 +15,7 @@ import Mistakes from './screens/Mistakes.jsx'
 import ExamCourse from './screens/ExamCourse.jsx'
 import Onboarding from './screens/Onboarding.jsx'
 import Quiz from './screens/Quiz.jsx'
-import { preQuiz, postQuiz, weeklyQuiz, weekKey } from './quiz.js'
+import { preQuiz, postQuiz, weeklyQuiz, weekKey, weeklyDue } from './quiz.js'
 import Flash from './screens/Flash.jsx'
 import WordList from './screens/WordList.jsx'
 import ParentReport from './screens/ParentReport.jsx'
@@ -24,6 +24,7 @@ import Repair from './screens/Repair.jsx'
 import { parseAssignment } from './goal.js'
 import { flushReports } from './reports.js'
 import { initialLearnerScreen, afterTourScreen } from './firstUse.js'
+import { buildPlan } from './sessionCoach.js'
 
 export default function App() {
   const [state, dispatch, account] = useStore()
@@ -85,6 +86,37 @@ export default function App() {
   const startRepair = async units => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'repair', units }) }
   const startReview = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'review' }) }
 
+  const openStep = () => {
+    if (!state.placement) return null
+    const now = Date.now()
+    const due = dueCount(state.progress, now)
+    const doneKey = d => `u${unit.unit}d${d.day}`
+    const doneN = unit.days.filter(d => state.doneDays[doneKey(d)]).length
+    const nextDay = unit.days.find(d => !state.doneDays[doneKey(d)])
+    const uq = state.unitQuiz?.[unit.unit] || {}
+    const steps = buildPlan({
+      state, due, nextDay,
+      weekly: weeklyDue(state.progress, state.weekly, now),
+      unitDone: !nextDay && !uq.post,
+      now,
+      preAvail: doneN === 0 && !uq.pre && !uq.preSkipped && !uq.post,
+    })
+    return steps.find(s => !s.done) || null
+  }
+  const runStep = step => {
+    if (!step) return setScreen('home')
+    const doneKey = d => `u${unit.unit}d${d.day}`
+    const nextDay = unit.days.find(d => !state.doneDays[doneKey(d)])
+    if (step.action === 'review') return startReview()
+    if (step.action === 'lesson' && nextDay) return startLesson(nextDay.day)
+    if (step.action === 'pre') return startQuiz('pre')
+    if (step.action === 'post') return startQuiz('post')
+    if (step.action === 'weekly') return startQuiz('weekly')
+    if (step.action === 'mini') return startMini()
+    if (step.action === 'repair') return startRepair(step.units)
+    return setScreen('home')
+  }
+
   // Tanıtım turu isteğe bağlı. #basla ile gelen ve henüz seviyesi olmayan öğrenci doğrudan teste gider.
   if (screen === 'tour') return (
     <Onboarding last={state.placement ? 'Ana ekrana dön' : 'Başlangıç testine geç'}
@@ -94,18 +126,24 @@ export default function App() {
   if (screen.name === 'lesson') {
     const day = unit.days.find(d => d.day === screen.day)
     const hasNext = unit.days.some(d => d.day === screen.day + 1)
+    const next = openStep()
     return wrap(<Lesson key={day.day} day={day} items={lessonCtx.items} qIndex={lessonCtx.qIndex} state={state} dispatch={dispatch}
       softCapped={overSoftCap(state.doneDays, Date.now())}
+      nextStep={next} onContinue={() => runStep(next)}
       onExit={() => setScreen('home')} onNext={hasNext ? () => startLesson(screen.day + 1) : null} />)
   }
   if (screen === 'wordlist') return wrap(<WordList units={index.units.filter(u => u.dayCount)} startUnit={unit.unit} onExit={() => setScreen('home')} />)
   if (screen.name === 'mistakes') return wrap(<Mistakes state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} onFlash={deck => setScreen({ name: 'flash', deck })} onExit={() => setScreen('home')} />)
-  if (screen.name === 'quiz') return wrap(<Quiz kind={screen.kind} questions={screen.questions} items={lessonCtx.items}
-    title={screen.kind === 'weekly' ? 'Bu haftanın ifadeleri' : `Ünite ${unit.unit} · ${unit.title}`}
-    before={state.unitQuiz?.[unit.unit]?.pre} dispatch={dispatch} onExit={() => setScreen('home')}
-    onFinish={result => screen.kind === 'weekly'
-      ? dispatch({ type: 'weekly', key: screen.key, result })
-      : dispatch({ type: 'unitQuiz', unit: unit.unit, phase: screen.kind, result })} />)
+  if (screen.name === 'quiz') {
+    const next = openStep()
+    return wrap(<Quiz kind={screen.kind} questions={screen.questions} items={lessonCtx.items}
+      title={screen.kind === 'weekly' ? 'Bu haftanın ifadeleri' : `Ünite ${unit.unit} · ${unit.title}`}
+      before={state.unitQuiz?.[unit.unit]?.pre} dispatch={dispatch} onExit={() => setScreen('home')}
+      nextStep={next} onContinue={() => runStep(next)}
+      onFinish={result => screen.kind === 'weekly'
+        ? dispatch({ type: 'weekly', key: screen.key, result })
+        : dispatch({ type: 'unitQuiz', unit: unit.unit, phase: screen.kind, result })} />)
+  }
   if (screen.name === 'mini') return wrap(<MiniLgs index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} onRepair={startRepair} onExit={() => setScreen('home')} />)
   if (screen.name === 'repair') return wrap(<Repair key={(screen.units || []).join()} index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} startUnits={screen.units} onExit={() => setScreen('home')} />)
   if (screen === 'exam') return wrap(<ExamCourse index={index} state={state} dispatch={dispatch} onExit={() => setScreen('home')} />)
@@ -113,7 +151,10 @@ export default function App() {
   if (screen === 'report') return wrap(<ParentReport index={index} state={state} dispatch={dispatch} onExit={() => setScreen("home")} />)
   if (screen.name === 'unitcheck') return wrap(<UnitCheck def={index.unit_check} unit={unit} items={lessonCtx.items} qIndex={lessonCtx.qIndex} state={state} dispatch={dispatch} onExit={() => setScreen('home')} />)
   if (screen.name === 'retention') return wrap(<Retention section={index.retention.sections.find(x => x.id === screen.id)} unit={unit.unit} items={lessonCtx.items} dispatch={dispatch} onExit={() => setScreen('home')} />)
-  if (screen.name === 'review') return wrap(<Review state={state} dispatch={dispatch} qIndex={lessonCtx.qIndex} items={lessonCtx.items} onExit={() => setScreen('home')} />)
+  if (screen.name === 'review') {
+    const next = openStep()
+    return wrap(<Review state={state} dispatch={dispatch} qIndex={lessonCtx.qIndex} items={lessonCtx.items} nextStep={next} onContinue={() => runStep(next)} onExit={() => setScreen('home')} />)
+  }
   if (screen === 'placement') return wrap(
     <Placement def={index.placement} coach={index.coach}
       onFinish={result => dispatch({ type: 'placement', result, now: Date.now() })}

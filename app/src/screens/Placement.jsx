@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { scorePlacement, shuffleOptions, isCorrect } from '../engine'
 import { placementExpectationLabel } from '../firstUse.js'
+import { placementSummary } from '../sessionCoach.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
 import RichText from '../components/RichText.jsx'
@@ -35,7 +36,7 @@ export default function Placement({ def, coach, onFinish, onExit, onTour }) {
           <div className="row"><span className="big">{result.tot}<small>/{list.length}</small></span><div><div className="eyebrow">Seviye</div><h2>{LEVEL[result.level]}</h2></div></div>
           <div className="stats">{def.sections.map(s => <div className="stat" key={s.id}><b>{result.score[s.id]}/{s.questions.length}</b><span>{SEC[s.id]}</span></div>)}</div>
         </div>
-        <Coach text={`${coach.placement_result[result.level].replace(' {name}', '')} ${def.scoring.coach_focus[result.focus]}`} />
+        <Coach text={placementSummary(result, def.scoring?.per_section_max)} />
         {wrong.length > 0 && (
           <details className="card review-wrong">
             <summary><b>Yanlışlarını gözden geçir ({wrong.length})</b> <span className="muted small">doğrusu ve kısa açıklama</span></summary>
@@ -50,7 +51,7 @@ export default function Placement({ def, coach, onFinish, onExit, onTour }) {
             ))}
           </details>
         )}
-        <button className="btn" onClick={onExit}>Ana ekrana dön</button>
+        <button className="btn" onClick={onExit}>Bugünkü işi gör</button>
       </div>
     )
   }
