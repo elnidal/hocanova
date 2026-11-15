@@ -22,3 +22,8 @@ const call = async fn => { const { data, error } = await tclient.rpc(fn); if (er
 export const loadStudents = () => call('teacher_students')
 export const loadWords = () => call('teacher_words')
 export const loadReports = () => call('teacher_reports').catch(() => []) // reports tablosu henüz kurulmamış olabilir
+export const loadClasses = () => call('teacher_classes').catch(() => null) // class_goal.sql henüz kurulmamış olabilir
+export async function saveClass(code, name, goal) {
+  const { error } = await tclient.rpc('teacher_class_save', { p_code: code, p_name: name, p_goal: goal })
+  if (error) throw error
+}

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { loadIndex, loadAllUnits } from '../content.js'
 import { buildQuestionIndex } from '../engine'
-import { teacherEnabled, teacherLogin, teacherSession, teacherLogout, loadStudents, loadWords, loadReports } from '../teacherApi.js'
+import { teacherEnabled, teacherLogin, teacherSession, teacherLogout, loadStudents, loadWords, loadReports, loadClasses, saveClass } from '../teacherApi.js'
 import { status, classSummary, sortStudents, daysSince } from '../teacher.js'
 import { plain } from '../components/RichText.jsx'
 import Splash from '../components/Splash.jsx'
@@ -21,9 +21,9 @@ export default function Teacher() {
   const load = async () => {
     setPhase('loading'); setErr('')
     try {
-      const [students, words, reports, index] = await Promise.all([loadStudents(), loadWords(), loadReports(), loadIndex()])
+      const [students, words, reports, index, classes] = await Promise.all([loadStudents(), loadWords(), loadReports(), loadIndex(), loadClasses()])
       const units = await loadAllUnits(index)
-      setData({ students, words, reports, units })
+      setData({ students, words, reports, units, classes })
       setPhase('panel')
     } catch (e) { setErr(e.message || String(e)); setPhase('login') }
   }
@@ -57,6 +57,8 @@ export default function Teacher() {
         <div className="stat"><b className={sum.away ? 'hot' : ''}>{sum.away}</b><span>3+ gündür yok</span></div>
         <div className="stat"><b>{sum.never}</b><span>başlamadı</span></div>
       </section>
+
+      <Classes classes={data.classes} onSave={async (c, n, g) => { await saveClass(c, n, g); await load() }} />
 
       <h2>Öğrenciler</h2>
       {students.length === 0 && <p className="muted">Henüz öğrenci verisi yok.</p>}
@@ -111,5 +113,35 @@ function Login({ err, onLogin }) {
       {err && <p className="softnote">{err}</p>}
       <button className="btn" disabled={busy || !email || !pw}>Giriş yap</button>
     </form>
+  )
+}
+
+// Sınıf kodları ve haftalık ortak hedef (supabase/class_goal.sql). Öğrenci kodu profiline yazınca ana sayfasında hedef kartı çıkar.
+const newCode = name => `${(name.replace(/[^0-9A-Za-z]/g, '').toUpperCase() || 'SINIF').slice(0, 4)}-${Math.random().toString(36).slice(2, 5).toUpperCase()}`
+function Classes({ classes, onSave }) {
+  const [name, setName] = useState('')
+  const [goal, setGoal] = useState(1000)
+  const [err, setErr] = useState('')
+  if (classes === null) return <><h2>Sınıf hedefi</h2><p className="muted small">Sınıf hedefi için Supabase'de supabase/class_goal.sql bir kez çalıştırılmalı.</p></>
+  const save = async (code, n, g) => { setErr(''); try { await onSave(code, n, g) } catch (e) { setErr(e.message || String(e)) } }
+  return (
+    <>
+      <h2>Sınıf hedefi</h2>
+      <section className="card">
+        <p className="muted small">Her sınıfa bir kod ver; öğrenciler kodu profillerine yazınca ana sayfada sınıfın haftalık hedefini, ilk 3'ü ve kendi katkılarını görür. Sonuncu kimseye gösterilmez.</p>
+        {classes.map(c => (
+          <div className="spread wrow" key={c.code}>
+            <span><b>{c.name}</b> <span className="chip">{c.code}</span> <span className="muted small">{c.ogrenci} öğr.</span></span>
+            <span className="small">{c.bu_hafta} / {c.weekly_goal} soru</span>
+          </div>
+        ))}
+        <form className="row" onSubmit={e => { e.preventDefault(); if (name.trim()) save(newCode(name), name.trim(), +goal).then(() => setName('')) }}>
+          <input className="field" maxLength={40} placeholder="Sınıf adı (örn. 8A)" value={name} onChange={e => setName(e.target.value)} />
+          <input className="field" type="number" min={50} max={100000} step={50} value={goal} onChange={e => setGoal(e.target.value)} aria-label="Haftalık hedef (soru)" />
+          <button className="btn sm" disabled={!name.trim()}>Kod oluştur</button>
+        </form>
+        {err && <p className="softnote">{err}</p>}
+      </section>
+    </>
   )
 }

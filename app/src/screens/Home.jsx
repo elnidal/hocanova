@@ -10,6 +10,7 @@ import { daysToLgs, pacePlan, paceText, weeklyReport, reportText } from '../coac
 import { learnerView, stepCta } from '../sessionCoach.js'
 import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
+import ClassGoalCard from '../components/ClassGoalCard.jsx'
 import { placementExpectationLabel } from '../firstUse.js'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
@@ -102,6 +103,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           </ol>
         </section>
       )}
+
+      {placement && state.profile?.group && <ClassGoalCard code={state.profile.group} />}
 
       {report && (
         <section className="card karne" aria-label="Geçen haftanın karnesi">

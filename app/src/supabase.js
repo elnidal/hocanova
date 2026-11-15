@@ -43,3 +43,10 @@ export async function fetchParentReport(token) {
   if (error) throw error
   return data
 }
+
+// Sınıf hedefi (supabase/class_goal.sql): kendi sınıf kodunun bu haftaki özeti ya da null
+export async function fetchClassWeek() {
+  const { data, error } = await supabase.rpc('class_week')
+  if (error) throw error
+  return data
+}

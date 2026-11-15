@@ -17,7 +17,7 @@ export default function ProfileCard({ profile, onSave }) {
       <h3>Takma adın ne olsun?</h3>
       <p className="muted small">Öğretmenin ilerlemeni görebilsin diye. Gerçek adın olmak zorunda değil.</p>
       <input className="field" maxLength={NICK_MAX} placeholder="Takma ad" value={nick} onChange={e => setNick(e.target.value)} />
-      <input className="field" maxLength={GROUP_MAX} placeholder="Sınıf kodu (varsa, örn. 8A)" value={group} onChange={e => setGroup(e.target.value)} />
+      <input className="field" maxLength={GROUP_MAX} placeholder="Sınıf kodu (öğretmenin verdiyse)" value={group} onChange={e => setGroup(e.target.value)} />
       <button className="btn" disabled={!isValidProfile(clean)} onClick={() => { onSave(clean); setEditing(false) }}>Kaydet</button>
     </section>
   )
