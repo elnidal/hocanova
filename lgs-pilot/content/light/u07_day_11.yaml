@@ -106,14 +106,14 @@ steps:
       lgs_like: true
       stem_id: S01
       prompt: "<en>Which of the following completes the dialogue?</en>"
-      stem: "<en>Duru: Why don't we walk to the station?\nSelin: ________ It is a very busy street at this time, full of cars and people.</en>"
-      options: ["Let's take a quiet road instead.", "Let's run through the street.", "Let's play football there.", "Let's go there at once."]
+      stem: "<en>Duru: Why don't we walk along the main street?\nSelin: ________ It's full of cars and people at this time.</en>"
+      options: ["It's too busy now.", "It's very quiet now.", "It's empty in the evening.", "It's closed to cars."]
       answer: 0
-      explain: "Caddede çok araba ve insan var; daha sakin bir yol önermek mantıklı."
+      explain: "Araba ve insanla dolu bir cadde kalabalıktır: busy."
       why_wrong:
-        - "Arabalarla dolu caddede koşmak tehlikelidir; Selin bunu önermez."
-        - "Kalabalık caddede futbol oynanmaz; Selin sakin bir yol arıyor."
-        - "\"At once\" hemen demek; ama Selin o caddeden gitmek istemiyor."
+        - "\"Full of cars and people\" sakin bir caddeyi anlatmaz."
+        - "Cadde şu anda dolu; boş olduğunu söylemek çelişir."
+        - "Araçlara kapalı olsaydı arabalarla dolu olmazdı."
     tekrar:
       id: u7d11-052-t
       type: situation

@@ -148,14 +148,14 @@ steps:
       lgs_like: true
       stem_id: S01
       prompt: "<en>Which of the following completes the dialogue?</en>"
-      stem: "<en>Tourist: We are looking for accommodation near the sea.\nReceptionist: ________ We have rooms with a sea view.</en>"
-      options: ["You are lucky!", "You are late for school!", "You should wash your hands!", "You can't swim here!"]
+      stem: "<en>Tourist: We are looking for accommodation near the sea.\nReceptionist: ________\nTourist: Great! We'll take it for three nights.</en>"
+      options: ["We have a double room with a sea view.", "The museum opens at nine.", "The bus station is far from here.", "Breakfast is not served on Sundays."]
       answer: 0
-      explain: "Resepsiyonist deniz manzaralı oda olduğunu söylüyor; bu yüzden şans/iyi haber ifadesi uyar."
+      explain: "Turist kalacak yer arıyor ve \"We'll take it\" diyor: resepsiyonist bir oda önermiş."
       why_wrong:
-        - "Konuk okula geç kalmadı; o deniz kenarında kalacak yer arıyor."
-        - "El yıkama öğüdü odayla ilgisiz; resepsiyonist iyi bir haber veriyor."
-        - "\"You can't swim here\" bir yasak; ardından \"We have rooms\" iyi haberi gelmez."
+        - "Müze saati kalacak yer sorusunu cevaplamaz; \"We'll take it\" da müzeye uymaz."
+        - "Otogarın uzaklığı oda değildir; turist neyi üç gece için alacak?"
+        - "Kahvaltı bilgisi oda önermez; \"three nights\" bir konaklamadan söz ediyor."
     tekrar:
       id: u7d03-013-t
       type: text_infer

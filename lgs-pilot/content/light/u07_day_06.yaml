@@ -149,13 +149,13 @@ steps:
       stem_id: S06
       prompt: "<en>According to the table, which city has the smallest population?</en>"
       stem: "<en>City A: 2 million people\nCity B: 800 thousand people\nCity C: 1.5 million people</en>"
-      options: ["City B", "City A", "City C", "City A and City C"]
+      options: ["City B", "City A", "City C", "All three cities have the same population."]
       answer: 0
       explain: "800 bin, 1,5 milyon ve 2 milyon arasında en küçük nüfus City B'dedir."
       why_wrong:
         - "City A 2 milyonla en kalabalık; soru en küçük nüfusu istiyor."
         - "City C 1,5 milyon; 800 binden fazla olduğu için en küçük değil."
-        - "City A ve City C, City B'den kalabalık; ikisi de en küçük değil."
+        - "Nüfuslar farklı: 2 milyon, 800 bin ve 1,5 milyon."
     tekrar:
       id: u7d06-028-t
       type: gap_fill
