@@ -25,7 +25,6 @@ steps:
       id: u9d05-021-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Artificial intelligence helps computers learn.", "Natural intelligence helps computers learn.", "Artifical intelligence helps computers learn.", "Artificially intelligence helps computers learn."]
       answer: 0

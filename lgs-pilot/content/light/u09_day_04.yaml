@@ -25,7 +25,6 @@ steps:
       id: u9d04-016-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Knowledge is power.", "Knowledges are power.", "A knowledge is power.", "Knowledge are power."]
       answer: 0

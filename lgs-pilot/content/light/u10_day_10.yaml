@@ -106,7 +106,6 @@ steps:
       id: u10d10-047-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["The team consists of ten students.", "The team is consisted of ten students.", "The team consist ten students.", "The team consists ten students."]
       answer: 0

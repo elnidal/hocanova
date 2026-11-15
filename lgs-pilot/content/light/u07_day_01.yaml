@@ -80,7 +80,6 @@ steps:
       id: u7d01-003-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["We had a lovely trip to Konya.", "We had a lovely travel to Konya.", "We had a lovely traveller to Konya.", "We had a lovely tourism to Konya."]
       answer: 0
@@ -120,7 +119,6 @@ steps:
       id: u7d01-004-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Elif wants to study abroad.", "Elif wants to study to abroad.", "Elif wants to study in abroad.", "Elif wants to study at abroad."]
       answer: 0

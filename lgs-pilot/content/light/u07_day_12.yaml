@@ -39,7 +39,6 @@ steps:
       id: u7d12-056-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Bursa is famous for its kebab.", "Bursa is famous with its kebab.", "Bursa is famous at its kebab.", "Bursa is famous by its kebab."]
       answer: 0

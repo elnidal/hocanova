@@ -80,7 +80,6 @@ steps:
       id: u10d07-032-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["There are many species in the rainforest.", "There are many specieses in the rainforest.", "There are many specie in the rainforest.", "There is many species in the rainforest."]
       answer: 0

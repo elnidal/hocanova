@@ -66,7 +66,6 @@ steps:
       id: u10d03-012-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Floods threaten many villages.", "Floods threat many villages.", "Floods are threaten many villages.", "Floods threatening many villages."]
       answer: 0

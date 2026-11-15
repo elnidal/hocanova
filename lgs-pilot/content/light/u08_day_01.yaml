@@ -146,7 +146,6 @@ steps:
       id: u8d01-004-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["The cook is making dinner in the kitchen.", "The cooker is making dinner in the kitchen.", "The cooked is making dinner in the kitchen.", "The cooking is making dinner in the kitchen."]
       answer: 0

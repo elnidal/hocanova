@@ -80,7 +80,6 @@ steps:
       id: u9d07-032-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Everyone can contribute to a cleaner world.", "Everyone can contribute a cleaner world.", "Everyone can contribute at a cleaner world.", "Everyone can contribute on a cleaner world."]
       answer: 0

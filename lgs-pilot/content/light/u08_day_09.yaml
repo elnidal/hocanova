@@ -66,7 +66,6 @@ steps:
       id: u8d09-042-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["There is too much laundry today.", "There are too much laundry today.", "There is too many laundry today.", "There are too many laundry today."]
       answer: 0

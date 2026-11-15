@@ -185,7 +185,6 @@ steps:
       id: u10d06-030-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["We are running out of water.", "We are running out water.", "We are running out to water.", "We are running of out water."]
       answer: 0

@@ -66,7 +66,6 @@ steps:
       id: u10d04-017-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["The government took the necessary measures.", "The government made the necessary measures.", "The government did the necessary measures.", "The government gave the necessary measures."]
       answer: 0
@@ -105,7 +104,6 @@ steps:
       id: u10d04-018-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Dams prevent floods.", "Dams prevent from floods.", "Dams protect floods.", "Dams are prevent floods."]
       answer: 0
@@ -184,7 +182,6 @@ steps:
       id: u10d04-020-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["The news is on TV now.", "The news are on TV now.", "A news is on TV now.", "The newses are on TV now."]
       answer: 0

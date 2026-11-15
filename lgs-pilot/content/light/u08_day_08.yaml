@@ -39,7 +39,6 @@ steps:
       id: u8d08-036-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["My teacher wants us to be quiet.", "My teacher wants that we be quiet.", "My teacher wants we to be quiet.", "My teacher wants us be quiet."]
       answer: 0
@@ -160,7 +159,6 @@ steps:
       id: u8d08-039-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["She did her best.", "She made her best.", "She took her best.", "She played her best."]
       answer: 0

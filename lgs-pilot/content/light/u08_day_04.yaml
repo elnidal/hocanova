@@ -105,7 +105,6 @@ steps:
       id: u8d04-018-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["There is a lot of laundry to do today.", "There are a lot of laundries to do today.", "There is a lot of laundrys to do today.", "There are many laundry to do today."]
       answer: 0

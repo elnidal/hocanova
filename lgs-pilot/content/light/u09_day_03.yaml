@@ -25,7 +25,6 @@ steps:
       id: u9d03-011-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["We discussed the problem for an hour.", "We discussed about the problem for an hour.", "We discussed on the problem for an hour.", "We discussed of the problem for an hour."]
       answer: 0
@@ -196,7 +195,6 @@ steps:
       id: u9d03-015-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["I found my keys under the sofa.", "I found out my keys under the sofa.", "I find out my keys under the sofa yesterday.", "I founded my keys under the sofa."]
       answer: 0

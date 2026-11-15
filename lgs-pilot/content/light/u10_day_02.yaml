@@ -120,7 +120,6 @@ steps:
       id: u10d02-008-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["The earthquake shook the buildings.", "The earthquake shaked the buildings.", "The earthquake shaken the buildings.", "The earthquake shakes the buildings yesterday."]
       answer: 0
@@ -185,7 +184,6 @@ steps:
       id: u10d02-010-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["The bridge collapsed after the flood.", "The flood collapsed the bridge.", "The bridge was collapsing the flood.", "The bridge collapsed by the flood."]
       answer: 0

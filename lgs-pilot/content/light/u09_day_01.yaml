@@ -106,7 +106,6 @@ steps:
       id: u9d01-003-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Physics is my favourite subject.", "Physics are my favourite subject.", "Physic is my favourite subject.", "Physics were my favourite subject."]
       answer: 0

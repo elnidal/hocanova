@@ -25,7 +25,6 @@ steps:
       id: u9d08-036-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Fleming discovered penicillin in 1928.", "Fleming invented penicillin in 1928.", "Fleming discover penicillin in 1928.", "Fleming discovering penicillin in 1928."]
       answer: 0

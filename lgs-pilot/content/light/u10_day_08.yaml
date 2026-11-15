@@ -104,7 +104,6 @@ steps:
       id: u10d08-038-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["We must protect animals from hunters.", "We must prevent animals from hunters.", "We must prefer animals from hunters.", "We must produce animals from hunters."]
       answer: 0
@@ -197,7 +196,6 @@ steps:
       id: u10d08-040-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["When the ground shakes, we will drop and cover.", "When the ground will shake, we will drop and cover.", "When the ground shook, we will drop and cover.", "When the ground is shaking will, we drop."]
       answer: 0

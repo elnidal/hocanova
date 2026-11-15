@@ -39,7 +39,6 @@ steps:
       id: u8d07-031-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Can you lend me your bike?", "Can you borrow me your bike?", "Can you lend from me your bike?", "Can you borrow to me your bike?"]
       answer: 0
@@ -79,7 +78,6 @@ steps:
       id: u8d07-032-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["I keep a diary and write in it every night.", "I keep a dairy and write in it every night.", "I keep a daily and write in it every night.", "I keep a dairies and write in it every night."]
       answer: 0
@@ -105,7 +103,6 @@ steps:
       id: u8d07-033-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["We need some new furniture.", "We need some new furnitures.", "We need a new furnitures.", "We need many furniture."]
       answer: 0
@@ -199,7 +196,6 @@ steps:
       id: u8d07-035-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["She has to do the washing up.", "She have to do the washing up.", "She has to does the washing up.", "She must to do the washing up."]
       answer: 0

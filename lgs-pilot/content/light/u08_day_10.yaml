@@ -25,7 +25,6 @@ steps:
       id: u8d10-046-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["The storm caused a lot of damage.", "The storm caused a lot of damages.", "The storm caused a lot of damaged.", "The storm caused many damage."]
       answer: 0
@@ -120,7 +119,6 @@ steps:
       id: u8d10-048-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Mum warned me not to run.", "Mum warned me to not running.", "Mum warned me don't run.", "Mum warned that me not run."]
       answer: 0
@@ -160,7 +158,6 @@ steps:
       id: u8d10-049-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["He helped his mum instead of playing games.", "He helped his mum instead playing games.", "He helped his mum instead to playing games.", "He helped his mum instead of to play games."]
       answer: 0

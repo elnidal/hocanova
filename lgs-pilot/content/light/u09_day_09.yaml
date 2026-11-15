@@ -25,7 +25,6 @@ steps:
       id: u9d09-041-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Describe the picture in two sentences.", "Describe about the picture in two sentences.", "Describe of the picture in two sentences.", "Describe to the picture in two sentences."]
       answer: 0
@@ -64,7 +63,6 @@ steps:
       id: u9d09-042-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["There are several experiments in the book.", "There is several experiments in the book.", "There are several experiment in the book.", "There are several of experiments in the book."]
       answer: 0

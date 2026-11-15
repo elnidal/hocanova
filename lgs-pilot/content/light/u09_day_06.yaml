@@ -187,7 +187,6 @@ steps:
       id: u9d06-030-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["She won the Nobel Prize in 1903.", "She made the Nobel Prize in 1903.", "She did the Nobel Prize in 1903.", "She played the Nobel Prize in 1903."]
       answer: 0

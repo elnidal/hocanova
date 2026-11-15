@@ -25,7 +25,6 @@ steps:
       id: u7d07-030-s
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["The Colosseum is an ancient building because it is about 2,000 years old.", "My bicycle is an ancient bicycle because it is three years old.", "This phone is ancient because I bought it yesterday.", "That shop is ancient because it opened last week."]
       answer: 0

@@ -39,7 +39,6 @@ steps:
       id: u8d03-011-t
       type: situation
       lgs_like: true
-      stem_id: S10
       prompt: "<en>Which sentence is correct?</en>"
       options: ["Please make the bed.", "Please do the bed.", "Please cook the bed.", "Please play the bed."]
       answer: 0
