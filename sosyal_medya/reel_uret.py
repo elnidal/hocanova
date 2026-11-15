@@ -26,6 +26,9 @@ REEL_CSS = """
 .scene .card p{font-size:50px}.scene .row{font-size:58px}.scene .lead{font-size:52px}.scene .msg .t{font-size:48px}.scene .tip{font-size:44px}
 .sik .msg .t{font-size:40px}.sik .card p{font-size:40px}.ring{margin:0 auto}
 .grad .chip{background:#FFC93C!important;color:#1B1E3A}
+.kust{font-size:58px;font-weight:800;color:#FFC93C;line-height:1.2}
+.kbuyuk{font-size:150px;line-height:1.02;color:#fff}
+.kalt{font-size:52px;font-weight:700;color:#fff;opacity:.92;line-height:1.25}
 """
 
 JS = """
@@ -40,9 +43,12 @@ window.seek=function(t){
     const a=+s.dataset.s,e=+s.dataset.e,vis=t>=a&&t<e;
     s.style.display=vis?'flex':'none'; if(!vis)return;
     const lt=t-a; if(s.dataset.grad)grad=true;
-    s.style.opacity=Math.min(cl(lt/0.25),cl((e-t)/0.25));
+    // İlk sahne kararmadan başlar: 0. kare kaydırma anında dolu görünmeli
+    s.style.opacity=Math.min(a===0?1:cl(lt/0.25),cl((e-t)/0.25));
     s.querySelectorAll('[data-a]').forEach(el=>{
-      const p=cl((lt-+el.dataset.a)/0.45),fx=el.dataset.fx;
+      const fx=el.dataset.fx;
+      if(fx==='hold'){el.style.opacity=1;el.style.transform=`scale(${1+0.045*Math.sin(lt*7)})`;return;}
+      const p=cl((lt-+el.dataset.a)/0.45);
       el.style.opacity=ease(p);
       el.style.transform=fx==='zoom'?`scale(${.4+.6*back(p)})`:fx==='fade'?'none':`translateY(${(1-back(p))*60}px)`;
     });
@@ -111,8 +117,17 @@ def kapanis(bas, gun, cagri="Kaydet 📌 Arkadaşına gönder 📤"):
         el(1.2, f'<span class="badge">⏳ LGS\'ye {gun} gün</span>'),
         grad=True, cls="ctr")
 
+def kanca(son, ust, buyuk, alt=""):
+    """Açılış kancası (0 → son sn): 0. karede tam dolu, nabız gibi atan büyük iddia/soru.
+    Metricool (Kas 2026): eski açılışta ilk kare boştu, izleyicinin %85'i 3 sn'de kaydırdı."""
+    return sahne(0, son,
+        el(0, f'<div class="kust">{ust}</div>', fx="hold", snd="ding"),
+        el(0, f'<div class="d kbuyuk">{buyuk}</div>', fx="hold"),
+        *([el(0, f'<div class="kalt">{alt}</div>', fx="hold")] if alt else []),
+        grad=True, cls="ctr")
+
 YARDIMCI = {k: v for k, v in globals().items() if k in
-            ("el", "sahne", "chat_reel", "opts_reel", "geri_say", "halka", "sayac", "kapanis", "owl")}
+            ("el", "sahne", "chat_reel", "opts_reel", "geri_say", "halka", "sayac", "kapanis", "owl", "kanca")}
 
 def html_yap(r):
     renk, etiket = SERI[r["seri"]]
