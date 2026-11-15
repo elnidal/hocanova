@@ -4,6 +4,8 @@ import { HintCtx } from '../hintContext.js'
 import RichText from './RichText.jsx'
 import ReportIssue from './ReportIssue.jsx'
 import SpeakerIcon from './SpeakerIcon.jsx'
+import Visual from './Visual.jsx'
+import { parseVisual } from '../visual.js'
 import { speak as say } from '../tts.js'
 
 /**
@@ -36,6 +38,7 @@ export default function Question({ q, mode = 'test', onAnswer, onNext, last, ext
     return i === picked ? ' wrong' : ''
   }
   const rt = t => <RichText text={t} items={items} newSet={newSet} speak={speak} />
+  const [visual] = useState(() => parseVisual(q))
 
   return (
     <div className="card q">
@@ -43,7 +46,8 @@ export default function Question({ q, mode = 'test', onAnswer, onNext, last, ext
       {hint && (!collapsed || open) && <p className="hint">🇹🇷 {hint.text}</p>}
       {hint && collapsed && !open && <button type="button" className="hintbtn" onClick={() => setOpen(true)}>🇹🇷 Türkçesi</button>}
       {q.listen && <button type="button" className="btn listen" onClick={() => say(q.listen)}><SpeakerIcon /> Tekrar dinle</button>}
-      {q.stem && <p className={`stem${q.stem.replace(/<[^>]+>/g, '').length > 120 ? ' long' : ''}`}>{rt(q.stem)}</p>}
+      {visual && <Visual v={visual} />}
+      {q.stem && !visual && <p className={`stem${q.stem.replace(/<[^>]+>/g, '').length > 120 ? ' long' : ''}`}>{rt(q.stem)}</p>}
       <div className="opts" role="radiogroup">
         {q.options.map((o, i) => (
           <button key={i} role="radio" aria-checked={picked === i} disabled={locked} className={`opt${cls(i)}`} onClick={() => choose(i)}>

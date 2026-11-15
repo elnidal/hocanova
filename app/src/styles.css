@@ -188,6 +188,25 @@ select.field{appearance:none;background:var(--paper) url("data:image/svg+xml,%3C
 .q .hint{margin:-4px 0 0;background:color-mix(in srgb,var(--amber) 14%,transparent);border-radius:10px;padding:6px 10px;color:var(--ink);font-size:.9rem;font-weight:600}
 .q .stem{margin:0;background:linear-gradient(135deg,var(--brand-soft),var(--bg));border-left:4px solid var(--brand);border-radius:6px 14px 14px 6px;padding:16px;font-family:var(--f-d);font-size:1.28rem;line-height:1.55;font-weight:700;color:var(--ink)}
 .q .stem .en{font-style:normal}
+.vz{margin:0;background:var(--paper);border:1.5px solid var(--line);border-radius:16px;padding:14px 16px;box-shadow:var(--shadow);color:var(--ink);font-size:1.02rem;line-height:1.45}
+.vz-title{font-family:var(--f-d);font-weight:800;font-size:1.05rem;letter-spacing:.01em;margin:0 0 10px;padding-bottom:8px;border-bottom:2px solid var(--brand);color:var(--ink)}
+.vz-card dl{margin:0;display:grid;gap:6px}
+.vz-kv{display:grid;grid-template-columns:minmax(0,38%) 1fr;gap:10px;align-items:baseline}
+.vz-kv dt{font-weight:800;color:var(--muted);font-size:.92rem}
+.vz-kv dd{margin:0;font-weight:600}
+.vz-line{font-weight:600}
+.vz-seg{display:inline}.vz-seg+.vz-seg::before{content:" · ";color:var(--muted)}
+.vz-bar{display:grid;grid-template-columns:minmax(0,34%) 1fr auto;gap:10px;align-items:center;margin:7px 0}
+.vz-lab{font-weight:700;font-size:.92rem;overflow-wrap:anywhere}
+.vz-track{height:14px;border-radius:7px;background:var(--bg);overflow:hidden}
+.vz-track i{display:block;height:100%;border-radius:7px;background:var(--brand)}
+.vz-val{font-variant-numeric:tabular-nums;min-width:2.5em;text-align:right}
+.vz-scroll{overflow-x:auto}
+.vz table{border-collapse:collapse;width:100%;font-size:.95rem}
+.vz th,.vz td{padding:7px 8px;text-align:left;border-bottom:1px solid var(--line)}
+.vz thead th{font-size:.8rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.vz tbody th{font-weight:700}
+.vz td.yes{color:var(--mint);font-weight:800;text-align:center}.vz td.no{color:var(--hot);font-weight:800;text-align:center}
 .blank{display:inline-block;min-width:3.4em;height:1.05em;vertical-align:-.14em;margin:0 .12em;border-bottom:3px solid var(--hot);background:color-mix(in srgb,var(--hot) 14%,transparent);border-radius:6px 6px 0 0}
 .opts{gap:10px}
 .opt{display:flex;align-items:center;gap:12px;min-height:56px;padding:12px 14px;border-radius:16px;font-size:1.05rem;line-height:1.35;box-shadow:0 2px 0 var(--line);transition:transform .08s,border-color .15s,background .15s}
