@@ -461,7 +461,8 @@ mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
     durum: "Selin konser biletini alırken küçük yazıyı okuyor."
     lines:
       - { speaker: "Selin", text: "Burada yazıyor: <en>This ticket is {U5-052|non-refundable}.</en>" }
-      - { speaker: "Ece", text: "O zaman tarihi iki kez kontrol et. Fikrini değiştirirsen paran gider!" }
+      - { speaker: "Ece", text: "Konser günü hasta olursan ne olacak?" }
+      - { speaker: "Selin", text: "Hiç. Bilet yanar. O yüzden tarihi iki kez kontrol ediyorum." }
   - item: U5-056
     durum: "Sevim Hanım gruba dördüncü kez pasta getiriyor."
     lines:

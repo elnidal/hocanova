@@ -376,5 +376,5 @@ mini:                     # kısa Türkçe sahne, hedef ifade İngilizce
   - item: U5-049
     durum: "Ece kırtasiyenin vitrinindeki kırmızı yazıyı okuyor."
     lines:
-      - { speaker: "Ece", text: "<en>Fifty percent {U5-049|discount}!</en> Defterler yarı fiyatına!" }
-      - { speaker: "Selin", text: "Hemen girelim; yeni dönem için on defter lazım!" }
+      - { speaker: "Ece", text: "<en>Fifty percent {U5-049|discount}!</en> Şu mavi defter dün 80 liraydı." }
+      - { speaker: "Selin", text: "Bugün 40 mı? Girelim; yeni dönem için on defter lazım!" }
