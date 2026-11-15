@@ -5,7 +5,7 @@ import '../landing.css'
 
 // Tanıtım sayfası: ilk kez gelen ziyaretçi (bu cihazda ilerleme yok) ve #tanitim. Rakamlar içerikten (10 ünite, 633 ifade, 115 ders, 4.400+ soru, 24 Sınav Dili dersi).
 const STEPS = [
-  ['Seviyeni ölç', '4 dakikalık başlangıç testi nereden başlayacağını belirler. Bildiğin kelimeyle vakit kaybetmezsin.'],
+  ['Seviyeni ölç', '18 soruluk, yaklaşık 4 dakikalık başlangıç testi nereden başlayacağını belirler. Bildiğin kelimeyle vakit kaybetmezsin.'],
   ['Planı uygula', 'Her gün ana ekranda sıralı bir plan: önce tekrar, sonra yeni ders. Kart, kısa İngilizce sahne, alıştırma. 10–15 dakika.'],
   ['Netini gör', 'Haftada bir Mini LGS: 10 soru, 15 dakika, gerçek net hesabı. Puan kaybettiğin ünite için 5 dakikalık tamir seti.'],
 ]

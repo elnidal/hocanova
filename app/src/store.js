@@ -1,9 +1,8 @@
 import { useCallback, useEffect, useReducer, useRef, useState } from 'react'
-import { createProgress, setLevel, recordAnswer, recordFlash, applyUnitCheck } from './engine'
 import { enabled, supabase, ensureSession, fetchRemote, pushRemote } from './supabase.js'
 import { chooseSync } from './sync.js'
 import { getCaptchaToken } from './captcha.js'
-import { countAnswer, DEFAULT_GOAL } from './goal.js'
+import { apply, hydrate, initial } from './state.js'
 
 const KEY = 'hikayenglish.lgs.app.v1'
 
@@ -12,47 +11,14 @@ export const localAdapter = {
   save(s) { try { localStorage.setItem(KEY, JSON.stringify(s)) } catch { /* özel mod vb. */ } },
 }
 
-const initial = () => ({ progress: createProgress(), placement: null, unit: 1, doneDays: {}, unitChecks: {}, retentions: {}, profile: null, hintSeen: {}, daily: {}, goal: DEFAULT_GOAL, savedAt: 0 })
-
 function reducer(s, a) {
-  if (a.type === 'hydrate') return { ...initial(), ...a.state }
+  if (a.type === 'hydrate') return hydrate(a.state)
   const next = apply(s, a)
   return next === s ? s : { ...next, savedAt: a.stamp ?? next.savedAt }
 }
 
-function apply(s, a) {
-  switch (a.type) {
-    case 'placement': return { ...s, placement: { ...a.result, at: a.now }, progress: setLevel(s.progress, a.result.level) }
-    case 'answer': return { ...s, progress: recordAnswer(s.progress, a.payload), daily: countAnswer(s.daily, a.payload.now) }
-    case 'flash': return { ...s, progress: recordFlash(s.progress, a), daily: countAnswer(s.daily, a.now) }
-    case 'examQ': return { ...s, daily: countAnswer(s.daily, a.now) }
-    case 'examDone': return { ...s, examDone: { ...(s.examDone || {}), [a.id]: { ok: a.ok, n: a.n, at: a.now } } }
-    case 'unitQuiz': return { ...s, unitQuiz: { ...(s.unitQuiz || {}), [a.unit]: { ...(s.unitQuiz?.[a.unit] || {}), [a.phase]: a.result } } }
-    case 'miniLgs': return { ...s, miniLgs: [...(s.miniLgs || []), a.result].slice(-30) }
-    case 'repairDone': return { ...s, repairs: [...(s.repairs || []), { units: a.units, ok: a.ok, n: a.n, at: a.now }].slice(-50) }
-    case 'weekly': return { ...s, weekly: { ...(s.weekly || {}), [a.key]: a.result } }
-    case 'onboarded': return { ...s, onboarded: true }
-    case 'parentToken': return { ...s, parentToken: a.token }
-    case 'goal': return { ...s, goal: a.goal }
-    case 'dayDone': return { ...s, doneDays: { ...s.doneDays, [a.key]: { first: a.first, total: a.total, n: a.n, at: a.now } } }
-    case 'retentionDone': return { ...s, retentions: { ...(s.retentions || {}), [`u${a.unit}:${a.id}`]: { ok: a.ok, n: a.n, at: a.now } } }
-    case 'reviewDone': return { ...s, reviews: [...(s.reviews || []), { first: a.first, total: a.total, at: a.now }].slice(-200) }
-    case 'unitCheck': {
-      const { unit, ...p } = a.payload
-      const known = Object.values(p.verified).filter(Boolean).length
-      return { ...s, progress: applyUnitCheck(s.progress, p), unitChecks: { ...(s.unitChecks || {}), [unit]: { fakes: p.fakes, claimed: p.claimed.length, verified: known, at: p.now } } }
-    }
-    case 'skipUnitCheck': return { ...s, unitChecks: { ...(s.unitChecks || {}), [a.unit]: { skipped: true, at: a.now } } }
-    case 'hint': return { ...s, hintSeen: { ...(s.hintSeen || {}), [a.key]: (s.hintSeen?.[a.key] || 0) + 1 } }
-    case 'profile': return { ...s, profile: a.profile }
-    case 'unit': return { ...s, unit: a.unit }
-    case 'reset': return initial()
-    default: return s
-  }
-}
-
 export function useStore() {
-  const [state, rawDispatch] = useReducer(reducer, null, () => ({ ...initial(), ...(localAdapter.load() || {}) }))
+  const [state, rawDispatch] = useReducer(reducer, null, () => hydrate(localAdapter.load()))
   const dispatch = useCallback(a => rawDispatch({ ...a, stamp: Date.now() }), [])
   const [sync, setSync] = useState({ status: enabled ? 'connecting' : 'off', email: null, error: null })
   const ready = useRef(false)

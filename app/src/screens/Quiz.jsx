@@ -6,6 +6,7 @@ import Question from '../components/Question.jsx'
 import RichText from '../components/RichText.jsx'
 import ShareResult from '../components/ShareResult.jsx'
 import { worthSharing } from '../shareCard.js'
+import { sessionWrap, stepCta } from '../sessionCoach.js'
 
 const TEXT = {
   pre: { eyebrow: 'Ünite ön testi', intro: 'Üniteye başlamadan önce ne bildiğine bakalım. Bilmediğin çok şey çıkacak, olması gereken bu! Bilmiyorsan "Bilmiyorum" de. Ünite bitince aynı ifadelerden bir son test yapacağız ve farkı birlikte göreceğiz.' },
@@ -14,7 +15,7 @@ const TEXT = {
 }
 
 // Ortak quiz ekranı: geri bildirim sonda (sınav gibi). Ön testte "Bilmiyorum" var ve kelime durumuna yazılmaz.
-export default function Quiz({ kind, title, questions, items, before, dispatch, onFinish, onExit }) {
+export default function Quiz({ kind, title, questions, items, before, dispatch, onFinish, onExit, nextStep, onContinue }) {
   const list = useMemo(() => questions.map(q => shuffleOptions(q)), [questions])
   const [i, setI] = useState(-1)
   const [answers, setAnswers] = useState({})
@@ -61,19 +62,22 @@ export default function Quiz({ kind, title, questions, items, before, dispatch, 
               <span className="growth-arrow" aria-hidden="true">→</span>
               <div className="big-win"><b>%{p}</b><span>çıkış</span></div>
             </div>
-            <p className="muted small">{p > b ? `${p - b} puan ilerledin!${p >= 70 ? ' Ünitenin başında bilmediklerini artık biliyorsun.' : ' Yanlışlarını Yanlış defterinde topladım; kartlarla pekiştirebilirsin.'}` : 'Bu ünite zorladı; yanlışlarını Yanlış defterinde topladım, kartlarla tekrar edebilirsin.'}</p>
+            <p className="why">Giriş %{b}, bu test %{p}. Fark {p - b} puan. Yalnız bu iki testin sayımı.</p>
           </section>
         ) : (
           <section className="card stats">
             <div className="stat"><b>{result.ok}/{result.n}</b><span>doğru</span></div>
-            <div className="stat"><b>%{p}</b><span>başarı</span></div>
+            <div className="stat"><b>%{p}</b><span>bu testte doğru</span></div>
             {kind === 'weekly' && <div className="stat"><b>{mm}</b><span>süre</span></div>}
           </section>
         )}
         {kind !== 'pre' && worthSharing({ kind, from: kind === 'post' ? b : null, to: p }) && <ShareResult kind={kind} title={title} from={kind === 'post' ? b : null} to={p} />}
-        <Coach text={kind === 'pre'
-          ? 'Başlangıç noktan kaydedildi. Şimdi dersler bilmediklerini öğretecek; ünite sonunda farkı birlikte göreceğiz.'
-          : p >= 80 ? 'Harika bir sonuç! Bu ifadeler artık senin.' : p >= 50 ? 'İyi gidiyorsun. Yanlışların tekrar listende öne geçti.' : 'Zorlandığın ifadeleri tekrar ve kartlarla pekiştireceğiz. Pes yok 💪'} />
+        <Coach text={sessionWrap({
+          first: result.ok,
+          total: result.n,
+          missed: wrong.map(q => items[q.itemId]?.display).filter(Boolean),
+          nextTitle: nextStep?.title,
+        }).text} />
         {kind !== 'pre' && wrong.length > 0 && (
           <details className="card review-wrong">
             <summary><b>Yanlışlarını gözden geçir ({wrong.length})</b> <span className="muted small">doğrusu ve kısa açıklama</span></summary>
@@ -89,7 +93,10 @@ export default function Quiz({ kind, title, questions, items, before, dispatch, 
             ))}
           </details>
         )}
-        <button className="btn" onClick={onExit}>Ana ekrana dön</button>
+        <div className="row">
+          {nextStep && <button className="btn" onClick={onContinue}>{stepCta(nextStep)}</button>}
+          <button className="btn ghost" onClick={onExit}>Ana ekrana dön</button>
+        </div>
       </div>
     )
   }

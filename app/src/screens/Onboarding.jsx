@@ -3,14 +3,14 @@ import NovaAvatar from '../components/NovaAvatar.jsx'
 import Logo from '../components/Logo.jsx'
 import { daysToLgs } from '../coachPlan.js'
 
-// İlk açılış turu: 3 kısa sayfa (tanıtım, günlük rutin, sınava doğru). Yalnız ilk girişte (ya da "Turu tekrar izle" ile) gösterilir.
+// İsteğe bağlı tanıtım: 3 kısa sayfa. Ana akış bunu açmaz; "Kısa tanıtımı gör" ile ulaşılır.
 const PAGES = [
   {
     title: 'Hoca Nova: yeni nesil İngilizce koçun',
     body: 'Sıfırdan başlıyor olsan da sorun yok. LGS İngilizcesini ezberle değil, planla halledeceğiz: 8. sınıfın 10 ünitesi, adım adım, seninle birlikte.',
     countdown: true,
     list: [
-      ['', 'Seviyeni ölçerim', '4 dakikalık testle nereden başlayacağını bulurum.'],
+      ['', 'Seviyeni ölçerim', '18 soruluk, yaklaşık 4 dakikalık testle nereden başlayacağını bulurum.'],
       ['', 'Planı ben yaparım', 'Ana ekranda her gün ne yapacağını sırayla söylerim.'],
       ['', 'Netini takip ederim', 'Mini LGS ile netini görür, puan kaybettiğin üniteyi tamir ederiz.'],
     ],
@@ -44,7 +44,7 @@ export default function Onboarding({ onDone, last = 'Başlangıç testine geç' 
     <div className="wrap onboard">
       <div className="spread">
         <span className="onboard-logo"><Logo big /></span>
-        {!end && <button className="linkbtn" onClick={onDone}>Atla</button>}
+        {!end && <button type="button" className="skip" onClick={onDone}>Turu atla</button>}
       </div>
       <section className="card onboard-card" key={i}>
         {i === 0 ? <NovaAvatar size={96} /> : <NovaAvatar size={56} />}

@@ -1,7 +1,10 @@
 import { DAY, getItem } from './progress.js'
 
+/** Bir tekrar oturumunda sorulan tavan. Metinler ve ekran aynı sayıyı kullanır. */
+export const REVIEW_CAP = 10
+
 /** Vakti gelmiş tekrarlar: en çok gecikenden başlar, eşitlikte çok yanlış yapılan önde. Günlük tavan `limit`. */
-export function dueItems(p, now, { limit = 10, exclude = [] } = {}) {
+export function dueItems(p, now, { limit = REVIEW_CAP, exclude = [] } = {}) {
   const skip = new Set(exclude)
   return Object.entries(p.items)
     .filter(([id, it]) => !skip.has(id) && it.due != null && it.due <= now && (it.status !== 'new' || it.wrong > 0))

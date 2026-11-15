@@ -12,9 +12,11 @@ const today = (t, now) => t != null && dayStamp(t) === dayStamp(now)
 
 /**
  * Adımlar: { key, title, note, done, action }. action: Home'daki işleyicinin adı.
- * ctx: { state, due, nextDay (ders günü nesnesi ya da null), weekly (Cuma quiz'i hazır mı), unitDone, now }
+ * ctx: { state, due, nextDay (ders günü nesnesi ya da null), weekly (Cuma quiz'i hazır mı), unitDone, now, away }
+ * away >= 2 ise bugün yalnız gereken tekrar ve bir ders ya da ünite son testi kalır.
+ * Deneme ve tamir silinmez; ertesi çalışma gününde plana geri döner.
  */
-export function coachPlan({ state, due, nextDay, weekly, unitDone, now }) {
+export function coachPlan({ state, due, nextDay, weekly, unitDone, now, away = null }) {
   const steps = []
   const doneDays = Object.values(state.doneDays || {})
   const lessonsTotal = doneDays.length
@@ -60,6 +62,10 @@ export function coachPlan({ state, due, nextDay, weekly, unitDone, now }) {
     })
   }
 
+  if (away != null && away >= 2) {
+    const kept = steps.filter(s => s.key === 'review' || s.key === 'lesson' || s.key === 'post')
+    if (kept.length) return kept
+  }
   return steps
 }
 
