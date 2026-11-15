@@ -1,4 +1,5 @@
 import SpeakerIcon from '../components/SpeakerIcon.jsx'
+import { teaserFor } from '../teaser.js'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { planLesson, pickQuestion, alternativeQuestion, drillFor, TANI_TYPES, statusOf, dueCountBy, endOfTomorrow } from '../engine'
 import { speak } from '../tts.js'
@@ -15,7 +16,7 @@ const PHASES_STORY = ['story', 'scene', 'steps', 'review', 'tips'] // ileri sevi
 const PHASES_CARDS = ['cards', 'scene', 'steps', 'review', 'tips'] // kart → kısa sahne → alıştırma; uzun hikâye isteğe bağlı
 const PHASES_LIGHT = ['steps', 'review', 'tips'] // hafif mod: hikâye ve sahne yok
 
-export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext, softCapped }) {
+export default function Lesson({ day, items, state, dispatch, qIndex, onExit, onNext, softCapped, nextDay }) {
   const light = day.mode === 'light'
   const [plan] = useState(() => planLesson(day, state.progress, Date.now()))
   const cardFirst = plan.mode === 'cardFirst'
@@ -251,6 +252,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
     : ratio >= 0.6 ? day.coach.end_mixed.replace('{weak}', weak.slice(0, 3).join(', '))
     : `Yeni ifadelerde ilk gün zorlanmak çok normal 💪 ${weak.slice(0, 3).join(', ')} yarın yeniden karşına çıkacak; tekrar ettikçe oturur.`
   const tomorrow = dueCountBy(state.progress, endOfTomorrow(Date.now()))
+  const teaser = teaserFor(nextDay)
   return (
     <div className="wrap">
       {head('Bugünün raporu', 'Gün bitti')}
@@ -271,6 +273,7 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
       </section>
       {leftoverTips.map((t, i) => <TipView key={i} tip={t} />)}
       <Coach text={msg} />
+      {teaser && <aside className="card teaser"><div className="eyebrow">{teaser.kind === 'exam' ? 'Yarın' : 'Yarınki derste'}</div><p>{teaser.text}</p></aside>}
       {softCapped && <p className="softnote">Bugün çok yeni ifade öğrendin! Beyin dinlenirken öğrendiklerini pekiştirir; yarınki tekrar çok işe yarayacak. İstersen yine de devam edebilirsin.</p>}
       <div className="row">
         <button className="btn ghost" onClick={onExit}>← Ana ekran</button>

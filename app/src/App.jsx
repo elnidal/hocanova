@@ -95,7 +95,7 @@ export default function App() {
     const hasNext = unit.days.some(d => d.day === screen.day + 1)
     return wrap(<Lesson key={day.day} day={day} items={lessonCtx.items} qIndex={lessonCtx.qIndex} state={state} dispatch={dispatch}
       softCapped={overSoftCap(state.doneDays, Date.now())}
-      onExit={() => setScreen('home')} onNext={hasNext ? () => startLesson(screen.day + 1) : null} />)
+      onExit={() => setScreen('home')} onNext={hasNext ? () => startLesson(screen.day + 1) : null} nextDay={unit.days.find(d => d.day === screen.day + 1)} />)
   }
   if (screen === 'wordlist') return wrap(<WordList units={index.units.filter(u => u.dayCount)} startUnit={unit.unit} onExit={() => setScreen('home')} />)
   if (screen.name === 'mistakes') return wrap(<Mistakes state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} onFlash={deck => setScreen({ name: 'flash', deck })} onExit={() => setScreen('home')} />)
