@@ -155,21 +155,19 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
       )}
 
       {placement && (
-        <section className="tools" aria-label="Araçlar">
-          <div className="tools-head"><div className="eyebrow">Araçlar</div><span className="muted small">İstediğin zaman</span></div>
-          <div className="tool-grid">
-            <button className="tool accent" onClick={onMini}><b>Mini LGS</b><span>10 soru · 15 dk{mini ? ` · son net ${fmtNet(mini.last)}` : ' · netini hesaplar'}</span></button>
-            <button className="tool" onClick={() => onRepair()}><b>Tamir seti</b><span>Denemede kaybettiğin üniteler · 5'er soru</span></button>
-            {Object.values(progress.items).some(it => it.status !== 'new') && <button className="tool" onClick={() => onFlash()}><b>Hızlı kart</b><span>2 dakikalık kart turu</span></button>}
-            {Object.keys(state.doneDays).length > 0 && <button className="tool" onClick={onExam}><b>Sınav Dili</b><span>LGS soru tipleri · 24 ders</span></button>}
-            {mistakesOpen > 0 && <button className="tool" onClick={onMistakes}><b>Yanlış defterim</b><span>{mistakesOpen} soru: doğrusu ve nedeni</span></button>}
-            <button className="tool" onClick={onWordList}><b>Kelime listesi</b><span>Ünite ünite · PDF</span></button>
-            <button className="tool" onClick={onReport}><b>Veli raporu</b><span>Son 7 gün · paylaş</span></button>
+        <details className="card unitpick tools-fold">
+          <summary><b>Araçlar</b> <span className="muted small">· Mini LGS, tamir, kart, liste</span></summary>
+          <div className="tool-list">
+            <button className="tool" onClick={onMini}><b>Mini LGS</b><span>10 soru · 15 dk{mini ? ` · son net ${fmtNet(mini.last)}` : ''}</span></button>
+            <button className="tool" onClick={() => onRepair()}><b>Tamir seti</b><span>5'er soru</span></button>
+            {Object.values(progress.items).some(it => it.status !== 'new') && <button className="tool" onClick={() => onFlash()}><b>Hızlı kart</b><span>2 dk</span></button>}
+            {Object.keys(state.doneDays).length > 0 && <button className="tool" onClick={onExam}><b>Sınav Dili</b><span>24 ders</span></button>}
+            {mistakesOpen > 0 && <button className="tool" onClick={onMistakes}><b>Yanlış defterim</b><span>{mistakesOpen} soru</span></button>}
+            <button className="tool" onClick={onWordList}><b>Kelime listesi</b><span>PDF</span></button>
+            <button className="tool" onClick={onReport}><b>Veli raporu</b><span>Son 7 gün</span></button>
           </div>
-        </section>
+        </details>
       )}
-
-      {placement && !state.profile?.nick && Object.keys(state.doneDays).length > 0 && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
 
       {readyChecks.map(({ sec }) => (
         <section className="card slim" key={sec.id}>
@@ -208,8 +206,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
 
 
       <details className="card unitpick">
-        <summary><b>Hesabım</b> <span className="muted small">· takma ad, kayıt, sıfırlama</span></summary>
-        {placement && (state.profile?.nick || Object.keys(state.doneDays).length === 0) && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
+        <summary><b>Hesabım</b> <span className="muted small">{state.profile?.nick ? `· ${state.profile.nick}${state.profile.group ? ` · ${state.profile.group}` : ''}` : '· takma ad ekle'}</span></summary>
+        {placement && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
         <AccountCard account={account} />
         <button type="button" className="skip" onClick={onTour}>Kısa tanıtımı izle</button>
         <a className="linkbtn" href="#giris">Öğretmen / veli girişi</a>

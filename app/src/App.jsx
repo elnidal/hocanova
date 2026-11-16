@@ -144,8 +144,14 @@ export default function App() {
         ? dispatch({ type: 'weekly', key: screen.key, result })
         : dispatch({ type: 'unitQuiz', unit: unit.unit, phase: screen.kind, result })} />)
   }
-  if (screen.name === 'mini') return wrap(<MiniLgs index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} onRepair={startRepair} onExit={() => setScreen('home')} />)
-  if (screen.name === 'repair') return wrap(<Repair key={(screen.units || []).join()} index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} startUnits={screen.units} onExit={() => setScreen('home')} />)
+  if (screen.name === 'mini') {
+    const next = openStep()
+    return wrap(<MiniLgs index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} nextStep={next} onContinue={() => runStep(next)} onExit={() => setScreen('home')} />)
+  }
+  if (screen.name === 'repair') {
+    const next = openStep()
+    return wrap(<Repair key={(screen.units || []).join()} index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} startUnits={screen.units} nextStep={next} onContinue={() => runStep(next)} onExit={() => setScreen('home')} />)
+  }
   if (screen === 'exam') return wrap(<ExamCourse index={index} state={state} dispatch={dispatch} onExit={() => setScreen('home')} />)
   if (screen.name === 'flash') return wrap(<Flash index={index} state={state} dispatch={dispatch} startDeck={screen.deck} onExit={() => setScreen('home')} />)
   if (screen === 'report') return wrap(<ParentReport index={index} state={state} dispatch={dispatch} onExit={() => setScreen("home")} />)

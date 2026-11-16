@@ -1,19 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { shuffleOptions, isCorrect, wrongReason } from '../engine'
-import { pickMini, scoreMini, weakUnits, fmtNet, miniTrend, MINI_SECS } from '../lgsMini.js'
+import { pickMini, scoreMini, fmtNet, miniTrend, MINI_SECS } from '../lgsMini.js'
+import { miniResultCopy, stepCta, unitSlip } from '../sessionCoach.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
 import RichText from '../components/RichText.jsx'
 
 const mmss = s => `${Math.floor(s / 60)}:${String(Math.max(0, s) % 60).padStart(2, '0')}`
-
-const coachFor = r => r.net >= 9 ? 'Muhteşem! Bu netle İngilizce senin güçlü dersin. Şimdi hız ve dikkat zamanı.'
-  : r.net >= 7 ? 'Çok iyi bir net! Kaybettiğin sorular hangi ünitede, aşağıda görüyorsun; oraya küçük bir tamir yeter.'
-  : r.net >= 4 ? 'İyi bir başlangıç. Kayıpların birkaç üniteye toplanmış; tamir setiyle onları kapatalım.'
-  : 'Deneme bir fotoğraf, karne değil. Nereden başlayacağımızı artık biliyoruz; tamir setiyle adım adım çıkacağız 💪'
+const slipLabel = r => [r.y ? `${r.y} yanlış` : '', r.b ? `${r.b} boş` : '', r.thin ? 'az soru' : ''].filter(Boolean).join(' · ')
 
 // Mini LGS: 10 LGS tarzı soru, 15 dk geri sayım, boş bırakma serbest, sonda net ve ünite dökümü.
-export default function MiniLgs({ index, state, qIndex, items, dispatch, onRepair, onExit }) {
+export default function MiniLgs({ index, state, qIndex, items, dispatch, onExit, nextStep, onContinue }) {
   const avail = index.units.filter(u => u.dayCount)
   const history = state.miniLgs || []
   const trend = miniTrend(history)
@@ -82,36 +79,45 @@ export default function MiniLgs({ index, state, qIndex, items, dispatch, onRepai
   )
 
   if (result) {
-    const weak = weakUnits(result.byUnit)
     const wrong = list.filter(q => answers[q.id] != null && answers[q.id] >= 0 && !isCorrect(q, answers[q.id]))
     const prev = history.length >= 2 ? history[history.length - 2] : null
+    const step = nextStep && nextStep.key !== 'mini' ? nextStep : null
+    const copy = miniResultCopy({
+      d: result.d, n: result.n, byUnit: result.byUnit,
+      missed: wrong.map(q => items[q.itemId]?.display?.replace(/[.\s]+$/, '')).filter(Boolean),
+      nextTitle: step?.title || null,
+    })
+    const slips = unitSlip(result.byUnit)
     return (
-      <div className="wrap">
-        <div className="eyebrow">Mini LGS · sonuç</div>
-        <h1>İngilizce netin: {fmtNet(result.net)}</h1>
-        <section className="card stats">
-          <div className="stat"><b>{result.d}</b><span>doğru</span></div>
-          <div className="stat"><b>{result.y}</b><span>yanlış</span></div>
-          <div className="stat"><b>{result.b}</b><span>boş</span></div>
-          <div className="stat"><b>{mmss(result.secs)}</b><span>süre</span></div>
+      <div className="wrap finish">
+        <div className="finish-head">
+          <div className="eyebrow">Mini LGS</div>
+          <h2>Deneme bitti</h2>
+        </div>
+        <section className="card report">
+          <div className="eyebrow">Bu denemenin sayımı</div>
+          <div className={`finish-hero${copy.solid ? ' good' : ''}`}>
+            <div>
+              <b>{fmtNet(result.net)}</b>
+              <span>net</span>
+            </div>
+            <div className="finish-tom">
+              <b>{result.d}<small>/{result.n}</small></b>
+              <span>doğru</span>
+            </div>
+          </div>
+          <ul>
+            {slips.map(r => (
+              <li key={r.unit}>
+                <span className="rep-word"><b>Ünite {r.unit}</b> <span className="muted" lang="en">{unitTitle(r.unit)}</span></span>
+                <span className={r.slipped ? 'miss' : 'hit'}>{r.slipped ? slipLabel(r) : 'hepsi doğru'}</span>
+              </li>
+            ))}
+          </ul>
         </section>
-        {prev && <p className="muted small">Bir önceki denemede {fmtNet(prev.net)} net yapmıştın{result.net > prev.net ? ` · +${fmtNet(Math.round((result.net - prev.net) * 100) / 100)} ilerleme 🎉` : ''}.</p>}
-        {result.y > 0 && <p className="muted small">{result.y} yanlışın {fmtNet(Math.round(result.y / 3 * 100) / 100)} doğruyu götürdü. Elemeyle iki şıkka indirdiysen işaretle; hiç fikrin yoksa boş bırakmak daha güvenli.</p>}
-        <Coach text={coachFor(result)} />
-        <section className="card">
-          <div className="eyebrow">Ünite ünite</div>
-          {Object.entries(result.byUnit).sort(([a], [b]) => a - b).map(([u, r]) => (
-            <p key={u} className="small"><b>Ünite {u}</b> <span lang="en">{unitTitle(u)}</span> · {r.d} doğru{r.y ? ` · ${r.y} yanlış` : ''}{r.b ? ` · ${r.b} boş` : ''}</p>
-          ))}
-        </section>
-        {weak.length > 0 && (
-          <section className="card today">
-            <div className="eyebrow">Sıradaki adım</div>
-            <h2>Tamir seti: Ünite {weak.join(', ')}</h2>
-            <p className="muted">Ünite başına 5 soru · anında geri bildirim · yaklaşık {weak.length * 2} dk</p>
-            <button className="btn" onClick={() => onRepair(weak)}>Tamire başla →</button>
-          </section>
-        )}
+        <p className="muted small">Süre {mmss(result.secs)}.{result.y > 0 ? ` ${result.y} yanlış, ${fmtNet(Math.round(result.y / 3 * 100) / 100)} doğruyu götürdü. İki şıkka indirdiysen işaretle; hiç fikrin yoksa boş bırakmak daha güvenli.` : ''}</p>
+        {prev && <p className="muted small">Bir önceki deneme {fmtNet(prev.net)} netti. Bu deneme {fmtNet(result.net)} net.</p>}
+        <Coach text={copy.text} />
         {wrong.length > 0 && (
           <details className="card review-wrong">
             <summary><b>Yanlışlarını gözden geçir ({wrong.length})</b> <span className="muted small">doğrusu ve kısa açıklama</span></summary>
@@ -127,7 +133,10 @@ export default function MiniLgs({ index, state, qIndex, items, dispatch, onRepai
             ))}
           </details>
         )}
-        <button className="btn ghost" onClick={onExit}>Ana ekrana dön</button>
+        <div className="finish-actions">
+          {step && <div className="finish-secondary"><button className="btn ghost" onClick={onExit}>← Ana ekran</button></div>}
+          <button className="btn" onClick={step ? onContinue : onExit}>{step ? stepCta(step) : 'Ana ekrana dön'}</button>
+        </div>
       </div>
     )
   }
