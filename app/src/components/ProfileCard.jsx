@@ -12,13 +12,13 @@ export default function ProfileCard({ profile, onSave }) {
     <p className="muted small">Takma ad: <b>{profile.nick}</b>{profile.group ? ` · Sınıf: ${profile.group}` : ''} · <button className="linkbtn inline" onClick={() => setEditing(true)}>değiştir</button></p>
   )
   return (
-    <section className="card">
+    <section className="card profile">
       <div className="eyebrow">Seni tanıyalım</div>
       <h3>Takma adın ne olsun?</h3>
       <p className="muted small">Öğretmenin ilerlemeni görebilsin diye. Gerçek adın olmak zorunda değil.</p>
       <input className="field" maxLength={NICK_MAX} placeholder="Takma ad" value={nick} onChange={e => setNick(e.target.value)} />
       <input className="field" maxLength={GROUP_MAX} placeholder="Sınıf kodu (öğretmenin verdiyse)" value={group} onChange={e => setGroup(e.target.value)} />
-      <button className="btn" disabled={!isValidProfile(clean)} onClick={() => { onSave(clean); setEditing(false) }}>Kaydet</button>
+      <button className="btn ghost" disabled={!isValidProfile(clean)} onClick={() => { onSave(clean); setEditing(false) }}>Kaydet</button>
     </section>
   )
 }

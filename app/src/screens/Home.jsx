@@ -55,10 +55,15 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
   const unitsWithDays = index.units.filter(u => u.dayCount)
 
   return (
-    <div className="wrap">
-      <div className="spread">
+    <div className="wrap home">
+      <div className="spread home-top">
         <LogoLockup />
-        {placement && <span className="chip">{streak >= 2 ? `${streak} gün seri · ` : ''}Seviye: {LEVEL[placement.level]}</span>}
+        {placement && (
+          <div className="home-meta">
+            <span className="chip">{streak >= 2 ? `${streak} gün seri · ` : ''}Seviye: {LEVEL[placement.level]}</span>
+            <span className="chip lgs-chip">LGS’ye {daysToLgs(now)} gün</span>
+          </div>
+        )}
       </div>
 
       <Coach text={coachText} />
@@ -68,13 +73,13 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <div className="eyebrow">Bugünkü iş{view.stepCount ? ` · adım ${view.stepNo} / ${view.stepCount}` : ''}</div>
           <h2>{view.goal.title}</h2>
           <p className="why">{view.goal.why}</p>
-          {view.evidence && <p className="why">{view.evidence.text}</p>}
           {firstOpen?.key === 'lesson' && nextDay && (
             <p className="muted">{lessonMinutes(nextDay)} dk · {nextDay.new_items.length ? `${nextDay.new_items.length} yeni ifade` : nextDay.title}</p>
           )}
           {capped && firstOpen?.key === 'lesson' && <p className="softnote">Bugün {newToday} yeni ifade öğrendin. İstersen bugün burada durabilirsin; ders kaydın durur.</p>}
           {firstOpen && <button className="btn" onClick={() => run(firstOpen)}>{stepCta(firstOpen)}</button>}
           {firstOpen?.key === 'pre' && <button className="btn ghost" onClick={() => dispatch({ type: 'unitQuiz', unit: unit.unit, phase: 'preSkipped', result: { now: Date.now() } })}>Giriş ölçümünü şimdilik atla</button>}
+          {view.evidence && <p className="why evidence">{view.evidence.text}</p>}
         </section>
       )}
 
@@ -82,7 +87,6 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         <section className="card plan">
           <div className="plan-top">
             <div><div className="eyebrow">Bugünkü sıra</div><h2>{firstOpen ? `${plan.filter(s => s.done).length} / ${plan.length} tamam` : 'Sıra bitti'}</h2></div>
-            <div className="plan-count"><b>{daysToLgs(now)}</b><span>gün kaldı</span></div>
           </div>
           <div className="pace">
             {pace.mode === 'pace' && (
@@ -101,21 +105,6 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
               </li>
             ))}
           </ol>
-        </section>
-      )}
-
-      {placement && state.profile?.group && <ClassGoalCard code={state.profile.group} />}
-
-      {report && (
-        <section className="card karne" aria-label="Geçen haftanın karnesi">
-          <div className="eyebrow">Geçen haftanın karnesi</div>
-          <div className="karne-stats">
-            <div><b>{report.lessons}</b><span>ders</span></div>
-            <div><b>{report.accuracy == null ? '–' : `%${report.accuracy}`}</b><span>doğru</span></div>
-            <div><b>{report.net == null ? '–' : fmtNet(report.net)}</b><span>Mini LGS net</span></div>
-          </div>
-          <p>{reportText(report)}</p>
-          {report.weakUnit && <button className="btn sm" onClick={() => onRepair([report.weakUnit])}>Ünite {report.weakUnit} tamir seti →</button>}
         </section>
       )}
 
@@ -150,9 +139,24 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
 
       {placement && <GoalCard goal={state.goal} daily={state.daily} onChange={goal => dispatch({ type: 'goal', goal })} />}
 
+      {placement && state.profile?.group && <ClassGoalCard code={state.profile.group} />}
+
+      {report && (
+        <section className="card karne" aria-label="Geçen haftanın karnesi">
+          <div className="eyebrow">Geçen haftanın karnesi</div>
+          <div className="karne-stats">
+            <div><b>{report.lessons}</b><span>ders</span></div>
+            <div><b>{report.accuracy == null ? '–' : `%${report.accuracy}`}</b><span>doğru</span></div>
+            <div><b>{report.net == null ? '–' : fmtNet(report.net)}</b><span>Mini LGS net</span></div>
+          </div>
+          <p>{reportText(report)}</p>
+          {report.weakUnit && <button className="btn ghost sm" onClick={() => onRepair([report.weakUnit])}>Ünite {report.weakUnit} tamir seti →</button>}
+        </section>
+      )}
+
       {placement && (
         <section className="tools" aria-label="Araçlar">
-          <div className="eyebrow">Araçlar</div>
+          <div className="tools-head"><div className="eyebrow">Araçlar</div><span className="muted small">İstediğin zaman</span></div>
           <div className="tool-grid">
             <button className="tool accent" onClick={onMini}><b>Mini LGS</b><span>10 soru · 15 dk{mini ? ` · son net ${fmtNet(mini.last)}` : ' · netini hesaplar'}</span></button>
             <button className="tool" onClick={() => onRepair()}><b>Tamir seti</b><span>Denemede kaybettiğin üniteler · 5'er soru</span></button>

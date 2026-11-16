@@ -102,8 +102,8 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
 
   const phaseNo = PHASES.indexOf(phase) + 1
   const closeStory = () => { setPop(null); setPhase(storyBack); setStoryBack(null) }
-  const head = (title, sub) => (
-    <div className="spread">
+  const head = (title, sub, extra = '') => (
+    <div className={`spread${extra ? ` ${extra}` : ''}`}>
       <button className="btn ghost sm" onClick={storyBack && phase === 'story' ? closeStory : onExit}>← Geri</button>
       <span className="chip">Gün {day.day} · {phaseNo ? `${phaseNo}/${PHASES.length}` : 'isteğe bağlı'}</span>
       <div className="grow"><div className="eyebrow">{sub}</div><h2>{title}</h2></div>
@@ -251,31 +251,43 @@ export default function Lesson({ day, items, state, dispatch, qIndex, onExit, on
   const msg = sessionWrap({ first: stats.first, total: stats.total, missed: weak, nextTitle: nextStep?.title }).text
   const tomorrow = dueCountBy(state.progress, endOfTomorrow(Date.now()))
   const teaser = teaserFor(nextDay)
+  const solid = stats.total > 0 && stats.first / stats.total >= 0.7
   return (
-    <div className="wrap">
-      {head('Bugünün raporu', 'Gün bitti')}
+    <div className="wrap finish">
+      {head('Bugünün raporu', 'Gün bitti', 'finish-head')}
       <section className="card report">
         <div className="eyebrow">{examDay ? 'Sınav provası sonucu' : 'Bugün öğrendiklerin'}</div>
-        {!examDay && <ul>
-          {day.new_items.map(id => (
-            <li key={id}>
-              <span><b>{items[id]?.display}</b> <span className="muted">{items[id]?.meaning_tr}</span></span>
-              <span className={stats.wrong.includes(id) ? 'hot' : ''}>{stats.wrong.includes(id) ? 'ilk denemede kaçtı' : 'ilk denemede doğru'}</span>
-            </li>
-          ))}
-        </ul>}
-        <div className="stats">
-          <div className="stat"><b>{stats.first}/{stats.total}</b><span>ilk denemede doğru</span></div>
-          <div className="stat"><b>{tomorrow}</b><span>yarına kadar tekrar</span></div>
+        <div className={`finish-hero${solid ? ' good' : ''}`}>
+          <div>
+            <b>{stats.first}<small>/{stats.total}</small></b>
+            <span>ilk denemede doğru</span>
+          </div>
+          <div className="finish-tom">
+            <b>{tomorrow}</b>
+            <span>yarına kadar tekrar</span>
+          </div>
         </div>
+        {!examDay && <ul>
+          {day.new_items.map(id => {
+            const miss = stats.wrong.includes(id)
+            return (
+              <li key={id}>
+                <span className="rep-word"><b>{items[id]?.display}</b> <span className="muted">{items[id]?.meaning_tr}</span></span>
+                <span className={miss ? 'miss' : 'hit'}>{miss ? 'ilk denemede kaçtı' : 'ilk denemede doğru'}</span>
+              </li>
+            )
+          })}
+        </ul>}
       </section>
       {leftoverTips.map((t, i) => <TipView key={i} tip={t} />)}
       <Coach text={msg} />
       {teaser && <aside className="card teaser"><div className="eyebrow">{teaser.kind === 'exam' ? 'Yarın' : 'Yarınki derste'}</div><p>{teaser.text}</p></aside>}
       {softCapped && <p className="softnote">Bugün çok yeni ifade öğrendin! Beyin dinlenirken öğrendiklerini pekiştirir; yarınki tekrar çok işe yarayacak. İstersen yine de devam edebilirsin.</p>}
-      <div className="row">
-        <button className="btn ghost" onClick={onExit}>← Ana ekran</button>
-        {cardFirst && !hasMini && day.story?.length > 0 && <button className="btn ghost" onClick={openStory}>Günün hikâyesini oku</button>}
+      <div className="finish-actions">
+        <div className="finish-secondary">
+          <button className="btn ghost" onClick={onExit}>← Ana ekran</button>
+          {cardFirst && !hasMini && day.story?.length > 0 && <button className="btn ghost" onClick={openStory}>Günün hikâyesini oku</button>}
+        </div>
         {nextStep
           ? <button className="btn" onClick={onContinue}>{stepCta(nextStep)}</button>
           : nextStep === undefined && onNext && <button className="btn" onClick={onNext}>{softCapped ? 'Yine de devam et →' : 'Bir tane daha →'}</button>}
