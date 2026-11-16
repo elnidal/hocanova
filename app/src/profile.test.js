@@ -8,6 +8,7 @@ test('takma ad kırpılır, boşluklar tekleşir, 24 karakterle sınırlanır', 
 })
 test('sınıf kodu büyük harf ve boşluksuz', () => {
   assert.equal(cleanProfile({ nick: 'Ali', group: ' 8 a ' }).group, '8A')
+  assert.equal(cleanProfile({ nick: 'Ali', group: '8a-k7qx' }).group, '8A-K7QX')
 })
 test('geçerlilik: en az 2 karakterlik takma ad', () => {
   assert.equal(isValidProfile(cleanProfile({ nick: ' a ' })), false)

@@ -142,6 +142,40 @@ export function recentEvidence({ log = [], now, days = RECENT_DAYS }) {
   return { enough: true, text }
 }
 
+/** Ünite dökümü. 3'ten az soru tanı değildir. */
+export function unitSlip(byUnit = {}) {
+  return Object.entries(byUnit || {})
+    .map(([u, r]) => {
+      const d = r?.d || 0, y = r?.y || 0, b = r?.b || 0
+      const n = d + y + b
+      return { unit: +u, d, y, b, n, slipped: y + b > 0, thin: n < MIN_ANSWERS }
+    })
+    .filter(r => Number.isFinite(r.unit))
+    .sort((a, b) => a.unit - b.unit)
+}
+
+/** Mini LGS sonucu. Net bir sayım; güçlü ya da zayıf ders demez. İnce ünite ayrıca söylenir. */
+export function miniResultCopy({ d = 0, n = 0, byUnit, missed = [], nextTitle = null }) {
+  const wrap = sessionWrap({ first: d, total: n, missed, nextTitle })
+  const thin = unitSlip(byUnit).filter(r => r.slipped && r.thin)
+    .map(r => `Ünite ${r.unit}: ${r.n} soru. Tanı sayılmaz.`)
+  return {
+    text: `${wrap.text} ${thin.join(' ')}`.replace(/\s+/g, ' ').trim(),
+    enough: wrap.enough,
+    solid: wrap.enough && n > 0 && d / n >= 0.7,
+  }
+}
+
+/** Tamir sonucu. sessionWrap ile aynı dil; "güzel iş" ya da tanı yok. */
+export function repairResultCopy({ ok = 0, total = 0, missed = [], nextTitle = null }) {
+  const wrap = sessionWrap({ first: ok, total, missed, nextTitle })
+  return {
+    text: wrap.text,
+    enough: wrap.enough,
+    solid: wrap.enough && total > 0 && ok / total >= 0.7,
+  }
+}
+
 export function learnerView({ state, due, nextDay, weekly, unitDone, now, preAvail = false, perSection = 6 }) {
   const away = daysAway(state.daily || {}, now)
   const steps = buildPlan({ state, due, nextDay, weekly, unitDone, now, preAvail, unitNo: state.unit })

@@ -1,4 +1,7 @@
 -- Sınıf hedefi: öğretmenin oluşturduğu sınıf kodu + haftalık ortak soru hedefi. Supabase → SQL Editor'de bir kez çalıştır.
+-- GÜVENLİK: bu dosyadaki teacher_classes bütün sınıfları listeler, teacher_class_save çakışınca
+-- başka öğretmenin adını ve hedefini ezer. Canlıda ardından supabase/class_goal_codes.sql çalıştır.
+-- O dosyadan SONRA bu iki işlevi tekrar çalıştırma; güvensiz tanım geri gelir.
 -- teacher.sql önceden çalıştırılmış olmalı (is_teacher işlevi). Yalnız ekleme yapar; mevcut tablolara dokunmaz.
 --
 -- Gizlilik: öğrenci yalnız KENDİ profilindeki koda ait özeti görebilir (başka kodu deneyemez).

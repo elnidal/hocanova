@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { speak } from '../tts.js'
 import { pickRepair, weakUnits, REPAIR_MAX_UNITS } from '../lgsMini.js'
+import { repairResultCopy, stepCta } from '../sessionCoach.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
 import Run from '../components/Run.jsx'
 
 // Deneme sonrası tamir seti: öğrenci yanlış yaptığı üniteleri seçer (ya da Mini LGS'den gelir); ünite başına 5 soru, anında geri bildirim.
-export default function Repair({ index, state, qIndex, items, dispatch, startUnits, onExit }) {
+export default function Repair({ index, state, qIndex, items, dispatch, startUnits, onExit, nextStep, onContinue }) {
   const avail = index.units.filter(u => u.dayCount)
   const lastMini = (state.miniLgs || []).at(-1)
   const [units, setUnits] = useState(() => startUnits?.length ? startUnits : weakUnits(lastMini?.byUnit))
@@ -37,17 +38,44 @@ export default function Repair({ index, state, qIndex, items, dispatch, startUni
 
   if (done || !list.length) {
     const total = list.length
-    const weak = [...new Set(stats.wrong)].map(id => items[id]?.display).filter(Boolean)
+    const shown = [...new Set(stats.wrong)].map(id => items[id]?.display).filter(Boolean)
+    const names = shown.map(s => s.replace(/[.\s]+$/, ''))
+    const step = nextStep && !(nextStep.key === 'repair' && !nextStep.done) ? nextStep : null
+    const copy = repairResultCopy({ ok: stats.ok, total, missed: names, nextTitle: step?.title || null })
     return (
-      <div className="wrap">
-        <div className="eyebrow">Tamir seti · bitti</div>
-        <div className="card result">
-          <div className="row"><span className="big">{stats.ok}<small>/{total}</small></span><div><div className="eyebrow">İlk denemede</div><h2>{stats.ok === total ? 'Tamir tamam!' : 'Güzel iş'}</h2></div></div>
+      <div className="wrap finish">
+        <div className="finish-head">
+          <div className="eyebrow">Tamir seti</div>
+          <h2>Tamir bitti</h2>
         </div>
-        <Coach text={weak.length
-          ? `${weak.slice(0, 3).join(', ')} hâlâ biraz oynak. Onları tekrar planına koydum; birkaç gün içinde farklı sorularla döneceğim.`
-          : 'Hepsini yerine oturttun! Bir sonraki Mini LGS\'de farkı göreceksin.'} />
-        <button className="btn" onClick={onExit}>Ana ekran</button>
+        <section className="card report">
+          <div className="eyebrow">Bu setin sayımı</div>
+          <div className={`finish-hero${copy.solid ? ' good' : ''}`}>
+            <div>
+              <b>{stats.ok}<small>/{total}</small></b>
+              <span>ilk denemede doğru</span>
+            </div>
+          </div>
+          {total > 0 && <ul>
+            {shown.length === 0
+              ? <li><span className="rep-word">Bu sette ilk denemede kaçan ifade yok.</span></li>
+              : shown.map(w => (
+                <li key={w}>
+                  <span className="rep-word"><b>{w}</b></span>
+                  <span className="miss">ilk denemede kaçtı</span>
+                </li>
+              ))}
+          </ul>}
+        </section>
+        <Coach text={copy.text} />
+        <div className="finish-actions">
+          <div className="finish-secondary">
+            {step && <button className="btn ghost" onClick={onExit}>← Ana ekran</button>}
+          </div>
+          {step
+            ? <button className="btn" onClick={onContinue}>{stepCta(step)}</button>
+            : <button className="btn" onClick={onExit}>Ana ekrana dön</button>}
+        </div>
       </div>
     )
   }

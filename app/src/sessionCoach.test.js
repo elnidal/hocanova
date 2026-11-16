@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { buildPlan, todayGoal, sessionWrap, placementLine, placementSummary, recentEvidence, coachLead } from './sessionCoach.js'
+import { buildPlan, todayGoal, sessionWrap, placementLine, placementSummary, recentEvidence, coachLead, miniResultCopy, repairResultCopy } from './sessionCoach.js'
 import { coachPlan } from './coachPlan.js'
 
 const now = new Date(2026, 10, 9, 18).getTime()
@@ -89,4 +89,32 @@ test('son 7 gün: beşten az cevapta yargı yok, üç yanlış sayım olarak yaz
   assert.match(ev.text, /9 cevabın 6 tanesi doğru/)
   assert.match(ev.text, /Ünite 2 içinde \(3\)/)
   assert.match(ev.text, /tanı değil/)
+})
+
+test('mini sonuç: sayım ve ince kanıt, güçlü ders iddiası yok', () => {
+  const by = { 1: { d: 1, y: 1, b: 0 }, 3: { d: 3, y: 0, b: 1 } }
+  const r = miniResultCopy({ d: 4, n: 6, byUnit: by, missed: ['busy'], nextTitle: 'Gün 4 dersini yap' })
+  assert.match(r.text, /4\/6 ilk denemede doğru/)
+  assert.match(r.text, /busy/)
+  assert.match(r.text, /Ünite 1: 2 soru/)
+  assert.match(r.text, /Tanı sayılmaz/)
+  assert.doesNotMatch(r.text, /Ünite 3/)
+  assert.match(r.text, /Sıradaki adım: Gün 4 dersini yap/)
+  assert.doesNotMatch(r.text, /güçlü ders|zayıf|muhteşem|oynak|kaybettin|Güzel iş/)
+  assert.equal(r.solid, false)
+  const thin = miniResultCopy({ d: 1, n: 2, byUnit: { 1: { d: 1, y: 1, b: 0 } }, missed: ['busy'], nextTitle: null })
+  assert.match(thin.text, /erken/)
+  assert.equal(thin.enough, false)
+  assert.equal(thin.solid, false)
+})
+
+test('tamir sonucu: kaçanlar ve sıradaki adım, teselli yok', () => {
+  const t = repairResultCopy({ ok: 1, total: 5, missed: ['refuse', 'fashionable'], nextTitle: 'Gün 4 dersini yap' })
+  assert.match(t.text, /1\/5 ilk denemede doğru/)
+  assert.match(t.text, /refuse, fashionable/)
+  assert.match(t.text, /Sıradaki adım: Gün 4 dersini yap/)
+  assert.doesNotMatch(t.text, /Güzel iş|oynak|yerine oturttun|zayıf/)
+  assert.equal(t.solid, false)
+  assert.match(repairResultCopy({ ok: 0, total: 0, missed: [], nextTitle: null }).text, /sonuç çıkaramam/)
+  assert.equal(repairResultCopy({ ok: 4, total: 5, missed: ['busy'], nextTitle: null }).solid, true)
 })
