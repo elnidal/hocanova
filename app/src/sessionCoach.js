@@ -106,17 +106,19 @@ export const stepCta = step => (step && CTA[step.key]) || 'Başla'
 
 /**
  * Bu oturumun sayımı ve sıradaki plan adımı.
- * total < 3 ise yargı yok. missed yalnız bu oturumda ilk denemede kaçan görünen adlar.
+ * total < 3 ise yargı yok. missed görünen adlar.
+ * once: Mini LGS ve tamir gibi tek haklı oturum. Ders sonunda false kalır; orada ilk deneme anlamlıdır.
  */
-export function sessionWrap({ first = 0, total = 0, missed = [], nextTitle = null }) {
+export function sessionWrap({ first = 0, total = 0, missed = [], nextTitle = null, once = false }) {
   const names = missed.filter(Boolean).slice(0, 3)
+  const right = once ? 'doğru' : 'ilk denemede doğru'
+  const slipped = once ? 'Kaçanlar' : 'İlk denemede kaçanlar'
+  const none = once ? ' Bu oturumda kaçan ifade yok.' : ' Bu oturumda ilk denemede kaçan ifade yok.'
   let head
   if (!total) head = 'Bu oturumda kayıtlı cevap yok; sonuç çıkaramam.'
-  else if (total < MIN_ANSWERS) head = `${first}/${total} ilk denemede doğru. Bu kadar cevapla bir yargıya varmak için erken.`
-  else head = `${first}/${total} ilk denemede doğru.`
-  const miss = !total ? ''
-    : names.length ? ` İlk denemede kaçanlar: ${names.join(', ')}.`
-    : ' Bu oturumda ilk denemede kaçan ifade yok.'
+  else if (total < MIN_ANSWERS) head = `${first}/${total} ${right}. Bu kadar cevapla bir yargıya varmak için erken.`
+  else head = `${first}/${total} ${right}.`
+  const miss = !total ? '' : names.length ? ` ${slipped}: ${names.join(', ')}.` : none
   const next = nextTitle ? ` Sıradaki adım: ${nextTitle}.` : ' Bugünkü planda açık adım kalmadı.'
   return { text: head + miss + next, enough: total >= MIN_ANSWERS, nextTitle: nextTitle || null }
 }
@@ -154,9 +156,9 @@ export function unitSlip(byUnit = {}) {
     .sort((a, b) => a.unit - b.unit)
 }
 
-/** Mini LGS sonucu. Net bir sayım; güçlü ya da zayıf ders demez. İnce ünite ayrıca söylenir. */
+/** Mini LGS sonucu. Her sorunun tek hakkı var; "ilk deneme" denmez. İnce ünite ayrıca söylenir. */
 export function miniResultCopy({ d = 0, n = 0, byUnit, missed = [], nextTitle = null }) {
-  const wrap = sessionWrap({ first: d, total: n, missed, nextTitle })
+  const wrap = sessionWrap({ first: d, total: n, missed, nextTitle, once: true })
   const thin = unitSlip(byUnit).filter(r => r.slipped && r.thin)
     .map(r => `Ünite ${r.unit}: ${r.n} soru. Tanı sayılmaz.`)
   return {
@@ -166,9 +168,9 @@ export function miniResultCopy({ d = 0, n = 0, byUnit, missed = [], nextTitle = 
   }
 }
 
-/** Tamir sonucu. sessionWrap ile aynı dil; "güzel iş" ya da tanı yok. */
+/** Tamir sonucu. Her soru bir kez sorulur; "ilk deneme" denmez. "güzel iş" ya da tanı yok. */
 export function repairResultCopy({ ok = 0, total = 0, missed = [], nextTitle = null }) {
-  const wrap = sessionWrap({ first: ok, total, missed, nextTitle })
+  const wrap = sessionWrap({ first: ok, total, missed, nextTitle, once: true })
   return {
     text: wrap.text,
     enough: wrap.enough,

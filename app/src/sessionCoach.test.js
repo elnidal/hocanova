@@ -66,6 +66,7 @@ test('oturum sonu: kanıt yok, az cevap ve sıradaki adım', () => {
   assert.match(done.text, /7\/10 ilk denemede doğru/)
   assert.match(done.text, /busy, honest/)
   assert.match(done.text, /Sıradaki adım: Gün 2 dersini yap/)
+  assert.match(done.text, /İlk denemede kaçanlar/)
   assert.doesNotMatch(done.text, /ustalaş|artık senin|çok iyi|zayıf yanın/)
 })
 
@@ -93,8 +94,9 @@ test('son 7 gün: beşten az cevapta yargı yok, üç yanlış sayım olarak yaz
 
 test('mini sonuç: sayım ve ince kanıt, güçlü ders iddiası yok', () => {
   const by = { 1: { d: 1, y: 1, b: 0 }, 3: { d: 3, y: 0, b: 1 } }
-  const r = miniResultCopy({ d: 4, n: 6, byUnit: by, missed: ['busy'], nextTitle: 'Gün 4 dersini yap' })
-  assert.match(r.text, /4\/6 ilk denemede doğru/)
+  const r = miniResultCopy({ d: 4, n: 10, byUnit: by, missed: ['busy', 'trust'], nextTitle: 'Gün 4 dersini yap' })
+  assert.match(r.text, /4\/10 doğru\. Kaçanlar: busy, trust\./)
+  assert.doesNotMatch(r.text, /ilk deneme/)
   assert.match(r.text, /busy/)
   assert.match(r.text, /Ünite 1: 2 soru/)
   assert.match(r.text, /Tanı sayılmaz/)
@@ -103,6 +105,9 @@ test('mini sonuç: sayım ve ince kanıt, güçlü ders iddiası yok', () => {
   assert.doesNotMatch(r.text, /güçlü ders|zayıf|muhteşem|oynak|kaybettin|Güzel iş/)
   assert.equal(r.solid, false)
   const thin = miniResultCopy({ d: 1, n: 2, byUnit: { 1: { d: 1, y: 1, b: 0 } }, missed: ['busy'], nextTitle: null })
+  assert.match(thin.text, /1\/2 doğru\./)
+  assert.match(thin.text, /Kaçanlar: busy/)
+  assert.doesNotMatch(thin.text, /ilk deneme/)
   assert.match(thin.text, /erken/)
   assert.equal(thin.enough, false)
   assert.equal(thin.solid, false)
@@ -110,7 +115,8 @@ test('mini sonuç: sayım ve ince kanıt, güçlü ders iddiası yok', () => {
 
 test('tamir sonucu: kaçanlar ve sıradaki adım, teselli yok', () => {
   const t = repairResultCopy({ ok: 1, total: 5, missed: ['refuse', 'fashionable'], nextTitle: 'Gün 4 dersini yap' })
-  assert.match(t.text, /1\/5 ilk denemede doğru/)
+  assert.match(t.text, /1\/5 doğru\. Kaçanlar: refuse, fashionable\./)
+  assert.doesNotMatch(t.text, /ilk deneme/)
   assert.match(t.text, /refuse, fashionable/)
   assert.match(t.text, /Sıradaki adım: Gün 4 dersini yap/)
   assert.doesNotMatch(t.text, /Güzel iş|oynak|yerine oturttun|zayıf/)

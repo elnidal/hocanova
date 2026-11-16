@@ -53,16 +53,16 @@ export default function Repair({ index, state, qIndex, items, dispatch, startUni
           <div className={`finish-hero${copy.solid ? ' good' : ''}`}>
             <div>
               <b>{stats.ok}<small>/{total}</small></b>
-              <span>ilk denemede doğru</span>
+              <span>doğru</span>
             </div>
           </div>
           {total > 0 && <ul>
             {shown.length === 0
-              ? <li><span className="rep-word">Bu sette ilk denemede kaçan ifade yok.</span></li>
+              ? <li><span className="rep-word">Bu sette kaçan ifade yok.</span></li>
               : shown.map(w => (
                 <li key={w}>
                   <span className="rep-word"><b>{w}</b></span>
-                  <span className="miss">ilk denemede kaçtı</span>
+                  <span className="miss">kaçtı</span>
                 </li>
               ))}
           </ul>}
