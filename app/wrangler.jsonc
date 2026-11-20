@@ -8,8 +8,19 @@
     { "pattern": "www.lgsingilizce.app", "custom_domain": true }
   ],
   "compatibility_date": "2026-10-23",
+  "main": "worker.js",
+  // Akşam hatırlatması: 17.00 UTC = 20.00 İstanbul. Gizli değerler: npx wrangler secret bulk .dev.vars
+  "triggers": { "crons": ["0 17 * * *"] },
+  "vars": {
+    "SUPABASE_URL": "https://psudzduyfkwujxnpdadu.supabase.co",
+    "SUPABASE_ANON": "sb_publishable_MVyJeQvbugcErc7-k7Xd9Q_noVoAIMV",
+    "VAPID_PUBLIC": "BF5vKLmRuSj1beAaH3R0nWayjBiDEaFlMjFWLeWTIRDdg5ntocd4p66yoNWmFoMeX9RqtW_miKhPPZYgLT2lloA",
+    "VAPID_SUBJECT": "https://lgsingilizce.app"
+  },
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"],
     "not_found_handling": "single-page-application"
   }
 }

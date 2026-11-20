@@ -20,7 +20,7 @@ export default defineConfig({
           { src: 'icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
-      workbox: { globPatterns: ['**/*.{js,css,html,json,woff2,png,svg}'] },
+      workbox: { globPatterns: ['**/*.{js,css,html,json,woff2,png,svg}'], importScripts: ['push-sw.js'] },
     }),
   ],
 })

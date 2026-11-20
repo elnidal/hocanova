@@ -11,6 +11,7 @@ import { learnerView, stepCta } from '../sessionCoach.js'
 import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
 import ClassGoalCard from '../components/ClassGoalCard.jsx'
+import ReminderCard from '../components/ReminderCard.jsx'
 import { placementExpectationLabel } from '../firstUse.js'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
@@ -140,6 +141,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
       {placement && <GoalCard goal={state.goal} daily={state.daily} onChange={goal => dispatch({ type: 'goal', goal })} />}
 
       {placement && state.profile?.group && <ClassGoalCard code={state.profile.group} />}
+      {placement && Object.keys(state.doneDays).length > 0 && <ReminderCard />}
 
       {report && (
         <section className="card karne" aria-label="Geçen haftanın karnesi">
@@ -209,6 +211,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         <summary><b>Hesabım</b> <span className="muted small">{state.profile?.nick ? `· ${state.profile.nick}${state.profile.group ? ` · ${state.profile.group}` : ''}` : '· takma ad ekle'}</span></summary>
         {placement && <ProfileCard profile={state.profile} onSave={profile => dispatch({ type: 'profile', profile })} />}
         <AccountCard account={account} />
+        <ReminderCard compact />
         <button type="button" className="skip" onClick={onTour}>Kısa tanıtımı izle</button>
         <a className="linkbtn" href="#giris">Öğretmen / veli girişi</a>
         <button className="linkbtn" onClick={() => { if (confirm('Tüm ilerleme bu cihazdan silinsin mi?')) dispatch({ type: 'reset' }) }}>Verileri sıfırla</button>

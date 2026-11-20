@@ -410,3 +410,4 @@ h1{letter-spacing:-.025em}h2{letter-spacing:-.02em}
   .home .plan .plan-steps li.done .plan-dot{color:#11143A}
   .finish-actions > .btn,.home .card.today:not(.growth) .btn:not(.ghost){color:#11143A}
 }
+.reminder p{margin:6px 0 10px}.reminder.compact{margin:10px 0}.reminder.compact p{margin:0}
