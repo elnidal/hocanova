@@ -33,3 +33,24 @@ test('kelime listesi: ilk N gün ve tüm ünite', () => {
   assert.deepEqual(all.map(g => g.title), ['Gün 1 · bir', 'Gün 2 · iki', 'Diğer ifadeler'])
   assert.equal(all[1].rows[0].note, 'n')
 })
+
+import { streakInfo, novaPassUsed } from './goal.js'
+test('Nova izni: haftada bir boş gün seriyi bozmaz, iki boş gün bozar', () => {
+  const at = s => new Date(s + 'T15:00:00').getTime()
+  const d = (...days) => Object.fromEntries(days.map(x => [x, 5]))
+  // 20 Kasım 2026 cuma. 18 Kasım boş: izinle köprü
+  assert.deepEqual(streakInfo(d('2026-11-16', '2026-11-17', '2026-11-19', '2026-11-20'), at('2026-11-20')), { n: 4, saved: ['2026-11-18'] })
+  // aynı haftada ikinci boş gün köprülenmez: 19 izinle geçilir, 17'de zincir biter (20 ve 18)
+  assert.deepEqual(streakInfo(d('2026-11-16', '2026-11-18', '2026-11-20'), at('2026-11-20')), { n: 2, saved: ['2026-11-19'] })
+  // iki boş gün üst üste: bozulur
+  assert.equal(streakInfo(d('2026-11-16', '2026-11-19', '2026-11-20'), at('2026-11-20')).n, 2)
+  // farklı haftalarda birer izin
+  assert.deepEqual(streakInfo(d('2026-11-13', '2026-11-15', '2026-11-16', '2026-11-18'), at('2026-11-18')).saved, ['2026-11-17', '2026-11-14'])
+  // bugün henüz çalışılmadı: dünden sayar, bugün izin harcanmaz
+  assert.deepEqual(streakInfo(d('2026-11-18', '2026-11-19'), at('2026-11-20')), { n: 2, saved: [] })
+  // dün boş, bugün de henüz yok: dün izinle köprülenir
+  assert.deepEqual(streakInfo(d('2026-11-17', '2026-11-18'), at('2026-11-20')), { n: 2, saved: ['2026-11-19'] })
+  assert.equal(novaPassUsed(d('2026-11-17', '2026-11-18'), at('2026-11-20')), true)
+  assert.equal(novaPassUsed(d('2026-11-19', '2026-11-20'), at('2026-11-20')), false)
+  assert.deepEqual(streakInfo({}, at('2026-11-20')), { n: 0, saved: [] })
+})

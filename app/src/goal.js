@@ -47,13 +47,31 @@ export function buildWordList(unit, firstDays = null) {
 const DAY_MS = 864e5
 
 // Seri: üst üste çalışılan gün sayısı. Bugün henüz çalışılmadıysa dünden geriye sayılır (gün bitene kadar zincir sürer).
-export function streakOf(daily = {}, now) {
+// Nova izni: her takvim haftasında (pazartesi–pazar) tek bir boş gün seriyi bozmaz; iki boş gün üst üste bozar.
+const dayBefore = t => { const d = new Date(t); d.setDate(d.getDate() - 1); return d.getTime() }
+const weekKey = t => { const d = new Date(t); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return dayStamp(d.getTime()) }
+
+/** { n: seri gün sayısı, saved: Nova izniyle kurtarılan günler (dayStamp, yeniden eskiye) } */
+export function streakInfo(daily = {}, now) {
+  const on = t => daily[dayStamp(t)] > 0
+  const start = on(now) ? now : dayBefore(now)
+  let t = start
   let n = 0
-  let t = now
-  if (!daily[dayStamp(t)]) t -= DAY_MS
-  while (daily[dayStamp(t)] > 0) { n++; t -= DAY_MS }
-  return n
+  const saved = [], weeks = new Set()
+  for (;;) {
+    if (on(t)) { n++; t = dayBefore(t); continue }
+    const prev = dayBefore(t)
+    // bugün henüz çalışılmadıysa, dünkü boş gün de izinle köprülenebilir (gün bitmeden zincir kurtulabilir)
+    if ((n > 0 || t === start) && on(prev) && !weeks.has(weekKey(t))) { saved.push(dayStamp(t)); weeks.add(weekKey(t)); t = prev; continue }
+    break
+  }
+  return { n, saved }
 }
+
+export const streakOf = (daily = {}, now) => streakInfo(daily, now).n
+
+/** Bu hafta Nova izni kullanıldı mı? (Kullanıldıysa bu hafta bir gün daha atlamak seriyi bozar.) */
+export const novaPassUsed = (daily = {}, now) => streakInfo(daily, now).saved.some(s => weekKey(new Date(s + 'T12:00:00').getTime()) === weekKey(now))
 
 // Son kez çalışılandan bu yana geçen gün (hiç çalışılmadıysa null; bugün çalışıldıysa 0).
 export function daysAway(daily = {}, now) {
@@ -69,7 +87,9 @@ export function daysAway(daily = {}, now) {
 export function coachMessage({ daily, goal, due, now, fallback }) {
   const done = todayCount(daily, now)
   const away = daysAway(daily, now)
-  const streak = streakOf(daily, now)
+  const { n: streak, saved } = streakInfo(daily, now)
+  const yesterday = dayStamp(dayBefore(now))
+  if (done === 0 && streak >= 2 && saved[0] === yesterday) return `Dün ara verdin ama Nova izni serini korudu: ${streak} gün 🔥 Bugün azıcık çalışırsan zincir sürüyor.`
   if (done >= goal.target) return `Bugünkü hedefi tamamladın, helal olsun! ${streak >= 2 ? `${streak} gündür aralıksız çalışıyorsun 🔥` : 'Yarın görüşürüz 👋'}`
   if (done > 0) return `Bugün ${done} soru çözdün, güzel gidiyor. Hedefe ${goal.target - done} soru kaldı.`
   if (away != null && away >= 2) return `${away} gündür görüşemedik, sorun değil! Bugün 5 dakikada yetişiriz.`

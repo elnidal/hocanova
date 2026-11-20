@@ -2,7 +2,7 @@ import { counts, dueCount, newItemsToday, overSoftCap, NEW_ITEMS_SOFT_CAP, reten
 import Coach from '../components/Coach.jsx'
 import { LogoLockup } from '../components/Logo.jsx'
 import AccountCard from '../components/AccountCard.jsx'
-import { streakOf } from '../goal.js'
+import { streakOf, novaPassUsed } from '../goal.js'
 import { openMistakeCount } from '../mistakes.js'
 import { weeklyDue, pct } from '../quiz.js'
 import { miniTrend, fmtNet } from '../lgsMini.js'
@@ -60,7 +60,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
         <LogoLockup />
         {placement && (
           <div className="home-meta">
-            <span className="chip">{streak >= 2 ? `${streak} gün seri · ` : ''}Seviye: {LEVEL[placement.level]}</span>
+            <span className="chip" title={novaPassUsed(state.daily, now) ? 'Bu haftanın Nova izni kullanıldı' : 'Haftada bir gün ara verirsen Nova izni serini korur'}>{streak >= 2 ? `${streak} gün seri${novaPassUsed(state.daily, now) ? ' 🛡️' : ''} · ` : ''}Seviye: {LEVEL[placement.level]}</span>
             <span className="chip lgs-chip">LGS’ye {daysToLgs(now)} gün</span>
           </div>
         )}

@@ -10,7 +10,8 @@ const day = n => dayStamp(now - n * 864e5)
 test('seri: bugün çalışılmadıysa dünden sayılır; boşlukta kopar', () => {
   assert.equal(streakOf({ [day(0)]: 3, [day(1)]: 1, [day(2)]: 5 }, now), 3)
   assert.equal(streakOf({ [day(1)]: 1, [day(2)]: 5 }, now), 2)
-  assert.equal(streakOf({ [day(2)]: 5 }, now), 0)
+  assert.equal(streakOf({ [day(2)]: 5 }, now), 1) // dün boş: Nova izni köprüler, bugün çalışırsa zincir sürer
+  assert.equal(streakOf({ [day(3)]: 5 }, now), 0) // iki gün üst üste boş: kopar
   assert.equal(daysAway({ [day(3)]: 1 }, now), 3)
   assert.equal(daysAway({}, now), null)
 })
@@ -23,6 +24,7 @@ test('koç mesajı önceliği', () => {
   assert.match(coachMessage({ ...base, daily: { [day(4)]: 5 } }), /4 gündür/)
   assert.match(coachMessage({ ...base, daily: { [day(1)]: 5, [day(2)]: 5 } }), /2 gündür üst üste/)
   assert.match(coachMessage({ ...base, daily: {}, due: 6 }), /6 ifade/)
+  assert.match(coachMessage({ ...base, daily: { [day(2)]: 5, [day(3)]: 5 } }), /Nova izni serini korudu: 2 gün/)
   assert.equal(coachMessage({ ...base, daily: {} }), 'F')
 })
 
