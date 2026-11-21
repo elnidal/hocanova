@@ -3,6 +3,7 @@ import { loadAllUnits } from '../content.js'
 import Splash from '../components/Splash.jsx'
 import { pct } from '../quiz.js'
 import { buildReport } from '../report.js'
+import ChainStrip from '../components/ChainStrip.jsx'
 import { enabled, createParentLink, revokeParentLinks } from '../supabase.js'
 import { makeToken, shareUrl } from '../parentShare.js'
 
@@ -37,6 +38,9 @@ export default function ParentReport({ index, state, onExit, dispatch, remote = 
           <div className="stat"><b>{r.accuracy == null ? '—' : `%${r.accuracy}`}</b><span>doğru oranı</span></div>
           <div className="stat"><b>{r.streak}</b><span>gün seri</span></div>
         </div>
+
+        <h3>Çalışma zinciri (son 4 hafta)</h3>
+        <ChainStrip daily={state.daily} now={Date.now()} best={state.bestStreak || 0} open />
 
         <h3>Günlük çalışma</h3>
         <div className="week">

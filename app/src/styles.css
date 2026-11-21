@@ -411,3 +411,15 @@ h1{letter-spacing:-.025em}h2{letter-spacing:-.02em}
   .finish-actions > .btn,.home .card.today:not(.growth) .btn:not(.ghost){color:#11143A}
 }
 .reminder p{margin:6px 0 10px}.reminder.compact{margin:10px 0}.reminder.compact p{margin:0}
+.chain summary{list-style:none;cursor:pointer;display:grid;gap:10px}.chain summary::-webkit-details-marker{display:none}
+.chain-head{display:flex;gap:10px;align-items:baseline}.chain-head b{font-family:var(--f-d);font-size:1.3rem;white-space:nowrap}.chain-head span{font-weight:600;font-size:.95rem}
+.chain-row{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin:4px 0}
+.chain-days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:12px;text-align:center;font-size:.72rem;font-weight:700;color:var(--muted)}
+.ring{aspect-ratio:1;max-height:38px;border-radius:50%;border:2.5px solid var(--line);display:grid;place-items:center;font-size:.8rem;font-weight:800;color:#fff;justify-self:center;width:100%;max-width:38px}
+.ring.on{background:var(--mint);border-color:var(--mint)}
+.ring.saved{background:var(--brand-soft);border-color:var(--brand);font-size:.75rem}
+.ring.today:not(.on){border-color:var(--amber);animation:ringpulse 1.6s ease-in-out infinite}
+.ring.future{opacity:.35;border-style:dashed}
+@keyframes ringpulse{50%{box-shadow:0 0 0 5px color-mix(in srgb,var(--amber) 30%,transparent)}}
+@media (prefers-reduced-motion:reduce){.ring.today{animation:none}}
+.chain[open] summary .chain-row{display:none}

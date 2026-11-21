@@ -1,6 +1,9 @@
 // Öğrenci durumu. React ve ağ yok: reducer saf, test edilir.
 import { createProgress, setLevel, recordAnswer, recordFlash, applyUnitCheck } from './engine/index.js'
-import { countAnswer, DEFAULT_GOAL } from './goal.js'
+import { countAnswer, DEFAULT_GOAL, streakOf } from './goal.js'
+
+// Günlük sayaç + en uzun zincir (daily 60 günle sınırlı olduğu için rekor ayrıca saklanır)
+const counted = (s, ts) => { const daily = countAnswer(s.daily, ts); return { daily, bestStreak: Math.max(s.bestStreak || 0, streakOf(daily, ts)) } }
 
 export const initial = () => ({
   progress: createProgress(), placement: null, unit: 1, doneDays: {}, unitChecks: {},
@@ -16,9 +19,9 @@ export function hydrate(saved) {
 export function apply(s, a) {
   switch (a.type) {
     case 'placement': return { ...s, placement: { ...a.result, at: a.now }, progress: setLevel(s.progress, a.result.level) }
-    case 'answer': return { ...s, progress: recordAnswer(s.progress, a.payload), daily: countAnswer(s.daily, a.payload.now) }
-    case 'flash': return { ...s, progress: recordFlash(s.progress, a), daily: countAnswer(s.daily, a.now) }
-    case 'examQ': return { ...s, daily: countAnswer(s.daily, a.now) }
+    case 'answer': return { ...s, progress: recordAnswer(s.progress, a.payload), ...counted(s, a.payload.now) }
+    case 'flash': return { ...s, progress: recordFlash(s.progress, a), ...counted(s, a.now) }
+    case 'examQ': return { ...s, ...counted(s, a.now) }
     case 'examDone': return { ...s, examDone: { ...(s.examDone || {}), [a.id]: { ok: a.ok, n: a.n, at: a.now } } }
     case 'unitQuiz': return { ...s, unitQuiz: { ...(s.unitQuiz || {}), [a.unit]: { ...(s.unitQuiz?.[a.unit] || {}), [a.phase]: a.result } } }
     case 'miniLgs': return { ...s, miniLgs: [...(s.miniLgs || []), a.result].slice(-30) }

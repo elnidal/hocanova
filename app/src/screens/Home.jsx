@@ -12,6 +12,7 @@ import GoalCard from '../components/GoalCard.jsx'
 import ProfileCard from '../components/ProfileCard.jsx'
 import ClassGoalCard from '../components/ClassGoalCard.jsx'
 import ReminderCard from '../components/ReminderCard.jsx'
+import ChainStrip from '../components/ChainStrip.jsx'
 import { placementExpectationLabel } from '../firstUse.js'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
@@ -83,6 +84,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           {view.evidence && <p className="why evidence">{view.evidence.text}</p>}
         </section>
       )}
+
+      {placement && <ChainStrip daily={state.daily} now={now} best={state.bestStreak || 0} lgsDays={daysToLgs(now)} />}
 
       {placement && plan.length > 0 && (
         <section className="card plan">
