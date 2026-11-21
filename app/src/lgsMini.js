@@ -49,15 +49,16 @@ export const fmtNet = x => x.toLocaleString('tr-TR', { minimumFractionDigits: 0,
 
 /** answers: soru kimliği → seçilen şık (-1 ya da yok: boş). list: shuffleOptions çıktıları (correctIndex, unit bilgisiyle). */
 export function scoreMini(list, answers) {
-  const byUnit = {}
+  const byUnit = {}, byStem = {}
   let d = 0, y = 0, b = 0
   for (const q of list) {
     const u = unitOfItem(q.itemId) ?? q.unit
     const r = (byUnit[u] ||= { d: 0, y: 0, b: 0 })
+    const s = (byStem[q.stem_id || 'diğer'] ||= { d: 0, y: 0, b: 0 })
     const a = answers[q.id]
-    if (a == null || a < 0) { b++; r.b++ } else if (a === q.correctIndex) { d++; r.d++ } else { y++; r.y++ }
+    if (a == null || a < 0) { b++; r.b++; s.b++ } else if (a === q.correctIndex) { d++; r.d++; s.d++ } else { y++; r.y++; s.y++ }
   }
-  return { d, y, b, n: list.length, net: netOf(d, y), byUnit }
+  return { d, y, b, n: list.length, net: netOf(d, y), byUnit, byStem }
 }
 
 /** Kaybın en çok olduğu üniteler (yanlış önce, sonra boş), en fazla max tane. */

@@ -5,12 +5,13 @@ import { miniResultCopy, stepCta, unitSlip } from '../sessionCoach.js'
 import Coach from '../components/Coach.jsx'
 import Question from '../components/Question.jsx'
 import RichText from '../components/RichText.jsx'
+import { weakStems, stemName } from '../stems.js'
 
 const mmss = s => `${Math.floor(s / 60)}:${String(Math.max(0, s) % 60).padStart(2, '0')}`
 const slipLabel = r => [r.y ? `${r.y} yanlış` : '', r.b ? `${r.b} boş` : '', r.thin ? 'az soru' : ''].filter(Boolean).join(' · ')
 
 // Mini LGS: 10 LGS tarzı soru, 15 dk geri sayım, boş bırakma serbest, sonda net ve ünite dökümü.
-export default function MiniLgs({ index, state, qIndex, items, dispatch, onExit, nextStep, onContinue }) {
+export default function MiniLgs({ index, state, qIndex, items, dispatch, onExit, nextStep, onContinue, onStem }) {
   const avail = index.units.filter(u => u.dayCount)
   const history = state.miniLgs || []
   const trend = miniTrend(history)
@@ -118,6 +119,20 @@ export default function MiniLgs({ index, state, qIndex, items, dispatch, onExit,
         <p className="muted small">Süre {mmss(result.secs)}.{result.y > 0 ? ` ${result.y} yanlış, ${fmtNet(Math.round(result.y / 3 * 100) / 100)} doğruyu götürdü. İki şıkka indirdiysen işaretle; hiç fikrin yoksa boş bırakmak daha güvenli.` : ''}</p>
         {prev && <p className="muted small">Bir önceki deneme {fmtNet(prev.net)} netti. Bu deneme {fmtNet(result.net)} net.</p>}
         <Coach text={copy.text} />
+        {onStem && weakStems(result.byStem).length > 0 && (
+          <section className="card stem-loss">
+            <div className="eyebrow">Soru tipine göre</div>
+            {weakStems(result.byStem).map(s => {
+              const r = result.byStem[s]
+              return (
+                <div className="spread wrow" key={s}>
+                  <span><b>{stemName(s)}</b> <span className="muted small">{r.y ? `${r.y} yanlış` : ''}{r.y && r.b ? ', ' : ''}{r.b ? `${r.b} boş` : ''}</span></span>
+                  <button className="btn ghost sm" onClick={() => onStem(s)}>Bu tipten çöz →</button>
+                </div>
+              )
+            })}
+          </section>
+        )}
         {wrong.length > 0 && (
           <details className="card review-wrong">
             <summary><b>Yanlışlarını gözden geçir ({wrong.length})</b> <span className="muted small">doğrusu ve kısa açıklama</span></summary>

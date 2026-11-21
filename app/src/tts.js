@@ -37,3 +37,19 @@ export function speak(text) {
     synth.speak(u)
   } catch { /* ses desteklenmiyorsa sessiz geç */ }
 }
+
+/** Birden çok parçayı sırayla okur (soru kökü, metin, şıklar). Öncekini keser. */
+export function speakAll(parts) {
+  if (!synth) return
+  try {
+    if (!voice) pick()
+    synth.cancel()
+    for (const p of parts.map(speakable).filter(Boolean)) {
+      const u = new SpeechSynthesisUtterance(p)
+      u.lang = voice?.lang || 'en-GB'; u.rate = 0.88
+      if (voice) u.voice = voice
+      synth.speak(u)
+    }
+  } catch { /* ses desteklenmiyorsa sessiz geç */ }
+}
+export const stopSpeaking = () => { try { synth?.cancel() } catch { /* yok */ } }

@@ -3,10 +3,10 @@ import Logo from '../components/Logo.jsx'
 import { daysToLgs } from '../coachPlan.js'
 import '../landing.css'
 
-// Tanıtım sayfası: ilk kez gelen ziyaretçi (bu cihazda ilerleme yok) ve #tanitim. Rakamlar içerikten (10 ünite, 633 ifade, 115 ders, 4.400+ soru, 24 Sınav Dili dersi).
+// Tanıtım sayfası: ilk kez gelen ziyaretçi (bu cihazda ilerleme yok) ve #tanitim. Rakamlar içerikten (10 ünite, 636 ifade, 119 ders, 4.400+ soru, 24 Sınav Dili dersi).
 const STEPS = [
   ['Seviyeni ölç', '18 soruluk, yaklaşık 4 dakikalık başlangıç testi nereden başlayacağını belirler. Bildiğin kelimeyle vakit kaybetmezsin.'],
-  ['Planı uygula', 'Her gün ana ekranda sıralı bir plan: önce tekrar, sonra yeni ders. Kart, kısa İngilizce sahne, alıştırma. 10–15 dakika.'],
+  ['Planı uygula', 'Her gün ana ekranda sıralı bir plan: önce tekrar, sonra yeni ders. 10–15 dakika. Her gün zincire bir halka; haftada bir gün ara verirsen Nova izni zinciri korur, istersen akşam tek bir hatırlatma gelir.'],
   ['Netini gör', 'Haftada bir Mini LGS: 10 soru, 15 dakika, gerçek net hesabı. Puan kaybettiğin ünite için 5 dakikalık tamir seti.'],
 ]
 
@@ -18,11 +18,11 @@ const WHY = [
 ]
 
 const FAQ = [
-  ['Ücretli mi?', 'Pilot döneminde ücretsiz. Reklam yok, üyelik zorunlu değil.'],
+  ['Ücretli mi?', 'Pilot döneminde ücretsiz: öğrenci uygulaması da öğretmen paneli de. Reklam yok, üyelik zorunlu değil.'],
   ['Hangi üniteler var?', '8. sınıf İngilizce programının 10 ünitesinin tamamı: Friendship\'ten Natural Forces\'a. Okulda hangi ünitedeysen oradan başlayabilirsin.'],
   ['Telefonda çalışır mı?', 'Evet. Tarayıcıdan aç, "Ana ekrana ekle" de; uygulama gibi açılır, internet zayıfken de derslerin çalışır.'],
   ['İlerlemem kaybolur mu?', 'İlerlemen cihazında ve güvenli sunucuda tutulur. Hesap kaydedersen başka cihazdan da devam edersin.'],
-  ['Öğretmenler nasıl kullanır?', 'Tahta modunda istediği dersi sınıfta akıllı tahtada açar; öğretmen panelinde öğrencilerinin ilerlemesini görür.'],
+  ['Öğretmenler nasıl kullanır?', 'Tahta modunda istediği dersi sınıfta akıllı tahtada açar; öğretmen panelinde öğrencilerinin ilerlemesini görür ve sınıfına haftalık ortak bir soru hedefi koyar. Sıralamada yalnız ilk 3 görünür, sonuncu gösterilmez.'],
 ]
 
 export default function Landing() {
@@ -44,7 +44,7 @@ export default function Landing() {
               <button className="lp-btn" onClick={start}>Ücretsiz başla</button>
               <button className="lp-btn ghost" onClick={() => document.getElementById('nasil')?.scrollIntoView({ behavior: 'smooth' })}>Nasıl çalışır?</button>
             </div>
-            <p className="lp-fine">Üyelik gerekmez · Reklam yok · Telefonda ve bilgisayarda</p>
+            <p className="lp-fine">Reklam yok · Üyelik gerekmez · Öğretmen paneli ücretsiz · Telefonda ve bilgisayarda</p>
           </div>
           <div className="lp-device" aria-hidden="true">
             <div className="lp-screen">
@@ -68,8 +68,8 @@ export default function Landing() {
 
       <section className="lp-stats lp-in">
         <div><b>10</b><span>ünitenin tamamı</span></div>
-        <div><b>633</b><span>kelime ve kalıp</span></div>
-        <div><b>115</b><span>günlük ders</span></div>
+        <div><b>636</b><span>kelime ve kalıp</span></div>
+        <div><b>119</b><span>günlük ders</span></div>
         <div><b>4.400+</b><span>soru</span></div>
       </section>
 

@@ -18,7 +18,7 @@ import { placementExpectationLabel } from '../firstUse.js'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
 
-export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, onExam, onQuiz, onMini, onRepair, onTour, account }) {
+export default function Home({ index, unit, state, dispatch, onPlacement, onLesson, onReview, onUnitCheck, onRetention, onWordList, onReport, onFlash, onMistakes, onExam, onQuiz, onMini, onRepair, onStems, onTour, account }) {
   const now = Date.now()
   const { progress, placement } = state
   const ids = unit.items.map(i => i.id)
@@ -163,10 +163,11 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
 
       {placement && (
         <details className="card unitpick tools-fold">
-          <summary><b>Araçlar</b> <span className="muted small">· Mini LGS, tamir, kart, liste</span></summary>
+          <summary><b>Araçlar</b> <span className="muted small">· Mini LGS, tamir, soru tipleri, kart</span></summary>
           <div className="tool-list">
             <button className="tool" onClick={onMini}><b>Mini LGS</b><span>10 soru · 15 dk{mini ? ` · son net ${fmtNet(mini.last)}` : ''}</span></button>
             <button className="tool" onClick={() => onRepair()}><b>Tamir seti</b><span>5'er soru</span></button>
+            <button className="tool" onClick={() => onStems()}><b>Soru tipleri</b><span>LGS kökleri · MEBİ</span></button>
             {Object.values(progress.items).some(it => it.status !== 'new') && <button className="tool" onClick={() => onFlash()}><b>Hızlı kart</b><span>2 dk</span></button>}
             {Object.keys(state.doneDays).length > 0 && <button className="tool" onClick={onExam}><b>Sınav Dili</b><span>24 ders</span></button>}
             {mistakesOpen > 0 && <button className="tool" onClick={onMistakes}><b>Yanlış defterim</b><span>{mistakesOpen} soru</span></button>}

@@ -21,6 +21,7 @@ import WordList from './screens/WordList.jsx'
 import ParentReport from './screens/ParentReport.jsx'
 import MiniLgs from './screens/MiniLgs.jsx'
 import Repair from './screens/Repair.jsx'
+import StemPractice from './screens/StemPractice.jsx'
 import { parseAssignment } from './goal.js'
 import { flushReports } from './reports.js'
 import { initialLearnerScreen, afterTourScreen } from './firstUse.js'
@@ -84,6 +85,7 @@ export default function App() {
   }
   const startMini = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'mini' }) }
   const startRepair = async units => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'repair', units }) }
+  const startStems = async stem => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'stems', stem: stem || null }) }
   const startReview = async () => { setScreen({ name: 'loading' }); await ensureCtx(); setScreen({ name: 'review' }) }
 
   const openStep = () => {
@@ -146,8 +148,9 @@ export default function App() {
   }
   if (screen.name === 'mini') {
     const next = openStep()
-    return wrap(<MiniLgs index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} nextStep={next} onContinue={() => runStep(next)} onExit={() => setScreen('home')} />)
+    return wrap(<MiniLgs index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} nextStep={next} onContinue={() => runStep(next)} onStem={startStems} onExit={() => setScreen('home')} />)
   }
+  if (screen.name === 'stems') return wrap(<StemPractice key={screen.stem || 'list'} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} startStem={screen.stem} onExit={() => setScreen('home')} />)
   if (screen.name === 'repair') {
     const next = openStep()
     return wrap(<Repair key={(screen.units || []).join()} index={index} state={state} qIndex={lessonCtx.qIndex} items={lessonCtx.items} dispatch={dispatch} startUnits={screen.units} nextStep={next} onContinue={() => runStep(next)} onExit={() => setScreen('home')} />)
@@ -166,5 +169,5 @@ export default function App() {
       onFinish={result => dispatch({ type: 'placement', result, now: Date.now() })}
       onExit={() => setScreen('home')} onTour={() => setScreen('tour')} />
   )
-  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} onWordList={() => setScreen('wordlist')} onReport={() => setScreen('report')} onFlash={deck => setScreen({ name: 'flash', deck })} onMistakes={startMistakes} onExam={() => setScreen('exam')} onQuiz={startQuiz} onMini={startMini} onRepair={units => startRepair(units)} onTour={() => setScreen('tour')} account={account} />)
+  return wrap(<Home index={index} unit={unit} state={state} dispatch={dispatch} onPlacement={() => setScreen('placement')} onLesson={startLesson} onReview={startReview} onUnitCheck={startUnitCheck} onRetention={startRetention} onWordList={() => setScreen('wordlist')} onReport={() => setScreen('report')} onFlash={deck => setScreen({ name: 'flash', deck })} onMistakes={startMistakes} onExam={() => setScreen('exam')} onQuiz={startQuiz} onMini={startMini} onRepair={units => startRepair(units)} onStems={startStems} onTour={() => setScreen('tour')} account={account} />)
 }

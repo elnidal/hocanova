@@ -426,3 +426,5 @@ h1{letter-spacing:-.025em}h2{letter-spacing:-.02em}
 .journey h3{margin:8px 0 2px;font-size:1.05rem}.journey .row{flex-wrap:wrap;gap:8px;margin-top:8px}.journey .btn{margin-top:8px}
 .journey-dots{list-style:none;display:flex;gap:6px;margin:10px 0 4px;padding:0}.journey-dots li{flex:1;height:6px;border-radius:99px;background:var(--line)}
 .journey-dots li.done{background:var(--mint)}.journey-dots li.now{background:var(--amber)}
+.listen-bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:4px 0 8px}.listen-bar label{display:flex;gap:6px;align-items:center;cursor:pointer}
+.stem-row p{margin:4px 0 8px}.mebi p{margin:6px 0 10px}.stem-loss .wrow{gap:10px}

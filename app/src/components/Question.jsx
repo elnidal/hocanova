@@ -6,7 +6,8 @@ import ReportIssue from './ReportIssue.jsx'
 import SpeakerIcon from './SpeakerIcon.jsx'
 import Visual from './Visual.jsx'
 import { parseVisual } from '../visual.js'
-import { speak as say } from '../tts.js'
+import { speak as say, speakAll, stopSpeaking, canSpeak } from '../tts.js'
+import { listenParts } from '../listenParts.js'
 
 /**
  * q: shuffleOptions çıktısı.
@@ -39,10 +40,20 @@ export default function Question({ q, mode = 'test', onAnswer, onNext, last, ext
   }
   const rt = t => <RichText text={t} items={items} newSet={newSet} speak={speak} />
   const [visual] = useState(() => parseVisual(q))
+  const parts = !q.listen && canSpeak ? listenParts(q, items) : []
+  const [auto, setAuto] = useState(() => { try { return localStorage.getItem('hn.autoListen') === '1' } catch { return false } })
+  useEffect(() => { if (auto && parts.length) speakAll(parts); return () => stopSpeaking() }, [q.id]) // eslint-disable-line react-hooks/exhaustive-deps
+  const toggleAuto = () => { const v = !auto; setAuto(v); try { localStorage.setItem('hn.autoListen', v ? '1' : '0') } catch { /* özel mod */ } if (v) speakAll(parts); else stopSpeaking() }
 
   return (
     <div className="card q">
       <p className="prompt">{rt(q.prompt)}</p>
+      {parts.length > 0 && (
+        <div className="listen-bar">
+          <button type="button" className="hintbtn" onClick={() => speakAll(parts)} aria-label="Soruyu ve şıkları dinle"><SpeakerIcon /> Dinle</button>
+          <label className="small muted"><input type="checkbox" checked={auto} onChange={toggleAuto} /> her soruda otomatik</label>
+        </div>
+      )}
       {hint && (!collapsed || open) && <p className="hint">🇹🇷 {hint.text}</p>}
       {hint && collapsed && !open && <button type="button" className="hintbtn" onClick={() => setOpen(true)}>🇹🇷 Türkçesi</button>}
       {q.listen && <button type="button" className="btn listen" onClick={() => say(q.listen)}><SpeakerIcon /> Tekrar dinle</button>}
