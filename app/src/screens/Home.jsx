@@ -13,6 +13,7 @@ import ProfileCard from '../components/ProfileCard.jsx'
 import ClassGoalCard from '../components/ClassGoalCard.jsx'
 import ReminderCard from '../components/ReminderCard.jsx'
 import ChainStrip from '../components/ChainStrip.jsx'
+import JourneyCard from '../components/JourneyCard.jsx'
 import { placementExpectationLabel } from '../firstUse.js'
 
 const LEVEL = { baslangic: 'Başlangıç', orta: 'Orta', ileri: 'İleri' }
@@ -86,6 +87,7 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
       )}
 
       {placement && <ChainStrip daily={state.daily} now={now} best={state.bestStreak || 0} lgsDays={daysToLgs(now)} />}
+      {placement && <JourneyCard state={state} now={now} dispatch={dispatch} run={a => ({ lesson: () => nextDay && onLesson(nextDay.day), flash: () => onFlash(), exam: onExam, mini: onMini })[a]?.()} />}
 
       {placement && plan.length > 0 && (
         <section className="card plan">
@@ -95,8 +97,8 @@ export default function Home({ index, unit, state, dispatch, onPlacement, onLess
           <div className="pace">
             {pace.mode === 'pace' && (
               <>
-                <div className="pace-row"><b>Bu hafta {pace.weekDone} / {pace.target} ders</b></div>
-                <div className="pace-bar" aria-hidden="true"><i style={{ width: `${Math.min(100, (pace.weekDone / pace.target) * 100)}%` }} /></div>
+                <div className="pace-row"><b>Bu hafta {pace.weekDone} / {Math.max(pace.target, state.pledge?.perWeek || 0)} ders{state.pledge ? ` · sözün ${state.pledge.perWeek}` : ''}</b></div>
+                <div className="pace-bar" aria-hidden="true"><i style={{ width: `${Math.min(100, (pace.weekDone / Math.max(pace.target, state.pledge?.perWeek || 0)) * 100)}%` }} /></div>
               </>
             )}
             <p>{paceText(pace)}</p>

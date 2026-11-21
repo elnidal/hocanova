@@ -30,6 +30,7 @@ export function apply(s, a) {
     case 'onboarded': return { ...s, onboarded: true }
     case 'parentToken': return { ...s, parentToken: a.token }
     case 'goal': return { ...s, goal: a.goal }
+    case 'pledge': return { ...s, pledge: { perWeek: a.perWeek, at: a.now } }
     case 'dayDone': return { ...s, doneDays: { ...s.doneDays, [a.key]: { first: a.first, total: a.total, n: a.n, at: a.now } } }
     case 'retentionDone': return { ...s, retentions: { ...(s.retentions || {}), [`u${a.unit}:${a.id}`]: { ok: a.ok, n: a.n, at: a.now } } }
     case 'reviewDone': return { ...s, reviews: [...(s.reviews || []), { first: a.first, total: a.total, at: a.now }].slice(-200) }

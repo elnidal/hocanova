@@ -423,3 +423,6 @@ h1{letter-spacing:-.025em}h2{letter-spacing:-.02em}
 @keyframes ringpulse{50%{box-shadow:0 0 0 5px color-mix(in srgb,var(--amber) 30%,transparent)}}
 @media (prefers-reduced-motion:reduce){.ring.today{animation:none}}
 .chain[open] summary .chain-row{display:none}
+.journey h3{margin:8px 0 2px;font-size:1.05rem}.journey .row{flex-wrap:wrap;gap:8px;margin-top:8px}.journey .btn{margin-top:8px}
+.journey-dots{list-style:none;display:flex;gap:6px;margin:10px 0 4px;padding:0}.journey-dots li{flex:1;height:6px;border-radius:99px;background:var(--line)}
+.journey-dots li.done{background:var(--mint)}.journey-dots li.now{background:var(--amber)}
